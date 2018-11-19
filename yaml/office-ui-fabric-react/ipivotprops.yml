@@ -1,0 +1,184 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office-ui-fabric-react.IPivotProps
+    name: IPivotProps
+    fullName: IPivotProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - React.Props
+    package: office-ui-fabric-react
+    children:
+      - office-ui-fabric-react.IPivotProps.className
+      - office-ui-fabric-react.IPivotProps.componentRef
+      - office-ui-fabric-react.IPivotProps.getTabId
+      - office-ui-fabric-react.IPivotProps.headersOnly
+      - office-ui-fabric-react.IPivotProps.initialSelectedIndex
+      - office-ui-fabric-react.IPivotProps.initialSelectedKey
+      - office-ui-fabric-react.IPivotProps.linkFormat
+      - office-ui-fabric-react.IPivotProps.linkSize
+      - office-ui-fabric-react.IPivotProps.onLinkClick
+      - office-ui-fabric-react.IPivotProps.selectedKey
+      - office-ui-fabric-react.IPivotProps.styles
+      - office-ui-fabric-react.IPivotProps.theme
+  - uid: office-ui-fabric-react.IPivotProps.className
+    summary: Additional css class to apply to the Pivot
+    name: className
+    fullName: className
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'className?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.IPivotProps.componentRef
+    summary: >-
+      Optional callback to access the IPivot interface. Use this instead of ref for accessing the public methods and
+      properties of the component.
+    name: componentRef
+    fullName: componentRef
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'componentRef?: IRefObject<IPivot>;'
+      return:
+        type:
+          - IRefObject<IPivot>
+  - uid: office-ui-fabric-react.IPivotProps.getTabId
+    summary: >-
+      Optional. Specify how IDs are generated for each tab header. Useful if you're rendering content outside and need
+      to connect aria-labelledby.
+    name: getTabId
+    fullName: getTabId
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'getTabId?: (itemKey: string, index: number) => string;'
+      return:
+        type:
+          - '(itemKey: string, index: number) => string'
+  - uid: office-ui-fabric-react.IPivotProps.headersOnly
+    summary: >-
+      Specify whether to skip rendering the tabpanel with the content of the selected tab. Use this prop if you plan to
+      separately render the tab content and don't want to leave an empty tabpanel in the page that may confuse Screen
+      Readers.
+    name: headersOnly
+    fullName: headersOnly
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'headersOnly?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-ui-fabric-react.IPivotProps.initialSelectedIndex
+    summary: |-
+      The index of the pivot item initially selected.
+
+      It only works when initialSelectedKey is not defined. You must not use them together.
+    name: initialSelectedIndex
+    fullName: initialSelectedIndex
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'initialSelectedIndex?: number;'
+      return:
+        type:
+          - number
+  - uid: office-ui-fabric-react.IPivotProps.initialSelectedKey
+    summary: |-
+      The key of the pivot item initially selected.
+
+      It will make initialSelectedIndex not work. You must not use them together.
+    name: initialSelectedKey
+    fullName: initialSelectedKey
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'initialSelectedKey?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.IPivotProps.linkFormat
+    summary: 'Specify the PivotLinkFormat to use (links, tabs)'
+    name: linkFormat
+    fullName: linkFormat
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'linkFormat?: PivotLinkFormat;'
+      return:
+        type:
+          - PivotLinkFormat
+  - uid: office-ui-fabric-react.IPivotProps.linkSize
+    summary: 'Specify the PivotLinkSize to use (normal, large)'
+    name: linkSize
+    fullName: linkSize
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'linkSize?: PivotLinkSize;'
+      return:
+        type:
+          - PivotLinkSize
+  - uid: office-ui-fabric-react.IPivotProps.onLinkClick
+    summary: Callback issued when the selected pivot item is changed
+    name: onLinkClick
+    fullName: onLinkClick
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onLinkClick?: (item?: PivotItem, ev?: React.MouseEvent<HTMLElement>) => void;'
+      return:
+        type:
+          - '(item?: PivotItem, ev?: React.MouseEvent<HTMLElement>) => void'
+  - uid: office-ui-fabric-react.IPivotProps.selectedKey
+    summary: |-
+      The key of the selected pivot item.
+
+      If set, this will override the Pivot's selected item state.
+    name: selectedKey
+    fullName: selectedKey
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'selectedKey?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.IPivotProps.styles
+    summary: Call to provide customized styling that will layer on top of the variant rules.
+    name: styles
+    fullName: styles
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'styles?: IStyleFunctionOrObject<IPivotStyleProps, IPivotStyles>;'
+      return:
+        type:
+          - 'IStyleFunctionOrObject<IPivotStyleProps, IPivotStyles>'
+  - uid: office-ui-fabric-react.IPivotProps.theme
+    summary: Theme provided by High-Order Component.
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type:
+          - ITheme

@@ -1,0 +1,528 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office-ui-fabric-react.IContextualMenuItem
+    name: IContextualMenuItem
+    fullName: IContextualMenuItem
+    langs:
+      - typeScript
+    type: interface
+    package: office-ui-fabric-react
+    children:
+      - office-ui-fabric-react.IContextualMenuItem.__index
+      - office-ui-fabric-react.IContextualMenuItem.ariaLabel
+      - office-ui-fabric-react.IContextualMenuItem.canCheck
+      - office-ui-fabric-react.IContextualMenuItem.checked
+      - office-ui-fabric-react.IContextualMenuItem.className
+      - office-ui-fabric-react.IContextualMenuItem.componentRef
+      - office-ui-fabric-react.IContextualMenuItem.customOnRenderListLength
+      - office-ui-fabric-react.IContextualMenuItem.data
+      - office-ui-fabric-react.IContextualMenuItem.disabled
+      - office-ui-fabric-react.IContextualMenuItem.getItemClassNames
+      - office-ui-fabric-react.IContextualMenuItem.getSplitButtonVerticalDividerClassNames
+      - office-ui-fabric-react.IContextualMenuItem.href
+      - office-ui-fabric-react.IContextualMenuItem.iconProps
+      - office-ui-fabric-react.IContextualMenuItem.inactive
+      - office-ui-fabric-react.IContextualMenuItem.itemProps
+      - office-ui-fabric-react.IContextualMenuItem.itemType
+      - office-ui-fabric-react.IContextualMenuItem.key
+      - office-ui-fabric-react.IContextualMenuItem.keytipProps
+      - office-ui-fabric-react.IContextualMenuItem.name
+      - office-ui-fabric-react.IContextualMenuItem.onClick
+      - office-ui-fabric-react.IContextualMenuItem.onMouseDown
+      - office-ui-fabric-react.IContextualMenuItem.onRender
+      - office-ui-fabric-react.IContextualMenuItem.onRenderIcon
+      - office-ui-fabric-react.IContextualMenuItem.primaryDisabled
+      - office-ui-fabric-react.IContextualMenuItem.rel
+      - office-ui-fabric-react.IContextualMenuItem.role
+      - office-ui-fabric-react.IContextualMenuItem.secondaryText
+      - office-ui-fabric-react.IContextualMenuItem.sectionProps
+      - office-ui-fabric-react.IContextualMenuItem.shortCut
+      - office-ui-fabric-react.IContextualMenuItem.split
+      - office-ui-fabric-react.IContextualMenuItem.style
+      - office-ui-fabric-react.IContextualMenuItem.submenuIconProps
+      - office-ui-fabric-react.IContextualMenuItem.subMenuProps
+      - office-ui-fabric-react.IContextualMenuItem.target
+      - office-ui-fabric-react.IContextualMenuItem.text
+      - office-ui-fabric-react.IContextualMenuItem.title
+  - uid: office-ui-fabric-react.IContextualMenuItem.__index
+    summary: Any additional properties to use when custom rendering menu items.
+    name: __index(propertyName)
+    fullName: __index
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: '[propertyName: string]: any;'
+      return:
+        type:
+          - any
+        description: ''
+      parameters:
+        - id: propertyName
+          description: ''
+          type:
+            - string
+  - uid: office-ui-fabric-react.IContextualMenuItem.ariaLabel
+    summary: >-
+      Optional accessibility label (aria-label) attribute that will be stamped on to the element. If none is specified,
+      the aria-label attribute will contain the item name
+    name: ariaLabel
+    fullName: ariaLabel
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'ariaLabel?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.IContextualMenuItem.canCheck
+    summary: Whether or not this menu item can be checked
+    name: canCheck
+    fullName: canCheck
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'canCheck?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-ui-fabric-react.IContextualMenuItem.checked
+    summary: Whether or not this menu item is currently checked.
+    name: checked
+    fullName: checked
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'checked?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-ui-fabric-react.IContextualMenuItem.className
+    summary: Additional css class to apply to the menu item
+    name: className
+    fullName: className
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'className?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.IContextualMenuItem.componentRef
+    summary: >-
+      Optional callback to access the IContextualMenuRenderItem interface. This will get passed down to
+      ContextualMenuItem.
+    name: componentRef
+    fullName: componentRef
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'componentRef?: IRefObject<IContextualMenuRenderItem>;'
+      return:
+        type:
+          - IRefObject<IContextualMenuRenderItem>
+  - uid: office-ui-fabric-react.IContextualMenuItem.customOnRenderListLength
+    summary: >-
+      When rendering a custom component that is passed in, the component might also be a list of elements. We want to
+      keep track of the correct index our menu is using based off of the length of the custom list. It is up to the user
+      to increment the count for their list.
+    name: customOnRenderListLength
+    fullName: customOnRenderListLength
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'customOnRenderListLength?: number;'
+      return:
+        type:
+          - number
+  - uid: office-ui-fabric-react.IContextualMenuItem.data
+    summary: Any custom data the developer wishes to associate with the menu item.
+    name: data
+    fullName: data
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'data?: any;'
+      return:
+        type:
+          - any
+  - uid: office-ui-fabric-react.IContextualMenuItem.disabled
+    summary: Whether the menu item is disabled
+    name: disabled
+    fullName: disabled
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'disabled?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-ui-fabric-react.IContextualMenuItem.getItemClassNames
+    summary: >-
+      Method to provide the classnames to style the individual items inside a menu. Deprecated, use `styles` prop of
+      `IContextualMenuItemProps` to leverage mergeStyles API.
+    deprecated:
+      content: Use `styles` prop of `IContextualMenuItemProps` to leverage mergeStyles API.
+    name: getItemClassNames
+    fullName: getItemClassNames
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        getItemClassNames?: (theme: ITheme, disabled: boolean, expanded: boolean, checked: boolean, isAnchorLink:
+        boolean, knownIcon: boolean, itemClassName?: string, dividerClassName?: string, iconClassName?: string,
+        subMenuClassName?: string, primaryDisabled?: boolean) => IMenuItemClassNames;
+      return:
+        type:
+          - >-
+            (theme: ITheme, disabled: boolean, expanded: boolean, checked: boolean, isAnchorLink: boolean, knownIcon:
+            boolean, itemClassName?: string, dividerClassName?: string, iconClassName?: string, subMenuClassName?:
+            string, primaryDisabled?: boolean) => IMenuItemClassNames
+  - uid: office-ui-fabric-react.IContextualMenuItem.getSplitButtonVerticalDividerClassNames
+    summary: >-
+      Method to provide the classnames to style the Vertical Divider of a split button inside a menu. Default value is
+      the getVerticalDividerClassnames func defined in ContextualMenu.classnames
+    name: getSplitButtonVerticalDividerClassNames
+    fullName: getSplitButtonVerticalDividerClassNames
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'getSplitButtonVerticalDividerClassNames?: (theme: ITheme) => IVerticalDividerClassNames;'
+      return:
+        type:
+          - '(theme: ITheme) => IVerticalDividerClassNames'
+  - uid: office-ui-fabric-react.IContextualMenuItem.href
+    summary: An optional URL to navigate to upon selection
+    name: href
+    fullName: href
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'href?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.IContextualMenuItem.iconProps
+    summary: Props that go to the IconComponent
+    name: iconProps
+    fullName: iconProps
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'iconProps?: IIconProps;'
+      return:
+        type:
+          - IIconProps
+  - uid: office-ui-fabric-react.IContextualMenuItem.inactive
+    summary: This prop is no longer used. All contextual menu items are now focusable when disabled.
+    deprecated:
+      content: in 6.38.2 will be removed in 7.0.0
+    name: inactive
+    fullName: inactive
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'inactive?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-ui-fabric-react.IContextualMenuItem.itemProps
+    summary: Optional IContextualMenuItemProps overrides to customize behaviors such as item styling via `styles`<!-- -->.
+    name: itemProps
+    fullName: itemProps
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'itemProps?: Partial<IContextualMenuItemProps>;'
+      return:
+        type:
+          - Partial<IContextualMenuItemProps>
+  - uid: office-ui-fabric-react.IContextualMenuItem.itemType
+    name: itemType
+    fullName: itemType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'itemType?: ContextualMenuItemType;'
+      return:
+        type:
+          - ContextualMenuItemType
+  - uid: office-ui-fabric-react.IContextualMenuItem.key
+    summary: Unique id to identify the item
+    name: key
+    fullName: key
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'key: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.IContextualMenuItem.keytipProps
+    summary: Keytip for this contextual menu item
+    name: keytipProps
+    fullName: keytipProps
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'keytipProps?: IKeytipProps;'
+      return:
+        type:
+          - IKeytipProps
+  - uid: office-ui-fabric-react.IContextualMenuItem.name
+    summary: 'Text description for the menu item to display Deprecated, use `text` instead.'
+    deprecated:
+      content: Use `text` instead.
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.IContextualMenuItem.onClick
+    summary: >-
+      Callback issued when the menu item is invoked. If ev.preventDefault() is called in onClick, click will not close
+      menu. Returning true will dismiss the menu even if ev.preventDefault() was called.
+    name: onClick
+    fullName: onClick
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        onClick?: (ev?: React.MouseEvent<HTMLElement> | React.KeyboardEvent<HTMLElement>, item?: IContextualMenuItem) =>
+        boolean | void;
+      return:
+        type:
+          - >-
+            (ev?: React.MouseEvent<HTMLElement> | React.KeyboardEvent<HTMLElement>, item?: IContextualMenuItem) =>
+            boolean | void
+  - uid: office-ui-fabric-react.IContextualMenuItem.onMouseDown
+    summary: >-
+      A function to be executed onMouseDown. This is executed before an onClick event and can be used to interrupt
+      native on click events as well. The click event should still handle the commands. This should only be used in
+      special cases when react and non-react are mixed.
+    name: onMouseDown
+    fullName: onMouseDown
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onMouseDown?: (item: IContextualMenuItem, event: any) => void;'
+      return:
+        type:
+          - '(item: IContextualMenuItem, event: any) => void'
+  - uid: office-ui-fabric-react.IContextualMenuItem.onRender
+    summary: >-
+      Method to custom render this menu item. For keyboard accessibility, the top-level rendered item should be a
+      focusable element (like an anchor or a button) or have the `data-is-focusable` property set to true.
+
+
+      The function receives a function that can be called to dismiss the menu as a second argument. This can be used to
+      make sure that a custom menu item click dismisses the menu.
+    name: onRender
+    fullName: onRender
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onRender?: (item: any, dismissMenu: (ev?: any, dismissAll?: boolean) => void) => React.ReactNode;'
+      return:
+        type:
+          - '(item: any, dismissMenu: (ev?: any, dismissAll?: boolean) => void) => React.ReactNode'
+  - uid: office-ui-fabric-react.IContextualMenuItem.onRenderIcon
+    summary: Custom render function for the menu item icon
+    name: onRenderIcon
+    fullName: onRenderIcon
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onRenderIcon?: IRenderFunction<IContextualMenuItemProps>;'
+      return:
+        type:
+          - IRenderFunction<IContextualMenuItemProps>
+  - uid: office-ui-fabric-react.IContextualMenuItem.primaryDisabled
+    summary: 'If the menu item is a split button, this prop disables purely the primary action of the button.'
+    name: primaryDisabled
+    fullName: primaryDisabled
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'primaryDisabled?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-ui-fabric-react.IContextualMenuItem.rel
+    summary: An optional rel when using href. If target is \_blank rel is defaulted to a value to prevent clickjacking.
+    name: rel
+    fullName: rel
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rel?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.IContextualMenuItem.role
+    summary: >-
+      Optional override for the role attribute on the menu button. If one is not provided, it will have a value of
+      menuitem or menuitemcheckbox.
+    name: role
+    fullName: role
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'role?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.IContextualMenuItem.secondaryText
+    summary: Seconday description for the menu item to display
+    name: secondaryText
+    fullName: secondaryText
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'secondaryText?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.IContextualMenuItem.sectionProps
+    summary: Properties to apply to render this item as a section. This prop is mutually exclusive with subMenuProps.
+    name: sectionProps
+    fullName: sectionProps
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'sectionProps?: IContextualMenuSection;'
+      return:
+        type:
+          - IContextualMenuSection
+  - uid: office-ui-fabric-react.IContextualMenuItem.shortCut
+    summary: '\[TODO\] Not Yet Implemented'
+    name: shortCut
+    fullName: shortCut
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'shortCut?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.IContextualMenuItem.split
+    summary: Whether or not this menu item is a splitButton.
+    name: split
+    fullName: split
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'split?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-ui-fabric-react.IContextualMenuItem.style
+    summary: 'Additional styles to apply to the menu item Deprecated, use `styles` instead.'
+    deprecated:
+      content: in favor of the `styles` prop to leverage mergeStyles API.
+    name: style
+    fullName: style
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'style?: React.CSSProperties;'
+      return:
+        type:
+          - React.CSSProperties
+  - uid: office-ui-fabric-react.IContextualMenuItem.submenuIconProps
+    summary: Props that go to the IconComponent used for the chevron.
+    name: submenuIconProps
+    fullName: submenuIconProps
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'submenuIconProps?: IIconProps;'
+      return:
+        type:
+          - IIconProps
+  - uid: office-ui-fabric-react.IContextualMenuItem.subMenuProps
+    summary: >-
+      Properties to apply to a submenu to this item. The ContextualMenu will provide default values for 'target',
+      'onDismiss', 'isSubMenu', 'id', 'shouldFocusOnMount', 'directionalHint', 'className', and 'gapSpace', all of which
+      can be overridden.
+    name: subMenuProps
+    fullName: subMenuProps
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'subMenuProps?: IContextualMenuProps;'
+      return:
+        type:
+          - IContextualMenuProps
+  - uid: office-ui-fabric-react.IContextualMenuItem.target
+    summary: An optional target when using href
+    name: target
+    fullName: target
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'target?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.IContextualMenuItem.text
+    summary: Text description for the menu item to display
+    name: text
+    fullName: text
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'text?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.IContextualMenuItem.title
+    summary: Optional title for displaying text when hovering over an item.
+    name: title
+    fullName: title
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'title?: string;'
+      return:
+        type:
+          - string

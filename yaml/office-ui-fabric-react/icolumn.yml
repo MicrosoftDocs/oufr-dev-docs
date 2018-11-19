@@ -1,0 +1,450 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office-ui-fabric-react.IColumn
+    name: IColumn
+    fullName: IColumn
+    langs:
+      - typeScript
+    type: interface
+    package: office-ui-fabric-react
+    children:
+      - office-ui-fabric-react.IColumn.ariaLabel
+      - office-ui-fabric-react.IColumn.calculatedWidth
+      - office-ui-fabric-react.IColumn.className
+      - office-ui-fabric-react.IColumn.columnActionsMode
+      - office-ui-fabric-react.IColumn.currentWidth
+      - office-ui-fabric-react.IColumn.data
+      - office-ui-fabric-react.IColumn.fieldName
+      - office-ui-fabric-react.IColumn.filterAriaLabel
+      - office-ui-fabric-react.IColumn.groupAriaLabel
+      - office-ui-fabric-react.IColumn.headerClassName
+      - office-ui-fabric-react.IColumn.iconClassName
+      - office-ui-fabric-react.IColumn.iconName
+      - office-ui-fabric-react.IColumn.isCollapsable
+      - office-ui-fabric-react.IColumn.isFiltered
+      - office-ui-fabric-react.IColumn.isGrouped
+      - office-ui-fabric-react.IColumn.isIconOnly
+      - office-ui-fabric-react.IColumn.isMultiline
+      - office-ui-fabric-react.IColumn.isPadded
+      - office-ui-fabric-react.IColumn.isResizable
+      - office-ui-fabric-react.IColumn.isRowHeader
+      - office-ui-fabric-react.IColumn.isSorted
+      - office-ui-fabric-react.IColumn.isSortedDescending
+      - office-ui-fabric-react.IColumn.key
+      - office-ui-fabric-react.IColumn.maxWidth
+      - office-ui-fabric-react.IColumn.minWidth
+      - office-ui-fabric-react.IColumn.name
+      - office-ui-fabric-react.IColumn.onColumnClick
+      - office-ui-fabric-react.IColumn.onColumnContextMenu
+      - office-ui-fabric-react.IColumn.onColumnResize
+      - office-ui-fabric-react.IColumn.onRender
+      - office-ui-fabric-react.IColumn.onRenderDivider
+      - office-ui-fabric-react.IColumn.sortAscendingAriaLabel
+      - office-ui-fabric-react.IColumn.sortDescendingAriaLabel
+  - uid: office-ui-fabric-react.IColumn.ariaLabel
+    summary: >-
+      Optional accessibility label (aria-label) attribute that will be stamped on to the element. If none is specified,
+      the arai-label attribute will contain the column name
+    name: ariaLabel
+    fullName: ariaLabel
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'ariaLabel?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.IColumn.calculatedWidth
+    summary: Internal only value.
+    name: calculatedWidth
+    fullName: calculatedWidth
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'calculatedWidth?: number;'
+      return:
+        type:
+          - number
+  - uid: office-ui-fabric-react.IColumn.className
+    summary: An optional class name to stick on the column cell within each row.
+    name: className
+    fullName: className
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'className?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.IColumn.columnActionsMode
+    summary: Defines how the column's header should render.
+    name: columnActionsMode
+    fullName: columnActionsMode
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'columnActionsMode?: ColumnActionsMode;'
+      return:
+        type:
+          - ColumnActionsMode
+  - uid: office-ui-fabric-react.IColumn.currentWidth
+    summary: >-
+      Internal only value. Remembers the actual witdh of the column on any case. On the other hand, calculatedWidth is
+      only saved when it's defined by user, not for justified calculations.
+    name: currentWidth
+    fullName: currentWidth
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'currentWidth?: number;'
+      return:
+        type:
+          - number
+  - uid: office-ui-fabric-react.IColumn.data
+    summary: Arbitrary data passthrough which can be used by the caller.
+    name: data
+    fullName: data
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'data?: any;'
+      return:
+        type:
+          - any
+  - uid: office-ui-fabric-react.IColumn.fieldName
+    summary: The field to pull the text value from for the column. This can be null if a custom onRender method is provided.
+    name: fieldName
+    fullName: fieldName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'fieldName?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.IColumn.filterAriaLabel
+    summary: ARIA label for the status of this column when filtered.
+    name: filterAriaLabel
+    fullName: filterAriaLabel
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'filterAriaLabel?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.IColumn.groupAriaLabel
+    summary: ARIA label for the status of this column when grouped.
+    name: groupAriaLabel
+    fullName: groupAriaLabel
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'groupAriaLabel?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.IColumn.headerClassName
+    summary: An optional class name to stick on the column cell within each header.
+    name: headerClassName
+    fullName: headerClassName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'headerClassName?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.IColumn.iconClassName
+    summary: Class name to add to the Icon component.
+    name: iconClassName
+    fullName: iconClassName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'iconClassName?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.IColumn.iconName
+    summary: Optional iconName to use for the column header.
+    name: iconName
+    fullName: iconName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'iconName?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.IColumn.isCollapsable
+    summary: If specified will allow the column to be collapsed when rendered in justified layout.
+    name: isCollapsable
+    fullName: isCollapsable
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isCollapsable?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-ui-fabric-react.IColumn.isFiltered
+    summary: 'Determines if the column is filtered, and if so shows a filter icon.'
+    name: isFiltered
+    fullName: isFiltered
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isFiltered?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-ui-fabric-react.IColumn.isGrouped
+    summary: If set will show a grouped icon next to the column header name.
+    name: isGrouped
+    fullName: isGrouped
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isGrouped?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-ui-fabric-react.IColumn.isIconOnly
+    summary: >-
+      Whether or not only the icon is used in the column header. Set this to true so the column name and dropdown
+      chevron are not displayed.
+    name: isIconOnly
+    fullName: isIconOnly
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isIconOnly?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-ui-fabric-react.IColumn.isMultiline
+    summary: Determines if the column can render multi-line text.
+    name: isMultiline
+    fullName: isMultiline
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isMultiline?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-ui-fabric-react.IColumn.isPadded
+    summary: 'If set, will add additional LTR padding-right to column and cells.'
+    name: isPadded
+    fullName: isPadded
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isPadded?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-ui-fabric-react.IColumn.isResizable
+    summary: Determines if the column can be resized.
+    name: isResizable
+    fullName: isResizable
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isResizable?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-ui-fabric-react.IColumn.isRowHeader
+    summary: >-
+      Optional flag on whether the column is a header for the given row. There should be only one column with row header
+      set to true.
+    name: isRowHeader
+    fullName: isRowHeader
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isRowHeader?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-ui-fabric-react.IColumn.isSorted
+    summary: Determines if the column is currently sorted. Renders a sort arrow in the column header.
+    name: isSorted
+    fullName: isSorted
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isSorted?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-ui-fabric-react.IColumn.isSortedDescending
+    summary: Determines if the arrow is pointed down (descending) or up.
+    name: isSortedDescending
+    fullName: isSortedDescending
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isSortedDescending?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-ui-fabric-react.IColumn.key
+    summary: A unique key for identifying the column.
+    name: key
+    fullName: key
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'key: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.IColumn.maxWidth
+    summary: 'Maximum width for the column, if stretching is allowed in justified scenarios.'
+    name: maxWidth
+    fullName: maxWidth
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'maxWidth?: number;'
+      return:
+        type:
+          - number
+  - uid: office-ui-fabric-react.IColumn.minWidth
+    summary: Minimum width for the column.
+    name: minWidth
+    fullName: minWidth
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'minWidth: number;'
+      return:
+        type:
+          - number
+  - uid: office-ui-fabric-react.IColumn.name
+    summary: Name to render on the column header.
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.IColumn.onColumnClick
+    summary: 'If provided, will be executed when the user clicks on the column header.'
+    name: onColumnClick
+    fullName: onColumnClick
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onColumnClick?: (ev: React.MouseEvent<HTMLElement>, column: IColumn) => any;'
+      return:
+        type:
+          - '(ev: React.MouseEvent<HTMLElement>, column: IColumn) => any'
+  - uid: office-ui-fabric-react.IColumn.onColumnContextMenu
+    summary: 'If provided, will be executed when the user accesses the contextmenu on a column header.'
+    name: onColumnContextMenu
+    fullName: onColumnContextMenu
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onColumnContextMenu?: (column?: IColumn, ev?: React.MouseEvent<HTMLElement>) => any;'
+      return:
+        type:
+          - '(column?: IColumn, ev?: React.MouseEvent<HTMLElement>) => any'
+  - uid: office-ui-fabric-react.IColumn.onColumnResize
+    summary: >-
+      If provided, will be executed when the column is resized with the column's current width. Prefer this callback
+      over `DetailsList` `onColumnResize` if you require the `IColumn` to report its width after every resize event.
+      Consider debouncing the callback if resize events occur frequently.
+    name: onColumnResize
+    fullName: onColumnResize
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onColumnResize?: (width?: number) => void;'
+      return:
+        type:
+          - '(width?: number) => void'
+  - uid: office-ui-fabric-react.IColumn.onRender
+    summary: 'If provided uses this method to render custom cell content, rather than the default text rendering.'
+    name: onRender
+    fullName: onRender
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onRender?: (item?: any, index?: number, column?: IColumn) => any;'
+      return:
+        type:
+          - '(item?: any, index?: number, column?: IColumn) => any'
+  - uid: office-ui-fabric-react.IColumn.onRenderDivider
+    summary: 'If provider, can be used to render a custom column header divider'
+    name: onRenderDivider
+    fullName: onRenderDivider
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onRenderDivider?: IRenderFunction<IDetailsColumnProps>;'
+      return:
+        type:
+          - IRenderFunction<IDetailsColumnProps>
+  - uid: office-ui-fabric-react.IColumn.sortAscendingAriaLabel
+    summary: ARIA label for the sort order of this column when sorted ascending.
+    name: sortAscendingAriaLabel
+    fullName: sortAscendingAriaLabel
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'sortAscendingAriaLabel?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.IColumn.sortDescendingAriaLabel
+    summary: ARIA label for the sort order of this column when sorted descending.
+    name: sortDescendingAriaLabel
+    fullName: sortDescendingAriaLabel
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'sortDescendingAriaLabel?: string;'
+      return:
+        type:
+          - string

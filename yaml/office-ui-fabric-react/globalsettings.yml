@@ -1,0 +1,93 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office-ui-fabric-react.GlobalSettings
+    summary: >-
+      Global settings helper, which stores settings in the global (window) namespace. If window is not provided, it will
+      store settings in module scope. Provides a way to observe changes as well when their values change.
+    name: GlobalSettings
+    fullName: GlobalSettings
+    langs:
+      - typeScript
+    type: class
+    package: office-ui-fabric-react
+    children:
+      - office-ui-fabric-react.GlobalSettings.addChangeListener
+      - office-ui-fabric-react.GlobalSettings.getValue
+      - office-ui-fabric-react.GlobalSettings.removeChangeListener
+      - office-ui-fabric-react.GlobalSettings.setValue
+  - uid: office-ui-fabric-react.GlobalSettings.addChangeListener
+    name: addChangeListener(cb)
+    fullName: addChangeListener
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'static addChangeListener(cb: IChangeEventCallback): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: cb
+          description: ''
+          type:
+            - IChangeEventCallback
+  - uid: office-ui-fabric-react.GlobalSettings.getValue
+    name: 'getValue(key, defaultValue)'
+    fullName: getValue
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'static getValue<T>(key: string, defaultValue?: T | (() => T)): T;'
+      return:
+        type:
+          - T
+        description: ''
+      parameters:
+        - id: key
+          description: ''
+          type:
+            - string
+        - id: defaultValue
+          description: ''
+          type:
+            - T | (() => T)
+  - uid: office-ui-fabric-react.GlobalSettings.removeChangeListener
+    name: removeChangeListener(cb)
+    fullName: removeChangeListener
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'static removeChangeListener(cb: IChangeEventCallback): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: cb
+          description: ''
+          type:
+            - IChangeEventCallback
+  - uid: office-ui-fabric-react.GlobalSettings.setValue
+    name: 'setValue(key, value)'
+    fullName: setValue
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'static setValue<T>(key: string, value: T): T;'
+      return:
+        type:
+          - T
+        description: ''
+      parameters:
+        - id: key
+          description: ''
+          type:
+            - string
+        - id: value
+          description: ''
+          type:
+            - T

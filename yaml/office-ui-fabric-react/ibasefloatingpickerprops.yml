@@ -1,0 +1,311 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office-ui-fabric-react.IBaseFloatingPickerProps
+    name: IBaseFloatingPickerProps
+    fullName: IBaseFloatingPickerProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - React.Props
+    package: office-ui-fabric-react
+    children:
+      - office-ui-fabric-react.IBaseFloatingPickerProps.calloutWidth
+      - office-ui-fabric-react.IBaseFloatingPickerProps.className
+      - office-ui-fabric-react.IBaseFloatingPickerProps.componentRef
+      - office-ui-fabric-react.IBaseFloatingPickerProps.createGenericItem
+      - office-ui-fabric-react.IBaseFloatingPickerProps.getTextFromItem
+      - office-ui-fabric-react.IBaseFloatingPickerProps.inputElement
+      - office-ui-fabric-react.IBaseFloatingPickerProps.onChange
+      - office-ui-fabric-react.IBaseFloatingPickerProps.onInputChanged
+      - office-ui-fabric-react.IBaseFloatingPickerProps.onRemoveSuggestion
+      - office-ui-fabric-react.IBaseFloatingPickerProps.onRenderSuggestionsItem
+      - office-ui-fabric-react.IBaseFloatingPickerProps.onResolveSuggestions
+      - office-ui-fabric-react.IBaseFloatingPickerProps.onSuggestionsHidden
+      - office-ui-fabric-react.IBaseFloatingPickerProps.onSuggestionsShown
+      - office-ui-fabric-react.IBaseFloatingPickerProps.onValidateInput
+      - office-ui-fabric-react.IBaseFloatingPickerProps.onZeroQuerySuggestion
+      - office-ui-fabric-react.IBaseFloatingPickerProps.pickerSuggestionsProps
+      - office-ui-fabric-react.IBaseFloatingPickerProps.resolveDelay
+      - office-ui-fabric-react.IBaseFloatingPickerProps.searchingText
+      - office-ui-fabric-react.IBaseFloatingPickerProps.selectedItems
+      - office-ui-fabric-react.IBaseFloatingPickerProps.showForceResolve
+      - office-ui-fabric-react.IBaseFloatingPickerProps.suggestionItems
+      - office-ui-fabric-react.IBaseFloatingPickerProps.suggestionsStore
+  - uid: office-ui-fabric-react.IBaseFloatingPickerProps.calloutWidth
+    summary: Width for the suggestions callout
+    name: calloutWidth
+    fullName: calloutWidth
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'calloutWidth?: number;'
+      return:
+        type:
+          - number
+  - uid: office-ui-fabric-react.IBaseFloatingPickerProps.className
+    summary: ClassName for the picker.
+    name: className
+    fullName: className
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'className?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.IBaseFloatingPickerProps.componentRef
+    name: componentRef
+    fullName: componentRef
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'componentRef?: (component?: IBaseFloatingPicker | null) => void;'
+      return:
+        type:
+          - '(component?: IBaseFloatingPicker | null) => void'
+  - uid: office-ui-fabric-react.IBaseFloatingPickerProps.createGenericItem
+    summary: Function that specifies how arbitrary text entered into the well is handled.
+    name: createGenericItem
+    fullName: createGenericItem
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'createGenericItem?: (input: string, isValid: boolean) => ISuggestionModel<T>;'
+      return:
+        type:
+          - '(input: string, isValid: boolean) => ISuggestionModel<T>'
+  - uid: office-ui-fabric-react.IBaseFloatingPickerProps.getTextFromItem
+    summary: A callback to get text from an item. Used to autofill text in the pickers.
+    name: getTextFromItem
+    fullName: getTextFromItem
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'getTextFromItem?: (item: T, currentValue?: string) => string;'
+      return:
+        type:
+          - '(item: T, currentValue?: string) => string'
+  - uid: office-ui-fabric-react.IBaseFloatingPickerProps.inputElement
+    summary: The input element to listen on events
+    name: inputElement
+    fullName: inputElement
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'inputElement?: HTMLInputElement | null;'
+      return:
+        type:
+          - HTMLInputElement | null
+  - uid: office-ui-fabric-react.IBaseFloatingPickerProps.onChange
+    summary: A callback for when a suggestion is clicked
+    name: onChange
+    fullName: onChange
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onChange?: (item: T) => void;'
+      return:
+        type:
+          - '(item: T) => void'
+  - uid: office-ui-fabric-react.IBaseFloatingPickerProps.onInputChanged
+    summary: A callback for when the input has been changed
+    name: onInputChanged
+    fullName: onInputChanged
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onInputChanged?: (filter: string) => void;'
+      return:
+        type:
+          - '(filter: string) => void'
+  - uid: office-ui-fabric-react.IBaseFloatingPickerProps.onRemoveSuggestion
+    summary: A callback for when a persona is removed from the suggestion list
+    name: onRemoveSuggestion
+    fullName: onRemoveSuggestion
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onRemoveSuggestion?: (item: IPersonaProps) => void;'
+      return:
+        type:
+          - '(item: IPersonaProps) => void'
+  - uid: office-ui-fabric-react.IBaseFloatingPickerProps.onRenderSuggestionsItem
+    summary: Function that specifies how an individual suggestion item will appear.
+    name: onRenderSuggestionsItem
+    fullName: onRenderSuggestionsItem
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onRenderSuggestionsItem?: (props: T, itemProps: any) => JSX.Element;'
+      return:
+        type:
+          - '(props: T, itemProps: any) => JSX.Element'
+  - uid: office-ui-fabric-react.IBaseFloatingPickerProps.onResolveSuggestions
+    summary: >-
+      A callback for what should happen when a person types text into the input. Returns the already selected items so
+      the resolver can filter them out. If used in conjunction with resolveDelay this will ony kick off after the delay
+      throttle. Return null if using as a controlled component
+    name: onResolveSuggestions
+    fullName: onResolveSuggestions
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onResolveSuggestions: (filter: string, selectedItems?: T[]) => T[] | PromiseLike<T[]> | null;'
+      return:
+        type:
+          - '(filter: string, selectedItems?: T[]) => T[] | PromiseLike<T[]> | null'
+  - uid: office-ui-fabric-react.IBaseFloatingPickerProps.onSuggestionsHidden
+    summary: The callback that should be called when the suggestions are hiden
+    name: onSuggestionsHidden
+    fullName: onSuggestionsHidden
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onSuggestionsHidden?: () => void;'
+      return:
+        type:
+          - () => void
+  - uid: office-ui-fabric-react.IBaseFloatingPickerProps.onSuggestionsShown
+    summary: The callback that should be called when the suggestions are shown
+    name: onSuggestionsShown
+    fullName: onSuggestionsShown
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onSuggestionsShown?: () => void;'
+      return:
+        type:
+          - () => void
+  - uid: office-ui-fabric-react.IBaseFloatingPickerProps.onValidateInput
+    summary: A function used to validate if raw text entered into the well can be added
+    name: onValidateInput
+    fullName: onValidateInput
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onValidateInput?: (input: string) => boolean;'
+      return:
+        type:
+          - '(input: string) => boolean'
+  - uid: office-ui-fabric-react.IBaseFloatingPickerProps.onZeroQuerySuggestion
+    summary: 'The suggestions to show on zero query, return null if using as a controlled component'
+    name: onZeroQuerySuggestion
+    fullName: onZeroQuerySuggestion
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onZeroQuerySuggestion?: (selectedItems?: T[]) => T[] | PromiseLike<T[]> | null;'
+      return:
+        type:
+          - '(selectedItems?: T[]) => T[] | PromiseLike<T[]> | null'
+  - uid: office-ui-fabric-react.IBaseFloatingPickerProps.pickerSuggestionsProps
+    summary: The properties that will get passed to the Suggestions component.
+    name: pickerSuggestionsProps
+    fullName: pickerSuggestionsProps
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'pickerSuggestionsProps?: IBaseFloatingPickerSuggestionProps;'
+      return:
+        type:
+          - IBaseFloatingPickerSuggestionProps
+  - uid: office-ui-fabric-react.IBaseFloatingPickerProps.resolveDelay
+    summary: >-
+      The delay time in ms before resolving suggestions, which is kicked off when input has been changed. e.g. If a
+      second input change happens within the resolveDelay time, the timer will start over. Only until after the timer
+      completes will onResolveSuggestions be called.
+    name: resolveDelay
+    fullName: resolveDelay
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'resolveDelay?: number;'
+      return:
+        type:
+          - number
+  - uid: office-ui-fabric-react.IBaseFloatingPickerProps.searchingText
+    summary: The text to display while searching for more results in a limited suggestions list
+    name: searchingText
+    fullName: searchingText
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: |-
+        searchingText?: ((props: {
+                input: string;
+            }) => string) | string;
+      return:
+        type:
+          - |-
+            ((props: {
+                    input: string;
+                }) => string) | string
+  - uid: office-ui-fabric-react.IBaseFloatingPickerProps.selectedItems
+    summary: >-
+      The items that the base picker should currently display as selected. If this is provided then the picker will act
+      as a controlled component.
+    name: selectedItems
+    fullName: selectedItems
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'selectedItems?: T[];'
+      return:
+        type:
+          - 'T[]'
+  - uid: office-ui-fabric-react.IBaseFloatingPickerProps.showForceResolve
+    summary: The callback that should be called to see if the force resolve command should be shown
+    name: showForceResolve
+    fullName: showForceResolve
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showForceResolve?: () => boolean;'
+      return:
+        type:
+          - () => boolean
+  - uid: office-ui-fabric-react.IBaseFloatingPickerProps.suggestionItems
+    summary: 'If using as a controlled component, the items to show in the suggestion list'
+    name: suggestionItems
+    fullName: suggestionItems
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'suggestionItems?: T[];'
+      return:
+        type:
+          - 'T[]'
+  - uid: office-ui-fabric-react.IBaseFloatingPickerProps.suggestionsStore
+    summary: The suggestions store
+    name: suggestionsStore
+    fullName: suggestionsStore
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'suggestionsStore: SuggestionsStore<T>;'
+      return:
+        type:
+          - SuggestionsStore<T>

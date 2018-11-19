@@ -1,0 +1,189 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office-ui-fabric-react.IOverflowSetProps
+    name: IOverflowSetProps
+    fullName: IOverflowSetProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - React.Props
+    package: office-ui-fabric-react
+    children:
+      - office-ui-fabric-react.IOverflowSetProps.className
+      - office-ui-fabric-react.IOverflowSetProps.componentRef
+      - office-ui-fabric-react.IOverflowSetProps.doNotContainWithinFocusZone
+      - office-ui-fabric-react.IOverflowSetProps.focusZoneProps
+      - office-ui-fabric-react.IOverflowSetProps.items
+      - office-ui-fabric-react.IOverflowSetProps.itemSubMenuProvider
+      - office-ui-fabric-react.IOverflowSetProps.keytipSequences
+      - office-ui-fabric-react.IOverflowSetProps.onRenderItem
+      - office-ui-fabric-react.IOverflowSetProps.onRenderOverflowButton
+      - office-ui-fabric-react.IOverflowSetProps.overflowItems
+      - office-ui-fabric-react.IOverflowSetProps.role
+      - office-ui-fabric-react.IOverflowSetProps.styles
+      - office-ui-fabric-react.IOverflowSetProps.vertical
+  - uid: office-ui-fabric-react.IOverflowSetProps.className
+    summary: Class name
+    name: className
+    fullName: className
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'className?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.IOverflowSetProps.componentRef
+    summary: Gets the component ref.
+    name: componentRef
+    fullName: componentRef
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'componentRef?: IRefObject<IOverflowSet>;'
+      return:
+        type:
+          - IRefObject<IOverflowSet>
+  - uid: office-ui-fabric-react.IOverflowSetProps.doNotContainWithinFocusZone
+    summary: >-
+      If true do not contain the OverflowSet inside of a FocusZone, otherwise the OverflowSet will contain a FocusZone.
+      If this is set to true focusZoneProps will be ignored. Use one or the other.
+    name: doNotContainWithinFocusZone
+    fullName: doNotContainWithinFocusZone
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'doNotContainWithinFocusZone?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-ui-fabric-react.IOverflowSetProps.focusZoneProps
+    summary: >-
+      Custom properties for OverflowSet's FocusZone. If doNotContainWithinFocusZone is set to true focusZoneProps will
+      be ignored. Use one or the other.
+    name: focusZoneProps
+    fullName: focusZoneProps
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'focusZoneProps?: IFocusZoneProps;'
+      return:
+        type:
+          - IFocusZoneProps
+  - uid: office-ui-fabric-react.IOverflowSetProps.items
+    summary: An array of items to be rendered by your onRenderItem function in the primary content area
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items?: IOverflowSetItemProps[];'
+      return:
+        type:
+          - 'IOverflowSetItemProps[]'
+  - uid: office-ui-fabric-react.IOverflowSetProps.itemSubMenuProvider
+    summary: >-
+      Function that will take in an IOverflowSetItemProps and return the subMenu for that item. If not provided, will
+      use 'item.subMenuProps.items' by default. This is only used if your overflow set has keytips.
+    name: itemSubMenuProvider
+    fullName: itemSubMenuProvider
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'itemSubMenuProvider?: (item: IOverflowSetItemProps) => any[] | undefined;'
+      return:
+        type:
+          - '(item: IOverflowSetItemProps) => any[] | undefined'
+  - uid: office-ui-fabric-react.IOverflowSetProps.keytipSequences
+    summary: 'Optional full keytip sequence for the overflow button, if it will have a keytip.'
+    name: keytipSequences
+    fullName: keytipSequences
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'keytipSequences?: string[];'
+      return:
+        type:
+          - 'string[]'
+  - uid: office-ui-fabric-react.IOverflowSetProps.onRenderItem
+    summary: Method to call when trying to render an item.
+    name: onRenderItem
+    fullName: onRenderItem
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onRenderItem: (item: IOverflowSetItemProps) => any;'
+      return:
+        type:
+          - '(item: IOverflowSetItemProps) => any'
+  - uid: office-ui-fabric-react.IOverflowSetProps.onRenderOverflowButton
+    summary: >-
+      Rendering method for overflow button and contextual menu. The argument to the function is the overflowItems passed
+      in as props to this function.
+    name: onRenderOverflowButton
+    fullName: onRenderOverflowButton
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onRenderOverflowButton: IRenderFunction<any[]>;'
+      return:
+        type:
+          - 'IRenderFunction<any[]>'
+  - uid: office-ui-fabric-react.IOverflowSetProps.overflowItems
+    summary: An array of items to be passed to overflow contextual menu
+    name: overflowItems
+    fullName: overflowItems
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'overflowItems?: IOverflowSetItemProps[];'
+      return:
+        type:
+          - 'IOverflowSetItemProps[]'
+  - uid: office-ui-fabric-react.IOverflowSetProps.role
+    summary: The role for the OverflowSet.
+    name: role
+    fullName: role
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'role?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.IOverflowSetProps.styles
+    summary: Call to provide customized styling that will layer on top of the variant rules.
+    name: styles
+    fullName: styles
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'styles?: IStyleFunctionOrObject<IOverflowSetProps, IOverflowSetStyles>;'
+      return:
+        type:
+          - 'IStyleFunctionOrObject<IOverflowSetProps, IOverflowSetStyles>'
+  - uid: office-ui-fabric-react.IOverflowSetProps.vertical
+    summary: Change item layout direction to vertical/stacked.
+    name: vertical
+    fullName: vertical
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'vertical?: boolean;'
+      return:
+        type:
+          - boolean

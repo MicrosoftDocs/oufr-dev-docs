@@ -1,0 +1,42 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office-ui-fabric-react.IRawStyle
+    summary: 'IStyleObject extends a raw style objects, but allows selectors to be defined under the selectors node.'
+    name: IRawStyle
+    fullName: IRawStyle
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - IRawStyleBase
+    package: office-ui-fabric-react
+    children:
+      - office-ui-fabric-react.IRawStyle.displayName
+      - office-ui-fabric-react.IRawStyle.selectors
+  - uid: office-ui-fabric-react.IRawStyle.displayName
+    summary: Display name for the style.
+    name: displayName
+    fullName: displayName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'displayName?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.IRawStyle.selectors
+    summary: Custom selectors for the style.
+    name: selectors
+    fullName: selectors
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'selectors?:'
+      return:
+        type:
+          - |-
+            {
+                    [key: string]: IStyle;
+                }

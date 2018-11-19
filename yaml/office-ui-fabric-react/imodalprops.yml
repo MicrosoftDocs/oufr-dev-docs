@@ -1,0 +1,226 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office-ui-fabric-react.IModalProps
+    name: IModalProps
+    fullName: IModalProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - React.Props
+    package: office-ui-fabric-react
+    children:
+      - office-ui-fabric-react.IModalProps.className
+      - office-ui-fabric-react.IModalProps.componentRef
+      - office-ui-fabric-react.IModalProps.containerClassName
+      - office-ui-fabric-react.IModalProps.isBlocking
+      - office-ui-fabric-react.IModalProps.isDarkOverlay
+      - office-ui-fabric-react.IModalProps.isOpen
+      - office-ui-fabric-react.IModalProps.layerProps
+      - office-ui-fabric-react.IModalProps.onDismiss
+      - office-ui-fabric-react.IModalProps.onDismissed
+      - office-ui-fabric-react.IModalProps.onLayerDidMount
+      - office-ui-fabric-react.IModalProps.scrollableContentClassName
+      - office-ui-fabric-react.IModalProps.styles
+      - office-ui-fabric-react.IModalProps.subtitleAriaId
+      - office-ui-fabric-react.IModalProps.theme
+      - office-ui-fabric-react.IModalProps.titleAriaId
+      - office-ui-fabric-react.IModalProps.topOffsetFixed
+  - uid: office-ui-fabric-react.IModalProps.className
+    summary: Optional class name to be added to the root class
+    name: className
+    fullName: className
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'className?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.IModalProps.componentRef
+    summary: >-
+      Optional callback to access the IDialog interface. Use this instead of ref for accessing the public methods and
+      properties of the component.
+    name: componentRef
+    fullName: componentRef
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'componentRef?: IRefObject<IModal>;'
+      return:
+        type:
+          - IRefObject<IModal>
+  - uid: office-ui-fabric-react.IModalProps.containerClassName
+    summary: Optional override for container class
+    name: containerClassName
+    fullName: containerClassName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'containerClassName?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.IModalProps.isBlocking
+    summary: Whether the dialog can be light dismissed by clicking outside the dialog (on the overlay).
+    name: isBlocking
+    fullName: isBlocking
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isBlocking?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-ui-fabric-react.IModalProps.isDarkOverlay
+    summary: Whether the overlay is dark themed.
+    name: isDarkOverlay
+    fullName: isDarkOverlay
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isDarkOverlay?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-ui-fabric-react.IModalProps.isOpen
+    summary: Whether the dialog is displayed.
+    name: isOpen
+    fullName: isOpen
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isOpen?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-ui-fabric-react.IModalProps.layerProps
+    summary: Props to be passed through to Layer
+    name: layerProps
+    fullName: layerProps
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'layerProps?: ILayerProps;'
+      return:
+        type:
+          - ILayerProps
+  - uid: office-ui-fabric-react.IModalProps.onDismiss
+    summary: 'A callback function for when the Modal is dismissed light dismiss, before the animation completes.'
+    name: onDismiss
+    fullName: onDismiss
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onDismiss?: (ev?: React.MouseEvent<HTMLButtonElement>) => any;'
+      return:
+        type:
+          - '(ev?: React.MouseEvent<HTMLButtonElement>) => any'
+  - uid: office-ui-fabric-react.IModalProps.onDismissed
+    summary: A callback function which is called after the Modal is dismissed and the animation is complete.
+    name: onDismissed
+    fullName: onDismissed
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onDismissed?: () => any;'
+      return:
+        type:
+          - () => any
+  - uid: office-ui-fabric-react.IModalProps.onLayerDidMount
+    summary: A callback function for when the Modal content is mounted on the overlay layer
+    deprecated:
+      content: Use layerProps.onLayerDidMount instead
+    name: onLayerDidMount
+    fullName: onLayerDidMount
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onLayerDidMount?: () => void;'
+      return:
+        type:
+          - () => void
+  - uid: office-ui-fabric-react.IModalProps.scrollableContentClassName
+    summary: Optional override for scrollable content class
+    name: scrollableContentClassName
+    fullName: scrollableContentClassName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'scrollableContentClassName?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.IModalProps.styles
+    summary: Call to provide customized styling that will layer on top of the variant rules.
+    name: styles
+    fullName: styles
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'styles?: IStyleFunctionOrObject<IModalStyleProps, IModalStyles>;'
+      return:
+        type:
+          - 'IStyleFunctionOrObject<IModalStyleProps, IModalStyles>'
+  - uid: office-ui-fabric-react.IModalProps.subtitleAriaId
+    summary: 'ARIA id for the subtitle of the Modal, if any'
+    name: subtitleAriaId
+    fullName: subtitleAriaId
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'subtitleAriaId?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.IModalProps.theme
+    summary: Theme provided by High-Order Component.
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type:
+          - ITheme
+  - uid: office-ui-fabric-react.IModalProps.titleAriaId
+    summary: 'ARIA id for the title of the Modal, if any'
+    name: titleAriaId
+    fullName: titleAriaId
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'titleAriaId?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.IModalProps.topOffsetFixed
+    summary: >-
+      Whether the modal should have top offset fixed once opened and expand from the bottom only when the content
+      changes dynamically.
+    name: topOffsetFixed
+    fullName: topOffsetFixed
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'topOffsetFixed?: boolean;'
+      return:
+        type:
+          - boolean

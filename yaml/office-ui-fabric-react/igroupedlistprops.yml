@@ -1,0 +1,284 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office-ui-fabric-react.IGroupedListProps
+    name: IGroupedListProps
+    fullName: IGroupedListProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - React.Props
+    package: office-ui-fabric-react
+    children:
+      - office-ui-fabric-react.IGroupedListProps.className
+      - office-ui-fabric-react.IGroupedListProps.componentRef
+      - office-ui-fabric-react.IGroupedListProps.dragDropEvents
+      - office-ui-fabric-react.IGroupedListProps.dragDropHelper
+      - office-ui-fabric-react.IGroupedListProps.eventsToRegister
+      - office-ui-fabric-react.IGroupedListProps.getGroupHeight
+      - office-ui-fabric-react.IGroupedListProps.groupProps
+      - office-ui-fabric-react.IGroupedListProps.groups
+      - office-ui-fabric-react.IGroupedListProps.items
+      - office-ui-fabric-react.IGroupedListProps.listProps
+      - office-ui-fabric-react.IGroupedListProps.onGroupExpandStateChanged
+      - office-ui-fabric-react.IGroupedListProps.onRenderCell
+      - office-ui-fabric-react.IGroupedListProps.onShouldVirtualize
+      - office-ui-fabric-react.IGroupedListProps.selection
+      - office-ui-fabric-react.IGroupedListProps.selectionMode
+      - office-ui-fabric-react.IGroupedListProps.styles
+      - office-ui-fabric-react.IGroupedListProps.theme
+      - office-ui-fabric-react.IGroupedListProps.usePageCache
+      - office-ui-fabric-react.IGroupedListProps.viewport
+  - uid: office-ui-fabric-react.IGroupedListProps.className
+    summary: Optional class name to add to the root element.
+    name: className
+    fullName: className
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'className?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.IGroupedListProps.componentRef
+    summary: >-
+      Optional callback to access the IGroupedList interface. Use this instead of ref for accessing the public methods
+      and properties of the component.
+    name: componentRef
+    fullName: componentRef
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'componentRef?: IRefObject<IGroupedList>;'
+      return:
+        type:
+          - IRefObject<IGroupedList>
+  - uid: office-ui-fabric-react.IGroupedListProps.dragDropEvents
+    summary: Map of callback functions related to drag and drop functionality.
+    name: dragDropEvents
+    fullName: dragDropEvents
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'dragDropEvents?: IDragDropEvents;'
+      return:
+        type:
+          - IDragDropEvents
+  - uid: office-ui-fabric-react.IGroupedListProps.dragDropHelper
+    summary: helper to manage drag/drop across item and groups
+    name: dragDropHelper
+    fullName: dragDropHelper
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'dragDropHelper?: IDragDropHelper;'
+      return:
+        type:
+          - IDragDropHelper
+  - uid: office-ui-fabric-react.IGroupedListProps.eventsToRegister
+    summary: Event names and corresponding callbacks that will be registered to groups and rendered elements
+    name: eventsToRegister
+    fullName: eventsToRegister
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: |-
+        eventsToRegister?: {
+                eventName: string;
+                callback: (context: IDragDropContext, event?: any) => void;
+            }[];
+      return:
+        type:
+          - |-
+            {
+                    eventName: string;
+                    callback: (context: IDragDropContext, event?: any) => void;
+                }[]
+  - uid: office-ui-fabric-react.IGroupedListProps.getGroupHeight
+    summary: >-
+      Optional function which will be called to estimate the height (in pixels) of the given group.
+
+
+      By default, scrolling through a large virtualized GroupedList will often "jump" due to the order in which heights
+      are calculated. For more details, see https://github.com/OfficeDev/office-ui-fabric-react/issues/5094
+
+
+      Pass this prop to ensure the list uses the computed height rather than cached DOM measurements, avoiding the
+      scroll jumping issue.
+    name: getGroupHeight
+    fullName: getGroupHeight
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'getGroupHeight?: (group: IGroup, groupIndex: number) => number;'
+      return:
+        type:
+          - '(group: IGroup, groupIndex: number) => number'
+  - uid: office-ui-fabric-react.IGroupedListProps.groupProps
+    summary: Optional override properties to render groups.
+    name: groupProps
+    fullName: groupProps
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'groupProps?: IGroupRenderProps;'
+      return:
+        type:
+          - IGroupRenderProps
+  - uid: office-ui-fabric-react.IGroupedListProps.groups
+    summary: Optional grouping instructions.
+    name: groups
+    fullName: groups
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'groups?: IGroup[];'
+      return:
+        type:
+          - 'IGroup[]'
+  - uid: office-ui-fabric-react.IGroupedListProps.items
+    summary: List of items to render.
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items: any[];'
+      return:
+        type:
+          - 'any[]'
+  - uid: office-ui-fabric-react.IGroupedListProps.listProps
+    summary: Optional properties to pass through to the list components being rendered.
+    name: listProps
+    fullName: listProps
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'listProps?: IListProps;'
+      return:
+        type:
+          - IListProps
+  - uid: office-ui-fabric-react.IGroupedListProps.onGroupExpandStateChanged
+    summary: Optional callback when the group expand state changes between all collapsed and at least one group is expanded.
+    name: onGroupExpandStateChanged
+    fullName: onGroupExpandStateChanged
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onGroupExpandStateChanged?: (isSomeGroupExpanded: boolean) => void;'
+      return:
+        type:
+          - '(isSomeGroupExpanded: boolean) => void'
+  - uid: office-ui-fabric-react.IGroupedListProps.onRenderCell
+    summary: Rendering callback to render the group items.
+    name: onRenderCell
+    fullName: onRenderCell
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onRenderCell: (nestingDepth?: number, item?: any, index?: number) => React.ReactNode;'
+      return:
+        type:
+          - '(nestingDepth?: number, item?: any, index?: number) => React.ReactNode'
+  - uid: office-ui-fabric-react.IGroupedListProps.onShouldVirtualize
+    summary: >-
+      Optional callback to determine whether the list should be rendered in full, or virtualized. Virtualization will
+      add and remove pages of items as the user scrolls them into the visible range. This benefits larger list scenarios
+      by reducing the DOM on the screen, but can negatively affect performance for smaller lists. The default
+      implementation will virtualize when this callback is not provided.
+    name: onShouldVirtualize
+    fullName: onShouldVirtualize
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onShouldVirtualize?: (props: IListProps) => boolean;'
+      return:
+        type:
+          - '(props: IListProps) => boolean'
+  - uid: office-ui-fabric-react.IGroupedListProps.selection
+    summary: Optional selection model to track selection state.
+    name: selection
+    fullName: selection
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'selection?: ISelection;'
+      return:
+        type:
+          - ISelection
+  - uid: office-ui-fabric-react.IGroupedListProps.selectionMode
+    summary: Controls how/if the list manages selection.
+    name: selectionMode
+    fullName: selectionMode
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'selectionMode?: SelectionMode;'
+      return:
+        type:
+          - SelectionMode
+  - uid: office-ui-fabric-react.IGroupedListProps.styles
+    summary: Style function to be passed in to override the themed or default styles
+    name: styles
+    fullName: styles
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'styles?: IStyleFunctionOrObject<IGroupedListStyleProps, IGroupedListStyles>;'
+      return:
+        type:
+          - 'IStyleFunctionOrObject<IGroupedListStyleProps, IGroupedListStyles>'
+  - uid: office-ui-fabric-react.IGroupedListProps.theme
+    summary: Theme that is passed in from Higher Order Component
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type:
+          - ITheme
+  - uid: office-ui-fabric-react.IGroupedListProps.usePageCache
+    summary: >-
+      boolean to control if pages containing unchanged items should be cached, this is a perf optimization The same
+      property in List.Props
+    name: usePageCache
+    fullName: usePageCache
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'usePageCache?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-ui-fabric-react.IGroupedListProps.viewport
+    summary: 'Optional Viewport, provided by the parent component.'
+    name: viewport
+    fullName: viewport
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'viewport?: IViewport;'
+      return:
+        type:
+          - IViewport

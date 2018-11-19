@@ -1,0 +1,30 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office-ui-fabric-react.NormalPeoplePicker
+    summary: Standard People Picker.
+    name: NormalPeoplePicker
+    fullName: NormalPeoplePicker
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - BasePeoplePicker
+    package: office-ui-fabric-react
+    children:
+      - office-ui-fabric-react.NormalPeoplePicker.defaultProps
+  - uid: office-ui-fabric-react.NormalPeoplePicker.defaultProps
+    name: defaultProps
+    fullName: defaultProps
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'static defaultProps:'
+      return:
+        type:
+          - |-
+            {
+                    onRenderItem: (props: IPeoplePickerItemProps) => JSX.Element;
+                    onRenderSuggestionsItem: (props: IPersonaProps, itemProps?: IBasePickerSuggestionsProps | undefined) => JSX.Element;
+                    createGenericItem: typeof createGenericItem;
+                }

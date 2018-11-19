@@ -1,0 +1,458 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office-ui-fabric-react.ISuggestionsProps
+    name: ISuggestionsProps
+    fullName: ISuggestionsProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - React.Props
+    package: office-ui-fabric-react
+    children:
+      - office-ui-fabric-react.ISuggestionsProps.className
+      - office-ui-fabric-react.ISuggestionsProps.componentRef
+      - office-ui-fabric-react.ISuggestionsProps.createGenericItem
+      - office-ui-fabric-react.ISuggestionsProps.forceResolveText
+      - office-ui-fabric-react.ISuggestionsProps.isLoading
+      - office-ui-fabric-react.ISuggestionsProps.isMostRecentlyUsedVisible
+      - office-ui-fabric-react.ISuggestionsProps.isResultsFooterVisible
+      - office-ui-fabric-react.ISuggestionsProps.isSearching
+      - office-ui-fabric-react.ISuggestionsProps.loadingText
+      - office-ui-fabric-react.ISuggestionsProps.moreSuggestionsAvailable
+      - office-ui-fabric-react.ISuggestionsProps.mostRecentlyUsedHeaderText
+      - office-ui-fabric-react.ISuggestionsProps.noResultsFoundText
+      - office-ui-fabric-react.ISuggestionsProps.onGetMoreResults
+      - office-ui-fabric-react.ISuggestionsProps.onRenderNoResultFound
+      - office-ui-fabric-react.ISuggestionsProps.onRenderSuggestion
+      - office-ui-fabric-react.ISuggestionsProps.onSuggestionClick
+      - office-ui-fabric-react.ISuggestionsProps.onSuggestionRemove
+      - office-ui-fabric-react.ISuggestionsProps.refocusSuggestions
+      - office-ui-fabric-react.ISuggestionsProps.removeSuggestionAriaLabel
+      - office-ui-fabric-react.ISuggestionsProps.resultsFooter
+      - office-ui-fabric-react.ISuggestionsProps.resultsFooterFull
+      - office-ui-fabric-react.ISuggestionsProps.resultsMaximumNumber
+      - office-ui-fabric-react.ISuggestionsProps.searchErrorText
+      - office-ui-fabric-react.ISuggestionsProps.searchForMoreText
+      - office-ui-fabric-react.ISuggestionsProps.searchingText
+      - office-ui-fabric-react.ISuggestionsProps.showForceResolve
+      - office-ui-fabric-react.ISuggestionsProps.showRemoveButtons
+      - office-ui-fabric-react.ISuggestionsProps.suggestions
+      - office-ui-fabric-react.ISuggestionsProps.suggestionsAvailableAlertText
+      - office-ui-fabric-react.ISuggestionsProps.suggestionsClassName
+      - office-ui-fabric-react.ISuggestionsProps.suggestionsContainerAriaLabel
+      - office-ui-fabric-react.ISuggestionsProps.suggestionsHeaderText
+      - office-ui-fabric-react.ISuggestionsProps.suggestionsItemClassName
+      - office-ui-fabric-react.ISuggestionsProps.suggestionsListId
+  - uid: office-ui-fabric-react.ISuggestionsProps.className
+    summary: The CSS classname of the suggestions root.
+    name: className
+    fullName: className
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'className?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.ISuggestionsProps.componentRef
+    summary: Gets the component ref.
+    name: componentRef
+    fullName: componentRef
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'componentRef?: IRefObject<{}>;'
+      return:
+        type:
+          - 'IRefObject<{}>'
+  - uid: office-ui-fabric-react.ISuggestionsProps.createGenericItem
+    summary: The callback that should be called when the user attempts to use the input text as as item
+    name: createGenericItem
+    fullName: createGenericItem
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'createGenericItem?: () => void;'
+      return:
+        type:
+          - () => void
+  - uid: office-ui-fabric-react.ISuggestionsProps.forceResolveText
+    summary: The text that appears indicating to the use to force resolve the input
+    name: forceResolveText
+    fullName: forceResolveText
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'forceResolveText?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.ISuggestionsProps.isLoading
+    summary: Used to indicate whether or not the suggestions are loading.
+    name: isLoading
+    fullName: isLoading
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isLoading?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-ui-fabric-react.ISuggestionsProps.isMostRecentlyUsedVisible
+    summary: Indicates if a short list of recent suggestions should be shown.
+    name: isMostRecentlyUsedVisible
+    fullName: isMostRecentlyUsedVisible
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isMostRecentlyUsedVisible?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-ui-fabric-react.ISuggestionsProps.isResultsFooterVisible
+    summary: Indicates if the text in resultsFooter or resultsFooterFull should be shown at the end of the suggestion list.
+    name: isResultsFooterVisible
+    fullName: isResultsFooterVisible
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isResultsFooterVisible?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-ui-fabric-react.ISuggestionsProps.isSearching
+    summary: Used to indicate whether or not the component is searching for more results.
+    name: isSearching
+    fullName: isSearching
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isSearching?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-ui-fabric-react.ISuggestionsProps.loadingText
+    summary: The text to display while the results are loading.
+    name: loadingText
+    fullName: loadingText
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'loadingText?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.ISuggestionsProps.moreSuggestionsAvailable
+    summary: >-
+      Used to indicate whether or not the user can request more suggestions. Dictates whether or not the searchForMore
+      button is displayed.
+    name: moreSuggestionsAvailable
+    fullName: moreSuggestionsAvailable
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'moreSuggestionsAvailable?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-ui-fabric-react.ISuggestionsProps.mostRecentlyUsedHeaderText
+    summary: The text that should appear at the top of the most recenty used box.
+    name: mostRecentlyUsedHeaderText
+    fullName: mostRecentlyUsedHeaderText
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'mostRecentlyUsedHeaderText?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.ISuggestionsProps.noResultsFoundText
+    summary: The text that should appear if no results are found when searching.
+    name: noResultsFoundText
+    fullName: noResultsFoundText
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'noResultsFoundText?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.ISuggestionsProps.onGetMoreResults
+    summary: The callback that should be called when the user attempts to get more results
+    name: onGetMoreResults
+    fullName: onGetMoreResults
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onGetMoreResults?: () => void;'
+      return:
+        type:
+          - () => void
+  - uid: office-ui-fabric-react.ISuggestionsProps.onRenderNoResultFound
+    summary: How the "no result found" should look in the suggestion list.
+    name: onRenderNoResultFound
+    fullName: onRenderNoResultFound
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onRenderNoResultFound?: IRenderFunction<void>;'
+      return:
+        type:
+          - IRenderFunction<void>
+  - uid: office-ui-fabric-react.ISuggestionsProps.onRenderSuggestion
+    summary: How the suggestion should look in the suggestion list.
+    name: onRenderSuggestion
+    fullName: onRenderSuggestion
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onRenderSuggestion?: (props: T, suggestionItemProps: T) => JSX.Element;'
+      return:
+        type:
+          - '(props: T, suggestionItemProps: T) => JSX.Element'
+  - uid: office-ui-fabric-react.ISuggestionsProps.onSuggestionClick
+    summary: What should occur when a suggestion is clicked
+    name: onSuggestionClick
+    fullName: onSuggestionClick
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onSuggestionClick: (ev?: React.MouseEvent<HTMLElement>, item?: any, index?: number) => void;'
+      return:
+        type:
+          - '(ev?: React.MouseEvent<HTMLElement>, item?: any, index?: number) => void'
+  - uid: office-ui-fabric-react.ISuggestionsProps.onSuggestionRemove
+    summary: Function to fire when one of the optional remove buttons on a suggestion is clicked.
+    name: onSuggestionRemove
+    fullName: onSuggestionRemove
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onSuggestionRemove?: (ev?: React.MouseEvent<HTMLElement>, item?: IPersonaProps, index?: number) => void;'
+      return:
+        type:
+          - '(ev?: React.MouseEvent<HTMLElement>, item?: IPersonaProps, index?: number) => void'
+  - uid: office-ui-fabric-react.ISuggestionsProps.refocusSuggestions
+    summary: A function that resets focus to the expected item in the suggestion list
+    name: refocusSuggestions
+    fullName: refocusSuggestions
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'refocusSuggestions?: (keyCode: KeyCodes) => void;'
+      return:
+        type:
+          - '(keyCode: KeyCodes) => void'
+  - uid: office-ui-fabric-react.ISuggestionsProps.removeSuggestionAriaLabel
+    summary: An ARIA label to use for the buttons to remove individual suggestions.
+    name: removeSuggestionAriaLabel
+    fullName: removeSuggestionAriaLabel
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'removeSuggestionAriaLabel?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.ISuggestionsProps.resultsFooter
+    summary: A renderer that adds an element at the end of the suggestions list it has fewer items than resultsMaximumNumber.
+    name: resultsFooter
+    fullName: resultsFooter
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'resultsFooter?: (props: ISuggestionsProps<T>) => JSX.Element;'
+      return:
+        type:
+          - '(props: ISuggestionsProps<T>) => JSX.Element'
+  - uid: office-ui-fabric-react.ISuggestionsProps.resultsFooterFull
+    summary: A renderer that adds an element at the end of the suggestions list it has more items than resultsMaximumNumber.
+    name: resultsFooterFull
+    fullName: resultsFooterFull
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'resultsFooterFull?: (props: ISuggestionsProps<T>) => JSX.Element;'
+      return:
+        type:
+          - '(props: ISuggestionsProps<T>) => JSX.Element'
+  - uid: office-ui-fabric-react.ISuggestionsProps.resultsMaximumNumber
+    summary: Maximum number of suggestions to show in the full suggestion list.
+    name: resultsMaximumNumber
+    fullName: resultsMaximumNumber
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'resultsMaximumNumber?: number;'
+      return:
+        type:
+          - number
+  - uid: office-ui-fabric-react.ISuggestionsProps.searchErrorText
+    summary: The text that should appear if there is a search error.
+    name: searchErrorText
+    fullName: searchErrorText
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'searchErrorText?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.ISuggestionsProps.searchForMoreText
+    summary: The text that appears indicating to the user that they can search for more results.
+    name: searchForMoreText
+    fullName: searchForMoreText
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'searchForMoreText?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.ISuggestionsProps.searchingText
+    summary: The text to display while searching for more results in a limited sugesstions list.
+    name: searchingText
+    fullName: searchingText
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'searchingText?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.ISuggestionsProps.showForceResolve
+    summary: The callback that should be called to see if the force resolve command should be shown
+    name: showForceResolve
+    fullName: showForceResolve
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showForceResolve?: () => boolean;'
+      return:
+        type:
+          - () => boolean
+  - uid: office-ui-fabric-react.ISuggestionsProps.showRemoveButtons
+    summary: Indicates whether to show a button with each suggestion to remove that suggestion.
+    name: showRemoveButtons
+    fullName: showRemoveButtons
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showRemoveButtons?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-ui-fabric-react.ISuggestionsProps.suggestions
+    summary: The list of Suggestions that will be displayed
+    name: suggestions
+    fullName: suggestions
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'suggestions: ISuggestionModel<T>[];'
+      return:
+        type:
+          - 'ISuggestionModel<T>[]'
+  - uid: office-ui-fabric-react.ISuggestionsProps.suggestionsAvailableAlertText
+    summary: Screen reader message to read when there are suggestions available.
+    name: suggestionsAvailableAlertText
+    fullName: suggestionsAvailableAlertText
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'suggestionsAvailableAlertText?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.ISuggestionsProps.suggestionsClassName
+    summary: The CSS classname of the suggestionslist
+    name: suggestionsClassName
+    fullName: suggestionsClassName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'suggestionsClassName?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.ISuggestionsProps.suggestionsContainerAriaLabel
+    summary: An ARIA label for the container that is the parent of the suggestions.
+    name: suggestionsContainerAriaLabel
+    fullName: suggestionsContainerAriaLabel
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'suggestionsContainerAriaLabel?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.ISuggestionsProps.suggestionsHeaderText
+    summary: The text that appears at the top of the suggestions list.
+    name: suggestionsHeaderText
+    fullName: suggestionsHeaderText
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'suggestionsHeaderText?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.ISuggestionsProps.suggestionsItemClassName
+    summary: the classname of the suggestionitem.
+    name: suggestionsItemClassName
+    fullName: suggestionsItemClassName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'suggestionsItemClassName?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.ISuggestionsProps.suggestionsListId
+    summary: >-
+      The string that will be used as the suggestionsListId. Will be used by the basepicker to keep track of the list
+      for aria.
+    name: suggestionsListId
+    fullName: suggestionsListId
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'suggestionsListId?: string;'
+      return:
+        type:
+          - string

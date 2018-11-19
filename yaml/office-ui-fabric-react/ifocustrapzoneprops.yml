@@ -1,0 +1,135 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office-ui-fabric-react.IFocusTrapZoneProps
+    name: IFocusTrapZoneProps
+    fullName: IFocusTrapZoneProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - React.HTMLAttributes
+    package: office-ui-fabric-react
+    children:
+      - office-ui-fabric-react.IFocusTrapZoneProps.ariaLabelledBy
+      - office-ui-fabric-react.IFocusTrapZoneProps.componentRef
+      - office-ui-fabric-react.IFocusTrapZoneProps.disableFirstFocus
+      - office-ui-fabric-react.IFocusTrapZoneProps.elementToFocusOnDismiss
+      - office-ui-fabric-react.IFocusTrapZoneProps.firstFocusableSelector
+      - office-ui-fabric-react.IFocusTrapZoneProps.focusPreviouslyFocusedInnerElement
+      - office-ui-fabric-react.IFocusTrapZoneProps.forceFocusInsideTrap
+      - office-ui-fabric-react.IFocusTrapZoneProps.ignoreExternalFocusing
+      - office-ui-fabric-react.IFocusTrapZoneProps.isClickableOutsideFocusTrap
+  - uid: office-ui-fabric-react.IFocusTrapZoneProps.ariaLabelledBy
+    summary: Sets the aria-labelledby attribute.
+    name: ariaLabelledBy
+    fullName: ariaLabelledBy
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'ariaLabelledBy?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.IFocusTrapZoneProps.componentRef
+    summary: >-
+      Optional callback to access the IFocusTrapZone interface. Use this instead of ref for accessing the public methods
+      and properties of the component.
+    name: componentRef
+    fullName: componentRef
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'componentRef?: IRefObject<IFocusTrapZone>;'
+      return:
+        type:
+          - IRefObject<IFocusTrapZone>
+  - uid: office-ui-fabric-react.IFocusTrapZoneProps.disableFirstFocus
+    summary: Do not put focus onto first element when render focus trap zone
+    name: disableFirstFocus
+    fullName: disableFirstFocus
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'disableFirstFocus?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-ui-fabric-react.IFocusTrapZoneProps.elementToFocusOnDismiss
+    summary: Sets the HTMLElement to focus on when exiting the FocusTrapZone.
+    name: elementToFocusOnDismiss
+    fullName: elementToFocusOnDismiss
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'elementToFocusOnDismiss?: HTMLElement;'
+      return:
+        type:
+          - HTMLElement
+  - uid: office-ui-fabric-react.IFocusTrapZoneProps.firstFocusableSelector
+    summary: Indicates the selector for first focusable item. Only applies if focusPreviouslyFocusedInnerElement == false.
+    name: firstFocusableSelector
+    fullName: firstFocusableSelector
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'firstFocusableSelector?: string | (() => string);'
+      return:
+        type:
+          - string | (() => string)
+  - uid: office-ui-fabric-react.IFocusTrapZoneProps.focusPreviouslyFocusedInnerElement
+    summary: >-
+      Specifies the algorithm used to determine which descendant element to focus when focus() is called. If false, the
+      first focusable descendant, filtered by the firstFocusableSelector property if present, is chosen. If true, the
+      element that was focused when the Trap Zone last had a focused descendant is chosen. If it has never had a focused
+      descendant before, behavior falls back to the first focused descendant.
+    name: focusPreviouslyFocusedInnerElement
+    fullName: focusPreviouslyFocusedInnerElement
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'focusPreviouslyFocusedInnerElement?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-ui-fabric-react.IFocusTrapZoneProps.forceFocusInsideTrap
+    summary: Indicates whether focus trap zone should force focus inside the focus trap zone
+    name: forceFocusInsideTrap
+    fullName: forceFocusInsideTrap
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'forceFocusInsideTrap?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-ui-fabric-react.IFocusTrapZoneProps.ignoreExternalFocusing
+    summary: Indicates if this Trap Zone will ignore keeping track of HTMLElement that activated the Zone.
+    name: ignoreExternalFocusing
+    fullName: ignoreExternalFocusing
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'ignoreExternalFocusing?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-ui-fabric-react.IFocusTrapZoneProps.isClickableOutsideFocusTrap
+    summary: Indicates if this Trap Zone will allow clicks outside the FocusTrapZone
+    name: isClickableOutsideFocusTrap
+    fullName: isClickableOutsideFocusTrap
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isClickableOutsideFocusTrap?: boolean;'
+      return:
+        type:
+          - boolean
