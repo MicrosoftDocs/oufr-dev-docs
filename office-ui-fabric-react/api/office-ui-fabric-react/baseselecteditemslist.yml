@@ -7,9 +7,9 @@ items:
       - typeScript
     type: class
     extends:
-      - BaseComponent
+      - office-ui-fabric-react.BaseComponent
     implements:
-      - IBaseSelectedItemsList
+      - office-ui-fabric-react.IBaseSelectedItemsList
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.BaseSelectedItemsList.constructor
@@ -109,7 +109,7 @@ items:
         - id: newState
           description: ''
           type:
-            - IBaseSelectedItemsListState
+            - office-ui-fabric-react.IBaseSelectedItemsListState
   - uid: office-ui-fabric-react.BaseSelectedItemsList.copyItems
     name: copyItems(items)
     fullName: copyItems
@@ -301,7 +301,7 @@ items:
       content: 'protected selection: Selection;'
       return:
         type:
-          - Selection
+          - office-ui-fabric-react.Selection
   - uid: office-ui-fabric-react.BaseSelectedItemsList.unselectAll
     name: unselectAll()
     fullName: unselectAll

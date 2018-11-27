@@ -11,7 +11,7 @@ items:
       - typeScript
     type: interface
     extends:
-      - IRenderFunction
+      - office-ui-fabric-react.IRenderFunction
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.IPanelHeaderRenderer.__call
@@ -33,13 +33,13 @@ items:
         - id: props
           description: Props given to the panel
           type:
-            - IPanelProps
+            - office-ui-fabric-react.IPanelProps
         - id: defaultRender
           description: >-
             Default header renderer. If using this renderer in code that does not assign `headerTextId` to an element
             elsewhere, it \*\*must\*\* be passed to this function.
           type:
-            - IPanelHeaderRenderer
+            - office-ui-fabric-react.IPanelHeaderRenderer
         - id: headerTextId
           description: >-
             If provided, this \*\*must\*\* be used as the ID of an element containing the panel's title, because the
