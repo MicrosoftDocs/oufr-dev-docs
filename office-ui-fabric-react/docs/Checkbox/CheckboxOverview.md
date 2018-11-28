@@ -1,6 +1,11 @@
-# Checkbox
+---
+Description: Used to switch between two mutually exclusice options (checked or unchecked, on or off) through a single click or tap.
+title: Checkbox
+label: Checkbox
+keywords: checkbox
+---
 
-## Overview
+# Checkbox
 
 A Checkbox is a UI element that allows users to switch between two mutually exclusive options (checked or unchecked, on or off) through a single click or tap. It can also be used to indicate a subordinate setting or preference when paired with another control.
 
@@ -12,6 +17,10 @@ For a binary choice, the main difference between a Checkbox and a toggle switch 
 
 Use multiple Checkboxes for multi-select scenarios in which a user chooses one or more items from a group of choices that are not mutually exclusive.
 
+
+![](../../assets/Checkbox.Default.jpg?raw=true)
+
+
 <center>
 
 | Do | Don't|
@@ -21,5 +30,3 @@ Use multiple Checkboxes for multi-select scenarios in which a user chooses one o
 | |- Don't put two groups of Checkboxes next to each other. Separate the two groups with labels.|
 
 </center>
-
-## Variants
