@@ -1,4 +1,6 @@
-# Overview
+# Checkbox
+
+## Overview
 
 A Checkbox is a UI element that allows users to switch between two mutually exclusive options (checked or unchecked, on or off) through a single click or tap. It can also be used to indicate a subordinate setting or preference when paired with another control.
 
@@ -20,4 +22,4 @@ Use multiple Checkboxes for multi-select scenarios in which a user chooses one o
 
 </center>
 
-# Variants
+## Variants
