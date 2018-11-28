@@ -22,11 +22,26 @@ Use multiple Checkboxes for multi-select scenarios in which a user chooses one o
 
 
 <center>
-
-| Do | Don't|
-|----|------|
-|- Allow users to choose any combination of options when several Checkboxes are grouped together.|- Don't use a Checkbox as an on/off control. Instead use a toggle switch.|
-| |- Don’t use a Checkbox when the user can choose only one option from the group, use radio buttons instead.|
-| |- Don't put two groups of Checkboxes next to each other. Separate the two groups with labels.|
-
+<table>
+    <thead>
+        <tr>
+            <th>Do</th>
+            <th>Don't</th>
+        </tr>
+    <thead>
+    <tbody>
+        <tr>
+            <td>* Allow users to choose any combination of options when several Checkboxes are grouped together.</td>
+            <td>* Don't use a Checkbox as an on/off control. Instead use a toggle switch.</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>* Don’t use a Checkbox when the user can choose only one option from the group, use radio buttons instead.</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>* Don't put two groups of Checkboxes next to each other. Separate the two groups with labels.</td>
+        </tr>
+    </tbody>
+</table>
 </center>
