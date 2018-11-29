@@ -45,3 +45,6 @@ Use multiple Checkboxes for multi-select scenarios in which a user chooses one o
     </tbody>
 </table>
 </center>
+
+
+<iframe src="https://developer.microsoft.com/en-us/fabric#/components/checkbox"></iframe>
