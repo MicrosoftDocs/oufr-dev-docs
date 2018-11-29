@@ -1161,7 +1161,7 @@ items:
       content: 'export function createFontStyles(localeCode: string | null): IFontStyles;'
       return:
         type:
-          - IFontStyles
+          - office-ui-fabric-react.IFontStyles
         description: ''
       parameters:
         - id: localeCode
@@ -1195,7 +1195,7 @@ items:
         - id: currentValidationState
           description: ''
           type:
-            - ValidationState
+            - office-ui-fabric-react.ValidationState
         - id: allowPhoneInitials
           description: ''
           type:
@@ -1246,7 +1246,7 @@ items:
       content: 'export function createTheme(theme: IPartialTheme, depComments?: boolean): ITheme;'
       return:
         type:
-          - ITheme
+          - office-ui-fabric-react.ITheme
         description: ''
       parameters:
         - id: theme
@@ -1549,13 +1549,13 @@ items:
       content: 'export function fitContentToBounds(options: IFitContentToBoundsOptions): ISize;'
       return:
         type:
-          - ISize
+          - office-ui-fabric-react.ISize
         description: ''
       parameters:
         - id: options
           description: the options for the bounds fit operation
           type:
-            - IFitContentToBoundsOptions
+            - office-ui-fabric-react.IFitContentToBoundsOptions
   - uid: office-ui-fabric-react.flatten
     summary: 'Given an array where each element is of type T or T\[\], flatten it into an array of T'
     name: flatten(array)
@@ -1612,7 +1612,7 @@ items:
       content: 'export function focusClear(): IRawStyle;'
       return:
         type:
-          - IRawStyle
+          - office-ui-fabric-react.IRawStyle
         description: ''
   - uid: office-ui-fabric-react.focusFirstChild
     summary: Attempts to focus the first focusable element that is a child or child's child of the rootElement.
@@ -1649,7 +1649,7 @@ items:
         - id: font
           description: ''
           type:
-            - IFontFace
+            - office-ui-fabric-react.IFontFace
   - uid: office-ui-fabric-react.format
     summary: >-
       String format method, used for scenarios where at runtime you need to evaluate a formatted string given a
@@ -1690,11 +1690,11 @@ items:
         - id: color
           description: ''
           type:
-            - IColor
+            - office-ui-fabric-react.IColor
         - id: shade
           description: ''
           type:
-            - Shade
+            - office-ui-fabric-react.Shade
         - id: isInverted
           description: ''
           type:
@@ -1739,7 +1739,7 @@ items:
         }): IColor;
       return:
         type:
-          - IColor
+          - office-ui-fabric-react.IColor
         description: ''
       parameters:
         - id: rgba
@@ -1785,11 +1785,11 @@ items:
         - id: color1
           description: ''
           type:
-            - IColor
+            - office-ui-fabric-react.IColor
         - id: color2
           description: ''
           type:
-            - IColor
+            - office-ui-fabric-react.IColor
   - uid: office-ui-fabric-react.getDistanceBetweenPoints
     summary: Determines the distance between two points.
     name: 'getDistanceBetweenPoints(point1, point2)'
@@ -1807,11 +1807,11 @@ items:
         - id: point1
           description: ''
           type:
-            - IPoint
+            - office-ui-fabric-react.IPoint
         - id: point2
           description: ''
           type:
-            - IPoint
+            - office-ui-fabric-react.IPoint
   - uid: office-ui-fabric-react.getDocument
     summary: Helper to get the document object.
     name: getDocument(rootElement)
@@ -1846,13 +1846,13 @@ items:
         'horizontal' | 'vertical', width?: string | number, height?: string | number): IRawStyle;
       return:
         type:
-          - IRawStyle
+          - office-ui-fabric-react.IRawStyle
         description: The style object.
       parameters:
         - id: theme
           description: The theme object to use.
           type:
-            - ITheme
+            - office-ui-fabric-react.ITheme
         - id: color
           description: >-
             The background color to fade out to. Accepts only keys of ISemanticColors or IPalette. Defaults to
@@ -1945,13 +1945,13 @@ items:
         boolean): IRawStyle;
       return:
         type:
-          - IRawStyle
+          - office-ui-fabric-react.IRawStyle
         description: The style object.
       parameters:
         - id: theme
           description: The theme object to use.
           type:
-            - ITheme
+            - office-ui-fabric-react.ITheme
         - id: inset
           description: The number of pixels to inset the border.
           type:
@@ -1994,7 +1994,7 @@ items:
         - id: color
           description: ''
           type:
-            - IColor
+            - office-ui-fabric-react.IColor
   - uid: office-ui-fabric-react.getGlobalClassNames
     summary: >-
       Checks for the `disableGlobalClassNames` property on the `theme` to determine if it should return `classNames`
@@ -2022,7 +2022,7 @@ items:
         - id: theme
           description: The theme to check the flag on
           type:
-            - ITheme
+            - office-ui-fabric-react.ITheme
         - id: disableGlobalClassNames
           description: Optional. Explicitly opt in/out of disabling global classnames. Defaults to false.
           type:
@@ -2466,11 +2466,11 @@ items:
         - id: color
           description: The base color whose shade is to be computed
           type:
-            - IColor
+            - office-ui-fabric-react.IColor
         - id: shade
           description: The shade of the base color to compute
           type:
-            - Shade
+            - office-ui-fabric-react.Shade
         - id: isInverted
           description: Default false. Whether the given theme is inverted (reverse strongen/soften logic)
           type:
@@ -2491,7 +2491,7 @@ items:
         - id: item
           description: ''
           type:
-            - IContextualMenuItem
+            - office-ui-fabric-react.IContextualMenuItem
   - uid: office-ui-fabric-react.getTheme
     summary: Gets the theme object
     name: getTheme(depComments)
@@ -2503,7 +2503,7 @@ items:
       content: 'export function getTheme(depComments?: boolean): ITheme;'
       return:
         type:
-          - ITheme
+          - office-ui-fabric-react.ITheme
         description: ''
       parameters:
         - id: depComments
@@ -2660,7 +2660,7 @@ items:
       content: 'export function hsl2hsv(h: number, s: number, l: number): IHSV;'
       return:
         type:
-          - IHSV
+          - office-ui-fabric-react.IHSV
         description: ''
       parameters:
         - id: h
@@ -2685,7 +2685,7 @@ items:
       content: 'export function hsl2rgb(h: number, s: number, l: number): IRGB;'
       return:
         type:
-          - IRGB
+          - office-ui-fabric-react.IRGB
         description: ''
       parameters:
         - id: h
@@ -2770,7 +2770,7 @@ items:
       content: 'export function hsv2rgb(h: number, s: number, v: number): IRGB;'
       return:
         type:
-          - IRGB
+          - office-ui-fabric-react.IRGB
         description: ''
       parameters:
         - id: h
@@ -2833,7 +2833,7 @@ items:
         - id: options
           description: ''
           type:
-            - IIconOptions
+            - office-ui-fabric-react.IIconOptions
   - uid: office-ui-fabric-react.isDark
     name: isDark(color)
     fullName: isDark
@@ -2850,7 +2850,7 @@ items:
         - id: color
           description: ''
           type:
-            - IColor
+            - office-ui-fabric-react.IColor
   - uid: office-ui-fabric-react.isDirectionalKeyCode
     summary: Returns true if the keycode is a directional keyboard key.
     name: isDirectionalKeyCode(which)
@@ -2999,7 +2999,7 @@ items:
         - id: shade
           description: The Shade value to validate.
           type:
-            - Shade
+            - office-ui-fabric-react.Shade
   - uid: office-ui-fabric-react.keyframes
     summary: Registers keyframe definitions.
     name: keyframes(timeline)
@@ -3035,7 +3035,7 @@ items:
       content: 'export function loadTheme(theme: IPartialTheme, depComments?: boolean): ITheme;'
       return:
         type:
-          - ITheme
+          - office-ui-fabric-react.ITheme
         description: ''
       parameters:
         - id: theme
@@ -3201,7 +3201,7 @@ items:
         ICustomizerContext;
       return:
         type:
-          - ICustomizerContext
+          - office-ui-fabric-react.ICustomizerContext
         description: Merged customizations.
       parameters:
         - id: props
@@ -3211,7 +3211,7 @@ items:
         - id: parentContext
           description: Context containing current settings.
           type:
-            - ICustomizerContext
+            - office-ui-fabric-react.ICustomizerContext
   - uid: office-ui-fabric-react.mergeSettings
     summary: >-
       Merge new and old settings, giving priority to new settings. New settings is optional in which case oldSettings is
@@ -3422,7 +3422,7 @@ items:
         - id: iconSubset
           description: the icon subset definition.
           type:
-            - IIconSubset
+            - office-ui-fabric-react.IIconSubset
         - id: options
           description: ''
           type:
@@ -3579,7 +3579,7 @@ items:
       content: 'export function rgb2hsv(r: number, g: number, b: number): IHSV;'
       return:
         type:
-          - IHSV
+          - office-ui-fabric-react.IHSV
         description: ''
       parameters:
         - id: r
@@ -3832,7 +3832,7 @@ items:
         - id: customizable
           description: An object which defines which props can be customized using the Customizer.
           type:
-            - ICustomizableProps
+            - office-ui-fabric-react.ICustomizableProps
   - uid: office-ui-fabric-react.themeRulesStandardCreator
     name: themeRulesStandardCreator()
     fullName: themeRulesStandardCreator
@@ -3843,7 +3843,7 @@ items:
       content: 'export function themeRulesStandardCreator(): IThemeRules;'
       return:
         type:
-          - IThemeRules
+          - office-ui-fabric-react.IThemeRules
         description: ''
   - uid: office-ui-fabric-react.toMatrix
     summary: Convert the given array to a matrix with columnCount number of columns.
@@ -3917,13 +3917,13 @@ items:
       content: 'export function updateA(color: IColor, a: number): IColor;'
       return:
         type:
-          - IColor
+          - office-ui-fabric-react.IColor
         description: ''
       parameters:
         - id: color
           description: ''
           type:
-            - IColor
+            - office-ui-fabric-react.IColor
         - id: a
           description: ''
           type:
@@ -3938,13 +3938,13 @@ items:
       content: 'export function updateH(color: IColor, h: number): IColor;'
       return:
         type:
-          - IColor
+          - office-ui-fabric-react.IColor
         description: ''
       parameters:
         - id: color
           description: ''
           type:
-            - IColor
+            - office-ui-fabric-react.IColor
         - id: h
           description: ''
           type:
@@ -3959,13 +3959,13 @@ items:
       content: 'export function updateSV(color: IColor, s: number, v: number): IColor;'
       return:
         type:
-          - IColor
+          - office-ui-fabric-react.IColor
         description: ''
       parameters:
         - id: color
           description: ''
           type:
-            - IColor
+            - office-ui-fabric-react.IColor
         - id: s
           description: ''
           type:
