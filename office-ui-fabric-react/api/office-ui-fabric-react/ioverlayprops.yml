@@ -7,7 +7,7 @@ items:
       - typeScript
     type: interface
     extends:
-      - React.HTMLAttributes
+      - 'React.HTMLAttributes<HTMLElement> '
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.IOverlayProps.className
@@ -86,4 +86,4 @@ items:
       content: 'theme?: ITheme;'
       return:
         type:
-          - office-ui-fabric-react.ITheme
+          - styling.ITheme

@@ -1,6 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office-ui-fabric-react.IShimmerStyles
+    summary: Represents the stylable areas of the control.
     name: IShimmerStyles
     fullName: IShimmerStyles
     langs:
@@ -11,8 +12,10 @@ items:
       - office-ui-fabric-react.IShimmerStyles.dataWrapper
       - office-ui-fabric-react.IShimmerStyles.root
       - office-ui-fabric-react.IShimmerStyles.screenReaderText
+      - office-ui-fabric-react.IShimmerStyles.shimmerGradient
       - office-ui-fabric-react.IShimmerStyles.shimmerWrapper
   - uid: office-ui-fabric-react.IShimmerStyles.dataWrapper
+    summary: Refers to wrapper element of the children only.
     name: dataWrapper
     fullName: dataWrapper
     langs:
@@ -24,6 +27,7 @@ items:
         type:
           - IStyle
   - uid: office-ui-fabric-react.IShimmerStyles.root
+    summary: Refers to the root wrapper element.
     name: root
     fullName: root
     langs:
@@ -35,6 +39,7 @@ items:
         type:
           - IStyle
   - uid: office-ui-fabric-react.IShimmerStyles.screenReaderText
+    summary: Styles for the hidden helper element to aid with screen readers.
     name: screenReaderText
     fullName: screenReaderText
     langs:
@@ -45,7 +50,20 @@ items:
       return:
         type:
           - IStyle
+  - uid: office-ui-fabric-react.IShimmerStyles.shimmerGradient
+    summary: Refers to gradient element of the shimmer animation only.
+    name: shimmerGradient
+    fullName: shimmerGradient
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'shimmerGradient?: IStyle;'
+      return:
+        type:
+          - IStyle
   - uid: office-ui-fabric-react.IShimmerStyles.shimmerWrapper
+    summary: Refers to wrapper element of the shimmer only.
     name: shimmerWrapper
     fullName: shimmerWrapper
     langs:

@@ -8,7 +8,7 @@ items:
       - typeScript
     type: interface
     extends:
-      - React.AllHTMLAttributes
+      - 'React.AllHTMLAttributes<HTMLElement> '
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.IShimmerLineProps.borderStyle
@@ -30,7 +30,7 @@ items:
       content: 'borderStyle?: IRawStyle;'
       return:
         type:
-          - office-ui-fabric-react.IRawStyle
+          - merge-styles.IRawStyle
   - uid: office-ui-fabric-react.IShimmerLineProps.componentRef
     summary: >-
       Optional callback to access the IShimmerLine interface. Use this instead of ref for accessing the public methods
@@ -80,7 +80,7 @@ items:
       content: 'theme?: ITheme;'
       return:
         type:
-          - office-ui-fabric-react.ITheme
+          - styling.ITheme
   - uid: office-ui-fabric-react.IShimmerLineProps.width
     summary: Sets width value of the line.
     name: width

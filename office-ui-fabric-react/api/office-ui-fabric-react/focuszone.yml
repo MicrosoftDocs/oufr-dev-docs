@@ -7,22 +7,24 @@ items:
       - typeScript
     type: class
     extends:
-      - office-ui-fabric-react.BaseComponent
+      - ''
     implements:
-      - office-ui-fabric-react.IFocusZone
+      - ''
     package: office-ui-fabric-react
     children:
-      - office-ui-fabric-react.FocusZone.constructor
+      - office-ui-fabric-react.FocusZone.(constructor)
       - office-ui-fabric-react.FocusZone.componentDidMount
+      - office-ui-fabric-react.FocusZone.componentDidUpdate
       - office-ui-fabric-react.FocusZone.componentWillUnmount
       - office-ui-fabric-react.FocusZone.defaultProps
       - office-ui-fabric-react.FocusZone.focus
       - office-ui-fabric-react.FocusZone.focusElement
+      - office-ui-fabric-react.FocusZone.getOuterZones
       - office-ui-fabric-react.FocusZone.render
-  - uid: office-ui-fabric-react.FocusZone.constructor
-    summary: 'Constructs a new instance of the [FocusZone](xref:office-ui-fabric-react.FocusZone) class'
-    name: constructor(props)
-    fullName: constructor
+  - uid: office-ui-fabric-react.FocusZone.(constructor)
+    summary: Constructs a new instance of the `FocusZone` class
+    name: (constructor)(props)
+    fullName: (constructor)(props)
     langs:
       - typeScript
     type: constructor
@@ -35,7 +37,7 @@ items:
             - office-ui-fabric-react.IFocusZoneProps
   - uid: office-ui-fabric-react.FocusZone.componentDidMount
     name: componentDidMount()
-    fullName: componentDidMount
+    fullName: componentDidMount()
     langs:
       - typeScript
     type: method
@@ -45,9 +47,21 @@ items:
         type:
           - void
         description: ''
+  - uid: office-ui-fabric-react.FocusZone.componentDidUpdate
+    name: componentDidUpdate()
+    fullName: componentDidUpdate()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'componentDidUpdate(): void;'
+      return:
+        type:
+          - void
+        description: ''
   - uid: office-ui-fabric-react.FocusZone.componentWillUnmount
     name: componentWillUnmount()
-    fullName: componentWillUnmount
+    fullName: componentWillUnmount()
     langs:
       - typeScript
     type: method
@@ -71,7 +85,7 @@ items:
   - uid: office-ui-fabric-react.FocusZone.focus
     summary: Sets focus to the first tabbable item in the zone.
     name: focus(forceIntoFirstElement)
-    fullName: focus
+    fullName: focus(forceIntoFirstElement)
     langs:
       - typeScript
     type: method
@@ -91,7 +105,7 @@ items:
       Sets focus to a specific child element within the zone. This can be used in conjunction with onBeforeFocus to
       created delayed focus scenarios (like animate the scroll position to the correct location and then focus.)
     name: focusElement(element)
-    fullName: focusElement
+    fullName: focusElement(element)
     langs:
       - typeScript
     type: method
@@ -106,9 +120,22 @@ items:
           description: The child element within the zone to focus.
           type:
             - HTMLElement
+  - uid: office-ui-fabric-react.FocusZone.getOuterZones
+    summary: Used for testing purposes only.
+    name: getOuterZones()
+    fullName: getOuterZones()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'static getOuterZones(): number;'
+      return:
+        type:
+          - number
+        description: ''
   - uid: office-ui-fabric-react.FocusZone.render
     name: render()
-    fullName: render
+    fullName: render()
     langs:
       - typeScript
     type: method

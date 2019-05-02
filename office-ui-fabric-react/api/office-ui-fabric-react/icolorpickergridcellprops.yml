@@ -30,7 +30,9 @@ items:
       - office-ui-fabric-react.IColorPickerGridCellProps.theme
       - office-ui-fabric-react.IColorPickerGridCellProps.width
   - uid: office-ui-fabric-react.IColorPickerGridCellProps.borderWidth
-    summary: 'Width of the border that indicates a selected/hovered cell, in pixels'
+    summary: >-
+      Width of the border that indicates a selected/hovered cell, in pixels. If `cellWidth` is less than 24px, then
+      default value is 2px. Otherwise it defaults to 4px.
     name: borderWidth
     fullName: borderWidth
     langs:
@@ -268,7 +270,7 @@ items:
       content: 'theme?: ITheme;'
       return:
         type:
-          - office-ui-fabric-react.ITheme
+          - styling.ITheme
   - uid: office-ui-fabric-react.IColorPickerGridCellProps.width
     summary: 'Width of the cell, in pixels'
     name: width

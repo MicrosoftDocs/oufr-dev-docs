@@ -7,7 +7,7 @@ items:
       - typeScript
     type: interface
     extends:
-      - React.HTMLAttributes
+      - 'React.HTMLAttributes<List<T> | HTMLDivElement> '
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.IListProps.className
@@ -78,10 +78,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'getKey?: (item: any, index?: number) => string;'
+      content: 'getKey?: (item: T, index?: number) => string;'
       return:
         type:
-          - '(item: any, index?: number) => string'
+          - '(item: T, index?: number) => string'
   - uid: office-ui-fabric-react.IListProps.getPageHeight
     summary: >-
       Method called by the list to get the pixel height for a given page. By default, we measure the first page's height
@@ -122,10 +122,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'getPageStyle?: (page: IPage) => any;'
+      content: 'getPageStyle?: (page: IPage<T>) => any;'
       return:
         type:
-          - '(page: IPage) => any'
+          - '(page: IPage<T>) => any'
   - uid: office-ui-fabric-react.IListProps.items
     summary: Items to render.
     name: items
@@ -134,10 +134,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'items?: any[];'
+      content: 'items?: T[];'
       return:
         type:
-          - 'any[]'
+          - 'T[]'
   - uid: office-ui-fabric-react.IListProps.onPageAdded
     summary: Optional callback for monitoring when a page is added.
     name: onPageAdded
@@ -146,10 +146,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'onPageAdded?: (page: IPage) => void;'
+      content: 'onPageAdded?: (page: IPage<T>) => void;'
       return:
         type:
-          - '(page: IPage) => void'
+          - '(page: IPage<T>) => void'
   - uid: office-ui-fabric-react.IListProps.onPageRemoved
     summary: Optional callback for monitoring when a page is removed.
     name: onPageRemoved
@@ -158,10 +158,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'onPageRemoved?: (page: IPage) => void;'
+      content: 'onPageRemoved?: (page: IPage<T>) => void;'
       return:
         type:
-          - '(page: IPage) => void'
+          - '(page: IPage<T>) => void'
   - uid: office-ui-fabric-react.IListProps.onPagesUpdated
     summary: >-
       Optional callback invoked when List rendering completed. This can be on initial mount or on re-render due to
@@ -173,10 +173,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'onPagesUpdated?: (pages: IPage[]) => void;'
+      content: 'onPagesUpdated?: (pages: IPage<T>[]) => void;'
       return:
         type:
-          - '(pages: IPage[]) => void'
+          - '(pages: IPage<T>[]) => void'
   - uid: office-ui-fabric-react.IListProps.onRenderCell
     summary: Method to call when trying to render an item.
     name: onRenderCell
@@ -185,10 +185,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'onRenderCell?: (item?: any, index?: number, isScrolling?: boolean) => React.ReactNode;'
+      content: 'onRenderCell?: (item?: T, index?: number, isScrolling?: boolean) => React.ReactNode;'
       return:
         type:
-          - '(item?: any, index?: number, isScrolling?: boolean) => React.ReactNode'
+          - '(item?: T, index?: number, isScrolling?: boolean) => React.ReactNode'
   - uid: office-ui-fabric-react.IListProps.onRenderPage
     summary: Called when the List will render a page. Override this to control how cells are rendered within a page.
     name: onRenderPage
@@ -197,10 +197,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'onRenderPage?: (pageProps: IPageProps, defaultRender?: IRenderFunction<IPageProps>) => React.ReactNode;'
+      content: 'onRenderPage?: (pageProps: IPageProps<T>, defaultRender?: IRenderFunction<IPageProps<T>>) => React.ReactNode;'
       return:
         type:
-          - '(pageProps: IPageProps, defaultRender?: IRenderFunction<IPageProps>) => React.ReactNode'
+          - '(pageProps: IPageProps<T>, defaultRender?: IRenderFunction<IPageProps<T>>) => React.ReactNode'
   - uid: office-ui-fabric-react.IListProps.onShouldVirtualize
     summary: >-
       Optional callback to determine whether the list should be rendered in full, or virtualized. Virtualization will
@@ -213,10 +213,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'onShouldVirtualize?: (props: IListProps) => boolean;'
+      content: 'onShouldVirtualize?: (props: IListProps<T>) => boolean;'
       return:
         type:
-          - '(props: IListProps) => boolean'
+          - '(props: IListProps<T>) => boolean'
   - uid: office-ui-fabric-react.IListProps.renderCount
     summary: Number of items to render. Defaults to items.length.
     name: renderCount

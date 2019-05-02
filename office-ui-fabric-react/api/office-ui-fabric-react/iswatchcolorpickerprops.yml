@@ -16,7 +16,6 @@ items:
       - office-ui-fabric-react.ISwatchColorPickerProps.className
       - office-ui-fabric-react.ISwatchColorPickerProps.colorCells
       - office-ui-fabric-react.ISwatchColorPickerProps.columnCount
-      - office-ui-fabric-react.ISwatchColorPickerProps.componentRef
       - office-ui-fabric-react.ISwatchColorPickerProps.disabled
       - office-ui-fabric-react.ISwatchColorPickerProps.doNotContainWithinFocusZone
       - office-ui-fabric-react.ISwatchColorPickerProps.focusOnHover
@@ -33,7 +32,9 @@ items:
       - office-ui-fabric-react.ISwatchColorPickerProps.styles
       - office-ui-fabric-react.ISwatchColorPickerProps.theme
   - uid: office-ui-fabric-react.ISwatchColorPickerProps.cellBorderWidth
-    summary: 'Width of the border indicating a hovered/selected cell, in pixels'
+    summary: >-
+      Width of the border indicating a hovered/selected cell, in pixels If `cellWidth` is less than 24px, then default
+      value is 2px. Otherwise it defaults to 4px.
     name: cellBorderWidth
     fullName: cellBorderWidth
     langs:
@@ -128,18 +129,6 @@ items:
       return:
         type:
           - number
-  - uid: office-ui-fabric-react.ISwatchColorPickerProps.componentRef
-    summary: Gets the component ref.
-    name: componentRef
-    fullName: componentRef
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'componentRef?: IRefObject<ISwatchColorPicker>;'
-      return:
-        type:
-          - IRefObject<ISwatchColorPicker>
   - uid: office-ui-fabric-react.ISwatchColorPickerProps.disabled
     summary: Is this swatch color picker disabled?
     name: disabled
@@ -327,4 +316,4 @@ items:
       content: 'theme?: ITheme;'
       return:
         type:
-          - office-ui-fabric-react.ITheme
+          - styling.ITheme

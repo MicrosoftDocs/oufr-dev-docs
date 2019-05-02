@@ -8,11 +8,11 @@ items:
       - typeScript
     type: class
     extends:
-      - office-ui-fabric-react.BaseComponent
+      - ''
     package: office-ui-fabric-react
     children:
-      - office-ui-fabric-react.SuggestionsCore.constructor
       - office-ui-fabric-react.SuggestionsCore._selectedElement
+      - office-ui-fabric-react.SuggestionsCore.(constructor)
       - office-ui-fabric-react.SuggestionsCore.componentDidUpdate
       - office-ui-fabric-react.SuggestionsCore.currentIndex
       - office-ui-fabric-react.SuggestionsCore.currentSuggestion
@@ -27,20 +27,6 @@ items:
       - office-ui-fabric-react.SuggestionsCore.scrollSelected
       - office-ui-fabric-react.SuggestionsCore.selectedElement
       - office-ui-fabric-react.SuggestionsCore.setSelectedSuggestion
-  - uid: office-ui-fabric-react.SuggestionsCore.constructor
-    summary: 'Constructs a new instance of the [SuggestionsCore](xref:office-ui-fabric-react.SuggestionsCore) class'
-    name: constructor(suggestionsProps)
-    fullName: constructor
-    langs:
-      - typeScript
-    type: constructor
-    syntax:
-      content: 'constructor(suggestionsProps: ISuggestionsCoreProps<T>);'
-      parameters:
-        - id: suggestionsProps
-          description: ''
-          type:
-            - ISuggestionsCoreProps<T>
   - uid: office-ui-fabric-react.SuggestionsCore._selectedElement
     name: _selectedElement
     fullName: _selectedElement
@@ -52,9 +38,23 @@ items:
       return:
         type:
           - HTMLDivElement
+  - uid: office-ui-fabric-react.SuggestionsCore.(constructor)
+    summary: Constructs a new instance of the `SuggestionsCore` class
+    name: (constructor)(suggestionsProps)
+    fullName: (constructor)(suggestionsProps)
+    langs:
+      - typeScript
+    type: constructor
+    syntax:
+      content: 'constructor(suggestionsProps: ISuggestionsCoreProps<T>);'
+      parameters:
+        - id: suggestionsProps
+          description: ''
+          type:
+            - ISuggestionsCoreProps<T>
   - uid: office-ui-fabric-react.SuggestionsCore.componentDidUpdate
     name: componentDidUpdate()
-    fullName: componentDidUpdate
+    fullName: componentDidUpdate()
     langs:
       - typeScript
     type: method
@@ -88,7 +88,7 @@ items:
           - ISuggestionModel<T> | undefined
   - uid: office-ui-fabric-react.SuggestionsCore.deselectAllSuggestions
     name: deselectAllSuggestions()
-    fullName: deselectAllSuggestions
+    fullName: deselectAllSuggestions()
     langs:
       - typeScript
     type: method
@@ -100,7 +100,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.SuggestionsCore.getCurrentItem
     name: getCurrentItem()
-    fullName: getCurrentItem
+    fullName: getCurrentItem()
     langs:
       - typeScript
     type: method
@@ -112,7 +112,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.SuggestionsCore.getSuggestionAtIndex
     name: getSuggestionAtIndex(index)
-    fullName: getSuggestionAtIndex
+    fullName: getSuggestionAtIndex(index)
     langs:
       - typeScript
     type: method
@@ -129,7 +129,7 @@ items:
             - number
   - uid: office-ui-fabric-react.SuggestionsCore.hasSuggestionSelected
     name: hasSuggestionSelected()
-    fullName: hasSuggestionSelected
+    fullName: hasSuggestionSelected()
     langs:
       - typeScript
     type: method
@@ -142,7 +142,7 @@ items:
   - uid: office-ui-fabric-react.SuggestionsCore.nextSuggestion
     summary: Increments the selected suggestion index
     name: nextSuggestion()
-    fullName: nextSuggestion
+    fullName: nextSuggestion()
     langs:
       - typeScript
     type: method
@@ -155,7 +155,7 @@ items:
   - uid: office-ui-fabric-react.SuggestionsCore.previousSuggestion
     summary: Decrements the selected suggestion index
     name: previousSuggestion()
-    fullName: previousSuggestion
+    fullName: previousSuggestion()
     langs:
       - typeScript
     type: method
@@ -167,7 +167,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.SuggestionsCore.removeSuggestion
     name: removeSuggestion(index)
-    fullName: removeSuggestion
+    fullName: removeSuggestion(index)
     langs:
       - typeScript
     type: method
@@ -184,7 +184,7 @@ items:
             - number
   - uid: office-ui-fabric-react.SuggestionsCore.render
     name: render()
-    fullName: render
+    fullName: render()
     langs:
       - typeScript
     type: method
@@ -196,7 +196,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.SuggestionsCore.scrollSelected
     name: scrollSelected()
-    fullName: scrollSelected
+    fullName: scrollSelected()
     langs:
       - typeScript
     type: method
@@ -219,7 +219,7 @@ items:
           - HTMLDivElement | undefined
   - uid: office-ui-fabric-react.SuggestionsCore.setSelectedSuggestion
     name: setSelectedSuggestion(index)
-    fullName: setSelectedSuggestion
+    fullName: setSelectedSuggestion(index)
     langs:
       - typeScript
     type: method

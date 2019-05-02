@@ -7,13 +7,14 @@ items:
       - typeScript
     type: interface
     extends:
-      - React.HTMLAttributes
+      - 'React.HTMLAttributes<HTMLDivElement | LayerBase> '
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.ILayerProps.className
       - office-ui-fabric-react.ILayerProps.componentRef
       - office-ui-fabric-react.ILayerProps.eventBubblingEnabled
       - office-ui-fabric-react.ILayerProps.hostId
+      - office-ui-fabric-react.ILayerProps.insertFirst
       - office-ui-fabric-react.ILayerProps.onLayerDidMount
       - office-ui-fabric-react.ILayerProps.onLayerMounted
       - office-ui-fabric-react.ILayerProps.onLayerWillUnmount
@@ -76,6 +77,20 @@ items:
       return:
         type:
           - string
+  - uid: office-ui-fabric-react.ILayerProps.insertFirst
+    summary: >-
+      Whether the layer should be added as the first child of the host. If true, the layer will be inserted as the first
+      child of the host By default, the layer will be appended at the end to the host
+    name: insertFirst
+    fullName: insertFirst
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'insertFirst?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: office-ui-fabric-react.ILayerProps.onLayerDidMount
     summary: Callback for when the layer is mounted.
     name: onLayerDidMount
@@ -135,4 +150,4 @@ items:
       content: 'theme?: ITheme;'
       return:
         type:
-          - office-ui-fabric-react.ITheme
+          - styling.ITheme

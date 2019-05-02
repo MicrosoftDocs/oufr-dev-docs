@@ -8,6 +8,7 @@ items:
     type: interface
     package: office-ui-fabric-react
     children:
+      - office-ui-fabric-react.ISpinButtonProps.ariaDescribedBy
       - office-ui-fabric-react.ISpinButtonProps.ariaLabel
       - office-ui-fabric-react.ISpinButtonProps.ariaPositionInSet
       - office-ui-fabric-react.ISpinButtonProps.ariaSetSize
@@ -41,6 +42,18 @@ items:
       - office-ui-fabric-react.ISpinButtonProps.title
       - office-ui-fabric-react.ISpinButtonProps.upArrowButtonStyles
       - office-ui-fabric-react.ISpinButtonProps.value
+  - uid: office-ui-fabric-react.ISpinButtonProps.ariaDescribedBy
+    summary: Optional prop to add a string id that can be referenced inside the aria-describedby attribute
+    name: ariaDescribedBy
+    fullName: ariaDescribedBy
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'ariaDescribedBy?: string;'
+      return:
+        type:
+          - string
   - uid: office-ui-fabric-react.ISpinButtonProps.ariaLabel
     summary: A description of the SpinButton for the benefit of screen readers.
     name: ariaLabel
@@ -122,10 +135,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'componentRef?: (component?: ISpinButton | null) => void;'
+      content: 'componentRef?: IRefObject<ISpinButton>;'
       return:
         type:
-          - '(component?: ISpinButton | null) => void'
+          - IRefObject<ISpinButton>
   - uid: office-ui-fabric-react.ISpinButtonProps.decrementButtonAriaLabel
     summary: Accessibile label text for the decrement button for the benefit of the screen reader.
     name: decrementButtonAriaLabel
@@ -267,7 +280,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'label: string;'
+      content: 'label?: string;'
       return:
         type:
           - string
@@ -388,7 +401,7 @@ items:
   - uid: office-ui-fabric-react.ISpinButtonProps.step
     summary: >-
       The difference between the two adjacent values of the SpinButton. This value is sued to calculate the precision of
-      the input if no precision is given. The precision calculated this way will always be &gt;= 0.
+      the input if no precision is given. The precision calculated this way will always be &gt;<!-- -->= 0.
     name: step
     fullName: step
     langs:
@@ -422,7 +435,7 @@ items:
       content: 'theme?: ITheme;'
       return:
         type:
-          - office-ui-fabric-react.ITheme
+          - styling.ITheme
   - uid: office-ui-fabric-react.ISpinButtonProps.title
     summary: A title for the SpinButton used for a more descriptive name that's also visible on its tooltip.
     name: title

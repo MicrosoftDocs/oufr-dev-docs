@@ -39,10 +39,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'footerProps?: IGroupDividerProps;'
+      content: 'footerProps?: IGroupFooterProps;'
       return:
         type:
-          - office-ui-fabric-react.IGroupDividerProps
+          - office-ui-fabric-react.IGroupFooterProps
   - uid: office-ui-fabric-react.IGroupRenderProps.getGroupItemLimit
     summary: Grouping item limit.
     name: getGroupItemLimit
@@ -63,10 +63,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'headerProps?: IGroupDividerProps;'
+      content: 'headerProps?: IGroupHeaderProps;'
       return:
         type:
-          - office-ui-fabric-react.IGroupDividerProps
+          - office-ui-fabric-react.IGroupHeaderProps
   - uid: office-ui-fabric-react.IGroupRenderProps.isAllGroupsCollapsed
     summary: Boolean indicating if all groups are in collapsed state.
     name: isAllGroupsCollapsed
@@ -87,10 +87,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'onRenderFooter?: IRenderFunction<IGroupDividerProps>;'
+      content: 'onRenderFooter?: IRenderFunction<IGroupFooterProps>;'
       return:
         type:
-          - IRenderFunction<IGroupDividerProps>
+          - IRenderFunction<IGroupFooterProps>
   - uid: office-ui-fabric-react.IGroupRenderProps.onRenderHeader
     summary: Override which allows the caller to provide a custom header.
     name: onRenderHeader
@@ -99,10 +99,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'onRenderHeader?: IRenderFunction<IGroupDividerProps>;'
+      content: 'onRenderHeader?: IRenderFunction<IGroupHeaderProps>;'
       return:
         type:
-          - IRenderFunction<IGroupDividerProps>
+          - IRenderFunction<IGroupHeaderProps>
   - uid: office-ui-fabric-react.IGroupRenderProps.onRenderShowAll
     summary: Override which allows the caller to provide a custom Show All link.
     name: onRenderShowAll
@@ -111,10 +111,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'onRenderShowAll?: IRenderFunction<IGroupDividerProps>;'
+      content: 'onRenderShowAll?: IRenderFunction<IGroupShowAllProps>;'
       return:
         type:
-          - IRenderFunction<IGroupDividerProps>
+          - IRenderFunction<IGroupShowAllProps>
   - uid: office-ui-fabric-react.IGroupRenderProps.onToggleCollapseAll
     summary: Callback for when all groups are expanded or collapsed.
     name: onToggleCollapseAll
@@ -135,10 +135,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'showAllProps?: IGroupDividerProps;'
+      content: 'showAllProps?: IGroupShowAllProps;'
       return:
         type:
-          - office-ui-fabric-react.IGroupDividerProps
+          - office-ui-fabric-react.IGroupShowAllProps
   - uid: office-ui-fabric-react.IGroupRenderProps.showEmptyGroups
     summary: Boolean indicating if empty groups are shown
     name: showEmptyGroups

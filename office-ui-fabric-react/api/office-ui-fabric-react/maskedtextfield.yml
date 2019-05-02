@@ -7,13 +7,13 @@ items:
       - typeScript
     type: class
     extends:
-      - office-ui-fabric-react.BaseComponent
+      - 'React.Component<ITextFieldProps, IMaskedTextFieldState> '
     implements:
       - office-ui-fabric-react.ITextField
     package: office-ui-fabric-react
     children:
-      - office-ui-fabric-react.MaskedTextField.constructor
       - office-ui-fabric-react.MaskedTextField._skipComponentRefResolution
+      - office-ui-fabric-react.MaskedTextField.(constructor)
       - office-ui-fabric-react.MaskedTextField.blur
       - office-ui-fabric-react.MaskedTextField.componentDidUpdate
       - office-ui-fabric-react.MaskedTextField.componentWillReceiveProps
@@ -28,20 +28,6 @@ items:
       - office-ui-fabric-react.MaskedTextField.setSelectionStart
       - office-ui-fabric-react.MaskedTextField.setValue
       - office-ui-fabric-react.MaskedTextField.value
-  - uid: office-ui-fabric-react.MaskedTextField.constructor
-    summary: 'Constructs a new instance of the [MaskedTextField](xref:office-ui-fabric-react.MaskedTextField) class'
-    name: constructor(props)
-    fullName: constructor
-    langs:
-      - typeScript
-    type: constructor
-    syntax:
-      content: 'constructor(props: ITextFieldProps);'
-      parameters:
-        - id: props
-          description: ''
-          type:
-            - office-ui-fabric-react.ITextFieldProps
   - uid: office-ui-fabric-react.MaskedTextField._skipComponentRefResolution
     summary: Tell BaseComponent to bypass resolution of componentRef.
     name: _skipComponentRefResolution
@@ -54,9 +40,23 @@ items:
       return:
         type:
           - boolean
+  - uid: office-ui-fabric-react.MaskedTextField.(constructor)
+    summary: Constructs a new instance of the `MaskedTextField` class
+    name: (constructor)(props)
+    fullName: (constructor)(props)
+    langs:
+      - typeScript
+    type: constructor
+    syntax:
+      content: 'constructor(props: ITextFieldProps);'
+      parameters:
+        - id: props
+          description: ''
+          type:
+            - office-ui-fabric-react.ITextFieldProps
   - uid: office-ui-fabric-react.MaskedTextField.blur
     name: blur()
-    fullName: blur
+    fullName: blur()
     langs:
       - typeScript
     type: method
@@ -68,7 +68,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.MaskedTextField.componentDidUpdate
     name: componentDidUpdate()
-    fullName: componentDidUpdate
+    fullName: componentDidUpdate()
     langs:
       - typeScript
     type: method
@@ -80,7 +80,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.MaskedTextField.componentWillReceiveProps
     name: componentWillReceiveProps(newProps)
-    fullName: componentWillReceiveProps
+    fullName: componentWillReceiveProps(newProps)
     langs:
       - typeScript
     type: method
@@ -108,7 +108,7 @@ items:
           - office-ui-fabric-react.ITextFieldProps
   - uid: office-ui-fabric-react.MaskedTextField.focus
     name: focus()
-    fullName: focus
+    fullName: focus()
     langs:
       - typeScript
     type: method
@@ -120,7 +120,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.MaskedTextField.render
     name: render()
-    fullName: render
+    fullName: render()
     langs:
       - typeScript
     type: method
@@ -132,7 +132,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.MaskedTextField.select
     name: select()
-    fullName: select
+    fullName: select()
     langs:
       - typeScript
     type: method
@@ -166,7 +166,7 @@ items:
           - number | null
   - uid: office-ui-fabric-react.MaskedTextField.setSelectionEnd
     name: setSelectionEnd(value)
-    fullName: setSelectionEnd
+    fullName: setSelectionEnd(value)
     langs:
       - typeScript
     type: method
@@ -183,7 +183,7 @@ items:
             - number
   - uid: office-ui-fabric-react.MaskedTextField.setSelectionRange
     name: 'setSelectionRange(start, end)'
-    fullName: setSelectionRange
+    fullName: 'setSelectionRange(start, end)'
     langs:
       - typeScript
     type: method
@@ -204,7 +204,7 @@ items:
             - number
   - uid: office-ui-fabric-react.MaskedTextField.setSelectionStart
     name: setSelectionStart(value)
-    fullName: setSelectionStart
+    fullName: setSelectionStart(value)
     langs:
       - typeScript
     type: method
@@ -221,7 +221,7 @@ items:
             - number
   - uid: office-ui-fabric-react.MaskedTextField.setValue
     name: setValue(newValue)
-    fullName: setValue
+    fullName: setValue(newValue)
     langs:
       - typeScript
     type: method

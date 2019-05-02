@@ -7,7 +7,7 @@ items:
       - typeScript
     type: interface
     extends:
-      - React.HTMLAttributes
+      - 'React.HTMLAttributes<HTMLElement> '
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.IDetailsRowCheckProps.anySelected
@@ -16,8 +16,8 @@ items:
       - office-ui-fabric-react.IDetailsRowCheckProps.className
       - office-ui-fabric-react.IDetailsRowCheckProps.compact
       - office-ui-fabric-react.IDetailsRowCheckProps.isHeader
-      - office-ui-fabric-react.IDetailsRowCheckProps.isSelected
       - office-ui-fabric-react.IDetailsRowCheckProps.isVisible
+      - office-ui-fabric-react.IDetailsRowCheckProps.onRenderDetailsCheckbox
       - office-ui-fabric-react.IDetailsRowCheckProps.selected
       - office-ui-fabric-react.IDetailsRowCheckProps.styles
       - office-ui-fabric-react.IDetailsRowCheckProps.theme
@@ -93,20 +93,6 @@ items:
       return:
         type:
           - boolean
-  - uid: office-ui-fabric-react.IDetailsRowCheckProps.isSelected
-    summary: 'Deprecated, use `selected` instead.'
-    deprecated:
-      content: Use `selected` instead.
-    name: isSelected
-    fullName: isSelected
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'isSelected?: boolean;'
-      return:
-        type:
-          - boolean
   - uid: office-ui-fabric-react.IDetailsRowCheckProps.isVisible
     summary: Whether or not this checkbox is visible
     name: isVisible
@@ -119,6 +105,18 @@ items:
       return:
         type:
           - boolean
+  - uid: office-ui-fabric-react.IDetailsRowCheckProps.onRenderDetailsCheckbox
+    summary: 'If provided, can be used to render a custom checkbox'
+    name: onRenderDetailsCheckbox
+    fullName: onRenderDetailsCheckbox
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onRenderDetailsCheckbox?: IRenderFunction<IDetailsCheckboxProps>;'
+      return:
+        type:
+          - IRenderFunction<IDetailsCheckboxProps>
   - uid: office-ui-fabric-react.IDetailsRowCheckProps.selected
     summary: Whether or not this check is selected
     name: selected
@@ -154,4 +152,4 @@ items:
       content: 'theme?: ITheme;'
       return:
         type:
-          - office-ui-fabric-react.ITheme
+          - styling.ITheme

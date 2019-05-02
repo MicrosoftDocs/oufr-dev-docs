@@ -8,11 +8,13 @@ items:
     type: interface
     extends:
       - office-ui-fabric-react.IRGB
+      - office-ui-fabric-react.IHSV
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.IColor.hex
       - office-ui-fabric-react.IColor.str
   - uid: office-ui-fabric-react.IColor.hex
+    summary: 'Hex string for the color (excluding alpha component), \*not\* prefixed with \#.'
     name: hex
     fullName: hex
     langs:
@@ -24,6 +26,7 @@ items:
         type:
           - string
   - uid: office-ui-fabric-react.IColor.str
+    summary: 'CSS color string. If a hex value, it must be prefixed with \#.'
     name: str
     fullName: str
     langs:

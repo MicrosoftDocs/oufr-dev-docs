@@ -7,12 +7,12 @@ items:
       - typeScript
     type: class
     extends:
-      - office-ui-fabric-react.BaseComponent
+      - 'BaseComponent<IBaseButtonProps, IBaseButtonState> '
     implements:
       - office-ui-fabric-react.IButton
     package: office-ui-fabric-react
     children:
-      - office-ui-fabric-react.BaseButton.constructor
+      - office-ui-fabric-react.BaseButton.(constructor)
       - office-ui-fabric-react.BaseButton.componentDidMount
       - office-ui-fabric-react.BaseButton.componentDidUpdate
       - office-ui-fabric-react.BaseButton.defaultProps
@@ -20,10 +20,10 @@ items:
       - office-ui-fabric-react.BaseButton.focus
       - office-ui-fabric-react.BaseButton.openMenu
       - office-ui-fabric-react.BaseButton.render
-  - uid: office-ui-fabric-react.BaseButton.constructor
-    summary: 'Constructs a new instance of the [BaseButton](xref:office-ui-fabric-react.BaseButton) class'
-    name: 'constructor(props, rootClassName)'
-    fullName: constructor
+  - uid: office-ui-fabric-react.BaseButton.(constructor)
+    summary: Constructs a new instance of the `BaseButton` class
+    name: '(constructor)(props, rootClassName)'
+    fullName: '(constructor)(props, rootClassName)'
     langs:
       - typeScript
     type: constructor
@@ -40,7 +40,7 @@ items:
             - string
   - uid: office-ui-fabric-react.BaseButton.componentDidMount
     name: componentDidMount()
-    fullName: componentDidMount
+    fullName: componentDidMount()
     langs:
       - typeScript
     type: method
@@ -52,7 +52,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.BaseButton.componentDidUpdate
     name: 'componentDidUpdate(prevProps, prevState)'
-    fullName: componentDidUpdate
+    fullName: 'componentDidUpdate(prevProps, prevState)'
     langs:
       - typeScript
     type: method
@@ -84,7 +84,7 @@ items:
           - Partial<IBaseButtonProps>
   - uid: office-ui-fabric-react.BaseButton.dismissMenu
     name: dismissMenu()
-    fullName: dismissMenu
+    fullName: dismissMenu()
     langs:
       - typeScript
     type: method
@@ -96,7 +96,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.BaseButton.focus
     name: focus()
-    fullName: focus
+    fullName: focus()
     langs:
       - typeScript
     type: method
@@ -108,7 +108,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.BaseButton.openMenu
     name: 'openMenu(shouldFocusOnContainer, shouldFocusOnMount)'
-    fullName: openMenu
+    fullName: 'openMenu(shouldFocusOnContainer, shouldFocusOnMount)'
     langs:
       - typeScript
     type: method
@@ -129,7 +129,7 @@ items:
             - boolean
   - uid: office-ui-fabric-react.BaseButton.render
     name: render()
-    fullName: render
+    fullName: render()
     langs:
       - typeScript
     type: method

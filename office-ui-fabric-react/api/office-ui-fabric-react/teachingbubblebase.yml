@@ -7,18 +7,18 @@ items:
       - typeScript
     type: class
     extends:
-      - office-ui-fabric-react.BaseComponent
+      - 'BaseComponent<ITeachingBubbleProps, ITeachingBubbleState> '
     package: office-ui-fabric-react
     children:
-      - office-ui-fabric-react.TeachingBubbleBase.constructor
+      - office-ui-fabric-react.TeachingBubbleBase.(constructor)
       - office-ui-fabric-react.TeachingBubbleBase.defaultProps
       - office-ui-fabric-react.TeachingBubbleBase.focus
       - office-ui-fabric-react.TeachingBubbleBase.render
       - office-ui-fabric-react.TeachingBubbleBase.rootElement
-  - uid: office-ui-fabric-react.TeachingBubbleBase.constructor
-    summary: 'Constructs a new instance of the [TeachingBubbleBase](xref:office-ui-fabric-react.TeachingBubbleBase) class'
-    name: constructor(props)
-    fullName: constructor
+  - uid: office-ui-fabric-react.TeachingBubbleBase.(constructor)
+    summary: Constructs a new instance of the `TeachingBubbleBase` class
+    name: (constructor)(props)
+    fullName: (constructor)(props)
     langs:
       - typeScript
     type: constructor
@@ -36,7 +36,16 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'static defaultProps:'
+      content: |-
+        static defaultProps: {
+                calloutProps: {
+                    beakWidth: number;
+                    gapSpace: number;
+                    setInitialFocus: boolean;
+                    doNotLayer: boolean;
+                    directionalHint: 12;
+                };
+            };
       return:
         type:
           - |-
@@ -46,12 +55,12 @@ items:
                         gapSpace: number;
                         setInitialFocus: boolean;
                         doNotLayer: boolean;
-                        directionalHint: DirectionalHint;
+                        directionalHint: 12;
                     };
                 }
   - uid: office-ui-fabric-react.TeachingBubbleBase.focus
     name: focus()
-    fullName: focus
+    fullName: focus()
     langs:
       - typeScript
     type: method
@@ -63,7 +72,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.TeachingBubbleBase.render
     name: render()
-    fullName: render
+    fullName: render()
     langs:
       - typeScript
     type: method
@@ -80,12 +89,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'rootElement:'
+      content: 'rootElement: React.RefObject<HTMLDivElement>;'
       return:
         type:
-          - |-
-            {
-                    (component: HTMLDivElement | null): void;
-                    current: HTMLDivElement | null;
-                    value: HTMLDivElement | null;
-                }
+          - React.RefObject<HTMLDivElement>

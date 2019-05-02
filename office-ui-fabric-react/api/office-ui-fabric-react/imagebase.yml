@@ -7,18 +7,18 @@ items:
       - typeScript
     type: class
     extends:
-      - office-ui-fabric-react.BaseComponent
+      - 'React.Component<IImageProps, IImageState> '
     package: office-ui-fabric-react
     children:
-      - office-ui-fabric-react.ImageBase.constructor
+      - office-ui-fabric-react.ImageBase.(constructor)
       - office-ui-fabric-react.ImageBase.componentDidUpdate
       - office-ui-fabric-react.ImageBase.componentWillReceiveProps
       - office-ui-fabric-react.ImageBase.defaultProps
       - office-ui-fabric-react.ImageBase.render
-  - uid: office-ui-fabric-react.ImageBase.constructor
-    summary: 'Constructs a new instance of the [ImageBase](xref:office-ui-fabric-react.ImageBase) class'
-    name: constructor(props)
-    fullName: constructor
+  - uid: office-ui-fabric-react.ImageBase.(constructor)
+    summary: Constructs a new instance of the `ImageBase` class
+    name: (constructor)(props)
+    fullName: (constructor)(props)
     langs:
       - typeScript
     type: constructor
@@ -31,7 +31,7 @@ items:
             - office-ui-fabric-react.IImageProps
   - uid: office-ui-fabric-react.ImageBase.componentDidUpdate
     name: 'componentDidUpdate(prevProps, prevState)'
-    fullName: componentDidUpdate
+    fullName: 'componentDidUpdate(prevProps, prevState)'
     langs:
       - typeScript
     type: method
@@ -52,7 +52,7 @@ items:
             - office-ui-fabric-react.IImageState
   - uid: office-ui-fabric-react.ImageBase.componentWillReceiveProps
     name: componentWillReceiveProps(nextProps)
-    fullName: componentWillReceiveProps
+    fullName: componentWillReceiveProps(nextProps)
     langs:
       - typeScript
     type: method
@@ -74,7 +74,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'static defaultProps:'
+      content: |-
+        static defaultProps: {
+                shouldFadeIn: boolean;
+            };
       return:
         type:
           - |-
@@ -83,7 +86,7 @@ items:
                 }
   - uid: office-ui-fabric-react.ImageBase.render
     name: render()
-    fullName: render
+    fullName: render()
     langs:
       - typeScript
     type: method

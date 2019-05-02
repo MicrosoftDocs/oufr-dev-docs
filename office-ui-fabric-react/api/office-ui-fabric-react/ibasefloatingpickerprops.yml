@@ -7,7 +7,7 @@ items:
       - typeScript
     type: interface
     extends:
-      - React.Props
+      - 'React.ClassAttributes<any> '
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.IBaseFloatingPickerProps.calloutWidth
@@ -63,10 +63,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'componentRef?: (component?: IBaseFloatingPicker | null) => void;'
+      content: 'componentRef?: IRefObject<IBaseFloatingPicker>;'
       return:
         type:
-          - '(component?: IBaseFloatingPicker | null) => void'
+          - IRefObject<IBaseFloatingPicker>
   - uid: office-ui-fabric-react.IBaseFloatingPickerProps.createGenericItem
     summary: Function that specifies how arbitrary text entered into the well is handled.
     name: createGenericItem
@@ -225,7 +225,7 @@ items:
       content: 'pickerSuggestionsProps?: IBaseFloatingPickerSuggestionProps;'
       return:
         type:
-          - office-ui-fabric-react.IBaseFloatingPickerSuggestionProps
+          - IBaseFloatingPickerSuggestionProps
   - uid: office-ui-fabric-react.IBaseFloatingPickerProps.resolveDelay
     summary: >-
       The delay time in ms before resolving suggestions, which is kicked off when input has been changed. e.g. If a

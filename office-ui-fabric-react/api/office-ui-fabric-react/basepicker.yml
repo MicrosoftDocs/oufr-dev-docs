@@ -7,14 +7,14 @@ items:
       - typeScript
     type: class
     extends:
-      - office-ui-fabric-react.BaseComponent
+      - 'BaseComponent<P, IBasePickerState> '
     implements:
-      - office-ui-fabric-react.IBasePicker
+      - 'IBasePicker<T> '
     package: office-ui-fabric-react
     children:
-      - office-ui-fabric-react.BasePicker.constructor
       - office-ui-fabric-react.BasePicker._ariaMap
       - office-ui-fabric-react.BasePicker._isFocusZoneInnerKeystroke
+      - office-ui-fabric-react.BasePicker.(constructor)
       - office-ui-fabric-react.BasePicker.addItem
       - office-ui-fabric-react.BasePicker.addItemByIndex
       - office-ui-fabric-react.BasePicker.canAddItems
@@ -33,6 +33,7 @@ items:
       - office-ui-fabric-react.BasePicker.input
       - office-ui-fabric-react.BasePicker.items
       - office-ui-fabric-react.BasePicker.onBackspace
+      - office-ui-fabric-react.BasePicker.onBlur
       - office-ui-fabric-react.BasePicker.onChange
       - office-ui-fabric-react.BasePicker.onEmptyInputFocus
       - office-ui-fabric-react.BasePicker.onGetMoreResults
@@ -61,20 +62,6 @@ items:
       - office-ui-fabric-react.BasePicker.updateSuggestions
       - office-ui-fabric-react.BasePicker.updateSuggestionsList
       - office-ui-fabric-react.BasePicker.updateValue
-  - uid: office-ui-fabric-react.BasePicker.constructor
-    summary: 'Constructs a new instance of the [BasePicker](xref:office-ui-fabric-react.BasePicker) class'
-    name: constructor(basePickerProps)
-    fullName: constructor
-    langs:
-      - typeScript
-    type: constructor
-    syntax:
-      content: 'constructor(basePickerProps: P);'
-      parameters:
-        - id: basePickerProps
-          description: ''
-          type:
-            - P
   - uid: office-ui-fabric-react.BasePicker._ariaMap
     name: _ariaMap
     fullName: _ariaMap
@@ -97,6 +84,20 @@ items:
       return:
         type:
           - '(ev: React.KeyboardEvent<HTMLElement>) => boolean'
+  - uid: office-ui-fabric-react.BasePicker.(constructor)
+    summary: Constructs a new instance of the `BasePicker` class
+    name: (constructor)(basePickerProps)
+    fullName: (constructor)(basePickerProps)
+    langs:
+      - typeScript
+    type: constructor
+    syntax:
+      content: 'constructor(basePickerProps: P);'
+      parameters:
+        - id: basePickerProps
+          description: ''
+          type:
+            - P
   - uid: office-ui-fabric-react.BasePicker.addItem
     name: addItem
     fullName: addItem
@@ -121,7 +122,7 @@ items:
           - '(index: number) => void'
   - uid: office-ui-fabric-react.BasePicker.canAddItems
     name: canAddItems()
-    fullName: canAddItems
+    fullName: canAddItems()
     langs:
       - typeScript
     type: method
@@ -133,7 +134,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.BasePicker.completeSuggestion
     name: completeSuggestion()
-    fullName: completeSuggestion
+    fullName: completeSuggestion()
     langs:
       - typeScript
     type: method
@@ -145,7 +146,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.BasePicker.componentDidMount
     name: componentDidMount()
-    fullName: componentDidMount
+    fullName: componentDidMount()
     langs:
       - typeScript
     type: method
@@ -157,7 +158,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.BasePicker.componentWillReceiveProps
     name: componentWillReceiveProps(newProps)
-    fullName: componentWillReceiveProps
+    fullName: componentWillReceiveProps(newProps)
     langs:
       - typeScript
     type: method
@@ -174,7 +175,7 @@ items:
             - P
   - uid: office-ui-fabric-react.BasePicker.componentWillUnmount
     name: componentWillUnmount()
-    fullName: componentWillUnmount
+    fullName: componentWillUnmount()
     langs:
       - typeScript
     type: method
@@ -186,7 +187,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.BasePicker.componentWillUpdate
     name: 'componentWillUpdate(newProps, newState)'
-    fullName: componentWillUpdate
+    fullName: 'componentWillUpdate(newProps, newState)'
     langs:
       - typeScript
     type: method
@@ -229,7 +230,7 @@ items:
           - '(ev?: any) => void'
   - uid: office-ui-fabric-react.BasePicker.focus
     name: focus()
-    fullName: focus
+    fullName: focus()
     langs:
       - typeScript
     type: method
@@ -241,7 +242,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.BasePicker.focusInput
     name: focusInput()
-    fullName: focusInput
+    fullName: focusInput()
     langs:
       - typeScript
     type: method
@@ -258,18 +259,13 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'protected focusZone:'
+      content: 'protected focusZone: React.RefObject<IFocusZone>;'
       return:
         type:
-          - |-
-            {
-                    (component: IFocusZone | null): void;
-                    current: IFocusZone | null;
-                    value: IFocusZone | null;
-                }
+          - React.RefObject<IFocusZone>
   - uid: office-ui-fabric-react.BasePicker.getActiveDescendant
     name: getActiveDescendant()
-    fullName: getActiveDescendant
+    fullName: getActiveDescendant()
     langs:
       - typeScript
     type: method
@@ -280,17 +276,22 @@ items:
           - string | undefined
         description: ''
   - uid: office-ui-fabric-react.BasePicker.getSuggestionsAlert
-    name: getSuggestionsAlert()
-    fullName: getSuggestionsAlert
+    name: getSuggestionsAlert(suggestionAlertClassName)
+    fullName: getSuggestionsAlert(suggestionAlertClassName)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'protected getSuggestionsAlert(): JSX.Element | undefined;'
+      content: 'protected getSuggestionsAlert(suggestionAlertClassName?: string): JSX.Element | undefined;'
       return:
         type:
           - JSX.Element | undefined
         description: ''
+      parameters:
+        - id: suggestionAlertClassName
+          description: ''
+          type:
+            - string
   - uid: office-ui-fabric-react.BasePicker.input
     name: input
     fullName: input
@@ -298,15 +299,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'protected input:'
+      content: 'protected input: React.RefObject<IAutofill>;'
       return:
         type:
-          - |-
-            {
-                    (component: IAutofill | null): void;
-                    current: IAutofill | null;
-                    value: IAutofill | null;
-                }
+          - React.RefObject<IAutofill>
   - uid: office-ui-fabric-react.BasePicker.items
     name: items
     fullName: items
@@ -320,7 +316,7 @@ items:
           - 'T[]'
   - uid: office-ui-fabric-react.BasePicker.onBackspace
     name: onBackspace(ev)
-    fullName: onBackspace
+    fullName: onBackspace(ev)
     langs:
       - typeScript
     type: method
@@ -335,9 +331,20 @@ items:
           description: ''
           type:
             - React.KeyboardEvent<HTMLElement>
+  - uid: office-ui-fabric-react.BasePicker.onBlur
+    name: onBlur
+    fullName: onBlur
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'protected onBlur: (ev: React.FocusEvent<HTMLElement | Autofill>) => void;'
+      return:
+        type:
+          - '(ev: React.FocusEvent<HTMLElement | Autofill>) => void'
   - uid: office-ui-fabric-react.BasePicker.onChange
     name: onChange(items)
-    fullName: onChange
+    fullName: onChange(items)
     langs:
       - typeScript
     type: method
@@ -354,7 +361,7 @@ items:
             - 'T[]'
   - uid: office-ui-fabric-react.BasePicker.onEmptyInputFocus
     name: onEmptyInputFocus()
-    fullName: onEmptyInputFocus
+    fullName: onEmptyInputFocus()
     langs:
       - typeScript
     type: method
@@ -432,7 +439,7 @@ items:
           - '(ev: React.KeyboardEvent<HTMLElement>) => void'
   - uid: office-ui-fabric-react.BasePicker.onSelectionChange
     name: onSelectionChange()
-    fullName: onSelectionChange
+    fullName: onSelectionChange()
     langs:
       - typeScript
     type: method
@@ -449,10 +456,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'protected onSuggestionClick: (ev: React.MouseEvent<HTMLElement>, item: any, index: number) => void;'
+      content: 'protected onSuggestionClick: (ev: React.MouseEvent<HTMLElement, MouseEvent>, item: any, index: number) => void;'
       return:
         type:
-          - '(ev: React.MouseEvent<HTMLElement>, item: any, index: number) => void'
+          - '(ev: React.MouseEvent<HTMLElement, MouseEvent>, item: any, index: number) => void'
   - uid: office-ui-fabric-react.BasePicker.onSuggestionRemove
     name: onSuggestionRemove
     fullName: onSuggestionRemove
@@ -460,13 +467,15 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'protected onSuggestionRemove: (ev: React.MouseEvent<HTMLElement>, item: IPersonaProps, index: number) => void;'
+      content: >-
+        protected onSuggestionRemove: (ev: React.MouseEvent<HTMLElement, MouseEvent>, item: IPersonaProps, index:
+        number) => void;
       return:
         type:
-          - '(ev: React.MouseEvent<HTMLElement>, item: IPersonaProps, index: number) => void'
+          - '(ev: React.MouseEvent<HTMLElement, MouseEvent>, item: IPersonaProps, index: number) => void'
   - uid: office-ui-fabric-react.BasePicker.onSuggestionSelect
     name: onSuggestionSelect()
-    fullName: onSuggestionSelect
+    fullName: onSuggestionSelect()
     langs:
       - typeScript
     type: method
@@ -483,10 +492,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'refocusSuggestions: (keyCode: KeyCodes) => void;'
+      content: 'refocusSuggestions: (keyCode: number) => void;'
       return:
         type:
-          - '(keyCode: KeyCodes) => void'
+          - '(keyCode: number) => void'
   - uid: office-ui-fabric-react.BasePicker.removeItem
     name: removeItem
     fullName: removeItem
@@ -511,7 +520,7 @@ items:
           - '(itemsToRemove: any[]) => void'
   - uid: office-ui-fabric-react.BasePicker.render
     name: render()
-    fullName: render
+    fullName: render()
     langs:
       - typeScript
     type: method
@@ -523,7 +532,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.BasePicker.renderItems
     name: renderItems()
-    fullName: renderItems
+    fullName: renderItems()
     langs:
       - typeScript
     type: method
@@ -535,7 +544,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.BasePicker.renderSuggestions
     name: renderSuggestions()
-    fullName: renderSuggestions
+    fullName: renderSuggestions()
     langs:
       - typeScript
     type: method
@@ -547,7 +556,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.BasePicker.resetFocus
     name: resetFocus(index)
-    fullName: resetFocus
+    fullName: resetFocus(index)
     langs:
       - typeScript
     type: method
@@ -564,7 +573,7 @@ items:
             - number
   - uid: office-ui-fabric-react.BasePicker.resolveNewValue
     name: 'resolveNewValue(updatedValue, suggestions)'
-    fullName: resolveNewValue
+    fullName: 'resolveNewValue(updatedValue, suggestions)'
     langs:
       - typeScript
     type: method
@@ -590,15 +599,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'protected root:'
+      content: 'protected root: React.RefObject<HTMLDivElement>;'
       return:
         type:
-          - |-
-            {
-                    (component: HTMLDivElement | null): void;
-                    current: HTMLDivElement | null;
-                    value: HTMLDivElement | null;
-                }
+          - React.RefObject<HTMLDivElement>
   - uid: office-ui-fabric-react.BasePicker.selection
     name: selection
     fullName: selection
@@ -617,15 +621,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'protected suggestionElement:'
+      content: 'protected suggestionElement: React.RefObject<ISuggestions<T>>;'
       return:
         type:
-          - |-
-            {
-                    (component: Suggestions<T> | null): void;
-                    current: Suggestions<T> | null;
-                    value: Suggestions<T> | null;
-                }
+          - React.RefObject<ISuggestions<T>>
   - uid: office-ui-fabric-react.BasePicker.SuggestionOfProperType
     name: SuggestionOfProperType
     fullName: SuggestionOfProperType
@@ -650,7 +649,7 @@ items:
           - SuggestionsController<T>
   - uid: office-ui-fabric-react.BasePicker.updateSuggestions
     name: updateSuggestions(suggestions)
-    fullName: updateSuggestions
+    fullName: updateSuggestions(suggestions)
     langs:
       - typeScript
     type: method
@@ -667,7 +666,7 @@ items:
             - 'any[]'
   - uid: office-ui-fabric-react.BasePicker.updateSuggestionsList
     name: 'updateSuggestionsList(suggestions, updatedValue)'
-    fullName: updateSuggestionsList
+    fullName: 'updateSuggestionsList(suggestions, updatedValue)'
     langs:
       - typeScript
     type: method
@@ -688,7 +687,7 @@ items:
             - string
   - uid: office-ui-fabric-react.BasePicker.updateValue
     name: updateValue(updatedValue)
-    fullName: updateValue
+    fullName: updateValue(updatedValue)
     langs:
       - typeScript
     type: method

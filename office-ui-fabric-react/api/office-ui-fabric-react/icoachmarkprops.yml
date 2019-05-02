@@ -1,13 +1,14 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office-ui-fabric-react.ICoachmarkProps
+    summary: Coachmark component props
     name: ICoachmarkProps
     fullName: ICoachmarkProps
     langs:
       - typeScript
     type: interface
     extends:
-      - React.ClassAttributes
+      - 'React.ClassAttributes<CoachmarkBase> '
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.ICoachmarkProps.ariaAlertText
@@ -19,6 +20,7 @@ items:
       - office-ui-fabric-react.ICoachmarkProps.beaconColorTwo
       - office-ui-fabric-react.ICoachmarkProps.beakHeight
       - office-ui-fabric-react.ICoachmarkProps.beakWidth
+      - office-ui-fabric-react.ICoachmarkProps.className
       - office-ui-fabric-react.ICoachmarkProps.collapsed
       - office-ui-fabric-react.ICoachmarkProps.color
       - office-ui-fabric-react.ICoachmarkProps.componentRef
@@ -34,9 +36,11 @@ items:
       - office-ui-fabric-react.ICoachmarkProps.onMouseMove
       - office-ui-fabric-react.ICoachmarkProps.positioningContainerProps
       - office-ui-fabric-react.ICoachmarkProps.preventDismissOnLostFocus
+      - office-ui-fabric-react.ICoachmarkProps.preventFocusOnMount
       - office-ui-fabric-react.ICoachmarkProps.styles
       - office-ui-fabric-react.ICoachmarkProps.target
       - office-ui-fabric-react.ICoachmarkProps.teachingBubbleRef
+      - office-ui-fabric-react.ICoachmarkProps.theme
       - office-ui-fabric-react.ICoachmarkProps.width
   - uid: office-ui-fabric-react.ICoachmarkProps.ariaAlertText
     summary: Text to announce to screen reader / narrator when Coachmark is displayed
@@ -150,6 +154,18 @@ items:
       return:
         type:
           - number
+  - uid: office-ui-fabric-react.ICoachmarkProps.className
+    summary: 'If provided, additional class name to provide on the root element.'
+    name: className
+    fullName: className
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'className?: string;'
+      return:
+        type:
+          - string
   - uid: office-ui-fabric-react.ICoachmarkProps.collapsed
     summary: The starting collapsed state for the Coachmark. Use `isCollapsed` instead.
     deprecated:
@@ -338,6 +354,20 @@ items:
       return:
         type:
           - boolean
+  - uid: office-ui-fabric-react.ICoachmarkProps.preventFocusOnMount
+    summary: >-
+      If true then focus will not be set to the Coachmark when it mounts. Useful in cases where focus on coachmark is
+      causing other components in page to dismiss upon losing focus.
+    name: preventFocusOnMount
+    fullName: preventFocusOnMount
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'preventFocusOnMount?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: office-ui-fabric-react.ICoachmarkProps.styles
     summary: Call to provide customized styling that will layer on top of the variant rules
     name: styles
@@ -376,6 +406,18 @@ items:
       return:
         type:
           - office-ui-fabric-react.ITeachingBubble
+  - uid: office-ui-fabric-react.ICoachmarkProps.theme
+    summary: Theme provided by higher order component.
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type:
+          - styling.ITheme
   - uid: office-ui-fabric-react.ICoachmarkProps.width
     summary: The width of the Coachmark.
     deprecated:

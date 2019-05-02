@@ -7,21 +7,20 @@ items:
       - typeScript
     type: class
     extends:
-      - office-ui-fabric-react.BaseComponent
+      - 'BaseComponent<ISliderProps, ISliderState> '
     implements:
       - office-ui-fabric-react.ISlider
     package: office-ui-fabric-react
     children:
-      - office-ui-fabric-react.SliderBase.constructor
-      - office-ui-fabric-react.SliderBase.componentWillReceiveProps
+      - office-ui-fabric-react.SliderBase.(constructor)
       - office-ui-fabric-react.SliderBase.defaultProps
       - office-ui-fabric-react.SliderBase.focus
       - office-ui-fabric-react.SliderBase.render
       - office-ui-fabric-react.SliderBase.value
-  - uid: office-ui-fabric-react.SliderBase.constructor
-    summary: 'Constructs a new instance of the [SliderBase](xref:office-ui-fabric-react.SliderBase) class'
-    name: constructor(props)
-    fullName: constructor
+  - uid: office-ui-fabric-react.SliderBase.(constructor)
+    summary: Constructs a new instance of the `SliderBase` class
+    name: (constructor)(props)
+    fullName: (constructor)(props)
     langs:
       - typeScript
     type: constructor
@@ -29,24 +28,6 @@ items:
       content: 'constructor(props: ISliderProps);'
       parameters:
         - id: props
-          description: ''
-          type:
-            - office-ui-fabric-react.ISliderProps
-  - uid: office-ui-fabric-react.SliderBase.componentWillReceiveProps
-    summary: Invoked when a component is receiving new props. This method is not called for the initial render.
-    name: componentWillReceiveProps(newProps)
-    fullName: componentWillReceiveProps
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'componentWillReceiveProps(newProps: ISliderProps): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: newProps
           description: ''
           type:
             - office-ui-fabric-react.ISliderProps
@@ -63,7 +44,7 @@ items:
           - office-ui-fabric-react.ISliderProps
   - uid: office-ui-fabric-react.SliderBase.focus
     name: focus()
-    fullName: focus
+    fullName: focus()
     langs:
       - typeScript
     type: method
@@ -75,7 +56,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.SliderBase.render
     name: render()
-    fullName: render
+    fullName: render()
     langs:
       - typeScript
     type: method

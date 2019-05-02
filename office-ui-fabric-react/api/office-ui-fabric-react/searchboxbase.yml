@@ -7,19 +7,19 @@ items:
       - typeScript
     type: class
     extends:
-      - office-ui-fabric-react.BaseComponent
+      - 'BaseComponent<ISearchBoxProps, ISearchBoxState> '
     package: office-ui-fabric-react
     children:
-      - office-ui-fabric-react.SearchBoxBase.constructor
+      - office-ui-fabric-react.SearchBoxBase.(constructor)
       - office-ui-fabric-react.SearchBoxBase.componentWillReceiveProps
       - office-ui-fabric-react.SearchBoxBase.defaultProps
       - office-ui-fabric-react.SearchBoxBase.focus
       - office-ui-fabric-react.SearchBoxBase.hasFocus
       - office-ui-fabric-react.SearchBoxBase.render
-  - uid: office-ui-fabric-react.SearchBoxBase.constructor
-    summary: 'Constructs a new instance of the [SearchBoxBase](xref:office-ui-fabric-react.SearchBoxBase) class'
-    name: constructor(props)
-    fullName: constructor
+  - uid: office-ui-fabric-react.SearchBoxBase.(constructor)
+    summary: Constructs a new instance of the `SearchBoxBase` class
+    name: (constructor)(props)
+    fullName: (constructor)(props)
     langs:
       - typeScript
     type: constructor
@@ -32,7 +32,7 @@ items:
             - office-ui-fabric-react.ISearchBoxProps
   - uid: office-ui-fabric-react.SearchBoxBase.componentWillReceiveProps
     name: componentWillReceiveProps(newProps)
-    fullName: componentWillReceiveProps
+    fullName: componentWillReceiveProps(newProps)
     langs:
       - typeScript
     type: method
@@ -61,7 +61,7 @@ items:
   - uid: office-ui-fabric-react.SearchBoxBase.focus
     summary: Sets focus to the search box input field
     name: focus()
-    fullName: focus
+    fullName: focus()
     langs:
       - typeScript
     type: method
@@ -74,7 +74,7 @@ items:
   - uid: office-ui-fabric-react.SearchBoxBase.hasFocus
     summary: Returns whether or not the SearchBox has focus
     name: hasFocus()
-    fullName: hasFocus
+    fullName: hasFocus()
     langs:
       - typeScript
     type: method
@@ -86,7 +86,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.SearchBoxBase.render
     name: render()
-    fullName: render
+    fullName: render()
     langs:
       - typeScript
     type: method

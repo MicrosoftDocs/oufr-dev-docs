@@ -7,7 +7,7 @@ items:
       - typeScript
     type: interface
     extends:
-      - React.Props
+      - 'React.ClassAttributes<SliderBase> '
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.ISliderProps.ariaLabel
@@ -27,6 +27,7 @@ items:
       - office-ui-fabric-react.ISliderProps.styles
       - office-ui-fabric-react.ISliderProps.theme
       - office-ui-fabric-react.ISliderProps.value
+      - office-ui-fabric-react.ISliderProps.valueFormat
       - office-ui-fabric-react.ISliderProps.vertical
   - uid: office-ui-fabric-react.ISliderProps.ariaLabel
     summary: A description of the Slider for the benefit of screen readers.
@@ -225,7 +226,7 @@ items:
       content: 'theme?: ITheme;'
       return:
         type:
-          - office-ui-fabric-react.ITheme
+          - styling.ITheme
   - uid: office-ui-fabric-react.ISliderProps.value
     summary: >-
       The initial value of the Slider. Use this if you intend to pass in a new value as a result of onChange events.
@@ -240,6 +241,18 @@ items:
       return:
         type:
           - number
+  - uid: office-ui-fabric-react.ISliderProps.valueFormat
+    summary: Optional function to format the slider value.
+    name: valueFormat
+    fullName: valueFormat
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'valueFormat?: (value: number) => string;'
+      return:
+        type:
+          - '(value: number) => string'
   - uid: office-ui-fabric-react.ISliderProps.vertical
     summary: Optional flag to render the slider vertically. Defaults to rendering horizontal.
     name: vertical

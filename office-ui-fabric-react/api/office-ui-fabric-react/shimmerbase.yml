@@ -7,17 +7,17 @@ items:
       - typeScript
     type: class
     extends:
-      - office-ui-fabric-react.BaseComponent
+      - 'BaseComponent<IShimmerProps, IShimmerState> '
     package: office-ui-fabric-react
     children:
-      - office-ui-fabric-react.ShimmerBase.constructor
+      - office-ui-fabric-react.ShimmerBase.(constructor)
       - office-ui-fabric-react.ShimmerBase.componentWillReceiveProps
       - office-ui-fabric-react.ShimmerBase.defaultProps
       - office-ui-fabric-react.ShimmerBase.render
-  - uid: office-ui-fabric-react.ShimmerBase.constructor
-    summary: 'Constructs a new instance of the [ShimmerBase](xref:office-ui-fabric-react.ShimmerBase) class'
-    name: constructor(props)
-    fullName: constructor
+  - uid: office-ui-fabric-react.ShimmerBase.(constructor)
+    summary: Constructs a new instance of the `ShimmerBase` class
+    name: (constructor)(props)
+    fullName: (constructor)(props)
     langs:
       - typeScript
     type: constructor
@@ -30,7 +30,7 @@ items:
             - office-ui-fabric-react.IShimmerProps
   - uid: office-ui-fabric-react.ShimmerBase.componentWillReceiveProps
     name: componentWillReceiveProps(nextProps)
-    fullName: componentWillReceiveProps
+    fullName: componentWillReceiveProps(nextProps)
     langs:
       - typeScript
     type: method
@@ -58,7 +58,7 @@ items:
           - office-ui-fabric-react.IShimmerProps
   - uid: office-ui-fabric-react.ShimmerBase.render
     name: render()
-    fullName: render
+    fullName: render()
     langs:
       - typeScript
     type: method

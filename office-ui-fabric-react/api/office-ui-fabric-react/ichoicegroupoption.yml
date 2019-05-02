@@ -7,7 +7,7 @@ items:
       - typeScript
     type: interface
     extends:
-      - React.HTMLAttributes
+      - 'React.HTMLAttributes<HTMLElement | HTMLInputElement> '
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.IChoiceGroupOption.ariaLabel
@@ -23,6 +23,7 @@ items:
       - office-ui-fabric-react.IChoiceGroupOption.onRenderField
       - office-ui-fabric-react.IChoiceGroupOption.onRenderLabel
       - office-ui-fabric-react.IChoiceGroupOption.selectedImageSrc
+      - office-ui-fabric-react.IChoiceGroupOption.styles
       - office-ui-fabric-react.IChoiceGroupOption.text
   - uid: office-ui-fabric-react.IChoiceGroupOption.ariaLabel
     summary: The aria label of the ChoiceGroupOption for the benefit of screen readers.
@@ -106,7 +107,11 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'imageSize?:'
+      content: |-
+        imageSize?: {
+                width: number;
+                height: number;
+            };
       return:
         type:
           - |-
@@ -188,6 +193,18 @@ items:
       return:
         type:
           - string
+  - uid: office-ui-fabric-react.IChoiceGroupOption.styles
+    summary: Call to provide customized styling that will layer on top of the variant rules.
+    name: styles
+    fullName: styles
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'styles?: IStyleFunctionOrObject<IChoiceGroupOptionStyleProps, IChoiceGroupOptionStyles>;'
+      return:
+        type:
+          - 'IStyleFunctionOrObject<IChoiceGroupOptionStyleProps, IChoiceGroupOptionStyles>'
   - uid: office-ui-fabric-react.IChoiceGroupOption.text
     summary: The text string for the option.
     name: text

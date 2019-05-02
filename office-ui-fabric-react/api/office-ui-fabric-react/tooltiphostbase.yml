@@ -7,16 +7,21 @@ items:
       - typeScript
     type: class
     extends:
-      - office-ui-fabric-react.BaseComponent
+      - 'BaseComponent<ITooltipHostProps, ITooltipHostState> '
+    implements:
+      - office-ui-fabric-react.ITooltipHost
     package: office-ui-fabric-react
     children:
-      - office-ui-fabric-react.TooltipHostBase.constructor
+      - office-ui-fabric-react.TooltipHostBase.(constructor)
+      - office-ui-fabric-react.TooltipHostBase.componentWillUnmount
       - office-ui-fabric-react.TooltipHostBase.defaultProps
+      - office-ui-fabric-react.TooltipHostBase.dismiss
       - office-ui-fabric-react.TooltipHostBase.render
-  - uid: office-ui-fabric-react.TooltipHostBase.constructor
-    summary: 'Constructs a new instance of the [TooltipHostBase](xref:office-ui-fabric-react.TooltipHostBase) class'
-    name: constructor(props)
-    fullName: constructor
+      - office-ui-fabric-react.TooltipHostBase.show
+  - uid: office-ui-fabric-react.TooltipHostBase.(constructor)
+    summary: Constructs a new instance of the `TooltipHostBase` class
+    name: (constructor)(props)
+    fullName: (constructor)(props)
     langs:
       - typeScript
     type: constructor
@@ -27,6 +32,18 @@ items:
           description: ''
           type:
             - office-ui-fabric-react.ITooltipHostProps
+  - uid: office-ui-fabric-react.TooltipHostBase.componentWillUnmount
+    name: componentWillUnmount()
+    fullName: componentWillUnmount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'componentWillUnmount(): void;'
+      return:
+        type:
+          - void
+        description: ''
   - uid: office-ui-fabric-react.TooltipHostBase.defaultProps
     name: defaultProps
     fullName: defaultProps
@@ -34,16 +51,30 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'static defaultProps:'
+      content: |-
+        static defaultProps: {
+                delay: TooltipDelay;
+            };
       return:
         type:
           - |-
             {
                     delay: TooltipDelay;
                 }
+  - uid: office-ui-fabric-react.TooltipHostBase.dismiss
+    name: dismiss
+    fullName: dismiss
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'dismiss: () => void;'
+      return:
+        type:
+          - () => void
   - uid: office-ui-fabric-react.TooltipHostBase.render
     name: render()
-    fullName: render
+    fullName: render()
     langs:
       - typeScript
     type: method
@@ -53,3 +84,14 @@ items:
         type:
           - JSX.Element
         description: ''
+  - uid: office-ui-fabric-react.TooltipHostBase.show
+    name: show
+    fullName: show
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'show: () => void;'
+      return:
+        type:
+          - () => void

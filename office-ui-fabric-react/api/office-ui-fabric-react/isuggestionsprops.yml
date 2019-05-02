@@ -1,13 +1,16 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office-ui-fabric-react.ISuggestionsProps
+    summary: >-
+      Suggestions props interface. Refers to the entire container holding all the suggestions. Type T is the type of the
+      items that are displayed.
     name: ISuggestionsProps
     fullName: ISuggestionsProps
     langs:
       - typeScript
     type: interface
     extends:
-      - React.Props
+      - 'React.Props<any> '
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.ISuggestionsProps.className
@@ -37,6 +40,7 @@ items:
       - office-ui-fabric-react.ISuggestionsProps.searchingText
       - office-ui-fabric-react.ISuggestionsProps.showForceResolve
       - office-ui-fabric-react.ISuggestionsProps.showRemoveButtons
+      - office-ui-fabric-react.ISuggestionsProps.styles
       - office-ui-fabric-react.ISuggestionsProps.suggestions
       - office-ui-fabric-react.ISuggestionsProps.suggestionsAvailableAlertText
       - office-ui-fabric-react.ISuggestionsProps.suggestionsClassName
@@ -44,8 +48,9 @@ items:
       - office-ui-fabric-react.ISuggestionsProps.suggestionsHeaderText
       - office-ui-fabric-react.ISuggestionsProps.suggestionsItemClassName
       - office-ui-fabric-react.ISuggestionsProps.suggestionsListId
+      - office-ui-fabric-react.ISuggestionsProps.theme
   - uid: office-ui-fabric-react.ISuggestionsProps.className
-    summary: The CSS classname of the suggestions root.
+    summary: The CSS className of the suggestions root.
     name: className
     fullName: className
     langs:
@@ -57,17 +62,19 @@ items:
         type:
           - string
   - uid: office-ui-fabric-react.ISuggestionsProps.componentRef
-    summary: Gets the component ref.
+    summary: >-
+      Optional callback to access the ISuggestions interface. Use this instead of ref for accessing the public methods
+      and properties of the component.
     name: componentRef
     fullName: componentRef
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'componentRef?: IRefObject<{}>;'
+      content: 'componentRef?: IRefObject<ISuggestions<T>>;'
       return:
         type:
-          - 'IRefObject<{}>'
+          - IRefObject<ISuggestions<T>>
   - uid: office-ui-fabric-react.ISuggestionsProps.createGenericItem
     summary: The callback that should be called when the user attempts to use the input text as as item
     name: createGenericItem
@@ -167,7 +174,7 @@ items:
         type:
           - boolean
   - uid: office-ui-fabric-react.ISuggestionsProps.mostRecentlyUsedHeaderText
-    summary: The text that should appear at the top of the most recenty used box.
+    summary: The text that should appear at the top of the most recently used box.
     name: mostRecentlyUsedHeaderText
     fullName: mostRecentlyUsedHeaderText
     langs:
@@ -239,17 +246,20 @@ items:
         type:
           - '(ev?: React.MouseEvent<HTMLElement>, item?: any, index?: number) => void'
   - uid: office-ui-fabric-react.ISuggestionsProps.onSuggestionRemove
-    summary: Function to fire when one of the optional remove buttons on a suggestion is clicked.
+    summary: |-
+      Function to fire when one of the optional remove buttons on a suggestion is clicked.
+
+      TODO (adjective-object) remove IPersonaprops before the next major version bump
     name: onSuggestionRemove
     fullName: onSuggestionRemove
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'onSuggestionRemove?: (ev?: React.MouseEvent<HTMLElement>, item?: IPersonaProps, index?: number) => void;'
+      content: 'onSuggestionRemove?: (ev?: React.MouseEvent<HTMLElement>, item?: T | IPersonaProps, index?: number) => void;'
       return:
         type:
-          - '(ev?: React.MouseEvent<HTMLElement>, item?: IPersonaProps, index?: number) => void'
+          - '(ev?: React.MouseEvent<HTMLElement>, item?: T | IPersonaProps, index?: number) => void'
   - uid: office-ui-fabric-react.ISuggestionsProps.refocusSuggestions
     summary: A function that resets focus to the expected item in the suggestion list
     name: refocusSuggestions
@@ -335,7 +345,7 @@ items:
         type:
           - string
   - uid: office-ui-fabric-react.ISuggestionsProps.searchingText
-    summary: The text to display while searching for more results in a limited sugesstions list.
+    summary: The text to display while searching for more results in a limited suggestions list.
     name: searchingText
     fullName: searchingText
     langs:
@@ -370,6 +380,18 @@ items:
       return:
         type:
           - boolean
+  - uid: office-ui-fabric-react.ISuggestionsProps.styles
+    summary: Call to provide customized styling that will layer on top of the variant rules.
+    name: styles
+    fullName: styles
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'styles?: IStyleFunctionOrObject<{}, {}>;'
+      return:
+        type:
+          - 'IStyleFunctionOrObject<{}, {}>'
   - uid: office-ui-fabric-react.ISuggestionsProps.suggestions
     summary: The list of Suggestions that will be displayed
     name: suggestions
@@ -395,7 +417,7 @@ items:
         type:
           - string
   - uid: office-ui-fabric-react.ISuggestionsProps.suggestionsClassName
-    summary: The CSS classname of the suggestionslist
+    summary: The CSS className of the suggestions list
     name: suggestionsClassName
     fullName: suggestionsClassName
     langs:
@@ -431,7 +453,7 @@ items:
         type:
           - string
   - uid: office-ui-fabric-react.ISuggestionsProps.suggestionsItemClassName
-    summary: the classname of the suggestionitem.
+    summary: The className of the suggestion item.
     name: suggestionsItemClassName
     fullName: suggestionsItemClassName
     langs:
@@ -444,7 +466,7 @@ items:
           - string
   - uid: office-ui-fabric-react.ISuggestionsProps.suggestionsListId
     summary: >-
-      The string that will be used as the suggestionsListId. Will be used by the basepicker to keep track of the list
+      The string that will be used as the suggestionsListId. Will be used by the BasePicker to keep track of the list
       for aria.
     name: suggestionsListId
     fullName: suggestionsListId
@@ -456,3 +478,15 @@ items:
       return:
         type:
           - string
+  - uid: office-ui-fabric-react.ISuggestionsProps.theme
+    summary: Theme provided by High-Order Component.
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type:
+          - styling.ITheme

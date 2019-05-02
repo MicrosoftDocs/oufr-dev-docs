@@ -7,7 +7,7 @@ items:
       - typeScript
     type: interface
     extends:
-      - office-ui-fabric-react.ILinkHTMLAttributes
+      - 'ILinkHTMLAttributes<HTMLAnchorElement | HTMLButtonElement | HTMLElement | LinkBase> '
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.ILinkProps.as
@@ -89,4 +89,4 @@ items:
       content: 'theme?: ITheme;'
       return:
         type:
-          - office-ui-fabric-react.ITheme
+          - styling.ITheme

@@ -7,13 +7,12 @@ items:
       - typeScript
     type: interface
     extends:
-      - React.Props
+      - 'React.ClassAttributes<ProgressIndicatorBase> '
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.IProgressIndicatorProps.ariaValueText
       - office-ui-fabric-react.IProgressIndicatorProps.barHeight
       - office-ui-fabric-react.IProgressIndicatorProps.className
-      - office-ui-fabric-react.IProgressIndicatorProps.componentRef
       - office-ui-fabric-react.IProgressIndicatorProps.description
       - office-ui-fabric-react.IProgressIndicatorProps.label
       - office-ui-fabric-react.IProgressIndicatorProps.onRenderProgress
@@ -58,18 +57,6 @@ items:
       return:
         type:
           - string
-  - uid: office-ui-fabric-react.IProgressIndicatorProps.componentRef
-    summary: Gets the component ref.
-    name: componentRef
-    fullName: componentRef
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'componentRef?: IRefObject<IProgressIndicator>;'
-      return:
-        type:
-          - IRefObject<IProgressIndicator>
   - uid: office-ui-fabric-react.IProgressIndicatorProps.description
     summary: Text describing or supplementing the operation. May be a string or React virtual elements.
     name: description
@@ -108,8 +95,8 @@ items:
           - IRenderFunction<IProgressIndicatorProps>
   - uid: office-ui-fabric-react.IProgressIndicatorProps.percentComplete
     summary: >-
-      Percentage of the operation's completeness. If this is not set, the indeterminate progress animation will be shown
-      instead.
+      Percentage of the operation's completeness, numerically between 0 and 1. If this is not set, the indeterminate
+      progress animation will be shown instead.
     name: percentComplete
     fullName: percentComplete
     langs:
@@ -155,9 +142,9 @@ items:
       content: 'theme?: ITheme;'
       return:
         type:
-          - office-ui-fabric-react.ITheme
+          - styling.ITheme
   - uid: office-ui-fabric-react.IProgressIndicatorProps.title
-    summary: 'Deprecated at v0.43.0, to be removed at &gt;= v0.53.0. Use `label` instead.'
+    summary: 'Deprecated at v0.43.0, to be removed at &gt;<!-- -->= v0.53.0. Use `label` instead.'
     deprecated:
       content: Use `label` instead.
     name: title

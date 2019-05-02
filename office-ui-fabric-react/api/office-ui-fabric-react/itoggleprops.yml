@@ -8,7 +8,7 @@ items:
       - typeScript
     type: interface
     extends:
-      - React.HTMLAttributes
+      - 'React.HTMLAttributes<HTMLElement> '
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.IToggleProps.ariaLabel
@@ -17,6 +17,7 @@ items:
       - office-ui-fabric-react.IToggleProps.componentRef
       - office-ui-fabric-react.IToggleProps.defaultChecked
       - office-ui-fabric-react.IToggleProps.disabled
+      - office-ui-fabric-react.IToggleProps.inlineLabel
       - office-ui-fabric-react.IToggleProps.keytipProps
       - office-ui-fabric-react.IToggleProps.label
       - office-ui-fabric-react.IToggleProps.offAriaLabel
@@ -105,6 +106,21 @@ items:
       return:
         type:
           - boolean
+  - uid: office-ui-fabric-react.IToggleProps.inlineLabel
+    summary: >-
+      Whether the label (not the onText/offText) should be positioned inline with the toggle control. Left (right in
+      RTL) side when on/off text provided VS right (left in RTL) side when no on/off text. Caution: when not providing
+      on/off text user may get confused in differentiating the on/off states of the toggle.
+    name: inlineLabel
+    fullName: inlineLabel
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'inlineLabel?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: office-ui-fabric-react.IToggleProps.keytipProps
     summary: Optional keytip for this toggle
     name: keytipProps
@@ -143,7 +159,9 @@ items:
         type:
           - string
   - uid: office-ui-fabric-react.IToggleProps.offText
-    summary: Text to display when toggle is OFF.
+    summary: >-
+      Text to display when toggle is OFF. Caution: when not providing on/off text user may get confused in
+      differentiating the on/off states of the toggle.
     name: offText
     fullName: offText
     langs:
@@ -193,7 +211,9 @@ items:
         type:
           - '(checked: boolean) => void'
   - uid: office-ui-fabric-react.IToggleProps.onText
-    summary: Text to display when toggle is ON.
+    summary: >-
+      Text to display when toggle is ON. Caution: when not providing on/off text user may get confused in
+      differentiating the on/off states of the toggle.
     name: onText
     fullName: onText
     langs:
@@ -227,4 +247,4 @@ items:
       content: 'theme?: ITheme;'
       return:
         type:
-          - office-ui-fabric-react.ITheme
+          - styling.ITheme

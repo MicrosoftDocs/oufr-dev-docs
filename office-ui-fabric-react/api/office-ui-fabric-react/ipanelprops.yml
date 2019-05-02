@@ -7,7 +7,7 @@ items:
       - typeScript
     type: interface
     extends:
-      - React.HTMLAttributes
+      - 'React.HTMLAttributes<PanelBase> '
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.IPanelProps.className
@@ -32,12 +32,15 @@ items:
       - office-ui-fabric-react.IPanelProps.onDismiss
       - office-ui-fabric-react.IPanelProps.onDismissed
       - office-ui-fabric-react.IPanelProps.onLightDismissClick
+      - office-ui-fabric-react.IPanelProps.onOpen
+      - office-ui-fabric-react.IPanelProps.onOpened
       - office-ui-fabric-react.IPanelProps.onOuterClick
       - office-ui-fabric-react.IPanelProps.onRenderBody
       - office-ui-fabric-react.IPanelProps.onRenderFooter
       - office-ui-fabric-react.IPanelProps.onRenderFooterContent
       - office-ui-fabric-react.IPanelProps.onRenderHeader
       - office-ui-fabric-react.IPanelProps.onRenderNavigation
+      - office-ui-fabric-react.IPanelProps.onRenderNavigationContent
       - office-ui-fabric-react.IPanelProps.styles
       - office-ui-fabric-react.IPanelProps.theme
       - office-ui-fabric-react.IPanelProps.type
@@ -94,7 +97,7 @@ items:
         type:
           - IRefObject<IPanel>
   - uid: office-ui-fabric-react.IPanelProps.customWidth
-    summary: 'Custom panel width, used only when type is set to PanelType.custom.'
+    summary: 'Custom panel width, used only when `type` is set to `PanelType.custom`<!-- -->.'
     name: customWidth
     fullName: customWidth
     langs:
@@ -145,8 +148,8 @@ items:
           - office-ui-fabric-react.IFocusTrapZoneProps
   - uid: office-ui-fabric-react.IPanelProps.forceFocusInsideTrap
     summary: >-
-      Indicates whether Panel should force focus inside the focus trap zone Deprecated, use `focusTrapZoneProps`<!--
-      -->.
+      Indicates whether Panel should force focus inside the focus trap zone. If not explicitly specified, behavior
+      aligns with FocusTrapZone's default behavior. Deprecated, use `focusTrapZoneProps`<!-- -->.
     deprecated:
       content: Use `focusTrapZoneProps`<!-- -->.
     name: forceFocusInsideTrap
@@ -262,7 +265,9 @@ items:
         type:
           - boolean
   - uid: office-ui-fabric-react.IPanelProps.isOpen
-    summary: Whether the panel is displayed.
+    summary: >-
+      Whether the panel is displayed. If true, will cause panel to stay open even if dismissed. If false, will cause
+      panel to stay hidden. If undefined, will allow the panel to control its own visility through open/dismiss methods.
     name: isOpen
     fullName: isOpen
     langs:
@@ -320,6 +325,30 @@ items:
     type: property
     syntax:
       content: 'onLightDismissClick?: () => void;'
+      return:
+        type:
+          - () => void
+  - uid: office-ui-fabric-react.IPanelProps.onOpen
+    summary: 'A callback function for when the Panel is opened, before the animation completes.'
+    name: onOpen
+    fullName: onOpen
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onOpen?: () => void;'
+      return:
+        type:
+          - () => void
+  - uid: office-ui-fabric-react.IPanelProps.onOpened
+    summary: 'A callback function for when the Panel is opened, after the animation completes.'
+    name: onOpened
+    fullName: onOpened
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onOpened?: () => void;'
       return:
         type:
           - () => void
@@ -384,7 +413,7 @@ items:
         type:
           - office-ui-fabric-react.IPanelHeaderRenderer
   - uid: office-ui-fabric-react.IPanelProps.onRenderNavigation
-    summary: Optional custom renderer navigation region. Replaces current close button.
+    summary: Optional custom renderer navigation region. Replaces the region that contains the close button.
     name: onRenderNavigation
     fullName: onRenderNavigation
     langs:
@@ -392,6 +421,18 @@ items:
     type: property
     syntax:
       content: 'onRenderNavigation?: IRenderFunction<IPanelProps>;'
+      return:
+        type:
+          - IRenderFunction<IPanelProps>
+  - uid: office-ui-fabric-react.IPanelProps.onRenderNavigationContent
+    summary: Optional custom renderer for content in the navigation region. Replaces current close button.
+    name: onRenderNavigationContent
+    fullName: onRenderNavigationContent
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onRenderNavigationContent?: IRenderFunction<IPanelProps>;'
       return:
         type:
           - IRenderFunction<IPanelProps>
@@ -418,7 +459,7 @@ items:
       content: 'theme?: ITheme;'
       return:
         type:
-          - office-ui-fabric-react.ITheme
+          - styling.ITheme
   - uid: office-ui-fabric-react.IPanelProps.type
     summary: Type of the panel.
     name: type

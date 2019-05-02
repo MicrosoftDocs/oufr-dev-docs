@@ -7,7 +7,8 @@ items:
       - typeScript
     type: interface
     extends:
-      - office-ui-fabric-react.IBaseProps
+      - IBaseProps<ICalendar>
+      - 'React.HTMLAttributes<HTMLElement> '
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.ICalendarProps.allFocusable
@@ -27,6 +28,7 @@ items:
       - office-ui-fabric-react.ICalendarProps.navigationIcons
       - office-ui-fabric-react.ICalendarProps.onDismiss
       - office-ui-fabric-react.ICalendarProps.onSelectDate
+      - office-ui-fabric-react.ICalendarProps.restrictedDates
       - office-ui-fabric-react.ICalendarProps.selectDateOnClick
       - office-ui-fabric-react.ICalendarProps.shouldFocusOnMount
       - office-ui-fabric-react.ICalendarProps.showCloseButton
@@ -250,6 +252,18 @@ items:
       return:
         type:
           - '(date: Date, selectedDateRangeArray?: Date[]) => void'
+  - uid: office-ui-fabric-react.ICalendarProps.restrictedDates
+    summary: If set the Calendar will not allow selection of dates in this array.
+    name: restrictedDates
+    fullName: restrictedDates
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'restrictedDates?: Date[];'
+      return:
+        type:
+          - 'Date[]'
   - uid: office-ui-fabric-react.ICalendarProps.selectDateOnClick
     summary: 'When clicking on "Today", select the date and close the calendar.'
     name: selectDateOnClick

@@ -8,7 +8,7 @@ items:
       - typeScript
     type: interface
     extends:
-      - React.AllHTMLAttributes
+      - 'React.AllHTMLAttributes<HTMLInputElement | HTMLTextAreaElement> '
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.ITextFieldProps.addonString
@@ -79,7 +79,7 @@ items:
         type:
           - string
   - uid: office-ui-fabric-react.ITextFieldProps.autoAdjustHeight
-    summary: Whether or not to auto adjust text field height. Applies only to multiline text field.
+    summary: 'For multiline text fields, whether or not to auto adjust text field height.'
     name: autoAdjustHeight
     fullName: autoAdjustHeight
     langs:
@@ -93,17 +93,19 @@ items:
   - uid: office-ui-fabric-react.ITextFieldProps.autoComplete
     summary: >-
       Whether the input field should have autocomplete enabled. This tells the browser to display options based on
-      earlier typed values.
+      earlier typed values. Common values are 'on' and 'off' but for all possible values see the following links:
+      https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete\#Values
+      https://html.spec.whatwg.org/multipage/form-control-infrastructure.html\#autofill
     name: autoComplete
     fullName: autoComplete
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'autoComplete?: ''on'' | ''off'';'
+      content: 'autoComplete?: string;'
       return:
         type:
-          - '''on'' | ''off'''
+          - string
   - uid: office-ui-fabric-react.ITextFieldProps.borderless
     summary: Whether or not the text field is borderless.
     name: borderless
@@ -208,7 +210,8 @@ items:
   - uid: office-ui-fabric-react.ITextFieldProps.errorMessage
     summary: >-
       Static error message displayed below the text field. Use `onGetErrorMessage` to dynamically change the error
-      message displayed (if any) based on the current value.
+      message displayed (if any) based on the current value. `errorMessage` and `onGetErrorMessage` are mutually
+      exclusive (`errorMessage` takes precedence).
     name: errorMessage
     fullName: errorMessage
     langs:
@@ -304,7 +307,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'maskFormat?:'
+      content: |-
+        maskFormat?: {
+                [key: string]: RegExp;
+            };
       return:
         type:
           - |-
@@ -324,19 +330,24 @@ items:
         type:
           - boolean
   - uid: office-ui-fabric-react.ITextFieldProps.onBeforeChange
-    summary: Called after the input's value updates but before re-rendering.
+    summary: >-
+      Called after the input's value updates but before re-rendering. Unlike `onChange`<!-- -->, this is also called
+      when the value is updated via props.
+
+
+      NOTE: This should be used \*very\* rarely. `onChange` is more appropriate for most situations.
     name: onBeforeChange
     fullName: onBeforeChange
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'onBeforeChange?: (newValue: any) => void;'
+      content: 'onBeforeChange?: (newValue?: string) => void;'
       return:
         type:
-          - '(newValue: any) => void'
+          - '(newValue?: string) => void'
   - uid: office-ui-fabric-react.ITextFieldProps.onChange
-    summary: Callback for when the input value changes.
+    summary: Callback for when the input value changes. This is called on both `input` and `change` native events.
     name: onChange
     fullName: onChange
     langs:
@@ -362,15 +373,16 @@ items:
           - '(newValue: any) => void'
   - uid: office-ui-fabric-react.ITextFieldProps.onGetErrorMessage
     summary: >-
-      Function used to determine whether the input value is valid and get an error message if not.
+      Function used to determine whether the input value is valid and get an error message if not. Mutually exclusive
+      with the static string `errorMessage` (it will take precedence over this).
 
 
       When it returns string: - If valid, it returns empty string. - If invalid, it returns the error message string and
       the text field will show a red border and show an error message below the text field.
 
 
-      When it returns Promise<string>: - The resolved value is display as error message. - The rejected, the value is
-      thrown away.
+      When it returns Promise<string>: - The resolved value is displayed as the error message. - If rejected, the value
+      is thrown away.
     name: onGetErrorMessage
     fullName: onGetErrorMessage
     langs:
@@ -455,7 +467,9 @@ items:
         type:
           - IRenderFunction<ITextFieldProps>
   - uid: office-ui-fabric-react.ITextFieldProps.prefix
-    summary: Prefix displayed before the text field contents. This is not included in the value.
+    summary: >-
+      Prefix displayed before the text field contents. This is not included in the value. Ensure a descriptive label is
+      present to assist screen readers, as the value does not include the prefix.
     name: prefix
     fullName: prefix
     langs:
@@ -479,7 +493,7 @@ items:
         type:
           - boolean
   - uid: office-ui-fabric-react.ITextFieldProps.resizable
-    summary: Whether or not the multiline text field is resizable.
+    summary: 'For multiline text fields, whether or not the field is resizable.'
     name: resizable
     fullName: resizable
     langs:
@@ -503,7 +517,9 @@ items:
         type:
           - 'IStyleFunctionOrObject<ITextFieldStyleProps, ITextFieldStyles>'
   - uid: office-ui-fabric-react.ITextFieldProps.suffix
-    summary: Suffix displayed after the text field contents. This is not included in the value.
+    summary: >-
+      Suffix displayed after the text field contents. This is not included in the value. Ensure a descriptive label is
+      present to assist screen readers, as the value does not include the suffix.
     name: suffix
     fullName: suffix
     langs:
@@ -525,7 +541,7 @@ items:
       content: 'theme?: ITheme;'
       return:
         type:
-          - office-ui-fabric-react.ITheme
+          - styling.ITheme
   - uid: office-ui-fabric-react.ITextFieldProps.underlined
     summary: Whether or not the text field is underlined.
     name: underlined
@@ -539,7 +555,10 @@ items:
         type:
           - boolean
   - uid: office-ui-fabric-react.ITextFieldProps.validateOnFocusIn
-    summary: Run validation only on input focus.
+    summary: |-
+      Run validation when focus moves into the input, and \*\*do not\*\* validate on change.
+
+      (Unless this prop and/or `validateOnFocusOut` is set to true, validation will run on every change.)
     name: validateOnFocusIn
     fullName: validateOnFocusIn
     langs:
@@ -551,7 +570,10 @@ items:
         type:
           - boolean
   - uid: office-ui-fabric-react.ITextFieldProps.validateOnFocusOut
-    summary: Run validation only on input focus out.
+    summary: |-
+      Run validation when focus moves out of the input, and \*\*do not\*\* validate on change.
+
+      (Unless this prop and/or `validateOnFocusIn` is set to true, validation will run on every change.)
     name: validateOnFocusOut
     fullName: validateOnFocusOut
     langs:
@@ -563,7 +585,7 @@ items:
         type:
           - boolean
   - uid: office-ui-fabric-react.ITextFieldProps.validateOnLoad
-    summary: Disable on-load validation.
+    summary: Whether validation should run when the input is initially rendered.
     name: validateOnLoad
     fullName: validateOnLoad
     langs:

@@ -7,12 +7,12 @@ items:
       - typeScript
     type: class
     extends:
-      - office-ui-fabric-react.BaseComponent
+      - 'BaseComponent<P, IBaseFloatingPickerState> '
     implements:
       - office-ui-fabric-react.IBaseFloatingPicker
     package: office-ui-fabric-react
     children:
-      - office-ui-fabric-react.BaseFloatingPicker.constructor
+      - office-ui-fabric-react.BaseFloatingPicker.(constructor)
       - office-ui-fabric-react.BaseFloatingPicker.completeSuggestion
       - office-ui-fabric-react.BaseFloatingPicker.componentDidMount
       - office-ui-fabric-react.BaseFloatingPicker.componentDidUpdate
@@ -23,6 +23,7 @@ items:
       - office-ui-fabric-react.BaseFloatingPicker.forceResolveSuggestion
       - office-ui-fabric-react.BaseFloatingPicker.hidePicker
       - office-ui-fabric-react.BaseFloatingPicker.inputText
+      - office-ui-fabric-react.BaseFloatingPicker.isComponentMounted
       - office-ui-fabric-react.BaseFloatingPicker.isSuggestionsShown
       - office-ui-fabric-react.BaseFloatingPicker.onChange
       - office-ui-fabric-react.BaseFloatingPicker.onKeyDown
@@ -43,10 +44,10 @@ items:
       - office-ui-fabric-react.BaseFloatingPicker.updateSuggestionsList
       - office-ui-fabric-react.BaseFloatingPicker.updateSuggestionWithZeroState
       - office-ui-fabric-react.BaseFloatingPicker.updateValue
-  - uid: office-ui-fabric-react.BaseFloatingPicker.constructor
-    summary: 'Constructs a new instance of the [BaseFloatingPicker](xref:office-ui-fabric-react.BaseFloatingPicker) class'
-    name: constructor(basePickerProps)
-    fullName: constructor
+  - uid: office-ui-fabric-react.BaseFloatingPicker.(constructor)
+    summary: Constructs a new instance of the `BaseFloatingPicker` class
+    name: (constructor)(basePickerProps)
+    fullName: (constructor)(basePickerProps)
     langs:
       - typeScript
     type: constructor
@@ -70,7 +71,7 @@ items:
           - () => void
   - uid: office-ui-fabric-react.BaseFloatingPicker.componentDidMount
     name: componentDidMount()
-    fullName: componentDidMount
+    fullName: componentDidMount()
     langs:
       - typeScript
     type: method
@@ -82,7 +83,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.BaseFloatingPicker.componentDidUpdate
     name: componentDidUpdate()
-    fullName: componentDidUpdate
+    fullName: componentDidUpdate()
     langs:
       - typeScript
     type: method
@@ -94,12 +95,12 @@ items:
         description: ''
   - uid: office-ui-fabric-react.BaseFloatingPicker.componentWillReceiveProps
     name: componentWillReceiveProps(newProps)
-    fullName: componentWillReceiveProps
+    fullName: componentWillReceiveProps(newProps)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'componentWillReceiveProps(newProps: P): void;'
+      content: 'componentWillReceiveProps(newProps: IBaseFloatingPickerProps<T>): void;'
       return:
         type:
           - void
@@ -108,10 +109,10 @@ items:
         - id: newProps
           description: ''
           type:
-            - P
+            - IBaseFloatingPickerProps<T>
   - uid: office-ui-fabric-react.BaseFloatingPicker.componentWillUnmount
     name: componentWillUnmount()
-    fullName: componentWillUnmount
+    fullName: componentWillUnmount()
     langs:
       - typeScript
     type: method
@@ -128,10 +129,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'protected currentPromise: PromiseLike<any>;'
+      content: 'protected currentPromise: PromiseLike<T[]>;'
       return:
         type:
-          - PromiseLike<any>
+          - 'PromiseLike<T[]>'
   - uid: office-ui-fabric-react.BaseFloatingPicker.currentSelectedSuggestionIndex
     name: currentSelectedSuggestionIndex
     fullName: currentSelectedSuggestionIndex
@@ -145,7 +146,7 @@ items:
           - number
   - uid: office-ui-fabric-react.BaseFloatingPicker.forceResolveSuggestion
     name: forceResolveSuggestion()
-    fullName: forceResolveSuggestion
+    fullName: forceResolveSuggestion()
     langs:
       - typeScript
     type: method
@@ -177,6 +178,17 @@ items:
       return:
         type:
           - string
+  - uid: office-ui-fabric-react.BaseFloatingPicker.isComponentMounted
+    name: isComponentMounted
+    fullName: isComponentMounted
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'protected isComponentMounted: boolean;'
+      return:
+        type:
+          - boolean
   - uid: office-ui-fabric-react.BaseFloatingPicker.isSuggestionsShown
     name: isSuggestionsShown
     fullName: isSuggestionsShown
@@ -190,7 +202,7 @@ items:
           - boolean
   - uid: office-ui-fabric-react.BaseFloatingPicker.onChange
     name: onChange(item)
-    fullName: onChange
+    fullName: onChange(item)
     langs:
       - typeScript
     type: method
@@ -229,7 +241,7 @@ items:
           - '(queryString: string) => void'
   - uid: office-ui-fabric-react.BaseFloatingPicker.onSelectionChange
     name: onSelectionChange()
-    fullName: onSelectionChange
+    fullName: onSelectionChange()
     langs:
       - typeScript
     type: method
@@ -246,10 +258,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'protected onSuggestionClick: (ev: React.MouseEvent<HTMLElement>, item: T, index: number) => void;'
+      content: 'protected onSuggestionClick: (ev: React.MouseEvent<HTMLElement, MouseEvent>, item: T, index: number) => void;'
       return:
         type:
-          - '(ev: React.MouseEvent<HTMLElement>, item: T, index: number) => void'
+          - '(ev: React.MouseEvent<HTMLElement, MouseEvent>, item: T, index: number) => void'
   - uid: office-ui-fabric-react.BaseFloatingPicker.onSuggestionRemove
     name: onSuggestionRemove
     fullName: onSuggestionRemove
@@ -257,13 +269,13 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'protected onSuggestionRemove: (ev: React.MouseEvent<HTMLElement>, item: T, index: number) => void;'
+      content: 'protected onSuggestionRemove: (ev: React.MouseEvent<HTMLElement, MouseEvent>, item: T, index: number) => void;'
       return:
         type:
-          - '(ev: React.MouseEvent<HTMLElement>, item: T, index: number) => void'
+          - '(ev: React.MouseEvent<HTMLElement, MouseEvent>, item: T, index: number) => void'
   - uid: office-ui-fabric-react.BaseFloatingPicker.render
     name: render()
-    fullName: render
+    fullName: render()
     langs:
       - typeScript
     type: method
@@ -275,7 +287,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.BaseFloatingPicker.renderSuggestions
     name: renderSuggestions()
-    fullName: renderSuggestions
+    fullName: renderSuggestions()
     langs:
       - typeScript
     type: method
@@ -292,15 +304,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'protected root:'
+      content: 'protected root: React.RefObject<HTMLDivElement>;'
       return:
         type:
-          - |-
-            {
-                    (component: HTMLDivElement | null): void;
-                    current: HTMLDivElement | null;
-                    value: HTMLDivElement | null;
-                }
+          - React.RefObject<HTMLDivElement>
   - uid: office-ui-fabric-react.BaseFloatingPicker.selection
     name: selection
     fullName: selection
@@ -341,10 +348,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'protected suggestionsControl: SuggestionsControl<T>;'
+      content: 'protected suggestionsControl: React.RefObject<SuggestionsControl<T>>;'
       return:
         type:
-          - SuggestionsControl<T>
+          - React.RefObject<SuggestionsControl<T>>
   - uid: office-ui-fabric-react.BaseFloatingPicker.SuggestionsControlOfProperType
     name: SuggestionsControlOfProperType
     fullName: SuggestionsControlOfProperType
@@ -369,7 +376,7 @@ items:
           - SuggestionsStore<T>
   - uid: office-ui-fabric-react.BaseFloatingPicker.updateSuggestions
     name: 'updateSuggestions(suggestions, forceUpdate)'
-    fullName: updateSuggestions
+    fullName: 'updateSuggestions(suggestions, forceUpdate)'
     langs:
       - typeScript
     type: method
@@ -390,7 +397,7 @@ items:
             - boolean
   - uid: office-ui-fabric-react.BaseFloatingPicker.updateSuggestionsList
     name: updateSuggestionsList(suggestions)
-    fullName: updateSuggestionsList
+    fullName: updateSuggestionsList(suggestions)
     langs:
       - typeScript
     type: method
@@ -407,7 +414,7 @@ items:
             - 'T[] | PromiseLike<T[]>'
   - uid: office-ui-fabric-react.BaseFloatingPicker.updateSuggestionWithZeroState
     name: updateSuggestionWithZeroState()
-    fullName: updateSuggestionWithZeroState
+    fullName: updateSuggestionWithZeroState()
     langs:
       - typeScript
     type: method
@@ -419,7 +426,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.BaseFloatingPicker.updateValue
     name: updateValue(updatedValue)
-    fullName: updateValue
+    fullName: updateValue(updatedValue)
     langs:
       - typeScript
     type: method

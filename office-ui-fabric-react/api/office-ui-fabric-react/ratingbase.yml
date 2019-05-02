@@ -7,17 +7,17 @@ items:
       - typeScript
     type: class
     extends:
-      - office-ui-fabric-react.BaseComponent
+      - 'BaseComponent<IRatingProps, IRatingState> '
     package: office-ui-fabric-react
     children:
-      - office-ui-fabric-react.RatingBase.constructor
+      - office-ui-fabric-react.RatingBase.(constructor)
       - office-ui-fabric-react.RatingBase.componentWillReceiveProps
       - office-ui-fabric-react.RatingBase.defaultProps
       - office-ui-fabric-react.RatingBase.render
-  - uid: office-ui-fabric-react.RatingBase.constructor
-    summary: 'Constructs a new instance of the [RatingBase](xref:office-ui-fabric-react.RatingBase) class'
-    name: constructor(props)
-    fullName: constructor
+  - uid: office-ui-fabric-react.RatingBase.(constructor)
+    summary: Constructs a new instance of the `RatingBase` class
+    name: (constructor)(props)
+    fullName: (constructor)(props)
     langs:
       - typeScript
     type: constructor
@@ -30,7 +30,7 @@ items:
             - office-ui-fabric-react.IRatingProps
   - uid: office-ui-fabric-react.RatingBase.componentWillReceiveProps
     name: componentWillReceiveProps(nextProps)
-    fullName: componentWillReceiveProps
+    fullName: componentWillReceiveProps(nextProps)
     langs:
       - typeScript
     type: method
@@ -58,7 +58,7 @@ items:
           - office-ui-fabric-react.IRatingProps
   - uid: office-ui-fabric-react.RatingBase.render
     name: render()
-    fullName: render
+    fullName: render()
     langs:
       - typeScript
     type: method

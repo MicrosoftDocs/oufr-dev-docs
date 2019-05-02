@@ -7,7 +7,7 @@ items:
       - typeScript
     type: interface
     extends:
-      - React.Props
+      - 'React.ClassAttributes<DialogContentBase> '
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.IDialogContentProps.className
@@ -160,7 +160,7 @@ items:
       content: 'theme?: ITheme;'
       return:
         type:
-          - office-ui-fabric-react.ITheme
+          - styling.ITheme
   - uid: office-ui-fabric-react.IDialogContentProps.title
     summary: The title text to display at the top of the dialog.
     name: title
@@ -169,10 +169,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'title?: string;'
+      content: 'title?: string | JSX.Element;'
       return:
         type:
-          - string
+          - string | JSX.Element
   - uid: office-ui-fabric-react.IDialogContentProps.titleId
     summary: The Id for title container
     name: titleId

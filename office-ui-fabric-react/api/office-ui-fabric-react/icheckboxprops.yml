@@ -8,7 +8,7 @@ items:
       - typeScript
     type: interface
     extends:
-      - React.ButtonHTMLAttributes
+      - 'React.ButtonHTMLAttributes<HTMLElement | HTMLInputElement> '
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.ICheckboxProps.ariaDescribedBy
@@ -267,4 +267,4 @@ items:
       content: 'theme?: ITheme;'
       return:
         type:
-          - office-ui-fabric-react.ITheme
+          - styling.ITheme

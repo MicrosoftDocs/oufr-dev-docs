@@ -7,14 +7,14 @@ items:
       - typeScript
     type: class
     extends:
-      - office-ui-fabric-react.BasePicker
+      - 'BasePicker<T, P> '
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.BasePickerListBelow.onBackspace
       - office-ui-fabric-react.BasePickerListBelow.render
   - uid: office-ui-fabric-react.BasePickerListBelow.onBackspace
     name: onBackspace(ev)
-    fullName: onBackspace
+    fullName: onBackspace(ev)
     langs:
       - typeScript
     type: method
@@ -31,7 +31,7 @@ items:
             - React.KeyboardEvent<HTMLElement>
   - uid: office-ui-fabric-react.BasePickerListBelow.render
     name: render()
-    fullName: render
+    fullName: render()
     langs:
       - typeScript
     type: method

@@ -8,7 +8,7 @@ items:
       - typeScript
     type: interface
     extends:
-      - React.HTMLAttributes
+      - 'React.HTMLAttributes<HTMLDivElement | TooltipBase> '
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.ITooltipProps.calloutProps
@@ -83,7 +83,7 @@ items:
       content: 'directionalHint?: DirectionalHint;'
       return:
         type:
-          - office-ui-fabric-react.DirectionalHint
+          - DirectionalHint
   - uid: office-ui-fabric-react.ITooltipProps.directionalHintForRTL
     summary: >-
       How the element should be positioned in RTL layouts. If not specified, a mirror of `directionalHint` will be used
@@ -97,7 +97,7 @@ items:
       content: 'directionalHintForRTL?: DirectionalHint;'
       return:
         type:
-          - office-ui-fabric-react.DirectionalHint
+          - DirectionalHint
   - uid: office-ui-fabric-react.ITooltipProps.maxWidth
     summary: Max width of tooltip
     name: maxWidth
@@ -157,4 +157,4 @@ items:
       content: 'theme?: ITheme;'
       return:
         type:
-          - office-ui-fabric-react.ITheme
+          - styling.ITheme

@@ -7,12 +7,12 @@ items:
       - typeScript
     type: class
     extends:
-      - office-ui-fabric-react.BaseComponent
+      - 'React.Component<ITextFieldProps, ITextFieldState> '
     implements:
       - office-ui-fabric-react.ITextField
     package: office-ui-fabric-react
     children:
-      - office-ui-fabric-react.TextFieldBase.constructor
+      - office-ui-fabric-react.TextFieldBase.(constructor)
       - office-ui-fabric-react.TextFieldBase.blur
       - office-ui-fabric-react.TextFieldBase.componentDidMount
       - office-ui-fabric-react.TextFieldBase.componentDidUpdate
@@ -28,10 +28,10 @@ items:
       - office-ui-fabric-react.TextFieldBase.setSelectionRange
       - office-ui-fabric-react.TextFieldBase.setSelectionStart
       - office-ui-fabric-react.TextFieldBase.value
-  - uid: office-ui-fabric-react.TextFieldBase.constructor
-    summary: 'Constructs a new instance of the [TextFieldBase](xref:office-ui-fabric-react.TextFieldBase) class'
-    name: constructor(props)
-    fullName: constructor
+  - uid: office-ui-fabric-react.TextFieldBase.(constructor)
+    summary: Constructs a new instance of the `TextFieldBase` class
+    name: (constructor)(props)
+    fullName: (constructor)(props)
     langs:
       - typeScript
     type: constructor
@@ -45,7 +45,7 @@ items:
   - uid: office-ui-fabric-react.TextFieldBase.blur
     summary: Blurs the text field.
     name: blur()
-    fullName: blur
+    fullName: blur()
     langs:
       - typeScript
     type: method
@@ -57,7 +57,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.TextFieldBase.componentDidMount
     name: componentDidMount()
-    fullName: componentDidMount
+    fullName: componentDidMount()
     langs:
       - typeScript
     type: method
@@ -69,7 +69,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.TextFieldBase.componentDidUpdate
     name: componentDidUpdate()
-    fullName: componentDidUpdate
+    fullName: componentDidUpdate()
     langs:
       - typeScript
     type: method
@@ -81,7 +81,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.TextFieldBase.componentWillReceiveProps
     name: componentWillReceiveProps(newProps)
-    fullName: componentWillReceiveProps
+    fullName: componentWillReceiveProps(newProps)
     langs:
       - typeScript
     type: method
@@ -98,7 +98,7 @@ items:
             - office-ui-fabric-react.ITextFieldProps
   - uid: office-ui-fabric-react.TextFieldBase.componentWillUnmount
     name: componentWillUnmount()
-    fullName: componentWillUnmount
+    fullName: componentWillUnmount()
     langs:
       - typeScript
     type: method
@@ -122,7 +122,7 @@ items:
   - uid: office-ui-fabric-react.TextFieldBase.focus
     summary: Sets focus on the text field
     name: focus()
-    fullName: focus
+    fullName: focus()
     langs:
       - typeScript
     type: method
@@ -134,7 +134,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.TextFieldBase.render
     name: render()
-    fullName: render
+    fullName: render()
     langs:
       - typeScript
     type: method
@@ -147,7 +147,7 @@ items:
   - uid: office-ui-fabric-react.TextFieldBase.select
     summary: Selects the text field
     name: select()
-    fullName: select
+    fullName: select()
     langs:
       - typeScript
     type: method
@@ -184,7 +184,7 @@ items:
   - uid: office-ui-fabric-react.TextFieldBase.setSelectionEnd
     summary: Sets the selection end of the text field to a specified value
     name: setSelectionEnd(value)
-    fullName: setSelectionEnd
+    fullName: setSelectionEnd(value)
     langs:
       - typeScript
     type: method
@@ -202,7 +202,7 @@ items:
   - uid: office-ui-fabric-react.TextFieldBase.setSelectionRange
     summary: Sets the start and end positions of a selection in a text field.
     name: 'setSelectionRange(start, end)'
-    fullName: setSelectionRange
+    fullName: 'setSelectionRange(start, end)'
     langs:
       - typeScript
     type: method
@@ -224,7 +224,7 @@ items:
   - uid: office-ui-fabric-react.TextFieldBase.setSelectionStart
     summary: Sets the selection start of the text field to a specified value
     name: setSelectionStart(value)
-    fullName: setSelectionStart
+    fullName: setSelectionStart(value)
     langs:
       - typeScript
     type: method

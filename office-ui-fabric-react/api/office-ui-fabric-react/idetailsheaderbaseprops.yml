@@ -7,12 +7,14 @@ items:
       - typeScript
     type: interface
     extends:
-      - React.ClassAttributes
+      - React.ClassAttributes<DetailsHeaderBase>
+      - office-ui-fabric-react.IDetailsItemProps
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.IDetailsHeaderBaseProps.ariaLabel
       - office-ui-fabric-react.IDetailsHeaderBaseProps.ariaLabelForSelectAllCheckbox
       - office-ui-fabric-react.IDetailsHeaderBaseProps.ariaLabelForSelectionColumn
+      - office-ui-fabric-react.IDetailsHeaderBaseProps.ariaLabelForToggleAllGroupsButton
       - office-ui-fabric-react.IDetailsHeaderBaseProps.className
       - office-ui-fabric-react.IDetailsHeaderBaseProps.collapseAllVisibility
       - office-ui-fabric-react.IDetailsHeaderBaseProps.columnReorderOptions
@@ -27,6 +29,7 @@ items:
       - office-ui-fabric-react.IDetailsHeaderBaseProps.onColumnIsSizingChanged
       - office-ui-fabric-react.IDetailsHeaderBaseProps.onColumnResized
       - office-ui-fabric-react.IDetailsHeaderBaseProps.onRenderColumnHeaderTooltip
+      - office-ui-fabric-react.IDetailsHeaderBaseProps.onRenderDetailsCheckbox
       - office-ui-fabric-react.IDetailsHeaderBaseProps.onToggleCollapseAll
       - office-ui-fabric-react.IDetailsHeaderBaseProps.selectAllVisibility
       - office-ui-fabric-react.IDetailsHeaderBaseProps.styles
@@ -64,6 +67,18 @@ items:
     type: property
     syntax:
       content: 'ariaLabelForSelectionColumn?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.IDetailsHeaderBaseProps.ariaLabelForToggleAllGroupsButton
+    summary: ariaLabel for expand/collapse group button
+    name: ariaLabelForToggleAllGroupsButton
+    fullName: ariaLabelForToggleAllGroupsButton
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'ariaLabelForToggleAllGroupsButton?: string;'
       return:
         type:
           - string
@@ -235,6 +250,18 @@ items:
       return:
         type:
           - IRenderFunction<ITooltipHostProps>
+  - uid: office-ui-fabric-react.IDetailsHeaderBaseProps.onRenderDetailsCheckbox
+    summary: 'If provided, can be used to render a custom checkbox'
+    name: onRenderDetailsCheckbox
+    fullName: onRenderDetailsCheckbox
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onRenderDetailsCheckbox?: IRenderFunction<IDetailsCheckboxProps>;'
+      return:
+        type:
+          - IRenderFunction<IDetailsCheckboxProps>
   - uid: office-ui-fabric-react.IDetailsHeaderBaseProps.onToggleCollapseAll
     summary: Callback for when collapse all is toggled
     name: onToggleCollapseAll
@@ -282,4 +309,4 @@ items:
       content: 'theme?: ITheme;'
       return:
         type:
-          - office-ui-fabric-react.ITheme
+          - styling.ITheme

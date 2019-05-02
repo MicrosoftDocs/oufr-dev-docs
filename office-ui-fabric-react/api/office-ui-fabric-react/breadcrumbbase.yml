@@ -7,18 +7,17 @@ items:
       - typeScript
     type: class
     extends:
-      - office-ui-fabric-react.BaseComponent
+      - 'BaseComponent<IBreadcrumbProps, any> '
     package: office-ui-fabric-react
     children:
-      - office-ui-fabric-react.BreadcrumbBase.constructor
-      - office-ui-fabric-react.BreadcrumbBase.componentWillReceiveProps
+      - office-ui-fabric-react.BreadcrumbBase.(constructor)
       - office-ui-fabric-react.BreadcrumbBase.defaultProps
       - office-ui-fabric-react.BreadcrumbBase.focus
       - office-ui-fabric-react.BreadcrumbBase.render
-  - uid: office-ui-fabric-react.BreadcrumbBase.constructor
-    summary: 'Constructs a new instance of the [BreadcrumbBase](xref:office-ui-fabric-react.BreadcrumbBase) class'
-    name: constructor(props)
-    fullName: constructor
+  - uid: office-ui-fabric-react.BreadcrumbBase.(constructor)
+    summary: Constructs a new instance of the `BreadcrumbBase` class
+    name: (constructor)(props)
+    fullName: (constructor)(props)
     langs:
       - typeScript
     type: constructor
@@ -26,23 +25,6 @@ items:
       content: 'constructor(props: IBreadcrumbProps);'
       parameters:
         - id: props
-          description: ''
-          type:
-            - office-ui-fabric-react.IBreadcrumbProps
-  - uid: office-ui-fabric-react.BreadcrumbBase.componentWillReceiveProps
-    name: componentWillReceiveProps(nextProps)
-    fullName: componentWillReceiveProps
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'componentWillReceiveProps(nextProps: IBreadcrumbProps): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: nextProps
           description: ''
           type:
             - office-ui-fabric-react.IBreadcrumbProps
@@ -60,7 +42,7 @@ items:
   - uid: office-ui-fabric-react.BreadcrumbBase.focus
     summary: Sets focus to the first breadcrumb link.
     name: focus()
-    fullName: focus
+    fullName: focus()
     langs:
       - typeScript
     type: method
@@ -72,7 +54,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.BreadcrumbBase.render
     name: render()
-    fullName: render
+    fullName: render()
     langs:
       - typeScript
     type: method

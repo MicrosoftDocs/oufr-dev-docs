@@ -10,7 +10,7 @@ items:
       - office-ui-fabric-react.ISelection
     package: office-ui-fabric-react
     children:
-      - office-ui-fabric-react.Selection.constructor
+      - office-ui-fabric-react.Selection.(constructor)
       - office-ui-fabric-react.Selection.canSelectItem
       - office-ui-fabric-react.Selection.count
       - office-ui-fabric-react.Selection.getItems
@@ -36,10 +36,10 @@ items:
       - office-ui-fabric-react.Selection.toggleIndexSelected
       - office-ui-fabric-react.Selection.toggleKeySelected
       - office-ui-fabric-react.Selection.toggleRangeSelected
-  - uid: office-ui-fabric-react.Selection.constructor
-    summary: 'Constructs a new instance of the [Selection](xref:office-ui-fabric-react.Selection) class'
-    name: constructor(options)
-    fullName: constructor
+  - uid: office-ui-fabric-react.Selection.(constructor)
+    summary: Constructs a new instance of the `Selection` class
+    name: (constructor)(options)
+    fullName: (constructor)(options)
     langs:
       - typeScript
     type: constructor
@@ -52,7 +52,7 @@ items:
             - office-ui-fabric-react.ISelectionOptions
   - uid: office-ui-fabric-react.Selection.canSelectItem
     name: 'canSelectItem(item, index)'
-    fullName: canSelectItem
+    fullName: 'canSelectItem(item, index)'
     langs:
       - typeScript
     type: method
@@ -84,7 +84,7 @@ items:
           - number
   - uid: office-ui-fabric-react.Selection.getItems
     name: getItems()
-    fullName: getItems
+    fullName: getItems()
     langs:
       - typeScript
     type: method
@@ -96,7 +96,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.Selection.getKey
     name: 'getKey(item, index)'
-    fullName: getKey
+    fullName: 'getKey(item, index)'
     langs:
       - typeScript
     type: method
@@ -117,7 +117,7 @@ items:
             - number
   - uid: office-ui-fabric-react.Selection.getSelectedCount
     name: getSelectedCount()
-    fullName: getSelectedCount
+    fullName: getSelectedCount()
     langs:
       - typeScript
     type: method
@@ -129,7 +129,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.Selection.getSelectedIndices
     name: getSelectedIndices()
-    fullName: getSelectedIndices
+    fullName: getSelectedIndices()
     langs:
       - typeScript
     type: method
@@ -141,7 +141,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.Selection.getSelection
     name: getSelection()
-    fullName: getSelection
+    fullName: getSelection()
     langs:
       - typeScript
     type: method
@@ -153,7 +153,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.Selection.isAllSelected
     name: isAllSelected()
-    fullName: isAllSelected
+    fullName: isAllSelected()
     langs:
       - typeScript
     type: method
@@ -165,7 +165,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.Selection.isIndexSelected
     name: isIndexSelected(index)
-    fullName: isIndexSelected
+    fullName: isIndexSelected(index)
     langs:
       - typeScript
     type: method
@@ -182,7 +182,7 @@ items:
             - number
   - uid: office-ui-fabric-react.Selection.isKeySelected
     name: isKeySelected(key)
-    fullName: isKeySelected
+    fullName: isKeySelected(key)
     langs:
       - typeScript
     type: method
@@ -199,7 +199,7 @@ items:
             - string
   - uid: office-ui-fabric-react.Selection.isModal
     name: isModal()
-    fullName: isModal
+    fullName: isModal()
     langs:
       - typeScript
     type: method
@@ -211,7 +211,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.Selection.isRangeSelected
     name: 'isRangeSelected(fromIndex, count)'
-    fullName: isRangeSelected
+    fullName: 'isRangeSelected(fromIndex, count)'
     langs:
       - typeScript
     type: method
@@ -243,7 +243,7 @@ items:
           - office-ui-fabric-react.SelectionMode
   - uid: office-ui-fabric-react.Selection.selectToIndex
     name: 'selectToIndex(index, clearSelection)'
-    fullName: selectToIndex
+    fullName: 'selectToIndex(index, clearSelection)'
     langs:
       - typeScript
     type: method
@@ -264,7 +264,7 @@ items:
             - boolean
   - uid: office-ui-fabric-react.Selection.selectToKey
     name: 'selectToKey(key, clearSelection)'
-    fullName: selectToKey
+    fullName: 'selectToKey(key, clearSelection)'
     langs:
       - typeScript
     type: method
@@ -285,7 +285,7 @@ items:
             - boolean
   - uid: office-ui-fabric-react.Selection.setAllSelected
     name: setAllSelected(isAllSelected)
-    fullName: setAllSelected
+    fullName: setAllSelected(isAllSelected)
     langs:
       - typeScript
     type: method
@@ -302,7 +302,7 @@ items:
             - boolean
   - uid: office-ui-fabric-react.Selection.setChangeEvents
     name: 'setChangeEvents(isEnabled, suppressChange)'
-    fullName: setChangeEvents
+    fullName: 'setChangeEvents(isEnabled, suppressChange)'
     langs:
       - typeScript
     type: method
@@ -323,7 +323,7 @@ items:
             - boolean
   - uid: office-ui-fabric-react.Selection.setIndexSelected
     name: 'setIndexSelected(index, isSelected, shouldAnchor)'
-    fullName: setIndexSelected
+    fullName: 'setIndexSelected(index, isSelected, shouldAnchor)'
     langs:
       - typeScript
     type: method
@@ -351,7 +351,7 @@ items:
       Selection needs the items, call this method to set them. If the set of items is the same, this will re-evaluate
       selection and index maps. Otherwise, shouldClear should be set to true, so that selection is cleared.
     name: 'setItems(items, shouldClear)'
-    fullName: setItems
+    fullName: 'setItems(items, shouldClear)'
     langs:
       - typeScript
     type: method
@@ -372,7 +372,7 @@ items:
             - boolean
   - uid: office-ui-fabric-react.Selection.setKeySelected
     name: 'setKeySelected(key, isSelected, shouldAnchor)'
-    fullName: setKeySelected
+    fullName: 'setKeySelected(key, isSelected, shouldAnchor)'
     langs:
       - typeScript
     type: method
@@ -397,7 +397,7 @@ items:
             - boolean
   - uid: office-ui-fabric-react.Selection.setModal
     name: setModal(isModal)
-    fullName: setModal
+    fullName: setModal(isModal)
     langs:
       - typeScript
     type: method
@@ -414,7 +414,7 @@ items:
             - boolean
   - uid: office-ui-fabric-react.Selection.toggleAllSelected
     name: toggleAllSelected()
-    fullName: toggleAllSelected
+    fullName: toggleAllSelected()
     langs:
       - typeScript
     type: method
@@ -426,7 +426,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.Selection.toggleIndexSelected
     name: toggleIndexSelected(index)
-    fullName: toggleIndexSelected
+    fullName: toggleIndexSelected(index)
     langs:
       - typeScript
     type: method
@@ -443,7 +443,7 @@ items:
             - number
   - uid: office-ui-fabric-react.Selection.toggleKeySelected
     name: toggleKeySelected(key)
-    fullName: toggleKeySelected
+    fullName: toggleKeySelected(key)
     langs:
       - typeScript
     type: method
@@ -460,7 +460,7 @@ items:
             - string
   - uid: office-ui-fabric-react.Selection.toggleRangeSelected
     name: 'toggleRangeSelected(fromIndex, count)'
-    fullName: toggleRangeSelected
+    fullName: 'toggleRangeSelected(fromIndex, count)'
     langs:
       - typeScript
     type: method

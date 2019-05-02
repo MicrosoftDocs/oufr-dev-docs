@@ -16,7 +16,17 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'scrollablePane?:'
+      content: |-
+        scrollablePane?: {
+                subscribe: (handler: (container: HTMLElement, stickyContainer: HTMLElement) => void) => void;
+                unsubscribe: (handler: (container: HTMLElement, stickyContainer: HTMLElement) => void) => void;
+                addSticky: (sticky: Sticky) => void;
+                removeSticky: (sticky: Sticky) => void;
+                updateStickyRefHeights: () => void;
+                sortSticky: (sticky: Sticky, sortAgain?: boolean) => void;
+                notifySubscribers: (sort?: boolean) => void;
+                syncScrollSticky: (sticky: Sticky) => void;
+            };
       return:
         type:
           - |-
@@ -26,6 +36,7 @@ items:
                     addSticky: (sticky: Sticky) => void;
                     removeSticky: (sticky: Sticky) => void;
                     updateStickyRefHeights: () => void;
-                    sortSticky: (sticky: Sticky) => void;
+                    sortSticky: (sticky: Sticky, sortAgain?: boolean) => void;
                     notifySubscribers: (sort?: boolean) => void;
+                    syncScrollSticky: (sticky: Sticky) => void;
                 }

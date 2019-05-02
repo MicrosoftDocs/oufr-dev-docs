@@ -7,14 +7,13 @@ items:
       - typeScript
     type: interface
     extends:
-      - React.HTMLAttributes
+      - 'React.HTMLAttributes<Popup> '
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.IPopupProps.ariaDescribedBy
       - office-ui-fabric-react.IPopupProps.ariaLabel
       - office-ui-fabric-react.IPopupProps.ariaLabelledBy
       - office-ui-fabric-react.IPopupProps.className
-      - office-ui-fabric-react.IPopupProps.componentRef
       - office-ui-fabric-react.IPopupProps.onDismiss
       - office-ui-fabric-react.IPopupProps.role
       - office-ui-fabric-react.IPopupProps.shouldRestoreFocus
@@ -66,20 +65,6 @@ items:
       return:
         type:
           - string
-  - uid: office-ui-fabric-react.IPopupProps.componentRef
-    summary: >-
-      Optional callback to access the IPopup interface. Use this instead of ref for accessing the public methods and
-      properties of the component.
-    name: componentRef
-    fullName: componentRef
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'componentRef?: IRefObject<IPopup>;'
-      return:
-        type:
-          - IRefObject<IPopup>
   - uid: office-ui-fabric-react.IPopupProps.onDismiss
     summary: >-
       A callback function for when the popup is dismissed from the close button or light dismiss. If provided, will

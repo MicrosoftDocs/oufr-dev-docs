@@ -7,7 +7,7 @@ items:
       - typeScript
     type: interface
     extends:
-      - React.HTMLAttributes
+      - 'React.HTMLAttributes<HTMLElement> '
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.IMessageBarProps.actions
@@ -36,6 +36,8 @@ items:
           - JSX.Element
   - uid: office-ui-fabric-react.IMessageBarProps.ariaLabel
     summary: A description of the message bar for the benefit of screen readers.
+    deprecated:
+      content: Use native prop `aria-label` instead.
     name: ariaLabel
     fullName: ariaLabel
     langs:
@@ -159,7 +161,7 @@ items:
       content: 'theme?: ITheme;'
       return:
         type:
-          - office-ui-fabric-react.ITheme
+          - styling.ITheme
   - uid: office-ui-fabric-react.IMessageBarProps.truncated
     summary: >-
       Determines if the message bar text is truncated. If true, a button will render to toggle between a single line

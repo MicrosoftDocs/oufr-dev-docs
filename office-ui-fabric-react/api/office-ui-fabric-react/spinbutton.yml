@@ -7,21 +7,21 @@ items:
       - typeScript
     type: class
     extends:
-      - office-ui-fabric-react.BaseComponent
+      - 'BaseComponent<ISpinButtonProps, ISpinButtonState> '
     implements:
       - office-ui-fabric-react.ISpinButton
     package: office-ui-fabric-react
     children:
-      - office-ui-fabric-react.SpinButton.constructor
+      - office-ui-fabric-react.SpinButton.(constructor)
       - office-ui-fabric-react.SpinButton.componentWillReceiveProps
       - office-ui-fabric-react.SpinButton.defaultProps
       - office-ui-fabric-react.SpinButton.focus
       - office-ui-fabric-react.SpinButton.render
       - office-ui-fabric-react.SpinButton.value
-  - uid: office-ui-fabric-react.SpinButton.constructor
-    summary: 'Constructs a new instance of the [SpinButton](xref:office-ui-fabric-react.SpinButton) class'
-    name: constructor(props)
-    fullName: constructor
+  - uid: office-ui-fabric-react.SpinButton.(constructor)
+    summary: Constructs a new instance of the `SpinButton` class
+    name: (constructor)(props)
+    fullName: (constructor)(props)
     langs:
       - typeScript
     type: constructor
@@ -35,7 +35,7 @@ items:
   - uid: office-ui-fabric-react.SpinButton.componentWillReceiveProps
     summary: Invoked when a component is receiving new props. This method is not called for the initial render.
     name: componentWillReceiveProps(newProps)
-    fullName: componentWillReceiveProps
+    fullName: componentWillReceiveProps(newProps)
     langs:
       - typeScript
     type: method
@@ -57,13 +57,13 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'static defaultProps: ISpinButtonProps;'
+      content: 'static defaultProps: DefaultProps;'
       return:
         type:
-          - office-ui-fabric-react.ISpinButtonProps
+          - DefaultProps
   - uid: office-ui-fabric-react.SpinButton.focus
     name: focus()
-    fullName: focus
+    fullName: focus()
     langs:
       - typeScript
     type: method
@@ -75,7 +75,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.SpinButton.render
     name: render()
-    fullName: render
+    fullName: render()
     langs:
       - typeScript
     type: method

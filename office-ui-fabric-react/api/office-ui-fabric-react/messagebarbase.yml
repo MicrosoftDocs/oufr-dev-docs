@@ -7,16 +7,16 @@ items:
       - typeScript
     type: class
     extends:
-      - office-ui-fabric-react.BaseComponent
+      - 'BaseComponent<IMessageBarProps, IMessageBarState> '
     package: office-ui-fabric-react
     children:
-      - office-ui-fabric-react.MessageBarBase.constructor
+      - office-ui-fabric-react.MessageBarBase.(constructor)
       - office-ui-fabric-react.MessageBarBase.defaultProps
       - office-ui-fabric-react.MessageBarBase.render
-  - uid: office-ui-fabric-react.MessageBarBase.constructor
-    summary: 'Constructs a new instance of the [MessageBarBase](xref:office-ui-fabric-react.MessageBarBase) class'
-    name: constructor(props)
-    fullName: constructor
+  - uid: office-ui-fabric-react.MessageBarBase.(constructor)
+    summary: Constructs a new instance of the `MessageBarBase` class
+    name: (constructor)(props)
+    fullName: (constructor)(props)
     langs:
       - typeScript
     type: constructor
@@ -40,7 +40,7 @@ items:
           - office-ui-fabric-react.IMessageBarProps
   - uid: office-ui-fabric-react.MessageBarBase.render
     name: render()
-    fullName: render
+    fullName: render()
     langs:
       - typeScript
     type: method

@@ -10,7 +10,7 @@ items:
       - typeScript
     type: interface
     extends:
-      - React.HTMLAttributes
+      - 'React.HTMLAttributes<TListenerElement> '
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.ISelectableDroppableTextProps.ariaLabel
@@ -28,6 +28,7 @@ items:
       - office-ui-fabric-react.ISelectableDroppableTextProps.onRenderOption
       - office-ui-fabric-react.ISelectableDroppableTextProps.options
       - office-ui-fabric-react.ISelectableDroppableTextProps.panelProps
+      - office-ui-fabric-react.ISelectableDroppableTextProps.placeholder
       - office-ui-fabric-react.ISelectableDroppableTextProps.required
       - office-ui-fabric-react.ISelectableDroppableTextProps.selectedKey
   - uid: office-ui-fabric-react.ISelectableDroppableTextProps.ariaLabel
@@ -88,10 +89,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'defaultSelectedKey?: string | number | string[] | number[];'
+      content: 'defaultSelectedKey?: string | number | string[] | number[] | null;'
       return:
         type:
-          - 'string | number | string[] | number[]'
+          - 'string | number | string[] | number[] | null'
   - uid: office-ui-fabric-react.ISelectableDroppableTextProps.disabled
     summary: Whether or not the ISelectableDroppableText is disabled.
     name: disabled
@@ -148,10 +149,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'onRenderContainer?: IRenderFunction<ISelectableDroppableTextProps<TComponent>>;'
+      content: 'onRenderContainer?: IRenderFunction<ISelectableDroppableTextProps<TComponent, TListenerElement>>;'
       return:
         type:
-          - IRenderFunction<ISelectableDroppableTextProps<TComponent>>
+          - 'IRenderFunction<ISelectableDroppableTextProps<TComponent, TListenerElement>>'
   - uid: office-ui-fabric-react.ISelectableDroppableTextProps.onRenderItem
     summary: Optional custom renderer for the ISelectableDroppableText options
     name: onRenderItem
@@ -172,10 +173,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'onRenderList?: IRenderFunction<ISelectableDroppableTextProps<TComponent>>;'
+      content: 'onRenderList?: IRenderFunction<ISelectableDroppableTextProps<TComponent, TListenerElement>>;'
       return:
         type:
-          - IRenderFunction<ISelectableDroppableTextProps<TComponent>>
+          - 'IRenderFunction<ISelectableDroppableTextProps<TComponent, TListenerElement>>'
   - uid: office-ui-fabric-react.ISelectableDroppableTextProps.onRenderOption
     summary: Optional custom renderer for the ISelectableDroppableText option content
     name: onRenderOption
@@ -212,6 +213,18 @@ items:
       return:
         type:
           - office-ui-fabric-react.IPanelProps
+  - uid: office-ui-fabric-react.ISelectableDroppableTextProps.placeholder
+    summary: Input placeholder text. Displayed until option is selected.
+    name: placeholder
+    fullName: placeholder
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'placeholder?: string;'
+      return:
+        type:
+          - string
   - uid: office-ui-fabric-react.ISelectableDroppableTextProps.required
     summary: Whether or not the ISelectableDroppableText is required.
     name: required
@@ -227,14 +240,14 @@ items:
   - uid: office-ui-fabric-react.ISelectableDroppableTextProps.selectedKey
     summary: >-
       The key(s) of the selected item. If you provide this, you must maintain selection state by observing onChange
-      events and passing a new value in when changed.
+      events and passing a new value in when changed. Note that passing in `null` will cause selection to be reset.
     name: selectedKey
     fullName: selectedKey
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'selectedKey?: string | number | string[] | number[];'
+      content: 'selectedKey?: string | number | string[] | number[] | null;'
       return:
         type:
-          - 'string | number | string[] | number[]'
+          - 'string | number | string[] | number[] | null'

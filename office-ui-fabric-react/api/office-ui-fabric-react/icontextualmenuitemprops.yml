@@ -7,7 +7,7 @@ items:
       - typeScript
     type: interface
     extends:
-      - React.HTMLAttributes
+      - 'React.HTMLAttributes<IContextualMenuItemProps> '
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.IContextualMenuItemProps.className
@@ -145,10 +145,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'onCheckmarkClick?: ((item: IContextualMenuItem, ev: React.MouseEvent<HTMLElement>) => void);'
+      content: 'onCheckmarkClick?: (item: IContextualMenuItem, ev: React.MouseEvent<HTMLElement>) => void;'
       return:
         type:
-          - '((item: IContextualMenuItem, ev: React.MouseEvent<HTMLElement>) => void)'
+          - '(item: IContextualMenuItem, ev: React.MouseEvent<HTMLElement>) => void'
   - uid: office-ui-fabric-react.IContextualMenuItemProps.openSubMenu
     summary: 'This prop will get set by ContextualMenu and can be called to open this item''s subMenu, if present.'
     name: openSubMenu
@@ -184,4 +184,4 @@ items:
       content: 'theme?: ITheme;'
       return:
         type:
-          - office-ui-fabric-react.ITheme
+          - styling.ITheme

@@ -11,38 +11,5 @@ items:
       - typeScript
     type: interface
     extends:
-      - office-ui-fabric-react.IRenderFunction
+      - 'IRenderFunction<IPanelProps> '
     package: office-ui-fabric-react
-    children:
-      - office-ui-fabric-react.IPanelHeaderRenderer.__call
-  - uid: office-ui-fabric-react.IPanelHeaderRenderer.__call
-    name: '__call(props, defaultRender, headerTextId)'
-    fullName: __call
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: >-
-        (props?: IPanelProps, defaultRender?: IPanelHeaderRenderer, headerTextId?: string | undefined): JSX.Element |
-        null;
-      return:
-        type:
-          - JSX.Element | null
-        description: ''
-      parameters:
-        - id: props
-          description: Props given to the panel
-          type:
-            - office-ui-fabric-react.IPanelProps
-        - id: defaultRender
-          description: >-
-            Default header renderer. If using this renderer in code that does not assign `headerTextId` to an element
-            elsewhere, it \*\*must\*\* be passed to this function.
-          type:
-            - office-ui-fabric-react.IPanelHeaderRenderer
-        - id: headerTextId
-          description: >-
-            If provided, this \*\*must\*\* be used as the ID of an element containing the panel's title, because the
-            panel popup uses this ID as its aria-labelledby.
-          type:
-            - string | undefined

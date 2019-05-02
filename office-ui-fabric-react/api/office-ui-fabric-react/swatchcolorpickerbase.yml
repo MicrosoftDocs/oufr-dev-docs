@@ -7,20 +7,18 @@ items:
       - typeScript
     type: class
     extends:
-      - office-ui-fabric-react.BaseComponent
-    implements:
-      - office-ui-fabric-react.ISwatchColorPicker
+      - 'React.Component<ISwatchColorPickerProps, ISwatchColorPickerState> '
     package: office-ui-fabric-react
     children:
-      - office-ui-fabric-react.SwatchColorPickerBase.constructor
+      - office-ui-fabric-react.SwatchColorPickerBase.(constructor)
       - office-ui-fabric-react.SwatchColorPickerBase.componentWillReceiveProps
       - office-ui-fabric-react.SwatchColorPickerBase.componentWillUnmount
       - office-ui-fabric-react.SwatchColorPickerBase.defaultProps
       - office-ui-fabric-react.SwatchColorPickerBase.render
-  - uid: office-ui-fabric-react.SwatchColorPickerBase.constructor
-    summary: 'Constructs a new instance of the [SwatchColorPickerBase](xref:office-ui-fabric-react.SwatchColorPickerBase) class'
-    name: constructor(props)
-    fullName: constructor
+  - uid: office-ui-fabric-react.SwatchColorPickerBase.(constructor)
+    summary: Constructs a new instance of the `SwatchColorPickerBase` class
+    name: (constructor)(props)
+    fullName: (constructor)(props)
     langs:
       - typeScript
     type: constructor
@@ -33,7 +31,7 @@ items:
             - office-ui-fabric-react.ISwatchColorPickerProps
   - uid: office-ui-fabric-react.SwatchColorPickerBase.componentWillReceiveProps
     name: componentWillReceiveProps(newProps)
-    fullName: componentWillReceiveProps
+    fullName: componentWillReceiveProps(newProps)
     langs:
       - typeScript
     type: method
@@ -50,7 +48,7 @@ items:
             - office-ui-fabric-react.ISwatchColorPickerProps
   - uid: office-ui-fabric-react.SwatchColorPickerBase.componentWillUnmount
     name: componentWillUnmount()
-    fullName: componentWillUnmount
+    fullName: componentWillUnmount()
     langs:
       - typeScript
     type: method
@@ -73,7 +71,7 @@ items:
           - office-ui-fabric-react.ISwatchColorPickerProps
   - uid: office-ui-fabric-react.SwatchColorPickerBase.render
     name: render()
-    fullName: render
+    fullName: render()
     langs:
       - typeScript
     type: method

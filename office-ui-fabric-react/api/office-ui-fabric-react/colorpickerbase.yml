@@ -7,17 +7,20 @@ items:
       - typeScript
     type: class
     extends:
-      - office-ui-fabric-react.BaseComponent
+      - 'BaseComponent<IColorPickerProps, IColorPickerState> '
+    implements:
+      - office-ui-fabric-react.IColorPicker
     package: office-ui-fabric-react
     children:
-      - office-ui-fabric-react.ColorPickerBase.constructor
+      - office-ui-fabric-react.ColorPickerBase.(constructor)
+      - office-ui-fabric-react.ColorPickerBase.color
       - office-ui-fabric-react.ColorPickerBase.componentWillReceiveProps
       - office-ui-fabric-react.ColorPickerBase.defaultProps
       - office-ui-fabric-react.ColorPickerBase.render
-  - uid: office-ui-fabric-react.ColorPickerBase.constructor
-    summary: 'Constructs a new instance of the [ColorPickerBase](xref:office-ui-fabric-react.ColorPickerBase) class'
-    name: constructor(props)
-    fullName: constructor
+  - uid: office-ui-fabric-react.ColorPickerBase.(constructor)
+    summary: Constructs a new instance of the `ColorPickerBase` class
+    name: (constructor)(props)
+    fullName: (constructor)(props)
     langs:
       - typeScript
     type: constructor
@@ -28,9 +31,20 @@ items:
           description: ''
           type:
             - office-ui-fabric-react.IColorPickerProps
+  - uid: office-ui-fabric-react.ColorPickerBase.color
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly color: IColor;'
+      return:
+        type:
+          - office-ui-fabric-react.IColor
   - uid: office-ui-fabric-react.ColorPickerBase.componentWillReceiveProps
     name: componentWillReceiveProps(newProps)
-    fullName: componentWillReceiveProps
+    fullName: componentWillReceiveProps(newProps)
     langs:
       - typeScript
     type: method
@@ -52,7 +66,14 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'static defaultProps:'
+      content: |-
+        static defaultProps: {
+                hexLabel: string;
+                redLabel: string;
+                greenLabel: string;
+                blueLabel: string;
+                alphaLabel: string;
+            };
       return:
         type:
           - |-
@@ -65,7 +86,7 @@ items:
                 }
   - uid: office-ui-fabric-react.ColorPickerBase.render
     name: render()
-    fullName: render
+    fullName: render()
     langs:
       - typeScript
     type: method

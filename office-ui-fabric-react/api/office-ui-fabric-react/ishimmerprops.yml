@@ -8,7 +8,7 @@ items:
       - typeScript
     type: interface
     extends:
-      - React.AllHTMLAttributes
+      - 'React.AllHTMLAttributes<HTMLElement> '
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.IShimmerProps.ariaLabel
@@ -16,6 +16,7 @@ items:
       - office-ui-fabric-react.IShimmerProps.componentRef
       - office-ui-fabric-react.IShimmerProps.customElementsGroup
       - office-ui-fabric-react.IShimmerProps.isDataLoaded
+      - office-ui-fabric-react.IShimmerProps.shimmerColors
       - office-ui-fabric-react.IShimmerProps.shimmerElements
       - office-ui-fabric-react.IShimmerProps.styles
       - office-ui-fabric-react.IShimmerProps.theme
@@ -82,6 +83,18 @@ items:
       return:
         type:
           - boolean
+  - uid: office-ui-fabric-react.IShimmerProps.shimmerColors
+    summary: Defines an object with possible colors to pass for Shimmer customization used on different backgrounds.
+    name: shimmerColors
+    fullName: shimmerColors
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'shimmerColors?: IShimmerColors;'
+      return:
+        type:
+          - office-ui-fabric-react.IShimmerColors
   - uid: office-ui-fabric-react.IShimmerProps.shimmerElements
     summary: Elements to render in one line of the Shimmer.
     name: shimmerElements
@@ -117,7 +130,7 @@ items:
       content: 'theme?: ITheme;'
       return:
         type:
-          - office-ui-fabric-react.ITheme
+          - styling.ITheme
   - uid: office-ui-fabric-react.IShimmerProps.width
     summary: Sets the width value of the shimmer wave wrapper.
     name: width

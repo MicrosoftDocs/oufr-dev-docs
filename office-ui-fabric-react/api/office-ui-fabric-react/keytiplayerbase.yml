@@ -8,10 +8,10 @@ items:
       - typeScript
     type: class
     extends:
-      - office-ui-fabric-react.BaseComponent
+      - 'BaseComponent<IKeytipLayerProps, IKeytipLayerState> '
     package: office-ui-fabric-react
     children:
-      - office-ui-fabric-react.KeytipLayerBase.constructor
+      - office-ui-fabric-react.KeytipLayerBase.(constructor)
       - office-ui-fabric-react.KeytipLayerBase.componentDidMount
       - office-ui-fabric-react.KeytipLayerBase.componentWillUnmount
       - office-ui-fabric-react.KeytipLayerBase.defaultProps
@@ -21,10 +21,10 @@ items:
       - office-ui-fabric-react.KeytipLayerBase.processTransitionInput
       - office-ui-fabric-react.KeytipLayerBase.render
       - office-ui-fabric-react.KeytipLayerBase.showKeytips
-  - uid: office-ui-fabric-react.KeytipLayerBase.constructor
-    summary: 'Constructs a new instance of the [KeytipLayerBase](xref:office-ui-fabric-react.KeytipLayerBase) class'
-    name: 'constructor(props, context)'
-    fullName: constructor
+  - uid: office-ui-fabric-react.KeytipLayerBase.(constructor)
+    summary: Constructs a new instance of the `KeytipLayerBase` class
+    name: '(constructor)(props, context)'
+    fullName: '(constructor)(props, context)'
     langs:
       - typeScript
     type: constructor
@@ -41,7 +41,7 @@ items:
             - any
   - uid: office-ui-fabric-react.KeytipLayerBase.componentDidMount
     name: componentDidMount()
-    fullName: componentDidMount
+    fullName: componentDidMount()
     langs:
       - typeScript
     type: method
@@ -53,7 +53,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.KeytipLayerBase.componentWillUnmount
     name: componentWillUnmount()
-    fullName: componentWillUnmount
+    fullName: componentWillUnmount()
     langs:
       - typeScript
     type: method
@@ -76,7 +76,7 @@ items:
           - office-ui-fabric-react.IKeytipLayerProps
   - uid: office-ui-fabric-react.KeytipLayerBase.getCurrentSequence
     name: getCurrentSequence()
-    fullName: getCurrentSequence
+    fullName: getCurrentSequence()
     langs:
       - typeScript
     type: method
@@ -88,7 +88,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.KeytipLayerBase.getKeytipTree
     name: getKeytipTree()
-    fullName: getKeytipTree
+    fullName: getKeytipTree()
     langs:
       - typeScript
     type: method
@@ -101,7 +101,7 @@ items:
   - uid: office-ui-fabric-react.KeytipLayerBase.processInput
     summary: Processes inputs from the document listener and traverse the keytip tree
     name: 'processInput(key, ev)'
-    fullName: processInput
+    fullName: 'processInput(key, ev)'
     langs:
       - typeScript
     type: method
@@ -123,7 +123,7 @@ items:
   - uid: office-ui-fabric-react.KeytipLayerBase.processTransitionInput
     summary: Processes an IKeytipTransitionKey entered by the user
     name: 'processTransitionInput(transitionKey, ev)'
-    fullName: processTransitionInput
+    fullName: 'processTransitionInput(transitionKey, ev)'
     langs:
       - typeScript
     type: method
@@ -144,7 +144,7 @@ items:
             - React.KeyboardEvent<HTMLElement>
   - uid: office-ui-fabric-react.KeytipLayerBase.render
     name: render()
-    fullName: render
+    fullName: render()
     langs:
       - typeScript
     type: method
@@ -157,7 +157,7 @@ items:
   - uid: office-ui-fabric-react.KeytipLayerBase.showKeytips
     summary: Show the given keytips and hide all others
     name: showKeytips(ids)
-    fullName: showKeytips
+    fullName: showKeytips(ids)
     langs:
       - typeScript
     type: method

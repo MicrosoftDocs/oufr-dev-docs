@@ -8,13 +8,14 @@ items:
       - typeScript
     type: interface
     extends:
-      - React.HTMLAttributes
+      - 'React.HTMLAttributes<HTMLElement | FocusZone> '
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.IFocusZoneProps.allowFocusRoot
       - office-ui-fabric-react.IFocusZoneProps.allowTabKey
       - office-ui-fabric-react.IFocusZoneProps.ariaDescribedBy
       - office-ui-fabric-react.IFocusZoneProps.ariaLabelledBy
+      - office-ui-fabric-react.IFocusZoneProps.as
       - office-ui-fabric-react.IFocusZoneProps.checkForNoWrap
       - office-ui-fabric-react.IFocusZoneProps.className
       - office-ui-fabric-react.IFocusZoneProps.componentRef
@@ -83,6 +84,18 @@ items:
       return:
         type:
           - string
+  - uid: office-ui-fabric-react.IFocusZoneProps.as
+    summary: A component that should be used as the root element of the FocusZone component.
+    name: as
+    fullName: as
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'as?: React.ReactType;'
+      return:
+        type:
+          - React.ReactType
   - uid: office-ui-fabric-react.IFocusZoneProps.checkForNoWrap
     summary: >-
       Whether the to check for data-no-horizontal-wrap or data-no-vertical-wrap attributes when determining how to move
@@ -175,16 +188,18 @@ items:
           - boolean
   - uid: office-ui-fabric-react.IFocusZoneProps.elementType
     summary: Element type the root element will use. Default is "div".
+    deprecated:
+      content: Use 'as' instead.
     name: elementType
     fullName: elementType
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'elementType?: keyof React.ReactHTML;'
+      content: 'elementType?: any;'
       return:
         type:
-          - keyof React.ReactHTML
+          - any
   - uid: office-ui-fabric-react.IFocusZoneProps.handleTabKey
     summary: >-
       Allows tab key to be handled to tab through a list of items in the focus zone, an unfortunate side effect is that
@@ -198,7 +213,7 @@ items:
       content: 'handleTabKey?: FocusZoneTabbableElements;'
       return:
         type:
-          - office-ui-fabric-react.FocusZoneTabbableElements
+          - FocusZoneTabbableElements
   - uid: office-ui-fabric-react.IFocusZoneProps.isCircularNavigation
     summary: >-
       If set, will cycle to the beginning of the targets once the user navigates to the next target while at the end,

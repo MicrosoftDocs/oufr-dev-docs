@@ -7,7 +7,7 @@ items:
       - typeScript
     type: interface
     extends:
-      - React.HTMLAttributes
+      - 'React.HTMLAttributes<HTMLDivElement> '
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.IFocusTrapZoneProps.ariaLabelledBy
@@ -70,7 +70,9 @@ items:
         type:
           - HTMLElement
   - uid: office-ui-fabric-react.IFocusTrapZoneProps.firstFocusableSelector
-    summary: Indicates the selector for first focusable item. Only applies if focusPreviouslyFocusedInnerElement == false.
+    summary: >-
+      Class name for first focusable item (do not append a dot). Only applies if `focusPreviouslyFocusedInnerElement` is
+      false.
     name: firstFocusableSelector
     fullName: firstFocusableSelector
     langs:

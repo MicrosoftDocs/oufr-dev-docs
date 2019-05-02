@@ -7,7 +7,7 @@ items:
       - typeScript
     type: interface
     extends:
-      - React.InputHTMLAttributes
+      - 'React.InputHTMLAttributes<HTMLElement | HTMLInputElement> '
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.IChoiceGroupProps.ariaLabelledBy
@@ -145,4 +145,4 @@ items:
       content: 'theme?: ITheme;'
       return:
         type:
-          - office-ui-fabric-react.ITheme
+          - styling.ITheme

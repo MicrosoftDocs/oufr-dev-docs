@@ -7,7 +7,7 @@ items:
       - typeScript
     type: interface
     extends:
-      - React.InputHTMLAttributes
+      - 'React.InputHTMLAttributes<HTMLInputElement> '
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.ISearchBoxProps.ariaLabel
@@ -80,10 +80,10 @@ items:
           - IRefObject<ISearchBox>
   - uid: office-ui-fabric-react.ISearchBoxProps.defaultValue
     summary: >-
-      The default value of the text in the SearchBox, in the case of an uncontrolled component. Up till now, this has
-      not been implemented, deprecating. Will re-implement if uncontrolled component behavior is implemented.
+      The default value of the text in the SearchBox, in the case of an uncontrolled component. This prop is being
+      deprecated since so far, uncontrolled behavior has not been implemented.
     deprecated:
-      content: Not implmented.
+      content: Not implemented.
     name: defaultValue
     fullName: defaultValue
     langs:
@@ -219,7 +219,7 @@ items:
         type:
           - 'IStyleFunctionOrObject<ISearchBoxStyleProps, ISearchBoxStyles>'
   - uid: office-ui-fabric-react.ISearchBoxProps.theme
-    summary: Theme (provided through customization.)
+    summary: Theme (provided through customization).
     name: theme
     fullName: theme
     langs:
@@ -229,7 +229,7 @@ items:
       content: 'theme?: ITheme;'
       return:
         type:
-          - office-ui-fabric-react.ITheme
+          - styling.ITheme
   - uid: office-ui-fabric-react.ISearchBoxProps.underlined
     summary: Whether or not the SearchBox is underlined.
     name: underlined

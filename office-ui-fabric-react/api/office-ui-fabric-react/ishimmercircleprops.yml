@@ -8,7 +8,7 @@ items:
       - typeScript
     type: interface
     extends:
-      - React.AllHTMLAttributes
+      - 'React.AllHTMLAttributes<HTMLElement> '
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.IShimmerCircleProps.borderStyle
@@ -29,7 +29,7 @@ items:
       content: 'borderStyle?: IRawStyle;'
       return:
         type:
-          - office-ui-fabric-react.IRawStyle
+          - merge-styles.IRawStyle
   - uid: office-ui-fabric-react.IShimmerCircleProps.componentRef
     summary: >-
       Optional callback to access the IShimmerCircle interface. Use this instead of ref for accessing the public methods
@@ -79,4 +79,4 @@ items:
       content: 'theme?: ITheme;'
       return:
         type:
-          - office-ui-fabric-react.ITheme
+          - styling.ITheme

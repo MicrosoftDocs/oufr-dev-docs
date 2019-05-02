@@ -10,6 +10,7 @@ items:
     children:
       - office-ui-fabric-react.ICheckboxStyles.checkbox
       - office-ui-fabric-react.ICheckboxStyles.checkmark
+      - office-ui-fabric-react.ICheckboxStyles.input
       - office-ui-fabric-react.ICheckboxStyles.label
       - office-ui-fabric-react.ICheckboxStyles.root
       - office-ui-fabric-react.ICheckboxStyles.text
@@ -34,6 +35,20 @@ items:
     type: property
     syntax:
       content: 'checkmark?: IStyle;'
+      return:
+        type:
+          - IStyle
+  - uid: office-ui-fabric-react.ICheckboxStyles.input
+    summary: >-
+      INTERNAL: This is mostly an internal implementation detail which you should avoid styling. This refers to the
+      <input type="checkbox"> element that is typically hidden and not rendered on screen.
+    name: input
+    fullName: input
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'input?: IStyle;'
       return:
         type:
           - IStyle

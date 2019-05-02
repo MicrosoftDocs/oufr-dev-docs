@@ -7,12 +7,11 @@ items:
       - typeScript
     type: class
     extends:
-      - office-ui-fabric-react.BaseComponent
+      - ''
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.CheckBase.defaultProps
       - office-ui-fabric-react.CheckBase.render
-      - office-ui-fabric-react.CheckBase.shouldComponentUpdate
   - uid: office-ui-fabric-react.CheckBase.defaultProps
     name: defaultProps
     fullName: defaultProps
@@ -26,7 +25,7 @@ items:
           - office-ui-fabric-react.ICheckProps
   - uid: office-ui-fabric-react.CheckBase.render
     name: render()
-    fullName: render
+    fullName: render()
     langs:
       - typeScript
     type: method
@@ -36,20 +35,3 @@ items:
         type:
           - JSX.Element
         description: ''
-  - uid: office-ui-fabric-react.CheckBase.shouldComponentUpdate
-    name: shouldComponentUpdate(newProps)
-    fullName: shouldComponentUpdate
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'shouldComponentUpdate(newProps: ICheckProps): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-      parameters:
-        - id: newProps
-          description: ''
-          type:
-            - office-ui-fabric-react.ICheckProps
