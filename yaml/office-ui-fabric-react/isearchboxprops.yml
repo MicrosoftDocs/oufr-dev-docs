@@ -1,0 +1,256 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office-ui-fabric-react.ISearchBoxProps
+    name: ISearchBoxProps
+    fullName: ISearchBoxProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'React.InputHTMLAttributes<HTMLInputElement> '
+    package: office-ui-fabric-react
+    children:
+      - office-ui-fabric-react.ISearchBoxProps.ariaLabel
+      - office-ui-fabric-react.ISearchBoxProps.className
+      - office-ui-fabric-react.ISearchBoxProps.clearButtonProps
+      - office-ui-fabric-react.ISearchBoxProps.componentRef
+      - office-ui-fabric-react.ISearchBoxProps.defaultValue
+      - office-ui-fabric-react.ISearchBoxProps.disableAnimation
+      - office-ui-fabric-react.ISearchBoxProps.iconProps
+      - office-ui-fabric-react.ISearchBoxProps.labelText
+      - office-ui-fabric-react.ISearchBoxProps.onChange
+      - office-ui-fabric-react.ISearchBoxProps.onChanged
+      - office-ui-fabric-react.ISearchBoxProps.onClear
+      - office-ui-fabric-react.ISearchBoxProps.onEscape
+      - office-ui-fabric-react.ISearchBoxProps.onSearch
+      - office-ui-fabric-react.ISearchBoxProps.placeholder
+      - office-ui-fabric-react.ISearchBoxProps.styles
+      - office-ui-fabric-react.ISearchBoxProps.theme
+      - office-ui-fabric-react.ISearchBoxProps.underlined
+      - office-ui-fabric-react.ISearchBoxProps.value
+  - uid: office-ui-fabric-react.ISearchBoxProps.ariaLabel
+    summary: The aria label of the SearchBox for the benefit of screen readers.
+    name: ariaLabel
+    fullName: ariaLabel
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'ariaLabel?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.ISearchBoxProps.className
+    summary: CSS class to apply to the SearchBox.
+    name: className
+    fullName: className
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'className?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.ISearchBoxProps.clearButtonProps
+    summary: The props for the clear button.
+    name: clearButtonProps
+    fullName: clearButtonProps
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'clearButtonProps?: IButtonProps;'
+      return:
+        type:
+          - office-ui-fabric-react.IButtonProps
+  - uid: office-ui-fabric-react.ISearchBoxProps.componentRef
+    summary: >-
+      Optional callback to access the ISearchBox interface. Use this instead of ref for accessing the public methods and
+      properties of the component.
+    name: componentRef
+    fullName: componentRef
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'componentRef?: IRefObject<ISearchBox>;'
+      return:
+        type:
+          - IRefObject<ISearchBox>
+  - uid: office-ui-fabric-react.ISearchBoxProps.defaultValue
+    summary: >-
+      The default value of the text in the SearchBox, in the case of an uncontrolled component. This prop is being
+      deprecated since so far, uncontrolled behavior has not been implemented.
+    deprecated:
+      content: Not implemented.
+    name: defaultValue
+    fullName: defaultValue
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'defaultValue?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.ISearchBoxProps.disableAnimation
+    summary: Whether or not to animate the SearchBox icon on focus.
+    name: disableAnimation
+    fullName: disableAnimation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'disableAnimation?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-ui-fabric-react.ISearchBoxProps.iconProps
+    summary: The props for the icon.
+    name: iconProps
+    fullName: iconProps
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'iconProps?: Pick<IIconProps, Exclude<keyof IIconProps, ''className''>>;'
+      return:
+        type:
+          - 'Pick<IIconProps, Exclude<keyof IIconProps, ''className''>>'
+  - uid: office-ui-fabric-react.ISearchBoxProps.labelText
+    summary: Deprecated. Use `placeholder` instead.
+    deprecated:
+      content: Use `placeholder` instead.
+    name: labelText
+    fullName: labelText
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'labelText?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.ISearchBoxProps.onChange
+    summary: Callback function for when the typed input for the SearchBox has changed.
+    name: onChange
+    fullName: onChange
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onChange?: (newValue: any) => void;'
+      return:
+        type:
+          - '(newValue: any) => void'
+  - uid: office-ui-fabric-react.ISearchBoxProps.onChanged
+    summary: 'Deprecated at v0.52.2, use `onChange` instead.'
+    deprecated:
+      content: Use `onChange` instead.
+    name: onChanged
+    fullName: onChanged
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onChanged?: (newValue: any) => void;'
+      return:
+        type:
+          - '(newValue: any) => void'
+  - uid: office-ui-fabric-react.ISearchBoxProps.onClear
+    summary: Callback executed when the user clears the search box by either clicking 'X' or hitting escape.
+    name: onClear
+    fullName: onClear
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onClear?: (ev?: any) => void;'
+      return:
+        type:
+          - '(ev?: any) => void'
+  - uid: office-ui-fabric-react.ISearchBoxProps.onEscape
+    summary: Callback executed when the user presses escape in the search box.
+    name: onEscape
+    fullName: onEscape
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onEscape?: (ev?: any) => void;'
+      return:
+        type:
+          - '(ev?: any) => void'
+  - uid: office-ui-fabric-react.ISearchBoxProps.onSearch
+    summary: Callback executed when the user presses enter in the search box.
+    name: onSearch
+    fullName: onSearch
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onSearch?: (newValue: any) => void;'
+      return:
+        type:
+          - '(newValue: any) => void'
+  - uid: office-ui-fabric-react.ISearchBoxProps.placeholder
+    summary: Placeholder for the search box.
+    name: placeholder
+    fullName: placeholder
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'placeholder?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.ISearchBoxProps.styles
+    summary: Call to provide customized styling that will layer on top of the variant rules.
+    name: styles
+    fullName: styles
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'styles?: IStyleFunctionOrObject<ISearchBoxStyleProps, ISearchBoxStyles>;'
+      return:
+        type:
+          - 'IStyleFunctionOrObject<ISearchBoxStyleProps, ISearchBoxStyles>'
+  - uid: office-ui-fabric-react.ISearchBoxProps.theme
+    summary: Theme (provided through customization).
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type:
+          - styling.ITheme
+  - uid: office-ui-fabric-react.ISearchBoxProps.underlined
+    summary: Whether or not the SearchBox is underlined.
+    name: underlined
+    fullName: underlined
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'underlined?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-ui-fabric-react.ISearchBoxProps.value
+    summary: The value of the text in the SearchBox.
+    name: value
+    fullName: value
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'value?: string;'
+      return:
+        type:
+          - string

@@ -1,0 +1,782 @@
+### YamlMime:UniversalReference
+items:
+  - uid: styling.ISemanticColors
+    summary: >-
+      The collection of all semantic slots for colors used in themes.
+
+
+      Note: text colors are defined in ISemanticTextColors.ts.
+
+
+      \#\# Naming Convention
+
+
+      The name of a semantic slot can quickly tell you how it’s meant to be used. It generally follows this format:
+
+
+      \[category name\]\[element name\]\[checked state\]\[hovered/pressed/disabled state\] \[category name\] – The
+      “family” that this slot belongs to. \[element name\] – The name of the thing being targeted, such as the
+      background or border. \[checked state\] – Whether the thing is checked. We assume things are unchecked by default,
+      so no need to specify the unchecked state. (We used “checked” to refer to anything that is on, selected, toggled,
+      highlighted, emphasized, etc.) \[hovered/pressed/disabled state\] – One of these states, if applicable. Each of
+      these states are mutually exclusive. Pressed styles overwrite hovered styles, and disabled elements cannot be
+      hovered or pressed.
+
+
+      \#\# Base Slots
+
+
+      A basic set of slots that provide many default body styles, such as text, subtext, disabled colors, and so on. If
+      a category doesn't provide the slot you're looking for, use one from this category. For example, the placeholder
+      text on a text input field has no corresponding slot in its category, so you'd use the bodySubtextColor from this
+      category.
+
+
+      \#\# Invariants
+
+
+      When color has meaning, we do not want to change the color much theme to theme. For example, we will always want
+      errors to be some shade of red, but we will need to tweak the exact shade so it's legible depending on whether
+      it's an inverted theme or not. Invariant colors should almost never be changed by the theme, the defaults should
+      suffice.
+
+
+      \#\# Input Controls
+
+
+      This category contains input components commonly used to denote state, including radio buttons, check boxes,
+      toggle switches, sliders, progress bars, and more.
+
+
+      \#\# Buttons
+
+
+      Buttons! And all the flavors thereof.
+
+
+      \#\# Menus
+
+
+      Any kind of popup menus uses this category.
+
+
+      \#\# Lists
+
+
+      Lists differ from menus in that they are designed to show infinite amounts of items, often scroll, and have a
+      large and complex interaction surface. This category covers all kinds of lists, whether they're typical
+      one-item-per-row lists (like DetailsList) or ones with a tiled layout.
+    name: ISemanticColors
+    fullName: ISemanticColors
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - styling.ISemanticTextColors
+    package: styling
+    children:
+      - styling.ISemanticColors.accentButtonBackground
+      - styling.ISemanticColors.blockingBackground
+      - styling.ISemanticColors.bodyBackground
+      - styling.ISemanticColors.bodyDivider
+      - styling.ISemanticColors.bodyFrameBackground
+      - styling.ISemanticColors.bodyFrameDivider
+      - styling.ISemanticColors.bodyStandoutBackground
+      - styling.ISemanticColors.buttonBackground
+      - styling.ISemanticColors.buttonBackgroundChecked
+      - styling.ISemanticColors.buttonBackgroundCheckedHovered
+      - styling.ISemanticColors.buttonBackgroundDisabled
+      - styling.ISemanticColors.buttonBackgroundHovered
+      - styling.ISemanticColors.buttonBackgroundPressed
+      - styling.ISemanticColors.buttonBorder
+      - styling.ISemanticColors.buttonBorderDisabled
+      - styling.ISemanticColors.defaultStateBackground
+      - styling.ISemanticColors.disabledBackground
+      - styling.ISemanticColors.errorBackground
+      - styling.ISemanticColors.focusBorder
+      - styling.ISemanticColors.inputBackground
+      - styling.ISemanticColors.inputBackgroundChecked
+      - styling.ISemanticColors.inputBackgroundCheckedHovered
+      - styling.ISemanticColors.inputBorder
+      - styling.ISemanticColors.inputBorderHovered
+      - styling.ISemanticColors.inputFocusBorderAlt
+      - styling.ISemanticColors.inputForegroundChecked
+      - styling.ISemanticColors.listBackground
+      - styling.ISemanticColors.listHeaderBackgroundHovered
+      - styling.ISemanticColors.listHeaderBackgroundPressed
+      - styling.ISemanticColors.listItemBackgroundChecked
+      - styling.ISemanticColors.listItemBackgroundCheckedHovered
+      - styling.ISemanticColors.listItemBackgroundHovered
+      - styling.ISemanticColors.listText
+      - styling.ISemanticColors.menuBackground
+      - styling.ISemanticColors.menuDivider
+      - styling.ISemanticColors.menuHeader
+      - styling.ISemanticColors.menuIcon
+      - styling.ISemanticColors.menuItemBackgroundChecked
+      - styling.ISemanticColors.menuItemBackgroundHovered
+      - styling.ISemanticColors.menuItemBackgroundPressed
+      - styling.ISemanticColors.menuItemText
+      - styling.ISemanticColors.menuItemTextHovered
+      - styling.ISemanticColors.primaryButtonBackground
+      - styling.ISemanticColors.primaryButtonBackgroundDisabled
+      - styling.ISemanticColors.primaryButtonBackgroundHovered
+      - styling.ISemanticColors.primaryButtonBackgroundPressed
+      - styling.ISemanticColors.primaryButtonBorder
+      - styling.ISemanticColors.smallInputBorder
+      - styling.ISemanticColors.successBackground
+      - styling.ISemanticColors.variantBorder
+      - styling.ISemanticColors.variantBorderHovered
+      - styling.ISemanticColors.warningBackground
+      - styling.ISemanticColors.warningHighlight
+  - uid: styling.ISemanticColors.accentButtonBackground
+    summary: Background of an accent button (kicker)
+    name: accentButtonBackground
+    fullName: accentButtonBackground
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'accentButtonBackground: string;'
+      return:
+        type:
+          - string
+  - uid: styling.ISemanticColors.blockingBackground
+    summary: 'Background for blocking issues, which is more severe than a warning, but not as bad as an error.'
+    name: blockingBackground
+    fullName: blockingBackground
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'blockingBackground: string;'
+      return:
+        type:
+          - string
+  - uid: styling.ISemanticColors.bodyBackground
+    summary: The default color for backgrounds.
+    name: bodyBackground
+    fullName: bodyBackground
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'bodyBackground: string;'
+      return:
+        type:
+          - string
+  - uid: styling.ISemanticColors.bodyDivider
+    summary: 'Divider lines; e.g. lines that separate sections in a menu, an <HR> element.'
+    name: bodyDivider
+    fullName: bodyDivider
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'bodyDivider: string;'
+      return:
+        type:
+          - string
+  - uid: styling.ISemanticColors.bodyFrameBackground
+    summary: >-
+      The color for chrome adjacent to an area with bodyBackground. This can be used to provide visual separation of
+      zones when using stronger colors, when using a divider line is not desired. In most themes, this should match the
+      color of bodyBackground. See also: bodyFrameDivider
+    name: bodyFrameBackground
+    fullName: bodyFrameBackground
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'bodyFrameBackground: string;'
+      return:
+        type:
+          - string
+  - uid: styling.ISemanticColors.bodyFrameDivider
+    summary: >-
+      Used as the border between a zone with bodyFrameBackground and a zone with bodyBackground. If bodyBackground and
+      bodyFrameBackground are different, this should be the same color as bodyFrameBackground in order to visually
+      disappear. See also: bodyFrameBackground
+    name: bodyFrameDivider
+    fullName: bodyFrameDivider
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'bodyFrameDivider: string;'
+      return:
+        type:
+          - string
+  - uid: styling.ISemanticColors.bodyStandoutBackground
+    summary: >-
+      The standout color for highlighted content backgrounds. For highlighted content when there is no emphasis, use the
+      neutral variant instead. This should be a shade darker than bodyBackground in light themes, and a shade lighter in
+      inverted themes.
+    name: bodyStandoutBackground
+    fullName: bodyStandoutBackground
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'bodyStandoutBackground: string;'
+      return:
+        type:
+          - string
+  - uid: styling.ISemanticColors.buttonBackground
+    summary: Background of a standard button
+    name: buttonBackground
+    fullName: buttonBackground
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'buttonBackground: string;'
+      return:
+        type:
+          - string
+  - uid: styling.ISemanticColors.buttonBackgroundChecked
+    summary: Background of a checked standard button; e.g. bold/italicize/underline text button in toolbar
+    name: buttonBackgroundChecked
+    fullName: buttonBackgroundChecked
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'buttonBackgroundChecked: string;'
+      return:
+        type:
+          - string
+  - uid: styling.ISemanticColors.buttonBackgroundCheckedHovered
+    summary: Background of a checked and hovered standard button; e.g. bold/italicize/underline text button in toolbar
+    name: buttonBackgroundCheckedHovered
+    fullName: buttonBackgroundCheckedHovered
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'buttonBackgroundCheckedHovered: string;'
+      return:
+        type:
+          - string
+  - uid: styling.ISemanticColors.buttonBackgroundDisabled
+    summary: Background of a disabled standard button
+    name: buttonBackgroundDisabled
+    fullName: buttonBackgroundDisabled
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'buttonBackgroundDisabled: string;'
+      return:
+        type:
+          - string
+  - uid: styling.ISemanticColors.buttonBackgroundHovered
+    summary: Background of a hovered standard button
+    name: buttonBackgroundHovered
+    fullName: buttonBackgroundHovered
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'buttonBackgroundHovered: string;'
+      return:
+        type:
+          - string
+  - uid: styling.ISemanticColors.buttonBackgroundPressed
+    summary: Background of a pressed standard button; i.e. currently being clicked by mouse
+    name: buttonBackgroundPressed
+    fullName: buttonBackgroundPressed
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'buttonBackgroundPressed: string;'
+      return:
+        type:
+          - string
+  - uid: styling.ISemanticColors.buttonBorder
+    summary: Border of a standard button
+    name: buttonBorder
+    fullName: buttonBorder
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'buttonBorder: string;'
+      return:
+        type:
+          - string
+  - uid: styling.ISemanticColors.buttonBorderDisabled
+    summary: Border of a disabled standard button
+    name: buttonBorderDisabled
+    fullName: buttonBorderDisabled
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'buttonBorderDisabled: string;'
+      return:
+        type:
+          - string
+  - uid: styling.ISemanticColors.defaultStateBackground
+    summary: >-
+      Background color for default/empty state graphical elements; eg default icons, empty section that needs user to
+      fill in content, placeholder graphics, empty seats, etc.
+    name: defaultStateBackground
+    fullName: defaultStateBackground
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'defaultStateBackground: string;'
+      return:
+        type:
+          - string
+  - uid: styling.ISemanticColors.disabledBackground
+    summary: The default color for backgrounds of disabled controls; e.g. disabled text field.
+    name: disabledBackground
+    fullName: disabledBackground
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'disabledBackground: string;'
+      return:
+        type:
+          - string
+  - uid: styling.ISemanticColors.errorBackground
+    summary: 'The background for errors, if necessary, or highlighting the section of the page where the error is present.'
+    name: errorBackground
+    fullName: errorBackground
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'errorBackground: string;'
+      return:
+        type:
+          - string
+  - uid: styling.ISemanticColors.focusBorder
+    summary: The color of the outline around focused controls that don't already have a border; e.g. menu items
+    name: focusBorder
+    fullName: focusBorder
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'focusBorder: string;'
+      return:
+        type:
+          - string
+  - uid: styling.ISemanticColors.inputBackground
+    summary: 'The background color of an input, e.g. textbox background.'
+    name: inputBackground
+    fullName: inputBackground
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'inputBackground: string;'
+      return:
+        type:
+          - string
+  - uid: styling.ISemanticColors.inputBackgroundChecked
+    summary: 'The background of a checked control; e.g. checked radio button''s dot, checked toggle''s background.'
+    name: inputBackgroundChecked
+    fullName: inputBackgroundChecked
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'inputBackgroundChecked: string;'
+      return:
+        type:
+          - string
+  - uid: styling.ISemanticColors.inputBackgroundCheckedHovered
+    summary: The background of a checked and hovered control; e.g. checked checkbox's background color on hover.
+    name: inputBackgroundCheckedHovered
+    fullName: inputBackgroundCheckedHovered
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'inputBackgroundCheckedHovered: string;'
+      return:
+        type:
+          - string
+  - uid: styling.ISemanticColors.inputBorder
+    summary: 'The border of a large input control in its resting, state; e.g. the box of dropdown.'
+    name: inputBorder
+    fullName: inputBorder
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'inputBorder: string;'
+      return:
+        type:
+          - string
+  - uid: styling.ISemanticColors.inputBorderHovered
+    summary: 'The border color of a large hovered input control, such as textbox.'
+    name: inputBorderHovered
+    fullName: inputBorderHovered
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'inputBorderHovered: string;'
+      return:
+        type:
+          - string
+  - uid: styling.ISemanticColors.inputFocusBorderAlt
+    summary: The alternate focus border color for elements that already have a border; e.g. text field borders on focus.
+    name: inputFocusBorderAlt
+    fullName: inputFocusBorderAlt
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'inputFocusBorderAlt: string;'
+      return:
+        type:
+          - string
+  - uid: styling.ISemanticColors.inputForegroundChecked
+    summary: >-
+      The foreground of a checked control; e.g. checked checkbox's checkmark color, checked toggle's thumb color, radio
+      button's background color around the dot.
+    name: inputForegroundChecked
+    fullName: inputForegroundChecked
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'inputForegroundChecked: string;'
+      return:
+        type:
+          - string
+  - uid: styling.ISemanticColors.listBackground
+    summary: The background color for the entire list.
+    name: listBackground
+    fullName: listBackground
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'listBackground: string;'
+      return:
+        type:
+          - string
+  - uid: styling.ISemanticColors.listHeaderBackgroundHovered
+    summary: The background color for a hovered list header.
+    name: listHeaderBackgroundHovered
+    fullName: listHeaderBackgroundHovered
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'listHeaderBackgroundHovered: string;'
+      return:
+        type:
+          - string
+  - uid: styling.ISemanticColors.listHeaderBackgroundPressed
+    summary: The background color for a pressed list header.
+    name: listHeaderBackgroundPressed
+    fullName: listHeaderBackgroundPressed
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'listHeaderBackgroundPressed: string;'
+      return:
+        type:
+          - string
+  - uid: styling.ISemanticColors.listItemBackgroundChecked
+    summary: The background color of a checked list item.
+    name: listItemBackgroundChecked
+    fullName: listItemBackgroundChecked
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'listItemBackgroundChecked: string;'
+      return:
+        type:
+          - string
+  - uid: styling.ISemanticColors.listItemBackgroundCheckedHovered
+    summary: The background color of a checked and hovered list item.
+    name: listItemBackgroundCheckedHovered
+    fullName: listItemBackgroundCheckedHovered
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'listItemBackgroundCheckedHovered: string;'
+      return:
+        type:
+          - string
+  - uid: styling.ISemanticColors.listItemBackgroundHovered
+    summary: The background color of a hovered list item.
+    name: listItemBackgroundHovered
+    fullName: listItemBackgroundHovered
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'listItemBackgroundHovered: string;'
+      return:
+        type:
+          - string
+  - uid: styling.ISemanticColors.listText
+    summary: The default text color for list item titles and text in column fields.
+    name: listText
+    fullName: listText
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'listText: string;'
+      return:
+        type:
+          - string
+  - uid: styling.ISemanticColors.menuBackground
+    summary: The background of a menu.
+    name: menuBackground
+    fullName: menuBackground
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'menuBackground: string;'
+      return:
+        type:
+          - string
+  - uid: styling.ISemanticColors.menuDivider
+    summary: The divider between menu items.
+    name: menuDivider
+    fullName: menuDivider
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'menuDivider: string;'
+      return:
+        type:
+          - string
+  - uid: styling.ISemanticColors.menuHeader
+    summary: The headers in menus that denote title of a section.
+    name: menuHeader
+    fullName: menuHeader
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'menuHeader: string;'
+      return:
+        type:
+          - string
+  - uid: styling.ISemanticColors.menuIcon
+    summary: The default colors of icons in menus.
+    name: menuIcon
+    fullName: menuIcon
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'menuIcon: string;'
+      return:
+        type:
+          - string
+  - uid: styling.ISemanticColors.menuItemBackgroundChecked
+    deprecated:
+      content: >-
+        (Checked menu items no longer get a background color.) The background of checked menu item; e.g. a menu item
+        whose submenu is open, a selected dropdown item.
+    name: menuItemBackgroundChecked
+    fullName: menuItemBackgroundChecked
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'menuItemBackgroundChecked: string;'
+      return:
+        type:
+          - string
+  - uid: styling.ISemanticColors.menuItemBackgroundHovered
+    summary: The background of a hovered menu item.
+    name: menuItemBackgroundHovered
+    fullName: menuItemBackgroundHovered
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'menuItemBackgroundHovered: string;'
+      return:
+        type:
+          - string
+  - uid: styling.ISemanticColors.menuItemBackgroundPressed
+    summary: The background of a pressed menu item.
+    name: menuItemBackgroundPressed
+    fullName: menuItemBackgroundPressed
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'menuItemBackgroundPressed: string;'
+      return:
+        type:
+          - string
+  - uid: styling.ISemanticColors.menuItemText
+    summary: The text color of a menu item.
+    name: menuItemText
+    fullName: menuItemText
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'menuItemText: string;'
+      return:
+        type:
+          - string
+  - uid: styling.ISemanticColors.menuItemTextHovered
+    summary: The text color of a hovered menu item.
+    name: menuItemTextHovered
+    fullName: menuItemTextHovered
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'menuItemTextHovered: string;'
+      return:
+        type:
+          - string
+  - uid: styling.ISemanticColors.primaryButtonBackground
+    summary: Background of a primary button
+    name: primaryButtonBackground
+    fullName: primaryButtonBackground
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'primaryButtonBackground: string;'
+      return:
+        type:
+          - string
+  - uid: styling.ISemanticColors.primaryButtonBackgroundDisabled
+    summary: Background of a disabled primary button
+    name: primaryButtonBackgroundDisabled
+    fullName: primaryButtonBackgroundDisabled
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'primaryButtonBackgroundDisabled: string;'
+      return:
+        type:
+          - string
+  - uid: styling.ISemanticColors.primaryButtonBackgroundHovered
+    summary: Background of a hovered primary button
+    name: primaryButtonBackgroundHovered
+    fullName: primaryButtonBackgroundHovered
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'primaryButtonBackgroundHovered: string;'
+      return:
+        type:
+          - string
+  - uid: styling.ISemanticColors.primaryButtonBackgroundPressed
+    summary: Background of a pressed primary button; i.e. currently being clicked by mouse
+    name: primaryButtonBackgroundPressed
+    fullName: primaryButtonBackgroundPressed
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'primaryButtonBackgroundPressed: string;'
+      return:
+        type:
+          - string
+  - uid: styling.ISemanticColors.primaryButtonBorder
+    summary: Border of a primary button
+    name: primaryButtonBorder
+    fullName: primaryButtonBorder
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'primaryButtonBorder: string;'
+      return:
+        type:
+          - string
+  - uid: styling.ISemanticColors.smallInputBorder
+    summary: The border of a small input control in its resting unchecked state; e.g. the box of an unchecked checkbox.
+    name: smallInputBorder
+    fullName: smallInputBorder
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'smallInputBorder: string;'
+      return:
+        type:
+          - string
+  - uid: styling.ISemanticColors.successBackground
+    summary: Background for success
+    name: successBackground
+    fullName: successBackground
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'successBackground: string;'
+      return:
+        type:
+          - string
+  - uid: styling.ISemanticColors.variantBorder
+    summary: 'The color of the border that provides contrast between an element, such as a card, and an emphasized background.'
+    name: variantBorder
+    fullName: variantBorder
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'variantBorder: string;'
+      return:
+        type:
+          - string
+  - uid: styling.ISemanticColors.variantBorderHovered
+    summary: 'Hover color of border that provides contrast between an element, such as a card, and an emphasized background.'
+    name: variantBorderHovered
+    fullName: variantBorderHovered
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'variantBorderHovered: string;'
+      return:
+        type:
+          - string
+  - uid: styling.ISemanticColors.warningBackground
+    summary: Background for warning messages.
+    name: warningBackground
+    fullName: warningBackground
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'warningBackground: string;'
+      return:
+        type:
+          - string
+  - uid: styling.ISemanticColors.warningHighlight
+    summary: Foreground color for warning highlights
+    name: warningHighlight
+    fullName: warningHighlight
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'warningHighlight: string;'
+      return:
+        type:
+          - string

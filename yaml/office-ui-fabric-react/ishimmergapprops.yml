@@ -1,0 +1,95 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office-ui-fabric-react.IShimmerGapProps
+    summary: ShimmerGap component props.
+    name: IShimmerGapProps
+    fullName: IShimmerGapProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'React.AllHTMLAttributes<HTMLElement> '
+    package: office-ui-fabric-react
+    children:
+      - office-ui-fabric-react.IShimmerGapProps.borderStyle
+      - office-ui-fabric-react.IShimmerGapProps.componentRef
+      - office-ui-fabric-react.IShimmerGapProps.height
+      - office-ui-fabric-react.IShimmerGapProps.styles
+      - office-ui-fabric-react.IShimmerGapProps.theme
+      - office-ui-fabric-react.IShimmerGapProps.width
+  - uid: office-ui-fabric-react.IShimmerGapProps.borderStyle
+    summary: Use to set custom styling of the shimmerGap borders.
+    deprecated:
+      content: Use `styles` prop to leverage mergeStyle API.
+    name: borderStyle
+    fullName: borderStyle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'borderStyle?: IRawStyle;'
+      return:
+        type:
+          - merge-styles.IRawStyle
+  - uid: office-ui-fabric-react.IShimmerGapProps.componentRef
+    summary: >-
+      Optional callback to access the IShimmerGap interface. Use this instead of ref for accessing the public methods
+      and properties of the component.
+    name: componentRef
+    fullName: componentRef
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'componentRef?: IRefObject<IShimmerGap>;'
+      return:
+        type:
+          - IRefObject<IShimmerGap>
+  - uid: office-ui-fabric-react.IShimmerGapProps.height
+    summary: Sets the height of the gap.
+    name: height
+    fullName: height
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'height?: number;'
+      return:
+        type:
+          - number
+  - uid: office-ui-fabric-react.IShimmerGapProps.styles
+    summary: Call to provide customized styling that will layer on top of the variant rules.
+    name: styles
+    fullName: styles
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'styles?: IStyleFunctionOrObject<IShimmerGapStyleProps, IShimmerGapStyles>;'
+      return:
+        type:
+          - 'IStyleFunctionOrObject<IShimmerGapStyleProps, IShimmerGapStyles>'
+  - uid: office-ui-fabric-react.IShimmerGapProps.theme
+    summary: Theme provided by High-Order Component.
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type:
+          - styling.ITheme
+  - uid: office-ui-fabric-react.IShimmerGapProps.width
+    summary: Sets width value of the gap.
+    name: width
+    fullName: width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'width?: number | string;'
+      return:
+        type:
+          - number | string

@@ -1,0 +1,154 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office-ui-fabric-react.IDocumentCardProps
+    name: IDocumentCardProps
+    fullName: IDocumentCardProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - IBaseProps<IDocumentCard>
+      - 'React.HTMLAttributes<HTMLDivElement> '
+    package: office-ui-fabric-react
+    children:
+      - office-ui-fabric-react.IDocumentCardProps.accentColor
+      - office-ui-fabric-react.IDocumentCardProps.children
+      - office-ui-fabric-react.IDocumentCardProps.className
+      - office-ui-fabric-react.IDocumentCardProps.componentRef
+      - office-ui-fabric-react.IDocumentCardProps.onClick
+      - office-ui-fabric-react.IDocumentCardProps.onClickHref
+      - office-ui-fabric-react.IDocumentCardProps.role
+      - office-ui-fabric-react.IDocumentCardProps.styles
+      - office-ui-fabric-react.IDocumentCardProps.theme
+      - office-ui-fabric-react.IDocumentCardProps.type
+  - uid: office-ui-fabric-react.IDocumentCardProps.accentColor
+    summary: >-
+      Hex color value of the line below the card, which should correspond to the document type. This should only be
+      supplied when using the 'compact' card layout.
+
+
+      Deprecated at v4.17.1, to be removed at &gt;<!-- -->= v5.0.0.
+    deprecated:
+      content: To be removed at v5.0.0.
+    name: accentColor
+    fullName: accentColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'accentColor?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.IDocumentCardProps.children
+    summary: Child components to render within the card.
+    name: children
+    fullName: children
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'children?: React.ReactNode;'
+      return:
+        type:
+          - React.ReactNode
+  - uid: office-ui-fabric-react.IDocumentCardProps.className
+    summary: Optional override class name
+    name: className
+    fullName: className
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'className?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.IDocumentCardProps.componentRef
+    summary: >-
+      Optional callback to access the IDocumentCard interface. Use this instead of ref for accessing the public methods
+      and properties of the component.
+    name: componentRef
+    fullName: componentRef
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'componentRef?: IRefObject<IDocumentCard>;'
+      return:
+        type:
+          - IRefObject<IDocumentCard>
+  - uid: office-ui-fabric-react.IDocumentCardProps.onClick
+    summary: Function to call when the card is clicked or keyboard Enter/Space is pushed.
+    name: onClick
+    fullName: onClick
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onClick?: (ev?: React.SyntheticEvent<HTMLElement>) => void;'
+      return:
+        type:
+          - '(ev?: React.SyntheticEvent<HTMLElement>) => void'
+  - uid: office-ui-fabric-react.IDocumentCardProps.onClickHref
+    summary: >-
+      A URL to navigate to when the card is clicked. If a function has also been provided, it will be used instead of
+      the URL.
+    name: onClickHref
+    fullName: onClickHref
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onClickHref?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.IDocumentCardProps.role
+    summary: 'Aria role assigned to the documentCard (Eg. button, link). Use this to override the default assignment.'
+    name: role
+    fullName: role
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'role?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.IDocumentCardProps.styles
+    summary: Call to provide customized styling that will layer on top of the variant rules
+    name: styles
+    fullName: styles
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'styles?: IStyleFunctionOrObject<IDocumentCardStyleProps, IDocumentCardStyles>;'
+      return:
+        type:
+          - 'IStyleFunctionOrObject<IDocumentCardStyleProps, IDocumentCardStyles>'
+  - uid: office-ui-fabric-react.IDocumentCardProps.theme
+    summary: Theme provided by HOC.
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type:
+          - styling.ITheme
+  - uid: office-ui-fabric-react.IDocumentCardProps.type
+    summary: The type of DocumentCard to display.
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type?: DocumentCardType;'
+      return:
+        type:
+          - office-ui-fabric-react.DocumentCardType

@@ -1,0 +1,49 @@
+### YamlMime:UniversalReference
+items:
+  - uid: utilities.IAsAsyncOptions
+    name: IAsAsyncOptions
+    fullName: IAsAsyncOptions
+    langs:
+      - typeScript
+    type: interface
+    package: utilities
+    children:
+      - utilities.IAsAsyncOptions.load
+      - utilities.IAsAsyncOptions.onError
+      - utilities.IAsAsyncOptions.onLoad
+  - uid: utilities.IAsAsyncOptions.load
+    summary: Callback which returns a promise resolving an object which exports the component.
+    name: load
+    fullName: load
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'load: () => Promise<React.ReactType<TProps>>;'
+      return:
+        type:
+          - () => Promise<React.ReactType<TProps>>
+  - uid: utilities.IAsAsyncOptions.onError
+    summary: Callback when async loading fails.
+    name: onError
+    fullName: onError
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onError?: (error: Error) => void;'
+      return:
+        type:
+          - '(error: Error) => void'
+  - uid: utilities.IAsAsyncOptions.onLoad
+    summary: Callback executed when async loading is complete.
+    name: onLoad
+    fullName: onLoad
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onLoad?: () => void;'
+      return:
+        type:
+          - () => void

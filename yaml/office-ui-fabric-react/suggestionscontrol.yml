@@ -1,0 +1,398 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office-ui-fabric-react.SuggestionsControl
+    summary: 'Class when used with SuggestionsStore, renders a suggestions control with customizable headers and footers'
+    name: SuggestionsControl
+    fullName: SuggestionsControl
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'BaseComponent<ISuggestionsControlProps<T>, ISuggestionsControlState<T>> '
+    package: office-ui-fabric-react
+    children:
+      - office-ui-fabric-react.SuggestionsControl._forceResolveButton
+      - office-ui-fabric-react.SuggestionsControl._renderSuggestions
+      - office-ui-fabric-react.SuggestionsControl._searchForMoreButton
+      - office-ui-fabric-react.SuggestionsControl._selectedElement
+      - office-ui-fabric-react.SuggestionsControl._suggestions
+      - office-ui-fabric-react.SuggestionsControl.(constructor)
+      - office-ui-fabric-react.SuggestionsControl.componentDidMount
+      - office-ui-fabric-react.SuggestionsControl.componentDidUpdate
+      - office-ui-fabric-react.SuggestionsControl.componentWillReceiveProps
+      - office-ui-fabric-react.SuggestionsControl.componentWillUnmount
+      - office-ui-fabric-react.SuggestionsControl.currentSuggestion
+      - office-ui-fabric-react.SuggestionsControl.currentSuggestionIndex
+      - office-ui-fabric-react.SuggestionsControl.executeSelectedAction
+      - office-ui-fabric-react.SuggestionsControl.handleKeyDown
+      - office-ui-fabric-react.SuggestionsControl.hasSelection
+      - office-ui-fabric-react.SuggestionsControl.hasSuggestionSelected
+      - office-ui-fabric-react.SuggestionsControl.removeSuggestion
+      - office-ui-fabric-react.SuggestionsControl.render
+      - office-ui-fabric-react.SuggestionsControl.renderFooterItems
+      - office-ui-fabric-react.SuggestionsControl.renderHeaderItems
+      - office-ui-fabric-react.SuggestionsControl.resetSelectedItem
+      - office-ui-fabric-react.SuggestionsControl.scrollSelected
+      - office-ui-fabric-react.SuggestionsControl.selectedElement
+      - office-ui-fabric-react.SuggestionsControl.selectFirstItem
+      - office-ui-fabric-react.SuggestionsControl.selectLastItem
+      - office-ui-fabric-react.SuggestionsControl.selectNextItem
+      - office-ui-fabric-react.SuggestionsControl.selectPreviousItem
+  - uid: office-ui-fabric-react.SuggestionsControl._forceResolveButton
+    name: _forceResolveButton
+    fullName: _forceResolveButton
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'protected _forceResolveButton: IButton;'
+      return:
+        type:
+          - office-ui-fabric-react.IButton
+  - uid: office-ui-fabric-react.SuggestionsControl._renderSuggestions
+    name: _renderSuggestions()
+    fullName: _renderSuggestions()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'protected _renderSuggestions(): JSX.Element;'
+      return:
+        type:
+          - JSX.Element
+        description: ''
+  - uid: office-ui-fabric-react.SuggestionsControl._searchForMoreButton
+    name: _searchForMoreButton
+    fullName: _searchForMoreButton
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'protected _searchForMoreButton: IButton;'
+      return:
+        type:
+          - office-ui-fabric-react.IButton
+  - uid: office-ui-fabric-react.SuggestionsControl._selectedElement
+    name: _selectedElement
+    fullName: _selectedElement
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'protected _selectedElement: HTMLDivElement;'
+      return:
+        type:
+          - HTMLDivElement
+  - uid: office-ui-fabric-react.SuggestionsControl._suggestions
+    name: _suggestions
+    fullName: _suggestions
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'protected _suggestions: SuggestionsCore<T>;'
+      return:
+        type:
+          - SuggestionsCore<T>
+  - uid: office-ui-fabric-react.SuggestionsControl.(constructor)
+    summary: Constructs a new instance of the `SuggestionsControl` class
+    name: (constructor)(suggestionsProps)
+    fullName: (constructor)(suggestionsProps)
+    langs:
+      - typeScript
+    type: constructor
+    syntax:
+      content: 'constructor(suggestionsProps: ISuggestionsControlProps<T>);'
+      parameters:
+        - id: suggestionsProps
+          description: ''
+          type:
+            - ISuggestionsControlProps<T>
+  - uid: office-ui-fabric-react.SuggestionsControl.componentDidMount
+    name: componentDidMount()
+    fullName: componentDidMount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'componentDidMount(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: office-ui-fabric-react.SuggestionsControl.componentDidUpdate
+    name: componentDidUpdate()
+    fullName: componentDidUpdate()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'componentDidUpdate(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: office-ui-fabric-react.SuggestionsControl.componentWillReceiveProps
+    name: componentWillReceiveProps(newProps)
+    fullName: componentWillReceiveProps(newProps)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'componentWillReceiveProps(newProps: ISuggestionsControlProps<T>): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: newProps
+          description: ''
+          type:
+            - ISuggestionsControlProps<T>
+  - uid: office-ui-fabric-react.SuggestionsControl.componentWillUnmount
+    name: componentWillUnmount()
+    fullName: componentWillUnmount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'componentWillUnmount(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: office-ui-fabric-react.SuggestionsControl.currentSuggestion
+    name: currentSuggestion
+    fullName: currentSuggestion
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly currentSuggestion: ISuggestionModel<T>;'
+      return:
+        type:
+          - ISuggestionModel<T>
+  - uid: office-ui-fabric-react.SuggestionsControl.currentSuggestionIndex
+    name: currentSuggestionIndex
+    fullName: currentSuggestionIndex
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly currentSuggestionIndex: number;'
+      return:
+        type:
+          - number
+  - uid: office-ui-fabric-react.SuggestionsControl.executeSelectedAction
+    name: executeSelectedAction()
+    fullName: executeSelectedAction()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'executeSelectedAction(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: office-ui-fabric-react.SuggestionsControl.handleKeyDown
+    summary: 'Handles the key down, returns true, if the event was handled, false otherwise'
+    name: handleKeyDown(keyCode)
+    fullName: handleKeyDown(keyCode)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'handleKeyDown(keyCode: number): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+      parameters:
+        - id: keyCode
+          description: The keyCode to handle
+          type:
+            - number
+  - uid: office-ui-fabric-react.SuggestionsControl.hasSelection
+    name: hasSelection()
+    fullName: hasSelection()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'hasSelection(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: office-ui-fabric-react.SuggestionsControl.hasSuggestionSelected
+    name: hasSuggestionSelected()
+    fullName: hasSuggestionSelected()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'hasSuggestionSelected(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: office-ui-fabric-react.SuggestionsControl.removeSuggestion
+    name: removeSuggestion(index)
+    fullName: removeSuggestion(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'removeSuggestion(index?: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: index
+          description: ''
+          type:
+            - number
+  - uid: office-ui-fabric-react.SuggestionsControl.render
+    name: render()
+    fullName: render()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'render(): JSX.Element;'
+      return:
+        type:
+          - JSX.Element
+        description: ''
+  - uid: office-ui-fabric-react.SuggestionsControl.renderFooterItems
+    name: renderFooterItems()
+    fullName: renderFooterItems()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'protected renderFooterItems(): JSX.Element | null;'
+      return:
+        type:
+          - JSX.Element | null
+        description: ''
+  - uid: office-ui-fabric-react.SuggestionsControl.renderHeaderItems
+    name: renderHeaderItems()
+    fullName: renderHeaderItems()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'protected renderHeaderItems(): JSX.Element | null;'
+      return:
+        type:
+          - JSX.Element | null
+        description: ''
+  - uid: office-ui-fabric-react.SuggestionsControl.resetSelectedItem
+    summary: Resets the selected state and selects the first selectable item
+    name: resetSelectedItem()
+    fullName: resetSelectedItem()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'protected resetSelectedItem(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: office-ui-fabric-react.SuggestionsControl.scrollSelected
+    name: scrollSelected()
+    fullName: scrollSelected()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'scrollSelected(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: office-ui-fabric-react.SuggestionsControl.selectedElement
+    name: selectedElement
+    fullName: selectedElement
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly selectedElement: HTMLDivElement | undefined;'
+      return:
+        type:
+          - HTMLDivElement | undefined
+  - uid: office-ui-fabric-react.SuggestionsControl.selectFirstItem
+    summary: Selects the first item
+    name: selectFirstItem()
+    fullName: selectFirstItem()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'protected selectFirstItem(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: office-ui-fabric-react.SuggestionsControl.selectLastItem
+    summary: Selects the last item
+    name: selectLastItem()
+    fullName: selectLastItem()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'protected selectLastItem(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: office-ui-fabric-react.SuggestionsControl.selectNextItem
+    summary: Selects the next selectable item
+    name: 'selectNextItem(itemType, originalItemType)'
+    fullName: 'selectNextItem(itemType, originalItemType)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'protected selectNextItem(itemType: SuggestionItemType, originalItemType?: SuggestionItemType): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: itemType
+          description: ''
+          type:
+            - office-ui-fabric-react.SuggestionItemType
+        - id: originalItemType
+          description: ''
+          type:
+            - office-ui-fabric-react.SuggestionItemType
+  - uid: office-ui-fabric-react.SuggestionsControl.selectPreviousItem
+    summary: Selects the previous selectable item
+    name: 'selectPreviousItem(itemType, originalItemType)'
+    fullName: 'selectPreviousItem(itemType, originalItemType)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'protected selectPreviousItem(itemType: SuggestionItemType, originalItemType?: SuggestionItemType): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: itemType
+          description: ''
+          type:
+            - office-ui-fabric-react.SuggestionItemType
+        - id: originalItemType
+          description: ''
+          type:
+            - office-ui-fabric-react.SuggestionItemType
