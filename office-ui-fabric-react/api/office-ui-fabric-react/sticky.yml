@@ -17,9 +17,9 @@ items:
       - office-ui-fabric-react.Sticky.componentDidMount
       - office-ui-fabric-react.Sticky.componentDidUpdate
       - office-ui-fabric-react.Sticky.componentWillUnmount
-      - office-ui-fabric-react.Sticky.contextType
+      - office-ui-fabric-react.Sticky.context
+      - office-ui-fabric-react.Sticky.contextTypes
       - office-ui-fabric-react.Sticky.defaultProps
-      - office-ui-fabric-react.Sticky.distanceFromTop
       - office-ui-fabric-react.Sticky.nonStickyContent
       - office-ui-fabric-react.Sticky.placeholder
       - office-ui-fabric-react.Sticky.render
@@ -128,17 +128,28 @@ items:
         type:
           - void
         description: ''
-  - uid: office-ui-fabric-react.Sticky.contextType
-    name: contextType
-    fullName: contextType
+  - uid: office-ui-fabric-react.Sticky.context
+    name: context
+    fullName: context
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'static contextType: React.Context<IScrollablePaneContext>;'
+      content: 'context: IScrollablePaneContext;'
       return:
         type:
-          - React.Context<IScrollablePaneContext>
+          - office-ui-fabric-react.IScrollablePaneContext
+  - uid: office-ui-fabric-react.Sticky.contextTypes
+    name: contextTypes
+    fullName: contextTypes
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'static contextTypes: IStickyContext;'
+      return:
+        type:
+          - office-ui-fabric-react.IStickyContext
   - uid: office-ui-fabric-react.Sticky.defaultProps
     name: defaultProps
     fullName: defaultProps
@@ -150,17 +161,6 @@ items:
       return:
         type:
           - office-ui-fabric-react.IStickyProps
-  - uid: office-ui-fabric-react.Sticky.distanceFromTop
-    name: distanceFromTop
-    fullName: distanceFromTop
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'distanceFromTop: number;'
-      return:
-        type:
-          - number
   - uid: office-ui-fabric-react.Sticky.nonStickyContent
     name: nonStickyContent
     fullName: nonStickyContent

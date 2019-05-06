@@ -8,22 +8,24 @@ items:
       Note: text colors are defined in ISemanticTextColors.ts.
 
 
-      \#\# Naming Convention
+      \#\#\#\# Naming Convention
 
 
       The name of a semantic slot can quickly tell you how it’s meant to be used. It generally follows this format:
 
 
-      \[category name\]\[element name\]\[checked state\]\[hovered/pressed/disabled state\] \[category name\] – The
-      “family” that this slot belongs to. \[element name\] – The name of the thing being targeted, such as the
-      background or border. \[checked state\] – Whether the thing is checked. We assume things are unchecked by default,
-      so no need to specify the unchecked state. (We used “checked” to refer to anything that is on, selected, toggled,
-      highlighted, emphasized, etc.) \[hovered/pressed/disabled state\] – One of these states, if applicable. Each of
-      these states are mutually exclusive. Pressed styles overwrite hovered styles, and disabled elements cannot be
-      hovered or pressed.
+      `[category name][element name][checked state][hovered/pressed/disabled state]`
 
 
-      \#\# Base Slots
+      \* `[category name]` – The “family” that this slot belongs to. \* `[element name]` – The name of the thing being
+      targeted, such as the background or border. \* `[checked state]` – Whether the thing is checked. We assume things
+      are unchecked by default, so no need to specify the unchecked state. (We used “checked” to refer to anything that
+      is on, selected, toggled, highlighted, emphasized, etc.) \* `[hovered/pressed/disabled state]` – One of these
+      states, if applicable. Each of these states are mutually exclusive. Pressed styles overwrite hovered styles, and
+      disabled elements cannot be hovered or pressed.
+
+
+      \#\#\#\# Base Slots
 
 
       A basic set of slots that provide many default body styles, such as text, subtext, disabled colors, and so on. If
@@ -32,7 +34,7 @@ items:
       category.
 
 
-      \#\# Invariants
+      \#\#\#\# Invariants
 
 
       When color has meaning, we do not want to change the color much theme to theme. For example, we will always want
@@ -41,26 +43,26 @@ items:
       suffice.
 
 
-      \#\# Input Controls
+      \#\#\#\# Input Controls
 
 
       This category contains input components commonly used to denote state, including radio buttons, check boxes,
       toggle switches, sliders, progress bars, and more.
 
 
-      \#\# Buttons
+      \#\#\#\# Buttons
 
 
       Buttons! And all the flavors thereof.
 
 
-      \#\# Menus
+      \#\#\#\# Menus
 
 
       Any kind of popup menus uses this category.
 
 
-      \#\# Lists
+      \#\#\#\# Lists
 
 
       Lists differ from menus in that they are designed to show infinite amounts of items, often scroll, and have a

@@ -26,6 +26,7 @@ items:
       - office-ui-fabric-react.ITeachingBubbleProps.primaryButtonProps
       - office-ui-fabric-react.ITeachingBubbleProps.secondaryButtonProps
       - office-ui-fabric-react.ITeachingBubbleProps.styles
+      - office-ui-fabric-react.ITeachingBubbleProps.target
       - office-ui-fabric-react.ITeachingBubbleProps.targetElement
       - office-ui-fabric-react.ITeachingBubbleProps.theme
   - uid: office-ui-fabric-react.ITeachingBubbleProps.ariaDescribedBy
@@ -200,8 +201,21 @@ items:
       return:
         type:
           - 'IStyleFunctionOrObject<ITeachingBubbleStyleProps, ITeachingBubbleStyles>'
+  - uid: office-ui-fabric-react.ITeachingBubbleProps.target
+    summary: 'Element, MouseEvent, Point, or querySelector string that the TeachingBubble should anchor to.'
+    name: target
+    fullName: target
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'target?: Target;'
+      return:
+        type:
+          - Target
   - uid: office-ui-fabric-react.ITeachingBubbleProps.targetElement
-    summary: Element to anchor the TeachingBubble to.
+    deprecated:
+      content: use target instead Element to anchor the TeachingBubble to.
     name: targetElement
     fullName: targetElement
     langs:

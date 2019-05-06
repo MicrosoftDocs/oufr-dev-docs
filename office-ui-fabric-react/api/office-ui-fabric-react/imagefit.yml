@@ -10,6 +10,7 @@ items:
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.ImageFit.center
+      - office-ui-fabric-react.ImageFit.centerContain
       - office-ui-fabric-react.ImageFit.centerCover
       - office-ui-fabric-react.ImageFit.contain
       - office-ui-fabric-react.ImageFit.cover
@@ -22,6 +23,17 @@ items:
       - typeScript
     type: field
     numericValue: '0'
+  - uid: office-ui-fabric-react.ImageFit.centerContain
+    summary: >-
+      The image will be centered horizontally and vertically within the frame and maintains its aspect ratio. It will
+      behave as ImageFit.center if the image's natural height and width is less than the Image frame's height and width,
+      but if either natural height or width are larger than the frame it will behave as ImageFit.contain.
+    name: centerContain
+    fullName: centerContain
+    langs:
+      - typeScript
+    type: field
+    numericValue: '5'
   - uid: office-ui-fabric-react.ImageFit.centerCover
     summary: >-
       The image will be centered horizontally and vertically within the frame and maintains its aspect ratio. It will

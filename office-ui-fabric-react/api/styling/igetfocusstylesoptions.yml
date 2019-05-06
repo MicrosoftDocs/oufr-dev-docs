@@ -14,6 +14,7 @@ items:
       - styling.IGetFocusStylesOptions.isFocusedOnly
       - styling.IGetFocusStylesOptions.outlineColor
       - styling.IGetFocusStylesOptions.position
+      - styling.IGetFocusStylesOptions.width
   - uid: styling.IGetFocusStylesOptions.borderColor
     summary: Color of the border.
     name: borderColor
@@ -88,3 +89,15 @@ items:
       return:
         type:
           - '''relative'' | ''absolute'''
+  - uid: styling.IGetFocusStylesOptions.width
+    summary: The width of the border in pixels.
+    name: width
+    fullName: width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'width?: number;'
+      return:
+        type:
+          - number

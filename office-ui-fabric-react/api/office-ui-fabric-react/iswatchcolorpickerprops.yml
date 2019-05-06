@@ -21,6 +21,7 @@ items:
       - office-ui-fabric-react.ISwatchColorPickerProps.focusOnHover
       - office-ui-fabric-react.ISwatchColorPickerProps.getColorGridCellStyles
       - office-ui-fabric-react.ISwatchColorPickerProps.id
+      - office-ui-fabric-react.ISwatchColorPickerProps.isControlled
       - office-ui-fabric-react.ISwatchColorPickerProps.mouseLeaveParentSelector
       - office-ui-fabric-react.ISwatchColorPickerProps.onCellFocused
       - office-ui-fabric-react.ISwatchColorPickerProps.onCellHovered
@@ -189,6 +190,25 @@ items:
       return:
         type:
           - string
+  - uid: office-ui-fabric-react.ISwatchColorPickerProps.isControlled
+    summary: >-
+      Indicates whether the SwatchColorPicker is fully controlled. When true, the component will not set its internal
+      state to track the selected color. Instead, the parent component will be responsible for handling state in the
+      callbacks like onColorChanged.
+
+
+      NOTE: This property is a temporary workaround to force the component to be fully controllable without breaking
+      existing behavior
+    name: isControlled
+    fullName: isControlled
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isControlled?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: office-ui-fabric-react.ISwatchColorPickerProps.mouseLeaveParentSelector
     summary: Selector to focus on mouseLeave SHOULD ONLY BE USED IN CONJUNCTION WITH focusOnHover
     name: mouseLeaveParentSelector

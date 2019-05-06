@@ -49,17 +49,17 @@ items:
         type:
           - IRefObject<ITooltip>
   - uid: office-ui-fabric-react.ITooltipProps.content
-    summary: String to be passed to the tooltip
+    summary: Content to be passed to the tooltip
     name: content
     fullName: content
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'content?: string;'
+      content: 'content?: string | JSX.Element | JSX.Element[];'
       return:
         type:
-          - string
+          - 'string | JSX.Element | JSX.Element[]'
   - uid: office-ui-fabric-react.ITooltipProps.delay
     summary: Length of delay. Can be set to zero if you do not want a delay.
     name: delay

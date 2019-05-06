@@ -14,6 +14,7 @@ items:
       - office-ui-fabric-react.IBreadcrumbProps.className
       - office-ui-fabric-react.IBreadcrumbProps.componentRef
       - office-ui-fabric-react.IBreadcrumbProps.dividerAs
+      - office-ui-fabric-react.IBreadcrumbProps.focusZoneProps
       - office-ui-fabric-react.IBreadcrumbProps.items
       - office-ui-fabric-react.IBreadcrumbProps.maxDisplayedItems
       - office-ui-fabric-react.IBreadcrumbProps.onReduceData
@@ -72,6 +73,18 @@ items:
       return:
         type:
           - IComponentAs<IDividerAsProps>
+  - uid: office-ui-fabric-react.IBreadcrumbProps.focusZoneProps
+    summary: Focuszone props that will get passed through to the root focus zone.
+    name: focusZoneProps
+    fullName: focusZoneProps
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'focusZoneProps?: IFocusZoneProps;'
+      return:
+        type:
+          - office-ui-fabric-react.IFocusZoneProps
   - uid: office-ui-fabric-react.IBreadcrumbProps.items
     summary: Collection of breadcrumbs to render
     name: items
@@ -106,10 +119,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'onReduceData?: (data: IBreadCrumbData) => IBreadCrumbData | undefined;'
+      content: 'onReduceData?: (data: IBreadcrumbData) => IBreadcrumbData | undefined;'
       return:
         type:
-          - '(data: IBreadCrumbData) => IBreadCrumbData | undefined'
+          - '(data: IBreadcrumbData) => IBreadcrumbData | undefined'
   - uid: office-ui-fabric-react.IBreadcrumbProps.onRenderItem
     summary: Method to call when trying to render an item.
     name: onRenderItem

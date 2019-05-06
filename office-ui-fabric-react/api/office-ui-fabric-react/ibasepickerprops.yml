@@ -252,17 +252,17 @@ items:
         type:
           - '(selectedItem?: T) => T | PromiseLike<T> | null'
   - uid: office-ui-fabric-react.IBasePickerProps.onRemoveSuggestion
-    summary: A callback for when a persona is removed from the suggestion list
+    summary: A callback for when an item is removed from the suggestion list
     name: onRemoveSuggestion
     fullName: onRemoveSuggestion
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'onRemoveSuggestion?: (item: IPersonaProps) => void;'
+      content: 'onRemoveSuggestion?: (item: T) => void;'
       return:
         type:
-          - '(item: IPersonaProps) => void'
+          - '(item: T) => void'
   - uid: office-ui-fabric-react.IBasePickerProps.onRenderItem
     summary: Function that specifies how the selected item will appear.
     name: onRenderItem
