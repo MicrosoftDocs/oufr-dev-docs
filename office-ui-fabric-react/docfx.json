@@ -8,7 +8,9 @@
           "**/TOC.yml"
         ],
         "src": "api",
-        "dest": "office_fabric_toc"
+        "dest": "office_fabric_toc",
+        "version": "office-ui-fabric-react-latest",
+        "group": "latest"
       },
       {
         "files": [
@@ -27,7 +29,9 @@
           "**/toc.md",
           "**/toc.yml",
           "**/TOC.yml"
-        ]
+        ],
+        "version": "office-ui-fabric-react-latest",
+        "group": "latest"
       }
     ],
     "resource": [
@@ -41,15 +45,24 @@
           "**/includes/**",
           "_themes/**",
           "_themes.pdf/**"
-        ]
+        ],
+        "version": "office-ui-fabric-react-latest",
+        "group": "latest"
       }
     ],
     "overwrite": [],
+    "groups": {
+      "latest": {
+        "dest": "latest",
+        "moniker_range": "office-ui-fabric-latest"
+      }
+    },
     "externalReference": [],
     "globalMetadata": {
       "breadcrumb_path": "/office-ui-fabric-react/breadcrumb/toc.json",
       "extendBreadcrumb": true,
-      "feedback_system": "None"
+      "feedback_system": "None",
+      "apiPlatform": "javascript"
     },
     "fileMetadata": {},
     "template": [],
