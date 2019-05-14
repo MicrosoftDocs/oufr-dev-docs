@@ -3,7 +3,7 @@ import { categories, ICategory } from '@uifabric/fabric-website/lib/SiteDefiniti
 import fs = require('fs');
 
 interface ITocConfig {
-    items: Array<IYamlTocItem & {extended?: boolean}>
+  items: Array<IYamlTocItem & { extended?: boolean }>;
 }
 
 /**
@@ -51,7 +51,7 @@ function generateConfig(categoriesSource: ICategory) {
     }
 
     if (tocConfig.items[1].items) {
-        tocConfig.items[1].items.push(configItem);
+      tocConfig.items[1].items.push(configItem);
     }
   }
 
