@@ -7,11 +7,13 @@ items:
       - typeScript
     type: interface
     extends:
-      - office-ui-fabric-react.ISelectableDroppableTextProps
+      - 'ISelectableDroppableTextProps<IComboBox> '
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.IComboBoxProps.allowFreeform
+      - office-ui-fabric-react.IComboBoxProps.ariaDescribedBy
       - office-ui-fabric-react.IComboBoxProps.autoComplete
+      - office-ui-fabric-react.IComboBoxProps.autofill
       - office-ui-fabric-react.IComboBoxProps.buttonIconProps
       - office-ui-fabric-react.IComboBoxProps.caretDownButtonStyles
       - office-ui-fabric-react.IComboBoxProps.comboBoxOptionStyles
@@ -32,6 +34,7 @@ items:
       - office-ui-fabric-react.IComboBoxProps.onResolveOptions
       - office-ui-fabric-react.IComboBoxProps.onScrollToItem
       - office-ui-fabric-react.IComboBoxProps.options
+      - office-ui-fabric-react.IComboBoxProps.persistMenu
       - office-ui-fabric-react.IComboBoxProps.scrollSelectedToTop
       - office-ui-fabric-react.IComboBoxProps.styles
       - office-ui-fabric-react.IComboBoxProps.text
@@ -52,6 +55,18 @@ items:
       return:
         type:
           - boolean
+  - uid: office-ui-fabric-react.IComboBoxProps.ariaDescribedBy
+    summary: Optional prop to add a string id that can be referenced inside the aria-describedby attribute
+    name: ariaDescribedBy
+    fullName: ariaDescribedBy
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'ariaDescribedBy?: string;'
+      return:
+        type:
+          - string
   - uid: office-ui-fabric-react.IComboBoxProps.autoComplete
     summary: >-
       Whether the ComboBox auto completes. As the user is inputing text, it will be suggested potential matches from the
@@ -67,6 +82,18 @@ items:
       return:
         type:
           - '''on'' | ''off'''
+  - uid: office-ui-fabric-react.IComboBoxProps.autofill
+    summary: The AutofillProps to be passed into the Autofill component inside combobox
+    name: autofill
+    fullName: autofill
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'autofill?: IAutofillProps;'
+      return:
+        type:
+          - office-ui-fabric-react.IAutofillProps
   - uid: office-ui-fabric-react.IComboBoxProps.buttonIconProps
     summary: The IconProps to use for the button aspect of the combobox
     name: buttonIconProps
@@ -329,6 +356,21 @@ items:
       return:
         type:
           - 'IComboBoxOption[]'
+  - uid: office-ui-fabric-react.IComboBoxProps.persistMenu
+    summary: >-
+      Menu will not be created or destroyed when opened or closed, instead it will be hidden. This will improve perf of
+      the menu opening but could potentially impact overall perf by having more elemnts in the dom. Should only be used
+      when perf is important. Note: This may increase the amount of time it takes for the comboBox itself to mount.
+    name: persistMenu
+    fullName: persistMenu
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'persistMenu?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: office-ui-fabric-react.IComboBoxProps.scrollSelectedToTop
     summary: >-
       When options are scrollable the selected option is positioned at the top of the callout when it is opened (unless
@@ -378,7 +420,7 @@ items:
       content: 'theme?: ITheme;'
       return:
         type:
-          - office-ui-fabric-react.ITheme
+          - styling.ITheme
   - uid: office-ui-fabric-react.IComboBoxProps.useComboBoxAsMenuWidth
     summary: Whether to use the ComboBoxes width as the menu's width
     name: useComboBoxAsMenuWidth

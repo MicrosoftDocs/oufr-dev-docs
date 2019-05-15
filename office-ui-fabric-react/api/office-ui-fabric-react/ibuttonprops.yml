@@ -7,7 +7,7 @@ items:
       - typeScript
     type: interface
     extends:
-      - React.AllHTMLAttributes
+      - 'React.AllHTMLAttributes<HTMLAnchorElement | HTMLButtonElement | HTMLDivElement | BaseButton | Button> '
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.IButtonProps.allowDisabledFocus
@@ -104,7 +104,7 @@ items:
         type:
           - string
   - uid: office-ui-fabric-react.IButtonProps.buttonType
-    summary: 'Deprecated at v1.2.3, to be removed at &gt;= v2.0.0. Use specific button component instead.'
+    summary: 'Deprecated at v1.2.3, to be removed at &gt;<!-- -->= v2.0.0. Use specific button component instead.'
     deprecated:
       content: Use specific button component instead.
     name: buttonType
@@ -395,7 +395,7 @@ items:
         type:
           - IRenderFunction<IButtonProps>
   - uid: office-ui-fabric-react.IButtonProps.onRenderMenu
-    summary: 'Deprecated at v6.3.2, to be removed at &gt;= v7.0.0. Use `menuAs` instead.'
+    summary: 'Deprecated at v6.3.2, to be removed at &gt;<!-- -->= v7.0.0. Use `menuAs` instead.'
     deprecated:
       content: Use `menuAs` instead.
     name: onRenderMenu
@@ -473,8 +473,8 @@ items:
           - boolean
   - uid: office-ui-fabric-react.IButtonProps.rootProps
     summary: >-
-      Deprecated at v0.56.2, to be removed at &gt;= v1.0.0. Just pass in button props instead. they will be mixed into
-      the button/anchor element rendered by the component.
+      Deprecated at v0.56.2, to be removed at &gt;<!-- -->= v1.0.0. Just pass in button props instead. they will be
+      mixed into the button/anchor element rendered by the component.
     deprecated:
       content: Use button props instead.
     name: rootProps
@@ -562,7 +562,7 @@ items:
       content: 'theme?: ITheme;'
       return:
         type:
-          - office-ui-fabric-react.ITheme
+          - styling.ITheme
   - uid: office-ui-fabric-react.IButtonProps.toggle
     summary: >-
       Whether button is a toggle button with distinct on and off states. This should be true for buttons that

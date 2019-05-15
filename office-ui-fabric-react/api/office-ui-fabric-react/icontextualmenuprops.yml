@@ -8,7 +8,8 @@ items:
       - typeScript
     type: interface
     extends:
-      - office-ui-fabric-react.IBaseProps
+      - IBaseProps<IContextualMenu>
+      - 'IWithResponsiveModeState '
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.IContextualMenuProps.alignTargetEdge
@@ -100,7 +101,7 @@ items:
       content: 'bounds?: IRectangle;'
       return:
         type:
-          - office-ui-fabric-react.IRectangle
+          - utilities.IRectangle
   - uid: office-ui-fabric-react.IContextualMenuProps.calloutProps
     summary: Pass in custom callout props
     name: calloutProps
@@ -192,7 +193,7 @@ items:
       content: 'directionalHint?: DirectionalHint;'
       return:
         type:
-          - office-ui-fabric-react.DirectionalHint
+          - DirectionalHint
   - uid: office-ui-fabric-react.IContextualMenuProps.directionalHintFixed
     summary: >-
       If true the position will not change sides in an attempt to fit the ContextualMenu within bounds. It will still
@@ -220,7 +221,7 @@ items:
       content: 'directionalHintForRTL?: DirectionalHint;'
       return:
         type:
-          - office-ui-fabric-react.DirectionalHint
+          - DirectionalHint
   - uid: office-ui-fabric-react.IContextualMenuProps.doNotLayer
     summary: If true do not render on a new layer. If false render on a new layer.
     name: doNotLayer
@@ -489,10 +490,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'target?: Element | string | MouseEvent | IPoint | null;'
+      content: 'target?: Target;'
       return:
         type:
-          - Element | string | MouseEvent | IPoint | null
+          - Target
   - uid: office-ui-fabric-react.IContextualMenuProps.theme
     summary: Theme provided by High-Order Component.
     name: theme
@@ -504,7 +505,7 @@ items:
       content: 'theme?: ITheme;'
       return:
         type:
-          - office-ui-fabric-react.ITheme
+          - styling.ITheme
   - uid: office-ui-fabric-react.IContextualMenuProps.title
     summary: Optional title to be displayed on top of the menu.
     name: title

@@ -7,18 +7,18 @@ items:
       - typeScript
     type: class
     extends:
-      - office-ui-fabric-react.BaseComponent
+      - 'BaseComponent<IExpandingCardProps, IExpandingCardState> '
     package: office-ui-fabric-react
     children:
-      - office-ui-fabric-react.ExpandingCardBase.constructor
+      - office-ui-fabric-react.ExpandingCardBase.(constructor)
       - office-ui-fabric-react.ExpandingCardBase.componentDidMount
       - office-ui-fabric-react.ExpandingCardBase.componentWillUnmount
       - office-ui-fabric-react.ExpandingCardBase.defaultProps
       - office-ui-fabric-react.ExpandingCardBase.render
-  - uid: office-ui-fabric-react.ExpandingCardBase.constructor
-    summary: 'Constructs a new instance of the [ExpandingCardBase](xref:office-ui-fabric-react.ExpandingCardBase) class'
-    name: constructor(props)
-    fullName: constructor
+  - uid: office-ui-fabric-react.ExpandingCardBase.(constructor)
+    summary: Constructs a new instance of the `ExpandingCardBase` class
+    name: (constructor)(props)
+    fullName: (constructor)(props)
     langs:
       - typeScript
     type: constructor
@@ -31,7 +31,7 @@ items:
             - office-ui-fabric-react.IExpandingCardProps
   - uid: office-ui-fabric-react.ExpandingCardBase.componentDidMount
     name: componentDidMount()
-    fullName: componentDidMount
+    fullName: componentDidMount()
     langs:
       - typeScript
     type: method
@@ -43,7 +43,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.ExpandingCardBase.componentWillUnmount
     name: componentWillUnmount()
-    fullName: componentWillUnmount
+    fullName: componentWillUnmount()
     langs:
       - typeScript
     type: method
@@ -60,7 +60,12 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'static defaultProps:'
+      content: |-
+        static defaultProps: {
+                compactCardHeight: number;
+                expandedCardHeight: number;
+                directionalHintFixed: boolean;
+            };
       return:
         type:
           - |-
@@ -71,7 +76,7 @@ items:
                 }
   - uid: office-ui-fabric-react.ExpandingCardBase.render
     name: render()
-    fullName: render
+    fullName: render()
     langs:
       - typeScript
     type: method

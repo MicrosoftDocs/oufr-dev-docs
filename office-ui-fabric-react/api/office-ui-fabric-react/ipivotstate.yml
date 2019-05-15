@@ -1,12 +1,6 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office-ui-fabric-react.IPivotState
-    summary: >-
-      Usage:
-
-
-      <Pivot> <PivotItem linkText="Foo"> <Label>Pivot \#1</Label> </PivotItem> <PivotItem linkText="Bar"> <Label>Pivot
-      \#2</Label> </PivotItem> <PivotItem linkText="Bas"> <Label>Pivot \#3</Label> </PivotItem> </Pivot>
     name: IPivotState
     fullName: IPivotState
     langs:
@@ -14,20 +8,7 @@ items:
     type: interface
     package: office-ui-fabric-react
     children:
-      - office-ui-fabric-react.IPivotState.links
       - office-ui-fabric-react.IPivotState.selectedKey
-      - office-ui-fabric-react.IPivotState.selectedTabId
-  - uid: office-ui-fabric-react.IPivotState.links
-    name: links
-    fullName: links
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'links: IPivotItemProps[];'
-      return:
-        type:
-          - 'IPivotItemProps[]'
   - uid: office-ui-fabric-react.IPivotState.selectedKey
     name: selectedKey
     fullName: selectedKey
@@ -35,18 +16,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'selectedKey: string;'
+      content: 'selectedKey: string | undefined;'
       return:
         type:
-          - string
-  - uid: office-ui-fabric-react.IPivotState.selectedTabId
-    name: selectedTabId
-    fullName: selectedTabId
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'selectedTabId: string;'
-      return:
-        type:
-          - string
+          - string | undefined

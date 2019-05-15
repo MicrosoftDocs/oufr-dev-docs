@@ -3,11 +3,9 @@
     "content": [
       {
         "files": [
-          "**/toc.md",
-          "**/toc.yml"
+          "breadcrumb/toc.yml"
         ],
-        "src": "api",
-        "dest": "api/office_react_toc"
+        "dest": "office-ui-fabric-react"
       },
       {
         "files": [
@@ -22,8 +20,10 @@
           "README.md",
           "LICENSE",
           "LICENSE-CODE",
-          "ThirdPartyNotices"
-        ]
+          "ThirdPartyNotices",
+          "breadcrumb/**"
+        ],
+        "group": "latest"
       }
     ],
     "resource": [
@@ -36,16 +36,25 @@
           "**/obj/**",
           "**/includes/**",
           "_themes/**",
-          "_themes.pdf/**"
-        ]
+          "_themes.pdf/**",
+          "breadcrumb/**"
+        ],
+        "group": "latest"
       }
     ],
     "overwrite": [],
+    "groups": {
+      "latest": {
+        "dest": "latest",
+        "moniker_range": "office-ui-fabric-react-latest"
+      }
+    },
     "externalReference": [],
     "globalMetadata": {
-      "breadcrumb_path": "/office-ui-fabric-react/breadcrumb/toc.json",
+      "breadcrumb_path": "/javascript/office-ui-fabric-react/breadcrumb/toc.json",
       "extendBreadcrumb": true,
-      "feedback_system": "None"
+      "feedback_system": "None",
+      "apiPlatform": "javascript"
     },
     "fileMetadata": {},
     "template": [],

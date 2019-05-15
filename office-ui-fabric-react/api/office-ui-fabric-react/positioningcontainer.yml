@@ -7,16 +7,16 @@ items:
       - typeScript
     type: class
     extends:
-      - office-ui-fabric-react.BaseComponent
+      - 'BaseComponent<IPositioningContainerProps, IPositioningContainerState> '
     implements:
       - office-ui-fabric-react.PositioningContainer
     package: office-ui-fabric-react
     children:
-      - office-ui-fabric-react.PositioningContainer.constructor
       - office-ui-fabric-react.PositioningContainer._dismissOnLostFocus
       - office-ui-fabric-react.PositioningContainer._dismissOnScroll
       - office-ui-fabric-react.PositioningContainer._onComponentDidMount
       - office-ui-fabric-react.PositioningContainer._setInitialFocus
+      - office-ui-fabric-react.PositioningContainer.(constructor)
       - office-ui-fabric-react.PositioningContainer.componentDidMount
       - office-ui-fabric-react.PositioningContainer.componentDidUpdate
       - office-ui-fabric-react.PositioningContainer.componentWillMount
@@ -25,23 +25,9 @@ items:
       - office-ui-fabric-react.PositioningContainer.dismiss
       - office-ui-fabric-react.PositioningContainer.onResize
       - office-ui-fabric-react.PositioningContainer.render
-  - uid: office-ui-fabric-react.PositioningContainer.constructor
-    summary: 'Constructs a new instance of the [PositioningContainer](xref:office-ui-fabric-react.PositioningContainer) class'
-    name: constructor(props)
-    fullName: constructor
-    langs:
-      - typeScript
-    type: constructor
-    syntax:
-      content: 'constructor(props: IPositioningContainerProps);'
-      parameters:
-        - id: props
-          description: ''
-          type:
-            - office-ui-fabric-react.IPositioningContainerProps
   - uid: office-ui-fabric-react.PositioningContainer._dismissOnLostFocus
     name: _dismissOnLostFocus(ev)
-    fullName: _dismissOnLostFocus
+    fullName: _dismissOnLostFocus(ev)
     langs:
       - typeScript
     type: method
@@ -58,7 +44,7 @@ items:
             - Event
   - uid: office-ui-fabric-react.PositioningContainer._dismissOnScroll
     name: _dismissOnScroll(ev)
-    fullName: _dismissOnScroll
+    fullName: _dismissOnScroll(ev)
     langs:
       - typeScript
     type: method
@@ -95,9 +81,23 @@ items:
       return:
         type:
           - () => void
+  - uid: office-ui-fabric-react.PositioningContainer.(constructor)
+    summary: Constructs a new instance of the `PositioningContainer` class
+    name: (constructor)(props)
+    fullName: (constructor)(props)
+    langs:
+      - typeScript
+    type: constructor
+    syntax:
+      content: 'constructor(props: IPositioningContainerProps);'
+      parameters:
+        - id: props
+          description: ''
+          type:
+            - office-ui-fabric-react.IPositioningContainerProps
   - uid: office-ui-fabric-react.PositioningContainer.componentDidMount
     name: componentDidMount()
-    fullName: componentDidMount
+    fullName: componentDidMount()
     langs:
       - typeScript
     type: method
@@ -109,7 +109,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.PositioningContainer.componentDidUpdate
     name: componentDidUpdate()
-    fullName: componentDidUpdate
+    fullName: componentDidUpdate()
     langs:
       - typeScript
     type: method
@@ -121,7 +121,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.PositioningContainer.componentWillMount
     name: componentWillMount()
-    fullName: componentWillMount
+    fullName: componentWillMount()
     langs:
       - typeScript
     type: method
@@ -133,7 +133,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.PositioningContainer.componentWillUpdate
     name: componentWillUpdate(newProps)
-    fullName: componentWillUpdate
+    fullName: componentWillUpdate(newProps)
     langs:
       - typeScript
     type: method
@@ -186,7 +186,7 @@ items:
           - '(ev?: Event | React.KeyboardEvent<HTMLElement> | React.MouseEvent<HTMLElement> | undefined) => void'
   - uid: office-ui-fabric-react.PositioningContainer.render
     name: render()
-    fullName: render
+    fullName: render()
     langs:
       - typeScript
     type: method

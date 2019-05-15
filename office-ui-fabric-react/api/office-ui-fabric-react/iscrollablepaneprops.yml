@@ -7,7 +7,7 @@ items:
       - typeScript
     type: interface
     extends:
-      - React.HTMLAttributes
+      - 'React.HTMLAttributes<HTMLElement | ScrollablePaneBase> '
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.IScrollablePaneProps.className
@@ -64,7 +64,7 @@ items:
       content: 'scrollbarVisibility?: ScrollbarVisibility;'
       return:
         type:
-          - office-ui-fabric-react.ScrollbarVisibility
+          - ScrollbarVisibility
   - uid: office-ui-fabric-react.IScrollablePaneProps.styles
     summary: Call to provide customized styling that will layer on top of the variant rules
     name: styles
@@ -88,4 +88,4 @@ items:
       content: 'theme?: ITheme;'
       return:
         type:
-          - office-ui-fabric-react.ITheme
+          - styling.ITheme

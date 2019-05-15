@@ -7,16 +7,16 @@ items:
       - typeScript
     type: class
     extends:
-      - office-ui-fabric-react.BaseComponent
+      - 'BaseComponent<ISelectedPeopleItemProps, IPeoplePickerItemState> '
     package: office-ui-fabric-react
     children:
-      - office-ui-fabric-react.ExtendedSelectedItem.constructor
+      - office-ui-fabric-react.ExtendedSelectedItem.(constructor)
       - office-ui-fabric-react.ExtendedSelectedItem.persona
       - office-ui-fabric-react.ExtendedSelectedItem.render
-  - uid: office-ui-fabric-react.ExtendedSelectedItem.constructor
-    summary: 'Constructs a new instance of the [ExtendedSelectedItem](xref:office-ui-fabric-react.ExtendedSelectedItem) class'
-    name: constructor(props)
-    fullName: constructor
+  - uid: office-ui-fabric-react.ExtendedSelectedItem.(constructor)
+    summary: Constructs a new instance of the `ExtendedSelectedItem` class
+    name: (constructor)(props)
+    fullName: (constructor)(props)
     langs:
       - typeScript
     type: constructor
@@ -34,18 +34,13 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'protected persona:'
+      content: 'protected persona: React.RefObject<HTMLDivElement>;'
       return:
         type:
-          - |-
-            {
-                    (component: HTMLDivElement | null): void;
-                    current: HTMLDivElement | null;
-                    value: HTMLDivElement | null;
-                }
+          - React.RefObject<HTMLDivElement>
   - uid: office-ui-fabric-react.ExtendedSelectedItem.render
     name: render()
-    fullName: render
+    fullName: render()
     langs:
       - typeScript
     type: method

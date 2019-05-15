@@ -7,11 +7,14 @@ items:
       - typeScript
     type: interface
     extends:
-      - React.Props
+      - React.ClassAttributes<PivotBase>
+      - 'React.HTMLAttributes<HTMLDivElement> '
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.IPivotProps.className
       - office-ui-fabric-react.IPivotProps.componentRef
+      - office-ui-fabric-react.IPivotProps.defaultSelectedIndex
+      - office-ui-fabric-react.IPivotProps.defaultSelectedKey
       - office-ui-fabric-react.IPivotProps.getTabId
       - office-ui-fabric-react.IPivotProps.headersOnly
       - office-ui-fabric-react.IPivotProps.initialSelectedIndex
@@ -48,10 +51,44 @@ items:
       return:
         type:
           - IRefObject<IPivot>
+  - uid: office-ui-fabric-react.IPivotProps.defaultSelectedIndex
+    summary: >-
+      Default selected index for the pivot. Only provide this if the pivot is an uncontrolled component; otherwise, use
+      the `selectedKey` property.
+
+
+      This property is also mutually exclusive with `defaultSelectedKey`<!-- -->.
+    name: defaultSelectedIndex
+    fullName: defaultSelectedIndex
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'defaultSelectedIndex?: number;'
+      return:
+        type:
+          - number
+  - uid: office-ui-fabric-react.IPivotProps.defaultSelectedKey
+    summary: >-
+      Default selected key for the pivot. Only provide this if the pivot is an uncontrolled component; otherwise, use
+      the `selectedKey` property.
+
+
+      This property is also mutually exclusive with `defaultSelectedIndex`<!-- -->.
+    name: defaultSelectedKey
+    fullName: defaultSelectedKey
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'defaultSelectedKey?: string;'
+      return:
+        type:
+          - string
   - uid: office-ui-fabric-react.IPivotProps.getTabId
     summary: >-
-      Optional. Specify how IDs are generated for each tab header. Useful if you're rendering content outside and need
-      to connect aria-labelledby.
+      Callback to customize how IDs are generated for each tab header. Useful if you're rendering content outside and
+      need to connect aria-labelledby.
     name: getTabId
     fullName: getTabId
     langs:
@@ -64,7 +101,7 @@ items:
           - '(itemKey: string, index: number) => string'
   - uid: office-ui-fabric-react.IPivotProps.headersOnly
     summary: >-
-      Specify whether to skip rendering the tabpanel with the content of the selected tab. Use this prop if you plan to
+      Whether to skip rendering the tabpanel with the content of the selected tab. Use this prop if you plan to
       separately render the tab content and don't want to leave an empty tabpanel in the page that may confuse Screen
       Readers.
     name: headersOnly
@@ -78,10 +115,11 @@ items:
         type:
           - boolean
   - uid: office-ui-fabric-react.IPivotProps.initialSelectedIndex
-    summary: |-
-      The index of the pivot item initially selected.
-
-      It only works when initialSelectedKey is not defined. You must not use them together.
+    summary: >-
+      Index of the pivot item initially selected. Mutually exclusive with `initialSelectedKey`<!-- -->. Only provide
+      this if the pivot is an uncontrolled component; otherwise, use `selectedKey`<!-- -->.
+    deprecated:
+      content: Use `defaultSelectedIndex`
     name: initialSelectedIndex
     fullName: initialSelectedIndex
     langs:
@@ -93,10 +131,11 @@ items:
         type:
           - number
   - uid: office-ui-fabric-react.IPivotProps.initialSelectedKey
-    summary: |-
-      The key of the pivot item initially selected.
-
-      It will make initialSelectedIndex not work. You must not use them together.
+    summary: >-
+      Key of the pivot item initially selected. Mutually exclusive with `initialSelectedIndex`<!-- -->. Only provide
+      this if the pivot is an uncontrolled component; otherwise, use `selectedKey`<!-- -->.
+    deprecated:
+      content: Use `defaultSelectedKey`
     name: initialSelectedKey
     fullName: initialSelectedKey
     langs:
@@ -108,7 +147,7 @@ items:
         type:
           - string
   - uid: office-ui-fabric-react.IPivotProps.linkFormat
-    summary: 'Specify the PivotLinkFormat to use (links, tabs)'
+    summary: 'PivotLinkFormat to use (links, tabs)'
     name: linkFormat
     fullName: linkFormat
     langs:
@@ -120,7 +159,7 @@ items:
         type:
           - office-ui-fabric-react.PivotLinkFormat
   - uid: office-ui-fabric-react.IPivotProps.linkSize
-    summary: 'Specify the PivotLinkSize to use (normal, large)'
+    summary: 'PivotLinkSize to use (normal, large)'
     name: linkSize
     fullName: linkSize
     langs:
@@ -132,7 +171,7 @@ items:
         type:
           - office-ui-fabric-react.PivotLinkSize
   - uid: office-ui-fabric-react.IPivotProps.onLinkClick
-    summary: Callback issued when the selected pivot item is changed
+    summary: Callback for when the selected pivot item is changed.
     name: onLinkClick
     fullName: onLinkClick
     langs:
@@ -144,20 +183,20 @@ items:
         type:
           - '(item?: PivotItem, ev?: React.MouseEvent<HTMLElement>) => void'
   - uid: office-ui-fabric-react.IPivotProps.selectedKey
-    summary: |-
-      The key of the selected pivot item.
-
-      If set, this will override the Pivot's selected item state.
+    summary: >-
+      Key of the selected pivot item. Updating this will override the Pivot's selected item state. Only provide this if
+      the pivot is a controlled component where you are maintaining the current state; otherwise, use
+      `defaultSelectedKey`<!-- -->.
     name: selectedKey
     fullName: selectedKey
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'selectedKey?: string;'
+      content: 'selectedKey?: string | null;'
       return:
         type:
-          - string
+          - string | null
   - uid: office-ui-fabric-react.IPivotProps.styles
     summary: Call to provide customized styling that will layer on top of the variant rules.
     name: styles
@@ -181,4 +220,4 @@ items:
       content: 'theme?: ITheme;'
       return:
         type:
-          - office-ui-fabric-react.ITheme
+          - styling.ITheme

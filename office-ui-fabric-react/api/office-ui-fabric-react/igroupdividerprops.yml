@@ -8,6 +8,8 @@ items:
     type: interface
     package: office-ui-fabric-react
     children:
+      - office-ui-fabric-react.IGroupDividerProps.className
+      - office-ui-fabric-react.IGroupDividerProps.compact
       - office-ui-fabric-react.IGroupDividerProps.componentRef
       - office-ui-fabric-react.IGroupDividerProps.expandButtonProps
       - office-ui-fabric-react.IGroupDividerProps.footerText
@@ -28,7 +30,32 @@ items:
       - office-ui-fabric-react.IGroupDividerProps.selected
       - office-ui-fabric-react.IGroupDividerProps.selectionMode
       - office-ui-fabric-react.IGroupDividerProps.showAllLinkText
+      - office-ui-fabric-react.IGroupDividerProps.theme
       - office-ui-fabric-react.IGroupDividerProps.viewport
+  - uid: office-ui-fabric-react.IGroupDividerProps.className
+    summary: Custom className
+    name: className
+    fullName: className
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'className?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.IGroupDividerProps.compact
+    summary: Boolean value to indicate if the component should render in compact mode. Set to false by default
+    name: compact
+    fullName: compact
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'compact?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: office-ui-fabric-react.IGroupDividerProps.componentRef
     name: componentRef
     fullName: componentRef
@@ -42,6 +69,10 @@ items:
           - 'IRefObject<{}>'
   - uid: office-ui-fabric-react.IGroupDividerProps.expandButtonProps
     summary: Props for expand/collapse button
+    deprecated:
+      content: >-
+        Use [IGroupHeaderProps.expandButtonProps](xref:office-ui-fabric-react.IGroupHeaderProps.expandButtonProps)
+        instead.
     name: expandButtonProps
     fullName: expandButtonProps
     langs:
@@ -189,17 +220,17 @@ items:
         type:
           - '(group: IGroup) => void'
   - uid: office-ui-fabric-react.IGroupDividerProps.onRenderTitle
-    summary: Override which allows the caller to provider a custom title.
+    summary: Override which allows the caller to provider a custom renderer for the GroupHeader title.
     name: onRenderTitle
     fullName: onRenderTitle
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'onRenderTitle?: IRenderFunction<IGroupDividerProps>;'
+      content: 'onRenderTitle?: IRenderFunction<IGroupHeaderProps>;'
       return:
         type:
-          - IRenderFunction<IGroupDividerProps>
+          - IRenderFunction<IGroupHeaderProps>
   - uid: office-ui-fabric-react.IGroupDividerProps.onToggleCollapse
     summary: Callback for when the group is expanded or collapsed.
     name: onToggleCollapse
@@ -272,6 +303,18 @@ items:
       return:
         type:
           - string
+  - uid: office-ui-fabric-react.IGroupDividerProps.theme
+    summary: Theme provided by the Higher Order Component
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type:
+          - styling.ITheme
   - uid: office-ui-fabric-react.IGroupDividerProps.viewport
     summary: A reference to the viewport in which the header is rendered.
     name: viewport

@@ -7,12 +7,12 @@ items:
       - typeScript
     type: class
     extends:
-      - office-ui-fabric-react.BaseComponent
+      - 'BaseComponent<IScrollablePaneProps, IScrollablePaneState> '
     implements:
       - office-ui-fabric-react.IScrollablePane
     package: office-ui-fabric-react
     children:
-      - office-ui-fabric-react.ScrollablePaneBase.constructor
+      - office-ui-fabric-react.ScrollablePaneBase.(constructor)
       - office-ui-fabric-react.ScrollablePaneBase.addSticky
       - office-ui-fabric-react.ScrollablePaneBase.childContextTypes
       - office-ui-fabric-react.ScrollablePaneBase.componentDidMount
@@ -32,12 +32,13 @@ items:
       - office-ui-fabric-react.ScrollablePaneBase.stickyAbove
       - office-ui-fabric-react.ScrollablePaneBase.stickyBelow
       - office-ui-fabric-react.ScrollablePaneBase.subscribe
+      - office-ui-fabric-react.ScrollablePaneBase.syncScrollSticky
       - office-ui-fabric-react.ScrollablePaneBase.unsubscribe
       - office-ui-fabric-react.ScrollablePaneBase.updateStickyRefHeights
-  - uid: office-ui-fabric-react.ScrollablePaneBase.constructor
-    summary: 'Constructs a new instance of the [ScrollablePaneBase](xref:office-ui-fabric-react.ScrollablePaneBase) class'
-    name: constructor(props)
-    fullName: constructor
+  - uid: office-ui-fabric-react.ScrollablePaneBase.(constructor)
+    summary: Constructs a new instance of the `ScrollablePaneBase` class
+    name: (constructor)(props)
+    fullName: (constructor)(props)
     langs:
       - typeScript
     type: constructor
@@ -72,7 +73,7 @@ items:
           - React.ValidationMap<IScrollablePaneContext>
   - uid: office-ui-fabric-react.ScrollablePaneBase.componentDidMount
     name: componentDidMount()
-    fullName: componentDidMount
+    fullName: componentDidMount()
     langs:
       - typeScript
     type: method
@@ -84,7 +85,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.ScrollablePaneBase.componentDidUpdate
     name: 'componentDidUpdate(prevProps, prevState)'
-    fullName: componentDidUpdate
+    fullName: 'componentDidUpdate(prevProps, prevState)'
     langs:
       - typeScript
     type: method
@@ -105,7 +106,7 @@ items:
             - office-ui-fabric-react.IScrollablePaneState
   - uid: office-ui-fabric-react.ScrollablePaneBase.componentWillUnmount
     name: componentWillUnmount()
-    fullName: componentWillUnmount
+    fullName: componentWillUnmount()
     langs:
       - typeScript
     type: method
@@ -128,7 +129,7 @@ items:
           - HTMLDivElement | null
   - uid: office-ui-fabric-react.ScrollablePaneBase.forceLayoutUpdate
     name: forceLayoutUpdate()
-    fullName: forceLayoutUpdate
+    fullName: forceLayoutUpdate()
     langs:
       - typeScript
     type: method
@@ -140,7 +141,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.ScrollablePaneBase.getChildContext
     name: getChildContext()
-    fullName: getChildContext
+    fullName: getChildContext()
     langs:
       - typeScript
     type: method
@@ -185,7 +186,7 @@ items:
           - '(sticky: Sticky) => void'
   - uid: office-ui-fabric-react.ScrollablePaneBase.render
     name: render()
-    fullName: render
+    fullName: render()
     langs:
       - typeScript
     type: method
@@ -208,7 +209,7 @@ items:
           - HTMLDivElement | null
   - uid: office-ui-fabric-react.ScrollablePaneBase.setStickiesDistanceFromTop
     name: setStickiesDistanceFromTop()
-    fullName: setStickiesDistanceFromTop
+    fullName: setStickiesDistanceFromTop()
     langs:
       - typeScript
     type: method
@@ -220,7 +221,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.ScrollablePaneBase.shouldComponentUpdate
     name: 'shouldComponentUpdate(nextProps, nextState)'
-    fullName: shouldComponentUpdate
+    fullName: 'shouldComponentUpdate(nextProps, nextState)'
     langs:
       - typeScript
     type: method
@@ -246,10 +247,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'sortSticky: (sticky: Sticky) => void;'
+      content: 'sortSticky: (sticky: Sticky, sortAgain?: boolean | undefined) => void;'
       return:
         type:
-          - '(sticky: Sticky) => void'
+          - '(sticky: Sticky, sortAgain?: boolean | undefined) => void'
   - uid: office-ui-fabric-react.ScrollablePaneBase.stickyAbove
     name: stickyAbove
     fullName: stickyAbove
@@ -283,6 +284,17 @@ items:
       return:
         type:
           - '(handler: Function) => void'
+  - uid: office-ui-fabric-react.ScrollablePaneBase.syncScrollSticky
+    name: syncScrollSticky
+    fullName: syncScrollSticky
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'syncScrollSticky: (sticky: Sticky) => void;'
+      return:
+        type:
+          - '(sticky: Sticky) => void'
   - uid: office-ui-fabric-react.ScrollablePaneBase.unsubscribe
     name: unsubscribe
     fullName: unsubscribe

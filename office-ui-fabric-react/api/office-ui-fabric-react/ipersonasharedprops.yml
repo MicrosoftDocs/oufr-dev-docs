@@ -7,7 +7,7 @@ items:
       - typeScript
     type: interface
     extends:
-      - React.HTMLAttributes
+      - 'React.HTMLAttributes<PersonaBase | PersonaCoinBase | HTMLDivElement> '
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.IPersonaSharedProps.allowPhoneInitials
@@ -56,10 +56,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'coinProps?: React.HTMLAttributes<HTMLDivElement>;'
+      content: 'coinProps?: IPersonaCoinProps;'
       return:
         type:
-          - React.HTMLAttributes<HTMLDivElement>
+          - office-ui-fabric-react.IPersonaCoinProps
   - uid: office-ui-fabric-react.IPersonaSharedProps.coinSize
     summary: Optional custom persona coin size in pixel.
     name: coinSize
@@ -195,7 +195,7 @@ items:
         type:
           - IRenderFunction<IPersonaSharedProps>
   - uid: office-ui-fabric-react.IPersonaSharedProps.optionalText
-    summary: 'Optional text to display, usually a custom message set.'
+    summary: 'Optional text to display, usually a custom message set. The optional text will only be shown when using Size100.'
     name: optionalText
     fullName: optionalText
     langs:
@@ -294,7 +294,9 @@ items:
         type:
           - office-ui-fabric-react.PersonaSize
   - uid: office-ui-fabric-react.IPersonaSharedProps.tertiaryText
-    summary: 'Tertiary text to display, usually the status of the user.'
+    summary: >-
+      Tertiary text to display, usually the status of the user. The tertiary text will only be shown when using Size72
+      or Size100.
     name: tertiaryText
     fullName: tertiaryText
     langs:
@@ -328,4 +330,4 @@ items:
       content: 'theme?: ITheme;'
       return:
         type:
-          - office-ui-fabric-react.ITheme
+          - styling.ITheme

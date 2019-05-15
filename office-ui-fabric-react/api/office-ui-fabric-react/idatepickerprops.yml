@@ -7,14 +7,17 @@ items:
       - typeScript
     type: interface
     extends:
-      - office-ui-fabric-react.IBaseProps
+      - IBaseProps<IDatePicker>
+      - 'React.HTMLAttributes<HTMLElement> '
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.IDatePickerProps.allFocusable
       - office-ui-fabric-react.IDatePickerProps.allowTextInput
       - office-ui-fabric-react.IDatePickerProps.ariaLabel
       - office-ui-fabric-react.IDatePickerProps.borderless
+      - office-ui-fabric-react.IDatePickerProps.calendarAs
       - office-ui-fabric-react.IDatePickerProps.calendarProps
+      - office-ui-fabric-react.IDatePickerProps.calloutProps
       - office-ui-fabric-react.IDatePickerProps.className
       - office-ui-fabric-react.IDatePickerProps.componentRef
       - office-ui-fabric-react.IDatePickerProps.dateTimeFormatter
@@ -42,6 +45,8 @@ items:
       - office-ui-fabric-react.IDatePickerProps.showWeekNumbers
       - office-ui-fabric-react.IDatePickerProps.strings
       - office-ui-fabric-react.IDatePickerProps.styles
+      - office-ui-fabric-react.IDatePickerProps.tabIndex
+      - office-ui-fabric-react.IDatePickerProps.textField
       - office-ui-fabric-react.IDatePickerProps.theme
       - office-ui-fabric-react.IDatePickerProps.today
       - office-ui-fabric-react.IDatePickerProps.underlined
@@ -94,6 +99,18 @@ items:
       return:
         type:
           - boolean
+  - uid: office-ui-fabric-react.IDatePickerProps.calendarAs
+    summary: Custom Calendar to be used for date picking
+    name: calendarAs
+    fullName: calendarAs
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'calendarAs?: IComponentAs<ICalendarProps>;'
+      return:
+        type:
+          - IComponentAs<ICalendarProps>
   - uid: office-ui-fabric-react.IDatePickerProps.calendarProps
     summary: Pass calendar props to calendar component
     name: calendarProps
@@ -106,6 +123,18 @@ items:
       return:
         type:
           - office-ui-fabric-react.ICalendarProps
+  - uid: office-ui-fabric-react.IDatePickerProps.calloutProps
+    summary: Pass callout props to callout component
+    name: calloutProps
+    fullName: calloutProps
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'calloutProps?: ICalloutProps;'
+      return:
+        type:
+          - office-ui-fabric-react.ICalloutProps
   - uid: office-ui-fabric-react.IDatePickerProps.className
     summary: Optional Classname for datepicker root element .
     name: className
@@ -434,6 +463,30 @@ items:
       return:
         type:
           - 'IStyleFunction<IDatePickerStyleProps, IDatePickerStyles>'
+  - uid: office-ui-fabric-react.IDatePickerProps.tabIndex
+    summary: The tabIndex of the TextField
+    name: tabIndex
+    fullName: tabIndex
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tabIndex?: number;'
+      return:
+        type:
+          - number
+  - uid: office-ui-fabric-react.IDatePickerProps.textField
+    summary: Pass textField props to textField component. Prop name is "textField" for compatiblity with upcoming slots work.
+    name: textField
+    fullName: textField
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'textField?: ITextFieldProps;'
+      return:
+        type:
+          - office-ui-fabric-react.ITextFieldProps
   - uid: office-ui-fabric-react.IDatePickerProps.theme
     summary: Theme provided by High-Order Component.
     name: theme
@@ -445,7 +498,7 @@ items:
       content: 'theme?: ITheme;'
       return:
         type:
-          - office-ui-fabric-react.ITheme
+          - styling.ITheme
   - uid: office-ui-fabric-react.IDatePickerProps.today
     summary: 'Value of today. If null, current time in client machine will be used.'
     name: today

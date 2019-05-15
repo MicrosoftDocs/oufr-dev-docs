@@ -10,26 +10,11 @@ items:
       - typeScript
     type: class
     extends:
-      - office-ui-fabric-react.BaseComponent
+      - ''
     package: office-ui-fabric-react
     children:
-      - office-ui-fabric-react.ProgressIndicatorBase.constructor
       - office-ui-fabric-react.ProgressIndicatorBase.defaultProps
       - office-ui-fabric-react.ProgressIndicatorBase.render
-  - uid: office-ui-fabric-react.ProgressIndicatorBase.constructor
-    summary: 'Constructs a new instance of the [ProgressIndicatorBase](xref:office-ui-fabric-react.ProgressIndicatorBase) class'
-    name: constructor(props)
-    fullName: constructor
-    langs:
-      - typeScript
-    type: constructor
-    syntax:
-      content: 'constructor(props: IProgressIndicatorProps);'
-      parameters:
-        - id: props
-          description: ''
-          type:
-            - office-ui-fabric-react.IProgressIndicatorProps
   - uid: office-ui-fabric-react.ProgressIndicatorBase.defaultProps
     name: defaultProps
     fullName: defaultProps
@@ -37,7 +22,12 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'static defaultProps:'
+      content: |-
+        static defaultProps: {
+                label: string;
+                description: string;
+                width: number;
+            };
       return:
         type:
           - |-
@@ -48,7 +38,7 @@ items:
                 }
   - uid: office-ui-fabric-react.ProgressIndicatorBase.render
     name: render()
-    fullName: render
+    fullName: render()
     langs:
       - typeScript
     type: method

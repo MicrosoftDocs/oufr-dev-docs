@@ -35,12 +35,12 @@ items:
       - typeScript
     type: class
     extends:
-      - office-ui-fabric-react.BaseComponent
+      - 'BaseComponent<IListProps<T>, IListState<T>> '
     implements:
       - office-ui-fabric-react.IList
     package: office-ui-fabric-react
     children:
-      - office-ui-fabric-react.List.constructor
+      - office-ui-fabric-react.List.(constructor)
       - office-ui-fabric-react.List.componentDidMount
       - office-ui-fabric-react.List.componentWillReceiveProps
       - office-ui-fabric-react.List.defaultProps
@@ -50,23 +50,23 @@ items:
       - office-ui-fabric-react.List.render
       - office-ui-fabric-react.List.scrollToIndex
       - office-ui-fabric-react.List.shouldComponentUpdate
-  - uid: office-ui-fabric-react.List.constructor
-    summary: 'Constructs a new instance of the [List](xref:office-ui-fabric-react.List) class'
-    name: constructor(props)
-    fullName: constructor
+  - uid: office-ui-fabric-react.List.(constructor)
+    summary: Constructs a new instance of the `List` class
+    name: (constructor)(props)
+    fullName: (constructor)(props)
     langs:
       - typeScript
     type: constructor
     syntax:
-      content: 'constructor(props: IListProps);'
+      content: 'constructor(props: IListProps<T>);'
       parameters:
         - id: props
           description: ''
           type:
-            - office-ui-fabric-react.IListProps
+            - IListProps<T>
   - uid: office-ui-fabric-react.List.componentDidMount
     name: componentDidMount()
-    fullName: componentDidMount
+    fullName: componentDidMount()
     langs:
       - typeScript
     type: method
@@ -78,12 +78,12 @@ items:
         description: ''
   - uid: office-ui-fabric-react.List.componentWillReceiveProps
     name: componentWillReceiveProps(newProps)
-    fullName: componentWillReceiveProps
+    fullName: componentWillReceiveProps(newProps)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'componentWillReceiveProps(newProps: IListProps): void;'
+      content: 'componentWillReceiveProps(newProps: IListProps<T>): void;'
       return:
         type:
           - void
@@ -92,7 +92,7 @@ items:
         - id: newProps
           description: ''
           type:
-            - office-ui-fabric-react.IListProps
+            - IListProps<T>
   - uid: office-ui-fabric-react.List.defaultProps
     name: defaultProps
     fullName: defaultProps
@@ -100,7 +100,13 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'static defaultProps:'
+      content: |-
+        static defaultProps: {
+                startIndex: number;
+                onRenderCell: (item: any, index: number, containsFocus: boolean) => JSX.Element;
+                renderedWindowsAhead: number;
+                renderedWindowsBehind: number;
+            };
       return:
         type:
           - |-
@@ -112,7 +118,7 @@ items:
                 }
   - uid: office-ui-fabric-react.List.forceUpdate
     name: forceUpdate()
-    fullName: forceUpdate
+    fullName: forceUpdate()
     langs:
       - typeScript
     type: method
@@ -124,7 +130,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.List.getStartItemIndexInView
     name: getStartItemIndexInView(measureItem)
-    fullName: getStartItemIndexInView
+    fullName: getStartItemIndexInView(measureItem)
     langs:
       - typeScript
     type: method
@@ -146,7 +152,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'refs:'
+      content: |-
+        refs: {
+                [key: string]: React.ReactInstance;
+            };
       return:
         type:
           - |-
@@ -155,7 +164,7 @@ items:
                 }
   - uid: office-ui-fabric-react.List.render
     name: render()
-    fullName: render
+    fullName: render()
     langs:
       - typeScript
     type: method
@@ -174,7 +183,7 @@ items:
       Note: with items of variable height and no passed in `getPageHeight` method, the list might jump after scrolling
       when windows before/ahead are being rendered, and the estimated height is replaced using actual elements.
     name: 'scrollToIndex(index, measureItem, scrollToMode)'
-    fullName: scrollToIndex
+    fullName: 'scrollToIndex(index, measureItem, scrollToMode)'
     langs:
       - typeScript
     type: method
@@ -196,15 +205,15 @@ items:
         - id: scrollToMode
           description: Optional defines where in the window the item should be positioned to when scrolling
           type:
-            - office-ui-fabric-react.ScrollToMode
+            - ScrollToMode
   - uid: office-ui-fabric-react.List.shouldComponentUpdate
     name: 'shouldComponentUpdate(newProps, newState)'
-    fullName: shouldComponentUpdate
+    fullName: 'shouldComponentUpdate(newProps, newState)'
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'shouldComponentUpdate(newProps: IListProps, newState: IListState): boolean;'
+      content: 'shouldComponentUpdate(newProps: IListProps<T>, newState: IListState<T>): boolean;'
       return:
         type:
           - boolean
@@ -213,8 +222,8 @@ items:
         - id: newProps
           description: ''
           type:
-            - office-ui-fabric-react.IListProps
+            - IListProps<T>
         - id: newState
           description: ''
           type:
-            - office-ui-fabric-react.IListState
+            - IListState<T>

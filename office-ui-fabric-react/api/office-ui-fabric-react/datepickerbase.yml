@@ -7,22 +7,22 @@ items:
       - typeScript
     type: class
     extends:
-      - office-ui-fabric-react.BaseComponent
+      - 'BaseComponent<IDatePickerProps, IDatePickerState> '
     implements:
       - office-ui-fabric-react.IDatePicker
     package: office-ui-fabric-react
     children:
-      - office-ui-fabric-react.DatePickerBase.constructor
+      - office-ui-fabric-react.DatePickerBase.(constructor)
       - office-ui-fabric-react.DatePickerBase.componentDidUpdate
       - office-ui-fabric-react.DatePickerBase.componentWillReceiveProps
       - office-ui-fabric-react.DatePickerBase.defaultProps
       - office-ui-fabric-react.DatePickerBase.focus
       - office-ui-fabric-react.DatePickerBase.render
       - office-ui-fabric-react.DatePickerBase.reset
-  - uid: office-ui-fabric-react.DatePickerBase.constructor
-    summary: 'Constructs a new instance of the [DatePickerBase](xref:office-ui-fabric-react.DatePickerBase) class'
-    name: constructor(props)
-    fullName: constructor
+  - uid: office-ui-fabric-react.DatePickerBase.(constructor)
+    summary: Constructs a new instance of the `DatePickerBase` class
+    name: (constructor)(props)
+    fullName: (constructor)(props)
     langs:
       - typeScript
     type: constructor
@@ -35,7 +35,7 @@ items:
             - office-ui-fabric-react.IDatePickerProps
   - uid: office-ui-fabric-react.DatePickerBase.componentDidUpdate
     name: 'componentDidUpdate(prevProps, prevState)'
-    fullName: componentDidUpdate
+    fullName: 'componentDidUpdate(prevProps, prevState)'
     langs:
       - typeScript
     type: method
@@ -56,7 +56,7 @@ items:
             - office-ui-fabric-react.IDatePickerState
   - uid: office-ui-fabric-react.DatePickerBase.componentWillReceiveProps
     name: componentWillReceiveProps(nextProps)
-    fullName: componentWillReceiveProps
+    fullName: componentWillReceiveProps(nextProps)
     langs:
       - typeScript
     type: method
@@ -84,7 +84,7 @@ items:
           - office-ui-fabric-react.IDatePickerProps
   - uid: office-ui-fabric-react.DatePickerBase.focus
     name: focus()
-    fullName: focus
+    fullName: focus()
     langs:
       - typeScript
     type: method
@@ -96,7 +96,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.DatePickerBase.render
     name: render()
-    fullName: render
+    fullName: render()
     langs:
       - typeScript
     type: method
@@ -108,7 +108,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.DatePickerBase.reset
     name: reset()
-    fullName: reset
+    fullName: reset()
     langs:
       - typeScript
     type: method

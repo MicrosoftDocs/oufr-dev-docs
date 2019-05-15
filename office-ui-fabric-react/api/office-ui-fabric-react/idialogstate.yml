@@ -10,10 +10,14 @@ items:
     children:
       - office-ui-fabric-react.IDialogState.hasBeenOpened
       - office-ui-fabric-react.IDialogState.id
+      - office-ui-fabric-react.IDialogState.isInKeyboardMoveMode
+      - office-ui-fabric-react.IDialogState.isModalMenuOpen
       - office-ui-fabric-react.IDialogState.isOpen
       - office-ui-fabric-react.IDialogState.isVisible
       - office-ui-fabric-react.IDialogState.isVisibleClose
       - office-ui-fabric-react.IDialogState.modalRectangleTop
+      - office-ui-fabric-react.IDialogState.x
+      - office-ui-fabric-react.IDialogState.y
   - uid: office-ui-fabric-react.IDialogState.hasBeenOpened
     name: hasBeenOpened
     fullName: hasBeenOpened
@@ -36,6 +40,28 @@ items:
       return:
         type:
           - string
+  - uid: office-ui-fabric-react.IDialogState.isInKeyboardMoveMode
+    name: isInKeyboardMoveMode
+    fullName: isInKeyboardMoveMode
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isInKeyboardMoveMode?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-ui-fabric-react.IDialogState.isModalMenuOpen
+    name: isModalMenuOpen
+    fullName: isModalMenuOpen
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isModalMenuOpen?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: office-ui-fabric-react.IDialogState.isOpen
     name: isOpen
     fullName: isOpen
@@ -77,6 +103,28 @@ items:
     type: property
     syntax:
       content: 'modalRectangleTop?: number;'
+      return:
+        type:
+          - number
+  - uid: office-ui-fabric-react.IDialogState.x
+    name: x
+    fullName: x
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'x: number;'
+      return:
+        type:
+          - number
+  - uid: office-ui-fabric-react.IDialogState.y
+    name: 'y'
+    fullName: 'y'
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'y: number;'
       return:
         type:
           - number

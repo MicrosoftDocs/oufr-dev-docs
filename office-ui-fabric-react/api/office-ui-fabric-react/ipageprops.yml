@@ -7,7 +7,8 @@ items:
       - typeScript
     type: interface
     extends:
-      - React.HTMLAttributes
+      - React.HTMLAttributes<HTMLDivElement>
+      - 'React.ClassAttributes<HTMLDivElement> '
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.IPageProps.page
@@ -20,10 +21,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'page: IPage;'
+      content: 'page: IPage<T>;'
       return:
         type:
-          - office-ui-fabric-react.IPage
+          - IPage<T>
   - uid: office-ui-fabric-react.IPageProps.role
     summary: The role being assigned to the rendered page element by the list.
     name: role

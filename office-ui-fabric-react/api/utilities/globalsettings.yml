@@ -1,0 +1,93 @@
+### YamlMime:UniversalReference
+items:
+  - uid: utilities.GlobalSettings
+    summary: >-
+      Global settings helper, which stores settings in the global (window) namespace. If window is not provided, it will
+      store settings in module scope. Provides a way to observe changes as well when their values change.
+    name: GlobalSettings
+    fullName: GlobalSettings
+    langs:
+      - typeScript
+    type: class
+    package: utilities
+    children:
+      - utilities.GlobalSettings.addChangeListener
+      - utilities.GlobalSettings.getValue
+      - utilities.GlobalSettings.removeChangeListener
+      - utilities.GlobalSettings.setValue
+  - uid: utilities.GlobalSettings.addChangeListener
+    name: addChangeListener(cb)
+    fullName: addChangeListener(cb)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'static addChangeListener(cb: IChangeEventCallback): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: cb
+          description: ''
+          type:
+            - utilities.IChangeEventCallback
+  - uid: utilities.GlobalSettings.getValue
+    name: 'getValue(key, defaultValue)'
+    fullName: 'getValue(key, defaultValue)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'static getValue<T>(key: string, defaultValue?: T | (() => T)): T;'
+      return:
+        type:
+          - T
+        description: ''
+      parameters:
+        - id: key
+          description: ''
+          type:
+            - string
+        - id: defaultValue
+          description: ''
+          type:
+            - T | (() => T)
+  - uid: utilities.GlobalSettings.removeChangeListener
+    name: removeChangeListener(cb)
+    fullName: removeChangeListener(cb)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'static removeChangeListener(cb: IChangeEventCallback): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: cb
+          description: ''
+          type:
+            - utilities.IChangeEventCallback
+  - uid: utilities.GlobalSettings.setValue
+    name: 'setValue(key, value)'
+    fullName: 'setValue(key, value)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'static setValue<T>(key: string, value: T): T;'
+      return:
+        type:
+          - T
+        description: ''
+      parameters:
+        - id: key
+          description: ''
+          type:
+            - string
+        - id: value
+          description: ''
+          type:
+            - T

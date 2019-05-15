@@ -8,24 +8,12 @@ items:
     type: interface
     package: office-ui-fabric-react
     children:
-      - office-ui-fabric-react.IComboBox.dismissMenu
       - office-ui-fabric-react.IComboBox.focus
-  - uid: office-ui-fabric-react.IComboBox.dismissMenu
-    summary: If there is a menu open this will dismiss the menu
-    name: dismissMenu
-    fullName: dismissMenu
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'dismissMenu: () => void;'
-      return:
-        type:
-          - () => void
+      - office-ui-fabric-react.IComboBox.dismissMenu
   - uid: office-ui-fabric-react.IComboBox.focus
     summary: Sets focus to the input in the comboBox
     name: 'focus(shouldOpenOnFocus, useFocusAsync)'
-    fullName: focus
+    fullName: 'focus(shouldOpenOnFocus, useFocusAsync)'
     langs:
       - typeScript
     type: method
@@ -44,3 +32,15 @@ items:
           description: Determines if we should focus the input asynchronously
           type:
             - boolean
+  - uid: office-ui-fabric-react.IComboBox.dismissMenu
+    summary: If there is a menu open this will dismiss the menu
+    name: dismissMenu
+    fullName: dismissMenu
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'dismissMenu: () => void;'
+      return:
+        type:
+          - () => void

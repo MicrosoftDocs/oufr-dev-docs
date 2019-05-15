@@ -7,7 +7,7 @@ items:
       - typeScript
     type: interface
     extends:
-      - office-ui-fabric-react.ISelectableDroppableTextProps
+      - 'ISelectableDroppableTextProps<IDropdown, HTMLDivElement> '
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.IDropdownProps.defaultSelectedKeys
@@ -21,6 +21,7 @@ items:
       - office-ui-fabric-react.IDropdownProps.onChanged
       - office-ui-fabric-react.IDropdownProps.onDismiss
       - office-ui-fabric-react.IDropdownProps.onRenderCaretDown
+      - office-ui-fabric-react.IDropdownProps.onRenderPlaceholder
       - office-ui-fabric-react.IDropdownProps.onRenderPlaceHolder
       - office-ui-fabric-react.IDropdownProps.onRenderTitle
       - office-ui-fabric-react.IDropdownProps.options
@@ -30,7 +31,9 @@ items:
       - office-ui-fabric-react.IDropdownProps.styles
       - office-ui-fabric-react.IDropdownProps.theme
   - uid: office-ui-fabric-react.IDropdownProps.defaultSelectedKeys
-    summary: Keys that will be initially used to set selected items.
+    summary: >-
+      Keys that will be initially used to set selected items. This prop is used for `multiSelect` scenarios. In other
+      cases, `defaultSelectedKey` should be used.
     name: defaultSelectedKeys
     fullName: defaultSelectedKeys
     langs:
@@ -166,8 +169,22 @@ items:
       return:
         type:
           - IRenderFunction<IDropdownProps>
+  - uid: office-ui-fabric-react.IDropdownProps.onRenderPlaceholder
+    summary: Optional custom renderer for placeholder text
+    name: onRenderPlaceholder
+    fullName: onRenderPlaceholder
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onRenderPlaceholder?: IRenderFunction<IDropdownProps>;'
+      return:
+        type:
+          - IRenderFunction<IDropdownProps>
   - uid: office-ui-fabric-react.IDropdownProps.onRenderPlaceHolder
     summary: Optional custom renderer for placeholder text
+    deprecated:
+      content: Use `onRenderPlaceholder`
     name: onRenderPlaceHolder
     fullName: onRenderPlaceHolder
     langs:
@@ -186,12 +203,14 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'onRenderTitle?: IRenderFunction<IDropdownOption | IDropdownOption[]>;'
+      content: 'onRenderTitle?: IRenderFunction<IDropdownOption[]>;'
       return:
         type:
-          - 'IRenderFunction<IDropdownOption | IDropdownOption[]>'
+          - 'IRenderFunction<IDropdownOption[]>'
   - uid: office-ui-fabric-react.IDropdownProps.options
-    summary: Options for the dropdown.
+    summary: >-
+      Options for the dropdown. If using `defaultSelectedKey` or `defaultSelectedKeys`<!-- -->, options must be pure for
+      correct behavior.
     name: options
     fullName: options
     langs:
@@ -204,6 +223,8 @@ items:
           - 'IDropdownOption[]'
   - uid: office-ui-fabric-react.IDropdownProps.placeHolder
     summary: Input placeholder text. Displayed until option is selected.
+    deprecated:
+      content: Use `placeholder`
     name: placeHolder
     fullName: placeHolder
     langs:
@@ -215,6 +236,10 @@ items:
         type:
           - string
   - uid: office-ui-fabric-react.IDropdownProps.responsiveMode
+    summary: >-
+      Pass in ResponsiveMode to manually overwrite the way the Dropdown renders. ResponsiveMode.Large would, for
+      instance, disable the behavior where Dropdown options get rendered into a Panel while ResponsiveMode.Small would
+      result in the Dropdown options always getting rendered in a Panel.
     name: responsiveMode
     fullName: responsiveMode
     langs:
@@ -228,17 +253,17 @@ items:
   - uid: office-ui-fabric-react.IDropdownProps.selectedKeys
     summary: >-
       Keys of the selected items. If you provide this, you must maintain selection state by observing onChange events
-      and passing a new value in when changed.
+      and passing a new value in when changed. Passing null in will clear the selection.
     name: selectedKeys
     fullName: selectedKeys
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'selectedKeys?: string[] | number[];'
+      content: 'selectedKeys?: string[] | number[] | null;'
       return:
         type:
-          - 'string[] | number[]'
+          - 'string[] | number[] | null'
   - uid: office-ui-fabric-react.IDropdownProps.styles
     summary: Call to provide customized styling that will layer on top of the variant rules.
     name: styles
@@ -262,4 +287,4 @@ items:
       content: 'theme?: ITheme;'
       return:
         type:
-          - office-ui-fabric-react.ITheme
+          - styling.ITheme

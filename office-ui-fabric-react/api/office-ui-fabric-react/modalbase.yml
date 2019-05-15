@@ -7,21 +7,21 @@ items:
       - typeScript
     type: class
     extends:
-      - office-ui-fabric-react.BaseComponent
+      - 'BaseComponent<IModalProps, IDialogState> '
     implements:
       - office-ui-fabric-react.IModal
     package: office-ui-fabric-react
     children:
-      - office-ui-fabric-react.ModalBase.constructor
+      - office-ui-fabric-react.ModalBase.(constructor)
       - office-ui-fabric-react.ModalBase.componentDidUpdate
       - office-ui-fabric-react.ModalBase.componentWillReceiveProps
       - office-ui-fabric-react.ModalBase.defaultProps
       - office-ui-fabric-react.ModalBase.focus
       - office-ui-fabric-react.ModalBase.render
-  - uid: office-ui-fabric-react.ModalBase.constructor
-    summary: 'Constructs a new instance of the [ModalBase](xref:office-ui-fabric-react.ModalBase) class'
-    name: constructor(props)
-    fullName: constructor
+  - uid: office-ui-fabric-react.ModalBase.(constructor)
+    summary: Constructs a new instance of the `ModalBase` class
+    name: (constructor)(props)
+    fullName: (constructor)(props)
     langs:
       - typeScript
     type: constructor
@@ -34,7 +34,7 @@ items:
             - office-ui-fabric-react.IModalProps
   - uid: office-ui-fabric-react.ModalBase.componentDidUpdate
     name: 'componentDidUpdate(prevProps, prevState)'
-    fullName: componentDidUpdate
+    fullName: 'componentDidUpdate(prevProps, prevState)'
     langs:
       - typeScript
     type: method
@@ -55,7 +55,7 @@ items:
             - office-ui-fabric-react.IDialogState
   - uid: office-ui-fabric-react.ModalBase.componentWillReceiveProps
     name: componentWillReceiveProps(newProps)
-    fullName: componentWillReceiveProps
+    fullName: componentWillReceiveProps(newProps)
     langs:
       - typeScript
     type: method
@@ -83,7 +83,7 @@ items:
           - office-ui-fabric-react.IModalProps
   - uid: office-ui-fabric-react.ModalBase.focus
     name: focus()
-    fullName: focus
+    fullName: focus()
     langs:
       - typeScript
     type: method
@@ -95,7 +95,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.ModalBase.render
     name: render()
-    fullName: render
+    fullName: render()
     langs:
       - typeScript
     type: method

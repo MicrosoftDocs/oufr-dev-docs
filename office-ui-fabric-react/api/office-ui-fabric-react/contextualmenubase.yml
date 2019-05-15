@@ -7,10 +7,10 @@ items:
       - typeScript
     type: class
     extends:
-      - office-ui-fabric-react.BaseComponent
+      - 'BaseComponent<IContextualMenuProps, IContextualMenuState> '
     package: office-ui-fabric-react
     children:
-      - office-ui-fabric-react.ContextualMenuBase.constructor
+      - office-ui-fabric-react.ContextualMenuBase.(constructor)
       - office-ui-fabric-react.ContextualMenuBase.componentDidMount
       - office-ui-fabric-react.ContextualMenuBase.componentWillMount
       - office-ui-fabric-react.ContextualMenuBase.componentWillUnmount
@@ -18,10 +18,10 @@ items:
       - office-ui-fabric-react.ContextualMenuBase.defaultProps
       - office-ui-fabric-react.ContextualMenuBase.dismiss
       - office-ui-fabric-react.ContextualMenuBase.render
-  - uid: office-ui-fabric-react.ContextualMenuBase.constructor
-    summary: 'Constructs a new instance of the [ContextualMenuBase](xref:office-ui-fabric-react.ContextualMenuBase) class'
-    name: constructor(props)
-    fullName: constructor
+  - uid: office-ui-fabric-react.ContextualMenuBase.(constructor)
+    summary: Constructs a new instance of the `ContextualMenuBase` class
+    name: (constructor)(props)
+    fullName: (constructor)(props)
     langs:
       - typeScript
     type: constructor
@@ -34,7 +34,7 @@ items:
             - office-ui-fabric-react.IContextualMenuProps
   - uid: office-ui-fabric-react.ContextualMenuBase.componentDidMount
     name: componentDidMount()
-    fullName: componentDidMount
+    fullName: componentDidMount()
     langs:
       - typeScript
     type: method
@@ -46,7 +46,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.ContextualMenuBase.componentWillMount
     name: componentWillMount()
-    fullName: componentWillMount
+    fullName: componentWillMount()
     langs:
       - typeScript
     type: method
@@ -58,7 +58,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.ContextualMenuBase.componentWillUnmount
     name: componentWillUnmount()
-    fullName: componentWillUnmount
+    fullName: componentWillUnmount()
     langs:
       - typeScript
     type: method
@@ -70,7 +70,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.ContextualMenuBase.componentWillUpdate
     name: componentWillUpdate(newProps)
-    fullName: componentWillUpdate
+    fullName: componentWillUpdate(newProps)
     langs:
       - typeScript
     type: method
@@ -109,7 +109,7 @@ items:
           - '(ev?: any, dismissAll?: boolean | undefined) => void'
   - uid: office-ui-fabric-react.ContextualMenuBase.render
     name: render()
-    fullName: render
+    fullName: render()
     langs:
       - typeScript
     type: method

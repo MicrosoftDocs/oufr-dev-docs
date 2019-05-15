@@ -7,13 +7,14 @@ items:
       - typeScript
     type: interface
     extends:
-      - office-ui-fabric-react.IBaseProps
+      - 'IBaseProps<IColorRectangle> '
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.IColorRectangleProps.className
       - office-ui-fabric-react.IColorRectangleProps.color
       - office-ui-fabric-react.IColorRectangleProps.componentRef
       - office-ui-fabric-react.IColorRectangleProps.minSize
+      - office-ui-fabric-react.IColorRectangleProps.onChange
       - office-ui-fabric-react.IColorRectangleProps.onSVChanged
       - office-ui-fabric-react.IColorRectangleProps.styles
       - office-ui-fabric-react.IColorRectangleProps.theme
@@ -65,8 +66,22 @@ items:
       return:
         type:
           - number
+  - uid: office-ui-fabric-react.IColorRectangleProps.onChange
+    summary: Callback for when the color changes.
+    name: onChange
+    fullName: onChange
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onChange?: (ev: React.MouseEvent<HTMLElement>, color: IColor) => void;'
+      return:
+        type:
+          - '(ev: React.MouseEvent<HTMLElement>, color: IColor) => void'
   - uid: office-ui-fabric-react.IColorRectangleProps.onSVChanged
-    summary: Callback issued when the color changes.
+    summary: Callback for when the color changes.
+    deprecated:
+      content: Use `onChange`
     name: onSVChanged
     fullName: onSVChanged
     langs:
@@ -100,4 +115,4 @@ items:
       content: 'theme?: ITheme;'
       return:
         type:
-          - office-ui-fabric-react.ITheme
+          - styling.ITheme

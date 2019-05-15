@@ -7,14 +7,14 @@ items:
       - typeScript
     type: class
     extends:
-      - office-ui-fabric-react.BaseComponent
+      - 'BaseComponent<P, IBaseExtendedPickerState<T>> '
     implements:
-      - office-ui-fabric-react.IBaseExtendedPicker
+      - 'IBaseExtendedPicker<T> '
     package: office-ui-fabric-react
     children:
-      - office-ui-fabric-react.BaseExtendedPicker.constructor
       - office-ui-fabric-react.BaseExtendedPicker._onSelectedItemsChanged
       - office-ui-fabric-react.BaseExtendedPicker._onSuggestionSelected
+      - office-ui-fabric-react.BaseExtendedPicker.(constructor)
       - office-ui-fabric-react.BaseExtendedPicker.canAddItems
       - office-ui-fabric-react.BaseExtendedPicker.clearInput
       - office-ui-fabric-react.BaseExtendedPicker.componentDidMount
@@ -34,26 +34,12 @@ items:
       - office-ui-fabric-react.BaseExtendedPicker.onPaste
       - office-ui-fabric-react.BaseExtendedPicker.onSelectionChange
       - office-ui-fabric-react.BaseExtendedPicker.render
+      - office-ui-fabric-react.BaseExtendedPicker.renderFloatingPicker
       - office-ui-fabric-react.BaseExtendedPicker.renderSelectedItemsList
-      - office-ui-fabric-react.BaseExtendedPicker.renderSuggestions
       - office-ui-fabric-react.BaseExtendedPicker.root
       - office-ui-fabric-react.BaseExtendedPicker.selectedItemsList
       - office-ui-fabric-react.BaseExtendedPicker.selectedItemsListProps
       - office-ui-fabric-react.BaseExtendedPicker.selection
-  - uid: office-ui-fabric-react.BaseExtendedPicker.constructor
-    summary: 'Constructs a new instance of the [BaseExtendedPicker](xref:office-ui-fabric-react.BaseExtendedPicker) class'
-    name: constructor(basePickerProps)
-    fullName: constructor
-    langs:
-      - typeScript
-    type: constructor
-    syntax:
-      content: 'constructor(basePickerProps: P);'
-      parameters:
-        - id: basePickerProps
-          description: ''
-          type:
-            - P
   - uid: office-ui-fabric-react.BaseExtendedPicker._onSelectedItemsChanged
     name: _onSelectedItemsChanged
     fullName: _onSelectedItemsChanged
@@ -76,9 +62,23 @@ items:
       return:
         type:
           - '(item: T) => void'
+  - uid: office-ui-fabric-react.BaseExtendedPicker.(constructor)
+    summary: Constructs a new instance of the `BaseExtendedPicker` class
+    name: (constructor)(basePickerProps)
+    fullName: (constructor)(basePickerProps)
+    langs:
+      - typeScript
+    type: constructor
+    syntax:
+      content: 'constructor(basePickerProps: P);'
+      parameters:
+        - id: basePickerProps
+          description: ''
+          type:
+            - P
   - uid: office-ui-fabric-react.BaseExtendedPicker.canAddItems
     name: canAddItems()
-    fullName: canAddItems
+    fullName: canAddItems()
     langs:
       - typeScript
     type: method
@@ -90,7 +90,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.BaseExtendedPicker.clearInput
     name: clearInput()
-    fullName: clearInput
+    fullName: clearInput()
     langs:
       - typeScript
     type: method
@@ -102,7 +102,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.BaseExtendedPicker.componentDidMount
     name: componentDidMount()
-    fullName: componentDidMount
+    fullName: componentDidMount()
     langs:
       - typeScript
     type: method
@@ -114,7 +114,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.BaseExtendedPicker.componentWillReceiveProps
     name: componentWillReceiveProps(newProps)
-    fullName: componentWillReceiveProps
+    fullName: componentWillReceiveProps(newProps)
     langs:
       - typeScript
     type: method
@@ -136,15 +136,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'floatingPicker:'
+      content: 'floatingPicker: React.RefObject<BaseFloatingPicker<T, IBaseFloatingPickerProps<T>>>;'
       return:
         type:
-          - |-
-            {
-                    (component: BaseFloatingPicker<T, IBaseFloatingPickerProps<T>> | null): void;
-                    current: BaseFloatingPicker<T, IBaseFloatingPickerProps<T>> | null;
-                    value: BaseFloatingPicker<T, IBaseFloatingPickerProps<T>> | null;
-                }
+          - 'React.RefObject<BaseFloatingPicker<T, IBaseFloatingPickerProps<T>>>'
   - uid: office-ui-fabric-react.BaseExtendedPicker.floatingPickerProps
     name: floatingPickerProps
     fullName: floatingPickerProps
@@ -158,7 +153,7 @@ items:
           - IBaseFloatingPickerProps<T>
   - uid: office-ui-fabric-react.BaseExtendedPicker.focus
     name: focus()
-    fullName: focus
+    fullName: focus()
     langs:
       - typeScript
     type: method
@@ -186,15 +181,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'protected input:'
+      content: 'protected input: React.RefObject<Autofill>;'
       return:
         type:
-          - |-
-            {
-                    (component: Autofill | null): void;
-                    current: Autofill | null;
-                    value: Autofill | null;
-                }
+          - React.RefObject<Autofill>
   - uid: office-ui-fabric-react.BaseExtendedPicker.inputElement
     name: inputElement
     fullName: inputElement
@@ -296,7 +286,7 @@ items:
           - () => void
   - uid: office-ui-fabric-react.BaseExtendedPicker.render
     name: render()
-    fullName: render
+    fullName: render()
     langs:
       - typeScript
     type: method
@@ -306,26 +296,26 @@ items:
         type:
           - JSX.Element
         description: ''
+  - uid: office-ui-fabric-react.BaseExtendedPicker.renderFloatingPicker
+    name: renderFloatingPicker()
+    fullName: renderFloatingPicker()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'protected renderFloatingPicker(): JSX.Element;'
+      return:
+        type:
+          - JSX.Element
+        description: ''
   - uid: office-ui-fabric-react.BaseExtendedPicker.renderSelectedItemsList
     name: renderSelectedItemsList()
-    fullName: renderSelectedItemsList
+    fullName: renderSelectedItemsList()
     langs:
       - typeScript
     type: method
     syntax:
       content: 'protected renderSelectedItemsList(): JSX.Element;'
-      return:
-        type:
-          - JSX.Element
-        description: ''
-  - uid: office-ui-fabric-react.BaseExtendedPicker.renderSuggestions
-    name: renderSuggestions()
-    fullName: renderSuggestions
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'protected renderSuggestions(): JSX.Element;'
       return:
         type:
           - JSX.Element
@@ -337,15 +327,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'protected root:'
+      content: 'protected root: React.RefObject<HTMLDivElement>;'
       return:
         type:
-          - |-
-            {
-                    (component: HTMLDivElement | null): void;
-                    current: HTMLDivElement | null;
-                    value: HTMLDivElement | null;
-                }
+          - React.RefObject<HTMLDivElement>
   - uid: office-ui-fabric-react.BaseExtendedPicker.selectedItemsList
     name: selectedItemsList
     fullName: selectedItemsList
@@ -353,15 +338,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'selectedItemsList:'
+      content: 'selectedItemsList: React.RefObject<BaseSelectedItemsList<T, IBaseSelectedItemsListProps<T>>>;'
       return:
         type:
-          - |-
-            {
-                    (component: BaseSelectedItemsList<T, IBaseSelectedItemsListProps<T>> | null): void;
-                    current: BaseSelectedItemsList<T, IBaseSelectedItemsListProps<T>> | null;
-                    value: BaseSelectedItemsList<T, IBaseSelectedItemsListProps<T>> | null;
-                }
+          - 'React.RefObject<BaseSelectedItemsList<T, IBaseSelectedItemsListProps<T>>>'
   - uid: office-ui-fabric-react.BaseExtendedPicker.selectedItemsListProps
     name: selectedItemsListProps
     fullName: selectedItemsListProps

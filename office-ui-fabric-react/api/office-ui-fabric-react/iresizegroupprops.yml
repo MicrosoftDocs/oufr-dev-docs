@@ -7,13 +7,14 @@ items:
       - typeScript
     type: interface
     extends:
-      - React.HTMLAttributes
+      - 'React.HTMLAttributes<ResizeGroupBase | HTMLElement> '
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.IResizeGroupProps.className
       - office-ui-fabric-react.IResizeGroupProps.componentRef
       - office-ui-fabric-react.IResizeGroupProps.data
       - office-ui-fabric-react.IResizeGroupProps.dataDidRender
+      - office-ui-fabric-react.IResizeGroupProps.direction
       - office-ui-fabric-react.IResizeGroupProps.onGrowData
       - office-ui-fabric-react.IResizeGroupProps.onReduceData
       - office-ui-fabric-react.IResizeGroupProps.onRenderData
@@ -77,6 +78,18 @@ items:
       return:
         type:
           - '(renderedData: any) => void'
+  - uid: office-ui-fabric-react.IResizeGroupProps.direction
+    summary: 'Direction of this resize group, vertical or horizontal'
+    name: direction
+    fullName: direction
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'direction?: ResizeGroupDirection;'
+      return:
+        type:
+          - office-ui-fabric-react.ResizeGroupDirection
   - uid: office-ui-fabric-react.IResizeGroupProps.onGrowData
     summary: >-
       Function to be performed on the data in order to increase its width. It is called in scenarios where the container
@@ -145,4 +158,4 @@ items:
       content: 'theme?: ITheme;'
       return:
         type:
-          - office-ui-fabric-react.ITheme
+          - styling.ITheme

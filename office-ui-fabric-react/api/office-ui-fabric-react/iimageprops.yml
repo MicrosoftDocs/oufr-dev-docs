@@ -7,11 +7,10 @@ items:
       - typeScript
     type: interface
     extends:
-      - React.ImgHTMLAttributes
+      - 'React.ImgHTMLAttributes<HTMLImageElement> '
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.IImageProps.className
-      - office-ui-fabric-react.IImageProps.componentRef
       - office-ui-fabric-react.IImageProps.coverStyle
       - office-ui-fabric-react.IImageProps.errorSrc
       - office-ui-fabric-react.IImageProps.imageFit
@@ -33,20 +32,6 @@ items:
       return:
         type:
           - string
-  - uid: office-ui-fabric-react.IImageProps.componentRef
-    summary: >-
-      Optional callback to access the ICheckbox interface. Use this instead of ref for accessing the public methods and
-      properties of the component.
-    name: componentRef
-    fullName: componentRef
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'componentRef?: IRefObject<IImage>;'
-      return:
-        type:
-          - IRefObject<IImage>
   - uid: office-ui-fabric-react.IImageProps.coverStyle
     summary: >-
       Specifies the cover style to be used for this image. If not specified, this will be dynamically calculated based
@@ -164,4 +149,4 @@ items:
       content: 'theme?: ITheme;'
       return:
         type:
-          - office-ui-fabric-react.ITheme
+          - styling.ITheme

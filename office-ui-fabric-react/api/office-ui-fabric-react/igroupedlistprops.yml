@@ -7,10 +7,11 @@ items:
       - typeScript
     type: interface
     extends:
-      - React.Props
+      - 'React.ClassAttributes<GroupedListBase> '
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.IGroupedListProps.className
+      - office-ui-fabric-react.IGroupedListProps.compact
       - office-ui-fabric-react.IGroupedListProps.componentRef
       - office-ui-fabric-react.IGroupedListProps.dragDropEvents
       - office-ui-fabric-react.IGroupedListProps.dragDropHelper
@@ -41,6 +42,18 @@ items:
       return:
         type:
           - string
+  - uid: office-ui-fabric-react.IGroupedListProps.compact
+    summary: Boolean value to indicate if the component should render in compact mode. Set to false by default
+    name: compact
+    fullName: compact
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'compact?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: office-ui-fabric-react.IGroupedListProps.componentRef
     summary: >-
       Optional callback to access the IGroupedList interface. Use this instead of ref for accessing the public methods
@@ -100,16 +113,7 @@ items:
                     callback: (context: IDragDropContext, event?: any) => void;
                 }[]
   - uid: office-ui-fabric-react.IGroupedListProps.getGroupHeight
-    summary: >-
-      Optional function which will be called to estimate the height (in pixels) of the given group.
-
-
-      By default, scrolling through a large virtualized GroupedList will often "jump" due to the order in which heights
-      are calculated. For more details, see https://github.com/OfficeDev/office-ui-fabric-react/issues/5094
-
-
-      Pass this prop to ensure the list uses the computed height rather than cached DOM measurements, avoiding the
-      scroll jumping issue.
+    summary: Optional function to override default group height calculation used by list virtualization.
     name: getGroupHeight
     fullName: getGroupHeight
     langs:
@@ -255,7 +259,7 @@ items:
       content: 'theme?: ITheme;'
       return:
         type:
-          - office-ui-fabric-react.ITheme
+          - styling.ITheme
   - uid: office-ui-fabric-react.IGroupedListProps.usePageCache
     summary: >-
       boolean to control if pages containing unchanged items should be cached, this is a perf optimization The same

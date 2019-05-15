@@ -7,7 +7,7 @@ items:
       - typeScript
     type: interface
     extends:
-      - React.Props
+      - 'React.Props<any> '
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.IBasePickerProps.className
@@ -38,6 +38,8 @@ items:
       - office-ui-fabric-react.IBasePickerProps.resolveDelay
       - office-ui-fabric-react.IBasePickerProps.searchingText
       - office-ui-fabric-react.IBasePickerProps.selectedItems
+      - office-ui-fabric-react.IBasePickerProps.styles
+      - office-ui-fabric-react.IBasePickerProps.theme
   - uid: office-ui-fabric-react.IBasePickerProps.className
     summary: ClassName for the picker.
     name: className
@@ -51,6 +53,9 @@ items:
         type:
           - string
   - uid: office-ui-fabric-react.IBasePickerProps.componentRef
+    summary: >-
+      Optional callback to access the IBasePicker interface. Use this instead of ref for accessing the public methods
+      and properties of the component.
     name: componentRef
     fullName: componentRef
     langs:
@@ -247,17 +252,17 @@ items:
         type:
           - '(selectedItem?: T) => T | PromiseLike<T> | null'
   - uid: office-ui-fabric-react.IBasePickerProps.onRemoveSuggestion
-    summary: A callback for when a persona is removed from the suggestion list
+    summary: A callback for when an item is removed from the suggestion list
     name: onRemoveSuggestion
     fullName: onRemoveSuggestion
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'onRemoveSuggestion?: (item: IPersonaProps) => void;'
+      content: 'onRemoveSuggestion?: (item: T) => void;'
       return:
         type:
-          - '(item: IPersonaProps) => void'
+          - '(item: T) => void'
   - uid: office-ui-fabric-react.IBasePickerProps.onRenderItem
     summary: Function that specifies how the selected item will appear.
     name: onRenderItem
@@ -392,3 +397,27 @@ items:
       return:
         type:
           - 'T[]'
+  - uid: office-ui-fabric-react.IBasePickerProps.styles
+    summary: Call to provide customized styling that will layer on top of the variant rules.
+    name: styles
+    fullName: styles
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'styles?: IStyleFunctionOrObject<IBasePickerStyleProps, IBasePickerStyles>;'
+      return:
+        type:
+          - 'IStyleFunctionOrObject<IBasePickerStyleProps, IBasePickerStyles>'
+  - uid: office-ui-fabric-react.IBasePickerProps.theme
+    summary: Theme provided by styled() function.
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type:
+          - styling.ITheme

@@ -7,20 +7,20 @@ items:
       - typeScript
     type: class
     extends:
-      - office-ui-fabric-react.BaseComponent
+      - 'BaseComponent<IToggleProps, IToggleState> '
     implements:
       - office-ui-fabric-react.IToggle
     package: office-ui-fabric-react
     children:
-      - office-ui-fabric-react.ToggleBase.constructor
+      - office-ui-fabric-react.ToggleBase.(constructor)
       - office-ui-fabric-react.ToggleBase.checked
       - office-ui-fabric-react.ToggleBase.componentWillReceiveProps
       - office-ui-fabric-react.ToggleBase.focus
       - office-ui-fabric-react.ToggleBase.render
-  - uid: office-ui-fabric-react.ToggleBase.constructor
-    summary: 'Constructs a new instance of the [ToggleBase](xref:office-ui-fabric-react.ToggleBase) class'
-    name: constructor(props)
-    fullName: constructor
+  - uid: office-ui-fabric-react.ToggleBase.(constructor)
+    summary: Constructs a new instance of the `ToggleBase` class
+    name: (constructor)(props)
+    fullName: (constructor)(props)
     langs:
       - typeScript
     type: constructor
@@ -45,7 +45,7 @@ items:
           - boolean
   - uid: office-ui-fabric-react.ToggleBase.componentWillReceiveProps
     name: componentWillReceiveProps(newProps)
-    fullName: componentWillReceiveProps
+    fullName: componentWillReceiveProps(newProps)
     langs:
       - typeScript
     type: method
@@ -62,7 +62,7 @@ items:
             - office-ui-fabric-react.IToggleProps
   - uid: office-ui-fabric-react.ToggleBase.focus
     name: focus()
-    fullName: focus
+    fullName: focus()
     langs:
       - typeScript
     type: method
@@ -74,7 +74,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.ToggleBase.render
     name: render()
-    fullName: render
+    fullName: render()
     langs:
       - typeScript
     type: method

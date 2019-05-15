@@ -7,22 +7,20 @@ items:
       - typeScript
     type: class
     extends:
-      - office-ui-fabric-react.BaseComponent
+      - 'BaseComponent<ITeachingBubbleProps, ITeachingBubbleState> '
     package: office-ui-fabric-react
     children:
-      - office-ui-fabric-react.TeachingBubbleContentBase.constructor
+      - office-ui-fabric-react.TeachingBubbleContentBase.(constructor)
       - office-ui-fabric-react.TeachingBubbleContentBase.componentDidMount
       - office-ui-fabric-react.TeachingBubbleContentBase.componentWillUnmount
       - office-ui-fabric-react.TeachingBubbleContentBase.defaultProps
       - office-ui-fabric-react.TeachingBubbleContentBase.focus
       - office-ui-fabric-react.TeachingBubbleContentBase.render
       - office-ui-fabric-react.TeachingBubbleContentBase.rootElement
-  - uid: office-ui-fabric-react.TeachingBubbleContentBase.constructor
-    summary: >-
-      Constructs a new instance of the
-      [TeachingBubbleContentBase](xref:office-ui-fabric-react.TeachingBubbleContentBase) class
-    name: constructor(props)
-    fullName: constructor
+  - uid: office-ui-fabric-react.TeachingBubbleContentBase.(constructor)
+    summary: Constructs a new instance of the `TeachingBubbleContentBase` class
+    name: (constructor)(props)
+    fullName: (constructor)(props)
     langs:
       - typeScript
     type: constructor
@@ -35,7 +33,7 @@ items:
             - office-ui-fabric-react.ITeachingBubbleProps
   - uid: office-ui-fabric-react.TeachingBubbleContentBase.componentDidMount
     name: componentDidMount()
-    fullName: componentDidMount
+    fullName: componentDidMount()
     langs:
       - typeScript
     type: method
@@ -47,7 +45,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.TeachingBubbleContentBase.componentWillUnmount
     name: componentWillUnmount()
-    fullName: componentWillUnmount
+    fullName: componentWillUnmount()
     langs:
       - typeScript
     type: method
@@ -64,7 +62,15 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'static defaultProps:'
+      content: |-
+        static defaultProps: {
+                hasCondensedHeadline: boolean;
+                imageProps: {
+                    imageFit: ImageFit;
+                    width: number;
+                    height: number;
+                };
+            };
       return:
         type:
           - |-
@@ -78,7 +84,7 @@ items:
                 }
   - uid: office-ui-fabric-react.TeachingBubbleContentBase.focus
     name: focus()
-    fullName: focus
+    fullName: focus()
     langs:
       - typeScript
     type: method
@@ -90,7 +96,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.TeachingBubbleContentBase.render
     name: render()
-    fullName: render
+    fullName: render()
     langs:
       - typeScript
     type: method
@@ -107,12 +113,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'rootElement:'
+      content: 'rootElement: React.RefObject<HTMLDivElement>;'
       return:
         type:
-          - |-
-            {
-                    (component: HTMLDivElement | null): void;
-                    current: HTMLDivElement | null;
-                    value: HTMLDivElement | null;
-                }
+          - React.RefObject<HTMLDivElement>

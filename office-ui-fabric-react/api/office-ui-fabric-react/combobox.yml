@@ -7,10 +7,10 @@ items:
       - typeScript
     type: class
     extends:
-      - office-ui-fabric-react.BaseComponent
+      - 'BaseComponent<IComboBoxProps, IComboBoxState> '
     package: office-ui-fabric-react
     children:
-      - office-ui-fabric-react.ComboBox.constructor
+      - office-ui-fabric-react.ComboBox.(constructor)
       - office-ui-fabric-react.ComboBox.componentDidMount
       - office-ui-fabric-react.ComboBox.componentDidUpdate
       - office-ui-fabric-react.ComboBox.componentWillReceiveProps
@@ -19,10 +19,10 @@ items:
       - office-ui-fabric-react.ComboBox.dismissMenu
       - office-ui-fabric-react.ComboBox.focus
       - office-ui-fabric-react.ComboBox.render
-  - uid: office-ui-fabric-react.ComboBox.constructor
-    summary: 'Constructs a new instance of the [ComboBox](xref:office-ui-fabric-react.ComboBox) class'
-    name: constructor(props)
-    fullName: constructor
+  - uid: office-ui-fabric-react.ComboBox.(constructor)
+    summary: Constructs a new instance of the `ComboBox` class
+    name: (constructor)(props)
+    fullName: (constructor)(props)
     langs:
       - typeScript
     type: constructor
@@ -35,7 +35,7 @@ items:
             - office-ui-fabric-react.IComboBoxProps
   - uid: office-ui-fabric-react.ComboBox.componentDidMount
     name: componentDidMount()
-    fullName: componentDidMount
+    fullName: componentDidMount()
     langs:
       - typeScript
     type: method
@@ -47,7 +47,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.ComboBox.componentDidUpdate
     name: 'componentDidUpdate(prevProps, prevState)'
-    fullName: componentDidUpdate
+    fullName: 'componentDidUpdate(prevProps, prevState)'
     langs:
       - typeScript
     type: method
@@ -68,7 +68,7 @@ items:
             - office-ui-fabric-react.IComboBoxState
   - uid: office-ui-fabric-react.ComboBox.componentWillReceiveProps
     name: componentWillReceiveProps(newProps)
-    fullName: componentWillReceiveProps
+    fullName: componentWillReceiveProps(newProps)
     langs:
       - typeScript
     type: method
@@ -85,7 +85,7 @@ items:
             - office-ui-fabric-react.IComboBoxProps
   - uid: office-ui-fabric-react.ComboBox.componentWillUnmount
     name: componentWillUnmount()
-    fullName: componentWillUnmount
+    fullName: componentWillUnmount()
     langs:
       - typeScript
     type: method
@@ -131,7 +131,7 @@ items:
           - '(shouldOpenOnFocus?: boolean | undefined, useFocusAsync?: boolean | undefined) => void'
   - uid: office-ui-fabric-react.ComboBox.render
     name: render()
-    fullName: render
+    fullName: render()
     langs:
       - typeScript
     type: method

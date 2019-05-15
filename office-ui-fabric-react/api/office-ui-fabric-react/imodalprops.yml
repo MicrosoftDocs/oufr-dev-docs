@@ -7,14 +7,18 @@ items:
       - typeScript
     type: interface
     extends:
-      - React.Props
+      - React.ClassAttributes<ModalBase>
+      - IWithResponsiveModeState
+      - 'IAccessiblePopupProps '
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.IModalProps.className
       - office-ui-fabric-react.IModalProps.componentRef
       - office-ui-fabric-react.IModalProps.containerClassName
+      - office-ui-fabric-react.IModalProps.dragOptions
       - office-ui-fabric-react.IModalProps.isBlocking
       - office-ui-fabric-react.IModalProps.isDarkOverlay
+      - office-ui-fabric-react.IModalProps.isModeless
       - office-ui-fabric-react.IModalProps.isOpen
       - office-ui-fabric-react.IModalProps.layerProps
       - office-ui-fabric-react.IModalProps.onDismiss
@@ -64,6 +68,18 @@ items:
       return:
         type:
           - string
+  - uid: office-ui-fabric-react.IModalProps.dragOptions
+    summary: The options to make the modal draggable
+    name: dragOptions
+    fullName: dragOptions
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'dragOptions?: IDragOptions;'
+      return:
+        type:
+          - office-ui-fabric-react.IDragOptions
   - uid: office-ui-fabric-react.IModalProps.isBlocking
     summary: Whether the dialog can be light dismissed by clicking outside the dialog (on the overlay).
     name: isBlocking
@@ -85,6 +101,21 @@ items:
     type: property
     syntax:
       content: 'isDarkOverlay?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-ui-fabric-react.IModalProps.isModeless
+    summary: >-
+      Whether the dialog should be modeless (e.g. not dismiss when focusing/clicking outside of the dialog). if true:
+      isBlocking is ignored, there will be no overlay (isDarkOverlay is ignored), isClickableOutsideFocusTrap is true,
+      and forceFocusInsideTrap is false
+    name: isModeless
+    fullName: isModeless
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isModeless?: boolean;'
       return:
         type:
           - boolean
@@ -197,7 +228,7 @@ items:
       content: 'theme?: ITheme;'
       return:
         type:
-          - office-ui-fabric-react.ITheme
+          - styling.ITheme
   - uid: office-ui-fabric-react.IModalProps.titleAriaId
     summary: 'ARIA id for the title of the Modal, if any'
     name: titleAriaId

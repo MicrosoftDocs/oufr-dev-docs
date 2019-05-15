@@ -1,0 +1,73 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office-ui-fabric-react.ITextProps
+    summary: Inputs to the component
+    name: ITextProps
+    fullName: ITextProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - office-ui-fabric-react.ITextSlots
+      - 'IStyleableComponentProps<ITextProps, ITextTokens, ITextStyles>'
+      - 'React.HTMLAttributes<HTMLElement> '
+    package: office-ui-fabric-react
+    children:
+      - office-ui-fabric-react.ITextProps.as
+      - office-ui-fabric-react.ITextProps.block
+      - office-ui-fabric-react.ITextProps.nowrap
+      - office-ui-fabric-react.ITextProps.variant
+  - uid: office-ui-fabric-react.ITextProps.as
+    summary: Optionally render the component as another component type or primitive.
+    name: as
+    fullName: as
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'as?: React.ReactType<React.HTMLAttributes<HTMLElement>>;'
+      return:
+        type:
+          - React.ReactType<React.HTMLAttributes<HTMLElement>>
+  - uid: office-ui-fabric-react.ITextProps.block
+    summary: |-
+      Whether the text is displayed as a block element.
+
+      Note that in order for ellipsis on overflow to work properly, `block` and `nowrap` should be set to true.
+    name: block
+    fullName: block
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'block?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-ui-fabric-react.ITextProps.nowrap
+    summary: |-
+      Whether the text is not wrapped.
+
+      Note that in order for ellipsis on overflow to work properly, `block` and `nowrap` should be set to true.
+    name: nowrap
+    fullName: nowrap
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'nowrap?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-ui-fabric-react.ITextProps.variant
+    summary: Optional font type for Text.
+    name: variant
+    fullName: variant
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'variant?: keyof IFontStyles;'
+      return:
+        type:
+          - keyof IFontStyles

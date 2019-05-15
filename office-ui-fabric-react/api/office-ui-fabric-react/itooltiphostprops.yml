@@ -8,9 +8,10 @@ items:
       - typeScript
     type: interface
     extends:
-      - React.HTMLAttributes
+      - 'React.HTMLAttributes<HTMLDivElement | TooltipHostBase> '
     package: office-ui-fabric-react
     children:
+      - office-ui-fabric-react.ITooltipHostProps.onTooltipToggle
       - office-ui-fabric-react.ITooltipHostProps.calloutProps
       - office-ui-fabric-react.ITooltipHostProps.closeDelay
       - office-ui-fabric-react.ITooltipHostProps.componentRef
@@ -19,12 +20,29 @@ items:
       - office-ui-fabric-react.ITooltipHostProps.directionalHint
       - office-ui-fabric-react.ITooltipHostProps.directionalHintForRTL
       - office-ui-fabric-react.ITooltipHostProps.hostClassName
-      - office-ui-fabric-react.ITooltipHostProps.onTooltipToggle
       - office-ui-fabric-react.ITooltipHostProps.overflowMode
       - office-ui-fabric-react.ITooltipHostProps.setAriaDescribedBy
       - office-ui-fabric-react.ITooltipHostProps.styles
       - office-ui-fabric-react.ITooltipHostProps.theme
       - office-ui-fabric-react.ITooltipHostProps.tooltipProps
+  - uid: office-ui-fabric-react.ITooltipHostProps.onTooltipToggle
+    summary: 'Notifies when tooltip becomes visible or hidden, whatever the trigger was.'
+    name: onTooltipToggle(isTooltipVisible)
+    fullName: onTooltipToggle(isTooltipVisible)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'onTooltipToggle?(isTooltipVisible: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: isTooltipVisible
+          description: ''
+          type:
+            - boolean
   - uid: office-ui-fabric-react.ITooltipHostProps.calloutProps
     summary: 'Additional properties to pass through for Callout, reference detail properties in ICalloutProps'
     name: calloutProps
@@ -67,17 +85,17 @@ items:
         type:
           - IRefObject<ITooltipHost>
   - uid: office-ui-fabric-react.ITooltipHostProps.content
-    summary: String to be passed to the tooltip
+    summary: Content to be passed to the tooltip
     name: content
     fullName: content
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'content?: string;'
+      content: 'content?: string | JSX.Element | JSX.Element[];'
       return:
         type:
-          - string
+          - 'string | JSX.Element | JSX.Element[]'
   - uid: office-ui-fabric-react.ITooltipHostProps.delay
     summary: Length of delay
     name: delay
@@ -101,7 +119,7 @@ items:
       content: 'directionalHint?: DirectionalHint;'
       return:
         type:
-          - office-ui-fabric-react.DirectionalHint
+          - DirectionalHint
   - uid: office-ui-fabric-react.ITooltipHostProps.directionalHintForRTL
     summary: >-
       How the element should be positioned in RTL layouts. If not specified, a mirror of `directionalHint` will be used
@@ -115,7 +133,7 @@ items:
       content: 'directionalHintForRTL?: DirectionalHint;'
       return:
         type:
-          - office-ui-fabric-react.DirectionalHint
+          - DirectionalHint
   - uid: office-ui-fabric-react.ITooltipHostProps.hostClassName
     summary: Optional class name to apply to tooltip host.
     name: hostClassName
@@ -128,24 +146,6 @@ items:
       return:
         type:
           - string
-  - uid: office-ui-fabric-react.ITooltipHostProps.onTooltipToggle
-    summary: 'Notifies when tooltip becomes visible or hidden, whatever the trigger was.'
-    name: onTooltipToggle(isTooltipVisible)
-    fullName: onTooltipToggle
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'onTooltipToggle?(isTooltipVisible: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: isTooltipVisible
-          description: ''
-          type:
-            - boolean
   - uid: office-ui-fabric-react.ITooltipHostProps.overflowMode
     summary: >-
       Only show if there is overflow. If set, the tooltip hosts observes and only shows the tooltip if this element has
@@ -197,7 +197,7 @@ items:
       content: 'theme?: ITheme;'
       return:
         type:
-          - office-ui-fabric-react.ITheme
+          - styling.ITheme
   - uid: office-ui-fabric-react.ITooltipHostProps.tooltipProps
     summary: 'Additional properties to pass through for Tooltip, reference detail properties in ITooltipProps'
     name: tooltipProps

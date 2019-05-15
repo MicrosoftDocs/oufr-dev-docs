@@ -244,10 +244,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'onRenderFloatingPicker: (props: IBaseFloatingPickerProps<T>) => JSX.Element;'
+      content: 'onRenderFloatingPicker: React.ComponentType<IBaseFloatingPickerProps<T>>;'
       return:
         type:
-          - '(props: IBaseFloatingPickerProps<T>) => JSX.Element'
+          - React.ComponentType<IBaseFloatingPickerProps<T>>
   - uid: office-ui-fabric-react.IBaseExtendedPickerProps.onRenderSelectedItems
     summary: Function that specifies how the floating picker will appear.
     name: onRenderSelectedItems
@@ -256,10 +256,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'onRenderSelectedItems: (props: IBaseSelectedItemsListProps<T>) => JSX.Element;'
+      content: 'onRenderSelectedItems: React.ComponentType<IBaseSelectedItemsListProps<T>>;'
       return:
         type:
-          - '(props: IBaseSelectedItemsListProps<T>) => JSX.Element'
+          - React.ComponentType<IBaseSelectedItemsListProps<T>>
   - uid: office-ui-fabric-react.IBaseExtendedPickerProps.selectedItems
     summary: If using as a controlled component use selectedItems here instead of the SelectedItemsList
     name: selectedItems

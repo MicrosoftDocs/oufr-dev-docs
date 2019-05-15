@@ -7,14 +7,19 @@ items:
       - typeScript
     type: interface
     extends:
-      - office-ui-fabric-react.IBaseProps
+      - IBaseProps<IDocumentCard>
+      - 'React.HTMLAttributes<HTMLDivElement> '
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.IDocumentCardProps.accentColor
+      - office-ui-fabric-react.IDocumentCardProps.children
       - office-ui-fabric-react.IDocumentCardProps.className
       - office-ui-fabric-react.IDocumentCardProps.componentRef
       - office-ui-fabric-react.IDocumentCardProps.onClick
       - office-ui-fabric-react.IDocumentCardProps.onClickHref
+      - office-ui-fabric-react.IDocumentCardProps.role
+      - office-ui-fabric-react.IDocumentCardProps.styles
+      - office-ui-fabric-react.IDocumentCardProps.theme
       - office-ui-fabric-react.IDocumentCardProps.type
   - uid: office-ui-fabric-react.IDocumentCardProps.accentColor
     summary: >-
@@ -22,7 +27,7 @@ items:
       supplied when using the 'compact' card layout.
 
 
-      Deprecated at v4.17.1, to be removed at &gt;= v5.0.0.
+      Deprecated at v4.17.1, to be removed at &gt;<!-- -->= v5.0.0.
     deprecated:
       content: To be removed at v5.0.0.
     name: accentColor
@@ -35,8 +40,20 @@ items:
       return:
         type:
           - string
+  - uid: office-ui-fabric-react.IDocumentCardProps.children
+    summary: Child components to render within the card.
+    name: children
+    fullName: children
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'children?: React.ReactNode;'
+      return:
+        type:
+          - React.ReactNode
   - uid: office-ui-fabric-react.IDocumentCardProps.className
-    summary: Optional class for document card.
+    summary: Optional override class name
     name: className
     fullName: className
     langs:
@@ -87,6 +104,42 @@ items:
       return:
         type:
           - string
+  - uid: office-ui-fabric-react.IDocumentCardProps.role
+    summary: 'Aria role assigned to the documentCard (Eg. button, link). Use this to override the default assignment.'
+    name: role
+    fullName: role
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'role?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.IDocumentCardProps.styles
+    summary: Call to provide customized styling that will layer on top of the variant rules
+    name: styles
+    fullName: styles
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'styles?: IStyleFunctionOrObject<IDocumentCardStyleProps, IDocumentCardStyles>;'
+      return:
+        type:
+          - 'IStyleFunctionOrObject<IDocumentCardStyleProps, IDocumentCardStyles>'
+  - uid: office-ui-fabric-react.IDocumentCardProps.theme
+    summary: Theme provided by HOC.
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type:
+          - styling.ITheme
   - uid: office-ui-fabric-react.IDocumentCardProps.type
     summary: The type of DocumentCard to display.
     name: type

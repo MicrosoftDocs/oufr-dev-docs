@@ -1,0 +1,88 @@
+### YamlMime:UniversalReference
+items:
+  - uid: styling.IScheme
+    name: IScheme
+    fullName: IScheme
+    langs:
+      - typeScript
+    type: interface
+    package: styling
+    children:
+      - styling.IScheme.disableGlobalClassNames
+      - styling.IScheme.effects
+      - styling.IScheme.fonts
+      - styling.IScheme.isInverted
+      - styling.IScheme.palette
+      - styling.IScheme.semanticColors
+  - uid: styling.IScheme.disableGlobalClassNames
+    summary: >-
+      This setting is for a very narrow use case and you probably don't need to worry about, unless you share a
+      environment with others that also use fabric. It is used for disabling global styles on fabric components. This
+      will prevent global overrides that might have been set by other fabric users from applying to your components.
+      When you set this setting to `true` on your theme the components in the subtree of your Customizer will not get
+      the global styles applied to them.
+    name: disableGlobalClassNames
+    fullName: disableGlobalClassNames
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'disableGlobalClassNames: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: styling.IScheme.effects
+    name: effects
+    fullName: effects
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'effects: IEffects;'
+      return:
+        type:
+          - IEffects
+  - uid: styling.IScheme.fonts
+    name: fonts
+    fullName: fonts
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'fonts: IFontStyles;'
+      return:
+        type:
+          - styling.IFontStyles
+  - uid: styling.IScheme.isInverted
+    name: isInverted
+    fullName: isInverted
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isInverted: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: styling.IScheme.palette
+    name: palette
+    fullName: palette
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'palette: IPalette;'
+      return:
+        type:
+          - styling.IPalette
+  - uid: styling.IScheme.semanticColors
+    name: semanticColors
+    fullName: semanticColors
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'semanticColors: ISemanticColors;'
+      return:
+        type:
+          - styling.ISemanticColors

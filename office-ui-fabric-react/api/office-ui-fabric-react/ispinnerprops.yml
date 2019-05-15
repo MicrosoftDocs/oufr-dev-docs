@@ -1,13 +1,14 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office-ui-fabric-react.ISpinnerProps
+    summary: Spinner component props.
     name: ISpinnerProps
     fullName: ISpinnerProps
     langs:
       - typeScript
     type: interface
     extends:
-      - React.HTMLAttributes
+      - 'React.HTMLAttributes<HTMLElement> '
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.ISpinnerProps.ariaLabel
@@ -15,6 +16,7 @@ items:
       - office-ui-fabric-react.ISpinnerProps.className
       - office-ui-fabric-react.ISpinnerProps.componentRef
       - office-ui-fabric-react.ISpinnerProps.label
+      - office-ui-fabric-react.ISpinnerProps.labelPosition
       - office-ui-fabric-react.ISpinnerProps.size
       - office-ui-fabric-react.ISpinnerProps.styles
       - office-ui-fabric-react.ISpinnerProps.theme
@@ -83,6 +85,18 @@ items:
       return:
         type:
           - string
+  - uid: office-ui-fabric-react.ISpinnerProps.labelPosition
+    summary: The position of the label in regards of the spinner animation.
+    name: labelPosition
+    fullName: labelPosition
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'labelPosition?: SpinnerLabelPosition;'
+      return:
+        type:
+          - SpinnerLabelPosition
   - uid: office-ui-fabric-react.ISpinnerProps.size
     summary: 'The size of Spinner to render. { extraSmall, small, medium, large }'
     name: size
@@ -118,9 +132,9 @@ items:
       content: 'theme?: ITheme;'
       return:
         type:
-          - office-ui-fabric-react.ITheme
+          - styling.ITheme
   - uid: office-ui-fabric-react.ISpinnerProps.type
-    summary: Deprecated and will be removed at &gt;= 2.0.0. Use `SpinnerSize` instead.
+    summary: Deprecated and will be removed at &gt;<!-- -->= 2.0.0. Use `SpinnerSize` instead.
     deprecated:
       content: Use `SpinnerSize` instead.
     name: type

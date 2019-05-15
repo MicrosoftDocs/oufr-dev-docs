@@ -8,9 +8,10 @@ items:
       - typeScript
     type: interface
     extends:
-      - React.AllHTMLAttributes
+      - 'React.AllHTMLAttributes<HTMLElement> '
     package: office-ui-fabric-react
     children:
+      - office-ui-fabric-react.IShimmerElementsGroupProps.backgroundColor
       - office-ui-fabric-react.IShimmerElementsGroupProps.componentRef
       - office-ui-fabric-react.IShimmerElementsGroupProps.flexWrap
       - office-ui-fabric-react.IShimmerElementsGroupProps.rowHeight
@@ -18,6 +19,18 @@ items:
       - office-ui-fabric-react.IShimmerElementsGroupProps.styles
       - office-ui-fabric-react.IShimmerElementsGroupProps.theme
       - office-ui-fabric-react.IShimmerElementsGroupProps.width
+  - uid: office-ui-fabric-react.IShimmerElementsGroupProps.backgroundColor
+    summary: Defines the background color of the space in between and around shimmer elements.
+    name: backgroundColor
+    fullName: backgroundColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'backgroundColor?: string;'
+      return:
+        type:
+          - string
   - uid: office-ui-fabric-react.IShimmerElementsGroupProps.componentRef
     summary: >-
       Optional callback to access the IShimmerElementsGroup interface. Use this instead of ref for accessing the public
@@ -91,7 +104,7 @@ items:
       content: 'theme?: ITheme;'
       return:
         type:
-          - office-ui-fabric-react.ITheme
+          - styling.ITheme
   - uid: office-ui-fabric-react.IShimmerElementsGroupProps.width
     summary: Optional width for ShimmerElements container.
     name: width

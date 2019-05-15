@@ -7,20 +7,35 @@ items:
       - typeScript
     type: class
     extends:
-      - office-ui-fabric-react.BaseComponent
+      - ''
     implements:
-      - office-ui-fabric-react.IFocusTrapZone
+      - ''
     package: office-ui-fabric-react
     children:
+      - office-ui-fabric-react.FocusTrapZone.(constructor)
       - office-ui-fabric-react.FocusTrapZone.componentDidMount
-      - office-ui-fabric-react.FocusTrapZone.componentWillMount
+      - office-ui-fabric-react.FocusTrapZone.componentDidUpdate
       - office-ui-fabric-react.FocusTrapZone.componentWillReceiveProps
       - office-ui-fabric-react.FocusTrapZone.componentWillUnmount
       - office-ui-fabric-react.FocusTrapZone.focus
       - office-ui-fabric-react.FocusTrapZone.render
+  - uid: office-ui-fabric-react.FocusTrapZone.(constructor)
+    summary: Constructs a new instance of the `FocusTrapZone` class
+    name: (constructor)(props)
+    fullName: (constructor)(props)
+    langs:
+      - typeScript
+    type: constructor
+    syntax:
+      content: 'constructor(props: IFocusTrapZoneProps);'
+      parameters:
+        - id: props
+          description: ''
+          type:
+            - office-ui-fabric-react.IFocusTrapZoneProps
   - uid: office-ui-fabric-react.FocusTrapZone.componentDidMount
     name: componentDidMount()
-    fullName: componentDidMount
+    fullName: componentDidMount()
     langs:
       - typeScript
     type: method
@@ -30,21 +45,26 @@ items:
         type:
           - void
         description: ''
-  - uid: office-ui-fabric-react.FocusTrapZone.componentWillMount
-    name: componentWillMount()
-    fullName: componentWillMount
+  - uid: office-ui-fabric-react.FocusTrapZone.componentDidUpdate
+    name: componentDidUpdate(prevProps)
+    fullName: componentDidUpdate(prevProps)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'componentWillMount(): void;'
+      content: 'componentDidUpdate(prevProps: IFocusTrapZoneProps): void;'
       return:
         type:
           - void
         description: ''
+      parameters:
+        - id: prevProps
+          description: ''
+          type:
+            - office-ui-fabric-react.IFocusTrapZoneProps
   - uid: office-ui-fabric-react.FocusTrapZone.componentWillReceiveProps
     name: componentWillReceiveProps(nextProps)
-    fullName: componentWillReceiveProps
+    fullName: componentWillReceiveProps(nextProps)
     langs:
       - typeScript
     type: method
@@ -61,7 +81,7 @@ items:
             - office-ui-fabric-react.IFocusTrapZoneProps
   - uid: office-ui-fabric-react.FocusTrapZone.componentWillUnmount
     name: componentWillUnmount()
-    fullName: componentWillUnmount
+    fullName: componentWillUnmount()
     langs:
       - typeScript
     type: method
@@ -73,7 +93,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.FocusTrapZone.focus
     name: focus()
-    fullName: focus
+    fullName: focus()
     langs:
       - typeScript
     type: method
@@ -85,7 +105,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.FocusTrapZone.render
     name: render()
-    fullName: render
+    fullName: render()
     langs:
       - typeScript
     type: method

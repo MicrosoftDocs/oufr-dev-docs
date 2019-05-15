@@ -7,12 +7,12 @@ items:
       - typeScript
     type: class
     extends:
-      - office-ui-fabric-react.BaseComponent
+      - 'BaseComponent<IAutofillProps, IAutofillState> '
     implements:
       - office-ui-fabric-react.IAutofill
     package: office-ui-fabric-react
     children:
-      - office-ui-fabric-react.Autofill.constructor
+      - office-ui-fabric-react.Autofill.(constructor)
       - office-ui-fabric-react.Autofill.clear
       - office-ui-fabric-react.Autofill.componentDidUpdate
       - office-ui-fabric-react.Autofill.componentWillReceiveProps
@@ -25,10 +25,10 @@ items:
       - office-ui-fabric-react.Autofill.selectionEnd
       - office-ui-fabric-react.Autofill.selectionStart
       - office-ui-fabric-react.Autofill.value
-  - uid: office-ui-fabric-react.Autofill.constructor
-    summary: 'Constructs a new instance of the [Autofill](xref:office-ui-fabric-react.Autofill) class'
-    name: constructor(props)
-    fullName: constructor
+  - uid: office-ui-fabric-react.Autofill.(constructor)
+    summary: Constructs a new instance of the `Autofill` class
+    name: (constructor)(props)
+    fullName: (constructor)(props)
     langs:
       - typeScript
     type: constructor
@@ -41,7 +41,7 @@ items:
             - office-ui-fabric-react.IAutofillProps
   - uid: office-ui-fabric-react.Autofill.clear
     name: clear()
-    fullName: clear
+    fullName: clear()
     langs:
       - typeScript
     type: method
@@ -53,7 +53,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.Autofill.componentDidUpdate
     name: componentDidUpdate()
-    fullName: componentDidUpdate
+    fullName: componentDidUpdate()
     langs:
       - typeScript
     type: method
@@ -65,7 +65,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.Autofill.componentWillReceiveProps
     name: componentWillReceiveProps(nextProps)
-    fullName: componentWillReceiveProps
+    fullName: componentWillReceiveProps(nextProps)
     langs:
       - typeScript
     type: method
@@ -98,16 +98,19 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'static defaultProps:'
+      content: |-
+        static defaultProps: {
+                enableAutofillOnKeyPress: number[];
+            };
       return:
         type:
           - |-
             {
-                    enableAutofillOnKeyPress: KeyCodes[];
+                    enableAutofillOnKeyPress: number[];
                 }
   - uid: office-ui-fabric-react.Autofill.focus
     name: focus()
-    fullName: focus
+    fullName: focus()
     langs:
       - typeScript
     type: method
@@ -141,7 +144,7 @@ items:
           - boolean
   - uid: office-ui-fabric-react.Autofill.render
     name: render()
-    fullName: render
+    fullName: render()
     langs:
       - typeScript
     type: method

@@ -7,11 +7,12 @@ items:
       - typeScript
     type: interface
     extends:
-      - React.HTMLAttributes
+      - 'React.HTMLAttributes<HTMLDivElement> '
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.IFocusTrapZoneProps.ariaLabelledBy
       - office-ui-fabric-react.IFocusTrapZoneProps.componentRef
+      - office-ui-fabric-react.IFocusTrapZoneProps.disabled
       - office-ui-fabric-react.IFocusTrapZoneProps.disableFirstFocus
       - office-ui-fabric-react.IFocusTrapZoneProps.elementToFocusOnDismiss
       - office-ui-fabric-react.IFocusTrapZoneProps.firstFocusableSelector
@@ -45,6 +46,18 @@ items:
       return:
         type:
           - IRefObject<IFocusTrapZone>
+  - uid: office-ui-fabric-react.IFocusTrapZoneProps.disabled
+    summary: Disables the FocusTrapZone's focus trapping behavior when set.
+    name: disabled
+    fullName: disabled
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'disabled?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: office-ui-fabric-react.IFocusTrapZoneProps.disableFirstFocus
     summary: Do not put focus onto first element when render focus trap zone
     name: disableFirstFocus
@@ -70,7 +83,9 @@ items:
         type:
           - HTMLElement
   - uid: office-ui-fabric-react.IFocusTrapZoneProps.firstFocusableSelector
-    summary: Indicates the selector for first focusable item. Only applies if focusPreviouslyFocusedInnerElement == false.
+    summary: >-
+      Class name for first focusable item (do not append a dot). Only applies if `focusPreviouslyFocusedInnerElement` is
+      false.
     name: firstFocusableSelector
     fullName: firstFocusableSelector
     langs:

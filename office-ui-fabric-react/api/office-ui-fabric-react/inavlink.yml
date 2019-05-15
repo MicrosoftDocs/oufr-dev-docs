@@ -8,10 +8,10 @@ items:
     type: interface
     package: office-ui-fabric-react
     children:
-      - office-ui-fabric-react.INavLink.__index
       - office-ui-fabric-react.INavLink.altText
       - office-ui-fabric-react.INavLink.ariaLabel
       - office-ui-fabric-react.INavLink.automationId
+      - office-ui-fabric-react.INavLink.disabled
       - office-ui-fabric-react.INavLink.engagementName
       - office-ui-fabric-react.INavLink.forceAnchor
       - office-ui-fabric-react.INavLink.icon
@@ -26,26 +26,8 @@ items:
       - office-ui-fabric-react.INavLink.target
       - office-ui-fabric-react.INavLink.title
       - office-ui-fabric-react.INavLink.url
-  - uid: office-ui-fabric-react.INavLink.__index
-    summary: (Optional) Any additional properties to apply to the rendered links.
-    name: __index(propertyName)
-    fullName: __index
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: '[propertyName: string]: any;'
-      return:
-        type:
-          - any
-        description: ''
-      parameters:
-        - id: propertyName
-          description: ''
-          type:
-            - string
   - uid: office-ui-fabric-react.INavLink.altText
-    summary: Deprecated at v0.68.1 and will be removed at &gt;= v1.0.0.
+    summary: Deprecated at v0.68.1 and will be removed at &gt;<!-- -->= v1.0.0.
     deprecated:
       content: Removed at v1.0.0.
     name: altText
@@ -82,8 +64,20 @@ items:
       return:
         type:
           - string
+  - uid: office-ui-fabric-react.INavLink.disabled
+    summary: Whether or not the link is disabled.
+    name: disabled
+    fullName: disabled
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'disabled?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: office-ui-fabric-react.INavLink.engagementName
-    summary: Deprecated at v0.68.1 and will be removed at &gt;= v1.0.0.
+    summary: Deprecated at v0.68.1 and will be removed at &gt;<!-- -->= v1.0.0.
     deprecated:
       content: Removed at v1.0.0.
     name: engagementName

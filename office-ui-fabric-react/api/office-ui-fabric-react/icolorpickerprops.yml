@@ -7,7 +7,7 @@ items:
       - typeScript
     type: interface
     extends:
-      - office-ui-fabric-react.IBaseProps
+      - 'IBaseProps<IColorPicker> '
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.IColorPickerProps.alphaLabel
@@ -18,6 +18,7 @@ items:
       - office-ui-fabric-react.IColorPickerProps.componentRef
       - office-ui-fabric-react.IColorPickerProps.greenLabel
       - office-ui-fabric-react.IColorPickerProps.hexLabel
+      - office-ui-fabric-react.IColorPickerProps.onChange
       - office-ui-fabric-react.IColorPickerProps.onColorChanged
       - office-ui-fabric-react.IColorPickerProps.redLabel
       - office-ui-fabric-react.IColorPickerProps.styles
@@ -35,7 +36,7 @@ items:
         type:
           - string
   - uid: office-ui-fabric-react.IColorPickerProps.alphaSliderHidden
-    summary: The setting of whether to hide the alpha control slider.
+    summary: Whether to hide the alpha control slider.
     name: alphaSliderHidden
     fullName: alphaSliderHidden
     langs:
@@ -47,7 +48,7 @@ items:
         type:
           - boolean
   - uid: office-ui-fabric-react.IColorPickerProps.blueLabel
-    summary: Label for the blue textfield.
+    summary: Label for the blue text field.
     name: blueLabel
     fullName: blueLabel
     langs:
@@ -71,17 +72,17 @@ items:
         type:
           - string
   - uid: office-ui-fabric-react.IColorPickerProps.color
-    summary: CSS-compatible string to describe the initial color.
+    summary: Object or CSS-compatible string to describe the color.
     name: color
     fullName: color
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'color: string;'
+      content: 'color: IColor | string;'
       return:
         type:
-          - string
+          - IColor | string
   - uid: office-ui-fabric-react.IColorPickerProps.componentRef
     summary: Gets the component ref.
     name: componentRef
@@ -95,7 +96,7 @@ items:
         type:
           - IRefObject<IColorPicker>
   - uid: office-ui-fabric-react.IColorPickerProps.greenLabel
-    summary: Label for the green textfield.
+    summary: Label for the green text field.
     name: greenLabel
     fullName: greenLabel
     langs:
@@ -107,7 +108,7 @@ items:
         type:
           - string
   - uid: office-ui-fabric-react.IColorPickerProps.hexLabel
-    summary: Label for the hex textfield.
+    summary: Label for the hex text field.
     name: hexLabel
     fullName: hexLabel
     langs:
@@ -118,8 +119,24 @@ items:
       return:
         type:
           - string
+  - uid: office-ui-fabric-react.IColorPickerProps.onChange
+    summary: Callback for when the user changes the color. (Not called when the color is changed via props.)
+    name: onChange
+    fullName: onChange
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onChange?: (ev: React.SyntheticEvent<HTMLElement>, color: IColor) => void;'
+      return:
+        type:
+          - '(ev: React.SyntheticEvent<HTMLElement>, color: IColor) => void'
   - uid: office-ui-fabric-react.IColorPickerProps.onColorChanged
-    summary: Callback issued when the user changes the color.
+    summary: >-
+      Callback for when the user changes the color. (To preserve existing behavior, this is also called when the color
+      changes via props.)
+    deprecated:
+      content: Use `onChange` instead.
     name: onColorChanged
     fullName: onColorChanged
     langs:
@@ -131,7 +148,7 @@ items:
         type:
           - '(color: string, colorObject: IColor) => void'
   - uid: office-ui-fabric-react.IColorPickerProps.redLabel
-    summary: Label for the red textfield.
+    summary: Label for the red text field.
     name: redLabel
     fullName: redLabel
     langs:
@@ -165,4 +182,4 @@ items:
       content: 'theme?: ITheme;'
       return:
         type:
-          - office-ui-fabric-react.ITheme
+          - styling.ITheme

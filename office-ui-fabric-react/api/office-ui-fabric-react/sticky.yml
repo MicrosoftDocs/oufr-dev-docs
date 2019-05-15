@@ -7,10 +7,10 @@ items:
       - typeScript
     type: class
     extends:
-      - office-ui-fabric-react.BaseComponent
+      - 'BaseComponent<IStickyProps, IStickyState> '
     package: office-ui-fabric-react
     children:
-      - office-ui-fabric-react.Sticky.constructor
+      - office-ui-fabric-react.Sticky.(constructor)
       - office-ui-fabric-react.Sticky.addSticky
       - office-ui-fabric-react.Sticky.canStickyBottom
       - office-ui-fabric-react.Sticky.canStickyTop
@@ -20,8 +20,8 @@ items:
       - office-ui-fabric-react.Sticky.context
       - office-ui-fabric-react.Sticky.contextTypes
       - office-ui-fabric-react.Sticky.defaultProps
-      - office-ui-fabric-react.Sticky.distanceFromTop
       - office-ui-fabric-react.Sticky.nonStickyContent
+      - office-ui-fabric-react.Sticky.placeholder
       - office-ui-fabric-react.Sticky.render
       - office-ui-fabric-react.Sticky.resetSticky
       - office-ui-fabric-react.Sticky.root
@@ -30,10 +30,10 @@ items:
       - office-ui-fabric-react.Sticky.stickyContentBottom
       - office-ui-fabric-react.Sticky.stickyContentTop
       - office-ui-fabric-react.Sticky.syncScroll
-  - uid: office-ui-fabric-react.Sticky.constructor
-    summary: 'Constructs a new instance of the [Sticky](xref:office-ui-fabric-react.Sticky) class'
-    name: constructor(props)
-    fullName: constructor
+  - uid: office-ui-fabric-react.Sticky.(constructor)
+    summary: Constructs a new instance of the `Sticky` class
+    name: (constructor)(props)
+    fullName: (constructor)(props)
     langs:
       - typeScript
     type: constructor
@@ -46,7 +46,7 @@ items:
             - office-ui-fabric-react.IStickyProps
   - uid: office-ui-fabric-react.Sticky.addSticky
     name: addSticky(stickyContent)
-    fullName: addSticky
+    fullName: addSticky(stickyContent)
     langs:
       - typeScript
     type: method
@@ -85,7 +85,7 @@ items:
           - boolean
   - uid: office-ui-fabric-react.Sticky.componentDidMount
     name: componentDidMount()
-    fullName: componentDidMount
+    fullName: componentDidMount()
     langs:
       - typeScript
     type: method
@@ -97,7 +97,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.Sticky.componentDidUpdate
     name: 'componentDidUpdate(prevProps, prevState)'
-    fullName: componentDidUpdate
+    fullName: 'componentDidUpdate(prevProps, prevState)'
     langs:
       - typeScript
     type: method
@@ -118,7 +118,7 @@ items:
             - office-ui-fabric-react.IStickyState
   - uid: office-ui-fabric-react.Sticky.componentWillUnmount
     name: componentWillUnmount()
-    fullName: componentWillUnmount
+    fullName: componentWillUnmount()
     langs:
       - typeScript
     type: method
@@ -161,17 +161,6 @@ items:
       return:
         type:
           - office-ui-fabric-react.IStickyProps
-  - uid: office-ui-fabric-react.Sticky.distanceFromTop
-    name: distanceFromTop
-    fullName: distanceFromTop
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'distanceFromTop: number;'
-      return:
-        type:
-          - number
   - uid: office-ui-fabric-react.Sticky.nonStickyContent
     name: nonStickyContent
     fullName: nonStickyContent
@@ -183,9 +172,20 @@ items:
       return:
         type:
           - HTMLDivElement | null
+  - uid: office-ui-fabric-react.Sticky.placeholder
+    name: placeholder
+    fullName: placeholder
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly placeholder: HTMLDivElement | null;'
+      return:
+        type:
+          - HTMLDivElement | null
   - uid: office-ui-fabric-react.Sticky.render
     name: render()
-    fullName: render
+    fullName: render()
     langs:
       - typeScript
     type: method
@@ -197,7 +197,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.Sticky.resetSticky
     name: resetSticky()
-    fullName: resetSticky
+    fullName: resetSticky()
     langs:
       - typeScript
     type: method
@@ -220,7 +220,7 @@ items:
           - HTMLDivElement | null
   - uid: office-ui-fabric-react.Sticky.setDistanceFromTop
     name: setDistanceFromTop(container)
-    fullName: setDistanceFromTop
+    fullName: setDistanceFromTop(container)
     langs:
       - typeScript
     type: method
@@ -237,7 +237,7 @@ items:
             - HTMLDivElement
   - uid: office-ui-fabric-react.Sticky.shouldComponentUpdate
     name: 'shouldComponentUpdate(nextProps, nextState)'
-    fullName: shouldComponentUpdate
+    fullName: 'shouldComponentUpdate(nextProps, nextState)'
     langs:
       - typeScript
     type: method

@@ -10,17 +10,17 @@ items:
       - typeScript
     type: class
     extends:
-      - office-ui-fabric-react.BaseComponent
+      - 'BaseComponent<IPersonaCoinProps, IPersonaState> '
     package: office-ui-fabric-react
     children:
-      - office-ui-fabric-react.PersonaCoinBase.constructor
+      - office-ui-fabric-react.PersonaCoinBase.(constructor)
       - office-ui-fabric-react.PersonaCoinBase.componentWillReceiveProps
       - office-ui-fabric-react.PersonaCoinBase.defaultProps
       - office-ui-fabric-react.PersonaCoinBase.render
-  - uid: office-ui-fabric-react.PersonaCoinBase.constructor
-    summary: 'Constructs a new instance of the [PersonaCoinBase](xref:office-ui-fabric-react.PersonaCoinBase) class'
-    name: constructor(props)
-    fullName: constructor
+  - uid: office-ui-fabric-react.PersonaCoinBase.(constructor)
+    summary: Constructs a new instance of the `PersonaCoinBase` class
+    name: (constructor)(props)
+    fullName: (constructor)(props)
     langs:
       - typeScript
     type: constructor
@@ -33,7 +33,7 @@ items:
             - office-ui-fabric-react.IPersonaCoinProps
   - uid: office-ui-fabric-react.PersonaCoinBase.componentWillReceiveProps
     name: componentWillReceiveProps(nextProps)
-    fullName: componentWillReceiveProps
+    fullName: componentWillReceiveProps(nextProps)
     langs:
       - typeScript
     type: method
@@ -61,7 +61,7 @@ items:
           - office-ui-fabric-react.IPersonaCoinProps
   - uid: office-ui-fabric-react.PersonaCoinBase.render
     name: render()
-    fullName: render
+    fullName: render()
     langs:
       - typeScript
     type: method

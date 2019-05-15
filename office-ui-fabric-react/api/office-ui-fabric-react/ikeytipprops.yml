@@ -9,7 +9,6 @@ items:
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.IKeytipProps.calloutProps
-      - office-ui-fabric-react.IKeytipProps.componentRef
       - office-ui-fabric-react.IKeytipProps.content
       - office-ui-fabric-react.IKeytipProps.disabled
       - office-ui-fabric-react.IKeytipProps.hasDynamicChildren
@@ -34,20 +33,6 @@ items:
       return:
         type:
           - office-ui-fabric-react.ICalloutProps
-  - uid: office-ui-fabric-react.IKeytipProps.componentRef
-    summary: >-
-      Optional callback to access the Keytip component. Use this instead of ref for accessing the public methods and
-      properties of the component.
-    name: componentRef
-    fullName: componentRef
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'componentRef?: IRefObject<IKeytip>;'
-      return:
-        type:
-          - IRefObject<IKeytip>
   - uid: office-ui-fabric-react.IKeytipProps.content
     summary: Content to put inside the keytip
     name: content
@@ -127,7 +112,7 @@ items:
       content: 'offset?: IPoint;'
       return:
         type:
-          - office-ui-fabric-react.IPoint
+          - utilities.IPoint
   - uid: office-ui-fabric-react.IKeytipProps.onExecute
     summary: >-
       Function to call when this keytip is activated. 'executeTarget' is the DOM element marked with
@@ -191,7 +176,7 @@ items:
       content: 'theme?: ITheme;'
       return:
         type:
-          - office-ui-fabric-react.ITheme
+          - styling.ITheme
   - uid: office-ui-fabric-react.IKeytipProps.visible
     summary: T/F if the keytip is visible
     name: visible

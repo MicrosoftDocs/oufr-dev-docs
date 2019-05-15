@@ -1,0 +1,33 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office-ui-fabric-react.IColumnReorderHeaderProps
+    name: IColumnReorderHeaderProps
+    fullName: IColumnReorderHeaderProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - office-ui-fabric-react.IColumnReorderOptions
+    package: office-ui-fabric-react
+    children:
+      - office-ui-fabric-react.IColumnReorderHeaderProps.onColumnDragEnd
+  - uid: office-ui-fabric-react.IColumnReorderHeaderProps.onColumnDragEnd
+    summary: >-
+      Callback to notify the column dragEnd event to List Need this to check whether the dragEnd has happened on
+      corresponding list or outside of the list
+    name: onColumnDragEnd
+    fullName: onColumnDragEnd
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: |-
+        onColumnDragEnd?: (props: {
+                dropLocation?: ColumnDragEndLocation;
+            }, event: MouseEvent) => void;
+      return:
+        type:
+          - |-
+            (props: {
+                    dropLocation?: ColumnDragEndLocation;
+                }, event: MouseEvent) => void

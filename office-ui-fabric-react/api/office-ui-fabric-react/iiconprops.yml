@@ -7,7 +7,8 @@ items:
       - typeScript
     type: interface
     extends:
-      - office-ui-fabric-react.IBaseProps
+      - utilities.IBaseProps
+      - 'React.HTMLAttributes<HTMLElement> '
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.IIconProps.ariaLabel
@@ -16,6 +17,7 @@ items:
       - office-ui-fabric-react.IIconProps.imageErrorAs
       - office-ui-fabric-react.IIconProps.imageProps
       - office-ui-fabric-react.IIconProps.styles
+      - office-ui-fabric-react.IIconProps.theme
   - uid: office-ui-fabric-react.IIconProps.ariaLabel
     summary: The aria label of the button for the benefit of screen readers.
     name: ariaLabel
@@ -90,3 +92,14 @@ items:
       return:
         type:
           - 'IStyleFunctionOrObject<IIconStyleProps, IIconStyles>'
+  - uid: office-ui-fabric-react.IIconProps.theme
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type:
+          - styling.ITheme

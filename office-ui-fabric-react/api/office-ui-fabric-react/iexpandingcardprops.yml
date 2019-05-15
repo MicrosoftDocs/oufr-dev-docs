@@ -8,7 +8,7 @@ items:
       - typeScript
     type: interface
     extends:
-      - IBaseCardProps
+      - 'IBaseCardProps<IExpandingCard, IExpandingCardStyles, IExpandingCardStyleProps> '
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.IExpandingCardProps.compactCardHeight
@@ -60,10 +60,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'onRenderCompactCard?: IRenderFunction<IExpandingCardProps>;'
+      content: 'onRenderCompactCard?: IRenderFunction<any>;'
       return:
         type:
-          - IRenderFunction<IExpandingCardProps>
+          - IRenderFunction<any>
   - uid: office-ui-fabric-react.IExpandingCardProps.onRenderExpandedCard
     summary: Render function to populate expanded content area
     name: onRenderExpandedCard
@@ -72,7 +72,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'onRenderExpandedCard?: IRenderFunction<IExpandingCardProps>;'
+      content: 'onRenderExpandedCard?: IRenderFunction<any>;'
       return:
         type:
-          - IRenderFunction<IExpandingCardProps>
+          - IRenderFunction<any>

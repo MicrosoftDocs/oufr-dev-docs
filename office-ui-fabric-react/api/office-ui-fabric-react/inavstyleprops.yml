@@ -11,6 +11,7 @@ items:
       - office-ui-fabric-react.INavStyleProps.className
       - office-ui-fabric-react.INavStyleProps.groups
       - office-ui-fabric-react.INavStyleProps.isButtonEntry
+      - office-ui-fabric-react.INavStyleProps.isDisabled
       - office-ui-fabric-react.INavStyleProps.isExpanded
       - office-ui-fabric-react.INavStyleProps.isGroup
       - office-ui-fabric-react.INavStyleProps.isLink
@@ -55,6 +56,18 @@ items:
     type: property
     syntax:
       content: 'isButtonEntry?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-ui-fabric-react.INavStyleProps.isDisabled
+    summary: is element disabled
+    name: isDisabled
+    fullName: isDisabled
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isDisabled?: boolean;'
       return:
         type:
           - boolean
@@ -189,4 +202,4 @@ items:
       content: 'theme: ITheme;'
       return:
         type:
-          - office-ui-fabric-react.ITheme
+          - styling.ITheme

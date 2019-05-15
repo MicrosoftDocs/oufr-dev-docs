@@ -7,12 +7,12 @@ items:
       - typeScript
     type: class
     extends:
-      - office-ui-fabric-react.BaseComponent
+      - 'BaseComponent<P, IBaseSelectedItemsListState<T>> '
     implements:
-      - office-ui-fabric-react.IBaseSelectedItemsList
+      - 'IBaseSelectedItemsList<T> '
     package: office-ui-fabric-react
     children:
-      - office-ui-fabric-react.BaseSelectedItemsList.constructor
+      - office-ui-fabric-react.BaseSelectedItemsList.(constructor)
       - office-ui-fabric-react.BaseSelectedItemsList.addItems
       - office-ui-fabric-react.BaseSelectedItemsList.componentDidMount
       - office-ui-fabric-react.BaseSelectedItemsList.componentWillReceiveProps
@@ -31,14 +31,15 @@ items:
       - office-ui-fabric-react.BaseSelectedItemsList.removeSelectedItems
       - office-ui-fabric-react.BaseSelectedItemsList.render
       - office-ui-fabric-react.BaseSelectedItemsList.renderItems
+      - office-ui-fabric-react.BaseSelectedItemsList.replaceItem
       - office-ui-fabric-react.BaseSelectedItemsList.root
       - office-ui-fabric-react.BaseSelectedItemsList.selection
       - office-ui-fabric-react.BaseSelectedItemsList.unselectAll
       - office-ui-fabric-react.BaseSelectedItemsList.updateItems
-  - uid: office-ui-fabric-react.BaseSelectedItemsList.constructor
-    summary: 'Constructs a new instance of the [BaseSelectedItemsList](xref:office-ui-fabric-react.BaseSelectedItemsList) class'
-    name: constructor(basePickerProps)
-    fullName: constructor
+  - uid: office-ui-fabric-react.BaseSelectedItemsList.(constructor)
+    summary: Constructs a new instance of the `BaseSelectedItemsList` class
+    name: (constructor)(basePickerProps)
+    fullName: (constructor)(basePickerProps)
     langs:
       - typeScript
     type: constructor
@@ -62,7 +63,7 @@ items:
           - '(items: T[]) => void'
   - uid: office-ui-fabric-react.BaseSelectedItemsList.componentDidMount
     name: componentDidMount()
-    fullName: componentDidMount
+    fullName: componentDidMount()
     langs:
       - typeScript
     type: method
@@ -74,7 +75,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.BaseSelectedItemsList.componentWillReceiveProps
     name: componentWillReceiveProps(newProps)
-    fullName: componentWillReceiveProps
+    fullName: componentWillReceiveProps(newProps)
     langs:
       - typeScript
     type: method
@@ -91,7 +92,7 @@ items:
             - P
   - uid: office-ui-fabric-react.BaseSelectedItemsList.componentWillUpdate
     name: 'componentWillUpdate(newProps, newState)'
-    fullName: componentWillUpdate
+    fullName: 'componentWillUpdate(newProps, newState)'
     langs:
       - typeScript
     type: method
@@ -112,7 +113,7 @@ items:
             - office-ui-fabric-react.IBaseSelectedItemsListState
   - uid: office-ui-fabric-react.BaseSelectedItemsList.copyItems
     name: copyItems(items)
-    fullName: copyItems
+    fullName: copyItems(items)
     langs:
       - typeScript
     type: method
@@ -129,7 +130,7 @@ items:
             - 'T[]'
   - uid: office-ui-fabric-react.BaseSelectedItemsList.hasSelectedItems
     name: hasSelectedItems()
-    fullName: hasSelectedItems
+    fullName: hasSelectedItems()
     langs:
       - typeScript
     type: method
@@ -141,7 +142,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.BaseSelectedItemsList.highlightedItems
     name: highlightedItems()
-    fullName: highlightedItems
+    fullName: highlightedItems()
     langs:
       - typeScript
     type: method
@@ -164,7 +165,7 @@ items:
           - 'T[]'
   - uid: office-ui-fabric-react.BaseSelectedItemsList.onChange
     name: onChange(items)
-    fullName: onChange
+    fullName: onChange(items)
     langs:
       - typeScript
     type: method
@@ -219,10 +220,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'removeItem: (item: ISelectedItemProps<T>) => void;'
+      content: 'removeItem: (item: T) => void;'
       return:
         type:
-          - '(item: ISelectedItemProps<T>) => void'
+          - '(item: T) => void'
   - uid: office-ui-fabric-react.BaseSelectedItemsList.removeItemAt
     name: removeItemAt
     fullName: removeItemAt
@@ -247,7 +248,7 @@ items:
           - '(itemsToRemove: any[]) => void'
   - uid: office-ui-fabric-react.BaseSelectedItemsList.removeSelectedItems
     name: removeSelectedItems()
-    fullName: removeSelectedItems
+    fullName: removeSelectedItems()
     langs:
       - typeScript
     type: method
@@ -259,7 +260,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.BaseSelectedItemsList.render
     name: render()
-    fullName: render
+    fullName: render()
     langs:
       - typeScript
     type: method
@@ -280,6 +281,17 @@ items:
       return:
         type:
           - '() => JSX.Element[]'
+  - uid: office-ui-fabric-react.BaseSelectedItemsList.replaceItem
+    name: replaceItem
+    fullName: replaceItem
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'replaceItem: (itemToReplace: T, itemsToReplaceWith: T[]) => void;'
+      return:
+        type:
+          - '(itemToReplace: T, itemsToReplaceWith: T[]) => void'
   - uid: office-ui-fabric-react.BaseSelectedItemsList.root
     name: root
     fullName: root
@@ -304,7 +316,7 @@ items:
           - office-ui-fabric-react.Selection
   - uid: office-ui-fabric-react.BaseSelectedItemsList.unselectAll
     name: unselectAll()
-    fullName: unselectAll
+    fullName: unselectAll()
     langs:
       - typeScript
     type: method
@@ -319,7 +331,7 @@ items:
       Controls what happens whenever there is an action that impacts the selected items. If selectedItems is provided as
       a property then this will act as a controlled component and it will not update it's own state.
     name: 'updateItems(items, focusIndex)'
-    fullName: updateItems
+    fullName: 'updateItems(items, focusIndex)'
     langs:
       - typeScript
     type: method

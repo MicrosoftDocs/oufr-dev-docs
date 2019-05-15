@@ -7,18 +7,21 @@ items:
       - typeScript
     type: class
     extends:
-      - office-ui-fabric-react.BaseComponent
+      - 'React.Component<IChoiceGroupProps, IChoiceGroupState> '
+    implements:
+      - office-ui-fabric-react.IChoiceGroup
     package: office-ui-fabric-react
     children:
-      - office-ui-fabric-react.ChoiceGroupBase.constructor
+      - office-ui-fabric-react.ChoiceGroupBase.(constructor)
+      - office-ui-fabric-react.ChoiceGroupBase.checkedOption
       - office-ui-fabric-react.ChoiceGroupBase.componentWillReceiveProps
       - office-ui-fabric-react.ChoiceGroupBase.defaultProps
       - office-ui-fabric-react.ChoiceGroupBase.focus
       - office-ui-fabric-react.ChoiceGroupBase.render
-  - uid: office-ui-fabric-react.ChoiceGroupBase.constructor
-    summary: 'Constructs a new instance of the [ChoiceGroupBase](xref:office-ui-fabric-react.ChoiceGroupBase) class'
-    name: constructor(props)
-    fullName: constructor
+  - uid: office-ui-fabric-react.ChoiceGroupBase.(constructor)
+    summary: Constructs a new instance of the `ChoiceGroupBase` class
+    name: (constructor)(props)
+    fullName: (constructor)(props)
     langs:
       - typeScript
     type: constructor
@@ -29,9 +32,21 @@ items:
           description: ''
           type:
             - office-ui-fabric-react.IChoiceGroupProps
+  - uid: office-ui-fabric-react.ChoiceGroupBase.checkedOption
+    summary: Gets the current checked option.
+    name: checkedOption
+    fullName: checkedOption
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly checkedOption: IChoiceGroupOption | undefined;'
+      return:
+        type:
+          - IChoiceGroupOption | undefined
   - uid: office-ui-fabric-react.ChoiceGroupBase.componentWillReceiveProps
     name: componentWillReceiveProps(newProps)
-    fullName: componentWillReceiveProps
+    fullName: componentWillReceiveProps(newProps)
     langs:
       - typeScript
     type: method
@@ -59,7 +74,7 @@ items:
           - office-ui-fabric-react.IChoiceGroupProps
   - uid: office-ui-fabric-react.ChoiceGroupBase.focus
     name: focus()
-    fullName: focus
+    fullName: focus()
     langs:
       - typeScript
     type: method
@@ -71,7 +86,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.ChoiceGroupBase.render
     name: render()
-    fullName: render
+    fullName: render()
     langs:
       - typeScript
     type: method

@@ -7,9 +7,12 @@ items:
       - typeScript
     type: interface
     extends:
-      - office-ui-fabric-react.IBaseProps
+      - 'Pick<IDetailsListProps, ''onRenderItemColumn''>'
+      - IBaseProps<IDetailsRow>
+      - office-ui-fabric-react.IDetailsItemProps
     package: office-ui-fabric-react
     children:
+      - office-ui-fabric-react.IDetailsRowBaseProps.cellsByColumn
       - office-ui-fabric-react.IDetailsRowBaseProps.checkboxCellClassName
       - office-ui-fabric-react.IDetailsRowBaseProps.checkButtonAriaLabel
       - office-ui-fabric-react.IDetailsRowBaseProps.className
@@ -25,13 +28,31 @@ items:
       - office-ui-fabric-react.IDetailsRowBaseProps.itemIndex
       - office-ui-fabric-react.IDetailsRowBaseProps.onDidMount
       - office-ui-fabric-react.IDetailsRowBaseProps.onRenderCheck
-      - office-ui-fabric-react.IDetailsRowBaseProps.onRenderItemColumn
+      - office-ui-fabric-react.IDetailsRowBaseProps.onRenderDetailsCheckbox
       - office-ui-fabric-react.IDetailsRowBaseProps.onWillUnmount
       - office-ui-fabric-react.IDetailsRowBaseProps.rowFieldsAs
       - office-ui-fabric-react.IDetailsRowBaseProps.shimmer
       - office-ui-fabric-react.IDetailsRowBaseProps.styles
       - office-ui-fabric-react.IDetailsRowBaseProps.theme
       - office-ui-fabric-react.IDetailsRowBaseProps.useReducedRowRenderer
+  - uid: office-ui-fabric-react.IDetailsRowBaseProps.cellsByColumn
+    summary: Optional pre-rendered content per column. Preferred over onRender or onRenderItemColumn if provided.
+    name: cellsByColumn
+    fullName: cellsByColumn
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: |-
+        cellsByColumn?: {
+                [columnKey: string]: React.ReactNode;
+            };
+      return:
+        type:
+          - |-
+            {
+                    [columnKey: string]: React.ReactNode;
+                }
   - uid: office-ui-fabric-react.IDetailsRowBaseProps.checkboxCellClassName
     summary: Class name for the checkbox cell
     name: checkboxCellClassName
@@ -220,18 +241,18 @@ items:
       return:
         type:
           - '(props: IDetailsRowCheckProps) => JSX.Element'
-  - uid: office-ui-fabric-react.IDetailsRowBaseProps.onRenderItemColumn
-    summary: Callback for rendering an item column
-    name: onRenderItemColumn
-    fullName: onRenderItemColumn
+  - uid: office-ui-fabric-react.IDetailsRowBaseProps.onRenderDetailsCheckbox
+    summary: 'If provided, can be used to render a custom checkbox'
+    name: onRenderDetailsCheckbox
+    fullName: onRenderDetailsCheckbox
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'onRenderItemColumn?: (item?: any, index?: number, column?: IColumn) => any;'
+      content: 'onRenderDetailsCheckbox?: IRenderFunction<IDetailsCheckboxProps>;'
       return:
         type:
-          - '(item?: any, index?: number, column?: IColumn) => any'
+          - IRenderFunction<IDetailsCheckboxProps>
   - uid: office-ui-fabric-react.IDetailsRowBaseProps.onWillUnmount
     summary: Callback for will mount for parent
     name: onWillUnmount
@@ -258,6 +279,10 @@ items:
           - React.StatelessComponent<IDetailsRowFieldsProps> | React.ComponentClass<IDetailsRowFieldsProps>
   - uid: office-ui-fabric-react.IDetailsRowBaseProps.shimmer
     summary: Whether to render shimmer
+    deprecated:
+      content: >-
+        Use `ShimmeredDetailsList` instead:
+        https://developer.microsoft.com/en-us/fabric\#/components/detailslist/shimmer
     name: shimmer
     fullName: shimmer
     langs:
@@ -291,7 +316,7 @@ items:
       content: 'theme?: ITheme;'
       return:
         type:
-          - office-ui-fabric-react.ITheme
+          - styling.ITheme
   - uid: office-ui-fabric-react.IDetailsRowBaseProps.useReducedRowRenderer
     summary: Rerender DetailsRow only when props changed. Might cause regression when depending on external updates.
     name: useReducedRowRenderer

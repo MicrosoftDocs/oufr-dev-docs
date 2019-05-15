@@ -7,7 +7,8 @@ items:
       - typeScript
     type: interface
     extends:
-      - office-ui-fabric-react.IBaseProps
+      - IBaseProps<IDetailsList>
+      - 'IWithViewportProps '
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.IDetailsListProps.ariaLabel
@@ -49,6 +50,7 @@ items:
       - office-ui-fabric-react.IDetailsListProps.onDidUpdate
       - office-ui-fabric-react.IDetailsListProps.onItemContextMenu
       - office-ui-fabric-react.IDetailsListProps.onItemInvoked
+      - office-ui-fabric-react.IDetailsListProps.onRenderCheckbox
       - office-ui-fabric-react.IDetailsListProps.onRenderDetailsFooter
       - office-ui-fabric-react.IDetailsListProps.onRenderDetailsHeader
       - office-ui-fabric-react.IDetailsListProps.onRenderItemColumn
@@ -279,6 +281,10 @@ items:
           - IDragDropEvents
   - uid: office-ui-fabric-react.IDetailsListProps.enableShimmer
     summary: 'If set to true and we provide an empty array, it will render 10 lines of whatever provided in onRenderMissingItem.'
+    deprecated:
+      content: >-
+        Use `ShimmeredDetailsList` pass-through component instead which supports this prop. Will be removed in Fabric
+        7.0
     name: enableShimmer
     fullName: enableShimmer
     langs:
@@ -302,26 +308,17 @@ items:
         type:
           - boolean
   - uid: office-ui-fabric-react.IDetailsListProps.getGroupHeight
-    summary: >-
-      Optional function which will be called to estimate the height (in pixels) of the given group.
-
-
-      By default, scrolling through a large virtualized GroupedList will often "jump" due to the order in which heights
-      are calculated. For more details, see https://github.com/OfficeDev/office-ui-fabric-react/issues/5094
-
-
-      Pass this prop to ensure the list uses the computed height rather than cached DOM measurements, avoiding the
-      scroll jumping issue.
+    summary: Optional function to override default group height calculation used by list virtualization.
     name: getGroupHeight
     fullName: getGroupHeight
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'getGroupHeight?: (group: IGroup, groupIndex: number) => number;'
+      content: 'getGroupHeight?: IGroupedListProps[''getGroupHeight''];'
       return:
         type:
-          - '(group: IGroup, groupIndex: number) => number'
+          - 'IGroupedListProps[''getGroupHeight'']'
   - uid: office-ui-fabric-react.IDetailsListProps.getKey
     summary: 'Optional callback to get the item key, to be used in the selection and on render.'
     name: getKey
@@ -528,10 +525,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'onDidUpdate?: (detailsList?: DetailsListBase) => any;'
+      content: 'onDidUpdate?: (detailsList?: DetailsListBase) => void;'
       return:
         type:
-          - '(detailsList?: DetailsListBase) => any'
+          - '(detailsList?: DetailsListBase) => void'
   - uid: office-ui-fabric-react.IDetailsListProps.onItemContextMenu
     summary: >-
       Callback for when the context menu of an item has been accessed. If undefined or false are returned,
@@ -558,6 +555,18 @@ items:
       return:
         type:
           - '(item?: any, index?: number, ev?: Event) => void'
+  - uid: office-ui-fabric-react.IDetailsListProps.onRenderCheckbox
+    summary: 'If provided, can be used to render a custom checkbox'
+    name: onRenderCheckbox
+    fullName: onRenderCheckbox
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onRenderCheckbox?: IRenderFunction<IDetailsListCheckboxProps>;'
+      return:
+        type:
+          - IRenderFunction<IDetailsListCheckboxProps>
   - uid: office-ui-fabric-react.IDetailsListProps.onRenderDetailsFooter
     summary: An override to render the details footer.
     name: onRenderDetailsFooter
@@ -592,10 +601,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'onRenderItemColumn?: (item?: any, index?: number, column?: IColumn) => any;'
+      content: 'onRenderItemColumn?: (item?: any, index?: number, column?: IColumn) => React.ReactNode;'
       return:
         type:
-          - '(item?: any, index?: number, column?: IColumn) => any'
+          - '(item?: any, index?: number, column?: IColumn) => React.ReactNode'
   - uid: office-ui-fabric-react.IDetailsListProps.onRenderMissingItem
     summary: Callback for what to render when the item is missing.
     name: onRenderMissingItem
@@ -779,7 +788,7 @@ items:
       content: 'theme?: ITheme;'
       return:
         type:
-          - office-ui-fabric-react.ITheme
+          - styling.ITheme
   - uid: office-ui-fabric-react.IDetailsListProps.usePageCache
     summary: >-
       Boolean value to enable render page caching. This is an experimental performance optimization that is off by

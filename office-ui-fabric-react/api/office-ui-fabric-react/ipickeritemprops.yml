@@ -1,13 +1,14 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office-ui-fabric-react.IPickerItemProps
+    summary: PickerItem props common for any type of items.
     name: IPickerItemProps
     fullName: IPickerItemProps
     langs:
       - typeScript
     type: interface
     extends:
-      - React.AllHTMLAttributes
+      - 'React.AllHTMLAttributes<HTMLElement> '
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.IPickerItemProps.componentRef
@@ -19,17 +20,21 @@ items:
       - office-ui-fabric-react.IPickerItemProps.removeButtonAriaLabel
       - office-ui-fabric-react.IPickerItemProps.selected
   - uid: office-ui-fabric-react.IPickerItemProps.componentRef
+    summary: >-
+      Optional callback to access the IPickerItem interface. Use this instead of ref for accessing the public methods
+      and properties of the component.
     name: componentRef
     fullName: componentRef
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'componentRef?: IRefObject<{}>;'
+      content: 'componentRef?: IRefObject<IPickerItem>;'
       return:
         type:
-          - 'IRefObject<{}>'
+          - IRefObject<IPickerItem>
   - uid: office-ui-fabric-react.IPickerItemProps.index
+    summary: Index number of the item in the array of picked items.
     name: index
     fullName: index
     langs:
@@ -41,6 +46,7 @@ items:
         type:
           - number
   - uid: office-ui-fabric-react.IPickerItemProps.item
+    summary: 'The item of Type T (Persona, Tag, or any other custom item provided).'
     name: item
     fullName: item
     langs:
@@ -52,6 +58,7 @@ items:
         type:
           - T
   - uid: office-ui-fabric-react.IPickerItemProps.key
+    summary: Unique key for each picked item.
     name: key
     fullName: key
     langs:
@@ -77,6 +84,7 @@ items:
         type:
           - '(item: T, index: number) => void'
   - uid: office-ui-fabric-react.IPickerItemProps.onRemoveItem
+    summary: Callback issued when the item is removed from the array of picked items.
     name: onRemoveItem
     fullName: onRemoveItem
     langs:
@@ -88,6 +96,7 @@ items:
         type:
           - () => void
   - uid: office-ui-fabric-react.IPickerItemProps.removeButtonAriaLabel
+    summary: Aria-label for the picked item remove button.
     name: removeButtonAriaLabel
     fullName: removeButtonAriaLabel
     langs:
@@ -99,6 +108,7 @@ items:
         type:
           - string
   - uid: office-ui-fabric-react.IPickerItemProps.selected
+    summary: Wether the picked item is selected or not.
     name: selected
     fullName: selected
     langs:

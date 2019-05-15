@@ -12,6 +12,8 @@ items:
       - office-ui-fabric-react.IToggleStyleProps.checked
       - office-ui-fabric-react.IToggleStyleProps.className
       - office-ui-fabric-react.IToggleStyleProps.disabled
+      - office-ui-fabric-react.IToggleStyleProps.inlineLabel
+      - office-ui-fabric-react.IToggleStyleProps.onOffMissing
       - office-ui-fabric-react.IToggleStyleProps.theme
   - uid: office-ui-fabric-react.IToggleStyleProps.checked
     summary: Component is checked.
@@ -49,6 +51,30 @@ items:
       return:
         type:
           - boolean
+  - uid: office-ui-fabric-react.IToggleStyleProps.inlineLabel
+    summary: Whether label should be positioned inline with the toggle.
+    name: inlineLabel
+    fullName: inlineLabel
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'inlineLabel?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-ui-fabric-react.IToggleStyleProps.onOffMissing
+    summary: Whether the user did not specify a on/off text. Influencing only when inlineLabel is used.
+    name: onOffMissing
+    fullName: onOffMissing
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onOffMissing?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: office-ui-fabric-react.IToggleStyleProps.theme
     summary: Theme values.
     name: theme
@@ -60,4 +86,4 @@ items:
       content: 'theme: ITheme;'
       return:
         type:
-          - office-ui-fabric-react.ITheme
+          - styling.ITheme

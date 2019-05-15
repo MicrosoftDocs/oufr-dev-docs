@@ -18,7 +18,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'isGroupCollapsed?:'
+      content: |-
+        isGroupCollapsed?: {
+                [key: string]: boolean;
+            };
       return:
         type:
           - |-

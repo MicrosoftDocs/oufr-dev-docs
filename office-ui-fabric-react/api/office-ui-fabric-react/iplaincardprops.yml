@@ -8,7 +8,7 @@ items:
       - typeScript
     type: interface
     extends:
-      - IBaseCardProps
+      - 'IBaseCardProps<IPlainCard, IPlainCardStyles, IPlainCardStyleProps> '
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.IPlainCardProps.onRenderPlainCard
@@ -20,7 +20,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'onRenderPlainCard?: IRenderFunction<IPlainCardProps>;'
+      content: 'onRenderPlainCard?: IRenderFunction<any>;'
       return:
         type:
-          - IRenderFunction<IPlainCardProps>
+          - IRenderFunction<any>

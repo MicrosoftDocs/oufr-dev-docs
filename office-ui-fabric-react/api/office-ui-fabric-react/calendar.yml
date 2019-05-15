@@ -7,21 +7,21 @@ items:
       - typeScript
     type: class
     extends:
-      - office-ui-fabric-react.BaseComponent
+      - 'BaseComponent<ICalendarProps, ICalendarState> '
     implements:
       - office-ui-fabric-react.ICalendar
     package: office-ui-fabric-react
     children:
-      - office-ui-fabric-react.Calendar.constructor
+      - office-ui-fabric-react.Calendar.(constructor)
       - office-ui-fabric-react.Calendar.componentDidUpdate
       - office-ui-fabric-react.Calendar.componentWillReceiveProps
       - office-ui-fabric-react.Calendar.defaultProps
       - office-ui-fabric-react.Calendar.focus
       - office-ui-fabric-react.Calendar.render
-  - uid: office-ui-fabric-react.Calendar.constructor
-    summary: 'Constructs a new instance of the [Calendar](xref:office-ui-fabric-react.Calendar) class'
-    name: constructor(props)
-    fullName: constructor
+  - uid: office-ui-fabric-react.Calendar.(constructor)
+    summary: Constructs a new instance of the `Calendar` class
+    name: (constructor)(props)
+    fullName: (constructor)(props)
     langs:
       - typeScript
     type: constructor
@@ -34,7 +34,7 @@ items:
             - office-ui-fabric-react.ICalendarProps
   - uid: office-ui-fabric-react.Calendar.componentDidUpdate
     name: componentDidUpdate()
-    fullName: componentDidUpdate
+    fullName: componentDidUpdate()
     langs:
       - typeScript
     type: method
@@ -46,7 +46,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.Calendar.componentWillReceiveProps
     name: componentWillReceiveProps(nextProps)
-    fullName: componentWillReceiveProps
+    fullName: componentWillReceiveProps(nextProps)
     langs:
       - typeScript
     type: method
@@ -74,7 +74,7 @@ items:
           - office-ui-fabric-react.ICalendarProps
   - uid: office-ui-fabric-react.Calendar.focus
     name: focus()
-    fullName: focus
+    fullName: focus()
     langs:
       - typeScript
     type: method
@@ -86,7 +86,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.Calendar.render
     name: render()
-    fullName: render
+    fullName: render()
     langs:
       - typeScript
     type: method

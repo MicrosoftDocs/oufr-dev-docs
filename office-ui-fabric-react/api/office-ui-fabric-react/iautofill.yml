@@ -9,8 +9,8 @@ items:
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.IAutofill.clear
-      - office-ui-fabric-react.IAutofill.cursorLocation
       - office-ui-fabric-react.IAutofill.focus
+      - office-ui-fabric-react.IAutofill.cursorLocation
       - office-ui-fabric-react.IAutofill.inputElement
       - office-ui-fabric-react.IAutofill.isValueSelected
       - office-ui-fabric-react.IAutofill.selectionEnd
@@ -19,12 +19,25 @@ items:
   - uid: office-ui-fabric-react.IAutofill.clear
     summary: Clear all text in the input. Sets value to '';
     name: clear()
-    fullName: clear
+    fullName: clear()
     langs:
       - typeScript
     type: method
     syntax:
       content: 'clear(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: office-ui-fabric-react.IAutofill.focus
+    summary: Focus the input element.
+    name: focus()
+    fullName: focus()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'focus(): void;'
       return:
         type:
           - void
@@ -41,19 +54,6 @@ items:
       return:
         type:
           - number | null
-  - uid: office-ui-fabric-react.IAutofill.focus
-    summary: Focus the input element.
-    name: focus()
-    fullName: focus
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'focus(): void;'
-      return:
-        type:
-          - void
-        description: ''
   - uid: office-ui-fabric-react.IAutofill.inputElement
     summary: The current input element.
     name: inputElement

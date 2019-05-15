@@ -19,7 +19,12 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'columnMeasureInfo?:'
+      content: |-
+        columnMeasureInfo?: {
+                index: number;
+                column: IColumn;
+                onMeasureDone: (measuredWidth: number) => void;
+            };
       return:
         type:
           - |-

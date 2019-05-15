@@ -1,6 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office-ui-fabric-react.IVerticalDividerProps
+    summary: Props for the Vertical Divider
     name: IVerticalDividerProps
     fullName: IVerticalDividerProps
     langs:
@@ -8,9 +9,25 @@ items:
     type: interface
     package: office-ui-fabric-react
     children:
+      - office-ui-fabric-react.IVerticalDividerProps.className
       - office-ui-fabric-react.IVerticalDividerProps.getClassNames
+      - office-ui-fabric-react.IVerticalDividerProps.styles
+      - office-ui-fabric-react.IVerticalDividerProps.theme
+  - uid: office-ui-fabric-react.IVerticalDividerProps.className
+    summary: className that will be placed on the divider wrapper div
+    name: className
+    fullName: className
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'className?: string;'
+      return:
+        type:
+          - string
   - uid: office-ui-fabric-react.IVerticalDividerProps.getClassNames
-    summary: Optional function to generate the class names for the divider for custom styling
+    deprecated:
+      content: Use styles instead. Optional function to generate the class names for the divider for custom styling
     name: getClassNames
     fullName: getClassNames
     langs:
@@ -21,3 +38,27 @@ items:
       return:
         type:
           - '(theme: ITheme) => IVerticalDividerClassNames'
+  - uid: office-ui-fabric-react.IVerticalDividerProps.styles
+    summary: Optional override stylings that will get merged with the dividers styles.
+    name: styles
+    fullName: styles
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'styles?: IStyleFunctionOrObject<IVerticalDividerPropsStyles, IVerticalDividerStyles>;'
+      return:
+        type:
+          - 'IStyleFunctionOrObject<IVerticalDividerPropsStyles, IVerticalDividerStyles>'
+  - uid: office-ui-fabric-react.IVerticalDividerProps.theme
+    summary: The theme that should be used to render the vertical divider.
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type:
+          - styling.ITheme

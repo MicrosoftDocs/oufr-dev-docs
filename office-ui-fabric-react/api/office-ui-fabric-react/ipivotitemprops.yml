@@ -7,7 +7,7 @@ items:
       - typeScript
     type: interface
     extends:
-      - React.HTMLAttributes
+      - 'React.HTMLAttributes<HTMLDivElement> '
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.IPivotItemProps.ariaLabel
@@ -57,7 +57,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'headerButtonProps?:'
+      content: |-
+        headerButtonProps?: {
+                [key: string]: string | number | boolean;
+            };
       return:
         type:
           - |-
@@ -78,19 +81,19 @@ items:
           - string
   - uid: office-ui-fabric-react.IPivotItemProps.itemCount
     summary: |-
-      An optional item count that gets displayed just after the linkText(itemCount)
+      Defines an optional item count displayed in parentheses just after the `linkText`<!-- -->.
 
-      Example: completed(4)
+      Examples: completed (4), Unread (99+)
     name: itemCount
     fullName: itemCount
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'itemCount?: number;'
+      content: 'itemCount?: number | string;'
       return:
         type:
-          - number
+          - number | string
   - uid: office-ui-fabric-react.IPivotItemProps.itemIcon
     summary: An optional icon to show next to the pivot link.
     name: itemIcon

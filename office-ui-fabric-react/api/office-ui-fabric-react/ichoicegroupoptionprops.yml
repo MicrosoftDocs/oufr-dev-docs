@@ -17,7 +17,6 @@ items:
       - office-ui-fabric-react.IChoiceGroupOptionProps.onChange
       - office-ui-fabric-react.IChoiceGroupOptionProps.onFocus
       - office-ui-fabric-react.IChoiceGroupOptionProps.required
-      - office-ui-fabric-react.IChoiceGroupOptionProps.styles
       - office-ui-fabric-react.IChoiceGroupOptionProps.theme
   - uid: office-ui-fabric-react.IChoiceGroupOptionProps.componentRef
     summary: >-
@@ -105,18 +104,6 @@ items:
       return:
         type:
           - boolean
-  - uid: office-ui-fabric-react.IChoiceGroupOptionProps.styles
-    summary: Call to provide customized styling that will layer on top of the variant rules.
-    name: styles
-    fullName: styles
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'styles?: IStyleFunctionOrObject<IChoiceGroupOptionStyleProps, IChoiceGroupOptionStyles>;'
-      return:
-        type:
-          - 'IStyleFunctionOrObject<IChoiceGroupOptionStyleProps, IChoiceGroupOptionStyles>'
   - uid: office-ui-fabric-react.IChoiceGroupOptionProps.theme
     summary: Theme (provided through customization.)
     name: theme
@@ -128,4 +115,4 @@ items:
       content: 'theme?: ITheme;'
       return:
         type:
-          - office-ui-fabric-react.ITheme
+          - styling.ITheme

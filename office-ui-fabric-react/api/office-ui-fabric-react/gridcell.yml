@@ -7,7 +7,7 @@ items:
       - typeScript
     type: class
     extends:
-      - React.Component
+      - ''
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.GridCell.defaultProps
@@ -19,7 +19,11 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'static defaultProps:'
+      content: |-
+        static defaultProps: {
+                disabled: boolean;
+                id: string;
+            };
       return:
         type:
           - |-
@@ -29,7 +33,7 @@ items:
                 }
   - uid: office-ui-fabric-react.GridCell.render
     name: render()
-    fullName: render
+    fullName: render()
     langs:
       - typeScript
     type: method

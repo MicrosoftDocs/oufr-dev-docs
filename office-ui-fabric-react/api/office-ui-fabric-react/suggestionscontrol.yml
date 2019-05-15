@@ -8,15 +8,15 @@ items:
       - typeScript
     type: class
     extends:
-      - office-ui-fabric-react.BaseComponent
+      - 'BaseComponent<ISuggestionsControlProps<T>, ISuggestionsControlState<T>> '
     package: office-ui-fabric-react
     children:
-      - office-ui-fabric-react.SuggestionsControl.constructor
       - office-ui-fabric-react.SuggestionsControl._forceResolveButton
       - office-ui-fabric-react.SuggestionsControl._renderSuggestions
       - office-ui-fabric-react.SuggestionsControl._searchForMoreButton
       - office-ui-fabric-react.SuggestionsControl._selectedElement
       - office-ui-fabric-react.SuggestionsControl._suggestions
+      - office-ui-fabric-react.SuggestionsControl.(constructor)
       - office-ui-fabric-react.SuggestionsControl.componentDidMount
       - office-ui-fabric-react.SuggestionsControl.componentDidUpdate
       - office-ui-fabric-react.SuggestionsControl.componentWillReceiveProps
@@ -38,20 +38,6 @@ items:
       - office-ui-fabric-react.SuggestionsControl.selectLastItem
       - office-ui-fabric-react.SuggestionsControl.selectNextItem
       - office-ui-fabric-react.SuggestionsControl.selectPreviousItem
-  - uid: office-ui-fabric-react.SuggestionsControl.constructor
-    summary: 'Constructs a new instance of the [SuggestionsControl](xref:office-ui-fabric-react.SuggestionsControl) class'
-    name: constructor(suggestionsProps)
-    fullName: constructor
-    langs:
-      - typeScript
-    type: constructor
-    syntax:
-      content: 'constructor(suggestionsProps: ISuggestionsControlProps<T>);'
-      parameters:
-        - id: suggestionsProps
-          description: ''
-          type:
-            - ISuggestionsControlProps<T>
   - uid: office-ui-fabric-react.SuggestionsControl._forceResolveButton
     name: _forceResolveButton
     fullName: _forceResolveButton
@@ -65,7 +51,7 @@ items:
           - office-ui-fabric-react.IButton
   - uid: office-ui-fabric-react.SuggestionsControl._renderSuggestions
     name: _renderSuggestions()
-    fullName: _renderSuggestions
+    fullName: _renderSuggestions()
     langs:
       - typeScript
     type: method
@@ -108,9 +94,23 @@ items:
       return:
         type:
           - SuggestionsCore<T>
+  - uid: office-ui-fabric-react.SuggestionsControl.(constructor)
+    summary: Constructs a new instance of the `SuggestionsControl` class
+    name: (constructor)(suggestionsProps)
+    fullName: (constructor)(suggestionsProps)
+    langs:
+      - typeScript
+    type: constructor
+    syntax:
+      content: 'constructor(suggestionsProps: ISuggestionsControlProps<T>);'
+      parameters:
+        - id: suggestionsProps
+          description: ''
+          type:
+            - ISuggestionsControlProps<T>
   - uid: office-ui-fabric-react.SuggestionsControl.componentDidMount
     name: componentDidMount()
-    fullName: componentDidMount
+    fullName: componentDidMount()
     langs:
       - typeScript
     type: method
@@ -122,7 +122,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.SuggestionsControl.componentDidUpdate
     name: componentDidUpdate()
-    fullName: componentDidUpdate
+    fullName: componentDidUpdate()
     langs:
       - typeScript
     type: method
@@ -134,7 +134,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.SuggestionsControl.componentWillReceiveProps
     name: componentWillReceiveProps(newProps)
-    fullName: componentWillReceiveProps
+    fullName: componentWillReceiveProps(newProps)
     langs:
       - typeScript
     type: method
@@ -151,7 +151,7 @@ items:
             - ISuggestionsControlProps<T>
   - uid: office-ui-fabric-react.SuggestionsControl.componentWillUnmount
     name: componentWillUnmount()
-    fullName: componentWillUnmount
+    fullName: componentWillUnmount()
     langs:
       - typeScript
     type: method
@@ -185,7 +185,7 @@ items:
           - number
   - uid: office-ui-fabric-react.SuggestionsControl.executeSelectedAction
     name: executeSelectedAction()
-    fullName: executeSelectedAction
+    fullName: executeSelectedAction()
     langs:
       - typeScript
     type: method
@@ -198,7 +198,7 @@ items:
   - uid: office-ui-fabric-react.SuggestionsControl.handleKeyDown
     summary: 'Handles the key down, returns true, if the event was handled, false otherwise'
     name: handleKeyDown(keyCode)
-    fullName: handleKeyDown
+    fullName: handleKeyDown(keyCode)
     langs:
       - typeScript
     type: method
@@ -215,7 +215,7 @@ items:
             - number
   - uid: office-ui-fabric-react.SuggestionsControl.hasSelection
     name: hasSelection()
-    fullName: hasSelection
+    fullName: hasSelection()
     langs:
       - typeScript
     type: method
@@ -227,7 +227,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.SuggestionsControl.hasSuggestionSelected
     name: hasSuggestionSelected()
-    fullName: hasSuggestionSelected
+    fullName: hasSuggestionSelected()
     langs:
       - typeScript
     type: method
@@ -239,7 +239,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.SuggestionsControl.removeSuggestion
     name: removeSuggestion(index)
-    fullName: removeSuggestion
+    fullName: removeSuggestion(index)
     langs:
       - typeScript
     type: method
@@ -256,7 +256,7 @@ items:
             - number
   - uid: office-ui-fabric-react.SuggestionsControl.render
     name: render()
-    fullName: render
+    fullName: render()
     langs:
       - typeScript
     type: method
@@ -268,7 +268,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.SuggestionsControl.renderFooterItems
     name: renderFooterItems()
-    fullName: renderFooterItems
+    fullName: renderFooterItems()
     langs:
       - typeScript
     type: method
@@ -280,7 +280,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.SuggestionsControl.renderHeaderItems
     name: renderHeaderItems()
-    fullName: renderHeaderItems
+    fullName: renderHeaderItems()
     langs:
       - typeScript
     type: method
@@ -293,7 +293,7 @@ items:
   - uid: office-ui-fabric-react.SuggestionsControl.resetSelectedItem
     summary: Resets the selected state and selects the first selectable item
     name: resetSelectedItem()
-    fullName: resetSelectedItem
+    fullName: resetSelectedItem()
     langs:
       - typeScript
     type: method
@@ -305,7 +305,7 @@ items:
         description: ''
   - uid: office-ui-fabric-react.SuggestionsControl.scrollSelected
     name: scrollSelected()
-    fullName: scrollSelected
+    fullName: scrollSelected()
     langs:
       - typeScript
     type: method
@@ -329,7 +329,7 @@ items:
   - uid: office-ui-fabric-react.SuggestionsControl.selectFirstItem
     summary: Selects the first item
     name: selectFirstItem()
-    fullName: selectFirstItem
+    fullName: selectFirstItem()
     langs:
       - typeScript
     type: method
@@ -342,7 +342,7 @@ items:
   - uid: office-ui-fabric-react.SuggestionsControl.selectLastItem
     summary: Selects the last item
     name: selectLastItem()
-    fullName: selectLastItem
+    fullName: selectLastItem()
     langs:
       - typeScript
     type: method
@@ -355,7 +355,7 @@ items:
   - uid: office-ui-fabric-react.SuggestionsControl.selectNextItem
     summary: Selects the next selectable item
     name: 'selectNextItem(itemType, originalItemType)'
-    fullName: selectNextItem
+    fullName: 'selectNextItem(itemType, originalItemType)'
     langs:
       - typeScript
     type: method
@@ -377,7 +377,7 @@ items:
   - uid: office-ui-fabric-react.SuggestionsControl.selectPreviousItem
     summary: Selects the previous selectable item
     name: 'selectPreviousItem(itemType, originalItemType)'
-    fullName: selectPreviousItem
+    fullName: 'selectPreviousItem(itemType, originalItemType)'
     langs:
       - typeScript
     type: method
