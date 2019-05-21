@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
-    "lint": "tslint -p tsconfig.json"
+    "lint": "tslint -p tsconfig.json",
+    "generate": "api-documenter generate --output-folder office-ui-fabric-react/api"
   },
   "repository": {
     "type": "git",
@@ -21,7 +22,7 @@
   },
   "homepage": "https://github.com/MicrosoftDocs/oufr-dev-docs#readme",
   "devDependencies": {
-    "@microsoft/api-documenter": "^7.1.7",
+    "@microsoft/api-documenter": "^7.2.0",
     "@microsoft/node-core-library": "^3.13.0",
     "prettier": "^1.17.1",
     "tslint": "^5.16.0",

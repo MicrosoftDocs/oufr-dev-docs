@@ -137,12 +137,7 @@ function generateConfig(categoriesSource: any) {
     items: [
       {
         name: 'Office UI Fabric React',
-        href: '~/homepage/homepage.md',
-      },
-      {
-        name: 'Office UI Fabric React',
         href: 'office-ui-fabric-react',
-        extended: true,
         items: [],
       },
     ],
@@ -170,18 +165,20 @@ function generateConfig(categoriesSource: any) {
       }
     }
 
-    if (tocConfig.items[1] && tocConfig.items[1].items) {
-      tocConfig.items[1].items.push(configItem);
+    if (tocConfig.items[0] && tocConfig.items[0].items) {
+      tocConfig.items[0].items.push(configItem);
     }
   }
 
   const config = {
-    tableOfContents: tocConfig,
-    catchAllCategory: 'References',
-    noDuplicateEntries: true,
-    // some possible filters to fill the leaf nodes `items` arrays.
-    filterByApiItemName: false,
-    filterByInlineTag: '@docCategory',
+    tableOfContents: {
+      tocConfig,
+      catchAllCategory: 'References',
+      noDuplicateEntries: true,
+      // some possible filters to fill the leaf nodes `items` arrays.
+      filterByApiItemName: false,
+      filterByInlineTag: '@docCategory',
+    },
   };
 
   // writing file
