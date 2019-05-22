@@ -137,7 +137,7 @@ function generateConfig(categoriesSource: any) {
     items: [
       {
         name: 'Office UI Fabric React',
-        href: 'office-ui-fabric-react',
+        uid: 'office-ui-fabric-react',
         items: [],
       },
     ],

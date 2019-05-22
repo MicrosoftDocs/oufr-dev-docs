@@ -12,6 +12,7 @@ items:
       - styling.createTheme
       - styling.focusClear
       - styling.getFadedOverflowStyle
+      - styling.getFocusOutlineStyle
       - styling.getFocusStyle
       - styling.getFocusStyle_1
       - styling.getGlobalClassNames
@@ -156,6 +157,38 @@ items:
           description: The Height of the fading overflow. Vertical direction defaults it to 50% vs 100% when horizontal.
           type:
             - string | number
+  - uid: styling.getFocusOutlineStyle
+    summary: Generates a style which can be used to set a border on focus.
+    name: 'getFocusOutlineStyle(theme, inset, width, color)'
+    fullName: 'getFocusOutlineStyle(theme, inset, width, color)'
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: >-
+        export declare function getFocusOutlineStyle(theme: ITheme, inset?: number, width?: number, color?: string):
+        IRawStyle;
+      return:
+        type:
+          - merge-styles.IRawStyle
+        description: The style object.
+      parameters:
+        - id: theme
+          description: The theme object to use.
+          type:
+            - styling.ITheme
+        - id: inset
+          description: The number of pixels to inset the border (default 0)
+          type:
+            - number
+        - id: width
+          description: The border width in pixels (default 1)
+          type:
+            - number
+        - id: color
+          description: Color of the outline (default `theme.palette.neutralSecondary`<!-- -->)
+          type:
+            - string
   - uid: styling.getFocusStyle
     summary: 'Generates a focus style which can be used to define an :after focus border.'
     name: 'getFocusStyle(theme, options)'

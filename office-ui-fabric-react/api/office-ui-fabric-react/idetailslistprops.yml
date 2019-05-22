@@ -8,7 +8,7 @@ items:
     type: interface
     extends:
       - IBaseProps<IDetailsList>
-      - 'IWithViewportProps '
+      - office-ui-fabric-react.IWithViewportProps
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.IDetailsListProps.ariaLabel
@@ -278,7 +278,7 @@ items:
       content: 'dragDropEvents?: IDragDropEvents;'
       return:
         type:
-          - IDragDropEvents
+          - office-ui-fabric-react.IDragDropEvents
   - uid: office-ui-fabric-react.IDetailsListProps.enableShimmer
     summary: 'If set to true and we provide an empty array, it will render 10 lines of whatever provided in onRenderMissingItem.'
     deprecated:
@@ -826,4 +826,4 @@ items:
       content: 'viewport?: IViewport;'
       return:
         type:
-          - IViewport
+          - office-ui-fabric-react.IViewport

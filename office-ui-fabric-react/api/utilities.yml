@@ -112,6 +112,7 @@ items:
       - utilities.on
       - utilities.portalContainsElement
       - utilities.precisionRound
+      - utilities.provideContext
       - utilities.raiseClick
       - utilities.Rectangle
       - utilities.removeIndex
@@ -119,6 +120,7 @@ items:
       - utilities.resetIds
       - utilities.resetMemoizations
       - utilities.setBaseUrl
+      - utilities.setFocusVisibility
       - utilities.setLanguage
       - utilities.setPortalAttribute
       - utilities.setRTL
@@ -239,17 +241,16 @@ items:
       - typeScript
     type: function
     syntax:
-      content: >-
-        export declare function asAsync<TProps>(options: IAsAsyncOptions<TProps>):
-        React.ForwardRefExoticComponent<React.PropsWithoutRef<TProps & {
+      content: |-
+        export declare function asAsync<TProps>(options: IAsAsyncOptions<TProps>): React.ComponentType<TProps & {
             asyncPlaceholder?: React.ReactType;
-        }>>;
+        }>;
       return:
         type:
           - |-
-            React.ForwardRefExoticComponent<React.PropsWithoutRef<TProps & {
+            React.ComponentType<TProps & {
                 asyncPlaceholder?: React.ReactType;
-            }>>
+            }>
         description: ''
       parameters:
         - id: options
@@ -1383,7 +1384,10 @@ items:
           type:
             - HTMLElement
   - uid: utilities.getWindow
-    summary: Helper to get the window object. Note that in popup scenarios the window object may not be the window use ex
+    summary: >-
+      Helper to get the window object. The helper will make sure to use a cached variable of "window", to avoid overhead
+      and memory leaks in IE11. Note that in popup scenarios the window object won't match the "global" window object,
+      and for these scenarios, you should pass in an element hosted within the popup.
     name: getWindow(rootElement)
     fullName: getWindow(rootElement)
     langs:
@@ -2001,6 +2005,33 @@ items:
           description: ''
           type:
             - number
+  - uid: utilities.provideContext
+    deprecated:
+      content: >-
+        This function uses the legacy context API, which is deprecated and should not be used in new code. Please
+        migrate to the new context API. https://reactjs.org/docs/context.html
+    name: 'provideContext(contextTypes, mapPropsToContext)'
+    fullName: 'provideContext(contextTypes, mapPropsToContext)'
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: >-
+        export declare function provideContext<TContext, TProps>(contextTypes: PropTypes.ValidationMap<TContext>,
+        mapPropsToContext: (props: TProps) => TContext): React.ComponentType<TProps>;
+      return:
+        type:
+          - React.ComponentType<TProps>
+        description: ''
+      parameters:
+        - id: contextTypes
+          description: ''
+          type:
+            - PropTypes.ValidationMap<TContext>
+        - id: mapPropsToContext
+          description: ''
+          type:
+            - '(props: TProps) => TContext'
   - uid: utilities.raiseClick
     summary: Raises a click event.
     name: raiseClick(target)
@@ -2116,6 +2147,32 @@ items:
           description: ''
           type:
             - string
+  - uid: utilities.setFocusVisibility
+    summary: >-
+      Sets the visibility of focus styling. By default, focus styling (the box surrounding a focused Button, for
+      example) only show up when navigational keypresses occur (through TAB, arrows, pgup/down, home and end), and are
+      hidden when mouse interactions occur. This API provides an imperative way to turn them on/off. A use case might be
+      when you have a keypress like ctrl-f6 navigate to a particular region on the page, and want focus to show up.
+    name: 'setFocusVisibility(enabled, target)'
+    fullName: 'setFocusVisibility(enabled, target)'
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export declare function setFocusVisibility(enabled: boolean, target?: Element): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: enabled
+          description: whether to remove or add focus
+          type:
+            - boolean
+        - id: target
+          description: optional target
+          type:
+            - Element
   - uid: utilities.setLanguage
     summary: Sets the rtl state of the page (by adjusting the dir attribute of the html element.)
     name: 'setLanguage(language, avoidPersisting)'
@@ -2286,8 +2343,8 @@ items:
     summary: >-
       The styled HOC wrapper allows you to create a functional wrapper around a given component which will resolve
       getStyles functional props, and mix customized props passed in using concatStyleSets.
-    name: 'styled(Component, baseStyles, getProps, customizable)'
-    fullName: 'styled(Component, baseStyles, getProps, customizable)'
+    name: 'styled(Component, baseStyles, getProps, customizable, pure)'
+    fullName: 'styled(Component, baseStyles, getProps, customizable, pure)'
     langs:
       - typeScript
     type: function
@@ -2296,8 +2353,8 @@ items:
         export declare function styled<TComponentProps extends IPropsWithStyles<TStyleProps, TStyleSet>, TStyleProps,
         TStyleSet extends IStyleSet<TStyleSet>>(Component: React.ComponentClass<TComponentProps> |
         React.StatelessComponent<TComponentProps>, baseStyles: IStyleFunctionOrObject<TStyleProps, TStyleSet>,
-        getProps?: (props: TComponentProps) => Partial<TComponentProps>, customizable?: ICustomizableProps):
-        React.StatelessComponent<TComponentProps>;
+        getProps?: (props: TComponentProps) => Partial<TComponentProps>, customizable?: ICustomizableProps, pure?:
+        boolean): React.StatelessComponent<TComponentProps>;
       return:
         type:
           - React.StatelessComponent<TComponentProps>
@@ -2319,6 +2376,13 @@ items:
           description: An object which defines which props can be customized using the Customizer.
           type:
             - utilities.ICustomizableProps
+        - id: pure
+          description: >-
+            A boolean indicating if the component should avoid re-rendering when props haven't changed. Note that pure
+            should not be used on components which allow children, or take in complex objects or arrays as props which
+            could mutate on every render.
+          type:
+            - boolean
   - uid: utilities.toMatrix
     summary: Convert the given array to a matrix with columnCount number of columns.
     name: 'toMatrix(items, columnCount)'
