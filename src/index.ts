@@ -142,6 +142,8 @@ function generateConfig(categoriesSource: any) {
       },
     ],
   };
+
+  const nonEmptyCategoryNodeNames: string[] = ['References'];
   
   // delete unnecessary navigation items for docs.microsoft but present on the Fabric website
   delete categoriesSource['Fluent Theme'];
@@ -194,10 +196,9 @@ function generateConfig(categoriesSource: any) {
     tableOfContents: {
       tocConfig,
       catchAllCategory: 'References',
-      noDuplicateEntries: true,
       // some possible filters to fill the leaf nodes `items` arrays.
-      filterByApiItemName: false,
-      filterByInlineTag: '@docCategory',
+      categoryInlineTag: 'docCategory',
+      nonEmptyCategoryNodeNames
     },
   };
 

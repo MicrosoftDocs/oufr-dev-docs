@@ -14,7 +14,6 @@ items:
       - styling.getFadedOverflowStyle
       - styling.getFocusOutlineStyle
       - styling.getFocusStyle
-      - styling.getFocusStyle_1
       - styling.getGlobalClassNames
       - styling.getIcon
       - styling.getIconClassName
@@ -190,28 +189,6 @@ items:
           type:
             - string
   - uid: styling.getFocusStyle
-    summary: 'Generates a focus style which can be used to define an :after focus border.'
-    name: 'getFocusStyle(theme, options)'
-    fullName: 'getFocusStyle(theme, options)'
-    langs:
-      - typeScript
-    type: function
-    syntax:
-      content: 'export declare function getFocusStyle(theme: ITheme, options?: IGetFocusStylesOptions): IRawStyle;'
-      return:
-        type:
-          - merge-styles.IRawStyle
-        description: The style object.
-      parameters:
-        - id: theme
-          description: The theme object to use.
-          type:
-            - styling.ITheme
-        - id: options
-          description: Options to customize the focus border.
-          type:
-            - styling.IGetFocusStylesOptions
-  - uid: styling.getFocusStyle_1
     summary: 'Generates a focus style which can be used to define an :after focus border.'
     deprecated:
       content: Use the object parameter version instead.
