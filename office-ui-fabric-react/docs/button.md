@@ -1,3 +1,1 @@
-<div style='height: 2000px; width: 100%;'>
-    <iframe scrolling='no' title='Button Example' src='https://fabricweb.z5.web.core.windows.net/pr-deploy-site/refs/pull/9333/merge/fabric-website-resources/dist/index.html#/examples/button?docsExample=true' style='border: none; width: 100%; height: 100%;'>
-</div>
+<iframe scrolling='no' height='4000' title='Button Example' src='http://fabricweb.z5.web.core.windows.net/pr-deploy-site/refs/pull/9333/merge/fabric-website-resources/dist/index.html#/examples/button?docsExample=true' frameborder='no' style='width: 100%;'>
