@@ -250,7 +250,11 @@ function injectExamples(
 
     // special case for DetailsList having an example page not listed under sub-pages but we still want it to be included.
     if (topCategoryItem === 'DetailsList') {
-      const writingFinished: boolean = writeExampleFile('DetailsList Example', 'detailslist');
+      const writingFinished: boolean = writeExampleFile(
+        'DetailsList Example',
+        'detailslist',
+        'detailslist/detailslist',
+      );
 
       if (writingFinished) {
         examplesNodeReference.items!.push({
@@ -299,12 +303,14 @@ function injectExamples(
 /**
  * Helper function to handle the example files generation.
  */
-function writeExampleFile(componentName: string, componentUrl: string): boolean {
+function writeExampleFile(componentName: string, componentUrl: string, fileLocationPath?: string): boolean {
   const exampleTemplate: string = FileSystem.readFile(EXAMPLE_TEMPLATE_PATH);
   const fileData: string = Mustache.render(exampleTemplate, { componentName, componentUrl });
 
   try {
-    FileSystem.writeFile(`${EXAMPLE_FILES_FOLDER}/${componentUrl}.md`, fileData, { ensureFolderExists: true });
+    FileSystem.writeFile(`${EXAMPLE_FILES_FOLDER}/${fileLocationPath || componentUrl}.md`, fileData, {
+      ensureFolderExists: true,
+    });
     return true;
   } catch (error) {
     console.log(error);
