@@ -192,52 +192,19 @@ function generateConfig(categoriesSource: any) {
 
     // Second inner loop iterates over each control in each category of the outer loop
     for (const topCategoryItem of topCategoryItems) {
-      const itemNameNormalized = topCategoryItem.toLowerCase();
       // Each item represents a component. Creating a reference pointer.
       const item: IYamlTocItem = {
         name: topCategoryItem,
         items: [],
       };
 
-      // Examples injection logic
-
-      // In case a component has it's examples split into sub-pages then we handle it differently
-      if (categoriesSource[topCategory][topCategoryItem].subPages) {
-        const examplesNodeReference: IYamlTocItem = {
-          name: `${topCategoryItem} Examples`,
-          items: [],
-        };
-
-        const subPages = categoriesSource[topCategory][topCategoryItem].subPages;
-        for (const key in subPages) {
-          if (subPages.hasOwnProperty(key)) {
-            const name: string = subPages[key].title || key;
-            const pathAndUrl: string = `${subPages[key].url || key.toLowerCase()}`;
-
-            const writingFinished: boolean = writeExampleFile(topCategoryItem, `${itemNameNormalized}/${pathAndUrl}`);
-
-            if (writingFinished) {
-              examplesNodeReference.items!.push({
-                name,
-                href: `${TOC_EXAMPLE_FILES_PATH}/${itemNameNormalized}/${pathAndUrl}.md`,
-              });
-            }
-          }
-        }
-
-        item.items!.push(examplesNodeReference);
-      } else {
-        // generate a markdown file
-        const writingFinished: boolean = writeExampleFile(topCategoryItem, itemNameNormalized);
-
-        // push an example node to the items array of the component node
-        if (writingFinished) {
-          item.items!.push({
-            name: `${topCategoryItem} Examples`,
-            href: `${TOC_EXAMPLE_FILES_PATH}/${itemNameNormalized}.md`,
-          });
-        }
+      if (topCategoryItem === 'Themes') {
+        continue;
       }
+
+      // Examples injection logic
+      injectExamples(categoriesSource, topCategory, topCategoryItem, item);
+      
 
       // pushing the item into it's top category node
       if (topCategoryNode.items) {
@@ -264,6 +231,48 @@ function generateConfig(categoriesSource: any) {
 
   // writing file
   JsonFile.save(config, CONFIG_PATH);
+}
+
+function injectExamples(categoriesSource: any, topCategory: string, topCategoryItem: string, itemReference: IYamlTocItem) {
+  const itemNameNormalized = topCategoryItem.toLowerCase();
+
+  // In case a component has it's examples split into sub-pages then we handle it differently
+  if (categoriesSource[topCategory][topCategoryItem].subPages) {
+    const examplesNodeReference: IYamlTocItem = {
+      name: `${topCategoryItem} Examples`,
+      items: [],
+    };
+
+    const subPages = categoriesSource[topCategory][topCategoryItem].subPages;
+    for (const key in subPages) {
+      if (subPages.hasOwnProperty(key)) {
+        const name: string = subPages[key].title || key;
+        const pathAndUrl: string = `${subPages[key].url || key.toLowerCase()}`;
+
+        const writingFinished: boolean = writeExampleFile(topCategoryItem, `${itemNameNormalized}/${pathAndUrl}`);
+
+        if (writingFinished) {
+          examplesNodeReference.items!.push({
+            name,
+            href: `${TOC_EXAMPLE_FILES_PATH}/${itemNameNormalized}/${pathAndUrl}.md`,
+          });
+        }
+      }
+    }
+
+    itemReference.items!.push(examplesNodeReference);
+  } else {
+    // generate a markdown file
+    const writingFinished: boolean = writeExampleFile(topCategoryItem, itemNameNormalized);
+
+    // push an example node to the items array of the component node
+    if (writingFinished) {
+      itemReference.items!.push({
+        name: `${topCategoryItem} Examples`,
+        href: `${TOC_EXAMPLE_FILES_PATH}/${itemNameNormalized}.md`,
+      });
+    }
+  }
 }
 
 function writeExampleFile(fileName: string, url: string): boolean {
