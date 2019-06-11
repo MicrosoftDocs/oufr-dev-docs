@@ -1,3 +1,1 @@
-<div style='height: 100%'>
-    <iframe title='DetailsList Custom Item Columns Example' src='https://fabricweb.z5.web.core.windows.net/pr-deploy-site/refs/pull/9333/merge/fabric-website-resources/dist/index.html#/examples/detailslist/customitemcolumns?docsExample=true' frameborder='no' style='width: 100%; height: 100%'>
-</div>
+<iframe title='DetailsList Custom Item Columns Example' src='https://fabricweb.z5.web.core.windows.net/pr-deploy-site/refs/pull/9333/merge/fabric-website-resources/dist/index.html#/examples/detailslist/customitemcolumns?docsExample=true' frameborder='no' width='100%' height='1500'>

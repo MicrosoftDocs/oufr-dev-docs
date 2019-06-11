@@ -1,3 +1,1 @@
-<div style='height: 100%'>
-    <iframe title='MarqueeSelection Examples' src='https://fabricweb.z5.web.core.windows.net/pr-deploy-site/refs/pull/9333/merge/fabric-website-resources/dist/index.html#/examples/marqueeselection?docsExample=true' frameborder='no' style='width: 100%; height: 100%'>
-</div>
+<iframe title='MarqueeSelection Examples' src='https://fabricweb.z5.web.core.windows.net/pr-deploy-site/refs/pull/9333/merge/fabric-website-resources/dist/index.html#/examples/marqueeselection?docsExample=true' frameborder='no' width='100%' height='1500'>
