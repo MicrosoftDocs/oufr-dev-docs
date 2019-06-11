@@ -2,7 +2,7 @@ import { IYamlTocItem } from '@microsoft/api-documenter/lib/yaml/IYamlTocFile';
 import { FileSystem, JsonFile } from '@microsoft/node-core-library';
 import * as Mustache from 'mustache';
 
-export const categories = {
+const categories = {
   'Basic Inputs': {
     Button: {},
     Checkbox: {},
@@ -133,10 +133,7 @@ interface ITocConfig {
 }
 
 /**
- * Function that will be running every time before calling api-documenter and generate a schema file.
- * It will write a schema that all it needs is just to fill the empty `items` arrays for each node that has one.
- * In the future we can make modifications to the logic so that to include additional things
- * like pages with examples that have nothing to do with the API json files.
+ * Function that will be running every time before calling api-documenter and generate a json file along with writing example files.
  */
 function generateConfig(categoriesSource: any) {
   const tocConfig: ITocConfig = {
@@ -198,20 +195,20 @@ function generateConfig(categoriesSource: any) {
         items: [],
       };
 
+      // Removing this item for now as it has no api-items or examples and results in  broken link on docs.microsoft
       if (topCategoryItem === 'Themes') {
         continue;
       }
 
-      // Examples injection logic
+      // Examples injection
       injectExamples(categoriesSource, topCategory, topCategoryItem, item);
-      
 
       // pushing the item into it's top category node
       if (topCategoryNode.items) {
         topCategoryNode.items.push(item);
       }
 
-      // adding the name of the node to the nonEmptyCategoryNodeNames array
+      // adding the name of the node to the nonEmptyCategoryNodeNames array now that we also push examples
       nonEmptyCategoryNodeNames.push(topCategoryItem);
     }
 
@@ -233,7 +230,15 @@ function generateConfig(categoriesSource: any) {
   JsonFile.save(config, CONFIG_PATH);
 }
 
-function injectExamples(categoriesSource: any, topCategory: string, topCategoryItem: string, itemReference: IYamlTocItem) {
+/**
+ * Helper function to inject example page nodes into the TOC and also calls the write file helper function.
+ */
+function injectExamples(
+  categoriesSource: any,
+  topCategory: string,
+  topCategoryItem: string,
+  itemReference: IYamlTocItem,
+): void {
   const itemNameNormalized = topCategoryItem.toLowerCase();
 
   // In case a component has it's examples split into sub-pages then we handle it differently
@@ -243,13 +248,29 @@ function injectExamples(categoriesSource: any, topCategory: string, topCategoryI
       items: [],
     };
 
+    // special case for DetailsList having an example page not listed under sub-pages but we still want it to be included.
+    if (topCategoryItem === 'DetailsList') {
+      const writingFinished: boolean = writeExampleFile('DetailsList Example', 'detailslist');
+
+      if (writingFinished) {
+        examplesNodeReference.items!.push({
+          name: 'Details List',
+          href: `${TOC_EXAMPLE_FILES_PATH}/${itemNameNormalized}/detailslist.md`,
+        });
+      }
+    }
+
     const subPages = categoriesSource[topCategory][topCategoryItem].subPages;
+
     for (const key in subPages) {
       if (subPages.hasOwnProperty(key)) {
         const name: string = subPages[key].title || key;
         const pathAndUrl: string = `${subPages[key].url || key.toLowerCase()}`;
 
-        const writingFinished: boolean = writeExampleFile(topCategoryItem, `${itemNameNormalized}/${pathAndUrl}`);
+        const writingFinished: boolean = writeExampleFile(
+          `${topCategoryItem} ${name} Example`,
+          `${itemNameNormalized}/${pathAndUrl}`,
+        );
 
         if (writingFinished) {
           examplesNodeReference.items!.push({
@@ -263,7 +284,7 @@ function injectExamples(categoriesSource: any, topCategory: string, topCategoryI
     itemReference.items!.push(examplesNodeReference);
   } else {
     // generate a markdown file
-    const writingFinished: boolean = writeExampleFile(topCategoryItem, itemNameNormalized);
+    const writingFinished: boolean = writeExampleFile(`${topCategoryItem} Examples`, itemNameNormalized);
 
     // push an example node to the items array of the component node
     if (writingFinished) {
@@ -275,12 +296,15 @@ function injectExamples(categoriesSource: any, topCategory: string, topCategoryI
   }
 }
 
-function writeExampleFile(fileName: string, url: string): boolean {
+/**
+ * Helper function to handle the example files generation.
+ */
+function writeExampleFile(componentName: string, componentUrl: string): boolean {
   const exampleTemplate: string = FileSystem.readFile(EXAMPLE_TEMPLATE_PATH);
-  const fileData: string = Mustache.render(exampleTemplate, { componentName: fileName, componentUrl: url });
+  const fileData: string = Mustache.render(exampleTemplate, { componentName, componentUrl });
 
   try {
-    FileSystem.writeFile(`${EXAMPLE_FILES_FOLDER}/${url}.md`, fileData, { ensureFolderExists: true });
+    FileSystem.writeFile(`${EXAMPLE_FILES_FOLDER}/${componentUrl}.md`, fileData, { ensureFolderExists: true });
     return true;
   } catch (error) {
     console.log(error);
@@ -288,4 +312,5 @@ function writeExampleFile(fileName: string, url: string): boolean {
   return false;
 }
 
+// Start generation.
 generateConfig(categories);
