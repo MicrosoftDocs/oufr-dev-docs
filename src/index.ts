@@ -124,9 +124,17 @@ const categories = {
 };
 
 const CONFIG_PATH = '../config/api-documenter.json';
+
 const TOC_EXAMPLE_FILES_PATH = '~/docs/examples';
+const TOC_OVERVIEW_FILES_PATH = '~/docs/overviews';
+
 const EXAMPLE_FILES_FOLDER = '../office-ui-fabric-react/docs/examples';
+const OVERVIEW_FILES_FOLDER = '../office-ui-fabric-react/docs/overviews';
+
 const EXAMPLE_TEMPLATE_PATH = '../src/ExampleMarkdown.mustache';
+const OVERVIEW_TEMPLATE_PATH = '../src/Overview.mustache';
+
+const DOCS_FILES_PATH = '../node_modules/office-ui-fabric-react/src/components';
 
 interface ITocConfig {
   items: IYamlTocItem[];
@@ -154,6 +162,8 @@ function generateConfig(categoriesSource: any) {
 
   console.log('Deleting old examples from ' + EXAMPLE_FILES_FOLDER);
   FileSystem.ensureEmptyFolder(EXAMPLE_FILES_FOLDER);
+  console.log('Deleting old overviews from ' + OVERVIEW_FILES_FOLDER);
+  FileSystem.ensureEmptyFolder(OVERVIEW_FILES_FOLDER);
 
   const topCategories = Object.keys(categoriesSource);
 
@@ -185,6 +195,7 @@ function generateConfig(categoriesSource: any) {
       );
     }
 
+    // All the controls under a category that we are looping over on each iteration
     const topCategoryItems = Object.keys(categoriesSource[topCategory]);
 
     // Second inner loop iterates over each control in each category of the outer loop
@@ -200,7 +211,10 @@ function generateConfig(categoriesSource: any) {
         continue;
       }
 
-      // Examples injection
+      // Overview nodes injections in TOC and files generation
+      injectOverview(topCategoryItem, item);
+
+      // Examples nodes injection in TOC and files generation
       injectExamples(categoriesSource, topCategory, topCategoryItem, item);
 
       // pushing the item into it's top category node
@@ -228,6 +242,33 @@ function generateConfig(categoriesSource: any) {
 
   // writing file
   JsonFile.save(config, CONFIG_PATH);
+}
+
+function injectOverview(topCategoryItem: string, itemReference: IYamlTocItem): void {
+  const itemPath: string = `${DOCS_FILES_PATH}/${topCategoryItem}/docs`;
+
+  // Content of all 3 files Overview, Dos and Donts that we want to concatenate in one file
+  const overview: string = FileSystem.readFile(`${itemPath}/${topCategoryItem}Overview.md`);
+  const dos: string = FileSystem.readFile(`${itemPath}/${topCategoryItem}Dos.md`);
+  const donts: string = FileSystem.readFile(`${itemPath}/${topCategoryItem}Donts.md`);
+
+  const overviewTemplate: string = FileSystem.readFile(OVERVIEW_TEMPLATE_PATH);
+  const fileData: string = Mustache.render(overviewTemplate, { overview, dos, donts });
+
+  try {
+    FileSystem.writeFile(`${OVERVIEW_FILES_FOLDER}/${topCategoryItem}Overview.md`, fileData, {
+      ensureFolderExists: true,
+    });
+
+    itemReference.items!.push(
+      {
+        name: 'Overview',
+        href: `${TOC_OVERVIEW_FILES_PATH}/${topCategoryItem}Overview.md`,
+      }
+    );
+  } catch (error) {
+    console.log(error);
+  }
 }
 
 /**
@@ -271,6 +312,7 @@ function injectExamples(
         const name: string = subPages[key].title || key;
         const pathAndUrl: string = `${subPages[key].url || key.toLowerCase()}`;
 
+        // generate a markdown file
         const writingFinished: boolean = writeExampleFile(
           `${topCategoryItem} ${name} Example`,
           `${itemNameNormalized}/${pathAndUrl}`,
