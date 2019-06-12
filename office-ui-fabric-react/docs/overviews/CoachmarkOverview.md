@@ -4,6 +4,7 @@ in the product.
 
 They should be contextual whenever possible, or related to something that will make existing user flows more efficient.
 
+
 # Best Practices
 
 ## Do &#10003;

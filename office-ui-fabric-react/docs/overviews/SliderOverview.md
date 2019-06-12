@@ -4,6 +4,7 @@ A Slider is an element used to set a value. It provides a visual indication of a
 A Slider is a good choice when you know that users think of the value as a relative quantity, not a numeric value. For example, users think about setting their audio volume to low or medium—not about setting the value to two or five.
 
 
+
 # Best Practices
 
 ## Do &#10003;

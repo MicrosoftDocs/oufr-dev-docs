@@ -1,6 +1,7 @@
 # Overview
 Personas are used for rendering an individual&#39;s avatar and presence. They are used within the PeoplePicker components.
 
+
 # Best Practices
 
 ## Do &#10003;

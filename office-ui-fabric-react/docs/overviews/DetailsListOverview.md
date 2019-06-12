@@ -38,6 +38,7 @@ public render(): JSX.Element {
 By re-creating the items array without mutating the values, the inner List will correctly determine its contents have changed and that it should re-render the new values.
 
 
+
 # Best Practices
 
 ## Do &#10003;

@@ -1,6 +1,7 @@
 # Overview
 Dialogs are temporary, modal UI overlay that generally provide contextual app information or require user confirmation&#x2F;input. In most cases, Dialogs block interactions with the web page or application until being explicitly dismissed, and often request action from the user. They are primarily used for lightweight creation or edit tasks, and simple management tasks.
 
+
 # Best Practices
 
 ## Do &#10003;

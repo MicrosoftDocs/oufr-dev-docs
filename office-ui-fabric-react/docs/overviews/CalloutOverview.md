@@ -5,6 +5,7 @@ Use a Callout for displaying additional contextual information about an item on 
 
 Real-world examples of this implementation can be seen in administrative interfaces where a particularly difficult-to-understand concept is paired with the iconClassNames.info &quot;i&quot; icon. In this example, Callout - with its tip text - is opened when the user clicks on or hovers over the icon.
 
+
 # Best Practices
 
 ## Do &#10003;

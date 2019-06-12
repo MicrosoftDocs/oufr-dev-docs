@@ -6,6 +6,7 @@ The Pivot control and related tabs pattern are used for navigating frequently ac
 Tabs are a visual variant of Pivot that use a combination of icons and text or just icons to articulate section content.
 
 
+
 # Best Practices
 
 ## Do &#10003;

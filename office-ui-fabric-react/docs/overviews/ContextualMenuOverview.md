@@ -6,6 +6,7 @@ There are variants that originate from a command bar, or from cursor or focus. T
 Organize commands in groups divided by rules. This helps users remember command locations, or find less used commands based on proximity to others. One should also group sets of mutually exclusive or multiple selectable options. Use icons sparingly, for high value commands, and don’t mix icons with selection checks, as it makes parsing commands difficult. Avoid submenus of submenus as they can be difficult to invoke or remember.
 
 
+
 # Best Practices
 
 ## Do &#10003;

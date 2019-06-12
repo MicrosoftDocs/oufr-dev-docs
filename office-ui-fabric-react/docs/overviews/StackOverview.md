@@ -18,6 +18,7 @@ Aside from the previously mentioned properties, there is another property called
 Stacks can be nested inside one another in order to be able to configure the layout of the application as desired.
 
 
+
 # Best Practices
 
 ## Do &#10003;

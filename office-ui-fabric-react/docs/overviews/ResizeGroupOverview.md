@@ -8,6 +8,7 @@ This component queries the DOM for the dimensions of elements. Too many of these
 There is a boolean context property (isMeasured) added to let child components know if they are only being used for measurement purposes. When isMeasured is true, it will signify that the component is not the instance visible to the user. This will not be needed for most scenarios. It is intended to be used to to skip unwanted side effects of mounting a child component more than once. This includes cases where the the component makes API requests, requests focus to one of its elements, expensive computations, and&#x2F;or renders markup unrelated to its size. Be careful not to use this property to change the components rendered output in a way that effects it size in any way.
 
 
+
 # Best Practices
 
 ## Do &#10003;

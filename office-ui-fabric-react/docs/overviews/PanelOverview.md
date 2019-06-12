@@ -9,6 +9,7 @@ Panels are modal UI overlays that provide contextual app information. They often
 - Settings creation or management
 - Multi-field forms
 
+
 # Best Practices
 
 ## Do &#10003;

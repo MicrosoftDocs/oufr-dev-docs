@@ -6,6 +6,7 @@ TeachingBubbles are usually invoked by a system change rather than a user action
 TeachingBubbles should otherwise follow the same usage guidance as Callouts.
 
 
+
 # Best Practices
 
 ## Do &#10003;

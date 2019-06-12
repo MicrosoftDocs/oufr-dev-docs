@@ -38,6 +38,7 @@ public render(): JSX.Element {
 Since the &#x60;items&#x60; array has been re-created, the List will conclude that its contents have changed and it should re-render the new values.
 
 
+
 # Best Practices
 
 ## Do &#10003;

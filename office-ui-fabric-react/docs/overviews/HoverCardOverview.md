@@ -7,6 +7,7 @@ Two scenarios to consider for your own use case from an accessibility point of v
 - Tabbing with a keyboard to the element triggering the HoverCard and wait to open till the hotKey is depressed. When card is opened it will automatically focus the first focusable element of the card content. See Example 2.
 
 
+
 # Best Practices
 
 ## Do &#10003;

@@ -160,10 +160,13 @@ function generateConfig(categoriesSource: any) {
   delete categoriesSource['Fluent Theme'];
   delete categoriesSource['Other'];
 
+  // Cleaning up the examples and overviews folders
   console.log('Deleting old examples from ' + EXAMPLE_FILES_FOLDER);
   FileSystem.ensureEmptyFolder(EXAMPLE_FILES_FOLDER);
   console.log('Deleting old overviews from ' + OVERVIEW_FILES_FOLDER);
   FileSystem.ensureEmptyFolder(OVERVIEW_FILES_FOLDER);
+  console.log('----------------------------------------------------------');
+  console.log();
 
   const topCategories = Object.keys(categoriesSource);
 
@@ -244,13 +247,18 @@ function generateConfig(categoriesSource: any) {
   JsonFile.save(config, CONFIG_PATH);
 }
 
+/**
+ * Helper function to inject nodes in the TOC and create files for the `Overview` page
+ */
 function injectOverview(topCategoryItem: string, itemReference: IYamlTocItem): void {
-  const itemPath: string = `${DOCS_FILES_PATH}/${topCategoryItem}/docs`;
+  const itemPath: string = resolveSpecialCases(topCategoryItem, `${DOCS_FILES_PATH}/${topCategoryItem}/docs`);
 
   // Content of all 3 files Overview, Dos and Donts that we want to concatenate in one file
-  const overview: string = readMarkdownFile(`${itemPath}/${topCategoryItem}Overview.md`) || 'Coming soon...';
-  const dos: string = readMarkdownFile(`${itemPath}/${topCategoryItem}Dos.md`) || 'Coming soon...';
-  const donts: string = readMarkdownFile(`${itemPath}/${topCategoryItem}Donts.md`) || 'Coming soon...';
+  const overview: string =
+    readMarkdownFile(`${itemPath}/${resolveSpecialCases(topCategoryItem)}Overview.md`) || 'Coming soon...';
+  const dos: string = readMarkdownFile(`${itemPath}/${resolveSpecialCases(topCategoryItem)}Dos.md`) || 'Coming soon...';
+  const donts: string =
+    readMarkdownFile(`${itemPath}/${resolveSpecialCases(topCategoryItem)}Donts.md`) || 'Coming soon...';
 
   const overviewTemplate: string = FileSystem.readFile(OVERVIEW_TEMPLATE_PATH);
   const fileData: string = Mustache.render(overviewTemplate, { overview, dos, donts });
@@ -358,6 +366,9 @@ function writeExampleFile(componentName: string, componentUrl: string, fileLocat
   return false;
 }
 
+/**
+ * Helper function to aid in reading the markdown files needed for Overview pages and not to throw in case it doesn't exist.
+ */
 function readMarkdownFile(path: string): string {
   try {
     return FileSystem.readFile(path);
@@ -365,6 +376,33 @@ function readMarkdownFile(path: string): string {
     console.log('Can not find a file at path:' + path);
   }
   return '';
+}
+
+/**
+ * Helper function to resolve some special cases for the path of the markdown files needed for Overview pages.
+ * TODO: might need to revisit this idea and replace it with something similar to https://www.npmjs.com/package/require-context
+ * but for the moment using as a bandage :)
+ */
+function resolveSpecialCases(topCategoryItem: string, fullPath?: string): string {
+  const specialCases: string[] = ['Keytips', 'Selection', 'PeoplePicker'];
+
+  if (specialCases.indexOf(topCategoryItem) !== -1) {
+    switch (topCategoryItem) {
+      case 'Keytips':
+        if (fullPath) return fullPath.replace('Keytips', 'Keytip');
+        else return 'Keytip';
+      case 'Selection':
+        if (fullPath) return fullPath.replace('components', 'utilities').replace('Selection', 'selection');
+        else return topCategoryItem;
+      case 'PeoplePicker':
+        if (fullPath) return fullPath.replace('PeoplePicker', 'pickers/PeoplePicker');
+        else return topCategoryItem;
+      default:
+        break;
+    }
+  }
+
+  return fullPath || topCategoryItem;
 }
 
 // Start generation.

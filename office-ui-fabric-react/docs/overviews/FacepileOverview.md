@@ -21,6 +21,7 @@ When there is a need to show the Facepile expanded into a vertical list, include
 
 When the Facepile exceeds a max number of 5 people, show a button at the end of the list indicating how many are not being shown. Clicking or tapping on the overflow would open a standard list view of personas.
 
+
 # Best Practices
 
 ## Do &#10003;

@@ -11,6 +11,7 @@ You can specify &#x60;block&#x60; to enable block and &#x60;nowrap&#x60; to enab
 In order for ellipsis on overflow to work properly, &#x60;block&#x60; should be set to true in addition to &#x60;nowrap&#x60;.
 Both of these props are false by default.
 
+
 # Best Practices
 
 ## Do &#10003;

@@ -6,6 +6,7 @@ ChoiceGroup emphasize all options equally, and that may draw more attention to t
 If there are only two mutually exclusive options, combine them into a single Checkbox or Toggle switch. For example, use a Checkbox for &quot;I agree&quot; instead of ChoiceGroup buttons for &quot;I agree&quot; and &quot;I don&#39;t agree.&quot;
 
 
+
 # Best Practices
 
 ## Do &#10003;

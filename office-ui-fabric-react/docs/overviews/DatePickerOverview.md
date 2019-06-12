@@ -1,6 +1,7 @@
 # Overview
 The DatePicker component enables a user to pick a date value.
 
+
 # Best Practices
 
 ## Do &#10003;

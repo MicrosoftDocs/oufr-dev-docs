@@ -4,6 +4,7 @@ Modals are temporary, modal UI overlay that generally provide contextual app inf
 For usage requiring a quick choice from the user, [Dialog](#&#x2F;controls&#x2F;web&#x2F;dialog) may be a more appropriate control.
 
 
+
 # Best Practices
 
 ## Do &#10003;

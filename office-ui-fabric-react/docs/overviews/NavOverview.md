@@ -1,6 +1,7 @@
 # Overview
 Navs (also called &quot;left nav&quot; or &quot;navigation pane&quot;) provide links to the main areas of an app or a site. In larger configurations, the Nav is always on-screen, usually on the left of the view. In smaller configurations, the Nav may collapse into a skinnier version or be completely hidden until the user taps an icon.
 
+
 # Best Practices
 
 ## Do &#10003;

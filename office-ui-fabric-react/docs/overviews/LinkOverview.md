@@ -4,6 +4,7 @@ With a Link, users can navigate to another page, window, or Help topic; display 
 A Link is the lightest weight clickable control, and is often used to reduce the visual complexity of a design.
 
 
+
 # Best Practices
 
 ## Do &#10003;

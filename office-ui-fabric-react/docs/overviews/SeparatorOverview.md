@@ -5,6 +5,7 @@ You can render content in the separator by specifying the component&#39;s childr
 The component&#39;s children can be plain text or a component like Icon.
 The content is center-aligned by default.
 
+
 # Best Practices
 
 ## Do &#10003;

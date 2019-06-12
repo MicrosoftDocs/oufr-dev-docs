@@ -9,6 +9,7 @@ For some actions, either a Toggle or a Checkbox might work. To decide which cont
 - In the above example, it&#39;s clear with the Toggle that the wireless is set to &quot;On.&quot; But with the Checkbox, the user needs to think about whether the wireless is on now or whether they need to check the box to turn wireless on.
 - Use a Checkbox when the user has to perform extra steps for changes to be effective. For example, if the user must click a &quot;Submit&quot;, &quot;Next&quot;, &quot;Ok&quot; button to apply changes, use a Checkbox.
 
+
 # Best Practices
 
 ## Do &#10003;
