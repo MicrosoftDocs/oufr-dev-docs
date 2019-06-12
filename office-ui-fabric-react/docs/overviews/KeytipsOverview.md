@@ -1,10 +1,10 @@
 # Overview
-{{overview}}
+Coming soon...
 
 # Best Practices
 
 ## Do &#10003;
-{{dos}}
+Coming soon...
 
 ## Don't &#10008;
-{{donts}}
+Coming soon...

@@ -248,9 +248,9 @@ function injectOverview(topCategoryItem: string, itemReference: IYamlTocItem): v
   const itemPath: string = `${DOCS_FILES_PATH}/${topCategoryItem}/docs`;
 
   // Content of all 3 files Overview, Dos and Donts that we want to concatenate in one file
-  const overview: string = FileSystem.readFile(`${itemPath}/${topCategoryItem}Overview.md`);
-  const dos: string = FileSystem.readFile(`${itemPath}/${topCategoryItem}Dos.md`);
-  const donts: string = FileSystem.readFile(`${itemPath}/${topCategoryItem}Donts.md`);
+  const overview: string = readMarkdownFile(`${itemPath}/${topCategoryItem}Overview.md`) || 'Coming soon...';
+  const dos: string = readMarkdownFile(`${itemPath}/${topCategoryItem}Dos.md`) || 'Coming soon...';
+  const donts: string = readMarkdownFile(`${itemPath}/${topCategoryItem}Donts.md`) || 'Coming soon...';
 
   const overviewTemplate: string = FileSystem.readFile(OVERVIEW_TEMPLATE_PATH);
   const fileData: string = Mustache.render(overviewTemplate, { overview, dos, donts });
@@ -260,12 +260,10 @@ function injectOverview(topCategoryItem: string, itemReference: IYamlTocItem): v
       ensureFolderExists: true,
     });
 
-    itemReference.items!.push(
-      {
-        name: 'Overview',
-        href: `${TOC_OVERVIEW_FILES_PATH}/${topCategoryItem}Overview.md`,
-      }
-    );
+    itemReference.items!.push({
+      name: 'Overview',
+      href: `${TOC_OVERVIEW_FILES_PATH}/${topCategoryItem}Overview.md`,
+    });
   } catch (error) {
     console.log(error);
   }
@@ -358,6 +356,15 @@ function writeExampleFile(componentName: string, componentUrl: string, fileLocat
     console.log(error);
   }
   return false;
+}
+
+function readMarkdownFile(path: string): string {
+  try {
+    return FileSystem.readFile(path);
+  } catch (error) {
+    console.log('Can not find a file at path:' + path);
+  }
+  return '';
 }
 
 // Start generation.
