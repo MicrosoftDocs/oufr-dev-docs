@@ -17,13 +17,18 @@ items:
       - office-ui-fabric-react.SuggestionsStore.updateSuggestions
   - uid: office-ui-fabric-react.SuggestionsStore.(constructor)
     summary: Constructs a new instance of the `SuggestionsStore` class
-    name: (constructor)()
-    fullName: (constructor)()
+    name: (constructor)(options)
+    fullName: (constructor)(options)
     langs:
       - typeScript
     type: constructor
     syntax:
-      content: constructor();
+      content: 'constructor(options?: SuggestionsStoreOptions<T>);'
+      parameters:
+        - id: options
+          description: ''
+          type:
+            - SuggestionsStoreOptions<T>
   - uid: office-ui-fabric-react.SuggestionsStore.convertSuggestionsToSuggestionItems
     name: convertSuggestionsToSuggestionItems(suggestions)
     fullName: convertSuggestionsToSuggestionItems(suggestions)
