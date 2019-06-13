@@ -1,0 +1,54 @@
+pool:
+  name: Hosted
+  demands: npm
+
+steps:
+- task: NodeTool@0
+  displayName: 'Use Node 10.x'
+  inputs:
+    versionSpec: '10.x'
+    checkLatest: true
+
+- task: Npm@1
+  displayName: 'npm install'
+  inputs:
+    verbose: false
+
+- task: Npm@1
+  displayName: 'npm custom'
+  inputs:
+    command: custom
+    verbose: false
+    customCommand: build
+
+- task: Npm@1
+  displayName: 'npm custom'
+  inputs:
+    command: custom
+    verbose: false
+    customCommand: generateConfig
+
+- script: >
+    node
+    node_modules/.bin/api-documenter
+    generate
+    --output-folder $(Build.ArtifactStagingDirectory)/api
+  displayName: Run API Documenter
+
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Artifact: api'
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)/api'
+    ArtifactName: API-DOCS
+
+- script: >
+    node
+    lib/get-fabric-version.js
+    $(Build.ArtifactStagingDirectory)/FABRIC_VERSION
+  displayName: Get OUFR Version
+
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Artifact: api'
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)/FABRIC_VERSION'
+    ArtifactName: FABRIC_VERSION
