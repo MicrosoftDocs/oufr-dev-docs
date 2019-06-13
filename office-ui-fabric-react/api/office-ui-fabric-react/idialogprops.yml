@@ -1,0 +1,364 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office-ui-fabric-react.IDialogProps
+    name: IDialogProps
+    fullName: IDialogProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - React.ClassAttributes<DialogBase>
+      - IWithResponsiveModeState
+      - 'IAccessiblePopupProps '
+    package: office-ui-fabric-react
+    children:
+      - office-ui-fabric-react.IDialogProps.ariaDescribedById
+      - office-ui-fabric-react.IDialogProps.ariaLabelledById
+      - office-ui-fabric-react.IDialogProps.className
+      - office-ui-fabric-react.IDialogProps.componentRef
+      - office-ui-fabric-react.IDialogProps.containerClassName
+      - office-ui-fabric-react.IDialogProps.contentClassName
+      - office-ui-fabric-react.IDialogProps.dialogContentProps
+      - office-ui-fabric-react.IDialogProps.hidden
+      - office-ui-fabric-react.IDialogProps.isBlocking
+      - office-ui-fabric-react.IDialogProps.isDarkOverlay
+      - office-ui-fabric-react.IDialogProps.isOpen
+      - office-ui-fabric-react.IDialogProps.maxWidth
+      - office-ui-fabric-react.IDialogProps.minWidth
+      - office-ui-fabric-react.IDialogProps.modalProps
+      - office-ui-fabric-react.IDialogProps.onDismiss
+      - office-ui-fabric-react.IDialogProps.onDismissed
+      - office-ui-fabric-react.IDialogProps.onLayerDidMount
+      - office-ui-fabric-react.IDialogProps.onLayerMounted
+      - office-ui-fabric-react.IDialogProps.styles
+      - office-ui-fabric-react.IDialogProps.subText
+      - office-ui-fabric-react.IDialogProps.theme
+      - office-ui-fabric-react.IDialogProps.title
+      - office-ui-fabric-react.IDialogProps.topButtonsProps
+      - office-ui-fabric-react.IDialogProps.type
+  - uid: office-ui-fabric-react.IDialogProps.ariaDescribedById
+    summary: Optional id for aria-DescribedBy
+    deprecated:
+      content: Pass through via `modalProps.subtitleAriaId` instead.
+    name: ariaDescribedById
+    fullName: ariaDescribedById
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'ariaDescribedById?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.IDialogProps.ariaLabelledById
+    summary: Optional id for aria-LabelledBy
+    deprecated:
+      content: Pass through via `modalProps.titleAriaId` instead.
+    name: ariaLabelledById
+    fullName: ariaLabelledById
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'ariaLabelledById?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.IDialogProps.className
+    summary: Optional class name to be added to the root class
+    deprecated:
+      content: Pass through via `modalProps.className` instead
+    name: className
+    fullName: className
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'className?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.IDialogProps.componentRef
+    summary: >-
+      Optional callback to access the IDialog interface. Use this instead of ref for accessing the public methods and
+      properties of the component.
+    name: componentRef
+    fullName: componentRef
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'componentRef?: IRefObject<IDialog>;'
+      return:
+        type:
+          - IRefObject<IDialog>
+  - uid: office-ui-fabric-react.IDialogProps.containerClassName
+    summary: Optional override for container class
+    deprecated:
+      content: Pass through via `modalProps.className` instead
+    name: containerClassName
+    fullName: containerClassName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'containerClassName?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.IDialogProps.contentClassName
+    summary: Optional override content class
+    deprecated:
+      content: Pass through via `dialogContentProps` instead as `className`<!-- -->.
+    name: contentClassName
+    fullName: contentClassName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'contentClassName?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.IDialogProps.dialogContentProps
+    summary: Props to be passed through to Dialog Content
+    name: dialogContentProps
+    fullName: dialogContentProps
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'dialogContentProps?: IDialogContentProps;'
+      return:
+        type:
+          - office-ui-fabric-react.IDialogContentProps
+  - uid: office-ui-fabric-react.IDialogProps.hidden
+    summary: Whether the dialog is hidden.
+    name: hidden
+    fullName: hidden
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'hidden?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-ui-fabric-react.IDialogProps.isBlocking
+    summary: Whether the dialog can be light dismissed by clicking outside the dialog (on the overlay).
+    deprecated:
+      content: Pass through via `modalProps` instead
+    name: isBlocking
+    fullName: isBlocking
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isBlocking?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-ui-fabric-react.IDialogProps.isDarkOverlay
+    summary: Whether the overlay is dark themed.
+    deprecated:
+      content: Pass through via `modalProps` instead
+    name: isDarkOverlay
+    fullName: isDarkOverlay
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isDarkOverlay?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-ui-fabric-react.IDialogProps.isOpen
+    summary: 'Whether the dialog is displayed. Deprecated, use `hidden` instead.'
+    deprecated:
+      content: Use `hidden` instead
+    name: isOpen
+    fullName: isOpen
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isOpen?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-ui-fabric-react.IDialogProps.maxWidth
+    summary: >-
+      Sets the maximum width for the dialog. It limits the width property to be larger than the value specified in
+      max-width.
+    name: maxWidth
+    fullName: maxWidth
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'maxWidth?: ICSSRule | ICSSPixelUnitRule;'
+      return:
+        type:
+          - ICSSRule | ICSSPixelUnitRule
+  - uid: office-ui-fabric-react.IDialogProps.minWidth
+    summary: >-
+      Sets the minimum width of the dialog. It limits the width property to be not smaller than the value specified in
+      min-width.
+    name: minWidth
+    fullName: minWidth
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'minWidth?: ICSSRule | ICSSPixelUnitRule;'
+      return:
+        type:
+          - ICSSRule | ICSSPixelUnitRule
+  - uid: office-ui-fabric-react.IDialogProps.modalProps
+    summary: Props to be passed through to Modal
+    name: modalProps
+    fullName: modalProps
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'modalProps?: IModalProps;'
+      return:
+        type:
+          - office-ui-fabric-react.IModalProps
+  - uid: office-ui-fabric-react.IDialogProps.onDismiss
+    summary: >-
+      A callback function for when the Dialog is dismissed from the close button or light dismiss. Can also be specified
+      separately in content and modal.
+    name: onDismiss
+    fullName: onDismiss
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onDismiss?: (ev?: React.MouseEvent<HTMLButtonElement>) => any;'
+      return:
+        type:
+          - '(ev?: React.MouseEvent<HTMLButtonElement>) => any'
+  - uid: office-ui-fabric-react.IDialogProps.onDismissed
+    summary: A callback function which is called after the Dialog is dismissed and the animation is complete.
+    deprecated:
+      content: Pass through via `modalProps` instead
+    name: onDismissed
+    fullName: onDismissed
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onDismissed?: () => any;'
+      return:
+        type:
+          - () => any
+  - uid: office-ui-fabric-react.IDialogProps.onLayerDidMount
+    summary: A callback function for when the Dialog content is mounted on the overlay layer
+    deprecated:
+      content: Pass through via `modalProps.layerProps` instead
+    name: onLayerDidMount
+    fullName: onLayerDidMount
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onLayerDidMount?: () => void;'
+      return:
+        type:
+          - () => void
+  - uid: office-ui-fabric-react.IDialogProps.onLayerMounted
+    summary: 'Deprecated at 0.81.2, use `onLayerDidMount` instead.'
+    deprecated:
+      content: Use `onLayerDidMount` instead.
+    name: onLayerMounted
+    fullName: onLayerMounted
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onLayerMounted?: () => void;'
+      return:
+        type:
+          - () => void
+  - uid: office-ui-fabric-react.IDialogProps.styles
+    summary: Call to provide customized styling that will layer on top of the variant rules
+    name: styles
+    fullName: styles
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'styles?: IStyleFunctionOrObject<IDialogStyleProps, IDialogStyles>;'
+      return:
+        type:
+          - 'IStyleFunctionOrObject<IDialogStyleProps, IDialogStyles>'
+  - uid: office-ui-fabric-react.IDialogProps.subText
+    summary: The subtext to display in the dialog.
+    deprecated:
+      content: Pass through via `dialogContentProps` instead.
+    name: subText
+    fullName: subText
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'subText?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.IDialogProps.theme
+    summary: Theme provided by HOC.
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type:
+          - styling.ITheme
+  - uid: office-ui-fabric-react.IDialogProps.title
+    summary: The title text to display at the top of the dialog.
+    deprecated:
+      content: Pass through via `dialogContentProps` instead.
+    name: title
+    fullName: title
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'title?: string | JSX.Element;'
+      return:
+        type:
+          - string | JSX.Element
+  - uid: office-ui-fabric-react.IDialogProps.topButtonsProps
+    summary: Other top buttons that will show up next to the close button
+    deprecated:
+      content: Pass through via `dialogContentProps` instead.
+    name: topButtonsProps
+    fullName: topButtonsProps
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'topButtonsProps?: IButtonProps[];'
+      return:
+        type:
+          - 'IButtonProps[]'
+  - uid: office-ui-fabric-react.IDialogProps.type
+    summary: The type of Dialog to display.
+    deprecated:
+      content: Pass through via `dialogContentProps` instead.
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type?: DialogType;'
+      return:
+        type:
+          - office-ui-fabric-react.DialogType

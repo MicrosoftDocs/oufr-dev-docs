@@ -1,0 +1,82 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office-ui-fabric-react.IShimmerCircleProps
+    summary: ShimmerCircle component props.
+    name: IShimmerCircleProps
+    fullName: IShimmerCircleProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'React.AllHTMLAttributes<HTMLElement> '
+    package: office-ui-fabric-react
+    children:
+      - office-ui-fabric-react.IShimmerCircleProps.borderStyle
+      - office-ui-fabric-react.IShimmerCircleProps.componentRef
+      - office-ui-fabric-react.IShimmerCircleProps.height
+      - office-ui-fabric-react.IShimmerCircleProps.styles
+      - office-ui-fabric-react.IShimmerCircleProps.theme
+  - uid: office-ui-fabric-react.IShimmerCircleProps.borderStyle
+    summary: Use to set custom styling of the shimmerCircle borders.
+    deprecated:
+      content: Use `styles` prop to leverage mergeStyle API.
+    name: borderStyle
+    fullName: borderStyle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'borderStyle?: IRawStyle;'
+      return:
+        type:
+          - merge-styles.IRawStyle
+  - uid: office-ui-fabric-react.IShimmerCircleProps.componentRef
+    summary: >-
+      Optional callback to access the IShimmerCircle interface. Use this instead of ref for accessing the public methods
+      and properties of the component.
+    name: componentRef
+    fullName: componentRef
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'componentRef?: IRefObject<IShimmerCircle>;'
+      return:
+        type:
+          - IRefObject<IShimmerCircle>
+  - uid: office-ui-fabric-react.IShimmerCircleProps.height
+    summary: Sets the height of the circle.
+    name: height
+    fullName: height
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'height?: number;'
+      return:
+        type:
+          - number
+  - uid: office-ui-fabric-react.IShimmerCircleProps.styles
+    summary: Call to provide customized styling that will layer on top of the variant rules.
+    name: styles
+    fullName: styles
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'styles?: IStyleFunctionOrObject<IShimmerCircleStyleProps, IShimmerCircleStyles>;'
+      return:
+        type:
+          - 'IStyleFunctionOrObject<IShimmerCircleStyleProps, IShimmerCircleStyles>'
+  - uid: office-ui-fabric-react.IShimmerCircleProps.theme
+    summary: Theme provided by High-Order Component.
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type:
+          - styling.ITheme

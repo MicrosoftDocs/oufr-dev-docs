@@ -1,0 +1,26 @@
+### YamlMime:UniversalReference
+items:
+  - uid: utilities.IRenderComponent
+    summary: >-
+      An interface representing a component that will not output any DOM, will just render its children and pass through
+      items to modify the children.
+    name: IRenderComponent
+    fullName: IRenderComponent
+    langs:
+      - typeScript
+    type: interface
+    package: utilities
+    children:
+      - utilities.IRenderComponent.children
+  - uid: utilities.IRenderComponent.children
+    summary: JSX.Element to return in this component's render() function.
+    name: children
+    fullName: children
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'children: (props: TProps) => JSX.Element;'
+      return:
+        type:
+          - '(props: TProps) => JSX.Element'

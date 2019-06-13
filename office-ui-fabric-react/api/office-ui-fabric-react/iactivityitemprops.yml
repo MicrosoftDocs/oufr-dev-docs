@@ -1,0 +1,234 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office-ui-fabric-react.IActivityItemProps
+    name: IActivityItemProps
+    fullName: IActivityItemProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'React.AllHTMLAttributes<HTMLElement> '
+    package: office-ui-fabric-react
+    children:
+      - office-ui-fabric-react.IActivityItemProps.activityDescription
+      - office-ui-fabric-react.IActivityItemProps.activityDescriptionText
+      - office-ui-fabric-react.IActivityItemProps.activityIcon
+      - office-ui-fabric-react.IActivityItemProps.activityPersonas
+      - office-ui-fabric-react.IActivityItemProps.animateBeaconSignal
+      - office-ui-fabric-react.IActivityItemProps.beaconColorOne
+      - office-ui-fabric-react.IActivityItemProps.beaconColorTwo
+      - office-ui-fabric-react.IActivityItemProps.comments
+      - office-ui-fabric-react.IActivityItemProps.commentText
+      - office-ui-fabric-react.IActivityItemProps.isCompact
+      - office-ui-fabric-react.IActivityItemProps.onRenderActivityDescription
+      - office-ui-fabric-react.IActivityItemProps.onRenderComments
+      - office-ui-fabric-react.IActivityItemProps.onRenderIcon
+      - office-ui-fabric-react.IActivityItemProps.onRenderTimeStamp
+      - office-ui-fabric-react.IActivityItemProps.styles
+      - office-ui-fabric-react.IActivityItemProps.timeStamp
+  - uid: office-ui-fabric-react.IActivityItemProps.activityDescription
+    summary: >-
+      An element describing the activity that took place. If no activityDescription, activityDescriptionText, or
+      onRenderActivityDescription are included, no description of the activity is shown.
+    name: activityDescription
+    fullName: activityDescription
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'activityDescription?: React.ReactNode[] | React.ReactNode;'
+      return:
+        type:
+          - 'React.ReactNode[] | React.ReactNode'
+  - uid: office-ui-fabric-react.IActivityItemProps.activityDescriptionText
+    summary: >-
+      Text describing the activity that occurred and naming the people involved in it. Deprecated, use
+      `activityDescription` instead.
+    deprecated:
+      content: Use `activityDescription` instead.
+    name: activityDescriptionText
+    fullName: activityDescriptionText
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'activityDescriptionText?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.IActivityItemProps.activityIcon
+    summary: An element containing an icon shown next to the activity item.
+    name: activityIcon
+    fullName: activityIcon
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'activityIcon?: React.ReactNode;'
+      return:
+        type:
+          - React.ReactNode
+  - uid: office-ui-fabric-react.IActivityItemProps.activityPersonas
+    summary: >-
+      If activityIcon is not set, then the persona props in this array will be used as the icon for the this activity
+      item.
+    name: activityPersonas
+    fullName: activityPersonas
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'activityPersonas?: Array<IPersonaSharedProps>;'
+      return:
+        type:
+          - Array<IPersonaSharedProps>
+  - uid: office-ui-fabric-react.IActivityItemProps.animateBeaconSignal
+    summary: >-
+      Enables/Disables the beacon that radiates from the center of the center of the activity icon. Signals an activity
+      has started.
+    name: animateBeaconSignal
+    fullName: animateBeaconSignal
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'animateBeaconSignal?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-ui-fabric-react.IActivityItemProps.beaconColorOne
+    summary: Beacon color one
+    name: beaconColorOne
+    fullName: beaconColorOne
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'beaconColorOne?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.IActivityItemProps.beaconColorTwo
+    summary: Beacon color two
+    name: beaconColorTwo
+    fullName: beaconColorTwo
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'beaconColorTwo?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.IActivityItemProps.comments
+    summary: >-
+      An element containing the text of comments or @<!-- -->mention messages. If no comments, commentText, or
+      onRenderComments are included, no comments are shown.
+    name: comments
+    fullName: comments
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'comments?: React.ReactNode[] | React.ReactNode;'
+      return:
+        type:
+          - 'React.ReactNode[] | React.ReactNode'
+  - uid: office-ui-fabric-react.IActivityItemProps.commentText
+    summary: 'Text of comments or @<!-- -->mention messages. Deprecated, use `comments` instead.'
+    deprecated:
+      content: Use `comments` instead.
+    name: commentText
+    fullName: commentText
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'commentText?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.IActivityItemProps.isCompact
+    summary: Indicated if the compact styling should be used.
+    name: isCompact
+    fullName: isCompact
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isCompact?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-ui-fabric-react.IActivityItemProps.onRenderActivityDescription
+    summary: A renderer for the description of the current activity.
+    name: onRenderActivityDescription
+    fullName: onRenderActivityDescription
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onRenderActivityDescription?: IRenderFunction<IActivityItemProps>;'
+      return:
+        type:
+          - IRenderFunction<IActivityItemProps>
+  - uid: office-ui-fabric-react.IActivityItemProps.onRenderComments
+    summary: A renderer that adds the text of a comment below the activity description.
+    name: onRenderComments
+    fullName: onRenderComments
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onRenderComments?: IRenderFunction<IActivityItemProps>;'
+      return:
+        type:
+          - IRenderFunction<IActivityItemProps>
+  - uid: office-ui-fabric-react.IActivityItemProps.onRenderIcon
+    summary: A renderer to create the icon next to the activity item.
+    name: onRenderIcon
+    fullName: onRenderIcon
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onRenderIcon?: IRenderFunction<IActivityItemProps>;'
+      return:
+        type:
+          - IRenderFunction<IActivityItemProps>
+  - uid: office-ui-fabric-react.IActivityItemProps.onRenderTimeStamp
+    summary: 'A renderer adds a time stamp. If not included, timeStamp is shown as plain text below the activity.'
+    name: onRenderTimeStamp
+    fullName: onRenderTimeStamp
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onRenderTimeStamp?: IRenderFunction<IActivityItemProps>;'
+      return:
+        type:
+          - IRenderFunction<IActivityItemProps>
+  - uid: office-ui-fabric-react.IActivityItemProps.styles
+    summary: Optional styling for the elements within the Activity Item.
+    name: styles
+    fullName: styles
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'styles?: IActivityItemStyles;'
+      return:
+        type:
+          - office-ui-fabric-react.IActivityItemStyles
+  - uid: office-ui-fabric-react.IActivityItemProps.timeStamp
+    summary: 'Element shown as a timestamp on this activity. If not included, no timestamp is shown.'
+    name: timeStamp
+    fullName: timeStamp
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'timeStamp?: string | React.ReactNode[] | React.ReactNode;'
+      return:
+        type:
+          - 'string | React.ReactNode[] | React.ReactNode'

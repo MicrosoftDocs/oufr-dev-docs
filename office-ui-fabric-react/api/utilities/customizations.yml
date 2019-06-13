@@ -1,0 +1,125 @@
+### YamlMime:UniversalReference
+items:
+  - uid: utilities.Customizations
+    name: Customizations
+    fullName: Customizations
+    langs:
+      - typeScript
+    type: class
+    package: utilities
+    children:
+      - utilities.Customizations.applyScopedSettings
+      - utilities.Customizations.applySettings
+      - utilities.Customizations.getSettings
+      - utilities.Customizations.observe
+      - utilities.Customizations.reset
+      - utilities.Customizations.unobserve
+  - uid: utilities.Customizations.applyScopedSettings
+    name: 'applyScopedSettings(scopeName, settings)'
+    fullName: 'applyScopedSettings(scopeName, settings)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'static applyScopedSettings(scopeName: string, settings: ISettings): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: scopeName
+          description: ''
+          type:
+            - string
+        - id: settings
+          description: ''
+          type:
+            - ISettings
+  - uid: utilities.Customizations.applySettings
+    name: applySettings(settings)
+    fullName: applySettings(settings)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'static applySettings(settings: ISettings): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: settings
+          description: ''
+          type:
+            - ISettings
+  - uid: utilities.Customizations.getSettings
+    name: 'getSettings(properties, scopeName, localSettings)'
+    fullName: 'getSettings(properties, scopeName, localSettings)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'static getSettings(properties: string[], scopeName?: string, localSettings?: ICustomizations): any;'
+      return:
+        type:
+          - any
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - 'string[]'
+        - id: scopeName
+          description: ''
+          type:
+            - string
+        - id: localSettings
+          description: ''
+          type:
+            - utilities.ICustomizations
+  - uid: utilities.Customizations.observe
+    name: observe(onChange)
+    fullName: observe(onChange)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'static observe(onChange: () => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: onChange
+          description: ''
+          type:
+            - () => void
+  - uid: utilities.Customizations.reset
+    name: reset()
+    fullName: reset()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'static reset(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: utilities.Customizations.unobserve
+    name: unobserve(onChange)
+    fullName: unobserve(onChange)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'static unobserve(onChange: () => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: onChange
+          description: ''
+          type:
+            - () => void

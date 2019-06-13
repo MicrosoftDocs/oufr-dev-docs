@@ -1,0 +1,174 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office-ui-fabric-react.KeytipLayerBase
+    summary: A layer that holds all keytip items
+    name: KeytipLayerBase
+    fullName: KeytipLayerBase
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'BaseComponent<IKeytipLayerProps, IKeytipLayerState> '
+    package: office-ui-fabric-react
+    children:
+      - office-ui-fabric-react.KeytipLayerBase.(constructor)
+      - office-ui-fabric-react.KeytipLayerBase.componentDidMount
+      - office-ui-fabric-react.KeytipLayerBase.componentWillUnmount
+      - office-ui-fabric-react.KeytipLayerBase.defaultProps
+      - office-ui-fabric-react.KeytipLayerBase.getCurrentSequence
+      - office-ui-fabric-react.KeytipLayerBase.getKeytipTree
+      - office-ui-fabric-react.KeytipLayerBase.processInput
+      - office-ui-fabric-react.KeytipLayerBase.processTransitionInput
+      - office-ui-fabric-react.KeytipLayerBase.render
+      - office-ui-fabric-react.KeytipLayerBase.showKeytips
+  - uid: office-ui-fabric-react.KeytipLayerBase.(constructor)
+    summary: Constructs a new instance of the `KeytipLayerBase` class
+    name: '(constructor)(props, context)'
+    fullName: '(constructor)(props, context)'
+    langs:
+      - typeScript
+    type: constructor
+    syntax:
+      content: 'constructor(props: IKeytipLayerProps, context: any);'
+      parameters:
+        - id: props
+          description: ''
+          type:
+            - office-ui-fabric-react.IKeytipLayerProps
+        - id: context
+          description: ''
+          type:
+            - any
+  - uid: office-ui-fabric-react.KeytipLayerBase.componentDidMount
+    name: componentDidMount()
+    fullName: componentDidMount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'componentDidMount(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: office-ui-fabric-react.KeytipLayerBase.componentWillUnmount
+    name: componentWillUnmount()
+    fullName: componentWillUnmount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'componentWillUnmount(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: office-ui-fabric-react.KeytipLayerBase.defaultProps
+    name: defaultProps
+    fullName: defaultProps
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'static defaultProps: IKeytipLayerProps;'
+      return:
+        type:
+          - office-ui-fabric-react.IKeytipLayerProps
+  - uid: office-ui-fabric-react.KeytipLayerBase.getCurrentSequence
+    name: getCurrentSequence()
+    fullName: getCurrentSequence()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCurrentSequence(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: office-ui-fabric-react.KeytipLayerBase.getKeytipTree
+    name: getKeytipTree()
+    fullName: getKeytipTree()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getKeytipTree(): KeytipTree;'
+      return:
+        type:
+          - KeytipTree
+        description: ''
+  - uid: office-ui-fabric-react.KeytipLayerBase.processInput
+    summary: Processes inputs from the document listener and traverse the keytip tree
+    name: 'processInput(key, ev)'
+    fullName: 'processInput(key, ev)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'processInput(key: string, ev?: React.KeyboardEvent<HTMLElement>): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: key
+          description: Key pressed by the user
+          type:
+            - string
+        - id: ev
+          description: ''
+          type:
+            - React.KeyboardEvent<HTMLElement>
+  - uid: office-ui-fabric-react.KeytipLayerBase.processTransitionInput
+    summary: Processes an IKeytipTransitionKey entered by the user
+    name: 'processTransitionInput(transitionKey, ev)'
+    fullName: 'processTransitionInput(transitionKey, ev)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'processTransitionInput(transitionKey: IKeytipTransitionKey, ev?: React.KeyboardEvent<HTMLElement>): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: transitionKey
+          description: IKeytipTransitionKey received by the layer to process
+          type:
+            - IKeytipTransitionKey
+        - id: ev
+          description: ''
+          type:
+            - React.KeyboardEvent<HTMLElement>
+  - uid: office-ui-fabric-react.KeytipLayerBase.render
+    name: render()
+    fullName: render()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'render(): JSX.Element;'
+      return:
+        type:
+          - JSX.Element
+        description: ''
+  - uid: office-ui-fabric-react.KeytipLayerBase.showKeytips
+    summary: Show the given keytips and hide all others
+    name: showKeytips(ids)
+    fullName: showKeytips(ids)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'showKeytips(ids: string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: ids
+          description: Keytip IDs to show
+          type:
+            - 'string[]'

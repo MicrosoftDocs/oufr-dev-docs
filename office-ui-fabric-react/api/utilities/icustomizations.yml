@@ -1,0 +1,52 @@
+### YamlMime:UniversalReference
+items:
+  - uid: utilities.ICustomizations
+    name: ICustomizations
+    fullName: ICustomizations
+    langs:
+      - typeScript
+    type: interface
+    package: utilities
+    children:
+      - utilities.ICustomizations.inCustomizerContext
+      - utilities.ICustomizations.scopedSettings
+      - utilities.ICustomizations.settings
+  - uid: utilities.ICustomizations.inCustomizerContext
+    name: inCustomizerContext
+    fullName: inCustomizerContext
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'inCustomizerContext?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: utilities.ICustomizations.scopedSettings
+    name: scopedSettings
+    fullName: scopedSettings
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: |-
+        scopedSettings: {
+                [key: string]: ISettings;
+            };
+      return:
+        type:
+          - |-
+            {
+                    [key: string]: ISettings;
+                }
+  - uid: utilities.ICustomizations.settings
+    name: settings
+    fullName: settings
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'settings: ISettings;'
+      return:
+        type:
+          - ISettings

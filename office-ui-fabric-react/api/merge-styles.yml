@@ -1,0 +1,524 @@
+### YamlMime:UniversalReference
+items:
+  - uid: merge-styles
+    name: '@uifabric/merge-styles'
+    fullName: '@uifabric/merge-styles'
+    langs:
+      - typeScript
+    type: package
+    children:
+      - merge-styles.concatStyleSets
+      - merge-styles.concatStyleSets_1
+      - merge-styles.concatStyleSets_2
+      - merge-styles.concatStyleSets_3
+      - merge-styles.concatStyleSets_4
+      - merge-styles.concatStyleSets_5
+      - merge-styles.concatStyleSets_6
+      - merge-styles.concatStyleSets_7
+      - merge-styles.fontFace
+      - merge-styles.ICSPSettings
+      - merge-styles.IFontFace
+      - merge-styles.IRawFontStyle
+      - merge-styles.IRawStyle
+      - merge-styles.IRawStyleBase
+      - merge-styles.IStyleBaseArray
+      - merge-styles.IStyleSheetConfig
+      - merge-styles.keyframes
+      - merge-styles.mergeStyles
+      - merge-styles.mergeStyleSets
+      - merge-styles.mergeStyleSets_1
+      - merge-styles.mergeStyleSets_2
+      - merge-styles.mergeStyleSets_3
+      - merge-styles.mergeStyleSets_4
+      - merge-styles.setRTL
+      - merge-styles.Stylesheet
+  - uid: merge-styles.concatStyleSets
+    summary: Combine a set of styles together (but does not register css classes).
+    name: concatStyleSets(styleSet)
+    fullName: concatStyleSets(styleSet)
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: >-
+        export declare function concatStyleSets<TStyleSet extends IStyleSet<TStyleSet>>(styleSet: TStyleSet | false |
+        null | undefined): IConcatenatedStyleSet<TStyleSet>;
+      return:
+        type:
+          - IConcatenatedStyleSet<TStyleSet>
+        description: ''
+      parameters:
+        - id: styleSet
+          description: The first style set to be concatenated.
+          type:
+            - TStyleSet | false | null | undefined
+  - uid: merge-styles.concatStyleSets_1
+    summary: Combine a set of styles together (but does not register css classes).
+    name: 'concatStyleSets(styleSet1, styleSet2)'
+    fullName: 'concatStyleSets(styleSet1, styleSet2)'
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: >-
+        export declare function concatStyleSets<TStyleSet1 extends IStyleSet<TStyleSet1>, TStyleSet2 extends
+        IStyleSet<TStyleSet2>>(styleSet1: TStyleSet1 | false | null | undefined, styleSet2: TStyleSet2 | false | null |
+        undefined): IConcatenatedStyleSet<TStyleSet1 & TStyleSet2>;
+      return:
+        type:
+          - IConcatenatedStyleSet<TStyleSet1 & TStyleSet2>
+        description: ''
+      parameters:
+        - id: styleSet1
+          description: The first style set to be concatenated.
+          type:
+            - TStyleSet1 | false | null | undefined
+        - id: styleSet2
+          description: The second style set to be concatenated.
+          type:
+            - TStyleSet2 | false | null | undefined
+  - uid: merge-styles.concatStyleSets_2
+    summary: Combine a set of styles together (but does not register css classes).
+    name: 'concatStyleSets(styleSet1, styleSet2, styleSet3)'
+    fullName: 'concatStyleSets(styleSet1, styleSet2, styleSet3)'
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: >-
+        export declare function concatStyleSets<TStyleSet1 extends IStyleSet<TStyleSet1>, TStyleSet2 extends
+        IStyleSet<TStyleSet2>, TStyleSet3 extends IStyleSet<TStyleSet3>>(styleSet1: TStyleSet1 | false | null |
+        undefined, styleSet2: TStyleSet2 | false | null | undefined, styleSet3: TStyleSet3 | false | null | undefined):
+        IConcatenatedStyleSet<TStyleSet1 & TStyleSet2 & TStyleSet3>;
+      return:
+        type:
+          - IConcatenatedStyleSet<TStyleSet1 & TStyleSet2 & TStyleSet3>
+        description: ''
+      parameters:
+        - id: styleSet1
+          description: The first style set to be concatenated.
+          type:
+            - TStyleSet1 | false | null | undefined
+        - id: styleSet2
+          description: The second style set to be concatenated.
+          type:
+            - TStyleSet2 | false | null | undefined
+        - id: styleSet3
+          description: The third style set to be concatenated.
+          type:
+            - TStyleSet3 | false | null | undefined
+  - uid: merge-styles.concatStyleSets_3
+    summary: Combine a set of styles together (but does not register css classes).
+    name: 'concatStyleSets(styleSet1, styleSet2, styleSet3, styleSet4)'
+    fullName: 'concatStyleSets(styleSet1, styleSet2, styleSet3, styleSet4)'
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: >-
+        export declare function concatStyleSets<TStyleSet1 extends IStyleSet<TStyleSet1>, TStyleSet2 extends
+        IStyleSet<TStyleSet2>, TStyleSet3 extends IStyleSet<TStyleSet3>, TStyleSet4 extends
+        IStyleSet<TStyleSet4>>(styleSet1: TStyleSet1 | false | null | undefined, styleSet2: TStyleSet2 | false | null |
+        undefined, styleSet3: TStyleSet3 | false | null | undefined, styleSet4: TStyleSet3 | false | null | undefined):
+        IConcatenatedStyleSet<TStyleSet1 & TStyleSet2 & TStyleSet3 & TStyleSet4>;
+      return:
+        type:
+          - IConcatenatedStyleSet<TStyleSet1 & TStyleSet2 & TStyleSet3 & TStyleSet4>
+        description: ''
+      parameters:
+        - id: styleSet1
+          description: The first style set to be concatenated.
+          type:
+            - TStyleSet1 | false | null | undefined
+        - id: styleSet2
+          description: The second style set to be concatenated.
+          type:
+            - TStyleSet2 | false | null | undefined
+        - id: styleSet3
+          description: The third style set to be concatenated.
+          type:
+            - TStyleSet3 | false | null | undefined
+        - id: styleSet4
+          description: The fourth style set to be concatenated.
+          type:
+            - TStyleSet3 | false | null | undefined
+  - uid: merge-styles.concatStyleSets_4
+    summary: Combine a set of styles together (but does not register css classes).
+    name: 'concatStyleSets(styleSet1, styleSet2, styleSet3, styleSet4)'
+    fullName: 'concatStyleSets(styleSet1, styleSet2, styleSet3, styleSet4)'
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: >-
+        export declare function concatStyleSets<TStyleSet1 extends IStyleSet<TStyleSet1>, TStyleSet2 extends
+        IStyleSet<TStyleSet2>, TStyleSet3 extends IStyleSet<TStyleSet3>, TStyleSet4 extends
+        IStyleSet<TStyleSet4>>(styleSet1: TStyleSet1 | false | null | undefined, styleSet2: TStyleSet2 | false | null |
+        undefined, styleSet3: TStyleSet3 | false | null | undefined, styleSet4: TStyleSet4 | false | null | undefined):
+        IConcatenatedStyleSet<TStyleSet1 & TStyleSet2 & TStyleSet3 & TStyleSet4>;
+      return:
+        type:
+          - IConcatenatedStyleSet<TStyleSet1 & TStyleSet2 & TStyleSet3 & TStyleSet4>
+        description: ''
+      parameters:
+        - id: styleSet1
+          description: The first style set to be concatenated.
+          type:
+            - TStyleSet1 | false | null | undefined
+        - id: styleSet2
+          description: The second style set to be concatenated.
+          type:
+            - TStyleSet2 | false | null | undefined
+        - id: styleSet3
+          description: The third style set to be concatenated.
+          type:
+            - TStyleSet3 | false | null | undefined
+        - id: styleSet4
+          description: The fourth style set to be concatenated.
+          type:
+            - TStyleSet4 | false | null | undefined
+  - uid: merge-styles.concatStyleSets_5
+    summary: Combine a set of styles together (but does not register css classes).
+    name: 'concatStyleSets(styleSet1, styleSet2, styleSet3, styleSet4, styleSet5)'
+    fullName: 'concatStyleSets(styleSet1, styleSet2, styleSet3, styleSet4, styleSet5)'
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: >-
+        export declare function concatStyleSets<TStyleSet1 extends IStyleSet<TStyleSet1>, TStyleSet2 extends
+        IStyleSet<TStyleSet2>, TStyleSet3 extends IStyleSet<TStyleSet3>, TStyleSet4 extends IStyleSet<TStyleSet4>,
+        TStyleSet5 extends IStyleSet<TStyleSet5>>(styleSet1: TStyleSet1 | false | null | undefined, styleSet2:
+        TStyleSet2 | false | null | undefined, styleSet3: TStyleSet3 | false | null | undefined, styleSet4: TStyleSet4 |
+        false | null | undefined, styleSet5: TStyleSet5 | false | null | undefined): IConcatenatedStyleSet<TStyleSet1 &
+        TStyleSet2 & TStyleSet3 & TStyleSet4 & TStyleSet5>;
+      return:
+        type:
+          - IConcatenatedStyleSet<TStyleSet1 & TStyleSet2 & TStyleSet3 & TStyleSet4 & TStyleSet5>
+        description: ''
+      parameters:
+        - id: styleSet1
+          description: The first style set to be concatenated.
+          type:
+            - TStyleSet1 | false | null | undefined
+        - id: styleSet2
+          description: The second style set to be concatenated.
+          type:
+            - TStyleSet2 | false | null | undefined
+        - id: styleSet3
+          description: The third style set to be concatenated.
+          type:
+            - TStyleSet3 | false | null | undefined
+        - id: styleSet4
+          description: The fourth style set to be concatenated.
+          type:
+            - TStyleSet4 | false | null | undefined
+        - id: styleSet5
+          description: The fifth set to be concatenated.
+          type:
+            - TStyleSet5 | false | null | undefined
+  - uid: merge-styles.concatStyleSets_6
+    summary: Combine a set of styles together (but does not register css classes).
+    name: 'concatStyleSets(styleSet1, styleSet2, styleSet3, styleSet4, styleSet5, styleSet6)'
+    fullName: 'concatStyleSets(styleSet1, styleSet2, styleSet3, styleSet4, styleSet5, styleSet6)'
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: >-
+        export declare function concatStyleSets<TStyleSet1 extends IStyleSet<TStyleSet1>, TStyleSet2 extends
+        IStyleSet<TStyleSet2>, TStyleSet3 extends IStyleSet<TStyleSet3>, TStyleSet4 extends IStyleSet<TStyleSet4>,
+        TStyleSet5 extends IStyleSet<TStyleSet5>, TStyleSet6 extends IStyleSet<TStyleSet6>>(styleSet1: TStyleSet1 |
+        false | null | undefined, styleSet2: TStyleSet2 | false | null | undefined, styleSet3: TStyleSet3 | false | null
+        | undefined, styleSet4: TStyleSet4 | false | null | undefined, styleSet5: TStyleSet5 | false | null | undefined,
+        styleSet6: TStyleSet6 | false | null | undefined): IConcatenatedStyleSet<TStyleSet1 & TStyleSet2 & TStyleSet3 &
+        TStyleSet4 & TStyleSet5 & TStyleSet6>;
+      return:
+        type:
+          - IConcatenatedStyleSet<TStyleSet1 & TStyleSet2 & TStyleSet3 & TStyleSet4 & TStyleSet5 & TStyleSet6>
+        description: ''
+      parameters:
+        - id: styleSet1
+          description: The first style set to be concatenated.
+          type:
+            - TStyleSet1 | false | null | undefined
+        - id: styleSet2
+          description: The second style set to be concatenated.
+          type:
+            - TStyleSet2 | false | null | undefined
+        - id: styleSet3
+          description: The third style set to be concatenated.
+          type:
+            - TStyleSet3 | false | null | undefined
+        - id: styleSet4
+          description: The fourth style set to be concatenated.
+          type:
+            - TStyleSet4 | false | null | undefined
+        - id: styleSet5
+          description: The fifth set to be concatenated.
+          type:
+            - TStyleSet5 | false | null | undefined
+        - id: styleSet6
+          description: The sixth set to be concatenated.
+          type:
+            - TStyleSet6 | false | null | undefined
+  - uid: merge-styles.concatStyleSets_7
+    summary: Combine a set of styles together (but does not register css classes).
+    name: concatStyleSets(styleSets)
+    fullName: concatStyleSets(styleSets)
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: >-
+        export declare function concatStyleSets(...styleSets: (IStyleSet<any> | false | null | undefined)[]):
+        IConcatenatedStyleSet<any>;
+      return:
+        type:
+          - IConcatenatedStyleSet<any>
+        description: ''
+      parameters:
+        - id: styleSets
+          description: One or more stylesets to be merged (each param can also be falsy).
+          type:
+            - '(IStyleSet<any> | false | null | undefined)[]'
+  - uid: merge-styles.fontFace
+    summary: Registers a font face.
+    name: fontFace(font)
+    fullName: fontFace(font)
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export declare function fontFace(font: IFontFace): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: font
+          description: ''
+          type:
+            - merge-styles.IFontFace
+  - uid: merge-styles.keyframes
+    summary: Registers keyframe definitions.
+    name: keyframes(timeline)
+    fullName: keyframes(timeline)
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: |-
+        export declare function keyframes(timeline: {
+            [key: string]: {};
+        }): string;
+      return:
+        type:
+          - string
+        description: ''
+      parameters:
+        - id: timeline
+          description: ''
+          type:
+            - |-
+              {
+                  [key: string]: {};
+              }
+  - uid: merge-styles.mergeStyles
+    summary: 'Concatination helper, which can merge class names together. Skips over falsey values.'
+    name: mergeStyles(args)
+    fullName: mergeStyles(args)
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export declare function mergeStyles(...args: (IStyle | IStyleBaseArray | false | null | undefined)[]): string;'
+      return:
+        type:
+          - string
+        description: ''
+      parameters:
+        - id: args
+          description: ''
+          type:
+            - '(IStyle | IStyleBaseArray | false | null | undefined)[]'
+  - uid: merge-styles.mergeStyleSets
+    summary: >-
+      Takes in one or more style set objects, each consisting of a set of areas, each which will produce a class name.
+      Using this is analogous to calling `mergeStyles` for each property in the object, but ensures we maintain the set
+      ordering when multiple style sets are merged.
+    name: mergeStyleSets(styleSet)
+    fullName: mergeStyleSets(styleSet)
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: >-
+        export declare function mergeStyleSets<TStyleSet extends IStyleSet<TStyleSet>>(styleSet: TStyleSet | false |
+        null | undefined): IProcessedStyleSet<TStyleSet>;
+      return:
+        type:
+          - IProcessedStyleSet<TStyleSet>
+        description: ''
+      parameters:
+        - id: styleSet
+          description: The first style set to be merged and reigstered.
+          type:
+            - TStyleSet | false | null | undefined
+  - uid: merge-styles.mergeStyleSets_1
+    summary: >-
+      Takes in one or more style set objects, each consisting of a set of areas, each which will produce a class name.
+      Using this is analogous to calling `mergeStyles` for each property in the object, but ensures we maintain the set
+      ordering when multiple style sets are merged.
+    name: 'mergeStyleSets(styleSet1, styleSet2)'
+    fullName: 'mergeStyleSets(styleSet1, styleSet2)'
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: >-
+        export declare function mergeStyleSets<TStyleSet1 extends IStyleSet<TStyleSet1>, TStyleSet2 extends
+        IStyleSet<TStyleSet2>>(styleSet1: TStyleSet1 | false | null | undefined, styleSet2: TStyleSet2 | false | null |
+        undefined): IProcessedStyleSet<TStyleSet1 & TStyleSet2>;
+      return:
+        type:
+          - IProcessedStyleSet<TStyleSet1 & TStyleSet2>
+        description: ''
+      parameters:
+        - id: styleSet1
+          description: The first style set to be merged.
+          type:
+            - TStyleSet1 | false | null | undefined
+        - id: styleSet2
+          description: The second style set to be merged.
+          type:
+            - TStyleSet2 | false | null | undefined
+  - uid: merge-styles.mergeStyleSets_2
+    summary: >-
+      Takes in one or more style set objects, each consisting of a set of areas, each which will produce a class name.
+      Using this is analogous to calling `mergeStyles` for each property in the object, but ensures we maintain the set
+      ordering when multiple style sets are merged.
+    name: 'mergeStyleSets(styleSet1, styleSet2, styleSet3)'
+    fullName: 'mergeStyleSets(styleSet1, styleSet2, styleSet3)'
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: >-
+        export declare function mergeStyleSets<TStyleSet1 extends IStyleSet<TStyleSet1>, TStyleSet2 extends
+        IStyleSet<TStyleSet2>, TStyleSet3 extends IStyleSet<TStyleSet3>>(styleSet1: TStyleSet1 | false | null |
+        undefined, styleSet2: TStyleSet2 | false | null | undefined, styleSet3: TStyleSet3 | false | null | undefined):
+        IProcessedStyleSet<TStyleSet1 & TStyleSet2 & TStyleSet3>;
+      return:
+        type:
+          - IProcessedStyleSet<TStyleSet1 & TStyleSet2 & TStyleSet3>
+        description: ''
+      parameters:
+        - id: styleSet1
+          description: The first style set to be merged.
+          type:
+            - TStyleSet1 | false | null | undefined
+        - id: styleSet2
+          description: The second style set to be merged.
+          type:
+            - TStyleSet2 | false | null | undefined
+        - id: styleSet3
+          description: The third style set to be merged.
+          type:
+            - TStyleSet3 | false | null | undefined
+  - uid: merge-styles.mergeStyleSets_3
+    summary: >-
+      Takes in one or more style set objects, each consisting of a set of areas, each which will produce a class name.
+      Using this is analogous to calling `mergeStyles` for each property in the object, but ensures we maintain the set
+      ordering when multiple style sets are merged.
+    name: 'mergeStyleSets(styleSet1, styleSet2, styleSet3, styleSet4)'
+    fullName: 'mergeStyleSets(styleSet1, styleSet2, styleSet3, styleSet4)'
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: >-
+        export declare function mergeStyleSets<TStyleSet1 extends IStyleSet<TStyleSet1>, TStyleSet2 extends
+        IStyleSet<TStyleSet2>, TStyleSet3 extends IStyleSet<TStyleSet3>, TStyleSet4 extends
+        IStyleSet<TStyleSet4>>(styleSet1: TStyleSet1 | false | null | undefined, styleSet2: TStyleSet2 | false | null |
+        undefined, styleSet3: TStyleSet3 | false | null | undefined, styleSet4: TStyleSet4 | false | null | undefined):
+        IProcessedStyleSet<TStyleSet1 & TStyleSet2 & TStyleSet3 & TStyleSet4>;
+      return:
+        type:
+          - IProcessedStyleSet<TStyleSet1 & TStyleSet2 & TStyleSet3 & TStyleSet4>
+        description: ''
+      parameters:
+        - id: styleSet1
+          description: The first style set to be merged.
+          type:
+            - TStyleSet1 | false | null | undefined
+        - id: styleSet2
+          description: The second style set to be merged.
+          type:
+            - TStyleSet2 | false | null | undefined
+        - id: styleSet3
+          description: The third style set to be merged.
+          type:
+            - TStyleSet3 | false | null | undefined
+        - id: styleSet4
+          description: The fourth style set to be merged.
+          type:
+            - TStyleSet4 | false | null | undefined
+  - uid: merge-styles.mergeStyleSets_4
+    summary: >-
+      Takes in one or more style set objects, each consisting of a set of areas, each which will produce a class name.
+      Using this is analogous to calling `mergeStyles` for each property in the object, but ensures we maintain the set
+      ordering when multiple style sets are merged.
+    name: mergeStyleSets(styleSets)
+    fullName: mergeStyleSets(styleSets)
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: >-
+        export declare function mergeStyleSets(...styleSets: Array<IStyleSet<any> | undefined | false | null>):
+        IProcessedStyleSet<any>;
+      return:
+        type:
+          - IProcessedStyleSet<any>
+        description: ''
+      parameters:
+        - id: styleSets
+          description: One or more style sets to be merged.
+          type:
+            - Array<IStyleSet<any> | undefined | false | null>
+  - uid: merge-styles.setRTL
+    summary: Sets the current RTL value.
+    name: setRTL(isRTL)
+    fullName: setRTL(isRTL)
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export declare function setRTL(isRTL: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: isRTL
+          description: ''
+          type:
+            - boolean
+references:
+  - uid: merge-styles.ICSPSettings
+    name: ICSPSettings
+  - uid: merge-styles.IFontFace
+    name: IFontFace
+  - uid: merge-styles.IRawFontStyle
+    name: IRawFontStyle
+  - uid: merge-styles.IRawStyle
+    name: IRawStyle
+  - uid: merge-styles.IRawStyleBase
+    name: IRawStyleBase
+  - uid: merge-styles.IStyleBaseArray
+    name: IStyleBaseArray
+  - uid: merge-styles.IStyleSheetConfig
+    name: IStyleSheetConfig
+  - uid: merge-styles.Stylesheet
+    name: Stylesheet

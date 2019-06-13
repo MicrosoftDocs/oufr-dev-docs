@@ -1,0 +1,472 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office-ui-fabric-react.IPanelProps
+    name: IPanelProps
+    fullName: IPanelProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'React.HTMLAttributes<PanelBase> '
+    package: office-ui-fabric-react
+    children:
+      - office-ui-fabric-react.IPanelProps.className
+      - office-ui-fabric-react.IPanelProps.closeButtonAriaLabel
+      - office-ui-fabric-react.IPanelProps.componentId
+      - office-ui-fabric-react.IPanelProps.componentRef
+      - office-ui-fabric-react.IPanelProps.customWidth
+      - office-ui-fabric-react.IPanelProps.elementToFocusOnDismiss
+      - office-ui-fabric-react.IPanelProps.firstFocusableSelector
+      - office-ui-fabric-react.IPanelProps.focusTrapZoneProps
+      - office-ui-fabric-react.IPanelProps.forceFocusInsideTrap
+      - office-ui-fabric-react.IPanelProps.hasCloseButton
+      - office-ui-fabric-react.IPanelProps.headerClassName
+      - office-ui-fabric-react.IPanelProps.headerText
+      - office-ui-fabric-react.IPanelProps.ignoreExternalFocusing
+      - office-ui-fabric-react.IPanelProps.isBlocking
+      - office-ui-fabric-react.IPanelProps.isFooterAtBottom
+      - office-ui-fabric-react.IPanelProps.isHiddenOnDismiss
+      - office-ui-fabric-react.IPanelProps.isLightDismiss
+      - office-ui-fabric-react.IPanelProps.isOpen
+      - office-ui-fabric-react.IPanelProps.layerProps
+      - office-ui-fabric-react.IPanelProps.onDismiss
+      - office-ui-fabric-react.IPanelProps.onDismissed
+      - office-ui-fabric-react.IPanelProps.onLightDismissClick
+      - office-ui-fabric-react.IPanelProps.onOpen
+      - office-ui-fabric-react.IPanelProps.onOpened
+      - office-ui-fabric-react.IPanelProps.onOuterClick
+      - office-ui-fabric-react.IPanelProps.onRenderBody
+      - office-ui-fabric-react.IPanelProps.onRenderFooter
+      - office-ui-fabric-react.IPanelProps.onRenderFooterContent
+      - office-ui-fabric-react.IPanelProps.onRenderHeader
+      - office-ui-fabric-react.IPanelProps.onRenderNavigation
+      - office-ui-fabric-react.IPanelProps.onRenderNavigationContent
+      - office-ui-fabric-react.IPanelProps.styles
+      - office-ui-fabric-react.IPanelProps.theme
+      - office-ui-fabric-react.IPanelProps.type
+  - uid: office-ui-fabric-react.IPanelProps.className
+    summary: Additional css class to apply to the Panel
+    name: className
+    fullName: className
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'className?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.IPanelProps.closeButtonAriaLabel
+    summary: Aria label on close button
+    name: closeButtonAriaLabel
+    fullName: closeButtonAriaLabel
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'closeButtonAriaLabel?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.IPanelProps.componentId
+    summary: Deprecated property. Serves no function.
+    deprecated:
+      content: Serves no function.
+    name: componentId
+    fullName: componentId
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'componentId?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.IPanelProps.componentRef
+    summary: >-
+      Optional callback to access the IPanel interface. Use this instead of ref for accessing the public methods and
+      properties of the component.
+    name: componentRef
+    fullName: componentRef
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'componentRef?: IRefObject<IPanel>;'
+      return:
+        type:
+          - IRefObject<IPanel>
+  - uid: office-ui-fabric-react.IPanelProps.customWidth
+    summary: 'Custom panel width, used only when `type` is set to `PanelType.custom`<!-- -->.'
+    name: customWidth
+    fullName: customWidth
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'customWidth?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.IPanelProps.elementToFocusOnDismiss
+    summary: Sets the HTMLElement to focus on when exiting the FocusTrapZone.
+    name: elementToFocusOnDismiss
+    fullName: elementToFocusOnDismiss
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'elementToFocusOnDismiss?: HTMLElement;'
+      return:
+        type:
+          - HTMLElement
+  - uid: office-ui-fabric-react.IPanelProps.firstFocusableSelector
+    summary: 'Indicates the selector for first focusable item. Deprecated, use `focusTrapZoneProps`<!-- -->.'
+    deprecated:
+      content: Use `focusTrapZoneProps`<!-- -->.
+    name: firstFocusableSelector
+    fullName: firstFocusableSelector
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'firstFocusableSelector?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.IPanelProps.focusTrapZoneProps
+    summary: Optional props to pass to the FocusTrapZone component to manage focus in the panel.
+    name: focusTrapZoneProps
+    fullName: focusTrapZoneProps
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'focusTrapZoneProps?: IFocusTrapZoneProps;'
+      return:
+        type:
+          - office-ui-fabric-react.IFocusTrapZoneProps
+  - uid: office-ui-fabric-react.IPanelProps.forceFocusInsideTrap
+    summary: >-
+      Indicates whether Panel should force focus inside the focus trap zone. If not explicitly specified, behavior
+      aligns with FocusTrapZone's default behavior. Deprecated, use `focusTrapZoneProps`<!-- -->.
+    deprecated:
+      content: Use `focusTrapZoneProps`<!-- -->.
+    name: forceFocusInsideTrap
+    fullName: forceFocusInsideTrap
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'forceFocusInsideTrap?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-ui-fabric-react.IPanelProps.hasCloseButton
+    summary: Has the close button visible.
+    name: hasCloseButton
+    fullName: hasCloseButton
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'hasCloseButton?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-ui-fabric-react.IPanelProps.headerClassName
+    summary: Optional parameter to provider the class name for header text
+    name: headerClassName
+    fullName: headerClassName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'headerClassName?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.IPanelProps.headerText
+    summary: Header text for the Panel.
+    name: headerText
+    fullName: headerText
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'headerText?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.IPanelProps.ignoreExternalFocusing
+    summary: >-
+      Indicates if this Panel will ignore keeping track of HTMLElement that activated the Zone. Deprecated, use
+      `focusTrapZoneProps`<!-- -->.
+    deprecated:
+      content: Use `focusTrapZoneProps`<!-- -->.
+    name: ignoreExternalFocusing
+    fullName: ignoreExternalFocusing
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'ignoreExternalFocusing?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-ui-fabric-react.IPanelProps.isBlocking
+    summary: Whether the panel uses a modal overlay or not
+    name: isBlocking
+    fullName: isBlocking
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isBlocking?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-ui-fabric-react.IPanelProps.isFooterAtBottom
+    summary: Determines if content should stretch to fill available space putting footer at the bottom of the page
+    name: isFooterAtBottom
+    fullName: isFooterAtBottom
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isFooterAtBottom?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-ui-fabric-react.IPanelProps.isHiddenOnDismiss
+    summary: >-
+      Whether the panel is hidden on dismiss, instead of destroyed in the DOM. Protects the contents from being
+      destroyed when the panel is dismissed.
+    name: isHiddenOnDismiss
+    fullName: isHiddenOnDismiss
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isHiddenOnDismiss?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-ui-fabric-react.IPanelProps.isLightDismiss
+    summary: Whether the panel can be light dismissed.
+    name: isLightDismiss
+    fullName: isLightDismiss
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isLightDismiss?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-ui-fabric-react.IPanelProps.isOpen
+    summary: Whether the panel is displayed.
+    name: isOpen
+    fullName: isOpen
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isOpen?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-ui-fabric-react.IPanelProps.layerProps
+    summary: Optional props to pass to the Layer component hosting the panel.
+    name: layerProps
+    fullName: layerProps
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'layerProps?: ILayerProps;'
+      return:
+        type:
+          - office-ui-fabric-react.ILayerProps
+  - uid: office-ui-fabric-react.IPanelProps.onDismiss
+    summary: >-
+      A callback function for when the panel is closed, before the animation completes. If the panel should NOT be
+      dismissed based on some keyboard event, then simply call ev.preventDefault() on it
+    name: onDismiss
+    fullName: onDismiss
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onDismiss?: (ev?: React.SyntheticEvent<HTMLElement>) => void;'
+      return:
+        type:
+          - '(ev?: React.SyntheticEvent<HTMLElement>) => void'
+  - uid: office-ui-fabric-react.IPanelProps.onDismissed
+    summary: A callback function which is called after the Panel is dismissed and the animation is complete.
+    name: onDismissed
+    fullName: onDismissed
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onDismissed?: () => void;'
+      return:
+        type:
+          - () => void
+  - uid: office-ui-fabric-react.IPanelProps.onLightDismissClick
+    summary: Optional custom function to handle clicks outside the panel in lightdismiss mode
+    name: onLightDismissClick
+    fullName: onLightDismissClick
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onLightDismissClick?: () => void;'
+      return:
+        type:
+          - () => void
+  - uid: office-ui-fabric-react.IPanelProps.onOpen
+    summary: 'A callback function for when the Panel is opened, before the animation completes.'
+    name: onOpen
+    fullName: onOpen
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onOpen?: () => void;'
+      return:
+        type:
+          - () => void
+  - uid: office-ui-fabric-react.IPanelProps.onOpened
+    summary: 'A callback function for when the Panel is opened, after the animation completes.'
+    name: onOpened
+    fullName: onOpened
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onOpened?: () => void;'
+      return:
+        type:
+          - () => void
+  - uid: office-ui-fabric-react.IPanelProps.onOuterClick
+    summary: Optional custom function to handle clicks outside this component
+    name: onOuterClick
+    fullName: onOuterClick
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onOuterClick?: () => void;'
+      return:
+        type:
+          - () => void
+  - uid: office-ui-fabric-react.IPanelProps.onRenderBody
+    summary: Optional custom renderer for body region. Replaces any children passed into the component.
+    name: onRenderBody
+    fullName: onRenderBody
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onRenderBody?: IRenderFunction<IPanelProps>;'
+      return:
+        type:
+          - IRenderFunction<IPanelProps>
+  - uid: office-ui-fabric-react.IPanelProps.onRenderFooter
+    summary: Optional custom renderer for footer region. Replaces sticky footer.
+    name: onRenderFooter
+    fullName: onRenderFooter
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onRenderFooter?: IRenderFunction<IPanelProps>;'
+      return:
+        type:
+          - IRenderFunction<IPanelProps>
+  - uid: office-ui-fabric-react.IPanelProps.onRenderFooterContent
+    summary: Custom renderer for content in the sticky footer
+    name: onRenderFooterContent
+    fullName: onRenderFooterContent
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onRenderFooterContent?: IRenderFunction<IPanelProps>;'
+      return:
+        type:
+          - IRenderFunction<IPanelProps>
+  - uid: office-ui-fabric-react.IPanelProps.onRenderHeader
+    summary: Optional custom renderer for header region. Replaces current title
+    name: onRenderHeader
+    fullName: onRenderHeader
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onRenderHeader?: IPanelHeaderRenderer;'
+      return:
+        type:
+          - office-ui-fabric-react.IPanelHeaderRenderer
+  - uid: office-ui-fabric-react.IPanelProps.onRenderNavigation
+    summary: Optional custom renderer navigation region. Replaces the region that contains the close button.
+    name: onRenderNavigation
+    fullName: onRenderNavigation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onRenderNavigation?: IRenderFunction<IPanelProps>;'
+      return:
+        type:
+          - IRenderFunction<IPanelProps>
+  - uid: office-ui-fabric-react.IPanelProps.onRenderNavigationContent
+    summary: Optional custom renderer for content in the navigation region. Replaces current close button.
+    name: onRenderNavigationContent
+    fullName: onRenderNavigationContent
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onRenderNavigationContent?: IRenderFunction<IPanelProps>;'
+      return:
+        type:
+          - IRenderFunction<IPanelProps>
+  - uid: office-ui-fabric-react.IPanelProps.styles
+    summary: Call to provide customized styling that will layer on top of the variant rules.
+    name: styles
+    fullName: styles
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'styles?: IStyleFunctionOrObject<IPanelStyleProps, IPanelStyles>;'
+      return:
+        type:
+          - 'IStyleFunctionOrObject<IPanelStyleProps, IPanelStyles>'
+  - uid: office-ui-fabric-react.IPanelProps.theme
+    summary: Theme provided by High-Order Component.
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type:
+          - styling.ITheme
+  - uid: office-ui-fabric-react.IPanelProps.type
+    summary: Type of the panel.
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type?: PanelType;'
+      return:
+        type:
+          - office-ui-fabric-react.PanelType

@@ -1,0 +1,63 @@
+### YamlMime:UniversalReference
+items:
+  - uid: utilities.IFitContentToBoundsOptions
+    summary: Options for fitting content sizes into bounding sizes.
+    name: IFitContentToBoundsOptions
+    fullName: IFitContentToBoundsOptions
+    langs:
+      - typeScript
+    type: interface
+    package: utilities
+    children:
+      - utilities.IFitContentToBoundsOptions.boundsSize
+      - utilities.IFitContentToBoundsOptions.contentSize
+      - utilities.IFitContentToBoundsOptions.maxScale
+      - utilities.IFitContentToBoundsOptions.mode
+  - uid: utilities.IFitContentToBoundsOptions.boundsSize
+    summary: The size of the bounds.
+    name: boundsSize
+    fullName: boundsSize
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'boundsSize: ISize;'
+      return:
+        type:
+          - utilities.ISize
+  - uid: utilities.IFitContentToBoundsOptions.contentSize
+    summary: The size of the content to fit to the bounds. The output will be proportional to this value.
+    name: contentSize
+    fullName: contentSize
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'contentSize: ISize;'
+      return:
+        type:
+          - utilities.ISize
+  - uid: utilities.IFitContentToBoundsOptions.maxScale
+    summary: An optional maximum scale factor to apply. The default is 1. Use Infinity for an unbounded resize.
+    name: maxScale
+    fullName: maxScale
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'maxScale?: number;'
+      return:
+        type:
+          - number
+  - uid: utilities.IFitContentToBoundsOptions.mode
+    summary: 'The fit mode to apply, either ''contain'' or ''cover''.'
+    name: mode
+    fullName: mode
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'mode: FitMode;'
+      return:
+        type:
+          - FitMode

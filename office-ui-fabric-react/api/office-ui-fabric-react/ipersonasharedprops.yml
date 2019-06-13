@@ -1,0 +1,333 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office-ui-fabric-react.IPersonaSharedProps
+    name: IPersonaSharedProps
+    fullName: IPersonaSharedProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'React.HTMLAttributes<PersonaBase | PersonaCoinBase | HTMLDivElement> '
+    package: office-ui-fabric-react
+    children:
+      - office-ui-fabric-react.IPersonaSharedProps.allowPhoneInitials
+      - office-ui-fabric-react.IPersonaSharedProps.coinProps
+      - office-ui-fabric-react.IPersonaSharedProps.coinSize
+      - office-ui-fabric-react.IPersonaSharedProps.hidePersonaDetails
+      - office-ui-fabric-react.IPersonaSharedProps.imageAlt
+      - office-ui-fabric-react.IPersonaSharedProps.imageInitials
+      - office-ui-fabric-react.IPersonaSharedProps.imageShouldFadeIn
+      - office-ui-fabric-react.IPersonaSharedProps.imageShouldStartVisible
+      - office-ui-fabric-react.IPersonaSharedProps.imageUrl
+      - office-ui-fabric-react.IPersonaSharedProps.initialsColor
+      - office-ui-fabric-react.IPersonaSharedProps.onPhotoLoadingStateChange
+      - office-ui-fabric-react.IPersonaSharedProps.onRenderCoin
+      - office-ui-fabric-react.IPersonaSharedProps.onRenderInitials
+      - office-ui-fabric-react.IPersonaSharedProps.optionalText
+      - office-ui-fabric-react.IPersonaSharedProps.presence
+      - office-ui-fabric-react.IPersonaSharedProps.primaryText
+      - office-ui-fabric-react.IPersonaSharedProps.secondaryText
+      - office-ui-fabric-react.IPersonaSharedProps.showInitialsUntilImageLoads
+      - office-ui-fabric-react.IPersonaSharedProps.showSecondaryText
+      - office-ui-fabric-react.IPersonaSharedProps.showUnknownPersonaCoin
+      - office-ui-fabric-react.IPersonaSharedProps.size
+      - office-ui-fabric-react.IPersonaSharedProps.tertiaryText
+      - office-ui-fabric-react.IPersonaSharedProps.text
+      - office-ui-fabric-react.IPersonaSharedProps.theme
+  - uid: office-ui-fabric-react.IPersonaSharedProps.allowPhoneInitials
+    summary: >-
+      Whether initials are calculated for phone numbers and number sequences. Example: Set property to true to get
+      initials for project names consisting of numbers only.
+    name: allowPhoneInitials
+    fullName: allowPhoneInitials
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'allowPhoneInitials?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-ui-fabric-react.IPersonaSharedProps.coinProps
+    summary: Optional HTML element props for Persona coin.
+    name: coinProps
+    fullName: coinProps
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'coinProps?: IPersonaCoinProps;'
+      return:
+        type:
+          - office-ui-fabric-react.IPersonaCoinProps
+  - uid: office-ui-fabric-react.IPersonaSharedProps.coinSize
+    summary: Optional custom persona coin size in pixel.
+    name: coinSize
+    fullName: coinSize
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'coinSize?: number;'
+      return:
+        type:
+          - number
+  - uid: office-ui-fabric-react.IPersonaSharedProps.hidePersonaDetails
+    summary: 'Whether to not render persona details, and just render the persona image/initials.'
+    name: hidePersonaDetails
+    fullName: hidePersonaDetails
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'hidePersonaDetails?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-ui-fabric-react.IPersonaSharedProps.imageAlt
+    summary: Alt text for the image to use. Defaults to an empty string.
+    name: imageAlt
+    fullName: imageAlt
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'imageAlt?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.IPersonaSharedProps.imageInitials
+    summary: The user's initials to display in the image area when there is no image.
+    name: imageInitials
+    fullName: imageInitials
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'imageInitials?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.IPersonaSharedProps.imageShouldFadeIn
+    summary: 'If true, adds the css class ''is-fadeIn'' to the image.'
+    name: imageShouldFadeIn
+    fullName: imageShouldFadeIn
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'imageShouldFadeIn?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-ui-fabric-react.IPersonaSharedProps.imageShouldStartVisible
+    summary: >-
+      If true, the image starts as visible and is hidden on error. Otherwise, the image is hidden until it is
+      successfully loaded. This disables imageShouldFadeIn.
+    name: imageShouldStartVisible
+    fullName: imageShouldStartVisible
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'imageShouldStartVisible?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-ui-fabric-react.IPersonaSharedProps.imageUrl
+    summary: 'Url to the image to use, should be a square aspect ratio and big enough to fit in the image area.'
+    name: imageUrl
+    fullName: imageUrl
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'imageUrl?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.IPersonaSharedProps.initialsColor
+    summary: The background color when the user's initials are displayed.
+    name: initialsColor
+    fullName: initialsColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'initialsColor?: PersonaInitialsColor | string;'
+      return:
+        type:
+          - PersonaInitialsColor | string
+  - uid: office-ui-fabric-react.IPersonaSharedProps.onPhotoLoadingStateChange
+    summary: Optional callback for when loading state of the photo changes
+    name: onPhotoLoadingStateChange
+    fullName: onPhotoLoadingStateChange
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onPhotoLoadingStateChange?: (newImageLoadState: ImageLoadState) => void;'
+      return:
+        type:
+          - '(newImageLoadState: ImageLoadState) => void'
+  - uid: office-ui-fabric-react.IPersonaSharedProps.onRenderCoin
+    summary: Optional custom renderer for the coin
+    name: onRenderCoin
+    fullName: onRenderCoin
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onRenderCoin?: IRenderFunction<IPersonaSharedProps>;'
+      return:
+        type:
+          - IRenderFunction<IPersonaSharedProps>
+  - uid: office-ui-fabric-react.IPersonaSharedProps.onRenderInitials
+    summary: Optional custom renderer for the initials
+    name: onRenderInitials
+    fullName: onRenderInitials
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onRenderInitials?: IRenderFunction<IPersonaSharedProps>;'
+      return:
+        type:
+          - IRenderFunction<IPersonaSharedProps>
+  - uid: office-ui-fabric-react.IPersonaSharedProps.optionalText
+    summary: 'Optional text to display, usually a custom message set. The optional text will only be shown when using Size100.'
+    name: optionalText
+    fullName: optionalText
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'optionalText?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.IPersonaSharedProps.presence
+    summary: Presence of the person to display - will not display presence if undefined.
+    name: presence
+    fullName: presence
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'presence?: PersonaPresence;'
+      return:
+        type:
+          - office-ui-fabric-react.PersonaPresence
+  - uid: office-ui-fabric-react.IPersonaSharedProps.primaryText
+    summary: 'Primary text to display, usually the name of the person.'
+    deprecated:
+      content: Use `text` instead.
+    name: primaryText
+    fullName: primaryText
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'primaryText?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.IPersonaSharedProps.secondaryText
+    summary: 'Secondary text to display, usually the role of the user.'
+    name: secondaryText
+    fullName: secondaryText
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'secondaryText?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.IPersonaSharedProps.showInitialsUntilImageLoads
+    summary: If true renders the initials while the image is loading. This only applies when an imageUrl is provided.
+    name: showInitialsUntilImageLoads
+    fullName: showInitialsUntilImageLoads
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showInitialsUntilImageLoads?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-ui-fabric-react.IPersonaSharedProps.showSecondaryText
+    name: showSecondaryText
+    fullName: showSecondaryText
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showSecondaryText?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-ui-fabric-react.IPersonaSharedProps.showUnknownPersonaCoin
+    summary: >-
+      If true, show the special coin for unknown persona. It has '?' in place of initials, with static font and
+      background colors
+    name: showUnknownPersonaCoin
+    fullName: showUnknownPersonaCoin
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showUnknownPersonaCoin?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-ui-fabric-react.IPersonaSharedProps.size
+    summary: Decides the size of the control.
+    name: size
+    fullName: size
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'size?: PersonaSize;'
+      return:
+        type:
+          - office-ui-fabric-react.PersonaSize
+  - uid: office-ui-fabric-react.IPersonaSharedProps.tertiaryText
+    summary: >-
+      Tertiary text to display, usually the status of the user. The tertiary text will only be shown when using Size72
+      or Size100.
+    name: tertiaryText
+    fullName: tertiaryText
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tertiaryText?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.IPersonaSharedProps.text
+    summary: 'Primary text to display, usually the name of the person.'
+    name: text
+    fullName: text
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'text?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.IPersonaSharedProps.theme
+    summary: Theme provided by High-Order Component.
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type:
+          - styling.ITheme

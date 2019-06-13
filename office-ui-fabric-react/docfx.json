@@ -1,0 +1,77 @@
+{
+  "build": {
+    "content": [
+      {
+        "files": [
+          "breadcrumb/toc.yml"
+        ],
+        "dest": "office-ui-fabric-react",
+        "group": "latest",
+        "version": "office-ui-fabric-react-latest"
+      },
+      {
+        "files": [
+          "**/toc.md",
+          "**/toc.yml"
+        ],
+        "src": "api",
+        "dest": "oufr-js-toc",
+        "group": "latest",
+        "version": "office-ui-fabric-react-latest"
+      },
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "_themes/**",
+          "_themes.pdf/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices",
+          "breadcrumb/**"
+        ],
+        "group": "latest",
+        "version": "office-ui-fabric-react-latest"
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "_themes/**",
+          "_themes.pdf/**",
+          "breadcrumb/**"
+        ],
+        "group": "latest"
+      }
+    ],
+    "overwrite": [],
+    "groups": {
+      "latest": {
+        "dest": "latest",
+        "moniker_range": "office-ui-fabric-react-latest"
+      }
+    },
+    "externalReference": [],
+    "globalMetadata": {
+      "breadcrumb_path": "/javascript/office-ui-fabric-react/breadcrumb/toc.json",
+      "extendBreadcrumb": true,
+      "feedback_system": "None",
+      "apiPlatform": "javascript"
+    },
+    "fileMetadata": {},
+    "template": [],
+    "dest": "office-ui-fabric-react",
+    "markdownEngineName": "markdig"
+  }
+}
