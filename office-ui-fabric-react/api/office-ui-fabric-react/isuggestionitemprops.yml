@@ -1,0 +1,171 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office-ui-fabric-react.ISuggestionItemProps
+    summary: >-
+      Suggestion item props. Refers to the each individual suggested items rendered within Suggestions callout. Type T
+      is the type of the item that is displayed.
+    name: ISuggestionItemProps
+    fullName: ISuggestionItemProps
+    langs:
+      - typeScript
+    type: interface
+    package: office-ui-fabric-react
+    children:
+      - office-ui-fabric-react.ISuggestionItemProps.className
+      - office-ui-fabric-react.ISuggestionItemProps.componentRef
+      - office-ui-fabric-react.ISuggestionItemProps.id
+      - office-ui-fabric-react.ISuggestionItemProps.isSelectedOverride
+      - office-ui-fabric-react.ISuggestionItemProps.onClick
+      - office-ui-fabric-react.ISuggestionItemProps.onRemoveItem
+      - office-ui-fabric-react.ISuggestionItemProps.removeButtonAriaLabel
+      - office-ui-fabric-react.ISuggestionItemProps.RenderSuggestion
+      - office-ui-fabric-react.ISuggestionItemProps.showRemoveButton
+      - office-ui-fabric-react.ISuggestionItemProps.styles
+      - office-ui-fabric-react.ISuggestionItemProps.suggestionModel
+      - office-ui-fabric-react.ISuggestionItemProps.theme
+  - uid: office-ui-fabric-react.ISuggestionItemProps.className
+    summary: Optional className for the root element of the suggestion item.
+    name: className
+    fullName: className
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'className?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.ISuggestionItemProps.componentRef
+    summary: >-
+      Optional callback to access the ISuggestionItem interface. Use this instead of ref for accessing the public
+      methods and properties of the component.
+    name: componentRef
+    fullName: componentRef
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'componentRef?: IRefObject<ISuggestionsItem>;'
+      return:
+        type:
+          - IRefObject<ISuggestionsItem>
+  - uid: office-ui-fabric-react.ISuggestionItemProps.id
+    summary: Unique id of the suggested item.
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.ISuggestionItemProps.isSelectedOverride
+    summary: An override for the 'selected' property of the SuggestionModel.
+    name: isSelectedOverride
+    fullName: isSelectedOverride
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isSelectedOverride?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-ui-fabric-react.ISuggestionItemProps.onClick
+    summary: Callback for when the user clicks on the suggestion.
+    name: onClick
+    fullName: onClick
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onClick: (ev: React.MouseEvent<HTMLButtonElement>) => void;'
+      return:
+        type:
+          - '(ev: React.MouseEvent<HTMLButtonElement>) => void'
+  - uid: office-ui-fabric-react.ISuggestionItemProps.onRemoveItem
+    summary: Callback for when the item is removed from the array of suggested items.
+    name: onRemoveItem
+    fullName: onRemoveItem
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onRemoveItem: (ev: React.MouseEvent<HTMLButtonElement>) => void;'
+      return:
+        type:
+          - '(ev: React.MouseEvent<HTMLButtonElement>) => void'
+  - uid: office-ui-fabric-react.ISuggestionItemProps.removeButtonAriaLabel
+    summary: The ARIA label for the button to remove the suggestion from the list.
+    name: removeButtonAriaLabel
+    fullName: removeButtonAriaLabel
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'removeButtonAriaLabel?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.ISuggestionItemProps.RenderSuggestion
+    summary: Optional renderer to override the default one for each type of picker.
+    name: RenderSuggestion
+    fullName: RenderSuggestion
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'RenderSuggestion: (item: T, suggestionItemProps?: ISuggestionItemProps<T>) => JSX.Element;'
+      return:
+        type:
+          - '(item: T, suggestionItemProps?: ISuggestionItemProps<T>) => JSX.Element'
+  - uid: office-ui-fabric-react.ISuggestionItemProps.showRemoveButton
+    summary: Whether the remove button should be rendered or not.
+    name: showRemoveButton
+    fullName: showRemoveButton
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showRemoveButton?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-ui-fabric-react.ISuggestionItemProps.styles
+    summary: Call to provide customized styling that will layer on top of the variant rules.
+    name: styles
+    fullName: styles
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'styles?: IStyleFunctionOrObject<ISuggestionsItemStyleProps, ISuggestionsItemStyles>;'
+      return:
+        type:
+          - 'IStyleFunctionOrObject<ISuggestionsItemStyleProps, ISuggestionsItemStyles>'
+  - uid: office-ui-fabric-react.ISuggestionItemProps.suggestionModel
+    summary: Individual suggestion object containing its properties.
+    name: suggestionModel
+    fullName: suggestionModel
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'suggestionModel: ISuggestionModel<T>;'
+      return:
+        type:
+          - ISuggestionModel<T>
+  - uid: office-ui-fabric-react.ISuggestionItemProps.theme
+    summary: Theme provided by High-Order Component.
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type:
+          - styling.ITheme

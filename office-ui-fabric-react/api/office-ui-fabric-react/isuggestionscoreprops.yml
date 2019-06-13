@@ -1,0 +1,157 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office-ui-fabric-react.ISuggestionsCoreProps
+    name: ISuggestionsCoreProps
+    fullName: ISuggestionsCoreProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'React.ClassAttributes<any> '
+    package: office-ui-fabric-react
+    children:
+      - office-ui-fabric-react.ISuggestionsCoreProps.componentRef
+      - office-ui-fabric-react.ISuggestionsCoreProps.onRenderSuggestion
+      - office-ui-fabric-react.ISuggestionsCoreProps.onSuggestionClick
+      - office-ui-fabric-react.ISuggestionsCoreProps.onSuggestionRemove
+      - office-ui-fabric-react.ISuggestionsCoreProps.resultsMaximumNumber
+      - office-ui-fabric-react.ISuggestionsCoreProps.shouldLoopSelection
+      - office-ui-fabric-react.ISuggestionsCoreProps.showRemoveButtons
+      - office-ui-fabric-react.ISuggestionsCoreProps.suggestions
+      - office-ui-fabric-react.ISuggestionsCoreProps.suggestionsAvailableAlertText
+      - office-ui-fabric-react.ISuggestionsCoreProps.suggestionsContainerAriaLabel
+      - office-ui-fabric-react.ISuggestionsCoreProps.suggestionsItemClassName
+  - uid: office-ui-fabric-react.ISuggestionsCoreProps.componentRef
+    summary: Gets the component ref.
+    name: componentRef
+    fullName: componentRef
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'componentRef?: IRefObject<{}>;'
+      return:
+        type:
+          - 'IRefObject<{}>'
+  - uid: office-ui-fabric-react.ISuggestionsCoreProps.onRenderSuggestion
+    summary: How the suggestion should look in the suggestion list.
+    name: onRenderSuggestion
+    fullName: onRenderSuggestion
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onRenderSuggestion?: (props: T, suggestionItemProps: T) => JSX.Element;'
+      return:
+        type:
+          - '(props: T, suggestionItemProps: T) => JSX.Element'
+  - uid: office-ui-fabric-react.ISuggestionsCoreProps.onSuggestionClick
+    summary: What should occur when a suggestion is clicked
+    name: onSuggestionClick
+    fullName: onSuggestionClick
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onSuggestionClick: (ev?: React.MouseEvent<HTMLElement>, item?: any, index?: number) => void;'
+      return:
+        type:
+          - '(ev?: React.MouseEvent<HTMLElement>, item?: any, index?: number) => void'
+  - uid: office-ui-fabric-react.ISuggestionsCoreProps.onSuggestionRemove
+    summary: Function to fire when one of the optional remove buttons on a suggestion is clicked.
+    name: onSuggestionRemove
+    fullName: onSuggestionRemove
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onSuggestionRemove?: (ev?: React.MouseEvent<HTMLElement>, item?: IPersonaProps, index?: number) => void;'
+      return:
+        type:
+          - '(ev?: React.MouseEvent<HTMLElement>, item?: IPersonaProps, index?: number) => void'
+  - uid: office-ui-fabric-react.ISuggestionsCoreProps.resultsMaximumNumber
+    summary: Maximum number of suggestions to show in the full suggestion list.
+    name: resultsMaximumNumber
+    fullName: resultsMaximumNumber
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'resultsMaximumNumber?: number;'
+      return:
+        type:
+          - number
+  - uid: office-ui-fabric-react.ISuggestionsCoreProps.shouldLoopSelection
+    summary: >-
+      Indicates whether to loop around to the top or bottom of the the suggestions on calling nextSuggestion and
+      previousSuggestion, respectively
+    name: shouldLoopSelection
+    fullName: shouldLoopSelection
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'shouldLoopSelection: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-ui-fabric-react.ISuggestionsCoreProps.showRemoveButtons
+    summary: Indicates whether to show a button with each suggestion to remove that suggestion.
+    name: showRemoveButtons
+    fullName: showRemoveButtons
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showRemoveButtons?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-ui-fabric-react.ISuggestionsCoreProps.suggestions
+    summary: The list of Suggestions that will be displayed
+    name: suggestions
+    fullName: suggestions
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'suggestions: ISuggestionModel<T>[];'
+      return:
+        type:
+          - 'ISuggestionModel<T>[]'
+  - uid: office-ui-fabric-react.ISuggestionsCoreProps.suggestionsAvailableAlertText
+    summary: Screen reader message to read when there are suggestions available.
+    name: suggestionsAvailableAlertText
+    fullName: suggestionsAvailableAlertText
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'suggestionsAvailableAlertText?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.ISuggestionsCoreProps.suggestionsContainerAriaLabel
+    summary: An ARIA label for the container that is the parent of the suggestions.
+    name: suggestionsContainerAriaLabel
+    fullName: suggestionsContainerAriaLabel
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'suggestionsContainerAriaLabel?: string;'
+      return:
+        type:
+          - string
+  - uid: office-ui-fabric-react.ISuggestionsCoreProps.suggestionsItemClassName
+    summary: the classname of the suggestionitem.
+    name: suggestionsItemClassName
+    fullName: suggestionsItemClassName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'suggestionsItemClassName?: string;'
+      return:
+        type:
+          - string

@@ -1,0 +1,313 @@
+### YamlMime:UniversalReference
+items:
+  - uid: utilities.Async
+    summary: >-
+      Bugs often appear in async code when stuff gets disposed, but async operations don't get canceled. This Async
+      helper class solves these issues by tying async code to the lifetime of a disposable object.
+
+
+      Usage: Anything class extending from BaseModel can access this helper via this.async. Otherwise create a new
+      instance of the class and remember to call dispose() during your code's dispose handler.
+    name: Async
+    fullName: Async
+    langs:
+      - typeScript
+    type: class
+    package: utilities
+    children:
+      - utilities.Async._logError
+      - utilities.Async.(constructor)
+      - utilities.Async.cancelAnimationFrame
+      - utilities.Async.clearImmediate
+      - utilities.Async.clearInterval
+      - utilities.Async.clearTimeout
+      - utilities.Async.debounce
+      - utilities.Async.dispose
+      - utilities.Async.requestAnimationFrame
+      - utilities.Async.setImmediate
+      - utilities.Async.setInterval
+      - utilities.Async.setTimeout
+      - utilities.Async.throttle
+  - uid: utilities.Async._logError
+    name: _logError(e)
+    fullName: _logError(e)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'protected _logError(e: any): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: e
+          description: ''
+          type:
+            - any
+  - uid: utilities.Async.(constructor)
+    summary: Constructs a new instance of the `Async` class
+    name: '(constructor)(parent, onError)'
+    fullName: '(constructor)(parent, onError)'
+    langs:
+      - typeScript
+    type: constructor
+    syntax:
+      content: 'constructor(parent?: object, onError?: (e: any) => void);'
+      parameters:
+        - id: parent
+          description: ''
+          type:
+            - object
+        - id: onError
+          description: ''
+          type:
+            - '(e: any) => void'
+  - uid: utilities.Async.cancelAnimationFrame
+    name: cancelAnimationFrame(id)
+    fullName: cancelAnimationFrame(id)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'cancelAnimationFrame(id: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: id
+          description: ''
+          type:
+            - number
+  - uid: utilities.Async.clearImmediate
+    summary: Clears the immediate.
+    name: clearImmediate(id)
+    fullName: clearImmediate(id)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clearImmediate(id: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: id
+          description: Id to cancel.
+          type:
+            - number
+  - uid: utilities.Async.clearInterval
+    summary: Clears the interval.
+    name: clearInterval(id)
+    fullName: clearInterval(id)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clearInterval(id: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: id
+          description: Id to cancel.
+          type:
+            - number
+  - uid: utilities.Async.clearTimeout
+    summary: Clears the timeout.
+    name: clearTimeout(id)
+    fullName: clearTimeout(id)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clearTimeout(id: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: id
+          description: Id to cancel.
+          type:
+            - number
+  - uid: utilities.Async.debounce
+    summary: >-
+      Creates a function that will delay the execution of func until after wait milliseconds have elapsed since the last
+      time it was invoked. Provide an options object to indicate that func should be invoked on the leading and/or
+      trailing edge of the wait timeout. Subsequent calls to the debounced function will return the result of the last
+      func call.
+
+
+      Note: If leading and trailing options are true func will be called on the trailing edge of the timeout only if the
+      the debounced function is invoked more than once during the wait timeout.
+    name: 'debounce(func, wait, options)'
+    fullName: 'debounce(func, wait, options)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        debounce<T extends Function>(func: T, wait?: number, options?: {
+                leading?: boolean;
+                maxWait?: number;
+                trailing?: boolean;
+            }): ICancelable<T> & (() => void);
+      return:
+        type:
+          - ICancelable<T> & (() => void)
+        description: The new debounced function.
+      parameters:
+        - id: func
+          description: The function to debounce.
+          type:
+            - T
+        - id: wait
+          description: The number of milliseconds to delay.
+          type:
+            - number
+        - id: options
+          description: The options object.
+          type:
+            - |-
+              {
+                      leading?: boolean;
+                      maxWait?: number;
+                      trailing?: boolean;
+                  }
+  - uid: utilities.Async.dispose
+    summary: 'Dispose function, clears all async operations.'
+    name: dispose()
+    fullName: dispose()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'dispose(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: utilities.Async.requestAnimationFrame
+    name: requestAnimationFrame(callback)
+    fullName: requestAnimationFrame(callback)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'requestAnimationFrame(callback: () => void): number;'
+      return:
+        type:
+          - number
+        description: ''
+      parameters:
+        - id: callback
+          description: ''
+          type:
+            - () => void
+  - uid: utilities.Async.setImmediate
+    summary: 'SetImmediate override, which will auto cancel the immediate during dispose.'
+    name: setImmediate(callback)
+    fullName: setImmediate(callback)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setImmediate(callback: () => void): number;'
+      return:
+        type:
+          - number
+        description: The setTimeout id.
+      parameters:
+        - id: callback
+          description: Callback to execute.
+          type:
+            - () => void
+  - uid: utilities.Async.setInterval
+    summary: 'SetInterval override, which will auto cancel the timeout during dispose.'
+    name: 'setInterval(callback, duration)'
+    fullName: 'setInterval(callback, duration)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setInterval(callback: () => void, duration: number): number;'
+      return:
+        type:
+          - number
+        description: The setTimeout id.
+      parameters:
+        - id: callback
+          description: Callback to execute.
+          type:
+            - () => void
+        - id: duration
+          description: Duration in milliseconds.
+          type:
+            - number
+  - uid: utilities.Async.setTimeout
+    summary: 'SetTimeout override, which will auto cancel the timeout during dispose.'
+    name: 'setTimeout(callback, duration)'
+    fullName: 'setTimeout(callback, duration)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setTimeout(callback: () => void, duration: number): number;'
+      return:
+        type:
+          - number
+        description: The setTimeout id.
+      parameters:
+        - id: callback
+          description: Callback to execute.
+          type:
+            - () => void
+        - id: duration
+          description: Duration in milliseconds.
+          type:
+            - number
+  - uid: utilities.Async.throttle
+    summary: >-
+      Creates a function that, when executed, will only call the func function at most once per every wait milliseconds.
+      Provide an options object to indicate that func should be invoked on the leading and/or trailing edge of the wait
+      timeout. Subsequent calls to the throttled function will return the result of the last func call.
+
+
+      Note: If leading and trailing options are true func will be called on the trailing edge of the timeout only if the
+      the throttled function is invoked more than once during the wait timeout.
+    name: 'throttle(func, wait, options)'
+    fullName: 'throttle(func, wait, options)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        throttle<T extends Function>(func: T, wait?: number, options?: {
+                leading?: boolean;
+                trailing?: boolean;
+            }): T | (() => void);
+      return:
+        type:
+          - T | (() => void)
+        description: The new throttled function.
+      parameters:
+        - id: func
+          description: The function to throttle.
+          type:
+            - T
+        - id: wait
+          description: The number of milliseconds to throttle executions to. Defaults to 0.
+          type:
+            - number
+        - id: options
+          description: The options object.
+          type:
+            - |-
+              {
+                      leading?: boolean;
+                      trailing?: boolean;
+                  }

@@ -1,0 +1,62 @@
+### YamlMime:UniversalReference
+items:
+  - uid: utilities.Customizer
+    summary: >-
+      The Customizer component allows for default props to be mixed into components which are decorated with the
+      customizable() decorator, or use the styled HOC. This enables injection scenarios like:
+
+
+      1. render svg icons instead of the icon font within all buttons 2. inject a custom theme object into a component
+
+
+      Props are provided via the settings prop which should be one of the following: - A json map which contains 1 or
+      more name/value pairs representing injectable props. - A function that receives the current settings and returns
+      the new ones that apply to the scope
+    name: Customizer
+    fullName: Customizer
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'React.Component<ICustomizerProps> '
+    package: utilities
+    children:
+      - utilities.Customizer.componentDidMount
+      - utilities.Customizer.componentWillUnmount
+      - utilities.Customizer.render
+  - uid: utilities.Customizer.componentDidMount
+    name: componentDidMount()
+    fullName: componentDidMount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'componentDidMount(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: utilities.Customizer.componentWillUnmount
+    name: componentWillUnmount()
+    fullName: componentWillUnmount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'componentWillUnmount(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: utilities.Customizer.render
+    name: render()
+    fullName: render()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'render(): React.ReactElement<{}>;'
+      return:
+        type:
+          - 'React.ReactElement<{}>'
+        description: ''

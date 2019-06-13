@@ -1,0 +1,236 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office-ui-fabric-react.DetailsListBase
+    name: DetailsListBase
+    fullName: DetailsListBase
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'BaseComponent<IDetailsListProps, IDetailsListState> '
+    implements:
+      - office-ui-fabric-react.IDetailsList
+    package: office-ui-fabric-react
+    children:
+      - office-ui-fabric-react.DetailsListBase._onRenderRow
+      - office-ui-fabric-react.DetailsListBase.(constructor)
+      - office-ui-fabric-react.DetailsListBase.componentDidUpdate
+      - office-ui-fabric-react.DetailsListBase.componentWillReceiveProps
+      - office-ui-fabric-react.DetailsListBase.componentWillUnmount
+      - office-ui-fabric-react.DetailsListBase.componentWillUpdate
+      - office-ui-fabric-react.DetailsListBase.defaultProps
+      - office-ui-fabric-react.DetailsListBase.focusIndex
+      - office-ui-fabric-react.DetailsListBase.forceUpdate
+      - office-ui-fabric-react.DetailsListBase.getStartItemIndexInView
+      - office-ui-fabric-react.DetailsListBase.render
+      - office-ui-fabric-react.DetailsListBase.scrollToIndex
+  - uid: office-ui-fabric-react.DetailsListBase._onRenderRow
+    name: _onRenderRow
+    fullName: _onRenderRow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        protected _onRenderRow: (props: IDetailsRowProps, defaultRender?: IRenderFunction<IDetailsRowProps> | undefined)
+        => JSX.Element;
+      return:
+        type:
+          - '(props: IDetailsRowProps, defaultRender?: IRenderFunction<IDetailsRowProps> | undefined) => JSX.Element'
+  - uid: office-ui-fabric-react.DetailsListBase.(constructor)
+    summary: Constructs a new instance of the `DetailsListBase` class
+    name: (constructor)(props)
+    fullName: (constructor)(props)
+    langs:
+      - typeScript
+    type: constructor
+    syntax:
+      content: 'constructor(props: IDetailsListProps);'
+      parameters:
+        - id: props
+          description: ''
+          type:
+            - office-ui-fabric-react.IDetailsListProps
+  - uid: office-ui-fabric-react.DetailsListBase.componentDidUpdate
+    name: 'componentDidUpdate(prevProps, prevState)'
+    fullName: 'componentDidUpdate(prevProps, prevState)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'componentDidUpdate(prevProps: IDetailsListProps, prevState: IDetailsListState): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: prevProps
+          description: ''
+          type:
+            - office-ui-fabric-react.IDetailsListProps
+        - id: prevState
+          description: ''
+          type:
+            - office-ui-fabric-react.IDetailsListState
+  - uid: office-ui-fabric-react.DetailsListBase.componentWillReceiveProps
+    name: componentWillReceiveProps(newProps)
+    fullName: componentWillReceiveProps(newProps)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'componentWillReceiveProps(newProps: IDetailsListProps): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: newProps
+          description: ''
+          type:
+            - office-ui-fabric-react.IDetailsListProps
+  - uid: office-ui-fabric-react.DetailsListBase.componentWillUnmount
+    name: componentWillUnmount()
+    fullName: componentWillUnmount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'componentWillUnmount(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: office-ui-fabric-react.DetailsListBase.componentWillUpdate
+    name: componentWillUpdate()
+    fullName: componentWillUpdate()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'componentWillUpdate(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: office-ui-fabric-react.DetailsListBase.defaultProps
+    name: defaultProps
+    fullName: defaultProps
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: |-
+        static defaultProps: {
+                layoutMode: DetailsListLayoutMode;
+                selectionMode: SelectionMode;
+                constrainMode: ConstrainMode;
+                checkboxVisibility: CheckboxVisibility;
+                isHeaderVisible: boolean;
+                enableShimmer: boolean;
+                compact: boolean;
+            };
+      return:
+        type:
+          - |-
+            {
+                    layoutMode: DetailsListLayoutMode;
+                    selectionMode: SelectionMode;
+                    constrainMode: ConstrainMode;
+                    checkboxVisibility: CheckboxVisibility;
+                    isHeaderVisible: boolean;
+                    enableShimmer: boolean;
+                    compact: boolean;
+                }
+  - uid: office-ui-fabric-react.DetailsListBase.focusIndex
+    name: 'focusIndex(index, forceIntoFirstElement, measureItem, scrollToMode)'
+    fullName: 'focusIndex(index, forceIntoFirstElement, measureItem, scrollToMode)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        focusIndex(index: number, forceIntoFirstElement?: boolean, measureItem?: (itemIndex: number) => number,
+        scrollToMode?: ScrollToMode): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: index
+          description: ''
+          type:
+            - number
+        - id: forceIntoFirstElement
+          description: ''
+          type:
+            - boolean
+        - id: measureItem
+          description: ''
+          type:
+            - '(itemIndex: number) => number'
+        - id: scrollToMode
+          description: ''
+          type:
+            - ScrollToMode
+  - uid: office-ui-fabric-react.DetailsListBase.forceUpdate
+    name: forceUpdate()
+    fullName: forceUpdate()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'forceUpdate(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: office-ui-fabric-react.DetailsListBase.getStartItemIndexInView
+    name: getStartItemIndexInView()
+    fullName: getStartItemIndexInView()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getStartItemIndexInView(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: office-ui-fabric-react.DetailsListBase.render
+    name: render()
+    fullName: render()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'render(): JSX.Element;'
+      return:
+        type:
+          - JSX.Element
+        description: ''
+  - uid: office-ui-fabric-react.DetailsListBase.scrollToIndex
+    name: 'scrollToIndex(index, measureItem, scrollToMode)'
+    fullName: 'scrollToIndex(index, measureItem, scrollToMode)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'scrollToIndex(index: number, measureItem?: (itemIndex: number) => number, scrollToMode?: ScrollToMode): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: index
+          description: ''
+          type:
+            - number
+        - id: measureItem
+          description: ''
+          type:
+            - '(itemIndex: number) => number'
+        - id: scrollToMode
+          description: ''
+          type:
+            - ScrollToMode
