@@ -218,10 +218,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'errorMessage?: string;'
+      content: 'errorMessage?: string | JSX.Element;'
       return:
         type:
-          - string
+          - string | JSX.Element
   - uid: office-ui-fabric-react.ITextFieldProps.iconClass
     deprecated:
       content: Use `iconProps` instead.
@@ -377,22 +377,22 @@ items:
       with the static string `errorMessage` (it will take precedence over this).
 
 
-      When it returns string: - If valid, it returns empty string. - If invalid, it returns the error message string and
-      the text field will show a red border and show an error message below the text field.
+      When it returns string \| JSX.Element: - If valid, it returns empty string. - If invalid, it returns the error
+      message and the text field will show a red border and show an error message below the text field.
 
 
-      When it returns Promise<string>: - The resolved value is displayed as the error message. - If rejected, the value
-      is thrown away.
+      When it returns Promise<!-- -->&lt;<!-- -->string \| JSX.Element<!-- -->&gt;<!-- -->: - The resolved value is
+      displayed as the error message. - If rejected, the value is thrown away.
     name: onGetErrorMessage
     fullName: onGetErrorMessage
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'onGetErrorMessage?: (value: string) => string | PromiseLike<string> | undefined;'
+      content: 'onGetErrorMessage?: (value: string) => string | JSX.Element | PromiseLike<string | JSX.Element> | undefined;'
       return:
         type:
-          - '(value: string) => string | PromiseLike<string> | undefined'
+          - '(value: string) => string | JSX.Element | PromiseLike<string | JSX.Element> | undefined'
   - uid: office-ui-fabric-react.ITextFieldProps.onNotifyValidationResult
     summary: Function called after validation completes.
     name: onNotifyValidationResult
@@ -401,10 +401,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'onNotifyValidationResult?: (errorMessage: string, value: string | undefined) => void;'
+      content: 'onNotifyValidationResult?: (errorMessage: string | JSX.Element, value: string | undefined) => void;'
       return:
         type:
-          - '(errorMessage: string, value: string | undefined) => void'
+          - '(errorMessage: string | JSX.Element, value: string | undefined) => void'
   - uid: office-ui-fabric-react.ITextFieldProps.onRenderAddon
     deprecated:
       content: Use `onRenderPrefix` instead.

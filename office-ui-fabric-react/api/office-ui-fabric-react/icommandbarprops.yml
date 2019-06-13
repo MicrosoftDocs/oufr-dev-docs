@@ -150,10 +150,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'onReduceData?: (data: ICommandBarData) => ICommandBarData;'
+      content: 'onReduceData?: (data: ICommandBarData) => ICommandBarData | undefined;'
       return:
         type:
-          - '(data: ICommandBarData) => ICommandBarData'
+          - '(data: ICommandBarData) => ICommandBarData | undefined'
   - uid: office-ui-fabric-react.ICommandBarProps.overflowButtonAs
     summary: Custom button to be used as oveflow button
     name: overflowButtonAs
