@@ -1,3 +1,4 @@
+import * as path from 'path';
 import { IYamlTocItem } from '@microsoft/api-documenter/lib/yaml/IYamlTocFile';
 import { FileSystem, JsonFile } from '@microsoft/node-core-library';
 import * as Mustache from 'mustache';
@@ -123,18 +124,18 @@ const categories = {
   // Other: {}
 };
 
-const CONFIG_PATH = '../config/api-documenter.json';
+const CONFIG_PATH = path.resolve(__dirname, '..', 'config', 'api-documenter.json');
 
 const TOC_EXAMPLE_FILES_PATH = '~/docs/examples';
 const TOC_OVERVIEW_FILES_PATH = '~/docs/overviews';
 
-const EXAMPLE_FILES_FOLDER = '../office-ui-fabric-react/docs/examples';
-const OVERVIEW_FILES_FOLDER = '../office-ui-fabric-react/docs/overviews';
+const EXAMPLE_FILES_FOLDER = path.resolve(__dirname, '..', 'office-ui-fabric-react', 'docs', 'examples');
+const OVERVIEW_FILES_FOLDER = path.resolve(__dirname, '..', 'office-ui-fabric-react', 'docs', 'overviews');
 
-const EXAMPLE_TEMPLATE_PATH = '../src/ExampleMarkdown.mustache';
-const OVERVIEW_TEMPLATE_PATH = '../src/Overview.mustache';
+const EXAMPLE_TEMPLATE_PATH = path.resolve(__dirname, '..', 'src', 'ExampleMarkdown.mustache');
+const OVERVIEW_TEMPLATE_PATH = path.resolve(__dirname, '..', 'src', 'Overview.mustache');
 
-const DOCS_FILES_PATH = '../node_modules/office-ui-fabric-react/src/components';
+const DOCS_FILES_PATH = path.resolve(__dirname, '..', 'node_modules', 'office-ui-fabric-react', 'src', 'components');
 
 interface ITocConfig {
   items: IYamlTocItem[];
