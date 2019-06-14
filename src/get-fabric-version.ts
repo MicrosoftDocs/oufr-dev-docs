@@ -27,4 +27,4 @@ if (!fabricPackageJsonFilePath) {
 }
 
 const fabricPackageJsonFile: IPackageJson = packageJsonLookup.loadPackageJson(fabricPackageJsonFilePath);
-FileSystem.writeFile(resolvedOutputPath, fabricPackageJsonFile.version, { ensureFolderExists: true });
+FileSystem.writeFile(resolvedOutputPath, `${fabricPackageJsonFile.version}\n`, { ensureFolderExists: true });
