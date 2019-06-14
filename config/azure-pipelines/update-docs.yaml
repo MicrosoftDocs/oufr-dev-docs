@@ -21,34 +21,39 @@ steps:
     verbose: false
     customCommand: run build
 
-- task: Npm@1
-  displayName: 'npm custom'
-  inputs:
-    command: custom
-    verbose: false
-    customCommand: run generateConfig
-
 - script: >
     node
-    node_modules/.bin/api-documenter
-    generate
-    --output-folder $(Build.ArtifactStagingDirectory)/api
-  displayName: Run API Documenter
+    lib/start.js
+    $(Build.ArtifactStagingDirectory)/doc-files/docs
+  displayName: Generate examples and API Documenter Config
 
-- task: PublishBuildArtifacts@1
-  displayName: 'Publish Artifact: api'
-  inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)/api'
-    ArtifactName: API-DOCS
-
-- script: >
+  - script: >
     node
     lib/get-fabric-version.js
     $(Build.ArtifactStagingDirectory)/FABRIC_VERSION
   displayName: Get OUFR Version
 
+- script: >
+    node
+    node_modules/.bin/api-documenter
+    generate
+    --output-folder $(Build.ArtifactStagingDirectory)/doc-files/api
+  displayName: Run API Documenter
+
+- task: CopyFiles@2
+  displayName: 'Copy static doc data'
+  inputs:
+    SourceFolder: 'static-doc-data'
+    TargetFolder: $(Build.ArtifactStagingDirectory)/doc-files/
+
 - task: PublishBuildArtifacts@1
-  displayName: 'Publish Artifact: api'
+  displayName: 'Publish Artifact: DOC-FILES'
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)/doc-files'
+    ArtifactName: DOC-FILES
+
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Artifact: FABRIC-VERSION'
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)/FABRIC_VERSION'
     ArtifactName: FABRIC_VERSION

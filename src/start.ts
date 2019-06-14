@@ -3,6 +3,16 @@ import { IYamlTocItem } from '@microsoft/api-documenter/lib/yaml/IYamlTocFile';
 import { FileSystem, JsonFile } from '@microsoft/node-core-library';
 import * as Mustache from 'mustache';
 
+const [nodePath, scriptPath, docsOutputPath]: Array<(string | undefined)> = process.argv;
+
+if (!docsOutputPath) {
+  throw new Error('Must specify a docs output path as the first argument to this script');
+}
+
+if (!path.isAbsolute(docsOutputPath)) {
+  throw new Error('The docs output path must be absolute');
+}
+
 const categories = {
   'Basic Inputs': {
     Button: {},
@@ -129,8 +139,8 @@ const CONFIG_PATH = path.resolve(__dirname, '..', 'config', 'api-documenter.json
 const TOC_EXAMPLE_FILES_PATH = '~/docs/examples';
 const TOC_OVERVIEW_FILES_PATH = '~/docs/overviews';
 
-const EXAMPLE_FILES_FOLDER = path.resolve(__dirname, '..', 'office-ui-fabric-react', 'docs', 'examples');
-const OVERVIEW_FILES_FOLDER = path.resolve(__dirname, '..', 'office-ui-fabric-react', 'docs', 'overviews');
+const EXAMPLE_FILES_FOLDER = path.resolve(docsOutputPath, 'examples');
+const OVERVIEW_FILES_FOLDER = path.resolve(docsOutputPath, 'overviews');
 
 const EXAMPLE_TEMPLATE_PATH = path.resolve(__dirname, '..', 'src', 'ExampleMarkdown.mustache');
 const OVERVIEW_TEMPLATE_PATH = path.resolve(__dirname, '..', 'src', 'Overview.mustache');
@@ -370,11 +380,11 @@ function writeExampleFile(componentName: string, componentUrl: string, fileLocat
 /**
  * Helper function to aid in reading the markdown files needed for Overview pages and not to throw in case it doesn't exist.
  */
-function readMarkdownFile(path: string): string {
+function readMarkdownFile(markdownFilePath: string): string {
   try {
-    return FileSystem.readFile(path);
+    return FileSystem.readFile(markdownFilePath);
   } catch (error) {
-    console.log('Can not find a file at path:' + path);
+    console.log(`Can not find a file at path: ${markdownFilePath}`);
   }
   return '';
 }
