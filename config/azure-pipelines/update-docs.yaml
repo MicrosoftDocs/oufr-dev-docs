@@ -27,7 +27,7 @@ steps:
     $(Build.ArtifactStagingDirectory)/doc-files/docs
   displayName: Generate examples and API Documenter Config
 
-  - script: >
+- script: >
     node
     lib/get-fabric-version.js
     $(Build.ArtifactStagingDirectory)/FABRIC_VERSION
