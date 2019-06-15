@@ -1,11 +1,7 @@
-import {
-  FileSystem,
-  IPackageJson,
-  PackageJsonLookup
-} from '@microsoft/node-core-library';
+import { FileSystem, IPackageJson, PackageJsonLookup } from '@microsoft/node-core-library';
 import * as path from 'path';
 
-const [nodePath, scriptPath, outputPath]: Array<(string | undefined)> = process.argv;
+const [nodePath, scriptPath, outputPath]: Array<string | undefined> = process.argv;
 
 if (!outputPath) {
   throw new Error('Must specify an output path as the first argument to this script');
@@ -19,7 +15,7 @@ const resolvedOutputPath: string = path.resolve(outputPath);
 
 const packageJsonLookup: PackageJsonLookup = new PackageJsonLookup();
 const fabricPackageJsonFilePath: string | undefined = packageJsonLookup.tryGetPackageJsonFilePathFor(
-  require.resolve('office-ui-fabric-react')
+  require.resolve('office-ui-fabric-react'),
 );
 
 if (!fabricPackageJsonFilePath) {

@@ -1,9 +1,9 @@
-import * as path from 'path';
 import { IYamlTocItem } from '@microsoft/api-documenter/lib/yaml/IYamlTocFile';
 import { FileSystem, JsonFile } from '@microsoft/node-core-library';
 import * as Mustache from 'mustache';
+import * as path from 'path';
 
-const [nodePath, scriptPath, docsOutputPath]: Array<(string | undefined)> = process.argv;
+const [nodePath, scriptPath, docsOutputPath]: Array<string | undefined> = process.argv;
 
 if (!docsOutputPath) {
   throw new Error('Must specify a docs output path as the first argument to this script');
@@ -134,13 +134,15 @@ const categories = {
   // Other: {}
 };
 
+const TOC_EXAMPLE_URL = '~/docs/examples';
+const TOC_OVERVIEW_URL = '~/docs/overviews';
+
+const URL_NORMALIZE_PART = '(https://developer.microsoft.com/en-us/fabric#/';
+
 const CONFIG_PATH = path.resolve(__dirname, '..', 'config', 'api-documenter.json');
 
-const TOC_EXAMPLE_FILES_PATH = '~/docs/examples';
-const TOC_OVERVIEW_FILES_PATH = '~/docs/overviews';
-
-const EXAMPLE_FILES_FOLDER = path.resolve(docsOutputPath, 'examples');
-const OVERVIEW_FILES_FOLDER = path.resolve(docsOutputPath, 'overviews');
+const EXAMPLE_FILES_FOLDER_PATH = path.resolve(docsOutputPath, 'examples');
+const OVERVIEW_FILES_FOLDER_PATH = path.resolve(docsOutputPath, 'overviews');
 
 const EXAMPLE_TEMPLATE_PATH = path.resolve(__dirname, '..', 'src', 'ExampleMarkdown.mustache');
 const OVERVIEW_TEMPLATE_PATH = path.resolve(__dirname, '..', 'src', 'Overview.mustache');
@@ -172,10 +174,10 @@ function generateConfig(categoriesSource: any) {
   delete categoriesSource['Other'];
 
   // Cleaning up the examples and overviews folders
-  console.log('Deleting old examples from ' + EXAMPLE_FILES_FOLDER);
-  FileSystem.ensureEmptyFolder(EXAMPLE_FILES_FOLDER);
-  console.log('Deleting old overviews from ' + OVERVIEW_FILES_FOLDER);
-  FileSystem.ensureEmptyFolder(OVERVIEW_FILES_FOLDER);
+  console.log('Deleting old examples from ' + EXAMPLE_FILES_FOLDER_PATH);
+  FileSystem.ensureEmptyFolder(EXAMPLE_FILES_FOLDER_PATH);
+  console.log('Deleting old overviews from ' + OVERVIEW_FILES_FOLDER_PATH);
+  FileSystem.ensureEmptyFolder(OVERVIEW_FILES_FOLDER_PATH);
   console.log('----------------------------------------------------------');
   console.log();
 
@@ -266,22 +268,26 @@ function injectOverview(topCategoryItem: string, itemReference: IYamlTocItem): v
 
   // Content of all 3 files Overview, Dos and Donts that we want to concatenate in one file
   const overview: string =
-    readMarkdownFile(`${itemPath}/${resolveSpecialCases(topCategoryItem)}Overview.md`) || 'Coming soon...';
-  const dos: string = readMarkdownFile(`${itemPath}/${resolveSpecialCases(topCategoryItem)}Dos.md`) || 'Coming soon...';
+    normalizeContentUrls(readMarkdownFile(`${itemPath}/${resolveSpecialCases(topCategoryItem)}Overview.md`)) ||
+    'Coming soon...';
+  const dos: string =
+    normalizeContentUrls(readMarkdownFile(`${itemPath}/${resolveSpecialCases(topCategoryItem)}Dos.md`)) ||
+    'Coming soon...';
   const donts: string =
-    readMarkdownFile(`${itemPath}/${resolveSpecialCases(topCategoryItem)}Donts.md`) || 'Coming soon...';
+    normalizeContentUrls(readMarkdownFile(`${itemPath}/${resolveSpecialCases(topCategoryItem)}Donts.md`)) ||
+    'Coming soon...';
 
   const overviewTemplate: string = FileSystem.readFile(OVERVIEW_TEMPLATE_PATH);
   const fileData: string = Mustache.render(overviewTemplate, { overview, dos, donts });
 
   try {
-    FileSystem.writeFile(`${OVERVIEW_FILES_FOLDER}/${topCategoryItem}Overview.md`, fileData, {
+    FileSystem.writeFile(`${OVERVIEW_FILES_FOLDER_PATH}/${topCategoryItem}Overview.md`, fileData, {
       ensureFolderExists: true,
     });
 
     itemReference.items!.push({
       name: 'Overview',
-      href: `${TOC_OVERVIEW_FILES_PATH}/${topCategoryItem}Overview.md`,
+      href: `${TOC_OVERVIEW_URL}/${topCategoryItem}Overview.md`,
     });
   } catch (error) {
     console.log(error);
@@ -317,7 +323,7 @@ function injectExamples(
       if (writingFinished) {
         examplesNodeReference.items!.push({
           name: 'Details List',
-          href: `${TOC_EXAMPLE_FILES_PATH}/${itemNameNormalized}/detailslist.md`,
+          href: `${TOC_EXAMPLE_URL}/${itemNameNormalized}/detailslist.md`,
         });
       }
     }
@@ -338,7 +344,7 @@ function injectExamples(
         if (writingFinished) {
           examplesNodeReference.items!.push({
             name,
-            href: `${TOC_EXAMPLE_FILES_PATH}/${itemNameNormalized}/${pathAndUrl}.md`,
+            href: `${TOC_EXAMPLE_URL}/${itemNameNormalized}/${pathAndUrl}.md`,
           });
         }
       }
@@ -353,7 +359,7 @@ function injectExamples(
     if (writingFinished) {
       itemReference.items!.push({
         name: `${topCategoryItem} Examples`,
-        href: `${TOC_EXAMPLE_FILES_PATH}/${itemNameNormalized}.md`,
+        href: `${TOC_EXAMPLE_URL}/${itemNameNormalized}.md`,
       });
     }
   }
@@ -367,7 +373,7 @@ function writeExampleFile(componentName: string, componentUrl: string, fileLocat
   const fileData: string = Mustache.render(exampleTemplate, { componentName, componentUrl });
 
   try {
-    FileSystem.writeFile(`${EXAMPLE_FILES_FOLDER}/${fileLocationPath || componentUrl}.md`, fileData, {
+    FileSystem.writeFile(`${EXAMPLE_FILES_FOLDER_PATH}/${fileLocationPath || componentUrl}.md`, fileData, {
       ensureFolderExists: true,
     });
     return true;
@@ -391,7 +397,7 @@ function readMarkdownFile(markdownFilePath: string): string {
 
 /**
  * Helper function to resolve some special cases for the path of the markdown files needed for Overview pages.
- * TODO: might need to revisit this idea and replace it with something similar to https://www.npmjs.com/package/require-context
+ * TODO: might need to revisit this idea and replace it with something similar to https://www.npmjs.com/package/glob
  * but for the moment using as a bandage :)
  */
 function resolveSpecialCases(topCategoryItem: string, fullPath?: string): string {
@@ -414,6 +420,11 @@ function resolveSpecialCases(topCategoryItem: string, fullPath?: string): string
   }
 
   return fullPath || topCategoryItem;
+}
+
+function normalizeContentUrls(content: string): string {
+  if (!content) return content;
+  return content.replace(/(\(#\/)/gi, URL_NORMALIZE_PART);
 }
 
 // Start generation.
