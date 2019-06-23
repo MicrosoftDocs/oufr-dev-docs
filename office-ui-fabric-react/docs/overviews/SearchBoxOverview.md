@@ -2,8 +2,6 @@
 SearchBoxes provide an input field for searching through content, allowing users to locate specific items within the website or app.
 
 
-# Best Practices
-
 ## Do &#10003;
 - Use placeholder text in the SearchBox to describe what users can search for.
 - Example: &quot;Search&quot;; &quot;Search files&quot;; &quot;Search site&quot;

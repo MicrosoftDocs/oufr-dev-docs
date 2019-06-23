@@ -264,6 +264,7 @@ items:
       - merge-styles.IRawStyleBase.WebkitBackdropFilter
       - merge-styles.IRawStyleBase.WebkitFontSmoothing
       - merge-styles.IRawStyleBase.WebkitOverflowScrolling
+      - merge-styles.IRawStyleBase.WebkitTapHighlightColor
       - merge-styles.IRawStyleBase.whiteSpace
       - merge-styles.IRawStyleBase.widows
       - merge-styles.IRawStyleBase.width
@@ -707,10 +708,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'borderBottomLeftRadius?: ICSSRule | string;'
+      content: 'borderBottomLeftRadius?: ICSSRule | ICSSPixelUnitRule;'
       return:
         type:
-          - ICSSRule | string
+          - ICSSRule | ICSSPixelUnitRule
   - uid: merge-styles.IRawStyleBase.borderBottomRightRadius
     summary: Defines the shape of the border of the bottom-right corner.
     name: borderBottomRightRadius
@@ -719,10 +720,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'borderBottomRightRadius?: ICSSRule | string;'
+      content: 'borderBottomRightRadius?: ICSSRule | ICSSPixelUnitRule;'
       return:
         type:
-          - ICSSRule | string
+          - ICSSRule | ICSSPixelUnitRule
   - uid: merge-styles.IRawStyleBase.borderBottomStyle
     summary: Sets the line style of the bottom border of a box.
     name: borderBottomStyle
@@ -1023,10 +1024,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'borderTopLeftRadius?: ICSSRule | string;'
+      content: 'borderTopLeftRadius?: ICSSRule | ICSSPixelUnitRule;'
       return:
         type:
-          - ICSSRule | string
+          - ICSSRule | ICSSPixelUnitRule
   - uid: merge-styles.IRawStyleBase.borderTopRightRadius
     summary: Sets the rounding of the top-right corner of the element.
     name: borderTopRightRadius
@@ -1035,10 +1036,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'borderTopRightRadius?: ICSSRule | string;'
+      content: 'borderTopRightRadius?: ICSSRule | ICSSPixelUnitRule;'
       return:
         type:
-          - ICSSRule | string
+          - ICSSRule | ICSSPixelUnitRule
   - uid: merge-styles.IRawStyleBase.borderTopStyle
     summary: >-
       Sets the style of an element's top border. To set all four borders, use the shorthand property, border-style.
@@ -3783,6 +3784,18 @@ items:
       return:
         type:
           - '''auto'' | ''touch'''
+  - uid: merge-styles.IRawStyleBase.WebkitTapHighlightColor
+    summary: (Webkit specific) color of the highlight that appears overa link while it's being tapped
+    name: WebkitTapHighlightColor
+    fullName: WebkitTapHighlightColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'WebkitTapHighlightColor?: string;'
+      return:
+        type:
+          - string
   - uid: merge-styles.IRawStyleBase.whiteSpace
     summary: >-
       The white-space property controls whether and how white space inside the element is collapsed, and whether lines

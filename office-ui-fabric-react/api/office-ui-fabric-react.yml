@@ -50,6 +50,7 @@ items:
       - office-ui-fabric-react.ContextualMenuBase
       - office-ui-fabric-react.ContextualMenuItemBase
       - office-ui-fabric-react.ContextualMenuItemType
+      - office-ui-fabric-react.correctHex
       - office-ui-fabric-react.correctHSV
       - office-ui-fabric-react.correctRGB
       - office-ui-fabric-react.createGenericItem
@@ -83,12 +84,14 @@ items:
       - office-ui-fabric-react.FocusTrapZone
       - office-ui-fabric-react.FocusZone
       - office-ui-fabric-react.FocusZoneDirection
+      - office-ui-fabric-react.getAllSelectedOptions
       - office-ui-fabric-react.getBackgroundShade
       - office-ui-fabric-react.getColorFromHSV
       - office-ui-fabric-react.getColorFromRGBA
       - office-ui-fabric-react.getColorFromString
       - office-ui-fabric-react.getContrastRatio
       - office-ui-fabric-react.getFullColorString
+      - office-ui-fabric-react.getPersonaInitialsColor
       - office-ui-fabric-react.getShade
       - office-ui-fabric-react.getSubmenuItems
       - office-ui-fabric-react.GridCell
@@ -430,7 +433,6 @@ items:
       - office-ui-fabric-react.INavState
       - office-ui-fabric-react.INavStyleProps
       - office-ui-fabric-react.INavStyles
-      - office-ui-fabric-react.IObjectWithKey
       - office-ui-fabric-react.IOverflowSet
       - office-ui-fabric-react.IOverflowSetItemProps
       - office-ui-fabric-react.IOverflowSetProps
@@ -463,7 +465,6 @@ items:
       - office-ui-fabric-react.IPersonaCoinStyleProps
       - office-ui-fabric-react.IPersonaCoinStyles
       - office-ui-fabric-react.IPersonaPresenceProps
-      - office-ui-fabric-react.IPersonaPresenceStyleProps
       - office-ui-fabric-react.IPersonaPresenceStyles
       - office-ui-fabric-react.IPersonaProps
       - office-ui-fabric-react.IPersonaSharedProps
@@ -518,8 +519,6 @@ items:
       - office-ui-fabric-react.ISelectedItemProps
       - office-ui-fabric-react.ISelectedPeopleItemProps
       - office-ui-fabric-react.ISelectedPeopleProps
-      - office-ui-fabric-react.ISelection
-      - office-ui-fabric-react.ISelectionOptions
       - office-ui-fabric-react.ISelectionZone
       - office-ui-fabric-react.ISelectionZoneProps
       - office-ui-fabric-react.ISeparator
@@ -601,7 +600,6 @@ items:
       - office-ui-fabric-react.ITeachingBubbleSubComponentStyles
       - office-ui-fabric-react.ITextField
       - office-ui-fabric-react.ITextFieldProps
-      - office-ui-fabric-react.ITextFieldState
       - office-ui-fabric-react.ITextFieldStyles
       - office-ui-fabric-react.ITextFieldSubComponentStyles
       - office-ui-fabric-react.ITextProps
@@ -677,9 +675,6 @@ items:
       - office-ui-fabric-react.SelectableOptionMenuItemType
       - office-ui-fabric-react.SelectAllVisibility
       - office-ui-fabric-react.SelectedPeopleList
-      - office-ui-fabric-react.Selection
-      - office-ui-fabric-react.SelectionDirection
-      - office-ui-fabric-react.SelectionMode
       - office-ui-fabric-react.SelectionZone
       - office-ui-fabric-react.SemanticColorSlots
       - office-ui-fabric-react.Shade
@@ -724,7 +719,6 @@ items:
       - office-ui-fabric-react.updateRGB
       - office-ui-fabric-react.updateSV
       - office-ui-fabric-react.ValidationState
-      - office-ui-fabric-react.ValuePosition
       - office-ui-fabric-react.VirtualizedComboBox
   - uid: office-ui-fabric-react.buildColumns
     name: >-
@@ -818,6 +812,26 @@ items:
           description: ''
           type:
             - number
+  - uid: office-ui-fabric-react.correctHex
+    summary: >-
+      Corrects a hex color to have length 3 or 6. Defaults to white if too short. Does NOT check anything besides the
+      length (such as valid characters) and does NOT handle hex values starting with \# sign.
+    name: correctHex(hex)
+    fullName: correctHex(hex)
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export declare function correctHex(hex: string): string;'
+      return:
+        type:
+          - string
+        description: ''
+      parameters:
+        - id: hex
+          description: ''
+          type:
+            - string
   - uid: office-ui-fabric-react.correctHSV
     summary: Corrects an HSV color to fall within the valid range.
     name: correctHSV(color)
@@ -924,6 +938,29 @@ items:
           description: ''
           type:
             - string
+  - uid: office-ui-fabric-react.getAllSelectedOptions
+    name: 'getAllSelectedOptions(options, selectedIndices)'
+    fullName: 'getAllSelectedOptions(options, selectedIndices)'
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: >-
+        export declare function getAllSelectedOptions(options: ISelectableOption[], selectedIndices: number[]):
+        ISelectableOption[];
+      return:
+        type:
+          - 'ISelectableOption[]'
+        description: ''
+      parameters:
+        - id: options
+          description: ''
+          type:
+            - 'ISelectableOption[]'
+        - id: selectedIndices
+          description: ''
+          type:
+            - 'number[]'
   - uid: office-ui-fabric-react.getBackgroundShade
     name: 'getBackgroundShade(color, shade, isInverted)'
     fullName: 'getBackgroundShade(color, shade, isInverted)'
@@ -1057,6 +1094,28 @@ items:
           description: ''
           type:
             - office-ui-fabric-react.IColor
+  - uid: office-ui-fabric-react.getPersonaInitialsColor
+    summary: >-
+      Gets the hex color string (prefixed with \#) for the given persona props. This is the logic used internally by the
+      Persona control.
+    name: getPersonaInitialsColor(props)
+    fullName: getPersonaInitialsColor(props)
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: >-
+        export declare function getPersonaInitialsColor(props: Pick<IPersonaProps, 'primaryText' | 'text' |
+        'initialsColor'>): string;
+      return:
+        type:
+          - string
+        description: 'Hex color string prefixed with \#'
+      parameters:
+        - id: props
+          description: Current persona props
+          type:
+            - 'Pick<IPersonaProps, ''primaryText'' | ''text'' | ''initialsColor''>'
   - uid: office-ui-fabric-react.getShade
     summary: >-
       Given a color and a shade specification, generates the requested shade of the color. Logic: if white darken via
@@ -2262,8 +2321,6 @@ references:
     name: INavStyleProps
   - uid: office-ui-fabric-react.INavStyles
     name: INavStyles
-  - uid: office-ui-fabric-react.IObjectWithKey
-    name: IObjectWithKey
   - uid: office-ui-fabric-react.IOverflowSet
     name: IOverflowSet
   - uid: office-ui-fabric-react.IOverflowSetItemProps
@@ -2328,8 +2385,6 @@ references:
     name: IPersonaCoinStyles
   - uid: office-ui-fabric-react.IPersonaPresenceProps
     name: IPersonaPresenceProps
-  - uid: office-ui-fabric-react.IPersonaPresenceStyleProps
-    name: IPersonaPresenceStyleProps
   - uid: office-ui-fabric-react.IPersonaPresenceStyles
     name: IPersonaPresenceStyles
   - uid: office-ui-fabric-react.IPersonaProps
@@ -2436,10 +2491,6 @@ references:
     name: ISelectedPeopleItemProps
   - uid: office-ui-fabric-react.ISelectedPeopleProps
     name: ISelectedPeopleProps
-  - uid: office-ui-fabric-react.ISelection
-    name: ISelection
-  - uid: office-ui-fabric-react.ISelectionOptions
-    name: ISelectionOptions
   - uid: office-ui-fabric-react.ISelectionZone
     name: ISelectionZone
   - uid: office-ui-fabric-react.ISelectionZoneProps
@@ -2598,8 +2649,6 @@ references:
     name: ITextField
   - uid: office-ui-fabric-react.ITextFieldProps
     name: ITextFieldProps
-  - uid: office-ui-fabric-react.ITextFieldState
-    name: ITextFieldState
   - uid: office-ui-fabric-react.ITextFieldStyles
     name: ITextFieldStyles
   - uid: office-ui-fabric-react.ITextFieldSubComponentStyles
@@ -2746,12 +2795,6 @@ references:
     name: SelectAllVisibility
   - uid: office-ui-fabric-react.SelectedPeopleList
     name: SelectedPeopleList
-  - uid: office-ui-fabric-react.Selection
-    name: Selection
-  - uid: office-ui-fabric-react.SelectionDirection
-    name: SelectionDirection
-  - uid: office-ui-fabric-react.SelectionMode
-    name: SelectionMode
   - uid: office-ui-fabric-react.SelectionZone
     name: SelectionZone
   - uid: office-ui-fabric-react.SemanticColorSlots
@@ -2830,7 +2873,5 @@ references:
     name: TooltipOverflowMode
   - uid: office-ui-fabric-react.ValidationState
     name: ValidationState
-  - uid: office-ui-fabric-react.ValuePosition
-    name: ValuePosition
   - uid: office-ui-fabric-react.VirtualizedComboBox
     name: VirtualizedComboBox

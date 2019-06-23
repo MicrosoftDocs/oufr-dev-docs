@@ -3,8 +3,6 @@ An image is a graphic representation of something (e.g photo or illustration). T
 
 
 
-# Best Practices
-
 ## Do &#10003;
 - Provide descriptive values for the alt text attribute for all images.
 If alt text isn&#39;t provided for images, the image information is inaccessible, for example, to people who cannot see and use a screen reader that reads aloud the information on a page.

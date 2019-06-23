@@ -7,7 +7,7 @@ items:
       - typeScript
     type: interface
     extends:
-      - office-ui-fabric-react.IStackSlots
+      - ISlottableProps<IStackSlots>
       - 'IStyleableComponentProps<IStackProps, IStackTokens, IStackStyles>'
       - 'React.HTMLAttributes<HTMLElement> '
     package: office-ui-fabric-react
@@ -53,6 +53,8 @@ items:
     summary: >-
       Defines the spacing between Stack children. The property is specified as a value for 'row gap', followed
       optionally by a value for 'column gap'. If 'column gap' is omitted, it's set to the same value as 'row gap'.
+    deprecated:
+      content: Use 'childrenGap' token instead.
     name: gap
     fullName: gap
     langs:
@@ -101,6 +103,8 @@ items:
           - Alignment
   - uid: office-ui-fabric-react.IStackProps.maxHeight
     summary: Defines the maximum height that the Stack can take.
+    deprecated:
+      content: Use 'maxHeight' token instead.
     name: maxHeight
     fullName: maxHeight
     langs:
@@ -113,6 +117,8 @@ items:
           - number | string
   - uid: office-ui-fabric-react.IStackProps.maxWidth
     summary: Defines the maximum width that the Stack can take.
+    deprecated:
+      content: Use 'maxWidth' token instead.
     name: maxWidth
     fullName: maxWidth
     langs:
@@ -125,6 +131,8 @@ items:
           - number | string
   - uid: office-ui-fabric-react.IStackProps.padding
     summary: Defines the inner padding of the Stack.
+    deprecated:
+      content: Use 'padding' token instead.
     name: padding
     fullName: padding
     langs:

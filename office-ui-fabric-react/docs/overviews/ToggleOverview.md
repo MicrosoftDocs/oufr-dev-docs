@@ -10,8 +10,6 @@ For some actions, either a Toggle or a Checkbox might work. To decide which cont
 - Use a Checkbox when the user has to perform extra steps for changes to be effective. For example, if the user must click a &quot;Submit&quot;, &quot;Next&quot;, &quot;Ok&quot; button to apply changes, use a Checkbox.
 
 
-# Best Practices
-
 ## Do &#10003;
 - Only replace the On and Off labels if there are more specific labels for the setting. If there are short (3-4 characters) labels that represent binary opposites that are more appropriate for a particular setting, use them. For example, you might use &quot;Show&#x2F;Hide&quot; if the setting is &quot;Show images.&quot;
 - Let the label serve as the aria-label for the Toggle if possible. If necessary, set an aria-label that describes the ON action of the Toggle (e.g., Show images) and let the metadata (i.e., aria-checked) tell the screen reader the state.

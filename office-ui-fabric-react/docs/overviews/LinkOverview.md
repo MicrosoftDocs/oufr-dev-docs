@@ -5,8 +5,6 @@ A Link is the lightest weight clickable control, and is often used to reduce the
 
 
 
-# Best Practices
-
 ## Do &#10003;
 - Use to navigate to another page, window, or help topic; display a definition; initiate a command; or choose an option.
 - Make Links discoverable by visual inspection alone. Users shouldn&#39;t have to interact with your program to find links.

@@ -18,8 +18,6 @@ Available attributes:
 
 
 
-# Best Practices
-
 ## Do &#10003;
 Coming soon...
 

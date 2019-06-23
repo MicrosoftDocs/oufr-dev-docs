@@ -6,8 +6,6 @@ items:
     langs:
       - typeScript
     type: interface
-    extends:
-      - 'IBaseProps<IColorSlider> '
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.IColorSliderProps.className
@@ -16,7 +14,6 @@ items:
       - office-ui-fabric-react.IColorSliderProps.maxValue
       - office-ui-fabric-react.IColorSliderProps.minValue
       - office-ui-fabric-react.IColorSliderProps.onChange
-      - office-ui-fabric-react.IColorSliderProps.onChanged
       - office-ui-fabric-react.IColorSliderProps.overlayStyle
       - office-ui-fabric-react.IColorSliderProps.styles
       - office-ui-fabric-react.IColorSliderProps.theme
@@ -94,20 +91,6 @@ items:
       return:
         type:
           - '(event: React.MouseEvent<HTMLElement>, newValue?: number) => void'
-  - uid: office-ui-fabric-react.IColorSliderProps.onChanged
-    summary: 'Deprecated, use `onChange` instead.'
-    deprecated:
-      content: Use `onChange` instead.
-    name: onChanged
-    fullName: onChanged
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'onChanged?: (newValue: number) => void;'
-      return:
-        type:
-          - '(newValue: number) => void'
   - uid: office-ui-fabric-react.IColorSliderProps.overlayStyle
     summary: Custom style for the overlay element.
     name: overlayStyle

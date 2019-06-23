@@ -13,8 +13,6 @@ Real-world examples include copying files to a storage location, saving edits to
 
 
 
-# Best Practices
-
 ## Do &#10003;
 - Use a ProgressIndicator when the total units to completion is known
 - Display operation description

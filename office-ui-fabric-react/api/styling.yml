@@ -48,7 +48,7 @@ items:
     type: function
     syntax:
       content: |-
-        export declare function buildClassMap<T>(styles: T): {
+        export declare function buildClassMap<T extends Object>(styles: T): {
             [key in keyof T]?: string;
         };
       return:
@@ -190,18 +190,13 @@ items:
             - string
   - uid: styling.getFocusStyle
     summary: 'Generates a focus style which can be used to define an :after focus border.'
-    deprecated:
-      content: Use the object parameter version instead.
-    name: 'getFocusStyle(theme, inset, position, highContrastStyle, borderColor, outlineColor, isFocusedOnly)'
-    fullName: 'getFocusStyle(theme, inset, position, highContrastStyle, borderColor, outlineColor, isFocusedOnly)'
+    name: 'getFocusStyle(theme, options)'
+    fullName: 'getFocusStyle(theme, options)'
     langs:
       - typeScript
     type: function
     syntax:
-      content: >-
-        export declare function getFocusStyle(theme: ITheme, inset?: number, position?: 'relative' | 'absolute',
-        highContrastStyle?: IRawStyle | undefined, borderColor?: string, outlineColor?: string, isFocusedOnly?:
-        boolean): IRawStyle;
+      content: 'export declare function getFocusStyle(theme: ITheme, options?: IGetFocusStylesOptions): IRawStyle;'
       return:
         type:
           - merge-styles.IRawStyle
@@ -211,32 +206,10 @@ items:
           description: The theme object to use.
           type:
             - styling.ITheme
-        - id: inset
-          description: The number of pixels to inset the border.
+        - id: options
+          description: Options to customize the focus border.
           type:
-            - number
-        - id: position
-          description: >-
-            The positioning applied to the container. Must be 'relative' or 'absolute' so that the focus border can live
-            around it.
-          type:
-            - '''relative'' | ''absolute'''
-        - id: highContrastStyle
-          description: Style for high contrast mode.
-          type:
-            - IRawStyle | undefined
-        - id: borderColor
-          description: Color of the border.
-          type:
-            - string
-        - id: outlineColor
-          description: Color of the outline.
-          type:
-            - string
-        - id: isFocusedOnly
-          description: If the styles should apply on focus or not.
-          type:
-            - boolean
+            - styling.IGetFocusStylesOptions
   - uid: styling.getGlobalClassNames
     summary: >-
       Checks for the `disableGlobalClassNames` property on the `theme` to determine if it should return `classNames`

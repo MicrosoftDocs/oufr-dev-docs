@@ -5,11 +5,9 @@ When considering their place in a layout, contemplate the order in which a user 
 
 While buttons can technically be used to navigate a user to another part of the experience, this is not recommended unless that navigation is part of an action or their flow.
 
-Note that both &#x60;iconProps&#x60; and &#x60;menuIconProps&#x60; take [&#x60;IIconProps&#x60;](#&#x2F;controls&#x2F;web&#x2F;icon) to specify icon name and type.
+Note that both &#x60;iconProps&#x60; and &#x60;menuIconProps&#x60; take [&#x60;IIconProps&#x60;](https:&#x2F;&#x2F;developer.microsoft.com&#x2F;en-us&#x2F;fabric#&#x2F;controls&#x2F;web&#x2F;icon) to specify icon name and type.
 
 
-
-# Best Practices
 
 ## Do &#10003;
 - Make sure the label conveys a clear purpose of the button to the user.

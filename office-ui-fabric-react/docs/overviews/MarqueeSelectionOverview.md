@@ -11,8 +11,6 @@ previous state until we know definitively if it&#39;s on&#x2F;off. (In other wor
 
 
 
-# Best Practices
-
 ## Do &#10003;
 Coming soon...
 

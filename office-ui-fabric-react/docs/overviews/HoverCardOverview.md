@@ -8,8 +8,6 @@ Two scenarios to consider for your own use case from an accessibility point of v
 
 
 
-# Best Practices
-
 ## Do &#10003;
 Coming soon...
 

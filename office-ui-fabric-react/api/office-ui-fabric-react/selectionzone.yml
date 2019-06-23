@@ -7,7 +7,7 @@ items:
       - typeScript
     type: class
     extends:
-      - ''
+      - 'BaseComponent<ISelectionZoneProps, {}> '
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.SelectionZone.componentDidMount
@@ -35,7 +35,6 @@ items:
     syntax:
       content: |-
         static defaultProps: {
-                isMultiSelectEnabled: boolean;
                 isSelectedOnFocus: boolean;
                 selectionMode: SelectionMode;
             };
@@ -43,7 +42,6 @@ items:
         type:
           - |-
             {
-                    isMultiSelectEnabled: boolean;
                     isSelectedOnFocus: boolean;
                     selectionMode: SelectionMode;
                 }

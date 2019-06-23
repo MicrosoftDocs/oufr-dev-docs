@@ -5,8 +5,6 @@ in the product.
 They should be contextual whenever possible, or related to something that will make existing user flows more efficient.
 
 
-# Best Practices
-
 ## Do &#10003;
 - Only one Coachmark + TeachingBubble combo should be displayed at a time
 - Coachmarks can be stand alone or sequential. Sequential Coachmarks should be used sparingly, to walk through complex multi-step interactions. It is recommended that a sequence of Coachmarks does not exceed 3 steps.

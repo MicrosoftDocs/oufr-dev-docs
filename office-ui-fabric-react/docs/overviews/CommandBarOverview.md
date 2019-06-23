@@ -24,8 +24,6 @@ commands should go into an overflow where text labels can be shown.
 
 
 
-# Best Practices
-
 ## Do &#10003;
 - Sort commands in order of importance from left to right or right to left depending on the culture.
 - Organize commands into logical groupings.

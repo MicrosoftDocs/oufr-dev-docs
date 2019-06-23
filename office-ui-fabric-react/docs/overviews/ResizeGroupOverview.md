@@ -9,8 +9,6 @@ There is a boolean context property (isMeasured) added to let child components k
 
 
 
-# Best Practices
-
 ## Do &#10003;
 - Ensure the width of the parent of this component has a fixed width that does not depend on the dimensions of it&#39;s children. Failure to do so may result in ResizeGroup attempting to fill a width of 0px.
 - Ensure that result of rendering the data returned by onReduceData is actually smaller than the previous data.

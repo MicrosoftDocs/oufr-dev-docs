@@ -12,8 +12,6 @@ In order for ellipsis on overflow to work properly, &#x60;block&#x60; should be 
 Both of these props are false by default.
 
 
-# Best Practices
-
 ## Do &#10003;
 - Use Text to display read-only text that inherits styling from ITheme.
 

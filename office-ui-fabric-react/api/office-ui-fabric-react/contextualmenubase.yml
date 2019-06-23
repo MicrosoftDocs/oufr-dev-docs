@@ -18,6 +18,7 @@ items:
       - office-ui-fabric-react.ContextualMenuBase.defaultProps
       - office-ui-fabric-react.ContextualMenuBase.dismiss
       - office-ui-fabric-react.ContextualMenuBase.render
+      - office-ui-fabric-react.ContextualMenuBase.shouldComponentUpdate
   - uid: office-ui-fabric-react.ContextualMenuBase.(constructor)
     summary: Constructs a new instance of the `ContextualMenuBase` class
     name: (constructor)(props)
@@ -119,3 +120,24 @@ items:
         type:
           - JSX.Element | null
         description: ''
+  - uid: office-ui-fabric-react.ContextualMenuBase.shouldComponentUpdate
+    name: 'shouldComponentUpdate(newProps, newState)'
+    fullName: 'shouldComponentUpdate(newProps, newState)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'shouldComponentUpdate(newProps: IContextualMenuProps, newState: IContextualMenuState): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+      parameters:
+        - id: newProps
+          description: ''
+          type:
+            - office-ui-fabric-react.IContextualMenuProps
+        - id: newState
+          description: ''
+          type:
+            - office-ui-fabric-react.IContextualMenuState

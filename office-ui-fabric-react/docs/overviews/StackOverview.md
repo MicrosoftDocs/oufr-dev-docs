@@ -19,8 +19,6 @@ Stacks can be nested inside one another in order to be able to configure the lay
 
 
 
-# Best Practices
-
 ## Do &#10003;
 - Use anywhere you would use flexbox.
 - Take into account that Stack functionality will degrade if used on non-supported browsers.

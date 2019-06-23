@@ -2,8 +2,6 @@
 ScrollablePane is a helper component designed to use in conjunction with a Sticky component.  Sticky components will &quot;stick&quot; to the top or bottom of a ScrollablePane&#39;s scrollable region and remain visible.  ScrollablePane requires a height or max-height set either on the component itself, or on the immediate parent element.
 
 
-# Best Practices
-
 ## Do &#10003;
 - ScrollablePane uses &#x60;position: absolute&#x60;.  Ensure that the parent element has an explicit &#x60;height&#x60; and &#x60;position: relative&#x60;, or has space already allocated for ScrollablePane (e.g: flexbox).
 - Use Sticky component on block level elements

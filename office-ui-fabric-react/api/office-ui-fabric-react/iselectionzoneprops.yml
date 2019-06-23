@@ -21,6 +21,7 @@ items:
       - office-ui-fabric-react.ISelectionZoneProps.selectionMode
       - office-ui-fabric-react.ISelectionZoneProps.selectionPreservedOnEmptyClick
   - uid: office-ui-fabric-react.ISelectionZoneProps.componentRef
+    summary: Reference to the component interface.
     name: componentRef
     fullName: componentRef
     langs:
@@ -32,6 +33,7 @@ items:
         type:
           - () => void
   - uid: office-ui-fabric-react.ISelectionZoneProps.disableAutoSelectOnInputElements
+    summary: 'If true, disables automatic selection on input elements.'
     name: disableAutoSelectOnInputElements
     fullName: disableAutoSelectOnInputElements
     langs:
@@ -43,6 +45,7 @@ items:
         type:
           - boolean
   - uid: office-ui-fabric-react.ISelectionZoneProps.enterModalOnTouch
+    summary: 'If true, modal selection is enabled on touch event.'
     name: enterModalOnTouch
     fullName: enterModalOnTouch
     langs:
@@ -54,6 +57,7 @@ items:
         type:
           - boolean
   - uid: office-ui-fabric-react.ISelectionZoneProps.isSelectedOnFocus
+    summary: Determines if an item is selected on focus.
     name: isSelectedOnFocus
     fullName: isSelectedOnFocus
     langs:
@@ -66,7 +70,7 @@ items:
           - boolean
   - uid: office-ui-fabric-react.ISelectionZoneProps.layout
     deprecated:
-      content: 'No longer in use, focus is now managed by FocusZone'
+      content: 'No longer in use, focus is now managed by [FocusZone](xref:office-ui-fabric-react.FocusZone)<!-- -->.'
     name: layout
     fullName: layout
     langs:
@@ -78,6 +82,7 @@ items:
         type:
           - '{}'
   - uid: office-ui-fabric-react.ISelectionZoneProps.onItemContextMenu
+    summary: Optional callback for when an item's contextual menu action occurs.
     name: onItemContextMenu
     fullName: onItemContextMenu
     langs:
@@ -89,6 +94,7 @@ items:
         type:
           - '(item?: any, index?: number, ev?: Event) => void | boolean'
   - uid: office-ui-fabric-react.ISelectionZoneProps.onItemInvoked
+    summary: Optional callback for when an item is invoked via ENTER or double-click.
     name: onItemInvoked
     fullName: onItemInvoked
     langs:
@@ -100,6 +106,7 @@ items:
         type:
           - '(item?: IObjectWithKey, index?: number, ev?: Event) => void'
   - uid: office-ui-fabric-react.ISelectionZoneProps.selection
+    summary: 'Required  instance bound to the [SelectionZone](xref:office-ui-fabric-react.SelectionZone)<!-- -->.'
     name: selection
     fullName: selection
     langs:
@@ -109,8 +116,9 @@ items:
       content: 'selection: ISelection;'
       return:
         type:
-          - office-ui-fabric-react.ISelection
+          - utilities.ISelection
   - uid: office-ui-fabric-react.ISelectionZoneProps.selectionMode
+    summary: 'The mode of Selection, where the value is one of ''none'', ''single'', or ''multiple''.'
     name: selectionMode
     fullName: selectionMode
     langs:
@@ -120,8 +128,9 @@ items:
       content: 'selectionMode?: SelectionMode;'
       return:
         type:
-          - office-ui-fabric-react.SelectionMode
+          - utilities.SelectionMode
   - uid: office-ui-fabric-react.ISelectionZoneProps.selectionPreservedOnEmptyClick
+    summary: 'If true, selection is preserved on outer click.'
     name: selectionPreservedOnEmptyClick
     fullName: selectionPreservedOnEmptyClick
     langs:

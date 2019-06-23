@@ -1,5 +1,5 @@
 # Overview
-DetailsList is a derivative of the [List](#&#x2F;controls&#x2F;web&#x2F;list) component. It is a robust way to display an information rich collection of items. It can support powerful ways to aid a user in finding content with sorting, grouping and filtering. Lists are a great way to handle large amounts of content, but poorly designed Lists can be difficult to parse.
+DetailsList is a derivative of the [List](https:&#x2F;&#x2F;developer.microsoft.com&#x2F;en-us&#x2F;fabric#&#x2F;controls&#x2F;web&#x2F;list) component. It is a robust way to display an information rich collection of items. It can support powerful ways to aid a user in finding content with sorting, grouping and filtering. Lists are a great way to handle large amounts of content, but poorly designed Lists can be difficult to parse.
 
 Use a DetailsList when density of information is critical. Lists can support single and multiple selection, as well as drag and drop and marquee selection. They are composed of a column header, which contains the metadata fields which are attached to the list items, and provide the ability to sort, filter and even group the list. List items are composed of selection, icon, and name columns at minimum. One can also include other columns such as Date Modified, or any other metadata field associated with the collection. Place the most important columns from left to right for ease of recall and comparison.
 
@@ -38,8 +38,6 @@ public render(): JSX.Element {
 By re-creating the items array without mutating the values, the inner List will correctly determine its contents have changed and that it should re-render the new values.
 
 
-
-# Best Practices
 
 ## Do &#10003;
 - Use them to display content.

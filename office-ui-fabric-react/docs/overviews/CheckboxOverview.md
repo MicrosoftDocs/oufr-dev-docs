@@ -10,8 +10,6 @@ For a binary choice, the main difference between a Checkbox and a toggle switch 
 Use multiple Checkboxes for multi-select scenarios in which a user chooses one or more items from a group of choices that are not mutually exclusive.
 
 
-# Best Practices
-
 ## Do &#10003;
 - Allow users to choose any combination of options when several Checkboxes are grouped together.
 

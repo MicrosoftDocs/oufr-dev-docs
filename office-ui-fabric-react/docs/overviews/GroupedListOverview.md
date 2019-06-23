@@ -29,8 +29,6 @@ By re-creating the items array without mutating the values, the inner List will 
 
 
 
-# Best Practices
-
 ## Do &#10003;
 Coming soon...
 

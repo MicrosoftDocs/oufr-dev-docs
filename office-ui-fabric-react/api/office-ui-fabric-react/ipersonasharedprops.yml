@@ -20,6 +20,7 @@ items:
       - office-ui-fabric-react.IPersonaSharedProps.imageShouldStartVisible
       - office-ui-fabric-react.IPersonaSharedProps.imageUrl
       - office-ui-fabric-react.IPersonaSharedProps.initialsColor
+      - office-ui-fabric-react.IPersonaSharedProps.isOutOfOffice
       - office-ui-fabric-react.IPersonaSharedProps.onPhotoLoadingStateChange
       - office-ui-fabric-react.IPersonaSharedProps.onRenderCoin
       - office-ui-fabric-react.IPersonaSharedProps.onRenderInitials
@@ -158,6 +159,20 @@ items:
       return:
         type:
           - PersonaInitialsColor | string
+  - uid: office-ui-fabric-react.IPersonaSharedProps.isOutOfOffice
+    summary: >-
+      This flag can be used to signal the persona is out of office. This will change the way the presence icon looks for
+      statuses that support dual-presence.
+    name: isOutOfOffice
+    fullName: isOutOfOffice
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isOutOfOffice?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: office-ui-fabric-react.IPersonaSharedProps.onPhotoLoadingStateChange
     summary: Optional callback for when loading state of the photo changes
     name: onPhotoLoadingStateChange

@@ -7,8 +7,6 @@ Organize commands in groups divided by rules. This helps users remember command 
 
 
 
-# Best Practices
-
 ## Do &#10003;
 - Use to display commands.
 - Divide groups of commands with rules.

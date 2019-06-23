@@ -10,10 +10,8 @@ items:
     children:
       - office-ui-fabric-react.INavProps.ariaLabel
       - office-ui-fabric-react.INavProps.className
-      - office-ui-fabric-react.INavProps.collapsedStateText
       - office-ui-fabric-react.INavProps.componentRef
       - office-ui-fabric-react.INavProps.expandButtonAriaLabel
-      - office-ui-fabric-react.INavProps.expandedStateText
       - office-ui-fabric-react.INavProps.groups
       - office-ui-fabric-react.INavProps.initialSelectedKey
       - office-ui-fabric-react.INavProps.isOnTop
@@ -49,20 +47,6 @@ items:
       return:
         type:
           - string
-  - uid: office-ui-fabric-react.INavProps.collapsedStateText
-    summary: Deprecated at v0.68.1 and will be removed at &gt;<!-- -->= v1.0.0.
-    deprecated:
-      content: Removed at v1.0.0.
-    name: collapsedStateText
-    fullName: collapsedStateText
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'collapsedStateText?: string;'
-      return:
-        type:
-          - string
   - uid: office-ui-fabric-react.INavProps.componentRef
     summary: >-
       Optional callback to access the INav interface. Use this instead of ref for accessing the public methods and
@@ -78,7 +62,9 @@ items:
         type:
           - IRefObject<INav>
   - uid: office-ui-fabric-react.INavProps.expandButtonAriaLabel
-    summary: (Optional) The nav container aria label.
+    summary: >-
+      (Optional) The nav container aria label. The link name is prepended to this label. If not provided, the aria label
+      will default to the link name.
     name: expandButtonAriaLabel
     fullName: expandButtonAriaLabel
     langs:
@@ -86,20 +72,6 @@ items:
     type: property
     syntax:
       content: 'expandButtonAriaLabel?: string;'
-      return:
-        type:
-          - string
-  - uid: office-ui-fabric-react.INavProps.expandedStateText
-    summary: Deprecated at v0.68.1 and will be removed at &gt;<!-- -->= v1.0.0.
-    deprecated:
-      content: Removed at v1.0.0.
-    name: expandedStateText
-    fullName: expandedStateText
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'expandedStateText?: string;'
       return:
         type:
           - string

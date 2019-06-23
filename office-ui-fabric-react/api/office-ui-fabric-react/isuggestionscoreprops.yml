@@ -41,10 +41,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'onRenderSuggestion?: (props: T, suggestionItemProps: T) => JSX.Element;'
+      content: 'onRenderSuggestion?: (props: T, suggestionItemProps: ISuggestionItemProps<T>) => JSX.Element;'
       return:
         type:
-          - '(props: T, suggestionItemProps: T) => JSX.Element'
+          - '(props: T, suggestionItemProps: ISuggestionItemProps<T>) => JSX.Element'
   - uid: office-ui-fabric-react.ISuggestionsCoreProps.onSuggestionClick
     summary: What should occur when a suggestion is clicked
     name: onSuggestionClick

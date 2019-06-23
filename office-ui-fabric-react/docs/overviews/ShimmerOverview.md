@@ -5,8 +5,6 @@ If a smooth transition from Shimmer to content is desired, wrap the content node
 
 
 
-# Best Practices
-
 ## Do &#10003;
 
 - Use shimmer to help ease a UI transition when we know the service will potentially take a longer amount of time to retrieve the data.

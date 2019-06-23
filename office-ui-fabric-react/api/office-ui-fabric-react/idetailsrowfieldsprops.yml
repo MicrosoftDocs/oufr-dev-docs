@@ -18,7 +18,6 @@ items:
       - office-ui-fabric-react.IDetailsRowFieldsProps.item
       - office-ui-fabric-react.IDetailsRowFieldsProps.itemIndex
       - office-ui-fabric-react.IDetailsRowFieldsProps.rowClassNames
-      - office-ui-fabric-react.IDetailsRowFieldsProps.shimmer
   - uid: office-ui-fabric-react.IDetailsRowFieldsProps.cellStyleProps
     summary: Style properties to customize cell render output.
     name: cellStyleProps
@@ -103,8 +102,6 @@ items:
         rowClassNames: {
                 isMultiline: string;
                 isRowHeader: string;
-                shimmerIconPlaceholder: string;
-                shimmer: string;
                 cell: string;
                 cellPadded: string;
                 cellUnpadded: string;
@@ -116,26 +113,8 @@ items:
             {
                     isMultiline: string;
                     isRowHeader: string;
-                    shimmerIconPlaceholder: string;
-                    shimmer: string;
                     cell: string;
                     cellPadded: string;
                     cellUnpadded: string;
                     fields: string;
                 }
-  - uid: office-ui-fabric-react.IDetailsRowFieldsProps.shimmer
-    summary: Whether to show shimmer
-    deprecated:
-      content: >-
-        Use `ShimmeredDetailsList` instead:
-        https://developer.microsoft.com/en-us/fabric\#/components/detailslist/shimmer
-    name: shimmer
-    fullName: shimmer
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'shimmer?: boolean;'
-      return:
-        type:
-          - boolean

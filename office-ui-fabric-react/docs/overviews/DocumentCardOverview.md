@@ -2,8 +2,6 @@
 A DocumentCard is a card representation of a file. This is usually richer than just seeing the file in a grid view, as the card can contain additional metadata or actions.
 
 
-# Best Practices
-
 ## Do &#10003;
 - Use this control to represent Office documents or other user-relevant files in aggregate views, such as when you are showing the user’s most trending document.
 - Incorporate metadata that is relevant and useful in this particular view. A card can be specialized to be about the document’s latest changes, or about the document’s popularity, as you see fit.

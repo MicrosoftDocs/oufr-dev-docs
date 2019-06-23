@@ -7,8 +7,6 @@ If there are only two mutually exclusive options, combine them into a single Che
 
 
 
-# Best Practices
-
 ## Do &#10003;
 - Use when there are 2-7 options, if you have enough screen space and the options are important enough to be a good use of that screen space. Otherwise, use a Checkbox or Dropdown list.
 - Use on wizard pages to make the alternatives clear, even if a Checkbox is otherwise acceptable.

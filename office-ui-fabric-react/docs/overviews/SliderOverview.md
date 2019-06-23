@@ -5,8 +5,6 @@ A Slider is a good choice when you know that users think of the value as a relat
 
 
 
-# Best Practices
-
 ## Do &#10003;
 - Consider a Slider when changing a value.
 - Use a slider when you want your users to be able to set defined values (such as volume or brightness).

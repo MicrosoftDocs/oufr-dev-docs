@@ -1,8 +1,7 @@
 # Overview
-&lt;a target&#x3D;&#39;_blank&#39; href&#x3D;&#39;http:&#x2F;&#x2F;dev.office.com&#x2F;fabric&#x2F;components&#x2F;PeoplePicker&#39;&gt; PeoplePickers&lt;&#x2F;a&gt; are used to pick recipients.
+PeoplePickers are used to pick recipients.
 
 
-# Best Practices
 
 ## Do &#10003;
 - Use the PeoplePicker to quickly search for a few people

@@ -39,8 +39,6 @@ Since the &#x60;items&#x60; array has been re-created, the List will conclude th
 
 
 
-# Best Practices
-
 ## Do &#10003;
 Coming soon...
 

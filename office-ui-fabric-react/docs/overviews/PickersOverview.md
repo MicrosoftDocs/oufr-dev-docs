@@ -1,8 +1,7 @@
 # Overview
-Coming soon...
+Pickers are used to pick recipients.
 
 
-# Best Practices
 
 ## Do &#10003;
 Coming soon...

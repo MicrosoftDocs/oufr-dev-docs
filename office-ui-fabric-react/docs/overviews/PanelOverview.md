@@ -10,8 +10,6 @@ Panels are modal UI overlays that provide contextual app information. They often
 - Multi-field forms
 
 
-# Best Practices
-
 ## Do &#10003;
 - Use for self-contained experiences where the user does not need to interact with the app view to complete the task.
 - Use for complex creation, edit or management experiences.

@@ -14,8 +14,8 @@ items:
     children:
       - office-ui-fabric-react.ToggleBase.(constructor)
       - office-ui-fabric-react.ToggleBase.checked
-      - office-ui-fabric-react.ToggleBase.componentWillReceiveProps
       - office-ui-fabric-react.ToggleBase.focus
+      - office-ui-fabric-react.ToggleBase.getDerivedStateFromProps
       - office-ui-fabric-react.ToggleBase.render
   - uid: office-ui-fabric-react.ToggleBase.(constructor)
     summary: Constructs a new instance of the `ToggleBase` class
@@ -43,23 +43,6 @@ items:
       return:
         type:
           - boolean
-  - uid: office-ui-fabric-react.ToggleBase.componentWillReceiveProps
-    name: componentWillReceiveProps(newProps)
-    fullName: componentWillReceiveProps(newProps)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'componentWillReceiveProps(newProps: IToggleProps): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: newProps
-          description: ''
-          type:
-            - office-ui-fabric-react.IToggleProps
   - uid: office-ui-fabric-react.ToggleBase.focus
     name: focus()
     fullName: focus()
@@ -72,6 +55,27 @@ items:
         type:
           - void
         description: ''
+  - uid: office-ui-fabric-react.ToggleBase.getDerivedStateFromProps
+    name: 'getDerivedStateFromProps(props, state)'
+    fullName: 'getDerivedStateFromProps(props, state)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'static getDerivedStateFromProps(props: IToggleProps, state: IToggleState): IToggleState;'
+      return:
+        type:
+          - office-ui-fabric-react.IToggleState
+        description: ''
+      parameters:
+        - id: props
+          description: ''
+          type:
+            - office-ui-fabric-react.IToggleProps
+        - id: state
+          description: ''
+          type:
+            - office-ui-fabric-react.IToggleState
   - uid: office-ui-fabric-react.ToggleBase.render
     name: render()
     fullName: render()

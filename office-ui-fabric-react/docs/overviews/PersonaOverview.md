@@ -2,8 +2,6 @@
 Personas are used for rendering an individual&#39;s avatar and presence. They are used within the PeoplePicker components.
 
 
-# Best Practices
-
 ## Do &#10003;
 - Use Size 24 Persona in text fields in read mode or in experiences such as multi-column list view which need compact Persona representations.
 - Use Size 32 Persona in text fields in edit mode.

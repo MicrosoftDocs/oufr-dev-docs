@@ -8,8 +8,11 @@ items:
       - typeScript
     type: interface
     extends:
-      - office-ui-fabric-react.IPeoplePickerItemSelectedProps
-      - office-ui-fabric-react.IPickerItemProps
+      - |-
+        IPickerItemProps<IPersonaProps & {
+            ValidationState: ValidationState;
+        }>
+      - office-ui-fabric-react.IPeoplePickerItemSharedProps
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.IPeoplePickerItemSelectedProps.styles

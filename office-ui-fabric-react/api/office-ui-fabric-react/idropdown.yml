@@ -9,6 +9,7 @@ items:
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.IDropdown.focus
+      - office-ui-fabric-react.IDropdown.selectedOptions
   - uid: office-ui-fabric-react.IDropdown.focus
     name: focus
     fullName: focus
@@ -20,3 +21,15 @@ items:
       return:
         type:
           - '(shouldOpenOnFocus?: boolean) => void'
+  - uid: office-ui-fabric-react.IDropdown.selectedOptions
+    summary: All selected options
+    name: selectedOptions
+    fullName: selectedOptions
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly selectedOptions: IDropdownOption[];'
+      return:
+        type:
+          - 'IDropdownOption[]'

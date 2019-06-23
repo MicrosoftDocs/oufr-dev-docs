@@ -6,8 +6,6 @@ items:
     langs:
       - typeScript
     type: interface
-    extends:
-      - 'IBaseProps<IColorPicker> '
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.IColorPickerProps.alphaLabel
@@ -19,7 +17,6 @@ items:
       - office-ui-fabric-react.IColorPickerProps.greenLabel
       - office-ui-fabric-react.IColorPickerProps.hexLabel
       - office-ui-fabric-react.IColorPickerProps.onChange
-      - office-ui-fabric-react.IColorPickerProps.onColorChanged
       - office-ui-fabric-react.IColorPickerProps.redLabel
       - office-ui-fabric-react.IColorPickerProps.styles
       - office-ui-fabric-react.IColorPickerProps.theme
@@ -131,22 +128,6 @@ items:
       return:
         type:
           - '(ev: React.SyntheticEvent<HTMLElement>, color: IColor) => void'
-  - uid: office-ui-fabric-react.IColorPickerProps.onColorChanged
-    summary: >-
-      Callback for when the user changes the color. (To preserve existing behavior, this is also called when the color
-      changes via props.)
-    deprecated:
-      content: Use `onChange` instead.
-    name: onColorChanged
-    fullName: onColorChanged
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'onColorChanged?: (color: string, colorObject: IColor) => void;'
-      return:
-        type:
-          - '(color: string, colorObject: IColor) => void'
   - uid: office-ui-fabric-react.IColorPickerProps.redLabel
     summary: Label for the red text field.
     name: redLabel

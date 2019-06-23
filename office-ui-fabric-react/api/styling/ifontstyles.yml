@@ -18,8 +18,10 @@ items:
       - styling.IFontStyles.superLarge
       - styling.IFontStyles.tiny
       - styling.IFontStyles.xLarge
+      - styling.IFontStyles.xLargePlus
       - styling.IFontStyles.xSmall
       - styling.IFontStyles.xxLarge
+      - styling.IFontStyles.xxLargePlus
   - uid: styling.IFontStyles.large
     name: large
     fullName: large
@@ -119,6 +121,19 @@ items:
       return:
         type:
           - merge-styles.IRawStyle
+  - uid: styling.IFontStyles.xLargePlus
+    deprecated:
+      content: Exists for forward compatibility with Fabric 7's Fluent theme. Not recommended for use with Fabric 6.
+    name: xLargePlus
+    fullName: xLargePlus
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'xLargePlus: IRawStyle;'
+      return:
+        type:
+          - merge-styles.IRawStyle
   - uid: styling.IFontStyles.xSmall
     name: xSmall
     fullName: xSmall
@@ -138,6 +153,19 @@ items:
     type: property
     syntax:
       content: 'xxLarge: IRawStyle;'
+      return:
+        type:
+          - merge-styles.IRawStyle
+  - uid: styling.IFontStyles.xxLargePlus
+    deprecated:
+      content: Exists for forward compatibility with Fabric 7's Fluent theme Not recommended for use with Fabric 6.
+    name: xxLargePlus
+    fullName: xxLargePlus
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'xxLargePlus: IRawStyle;'
       return:
         type:
           - merge-styles.IRawStyle
