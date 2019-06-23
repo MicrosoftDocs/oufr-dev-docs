@@ -9,9 +9,9 @@ if (!docsOutputPath) {
   throw new Error('Must specify a docs output path as the first argument to this script');
 }
 
-if (!path.isAbsolute(docsOutputPath)) {
-  throw new Error('The docs output path must be absolute');
-}
+// if (!path.isAbsolute(docsOutputPath)) {
+//   throw new Error('The docs output path must be absolute');
+// }
 
 const categories = {
   'Basic Inputs': {

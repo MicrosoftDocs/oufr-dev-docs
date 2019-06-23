@@ -1,7 +1,7 @@
 {
   "metadata": {
     "toolPackage": "@microsoft/api-extractor",
-    "toolVersion": "7.0.34",
+    "toolVersion": "7.1.6",
     "schemaVersion": 1000
   },
   "kind": "Package",
@@ -34,6 +34,14 @@
             {
               "kind": "Reference",
               "text": "T"
+            },
+            {
+              "kind": "Content",
+              "text": " extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "Object"
             },
             {
               "kind": "Content",
@@ -81,8 +89,8 @@
             }
           ],
           "returnTypeTokenRange": {
-            "startIndex": 9,
-            "endIndex": 14
+            "startIndex": 11,
+            "endIndex": 16
           },
           "releaseTag": "Public",
           "overloadIndex": 0,
@@ -90,8 +98,8 @@
             {
               "parameterName": "styles",
               "parameterTypeTokenRange": {
-                "startIndex": 7,
-                "endIndex": 8
+                "startIndex": 9,
+                "endIndex": 10
               }
             }
           ],
@@ -546,6 +554,31 @@
             },
             {
               "kind": "Variable",
+              "canonicalReference": "xLargePlus",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Reference",
+                  "text": "xLargePlus"
+                },
+                {
+                  "kind": "Content",
+                  "text": ": "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "xLargePlus",
+              "variableTypeTokenRange": {
+                "startIndex": 2,
+                "endIndex": 3
+              }
+            },
+            {
+              "kind": "Variable",
               "canonicalReference": "xSmall",
               "docComment": "",
               "excerptTokens": [
@@ -589,6 +622,31 @@
               ],
               "releaseTag": "Public",
               "name": "xxLarge",
+              "variableTypeTokenRange": {
+                "startIndex": 2,
+                "endIndex": 3
+              }
+            },
+            {
+              "kind": "Variable",
+              "canonicalReference": "xxLargePlus",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Reference",
+                  "text": "xxLargePlus"
+                },
+                {
+                  "kind": "Content",
+                  "text": ": "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "xxLargePlus",
               "variableTypeTokenRange": {
                 "startIndex": 2,
                 "endIndex": 3
@@ -1034,6 +1092,88 @@
             }
           ],
           "name": "getFocusOutlineStyle"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "(getFocusStyle:0)",
+          "docComment": "/**\n * Generates a focus style which can be used to define an :after focus border.\n *\n * @param theme - The theme object to use.\n *\n * @param options - Options to customize the focus border.\n *\n * @returns The style object.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function "
+            },
+            {
+              "kind": "Reference",
+              "text": "getFocusStyle"
+            },
+            {
+              "kind": "Content",
+              "text": "("
+            },
+            {
+              "kind": "Reference",
+              "text": "theme"
+            },
+            {
+              "kind": "Content",
+              "text": ": "
+            },
+            {
+              "kind": "Reference",
+              "text": "ITheme"
+            },
+            {
+              "kind": "Content",
+              "text": ", "
+            },
+            {
+              "kind": "Reference",
+              "text": "options"
+            },
+            {
+              "kind": "Content",
+              "text": "?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "IGetFocusStylesOptions"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "IRawStyle"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 11,
+            "endIndex": 12
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 0,
+          "parameters": [
+            {
+              "parameterName": "theme",
+              "parameterTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              }
+            },
+            {
+              "parameterName": "options",
+              "parameterTypeTokenRange": {
+                "startIndex": 9,
+                "endIndex": 10
+              }
+            }
+          ],
+          "name": "getFocusStyle"
         },
         {
           "kind": "Function",
@@ -3375,6 +3515,35 @@
             },
             {
               "kind": "PropertySignature",
+              "canonicalReference": "xLargePlus",
+              "docComment": "/**\n * @deprecated\n *\n * Exists for forward compatibility with Fabric 7's Fluent theme. Not recommended for use with Fabric 6.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Reference",
+                  "text": "xLargePlus"
+                },
+                {
+                  "kind": "Content",
+                  "text": ": "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IRawStyle"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "xLargePlus",
+              "propertyTypeTokenRange": {
+                "startIndex": 2,
+                "endIndex": 3
+              }
+            },
+            {
+              "kind": "PropertySignature",
               "canonicalReference": "xSmall",
               "docComment": "",
               "excerptTokens": [
@@ -3426,6 +3595,35 @@
               ],
               "releaseTag": "Public",
               "name": "xxLarge",
+              "propertyTypeTokenRange": {
+                "startIndex": 2,
+                "endIndex": 3
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "xxLargePlus",
+              "docComment": "/**\n * @deprecated\n *\n * Exists for forward compatibility with Fabric 7's Fluent theme Not recommended for use with Fabric 6.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Reference",
+                  "text": "xxLargePlus"
+                },
+                {
+                  "kind": "Content",
+                  "text": ": "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IRawStyle"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "xxLargePlus",
               "propertyTypeTokenRange": {
                 "startIndex": 2,
                 "endIndex": 3
@@ -9495,47 +9693,15 @@
             },
             {
               "kind": "Content",
-              "text": ": ("
+              "text": ": typeof "
             },
             {
               "kind": "Reference",
-              "text": "beaconColorOne"
+              "text": "_continuousPulseAnimationDouble"
             },
             {
               "kind": "Content",
-              "text": ": string, "
-            },
-            {
-              "kind": "Reference",
-              "text": "beaconColorTwo"
-            },
-            {
-              "kind": "Content",
-              "text": ": string, "
-            },
-            {
-              "kind": "Reference",
-              "text": "innerDimension"
-            },
-            {
-              "kind": "Content",
-              "text": ": string, "
-            },
-            {
-              "kind": "Reference",
-              "text": "outerDimension"
-            },
-            {
-              "kind": "Content",
-              "text": ": string, "
-            },
-            {
-              "kind": "Reference",
-              "text": "borderWidth"
-            },
-            {
-              "kind": "Content",
-              "text": ": string) => string;\n    "
+              "text": ";\n    "
             },
             {
               "kind": "Reference",
@@ -9543,47 +9709,15 @@
             },
             {
               "kind": "Content",
-              "text": ": ("
+              "text": ": typeof "
             },
             {
               "kind": "Reference",
-              "text": "beaconColorOne"
+              "text": "_continuousPulseAnimationSingle"
             },
             {
               "kind": "Content",
-              "text": ": string, "
-            },
-            {
-              "kind": "Reference",
-              "text": "beaconColorTwo"
-            },
-            {
-              "kind": "Content",
-              "text": ": string, "
-            },
-            {
-              "kind": "Reference",
-              "text": "innerDimension"
-            },
-            {
-              "kind": "Content",
-              "text": ": string, "
-            },
-            {
-              "kind": "Reference",
-              "text": "outerDimension"
-            },
-            {
-              "kind": "Content",
-              "text": ": string, "
-            },
-            {
-              "kind": "Reference",
-              "text": "borderWidth"
-            },
-            {
-              "kind": "Content",
-              "text": ": string) => string;\n    "
+              "text": ";\n    "
             },
             {
               "kind": "Reference",
@@ -9591,27 +9725,11 @@
             },
             {
               "kind": "Content",
-              "text": ": ("
+              "text": ": typeof "
             },
             {
               "kind": "Reference",
-              "text": "animationName"
-            },
-            {
-              "kind": "Content",
-              "text": ": string, "
-            },
-            {
-              "kind": "Reference",
-              "text": "delayLength"
-            },
-            {
-              "kind": "Content",
-              "text": "?: string | undefined) => "
-            },
-            {
-              "kind": "Reference",
-              "text": "IRawStyle"
+              "text": "_createDefaultAnimation"
             },
             {
               "kind": "Content",
@@ -9622,7 +9740,7 @@
           "name": "PulsingBeaconAnimationStyles",
           "variableTypeTokenRange": {
             "startIndex": 2,
-            "endIndex": 35
+            "endIndex": 15
           }
         },
         {
