@@ -18,7 +18,9 @@ items:
       - office-ui-fabric-react.ISliderStyles.thumb
       - office-ui-fabric-react.ISliderStyles.titleLabel
       - office-ui-fabric-react.ISliderStyles.valueLabel
+      - office-ui-fabric-react.ISliderStyles.zeroTick
   - uid: office-ui-fabric-react.ISliderStyles.activeSection
+    summary: Style set for active portion of the line.
     name: activeSection
     fullName: activeSection
     langs:
@@ -30,6 +32,7 @@ items:
         type:
           - IStyle
   - uid: office-ui-fabric-react.ISliderStyles.container
+    summary: Style set for the container of the slider.
     name: container
     fullName: container
     langs:
@@ -41,6 +44,7 @@ items:
         type:
           - IStyle
   - uid: office-ui-fabric-react.ISliderStyles.inactiveSection
+    summary: Style set for inactive portion of the line.
     name: inactiveSection
     fullName: inactiveSection
     langs:
@@ -52,6 +56,7 @@ items:
         type:
           - IStyle
   - uid: office-ui-fabric-react.ISliderStyles.line
+    summary: Style set for element that contains all the lines.
     name: line
     fullName: line
     langs:
@@ -63,6 +68,7 @@ items:
         type:
           - IStyle
   - uid: office-ui-fabric-react.ISliderStyles.lineContainer
+    summary: Style set for both active and inactive sections of the line.
     name: lineContainer
     fullName: lineContainer
     langs:
@@ -74,6 +80,7 @@ items:
         type:
           - IStyle
   - uid: office-ui-fabric-react.ISliderStyles.root
+    summary: Style set for the root element.
     name: root
     fullName: root
     langs:
@@ -85,6 +92,7 @@ items:
         type:
           - IStyle
   - uid: office-ui-fabric-react.ISliderStyles.slideBox
+    summary: Style set for the actual box containting interactive elements of the slider.
     name: slideBox
     fullName: slideBox
     langs:
@@ -96,6 +104,7 @@ items:
         type:
           - IStyle
   - uid: office-ui-fabric-react.ISliderStyles.thumb
+    summary: Style set for thumb of the slider.
     name: thumb
     fullName: thumb
     langs:
@@ -107,6 +116,7 @@ items:
         type:
           - IStyle
   - uid: office-ui-fabric-react.ISliderStyles.titleLabel
+    summary: Style set for the title label above the slider.
     name: titleLabel
     fullName: titleLabel
     langs:
@@ -118,6 +128,7 @@ items:
         type:
           - IStyle
   - uid: office-ui-fabric-react.ISliderStyles.valueLabel
+    summary: Style set for value label on right/below of the slider.
     name: valueLabel
     fullName: valueLabel
     langs:
@@ -125,6 +136,18 @@ items:
     type: property
     syntax:
       content: 'valueLabel: IStyle;'
+      return:
+        type:
+          - IStyle
+  - uid: office-ui-fabric-react.ISliderStyles.zeroTick
+    summary: Style set for tick on 0 on number line. This element only shows up when originFromZero prop is true.
+    name: zeroTick
+    fullName: zeroTick
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'zeroTick: IStyle;'
       return:
         type:
           - IStyle

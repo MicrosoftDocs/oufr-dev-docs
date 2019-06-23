@@ -8,7 +8,7 @@ items:
     type: interface
     extends:
       - IBaseProps<IDetailsList>
-      - 'IWithViewportProps '
+      - office-ui-fabric-react.IWithViewportProps
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.IDetailsListProps.ariaLabel
@@ -28,7 +28,6 @@ items:
       - office-ui-fabric-react.IDetailsListProps.constrainMode
       - office-ui-fabric-react.IDetailsListProps.disableSelectionZone
       - office-ui-fabric-react.IDetailsListProps.dragDropEvents
-      - office-ui-fabric-react.IDetailsListProps.enableShimmer
       - office-ui-fabric-react.IDetailsListProps.enterModalSelectionOnTouch
       - office-ui-fabric-react.IDetailsListProps.getGroupHeight
       - office-ui-fabric-react.IDetailsListProps.getKey
@@ -39,6 +38,7 @@ items:
       - office-ui-fabric-react.IDetailsListProps.indentWidth
       - office-ui-fabric-react.IDetailsListProps.initialFocusedIndex
       - office-ui-fabric-react.IDetailsListProps.isHeaderVisible
+      - office-ui-fabric-react.IDetailsListProps.isPlaceholderData
       - office-ui-fabric-react.IDetailsListProps.items
       - office-ui-fabric-react.IDetailsListProps.layoutMode
       - office-ui-fabric-react.IDetailsListProps.listProps
@@ -278,23 +278,7 @@ items:
       content: 'dragDropEvents?: IDragDropEvents;'
       return:
         type:
-          - IDragDropEvents
-  - uid: office-ui-fabric-react.IDetailsListProps.enableShimmer
-    summary: 'If set to true and we provide an empty array, it will render 10 lines of whatever provided in onRenderMissingItem.'
-    deprecated:
-      content: >-
-        Use `ShimmeredDetailsList` pass-through component instead which supports this prop. Will be removed in Fabric
-        7.0
-    name: enableShimmer
-    fullName: enableShimmer
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'enableShimmer?: boolean;'
-      return:
-        type:
-          - boolean
+          - office-ui-fabric-react.IDragDropEvents
   - uid: office-ui-fabric-react.IDetailsListProps.enterModalSelectionOnTouch
     summary: Whether or not the selection zone should enter modal state on touch.
     name: enterModalSelectionOnTouch
@@ -320,7 +304,9 @@ items:
         type:
           - 'IGroupedListProps[''getGroupHeight'']'
   - uid: office-ui-fabric-react.IDetailsListProps.getKey
-    summary: 'Optional callback to get the item key, to be used in the selection and on render.'
+    summary: >-
+      Optional callback to get the item key, to be used in the selection and on render. Must be provided if sorting or
+      filtering is enabled.
     name: getKey
     fullName: getKey
     langs:
@@ -416,6 +402,18 @@ items:
     type: property
     syntax:
       content: 'isHeaderVisible?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-ui-fabric-react.IDetailsListProps.isPlaceholderData
+    summary: Set this to true to indicate that the items being displayed is placeholder data.
+    name: isPlaceholderData
+    fullName: isPlaceholderData
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isPlaceholderData?: boolean;'
       return:
         type:
           - boolean
@@ -702,7 +700,7 @@ items:
       content: 'selection?: ISelection;'
       return:
         type:
-          - office-ui-fabric-react.ISelection
+          - utilities.ISelection
   - uid: office-ui-fabric-react.IDetailsListProps.selectionMode
     summary: 'Controls how/if the details list manages selection. Options include none, single, multiple'
     name: selectionMode
@@ -714,7 +712,7 @@ items:
       content: 'selectionMode?: SelectionMode;'
       return:
         type:
-          - office-ui-fabric-react.SelectionMode
+          - utilities.SelectionMode
   - uid: office-ui-fabric-react.IDetailsListProps.selectionPreservedOnEmptyClick
     summary: >-
       By default, selection is cleared when clicking on an empty (non-focusable) section of the screen. Setting this
@@ -826,4 +824,4 @@ items:
       content: 'viewport?: IViewport;'
       return:
         type:
-          - IViewport
+          - office-ui-fabric-react.IViewport

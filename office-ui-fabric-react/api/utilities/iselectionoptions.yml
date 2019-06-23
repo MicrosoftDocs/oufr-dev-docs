@@ -1,0 +1,58 @@
+### YamlMime:UniversalReference
+items:
+  - uid: utilities.ISelectionOptions
+    name: ISelectionOptions
+    fullName: ISelectionOptions
+    langs:
+      - typeScript
+    type: interface
+    package: utilities
+    children:
+      - utilities.ISelectionOptions.canSelectItem
+      - utilities.ISelectionOptions.getKey
+      - utilities.ISelectionOptions.onSelectionChanged
+      - utilities.ISelectionOptions.selectionMode
+  - uid: utilities.ISelectionOptions.canSelectItem
+    name: canSelectItem
+    fullName: canSelectItem
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'canSelectItem?: (item: IObjectWithKey, index?: number) => boolean;'
+      return:
+        type:
+          - '(item: IObjectWithKey, index?: number) => boolean'
+  - uid: utilities.ISelectionOptions.getKey
+    name: getKey
+    fullName: getKey
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'getKey?: (item: IObjectWithKey, index?: number) => string | number;'
+      return:
+        type:
+          - '(item: IObjectWithKey, index?: number) => string | number'
+  - uid: utilities.ISelectionOptions.onSelectionChanged
+    name: onSelectionChanged
+    fullName: onSelectionChanged
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onSelectionChanged?: () => void;'
+      return:
+        type:
+          - () => void
+  - uid: utilities.ISelectionOptions.selectionMode
+    name: selectionMode
+    fullName: selectionMode
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'selectionMode?: SelectionMode;'
+      return:
+        type:
+          - utilities.SelectionMode

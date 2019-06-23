@@ -169,10 +169,14 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'dismiss: (ev?: Event | React.KeyboardEvent<HTMLElement> | React.MouseEvent<HTMLElement> | undefined) => void;'
+      content: >-
+        dismiss: (ev?: Event | React.KeyboardEvent<HTMLElement> | React.MouseEvent<HTMLElement, MouseEvent> | undefined)
+        => void;
       return:
         type:
-          - '(ev?: Event | React.KeyboardEvent<HTMLElement> | React.MouseEvent<HTMLElement> | undefined) => void'
+          - >-
+            (ev?: Event | React.KeyboardEvent<HTMLElement> | React.MouseEvent<HTMLElement, MouseEvent> | undefined) =>
+            void
   - uid: office-ui-fabric-react.PositioningContainer.onResize
     name: onResize
     fullName: onResize
@@ -180,10 +184,14 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'onResize: (ev?: Event | React.KeyboardEvent<HTMLElement> | React.MouseEvent<HTMLElement> | undefined) => void;'
+      content: >-
+        onResize: (ev?: Event | React.KeyboardEvent<HTMLElement> | React.MouseEvent<HTMLElement, MouseEvent> |
+        undefined) => void;
       return:
         type:
-          - '(ev?: Event | React.KeyboardEvent<HTMLElement> | React.MouseEvent<HTMLElement> | undefined) => void'
+          - >-
+            (ev?: Event | React.KeyboardEvent<HTMLElement> | React.MouseEvent<HTMLElement, MouseEvent> | undefined) =>
+            void
   - uid: office-ui-fabric-react.PositioningContainer.render
     name: render()
     fullName: render()

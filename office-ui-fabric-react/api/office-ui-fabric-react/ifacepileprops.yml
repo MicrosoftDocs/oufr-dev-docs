@@ -17,6 +17,8 @@ items:
       - office-ui-fabric-react.IFacepileProps.componentRef
       - office-ui-fabric-react.IFacepileProps.getPersonaProps
       - office-ui-fabric-react.IFacepileProps.maxDisplayablePersonas
+      - office-ui-fabric-react.IFacepileProps.onRenderPersona
+      - office-ui-fabric-react.IFacepileProps.onRenderPersonaCoin
       - office-ui-fabric-react.IFacepileProps.overflowButtonProps
       - office-ui-fabric-react.IFacepileProps.overflowButtonType
       - office-ui-fabric-react.IFacepileProps.overflowPersonas
@@ -113,6 +115,30 @@ items:
       return:
         type:
           - number
+  - uid: office-ui-fabric-react.IFacepileProps.onRenderPersona
+    summary: 'Optional custom renderer for the persona, gets called when there is one persona in personas array'
+    name: onRenderPersona
+    fullName: onRenderPersona
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onRenderPersona?: IRenderFunction<IFacepilePersona>;'
+      return:
+        type:
+          - IRenderFunction<IFacepilePersona>
+  - uid: office-ui-fabric-react.IFacepileProps.onRenderPersonaCoin
+    summary: 'Optional custom renderer for the persona coins, gets called when there are multiple persona in personas array'
+    name: onRenderPersonaCoin
+    fullName: onRenderPersonaCoin
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onRenderPersonaCoin?: IRenderFunction<IFacepilePersona>;'
+      return:
+        type:
+          - IRenderFunction<IFacepilePersona>
   - uid: office-ui-fabric-react.IFacepileProps.overflowButtonProps
     summary: Properties for the overflow icon
     name: overflowButtonProps

@@ -12,8 +12,8 @@ items:
       - styling.createTheme
       - styling.focusClear
       - styling.getFadedOverflowStyle
+      - styling.getFocusOutlineStyle
       - styling.getFocusStyle
-      - styling.getFocusStyle_1
       - styling.getGlobalClassNames
       - styling.getIcon
       - styling.getIconClassName
@@ -48,7 +48,7 @@ items:
     type: function
     syntax:
       content: |-
-        export declare function buildClassMap<T>(styles: T): {
+        export declare function buildClassMap<T extends Object>(styles: T): {
             [key in keyof T]?: string;
         };
       return:
@@ -156,6 +156,38 @@ items:
           description: The Height of the fading overflow. Vertical direction defaults it to 50% vs 100% when horizontal.
           type:
             - string | number
+  - uid: styling.getFocusOutlineStyle
+    summary: Generates a style which can be used to set a border on focus.
+    name: 'getFocusOutlineStyle(theme, inset, width, color)'
+    fullName: 'getFocusOutlineStyle(theme, inset, width, color)'
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: >-
+        export declare function getFocusOutlineStyle(theme: ITheme, inset?: number, width?: number, color?: string):
+        IRawStyle;
+      return:
+        type:
+          - merge-styles.IRawStyle
+        description: The style object.
+      parameters:
+        - id: theme
+          description: The theme object to use.
+          type:
+            - styling.ITheme
+        - id: inset
+          description: The number of pixels to inset the border (default 0)
+          type:
+            - number
+        - id: width
+          description: The border width in pixels (default 1)
+          type:
+            - number
+        - id: color
+          description: Color of the outline (default `theme.palette.neutralSecondary`<!-- -->)
+          type:
+            - string
   - uid: styling.getFocusStyle
     summary: 'Generates a focus style which can be used to define an :after focus border.'
     name: 'getFocusStyle(theme, options)'
@@ -178,55 +210,6 @@ items:
           description: Options to customize the focus border.
           type:
             - styling.IGetFocusStylesOptions
-  - uid: styling.getFocusStyle_1
-    summary: 'Generates a focus style which can be used to define an :after focus border.'
-    deprecated:
-      content: Use the object parameter version instead.
-    name: 'getFocusStyle(theme, inset, position, highContrastStyle, borderColor, outlineColor, isFocusedOnly)'
-    fullName: 'getFocusStyle(theme, inset, position, highContrastStyle, borderColor, outlineColor, isFocusedOnly)'
-    langs:
-      - typeScript
-    type: function
-    syntax:
-      content: >-
-        export declare function getFocusStyle(theme: ITheme, inset?: number, position?: 'relative' | 'absolute',
-        highContrastStyle?: IRawStyle | undefined, borderColor?: string, outlineColor?: string, isFocusedOnly?:
-        boolean): IRawStyle;
-      return:
-        type:
-          - merge-styles.IRawStyle
-        description: The style object.
-      parameters:
-        - id: theme
-          description: The theme object to use.
-          type:
-            - styling.ITheme
-        - id: inset
-          description: The number of pixels to inset the border.
-          type:
-            - number
-        - id: position
-          description: >-
-            The positioning applied to the container. Must be 'relative' or 'absolute' so that the focus border can live
-            around it.
-          type:
-            - '''relative'' | ''absolute'''
-        - id: highContrastStyle
-          description: Style for high contrast mode.
-          type:
-            - IRawStyle | undefined
-        - id: borderColor
-          description: Color of the border.
-          type:
-            - string
-        - id: outlineColor
-          description: Color of the outline.
-          type:
-            - string
-        - id: isFocusedOnly
-          description: If the styles should apply on focus or not.
-          type:
-            - boolean
   - uid: styling.getGlobalClassNames
     summary: >-
       Checks for the `disableGlobalClassNames` property on the `theme` to determine if it should return `classNames`

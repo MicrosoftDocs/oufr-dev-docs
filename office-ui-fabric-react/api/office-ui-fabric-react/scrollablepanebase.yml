@@ -14,13 +14,11 @@ items:
     children:
       - office-ui-fabric-react.ScrollablePaneBase.(constructor)
       - office-ui-fabric-react.ScrollablePaneBase.addSticky
-      - office-ui-fabric-react.ScrollablePaneBase.childContextTypes
       - office-ui-fabric-react.ScrollablePaneBase.componentDidMount
       - office-ui-fabric-react.ScrollablePaneBase.componentDidUpdate
       - office-ui-fabric-react.ScrollablePaneBase.componentWillUnmount
       - office-ui-fabric-react.ScrollablePaneBase.contentContainer
       - office-ui-fabric-react.ScrollablePaneBase.forceLayoutUpdate
-      - office-ui-fabric-react.ScrollablePaneBase.getChildContext
       - office-ui-fabric-react.ScrollablePaneBase.getScrollPosition
       - office-ui-fabric-react.ScrollablePaneBase.notifySubscribers
       - office-ui-fabric-react.ScrollablePaneBase.removeSticky
@@ -60,17 +58,6 @@ items:
       return:
         type:
           - '(sticky: Sticky) => void'
-  - uid: office-ui-fabric-react.ScrollablePaneBase.childContextTypes
-    name: childContextTypes
-    fullName: childContextTypes
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'static childContextTypes: React.ValidationMap<IScrollablePaneContext>;'
-      return:
-        type:
-          - React.ValidationMap<IScrollablePaneContext>
   - uid: office-ui-fabric-react.ScrollablePaneBase.componentDidMount
     name: componentDidMount()
     fullName: componentDidMount()
@@ -138,18 +125,6 @@ items:
       return:
         type:
           - void
-        description: ''
-  - uid: office-ui-fabric-react.ScrollablePaneBase.getChildContext
-    name: getChildContext()
-    fullName: getChildContext()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getChildContext(): IScrollablePaneContext;'
-      return:
-        type:
-          - office-ui-fabric-react.IScrollablePaneContext
         description: ''
   - uid: office-ui-fabric-react.ScrollablePaneBase.getScrollPosition
     name: getScrollPosition

@@ -31,7 +31,6 @@ items:
       - office-ui-fabric-react.IDetailsRowBaseProps.onRenderDetailsCheckbox
       - office-ui-fabric-react.IDetailsRowBaseProps.onWillUnmount
       - office-ui-fabric-react.IDetailsRowBaseProps.rowFieldsAs
-      - office-ui-fabric-react.IDetailsRowBaseProps.shimmer
       - office-ui-fabric-react.IDetailsRowBaseProps.styles
       - office-ui-fabric-react.IDetailsRowBaseProps.theme
       - office-ui-fabric-react.IDetailsRowBaseProps.useReducedRowRenderer
@@ -136,7 +135,7 @@ items:
       content: 'dragDropEvents?: IDragDropEvents;'
       return:
         type:
-          - IDragDropEvents
+          - office-ui-fabric-react.IDragDropEvents
   - uid: office-ui-fabric-react.IDetailsRowBaseProps.dragDropHelper
     summary: Helper for the drag and drop
     name: dragDropHelper
@@ -148,7 +147,7 @@ items:
       content: 'dragDropHelper?: IDragDropHelper;'
       return:
         type:
-          - IDragDropHelper
+          - office-ui-fabric-react.IDragDropHelper
   - uid: office-ui-fabric-react.IDetailsRowBaseProps.eventsToRegister
     summary: A list of events to register
     name: eventsToRegister
@@ -277,22 +276,6 @@ items:
       return:
         type:
           - React.StatelessComponent<IDetailsRowFieldsProps> | React.ComponentClass<IDetailsRowFieldsProps>
-  - uid: office-ui-fabric-react.IDetailsRowBaseProps.shimmer
-    summary: Whether to render shimmer
-    deprecated:
-      content: >-
-        Use `ShimmeredDetailsList` instead:
-        https://developer.microsoft.com/en-us/fabric\#/components/detailslist/shimmer
-    name: shimmer
-    fullName: shimmer
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'shimmer?: boolean;'
-      return:
-        type:
-          - boolean
   - uid: office-ui-fabric-react.IDetailsRowBaseProps.styles
     summary: Overriding styles to this row
     name: styles

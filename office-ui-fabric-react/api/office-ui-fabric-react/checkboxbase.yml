@@ -14,9 +14,9 @@ items:
     children:
       - office-ui-fabric-react.CheckboxBase.(constructor)
       - office-ui-fabric-react.CheckboxBase.checked
-      - office-ui-fabric-react.CheckboxBase.componentWillReceiveProps
       - office-ui-fabric-react.CheckboxBase.defaultProps
       - office-ui-fabric-react.CheckboxBase.focus
+      - office-ui-fabric-react.CheckboxBase.getDerivedStateFromProps
       - office-ui-fabric-react.CheckboxBase.render
   - uid: office-ui-fabric-react.CheckboxBase.(constructor)
     summary: Initialize a new instance of the Checkbox
@@ -47,23 +47,6 @@ items:
       return:
         type:
           - boolean
-  - uid: office-ui-fabric-react.CheckboxBase.componentWillReceiveProps
-    name: componentWillReceiveProps(newProps)
-    fullName: componentWillReceiveProps(newProps)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'componentWillReceiveProps(newProps: ICheckboxProps): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: newProps
-          description: ''
-          type:
-            - office-ui-fabric-react.ICheckboxProps
   - uid: office-ui-fabric-react.CheckboxBase.defaultProps
     name: defaultProps
     fullName: defaultProps
@@ -87,6 +70,27 @@ items:
         type:
           - void
         description: ''
+  - uid: office-ui-fabric-react.CheckboxBase.getDerivedStateFromProps
+    name: 'getDerivedStateFromProps(props, state)'
+    fullName: 'getDerivedStateFromProps(props, state)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'static getDerivedStateFromProps(props: ICheckboxProps, state: ICheckboxState): ICheckboxState;'
+      return:
+        type:
+          - office-ui-fabric-react.ICheckboxState
+        description: ''
+      parameters:
+        - id: props
+          description: ''
+          type:
+            - office-ui-fabric-react.ICheckboxProps
+        - id: state
+          description: ''
+          type:
+            - office-ui-fabric-react.ICheckboxState
   - uid: office-ui-fabric-react.CheckboxBase.render
     summary: Render the Checkbox based on passed props
     name: render()

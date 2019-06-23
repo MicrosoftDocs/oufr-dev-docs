@@ -209,26 +209,19 @@ items:
           type:
             - boolean
   - uid: utilities.EventGroup.raise
-    summary: >-
-      For IE8, bubbleEvent is ignored here and must be dealt with by the handler. Events raised here by default have
-      bubbling set to false and cancelable set to true. This applies also to built-in events being raised manually here
-      on HTMLElements, which may lead to unexpected behavior if it differs from the defaults.
-    name: 'raise(target, eventName, eventArgs, bubbleEvent)'
-    fullName: 'raise(target, eventName, eventArgs, bubbleEvent)'
+    summary: Trigger the given event in the context of this instance of EventGroup.
+    name: 'raise(eventName, eventArgs, bubbleEvent)'
+    fullName: 'raise(eventName, eventArgs, bubbleEvent)'
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'static raise(target: any, eventName: string, eventArgs?: any, bubbleEvent?: boolean): boolean | undefined;'
+      content: 'raise(eventName: string, eventArgs?: any, bubbleEvent?: boolean): boolean | undefined;'
       return:
         type:
           - boolean | undefined
         description: ''
       parameters:
-        - id: target
-          description: ''
-          type:
-            - any
         - id: eventName
           description: ''
           type:

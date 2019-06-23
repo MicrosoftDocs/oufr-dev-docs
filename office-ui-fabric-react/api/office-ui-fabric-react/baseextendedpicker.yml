@@ -247,10 +247,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'protected onInputClick: (ev: React.MouseEvent<HTMLInputElement | Autofill>) => void;'
+      content: 'protected onInputClick: (ev: React.MouseEvent<HTMLInputElement | Autofill, MouseEvent>) => void;'
       return:
         type:
-          - '(ev: React.MouseEvent<HTMLInputElement | Autofill>) => void'
+          - '(ev: React.MouseEvent<HTMLInputElement | Autofill, MouseEvent>) => void'
   - uid: office-ui-fabric-react.BaseExtendedPicker.onInputFocus
     name: onInputFocus
     fullName: onInputFocus
@@ -363,4 +363,4 @@ items:
       content: 'protected selection: Selection;'
       return:
         type:
-          - office-ui-fabric-react.Selection
+          - utilities.Selection

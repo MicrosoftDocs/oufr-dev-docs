@@ -6,8 +6,6 @@ items:
     langs:
       - typeScript
     type: interface
-    extends:
-      - 'IBaseProps<IColorRectangle> '
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.IColorRectangleProps.className
@@ -15,7 +13,6 @@ items:
       - office-ui-fabric-react.IColorRectangleProps.componentRef
       - office-ui-fabric-react.IColorRectangleProps.minSize
       - office-ui-fabric-react.IColorRectangleProps.onChange
-      - office-ui-fabric-react.IColorRectangleProps.onSVChanged
       - office-ui-fabric-react.IColorRectangleProps.styles
       - office-ui-fabric-react.IColorRectangleProps.theme
   - uid: office-ui-fabric-react.IColorRectangleProps.className
@@ -78,20 +75,6 @@ items:
       return:
         type:
           - '(ev: React.MouseEvent<HTMLElement>, color: IColor) => void'
-  - uid: office-ui-fabric-react.IColorRectangleProps.onSVChanged
-    summary: Callback for when the color changes.
-    deprecated:
-      content: Use `onChange`
-    name: onSVChanged
-    fullName: onSVChanged
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'onSVChanged?: (s: number, v: number) => void;'
-      return:
-        type:
-          - '(s: number, v: number) => void'
   - uid: office-ui-fabric-react.IColorRectangleProps.styles
     summary: Call to provide customized styling that will layer on top of the variant rules.
     name: styles

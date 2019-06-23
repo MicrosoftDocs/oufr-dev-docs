@@ -9,7 +9,13 @@ items:
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.IStackTokens.childrenGap
+      - office-ui-fabric-react.IStackTokens.maxHeight
+      - office-ui-fabric-react.IStackTokens.maxWidth
+      - office-ui-fabric-react.IStackTokens.padding
   - uid: office-ui-fabric-react.IStackTokens.childrenGap
+    summary: >-
+      Defines the spacing between Stack children. The property is specified as a value for 'row gap', followed
+      optionally by a value for 'column gap'. If 'column gap' is omitted, it's set to the same value as 'row gap'.
     name: childrenGap
     fullName: childrenGap
     langs:
@@ -17,6 +23,42 @@ items:
     type: property
     syntax:
       content: 'childrenGap?: number | string;'
+      return:
+        type:
+          - number | string
+  - uid: office-ui-fabric-react.IStackTokens.maxHeight
+    summary: Defines a maximum height for the Stack.
+    name: maxHeight
+    fullName: maxHeight
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'maxHeight?: number | string;'
+      return:
+        type:
+          - number | string
+  - uid: office-ui-fabric-react.IStackTokens.maxWidth
+    summary: Defines a maximum width for the Stack.
+    name: maxWidth
+    fullName: maxWidth
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'maxWidth?: number | string;'
+      return:
+        type:
+          - number | string
+  - uid: office-ui-fabric-react.IStackTokens.padding
+    summary: Defines the padding to be applied to the Stack contents relative to its border.
+    name: padding
+    fullName: padding
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'padding?: number | string;'
       return:
         type:
           - number | string

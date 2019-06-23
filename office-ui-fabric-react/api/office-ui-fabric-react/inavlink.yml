@@ -8,11 +8,9 @@ items:
     type: interface
     package: office-ui-fabric-react
     children:
-      - office-ui-fabric-react.INavLink.altText
       - office-ui-fabric-react.INavLink.ariaLabel
       - office-ui-fabric-react.INavLink.automationId
       - office-ui-fabric-react.INavLink.disabled
-      - office-ui-fabric-react.INavLink.engagementName
       - office-ui-fabric-react.INavLink.forceAnchor
       - office-ui-fabric-react.INavLink.icon
       - office-ui-fabric-react.INavLink.iconClassName
@@ -22,24 +20,9 @@ items:
       - office-ui-fabric-react.INavLink.links
       - office-ui-fabric-react.INavLink.name
       - office-ui-fabric-react.INavLink.onClick
-      - office-ui-fabric-react.INavLink.parentId
       - office-ui-fabric-react.INavLink.target
       - office-ui-fabric-react.INavLink.title
       - office-ui-fabric-react.INavLink.url
-  - uid: office-ui-fabric-react.INavLink.altText
-    summary: Deprecated at v0.68.1 and will be removed at &gt;<!-- -->= v1.0.0.
-    deprecated:
-      content: Removed at v1.0.0.
-    name: altText
-    fullName: altText
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'altText?: string;'
-      return:
-        type:
-          - string
   - uid: office-ui-fabric-react.INavLink.ariaLabel
     summary: Aria label for nav link
     name: ariaLabel
@@ -76,20 +59,6 @@ items:
       return:
         type:
           - boolean
-  - uid: office-ui-fabric-react.INavLink.engagementName
-    summary: Deprecated at v0.68.1 and will be removed at &gt;<!-- -->= v1.0.0.
-    deprecated:
-      content: Removed at v1.0.0.
-    name: engagementName
-    fullName: engagementName
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'engagementName?: string;'
-      return:
-        type:
-          - string
   - uid: office-ui-fabric-react.INavLink.forceAnchor
     summary: >-
       (Optional) By default, any link with onClick defined will render as a button. Set this property to true to
@@ -206,19 +175,6 @@ items:
       return:
         type:
           - '(ev?: React.MouseEvent<HTMLElement>, item?: INavLink) => void'
-  - uid: office-ui-fabric-react.INavLink.parentId
-    deprecated:
-      content: Not used in the Nav control or anywhere else in office-ui-fabric-react.
-    name: parentId
-    fullName: parentId
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'parentId?: string;'
-      return:
-        type:
-          - string
   - uid: office-ui-fabric-react.INavLink.target
     summary: Link <a> target.
     name: target

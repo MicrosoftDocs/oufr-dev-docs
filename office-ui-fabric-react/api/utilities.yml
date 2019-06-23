@@ -15,13 +15,11 @@ items:
       - utilities.assertNever
       - utilities.assign
       - utilities.Async
-      - utilities.autobind
       - utilities.AutoScroll
       - utilities.BaseComponent
       - utilities.calculatePrecision
       - utilities.classNamesFunction
       - utilities.createArray
-      - utilities.createRef
       - utilities.css
       - utilities.customizable
       - utilities.Customizations
@@ -78,6 +76,7 @@ items:
       - utilities.IBaseProps
       - utilities.IChangeDescription
       - utilities.IChangeEventCallback
+      - utilities.IClassNamesFunctionOptions
       - utilities.ICustomizableProps
       - utilities.ICustomizations
       - utilities.ICustomizerContext
@@ -86,12 +85,16 @@ items:
       - utilities.IFitContentToBoundsOptions
       - utilities.initializeComponentRef
       - utilities.initializeFocusRects
+      - utilities.IObjectWithKey
       - utilities.IPoint
       - utilities.IPropsWithStyles
       - utilities.IRectangle
       - utilities.IRenderComponent
       - utilities.IRenderFunction
+      - utilities.isControlled
       - utilities.isDirectionalKeyCode
+      - utilities.ISelection
+      - utilities.ISelectionOptions
       - utilities.isElementFocusSubZone
       - utilities.isElementFocusZone
       - utilities.isElementTabbable
@@ -100,6 +103,7 @@ items:
       - utilities.isMac
       - utilities.isVirtualElement
       - utilities.IVirtualElement
+      - utilities.IWarnControlledUsageParams
       - utilities.mapEnumByName
       - utilities.memoize
       - utilities.memoizeFunction
@@ -116,9 +120,14 @@ items:
       - utilities.Rectangle
       - utilities.removeIndex
       - utilities.replaceElement
+      - utilities.resetControlledWarnings
       - utilities.resetIds
       - utilities.resetMemoizations
+      - utilities.Selection
+      - utilities.SelectionDirection
+      - utilities.SelectionMode
       - utilities.setBaseUrl
+      - utilities.setFocusVisibility
       - utilities.setLanguage
       - utilities.setPortalAttribute
       - utilities.setRTL
@@ -133,6 +142,7 @@ items:
       - utilities.values
       - utilities.warn
       - utilities.warnConditionallyRequiredProps
+      - utilities.warnControlledUsage
       - utilities.warnDeprecations
       - utilities.warnMutuallyExclusive
   - uid: utilities.addDirectionalKeyCode
@@ -299,47 +309,6 @@ items:
           description: One or more objects that will be mixed into the target in the order they are provided.
           type:
             - 'any[]'
-  - uid: utilities.autobind
-    summary: >-
-      Autobind is a utility for binding methods in a class. This simplifies tagging methods as being "bound" to the this
-      pointer so that they can be used in scenarios that simply require a function callback.
-    deprecated:
-      content: This has been deprecated in favor of using arrow function properties
-    name: 'autobind(target, key, descriptor)'
-    fullName: 'autobind(target, key, descriptor)'
-    langs:
-      - typeScript
-    type: function
-    syntax:
-      content: >-
-        export declare function autobind<T extends Function>(target: any, key: string, descriptor:
-        TypedPropertyDescriptor<T>): {
-            configurable: boolean;
-            get(): T;
-            set(newValue: any): void;
-        } | void;
-      return:
-        type:
-          - |-
-            {
-                configurable: boolean;
-                get(): T;
-                set(newValue: any): void;
-            } | void
-        description: ''
-      parameters:
-        - id: target
-          description: ''
-          type:
-            - any
-        - id: key
-          description: ''
-          type:
-            - string
-        - id: descriptor
-          description: ''
-          type:
-            - TypedPropertyDescriptor<T>
   - uid: utilities.calculatePrecision
     summary: >-
       Calculates a number's precision based on the number of trailing zeros if the number does not have a decimal
@@ -363,22 +332,28 @@ items:
             - number | string
   - uid: utilities.classNamesFunction
     summary: 'Creates a getClassNames function which calls getStyles given the props, and injects them into mergeStyleSets.'
-    name: classNamesFunction()
-    fullName: classNamesFunction()
+    name: classNamesFunction(options)
+    fullName: classNamesFunction(options)
     langs:
       - typeScript
     type: function
     syntax:
       content: >-
-        export declare function classNamesFunction<TStyleProps extends {}, TStyleSet extends IStyleSet<TStyleSet>>():
-        (getStyles: IStyleFunctionOrObject<TStyleProps, TStyleSet> | undefined, styleProps?: TStyleProps) =>
-        IProcessedStyleSet<TStyleSet>;
+        export declare function classNamesFunction<TStyleProps extends {}, TStyleSet extends
+        IStyleSet<TStyleSet>>(options?: IClassNamesFunctionOptions): (getStyles: IStyleFunctionOrObject<TStyleProps,
+        TStyleSet> | (IStyleFunctionOrObject<TStyleProps, TStyleSet> | undefined)[] | undefined, styleProps?:
+        TStyleProps) => IProcessedStyleSet<TStyleSet>;
       return:
         type:
           - >-
-            (getStyles: IStyleFunctionOrObject<TStyleProps, TStyleSet> | undefined, styleProps?: TStyleProps) =>
-            IProcessedStyleSet<TStyleSet>
+            (getStyles: IStyleFunctionOrObject<TStyleProps, TStyleSet> | (IStyleFunctionOrObject<TStyleProps, TStyleSet>
+            | undefined)[] | undefined, styleProps?: TStyleProps) => IProcessedStyleSet<TStyleSet>
         description: ''
+      parameters:
+        - id: options
+          description: ''
+          type:
+            - utilities.IClassNamesFunctionOptions
   - uid: utilities.createArray
     summary: Creates an array of a given size and helper method to populate.
     name: 'createArray(size, getItem)'
@@ -401,20 +376,6 @@ items:
           description: Callback to populate given cell index.
           type:
             - '(index: number) => T'
-  - uid: utilities.createRef
-    deprecated:
-      content: Use React.createRef. May be removed in 6 months (Jan '19).
-    name: createRef()
-    fullName: createRef()
-    langs:
-      - typeScript
-    type: function
-    syntax:
-      content: 'export declare function createRef<T>(): RefObject<T>;'
-      return:
-        type:
-          - RefObject<T>
-        description: ''
   - uid: utilities.css
     summary: 'Concatination helper, which can merge class names together. Skips over falsey values.'
     name: css(args)
@@ -1383,7 +1344,10 @@ items:
           type:
             - HTMLElement
   - uid: utilities.getWindow
-    summary: Helper to get the window object. Note that in popup scenarios the window object may not be the window use ex
+    summary: >-
+      Helper to get the window object. The helper will make sure to use a cached variable of "window", to avoid overhead
+      and memory leaks in IE11. Note that in popup scenarios the window object won't match the "global" window object,
+      and for these scenarios, you should pass in an element hosted within the popup.
     name: getWindow(rootElement)
     fullName: getWindow(rootElement)
     langs:
@@ -1490,7 +1454,7 @@ items:
       - typeScript
     type: function
     syntax:
-      content: 'export declare function hoistStatics<TSource, TDest>(source: TSource, dest: TDest): TDest;'
+      content: 'export declare function hoistStatics<TSource extends Object, TDest>(source: TSource, dest: TDest): TDest;'
       return:
         type:
           - TDest
@@ -1557,6 +1521,28 @@ items:
           description: the window used to add the event listeners
           type:
             - Window
+  - uid: utilities.isControlled
+    summary: Determines whether a component is controlled.
+    name: 'isControlled(props, valueProp)'
+    fullName: 'isControlled(props, valueProp)'
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export declare function isControlled<P>(props: P, valueProp: keyof P): boolean;'
+      return:
+        type:
+          - boolean
+        description: 'true if controlled, false if uncontrolled'
+      parameters:
+        - id: props
+          description: Component props
+          type:
+            - P
+        - id: valueProp
+          description: Prop containing the controlled value
+          type:
+            - keyof P
   - uid: utilities.isDirectionalKeyCode
     summary: Returns true if the keycode is a directional keyboard key.
     name: isDirectionalKeyCode(which)
@@ -2067,6 +2053,19 @@ items:
           description: The index of the element that should be replaced
           type:
             - number
+  - uid: utilities.resetControlledWarnings
+    summary: Reset controlled usage warnings for testing purposes.
+    name: resetControlledWarnings()
+    fullName: resetControlledWarnings()
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export declare function resetControlledWarnings(): void;'
+      return:
+        type:
+          - void
+        description: ''
   - uid: utilities.resetIds
     summary: Resets id counter to an (optional) number.
     name: resetIds(counter)
@@ -2116,6 +2115,32 @@ items:
           description: ''
           type:
             - string
+  - uid: utilities.setFocusVisibility
+    summary: >-
+      Sets the visibility of focus styling. By default, focus styling (the box surrounding a focused Button, for
+      example) only show up when navigational keypresses occur (through TAB, arrows, pgup/down, home and end), and are
+      hidden when mouse interactions occur. This API provides an imperative way to turn them on/off. A use case might be
+      when you have a keypress like ctrl-f6 navigate to a particular region on the page, and want focus to show up.
+    name: 'setFocusVisibility(enabled, target)'
+    fullName: 'setFocusVisibility(enabled, target)'
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export declare function setFocusVisibility(enabled: boolean, target?: Element): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: enabled
+          description: whether to remove or add focus
+          type:
+            - boolean
+        - id: target
+          description: optional target
+          type:
+            - Element
   - uid: utilities.setLanguage
     summary: Sets the rtl state of the page (by adjusting the dir attribute of the html element.)
     name: 'setLanguage(language, avoidPersisting)'
@@ -2286,8 +2311,8 @@ items:
     summary: >-
       The styled HOC wrapper allows you to create a functional wrapper around a given component which will resolve
       getStyles functional props, and mix customized props passed in using concatStyleSets.
-    name: 'styled(Component, baseStyles, getProps, customizable)'
-    fullName: 'styled(Component, baseStyles, getProps, customizable)'
+    name: 'styled(Component, baseStyles, getProps, customizable, pure)'
+    fullName: 'styled(Component, baseStyles, getProps, customizable, pure)'
     langs:
       - typeScript
     type: function
@@ -2296,8 +2321,8 @@ items:
         export declare function styled<TComponentProps extends IPropsWithStyles<TStyleProps, TStyleSet>, TStyleProps,
         TStyleSet extends IStyleSet<TStyleSet>>(Component: React.ComponentClass<TComponentProps> |
         React.StatelessComponent<TComponentProps>, baseStyles: IStyleFunctionOrObject<TStyleProps, TStyleSet>,
-        getProps?: (props: TComponentProps) => Partial<TComponentProps>, customizable?: ICustomizableProps):
-        React.StatelessComponent<TComponentProps>;
+        getProps?: (props: TComponentProps) => Partial<TComponentProps>, customizable?: ICustomizableProps, pure?:
+        boolean): React.StatelessComponent<TComponentProps>;
       return:
         type:
           - React.StatelessComponent<TComponentProps>
@@ -2319,6 +2344,13 @@ items:
           description: An object which defines which props can be customized using the Customizer.
           type:
             - utilities.ICustomizableProps
+        - id: pure
+          description: >-
+            A boolean indicating if the component should avoid re-rendering when props haven't changed. Note that pure
+            should not be used on components which allow children, or take in complex objects or arrays as props which
+            could mutate on every render.
+          type:
+            - boolean
   - uid: utilities.toMatrix
     summary: Convert the given array to a matrix with columnCount number of columns.
     name: 'toMatrix(items, columnCount)'
@@ -2435,6 +2467,32 @@ items:
           description: Whether the condition is met.
           type:
             - boolean
+  - uid: utilities.warnControlledUsage
+    summary: >-
+      Check for and warn on the following error conditions with a form component: - A value prop is provided (indicated
+      it's being used as controlled) without a change handler, and the component is not read-only - Both the value and
+      defaultValue props are provided - The component is attempting to switch between controlled and uncontrolled - The
+      value or default value are null (unless allowNullValue is set)
+
+
+      The messages mimic the warnings React gives for these error conditions on input elements. The warning will only be
+      displayed once per component ID.
+    name: warnControlledUsage(params)
+    fullName: warnControlledUsage(params)
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export declare function warnControlledUsage<P>(params: IWarnControlledUsageParams<P>): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: params
+          description: ''
+          type:
+            - IWarnControlledUsageParams<P>
   - uid: utilities.warnDeprecations
     summary: Warns when a deprecated props are being used.
     name: 'warnDeprecations(componentName, props, deprecationMap)'
@@ -2518,6 +2576,8 @@ references:
     name: IChangeDescription
   - uid: utilities.IChangeEventCallback
     name: IChangeEventCallback
+  - uid: utilities.IClassNamesFunctionOptions
+    name: IClassNamesFunctionOptions
   - uid: utilities.ICustomizableProps
     name: ICustomizableProps
   - uid: utilities.ICustomizations
@@ -2530,6 +2590,8 @@ references:
     name: IDisposable
   - uid: utilities.IFitContentToBoundsOptions
     name: IFitContentToBoundsOptions
+  - uid: utilities.IObjectWithKey
+    name: IObjectWithKey
   - uid: utilities.IPoint
     name: IPoint
   - uid: utilities.IPropsWithStyles
@@ -2540,9 +2602,21 @@ references:
     name: IRenderComponent
   - uid: utilities.IRenderFunction
     name: IRenderFunction
+  - uid: utilities.ISelection
+    name: ISelection
+  - uid: utilities.ISelectionOptions
+    name: ISelectionOptions
   - uid: utilities.ISize
     name: ISize
   - uid: utilities.IVirtualElement
     name: IVirtualElement
+  - uid: utilities.IWarnControlledUsageParams
+    name: IWarnControlledUsageParams
   - uid: utilities.Rectangle
     name: Rectangle
+  - uid: utilities.Selection
+    name: Selection
+  - uid: utilities.SelectionDirection
+    name: SelectionDirection
+  - uid: utilities.SelectionMode
+    name: SelectionMode

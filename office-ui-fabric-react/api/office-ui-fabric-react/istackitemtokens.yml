@@ -9,7 +9,9 @@ items:
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.IStackItemTokens.margin
+      - office-ui-fabric-react.IStackItemTokens.padding
   - uid: office-ui-fabric-react.IStackItemTokens.margin
+    summary: Defines the margin to be applied to the StackItem relative to its container.
     name: margin
     fullName: margin
     langs:
@@ -17,6 +19,18 @@ items:
     type: property
     syntax:
       content: 'margin?: number | string;'
+      return:
+        type:
+          - number | string
+  - uid: office-ui-fabric-react.IStackItemTokens.padding
+    summary: Defines the padding to be applied to the StackItem contents relative to its border.
+    name: padding
+    fullName: padding
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'padding?: number | string;'
       return:
         type:
           - number | string

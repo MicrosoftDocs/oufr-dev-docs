@@ -140,10 +140,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'onChange?: (newValue: any) => void;'
+      content: 'onChange?: (event?: React.ChangeEvent<HTMLInputElement>, newValue?: string) => void;'
       return:
         type:
-          - '(newValue: any) => void'
+          - '(event?: React.ChangeEvent<HTMLInputElement>, newValue?: string) => void'
   - uid: office-ui-fabric-react.ISearchBoxProps.onChanged
     summary: 'Deprecated at v0.52.2, use `onChange` instead.'
     deprecated:

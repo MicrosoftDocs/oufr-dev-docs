@@ -7,7 +7,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'React.Component<ITextFieldProps, ITextFieldState> '
+      - 'React.Component<ITextFieldProps, ITextFieldState, ITextFieldSnapshot> '
     implements:
       - office-ui-fabric-react.ITextField
     package: office-ui-fabric-react
@@ -16,10 +16,10 @@ items:
       - office-ui-fabric-react.TextFieldBase.blur
       - office-ui-fabric-react.TextFieldBase.componentDidMount
       - office-ui-fabric-react.TextFieldBase.componentDidUpdate
-      - office-ui-fabric-react.TextFieldBase.componentWillReceiveProps
       - office-ui-fabric-react.TextFieldBase.componentWillUnmount
       - office-ui-fabric-react.TextFieldBase.defaultProps
       - office-ui-fabric-react.TextFieldBase.focus
+      - office-ui-fabric-react.TextFieldBase.getSnapshotBeforeUpdate
       - office-ui-fabric-react.TextFieldBase.render
       - office-ui-fabric-react.TextFieldBase.select
       - office-ui-fabric-react.TextFieldBase.selectionEnd
@@ -68,34 +68,30 @@ items:
           - void
         description: ''
   - uid: office-ui-fabric-react.TextFieldBase.componentDidUpdate
-    name: componentDidUpdate()
-    fullName: componentDidUpdate()
+    name: 'componentDidUpdate(prevProps, prevState, snapshot)'
+    fullName: 'componentDidUpdate(prevProps, prevState, snapshot)'
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'componentDidUpdate(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: office-ui-fabric-react.TextFieldBase.componentWillReceiveProps
-    name: componentWillReceiveProps(newProps)
-    fullName: componentWillReceiveProps(newProps)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'componentWillReceiveProps(newProps: ITextFieldProps): void;'
+      content: 'componentDidUpdate(prevProps: ITextFieldProps, prevState: ITextFieldState, snapshot: ITextFieldSnapshot): void;'
       return:
         type:
           - void
         description: ''
       parameters:
-        - id: newProps
+        - id: prevProps
           description: ''
           type:
             - office-ui-fabric-react.ITextFieldProps
+        - id: prevState
+          description: ''
+          type:
+            - ITextFieldState
+        - id: snapshot
+          description: ''
+          type:
+            - ITextFieldSnapshot
   - uid: office-ui-fabric-react.TextFieldBase.componentWillUnmount
     name: componentWillUnmount()
     fullName: componentWillUnmount()
@@ -132,6 +128,27 @@ items:
         type:
           - void
         description: ''
+  - uid: office-ui-fabric-react.TextFieldBase.getSnapshotBeforeUpdate
+    name: 'getSnapshotBeforeUpdate(prevProps, prevState)'
+    fullName: 'getSnapshotBeforeUpdate(prevProps, prevState)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSnapshotBeforeUpdate(prevProps: ITextFieldProps, prevState: ITextFieldState): ITextFieldSnapshot | null;'
+      return:
+        type:
+          - ITextFieldSnapshot | null
+        description: ''
+      parameters:
+        - id: prevProps
+          description: ''
+          type:
+            - office-ui-fabric-react.ITextFieldProps
+        - id: prevState
+          description: ''
+          type:
+            - ITextFieldState
   - uid: office-ui-fabric-react.TextFieldBase.render
     name: render()
     fullName: render()

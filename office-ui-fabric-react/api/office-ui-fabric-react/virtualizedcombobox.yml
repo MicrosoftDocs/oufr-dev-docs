@@ -7,9 +7,9 @@ items:
       - typeScript
     type: class
     extends:
-      - ''
+      - 'BaseComponent<IComboBoxProps, {}> '
     implements:
-      - ''
+      - office-ui-fabric-react.IComboBox
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.VirtualizedComboBox._onRenderList
@@ -17,6 +17,7 @@ items:
       - office-ui-fabric-react.VirtualizedComboBox.dismissMenu
       - office-ui-fabric-react.VirtualizedComboBox.focus
       - office-ui-fabric-react.VirtualizedComboBox.render
+      - office-ui-fabric-react.VirtualizedComboBox.selectedOptions
   - uid: office-ui-fabric-react.VirtualizedComboBox._onRenderList
     name: _onRenderList
     fullName: _onRenderList
@@ -75,3 +76,15 @@ items:
         type:
           - JSX.Element
         description: ''
+  - uid: office-ui-fabric-react.VirtualizedComboBox.selectedOptions
+    summary: All selected options
+    name: selectedOptions
+    fullName: selectedOptions
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly selectedOptions: IComboBoxOption[];'
+      return:
+        type:
+          - 'IComboBoxOption[]'

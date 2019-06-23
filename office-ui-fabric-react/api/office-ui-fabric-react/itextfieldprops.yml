@@ -11,20 +11,17 @@ items:
       - 'React.AllHTMLAttributes<HTMLInputElement | HTMLTextAreaElement> '
     package: office-ui-fabric-react
     children:
-      - office-ui-fabric-react.ITextFieldProps.addonString
       - office-ui-fabric-react.ITextFieldProps.ariaLabel
       - office-ui-fabric-react.ITextFieldProps.autoAdjustHeight
       - office-ui-fabric-react.ITextFieldProps.autoComplete
       - office-ui-fabric-react.ITextFieldProps.borderless
       - office-ui-fabric-react.ITextFieldProps.className
-      - office-ui-fabric-react.ITextFieldProps.componentId
       - office-ui-fabric-react.ITextFieldProps.componentRef
       - office-ui-fabric-react.ITextFieldProps.defaultValue
       - office-ui-fabric-react.ITextFieldProps.deferredValidationTime
       - office-ui-fabric-react.ITextFieldProps.description
       - office-ui-fabric-react.ITextFieldProps.disabled
       - office-ui-fabric-react.ITextFieldProps.errorMessage
-      - office-ui-fabric-react.ITextFieldProps.iconClass
       - office-ui-fabric-react.ITextFieldProps.iconProps
       - office-ui-fabric-react.ITextFieldProps.inputClassName
       - office-ui-fabric-react.ITextFieldProps.label
@@ -32,12 +29,9 @@ items:
       - office-ui-fabric-react.ITextFieldProps.maskChar
       - office-ui-fabric-react.ITextFieldProps.maskFormat
       - office-ui-fabric-react.ITextFieldProps.multiline
-      - office-ui-fabric-react.ITextFieldProps.onBeforeChange
       - office-ui-fabric-react.ITextFieldProps.onChange
-      - office-ui-fabric-react.ITextFieldProps.onChanged
       - office-ui-fabric-react.ITextFieldProps.onGetErrorMessage
       - office-ui-fabric-react.ITextFieldProps.onNotifyValidationResult
-      - office-ui-fabric-react.ITextFieldProps.onRenderAddon
       - office-ui-fabric-react.ITextFieldProps.onRenderDescription
       - office-ui-fabric-react.ITextFieldProps.onRenderLabel
       - office-ui-fabric-react.ITextFieldProps.onRenderPrefix
@@ -53,19 +47,6 @@ items:
       - office-ui-fabric-react.ITextFieldProps.validateOnFocusOut
       - office-ui-fabric-react.ITextFieldProps.validateOnLoad
       - office-ui-fabric-react.ITextFieldProps.value
-  - uid: office-ui-fabric-react.ITextFieldProps.addonString
-    deprecated:
-      content: Use `prefix` instead.
-    name: addonString
-    fullName: addonString
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'addonString?: string;'
-      return:
-        type:
-          - string
   - uid: office-ui-fabric-react.ITextFieldProps.ariaLabel
     summary: Aria label for the text field.
     name: ariaLabel
@@ -130,19 +111,6 @@ items:
       return:
         type:
           - string
-  - uid: office-ui-fabric-react.ITextFieldProps.componentId
-    deprecated:
-      content: Serves no function.
-    name: componentId
-    fullName: componentId
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'componentId?: string;'
-      return:
-        type:
-          - string
   - uid: office-ui-fabric-react.ITextFieldProps.componentRef
     summary: >-
       Optional callback to access the ITextField component. Use this instead of ref for accessing the public methods and
@@ -172,7 +140,9 @@ items:
         type:
           - string
   - uid: office-ui-fabric-react.ITextFieldProps.deferredValidationTime
-    summary: Text field will start to validate after users stop typing for `deferredValidationTime` milliseconds.
+    summary: >-
+      Text field will start to validate after users stop typing for `deferredValidationTime` milliseconds. Updates to
+      this prop will not be respected.
     name: deferredValidationTime
     fullName: deferredValidationTime
     langs:
@@ -218,23 +188,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'errorMessage?: string;'
+      content: 'errorMessage?: string | JSX.Element;'
       return:
         type:
-          - string
-  - uid: office-ui-fabric-react.ITextFieldProps.iconClass
-    deprecated:
-      content: Use `iconProps` instead.
-    name: iconClass
-    fullName: iconClass
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'iconClass?: string;'
-      return:
-        type:
-          - string
+          - string | JSX.Element
   - uid: office-ui-fabric-react.ITextFieldProps.iconProps
     summary: 'Props for an optional icon, displayed in the far right end of the text field.'
     name: iconProps
@@ -329,23 +286,6 @@ items:
       return:
         type:
           - boolean
-  - uid: office-ui-fabric-react.ITextFieldProps.onBeforeChange
-    summary: >-
-      Called after the input's value updates but before re-rendering. Unlike `onChange`<!-- -->, this is also called
-      when the value is updated via props.
-
-
-      NOTE: This should be used \*very\* rarely. `onChange` is more appropriate for most situations.
-    name: onBeforeChange
-    fullName: onBeforeChange
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'onBeforeChange?: (newValue?: string) => void;'
-      return:
-        type:
-          - '(newValue?: string) => void'
   - uid: office-ui-fabric-react.ITextFieldProps.onChange
     summary: Callback for when the input value changes. This is called on both `input` and `change` native events.
     name: onChange
@@ -358,41 +298,28 @@ items:
       return:
         type:
           - '(event: React.FormEvent<HTMLInputElement | HTMLTextAreaElement>, newValue?: string) => void'
-  - uid: office-ui-fabric-react.ITextFieldProps.onChanged
-    deprecated:
-      content: Use `onChange` instead.
-    name: onChanged
-    fullName: onChanged
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'onChanged?: (newValue: any) => void;'
-      return:
-        type:
-          - '(newValue: any) => void'
   - uid: office-ui-fabric-react.ITextFieldProps.onGetErrorMessage
     summary: >-
       Function used to determine whether the input value is valid and get an error message if not. Mutually exclusive
       with the static string `errorMessage` (it will take precedence over this).
 
 
-      When it returns string: - If valid, it returns empty string. - If invalid, it returns the error message string and
-      the text field will show a red border and show an error message below the text field.
+      When it returns `string | JSX.Element`<!-- -->: - If valid, it returns empty string. - If invalid, it returns the
+      error message and the text field will show a red border and show an error message below the text field.
 
 
-      When it returns Promise<string>: - The resolved value is displayed as the error message. - If rejected, the value
-      is thrown away.
+      When it returns `Promise<string | JSX.Element>`<!-- -->: - The resolved value is displayed as the error message. -
+      If rejected, the value is thrown away.
     name: onGetErrorMessage
     fullName: onGetErrorMessage
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'onGetErrorMessage?: (value: string) => string | PromiseLike<string> | undefined;'
+      content: 'onGetErrorMessage?: (value: string) => string | JSX.Element | PromiseLike<string | JSX.Element> | undefined;'
       return:
         type:
-          - '(value: string) => string | PromiseLike<string> | undefined'
+          - '(value: string) => string | JSX.Element | PromiseLike<string | JSX.Element> | undefined'
   - uid: office-ui-fabric-react.ITextFieldProps.onNotifyValidationResult
     summary: Function called after validation completes.
     name: onNotifyValidationResult
@@ -401,23 +328,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'onNotifyValidationResult?: (errorMessage: string, value: string | undefined) => void;'
+      content: 'onNotifyValidationResult?: (errorMessage: string | JSX.Element, value: string | undefined) => void;'
       return:
         type:
-          - '(errorMessage: string, value: string | undefined) => void'
-  - uid: office-ui-fabric-react.ITextFieldProps.onRenderAddon
-    deprecated:
-      content: Use `onRenderPrefix` instead.
-    name: onRenderAddon
-    fullName: onRenderAddon
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'onRenderAddon?: IRenderFunction<ITextFieldProps>;'
-      return:
-        type:
-          - IRenderFunction<ITextFieldProps>
+          - '(errorMessage: string | JSX.Element, value: string | undefined) => void'
   - uid: office-ui-fabric-react.ITextFieldProps.onRenderDescription
     summary: Custom renderer for the description.
     name: onRenderDescription

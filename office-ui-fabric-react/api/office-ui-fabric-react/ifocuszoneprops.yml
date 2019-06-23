@@ -62,6 +62,8 @@ items:
           - boolean
   - uid: office-ui-fabric-react.IFocusZoneProps.ariaDescribedBy
     summary: Sets the aria-describedby attribute.
+    deprecated:
+      content: Directly use the `aria-describedby` attribute instead
     name: ariaDescribedBy
     fullName: ariaDescribedBy
     langs:
@@ -74,6 +76,8 @@ items:
           - string
   - uid: office-ui-fabric-react.IFocusZoneProps.ariaLabelledBy
     summary: Sets the aria-labelledby attribute.
+    deprecated:
+      content: Directly use the `aria-labelledby` attribute instead
     name: ariaLabelledBy
     fullName: ariaLabelledBy
     langs:
@@ -196,10 +200,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'elementType?: keyof React.ReactHTML;'
+      content: 'elementType?: any;'
       return:
         type:
-          - keyof React.ReactHTML
+          - any
   - uid: office-ui-fabric-react.IFocusZoneProps.handleTabKey
     summary: >-
       Allows tab key to be handled to tab through a list of items in the focus zone, an unfortunate side effect is that

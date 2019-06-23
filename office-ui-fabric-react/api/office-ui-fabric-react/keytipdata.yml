@@ -8,7 +8,7 @@ items:
       - typeScript
     type: class
     extends:
-      - ''
+      - 'React.Component<IKeytipDataProps & IRenderComponent<{}>, {}> '
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.KeytipData.componentDidMount
@@ -28,17 +28,22 @@ items:
           - void
         description: ''
   - uid: office-ui-fabric-react.KeytipData.componentDidUpdate
-    name: componentDidUpdate()
-    fullName: componentDidUpdate()
+    name: componentDidUpdate(prevProps)
+    fullName: componentDidUpdate(prevProps)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'componentDidUpdate(): void;'
+      content: 'componentDidUpdate(prevProps: IKeytipDataProps & IRenderComponent<{}>): void;'
       return:
         type:
           - void
         description: ''
+      parameters:
+        - id: prevProps
+          description: ''
+          type:
+            - 'IKeytipDataProps & IRenderComponent<{}>'
   - uid: office-ui-fabric-react.KeytipData.componentWillUnmount
     name: componentWillUnmount()
     fullName: componentWillUnmount()

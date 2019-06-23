@@ -147,10 +147,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'onRenderSuggestionsItem?: (props: T, itemProps: any) => JSX.Element;'
+      content: 'onRenderSuggestionsItem?: (props: T, itemProps: ISuggestionItemProps<T>) => JSX.Element;'
       return:
         type:
-          - '(props: T, itemProps: any) => JSX.Element'
+          - '(props: T, itemProps: ISuggestionItemProps<T>) => JSX.Element'
   - uid: office-ui-fabric-react.IBaseFloatingPickerProps.onResolveSuggestions
     summary: >-
       A callback for what should happen when a person types text into the input. Returns the already selected items so

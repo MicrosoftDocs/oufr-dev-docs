@@ -50,6 +50,7 @@ items:
       - office-ui-fabric-react.ContextualMenuBase
       - office-ui-fabric-react.ContextualMenuItemBase
       - office-ui-fabric-react.ContextualMenuItemType
+      - office-ui-fabric-react.correctHex
       - office-ui-fabric-react.correctHSV
       - office-ui-fabric-react.correctRGB
       - office-ui-fabric-react.createGenericItem
@@ -59,6 +60,8 @@ items:
       - office-ui-fabric-react.DateRangeType
       - office-ui-fabric-react.DayOfWeek
       - office-ui-fabric-react.DefaultButton
+      - office-ui-fabric-react.DetailsColumnBase
+      - office-ui-fabric-react.DetailsHeaderBase
       - office-ui-fabric-react.DetailsListBase
       - office-ui-fabric-react.DetailsListLayoutMode
       - office-ui-fabric-react.DetailsRowBase
@@ -81,12 +84,14 @@ items:
       - office-ui-fabric-react.FocusTrapZone
       - office-ui-fabric-react.FocusZone
       - office-ui-fabric-react.FocusZoneDirection
+      - office-ui-fabric-react.getAllSelectedOptions
       - office-ui-fabric-react.getBackgroundShade
       - office-ui-fabric-react.getColorFromHSV
       - office-ui-fabric-react.getColorFromRGBA
       - office-ui-fabric-react.getColorFromString
       - office-ui-fabric-react.getContrastRatio
       - office-ui-fabric-react.getFullColorString
+      - office-ui-fabric-react.getPersonaInitialsColor
       - office-ui-fabric-react.getShade
       - office-ui-fabric-react.getSubmenuItems
       - office-ui-fabric-react.GridCell
@@ -124,7 +129,7 @@ items:
       - office-ui-fabric-react.IBaseSelectedItemsListProps
       - office-ui-fabric-react.IBaseSelectedItemsListState
       - office-ui-fabric-react.IBreadcrumb
-      - office-ui-fabric-react.IBreadCrumbData
+      - office-ui-fabric-react.IBreadcrumbData
       - office-ui-fabric-react.IBreadcrumbItem
       - office-ui-fabric-react.IBreadcrumbProps
       - office-ui-fabric-react.IBreadcrumbStyleProps
@@ -185,7 +190,9 @@ items:
       - office-ui-fabric-react.IColorSliderStyles
       - office-ui-fabric-react.IColumn
       - office-ui-fabric-react.IColumnDragDropDetails
+      - office-ui-fabric-react.IColumnReorderHeaderProps
       - office-ui-fabric-react.IColumnReorderOptions
+      - office-ui-fabric-react.IColumnResizeDetails
       - office-ui-fabric-react.IComboBox
       - office-ui-fabric-react.IComboBoxOption
       - office-ui-fabric-react.IComboBoxOptionStyles
@@ -221,12 +228,17 @@ items:
       - office-ui-fabric-react.IDatePickerStyleProps
       - office-ui-fabric-react.IDatePickerStyles
       - office-ui-fabric-react.IDetailsCheckboxProps
+      - office-ui-fabric-react.IDetailsColumnProps
+      - office-ui-fabric-react.IDetailsColumnStyles
       - office-ui-fabric-react.IDetailsFooterBaseProps
       - office-ui-fabric-react.IDetailsFooterProps
       - office-ui-fabric-react.IDetailsGroupDividerProps
       - office-ui-fabric-react.IDetailsGroupRenderProps
+      - office-ui-fabric-react.IDetailsHeader
       - office-ui-fabric-react.IDetailsHeaderBaseProps
       - office-ui-fabric-react.IDetailsHeaderProps
+      - office-ui-fabric-react.IDetailsHeaderState
+      - office-ui-fabric-react.IDetailsHeaderStyles
       - office-ui-fabric-react.IDetailsItemProps
       - office-ui-fabric-react.IDetailsList
       - office-ui-fabric-react.IDetailsListCheckboxProps
@@ -237,6 +249,7 @@ items:
       - office-ui-fabric-react.IDetailsRowBaseProps
       - office-ui-fabric-react.IDetailsRowCheckProps
       - office-ui-fabric-react.IDetailsRowCheckStyles
+      - office-ui-fabric-react.IDetailsRowFieldsProps
       - office-ui-fabric-react.IDetailsRowProps
       - office-ui-fabric-react.IDetailsRowSelectionState
       - office-ui-fabric-react.IDetailsRowState
@@ -297,6 +310,11 @@ items:
       - office-ui-fabric-react.IDocumentCardTitleProps
       - office-ui-fabric-react.IDocumentCardTitleStyleProps
       - office-ui-fabric-react.IDocumentCardTitleStyles
+      - office-ui-fabric-react.IDragDropContext
+      - office-ui-fabric-react.IDragDropEvents
+      - office-ui-fabric-react.IDragDropHelper
+      - office-ui-fabric-react.IDragDropOptions
+      - office-ui-fabric-react.IDragOptions
       - office-ui-fabric-react.IDropdown
       - office-ui-fabric-react.IDropdownInternalProps
       - office-ui-fabric-react.IDropdownOption
@@ -304,6 +322,7 @@ items:
       - office-ui-fabric-react.IDropdownState
       - office-ui-fabric-react.IDropdownStyles
       - office-ui-fabric-react.IDropdownSubComponentStyles
+      - office-ui-fabric-react.IDropHintDetails
       - office-ui-fabric-react.IEntityRect
       - office-ui-fabric-react.IExpandingCard
       - office-ui-fabric-react.IExpandingCardProps
@@ -407,7 +426,13 @@ items:
       - office-ui-fabric-react.IModal
       - office-ui-fabric-react.IModalProps
       - office-ui-fabric-react.IModalStyles
-      - office-ui-fabric-react.IObjectWithKey
+      - office-ui-fabric-react.INav
+      - office-ui-fabric-react.INavLink
+      - office-ui-fabric-react.INavLinkGroup
+      - office-ui-fabric-react.INavProps
+      - office-ui-fabric-react.INavState
+      - office-ui-fabric-react.INavStyleProps
+      - office-ui-fabric-react.INavStyles
       - office-ui-fabric-react.IOverflowSet
       - office-ui-fabric-react.IOverflowSetItemProps
       - office-ui-fabric-react.IOverflowSetProps
@@ -440,7 +465,6 @@ items:
       - office-ui-fabric-react.IPersonaCoinStyleProps
       - office-ui-fabric-react.IPersonaCoinStyles
       - office-ui-fabric-react.IPersonaPresenceProps
-      - office-ui-fabric-react.IPersonaPresenceStyleProps
       - office-ui-fabric-react.IPersonaPresenceStyles
       - office-ui-fabric-react.IPersonaProps
       - office-ui-fabric-react.IPersonaSharedProps
@@ -495,8 +519,6 @@ items:
       - office-ui-fabric-react.ISelectedItemProps
       - office-ui-fabric-react.ISelectedPeopleItemProps
       - office-ui-fabric-react.ISelectedPeopleProps
-      - office-ui-fabric-react.ISelection
-      - office-ui-fabric-react.ISelectionOptions
       - office-ui-fabric-react.ISelectionZone
       - office-ui-fabric-react.ISelectionZoneProps
       - office-ui-fabric-react.ISeparator
@@ -507,6 +529,8 @@ items:
       - office-ui-fabric-react.IShimmerCircleProps
       - office-ui-fabric-react.IShimmerCircleStyles
       - office-ui-fabric-react.IShimmerColors
+      - office-ui-fabric-react.IShimmeredDetailsListProps
+      - office-ui-fabric-react.IShimmeredDetailsListStyles
       - office-ui-fabric-react.IShimmerElement
       - office-ui-fabric-react.IShimmerElementsGroup
       - office-ui-fabric-react.IShimmerElementsGroupProps
@@ -534,6 +558,7 @@ items:
       - office-ui-fabric-react.ISpinnerProps
       - office-ui-fabric-react.ISpinnerStyleProps
       - office-ui-fabric-react.ISpinnerStyles
+      - office-ui-fabric-react.isRelativeUrl
       - office-ui-fabric-react.IStackItemProps
       - office-ui-fabric-react.IStackItemSlots
       - office-ui-fabric-react.IStackItemTokens
@@ -575,7 +600,6 @@ items:
       - office-ui-fabric-react.ITeachingBubbleSubComponentStyles
       - office-ui-fabric-react.ITextField
       - office-ui-fabric-react.ITextFieldProps
-      - office-ui-fabric-react.ITextFieldState
       - office-ui-fabric-react.ITextFieldStyles
       - office-ui-fabric-react.ITextFieldSubComponentStyles
       - office-ui-fabric-react.ITextProps
@@ -599,6 +623,9 @@ items:
       - office-ui-fabric-react.ITooltipStyles
       - office-ui-fabric-react.IVerticalDividerClassNames
       - office-ui-fabric-react.IVerticalDividerProps
+      - office-ui-fabric-react.IVerticalDividerStyles
+      - office-ui-fabric-react.IViewport
+      - office-ui-fabric-react.IWithViewportProps
       - office-ui-fabric-react.KeyboardSpinDirection
       - office-ui-fabric-react.Keytip
       - office-ui-fabric-react.KeytipData
@@ -615,6 +642,7 @@ items:
       - office-ui-fabric-react.MessageBarButton
       - office-ui-fabric-react.MessageBarType
       - office-ui-fabric-react.ModalBase
+      - office-ui-fabric-react.NavBase
       - office-ui-fabric-react.NormalPeoplePickerBase
       - office-ui-fabric-react.OpenCardMode
       - office-ui-fabric-react.OverflowButtonType
@@ -638,15 +666,15 @@ items:
       - office-ui-fabric-react.RatingBase
       - office-ui-fabric-react.RatingSize
       - office-ui-fabric-react.ResizeGroupBase
+      - office-ui-fabric-react.ResizeGroupDirection
+      - office-ui-fabric-react.ResponsiveMode
       - office-ui-fabric-react.rgb2hex
       - office-ui-fabric-react.rgb2hsv
       - office-ui-fabric-react.ScrollablePaneBase
       - office-ui-fabric-react.SearchBoxBase
       - office-ui-fabric-react.SelectableOptionMenuItemType
+      - office-ui-fabric-react.SelectAllVisibility
       - office-ui-fabric-react.SelectedPeopleList
-      - office-ui-fabric-react.Selection
-      - office-ui-fabric-react.SelectionDirection
-      - office-ui-fabric-react.SelectionMode
       - office-ui-fabric-react.SelectionZone
       - office-ui-fabric-react.SemanticColorSlots
       - office-ui-fabric-react.Shade
@@ -784,6 +812,26 @@ items:
           description: ''
           type:
             - number
+  - uid: office-ui-fabric-react.correctHex
+    summary: >-
+      Corrects a hex color to have length 3 or 6. Defaults to white if too short. Does NOT check anything besides the
+      length (such as valid characters) and does NOT handle hex values starting with \# sign.
+    name: correctHex(hex)
+    fullName: correctHex(hex)
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export declare function correctHex(hex: string): string;'
+      return:
+        type:
+          - string
+        description: ''
+      parameters:
+        - id: hex
+          description: ''
+          type:
+            - string
   - uid: office-ui-fabric-react.correctHSV
     summary: Corrects an HSV color to fall within the valid range.
     name: correctHSV(color)
@@ -890,6 +938,29 @@ items:
           description: ''
           type:
             - string
+  - uid: office-ui-fabric-react.getAllSelectedOptions
+    name: 'getAllSelectedOptions(options, selectedIndices)'
+    fullName: 'getAllSelectedOptions(options, selectedIndices)'
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: >-
+        export declare function getAllSelectedOptions(options: ISelectableOption[], selectedIndices: number[]):
+        ISelectableOption[];
+      return:
+        type:
+          - 'ISelectableOption[]'
+        description: ''
+      parameters:
+        - id: options
+          description: ''
+          type:
+            - 'ISelectableOption[]'
+        - id: selectedIndices
+          description: ''
+          type:
+            - 'number[]'
   - uid: office-ui-fabric-react.getBackgroundShade
     name: 'getBackgroundShade(color, shade, isInverted)'
     fullName: 'getBackgroundShade(color, shade, isInverted)'
@@ -1023,6 +1094,28 @@ items:
           description: ''
           type:
             - office-ui-fabric-react.IColor
+  - uid: office-ui-fabric-react.getPersonaInitialsColor
+    summary: >-
+      Gets the hex color string (prefixed with \#) for the given persona props. This is the logic used internally by the
+      Persona control.
+    name: getPersonaInitialsColor(props)
+    fullName: getPersonaInitialsColor(props)
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: >-
+        export declare function getPersonaInitialsColor(props: Pick<IPersonaProps, 'primaryText' | 'text' |
+        'initialsColor'>): string;
+      return:
+        type:
+          - string
+        description: 'Hex color string prefixed with \#'
+      parameters:
+        - id: props
+          description: Current persona props
+          type:
+            - 'Pick<IPersonaProps, ''primaryText'' | ''text'' | ''initialsColor''>'
   - uid: office-ui-fabric-react.getShade
     summary: >-
       Given a color and a shade specification, generates the requested shade of the color. Logic: if white darken via
@@ -1216,6 +1309,23 @@ items:
           description: ''
           type:
             - office-ui-fabric-react.IColor
+  - uid: office-ui-fabric-react.isRelativeUrl
+    name: isRelativeUrl(url)
+    fullName: isRelativeUrl(url)
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export declare function isRelativeUrl(url: string): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+      parameters:
+        - id: url
+          description: ''
+          type:
+            - string
   - uid: office-ui-fabric-react.isValidShade
     summary: Returns true if the argument is a valid Shade value
     name: isValidShade(shade)
@@ -1495,6 +1605,10 @@ references:
     name: DayOfWeek
   - uid: office-ui-fabric-react.DefaultButton
     name: DefaultButton
+  - uid: office-ui-fabric-react.DetailsColumnBase
+    name: DetailsColumnBase
+  - uid: office-ui-fabric-react.DetailsHeaderBase
+    name: DetailsHeaderBase
   - uid: office-ui-fabric-react.DetailsListBase
     name: DetailsListBase
   - uid: office-ui-fabric-react.DetailsListLayoutMode
@@ -1599,8 +1713,8 @@ references:
     name: IBaseSelectedItemsListState
   - uid: office-ui-fabric-react.IBreadcrumb
     name: IBreadcrumb
-  - uid: office-ui-fabric-react.IBreadCrumbData
-    name: IBreadCrumbData
+  - uid: office-ui-fabric-react.IBreadcrumbData
+    name: IBreadcrumbData
   - uid: office-ui-fabric-react.IBreadcrumbItem
     name: IBreadcrumbItem
   - uid: office-ui-fabric-react.IBreadcrumbProps
@@ -1721,8 +1835,12 @@ references:
     name: IColumn
   - uid: office-ui-fabric-react.IColumnDragDropDetails
     name: IColumnDragDropDetails
+  - uid: office-ui-fabric-react.IColumnReorderHeaderProps
+    name: IColumnReorderHeaderProps
   - uid: office-ui-fabric-react.IColumnReorderOptions
     name: IColumnReorderOptions
+  - uid: office-ui-fabric-react.IColumnResizeDetails
+    name: IColumnResizeDetails
   - uid: office-ui-fabric-react.IComboBox
     name: IComboBox
   - uid: office-ui-fabric-react.IComboBoxOption
@@ -1793,6 +1911,10 @@ references:
     name: IDatePickerStyles
   - uid: office-ui-fabric-react.IDetailsCheckboxProps
     name: IDetailsCheckboxProps
+  - uid: office-ui-fabric-react.IDetailsColumnProps
+    name: IDetailsColumnProps
+  - uid: office-ui-fabric-react.IDetailsColumnStyles
+    name: IDetailsColumnStyles
   - uid: office-ui-fabric-react.IDetailsFooterBaseProps
     name: IDetailsFooterBaseProps
   - uid: office-ui-fabric-react.IDetailsFooterProps
@@ -1801,10 +1923,16 @@ references:
     name: IDetailsGroupDividerProps
   - uid: office-ui-fabric-react.IDetailsGroupRenderProps
     name: IDetailsGroupRenderProps
+  - uid: office-ui-fabric-react.IDetailsHeader
+    name: IDetailsHeader
   - uid: office-ui-fabric-react.IDetailsHeaderBaseProps
     name: IDetailsHeaderBaseProps
   - uid: office-ui-fabric-react.IDetailsHeaderProps
     name: IDetailsHeaderProps
+  - uid: office-ui-fabric-react.IDetailsHeaderState
+    name: IDetailsHeaderState
+  - uid: office-ui-fabric-react.IDetailsHeaderStyles
+    name: IDetailsHeaderStyles
   - uid: office-ui-fabric-react.IDetailsItemProps
     name: IDetailsItemProps
   - uid: office-ui-fabric-react.IDetailsList
@@ -1825,6 +1953,8 @@ references:
     name: IDetailsRowCheckProps
   - uid: office-ui-fabric-react.IDetailsRowCheckStyles
     name: IDetailsRowCheckStyles
+  - uid: office-ui-fabric-react.IDetailsRowFieldsProps
+    name: IDetailsRowFieldsProps
   - uid: office-ui-fabric-react.IDetailsRowProps
     name: IDetailsRowProps
   - uid: office-ui-fabric-react.IDetailsRowSelectionState
@@ -1945,6 +2075,16 @@ references:
     name: IDocumentCardTitleStyleProps
   - uid: office-ui-fabric-react.IDocumentCardTitleStyles
     name: IDocumentCardTitleStyles
+  - uid: office-ui-fabric-react.IDragDropContext
+    name: IDragDropContext
+  - uid: office-ui-fabric-react.IDragDropEvents
+    name: IDragDropEvents
+  - uid: office-ui-fabric-react.IDragDropHelper
+    name: IDragDropHelper
+  - uid: office-ui-fabric-react.IDragDropOptions
+    name: IDragDropOptions
+  - uid: office-ui-fabric-react.IDragOptions
+    name: IDragOptions
   - uid: office-ui-fabric-react.IDropdown
     name: IDropdown
   - uid: office-ui-fabric-react.IDropdownInternalProps
@@ -1959,6 +2099,8 @@ references:
     name: IDropdownStyles
   - uid: office-ui-fabric-react.IDropdownSubComponentStyles
     name: IDropdownSubComponentStyles
+  - uid: office-ui-fabric-react.IDropHintDetails
+    name: IDropHintDetails
   - uid: office-ui-fabric-react.IEntityRect
     name: IEntityRect
   - uid: office-ui-fabric-react.IExpandingCard
@@ -2165,8 +2307,20 @@ references:
     name: IModalProps
   - uid: office-ui-fabric-react.IModalStyles
     name: IModalStyles
-  - uid: office-ui-fabric-react.IObjectWithKey
-    name: IObjectWithKey
+  - uid: office-ui-fabric-react.INav
+    name: INav
+  - uid: office-ui-fabric-react.INavLink
+    name: INavLink
+  - uid: office-ui-fabric-react.INavLinkGroup
+    name: INavLinkGroup
+  - uid: office-ui-fabric-react.INavProps
+    name: INavProps
+  - uid: office-ui-fabric-react.INavState
+    name: INavState
+  - uid: office-ui-fabric-react.INavStyleProps
+    name: INavStyleProps
+  - uid: office-ui-fabric-react.INavStyles
+    name: INavStyles
   - uid: office-ui-fabric-react.IOverflowSet
     name: IOverflowSet
   - uid: office-ui-fabric-react.IOverflowSetItemProps
@@ -2231,8 +2385,6 @@ references:
     name: IPersonaCoinStyles
   - uid: office-ui-fabric-react.IPersonaPresenceProps
     name: IPersonaPresenceProps
-  - uid: office-ui-fabric-react.IPersonaPresenceStyleProps
-    name: IPersonaPresenceStyleProps
   - uid: office-ui-fabric-react.IPersonaPresenceStyles
     name: IPersonaPresenceStyles
   - uid: office-ui-fabric-react.IPersonaProps
@@ -2339,10 +2491,6 @@ references:
     name: ISelectedPeopleItemProps
   - uid: office-ui-fabric-react.ISelectedPeopleProps
     name: ISelectedPeopleProps
-  - uid: office-ui-fabric-react.ISelection
-    name: ISelection
-  - uid: office-ui-fabric-react.ISelectionOptions
-    name: ISelectionOptions
   - uid: office-ui-fabric-react.ISelectionZone
     name: ISelectionZone
   - uid: office-ui-fabric-react.ISelectionZoneProps
@@ -2363,6 +2511,10 @@ references:
     name: IShimmerCircleStyles
   - uid: office-ui-fabric-react.IShimmerColors
     name: IShimmerColors
+  - uid: office-ui-fabric-react.IShimmeredDetailsListProps
+    name: IShimmeredDetailsListProps
+  - uid: office-ui-fabric-react.IShimmeredDetailsListStyles
+    name: IShimmeredDetailsListStyles
   - uid: office-ui-fabric-react.IShimmerElement
     name: IShimmerElement
   - uid: office-ui-fabric-react.IShimmerElementsGroup
@@ -2497,8 +2649,6 @@ references:
     name: ITextField
   - uid: office-ui-fabric-react.ITextFieldProps
     name: ITextFieldProps
-  - uid: office-ui-fabric-react.ITextFieldState
-    name: ITextFieldState
   - uid: office-ui-fabric-react.ITextFieldStyles
     name: ITextFieldStyles
   - uid: office-ui-fabric-react.ITextFieldSubComponentStyles
@@ -2545,6 +2695,12 @@ references:
     name: IVerticalDividerClassNames
   - uid: office-ui-fabric-react.IVerticalDividerProps
     name: IVerticalDividerProps
+  - uid: office-ui-fabric-react.IVerticalDividerStyles
+    name: IVerticalDividerStyles
+  - uid: office-ui-fabric-react.IViewport
+    name: IViewport
+  - uid: office-ui-fabric-react.IWithViewportProps
+    name: IWithViewportProps
   - uid: office-ui-fabric-react.KeyboardSpinDirection
     name: KeyboardSpinDirection
   - uid: office-ui-fabric-react.Keytip
@@ -2577,6 +2733,8 @@ references:
     name: MessageBarType
   - uid: office-ui-fabric-react.ModalBase
     name: ModalBase
+  - uid: office-ui-fabric-react.NavBase
+    name: NavBase
   - uid: office-ui-fabric-react.NormalPeoplePickerBase
     name: NormalPeoplePickerBase
   - uid: office-ui-fabric-react.OpenCardMode
@@ -2623,20 +2781,20 @@ references:
     name: RatingSize
   - uid: office-ui-fabric-react.ResizeGroupBase
     name: ResizeGroupBase
+  - uid: office-ui-fabric-react.ResizeGroupDirection
+    name: ResizeGroupDirection
+  - uid: office-ui-fabric-react.ResponsiveMode
+    name: ResponsiveMode
   - uid: office-ui-fabric-react.ScrollablePaneBase
     name: ScrollablePaneBase
   - uid: office-ui-fabric-react.SearchBoxBase
     name: SearchBoxBase
   - uid: office-ui-fabric-react.SelectableOptionMenuItemType
     name: SelectableOptionMenuItemType
+  - uid: office-ui-fabric-react.SelectAllVisibility
+    name: SelectAllVisibility
   - uid: office-ui-fabric-react.SelectedPeopleList
     name: SelectedPeopleList
-  - uid: office-ui-fabric-react.Selection
-    name: Selection
-  - uid: office-ui-fabric-react.SelectionDirection
-    name: SelectionDirection
-  - uid: office-ui-fabric-react.SelectionMode
-    name: SelectionMode
   - uid: office-ui-fabric-react.SelectionZone
     name: SelectionZone
   - uid: office-ui-fabric-react.SemanticColorSlots

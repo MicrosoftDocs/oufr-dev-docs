@@ -456,10 +456,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'protected onSuggestionClick: (ev: React.MouseEvent<HTMLElement>, item: any, index: number) => void;'
+      content: 'protected onSuggestionClick: (ev: React.MouseEvent<HTMLElement, MouseEvent>, item: any, index: number) => void;'
       return:
         type:
-          - '(ev: React.MouseEvent<HTMLElement>, item: any, index: number) => void'
+          - '(ev: React.MouseEvent<HTMLElement, MouseEvent>, item: any, index: number) => void'
   - uid: office-ui-fabric-react.BasePicker.onSuggestionRemove
     name: onSuggestionRemove
     fullName: onSuggestionRemove
@@ -467,10 +467,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'protected onSuggestionRemove: (ev: React.MouseEvent<HTMLElement>, item: T, index: number) => void;'
+      content: 'protected onSuggestionRemove: (ev: React.MouseEvent<HTMLElement, MouseEvent>, item: T, index: number) => void;'
       return:
         type:
-          - '(ev: React.MouseEvent<HTMLElement>, item: T, index: number) => void'
+          - '(ev: React.MouseEvent<HTMLElement, MouseEvent>, item: T, index: number) => void'
   - uid: office-ui-fabric-react.BasePicker.onSuggestionSelect
     name: onSuggestionSelect()
     fullName: onSuggestionSelect()
@@ -611,7 +611,7 @@ items:
       content: 'protected selection: Selection;'
       return:
         type:
-          - office-ui-fabric-react.Selection
+          - utilities.Selection
   - uid: office-ui-fabric-react.BasePicker.suggestionElement
     name: suggestionElement
     fullName: suggestionElement

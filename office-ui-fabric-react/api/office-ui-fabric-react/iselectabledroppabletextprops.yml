@@ -26,6 +26,7 @@ items:
       - office-ui-fabric-react.ISelectableDroppableTextProps.onRenderItem
       - office-ui-fabric-react.ISelectableDroppableTextProps.onRenderList
       - office-ui-fabric-react.ISelectableDroppableTextProps.onRenderOption
+      - office-ui-fabric-react.ISelectableDroppableTextProps.openOnKeyboardFocus
       - office-ui-fabric-react.ISelectableDroppableTextProps.options
       - office-ui-fabric-react.ISelectableDroppableTextProps.panelProps
       - office-ui-fabric-react.ISelectableDroppableTextProps.placeholder
@@ -149,10 +150,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'onRenderContainer?: IRenderFunction<ISelectableDroppableTextProps<TComponent>>;'
+      content: 'onRenderContainer?: IRenderFunction<ISelectableDroppableTextProps<TComponent, TListenerElement>>;'
       return:
         type:
-          - IRenderFunction<ISelectableDroppableTextProps<TComponent>>
+          - 'IRenderFunction<ISelectableDroppableTextProps<TComponent, TListenerElement>>'
   - uid: office-ui-fabric-react.ISelectableDroppableTextProps.onRenderItem
     summary: Optional custom renderer for the ISelectableDroppableText options
     name: onRenderItem
@@ -173,10 +174,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'onRenderList?: IRenderFunction<ISelectableDroppableTextProps<TComponent>>;'
+      content: 'onRenderList?: IRenderFunction<ISelectableDroppableTextProps<TComponent, TListenerElement>>;'
       return:
         type:
-          - IRenderFunction<ISelectableDroppableTextProps<TComponent>>
+          - 'IRenderFunction<ISelectableDroppableTextProps<TComponent, TListenerElement>>'
   - uid: office-ui-fabric-react.ISelectableDroppableTextProps.onRenderOption
     summary: Optional custom renderer for the ISelectableDroppableText option content
     name: onRenderOption
@@ -189,6 +190,18 @@ items:
       return:
         type:
           - IRenderFunction<ISelectableOption>
+  - uid: office-ui-fabric-react.ISelectableDroppableTextProps.openOnKeyboardFocus
+    summary: Whether or not the combobox should expand on keyboard focus
+    name: openOnKeyboardFocus
+    fullName: openOnKeyboardFocus
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'openOnKeyboardFocus?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: office-ui-fabric-react.ISelectableDroppableTextProps.options
     summary: Collection of options for this ISelectableDroppableText
     name: options

@@ -22,6 +22,7 @@ items:
       - office-ui-fabric-react.ISliderProps.min
       - office-ui-fabric-react.ISliderProps.onChange
       - office-ui-fabric-react.ISliderProps.onChanged
+      - office-ui-fabric-react.ISliderProps.originFromZero
       - office-ui-fabric-react.ISliderProps.showValue
       - office-ui-fabric-react.ISliderProps.step
       - office-ui-fabric-react.ISliderProps.styles
@@ -175,10 +176,22 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'onChanged?: (event: MouseEvent | TouchEvent, value: number) => void;'
+      content: 'onChanged?: (event: MouseEvent | TouchEvent | KeyboardEvent, value: number) => void;'
       return:
         type:
-          - '(event: MouseEvent | TouchEvent, value: number) => void'
+          - '(event: MouseEvent | TouchEvent | KeyboardEvent, value: number) => void'
+  - uid: office-ui-fabric-react.ISliderProps.originFromZero
+    summary: Optional flag to attach the origin of slider to zero. Helpful when the range include negatives.
+    name: originFromZero
+    fullName: originFromZero
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'originFromZero?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: office-ui-fabric-react.ISliderProps.showValue
     summary: Whether to show the value on the right of the Slider.
     name: showValue

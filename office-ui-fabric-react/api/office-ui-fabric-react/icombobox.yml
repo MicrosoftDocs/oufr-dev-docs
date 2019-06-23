@@ -10,6 +10,7 @@ items:
     children:
       - office-ui-fabric-react.IComboBox.focus
       - office-ui-fabric-react.IComboBox.dismissMenu
+      - office-ui-fabric-react.IComboBox.selectedOptions
   - uid: office-ui-fabric-react.IComboBox.focus
     summary: Sets focus to the input in the comboBox
     name: 'focus(shouldOpenOnFocus, useFocusAsync)'
@@ -44,3 +45,15 @@ items:
       return:
         type:
           - () => void
+  - uid: office-ui-fabric-react.IComboBox.selectedOptions
+    summary: All selected options
+    name: selectedOptions
+    fullName: selectedOptions
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly selectedOptions: IComboBoxOption[];'
+      return:
+        type:
+          - 'IComboBoxOption[]'

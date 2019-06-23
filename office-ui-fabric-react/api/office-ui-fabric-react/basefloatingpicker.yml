@@ -258,10 +258,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'protected onSuggestionClick: (ev: React.MouseEvent<HTMLElement>, item: T, index: number) => void;'
+      content: 'protected onSuggestionClick: (ev: React.MouseEvent<HTMLElement, MouseEvent>, item: T, index: number) => void;'
       return:
         type:
-          - '(ev: React.MouseEvent<HTMLElement>, item: T, index: number) => void'
+          - '(ev: React.MouseEvent<HTMLElement, MouseEvent>, item: T, index: number) => void'
   - uid: office-ui-fabric-react.BaseFloatingPicker.onSuggestionRemove
     name: onSuggestionRemove
     fullName: onSuggestionRemove
@@ -269,10 +269,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'protected onSuggestionRemove: (ev: React.MouseEvent<HTMLElement>, item: T, index: number) => void;'
+      content: 'protected onSuggestionRemove: (ev: React.MouseEvent<HTMLElement, MouseEvent>, item: T, index: number) => void;'
       return:
         type:
-          - '(ev: React.MouseEvent<HTMLElement>, item: T, index: number) => void'
+          - '(ev: React.MouseEvent<HTMLElement, MouseEvent>, item: T, index: number) => void'
   - uid: office-ui-fabric-react.BaseFloatingPicker.render
     name: render()
     fullName: render()
@@ -318,7 +318,7 @@ items:
       content: 'protected selection: Selection;'
       return:
         type:
-          - office-ui-fabric-react.Selection
+          - utilities.Selection
   - uid: office-ui-fabric-react.BaseFloatingPicker.showPicker
     name: showPicker
     fullName: showPicker
