@@ -7,10 +7,11 @@ items:
       - typeScript
     type: class
     extends:
-      - 'BaseComponent<ISearchBoxProps, ISearchBoxState> '
+      - 'React.Component<ISearchBoxProps, ISearchBoxState> '
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.SearchBoxBase.(constructor)
+      - office-ui-fabric-react.SearchBoxBase.componentWillMount
       - office-ui-fabric-react.SearchBoxBase.componentWillReceiveProps
       - office-ui-fabric-react.SearchBoxBase.defaultProps
       - office-ui-fabric-react.SearchBoxBase.focus
@@ -30,6 +31,18 @@ items:
           description: ''
           type:
             - office-ui-fabric-react.ISearchBoxProps
+  - uid: office-ui-fabric-react.SearchBoxBase.componentWillMount
+    name: componentWillMount()
+    fullName: componentWillMount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'componentWillMount(): void;'
+      return:
+        type:
+          - void
+        description: ''
   - uid: office-ui-fabric-react.SearchBoxBase.componentWillReceiveProps
     name: componentWillReceiveProps(newProps)
     fullName: componentWillReceiveProps(newProps)

@@ -24,6 +24,7 @@ items:
       - office-ui-fabric-react.IModalProps.onDismiss
       - office-ui-fabric-react.IModalProps.onDismissed
       - office-ui-fabric-react.IModalProps.onLayerDidMount
+      - office-ui-fabric-react.IModalProps.overlay
       - office-ui-fabric-react.IModalProps.scrollableContentClassName
       - office-ui-fabric-react.IModalProps.styles
       - office-ui-fabric-react.IModalProps.subtitleAriaId
@@ -132,7 +133,7 @@ items:
         type:
           - boolean
   - uid: office-ui-fabric-react.IModalProps.layerProps
-    summary: Props to be passed through to Layer
+    summary: Defines an optional set of props to be passed through to Layer
     name: layerProps
     fullName: layerProps
     langs:
@@ -181,6 +182,18 @@ items:
       return:
         type:
           - () => void
+  - uid: office-ui-fabric-react.IModalProps.overlay
+    summary: Defines an optional set of props to be passed through to Overlay
+    name: overlay
+    fullName: overlay
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'overlay?: IOverlayProps;'
+      return:
+        type:
+          - office-ui-fabric-react.IOverlayProps
   - uid: office-ui-fabric-react.IModalProps.scrollableContentClassName
     summary: Optional override for scrollable content class
     name: scrollableContentClassName

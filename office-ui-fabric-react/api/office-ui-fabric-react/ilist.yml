@@ -10,6 +10,7 @@ items:
     children:
       - office-ui-fabric-react.IList.forceUpdate
       - office-ui-fabric-react.IList.getStartItemIndexInView
+      - office-ui-fabric-react.IList.getTotalListHeight
       - office-ui-fabric-react.IList.scrollToIndex
   - uid: office-ui-fabric-react.IList.forceUpdate
     summary: Force the component to update.
@@ -32,6 +33,18 @@ items:
     type: property
     syntax:
       content: 'getStartItemIndexInView: () => number;'
+      return:
+        type:
+          - () => number
+  - uid: office-ui-fabric-react.IList.getTotalListHeight
+    summary: Get the current height the list and it's pages.
+    name: getTotalListHeight
+    fullName: getTotalListHeight
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'getTotalListHeight?: () => number;'
       return:
         type:
           - () => number

@@ -8,13 +8,28 @@ items:
       - typeScript
     type: class
     extends:
-      - 'BaseComponent<IDetailsColumnProps> '
+      - 'React.Component<IDetailsColumnProps> '
     package: office-ui-fabric-react
     children:
+      - office-ui-fabric-react.DetailsColumnBase.(constructor)
       - office-ui-fabric-react.DetailsColumnBase.componentDidMount
       - office-ui-fabric-react.DetailsColumnBase.componentDidUpdate
       - office-ui-fabric-react.DetailsColumnBase.componentWillUnmount
       - office-ui-fabric-react.DetailsColumnBase.render
+  - uid: office-ui-fabric-react.DetailsColumnBase.(constructor)
+    summary: Constructs a new instance of the `DetailsColumnBase` class
+    name: (constructor)(props)
+    fullName: (constructor)(props)
+    langs:
+      - typeScript
+    type: constructor
+    syntax:
+      content: 'constructor(props: IDetailsColumnProps);'
+      parameters:
+        - id: props
+          description: ''
+          type:
+            - office-ui-fabric-react.IDetailsColumnProps
   - uid: office-ui-fabric-react.DetailsColumnBase.componentDidMount
     name: componentDidMount()
     fullName: componentDidMount()

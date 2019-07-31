@@ -42,6 +42,7 @@ items:
       - office-ui-fabric-react.ICalloutProps.preventDismissOnScroll
       - office-ui-fabric-react.ICalloutProps.role
       - office-ui-fabric-react.ICalloutProps.setInitialFocus
+      - office-ui-fabric-react.ICalloutProps.shouldRestoreFocus
       - office-ui-fabric-react.ICalloutProps.style
       - office-ui-fabric-react.ICalloutProps.styles
       - office-ui-fabric-react.ICalloutProps.target
@@ -445,6 +446,20 @@ items:
     type: property
     syntax:
       content: 'setInitialFocus?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-ui-fabric-react.ICalloutProps.shouldRestoreFocus
+    summary: >-
+      If specified, determines whether the underlying "Popup" component should try to restore focus when it is
+      dismissed. When set to false, the Popup won't try to restore focus to the last focused element.
+    name: shouldRestoreFocus
+    fullName: shouldRestoreFocus
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'shouldRestoreFocus?: boolean;'
       return:
         type:
           - boolean

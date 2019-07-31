@@ -94,10 +94,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'getPageHeight?: (itemIndex?: number, visibleRect?: IRectangle) => number;'
+      content: 'getPageHeight?: (itemIndex?: number, visibleRect?: IRectangle, itemCount?: number) => number;'
       return:
         type:
-          - '(itemIndex?: number, visibleRect?: IRectangle) => number'
+          - '(itemIndex?: number, visibleRect?: IRectangle, itemCount?: number) => number'
   - uid: office-ui-fabric-react.IListProps.getPageSpecification
     summary: >-
       Called by the list to get the specification for a page. Use this method to provide an allocation of items per

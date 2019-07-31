@@ -1,6 +1,5 @@
 # Overview
-Pickers are used to pick recipients.
-
+Coming soon...
 
 
 ## Do &#10003;

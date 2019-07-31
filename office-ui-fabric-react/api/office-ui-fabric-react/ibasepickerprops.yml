@@ -26,6 +26,7 @@ items:
       - office-ui-fabric-react.IBasePickerProps.onChange
       - office-ui-fabric-react.IBasePickerProps.onDismiss
       - office-ui-fabric-react.IBasePickerProps.onEmptyInputFocus
+      - office-ui-fabric-react.IBasePickerProps.onEmptyResolveSuggestions
       - office-ui-fabric-react.IBasePickerProps.onFocus
       - office-ui-fabric-react.IBasePickerProps.onGetMoreResults
       - office-ui-fabric-react.IBasePickerProps.onInputChange
@@ -193,7 +194,11 @@ items:
         type:
           - '(ev?: any, selectedItem?: T) => void'
   - uid: office-ui-fabric-react.IBasePickerProps.onEmptyInputFocus
-    summary: A callback for what should happen when a user clicks the input.
+    summary: A callback for what should happen when a user clicks within the input area.
+    deprecated:
+      content: >-
+        Please use onEmptyResolveSuggestions instead, as the suggestions aren't about setting focus as they are about
+        resolving suggestions when there is no input.
     name: onEmptyInputFocus
     fullName: onEmptyInputFocus
     langs:
@@ -201,6 +206,21 @@ items:
     type: property
     syntax:
       content: 'onEmptyInputFocus?: (selectedItems?: T[]) => T[] | PromiseLike<T[]>;'
+      return:
+        type:
+          - '(selectedItems?: T[]) => T[] | PromiseLike<T[]>'
+  - uid: office-ui-fabric-react.IBasePickerProps.onEmptyResolveSuggestions
+    summary: >-
+      A callback for what should happen when suggestions are shown without input provided. Returns the already selected
+      items so the resolver can filter them out. If used in conjunction with resolveDelay this will ony kick off after
+      the delay throttle.
+    name: onEmptyResolveSuggestions
+    fullName: onEmptyResolveSuggestions
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onEmptyResolveSuggestions?: (selectedItems?: T[]) => T[] | PromiseLike<T[]>;'
       return:
         type:
           - '(selectedItems?: T[]) => T[] | PromiseLike<T[]>'

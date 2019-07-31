@@ -21,11 +21,13 @@ items:
       - office-ui-fabric-react.IComboBoxProps.dropdownMaxWidth
       - office-ui-fabric-react.IComboBoxProps.dropdownWidth
       - office-ui-fabric-react.IComboBoxProps.getClassNames
+      - office-ui-fabric-react.IComboBoxProps.iconButtonProps
       - office-ui-fabric-react.IComboBoxProps.isButtonAriaHidden
       - office-ui-fabric-react.IComboBoxProps.keytipProps
       - office-ui-fabric-react.IComboBoxProps.multiSelect
       - office-ui-fabric-react.IComboBoxProps.onChange
       - office-ui-fabric-react.IComboBoxProps.onItemClick
+      - office-ui-fabric-react.IComboBoxProps.onMenuDismiss
       - office-ui-fabric-react.IComboBoxProps.onMenuDismissed
       - office-ui-fabric-react.IComboBoxProps.onMenuOpen
       - office-ui-fabric-react.IComboBoxProps.onPendingValueChanged
@@ -35,6 +37,7 @@ items:
       - office-ui-fabric-react.IComboBoxProps.options
       - office-ui-fabric-react.IComboBoxProps.persistMenu
       - office-ui-fabric-react.IComboBoxProps.scrollSelectedToTop
+      - office-ui-fabric-react.IComboBoxProps.shouldRestoreFocus
       - office-ui-fabric-react.IComboBoxProps.styles
       - office-ui-fabric-react.IComboBoxProps.text
       - office-ui-fabric-react.IComboBoxProps.theme
@@ -186,6 +189,18 @@ items:
           - >-
             (theme: ITheme, isOpen: boolean, disabled: boolean, required: boolean, focused: boolean, allowFreeForm:
             boolean, hasErrorMessage: boolean, className?: string) => IComboBoxClassNames
+  - uid: office-ui-fabric-react.IComboBoxProps.iconButtonProps
+    summary: Optional iconButton props on combo box
+    name: iconButtonProps
+    fullName: iconButtonProps
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'iconButtonProps?: IButtonProps;'
+      return:
+        type:
+          - office-ui-fabric-react.IButtonProps
   - uid: office-ui-fabric-react.IComboBoxProps.isButtonAriaHidden
     summary: >-
       Sets the 'aria-hidden' attribute on the ComboBox's button element instructing screen readers how to handle the
@@ -254,6 +269,18 @@ items:
       return:
         type:
           - '(event: React.FormEvent<IComboBox>, option?: IComboBoxOption, index?: number) => void'
+  - uid: office-ui-fabric-react.IComboBoxProps.onMenuDismiss
+    summary: Function that gets invoked before the menu gets dismissed
+    name: onMenuDismiss
+    fullName: onMenuDismiss
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onMenuDismiss?: () => void;'
+      return:
+        type:
+          - () => void
   - uid: office-ui-fabric-react.IComboBoxProps.onMenuDismissed
     summary: Function that gets invoked when the ComboBox menu is dismissed
     name: onMenuDismissed
@@ -366,6 +393,21 @@ items:
     type: property
     syntax:
       content: 'scrollSelectedToTop?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-ui-fabric-react.IComboBoxProps.shouldRestoreFocus
+    summary: >-
+      When specified, determines whether the callout (the menu which drops down) should restore the focus after being
+      dismissed or not. If false, then the menu will not try to set focus to whichever element had focus before the menu
+      was opened.
+    name: shouldRestoreFocus
+    fullName: shouldRestoreFocus
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'shouldRestoreFocus?: boolean;'
       return:
         type:
           - boolean

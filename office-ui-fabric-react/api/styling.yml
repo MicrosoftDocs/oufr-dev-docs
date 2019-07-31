@@ -17,10 +17,12 @@ items:
       - styling.getGlobalClassNames
       - styling.getIcon
       - styling.getIconClassName
+      - styling.getPlaceholderStyles
       - styling.getScreenSelector
       - styling.getTheme
       - styling.IAnimationStyles
       - styling.IAnimationVariables
+      - styling.IEffects
       - styling.IFontStyles
       - styling.IGetFocusStylesOptions
       - styling.IIconOptions
@@ -282,6 +284,24 @@ items:
           description: ''
           type:
             - string
+  - uid: styling.getPlaceholderStyles
+    summary: Generates placeholder style for each of the browsers supported by office-ui-fabric-react.
+    name: getPlaceholderStyles(styles)
+    fullName: getPlaceholderStyles(styles)
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export declare function getPlaceholderStyles(styles: IStyle): IStyle;'
+      return:
+        type:
+          - IStyle
+        description: The placeholder style object for each browser depending on the placeholder directive it uses.
+      parameters:
+        - id: styles
+          description: The style to use.
+          type:
+            - IStyle
   - uid: styling.getScreenSelector
     name: 'getScreenSelector(min, max)'
     fullName: 'getScreenSelector(min, max)'
@@ -483,6 +503,8 @@ references:
     name: IAnimationStyles
   - uid: styling.IAnimationVariables
     name: IAnimationVariables
+  - uid: styling.IEffects
+    name: IEffects
   - uid: styling.IFontStyles
     name: IFontStyles
   - uid: styling.IGetFocusStylesOptions

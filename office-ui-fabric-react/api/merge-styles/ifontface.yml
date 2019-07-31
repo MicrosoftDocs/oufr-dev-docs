@@ -11,9 +11,22 @@ items:
       - merge-styles.IRawFontStyle
     package: merge-styles
     children:
+      - merge-styles.IFontFace.fontDisplay
       - merge-styles.IFontFace.fontFeatureSettings
       - merge-styles.IFontFace.src
       - merge-styles.IFontFace.unicodeRange
+  - uid: merge-styles.IFontFace.fontDisplay
+    summary: Determines how a font face is displayed based on whether and when it is downloaded and ready to use.
+    name: fontDisplay
+    fullName: fontDisplay
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'fontDisplay?: ''auto'' | ''block'' | ''swap'' | ''fallback'' | ''optional'';'
+      return:
+        type:
+          - '''auto'' | ''block'' | ''swap'' | ''fallback'' | ''optional'''
   - uid: merge-styles.IFontFace.fontFeatureSettings
     summary: Feature settings for the font.
     name: fontFeatureSettings

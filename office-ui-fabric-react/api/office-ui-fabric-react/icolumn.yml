@@ -16,6 +16,7 @@ items:
       - office-ui-fabric-react.IColumn.data
       - office-ui-fabric-react.IColumn.fieldName
       - office-ui-fabric-react.IColumn.filterAriaLabel
+      - office-ui-fabric-react.IColumn.getValueKey
       - office-ui-fabric-react.IColumn.groupAriaLabel
       - office-ui-fabric-react.IColumn.headerClassName
       - office-ui-fabric-react.IColumn.iconClassName
@@ -143,6 +144,18 @@ items:
       return:
         type:
           - string
+  - uid: office-ui-fabric-react.IColumn.getValueKey
+    summary: 'If set, parent getCellValueKey will return this value.'
+    name: getValueKey
+    fullName: getValueKey
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'getValueKey?: (item?: any, index?: number, column?: IColumn) => string;'
+      return:
+        type:
+          - '(item?: any, index?: number, column?: IColumn) => string'
   - uid: office-ui-fabric-react.IColumn.groupAriaLabel
     summary: ARIA label for the status of this column when grouped.
     name: groupAriaLabel
