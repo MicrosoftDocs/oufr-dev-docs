@@ -2725,7 +2725,7 @@
         {
           "kind": "Function",
           "canonicalReference": "(classNamesFunction:0)",
-          "docComment": "/**\n * Creates a getClassNames function which calls getStyles given the props, and injects them into mergeStyleSets.\n */\n",
+          "docComment": "/**\n * Creates a getClassNames function which calls getStyles given the props, and injects them into mergeStyleSets.\n *\n * Note that the props you pass in on every render should be in the same order and immutable (numbers, strings, and booleans). This will allow the results to be memoized. Violating these will cause extra recalcs to occur.\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -2821,31 +2821,7 @@
             },
             {
               "kind": "Content",
-              "text": "> | ("
-            },
-            {
-              "kind": "Reference",
-              "text": "IStyleFunctionOrObject"
-            },
-            {
-              "kind": "Content",
-              "text": "<"
-            },
-            {
-              "kind": "Reference",
-              "text": "TStyleProps"
-            },
-            {
-              "kind": "Content",
-              "text": ", "
-            },
-            {
-              "kind": "Reference",
-              "text": "TStyleSet"
-            },
-            {
-              "kind": "Content",
-              "text": "> | undefined)[] | undefined, "
+              "text": "> | undefined, "
             },
             {
               "kind": "Reference",
@@ -2886,7 +2862,7 @@
           ],
           "returnTypeTokenRange": {
             "startIndex": 15,
-            "endIndex": 38
+            "endIndex": 32
           },
           "releaseTag": "Public",
           "overloadIndex": 0,
