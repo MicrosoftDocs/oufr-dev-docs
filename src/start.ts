@@ -9,9 +9,9 @@ if (!docsOutputPath) {
   throw new Error('Must specify a docs output path as the first argument to this script');
 }
 
-// if (!path.isAbsolute(docsOutputPath)) {
-//   throw new Error('The docs output path must be absolute');
-// }
+if (!path.isAbsolute(docsOutputPath)) {
+  throw new Error('The docs output path must be absolute');
+}
 
 const categories = {
   'Basic Inputs': {
@@ -134,8 +134,8 @@ const categories = {
   // Other: {}
 };
 
-const TOC_EXAMPLE_URL = '~/docs/examples';
-const TOC_OVERVIEW_URL = '~/docs/overviews';
+const TOC_EXAMPLE_URL = '~/api/examples';
+const TOC_OVERVIEW_URL = '~/api/overviews';
 
 const URL_NORMALIZE_PART = '(https://developer.microsoft.com/en-us/fabric#/';
 
