@@ -15,17 +15,18 @@ steps:
     verbose: false
 
 - task: Npm@1
-  displayName: 'npm custom'
+  displayName: 'npm run build'
   inputs:
     command: custom
     verbose: false
     customCommand: run build
 
-- script: >
-    node
-    lib/start.js
-    $(Build.ArtifactStagingDirectory)/doc-files/api
-  displayName: Generate examples and API Documenter Config
+- task: Npm@1
+  displayName: 'npm install OUFR latest'
+  inputs:
+    command: custom
+    verbose: false
+    customCommand: install --save-dev office-ui-fabric-react@7
 
 - script: >
     node
@@ -35,10 +36,22 @@ steps:
 
 - script: >
     node
+    lib/start.js
+    $(Build.ArtifactStagingDirectory)/example-and-overview-files
+  displayName: Generate examples/overview files and API Documenter Config
+
+- script: >
+    node
     node_modules/.bin/api-documenter
     generate
     --output-folder $(Build.ArtifactStagingDirectory)/doc-files/api
   displayName: Run API Documenter
+
+- task: CopyFiles@2
+  displayName: 'Copy example and overview files'
+  inputs:
+    SourceFolder: $(Build.ArtifactStagingDirectory)/example-and-overview-files
+    TargetFolder: $(Build.ArtifactStagingDirectory)/doc-files/api
 
 - task: CopyFiles@2
   displayName: 'Copy static doc data'
