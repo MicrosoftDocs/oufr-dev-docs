@@ -1,3 +1,9 @@
+---
+title: Fabric Announced Bulk Operations Example | Microsoft Docs
+author: Vitalius1
+ms.author: vibraga
+---
+
 # Announced Bulk Operations Example
 
 <iframe 

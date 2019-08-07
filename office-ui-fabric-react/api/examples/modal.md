@@ -1,3 +1,9 @@
+---
+title: Fabric Modal Examples | Microsoft Docs
+author: Vitalius1
+ms.author: vibraga
+---
+
 # Modal Examples
 
 <iframe 

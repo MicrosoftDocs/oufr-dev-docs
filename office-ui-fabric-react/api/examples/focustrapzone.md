@@ -1,3 +1,9 @@
+---
+title: Fabric FocusTrapZone Examples | Microsoft Docs
+author: Vitalius1
+ms.author: vibraga
+---
+
 # FocusTrapZone Examples
 
 <iframe 

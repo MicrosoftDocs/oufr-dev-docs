@@ -1,3 +1,9 @@
+---
+title: Fabric Separator Overview | Microsoft Docs
+author: Vitalius1
+ms.author: vibraga
+---
+
 # Overview
 A separator visually separates content into groups.
 

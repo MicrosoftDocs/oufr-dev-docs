@@ -1,3 +1,9 @@
+---
+title: Fabric Announced Search Results Example | Microsoft Docs
+author: Vitalius1
+ms.author: vibraga
+---
+
 # Announced Search Results Example
 
 <iframe 

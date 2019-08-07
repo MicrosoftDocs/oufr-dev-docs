@@ -1,3 +1,9 @@
+---
+title: Fabric CommandBar Examples | Microsoft Docs
+author: Vitalius1
+ms.author: vibraga
+---
+
 # CommandBar Examples
 
 <iframe 

@@ -1,3 +1,9 @@
+---
+title: Fabric CommandBar Overview | Microsoft Docs
+author: Vitalius1
+ms.author: vibraga
+---
+
 # Overview
 CommandBar is a surface that houses commands that operate on the content of
 the window, panel, or parent region it resides above. CommandBars are one of the most

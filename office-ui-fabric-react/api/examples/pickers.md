@@ -1,3 +1,9 @@
+---
+title: Fabric Pickers Examples | Microsoft Docs
+author: Vitalius1
+ms.author: vibraga
+---
+
 # Pickers Examples
 
 <iframe 

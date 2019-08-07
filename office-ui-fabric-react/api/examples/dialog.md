@@ -1,3 +1,9 @@
+---
+title: Fabric Dialog Examples | Microsoft Docs
+author: Vitalius1
+ms.author: vibraga
+---
+
 # Dialog Examples
 
 <iframe 

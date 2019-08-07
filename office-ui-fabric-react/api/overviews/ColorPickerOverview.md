@@ -1,3 +1,9 @@
+---
+title: Fabric ColorPicker Overview | Microsoft Docs
+author: Vitalius1
+ms.author: vibraga
+---
+
 # Overview
 ColorPicker is used to allow a user to select a color.
 

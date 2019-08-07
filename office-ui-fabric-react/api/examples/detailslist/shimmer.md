@@ -1,3 +1,9 @@
+---
+title: Fabric DetailsList Shimmer Example | Microsoft Docs
+author: Vitalius1
+ms.author: vibraga
+---
+
 # DetailsList Shimmer Example
 
 <iframe 

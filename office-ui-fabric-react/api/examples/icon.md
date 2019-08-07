@@ -1,3 +1,9 @@
+---
+title: Fabric Icon Examples | Microsoft Docs
+author: Vitalius1
+ms.author: vibraga
+---
+
 # Icon Examples
 
 <iframe 

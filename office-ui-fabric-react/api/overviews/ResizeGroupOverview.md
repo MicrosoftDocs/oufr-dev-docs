@@ -1,3 +1,9 @@
+---
+title: Fabric ResizeGroup Overview | Microsoft Docs
+author: Vitalius1
+ms.author: vibraga
+---
+
 # Overview
 ResizeGroup is a React component that can be used to help fit the right amount of content within a container. The consumer of the ResizeGroup provides some initial data, a reduce function, and a render function. The render function is responsible for populating the contents of a the container when given some data. The initial data should represent the data that should be rendered when the ResizeGroup has infinite width. If the contents returned by the render function do not fit within the ResizeGroup, the reduce function is called to get a version of the data whose rendered width should be smaller than the data that was just rendered.
 

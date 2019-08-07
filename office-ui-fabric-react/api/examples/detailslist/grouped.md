@@ -1,3 +1,9 @@
+---
+title: Fabric DetailsList Grouped Example | Microsoft Docs
+author: Vitalius1
+ms.author: vibraga
+---
+
 # DetailsList Grouped Example
 
 <iframe 

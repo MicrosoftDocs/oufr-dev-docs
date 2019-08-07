@@ -1,3 +1,9 @@
+---
+title: Fabric ContextualMenu Examples | Microsoft Docs
+author: Vitalius1
+ms.author: vibraga
+---
+
 # ContextualMenu Examples
 
 <iframe 

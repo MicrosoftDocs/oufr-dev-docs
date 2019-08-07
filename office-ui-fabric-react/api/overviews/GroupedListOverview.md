@@ -1,3 +1,9 @@
+---
+title: Fabric GroupedList Overview | Microsoft Docs
+author: Vitalius1
+ms.author: vibraga
+---
+
 # Overview
 Allows you to render a set of items as multiple lists with various grouping properties.
 

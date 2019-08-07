@@ -1,3 +1,9 @@
+---
+title: Fabric Announced Quick Actions Example | Microsoft Docs
+author: Vitalius1
+ms.author: vibraga
+---
+
 # Announced Quick Actions Example
 
 <iframe 

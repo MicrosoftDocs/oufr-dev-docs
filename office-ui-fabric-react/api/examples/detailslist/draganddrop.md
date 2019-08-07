@@ -1,3 +1,9 @@
+---
+title: Fabric DetailsList Drag &amp; Drop Example | Microsoft Docs
+author: Vitalius1
+ms.author: vibraga
+---
+
 # DetailsList Drag &amp; Drop Example
 
 <iframe 

@@ -1,3 +1,9 @@
+---
+title: Fabric React Getting Started | Microsoft Docs
+author: Vitalius1
+ms.author: vibraga
+---
+
 # Overview
 UI Fabric for the web is available in two flavors: Fabric React and Fabric Core.
 

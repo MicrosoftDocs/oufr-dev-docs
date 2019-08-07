@@ -1,3 +1,9 @@
+---
+title: Fabric ScrollablePane Examples | Microsoft Docs
+author: Vitalius1
+ms.author: vibraga
+---
+
 # ScrollablePane Examples
 
 <iframe 

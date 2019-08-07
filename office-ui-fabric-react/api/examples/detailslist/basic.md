@@ -1,3 +1,9 @@
+---
+title: Fabric DetailsList Basic Example | Microsoft Docs
+author: Vitalius1
+ms.author: vibraga
+---
+
 # DetailsList Basic Example
 
 <iframe 

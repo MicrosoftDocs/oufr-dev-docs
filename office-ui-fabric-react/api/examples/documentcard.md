@@ -1,3 +1,9 @@
+---
+title: Fabric DocumentCard Examples | Microsoft Docs
+author: Vitalius1
+ms.author: vibraga
+---
+
 # DocumentCard Examples
 
 <iframe 

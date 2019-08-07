@@ -1,3 +1,9 @@
+---
+title: Fabric Shimmer Examples | Microsoft Docs
+author: Vitalius1
+ms.author: vibraga
+---
+
 # Shimmer Examples
 
 <iframe 

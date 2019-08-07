@@ -1,3 +1,9 @@
+---
+title: Fabric Panel Examples | Microsoft Docs
+author: Vitalius1
+ms.author: vibraga
+---
+
 # Panel Examples
 
 <iframe 

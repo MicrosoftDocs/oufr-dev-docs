@@ -1,3 +1,9 @@
+---
+title: Fabric MarqueeSelection Examples | Microsoft Docs
+author: Vitalius1
+ms.author: vibraga
+---
+
 # MarqueeSelection Examples
 
 <iframe 

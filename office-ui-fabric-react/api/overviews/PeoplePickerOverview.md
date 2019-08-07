@@ -1,3 +1,9 @@
+---
+title: Fabric PeoplePicker Overview | Microsoft Docs
+author: Vitalius1
+ms.author: vibraga
+---
+
 # Overview
 PeoplePickers are used to pick recipients.
 

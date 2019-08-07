@@ -1,3 +1,9 @@
+---
+title: Fabric ActivityItem Examples | Microsoft Docs
+author: Vitalius1
+ms.author: vibraga
+---
+
 # ActivityItem Examples
 
 <iframe 

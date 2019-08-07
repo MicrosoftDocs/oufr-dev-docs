@@ -1,3 +1,9 @@
+---
+title: Fabric Separator Examples | Microsoft Docs
+author: Vitalius1
+ms.author: vibraga
+---
+
 # Separator Examples
 
 <iframe 

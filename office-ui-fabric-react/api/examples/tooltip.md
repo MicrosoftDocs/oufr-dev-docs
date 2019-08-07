@@ -1,3 +1,9 @@
+---
+title: Fabric Tooltip Examples | Microsoft Docs
+author: Vitalius1
+ms.author: vibraga
+---
+
 # Tooltip Examples
 
 <iframe 

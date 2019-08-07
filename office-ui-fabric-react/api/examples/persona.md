@@ -1,3 +1,9 @@
+---
+title: Fabric Persona Examples | Microsoft Docs
+author: Vitalius1
+ms.author: vibraga
+---
+
 # Persona Examples
 
 <iframe 

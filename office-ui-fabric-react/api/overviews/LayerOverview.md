@@ -1,3 +1,9 @@
+---
+title: Fabric Layer Overview | Microsoft Docs
+author: Vitalius1
+ms.author: vibraga
+---
+
 # Overview
 A Layer is a technical component that does not have specific Design guidance.
 

@@ -1,3 +1,9 @@
+---
+title: Fabric DetailsList Overview | Microsoft Docs
+author: Vitalius1
+ms.author: vibraga
+---
+
 # Overview
 DetailsList is a derivative of the [List](https://developer.microsoft.com/en-us/fabric#/controls/web/list) component. It is a robust way to display an information rich collection of items. It can support powerful ways to aid a user in finding content with sorting, grouping and filtering. Lists are a great way to handle large amounts of content, but poorly designed Lists can be difficult to parse.
 

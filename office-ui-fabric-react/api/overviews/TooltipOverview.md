@@ -1,3 +1,9 @@
+---
+title: Fabric Tooltip Overview | Microsoft Docs
+author: Vitalius1
+ms.author: vibraga
+---
+
 # Overview
 Tooltips supplement content associated with a specific UI component. You can use two components, and each has different props:
 

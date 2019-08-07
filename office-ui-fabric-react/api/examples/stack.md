@@ -1,3 +1,9 @@
+---
+title: Fabric Stack Examples | Microsoft Docs
+author: Vitalius1
+ms.author: vibraga
+---
+
 # Stack Examples
 
 <iframe 

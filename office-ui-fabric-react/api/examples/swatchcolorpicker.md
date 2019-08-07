@@ -1,3 +1,9 @@
+---
+title: Fabric SwatchColorPicker Examples | Microsoft Docs
+author: Vitalius1
+ms.author: vibraga
+---
+
 # SwatchColorPicker Examples
 
 <iframe 

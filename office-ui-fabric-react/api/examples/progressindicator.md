@@ -1,3 +1,9 @@
+---
+title: Fabric ProgressIndicator Examples | Microsoft Docs
+author: Vitalius1
+ms.author: vibraga
+---
+
 # ProgressIndicator Examples
 
 <iframe 

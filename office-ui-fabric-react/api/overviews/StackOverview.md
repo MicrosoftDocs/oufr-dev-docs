@@ -1,3 +1,9 @@
+---
+title: Fabric Stack Overview | Microsoft Docs
+author: Vitalius1
+ms.author: vibraga
+---
+
 # Overview
 A Stack is a container-type component that abstracts the implementation of a flexbox in order to define the layout of its children components.
 

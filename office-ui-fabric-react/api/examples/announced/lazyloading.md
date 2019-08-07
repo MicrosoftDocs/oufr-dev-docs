@@ -1,3 +1,9 @@
+---
+title: Fabric Announced Lazy Loading Example | Microsoft Docs
+author: Vitalius1
+ms.author: vibraga
+---
+
 # Announced Lazy Loading Example
 
 <iframe 

@@ -1,3 +1,9 @@
+---
+title: Fabric React Resources | Microsoft Docs
+author: Vitalius1
+ms.author: vibraga
+---
+
 # Overview
 Fabric is an open source project that celebrates internal and external contributions. Learn about how to get started designing and developing your experience.
 

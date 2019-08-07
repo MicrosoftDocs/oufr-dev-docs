@@ -1,3 +1,9 @@
+---
+title: Fabric Calendar Overview | Microsoft Docs
+author: Vitalius1
+ms.author: vibraga
+---
+
 # Overview
 The calendar component allows a user to browse through a calendar and pick a date value.
 

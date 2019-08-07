@@ -1,3 +1,9 @@
+---
+title: Fabric DetailsList Inner Navigation Example | Microsoft Docs
+author: Vitalius1
+ms.author: vibraga
+---
+
 # DetailsList Inner Navigation Example
 
 <iframe 

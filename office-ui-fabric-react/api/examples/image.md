@@ -1,3 +1,9 @@
+---
+title: Fabric Image Examples | Microsoft Docs
+author: Vitalius1
+ms.author: vibraga
+---
+
 # Image Examples
 
 <iframe 

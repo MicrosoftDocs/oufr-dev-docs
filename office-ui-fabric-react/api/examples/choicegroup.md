@@ -1,3 +1,9 @@
+---
+title: Fabric ChoiceGroup Examples | Microsoft Docs
+author: Vitalius1
+ms.author: vibraga
+---
+
 # ChoiceGroup Examples
 
 <iframe 

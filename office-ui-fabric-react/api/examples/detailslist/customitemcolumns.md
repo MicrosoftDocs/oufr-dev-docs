@@ -1,3 +1,9 @@
+---
+title: Fabric DetailsList Custom Item Columns Example | Microsoft Docs
+author: Vitalius1
+ms.author: vibraga
+---
+
 # DetailsList Custom Item Columns Example
 
 <iframe 

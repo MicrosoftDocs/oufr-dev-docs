@@ -1,3 +1,9 @@
+---
+title: Fabric DatePicker Examples | Microsoft Docs
+author: Vitalius1
+ms.author: vibraga
+---
+
 # DatePicker Examples
 
 <iframe 

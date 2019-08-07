@@ -1,3 +1,9 @@
+---
+title: Fabric ColorPicker Examples | Microsoft Docs
+author: Vitalius1
+ms.author: vibraga
+---
+
 # ColorPicker Examples
 
 <iframe 

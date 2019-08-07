@@ -1,3 +1,9 @@
+---
+title: Fabric DatePicker Overview | Microsoft Docs
+author: Vitalius1
+ms.author: vibraga
+---
+
 # Overview
 The DatePicker component enables a user to pick a date value.
 
