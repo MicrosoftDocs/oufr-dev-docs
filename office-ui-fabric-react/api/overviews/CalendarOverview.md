@@ -12,7 +12,7 @@ The calendar component allows a user to browse through a calendar and pick a dat
 
 
 ## Don't &#10008;
-- Don&#39;t attempt to break apart year from month&#x2F;day selectors. If granularity is required, use the Dropdown control or something similar.
-- Don&#39;t attempt to force resize the control in any way.
-- Don&#39;t force the control to render one mode vs. the other (year or month&#x2F;day)
-- The flyout selector is a light dismiss control. Don&#39;t modify this behavior in any way.
+- Don't attempt to break apart year from month/day selectors. If granularity is required, use the Dropdown control or something similar.
+- Don't attempt to force resize the control in any way.
+- Don't force the control to render one mode vs. the other (year or month/day)
+- The flyout selector is a light dismiss control. Don't modify this behavior in any way.

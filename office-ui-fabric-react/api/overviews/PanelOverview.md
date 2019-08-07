@@ -14,7 +14,7 @@ Panels are modal UI overlays that provide contextual app information. They often
 - Use for self-contained experiences where the user does not need to interact with the app view to complete the task.
 - Use for complex creation, edit or management experiences.
 - Consider how the panel and its contained contents will scale across Fabric’s responsive web breakpoints.
-- Make sure to have a minimum width of 340px for the &#x60;Panel&#x60; component
+- Make sure to have a minimum width of 340px for the `Panel` component
 
 
 ## Don't &#10008;

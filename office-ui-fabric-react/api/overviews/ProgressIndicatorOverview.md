@@ -16,7 +16,7 @@ Real-world examples include copying files to a storage location, saving edits to
 ## Do &#10003;
 - Use a ProgressIndicator when the total units to completion is known
 - Display operation description
-- Show text above and&#x2F;or below the bar
+- Show text above and/or below the bar
 - Combine steps of a single operation into one bar
 
 ## Don't &#10008;

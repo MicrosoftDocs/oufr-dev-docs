@@ -8,4 +8,4 @@ Breadcrumbs are typically placed, in horizontal form, under the masthead or navi
 - Place Breadcrumbs at the top of a page, above a list of items, or above the main content of a page.
 
 ## Don't &#10008;
-- Don&#39;t use Breadcrumbs as a primary way to navigate an app or site.
+- Don't use Breadcrumbs as a primary way to navigate an app or site.

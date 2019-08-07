@@ -1,5 +1,5 @@
 # Overview
-Personas are used for rendering an individual&#39;s avatar and presence. They are used within the PeoplePicker components.
+Personas are used for rendering an individual's avatar and presence. They are used within the PeoplePicker components.
 
 
 ## Do &#10003;
