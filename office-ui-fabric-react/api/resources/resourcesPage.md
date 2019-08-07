@@ -13,50 +13,50 @@ Fabric is an open source project that celebrates internal and external contribut
 
 These design toolkits provide styles, controls and layout templates that enable you to create beautiful and coherent Microsoft experiences.
 
-&lt;ul class&#x3D;&quot;md-list--flex&quot;&gt;
-  &lt;li class&#x3D;&quot;mdut--half&quot;&gt;[Microsoft Web Fluent (Sketch)](https:&#x2F;&#x2F;aka.ms&#x2F;FluentToolkits&#x2F;Web&#x2F;Sketch)&lt;&#x2F;li&gt;
-  &lt;li class&#x3D;&quot;mdut--half&quot;&gt;[Microsoft iOS Fluent (Sketch)](https:&#x2F;&#x2F;aka.ms&#x2F;FluentToolkits&#x2F;iOS&#x2F;Sketch)&lt;&#x2F;li&gt;
-  &lt;li class&#x3D;&quot;mdut--half&quot;&gt;[Microsoft iOS Fluent (Figma)](https:&#x2F;&#x2F;aka.ms&#x2F;FluentToolkits&#x2F;iOS&#x2F;Figma)&lt;&#x2F;li&gt;
-  &lt;li class&#x3D;&quot;mdut--half&quot;&gt;[Microsoft Android Fluent (Sketch)](https:&#x2F;&#x2F;aka.ms&#x2F;FluentToolkits&#x2F;Android&#x2F;Sketch)&lt;&#x2F;li&gt;
-  &lt;li class&#x3D;&quot;mdut--half&quot;&gt;[Microsoft Android Fluent (Figma)](https:&#x2F;&#x2F;aka.ms&#x2F;FluentToolkits&#x2F;Android&#x2F;Figma)&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
+<ul class="md-list--flex">
+  <li class="mdut--half">[Microsoft Web Fluent (Sketch)](https://aka.ms/FluentToolkits/Web/Sketch)</li>
+  <li class="mdut--half">[Microsoft iOS Fluent (Sketch)](https://aka.ms/FluentToolkits/iOS/Sketch)</li>
+  <li class="mdut--half">[Microsoft iOS Fluent (Figma)](https://aka.ms/FluentToolkits/iOS/Figma)</li>
+  <li class="mdut--half">[Microsoft Android Fluent (Sketch)](https://aka.ms/FluentToolkits/Android/Sketch)</li>
+  <li class="mdut--half">[Microsoft Android Fluent (Figma)](https://aka.ms/FluentToolkits/Android/Figma)</li>
+</ul>
 
-&lt;!-- headings get auto-generated IDs usually, and this page has two &quot;SharePoint Framework&quot; headings --&gt;
-&lt;h3 id&#x3D;&quot;sharepoint-framework-design&quot;&gt;SharePoint Framework&lt;&#x2F;h3&gt;
+<!-- headings get auto-generated IDs usually, and this page has two "SharePoint Framework" headings -->
+<h3 id="sharepoint-framework-design">SharePoint Framework</h3>
 
 These SharePoint design resources provide everything you need to design your web parts, including responsive page grids and columns.
 
-&lt;ul class&#x3D;&quot;md-list--flex&quot;&gt;
-  &lt;li class&#x3D;&quot;mdut--half&quot;&gt;[Designing SharePoint experiences](https:&#x2F;&#x2F;aka.ms&#x2F;spdesign)&lt;&#x2F;li&gt;
-  &lt;li class&#x3D;&quot;mdut--half&quot;&gt;[SharePoint Toolkit (XD)](https:&#x2F;&#x2F;aka.ms&#x2F;sharepoint-toolkit)&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
+<ul class="md-list--flex">
+  <li class="mdut--half">[Designing SharePoint experiences](https://aka.ms/spdesign)</li>
+  <li class="mdut--half">[SharePoint Toolkit (XD)](https://aka.ms/sharepoint-toolkit)</li>
+</ul>
 
-&lt;h3 id&#x3D;&quot;office-add-ins-design&quot;&gt;Office Add-ins&lt;&#x2F;h3&gt;
+<h3 id="office-add-ins-design">Office Add-ins</h3>
 
 The Add-ins design toolkit provides layouts for interface elements and commonly used patterns in Word, Excel, and PowerPoint. Use it in addition to the Microsoft design toolkits to create an add-in that fits within Office.
 
-&lt;ul class&#x3D;&quot;md-list--flex&quot;&gt;
-  &lt;li class&#x3D;&quot;mdut--half&quot;&gt;[Add-ins Toolkit (Sketch)](https:&#x2F;&#x2F;aka.ms&#x2F;addins_sketch_toolkit)&lt;&#x2F;li&gt;
-  &lt;li class&#x3D;&quot;mdut--half&quot;&gt;[Designing Office Add-ins](https:&#x2F;&#x2F;docs.microsoft.com&#x2F;en-us&#x2F;office&#x2F;dev&#x2F;add-ins&#x2F;design&#x2F;add-in-design)&lt;&#x2F;li&gt;
-  &lt;li class&#x3D;&quot;mdut--half&quot;&gt;[Add-ins Toolkit (XD)](https:&#x2F;&#x2F;aka.ms&#x2F;addins_toolkit)&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
+<ul class="md-list--flex">
+  <li class="mdut--half">[Add-ins Toolkit (Sketch)](https://aka.ms/addins_sketch_toolkit)</li>
+  <li class="mdut--half">[Designing Office Add-ins](https://docs.microsoft.com/en-us/office/dev/add-ins/design/add-in-design)</li>
+  <li class="mdut--half">[Add-ins Toolkit (XD)](https://aka.ms/addins_toolkit)</li>
+</ul>
 
 ### Fonts
 
-&lt;ul class&#x3D;&quot;md-list--flex&quot;&gt;
-  &lt;li class&#x3D;&quot;mdut--half&quot;&gt;[iOS font](https:&#x2F;&#x2F;developer.apple.com&#x2F;fonts&#x2F;)&lt;&#x2F;li&gt;
-  &lt;li class&#x3D;&quot;mdut--half&quot;&gt;[Segoe UI and Fabric MDL2 external icon font](https:&#x2F;&#x2F;aka.ms&#x2F;WebFluentFonts)&lt;&#x2F;li&gt;
-  &lt;li class&#x3D;&quot;mdut--half&quot;&gt;[Android font](https:&#x2F;&#x2F;fonts.google.com&#x2F;specimen&#x2F;Roboto)&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
+<ul class="md-list--flex">
+  <li class="mdut--half">[iOS font](https://developer.apple.com/fonts/)</li>
+  <li class="mdut--half">[Segoe UI and Fabric MDL2 external icon font](https://aka.ms/WebFluentFonts)</li>
+  <li class="mdut--half">[Android font](https://fonts.google.com/specimen/Roboto)</li>
+</ul>
 
 ### Native OS Platforms
 
-&lt;ul class&#x3D;&quot;md-list--flex&quot;&gt;
-  &lt;li class&#x3D;&quot;mdut--half&quot;&gt;[iOS Human Interface Guidelines](https:&#x2F;&#x2F;developer.apple.com&#x2F;design&#x2F;human-interface-guidelines&#x2F;ios&#x2F;overview&#x2F;themes&#x2F;)&lt;&#x2F;li&gt;
-  &lt;li class&#x3D;&quot;mdut--half&quot;&gt;[Guidelines for iOS app icons](https:&#x2F;&#x2F;developer.apple.com&#x2F;design&#x2F;human-interface-guidelines&#x2F;ios&#x2F;icons-and-images&#x2F;app-icon&#x2F;)&lt;&#x2F;li&gt;
-  &lt;li class&#x3D;&quot;mdut--half&quot;&gt;[Android Human Interface Guidelines](https:&#x2F;&#x2F;developer.android.com&#x2F;design&#x2F;)&lt;&#x2F;li&gt;
-  &lt;li class&#x3D;&quot;mdut--half&quot;&gt;[Guidelines for Android app icons](https:&#x2F;&#x2F;developer.android.com&#x2F;guide&#x2F;practices&#x2F;ui_guidelines&#x2F;icon_design)&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
+<ul class="md-list--flex">
+  <li class="mdut--half">[iOS Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/ios/overview/themes/)</li>
+  <li class="mdut--half">[Guidelines for iOS app icons](https://developer.apple.com/design/human-interface-guidelines/ios/icons-and-images/app-icon/)</li>
+  <li class="mdut--half">[Android Human Interface Guidelines](https://developer.android.com/design/)</li>
+  <li class="mdut--half">[Guidelines for Android app icons](https://developer.android.com/guide/practices/ui_guidelines/icon_design)</li>
+</ul>
 
 
 # Developer resources
@@ -64,46 +64,46 @@ The Add-ins design toolkit provides layouts for interface elements and commonly 
 
 Get started with React and learn how to build your first projects.
 
-&lt;ul class&#x3D;&quot;md-list--flex&quot;&gt;
-  &lt;li class&#x3D;&quot;mdut--full&quot;&gt;[Get started with Fabric React](#&#x2F;get-started)&lt;&#x2F;li&gt;
-  &lt;li class&#x3D;&quot;mdut--full&quot;&gt;[Fabric React tutorial](https:&#x2F;&#x2F;github.com&#x2F;OfficeDev&#x2F;office-ui-fabric-react&#x2F;wiki&#x2F;Getting-Started-with-UI-Fabric)&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
+<ul class="md-list--flex">
+  <li class="mdut--full">[Get started with Fabric React](#/get-started)</li>
+  <li class="mdut--full">[Fabric React tutorial](https://github.com/OfficeDev/office-ui-fabric-react/wiki/Getting-Started-with-UI-Fabric)</li>
+</ul>
 
 ### Documentation
 
-In addition to the API documentation and control examples found in the [Controls section](#&#x2F;controls&#x2F;web) of this website, you can find a full collection of API references on the docs.microsoft.com portal.
+In addition to the API documentation and control examples found in the [Controls section](#/controls/web) of this website, you can find a full collection of API references on the docs.microsoft.com portal.
 
-&lt;ul class&#x3D;&quot;md-list--flex&quot;&gt;
-  &lt;li class&#x3D;&quot;mdut--full&quot;&gt;[API reference on docs.microsoft.com](https:&#x2F;&#x2F;docs.microsoft.com&#x2F;en-us&#x2F;javascript&#x2F;api&#x2F;office-ui-fabric-react?branch&#x3D;live&amp;view&#x3D;office-ui-fabric-react-latest)&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
+<ul class="md-list--flex">
+  <li class="mdut--full">[API reference on docs.microsoft.com](https://docs.microsoft.com/en-us/javascript/api/office-ui-fabric-react?branch=live&view=office-ui-fabric-react-latest)</li>
+</ul>
 
 ### Release notes and demos
 
-View Fabric React&#39;s versioned release notes and component demos.
+View Fabric React's versioned release notes and component demos.
 
-&lt;ul class&#x3D;&quot;md-list--flex&quot;&gt;
-  &lt;li class&#x3D;&quot;mdut--full&quot;&gt;[Release notes and demos](https:&#x2F;&#x2F;aka.ms&#x2F;FabricDemo)&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
+<ul class="md-list--flex">
+  <li class="mdut--full">[Release notes and demos](https://aka.ms/FabricDemo)</li>
+</ul>
 
-&lt;h3 id&#x3D;&quot;sharepoint-framework-dev&quot;&gt;SharePoint Framework&lt;&#x2F;h3&gt;
+<h3 id="sharepoint-framework-dev">SharePoint Framework</h3>
 
 SharePoint uses Fabric, so if you’re building on top of or within a SharePoint experience, you can be sure that your UI will blend in.
 
-&lt;ul class&#x3D;&quot;md-list--flex&quot;&gt;
-  &lt;li class&#x3D;&quot;mdut--half&quot;&gt;[SharePoint Framework overview](https:&#x2F;&#x2F;aka.ms&#x2F;spfx)&lt;&#x2F;li&gt;
-  &lt;li class&#x3D;&quot;mdut--half&quot;&gt;[Use Fabric components in web parts](https:&#x2F;&#x2F;aka.ms&#x2F;spfx-fabric-react)&lt;&#x2F;li&gt;
-  &lt;li class&#x3D;&quot;mdut--half&quot;&gt;[Theme Designer](https:&#x2F;&#x2F;aka.ms&#x2F;themedesigner)&lt;&#x2F;li&gt;
-  &lt;li class&#x3D;&quot;mdut--half&quot;&gt;[Get started with building client-side web parts](https:&#x2F;&#x2F;aka.ms&#x2F;spfx-tutorials)&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
+<ul class="md-list--flex">
+  <li class="mdut--half">[SharePoint Framework overview](https://aka.ms/spfx)</li>
+  <li class="mdut--half">[Use Fabric components in web parts](https://aka.ms/spfx-fabric-react)</li>
+  <li class="mdut--half">[Theme Designer](https://aka.ms/themedesigner)</li>
+  <li class="mdut--half">[Get started with building client-side web parts](https://aka.ms/spfx-tutorials)</li>
+</ul>
 
-&lt;h3 id&#x3D;&quot;office-add-ins-dev&quot;&gt;Office Add-ins&lt;&#x2F;h3&gt;
+<h3 id="office-add-ins-dev">Office Add-ins</h3>
 
 Fabric is the official UI toolkit for creating Office Add-ins. Check out some of these resources to learn more about how to use Fabric in your next Add-in.
 
-&lt;ul class&#x3D;&quot;md-list--flex&quot;&gt;
-  &lt;li class&#x3D;&quot;mdut--full&quot;&gt;[Add-ins overview](http:&#x2F;&#x2F;dev.office.com&#x2F;docs&#x2F;add-ins&#x2F;overview&#x2F;office-add-ins)&lt;&#x2F;li&gt;
-  &lt;li class&#x3D;&quot;mdut--full&quot;&gt;[Using Fabric in your Add-ins](http:&#x2F;&#x2F;dev.office.com&#x2F;docs&#x2F;add-ins&#x2F;design&#x2F;add-in-design)&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
+<ul class="md-list--flex">
+  <li class="mdut--full">[Add-ins overview](http://dev.office.com/docs/add-ins/overview/office-add-ins)</li>
+  <li class="mdut--full">[Using Fabric in your Add-ins](http://dev.office.com/docs/add-ins/design/add-in-design)</li>
+</ul>
 
 
 # Contribution process
@@ -111,16 +111,16 @@ Reference these step-by-step processes for contributing to UI Fabric.
 
 ### Fabric for web
 
-&lt;ul class&#x3D;&quot;md-list--flex&quot;&gt;
-  &lt;li class&#x3D;&quot;mdut--full&quot;&gt;[Implement a Fabric React control](https:&#x2F;&#x2F;github.com&#x2F;OfficeDev&#x2F;office-ui-fabric-react&#x2F;wiki&#x2F;New-Components)&lt;&#x2F;li&gt;
-  &lt;li class&#x3D;&quot;mdut--full&quot;&gt;[Give feedback on a control by filing an issue on GitHub](https:&#x2F;&#x2F;github.com&#x2F;OfficeDev&#x2F;office-ui-fabric-react&#x2F;wiki&#x2F;Reporting-Issues)&lt;&#x2F;li&gt;
-  &lt;li class&#x3D;&quot;mdut--full&quot;&gt;[View current GitHub issues for all Fabric React controls](https:&#x2F;&#x2F;github.com&#x2F;OfficeDev&#x2F;office-ui-fabric-react&#x2F;issues)&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
+<ul class="md-list--flex">
+  <li class="mdut--full">[Implement a Fabric React control](https://github.com/OfficeDev/office-ui-fabric-react/wiki/New-Components)</li>
+  <li class="mdut--full">[Give feedback on a control by filing an issue on GitHub](https://github.com/OfficeDev/office-ui-fabric-react/wiki/Reporting-Issues)</li>
+  <li class="mdut--full">[View current GitHub issues for all Fabric React controls](https://github.com/OfficeDev/office-ui-fabric-react/issues)</li>
+</ul>
 
 ### Fabric for iOS
 
-[Give feedback on a control by filing an issue on GitHub](https:&#x2F;&#x2F;github.com&#x2F;OfficeDev&#x2F;ui-fabric-ios&#x2F;issues)
+[Give feedback on a control by filing an issue on GitHub](https://github.com/OfficeDev/ui-fabric-ios/issues)
 
 ### Fabric for Android
 
-[Give feedback on a control by filing an issue on GitHub](https:&#x2F;&#x2F;github.com&#x2F;OfficeDev&#x2F;ui-fabric-android&#x2F;issues)
+[Give feedback on a control by filing an issue on GitHub](https://github.com/OfficeDev/ui-fabric-android/issues)

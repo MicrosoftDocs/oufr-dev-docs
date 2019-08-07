@@ -5,7 +5,7 @@ ms.author: vibraga
 ---
 
 # Overview
-ActivityItems represent individual units of a user's activity, such as making a comment, mentioning someone with an @mention, editing a document, or moving a file.
+ActivityItems represent individual units of a user&#39;s activity, such as making a comment, mentioning someone with an @mention, editing a document, or moving a file.
 
 
 ## Do &#10003;

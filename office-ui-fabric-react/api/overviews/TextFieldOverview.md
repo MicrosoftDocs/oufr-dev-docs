@@ -5,7 +5,7 @@ ms.author: vibraga
 ---
 
 # Overview
-The TextField component enables a user to type text into an app. It's typically used to capture a single line of text, but can be configured to capture multiple lines of text. The text displays on the screen in a simple, uniform format.
+The TextField component enables a user to type text into an app. It&#39;s typically used to capture a single line of text, but can be configured to capture multiple lines of text. The text displays on the screen in a simple, uniform format.
 
 
 ## Do &#10003;
@@ -19,8 +19,8 @@ The TextField component enables a user to type text into an app. It's typically 
 - Allow for selection, copy and paste of field data.
 - Whenever possible, format TextField relative to the expected entry (4-digit PIN, 10-digit phone number (3 separate fields), etc).
 - When long entries are expected, provide a mechanism for overflow or expansion of the control itself.
-- Ensure that the TextField is functional through use of mouse/keyboard or touch when available.
-- Ensure that the TextField is accessible through screen reader and/or other accessibility tools.
+- Ensure that the TextField is functional through use of mouse&#x2F;keyboard or touch when available.
+- Ensure that the TextField is accessible through screen reader and&#x2F;or other accessibility tools.
 
 
 ## Don't &#10008;
