@@ -294,7 +294,7 @@ function injectPage(filesList: string[], paths: IInjectionPagePaths): void {
   const sections: { [key: string]: string } = {};
 
   filesList.forEach(file => {
-    sections[file] = readFile(`${paths.base}/${file}.md`);
+    sections[file] = readFile(`${paths.base}/${file}.md`).replace('&lt;', '<').replace('&gt;', '>');
   });
 
   fillTemplate(paths.template, sections, paths.output);
