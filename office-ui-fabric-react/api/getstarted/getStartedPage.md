@@ -21,6 +21,7 @@ Fabric Core is an [open-source](https://github.com/OfficeDev/office-ui-fabric-co
 UI Fabric also provides resources to help you [use our design language in your site](#use-our-design-language).
 
 
+
 ## Fabric React
 Getting started developing with Fabric React is simple!
 
@@ -43,6 +44,7 @@ yarn add office-ui-fabric-react
 ```jsx
 import { PrimaryButton } from 'office-ui-fabric-react';
 ```
+
 
 
 ## Start a new Fabric React project
@@ -108,6 +110,7 @@ gatsby develop
 This app be deployed to the cloud in one click—[learn more here](https://github.com/microsoft/gatsby-starter-uifabric#-deploy).
 
 
+
 ## Next steps with Fabric React
 Now you're ready to [explore Fabric controls](https://developer.microsoft.com/en-us/fabric#/controls/web) and use them in your app!
 
@@ -130,6 +133,7 @@ For an overview of styling and theming approaches in Fabric, see [this page](htt
 - [Theme designer](https://aka.ms/themedesigner)
 - [Customizing CSS-in-JS styled components](https://github.com/OfficeDev/office-ui-fabric-react/wiki/Component-Styling)
 - [Theming deep dive](https://github.com/OfficeDev/office-ui-fabric-react/wiki/Theming)
+
 
 
 ## Fabric Core
@@ -160,6 +164,7 @@ To use the styles, add the `ms-Fabric` class to a containing element, such as `<
   <span class="ms-font-su ms-fontColor-themePrimary">Big blue text</span>
 </body>
 ```
+
 
 
 ## Use our design language in your site

@@ -8,6 +8,7 @@ ms.author: vibraga
 Fabric is an open source project that celebrates internal and external contributions. Learn about how to get started designing and developing your experience.
 
 
+
 ## Design resources
 ### Design Toolkits
 
@@ -49,6 +50,7 @@ The Add-ins design toolkit provides layouts for interface elements and commonly 
 - [Guidelines for Android app icons](https://developer.android.com/guide/practices/ui_guidelines/icon_design)
 
 
+
 ## Developer resources
 ### Installation, tutorials and examples
 
@@ -84,6 +86,7 @@ Fabric is the official UI toolkit for creating Office Add-ins. Check out some of
 
 - [Add-ins overview](http://dev.office.com/docs/add-ins/overview/office-add-ins)
 - [Using Fabric in your Add-ins](http://dev.office.com/docs/add-ins/design/add-in-design)
+
 
 
 ## Contribution process
