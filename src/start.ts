@@ -172,7 +172,7 @@ function injectOverview(topCategoryItem: string, itemReference: IYamlTocItem): v
 
   fillTemplate(
     templatePaths.overview,
-    { overview, dos, donts },
+    { overview, dos, donts, itemName: topCategoryItem },
     `${outputPaths.overview}/${topCategoryItem}Overview.md`,
     pushToTOC,
   );
