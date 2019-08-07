@@ -4,7 +4,7 @@ import * as path from 'path';
 import { IYamlTocItem } from '@microsoft/api-documenter/lib/yaml/IYamlTocFile';
 import { FileSystem, JsonFile } from '@microsoft/node-core-library';
 import { categories } from './categories';
-import { fabricPackageJsonFile } from './get-fabric-version';
+// import { fabricPackageJsonFile } from './get-fabric-version';
 import { IInjectionPagePaths, ITocConfig } from './interfaces';
 import { deepPaths, outputPaths, templatePaths, tocPaths } from './pathConsts';
 
@@ -294,7 +294,7 @@ function resolveSpecialCases(topCategoryItem: string, fullPath?: string): string
 function injectPage(filesList: string[], paths: IInjectionPagePaths): void {
   const sections: { [key: string]: string } = {};
 
-  sections['fabricPackageVersion'] = fabricPackageJsonFile.version;
+  // sections['fabricPackageVersion'] = fabricPackageJsonFile.version;
 
   filesList.forEach(file => {
     sections[file] = sanitizeContent(readFile(`${paths.base}/${file}.md`));
