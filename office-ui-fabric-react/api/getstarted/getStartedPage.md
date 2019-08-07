@@ -109,7 +109,7 @@ This app be deployed to the cloud in one click—[learn more here](https://githu
 
 
 # Next steps with Fabric React
-Now you're ready to [explore Fabric controls](#/controls/web) and use them in your app!
+Now you're ready to [explore Fabric controls](https://developer.microsoft.com/en-us/fabric#/controls/web) and use them in your app!
 
 To learn more about Fabric React, check out the links below.
 
@@ -127,11 +127,9 @@ Fabric React components are highly customizable using CSS-in-JS. We also support
 
 For an overview of styling and theming approaches in Fabric, see [this page](https://github.com/Microsoft/frontend-bootcamp/tree/master/step2-03/demo). Then check out the links below for more details:
 
-<ul class="md-list--flex">
-  <li class="mdut--full">[Theme designer](https://aka.ms/themedesigner)</li>
-  <li class="mdut--full">[Customizing CSS-in-JS styled components](https://github.com/OfficeDev/office-ui-fabric-react/wiki/Component-Styling)</li>
-  <li class="mdut--full">[Theming deep dive](https://github.com/OfficeDev/office-ui-fabric-react/wiki/Theming)</li>
-</ul>
+- >[Theme designer](https://aka.ms/themedesigner)
+- >[Customizing CSS-in-JS styled components](https://github.com/OfficeDev/office-ui-fabric-react/wiki/Component-Styling)
+- >[Theming deep dive](https://github.com/OfficeDev/office-ui-fabric-react/wiki/Theming)
 
 
 # Fabric Core
@@ -167,19 +165,19 @@ To use the styles, add the `ms-Fabric` class to a containing element, such as `<
 # Use our design language in your site
 ### Styles
 
-Fabric gives you access to Segoe, Microsoft’s official typeface, along with the color palette, type ramp, icons, and responsive grid for Office 365. [Learn more](#/styles/web)
+Fabric gives you access to Segoe, Microsoft’s official typeface, along with the color palette, type ramp, icons, and responsive grid for Office 365. [Learn more](https://developer.microsoft.com/en-us/fabric#/styles/web)
 
 ### Icons
 
-Fabric includes Office’s official product icons. Fabric also provides a suite of product and document symbols, so you can use the same metaphors we use. [Learn more](#/styles/web/icons)
+Fabric includes Office’s official product icons. Fabric also provides a suite of product and document symbols, so you can use the same metaphors we use. [Learn more](https://developer.microsoft.com/en-us/fabric#/styles/web/icons)
 
 ### Controls
 
-Controls are the building blocks of your UI. Fabric has a variety of controls, including navigation, commands, containers, and content. [Learn more](#/controls/web)
+Controls are the building blocks of your UI. Fabric has a variety of controls, including navigation, commands, containers, and content. [Learn more](https://developer.microsoft.com/en-us/fabric#/controls/web)
 
 ### Design toolkits
 
-Our Fabric design toolkits provide styles, controls and layout templates that enable you to create beautiful and coherent Microsoft experiences. [Learn more](#/resources)
+Our Fabric design toolkits provide styles, controls and layout templates that enable you to create beautiful and coherent Microsoft experiences. [Learn more](https://developer.microsoft.com/en-us/fabric#/resources)
 
 ---
 
