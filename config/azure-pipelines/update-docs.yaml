@@ -2,6 +2,16 @@ pool:
   name: Hosted Ubuntu 1604
   demands: npm
 
+schedules:
+# minute 0, hour 15 in UTC (8am in UTC+7), any day of month, any month, days 1-5 of week (M-F)
+# https://docs.microsoft.com/en-us/azure/devops/pipelines/build/triggers?tabs=yaml&view=azure-devops#supported-cron-syntax
+- cron: '0 15 * * 1-5'
+  displayName: 'Daily release (M-F at 8am)' # will be 7am when DST ends unless trigger is updated
+  branches:
+    include:
+    - master 
+  always: true
+
 steps:
 - task: NodeTool@0
   displayName: 'Use Node 10.x'
