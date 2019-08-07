@@ -22,5 +22,5 @@ if (!fabricPackageJsonFilePath) {
   throw new Error('Unable to find package.json file path for office-ui-fabric-react');
 }
 
-const fabricPackageJsonFile: IPackageJson = packageJsonLookup.loadPackageJson(fabricPackageJsonFilePath);
+export const fabricPackageJsonFile: IPackageJson = packageJsonLookup.loadPackageJson(fabricPackageJsonFilePath);
 FileSystem.writeFile(resolvedOutputPath, fabricPackageJsonFile.version, { ensureFolderExists: true });
