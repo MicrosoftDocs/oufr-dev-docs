@@ -127,9 +127,9 @@ Fabric React components are highly customizable using CSS-in-JS. We also support
 
 For an overview of styling and theming approaches in Fabric, see [this page](https://github.com/Microsoft/frontend-bootcamp/tree/master/step2-03/demo). Then check out the links below for more details:
 
-  <li class="mdut--full">[Theme designer](https://aka.ms/themedesigner)
-  <li class="mdut--full">[Customizing CSS-in-JS styled components](https://github.com/OfficeDev/office-ui-fabric-react/wiki/Component-Styling)
-  <li class="mdut--full">[Theming deep dive](https://github.com/OfficeDev/office-ui-fabric-react/wiki/Theming)
+- [Theme designer](https://aka.ms/themedesigner)
+- [Customizing CSS-in-JS styled components](https://github.com/OfficeDev/office-ui-fabric-react/wiki/Component-Styling)
+- [Theming deep dive](https://github.com/OfficeDev/office-ui-fabric-react/wiki/Theming)
 
 
 # Fabric Core
