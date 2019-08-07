@@ -1,157 +1,31 @@
-import { IYamlTocItem } from '@microsoft/api-documenter/lib/yaml/IYamlTocFile';
-import { FileSystem, JsonFile } from '@microsoft/node-core-library';
 import * as Mustache from 'mustache';
 import * as path from 'path';
 
-const [nodePath, scriptPath, docsOutputPath]: Array<string | undefined> = process.argv;
-
-if (!docsOutputPath) {
-  throw new Error('Must specify a docs output path as the first argument to this script');
-}
-
-if (!path.isAbsolute(docsOutputPath)) {
-  throw new Error('The docs output path must be absolute');
-}
-
-const categories = {
-  'Basic Inputs': {
-    Button: {},
-    Checkbox: {},
-    ChoiceGroup: {},
-    ComboBox: {},
-    Dropdown: {},
-    Label: {},
-    Link: {},
-    Rating: {},
-    SearchBox: {},
-    Slider: {},
-    SpinButton: {},
-    TextField: {},
-    Toggle: {},
-  },
-  'Galleries & Pickers': {
-    Pickers: {},
-    Calendar: {},
-    ColorPicker: {},
-    DatePicker: {},
-    PeoplePicker: {},
-    SwatchColorPicker: {},
-  },
-  'Items & Lists': {
-    List: { title: 'Basic List' },
-    DetailsList: {
-      subPages: {
-        // Names, titles, and URLs here are partial.
-        // A simple entry like this:
-        //   Basic: {}
-        // will produce an actual page like this:
-        //   component: DetailsListBasicPage
-        //   title:     DetailsList - Basic
-        //   url:       #/controls/web/detailslist/basic
-        // An entry like this:
-        //   CustomColumns: { title: 'Custom Item Columns', url: 'customitemcolumns' }
-        // will produce an actual page like this:
-        //   component: DetailsListCustomColumnsPage
-        //   title:     DetailsList - Custom Item Columns
-        //   url:       #/controls/web/detailslist/customitemcolumns
-        Basic: {},
-        Compact: {},
-        Grouped: {},
-        LargeGrouped: { title: 'Large Grouped' },
-        CustomColumns: { title: 'Custom Item Columns', url: 'customitemcolumns' },
-        CustomRows: { title: 'Custom Item Rows', url: 'customitemrows' },
-        CustomFooter: { title: 'Custom Footer' },
-        CustomGroupHeaders: { title: 'Custom Group Headers' },
-        Advanced: { title: 'Variable Row Heights', url: 'variablerowheights' },
-        DragDrop: { title: 'Drag & Drop', url: 'draganddrop' },
-        NavigatingFocus: { title: 'Inner Navigation', url: 'innernavigation' },
-        Shimmer: {},
-      },
-    },
-    GroupedList: {},
-    ActivityItem: {},
-    DocumentCard: {},
-    Facepile: {},
-    HoverCard: {},
-    Persona: {},
-  },
-  'Commands, Menus & Navs': {
-    Breadcrumb: {},
-    CommandBar: {},
-    ContextualMenu: {},
-    Nav: {},
-    OverflowSet: {},
-    Pivot: {},
-  },
-  'Notification & Engagement': {
-    Coachmark: {},
-    MessageBar: {},
-    TeachingBubble: {},
-  },
-  Progress: {
-    ProgressIndicator: {},
-    Shimmer: {},
-    Spinner: {},
-  },
-  Surfaces: {
-    Callout: {},
-    Dialog: {},
-    Modal: {},
-    Panel: {},
-    ScrollablePane: {},
-    Tooltip: {},
-  },
-  Utilities: {
-    Announced: {
-      subPages: {
-        QuickActions: { title: 'Quick Actions' },
-        SearchResults: { title: 'Search Results' },
-        LazyLoading: { title: 'Lazy Loading' },
-        BulkOperations: { title: 'Bulk Operations' },
-      },
-    },
-    FocusTrapZone: {},
-    FocusZone: {},
-    Icon: {},
-    Image: {},
-    Keytips: {},
-    Layer: {},
-    MarqueeSelection: {},
-    Overlay: {},
-    ResizeGroup: {},
-    Selection: {},
-    Separator: {},
-    Stack: {},
-    Text: {},
-    Themes: {},
-  },
-  'Fluent Theme': {
-    FluentTheme: { title: 'Fluent Theme', url: 'fluent-theme' },
-  },
-  References: {},
-  // The "Other" category can be useful for local development, but it currently can also cause
-  // non-web controls (such as Chip) to show up on the web controls page.
-  // Other: {}
-};
-
-const TOC_EXAMPLE_URL = '~/api/examples';
-const TOC_OVERVIEW_URL = '~/api/overviews';
+import { IYamlTocItem } from '@microsoft/api-documenter/lib/yaml/IYamlTocFile';
+import { FileSystem, JsonFile } from '@microsoft/node-core-library';
+import { categories } from './categories';
+import { IInjectionPagePaths, ITocConfig } from './interfaces';
+import { deepPaths, outputPaths, templatePaths, tocPaths } from './pathConsts';
 
 const URL_NORMALIZE_PART = '(https://developer.microsoft.com/en-us/fabric#/';
 
-const CONFIG_PATH = path.resolve(__dirname, '..', 'config', 'api-documenter.json');
+const CONFIG_OUTPUT_PATH = path.resolve(__dirname, '..', 'config', 'api-documenter.json');
 
-const EXAMPLE_FILES_FOLDER_PATH = path.resolve(docsOutputPath, 'examples');
-const OVERVIEW_FILES_FOLDER_PATH = path.resolve(docsOutputPath, 'overviews');
+const GET_STARTED_FILES = [
+  'GetStartedOverview',
+  'GetStartedDevelopExisting',
+  'GetStartedDevelopSimple',
+  'GetStartedNextSteps',
+  'GetStartedDevelopCore',
+  'GetStartedDesign',
+];
 
-const EXAMPLE_TEMPLATE_PATH = path.resolve(__dirname, '..', 'src', 'ExampleMarkdown.mustache');
-const OVERVIEW_TEMPLATE_PATH = path.resolve(__dirname, '..', 'src', 'Overview.mustache');
-
-const DOCS_FILES_PATH = path.resolve(__dirname, '..', 'node_modules', 'office-ui-fabric-react', 'src', 'components');
-
-interface ITocConfig {
-  items: IYamlTocItem[];
-}
+const RESOURCES_FILES = [
+  'ResourcesOverview',
+  'ResourcesDesignResources',
+  'ResourcesDeveloperResources',
+  'ResourcesContributionProcess',
+];
 
 /**
  * Function that will be running every time before calling api-documenter and generate a json file along with writing example files.
@@ -160,9 +34,17 @@ function generateConfig(categoriesSource: any) {
   const tocConfig: ITocConfig = {
     items: [
       {
+        name: 'Get Started',
+        href: tocPaths.getStarted,
+      },
+      {
         name: 'Office UI Fabric React',
         uid: 'office-ui-fabric-react',
         items: [],
+      },
+      {
+        name: 'Resources',
+        href: tocPaths.resources,
       },
     ],
   };
@@ -172,14 +54,6 @@ function generateConfig(categoriesSource: any) {
   // delete unnecessary navigation items for docs.microsoft but present on the Fabric website
   delete categoriesSource['Fluent Theme'];
   delete categoriesSource['Other'];
-
-  // Cleaning up the examples and overviews folders
-  console.log('Deleting old examples from ' + EXAMPLE_FILES_FOLDER_PATH);
-  FileSystem.ensureEmptyFolder(EXAMPLE_FILES_FOLDER_PATH);
-  console.log('Deleting old overviews from ' + OVERVIEW_FILES_FOLDER_PATH);
-  FileSystem.ensureEmptyFolder(OVERVIEW_FILES_FOLDER_PATH);
-  console.log('----------------------------------------------------------');
-  console.log();
 
   const topCategories = Object.keys(categoriesSource);
 
@@ -227,6 +101,20 @@ function generateConfig(categoriesSource: any) {
         continue;
       }
 
+      // GetStarted page generation
+      injectPage(GET_STARTED_FILES, {
+        base: deepPaths.getStartedDocs,
+        template: templatePaths.getStarted,
+        output: outputPaths.getStarted,
+      });
+
+      // Resources page generation
+      injectPage(RESOURCES_FILES, {
+        base: deepPaths.resourcesDocs,
+        template: templatePaths.resources,
+        output: outputPaths.resources,
+      });
+
       // Overview nodes injections in TOC and files generation
       injectOverview(topCategoryItem, item);
 
@@ -257,41 +145,37 @@ function generateConfig(categoriesSource: any) {
   };
 
   // writing file
-  JsonFile.save(config, CONFIG_PATH);
+  JsonFile.save(config, CONFIG_OUTPUT_PATH);
 }
 
 /**
  * Helper function to inject nodes in the TOC and create files for the `Overview` page
  */
 function injectOverview(topCategoryItem: string, itemReference: IYamlTocItem): void {
-  const itemPath: string = resolveSpecialCases(topCategoryItem, `${DOCS_FILES_PATH}/${topCategoryItem}/docs`);
+  const itemPath: string = resolveSpecialCases(topCategoryItem, `${deepPaths.fabricDocs}/${topCategoryItem}/docs`);
 
   // Content of all 3 files Overview, Dos and Donts that we want to concatenate in one file
   const overview: string =
-    normalizeContentUrls(readMarkdownFile(`${itemPath}/${resolveSpecialCases(topCategoryItem)}Overview.md`)) ||
+    normalizeContentUrls(readFile(`${itemPath}/${resolveSpecialCases(topCategoryItem)}Overview.md`)) ||
     'Coming soon...';
   const dos: string =
-    normalizeContentUrls(readMarkdownFile(`${itemPath}/${resolveSpecialCases(topCategoryItem)}Dos.md`)) ||
-    'Coming soon...';
+    normalizeContentUrls(readFile(`${itemPath}/${resolveSpecialCases(topCategoryItem)}Dos.md`)) || 'Coming soon...';
   const donts: string =
-    normalizeContentUrls(readMarkdownFile(`${itemPath}/${resolveSpecialCases(topCategoryItem)}Donts.md`)) ||
-    'Coming soon...';
+    normalizeContentUrls(readFile(`${itemPath}/${resolveSpecialCases(topCategoryItem)}Donts.md`)) || 'Coming soon...';
 
-  const overviewTemplate: string = FileSystem.readFile(OVERVIEW_TEMPLATE_PATH);
-  const fileData: string = Mustache.render(overviewTemplate, { overview, dos, donts });
-
-  try {
-    FileSystem.writeFile(`${OVERVIEW_FILES_FOLDER_PATH}/${topCategoryItem}Overview.md`, fileData, {
-      ensureFolderExists: true,
-    });
-
+  const pushToTOC = () => {
     itemReference.items!.push({
       name: 'Overview',
-      href: `${TOC_OVERVIEW_URL}/${topCategoryItem}Overview.md`,
+      href: `${tocPaths.overview}/${topCategoryItem}Overview.md`,
     });
-  } catch (error) {
-    console.log(error);
-  }
+  };
+
+  fillTemplate(
+    templatePaths.overview,
+    { overview, dos, donts },
+    `${outputPaths.overview}/${topCategoryItem}Overview.md`,
+    pushToTOC,
+  );
 }
 
 /**
@@ -323,7 +207,7 @@ function injectExamples(
       if (writingFinished) {
         examplesNodeReference.items!.push({
           name: 'Details List',
-          href: `${TOC_EXAMPLE_URL}/${itemNameNormalized}/detailslist.md`,
+          href: `${tocPaths.example}/${itemNameNormalized}/detailslist.md`,
         });
       }
     }
@@ -344,7 +228,7 @@ function injectExamples(
         if (writingFinished) {
           examplesNodeReference.items!.push({
             name,
-            href: `${TOC_EXAMPLE_URL}/${itemNameNormalized}/${pathAndUrl}.md`,
+            href: `${tocPaths.example}/${itemNameNormalized}/${pathAndUrl}.md`,
           });
         }
       }
@@ -359,7 +243,7 @@ function injectExamples(
     if (writingFinished) {
       itemReference.items!.push({
         name: `${topCategoryItem} Examples`,
-        href: `${TOC_EXAMPLE_URL}/${itemNameNormalized}.md`,
+        href: `${tocPaths.example}/${itemNameNormalized}.md`,
       });
     }
   }
@@ -369,30 +253,11 @@ function injectExamples(
  * Helper function to handle the example files generation.
  */
 function writeExampleFile(componentName: string, componentUrl: string, fileLocationPath?: string): boolean {
-  const exampleTemplate: string = FileSystem.readFile(EXAMPLE_TEMPLATE_PATH);
-  const fileData: string = Mustache.render(exampleTemplate, { componentName, componentUrl });
-
-  try {
-    FileSystem.writeFile(`${EXAMPLE_FILES_FOLDER_PATH}/${fileLocationPath || componentUrl}.md`, fileData, {
-      ensureFolderExists: true,
-    });
-    return true;
-  } catch (error) {
-    console.log(error);
-  }
-  return false;
-}
-
-/**
- * Helper function to aid in reading the markdown files needed for Overview pages and not to throw in case it doesn't exist.
- */
-function readMarkdownFile(markdownFilePath: string): string {
-  try {
-    return FileSystem.readFile(markdownFilePath);
-  } catch (error) {
-    console.log(`Can not find a file at path: ${markdownFilePath}`);
-  }
-  return '';
+  return fillTemplate(
+    templatePaths.example,
+    { componentName, componentUrl },
+    `${outputPaths.example}/${fileLocationPath || componentUrl}.md`,
+  );
 }
 
 /**
@@ -422,6 +287,64 @@ function resolveSpecialCases(topCategoryItem: string, fullPath?: string): string
   return fullPath || topCategoryItem;
 }
 
+/**
+ * Helper function to generate markdown pages.
+ */
+function injectPage(filesList: string[], paths: IInjectionPagePaths): void {
+  const sections: { [key: string]: string } = {};
+
+  filesList.forEach(file => {
+    sections[file] = readFile(`${paths.base}/${file}.md`);
+  });
+
+  fillTemplate(paths.template, sections, paths.output);
+}
+
+/**
+ * Helper function to remove duplication of code when writing a file through a mustache.js template.
+ */
+function fillTemplate(templatePath: string, templateData: any, outputPath: string, cb?: () => void): boolean {
+  const exampleTemplate: string = readFile(templatePath);
+  const fileData: string = Mustache.render(exampleTemplate, templateData);
+
+  return writeMarkdownFile(outputPath, fileData, cb);
+}
+
+/**
+ * Helper function to aid in writing the markdown files needed for pages.
+ */
+function writeMarkdownFile(filePath: string, fileData: string, cb?: () => void): boolean {
+  try {
+    FileSystem.writeFile(filePath, fileData, {
+      ensureFolderExists: true,
+    });
+
+    if (cb) {
+      cb();
+    }
+
+    return true;
+  } catch (error) {
+    console.log(error);
+  }
+  return false;
+}
+
+/**
+ * Helper function to aid in reading the files.
+ */
+function readFile(markdownFilePath: string): string {
+  try {
+    return FileSystem.readFile(markdownFilePath);
+  } catch (error) {
+    console.log(`Can not find a file at path: ${markdownFilePath}`);
+  }
+  return '';
+}
+
+/**
+ * Helper function to replace specific urls in string.
+ */
 function normalizeContentUrls(content: string): string {
   if (!content) return content;
   return content.replace(/(\(#\/)/gi, URL_NORMALIZE_PART);

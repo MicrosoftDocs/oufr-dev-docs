@@ -28,6 +28,13 @@ steps:
     verbose: false
     customCommand: install --save-dev office-ui-fabric-react@7
 
+- task: Npm@1
+  displayName: 'npm install @uifabric/fabric-website latest'
+  inputs:
+    command: custom
+    verbose: false
+    customCommand: install --save-dev @uifabric/fabric-website@7
+
 - script: >
     node
     lib/get-fabric-version.js
