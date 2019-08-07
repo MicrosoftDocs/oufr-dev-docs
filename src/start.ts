@@ -130,8 +130,8 @@ function generateConfig(categoriesSource: any) {
       nonEmptyCategoryNodeNames.push(topCategoryItem);
     }
 
-    if (tocConfig.items[0] && tocConfig.items[0].items) {
-      tocConfig.items[0].items.push(topCategoryNode);
+    if (tocConfig.items[1] && tocConfig.items[1].items) {
+      tocConfig.items[1].items.push(topCategoryNode);
     }
   }
 
