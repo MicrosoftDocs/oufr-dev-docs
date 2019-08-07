@@ -4,7 +4,7 @@ author: Vitalius1
 ms.author: vibraga
 ---
 
-# Label Examples
+## Label Examples
 
 <iframe 
     title='Label Examples'

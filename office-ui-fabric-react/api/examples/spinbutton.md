@@ -4,7 +4,7 @@ author: Vitalius1
 ms.author: vibraga
 ---
 
-# SpinButton Examples
+## SpinButton Examples
 
 <iframe 
     title='SpinButton Examples'

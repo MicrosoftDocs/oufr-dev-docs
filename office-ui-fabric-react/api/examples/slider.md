@@ -4,7 +4,7 @@ author: Vitalius1
 ms.author: vibraga
 ---
 
-# Slider Examples
+## Slider Examples
 
 <iframe 
     title='Slider Examples'

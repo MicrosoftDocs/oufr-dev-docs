@@ -4,7 +4,7 @@ author: Vitalius1
 ms.author: vibraga
 ---
 
-# Separator Examples
+## Separator Examples
 
 <iframe 
     title='Separator Examples'

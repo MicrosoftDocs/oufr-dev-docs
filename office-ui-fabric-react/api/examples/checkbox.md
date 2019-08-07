@@ -4,7 +4,7 @@ author: Vitalius1
 ms.author: vibraga
 ---
 
-# Checkbox Examples
+## Checkbox Examples
 
 <iframe 
     title='Checkbox Examples'

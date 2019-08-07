@@ -4,7 +4,7 @@ author: Vitalius1
 ms.author: vibraga
 ---
 
-# Announced Quick Actions Example
+## Announced Quick Actions Example
 
 <iframe 
     title='Announced Quick Actions Example'

@@ -4,7 +4,7 @@ author: Vitalius1
 ms.author: vibraga
 ---
 
-# DetailsList Inner Navigation Example
+## DetailsList Inner Navigation Example
 
 <iframe 
     title='DetailsList Inner Navigation Example'

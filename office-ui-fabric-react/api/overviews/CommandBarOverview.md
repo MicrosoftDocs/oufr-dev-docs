@@ -4,7 +4,7 @@ author: Vitalius1
 ms.author: vibraga
 ---
 
-# Overview
+## Overview
 CommandBar is a surface that houses commands that operate on the content of
 the window, panel, or parent region it resides above. CommandBars are one of the most
 visible and recognizable ways to surface commands, and can be an intuitive

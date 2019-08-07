@@ -4,7 +4,7 @@ author: Vitalius1
 ms.author: vibraga
 ---
 
-# Spinner Examples
+## Spinner Examples
 
 <iframe 
     title='Spinner Examples'

@@ -4,7 +4,7 @@ author: Vitalius1
 ms.author: vibraga
 ---
 
-# DetailsList Drag &amp; Drop Example
+## DetailsList Drag &amp; Drop Example
 
 <iframe 
     title='DetailsList Drag &amp; Drop Example'

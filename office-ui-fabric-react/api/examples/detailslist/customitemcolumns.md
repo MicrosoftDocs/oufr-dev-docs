@@ -4,7 +4,7 @@ author: Vitalius1
 ms.author: vibraga
 ---
 
-# DetailsList Custom Item Columns Example
+## DetailsList Custom Item Columns Example
 
 <iframe 
     title='DetailsList Custom Item Columns Example'

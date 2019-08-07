@@ -4,7 +4,7 @@ author: Vitalius1
 ms.author: vibraga
 ---
 
-# CommandBar Examples
+## CommandBar Examples
 
 <iframe 
     title='CommandBar Examples'

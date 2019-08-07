@@ -4,7 +4,7 @@ author: Vitalius1
 ms.author: vibraga
 ---
 
-# MessageBar Examples
+## MessageBar Examples
 
 <iframe 
     title='MessageBar Examples'

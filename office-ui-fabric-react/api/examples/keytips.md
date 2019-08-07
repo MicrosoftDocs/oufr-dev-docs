@@ -4,7 +4,7 @@ author: Vitalius1
 ms.author: vibraga
 ---
 
-# Keytips Examples
+## Keytips Examples
 
 <iframe 
     title='Keytips Examples'

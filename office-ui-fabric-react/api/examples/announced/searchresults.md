@@ -4,7 +4,7 @@ author: Vitalius1
 ms.author: vibraga
 ---
 
-# Announced Search Results Example
+## Announced Search Results Example
 
 <iframe 
     title='Announced Search Results Example'

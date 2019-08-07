@@ -4,7 +4,7 @@ author: Vitalius1
 ms.author: vibraga
 ---
 
-# Overview
+## Overview
 UI Fabric for the web is available in two flavors: Fabric React and Fabric Core.
 
 <!-- manually creating h3 to avoid duplicate auto-generated IDs -->
@@ -21,7 +21,7 @@ Fabric Core is an [open-source](https://github.com/OfficeDev/office-ui-fabric-co
 UI Fabric also provides resources to help you [use our design language in your site](#use-our-design-language).
 
 
-# Fabric React
+## Fabric React
 Getting started developing with Fabric React is simple!
 
 To quickly try out Fabric React, you can use our "Hello World" templates on [CodePen](https://aka.ms/fabricpen) or [CodeSandbox](https://aka.ms/fabricsandbox).
@@ -45,7 +45,7 @@ import { PrimaryButton } from 'office-ui-fabric-react';
 ```
 
 
-# Start a new Fabric React project
+## Start a new Fabric React project
 Fabric React provides several starter kit options. Make sure you have the [latest LTS Node.js](https://nodejs.org/en/) installed, then choose one of the options below:
 
 - [Option 1: Quick start](#option-1-quick-start)
@@ -108,7 +108,7 @@ gatsby develop
 This app be deployed to the cloud in one click—[learn more here](https://github.com/microsoft/gatsby-starter-uifabric#-deploy).
 
 
-# Next steps with Fabric React
+## Next steps with Fabric React
 Now you're ready to [explore Fabric controls](https://developer.microsoft.com/en-us/fabric#/controls/web) and use them in your app!
 
 To learn more about Fabric React, check out the links below.
@@ -132,7 +132,7 @@ For an overview of styling and theming approaches in Fabric, see [this page](htt
 - [Theming deep dive](https://github.com/OfficeDev/office-ui-fabric-react/wiki/Theming)
 
 
-# Fabric Core
+## Fabric Core
 [Fabric Core](https://github.com/OfficeDev/office-ui-fabric-core) is a collection of CSS classes and Sass mixins that give you access to Fabric's colors, animations, fonts, icons and grid.
 
 ### Who should use Fabric Core
@@ -162,7 +162,7 @@ To use the styles, add the `ms-Fabric` class to a containing element, such as `<
 ```
 
 
-# Use our design language in your site
+## Use our design language in your site
 ### Styles
 
 Fabric gives you access to Segoe, Microsoft’s official typeface, along with the color palette, type ramp, icons, and responsive grid for Office 365. [Learn more](https://developer.microsoft.com/en-us/fabric#/styles/web)

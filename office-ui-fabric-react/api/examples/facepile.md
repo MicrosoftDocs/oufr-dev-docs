@@ -4,7 +4,7 @@ author: Vitalius1
 ms.author: vibraga
 ---
 
-# Facepile Examples
+## Facepile Examples
 
 <iframe 
     title='Facepile Examples'

@@ -4,7 +4,7 @@ author: Vitalius1
 ms.author: vibraga
 ---
 
-# TeachingBubble Examples
+## TeachingBubble Examples
 
 <iframe 
     title='TeachingBubble Examples'

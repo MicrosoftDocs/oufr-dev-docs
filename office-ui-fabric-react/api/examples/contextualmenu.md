@@ -4,7 +4,7 @@ author: Vitalius1
 ms.author: vibraga
 ---
 
-# ContextualMenu Examples
+## ContextualMenu Examples
 
 <iframe 
     title='ContextualMenu Examples'

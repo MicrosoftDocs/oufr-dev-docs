@@ -4,7 +4,7 @@ author: Vitalius1
 ms.author: vibraga
 ---
 
-# Coachmark Examples
+## Coachmark Examples
 
 <iframe 
     title='Coachmark Examples'

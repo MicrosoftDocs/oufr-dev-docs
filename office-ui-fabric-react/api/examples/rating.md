@@ -4,7 +4,7 @@ author: Vitalius1
 ms.author: vibraga
 ---
 
-# Rating Examples
+## Rating Examples
 
 <iframe 
     title='Rating Examples'

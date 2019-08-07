@@ -4,7 +4,7 @@ author: Vitalius1
 ms.author: vibraga
 ---
 
-# Stack Examples
+## Stack Examples
 
 <iframe 
     title='Stack Examples'

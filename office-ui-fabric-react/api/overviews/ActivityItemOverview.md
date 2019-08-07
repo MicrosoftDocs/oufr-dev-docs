@@ -4,7 +4,7 @@ author: Vitalius1
 ms.author: vibraga
 ---
 
-# Overview
+## Overview
 ActivityItems represent individual units of a user&#39;s activity, such as making a comment, mentioning someone with an @mention, editing a document, or moving a file.
 
 

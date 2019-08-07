@@ -4,7 +4,7 @@ author: Vitalius1
 ms.author: vibraga
 ---
 
-# Overview
+## Overview
 List provides a base component for rendering large sets of items. It is agnostic of layout, the tile component used, and selection management. These concerns can be layered separately.
 
 **Performance is important, and DOM content is expensive. Therefore, limit what you render.** List applies this principle by using UI virtualization. Unlike a simple &#x60;for&#x60; loop that renders all items in a set, a List only renders a subset of items, and as you scroll around, the subset of rendered content is shifted. This gives a much better experience for large sets, especially when the per-item components are complex&#x2F;render-intensive&#x2F;network-intensive.

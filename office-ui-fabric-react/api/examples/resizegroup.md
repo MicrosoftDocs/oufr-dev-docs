@@ -4,7 +4,7 @@ author: Vitalius1
 ms.author: vibraga
 ---
 
-# ResizeGroup Examples
+## ResizeGroup Examples
 
 <iframe 
     title='ResizeGroup Examples'

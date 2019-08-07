@@ -4,7 +4,7 @@ author: Vitalius1
 ms.author: vibraga
 ---
 
-# Overview
+## Overview
 Selection is a store that maintains the selection state of items in an efficient way.
 It exposes methods for accessing the selection state given an item index.
 If the items change, it can resolve the selection if items move in the array.

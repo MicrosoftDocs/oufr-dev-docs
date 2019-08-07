@@ -4,7 +4,7 @@ author: Vitalius1
 ms.author: vibraga
 ---
 
-# Overview
+## Overview
 The MarqueeSelection component provides a service which allows the user to drag a rectangle to be drawn around
 items to select them. This works in conjunction with a selection object, which can be used to generically store selection state, separate from a component that consumes the state.
 

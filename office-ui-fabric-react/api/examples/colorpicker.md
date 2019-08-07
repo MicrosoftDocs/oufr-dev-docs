@@ -4,7 +4,7 @@ author: Vitalius1
 ms.author: vibraga
 ---
 
-# ColorPicker Examples
+## ColorPicker Examples
 
 <iframe 
     title='ColorPicker Examples'

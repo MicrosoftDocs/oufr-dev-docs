@@ -4,7 +4,7 @@ author: Vitalius1
 ms.author: vibraga
 ---
 
-# Image Examples
+## Image Examples
 
 <iframe 
     title='Image Examples'

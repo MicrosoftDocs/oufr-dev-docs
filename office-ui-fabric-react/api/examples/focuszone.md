@@ -4,7 +4,7 @@ author: Vitalius1
 ms.author: vibraga
 ---
 
-# FocusZone Examples
+## FocusZone Examples
 
 <iframe 
     title='FocusZone Examples'

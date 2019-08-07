@@ -4,7 +4,7 @@ author: Vitalius1
 ms.author: vibraga
 ---
 
-# Overview
+## Overview
 Tooltips supplement content associated with a specific UI component. You can use two components, and each has different props:
 
 - **Tooltip:** A styled tooltip that you can display on a chosen target.

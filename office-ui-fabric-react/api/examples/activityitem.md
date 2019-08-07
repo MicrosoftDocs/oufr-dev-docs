@@ -4,7 +4,7 @@ author: Vitalius1
 ms.author: vibraga
 ---
 
-# ActivityItem Examples
+## ActivityItem Examples
 
 <iframe 
     title='ActivityItem Examples'

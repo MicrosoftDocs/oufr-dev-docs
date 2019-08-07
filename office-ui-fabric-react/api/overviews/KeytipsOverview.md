@@ -4,7 +4,7 @@ author: Vitalius1
 ms.author: vibraga
 ---
 
-# Overview
+## Overview
 A Keytip is a small popup near a component that indicates a key sequence that
 will trigger that component. These are not to be confused with keyboard
 shortcuts; they are instead key sequences to traverse through levels of UI

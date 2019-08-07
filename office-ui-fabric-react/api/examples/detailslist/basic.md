@@ -4,7 +4,7 @@ author: Vitalius1
 ms.author: vibraga
 ---
 
-# DetailsList Basic Example
+## DetailsList Basic Example
 
 <iframe 
     title='DetailsList Basic Example'

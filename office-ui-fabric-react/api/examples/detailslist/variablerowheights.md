@@ -4,7 +4,7 @@ author: Vitalius1
 ms.author: vibraga
 ---
 
-# DetailsList Variable Row Heights Example
+## DetailsList Variable Row Heights Example
 
 <iframe 
     title='DetailsList Variable Row Heights Example'

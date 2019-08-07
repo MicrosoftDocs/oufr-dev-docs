@@ -4,11 +4,11 @@ author: Vitalius1
 ms.author: vibraga
 ---
 
-# Overview
+## Overview
 Fabric is an open source project that celebrates internal and external contributions. Learn about how to get started designing and developing your experience.
 
 
-# Design resources
+## Design resources
 ### Design Toolkits
 
 These design toolkits provide styles, controls and layout templates that enable you to create beautiful and coherent Microsoft experiences.
@@ -49,7 +49,7 @@ The Add-ins design toolkit provides layouts for interface elements and commonly 
 - [Guidelines for Android app icons](https://developer.android.com/guide/practices/ui_guidelines/icon_design)
 
 
-# Developer resources
+## Developer resources
 ### Installation, tutorials and examples
 
 Get started with React and learn how to build your first projects.
@@ -86,7 +86,7 @@ Fabric is the official UI toolkit for creating Office Add-ins. Check out some of
 - [Using Fabric in your Add-ins](http://dev.office.com/docs/add-ins/design/add-in-design)
 
 
-# Contribution process
+## Contribution process
 Reference these step-by-step processes for contributing to UI Fabric.
 
 ### Fabric for web

@@ -4,7 +4,7 @@ author: Vitalius1
 ms.author: vibraga
 ---
 
-# Announced Bulk Operations Example
+## Announced Bulk Operations Example
 
 <iframe 
     title='Announced Bulk Operations Example'

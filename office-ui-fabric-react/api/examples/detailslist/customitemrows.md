@@ -4,7 +4,7 @@ author: Vitalius1
 ms.author: vibraga
 ---
 
-# DetailsList Custom Item Rows Example
+## DetailsList Custom Item Rows Example
 
 <iframe 
     title='DetailsList Custom Item Rows Example'

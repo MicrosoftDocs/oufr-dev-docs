@@ -4,7 +4,7 @@ author: Vitalius1
 ms.author: vibraga
 ---
 
-# Announced Lazy Loading Example
+## Announced Lazy Loading Example
 
 <iframe 
     title='Announced Lazy Loading Example'

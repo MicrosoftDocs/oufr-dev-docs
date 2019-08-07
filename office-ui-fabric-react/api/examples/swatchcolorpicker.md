@@ -4,7 +4,7 @@ author: Vitalius1
 ms.author: vibraga
 ---
 
-# SwatchColorPicker Examples
+## SwatchColorPicker Examples
 
 <iframe 
     title='SwatchColorPicker Examples'

@@ -4,7 +4,7 @@ author: Vitalius1
 ms.author: vibraga
 ---
 
-# Overview
+## Overview
 Allows you to render a set of items as multiple lists with various grouping properties.
 
 ## My List is not re-rendering when I mutate its items! What should I do?

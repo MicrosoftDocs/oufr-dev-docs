@@ -4,7 +4,7 @@ author: Vitalius1
 ms.author: vibraga
 ---
 
-# ProgressIndicator Examples
+## ProgressIndicator Examples
 
 <iframe 
     title='ProgressIndicator Examples'

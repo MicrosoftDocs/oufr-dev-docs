@@ -4,7 +4,7 @@ author: Vitalius1
 ms.author: vibraga
 ---
 
-# DetailsList Custom Group Headers Example
+## DetailsList Custom Group Headers Example
 
 <iframe 
     title='DetailsList Custom Group Headers Example'

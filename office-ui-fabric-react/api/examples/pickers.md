@@ -4,7 +4,7 @@ author: Vitalius1
 ms.author: vibraga
 ---
 
-# Pickers Examples
+## Pickers Examples
 
 <iframe 
     title='Pickers Examples'

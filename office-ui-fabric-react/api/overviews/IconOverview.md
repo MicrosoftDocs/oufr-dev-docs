@@ -4,7 +4,7 @@ author: Vitalius1
 ms.author: vibraga
 ---
 
-# Overview
+## Overview
 In a user interface, an icon is an image that represents an application, a capability, or some other concept or specific entity with meaning for the user. An icon is usually selectable but can also be a nonselectable image, such as a company&#39;s logo.
 
 For a list of icons, visit our [icon documentation](https:&#x2F;&#x2F;developer.microsoft.com&#x2F;en-us&#x2F;fabric#&#x2F;styles&#x2F;web&#x2F;icons).

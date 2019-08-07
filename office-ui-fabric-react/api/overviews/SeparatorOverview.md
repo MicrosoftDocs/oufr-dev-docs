@@ -4,7 +4,7 @@ author: Vitalius1
 ms.author: vibraga
 ---
 
-# Overview
+## Overview
 A separator visually separates content into groups.
 
 You can render content in the separator by specifying the component&#39;s children.

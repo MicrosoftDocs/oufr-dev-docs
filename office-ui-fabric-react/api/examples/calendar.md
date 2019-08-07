@@ -4,7 +4,7 @@ author: Vitalius1
 ms.author: vibraga
 ---
 
-# Calendar Examples
+## Calendar Examples
 
 <iframe 
     title='Calendar Examples'

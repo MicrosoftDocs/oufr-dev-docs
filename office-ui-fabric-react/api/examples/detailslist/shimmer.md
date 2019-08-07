@@ -4,7 +4,7 @@ author: Vitalius1
 ms.author: vibraga
 ---
 
-# DetailsList Shimmer Example
+## DetailsList Shimmer Example
 
 <iframe 
     title='DetailsList Shimmer Example'

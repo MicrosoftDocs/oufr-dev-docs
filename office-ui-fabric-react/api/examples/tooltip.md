@@ -4,7 +4,7 @@ author: Vitalius1
 ms.author: vibraga
 ---
 
-# Tooltip Examples
+## Tooltip Examples
 
 <iframe 
     title='Tooltip Examples'

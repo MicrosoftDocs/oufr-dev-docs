@@ -4,7 +4,7 @@ author: Vitalius1
 ms.author: vibraga
 ---
 
-# Overview
+## Overview
 The Announced component aims to fill several of the accessibility gaps that exist in various web application experiences.
 It provides text for the screen reader in certain scenarios that are lacking comprehensive updates, particularly those showing
 the completion status or progress of operation(s).

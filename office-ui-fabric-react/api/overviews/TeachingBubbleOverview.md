@@ -4,7 +4,7 @@ author: Vitalius1
 ms.author: vibraga
 ---
 
-# Overview
+## Overview
 TeachingBubbles are a special kind of [Callout](https:&#x2F;&#x2F;developer.microsoft.com&#x2F;en-us&#x2F;fabric#&#x2F;controls&#x2F;web&#x2F;callout) used to prominently display important hints to a specific part of a page. They should be used to educate the user about an element that may be easy to miss, such as a new feature or option in the UI. Because they increase engagement with a part of the UI, they are often paired with [Coachmarks](https:&#x2F;&#x2F;developer.microsoft.com&#x2F;en-us&#x2F;fabric#&#x2F;controls&#x2F;web&#x2F;coachmark).
 
 TeachingBubbles are usually invoked by a system change rather than a user action, so they should generally not be used to show supplemental information or helper text. This is better suited for Callouts or [Tooltips](https:&#x2F;&#x2F;developer.microsoft.com&#x2F;en-us&#x2F;fabric#&#x2F;controls&#x2F;web&#x2F;tooltip), which are used to simplify interactions. TeachingBubbles should be used to temporarily highlight a feature and should only be shown for a limited time; they should not be permanent parts of a UX.

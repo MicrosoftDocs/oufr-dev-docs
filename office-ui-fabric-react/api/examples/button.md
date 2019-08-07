@@ -4,7 +4,7 @@ author: Vitalius1
 ms.author: vibraga
 ---
 
-# Button Examples
+## Button Examples
 
 <iframe 
     title='Button Examples'

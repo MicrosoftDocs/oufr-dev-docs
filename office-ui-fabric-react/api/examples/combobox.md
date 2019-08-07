@@ -4,7 +4,7 @@ author: Vitalius1
 ms.author: vibraga
 ---
 
-# ComboBox Examples
+## ComboBox Examples
 
 <iframe 
     title='ComboBox Examples'
