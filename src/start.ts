@@ -350,5 +350,15 @@ function normalizeContentUrls(content: string): string {
   return content.replace(/(\(#\/)/gi, URL_NORMALIZE_PART);
 }
 
+function sanitizeContent(content: string): string {
+  return normalizeContentUrls(
+    content
+      .replace(/<ul class="md-list--flex">\s/g, '')
+      .replace(/\s\s<li class="mdut--half"|\s\s<li class="mdut--full"/g, '- ')
+      .replace(/<\/li>/g, '')
+      .replace(/<\/ul>\s/g, ''),
+  );
+}
+
 // Start generation.
 generateConfig(categories);
