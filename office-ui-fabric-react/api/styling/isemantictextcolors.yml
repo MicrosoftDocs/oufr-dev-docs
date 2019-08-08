@@ -36,6 +36,7 @@ items:
       - styling.ISemanticTextColors.primaryButtonTextDisabled
       - styling.ISemanticTextColors.primaryButtonTextHovered
       - styling.ISemanticTextColors.primaryButtonTextPressed
+      - styling.ISemanticTextColors.successText
       - styling.ISemanticTextColors.warningText
   - uid: styling.ISemanticTextColors.accentButtonText
     summary: Color of text for accent button (kicker)
@@ -232,7 +233,7 @@ items:
         type:
           - string
   - uid: styling.ISemanticTextColors.errorText
-    summary: 'The default color of error text, used on bodyBackground.'
+    summary: The default color of error text on bodyBackground.
     name: errorText
     fullName: errorText
     langs:
@@ -376,8 +377,20 @@ items:
       return:
         type:
           - string
+  - uid: styling.ISemanticTextColors.successText
+    summary: The default color of success text on successBackground.
+    name: successText
+    fullName: successText
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'successText: string;'
+      return:
+        type:
+          - string
   - uid: styling.ISemanticTextColors.warningText
-    summary: 'The color of text on errorBackground, warningBackground, blockingBackground, or successBackground.'
+    summary: 'The default color of text on errorBackground, warningBackground, blockingBackground, or successBackground.'
     name: warningText
     fullName: warningText
     langs:

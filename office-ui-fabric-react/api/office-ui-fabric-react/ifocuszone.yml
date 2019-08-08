@@ -11,6 +11,7 @@ items:
     children:
       - office-ui-fabric-react.IFocusZone.focus
       - office-ui-fabric-react.IFocusZone.focusElement
+      - office-ui-fabric-react.IFocusZone.setFocusAlignment
   - uid: office-ui-fabric-react.IFocusZone.focus
     summary: Sets focus to the first tabbable item in the zone.
     name: focus(forceIntoFirstElement)
@@ -49,3 +50,23 @@ items:
           description: ''
           type:
             - HTMLElement
+  - uid: office-ui-fabric-react.IFocusZone.setFocusAlignment
+    summary: >-
+      Forces horizontal alignment in the context of vertical arrowing to use specific point as the reference, rather
+      than a center based on the last horizontal motion.
+    name: setFocusAlignment(point)
+    fullName: setFocusAlignment(point)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setFocusAlignment(point: IPoint): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: point
+          description: the new reference point.
+          type:
+            - utilities.IPoint

@@ -13,6 +13,7 @@ items:
       - office-ui-fabric-react.IDetailsItemProps.columns
       - office-ui-fabric-react.IDetailsItemProps.groupNestingDepth
       - office-ui-fabric-react.IDetailsItemProps.indentWidth
+      - office-ui-fabric-react.IDetailsItemProps.rowWidth
       - office-ui-fabric-react.IDetailsItemProps.selection
       - office-ui-fabric-react.IDetailsItemProps.selectionMode
       - office-ui-fabric-react.IDetailsItemProps.viewport
@@ -76,6 +77,18 @@ items:
       return:
         type:
           - number | undefined
+  - uid: office-ui-fabric-react.IDetailsItemProps.rowWidth
+    summary: Minimum width of the row.
+    name: rowWidth
+    fullName: rowWidth
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rowWidth?: number;'
+      return:
+        type:
+          - number
   - uid: office-ui-fabric-react.IDetailsItemProps.selection
     summary: Selection from utilities
     name: selection
@@ -102,6 +115,8 @@ items:
           - SelectionMode | undefined
   - uid: office-ui-fabric-react.IDetailsItemProps.viewport
     summary: View port of the virtualized list
+    deprecated:
+      content: use rowWidth instead
     name: viewport
     fullName: viewport
     langs:

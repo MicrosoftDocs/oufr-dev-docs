@@ -41,6 +41,7 @@ items:
       - office-ui-fabric-react.IPanelProps.onRenderHeader
       - office-ui-fabric-react.IPanelProps.onRenderNavigation
       - office-ui-fabric-react.IPanelProps.onRenderNavigationContent
+      - office-ui-fabric-react.IPanelProps.overlayProps
       - office-ui-fabric-react.IPanelProps.styles
       - office-ui-fabric-react.IPanelProps.theme
       - office-ui-fabric-react.IPanelProps.type
@@ -305,7 +306,9 @@ items:
         type:
           - '(ev?: React.SyntheticEvent<HTMLElement>) => void'
   - uid: office-ui-fabric-react.IPanelProps.onDismissed
-    summary: A callback function which is called after the Panel is dismissed and the animation is complete.
+    summary: >-
+      A callback function which is called \*\*after\*\* the Panel is dismissed and the animation is complete. (If you
+      need to update the Panel's `isOpen` prop in response to a dismiss event, use `onDismiss` instead.)
     name: onDismissed
     fullName: onDismissed
     langs:
@@ -436,6 +439,18 @@ items:
       return:
         type:
           - IRenderFunction<IPanelProps>
+  - uid: office-ui-fabric-react.IPanelProps.overlayProps
+    summary: Optional props to pass to the Overlay component that the panel uses.
+    name: overlayProps
+    fullName: overlayProps
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'overlayProps?: IOverlayProps;'
+      return:
+        type:
+          - office-ui-fabric-react.IOverlayProps
   - uid: office-ui-fabric-react.IPanelProps.styles
     summary: Call to provide customized styling that will layer on top of the variant rules.
     name: styles

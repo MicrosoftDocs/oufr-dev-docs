@@ -7,13 +7,14 @@ items:
       - typeScript
     type: class
     extends:
-      - 'BaseComponent<ISpinButtonProps, ISpinButtonState> '
+      - 'React.Component<ISpinButtonProps, ISpinButtonState> '
     implements:
       - office-ui-fabric-react.ISpinButton
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.SpinButton.(constructor)
       - office-ui-fabric-react.SpinButton.componentWillReceiveProps
+      - office-ui-fabric-react.SpinButton.componentWillUnmount
       - office-ui-fabric-react.SpinButton.defaultProps
       - office-ui-fabric-react.SpinButton.focus
       - office-ui-fabric-react.SpinButton.render
@@ -50,6 +51,18 @@ items:
           description: ''
           type:
             - office-ui-fabric-react.ISpinButtonProps
+  - uid: office-ui-fabric-react.SpinButton.componentWillUnmount
+    name: componentWillUnmount()
+    fullName: componentWillUnmount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'componentWillUnmount(): void;'
+      return:
+        type:
+          - void
+        description: ''
   - uid: office-ui-fabric-react.SpinButton.defaultProps
     name: defaultProps
     fullName: defaultProps
