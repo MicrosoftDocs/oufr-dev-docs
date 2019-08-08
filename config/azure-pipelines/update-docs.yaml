@@ -64,6 +64,13 @@ steps:
     --output-folder $(Build.ArtifactStagingDirectory)/doc-files/api
   displayName: Run API Documenter
 
+# This is a temporary workaround until we have a fix upstream in the api-documenter
+- script: >
+    node
+    lib/modifyToc.js
+    $(Build.ArtifactStagingDirectory)/doc-files/api
+  displayName: Inject additional line in TOC.yml
+
 - task: CopyFiles@2
   displayName: 'Copy example and overview files'
   inputs:

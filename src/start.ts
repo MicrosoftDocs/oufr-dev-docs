@@ -1,11 +1,11 @@
 import * as Mustache from 'mustache';
 import * as path from 'path';
 
-import { IYamlTocItem } from '@microsoft/api-documenter/lib/yaml/IYamlTocFile';
+import { IYamlTocFile, IYamlTocItem } from '@microsoft/api-documenter/lib/yaml/IYamlTocFile';
 import { FileSystem, JsonFile } from '@microsoft/node-core-library';
 import { categories } from './categories';
 import { getFabricVersion } from './getFabricVersion';
-import { IInjectionPagePaths, ITocConfig } from './interfaces';
+import { IInjectionPagePaths } from './interfaces';
 import { deepPaths, outputPaths, templatePaths, tocPaths } from './pathConsts';
 
 const URL_NORMALIZE_PART = '(https://developer.microsoft.com/en-us/fabric#/';
@@ -32,7 +32,7 @@ const RESOURCES_FILES = [
  * Function that will be running every time before calling api-documenter and generate a json file along with writing example files.
  */
 function generateConfig(categoriesSource: any) {
-  const tocConfig: ITocConfig = {
+  const tocConfig: IYamlTocFile = {
     items: [
       {
         name: 'Get Started',
@@ -310,13 +310,13 @@ function fillTemplate(templatePath: string, templateData: any, outputPath: strin
   const exampleTemplate: string = readFile(templatePath);
   const fileData: string = Mustache.render(exampleTemplate, templateData);
 
-  return writeMarkdownFile(outputPath, fileData, cb);
+  return writeFile(outputPath, fileData, cb);
 }
 
 /**
  * Helper function to aid in writing the markdown files needed for pages.
  */
-function writeMarkdownFile(filePath: string, fileData: string, cb?: () => void): boolean {
+export function writeFile(filePath: string, fileData: string, cb?: () => void): boolean {
   try {
     FileSystem.writeFile(filePath, fileData, {
       ensureFolderExists: true,
@@ -336,11 +336,11 @@ function writeMarkdownFile(filePath: string, fileData: string, cb?: () => void):
 /**
  * Helper function to aid in reading the files.
  */
-function readFile(markdownFilePath: string): string {
+export function readFile(filePath: string): string {
   try {
-    return FileSystem.readFile(markdownFilePath);
+    return FileSystem.readFile(filePath);
   } catch (error) {
-    console.log(`Can not find a file at path: ${markdownFilePath}`);
+    console.log(`Can not find a file at path: ${filePath}`);
   }
   return '';
 }

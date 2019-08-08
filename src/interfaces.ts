@@ -1,9 +1,3 @@
-import { IYamlTocItem } from '@microsoft/api-documenter/lib/yaml/IYamlTocFile';
-
-export interface ITocConfig {
-  items: IYamlTocItem[];
-}
-
 export interface IInjectionPagePaths {
   base: string;
   template: string;
