@@ -1,6 +1,6 @@
 import * as path from 'path';
 
-import { readFile, writeFile } from './start';
+import { readFile, writeFile } from './utilities';
 
 const [nodePath, scriptPath, filePath]: Array<string | undefined> = process.argv;
 
