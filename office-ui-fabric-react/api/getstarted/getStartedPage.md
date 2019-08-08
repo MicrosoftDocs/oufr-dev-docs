@@ -4,7 +4,7 @@ author: Vitalius1
 ms.author: vibraga
 ---
 
-# Get Started with Fabric React v7.21.0
+# Get Started with Fabric React v7.22.0
 
 ## Overview
 UI Fabric for the web is available in two flavors: Fabric React and Fabric Core.
@@ -20,7 +20,7 @@ Fabric Core is an [open-source](https://github.com/OfficeDev/office-ui-fabric-co
 
 <h3 class="for-designers">For Designers</h3>
 
-UI Fabric also provides resources to help you [use our design language in your site](#use-our-design-language).
+UI Fabric also provides resources to help you [use our design language in your site](#use-our-design-language-in-your-site).
 
 
 
@@ -54,7 +54,7 @@ Fabric React provides several starter kit options. Make sure you have the [lates
 
 - [Option 1: Quick start](#option-1-quick-start)
 - [Option 2: Using Create React App](#option-2-create-react-app)
-- [Option 3: Using Gatsby.js](#option-3-gatsby-js)
+- [Option 3: Using Gatsby.js](#option-3-gatsbyjs)
 
 ### Option 1: Quick start
 
