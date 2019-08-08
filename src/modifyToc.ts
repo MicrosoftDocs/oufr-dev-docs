@@ -16,12 +16,14 @@ if (!path.isAbsolute(filePath)) {
 const tocFilePath = path.resolve(filePath, 'toc.yml');
 
 const tocFile = readFile(tocFilePath);
+console.log(tocFile);
 
 function addNewLine(match: string, offset: number, originalString: string): string {
   return match + '    expanded: true\n';
 }
 
 const newTocFile: string = tocFile.replace('    uid: office-ui-fabric-react\n', addNewLine);
+console.log('newTocFile: ', newTocFile);
 //   .replace(/items:\n/, '\n')
 //   .replace(/\n\s\s/g, '\n');
 
