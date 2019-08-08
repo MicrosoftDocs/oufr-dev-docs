@@ -1,5 +1,6 @@
 import * as path from 'path';
 
+import { FileSystem } from '@microsoft/node-core-library';
 import { readFile, writeFile } from './utilities';
 
 const [nodePath, scriptPath, filePath]: Array<string | undefined> = process.argv;
@@ -24,4 +25,4 @@ const newTocFile: string = tocFile.replace('    uid: office-ui-fabric-react\n', 
 //   .replace(/items:\n/, '\n')
 //   .replace(/\n\s\s/g, '\n');
 
-writeFile(tocFilePath, newTocFile);
+FileSystem.writeFile(tocFilePath, newTocFile);
