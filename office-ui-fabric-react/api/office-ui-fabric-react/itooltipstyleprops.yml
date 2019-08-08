@@ -10,6 +10,7 @@ items:
     children:
       - office-ui-fabric-react.ITooltipStyleProps.className
       - office-ui-fabric-react.ITooltipStyleProps.delay
+      - office-ui-fabric-react.ITooltipStyleProps.gapSpace
       - office-ui-fabric-react.ITooltipStyleProps.maxWidth
       - office-ui-fabric-react.ITooltipStyleProps.theme
   - uid: office-ui-fabric-react.ITooltipStyleProps.className
@@ -26,6 +27,8 @@ items:
           - string
   - uid: office-ui-fabric-react.ITooltipStyleProps.delay
     summary: Delay before tooltip appears.
+    deprecated:
+      content: Delay logic moved to TooltipHost vs relying on animation delay.
     name: delay
     fullName: delay
     langs:
@@ -36,6 +39,18 @@ items:
       return:
         type:
           - office-ui-fabric-react.TooltipDelay
+  - uid: office-ui-fabric-react.ITooltipStyleProps.gapSpace
+    summary: The gap between the Callout and the target
+    name: gapSpace
+    fullName: gapSpace
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'gapSpace?: number;'
+      return:
+        type:
+          - number
   - uid: office-ui-fabric-react.ITooltipStyleProps.maxWidth
     summary: Maximum width of tooltip.
     name: maxWidth

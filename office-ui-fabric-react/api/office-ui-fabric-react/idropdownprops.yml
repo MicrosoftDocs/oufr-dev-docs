@@ -21,6 +21,7 @@ items:
       - office-ui-fabric-react.IDropdownProps.onChanged
       - office-ui-fabric-react.IDropdownProps.onDismiss
       - office-ui-fabric-react.IDropdownProps.onRenderCaretDown
+      - office-ui-fabric-react.IDropdownProps.onRenderLabel
       - office-ui-fabric-react.IDropdownProps.onRenderPlaceholder
       - office-ui-fabric-react.IDropdownProps.onRenderPlaceHolder
       - office-ui-fabric-react.IDropdownProps.onRenderTitle
@@ -166,6 +167,18 @@ items:
     type: property
     syntax:
       content: 'onRenderCaretDown?: IRenderFunction<IDropdownProps>;'
+      return:
+        type:
+          - IRenderFunction<IDropdownProps>
+  - uid: office-ui-fabric-react.IDropdownProps.onRenderLabel
+    summary: Custom render function for the label.
+    name: onRenderLabel
+    fullName: onRenderLabel
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onRenderLabel?: IRenderFunction<IDropdownProps>;'
       return:
         type:
           - IRenderFunction<IDropdownProps>

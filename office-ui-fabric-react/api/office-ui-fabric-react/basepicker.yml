@@ -35,6 +35,7 @@ items:
       - office-ui-fabric-react.BasePicker.onBackspace
       - office-ui-fabric-react.BasePicker.onBlur
       - office-ui-fabric-react.BasePicker.onChange
+      - office-ui-fabric-react.BasePicker.onClick
       - office-ui-fabric-react.BasePicker.onEmptyInputFocus
       - office-ui-fabric-react.BasePicker.onGetMoreResults
       - office-ui-fabric-react.BasePicker.onInputBlur
@@ -359,6 +360,18 @@ items:
           description: ''
           type:
             - 'T[]'
+  - uid: office-ui-fabric-react.BasePicker.onClick
+    summary: Reveals suggestions any time the user clicks on the input element without shifting focus.
+    name: onClick
+    fullName: onClick
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'protected onClick: (ev: React.MouseEvent<HTMLInputElement, MouseEvent>) => void;'
+      return:
+        type:
+          - '(ev: React.MouseEvent<HTMLInputElement, MouseEvent>) => void'
   - uid: office-ui-fabric-react.BasePicker.onEmptyInputFocus
     name: onEmptyInputFocus()
     fullName: onEmptyInputFocus()

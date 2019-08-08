@@ -331,7 +331,12 @@ items:
           type:
             - number | string
   - uid: utilities.classNamesFunction
-    summary: 'Creates a getClassNames function which calls getStyles given the props, and injects them into mergeStyleSets.'
+    summary: >-
+      Creates a getClassNames function which calls getStyles given the props, and injects them into mergeStyleSets.
+
+
+      Note that the props you pass in on every render should be in the same order and immutable (numbers, strings, and
+      booleans). This will allow the results to be memoized. Violating these will cause extra recalcs to occur.
     name: classNamesFunction(options)
     fullName: classNamesFunction(options)
     langs:
@@ -341,13 +346,12 @@ items:
       content: >-
         export declare function classNamesFunction<TStyleProps extends {}, TStyleSet extends
         IStyleSet<TStyleSet>>(options?: IClassNamesFunctionOptions): (getStyles: IStyleFunctionOrObject<TStyleProps,
-        TStyleSet> | (IStyleFunctionOrObject<TStyleProps, TStyleSet> | undefined)[] | undefined, styleProps?:
-        TStyleProps) => IProcessedStyleSet<TStyleSet>;
+        TStyleSet> | undefined, styleProps?: TStyleProps) => IProcessedStyleSet<TStyleSet>;
       return:
         type:
           - >-
-            (getStyles: IStyleFunctionOrObject<TStyleProps, TStyleSet> | (IStyleFunctionOrObject<TStyleProps, TStyleSet>
-            | undefined)[] | undefined, styleProps?: TStyleProps) => IProcessedStyleSet<TStyleSet>
+            (getStyles: IStyleFunctionOrObject<TStyleProps, TStyleSet> | undefined, styleProps?: TStyleProps) =>
+            IProcessedStyleSet<TStyleSet>
         description: ''
       parameters:
         - id: options

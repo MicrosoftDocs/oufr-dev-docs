@@ -1,6 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office-ui-fabric-react.IChoiceGroupOptionStyleProps
+    summary: >-
+      Defines props needed to construct styles. This represents the simplified set of immutable things which control the
+      class names.
     name: IChoiceGroupOptionStyleProps
     fullName: IChoiceGroupOptionStyleProps
     langs:
@@ -14,8 +17,10 @@ items:
       - office-ui-fabric-react.IChoiceGroupOptionStyleProps.hasIcon
       - office-ui-fabric-react.IChoiceGroupOptionStyleProps.hasImage
       - office-ui-fabric-react.IChoiceGroupOptionStyleProps.imageIsLarge
+      - office-ui-fabric-react.IChoiceGroupOptionStyleProps.imageSize
       - office-ui-fabric-react.IChoiceGroupOptionStyleProps.theme
   - uid: office-ui-fabric-react.IChoiceGroupOptionStyleProps.checked
+    summary: Whether the option is checked or not.
     name: checked
     fullName: checked
     langs:
@@ -27,6 +32,7 @@ items:
         type:
           - boolean
   - uid: office-ui-fabric-react.IChoiceGroupOptionStyleProps.disabled
+    summary: Whether the option is disabled or not.
     name: disabled
     fullName: disabled
     langs:
@@ -38,6 +44,7 @@ items:
         type:
           - boolean
   - uid: office-ui-fabric-react.IChoiceGroupOptionStyleProps.focused
+    summary: Whether the option is in focus or not.
     name: focused
     fullName: focused
     langs:
@@ -49,6 +56,7 @@ items:
         type:
           - boolean
   - uid: office-ui-fabric-react.IChoiceGroupOptionStyleProps.hasIcon
+    summary: Whether the option has an icon.
     name: hasIcon
     fullName: hasIcon
     langs:
@@ -60,6 +68,7 @@ items:
         type:
           - boolean
   - uid: office-ui-fabric-react.IChoiceGroupOptionStyleProps.hasImage
+    summary: Whether the option icon is an image.
     name: hasImage
     fullName: hasImage
     langs:
@@ -71,6 +80,7 @@ items:
         type:
           - boolean
   - uid: office-ui-fabric-react.IChoiceGroupOptionStyleProps.imageIsLarge
+    summary: Whether the image width or height are higher than `71`<!-- -->.
     name: imageIsLarge
     fullName: imageIsLarge
     langs:
@@ -81,7 +91,28 @@ items:
       return:
         type:
           - boolean
+  - uid: office-ui-fabric-react.IChoiceGroupOptionStyleProps.imageSize
+    summary: Image sizes used when `hasImage` or `hasIcon` style props are enabled.
+    name: imageSize
+    fullName: imageSize
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: |-
+        imageSize?: {
+                height: number;
+                width: number;
+            };
+      return:
+        type:
+          - |-
+            {
+                    height: number;
+                    width: number;
+                }
   - uid: office-ui-fabric-react.IChoiceGroupOptionStyleProps.theme
+    summary: Theme provided by High-Order Component.
     name: theme
     fullName: theme
     langs:

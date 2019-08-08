@@ -59,18 +59,24 @@ items:
           - boolean
   - uid: office-ui-fabric-react.IShimmeredDetailsListProps.onRenderCustomPlaceholder
     summary: >-
-      Custom placeholder renderer to be used when in need to override the default placeholder of a DetailsRow. An
-      argument is passed to leverage the calculated column measurements done by DetailsList.
+      Custom placeholder renderer to be used when in need to override the default placeholder of a DetailsRow.
+      `rowProps` argument is passed to leverage the calculated column measurements done by DetailsList or you can use
+      the optional arguments of item `index` and `defaultRender` to execute additional logic before rendering the
+      default placeholder.
     name: onRenderCustomPlaceholder
     fullName: onRenderCustomPlaceholder
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'onRenderCustomPlaceholder?: (rowProps: IDetailsRowProps) => React.ReactNode;'
+      content: >-
+        onRenderCustomPlaceholder?: (rowProps: IDetailsRowProps, index?: number, defaultRender?: (props:
+        IDetailsRowProps) => React.ReactNode) => React.ReactNode;
       return:
         type:
-          - '(rowProps: IDetailsRowProps) => React.ReactNode'
+          - >-
+            (rowProps: IDetailsRowProps, index?: number, defaultRender?: (props: IDetailsRowProps) => React.ReactNode)
+            => React.ReactNode
   - uid: office-ui-fabric-react.IShimmeredDetailsListProps.removeFadingOverlay
     summary: >-
       Determines whether to remove a fading out to bottom overlay over the shimmering items used to further emphasize

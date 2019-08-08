@@ -24,6 +24,7 @@ items:
       - office-ui-fabric-react.IPersonaSharedProps.onPhotoLoadingStateChange
       - office-ui-fabric-react.IPersonaSharedProps.onRenderCoin
       - office-ui-fabric-react.IPersonaSharedProps.onRenderInitials
+      - office-ui-fabric-react.IPersonaSharedProps.onRenderPersonaCoin
       - office-ui-fabric-react.IPersonaSharedProps.optionalText
       - office-ui-fabric-react.IPersonaSharedProps.presence
       - office-ui-fabric-react.IPersonaSharedProps.primaryText
@@ -187,6 +188,8 @@ items:
           - '(newImageLoadState: ImageLoadState) => void'
   - uid: office-ui-fabric-react.IPersonaSharedProps.onRenderCoin
     summary: Optional custom renderer for the coin
+    deprecated:
+      content: Use `onRenderPersonaCoin` for custom rendering instead
     name: onRenderCoin
     fullName: onRenderCoin
     langs:
@@ -206,6 +209,18 @@ items:
     type: property
     syntax:
       content: 'onRenderInitials?: IRenderFunction<IPersonaSharedProps>;'
+      return:
+        type:
+          - IRenderFunction<IPersonaSharedProps>
+  - uid: office-ui-fabric-react.IPersonaSharedProps.onRenderPersonaCoin
+    summary: Optional custom renderer for the coin
+    name: onRenderPersonaCoin
+    fullName: onRenderPersonaCoin
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onRenderPersonaCoin?: IRenderFunction<IPersonaSharedProps>;'
       return:
         type:
           - IRenderFunction<IPersonaSharedProps>

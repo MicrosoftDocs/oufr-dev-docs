@@ -7,7 +7,7 @@ items:
       - typeScript
     type: interface
     extends:
-      - 'Pick<IDetailsListProps, ''onRenderItemColumn''>'
+      - 'Pick<IDetailsListProps, ''onRenderItemColumn'' | ''getCellValueKey''>'
       - IBaseProps<IDetailsRow>
       - office-ui-fabric-react.IDetailsItemProps
     package: office-ui-fabric-react
@@ -21,6 +21,7 @@ items:
       - office-ui-fabric-react.IDetailsRowBaseProps.componentRef
       - office-ui-fabric-react.IDetailsRowBaseProps.dragDropEvents
       - office-ui-fabric-react.IDetailsRowBaseProps.dragDropHelper
+      - office-ui-fabric-react.IDetailsRowBaseProps.enableUpdateAnimations
       - office-ui-fabric-react.IDetailsRowBaseProps.eventsToRegister
       - office-ui-fabric-react.IDetailsRowBaseProps.getRowAriaDescribedBy
       - office-ui-fabric-react.IDetailsRowBaseProps.getRowAriaLabel
@@ -148,6 +149,18 @@ items:
       return:
         type:
           - office-ui-fabric-react.IDragDropHelper
+  - uid: office-ui-fabric-react.IDetailsRowBaseProps.enableUpdateAnimations
+    summary: Whether to animate updates
+    name: enableUpdateAnimations
+    fullName: enableUpdateAnimations
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'enableUpdateAnimations?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: office-ui-fabric-react.IDetailsRowBaseProps.eventsToRegister
     summary: A list of events to register
     name: eventsToRegister
@@ -272,10 +285,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'rowFieldsAs?: React.StatelessComponent<IDetailsRowFieldsProps> | React.ComponentClass<IDetailsRowFieldsProps>;'
+      content: 'rowFieldsAs?: React.ComponentType<IDetailsRowFieldsProps>;'
       return:
         type:
-          - React.StatelessComponent<IDetailsRowFieldsProps> | React.ComponentClass<IDetailsRowFieldsProps>
+          - React.ComponentType<IDetailsRowFieldsProps>
   - uid: office-ui-fabric-react.IDetailsRowBaseProps.styles
     summary: Overriding styles to this row
     name: styles

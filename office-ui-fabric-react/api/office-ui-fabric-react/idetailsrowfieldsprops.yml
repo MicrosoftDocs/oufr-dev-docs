@@ -15,6 +15,7 @@ items:
       - office-ui-fabric-react.IDetailsRowFieldsProps.columns
       - office-ui-fabric-react.IDetailsRowFieldsProps.columnStartIndex
       - office-ui-fabric-react.IDetailsRowFieldsProps.compact
+      - office-ui-fabric-react.IDetailsRowFieldsProps.enableUpdateAnimations
       - office-ui-fabric-react.IDetailsRowFieldsProps.item
       - office-ui-fabric-react.IDetailsRowFieldsProps.itemIndex
       - office-ui-fabric-react.IDetailsRowFieldsProps.rowClassNames
@@ -66,6 +67,17 @@ items:
       return:
         type:
           - boolean
+  - uid: office-ui-fabric-react.IDetailsRowFieldsProps.enableUpdateAnimations
+    name: enableUpdateAnimations
+    fullName: enableUpdateAnimations
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'enableUpdateAnimations?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: office-ui-fabric-react.IDetailsRowFieldsProps.item
     summary: Data source for this component
     name: item
@@ -100,21 +112,11 @@ items:
     syntax:
       content: |-
         rowClassNames: {
-                isMultiline: string;
-                isRowHeader: string;
-                cell: string;
-                cellPadded: string;
-                cellUnpadded: string;
-                fields: string;
+                [k in keyof Pick<IDetailsRowStyles, 'isMultiline' | 'isRowHeader' | 'cell' | 'cellAnimation' | 'cellPadded' | 'cellUnpadded' | 'fields'>]: string;
             };
       return:
         type:
           - |-
             {
-                    isMultiline: string;
-                    isRowHeader: string;
-                    cell: string;
-                    cellPadded: string;
-                    cellUnpadded: string;
-                    fields: string;
+                    [k in keyof Pick<IDetailsRowStyles, 'isMultiline' | 'isRowHeader' | 'cell' | 'cellAnimation' | 'cellPadded' | 'cellUnpadded' | 'fields'>]: string;
                 }

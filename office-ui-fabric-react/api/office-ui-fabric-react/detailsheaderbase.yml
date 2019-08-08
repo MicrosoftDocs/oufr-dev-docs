@@ -7,7 +7,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'BaseComponent<IDetailsHeaderBaseProps, IDetailsHeaderState> '
+      - 'React.Component<IDetailsHeaderBaseProps, IDetailsHeaderState> '
     implements:
       - office-ui-fabric-react.IDetailsHeader
     package: office-ui-fabric-react
@@ -18,7 +18,6 @@ items:
       - office-ui-fabric-react.DetailsHeaderBase.componentWillUnmount
       - office-ui-fabric-react.DetailsHeaderBase.defaultProps
       - office-ui-fabric-react.DetailsHeaderBase.focus
-      - office-ui-fabric-react.DetailsHeaderBase.getDerivedStateFromProps
       - office-ui-fabric-react.DetailsHeaderBase.render
   - uid: office-ui-fabric-react.DetailsHeaderBase.(constructor)
     summary: Constructs a new instance of the `DetailsHeaderBase` class
@@ -107,29 +106,6 @@ items:
         type:
           - boolean
         description: ''
-  - uid: office-ui-fabric-react.DetailsHeaderBase.getDerivedStateFromProps
-    name: 'getDerivedStateFromProps(newProps, prevState)'
-    fullName: 'getDerivedStateFromProps(newProps, prevState)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: >-
-        static getDerivedStateFromProps(newProps: IDetailsHeaderBaseProps, prevState: IDetailsHeaderState):
-        IDetailsHeaderState;
-      return:
-        type:
-          - office-ui-fabric-react.IDetailsHeaderState
-        description: ''
-      parameters:
-        - id: newProps
-          description: ''
-          type:
-            - office-ui-fabric-react.IDetailsHeaderBaseProps
-        - id: prevState
-          description: ''
-          type:
-            - office-ui-fabric-react.IDetailsHeaderState
   - uid: office-ui-fabric-react.DetailsHeaderBase.render
     name: render()
     fullName: render()

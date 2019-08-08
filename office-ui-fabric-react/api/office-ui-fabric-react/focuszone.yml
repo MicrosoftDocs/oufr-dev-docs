@@ -7,7 +7,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'React.Component<IFocusZoneProps, {}> '
+      - 'React.Component<IFocusZoneProps> '
     implements:
       - office-ui-fabric-react.IFocusZone
     package: office-ui-fabric-react
@@ -21,6 +21,7 @@ items:
       - office-ui-fabric-react.FocusZone.focusElement
       - office-ui-fabric-react.FocusZone.getOuterZones
       - office-ui-fabric-react.FocusZone.render
+      - office-ui-fabric-react.FocusZone.setFocusAlignment
   - uid: office-ui-fabric-react.FocusZone.(constructor)
     summary: Constructs a new instance of the `FocusZone` class
     name: (constructor)(props)
@@ -145,3 +146,23 @@ items:
         type:
           - JSX.Element
         description: ''
+  - uid: office-ui-fabric-react.FocusZone.setFocusAlignment
+    summary: >-
+      Forces horizontal alignment in the context of vertical arrowing to use specific point as the reference, rather
+      than a center based on the last horizontal motion.
+    name: setFocusAlignment(point)
+    fullName: setFocusAlignment(point)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setFocusAlignment(point: IPoint): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: point
+          description: the new reference point.
+          type:
+            - utilities.IPoint

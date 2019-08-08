@@ -22,9 +22,11 @@ items:
       - office-ui-fabric-react.ISpinButtonProps.disabled
       - office-ui-fabric-react.ISpinButtonProps.downArrowButtonStyles
       - office-ui-fabric-react.ISpinButtonProps.getClassNames
+      - office-ui-fabric-react.ISpinButtonProps.iconButtonProps
       - office-ui-fabric-react.ISpinButtonProps.iconProps
       - office-ui-fabric-react.ISpinButtonProps.incrementButtonAriaLabel
       - office-ui-fabric-react.ISpinButtonProps.incrementButtonIcon
+      - office-ui-fabric-react.ISpinButtonProps.inputProps
       - office-ui-fabric-react.ISpinButtonProps.keytipProps
       - office-ui-fabric-react.ISpinButtonProps.label
       - office-ui-fabric-react.ISpinButtonProps.labelPosition
@@ -224,6 +226,18 @@ items:
           - >-
             (theme: ITheme, disabled: boolean, isFocused: boolean, keyboardSpinDirection: KeyboardSpinDirection,
             labelPosition?: Position, className?: string) => ISpinButtonClassNames
+  - uid: office-ui-fabric-react.ISpinButtonProps.iconButtonProps
+    summary: Optional iconButton props on spin button
+    name: iconButtonProps
+    fullName: iconButtonProps
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'iconButtonProps?: IButtonProps;'
+      return:
+        type:
+          - office-ui-fabric-react.IButtonProps
   - uid: office-ui-fabric-react.ISpinButtonProps.iconProps
     summary: Icon that goes along with the label for the whole SpinButton
     name: iconProps
@@ -260,6 +274,18 @@ items:
       return:
         type:
           - office-ui-fabric-react.IIconProps
+  - uid: office-ui-fabric-react.ISpinButtonProps.inputProps
+    summary: Optional input props on spin button
+    name: inputProps
+    fullName: inputProps
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'inputProps?: React.InputHTMLAttributes<HTMLElement | HTMLInputElement>;'
+      return:
+        type:
+          - React.InputHTMLAttributes<HTMLElement | HTMLInputElement>
   - uid: office-ui-fabric-react.ISpinButtonProps.keytipProps
     summary: Optional keytip for this spin button
     name: keytipProps

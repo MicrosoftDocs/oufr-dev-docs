@@ -9,7 +9,6 @@ items:
     package: office-ui-fabric-react
     children:
       - office-ui-fabric-react.IDetailsRowState.columnMeasureInfo
-      - office-ui-fabric-react.IDetailsRowState.groupNestingDepth
       - office-ui-fabric-react.IDetailsRowState.isDropping
       - office-ui-fabric-react.IDetailsRowState.selectionState
   - uid: office-ui-fabric-react.IDetailsRowState.columnMeasureInfo
@@ -33,17 +32,6 @@ items:
                     column: IColumn;
                     onMeasureDone: (measuredWidth: number) => void;
                 }
-  - uid: office-ui-fabric-react.IDetailsRowState.groupNestingDepth
-    name: groupNestingDepth
-    fullName: groupNestingDepth
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'groupNestingDepth?: number;'
-      return:
-        type:
-          - number
   - uid: office-ui-fabric-react.IDetailsRowState.isDropping
     name: isDropping
     fullName: isDropping
@@ -62,7 +50,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'selectionState?: IDetailsRowSelectionState;'
+      content: 'selectionState: IDetailsRowSelectionState;'
       return:
         type:
           - office-ui-fabric-react.IDetailsRowSelectionState

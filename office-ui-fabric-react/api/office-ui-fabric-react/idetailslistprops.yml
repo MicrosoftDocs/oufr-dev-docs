@@ -28,7 +28,9 @@ items:
       - office-ui-fabric-react.IDetailsListProps.constrainMode
       - office-ui-fabric-react.IDetailsListProps.disableSelectionZone
       - office-ui-fabric-react.IDetailsListProps.dragDropEvents
+      - office-ui-fabric-react.IDetailsListProps.enableUpdateAnimations
       - office-ui-fabric-react.IDetailsListProps.enterModalSelectionOnTouch
+      - office-ui-fabric-react.IDetailsListProps.getCellValueKey
       - office-ui-fabric-react.IDetailsListProps.getGroupHeight
       - office-ui-fabric-react.IDetailsListProps.getKey
       - office-ui-fabric-react.IDetailsListProps.getRowAriaDescribedBy
@@ -279,6 +281,18 @@ items:
       return:
         type:
           - office-ui-fabric-react.IDragDropEvents
+  - uid: office-ui-fabric-react.IDetailsListProps.enableUpdateAnimations
+    summary: Whether to animate updates
+    name: enableUpdateAnimations
+    fullName: enableUpdateAnimations
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'enableUpdateAnimations?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: office-ui-fabric-react.IDetailsListProps.enterModalSelectionOnTouch
     summary: Whether or not the selection zone should enter modal state on touch.
     name: enterModalSelectionOnTouch
@@ -291,6 +305,18 @@ items:
       return:
         type:
           - boolean
+  - uid: office-ui-fabric-react.IDetailsListProps.getCellValueKey
+    summary: 'If provided, will be the "default" item column cell value return. column getValueKey can override getCellValue.'
+    name: getCellValueKey
+    fullName: getCellValueKey
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'getCellValueKey?: (item?: any, index?: number, column?: IColumn) => string;'
+      return:
+        type:
+          - '(item?: any, index?: number, column?: IColumn) => string'
   - uid: office-ui-fabric-react.IDetailsListProps.getGroupHeight
     summary: Optional function to override default group height calculation used by list virtualization.
     name: getGroupHeight
