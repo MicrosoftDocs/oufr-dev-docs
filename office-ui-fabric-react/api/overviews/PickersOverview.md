@@ -5,7 +5,8 @@ ms.author: vibraga
 ---
 
 ## Overview
-Coming soon...
+Pickers are used to pick recipients.
+
 
 
 ## Do &#10003;

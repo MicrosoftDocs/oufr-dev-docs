@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office-ui-fabric-react.IDocumentCardPreviewProps
+  - uid: 'office-ui-fabric-react!IDocumentCardPreviewProps:interface'
     name: IDocumentCardPreviewProps
     fullName: IDocumentCardPreviewProps
     langs:
@@ -8,15 +8,15 @@ items:
     type: interface
     extends:
       - 'IBaseProps<{}> '
-    package: office-ui-fabric-react
+    package: office-ui-fabric-react!
     children:
-      - office-ui-fabric-react.IDocumentCardPreviewProps.className
-      - office-ui-fabric-react.IDocumentCardPreviewProps.componentRef
-      - office-ui-fabric-react.IDocumentCardPreviewProps.getOverflowDocumentCountText
-      - office-ui-fabric-react.IDocumentCardPreviewProps.previewImages
-      - office-ui-fabric-react.IDocumentCardPreviewProps.styles
-      - office-ui-fabric-react.IDocumentCardPreviewProps.theme
-  - uid: office-ui-fabric-react.IDocumentCardPreviewProps.className
+      - 'office-ui-fabric-react!IDocumentCardPreviewProps#className:member'
+      - 'office-ui-fabric-react!IDocumentCardPreviewProps#componentRef:member'
+      - 'office-ui-fabric-react!IDocumentCardPreviewProps#getOverflowDocumentCountText:member'
+      - 'office-ui-fabric-react!IDocumentCardPreviewProps#previewImages:member'
+      - 'office-ui-fabric-react!IDocumentCardPreviewProps#styles:member'
+      - 'office-ui-fabric-react!IDocumentCardPreviewProps#theme:member'
+  - uid: 'office-ui-fabric-react!IDocumentCardPreviewProps#className:member'
     summary: Optional override class name
     name: className
     fullName: className
@@ -28,7 +28,7 @@ items:
       return:
         type:
           - string
-  - uid: office-ui-fabric-react.IDocumentCardPreviewProps.componentRef
+  - uid: 'office-ui-fabric-react!IDocumentCardPreviewProps#componentRef:member'
     summary: Gets the component ref.
     name: componentRef
     fullName: componentRef
@@ -40,7 +40,7 @@ items:
       return:
         type:
           - IRefObject<IDocumentCardPreview>
-  - uid: office-ui-fabric-react.IDocumentCardPreviewProps.getOverflowDocumentCountText
+  - uid: 'office-ui-fabric-react!IDocumentCardPreviewProps#getOverflowDocumentCountText:member'
     summary: >-
       The function return string that will describe the number of overflow documents. such as (overflowCount: number)
       =<!-- -->&gt; `+${ overflowCount } more`<!-- -->,
@@ -54,7 +54,7 @@ items:
       return:
         type:
           - '(overflowCount: number) => string'
-  - uid: office-ui-fabric-react.IDocumentCardPreviewProps.previewImages
+  - uid: 'office-ui-fabric-react!IDocumentCardPreviewProps#previewImages:member'
     summary: One or more preview images to display.
     name: previewImages
     fullName: previewImages
@@ -66,7 +66,7 @@ items:
       return:
         type:
           - 'IDocumentCardPreviewImage[]'
-  - uid: office-ui-fabric-react.IDocumentCardPreviewProps.styles
+  - uid: 'office-ui-fabric-react!IDocumentCardPreviewProps#styles:member'
     summary: Call to provide customized styling that will layer on top of the variant rules
     name: styles
     fullName: styles
@@ -78,7 +78,7 @@ items:
       return:
         type:
           - 'IStyleFunctionOrObject<IDocumentCardPreviewStyleProps, IDocumentCardPreviewStyles>'
-  - uid: office-ui-fabric-react.IDocumentCardPreviewProps.theme
+  - uid: 'office-ui-fabric-react!IDocumentCardPreviewProps#theme:member'
     summary: Theme provided by HOC.
     name: theme
     fullName: theme
@@ -89,4 +89,4 @@ items:
       content: 'theme?: ITheme;'
       return:
         type:
-          - styling.ITheme
+          - '@uifabric/styling!ITheme:interface'

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: utilities.Async
+  - uid: '@uifabric/utilities!Async:class'
     summary: >-
       Bugs often appear in async code when stuff gets disposed, but async operations don't get canceled. This Async
       helper class solves these issues by tying async code to the lifetime of a disposable object.
@@ -13,22 +13,22 @@ items:
     langs:
       - typeScript
     type: class
-    package: utilities
+    package: '@uifabric/utilities!'
     children:
-      - utilities.Async._logError
-      - utilities.Async.(constructor)
-      - utilities.Async.cancelAnimationFrame
-      - utilities.Async.clearImmediate
-      - utilities.Async.clearInterval
-      - utilities.Async.clearTimeout
-      - utilities.Async.debounce
-      - utilities.Async.dispose
-      - utilities.Async.requestAnimationFrame
-      - utilities.Async.setImmediate
-      - utilities.Async.setInterval
-      - utilities.Async.setTimeout
-      - utilities.Async.throttle
-  - uid: utilities.Async._logError
+      - '@uifabric/utilities!Async#_logError:member(1)'
+      - '@uifabric/utilities!Async:constructor(1)'
+      - '@uifabric/utilities!Async#cancelAnimationFrame:member(1)'
+      - '@uifabric/utilities!Async#clearImmediate:member(1)'
+      - '@uifabric/utilities!Async#clearInterval:member(1)'
+      - '@uifabric/utilities!Async#clearTimeout:member(1)'
+      - '@uifabric/utilities!Async#debounce:member(1)'
+      - '@uifabric/utilities!Async#dispose:member(1)'
+      - '@uifabric/utilities!Async#requestAnimationFrame:member(1)'
+      - '@uifabric/utilities!Async#setImmediate:member(1)'
+      - '@uifabric/utilities!Async#setInterval:member(1)'
+      - '@uifabric/utilities!Async#setTimeout:member(1)'
+      - '@uifabric/utilities!Async#throttle:member(1)'
+  - uid: '@uifabric/utilities!Async#_logError:member(1)'
     name: _logError(e)
     fullName: _logError(e)
     langs:
@@ -45,7 +45,7 @@ items:
           description: ''
           type:
             - any
-  - uid: utilities.Async.(constructor)
+  - uid: '@uifabric/utilities!Async:constructor(1)'
     summary: Constructs a new instance of the `Async` class
     name: '(constructor)(parent, onError)'
     fullName: '(constructor)(parent, onError)'
@@ -63,7 +63,7 @@ items:
           description: ''
           type:
             - '(e: any) => void'
-  - uid: utilities.Async.cancelAnimationFrame
+  - uid: '@uifabric/utilities!Async#cancelAnimationFrame:member(1)'
     name: cancelAnimationFrame(id)
     fullName: cancelAnimationFrame(id)
     langs:
@@ -80,7 +80,7 @@ items:
           description: ''
           type:
             - number
-  - uid: utilities.Async.clearImmediate
+  - uid: '@uifabric/utilities!Async#clearImmediate:member(1)'
     summary: Clears the immediate.
     name: clearImmediate(id)
     fullName: clearImmediate(id)
@@ -98,7 +98,7 @@ items:
           description: Id to cancel.
           type:
             - number
-  - uid: utilities.Async.clearInterval
+  - uid: '@uifabric/utilities!Async#clearInterval:member(1)'
     summary: Clears the interval.
     name: clearInterval(id)
     fullName: clearInterval(id)
@@ -116,7 +116,7 @@ items:
           description: Id to cancel.
           type:
             - number
-  - uid: utilities.Async.clearTimeout
+  - uid: '@uifabric/utilities!Async#clearTimeout:member(1)'
     summary: Clears the timeout.
     name: clearTimeout(id)
     fullName: clearTimeout(id)
@@ -134,7 +134,7 @@ items:
           description: Id to cancel.
           type:
             - number
-  - uid: utilities.Async.debounce
+  - uid: '@uifabric/utilities!Async#debounce:member(1)'
     summary: >-
       Creates a function that will delay the execution of func until after wait milliseconds have elapsed since the last
       time it was invoked. Provide an options object to indicate that func should be invoked on the leading and/or
@@ -178,7 +178,11 @@ items:
                       maxWait?: number;
                       trailing?: boolean;
                   }
-  - uid: utilities.Async.dispose
+      typeParameters:
+        - id: T
+          type:
+            - Function
+  - uid: '@uifabric/utilities!Async#dispose:member(1)'
     summary: 'Dispose function, clears all async operations.'
     name: dispose()
     fullName: dispose()
@@ -191,7 +195,7 @@ items:
         type:
           - void
         description: ''
-  - uid: utilities.Async.requestAnimationFrame
+  - uid: '@uifabric/utilities!Async#requestAnimationFrame:member(1)'
     name: requestAnimationFrame(callback)
     fullName: requestAnimationFrame(callback)
     langs:
@@ -208,7 +212,7 @@ items:
           description: ''
           type:
             - () => void
-  - uid: utilities.Async.setImmediate
+  - uid: '@uifabric/utilities!Async#setImmediate:member(1)'
     summary: 'SetImmediate override, which will auto cancel the immediate during dispose.'
     name: setImmediate(callback)
     fullName: setImmediate(callback)
@@ -226,7 +230,7 @@ items:
           description: Callback to execute.
           type:
             - () => void
-  - uid: utilities.Async.setInterval
+  - uid: '@uifabric/utilities!Async#setInterval:member(1)'
     summary: 'SetInterval override, which will auto cancel the timeout during dispose.'
     name: 'setInterval(callback, duration)'
     fullName: 'setInterval(callback, duration)'
@@ -248,7 +252,7 @@ items:
           description: Duration in milliseconds.
           type:
             - number
-  - uid: utilities.Async.setTimeout
+  - uid: '@uifabric/utilities!Async#setTimeout:member(1)'
     summary: 'SetTimeout override, which will auto cancel the timeout during dispose.'
     name: 'setTimeout(callback, duration)'
     fullName: 'setTimeout(callback, duration)'
@@ -270,7 +274,7 @@ items:
           description: Duration in milliseconds.
           type:
             - number
-  - uid: utilities.Async.throttle
+  - uid: '@uifabric/utilities!Async#throttle:member(1)'
     summary: >-
       Creates a function that, when executed, will only call the func function at most once per every wait milliseconds.
       Provide an options object to indicate that func should be invoked on the leading and/or trailing edge of the wait
@@ -311,3 +315,7 @@ items:
                       leading?: boolean;
                       trailing?: boolean;
                   }
+      typeParameters:
+        - id: T
+          type:
+            - Function

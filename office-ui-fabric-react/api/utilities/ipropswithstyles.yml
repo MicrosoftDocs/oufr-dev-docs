@@ -1,15 +1,21 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: utilities.IPropsWithStyles
+  - uid: '@uifabric/utilities!IPropsWithStyles:interface'
     name: IPropsWithStyles
     fullName: IPropsWithStyles
     langs:
       - typeScript
     type: interface
-    package: utilities
+    syntax:
+      typeParameters:
+        - id: TStyleProps
+        - id: TStyleSet
+          type:
+            - IStyleSet<TStyleSet>
+    package: '@uifabric/utilities!'
     children:
-      - utilities.IPropsWithStyles.styles
-  - uid: utilities.IPropsWithStyles.styles
+      - '@uifabric/utilities!IPropsWithStyles#styles:member'
+  - uid: '@uifabric/utilities!IPropsWithStyles#styles:member'
     name: styles
     fullName: styles
     langs:

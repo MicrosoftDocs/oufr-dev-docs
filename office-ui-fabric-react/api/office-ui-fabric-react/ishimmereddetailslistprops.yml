@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office-ui-fabric-react.IShimmeredDetailsListProps
+  - uid: 'office-ui-fabric-react!IShimmeredDetailsListProps:interface'
     summary: ShimmeredDetailsList props interface
     name: IShimmeredDetailsListProps
     fullName: IShimmeredDetailsListProps
@@ -9,17 +9,17 @@ items:
     type: interface
     extends:
       - 'Omit<IDetailsListProps, ''styles''> '
-    package: office-ui-fabric-react
+    package: office-ui-fabric-react!
     children:
-      - office-ui-fabric-react.IShimmeredDetailsListProps.ariaLabelForShimmer
-      - office-ui-fabric-react.IShimmeredDetailsListProps.detailsListStyles
-      - office-ui-fabric-react.IShimmeredDetailsListProps.enableShimmer
-      - office-ui-fabric-react.IShimmeredDetailsListProps.onRenderCustomPlaceholder
-      - office-ui-fabric-react.IShimmeredDetailsListProps.removeFadingOverlay
-      - office-ui-fabric-react.IShimmeredDetailsListProps.shimmerLines
-      - office-ui-fabric-react.IShimmeredDetailsListProps.shimmerOverlayStyles
-      - office-ui-fabric-react.IShimmeredDetailsListProps.styles
-  - uid: office-ui-fabric-react.IShimmeredDetailsListProps.ariaLabelForShimmer
+      - 'office-ui-fabric-react!IShimmeredDetailsListProps#ariaLabelForShimmer:member'
+      - 'office-ui-fabric-react!IShimmeredDetailsListProps#detailsListStyles:member'
+      - 'office-ui-fabric-react!IShimmeredDetailsListProps#enableShimmer:member'
+      - 'office-ui-fabric-react!IShimmeredDetailsListProps#onRenderCustomPlaceholder:member'
+      - 'office-ui-fabric-react!IShimmeredDetailsListProps#removeFadingOverlay:member'
+      - 'office-ui-fabric-react!IShimmeredDetailsListProps#shimmerLines:member'
+      - 'office-ui-fabric-react!IShimmeredDetailsListProps#shimmerOverlayStyles:member'
+      - 'office-ui-fabric-react!IShimmeredDetailsListProps#styles:member'
+  - uid: 'office-ui-fabric-react!IShimmeredDetailsListProps#ariaLabelForShimmer:member'
     summary: Aria label for shimmer. Set on grid while shimmer is enabled.
     name: ariaLabelForShimmer
     fullName: ariaLabelForShimmer
@@ -31,7 +31,7 @@ items:
       return:
         type:
           - string
-  - uid: office-ui-fabric-react.IShimmeredDetailsListProps.detailsListStyles
+  - uid: 'office-ui-fabric-react!IShimmeredDetailsListProps#detailsListStyles:member'
     summary: DetailsList styles to pass through.
     name: detailsListStyles
     fullName: detailsListStyles
@@ -43,7 +43,7 @@ items:
       return:
         type:
           - 'IDetailsListProps[''styles'']'
-  - uid: office-ui-fabric-react.IShimmeredDetailsListProps.enableShimmer
+  - uid: 'office-ui-fabric-react!IShimmeredDetailsListProps#enableShimmer:member'
     summary: >-
       Boolean flag to control when to render placeholders vs real items. It's up to the consumer app to know when
       fetching of the data is done to toggle this prop.
@@ -57,7 +57,7 @@ items:
       return:
         type:
           - boolean
-  - uid: office-ui-fabric-react.IShimmeredDetailsListProps.onRenderCustomPlaceholder
+  - uid: 'office-ui-fabric-react!IShimmeredDetailsListProps#onRenderCustomPlaceholder:member'
     summary: >-
       Custom placeholder renderer to be used when in need to override the default placeholder of a DetailsRow.
       `rowProps` argument is passed to leverage the calculated column measurements done by DetailsList or you can use
@@ -77,7 +77,7 @@ items:
           - >-
             (rowProps: IDetailsRowProps, index?: number, defaultRender?: (props: IDetailsRowProps) => React.ReactNode)
             => React.ReactNode
-  - uid: office-ui-fabric-react.IShimmeredDetailsListProps.removeFadingOverlay
+  - uid: 'office-ui-fabric-react!IShimmeredDetailsListProps#removeFadingOverlay:member'
     summary: >-
       Determines whether to remove a fading out to bottom overlay over the shimmering items used to further emphasize
       the unknown number of items that will be fetched.
@@ -91,7 +91,7 @@ items:
       return:
         type:
           - boolean
-  - uid: office-ui-fabric-react.IShimmeredDetailsListProps.shimmerLines
+  - uid: 'office-ui-fabric-react!IShimmeredDetailsListProps#shimmerLines:member'
     summary: Number of shimmer placeholder lines to render.
     name: shimmerLines
     fullName: shimmerLines
@@ -103,7 +103,7 @@ items:
       return:
         type:
           - number
-  - uid: office-ui-fabric-react.IShimmeredDetailsListProps.shimmerOverlayStyles
+  - uid: 'office-ui-fabric-react!IShimmeredDetailsListProps#shimmerOverlayStyles:member'
     summary: Custom styles to override the styles specific to the ShimmeredDetailsList root area.
     deprecated:
       content: Use `styles` prop instead. Any value provided will be ignored.
@@ -117,7 +117,7 @@ items:
       return:
         type:
           - 'IStyleFunctionOrObject<IShimmeredDetailsListStyleProps, IShimmeredDetailsListStyles>'
-  - uid: office-ui-fabric-react.IShimmeredDetailsListProps.styles
+  - uid: 'office-ui-fabric-react!IShimmeredDetailsListProps#styles:member'
     summary: Custom styles to override the styles specific to the ShimmeredDetailsList root area.
     name: styles
     fullName: styles

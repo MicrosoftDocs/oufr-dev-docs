@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office-ui-fabric-react.IPickerItemProps
+  - uid: 'office-ui-fabric-react!IPickerItemProps:interface'
     summary: PickerItem props common for any type of items.
     name: IPickerItemProps
     fullName: IPickerItemProps
@@ -9,17 +9,20 @@ items:
     type: interface
     extends:
       - 'React.AllHTMLAttributes<HTMLElement> '
-    package: office-ui-fabric-react
+    syntax:
+      typeParameters:
+        - id: T
+    package: office-ui-fabric-react!
     children:
-      - office-ui-fabric-react.IPickerItemProps.componentRef
-      - office-ui-fabric-react.IPickerItemProps.index
-      - office-ui-fabric-react.IPickerItemProps.item
-      - office-ui-fabric-react.IPickerItemProps.key
-      - office-ui-fabric-react.IPickerItemProps.onItemChange
-      - office-ui-fabric-react.IPickerItemProps.onRemoveItem
-      - office-ui-fabric-react.IPickerItemProps.removeButtonAriaLabel
-      - office-ui-fabric-react.IPickerItemProps.selected
-  - uid: office-ui-fabric-react.IPickerItemProps.componentRef
+      - 'office-ui-fabric-react!IPickerItemProps#componentRef:member'
+      - 'office-ui-fabric-react!IPickerItemProps#index:member'
+      - 'office-ui-fabric-react!IPickerItemProps#item:member'
+      - 'office-ui-fabric-react!IPickerItemProps#key:member'
+      - 'office-ui-fabric-react!IPickerItemProps#onItemChange:member'
+      - 'office-ui-fabric-react!IPickerItemProps#onRemoveItem:member'
+      - 'office-ui-fabric-react!IPickerItemProps#removeButtonAriaLabel:member'
+      - 'office-ui-fabric-react!IPickerItemProps#selected:member'
+  - uid: 'office-ui-fabric-react!IPickerItemProps#componentRef:member'
     summary: >-
       Optional callback to access the IPickerItem interface. Use this instead of ref for accessing the public methods
       and properties of the component.
@@ -33,7 +36,7 @@ items:
       return:
         type:
           - IRefObject<IPickerItem>
-  - uid: office-ui-fabric-react.IPickerItemProps.index
+  - uid: 'office-ui-fabric-react!IPickerItemProps#index:member'
     summary: Index number of the item in the array of picked items.
     name: index
     fullName: index
@@ -45,7 +48,7 @@ items:
       return:
         type:
           - number
-  - uid: office-ui-fabric-react.IPickerItemProps.item
+  - uid: 'office-ui-fabric-react!IPickerItemProps#item:member'
     summary: 'The item of Type T (Persona, Tag, or any other custom item provided).'
     name: item
     fullName: item
@@ -57,7 +60,7 @@ items:
       return:
         type:
           - T
-  - uid: office-ui-fabric-react.IPickerItemProps.key
+  - uid: 'office-ui-fabric-react!IPickerItemProps#key:member'
     summary: Unique key for each picked item.
     name: key
     fullName: key
@@ -69,7 +72,7 @@ items:
       return:
         type:
           - string | number
-  - uid: office-ui-fabric-react.IPickerItemProps.onItemChange
+  - uid: 'office-ui-fabric-react!IPickerItemProps#onItemChange:member'
     summary: >-
       Internal Use only, gives a callback to the renderer to call when an item has changed. This allows the base picker
       to keep track of changes in the items.
@@ -83,7 +86,7 @@ items:
       return:
         type:
           - '(item: T, index: number) => void'
-  - uid: office-ui-fabric-react.IPickerItemProps.onRemoveItem
+  - uid: 'office-ui-fabric-react!IPickerItemProps#onRemoveItem:member'
     summary: Callback issued when the item is removed from the array of picked items.
     name: onRemoveItem
     fullName: onRemoveItem
@@ -95,7 +98,7 @@ items:
       return:
         type:
           - () => void
-  - uid: office-ui-fabric-react.IPickerItemProps.removeButtonAriaLabel
+  - uid: 'office-ui-fabric-react!IPickerItemProps#removeButtonAriaLabel:member'
     summary: Aria-label for the picked item remove button.
     name: removeButtonAriaLabel
     fullName: removeButtonAriaLabel
@@ -107,7 +110,7 @@ items:
       return:
         type:
           - string
-  - uid: office-ui-fabric-react.IPickerItemProps.selected
+  - uid: 'office-ui-fabric-react!IPickerItemProps#selected:member'
     summary: Wether the picked item is selected or not.
     name: selected
     fullName: selected

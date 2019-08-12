@@ -1,17 +1,29 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office-ui-fabric-react.IComboBox
+  - uid: 'office-ui-fabric-react!IComboBox:interface'
     name: IComboBox
     fullName: IComboBox
     langs:
       - typeScript
     type: interface
-    package: office-ui-fabric-react
+    package: office-ui-fabric-react!
     children:
-      - office-ui-fabric-react.IComboBox.focus
-      - office-ui-fabric-react.IComboBox.dismissMenu
-      - office-ui-fabric-react.IComboBox.selectedOptions
-  - uid: office-ui-fabric-react.IComboBox.focus
+      - 'office-ui-fabric-react!IComboBox#dismissMenu:member'
+      - 'office-ui-fabric-react!IComboBox#focus:member(1)'
+      - 'office-ui-fabric-react!IComboBox#selectedOptions:member'
+  - uid: 'office-ui-fabric-react!IComboBox#dismissMenu:member'
+    summary: If there is a menu open this will dismiss the menu
+    name: dismissMenu
+    fullName: dismissMenu
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'dismissMenu: () => void;'
+      return:
+        type:
+          - () => void
+  - uid: 'office-ui-fabric-react!IComboBox#focus:member(1)'
     summary: Sets focus to the input in the comboBox
     name: 'focus(shouldOpenOnFocus, useFocusAsync)'
     fullName: 'focus(shouldOpenOnFocus, useFocusAsync)'
@@ -33,19 +45,7 @@ items:
           description: Determines if we should focus the input asynchronously
           type:
             - boolean
-  - uid: office-ui-fabric-react.IComboBox.dismissMenu
-    summary: If there is a menu open this will dismiss the menu
-    name: dismissMenu
-    fullName: dismissMenu
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'dismissMenu: () => void;'
-      return:
-        type:
-          - () => void
-  - uid: office-ui-fabric-react.IComboBox.selectedOptions
+  - uid: 'office-ui-fabric-react!IComboBox#selectedOptions:member'
     summary: All selected options
     name: selectedOptions
     fullName: selectedOptions

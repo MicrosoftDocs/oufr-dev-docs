@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office-ui-fabric-react.List
+  - uid: 'office-ui-fabric-react!List:class'
     summary: >-
       The List renders virtualized pages of items. Each page's item count is determined by the getItemCountForPage
       callback if provided by the caller, or 10 as default. Each page's height is determined by the getPageHeight
@@ -37,22 +37,22 @@ items:
     extends:
       - 'React.Component<IListProps<T>, IListState<T>> '
     implements:
-      - office-ui-fabric-react.IList
-    package: office-ui-fabric-react
+      - 'office-ui-fabric-react!IList:interface'
+    package: office-ui-fabric-react!
     children:
-      - office-ui-fabric-react.List.(constructor)
-      - office-ui-fabric-react.List.componentDidMount
-      - office-ui-fabric-react.List.componentWillReceiveProps
-      - office-ui-fabric-react.List.componentWillUnmount
-      - office-ui-fabric-react.List.defaultProps
-      - office-ui-fabric-react.List.forceUpdate
-      - office-ui-fabric-react.List.getStartItemIndexInView
-      - office-ui-fabric-react.List.getTotalListHeight
-      - office-ui-fabric-react.List.refs
-      - office-ui-fabric-react.List.render
-      - office-ui-fabric-react.List.scrollToIndex
-      - office-ui-fabric-react.List.shouldComponentUpdate
-  - uid: office-ui-fabric-react.List.(constructor)
+      - 'office-ui-fabric-react!List:constructor(1)'
+      - 'office-ui-fabric-react!List#componentDidMount:member(1)'
+      - 'office-ui-fabric-react!List#componentWillReceiveProps:member(1)'
+      - 'office-ui-fabric-react!List#componentWillUnmount:member(1)'
+      - 'office-ui-fabric-react!List.defaultProps:member'
+      - 'office-ui-fabric-react!List#forceUpdate:member(1)'
+      - 'office-ui-fabric-react!List#getStartItemIndexInView:member(1)'
+      - 'office-ui-fabric-react!List#getTotalListHeight:member(1)'
+      - 'office-ui-fabric-react!List#refs:member'
+      - 'office-ui-fabric-react!List#render:member(1)'
+      - 'office-ui-fabric-react!List#scrollToIndex:member(1)'
+      - 'office-ui-fabric-react!List#shouldComponentUpdate:member(1)'
+  - uid: 'office-ui-fabric-react!List:constructor(1)'
     summary: Constructs a new instance of the `List` class
     name: (constructor)(props)
     fullName: (constructor)(props)
@@ -66,7 +66,7 @@ items:
           description: ''
           type:
             - IListProps<T>
-  - uid: office-ui-fabric-react.List.componentDidMount
+  - uid: 'office-ui-fabric-react!List#componentDidMount:member(1)'
     name: componentDidMount()
     fullName: componentDidMount()
     langs:
@@ -78,7 +78,7 @@ items:
         type:
           - void
         description: ''
-  - uid: office-ui-fabric-react.List.componentWillReceiveProps
+  - uid: 'office-ui-fabric-react!List#componentWillReceiveProps:member(1)'
     name: componentWillReceiveProps(newProps)
     fullName: componentWillReceiveProps(newProps)
     langs:
@@ -95,7 +95,7 @@ items:
           description: ''
           type:
             - IListProps<T>
-  - uid: office-ui-fabric-react.List.componentWillUnmount
+  - uid: 'office-ui-fabric-react!List#componentWillUnmount:member(1)'
     name: componentWillUnmount()
     fullName: componentWillUnmount()
     langs:
@@ -107,7 +107,7 @@ items:
         type:
           - void
         description: ''
-  - uid: office-ui-fabric-react.List.defaultProps
+  - uid: 'office-ui-fabric-react!List.defaultProps:member'
     name: defaultProps
     fullName: defaultProps
     langs:
@@ -130,7 +130,7 @@ items:
                     renderedWindowsAhead: number;
                     renderedWindowsBehind: number;
                 }
-  - uid: office-ui-fabric-react.List.forceUpdate
+  - uid: 'office-ui-fabric-react!List#forceUpdate:member(1)'
     name: forceUpdate()
     fullName: forceUpdate()
     langs:
@@ -142,7 +142,7 @@ items:
         type:
           - void
         description: ''
-  - uid: office-ui-fabric-react.List.getStartItemIndexInView
+  - uid: 'office-ui-fabric-react!List#getStartItemIndexInView:member(1)'
     name: getStartItemIndexInView(measureItem)
     fullName: getStartItemIndexInView(measureItem)
     langs:
@@ -159,7 +159,7 @@ items:
           description: ''
           type:
             - '(itemIndex: number) => number'
-  - uid: office-ui-fabric-react.List.getTotalListHeight
+  - uid: 'office-ui-fabric-react!List#getTotalListHeight:member(1)'
     summary: Get the current height the list and it's pages.
     name: getTotalListHeight()
     fullName: getTotalListHeight()
@@ -172,7 +172,7 @@ items:
         type:
           - number
         description: ''
-  - uid: office-ui-fabric-react.List.refs
+  - uid: 'office-ui-fabric-react!List#refs:member'
     name: refs
     fullName: refs
     langs:
@@ -189,7 +189,7 @@ items:
             {
                     [key: string]: React.ReactInstance;
                 }
-  - uid: office-ui-fabric-react.List.render
+  - uid: 'office-ui-fabric-react!List#render:member(1)'
     name: render()
     fullName: render()
     langs:
@@ -201,7 +201,7 @@ items:
         type:
           - JSX.Element
         description: ''
-  - uid: office-ui-fabric-react.List.scrollToIndex
+  - uid: 'office-ui-fabric-react!List#scrollToIndex:member(1)'
     summary: >-
       Scroll to the given index. By default will bring the page the specified item is on into the view. If a callback to
       measure the height of an individual item is specified, will only scroll to bring the specific item into view.
@@ -233,7 +233,7 @@ items:
           description: Optional defines where in the window the item should be positioned to when scrolling
           type:
             - ScrollToMode
-  - uid: office-ui-fabric-react.List.shouldComponentUpdate
+  - uid: 'office-ui-fabric-react!List#shouldComponentUpdate:member(1)'
     name: 'shouldComponentUpdate(newProps, newState)'
     fullName: 'shouldComponentUpdate(newProps, newState)'
     langs:

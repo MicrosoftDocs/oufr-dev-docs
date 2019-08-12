@@ -1,24 +1,24 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office-ui-fabric-react.IIconProps
+  - uid: 'office-ui-fabric-react!IIconProps:interface'
     name: IIconProps
     fullName: IIconProps
     langs:
       - typeScript
     type: interface
     extends:
-      - utilities.IBaseProps
+      - '@uifabric/utilities!IBaseProps:interface'
       - 'React.HTMLAttributes<HTMLElement> '
-    package: office-ui-fabric-react
+    package: office-ui-fabric-react!
     children:
-      - office-ui-fabric-react.IIconProps.ariaLabel
-      - office-ui-fabric-react.IIconProps.iconName
-      - office-ui-fabric-react.IIconProps.iconType
-      - office-ui-fabric-react.IIconProps.imageErrorAs
-      - office-ui-fabric-react.IIconProps.imageProps
-      - office-ui-fabric-react.IIconProps.styles
-      - office-ui-fabric-react.IIconProps.theme
-  - uid: office-ui-fabric-react.IIconProps.ariaLabel
+      - 'office-ui-fabric-react!IIconProps#ariaLabel:member'
+      - 'office-ui-fabric-react!IIconProps#iconName:member'
+      - 'office-ui-fabric-react!IIconProps#iconType:member'
+      - 'office-ui-fabric-react!IIconProps#imageErrorAs:member'
+      - 'office-ui-fabric-react!IIconProps#imageProps:member'
+      - 'office-ui-fabric-react!IIconProps#styles:member'
+      - 'office-ui-fabric-react!IIconProps#theme:member'
+  - uid: 'office-ui-fabric-react!IIconProps#ariaLabel:member'
     summary: The aria label of the button for the benefit of screen readers.
     name: ariaLabel
     fullName: ariaLabel
@@ -30,7 +30,7 @@ items:
       return:
         type:
           - string
-  - uid: office-ui-fabric-react.IIconProps.iconName
+  - uid: 'office-ui-fabric-react!IIconProps#iconName:member'
     summary: >-
       The name of the icon to use from the icon font. If string is empty, a placeholder icon will be rendered the same
       width as an icon
@@ -44,7 +44,7 @@ items:
       return:
         type:
           - string
-  - uid: office-ui-fabric-react.IIconProps.iconType
+  - uid: 'office-ui-fabric-react!IIconProps#iconType:member'
     summary: The type of icon to render (image or icon font).
     name: iconType
     fullName: iconType
@@ -55,8 +55,8 @@ items:
       content: 'iconType?: IconType;'
       return:
         type:
-          - office-ui-fabric-react.IconType
-  - uid: office-ui-fabric-react.IIconProps.imageErrorAs
+          - 'office-ui-fabric-react!IconType:enum'
+  - uid: 'office-ui-fabric-react!IIconProps#imageErrorAs:member'
     summary: 'If rendering an image icon, this function callback will be invoked in the event loading the image errors.'
     name: imageErrorAs
     fullName: imageErrorAs
@@ -68,7 +68,7 @@ items:
       return:
         type:
           - React.StatelessComponent<IImageProps> | React.ComponentClass<IImageProps>
-  - uid: office-ui-fabric-react.IIconProps.imageProps
+  - uid: 'office-ui-fabric-react!IIconProps#imageProps:member'
     summary: 'If rendering an image icon, these props will be passed to the Image component.'
     name: imageProps
     fullName: imageProps
@@ -79,8 +79,8 @@ items:
       content: 'imageProps?: IImageProps;'
       return:
         type:
-          - office-ui-fabric-react.IImageProps
-  - uid: office-ui-fabric-react.IIconProps.styles
+          - 'office-ui-fabric-react!IImageProps:interface'
+  - uid: 'office-ui-fabric-react!IIconProps#styles:member'
     summary: Gets the styles for an Icon.
     name: styles
     fullName: styles
@@ -92,7 +92,7 @@ items:
       return:
         type:
           - 'IStyleFunctionOrObject<IIconStyleProps, IIconStyles>'
-  - uid: office-ui-fabric-react.IIconProps.theme
+  - uid: 'office-ui-fabric-react!IIconProps#theme:member'
     name: theme
     fullName: theme
     langs:
@@ -102,4 +102,4 @@ items:
       content: 'theme?: ITheme;'
       return:
         type:
-          - styling.ITheme
+          - '@uifabric/styling!ITheme:interface'

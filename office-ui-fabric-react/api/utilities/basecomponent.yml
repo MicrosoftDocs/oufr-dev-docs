@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: utilities.BaseComponent
+  - uid: '@uifabric/utilities!BaseComponent:class'
     summary: 'BaseComponent class, which provides basic helpers for all components.'
     name: BaseComponent
     fullName: BaseComponent
@@ -9,24 +9,24 @@ items:
     type: class
     extends:
       - 'React.Component<TProps, TState> '
-    package: utilities
+    package: '@uifabric/utilities!'
     children:
-      - utilities.BaseComponent._async
-      - utilities.BaseComponent._disposables
-      - utilities.BaseComponent._events
-      - utilities.BaseComponent._resolveRef
-      - utilities.BaseComponent._skipComponentRefResolution
-      - utilities.BaseComponent._updateComponentRef
-      - utilities.BaseComponent._warnConditionallyRequiredProps
-      - utilities.BaseComponent._warnDeprecations
-      - utilities.BaseComponent._warnMutuallyExclusive
-      - utilities.BaseComponent.(constructor)
-      - utilities.BaseComponent.className
-      - utilities.BaseComponent.componentDidMount
-      - utilities.BaseComponent.componentDidUpdate
-      - utilities.BaseComponent.componentWillUnmount
-      - utilities.BaseComponent.onError
-  - uid: utilities.BaseComponent._async
+      - '@uifabric/utilities!BaseComponent#_async:member'
+      - '@uifabric/utilities!BaseComponent#_disposables:member'
+      - '@uifabric/utilities!BaseComponent#_events:member'
+      - '@uifabric/utilities!BaseComponent#_resolveRef:member(1)'
+      - '@uifabric/utilities!BaseComponent#_skipComponentRefResolution:member'
+      - '@uifabric/utilities!BaseComponent#_updateComponentRef:member(1)'
+      - '@uifabric/utilities!BaseComponent#_warnConditionallyRequiredProps:member(1)'
+      - '@uifabric/utilities!BaseComponent#_warnDeprecations:member(1)'
+      - '@uifabric/utilities!BaseComponent#_warnMutuallyExclusive:member(1)'
+      - '@uifabric/utilities!BaseComponent:constructor(1)'
+      - '@uifabric/utilities!BaseComponent#className:member'
+      - '@uifabric/utilities!BaseComponent#componentDidMount:member(1)'
+      - '@uifabric/utilities!BaseComponent#componentDidUpdate:member(1)'
+      - '@uifabric/utilities!BaseComponent#componentWillUnmount:member(1)'
+      - '@uifabric/utilities!BaseComponent.onError:member'
+  - uid: '@uifabric/utilities!BaseComponent#_async:member'
     summary: >-
       Gets the async instance associated with the component, created on demand. The async instance gives subclasses a
       way to execute setTimeout/setInterval async calls safely, where the callbacks will be cleared/ignored
@@ -41,8 +41,8 @@ items:
       content: 'protected readonly _async: Async;'
       return:
         type:
-          - utilities.Async
-  - uid: utilities.BaseComponent._disposables
+          - '@uifabric/utilities!Async:class'
+  - uid: '@uifabric/utilities!BaseComponent#_disposables:member'
     summary: Allows subclasses to push things to this.\_disposables to be auto disposed.
     name: _disposables
     fullName: _disposables
@@ -54,7 +54,7 @@ items:
       return:
         type:
           - 'IDisposable[]'
-  - uid: utilities.BaseComponent._events
+  - uid: '@uifabric/utilities!BaseComponent#_events:member'
     summary: >-
       Gets the event group instance assocaited with the component, created on demand. The event instance provides on/off
       methods for listening to DOM (or regular javascript object) events. The event callbacks will be automatically
@@ -69,8 +69,8 @@ items:
       content: 'protected readonly _events: EventGroup;'
       return:
         type:
-          - utilities.EventGroup
-  - uid: utilities.BaseComponent._resolveRef
+          - '@uifabric/utilities!EventGroup:class'
+  - uid: '@uifabric/utilities!BaseComponent#_resolveRef:member(1)'
     summary: Helper to return a memoized ref resolver function.
     deprecated:
       content: Use `createRef` from React.createRef.
@@ -90,7 +90,7 @@ items:
           description: Name of the member to assign the ref to.
           type:
             - string
-  - uid: utilities.BaseComponent._skipComponentRefResolution
+  - uid: '@uifabric/utilities!BaseComponent#_skipComponentRefResolution:member'
     summary: >-
       Controls whether the componentRef prop will be resolved by this component instance. If you are implementing a
       passthrough (higher-order component), you would set this to false and pass through the props to the inner
@@ -105,7 +105,7 @@ items:
       return:
         type:
           - boolean
-  - uid: utilities.BaseComponent._updateComponentRef
+  - uid: '@uifabric/utilities!BaseComponent#_updateComponentRef:member(1)'
     summary: Updates the componentRef (by calling it with "this" when necessary.)
     name: '_updateComponentRef(currentProps, newProps)'
     fullName: '_updateComponentRef(currentProps, newProps)'
@@ -122,12 +122,12 @@ items:
         - id: currentProps
           description: ''
           type:
-            - utilities.IBaseProps
+            - '@uifabric/utilities!IBaseProps:interface'
         - id: newProps
           description: ''
           type:
-            - utilities.IBaseProps
-  - uid: utilities.BaseComponent._warnConditionallyRequiredProps
+            - '@uifabric/utilities!IBaseProps:interface'
+  - uid: '@uifabric/utilities!BaseComponent#_warnConditionallyRequiredProps:member(1)'
     summary: Warns when props are required if a condition is met.
     name: '_warnConditionallyRequiredProps(requiredProps, conditionalPropName, condition)'
     fullName: '_warnConditionallyRequiredProps(requiredProps, conditionalPropName, condition)'
@@ -155,7 +155,7 @@ items:
           description: Whether the condition is met.
           type:
             - boolean
-  - uid: utilities.BaseComponent._warnDeprecations
+  - uid: '@uifabric/utilities!BaseComponent#_warnDeprecations:member(1)'
     summary: Warns when a deprecated props are being used.
     name: _warnDeprecations(deprecationMap)
     fullName: _warnDeprecations(deprecationMap)
@@ -173,7 +173,7 @@ items:
           description: 'The map of deprecations, where key is the prop name and the value is either null or a replacement prop name.'
           type:
             - ISettingsMap<TProps>
-  - uid: utilities.BaseComponent._warnMutuallyExclusive
+  - uid: '@uifabric/utilities!BaseComponent#_warnMutuallyExclusive:member(1)'
     summary: Warns when props which are mutually exclusive with each other are both used.
     name: _warnMutuallyExclusive(mutuallyExclusiveMap)
     fullName: _warnMutuallyExclusive(mutuallyExclusiveMap)
@@ -191,7 +191,7 @@ items:
           description: The map of mutually exclusive props.
           type:
             - ISettingsMap<TProps>
-  - uid: utilities.BaseComponent.(constructor)
+  - uid: '@uifabric/utilities!BaseComponent:constructor(1)'
     summary: BaseComponent constructor
     name: '(constructor)(props, context)'
     fullName: '(constructor)(props, context)'
@@ -209,7 +209,7 @@ items:
           description: The context for the component.
           type:
             - any
-  - uid: utilities.BaseComponent.className
+  - uid: '@uifabric/utilities!BaseComponent#className:member'
     summary: Gets the object's class name.
     name: className
     fullName: className
@@ -221,7 +221,7 @@ items:
       return:
         type:
           - string
-  - uid: utilities.BaseComponent.componentDidMount
+  - uid: '@uifabric/utilities!BaseComponent#componentDidMount:member(1)'
     summary: 'When the component has mounted, update the componentRef.'
     name: componentDidMount()
     fullName: componentDidMount()
@@ -234,7 +234,7 @@ items:
         type:
           - void
         description: ''
-  - uid: utilities.BaseComponent.componentDidUpdate
+  - uid: '@uifabric/utilities!BaseComponent#componentDidUpdate:member(1)'
     summary: 'When the component receives props, make sure the componentRef is updated.'
     name: 'componentDidUpdate(prevProps, prevState)'
     fullName: 'componentDidUpdate(prevProps, prevState)'
@@ -256,7 +256,7 @@ items:
           description: ''
           type:
             - TState
-  - uid: utilities.BaseComponent.componentWillUnmount
+  - uid: '@uifabric/utilities!BaseComponent#componentWillUnmount:member(1)'
     summary: 'If we have disposables, dispose them automatically on unmount.'
     name: componentWillUnmount()
     fullName: componentWillUnmount()
@@ -269,7 +269,7 @@ items:
         type:
           - void
         description: ''
-  - uid: utilities.BaseComponent.onError
+  - uid: '@uifabric/utilities!BaseComponent.onError:member'
     deprecated:
       content: Use React's error boundaries instead.
     name: onError

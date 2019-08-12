@@ -1,22 +1,25 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: utilities.IWarnControlledUsageParams
+  - uid: '@uifabric/utilities!IWarnControlledUsageParams:interface'
     name: IWarnControlledUsageParams
     fullName: IWarnControlledUsageParams
     langs:
       - typeScript
     type: interface
-    package: utilities
+    syntax:
+      typeParameters:
+        - id: P
+    package: '@uifabric/utilities!'
     children:
-      - utilities.IWarnControlledUsageParams.componentId
-      - utilities.IWarnControlledUsageParams.componentName
-      - utilities.IWarnControlledUsageParams.defaultValueProp
-      - utilities.IWarnControlledUsageParams.oldProps
-      - utilities.IWarnControlledUsageParams.onChangeProp
-      - utilities.IWarnControlledUsageParams.props
-      - utilities.IWarnControlledUsageParams.readOnlyProp
-      - utilities.IWarnControlledUsageParams.valueProp
-  - uid: utilities.IWarnControlledUsageParams.componentId
+      - '@uifabric/utilities!IWarnControlledUsageParams#componentId:member'
+      - '@uifabric/utilities!IWarnControlledUsageParams#componentName:member'
+      - '@uifabric/utilities!IWarnControlledUsageParams#defaultValueProp:member'
+      - '@uifabric/utilities!IWarnControlledUsageParams#oldProps:member'
+      - '@uifabric/utilities!IWarnControlledUsageParams#onChangeProp:member'
+      - '@uifabric/utilities!IWarnControlledUsageParams#props:member'
+      - '@uifabric/utilities!IWarnControlledUsageParams#readOnlyProp:member'
+      - '@uifabric/utilities!IWarnControlledUsageParams#valueProp:member'
+  - uid: '@uifabric/utilities!IWarnControlledUsageParams#componentId:member'
     summary: ID of the component instance. Used to prevent showing warnings repeatedly.
     name: componentId
     fullName: componentId
@@ -28,7 +31,7 @@ items:
       return:
         type:
           - string
-  - uid: utilities.IWarnControlledUsageParams.componentName
+  - uid: '@uifabric/utilities!IWarnControlledUsageParams#componentName:member'
     summary: Name of the component class.
     name: componentName
     fullName: componentName
@@ -40,7 +43,7 @@ items:
       return:
         type:
           - string
-  - uid: utilities.IWarnControlledUsageParams.defaultValueProp
+  - uid: '@uifabric/utilities!IWarnControlledUsageParams#defaultValueProp:member'
     summary: Name of the prop for the uncontrolled initial value.
     name: defaultValueProp
     fullName: defaultValueProp
@@ -52,7 +55,7 @@ items:
       return:
         type:
           - keyof P
-  - uid: utilities.IWarnControlledUsageParams.oldProps
+  - uid: '@uifabric/utilities!IWarnControlledUsageParams#oldProps:member'
     summary: Previous props to evaluate (undefined if called in the constructor).
     name: oldProps
     fullName: oldProps
@@ -64,7 +67,7 @@ items:
       return:
         type:
           - P
-  - uid: utilities.IWarnControlledUsageParams.onChangeProp
+  - uid: '@uifabric/utilities!IWarnControlledUsageParams#onChangeProp:member'
     summary: Name of the change handler prop.
     name: onChangeProp
     fullName: onChangeProp
@@ -76,7 +79,7 @@ items:
       return:
         type:
           - keyof P
-  - uid: utilities.IWarnControlledUsageParams.props
+  - uid: '@uifabric/utilities!IWarnControlledUsageParams#props:member'
     summary: Current props to evaluate.
     name: props
     fullName: props
@@ -88,7 +91,7 @@ items:
       return:
         type:
           - P
-  - uid: utilities.IWarnControlledUsageParams.readOnlyProp
+  - uid: '@uifabric/utilities!IWarnControlledUsageParams#readOnlyProp:member'
     summary: Name of the read-only prop.
     name: readOnlyProp
     fullName: readOnlyProp
@@ -100,7 +103,7 @@ items:
       return:
         type:
           - keyof P
-  - uid: utilities.IWarnControlledUsageParams.valueProp
+  - uid: '@uifabric/utilities!IWarnControlledUsageParams#valueProp:member'
     summary: Name of the prop for the controlled value.
     name: valueProp
     fullName: valueProp

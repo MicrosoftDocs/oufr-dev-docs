@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office-ui-fabric-react.IToggleProps
+  - uid: 'office-ui-fabric-react!IToggleProps:interface'
     summary: Toggle component props.
     name: IToggleProps
     fullName: IToggleProps
@@ -9,26 +9,26 @@ items:
     type: interface
     extends:
       - 'React.HTMLAttributes<HTMLElement> '
-    package: office-ui-fabric-react
+    package: office-ui-fabric-react!
     children:
-      - office-ui-fabric-react.IToggleProps.ariaLabel
-      - office-ui-fabric-react.IToggleProps.as
-      - office-ui-fabric-react.IToggleProps.checked
-      - office-ui-fabric-react.IToggleProps.componentRef
-      - office-ui-fabric-react.IToggleProps.defaultChecked
-      - office-ui-fabric-react.IToggleProps.disabled
-      - office-ui-fabric-react.IToggleProps.inlineLabel
-      - office-ui-fabric-react.IToggleProps.keytipProps
-      - office-ui-fabric-react.IToggleProps.label
-      - office-ui-fabric-react.IToggleProps.offAriaLabel
-      - office-ui-fabric-react.IToggleProps.offText
-      - office-ui-fabric-react.IToggleProps.onAriaLabel
-      - office-ui-fabric-react.IToggleProps.onChange
-      - office-ui-fabric-react.IToggleProps.onChanged
-      - office-ui-fabric-react.IToggleProps.onText
-      - office-ui-fabric-react.IToggleProps.styles
-      - office-ui-fabric-react.IToggleProps.theme
-  - uid: office-ui-fabric-react.IToggleProps.ariaLabel
+      - 'office-ui-fabric-react!IToggleProps#ariaLabel:member'
+      - 'office-ui-fabric-react!IToggleProps#as:member'
+      - 'office-ui-fabric-react!IToggleProps#checked:member'
+      - 'office-ui-fabric-react!IToggleProps#componentRef:member'
+      - 'office-ui-fabric-react!IToggleProps#defaultChecked:member'
+      - 'office-ui-fabric-react!IToggleProps#disabled:member'
+      - 'office-ui-fabric-react!IToggleProps#inlineLabel:member'
+      - 'office-ui-fabric-react!IToggleProps#keytipProps:member'
+      - 'office-ui-fabric-react!IToggleProps#label:member'
+      - 'office-ui-fabric-react!IToggleProps#offAriaLabel:member'
+      - 'office-ui-fabric-react!IToggleProps#offText:member'
+      - 'office-ui-fabric-react!IToggleProps#onAriaLabel:member'
+      - 'office-ui-fabric-react!IToggleProps#onChange:member'
+      - 'office-ui-fabric-react!IToggleProps#onChanged:member'
+      - 'office-ui-fabric-react!IToggleProps#onText:member'
+      - 'office-ui-fabric-react!IToggleProps#styles:member'
+      - 'office-ui-fabric-react!IToggleProps#theme:member'
+  - uid: 'office-ui-fabric-react!IToggleProps#ariaLabel:member'
     summary: Text for screen-reader to announce as the name of the toggle.
     name: ariaLabel
     fullName: ariaLabel
@@ -40,7 +40,7 @@ items:
       return:
         type:
           - string
-  - uid: office-ui-fabric-react.IToggleProps.as
+  - uid: 'office-ui-fabric-react!IToggleProps#as:member'
     summary: Render the root element as another type.
     name: as
     fullName: as
@@ -52,7 +52,7 @@ items:
       return:
         type:
           - IComponentAs<React.HTMLAttributes<HTMLElement>>
-  - uid: office-ui-fabric-react.IToggleProps.checked
+  - uid: 'office-ui-fabric-react!IToggleProps#checked:member'
     summary: >-
       Checked state of the toggle. If you are maintaining state yourself, use this property. Otherwise refer to
       `defaultChecked`<!-- -->.
@@ -66,7 +66,7 @@ items:
       return:
         type:
           - boolean
-  - uid: office-ui-fabric-react.IToggleProps.componentRef
+  - uid: 'office-ui-fabric-react!IToggleProps#componentRef:member'
     summary: >-
       Optional callback to access the IToggle interface. Use this instead of ref for accessing the public methods and
       properties of the component.
@@ -80,7 +80,7 @@ items:
       return:
         type:
           - IRefObject<IToggle>
-  - uid: office-ui-fabric-react.IToggleProps.defaultChecked
+  - uid: 'office-ui-fabric-react!IToggleProps#defaultChecked:member'
     summary: >-
       Initial state of the toggle. If you want the toggle to maintain its own state, use this. Otherwise refer to
       `checked`<!-- -->.
@@ -94,7 +94,7 @@ items:
       return:
         type:
           - boolean
-  - uid: office-ui-fabric-react.IToggleProps.disabled
+  - uid: 'office-ui-fabric-react!IToggleProps#disabled:member'
     summary: Optional disabled flag.
     name: disabled
     fullName: disabled
@@ -106,7 +106,7 @@ items:
       return:
         type:
           - boolean
-  - uid: office-ui-fabric-react.IToggleProps.inlineLabel
+  - uid: 'office-ui-fabric-react!IToggleProps#inlineLabel:member'
     summary: >-
       Whether the label (not the onText/offText) should be positioned inline with the toggle control. Left (right in
       RTL) side when on/off text provided VS right (left in RTL) side when no on/off text. Caution: when not providing
@@ -121,7 +121,7 @@ items:
       return:
         type:
           - boolean
-  - uid: office-ui-fabric-react.IToggleProps.keytipProps
+  - uid: 'office-ui-fabric-react!IToggleProps#keytipProps:member'
     summary: Optional keytip for this toggle
     name: keytipProps
     fullName: keytipProps
@@ -132,8 +132,8 @@ items:
       content: 'keytipProps?: IKeytipProps;'
       return:
         type:
-          - office-ui-fabric-react.IKeytipProps
-  - uid: office-ui-fabric-react.IToggleProps.label
+          - 'office-ui-fabric-react!IKeytipProps:interface'
+  - uid: 'office-ui-fabric-react!IToggleProps#label:member'
     summary: A label for the toggle.
     name: label
     fullName: label
@@ -145,7 +145,7 @@ items:
       return:
         type:
           - string | JSX.Element
-  - uid: office-ui-fabric-react.IToggleProps.offAriaLabel
+  - uid: 'office-ui-fabric-react!IToggleProps#offAriaLabel:member'
     deprecated:
       content: 'Use `ariaLabel` for name, and let the metadata convey state'
     name: offAriaLabel
@@ -158,7 +158,7 @@ items:
       return:
         type:
           - string
-  - uid: office-ui-fabric-react.IToggleProps.offText
+  - uid: 'office-ui-fabric-react!IToggleProps#offText:member'
     summary: >-
       Text to display when toggle is OFF. Caution: when not providing on/off text user may get confused in
       differentiating the on/off states of the toggle.
@@ -172,7 +172,7 @@ items:
       return:
         type:
           - string
-  - uid: office-ui-fabric-react.IToggleProps.onAriaLabel
+  - uid: 'office-ui-fabric-react!IToggleProps#onAriaLabel:member'
     deprecated:
       content: 'Use `ariaLabel` for name, and let the metadata convey state'
     name: onAriaLabel
@@ -185,7 +185,7 @@ items:
       return:
         type:
           - string
-  - uid: office-ui-fabric-react.IToggleProps.onChange
+  - uid: 'office-ui-fabric-react!IToggleProps#onChange:member'
     summary: Callback issued when the value changes.
     name: onChange
     fullName: onChange
@@ -197,7 +197,7 @@ items:
       return:
         type:
           - '(event: React.MouseEvent<HTMLElement>, checked?: boolean) => void'
-  - uid: office-ui-fabric-react.IToggleProps.onChanged
+  - uid: 'office-ui-fabric-react!IToggleProps#onChanged:member'
     deprecated:
       content: Use `onChange` instead.
     name: onChanged
@@ -210,7 +210,7 @@ items:
       return:
         type:
           - '(checked: boolean) => void'
-  - uid: office-ui-fabric-react.IToggleProps.onText
+  - uid: 'office-ui-fabric-react!IToggleProps#onText:member'
     summary: >-
       Text to display when toggle is ON. Caution: when not providing on/off text user may get confused in
       differentiating the on/off states of the toggle.
@@ -224,7 +224,7 @@ items:
       return:
         type:
           - string
-  - uid: office-ui-fabric-react.IToggleProps.styles
+  - uid: 'office-ui-fabric-react!IToggleProps#styles:member'
     summary: Optional styles for the component.
     name: styles
     fullName: styles
@@ -236,7 +236,7 @@ items:
       return:
         type:
           - 'IStyleFunctionOrObject<IToggleStyleProps, IToggleStyles>'
-  - uid: office-ui-fabric-react.IToggleProps.theme
+  - uid: 'office-ui-fabric-react!IToggleProps#theme:member'
     summary: Theme provided by HOC.
     name: theme
     fullName: theme
@@ -247,4 +247,4 @@ items:
       content: 'theme?: ITheme;'
       return:
         type:
-          - styling.ITheme
+          - '@uifabric/styling!ITheme:interface'

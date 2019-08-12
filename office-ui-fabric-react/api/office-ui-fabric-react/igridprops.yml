@@ -1,26 +1,26 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office-ui-fabric-react.IGridProps
+  - uid: 'office-ui-fabric-react!IGridProps:interface'
     name: IGridProps
     fullName: IGridProps
     langs:
       - typeScript
     type: interface
-    package: office-ui-fabric-react
+    package: office-ui-fabric-react!
     children:
-      - office-ui-fabric-react.IGridProps.columnCount
-      - office-ui-fabric-react.IGridProps.componentRef
-      - office-ui-fabric-react.IGridProps.containerClassName
-      - office-ui-fabric-react.IGridProps.doNotContainWithinFocusZone
-      - office-ui-fabric-react.IGridProps.items
-      - office-ui-fabric-react.IGridProps.onBlur
-      - office-ui-fabric-react.IGridProps.onRenderItem
-      - office-ui-fabric-react.IGridProps.positionInSet
-      - office-ui-fabric-react.IGridProps.setSize
-      - office-ui-fabric-react.IGridProps.shouldFocusCircularNavigate
-      - office-ui-fabric-react.IGridProps.styles
-      - office-ui-fabric-react.IGridProps.theme
-  - uid: office-ui-fabric-react.IGridProps.columnCount
+      - 'office-ui-fabric-react!IGridProps#columnCount:member'
+      - 'office-ui-fabric-react!IGridProps#componentRef:member'
+      - 'office-ui-fabric-react!IGridProps#containerClassName:member'
+      - 'office-ui-fabric-react!IGridProps#doNotContainWithinFocusZone:member'
+      - 'office-ui-fabric-react!IGridProps#items:member'
+      - 'office-ui-fabric-react!IGridProps#onBlur:member'
+      - 'office-ui-fabric-react!IGridProps#onRenderItem:member'
+      - 'office-ui-fabric-react!IGridProps#positionInSet:member'
+      - 'office-ui-fabric-react!IGridProps#setSize:member'
+      - 'office-ui-fabric-react!IGridProps#shouldFocusCircularNavigate:member'
+      - 'office-ui-fabric-react!IGridProps#styles:member'
+      - 'office-ui-fabric-react!IGridProps#theme:member'
+  - uid: 'office-ui-fabric-react!IGridProps#columnCount:member'
     summary: The number of columns
     name: columnCount
     fullName: columnCount
@@ -32,7 +32,7 @@ items:
       return:
         type:
           - number
-  - uid: office-ui-fabric-react.IGridProps.componentRef
+  - uid: 'office-ui-fabric-react!IGridProps#componentRef:member'
     summary: Gets the component ref.
     name: componentRef
     fullName: componentRef
@@ -44,7 +44,7 @@ items:
       return:
         type:
           - IRefObject<IGrid>
-  - uid: office-ui-fabric-react.IGridProps.containerClassName
+  - uid: 'office-ui-fabric-react!IGridProps#containerClassName:member'
     summary: 'Optional, class name for the FocusZone container for the grid'
     deprecated:
       content: Use `styles` and `IGridStyles` to define a styling for the focus zone container with focusedContainer property.
@@ -58,7 +58,7 @@ items:
       return:
         type:
           - string
-  - uid: office-ui-fabric-react.IGridProps.doNotContainWithinFocusZone
+  - uid: 'office-ui-fabric-react!IGridProps#doNotContainWithinFocusZone:member'
     summary: If true do not contain the grid inside of a FocusZone. If false contain the grid inside of a FocusZone.
     name: doNotContainWithinFocusZone
     fullName: doNotContainWithinFocusZone
@@ -70,7 +70,7 @@ items:
       return:
         type:
           - boolean
-  - uid: office-ui-fabric-react.IGridProps.items
+  - uid: 'office-ui-fabric-react!IGridProps#items:member'
     summary: The items to turn into a grid
     name: items
     fullName: items
@@ -82,7 +82,7 @@ items:
       return:
         type:
           - 'any[]'
-  - uid: office-ui-fabric-react.IGridProps.onBlur
+  - uid: 'office-ui-fabric-react!IGridProps#onBlur:member'
     summary: 'Optional, handler for when the grid should blur'
     name: onBlur
     fullName: onBlur
@@ -94,7 +94,7 @@ items:
       return:
         type:
           - () => void
-  - uid: office-ui-fabric-react.IGridProps.onRenderItem
+  - uid: 'office-ui-fabric-react!IGridProps#onRenderItem:member'
     summary: Custom renderer for the individual items
     name: onRenderItem
     fullName: onRenderItem
@@ -106,7 +106,7 @@ items:
       return:
         type:
           - '(item: any, index: number) => JSX.Element'
-  - uid: office-ui-fabric-react.IGridProps.positionInSet
+  - uid: 'office-ui-fabric-react!IGridProps#positionInSet:member'
     summary: 'The optional position this grid is in the parent set (index in a parent menu, for example)'
     name: positionInSet
     fullName: positionInSet
@@ -118,7 +118,7 @@ items:
       return:
         type:
           - number
-  - uid: office-ui-fabric-react.IGridProps.setSize
+  - uid: 'office-ui-fabric-react!IGridProps#setSize:member'
     summary: 'The optional size of the parent set (size of parent menu, for example)'
     name: setSize
     fullName: setSize
@@ -130,7 +130,7 @@ items:
       return:
         type:
           - number
-  - uid: office-ui-fabric-react.IGridProps.shouldFocusCircularNavigate
+  - uid: 'office-ui-fabric-react!IGridProps#shouldFocusCircularNavigate:member'
     summary: >-
       Boolean indicating if the focus should support circular navigation. This prop is only relevant if
       doNotcontainWithinFocusZone is not true
@@ -144,7 +144,7 @@ items:
       return:
         type:
           - boolean
-  - uid: office-ui-fabric-react.IGridProps.styles
+  - uid: 'office-ui-fabric-react!IGridProps#styles:member'
     summary: Optional styles for the component.
     name: styles
     fullName: styles
@@ -156,7 +156,7 @@ items:
       return:
         type:
           - 'IStyleFunctionOrObject<IGridStyleProps, IGridStyles>'
-  - uid: office-ui-fabric-react.IGridProps.theme
+  - uid: 'office-ui-fabric-react!IGridProps#theme:member'
     summary: Theme to apply to the component.
     name: theme
     fullName: theme
@@ -167,4 +167,4 @@ items:
       content: 'theme?: ITheme;'
       return:
         type:
-          - styling.ITheme
+          - '@uifabric/styling!ITheme:interface'

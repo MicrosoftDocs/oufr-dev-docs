@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office-ui-fabric-react.IDocumentCardProps
+  - uid: 'office-ui-fabric-react!IDocumentCardProps:interface'
     name: IDocumentCardProps
     fullName: IDocumentCardProps
     langs:
@@ -9,19 +9,19 @@ items:
     extends:
       - IBaseProps<IDocumentCard>
       - 'React.HTMLAttributes<HTMLDivElement> '
-    package: office-ui-fabric-react
+    package: office-ui-fabric-react!
     children:
-      - office-ui-fabric-react.IDocumentCardProps.accentColor
-      - office-ui-fabric-react.IDocumentCardProps.children
-      - office-ui-fabric-react.IDocumentCardProps.className
-      - office-ui-fabric-react.IDocumentCardProps.componentRef
-      - office-ui-fabric-react.IDocumentCardProps.onClick
-      - office-ui-fabric-react.IDocumentCardProps.onClickHref
-      - office-ui-fabric-react.IDocumentCardProps.role
-      - office-ui-fabric-react.IDocumentCardProps.styles
-      - office-ui-fabric-react.IDocumentCardProps.theme
-      - office-ui-fabric-react.IDocumentCardProps.type
-  - uid: office-ui-fabric-react.IDocumentCardProps.accentColor
+      - 'office-ui-fabric-react!IDocumentCardProps#accentColor:member'
+      - 'office-ui-fabric-react!IDocumentCardProps#children:member'
+      - 'office-ui-fabric-react!IDocumentCardProps#className:member'
+      - 'office-ui-fabric-react!IDocumentCardProps#componentRef:member'
+      - 'office-ui-fabric-react!IDocumentCardProps#onClick:member'
+      - 'office-ui-fabric-react!IDocumentCardProps#onClickHref:member'
+      - 'office-ui-fabric-react!IDocumentCardProps#role:member'
+      - 'office-ui-fabric-react!IDocumentCardProps#styles:member'
+      - 'office-ui-fabric-react!IDocumentCardProps#theme:member'
+      - 'office-ui-fabric-react!IDocumentCardProps#type:member'
+  - uid: 'office-ui-fabric-react!IDocumentCardProps#accentColor:member'
     summary: >-
       Hex color value of the line below the card, which should correspond to the document type. This should only be
       supplied when using the 'compact' card layout.
@@ -40,7 +40,7 @@ items:
       return:
         type:
           - string
-  - uid: office-ui-fabric-react.IDocumentCardProps.children
+  - uid: 'office-ui-fabric-react!IDocumentCardProps#children:member'
     summary: Child components to render within the card.
     name: children
     fullName: children
@@ -52,7 +52,7 @@ items:
       return:
         type:
           - React.ReactNode
-  - uid: office-ui-fabric-react.IDocumentCardProps.className
+  - uid: 'office-ui-fabric-react!IDocumentCardProps#className:member'
     summary: Optional override class name
     name: className
     fullName: className
@@ -64,7 +64,7 @@ items:
       return:
         type:
           - string
-  - uid: office-ui-fabric-react.IDocumentCardProps.componentRef
+  - uid: 'office-ui-fabric-react!IDocumentCardProps#componentRef:member'
     summary: >-
       Optional callback to access the IDocumentCard interface. Use this instead of ref for accessing the public methods
       and properties of the component.
@@ -78,7 +78,7 @@ items:
       return:
         type:
           - IRefObject<IDocumentCard>
-  - uid: office-ui-fabric-react.IDocumentCardProps.onClick
+  - uid: 'office-ui-fabric-react!IDocumentCardProps#onClick:member'
     summary: Function to call when the card is clicked or keyboard Enter/Space is pushed.
     name: onClick
     fullName: onClick
@@ -90,7 +90,7 @@ items:
       return:
         type:
           - '(ev?: React.SyntheticEvent<HTMLElement>) => void'
-  - uid: office-ui-fabric-react.IDocumentCardProps.onClickHref
+  - uid: 'office-ui-fabric-react!IDocumentCardProps#onClickHref:member'
     summary: >-
       A URL to navigate to when the card is clicked. If a function has also been provided, it will be used instead of
       the URL.
@@ -104,7 +104,7 @@ items:
       return:
         type:
           - string
-  - uid: office-ui-fabric-react.IDocumentCardProps.role
+  - uid: 'office-ui-fabric-react!IDocumentCardProps#role:member'
     summary: 'Aria role assigned to the documentCard (Eg. button, link). Use this to override the default assignment.'
     name: role
     fullName: role
@@ -116,7 +116,7 @@ items:
       return:
         type:
           - string
-  - uid: office-ui-fabric-react.IDocumentCardProps.styles
+  - uid: 'office-ui-fabric-react!IDocumentCardProps#styles:member'
     summary: Call to provide customized styling that will layer on top of the variant rules
     name: styles
     fullName: styles
@@ -128,7 +128,7 @@ items:
       return:
         type:
           - 'IStyleFunctionOrObject<IDocumentCardStyleProps, IDocumentCardStyles>'
-  - uid: office-ui-fabric-react.IDocumentCardProps.theme
+  - uid: 'office-ui-fabric-react!IDocumentCardProps#theme:member'
     summary: Theme provided by HOC.
     name: theme
     fullName: theme
@@ -139,8 +139,8 @@ items:
       content: 'theme?: ITheme;'
       return:
         type:
-          - styling.ITheme
-  - uid: office-ui-fabric-react.IDocumentCardProps.type
+          - '@uifabric/styling!ITheme:interface'
+  - uid: 'office-ui-fabric-react!IDocumentCardProps#type:member'
     summary: The type of DocumentCard to display.
     name: type
     fullName: type
@@ -151,4 +151,4 @@ items:
       content: 'type?: DocumentCardType;'
       return:
         type:
-          - office-ui-fabric-react.DocumentCardType
+          - 'office-ui-fabric-react!DocumentCardType:enum'

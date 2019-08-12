@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office-ui-fabric-react.ILayerProps
+  - uid: 'office-ui-fabric-react!ILayerProps:interface'
     name: ILayerProps
     fullName: ILayerProps
     langs:
@@ -8,19 +8,19 @@ items:
     type: interface
     extends:
       - 'React.HTMLAttributes<HTMLDivElement | LayerBase> '
-    package: office-ui-fabric-react
+    package: office-ui-fabric-react!
     children:
-      - office-ui-fabric-react.ILayerProps.className
-      - office-ui-fabric-react.ILayerProps.componentRef
-      - office-ui-fabric-react.ILayerProps.eventBubblingEnabled
-      - office-ui-fabric-react.ILayerProps.hostId
-      - office-ui-fabric-react.ILayerProps.insertFirst
-      - office-ui-fabric-react.ILayerProps.onLayerDidMount
-      - office-ui-fabric-react.ILayerProps.onLayerMounted
-      - office-ui-fabric-react.ILayerProps.onLayerWillUnmount
-      - office-ui-fabric-react.ILayerProps.styles
-      - office-ui-fabric-react.ILayerProps.theme
-  - uid: office-ui-fabric-react.ILayerProps.className
+      - 'office-ui-fabric-react!ILayerProps#className:member'
+      - 'office-ui-fabric-react!ILayerProps#componentRef:member'
+      - 'office-ui-fabric-react!ILayerProps#eventBubblingEnabled:member'
+      - 'office-ui-fabric-react!ILayerProps#hostId:member'
+      - 'office-ui-fabric-react!ILayerProps#insertFirst:member'
+      - 'office-ui-fabric-react!ILayerProps#onLayerDidMount:member'
+      - 'office-ui-fabric-react!ILayerProps#onLayerMounted:member'
+      - 'office-ui-fabric-react!ILayerProps#onLayerWillUnmount:member'
+      - 'office-ui-fabric-react!ILayerProps#styles:member'
+      - 'office-ui-fabric-react!ILayerProps#theme:member'
+  - uid: 'office-ui-fabric-react!ILayerProps#className:member'
     summary: Additional css class to apply to the Layer
     name: className
     fullName: className
@@ -32,7 +32,7 @@ items:
       return:
         type:
           - string
-  - uid: office-ui-fabric-react.ILayerProps.componentRef
+  - uid: 'office-ui-fabric-react!ILayerProps#componentRef:member'
     summary: >-
       Optional callback to access the ILayer interface. Use this instead of ref for accessing the public methods and
       properties of the component.
@@ -46,7 +46,7 @@ items:
       return:
         type:
           - IRefObject<ILayer>
-  - uid: office-ui-fabric-react.ILayerProps.eventBubblingEnabled
+  - uid: 'office-ui-fabric-react!ILayerProps#eventBubblingEnabled:member'
     summary: >-
       When enabled, Layer allows events to bubble up from Layer content. Traditionally Layer has not had this behavior.
       This prop preserves backwards compatibility by default while allowing users to opt in to the new event bubbling
@@ -61,7 +61,7 @@ items:
       return:
         type:
           - boolean
-  - uid: office-ui-fabric-react.ILayerProps.hostId
+  - uid: 'office-ui-fabric-react!ILayerProps#hostId:member'
     summary: >-
       The optional id property provided on a LayerHost that this Layer should render within. The LayerHost does not need
       to be immediately available but once has been rendered, and if missing, we'll avoid trying to render the Layer
@@ -77,7 +77,7 @@ items:
       return:
         type:
           - string
-  - uid: office-ui-fabric-react.ILayerProps.insertFirst
+  - uid: 'office-ui-fabric-react!ILayerProps#insertFirst:member'
     summary: >-
       Whether the layer should be added as the first child of the host. If true, the layer will be inserted as the first
       child of the host By default, the layer will be appended at the end to the host
@@ -91,7 +91,7 @@ items:
       return:
         type:
           - boolean
-  - uid: office-ui-fabric-react.ILayerProps.onLayerDidMount
+  - uid: 'office-ui-fabric-react!ILayerProps#onLayerDidMount:member'
     summary: Callback for when the layer is mounted.
     name: onLayerDidMount
     fullName: onLayerDidMount
@@ -103,7 +103,7 @@ items:
       return:
         type:
           - () => void
-  - uid: office-ui-fabric-react.ILayerProps.onLayerMounted
+  - uid: 'office-ui-fabric-react!ILayerProps#onLayerMounted:member'
     summary: Callback for when the layer is mounted.
     name: onLayerMounted
     fullName: onLayerMounted
@@ -115,7 +115,7 @@ items:
       return:
         type:
           - () => void
-  - uid: office-ui-fabric-react.ILayerProps.onLayerWillUnmount
+  - uid: 'office-ui-fabric-react!ILayerProps#onLayerWillUnmount:member'
     summary: Callback for when the layer is unmounted.
     name: onLayerWillUnmount
     fullName: onLayerWillUnmount
@@ -127,7 +127,7 @@ items:
       return:
         type:
           - () => void
-  - uid: office-ui-fabric-react.ILayerProps.styles
+  - uid: 'office-ui-fabric-react!ILayerProps#styles:member'
     summary: Call to provide customized styling that will layer on top of the variant rules
     name: styles
     fullName: styles
@@ -139,7 +139,7 @@ items:
       return:
         type:
           - 'IStyleFunctionOrObject<ILayerStyleProps, ILayerStyles>'
-  - uid: office-ui-fabric-react.ILayerProps.theme
+  - uid: 'office-ui-fabric-react!ILayerProps#theme:member'
     summary: Theme provided by HOC.
     name: theme
     fullName: theme
@@ -150,4 +150,4 @@ items:
       content: 'theme?: ITheme;'
       return:
         type:
-          - styling.ITheme
+          - '@uifabric/styling!ITheme:interface'

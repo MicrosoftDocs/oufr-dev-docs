@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office-ui-fabric-react.ISuggestionsCoreProps
+  - uid: 'office-ui-fabric-react!ISuggestionsCoreProps:interface'
     name: ISuggestionsCoreProps
     fullName: ISuggestionsCoreProps
     langs:
@@ -8,20 +8,23 @@ items:
     type: interface
     extends:
       - 'React.ClassAttributes<any> '
-    package: office-ui-fabric-react
+    syntax:
+      typeParameters:
+        - id: T
+    package: office-ui-fabric-react!
     children:
-      - office-ui-fabric-react.ISuggestionsCoreProps.componentRef
-      - office-ui-fabric-react.ISuggestionsCoreProps.onRenderSuggestion
-      - office-ui-fabric-react.ISuggestionsCoreProps.onSuggestionClick
-      - office-ui-fabric-react.ISuggestionsCoreProps.onSuggestionRemove
-      - office-ui-fabric-react.ISuggestionsCoreProps.resultsMaximumNumber
-      - office-ui-fabric-react.ISuggestionsCoreProps.shouldLoopSelection
-      - office-ui-fabric-react.ISuggestionsCoreProps.showRemoveButtons
-      - office-ui-fabric-react.ISuggestionsCoreProps.suggestions
-      - office-ui-fabric-react.ISuggestionsCoreProps.suggestionsAvailableAlertText
-      - office-ui-fabric-react.ISuggestionsCoreProps.suggestionsContainerAriaLabel
-      - office-ui-fabric-react.ISuggestionsCoreProps.suggestionsItemClassName
-  - uid: office-ui-fabric-react.ISuggestionsCoreProps.componentRef
+      - 'office-ui-fabric-react!ISuggestionsCoreProps#componentRef:member'
+      - 'office-ui-fabric-react!ISuggestionsCoreProps#onRenderSuggestion:member'
+      - 'office-ui-fabric-react!ISuggestionsCoreProps#onSuggestionClick:member'
+      - 'office-ui-fabric-react!ISuggestionsCoreProps#onSuggestionRemove:member'
+      - 'office-ui-fabric-react!ISuggestionsCoreProps#resultsMaximumNumber:member'
+      - 'office-ui-fabric-react!ISuggestionsCoreProps#shouldLoopSelection:member'
+      - 'office-ui-fabric-react!ISuggestionsCoreProps#showRemoveButtons:member'
+      - 'office-ui-fabric-react!ISuggestionsCoreProps#suggestions:member'
+      - 'office-ui-fabric-react!ISuggestionsCoreProps#suggestionsAvailableAlertText:member'
+      - 'office-ui-fabric-react!ISuggestionsCoreProps#suggestionsContainerAriaLabel:member'
+      - 'office-ui-fabric-react!ISuggestionsCoreProps#suggestionsItemClassName:member'
+  - uid: 'office-ui-fabric-react!ISuggestionsCoreProps#componentRef:member'
     summary: Gets the component ref.
     name: componentRef
     fullName: componentRef
@@ -33,7 +36,7 @@ items:
       return:
         type:
           - 'IRefObject<{}>'
-  - uid: office-ui-fabric-react.ISuggestionsCoreProps.onRenderSuggestion
+  - uid: 'office-ui-fabric-react!ISuggestionsCoreProps#onRenderSuggestion:member'
     summary: How the suggestion should look in the suggestion list.
     name: onRenderSuggestion
     fullName: onRenderSuggestion
@@ -45,7 +48,7 @@ items:
       return:
         type:
           - '(props: T, suggestionItemProps: ISuggestionItemProps<T>) => JSX.Element'
-  - uid: office-ui-fabric-react.ISuggestionsCoreProps.onSuggestionClick
+  - uid: 'office-ui-fabric-react!ISuggestionsCoreProps#onSuggestionClick:member'
     summary: What should occur when a suggestion is clicked
     name: onSuggestionClick
     fullName: onSuggestionClick
@@ -57,7 +60,7 @@ items:
       return:
         type:
           - '(ev?: React.MouseEvent<HTMLElement>, item?: any, index?: number) => void'
-  - uid: office-ui-fabric-react.ISuggestionsCoreProps.onSuggestionRemove
+  - uid: 'office-ui-fabric-react!ISuggestionsCoreProps#onSuggestionRemove:member'
     summary: Function to fire when one of the optional remove buttons on a suggestion is clicked.
     name: onSuggestionRemove
     fullName: onSuggestionRemove
@@ -69,7 +72,7 @@ items:
       return:
         type:
           - '(ev?: React.MouseEvent<HTMLElement>, item?: IPersonaProps, index?: number) => void'
-  - uid: office-ui-fabric-react.ISuggestionsCoreProps.resultsMaximumNumber
+  - uid: 'office-ui-fabric-react!ISuggestionsCoreProps#resultsMaximumNumber:member'
     summary: Maximum number of suggestions to show in the full suggestion list.
     name: resultsMaximumNumber
     fullName: resultsMaximumNumber
@@ -81,7 +84,7 @@ items:
       return:
         type:
           - number
-  - uid: office-ui-fabric-react.ISuggestionsCoreProps.shouldLoopSelection
+  - uid: 'office-ui-fabric-react!ISuggestionsCoreProps#shouldLoopSelection:member'
     summary: >-
       Indicates whether to loop around to the top or bottom of the the suggestions on calling nextSuggestion and
       previousSuggestion, respectively
@@ -95,7 +98,7 @@ items:
       return:
         type:
           - boolean
-  - uid: office-ui-fabric-react.ISuggestionsCoreProps.showRemoveButtons
+  - uid: 'office-ui-fabric-react!ISuggestionsCoreProps#showRemoveButtons:member'
     summary: Indicates whether to show a button with each suggestion to remove that suggestion.
     name: showRemoveButtons
     fullName: showRemoveButtons
@@ -107,7 +110,7 @@ items:
       return:
         type:
           - boolean
-  - uid: office-ui-fabric-react.ISuggestionsCoreProps.suggestions
+  - uid: 'office-ui-fabric-react!ISuggestionsCoreProps#suggestions:member'
     summary: The list of Suggestions that will be displayed
     name: suggestions
     fullName: suggestions
@@ -119,7 +122,7 @@ items:
       return:
         type:
           - 'ISuggestionModel<T>[]'
-  - uid: office-ui-fabric-react.ISuggestionsCoreProps.suggestionsAvailableAlertText
+  - uid: 'office-ui-fabric-react!ISuggestionsCoreProps#suggestionsAvailableAlertText:member'
     summary: Screen reader message to read when there are suggestions available.
     name: suggestionsAvailableAlertText
     fullName: suggestionsAvailableAlertText
@@ -131,7 +134,7 @@ items:
       return:
         type:
           - string
-  - uid: office-ui-fabric-react.ISuggestionsCoreProps.suggestionsContainerAriaLabel
+  - uid: 'office-ui-fabric-react!ISuggestionsCoreProps#suggestionsContainerAriaLabel:member'
     summary: An ARIA label for the container that is the parent of the suggestions.
     name: suggestionsContainerAriaLabel
     fullName: suggestionsContainerAriaLabel
@@ -143,7 +146,7 @@ items:
       return:
         type:
           - string
-  - uid: office-ui-fabric-react.ISuggestionsCoreProps.suggestionsItemClassName
+  - uid: 'office-ui-fabric-react!ISuggestionsCoreProps#suggestionsItemClassName:member'
     summary: the classname of the suggestionitem.
     name: suggestionsItemClassName
     fullName: suggestionsItemClassName

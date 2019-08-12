@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office-ui-fabric-react.ITooltipProps
+  - uid: 'office-ui-fabric-react!ITooltipProps:interface'
     summary: Tooltip component props.
     name: ITooltipProps
     fullName: ITooltipProps
@@ -9,20 +9,20 @@ items:
     type: interface
     extends:
       - 'React.HTMLAttributes<HTMLDivElement | TooltipBase> '
-    package: office-ui-fabric-react
+    package: office-ui-fabric-react!
     children:
-      - office-ui-fabric-react.ITooltipProps.calloutProps
-      - office-ui-fabric-react.ITooltipProps.componentRef
-      - office-ui-fabric-react.ITooltipProps.content
-      - office-ui-fabric-react.ITooltipProps.delay
-      - office-ui-fabric-react.ITooltipProps.directionalHint
-      - office-ui-fabric-react.ITooltipProps.directionalHintForRTL
-      - office-ui-fabric-react.ITooltipProps.maxWidth
-      - office-ui-fabric-react.ITooltipProps.onRenderContent
-      - office-ui-fabric-react.ITooltipProps.styles
-      - office-ui-fabric-react.ITooltipProps.targetElement
-      - office-ui-fabric-react.ITooltipProps.theme
-  - uid: office-ui-fabric-react.ITooltipProps.calloutProps
+      - 'office-ui-fabric-react!ITooltipProps#calloutProps:member'
+      - 'office-ui-fabric-react!ITooltipProps#componentRef:member'
+      - 'office-ui-fabric-react!ITooltipProps#content:member'
+      - 'office-ui-fabric-react!ITooltipProps#delay:member'
+      - 'office-ui-fabric-react!ITooltipProps#directionalHint:member'
+      - 'office-ui-fabric-react!ITooltipProps#directionalHintForRTL:member'
+      - 'office-ui-fabric-react!ITooltipProps#maxWidth:member'
+      - 'office-ui-fabric-react!ITooltipProps#onRenderContent:member'
+      - 'office-ui-fabric-react!ITooltipProps#styles:member'
+      - 'office-ui-fabric-react!ITooltipProps#targetElement:member'
+      - 'office-ui-fabric-react!ITooltipProps#theme:member'
+  - uid: 'office-ui-fabric-react!ITooltipProps#calloutProps:member'
     summary: 'Properties to pass through for Callout, reference detail properties in ICalloutProps'
     name: calloutProps
     fullName: calloutProps
@@ -33,8 +33,8 @@ items:
       content: 'calloutProps?: ICalloutProps;'
       return:
         type:
-          - office-ui-fabric-react.ICalloutProps
-  - uid: office-ui-fabric-react.ITooltipProps.componentRef
+          - 'office-ui-fabric-react!ICalloutProps:interface'
+  - uid: 'office-ui-fabric-react!ITooltipProps#componentRef:member'
     summary: >-
       Optional callback to access the ITooltip interface. Use this instead of ref for accessing the public methods and
       properties of the component.
@@ -48,7 +48,7 @@ items:
       return:
         type:
           - IRefObject<ITooltip>
-  - uid: office-ui-fabric-react.ITooltipProps.content
+  - uid: 'office-ui-fabric-react!ITooltipProps#content:member'
     summary: Content to be passed to the tooltip
     name: content
     fullName: content
@@ -60,7 +60,7 @@ items:
       return:
         type:
           - 'string | JSX.Element | JSX.Element[]'
-  - uid: office-ui-fabric-react.ITooltipProps.delay
+  - uid: 'office-ui-fabric-react!ITooltipProps#delay:member'
     summary: Length of delay. Can be set to zero if you do not want a delay.
     name: delay
     fullName: delay
@@ -71,8 +71,8 @@ items:
       content: 'delay?: TooltipDelay;'
       return:
         type:
-          - office-ui-fabric-react.TooltipDelay
-  - uid: office-ui-fabric-react.ITooltipProps.directionalHint
+          - 'office-ui-fabric-react!TooltipDelay:enum'
+  - uid: 'office-ui-fabric-react!ITooltipProps#directionalHint:member'
     summary: Indicator of how the tooltip should be anchored to its targetElement.
     name: directionalHint
     fullName: directionalHint
@@ -84,7 +84,7 @@ items:
       return:
         type:
           - DirectionalHint
-  - uid: office-ui-fabric-react.ITooltipProps.directionalHintForRTL
+  - uid: 'office-ui-fabric-react!ITooltipProps#directionalHintForRTL:member'
     summary: >-
       How the element should be positioned in RTL layouts. If not specified, a mirror of `directionalHint` will be used
       instead
@@ -98,7 +98,7 @@ items:
       return:
         type:
           - DirectionalHint
-  - uid: office-ui-fabric-react.ITooltipProps.maxWidth
+  - uid: 'office-ui-fabric-react!ITooltipProps#maxWidth:member'
     summary: Max width of tooltip
     name: maxWidth
     fullName: maxWidth
@@ -110,7 +110,7 @@ items:
       return:
         type:
           - string | null
-  - uid: office-ui-fabric-react.ITooltipProps.onRenderContent
+  - uid: 'office-ui-fabric-react!ITooltipProps#onRenderContent:member'
     summary: Render function to populate content area
     name: onRenderContent
     fullName: onRenderContent
@@ -122,7 +122,7 @@ items:
       return:
         type:
           - IRenderFunction<ITooltipProps>
-  - uid: office-ui-fabric-react.ITooltipProps.styles
+  - uid: 'office-ui-fabric-react!ITooltipProps#styles:member'
     summary: Call to provide customized styling that will layer on top of the variant rules.
     name: styles
     fullName: styles
@@ -134,7 +134,7 @@ items:
       return:
         type:
           - 'IStyleFunctionOrObject<ITooltipStyleProps, ITooltipStyles>'
-  - uid: office-ui-fabric-react.ITooltipProps.targetElement
+  - uid: 'office-ui-fabric-react!ITooltipProps#targetElement:member'
     summary: Element to anchor the Tooltip to.
     name: targetElement
     fullName: targetElement
@@ -146,7 +146,7 @@ items:
       return:
         type:
           - HTMLElement
-  - uid: office-ui-fabric-react.ITooltipProps.theme
+  - uid: 'office-ui-fabric-react!ITooltipProps#theme:member'
     summary: Theme to apply to the component.
     name: theme
     fullName: theme
@@ -157,4 +157,4 @@ items:
       content: 'theme?: ITheme;'
       return:
         type:
-          - styling.ITheme
+          - '@uifabric/styling!ITheme:interface'
