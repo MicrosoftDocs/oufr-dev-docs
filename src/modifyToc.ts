@@ -2,13 +2,13 @@ import * as path from 'path';
 
 import { readFile, writeFile } from './utilities';
 
-const [nodePath, scriptPath, filePath]: Array<string | undefined> = process.argv;
+const [nodePath, scriptPath, filePath, env]: Array<string | undefined> = process.argv;
 
 if (!filePath) {
   throw new Error('Must specify a docs output path as the first argument to this script');
 }
 
-if (!path.isAbsolute(filePath)) {
+if (!path.isAbsolute(filePath) && env !== 'local') {
   throw new Error('The docs output path must be absolute');
 }
 

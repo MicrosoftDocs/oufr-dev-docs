@@ -2,13 +2,13 @@ import * as path from 'path';
 
 import { IDeepPaths, IPaths } from './interfaces';
 
-const [nodePath, scriptPath, docsOutputPath]: Array<string | undefined> = process.argv;
+const [nodePath, scriptPath, docsOutputPath, env]: Array<string | undefined> = process.argv;
 
 if (!docsOutputPath) {
   throw new Error('Must specify a docs output path as the first argument to this script');
 }
 
-if (!path.isAbsolute(docsOutputPath)) {
+if (!path.isAbsolute(docsOutputPath) && env !== 'local') {
   throw new Error('The docs output path must be absolute');
 }
 
