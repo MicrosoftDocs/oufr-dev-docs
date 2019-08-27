@@ -30,7 +30,9 @@ const RESOURCES_FILES = [
 ];
 
 /**
- * Function that will be running every time before calling api-documenter and generate a json file along with writing example files.
+ * Function that needs to be run every time before calling api-documenter.
+ * It will generate a json config file for api-documenter along with writing
+ * examples, overviews, getStarted and resources page files.
  */
 function generateConfig(categoriesSource: any) {
   const tocConfig: IYamlTocFile = {
