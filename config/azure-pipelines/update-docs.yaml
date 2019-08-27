@@ -37,7 +37,7 @@ steps:
       cp $(System.ArtifactsDirectory)/api-json/merge-styles.api.json $(System.ArtifactsDirectory)/documenter-input &&
       cp $(System.ArtifactsDirectory)/api-json/styling.api.json $(System.ArtifactsDirectory)/documenter-input &&
       cp $(System.ArtifactsDirectory)/api-json/utilities.api.json $(System.ArtifactsDirectory)/documenter-input
-    displayName: Copy only 4 api-json files that are needed from the downloaded artifact
+    displayName: 'Copy only 4 api-json files that are needed from the downloaded artifact'
 
 - task: Npm@1
   displayName: 'npm install'
