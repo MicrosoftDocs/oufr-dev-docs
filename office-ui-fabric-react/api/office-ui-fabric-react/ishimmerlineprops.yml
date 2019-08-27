@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office-ui-fabric-react.IShimmerLineProps
+  - uid: 'office-ui-fabric-react!IShimmerLineProps:interface'
     summary: ShimmerLine component props.
     name: IShimmerLineProps
     fullName: IShimmerLineProps
@@ -9,15 +9,15 @@ items:
     type: interface
     extends:
       - 'React.AllHTMLAttributes<HTMLElement> '
-    package: office-ui-fabric-react
+    package: office-ui-fabric-react!
     children:
-      - office-ui-fabric-react.IShimmerLineProps.borderStyle
-      - office-ui-fabric-react.IShimmerLineProps.componentRef
-      - office-ui-fabric-react.IShimmerLineProps.height
-      - office-ui-fabric-react.IShimmerLineProps.styles
-      - office-ui-fabric-react.IShimmerLineProps.theme
-      - office-ui-fabric-react.IShimmerLineProps.width
-  - uid: office-ui-fabric-react.IShimmerLineProps.borderStyle
+      - 'office-ui-fabric-react!IShimmerLineProps#borderStyle:member'
+      - 'office-ui-fabric-react!IShimmerLineProps#componentRef:member'
+      - 'office-ui-fabric-react!IShimmerLineProps#height:member'
+      - 'office-ui-fabric-react!IShimmerLineProps#styles:member'
+      - 'office-ui-fabric-react!IShimmerLineProps#theme:member'
+      - 'office-ui-fabric-react!IShimmerLineProps#width:member'
+  - uid: 'office-ui-fabric-react!IShimmerLineProps#borderStyle:member'
     summary: Use to set custom styling of the shimmerLine borders.
     deprecated:
       content: Use `styles` prop to leverage mergeStyle API.
@@ -30,8 +30,8 @@ items:
       content: 'borderStyle?: IRawStyle;'
       return:
         type:
-          - merge-styles.IRawStyle
-  - uid: office-ui-fabric-react.IShimmerLineProps.componentRef
+          - '@uifabric/merge-styles!IRawStyle:interface'
+  - uid: 'office-ui-fabric-react!IShimmerLineProps#componentRef:member'
     summary: >-
       Optional callback to access the IShimmerLine interface. Use this instead of ref for accessing the public methods
       and properties of the component.
@@ -45,7 +45,7 @@ items:
       return:
         type:
           - IRefObject<IShimmerLine>
-  - uid: office-ui-fabric-react.IShimmerLineProps.height
+  - uid: 'office-ui-fabric-react!IShimmerLineProps#height:member'
     summary: Sets the height of the rectangle.
     name: height
     fullName: height
@@ -57,7 +57,7 @@ items:
       return:
         type:
           - number
-  - uid: office-ui-fabric-react.IShimmerLineProps.styles
+  - uid: 'office-ui-fabric-react!IShimmerLineProps#styles:member'
     summary: Call to provide customized styling that will layer on top of the variant rules.
     name: styles
     fullName: styles
@@ -69,7 +69,7 @@ items:
       return:
         type:
           - 'IStyleFunctionOrObject<IShimmerLineStyleProps, IShimmerLineStyles>'
-  - uid: office-ui-fabric-react.IShimmerLineProps.theme
+  - uid: 'office-ui-fabric-react!IShimmerLineProps#theme:member'
     summary: Theme provided by High-Order Component.
     name: theme
     fullName: theme
@@ -80,8 +80,8 @@ items:
       content: 'theme?: ITheme;'
       return:
         type:
-          - styling.ITheme
-  - uid: office-ui-fabric-react.IShimmerLineProps.width
+          - '@uifabric/styling!ITheme:interface'
+  - uid: 'office-ui-fabric-react!IShimmerLineProps#width:member'
     summary: Sets width value of the line.
     name: width
     fullName: width

@@ -1,19 +1,32 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office-ui-fabric-react.ITooltipStyleProps
+  - uid: 'office-ui-fabric-react!ITooltipStyleProps:interface'
     name: ITooltipStyleProps
     fullName: ITooltipStyleProps
     langs:
       - typeScript
     type: interface
-    package: office-ui-fabric-react
+    package: office-ui-fabric-react!
     children:
-      - office-ui-fabric-react.ITooltipStyleProps.className
-      - office-ui-fabric-react.ITooltipStyleProps.delay
-      - office-ui-fabric-react.ITooltipStyleProps.gapSpace
-      - office-ui-fabric-react.ITooltipStyleProps.maxWidth
-      - office-ui-fabric-react.ITooltipStyleProps.theme
-  - uid: office-ui-fabric-react.ITooltipStyleProps.className
+      - 'office-ui-fabric-react!ITooltipStyleProps#beakWidth:member'
+      - 'office-ui-fabric-react!ITooltipStyleProps#className:member'
+      - 'office-ui-fabric-react!ITooltipStyleProps#delay:member'
+      - 'office-ui-fabric-react!ITooltipStyleProps#gapSpace:member'
+      - 'office-ui-fabric-react!ITooltipStyleProps#maxWidth:member'
+      - 'office-ui-fabric-react!ITooltipStyleProps#theme:member'
+  - uid: 'office-ui-fabric-react!ITooltipStyleProps#beakWidth:member'
+    summary: The width of the Callout's beak
+    name: beakWidth
+    fullName: beakWidth
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'beakWidth?: number;'
+      return:
+        type:
+          - number
+  - uid: 'office-ui-fabric-react!ITooltipStyleProps#className:member'
     summary: Accept custom classNames
     name: className
     fullName: className
@@ -25,7 +38,7 @@ items:
       return:
         type:
           - string
-  - uid: office-ui-fabric-react.ITooltipStyleProps.delay
+  - uid: 'office-ui-fabric-react!ITooltipStyleProps#delay:member'
     summary: Delay before tooltip appears.
     deprecated:
       content: Delay logic moved to TooltipHost vs relying on animation delay.
@@ -38,8 +51,8 @@ items:
       content: 'delay?: TooltipDelay;'
       return:
         type:
-          - office-ui-fabric-react.TooltipDelay
-  - uid: office-ui-fabric-react.ITooltipStyleProps.gapSpace
+          - 'office-ui-fabric-react!TooltipDelay:enum'
+  - uid: 'office-ui-fabric-react!ITooltipStyleProps#gapSpace:member'
     summary: The gap between the Callout and the target
     name: gapSpace
     fullName: gapSpace
@@ -51,7 +64,7 @@ items:
       return:
         type:
           - number
-  - uid: office-ui-fabric-react.ITooltipStyleProps.maxWidth
+  - uid: 'office-ui-fabric-react!ITooltipStyleProps#maxWidth:member'
     summary: Maximum width of tooltip.
     name: maxWidth
     fullName: maxWidth
@@ -63,7 +76,7 @@ items:
       return:
         type:
           - string
-  - uid: office-ui-fabric-react.ITooltipStyleProps.theme
+  - uid: 'office-ui-fabric-react!ITooltipStyleProps#theme:member'
     summary: Accept theme prop.
     name: theme
     fullName: theme
@@ -74,4 +87,4 @@ items:
       content: 'theme: ITheme;'
       return:
         type:
-          - styling.ITheme
+          - '@uifabric/styling!ITheme:interface'

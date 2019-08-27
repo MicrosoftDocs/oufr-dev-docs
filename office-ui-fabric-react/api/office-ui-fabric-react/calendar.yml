@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office-ui-fabric-react.Calendar
+  - uid: 'office-ui-fabric-react!Calendar:class'
     name: Calendar
     fullName: Calendar
     langs:
@@ -9,16 +9,16 @@ items:
     extends:
       - 'BaseComponent<ICalendarProps, ICalendarState> '
     implements:
-      - office-ui-fabric-react.ICalendar
-    package: office-ui-fabric-react
+      - 'office-ui-fabric-react!ICalendar:interface'
+    package: office-ui-fabric-react!
     children:
-      - office-ui-fabric-react.Calendar.(constructor)
-      - office-ui-fabric-react.Calendar.componentDidUpdate
-      - office-ui-fabric-react.Calendar.componentWillReceiveProps
-      - office-ui-fabric-react.Calendar.defaultProps
-      - office-ui-fabric-react.Calendar.focus
-      - office-ui-fabric-react.Calendar.render
-  - uid: office-ui-fabric-react.Calendar.(constructor)
+      - 'office-ui-fabric-react!Calendar:constructor(1)'
+      - 'office-ui-fabric-react!Calendar#componentDidUpdate:member(1)'
+      - 'office-ui-fabric-react!Calendar.defaultProps:member'
+      - 'office-ui-fabric-react!Calendar#focus:member(1)'
+      - 'office-ui-fabric-react!Calendar#render:member(1)'
+      - 'office-ui-fabric-react!Calendar#UNSAFE_componentWillReceiveProps:member(1)'
+  - uid: 'office-ui-fabric-react!Calendar:constructor(1)'
     summary: Constructs a new instance of the `Calendar` class
     name: (constructor)(props)
     fullName: (constructor)(props)
@@ -31,8 +31,8 @@ items:
         - id: props
           description: ''
           type:
-            - office-ui-fabric-react.ICalendarProps
-  - uid: office-ui-fabric-react.Calendar.componentDidUpdate
+            - 'office-ui-fabric-react!ICalendarProps:interface'
+  - uid: 'office-ui-fabric-react!Calendar#componentDidUpdate:member(1)'
     name: componentDidUpdate()
     fullName: componentDidUpdate()
     langs:
@@ -44,24 +44,7 @@ items:
         type:
           - void
         description: ''
-  - uid: office-ui-fabric-react.Calendar.componentWillReceiveProps
-    name: componentWillReceiveProps(nextProps)
-    fullName: componentWillReceiveProps(nextProps)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'componentWillReceiveProps(nextProps: ICalendarProps): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: nextProps
-          description: ''
-          type:
-            - office-ui-fabric-react.ICalendarProps
-  - uid: office-ui-fabric-react.Calendar.defaultProps
+  - uid: 'office-ui-fabric-react!Calendar.defaultProps:member'
     name: defaultProps
     fullName: defaultProps
     langs:
@@ -71,8 +54,8 @@ items:
       content: 'static defaultProps: ICalendarProps;'
       return:
         type:
-          - office-ui-fabric-react.ICalendarProps
-  - uid: office-ui-fabric-react.Calendar.focus
+          - 'office-ui-fabric-react!ICalendarProps:interface'
+  - uid: 'office-ui-fabric-react!Calendar#focus:member(1)'
     name: focus()
     fullName: focus()
     langs:
@@ -84,7 +67,7 @@ items:
         type:
           - void
         description: ''
-  - uid: office-ui-fabric-react.Calendar.render
+  - uid: 'office-ui-fabric-react!Calendar#render:member(1)'
     name: render()
     fullName: render()
     langs:
@@ -96,3 +79,20 @@ items:
         type:
           - JSX.Element
         description: ''
+  - uid: 'office-ui-fabric-react!Calendar#UNSAFE_componentWillReceiveProps:member(1)'
+    name: UNSAFE_componentWillReceiveProps(nextProps)
+    fullName: UNSAFE_componentWillReceiveProps(nextProps)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'UNSAFE_componentWillReceiveProps(nextProps: ICalendarProps): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: nextProps
+          description: ''
+          type:
+            - 'office-ui-fabric-react!ICalendarProps:interface'

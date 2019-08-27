@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office-ui-fabric-react.IBaseFloatingPickerProps
+  - uid: 'office-ui-fabric-react!IBaseFloatingPickerProps:interface'
     name: IBaseFloatingPickerProps
     fullName: IBaseFloatingPickerProps
     langs:
@@ -8,31 +8,34 @@ items:
     type: interface
     extends:
       - 'React.ClassAttributes<any> '
-    package: office-ui-fabric-react
+    syntax:
+      typeParameters:
+        - id: T
+    package: office-ui-fabric-react!
     children:
-      - office-ui-fabric-react.IBaseFloatingPickerProps.calloutWidth
-      - office-ui-fabric-react.IBaseFloatingPickerProps.className
-      - office-ui-fabric-react.IBaseFloatingPickerProps.componentRef
-      - office-ui-fabric-react.IBaseFloatingPickerProps.createGenericItem
-      - office-ui-fabric-react.IBaseFloatingPickerProps.getTextFromItem
-      - office-ui-fabric-react.IBaseFloatingPickerProps.inputElement
-      - office-ui-fabric-react.IBaseFloatingPickerProps.onChange
-      - office-ui-fabric-react.IBaseFloatingPickerProps.onInputChanged
-      - office-ui-fabric-react.IBaseFloatingPickerProps.onRemoveSuggestion
-      - office-ui-fabric-react.IBaseFloatingPickerProps.onRenderSuggestionsItem
-      - office-ui-fabric-react.IBaseFloatingPickerProps.onResolveSuggestions
-      - office-ui-fabric-react.IBaseFloatingPickerProps.onSuggestionsHidden
-      - office-ui-fabric-react.IBaseFloatingPickerProps.onSuggestionsShown
-      - office-ui-fabric-react.IBaseFloatingPickerProps.onValidateInput
-      - office-ui-fabric-react.IBaseFloatingPickerProps.onZeroQuerySuggestion
-      - office-ui-fabric-react.IBaseFloatingPickerProps.pickerSuggestionsProps
-      - office-ui-fabric-react.IBaseFloatingPickerProps.resolveDelay
-      - office-ui-fabric-react.IBaseFloatingPickerProps.searchingText
-      - office-ui-fabric-react.IBaseFloatingPickerProps.selectedItems
-      - office-ui-fabric-react.IBaseFloatingPickerProps.showForceResolve
-      - office-ui-fabric-react.IBaseFloatingPickerProps.suggestionItems
-      - office-ui-fabric-react.IBaseFloatingPickerProps.suggestionsStore
-  - uid: office-ui-fabric-react.IBaseFloatingPickerProps.calloutWidth
+      - 'office-ui-fabric-react!IBaseFloatingPickerProps#calloutWidth:member'
+      - 'office-ui-fabric-react!IBaseFloatingPickerProps#className:member'
+      - 'office-ui-fabric-react!IBaseFloatingPickerProps#componentRef:member'
+      - 'office-ui-fabric-react!IBaseFloatingPickerProps#createGenericItem:member'
+      - 'office-ui-fabric-react!IBaseFloatingPickerProps#getTextFromItem:member'
+      - 'office-ui-fabric-react!IBaseFloatingPickerProps#inputElement:member'
+      - 'office-ui-fabric-react!IBaseFloatingPickerProps#onChange:member'
+      - 'office-ui-fabric-react!IBaseFloatingPickerProps#onInputChanged:member'
+      - 'office-ui-fabric-react!IBaseFloatingPickerProps#onRemoveSuggestion:member'
+      - 'office-ui-fabric-react!IBaseFloatingPickerProps#onRenderSuggestionsItem:member'
+      - 'office-ui-fabric-react!IBaseFloatingPickerProps#onResolveSuggestions:member'
+      - 'office-ui-fabric-react!IBaseFloatingPickerProps#onSuggestionsHidden:member'
+      - 'office-ui-fabric-react!IBaseFloatingPickerProps#onSuggestionsShown:member'
+      - 'office-ui-fabric-react!IBaseFloatingPickerProps#onValidateInput:member'
+      - 'office-ui-fabric-react!IBaseFloatingPickerProps#onZeroQuerySuggestion:member'
+      - 'office-ui-fabric-react!IBaseFloatingPickerProps#pickerSuggestionsProps:member'
+      - 'office-ui-fabric-react!IBaseFloatingPickerProps#resolveDelay:member'
+      - 'office-ui-fabric-react!IBaseFloatingPickerProps#searchingText:member'
+      - 'office-ui-fabric-react!IBaseFloatingPickerProps#selectedItems:member'
+      - 'office-ui-fabric-react!IBaseFloatingPickerProps#showForceResolve:member'
+      - 'office-ui-fabric-react!IBaseFloatingPickerProps#suggestionItems:member'
+      - 'office-ui-fabric-react!IBaseFloatingPickerProps#suggestionsStore:member'
+  - uid: 'office-ui-fabric-react!IBaseFloatingPickerProps#calloutWidth:member'
     summary: Width for the suggestions callout
     name: calloutWidth
     fullName: calloutWidth
@@ -44,7 +47,7 @@ items:
       return:
         type:
           - number
-  - uid: office-ui-fabric-react.IBaseFloatingPickerProps.className
+  - uid: 'office-ui-fabric-react!IBaseFloatingPickerProps#className:member'
     summary: ClassName for the picker.
     name: className
     fullName: className
@@ -56,7 +59,7 @@ items:
       return:
         type:
           - string
-  - uid: office-ui-fabric-react.IBaseFloatingPickerProps.componentRef
+  - uid: 'office-ui-fabric-react!IBaseFloatingPickerProps#componentRef:member'
     name: componentRef
     fullName: componentRef
     langs:
@@ -67,7 +70,7 @@ items:
       return:
         type:
           - IRefObject<IBaseFloatingPicker>
-  - uid: office-ui-fabric-react.IBaseFloatingPickerProps.createGenericItem
+  - uid: 'office-ui-fabric-react!IBaseFloatingPickerProps#createGenericItem:member'
     summary: Function that specifies how arbitrary text entered into the well is handled.
     name: createGenericItem
     fullName: createGenericItem
@@ -79,7 +82,7 @@ items:
       return:
         type:
           - '(input: string, isValid: boolean) => ISuggestionModel<T>'
-  - uid: office-ui-fabric-react.IBaseFloatingPickerProps.getTextFromItem
+  - uid: 'office-ui-fabric-react!IBaseFloatingPickerProps#getTextFromItem:member'
     summary: A callback to get text from an item. Used to autofill text in the pickers.
     name: getTextFromItem
     fullName: getTextFromItem
@@ -91,7 +94,7 @@ items:
       return:
         type:
           - '(item: T, currentValue?: string) => string'
-  - uid: office-ui-fabric-react.IBaseFloatingPickerProps.inputElement
+  - uid: 'office-ui-fabric-react!IBaseFloatingPickerProps#inputElement:member'
     summary: The input element to listen on events
     name: inputElement
     fullName: inputElement
@@ -103,7 +106,7 @@ items:
       return:
         type:
           - HTMLInputElement | null
-  - uid: office-ui-fabric-react.IBaseFloatingPickerProps.onChange
+  - uid: 'office-ui-fabric-react!IBaseFloatingPickerProps#onChange:member'
     summary: A callback for when a suggestion is clicked
     name: onChange
     fullName: onChange
@@ -115,7 +118,7 @@ items:
       return:
         type:
           - '(item: T) => void'
-  - uid: office-ui-fabric-react.IBaseFloatingPickerProps.onInputChanged
+  - uid: 'office-ui-fabric-react!IBaseFloatingPickerProps#onInputChanged:member'
     summary: A callback for when the input has been changed
     name: onInputChanged
     fullName: onInputChanged
@@ -127,7 +130,7 @@ items:
       return:
         type:
           - '(filter: string) => void'
-  - uid: office-ui-fabric-react.IBaseFloatingPickerProps.onRemoveSuggestion
+  - uid: 'office-ui-fabric-react!IBaseFloatingPickerProps#onRemoveSuggestion:member'
     summary: A callback for when an item is removed from the suggestion list
     name: onRemoveSuggestion
     fullName: onRemoveSuggestion
@@ -139,7 +142,7 @@ items:
       return:
         type:
           - '(item: T) => void'
-  - uid: office-ui-fabric-react.IBaseFloatingPickerProps.onRenderSuggestionsItem
+  - uid: 'office-ui-fabric-react!IBaseFloatingPickerProps#onRenderSuggestionsItem:member'
     summary: Function that specifies how an individual suggestion item will appear.
     name: onRenderSuggestionsItem
     fullName: onRenderSuggestionsItem
@@ -151,7 +154,7 @@ items:
       return:
         type:
           - '(props: T, itemProps: ISuggestionItemProps<T>) => JSX.Element'
-  - uid: office-ui-fabric-react.IBaseFloatingPickerProps.onResolveSuggestions
+  - uid: 'office-ui-fabric-react!IBaseFloatingPickerProps#onResolveSuggestions:member'
     summary: >-
       A callback for what should happen when a person types text into the input. Returns the already selected items so
       the resolver can filter them out. If used in conjunction with resolveDelay this will ony kick off after the delay
@@ -166,7 +169,7 @@ items:
       return:
         type:
           - '(filter: string, selectedItems?: T[]) => T[] | PromiseLike<T[]> | null'
-  - uid: office-ui-fabric-react.IBaseFloatingPickerProps.onSuggestionsHidden
+  - uid: 'office-ui-fabric-react!IBaseFloatingPickerProps#onSuggestionsHidden:member'
     summary: The callback that should be called when the suggestions are hiden
     name: onSuggestionsHidden
     fullName: onSuggestionsHidden
@@ -178,7 +181,7 @@ items:
       return:
         type:
           - () => void
-  - uid: office-ui-fabric-react.IBaseFloatingPickerProps.onSuggestionsShown
+  - uid: 'office-ui-fabric-react!IBaseFloatingPickerProps#onSuggestionsShown:member'
     summary: The callback that should be called when the suggestions are shown
     name: onSuggestionsShown
     fullName: onSuggestionsShown
@@ -190,7 +193,7 @@ items:
       return:
         type:
           - () => void
-  - uid: office-ui-fabric-react.IBaseFloatingPickerProps.onValidateInput
+  - uid: 'office-ui-fabric-react!IBaseFloatingPickerProps#onValidateInput:member'
     summary: A function used to validate if raw text entered into the well can be added
     name: onValidateInput
     fullName: onValidateInput
@@ -202,7 +205,7 @@ items:
       return:
         type:
           - '(input: string) => boolean'
-  - uid: office-ui-fabric-react.IBaseFloatingPickerProps.onZeroQuerySuggestion
+  - uid: 'office-ui-fabric-react!IBaseFloatingPickerProps#onZeroQuerySuggestion:member'
     summary: 'The suggestions to show on zero query, return null if using as a controlled component'
     name: onZeroQuerySuggestion
     fullName: onZeroQuerySuggestion
@@ -214,7 +217,7 @@ items:
       return:
         type:
           - '(selectedItems?: T[]) => T[] | PromiseLike<T[]> | null'
-  - uid: office-ui-fabric-react.IBaseFloatingPickerProps.pickerSuggestionsProps
+  - uid: 'office-ui-fabric-react!IBaseFloatingPickerProps#pickerSuggestionsProps:member'
     summary: The properties that will get passed to the Suggestions component.
     name: pickerSuggestionsProps
     fullName: pickerSuggestionsProps
@@ -226,7 +229,7 @@ items:
       return:
         type:
           - IBaseFloatingPickerSuggestionProps
-  - uid: office-ui-fabric-react.IBaseFloatingPickerProps.resolveDelay
+  - uid: 'office-ui-fabric-react!IBaseFloatingPickerProps#resolveDelay:member'
     summary: >-
       The delay time in ms before resolving suggestions, which is kicked off when input has been changed. e.g. If a
       second input change happens within the resolveDelay time, the timer will start over. Only until after the timer
@@ -241,7 +244,7 @@ items:
       return:
         type:
           - number
-  - uid: office-ui-fabric-react.IBaseFloatingPickerProps.searchingText
+  - uid: 'office-ui-fabric-react!IBaseFloatingPickerProps#searchingText:member'
     summary: The text to display while searching for more results in a limited suggestions list
     name: searchingText
     fullName: searchingText
@@ -259,7 +262,7 @@ items:
             ((props: {
                     input: string;
                 }) => string) | string
-  - uid: office-ui-fabric-react.IBaseFloatingPickerProps.selectedItems
+  - uid: 'office-ui-fabric-react!IBaseFloatingPickerProps#selectedItems:member'
     summary: >-
       The items that the base picker should currently display as selected. If this is provided then the picker will act
       as a controlled component.
@@ -273,7 +276,7 @@ items:
       return:
         type:
           - 'T[]'
-  - uid: office-ui-fabric-react.IBaseFloatingPickerProps.showForceResolve
+  - uid: 'office-ui-fabric-react!IBaseFloatingPickerProps#showForceResolve:member'
     summary: The callback that should be called to see if the force resolve command should be shown
     name: showForceResolve
     fullName: showForceResolve
@@ -285,7 +288,7 @@ items:
       return:
         type:
           - () => boolean
-  - uid: office-ui-fabric-react.IBaseFloatingPickerProps.suggestionItems
+  - uid: 'office-ui-fabric-react!IBaseFloatingPickerProps#suggestionItems:member'
     summary: 'If using as a controlled component, the items to show in the suggestion list'
     name: suggestionItems
     fullName: suggestionItems
@@ -297,7 +300,7 @@ items:
       return:
         type:
           - 'T[]'
-  - uid: office-ui-fabric-react.IBaseFloatingPickerProps.suggestionsStore
+  - uid: 'office-ui-fabric-react!IBaseFloatingPickerProps#suggestionsStore:member'
     summary: The suggestions store
     name: suggestionsStore
     fullName: suggestionsStore

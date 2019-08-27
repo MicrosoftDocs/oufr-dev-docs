@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office-ui-fabric-react.IBaseSelectedItemsListProps
+  - uid: 'office-ui-fabric-react!IBaseSelectedItemsListProps:interface'
     name: IBaseSelectedItemsListProps
     fullName: IBaseSelectedItemsListProps
     langs:
@@ -8,22 +8,25 @@ items:
     type: interface
     extends:
       - 'React.ClassAttributes<any> '
-    package: office-ui-fabric-react
+    syntax:
+      typeParameters:
+        - id: T
+    package: office-ui-fabric-react!
     children:
-      - office-ui-fabric-react.IBaseSelectedItemsListProps.canRemoveItem
-      - office-ui-fabric-react.IBaseSelectedItemsListProps.componentRef
-      - office-ui-fabric-react.IBaseSelectedItemsListProps.createGenericItem
-      - office-ui-fabric-react.IBaseSelectedItemsListProps.defaultSelectedItems
-      - office-ui-fabric-react.IBaseSelectedItemsListProps.onChange
-      - office-ui-fabric-react.IBaseSelectedItemsListProps.onCopyItems
-      - office-ui-fabric-react.IBaseSelectedItemsListProps.onItemDeleted
-      - office-ui-fabric-react.IBaseSelectedItemsListProps.onItemsDeleted
-      - office-ui-fabric-react.IBaseSelectedItemsListProps.onItemSelected
-      - office-ui-fabric-react.IBaseSelectedItemsListProps.onRenderItem
-      - office-ui-fabric-react.IBaseSelectedItemsListProps.removeButtonAriaLabel
-      - office-ui-fabric-react.IBaseSelectedItemsListProps.selectedItems
-      - office-ui-fabric-react.IBaseSelectedItemsListProps.selection
-  - uid: office-ui-fabric-react.IBaseSelectedItemsListProps.canRemoveItem
+      - 'office-ui-fabric-react!IBaseSelectedItemsListProps#canRemoveItem:member'
+      - 'office-ui-fabric-react!IBaseSelectedItemsListProps#componentRef:member'
+      - 'office-ui-fabric-react!IBaseSelectedItemsListProps#createGenericItem:member'
+      - 'office-ui-fabric-react!IBaseSelectedItemsListProps#defaultSelectedItems:member'
+      - 'office-ui-fabric-react!IBaseSelectedItemsListProps#onChange:member'
+      - 'office-ui-fabric-react!IBaseSelectedItemsListProps#onCopyItems:member'
+      - 'office-ui-fabric-react!IBaseSelectedItemsListProps#onItemDeleted:member'
+      - 'office-ui-fabric-react!IBaseSelectedItemsListProps#onItemsDeleted:member'
+      - 'office-ui-fabric-react!IBaseSelectedItemsListProps#onItemSelected:member'
+      - 'office-ui-fabric-react!IBaseSelectedItemsListProps#onRenderItem:member'
+      - 'office-ui-fabric-react!IBaseSelectedItemsListProps#removeButtonAriaLabel:member'
+      - 'office-ui-fabric-react!IBaseSelectedItemsListProps#selectedItems:member'
+      - 'office-ui-fabric-react!IBaseSelectedItemsListProps#selection:member'
+  - uid: 'office-ui-fabric-react!IBaseSelectedItemsListProps#canRemoveItem:member'
     summary: A callback on whether this item can be deleted
     name: canRemoveItem
     fullName: canRemoveItem
@@ -35,7 +38,7 @@ items:
       return:
         type:
           - '(item: T) => boolean'
-  - uid: office-ui-fabric-react.IBaseSelectedItemsListProps.componentRef
+  - uid: 'office-ui-fabric-react!IBaseSelectedItemsListProps#componentRef:member'
     name: componentRef
     fullName: componentRef
     langs:
@@ -46,7 +49,7 @@ items:
       return:
         type:
           - IRefObject<IBaseSelectedItemsList<T>>
-  - uid: office-ui-fabric-react.IBaseSelectedItemsListProps.createGenericItem
+  - uid: 'office-ui-fabric-react!IBaseSelectedItemsListProps#createGenericItem:member'
     summary: Function that specifies how arbitrary text entered into the well is handled.
     name: createGenericItem
     fullName: createGenericItem
@@ -58,7 +61,7 @@ items:
       return:
         type:
           - '(input: string, ValidationState: ValidationState) => ISuggestionModel<T>'
-  - uid: office-ui-fabric-react.IBaseSelectedItemsListProps.defaultSelectedItems
+  - uid: 'office-ui-fabric-react!IBaseSelectedItemsListProps#defaultSelectedItems:member'
     summary: Initial items that have already been selected and should appear in the people picker.
     name: defaultSelectedItems
     fullName: defaultSelectedItems
@@ -70,7 +73,7 @@ items:
       return:
         type:
           - 'T[]'
-  - uid: office-ui-fabric-react.IBaseSelectedItemsListProps.onChange
+  - uid: 'office-ui-fabric-react!IBaseSelectedItemsListProps#onChange:member'
     summary: A callback for when the selected list of items changes.
     name: onChange
     fullName: onChange
@@ -82,7 +85,7 @@ items:
       return:
         type:
           - '(items?: T[]) => void'
-  - uid: office-ui-fabric-react.IBaseSelectedItemsListProps.onCopyItems
+  - uid: 'office-ui-fabric-react!IBaseSelectedItemsListProps#onCopyItems:member'
     summary: A callback for when items are copied
     name: onCopyItems
     fullName: onCopyItems
@@ -94,7 +97,7 @@ items:
       return:
         type:
           - '(items: T[]) => string'
-  - uid: office-ui-fabric-react.IBaseSelectedItemsListProps.onItemDeleted
+  - uid: 'office-ui-fabric-react!IBaseSelectedItemsListProps#onItemDeleted:member'
     summary: A callback when an item is deleted
     deprecated:
       content: Use `onItemsDeleted` instead.
@@ -108,7 +111,7 @@ items:
       return:
         type:
           - '(deletedItem: T) => void'
-  - uid: office-ui-fabric-react.IBaseSelectedItemsListProps.onItemsDeleted
+  - uid: 'office-ui-fabric-react!IBaseSelectedItemsListProps#onItemsDeleted:member'
     summary: A callback when and item or items are deleted
     name: onItemsDeleted
     fullName: onItemsDeleted
@@ -120,7 +123,7 @@ items:
       return:
         type:
           - '(deletedItems: T[]) => void'
-  - uid: office-ui-fabric-react.IBaseSelectedItemsListProps.onItemSelected
+  - uid: 'office-ui-fabric-react!IBaseSelectedItemsListProps#onItemSelected:member'
     summary: A callback to process a selection after the user selects something from the picker.
     name: onItemSelected
     fullName: onItemSelected
@@ -132,7 +135,7 @@ items:
       return:
         type:
           - '(selectedItem?: T) => T | PromiseLike<T>'
-  - uid: office-ui-fabric-react.IBaseSelectedItemsListProps.onRenderItem
+  - uid: 'office-ui-fabric-react!IBaseSelectedItemsListProps#onRenderItem:member'
     summary: Function that specifies how the selected item will appear.
     name: onRenderItem
     fullName: onRenderItem
@@ -144,7 +147,7 @@ items:
       return:
         type:
           - '(props: ISelectedItemProps<T>) => JSX.Element'
-  - uid: office-ui-fabric-react.IBaseSelectedItemsListProps.removeButtonAriaLabel
+  - uid: 'office-ui-fabric-react!IBaseSelectedItemsListProps#removeButtonAriaLabel:member'
     summary: Aria label for the 'X' button in the selected item component.
     name: removeButtonAriaLabel
     fullName: removeButtonAriaLabel
@@ -156,7 +159,7 @@ items:
       return:
         type:
           - string
-  - uid: office-ui-fabric-react.IBaseSelectedItemsListProps.selectedItems
+  - uid: 'office-ui-fabric-react!IBaseSelectedItemsListProps#selectedItems:member'
     summary: >-
       The items that the base picker should currently display as selected. If this is provided then the picker will act
       as a controlled component.
@@ -170,7 +173,7 @@ items:
       return:
         type:
           - 'T[]'
-  - uid: office-ui-fabric-react.IBaseSelectedItemsListProps.selection
+  - uid: 'office-ui-fabric-react!IBaseSelectedItemsListProps#selection:member'
     summary: The selection
     name: selection
     fullName: selection
@@ -181,4 +184,4 @@ items:
       content: 'selection?: Selection;'
       return:
         type:
-          - utilities.Selection
+          - '@uifabric/utilities!Selection:class'

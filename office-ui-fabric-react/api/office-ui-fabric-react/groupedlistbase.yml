@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office-ui-fabric-react.GroupedListBase
+  - uid: 'office-ui-fabric-react!GroupedListBase:class'
     name: GroupedListBase
     fullName: GroupedListBase
     langs:
@@ -9,20 +9,20 @@ items:
     extends:
       - 'React.Component<IGroupedListProps, IGroupedListState> '
     implements:
-      - office-ui-fabric-react.IGroupedList
-    package: office-ui-fabric-react
+      - 'office-ui-fabric-react!IGroupedList:interface'
+    package: office-ui-fabric-react!
     children:
-      - office-ui-fabric-react.GroupedListBase.(constructor)
-      - office-ui-fabric-react.GroupedListBase.componentDidMount
-      - office-ui-fabric-react.GroupedListBase.componentWillReceiveProps
-      - office-ui-fabric-react.GroupedListBase.defaultProps
-      - office-ui-fabric-react.GroupedListBase.forceUpdate
-      - office-ui-fabric-react.GroupedListBase.getStartItemIndexInView
-      - office-ui-fabric-react.GroupedListBase.refs
-      - office-ui-fabric-react.GroupedListBase.render
-      - office-ui-fabric-react.GroupedListBase.scrollToIndex
-      - office-ui-fabric-react.GroupedListBase.toggleCollapseAll
-  - uid: office-ui-fabric-react.GroupedListBase.(constructor)
+      - 'office-ui-fabric-react!GroupedListBase:constructor(1)'
+      - 'office-ui-fabric-react!GroupedListBase#componentDidMount:member(1)'
+      - 'office-ui-fabric-react!GroupedListBase.defaultProps:member'
+      - 'office-ui-fabric-react!GroupedListBase#forceUpdate:member(1)'
+      - 'office-ui-fabric-react!GroupedListBase#getStartItemIndexInView:member(1)'
+      - 'office-ui-fabric-react!GroupedListBase#refs:member'
+      - 'office-ui-fabric-react!GroupedListBase#render:member(1)'
+      - 'office-ui-fabric-react!GroupedListBase#scrollToIndex:member(1)'
+      - 'office-ui-fabric-react!GroupedListBase#toggleCollapseAll:member(1)'
+      - 'office-ui-fabric-react!GroupedListBase#UNSAFE_componentWillReceiveProps:member(1)'
+  - uid: 'office-ui-fabric-react!GroupedListBase:constructor(1)'
     summary: Constructs a new instance of the `GroupedListBase` class
     name: (constructor)(props)
     fullName: (constructor)(props)
@@ -35,8 +35,8 @@ items:
         - id: props
           description: ''
           type:
-            - office-ui-fabric-react.IGroupedListProps
-  - uid: office-ui-fabric-react.GroupedListBase.componentDidMount
+            - 'office-ui-fabric-react!IGroupedListProps:interface'
+  - uid: 'office-ui-fabric-react!GroupedListBase#componentDidMount:member(1)'
     name: componentDidMount()
     fullName: componentDidMount()
     langs:
@@ -48,24 +48,7 @@ items:
         type:
           - void
         description: ''
-  - uid: office-ui-fabric-react.GroupedListBase.componentWillReceiveProps
-    name: componentWillReceiveProps(newProps)
-    fullName: componentWillReceiveProps(newProps)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'componentWillReceiveProps(newProps: IGroupedListProps): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: newProps
-          description: ''
-          type:
-            - office-ui-fabric-react.IGroupedListProps
-  - uid: office-ui-fabric-react.GroupedListBase.defaultProps
+  - uid: 'office-ui-fabric-react!GroupedListBase.defaultProps:member'
     name: defaultProps
     fullName: defaultProps
     langs:
@@ -88,7 +71,7 @@ items:
                     groupProps: {};
                     compact: boolean;
                 }
-  - uid: office-ui-fabric-react.GroupedListBase.forceUpdate
+  - uid: 'office-ui-fabric-react!GroupedListBase#forceUpdate:member(1)'
     name: forceUpdate()
     fullName: forceUpdate()
     langs:
@@ -100,7 +83,7 @@ items:
         type:
           - void
         description: ''
-  - uid: office-ui-fabric-react.GroupedListBase.getStartItemIndexInView
+  - uid: 'office-ui-fabric-react!GroupedListBase#getStartItemIndexInView:member(1)'
     name: getStartItemIndexInView()
     fullName: getStartItemIndexInView()
     langs:
@@ -112,7 +95,7 @@ items:
         type:
           - number
         description: ''
-  - uid: office-ui-fabric-react.GroupedListBase.refs
+  - uid: 'office-ui-fabric-react!GroupedListBase#refs:member'
     name: refs
     fullName: refs
     langs:
@@ -129,7 +112,7 @@ items:
             {
                     [key: string]: React.ReactInstance;
                 }
-  - uid: office-ui-fabric-react.GroupedListBase.render
+  - uid: 'office-ui-fabric-react!GroupedListBase#render:member(1)'
     name: render()
     fullName: render()
     langs:
@@ -141,7 +124,7 @@ items:
         type:
           - JSX.Element
         description: ''
-  - uid: office-ui-fabric-react.GroupedListBase.scrollToIndex
+  - uid: 'office-ui-fabric-react!GroupedListBase#scrollToIndex:member(1)'
     name: 'scrollToIndex(index, measureItem, scrollToMode)'
     fullName: 'scrollToIndex(index, measureItem, scrollToMode)'
     langs:
@@ -166,7 +149,7 @@ items:
           description: ''
           type:
             - ScrollToMode
-  - uid: office-ui-fabric-react.GroupedListBase.toggleCollapseAll
+  - uid: 'office-ui-fabric-react!GroupedListBase#toggleCollapseAll:member(1)'
     name: toggleCollapseAll(allCollapsed)
     fullName: toggleCollapseAll(allCollapsed)
     langs:
@@ -183,3 +166,20 @@ items:
           description: ''
           type:
             - boolean
+  - uid: 'office-ui-fabric-react!GroupedListBase#UNSAFE_componentWillReceiveProps:member(1)'
+    name: UNSAFE_componentWillReceiveProps(newProps)
+    fullName: UNSAFE_componentWillReceiveProps(newProps)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'UNSAFE_componentWillReceiveProps(newProps: IGroupedListProps): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: newProps
+          description: ''
+          type:
+            - 'office-ui-fabric-react!IGroupedListProps:interface'

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office-ui-fabric-react.IShimmerCircleProps
+  - uid: 'office-ui-fabric-react!IShimmerCircleProps:interface'
     summary: ShimmerCircle component props.
     name: IShimmerCircleProps
     fullName: IShimmerCircleProps
@@ -9,14 +9,14 @@ items:
     type: interface
     extends:
       - 'React.AllHTMLAttributes<HTMLElement> '
-    package: office-ui-fabric-react
+    package: office-ui-fabric-react!
     children:
-      - office-ui-fabric-react.IShimmerCircleProps.borderStyle
-      - office-ui-fabric-react.IShimmerCircleProps.componentRef
-      - office-ui-fabric-react.IShimmerCircleProps.height
-      - office-ui-fabric-react.IShimmerCircleProps.styles
-      - office-ui-fabric-react.IShimmerCircleProps.theme
-  - uid: office-ui-fabric-react.IShimmerCircleProps.borderStyle
+      - 'office-ui-fabric-react!IShimmerCircleProps#borderStyle:member'
+      - 'office-ui-fabric-react!IShimmerCircleProps#componentRef:member'
+      - 'office-ui-fabric-react!IShimmerCircleProps#height:member'
+      - 'office-ui-fabric-react!IShimmerCircleProps#styles:member'
+      - 'office-ui-fabric-react!IShimmerCircleProps#theme:member'
+  - uid: 'office-ui-fabric-react!IShimmerCircleProps#borderStyle:member'
     summary: Use to set custom styling of the shimmerCircle borders.
     deprecated:
       content: Use `styles` prop to leverage mergeStyle API.
@@ -29,8 +29,8 @@ items:
       content: 'borderStyle?: IRawStyle;'
       return:
         type:
-          - merge-styles.IRawStyle
-  - uid: office-ui-fabric-react.IShimmerCircleProps.componentRef
+          - '@uifabric/merge-styles!IRawStyle:interface'
+  - uid: 'office-ui-fabric-react!IShimmerCircleProps#componentRef:member'
     summary: >-
       Optional callback to access the IShimmerCircle interface. Use this instead of ref for accessing the public methods
       and properties of the component.
@@ -44,7 +44,7 @@ items:
       return:
         type:
           - IRefObject<IShimmerCircle>
-  - uid: office-ui-fabric-react.IShimmerCircleProps.height
+  - uid: 'office-ui-fabric-react!IShimmerCircleProps#height:member'
     summary: Sets the height of the circle.
     name: height
     fullName: height
@@ -56,7 +56,7 @@ items:
       return:
         type:
           - number
-  - uid: office-ui-fabric-react.IShimmerCircleProps.styles
+  - uid: 'office-ui-fabric-react!IShimmerCircleProps#styles:member'
     summary: Call to provide customized styling that will layer on top of the variant rules.
     name: styles
     fullName: styles
@@ -68,7 +68,7 @@ items:
       return:
         type:
           - 'IStyleFunctionOrObject<IShimmerCircleStyleProps, IShimmerCircleStyles>'
-  - uid: office-ui-fabric-react.IShimmerCircleProps.theme
+  - uid: 'office-ui-fabric-react!IShimmerCircleProps#theme:member'
     summary: Theme provided by High-Order Component.
     name: theme
     fullName: theme
@@ -79,4 +79,4 @@ items:
       content: 'theme?: ITheme;'
       return:
         type:
-          - styling.ITheme
+          - '@uifabric/styling!ITheme:interface'

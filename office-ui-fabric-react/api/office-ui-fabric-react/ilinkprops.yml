@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office-ui-fabric-react.ILinkProps
+  - uid: 'office-ui-fabric-react!ILinkProps:interface'
     name: ILinkProps
     fullName: ILinkProps
     langs:
@@ -8,15 +8,15 @@ items:
     type: interface
     extends:
       - 'ILinkHTMLAttributes<HTMLAnchorElement | HTMLButtonElement | HTMLElement | LinkBase> '
-    package: office-ui-fabric-react
+    package: office-ui-fabric-react!
     children:
-      - office-ui-fabric-react.ILinkProps.as
-      - office-ui-fabric-react.ILinkProps.componentRef
-      - office-ui-fabric-react.ILinkProps.disabled
-      - office-ui-fabric-react.ILinkProps.keytipProps
-      - office-ui-fabric-react.ILinkProps.styles
-      - office-ui-fabric-react.ILinkProps.theme
-  - uid: office-ui-fabric-react.ILinkProps.as
+      - 'office-ui-fabric-react!ILinkProps#as:member'
+      - 'office-ui-fabric-react!ILinkProps#componentRef:member'
+      - 'office-ui-fabric-react!ILinkProps#disabled:member'
+      - 'office-ui-fabric-react!ILinkProps#keytipProps:member'
+      - 'office-ui-fabric-react!ILinkProps#styles:member'
+      - 'office-ui-fabric-react!ILinkProps#theme:member'
+  - uid: 'office-ui-fabric-react!ILinkProps#as:member'
     summary: A component that should be used as the root element of the link returned from the Link component.
     name: as
     fullName: as
@@ -28,7 +28,7 @@ items:
       return:
         type:
           - string | React.ComponentClass | React.StatelessComponent
-  - uid: office-ui-fabric-react.ILinkProps.componentRef
+  - uid: 'office-ui-fabric-react!ILinkProps#componentRef:member'
     summary: >-
       Optional callback to access the ILink interface. Use this instead of ref for accessing the public methods and
       properties of the component.
@@ -42,7 +42,7 @@ items:
       return:
         type:
           - IRefObject<ILink>
-  - uid: office-ui-fabric-react.ILinkProps.disabled
+  - uid: 'office-ui-fabric-react!ILinkProps#disabled:member'
     summary: Whether the link is disabled
     name: disabled
     fullName: disabled
@@ -54,7 +54,7 @@ items:
       return:
         type:
           - boolean
-  - uid: office-ui-fabric-react.ILinkProps.keytipProps
+  - uid: 'office-ui-fabric-react!ILinkProps#keytipProps:member'
     summary: Optional keytip for this Link
     name: keytipProps
     fullName: keytipProps
@@ -65,8 +65,8 @@ items:
       content: 'keytipProps?: IKeytipProps;'
       return:
         type:
-          - office-ui-fabric-react.IKeytipProps
-  - uid: office-ui-fabric-react.ILinkProps.styles
+          - 'office-ui-fabric-react!IKeytipProps:interface'
+  - uid: 'office-ui-fabric-react!ILinkProps#styles:member'
     summary: Call to provide customized styling that will layer on top of the variant rules.
     name: styles
     fullName: styles
@@ -78,7 +78,7 @@ items:
       return:
         type:
           - 'IStyleFunctionOrObject<ILinkStyleProps, ILinkStyles>'
-  - uid: office-ui-fabric-react.ILinkProps.theme
+  - uid: 'office-ui-fabric-react!ILinkProps#theme:member'
     summary: Theme (provided through customization.)
     name: theme
     fullName: theme
@@ -89,4 +89,4 @@ items:
       content: 'theme?: ITheme;'
       return:
         type:
-          - styling.ITheme
+          - '@uifabric/styling!ITheme:interface'

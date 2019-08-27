@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: utilities.EventGroup
+  - uid: '@uifabric/utilities!EventGroup:class'
     summary: >-
       An instance of EventGroup allows anything with a handle to it to trigger events on it. If the target is an
       HTMLElement, the event will be attached to the element and can be triggered as usual (like clicking for onclick).
@@ -12,19 +12,20 @@ items:
     langs:
       - typeScript
     type: class
-    package: utilities
+    package: '@uifabric/utilities!'
     children:
-      - utilities.EventGroup.(constructor)
-      - utilities.EventGroup.declare
-      - utilities.EventGroup.dispose
-      - utilities.EventGroup.isDeclared
-      - utilities.EventGroup.isObserved
-      - utilities.EventGroup.off
-      - utilities.EventGroup.on
-      - utilities.EventGroup.onAll
-      - utilities.EventGroup.raise
-      - utilities.EventGroup.stopPropagation
-  - uid: utilities.EventGroup.(constructor)
+      - '@uifabric/utilities!EventGroup:constructor(1)'
+      - '@uifabric/utilities!EventGroup#declare:member(1)'
+      - '@uifabric/utilities!EventGroup#dispose:member(1)'
+      - '@uifabric/utilities!EventGroup.isDeclared:member(1)'
+      - '@uifabric/utilities!EventGroup.isObserved:member(1)'
+      - '@uifabric/utilities!EventGroup#off:member(1)'
+      - '@uifabric/utilities!EventGroup#on:member(1)'
+      - '@uifabric/utilities!EventGroup#onAll:member(1)'
+      - '@uifabric/utilities!EventGroup#raise:member(1)'
+      - '@uifabric/utilities!EventGroup.raise:member(1)'
+      - '@uifabric/utilities!EventGroup.stopPropagation:member(1)'
+  - uid: '@uifabric/utilities!EventGroup:constructor(1)'
     summary: 'parent: the context in which events attached to non-HTMLElements are called'
     name: (constructor)(parent)
     fullName: (constructor)(parent)
@@ -38,7 +39,7 @@ items:
           description: ''
           type:
             - any
-  - uid: utilities.EventGroup.declare
+  - uid: '@uifabric/utilities!EventGroup#declare:member(1)'
     summary: Declare an event as being supported by this instance of EventGroup.
     name: declare(event)
     fullName: declare(event)
@@ -56,7 +57,7 @@ items:
           description: ''
           type:
             - 'string | string[]'
-  - uid: utilities.EventGroup.dispose
+  - uid: '@uifabric/utilities!EventGroup#dispose:member(1)'
     name: dispose()
     fullName: dispose()
     langs:
@@ -68,7 +69,7 @@ items:
         type:
           - void
         description: ''
-  - uid: utilities.EventGroup.isDeclared
+  - uid: '@uifabric/utilities!EventGroup.isDeclared:member(1)'
     summary: Check to see if the target has declared support of the given event.
     name: 'isDeclared(target, eventName)'
     fullName: 'isDeclared(target, eventName)'
@@ -90,7 +91,7 @@ items:
           description: ''
           type:
             - string
-  - uid: utilities.EventGroup.isObserved
+  - uid: '@uifabric/utilities!EventGroup.isObserved:member(1)'
     name: 'isObserved(target, eventName)'
     fullName: 'isObserved(target, eventName)'
     langs:
@@ -111,7 +112,7 @@ items:
           description: ''
           type:
             - string
-  - uid: utilities.EventGroup.off
+  - uid: '@uifabric/utilities!EventGroup#off:member(1)'
     name: 'off(target, eventName, callback, options)'
     fullName: 'off(target, eventName, callback, options)'
     langs:
@@ -142,7 +143,7 @@ items:
           description: ''
           type:
             - boolean | AddEventListenerOptions
-  - uid: utilities.EventGroup.on
+  - uid: '@uifabric/utilities!EventGroup#on:member(1)'
     summary: >-
       On the target, attach an event whose handler will be called in the context of the parent of this instance of
       EventGroup.
@@ -176,7 +177,7 @@ items:
           description: ''
           type:
             - boolean | AddEventListenerOptions
-  - uid: utilities.EventGroup.onAll
+  - uid: '@uifabric/utilities!EventGroup#onAll:member(1)'
     summary: 'On the target, attach a set of events, where the events object is a name to function mapping.'
     name: 'onAll(target, events, useCapture)'
     fullName: 'onAll(target, events, useCapture)'
@@ -208,7 +209,7 @@ items:
           description: ''
           type:
             - boolean
-  - uid: utilities.EventGroup.raise
+  - uid: '@uifabric/utilities!EventGroup#raise:member(1)'
     summary: Trigger the given event in the context of this instance of EventGroup.
     name: 'raise(eventName, eventArgs, bubbleEvent)'
     fullName: 'raise(eventName, eventArgs, bubbleEvent)'
@@ -234,7 +235,40 @@ items:
           description: ''
           type:
             - boolean
-  - uid: utilities.EventGroup.stopPropagation
+  - uid: '@uifabric/utilities!EventGroup.raise:member(1)'
+    summary: >-
+      For IE8, bubbleEvent is ignored here and must be dealt with by the handler. Events raised here by default have
+      bubbling set to false and cancelable set to true. This applies also to built-in events being raised manually here
+      on HTMLElements, which may lead to unexpected behavior if it differs from the defaults.
+    name: 'raise(target, eventName, eventArgs, bubbleEvent)'
+    fullName: 'raise(target, eventName, eventArgs, bubbleEvent)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'static raise(target: any, eventName: string, eventArgs?: any, bubbleEvent?: boolean): boolean | undefined;'
+      return:
+        type:
+          - boolean | undefined
+        description: ''
+      parameters:
+        - id: target
+          description: ''
+          type:
+            - any
+        - id: eventName
+          description: ''
+          type:
+            - string
+        - id: eventArgs
+          description: ''
+          type:
+            - any
+        - id: bubbleEvent
+          description: ''
+          type:
+            - boolean
+  - uid: '@uifabric/utilities!EventGroup.stopPropagation:member(1)'
     name: stopPropagation(event)
     fullName: stopPropagation(event)
     langs:

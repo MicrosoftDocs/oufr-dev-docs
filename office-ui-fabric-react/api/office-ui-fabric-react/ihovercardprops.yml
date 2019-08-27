@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office-ui-fabric-react.IHoverCardProps
+  - uid: 'office-ui-fabric-react!IHoverCardProps:interface'
     summary: HoverCard component props.
     name: IHoverCardProps
     fullName: IHoverCardProps
@@ -9,30 +9,31 @@ items:
     type: interface
     extends:
       - 'React.HTMLAttributes<HTMLDivElement> '
-    package: office-ui-fabric-react
+    package: office-ui-fabric-react!
     children:
-      - office-ui-fabric-react.IHoverCardProps.cardDismissDelay
-      - office-ui-fabric-react.IHoverCardProps.cardOpenDelay
-      - office-ui-fabric-react.IHoverCardProps.className
-      - office-ui-fabric-react.IHoverCardProps.componentRef
-      - office-ui-fabric-react.IHoverCardProps.expandedCardOpenDelay
-      - office-ui-fabric-react.IHoverCardProps.expandingCardProps
-      - office-ui-fabric-react.IHoverCardProps.instantOpenOnClick
-      - office-ui-fabric-react.IHoverCardProps.onCardExpand
-      - office-ui-fabric-react.IHoverCardProps.onCardHide
-      - office-ui-fabric-react.IHoverCardProps.onCardVisible
-      - office-ui-fabric-react.IHoverCardProps.openHotKey
-      - office-ui-fabric-react.IHoverCardProps.plainCardProps
-      - office-ui-fabric-react.IHoverCardProps.setAriaDescribedBy
-      - office-ui-fabric-react.IHoverCardProps.setInitialFocus
-      - office-ui-fabric-react.IHoverCardProps.shouldBlockHoverCard
-      - office-ui-fabric-react.IHoverCardProps.sticky
-      - office-ui-fabric-react.IHoverCardProps.styles
-      - office-ui-fabric-react.IHoverCardProps.target
-      - office-ui-fabric-react.IHoverCardProps.theme
-      - office-ui-fabric-react.IHoverCardProps.trapFocus
-      - office-ui-fabric-react.IHoverCardProps.type
-  - uid: office-ui-fabric-react.IHoverCardProps.cardDismissDelay
+      - 'office-ui-fabric-react!IHoverCardProps#cardDismissDelay:member'
+      - 'office-ui-fabric-react!IHoverCardProps#cardOpenDelay:member'
+      - 'office-ui-fabric-react!IHoverCardProps#className:member'
+      - 'office-ui-fabric-react!IHoverCardProps#componentRef:member'
+      - 'office-ui-fabric-react!IHoverCardProps#eventListenerTarget:member'
+      - 'office-ui-fabric-react!IHoverCardProps#expandedCardOpenDelay:member'
+      - 'office-ui-fabric-react!IHoverCardProps#expandingCardProps:member'
+      - 'office-ui-fabric-react!IHoverCardProps#instantOpenOnClick:member'
+      - 'office-ui-fabric-react!IHoverCardProps#onCardExpand:member'
+      - 'office-ui-fabric-react!IHoverCardProps#onCardHide:member'
+      - 'office-ui-fabric-react!IHoverCardProps#onCardVisible:member'
+      - 'office-ui-fabric-react!IHoverCardProps#openHotKey:member'
+      - 'office-ui-fabric-react!IHoverCardProps#plainCardProps:member'
+      - 'office-ui-fabric-react!IHoverCardProps#setAriaDescribedBy:member'
+      - 'office-ui-fabric-react!IHoverCardProps#setInitialFocus:member'
+      - 'office-ui-fabric-react!IHoverCardProps#shouldBlockHoverCard:member'
+      - 'office-ui-fabric-react!IHoverCardProps#sticky:member'
+      - 'office-ui-fabric-react!IHoverCardProps#styles:member'
+      - 'office-ui-fabric-react!IHoverCardProps#target:member'
+      - 'office-ui-fabric-react!IHoverCardProps#theme:member'
+      - 'office-ui-fabric-react!IHoverCardProps#trapFocus:member'
+      - 'office-ui-fabric-react!IHoverCardProps#type:member'
+  - uid: 'office-ui-fabric-react!IHoverCardProps#cardDismissDelay:member'
     summary: Length of card dismiss delay. A min number is necessary for pointer to hop between target and card
     name: cardDismissDelay
     fullName: cardDismissDelay
@@ -44,7 +45,7 @@ items:
       return:
         type:
           - number
-  - uid: office-ui-fabric-react.IHoverCardProps.cardOpenDelay
+  - uid: 'office-ui-fabric-react!IHoverCardProps#cardOpenDelay:member'
     summary: Length of compact card delay
     name: cardOpenDelay
     fullName: cardOpenDelay
@@ -56,7 +57,7 @@ items:
       return:
         type:
           - number
-  - uid: office-ui-fabric-react.IHoverCardProps.className
+  - uid: 'office-ui-fabric-react!IHoverCardProps#className:member'
     summary: Additional CSS class(es) to apply to the HoverCard root element.
     name: className
     fullName: className
@@ -68,7 +69,7 @@ items:
       return:
         type:
           - string
-  - uid: office-ui-fabric-react.IHoverCardProps.componentRef
+  - uid: 'office-ui-fabric-react!IHoverCardProps#componentRef:member'
     summary: >-
       Optional callback to access the IHoverCardHost interface. Use this instead of ref for accessing the public methods
       and properties of the component.
@@ -82,7 +83,22 @@ items:
       return:
         type:
           - IRefObject<IHoverCard>
-  - uid: office-ui-fabric-react.IHoverCardProps.expandedCardOpenDelay
+  - uid: 'office-ui-fabric-react!IHoverCardProps#eventListenerTarget:member'
+    summary: >-
+      This prop is to separate the target to anchor hover card from the target to attach event listener. If set, this
+      prop separates the target to anchor the hover card from the target to attach the event listener. When no
+      `eventListenerTarget` given, HoverCard will use `target` prop or its root to set event listener.
+    name: eventListenerTarget
+    fullName: eventListenerTarget
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'eventListenerTarget?: HTMLElement | string | null;'
+      return:
+        type:
+          - HTMLElement | string | null
+  - uid: 'office-ui-fabric-react!IHoverCardProps#expandedCardOpenDelay:member'
     summary: Time in ms when expanded card should open after compact card
     name: expandedCardOpenDelay
     fullName: expandedCardOpenDelay
@@ -94,7 +110,7 @@ items:
       return:
         type:
           - number
-  - uid: office-ui-fabric-react.IHoverCardProps.expandingCardProps
+  - uid: 'office-ui-fabric-react!IHoverCardProps#expandingCardProps:member'
     summary: >-
       Additional ExpandingCard props to pass through HoverCard like renderers, target. gapSpace etc. Used along with
       'type' prop set to HoverCardType.expanding. Reference detail properties in ICardProps and IExpandingCardProps.
@@ -107,8 +123,8 @@ items:
       content: 'expandingCardProps?: IExpandingCardProps;'
       return:
         type:
-          - office-ui-fabric-react.IExpandingCardProps
-  - uid: office-ui-fabric-react.IHoverCardProps.instantOpenOnClick
+          - 'office-ui-fabric-react!IExpandingCardProps:interface'
+  - uid: 'office-ui-fabric-react!IHoverCardProps#instantOpenOnClick:member'
     summary: Enables instant open of the full card upon click
     name: instantOpenOnClick
     fullName: instantOpenOnClick
@@ -120,7 +136,7 @@ items:
       return:
         type:
           - boolean
-  - uid: office-ui-fabric-react.IHoverCardProps.onCardExpand
+  - uid: 'office-ui-fabric-react!IHoverCardProps#onCardExpand:member'
     summary: Callback when visible card is expanded.
     name: onCardExpand
     fullName: onCardExpand
@@ -132,7 +148,7 @@ items:
       return:
         type:
           - () => void
-  - uid: office-ui-fabric-react.IHoverCardProps.onCardHide
+  - uid: 'office-ui-fabric-react!IHoverCardProps#onCardHide:member'
     summary: Callback when card hides
     name: onCardHide
     fullName: onCardHide
@@ -144,7 +160,7 @@ items:
       return:
         type:
           - () => void
-  - uid: office-ui-fabric-react.IHoverCardProps.onCardVisible
+  - uid: 'office-ui-fabric-react!IHoverCardProps#onCardVisible:member'
     summary: Callback when card becomes visible
     name: onCardVisible
     fullName: onCardVisible
@@ -156,7 +172,7 @@ items:
       return:
         type:
           - () => void
-  - uid: office-ui-fabric-react.IHoverCardProps.openHotKey
+  - uid: 'office-ui-fabric-react!IHoverCardProps#openHotKey:member'
     summary: HotKey used for opening the HoverCard when tabbed to target.
     name: openHotKey
     fullName: openHotKey
@@ -168,7 +184,7 @@ items:
       return:
         type:
           - KeyCodes
-  - uid: office-ui-fabric-react.IHoverCardProps.plainCardProps
+  - uid: 'office-ui-fabric-react!IHoverCardProps#plainCardProps:member'
     summary: >-
       Additional PlainCard props to pass through HoverCard like renderers, target, gapSpace etc. Used along with 'type'
       prop set to HoverCardType.plain. See for more details ICardProps and IPlainCardProps interfaces.
@@ -181,8 +197,8 @@ items:
       content: 'plainCardProps?: IPlainCardProps;'
       return:
         type:
-          - office-ui-fabric-react.IPlainCardProps
-  - uid: office-ui-fabric-react.IHoverCardProps.setAriaDescribedBy
+          - 'office-ui-fabric-react!IPlainCardProps:interface'
+  - uid: 'office-ui-fabric-react!IHoverCardProps#setAriaDescribedBy:member'
     summary: >-
       Whether or not to mark the container as described by the hover card. If not specified, the caller should mark as
       element as described by the hover card id.
@@ -196,7 +212,7 @@ items:
       return:
         type:
           - boolean
-  - uid: office-ui-fabric-react.IHoverCardProps.setInitialFocus
+  - uid: 'office-ui-fabric-react!IHoverCardProps#setInitialFocus:member'
     summary: Set to true to set focus on the first focusable element in the card. Works in pair with the 'trapFocus' prop.
     name: setInitialFocus
     fullName: setInitialFocus
@@ -208,7 +224,7 @@ items:
       return:
         type:
           - boolean
-  - uid: office-ui-fabric-react.IHoverCardProps.shouldBlockHoverCard
+  - uid: 'office-ui-fabric-react!IHoverCardProps#shouldBlockHoverCard:member'
     summary: Should block hover card or not
     name: shouldBlockHoverCard
     fullName: shouldBlockHoverCard
@@ -220,7 +236,7 @@ items:
       return:
         type:
           - () => void
-  - uid: office-ui-fabric-react.IHoverCardProps.sticky
+  - uid: 'office-ui-fabric-react!IHoverCardProps#sticky:member'
     summary: 'If true disables Card dismiss upon mouse leave, so that card sticks around.'
     name: sticky
     fullName: sticky
@@ -232,7 +248,7 @@ items:
       return:
         type:
           - boolean
-  - uid: office-ui-fabric-react.IHoverCardProps.styles
+  - uid: 'office-ui-fabric-react!IHoverCardProps#styles:member'
     summary: Custom styles for this component
     name: styles
     fullName: styles
@@ -244,7 +260,7 @@ items:
       return:
         type:
           - 'IStyleFunctionOrObject<IHoverCardStyleProps, IHoverCardStyles>'
-  - uid: office-ui-fabric-react.IHoverCardProps.target
+  - uid: 'office-ui-fabric-react!IHoverCardProps#target:member'
     summary: >-
       Optional target element to tag hover card on. If not provided and using HoverCard as a wrapper, don't set
       'data-is-focusable=true' attribute to the root of the wrapped child. When no target given, HoverCard will use it's
@@ -259,7 +275,7 @@ items:
       return:
         type:
           - HTMLElement | string | null
-  - uid: office-ui-fabric-react.IHoverCardProps.theme
+  - uid: 'office-ui-fabric-react!IHoverCardProps#theme:member'
     summary: Theme provided by higher order component.
     name: theme
     fullName: theme
@@ -270,8 +286,8 @@ items:
       content: 'theme?: ITheme;'
       return:
         type:
-          - styling.ITheme
-  - uid: office-ui-fabric-react.IHoverCardProps.trapFocus
+          - '@uifabric/styling!ITheme:interface'
+  - uid: 'office-ui-fabric-react!IHoverCardProps#trapFocus:member'
     summary: >-
       Set to true if you want to render the content of the HoverCard in a FocusTrapZone for accessibility reasons.
       Optionally 'setInitialFocus' prop can be set to true to move focus inside the FocusTrapZone.
@@ -285,7 +301,7 @@ items:
       return:
         type:
           - boolean
-  - uid: office-ui-fabric-react.IHoverCardProps.type
+  - uid: 'office-ui-fabric-react!IHoverCardProps#type:member'
     summary: Type of the hover card to render.
     name: type
     fullName: type
@@ -296,4 +312,4 @@ items:
       content: 'type?: HoverCardType;'
       return:
         type:
-          - office-ui-fabric-react.HoverCardType
+          - 'office-ui-fabric-react!HoverCardType:enum'

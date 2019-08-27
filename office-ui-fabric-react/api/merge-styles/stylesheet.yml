@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: merge-styles.Stylesheet
+  - uid: '@uifabric/merge-styles!Stylesheet:class'
     summary: >-
       Represents the state of styles registered in the page. Abstracts the surface for adding styles to the stylesheet,
       exposes helpers for reading the styles registered in server rendered scenarios.
@@ -9,22 +9,22 @@ items:
     langs:
       - typeScript
     type: class
-    package: merge-styles
+    package: '@uifabric/merge-styles!'
     children:
-      - merge-styles.Stylesheet.(constructor)
-      - merge-styles.Stylesheet.argsFromClassName
-      - merge-styles.Stylesheet.cacheClassName
-      - merge-styles.Stylesheet.classNameFromKey
-      - merge-styles.Stylesheet.getClassName
-      - merge-styles.Stylesheet.getInstance
-      - merge-styles.Stylesheet.getRules
-      - merge-styles.Stylesheet.insertedRulesFromClassName
-      - merge-styles.Stylesheet.insertRule
-      - merge-styles.Stylesheet.onReset
-      - merge-styles.Stylesheet.reset
-      - merge-styles.Stylesheet.resetKeys
-      - merge-styles.Stylesheet.setConfig
-  - uid: merge-styles.Stylesheet.(constructor)
+      - '@uifabric/merge-styles!Stylesheet:constructor(1)'
+      - '@uifabric/merge-styles!Stylesheet#argsFromClassName:member(1)'
+      - '@uifabric/merge-styles!Stylesheet#cacheClassName:member(1)'
+      - '@uifabric/merge-styles!Stylesheet#classNameFromKey:member(1)'
+      - '@uifabric/merge-styles!Stylesheet#getClassName:member(1)'
+      - '@uifabric/merge-styles!Stylesheet.getInstance:member(1)'
+      - '@uifabric/merge-styles!Stylesheet#getRules:member(1)'
+      - '@uifabric/merge-styles!Stylesheet#insertedRulesFromClassName:member(1)'
+      - '@uifabric/merge-styles!Stylesheet#insertRule:member(1)'
+      - '@uifabric/merge-styles!Stylesheet#onReset:member(1)'
+      - '@uifabric/merge-styles!Stylesheet#reset:member(1)'
+      - '@uifabric/merge-styles!Stylesheet#resetKeys:member(1)'
+      - '@uifabric/merge-styles!Stylesheet#setConfig:member(1)'
+  - uid: '@uifabric/merge-styles!Stylesheet:constructor(1)'
     summary: Constructs a new instance of the `Stylesheet` class
     name: (constructor)(config)
     fullName: (constructor)(config)
@@ -37,8 +37,8 @@ items:
         - id: config
           description: ''
           type:
-            - merge-styles.IStyleSheetConfig
-  - uid: merge-styles.Stylesheet.argsFromClassName
+            - '@uifabric/merge-styles!IStyleSheetConfig:interface'
+  - uid: '@uifabric/merge-styles!Stylesheet#argsFromClassName:member(1)'
     summary: Gets the arguments associated with a given classname which was previously registered using cacheClassName.
     name: argsFromClassName(className)
     fullName: argsFromClassName(className)
@@ -56,7 +56,7 @@ items:
           description: ''
           type:
             - string
-  - uid: merge-styles.Stylesheet.cacheClassName
+  - uid: '@uifabric/merge-styles!Stylesheet#cacheClassName:member(1)'
     summary: Used internally to cache information about a class which was registered with the stylesheet.
     name: 'cacheClassName(className, key, args, rules)'
     fullName: 'cacheClassName(className, key, args, rules)'
@@ -86,7 +86,7 @@ items:
           description: ''
           type:
             - 'string[]'
-  - uid: merge-styles.Stylesheet.classNameFromKey
+  - uid: '@uifabric/merge-styles!Stylesheet#classNameFromKey:member(1)'
     summary: Gets the appropriate classname given a key which was previously registered using cacheClassName.
     name: classNameFromKey(key)
     fullName: classNameFromKey(key)
@@ -104,7 +104,7 @@ items:
           description: ''
           type:
             - string
-  - uid: merge-styles.Stylesheet.getClassName
+  - uid: '@uifabric/merge-styles!Stylesheet#getClassName:member(1)'
     summary: Generates a unique classname.
     name: getClassName(displayName)
     fullName: getClassName(displayName)
@@ -122,7 +122,7 @@ items:
           description: Optional value to use as a prefix.
           type:
             - string
-  - uid: merge-styles.Stylesheet.getInstance
+  - uid: '@uifabric/merge-styles!Stylesheet.getInstance:member(1)'
     summary: Gets the singleton instance.
     name: getInstance()
     fullName: getInstance()
@@ -133,9 +133,9 @@ items:
       content: 'static getInstance(): Stylesheet;'
       return:
         type:
-          - merge-styles.Stylesheet
+          - '@uifabric/merge-styles!Stylesheet:class'
         description: ''
-  - uid: merge-styles.Stylesheet.getRules
+  - uid: '@uifabric/merge-styles!Stylesheet#getRules:member(1)'
     summary: Gets all rules registered with the stylesheet; only valid when using InsertionMode.none.
     name: getRules(includePreservedRules)
     fullName: getRules(includePreservedRules)
@@ -153,7 +153,7 @@ items:
           description: ''
           type:
             - boolean
-  - uid: merge-styles.Stylesheet.insertedRulesFromClassName
+  - uid: '@uifabric/merge-styles!Stylesheet#insertedRulesFromClassName:member(1)'
     summary: Gets the arguments associated with a given classname which was previously registered using cacheClassName.
     name: insertedRulesFromClassName(className)
     fullName: insertedRulesFromClassName(className)
@@ -171,7 +171,7 @@ items:
           description: ''
           type:
             - string
-  - uid: merge-styles.Stylesheet.insertRule
+  - uid: '@uifabric/merge-styles!Stylesheet#insertRule:member(1)'
     summary: Inserts a css rule into the stylesheet.
     name: 'insertRule(rule, preserve)'
     fullName: 'insertRule(rule, preserve)'
@@ -193,7 +193,7 @@ items:
           description: Preserves the rule beyond a reset boundary.
           type:
             - boolean
-  - uid: merge-styles.Stylesheet.onReset
+  - uid: '@uifabric/merge-styles!Stylesheet#onReset:member(1)'
     summary: Configures a reset callback.
     name: onReset(callback)
     fullName: onReset(callback)
@@ -211,7 +211,7 @@ items:
           description: A callback which will be called when the Stylesheet is reset.
           type:
             - () => void
-  - uid: merge-styles.Stylesheet.reset
+  - uid: '@uifabric/merge-styles!Stylesheet#reset:member(1)'
     summary: >-
       Resets the internal state of the stylesheet. Only used in server rendered scenarios where we're using
       InsertionMode.none.
@@ -226,7 +226,7 @@ items:
         type:
           - void
         description: ''
-  - uid: merge-styles.Stylesheet.resetKeys
+  - uid: '@uifabric/merge-styles!Stylesheet#resetKeys:member(1)'
     name: resetKeys()
     fullName: resetKeys()
     langs:
@@ -238,7 +238,7 @@ items:
         type:
           - void
         description: ''
-  - uid: merge-styles.Stylesheet.setConfig
+  - uid: '@uifabric/merge-styles!Stylesheet#setConfig:member(1)'
     summary: Configures the stylesheet.
     name: setConfig(config)
     fullName: setConfig(config)
@@ -255,4 +255,4 @@ items:
         - id: config
           description: ''
           type:
-            - merge-styles.IStyleSheetConfig
+            - '@uifabric/merge-styles!IStyleSheetConfig:interface'

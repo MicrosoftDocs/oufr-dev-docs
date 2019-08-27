@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office-ui-fabric-react.IRatingProps
+  - uid: 'office-ui-fabric-react!IRatingProps:interface'
     summary: Rating component props.
     name: IRatingProps
     fullName: IRatingProps
@@ -9,25 +9,25 @@ items:
     type: interface
     extends:
       - 'React.AllHTMLAttributes<HTMLElement> '
-    package: office-ui-fabric-react
+    package: office-ui-fabric-react!
     children:
-      - office-ui-fabric-react.IRatingProps.allowZeroStars
-      - office-ui-fabric-react.IRatingProps.ariaLabelFormat
-      - office-ui-fabric-react.IRatingProps.ariaLabelId
-      - office-ui-fabric-react.IRatingProps.componentRef
-      - office-ui-fabric-react.IRatingProps.getAriaLabel
-      - office-ui-fabric-react.IRatingProps.icon
-      - office-ui-fabric-react.IRatingProps.max
-      - office-ui-fabric-react.IRatingProps.min
-      - office-ui-fabric-react.IRatingProps.onChange
-      - office-ui-fabric-react.IRatingProps.onChanged
-      - office-ui-fabric-react.IRatingProps.rating
-      - office-ui-fabric-react.IRatingProps.readOnly
-      - office-ui-fabric-react.IRatingProps.size
-      - office-ui-fabric-react.IRatingProps.styles
-      - office-ui-fabric-react.IRatingProps.theme
-      - office-ui-fabric-react.IRatingProps.unselectedIcon
-  - uid: office-ui-fabric-react.IRatingProps.allowZeroStars
+      - 'office-ui-fabric-react!IRatingProps#allowZeroStars:member'
+      - 'office-ui-fabric-react!IRatingProps#ariaLabelFormat:member'
+      - 'office-ui-fabric-react!IRatingProps#ariaLabelId:member'
+      - 'office-ui-fabric-react!IRatingProps#componentRef:member'
+      - 'office-ui-fabric-react!IRatingProps#getAriaLabel:member'
+      - 'office-ui-fabric-react!IRatingProps#icon:member'
+      - 'office-ui-fabric-react!IRatingProps#max:member'
+      - 'office-ui-fabric-react!IRatingProps#min:member'
+      - 'office-ui-fabric-react!IRatingProps#onChange:member'
+      - 'office-ui-fabric-react!IRatingProps#onChanged:member'
+      - 'office-ui-fabric-react!IRatingProps#rating:member'
+      - 'office-ui-fabric-react!IRatingProps#readOnly:member'
+      - 'office-ui-fabric-react!IRatingProps#size:member'
+      - 'office-ui-fabric-react!IRatingProps#styles:member'
+      - 'office-ui-fabric-react!IRatingProps#theme:member'
+      - 'office-ui-fabric-react!IRatingProps#unselectedIcon:member'
+  - uid: 'office-ui-fabric-react!IRatingProps#allowZeroStars:member'
     summary: Allow the rating value to be set to 0 instead of a minimum of 1.
     name: allowZeroStars
     fullName: allowZeroStars
@@ -39,7 +39,7 @@ items:
       return:
         type:
           - boolean
-  - uid: office-ui-fabric-react.IRatingProps.ariaLabelFormat
+  - uid: 'office-ui-fabric-react!IRatingProps#ariaLabelFormat:member'
     summary: >-
       Optional label format for a rating star that will be read by screen readers. Can be used like "<!-- -->{<!--
       -->0<!-- -->} of {<!-- -->1<!-- -->} stars selected", where {<!-- -->0<!-- -->} will be substituted by the current
@@ -54,7 +54,7 @@ items:
       return:
         type:
           - string
-  - uid: office-ui-fabric-react.IRatingProps.ariaLabelId
+  - uid: 'office-ui-fabric-react!IRatingProps#ariaLabelId:member'
     summary: 'Deprecated: Optional id of label describing this instance of Rating.'
     deprecated:
       content: Use `getAriaLabel` instead.
@@ -68,7 +68,7 @@ items:
       return:
         type:
           - string
-  - uid: office-ui-fabric-react.IRatingProps.componentRef
+  - uid: 'office-ui-fabric-react!IRatingProps#componentRef:member'
     summary: >-
       Optional callback to access the IRating interface. Use this instead of ref for accessing the public methods and
       properties of the component.
@@ -82,7 +82,7 @@ items:
       return:
         type:
           - IRefObject<IRating>
-  - uid: office-ui-fabric-react.IRatingProps.getAriaLabel
+  - uid: 'office-ui-fabric-react!IRatingProps#getAriaLabel:member'
     name: getAriaLabel
     fullName: getAriaLabel
     langs:
@@ -93,7 +93,7 @@ items:
       return:
         type:
           - '(rating: number, max: number) => string'
-  - uid: office-ui-fabric-react.IRatingProps.icon
+  - uid: 'office-ui-fabric-react!IRatingProps#icon:member'
     summary: Custom icon
     name: icon
     fullName: icon
@@ -105,7 +105,7 @@ items:
       return:
         type:
           - string
-  - uid: office-ui-fabric-react.IRatingProps.max
+  - uid: 'office-ui-fabric-react!IRatingProps#max:member'
     summary: 'Maximum rating, defaults to 5, has to be &gt;<!-- -->= min'
     name: max
     fullName: max
@@ -117,7 +117,7 @@ items:
       return:
         type:
           - number
-  - uid: office-ui-fabric-react.IRatingProps.min
+  - uid: 'office-ui-fabric-react!IRatingProps#min:member'
     summary: 'Minimum rating, defaults to 1, has to be &gt;<!-- -->= 0'
     deprecated:
       content: No longer used.
@@ -131,7 +131,7 @@ items:
       return:
         type:
           - number
-  - uid: office-ui-fabric-react.IRatingProps.onChange
+  - uid: 'office-ui-fabric-react!IRatingProps#onChange:member'
     summary: Callback issued when the rating changes.
     name: onChange
     fullName: onChange
@@ -143,7 +143,7 @@ items:
       return:
         type:
           - '(event: React.FocusEvent<HTMLElement>, rating?: number) => void'
-  - uid: office-ui-fabric-react.IRatingProps.onChanged
+  - uid: 'office-ui-fabric-react!IRatingProps#onChanged:member'
     deprecated:
       content: Use `onChange` instead.
     name: onChanged
@@ -156,7 +156,7 @@ items:
       return:
         type:
           - '(rating: number) => void'
-  - uid: office-ui-fabric-react.IRatingProps.rating
+  - uid: 'office-ui-fabric-react!IRatingProps#rating:member'
     summary: 'Selected rating, has to be an integer between min and max'
     name: rating
     fullName: rating
@@ -168,7 +168,7 @@ items:
       return:
         type:
           - number
-  - uid: office-ui-fabric-react.IRatingProps.readOnly
+  - uid: 'office-ui-fabric-react!IRatingProps#readOnly:member'
     summary: Optional flag to mark rating control as readOnly
     name: readOnly
     fullName: readOnly
@@ -180,7 +180,7 @@ items:
       return:
         type:
           - boolean
-  - uid: office-ui-fabric-react.IRatingProps.size
+  - uid: 'office-ui-fabric-react!IRatingProps#size:member'
     summary: 'Size of rating, defaults to small'
     name: size
     fullName: size
@@ -191,8 +191,8 @@ items:
       content: 'size?: RatingSize;'
       return:
         type:
-          - office-ui-fabric-react.RatingSize
-  - uid: office-ui-fabric-react.IRatingProps.styles
+          - 'office-ui-fabric-react!RatingSize:enum'
+  - uid: 'office-ui-fabric-react!IRatingProps#styles:member'
     summary: Call to provide customized styling that will layer on top of the variant rules.
     name: styles
     fullName: styles
@@ -204,7 +204,7 @@ items:
       return:
         type:
           - 'IStyleFunctionOrObject<IRatingStyleProps, IRatingStyles>'
-  - uid: office-ui-fabric-react.IRatingProps.theme
+  - uid: 'office-ui-fabric-react!IRatingProps#theme:member'
     summary: Theme (provided through customization.)
     name: theme
     fullName: theme
@@ -215,8 +215,8 @@ items:
       content: 'theme?: ITheme;'
       return:
         type:
-          - styling.ITheme
-  - uid: office-ui-fabric-react.IRatingProps.unselectedIcon
+          - '@uifabric/styling!ITheme:interface'
+  - uid: 'office-ui-fabric-react!IRatingProps#unselectedIcon:member'
     summary: Custom icon for unselected rating elements.
     name: unselectedIcon
     fullName: unselectedIcon

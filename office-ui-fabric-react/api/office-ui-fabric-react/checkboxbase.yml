@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office-ui-fabric-react.CheckboxBase
+  - uid: 'office-ui-fabric-react!CheckboxBase:class'
     name: CheckboxBase
     fullName: CheckboxBase
     langs:
@@ -9,16 +9,17 @@ items:
     extends:
       - 'React.Component<ICheckboxProps, ICheckboxState> '
     implements:
-      - office-ui-fabric-react.ICheckbox
-    package: office-ui-fabric-react
+      - 'office-ui-fabric-react!ICheckbox:interface'
+    package: office-ui-fabric-react!
     children:
-      - office-ui-fabric-react.CheckboxBase.(constructor)
-      - office-ui-fabric-react.CheckboxBase.checked
-      - office-ui-fabric-react.CheckboxBase.defaultProps
-      - office-ui-fabric-react.CheckboxBase.focus
-      - office-ui-fabric-react.CheckboxBase.getDerivedStateFromProps
-      - office-ui-fabric-react.CheckboxBase.render
-  - uid: office-ui-fabric-react.CheckboxBase.(constructor)
+      - 'office-ui-fabric-react!CheckboxBase:constructor(1)'
+      - 'office-ui-fabric-react!CheckboxBase#checked:member'
+      - 'office-ui-fabric-react!CheckboxBase.defaultProps:member'
+      - 'office-ui-fabric-react!CheckboxBase#focus:member(1)'
+      - 'office-ui-fabric-react!CheckboxBase.getDerivedStateFromProps:member(1)'
+      - 'office-ui-fabric-react!CheckboxBase#indeterminate:member'
+      - 'office-ui-fabric-react!CheckboxBase#render:member(1)'
+  - uid: 'office-ui-fabric-react!CheckboxBase:constructor(1)'
     summary: Initialize a new instance of the Checkbox
     name: '(constructor)(props, context)'
     fullName: '(constructor)(props, context)'
@@ -31,12 +32,12 @@ items:
         - id: props
           description: Props for the component
           type:
-            - office-ui-fabric-react.ICheckboxProps
+            - 'office-ui-fabric-react!ICheckboxProps:interface'
         - id: context
           description: Context or initial state for the base component.
           type:
             - any
-  - uid: office-ui-fabric-react.CheckboxBase.checked
+  - uid: 'office-ui-fabric-react!CheckboxBase#checked:member'
     name: checked
     fullName: checked
     langs:
@@ -47,7 +48,7 @@ items:
       return:
         type:
           - boolean
-  - uid: office-ui-fabric-react.CheckboxBase.defaultProps
+  - uid: 'office-ui-fabric-react!CheckboxBase.defaultProps:member'
     name: defaultProps
     fullName: defaultProps
     langs:
@@ -57,8 +58,8 @@ items:
       content: 'static defaultProps: ICheckboxProps;'
       return:
         type:
-          - office-ui-fabric-react.ICheckboxProps
-  - uid: office-ui-fabric-react.CheckboxBase.focus
+          - 'office-ui-fabric-react!ICheckboxProps:interface'
+  - uid: 'office-ui-fabric-react!CheckboxBase#focus:member(1)'
     name: focus()
     fullName: focus()
     langs:
@@ -70,28 +71,39 @@ items:
         type:
           - void
         description: ''
-  - uid: office-ui-fabric-react.CheckboxBase.getDerivedStateFromProps
+  - uid: 'office-ui-fabric-react!CheckboxBase.getDerivedStateFromProps:member(1)'
     name: 'getDerivedStateFromProps(props, state)'
     fullName: 'getDerivedStateFromProps(props, state)'
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'static getDerivedStateFromProps(props: ICheckboxProps, state: ICheckboxState): ICheckboxState;'
+      content: 'static getDerivedStateFromProps(props: ICheckboxProps, state: ICheckboxState): ICheckboxState | null;'
       return:
         type:
-          - office-ui-fabric-react.ICheckboxState
+          - ICheckboxState | null
         description: ''
       parameters:
         - id: props
           description: ''
           type:
-            - office-ui-fabric-react.ICheckboxProps
+            - 'office-ui-fabric-react!ICheckboxProps:interface'
         - id: state
           description: ''
           type:
-            - office-ui-fabric-react.ICheckboxState
-  - uid: office-ui-fabric-react.CheckboxBase.render
+            - 'office-ui-fabric-react!ICheckboxState:interface'
+  - uid: 'office-ui-fabric-react!CheckboxBase#indeterminate:member'
+    name: indeterminate
+    fullName: indeterminate
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly indeterminate: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'office-ui-fabric-react!CheckboxBase#render:member(1)'
     summary: Render the Checkbox based on passed props
     name: render()
     fullName: render()
