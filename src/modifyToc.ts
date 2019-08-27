@@ -20,7 +20,7 @@ function addNewLine(match: string, offset: number, originalString: string): stri
   return match + '\n    expanded: true';
 }
 
-const newTocFile: string = tocFile.replace('uid: office-ui-fabric-react', addNewLine);
+const newTocFile: string = tocFile.replace('uid: office-ui-fabric-react!', addNewLine);
 //   .replace(/items:\n/, '\n')
 //   .replace(/\n\s\s/g, '\n');
 
