@@ -21,7 +21,6 @@ function addNewLine(match: string, offset: number, originalString: string): stri
 }
 
 const newTocFile: string = tocFile.replace('uid: office-ui-fabric-react!', addNewLine);
-//   .replace(/items:\n/, '\n')
-//   .replace(/\n\s\s/g, '\n');
 
+console.log('Modifying TOC yaml: ', tocFilePath);
 writeFile(tocFilePath, newTocFile);
