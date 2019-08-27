@@ -106,13 +106,15 @@ function generateConfig(categoriesSource: any) {
       }
 
       // GetStarted page generation
+      // If @uifabric/fabric-website package changes the name or the location of this files this might break
       injectPage(GET_STARTED_FILES, {
         base: deepPaths.getStartedDocs,
         template: templatePaths.getStarted,
         output: outputPaths.getStarted,
       });
-
+      
       // Resources page generation
+      // If @uifabric/fabric-website package changes the name or the location of this files this might break
       injectPage(RESOURCES_FILES, {
         base: deepPaths.resourcesDocs,
         template: templatePaths.resources,
@@ -300,14 +302,20 @@ function injectPage(filesList: string[], paths: IInjectionPagePaths): void {
   sections['fabricPackageVersion'] = getFabricVersion();
 
   filesList.forEach(file => {
-    sections[file] = sanitizeContent(readFile(`${paths.base}/${file}.md`));
+    const fileSection = readFile(`${paths.base}/${file}.md`);
+
+    if (!fileSection) {
+      throw new Error('Some markdown files that compose GetStarted and Resources pages in @uifabric/fabric-website got moved.');
+    }
+
+    sections[file] = sanitizeContent(fileSection);
   });
 
   fillTemplate(paths.template, sections, paths.output);
 }
 
 /**
- * Helper function to remove duplication of code when writing a file through a mustache.js template.
+ * Helper function to write a file through a mustache.js template.
  */
 function fillTemplate(templatePath: string, templateData: any, outputPath: string, cb?: () => void): boolean {
   const exampleTemplate: string = readFile(templatePath);
@@ -317,13 +325,16 @@ function fillTemplate(templatePath: string, templateData: any, outputPath: strin
 }
 
 /**
- * Helper function to replace specific urls in string.
+ * Helper function to replace specific urls in a string.
  */
 function normalizeContentUrls(content: string): string {
   if (!content) return content;
   return content.replace(/(\(#\/)/gi, URL_NORMALIZE_PART);
 }
 
+/**
+ * Helper function to strip some html tags from markdown files.
+ */
 function sanitizeContent(content: string): string {
   return normalizeContentUrls(
     content
