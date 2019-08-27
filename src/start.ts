@@ -43,7 +43,7 @@ function generateConfig(categoriesSource: any) {
       },
       {
         name: 'Office UI Fabric React',
-        uid: 'office-ui-fabric-react',
+        uid: 'office-ui-fabric-react!',
         items: [],
       },
       {
@@ -76,15 +76,15 @@ function generateConfig(categoriesSource: any) {
       topCategoryNode.items.push(
         {
           name: 'merge-styles',
-          uid: 'merge-styles',
+          uid: '@uifabric/merge-styles!',
         },
         {
           name: 'styling',
-          uid: 'styling',
+          uid: '@uifabric/styling!',
         },
         {
           name: 'utilities',
-          uid: 'utilities',
+          uid: '@uifabric/utilities!',
         },
       );
     }
