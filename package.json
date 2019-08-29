@@ -11,6 +11,7 @@
     "generateConfig": "node lib/start.js office-ui-fabric-react/docs input local",
     "generate": "api-documenter generate --output-folder office-ui-fabric-react/api",
     "modify": "node lib/modifyToc.js office-ui-fabric-react/api local",
+    "install-deps": "npm i -D office-ui-fabric-react @uifabric/fabric-website",
     "setup-step": "npm run build && npm run generateConfig",
     "generation-step": "npm run generate && npm run modify",
     "local": "npm run setup-step && npm run generation-step"

@@ -73,7 +73,7 @@ function generateConfig(categoriesSource: any) {
     // will reference the package yaml file which is omitted with our custom implementation of TOC,
     // so we inject those here in references manually so that they already are included in the api-documenter.json config file.
     if (topCategory === 'References' && topCategoryNode && topCategoryNode.items) {
-      topCategoryNode.items.concat(getReferencePackages());
+      topCategoryNode.items.push(...getReferencePackages());
     }
 
     // All the controls under a category that we are looping over on each iteration
