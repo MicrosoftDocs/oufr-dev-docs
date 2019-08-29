@@ -6,8 +6,8 @@ import { JsonFile } from '@microsoft/node-core-library';
 import { categories } from './categories';
 import { getFabricVersion } from './getFabricVersion';
 import { IInjectionPagePaths } from './interfaces';
-import { deepPaths, outputPaths, templatePaths, tocPaths } from './pathConsts';
-import { readFile, writeFile } from './utilities';
+import { deepPaths, outputPaths, templatePaths, tocPaths, inputFilesPath } from './pathConsts';
+import { readFile, writeFile, readFolder } from './utilities';
 
 const URL_NORMALIZE_PART = '(https://developer.microsoft.com/en-us/fabric#/';
 
@@ -73,20 +73,7 @@ function generateConfig(categoriesSource: any) {
     // will reference the package yaml file which is omitted with our custom implementation of TOC,
     // so we inject those here in references manually so that they already are included in the api-documenter.json config file.
     if (topCategory === 'References' && topCategoryNode && topCategoryNode.items) {
-      topCategoryNode.items.push(
-        {
-          name: 'merge-styles',
-          uid: '@uifabric/merge-styles!',
-        },
-        {
-          name: 'styling',
-          uid: '@uifabric/styling!',
-        },
-        {
-          name: 'utilities',
-          uid: '@uifabric/utilities!',
-        },
-      );
+      topCategoryNode.items.concat(getReferencePackages());
     }
 
     // All the controls under a category that we are looping over on each iteration
@@ -343,6 +330,28 @@ function sanitizeContent(content: string): string {
       .replace(/<\/li>/g, '')
       .replace(/<\/ul>\s/g, ''),
   );
+}
+
+/**
+ * Helper function that generates an array of TOC items to be inserted into the References node.
+ */
+function getReferencePackages(): IYamlTocItem[] {
+  const packageReferenceList: IYamlTocItem[] = [];
+  const filesList: string[] = readFolder(inputFilesPath);
+
+  filesList.forEach(file => {
+    const jsonFile: any = JsonFile.load(file);
+
+    // We don't need OUFR package api.json file because it's the main node that is not in References.
+    if (jsonFile.name.indexOf('office-ui-fabric-react') === -1) {
+      packageReferenceList.push({
+        name: jsonFile.name,
+        uid: jsonFile.canonicalReference
+      })
+    }
+  })
+
+  return packageReferenceList;
 }
 
 // Start generation.

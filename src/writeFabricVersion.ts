@@ -17,4 +17,7 @@ const resolvedOutputPath: string = path.resolve(outputPath);
 
 const fabricPackageVersion = getFabricVersion();
 
+
+// This is used only in the pipeline to capture the OUFR package version
+// so it can be added into a file to that keeps a history of all updates.
 FileSystem.writeFile(resolvedOutputPath, fabricPackageVersion, { ensureFolderExists: true });

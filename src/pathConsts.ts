@@ -2,7 +2,7 @@ import * as path from 'path';
 
 import { IDeepPaths, IPaths } from './interfaces';
 
-const [nodePath, scriptPath, docsOutputPath, env]: Array<string | undefined> = process.argv;
+const [nodePath, scriptPath, docsOutputPath, documenterInputFilesPath, env]: Array<string | undefined> = process.argv;
 
 if (!docsOutputPath) {
   throw new Error('Must specify a docs output path as the first argument to this script');
@@ -62,3 +62,7 @@ export const outputPaths: IPaths = {
   getStarted: path.resolve(docsOutputPath, 'getstarted', 'getStartedPage.md'),
   resources: path.resolve(docsOutputPath, 'resources', 'resourcesPage.md'),
 };
+
+export const inputFilesPath: string = path.resolve(__dirname, '..', documenterInputFilesPath);
+// replace with this one when having the api.json files loaded from the azure blob
+// export const inputFilesPath: string = env === 'local' ? path.resolve(__dirname, '..', documenterInputFilesPath) : documenterInputFilesPath;

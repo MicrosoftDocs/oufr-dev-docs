@@ -8,10 +8,12 @@
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "lint": "tslint -p tsconfig.json",
-    "generateConfig": "node lib/start.js office-ui-fabric-react/docs local",
+    "generateConfig": "node lib/start.js office-ui-fabric-react/docs input local",
     "generate": "api-documenter generate --output-folder office-ui-fabric-react/api",
     "modify": "node lib/modifyToc.js office-ui-fabric-react/api local",
-    "local": "npm run build && npm run generateConfig && npm run generate && npm run modify"
+    "setup-step": "npm run build && npm run generateConfig",
+    "generation-step": "npm run generate && npm run modify",
+    "local": "npm run setup-step && npm run generation-step"
   },
   "repository": {
     "type": "git",
