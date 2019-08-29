@@ -57,10 +57,10 @@ fetch('https://fabricweb.blob.core.windows.net/fabric?restype=container&comp=lis
   .then(jsonObjects => {
     jsonObjects.forEach(jsonObject => {
       for (let i = 0, l = fileNamesList.length; i < l; i++) {
-        const fileName = fileNamesList[i];
+        const file = fileNamesList[i];
 
-        if (jsonObject['name'].indexOf(fileName.name) !== -1) {
-          JsonFile.save(jsonObject, path.resolve(outputDirectory, fileName.nameWithExtension), {
+        if (jsonObject['name'].indexOf(file.name) !== -1 && file.name !== 'date-time') {
+          JsonFile.save(jsonObject, path.resolve(outputDirectory, file.nameWithExtension), {
             ensureFolderExists: true,
             updateExistingFile: true
           });
