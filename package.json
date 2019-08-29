@@ -4,15 +4,16 @@
   "description": "This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "lint": "tslint -p tsconfig.json",
-    "generateConfig": "node lib/start.js office-ui-fabric-react/docs input local",
+    "install-deps": "npm i -D office-ui-fabric-react @uifabric/fabric-website",
+    "build": "tsc",
+    "download-api-files": "node lib/downloadApiFiles.js input local",
+    "generate-config": "node lib/start.js office-ui-fabric-react/docs input local",
     "generate": "api-documenter generate --output-folder office-ui-fabric-react/api",
     "modify": "node lib/modifyToc.js office-ui-fabric-react/api local",
-    "install-deps": "npm i -D office-ui-fabric-react @uifabric/fabric-website",
-    "setup-step": "npm run build && npm run generateConfig",
+    
+    "setup-step": "npm run build && npm run generate-config",
     "generation-step": "npm run generate && npm run modify",
     "local": "npm run setup-step && npm run generation-step"
   },

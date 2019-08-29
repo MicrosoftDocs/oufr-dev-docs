@@ -6,8 +6,8 @@ import { JsonFile } from '@microsoft/node-core-library';
 import { categories } from './categories';
 import { getFabricVersion } from './getFabricVersion';
 import { IInjectionPagePaths } from './interfaces';
-import { deepPaths, outputPaths, templatePaths, tocPaths, inputFilesPath } from './pathConsts';
-import { readFile, writeFile, readFolder } from './utilities';
+import { deepPaths, inputFilesPath, outputPaths, templatePaths, tocPaths } from './pathConsts';
+import { readFile, readFolder, writeFile } from './utilities';
 
 const URL_NORMALIZE_PART = '(https://developer.microsoft.com/en-us/fabric#/';
 
