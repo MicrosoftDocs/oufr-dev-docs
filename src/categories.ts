@@ -12,7 +12,7 @@ export const categories = {
     Slider: {},
     SpinButton: {},
     TextField: {},
-    Toggle: {},
+    Toggle: {}
   },
   'Galleries & Pickers': {
     Pickers: {},
@@ -20,7 +20,7 @@ export const categories = {
     ColorPicker: {},
     DatePicker: {},
     PeoplePicker: {},
-    SwatchColorPicker: {},
+    SwatchColorPicker: {}
   },
   'Items & Lists': {
     List: { title: 'Basic List' },
@@ -50,15 +50,15 @@ export const categories = {
         Advanced: { title: 'Variable Row Heights', url: 'variablerowheights' },
         DragDrop: { title: 'Drag & Drop', url: 'draganddrop' },
         NavigatingFocus: { title: 'Inner Navigation', url: 'innernavigation' },
-        Shimmer: {},
-      },
+        Shimmer: {}
+      }
     },
     GroupedList: {},
     ActivityItem: {},
     DocumentCard: {},
     Facepile: {},
     HoverCard: {},
-    Persona: {},
+    Persona: {}
   },
   'Commands, Menus & Navs': {
     Breadcrumb: {},
@@ -66,17 +66,17 @@ export const categories = {
     ContextualMenu: {},
     Nav: {},
     OverflowSet: {},
-    Pivot: {},
+    Pivot: {}
   },
   'Notification & Engagement': {
     Coachmark: {},
     MessageBar: {},
-    TeachingBubble: {},
+    TeachingBubble: {}
   },
   Progress: {
     ProgressIndicator: {},
     Shimmer: {},
-    Spinner: {},
+    Spinner: {}
   },
   Surfaces: {
     Callout: {},
@@ -84,7 +84,7 @@ export const categories = {
     Modal: {},
     Panel: {},
     ScrollablePane: {},
-    Tooltip: {},
+    Tooltip: {}
   },
   Utilities: {
     Announced: {
@@ -92,8 +92,8 @@ export const categories = {
         QuickActions: { title: 'Quick Actions' },
         SearchResults: { title: 'Search Results' },
         LazyLoading: { title: 'Lazy Loading' },
-        BulkOperations: { title: 'Bulk Operations' },
-      },
+        BulkOperations: { title: 'Bulk Operations' }
+      }
     },
     FocusTrapZone: {},
     FocusZone: {},
@@ -108,12 +108,12 @@ export const categories = {
     Separator: {},
     Stack: {},
     Text: {},
-    Themes: {},
+    Themes: {}
   },
   'Fluent Theme': {
-    FluentTheme: { title: 'Fluent Theme', url: 'fluent-theme' },
+    FluentTheme: { title: 'Fluent Theme', url: 'fluent-theme' }
   },
-  References: {},
+  References: {}
   // The "Other" category can be useful for local development, but it currently can also cause
   // non-web controls (such as Chip) to show up on the web controls page.
   // Other: {}

@@ -1,6 +1,7 @@
+import { JsonFile } from '@microsoft/node-core-library';
+import fetch, { Response } from 'node-fetch';
 import * as path from 'path';
-
-import { readFile, writeFile } from './utilities';
+import { parseString } from 'xml2js';
 
 const [nodePath, scriptPath, filesOutputPath, env]: Array<string | undefined> = process.argv;
 
@@ -13,21 +14,69 @@ if (!path.isAbsolute(filesOutputPath) && env !== 'local') {
 }
 
 const outputDirectory = path.resolve(filesOutputPath);
-console.log('outputDirectory: ', outputDirectory);
 
+const fileUrlsList: string[] = [];
+const fileNamesList: Array<{ nameWithExtension: string; name: string }> = [];
 
+fetch('https://fabricweb.blob.core.windows.net/fabric?restype=container&comp=list&prefix=api-json')
+  .then(checkStatus)
+  .then(res => res.text())
+  .then(body => {
+    const fetchPromises: Array<Promise<Response>> = [];
 
+    parseString(body, (err, result) => {
+      try {
+        result.EnumerationResults.Blobs[0].Blob.forEach((file: any) => {
+          fileUrlsList.push(file['Url'][0]);
 
+          const nameWithExtension: string = file['Name'][0].replace('api-json/', '');
+          const name: string = nameWithExtension.replace('.api.json', '');
 
+          fileNamesList.push({ nameWithExtension, name });
+        });
 
+        for (let i = 0, l = fileUrlsList.length; i < l; i++) {
+          fetchPromises.push(fetch(fileUrlsList[i]));
+        }
+      } catch (error) {
+        console.log('Azure blob api call failed: ', error);
+      }
+    });
 
+    return Promise.all(fetchPromises);
+  })
+  .then(responses => {
+    const responseToJsonPromises: Array<Promise<any>> = [];
 
+    responses.forEach(response => {
+      responseToJsonPromises.push(response.json());
+    });
 
-// function addNewLine(match: string, offset: number, originalString: string): string {
-//   return match + '\n    expanded: true';
-// }
+    return Promise.all(responseToJsonPromises);
+  })
+  .then(jsonObjects => {
+    jsonObjects.forEach(jsonObject => {
+      for (let i = 0, l = fileNamesList.length; i < l; i++) {
+        const fileName = fileNamesList[i];
 
-// const newTocFile: string = tocFile.replace('uid: office-ui-fabric-react!', addNewLine);
+        if (jsonObject['name'].indexOf(fileName.name) !== -1) {
+          JsonFile.save(jsonObject, path.resolve(outputDirectory, fileName.nameWithExtension), {
+            ensureFolderExists: true,
+            updateExistingFile: true
+          });
+        }
+      }
+    });
+  })
+  .catch(error => {
+    console.log(error);
+  });
 
-// console.log('Modifying TOC yaml: ', tocFilePath);
-// writeFile(tocFilePath, newTocFile);
+function checkStatus(res: Response) {
+  if (res.ok) {
+    // res.status >= 200 && res.status < 300
+    return res;
+  } else {
+    throw new Error(res.statusText);
+  }
+}

@@ -3,7 +3,7 @@ import { PackageJsonLookup } from '@microsoft/node-core-library';
 export function getFabricVersion(): string {
   const packageJsonLookup: PackageJsonLookup = new PackageJsonLookup();
   const fabricPackageJsonFilePath: string | undefined = packageJsonLookup.tryGetPackageJsonFilePathFor(
-    require.resolve('office-ui-fabric-react'),
+    require.resolve('office-ui-fabric-react')
   );
 
   if (!fabricPackageJsonFilePath) {

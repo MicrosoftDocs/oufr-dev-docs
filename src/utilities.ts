@@ -7,7 +7,7 @@ import * as path from 'path';
 export function writeFile(filePath: string, fileData: string, cb?: () => void): boolean {
   try {
     FileSystem.writeFile(filePath, fileData, {
-      ensureFolderExists: true,
+      ensureFolderExists: true
     });
 
     if (cb) {
@@ -38,7 +38,7 @@ export function readFile(filePath: string): string {
  */
 export function readFolder(folderPath: string): string[] {
   try {
-    return FileSystem.readFolder(folderPath).map(file => path.resolve(folderPath, file))
+    return FileSystem.readFolder(folderPath).map(file => path.resolve(folderPath, file));
   } catch (error) {
     console.log(`Can not find folder at path: ${folderPath}`);
   }

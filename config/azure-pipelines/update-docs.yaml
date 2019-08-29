@@ -56,7 +56,7 @@ steps:
     node
     lib/start.js
     $(Build.ArtifactStagingDirectory)/example-and-overview-files
-    input # this needs to be modified when loading from azure becomes available
+    $(System.DefaultWorkingDirectory)/input
   displayName: Generate examples/overview files and API Documenter Config
 
 - script: >
@@ -64,7 +64,7 @@ steps:
     node_modules/.bin/api-documenter
     generate
     --output-folder $(Build.ArtifactStagingDirectory)/doc-files/api
-    # --input-folder $(System.ArtifactsDirectory)/documenter-input - when we have api-json files loaded from azure comment this in.
+    --input-folder $(System.DefaultWorkingDirectory)/input
   displayName: Run API Documenter
 
 # This script is a temporary workaround until we have a fix upstream in the api-documenter
