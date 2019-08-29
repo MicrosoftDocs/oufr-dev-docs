@@ -1,0 +1,222 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@uifabric/date-time!IWeeklyDayPickerProps:interface'
+    name: IWeeklyDayPickerProps
+    fullName: IWeeklyDayPickerProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'IBaseProps<IWeeklyDayPicker> '
+    package: '@uifabric/date-time!'
+    children:
+      - '@uifabric/date-time!IWeeklyDayPickerProps#animationDirection:member'
+      - '@uifabric/date-time!IWeeklyDayPickerProps#className:member'
+      - '@uifabric/date-time!IWeeklyDayPickerProps#componentRef:member'
+      - '@uifabric/date-time!IWeeklyDayPickerProps#dateTimeFormatter:member'
+      - '@uifabric/date-time!IWeeklyDayPickerProps#firstDayOfWeek:member'
+      - '@uifabric/date-time!IWeeklyDayPickerProps#initialDate:member'
+      - '@uifabric/date-time!IWeeklyDayPickerProps#maxDate:member'
+      - '@uifabric/date-time!IWeeklyDayPickerProps#minDate:member'
+      - '@uifabric/date-time!IWeeklyDayPickerProps#navigationIcons:member'
+      - '@uifabric/date-time!IWeeklyDayPickerProps#onNavigateDate:member'
+      - '@uifabric/date-time!IWeeklyDayPickerProps#onSelectDate:member'
+      - '@uifabric/date-time!IWeeklyDayPickerProps#restrictedDates:member'
+      - '@uifabric/date-time!IWeeklyDayPickerProps#strings:member'
+      - '@uifabric/date-time!IWeeklyDayPickerProps#styles:member'
+      - '@uifabric/date-time!IWeeklyDayPickerProps#theme:member'
+      - '@uifabric/date-time!IWeeklyDayPickerProps#today:member'
+  - uid: '@uifabric/date-time!IWeeklyDayPickerProps#animationDirection:member'
+    summary: 'The cardinal directions for animation to occur during transitions, either horizontal or veritcal'
+    name: animationDirection
+    fullName: animationDirection
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'animationDirection?: AnimationDirection;'
+      return:
+        type:
+          - '@uifabric/date-time!AnimationDirection:enum'
+  - uid: '@uifabric/date-time!IWeeklyDayPickerProps#className:member'
+    summary: Additional CSS class(es) to apply to the CalendarDay.
+    name: className
+    fullName: className
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'className?: string;'
+      return:
+        type:
+          - string
+  - uid: '@uifabric/date-time!IWeeklyDayPickerProps#componentRef:member'
+    summary: >-
+      Optional callback to access the IWeeklyDayPicker interface. Use this instead of ref for accessing the public
+      methods and properties of the component.
+    name: componentRef
+    fullName: componentRef
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'componentRef?: IRefObject<IWeeklyDayPicker>;'
+      return:
+        type:
+          - IRefObject<IWeeklyDayPicker>
+  - uid: '@uifabric/date-time!IWeeklyDayPickerProps#dateTimeFormatter:member'
+    summary: 'Apply additional formating to dates, for example localized date formatting.'
+    name: dateTimeFormatter
+    fullName: dateTimeFormatter
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'dateTimeFormatter?: ICalendarFormatDateCallbacks;'
+      return:
+        type:
+          - ICalendarFormatDateCallbacks
+  - uid: '@uifabric/date-time!IWeeklyDayPickerProps#firstDayOfWeek:member'
+    summary: The first day of the week for your locale.
+    name: firstDayOfWeek
+    fullName: firstDayOfWeek
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'firstDayOfWeek?: DayOfWeek;'
+      return:
+        type:
+          - 'office-ui-fabric-react!DayOfWeek:enum'
+  - uid: '@uifabric/date-time!IWeeklyDayPickerProps#initialDate:member'
+    summary: 'The initially selected date. If not provided, defaults to today''s date'
+    name: initialDate
+    fullName: initialDate
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'initialDate?: Date;'
+      return:
+        type:
+          - Date
+  - uid: '@uifabric/date-time!IWeeklyDayPickerProps#maxDate:member'
+    summary: If set the Calendar will not allow navigation to or selection of a date later than this value.
+    name: maxDate
+    fullName: maxDate
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'maxDate?: Date;'
+      return:
+        type:
+          - Date
+  - uid: '@uifabric/date-time!IWeeklyDayPickerProps#minDate:member'
+    summary: If set the Calendar will not allow navigation to or selection of a date earlier than this value.
+    name: minDate
+    fullName: minDate
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'minDate?: Date;'
+      return:
+        type:
+          - Date
+  - uid: '@uifabric/date-time!IWeeklyDayPickerProps#navigationIcons:member'
+    summary: Customize navigation icons. Only uses previous and next icons
+    name: navigationIcons
+    fullName: navigationIcons
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'navigationIcons?: ICalendarIconStrings;'
+      return:
+        type:
+          - ICalendarIconStrings
+  - uid: '@uifabric/date-time!IWeeklyDayPickerProps#onNavigateDate:member'
+    summary: Callback issued when a date in the calendar is navigated
+    name: onNavigateDate
+    fullName: onNavigateDate
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onNavigateDate?: (date: Date) => void;'
+      return:
+        type:
+          - '(date: Date) => void'
+  - uid: '@uifabric/date-time!IWeeklyDayPickerProps#onSelectDate:member'
+    summary: Callback issued when a date is selected
+    name: onSelectDate
+    fullName: onSelectDate
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onSelectDate?: (date: Date) => void;'
+      return:
+        type:
+          - '(date: Date) => void'
+  - uid: '@uifabric/date-time!IWeeklyDayPickerProps#restrictedDates:member'
+    summary: If set the Calendar will not allow selection of dates in this array.
+    name: restrictedDates
+    fullName: restrictedDates
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'restrictedDates?: Date[];'
+      return:
+        type:
+          - 'Date[]'
+  - uid: '@uifabric/date-time!IWeeklyDayPickerProps#strings:member'
+    summary: Localized strings to use in the Calendar
+    name: strings
+    fullName: strings
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'strings: IWeeklyDayPickerStrings;'
+      return:
+        type:
+          - '@uifabric/date-time!IWeeklyDayPickerStrings:interface'
+  - uid: '@uifabric/date-time!IWeeklyDayPickerProps#styles:member'
+    summary: Customized styles for the calendar day component
+    name: styles
+    fullName: styles
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'styles?: IStyleFunctionOrObject<IWeeklyDayPickerStyleProps, IWeeklyDayPickerStyles>;'
+      return:
+        type:
+          - 'IStyleFunctionOrObject<IWeeklyDayPickerStyleProps, IWeeklyDayPickerStyles>'
+  - uid: '@uifabric/date-time!IWeeklyDayPickerProps#theme:member'
+    summary: Theme (provided through customization).
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type:
+          - '@uifabric/styling!ITheme:interface'
+  - uid: '@uifabric/date-time!IWeeklyDayPickerProps#today:member'
+    summary: 'Value of today. If null, current time in client machine will be used.'
+    name: today
+    fullName: today
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'today?: Date;'
+      return:
+        type:
+          - Date

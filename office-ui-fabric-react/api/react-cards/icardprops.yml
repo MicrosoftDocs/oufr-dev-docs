@@ -1,0 +1,41 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@uifabric/react-cards!ICardProps:interface'
+    name: ICardProps
+    fullName: ICardProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - '@uifabric/react-cards!ICardSlots:interface'
+      - 'IStyleableComponentProps<ICardProps, ICardTokens, ICardStyles>'
+      - IBaseProps<ICard>
+      - 'React.AllHTMLAttributes<HTMLElement> '
+    package: '@uifabric/react-cards!'
+    children:
+      - '@uifabric/react-cards!ICardProps#compact:member'
+      - '@uifabric/react-cards!ICardProps#onClick:member'
+  - uid: '@uifabric/react-cards!ICardProps#compact:member'
+    summary: Defines whether to render a regular or a compact Card.
+    name: compact
+    fullName: compact
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'compact?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: '@uifabric/react-cards!ICardProps#onClick:member'
+    summary: Defines a callback that is called when the Card is clicked.
+    name: onClick
+    fullName: onClick
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onClick?: (ev: React.MouseEvent<HTMLElement>) => void;'
+      return:
+        type:
+          - '(ev: React.MouseEvent<HTMLElement>) => void'

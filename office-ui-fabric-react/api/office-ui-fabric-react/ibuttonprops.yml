@@ -7,7 +7,9 @@ items:
       - typeScript
     type: interface
     extends:
-      - 'React.AllHTMLAttributes<HTMLAnchorElement | HTMLButtonElement | HTMLDivElement | BaseButton | Button> '
+      - >-
+        React.AllHTMLAttributes<HTMLAnchorElement | HTMLButtonElement | HTMLDivElement | BaseButton | Button |
+        HTMLSpanElement> 
     package: office-ui-fabric-react!
     children:
       - 'office-ui-fabric-react!IButtonProps#allowDisabledFocus:member'
