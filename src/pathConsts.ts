@@ -63,6 +63,6 @@ export const outputPaths: IPaths = {
   resources: path.resolve(docsOutputPath, 'resources', 'resourcesPage.md'),
 };
 
-export const inputFilesPath: string = path.resolve(__dirname, '..', documenterInputFilesPath);
+// export const inputFilesPath: string = path.resolve(__dirname, '..', documenterInputFilesPath);
 // replace with this one when having the api.json files loaded from the azure blob
-// export const inputFilesPath: string = env === 'local' ? path.resolve(__dirname, '..', documenterInputFilesPath) : documenterInputFilesPath;
+export const inputFilesPath: string = env === 'local' ? path.resolve(__dirname, '..', documenterInputFilesPath) : documenterInputFilesPath;

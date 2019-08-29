@@ -19,6 +19,12 @@ steps:
     versionSpec: '10.x'
     checkLatest: true
 
+- task: DownloadFileshareArtifacts@1
+  inputs:
+    filesharePath: 'https://fabricweb.blob.core.windows.net/fabric/api-json'
+    artifactName: 'api-json'
+    downloadPath: '$(System.ArtifactsDirectory)'
+
 - task: Npm@1
   displayName: 'npm install'
   inputs:
@@ -55,7 +61,7 @@ steps:
     node
     lib/start.js
     $(Build.ArtifactStagingDirectory)/example-and-overview-files
-    input # this needs to be modified when loading from azure becomes available
+    $(System.ArtifactsDirectory)/api-json
   displayName: Generate examples/overview files and API Documenter Config
 
 - script: >
@@ -63,7 +69,7 @@ steps:
     node_modules/.bin/api-documenter
     generate
     --output-folder $(Build.ArtifactStagingDirectory)/doc-files/api
-    # --input-folder $(System.ArtifactsDirectory)/documenter-input - when we have api-json files loaded from azure comment this in.
+    --input-folder $(System.ArtifactsDirectory)/api-json
   displayName: Run API Documenter
 
 # This script is a temporary workaround until we have a fix upstream in the api-documenter
