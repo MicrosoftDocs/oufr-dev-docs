@@ -32,20 +32,22 @@ steps:
     customCommand: run build
 
 - task: Npm@1
-  displayName: 'npm install OUFR and @uifabric/fabric-website latest'
+  displayName: 'npm install OUFR and @uifabric/fabric-website latest version'
   inputs:
     command: custom
     verbose: false
     customCommand: install --save-dev office-ui-fabric-react @uifabric/fabric-website
 
+# Extract office-ui-fabric-react package version and write it in a file
+# so it can be used in the release pipeline to keep record of each update.
 - script: >
     node
     lib/writeFabricVersion.js
     $(Build.ArtifactStagingDirectory)/FABRIC_VERSION
   displayName: Get OUFR Version
 
-  # Download all the api.json files that are uploaded to an azure blob storage
-  # every morning after a scheduled release pipeline.
+# Download all the api.json files that are uploaded to an azure blob storage
+# every morning after a scheduled release pipeline.
 - script: >
     node
     lib/downloadApiFiles.js
