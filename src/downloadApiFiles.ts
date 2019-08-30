@@ -59,6 +59,8 @@ fetch('https://fabricweb.blob.core.windows.net/fabric?restype=container&comp=lis
       for (let i = 0, l = fileNamesList.length; i < l; i++) {
         const file = fileNamesList[i];
 
+        // for now disabling date-time because it messes up some TOC items for OUFR package
+        // because they both export interfaces with the same name.
         if (jsonObject['name'].indexOf(file.name) !== -1 && file.name !== 'date-time') {
           JsonFile.save(jsonObject, path.resolve(outputDirectory, file.nameWithExtension), {
             ensureFolderExists: true,
