@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office-ui-fabric-react.ISuggestionItemProps
+  - uid: 'office-ui-fabric-react!ISuggestionItemProps:interface'
     summary: >-
       Suggestion item props. Refers to the each individual suggested items rendered within Suggestions callout. Type T
       is the type of the item that is displayed.
@@ -9,21 +9,24 @@ items:
     langs:
       - typeScript
     type: interface
-    package: office-ui-fabric-react
+    syntax:
+      typeParameters:
+        - id: T
+    package: office-ui-fabric-react!
     children:
-      - office-ui-fabric-react.ISuggestionItemProps.className
-      - office-ui-fabric-react.ISuggestionItemProps.componentRef
-      - office-ui-fabric-react.ISuggestionItemProps.id
-      - office-ui-fabric-react.ISuggestionItemProps.isSelectedOverride
-      - office-ui-fabric-react.ISuggestionItemProps.onClick
-      - office-ui-fabric-react.ISuggestionItemProps.onRemoveItem
-      - office-ui-fabric-react.ISuggestionItemProps.removeButtonAriaLabel
-      - office-ui-fabric-react.ISuggestionItemProps.RenderSuggestion
-      - office-ui-fabric-react.ISuggestionItemProps.showRemoveButton
-      - office-ui-fabric-react.ISuggestionItemProps.styles
-      - office-ui-fabric-react.ISuggestionItemProps.suggestionModel
-      - office-ui-fabric-react.ISuggestionItemProps.theme
-  - uid: office-ui-fabric-react.ISuggestionItemProps.className
+      - 'office-ui-fabric-react!ISuggestionItemProps#className:member'
+      - 'office-ui-fabric-react!ISuggestionItemProps#componentRef:member'
+      - 'office-ui-fabric-react!ISuggestionItemProps#id:member'
+      - 'office-ui-fabric-react!ISuggestionItemProps#isSelectedOverride:member'
+      - 'office-ui-fabric-react!ISuggestionItemProps#onClick:member'
+      - 'office-ui-fabric-react!ISuggestionItemProps#onRemoveItem:member'
+      - 'office-ui-fabric-react!ISuggestionItemProps#removeButtonAriaLabel:member'
+      - 'office-ui-fabric-react!ISuggestionItemProps#RenderSuggestion:member'
+      - 'office-ui-fabric-react!ISuggestionItemProps#showRemoveButton:member'
+      - 'office-ui-fabric-react!ISuggestionItemProps#styles:member'
+      - 'office-ui-fabric-react!ISuggestionItemProps#suggestionModel:member'
+      - 'office-ui-fabric-react!ISuggestionItemProps#theme:member'
+  - uid: 'office-ui-fabric-react!ISuggestionItemProps#className:member'
     summary: Optional className for the root element of the suggestion item.
     name: className
     fullName: className
@@ -35,7 +38,7 @@ items:
       return:
         type:
           - string
-  - uid: office-ui-fabric-react.ISuggestionItemProps.componentRef
+  - uid: 'office-ui-fabric-react!ISuggestionItemProps#componentRef:member'
     summary: >-
       Optional callback to access the ISuggestionItem interface. Use this instead of ref for accessing the public
       methods and properties of the component.
@@ -49,7 +52,7 @@ items:
       return:
         type:
           - IRefObject<ISuggestionsItem>
-  - uid: office-ui-fabric-react.ISuggestionItemProps.id
+  - uid: 'office-ui-fabric-react!ISuggestionItemProps#id:member'
     summary: Unique id of the suggested item.
     name: id
     fullName: id
@@ -61,7 +64,7 @@ items:
       return:
         type:
           - string
-  - uid: office-ui-fabric-react.ISuggestionItemProps.isSelectedOverride
+  - uid: 'office-ui-fabric-react!ISuggestionItemProps#isSelectedOverride:member'
     summary: An override for the 'selected' property of the SuggestionModel.
     name: isSelectedOverride
     fullName: isSelectedOverride
@@ -73,7 +76,7 @@ items:
       return:
         type:
           - boolean
-  - uid: office-ui-fabric-react.ISuggestionItemProps.onClick
+  - uid: 'office-ui-fabric-react!ISuggestionItemProps#onClick:member'
     summary: Callback for when the user clicks on the suggestion.
     name: onClick
     fullName: onClick
@@ -85,7 +88,7 @@ items:
       return:
         type:
           - '(ev: React.MouseEvent<HTMLButtonElement>) => void'
-  - uid: office-ui-fabric-react.ISuggestionItemProps.onRemoveItem
+  - uid: 'office-ui-fabric-react!ISuggestionItemProps#onRemoveItem:member'
     summary: Callback for when the item is removed from the array of suggested items.
     name: onRemoveItem
     fullName: onRemoveItem
@@ -97,7 +100,7 @@ items:
       return:
         type:
           - '(ev: React.MouseEvent<HTMLButtonElement>) => void'
-  - uid: office-ui-fabric-react.ISuggestionItemProps.removeButtonAriaLabel
+  - uid: 'office-ui-fabric-react!ISuggestionItemProps#removeButtonAriaLabel:member'
     summary: The ARIA label for the button to remove the suggestion from the list.
     name: removeButtonAriaLabel
     fullName: removeButtonAriaLabel
@@ -109,7 +112,7 @@ items:
       return:
         type:
           - string
-  - uid: office-ui-fabric-react.ISuggestionItemProps.RenderSuggestion
+  - uid: 'office-ui-fabric-react!ISuggestionItemProps#RenderSuggestion:member'
     summary: Optional renderer to override the default one for each type of picker.
     name: RenderSuggestion
     fullName: RenderSuggestion
@@ -121,7 +124,7 @@ items:
       return:
         type:
           - '(item: T, suggestionItemProps: ISuggestionItemProps<T>) => JSX.Element'
-  - uid: office-ui-fabric-react.ISuggestionItemProps.showRemoveButton
+  - uid: 'office-ui-fabric-react!ISuggestionItemProps#showRemoveButton:member'
     summary: Whether the remove button should be rendered or not.
     name: showRemoveButton
     fullName: showRemoveButton
@@ -133,7 +136,7 @@ items:
       return:
         type:
           - boolean
-  - uid: office-ui-fabric-react.ISuggestionItemProps.styles
+  - uid: 'office-ui-fabric-react!ISuggestionItemProps#styles:member'
     summary: Call to provide customized styling that will layer on top of the variant rules.
     name: styles
     fullName: styles
@@ -145,7 +148,7 @@ items:
       return:
         type:
           - 'IStyleFunctionOrObject<ISuggestionsItemStyleProps, ISuggestionsItemStyles>'
-  - uid: office-ui-fabric-react.ISuggestionItemProps.suggestionModel
+  - uid: 'office-ui-fabric-react!ISuggestionItemProps#suggestionModel:member'
     summary: Individual suggestion object containing its properties.
     name: suggestionModel
     fullName: suggestionModel
@@ -157,7 +160,7 @@ items:
       return:
         type:
           - ISuggestionModel<T>
-  - uid: office-ui-fabric-react.ISuggestionItemProps.theme
+  - uid: 'office-ui-fabric-react!ISuggestionItemProps#theme:member'
     summary: Theme provided by High-Order Component.
     name: theme
     fullName: theme
@@ -168,4 +171,4 @@ items:
       content: 'theme?: ITheme;'
       return:
         type:
-          - styling.ITheme
+          - '@uifabric/styling!ITheme:interface'

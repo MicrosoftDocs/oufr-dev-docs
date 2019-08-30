@@ -1,17 +1,20 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: utilities.IAsAsyncOptions
+  - uid: '@uifabric/utilities!IAsAsyncOptions:interface'
     name: IAsAsyncOptions
     fullName: IAsAsyncOptions
     langs:
       - typeScript
     type: interface
-    package: utilities
+    syntax:
+      typeParameters:
+        - id: TProps
+    package: '@uifabric/utilities!'
     children:
-      - utilities.IAsAsyncOptions.load
-      - utilities.IAsAsyncOptions.onError
-      - utilities.IAsAsyncOptions.onLoad
-  - uid: utilities.IAsAsyncOptions.load
+      - '@uifabric/utilities!IAsAsyncOptions#load:member'
+      - '@uifabric/utilities!IAsAsyncOptions#onError:member'
+      - '@uifabric/utilities!IAsAsyncOptions#onLoad:member'
+  - uid: '@uifabric/utilities!IAsAsyncOptions#load:member'
     summary: Callback which returns a promise resolving an object which exports the component.
     name: load
     fullName: load
@@ -23,7 +26,7 @@ items:
       return:
         type:
           - () => Promise<React.ReactType<TProps>>
-  - uid: utilities.IAsAsyncOptions.onError
+  - uid: '@uifabric/utilities!IAsAsyncOptions#onError:member'
     summary: Callback when async loading fails.
     name: onError
     fullName: onError
@@ -35,7 +38,7 @@ items:
       return:
         type:
           - '(error: Error) => void'
-  - uid: utilities.IAsAsyncOptions.onLoad
+  - uid: '@uifabric/utilities!IAsAsyncOptions#onLoad:member'
     summary: Callback executed when async loading is complete.
     name: onLoad
     fullName: onLoad

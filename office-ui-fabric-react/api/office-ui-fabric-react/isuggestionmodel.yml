@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office-ui-fabric-react.ISuggestionModel
+  - uid: 'office-ui-fabric-react!ISuggestionModel:interface'
     summary: >-
       SuggestionModel interface. Type T is the type of the item that is suggested (Persona, Tag or any other custom
       picker).
@@ -9,12 +9,15 @@ items:
     langs:
       - typeScript
     type: interface
-    package: office-ui-fabric-react
+    syntax:
+      typeParameters:
+        - id: T
+    package: office-ui-fabric-react!
     children:
-      - office-ui-fabric-react.ISuggestionModel.ariaLabel
-      - office-ui-fabric-react.ISuggestionModel.item
-      - office-ui-fabric-react.ISuggestionModel.selected
-  - uid: office-ui-fabric-react.ISuggestionModel.ariaLabel
+      - 'office-ui-fabric-react!ISuggestionModel#ariaLabel:member'
+      - 'office-ui-fabric-react!ISuggestionModel#item:member'
+      - 'office-ui-fabric-react!ISuggestionModel#selected:member'
+  - uid: 'office-ui-fabric-react!ISuggestionModel#ariaLabel:member'
     summary: Aria-label string for each suggested item.
     name: ariaLabel
     fullName: ariaLabel
@@ -26,7 +29,7 @@ items:
       return:
         type:
           - string
-  - uid: office-ui-fabric-react.ISuggestionModel.item
+  - uid: 'office-ui-fabric-react!ISuggestionModel#item:member'
     summary: The suggested item of the type T
     name: item
     fullName: item
@@ -38,7 +41,7 @@ items:
       return:
         type:
           - T
-  - uid: office-ui-fabric-react.ISuggestionModel.selected
+  - uid: 'office-ui-fabric-react!ISuggestionModel#selected:member'
     summary: Whether the suggested item is selected or not.
     name: selected
     fullName: selected

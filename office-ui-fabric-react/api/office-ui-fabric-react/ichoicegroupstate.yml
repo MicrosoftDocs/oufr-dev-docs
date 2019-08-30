@@ -1,28 +1,31 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office-ui-fabric-react.IChoiceGroupState
+  - uid: 'office-ui-fabric-react!IChoiceGroupState:interface'
     name: IChoiceGroupState
     fullName: IChoiceGroupState
     langs:
       - typeScript
     type: interface
-    package: office-ui-fabric-react
+    package: office-ui-fabric-react!
     children:
-      - office-ui-fabric-react.IChoiceGroupState.keyChecked
-      - office-ui-fabric-react.IChoiceGroupState.keyFocused
-  - uid: office-ui-fabric-react.IChoiceGroupState.keyChecked
+      - 'office-ui-fabric-react!IChoiceGroupState#keyChecked:member'
+      - 'office-ui-fabric-react!IChoiceGroupState#keyFocused:member'
+  - uid: 'office-ui-fabric-react!IChoiceGroupState#keyChecked:member'
+    summary: >-
+      Current selected option, for \*\*internal use only\*\*. External users should access `IChoiceGroup.checkedOption`
+      instead.
     name: keyChecked
     fullName: keyChecked
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'keyChecked: string | number;'
+      content: 'keyChecked?: string | number;'
       return:
         type:
           - string | number
-  - uid: office-ui-fabric-react.IChoiceGroupState.keyFocused
-    summary: Is true when the control has focus.
+  - uid: 'office-ui-fabric-react!IChoiceGroupState#keyFocused:member'
+    summary: Is set when the control has focus.
     name: keyFocused
     fullName: keyFocused
     langs:

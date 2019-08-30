@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office-ui-fabric-react.ChoiceGroupBase
+  - uid: 'office-ui-fabric-react!ChoiceGroupBase:class'
     name: ChoiceGroupBase
     fullName: ChoiceGroupBase
     langs:
@@ -9,16 +9,15 @@ items:
     extends:
       - 'React.Component<IChoiceGroupProps, IChoiceGroupState> '
     implements:
-      - office-ui-fabric-react.IChoiceGroup
-    package: office-ui-fabric-react
+      - 'office-ui-fabric-react!IChoiceGroup:interface'
+    package: office-ui-fabric-react!
     children:
-      - office-ui-fabric-react.ChoiceGroupBase.(constructor)
-      - office-ui-fabric-react.ChoiceGroupBase.checkedOption
-      - office-ui-fabric-react.ChoiceGroupBase.componentWillReceiveProps
-      - office-ui-fabric-react.ChoiceGroupBase.defaultProps
-      - office-ui-fabric-react.ChoiceGroupBase.focus
-      - office-ui-fabric-react.ChoiceGroupBase.render
-  - uid: office-ui-fabric-react.ChoiceGroupBase.(constructor)
+      - 'office-ui-fabric-react!ChoiceGroupBase:constructor(1)'
+      - 'office-ui-fabric-react!ChoiceGroupBase#checkedOption:member'
+      - 'office-ui-fabric-react!ChoiceGroupBase#componentDidUpdate:member(1)'
+      - 'office-ui-fabric-react!ChoiceGroupBase#focus:member(1)'
+      - 'office-ui-fabric-react!ChoiceGroupBase#render:member(1)'
+  - uid: 'office-ui-fabric-react!ChoiceGroupBase:constructor(1)'
     summary: Constructs a new instance of the `ChoiceGroupBase` class
     name: (constructor)(props)
     fullName: (constructor)(props)
@@ -31,8 +30,8 @@ items:
         - id: props
           description: ''
           type:
-            - office-ui-fabric-react.IChoiceGroupProps
-  - uid: office-ui-fabric-react.ChoiceGroupBase.checkedOption
+            - 'office-ui-fabric-react!IChoiceGroupProps:interface'
+  - uid: 'office-ui-fabric-react!ChoiceGroupBase#checkedOption:member'
     summary: Gets the current checked option.
     name: checkedOption
     fullName: checkedOption
@@ -44,35 +43,28 @@ items:
       return:
         type:
           - IChoiceGroupOption | undefined
-  - uid: office-ui-fabric-react.ChoiceGroupBase.componentWillReceiveProps
-    name: componentWillReceiveProps(newProps)
-    fullName: componentWillReceiveProps(newProps)
+  - uid: 'office-ui-fabric-react!ChoiceGroupBase#componentDidUpdate:member(1)'
+    name: 'componentDidUpdate(prevProps, prevState)'
+    fullName: 'componentDidUpdate(prevProps, prevState)'
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'componentWillReceiveProps(newProps: IChoiceGroupProps): void;'
+      content: 'componentDidUpdate(prevProps: IChoiceGroupProps, prevState: IChoiceGroupState): void;'
       return:
         type:
           - void
         description: ''
       parameters:
-        - id: newProps
+        - id: prevProps
           description: ''
           type:
-            - office-ui-fabric-react.IChoiceGroupProps
-  - uid: office-ui-fabric-react.ChoiceGroupBase.defaultProps
-    name: defaultProps
-    fullName: defaultProps
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'static defaultProps: IChoiceGroupProps;'
-      return:
-        type:
-          - office-ui-fabric-react.IChoiceGroupProps
-  - uid: office-ui-fabric-react.ChoiceGroupBase.focus
+            - 'office-ui-fabric-react!IChoiceGroupProps:interface'
+        - id: prevState
+          description: ''
+          type:
+            - 'office-ui-fabric-react!IChoiceGroupState:interface'
+  - uid: 'office-ui-fabric-react!ChoiceGroupBase#focus:member(1)'
     name: focus()
     fullName: focus()
     langs:
@@ -84,7 +76,7 @@ items:
         type:
           - void
         description: ''
-  - uid: office-ui-fabric-react.ChoiceGroupBase.render
+  - uid: 'office-ui-fabric-react!ChoiceGroupBase#render:member(1)'
     name: render()
     fullName: render()
     langs:

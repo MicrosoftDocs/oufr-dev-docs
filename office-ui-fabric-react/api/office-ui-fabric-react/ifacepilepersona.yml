@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office-ui-fabric-react.IFacepilePersona
+  - uid: 'office-ui-fabric-react!IFacepilePersona:interface'
     name: IFacepilePersona
     fullName: IFacepilePersona
     langs:
@@ -8,19 +8,19 @@ items:
     type: interface
     extends:
       - 'React.ButtonHTMLAttributes<HTMLButtonElement | HTMLDivElement> '
-    package: office-ui-fabric-react
+    package: office-ui-fabric-react!
     children:
-      - office-ui-fabric-react.IFacepilePersona.allowPhoneInitials
-      - office-ui-fabric-react.IFacepilePersona.data
-      - office-ui-fabric-react.IFacepilePersona.imageInitials
-      - office-ui-fabric-react.IFacepilePersona.imageUrl
-      - office-ui-fabric-react.IFacepilePersona.initialsColor
-      - office-ui-fabric-react.IFacepilePersona.keytipProps
-      - office-ui-fabric-react.IFacepilePersona.onClick
-      - office-ui-fabric-react.IFacepilePersona.onMouseMove
-      - office-ui-fabric-react.IFacepilePersona.onMouseOut
-      - office-ui-fabric-react.IFacepilePersona.personaName
-  - uid: office-ui-fabric-react.IFacepilePersona.allowPhoneInitials
+      - 'office-ui-fabric-react!IFacepilePersona#allowPhoneInitials:member'
+      - 'office-ui-fabric-react!IFacepilePersona#data:member'
+      - 'office-ui-fabric-react!IFacepilePersona#imageInitials:member'
+      - 'office-ui-fabric-react!IFacepilePersona#imageUrl:member'
+      - 'office-ui-fabric-react!IFacepilePersona#initialsColor:member'
+      - 'office-ui-fabric-react!IFacepilePersona#keytipProps:member'
+      - 'office-ui-fabric-react!IFacepilePersona#onClick:member'
+      - 'office-ui-fabric-react!IFacepilePersona#onMouseMove:member'
+      - 'office-ui-fabric-react!IFacepilePersona#onMouseOut:member'
+      - 'office-ui-fabric-react!IFacepilePersona#personaName:member'
+  - uid: 'office-ui-fabric-react!IFacepilePersona#allowPhoneInitials:member'
     summary: >-
       Whether initials are calculated for phone numbers and number sequences. Example: Set property to true to get
       initials for project names consisting of numbers only.
@@ -34,7 +34,7 @@ items:
       return:
         type:
           - boolean
-  - uid: office-ui-fabric-react.IFacepilePersona.data
+  - uid: 'office-ui-fabric-react!IFacepilePersona#data:member'
     summary: Extra data - not used directly but can be handy for passing additional data to custom event handlers.
     name: data
     fullName: data
@@ -46,7 +46,7 @@ items:
       return:
         type:
           - any
-  - uid: office-ui-fabric-react.IFacepilePersona.imageInitials
+  - uid: 'office-ui-fabric-react!IFacepilePersona#imageInitials:member'
     summary: The user's initials to display in the image area when there is no image.
     name: imageInitials
     fullName: imageInitials
@@ -58,7 +58,7 @@ items:
       return:
         type:
           - string
-  - uid: office-ui-fabric-react.IFacepilePersona.imageUrl
+  - uid: 'office-ui-fabric-react!IFacepilePersona#imageUrl:member'
     summary: 'Url to the image to use, should be a square aspect ratio and big enough to fit in the image area.'
     name: imageUrl
     fullName: imageUrl
@@ -70,7 +70,7 @@ items:
       return:
         type:
           - string
-  - uid: office-ui-fabric-react.IFacepilePersona.initialsColor
+  - uid: 'office-ui-fabric-react!IFacepilePersona#initialsColor:member'
     summary: The background color when the user's initials are displayed.
     name: initialsColor
     fullName: initialsColor
@@ -81,8 +81,8 @@ items:
       content: 'initialsColor?: PersonaInitialsColor;'
       return:
         type:
-          - office-ui-fabric-react.PersonaInitialsColor
-  - uid: office-ui-fabric-react.IFacepilePersona.keytipProps
+          - 'office-ui-fabric-react!PersonaInitialsColor:enum'
+  - uid: 'office-ui-fabric-react!IFacepilePersona#keytipProps:member'
     summary: Optional keytip for this button that is only added when 'onClick' is defined for the persona
     name: keytipProps
     fullName: keytipProps
@@ -93,8 +93,8 @@ items:
       content: 'keytipProps?: IKeytipProps;'
       return:
         type:
-          - office-ui-fabric-react.IKeytipProps
-  - uid: office-ui-fabric-react.IFacepilePersona.onClick
+          - 'office-ui-fabric-react!IKeytipProps:interface'
+  - uid: 'office-ui-fabric-react!IFacepilePersona#onClick:member'
     summary: 'If provided, persona will be rendered with cursor:pointer and the handler will be called on click.'
     name: onClick
     fullName: onClick
@@ -106,7 +106,7 @@ items:
       return:
         type:
           - '(ev?: React.MouseEvent<HTMLElement>, persona?: IFacepilePersona) => void'
-  - uid: office-ui-fabric-react.IFacepilePersona.onMouseMove
+  - uid: 'office-ui-fabric-react!IFacepilePersona#onMouseMove:member'
     summary: 'If provided, the handler will be called on mouse move.'
     name: onMouseMove
     fullName: onMouseMove
@@ -118,7 +118,7 @@ items:
       return:
         type:
           - '(ev?: React.MouseEvent<HTMLElement>, persona?: IFacepilePersona) => void'
-  - uid: office-ui-fabric-react.IFacepilePersona.onMouseOut
+  - uid: 'office-ui-fabric-react!IFacepilePersona#onMouseOut:member'
     summary: 'If provided, the handler will be called when mouse moves out of the component.'
     name: onMouseOut
     fullName: onMouseOut
@@ -130,7 +130,7 @@ items:
       return:
         type:
           - '(ev?: React.MouseEvent<HTMLElement>, persona?: IFacepilePersona) => void'
-  - uid: office-ui-fabric-react.IFacepilePersona.personaName
+  - uid: 'office-ui-fabric-react!IFacepilePersona#personaName:member'
     summary: Name of the person.
     name: personaName
     fullName: personaName

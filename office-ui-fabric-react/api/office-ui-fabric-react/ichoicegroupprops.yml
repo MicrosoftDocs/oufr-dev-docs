@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office-ui-fabric-react.IChoiceGroupProps
+  - uid: 'office-ui-fabric-react!IChoiceGroupProps:interface'
     name: IChoiceGroupProps
     fullName: IChoiceGroupProps
     langs:
@@ -8,19 +8,19 @@ items:
     type: interface
     extends:
       - 'React.InputHTMLAttributes<HTMLElement | HTMLInputElement> '
-    package: office-ui-fabric-react
+    package: office-ui-fabric-react!
     children:
-      - office-ui-fabric-react.IChoiceGroupProps.ariaLabelledBy
-      - office-ui-fabric-react.IChoiceGroupProps.componentRef
-      - office-ui-fabric-react.IChoiceGroupProps.defaultSelectedKey
-      - office-ui-fabric-react.IChoiceGroupProps.label
-      - office-ui-fabric-react.IChoiceGroupProps.onChange
-      - office-ui-fabric-react.IChoiceGroupProps.onChanged
-      - office-ui-fabric-react.IChoiceGroupProps.options
-      - office-ui-fabric-react.IChoiceGroupProps.selectedKey
-      - office-ui-fabric-react.IChoiceGroupProps.styles
-      - office-ui-fabric-react.IChoiceGroupProps.theme
-  - uid: office-ui-fabric-react.IChoiceGroupProps.ariaLabelledBy
+      - 'office-ui-fabric-react!IChoiceGroupProps#ariaLabelledBy:member'
+      - 'office-ui-fabric-react!IChoiceGroupProps#componentRef:member'
+      - 'office-ui-fabric-react!IChoiceGroupProps#defaultSelectedKey:member'
+      - 'office-ui-fabric-react!IChoiceGroupProps#label:member'
+      - 'office-ui-fabric-react!IChoiceGroupProps#onChange:member'
+      - 'office-ui-fabric-react!IChoiceGroupProps#onChanged:member'
+      - 'office-ui-fabric-react!IChoiceGroupProps#options:member'
+      - 'office-ui-fabric-react!IChoiceGroupProps#selectedKey:member'
+      - 'office-ui-fabric-react!IChoiceGroupProps#styles:member'
+      - 'office-ui-fabric-react!IChoiceGroupProps#theme:member'
+  - uid: 'office-ui-fabric-react!IChoiceGroupProps#ariaLabelledBy:member'
     summary: Aria labelled by prop for the ChoiceGroup itself
     name: ariaLabelledBy
     fullName: ariaLabelledBy
@@ -32,7 +32,7 @@ items:
       return:
         type:
           - string
-  - uid: office-ui-fabric-react.IChoiceGroupProps.componentRef
+  - uid: 'office-ui-fabric-react!IChoiceGroupProps#componentRef:member'
     summary: >-
       Optional callback to access the IChoiceGroup interface. Use this instead of ref for accessing the public methods
       and properties of the component.
@@ -46,7 +46,7 @@ items:
       return:
         type:
           - IRefObject<IChoiceGroup>
-  - uid: office-ui-fabric-react.IChoiceGroupProps.defaultSelectedKey
+  - uid: 'office-ui-fabric-react!IChoiceGroupProps#defaultSelectedKey:member'
     summary: The key of the option that will be initially checked.
     name: defaultSelectedKey
     fullName: defaultSelectedKey
@@ -58,7 +58,7 @@ items:
       return:
         type:
           - string | number
-  - uid: office-ui-fabric-react.IChoiceGroupProps.label
+  - uid: 'office-ui-fabric-react!IChoiceGroupProps#label:member'
     summary: Descriptive label for the choice group.
     name: label
     fullName: label
@@ -70,7 +70,7 @@ items:
       return:
         type:
           - string
-  - uid: office-ui-fabric-react.IChoiceGroupProps.onChange
+  - uid: 'office-ui-fabric-react!IChoiceGroupProps#onChange:member'
     summary: A callback for receiving a notification when the choice has been changed.
     name: onChange
     fullName: onChange
@@ -82,7 +82,7 @@ items:
       return:
         type:
           - '(ev?: React.FormEvent<HTMLElement | HTMLInputElement>, option?: IChoiceGroupOption) => void'
-  - uid: office-ui-fabric-react.IChoiceGroupProps.onChanged
+  - uid: 'office-ui-fabric-react!IChoiceGroupProps#onChanged:member'
     summary: Deprecated and will be removed by 07/17/2017. Use `onChange` instead.
     deprecated:
       content: Use `onChange` instead.
@@ -96,7 +96,7 @@ items:
       return:
         type:
           - '(option: IChoiceGroupOption, evt?: React.FormEvent<HTMLElement | HTMLInputElement>) => void'
-  - uid: office-ui-fabric-react.IChoiceGroupProps.options
+  - uid: 'office-ui-fabric-react!IChoiceGroupProps#options:member'
     summary: The options for the choice group.
     name: options
     fullName: options
@@ -108,7 +108,7 @@ items:
       return:
         type:
           - 'IChoiceGroupOption[]'
-  - uid: office-ui-fabric-react.IChoiceGroupProps.selectedKey
+  - uid: 'office-ui-fabric-react!IChoiceGroupProps#selectedKey:member'
     summary: >-
       The key of the selected option. If you provide this, you must maintain selection state by observing onChange
       events and passing a new value in when changed.
@@ -122,7 +122,7 @@ items:
       return:
         type:
           - string | number
-  - uid: office-ui-fabric-react.IChoiceGroupProps.styles
+  - uid: 'office-ui-fabric-react!IChoiceGroupProps#styles:member'
     summary: Call to provide customized styling that will layer on top of the variant rules.
     name: styles
     fullName: styles
@@ -134,7 +134,7 @@ items:
       return:
         type:
           - 'IStyleFunctionOrObject<IChoiceGroupStyleProps, IChoiceGroupStyles>'
-  - uid: office-ui-fabric-react.IChoiceGroupProps.theme
+  - uid: 'office-ui-fabric-react!IChoiceGroupProps#theme:member'
     summary: Theme (provided through customization.)
     name: theme
     fullName: theme
@@ -145,4 +145,4 @@ items:
       content: 'theme?: ITheme;'
       return:
         type:
-          - styling.ITheme
+          - '@uifabric/styling!ITheme:interface'

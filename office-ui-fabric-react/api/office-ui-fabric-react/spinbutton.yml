@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office-ui-fabric-react.SpinButton
+  - uid: 'office-ui-fabric-react!SpinButton:class'
     name: SpinButton
     fullName: SpinButton
     langs:
@@ -9,17 +9,17 @@ items:
     extends:
       - 'React.Component<ISpinButtonProps, ISpinButtonState> '
     implements:
-      - office-ui-fabric-react.ISpinButton
-    package: office-ui-fabric-react
+      - 'office-ui-fabric-react!ISpinButton:interface'
+    package: office-ui-fabric-react!
     children:
-      - office-ui-fabric-react.SpinButton.(constructor)
-      - office-ui-fabric-react.SpinButton.componentWillReceiveProps
-      - office-ui-fabric-react.SpinButton.componentWillUnmount
-      - office-ui-fabric-react.SpinButton.defaultProps
-      - office-ui-fabric-react.SpinButton.focus
-      - office-ui-fabric-react.SpinButton.render
-      - office-ui-fabric-react.SpinButton.value
-  - uid: office-ui-fabric-react.SpinButton.(constructor)
+      - 'office-ui-fabric-react!SpinButton:constructor(1)'
+      - 'office-ui-fabric-react!SpinButton#componentWillUnmount:member(1)'
+      - 'office-ui-fabric-react!SpinButton.defaultProps:member'
+      - 'office-ui-fabric-react!SpinButton#focus:member(1)'
+      - 'office-ui-fabric-react!SpinButton#render:member(1)'
+      - 'office-ui-fabric-react!SpinButton#UNSAFE_componentWillReceiveProps:member(1)'
+      - 'office-ui-fabric-react!SpinButton#value:member'
+  - uid: 'office-ui-fabric-react!SpinButton:constructor(1)'
     summary: Constructs a new instance of the `SpinButton` class
     name: (constructor)(props)
     fullName: (constructor)(props)
@@ -32,26 +32,8 @@ items:
         - id: props
           description: ''
           type:
-            - office-ui-fabric-react.ISpinButtonProps
-  - uid: office-ui-fabric-react.SpinButton.componentWillReceiveProps
-    summary: Invoked when a component is receiving new props. This method is not called for the initial render.
-    name: componentWillReceiveProps(newProps)
-    fullName: componentWillReceiveProps(newProps)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'componentWillReceiveProps(newProps: ISpinButtonProps): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: newProps
-          description: ''
-          type:
-            - office-ui-fabric-react.ISpinButtonProps
-  - uid: office-ui-fabric-react.SpinButton.componentWillUnmount
+            - 'office-ui-fabric-react!ISpinButtonProps:interface'
+  - uid: 'office-ui-fabric-react!SpinButton#componentWillUnmount:member(1)'
     name: componentWillUnmount()
     fullName: componentWillUnmount()
     langs:
@@ -63,7 +45,7 @@ items:
         type:
           - void
         description: ''
-  - uid: office-ui-fabric-react.SpinButton.defaultProps
+  - uid: 'office-ui-fabric-react!SpinButton.defaultProps:member'
     name: defaultProps
     fullName: defaultProps
     langs:
@@ -74,7 +56,7 @@ items:
       return:
         type:
           - DefaultProps
-  - uid: office-ui-fabric-react.SpinButton.focus
+  - uid: 'office-ui-fabric-react!SpinButton#focus:member(1)'
     name: focus()
     fullName: focus()
     langs:
@@ -86,7 +68,7 @@ items:
         type:
           - void
         description: ''
-  - uid: office-ui-fabric-react.SpinButton.render
+  - uid: 'office-ui-fabric-react!SpinButton#render:member(1)'
     name: render()
     fullName: render()
     langs:
@@ -98,7 +80,25 @@ items:
         type:
           - JSX.Element
         description: ''
-  - uid: office-ui-fabric-react.SpinButton.value
+  - uid: 'office-ui-fabric-react!SpinButton#UNSAFE_componentWillReceiveProps:member(1)'
+    summary: Invoked when a component is receiving new props. This method is not called for the initial render.
+    name: UNSAFE_componentWillReceiveProps(newProps)
+    fullName: UNSAFE_componentWillReceiveProps(newProps)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'UNSAFE_componentWillReceiveProps(newProps: ISpinButtonProps): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: newProps
+          description: ''
+          type:
+            - 'office-ui-fabric-react!ISpinButtonProps:interface'
+  - uid: 'office-ui-fabric-react!SpinButton#value:member'
     summary: Gets the value of the spin button.
     name: value
     fullName: value

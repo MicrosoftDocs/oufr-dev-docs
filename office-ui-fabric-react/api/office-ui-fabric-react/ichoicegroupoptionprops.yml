@@ -1,24 +1,24 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office-ui-fabric-react.IChoiceGroupOptionProps
+  - uid: 'office-ui-fabric-react!IChoiceGroupOptionProps:interface'
     name: IChoiceGroupOptionProps
     fullName: IChoiceGroupOptionProps
     langs:
       - typeScript
     type: interface
     extends:
-      - office-ui-fabric-react.IChoiceGroupOption
-    package: office-ui-fabric-react
+      - 'office-ui-fabric-react!IChoiceGroupOption:interface'
+    package: office-ui-fabric-react!
     children:
-      - office-ui-fabric-react.IChoiceGroupOptionProps.componentRef
-      - office-ui-fabric-react.IChoiceGroupOptionProps.focused
-      - office-ui-fabric-react.IChoiceGroupOptionProps.name
-      - office-ui-fabric-react.IChoiceGroupOptionProps.onBlur
-      - office-ui-fabric-react.IChoiceGroupOptionProps.onChange
-      - office-ui-fabric-react.IChoiceGroupOptionProps.onFocus
-      - office-ui-fabric-react.IChoiceGroupOptionProps.required
-      - office-ui-fabric-react.IChoiceGroupOptionProps.theme
-  - uid: office-ui-fabric-react.IChoiceGroupOptionProps.componentRef
+      - 'office-ui-fabric-react!IChoiceGroupOptionProps#componentRef:member'
+      - 'office-ui-fabric-react!IChoiceGroupOptionProps#focused:member'
+      - 'office-ui-fabric-react!IChoiceGroupOptionProps#name:member'
+      - 'office-ui-fabric-react!IChoiceGroupOptionProps#onBlur:member'
+      - 'office-ui-fabric-react!IChoiceGroupOptionProps#onChange:member'
+      - 'office-ui-fabric-react!IChoiceGroupOptionProps#onFocus:member'
+      - 'office-ui-fabric-react!IChoiceGroupOptionProps#required:member'
+      - 'office-ui-fabric-react!IChoiceGroupOptionProps#theme:member'
+  - uid: 'office-ui-fabric-react!IChoiceGroupOptionProps#componentRef:member'
     summary: >-
       Optional callback to access the IChoiceGroup interface. Use this instead of ref for accessing the public methods
       and properties of the component.
@@ -32,7 +32,7 @@ items:
       return:
         type:
           - IRefObject<IChoiceGroupOption>
-  - uid: office-ui-fabric-react.IChoiceGroupOptionProps.focused
+  - uid: 'office-ui-fabric-react!IChoiceGroupOptionProps#focused:member'
     summary: 'Indicates if the ChoiceGroupOption should appear focused, visually'
     name: focused
     fullName: focused
@@ -44,7 +44,7 @@ items:
       return:
         type:
           - boolean
-  - uid: office-ui-fabric-react.IChoiceGroupOptionProps.name
+  - uid: 'office-ui-fabric-react!IChoiceGroupOptionProps#name:member'
     summary: This value is used to group each ChoiceGroupOption into the same logical ChoiceGroup
     name: name
     fullName: name
@@ -56,7 +56,7 @@ items:
       return:
         type:
           - string
-  - uid: office-ui-fabric-react.IChoiceGroupOptionProps.onBlur
+  - uid: 'office-ui-fabric-react!IChoiceGroupOptionProps#onBlur:member'
     summary: A callback for receiving a notification when the choice has lost focus.
     name: onBlur
     fullName: onBlur
@@ -68,7 +68,7 @@ items:
       return:
         type:
           - '(ev: React.FocusEvent<HTMLElement>, props?: IChoiceGroupOption) => void'
-  - uid: office-ui-fabric-react.IChoiceGroupOptionProps.onChange
+  - uid: 'office-ui-fabric-react!IChoiceGroupOptionProps#onChange:member'
     summary: A callback for receiving a notification when the choice has been changed.
     name: onChange
     fullName: onChange
@@ -76,11 +76,11 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'onChange?: OnChangeCallback;'
+      content: 'onChange?: (evt?: React.FormEvent<HTMLElement | HTMLInputElement>, props?: IChoiceGroupOption) => void;'
       return:
         type:
-          - OnChangeCallback
-  - uid: office-ui-fabric-react.IChoiceGroupOptionProps.onFocus
+          - '(evt?: React.FormEvent<HTMLElement | HTMLInputElement>, props?: IChoiceGroupOption) => void'
+  - uid: 'office-ui-fabric-react!IChoiceGroupOptionProps#onFocus:member'
     summary: A callback for receiving a notification when the choice has received focus.
     name: onFocus
     fullName: onFocus
@@ -88,11 +88,13 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'onFocus?: OnFocusCallback;'
+      content: >-
+        onFocus?: (ev?: React.FocusEvent<HTMLElement | HTMLInputElement>, props?: IChoiceGroupOption) => void |
+        undefined;
       return:
         type:
-          - OnFocusCallback
-  - uid: office-ui-fabric-react.IChoiceGroupOptionProps.required
+          - '(ev?: React.FocusEvent<HTMLElement | HTMLInputElement>, props?: IChoiceGroupOption) => void | undefined'
+  - uid: 'office-ui-fabric-react!IChoiceGroupOptionProps#required:member'
     summary: 'If true, it specifies that an option must be selected in the ChoiceGroup before submitting the form'
     name: required
     fullName: required
@@ -104,7 +106,7 @@ items:
       return:
         type:
           - boolean
-  - uid: office-ui-fabric-react.IChoiceGroupOptionProps.theme
+  - uid: 'office-ui-fabric-react!IChoiceGroupOptionProps#theme:member'
     summary: Theme (provided through customization.)
     name: theme
     fullName: theme
@@ -115,4 +117,4 @@ items:
       content: 'theme?: ITheme;'
       return:
         type:
-          - styling.ITheme
+          - '@uifabric/styling!ITheme:interface'

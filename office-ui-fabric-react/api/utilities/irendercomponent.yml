@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: utilities.IRenderComponent
+  - uid: '@uifabric/utilities!IRenderComponent:interface'
     summary: >-
       An interface representing a component that will not output any DOM, will just render its children and pass through
       items to modify the children.
@@ -9,10 +9,13 @@ items:
     langs:
       - typeScript
     type: interface
-    package: utilities
+    syntax:
+      typeParameters:
+        - id: TProps
+    package: '@uifabric/utilities!'
     children:
-      - utilities.IRenderComponent.children
-  - uid: utilities.IRenderComponent.children
+      - '@uifabric/utilities!IRenderComponent#children:member'
+  - uid: '@uifabric/utilities!IRenderComponent#children:member'
     summary: JSX.Element to return in this component's render() function.
     name: children
     fullName: children

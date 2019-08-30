@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office-ui-fabric-react.IGroupedListProps
+  - uid: 'office-ui-fabric-react!IGroupedListProps:interface'
     name: IGroupedListProps
     fullName: IGroupedListProps
     langs:
@@ -8,29 +8,29 @@ items:
     type: interface
     extends:
       - 'React.ClassAttributes<GroupedListBase> '
-    package: office-ui-fabric-react
+    package: office-ui-fabric-react!
     children:
-      - office-ui-fabric-react.IGroupedListProps.className
-      - office-ui-fabric-react.IGroupedListProps.compact
-      - office-ui-fabric-react.IGroupedListProps.componentRef
-      - office-ui-fabric-react.IGroupedListProps.dragDropEvents
-      - office-ui-fabric-react.IGroupedListProps.dragDropHelper
-      - office-ui-fabric-react.IGroupedListProps.eventsToRegister
-      - office-ui-fabric-react.IGroupedListProps.getGroupHeight
-      - office-ui-fabric-react.IGroupedListProps.groupProps
-      - office-ui-fabric-react.IGroupedListProps.groups
-      - office-ui-fabric-react.IGroupedListProps.items
-      - office-ui-fabric-react.IGroupedListProps.listProps
-      - office-ui-fabric-react.IGroupedListProps.onGroupExpandStateChanged
-      - office-ui-fabric-react.IGroupedListProps.onRenderCell
-      - office-ui-fabric-react.IGroupedListProps.onShouldVirtualize
-      - office-ui-fabric-react.IGroupedListProps.selection
-      - office-ui-fabric-react.IGroupedListProps.selectionMode
-      - office-ui-fabric-react.IGroupedListProps.styles
-      - office-ui-fabric-react.IGroupedListProps.theme
-      - office-ui-fabric-react.IGroupedListProps.usePageCache
-      - office-ui-fabric-react.IGroupedListProps.viewport
-  - uid: office-ui-fabric-react.IGroupedListProps.className
+      - 'office-ui-fabric-react!IGroupedListProps#className:member'
+      - 'office-ui-fabric-react!IGroupedListProps#compact:member'
+      - 'office-ui-fabric-react!IGroupedListProps#componentRef:member'
+      - 'office-ui-fabric-react!IGroupedListProps#dragDropEvents:member'
+      - 'office-ui-fabric-react!IGroupedListProps#dragDropHelper:member'
+      - 'office-ui-fabric-react!IGroupedListProps#eventsToRegister:member'
+      - 'office-ui-fabric-react!IGroupedListProps#getGroupHeight:member'
+      - 'office-ui-fabric-react!IGroupedListProps#groupProps:member'
+      - 'office-ui-fabric-react!IGroupedListProps#groups:member'
+      - 'office-ui-fabric-react!IGroupedListProps#items:member'
+      - 'office-ui-fabric-react!IGroupedListProps#listProps:member'
+      - 'office-ui-fabric-react!IGroupedListProps#onGroupExpandStateChanged:member'
+      - 'office-ui-fabric-react!IGroupedListProps#onRenderCell:member'
+      - 'office-ui-fabric-react!IGroupedListProps#onShouldVirtualize:member'
+      - 'office-ui-fabric-react!IGroupedListProps#selection:member'
+      - 'office-ui-fabric-react!IGroupedListProps#selectionMode:member'
+      - 'office-ui-fabric-react!IGroupedListProps#styles:member'
+      - 'office-ui-fabric-react!IGroupedListProps#theme:member'
+      - 'office-ui-fabric-react!IGroupedListProps#usePageCache:member'
+      - 'office-ui-fabric-react!IGroupedListProps#viewport:member'
+  - uid: 'office-ui-fabric-react!IGroupedListProps#className:member'
     summary: Optional class name to add to the root element.
     name: className
     fullName: className
@@ -42,7 +42,7 @@ items:
       return:
         type:
           - string
-  - uid: office-ui-fabric-react.IGroupedListProps.compact
+  - uid: 'office-ui-fabric-react!IGroupedListProps#compact:member'
     summary: Boolean value to indicate if the component should render in compact mode. Set to false by default
     name: compact
     fullName: compact
@@ -54,7 +54,7 @@ items:
       return:
         type:
           - boolean
-  - uid: office-ui-fabric-react.IGroupedListProps.componentRef
+  - uid: 'office-ui-fabric-react!IGroupedListProps#componentRef:member'
     summary: >-
       Optional callback to access the IGroupedList interface. Use this instead of ref for accessing the public methods
       and properties of the component.
@@ -68,7 +68,7 @@ items:
       return:
         type:
           - IRefObject<IGroupedList>
-  - uid: office-ui-fabric-react.IGroupedListProps.dragDropEvents
+  - uid: 'office-ui-fabric-react!IGroupedListProps#dragDropEvents:member'
     summary: Map of callback functions related to drag and drop functionality.
     name: dragDropEvents
     fullName: dragDropEvents
@@ -79,8 +79,8 @@ items:
       content: 'dragDropEvents?: IDragDropEvents;'
       return:
         type:
-          - office-ui-fabric-react.IDragDropEvents
-  - uid: office-ui-fabric-react.IGroupedListProps.dragDropHelper
+          - 'office-ui-fabric-react!IDragDropEvents:interface'
+  - uid: 'office-ui-fabric-react!IGroupedListProps#dragDropHelper:member'
     summary: helper to manage drag/drop across item and groups
     name: dragDropHelper
     fullName: dragDropHelper
@@ -91,8 +91,8 @@ items:
       content: 'dragDropHelper?: IDragDropHelper;'
       return:
         type:
-          - office-ui-fabric-react.IDragDropHelper
-  - uid: office-ui-fabric-react.IGroupedListProps.eventsToRegister
+          - 'office-ui-fabric-react!IDragDropHelper:interface'
+  - uid: 'office-ui-fabric-react!IGroupedListProps#eventsToRegister:member'
     summary: Event names and corresponding callbacks that will be registered to groups and rendered elements
     name: eventsToRegister
     fullName: eventsToRegister
@@ -112,7 +112,7 @@ items:
                     eventName: string;
                     callback: (context: IDragDropContext, event?: any) => void;
                 }[]
-  - uid: office-ui-fabric-react.IGroupedListProps.getGroupHeight
+  - uid: 'office-ui-fabric-react!IGroupedListProps#getGroupHeight:member'
     summary: Optional function to override default group height calculation used by list virtualization.
     name: getGroupHeight
     fullName: getGroupHeight
@@ -124,7 +124,7 @@ items:
       return:
         type:
           - '(group: IGroup, groupIndex: number) => number'
-  - uid: office-ui-fabric-react.IGroupedListProps.groupProps
+  - uid: 'office-ui-fabric-react!IGroupedListProps#groupProps:member'
     summary: Optional override properties to render groups.
     name: groupProps
     fullName: groupProps
@@ -135,8 +135,8 @@ items:
       content: 'groupProps?: IGroupRenderProps;'
       return:
         type:
-          - office-ui-fabric-react.IGroupRenderProps
-  - uid: office-ui-fabric-react.IGroupedListProps.groups
+          - 'office-ui-fabric-react!IGroupRenderProps:interface'
+  - uid: 'office-ui-fabric-react!IGroupedListProps#groups:member'
     summary: Optional grouping instructions.
     name: groups
     fullName: groups
@@ -148,7 +148,7 @@ items:
       return:
         type:
           - 'IGroup[]'
-  - uid: office-ui-fabric-react.IGroupedListProps.items
+  - uid: 'office-ui-fabric-react!IGroupedListProps#items:member'
     summary: List of items to render.
     name: items
     fullName: items
@@ -160,7 +160,7 @@ items:
       return:
         type:
           - 'any[]'
-  - uid: office-ui-fabric-react.IGroupedListProps.listProps
+  - uid: 'office-ui-fabric-react!IGroupedListProps#listProps:member'
     summary: Optional properties to pass through to the list components being rendered.
     name: listProps
     fullName: listProps
@@ -171,8 +171,8 @@ items:
       content: 'listProps?: IListProps;'
       return:
         type:
-          - office-ui-fabric-react.IListProps
-  - uid: office-ui-fabric-react.IGroupedListProps.onGroupExpandStateChanged
+          - 'office-ui-fabric-react!IListProps:interface'
+  - uid: 'office-ui-fabric-react!IGroupedListProps#onGroupExpandStateChanged:member'
     summary: Optional callback when the group expand state changes between all collapsed and at least one group is expanded.
     name: onGroupExpandStateChanged
     fullName: onGroupExpandStateChanged
@@ -184,7 +184,7 @@ items:
       return:
         type:
           - '(isSomeGroupExpanded: boolean) => void'
-  - uid: office-ui-fabric-react.IGroupedListProps.onRenderCell
+  - uid: 'office-ui-fabric-react!IGroupedListProps#onRenderCell:member'
     summary: Rendering callback to render the group items.
     name: onRenderCell
     fullName: onRenderCell
@@ -196,7 +196,7 @@ items:
       return:
         type:
           - '(nestingDepth?: number, item?: any, index?: number) => React.ReactNode'
-  - uid: office-ui-fabric-react.IGroupedListProps.onShouldVirtualize
+  - uid: 'office-ui-fabric-react!IGroupedListProps#onShouldVirtualize:member'
     summary: >-
       Optional callback to determine whether the list should be rendered in full, or virtualized. Virtualization will
       add and remove pages of items as the user scrolls them into the visible range. This benefits larger list scenarios
@@ -212,7 +212,7 @@ items:
       return:
         type:
           - '(props: IListProps) => boolean'
-  - uid: office-ui-fabric-react.IGroupedListProps.selection
+  - uid: 'office-ui-fabric-react!IGroupedListProps#selection:member'
     summary: Optional selection model to track selection state.
     name: selection
     fullName: selection
@@ -223,8 +223,8 @@ items:
       content: 'selection?: ISelection;'
       return:
         type:
-          - utilities.ISelection
-  - uid: office-ui-fabric-react.IGroupedListProps.selectionMode
+          - '@uifabric/utilities!ISelection:interface'
+  - uid: 'office-ui-fabric-react!IGroupedListProps#selectionMode:member'
     summary: Controls how/if the list manages selection.
     name: selectionMode
     fullName: selectionMode
@@ -235,8 +235,8 @@ items:
       content: 'selectionMode?: SelectionMode;'
       return:
         type:
-          - utilities.SelectionMode
-  - uid: office-ui-fabric-react.IGroupedListProps.styles
+          - '@uifabric/utilities!SelectionMode:enum'
+  - uid: 'office-ui-fabric-react!IGroupedListProps#styles:member'
     summary: Style function to be passed in to override the themed or default styles
     name: styles
     fullName: styles
@@ -248,7 +248,7 @@ items:
       return:
         type:
           - 'IStyleFunctionOrObject<IGroupedListStyleProps, IGroupedListStyles>'
-  - uid: office-ui-fabric-react.IGroupedListProps.theme
+  - uid: 'office-ui-fabric-react!IGroupedListProps#theme:member'
     summary: Theme that is passed in from Higher Order Component
     name: theme
     fullName: theme
@@ -259,8 +259,8 @@ items:
       content: 'theme?: ITheme;'
       return:
         type:
-          - styling.ITheme
-  - uid: office-ui-fabric-react.IGroupedListProps.usePageCache
+          - '@uifabric/styling!ITheme:interface'
+  - uid: 'office-ui-fabric-react!IGroupedListProps#usePageCache:member'
     summary: >-
       boolean to control if pages containing unchanged items should be cached, this is a perf optimization The same
       property in List.Props
@@ -274,7 +274,7 @@ items:
       return:
         type:
           - boolean
-  - uid: office-ui-fabric-react.IGroupedListProps.viewport
+  - uid: 'office-ui-fabric-react!IGroupedListProps#viewport:member'
     summary: 'Optional Viewport, provided by the parent component.'
     name: viewport
     fullName: viewport
@@ -285,4 +285,4 @@ items:
       content: 'viewport?: IViewport;'
       return:
         type:
-          - office-ui-fabric-react.IViewport
+          - 'office-ui-fabric-react!IViewport:interface'

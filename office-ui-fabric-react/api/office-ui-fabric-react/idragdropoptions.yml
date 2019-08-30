@@ -1,26 +1,26 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office-ui-fabric-react.IDragDropOptions
+  - uid: 'office-ui-fabric-react!IDragDropOptions:interface'
     summary: The drag and drop event listener configuration.
     name: IDragDropOptions
     fullName: IDragDropOptions
     langs:
       - typeScript
     type: interface
-    package: office-ui-fabric-react
+    package: office-ui-fabric-react!
     children:
-      - office-ui-fabric-react.IDragDropOptions.canDrag
-      - office-ui-fabric-react.IDragDropOptions.canDrop
-      - office-ui-fabric-react.IDragDropOptions.context
-      - office-ui-fabric-react.IDragDropOptions.eventMap
-      - office-ui-fabric-react.IDragDropOptions.key
-      - office-ui-fabric-react.IDragDropOptions.onDragEnd
-      - office-ui-fabric-react.IDragDropOptions.onDragOver
-      - office-ui-fabric-react.IDragDropOptions.onDragStart
-      - office-ui-fabric-react.IDragDropOptions.onDrop
-      - office-ui-fabric-react.IDragDropOptions.selectionIndex
-      - office-ui-fabric-react.IDragDropOptions.updateDropState
-  - uid: office-ui-fabric-react.IDragDropOptions.canDrag
+      - 'office-ui-fabric-react!IDragDropOptions#canDrag:member'
+      - 'office-ui-fabric-react!IDragDropOptions#canDrop:member'
+      - 'office-ui-fabric-react!IDragDropOptions#context:member'
+      - 'office-ui-fabric-react!IDragDropOptions#eventMap:member'
+      - 'office-ui-fabric-react!IDragDropOptions#key:member'
+      - 'office-ui-fabric-react!IDragDropOptions#onDragEnd:member'
+      - 'office-ui-fabric-react!IDragDropOptions#onDragOver:member'
+      - 'office-ui-fabric-react!IDragDropOptions#onDragStart:member'
+      - 'office-ui-fabric-react!IDragDropOptions#onDrop:member'
+      - 'office-ui-fabric-react!IDragDropOptions#selectionIndex:member'
+      - 'office-ui-fabric-react!IDragDropOptions#updateDropState:member'
+  - uid: 'office-ui-fabric-react!IDragDropOptions#canDrag:member'
     summary: Whether or not drag action is allowed.
     name: canDrag
     fullName: canDrag
@@ -32,7 +32,7 @@ items:
       return:
         type:
           - '(item?: any) => boolean'
-  - uid: office-ui-fabric-react.IDragDropOptions.canDrop
+  - uid: 'office-ui-fabric-react!IDragDropOptions#canDrop:member'
     summary: Whether or not drop action is allowed.
     name: canDrop
     fullName: canDrop
@@ -44,7 +44,7 @@ items:
       return:
         type:
           - '(dropContext?: IDragDropContext, dragContext?: IDragDropContext) => boolean'
-  - uid: office-ui-fabric-react.IDragDropOptions.context
+  - uid: 'office-ui-fabric-react!IDragDropOptions#context:member'
     summary: Context associated with drag and drop event.
     name: context
     fullName: context
@@ -55,8 +55,8 @@ items:
       content: 'context: IDragDropContext;'
       return:
         type:
-          - office-ui-fabric-react.IDragDropContext
-  - uid: office-ui-fabric-react.IDragDropOptions.eventMap
+          - 'office-ui-fabric-react!IDragDropContext:interface'
+  - uid: 'office-ui-fabric-react!IDragDropOptions#eventMap:member'
     summary: Map of event name to callback function to subscribe to.
     name: eventMap
     fullName: eventMap
@@ -76,7 +76,7 @@ items:
                     eventName: string;
                     callback: (context: IDragDropContext, event?: any) => void;
                 }[]
-  - uid: office-ui-fabric-react.IDragDropOptions.key
+  - uid: 'office-ui-fabric-react!IDragDropOptions#key:member'
     summary: Unique key to associate with instance.
     name: key
     fullName: key
@@ -88,7 +88,7 @@ items:
       return:
         type:
           - string
-  - uid: office-ui-fabric-react.IDragDropOptions.onDragEnd
+  - uid: 'office-ui-fabric-react!IDragDropOptions#onDragEnd:member'
     summary: On drag end event callback.
     name: onDragEnd
     fullName: onDragEnd
@@ -100,7 +100,7 @@ items:
       return:
         type:
           - '(item?: any, event?: DragEvent) => void'
-  - uid: office-ui-fabric-react.IDragDropOptions.onDragOver
+  - uid: 'office-ui-fabric-react!IDragDropOptions#onDragOver:member'
     summary: On drag over element(s) event callback.
     name: onDragOver
     fullName: onDragOver
@@ -112,7 +112,7 @@ items:
       return:
         type:
           - '(item?: any, event?: DragEvent) => void'
-  - uid: office-ui-fabric-react.IDragDropOptions.onDragStart
+  - uid: 'office-ui-fabric-react!IDragDropOptions#onDragStart:member'
     summary: On drag start event callback.
     name: onDragStart
     fullName: onDragStart
@@ -124,7 +124,7 @@ items:
       return:
         type:
           - '(item?: any, itemIndex?: number, selectedItems?: any[], event?: MouseEvent) => void'
-  - uid: office-ui-fabric-react.IDragDropOptions.onDrop
+  - uid: 'office-ui-fabric-react!IDragDropOptions#onDrop:member'
     summary: On drop event callback.
     name: onDrop
     fullName: onDrop
@@ -136,7 +136,7 @@ items:
       return:
         type:
           - '(item?: any, event?: DragEvent) => void'
-  - uid: office-ui-fabric-react.IDragDropOptions.selectionIndex
+  - uid: 'office-ui-fabric-react!IDragDropOptions#selectionIndex:member'
     summary: Selection index on drag and drop event.
     name: selectionIndex
     fullName: selectionIndex
@@ -148,7 +148,7 @@ items:
       return:
         type:
           - number
-  - uid: office-ui-fabric-react.IDragDropOptions.updateDropState
+  - uid: 'office-ui-fabric-react!IDragDropOptions#updateDropState:member'
     summary: Callback on drop state update.
     name: updateDropState
     fullName: updateDropState

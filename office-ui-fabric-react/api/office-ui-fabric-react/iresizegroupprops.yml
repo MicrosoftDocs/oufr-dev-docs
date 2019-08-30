@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office-ui-fabric-react.IResizeGroupProps
+  - uid: 'office-ui-fabric-react!IResizeGroupProps:interface'
     name: IResizeGroupProps
     fullName: IResizeGroupProps
     langs:
@@ -8,19 +8,19 @@ items:
     type: interface
     extends:
       - 'React.HTMLAttributes<ResizeGroupBase | HTMLElement> '
-    package: office-ui-fabric-react
+    package: office-ui-fabric-react!
     children:
-      - office-ui-fabric-react.IResizeGroupProps.className
-      - office-ui-fabric-react.IResizeGroupProps.componentRef
-      - office-ui-fabric-react.IResizeGroupProps.data
-      - office-ui-fabric-react.IResizeGroupProps.dataDidRender
-      - office-ui-fabric-react.IResizeGroupProps.direction
-      - office-ui-fabric-react.IResizeGroupProps.onGrowData
-      - office-ui-fabric-react.IResizeGroupProps.onReduceData
-      - office-ui-fabric-react.IResizeGroupProps.onRenderData
-      - office-ui-fabric-react.IResizeGroupProps.styles
-      - office-ui-fabric-react.IResizeGroupProps.theme
-  - uid: office-ui-fabric-react.IResizeGroupProps.className
+      - 'office-ui-fabric-react!IResizeGroupProps#className:member'
+      - 'office-ui-fabric-react!IResizeGroupProps#componentRef:member'
+      - 'office-ui-fabric-react!IResizeGroupProps#data:member'
+      - 'office-ui-fabric-react!IResizeGroupProps#dataDidRender:member'
+      - 'office-ui-fabric-react!IResizeGroupProps#direction:member'
+      - 'office-ui-fabric-react!IResizeGroupProps#onGrowData:member'
+      - 'office-ui-fabric-react!IResizeGroupProps#onReduceData:member'
+      - 'office-ui-fabric-react!IResizeGroupProps#onRenderData:member'
+      - 'office-ui-fabric-react!IResizeGroupProps#styles:member'
+      - 'office-ui-fabric-react!IResizeGroupProps#theme:member'
+  - uid: 'office-ui-fabric-react!IResizeGroupProps#className:member'
     summary: Additional css class to apply to the Component
     name: className
     fullName: className
@@ -32,7 +32,7 @@ items:
       return:
         type:
           - string
-  - uid: office-ui-fabric-react.IResizeGroupProps.componentRef
+  - uid: 'office-ui-fabric-react!IResizeGroupProps#componentRef:member'
     summary: >-
       Optional callback to access the IResizeGroup interface. Use this instead of ref for accessing the public methods
       and properties of the component.
@@ -46,7 +46,7 @@ items:
       return:
         type:
           - IRefObject<IResizeGroup>
-  - uid: office-ui-fabric-react.IResizeGroupProps.data
+  - uid: 'office-ui-fabric-react!IResizeGroupProps#data:member'
     summary: >-
       Initial data to be passed to the onRenderData function. When there is no onGrowData provided, this data should
       represent what should be passed to the render function when the parent container of the ResizeGroup is at it's
@@ -63,7 +63,7 @@ items:
       return:
         type:
           - any
-  - uid: office-ui-fabric-react.IResizeGroupProps.dataDidRender
+  - uid: 'office-ui-fabric-react!IResizeGroupProps#dataDidRender:member'
     summary: >-
       Function to be called every time data is rendered. It provides the data that was actually rendered. A use case
       would be adding telemetry when a particular control is shown in an overflow well or dropped as a result of
@@ -78,7 +78,7 @@ items:
       return:
         type:
           - '(renderedData: any) => void'
-  - uid: office-ui-fabric-react.IResizeGroupProps.direction
+  - uid: 'office-ui-fabric-react!IResizeGroupProps#direction:member'
     summary: 'Direction of this resize group, vertical or horizontal'
     name: direction
     fullName: direction
@@ -89,8 +89,8 @@ items:
       content: 'direction?: ResizeGroupDirection;'
       return:
         type:
-          - office-ui-fabric-react.ResizeGroupDirection
-  - uid: office-ui-fabric-react.IResizeGroupProps.onGrowData
+          - 'office-ui-fabric-react!ResizeGroupDirection:enum'
+  - uid: 'office-ui-fabric-react!IResizeGroupProps#onGrowData:member'
     summary: >-
       Function to be performed on the data in order to increase its width. It is called in scenarios where the container
       has more room than the previous render and we may be able to fit more content. If there are no more scaling
@@ -105,7 +105,7 @@ items:
       return:
         type:
           - '(prevData: any) => any'
-  - uid: office-ui-fabric-react.IResizeGroupProps.onReduceData
+  - uid: 'office-ui-fabric-react!IResizeGroupProps#onReduceData:member'
     summary: >-
       Function to be performed on the data in order to reduce its width and make it fit into the given space. If there
       are no more scaling steps to apply, it should return undefined to prevent an infinite render loop.
@@ -119,7 +119,7 @@ items:
       return:
         type:
           - '(prevData: any) => any'
-  - uid: office-ui-fabric-react.IResizeGroupProps.onRenderData
+  - uid: 'office-ui-fabric-react!IResizeGroupProps#onRenderData:member'
     summary: >-
       Function to render the data. Called when rendering the contents to the screen and when rendering in a hidden div
       to measure the size of the contents.
@@ -133,7 +133,7 @@ items:
       return:
         type:
           - '(data: any) => JSX.Element'
-  - uid: office-ui-fabric-react.IResizeGroupProps.styles
+  - uid: 'office-ui-fabric-react!IResizeGroupProps#styles:member'
     summary: Call to provide customized styling that will layer on top of the variant rules
     deprecated:
       content: Removed to reduce bundle size. Please use `className` and add css rules to `className` instead.
@@ -147,7 +147,7 @@ items:
       return:
         type:
           - 'IStyleFunctionOrObject<IResizeGroupStyleProps, IResizeGroupStyles>'
-  - uid: office-ui-fabric-react.IResizeGroupProps.theme
+  - uid: 'office-ui-fabric-react!IResizeGroupProps#theme:member'
     summary: Theme provided by HOC.
     name: theme
     fullName: theme
@@ -158,4 +158,4 @@ items:
       content: 'theme?: ITheme;'
       return:
         type:
-          - styling.ITheme
+          - '@uifabric/styling!ITheme:interface'

@@ -1,38 +1,60 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: utilities.ISelection
+  - uid: '@uifabric/utilities!ISelection:interface'
     name: ISelection
     fullName: ISelection
     langs:
       - typeScript
     type: interface
-    package: utilities
+    package: '@uifabric/utilities!'
     children:
-      - utilities.ISelection.getItems
-      - utilities.ISelection.getSelectedCount
-      - utilities.ISelection.getSelectedIndices
-      - utilities.ISelection.getSelection
-      - utilities.ISelection.isAllSelected
-      - utilities.ISelection.isIndexSelected
-      - utilities.ISelection.isKeySelected
-      - utilities.ISelection.isModal
-      - utilities.ISelection.isRangeSelected
-      - utilities.ISelection.selectToIndex
-      - utilities.ISelection.selectToKey
-      - utilities.ISelection.setAllSelected
-      - utilities.ISelection.setChangeEvents
-      - utilities.ISelection.setIndexSelected
-      - utilities.ISelection.setItems
-      - utilities.ISelection.setKeySelected
-      - utilities.ISelection.setModal
-      - utilities.ISelection.toggleAllSelected
-      - utilities.ISelection.toggleIndexSelected
-      - utilities.ISelection.toggleKeySelected
-      - utilities.ISelection.toggleRangeSelected
-      - utilities.ISelection.canSelectItem
-      - utilities.ISelection.count
-      - utilities.ISelection.mode
-  - uid: utilities.ISelection.getItems
+      - '@uifabric/utilities!ISelection#canSelectItem:member'
+      - '@uifabric/utilities!ISelection#count:member'
+      - '@uifabric/utilities!ISelection#getItems:member(1)'
+      - '@uifabric/utilities!ISelection#getSelectedCount:member(1)'
+      - '@uifabric/utilities!ISelection#getSelectedIndices:member(1)'
+      - '@uifabric/utilities!ISelection#getSelection:member(1)'
+      - '@uifabric/utilities!ISelection#isAllSelected:member(1)'
+      - '@uifabric/utilities!ISelection#isIndexSelected:member(1)'
+      - '@uifabric/utilities!ISelection#isKeySelected:member(1)'
+      - '@uifabric/utilities!ISelection#isModal:member(1)'
+      - '@uifabric/utilities!ISelection#isRangeSelected:member(1)'
+      - '@uifabric/utilities!ISelection#mode:member'
+      - '@uifabric/utilities!ISelection#selectToIndex:member(1)'
+      - '@uifabric/utilities!ISelection#selectToKey:member(1)'
+      - '@uifabric/utilities!ISelection#setAllSelected:member(1)'
+      - '@uifabric/utilities!ISelection#setChangeEvents:member(1)'
+      - '@uifabric/utilities!ISelection#setIndexSelected:member(1)'
+      - '@uifabric/utilities!ISelection#setItems:member(1)'
+      - '@uifabric/utilities!ISelection#setKeySelected:member(1)'
+      - '@uifabric/utilities!ISelection#setModal:member(1)'
+      - '@uifabric/utilities!ISelection#toggleAllSelected:member(1)'
+      - '@uifabric/utilities!ISelection#toggleIndexSelected:member(1)'
+      - '@uifabric/utilities!ISelection#toggleKeySelected:member(1)'
+      - '@uifabric/utilities!ISelection#toggleRangeSelected:member(1)'
+  - uid: '@uifabric/utilities!ISelection#canSelectItem:member'
+    name: canSelectItem
+    fullName: canSelectItem
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'canSelectItem: (item: IObjectWithKey, index?: number) => boolean;'
+      return:
+        type:
+          - '(item: IObjectWithKey, index?: number) => boolean'
+  - uid: '@uifabric/utilities!ISelection#count:member'
+    name: count
+    fullName: count
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'count: number;'
+      return:
+        type:
+          - number
+  - uid: '@uifabric/utilities!ISelection#getItems:member(1)'
     name: getItems()
     fullName: getItems()
     langs:
@@ -44,7 +66,7 @@ items:
         type:
           - 'IObjectWithKey[]'
         description: ''
-  - uid: utilities.ISelection.getSelectedCount
+  - uid: '@uifabric/utilities!ISelection#getSelectedCount:member(1)'
     name: getSelectedCount()
     fullName: getSelectedCount()
     langs:
@@ -56,7 +78,7 @@ items:
         type:
           - number
         description: ''
-  - uid: utilities.ISelection.getSelectedIndices
+  - uid: '@uifabric/utilities!ISelection#getSelectedIndices:member(1)'
     name: getSelectedIndices()
     fullName: getSelectedIndices()
     langs:
@@ -68,7 +90,7 @@ items:
         type:
           - 'number[]'
         description: ''
-  - uid: utilities.ISelection.getSelection
+  - uid: '@uifabric/utilities!ISelection#getSelection:member(1)'
     name: getSelection()
     fullName: getSelection()
     langs:
@@ -80,7 +102,7 @@ items:
         type:
           - 'IObjectWithKey[]'
         description: ''
-  - uid: utilities.ISelection.isAllSelected
+  - uid: '@uifabric/utilities!ISelection#isAllSelected:member(1)'
     name: isAllSelected()
     fullName: isAllSelected()
     langs:
@@ -92,7 +114,7 @@ items:
         type:
           - boolean
         description: ''
-  - uid: utilities.ISelection.isIndexSelected
+  - uid: '@uifabric/utilities!ISelection#isIndexSelected:member(1)'
     name: isIndexSelected(index)
     fullName: isIndexSelected(index)
     langs:
@@ -109,7 +131,7 @@ items:
           description: ''
           type:
             - number
-  - uid: utilities.ISelection.isKeySelected
+  - uid: '@uifabric/utilities!ISelection#isKeySelected:member(1)'
     name: isKeySelected(key)
     fullName: isKeySelected(key)
     langs:
@@ -126,7 +148,7 @@ items:
           description: ''
           type:
             - string
-  - uid: utilities.ISelection.isModal
+  - uid: '@uifabric/utilities!ISelection#isModal:member(1)'
     name: isModal()
     fullName: isModal()
     langs:
@@ -138,7 +160,7 @@ items:
         type:
           - boolean
         description: ''
-  - uid: utilities.ISelection.isRangeSelected
+  - uid: '@uifabric/utilities!ISelection#isRangeSelected:member(1)'
     name: 'isRangeSelected(fromIndex, count)'
     fullName: 'isRangeSelected(fromIndex, count)'
     langs:
@@ -159,7 +181,18 @@ items:
           description: ''
           type:
             - number
-  - uid: utilities.ISelection.selectToIndex
+  - uid: '@uifabric/utilities!ISelection#mode:member'
+    name: mode
+    fullName: mode
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'mode: SelectionMode;'
+      return:
+        type:
+          - '@uifabric/utilities!SelectionMode:enum'
+  - uid: '@uifabric/utilities!ISelection#selectToIndex:member(1)'
     name: 'selectToIndex(index, clearSelection)'
     fullName: 'selectToIndex(index, clearSelection)'
     langs:
@@ -180,7 +213,7 @@ items:
           description: ''
           type:
             - boolean
-  - uid: utilities.ISelection.selectToKey
+  - uid: '@uifabric/utilities!ISelection#selectToKey:member(1)'
     name: 'selectToKey(key, clearSelection)'
     fullName: 'selectToKey(key, clearSelection)'
     langs:
@@ -201,7 +234,7 @@ items:
           description: ''
           type:
             - boolean
-  - uid: utilities.ISelection.setAllSelected
+  - uid: '@uifabric/utilities!ISelection#setAllSelected:member(1)'
     name: setAllSelected(isAllSelected)
     fullName: setAllSelected(isAllSelected)
     langs:
@@ -218,7 +251,7 @@ items:
           description: ''
           type:
             - boolean
-  - uid: utilities.ISelection.setChangeEvents
+  - uid: '@uifabric/utilities!ISelection#setChangeEvents:member(1)'
     name: 'setChangeEvents(isEnabled, suppressChange)'
     fullName: 'setChangeEvents(isEnabled, suppressChange)'
     langs:
@@ -239,7 +272,7 @@ items:
           description: ''
           type:
             - boolean
-  - uid: utilities.ISelection.setIndexSelected
+  - uid: '@uifabric/utilities!ISelection#setIndexSelected:member(1)'
     name: 'setIndexSelected(index, isSelected, shouldAnchor)'
     fullName: 'setIndexSelected(index, isSelected, shouldAnchor)'
     langs:
@@ -264,7 +297,7 @@ items:
           description: ''
           type:
             - boolean
-  - uid: utilities.ISelection.setItems
+  - uid: '@uifabric/utilities!ISelection#setItems:member(1)'
     name: 'setItems(items, shouldClear)'
     fullName: 'setItems(items, shouldClear)'
     langs:
@@ -285,7 +318,7 @@ items:
           description: ''
           type:
             - boolean
-  - uid: utilities.ISelection.setKeySelected
+  - uid: '@uifabric/utilities!ISelection#setKeySelected:member(1)'
     name: 'setKeySelected(key, isSelected, shouldAnchor)'
     fullName: 'setKeySelected(key, isSelected, shouldAnchor)'
     langs:
@@ -310,7 +343,7 @@ items:
           description: ''
           type:
             - boolean
-  - uid: utilities.ISelection.setModal
+  - uid: '@uifabric/utilities!ISelection#setModal:member(1)'
     name: setModal(isModal)
     fullName: setModal(isModal)
     langs:
@@ -327,7 +360,7 @@ items:
           description: ''
           type:
             - boolean
-  - uid: utilities.ISelection.toggleAllSelected
+  - uid: '@uifabric/utilities!ISelection#toggleAllSelected:member(1)'
     name: toggleAllSelected()
     fullName: toggleAllSelected()
     langs:
@@ -339,7 +372,7 @@ items:
         type:
           - void
         description: ''
-  - uid: utilities.ISelection.toggleIndexSelected
+  - uid: '@uifabric/utilities!ISelection#toggleIndexSelected:member(1)'
     name: toggleIndexSelected(index)
     fullName: toggleIndexSelected(index)
     langs:
@@ -356,7 +389,7 @@ items:
           description: ''
           type:
             - number
-  - uid: utilities.ISelection.toggleKeySelected
+  - uid: '@uifabric/utilities!ISelection#toggleKeySelected:member(1)'
     name: toggleKeySelected(key)
     fullName: toggleKeySelected(key)
     langs:
@@ -373,7 +406,7 @@ items:
           description: ''
           type:
             - string
-  - uid: utilities.ISelection.toggleRangeSelected
+  - uid: '@uifabric/utilities!ISelection#toggleRangeSelected:member(1)'
     name: 'toggleRangeSelected(fromIndex, count)'
     fullName: 'toggleRangeSelected(fromIndex, count)'
     langs:
@@ -394,36 +427,3 @@ items:
           description: ''
           type:
             - number
-  - uid: utilities.ISelection.canSelectItem
-    name: canSelectItem
-    fullName: canSelectItem
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'canSelectItem: (item: IObjectWithKey, index?: number) => boolean;'
-      return:
-        type:
-          - '(item: IObjectWithKey, index?: number) => boolean'
-  - uid: utilities.ISelection.count
-    name: count
-    fullName: count
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'count: number;'
-      return:
-        type:
-          - number
-  - uid: utilities.ISelection.mode
-    name: mode
-    fullName: mode
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'mode: SelectionMode;'
-      return:
-        type:
-          - utilities.SelectionMode

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office-ui-fabric-react.ModalBase
+  - uid: 'office-ui-fabric-react!ModalBase:class'
     name: ModalBase
     fullName: ModalBase
     langs:
@@ -9,16 +9,16 @@ items:
     extends:
       - 'BaseComponent<IModalProps, IDialogState> '
     implements:
-      - office-ui-fabric-react.IModal
-    package: office-ui-fabric-react
+      - 'office-ui-fabric-react!IModal:interface'
+    package: office-ui-fabric-react!
     children:
-      - office-ui-fabric-react.ModalBase.(constructor)
-      - office-ui-fabric-react.ModalBase.componentDidUpdate
-      - office-ui-fabric-react.ModalBase.componentWillReceiveProps
-      - office-ui-fabric-react.ModalBase.defaultProps
-      - office-ui-fabric-react.ModalBase.focus
-      - office-ui-fabric-react.ModalBase.render
-  - uid: office-ui-fabric-react.ModalBase.(constructor)
+      - 'office-ui-fabric-react!ModalBase:constructor(1)'
+      - 'office-ui-fabric-react!ModalBase#componentDidUpdate:member(1)'
+      - 'office-ui-fabric-react!ModalBase.defaultProps:member'
+      - 'office-ui-fabric-react!ModalBase#focus:member(1)'
+      - 'office-ui-fabric-react!ModalBase#render:member(1)'
+      - 'office-ui-fabric-react!ModalBase#UNSAFE_componentWillReceiveProps:member(1)'
+  - uid: 'office-ui-fabric-react!ModalBase:constructor(1)'
     summary: Constructs a new instance of the `ModalBase` class
     name: (constructor)(props)
     fullName: (constructor)(props)
@@ -31,8 +31,8 @@ items:
         - id: props
           description: ''
           type:
-            - office-ui-fabric-react.IModalProps
-  - uid: office-ui-fabric-react.ModalBase.componentDidUpdate
+            - 'office-ui-fabric-react!IModalProps:interface'
+  - uid: 'office-ui-fabric-react!ModalBase#componentDidUpdate:member(1)'
     name: 'componentDidUpdate(prevProps, prevState)'
     fullName: 'componentDidUpdate(prevProps, prevState)'
     langs:
@@ -48,29 +48,12 @@ items:
         - id: prevProps
           description: ''
           type:
-            - office-ui-fabric-react.IModalProps
+            - 'office-ui-fabric-react!IModalProps:interface'
         - id: prevState
           description: ''
           type:
-            - office-ui-fabric-react.IDialogState
-  - uid: office-ui-fabric-react.ModalBase.componentWillReceiveProps
-    name: componentWillReceiveProps(newProps)
-    fullName: componentWillReceiveProps(newProps)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'componentWillReceiveProps(newProps: IModalProps): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: newProps
-          description: ''
-          type:
-            - office-ui-fabric-react.IModalProps
-  - uid: office-ui-fabric-react.ModalBase.defaultProps
+            - 'office-ui-fabric-react!IDialogState:interface'
+  - uid: 'office-ui-fabric-react!ModalBase.defaultProps:member'
     name: defaultProps
     fullName: defaultProps
     langs:
@@ -80,8 +63,8 @@ items:
       content: 'static defaultProps: IModalProps;'
       return:
         type:
-          - office-ui-fabric-react.IModalProps
-  - uid: office-ui-fabric-react.ModalBase.focus
+          - 'office-ui-fabric-react!IModalProps:interface'
+  - uid: 'office-ui-fabric-react!ModalBase#focus:member(1)'
     name: focus()
     fullName: focus()
     langs:
@@ -93,7 +76,7 @@ items:
         type:
           - void
         description: ''
-  - uid: office-ui-fabric-react.ModalBase.render
+  - uid: 'office-ui-fabric-react!ModalBase#render:member(1)'
     name: render()
     fullName: render()
     langs:
@@ -105,3 +88,20 @@ items:
         type:
           - JSX.Element | null
         description: ''
+  - uid: 'office-ui-fabric-react!ModalBase#UNSAFE_componentWillReceiveProps:member(1)'
+    name: UNSAFE_componentWillReceiveProps(newProps)
+    fullName: UNSAFE_componentWillReceiveProps(newProps)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'UNSAFE_componentWillReceiveProps(newProps: IModalProps): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: newProps
+          description: ''
+          type:
+            - 'office-ui-fabric-react!IModalProps:interface'
