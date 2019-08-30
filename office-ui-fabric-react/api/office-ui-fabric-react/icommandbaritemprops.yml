@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office-ui-fabric-react.ICommandBarItemProps
+  - uid: 'office-ui-fabric-react!ICommandBarItemProps:interface'
     summary: ICommandBarItemProps extends IContextualMenuItem and adds a few CommandBar specific props
     name: ICommandBarItemProps
     fullName: ICommandBarItemProps
@@ -8,16 +8,16 @@ items:
       - typeScript
     type: interface
     extends:
-      - office-ui-fabric-react.IContextualMenuItem
-    package: office-ui-fabric-react
+      - 'office-ui-fabric-react!IContextualMenuItem:interface'
+    package: office-ui-fabric-react!
     children:
-      - office-ui-fabric-react.ICommandBarItemProps.buttonStyles
-      - office-ui-fabric-react.ICommandBarItemProps.cacheKey
-      - office-ui-fabric-react.ICommandBarItemProps.commandBarButtonAs
-      - office-ui-fabric-react.ICommandBarItemProps.iconOnly
-      - office-ui-fabric-react.ICommandBarItemProps.renderedInOverflow
-      - office-ui-fabric-react.ICommandBarItemProps.tooltipHostProps
-  - uid: office-ui-fabric-react.ICommandBarItemProps.buttonStyles
+      - 'office-ui-fabric-react!ICommandBarItemProps#buttonStyles:member'
+      - 'office-ui-fabric-react!ICommandBarItemProps#cacheKey:member'
+      - 'office-ui-fabric-react!ICommandBarItemProps#commandBarButtonAs:member'
+      - 'office-ui-fabric-react!ICommandBarItemProps#iconOnly:member'
+      - 'office-ui-fabric-react!ICommandBarItemProps#renderedInOverflow:member'
+      - 'office-ui-fabric-react!ICommandBarItemProps#tooltipHostProps:member'
+  - uid: 'office-ui-fabric-react!ICommandBarItemProps#buttonStyles:member'
     summary: Custom styles for individual button
     name: buttonStyles
     fullName: buttonStyles
@@ -28,8 +28,8 @@ items:
       content: 'buttonStyles?: IButtonStyles;'
       return:
         type:
-          - office-ui-fabric-react.IButtonStyles
-  - uid: office-ui-fabric-react.ICommandBarItemProps.cacheKey
+          - 'office-ui-fabric-react!IButtonStyles:interface'
+  - uid: 'office-ui-fabric-react!ICommandBarItemProps#cacheKey:member'
     summary: >-
       A custom cache key to be used for this item. If cacheKey is changed, the cache will invalidate. Defaults to key
       value;
@@ -43,7 +43,7 @@ items:
       return:
         type:
           - string
-  - uid: office-ui-fabric-react.ICommandBarItemProps.commandBarButtonAs
+  - uid: 'office-ui-fabric-react!ICommandBarItemProps#commandBarButtonAs:member'
     summary: 'Method to override the render of the individual command bar button. Note, is not used when rendered in overflow'
     name: commandBarButtonAs
     fullName: commandBarButtonAs
@@ -55,7 +55,7 @@ items:
       return:
         type:
           - IComponentAs<ICommandBarItemProps>
-  - uid: office-ui-fabric-react.ICommandBarItemProps.iconOnly
+  - uid: 'office-ui-fabric-react!ICommandBarItemProps#iconOnly:member'
     summary: Remove text when button is not in the overflow
     name: iconOnly
     fullName: iconOnly
@@ -67,7 +67,7 @@ items:
       return:
         type:
           - boolean
-  - uid: office-ui-fabric-react.ICommandBarItemProps.renderedInOverflow
+  - uid: 'office-ui-fabric-react!ICommandBarItemProps#renderedInOverflow:member'
     summary: >-
       Context under which the item is being rendered This value is controlled by the component and useful for adjusting
       onRender function
@@ -81,7 +81,7 @@ items:
       return:
         type:
           - boolean
-  - uid: office-ui-fabric-react.ICommandBarItemProps.tooltipHostProps
+  - uid: 'office-ui-fabric-react!ICommandBarItemProps#tooltipHostProps:member'
     summary: Props to pass into tooltip during iconOnly
     name: tooltipHostProps
     fullName: tooltipHostProps
@@ -92,4 +92,4 @@ items:
       content: 'tooltipHostProps?: ITooltipHostProps;'
       return:
         type:
-          - office-ui-fabric-react.ITooltipHostProps
+          - 'office-ui-fabric-react!ITooltipHostProps:interface'

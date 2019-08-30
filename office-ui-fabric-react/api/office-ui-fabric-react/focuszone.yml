@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office-ui-fabric-react.FocusZone
+  - uid: 'office-ui-fabric-react!FocusZone:class'
     name: FocusZone
     fullName: FocusZone
     langs:
@@ -9,20 +9,20 @@ items:
     extends:
       - 'React.Component<IFocusZoneProps> '
     implements:
-      - office-ui-fabric-react.IFocusZone
-    package: office-ui-fabric-react
+      - 'office-ui-fabric-react!IFocusZone:interface'
+    package: office-ui-fabric-react!
     children:
-      - office-ui-fabric-react.FocusZone.(constructor)
-      - office-ui-fabric-react.FocusZone.componentDidMount
-      - office-ui-fabric-react.FocusZone.componentDidUpdate
-      - office-ui-fabric-react.FocusZone.componentWillUnmount
-      - office-ui-fabric-react.FocusZone.defaultProps
-      - office-ui-fabric-react.FocusZone.focus
-      - office-ui-fabric-react.FocusZone.focusElement
-      - office-ui-fabric-react.FocusZone.getOuterZones
-      - office-ui-fabric-react.FocusZone.render
-      - office-ui-fabric-react.FocusZone.setFocusAlignment
-  - uid: office-ui-fabric-react.FocusZone.(constructor)
+      - 'office-ui-fabric-react!FocusZone:constructor(1)'
+      - 'office-ui-fabric-react!FocusZone#componentDidMount:member(1)'
+      - 'office-ui-fabric-react!FocusZone#componentDidUpdate:member(1)'
+      - 'office-ui-fabric-react!FocusZone#componentWillUnmount:member(1)'
+      - 'office-ui-fabric-react!FocusZone.defaultProps:member'
+      - 'office-ui-fabric-react!FocusZone#focus:member(1)'
+      - 'office-ui-fabric-react!FocusZone#focusElement:member(1)'
+      - 'office-ui-fabric-react!FocusZone.getOuterZones:member(1)'
+      - 'office-ui-fabric-react!FocusZone#render:member(1)'
+      - 'office-ui-fabric-react!FocusZone#setFocusAlignment:member(1)'
+  - uid: 'office-ui-fabric-react!FocusZone:constructor(1)'
     summary: Constructs a new instance of the `FocusZone` class
     name: (constructor)(props)
     fullName: (constructor)(props)
@@ -35,8 +35,8 @@ items:
         - id: props
           description: ''
           type:
-            - office-ui-fabric-react.IFocusZoneProps
-  - uid: office-ui-fabric-react.FocusZone.componentDidMount
+            - 'office-ui-fabric-react!IFocusZoneProps:interface'
+  - uid: 'office-ui-fabric-react!FocusZone#componentDidMount:member(1)'
     name: componentDidMount()
     fullName: componentDidMount()
     langs:
@@ -48,7 +48,7 @@ items:
         type:
           - void
         description: ''
-  - uid: office-ui-fabric-react.FocusZone.componentDidUpdate
+  - uid: 'office-ui-fabric-react!FocusZone#componentDidUpdate:member(1)'
     name: componentDidUpdate()
     fullName: componentDidUpdate()
     langs:
@@ -60,7 +60,7 @@ items:
         type:
           - void
         description: ''
-  - uid: office-ui-fabric-react.FocusZone.componentWillUnmount
+  - uid: 'office-ui-fabric-react!FocusZone#componentWillUnmount:member(1)'
     name: componentWillUnmount()
     fullName: componentWillUnmount()
     langs:
@@ -72,7 +72,7 @@ items:
         type:
           - void
         description: ''
-  - uid: office-ui-fabric-react.FocusZone.defaultProps
+  - uid: 'office-ui-fabric-react!FocusZone.defaultProps:member'
     name: defaultProps
     fullName: defaultProps
     langs:
@@ -82,8 +82,8 @@ items:
       content: 'static defaultProps: IFocusZoneProps;'
       return:
         type:
-          - office-ui-fabric-react.IFocusZoneProps
-  - uid: office-ui-fabric-react.FocusZone.focus
+          - 'office-ui-fabric-react!IFocusZoneProps:interface'
+  - uid: 'office-ui-fabric-react!FocusZone#focus:member(1)'
     summary: Sets focus to the first tabbable item in the zone.
     name: focus(forceIntoFirstElement)
     fullName: focus(forceIntoFirstElement)
@@ -101,7 +101,7 @@ items:
           description: 'If true, focus will be forced into the first element, even if focus is already in the focus zone.'
           type:
             - boolean
-  - uid: office-ui-fabric-react.FocusZone.focusElement
+  - uid: 'office-ui-fabric-react!FocusZone#focusElement:member(1)'
     summary: >-
       Sets focus to a specific child element within the zone. This can be used in conjunction with onBeforeFocus to
       created delayed focus scenarios (like animate the scroll position to the correct location and then focus.)
@@ -121,7 +121,7 @@ items:
           description: The child element within the zone to focus.
           type:
             - HTMLElement
-  - uid: office-ui-fabric-react.FocusZone.getOuterZones
+  - uid: 'office-ui-fabric-react!FocusZone.getOuterZones:member(1)'
     summary: Used for testing purposes only.
     name: getOuterZones()
     fullName: getOuterZones()
@@ -134,7 +134,7 @@ items:
         type:
           - number
         description: ''
-  - uid: office-ui-fabric-react.FocusZone.render
+  - uid: 'office-ui-fabric-react!FocusZone#render:member(1)'
     name: render()
     fullName: render()
     langs:
@@ -146,7 +146,7 @@ items:
         type:
           - JSX.Element
         description: ''
-  - uid: office-ui-fabric-react.FocusZone.setFocusAlignment
+  - uid: 'office-ui-fabric-react!FocusZone#setFocusAlignment:member(1)'
     summary: >-
       Forces horizontal alignment in the context of vertical arrowing to use specific point as the reference, rather
       than a center based on the last horizontal motion.
@@ -165,4 +165,4 @@ items:
         - id: point
           description: the new reference point.
           type:
-            - utilities.IPoint
+            - '@uifabric/utilities!IPoint:interface'

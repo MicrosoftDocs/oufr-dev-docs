@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office-ui-fabric-react.SearchBoxBase
+  - uid: 'office-ui-fabric-react!SearchBoxBase:class'
     name: SearchBoxBase
     fullName: SearchBoxBase
     langs:
@@ -8,16 +8,16 @@ items:
     type: class
     extends:
       - 'React.Component<ISearchBoxProps, ISearchBoxState> '
-    package: office-ui-fabric-react
+    package: office-ui-fabric-react!
     children:
-      - office-ui-fabric-react.SearchBoxBase.(constructor)
-      - office-ui-fabric-react.SearchBoxBase.componentWillMount
-      - office-ui-fabric-react.SearchBoxBase.componentWillReceiveProps
-      - office-ui-fabric-react.SearchBoxBase.defaultProps
-      - office-ui-fabric-react.SearchBoxBase.focus
-      - office-ui-fabric-react.SearchBoxBase.hasFocus
-      - office-ui-fabric-react.SearchBoxBase.render
-  - uid: office-ui-fabric-react.SearchBoxBase.(constructor)
+      - 'office-ui-fabric-react!SearchBoxBase:constructor(1)'
+      - 'office-ui-fabric-react!SearchBoxBase.defaultProps:member'
+      - 'office-ui-fabric-react!SearchBoxBase#focus:member(1)'
+      - 'office-ui-fabric-react!SearchBoxBase#hasFocus:member(1)'
+      - 'office-ui-fabric-react!SearchBoxBase#render:member(1)'
+      - 'office-ui-fabric-react!SearchBoxBase#UNSAFE_componentWillMount:member(1)'
+      - 'office-ui-fabric-react!SearchBoxBase#UNSAFE_componentWillReceiveProps:member(1)'
+  - uid: 'office-ui-fabric-react!SearchBoxBase:constructor(1)'
     summary: Constructs a new instance of the `SearchBoxBase` class
     name: (constructor)(props)
     fullName: (constructor)(props)
@@ -30,37 +30,8 @@ items:
         - id: props
           description: ''
           type:
-            - office-ui-fabric-react.ISearchBoxProps
-  - uid: office-ui-fabric-react.SearchBoxBase.componentWillMount
-    name: componentWillMount()
-    fullName: componentWillMount()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'componentWillMount(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: office-ui-fabric-react.SearchBoxBase.componentWillReceiveProps
-    name: componentWillReceiveProps(newProps)
-    fullName: componentWillReceiveProps(newProps)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'componentWillReceiveProps(newProps: ISearchBoxProps): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: newProps
-          description: ''
-          type:
-            - office-ui-fabric-react.ISearchBoxProps
-  - uid: office-ui-fabric-react.SearchBoxBase.defaultProps
+            - 'office-ui-fabric-react!ISearchBoxProps:interface'
+  - uid: 'office-ui-fabric-react!SearchBoxBase.defaultProps:member'
     name: defaultProps
     fullName: defaultProps
     langs:
@@ -71,7 +42,7 @@ items:
       return:
         type:
           - 'Pick<ISearchBoxProps, ''disableAnimation'' | ''clearButtonProps''>'
-  - uid: office-ui-fabric-react.SearchBoxBase.focus
+  - uid: 'office-ui-fabric-react!SearchBoxBase#focus:member(1)'
     summary: Sets focus to the search box input field
     name: focus()
     fullName: focus()
@@ -84,7 +55,7 @@ items:
         type:
           - void
         description: ''
-  - uid: office-ui-fabric-react.SearchBoxBase.hasFocus
+  - uid: 'office-ui-fabric-react!SearchBoxBase#hasFocus:member(1)'
     summary: Returns whether or not the SearchBox has focus
     name: hasFocus()
     fullName: hasFocus()
@@ -97,7 +68,7 @@ items:
         type:
           - boolean
         description: ''
-  - uid: office-ui-fabric-react.SearchBoxBase.render
+  - uid: 'office-ui-fabric-react!SearchBoxBase#render:member(1)'
     name: render()
     fullName: render()
     langs:
@@ -109,3 +80,32 @@ items:
         type:
           - JSX.Element
         description: ''
+  - uid: 'office-ui-fabric-react!SearchBoxBase#UNSAFE_componentWillMount:member(1)'
+    name: UNSAFE_componentWillMount()
+    fullName: UNSAFE_componentWillMount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'UNSAFE_componentWillMount(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'office-ui-fabric-react!SearchBoxBase#UNSAFE_componentWillReceiveProps:member(1)'
+    name: UNSAFE_componentWillReceiveProps(newProps)
+    fullName: UNSAFE_componentWillReceiveProps(newProps)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'UNSAFE_componentWillReceiveProps(newProps: ISearchBoxProps): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: newProps
+          description: ''
+          type:
+            - 'office-ui-fabric-react!ISearchBoxProps:interface'

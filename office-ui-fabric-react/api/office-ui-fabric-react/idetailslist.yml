@@ -1,19 +1,19 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office-ui-fabric-react.IDetailsList
+  - uid: 'office-ui-fabric-react!IDetailsList:interface'
     name: IDetailsList
     fullName: IDetailsList
     langs:
       - typeScript
     type: interface
     extends:
-      - office-ui-fabric-react.IList
-    package: office-ui-fabric-react
+      - 'office-ui-fabric-react!IList:interface'
+    package: office-ui-fabric-react!
     children:
-      - office-ui-fabric-react.IDetailsList.focusIndex
-      - office-ui-fabric-react.IDetailsList.forceUpdate
-      - office-ui-fabric-react.IDetailsList.getStartItemIndexInView
-  - uid: office-ui-fabric-react.IDetailsList.focusIndex
+      - 'office-ui-fabric-react!IDetailsList#focusIndex:member'
+      - 'office-ui-fabric-react!IDetailsList#forceUpdate:member'
+      - 'office-ui-fabric-react!IDetailsList#getStartItemIndexInView:member'
+  - uid: 'office-ui-fabric-react!IDetailsList#focusIndex:member'
     summary: Scroll to and focus the item at the given index. focusIndex will call scrollToIndex on the specified index.
     name: focusIndex
     fullName: focusIndex
@@ -29,7 +29,7 @@ items:
           - >-
             (index: number, forceIntoFirstElement?: boolean, measureItem?: (itemIndex: number) => number, scrollToMode?:
             ScrollToMode) => void
-  - uid: office-ui-fabric-react.IDetailsList.forceUpdate
+  - uid: 'office-ui-fabric-react!IDetailsList#forceUpdate:member'
     summary: >-
       Ensures that the list content is updated. Call this in cases where the list prop updates don't change, but the
       list still needs to be re-evaluated. For example, if a sizer bar is adjusted and causes the list width to change,
@@ -45,7 +45,7 @@ items:
       return:
         type:
           - () => void
-  - uid: office-ui-fabric-react.IDetailsList.getStartItemIndexInView
+  - uid: 'office-ui-fabric-react!IDetailsList#getStartItemIndexInView:member'
     summary: Get the start index of the page that is currently in view
     name: getStartItemIndexInView
     fullName: getStartItemIndexInView

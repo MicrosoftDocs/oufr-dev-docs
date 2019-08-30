@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office-ui-fabric-react.CoachmarkBase
+  - uid: 'office-ui-fabric-react!CoachmarkBase:class'
     name: CoachmarkBase
     fullName: CoachmarkBase
     langs:
@@ -9,18 +9,18 @@ items:
     extends:
       - 'BaseComponent<ICoachmarkProps, ICoachmarkState> '
     implements:
-      - office-ui-fabric-react.ICoachmark
-    package: office-ui-fabric-react
+      - 'office-ui-fabric-react!ICoachmark:interface'
+    package: office-ui-fabric-react!
     children:
-      - office-ui-fabric-react.CoachmarkBase.(constructor)
-      - office-ui-fabric-react.CoachmarkBase.componentDidMount
-      - office-ui-fabric-react.CoachmarkBase.componentDidUpdate
-      - office-ui-fabric-react.CoachmarkBase.componentWillReceiveProps
-      - office-ui-fabric-react.CoachmarkBase.defaultProps
-      - office-ui-fabric-react.CoachmarkBase.dismiss
-      - office-ui-fabric-react.CoachmarkBase.render
-      - office-ui-fabric-react.CoachmarkBase.shouldComponentUpdate
-  - uid: office-ui-fabric-react.CoachmarkBase.(constructor)
+      - 'office-ui-fabric-react!CoachmarkBase:constructor(1)'
+      - 'office-ui-fabric-react!CoachmarkBase#componentDidMount:member(1)'
+      - 'office-ui-fabric-react!CoachmarkBase#componentDidUpdate:member(1)'
+      - 'office-ui-fabric-react!CoachmarkBase.defaultProps:member'
+      - 'office-ui-fabric-react!CoachmarkBase#dismiss:member'
+      - 'office-ui-fabric-react!CoachmarkBase#render:member(1)'
+      - 'office-ui-fabric-react!CoachmarkBase#shouldComponentUpdate:member(1)'
+      - 'office-ui-fabric-react!CoachmarkBase#UNSAFE_componentWillReceiveProps:member(1)'
+  - uid: 'office-ui-fabric-react!CoachmarkBase:constructor(1)'
     summary: Constructs a new instance of the `CoachmarkBase` class
     name: (constructor)(props)
     fullName: (constructor)(props)
@@ -33,8 +33,8 @@ items:
         - id: props
           description: ''
           type:
-            - office-ui-fabric-react.ICoachmarkProps
-  - uid: office-ui-fabric-react.CoachmarkBase.componentDidMount
+            - 'office-ui-fabric-react!ICoachmarkProps:interface'
+  - uid: 'office-ui-fabric-react!CoachmarkBase#componentDidMount:member(1)'
     name: componentDidMount()
     fullName: componentDidMount()
     langs:
@@ -46,7 +46,7 @@ items:
         type:
           - void
         description: ''
-  - uid: office-ui-fabric-react.CoachmarkBase.componentDidUpdate
+  - uid: 'office-ui-fabric-react!CoachmarkBase#componentDidUpdate:member(1)'
     name: 'componentDidUpdate(prevProps, prevState)'
     fullName: 'componentDidUpdate(prevProps, prevState)'
     langs:
@@ -62,29 +62,12 @@ items:
         - id: prevProps
           description: ''
           type:
-            - office-ui-fabric-react.ICoachmarkProps
+            - 'office-ui-fabric-react!ICoachmarkProps:interface'
         - id: prevState
           description: ''
           type:
-            - office-ui-fabric-react.ICoachmarkState
-  - uid: office-ui-fabric-react.CoachmarkBase.componentWillReceiveProps
-    name: componentWillReceiveProps(newProps)
-    fullName: componentWillReceiveProps(newProps)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'componentWillReceiveProps(newProps: ICoachmarkProps): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: newProps
-          description: ''
-          type:
-            - office-ui-fabric-react.ICoachmarkProps
-  - uid: office-ui-fabric-react.CoachmarkBase.defaultProps
+            - 'office-ui-fabric-react!ICoachmarkState:interface'
+  - uid: 'office-ui-fabric-react!CoachmarkBase.defaultProps:member'
     name: defaultProps
     fullName: defaultProps
     langs:
@@ -95,7 +78,7 @@ items:
       return:
         type:
           - Partial<ICoachmarkProps>
-  - uid: office-ui-fabric-react.CoachmarkBase.dismiss
+  - uid: 'office-ui-fabric-react!CoachmarkBase#dismiss:member'
     name: dismiss
     fullName: dismiss
     langs:
@@ -110,7 +93,7 @@ items:
           - >-
             (ev?: Event | React.KeyboardEvent<HTMLElement> | React.MouseEvent<HTMLElement, MouseEvent> | undefined) =>
             void
-  - uid: office-ui-fabric-react.CoachmarkBase.render
+  - uid: 'office-ui-fabric-react!CoachmarkBase#render:member(1)'
     name: render()
     fullName: render()
     langs:
@@ -122,7 +105,7 @@ items:
         type:
           - JSX.Element
         description: ''
-  - uid: office-ui-fabric-react.CoachmarkBase.shouldComponentUpdate
+  - uid: 'office-ui-fabric-react!CoachmarkBase#shouldComponentUpdate:member(1)'
     name: 'shouldComponentUpdate(newProps, newState)'
     fullName: 'shouldComponentUpdate(newProps, newState)'
     langs:
@@ -138,8 +121,25 @@ items:
         - id: newProps
           description: ''
           type:
-            - office-ui-fabric-react.ICoachmarkProps
+            - 'office-ui-fabric-react!ICoachmarkProps:interface'
         - id: newState
           description: ''
           type:
-            - office-ui-fabric-react.ICoachmarkState
+            - 'office-ui-fabric-react!ICoachmarkState:interface'
+  - uid: 'office-ui-fabric-react!CoachmarkBase#UNSAFE_componentWillReceiveProps:member(1)'
+    name: UNSAFE_componentWillReceiveProps(newProps)
+    fullName: UNSAFE_componentWillReceiveProps(newProps)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'UNSAFE_componentWillReceiveProps(newProps: ICoachmarkProps): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: newProps
+          description: ''
+          type:
+            - 'office-ui-fabric-react!ICoachmarkProps:interface'

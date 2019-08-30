@@ -1,22 +1,25 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office-ui-fabric-react.ISuggestions
+  - uid: 'office-ui-fabric-react!ISuggestions:interface'
     summary: Suggestions component.
     name: ISuggestions
     fullName: ISuggestions
     langs:
       - typeScript
     type: interface
-    package: office-ui-fabric-react
+    syntax:
+      typeParameters:
+        - id: T
+    package: office-ui-fabric-react!
     children:
-      - office-ui-fabric-react.ISuggestions.executeSelectedAction
-      - office-ui-fabric-react.ISuggestions.focusAboveSuggestions
-      - office-ui-fabric-react.ISuggestions.focusBelowSuggestions
-      - office-ui-fabric-react.ISuggestions.focusSearchForMoreButton
-      - office-ui-fabric-react.ISuggestions.hasSuggestedAction
-      - office-ui-fabric-react.ISuggestions.hasSuggestedActionSelected
-      - office-ui-fabric-react.ISuggestions.tryHandleKeyDown
-  - uid: office-ui-fabric-react.ISuggestions.executeSelectedAction
+      - 'office-ui-fabric-react!ISuggestions#executeSelectedAction:member'
+      - 'office-ui-fabric-react!ISuggestions#focusAboveSuggestions:member'
+      - 'office-ui-fabric-react!ISuggestions#focusBelowSuggestions:member'
+      - 'office-ui-fabric-react!ISuggestions#focusSearchForMoreButton:member'
+      - 'office-ui-fabric-react!ISuggestions#hasSuggestedAction:member'
+      - 'office-ui-fabric-react!ISuggestions#hasSuggestedActionSelected:member'
+      - 'office-ui-fabric-react!ISuggestions#tryHandleKeyDown:member'
+  - uid: 'office-ui-fabric-react!ISuggestions#executeSelectedAction:member'
     summary: Execute the action selected. Can be SearchMore or ForceResolve actions.
     name: executeSelectedAction
     fullName: executeSelectedAction
@@ -28,7 +31,7 @@ items:
       return:
         type:
           - () => void
-  - uid: office-ui-fabric-react.ISuggestions.focusAboveSuggestions
+  - uid: 'office-ui-fabric-react!ISuggestions#focusAboveSuggestions:member'
     summary: Focus on the ForceResolve action above the suggestions. If not available then focus on SearchMore action.
     name: focusAboveSuggestions
     fullName: focusAboveSuggestions
@@ -40,7 +43,7 @@ items:
       return:
         type:
           - () => void
-  - uid: office-ui-fabric-react.ISuggestions.focusBelowSuggestions
+  - uid: 'office-ui-fabric-react!ISuggestions#focusBelowSuggestions:member'
     summary: Focus on the SearchMore action below the suggestions. If not available then focus on ForceResolve action.
     name: focusBelowSuggestions
     fullName: focusBelowSuggestions
@@ -52,7 +55,7 @@ items:
       return:
         type:
           - () => void
-  - uid: office-ui-fabric-react.ISuggestions.focusSearchForMoreButton
+  - uid: 'office-ui-fabric-react!ISuggestions#focusSearchForMoreButton:member'
     summary: Focus the SearchMore action button.
     name: focusSearchForMoreButton
     fullName: focusSearchForMoreButton
@@ -64,7 +67,7 @@ items:
       return:
         type:
           - () => void
-  - uid: office-ui-fabric-react.ISuggestions.hasSuggestedAction
+  - uid: 'office-ui-fabric-react!ISuggestions#hasSuggestedAction:member'
     summary: Whether it has any suggested actions like ForceResolve or SearchMore.
     name: hasSuggestedAction
     fullName: hasSuggestedAction
@@ -76,7 +79,7 @@ items:
       return:
         type:
           - () => boolean
-  - uid: office-ui-fabric-react.ISuggestions.hasSuggestedActionSelected
+  - uid: 'office-ui-fabric-react!ISuggestions#hasSuggestedActionSelected:member'
     summary: Whether any of the suggested actions (ForceResolve or SearchMore) is selected.
     name: hasSuggestedActionSelected
     fullName: hasSuggestedActionSelected
@@ -88,7 +91,7 @@ items:
       return:
         type:
           - () => boolean
-  - uid: office-ui-fabric-react.ISuggestions.tryHandleKeyDown
+  - uid: 'office-ui-fabric-react!ISuggestions#tryHandleKeyDown:member'
     summary: 'Returns true if the event was handled, false otherwise.'
     name: tryHandleKeyDown
     fullName: tryHandleKeyDown

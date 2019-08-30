@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office-ui-fabric-react.ISelectionZoneProps
+  - uid: 'office-ui-fabric-react!ISelectionZoneProps:interface'
     name: ISelectionZoneProps
     fullName: ISelectionZoneProps
     langs:
@@ -8,19 +8,19 @@ items:
     type: interface
     extends:
       - 'React.ClassAttributes<SelectionZone> '
-    package: office-ui-fabric-react
+    package: office-ui-fabric-react!
     children:
-      - office-ui-fabric-react.ISelectionZoneProps.componentRef
-      - office-ui-fabric-react.ISelectionZoneProps.disableAutoSelectOnInputElements
-      - office-ui-fabric-react.ISelectionZoneProps.enterModalOnTouch
-      - office-ui-fabric-react.ISelectionZoneProps.isSelectedOnFocus
-      - office-ui-fabric-react.ISelectionZoneProps.layout
-      - office-ui-fabric-react.ISelectionZoneProps.onItemContextMenu
-      - office-ui-fabric-react.ISelectionZoneProps.onItemInvoked
-      - office-ui-fabric-react.ISelectionZoneProps.selection
-      - office-ui-fabric-react.ISelectionZoneProps.selectionMode
-      - office-ui-fabric-react.ISelectionZoneProps.selectionPreservedOnEmptyClick
-  - uid: office-ui-fabric-react.ISelectionZoneProps.componentRef
+      - 'office-ui-fabric-react!ISelectionZoneProps#componentRef:member'
+      - 'office-ui-fabric-react!ISelectionZoneProps#disableAutoSelectOnInputElements:member'
+      - 'office-ui-fabric-react!ISelectionZoneProps#enterModalOnTouch:member'
+      - 'office-ui-fabric-react!ISelectionZoneProps#isSelectedOnFocus:member'
+      - 'office-ui-fabric-react!ISelectionZoneProps#layout:member'
+      - 'office-ui-fabric-react!ISelectionZoneProps#onItemContextMenu:member'
+      - 'office-ui-fabric-react!ISelectionZoneProps#onItemInvoked:member'
+      - 'office-ui-fabric-react!ISelectionZoneProps#selection:member'
+      - 'office-ui-fabric-react!ISelectionZoneProps#selectionMode:member'
+      - 'office-ui-fabric-react!ISelectionZoneProps#selectionPreservedOnEmptyClick:member'
+  - uid: 'office-ui-fabric-react!ISelectionZoneProps#componentRef:member'
     summary: Reference to the component interface.
     name: componentRef
     fullName: componentRef
@@ -32,7 +32,7 @@ items:
       return:
         type:
           - () => void
-  - uid: office-ui-fabric-react.ISelectionZoneProps.disableAutoSelectOnInputElements
+  - uid: 'office-ui-fabric-react!ISelectionZoneProps#disableAutoSelectOnInputElements:member'
     summary: 'If true, disables automatic selection on input elements.'
     name: disableAutoSelectOnInputElements
     fullName: disableAutoSelectOnInputElements
@@ -44,7 +44,7 @@ items:
       return:
         type:
           - boolean
-  - uid: office-ui-fabric-react.ISelectionZoneProps.enterModalOnTouch
+  - uid: 'office-ui-fabric-react!ISelectionZoneProps#enterModalOnTouch:member'
     summary: 'If true, modal selection is enabled on touch event.'
     name: enterModalOnTouch
     fullName: enterModalOnTouch
@@ -56,7 +56,7 @@ items:
       return:
         type:
           - boolean
-  - uid: office-ui-fabric-react.ISelectionZoneProps.isSelectedOnFocus
+  - uid: 'office-ui-fabric-react!ISelectionZoneProps#isSelectedOnFocus:member'
     summary: Determines if an item is selected on focus.
     name: isSelectedOnFocus
     fullName: isSelectedOnFocus
@@ -68,9 +68,9 @@ items:
       return:
         type:
           - boolean
-  - uid: office-ui-fabric-react.ISelectionZoneProps.layout
+  - uid: 'office-ui-fabric-react!ISelectionZoneProps#layout:member'
     deprecated:
-      content: 'No longer in use, focus is now managed by [FocusZone](xref:office-ui-fabric-react.FocusZone)<!-- -->.'
+      content: 'No longer in use, focus is now managed by [FocusZone](xref:office-ui-fabric-react!FocusZone:class)<!-- -->.'
     name: layout
     fullName: layout
     langs:
@@ -81,7 +81,7 @@ items:
       return:
         type:
           - '{}'
-  - uid: office-ui-fabric-react.ISelectionZoneProps.onItemContextMenu
+  - uid: 'office-ui-fabric-react!ISelectionZoneProps#onItemContextMenu:member'
     summary: Optional callback for when an item's contextual menu action occurs.
     name: onItemContextMenu
     fullName: onItemContextMenu
@@ -93,7 +93,7 @@ items:
       return:
         type:
           - '(item?: any, index?: number, ev?: Event) => void | boolean'
-  - uid: office-ui-fabric-react.ISelectionZoneProps.onItemInvoked
+  - uid: 'office-ui-fabric-react!ISelectionZoneProps#onItemInvoked:member'
     summary: Optional callback for when an item is invoked via ENTER or double-click.
     name: onItemInvoked
     fullName: onItemInvoked
@@ -105,8 +105,8 @@ items:
       return:
         type:
           - '(item?: IObjectWithKey, index?: number, ev?: Event) => void'
-  - uid: office-ui-fabric-react.ISelectionZoneProps.selection
-    summary: 'Required  instance bound to the [SelectionZone](xref:office-ui-fabric-react.SelectionZone)<!-- -->.'
+  - uid: 'office-ui-fabric-react!ISelectionZoneProps#selection:member'
+    summary: 'Required  instance bound to the [SelectionZone](xref:office-ui-fabric-react!SelectionZone:class)<!-- -->.'
     name: selection
     fullName: selection
     langs:
@@ -116,8 +116,8 @@ items:
       content: 'selection: ISelection;'
       return:
         type:
-          - utilities.ISelection
-  - uid: office-ui-fabric-react.ISelectionZoneProps.selectionMode
+          - '@uifabric/utilities!ISelection:interface'
+  - uid: 'office-ui-fabric-react!ISelectionZoneProps#selectionMode:member'
     summary: 'The mode of Selection, where the value is one of ''none'', ''single'', or ''multiple''.'
     name: selectionMode
     fullName: selectionMode
@@ -128,8 +128,8 @@ items:
       content: 'selectionMode?: SelectionMode;'
       return:
         type:
-          - utilities.SelectionMode
-  - uid: office-ui-fabric-react.ISelectionZoneProps.selectionPreservedOnEmptyClick
+          - '@uifabric/utilities!SelectionMode:enum'
+  - uid: 'office-ui-fabric-react!ISelectionZoneProps#selectionPreservedOnEmptyClick:member'
     summary: 'If true, selection is preserved on outer click.'
     name: selectionPreservedOnEmptyClick
     fullName: selectionPreservedOnEmptyClick

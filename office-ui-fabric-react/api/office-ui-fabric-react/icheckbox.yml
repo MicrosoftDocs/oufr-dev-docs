@@ -1,17 +1,18 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office-ui-fabric-react.ICheckbox
+  - uid: 'office-ui-fabric-react!ICheckbox:interface'
     summary: Checkbox class interface.
     name: ICheckbox
     fullName: ICheckbox
     langs:
       - typeScript
     type: interface
-    package: office-ui-fabric-react
+    package: office-ui-fabric-react!
     children:
-      - office-ui-fabric-react.ICheckbox.checked
-      - office-ui-fabric-react.ICheckbox.focus
-  - uid: office-ui-fabric-react.ICheckbox.checked
+      - 'office-ui-fabric-react!ICheckbox#checked:member'
+      - 'office-ui-fabric-react!ICheckbox#focus:member'
+      - 'office-ui-fabric-react!ICheckbox#indeterminate:member'
+  - uid: 'office-ui-fabric-react!ICheckbox#checked:member'
     summary: Gets the current checked state.
     name: checked
     fullName: checked
@@ -23,7 +24,7 @@ items:
       return:
         type:
           - boolean
-  - uid: office-ui-fabric-react.ICheckbox.focus
+  - uid: 'office-ui-fabric-react!ICheckbox#focus:member'
     summary: Sets focus to the checkbox.
     name: focus
     fullName: focus
@@ -35,3 +36,15 @@ items:
       return:
         type:
           - () => void
+  - uid: 'office-ui-fabric-react!ICheckbox#indeterminate:member'
+    summary: Gets the current indeterminate state.
+    name: indeterminate
+    fullName: indeterminate
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'indeterminate: boolean;'
+      return:
+        type:
+          - boolean

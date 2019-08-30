@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office-ui-fabric-react.ComboBox
+  - uid: 'office-ui-fabric-react!ComboBox:class'
     name: ComboBox
     fullName: ComboBox
     langs:
@@ -8,19 +8,19 @@ items:
     type: class
     extends:
       - 'BaseComponent<IComboBoxProps, IComboBoxState> '
-    package: office-ui-fabric-react
+    package: office-ui-fabric-react!
     children:
-      - office-ui-fabric-react.ComboBox.(constructor)
-      - office-ui-fabric-react.ComboBox.componentDidMount
-      - office-ui-fabric-react.ComboBox.componentDidUpdate
-      - office-ui-fabric-react.ComboBox.componentWillReceiveProps
-      - office-ui-fabric-react.ComboBox.componentWillUnmount
-      - office-ui-fabric-react.ComboBox.defaultProps
-      - office-ui-fabric-react.ComboBox.dismissMenu
-      - office-ui-fabric-react.ComboBox.focus
-      - office-ui-fabric-react.ComboBox.render
-      - office-ui-fabric-react.ComboBox.selectedOptions
-  - uid: office-ui-fabric-react.ComboBox.(constructor)
+      - 'office-ui-fabric-react!ComboBox:constructor(1)'
+      - 'office-ui-fabric-react!ComboBox#componentDidMount:member(1)'
+      - 'office-ui-fabric-react!ComboBox#componentDidUpdate:member(1)'
+      - 'office-ui-fabric-react!ComboBox#componentWillUnmount:member(1)'
+      - 'office-ui-fabric-react!ComboBox.defaultProps:member'
+      - 'office-ui-fabric-react!ComboBox#dismissMenu:member'
+      - 'office-ui-fabric-react!ComboBox#focus:member'
+      - 'office-ui-fabric-react!ComboBox#render:member(1)'
+      - 'office-ui-fabric-react!ComboBox#selectedOptions:member'
+      - 'office-ui-fabric-react!ComboBox#UNSAFE_componentWillReceiveProps:member(1)'
+  - uid: 'office-ui-fabric-react!ComboBox:constructor(1)'
     summary: Constructs a new instance of the `ComboBox` class
     name: (constructor)(props)
     fullName: (constructor)(props)
@@ -33,8 +33,8 @@ items:
         - id: props
           description: ''
           type:
-            - office-ui-fabric-react.IComboBoxProps
-  - uid: office-ui-fabric-react.ComboBox.componentDidMount
+            - 'office-ui-fabric-react!IComboBoxProps:interface'
+  - uid: 'office-ui-fabric-react!ComboBox#componentDidMount:member(1)'
     name: componentDidMount()
     fullName: componentDidMount()
     langs:
@@ -46,7 +46,7 @@ items:
         type:
           - void
         description: ''
-  - uid: office-ui-fabric-react.ComboBox.componentDidUpdate
+  - uid: 'office-ui-fabric-react!ComboBox#componentDidUpdate:member(1)'
     name: 'componentDidUpdate(prevProps, prevState)'
     fullName: 'componentDidUpdate(prevProps, prevState)'
     langs:
@@ -62,29 +62,12 @@ items:
         - id: prevProps
           description: ''
           type:
-            - office-ui-fabric-react.IComboBoxProps
+            - 'office-ui-fabric-react!IComboBoxProps:interface'
         - id: prevState
           description: ''
           type:
-            - office-ui-fabric-react.IComboBoxState
-  - uid: office-ui-fabric-react.ComboBox.componentWillReceiveProps
-    name: componentWillReceiveProps(newProps)
-    fullName: componentWillReceiveProps(newProps)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'componentWillReceiveProps(newProps: IComboBoxProps): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: newProps
-          description: ''
-          type:
-            - office-ui-fabric-react.IComboBoxProps
-  - uid: office-ui-fabric-react.ComboBox.componentWillUnmount
+            - 'office-ui-fabric-react!IComboBoxState:interface'
+  - uid: 'office-ui-fabric-react!ComboBox#componentWillUnmount:member(1)'
     name: componentWillUnmount()
     fullName: componentWillUnmount()
     langs:
@@ -96,7 +79,7 @@ items:
         type:
           - void
         description: ''
-  - uid: office-ui-fabric-react.ComboBox.defaultProps
+  - uid: 'office-ui-fabric-react!ComboBox.defaultProps:member'
     name: defaultProps
     fullName: defaultProps
     langs:
@@ -106,8 +89,8 @@ items:
       content: 'static defaultProps: IComboBoxProps;'
       return:
         type:
-          - office-ui-fabric-react.IComboBoxProps
-  - uid: office-ui-fabric-react.ComboBox.dismissMenu
+          - 'office-ui-fabric-react!IComboBoxProps:interface'
+  - uid: 'office-ui-fabric-react!ComboBox#dismissMenu:member'
     summary: Close menu callout if it is open
     name: dismissMenu
     fullName: dismissMenu
@@ -119,7 +102,7 @@ items:
       return:
         type:
           - () => void
-  - uid: office-ui-fabric-react.ComboBox.focus
+  - uid: 'office-ui-fabric-react!ComboBox#focus:member'
     name: focus
     fullName: focus
     langs:
@@ -130,7 +113,7 @@ items:
       return:
         type:
           - '(shouldOpenOnFocus?: boolean | undefined, useFocusAsync?: boolean | undefined) => void'
-  - uid: office-ui-fabric-react.ComboBox.render
+  - uid: 'office-ui-fabric-react!ComboBox#render:member(1)'
     name: render()
     fullName: render()
     langs:
@@ -142,7 +125,7 @@ items:
         type:
           - JSX.Element
         description: ''
-  - uid: office-ui-fabric-react.ComboBox.selectedOptions
+  - uid: 'office-ui-fabric-react!ComboBox#selectedOptions:member'
     summary: All selected options
     name: selectedOptions
     fullName: selectedOptions
@@ -154,3 +137,20 @@ items:
       return:
         type:
           - 'IComboBoxOption[]'
+  - uid: 'office-ui-fabric-react!ComboBox#UNSAFE_componentWillReceiveProps:member(1)'
+    name: UNSAFE_componentWillReceiveProps(newProps)
+    fullName: UNSAFE_componentWillReceiveProps(newProps)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'UNSAFE_componentWillReceiveProps(newProps: IComboBoxProps): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: newProps
+          description: ''
+          type:
+            - 'office-ui-fabric-react!IComboBoxProps:interface'

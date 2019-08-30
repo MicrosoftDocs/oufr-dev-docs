@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office-ui-fabric-react.DropdownBase
+  - uid: 'office-ui-fabric-react!DropdownBase:class'
     name: DropdownBase
     fullName: DropdownBase
     langs:
@@ -9,19 +9,19 @@ items:
     extends:
       - 'React.Component<IDropdownInternalProps, IDropdownState> '
     implements:
-      - office-ui-fabric-react.IDropdown
-    package: office-ui-fabric-react
+      - 'office-ui-fabric-react!IDropdown:interface'
+    package: office-ui-fabric-react!
     children:
-      - office-ui-fabric-react.DropdownBase.(constructor)
-      - office-ui-fabric-react.DropdownBase.componentDidUpdate
-      - office-ui-fabric-react.DropdownBase.componentWillReceiveProps
-      - office-ui-fabric-react.DropdownBase.componentWillUnmount
-      - office-ui-fabric-react.DropdownBase.defaultProps
-      - office-ui-fabric-react.DropdownBase.focus
-      - office-ui-fabric-react.DropdownBase.render
-      - office-ui-fabric-react.DropdownBase.selectedOptions
-      - office-ui-fabric-react.DropdownBase.setSelectedIndex
-  - uid: office-ui-fabric-react.DropdownBase.(constructor)
+      - 'office-ui-fabric-react!DropdownBase:constructor(1)'
+      - 'office-ui-fabric-react!DropdownBase#componentDidUpdate:member(1)'
+      - 'office-ui-fabric-react!DropdownBase#componentWillUnmount:member(1)'
+      - 'office-ui-fabric-react!DropdownBase.defaultProps:member'
+      - 'office-ui-fabric-react!DropdownBase#focus:member(1)'
+      - 'office-ui-fabric-react!DropdownBase#render:member(1)'
+      - 'office-ui-fabric-react!DropdownBase#selectedOptions:member'
+      - 'office-ui-fabric-react!DropdownBase#setSelectedIndex:member(1)'
+      - 'office-ui-fabric-react!DropdownBase#UNSAFE_componentWillReceiveProps:member(1)'
+  - uid: 'office-ui-fabric-react!DropdownBase:constructor(1)'
     summary: Constructs a new instance of the `DropdownBase` class
     name: (constructor)(props)
     fullName: (constructor)(props)
@@ -34,8 +34,8 @@ items:
         - id: props
           description: ''
           type:
-            - office-ui-fabric-react.IDropdownProps
-  - uid: office-ui-fabric-react.DropdownBase.componentDidUpdate
+            - 'office-ui-fabric-react!IDropdownProps:interface'
+  - uid: 'office-ui-fabric-react!DropdownBase#componentDidUpdate:member(1)'
     name: 'componentDidUpdate(prevProps, prevState)'
     fullName: 'componentDidUpdate(prevProps, prevState)'
     langs:
@@ -51,29 +51,12 @@ items:
         - id: prevProps
           description: ''
           type:
-            - office-ui-fabric-react.IDropdownProps
+            - 'office-ui-fabric-react!IDropdownProps:interface'
         - id: prevState
           description: ''
           type:
-            - office-ui-fabric-react.IDropdownState
-  - uid: office-ui-fabric-react.DropdownBase.componentWillReceiveProps
-    name: componentWillReceiveProps(newProps)
-    fullName: componentWillReceiveProps(newProps)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'componentWillReceiveProps(newProps: IDropdownProps): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: newProps
-          description: ''
-          type:
-            - office-ui-fabric-react.IDropdownProps
-  - uid: office-ui-fabric-react.DropdownBase.componentWillUnmount
+            - 'office-ui-fabric-react!IDropdownState:interface'
+  - uid: 'office-ui-fabric-react!DropdownBase#componentWillUnmount:member(1)'
     name: componentWillUnmount()
     fullName: componentWillUnmount()
     langs:
@@ -85,7 +68,7 @@ items:
         type:
           - void
         description: ''
-  - uid: office-ui-fabric-react.DropdownBase.defaultProps
+  - uid: 'office-ui-fabric-react!DropdownBase.defaultProps:member'
     name: defaultProps
     fullName: defaultProps
     langs:
@@ -102,7 +85,7 @@ items:
             {
                     options: any[];
                 }
-  - uid: office-ui-fabric-react.DropdownBase.focus
+  - uid: 'office-ui-fabric-react!DropdownBase#focus:member(1)'
     name: focus(shouldOpenOnFocus)
     fullName: focus(shouldOpenOnFocus)
     langs:
@@ -119,7 +102,7 @@ items:
           description: ''
           type:
             - boolean
-  - uid: office-ui-fabric-react.DropdownBase.render
+  - uid: 'office-ui-fabric-react!DropdownBase#render:member(1)'
     name: render()
     fullName: render()
     langs:
@@ -131,7 +114,7 @@ items:
         type:
           - JSX.Element
         description: ''
-  - uid: office-ui-fabric-react.DropdownBase.selectedOptions
+  - uid: 'office-ui-fabric-react!DropdownBase#selectedOptions:member'
     summary: All selected options
     name: selectedOptions
     fullName: selectedOptions
@@ -143,7 +126,7 @@ items:
       return:
         type:
           - 'IDropdownOption[]'
-  - uid: office-ui-fabric-react.DropdownBase.setSelectedIndex
+  - uid: 'office-ui-fabric-react!DropdownBase#setSelectedIndex:member(1)'
     name: 'setSelectedIndex(event, index)'
     fullName: 'setSelectedIndex(event, index)'
     langs:
@@ -164,3 +147,20 @@ items:
           description: ''
           type:
             - number
+  - uid: 'office-ui-fabric-react!DropdownBase#UNSAFE_componentWillReceiveProps:member(1)'
+    name: UNSAFE_componentWillReceiveProps(newProps)
+    fullName: UNSAFE_componentWillReceiveProps(newProps)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'UNSAFE_componentWillReceiveProps(newProps: IDropdownProps): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: newProps
+          description: ''
+          type:
+            - 'office-ui-fabric-react!IDropdownProps:interface'
