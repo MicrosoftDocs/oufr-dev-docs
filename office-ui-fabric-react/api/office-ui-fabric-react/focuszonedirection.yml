@@ -9,6 +9,7 @@ items:
     package: office-ui-fabric-react!
     children:
       - 'office-ui-fabric-react!FocusZoneDirection.bidirectional:member'
+      - 'office-ui-fabric-react!FocusZoneDirection.domOrder:member'
       - 'office-ui-fabric-react!FocusZoneDirection.horizontal:member'
       - 'office-ui-fabric-react!FocusZoneDirection.vertical:member'
   - uid: 'office-ui-fabric-react!FocusZoneDirection.bidirectional:member'
@@ -19,6 +20,16 @@ items:
       - typeScript
     type: field
     numericValue: '2'
+  - uid: 'office-ui-fabric-react!FocusZoneDirection.domOrder:member'
+    summary: >-
+      React to all arrows. Navigate next item in DOM on right/down arrow keys and previous - left/up arrow keys. Right
+      and Left arrow keys are swapped in RTL mode.
+    name: domOrder
+    fullName: domOrder
+    langs:
+      - typeScript
+    type: field
+    numericValue: '3'
   - uid: 'office-ui-fabric-react!FocusZoneDirection.horizontal:member'
     summary: Only react to left/right arrows.
     name: horizontal
