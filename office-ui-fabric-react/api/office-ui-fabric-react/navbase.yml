@@ -14,6 +14,7 @@ items:
     children:
       - 'office-ui-fabric-react!NavBase:constructor(1)'
       - 'office-ui-fabric-react!NavBase.defaultProps:member'
+      - 'office-ui-fabric-react!NavBase#focus:member(1)'
       - 'office-ui-fabric-react!NavBase#render:member(1)'
       - 'office-ui-fabric-react!NavBase#selectedKey:member'
   - uid: 'office-ui-fabric-react!NavBase:constructor(1)'
@@ -41,6 +42,24 @@ items:
       return:
         type:
           - 'office-ui-fabric-react!INavProps:interface'
+  - uid: 'office-ui-fabric-react!NavBase#focus:member(1)'
+    summary: Sets focus to the first tabbable item in the zone.
+    name: focus(forceIntoFirstElement)
+    fullName: focus(forceIntoFirstElement)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'focus(forceIntoFirstElement?: boolean): boolean;'
+      return:
+        type:
+          - boolean
+        description: 'True if focus could be set to an active element, false if no operation was taken.'
+      parameters:
+        - id: forceIntoFirstElement
+          description: 'If true, focus will be forced into the first element, even if focus is already in the focus zone.'
+          type:
+            - boolean
   - uid: 'office-ui-fabric-react!NavBase#render:member(1)'
     name: render()
     fullName: render()
