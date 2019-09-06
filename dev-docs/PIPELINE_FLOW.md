@@ -1,6 +1,6 @@
 # Pipeline flow
 
-The flow of auto updating the documentation consists of 2 stages and is set to happen on a scheduled basis from Monday to Friday at 8:00am. Here is a detailed overview of how it happens:
+The flow of auto updating the documentation consists of 2 stages and is set to happen on a scheduled basis from Monday to Friday at 8:00am. Here is a detailed overview of how it happens along with a diagram for easy reference:
 
 1. The build definition yaml file is located [here](https://github.com/MicrosoftDocs/oufr-dev-docs/blob/master/config/azure-pipelines/update-docs.yaml) and is basically the starting point of the automation pipeline (stage 1) that contains the schedule trigger and all necessary steps to generate the documentation files and publish them as an Azure build artifact. [Here](https://uifabric.visualstudio.com/fabricpublic/_build?definitionId=107) is where that build definition gets consumed and runs the automation. An overview of what happens during this build can be represented with these steps:
 
@@ -38,3 +38,7 @@ The flow of auto updating the documentation consists of 2 stages and is set to h
    - Commit the changes (same for each branch).
 
    - Push the changes to the remote repository (same for each branch).
+
+## Pipeline Flow Diagram
+
+![Pipeline flow diagram](PipelineFlowDiagram.png)
