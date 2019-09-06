@@ -25,18 +25,18 @@ steps:
     verbose: false
 
 - task: Npm@1
-  displayName: 'npm run build'
-  inputs:
-    command: custom
-    verbose: false
-    customCommand: run build
-
-- task: Npm@1
   displayName: 'npm install OUFR and @uifabric/fabric-website latest version'
   inputs:
     command: custom
     verbose: false
     customCommand: install --save-dev office-ui-fabric-react @uifabric/fabric-website
+
+- task: Npm@1
+  displayName: 'npm run build'
+  inputs:
+    command: custom
+    verbose: false
+    customCommand: run build
 
 # Extract office-ui-fabric-react package version and write it in a file
 # so it can be used in the release pipeline to keep record of each update.

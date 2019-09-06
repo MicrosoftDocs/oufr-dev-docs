@@ -1,3 +1,6 @@
+// These object is a hard copy of the app definition object in the @uifabric/fabric-website package.
+// TODO: needs to have one source of truth so that it's always up to date.
+
 export const categories = {
   'Basic Inputs': {
     Button: {},
