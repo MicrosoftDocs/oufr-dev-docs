@@ -1,0 +1,278 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@uifabric/foundation!'
+    name: '@uifabric/foundation'
+    fullName: '@uifabric/foundation'
+    langs:
+      - typeScript
+    type: package
+    children:
+      - '@uifabric/foundation!createComponent:function(1)'
+      - '@uifabric/foundation!createFactory:function(1)'
+      - '@uifabric/foundation!getControlledDerivedProps:function(1)'
+      - '@uifabric/foundation!getSlots:function(1)'
+      - '@uifabric/foundation!IComponentOptions:interface'
+      - '@uifabric/foundation!IControlledStateOptions:interface'
+      - '@uifabric/foundation!IDefaultSlotProps:interface'
+      - '@uifabric/foundation!IFactoryOptions:interface'
+      - '@uifabric/foundation!IProcessedSlotProps:interface'
+      - '@uifabric/foundation!ISlot:interface'
+      - '@uifabric/foundation!ISlotCreator:interface'
+      - '@uifabric/foundation!ISlotOptions:interface'
+      - '@uifabric/foundation!IStyleableComponentProps:interface'
+      - '@uifabric/foundation!IThemeProviderProps:interface'
+      - '@uifabric/foundation!ITokenBaseArray:interface'
+      - '@uifabric/foundation!useControlledState:function(1)'
+      - '@uifabric/foundation!withSlots:function(1)'
+  - uid: '@uifabric/foundation!createComponent:function(1)'
+    summary: >-
+      Assembles a higher order component based on the following: styles, theme, view, and state. Imposes a separation of
+      concern and centralizes styling processing to increase ease of use and robustness in how components use and apply
+      styling and theming.
+
+
+      Automatically merges and applies themes and styles with theme / styleprops having the highest priority. State
+      component, if provided, is passed in props for processing. Props from state / user are automatically processed and
+      styled before finally being passed to view.
+
+
+      State components should contain all stateful behavior and should not generate any JSX, but rather simply call the
+      view prop. Views should simply be stateless pure functions that receive all props needed for rendering their
+      output. State component is optional. If state is not provided, created component is essentially a functional
+      stateless component.
+    name: 'createComponent(view, options)'
+    fullName: 'createComponent(view, options)'
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: >-
+        export declare function createComponent<TComponentProps extends ValidProps, TTokens, TStyleSet extends
+        IStyleSet<TStyleSet>, TViewProps extends TComponentProps = TComponentProps, TStatics = {}>(view:
+        IViewComponent<TViewProps>, options?: IComponentOptions<TComponentProps, TTokens, TStyleSet, TViewProps,
+        TStatics>): React.FunctionComponent<TComponentProps> & TStatics;
+      return:
+        type:
+          - React.FunctionComponent<TComponentProps> & TStatics
+        description: ''
+      parameters:
+        - id: view
+          description: ''
+          type:
+            - IViewComponent<TViewProps>
+        - id: options
+          description: component Component options. See IComponentOptions for more detail.
+          type:
+            - 'IComponentOptions<TComponentProps, TTokens, TStyleSet, TViewProps, TStatics>'
+      typeParameters:
+        - id: TComponentProps
+          type:
+            - ValidProps
+        - id: TTokens
+        - id: TStyleSet
+          type:
+            - IStyleSet<TStyleSet>
+        - id: TViewProps
+          type:
+            - 'TComponentProps '
+        - id: TStatics
+  - uid: '@uifabric/foundation!createFactory:function(1)'
+    summary: This function creates factories that render ouput depending on the user ISlotProp props passed in.
+    name: 'createFactory(DefaultComponent, options)'
+    fullName: 'createFactory(DefaultComponent, options)'
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: >-
+        export declare function createFactory<TProps extends ValidProps, TShorthandProp extends ValidShorthand =
+        never>(DefaultComponent: React.ComponentType<TProps>, options?: IFactoryOptions<TProps>): ISlotFactory<TProps,
+        TShorthandProp>;
+      return:
+        type:
+          - 'ISlotFactory<TProps, TShorthandProp>'
+        description: ISlotFactory function used for rendering slots.
+      parameters:
+        - id: DefaultComponent
+          description: Base component to render when not overridden by user props.
+          type:
+            - React.ComponentType<TProps>
+        - id: options
+          description: 'Factory options, including defaultProp value for shorthand prop mapping.'
+          type:
+            - IFactoryOptions<TProps>
+      typeParameters:
+        - id: TProps
+          type:
+            - ValidProps
+        - id: TShorthandProp
+          type:
+            - 'ValidShorthand '
+  - uid: '@uifabric/foundation!getControlledDerivedProps:function(1)'
+    summary: Simple controlled helper that gives priority to props value and falls back to derived value.
+    name: 'getControlledDerivedProps(props, propName, derivedValue)'
+    fullName: 'getControlledDerivedProps(props, propName, derivedValue)'
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: >-
+        export declare function getControlledDerivedProps<TProps, TProp extends keyof TProps>(props: Readonly<TProps>,
+        propName: TProp, derivedValue: TProps[TProp]): TProps[TProp];
+      return:
+        type:
+          - 'TProps[TProp]'
+        description: ''
+      parameters:
+        - id: props
+          description: The props object containing controlled prop values.
+          type:
+            - Readonly<TProps>
+        - id: propName
+          description: The controlled prop name.
+          type:
+            - TProp
+        - id: derivedValue
+          description: Derived value. Returned when controlled value is not present.
+          type:
+            - 'TProps[TProp]'
+      typeParameters:
+        - id: TProps
+        - id: TProp
+          type:
+            - keyof TProps
+  - uid: '@uifabric/foundation!getSlots:function(1)'
+    summary: This function generates slots that can be used in JSX given a definition of slots and their corresponding types.
+    name: 'getSlots(userProps, slots)'
+    fullName: 'getSlots(userProps, slots)'
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: >-
+        export declare function getSlots<TComponentProps extends ISlottableProps<TComponentSlots>,
+        TComponentSlots>(userProps: TComponentProps, slots: ISlotDefinition<Required<TComponentSlots>>):
+        ISlots<Required<TComponentSlots>>;
+      return:
+        type:
+          - ISlots<Required<TComponentSlots>>
+        description: A set of created slots that components can render in JSX.
+      parameters:
+        - id: userProps
+          description: Props as pass to component.
+          type:
+            - TComponentProps
+        - id: slots
+          description: Slot definition object defining the default slot component for each slot.
+          type:
+            - ISlotDefinition<Required<TComponentSlots>>
+      typeParameters:
+        - id: TComponentProps
+          type:
+            - ISlottableProps<TComponentSlots>
+        - id: TComponentSlots
+  - uid: '@uifabric/foundation!useControlledState:function(1)'
+    summary: >-
+      Controlled state helper that gives priority to props value. Useful for components that have props with both
+      controlled and uncontrolled modes. Any props values will override state, but will not update internal state. If
+      prop is defined and then later undefined, state will revert to its previous value.
+    name: 'useControlledState(props, propName, options)'
+    fullName: 'useControlledState(props, propName, options)'
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: >-
+        export declare function useControlledState<TProps, TProp extends keyof TProps, TDefaultProp extends keyof
+        TProps>(props: Readonly<TProps>, propName: TProp, options?: IControlledStateOptions<TProps, TProp,
+        TDefaultProp>): [TProps[TProp] | undefined, React.Dispatch<React.SetStateAction<TProps[TProp]>>];
+      return:
+        type:
+          - '[TProps[TProp] | undefined, React.Dispatch<React.SetStateAction<TProps[TProp]>>]'
+        description: ''
+      parameters:
+        - id: props
+          description: The props object containing controlled prop values.
+          type:
+            - Readonly<TProps>
+        - id: propName
+          description: The controlled prop name.
+          type:
+            - TProp
+        - id: options
+          description: Options. defaultPropValue is only used if defaultPropName (or its value) is undefined.
+          type:
+            - 'IControlledStateOptions<TProps, TProp, TDefaultProp>'
+      typeParameters:
+        - id: TProps
+        - id: TProp
+          type:
+            - keyof TProps
+        - id: TDefaultProp
+          type:
+            - keyof TProps
+  - uid: '@uifabric/foundation!withSlots:function(1)'
+    summary: >-
+      This function is required for any module that uses slots.
+
+
+      This function is a slot resolver that automatically evaluates slot functions to generate React elements. A
+      byproduct of this resolver is that it removes slots from the React hierarchy by bypassing React.createElement.
+
+
+      To use this function on a per-file basis, use the jsx directive targeting withSlots. This directive must be the
+      FIRST LINE in the file to work correctly. Usage of this pragma also requires withSlots import statement.
+
+
+      See React.createElement
+    name: 'withSlots(type, props, children)'
+    fullName: 'withSlots(type, props, children)'
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: >-
+        export declare function withSlots<P>(type: ISlot<P> | React.FunctionComponent<P> | string, props?:
+        React.Attributes & P | null, ...children: React.ReactNode[]): ReturnType<React.FunctionComponent<P>>;
+      return:
+        type:
+          - ReturnType<React.FunctionComponent<P>>
+        description: ''
+      parameters:
+        - id: type
+          description: ''
+          type:
+            - ISlot<P> | React.FunctionComponent<P> | string
+        - id: props
+          description: ''
+          type:
+            - React.Attributes & P | null
+        - id: children
+          description: ''
+          type:
+            - 'React.ReactNode[]'
+      typeParameters:
+        - id: P
+references:
+  - uid: '@uifabric/foundation!IComponentOptions:interface'
+    name: IComponentOptions
+  - uid: '@uifabric/foundation!IControlledStateOptions:interface'
+    name: IControlledStateOptions
+  - uid: '@uifabric/foundation!IDefaultSlotProps:interface'
+    name: IDefaultSlotProps
+  - uid: '@uifabric/foundation!IFactoryOptions:interface'
+    name: IFactoryOptions
+  - uid: '@uifabric/foundation!IProcessedSlotProps:interface'
+    name: IProcessedSlotProps
+  - uid: '@uifabric/foundation!ISlot:interface'
+    name: ISlot
+  - uid: '@uifabric/foundation!ISlotCreator:interface'
+    name: ISlotCreator
+  - uid: '@uifabric/foundation!ISlotOptions:interface'
+    name: ISlotOptions
+  - uid: '@uifabric/foundation!IStyleableComponentProps:interface'
+    name: IStyleableComponentProps
+  - uid: '@uifabric/foundation!IThemeProviderProps:interface'
+    name: IThemeProviderProps
+  - uid: '@uifabric/foundation!ITokenBaseArray:interface'
+    name: ITokenBaseArray

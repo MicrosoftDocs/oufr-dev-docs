@@ -1,0 +1,68 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@uifabric/foundation!IStyleableComponentProps:interface'
+    summary: >-
+      Optional props for styleable components. If these props are present, they will automatically be used by Foundation
+      when applying theming and styling.
+    name: IStyleableComponentProps
+    fullName: IStyleableComponentProps
+    langs:
+      - typeScript
+    type: interface
+    syntax:
+      typeParameters:
+        - id: TViewProps
+        - id: TTokens
+        - id: TStyleSet
+          type:
+            - IStyleSet<TStyleSet>
+    package: '@uifabric/foundation!'
+    children:
+      - '@uifabric/foundation!IStyleableComponentProps#className:member'
+      - '@uifabric/foundation!IStyleableComponentProps#styles:member'
+      - '@uifabric/foundation!IStyleableComponentProps#theme:member'
+      - '@uifabric/foundation!IStyleableComponentProps#tokens:member'
+  - uid: '@uifabric/foundation!IStyleableComponentProps#className:member'
+    name: className
+    fullName: className
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'className?: string;'
+      return:
+        type:
+          - string
+  - uid: '@uifabric/foundation!IStyleableComponentProps#styles:member'
+    name: styles
+    fullName: styles
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'styles?: IStylesFunctionOrObject<TViewProps, TTokens, TStyleSet>;'
+      return:
+        type:
+          - 'IStylesFunctionOrObject<TViewProps, TTokens, TStyleSet>'
+  - uid: '@uifabric/foundation!IStyleableComponentProps#theme:member'
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type:
+          - '@uifabric/styling!ITheme:interface'
+  - uid: '@uifabric/foundation!IStyleableComponentProps#tokens:member'
+    name: tokens
+    fullName: tokens
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tokens?: ITokenFunctionOrObject<TViewProps, TTokens>;'
+      return:
+        type:
+          - 'ITokenFunctionOrObject<TViewProps, TTokens>'
