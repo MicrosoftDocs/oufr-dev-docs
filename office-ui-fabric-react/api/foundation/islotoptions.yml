@@ -1,0 +1,40 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@uifabric/foundation!ISlotOptions:interface'
+    summary: >-
+      Defines the slot options object for all slot props: 1. ISlotRender function. 2. React component with TProps
+      interface.
+    name: ISlotOptions
+    fullName: ISlotOptions
+    langs:
+      - typeScript
+    type: interface
+    syntax:
+      typeParameters:
+        - id: TProps
+    package: '@uifabric/foundation!'
+    children:
+      - '@uifabric/foundation!ISlotOptions#component:member'
+      - '@uifabric/foundation!ISlotOptions#render:member'
+  - uid: '@uifabric/foundation!ISlotOptions#component:member'
+    name: component
+    fullName: component
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'component?: React.ElementType<TProps>;'
+      return:
+        type:
+          - React.ElementType<TProps>
+  - uid: '@uifabric/foundation!ISlotOptions#render:member'
+    name: render
+    fullName: render
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'render?: ISlotRender<TProps>;'
+      return:
+        type:
+          - ISlotRender<TProps>
