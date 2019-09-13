@@ -122,17 +122,17 @@ items:
         type:
           - number
   - uid: 'office-ui-fabric-react!ICalloutProps#bounds:member'
-    summary: The bounding rectangle for which the contextual menu can appear in.
+    summary: The bounding rectangle (or callback that returns a rectangle) for which the contextual menu can appear in.
     name: bounds
     fullName: bounds
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'bounds?: IRectangle;'
+      content: 'bounds?: IRectangle | ((target?: Target, targetWindow?: Window) => IRectangle | undefined);'
       return:
         type:
-          - '@uifabric/utilities!IRectangle:interface'
+          - 'IRectangle | ((target?: Target, targetWindow?: Window) => IRectangle | undefined)'
   - uid: 'office-ui-fabric-react!ICalloutProps#calloutMaxHeight:member'
     summary: Set max height of callout When not set the callout will expand with contents up to the bottom of the screen
     name: calloutMaxHeight
