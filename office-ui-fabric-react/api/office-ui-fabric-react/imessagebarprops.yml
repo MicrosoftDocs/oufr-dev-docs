@@ -15,7 +15,9 @@ items:
       - 'office-ui-fabric-react!IMessageBarProps#className:member'
       - 'office-ui-fabric-react!IMessageBarProps#componentRef:member'
       - 'office-ui-fabric-react!IMessageBarProps#dismissButtonAriaLabel:member'
+      - 'office-ui-fabric-react!IMessageBarProps#dismissIconProps:member'
       - 'office-ui-fabric-react!IMessageBarProps#isMultiline:member'
+      - 'office-ui-fabric-react!IMessageBarProps#messageBarIconProps:member'
       - 'office-ui-fabric-react!IMessageBarProps#messageBarType:member'
       - 'office-ui-fabric-react!IMessageBarProps#onDismiss:member'
       - 'office-ui-fabric-react!IMessageBarProps#overflowButtonAriaLabel:member'
@@ -86,6 +88,18 @@ items:
       return:
         type:
           - string
+  - uid: 'office-ui-fabric-react!IMessageBarProps#dismissIconProps:member'
+    summary: 'Custom icon prop to replace the dismiss icon. If unset, default will be the Fabric Clear icon.'
+    name: dismissIconProps
+    fullName: dismissIconProps
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'dismissIconProps?: IIconProps;'
+      return:
+        type:
+          - 'office-ui-fabric-react!IIconProps:interface'
   - uid: 'office-ui-fabric-react!IMessageBarProps#isMultiline:member'
     summary: >-
       Determines if the message bar is multi lined. If false, and the text overflows over buttons or to another line, it
@@ -100,6 +114,18 @@ items:
       return:
         type:
           - boolean
+  - uid: 'office-ui-fabric-react!IMessageBarProps#messageBarIconProps:member'
+    summary: 'Custom icon prop to replace the message bar icon. If unset, default will be the icon set by messageBarType.'
+    name: messageBarIconProps
+    fullName: messageBarIconProps
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'messageBarIconProps?: IIconProps;'
+      return:
+        type:
+          - 'office-ui-fabric-react!IIconProps:interface'
   - uid: 'office-ui-fabric-react!IMessageBarProps#messageBarType:member'
     summary: The type of MessageBar to render.
     name: messageBarType
