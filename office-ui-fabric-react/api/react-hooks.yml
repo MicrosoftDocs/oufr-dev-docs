@@ -1,0 +1,88 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@uifabric/react-hooks!'
+    name: '@uifabric/react-hooks'
+    fullName: '@uifabric/react-hooks'
+    langs:
+      - typeScript
+    type: package
+    children:
+      - '@uifabric/react-hooks!useConst:function(1)'
+      - '@uifabric/react-hooks!useConstCallback:function(1)'
+      - '@uifabric/react-hooks!useId:function(1)'
+  - uid: '@uifabric/react-hooks!useConst:function(1)'
+    summary: >-
+      Hook to initialize and return a constant value. Unlike `React.useMemo`<!-- -->, this is guaranteed to always
+      return the same value (and if the initializer is a function, only call it once). This is similar to setting a
+      private member in a class constructor.
+
+
+      If the value should ever change based on dependencies, use `React.useMemo` instead.
+
+
+      If the value itself is a function, consider using `useConstCallback` instead.
+    name: useConst(initialValue)
+    fullName: useConst(initialValue)
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export declare function useConst<T>(initialValue: T | (() => T)): T;'
+      return:
+        type:
+          - T
+        description: The value. The identity of this value will always be the same.
+      parameters:
+        - id: initialValue
+          description: >-
+            Initial value, or function to get the initial value. Similar to `useState`<!-- -->, only the value/function
+            passed in the first time this is called is respected.
+          type:
+            - T | (() => T)
+      typeParameters:
+        - id: T
+  - uid: '@uifabric/react-hooks!useConstCallback:function(1)'
+    summary: >-
+      Hook to ensure a callback function always has the same identity. Unlike `React.useCallback`<!-- -->, this is
+      guaranteed to always return the same value.
+
+
+      If the callback should ever change based on dependencies, use `React.useCallback` instead.
+    name: useConstCallback(callback)
+    fullName: useConstCallback(callback)
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export declare function useConstCallback<T extends (...args: any[]) => any>(callback: T): T;'
+      return:
+        type:
+          - T
+        description: The callback. The identity of this callback will always be the same.
+      parameters:
+        - id: callback
+          description: The callback. Only the first value passed is respected.
+          type:
+            - T
+      typeParameters:
+        - id: T
+          type:
+            - '(...args: any[]) => any'
+  - uid: '@uifabric/react-hooks!useId:function(1)'
+    summary: Hook to generate a unique ID in the global scope (spanning across duplicate copies of the same library).
+    name: useId(prefix)
+    fullName: useId(prefix)
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export declare function useId(prefix?: string): string;'
+      return:
+        type:
+          - string
+        description: The ID
+      parameters:
+        - id: prefix
+          description: Optional prefix for the ID
+          type:
+            - string
