@@ -8,11 +8,24 @@ items:
     type: interface
     package: office-ui-fabric-react!
     children:
+      - 'office-ui-fabric-react!IBreadcrumbItem#as:member'
       - 'office-ui-fabric-react!IBreadcrumbItem#href:member'
       - 'office-ui-fabric-react!IBreadcrumbItem#isCurrentItem:member'
       - 'office-ui-fabric-react!IBreadcrumbItem#key:member'
       - 'office-ui-fabric-react!IBreadcrumbItem#onClick:member'
       - 'office-ui-fabric-react!IBreadcrumbItem#text:member'
+  - uid: 'office-ui-fabric-react!IBreadcrumbItem#as:member'
+    summary: Optional prop to render item as a heading of your choice.
+    name: as
+    fullName: as
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'as?: ''h1'' | ''h2'' | ''h3'' | ''h4'' | ''h5'' | ''h6'';'
+      return:
+        type:
+          - '''h1'' | ''h2'' | ''h3'' | ''h4'' | ''h5'' | ''h6'''
   - uid: 'office-ui-fabric-react!IBreadcrumbItem#href:member'
     summary: Url to navigate to when this breadcrumb is clicked.
     name: href
