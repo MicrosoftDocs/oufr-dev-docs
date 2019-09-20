@@ -15,6 +15,7 @@ items:
       - '@uifabric/merge-styles!concatStyleSets:function(6)'
       - '@uifabric/merge-styles!concatStyleSets:function(7)'
       - '@uifabric/merge-styles!concatStyleSets:function(8)'
+      - '@uifabric/merge-styles!concatStyleSetsWithProps:function(1)'
       - '@uifabric/merge-styles!fontFace:function(1)'
       - '@uifabric/merge-styles!ICSPSettings:interface'
       - '@uifabric/merge-styles!IFontFace:interface'
@@ -364,6 +365,36 @@ items:
           description: One or more stylesets to be merged (each param can also be falsy).
           type:
             - '(IStyleSet<any> | false | null | undefined)[]'
+  - uid: '@uifabric/merge-styles!concatStyleSetsWithProps:function(1)'
+    summary: 'Concatenates style sets into one, but resolves functional sets using the given props.'
+    name: 'concatStyleSetsWithProps(styleProps, allStyles)'
+    fullName: 'concatStyleSetsWithProps(styleProps, allStyles)'
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: >-
+        export declare function concatStyleSetsWithProps<TStyleProps, TStyleSet extends
+        IStyleSet<TStyleSet>>(styleProps: TStyleProps, ...allStyles: (IStyleFunctionOrObject<TStyleProps, TStyleSet> |
+        undefined)[]): Partial<TStyleSet>;
+      return:
+        type:
+          - Partial<TStyleSet>
+        description: ''
+      parameters:
+        - id: styleProps
+          description: Props used to resolve functional sets.
+          type:
+            - TStyleProps
+        - id: allStyles
+          description: 'Style sets, which can be functions or objects.'
+          type:
+            - '(IStyleFunctionOrObject<TStyleProps, TStyleSet> | undefined)[]'
+      typeParameters:
+        - id: TStyleProps
+        - id: TStyleSet
+          type:
+            - IStyleSet<TStyleSet>
   - uid: '@uifabric/merge-styles!fontFace:function(1)'
     summary: Registers a font face.
     name: fontFace(font)
