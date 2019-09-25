@@ -43,6 +43,7 @@ items:
       - 'office-ui-fabric-react!ICalloutProps#role:member'
       - 'office-ui-fabric-react!ICalloutProps#setInitialFocus:member'
       - 'office-ui-fabric-react!ICalloutProps#shouldRestoreFocus:member'
+      - 'office-ui-fabric-react!ICalloutProps#shouldUpdateWhenHidden:member'
       - 'office-ui-fabric-react!ICalloutProps#style:member'
       - 'office-ui-fabric-react!ICalloutProps#styles:member'
       - 'office-ui-fabric-react!ICalloutProps#target:member'
@@ -460,6 +461,21 @@ items:
     type: property
     syntax:
       content: 'shouldRestoreFocus?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'office-ui-fabric-react!ICalloutProps#shouldUpdateWhenHidden:member'
+    summary: >-
+      If true, the component will be updated even when hidden=true. Note that this would consume resources to update
+      even though nothing is being shown to the user. This might be helpful though if your updates are small and you
+      want the callout to be revealed fast to the user when hidden is set to false.
+    name: shouldUpdateWhenHidden
+    fullName: shouldUpdateWhenHidden
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'shouldUpdateWhenHidden?: boolean;'
       return:
         type:
           - boolean
