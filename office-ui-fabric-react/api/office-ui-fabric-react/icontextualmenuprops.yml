@@ -43,6 +43,7 @@ items:
       - 'office-ui-fabric-react!IContextualMenuProps#onRenderSubMenu:member'
       - 'office-ui-fabric-react!IContextualMenuProps#shouldFocusOnContainer:member'
       - 'office-ui-fabric-react!IContextualMenuProps#shouldFocusOnMount:member'
+      - 'office-ui-fabric-react!IContextualMenuProps#shouldUpdateWhenHidden:member'
       - 'office-ui-fabric-react!IContextualMenuProps#styles:member'
       - 'office-ui-fabric-react!IContextualMenuProps#subMenuHoverDelay:member'
       - 'office-ui-fabric-react!IContextualMenuProps#target:member'
@@ -452,6 +453,21 @@ items:
     type: property
     syntax:
       content: 'shouldFocusOnMount?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'office-ui-fabric-react!IContextualMenuProps#shouldUpdateWhenHidden:member'
+    summary: >-
+      If true, the component will be updated even when hidden=true. Note that this would consume resources to update
+      even though nothing is being shown to the user. This might be helpful though if your updates are small and you
+      want the contextual menu to be revealed fast to the user when hidden is set to false.
+    name: shouldUpdateWhenHidden
+    fullName: shouldUpdateWhenHidden
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'shouldUpdateWhenHidden?: boolean;'
       return:
         type:
           - boolean
