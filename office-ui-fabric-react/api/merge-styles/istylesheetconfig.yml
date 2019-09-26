@@ -14,6 +14,7 @@ items:
       - '@uifabric/merge-styles!IStyleSheetConfig#injectionMode:member'
       - '@uifabric/merge-styles!IStyleSheetConfig#namespace:member'
       - '@uifabric/merge-styles!IStyleSheetConfig#onInsertRule:member'
+      - '@uifabric/merge-styles!IStyleSheetConfig#rtl:member'
   - uid: '@uifabric/merge-styles!IStyleSheetConfig#cspSettings:member'
     summary: CSP settings
     name: cspSettings
@@ -74,3 +75,18 @@ items:
       return:
         type:
           - '(rule: string) => void'
+  - uid: '@uifabric/merge-styles!IStyleSheetConfig#rtl:member'
+    summary: >-
+      Defines the default direction of rules for auto-rtlifying things. While typically this is represented as a DIR
+      attribute in the markup, the DIR is not enough to control whether padding goes on the left or right. Use this to
+      set the default direction when rules are registered.
+    name: rtl
+    fullName: rtl
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rtl?: boolean;'
+      return:
+        type:
+          - boolean
