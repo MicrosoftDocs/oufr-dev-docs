@@ -1861,7 +1861,9 @@ items:
       - typeScript
     type: function
     syntax:
-      content: 'export declare function mergeAriaAttributeValues(...ariaAttributes: (string | undefined)[]): string | undefined;'
+      content: >-
+        export declare function mergeAriaAttributeValues(...ariaAttributes: (string | undefined | false)[]): string |
+        undefined;
       return:
         type:
           - string | undefined
@@ -1870,7 +1872,7 @@ items:
         - id: ariaAttributes
           description: ARIA attributes to merge
           type:
-            - '(string | undefined)[]'
+            - '(string | undefined | false)[]'
   - uid: '@uifabric/utilities!mergeCustomizations:function(1)'
     summary: >-
       Merge props and customizations giving priority to props over context. NOTE: This function will always perform

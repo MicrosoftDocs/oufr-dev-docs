@@ -25,6 +25,12 @@ items:
       - '@uifabric/merge-styles!IStyleBaseArray:interface'
       - '@uifabric/merge-styles!IStyleSheetConfig:interface'
       - '@uifabric/merge-styles!keyframes:function(1)'
+      - '@uifabric/merge-styles!mergeCss:function(1)'
+      - '@uifabric/merge-styles!mergeCssSets:function(1)'
+      - '@uifabric/merge-styles!mergeCssSets:function(2)'
+      - '@uifabric/merge-styles!mergeCssSets:function(3)'
+      - '@uifabric/merge-styles!mergeCssSets:function(4)'
+      - '@uifabric/merge-styles!mergeCssSets:function(5)'
       - '@uifabric/merge-styles!mergeStyles:function(1)'
       - '@uifabric/merge-styles!mergeStyleSets:function(1)'
       - '@uifabric/merge-styles!mergeStyleSets:function(2)'
@@ -437,8 +443,219 @@ items:
               {
                   [key: string]: {};
               }
+  - uid: '@uifabric/merge-styles!mergeCss:function(1)'
+    summary: >-
+      Concatenation helper, which can merge class names together. Skips over falsey values. Accepts a set of options
+      that will be used when calculating styles.
+    name: 'mergeCss(args, options)'
+    fullName: 'mergeCss(args, options)'
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: >-
+        export declare function mergeCss(args: (IStyle | IStyleBaseArray | false | null | undefined) | (IStyle |
+        IStyleBaseArray | false | null | undefined)[], options?: IStyleOptions): string;
+      return:
+        type:
+          - string
+        description: ''
+      parameters:
+        - id: args
+          description: ''
+          type:
+            - >-
+              (IStyle | IStyleBaseArray | false | null | undefined) | (IStyle | IStyleBaseArray | false | null |
+              undefined)[]
+        - id: options
+          description: ''
+          type:
+            - IStyleOptions
+  - uid: '@uifabric/merge-styles!mergeCssSets:function(1)'
+    summary: >-
+      Takes in one or more style set objects, each1consisting of a set of areas, each which will produce a class name.
+      Using this is analogous to calling `mergeCss` for each property in the object, but ensures we maintain the set
+      ordering when multiple style sets are merged.
+    name: 'mergeCssSets(styleSets, options)'
+    fullName: 'mergeCssSets(styleSets, options)'
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: >-
+        export declare function mergeCssSets<TStyleSet extends IStyleSet<TStyleSet>>(styleSets: [TStyleSet | false |
+        null | undefined], options?: IStyleOptions): IProcessedStyleSet<TStyleSet>;
+      return:
+        type:
+          - IProcessedStyleSet<TStyleSet>
+        description: ''
+      parameters:
+        - id: styleSets
+          description: One or more style sets to be merged.
+          type:
+            - '[TStyleSet | false | null | undefined]'
+        - id: options
+          description: (optional) Options to use when creating rules.
+          type:
+            - IStyleOptions
+      typeParameters:
+        - id: TStyleSet
+          type:
+            - IStyleSet<TStyleSet>
+  - uid: '@uifabric/merge-styles!mergeCssSets:function(2)'
+    summary: >-
+      Takes in one or more style set objects, each1consisting of a set of areas, each which will produce a class name.
+      Using this is analogous to calling `mergeCss` for each property in the object, but ensures we maintain the set
+      ordering when multiple style sets are merged.
+    name: 'mergeCssSets(styleSets, options)'
+    fullName: 'mergeCssSets(styleSets, options)'
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: >-
+        export declare function mergeCssSets<TStyleSet1 extends IStyleSet<TStyleSet1>, TStyleSet2 extends
+        IStyleSet<TStyleSet2>>(styleSets: [TStyleSet1 | false | null | undefined, TStyleSet2 | false | null |
+        undefined], options?: IStyleOptions): IProcessedStyleSet<TStyleSet1 & TStyleSet2>;
+      return:
+        type:
+          - IProcessedStyleSet<TStyleSet1 & TStyleSet2>
+        description: ''
+      parameters:
+        - id: styleSets
+          description: One or more style sets to be merged.
+          type:
+            - '[TStyleSet1 | false | null | undefined, TStyleSet2 | false | null | undefined]'
+        - id: options
+          description: (optional) Options to use when creating rules.
+          type:
+            - IStyleOptions
+      typeParameters:
+        - id: TStyleSet1
+          type:
+            - IStyleSet<TStyleSet1>
+        - id: TStyleSet2
+          type:
+            - IStyleSet<TStyleSet2>
+  - uid: '@uifabric/merge-styles!mergeCssSets:function(3)'
+    summary: >-
+      Takes in one or more style set objects, each1consisting of a set of areas, each which will produce a class name.
+      Using this is analogous to calling `mergeCss` for each property in the object, but ensures we maintain the set
+      ordering when multiple style sets are merged.
+    name: 'mergeCssSets(styleSets, options)'
+    fullName: 'mergeCssSets(styleSets, options)'
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: >-
+        export declare function mergeCssSets<TStyleSet1 extends IStyleSet<TStyleSet1>, TStyleSet2 extends
+        IStyleSet<TStyleSet2>, TStyleSet3 extends IStyleSet<TStyleSet3>>(styleSets: [TStyleSet1 | false | null |
+        undefined, TStyleSet2 | false | null | undefined, TStyleSet3 | false | null | undefined], options?:
+        IStyleOptions): IProcessedStyleSet<TStyleSet1 & TStyleSet2 & TStyleSet3>;
+      return:
+        type:
+          - IProcessedStyleSet<TStyleSet1 & TStyleSet2 & TStyleSet3>
+        description: ''
+      parameters:
+        - id: styleSets
+          description: One or more style sets to be merged.
+          type:
+            - >-
+              [TStyleSet1 | false | null | undefined, TStyleSet2 | false | null | undefined, TStyleSet3 | false | null |
+              undefined]
+        - id: options
+          description: (optional) Options to use when creating rules.
+          type:
+            - IStyleOptions
+      typeParameters:
+        - id: TStyleSet1
+          type:
+            - IStyleSet<TStyleSet1>
+        - id: TStyleSet2
+          type:
+            - IStyleSet<TStyleSet2>
+        - id: TStyleSet3
+          type:
+            - IStyleSet<TStyleSet3>
+  - uid: '@uifabric/merge-styles!mergeCssSets:function(4)'
+    summary: >-
+      Takes in one or more style set objects, each1consisting of a set of areas, each which will produce a class name.
+      Using this is analogous to calling `mergeCss` for each property in the object, but ensures we maintain the set
+      ordering when multiple style sets are merged.
+    name: 'mergeCssSets(styleSets, options)'
+    fullName: 'mergeCssSets(styleSets, options)'
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: >-
+        export declare function mergeCssSets<TStyleSet1 extends IStyleSet<TStyleSet1>, TStyleSet2 extends
+        IStyleSet<TStyleSet2>, TStyleSet3 extends IStyleSet<TStyleSet3>, TStyleSet4 extends
+        IStyleSet<TStyleSet4>>(styleSets: [TStyleSet1 | false | null | undefined, TStyleSet2 | false | null | undefined,
+        TStyleSet3 | false | null | undefined, TStyleSet4 | false | null | undefined], options?: IStyleOptions):
+        IProcessedStyleSet<TStyleSet1 & TStyleSet2 & TStyleSet3 & TStyleSet4>;
+      return:
+        type:
+          - IProcessedStyleSet<TStyleSet1 & TStyleSet2 & TStyleSet3 & TStyleSet4>
+        description: ''
+      parameters:
+        - id: styleSets
+          description: One or more style sets to be merged.
+          type:
+            - >-
+              [TStyleSet1 | false | null | undefined, TStyleSet2 | false | null | undefined, TStyleSet3 | false | null |
+              undefined, TStyleSet4 | false | null | undefined]
+        - id: options
+          description: (optional) Options to use when creating rules.
+          type:
+            - IStyleOptions
+      typeParameters:
+        - id: TStyleSet1
+          type:
+            - IStyleSet<TStyleSet1>
+        - id: TStyleSet2
+          type:
+            - IStyleSet<TStyleSet2>
+        - id: TStyleSet3
+          type:
+            - IStyleSet<TStyleSet3>
+        - id: TStyleSet4
+          type:
+            - IStyleSet<TStyleSet4>
+  - uid: '@uifabric/merge-styles!mergeCssSets:function(5)'
+    summary: >-
+      Takes in one or more style set objects, each1consisting of a set of areas, each which will produce a class name.
+      Using this is analogous to calling `mergeCss` for each property in the object, but ensures we maintain the set
+      ordering when multiple style sets are merged.
+    name: 'mergeCssSets(styleSet, options)'
+    fullName: 'mergeCssSets(styleSet, options)'
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: >-
+        export declare function mergeCssSets<TStyleSet extends IStyleSet<TStyleSet>>(styleSet: [TStyleSet | false | null
+        | undefined], options?: IStyleOptions): IProcessedStyleSet<TStyleSet>;
+      return:
+        type:
+          - IProcessedStyleSet<TStyleSet>
+        description: ''
+      parameters:
+        - id: styleSet
+          description: ''
+          type:
+            - '[TStyleSet | false | null | undefined]'
+        - id: options
+          description: (optional) Options to use when creating rules.
+          type:
+            - IStyleOptions
+      typeParameters:
+        - id: TStyleSet
+          type:
+            - IStyleSet<TStyleSet>
   - uid: '@uifabric/merge-styles!mergeStyles:function(1)'
-    summary: 'Concatination helper, which can merge class names together. Skips over falsey values.'
+    summary: 'Concatenation helper, which can merge class names together. Skips over falsey values.'
     name: mergeStyles(args)
     fullName: mergeStyles(args)
     langs:
