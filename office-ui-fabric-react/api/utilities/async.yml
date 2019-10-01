@@ -64,13 +64,13 @@ items:
           type:
             - '(e: any) => void'
   - uid: '@uifabric/utilities!Async#cancelAnimationFrame:member(1)'
-    name: cancelAnimationFrame(id)
-    fullName: cancelAnimationFrame(id)
+    name: 'cancelAnimationFrame(id, targetElement)'
+    fullName: 'cancelAnimationFrame(id, targetElement)'
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'cancelAnimationFrame(id: number): void;'
+      content: 'cancelAnimationFrame(id: number, targetElement?: Element): void;'
       return:
         type:
           - void
@@ -80,15 +80,19 @@ items:
           description: ''
           type:
             - number
+        - id: targetElement
+          description: ''
+          type:
+            - Element
   - uid: '@uifabric/utilities!Async#clearImmediate:member(1)'
     summary: Clears the immediate.
-    name: clearImmediate(id)
-    fullName: clearImmediate(id)
+    name: 'clearImmediate(id, targetElement)'
+    fullName: 'clearImmediate(id, targetElement)'
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'clearImmediate(id: number): void;'
+      content: 'clearImmediate(id: number, targetElement?: Element): void;'
       return:
         type:
           - void
@@ -98,6 +102,10 @@ items:
           description: Id to cancel.
           type:
             - number
+        - id: targetElement
+          description: Optional target element to use for identifying the correct window.
+          type:
+            - Element
   - uid: '@uifabric/utilities!Async#clearInterval:member(1)'
     summary: Clears the interval.
     name: clearInterval(id)
@@ -196,13 +204,13 @@ items:
           - void
         description: ''
   - uid: '@uifabric/utilities!Async#requestAnimationFrame:member(1)'
-    name: requestAnimationFrame(callback)
-    fullName: requestAnimationFrame(callback)
+    name: 'requestAnimationFrame(callback, targetElement)'
+    fullName: 'requestAnimationFrame(callback, targetElement)'
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'requestAnimationFrame(callback: () => void): number;'
+      content: 'requestAnimationFrame(callback: () => void, targetElement?: Element): number;'
       return:
         type:
           - number
@@ -212,15 +220,19 @@ items:
           description: ''
           type:
             - () => void
+        - id: targetElement
+          description: ''
+          type:
+            - Element
   - uid: '@uifabric/utilities!Async#setImmediate:member(1)'
     summary: 'SetImmediate override, which will auto cancel the immediate during dispose.'
-    name: setImmediate(callback)
-    fullName: setImmediate(callback)
+    name: 'setImmediate(callback, targetElement)'
+    fullName: 'setImmediate(callback, targetElement)'
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'setImmediate(callback: () => void): number;'
+      content: 'setImmediate(callback: () => void, targetElement?: Element): number;'
       return:
         type:
           - number
@@ -230,6 +242,10 @@ items:
           description: Callback to execute.
           type:
             - () => void
+        - id: targetElement
+          description: Optional target element to use for identifying the correct window.
+          type:
+            - Element
   - uid: '@uifabric/utilities!Async#setInterval:member(1)'
     summary: 'SetInterval override, which will auto cancel the timeout during dispose.'
     name: 'setInterval(callback, duration)'
