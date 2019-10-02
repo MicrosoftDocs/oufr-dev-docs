@@ -9,7 +9,9 @@ items:
     package: office-ui-fabric-react!
     children:
       - 'office-ui-fabric-react!INavLinkGroup#automationId:member'
+      - 'office-ui-fabric-react!INavLinkGroup#collapseAriaLabel:member'
       - 'office-ui-fabric-react!INavLinkGroup#collapseByDefault:member'
+      - 'office-ui-fabric-react!INavLinkGroup#expandAriaLabel:member'
       - 'office-ui-fabric-react!INavLinkGroup#links:member'
       - 'office-ui-fabric-react!INavLinkGroup#name:member'
       - 'office-ui-fabric-react!INavLinkGroup#onHeaderClick:member'
@@ -25,6 +27,18 @@ items:
       return:
         type:
           - string
+  - uid: 'office-ui-fabric-react!INavLinkGroup#collapseAriaLabel:member'
+    summary: ARIA label when group is collapsed and can be expanded.
+    name: collapseAriaLabel
+    fullName: collapseAriaLabel
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'collapseAriaLabel?: string;'
+      return:
+        type:
+          - string
   - uid: 'office-ui-fabric-react!INavLinkGroup#collapseByDefault:member'
     summary: 'If true, the group should render collapsed by default'
     name: collapseByDefault
@@ -37,6 +51,18 @@ items:
       return:
         type:
           - boolean
+  - uid: 'office-ui-fabric-react!INavLinkGroup#expandAriaLabel:member'
+    summary: ARIA label when group is collapsed and can be expanded.
+    name: expandAriaLabel
+    fullName: expandAriaLabel
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'expandAriaLabel?: string;'
+      return:
+        type:
+          - string
   - uid: 'office-ui-fabric-react!INavLinkGroup#links:member'
     summary: Links to render within this group
     name: links
