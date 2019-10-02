@@ -10,7 +10,9 @@ items:
     children:
       - 'office-ui-fabric-react!INavLink#ariaLabel:member'
       - 'office-ui-fabric-react!INavLink#automationId:member'
+      - 'office-ui-fabric-react!INavLink#collapseAriaLabel:member'
       - 'office-ui-fabric-react!INavLink#disabled:member'
+      - 'office-ui-fabric-react!INavLink#expandAriaLabel:member'
       - 'office-ui-fabric-react!INavLink#forceAnchor:member'
       - 'office-ui-fabric-react!INavLink#icon:member'
       - 'office-ui-fabric-react!INavLink#iconClassName:member'
@@ -24,7 +26,7 @@ items:
       - 'office-ui-fabric-react!INavLink#title:member'
       - 'office-ui-fabric-react!INavLink#url:member'
   - uid: 'office-ui-fabric-react!INavLink#ariaLabel:member'
-    summary: Aria label for nav link
+    summary: Aria label for nav link. Ignored if `collapseAriaLabel` or `expandAriaLabel` is provided.
     name: ariaLabel
     fullName: ariaLabel
     langs:
@@ -47,6 +49,18 @@ items:
       return:
         type:
           - string
+  - uid: 'office-ui-fabric-react!INavLink#collapseAriaLabel:member'
+    summary: ARIA label when group is collapsed and can be expanded.
+    name: collapseAriaLabel
+    fullName: collapseAriaLabel
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'collapseAriaLabel?: string;'
+      return:
+        type:
+          - string
   - uid: 'office-ui-fabric-react!INavLink#disabled:member'
     summary: Whether or not the link is disabled.
     name: disabled
@@ -59,6 +73,18 @@ items:
       return:
         type:
           - boolean
+  - uid: 'office-ui-fabric-react!INavLink#expandAriaLabel:member'
+    summary: ARIA label when group is collapsed and can be expanded.
+    name: expandAriaLabel
+    fullName: expandAriaLabel
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'expandAriaLabel?: string;'
+      return:
+        type:
+          - string
   - uid: 'office-ui-fabric-react!INavLink#forceAnchor:member'
     summary: >-
       (Optional) By default, any link with onClick defined will render as a button. Set this property to true to
