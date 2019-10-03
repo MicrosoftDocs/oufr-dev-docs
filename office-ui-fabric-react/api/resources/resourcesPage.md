@@ -15,6 +15,7 @@ Fabric is an open source project that celebrates internal and external contribut
 These design toolkits provide styles, controls and layout templates that enable you to create beautiful and coherent Microsoft experiences.
 
 - [Microsoft Web Fluent (Sketch)](https://aka.ms/FluentToolkits/Web/Sketch)
+- [Microsoft Web Fluent (Figma)](https://aka.ms/FluentToolkits/Web/Figma)
 - [Microsoft iOS Fluent (Sketch)](https://aka.ms/FluentToolkits/iOS/Sketch)
 - [Microsoft iOS Fluent (Figma)](https://aka.ms/FluentToolkits/iOS/Figma)
 - [Microsoft Android Fluent (Sketch)](https://aka.ms/FluentToolkits/Android/Sketch)

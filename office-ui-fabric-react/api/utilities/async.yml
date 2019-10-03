@@ -70,7 +70,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'cancelAnimationFrame(id: number, targetElement?: Element): void;'
+      content: 'cancelAnimationFrame(id: number, targetElement?: Element | Component | null): void;'
       return:
         type:
           - void
@@ -83,7 +83,7 @@ items:
         - id: targetElement
           description: ''
           type:
-            - Element
+            - Element | Component | null
   - uid: '@uifabric/utilities!Async#clearImmediate:member(1)'
     summary: Clears the immediate.
     name: 'clearImmediate(id, targetElement)'
@@ -92,7 +92,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'clearImmediate(id: number, targetElement?: Element): void;'
+      content: 'clearImmediate(id: number, targetElement?: Element | Component | null): void;'
       return:
         type:
           - void
@@ -105,7 +105,7 @@ items:
         - id: targetElement
           description: Optional target element to use for identifying the correct window.
           type:
-            - Element
+            - Element | Component | null
   - uid: '@uifabric/utilities!Async#clearInterval:member(1)'
     summary: Clears the interval.
     name: clearInterval(id)
@@ -210,7 +210,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'requestAnimationFrame(callback: () => void, targetElement?: Element): number;'
+      content: 'requestAnimationFrame(callback: () => void, targetElement?: Element | Component | null): number;'
       return:
         type:
           - number
@@ -223,7 +223,7 @@ items:
         - id: targetElement
           description: ''
           type:
-            - Element
+            - Element | Component | null
   - uid: '@uifabric/utilities!Async#setImmediate:member(1)'
     summary: 'SetImmediate override, which will auto cancel the immediate during dispose.'
     name: 'setImmediate(callback, targetElement)'
@@ -232,7 +232,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'setImmediate(callback: () => void, targetElement?: Element): number;'
+      content: 'setImmediate(callback: () => void, targetElement?: Element | Component | null): number;'
       return:
         type:
           - number
@@ -245,7 +245,7 @@ items:
         - id: targetElement
           description: Optional target element to use for identifying the correct window.
           type:
-            - Element
+            - Element | Component | null
   - uid: '@uifabric/utilities!Async#setInterval:member(1)'
     summary: 'SetInterval override, which will auto cancel the timeout during dispose.'
     name: 'setInterval(callback, duration)'
