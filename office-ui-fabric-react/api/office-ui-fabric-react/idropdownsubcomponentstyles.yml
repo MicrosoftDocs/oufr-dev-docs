@@ -9,6 +9,7 @@ items:
     package: office-ui-fabric-react!
     children:
       - 'office-ui-fabric-react!IDropdownSubComponentStyles#label:member'
+      - 'office-ui-fabric-react!IDropdownSubComponentStyles#multiSelectItem:member'
       - 'office-ui-fabric-react!IDropdownSubComponentStyles#panel:member'
   - uid: 'office-ui-fabric-react!IDropdownSubComponentStyles#label:member'
     summary: Refers to the primary label for the Dropdown.
@@ -22,6 +23,18 @@ items:
       return:
         type:
           - 'IStyleFunctionOrObject<ILabelStyleProps, any>'
+  - uid: 'office-ui-fabric-react!IDropdownSubComponentStyles#multiSelectItem:member'
+    summary: Refers to the the individual dropdown item when the multiSelect prop is true.
+    name: multiSelectItem
+    fullName: multiSelectItem
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'multiSelectItem: IStyleFunctionOrObject<ICheckboxStyleProps, any>;'
+      return:
+        type:
+          - 'IStyleFunctionOrObject<ICheckboxStyleProps, any>'
   - uid: 'office-ui-fabric-react!IDropdownSubComponentStyles#panel:member'
     summary: Refers to the panel that hosts the Dropdown options in small viewports.
     name: panel
