@@ -861,7 +861,7 @@ items:
       - typeScript
     type: function
     syntax:
-      content: 'export declare function getDocument(rootElement?: HTMLElement | Component | null): Document | undefined;'
+      content: 'export declare function getDocument(rootElement?: HTMLElement | null): Document | undefined;'
       return:
         type:
           - Document | undefined
@@ -870,7 +870,7 @@ items:
         - id: rootElement
           description: ''
           type:
-            - HTMLElement | Component | null
+            - HTMLElement | null
   - uid: '@uifabric/utilities!getElementIndexPath:function(1)'
     summary: >-
       Finds the element index path from a parent element to a child element.
@@ -1385,7 +1385,7 @@ items:
       - typeScript
     type: function
     syntax:
-      content: 'export declare function getWindow(rootElement?: Element | Component | null): Window | undefined;'
+      content: 'export declare function getWindow(rootElement?: Element | null): Window | undefined;'
       return:
         type:
           - Window | undefined
@@ -1394,7 +1394,7 @@ items:
         - id: rootElement
           description: ''
           type:
-            - Element | Component | null
+            - Element | null
   - uid: '@uifabric/utilities!hasHorizontalOverflow:function(1)'
     summary: Detects whether an element's content has horizontal overflow
     name: hasHorizontalOverflow(element)
