@@ -46,6 +46,7 @@ items:
       - 'office-ui-fabric-react!IButtonProps#primary:member'
       - 'office-ui-fabric-react!IButtonProps#primaryActionButtonProps:member'
       - 'office-ui-fabric-react!IButtonProps#primaryDisabled:member'
+      - 'office-ui-fabric-react!IButtonProps#renderPersistedMenuHiddenOnMount:member'
       - 'office-ui-fabric-react!IButtonProps#rootProps:member'
       - 'office-ui-fabric-react!IButtonProps#secondaryText:member'
       - 'office-ui-fabric-react!IButtonProps#split:member'
@@ -499,6 +500,29 @@ items:
     type: property
     syntax:
       content: 'primaryDisabled?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'office-ui-fabric-react!IButtonProps#renderPersistedMenuHiddenOnMount:member'
+    summary: >-
+      If true, the persisted menu is rendered hidden when the button initially mounts. Non-persisted menus will not be
+      in the component tree unless they are being shown
+
+
+      Note: This increases the time the button will take to mount, but can improve perceived menu open perf. when the
+      user opens the menu.
+    deprecated:
+      content: >-
+        There is known bug in Edge when this prop is true where scrollbars overlap with the content when a menu is first
+        rendered hidden. See: https://github.com/OfficeDev/office-ui-fabric-react/issues/9034 Please do not start using
+        this. If you are already using this, please make sure that you are doing so only in non-Edge browsers
+    name: renderPersistedMenuHiddenOnMount
+    fullName: renderPersistedMenuHiddenOnMount
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'renderPersistedMenuHiddenOnMount?: boolean;'
       return:
         type:
           - boolean
