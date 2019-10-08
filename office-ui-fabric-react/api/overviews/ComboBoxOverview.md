@@ -13,5 +13,6 @@ A ComboBox is a list in which the selected item is always visible, and the other
 - ComboBoxs contain shortened statements or words.
 - Use a ComboBox when the selected option is more important than the alternatives (in contrast to radio buttons where all the choices are visible putting more emphasis on the other options).
 
+
 ## Don't &#10008;
 &lt;!-- Insert Donts Here --&gt;
