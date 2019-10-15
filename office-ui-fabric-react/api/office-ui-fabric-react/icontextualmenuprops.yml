@@ -1,7 +1,6 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'office-ui-fabric-react!IContextualMenuProps:interface'
-    summary: React.Props is deprecated and we're removing it in 6.0. Usage of 'any' should go away with it.
     name: IContextualMenuProps
     fullName: IContextualMenuProps
     langs:
@@ -66,9 +65,7 @@ items:
         type:
           - boolean
   - uid: 'office-ui-fabric-react!IContextualMenuProps#ariaLabel:member'
-    summary: >-
-      Aria label for accessibility for the ContextualMenu. If none specified no aria label will be applied to the
-      ContextualMenu.
+    summary: Accessible label for the ContextualMenu's root element (inside the callout).
     name: ariaLabel
     fullName: ariaLabel
     langs:
@@ -92,7 +89,7 @@ items:
         type:
           - number
   - uid: 'office-ui-fabric-react!IContextualMenuProps#bounds:member'
-    summary: The bounding rectangle (or callback that returns a rectangle) for which the contextual menu can appear in.
+    summary: The bounding rectangle (or callback that returns a rectangle) which the contextual menu can appear in.
     name: bounds
     fullName: bounds
     langs:
@@ -104,7 +101,7 @@ items:
         type:
           - 'IRectangle | ((target?: Target, targetWindow?: Window) => IRectangle | undefined)'
   - uid: 'office-ui-fabric-react!IContextualMenuProps#calloutProps:member'
-    summary: Pass in custom callout props
+    summary: Additional custom props for the Callout.
     name: calloutProps
     fullName: calloutProps
     langs:
@@ -116,7 +113,7 @@ items:
         type:
           - 'office-ui-fabric-react!ICalloutProps:interface'
   - uid: 'office-ui-fabric-react!IContextualMenuProps#className:member'
-    summary: Additional css class to apply to the ContextualMenu
+    summary: Additional CSS class to apply to the ContextualMenu.
     name: className
     fullName: className
     langs:
@@ -156,9 +153,7 @@ items:
         type:
           - React.ComponentClass<IContextualMenuItemProps> | React.StatelessComponent<IContextualMenuItemProps>
   - uid: 'office-ui-fabric-react!IContextualMenuProps#coverTarget:member'
-    summary: >-
-      If true the position returned will have the menu element cover the target. If false then it will position next to
-      the target;
+    summary: 'If true, the menu will be positioned to cover the target. If false, it will be positioned next to the target.'
     name: coverTarget
     fullName: coverTarget
     langs:
@@ -172,7 +167,7 @@ items:
   - uid: 'office-ui-fabric-react!IContextualMenuProps#delayUpdateFocusOnHover:member'
     summary: >-
       If true, the contextual menu will not be updated until focus enters the menu via other means. This will only
-      result in different behavior when shouldFocusOnMount = false
+      result in different behavior when `shouldFocusOnMount = false`<!-- -->.
     name: delayUpdateFocusOnHover
     fullName: delayUpdateFocusOnHover
     langs:
@@ -184,7 +179,7 @@ items:
         type:
           - boolean
   - uid: 'office-ui-fabric-react!IContextualMenuProps#directionalHint:member'
-    summary: How the element should be positioned
+    summary: How the menu should be positioned
     name: directionalHint
     fullName: directionalHint
     langs:
@@ -210,9 +205,7 @@ items:
         type:
           - boolean
   - uid: 'office-ui-fabric-react!IContextualMenuProps#directionalHintForRTL:member'
-    summary: >-
-      How the element should be positioned in RTL layouts. If not specified, a mirror of `directionalHint` will be used
-      instead
+    summary: 'How the menu should be positioned in RTL layouts. If not specified, a mirror of `directionalHint` will be used.'
     name: directionalHintForRTL
     fullName: directionalHintForRTL
     langs:
@@ -262,11 +255,9 @@ items:
         type:
           - number
   - uid: 'office-ui-fabric-react!IContextualMenuProps#getMenuClassNames:member'
-    summary: >-
-      Method to provide the classnames to style the contextual menu. Default value is the getMenuClassnames func defined
-      in ContextualMenu.classnames. Deprecated, use `styles` prop of `IContextualMenuProps` to leverage mergeStyles API.
+    summary: Method to provide the classnames to style the contextual menu.
     deprecated:
-      content: Use `styles` prop of `IContextualMenuProps` to leverage mergeStyles API.
+      content: Use `styles` instead to leverage mergeStyles API.
     name: getMenuClassNames
     fullName: getMenuClassNames
     langs:
@@ -279,7 +270,7 @@ items:
           - '(theme: ITheme, className?: string) => IContextualMenuClassNames'
   - uid: 'office-ui-fabric-react!IContextualMenuProps#hidden:member'
     summary: >-
-      If specified, renders the ContextualMenu in a hidden state. Use this flag, rather than rendering a ContextualMenu
+      If true, renders the ContextualMenu in a hidden state. Use this flag, rather than rendering a ContextualMenu
       conditionally based on visibility, to improve rendering performance when it becomes visible. Note: When
       ContextualMenu is hidden its content will not be rendered. It will only render once the ContextualMenu is visible.
     name: hidden
@@ -294,8 +285,8 @@ items:
           - boolean
   - uid: 'office-ui-fabric-react!IContextualMenuProps#id:member'
     summary: >-
-      DOM id to tag the ContextualMenu with, for reference. Should be used for 'aria-owns' and other such uses, rather
-      than direct reference for programmatic purposes.
+      ID for the ContextualMenu's root element (inside the callout). Should be used for `aria-owns` and other such uses,
+      rather than direct reference for programmatic purposes.
     name: id
     fullName: id
     langs:
@@ -319,7 +310,7 @@ items:
         type:
           - boolean
   - uid: 'office-ui-fabric-react!IContextualMenuProps#isSubMenu:member'
-    summary: Whether this menu is a submenu of another menu or not.
+    summary: Whether this menu is a submenu of another menu.
     name: isSubMenu
     fullName: isSubMenu
     langs:
@@ -331,7 +322,7 @@ items:
         type:
           - boolean
   - uid: 'office-ui-fabric-react!IContextualMenuProps#items:member'
-    summary: Collection of menu items.
+    summary: Menu items to display.
     name: items
     fullName: items
     langs:
@@ -343,7 +334,7 @@ items:
         type:
           - 'IContextualMenuItem[]'
   - uid: 'office-ui-fabric-react!IContextualMenuProps#labelElementId:member'
-    summary: Aria Labelled by labelElementId
+    summary: Used as `aria-labelledby` for the the menu element inside the callout.
     name: labelElementId
     fullName: labelElementId
     langs:
@@ -355,7 +346,7 @@ items:
         type:
           - string
   - uid: 'office-ui-fabric-react!IContextualMenuProps#onDismiss:member'
-    summary: Callback when the ContextualMenu tries to close. If dismissAll is true then all submenus will be dismissed.
+    summary: Callback when the ContextualMenu tries to close. If `dismissAll` is true then all submenus will be dismissed.
     name: onDismiss
     fullName: onDismiss
     langs:
@@ -368,8 +359,8 @@ items:
           - '(ev?: any, dismissAll?: boolean) => void'
   - uid: 'office-ui-fabric-react!IContextualMenuProps#onItemClick:member'
     summary: >-
-      Click handler which is invoked if onClick is not passed for individual contextual menu item. Returning true will
-      dismiss the menu even if ev.preventDefault() was called.
+      Click handler which is invoked if `onClick` is not passed for individual contextual menu item. Returning true will
+      dismiss the menu even if `ev.preventDefault()` was called.
     name: onItemClick
     fullName: onItemClick
     langs:
@@ -385,7 +376,7 @@ items:
             (ev?: React.MouseEvent<HTMLElement> | React.KeyboardEvent<HTMLElement>, item?: IContextualMenuItem) =>
             boolean | void
   - uid: 'office-ui-fabric-react!IContextualMenuProps#onMenuDismissed:member'
-    summary: Callback for when the contextualmenu is being closed (removing from the DOM)
+    summary: Callback for when the menu is being closed (removing from the DOM).
     name: onMenuDismissed
     fullName: onMenuDismissed
     langs:
@@ -397,7 +388,7 @@ items:
         type:
           - '(contextualMenu?: IContextualMenuProps) => void'
   - uid: 'office-ui-fabric-react!IContextualMenuProps#onMenuOpened:member'
-    summary: Callback for when the contextualmenu has been opened.
+    summary: Callback for when the menu has been opened.
     name: onMenuOpened
     fullName: onMenuOpened
     langs:
@@ -421,7 +412,7 @@ items:
         type:
           - IRenderFunction<IContextualMenuListProps>
   - uid: 'office-ui-fabric-react!IContextualMenuProps#onRenderSubMenu:member'
-    summary: Method to call when trying to render a submenu.
+    summary: Custom render function for a submenu.
     name: onRenderSubMenu
     fullName: onRenderSubMenu
     langs:
@@ -458,9 +449,9 @@ items:
           - boolean
   - uid: 'office-ui-fabric-react!IContextualMenuProps#shouldUpdateWhenHidden:member'
     summary: >-
-      If true, the component will be updated even when hidden=true. Note that this would consume resources to update
-      even though nothing is being shown to the user. This might be helpful though if your updates are small and you
-      want the contextual menu to be revealed fast to the user when hidden is set to false.
+      If true, the component will be updated even when `hidden=true`<!-- -->. Note that this would consume resources to
+      update even though nothing is being shown to the user. This might be helpful though if your updates are small and
+      you want the contextual menu to be revealed fast to the user when `hidden` is set to false.
     name: shouldUpdateWhenHidden
     fullName: shouldUpdateWhenHidden
     langs:
@@ -497,9 +488,9 @@ items:
           - number
   - uid: 'office-ui-fabric-react!IContextualMenuProps#target:member'
     summary: >-
-      The target that the ContextualMenu should try to position itself based on. It can be either an Element a
-      querySelector string of a valid Element or a MouseEvent. If MouseEvent is given then the origin point of the event
-      will be used.
+      The target that the ContextualMenu should try to position itself based on. It can be either an element, a query
+      selector string resolving to a valid element, or a MouseEvent. If a MouseEvent is given, the origin point of the
+      event will be used.
     name: target
     fullName: target
     langs:
@@ -511,7 +502,7 @@ items:
         type:
           - Target
   - uid: 'office-ui-fabric-react!IContextualMenuProps#theme:member'
-    summary: Theme provided by High-Order Component.
+    summary: Theme provided by higher-order component.
     name: theme
     fullName: theme
     langs:

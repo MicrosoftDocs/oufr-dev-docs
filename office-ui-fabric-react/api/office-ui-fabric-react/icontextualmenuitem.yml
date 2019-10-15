@@ -82,7 +82,7 @@ items:
         type:
           - boolean
   - uid: 'office-ui-fabric-react!IContextualMenuItem#className:member'
-    summary: Additional css class to apply to the menu item
+    summary: Additional CSS class to apply to the menu item.
     name: className
     fullName: className
     langs:
@@ -109,9 +109,9 @@ items:
           - IRefObject<IContextualMenuRenderItem>
   - uid: 'office-ui-fabric-react!IContextualMenuItem#customOnRenderListLength:member'
     summary: >-
-      When rendering a custom component that is passed in, the component might also be a list of elements. We want to
-      keep track of the correct index our menu is using based off of the length of the custom list. It is up to the user
-      to increment the count for their list.
+      When rendering a custom menu component that is passed in, the component might also be a list of elements. We want
+      to keep track of the correct index our menu is using based off of the length of the custom list. It is up to the
+      user to increment the count for their list.
     name: customOnRenderListLength
     fullName: customOnRenderListLength
     langs:
@@ -147,9 +147,7 @@ items:
         type:
           - boolean
   - uid: 'office-ui-fabric-react!IContextualMenuItem#getItemClassNames:member'
-    summary: >-
-      Method to provide the classnames to style the individual items inside a menu. Deprecated, use `styles` prop of
-      `IContextualMenuItemProps` to leverage mergeStyles API.
+    summary: Method to provide the classnames to style the individual items inside a menu.
     deprecated:
       content: Use `styles` prop of `IContextualMenuItemProps` to leverage mergeStyles API.
     name: getItemClassNames
@@ -171,7 +169,7 @@ items:
   - uid: 'office-ui-fabric-react!IContextualMenuItem#getSplitButtonVerticalDividerClassNames:member'
     summary: >-
       Method to provide the classnames to style the Vertical Divider of a split button inside a menu. Default value is
-      the getVerticalDividerClassnames func defined in ContextualMenu.classnames
+      the `getSplitButtonVerticalDividerClassNames` func defined in `ContextualMenu.classnames.ts`<!-- -->.
     name: getSplitButtonVerticalDividerClassNames
     fullName: getSplitButtonVerticalDividerClassNames
     langs:
@@ -183,7 +181,7 @@ items:
         type:
           - '(theme: ITheme) => IVerticalDividerClassNames'
   - uid: 'office-ui-fabric-react!IContextualMenuItem#href:member'
-    summary: An optional URL to navigate to upon selection
+    summary: Navigate to this URL when the menu item is clicked.
     name: href
     fullName: href
     langs:
@@ -195,7 +193,7 @@ items:
         type:
           - string
   - uid: 'office-ui-fabric-react!IContextualMenuItem#iconProps:member'
-    summary: Props that go to the IconComponent
+    summary: Props for the Icon.
     name: iconProps
     fullName: iconProps
     langs:
@@ -268,7 +266,7 @@ items:
         type:
           - 'office-ui-fabric-react!IKeytipProps:interface'
   - uid: 'office-ui-fabric-react!IContextualMenuItem#name:member'
-    summary: 'Text description for the menu item to display Deprecated, use `text` instead.'
+    summary: Text description for the menu item to display
     deprecated:
       content: Use `text` instead.
     name: name
@@ -283,8 +281,8 @@ items:
           - string
   - uid: 'office-ui-fabric-react!IContextualMenuItem#onClick:member'
     summary: >-
-      Callback issued when the menu item is invoked. If ev.preventDefault() is called in onClick, click will not close
-      menu. Returning true will dismiss the menu even if ev.preventDefault() was called.
+      Callback for when the menu item is invoked. If `ev.preventDefault()` is called in `onClick`<!-- -->, the click
+      will not close the menu. Returning true will dismiss the menu even if `ev.preventDefault()` was called.
     name: onClick
     fullName: onClick
     langs:
@@ -301,7 +299,7 @@ items:
             boolean | void
   - uid: 'office-ui-fabric-react!IContextualMenuItem#onMouseDown:member'
     summary: >-
-      A function to be executed onMouseDown. This is executed before an onClick event and can be used to interrupt
+      A function to be executed on mouse down. This is executed before an `onClick` event and can be used to interrupt
       native on click events as well. The click event should still handle the commands. This should only be used in
       special cases when react and non-react are mixed.
     name: onMouseDown
@@ -357,7 +355,9 @@ items:
         type:
           - boolean
   - uid: 'office-ui-fabric-react!IContextualMenuItem#rel:member'
-    summary: An optional rel when using href. If target is \_blank rel is defaulted to a value to prevent clickjacking.
+    summary: >-
+      Link relation setting when using `href`<!-- -->. If `target` is `_blank`<!-- -->, `rel` is defaulted to a value to
+      prevent clickjacking.
     name: rel
     fullName: rel
     langs:
@@ -369,9 +369,7 @@ items:
         type:
           - string
   - uid: 'office-ui-fabric-react!IContextualMenuItem#role:member'
-    summary: >-
-      Optional override for the role attribute on the menu button. If one is not provided, it will have a value of
-      menuitem or menuitemcheckbox.
+    summary: Optional override for the menu button's role. Defaults to `menuitem` or `menuitemcheckbox`<!-- -->.
     name: role
     fullName: role
     langs:
@@ -395,7 +393,7 @@ items:
         type:
           - string
   - uid: 'office-ui-fabric-react!IContextualMenuItem#sectionProps:member'
-    summary: Properties to apply to render this item as a section. This prop is mutually exclusive with subMenuProps.
+    summary: Properties to apply to render this item as a section. This prop is mutually exclusive with `subMenuProps`<!-- -->.
     name: sectionProps
     fullName: sectionProps
     langs:
@@ -407,7 +405,8 @@ items:
         type:
           - 'office-ui-fabric-react!IContextualMenuSection:interface'
   - uid: 'office-ui-fabric-react!IContextualMenuItem#shortCut:member'
-    summary: '\[TODO\] Not Yet Implemented'
+    deprecated:
+      content: Not used
     name: shortCut
     fullName: shortCut
     langs:
@@ -431,7 +430,7 @@ items:
         type:
           - boolean
   - uid: 'office-ui-fabric-react!IContextualMenuItem#style:member'
-    summary: 'Additional styles to apply to the menu item Deprecated, use `styles` instead.'
+    summary: Additional styles to apply to the menu item
     deprecated:
       content: in favor of the `styles` prop to leverage mergeStyles API.
     name: style
@@ -445,7 +444,7 @@ items:
         type:
           - React.CSSProperties
   - uid: 'office-ui-fabric-react!IContextualMenuItem#submenuIconProps:member'
-    summary: Props that go to the IconComponent used for the chevron.
+    summary: Props for the Icon used for the chevron.
     name: submenuIconProps
     fullName: submenuIconProps
     langs:
@@ -475,7 +474,7 @@ items:
         type:
           - 'office-ui-fabric-react!IContextualMenuProps:interface'
   - uid: 'office-ui-fabric-react!IContextualMenuItem#target:member'
-    summary: An optional target when using href
+    summary: Target window when using `href`<!-- -->.
     name: target
     fullName: target
     langs:

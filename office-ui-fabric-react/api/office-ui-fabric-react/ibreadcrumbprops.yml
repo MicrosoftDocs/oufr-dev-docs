@@ -26,7 +26,7 @@ items:
       - 'office-ui-fabric-react!IBreadcrumbProps#theme:member'
       - 'office-ui-fabric-react!IBreadcrumbProps#tooltipHostProps:member'
   - uid: 'office-ui-fabric-react!IBreadcrumbProps#ariaLabel:member'
-    summary: Aria label to place on the navigation landmark for breadcrumb
+    summary: Aria label for the root element of the breadcrumb (which is a navigation landmark).
     name: ariaLabel
     fullName: ariaLabel
     langs:
@@ -38,7 +38,7 @@ items:
         type:
           - string
   - uid: 'office-ui-fabric-react!IBreadcrumbProps#className:member'
-    summary: Optional root classname for the root breadcrumb element.
+    summary: Optional class for the root breadcrumb element.
     name: className
     fullName: className
     langs:
@@ -76,7 +76,7 @@ items:
         type:
           - IComponentAs<IDividerAsProps>
   - uid: 'office-ui-fabric-react!IBreadcrumbProps#focusZoneProps:member'
-    summary: Focuszone props that will get passed through to the root focus zone.
+    summary: Extra props for the root FocusZone.
     name: focusZoneProps
     fullName: focusZoneProps
     langs:
@@ -114,7 +114,9 @@ items:
         type:
           - number
   - uid: 'office-ui-fabric-react!IBreadcrumbProps#onReduceData:member'
-    summary: Method to call when reducing the length of the breadcrumb. Return undefined to never reduce breadcrumb length
+    summary: >-
+      Method that determines how to reduce the length of the breadcrumb. Return undefined to never reduce breadcrumb
+      length.
     name: onReduceData
     fullName: onReduceData
     langs:
@@ -126,7 +128,7 @@ items:
         type:
           - '(data: IBreadcrumbData) => IBreadcrumbData | undefined'
   - uid: 'office-ui-fabric-react!IBreadcrumbProps#onRenderItem:member'
-    summary: Method to call when trying to render an item.
+    summary: Custom render function for each breadcrumb item.
     name: onRenderItem
     fullName: onRenderItem
     langs:
@@ -150,7 +152,7 @@ items:
         type:
           - IRenderFunction<IButtonProps>
   - uid: 'office-ui-fabric-react!IBreadcrumbProps#overflowAriaLabel:member'
-    summary: Optional name to use for aria label on overflow button.
+    summary: Aria label for the overflow button.
     name: overflowAriaLabel
     fullName: overflowAriaLabel
     langs:
@@ -196,7 +198,7 @@ items:
         type:
           - '@uifabric/styling!ITheme:interface'
   - uid: 'office-ui-fabric-react!IBreadcrumbProps#tooltipHostProps:member'
-    summary: TooltipHost props that will get passed through to overflow tooltips.
+    summary: Extra props for the TooltipHost which wraps each breadcrumb item.
     name: tooltipHostProps
     fullName: tooltipHostProps
     langs:
