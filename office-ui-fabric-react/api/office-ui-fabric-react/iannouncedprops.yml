@@ -12,6 +12,7 @@ items:
     package: office-ui-fabric-react!
     children:
       - 'office-ui-fabric-react!IAnnouncedProps#"aria-live":member'
+      - 'office-ui-fabric-react!IAnnouncedProps#as:member'
       - 'office-ui-fabric-react!IAnnouncedProps#message:member'
       - 'office-ui-fabric-react!IAnnouncedProps#styles:member'
   - uid: 'office-ui-fabric-react!IAnnouncedProps#"aria-live":member'
@@ -26,6 +27,20 @@ items:
       return:
         type:
           - '''off'' | ''polite'' | ''assertive'''
+  - uid: 'office-ui-fabric-react!IAnnouncedProps#as:member'
+    summary: >-
+      Optionally render the root of this component as another component type or primitive. The custom type \*\*must\*\*
+      preserve any children or native props passed in.  'div'
+    name: as
+    fullName: as
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'as?: React.ElementType;'
+      return:
+        type:
+          - React.ElementType
   - uid: 'office-ui-fabric-react!IAnnouncedProps#message:member'
     summary: The status message provided as screen reader output
     name: message
