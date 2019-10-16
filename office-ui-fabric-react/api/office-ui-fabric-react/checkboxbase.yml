@@ -72,26 +72,28 @@ items:
           - void
         description: ''
   - uid: 'office-ui-fabric-react!CheckboxBase.getDerivedStateFromProps:member(1)'
-    name: 'getDerivedStateFromProps(props, state)'
-    fullName: 'getDerivedStateFromProps(props, state)'
+    name: 'getDerivedStateFromProps(nextProps, prevState)'
+    fullName: 'getDerivedStateFromProps(nextProps, prevState)'
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'static getDerivedStateFromProps(props: ICheckboxProps, state: ICheckboxState): ICheckboxState | null;'
+      content: >-
+        static getDerivedStateFromProps(nextProps: Readonly<ICheckboxProps>, prevState: Readonly<ICheckboxState>):
+        ICheckboxState | null;
       return:
         type:
           - ICheckboxState | null
         description: ''
       parameters:
-        - id: props
+        - id: nextProps
           description: ''
           type:
-            - 'office-ui-fabric-react!ICheckboxProps:interface'
-        - id: state
+            - Readonly<ICheckboxProps>
+        - id: prevState
           description: ''
           type:
-            - 'office-ui-fabric-react!ICheckboxState:interface'
+            - Readonly<ICheckboxState>
   - uid: 'office-ui-fabric-react!CheckboxBase#indeterminate:member'
     name: indeterminate
     fullName: indeterminate
