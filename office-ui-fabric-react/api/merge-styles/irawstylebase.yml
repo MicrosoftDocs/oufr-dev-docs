@@ -164,6 +164,7 @@ items:
       - '@uifabric/merge-styles!IRawStyleBase#mixBlendMode:member'
       - '@uifabric/merge-styles!IRawStyleBase#MozOsxFontSmoothing:member'
       - '@uifabric/merge-styles!IRawStyleBase#MsHighContrastAdjust:member'
+      - '@uifabric/merge-styles!IRawStyleBase#MsOverflowStyle:member'
       - '@uifabric/merge-styles!IRawStyleBase#objectFit:member'
       - '@uifabric/merge-styles!IRawStyleBase#opacity:member'
       - '@uifabric/merge-styles!IRawStyleBase#order:member'
@@ -2398,6 +2399,18 @@ items:
       return:
         type:
           - ICSSRule | string
+  - uid: '@uifabric/merge-styles!IRawStyleBase#MsOverflowStyle:member'
+    summary: (Ms specific) scrollbar behavior adjust rule.
+    name: MsOverflowStyle
+    fullName: MsOverflowStyle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'MsOverflowStyle?: ''auto'' | ''none'' | ''scrollbar'' | ''-ms-autohiding-scrollbar'';'
+      return:
+        type:
+          - '''auto'' | ''none'' | ''scrollbar'' | ''-ms-autohiding-scrollbar'''
   - uid: '@uifabric/merge-styles!IRawStyleBase#objectFit:member'
     summary: >-
       The ‘object-fit’ property specifies how the contents of a replaced element should be fitted to the box established
