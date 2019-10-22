@@ -353,10 +353,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'onDismiss?: (ev?: any, dismissAll?: boolean) => void;'
+      content: 'onDismiss?: (ev?: React.MouseEvent | React.KeyboardEvent, dismissAll?: boolean) => void;'
       return:
         type:
-          - '(ev?: any, dismissAll?: boolean) => void'
+          - '(ev?: React.MouseEvent | React.KeyboardEvent, dismissAll?: boolean) => void'
   - uid: 'office-ui-fabric-react!IContextualMenuProps#onItemClick:member'
     summary: >-
       Click handler which is invoked if `onClick` is not passed for individual contextual menu item. Returning true will

@@ -56,26 +56,28 @@ items:
           - void
         description: ''
   - uid: 'office-ui-fabric-react!ToggleBase.getDerivedStateFromProps:member(1)'
-    name: 'getDerivedStateFromProps(props, state)'
-    fullName: 'getDerivedStateFromProps(props, state)'
+    name: 'getDerivedStateFromProps(nextProps, prevState)'
+    fullName: 'getDerivedStateFromProps(nextProps, prevState)'
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'static getDerivedStateFromProps(props: IToggleProps, state: IToggleState): IToggleState;'
+      content: >-
+        static getDerivedStateFromProps(nextProps: Readonly<IToggleProps>, prevState: Readonly<IToggleState>):
+        Partial<IToggleState> | null;
       return:
         type:
-          - 'office-ui-fabric-react!IToggleState:interface'
+          - Partial<IToggleState> | null
         description: ''
       parameters:
-        - id: props
+        - id: nextProps
           description: ''
           type:
-            - 'office-ui-fabric-react!IToggleProps:interface'
-        - id: state
+            - Readonly<IToggleProps>
+        - id: prevState
           description: ''
           type:
-            - 'office-ui-fabric-react!IToggleState:interface'
+            - Readonly<IToggleState>
   - uid: 'office-ui-fabric-react!ToggleBase#render:member(1)'
     name: render()
     fullName: render()
