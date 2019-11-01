@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'office-ui-fabric-react!ICommandBarItemProps:interface'
-    summary: ICommandBarItemProps extends IContextualMenuItem and adds a few CommandBar specific props
+    summary: ICommandBarItemProps extends IContextualMenuItem and adds a few CommandBar-specific props.
     name: ICommandBarItemProps
     fullName: ICommandBarItemProps
     langs:
@@ -31,8 +31,8 @@ items:
           - 'office-ui-fabric-react!IButtonStyles:interface'
   - uid: 'office-ui-fabric-react!ICommandBarItemProps#cacheKey:member'
     summary: >-
-      A custom cache key to be used for this item. If cacheKey is changed, the cache will invalidate. Defaults to key
-      value;
+      A custom cache key to be used for this item. If `cacheKey` is changed, the cache will invalidate. Defaults to
+      `key` value.
     name: cacheKey
     fullName: cacheKey
     langs:
@@ -44,7 +44,7 @@ items:
         type:
           - string
   - uid: 'office-ui-fabric-react!ICommandBarItemProps#commandBarButtonAs:member'
-    summary: 'Method to override the render of the individual command bar button. Note, is not used when rendered in overflow'
+    summary: Method to override the render of the individual command bar button. Not used when item is rendered in overflow.
     name: commandBarButtonAs
     fullName: commandBarButtonAs
     langs:
@@ -56,7 +56,7 @@ items:
         type:
           - IComponentAs<ICommandBarItemProps>
   - uid: 'office-ui-fabric-react!ICommandBarItemProps#iconOnly:member'
-    summary: Remove text when button is not in the overflow
+    summary: 'Show only an icon for this item, not text. Does not apply if item is in the overflow.'
     name: iconOnly
     fullName: iconOnly
     langs:
@@ -69,8 +69,8 @@ items:
           - boolean
   - uid: 'office-ui-fabric-react!ICommandBarItemProps#renderedInOverflow:member'
     summary: >-
-      Context under which the item is being rendered This value is controlled by the component and useful for adjusting
-      onRender function
+      Context under which the item is being rendered. This value is mutated by the CommandBar and is useful for
+      adjusting the `onRender` function.
     name: renderedInOverflow
     fullName: renderedInOverflow
     langs:
@@ -82,7 +82,7 @@ items:
         type:
           - boolean
   - uid: 'office-ui-fabric-react!ICommandBarItemProps#tooltipHostProps:member'
-    summary: Props to pass into tooltip during iconOnly
+    summary: Props for the tooltip when in `iconOnly` mode.
     name: tooltipHostProps
     fullName: tooltipHostProps
     langs:

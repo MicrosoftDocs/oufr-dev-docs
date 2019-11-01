@@ -27,7 +27,7 @@ These design toolkits provide styles, controls and layout templates that enable 
 These SharePoint design resources provide everything you need to design your web parts, including responsive page grids and columns.
 
 - [Designing SharePoint experiences](https://aka.ms/spdesign)
-- [SharePoint Toolkit (XD)](https://aka.ms/sharepoint-toolkit)
+- [SharePoint Toolkit (Figma)](https://aka.ms/SharePointToolkits/Web/Figma)
 
 <h3 id="office-add-ins-design">Office Add-ins</h3>
 

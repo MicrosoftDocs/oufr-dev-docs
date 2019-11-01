@@ -42,7 +42,7 @@ items:
         type:
           - string
   - uid: 'office-ui-fabric-react!ICommandBarProps#buttonAs:member'
-    summary: Custom button to be used as near and far items
+    summary: Custom component for the near and far item buttons. Not used for overflow menu items.
     name: buttonAs
     fullName: buttonAs
     langs:
@@ -82,8 +82,8 @@ items:
   - uid: 'office-ui-fabric-react!ICommandBarProps#dataDidRender:member'
     summary: >-
       Function to be called every time data is rendered. It provides the data that was actually rendered. A use case
-      would be adding telemetry when a particular control is shown in an overflow well or dropped as a result of
-      onReduceData or to count the number of renders that an implementation of onReduceData triggers.
+      would be adding telemetry when a particular control is shown in an overflow or dropped as a result of
+      `onReduceData`<!-- -->, or to count the number of renders that an implementation of `onReduceData` triggers.
     name: dataDidRender
     fullName: dataDidRender
     langs:
@@ -95,7 +95,7 @@ items:
         type:
           - '(renderedData: any) => void'
   - uid: 'office-ui-fabric-react!ICommandBarProps#farItems:member'
-    summary: 'Items to render on the right side (or left, in RTL). ICommandBarItemProps extend IContextualMenuItem'
+    summary: 'Items to render on the right side (or left, in RTL). ICommandBarItemProps extends IContextualMenuItem.'
     name: farItems
     fullName: farItems
     langs:
@@ -107,7 +107,7 @@ items:
         type:
           - 'ICommandBarItemProps[]'
   - uid: 'office-ui-fabric-react!ICommandBarProps#items:member'
-    summary: Items to render. ICommandBarItemProps extend IContextualMenuItem
+    summary: Items to render. ICommandBarItemProps extends IContextualMenuItem.
     name: items
     fullName: items
     langs:
@@ -119,7 +119,7 @@ items:
         type:
           - 'ICommandBarItemProps[]'
   - uid: 'office-ui-fabric-react!ICommandBarProps#onDataGrown:member'
-    summary: Function callback invoked when data has been grown.
+    summary: Callback invoked when data has been grown.
     name: onDataGrown
     fullName: onDataGrown
     langs:
@@ -131,7 +131,7 @@ items:
         type:
           - '(movedItem: ICommandBarItemProps) => void'
   - uid: 'office-ui-fabric-react!ICommandBarProps#onDataReduced:member'
-    summary: Function callback invoked when data has been reduced.
+    summary: Callback invoked when data has been reduced.
     name: onDataReduced
     fullName: onDataReduced
     langs:
@@ -171,7 +171,7 @@ items:
         type:
           - '(data: ICommandBarData) => ICommandBarData | undefined'
   - uid: 'office-ui-fabric-react!ICommandBarProps#overflowButtonAs:member'
-    summary: Custom button to be used as oveflow button
+    summary: Custom component for the overflow button.
     name: overflowButtonAs
     fullName: overflowButtonAs
     langs:
@@ -184,8 +184,8 @@ items:
           - IComponentAs<IButtonProps>
   - uid: 'office-ui-fabric-react!ICommandBarProps#overflowButtonProps:member'
     summary: >-
-      Props to be passed to overflow button. If menuProps are passed through this prop, any items provided will be
-      prepended to the top of the existing menu.
+      Props to be passed to overflow button. If `menuProps` are passed through this prop, any items provided will be
+      prepended to any computed overflow items.
     name: overflowButtonProps
     fullName: overflowButtonProps
     langs:
@@ -197,7 +197,7 @@ items:
         type:
           - 'office-ui-fabric-react!IButtonProps:interface'
   - uid: 'office-ui-fabric-react!ICommandBarProps#overflowItems:member'
-    summary: Default items to have in the overflow menu. ICommandBarItemProps extend IContextualMenuItem
+    summary: Default items to have in the overflow menu. ICommandBarItemProps extends IContextualMenuItem.
     name: overflowItems
     fullName: overflowItems
     langs:
@@ -209,19 +209,19 @@ items:
         type:
           - 'ICommandBarItemProps[]'
   - uid: 'office-ui-fabric-react!ICommandBarProps#shiftOnReduce:member'
-    summary: 'When true, items will be ''shifted'' off the front of the array when reduced, and unshifted during grow'
+    summary: 'When true, items will be ''shifted'' off the front of the array when reduced, and unshifted during grow.'
     name: shiftOnReduce
     fullName: shiftOnReduce
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'shiftOnReduce?: Boolean;'
+      content: 'shiftOnReduce?: boolean;'
       return:
         type:
-          - Boolean
+          - boolean
   - uid: 'office-ui-fabric-react!ICommandBarProps#styles:member'
-    summary: Call to provide customized styling that will layer on top of the variant rules
+    summary: Customized styling that will layer on top of the variant rules.
     name: styles
     fullName: styles
     langs:
