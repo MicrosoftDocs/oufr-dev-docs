@@ -8,6 +8,9 @@ items:
     type: interface
     package: office-ui-fabric-react!
     children:
+      - 'office-ui-fabric-react!IColorRectangleProps#ariaDescription:member'
+      - 'office-ui-fabric-react!IColorRectangleProps#ariaLabel:member'
+      - 'office-ui-fabric-react!IColorRectangleProps#ariaValueFormat:member'
       - 'office-ui-fabric-react!IColorRectangleProps#className:member'
       - 'office-ui-fabric-react!IColorRectangleProps#color:member'
       - 'office-ui-fabric-react!IColorRectangleProps#componentRef:member'
@@ -15,6 +18,46 @@ items:
       - 'office-ui-fabric-react!IColorRectangleProps#onChange:member'
       - 'office-ui-fabric-react!IColorRectangleProps#styles:member'
       - 'office-ui-fabric-react!IColorRectangleProps#theme:member'
+  - uid: 'office-ui-fabric-react!IColorRectangleProps#ariaDescription:member'
+    summary: >-
+      Detailed description for how to use the color rectangle. Moving the thumb horizontally adjusts saturation and
+      moving it vertically adjusts value (essentially, brightness).
+    name: ariaDescription
+    fullName: ariaDescription
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'ariaDescription?: string;'
+      return:
+        type:
+          - string
+  - uid: 'office-ui-fabric-react!IColorRectangleProps#ariaLabel:member'
+    summary: Label of the ColorRectangle for the benefit of screen reader users.
+    name: ariaLabel
+    fullName: ariaLabel
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'ariaLabel?: string;'
+      return:
+        type:
+          - string
+  - uid: 'office-ui-fabric-react!IColorRectangleProps#ariaValueFormat:member'
+    summary: >-
+      Format string for the color rectangle's current value as read by screen readers. The string must include
+      descriptions and two placeholders for the current values: `{0}` for saturation and `{1}` for value/brightness.
+    name: ariaValueFormat
+    fullName: ariaValueFormat
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'ariaValueFormat?: string;'
+      return:
+        type:
+          - string
   - uid: 'office-ui-fabric-react!IColorRectangleProps#className:member'
     summary: Additional CSS class(es) to apply to the ColorRectangle.
     name: className
@@ -71,10 +114,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'onChange?: (ev: React.MouseEvent<HTMLElement>, color: IColor) => void;'
+      content: 'onChange?: (ev: React.MouseEvent | React.KeyboardEvent, color: IColor) => void;'
       return:
         type:
-          - '(ev: React.MouseEvent<HTMLElement>, color: IColor) => void'
+          - '(ev: React.MouseEvent | React.KeyboardEvent, color: IColor) => void'
   - uid: 'office-ui-fabric-react!IColorRectangleProps#styles:member'
     summary: Call to provide customized styling that will layer on top of the variant rules.
     name: styles

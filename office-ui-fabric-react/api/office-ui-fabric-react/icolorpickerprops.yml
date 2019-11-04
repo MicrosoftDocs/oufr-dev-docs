@@ -19,10 +19,13 @@ items:
       - 'office-ui-fabric-react!IColorPickerProps#onChange:member'
       - 'office-ui-fabric-react!IColorPickerProps#redLabel:member'
       - 'office-ui-fabric-react!IColorPickerProps#showPreview:member'
+      - 'office-ui-fabric-react!IColorPickerProps#strings:member'
       - 'office-ui-fabric-react!IColorPickerProps#styles:member'
       - 'office-ui-fabric-react!IColorPickerProps#theme:member'
   - uid: 'office-ui-fabric-react!IColorPickerProps#alphaLabel:member'
     summary: Label for the alpha textfield.
+    deprecated:
+      content: Use `strings`
     name: alphaLabel
     fullName: alphaLabel
     langs:
@@ -47,6 +50,8 @@ items:
           - boolean
   - uid: 'office-ui-fabric-react!IColorPickerProps#blueLabel:member'
     summary: Label for the blue text field.
+    deprecated:
+      content: Use `strings`
     name: blueLabel
     fullName: blueLabel
     langs:
@@ -95,6 +100,8 @@ items:
           - IRefObject<IColorPicker>
   - uid: 'office-ui-fabric-react!IColorPickerProps#greenLabel:member'
     summary: Label for the green text field.
+    deprecated:
+      content: Use `strings`
     name: greenLabel
     fullName: greenLabel
     langs:
@@ -107,6 +114,8 @@ items:
           - string
   - uid: 'office-ui-fabric-react!IColorPickerProps#hexLabel:member'
     summary: Label for the hex text field.
+    deprecated:
+      content: Use `strings`
     name: hexLabel
     fullName: hexLabel
     langs:
@@ -131,6 +140,8 @@ items:
           - '(ev: React.SyntheticEvent<HTMLElement>, color: IColor) => void'
   - uid: 'office-ui-fabric-react!IColorPickerProps#redLabel:member'
     summary: Label for the red text field.
+    deprecated:
+      content: Use `strings`
     name: redLabel
     fullName: redLabel
     langs:
@@ -153,6 +164,18 @@ items:
       return:
         type:
           - boolean
+  - uid: 'office-ui-fabric-react!IColorPickerProps#strings:member'
+    summary: Labels for elements within the ColorPicker. Defaults are provided in English only.
+    name: strings
+    fullName: strings
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'strings?: IColorPickerStrings;'
+      return:
+        type:
+          - 'office-ui-fabric-react!IColorPickerStrings:interface'
   - uid: 'office-ui-fabric-react!IColorPickerProps#styles:member'
     summary: Call to provide customized styling that will layer on top of the variant rules.
     name: styles
