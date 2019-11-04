@@ -8,17 +8,31 @@ items:
     type: interface
     package: office-ui-fabric-react!
     children:
+      - 'office-ui-fabric-react!IColorSliderProps#ariaLabel:member'
       - 'office-ui-fabric-react!IColorSliderProps#className:member'
       - 'office-ui-fabric-react!IColorSliderProps#componentRef:member'
       - 'office-ui-fabric-react!IColorSliderProps#isAlpha:member'
       - 'office-ui-fabric-react!IColorSliderProps#maxValue:member'
       - 'office-ui-fabric-react!IColorSliderProps#minValue:member'
       - 'office-ui-fabric-react!IColorSliderProps#onChange:member'
+      - 'office-ui-fabric-react!IColorSliderProps#overlayColor:member'
       - 'office-ui-fabric-react!IColorSliderProps#overlayStyle:member'
       - 'office-ui-fabric-react!IColorSliderProps#styles:member'
       - 'office-ui-fabric-react!IColorSliderProps#theme:member'
       - 'office-ui-fabric-react!IColorSliderProps#thumbColor:member'
       - 'office-ui-fabric-react!IColorSliderProps#value:member'
+  - uid: 'office-ui-fabric-react!IColorSliderProps#ariaLabel:member'
+    summary: Label of the ColorSlider for the benefit of screen reader users.
+    name: ariaLabel
+    fullName: ariaLabel
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'ariaLabel?: string;'
+      return:
+        type:
+          - string
   - uid: 'office-ui-fabric-react!IColorSliderProps#className:member'
     summary: Additional CSS class(es) to apply to the ColorSlider.
     name: className
@@ -44,7 +58,9 @@ items:
         type:
           - IRefObject<IColorSlider>
   - uid: 'office-ui-fabric-react!IColorSliderProps#isAlpha:member'
-    summary: 'If true, the slider represents an alpha slider. Otherwise, the slider represents a hue slider.'
+    summary: >-
+      If true, the slider represents an alpha slider and will display a gray checkered pattern in the background.
+      Otherwise, the slider represents a hue slider.
     name: isAlpha
     fullName: isAlpha
     langs:
@@ -87,22 +103,36 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'onChange?: (event: React.MouseEvent<HTMLElement>, newValue?: number) => void;'
+      content: 'onChange?: (event: React.MouseEvent | React.KeyboardEvent, newValue?: number) => void;'
       return:
         type:
-          - '(event: React.MouseEvent<HTMLElement>, newValue?: number) => void'
+          - '(event: React.MouseEvent | React.KeyboardEvent, newValue?: number) => void'
+  - uid: 'office-ui-fabric-react!IColorSliderProps#overlayColor:member'
+    summary: Hex color to use when rendering an alpha slider's overlay.
+    name: overlayColor
+    fullName: overlayColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'overlayColor?: string;'
+      return:
+        type:
+          - string
   - uid: 'office-ui-fabric-react!IColorSliderProps#overlayStyle:member'
     summary: Custom style for the overlay element.
+    deprecated:
+      content: Use `overlayColor` instead
     name: overlayStyle
     fullName: overlayStyle
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'overlayStyle?: any;'
+      content: 'overlayStyle?: React.CSSProperties;'
       return:
         type:
-          - any
+          - React.CSSProperties
   - uid: 'office-ui-fabric-react!IColorSliderProps#styles:member'
     summary: Call to provide customized styling that will layer on top of the variant rules.
     name: styles
@@ -129,6 +159,8 @@ items:
           - '@uifabric/styling!ITheme:interface'
   - uid: 'office-ui-fabric-react!IColorSliderProps#thumbColor:member'
     summary: CSS-compatible string for the color of the thumb element.
+    deprecated:
+      content: Not used. Use `styles.sliderThumb` instead.
     name: thumbColor
     fullName: thumbColor
     langs:

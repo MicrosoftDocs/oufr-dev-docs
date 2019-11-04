@@ -14,9 +14,9 @@ items:
     children:
       - 'office-ui-fabric-react!ColorPickerBase:constructor(1)'
       - 'office-ui-fabric-react!ColorPickerBase#color:member'
+      - 'office-ui-fabric-react!ColorPickerBase#componentDidUpdate:member(1)'
       - 'office-ui-fabric-react!ColorPickerBase.defaultProps:member'
       - 'office-ui-fabric-react!ColorPickerBase#render:member(1)'
-      - 'office-ui-fabric-react!ColorPickerBase#UNSAFE_componentWillReceiveProps:member(1)'
   - uid: 'office-ui-fabric-react!ColorPickerBase:constructor(1)'
     summary: Constructs a new instance of the `ColorPickerBase` class
     name: (constructor)(props)
@@ -42,6 +42,27 @@ items:
       return:
         type:
           - 'office-ui-fabric-react!IColor:interface'
+  - uid: 'office-ui-fabric-react!ColorPickerBase#componentDidUpdate:member(1)'
+    name: 'componentDidUpdate(prevProps, prevState)'
+    fullName: 'componentDidUpdate(prevProps, prevState)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'componentDidUpdate(prevProps: Readonly<IColorPickerProps>, prevState: Readonly<IColorPickerState>): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: prevProps
+          description: ''
+          type:
+            - Readonly<IColorPickerProps>
+        - id: prevState
+          description: ''
+          type:
+            - Readonly<IColorPickerState>
   - uid: 'office-ui-fabric-react!ColorPickerBase.defaultProps:member'
     name: defaultProps
     fullName: defaultProps
@@ -49,24 +70,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: |-
-        static defaultProps: {
-                hexLabel: string;
-                redLabel: string;
-                greenLabel: string;
-                blueLabel: string;
-                alphaLabel: string;
-            };
+      content: 'static defaultProps: Partial<IColorPickerProps>;'
       return:
         type:
-          - |-
-            {
-                    hexLabel: string;
-                    redLabel: string;
-                    greenLabel: string;
-                    blueLabel: string;
-                    alphaLabel: string;
-                }
+          - Partial<IColorPickerProps>
   - uid: 'office-ui-fabric-react!ColorPickerBase#render:member(1)'
     name: render()
     fullName: render()
@@ -79,20 +86,3 @@ items:
         type:
           - JSX.Element
         description: ''
-  - uid: 'office-ui-fabric-react!ColorPickerBase#UNSAFE_componentWillReceiveProps:member(1)'
-    name: UNSAFE_componentWillReceiveProps(newProps)
-    fullName: UNSAFE_componentWillReceiveProps(newProps)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'UNSAFE_componentWillReceiveProps(newProps: IColorPickerProps): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: newProps
-          description: ''
-          type:
-            - 'office-ui-fabric-react!IColorPickerProps:interface'
