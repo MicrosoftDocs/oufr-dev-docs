@@ -12,10 +12,13 @@ items:
     children:
       - 'office-ui-fabric-react!IFabricProps#applyTheme:member'
       - 'office-ui-fabric-react!IFabricProps#applyThemeToBody:member'
+      - 'office-ui-fabric-react!IFabricProps#as:member'
       - 'office-ui-fabric-react!IFabricProps#componentRef:member'
+      - 'office-ui-fabric-react!IFabricProps#dir:member'
       - 'office-ui-fabric-react!IFabricProps#styles:member'
       - 'office-ui-fabric-react!IFabricProps#theme:member'
   - uid: 'office-ui-fabric-react!IFabricProps#applyTheme:member'
+    summary: Applies the current body background specified in the theme to the root element.
     name: applyTheme
     fullName: applyTheme
     langs:
@@ -27,6 +30,7 @@ items:
         type:
           - boolean
   - uid: 'office-ui-fabric-react!IFabricProps#applyThemeToBody:member'
+    summary: Applies the current body background specified in the theme to the body element.
     name: applyThemeToBody
     fullName: applyThemeToBody
     langs:
@@ -37,6 +41,18 @@ items:
       return:
         type:
           - boolean
+  - uid: 'office-ui-fabric-react!IFabricProps#as:member'
+    summary: 'Overrides the root element type, defaults to `div`<!-- -->.'
+    name: as
+    fullName: as
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'as?: React.ReactType;'
+      return:
+        type:
+          - React.ReactType
   - uid: 'office-ui-fabric-react!IFabricProps#componentRef:member'
     name: componentRef
     fullName: componentRef
@@ -48,7 +64,22 @@ items:
       return:
         type:
           - 'IRefObject<{}>'
+  - uid: 'office-ui-fabric-react!IFabricProps#dir:member'
+    summary: >-
+      Specifies the direction of the content. Will inject a `dir` attribute, and also ensure that the `rtl` flag of the
+      contextual theme object is set correctly so that css registered with merge-styles can be auto flipped correctly.
+    name: dir
+    fullName: dir
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'dir?: ''rtl'' | ''ltr'' | ''auto'';'
+      return:
+        type:
+          - '''rtl'' | ''ltr'' | ''auto'''
   - uid: 'office-ui-fabric-react!IFabricProps#styles:member'
+    summary: Overrides the styles for the component.
     name: styles
     fullName: styles
     langs:
@@ -60,6 +91,7 @@ items:
         type:
           - 'IStyleFunctionOrObject<IFabricStyleProps, IFabricStyles>'
   - uid: 'office-ui-fabric-react!IFabricProps#theme:member'
+    summary: Injected by the `styled` HOC wrapper.
     name: theme
     fullName: theme
     langs:
