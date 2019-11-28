@@ -4,7 +4,7 @@ author: Vitalius1
 ms.author: vibraga
 ---
 
-# Get Started with Fabric React v7.65.1
+# Get Started with Fabric React v7.66.0
 
 ## Overview
 UI Fabric for the web is available in two flavors: Fabric React and Fabric Core.
@@ -149,10 +149,10 @@ If you're using Fabric React, you may not need Fabric Core. Most of the styles f
 
 ### Adding Fabric Core to your site
 
-To add the latest Fluent version of Fabric Core to your site, link to this CSS file in the `<head>` of your webpage. (For the pre-Fluent styles, replace `10.0.0` with `9.6.1` in the `href`.)
+To add the latest Fluent version of Fabric Core to your site, link to this CSS file in the `<head>` of your webpage. (For the pre-Fluent styles, replace `11.0.0` with `9.6.1` in the `href`.)
 
 ```html
-<link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/10.0.0/css/fabric.min.css" />
+<link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css" />
 ```
 
 Fabric Core is also available [via npm](https://www.npmjs.com/package/office-ui-fabric-core) as `office-ui-fabric-core`, or you can [download a copy](https://github.com/OfficeDev/office-ui-fabric-core/releases) to include in your project.
