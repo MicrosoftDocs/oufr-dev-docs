@@ -17,6 +17,7 @@ items:
       - 'office-ui-fabric-react!ITeachingBubbleProps#calloutProps:member'
       - 'office-ui-fabric-react!ITeachingBubbleProps#componentRef:member'
       - 'office-ui-fabric-react!ITeachingBubbleProps#footerContent:member'
+      - 'office-ui-fabric-react!ITeachingBubbleProps#hasCloseButton:member'
       - 'office-ui-fabric-react!ITeachingBubbleProps#hasCloseIcon:member'
       - 'office-ui-fabric-react!ITeachingBubbleProps#hasCondensedHeadline:member'
       - 'office-ui-fabric-react!ITeachingBubbleProps#hasSmallHeadline:member'
@@ -94,8 +95,21 @@ items:
       return:
         type:
           - string | JSX.Element
+  - uid: 'office-ui-fabric-react!ITeachingBubbleProps#hasCloseButton:member'
+    summary: Whether the TeachingBubble renders close button in the top right corner.
+    name: hasCloseButton
+    fullName: hasCloseButton
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'hasCloseButton?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: 'office-ui-fabric-react!ITeachingBubbleProps#hasCloseIcon:member'
-    summary: Does the TeachingBubble have a close button in the top right corner?
+    deprecated:
+      content: Use `hasCloseButton`<!-- -->.
     name: hasCloseIcon
     fullName: hasCloseIcon
     langs:
@@ -145,7 +159,7 @@ items:
         type:
           - string
   - uid: 'office-ui-fabric-react!ITeachingBubbleProps#illustrationImage:member'
-    summary: An Image for the Teaching Bubble.
+    summary: An Image for the TeachingBubble.
     name: illustrationImage
     fullName: illustrationImage
     langs:
@@ -157,7 +171,7 @@ items:
         type:
           - 'office-ui-fabric-react!IImageProps:interface'
   - uid: 'office-ui-fabric-react!ITeachingBubbleProps#isWide:member'
-    summary: 'Whether or not the Teaching Bubble is wide, with image on the left side.'
+    summary: 'Whether or not the TeachingBubble is wide, with image on the left side.'
     name: isWide
     fullName: isWide
     langs:
