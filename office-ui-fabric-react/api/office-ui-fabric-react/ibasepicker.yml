@@ -12,9 +12,25 @@ items:
         - id: T
     package: office-ui-fabric-react!
     children:
+      - 'office-ui-fabric-react!IBasePicker#completeSuggestion:member'
       - 'office-ui-fabric-react!IBasePicker#focus:member'
       - 'office-ui-fabric-react!IBasePicker#focusInput:member'
       - 'office-ui-fabric-react!IBasePicker#items:member'
+  - uid: 'office-ui-fabric-react!IBasePicker#completeSuggestion:member'
+    summary: >-
+      When called, will take the currently selected suggestion and complete it. If called with forceComplete true, it
+      will attempt to force the current suggestion to complete, must provide both createGenericSuggestion, so the text
+      can be turned into an object in the right shape,.and onValidateInput, so the object knows if it's correct or not.
+    name: completeSuggestion
+    fullName: completeSuggestion
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'completeSuggestion: (forceComplete?: boolean) => void;'
+      return:
+        type:
+          - '(forceComplete?: boolean) => void'
   - uid: 'office-ui-fabric-react!IBasePicker#focus:member'
     summary: Sets focus to the focus zone.
     name: focus
