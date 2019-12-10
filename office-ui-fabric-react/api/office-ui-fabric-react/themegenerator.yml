@@ -9,6 +9,7 @@ items:
     package: office-ui-fabric-react!
     children:
       - 'office-ui-fabric-react!ThemeGenerator.getThemeAsCode:member(1)'
+      - 'office-ui-fabric-react!ThemeGenerator.getThemeAsCodeWithCreateTheme:member(1)'
       - 'office-ui-fabric-react!ThemeGenerator.getThemeAsJson:member(1)'
       - 'office-ui-fabric-react!ThemeGenerator.getThemeAsSass:member(1)'
       - 'office-ui-fabric-react!ThemeGenerator.getThemeForPowerShell:member(1)'
@@ -22,6 +23,27 @@ items:
     type: method
     syntax:
       content: 'static getThemeAsCode(slotRules: IThemeRules): any;'
+      return:
+        type:
+          - any
+        description: ''
+      parameters:
+        - id: slotRules
+          description: ''
+          type:
+            - 'office-ui-fabric-react!IThemeRules:interface'
+  - uid: 'office-ui-fabric-react!ThemeGenerator.getThemeAsCodeWithCreateTheme:member(1)'
+    summary: >-
+      Gets code-formatted load theme blob, specifically for the new theme designer, aka.ms/themedesigner. Shouldn't use
+      loadTheme like the old theme designer since it's deprecated. We want to use the theme object from createTheme and
+      use the Customizations.applySettings API instead.
+    name: getThemeAsCodeWithCreateTheme(slotRules)
+    fullName: getThemeAsCodeWithCreateTheme(slotRules)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'static getThemeAsCodeWithCreateTheme(slotRules: IThemeRules): any;'
       return:
         type:
           - any
