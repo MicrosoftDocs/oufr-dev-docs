@@ -219,10 +219,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'protected onInputChange: (value: string) => void;'
+      content: 'protected onInputChange: (value: string, composing?: boolean | undefined) => void;'
       return:
         type:
-          - '(value: string) => void'
+          - '(value: string, composing?: boolean | undefined) => void'
   - uid: 'office-ui-fabric-react!BaseExtendedPicker#onInputClick:member'
     name: onInputClick
     fullName: onInputClick

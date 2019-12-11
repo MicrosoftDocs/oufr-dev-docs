@@ -68,10 +68,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'onInputChange?: (value: string) => string;'
+      content: 'onInputChange?: (value: string, composing: boolean) => string;'
       return:
         type:
-          - '(value: string) => string'
+          - '(value: string, composing: boolean) => string'
   - uid: 'office-ui-fabric-react!IAutofillProps#onInputValueChange:member'
     summary: A callback for when the current input value changes.
     name: onInputValueChange
@@ -80,10 +80,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'onInputValueChange?: (newValue?: string) => void;'
+      content: 'onInputValueChange?: (newValue?: string, composing?: boolean) => void;'
       return:
         type:
-          - '(newValue?: string) => void'
+          - '(newValue?: string, composing?: boolean) => void'
   - uid: 'office-ui-fabric-react!IAutofillProps#preventValueSelection:member'
     summary: >-
       Should the value of the input be selected? True if we're focused on our input, false otherwise. We need to
