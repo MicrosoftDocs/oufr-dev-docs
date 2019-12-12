@@ -15,6 +15,7 @@ items:
     children:
       - '@uifabric/react-cards!ICardProps#horizontal:member'
       - '@uifabric/react-cards!ICardProps#onClick:member'
+      - '@uifabric/react-cards!ICardProps#onKeyDown:member'
   - uid: '@uifabric/react-cards!ICardProps#horizontal:member'
     summary: Defines whether to render a vertical or a horizontal Card.
     name: horizontal
@@ -35,7 +36,19 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'onClick?: (ev: React.MouseEvent<HTMLElement>) => void;'
+      content: 'onClick?: (ev?: React.MouseEvent<HTMLElement>) => void;'
       return:
         type:
-          - '(ev: React.MouseEvent<HTMLElement>) => void'
+          - '(ev?: React.MouseEvent<HTMLElement>) => void'
+  - uid: '@uifabric/react-cards!ICardProps#onKeyDown:member'
+    summary: Defines a callback that is called when the Card is a key is pressed down while focus is on the Card.
+    name: onKeyDown
+    fullName: onKeyDown
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onKeyDown?: (ev?: React.KeyboardEvent<HTMLElement>) => void;'
+      return:
+        type:
+          - '(ev?: React.KeyboardEvent<HTMLElement>) => void'
