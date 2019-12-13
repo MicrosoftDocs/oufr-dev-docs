@@ -1,7 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'office-ui-fabric-react!ITooltipHostProps:interface'
-    summary: Tooltip component props.
+    summary: >-
+      TooltipHost props. Note that native props (such as `id`<!-- -->, `className`<!-- -->, and `aria-` props) are
+      passed through to the Tooltip itself, rather than being used on the host element.
     name: ITooltipHostProps
     fullName: ITooltipHostProps
     langs:
@@ -12,6 +14,7 @@ items:
     package: office-ui-fabric-react!
     children:
       - 'office-ui-fabric-react!ITooltipHostProps#calloutProps:member'
+      - 'office-ui-fabric-react!ITooltipHostProps#className:member'
       - 'office-ui-fabric-react!ITooltipHostProps#closeDelay:member'
       - 'office-ui-fabric-react!ITooltipHostProps#componentRef:member'
       - 'office-ui-fabric-react!ITooltipHostProps#content:member'
@@ -19,6 +22,7 @@ items:
       - 'office-ui-fabric-react!ITooltipHostProps#directionalHint:member'
       - 'office-ui-fabric-react!ITooltipHostProps#directionalHintForRTL:member'
       - 'office-ui-fabric-react!ITooltipHostProps#hostClassName:member'
+      - 'office-ui-fabric-react!ITooltipHostProps#id:member'
       - 'office-ui-fabric-react!ITooltipHostProps#onTooltipToggle:member(1)'
       - 'office-ui-fabric-react!ITooltipHostProps#overflowMode:member'
       - 'office-ui-fabric-react!ITooltipHostProps#setAriaDescribedBy:member'
@@ -26,7 +30,7 @@ items:
       - 'office-ui-fabric-react!ITooltipHostProps#theme:member'
       - 'office-ui-fabric-react!ITooltipHostProps#tooltipProps:member'
   - uid: 'office-ui-fabric-react!ITooltipHostProps#calloutProps:member'
-    summary: 'Additional properties to pass through for Callout, reference detail properties in ICalloutProps'
+    summary: Additional properties to pass through for Callout.
     name: calloutProps
     fullName: calloutProps
     langs:
@@ -37,11 +41,25 @@ items:
       return:
         type:
           - 'office-ui-fabric-react!ICalloutProps:interface'
+  - uid: 'office-ui-fabric-react!ITooltipHostProps#className:member'
+    summary: >-
+      Class name to apply to the \*tooltip itself\*, not the host. To apply a class to the host, use `hostClassName` or
+      `styles.root`<!-- -->.
+    name: className
+    fullName: className
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'className?: string;'
+      return:
+        type:
+          - string
   - uid: 'office-ui-fabric-react!ITooltipHostProps#closeDelay:member'
     summary: >-
-      Optionally a number of milliseconds to delay closing the tooltip, so that the user has time to hover over the
-      tooltip and interact with it. Hovering over the tooltip will count as hovering over the host, so that the tooltip
-      will stay open if the user is actively interacting with it.
+      Number of milliseconds to delay closing the tooltip, so that the user has time to hover over the tooltip and
+      interact with it. Hovering over the tooltip will count as hovering over the host, so that the tooltip will stay
+      open if the user is actively interacting with it.
     name: closeDelay
     fullName: closeDelay
     langs:
@@ -67,7 +85,7 @@ items:
         type:
           - IRefObject<ITooltipHost>
   - uid: 'office-ui-fabric-react!ITooltipHostProps#content:member'
-    summary: Content to be passed to the tooltip
+    summary: Content to display in the Tooltip.
     name: content
     fullName: content
     langs:
@@ -79,7 +97,7 @@ items:
         type:
           - 'string | JSX.Element | JSX.Element[]'
   - uid: 'office-ui-fabric-react!ITooltipHostProps#delay:member'
-    summary: Length of delay
+    summary: Length of delay before showing the tooltip on hover.
     name: delay
     fullName: delay
     langs:
@@ -91,7 +109,7 @@ items:
         type:
           - 'office-ui-fabric-react!TooltipDelay:enum'
   - uid: 'office-ui-fabric-react!ITooltipHostProps#directionalHint:member'
-    summary: Indicator of how the tooltip should be anchored to its targetElement.
+    summary: How the tooltip should be anchored to its `targetElement`<!-- -->.
     name: directionalHint
     fullName: directionalHint
     langs:
@@ -103,9 +121,7 @@ items:
         type:
           - DirectionalHint
   - uid: 'office-ui-fabric-react!ITooltipHostProps#directionalHintForRTL:member'
-    summary: >-
-      How the element should be positioned in RTL layouts. If not specified, a mirror of `directionalHint` will be used
-      instead
+    summary: 'How the element should be positioned in RTL layouts. If not specified, a mirror of `directionalHint` will be used.'
     name: directionalHintForRTL
     fullName: directionalHintForRTL
     langs:
@@ -117,7 +133,7 @@ items:
         type:
           - DirectionalHint
   - uid: 'office-ui-fabric-react!ITooltipHostProps#hostClassName:member'
-    summary: Optional class name to apply to tooltip host.
+    summary: Class name to apply to tooltip host.
     name: hostClassName
     fullName: hostClassName
     langs:
@@ -125,6 +141,18 @@ items:
     type: property
     syntax:
       content: 'hostClassName?: string;'
+      return:
+        type:
+          - string
+  - uid: 'office-ui-fabric-react!ITooltipHostProps#id:member'
+    summary: Optional ID to pass through to the tooltip (not used on the host itself). Auto-generated if not provided.
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: string;'
       return:
         type:
           - string
@@ -148,8 +176,14 @@ items:
             - boolean
   - uid: 'office-ui-fabric-react!ITooltipHostProps#overflowMode:member'
     summary: >-
-      Only show if there is overflow. If set, the tooltip hosts observes and only shows the tooltip if this element has
-      overflow. It also uses the parent as target element for the tooltip.
+      If this is unset (the default), the tooltip is always shown even if there's no overflow.
+
+
+      If set, only show the tooltip if the specified element (`Self` or `Parent`<!-- -->) has overflow. When set to
+      `Parent`<!-- -->, the parent element is also used as the tooltip's target element.
+
+
+      Note that even with `Self` mode, the TooltipHost \*does not\* check whether any children have overflow.
     name: overflowMode
     fullName: overflowMode
     langs:
@@ -162,8 +196,9 @@ items:
           - 'office-ui-fabric-react!TooltipOverflowMode:enum'
   - uid: 'office-ui-fabric-react!ITooltipHostProps#setAriaDescribedBy:member'
     summary: >-
-      Whether or not to mark the container as described by the tooltip. If not specified, the caller should mark as
-      element as described by the tooltip id.
+      Whether or not to mark the TooltipHost root element as described by the tooltip. If not specified, the caller
+      should pass an `id` to the TooltipHost (to be passed through to the Tooltip) and mark the appropriate element as
+      `aria-describedby` the `id`<!-- -->.
     name: setAriaDescribedBy
     fullName: setAriaDescribedBy
     langs:
@@ -187,7 +222,7 @@ items:
         type:
           - 'IStyleFunctionOrObject<ITooltipHostStyleProps, ITooltipHostStyles>'
   - uid: 'office-ui-fabric-react!ITooltipHostProps#theme:member'
-    summary: Theme provided by High-Order Component.
+    summary: Theme provided by higher-order component.
     name: theme
     fullName: theme
     langs:
@@ -199,7 +234,7 @@ items:
         type:
           - '@uifabric/styling!ITheme:interface'
   - uid: 'office-ui-fabric-react!ITooltipHostProps#tooltipProps:member'
-    summary: 'Additional properties to pass through for Tooltip, reference detail properties in ITooltipProps'
+    summary: Additional properties to pass through for Tooltip.
     name: tooltipProps
     fullName: tooltipProps
     langs:
