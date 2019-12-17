@@ -1314,26 +1314,40 @@ items:
             - string
   - uid: '@uifabric/utilities!getRTL:function(1)'
     summary: Gets the rtl state of the page (returns true if in rtl.)
-    name: getRTL()
-    fullName: getRTL()
+    name: getRTL(theme)
+    fullName: getRTL(theme)
     langs:
       - typeScript
     type: function
     syntax:
-      content: 'export declare function getRTL(): boolean;'
+      content: |-
+        export declare function getRTL(theme?: {
+            rtl?: boolean;
+        }): boolean;
       return:
         type:
           - boolean
         description: ''
+      parameters:
+        - id: theme
+          description: ''
+          type:
+            - |-
+              {
+                  rtl?: boolean;
+              }
   - uid: '@uifabric/utilities!getRTLSafeKeyCode:function(1)'
     summary: 'Returns the given key, but flips right/left arrows if necessary.'
-    name: getRTLSafeKeyCode(key)
-    fullName: getRTLSafeKeyCode(key)
+    name: 'getRTLSafeKeyCode(key, theme)'
+    fullName: 'getRTLSafeKeyCode(key, theme)'
     langs:
       - typeScript
     type: function
     syntax:
-      content: 'export declare function getRTLSafeKeyCode(key: number): number;'
+      content: |-
+        export declare function getRTLSafeKeyCode(key: number, theme?: {
+            rtl?: boolean;
+        }): number;
       return:
         type:
           - number
@@ -1343,6 +1357,13 @@ items:
           description: ''
           type:
             - number
+        - id: theme
+          description: ''
+          type:
+            - |-
+              {
+                  rtl?: boolean;
+              }
   - uid: '@uifabric/utilities!getScrollbarWidth:function(1)'
     summary: Calculates the width of a scrollbar for the browser/os.
     name: getScrollbarWidth()
