@@ -9,17 +9,21 @@ items:
     package: office-ui-fabric-react!
     children:
       - 'office-ui-fabric-react!IColorPickerStrings#alpha:member'
+      - 'office-ui-fabric-react!IColorPickerStrings#alphaAriaLabel:member'
       - 'office-ui-fabric-react!IColorPickerStrings#blue:member'
       - 'office-ui-fabric-react!IColorPickerStrings#green:member'
       - 'office-ui-fabric-react!IColorPickerStrings#hex:member'
       - 'office-ui-fabric-react!IColorPickerStrings#hue:member'
+      - 'office-ui-fabric-react!IColorPickerStrings#hueAriaLabel:member'
       - 'office-ui-fabric-react!IColorPickerStrings#red:member'
       - 'office-ui-fabric-react!IColorPickerStrings#rootAriaLabelFormat:member'
       - 'office-ui-fabric-react!IColorPickerStrings#svAriaDescription:member'
       - 'office-ui-fabric-react!IColorPickerStrings#svAriaLabel:member'
       - 'office-ui-fabric-react!IColorPickerStrings#svAriaValueFormat:member'
   - uid: 'office-ui-fabric-react!IColorPickerStrings#alpha:member'
-    summary: Label for the alpha text field and slider.
+    summary: >-
+      Label for the alpha text field. Also used as the aria label for the alpha slider if `alphaAriaLabel` is not
+      provided.
     name: alpha
     fullName: alpha
     langs:
@@ -27,6 +31,18 @@ items:
     type: property
     syntax:
       content: 'alpha?: string;'
+      return:
+        type:
+          - string
+  - uid: 'office-ui-fabric-react!IColorPickerStrings#alphaAriaLabel:member'
+    summary: Customized aria-label for the alpha slider.
+    name: alphaAriaLabel
+    fullName: alphaAriaLabel
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'alphaAriaLabel?: string;'
       return:
         type:
           - string
@@ -68,6 +84,8 @@ items:
           - string
   - uid: 'office-ui-fabric-react!IColorPickerStrings#hue:member'
     summary: Aria label for the hue slider.
+    deprecated:
+      content: Use `hueAriaLabel`
     name: hue
     fullName: hue
     langs:
@@ -75,6 +93,18 @@ items:
     type: property
     syntax:
       content: 'hue?: string;'
+      return:
+        type:
+          - string
+  - uid: 'office-ui-fabric-react!IColorPickerStrings#hueAriaLabel:member'
+    summary: Aria label for the hue slider.
+    name: hueAriaLabel
+    fullName: hueAriaLabel
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'hueAriaLabel?: string;'
       return:
         type:
           - string
