@@ -6,8 +6,12 @@ items:
     langs:
       - typeScript
     type: interface
+    extends:
+      - 'React.TableHTMLAttributes<HTMLTableElement> '
     package: office-ui-fabric-react!
     children:
+      - 'office-ui-fabric-react!IGridProps#ariaPosInSet:member'
+      - 'office-ui-fabric-react!IGridProps#ariaSetSize:member'
       - 'office-ui-fabric-react!IGridProps#columnCount:member'
       - 'office-ui-fabric-react!IGridProps#componentRef:member'
       - 'office-ui-fabric-react!IGridProps#containerClassName:member'
@@ -20,6 +24,30 @@ items:
       - 'office-ui-fabric-react!IGridProps#shouldFocusCircularNavigate:member'
       - 'office-ui-fabric-react!IGridProps#styles:member'
       - 'office-ui-fabric-react!IGridProps#theme:member'
+  - uid: 'office-ui-fabric-react!IGridProps#ariaPosInSet:member'
+    summary: 'Position this grid is in the parent set (index in a parent menu, for example)'
+    name: ariaPosInSet
+    fullName: ariaPosInSet
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'ariaPosInSet?: number;'
+      return:
+        type:
+          - number
+  - uid: 'office-ui-fabric-react!IGridProps#ariaSetSize:member'
+    summary: 'Size of the parent set (size of parent menu, for example)'
+    name: ariaSetSize
+    fullName: ariaSetSize
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'ariaSetSize?: number;'
+      return:
+        type:
+          - number
   - uid: 'office-ui-fabric-react!IGridProps#columnCount:member'
     summary: The number of columns
     name: columnCount
@@ -45,9 +73,9 @@ items:
         type:
           - IRefObject<IGrid>
   - uid: 'office-ui-fabric-react!IGridProps#containerClassName:member'
-    summary: 'Optional, class name for the FocusZone container for the grid'
+    summary: Class name for the FocusZone container for the grid.
     deprecated:
-      content: Use `styles` and `IGridStyles` to define a styling for the focus zone container with focusedContainer property.
+      content: Use `styles.focusedContainer` to define styling for the focus zone container
     name: containerClassName
     fullName: containerClassName
     langs:
@@ -59,7 +87,7 @@ items:
         type:
           - string
   - uid: 'office-ui-fabric-react!IGridProps#doNotContainWithinFocusZone:member'
-    summary: If true do not contain the grid inside of a FocusZone. If false contain the grid inside of a FocusZone.
+    summary: 'If false (the default), the grid is contained inside a FocusZone. If true, a FocusZone is not used.  false'
     name: doNotContainWithinFocusZone
     fullName: doNotContainWithinFocusZone
     langs:
@@ -71,7 +99,7 @@ items:
         type:
           - boolean
   - uid: 'office-ui-fabric-react!IGridProps#items:member'
-    summary: The items to turn into a grid
+    summary: Items to display in a grid with the specified number of columns
     name: items
     fullName: items
     langs:
@@ -83,7 +111,7 @@ items:
         type:
           - 'any[]'
   - uid: 'office-ui-fabric-react!IGridProps#onBlur:member'
-    summary: 'Optional, handler for when the grid should blur'
+    summary: Handler for when focus leaves the grid.
     name: onBlur
     fullName: onBlur
     langs:
@@ -107,7 +135,8 @@ items:
         type:
           - '(item: any, index: number) => JSX.Element'
   - uid: 'office-ui-fabric-react!IGridProps#positionInSet:member'
-    summary: 'The optional position this grid is in the parent set (index in a parent menu, for example)'
+    deprecated:
+      content: Use `ariaPosInSet`
     name: positionInSet
     fullName: positionInSet
     langs:
@@ -119,7 +148,8 @@ items:
         type:
           - number
   - uid: 'office-ui-fabric-react!IGridProps#setSize:member'
-    summary: 'The optional size of the parent set (size of parent menu, for example)'
+    deprecated:
+      content: Use `ariaSetSize`
     name: setSize
     fullName: setSize
     langs:
@@ -132,8 +162,8 @@ items:
           - number
   - uid: 'office-ui-fabric-react!IGridProps#shouldFocusCircularNavigate:member'
     summary: >-
-      Boolean indicating if the focus should support circular navigation. This prop is only relevant if
-      doNotcontainWithinFocusZone is not true
+      Whether focus should cycle back to the beginning once the user navigates past the end (and vice versa). Only
+      relevant if `doNotContainWithinFocusZone` is not true.
     name: shouldFocusCircularNavigate
     fullName: shouldFocusCircularNavigate
     langs:
