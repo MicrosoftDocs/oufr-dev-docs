@@ -14,6 +14,7 @@ items:
       - 'office-ui-fabric-react!IColorPickerGridCellProps#disabled:member'
       - 'office-ui-fabric-react!IColorPickerGridCellProps#height:member'
       - 'office-ui-fabric-react!IColorPickerGridCellProps#id:member'
+      - 'office-ui-fabric-react!IColorPickerGridCellProps#idPrefix:member'
       - 'office-ui-fabric-react!IColorPickerGridCellProps#index:member'
       - 'office-ui-fabric-react!IColorPickerGridCellProps#item:member'
       - 'office-ui-fabric-react!IColorPickerGridCellProps#label:member'
@@ -30,9 +31,7 @@ items:
       - 'office-ui-fabric-react!IColorPickerGridCellProps#theme:member'
       - 'office-ui-fabric-react!IColorPickerGridCellProps#width:member'
   - uid: 'office-ui-fabric-react!IColorPickerGridCellProps#borderWidth:member'
-    summary: >-
-      Width of the border that indicates a selected/hovered cell, in pixels. If `cellWidth` is less than 24px, then
-      default value is 2px. Otherwise it defaults to 4px.
+    summary: 'Width of the border that indicates a selected/hovered cell, in pixels.'
     name: borderWidth
     fullName: borderWidth
     langs:
@@ -44,7 +43,7 @@ items:
         type:
           - number
   - uid: 'office-ui-fabric-react!IColorPickerGridCellProps#circle:member'
-    summary: Wheter or not colorOption should be rendered as a circle or square.
+    summary: 'True if this cell should be rendered as a circle, false if it should be a square.  `true` (render as circle)'
     name: circle
     fullName: circle
     langs:
@@ -68,7 +67,7 @@ items:
         type:
           - string
   - uid: 'office-ui-fabric-react!IColorPickerGridCellProps#disabled:member'
-    summary: 'Optional, if the this option should be disabled'
+    summary: Whether this cell should be disabled  false
     name: disabled
     fullName: disabled
     langs:
@@ -92,14 +91,28 @@ items:
         type:
           - number
   - uid: 'office-ui-fabric-react!IColorPickerGridCellProps#id:member'
-    summary: Arbitrary unique string associated with this option
+    summary: Used as a PREFIX for the cell's ID (the cell will not have this literal string as its ID).
+    deprecated:
+      content: Deprecated due to misleading name. Use `idPrefix` instead.
     name: id
     fullName: id
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'id: string;'
+      content: 'id?: string;'
+      return:
+        type:
+          - string
+  - uid: 'office-ui-fabric-react!IColorPickerGridCellProps#idPrefix:member'
+    summary: Prefix for this cell's ID. Will be required in a future version once `id` is removed.
+    name: idPrefix
+    fullName: idPrefix
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'idPrefix?: string;'
       return:
         type:
           - string
@@ -128,7 +141,7 @@ items:
         type:
           - 'office-ui-fabric-react!IColorCellProps:interface'
   - uid: 'office-ui-fabric-react!IColorPickerGridCellProps#label:member'
-    summary: 'The label for this item. Visible text if this item is a header, tooltip if is this item is normal'
+    summary: Tooltip and aria label for this item
     name: label
     fullName: label
     langs:
@@ -140,7 +153,7 @@ items:
         type:
           - string
   - uid: 'office-ui-fabric-react!IColorPickerGridCellProps#onClick:member'
-    summary: The on click handler
+    summary: Handler for when a color cell is clicked.
     name: onClick
     fullName: onClick
     langs:
@@ -152,7 +165,6 @@ items:
         type:
           - '(item: IColorCellProps) => void'
   - uid: 'office-ui-fabric-react!IColorPickerGridCellProps#onFocus:member'
-    summary: 'Optional, the onFocus handler'
     name: onFocus
     fullName: onFocus
     langs:
@@ -164,7 +176,6 @@ items:
         type:
           - '(item: IColorCellProps) => void'
   - uid: 'office-ui-fabric-react!IColorPickerGridCellProps#onHover:member'
-    summary: 'Optional, the onHover handler'
     name: onHover
     fullName: onHover
     langs:
@@ -176,7 +187,6 @@ items:
         type:
           - '(item?: IColorCellProps) => void'
   - uid: 'office-ui-fabric-react!IColorPickerGridCellProps#onKeyDown:member'
-    summary: 'Optional, onkeydown handler'
     name: onKeyDown
     fullName: onKeyDown
     langs:
@@ -188,7 +198,7 @@ items:
         type:
           - '(ev: React.KeyboardEvent<HTMLButtonElement>) => void'
   - uid: 'office-ui-fabric-react!IColorPickerGridCellProps#onMouseEnter:member'
-    summary: 'Optional, mouseEnter handler.'
+    summary: 'Mouse enter handler. Returns true if the event should be processed, false otherwise.'
     name: onMouseEnter
     fullName: onMouseEnter
     langs:
@@ -200,7 +210,6 @@ items:
         type:
           - '(ev: React.MouseEvent<HTMLButtonElement>) => boolean'
   - uid: 'office-ui-fabric-react!IColorPickerGridCellProps#onMouseLeave:member'
-    summary: 'Optional, mouseLeave handler'
     name: onMouseLeave
     fullName: onMouseLeave
     langs:
@@ -212,7 +221,7 @@ items:
         type:
           - '(ev: React.MouseEvent<HTMLButtonElement>) => void'
   - uid: 'office-ui-fabric-react!IColorPickerGridCellProps#onMouseMove:member'
-    summary: 'Optional, mouseMove handler'
+    summary: 'Mouse move handler. Returns true if the event should be processed, false otherwise.'
     name: onMouseMove
     fullName: onMouseMove
     langs:
@@ -224,7 +233,6 @@ items:
         type:
           - '(ev: React.MouseEvent<HTMLButtonElement>) => boolean'
   - uid: 'office-ui-fabric-react!IColorPickerGridCellProps#onWheel:member'
-    summary: 'Optional, onWheel handler'
     name: onWheel
     fullName: onWheel
     langs:
@@ -236,7 +244,7 @@ items:
         type:
           - '(ev: React.MouseEvent<HTMLButtonElement>) => void'
   - uid: 'office-ui-fabric-react!IColorPickerGridCellProps#selected:member'
-    summary: 'Optional, if the cell is currently selected'
+    summary: Whether this cell is currently selected
     name: selected
     fullName: selected
     langs:
@@ -248,7 +256,7 @@ items:
         type:
           - boolean
   - uid: 'office-ui-fabric-react!IColorPickerGridCellProps#styles:member'
-    summary: Optional styles for the component.
+    summary: Custom styles for the component.
     name: styles
     fullName: styles
     langs:

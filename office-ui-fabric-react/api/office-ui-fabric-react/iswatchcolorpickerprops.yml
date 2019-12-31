@@ -8,6 +8,8 @@ items:
     type: interface
     package: office-ui-fabric-react!
     children:
+      - 'office-ui-fabric-react!ISwatchColorPickerProps#ariaPosInSet:member'
+      - 'office-ui-fabric-react!ISwatchColorPickerProps#ariaSetSize:member'
       - 'office-ui-fabric-react!ISwatchColorPickerProps#cellBorderWidth:member'
       - 'office-ui-fabric-react!ISwatchColorPickerProps#cellHeight:member'
       - 'office-ui-fabric-react!ISwatchColorPickerProps#cellMargin:member'
@@ -32,10 +34,32 @@ items:
       - 'office-ui-fabric-react!ISwatchColorPickerProps#shouldFocusCircularNavigate:member'
       - 'office-ui-fabric-react!ISwatchColorPickerProps#styles:member'
       - 'office-ui-fabric-react!ISwatchColorPickerProps#theme:member'
+  - uid: 'office-ui-fabric-react!ISwatchColorPickerProps#ariaPosInSet:member'
+    summary: 'Position this grid is in the parent set (index in a parent menu, for example)'
+    name: ariaPosInSet
+    fullName: ariaPosInSet
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'ariaPosInSet?: number;'
+      return:
+        type:
+          - number
+  - uid: 'office-ui-fabric-react!ISwatchColorPickerProps#ariaSetSize:member'
+    summary: 'Size of the parent set (size of parent menu, for example)'
+    name: ariaSetSize
+    fullName: ariaSetSize
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'ariaSetSize?: number;'
+      return:
+        type:
+          - number
   - uid: 'office-ui-fabric-react!ISwatchColorPickerProps#cellBorderWidth:member'
-    summary: >-
-      Width of the border indicating a hovered/selected cell, in pixels If `cellWidth` is less than 24px, then default
-      value is 2px. Otherwise it defaults to 4px.
+    summary: 'Width of the border indicating a hovered/selected cell, in pixels'
     name: cellBorderWidth
     fullName: cellBorderWidth
     langs:
@@ -71,7 +95,7 @@ items:
         type:
           - number
   - uid: 'office-ui-fabric-react!ISwatchColorPickerProps#cellShape:member'
-    summary: 'The shape of the color cells, defaults to circle'
+    summary: The shape of the color cells.  'circle'
     name: cellShape
     fullName: cellShape
     langs:
@@ -112,7 +136,7 @@ items:
 
 
       Note: When the reference to this prop changes, regardless of how many color cells change, all of the color cells
-      will be re-rendered (potentially bad perf.) because we memoize based on this prop's reference.
+      will be re-rendered (potentially bad perf) because we memoize based on this prop's reference.
     name: colorCells
     fullName: colorCells
     langs:
@@ -124,7 +148,7 @@ items:
         type:
           - 'IColorCellProps[]'
   - uid: 'office-ui-fabric-react!ISwatchColorPickerProps#columnCount:member'
-    summary: the number of columns for the swatch color picker
+    summary: Number of columns for the swatch color picker
     name: columnCount
     fullName: columnCount
     langs:
@@ -136,7 +160,7 @@ items:
         type:
           - number
   - uid: 'office-ui-fabric-react!ISwatchColorPickerProps#disabled:member'
-    summary: Is this swatch color picker disabled?
+    summary: Whether the control is disabled.
     name: disabled
     fullName: disabled
     langs:
@@ -148,7 +172,7 @@ items:
         type:
           - boolean
   - uid: 'office-ui-fabric-react!ISwatchColorPickerProps#doNotContainWithinFocusZone:member'
-    summary: If true do not contain the grid inside of a FocusZone. If false contain the grid inside of a FocusZone.
+    summary: 'If false (the default), the grid is contained inside a FocusZone. If true, a FocusZone is not used.  false'
     name: doNotContainWithinFocusZone
     fullName: doNotContainWithinFocusZone
     langs:
@@ -160,7 +184,7 @@ items:
         type:
           - boolean
   - uid: 'office-ui-fabric-react!ISwatchColorPickerProps#focusOnHover:member'
-    summary: 'Optional, whether to update focus when a cell is hovered.'
+    summary: Whether to update focus when a cell is hovered.
     name: focusOnHover
     fullName: focusOnHover
     langs:
@@ -172,7 +196,7 @@ items:
         type:
           - boolean
   - uid: 'office-ui-fabric-react!ISwatchColorPickerProps#getColorGridCellStyles:member'
-    summary: Optional styles for the component.
+    summary: Styles for the grid cells.
     name: getColorGridCellStyles
     fullName: getColorGridCellStyles
     langs:
@@ -184,7 +208,7 @@ items:
         type:
           - 'IStyleFunctionOrObject<IColorPickerGridCellStyleProps, IColorPickerGridCellStyles>'
   - uid: 'office-ui-fabric-react!ISwatchColorPickerProps#id:member'
-    summary: The id for the swatch color picker
+    summary: ID for the swatch color picker's root element. Also used as a prefix for the IDs of color cells.
     name: id
     fullName: id
     langs:
@@ -199,7 +223,7 @@ items:
     summary: >-
       Indicates whether the SwatchColorPicker is fully controlled. When true, the component will not set its internal
       state to track the selected color. Instead, the parent component will be responsible for handling state in the
-      callbacks like onColorChanged.
+      callbacks like `onColorChanged`<!-- -->.
 
 
       NOTE: This property is a temporary workaround to force the component to be fully controllable without breaking
@@ -215,7 +239,7 @@ items:
         type:
           - boolean
   - uid: 'office-ui-fabric-react!ISwatchColorPickerProps#mouseLeaveParentSelector:member'
-    summary: Selector to focus on mouseLeave SHOULD ONLY BE USED IN CONJUNCTION WITH focusOnHover
+    summary: Selector to focus on mouse leave. Should only be used in conjunction with `focusOnHover`<!-- -->.
     name: mouseLeaveParentSelector
     fullName: mouseLeaveParentSelector
     langs:
@@ -228,8 +252,8 @@ items:
           - string | undefined
   - uid: 'office-ui-fabric-react!ISwatchColorPickerProps#onCellFocused:member'
     summary: >-
-      Callback issued when the user focuses a color cell. Note, if no id or color is given, cells are not longer being
-      focused
+      Callback for when the user focuses a color cell. If `id` and `color` are unspecified, cells are no longer being
+      focused.
     name: onCellFocused
     fullName: onCellFocused
     langs:
@@ -242,8 +266,8 @@ items:
           - '(id?: string, color?: string) => void'
   - uid: 'office-ui-fabric-react!ISwatchColorPickerProps#onCellHovered:member'
     summary: >-
-      Callback issued when the user hovers over a color cell. Note, if no id or color is given, cells are not longer
-      being hovered
+      Callback for when the user hovers over a color cell. If `id` and `color` are unspecified, cells are no longer
+      being hovered.
     name: onCellHovered
     fullName: onCellHovered
     langs:
@@ -256,8 +280,8 @@ items:
           - '(id?: string, color?: string) => void'
   - uid: 'office-ui-fabric-react!ISwatchColorPickerProps#onColorChanged:member'
     summary: >-
-      Callback issued when the user changes the color. Note, if no id or color is given, there is no selected cell (e.g.
-      the user executed the currently selected cell to unselect it)
+      Callback for when the user changes the color. If `id` and `color` are unspecified, there is no selected cell.
+      (e.g. the user executed the currently selected cell to unselect it)
     name: onColorChanged
     fullName: onColorChanged
     langs:
@@ -269,7 +293,8 @@ items:
         type:
           - '(id?: string, color?: string) => void'
   - uid: 'office-ui-fabric-react!ISwatchColorPickerProps#positionInSet:member'
-    summary: 'The optional position this grid is in the parent set (index in a parent menu, for example)'
+    deprecated:
+      content: Use `ariaPosInSet`
     name: positionInSet
     fullName: positionInSet
     langs:
@@ -281,7 +306,7 @@ items:
         type:
           - number
   - uid: 'office-ui-fabric-react!ISwatchColorPickerProps#selectedId:member'
-    summary: The id of color cell that is currently selected
+    summary: The ID of color cell that is currently selected
     name: selectedId
     fullName: selectedId
     langs:
@@ -293,7 +318,8 @@ items:
         type:
           - string
   - uid: 'office-ui-fabric-react!ISwatchColorPickerProps#setSize:member'
-    summary: 'The optional size of the parent set (size of parent menu, for example)'
+    deprecated:
+      content: Use `ariaSetSize`
     name: setSize
     fullName: setSize
     langs:
@@ -306,8 +332,8 @@ items:
           - number
   - uid: 'office-ui-fabric-react!ISwatchColorPickerProps#shouldFocusCircularNavigate:member'
     summary: >-
-      Should focus cycle to the beginning of once the user navigates past the end (and vice versa). This prop is only
-      relevant if doNotcontainWithinFocusZone is not true
+      Whether focus should cycle back to the beginning once the user navigates past the end (and vice versa). Only
+      relevant if `doNotContainWithinFocusZone` is not true.
     name: shouldFocusCircularNavigate
     fullName: shouldFocusCircularNavigate
     langs:
@@ -319,7 +345,7 @@ items:
         type:
           - boolean
   - uid: 'office-ui-fabric-react!ISwatchColorPickerProps#styles:member'
-    summary: Optional styles for the component.
+    summary: Styles for the component.
     name: styles
     fullName: styles
     langs:
