@@ -182,10 +182,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'onRenderLabel?: (option: IChoiceGroupOption) => JSX.Element;'
+      content: 'onRenderLabel?: IRenderFunction<IChoiceGroupOption>;'
       return:
         type:
-          - '(option: IChoiceGroupOption) => JSX.Element'
+          - IRenderFunction<IChoiceGroupOption>
   - uid: 'office-ui-fabric-react!IChoiceGroupOption#selectedImageSrc:member'
     summary: The src of image for choice field which is selected.
     name: selectedImageSrc
