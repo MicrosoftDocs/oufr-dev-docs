@@ -26,7 +26,7 @@ items:
       - 'office-ui-fabric-react!IChoiceGroupOption#styles:member'
       - 'office-ui-fabric-react!IChoiceGroupOption#text:member'
   - uid: 'office-ui-fabric-react!IChoiceGroupOption#ariaLabel:member'
-    summary: The aria label of the ChoiceGroupOption for the benefit of screen readers.
+    summary: Aria label of the option for the benefit of screen reader users.
     name: ariaLabel
     fullName: ariaLabel
     langs:
@@ -67,7 +67,7 @@ items:
         type:
           - boolean
   - uid: 'office-ui-fabric-react!IChoiceGroupOption#iconProps:member'
-    summary: The Icon component props for choice field
+    summary: Props for an icon to display with this option.
     name: iconProps
     fullName: iconProps
     langs:
@@ -79,9 +79,7 @@ items:
         type:
           - 'office-ui-fabric-react!IIconProps:interface'
   - uid: 'office-ui-fabric-react!IChoiceGroupOption#id:member'
-    summary: >-
-      DOM id to tag the ChoiceGroup input with, for reference. Should be used for 'aria-owns' and other such uses,
-      rather than direct reference for programmatic purposes.
+    summary: ID used on the option's input element.
     name: id
     fullName: id
     langs:
@@ -93,7 +91,7 @@ items:
         type:
           - string
   - uid: 'office-ui-fabric-react!IChoiceGroupOption#imageAlt:member'
-    summary: The alt of image for choice field. Defaults to '' if not set.
+    summary: Alt text if the option is an image.  '' (empty string)
     name: imageAlt
     fullName: imageAlt
     langs:
@@ -125,7 +123,7 @@ items:
                     height: number;
                 }
   - uid: 'office-ui-fabric-react!IChoiceGroupOption#imageSrc:member'
-    summary: The src of image for choice field.
+    summary: Image to display with this option.
     name: imageSrc
     fullName: imageSrc
     langs:
@@ -149,9 +147,7 @@ items:
         type:
           - string
   - uid: 'office-ui-fabric-react!IChoiceGroupOption#labelId:member'
-    summary: >-
-      DOM id to tag the ChoiceGroup label with, for reference. Should be used for 'aria-owns' and other such uses,
-      rather than direct reference for programmatic purposes.
+    summary: ID used on the option's label.
     name: labelId
     fullName: labelId
     langs:
@@ -163,7 +159,7 @@ items:
         type:
           - string
   - uid: 'office-ui-fabric-react!IChoiceGroupOption#onRenderField:member'
-    summary: Optional override of option render
+    summary: Used to customize option rendering.
     name: onRenderField
     fullName: onRenderField
     langs:
@@ -175,7 +171,7 @@ items:
         type:
           - IRenderFunction<IChoiceGroupOption>
   - uid: 'office-ui-fabric-react!IChoiceGroupOption#onRenderLabel:member'
-    summary: Optional override of label render
+    summary: Used to customize label rendering.
     name: onRenderLabel
     fullName: onRenderLabel
     langs:
