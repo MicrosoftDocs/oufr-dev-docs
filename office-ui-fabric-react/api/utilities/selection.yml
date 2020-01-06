@@ -7,7 +7,7 @@ items:
       - typeScript
     type: class
     implements:
-      - '@uifabric/utilities!ISelection:interface'
+      - 'ISelection<TItem> '
     package: '@uifabric/utilities!'
     children:
       - '@uifabric/utilities!Selection:constructor(1)'
@@ -37,19 +37,25 @@ items:
       - '@uifabric/utilities!Selection#toggleKeySelected:member(1)'
       - '@uifabric/utilities!Selection#toggleRangeSelected:member(1)'
   - uid: '@uifabric/utilities!Selection:constructor(1)'
-    summary: Constructs a new instance of the `Selection` class
+    summary: >-
+      Create a new Selection. If `TItem` does not have a `key` property, you must provide an options object with a
+      `getKey` implementation. Providing options is optional otherwise. (At most one `options` object is accepted.)
     name: (constructor)(options)
     fullName: (constructor)(options)
     langs:
       - typeScript
     type: constructor
     syntax:
-      content: 'constructor(options?: ISelectionOptions);'
+      content: >-
+        constructor(...options: TItem extends IObjectWithKey ? [] | [ISelectionOptions<TItem>] :
+        [ISelectionOptionsWithRequiredGetKey<TItem>]);
       parameters:
         - id: options
           description: ''
           type:
-            - '@uifabric/utilities!ISelectionOptions:interface'
+            - >-
+              TItem extends IObjectWithKey ? [] | [ISelectionOptions<TItem>] :
+              [ISelectionOptionsWithRequiredGetKey<TItem>]
   - uid: '@uifabric/utilities!Selection#canSelectItem:member(1)'
     name: 'canSelectItem(item, index)'
     fullName: 'canSelectItem(item, index)'
@@ -57,7 +63,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'canSelectItem(item: IObjectWithKey, index?: number): boolean;'
+      content: 'canSelectItem(item: TItem, index?: number): boolean;'
       return:
         type:
           - boolean
@@ -66,12 +72,13 @@ items:
         - id: item
           description: ''
           type:
-            - '@uifabric/utilities!IObjectWithKey:interface'
+            - TItem
         - id: index
           description: ''
           type:
             - number
   - uid: '@uifabric/utilities!Selection#count:member'
+    summary: Number of items selected. Do not modify.
     name: count
     fullName: count
     langs:
@@ -89,10 +96,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getItems(): IObjectWithKey[];'
+      content: 'getItems(): TItem[];'
       return:
         type:
-          - 'IObjectWithKey[]'
+          - 'TItem[]'
         description: ''
   - uid: '@uifabric/utilities!Selection#getKey:member(1)'
     name: 'getKey(item, index)'
@@ -101,7 +108,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getKey(item: IObjectWithKey, index?: number): string;'
+      content: 'getKey(item: TItem, index?: number): string;'
       return:
         type:
           - string
@@ -110,7 +117,7 @@ items:
         - id: item
           description: ''
           type:
-            - '@uifabric/utilities!IObjectWithKey:interface'
+            - TItem
         - id: index
           description: ''
           type:
@@ -146,10 +153,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getSelection(): IObjectWithKey[];'
+      content: 'getSelection(): TItem[];'
       return:
         type:
-          - 'IObjectWithKey[]'
+          - 'TItem[]'
         description: ''
   - uid: '@uifabric/utilities!Selection#isAllSelected:member(1)'
     name: isAllSelected()
@@ -356,7 +363,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'setItems(items: IObjectWithKey[], shouldClear?: boolean): void;'
+      content: 'setItems(items: TItem[], shouldClear?: boolean): void;'
       return:
         type:
           - void
@@ -365,7 +372,7 @@ items:
         - id: items
           description: ''
           type:
-            - 'IObjectWithKey[]'
+            - 'TItem[]'
         - id: shouldClear
           description: ''
           type:

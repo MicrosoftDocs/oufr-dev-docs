@@ -6,6 +6,9 @@ items:
     langs:
       - typeScript
     type: interface
+    syntax:
+      typeParameters:
+        - id: TItem
     package: '@uifabric/utilities!'
     children:
       - '@uifabric/utilities!ISelection#canSelectItem:member'
@@ -39,10 +42,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'canSelectItem: (item: IObjectWithKey, index?: number) => boolean;'
+      content: 'canSelectItem: (item: TItem, index?: number) => boolean;'
       return:
         type:
-          - '(item: IObjectWithKey, index?: number) => boolean'
+          - '(item: TItem, index?: number) => boolean'
   - uid: '@uifabric/utilities!ISelection#count:member'
     name: count
     fullName: count
@@ -61,10 +64,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getItems(): IObjectWithKey[];'
+      content: 'getItems(): TItem[];'
       return:
         type:
-          - 'IObjectWithKey[]'
+          - 'TItem[]'
         description: ''
   - uid: '@uifabric/utilities!ISelection#getSelectedCount:member(1)'
     name: getSelectedCount()
@@ -97,10 +100,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getSelection(): IObjectWithKey[];'
+      content: 'getSelection(): TItem[];'
       return:
         type:
-          - 'IObjectWithKey[]'
+          - 'TItem[]'
         description: ''
   - uid: '@uifabric/utilities!ISelection#isAllSelected:member(1)'
     name: isAllSelected()
@@ -304,7 +307,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'setItems(items: IObjectWithKey[], shouldClear: boolean): void;'
+      content: 'setItems(items: TItem[], shouldClear: boolean): void;'
       return:
         type:
           - void
@@ -313,7 +316,7 @@ items:
         - id: items
           description: ''
           type:
-            - 'IObjectWithKey[]'
+            - 'TItem[]'
         - id: shouldClear
           description: ''
           type:

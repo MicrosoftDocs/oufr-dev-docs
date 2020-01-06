@@ -6,6 +6,9 @@ items:
     langs:
       - typeScript
     type: interface
+    syntax:
+      typeParameters:
+        - id: TItem
     package: '@uifabric/utilities!'
     children:
       - '@uifabric/utilities!ISelectionOptions#canSelectItem:member'
@@ -19,21 +22,22 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'canSelectItem?: (item: IObjectWithKey, index?: number) => boolean;'
+      content: 'canSelectItem?: (item: TItem, index?: number) => boolean;'
       return:
         type:
-          - '(item: IObjectWithKey, index?: number) => boolean'
+          - '(item: TItem, index?: number) => boolean'
   - uid: '@uifabric/utilities!ISelectionOptions#getKey:member'
+    summary: Custom logic to generate item keys. Required if `TItem` does not have a `key` property.
     name: getKey
     fullName: getKey
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'getKey?: (item: IObjectWithKey, index?: number) => string | number;'
+      content: 'getKey?: (item: TItem, index?: number) => string | number;'
       return:
         type:
-          - '(item: IObjectWithKey, index?: number) => string | number'
+          - '(item: TItem, index?: number) => string | number'
   - uid: '@uifabric/utilities!ISelectionOptions#onSelectionChanged:member'
     name: onSelectionChanged
     fullName: onSelectionChanged
