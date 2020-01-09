@@ -1817,15 +1817,15 @@ items:
       By default, the cache will reset after 100 permutations, to avoid abuse cases where the function is unintendedly
       called with unique objects. Without a reset, the cache could grow infinitely, so we safeguard by resetting. To
       override this behavior, pass a value of 0 to the maxCacheSize parameter.
-    name: 'memoizeFunction(cb, maxCacheSize)'
-    fullName: 'memoizeFunction(cb, maxCacheSize)'
+    name: 'memoizeFunction(cb, maxCacheSize, ignoreNullOrUndefinedResult)'
+    fullName: 'memoizeFunction(cb, maxCacheSize, ignoreNullOrUndefinedResult)'
     langs:
       - typeScript
     type: function
     syntax:
       content: >-
         export declare function memoizeFunction<T extends (...args: any[]) => RET_TYPE, RET_TYPE>(cb: T, maxCacheSize?:
-        number): T;
+        number, ignoreNullOrUndefinedResult?: boolean): T;
       return:
         type:
           - T
@@ -1839,6 +1839,13 @@ items:
           description: 'Max results to cache. If the cache exceeds this value, it will reset on the next call.'
           type:
             - number
+        - id: ignoreNullOrUndefinedResult
+          description: >-
+            Flag to decide whether to cache callback result if it is undefined/null. If the flag is set to true, the
+            callback result is recomputed every time till the callback result is not undefined/null for the first time
+            and then the non-undefined/null version gets cached.
+          type:
+            - boolean
       typeParameters:
         - id: T
           type:
