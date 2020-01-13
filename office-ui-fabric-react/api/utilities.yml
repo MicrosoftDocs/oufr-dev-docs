@@ -19,7 +19,10 @@ items:
       - '@uifabric/utilities!BaseComponent:class'
       - '@uifabric/utilities!calculatePrecision:function(1)'
       - '@uifabric/utilities!classNamesFunction:function(1)'
+      - '@uifabric/utilities!composeComponentAs:function(1)'
+      - '@uifabric/utilities!composeRenderFunction:function(1)'
       - '@uifabric/utilities!createArray:function(1)'
+      - '@uifabric/utilities!createMemoizer:function(1)'
       - '@uifabric/utilities!css:function(1)'
       - '@uifabric/utilities!customizable:function(1)'
       - '@uifabric/utilities!Customizations:class'
@@ -371,6 +374,62 @@ items:
         - id: TStyleSet
           type:
             - IStyleSet<TStyleSet>
+  - uid: '@uifabric/utilities!composeComponentAs:function(1)'
+    summary: >-
+      Composes two components which conform to the `IComponentAs` specification; that is, two components which accept a
+      `defaultRender` prop, which is a 'default' implementation of a component which accepts the same overall props.
+    name: 'composeComponentAs(outer, inner)'
+    fullName: 'composeComponentAs(outer, inner)'
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: >-
+        export declare function composeComponentAs<TProps>(outer: IComponentAs<TProps>, inner: IComponentAs<TProps>):
+        IComponentAs<TProps>;
+      return:
+        type:
+          - IComponentAs<TProps>
+        description: ''
+      parameters:
+        - id: outer
+          description: ''
+          type:
+            - IComponentAs<TProps>
+        - id: inner
+          description: ''
+          type:
+            - IComponentAs<TProps>
+      typeParameters:
+        - id: TProps
+  - uid: '@uifabric/utilities!composeRenderFunction:function(1)'
+    summary: >-
+      Composes two 'render functions' to produce a final render function that renders the outer function, passing the
+      inner function as 'default render'. The inner function is then passed the original 'default render' prop.
+    name: 'composeRenderFunction(outer, inner)'
+    fullName: 'composeRenderFunction(outer, inner)'
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: >-
+        export declare function composeRenderFunction<TProps>(outer: IRenderFunction<TProps>, inner:
+        IRenderFunction<TProps>): IRenderFunction<TProps>;
+      return:
+        type:
+          - IRenderFunction<TProps>
+        description: ''
+      parameters:
+        - id: outer
+          description: ''
+          type:
+            - IRenderFunction<TProps>
+        - id: inner
+          description: ''
+          type:
+            - IRenderFunction<TProps>
+      typeParameters:
+        - id: TProps
   - uid: '@uifabric/utilities!createArray:function(1)'
     summary: Creates an array of a given size and helper method to populate.
     name: 'createArray(size, getItem)'
@@ -395,6 +454,35 @@ items:
             - '(index: number) => T'
       typeParameters:
         - id: T
+  - uid: '@uifabric/utilities!createMemoizer:function(1)'
+    summary: >-
+      Creates a memoizer for a single-value function, backed by a WeakMap. With a WeakMap, the memoized values are only
+      kept as long as the source objects, ensuring that there is no memory leak.
+
+
+      This function assumes that the input values passed to the wrapped function will be `function` or `object` types.
+      To memoize functions which accept other inputs, use `memoizeFunction`<!-- -->, which memoizes against arbitrary
+      inputs using a lookup cache.
+    name: createMemoizer(getValue)
+    fullName: createMemoizer(getValue)
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export declare function createMemoizer<F extends (input: any) => any>(getValue: F): F;'
+      return:
+        type:
+          - F
+        description: ''
+      parameters:
+        - id: getValue
+          description: ''
+          type:
+            - F
+      typeParameters:
+        - id: F
+          type:
+            - '(input: any) => any'
   - uid: '@uifabric/utilities!css:function(1)'
     summary: 'Concatination helper, which can merge class names together. Skips over falsey values.'
     name: css(args)
@@ -1562,11 +1650,13 @@ items:
 
       1. Subscribes keydown and mousedown events. (It will only do it once per window, so it's safe to call this method
       multiple times.) 2. When the user presses directional keyboard keys, adds the 'ms-Fabric--isFocusVisible'
-      classname to the document body. 3. When the user clicks a mouse button, we remove the classname if it exists.
+      classname to the document body, removes the 'ms-Fabric-isFocusHidden' classname. 3. When the user clicks a mouse
+      button, adds the 'ms-Fabric-isFocusHidden' classname to the document body, removes the 'ms-Fabric--isFocusVisible'
+      classname.
 
 
-      This logic allows components on the page to conditionally render focus treatments only if the global classname
-      exists, which simplifies logic overall.
+      This logic allows components on the page to conditionally render focus treatments based on the existence of global
+      classnames, which simplifies logic overall.
     name: initializeFocusRects(window)
     fullName: initializeFocusRects(window)
     langs:
@@ -2208,7 +2298,7 @@ items:
   - uid: '@uifabric/utilities!setFocusVisibility:function(1)'
     summary: >-
       Sets the visibility of focus styling. By default, focus styling (the box surrounding a focused Button, for
-      example) only show up when navigational keypresses occur (through TAB, arrows, pgup/down, home and end), and are
+      example) only show up when navigational keypresses occur (through Tab, arrows, PgUp/PgDn, Home and End), and are
       hidden when mouse interactions occur. This API provides an imperative way to turn them on/off. A use case might be
       when you have a keypress like ctrl-f6 navigate to a particular region on the page, and want focus to show up.
     name: 'setFocusVisibility(enabled, target)'
