@@ -86,12 +86,12 @@ items:
     type: property
     syntax:
       content: >-
-        dismiss: (ev?: Event | React.KeyboardEvent<HTMLElement> | React.MouseEvent<HTMLElement, MouseEvent> | undefined)
+        dismiss: (ev?: Event | React.MouseEvent<HTMLElement, MouseEvent> | React.KeyboardEvent<HTMLElement> | undefined)
         => void;
       return:
         type:
           - >-
-            (ev?: Event | React.KeyboardEvent<HTMLElement> | React.MouseEvent<HTMLElement, MouseEvent> | undefined) =>
+            (ev?: Event | React.MouseEvent<HTMLElement, MouseEvent> | React.KeyboardEvent<HTMLElement> | undefined) =>
             void
   - uid: 'office-ui-fabric-react!CoachmarkBase#render:member(1)'
     name: render()
