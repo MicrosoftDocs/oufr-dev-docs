@@ -9,7 +9,7 @@ The OverflowSet is a flexible container component that is useful for displaying 
 
 ### Accessibility
 
-For an accessible OverflowSet, ensure that all surface level items (main items and overflow button) use &#x60;role&#x3D;&quot;menuitem&quot;&#x60;
+By default, the OverflowSet is simply &#x60;role&#x3D;group&#x60;. If you used as a menu, you will need to add &#x60;role&#x3D;&quot;menubar&quot;&#x60; and add proper aria roles to each rendered item (&#x60;menuitem&#x60;, &#x60;menuitemcheckbox&#x60;, &#x60;menuitemradio&#x60;)
 
 
 

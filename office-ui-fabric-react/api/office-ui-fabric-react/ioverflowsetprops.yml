@@ -51,6 +51,8 @@ items:
     summary: >-
       If true do not contain the OverflowSet inside of a FocusZone, otherwise the OverflowSet will contain a FocusZone.
       If this is set to true focusZoneProps will be ignored. Use one or the other.
+    deprecated:
+      content: In 8.0 the OverflowSet will no longer be wrapped in a FocusZone
     name: doNotContainWithinFocusZone
     fullName: doNotContainWithinFocusZone
     langs:
@@ -65,6 +67,8 @@ items:
     summary: >-
       Custom properties for OverflowSet's FocusZone. If doNotContainWithinFocusZone is set to true focusZoneProps will
       be ignored. Use one or the other.
+    deprecated:
+      content: In 8.0 the OverflowSet will no longer be wrapped in a FocusZone
     name: focusZoneProps
     fullName: focusZoneProps
     langs:
@@ -176,7 +180,9 @@ items:
         type:
           - 'IStyleFunctionOrObject<IOverflowSetProps, IOverflowSetStyles>'
   - uid: 'office-ui-fabric-react!IOverflowSetProps#vertical:member'
-    summary: Change item layout direction to vertical/stacked. Setting vertical to true also changes default role to "menu".
+    summary: >-
+      Change item layout direction to vertical/stacked. If role is set to `menubar`<!-- -->, `vertical={true}` will also
+      add proper `aria-orientation`<!-- -->.
     name: vertical
     fullName: vertical
     langs:
