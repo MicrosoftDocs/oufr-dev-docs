@@ -11,6 +11,7 @@ items:
       - 'office-ui-fabric-react!IPanelStyleProps#className:member'
       - 'office-ui-fabric-react!IPanelStyleProps#focusTrapZoneClassName:member'
       - 'office-ui-fabric-react!IPanelStyleProps#hasCloseButton:member'
+      - 'office-ui-fabric-react!IPanelStyleProps#hasCustomNavigation:member'
       - 'office-ui-fabric-react!IPanelStyleProps#headerClassName:member'
       - 'office-ui-fabric-react!IPanelStyleProps#isAnimating:member'
       - 'office-ui-fabric-react!IPanelStyleProps#isFooterAtBottom:member'
@@ -53,6 +54,20 @@ items:
     type: property
     syntax:
       content: 'hasCloseButton?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'office-ui-fabric-react!IPanelStyleProps#hasCustomNavigation:member'
+    summary: >-
+      Determines where the header is rendered based on whether the user has passed in a custom onRenderNavigation or
+      onRenderNavigationContent render callback
+    name: hasCustomNavigation
+    fullName: hasCustomNavigation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'hasCustomNavigation?: boolean;'
       return:
         type:
           - boolean
