@@ -17,6 +17,7 @@ items:
       - 'office-ui-fabric-react!IGroupRenderProps#onRenderHeader:member'
       - 'office-ui-fabric-react!IGroupRenderProps#onRenderShowAll:member'
       - 'office-ui-fabric-react!IGroupRenderProps#onToggleCollapseAll:member'
+      - 'office-ui-fabric-react!IGroupRenderProps#role:member'
       - 'office-ui-fabric-react!IGroupRenderProps#showAllProps:member'
       - 'office-ui-fabric-react!IGroupRenderProps#showEmptyGroups:member'
   - uid: 'office-ui-fabric-react!IGroupRenderProps#collapseAllVisibility:member'
@@ -127,6 +128,18 @@ items:
       return:
         type:
           - '(isAllCollapsed: boolean) => void'
+  - uid: 'office-ui-fabric-react!IGroupRenderProps#role:member'
+    summary: Override which allows the caller to provide a custom aria role
+    name: role
+    fullName: role
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'role?: string;'
+      return:
+        type:
+          - string
   - uid: 'office-ui-fabric-react!IGroupRenderProps#showAllProps:member'
     summary: Information to pass in to the group Show all footer.
     name: showAllProps

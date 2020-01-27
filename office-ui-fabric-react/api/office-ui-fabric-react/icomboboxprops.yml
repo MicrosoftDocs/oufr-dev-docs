@@ -30,6 +30,7 @@ items:
       - 'office-ui-fabric-react!IComboBoxProps#onMenuDismissed:member'
       - 'office-ui-fabric-react!IComboBoxProps#onMenuOpen:member'
       - 'office-ui-fabric-react!IComboBoxProps#onPendingValueChanged:member'
+      - 'office-ui-fabric-react!IComboBoxProps#onRenderLabel:member'
       - 'office-ui-fabric-react!IComboBoxProps#onRenderLowerContent:member'
       - 'office-ui-fabric-react!IComboBoxProps#onRenderUpperContent:member'
       - 'office-ui-fabric-react!IComboBoxProps#onResolveOptions:member'
@@ -305,6 +306,18 @@ items:
       return:
         type:
           - '(option?: IComboBoxOption, index?: number, value?: string) => void'
+  - uid: 'office-ui-fabric-react!IComboBoxProps#onRenderLabel:member'
+    summary: Custom render function for the label text.
+    name: onRenderLabel
+    fullName: onRenderLabel
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onRenderLabel?: IRenderFunction<IOnRenderComboBoxLabelProps>;'
+      return:
+        type:
+          - IRenderFunction<IOnRenderComboBoxLabelProps>
   - uid: 'office-ui-fabric-react!IComboBoxProps#onRenderLowerContent:member'
     summary: Add additional content below the callout list.
     name: onRenderLowerContent
