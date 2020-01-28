@@ -24,6 +24,7 @@ items:
       - 'office-ui-fabric-react!IDialogContentProps#theme:member'
       - 'office-ui-fabric-react!IDialogContentProps#title:member'
       - 'office-ui-fabric-react!IDialogContentProps#titleId:member'
+      - 'office-ui-fabric-react!IDialogContentProps#titleProps:member'
       - 'office-ui-fabric-react!IDialogContentProps#topButtonsProps:member'
       - 'office-ui-fabric-react!IDialogContentProps#type:member'
   - uid: 'office-ui-fabric-react!IDialogContentProps#className:member'
@@ -188,6 +189,8 @@ items:
           - string | JSX.Element
   - uid: 'office-ui-fabric-react!IDialogContentProps#titleId:member'
     summary: The Id for title container
+    deprecated:
+      content: use the `id` attribute in `titleProps` instead.
     name: titleId
     fullName: titleId
     langs:
@@ -198,6 +201,18 @@ items:
       return:
         type:
           - string
+  - uid: 'office-ui-fabric-react!IDialogContentProps#titleProps:member'
+    summary: The props for title container.
+    name: titleProps
+    fullName: titleProps
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'titleProps?: React.HTMLAttributes<HTMLDivElement>;'
+      return:
+        type:
+          - React.HTMLAttributes<HTMLDivElement>
   - uid: 'office-ui-fabric-react!IDialogContentProps#topButtonsProps:member'
     summary: Other top buttons that will show up next to the close button
     name: topButtonsProps
