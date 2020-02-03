@@ -233,7 +233,7 @@ items:
     syntax:
       content: >-
         export declare function withSlots<P>(type: ISlot<P> | React.FunctionComponent<P> | string, props?:
-        React.Attributes & P | null, ...children: React.ReactNode[]): ReturnType<React.FunctionComponent<P>>;
+        (React.Attributes & P) | null, ...children: React.ReactNode[]): ReturnType<React.FunctionComponent<P>>;
       return:
         type:
           - ReturnType<React.FunctionComponent<P>>
@@ -246,7 +246,7 @@ items:
         - id: props
           description: ''
           type:
-            - React.Attributes & P | null
+            - (React.Attributes & P) | null
         - id: children
           description: ''
           type:
