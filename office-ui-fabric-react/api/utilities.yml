@@ -205,7 +205,7 @@ items:
       - typeScript
     type: function
     syntax:
-      content: 'export declare function appendFunction(parent: any, ...functions: (any)[]): () => void;'
+      content: 'export declare function appendFunction(parent: any, ...functions: any[]): () => void;'
       return:
         type:
           - () => void
@@ -218,7 +218,7 @@ items:
         - id: functions
           description: ''
           type:
-            - '(any)[]'
+            - 'any[]'
   - uid: '@uifabric/utilities!arraysEqual:function(1)'
     summary: Returns a boolean indicating if the two given arrays are equal in length and values.
     name: 'arraysEqual(array1, array2)'

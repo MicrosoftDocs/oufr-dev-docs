@@ -10,6 +10,7 @@ items:
     package: office-ui-fabric-react!
     children:
       - 'office-ui-fabric-react!IDragDropEvents#canDrag:member'
+      - 'office-ui-fabric-react!IDragDropEvents#canDragGroups:member'
       - 'office-ui-fabric-react!IDragDropEvents#canDrop:member'
       - 'office-ui-fabric-react!IDragDropEvents#onDragEnd:member'
       - 'office-ui-fabric-react!IDragDropEvents#onDragEnter:member'
@@ -28,6 +29,18 @@ items:
       return:
         type:
           - '(item?: any) => boolean'
+  - uid: 'office-ui-fabric-react!IDragDropEvents#canDragGroups:member'
+    summary: Whether drag operation is allowed on groups
+    name: canDragGroups
+    fullName: canDragGroups
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'canDragGroups?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: 'office-ui-fabric-react!IDragDropEvents#canDrop:member'
     summary: Whether or not drop action is allowed.
     name: canDrop
