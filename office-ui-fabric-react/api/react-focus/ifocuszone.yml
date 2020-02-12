@@ -1,0 +1,72 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-focus!IFocusZone:interface'
+    summary: FocusZone component class interface.
+    name: IFocusZone
+    fullName: IFocusZone
+    langs:
+      - typeScript
+    type: interface
+    package: '@fluentui/react-focus!'
+    children:
+      - '@fluentui/react-focus!IFocusZone#focus:member(1)'
+      - '@fluentui/react-focus!IFocusZone#focusElement:member(1)'
+      - '@fluentui/react-focus!IFocusZone#setFocusAlignment:member(1)'
+  - uid: '@fluentui/react-focus!IFocusZone#focus:member(1)'
+    summary: Sets focus to the first tabbable item in the zone.
+    name: focus(forceIntoFirstElement)
+    fullName: focus(forceIntoFirstElement)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'focus(forceIntoFirstElement?: boolean): boolean;'
+      return:
+        type:
+          - boolean
+        description: 'True if focus could be set to an active element, false if no operation was taken.'
+      parameters:
+        - id: forceIntoFirstElement
+          description: 'If true, focus will be forced into the first element, even if focus is already in the focus zone.'
+          type:
+            - boolean
+  - uid: '@fluentui/react-focus!IFocusZone#focusElement:member(1)'
+    summary: >-
+      Sets focus to a specific child element within the zone. This can be used in conjunction with onBeforeFocus to
+      created delayed focus scenarios (like animate the scroll position to the correct location and then focus.)
+    name: focusElement(childElement)
+    fullName: focusElement(childElement)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'focusElement(childElement?: HTMLElement): boolean;'
+      return:
+        type:
+          - boolean
+        description: 'True if focus could be set to an active element, false if no operation was taken.'
+      parameters:
+        - id: childElement
+          description: ''
+          type:
+            - HTMLElement
+  - uid: '@fluentui/react-focus!IFocusZone#setFocusAlignment:member(1)'
+    summary: >-
+      Forces horizontal alignment in the context of vertical arrowing to use specific point as the reference, rather
+      than a center based on the last horizontal motion.
+    name: setFocusAlignment(point)
+    fullName: setFocusAlignment(point)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setFocusAlignment(point: IPoint): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: point
+          description: the new reference point.
+          type:
+            - '@uifabric/utilities!IPoint:interface'
