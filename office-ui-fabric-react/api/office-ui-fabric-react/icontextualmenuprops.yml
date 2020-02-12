@@ -148,10 +148,10 @@ items:
     syntax:
       content: >-
         contextualMenuItemAs?: React.ComponentClass<IContextualMenuItemProps> |
-        React.StatelessComponent<IContextualMenuItemProps>;
+        React.FunctionComponent<IContextualMenuItemProps>;
       return:
         type:
-          - React.ComponentClass<IContextualMenuItemProps> | React.StatelessComponent<IContextualMenuItemProps>
+          - React.ComponentClass<IContextualMenuItemProps> | React.FunctionComponent<IContextualMenuItemProps>
   - uid: 'office-ui-fabric-react!IContextualMenuProps#coverTarget:member'
     summary: 'If true, the menu will be positioned to cover the target. If false, it will be positioned next to the target.'
     name: coverTarget
@@ -241,7 +241,7 @@ items:
       content: 'focusZoneProps?: IFocusZoneProps;'
       return:
         type:
-          - 'office-ui-fabric-react!IFocusZoneProps:interface'
+          - IFocusZoneProps
   - uid: 'office-ui-fabric-react!IContextualMenuProps#gapSpace:member'
     summary: The gap between the ContextualMenu and the target
     name: gapSpace
