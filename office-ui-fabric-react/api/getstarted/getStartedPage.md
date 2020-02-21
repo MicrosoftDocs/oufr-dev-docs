@@ -4,7 +4,7 @@ author: Vitalius1
 ms.author: vibraga
 ---
 
-# Get Started with Fabric React v7.94.1
+# Get Started with Fabric React v7.95.0
 
 ## Overview
 UI Fabric for the web is available in two flavors: Fabric React and Fabric Core.
