@@ -20,6 +20,7 @@ items:
       - 'office-ui-fabric-react!IListProps#getPageHeight:member'
       - 'office-ui-fabric-react!IListProps#getPageSpecification:member'
       - 'office-ui-fabric-react!IListProps#getPageStyle:member'
+      - 'office-ui-fabric-react!IListProps#ignoreScrollingState:member'
       - 'office-ui-fabric-react!IListProps#items:member'
       - 'office-ui-fabric-react!IListProps#onPageAdded:member'
       - 'office-ui-fabric-react!IListProps#onPageRemoved:member'
@@ -130,6 +131,21 @@ items:
       return:
         type:
           - '(page: IPage<T>) => any'
+  - uid: 'office-ui-fabric-react!IListProps#ignoreScrollingState:member'
+    summary: >-
+      Boolean value to disable scroll state updates. This will cause the isScrolling argument in onRenderCell to always
+      be undefined. This is a performance optimization to let List skip a render cycle by not updating its scrolling
+      state.
+    name: ignoreScrollingState
+    fullName: ignoreScrollingState
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'ignoreScrollingState?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: 'office-ui-fabric-react!IListProps#items:member'
     summary: Items to render.
     name: items
