@@ -15,6 +15,7 @@ PeoplePickers are used to pick recipients.
 - Use the MemberList PeoplePicker to display selections below the input box
 - Use defaultSelectedItems when some people have already been selected
 
+
 ## Don't &#10008;
 - Use the PeoplePicker to select something other than people
 - Use the PeoplePicker to only display people

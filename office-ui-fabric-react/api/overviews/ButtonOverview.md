@@ -26,6 +26,7 @@ While buttons can technically be used to navigate a user to another part of the 
 - Default buttons should always perform safe operations. For example, a default button should never delete.
 - Use task buttons to cause actions that complete a task or cause a transitional task. Do not use buttons to toggle other UX in the same context. For example, a button may be used to open an interface area but should not be used to open an additional set of components in the same interface.
 
+
 ## Don't &#10008;
 - Don&#39;t use generic labels like &quot;Ok,&quot; especially in the case of an error; errors are never &quot;Ok.&quot;
 - Don’t place the default focus on a button that destroys data. Instead, place the default focus on the button that performs the &quot;safe act&quot; and retains the content (i.e. &quot;Save&quot;) or cancels the action (i.e. &quot;Cancel&quot;).

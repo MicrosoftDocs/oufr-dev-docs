@@ -51,6 +51,7 @@ By re-creating the items array without mutating the values, the inner List will 
 - Display columns in order of importance left to right or right to left depending on the standards of the culture.
 - Give columns ample default width to display information.
 
+
 ## Don't &#10008;
 - Use them to display commands or settings.
 - Overload the view with too many columns that require excessive horizontal scrolling.

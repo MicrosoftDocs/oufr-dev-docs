@@ -9,7 +9,7 @@ items:
     extends:
       - 'React.Component<IFocusZoneProps> '
     implements:
-      - 'IFocusZone '
+      - '@fluentui/react-focus!IFocusZone:interface'
     package: '@fluentui/react-focus!'
     children:
       - '@fluentui/react-focus!FocusZone:constructor(1)'
@@ -35,7 +35,7 @@ items:
         - id: props
           description: ''
           type:
-            - IFocusZoneProps
+            - '@fluentui/react-focus!IFocusZoneProps:interface'
   - uid: '@fluentui/react-focus!FocusZone#componentDidMount:member(1)'
     name: componentDidMount()
     fullName: componentDidMount()
@@ -82,7 +82,7 @@ items:
       content: 'static defaultProps: IFocusZoneProps;'
       return:
         type:
-          - IFocusZoneProps
+          - '@fluentui/react-focus!IFocusZoneProps:interface'
   - uid: '@fluentui/react-focus!FocusZone#focus:member(1)'
     summary: Sets focus to the first tabbable item in the zone.
     name: focus(forceIntoFirstElement)

@@ -34,6 +34,7 @@ IKeytipProps to assist in defining your keytips.
 ## Do &#10003;
 - Keytip sequences can be duplicated as long as none of their siblings have the same sequence
 
+
 ## Don't &#10008;
 - Don&#39;t create more than 1 KeytipLayer per app. This will cause issues with the key listeners
 - Don&#39;t attach keytips to components that will make your page scroll. Keytip mode automically exits on scroll

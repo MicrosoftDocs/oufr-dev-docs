@@ -8,6 +8,7 @@ ms.author: vibraga
 ColorPicker is used to allow a user to select a color.
 
 
+
 ## Do &#10003;
 Coming soon...
 

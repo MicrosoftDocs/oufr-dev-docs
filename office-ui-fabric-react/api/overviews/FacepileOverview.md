@@ -28,10 +28,12 @@ When there is a need to show the Facepile expanded into a vertical list, include
 When the Facepile exceeds a max number of 5 people, show a button at the end of the list indicating how many are not being shown. Clicking or tapping on the overflow would open a standard list view of personas.
 
 
+
 ## Do &#10003;
 - Use if looking for a way to represent who has access to an area and need to show that as a people representation.
 - Only show the Add button if a user has access to do so.
 - Allow a way for the user to understand who the person is. Many common ways to do this are with a tooltip or adding the ability to open up a PeopleCard Experience.
+
 
 ## Don't &#10008;
 - Use for things other than people.

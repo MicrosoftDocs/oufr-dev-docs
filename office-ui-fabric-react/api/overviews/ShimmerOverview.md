@@ -12,7 +12,6 @@ If a smooth transition from Shimmer to content is desired, wrap the content node
 
 
 ## Do &#10003;
-
 - Use shimmer to help ease a UI transition when we know the service will potentially take a longer amount of time to retrieve the data.
 - Provide widths for each of the shimmer elements you used to build a skeleton layout looking as close as possible to real content it is replacing.
 - Use &#x60;isDataLoaded&#x60; prop to trigger the transition once we have the data from the service. The Shimmer UI should Fade out while the real UI Fades In.
@@ -20,8 +19,8 @@ If a smooth transition from Shimmer to content is desired, wrap the content node
 - Provide an ETA as quickly as possible to help the user understand that the system isn’t broken if you use shimmer and the delay is longer than 10 seconds.
 - Provide shimmer designs for the breakpoints that your experience is supported in.
 
-## Don't &#10008;
 
+## Don't &#10008;
 - Use on the same element both types of widths. It will always default to just one of them. See documentation below.
 - Build Shimmer UI should with a lot of details. Circles and rectangles are really as detailed as you want to get. Adding more detail will result in confusion once the UI loads.
 - Use shimmer if you are confident that the UI will take less than a second to load.

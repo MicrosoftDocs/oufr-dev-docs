@@ -21,6 +21,7 @@ By default, Callouts that do not contain focusable elements (links, buttons etc)
 - Callouts should be placed near the object being described, usually at the pointer&#39;s tail or head if possible.
 - When additional context - or more advanced description - is necessary, consider placing a link to &quot;Learn more&quot; at the bottom of the Callout and opening the additional content in a new window or Panel when clicked.
 
+
 ## Don't &#10008;
 - Don’t overuse Callout without putting the user in control. Too many Callouts which open automatically can be perceived as interrupting workflow and are a bad user experience.
 - Don&#39;t use large, unformatted blocks of text in your Callout, they are difficult to read and overwhelming.

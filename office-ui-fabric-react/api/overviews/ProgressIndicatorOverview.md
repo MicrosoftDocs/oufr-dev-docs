@@ -25,6 +25,7 @@ Real-world examples include copying files to a storage location, saving edits to
 - Show text above and&#x2F;or below the bar
 - Combine steps of a single operation into one bar
 
+
 ## Don't &#10008;
 - Use a ProgressIndicator when the total units to completion is indeterminate
 - Use only a single word description

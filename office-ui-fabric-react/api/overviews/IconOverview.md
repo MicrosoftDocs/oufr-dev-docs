@@ -17,6 +17,7 @@ Note that icons are not bundled by default and typically must be loaded by calli
 - Adjust to proper size to highlight importance but not occupying too much space.
 - Be simple and concise.
 
+
 ## Don't &#10008;
 - Use Icons to show pictures.
 - Use photos or long sentences as icons.
