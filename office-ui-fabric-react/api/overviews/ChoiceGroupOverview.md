@@ -21,6 +21,7 @@ If there are only two mutually exclusive options, combine them into a single Che
 - Select the safest (to prevent loss of data or system access) and most secure and private option as the default. If safety and security aren&#39;t factors, select the most likely or convenient option.
 - Align radio buttons vertically instead of horizontally, if possible. Horizontal alignment is harder to read and localize.
 
+
 ## Don't &#10008;
 - Use when the options are numbers that have fixed steps, like 10, 20, 30. Use a Slider component instead.
 - Use if there are more than 7 options, use a Dropdown instead.

@@ -18,6 +18,7 @@ A Slider is a good choice when you know that users think of the value as a relat
 - Use step points (or tick marks) if you don’t want the Slider to allow arbitrary values between min and max.
 - Use a Slider when the user would benefit from instant feedback on the effect of setting changes.
 
+
 ## Don't &#10008;
 - Don&#39;t use a Slider when the options are not values.
 - Don’t use a Slider for binary settings.

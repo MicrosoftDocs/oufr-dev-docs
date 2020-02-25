@@ -96,10 +96,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'as?: React.ReactType;'
+      content: 'as?: React.ElementType;'
       return:
         type:
-          - React.ReactType
+          - React.ElementType
   - uid: '@fluentui/react-focus!IFocusZoneProps#checkForNoWrap:member'
     summary: >-
       Whether the to check for data-no-horizontal-wrap or data-no-vertical-wrap attributes when determining how to move
@@ -163,7 +163,7 @@ items:
       content: 'direction?: FocusZoneDirection;'
       return:
         type:
-          - FocusZoneDirection
+          - '@fluentui/react-focus!FocusZoneDirection:enum'
   - uid: '@fluentui/react-focus!IFocusZoneProps#disabled:member'
     summary: >-
       If set, the FocusZone will not be tabbable and keyboard navigation will be disabled. This does not affect disabled

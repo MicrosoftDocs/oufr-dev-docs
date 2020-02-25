@@ -21,6 +21,7 @@ There is a boolean context property (isMeasured) added to let child components k
 - Include a cacheKey in your data to improve performance. Two objects with the same cacheKey are assumed to have the same width, so the ResizeGroup will only store one measurement per resize group.
 - Implement onGrowData for improved performance when the container for the resize group increases in size.
 
+
 ## Don't &#10008;
 - Do any DOM measurements inside your onReduce function as this will degrade performance
 - Provide too many different return values for onReduce, it will degrade performance

@@ -22,5 +22,6 @@ Both of these props are false by default.
 ## Do &#10003;
 - Use Text to display read-only text that inherits styling from ITheme.
 
+
 ## Don't &#10008;
 - Don&#39;t nest Text components if you want to inherit font styling. Use a div or span instead that inherits by default.
