@@ -8,6 +8,7 @@ items:
     type: interface
     package: office-ui-fabric-react!
     children:
+      - 'office-ui-fabric-react!INavLink#ariaCurrent:member'
       - 'office-ui-fabric-react!INavLink#ariaLabel:member'
       - 'office-ui-fabric-react!INavLink#automationId:member'
       - 'office-ui-fabric-react!INavLink#collapseAriaLabel:member'
@@ -25,6 +26,18 @@ items:
       - 'office-ui-fabric-react!INavLink#target:member'
       - 'office-ui-fabric-react!INavLink#title:member'
       - 'office-ui-fabric-react!INavLink#url:member'
+  - uid: 'office-ui-fabric-react!INavLink#ariaCurrent:member'
+    summary: 'Aria-current token for active nav links. Must be a valid token value, and defaults to ''page''.'
+    name: ariaCurrent
+    fullName: ariaCurrent
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'ariaCurrent?: ''page'' | ''step'' | ''location'' | ''date'' | ''time'' | ''true'';'
+      return:
+        type:
+          - '''page'' | ''step'' | ''location'' | ''date'' | ''time'' | ''true'''
   - uid: 'office-ui-fabric-react!INavLink#ariaLabel:member'
     summary: Aria label for nav link. Ignored if `collapseAriaLabel` or `expandAriaLabel` is provided.
     name: ariaLabel
