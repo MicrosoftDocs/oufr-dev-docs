@@ -22,10 +22,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'load: () => Promise<React.ReactType<TProps>>;'
+      content: 'load: () => Promise<React.ElementType<TProps>>;'
       return:
         type:
-          - () => Promise<React.ReactType<TProps>>
+          - () => Promise<React.ElementType<TProps>>
   - uid: '@uifabric/utilities!IAsAsyncOptions#onError:member'
     summary: Callback when async loading fails.
     name: onError
