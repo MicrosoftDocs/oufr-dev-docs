@@ -2449,7 +2449,7 @@ items:
       - typeScript
     type: function
     syntax:
-      content: 'export declare function shallowCompare<TA, TB>(a: TA, b: TB): boolean;'
+      content: 'export declare function shallowCompare<TA extends any, TB extends any>(a: TA, b: TB): boolean;'
       return:
         type:
           - boolean
@@ -2465,7 +2465,11 @@ items:
             - TB
       typeParameters:
         - id: TA
+          type:
+            - any
         - id: TB
+          type:
+            - any
   - uid: '@uifabric/utilities!shouldWrapFocus:function(1)'
     summary: 'Determines if an, or any of its ancestors, sepcificies that it doesn''t want focus to wrap'
     name: 'shouldWrapFocus(element, noWrapDataAttribute)'
