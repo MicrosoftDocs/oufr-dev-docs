@@ -87,7 +87,6 @@ items:
       - '@uifabric/utilities!IDisposable:interface'
       - '@uifabric/utilities!IFitContentToBoundsOptions:interface'
       - '@uifabric/utilities!initializeComponentRef:function(1)'
-      - '@uifabric/utilities!initializeFocusRects:function(1)'
       - '@uifabric/utilities!IObjectWithKey:interface'
       - '@uifabric/utilities!IPoint:interface'
       - '@uifabric/utilities!IPropsWithStyles:interface'
@@ -142,6 +141,7 @@ items:
       - '@uifabric/utilities!styled:function(1)'
       - '@uifabric/utilities!toMatrix:function(1)'
       - '@uifabric/utilities!unhoistMethods:function(1)'
+      - '@uifabric/utilities!useFocusRects:function(1)'
       - '@uifabric/utilities!values:function(1)'
       - '@uifabric/utilities!warn:function(1)'
       - '@uifabric/utilities!warnConditionallyRequiredProps:function(1)'
@@ -1643,36 +1643,6 @@ items:
           type:
             - '@uifabric/utilities!IBaseProps:interface'
         - id: TState
-  - uid: '@uifabric/utilities!initializeFocusRects:function(1)'
-    summary: >-
-      Initializes the logic which:
-
-
-      1. Subscribes keydown and mousedown events. (It will only do it once per window, so it's safe to call this method
-      multiple times.) 2. When the user presses directional keyboard keys, adds the 'ms-Fabric--isFocusVisible'
-      classname to the document body, removes the 'ms-Fabric-isFocusHidden' classname. 3. When the user clicks a mouse
-      button, adds the 'ms-Fabric-isFocusHidden' classname to the document body, removes the 'ms-Fabric--isFocusVisible'
-      classname.
-
-
-      This logic allows components on the page to conditionally render focus treatments based on the existence of global
-      classnames, which simplifies logic overall.
-    name: initializeFocusRects(window)
-    fullName: initializeFocusRects(window)
-    langs:
-      - typeScript
-    type: function
-    syntax:
-      content: 'export declare function initializeFocusRects(window?: Window): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: window
-          description: the window used to add the event listeners
-          type:
-            - Window
   - uid: '@uifabric/utilities!isControlled:function(1)'
     summary: Determines whether a component is controlled.
     name: 'isControlled(props, valueProp)'
@@ -2592,6 +2562,36 @@ items:
           description: An array of method names to unhoist.
           type:
             - 'string[]'
+  - uid: '@uifabric/utilities!useFocusRects:function(1)'
+    summary: >-
+      Initializes the logic which:
+
+
+      1. Subscribes keydown and mousedown events. (It will only do it once per window, so it's safe to call this method
+      multiple times.) 2. When the user presses directional keyboard keys, adds the 'ms-Fabric--isFocusVisible'
+      classname to the document body, removes the 'ms-Fabric-isFocusHidden' classname. 3. When the user clicks a mouse
+      button, adds the 'ms-Fabric-isFocusHidden' classname to the document body, removes the 'ms-Fabric--isFocusVisible'
+      classname.
+
+
+      This logic allows components on the page to conditionally render focus treatments based on the existence of global
+      classnames, which simplifies logic overall.
+    name: useFocusRects(rootRef)
+    fullName: useFocusRects(rootRef)
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export declare function useFocusRects(rootRef?: React.RefObject<HTMLElement>): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: rootRef
+          description: A Ref object. Focus rectangle can be applied on itself and all its children.
+          type:
+            - React.RefObject<HTMLElement>
   - uid: '@uifabric/utilities!values:function(1)'
     summary: Get all values in an object dictionary
     name: values(obj)

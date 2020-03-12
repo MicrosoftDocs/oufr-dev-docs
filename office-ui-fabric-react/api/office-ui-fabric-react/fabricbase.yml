@@ -7,31 +7,12 @@ items:
       - typeScript
     type: class
     extends:
-      - |-
-        React.Component<IFabricProps, {
-            isFocusVisible: boolean;
-        }> 
+      - 'React.Component<IFabricProps> '
     package: office-ui-fabric-react!
     children:
-      - 'office-ui-fabric-react!FabricBase:constructor(1)'
       - 'office-ui-fabric-react!FabricBase#componentDidMount:member(1)'
       - 'office-ui-fabric-react!FabricBase#componentWillUnmount:member(1)'
-      - 'office-ui-fabric-react!FabricBase#isFocusVisible:member'
       - 'office-ui-fabric-react!FabricBase#render:member(1)'
-  - uid: 'office-ui-fabric-react!FabricBase:constructor(1)'
-    summary: Constructs a new instance of the `FabricBase` class
-    name: (constructor)(props)
-    fullName: (constructor)(props)
-    langs:
-      - typeScript
-    type: constructor
-    syntax:
-      content: 'constructor(props: IFabricProps);'
-      parameters:
-        - id: props
-          description: ''
-          type:
-            - 'office-ui-fabric-react!IFabricProps:interface'
   - uid: 'office-ui-fabric-react!FabricBase#componentDidMount:member(1)'
     name: componentDidMount()
     fullName: componentDidMount()
@@ -56,17 +37,6 @@ items:
         type:
           - void
         description: ''
-  - uid: 'office-ui-fabric-react!FabricBase#isFocusVisible:member'
-    name: isFocusVisible
-    fullName: isFocusVisible
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'isFocusVisible: boolean;'
-      return:
-        type:
-          - boolean
   - uid: 'office-ui-fabric-react!FabricBase#render:member(1)'
     name: render()
     fullName: render()
