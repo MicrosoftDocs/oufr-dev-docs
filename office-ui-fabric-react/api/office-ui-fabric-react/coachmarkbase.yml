@@ -7,7 +7,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'BaseComponent<ICoachmarkProps, ICoachmarkState> '
+      - 'React.Component<ICoachmarkProps, ICoachmarkState> '
     implements:
       - 'office-ui-fabric-react!ICoachmark:interface'
     package: office-ui-fabric-react!
@@ -15,6 +15,7 @@ items:
       - 'office-ui-fabric-react!CoachmarkBase:constructor(1)'
       - 'office-ui-fabric-react!CoachmarkBase#componentDidMount:member(1)'
       - 'office-ui-fabric-react!CoachmarkBase#componentDidUpdate:member(1)'
+      - 'office-ui-fabric-react!CoachmarkBase#componentWillUnmount:member(1)'
       - 'office-ui-fabric-react!CoachmarkBase.defaultProps:member'
       - 'office-ui-fabric-react!CoachmarkBase#dismiss:member'
       - 'office-ui-fabric-react!CoachmarkBase#render:member(1)'
@@ -67,6 +68,18 @@ items:
           description: ''
           type:
             - 'office-ui-fabric-react!ICoachmarkState:interface'
+  - uid: 'office-ui-fabric-react!CoachmarkBase#componentWillUnmount:member(1)'
+    name: componentWillUnmount()
+    fullName: componentWillUnmount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'componentWillUnmount(): void;'
+      return:
+        type:
+          - void
+        description: ''
   - uid: 'office-ui-fabric-react!CoachmarkBase.defaultProps:member'
     name: defaultProps
     fullName: defaultProps

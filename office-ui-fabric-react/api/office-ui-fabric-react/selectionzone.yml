@@ -7,12 +7,13 @@ items:
       - typeScript
     type: class
     extends:
-      - 'BaseComponent<ISelectionZoneProps, ISelectionZoneState> '
+      - 'React.Component<ISelectionZoneProps, ISelectionZoneState> '
     package: office-ui-fabric-react!
     children:
       - 'office-ui-fabric-react!SelectionZone:constructor(1)'
       - 'office-ui-fabric-react!SelectionZone#componentDidMount:member(1)'
       - 'office-ui-fabric-react!SelectionZone#componentDidUpdate:member(1)'
+      - 'office-ui-fabric-react!SelectionZone#componentWillUnmount:member(1)'
       - 'office-ui-fabric-react!SelectionZone.defaultProps:member'
       - 'office-ui-fabric-react!SelectionZone.getDerivedStateFromProps:member(1)'
       - 'office-ui-fabric-react!SelectionZone#ignoreNextFocus:member'
@@ -60,6 +61,18 @@ items:
           description: ''
           type:
             - 'office-ui-fabric-react!ISelectionZoneProps:interface'
+  - uid: 'office-ui-fabric-react!SelectionZone#componentWillUnmount:member(1)'
+    name: componentWillUnmount()
+    fullName: componentWillUnmount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'componentWillUnmount(): void;'
+      return:
+        type:
+          - void
+        description: ''
   - uid: 'office-ui-fabric-react!SelectionZone.defaultProps:member'
     name: defaultProps
     fullName: defaultProps

@@ -7,13 +7,14 @@ items:
       - typeScript
     type: class
     extends:
-      - 'BaseComponent<IComboBoxProps, {}> '
+      - 'React.Component<IComboBoxProps, {}> '
     implements:
       - 'office-ui-fabric-react!IComboBox:interface'
     package: office-ui-fabric-react!
     children:
       - 'office-ui-fabric-react!VirtualizedComboBox#_onRenderList:member'
       - 'office-ui-fabric-react!VirtualizedComboBox#_onScrollToItem:member'
+      - 'office-ui-fabric-react!VirtualizedComboBox:constructor(1)'
       - 'office-ui-fabric-react!VirtualizedComboBox#dismissMenu:member(1)'
       - 'office-ui-fabric-react!VirtualizedComboBox#focus:member(1)'
       - 'office-ui-fabric-react!VirtualizedComboBox#render:member(1)'
@@ -40,6 +41,20 @@ items:
       return:
         type:
           - '(itemIndex: number) => void'
+  - uid: 'office-ui-fabric-react!VirtualizedComboBox:constructor(1)'
+    summary: Constructs a new instance of the `VirtualizedComboBox` class
+    name: (constructor)(props)
+    fullName: (constructor)(props)
+    langs:
+      - typeScript
+    type: constructor
+    syntax:
+      content: 'constructor(props: IComboBoxProps);'
+      parameters:
+        - id: props
+          description: ''
+          type:
+            - 'office-ui-fabric-react!IComboBoxProps:interface'
   - uid: 'office-ui-fabric-react!VirtualizedComboBox#dismissMenu:member(1)'
     name: dismissMenu()
     fullName: dismissMenu()

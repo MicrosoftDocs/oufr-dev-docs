@@ -7,10 +7,25 @@ items:
       - typeScript
     type: class
     extends:
-      - 'BaseComponent<IPlainCardProps, {}> '
+      - 'React.Component<IPlainCardProps, {}> '
     package: office-ui-fabric-react!
     children:
+      - 'office-ui-fabric-react!PlainCardBase:constructor(1)'
       - 'office-ui-fabric-react!PlainCardBase#render:member(1)'
+  - uid: 'office-ui-fabric-react!PlainCardBase:constructor(1)'
+    summary: Constructs a new instance of the `PlainCardBase` class
+    name: (constructor)(props)
+    fullName: (constructor)(props)
+    langs:
+      - typeScript
+    type: constructor
+    syntax:
+      content: 'constructor(props: IPlainCardProps);'
+      parameters:
+        - id: props
+          description: ''
+          type:
+            - 'office-ui-fabric-react!IPlainCardProps:interface'
   - uid: 'office-ui-fabric-react!PlainCardBase#render:member(1)'
     name: render()
     fullName: render()

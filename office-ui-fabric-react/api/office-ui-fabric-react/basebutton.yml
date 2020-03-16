@@ -7,7 +7,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'BaseComponent<IBaseButtonProps, IBaseButtonState> '
+      - 'React.Component<IBaseButtonProps, IBaseButtonState> '
     implements:
       - 'office-ui-fabric-react!IButton:interface'
     package: office-ui-fabric-react!
@@ -15,6 +15,7 @@ items:
       - 'office-ui-fabric-react!BaseButton:constructor(1)'
       - 'office-ui-fabric-react!BaseButton#componentDidMount:member(1)'
       - 'office-ui-fabric-react!BaseButton#componentDidUpdate:member(1)'
+      - 'office-ui-fabric-react!BaseButton#componentWillUnmount:member(1)'
       - 'office-ui-fabric-react!BaseButton.defaultProps:member'
       - 'office-ui-fabric-react!BaseButton#dismissMenu:member(1)'
       - 'office-ui-fabric-react!BaseButton#focus:member(1)'
@@ -22,22 +23,18 @@ items:
       - 'office-ui-fabric-react!BaseButton#render:member(1)'
   - uid: 'office-ui-fabric-react!BaseButton:constructor(1)'
     summary: Constructs a new instance of the `BaseButton` class
-    name: '(constructor)(props, rootClassName)'
-    fullName: '(constructor)(props, rootClassName)'
+    name: (constructor)(props)
+    fullName: (constructor)(props)
     langs:
       - typeScript
     type: constructor
     syntax:
-      content: 'constructor(props: IBaseButtonProps, rootClassName: string);'
+      content: 'constructor(props: IBaseButtonProps);'
       parameters:
         - id: props
           description: ''
           type:
             - 'office-ui-fabric-react!IBaseButtonProps:interface'
-        - id: rootClassName
-          description: ''
-          type:
-            - string
   - uid: 'office-ui-fabric-react!BaseButton#componentDidMount:member(1)'
     name: componentDidMount()
     fullName: componentDidMount()
@@ -71,6 +68,18 @@ items:
           description: ''
           type:
             - 'office-ui-fabric-react!IBaseButtonState:interface'
+  - uid: 'office-ui-fabric-react!BaseButton#componentWillUnmount:member(1)'
+    name: componentWillUnmount()
+    fullName: componentWillUnmount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'componentWillUnmount(): void;'
+      return:
+        type:
+          - void
+        description: ''
   - uid: 'office-ui-fabric-react!BaseButton.defaultProps:member'
     name: defaultProps
     fullName: defaultProps
