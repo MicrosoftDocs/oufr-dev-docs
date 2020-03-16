@@ -8,7 +8,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'BaseComponent<ISuggestionsControlProps<T>, ISuggestionsControlState<T>> '
+      - 'React.Component<ISuggestionsControlProps<T>, ISuggestionsControlState<T>> '
     package: office-ui-fabric-react!
     children:
       - 'office-ui-fabric-react!SuggestionsControl#_forceResolveButton:member'
@@ -79,10 +79,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'protected _selectedElement: HTMLDivElement;'
+      content: 'protected _selectedElement: React.RefObject<HTMLDivElement>;'
       return:
         type:
-          - HTMLDivElement
+          - React.RefObject<HTMLDivElement>
   - uid: 'office-ui-fabric-react!SuggestionsControl#_suggestions:member'
     name: _suggestions
     fullName: _suggestions
@@ -90,10 +90,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'protected _suggestions: SuggestionsCore<T>;'
+      content: 'protected _suggestions: React.RefObject<SuggestionsCore<T>>;'
       return:
         type:
-          - SuggestionsCore<T>
+          - React.RefObject<SuggestionsCore<T>>
   - uid: 'office-ui-fabric-react!SuggestionsControl:constructor(1)'
     summary: Constructs a new instance of the `SuggestionsControl` class
     name: (constructor)(suggestionsProps)
@@ -151,10 +151,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'readonly currentSuggestion: ISuggestionModel<T>;'
+      content: 'readonly currentSuggestion: ISuggestionModel<T> | undefined;'
       return:
         type:
-          - ISuggestionModel<T>
+          - ISuggestionModel<T> | undefined
   - uid: 'office-ui-fabric-react!SuggestionsControl#currentSuggestionIndex:member'
     name: currentSuggestionIndex
     fullName: currentSuggestionIndex

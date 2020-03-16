@@ -7,12 +7,13 @@ items:
       - typeScript
     type: class
     extends:
-      - 'BaseComponent<IResizeGroupProps, IResizeGroupState> '
+      - 'React.Component<IResizeGroupProps, IResizeGroupState> '
     package: office-ui-fabric-react!
     children:
       - 'office-ui-fabric-react!ResizeGroupBase:constructor(1)'
       - 'office-ui-fabric-react!ResizeGroupBase#componentDidMount:member(1)'
       - 'office-ui-fabric-react!ResizeGroupBase#componentDidUpdate:member(1)'
+      - 'office-ui-fabric-react!ResizeGroupBase#componentWillUnmount:member(1)'
       - 'office-ui-fabric-react!ResizeGroupBase#remeasure:member(1)'
       - 'office-ui-fabric-react!ResizeGroupBase#render:member(1)'
       - 'office-ui-fabric-react!ResizeGroupBase#UNSAFE_componentWillReceiveProps:member(1)'
@@ -59,6 +60,18 @@ items:
           description: ''
           type:
             - 'office-ui-fabric-react!IResizeGroupProps:interface'
+  - uid: 'office-ui-fabric-react!ResizeGroupBase#componentWillUnmount:member(1)'
+    name: componentWillUnmount()
+    fullName: componentWillUnmount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'componentWillUnmount(): void;'
+      return:
+        type:
+          - void
+        description: ''
   - uid: 'office-ui-fabric-react!ResizeGroupBase#remeasure:member(1)'
     name: remeasure()
     fullName: remeasure()

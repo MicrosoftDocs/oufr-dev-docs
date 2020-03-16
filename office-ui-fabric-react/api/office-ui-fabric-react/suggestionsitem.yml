@@ -7,10 +7,25 @@ items:
       - typeScript
     type: class
     extends:
-      - 'BaseComponent<ISuggestionItemProps<T>, {}> '
+      - 'React.Component<ISuggestionItemProps<T>, {}> '
     package: office-ui-fabric-react!
     children:
+      - 'office-ui-fabric-react!SuggestionsItem:constructor(1)'
       - 'office-ui-fabric-react!SuggestionsItem#render:member(1)'
+  - uid: 'office-ui-fabric-react!SuggestionsItem:constructor(1)'
+    summary: Constructs a new instance of the `SuggestionsItem` class
+    name: (constructor)(props)
+    fullName: (constructor)(props)
+    langs:
+      - typeScript
+    type: constructor
+    syntax:
+      content: 'constructor(props: ISuggestionItemProps<T>);'
+      parameters:
+        - id: props
+          description: ''
+          type:
+            - ISuggestionItemProps<T>
   - uid: 'office-ui-fabric-react!SuggestionsItem#render:member(1)'
     name: render()
     fullName: render()

@@ -8,7 +8,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'BaseComponent<ISuggestionsCoreProps<T>, {}> '
+      - 'React.Component<ISuggestionsCoreProps<T>, {}> '
     package: office-ui-fabric-react!
     children:
       - 'office-ui-fabric-react!SuggestionsCore#_selectedElement:member'
@@ -34,10 +34,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'protected _selectedElement: HTMLDivElement;'
+      content: 'protected _selectedElement: React.RefObject<HTMLDivElement>;'
       return:
         type:
-          - HTMLDivElement
+          - React.RefObject<HTMLDivElement>
   - uid: 'office-ui-fabric-react!SuggestionsCore:constructor(1)'
     summary: Constructs a new instance of the `SuggestionsCore` class
     name: (constructor)(suggestionsProps)

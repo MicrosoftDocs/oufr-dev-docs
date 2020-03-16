@@ -7,7 +7,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'BaseComponent<IAutofillProps, IAutofillState> '
+      - 'React.Component<IAutofillProps, IAutofillState> '
     implements:
       - 'office-ui-fabric-react!IAutofill:interface'
     package: office-ui-fabric-react!
@@ -15,6 +15,7 @@ items:
       - 'office-ui-fabric-react!Autofill:constructor(1)'
       - 'office-ui-fabric-react!Autofill#clear:member(1)'
       - 'office-ui-fabric-react!Autofill#componentDidUpdate:member(1)'
+      - 'office-ui-fabric-react!Autofill#componentWillUnmount:member(1)'
       - 'office-ui-fabric-react!Autofill#cursorLocation:member'
       - 'office-ui-fabric-react!Autofill.defaultProps:member'
       - 'office-ui-fabric-react!Autofill#focus:member(1)'
@@ -59,6 +60,18 @@ items:
     type: method
     syntax:
       content: 'componentDidUpdate(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'office-ui-fabric-react!Autofill#componentWillUnmount:member(1)'
+    name: componentWillUnmount()
+    fullName: componentWillUnmount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'componentWillUnmount(): void;'
       return:
         type:
           - void

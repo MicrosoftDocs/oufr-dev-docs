@@ -7,7 +7,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'BaseComponent<IHoverCardProps, IHoverCardState> '
+      - 'React.Component<IHoverCardProps, IHoverCardState> '
     implements:
       - 'office-ui-fabric-react!IHoverCard:interface'
     package: office-ui-fabric-react!
@@ -15,6 +15,7 @@ items:
       - 'office-ui-fabric-react!HoverCardBase:constructor(1)'
       - 'office-ui-fabric-react!HoverCardBase#componentDidMount:member(1)'
       - 'office-ui-fabric-react!HoverCardBase#componentDidUpdate:member(1)'
+      - 'office-ui-fabric-react!HoverCardBase#componentWillUnmount:member(1)'
       - 'office-ui-fabric-react!HoverCardBase.defaultProps:member'
       - 'office-ui-fabric-react!HoverCardBase#dismiss:member'
       - 'office-ui-fabric-react!HoverCardBase#render:member(1)'
@@ -65,6 +66,18 @@ items:
           description: ''
           type:
             - 'office-ui-fabric-react!IHoverCardState:interface'
+  - uid: 'office-ui-fabric-react!HoverCardBase#componentWillUnmount:member(1)'
+    name: componentWillUnmount()
+    fullName: componentWillUnmount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'componentWillUnmount(): void;'
+      return:
+        type:
+          - void
+        description: ''
   - uid: 'office-ui-fabric-react!HoverCardBase.defaultProps:member'
     name: defaultProps
     fullName: defaultProps
