@@ -4,6 +4,10 @@ author: Vitalius1
 ms.author: vibraga
 ---
 
+:tada: The **Office UI Fabric React** project is evolving to **Fluent UI**. :tada:
+
+We have a lot in store for Fluent UI - [Read our announcement here.](https://developer.microsoft.com/en-us/office/blogs/ui-fabric-is-evolving-into-fluent-ui/)
+
 # Get Started with Fabric React v7.105.0
 
 ## Overview
@@ -189,3 +193,4 @@ Our Fabric design toolkits provide styles, controls and layout templates that en
 ---
 
 Usage of Fabric assets, such as fonts and icons, is subject to the [assets license agreement](https://aka.ms/fabric-assets-license).
+
