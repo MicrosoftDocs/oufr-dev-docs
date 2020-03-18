@@ -1,0 +1,44 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-compose!'
+    name: '@fluentui/react-compose'
+    fullName: '@fluentui/react-compose'
+    langs:
+      - typeScript
+    type: package
+    children:
+      - '@fluentui/react-compose!compose:function(1)'
+  - uid: '@fluentui/react-compose!compose:function(1)'
+    name: 'compose(InputComponent, composeOptions)'
+    fullName: 'compose(InputComponent, composeOptions)'
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: >-
+        declare function compose<InputProps, InputStylesProps, ParentProps, ParentStylesProps>(InputComponent:
+        React.FunctionComponent<ParentProps> & {
+            fluentComposeConfig?: ComposePreparedOptions;
+        }, composeOptions?: ComposeOptions<InputProps, InputStylesProps, ParentStylesProps>):
+        ComposedComponent<InputProps, InputStylesProps, ParentProps, ParentStylesProps>;
+      return:
+        type:
+          - 'ComposedComponent<InputProps, InputStylesProps, ParentProps, ParentStylesProps>'
+        description: ''
+      parameters:
+        - id: InputComponent
+          description: ''
+          type:
+            - |-
+              React.FunctionComponent<ParentProps> & {
+                  fluentComposeConfig?: ComposePreparedOptions;
+              }
+        - id: composeOptions
+          description: ''
+          type:
+            - 'ComposeOptions<InputProps, InputStylesProps, ParentStylesProps>'
+      typeParameters:
+        - id: InputProps
+        - id: InputStylesProps
+        - id: ParentProps
+        - id: ParentStylesProps
