@@ -27,6 +27,7 @@ items:
       - 'office-ui-fabric-react!IPersonaSharedProps#onRenderPersonaCoin:member'
       - 'office-ui-fabric-react!IPersonaSharedProps#optionalText:member'
       - 'office-ui-fabric-react!IPersonaSharedProps#presence:member'
+      - 'office-ui-fabric-react!IPersonaSharedProps#presenceColors:member'
       - 'office-ui-fabric-react!IPersonaSharedProps#presenceTitle:member'
       - 'office-ui-fabric-react!IPersonaSharedProps#primaryText:member'
       - 'office-ui-fabric-react!IPersonaSharedProps#secondaryText:member'
@@ -249,6 +250,36 @@ items:
       return:
         type:
           - 'office-ui-fabric-react!PersonaPresence:enum'
+  - uid: 'office-ui-fabric-react!IPersonaSharedProps#presenceColors:member'
+    summary: The colors to be used for the presence-icon and it's background
+    name: presenceColors
+    fullName: presenceColors
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: |-
+        presenceColors?: {
+                available: string;
+                away: string;
+                busy: string;
+                dnd: string;
+                offline: string;
+                oof: string;
+                background: string;
+            };
+      return:
+        type:
+          - |-
+            {
+                    available: string;
+                    away: string;
+                    busy: string;
+                    dnd: string;
+                    offline: string;
+                    oof: string;
+                    background: string;
+                }
   - uid: 'office-ui-fabric-react!IPersonaSharedProps#presenceTitle:member'
     summary: Presence title to be shown as a tooltip on hover over the presence icon.
     name: presenceTitle
