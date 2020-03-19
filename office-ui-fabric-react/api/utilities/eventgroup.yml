@@ -119,9 +119,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: >-
-        off(target?: any, eventName?: string, callback?: (args?: any) => void, options?: boolean |
-        AddEventListenerOptions): void;
+      content: |-
+        off(target?: any, // tslint:disable-line:no-any
+            eventName?: string, callback?: (args?: any) => void, // tslint:disable-line:no-any
+            options?: boolean | AddEventListenerOptions): void;
       return:
         type:
           - void
@@ -153,9 +154,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: >-
-        on(target: any, eventName: string, callback: (args?: any) => void, options?: boolean | AddEventListenerOptions):
-        void;
+      content: |-
+        on(target: any, // tslint:disable-line:no-any
+            eventName: string, callback: (args?: any) => void, // tslint:disable-line:no-any
+            options?: boolean | AddEventListenerOptions): void;
       return:
         type:
           - void

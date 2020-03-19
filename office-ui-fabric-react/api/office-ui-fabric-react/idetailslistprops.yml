@@ -221,7 +221,7 @@ items:
         type:
           - 'IColumn[]'
   - uid: 'office-ui-fabric-react!IDetailsListProps#compact:member'
-    summary: Boolean value to indicate if the component should render in compact mode. Set to false by default
+    summary: Whether the component should render in compact mode. Set to false by default
     name: compact
     fullName: compact
     langs:
@@ -332,8 +332,8 @@ items:
           - 'IGroupedListProps[''getGroupHeight'']'
   - uid: 'office-ui-fabric-react!IDetailsListProps#getKey:member'
     summary: >-
-      Optional callback to get the item key, to be used in the selection and on render. Must be provided if sorting or
-      filtering is enabled.
+      Callback to get the item key, to be used in the selection and on render. Must be provided if sorting or filtering
+      is enabled.
     name: getKey
     fullName: getKey
     langs:
@@ -345,9 +345,7 @@ items:
         type:
           - '(item: any, index?: number) => string'
   - uid: 'office-ui-fabric-react!IDetailsListProps#getRowAriaDescribedBy:member'
-    summary: >-
-      Optional callback to get the aria-describedby IDs (space separated strings) of the elements that describe the
-      item.
+    summary: Callback to get the aria-describedby IDs (space separated strings) of the elements that describe the item.
     name: getRowAriaDescribedBy
     fullName: getRowAriaDescribedBy
     langs:
@@ -359,7 +357,7 @@ items:
         type:
           - '(item: any) => string'
   - uid: 'office-ui-fabric-react!IDetailsListProps#getRowAriaLabel:member'
-    summary: Optional callback to get the aria-label string for a given item.
+    summary: Callback to get the aria-label string for a given item.
     name: getRowAriaLabel
     fullName: getRowAriaLabel
     langs:
@@ -371,9 +369,7 @@ items:
         type:
           - '(item: any) => string'
   - uid: 'office-ui-fabric-react!IDetailsListProps#groupProps:member'
-    summary: >-
-      Optional override properties to render groups. The definition for IGroupRenderProps can be found under the
-      GroupedList component.
+    summary: Optional override properties to render groups.
     name: groupProps
     fullName: groupProps
     langs:
@@ -495,7 +491,7 @@ items:
   - uid: 'office-ui-fabric-react!IDetailsListProps#onActiveItemChanged:member'
     summary: >-
       Callback for when an item in the list becomes active by clicking anywhere inside the row or navigating to it with
-      keyboard.
+      the keyboard.
     name: onActiveItemChanged
     fullName: onActiveItemChanged
     langs:
@@ -618,7 +614,7 @@ items:
           - IRenderFunction<IDetailsHeaderProps>
   - uid: 'office-ui-fabric-react!IDetailsListProps#onRenderItemColumn:member'
     summary: >-
-      If provided, will be the "default" item column renderer method. This affects cells within the rows; not the rows
+      If provided, will be the "default" item column renderer method. This affects cells within the rows, not the rows
       themselves. If a column definition provides its own onRender method, that will be used instead of this.
     name: onRenderItemColumn
     fullName: onRenderItemColumn
@@ -829,9 +825,7 @@ items:
         type:
           - boolean
   - uid: 'office-ui-fabric-react!IDetailsListProps#usePageCache:member'
-    summary: >-
-      Boolean value to enable render page caching. This is an experimental performance optimization that is off by
-      default.
+    summary: Whether to enable render page caching. This is an experimental performance optimization that is off by default.
     name: usePageCache
     fullName: usePageCache
     langs:

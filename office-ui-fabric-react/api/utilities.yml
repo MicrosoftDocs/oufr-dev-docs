@@ -1017,8 +1017,8 @@ items:
             - boolean
   - uid: '@uifabric/utilities!getFirstTabbable:function(1)'
     summary: >-
-      Gets the first tabbable element. The difference between focusable and tabbable is that tabbable elements are
-      focusable elements that also have tabIndex != -1.
+      Gets the first tabbable element. (The difference between focusable and tabbable is that tabbable elements are
+      focusable elements that also have tabIndex != -1.)
     name: 'getFirstTabbable(rootElement, currentElement, includeElementsInFocusZones, checkNode)'
     fullName: 'getFirstTabbable(rootElement, currentElement, includeElementsInFocusZones, checkNode)'
     langs:
@@ -1164,8 +1164,8 @@ items:
             - boolean
   - uid: '@uifabric/utilities!getLastTabbable:function(1)'
     summary: >-
-      Gets the last tabbable element. The difference between focusable and tabbable is that tabbable elements are
-      focusable elements that also have tabIndex != -1.
+      Gets the last tabbable element. (The difference between focusable and tabbable is that tabbable elements are
+      focusable elements that also have tabIndex != -1.)
     name: 'getLastTabbable(rootElement, currentElement, includeElementsInFocusZones, checkNode)'
     fullName: 'getLastTabbable(rootElement, currentElement, includeElementsInFocusZones, checkNode)'
     langs:
@@ -1833,6 +1833,9 @@ items:
           type:
             - HTMLElement | IVirtualElement
   - uid: '@uifabric/utilities!mapEnumByName:function(1)'
+    summary: >-
+      Takes an enum and iterates over each value of the enum (as a string), running the callback on each, returning a
+      mapped array.
     name: 'mapEnumByName(theEnum, callback)'
     fullName: 'mapEnumByName(theEnum, callback)'
     langs:
@@ -1848,11 +1851,13 @@ items:
         description: ''
       parameters:
         - id: theEnum
-          description: ''
+          description: Enum to iterate over
           type:
             - any
         - id: callback
-          description: ''
+          description: >-
+            The first parameter the name of the entry, and the second parameter is the value of that entry, which is the
+            value you'd normally use when using the enum (usually a number).
           type:
             - '(name?: string, value?: string | number) => T | undefined'
       typeParameters:
@@ -1935,7 +1940,7 @@ items:
         - id: ignoreNullOrUndefinedResult
           description: >-
             Flag to decide whether to cache callback result if it is undefined/null. If the flag is set to true, the
-            callback result is recomputed every time till the callback result is not undefined/null for the first time
+            callback result is recomputed every time till the callback result is not undefined/null for the first time,
             and then the non-undefined/null version gets cached.
           type:
             - boolean
@@ -2300,10 +2305,16 @@ items:
             - string
   - uid: '@uifabric/utilities!setFocusVisibility:function(1)'
     summary: >-
-      Sets the visibility of focus styling. By default, focus styling (the box surrounding a focused Button, for
-      example) only show up when navigational keypresses occur (through Tab, arrows, PgUp/PgDn, Home and End), and are
-      hidden when mouse interactions occur. This API provides an imperative way to turn them on/off. A use case might be
-      when you have a keypress like ctrl-f6 navigate to a particular region on the page, and want focus to show up.
+      Sets the visibility of focus styling.
+
+
+      By default, focus styles (the box surrounding a focused Button, for example) only show up when navigational
+      keypresses occur (through Tab, arrows, PgUp/PgDn, Home and End), and are hidden when mouse interactions occur.
+      This API provides an imperative way to turn them on/off.
+
+
+      A use case might be when you have a keypress like ctrl-f6 navigate to a particular region on the page, and want
+      focus to show up.
     name: 'setFocusVisibility(enabled, target)'
     fullName: 'setFocusVisibility(enabled, target)'
     langs:
