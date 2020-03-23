@@ -58,7 +58,7 @@ The Add-ins design toolkit provides layouts for interface elements and commonly 
 Get started with React and learn how to build your first projects.
 
 - [Get started with Fabric React](https://developer.microsoft.com/en-us/fabric#/get-started)
-- [Fabric React tutorial](https://github.com/OfficeDev/office-ui-fabric-react/wiki/Getting-Started-with-UI-Fabric)
+- [Fabric React tutorial](https://github.com/microsoft/fluentui/wiki/Getting-Started-with-UI-Fabric)
 
 ### Documentation
 
@@ -95,9 +95,9 @@ Reference these step-by-step processes for contributing to UI Fabric.
 
 ### Fabric for web
 
-- [Implement a Fabric React control](https://github.com/OfficeDev/office-ui-fabric-react/wiki/New-Components)
-- [Give feedback on a control by filing an issue on GitHub](https://github.com/OfficeDev/office-ui-fabric-react/wiki/Reporting-Issues)
-- [View current GitHub issues for all Fabric React controls](https://github.com/OfficeDev/office-ui-fabric-react/issues)
+- [Implement a Fabric React control](https://github.com/microsoft/fluentui/wiki/New-Components)
+- [Give feedback on a control by filing an issue on GitHub](https://github.com/microsoft/fluentui/wiki/Reporting-Issues)
+- [View current GitHub issues for all Fabric React controls](https://github.com/microsoft/fluentui/issues)
 
 ### Fabric for iOS
 

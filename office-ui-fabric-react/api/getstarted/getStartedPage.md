@@ -4,7 +4,7 @@ author: Vitalius1
 ms.author: vibraga
 ---
 
-# Get Started with Fabric React v7.105.1
+# Get Started with Fabric React v7.105.2
 
 :tada: The **Office UI Fabric React** project is evolving to **Fluent UI**. :tada:
 
@@ -17,7 +17,7 @@ UI Fabric for the web is available in two flavors: Fabric React and Fabric Core.
 <!-- manually creating h3 to avoid duplicate auto-generated IDs -->
 <h3 class="fabric-react-overview">Fabric React</h3>
 
-Fabric React is the official [open-source](https://github.com/OfficeDev/office-ui-fabric-react) React front-end framework designed to build experiences that fit seamlessly into a broad range of Microsoft products. It provides robust, up-to-date, accessible components which are highly customizable using CSS-in-JS. [Get started with Fabric React](#fabric-react)
+Fabric React is the official [open-source](https://github.com/microsoft/fluentui) React front-end framework designed to build experiences that fit seamlessly into a broad range of Microsoft products. It provides robust, up-to-date, accessible components which are highly customizable using CSS-in-JS. [Get started with Fabric React](#fabric-react)
 
 <h3 class="fabric-core-overview">Fabric Core</h3>
 
@@ -129,7 +129,7 @@ For more detailed tutorials about developing and testing Fabric React apps, see 
 
 ### Fabric React wiki
 
-The [Fabric React wiki](https://github.com/OfficeDev/office-ui-fabric-react/wiki) has information about advanced usage, building and contributing to Fabric React, and more.
+The [Fabric React wiki](https://github.com/microsoft/fluentui/wiki) has information about advanced usage, building and contributing to Fabric React, and more.
 
 ### Styling and theming
 
@@ -138,8 +138,8 @@ Fabric React components are highly customizable using CSS-in-JS. We also support
 For an overview of styling and theming approaches in Fabric, see [this page](https://github.com/Microsoft/frontend-bootcamp/tree/master/step2-03/demo). Then check out the links below for more details:
 
 - [Theme designer](https://aka.ms/themedesigner)
-- [Customizing CSS-in-JS styled components](https://github.com/OfficeDev/office-ui-fabric-react/wiki/Component-Styling)
-- [Theming deep dive](https://github.com/OfficeDev/office-ui-fabric-react/wiki/Theming)
+- [Customizing CSS-in-JS styled components](https://github.com/microsoft/fluentui/wiki/Component-Styling)
+- [Theming deep dive](https://github.com/microsoft/fluentui/wiki/Theming)
 
 
 
