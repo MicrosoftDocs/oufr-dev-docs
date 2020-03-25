@@ -5,7 +5,7 @@ ms.author: vibraga
 ---
 
 ## Overview
-Fabric is an open source project that celebrates internal and external contributions. Learn about how to get started designing and developing your experience.
+Fluent UI is an open source project that celebrates internal and external contributions. Learn about how to get started designing and developing your experience.
 
 
 
@@ -40,7 +40,7 @@ The Add-ins design toolkit provides layouts for interface elements and commonly 
 ### Fonts
 
 - [iOS font](https://developer.apple.com/fonts/)
-- [Segoe UI and Fabric MDL2 external icon font](https://aka.ms/WebFluentFonts)
+- [Segoe UI and Fluent UI MDL2 external icon font](https://aka.ms/WebFluentFonts)
 - [Android font](https://fonts.google.com/specimen/Roboto)
 
 ### Native OS Platforms
@@ -57,8 +57,8 @@ The Add-ins design toolkit provides layouts for interface elements and commonly 
 
 Get started with React and learn how to build your first projects.
 
-- [Get started with Fabric React](https://developer.microsoft.com/en-us/fabric#/get-started)
-- [Fabric React tutorial](https://github.com/microsoft/fluentui/wiki/Getting-Started-with-UI-Fabric)
+- [Get started with Fluent UI React](https://developer.microsoft.com/en-us/fabric#/get-started)
+- [Fluent UI React tutorial](https://github.com/microsoft/fluentui/wiki/Getting-Started-with-UI-Fabric)
 
 ### Documentation
 
@@ -68,41 +68,41 @@ In addition to the API documentation and control examples found in the [Controls
 
 ### Release notes and demos
 
-View Fabric React's versioned release notes and component demos.
+View Fluent UI React's versioned release notes and component demos.
 
-- [Release notes and demos](https://aka.ms/FabricDemo)
+- [Release notes and demos](https://aka.ms/fluentdemo)
 
 <h3 id="sharepoint-framework-dev">SharePoint Framework</h3>
 
-SharePoint uses Fabric, so if you’re building on top of or within a SharePoint experience, you can be sure that your UI will blend in.
+SharePoint uses Fluent UI, so if you’re building on top of or within a SharePoint experience, you can be sure that your UI will blend in.
 
 - [SharePoint Framework overview](https://aka.ms/spfx)
-- [Use Fabric components in web parts](https://aka.ms/spfx-fabric-react)
+- [Use Fluent UI React components in web parts](https://aka.ms/spfx-fabric-react)
 - [Theme Designer](https://aka.ms/themedesigner)
 - [Get started with building client-side web parts](https://aka.ms/spfx-tutorials)
 
 <h3 id="office-add-ins-dev">Office Add-ins</h3>
 
-Fabric is the official UI toolkit for creating Office Add-ins. Check out some of these resources to learn more about how to use Fabric in your next Add-in.
+Fluent UI is the official UI toolkit for creating Office Add-ins. Check out some of these resources to learn more about how to use Fluent UI in your next Add-in.
 
 - [Add-ins overview](http://dev.office.com/docs/add-ins/overview/office-add-ins)
-- [Using Fabric in your Add-ins](http://dev.office.com/docs/add-ins/design/add-in-design)
+- [Using Fluent UI React in your Add-ins](http://dev.office.com/docs/add-ins/design/add-in-design)
 
 
 
 ## Contribution process
-Reference these step-by-step processes for contributing to UI Fabric.
+Reference these step-by-step processes for contributing to Fluent UI.
 
-### Fabric for web
+### Fluent UI React
 
-- [Implement a Fabric React control](https://github.com/microsoft/fluentui/wiki/New-Components)
+- [Implement a Fluent UI React control](https://github.com/microsoft/fluentui/wiki/New-Components)
 - [Give feedback on a control by filing an issue on GitHub](https://github.com/microsoft/fluentui/wiki/Reporting-Issues)
-- [View current GitHub issues for all Fabric React controls](https://github.com/microsoft/fluentui/issues)
+- [View current GitHub issues for all Fluent UI React controls](https://github.com/microsoft/fluentui/issues)
 
-### Fabric for iOS
+### Fluent UI iOS
 
 [Give feedback on a control by filing an issue on GitHub](https://github.com/OfficeDev/ui-fabric-ios/issues)
 
-### Fabric for Android
+### Fluent UI Android
 
 [Give feedback on a control by filing an issue on GitHub](https://github.com/OfficeDev/ui-fabric-android/issues)
