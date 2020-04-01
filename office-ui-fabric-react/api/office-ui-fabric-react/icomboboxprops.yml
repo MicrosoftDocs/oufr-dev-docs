@@ -295,7 +295,10 @@ items:
         type:
           - () => void
   - uid: 'office-ui-fabric-react!IComboBoxProps#onPendingValueChanged:member'
-    summary: Callback issued when the user changes the pending value in ComboBox
+    summary: >-
+      Callback issued when the user changes the pending value in ComboBox. This will be called any time the component is
+      updated and there is a current pending value. Option, index, and value will all be undefined if no change has
+      taken place and the previously entered pending value is still valid.
     name: onPendingValueChanged
     fullName: onPendingValueChanged
     langs:
