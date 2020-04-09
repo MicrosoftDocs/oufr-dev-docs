@@ -27,6 +27,8 @@ items:
       - 'office-ui-fabric-react!IListProps#onPagesUpdated:member'
       - 'office-ui-fabric-react!IListProps#onRenderCell:member'
       - 'office-ui-fabric-react!IListProps#onRenderPage:member'
+      - 'office-ui-fabric-react!IListProps#onRenderRoot:member'
+      - 'office-ui-fabric-react!IListProps#onRenderSurface:member'
       - 'office-ui-fabric-react!IListProps#onShouldVirtualize:member'
       - 'office-ui-fabric-react!IListProps#renderCount:member'
       - 'office-ui-fabric-react!IListProps#renderedWindowsAhead:member'
@@ -216,10 +218,38 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'onRenderPage?: (pageProps: IPageProps<T>, defaultRender?: IRenderFunction<IPageProps<T>>) => React.ReactNode;'
+      content: 'onRenderPage?: IRenderFunction<IPageProps<T>>;'
       return:
         type:
-          - '(pageProps: IPageProps<T>, defaultRender?: IRenderFunction<IPageProps<T>>) => React.ReactNode'
+          - IRenderFunction<IPageProps<T>>
+  - uid: 'office-ui-fabric-react!IListProps#onRenderRoot:member'
+    summary: >-
+      Render override for the element at the root of the `List`<!-- -->. Use this to apply some final attributes or
+      structure to the content each time the list is updated with new active pages or items.
+    name: onRenderRoot
+    fullName: onRenderRoot
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onRenderRoot?: IRenderFunction<IListOnRenderRootProps<T>>;'
+      return:
+        type:
+          - IRenderFunction<IListOnRenderRootProps<T>>
+  - uid: 'office-ui-fabric-react!IListProps#onRenderSurface:member'
+    summary: >-
+      Render override for the element representing the surface of the `List`<!-- -->. Use this to alter the structure of
+      the rendered content if necessary on each update.
+    name: onRenderSurface
+    fullName: onRenderSurface
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onRenderSurface?: IRenderFunction<IListOnRenderSurfaceProps<T>>;'
+      return:
+        type:
+          - IRenderFunction<IListOnRenderSurfaceProps<T>>
   - uid: 'office-ui-fabric-react!IListProps#onShouldVirtualize:member'
     summary: >-
       Optional callback to determine whether the list should be rendered in full, or virtualized. Virtualization will

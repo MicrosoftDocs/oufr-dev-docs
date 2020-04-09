@@ -10,6 +10,7 @@ items:
     children:
       - 'office-ui-fabric-react!IColorPickerProps#alphaLabel:member'
       - 'office-ui-fabric-react!IColorPickerProps#alphaSliderHidden:member'
+      - 'office-ui-fabric-react!IColorPickerProps#alphaType:member'
       - 'office-ui-fabric-react!IColorPickerProps#blueLabel:member'
       - 'office-ui-fabric-react!IColorPickerProps#className:member'
       - 'office-ui-fabric-react!IColorPickerProps#color:member'
@@ -37,7 +38,9 @@ items:
         type:
           - string
   - uid: 'office-ui-fabric-react!IColorPickerProps#alphaSliderHidden:member'
-    summary: Whether to hide the alpha control slider.
+    summary: Whether to hide the alpha (or transparency) slider and text field.
+    deprecated:
+      content: 'Use `alphaType: ''none''`'
     name: alphaSliderHidden
     fullName: alphaSliderHidden
     langs:
@@ -48,6 +51,24 @@ items:
       return:
         type:
           - boolean
+  - uid: 'office-ui-fabric-react!IColorPickerProps#alphaType:member'
+    summary: >-
+      `alpha` (the default) means display a slider and text field for editing alpha values. `transparency` also displays
+      a slider and text field but for editing transparency values. `none` hides these controls.
+
+
+      Alpha represents the opacity of the color, whereas transparency represents the transparentness of the color: i.e.
+      a 30% transparent color has 70% opaqueness.
+    name: alphaType
+    fullName: alphaType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'alphaType?: ''alpha'' | ''transparency'' | ''none'';'
+      return:
+        type:
+          - '''alpha'' | ''transparency'' | ''none'''
   - uid: 'office-ui-fabric-react!IColorPickerProps#blueLabel:member'
     summary: Label for the blue text field.
     deprecated:

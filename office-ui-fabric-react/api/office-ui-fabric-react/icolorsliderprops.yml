@@ -20,6 +20,7 @@ items:
       - 'office-ui-fabric-react!IColorSliderProps#styles:member'
       - 'office-ui-fabric-react!IColorSliderProps#theme:member'
       - 'office-ui-fabric-react!IColorSliderProps#thumbColor:member'
+      - 'office-ui-fabric-react!IColorSliderProps#type:member'
       - 'office-ui-fabric-react!IColorSliderProps#value:member'
   - uid: 'office-ui-fabric-react!IColorSliderProps#ariaLabel:member'
     summary: Label of the ColorSlider for the benefit of screen reader users.
@@ -61,6 +62,8 @@ items:
     summary: >-
       If true, the slider represents an alpha slider and will display a gray checkered pattern in the background.
       Otherwise, the slider represents a hue slider.
+    deprecated:
+      content: Use `type`
     name: isAlpha
     fullName: isAlpha
     langs:
@@ -73,6 +76,8 @@ items:
           - boolean
   - uid: 'office-ui-fabric-react!IColorSliderProps#maxValue:member'
     summary: Maximum value of the slider.
+    deprecated:
+      content: 'Will be 100 for alpha or transparency sliders, or 359 for hue sliders.'
     name: maxValue
     fullName: maxValue
     langs:
@@ -85,6 +90,8 @@ items:
           - number
   - uid: 'office-ui-fabric-react!IColorSliderProps#minValue:member'
     summary: Minimum value of the slider.
+    deprecated:
+      content: Will always be 0
     name: minValue
     fullName: minValue
     langs:
@@ -108,7 +115,7 @@ items:
         type:
           - '(event: React.MouseEvent | React.KeyboardEvent, newValue?: number) => void'
   - uid: 'office-ui-fabric-react!IColorSliderProps#overlayColor:member'
-    summary: Hex color to use when rendering an alpha slider's overlay.
+    summary: 'Hex color to use when rendering an alpha or transparency slider''s overlay, \*without\* the `#`<!-- -->.'
     name: overlayColor
     fullName: overlayColor
     langs:
@@ -171,6 +178,18 @@ items:
       return:
         type:
           - string
+  - uid: 'office-ui-fabric-react!IColorSliderProps#type:member'
+    summary: Type of slider to display.
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type?: ''hue'' | ''alpha'' | ''transparency'';'
+      return:
+        type:
+          - '''hue'' | ''alpha'' | ''transparency'''
   - uid: 'office-ui-fabric-react!IColorSliderProps#value:member'
     summary: Current value of the slider.
     name: value

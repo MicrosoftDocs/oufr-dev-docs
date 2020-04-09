@@ -177,7 +177,6 @@ items:
       - 'office-ui-fabric-react!IColorPickerProps:interface'
       - 'office-ui-fabric-react!IColorPickerState:interface'
       - 'office-ui-fabric-react!IColorPickerStrings:interface'
-      - 'office-ui-fabric-react!IColorPickerStyleProps:interface'
       - 'office-ui-fabric-react!IColorPickerStyles:interface'
       - 'office-ui-fabric-react!IColorRectangle:interface'
       - 'office-ui-fabric-react!IColorRectangleProps:interface'
@@ -412,6 +411,8 @@ items:
       - 'office-ui-fabric-react!ILinkStyleProps:interface'
       - 'office-ui-fabric-react!ILinkStyles:interface'
       - 'office-ui-fabric-react!IList:interface'
+      - 'office-ui-fabric-react!IListOnRenderRootProps:interface'
+      - 'office-ui-fabric-react!IListOnRenderSurfaceProps:interface'
       - 'office-ui-fabric-react!IListProps:interface'
       - 'office-ui-fabric-react!IListState:interface'
       - 'office-ui-fabric-react!ImageBase:class'
@@ -723,6 +724,7 @@ items:
       - 'office-ui-fabric-react!updateH:function(1)'
       - 'office-ui-fabric-react!updateRGB:function(1)'
       - 'office-ui-fabric-react!updateSV:function(1)'
+      - 'office-ui-fabric-react!updateT:function(1)'
       - 'office-ui-fabric-react!ValidationState:enum'
       - 'office-ui-fabric-react!VirtualizedComboBox:class'
   - uid: 'office-ui-fabric-react!buildColumns:function(1)'
@@ -1521,6 +1523,30 @@ items:
           description: ''
           type:
             - number
+  - uid: 'office-ui-fabric-react!updateT:function(1)'
+    summary: >-
+      Gets a color with the given transparency value and the same other components as `color`<!-- -->. Does not modify
+      the original color.
+    name: 'updateT(color, t)'
+    fullName: 'updateT(color, t)'
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export declare function updateT(color: IColor, t: number): IColor;'
+      return:
+        type:
+          - 'office-ui-fabric-react!IColor:interface'
+        description: ''
+      parameters:
+        - id: color
+          description: ''
+          type:
+            - 'office-ui-fabric-react!IColor:interface'
+        - id: t
+          description: ''
+          type:
+            - number
 references:
   - uid: 'office-ui-fabric-react!ActionButton:class'
     name: ActionButton
@@ -1814,8 +1840,6 @@ references:
     name: IColorPickerState
   - uid: 'office-ui-fabric-react!IColorPickerStrings:interface'
     name: IColorPickerStrings
-  - uid: 'office-ui-fabric-react!IColorPickerStyleProps:interface'
-    name: IColorPickerStyleProps
   - uid: 'office-ui-fabric-react!IColorPickerStyles:interface'
     name: IColorPickerStyles
   - uid: 'office-ui-fabric-react!IColorRectangle:interface'
@@ -2284,6 +2308,10 @@ references:
     name: ILinkStyles
   - uid: 'office-ui-fabric-react!IList:interface'
     name: IList
+  - uid: 'office-ui-fabric-react!IListOnRenderRootProps:interface'
+    name: IListOnRenderRootProps
+  - uid: 'office-ui-fabric-react!IListOnRenderSurfaceProps:interface'
+    name: IListOnRenderSurfaceProps
   - uid: 'office-ui-fabric-react!IListProps:interface'
     name: IListProps
   - uid: 'office-ui-fabric-react!IListState:interface'
