@@ -11,6 +11,7 @@ items:
       - 'office-ui-fabric-react!IColorPickerState#color:member'
       - 'office-ui-fabric-react!IColorPickerState#editingColor:member'
   - uid: 'office-ui-fabric-react!IColorPickerState#color:member'
+    summary: Most recently selected color
     name: color
     fullName: color
     langs:
@@ -22,6 +23,7 @@ items:
         type:
           - 'office-ui-fabric-react!IColor:interface'
   - uid: 'office-ui-fabric-react!IColorPickerState#editingColor:member'
+    summary: Color component currently being edited via a text field (if intermediate value is invalid)
     name: editingColor
     fullName: editingColor
     langs:
@@ -30,13 +32,13 @@ items:
     syntax:
       content: |-
         editingColor?: {
-                component: keyof IRGBHex;
+                component: ColorComponent;
                 value: string;
             };
       return:
         type:
           - |-
             {
-                    component: keyof IRGBHex;
+                    component: ColorComponent;
                     value: string;
                 }
