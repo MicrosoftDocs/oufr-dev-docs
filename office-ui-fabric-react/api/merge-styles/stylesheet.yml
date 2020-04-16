@@ -16,6 +16,7 @@ items:
       - '@uifabric/merge-styles!Stylesheet#cacheClassName:member(1)'
       - '@uifabric/merge-styles!Stylesheet#classNameFromKey:member(1)'
       - '@uifabric/merge-styles!Stylesheet#getClassName:member(1)'
+      - '@uifabric/merge-styles!Stylesheet#getClassNameCache:member(1)'
       - '@uifabric/merge-styles!Stylesheet.getInstance:member(1)'
       - '@uifabric/merge-styles!Stylesheet#getRules:member(1)'
       - '@uifabric/merge-styles!Stylesheet#insertedRulesFromClassName:member(1)'
@@ -122,6 +123,25 @@ items:
           description: Optional value to use as a prefix.
           type:
             - string
+  - uid: '@uifabric/merge-styles!Stylesheet#getClassNameCache:member(1)'
+    summary: Gets all classnames cache with the stylesheet.
+    name: getClassNameCache()
+    fullName: getClassNameCache()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        getClassNameCache(): {
+                [key: string]: string;
+            };
+      return:
+        type:
+          - |-
+            {
+                    [key: string]: string;
+                }
+        description: ''
   - uid: '@uifabric/merge-styles!Stylesheet.getInstance:member(1)'
     summary: Gets the singleton instance.
     name: getInstance()

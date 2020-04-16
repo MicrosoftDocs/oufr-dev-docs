@@ -31,9 +31,10 @@ items:
       - '@fluentui/react-focus!IFocusZoneProps#onBeforeFocus:member'
       - '@fluentui/react-focus!IFocusZoneProps#onFocusNotification:member'
       - '@fluentui/react-focus!IFocusZoneProps#rootProps:member'
+      - '@fluentui/react-focus!IFocusZoneProps#shouldFocusOnMount:member'
       - '@fluentui/react-focus!IFocusZoneProps#shouldInputLoseFocusOnArrowKey:member'
   - uid: '@fluentui/react-focus!IFocusZoneProps#allowFocusRoot:member'
-    summary: Allow focus to move to root
+    summary: Allows focus to park on root when focus is in the `FocusZone` at render time.
     name: allowFocusRoot
     fullName: allowFocusRoot
     langs:
@@ -298,6 +299,18 @@ items:
       return:
         type:
           - React.HTMLAttributes<HTMLDivElement>
+  - uid: '@fluentui/react-focus!IFocusZoneProps#shouldFocusOnMount:member'
+    summary: Determines if a default tabbable element should be force focused on FocusZone mount.  false
+    name: shouldFocusOnMount
+    fullName: shouldFocusOnMount
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'shouldFocusOnMount?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: '@fluentui/react-focus!IFocusZoneProps#shouldInputLoseFocusOnArrowKey:member'
     summary: A callback method to determine if the input element should lose focus on arrow keys
     name: shouldInputLoseFocusOnArrowKey

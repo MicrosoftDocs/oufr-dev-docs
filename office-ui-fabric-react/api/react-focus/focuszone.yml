@@ -19,6 +19,7 @@ items:
       - '@fluentui/react-focus!FocusZone.defaultProps:member'
       - '@fluentui/react-focus!FocusZone#focus:member(1)'
       - '@fluentui/react-focus!FocusZone#focusElement:member(1)'
+      - '@fluentui/react-focus!FocusZone#focusLast:member(1)'
       - '@fluentui/react-focus!FocusZone.getOuterZones:member(1)'
       - '@fluentui/react-focus!FocusZone#render:member(1)'
       - '@fluentui/react-focus!FocusZone#setFocusAlignment:member(1)'
@@ -121,6 +122,19 @@ items:
           description: The child element within the zone to focus.
           type:
             - HTMLElement
+  - uid: '@fluentui/react-focus!FocusZone#focusLast:member(1)'
+    summary: Sets focus to the last tabbable item in the zone.
+    name: focusLast()
+    fullName: focusLast()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'focusLast(): boolean;'
+      return:
+        type:
+          - boolean
+        description: 'True if focus could be set to an active element, false if no operation was taken.'
   - uid: '@fluentui/react-focus!FocusZone.getOuterZones:member(1)'
     summary: Used for testing purposes only.
     name: getOuterZones()
