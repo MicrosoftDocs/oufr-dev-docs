@@ -2095,8 +2095,8 @@ items:
     type: function
     syntax:
       content: >-
-        export declare function on(element: Element | Window, eventName: string, callback: (ev: Event) => void,
-        options?: boolean): () => void;
+        export declare function on(element: Element | Window, eventName: string, callback: (ev: Event |
+        React.SyntheticEvent<Element, Event>) => void, options?: boolean): () => void;
       return:
         type:
           - () => void
@@ -2113,7 +2113,7 @@ items:
         - id: callback
           description: ''
           type:
-            - '(ev: Event) => void'
+            - '(ev: Event | React.SyntheticEvent<Element, Event>) => void'
         - id: options
           description: ''
           type:

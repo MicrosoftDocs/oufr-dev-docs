@@ -9,12 +9,31 @@ items:
     type: interface
     package: '@uifabric/merge-styles!'
     children:
+      - '@uifabric/merge-styles!IStyleSheetConfig#classNameCache:member'
       - '@uifabric/merge-styles!IStyleSheetConfig#cspSettings:member'
       - '@uifabric/merge-styles!IStyleSheetConfig#defaultPrefix:member'
       - '@uifabric/merge-styles!IStyleSheetConfig#injectionMode:member'
       - '@uifabric/merge-styles!IStyleSheetConfig#namespace:member'
       - '@uifabric/merge-styles!IStyleSheetConfig#onInsertRule:member'
       - '@uifabric/merge-styles!IStyleSheetConfig#rtl:member'
+  - uid: '@uifabric/merge-styles!IStyleSheetConfig#classNameCache:member'
+    summary: Initial value for classnames cache. Key is serialized css rules associated with a classname.
+    name: classNameCache
+    fullName: classNameCache
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: |-
+        classNameCache?: {
+                [key: string]: string;
+            };
+      return:
+        type:
+          - |-
+            {
+                    [key: string]: string;
+                }
   - uid: '@uifabric/merge-styles!IStyleSheetConfig#cspSettings:member'
     summary: CSP settings
     name: cspSettings

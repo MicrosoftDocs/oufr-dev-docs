@@ -22,15 +22,18 @@ items:
       - 'office-ui-fabric-react!IPanelStyles#overlay:member'
       - 'office-ui-fabric-react!IPanelStyles#root:member'
       - 'office-ui-fabric-react!IPanelStyles#scrollableContent:member'
+      - 'office-ui-fabric-react!IPanelStyles#subComponentStyles:member'
   - uid: 'office-ui-fabric-react!IPanelStyles#closeButton:member'
     summary: Style for the close button IconButton element.
+    deprecated:
+      content: Use `subComponentStyles.closeButton` instead.
     name: closeButton
     fullName: closeButton
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'closeButton: IStyle;'
+      content: 'closeButton?: IStyle;'
       return:
         type:
           - IStyle
@@ -190,3 +193,15 @@ items:
       return:
         type:
           - IStyle
+  - uid: 'office-ui-fabric-react!IPanelStyles#subComponentStyles:member'
+    summary: Styling for subcomponents.
+    name: subComponentStyles
+    fullName: subComponentStyles
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'subComponentStyles: IPanelSubComponentStyles;'
+      return:
+        type:
+          - 'office-ui-fabric-react!IPanelSubComponentStyles:interface'

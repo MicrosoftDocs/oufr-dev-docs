@@ -11,6 +11,7 @@ items:
     children:
       - '@fluentui/react-focus!IFocusZone#focus:member(1)'
       - '@fluentui/react-focus!IFocusZone#focusElement:member(1)'
+      - '@fluentui/react-focus!IFocusZone#focusLast:member(1)'
       - '@fluentui/react-focus!IFocusZone#setFocusAlignment:member(1)'
   - uid: '@fluentui/react-focus!IFocusZone#focus:member(1)'
     summary: Sets focus to the first tabbable item in the zone.
@@ -50,6 +51,19 @@ items:
           description: ''
           type:
             - HTMLElement
+  - uid: '@fluentui/react-focus!IFocusZone#focusLast:member(1)'
+    summary: Sets focus to the last tabbable item in the zone.
+    name: focusLast()
+    fullName: focusLast()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'focusLast(): boolean;'
+      return:
+        type:
+          - boolean
+        description: 'True if focus could be set to an active element, false if no operation was taken.'
   - uid: '@fluentui/react-focus!IFocusZone#setFocusAlignment:member(1)'
     summary: >-
       Forces horizontal alignment in the context of vertical arrowing to use specific point as the reference, rather
