@@ -234,6 +234,7 @@ items:
       - '@uifabric/merge-styles!IRawStyleBase#textOverlineWidth:member'
       - '@uifabric/merge-styles!IRawStyleBase#textRendering:member'
       - '@uifabric/merge-styles!IRawStyleBase#textShadow:member'
+      - '@uifabric/merge-styles!IRawStyleBase#textSizeAdjust:member'
       - '@uifabric/merge-styles!IRawStyleBase#textTransform:member'
       - '@uifabric/merge-styles!IRawStyleBase#textUnderlinePosition:member'
       - '@uifabric/merge-styles!IRawStyleBase#textUnderlineStyle:member'
@@ -266,6 +267,7 @@ items:
       - '@uifabric/merge-styles!IRawStyleBase#WebkitFontSmoothing:member'
       - '@uifabric/merge-styles!IRawStyleBase#WebkitOverflowScrolling:member'
       - '@uifabric/merge-styles!IRawStyleBase#WebkitTapHighlightColor:member'
+      - '@uifabric/merge-styles!IRawStyleBase#WebkitTextSizeAdjust:member'
       - '@uifabric/merge-styles!IRawStyleBase#whiteSpace:member'
       - '@uifabric/merge-styles!IRawStyleBase#widows:member'
       - '@uifabric/merge-styles!IRawStyleBase#width:member'
@@ -3385,6 +3387,20 @@ items:
       return:
         type:
           - ICSSRule | string
+  - uid: '@uifabric/merge-styles!IRawStyleBase#textSizeAdjust:member'
+    summary: >-
+      The text-size-adjust CSS property controls the text inflation algorithm used on some smartphones and tablets.
+      Other browsers will ignore this property.
+    name: textSizeAdjust
+    fullName: textSizeAdjust
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'textSizeAdjust?: ''none'' | ''auto'' | ICSSPercentageRule | ICSSRule;'
+      return:
+        type:
+          - '''none'' | ''auto'' | ICSSPercentageRule | ICSSRule'
   - uid: '@uifabric/merge-styles!IRawStyleBase#textTransform:member'
     summary: This property transforms text for styling purposes. (It has no effect on the underlying content.)
     name: textTransform
@@ -3809,6 +3825,20 @@ items:
       return:
         type:
           - string
+  - uid: '@uifabric/merge-styles!IRawStyleBase#WebkitTextSizeAdjust:member'
+    summary: >-
+      (Webkit specific) controls the text inflation algorithm used on some smartphones and tablets. Other browsers will
+      ignore this property.
+    name: WebkitTextSizeAdjust
+    fullName: WebkitTextSizeAdjust
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'WebkitTextSizeAdjust?: ''none'' | ''auto'' | ICSSPercentageRule | ICSSRule;'
+      return:
+        type:
+          - '''none'' | ''auto'' | ICSSPercentageRule | ICSSRule'
   - uid: '@uifabric/merge-styles!IRawStyleBase#whiteSpace:member'
     summary: >-
       The white-space property controls whether and how white space inside the element is collapsed, and whether lines
