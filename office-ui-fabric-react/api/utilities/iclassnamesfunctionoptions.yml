@@ -8,7 +8,20 @@ items:
     type: interface
     package: '@uifabric/utilities!'
     children:
+      - '@uifabric/utilities!IClassNamesFunctionOptions#cacheSize:member'
       - '@uifabric/utilities!IClassNamesFunctionOptions#disableCaching:member'
+  - uid: '@uifabric/utilities!IClassNamesFunctionOptions#cacheSize:member'
+    summary: Size of the cache. It overwrites default cache size when defined.
+    name: cacheSize
+    fullName: cacheSize
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'cacheSize?: number;'
+      return:
+        type:
+          - number
   - uid: '@uifabric/utilities!IClassNamesFunctionOptions#disableCaching:member'
     summary: Disables class caching for scenarios where styleProp parts mutate frequently.
     name: disableCaching
