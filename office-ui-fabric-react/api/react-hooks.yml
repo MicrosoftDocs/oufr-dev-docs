@@ -11,7 +11,10 @@ items:
       - '@uifabric/react-hooks!useBoolean:function(1)'
       - '@uifabric/react-hooks!useConst:function(1)'
       - '@uifabric/react-hooks!useConstCallback:function(1)'
+      - '@uifabric/react-hooks!useControllableValue:function(1)'
+      - '@uifabric/react-hooks!useControllableValue:function(2)'
       - '@uifabric/react-hooks!useId:function(1)'
+      - '@uifabric/react-hooks!useMergedRefs:function(1)'
   - uid: '@uifabric/react-hooks!useBoolean:function(1)'
     summary: >-
       Hook to store a value and generate callbacks for setting the value to true or false. The identity of the `setTrue`
@@ -90,15 +93,88 @@ items:
         - id: T
           type:
             - '(...args: any[]) => any'
-  - uid: '@uifabric/react-hooks!useId:function(1)'
-    summary: Hook to generate a unique ID in the global scope (spanning across duplicate copies of the same library).
-    name: useId(prefix)
-    fullName: useId(prefix)
+  - uid: '@uifabric/react-hooks!useControllableValue:function(1)'
+    summary: >-
+      Hook to manage a value that could be either controlled or uncontrolled, such as a checked state or text box
+      string.
+    name: 'useControllableValue(controlledValue, defaultUncontrolledValue)'
+    fullName: 'useControllableValue(controlledValue, defaultUncontrolledValue)'
     langs:
       - typeScript
     type: function
     syntax:
-      content: 'export declare function useId(prefix?: string): string;'
+      content: >-
+        export declare function useControllableValue<TValue, TElement extends HTMLElement>(controlledValue: TValue |
+        undefined, defaultUncontrolledValue: TValue | undefined): Readonly<[TValue | undefined, (newValue: TValue |
+        undefined) => void]>;
+      return:
+        type:
+          - 'Readonly<[TValue | undefined, (newValue: TValue | undefined) => void]>'
+        description: ''
+      parameters:
+        - id: controlledValue
+          description: >-
+            The controlled value passed in the props. This value will always be used if provided, and the internal state
+            will be updated to reflect it.
+          type:
+            - TValue | undefined
+        - id: defaultUncontrolledValue
+          description: >-
+            Initial value for the internal state in the uncontrolled case. 
+            https://reactjs.org/docs/uncontrolled-components.html
+          type:
+            - TValue | undefined
+      typeParameters:
+        - id: TValue
+        - id: TElement
+          type:
+            - HTMLElement
+  - uid: '@uifabric/react-hooks!useControllableValue:function(2)'
+    name: 'useControllableValue(controlledValue, defaultUncontrolledValue, onChange)'
+    fullName: 'useControllableValue(controlledValue, defaultUncontrolledValue, onChange)'
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: >-
+        export declare function useControllableValue<TValue, TElement extends HTMLElement, TCallback extends
+        ChangeCallback<TElement, TValue> | undefined>(controlledValue: TValue | undefined, defaultUncontrolledValue:
+        TValue | undefined, onChange: TCallback): Readonly<[TValue | undefined, (newValue: TValue | undefined, ev?:
+        React.FormEvent<TElement>) => void]>;
+      return:
+        type:
+          - 'Readonly<[TValue | undefined, (newValue: TValue | undefined, ev?: React.FormEvent<TElement>) => void]>'
+        description: ''
+      parameters:
+        - id: controlledValue
+          description: ''
+          type:
+            - TValue | undefined
+        - id: defaultUncontrolledValue
+          description: ''
+          type:
+            - TValue | undefined
+        - id: onChange
+          description: ''
+          type:
+            - TCallback
+      typeParameters:
+        - id: TValue
+        - id: TElement
+          type:
+            - HTMLElement
+        - id: TCallback
+          type:
+            - 'ChangeCallback<TElement, TValue> | undefined'
+  - uid: '@uifabric/react-hooks!useId:function(1)'
+    summary: Hook to generate a unique ID in the global scope (spanning across duplicate copies of the same library).
+    name: 'useId(prefix, providedId)'
+    fullName: 'useId(prefix, providedId)'
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export declare function useId(prefix?: string, providedId?: string): string;'
       return:
         type:
           - string
@@ -108,6 +184,34 @@ items:
           description: Optional prefix for the ID
           type:
             - string
+        - id: providedId
+          description: >-
+            Optional id provided by a parent component. Defaults to the provided value if present, without conditioning
+            the hook call
+          type:
+            - string
+  - uid: '@uifabric/react-hooks!useMergedRefs:function(1)'
+    summary: >-
+      React hook to merge multiple React refs (either MutableRefObjects or ref callbacks) into a single ref callback
+      that updates all provided refs
+    name: useMergedRefs(refs)
+    fullName: useMergedRefs(refs)
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export declare function useMergedRefs<T>(...refs: React.Ref<T>[]): (instance: T) => void;'
+      return:
+        type:
+          - '(instance: T) => void'
+        description: ''
+      parameters:
+        - id: refs
+          description: Refs to collectively update with one ref value.
+          type:
+            - 'React.Ref<T>[]'
+      typeParameters:
+        - id: T
 references:
   - uid: '@uifabric/react-hooks!IUseBooleanCallbacks:interface'
     name: IUseBooleanCallbacks
