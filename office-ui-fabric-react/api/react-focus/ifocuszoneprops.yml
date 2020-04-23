@@ -30,6 +30,7 @@ items:
       - '@fluentui/react-focus!IFocusZoneProps#onActiveElementChanged:member'
       - '@fluentui/react-focus!IFocusZoneProps#onBeforeFocus:member'
       - '@fluentui/react-focus!IFocusZoneProps#onFocusNotification:member'
+      - '@fluentui/react-focus!IFocusZoneProps#preventDefaultWhenHandled:member'
       - '@fluentui/react-focus!IFocusZoneProps#rootProps:member'
       - '@fluentui/react-focus!IFocusZoneProps#shouldFocusOnMount:member'
       - '@fluentui/react-focus!IFocusZoneProps#shouldInputLoseFocusOnArrowKey:member'
@@ -285,6 +286,18 @@ items:
       return:
         type:
           - () => void
+  - uid: '@fluentui/react-focus!IFocusZoneProps#preventDefaultWhenHandled:member'
+    summary: 'If true, FocusZone prevents the default behavior of Keyboard events when changing focus between elements.'
+    name: preventDefaultWhenHandled
+    fullName: preventDefaultWhenHandled
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'preventDefaultWhenHandled?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: '@fluentui/react-focus!IFocusZoneProps#rootProps:member'
     summary: Deprecated at v1.12.1. DIV props provided to the FocusZone will be mixed into the root element.
     deprecated:

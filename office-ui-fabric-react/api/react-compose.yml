@@ -9,37 +9,33 @@ items:
     children:
       - '@fluentui/react-compose!compose:function(1)'
   - uid: '@fluentui/react-compose!compose:function(1)'
-    name: 'compose(InputComponent, composeOptions)'
-    fullName: 'compose(InputComponent, composeOptions)'
+    name: 'compose(input, inputOptions)'
+    fullName: 'compose(input, inputOptions)'
     langs:
       - typeScript
     type: function
     syntax:
       content: >-
-        declare function compose<InputProps, InputStylesProps, ParentProps, ParentStylesProps>(InputComponent:
-        React.FunctionComponent<ParentProps> & {
-            fluentComposeConfig?: ComposePreparedOptions;
-            handledProps?: (keyof ParentProps)[];
-        }, composeOptions?: ComposeOptions<InputProps, InputStylesProps, ParentStylesProps>):
-        ComposedComponent<InputProps, InputStylesProps, ParentProps, ParentStylesProps>;
+        declare function compose<T extends React.ElementType, InputProps, InputStylesProps, ParentProps,
+        ParentStylesProps>(input: Input<T, InputProps>, inputOptions?: ComposeOptions<InputProps, InputStylesProps,
+        ParentStylesProps>): ComponentWithAs<T, InputProps & ParentProps>;
       return:
         type:
-          - 'ComposedComponent<InputProps, InputStylesProps, ParentProps, ParentStylesProps>'
+          - 'ComponentWithAs<T, InputProps & ParentProps>'
         description: ''
       parameters:
-        - id: InputComponent
+        - id: input
           description: ''
           type:
-            - |-
-              React.FunctionComponent<ParentProps> & {
-                  fluentComposeConfig?: ComposePreparedOptions;
-                  handledProps?: (keyof ParentProps)[];
-              }
-        - id: composeOptions
+            - 'Input<T, InputProps>'
+        - id: inputOptions
           description: ''
           type:
             - 'ComposeOptions<InputProps, InputStylesProps, ParentStylesProps>'
       typeParameters:
+        - id: T
+          type:
+            - React.ElementType
         - id: InputProps
         - id: InputStylesProps
         - id: ParentProps
