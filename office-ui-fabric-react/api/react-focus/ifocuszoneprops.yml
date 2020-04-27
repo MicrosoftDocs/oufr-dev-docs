@@ -34,6 +34,7 @@ items:
       - '@fluentui/react-focus!IFocusZoneProps#rootProps:member'
       - '@fluentui/react-focus!IFocusZoneProps#shouldFocusOnMount:member'
       - '@fluentui/react-focus!IFocusZoneProps#shouldInputLoseFocusOnArrowKey:member'
+      - '@fluentui/react-focus!IFocusZoneProps#shouldResetActiveElementWhenTabFromZone:member'
   - uid: '@fluentui/react-focus!IFocusZoneProps#allowFocusRoot:member'
     summary: Allows focus to park on root when focus is in the `FocusZone` at render time.
     name: allowFocusRoot
@@ -336,3 +337,17 @@ items:
       return:
         type:
           - '(inputElement: HTMLInputElement) => boolean'
+  - uid: '@fluentui/react-focus!IFocusZoneProps#shouldResetActiveElementWhenTabFromZone:member'
+    summary: >-
+      If true and TAB key is not handled by FocusZone, resets current active element to null value. For example, when
+      roving index is not desirable and focus should always reset to the default tabbable element.
+    name: shouldResetActiveElementWhenTabFromZone
+    fullName: shouldResetActiveElementWhenTabFromZone
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'shouldResetActiveElementWhenTabFromZone?: boolean;'
+      return:
+        type:
+          - boolean
