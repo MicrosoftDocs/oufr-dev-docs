@@ -104,8 +104,8 @@ items:
             - boolean
   - uid: '@fluentui/react-focus!FocusZone#focusElement:member(1)'
     summary: >-
-      Sets focus to a specific child element within the zone. This can be used in conjunction with onBeforeFocus to
-      created delayed focus scenarios (like animate the scroll position to the correct location and then focus.)
+      Sets focus to a specific child element within the zone. This can be used in conjunction with shouldReceiveFocus to
+      create delayed focus scenarios (like animate the scroll position to the correct location and then focus.)
     name: focusElement(element)
     fullName: focusElement(element)
     langs:
@@ -170,7 +170,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'setFocusAlignment(point: IPoint): void;'
+      content: 'setFocusAlignment(point: Point): void;'
       return:
         type:
           - void
@@ -179,4 +179,4 @@ items:
         - id: point
           description: the new reference point.
           type:
-            - '@uifabric/utilities!IPoint:interface'
+            - '@uifabric/utilities!Point:interface'

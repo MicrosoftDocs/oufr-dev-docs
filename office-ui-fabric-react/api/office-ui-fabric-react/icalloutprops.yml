@@ -36,6 +36,7 @@ items:
       - 'office-ui-fabric-react!ICalloutProps#onDismiss:member'
       - 'office-ui-fabric-react!ICalloutProps#onLayerMounted:member'
       - 'office-ui-fabric-react!ICalloutProps#onPositioned:member'
+      - 'office-ui-fabric-react!ICalloutProps#onRestoreFocus:member'
       - 'office-ui-fabric-react!ICalloutProps#onScroll:member'
       - 'office-ui-fabric-react!ICalloutProps#preventDismissOnLostFocus:member'
       - 'office-ui-fabric-react!ICalloutProps#preventDismissOnResize:member'
@@ -376,6 +377,30 @@ items:
       return:
         type:
           - '(positions?: ICalloutPositionedInfo) => void'
+  - uid: 'office-ui-fabric-react!ICalloutProps#onRestoreFocus:member'
+    summary: >-
+      Called when the component is unmounting, and focus needs to be restored. Argument passed down contains two
+      variables, the element that the underlying popup believes focus should go to \* and whether or not the popup
+      currently contains focus. If this is provided, focus will not be restored automatically, you'll need to call
+      originalElement.focus()
+    name: onRestoreFocus
+    fullName: onRestoreFocus
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: |-
+        onRestoreFocus?: (options: {
+                originalElement?: HTMLElement | Window;
+                containsFocus: boolean;
+            }) => void;
+      return:
+        type:
+          - |-
+            (options: {
+                    originalElement?: HTMLElement | Window;
+                    containsFocus: boolean;
+                }) => void
   - uid: 'office-ui-fabric-react!ICalloutProps#onScroll:member'
     summary: Callback when the Callout body is scrolled.
     name: onScroll
@@ -453,8 +478,10 @@ items:
           - boolean
   - uid: 'office-ui-fabric-react!ICalloutProps#shouldRestoreFocus:member'
     summary: >-
-      If specified, determines whether the underlying "Popup" component should try to restore focus when it is
-      dismissed. When set to false, the Popup won't try to restore focus to the last focused element.
+      If true, when this component is unmounted, focus will be restored to the element that had focus when the component
+      first mounted.
+    deprecated:
+      content: use onRestoreFocus callback instead
     name: shouldRestoreFocus
     fullName: shouldRestoreFocus
     langs:

@@ -9,7 +9,7 @@ items:
     extends:
       - 'React.Component<ICheckboxProps, ICheckboxState> '
     implements:
-      - 'office-ui-fabric-react!ICheckbox:interface'
+      - 'ICheckbox '
     package: office-ui-fabric-react!
     children:
       - 'office-ui-fabric-react!CheckboxBase:constructor(1)'
@@ -32,7 +32,7 @@ items:
         - id: props
           description: Props for the component
           type:
-            - 'office-ui-fabric-react!ICheckboxProps:interface'
+            - ICheckboxProps
         - id: context
           description: Context or initial state for the base component.
           type:
@@ -58,7 +58,7 @@ items:
       content: 'static defaultProps: ICheckboxProps;'
       return:
         type:
-          - 'office-ui-fabric-react!ICheckboxProps:interface'
+          - ICheckboxProps
   - uid: 'office-ui-fabric-react!CheckboxBase#focus:member(1)'
     name: focus()
     fullName: focus()

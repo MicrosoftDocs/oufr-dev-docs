@@ -15,6 +15,7 @@ items:
       - 'office-ui-fabric-react!IPopupProps#ariaLabelledBy:member'
       - 'office-ui-fabric-react!IPopupProps#className:member'
       - 'office-ui-fabric-react!IPopupProps#onDismiss:member'
+      - 'office-ui-fabric-react!IPopupProps#onRestoreFocus:member'
       - 'office-ui-fabric-react!IPopupProps#role:member'
       - 'office-ui-fabric-react!IPopupProps#shouldRestoreFocus:member'
   - uid: 'office-ui-fabric-react!IPopupProps#ariaDescribedBy:member'
@@ -79,6 +80,30 @@ items:
       return:
         type:
           - '(ev?: React.MouseEvent<HTMLElement> | React.KeyboardEvent<HTMLElement>) => any'
+  - uid: 'office-ui-fabric-react!IPopupProps#onRestoreFocus:member'
+    summary: >-
+      Called when the component is unmounting, and focus needs to be restored. Argument passed down contains two
+      variables, the element that the underlying popup believes focus should go to \* and whether or not the popup
+      currently contains focus. If this is provided, focus will not be restored automatically, you'll need to call
+      originalElement.focus()
+    name: onRestoreFocus
+    fullName: onRestoreFocus
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: |-
+        onRestoreFocus?: (options: {
+                originalElement?: HTMLElement | Window;
+                containsFocus: boolean;
+            }) => void;
+      return:
+        type:
+          - |-
+            (options: {
+                    originalElement?: HTMLElement | Window;
+                    containsFocus: boolean;
+                }) => void
   - uid: 'office-ui-fabric-react!IPopupProps#role:member'
     summary: Aria role for popup
     name: role
@@ -95,6 +120,8 @@ items:
     summary: >-
       If true, when this component is unmounted, focus will be restored to the element that had focus when the component
       first mounted.
+    deprecated:
+      content: use restoreFocus callback instead
     name: shouldRestoreFocus
     fullName: shouldRestoreFocus
     langs:

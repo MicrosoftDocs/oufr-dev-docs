@@ -117,6 +117,7 @@ items:
       - '@uifabric/utilities!mergeSettings:function(1)'
       - '@uifabric/utilities!nullRender:function(1)'
       - '@uifabric/utilities!on:function(1)'
+      - '@uifabric/utilities!Point:interface'
       - '@uifabric/utilities!portalContainsElement:function(1)'
       - '@uifabric/utilities!precisionRound:function(1)'
       - '@uifabric/utilities!raiseClick:function(1)'
@@ -925,7 +926,7 @@ items:
       - typeScript
     type: function
     syntax:
-      content: 'export declare function getDistanceBetweenPoints(point1: IPoint, point2: IPoint): number;'
+      content: 'export declare function getDistanceBetweenPoints(point1: Point, point2: Point): number;'
       return:
         type:
           - number
@@ -934,11 +935,11 @@ items:
         - id: point1
           description: ''
           type:
-            - '@uifabric/utilities!IPoint:interface'
+            - '@uifabric/utilities!Point:interface'
         - id: point2
           description: ''
           type:
-            - '@uifabric/utilities!IPoint:interface'
+            - '@uifabric/utilities!Point:interface'
   - uid: '@uifabric/utilities!getDocument:function(1)'
     summary: >-
       Helper to get the document object. Note that in popup window cases, document might be the wrong document, which is
@@ -2863,6 +2864,8 @@ references:
     name: IVirtualElement
   - uid: '@uifabric/utilities!IWarnControlledUsageParams:interface'
     name: IWarnControlledUsageParams
+  - uid: '@uifabric/utilities!Point:interface'
+    name: Point
   - uid: '@uifabric/utilities!Rectangle:class'
     name: Rectangle
   - uid: '@uifabric/utilities!Selection:class'

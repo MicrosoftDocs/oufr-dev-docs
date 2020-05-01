@@ -29,12 +29,16 @@ items:
       - '@fluentui/react-focus!IFocusZoneProps#isInnerZoneKeystroke:member'
       - '@fluentui/react-focus!IFocusZoneProps#onActiveElementChanged:member'
       - '@fluentui/react-focus!IFocusZoneProps#onBeforeFocus:member'
+      - '@fluentui/react-focus!IFocusZoneProps#onFocus:member'
       - '@fluentui/react-focus!IFocusZoneProps#onFocusNotification:member'
       - '@fluentui/react-focus!IFocusZoneProps#preventDefaultWhenHandled:member'
       - '@fluentui/react-focus!IFocusZoneProps#rootProps:member'
+      - '@fluentui/react-focus!IFocusZoneProps#shouldEnterInnerZone:member'
       - '@fluentui/react-focus!IFocusZoneProps#shouldFocusOnMount:member'
       - '@fluentui/react-focus!IFocusZoneProps#shouldInputLoseFocusOnArrowKey:member'
+      - '@fluentui/react-focus!IFocusZoneProps#shouldReceiveFocus:member'
       - '@fluentui/react-focus!IFocusZoneProps#shouldResetActiveElementWhenTabFromZone:member'
+      - '@fluentui/react-focus!IFocusZoneProps#stopFocusPropagation:member'
   - uid: '@fluentui/react-focus!IFocusZoneProps#allowFocusRoot:member'
     summary: Allows focus to park on root when focus is in the `FocusZone` at render time.
     name: allowFocusRoot
@@ -182,7 +186,9 @@ items:
         type:
           - boolean
   - uid: '@fluentui/react-focus!IFocusZoneProps#doNotAllowFocusEventToPropagate:member'
-    summary: Whether the FocusZone should allow focus events to propagate past the FocusZone
+    summary: Whether the FocusZone should allow focus events to propagate past the FocusZone.
+    deprecated:
+      content: Use `stopFocusPropagation` instead.
     name: doNotAllowFocusEventToPropagate
     fullName: doNotAllowFocusEventToPropagate
     langs:
@@ -239,6 +245,8 @@ items:
     summary: >-
       If provided, this callback will be executed on keypresses to determine if the user intends to navigate into the
       inner zone. Returning true will ask the first inner zone to set focus.
+    deprecated:
+      content: Use `shouldEnterInnerZone` instead.
     name: isInnerZoneKeystroke
     fullName: isInnerZoneKeystroke
     langs:
@@ -265,6 +273,8 @@ items:
           - '(element?: HTMLElement, ev?: React.FocusEvent<HTMLElement>) => void'
   - uid: '@fluentui/react-focus!IFocusZoneProps#onBeforeFocus:member'
     summary: Callback method for determining if focus should indeed be set on the given element.
+    deprecated:
+      content: Use `shouldReceiveFocus` instead.
     name: onBeforeFocus
     fullName: onBeforeFocus
     langs:
@@ -275,8 +285,22 @@ items:
       return:
         type:
           - '(childElement?: HTMLElement) => boolean'
+  - uid: '@fluentui/react-focus!IFocusZoneProps#onFocus:member'
+    summary: Callback called when "focus" event triggered in FocusZone.
+    name: onFocus
+    fullName: onFocus
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onFocus?: (event: React.FocusEvent<HTMLElement | FocusZone>) => void;'
+      return:
+        type:
+          - '(event: React.FocusEvent<HTMLElement | FocusZone>) => void'
   - uid: '@fluentui/react-focus!IFocusZoneProps#onFocusNotification:member'
     summary: Callback to notify creators that focus has been set on the FocusZone
+    deprecated:
+      content: Use `onFocus` instead.
     name: onFocusNotification
     fullName: onFocusNotification
     langs:
@@ -313,6 +337,20 @@ items:
       return:
         type:
           - React.HTMLAttributes<HTMLDivElement>
+  - uid: '@fluentui/react-focus!IFocusZoneProps#shouldEnterInnerZone:member'
+    summary: >-
+      Callback function that will be executed on keypresses to determine if the user intends to navigate into the inner
+      (nested) zone. Returning true will ask the first inner zone to set focus.
+    name: shouldEnterInnerZone
+    fullName: shouldEnterInnerZone
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'shouldEnterInnerZone?: (ev: React.KeyboardEvent<HTMLElement>) => boolean;'
+      return:
+        type:
+          - '(ev: React.KeyboardEvent<HTMLElement>) => boolean'
   - uid: '@fluentui/react-focus!IFocusZoneProps#shouldFocusOnMount:member'
     summary: Determines if a default tabbable element should be force focused on FocusZone mount.  false
     name: shouldFocusOnMount
@@ -337,6 +375,18 @@ items:
       return:
         type:
           - '(inputElement: HTMLInputElement) => boolean'
+  - uid: '@fluentui/react-focus!IFocusZoneProps#shouldReceiveFocus:member'
+    summary: Callback method for determining if focus should indeed be set on the given element.
+    name: shouldReceiveFocus
+    fullName: shouldReceiveFocus
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'shouldReceiveFocus?: (childElement?: HTMLElement) => boolean;'
+      return:
+        type:
+          - '(childElement?: HTMLElement) => boolean'
   - uid: '@fluentui/react-focus!IFocusZoneProps#shouldResetActiveElementWhenTabFromZone:member'
     summary: >-
       If true and TAB key is not handled by FocusZone, resets current active element to null value. For example, when
@@ -348,6 +398,18 @@ items:
     type: property
     syntax:
       content: 'shouldResetActiveElementWhenTabFromZone?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: '@fluentui/react-focus!IFocusZoneProps#stopFocusPropagation:member'
+    summary: Whether the FocusZone should allow focus events to propagate past the FocusZone.
+    name: stopFocusPropagation
+    fullName: stopFocusPropagation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'stopFocusPropagation?: boolean;'
       return:
         type:
           - boolean

@@ -83,6 +83,7 @@ items:
     children:
       - '@uifabric/styling!ISemanticColors#accentButtonBackground:member'
       - '@uifabric/styling!ISemanticColors#blockingBackground:member'
+      - '@uifabric/styling!ISemanticColors#blockingIcon:member'
       - '@uifabric/styling!ISemanticColors#bodyBackground:member'
       - '@uifabric/styling!ISemanticColors#bodyBackgroundChecked:member'
       - '@uifabric/styling!ISemanticColors#bodyBackgroundHovered:member'
@@ -102,7 +103,10 @@ items:
       - '@uifabric/styling!ISemanticColors#disabledBackground:member'
       - '@uifabric/styling!ISemanticColors#disabledBorder:member'
       - '@uifabric/styling!ISemanticColors#errorBackground:member'
+      - '@uifabric/styling!ISemanticColors#errorIcon:member'
       - '@uifabric/styling!ISemanticColors#focusBorder:member'
+      - '@uifabric/styling!ISemanticColors#infoBackground:member'
+      - '@uifabric/styling!ISemanticColors#infoIcon:member'
       - '@uifabric/styling!ISemanticColors#inputBackground:member'
       - '@uifabric/styling!ISemanticColors#inputBackgroundChecked:member'
       - '@uifabric/styling!ISemanticColors#inputBackgroundCheckedHovered:member'
@@ -130,17 +134,23 @@ items:
       - '@uifabric/styling!ISemanticColors#menuItemBackgroundPressed:member'
       - '@uifabric/styling!ISemanticColors#menuItemText:member'
       - '@uifabric/styling!ISemanticColors#menuItemTextHovered:member'
+      - '@uifabric/styling!ISemanticColors#messageLink:member'
+      - '@uifabric/styling!ISemanticColors#messageLinkHovered:member'
       - '@uifabric/styling!ISemanticColors#primaryButtonBackground:member'
       - '@uifabric/styling!ISemanticColors#primaryButtonBackgroundDisabled:member'
       - '@uifabric/styling!ISemanticColors#primaryButtonBackgroundHovered:member'
       - '@uifabric/styling!ISemanticColors#primaryButtonBackgroundPressed:member'
       - '@uifabric/styling!ISemanticColors#primaryButtonBorder:member'
+      - '@uifabric/styling!ISemanticColors#severeWarningBackground:member'
+      - '@uifabric/styling!ISemanticColors#severeWarningIcon:member'
       - '@uifabric/styling!ISemanticColors#smallInputBorder:member'
       - '@uifabric/styling!ISemanticColors#successBackground:member'
+      - '@uifabric/styling!ISemanticColors#successIcon:member'
       - '@uifabric/styling!ISemanticColors#variantBorder:member'
       - '@uifabric/styling!ISemanticColors#variantBorderHovered:member'
       - '@uifabric/styling!ISemanticColors#warningBackground:member'
       - '@uifabric/styling!ISemanticColors#warningHighlight:member'
+      - '@uifabric/styling!ISemanticColors#warningIcon:member'
   - uid: '@uifabric/styling!ISemanticColors#accentButtonBackground:member'
     summary: Background of an accent button (kicker)
     name: accentButtonBackground
@@ -162,6 +172,18 @@ items:
     type: property
     syntax:
       content: 'blockingBackground: string;'
+      return:
+        type:
+          - string
+  - uid: '@uifabric/styling!ISemanticColors#blockingIcon:member'
+    summary: Color for icons on blockingBackground.
+    name: blockingIcon
+    fullName: blockingIcon
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'blockingIcon: string;'
       return:
         type:
           - string
@@ -408,6 +430,18 @@ items:
       return:
         type:
           - string
+  - uid: '@uifabric/styling!ISemanticColors#errorIcon:member'
+    summary: Color for icons on errorBackground.
+    name: errorIcon
+    fullName: errorIcon
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'errorIcon: string;'
+      return:
+        type:
+          - string
   - uid: '@uifabric/styling!ISemanticColors#focusBorder:member'
     summary: The color of the outline around focused controls that don't already have a border; e.g. menu items
     name: focusBorder
@@ -417,6 +451,30 @@ items:
     type: property
     syntax:
       content: 'focusBorder: string;'
+      return:
+        type:
+          - string
+  - uid: '@uifabric/styling!ISemanticColors#infoBackground:member'
+    summary: Background for informational messages.
+    name: infoBackground
+    fullName: infoBackground
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'infoBackground: string;'
+      return:
+        type:
+          - string
+  - uid: '@uifabric/styling!ISemanticColors#infoIcon:member'
+    summary: Color for icons on infoBackground.
+    name: infoIcon
+    fullName: infoIcon
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'infoIcon: string;'
       return:
         type:
           - string
@@ -749,6 +807,30 @@ items:
       return:
         type:
           - string
+  - uid: '@uifabric/styling!ISemanticColors#messageLink:member'
+    summary: Color of links within a Message.
+    name: messageLink
+    fullName: messageLink
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'messageLink: string;'
+      return:
+        type:
+          - string
+  - uid: '@uifabric/styling!ISemanticColors#messageLinkHovered:member'
+    summary: Color of links within a Message when hovered.
+    name: messageLinkHovered
+    fullName: messageLinkHovered
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'messageLinkHovered: string;'
+      return:
+        type:
+          - string
   - uid: '@uifabric/styling!ISemanticColors#primaryButtonBackground:member'
     summary: Background of a primary button
     name: primaryButtonBackground
@@ -809,6 +891,30 @@ items:
       return:
         type:
           - string
+  - uid: '@uifabric/styling!ISemanticColors#severeWarningBackground:member'
+    summary: Background for severe warning messages.
+    name: severeWarningBackground
+    fullName: severeWarningBackground
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'severeWarningBackground: string;'
+      return:
+        type:
+          - string
+  - uid: '@uifabric/styling!ISemanticColors#severeWarningIcon:member'
+    summary: Color for icons on severeWarningBackground.
+    name: severeWarningIcon
+    fullName: severeWarningIcon
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'severeWarningIcon: string;'
+      return:
+        type:
+          - string
   - uid: '@uifabric/styling!ISemanticColors#smallInputBorder:member'
     summary: The border of a small input control in its resting unchecked state; e.g. the box of an unchecked checkbox.
     name: smallInputBorder
@@ -830,6 +936,18 @@ items:
     type: property
     syntax:
       content: 'successBackground: string;'
+      return:
+        type:
+          - string
+  - uid: '@uifabric/styling!ISemanticColors#successIcon:member'
+    summary: Color for icons on successBackground.
+    name: successIcon
+    fullName: successIcon
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'successIcon: string;'
       return:
         type:
           - string
@@ -870,7 +988,8 @@ items:
         type:
           - string
   - uid: '@uifabric/styling!ISemanticColors#warningHighlight:member'
-    summary: Foreground color for warning highlights
+    deprecated:
+      content: (no longer used) Foreground color for warning highlights
     name: warningHighlight
     fullName: warningHighlight
     langs:
@@ -878,6 +997,18 @@ items:
     type: property
     syntax:
       content: 'warningHighlight: string;'
+      return:
+        type:
+          - string
+  - uid: '@uifabric/styling!ISemanticColors#warningIcon:member'
+    summary: Color for icons on warningBackground.
+    name: warningIcon
+    fullName: warningIcon
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'warningIcon: string;'
       return:
         type:
           - string
