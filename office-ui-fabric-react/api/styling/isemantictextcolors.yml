@@ -32,6 +32,7 @@ items:
       - '@uifabric/styling!ISemanticTextColors#linkHovered:member'
       - '@uifabric/styling!ISemanticTextColors#listText:member'
       - '@uifabric/styling!ISemanticTextColors#listTextColor:member'
+      - '@uifabric/styling!ISemanticTextColors#messageText:member'
       - '@uifabric/styling!ISemanticTextColors#primaryButtonText:member'
       - '@uifabric/styling!ISemanticTextColors#primaryButtonTextDisabled:member'
       - '@uifabric/styling!ISemanticTextColors#primaryButtonTextHovered:member'
@@ -329,6 +330,18 @@ items:
       return:
         type:
           - string
+  - uid: '@uifabric/styling!ISemanticTextColors#messageText:member'
+    summary: The default color of text in a message bar.
+    name: messageText
+    fullName: messageText
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'messageText: string;'
+      return:
+        type:
+          - string
   - uid: '@uifabric/styling!ISemanticTextColors#primaryButtonText:member'
     summary: Color of text in a primary button
     name: primaryButtonText
@@ -378,7 +391,8 @@ items:
         type:
           - string
   - uid: '@uifabric/styling!ISemanticTextColors#successText:member'
-    summary: The default color of success text on successBackground.
+    deprecated:
+      content: No longer used. Consider using messageText and/or successIcon instead.
     name: successText
     fullName: successText
     langs:
@@ -390,7 +404,8 @@ items:
         type:
           - string
   - uid: '@uifabric/styling!ISemanticTextColors#warningText:member'
-    summary: 'The default color of text on errorBackground, warningBackground, blockingBackground, or successBackground.'
+    deprecated:
+      content: No longer used. Consider using messageText and/or warningIcon instead.
     name: warningText
     fullName: warningText
     langs:

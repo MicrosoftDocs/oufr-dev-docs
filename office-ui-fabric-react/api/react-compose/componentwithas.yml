@@ -1,0 +1,66 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-compose!ComponentWithAs:interface'
+    name: ComponentWithAs
+    fullName: ComponentWithAs
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'React.FunctionComponent '
+    syntax:
+      typeParameters:
+        - id: E
+          type:
+            - 'React.ElementType '
+        - id: P
+    package: '@fluentui/react-compose!'
+    children:
+      - '@fluentui/react-compose!ComponentWithAs#defaultProps:member'
+      - '@fluentui/react-compose!ComponentWithAs#displayName:member'
+      - '@fluentui/react-compose!ComponentWithAs#propTypes:member'
+  - uid: '@fluentui/react-compose!ComponentWithAs#defaultProps:member'
+    name: defaultProps
+    fullName: defaultProps
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: |-
+        defaultProps?: Partial<P & {
+                as: E;
+            }>;
+      return:
+        type:
+          - |-
+            Partial<P & {
+                    as: E;
+                }>
+  - uid: '@fluentui/react-compose!ComponentWithAs#displayName:member'
+    name: displayName
+    fullName: displayName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'displayName?: string;'
+      return:
+        type:
+          - string
+  - uid: '@fluentui/react-compose!ComponentWithAs#propTypes:member'
+    name: propTypes
+    fullName: propTypes
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: |-
+        propTypes?: React.WeakValidationMap<P> & {
+                as: React.Requireable<string | ((props: any, context?: any) => any) | (new (props: any, context?: any) => any)>;
+            };
+      return:
+        type:
+          - |-
+            React.WeakValidationMap<P> & {
+                    as: React.Requireable<string | ((props: any, context?: any) => any) | (new (props: any, context?: any) => any)>;
+                }

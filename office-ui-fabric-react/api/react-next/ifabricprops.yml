@@ -1,0 +1,104 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-next!IFabricProps:interface'
+    name: IFabricProps
+    fullName: IFabricProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'React.HTMLAttributes<HTMLDivElement> '
+    package: '@fluentui/react-next!'
+    children:
+      - '@fluentui/react-next!IFabricProps#applyTheme:member'
+      - '@fluentui/react-next!IFabricProps#applyThemeToBody:member'
+      - '@fluentui/react-next!IFabricProps#as:member'
+      - '@fluentui/react-next!IFabricProps#componentRef:member'
+      - '@fluentui/react-next!IFabricProps#dir:member'
+      - '@fluentui/react-next!IFabricProps#styles:member'
+      - '@fluentui/react-next!IFabricProps#theme:member'
+  - uid: '@fluentui/react-next!IFabricProps#applyTheme:member'
+    summary: Applies the current body background specified in the theme to the root element.
+    name: applyTheme
+    fullName: applyTheme
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'applyTheme?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: '@fluentui/react-next!IFabricProps#applyThemeToBody:member'
+    summary: Applies the current body background specified in the theme to the body element.
+    name: applyThemeToBody
+    fullName: applyThemeToBody
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'applyThemeToBody?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: '@fluentui/react-next!IFabricProps#as:member'
+    summary: 'Overrides the root element type, defaults to `div`<!-- -->.'
+    name: as
+    fullName: as
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'as?: React.ElementType;'
+      return:
+        type:
+          - React.ElementType
+  - uid: '@fluentui/react-next!IFabricProps#componentRef:member'
+    name: componentRef
+    fullName: componentRef
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'componentRef?: IRefObject<{}>;'
+      return:
+        type:
+          - 'IRefObject<{}>'
+  - uid: '@fluentui/react-next!IFabricProps#dir:member'
+    summary: >-
+      Specifies the direction of the content. Will inject a `dir` attribute, and also ensure that the `rtl` flag of the
+      contextual theme object is set correctly so that css registered with merge-styles can be auto flipped correctly.
+    name: dir
+    fullName: dir
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'dir?: ''rtl'' | ''ltr'' | ''auto'';'
+      return:
+        type:
+          - '''rtl'' | ''ltr'' | ''auto'''
+  - uid: '@fluentui/react-next!IFabricProps#styles:member'
+    summary: Overrides the styles for the component.
+    name: styles
+    fullName: styles
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'styles?: IStyleFunctionOrObject<IFabricStyleProps, IFabricStyles>;'
+      return:
+        type:
+          - 'IStyleFunctionOrObject<IFabricStyleProps, IFabricStyles>'
+  - uid: '@fluentui/react-next!IFabricProps#theme:member'
+    summary: Injected by the `styled` HOC wrapper.
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type:
+          - '@uifabric/styling!ITheme:interface'

@@ -2,34 +2,13 @@
 items:
   - uid: '@uifabric/utilities!IPoint:interface'
     summary: Point interface.
+    deprecated:
+      content: Use `Point` instead.
     name: IPoint
     fullName: IPoint
     langs:
       - typeScript
     type: interface
+    extends:
+      - '@uifabric/utilities!Point:interface'
     package: '@uifabric/utilities!'
-    children:
-      - '@uifabric/utilities!IPoint#x:member'
-      - '@uifabric/utilities!IPoint#y:member'
-  - uid: '@uifabric/utilities!IPoint#x:member'
-    name: x
-    fullName: x
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'x: number;'
-      return:
-        type:
-          - number
-  - uid: '@uifabric/utilities!IPoint#y:member'
-    name: 'y'
-    fullName: 'y'
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'y: number;'
-      return:
-        type:
-          - number
