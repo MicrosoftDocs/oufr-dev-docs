@@ -32,6 +32,7 @@ items:
       - '@fluentui/react-focus!IFocusZoneProps#onFocus:member'
       - '@fluentui/react-focus!IFocusZoneProps#onFocusNotification:member'
       - '@fluentui/react-focus!IFocusZoneProps#preventDefaultWhenHandled:member'
+      - '@fluentui/react-focus!IFocusZoneProps#preventFocusRestoration:member'
       - '@fluentui/react-focus!IFocusZoneProps#rootProps:member'
       - '@fluentui/react-focus!IFocusZoneProps#shouldEnterInnerZone:member'
       - '@fluentui/react-focus!IFocusZoneProps#shouldFocusOnMount:member'
@@ -320,6 +321,20 @@ items:
     type: property
     syntax:
       content: 'preventDefaultWhenHandled?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: '@fluentui/react-focus!IFocusZoneProps#preventFocusRestoration:member'
+    summary: >-
+      If true, prevents the FocusZone from attempting to restore the focus to the inner element when the focus is on the
+      root element after componentDidUpdate.
+    name: preventFocusRestoration
+    fullName: preventFocusRestoration
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'preventFocusRestoration?: boolean;'
       return:
         type:
           - boolean

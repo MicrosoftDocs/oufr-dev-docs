@@ -1,0 +1,79 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-next!ImageFit:enum'
+    summary: The possible methods that can be used to fit the image.
+    name: ImageFit
+    fullName: ImageFit
+    langs:
+      - typeScript
+    type: enum
+    package: '@fluentui/react-next!'
+    children:
+      - '@fluentui/react-next!ImageFit.center:member'
+      - '@fluentui/react-next!ImageFit.centerContain:member'
+      - '@fluentui/react-next!ImageFit.centerCover:member'
+      - '@fluentui/react-next!ImageFit.contain:member'
+      - '@fluentui/react-next!ImageFit.cover:member'
+      - '@fluentui/react-next!ImageFit.none:member'
+  - uid: '@fluentui/react-next!ImageFit.center:member'
+    summary: The image is not scaled. The image is centered and cropped within the content box.
+    name: center
+    fullName: center
+    langs:
+      - typeScript
+    type: field
+    numericValue: '0'
+  - uid: '@fluentui/react-next!ImageFit.centerContain:member'
+    summary: >-
+      The image will be centered horizontally and vertically within the frame and maintains its aspect ratio. It will
+      behave as ImageFit.center if the image's natural height and width is less than the Image frame's height and width,
+      but if either natural height or width are larger than the frame it will behave as ImageFit.contain.
+    name: centerContain
+    fullName: centerContain
+    langs:
+      - typeScript
+    type: field
+    numericValue: '5'
+  - uid: '@fluentui/react-next!ImageFit.centerCover:member'
+    summary: >-
+      The image will be centered horizontally and vertically within the frame and maintains its aspect ratio. It will
+      behave as ImageFit.center if the image's natural height or width is less than the Image frame's height or width,
+      but if both natural height and width are larger than the frame it will behave as ImageFit.cover.
+    name: centerCover
+    fullName: centerCover
+    langs:
+      - typeScript
+    type: field
+    numericValue: '4'
+  - uid: '@fluentui/react-next!ImageFit.contain:member'
+    summary: >-
+      The image is scaled to maintain its aspect ratio while being fully contained within the frame. The image will be
+      centered horizontally and vertically within the frame. The space in the top and bottom or in the sides of the
+      frame will be empty depending on the difference in aspect ratio between the image and the frame.
+    name: contain
+    fullName: contain
+    langs:
+      - typeScript
+    type: field
+    numericValue: '1'
+  - uid: '@fluentui/react-next!ImageFit.cover:member'
+    summary: >-
+      The image is scaled to maintain its aspect ratio while filling the frame. Portions of the image will be cropped
+      from the top and bottom, or the sides, depending on the difference in aspect ratio between the image and the
+      frame.
+    name: cover
+    fullName: cover
+    langs:
+      - typeScript
+    type: field
+    numericValue: '2'
+  - uid: '@fluentui/react-next!ImageFit.none:member'
+    summary: >-
+      Neither the image nor the frame are scaled. If their sizes do not match, the image will either be cropped or the
+      frame will have empty space.
+    name: none
+    fullName: none
+    langs:
+      - typeScript
+    type: field
+    numericValue: '3'
