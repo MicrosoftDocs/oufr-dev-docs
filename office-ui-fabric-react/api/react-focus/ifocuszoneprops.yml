@@ -31,6 +31,7 @@ items:
       - '@fluentui/react-focus!IFocusZoneProps#onBeforeFocus:member'
       - '@fluentui/react-focus!IFocusZoneProps#onFocus:member'
       - '@fluentui/react-focus!IFocusZoneProps#onFocusNotification:member'
+      - '@fluentui/react-focus!IFocusZoneProps#pagingSupportDisabled:member'
       - '@fluentui/react-focus!IFocusZoneProps#preventDefaultWhenHandled:member'
       - '@fluentui/react-focus!IFocusZoneProps#preventFocusRestoration:member'
       - '@fluentui/react-focus!IFocusZoneProps#rootProps:member'
@@ -110,8 +111,8 @@ items:
           - React.ElementType
   - uid: '@fluentui/react-focus!IFocusZoneProps#checkForNoWrap:member'
     summary: >-
-      Whether the to check for data-no-horizontal-wrap or data-no-vertical-wrap attributes when determining how to move
-      focus
+      Determines whether to check for data-no-horizontal-wrap or data-no-vertical-wrap attributes when determining how
+      to move focus
     name: checkForNoWrap
     fullName: checkForNoWrap
     langs:
@@ -312,6 +313,18 @@ items:
       return:
         type:
           - () => void
+  - uid: '@fluentui/react-focus!IFocusZoneProps#pagingSupportDisabled:member'
+    summary: Determines whether to disable the paging support for Page Up and Page Down keyboard scenarios.
+    name: pagingSupportDisabled
+    fullName: pagingSupportDisabled
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'pagingSupportDisabled?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: '@fluentui/react-focus!IFocusZoneProps#preventDefaultWhenHandled:member'
     summary: 'If true, FocusZone prevents the default behavior of Keyboard events when changing focus between elements.'
     name: preventDefaultWhenHandled
