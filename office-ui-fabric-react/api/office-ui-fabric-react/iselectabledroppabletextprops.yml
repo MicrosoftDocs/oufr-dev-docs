@@ -89,7 +89,12 @@ items:
         type:
           - IRefObject<TComponent>
   - uid: 'office-ui-fabric-react!ISelectableDroppableTextProps#defaultSelectedKey:member'
-    summary: The key(s) that will be initially used to set a selected item.
+    summary: >-
+      The key(s) that will be initially used to set a selected item.
+
+
+      Mutually exclusive with `selectedKey`<!-- -->. For Dropdown in multi-select mode, use `defaultSelectedKeys`
+      instead.
     name: defaultSelectedKey
     fullName: defaultSelectedKey
     langs:
@@ -284,6 +289,10 @@ items:
     summary: >-
       The key(s) of the selected item. If you provide this, you must maintain selection state by observing onChange
       events and passing a new value in when changed. Note that passing in `null` will cause selection to be reset.
+
+
+      Mutually exclusive with `defaultSelectedKey`<!-- -->. For Dropdown in multi-select mode, use `selectedKeys`
+      instead.
     name: selectedKey
     fullName: selectedKey
     langs:

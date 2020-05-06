@@ -1,0 +1,161 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-next!IPivotItemProps:interface'
+    name: IPivotItemProps
+    fullName: IPivotItemProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'React.HTMLAttributes<HTMLDivElement> '
+    package: '@fluentui/react-next!'
+    children:
+      - '@fluentui/react-next!IPivotItemProps#ariaLabel:member'
+      - '@fluentui/react-next!IPivotItemProps#componentRef:member'
+      - '@fluentui/react-next!IPivotItemProps#headerButtonProps:member'
+      - '@fluentui/react-next!IPivotItemProps#headerText:member'
+      - '@fluentui/react-next!IPivotItemProps#itemCount:member'
+      - '@fluentui/react-next!IPivotItemProps#itemIcon:member'
+      - '@fluentui/react-next!IPivotItemProps#itemKey:member'
+      - '@fluentui/react-next!IPivotItemProps#keytipProps:member'
+      - '@fluentui/react-next!IPivotItemProps#linkText:member'
+      - '@fluentui/react-next!IPivotItemProps#onRenderItemLink:member'
+  - uid: '@fluentui/react-next!IPivotItemProps#ariaLabel:member'
+    summary: |-
+      The aria label of each pivot link which will read by screen reader instead of linkText.
+
+      Note that unless you have compelling requirements you should not override aria-label.
+    name: ariaLabel
+    fullName: ariaLabel
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'ariaLabel?: string;'
+      return:
+        type:
+          - string
+  - uid: '@fluentui/react-next!IPivotItemProps#componentRef:member'
+    summary: Gets the component ref.
+    name: componentRef
+    fullName: componentRef
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'componentRef?: IRefObject<{}>;'
+      return:
+        type:
+          - 'IRefObject<{}>'
+  - uid: '@fluentui/react-next!IPivotItemProps#headerButtonProps:member'
+    summary: >-
+      Props for the header command button. This provides a way to pass in native props, such as data-\* and aria-\*, for
+      each pivot header/link element.
+    name: headerButtonProps
+    fullName: headerButtonProps
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: |-
+        headerButtonProps?: {
+                [key: string]: string | number | boolean;
+            };
+      return:
+        type:
+          - |-
+            {
+                    [key: string]: string | number | boolean;
+                }
+  - uid: '@fluentui/react-next!IPivotItemProps#headerText:member'
+    summary: The text displayed of each pivot link.
+    name: headerText
+    fullName: headerText
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'headerText?: string;'
+      return:
+        type:
+          - string
+  - uid: '@fluentui/react-next!IPivotItemProps#itemCount:member'
+    summary: |-
+      Defines an optional item count displayed in parentheses just after the `linkText`<!-- -->.
+
+      Examples: completed (4), Unread (99+)
+    name: itemCount
+    fullName: itemCount
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'itemCount?: number | string;'
+      return:
+        type:
+          - number | string
+  - uid: '@fluentui/react-next!IPivotItemProps#itemIcon:member'
+    summary: An optional icon to show next to the pivot link.
+    name: itemIcon
+    fullName: itemIcon
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'itemIcon?: string;'
+      return:
+        type:
+          - string
+  - uid: '@fluentui/react-next!IPivotItemProps#itemKey:member'
+    summary: |-
+      An required key to uniquely identify a pivot item.
+
+      Note: The 'key' from react props cannot be used inside component.
+    name: itemKey
+    fullName: itemKey
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'itemKey?: string;'
+      return:
+        type:
+          - string
+  - uid: '@fluentui/react-next!IPivotItemProps#keytipProps:member'
+    summary: Optional keytip for this PivotItem
+    name: keytipProps
+    fullName: keytipProps
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'keytipProps?: IKeytipProps;'
+      return:
+        type:
+          - 'office-ui-fabric-react!IKeytipProps:interface'
+  - uid: '@fluentui/react-next!IPivotItemProps#linkText:member'
+    summary: The text displayed of each pivot link - renaming to `headerText`<!-- -->.
+    deprecated:
+      content: Use `headerText` instead.
+    name: linkText
+    fullName: linkText
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'linkText?: string;'
+      return:
+        type:
+          - string
+  - uid: '@fluentui/react-next!IPivotItemProps#onRenderItemLink:member'
+    summary: Optional custom renderer for the pivot item link
+    name: onRenderItemLink
+    fullName: onRenderItemLink
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onRenderItemLink?: IRenderFunction<IPivotItemProps>;'
+      return:
+        type:
+          - IRenderFunction<IPivotItemProps>
