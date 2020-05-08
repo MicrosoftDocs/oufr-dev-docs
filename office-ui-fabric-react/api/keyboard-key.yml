@@ -7,7 +7,53 @@ items:
       - typeScript
     type: package
     children:
+      - '@fluentui/keyboard-key!getCode:function(1)'
+      - '@fluentui/keyboard-key!getKey:function(1)'
       - '@fluentui/keyboard-key!KeyNames:interface'
+  - uid: '@fluentui/keyboard-key!getCode:function(1)'
+    summary: >-
+      Get the `keyCode` or `which` value from a keyboard event or `key` name. If an object is provided, the precedence
+      of properties is `keyCode`<!-- -->, `which`<!-- -->, `key`<!-- -->.
+    name: getCode(eventOrKey)
+    fullName: getCode(eventOrKey)
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export declare function getCode(eventOrKey: Partial<KeyboardEventLike> | string): number | undefined;'
+      return:
+        type:
+          - number | undefined
+        description: ''
+      parameters:
+        - id: eventOrKey
+          description: >-
+            A keyboard event-like object or `key` name. If an object, at least one of `key`<!-- -->, `keyCode`<!-- -->,
+            or `which` must be defined.
+          type:
+            - Partial<KeyboardEventLike> | string
+  - uid: '@fluentui/keyboard-key!getKey:function(1)'
+    summary: >-
+      Get the key name from a keyboard event, `keyCode`<!-- -->, or `which` value. If an object is provided, the
+      precedence of properties is `key`<!-- -->, `keyCode`<!-- -->, `which`<!-- -->.
+    name: getKey(eventOrCode)
+    fullName: getKey(eventOrCode)
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export declare function getKey(eventOrCode: Partial<KeyboardEventLike> | number): string | undefined;'
+      return:
+        type:
+          - string | undefined
+        description: ''
+      parameters:
+        - id: eventOrCode
+          description: >-
+            A keyboard event-like object or key code. If an object, at least one of `key`<!-- -->, `keyCode`<!-- -->, or
+            `which` must be defined.
+          type:
+            - Partial<KeyboardEventLike> | number
 references:
   - uid: '@fluentui/keyboard-key!KeyNames:interface'
     name: KeyNames
