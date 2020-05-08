@@ -20,6 +20,7 @@ items:
       - '@fluentui/react-focus!IFocusZoneProps#className:member'
       - '@fluentui/react-focus!IFocusZoneProps#componentRef:member'
       - '@fluentui/react-focus!IFocusZoneProps#defaultActiveElement:member'
+      - '@fluentui/react-focus!IFocusZoneProps#defaultTabbableElement:member'
       - '@fluentui/react-focus!IFocusZoneProps#direction:member'
       - '@fluentui/react-focus!IFocusZoneProps#disabled:member'
       - '@fluentui/react-focus!IFocusZoneProps#doNotAllowFocusEventToPropagate:member'
@@ -36,6 +37,7 @@ items:
       - '@fluentui/react-focus!IFocusZoneProps#preventFocusRestoration:member'
       - '@fluentui/react-focus!IFocusZoneProps#rootProps:member'
       - '@fluentui/react-focus!IFocusZoneProps#shouldEnterInnerZone:member'
+      - '@fluentui/react-focus!IFocusZoneProps#shouldFocusInnerElementWhenReceivedFocus:member'
       - '@fluentui/react-focus!IFocusZoneProps#shouldFocusOnMount:member'
       - '@fluentui/react-focus!IFocusZoneProps#shouldInputLoseFocusOnArrowKey:member'
       - '@fluentui/react-focus!IFocusZoneProps#shouldReceiveFocus:member'
@@ -150,7 +152,9 @@ items:
         type:
           - IRefObject<IFocusZone>
   - uid: '@fluentui/react-focus!IFocusZoneProps#defaultActiveElement:member'
-    summary: Optionally provide a selector for identifying the intial active element.
+    summary: Optionally provide a selector for identifying the initial active element.
+    deprecated:
+      content: Use `defaultTabbableElement` instead.
     name: defaultActiveElement
     fullName: defaultActiveElement
     langs:
@@ -161,6 +165,21 @@ items:
       return:
         type:
           - string
+  - uid: '@fluentui/react-focus!IFocusZoneProps#defaultTabbableElement:member'
+    summary: >-
+      Optionally defines the initial tabbable element inside the FocusZone. If a string is passed then it is treated as
+      a selector for identifying the initial tabbable element. If a function is passed then it uses the root element as
+      a parameter to return the initial tabbable element.
+    name: defaultTabbableElement
+    fullName: defaultTabbableElement
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'defaultTabbableElement?: string | ((root: HTMLElement) => HTMLElement);'
+      return:
+        type:
+          - 'string | ((root: HTMLElement) => HTMLElement)'
   - uid: '@fluentui/react-focus!IFocusZoneProps#direction:member'
     summary: Defines which arrows to react to.
     name: direction
@@ -379,6 +398,21 @@ items:
       return:
         type:
           - '(ev: React.KeyboardEvent<HTMLElement>) => boolean'
+  - uid: '@fluentui/react-focus!IFocusZoneProps#shouldFocusInnerElementWhenReceivedFocus:member'
+    summary: >-
+      If true and FocusZone's root element (container) receives focus, the focus will land either on the
+      defaultTabbableElement (if set) or on the first tabbable element of this FocusZone. Usually a case for nested
+      focus zones, when the nested focus zone's container is a focusable element.
+    name: shouldFocusInnerElementWhenReceivedFocus
+    fullName: shouldFocusInnerElementWhenReceivedFocus
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'shouldFocusInnerElementWhenReceivedFocus?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: '@fluentui/react-focus!IFocusZoneProps#shouldFocusOnMount:member'
     summary: Determines if a default tabbable element should be force focused on FocusZone mount.  false
     name: shouldFocusOnMount

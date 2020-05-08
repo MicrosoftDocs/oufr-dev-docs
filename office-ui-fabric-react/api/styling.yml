@@ -11,6 +11,7 @@ items:
       - '@uifabric/styling!createFontStyles:function(1)'
       - '@uifabric/styling!createTheme:function(1)'
       - '@uifabric/styling!focusClear:function(1)'
+      - '@uifabric/styling!getEdgeChromiumNoHighContrastAdjustSelector:function(1)'
       - '@uifabric/styling!getFadedOverflowStyle:function(1)'
       - '@uifabric/styling!getFocusOutlineStyle:function(1)'
       - '@uifabric/styling!getFocusStyle:function(1)'
@@ -122,6 +123,25 @@ items:
       return:
         type:
           - '@uifabric/merge-styles!IRawStyle:interface'
+        description: ''
+  - uid: '@uifabric/styling!getEdgeChromiumNoHighContrastAdjustSelector:function(1)'
+    summary: The style which turns off high contrast adjustment in (only) Edge Chromium browser.
+    name: getEdgeChromiumNoHighContrastAdjustSelector()
+    fullName: getEdgeChromiumNoHighContrastAdjustSelector()
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: |-
+        export declare function getEdgeChromiumNoHighContrastAdjustSelector(): {
+            [EdgeChromiumHighContrastSelector]: IRawStyle;
+        };
+      return:
+        type:
+          - |-
+            {
+                [EdgeChromiumHighContrastSelector]: IRawStyle;
+            }
         description: ''
   - uid: '@uifabric/styling!getFadedOverflowStyle:function(1)'
     summary: >-
