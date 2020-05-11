@@ -10,6 +10,7 @@ items:
     children:
       - '@uifabric/utilities!IClassNamesFunctionOptions#cacheSize:member'
       - '@uifabric/utilities!IClassNamesFunctionOptions#disableCaching:member'
+      - '@uifabric/utilities!IClassNamesFunctionOptions#useStaticStyles:member'
   - uid: '@uifabric/utilities!IClassNamesFunctionOptions#cacheSize:member'
     summary: Size of the cache. It overwrites default cache size when defined.
     name: cacheSize
@@ -31,6 +32,18 @@ items:
     type: property
     syntax:
       content: 'disableCaching?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: '@uifabric/utilities!IClassNamesFunctionOptions#useStaticStyles:member'
+    summary: Set to true if component base styles are implemented in scss instead of css-in-js.
+    name: useStaticStyles
+    fullName: useStaticStyles
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'useStaticStyles?: boolean;'
       return:
         type:
           - boolean
