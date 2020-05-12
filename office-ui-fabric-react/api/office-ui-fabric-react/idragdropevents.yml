@@ -15,6 +15,7 @@ items:
       - 'office-ui-fabric-react!IDragDropEvents#onDragEnd:member'
       - 'office-ui-fabric-react!IDragDropEvents#onDragEnter:member'
       - 'office-ui-fabric-react!IDragDropEvents#onDragLeave:member'
+      - 'office-ui-fabric-react!IDragDropEvents#onDragOver:member'
       - 'office-ui-fabric-react!IDragDropEvents#onDragStart:member'
       - 'office-ui-fabric-react!IDragDropEvents#onDrop:member'
   - uid: 'office-ui-fabric-react!IDragDropEvents#canDrag:member'
@@ -88,6 +89,18 @@ items:
     type: property
     syntax:
       content: 'onDragLeave?: (item?: any, event?: DragEvent) => void;'
+      return:
+        type:
+          - '(item?: any, event?: DragEvent) => void'
+  - uid: 'office-ui-fabric-react!IDragDropEvents#onDragOver:member'
+    summary: On drag over event callback.
+    name: onDragOver
+    fullName: onDragOver
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onDragOver?: (item?: any, event?: DragEvent) => void;'
       return:
         type:
           - '(item?: any, event?: DragEvent) => void'
