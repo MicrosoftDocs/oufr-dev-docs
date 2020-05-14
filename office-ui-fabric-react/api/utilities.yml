@@ -62,6 +62,7 @@ items:
       - '@uifabric/utilities!getNextElement:function(1)'
       - '@uifabric/utilities!getParent:function(1)'
       - '@uifabric/utilities!getPreviousElement:function(1)'
+      - '@uifabric/utilities!getPropsWithDefaults:function(1)'
       - '@uifabric/utilities!getRect:function(1)'
       - '@uifabric/utilities!getResourceUrl:function(1)'
       - '@uifabric/utilities!getRTL:function(1)'
@@ -1366,6 +1367,37 @@ items:
           description: ''
           type:
             - boolean
+  - uid: '@uifabric/utilities!getPropsWithDefaults:function(1)'
+    summary: >-
+      Function to apply default values to a component props object. This function is intended for function components,
+      to maintain parity with the `defaultProps` feature of class components. It accounts for properties that are
+      specified, but undefined.
+    name: 'getPropsWithDefaults(defaultProps, propsWithoutDefaults)'
+    fullName: 'getPropsWithDefaults(defaultProps, propsWithoutDefaults)'
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: >-
+        export declare function getPropsWithDefaults<TProps extends {}>(defaultProps: Partial<TProps>,
+        propsWithoutDefaults: TProps): TProps;
+      return:
+        type:
+          - TProps
+        description: ''
+      parameters:
+        - id: defaultProps
+          description: An object with default values for various properties
+          type:
+            - Partial<TProps>
+        - id: propsWithoutDefaults
+          description: The props object passed into the component
+          type:
+            - TProps
+      typeParameters:
+        - id: TProps
+          type:
+            - '{}'
   - uid: '@uifabric/utilities!getRect:function(1)'
     summary: Helper to get bounding client rect. Passing in window will get the window size.
     name: getRect(element)
