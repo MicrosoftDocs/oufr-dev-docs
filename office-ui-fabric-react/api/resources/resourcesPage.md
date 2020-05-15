@@ -10,16 +10,19 @@ Fluent UI is an open source project that celebrates internal and external contri
 
 
 ## Design resources
-### Design Toolkits
+### Design toolkits
 
 These design toolkits provide styles, controls and layout templates that enable you to create beautiful and coherent Microsoft experiences.
 
-- [Microsoft Web Fluent (Sketch)](https://aka.ms/FluentToolkits/Web/Sketch)
-- [Microsoft Web Fluent (Figma)](https://aka.ms/FluentToolkits/Web/Figma)
-- [Microsoft iOS Fluent (Sketch)](https://aka.ms/FluentToolkits/iOS/Sketch)
-- [Microsoft iOS Fluent (Figma)](https://aka.ms/FluentToolkits/iOS/Figma)
-- [Microsoft Android Fluent (Sketch)](https://aka.ms/FluentToolkits/Android/Sketch)
-- [Microsoft Android Fluent (Figma)](https://aka.ms/FluentToolkits/Android/Figma)
+- [Download Web toolkit (Sketch)](https://aka.ms/FluentToolkits/Web/Sketch)
+- [Download Web toolkit (Figma)](https://aka.ms/FluentToolkits/Web/Figma)
+- [Download iOS toolkit (Sketch)](https://aka.ms/FluentToolkits/iOS/Sketch)
+- [Download iOS toolkit (Figma)](https://aka.ms/FluentToolkits/iOS/Figma)
+- [Download Android toolkit (Sketch)](https://aka.ms/FluentToolkits/Android/Sketch)
+- [Download Android toolkit (Figma)](https://aka.ms/FluentToolkits/Android/Figma)
+- [Download Windows toolkit (Figma)](https://aka.ms/figmatoolkit)
+- [Download Figma plug-in](https://www.figma.com/community/plugin/794492287931420611/Fluent-Theme-Designer)
+
 
 <!-- headings get auto-generated IDs usually, and this page has two "SharePoint Framework" headings -->
 <h3 id="sharepoint-framework-design">SharePoint Framework</h3>
@@ -40,13 +43,15 @@ The Add-ins design toolkit provides layouts for interface elements and commonly 
 ### Fonts
 
 - [iOS font](https://developer.apple.com/fonts/)
-- [Segoe UI and Fluent UI MDL2 external icon font](https://aka.ms/WebFluentFonts)
+- [Download Segoe UI and MDL2 external font](https://aka.ms/WebFluentFonts)
 - [Android font](https://fonts.google.com/specimen/Roboto)
 
-### Native OS Platforms
+### Native OS platforms
 
 - [iOS Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/ios/overview/themes/)
 - [Guidelines for iOS app icons](https://developer.apple.com/design/human-interface-guidelines/ios/icons-and-images/app-icon/)
+- [macOS Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/macos/overview/themes/)
+- [Guidelines for macOS app icons](https://developer.apple.com/design/human-interface-guidelines/macos/icons-and-images/app-icon/)
 - [Android Human Interface Guidelines](https://developer.android.com/design/)
 - [Guidelines for Android app icons](https://developer.android.com/guide/practices/ui_guidelines/icon_design)
 
@@ -55,10 +60,16 @@ The Add-ins design toolkit provides layouts for interface elements and commonly 
 ## Developer resources
 ### Installation, tutorials and examples
 
-Get started with React and learn how to build your first projects.
+#### Get started with React and learn how to build your first projects.
 
 - [Get started with Fluent UI React](https://developer.microsoft.com/en-us/fabric#/get-started)
 - [Fluent UI React tutorial](https://github.com/microsoft/fluentui/wiki/Getting-Started-with-UI-Fabric)
+
+#### Get started with React Native and learn how to build your first projects.
+
+
+- [Get started with Fluent UI React Native
+](https://github.com/microsoft/fluentui-react-native)
 
 ### Documentation
 
@@ -93,16 +104,20 @@ Fluent UI is the official UI toolkit for creating Office Add-ins. Check out some
 ## Contribution process
 Reference these step-by-step processes for contributing to Fluent UI.
 
-### Fluent UI React
+### Web
 
 - [Implement a Fluent UI React control](https://github.com/microsoft/fluentui/wiki/New-Components)
 - [Give feedback on a control by filing an issue on GitHub](https://github.com/microsoft/fluentui/wiki/Reporting-Issues)
 - [View current GitHub issues for all Fluent UI React controls](https://github.com/microsoft/fluentui/issues)
 
-### Fluent UI iOS
+### Cross-platform
 
-[Give feedback on a control by filing an issue on GitHub](https://github.com/OfficeDev/ui-fabric-ios/issues)
+[Give feedback on a control by filing an issue on GitHub](https://github.com/microsoft/fluentui-react-native/issues)
 
-### Fluent UI Android
+### iOS and macOS
 
-[Give feedback on a control by filing an issue on GitHub](https://github.com/OfficeDev/ui-fabric-android/issues)
+[Give feedback on a control by filing an issue on GitHub](https://github.com/microsoft/fluentui-apple/issues)
+
+### Android
+
+[Give feedback on a control by filing an issue on GitHub](https://github.com/microsoft/fluentui-android/issues)

@@ -14,7 +14,6 @@ items:
       - '@uifabric/merge-styles!concatStyleSets:function(5)'
       - '@uifabric/merge-styles!concatStyleSets:function(6)'
       - '@uifabric/merge-styles!concatStyleSets:function(7)'
-      - '@uifabric/merge-styles!concatStyleSets:function(8)'
       - '@uifabric/merge-styles!concatStyleSetsWithProps:function(1)'
       - '@uifabric/merge-styles!fontFace:function(1)'
       - '@uifabric/merge-styles!ICSPSettings:interface'
@@ -48,11 +47,11 @@ items:
     type: function
     syntax:
       content: >-
-        export declare function concatStyleSets<TStyleSet extends IStyleSet<TStyleSet>>(styleSet: TStyleSet | false |
-        null | undefined): IConcatenatedStyleSet<TStyleSet>;
+        export declare function concatStyleSets<TStyleSet>(styleSet: TStyleSet | false | null | undefined):
+        IConcatenatedStyleSet<ObjectOnly<TStyleSet>>;
       return:
         type:
-          - IConcatenatedStyleSet<TStyleSet>
+          - IConcatenatedStyleSet<ObjectOnly<TStyleSet>>
         description: ''
       parameters:
         - id: styleSet
@@ -61,8 +60,6 @@ items:
             - TStyleSet | false | null | undefined
       typeParameters:
         - id: TStyleSet
-          type:
-            - IStyleSet<TStyleSet>
   - uid: '@uifabric/merge-styles!concatStyleSets:function(2)'
     summary: Combine a set of styles together (but does not register css classes).
     name: 'concatStyleSets(styleSet1, styleSet2)'
@@ -72,12 +69,12 @@ items:
     type: function
     syntax:
       content: >-
-        export declare function concatStyleSets<TStyleSet1 extends IStyleSet<TStyleSet1>, TStyleSet2 extends
-        IStyleSet<TStyleSet2>>(styleSet1: TStyleSet1 | false | null | undefined, styleSet2: TStyleSet2 | false | null |
-        undefined): IConcatenatedStyleSet<TStyleSet1 & TStyleSet2>;
+        export declare function concatStyleSets<TStyleSet1, TStyleSet2>(styleSet1: TStyleSet1 | false | null |
+        undefined, styleSet2: TStyleSet2 | false | null | undefined): IConcatenatedStyleSet<ObjectOnly<TStyleSet1> &
+        ObjectOnly<TStyleSet2>>;
       return:
         type:
-          - IConcatenatedStyleSet<TStyleSet1 & TStyleSet2>
+          - IConcatenatedStyleSet<ObjectOnly<TStyleSet1> & ObjectOnly<TStyleSet2>>
         description: ''
       parameters:
         - id: styleSet1
@@ -90,11 +87,7 @@ items:
             - TStyleSet2 | false | null | undefined
       typeParameters:
         - id: TStyleSet1
-          type:
-            - IStyleSet<TStyleSet1>
         - id: TStyleSet2
-          type:
-            - IStyleSet<TStyleSet2>
   - uid: '@uifabric/merge-styles!concatStyleSets:function(3)'
     summary: Combine a set of styles together (but does not register css classes).
     name: 'concatStyleSets(styleSet1, styleSet2, styleSet3)'
@@ -104,13 +97,12 @@ items:
     type: function
     syntax:
       content: >-
-        export declare function concatStyleSets<TStyleSet1 extends IStyleSet<TStyleSet1>, TStyleSet2 extends
-        IStyleSet<TStyleSet2>, TStyleSet3 extends IStyleSet<TStyleSet3>>(styleSet1: TStyleSet1 | false | null |
-        undefined, styleSet2: TStyleSet2 | false | null | undefined, styleSet3: TStyleSet3 | false | null | undefined):
-        IConcatenatedStyleSet<TStyleSet1 & TStyleSet2 & TStyleSet3>;
+        export declare function concatStyleSets<TStyleSet1, TStyleSet2, TStyleSet3>(styleSet1: TStyleSet1 | false | null
+        | undefined, styleSet2: TStyleSet2 | false | null | undefined, styleSet3: TStyleSet3 | false | null |
+        undefined): IConcatenatedStyleSet<ObjectOnly<TStyleSet1> & ObjectOnly<TStyleSet2> & ObjectOnly<TStyleSet3>>;
       return:
         type:
-          - IConcatenatedStyleSet<TStyleSet1 & TStyleSet2 & TStyleSet3>
+          - IConcatenatedStyleSet<ObjectOnly<TStyleSet1> & ObjectOnly<TStyleSet2> & ObjectOnly<TStyleSet3>>
         description: ''
       parameters:
         - id: styleSet1
@@ -127,14 +119,8 @@ items:
             - TStyleSet3 | false | null | undefined
       typeParameters:
         - id: TStyleSet1
-          type:
-            - IStyleSet<TStyleSet1>
         - id: TStyleSet2
-          type:
-            - IStyleSet<TStyleSet2>
         - id: TStyleSet3
-          type:
-            - IStyleSet<TStyleSet3>
   - uid: '@uifabric/merge-styles!concatStyleSets:function(4)'
     summary: Combine a set of styles together (but does not register css classes).
     name: 'concatStyleSets(styleSet1, styleSet2, styleSet3, styleSet4)'
@@ -144,62 +130,15 @@ items:
     type: function
     syntax:
       content: >-
-        export declare function concatStyleSets<TStyleSet1 extends IStyleSet<TStyleSet1>, TStyleSet2 extends
-        IStyleSet<TStyleSet2>, TStyleSet3 extends IStyleSet<TStyleSet3>, TStyleSet4 extends
-        IStyleSet<TStyleSet4>>(styleSet1: TStyleSet1 | false | null | undefined, styleSet2: TStyleSet2 | false | null |
-        undefined, styleSet3: TStyleSet3 | false | null | undefined, styleSet4: TStyleSet3 | false | null | undefined):
-        IConcatenatedStyleSet<TStyleSet1 & TStyleSet2 & TStyleSet3 & TStyleSet4>;
+        export declare function concatStyleSets<TStyleSet1, TStyleSet2, TStyleSet3, TStyleSet4>(styleSet1: TStyleSet1 |
+        false | null | undefined, styleSet2: TStyleSet2 | false | null | undefined, styleSet3: TStyleSet3 | false | null
+        | undefined, styleSet4: TStyleSet4 | false | null | undefined): IConcatenatedStyleSet<ObjectOnly<TStyleSet1> &
+        ObjectOnly<TStyleSet2> & ObjectOnly<TStyleSet3> & ObjectOnly<TStyleSet4>>;
       return:
         type:
-          - IConcatenatedStyleSet<TStyleSet1 & TStyleSet2 & TStyleSet3 & TStyleSet4>
-        description: ''
-      parameters:
-        - id: styleSet1
-          description: The first style set to be concatenated.
-          type:
-            - TStyleSet1 | false | null | undefined
-        - id: styleSet2
-          description: The second style set to be concatenated.
-          type:
-            - TStyleSet2 | false | null | undefined
-        - id: styleSet3
-          description: The third style set to be concatenated.
-          type:
-            - TStyleSet3 | false | null | undefined
-        - id: styleSet4
-          description: The fourth style set to be concatenated.
-          type:
-            - TStyleSet3 | false | null | undefined
-      typeParameters:
-        - id: TStyleSet1
-          type:
-            - IStyleSet<TStyleSet1>
-        - id: TStyleSet2
-          type:
-            - IStyleSet<TStyleSet2>
-        - id: TStyleSet3
-          type:
-            - IStyleSet<TStyleSet3>
-        - id: TStyleSet4
-          type:
-            - IStyleSet<TStyleSet4>
-  - uid: '@uifabric/merge-styles!concatStyleSets:function(5)'
-    summary: Combine a set of styles together (but does not register css classes).
-    name: 'concatStyleSets(styleSet1, styleSet2, styleSet3, styleSet4)'
-    fullName: 'concatStyleSets(styleSet1, styleSet2, styleSet3, styleSet4)'
-    langs:
-      - typeScript
-    type: function
-    syntax:
-      content: >-
-        export declare function concatStyleSets<TStyleSet1 extends IStyleSet<TStyleSet1>, TStyleSet2 extends
-        IStyleSet<TStyleSet2>, TStyleSet3 extends IStyleSet<TStyleSet3>, TStyleSet4 extends
-        IStyleSet<TStyleSet4>>(styleSet1: TStyleSet1 | false | null | undefined, styleSet2: TStyleSet2 | false | null |
-        undefined, styleSet3: TStyleSet3 | false | null | undefined, styleSet4: TStyleSet4 | false | null | undefined):
-        IConcatenatedStyleSet<TStyleSet1 & TStyleSet2 & TStyleSet3 & TStyleSet4>;
-      return:
-        type:
-          - IConcatenatedStyleSet<TStyleSet1 & TStyleSet2 & TStyleSet3 & TStyleSet4>
+          - >-
+            IConcatenatedStyleSet<ObjectOnly<TStyleSet1> & ObjectOnly<TStyleSet2> & ObjectOnly<TStyleSet3> &
+            ObjectOnly<TStyleSet4>>
         description: ''
       parameters:
         - id: styleSet1
@@ -220,18 +159,10 @@ items:
             - TStyleSet4 | false | null | undefined
       typeParameters:
         - id: TStyleSet1
-          type:
-            - IStyleSet<TStyleSet1>
         - id: TStyleSet2
-          type:
-            - IStyleSet<TStyleSet2>
         - id: TStyleSet3
-          type:
-            - IStyleSet<TStyleSet3>
         - id: TStyleSet4
-          type:
-            - IStyleSet<TStyleSet4>
-  - uid: '@uifabric/merge-styles!concatStyleSets:function(6)'
+  - uid: '@uifabric/merge-styles!concatStyleSets:function(5)'
     summary: Combine a set of styles together (but does not register css classes).
     name: 'concatStyleSets(styleSet1, styleSet2, styleSet3, styleSet4, styleSet5)'
     fullName: 'concatStyleSets(styleSet1, styleSet2, styleSet3, styleSet4, styleSet5)'
@@ -240,15 +171,16 @@ items:
     type: function
     syntax:
       content: >-
-        export declare function concatStyleSets<TStyleSet1 extends IStyleSet<TStyleSet1>, TStyleSet2 extends
-        IStyleSet<TStyleSet2>, TStyleSet3 extends IStyleSet<TStyleSet3>, TStyleSet4 extends IStyleSet<TStyleSet4>,
-        TStyleSet5 extends IStyleSet<TStyleSet5>>(styleSet1: TStyleSet1 | false | null | undefined, styleSet2:
-        TStyleSet2 | false | null | undefined, styleSet3: TStyleSet3 | false | null | undefined, styleSet4: TStyleSet4 |
-        false | null | undefined, styleSet5: TStyleSet5 | false | null | undefined): IConcatenatedStyleSet<TStyleSet1 &
-        TStyleSet2 & TStyleSet3 & TStyleSet4 & TStyleSet5>;
+        export declare function concatStyleSets<TStyleSet1, TStyleSet2, TStyleSet3, TStyleSet4, TStyleSet5>(styleSet1:
+        TStyleSet1 | false | null | undefined, styleSet2: TStyleSet2 | false | null | undefined, styleSet3: TStyleSet3 |
+        false | null | undefined, styleSet4: TStyleSet4 | false | null | undefined, styleSet5: TStyleSet5 | false | null
+        | undefined): IConcatenatedStyleSet<ObjectOnly<TStyleSet1> & ObjectOnly<TStyleSet2> & ObjectOnly<TStyleSet3> &
+        ObjectOnly<TStyleSet4> & ObjectOnly<TStyleSet5>>;
       return:
         type:
-          - IConcatenatedStyleSet<TStyleSet1 & TStyleSet2 & TStyleSet3 & TStyleSet4 & TStyleSet5>
+          - >-
+            IConcatenatedStyleSet<ObjectOnly<TStyleSet1> & ObjectOnly<TStyleSet2> & ObjectOnly<TStyleSet3> &
+            ObjectOnly<TStyleSet4> & ObjectOnly<TStyleSet5>>
         description: ''
       parameters:
         - id: styleSet1
@@ -273,21 +205,11 @@ items:
             - TStyleSet5 | false | null | undefined
       typeParameters:
         - id: TStyleSet1
-          type:
-            - IStyleSet<TStyleSet1>
         - id: TStyleSet2
-          type:
-            - IStyleSet<TStyleSet2>
         - id: TStyleSet3
-          type:
-            - IStyleSet<TStyleSet3>
         - id: TStyleSet4
-          type:
-            - IStyleSet<TStyleSet4>
         - id: TStyleSet5
-          type:
-            - IStyleSet<TStyleSet5>
-  - uid: '@uifabric/merge-styles!concatStyleSets:function(7)'
+  - uid: '@uifabric/merge-styles!concatStyleSets:function(6)'
     summary: Combine a set of styles together (but does not register css classes).
     name: 'concatStyleSets(styleSet1, styleSet2, styleSet3, styleSet4, styleSet5, styleSet6)'
     fullName: 'concatStyleSets(styleSet1, styleSet2, styleSet3, styleSet4, styleSet5, styleSet6)'
@@ -296,16 +218,17 @@ items:
     type: function
     syntax:
       content: >-
-        export declare function concatStyleSets<TStyleSet1 extends IStyleSet<TStyleSet1>, TStyleSet2 extends
-        IStyleSet<TStyleSet2>, TStyleSet3 extends IStyleSet<TStyleSet3>, TStyleSet4 extends IStyleSet<TStyleSet4>,
-        TStyleSet5 extends IStyleSet<TStyleSet5>, TStyleSet6 extends IStyleSet<TStyleSet6>>(styleSet1: TStyleSet1 |
-        false | null | undefined, styleSet2: TStyleSet2 | false | null | undefined, styleSet3: TStyleSet3 | false | null
-        | undefined, styleSet4: TStyleSet4 | false | null | undefined, styleSet5: TStyleSet5 | false | null | undefined,
-        styleSet6: TStyleSet6 | false | null | undefined): IConcatenatedStyleSet<TStyleSet1 & TStyleSet2 & TStyleSet3 &
-        TStyleSet4 & TStyleSet5 & TStyleSet6>;
+        export declare function concatStyleSets<TStyleSet1, TStyleSet2, TStyleSet3, TStyleSet4, TStyleSet5,
+        TStyleSet6>(styleSet1: TStyleSet1 | false | null | undefined, styleSet2: TStyleSet2 | false | null | undefined,
+        styleSet3: TStyleSet3 | false | null | undefined, styleSet4: TStyleSet4 | false | null | undefined, styleSet5:
+        TStyleSet5 | false | null | undefined, styleSet6: TStyleSet6 | false | null | undefined):
+        IConcatenatedStyleSet<ObjectOnly<TStyleSet1> & ObjectOnly<TStyleSet2> & ObjectOnly<TStyleSet3> &
+        ObjectOnly<TStyleSet4> & ObjectOnly<TStyleSet5> & ObjectOnly<TStyleSet6>>;
       return:
         type:
-          - IConcatenatedStyleSet<TStyleSet1 & TStyleSet2 & TStyleSet3 & TStyleSet4 & TStyleSet5 & TStyleSet6>
+          - >-
+            IConcatenatedStyleSet<ObjectOnly<TStyleSet1> & ObjectOnly<TStyleSet2> & ObjectOnly<TStyleSet3> &
+            ObjectOnly<TStyleSet4> & ObjectOnly<TStyleSet5> & ObjectOnly<TStyleSet6>>
         description: ''
       parameters:
         - id: styleSet1
@@ -334,24 +257,12 @@ items:
             - TStyleSet6 | false | null | undefined
       typeParameters:
         - id: TStyleSet1
-          type:
-            - IStyleSet<TStyleSet1>
         - id: TStyleSet2
-          type:
-            - IStyleSet<TStyleSet2>
         - id: TStyleSet3
-          type:
-            - IStyleSet<TStyleSet3>
         - id: TStyleSet4
-          type:
-            - IStyleSet<TStyleSet4>
         - id: TStyleSet5
-          type:
-            - IStyleSet<TStyleSet5>
         - id: TStyleSet6
-          type:
-            - IStyleSet<TStyleSet6>
-  - uid: '@uifabric/merge-styles!concatStyleSets:function(8)'
+  - uid: '@uifabric/merge-styles!concatStyleSets:function(7)'
     summary: Combine a set of styles together (but does not register css classes).
     name: concatStyleSets(styleSets)
     fullName: concatStyleSets(styleSets)
@@ -360,7 +271,7 @@ items:
     type: function
     syntax:
       content: >-
-        export declare function concatStyleSets(...styleSets: (IStyleSet<any> | false | null | undefined)[]):
+        export declare function concatStyleSets(...styleSets: (IStyleSet | false | null | undefined)[]):
         IConcatenatedStyleSet<any>;
       return:
         type:
@@ -370,7 +281,7 @@ items:
         - id: styleSets
           description: One or more stylesets to be merged (each param can also be falsy).
           type:
-            - '(IStyleSet<any> | false | null | undefined)[]'
+            - '(IStyleSet | false | null | undefined)[]'
   - uid: '@uifabric/merge-styles!concatStyleSetsWithProps:function(1)'
     summary: 'Concatenates style sets into one, but resolves functional sets using the given props.'
     name: 'concatStyleSetsWithProps(styleProps, allStyles)'
@@ -483,8 +394,8 @@ items:
     type: function
     syntax:
       content: >-
-        export declare function mergeCssSets<TStyleSet extends IStyleSet<TStyleSet>>(styleSets: [TStyleSet | false |
-        null | undefined], options?: IStyleOptions): IProcessedStyleSet<TStyleSet>;
+        export declare function mergeCssSets<TStyleSet>(styleSets: [TStyleSet | false | null | undefined], options?:
+        IStyleOptions): IProcessedStyleSet<TStyleSet>;
       return:
         type:
           - IProcessedStyleSet<TStyleSet>
@@ -500,8 +411,6 @@ items:
             - IStyleOptions
       typeParameters:
         - id: TStyleSet
-          type:
-            - IStyleSet<TStyleSet>
   - uid: '@uifabric/merge-styles!mergeCssSets:function(2)'
     summary: >-
       Takes in one or more style set objects, each1consisting of a set of areas, each which will produce a class name.
@@ -514,9 +423,8 @@ items:
     type: function
     syntax:
       content: >-
-        export declare function mergeCssSets<TStyleSet1 extends IStyleSet<TStyleSet1>, TStyleSet2 extends
-        IStyleSet<TStyleSet2>>(styleSets: [TStyleSet1 | false | null | undefined, TStyleSet2 | false | null |
-        undefined], options?: IStyleOptions): IProcessedStyleSet<TStyleSet1 & TStyleSet2>;
+        export declare function mergeCssSets<TStyleSet1, TStyleSet2>(styleSets: [TStyleSet1 | false | null | undefined,
+        TStyleSet2 | false | null | undefined], options?: IStyleOptions): IProcessedStyleSet<TStyleSet1 & TStyleSet2>;
       return:
         type:
           - IProcessedStyleSet<TStyleSet1 & TStyleSet2>
@@ -532,11 +440,7 @@ items:
             - IStyleOptions
       typeParameters:
         - id: TStyleSet1
-          type:
-            - IStyleSet<TStyleSet1>
         - id: TStyleSet2
-          type:
-            - IStyleSet<TStyleSet2>
   - uid: '@uifabric/merge-styles!mergeCssSets:function(3)'
     summary: >-
       Takes in one or more style set objects, each1consisting of a set of areas, each which will produce a class name.
@@ -549,8 +453,7 @@ items:
     type: function
     syntax:
       content: >-
-        export declare function mergeCssSets<TStyleSet1 extends IStyleSet<TStyleSet1>, TStyleSet2 extends
-        IStyleSet<TStyleSet2>, TStyleSet3 extends IStyleSet<TStyleSet3>>(styleSets: [TStyleSet1 | false | null |
+        export declare function mergeCssSets<TStyleSet1, TStyleSet2, TStyleSet3>(styleSets: [TStyleSet1 | false | null |
         undefined, TStyleSet2 | false | null | undefined, TStyleSet3 | false | null | undefined], options?:
         IStyleOptions): IProcessedStyleSet<TStyleSet1 & TStyleSet2 & TStyleSet3>;
       return:
@@ -570,14 +473,8 @@ items:
             - IStyleOptions
       typeParameters:
         - id: TStyleSet1
-          type:
-            - IStyleSet<TStyleSet1>
         - id: TStyleSet2
-          type:
-            - IStyleSet<TStyleSet2>
         - id: TStyleSet3
-          type:
-            - IStyleSet<TStyleSet3>
   - uid: '@uifabric/merge-styles!mergeCssSets:function(4)'
     summary: >-
       Takes in one or more style set objects, each1consisting of a set of areas, each which will produce a class name.
@@ -590,14 +487,15 @@ items:
     type: function
     syntax:
       content: >-
-        export declare function mergeCssSets<TStyleSet1 extends IStyleSet<TStyleSet1>, TStyleSet2 extends
-        IStyleSet<TStyleSet2>, TStyleSet3 extends IStyleSet<TStyleSet3>, TStyleSet4 extends
-        IStyleSet<TStyleSet4>>(styleSets: [TStyleSet1 | false | null | undefined, TStyleSet2 | false | null | undefined,
-        TStyleSet3 | false | null | undefined, TStyleSet4 | false | null | undefined], options?: IStyleOptions):
-        IProcessedStyleSet<TStyleSet1 & TStyleSet2 & TStyleSet3 & TStyleSet4>;
+        export declare function mergeCssSets<TStyleSet1, TStyleSet2, TStyleSet3, TStyleSet4>(styleSets: [TStyleSet1 |
+        false | null | undefined, TStyleSet2 | false | null | undefined, TStyleSet3 | false | null | undefined,
+        TStyleSet4 | false | null | undefined], options?: IStyleOptions): IProcessedStyleSet<ObjectOnly<TStyleSet1> &
+        ObjectOnly<TStyleSet2> & ObjectOnly<TStyleSet3> & ObjectOnly<TStyleSet4>>;
       return:
         type:
-          - IProcessedStyleSet<TStyleSet1 & TStyleSet2 & TStyleSet3 & TStyleSet4>
+          - >-
+            IProcessedStyleSet<ObjectOnly<TStyleSet1> & ObjectOnly<TStyleSet2> & ObjectOnly<TStyleSet3> &
+            ObjectOnly<TStyleSet4>>
         description: ''
       parameters:
         - id: styleSets
@@ -612,17 +510,9 @@ items:
             - IStyleOptions
       typeParameters:
         - id: TStyleSet1
-          type:
-            - IStyleSet<TStyleSet1>
         - id: TStyleSet2
-          type:
-            - IStyleSet<TStyleSet2>
         - id: TStyleSet3
-          type:
-            - IStyleSet<TStyleSet3>
         - id: TStyleSet4
-          type:
-            - IStyleSet<TStyleSet4>
   - uid: '@uifabric/merge-styles!mergeCssSets:function(5)'
     summary: >-
       Takes in one or more style set objects, each1consisting of a set of areas, each which will produce a class name.
@@ -635,8 +525,8 @@ items:
     type: function
     syntax:
       content: >-
-        export declare function mergeCssSets<TStyleSet extends IStyleSet<TStyleSet>>(styleSet: [TStyleSet | false | null
-        | undefined], options?: IStyleOptions): IProcessedStyleSet<TStyleSet>;
+        export declare function mergeCssSets<TStyleSet>(styleSet: [TStyleSet | false | null | undefined], options?:
+        IStyleOptions): IProcessedStyleSet<TStyleSet>;
       return:
         type:
           - IProcessedStyleSet<TStyleSet>
@@ -652,8 +542,6 @@ items:
             - IStyleOptions
       typeParameters:
         - id: TStyleSet
-          type:
-            - IStyleSet<TStyleSet>
   - uid: '@uifabric/merge-styles!mergeStyles:function(1)'
     summary: 'Concatenation helper, which can merge class names together. Skips over falsey values.'
     name: mergeStyles(args)
@@ -684,11 +572,11 @@ items:
     type: function
     syntax:
       content: >-
-        export declare function mergeStyleSets<TStyleSet extends IStyleSet<TStyleSet>>(styleSet: TStyleSet | false |
-        null | undefined): IProcessedStyleSet<TStyleSet>;
+        export declare function mergeStyleSets<TStyleSet>(styleSet: TStyleSet | false | null | undefined):
+        IProcessedStyleSet<ObjectOnly<TStyleSet>>;
       return:
         type:
-          - IProcessedStyleSet<TStyleSet>
+          - IProcessedStyleSet<ObjectOnly<TStyleSet>>
         description: ''
       parameters:
         - id: styleSet
@@ -697,8 +585,6 @@ items:
             - TStyleSet | false | null | undefined
       typeParameters:
         - id: TStyleSet
-          type:
-            - IStyleSet<TStyleSet>
   - uid: '@uifabric/merge-styles!mergeStyleSets:function(2)'
     summary: >-
       Takes in one or more style set objects, each consisting of a set of areas, each which will produce a class name.
@@ -711,12 +597,12 @@ items:
     type: function
     syntax:
       content: >-
-        export declare function mergeStyleSets<TStyleSet1 extends IStyleSet<TStyleSet1>, TStyleSet2 extends
-        IStyleSet<TStyleSet2>>(styleSet1: TStyleSet1 | false | null | undefined, styleSet2: TStyleSet2 | false | null |
-        undefined): IProcessedStyleSet<TStyleSet1 & TStyleSet2>;
+        export declare function mergeStyleSets<TStyleSet1, TStyleSet2>(styleSet1: TStyleSet1 | false | null | undefined,
+        styleSet2: TStyleSet2 | false | null | undefined): IProcessedStyleSet<ObjectOnly<TStyleSet1> &
+        ObjectOnly<TStyleSet2>>;
       return:
         type:
-          - IProcessedStyleSet<TStyleSet1 & TStyleSet2>
+          - IProcessedStyleSet<ObjectOnly<TStyleSet1> & ObjectOnly<TStyleSet2>>
         description: ''
       parameters:
         - id: styleSet1
@@ -729,11 +615,7 @@ items:
             - TStyleSet2 | false | null | undefined
       typeParameters:
         - id: TStyleSet1
-          type:
-            - IStyleSet<TStyleSet1>
         - id: TStyleSet2
-          type:
-            - IStyleSet<TStyleSet2>
   - uid: '@uifabric/merge-styles!mergeStyleSets:function(3)'
     summary: >-
       Takes in one or more style set objects, each consisting of a set of areas, each which will produce a class name.
@@ -746,13 +628,12 @@ items:
     type: function
     syntax:
       content: >-
-        export declare function mergeStyleSets<TStyleSet1 extends IStyleSet<TStyleSet1>, TStyleSet2 extends
-        IStyleSet<TStyleSet2>, TStyleSet3 extends IStyleSet<TStyleSet3>>(styleSet1: TStyleSet1 | false | null |
-        undefined, styleSet2: TStyleSet2 | false | null | undefined, styleSet3: TStyleSet3 | false | null | undefined):
-        IProcessedStyleSet<TStyleSet1 & TStyleSet2 & TStyleSet3>;
+        export declare function mergeStyleSets<TStyleSet1, TStyleSet2, TStyleSet3>(styleSet1: TStyleSet1 | false | null
+        | undefined, styleSet2: TStyleSet2 | false | null | undefined, styleSet3: TStyleSet3 | false | null |
+        undefined): IProcessedStyleSet<ObjectOnly<TStyleSet1> & ObjectOnly<TStyleSet2> & ObjectOnly<TStyleSet3>>;
       return:
         type:
-          - IProcessedStyleSet<TStyleSet1 & TStyleSet2 & TStyleSet3>
+          - IProcessedStyleSet<ObjectOnly<TStyleSet1> & ObjectOnly<TStyleSet2> & ObjectOnly<TStyleSet3>>
         description: ''
       parameters:
         - id: styleSet1
@@ -769,14 +650,8 @@ items:
             - TStyleSet3 | false | null | undefined
       typeParameters:
         - id: TStyleSet1
-          type:
-            - IStyleSet<TStyleSet1>
         - id: TStyleSet2
-          type:
-            - IStyleSet<TStyleSet2>
         - id: TStyleSet3
-          type:
-            - IStyleSet<TStyleSet3>
   - uid: '@uifabric/merge-styles!mergeStyleSets:function(4)'
     summary: >-
       Takes in one or more style set objects, each consisting of a set of areas, each which will produce a class name.
@@ -789,14 +664,15 @@ items:
     type: function
     syntax:
       content: >-
-        export declare function mergeStyleSets<TStyleSet1 extends IStyleSet<TStyleSet1>, TStyleSet2 extends
-        IStyleSet<TStyleSet2>, TStyleSet3 extends IStyleSet<TStyleSet3>, TStyleSet4 extends
-        IStyleSet<TStyleSet4>>(styleSet1: TStyleSet1 | false | null | undefined, styleSet2: TStyleSet2 | false | null |
-        undefined, styleSet3: TStyleSet3 | false | null | undefined, styleSet4: TStyleSet4 | false | null | undefined):
-        IProcessedStyleSet<TStyleSet1 & TStyleSet2 & TStyleSet3 & TStyleSet4>;
+        export declare function mergeStyleSets<TStyleSet1, TStyleSet2, TStyleSet3, TStyleSet4>(styleSet1: TStyleSet1 |
+        false | null | undefined, styleSet2: TStyleSet2 | false | null | undefined, styleSet3: TStyleSet3 | false | null
+        | undefined, styleSet4: TStyleSet4 | false | null | undefined): IProcessedStyleSet<ObjectOnly<TStyleSet1> &
+        ObjectOnly<TStyleSet2> & ObjectOnly<TStyleSet3> & ObjectOnly<TStyleSet4>>;
       return:
         type:
-          - IProcessedStyleSet<TStyleSet1 & TStyleSet2 & TStyleSet3 & TStyleSet4>
+          - >-
+            IProcessedStyleSet<ObjectOnly<TStyleSet1> & ObjectOnly<TStyleSet2> & ObjectOnly<TStyleSet3> &
+            ObjectOnly<TStyleSet4>>
         description: ''
       parameters:
         - id: styleSet1
@@ -817,17 +693,9 @@ items:
             - TStyleSet4 | false | null | undefined
       typeParameters:
         - id: TStyleSet1
-          type:
-            - IStyleSet<TStyleSet1>
         - id: TStyleSet2
-          type:
-            - IStyleSet<TStyleSet2>
         - id: TStyleSet3
-          type:
-            - IStyleSet<TStyleSet3>
         - id: TStyleSet4
-          type:
-            - IStyleSet<TStyleSet4>
   - uid: '@uifabric/merge-styles!mergeStyleSets:function(5)'
     summary: >-
       Takes in one or more style set objects, each consisting of a set of areas, each which will produce a class name.
@@ -840,7 +708,7 @@ items:
     type: function
     syntax:
       content: >-
-        export declare function mergeStyleSets(...styleSets: Array<IStyleSet<any> | undefined | false | null>):
+        export declare function mergeStyleSets(...styleSets: Array<IStyleSet | undefined | false | null>):
         IProcessedStyleSet<any>;
       return:
         type:
@@ -850,7 +718,7 @@ items:
         - id: styleSets
           description: One or more style sets to be merged.
           type:
-            - Array<IStyleSet<any> | undefined | false | null>
+            - Array<IStyleSet | undefined | false | null>
   - uid: '@uifabric/merge-styles!setRTL:function(1)'
     summary: Sets the current RTL value.
     name: setRTL(isRTL)

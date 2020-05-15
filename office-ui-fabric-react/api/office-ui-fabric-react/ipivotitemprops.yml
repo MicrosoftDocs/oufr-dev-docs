@@ -58,13 +58,13 @@ items:
     type: property
     syntax:
       content: |-
-        headerButtonProps?: {
+        headerButtonProps?: IButtonProps & {
                 [key: string]: string | number | boolean;
             };
       return:
         type:
           - |-
-            {
+            IButtonProps & {
                     [key: string]: string | number | boolean;
                 }
   - uid: 'office-ui-fabric-react!IPivotItemProps#headerText:member'
