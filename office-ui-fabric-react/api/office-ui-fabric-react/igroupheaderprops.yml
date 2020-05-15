@@ -15,8 +15,10 @@ items:
       - 'office-ui-fabric-react!IGroupHeaderProps#expandButtonIcon:member'
       - 'office-ui-fabric-react!IGroupHeaderProps#expandButtonProps:member'
       - 'office-ui-fabric-react!IGroupHeaderProps#groupedListId:member'
+      - 'office-ui-fabric-react!IGroupHeaderProps#onRenderGroupHeaderCheckbox:member'
       - 'office-ui-fabric-react!IGroupHeaderProps#selectAllButtonProps:member'
       - 'office-ui-fabric-react!IGroupHeaderProps#styles:member'
+      - 'office-ui-fabric-react!IGroupHeaderProps#useFastIcons:member'
   - uid: 'office-ui-fabric-react!IGroupHeaderProps#ariaPosInSet:member'
     summary: Defines an element's number or position in the current set of listitems or treeitems
     name: ariaPosInSet
@@ -77,6 +79,18 @@ items:
       return:
         type:
           - string
+  - uid: 'office-ui-fabric-react!IGroupHeaderProps#onRenderGroupHeaderCheckbox:member'
+    summary: 'If provided, can be used to render a custom checkbox'
+    name: onRenderGroupHeaderCheckbox
+    fullName: onRenderGroupHeaderCheckbox
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onRenderGroupHeaderCheckbox?: IRenderFunction<IGroupHeaderCheckboxProps>;'
+      return:
+        type:
+          - IRenderFunction<IGroupHeaderCheckboxProps>
   - uid: 'office-ui-fabric-react!IGroupHeaderProps#selectAllButtonProps:member'
     summary: Native props for the GroupHeader select all button
     name: selectAllButtonProps
@@ -101,3 +115,17 @@ items:
       return:
         type:
           - 'IStyleFunctionOrObject<IGroupHeaderStyleProps, IGroupHeaderStyles>'
+  - uid: 'office-ui-fabric-react!IGroupHeaderProps#useFastIcons:member'
+    summary: >-
+      Whether to use fast icon and check components. The icons can't be targeted by customization but are still
+      customizable via class names.
+    name: useFastIcons
+    fullName: useFastIcons
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'useFastIcons?: boolean;'
+      return:
+        type:
+          - boolean

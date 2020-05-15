@@ -13,6 +13,7 @@ items:
     children:
       - '@uifabric/utilities!ISelectionOptions#canSelectItem:member'
       - '@uifabric/utilities!ISelectionOptions#getKey:member'
+      - '@uifabric/utilities!ISelectionOptions#items:member'
       - '@uifabric/utilities!ISelectionOptions#onSelectionChanged:member'
       - '@uifabric/utilities!ISelectionOptions#selectionMode:member'
   - uid: '@uifabric/utilities!ISelectionOptions#canSelectItem:member'
@@ -38,6 +39,17 @@ items:
       return:
         type:
           - '(item: TItem, index?: number) => string | number'
+  - uid: '@uifabric/utilities!ISelectionOptions#items:member'
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items?: TItem[];'
+      return:
+        type:
+          - 'TItem[]'
   - uid: '@uifabric/utilities!ISelectionOptions#onSelectionChanged:member'
     name: onSelectionChanged
     fullName: onSelectionChanged
