@@ -47,8 +47,8 @@ items:
       - 'office-ui-fabric-react!IColumn#styles:member'
   - uid: 'office-ui-fabric-react!IColumn#ariaLabel:member'
     summary: >-
-      Optional accessibility label (aria-label) attribute that will be stamped on to the element. If none is specified,
-      the arai-label attribute will contain the column name
+      Accessible label for the column. The column name will still be used as the primary label, but this text (if
+      specified) will be read after the column name.
     name: ariaLabel
     fullName: ariaLabel
     langs:
@@ -72,7 +72,7 @@ items:
         type:
           - number
   - uid: 'office-ui-fabric-react!IColumn#className:member'
-    summary: An optional class name to stick on the column cell within each row.
+    summary: Class name to apply to the column cell within each row.
     name: className
     fullName: className
     langs:
@@ -97,8 +97,8 @@ items:
           - 'office-ui-fabric-react!ColumnActionsMode:enum'
   - uid: 'office-ui-fabric-react!IColumn#currentWidth:member'
     summary: >-
-      Internal only value. Remembers the actual witdh of the column on any case. On the other hand, calculatedWidth is
-      only saved when it's defined by user, not for justified calculations.
+      Internal only value. Remembers the actual width of the column in any case. `calculatedWidth` is only saved when
+      it's defined by user, not for justified calculations.
     name: currentWidth
     fullName: currentWidth
     langs:
@@ -122,7 +122,7 @@ items:
         type:
           - any
   - uid: 'office-ui-fabric-react!IColumn#fieldName:member'
-    summary: The field to pull the text value from for the column. This can be null if a custom onRender method is provided.
+    summary: The field to pull the text value from for the column. Can be unset if a custom `onRender` method is provided.
     name: fieldName
     fullName: fieldName
     langs:
@@ -134,7 +134,7 @@ items:
         type:
           - string
   - uid: 'office-ui-fabric-react!IColumn#filterAriaLabel:member'
-    summary: ARIA label for the status of this column when filtered.
+    summary: Accessible label for the status of this column when filtered.
     name: filterAriaLabel
     fullName: filterAriaLabel
     langs:
@@ -146,7 +146,7 @@ items:
         type:
           - string
   - uid: 'office-ui-fabric-react!IColumn#getValueKey:member'
-    summary: 'If set, parent getCellValueKey will return this value.'
+    summary: Custom override for the parent list's `getCellValueKey`<!-- -->.
     name: getValueKey
     fullName: getValueKey
     langs:
@@ -158,7 +158,7 @@ items:
         type:
           - '(item?: any, index?: number, column?: IColumn) => string'
   - uid: 'office-ui-fabric-react!IColumn#groupAriaLabel:member'
-    summary: ARIA label for the status of this column when grouped.
+    summary: Accessible label for the status of this column when grouped.
     name: groupAriaLabel
     fullName: groupAriaLabel
     langs:
@@ -170,7 +170,7 @@ items:
         type:
           - string
   - uid: 'office-ui-fabric-react!IColumn#headerClassName:member'
-    summary: An optional class name to stick on the column cell within each header.
+    summary: Class name to apply to the column header cell.
     name: headerClassName
     fullName: headerClassName
     langs:
@@ -182,7 +182,7 @@ items:
         type:
           - string
   - uid: 'office-ui-fabric-react!IColumn#iconClassName:member'
-    summary: Class name to add to the Icon component.
+    summary: Class name for the icon within the header.
     name: iconClassName
     fullName: iconClassName
     langs:
@@ -194,7 +194,7 @@ items:
         type:
           - string
   - uid: 'office-ui-fabric-react!IColumn#iconName:member'
-    summary: Optional iconName to use for the column header.
+    summary: Custom icon to use in the column header.
     name: iconName
     fullName: iconName
     langs:
@@ -206,7 +206,7 @@ items:
         type:
           - string
   - uid: 'office-ui-fabric-react!IColumn#isCollapsable:member'
-    summary: If specified will allow the column to be collapsed when rendered in justified layout.
+    summary: 'If true, allow the column to be collapsed when rendered in justified layout.'
     deprecated:
       content: Use `isCollapsible`
     name: isCollapsable
@@ -220,7 +220,7 @@ items:
         type:
           - boolean
   - uid: 'office-ui-fabric-react!IColumn#isCollapsible:member'
-    summary: If specified will allow the column to be collapsed when rendered in justified layout.
+    summary: 'If true, allow the column to be collapsed when rendered in justified layout.'
     name: isCollapsible
     fullName: isCollapsible
     langs:
@@ -232,7 +232,7 @@ items:
         type:
           - boolean
   - uid: 'office-ui-fabric-react!IColumn#isFiltered:member'
-    summary: 'Determines if the column is filtered, and if so shows a filter icon.'
+    summary: 'Whether the list is filtered by this column. If true, shows a filter icon next to this column''s name.'
     name: isFiltered
     fullName: isFiltered
     langs:
@@ -244,7 +244,7 @@ items:
         type:
           - boolean
   - uid: 'office-ui-fabric-react!IColumn#isGrouped:member'
-    summary: If set will show a grouped icon next to the column header name.
+    summary: 'Whether the list is grouped by this column. If true, shows a grouped icon next to this column''s name.'
     name: isGrouped
     fullName: isGrouped
     langs:
@@ -257,8 +257,8 @@ items:
           - boolean
   - uid: 'office-ui-fabric-react!IColumn#isIconOnly:member'
     summary: >-
-      Whether or not only the icon is used in the column header. Set this to true so the column name and dropdown
-      chevron are not displayed.
+      Whether only the icon should be displayed in the column header. If true, the column name and dropdown chevron will
+      not be displayed.
     name: isIconOnly
     fullName: isIconOnly
     langs:
@@ -270,7 +270,7 @@ items:
         type:
           - boolean
   - uid: 'office-ui-fabric-react!IColumn#isMenuOpen:member'
-    summary: Indicates whether a dropdown menu is open so that the appropriate ARIA attributes are rendered.
+    summary: Whether a dropdown menu is open so that the appropriate ARIA attributes are rendered.
     name: isMenuOpen
     fullName: isMenuOpen
     langs:
@@ -294,7 +294,7 @@ items:
         type:
           - boolean
   - uid: 'office-ui-fabric-react!IColumn#isPadded:member'
-    summary: 'If set, will add additional LTR padding-right to column and cells.'
+    summary: 'If true, add additional LTR padding-right to column and cells.'
     name: isPadded
     fullName: isPadded
     langs:
@@ -318,9 +318,7 @@ items:
         type:
           - boolean
   - uid: 'office-ui-fabric-react!IColumn#isRowHeader:member'
-    summary: >-
-      Optional flag on whether the column is a header for the given row. There should be only one column with row header
-      set to true.
+    summary: Whether the column is a header for the given row. There should be only one column with this set to true.
     name: isRowHeader
     fullName: isRowHeader
     langs:
@@ -344,7 +342,7 @@ items:
         type:
           - boolean
   - uid: 'office-ui-fabric-react!IColumn#isSortedDescending:member'
-    summary: Determines if the arrow is pointed down (descending) or up.
+    summary: Determines if the sort arrow is pointed down (descending) or up.
     name: isSortedDescending
     fullName: isSortedDescending
     langs:
@@ -404,7 +402,7 @@ items:
         type:
           - string
   - uid: 'office-ui-fabric-react!IColumn#onColumnClick:member'
-    summary: 'If provided, will be executed when the user clicks on the column header.'
+    summary: Callback for when the user clicks on the column header.
     name: onColumnClick
     fullName: onColumnClick
     langs:
@@ -416,7 +414,7 @@ items:
         type:
           - '(ev: React.MouseEvent<HTMLElement>, column: IColumn) => void'
   - uid: 'office-ui-fabric-react!IColumn#onColumnContextMenu:member'
-    summary: 'If provided, will be executed when the user accesses the contextmenu on a column header.'
+    summary: Callback for when the user opens the column header context menu.
     name: onColumnContextMenu
     fullName: onColumnContextMenu
     langs:
@@ -429,9 +427,11 @@ items:
           - '(column?: IColumn, ev?: React.MouseEvent<HTMLElement>) => void'
   - uid: 'office-ui-fabric-react!IColumn#onColumnResize:member'
     summary: >-
-      If provided, will be executed when the column is resized with the column's current width. Prefer this callback
-      over `DetailsList` `onColumnResize` if you require the `IColumn` to report its width after every resize event.
-      Consider debouncing the callback if resize events occur frequently.
+      Callback for when the column is resized (`width` is the current width).
+
+
+      Prefer this over `DetailsList`<!-- -->'s `onColumnResize` if you require the `IColumn` to report its width after
+      every resize event. Consider debouncing the callback if resize events occur frequently.
     name: onColumnResize
     fullName: onColumnResize
     langs:
@@ -443,7 +443,7 @@ items:
         type:
           - '(width?: number) => void'
   - uid: 'office-ui-fabric-react!IColumn#onRender:member'
-    summary: 'If provided uses this method to render custom cell content, rather than the default text rendering.'
+    summary: 'Custom renderer for cell content, instead of the default text rendering.'
     name: onRender
     fullName: onRender
     langs:
@@ -455,7 +455,7 @@ items:
         type:
           - '(item?: any, index?: number, column?: IColumn) => any'
   - uid: 'office-ui-fabric-react!IColumn#onRenderDivider:member'
-    summary: 'If provider, can be used to render a custom column header divider'
+    summary: Custom renderer for column header divider.
     name: onRenderDivider
     fullName: onRenderDivider
     langs:
@@ -467,7 +467,9 @@ items:
         type:
           - IRenderFunction<IDetailsColumnProps>
   - uid: 'office-ui-fabric-react!IColumn#sortAscendingAriaLabel:member'
-    summary: ARIA label for the sort order of this column when sorted ascending.
+    summary: >-
+      Accessible label for indicating that the list is sorted by this column in ascending order. This will be read after
+      the main column header label.
     name: sortAscendingAriaLabel
     fullName: sortAscendingAriaLabel
     langs:
@@ -479,7 +481,9 @@ items:
         type:
           - string
   - uid: 'office-ui-fabric-react!IColumn#sortDescendingAriaLabel:member'
-    summary: ARIA label for the sort order of this column when sorted descending.
+    summary: >-
+      Accessible label for indicating that the list is sorted by this column in descending order. This will be read
+      after the main column header label.
     name: sortDescendingAriaLabel
     fullName: sortDescendingAriaLabel
     langs:
@@ -491,7 +495,7 @@ items:
         type:
           - string
   - uid: 'office-ui-fabric-react!IColumn#styles:member'
-    summary: Style function to be passed in to override the themed or default styles
+    summary: Custom overrides to the themed or default styles.
     name: styles
     fullName: styles
     langs:

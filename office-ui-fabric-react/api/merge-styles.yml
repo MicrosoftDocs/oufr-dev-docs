@@ -293,10 +293,10 @@ items:
       content: >-
         export declare function concatStyleSetsWithProps<TStyleProps, TStyleSet extends
         IStyleSet<TStyleSet>>(styleProps: TStyleProps, ...allStyles: (IStyleFunctionOrObject<TStyleProps, TStyleSet> |
-        undefined)[]): Partial<TStyleSet>;
+        undefined)[]): DeepPartial<TStyleSet>;
       return:
         type:
-          - Partial<TStyleSet>
+          - DeepPartial<TStyleSet>
         description: ''
       parameters:
         - id: styleProps

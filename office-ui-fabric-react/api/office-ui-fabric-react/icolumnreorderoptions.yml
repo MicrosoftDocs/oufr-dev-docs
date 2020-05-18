@@ -27,7 +27,7 @@ items:
         type:
           - number
   - uid: 'office-ui-fabric-react!IColumnReorderOptions#frozenColumnCountFromStart:member'
-    summary: Specifies the number fixed columns from left(0th index)
+    summary: Specifies the number fixed columns from left
     name: frozenColumnCountFromStart
     fullName: frozenColumnCountFromStart
     langs:
@@ -40,8 +40,8 @@ items:
           - number
   - uid: 'office-ui-fabric-react!IColumnReorderOptions#handleColumnReorder:member'
     summary: >-
-      Callback to handle the column reorder draggedIndex is the source column index, that need to be placed in
-      targetIndex Deprecated, use `onColumnDrop` instead.
+      Callback to handle column reordering. `draggedIndex` is the source column index, which should be placed at
+      `targetIndex`<!-- -->.
     deprecated:
       content: Use `onColumnDrop` instead.
     name: handleColumnReorder
@@ -55,9 +55,7 @@ items:
         type:
           - '(draggedIndex: number, targetIndex: number) => void'
   - uid: 'office-ui-fabric-react!IColumnReorderOptions#onColumnDragStart:member'
-    summary: >-
-      Callback to handle the column dragstart draggedStarted indicates that the column drag has been started on
-      DetailsHeader
+    summary: Callback to handle when dragging on this column's DetailsHeader has started.
     name: onColumnDragStart
     fullName: onColumnDragStart
     langs:
@@ -70,8 +68,8 @@ items:
           - '(dragStarted: boolean) => void'
   - uid: 'office-ui-fabric-react!IColumnReorderOptions#onColumnDrop:member'
     summary: >-
-      Callback to handle the column reorder draggedIndex is the source column index, that need to be placed in
-      targetIndex
+      Callback to handle column reordering. `draggedIndex` is the source column index, which should be placed at
+      `targetIndex`<!-- -->.
     name: onColumnDrop
     fullName: onColumnDrop
     langs:
@@ -83,7 +81,7 @@ items:
         type:
           - '(dragDropDetails: IColumnDragDropDetails) => void'
   - uid: 'office-ui-fabric-react!IColumnReorderOptions#onDragEnd:member'
-    summary: Callback to handle the column reorder
+    summary: Callback to handle when dragging on this column's DetailsHeader has finished.
     name: onDragEnd
     fullName: onDragEnd
     langs:
