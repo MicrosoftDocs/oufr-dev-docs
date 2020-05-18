@@ -75,7 +75,7 @@ items:
       - 'office-ui-fabric-react!IDetailsListProps#useReducedRowRenderer:member'
       - 'office-ui-fabric-react!IDetailsListProps#viewport:member'
   - uid: 'office-ui-fabric-react!IDetailsListProps#ariaLabel:member'
-    summary: A text summary of the table set via aria-label.
+    summary: Accessible label describing or summarizing the list.
     name: ariaLabel
     fullName: ariaLabel
     langs:
@@ -87,7 +87,7 @@ items:
         type:
           - string
   - uid: 'office-ui-fabric-react!IDetailsListProps#ariaLabelForGrid:member'
-    summary: Aria label for grid in details list.
+    summary: Accessible label for the grid within the list.
     name: ariaLabelForGrid
     fullName: ariaLabelForGrid
     langs:
@@ -99,7 +99,7 @@ items:
         type:
           - string
   - uid: 'office-ui-fabric-react!IDetailsListProps#ariaLabelForListHeader:member'
-    summary: The aria-label attribute to stamp out on the list header
+    summary: Accessible label for the list header.
     name: ariaLabelForListHeader
     fullName: ariaLabelForListHeader
     langs:
@@ -111,7 +111,7 @@ items:
         type:
           - string
   - uid: 'office-ui-fabric-react!IDetailsListProps#ariaLabelForSelectAllCheckbox:member'
-    summary: The aria-label attribute to stamp out on select all checkbox for the list
+    summary: Accessible label for the select all checkbox.
     name: ariaLabelForSelectAllCheckbox
     fullName: ariaLabelForSelectAllCheckbox
     langs:
@@ -123,7 +123,7 @@ items:
         type:
           - string
   - uid: 'office-ui-fabric-react!IDetailsListProps#ariaLabelForSelectionColumn:member'
-    summary: 'An ARIA label for the name of the selection column, for localization.'
+    summary: Accessible label for the name of the selection column.
     name: ariaLabelForSelectionColumn
     fullName: ariaLabelForSelectionColumn
     langs:
@@ -149,7 +149,7 @@ items:
         type:
           - 'office-ui-fabric-react!ICellStyleProps:interface'
   - uid: 'office-ui-fabric-react!IDetailsListProps#checkboxCellClassName:member'
-    summary: Optional class name to add to the cell of a checkbox
+    summary: Class name to add to the cell of a checkbox.
     name: checkboxCellClassName
     fullName: checkboxCellClassName
     langs:
@@ -173,7 +173,7 @@ items:
         type:
           - 'office-ui-fabric-react!CheckboxVisibility:enum'
   - uid: 'office-ui-fabric-react!IDetailsListProps#checkButtonAriaLabel:member'
-    summary: Check button aria label for details list.
+    summary: Accessible label for the check button.
     name: checkButtonAriaLabel
     fullName: checkButtonAriaLabel
     langs:
@@ -185,7 +185,7 @@ items:
         type:
           - string
   - uid: 'office-ui-fabric-react!IDetailsListProps#className:member'
-    summary: Optional class name to add to the root element.
+    summary: Class name to add to the root element.
     name: className
     fullName: className
     langs:
@@ -197,7 +197,7 @@ items:
         type:
           - string
   - uid: 'office-ui-fabric-react!IDetailsListProps#columnReorderOptions:member'
-    summary: Options for column re-order using drag and drop
+    summary: Options for column reordering using drag and drop.
     name: columnReorderOptions
     fullName: columnReorderOptions
     langs:
@@ -209,7 +209,7 @@ items:
         type:
           - 'office-ui-fabric-react!IColumnReorderOptions:interface'
   - uid: 'office-ui-fabric-react!IDetailsListProps#columns:member'
-    summary: 'Given column defitions. If none are provided, default columns will be created based on the item''s properties.'
+    summary: 'column defitions. If none are provided, default columns will be created based on the items'' properties.'
     name: columns
     fullName: columns
     langs:
@@ -221,7 +221,7 @@ items:
         type:
           - 'IColumn[]'
   - uid: 'office-ui-fabric-react!IDetailsListProps#compact:member'
-    summary: Whether the component should render in compact mode. Set to false by default
+    summary: Whether to render in compact mode.
     name: compact
     fullName: compact
     langs:
@@ -234,8 +234,8 @@ items:
           - boolean
   - uid: 'office-ui-fabric-react!IDetailsListProps#componentRef:member'
     summary: >-
-      Optional callback to access the IDetailsList interface. Use this instead of ref for accessing the public methods
-      and properties of the component.
+      Callback to access the IDetailsList interface. Use this instead of ref for accessing the public methods and
+      properties of the component.
     name: componentRef
     fullName: componentRef
     langs:
@@ -259,7 +259,7 @@ items:
         type:
           - 'office-ui-fabric-react!ConstrainMode:enum'
   - uid: 'office-ui-fabric-react!IDetailsListProps#disableSelectionZone:member'
-    summary: 'Whether or not to disable the built-in SelectionZone, so the host component can provide its own.'
+    summary: 'Whether to disable the built-in SelectionZone, so the host component can provide its own.'
     name: disableSelectionZone
     fullName: disableSelectionZone
     langs:
@@ -295,7 +295,7 @@ items:
         type:
           - boolean
   - uid: 'office-ui-fabric-react!IDetailsListProps#enterModalSelectionOnTouch:member'
-    summary: Whether or not the selection zone should enter modal state on touch.
+    summary: Whether the selection zone should enter modal state on touch.
     name: enterModalSelectionOnTouch
     fullName: enterModalSelectionOnTouch
     langs:
@@ -307,7 +307,9 @@ items:
         type:
           - boolean
   - uid: 'office-ui-fabric-react!IDetailsListProps#getCellValueKey:member'
-    summary: 'If provided, will be the "default" item column cell value return. column getValueKey can override getCellValue.'
+    summary: >-
+      If provided, will be the "default" item column cell value return. A column's `getValueKey` can override
+      `getCellValueKey`<!-- -->.
     name: getCellValueKey
     fullName: getCellValueKey
     langs:
@@ -319,7 +321,7 @@ items:
         type:
           - '(item?: any, index?: number, column?: IColumn) => string'
   - uid: 'office-ui-fabric-react!IDetailsListProps#getGroupHeight:member'
-    summary: Optional function to override default group height calculation used by list virtualization.
+    summary: Callback to override default group height calculation used by list virtualization.
     name: getGroupHeight
     fullName: getGroupHeight
     langs:
@@ -345,7 +347,7 @@ items:
         type:
           - '(item: any, index?: number) => string'
   - uid: 'office-ui-fabric-react!IDetailsListProps#getRowAriaDescribedBy:member'
-    summary: Callback to get the aria-describedby IDs (space separated strings) of the elements that describe the item.
+    summary: Callback to get the aria-describedby IDs (space-separated strings) of elements that describe the item.
     name: getRowAriaDescribedBy
     fullName: getRowAriaDescribedBy
     langs:
@@ -369,7 +371,7 @@ items:
         type:
           - '(item: any) => string'
   - uid: 'office-ui-fabric-react!IDetailsListProps#groupProps:member'
-    summary: Optional override properties to render groups.
+    summary: Override properties to render groups.
     name: groupProps
     fullName: groupProps
     langs:
@@ -381,7 +383,7 @@ items:
         type:
           - 'office-ui-fabric-react!IDetailsGroupRenderProps:interface'
   - uid: 'office-ui-fabric-react!IDetailsListProps#groups:member'
-    summary: Optional grouping instructions. The definition for IGroup can be found under the GroupedList component.
+    summary: Grouping instructions.
     name: groups
     fullName: groups
     langs:
@@ -393,7 +395,7 @@ items:
         type:
           - 'IGroup[]'
   - uid: 'office-ui-fabric-react!IDetailsListProps#indentWidth:member'
-    summary: Optional override for the indent width used for group nesting.
+    summary: Override for the indent width used for group nesting.
     name: indentWidth
     fullName: indentWidth
     langs:
@@ -405,7 +407,7 @@ items:
         type:
           - number
   - uid: 'office-ui-fabric-react!IDetailsListProps#initialFocusedIndex:member'
-    summary: Optional default focused index to set focus to once the items have rendered and the index exists.
+    summary: Default index to set focus to once the items have rendered and the index exists.
     name: initialFocusedIndex
     fullName: initialFocusedIndex
     langs:
@@ -417,7 +419,7 @@ items:
         type:
           - number
   - uid: 'office-ui-fabric-react!IDetailsListProps#isHeaderVisible:member'
-    summary: Controls the visibility of the details header.
+    summary: Controls the visibility of the header.
     name: isHeaderVisible
     fullName: isHeaderVisible
     langs:
@@ -429,7 +431,7 @@ items:
         type:
           - boolean
   - uid: 'office-ui-fabric-react!IDetailsListProps#isPlaceholderData:member'
-    summary: Set this to true to indicate that the items being displayed is placeholder data.
+    summary: Set this to true to indicate that the items being displayed are placeholder data.
     name: isPlaceholderData
     fullName: isPlaceholderData
     langs:
@@ -465,7 +467,7 @@ items:
         type:
           - 'office-ui-fabric-react!DetailsListLayoutMode:enum'
   - uid: 'office-ui-fabric-react!IDetailsListProps#listProps:member'
-    summary: Optional properties to pass through to the list components being rendered.
+    summary: Properties to pass through to the List components being rendered.
     name: listProps
     fullName: listProps
     langs:
@@ -539,7 +541,7 @@ items:
         type:
           - '(column?: IColumn, newWidth?: number, columnIndex?: number) => void'
   - uid: 'office-ui-fabric-react!IDetailsListProps#onDidUpdate:member'
-    summary: Callback for when the details list has been updated. Useful for telemetry tracking externally.
+    summary: Callback for when the list has been updated. Useful for telemetry tracking externally.
     name: onDidUpdate
     fullName: onDidUpdate
     langs:
@@ -552,8 +554,8 @@ items:
           - '(detailsList?: DetailsListBase) => void'
   - uid: 'office-ui-fabric-react!IDetailsListProps#onItemContextMenu:member'
     summary: >-
-      Callback for when the context menu of an item has been accessed. If undefined or false are returned,
-      ev.preventDefault() will be called.
+      Callback for when the context menu of an item has been accessed. If undefined or false is returned,
+      `ev.preventDefault()` will be called.
     name: onItemContextMenu
     fullName: onItemContextMenu
     langs:
@@ -577,7 +579,7 @@ items:
         type:
           - '(item?: any, index?: number, ev?: Event) => void'
   - uid: 'office-ui-fabric-react!IDetailsListProps#onRenderCheckbox:member'
-    summary: 'If provided, can be used to render a custom checkbox'
+    summary: 'If provided, can be used to render a custom checkbox.'
     name: onRenderCheckbox
     fullName: onRenderCheckbox
     langs:
@@ -615,7 +617,7 @@ items:
   - uid: 'office-ui-fabric-react!IDetailsListProps#onRenderItemColumn:member'
     summary: >-
       If provided, will be the "default" item column renderer method. This affects cells within the rows, not the rows
-      themselves. If a column definition provides its own onRender method, that will be used instead of this.
+      themselves. If a column definition provides its own `onRender` method, that will be used instead of this.
     name: onRenderItemColumn
     fullName: onRenderItemColumn
     langs:
@@ -639,7 +641,7 @@ items:
         type:
           - '(index?: number, rowProps?: IDetailsRowProps) => React.ReactNode'
   - uid: 'office-ui-fabric-react!IDetailsListProps#onRenderRow:member'
-    summary: 'If provided, will allow the caller to override the default row rendering.'
+    summary: Callback to override the default row rendering.
     name: onRenderRow
     fullName: onRenderRow
     langs:
@@ -678,10 +680,14 @@ items:
           - '(item?: any, index?: number) => void'
   - uid: 'office-ui-fabric-react!IDetailsListProps#onShouldVirtualize:member'
     summary: >-
-      Optional callback to determine whether the list should be rendered in full, or virtualized. Virtualization will
-      add and remove pages of items as the user scrolls them into the visible range. This benefits larger list scenarios
-      by reducing the DOM on the screen, but can negatively affect performance for smaller lists. The default
-      implementation will virtualize when this callback is not provided.
+      Callback to determine whether the list should be rendered in full, or virtualized.
+
+
+      Virtualization will add and remove pages of items as the user scrolls them into the visible range. This benefits
+      larger list scenarios by reducing the DOM on the screen, but can negatively affect performance for smaller lists.
+
+
+      The default implementation will virtualize when this callback is not provided.
     name: onShouldVirtualize
     fullName: onShouldVirtualize
     langs:
@@ -713,7 +719,7 @@ items:
                     callback: (context: IDragDropContext, event?: any) => void;
                 }[]
   - uid: 'office-ui-fabric-react!IDetailsListProps#selection:member'
-    summary: Optional selection model to track selection state.
+    summary: Selection model to track selection state.
     name: selection
     fullName: selection
     langs:
@@ -751,7 +757,7 @@ items:
         type:
           - boolean
   - uid: 'office-ui-fabric-react!IDetailsListProps#selectionZoneProps:member'
-    summary: Addition props to pass through to the selection zone created by default.
+    summary: Additional props to pass through to the SelectionZone created by default.
     name: selectionZoneProps
     fullName: selectionZoneProps
     langs:
@@ -775,7 +781,7 @@ items:
         type:
           - string
   - uid: 'office-ui-fabric-react!IDetailsListProps#shouldApplyApplicationRole:member'
-    summary: Boolean value to indicate if the role application should be applied on details list. Set to false by default
+    summary: Whether the role `application` should be applied to the list.
     name: shouldApplyApplicationRole
     fullName: shouldApplyApplicationRole
     langs:
@@ -787,7 +793,7 @@ items:
         type:
           - boolean
   - uid: 'office-ui-fabric-react!IDetailsListProps#styles:member'
-    summary: Style function to be passed in to override the themed or default styles
+    summary: Custom overrides to the themed or default styles.
     name: styles
     fullName: styles
     langs:
@@ -799,7 +805,7 @@ items:
         type:
           - 'IStyleFunctionOrObject<IDetailsListStyleProps, IDetailsListStyles>'
   - uid: 'office-ui-fabric-react!IDetailsListProps#theme:member'
-    summary: Theme provided by the Higher Order Component
+    summary: Theme provided by a higher-order component.
     name: theme
     fullName: theme
     langs:
@@ -837,7 +843,7 @@ items:
         type:
           - boolean
   - uid: 'office-ui-fabric-react!IDetailsListProps#useReducedRowRenderer:member'
-    summary: Rerender DetailsRow only when props changed. Might cause regression when depending on external updates.
+    summary: Whether to re-render a row only when props changed. Might cause regression when depending on external updates.
     name: useReducedRowRenderer
     fullName: useReducedRowRenderer
     langs:
@@ -849,7 +855,7 @@ items:
         type:
           - boolean
   - uid: 'office-ui-fabric-react!IDetailsListProps#viewport:member'
-    summary: 'Viewport, provided by the withViewport decorator.'
+    summary: 'Viewport info, provided by the `withViewport` decorator.'
     name: viewport
     fullName: viewport
     langs:
