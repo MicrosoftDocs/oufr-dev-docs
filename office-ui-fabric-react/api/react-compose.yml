@@ -17,24 +17,24 @@ items:
     type: function
     syntax:
       content: >-
-        declare function compose<T extends React.ElementType, InputProps, InputStylesProps, ParentProps,
-        ParentStylesProps>(input: Input<T, InputProps>, inputOptions?: ComposeOptions<InputProps, InputStylesProps,
-        ParentStylesProps>): ComponentWithAs<T, InputProps & ParentProps>;
+        declare function compose<ElementType extends React.ElementType, InputProps, InputStylesProps, ParentProps,
+        ParentStylesProps>(input: Input<ElementType, InputProps>, inputOptions?: ComposeOptions<InputProps,
+        InputStylesProps, ParentStylesProps>): ComponentWithAs<ElementType, InputProps & ParentProps>;
       return:
         type:
-          - 'ComponentWithAs<T, InputProps & ParentProps>'
+          - 'ComponentWithAs<ElementType, InputProps & ParentProps>'
         description: ''
       parameters:
         - id: input
           description: ''
           type:
-            - 'Input<T, InputProps>'
+            - 'Input<ElementType, InputProps>'
         - id: inputOptions
           description: ''
           type:
             - 'ComposeOptions<InputProps, InputStylesProps, ParentStylesProps>'
       typeParameters:
-        - id: T
+        - id: ElementType
           type:
             - React.ElementType
         - id: InputProps
