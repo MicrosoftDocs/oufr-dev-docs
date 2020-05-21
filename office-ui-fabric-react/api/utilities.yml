@@ -144,6 +144,7 @@ items:
       - '@uifabric/utilities!styled:function(1)'
       - '@uifabric/utilities!toMatrix:function(1)'
       - '@uifabric/utilities!unhoistMethods:function(1)'
+      - '@uifabric/utilities!useCustomizationSettings:function(1)'
       - '@uifabric/utilities!useFocusRects:function(1)'
       - '@uifabric/utilities!values:function(1)'
       - '@uifabric/utilities!warn:function(1)'
@@ -2053,7 +2054,7 @@ items:
         - id: props
           description: New settings to merge in.
           type:
-            - ICustomizerProps
+            - '@fluentui/react-next!ICustomizerProps:interface'
         - id: parentContext
           description: Context containing current settings.
           type:
@@ -2639,6 +2640,34 @@ items:
           description: An array of method names to unhoist.
           type:
             - 'string[]'
+  - uid: '@uifabric/utilities!useCustomizationSettings:function(1)'
+    summary: Hook to get Customizations settings. It will trigger component state update on settings change observed.
+    name: 'useCustomizationSettings(properties, scopeName, localSettings)'
+    fullName: 'useCustomizationSettings(properties, scopeName, localSettings)'
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: >-
+        export declare function useCustomizationSettings(properties: string[], scopeName?: string, localSettings?:
+        ICustomizations): ISettings;
+      return:
+        type:
+          - ISettings
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - 'string[]'
+        - id: scopeName
+          description: ''
+          type:
+            - string
+        - id: localSettings
+          description: ''
+          type:
+            - '@uifabric/utilities!ICustomizations:interface'
   - uid: '@uifabric/utilities!useFocusRects:function(1)'
     summary: >-
       Initializes the logic which:
