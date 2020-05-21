@@ -40,6 +40,7 @@ items:
       - '@fluentui/react-focus!IFocusZoneProps#shouldFocusInnerElementWhenReceivedFocus:member'
       - '@fluentui/react-focus!IFocusZoneProps#shouldFocusOnMount:member'
       - '@fluentui/react-focus!IFocusZoneProps#shouldInputLoseFocusOnArrowKey:member'
+      - '@fluentui/react-focus!IFocusZoneProps#shouldRaiseClicks:member'
       - '@fluentui/react-focus!IFocusZoneProps#shouldReceiveFocus:member'
       - '@fluentui/react-focus!IFocusZoneProps#shouldResetActiveElementWhenTabFromZone:member'
       - '@fluentui/react-focus!IFocusZoneProps#stopFocusPropagation:member'
@@ -437,6 +438,20 @@ items:
       return:
         type:
           - '(inputElement: HTMLInputElement) => boolean'
+  - uid: '@fluentui/react-focus!IFocusZoneProps#shouldRaiseClicks:member'
+    summary: >-
+      Determines whether the FocusZone will walk up the DOM trying to invoke click callbacks on focusable elements on
+      Enter and Space keydowns to ensure accessibility for tags that don't guarantee this behavior.
+    name: shouldRaiseClicks
+    fullName: shouldRaiseClicks
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'shouldRaiseClicks?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: '@fluentui/react-focus!IFocusZoneProps#shouldReceiveFocus:member'
     summary: Callback method for determining if focus should indeed be set on the given element.
     name: shouldReceiveFocus

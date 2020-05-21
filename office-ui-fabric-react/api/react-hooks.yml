@@ -14,6 +14,7 @@ items:
       - '@uifabric/react-hooks!useConstCallback:function(1)'
       - '@uifabric/react-hooks!useControllableValue:function(1)'
       - '@uifabric/react-hooks!useControllableValue:function(2)'
+      - '@uifabric/react-hooks!useForceUpdate:function(1)'
       - '@uifabric/react-hooks!useId:function(1)'
       - '@uifabric/react-hooks!useMergedRefs:function(1)'
       - '@uifabric/react-hooks!useOnEvent:function(1)'
@@ -181,6 +182,19 @@ items:
         - id: TCallback
           type:
             - 'ChangeCallback<TElement, TValue> | undefined'
+  - uid: '@uifabric/react-hooks!useForceUpdate:function(1)'
+    summary: Hook to force update a function component by updating a dummy state.
+    name: useForceUpdate()
+    fullName: useForceUpdate()
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export declare function useForceUpdate(): () => void;'
+      return:
+        type:
+          - () => void
+        description: ''
   - uid: '@uifabric/react-hooks!useId:function(1)'
     summary: Hook to generate a unique ID in the global scope (spanning across duplicate copies of the same library).
     name: 'useId(prefix, providedId)'
