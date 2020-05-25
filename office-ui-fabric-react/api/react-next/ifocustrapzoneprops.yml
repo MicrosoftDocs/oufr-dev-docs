@@ -1,0 +1,152 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-next!IFocusTrapZoneProps:interface'
+    name: IFocusTrapZoneProps
+    fullName: IFocusTrapZoneProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'React.HTMLAttributes<HTMLDivElement> '
+    package: '@fluentui/react-next!'
+    children:
+      - '@fluentui/react-next!IFocusTrapZoneProps#ariaLabelledBy:member'
+      - '@fluentui/react-next!IFocusTrapZoneProps#componentRef:member'
+      - '@fluentui/react-next!IFocusTrapZoneProps#disabled:member'
+      - '@fluentui/react-next!IFocusTrapZoneProps#disableFirstFocus:member'
+      - '@fluentui/react-next!IFocusTrapZoneProps#elementToFocusOnDismiss:member'
+      - '@fluentui/react-next!IFocusTrapZoneProps#firstFocusableSelector:member'
+      - '@fluentui/react-next!IFocusTrapZoneProps#focusPreviouslyFocusedInnerElement:member'
+      - '@fluentui/react-next!IFocusTrapZoneProps#forceFocusInsideTrap:member'
+      - '@fluentui/react-next!IFocusTrapZoneProps#ignoreExternalFocusing:member'
+      - '@fluentui/react-next!IFocusTrapZoneProps#isClickableOutsideFocusTrap:member'
+  - uid: '@fluentui/react-next!IFocusTrapZoneProps#ariaLabelledBy:member'
+    summary: Sets the aria-labelledby attribute.
+    name: ariaLabelledBy
+    fullName: ariaLabelledBy
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'ariaLabelledBy?: string;'
+      return:
+        type:
+          - string
+  - uid: '@fluentui/react-next!IFocusTrapZoneProps#componentRef:member'
+    summary: >-
+      Optional callback to access the IFocusTrapZone interface. Use this instead of ref for accessing the public methods
+      and properties of the component.
+    name: componentRef
+    fullName: componentRef
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'componentRef?: IRefObject<IFocusTrapZone>;'
+      return:
+        type:
+          - IRefObject<IFocusTrapZone>
+  - uid: '@fluentui/react-next!IFocusTrapZoneProps#disabled:member'
+    summary: Whether to disable the FocusTrapZone's focus trapping behavior.
+    name: disabled
+    fullName: disabled
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'disabled?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: '@fluentui/react-next!IFocusTrapZoneProps#disableFirstFocus:member'
+    summary: Do not put focus onto the first element inside the focus trap zone.
+    name: disableFirstFocus
+    fullName: disableFirstFocus
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'disableFirstFocus?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: '@fluentui/react-next!IFocusTrapZoneProps#elementToFocusOnDismiss:member'
+    summary: Sets the element to focus on when exiting the FocusTrapZone.
+    name: elementToFocusOnDismiss
+    fullName: elementToFocusOnDismiss
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'elementToFocusOnDismiss?: HTMLElement;'
+      return:
+        type:
+          - HTMLElement
+  - uid: '@fluentui/react-next!IFocusTrapZoneProps#firstFocusableSelector:member'
+    summary: >-
+      Class name (not actual selector) for first focusable item. Do not append a dot. Only applies if
+      `focusPreviouslyFocusedInnerElement` is false.
+    name: firstFocusableSelector
+    fullName: firstFocusableSelector
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'firstFocusableSelector?: string | (() => string);'
+      return:
+        type:
+          - string | (() => string)
+  - uid: '@fluentui/react-next!IFocusTrapZoneProps#focusPreviouslyFocusedInnerElement:member'
+    summary: >-
+      Specifies which descendant element to focus when `focus()` is called. If false, use the first focusable
+      descendant, filtered by the `firstFocusableSelector` property if present. If true, use the element that was
+      focused when the trap zone last had a focused descendant (or fall back to the first focusable descendant if the
+      trap zone has never been focused).
+    name: focusPreviouslyFocusedInnerElement
+    fullName: focusPreviouslyFocusedInnerElement
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'focusPreviouslyFocusedInnerElement?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: '@fluentui/react-next!IFocusTrapZoneProps#forceFocusInsideTrap:member'
+    summary: Whether the focus trap zone should force focus to stay inside of it.
+    name: forceFocusInsideTrap
+    fullName: forceFocusInsideTrap
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'forceFocusInsideTrap?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: '@fluentui/react-next!IFocusTrapZoneProps#ignoreExternalFocusing:member'
+    summary: >-
+      If false (the default), the trap zone will restore focus to the element which activated it once the trap zone is
+      unmounted or disabled. Set to true to disable this behavior.
+    name: ignoreExternalFocusing
+    fullName: ignoreExternalFocusing
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'ignoreExternalFocusing?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: '@fluentui/react-next!IFocusTrapZoneProps#isClickableOutsideFocusTrap:member'
+    summary: Whether clicks are allowed outside this FocusTrapZone.
+    name: isClickableOutsideFocusTrap
+    fullName: isClickableOutsideFocusTrap
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isClickableOutsideFocusTrap?: boolean;'
+      return:
+        type:
+          - boolean
