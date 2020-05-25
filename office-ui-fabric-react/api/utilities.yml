@@ -58,6 +58,7 @@ items:
       - '@uifabric/utilities!getLanguage:function(1)'
       - '@uifabric/utilities!getLastFocusable:function(1)'
       - '@uifabric/utilities!getLastTabbable:function(1)'
+      - '@uifabric/utilities!getNativeElementProps:function(1)'
       - '@uifabric/utilities!getNativeProps:function(1)'
       - '@uifabric/utilities!getNextElement:function(1)'
       - '@uifabric/utilities!getParent:function(1)'
@@ -742,13 +743,15 @@ items:
             - '(element: HTMLElement) => boolean'
   - uid: '@uifabric/utilities!findIndex:function(1)'
     summary: 'Helper to find the index of an item within an array, using a callback to determine the match.'
-    name: 'findIndex(array, cb)'
-    fullName: 'findIndex(array, cb)'
+    name: 'findIndex(array, cb, fromIndex)'
+    fullName: 'findIndex(array, cb, fromIndex)'
     langs:
       - typeScript
     type: function
     syntax:
-      content: 'export declare function findIndex<T>(array: T[], cb: (item: T, index: number) => boolean): number;'
+      content: >-
+        export declare function findIndex<T>(array: T[], cb: (item: T, index: number) => boolean, fromIndex?: number):
+        number;
       return:
         type:
           - number
@@ -762,6 +765,10 @@ items:
           description: Callback which returns true on matches.
           type:
             - '(item: T, index: number) => boolean'
+        - id: fromIndex
+          description: Optional index to start from (defaults to 0)
+          type:
+            - number
       typeParameters:
         - id: T
   - uid: '@uifabric/utilities!findScrollableParent:function(1)'
@@ -1201,6 +1208,38 @@ items:
           description: Include currentElement in search when true. Defaults to true.
           type:
             - boolean
+  - uid: '@uifabric/utilities!getNativeElementProps:function(1)'
+    summary: 'Given an element tagname and user props, filters the props to only allowed props for the given element type.'
+    name: 'getNativeElementProps(tagName, props, excludedPropNames)'
+    fullName: 'getNativeElementProps(tagName, props, excludedPropNames)'
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: >-
+        export declare function getNativeElementProps<TAttributes extends React.HTMLAttributes<any>>(tagName: keyof
+        React.ReactHTML, props: {}, excludedPropNames?: string[]): TAttributes;
+      return:
+        type:
+          - TAttributes
+        description: ''
+      parameters:
+        - id: tagName
+          description: Tag name (e.g. "div")
+          type:
+            - keyof React.ReactHTML
+        - id: props
+          description: Props object
+          type:
+            - '{}'
+        - id: excludedPropNames
+          description: List of props to disallow
+          type:
+            - 'string[]'
+      typeParameters:
+        - id: TAttributes
+          type:
+            - React.HTMLAttributes<any>
   - uid: '@uifabric/utilities!getNativeProps:function(1)'
     summary: >-
       Gets native supported props for an html element provided the allowance set. Use one of the property sets defined
