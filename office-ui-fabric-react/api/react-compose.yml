@@ -20,7 +20,7 @@ items:
       content: >-
         declare function compose<ElementType extends React.ElementType, InputProps, InputStylesProps, ParentProps,
         ParentStylesProps>(input: Input<ElementType, InputProps>, inputOptions?: ComposeOptions<InputProps,
-        InputStylesProps, ParentStylesProps>): ComponentWithAs<ElementType, InputProps & ParentProps>;
+        InputStylesProps, ParentProps, ParentStylesProps>): ComponentWithAs<ElementType, InputProps & ParentProps>;
       return:
         type:
           - 'ComponentWithAs<ElementType, InputProps & ParentProps>'
@@ -33,7 +33,7 @@ items:
         - id: inputOptions
           description: ''
           type:
-            - 'ComposeOptions<InputProps, InputStylesProps, ParentStylesProps>'
+            - 'ComposeOptions<InputProps, InputStylesProps, ParentProps, ParentStylesProps>'
       typeParameters:
         - id: ElementType
           type:
