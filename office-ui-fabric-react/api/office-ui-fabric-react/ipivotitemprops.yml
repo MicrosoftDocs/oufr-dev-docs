@@ -10,6 +10,7 @@ items:
       - 'React.HTMLAttributes<HTMLDivElement> '
     package: office-ui-fabric-react!
     children:
+      - 'office-ui-fabric-react!IPivotItemProps#alwaysRender:member'
       - 'office-ui-fabric-react!IPivotItemProps#ariaLabel:member'
       - 'office-ui-fabric-react!IPivotItemProps#componentRef:member'
       - 'office-ui-fabric-react!IPivotItemProps#headerButtonProps:member'
@@ -20,6 +21,20 @@ items:
       - 'office-ui-fabric-react!IPivotItemProps#keytipProps:member'
       - 'office-ui-fabric-react!IPivotItemProps#linkText:member'
       - 'office-ui-fabric-react!IPivotItemProps#onRenderItemLink:member'
+  - uid: 'office-ui-fabric-react!IPivotItemProps#alwaysRender:member'
+    summary: >-
+      Defines whether to always render the pivot item (regardless of whether it is selected or not). Useful if you're
+      rendering content that is expensive to mount.
+    name: alwaysRender
+    fullName: alwaysRender
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'alwaysRender?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: 'office-ui-fabric-react!IPivotItemProps#ariaLabel:member'
     summary: |-
       The aria label of each pivot link which will read by screen reader instead of linkText.
@@ -122,7 +137,7 @@ items:
         type:
           - string
   - uid: 'office-ui-fabric-react!IPivotItemProps#keytipProps:member'
-    summary: Optional keytip for this PivotItem
+    summary: Optional keytip for this PivotItem.
     name: keytipProps
     fullName: keytipProps
     langs:
@@ -148,7 +163,7 @@ items:
         type:
           - string
   - uid: 'office-ui-fabric-react!IPivotItemProps#onRenderItemLink:member'
-    summary: Optional custom renderer for the pivot item link
+    summary: Optional custom renderer for the pivot item link.
     name: onRenderItemLink
     fullName: onRenderItemLink
     langs:
