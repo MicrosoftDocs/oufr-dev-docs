@@ -8,7 +8,7 @@ items:
     type: interface
     syntax:
       typeParameters:
-        - id: P
+        - id: TProps
     package: '@fluentui/react-compose!'
     children:
       - '@fluentui/react-compose!ShorthandConfig#allowsJSX:member'
@@ -32,10 +32,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'mappedArrayProp?: keyof P;'
+      content: 'mappedArrayProp?: keyof TProps;'
       return:
         type:
-          - keyof P
+          - keyof TProps
   - uid: '@fluentui/react-compose!ShorthandConfig#mappedProp:member'
     name: mappedProp
     fullName: mappedProp
@@ -43,7 +43,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'mappedProp?: keyof P;'
+      content: 'mappedProp?: keyof TProps;'
       return:
         type:
-          - keyof P
+          - keyof TProps

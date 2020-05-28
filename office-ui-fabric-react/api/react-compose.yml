@@ -18,30 +18,31 @@ items:
     type: function
     syntax:
       content: >-
-        declare function compose<ElementType extends React.ElementType, InputProps, InputStylesProps, ParentProps,
-        ParentStylesProps>(input: Input<ElementType, InputProps>, inputOptions?: ComposeOptions<InputProps,
-        InputStylesProps, ParentProps, ParentStylesProps>): ComponentWithAs<ElementType, InputProps & ParentProps>;
+        declare function compose<TElementType extends React.ElementType, TInputProps, TInputStylesProps, TParentProps,
+        TParentStylesProps>(input: Input<TElementType, TInputProps>, inputOptions?: ComposeOptions<TInputProps,
+        TInputStylesProps, TParentProps, TParentStylesProps>): ComponentWithAs<TElementType, TInputProps &
+        TParentProps>;
       return:
         type:
-          - 'ComponentWithAs<ElementType, InputProps & ParentProps>'
+          - 'ComponentWithAs<TElementType, TInputProps & TParentProps>'
         description: ''
       parameters:
         - id: input
           description: ''
           type:
-            - 'Input<ElementType, InputProps>'
+            - 'Input<TElementType, TInputProps>'
         - id: inputOptions
           description: ''
           type:
-            - 'ComposeOptions<InputProps, InputStylesProps, ParentProps, ParentStylesProps>'
+            - 'ComposeOptions<TInputProps, TInputStylesProps, TParentProps, TParentStylesProps>'
       typeParameters:
-        - id: ElementType
+        - id: TElementType
           type:
             - React.ElementType
-        - id: InputProps
-        - id: InputStylesProps
-        - id: ParentProps
-        - id: ParentStylesProps
+        - id: TInputProps
+        - id: TInputStylesProps
+        - id: TParentProps
+        - id: TParentStylesProps
 references:
   - uid: '@fluentui/react-compose!ComponentWithAs:interface'
     name: ComponentWithAs
