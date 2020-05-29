@@ -7,7 +7,6 @@ items:
       - typeScript
     type: interface
     extends:
-      - React.ClassAttributes<PivotBase>
       - 'React.HTMLAttributes<HTMLDivElement> '
     package: '@fluentui/react-next!'
     children:
@@ -47,10 +46,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'componentRef?: IRefObject<IPivot>;'
+      content: 'componentRef?: React.RefObject<IPivot>;'
       return:
         type:
-          - IRefObject<IPivot>
+          - React.RefObject<IPivot>
   - uid: '@fluentui/react-next!IPivotProps#defaultSelectedIndex:member'
     summary: >-
       Default selected index for the pivot. Only provide this if the pivot is an uncontrolled component; otherwise, use
