@@ -49,10 +49,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'as?: IComponentAs<React.HTMLAttributes<HTMLElement>>;'
+      content: 'as?: IComponentAs<React.HTMLAttributes<HTMLElement>> | React.ElementType;'
       return:
         type:
-          - IComponentAs<React.HTMLAttributes<HTMLElement>>
+          - IComponentAs<React.HTMLAttributes<HTMLElement>> | React.ElementType
   - uid: '@fluentui/react-next!IToggleProps#checked:member'
     summary: >-
       Checked state of the toggle. If you are maintaining state yourself, use this property. Otherwise use
