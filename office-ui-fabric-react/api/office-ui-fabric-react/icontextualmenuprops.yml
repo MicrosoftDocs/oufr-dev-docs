@@ -139,7 +139,7 @@ items:
         type:
           - IRefObject<IContextualMenu>
   - uid: 'office-ui-fabric-react!IContextualMenuProps#contextualMenuItemAs:member'
-    summary: Method to override the render of the individual menu items
+    summary: Custom component to use for rendering individual menu items.
     name: contextualMenuItemAs
     fullName: contextualMenuItemAs
     langs:
@@ -449,9 +449,9 @@ items:
           - boolean
   - uid: 'office-ui-fabric-react!IContextualMenuProps#shouldUpdateWhenHidden:member'
     summary: >-
-      If true, the component will be updated even when `hidden=true`<!-- -->. Note that this would consume resources to
-      update even though nothing is being shown to the user. This might be helpful though if your updates are small and
-      you want the contextual menu to be revealed fast to the user when `hidden` is set to false.
+      If true, the menu will be updated even when `hidden=true`<!-- -->. Note that this will consume resources to update
+      even when nothing is being shown to the user. This might be helpful if your updates are small and you want the
+      menu to display quickly when `hidden` is set to false.
     name: shouldUpdateWhenHidden
     fullName: shouldUpdateWhenHidden
     langs:
@@ -514,7 +514,7 @@ items:
         type:
           - '@uifabric/styling!ITheme:interface'
   - uid: 'office-ui-fabric-react!IContextualMenuProps#title:member'
-    summary: Optional title to be displayed on top of the menu.
+    summary: 'Title to be displayed at the top of the menu, above the items.'
     name: title
     fullName: title
     langs:
