@@ -45,8 +45,8 @@ items:
       - 'office-ui-fabric-react!IContextualMenuItem#title:member'
   - uid: 'office-ui-fabric-react!IContextualMenuItem#ariaLabel:member'
     summary: >-
-      Optional accessibility label (aria-label) attribute that will be stamped on to the element. If none is specified,
-      the aria-label attribute will contain the item name
+      Custom accessible label for the element. If no override is specified, the `aria-label` attribute will contain the
+      item name.
     name: ariaLabel
     fullName: ariaLabel
     langs:
@@ -193,7 +193,7 @@ items:
         type:
           - string
   - uid: 'office-ui-fabric-react!IContextualMenuItem#iconProps:member'
-    summary: Props for the Icon.
+    summary: Props for an icon to display next to the item.
     name: iconProps
     fullName: iconProps
     langs:
@@ -266,10 +266,7 @@ items:
         type:
           - 'office-ui-fabric-react!IKeytipProps:interface'
   - uid: 'office-ui-fabric-react!IContextualMenuItem#name:member'
-    summary: >-
-      Text description for the menu item to display If a standard dash (-) is passed in, then the item will be rendered
-      as a divider If a dash must appear as text then the alternatives of emdash (—), figuredash (‒), or minus symbol
-      (−) can be used instead
+    summary: Text of the menu item.
     deprecated:
       content: Use `text` instead.
     name: name
@@ -285,7 +282,11 @@ items:
   - uid: 'office-ui-fabric-react!IContextualMenuItem#onClick:member'
     summary: >-
       Callback for when the menu item is invoked. If `ev.preventDefault()` is called in `onClick`<!-- -->, the click
-      will not close the menu. Returning true will dismiss the menu even if `ev.preventDefault()` was called.
+      will not close the menu.
+
+
+      Only for ContextualMenu items, returning true will dismiss the menu even if `ev.preventDefault()` was called (does
+      not apply for button or CommandBar sub-menu items).
     name: onClick
     fullName: onClick
     langs:
@@ -486,9 +487,8 @@ items:
           - string
   - uid: 'office-ui-fabric-react!IContextualMenuItem#text:member'
     summary: >-
-      Text description for the menu item to display If a standard dash (-) is passed in, then the item will be rendered
-      as a divider If a dash must appear as text then the alternatives of emdash (—), figuredash (‒), or minus symbol
-      (−) can be used instead
+      Text of the menu item. If a standard hyphen (-) is passed in, then the item will be rendered as a divider. If a
+      dash must appear as text, use an emdash (—), figuredash (‒), or minus symbol (−) instead.
     name: text
     fullName: text
     langs:
@@ -500,7 +500,7 @@ items:
         type:
           - string
   - uid: 'office-ui-fabric-react!IContextualMenuItem#title:member'
-    summary: Optional title for displaying text when hovering over an item.
+    summary: Title (tooltip) text displayed when hovering over an item.
     name: title
     fullName: title
     langs:

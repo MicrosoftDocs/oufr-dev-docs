@@ -12,12 +12,9 @@ items:
     children:
       - '@fluentui/react-next!IPivotProps#className:member'
       - '@fluentui/react-next!IPivotProps#componentRef:member'
-      - '@fluentui/react-next!IPivotProps#defaultSelectedIndex:member'
       - '@fluentui/react-next!IPivotProps#defaultSelectedKey:member'
       - '@fluentui/react-next!IPivotProps#getTabId:member'
       - '@fluentui/react-next!IPivotProps#headersOnly:member'
-      - '@fluentui/react-next!IPivotProps#initialSelectedIndex:member'
-      - '@fluentui/react-next!IPivotProps#initialSelectedKey:member'
       - '@fluentui/react-next!IPivotProps#linkFormat:member'
       - '@fluentui/react-next!IPivotProps#linkSize:member'
       - '@fluentui/react-next!IPivotProps#onLinkClick:member'
@@ -50,23 +47,6 @@ items:
       return:
         type:
           - React.RefObject<IPivot>
-  - uid: '@fluentui/react-next!IPivotProps#defaultSelectedIndex:member'
-    summary: >-
-      Default selected index for the pivot. Only provide this if the pivot is an uncontrolled component; otherwise, use
-      the `selectedKey` property.
-
-
-      This property is also mutually exclusive with `defaultSelectedKey`<!-- -->.
-    name: defaultSelectedIndex
-    fullName: defaultSelectedIndex
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'defaultSelectedIndex?: number;'
-      return:
-        type:
-          - number
   - uid: '@fluentui/react-next!IPivotProps#defaultSelectedKey:member'
     summary: >-
       Default selected key for the pivot. Only provide this if the pivot is an uncontrolled component; otherwise, use
@@ -113,38 +93,6 @@ items:
       return:
         type:
           - boolean
-  - uid: '@fluentui/react-next!IPivotProps#initialSelectedIndex:member'
-    summary: >-
-      Index of the pivot item initially selected. Mutually exclusive with `initialSelectedKey`<!-- -->. Only provide
-      this if the pivot is an uncontrolled component; otherwise, use `selectedKey`<!-- -->.
-    deprecated:
-      content: Use `defaultSelectedIndex`
-    name: initialSelectedIndex
-    fullName: initialSelectedIndex
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'initialSelectedIndex?: number;'
-      return:
-        type:
-          - number
-  - uid: '@fluentui/react-next!IPivotProps#initialSelectedKey:member'
-    summary: >-
-      Key of the pivot item initially selected. Mutually exclusive with `initialSelectedIndex`<!-- -->. Only provide
-      this if the pivot is an uncontrolled component; otherwise, use `selectedKey`<!-- -->.
-    deprecated:
-      content: Use `defaultSelectedKey`
-    name: initialSelectedKey
-    fullName: initialSelectedKey
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'initialSelectedKey?: string;'
-      return:
-        type:
-          - string
   - uid: '@fluentui/react-next!IPivotProps#linkFormat:member'
     summary: 'Link format (links, tabs)'
     name: linkFormat
