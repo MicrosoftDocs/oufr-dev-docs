@@ -299,10 +299,10 @@ items:
     syntax:
       content: >-
         export declare function getGlobalClassNames<T>(classNames: GlobalClassNames<T>, theme: ITheme,
-        disableGlobalClassNames?: boolean): Partial<GlobalClassNames<T>>;
+        disableGlobalClassNames?: boolean): GlobalClassNames<T>;
       return:
         type:
-          - Partial<GlobalClassNames<T>>
+          - GlobalClassNames<T>
         description: ''
       parameters:
         - id: classNames
