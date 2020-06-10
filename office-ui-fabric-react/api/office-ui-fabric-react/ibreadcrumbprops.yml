@@ -17,6 +17,7 @@ items:
       - 'office-ui-fabric-react!IBreadcrumbProps#focusZoneProps:member'
       - 'office-ui-fabric-react!IBreadcrumbProps#items:member'
       - 'office-ui-fabric-react!IBreadcrumbProps#maxDisplayedItems:member'
+      - 'office-ui-fabric-react!IBreadcrumbProps#onGrowData:member'
       - 'office-ui-fabric-react!IBreadcrumbProps#onReduceData:member'
       - 'office-ui-fabric-react!IBreadcrumbProps#onRenderItem:member'
       - 'office-ui-fabric-react!IBreadcrumbProps#onRenderOverflowIcon:member'
@@ -113,6 +114,20 @@ items:
       return:
         type:
           - number
+  - uid: 'office-ui-fabric-react!IBreadcrumbProps#onGrowData:member'
+    summary: >-
+      Method that determines how to group the length of the breadcrumb. Return undefined to never increase breadcrumb
+      length.
+    name: onGrowData
+    fullName: onGrowData
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onGrowData?: (data: IBreadcrumbData) => IBreadcrumbData | undefined;'
+      return:
+        type:
+          - '(data: IBreadcrumbData) => IBreadcrumbData | undefined'
   - uid: 'office-ui-fabric-react!IBreadcrumbProps#onReduceData:member'
     summary: >-
       Method that determines how to reduce the length of the breadcrumb. Return undefined to never reduce breadcrumb
