@@ -12,7 +12,7 @@ items:
       - 'office-ui-fabric-react!IComboBoxState#currentPendingValue:member'
       - 'office-ui-fabric-react!IComboBoxState#currentPendingValueValidIndex:member'
       - 'office-ui-fabric-react!IComboBoxState#currentPendingValueValidIndexOnHover:member'
-      - 'office-ui-fabric-react!IComboBoxState#focused:member'
+      - 'office-ui-fabric-react!IComboBoxState#focusState:member'
       - 'office-ui-fabric-react!IComboBoxState#isOpen:member'
       - 'office-ui-fabric-react!IComboBoxState#selectedIndices:member'
       - 'office-ui-fabric-react!IComboBoxState#suggestedDisplayValue:member'
@@ -64,18 +64,18 @@ items:
       return:
         type:
           - number
-  - uid: 'office-ui-fabric-react!IComboBoxState#focused:member'
+  - uid: 'office-ui-fabric-react!IComboBoxState#focusState:member'
     summary: The focused state of the comboBox
-    name: focused
-    fullName: focused
+    name: focusState
+    fullName: focusState
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'focused?: boolean;'
+      content: 'focusState?: ''none'' | ''focused'' | ''focusing'';'
       return:
         type:
-          - boolean
+          - '''none'' | ''focused'' | ''focusing'''
   - uid: 'office-ui-fabric-react!IComboBoxState#isOpen:member'
     summary: The open state
     name: isOpen

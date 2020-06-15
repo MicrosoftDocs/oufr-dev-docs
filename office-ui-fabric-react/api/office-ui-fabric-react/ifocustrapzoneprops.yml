@@ -15,6 +15,7 @@ items:
       - 'office-ui-fabric-react!IFocusTrapZoneProps#disabled:member'
       - 'office-ui-fabric-react!IFocusTrapZoneProps#disableFirstFocus:member'
       - 'office-ui-fabric-react!IFocusTrapZoneProps#elementToFocusOnDismiss:member'
+      - 'office-ui-fabric-react!IFocusTrapZoneProps#enableAriaHiddenSiblings:member'
       - 'office-ui-fabric-react!IFocusTrapZoneProps#firstFocusableSelector:member'
       - 'office-ui-fabric-react!IFocusTrapZoneProps#focusPreviouslyFocusedInnerElement:member'
       - 'office-ui-fabric-react!IFocusTrapZoneProps#forceFocusInsideTrap:member'
@@ -82,6 +83,21 @@ items:
       return:
         type:
           - HTMLElement
+  - uid: 'office-ui-fabric-react!IFocusTrapZoneProps#enableAriaHiddenSiblings:member'
+    summary: >-
+      Puts aria-hidden=true on all non-ancestors of the current element, for screen readers. This is an experimental
+      feature that will be graduated to default behavior after testing. This flag will be removed with the next major
+      release.
+    name: enableAriaHiddenSiblings
+    fullName: enableAriaHiddenSiblings
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'enableAriaHiddenSiblings?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: 'office-ui-fabric-react!IFocusTrapZoneProps#firstFocusableSelector:member'
     summary: >-
       Class name (not actual selector) for first focusable item. Do not append a dot. Only applies if

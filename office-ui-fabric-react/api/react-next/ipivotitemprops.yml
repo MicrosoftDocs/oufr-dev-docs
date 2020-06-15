@@ -73,13 +73,13 @@ items:
     type: property
     syntax:
       content: |-
-        headerButtonProps?: IButtonProps & {
+        headerButtonProps?: IButtonProps | {
                 [key: string]: string | number | boolean;
             };
       return:
         type:
           - |-
-            IButtonProps & {
+            IButtonProps | {
                     [key: string]: string | number | boolean;
                 }
   - uid: '@fluentui/react-next!IPivotItemProps#headerText:member'

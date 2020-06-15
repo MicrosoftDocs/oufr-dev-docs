@@ -17,6 +17,7 @@ items:
       - 'office-ui-fabric-react!IModalProps#componentRef:member'
       - 'office-ui-fabric-react!IModalProps#containerClassName:member'
       - 'office-ui-fabric-react!IModalProps#dragOptions:member'
+      - 'office-ui-fabric-react!IModalProps#enableAriaHiddenSiblings:member'
       - 'office-ui-fabric-react!IModalProps#isBlocking:member'
       - 'office-ui-fabric-react!IModalProps#isDarkOverlay:member'
       - 'office-ui-fabric-react!IModalProps#isModeless:member'
@@ -94,6 +95,21 @@ items:
       return:
         type:
           - 'office-ui-fabric-react!IDragOptions:interface'
+  - uid: 'office-ui-fabric-react!IModalProps#enableAriaHiddenSiblings:member'
+    summary: >-
+      Puts aria-hidden=true on all non-ancestors of the current modal, for screen readers. This is an experimental
+      feature that will be graduated to default behavior after testing. This flag will be removed with the next major
+      release.
+    name: enableAriaHiddenSiblings
+    fullName: enableAriaHiddenSiblings
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'enableAriaHiddenSiblings?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: 'office-ui-fabric-react!IModalProps#isBlocking:member'
     summary: Whether the dialog can be light dismissed by clicking outside the dialog (on the overlay).
     name: isBlocking

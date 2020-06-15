@@ -16,6 +16,7 @@ items:
       - '@fluentui/react-next!ICheckboxProps#ariaLabelledBy:member'
       - '@fluentui/react-next!ICheckboxProps#ariaPositionInSet:member'
       - '@fluentui/react-next!ICheckboxProps#ariaSetSize:member'
+      - '@fluentui/react-next!ICheckboxProps#as:member'
       - '@fluentui/react-next!ICheckboxProps#boxSide:member'
       - '@fluentui/react-next!ICheckboxProps#checked:member'
       - '@fluentui/react-next!ICheckboxProps#checkmarkIconProps:member'
@@ -92,6 +93,18 @@ items:
       return:
         type:
           - number
+  - uid: '@fluentui/react-next!ICheckboxProps#as:member'
+    summary: Render the root element as another type.
+    name: as
+    fullName: as
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'as?: React.ElementType;'
+      return:
+        type:
+          - React.ElementType
   - uid: '@fluentui/react-next!ICheckboxProps#boxSide:member'
     summary: Allows you to set the checkbox to be at the before (start) or after (end) the label.
     name: boxSide
@@ -280,6 +293,8 @@ items:
           - IRenderFunction<ICheckboxProps>
   - uid: '@fluentui/react-next!ICheckboxProps#styles:member'
     summary: Call to provide customized styling that will layer on top of the variant rules.
+    deprecated:
+      content: 'This no longer works. TODO: fix use cases with tokens prop.'
     name: styles
     fullName: styles
     langs:
