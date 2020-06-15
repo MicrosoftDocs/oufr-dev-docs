@@ -117,6 +117,7 @@ items:
       - '@uifabric/utilities!mergeCustomizations:function(1)'
       - '@uifabric/utilities!mergeScopedSettings:function(1)'
       - '@uifabric/utilities!mergeSettings:function(1)'
+      - '@uifabric/utilities!modalize:function(1)'
       - '@uifabric/utilities!nullRender:function(1)'
       - '@uifabric/utilities!on:function(1)'
       - '@uifabric/utilities!Point:interface'
@@ -2147,6 +2148,26 @@ items:
           description: New settings that will be merged over oldSettings.
           type:
             - ISettings | ISettingsFunction
+  - uid: '@uifabric/utilities!modalize:function(1)'
+    summary: >-
+      Call this on a target element to make it modal to screen readers. Returns a function that undoes the changes it
+      made.
+    name: modalize(target)
+    fullName: modalize(target)
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export declare function modalize(target: HTMLElement): () => void;'
+      return:
+        type:
+          - () => void
+        description: ''
+      parameters:
+        - id: target
+          description: ''
+          type:
+            - HTMLElement
   - uid: '@uifabric/utilities!nullRender:function(1)'
     summary: 'Simple constant function for returning null, used to render empty templates in JSX.'
     name: nullRender()

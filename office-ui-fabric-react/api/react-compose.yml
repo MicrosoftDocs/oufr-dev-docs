@@ -57,7 +57,7 @@ items:
     syntax:
       content: >-
         export declare function mergeProps<TProps, TState = TProps>(state: TState, options:
-        ComposePreparedOptions<TProps>): MergePropsResult<TState>;
+        ComposePreparedOptions<TProps, TState>): MergePropsResult<TState>;
       return:
         type:
           - MergePropsResult<TState>
@@ -70,7 +70,7 @@ items:
         - id: options
           description: ''
           type:
-            - ComposePreparedOptions<TProps>
+            - 'ComposePreparedOptions<TProps, TState>'
       typeParameters:
         - id: TProps
         - id: TState
