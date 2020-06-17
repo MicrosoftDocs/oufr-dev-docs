@@ -7,14 +7,27 @@ items:
       - typeScript
     type: package
     children:
+      - '@fluentui/react-next!CoachmarkBase:class'
+      - '@fluentui/react-next!ColorPickerGridCellBase:class'
       - '@fluentui/react-next!FocusTrapZone:class'
+      - '@fluentui/react-next!getPersonaInitialsColor:function(1)'
       - '@fluentui/react-next!ICheckbox:interface'
       - '@fluentui/react-next!ICheckboxProps:interface'
       - '@fluentui/react-next!ICheckboxSlots:interface'
       - '@fluentui/react-next!ICheckboxState:interface'
       - '@fluentui/react-next!ICheckboxStyleProps:interface'
       - '@fluentui/react-next!ICheckboxStyles:interface'
+      - '@fluentui/react-next!ICoachmark:interface'
+      - '@fluentui/react-next!ICoachmarkProps:interface'
+      - '@fluentui/react-next!ICoachmarkState:interface'
+      - '@fluentui/react-next!ICoachmarkStyleProps:interface'
+      - '@fluentui/react-next!ICoachmarkStyles:interface'
+      - '@fluentui/react-next!IColorCellProps:interface'
+      - '@fluentui/react-next!IColorPickerGridCellProps:interface'
+      - '@fluentui/react-next!IColorPickerGridCellStyleProps:interface'
+      - '@fluentui/react-next!IColorPickerGridCellStyles:interface'
       - '@fluentui/react-next!ICustomizerProps:interface'
+      - '@fluentui/react-next!IEntityRect:interface'
       - '@fluentui/react-next!IFabricProps:interface'
       - '@fluentui/react-next!IFabricStyleProps:interface'
       - '@fluentui/react-next!IFabricStyles:interface'
@@ -40,11 +53,25 @@ items:
       - '@fluentui/react-next!IOverflowSetItemProps:interface'
       - '@fluentui/react-next!IOverflowSetProps:interface'
       - '@fluentui/react-next!IOverflowSetStyles:interface'
+      - '@fluentui/react-next!IPersona:interface'
+      - '@fluentui/react-next!IPersonaCoinProps:interface'
+      - '@fluentui/react-next!IPersonaCoinStyleProps:interface'
+      - '@fluentui/react-next!IPersonaCoinStyles:interface'
+      - '@fluentui/react-next!IPersonaPresenceProps:interface'
+      - '@fluentui/react-next!IPersonaPresenceStyles:interface'
+      - '@fluentui/react-next!IPersonaProps:interface'
+      - '@fluentui/react-next!IPersonaSharedProps:interface'
+      - '@fluentui/react-next!IPersonaState:interface'
+      - '@fluentui/react-next!IPersonaStyleProps:interface'
+      - '@fluentui/react-next!IPersonaStyles:interface'
       - '@fluentui/react-next!IPivot:interface'
       - '@fluentui/react-next!IPivotItemProps:interface'
       - '@fluentui/react-next!IPivotProps:interface'
       - '@fluentui/react-next!IPivotStyles:interface'
       - '@fluentui/react-next!IPopupProps:interface'
+      - '@fluentui/react-next!IPositioningContainer:interface'
+      - '@fluentui/react-next!IPositioningContainerProps:interface'
+      - '@fluentui/react-next!IPositioningContainerState:interface'
       - '@fluentui/react-next!IResizeGroup:interface'
       - '@fluentui/react-next!IResizeGroupProps:interface'
       - '@fluentui/react-next!IResizeGroupState:interface'
@@ -62,6 +89,10 @@ items:
       - '@fluentui/react-next!ISpinButtonProps:interface'
       - '@fluentui/react-next!ISpinButtonState:interface'
       - '@fluentui/react-next!ISpinButtonStyles:interface'
+      - '@fluentui/react-next!ISwatchColorPickerProps:interface'
+      - '@fluentui/react-next!ISwatchColorPickerState:interface'
+      - '@fluentui/react-next!ISwatchColorPickerStyleProps:interface'
+      - '@fluentui/react-next!ISwatchColorPickerStyles:interface'
       - '@fluentui/react-next!ITextField:interface'
       - '@fluentui/react-next!ITextFieldProps:interface'
       - '@fluentui/react-next!ITextFieldStyles:interface'
@@ -75,14 +106,47 @@ items:
       - '@fluentui/react-next!KeyboardSpinDirection:enum'
       - '@fluentui/react-next!MaskedTextField:class'
       - '@fluentui/react-next!OverflowSetBase:class'
+      - '@fluentui/react-next!PersonaBase:class'
+      - '@fluentui/react-next!PersonaCoinBase:class'
+      - '@fluentui/react-next!PersonaInitialsColor:enum'
+      - '@fluentui/react-next!PersonaPresence:enum'
+      - '@fluentui/react-next!PersonaSize:enum'
       - '@fluentui/react-next!PivotItem:class'
       - '@fluentui/react-next!PivotLinkFormat:enum'
       - '@fluentui/react-next!PivotLinkSize:enum'
+      - '@fluentui/react-next!PositioningContainer:class'
       - '@fluentui/react-next!ResizeGroupDirection:enum'
       - '@fluentui/react-next!SearchBoxBase:class'
       - '@fluentui/react-next!SpinButton:class'
+      - '@fluentui/react-next!SwatchColorPickerBase:class'
       - '@fluentui/react-next!TextFieldBase:class'
+  - uid: '@fluentui/react-next!getPersonaInitialsColor:function(1)'
+    summary: >-
+      Gets the hex color string (prefixed with \#) for the given persona props. This is the logic used internally by the
+      Persona control.
+    name: getPersonaInitialsColor(props)
+    fullName: getPersonaInitialsColor(props)
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: >-
+        export declare function getPersonaInitialsColor(props: Pick<IPersonaProps, 'primaryText' | 'text' |
+        'initialsColor'>): string;
+      return:
+        type:
+          - string
+        description: 'Hex color string prefixed with \#'
+      parameters:
+        - id: props
+          description: Current persona props
+          type:
+            - 'Pick<IPersonaProps, ''primaryText'' | ''text'' | ''initialsColor''>'
 references:
+  - uid: '@fluentui/react-next!CoachmarkBase:class'
+    name: CoachmarkBase
+  - uid: '@fluentui/react-next!ColorPickerGridCellBase:class'
+    name: ColorPickerGridCellBase
   - uid: '@fluentui/react-next!FocusTrapZone:class'
     name: FocusTrapZone
   - uid: '@fluentui/react-next!ICheckbox:interface'
@@ -97,8 +161,28 @@ references:
     name: ICheckboxStyleProps
   - uid: '@fluentui/react-next!ICheckboxStyles:interface'
     name: ICheckboxStyles
+  - uid: '@fluentui/react-next!ICoachmark:interface'
+    name: ICoachmark
+  - uid: '@fluentui/react-next!ICoachmarkProps:interface'
+    name: ICoachmarkProps
+  - uid: '@fluentui/react-next!ICoachmarkState:interface'
+    name: ICoachmarkState
+  - uid: '@fluentui/react-next!ICoachmarkStyleProps:interface'
+    name: ICoachmarkStyleProps
+  - uid: '@fluentui/react-next!ICoachmarkStyles:interface'
+    name: ICoachmarkStyles
+  - uid: '@fluentui/react-next!IColorCellProps:interface'
+    name: IColorCellProps
+  - uid: '@fluentui/react-next!IColorPickerGridCellProps:interface'
+    name: IColorPickerGridCellProps
+  - uid: '@fluentui/react-next!IColorPickerGridCellStyleProps:interface'
+    name: IColorPickerGridCellStyleProps
+  - uid: '@fluentui/react-next!IColorPickerGridCellStyles:interface'
+    name: IColorPickerGridCellStyles
   - uid: '@fluentui/react-next!ICustomizerProps:interface'
     name: ICustomizerProps
+  - uid: '@fluentui/react-next!IEntityRect:interface'
+    name: IEntityRect
   - uid: '@fluentui/react-next!IFabricProps:interface'
     name: IFabricProps
   - uid: '@fluentui/react-next!IFabricStyleProps:interface'
@@ -149,6 +233,28 @@ references:
     name: IOverflowSetProps
   - uid: '@fluentui/react-next!IOverflowSetStyles:interface'
     name: IOverflowSetStyles
+  - uid: '@fluentui/react-next!IPersona:interface'
+    name: IPersona
+  - uid: '@fluentui/react-next!IPersonaCoinProps:interface'
+    name: IPersonaCoinProps
+  - uid: '@fluentui/react-next!IPersonaCoinStyleProps:interface'
+    name: IPersonaCoinStyleProps
+  - uid: '@fluentui/react-next!IPersonaCoinStyles:interface'
+    name: IPersonaCoinStyles
+  - uid: '@fluentui/react-next!IPersonaPresenceProps:interface'
+    name: IPersonaPresenceProps
+  - uid: '@fluentui/react-next!IPersonaPresenceStyles:interface'
+    name: IPersonaPresenceStyles
+  - uid: '@fluentui/react-next!IPersonaProps:interface'
+    name: IPersonaProps
+  - uid: '@fluentui/react-next!IPersonaSharedProps:interface'
+    name: IPersonaSharedProps
+  - uid: '@fluentui/react-next!IPersonaState:interface'
+    name: IPersonaState
+  - uid: '@fluentui/react-next!IPersonaStyleProps:interface'
+    name: IPersonaStyleProps
+  - uid: '@fluentui/react-next!IPersonaStyles:interface'
+    name: IPersonaStyles
   - uid: '@fluentui/react-next!IPivot:interface'
     name: IPivot
   - uid: '@fluentui/react-next!IPivotItemProps:interface'
@@ -159,6 +265,12 @@ references:
     name: IPivotStyles
   - uid: '@fluentui/react-next!IPopupProps:interface'
     name: IPopupProps
+  - uid: '@fluentui/react-next!IPositioningContainer:interface'
+    name: IPositioningContainer
+  - uid: '@fluentui/react-next!IPositioningContainerProps:interface'
+    name: IPositioningContainerProps
+  - uid: '@fluentui/react-next!IPositioningContainerState:interface'
+    name: IPositioningContainerState
   - uid: '@fluentui/react-next!IResizeGroup:interface'
     name: IResizeGroup
   - uid: '@fluentui/react-next!IResizeGroupProps:interface'
@@ -193,6 +305,14 @@ references:
     name: ISpinButtonState
   - uid: '@fluentui/react-next!ISpinButtonStyles:interface'
     name: ISpinButtonStyles
+  - uid: '@fluentui/react-next!ISwatchColorPickerProps:interface'
+    name: ISwatchColorPickerProps
+  - uid: '@fluentui/react-next!ISwatchColorPickerState:interface'
+    name: ISwatchColorPickerState
+  - uid: '@fluentui/react-next!ISwatchColorPickerStyleProps:interface'
+    name: ISwatchColorPickerStyleProps
+  - uid: '@fluentui/react-next!ISwatchColorPickerStyles:interface'
+    name: ISwatchColorPickerStyles
   - uid: '@fluentui/react-next!ITextField:interface'
     name: ITextField
   - uid: '@fluentui/react-next!ITextFieldProps:interface'
@@ -219,17 +339,31 @@ references:
     name: MaskedTextField
   - uid: '@fluentui/react-next!OverflowSetBase:class'
     name: OverflowSetBase
+  - uid: '@fluentui/react-next!PersonaBase:class'
+    name: PersonaBase
+  - uid: '@fluentui/react-next!PersonaCoinBase:class'
+    name: PersonaCoinBase
+  - uid: '@fluentui/react-next!PersonaInitialsColor:enum'
+    name: PersonaInitialsColor
+  - uid: '@fluentui/react-next!PersonaPresence:enum'
+    name: PersonaPresence
+  - uid: '@fluentui/react-next!PersonaSize:enum'
+    name: PersonaSize
   - uid: '@fluentui/react-next!PivotItem:class'
     name: PivotItem
   - uid: '@fluentui/react-next!PivotLinkFormat:enum'
     name: PivotLinkFormat
   - uid: '@fluentui/react-next!PivotLinkSize:enum'
     name: PivotLinkSize
+  - uid: '@fluentui/react-next!PositioningContainer:class'
+    name: PositioningContainer
   - uid: '@fluentui/react-next!ResizeGroupDirection:enum'
     name: ResizeGroupDirection
   - uid: '@fluentui/react-next!SearchBoxBase:class'
     name: SearchBoxBase
   - uid: '@fluentui/react-next!SpinButton:class'
     name: SpinButton
+  - uid: '@fluentui/react-next!SwatchColorPickerBase:class'
+    name: SwatchColorPickerBase
   - uid: '@fluentui/react-next!TextFieldBase:class'
     name: TextFieldBase
