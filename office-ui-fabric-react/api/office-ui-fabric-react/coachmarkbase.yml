@@ -9,7 +9,7 @@ items:
     extends:
       - 'React.Component<ICoachmarkProps, ICoachmarkState> '
     implements:
-      - 'office-ui-fabric-react!ICoachmark:interface'
+      - 'ICoachmark '
     package: office-ui-fabric-react!
     children:
       - 'office-ui-fabric-react!CoachmarkBase:constructor(1)'
@@ -34,7 +34,7 @@ items:
         - id: props
           description: ''
           type:
-            - 'office-ui-fabric-react!ICoachmarkProps:interface'
+            - ICoachmarkProps
   - uid: 'office-ui-fabric-react!CoachmarkBase#componentDidMount:member(1)'
     name: componentDidMount()
     fullName: componentDidMount()
@@ -63,11 +63,11 @@ items:
         - id: prevProps
           description: ''
           type:
-            - 'office-ui-fabric-react!ICoachmarkProps:interface'
+            - ICoachmarkProps
         - id: prevState
           description: ''
           type:
-            - 'office-ui-fabric-react!ICoachmarkState:interface'
+            - ICoachmarkState
   - uid: 'office-ui-fabric-react!CoachmarkBase#componentWillUnmount:member(1)'
     name: componentWillUnmount()
     fullName: componentWillUnmount()
@@ -134,11 +134,11 @@ items:
         - id: newProps
           description: ''
           type:
-            - 'office-ui-fabric-react!ICoachmarkProps:interface'
+            - ICoachmarkProps
         - id: newState
           description: ''
           type:
-            - 'office-ui-fabric-react!ICoachmarkState:interface'
+            - ICoachmarkState
   - uid: 'office-ui-fabric-react!CoachmarkBase#UNSAFE_componentWillReceiveProps:member(1)'
     name: UNSAFE_componentWillReceiveProps(newProps)
     fullName: UNSAFE_componentWillReceiveProps(newProps)
@@ -155,4 +155,4 @@ items:
         - id: newProps
           description: ''
           type:
-            - 'office-ui-fabric-react!ICoachmarkProps:interface'
+            - ICoachmarkProps

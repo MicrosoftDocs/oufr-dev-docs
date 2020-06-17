@@ -9,7 +9,7 @@ items:
     extends:
       - 'React.Component<IPositioningContainerProps, IPositioningContainerState> '
     implements:
-      - 'office-ui-fabric-react!PositioningContainer:class'
+      - 'PositioningContainer '
     package: office-ui-fabric-react!
     children:
       - 'office-ui-fabric-react!PositioningContainer#_dismissOnLostFocus:member(1)'
@@ -95,7 +95,7 @@ items:
         - id: props
           description: ''
           type:
-            - 'office-ui-fabric-react!IPositioningContainerProps:interface'
+            - IPositioningContainerProps
   - uid: 'office-ui-fabric-react!PositioningContainer#componentDidMount:member(1)'
     name: componentDidMount()
     fullName: componentDidMount()
@@ -142,7 +142,7 @@ items:
       content: 'static defaultProps: IPositioningContainerProps;'
       return:
         type:
-          - 'office-ui-fabric-react!IPositioningContainerProps:interface'
+          - IPositioningContainerProps
   - uid: 'office-ui-fabric-react!PositioningContainer#dismiss:member'
     summary: 'Deprecated, use `onResize` instead.'
     deprecated:
@@ -216,4 +216,4 @@ items:
         - id: newProps
           description: ''
           type:
-            - 'office-ui-fabric-react!IPositioningContainerProps:interface'
+            - IPositioningContainerProps
