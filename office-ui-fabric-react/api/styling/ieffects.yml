@@ -14,6 +14,8 @@ items:
       - '@uifabric/styling!IEffects#elevation64:member'
       - '@uifabric/styling!IEffects#elevation8:member'
       - '@uifabric/styling!IEffects#roundedCorner2:member'
+      - '@uifabric/styling!IEffects#roundedCorner4:member'
+      - '@uifabric/styling!IEffects#roundedCorner6:member'
   - uid: '@uifabric/styling!IEffects#elevation16:member'
     summary: >-
       Used to provide a visual affordance that this element is elevated above the surface it rests on. This is lower
@@ -73,7 +75,9 @@ items:
         type:
           - string
   - uid: '@uifabric/styling!IEffects#roundedCorner2:member'
-    summary: 'How much corners should be rounded, for use with border-radius.'
+    summary: >-
+      Rounded corner value, for use with border-radius. Smaller values indicate less rounding. Smaller elements should
+      get less rounding than larger elements. Used for: buttons
     name: roundedCorner2
     fullName: roundedCorner2
     langs:
@@ -81,6 +85,34 @@ items:
     type: property
     syntax:
       content: 'roundedCorner2: string;'
+      return:
+        type:
+          - string
+  - uid: '@uifabric/styling!IEffects#roundedCorner4:member'
+    summary: >-
+      Rounded corner value, for use with border-radius. Smaller values indicate less rounding. Smaller elements should
+      get less rounding than larger elements. Used for: cards
+    name: roundedCorner4
+    fullName: roundedCorner4
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'roundedCorner4: string;'
+      return:
+        type:
+          - string
+  - uid: '@uifabric/styling!IEffects#roundedCorner6:member'
+    summary: >-
+      Rounded corner value, for use with border-radius. Smaller values indicate less rounding. Smaller elements should
+      get less rounding than larger elements. Used for: surfaces
+    name: roundedCorner6
+    fullName: roundedCorner6
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'roundedCorner6: string;'
       return:
         type:
           - string
