@@ -18,6 +18,7 @@ items:
       - '@uifabric/react-hooks!useId:function(1)'
       - '@uifabric/react-hooks!useMergedRefs:function(1)'
       - '@uifabric/react-hooks!useOnEvent:function(1)'
+      - '@uifabric/react-hooks!usePrevious:function(1)'
   - uid: '@uifabric/react-hooks!useAsync:function(1)'
     summary: Hook to provide an Async instance that is automatically cleaned up on dismount.
     name: useAsync()
@@ -229,7 +230,7 @@ items:
       - typeScript
     type: function
     syntax:
-      content: 'export declare function useMergedRefs<T>(...refs: React.Ref<T>[]): (instance: T) => void;'
+      content: 'export declare function useMergedRefs<T>(...refs: Ref<T>[]): (instance: T) => void;'
       return:
         type:
           - '(instance: T) => void'
@@ -238,7 +239,7 @@ items:
         - id: refs
           description: Refs to collectively update with one ref value.
           type:
-            - 'React.Ref<T>[]'
+            - 'Ref<T>[]'
       typeParameters:
         - id: T
   - uid: '@uifabric/react-hooks!useOnEvent:function(1)'
@@ -281,6 +282,29 @@ items:
         - id: TEvent
           type:
             - Event
+  - uid: '@uifabric/react-hooks!usePrevious:function(1)'
+    summary: |-
+      Hook keeping track of a given value from a previous execution of the component the Hook is used in.
+
+      See \[React Hooks FAQ\](https://reactjs.org/docs/hooks-faq.html\#how-to-get-the-previous-props-or-state)
+    name: usePrevious(value)
+    fullName: usePrevious(value)
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export declare function usePrevious<T>(value: T): T | undefined;'
+      return:
+        type:
+          - T | undefined
+        description: ''
+      parameters:
+        - id: value
+          description: ''
+          type:
+            - T
+      typeParameters:
+        - id: T
 references:
   - uid: '@uifabric/react-hooks!IUseBooleanCallbacks:interface'
     name: IUseBooleanCallbacks
