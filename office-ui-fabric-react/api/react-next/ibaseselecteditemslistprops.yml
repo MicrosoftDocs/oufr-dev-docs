@@ -1,0 +1,187 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-next!IBaseSelectedItemsListProps:interface'
+    name: IBaseSelectedItemsListProps
+    fullName: IBaseSelectedItemsListProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'React.ClassAttributes<any> '
+    syntax:
+      typeParameters:
+        - id: T
+    package: '@fluentui/react-next!'
+    children:
+      - '@fluentui/react-next!IBaseSelectedItemsListProps#canRemoveItem:member'
+      - '@fluentui/react-next!IBaseSelectedItemsListProps#componentRef:member'
+      - '@fluentui/react-next!IBaseSelectedItemsListProps#createGenericItem:member'
+      - '@fluentui/react-next!IBaseSelectedItemsListProps#defaultSelectedItems:member'
+      - '@fluentui/react-next!IBaseSelectedItemsListProps#onChange:member'
+      - '@fluentui/react-next!IBaseSelectedItemsListProps#onCopyItems:member'
+      - '@fluentui/react-next!IBaseSelectedItemsListProps#onItemDeleted:member'
+      - '@fluentui/react-next!IBaseSelectedItemsListProps#onItemsDeleted:member'
+      - '@fluentui/react-next!IBaseSelectedItemsListProps#onItemSelected:member'
+      - '@fluentui/react-next!IBaseSelectedItemsListProps#onRenderItem:member'
+      - '@fluentui/react-next!IBaseSelectedItemsListProps#removeButtonAriaLabel:member'
+      - '@fluentui/react-next!IBaseSelectedItemsListProps#selectedItems:member'
+      - '@fluentui/react-next!IBaseSelectedItemsListProps#selection:member'
+  - uid: '@fluentui/react-next!IBaseSelectedItemsListProps#canRemoveItem:member'
+    summary: A callback on whether this item can be deleted
+    name: canRemoveItem
+    fullName: canRemoveItem
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'canRemoveItem?: (item: T) => boolean;'
+      return:
+        type:
+          - '(item: T) => boolean'
+  - uid: '@fluentui/react-next!IBaseSelectedItemsListProps#componentRef:member'
+    name: componentRef
+    fullName: componentRef
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'componentRef?: IRefObject<IBaseSelectedItemsList<T>>;'
+      return:
+        type:
+          - IRefObject<IBaseSelectedItemsList<T>>
+  - uid: '@fluentui/react-next!IBaseSelectedItemsListProps#createGenericItem:member'
+    summary: Function that specifies how arbitrary text entered into the well is handled.
+    name: createGenericItem
+    fullName: createGenericItem
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'createGenericItem?: (input: string, ValidationState: ValidationState) => ISuggestionModel<T>;'
+      return:
+        type:
+          - '(input: string, ValidationState: ValidationState) => ISuggestionModel<T>'
+  - uid: '@fluentui/react-next!IBaseSelectedItemsListProps#defaultSelectedItems:member'
+    summary: Initial items that have already been selected and should appear in the people picker.
+    name: defaultSelectedItems
+    fullName: defaultSelectedItems
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'defaultSelectedItems?: T[];'
+      return:
+        type:
+          - 'T[]'
+  - uid: '@fluentui/react-next!IBaseSelectedItemsListProps#onChange:member'
+    summary: A callback for when the selected list of items changes.
+    name: onChange
+    fullName: onChange
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onChange?: (items?: T[]) => void;'
+      return:
+        type:
+          - '(items?: T[]) => void'
+  - uid: '@fluentui/react-next!IBaseSelectedItemsListProps#onCopyItems:member'
+    summary: A callback for when items are copied
+    name: onCopyItems
+    fullName: onCopyItems
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onCopyItems?: (items: T[]) => string;'
+      return:
+        type:
+          - '(items: T[]) => string'
+  - uid: '@fluentui/react-next!IBaseSelectedItemsListProps#onItemDeleted:member'
+    summary: A callback when an item is deleted
+    deprecated:
+      content: Use `onItemsDeleted` instead.
+    name: onItemDeleted
+    fullName: onItemDeleted
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onItemDeleted?: (deletedItem: T) => void;'
+      return:
+        type:
+          - '(deletedItem: T) => void'
+  - uid: '@fluentui/react-next!IBaseSelectedItemsListProps#onItemsDeleted:member'
+    summary: A callback when and item or items are deleted
+    name: onItemsDeleted
+    fullName: onItemsDeleted
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onItemsDeleted?: (deletedItems: T[]) => void;'
+      return:
+        type:
+          - '(deletedItems: T[]) => void'
+  - uid: '@fluentui/react-next!IBaseSelectedItemsListProps#onItemSelected:member'
+    summary: A callback to process a selection after the user selects something from the picker.
+    name: onItemSelected
+    fullName: onItemSelected
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onItemSelected?: (selectedItem?: T | T[]) => T | PromiseLike<T> | T[] | PromiseLike<T[]>;'
+      return:
+        type:
+          - '(selectedItem?: T | T[]) => T | PromiseLike<T> | T[] | PromiseLike<T[]>'
+  - uid: '@fluentui/react-next!IBaseSelectedItemsListProps#onRenderItem:member'
+    summary: Function that specifies how the selected item will appear.
+    name: onRenderItem
+    fullName: onRenderItem
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onRenderItem?: (props: ISelectedItemProps<T>) => JSX.Element;'
+      return:
+        type:
+          - '(props: ISelectedItemProps<T>) => JSX.Element'
+  - uid: '@fluentui/react-next!IBaseSelectedItemsListProps#removeButtonAriaLabel:member'
+    summary: Aria label for the 'X' button in the selected item component.
+    name: removeButtonAriaLabel
+    fullName: removeButtonAriaLabel
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'removeButtonAriaLabel?: string;'
+      return:
+        type:
+          - string
+  - uid: '@fluentui/react-next!IBaseSelectedItemsListProps#selectedItems:member'
+    summary: >-
+      The items that the base picker should currently display as selected. If this is provided then the picker will act
+      as a controlled component.
+    name: selectedItems
+    fullName: selectedItems
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'selectedItems?: T[];'
+      return:
+        type:
+          - 'T[]'
+  - uid: '@fluentui/react-next!IBaseSelectedItemsListProps#selection:member'
+    summary: The selection
+    name: selection
+    fullName: selection
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'selection?: Selection;'
+      return:
+        type:
+          - '@uifabric/utilities!Selection:class'
