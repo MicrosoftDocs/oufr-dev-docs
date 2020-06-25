@@ -263,10 +263,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'label?: string;'
+      content: 'label?: SlotProp<React.HTMLAttributes<HTMLSpanElement>>;'
       return:
         type:
-          - string
+          - SlotProp<React.HTMLAttributes<HTMLSpanElement>>
   - uid: '@fluentui/react-next!ICheckboxProps#onChange:member'
     summary: Callback that is called when the checked value has changed.
     name: onChange
@@ -281,6 +281,8 @@ items:
           - '(ev?: React.FormEvent<HTMLElement | HTMLInputElement>, checked?: boolean) => void'
   - uid: '@fluentui/react-next!ICheckboxProps#onRenderLabel:member'
     summary: Custom render function for the label.
+    deprecated:
+      content: Use label prop instead.
     name: onRenderLabel
     fullName: onRenderLabel
     langs:
