@@ -6,6 +6,8 @@ items:
     langs:
       - typeScript
     type: interface
+    extends:
+      - 'BaseSlots '
     package: '@fluentui/react-next!'
     children:
       - '@fluentui/react-next!ICheckboxSlots#checkbox:member'
@@ -13,7 +15,6 @@ items:
       - '@fluentui/react-next!ICheckboxSlots#container:member'
       - '@fluentui/react-next!ICheckboxSlots#input:member'
       - '@fluentui/react-next!ICheckboxSlots#label:member'
-      - '@fluentui/react-next!ICheckboxSlots#root:member'
   - uid: '@fluentui/react-next!ICheckboxSlots#checkbox:member'
     name: checkbox
     fullName: checkbox
@@ -66,17 +67,6 @@ items:
     type: property
     syntax:
       content: 'label: React.ElementType;'
-      return:
-        type:
-          - React.ElementType
-  - uid: '@fluentui/react-next!ICheckboxSlots#root:member'
-    name: root
-    fullName: root
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'root: React.ElementType;'
       return:
         type:
           - React.ElementType
