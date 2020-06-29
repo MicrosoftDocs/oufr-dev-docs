@@ -7,7 +7,7 @@ items:
       - typeScript
     type: interface
     extends:
-      - 'Omit<ICheckboxProps, ''label''>'
+      - 'Omit<ICheckboxProps, keyof ICheckboxSlotProps>'
       - 'Partial<ICheckboxSlotProps> '
     package: '@fluentui/react-next!'
     children:

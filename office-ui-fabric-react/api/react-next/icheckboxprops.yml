@@ -19,7 +19,7 @@ items:
       - '@fluentui/react-next!ICheckboxProps#as:member'
       - '@fluentui/react-next!ICheckboxProps#boxSide:member'
       - '@fluentui/react-next!ICheckboxProps#checked:member'
-      - '@fluentui/react-next!ICheckboxProps#checkmarkIconProps:member'
+      - '@fluentui/react-next!ICheckboxProps#checkmark:member'
       - '@fluentui/react-next!ICheckboxProps#className:member'
       - '@fluentui/react-next!ICheckboxProps#componentRef:member'
       - '@fluentui/react-next!ICheckboxProps#defaultChecked:member'
@@ -131,18 +131,18 @@ items:
       return:
         type:
           - boolean
-  - uid: '@fluentui/react-next!ICheckboxProps#checkmarkIconProps:member'
-    summary: Custom icon props for the check mark rendered by the checkbox
-    name: checkmarkIconProps
-    fullName: checkmarkIconProps
+  - uid: '@fluentui/react-next!ICheckboxProps#checkmark:member'
+    summary: Checkmark Icon to display when checkbox is checked.
+    name: checkmark
+    fullName: checkmark
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'checkmarkIconProps?: IIconProps;'
+      content: 'checkmark?: SlotProp<ISvgIconProps>;'
       return:
         type:
-          - 'office-ui-fabric-react!IIconProps:interface'
+          - SlotProp<ISvgIconProps>
   - uid: '@fluentui/react-next!ICheckboxProps#className:member'
     summary: 'Additional class name to provide on the root element, in addition to the ms-Checkbox class.'
     name: className
