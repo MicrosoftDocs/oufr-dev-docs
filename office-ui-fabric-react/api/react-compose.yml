@@ -8,7 +8,6 @@ items:
     type: package
     children:
       - '@fluentui/react-compose!BaseSlots:interface'
-      - '@fluentui/react-compose!ComponentWithAs:interface'
       - '@fluentui/react-compose!compose:function(1)'
       - '@fluentui/react-compose!mergeProps:function(1)'
       - '@fluentui/react-compose!mergeSlotProp:function(1)'
@@ -21,10 +20,10 @@ items:
     type: function
     syntax:
       content: >-
-        declare function compose<TElementType extends React.ElementType, TInputProps, TInputStylesProps, TParentProps,
-        TParentStylesProps>(input: Input<TElementType, TInputProps>, inputOptions?: ComposeOptions<TInputProps,
-        TInputStylesProps, TParentProps, TParentStylesProps>): ComponentWithAs<TElementType, TInputProps &
-        TParentProps>;
+        declare function compose<TElementType extends keyof JSX.IntrinsicElements, TInputProps, TInputStylesProps,
+        TParentProps, TParentStylesProps>(input: Input<TElementType, TInputProps>, inputOptions?:
+        ComposeOptions<TInputProps, TInputStylesProps, TParentProps, TParentStylesProps>): ComponentWithAs<TElementType,
+        TInputProps & TParentProps>;
       return:
         type:
           - 'ComponentWithAs<TElementType, TInputProps & TParentProps>'
@@ -41,7 +40,7 @@ items:
       typeParameters:
         - id: TElementType
           type:
-            - React.ElementType
+            - keyof JSX.IntrinsicElements
         - id: TInputProps
         - id: TInputStylesProps
         - id: TParentProps
@@ -113,7 +112,5 @@ items:
 references:
   - uid: '@fluentui/react-compose!BaseSlots:interface'
     name: BaseSlots
-  - uid: '@fluentui/react-compose!ComponentWithAs:interface'
-    name: ComponentWithAs
   - uid: '@fluentui/react-compose!ShorthandConfig:interface'
     name: ShorthandConfig
