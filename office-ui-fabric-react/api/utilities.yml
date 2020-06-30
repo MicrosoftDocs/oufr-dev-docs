@@ -1257,8 +1257,8 @@ items:
     type: function
     syntax:
       content: >-
-        export declare function getNativeProps<T>(props: {}, allowedPropNames: string[], excludedPropNames?: string[]):
-        T;
+        export declare function getNativeProps<T extends Record<string, any>>(props: Record<string, any>,
+        allowedPropNames: string[] | Record<string, number>, excludedPropNames?: string[]): T;
       return:
         type:
           - T
@@ -1267,17 +1267,19 @@ items:
         - id: props
           description: The unfiltered input props
           type:
-            - '{}'
+            - 'Record<string, any>'
         - id: allowedPropNames
           description: ''
           type:
-            - 'string[]'
+            - 'string[] | Record<string, number>'
         - id: excludedPropNames
           description: ''
           type:
             - 'string[]'
       typeParameters:
         - id: T
+          type:
+            - 'Record<string, any>'
   - uid: '@uifabric/utilities!getNextElement:function(1)'
     summary: 'Traverse to find the next focusable element. If tabbable is true, the element must have tabIndex != -1.'
     name: >-

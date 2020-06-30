@@ -12,6 +12,7 @@ items:
     package: '@fluentui/react-button!'
     children:
       - '@fluentui/react-button!ButtonProps#circular:member'
+      - '@fluentui/react-button!ButtonProps#componentRef:member'
       - '@fluentui/react-button!ButtonProps#content:member'
       - '@fluentui/react-button!ButtonProps#disabled:member'
       - '@fluentui/react-button!ButtonProps#fluid:member'
@@ -37,6 +38,18 @@ items:
       return:
         type:
           - boolean
+  - uid: '@fluentui/react-button!ButtonProps#componentRef:member'
+    summary: Access the imperative API of the Button.
+    name: componentRef
+    fullName: componentRef
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'componentRef?: React.RefObject<ButtonRef>;'
+      return:
+        type:
+          - React.RefObject<ButtonRef>
   - uid: '@fluentui/react-button!ButtonProps#content:member'
     summary: Shorthand content within the button.
     name: content
@@ -98,7 +111,7 @@ items:
         type:
           - boolean
   - uid: '@fluentui/react-button!ButtonProps#iconPosition:member'
-    summary: An icon button can format its Icon to appear before or after its content.
+    summary: An icon button can format its icon to appear before or after its content.
     name: iconPosition
     fullName: iconPosition
     langs:
