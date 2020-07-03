@@ -144,6 +144,7 @@ items:
       - '@uifabric/utilities!shallowCompare:function(1)'
       - '@uifabric/utilities!shouldWrapFocus:function(1)'
       - '@uifabric/utilities!styled:function(1)'
+      - '@uifabric/utilities!styled:function(2)'
       - '@uifabric/utilities!toMatrix:function(1)'
       - '@uifabric/utilities!unhoistMethods:function(1)'
       - '@uifabric/utilities!useCustomizationSettings:function(1)'
@@ -2656,6 +2657,54 @@ items:
         - id: TStyleSet
           type:
             - IStyleSet<TStyleSet>
+  - uid: '@uifabric/utilities!styled:function(2)'
+    name: 'styled(Component, baseStyles, getProps, customizable, pure)'
+    fullName: 'styled(Component, baseStyles, getProps, customizable, pure)'
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: >-
+        export declare function styled<TComponentProps extends IPropsWithStyles<TStyleProps, TStyleSet> &
+        React.RefAttributes<TRef>, TStyleProps, TStyleSet extends IStyleSet<TStyleSet>, TRef = unknown>(Component:
+        React.ComponentClass<TComponentProps> | React.FunctionComponent<TComponentProps>, baseStyles:
+        IStyleFunctionOrObject<TStyleProps, TStyleSet>, getProps?: (props: TComponentProps) => Partial<TComponentProps>,
+        customizable?: ICustomizableProps, pure?: boolean):
+        React.ForwardRefExoticComponent<React.PropsWithoutRef<TComponentProps> & React.RefAttributes<TRef>>;
+      return:
+        type:
+          - React.ForwardRefExoticComponent<React.PropsWithoutRef<TComponentProps> & React.RefAttributes<TRef>>
+        description: ''
+      parameters:
+        - id: Component
+          description: ''
+          type:
+            - React.ComponentClass<TComponentProps> | React.FunctionComponent<TComponentProps>
+        - id: baseStyles
+          description: ''
+          type:
+            - 'IStyleFunctionOrObject<TStyleProps, TStyleSet>'
+        - id: getProps
+          description: ''
+          type:
+            - '(props: TComponentProps) => Partial<TComponentProps>'
+        - id: customizable
+          description: ''
+          type:
+            - '@uifabric/utilities!ICustomizableProps:interface'
+        - id: pure
+          description: ''
+          type:
+            - boolean
+      typeParameters:
+        - id: TComponentProps
+          type:
+            - 'IPropsWithStyles<TStyleProps, TStyleSet> & React.RefAttributes<TRef>'
+        - id: TStyleProps
+        - id: TStyleSet
+          type:
+            - IStyleSet<TStyleSet>
+        - id: TRef
   - uid: '@uifabric/utilities!toMatrix:function(1)'
     summary: Convert the given array to a matrix with columnCount number of columns.
     name: 'toMatrix(items, columnCount)'
