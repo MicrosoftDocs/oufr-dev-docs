@@ -4,7 +4,7 @@ author: Vitalius1
 ms.author: vibraga
 ---
 
-# Get Started with Fabric React v7.121.8
+# Get Started with Fabric React v7.121.9
 
 :tada: The **Office UI Fabric React** project is evolving to **Fluent UI**. :tada:
 
