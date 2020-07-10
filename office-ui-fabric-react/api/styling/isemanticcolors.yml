@@ -99,6 +99,9 @@ items:
       - '@uifabric/styling!ISemanticColors#buttonBackgroundPressed:member'
       - '@uifabric/styling!ISemanticColors#buttonBorder:member'
       - '@uifabric/styling!ISemanticColors#buttonBorderDisabled:member'
+      - '@uifabric/styling!ISemanticColors#cardShadow:member'
+      - '@uifabric/styling!ISemanticColors#cardShadowHovered:member'
+      - '@uifabric/styling!ISemanticColors#cardStandoutBackground:member'
       - '@uifabric/styling!ISemanticColors#defaultStateBackground:member'
       - '@uifabric/styling!ISemanticColors#disabledBackground:member'
       - '@uifabric/styling!ISemanticColors#disabledBorder:member'
@@ -377,6 +380,51 @@ items:
     type: property
     syntax:
       content: 'buttonBorderDisabled: string;'
+      return:
+        type:
+          - string
+  - uid: '@uifabric/styling!ISemanticColors#cardShadow:member'
+    summary: >-
+      The default box-shadow for a card. In inverted themes, by default, this is set to `none` since shadows do not work
+      well on dark backgrounds. If the card could be the same color as the background, it is recommended that
+      `variantBorder` is used instead, so the card doesn't disappear in inverted themes. For use with `box-shadow`<!--
+      -->.
+    name: cardShadow
+    fullName: cardShadow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'cardShadow: string;'
+      return:
+        type:
+          - string
+  - uid: '@uifabric/styling!ISemanticColors#cardShadowHovered:member'
+    summary: >-
+      The default box-shadow when hovering on a card. Generally, this is a deeper shadow than `cardShadow`<!-- -->, to
+      give the effect that the card is lifting off the page. In inverted themes, this should be set to a box-shadow that
+      looks like a solid border, because shadows are not visible on dark themes. For use with `box-shadow`<!-- -->.
+    name: cardShadowHovered
+    fullName: cardShadowHovered
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'cardShadowHovered: string;'
+      return:
+        type:
+          - string
+  - uid: '@uifabric/styling!ISemanticColors#cardStandoutBackground:member'
+    summary: >-
+      The background color of a card (or other surface) on a standout background. Cards usually have shadows, but the
+      variantBorder slots can be used for a solid border. e.g. cards on a carousel of highlighted articles
+    name: cardStandoutBackground
+    fullName: cardStandoutBackground
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'cardStandoutBackground: string;'
       return:
         type:
           - string
@@ -952,7 +1000,7 @@ items:
         type:
           - string
   - uid: '@uifabric/styling!ISemanticColors#variantBorder:member'
-    summary: 'The color of the border that provides contrast between an element, such as a card, and an emphasized background.'
+    summary: 'The color of the border that provides contrast between an element, such as a card, and a standout background.'
     name: variantBorder
     fullName: variantBorder
     langs:
@@ -964,7 +1012,7 @@ items:
         type:
           - string
   - uid: '@uifabric/styling!ISemanticColors#variantBorderHovered:member'
-    summary: 'Hover color of border that provides contrast between an element, such as a card, and an emphasized background.'
+    summary: 'Hover color of border that provides contrast between an element, such as a card, and a standout background.'
     name: variantBorderHovered
     fullName: variantBorderHovered
     langs:

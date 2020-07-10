@@ -781,10 +781,12 @@ items:
       - typeScript
     type: function
     syntax:
-      content: 'export declare function findScrollableParent(startingElement: HTMLElement | null): HTMLElement | null;'
+      content: >-
+        export declare function findScrollableParent(startingElement: HTMLElement | null): HTMLElement | Window |
+        undefined | null;
       return:
         type:
-          - HTMLElement | null
+          - HTMLElement | Window | undefined | null
         description: ''
       parameters:
         - id: startingElement
