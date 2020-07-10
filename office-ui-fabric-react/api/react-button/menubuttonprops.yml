@@ -1,0 +1,81 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-button!MenuButtonProps:interface'
+    name: MenuButtonProps
+    fullName: MenuButtonProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'Omit<ButtonProps, ''icon'' | ''iconPosition'' | ''loader''> '
+    package: '@fluentui/react-button!'
+    children:
+      - '@fluentui/react-button!MenuButtonProps#defaultExpanded:member'
+      - '@fluentui/react-button!MenuButtonProps#expanded:member'
+      - '@fluentui/react-button!MenuButtonProps#menu:member'
+      - '@fluentui/react-button!MenuButtonProps#menuIcon:member'
+      - '@fluentui/react-button!MenuButtonProps#onMenuDismiss:member'
+  - uid: '@fluentui/react-button!MenuButtonProps#defaultExpanded:member'
+    summary: >-
+      Defines the inital expanded state of the MenuButton. Use this if you want the MenuButton to maintain its own
+      state. Mutually exclusive with `expanded`<!-- -->.
+    name: defaultExpanded
+    fullName: defaultExpanded
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'defaultExpanded?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: '@fluentui/react-button!MenuButtonProps#expanded:member'
+    summary: >-
+      Defines whether the MenuButton is in an expanded state. Use this if you wish to have the expanded state of the
+      MenuButton be controlled. Mutually exclusive with `defaultExpanded`<!-- -->.
+    name: expanded
+    fullName: expanded
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'expanded?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: '@fluentui/react-button!MenuButtonProps#menu:member'
+    summary: Menu that is displayed when the button is pressed.
+    name: menu
+    fullName: menu
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'menu?: SlotProp<IContextualMenuProps>;'
+      return:
+        type:
+          - SlotProp<IContextualMenuProps>
+  - uid: '@fluentui/react-button!MenuButtonProps#menuIcon:member'
+    summary: Menu icon that indicates that this button has a menu that can be expanded.
+    name: menuIcon
+    fullName: menuIcon
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'menuIcon?: SlotProp<React.HTMLAttributes<HTMLSpanElement>>;'
+      return:
+        type:
+          - SlotProp<React.HTMLAttributes<HTMLSpanElement>>
+  - uid: '@fluentui/react-button!MenuButtonProps#onMenuDismiss:member'
+    summary: Defines a callback that runs after the MenuButton's contextual menu has been dismissed.
+    name: onMenuDismiss
+    fullName: onMenuDismiss
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onMenuDismiss?: () => void;'
+      return:
+        type:
+          - () => void

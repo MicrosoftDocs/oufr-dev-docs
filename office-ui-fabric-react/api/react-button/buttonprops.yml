@@ -7,13 +7,12 @@ items:
       - typeScript
     type: interface
     extends:
-      - ComponentProps
+      - '@fluentui/react-compose!ComponentProps:interface'
       - 'React.HTMLAttributes<HTMLButtonElement> '
     package: '@fluentui/react-button!'
     children:
       - '@fluentui/react-button!ButtonProps#circular:member'
       - '@fluentui/react-button!ButtonProps#componentRef:member'
-      - '@fluentui/react-button!ButtonProps#content:member'
       - '@fluentui/react-button!ButtonProps#disabled:member'
       - '@fluentui/react-button!ButtonProps#fluid:member'
       - '@fluentui/react-button!ButtonProps#icon:member'
@@ -50,18 +49,6 @@ items:
       return:
         type:
           - React.RefObject<ButtonRef>
-  - uid: '@fluentui/react-button!ButtonProps#content:member'
-    summary: Shorthand content within the button.
-    name: content
-    fullName: content
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'content?: ShorthandValue<{}>;'
-      return:
-        type:
-          - 'ShorthandValue<{}>'
   - uid: '@fluentui/react-button!ButtonProps#disabled:member'
     summary: A button can show that it cannot be interacted with.
     name: disabled
@@ -94,10 +81,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'icon?: ShorthandValue<{}>;'
+      content: 'icon?: SlotProp<React.HTMLAttributes<HTMLSpanElement>>;'
       return:
         type:
-          - 'ShorthandValue<{}>'
+          - SlotProp<React.HTMLAttributes<HTMLSpanElement>>
   - uid: '@fluentui/react-button!ButtonProps#iconOnly:member'
     summary: A button can contain only an icon.
     name: iconOnly
@@ -142,10 +129,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'loader?: ShorthandValue<{}>;'
+      content: 'loader?: SlotProp<React.HTMLAttributes<HTMLSpanElement>>;'
       return:
         type:
-          - 'ShorthandValue<{}>'
+          - SlotProp<React.HTMLAttributes<HTMLSpanElement>>
   - uid: '@fluentui/react-button!ButtonProps#loading:member'
     summary: A button can show a loading indicator.
     name: loading
