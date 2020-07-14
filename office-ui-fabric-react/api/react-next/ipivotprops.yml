@@ -18,6 +18,7 @@ items:
       - '@fluentui/react-next!IPivotProps#linkFormat:member'
       - '@fluentui/react-next!IPivotProps#linkSize:member'
       - '@fluentui/react-next!IPivotProps#onLinkClick:member'
+      - '@fluentui/react-next!IPivotProps#overflowBehavior:member'
       - '@fluentui/react-next!IPivotProps#selectedKey:member'
       - '@fluentui/react-next!IPivotProps#styles:member'
       - '@fluentui/react-next!IPivotProps#theme:member'
@@ -129,6 +130,23 @@ items:
       return:
         type:
           - '(item?: PivotItem, ev?: React.MouseEvent<HTMLElement>) => void'
+  - uid: '@fluentui/react-next!IPivotProps#overflowBehavior:member'
+    summary: >-
+      Overflow behavior when there is not enough room to display all of the links/tabs \* none: Pivot links will
+      overflow the container and may not be visible \* menu: Display an overflow menu that contains the tabs that don't
+      fit
+
+       none
+    name: overflowBehavior
+    fullName: overflowBehavior
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'overflowBehavior?: ''none'' | ''menu'';'
+      return:
+        type:
+          - '''none'' | ''menu'''
   - uid: '@fluentui/react-next!IPivotProps#selectedKey:member'
     summary: >-
       Key of the selected pivot item. Updating this will override the Pivot's selected item state. Only provide this if

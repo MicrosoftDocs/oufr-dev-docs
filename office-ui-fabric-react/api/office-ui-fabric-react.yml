@@ -724,6 +724,7 @@ items:
       - 'office-ui-fabric-react!updateRGB:function(1)'
       - 'office-ui-fabric-react!updateSV:function(1)'
       - 'office-ui-fabric-react!updateT:function(1)'
+      - 'office-ui-fabric-react!useKeytipRef:function(1)'
       - 'office-ui-fabric-react!ValidationState:enum'
       - 'office-ui-fabric-react!VirtualizedComboBox:class'
   - uid: 'office-ui-fabric-react!buildColumns:function(1)'
@@ -1546,6 +1547,32 @@ items:
           description: ''
           type:
             - number
+  - uid: 'office-ui-fabric-react!useKeytipRef:function(1)'
+    summary: >-
+      Hook that creates a ref which is used for passing to Keytip target element. The ref will handle setting the
+      attributes needed for Keytip to work.
+    name: useKeytipRef(options)
+    fullName: useKeytipRef(options)
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: >-
+        export declare function useKeytipRef<TElement extends HTMLElement = HTMLElement>(options: KeytipDataOptions):
+        React.Ref<TElement>;
+      return:
+        type:
+          - React.Ref<TElement>
+        description: ''
+      parameters:
+        - id: options
+          description: ''
+          type:
+            - KeytipDataOptions
+      typeParameters:
+        - id: TElement
+          type:
+            - 'HTMLElement '
 references:
   - uid: 'office-ui-fabric-react!ActionButton:class'
     name: ActionButton
