@@ -2001,7 +2001,7 @@ items:
     type: function
     syntax:
       content: >-
-        export declare function memoizeFunction<T extends (...args: any[]) => RET_TYPE, RET_TYPE>(cb: T, maxCacheSize?:
+        export declare function memoizeFunction<T extends (...args: any[]) => RetType, RetType>(cb: T, maxCacheSize?:
         number, ignoreNullOrUndefinedResult?: boolean): T;
       return:
         type:
@@ -2026,8 +2026,8 @@ items:
       typeParameters:
         - id: T
           type:
-            - '(...args: any[]) => RET_TYPE'
-        - id: RET_TYPE
+            - '(...args: any[]) => RetType'
+        - id: RetType
   - uid: '@uifabric/utilities!merge:function(1)'
     summary: >-
       Simple deep merge function. Takes all arguments and returns a deep copy of the objects merged together in the

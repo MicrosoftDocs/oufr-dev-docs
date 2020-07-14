@@ -10,17 +10,32 @@ items:
       - 'office-ui-fabric-react!IStackTokens:interface'
     package: '@uifabric/react-cards!'
     children:
+      - '@uifabric/react-cards!ICardTokens#borderFocused:member'
       - '@uifabric/react-cards!ICardTokens#boxShadow:member'
+      - '@uifabric/react-cards!ICardTokens#boxShadowFocused:member'
       - '@uifabric/react-cards!ICardTokens#boxShadowHovered:member'
       - '@uifabric/react-cards!ICardTokens#childrenMargin:member'
       - '@uifabric/react-cards!ICardTokens#cursor:member'
       - '@uifabric/react-cards!ICardTokens#height:member'
       - '@uifabric/react-cards!ICardTokens#highContrastBoxShadow:member'
+      - '@uifabric/react-cards!ICardTokens#highContrastBoxShadowFocused:member'
       - '@uifabric/react-cards!ICardTokens#highContrastBoxShadowHovered:member'
       - '@uifabric/react-cards!ICardTokens#maxWidth:member'
       - '@uifabric/react-cards!ICardTokens#minHeight:member'
       - '@uifabric/react-cards!ICardTokens#minWidth:member'
       - '@uifabric/react-cards!ICardTokens#width:member'
+  - uid: '@uifabric/react-cards!ICardTokens#borderFocused:member'
+    summary: Defines the border of the Card when it is in a focused state.
+    name: borderFocused
+    fullName: borderFocused
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'borderFocused?: string;'
+      return:
+        type:
+          - string
   - uid: '@uifabric/react-cards!ICardTokens#boxShadow:member'
     summary: Defines the box shadow of the Card.
     name: boxShadow
@@ -30,6 +45,18 @@ items:
     type: property
     syntax:
       content: 'boxShadow?: string;'
+      return:
+        type:
+          - string
+  - uid: '@uifabric/react-cards!ICardTokens#boxShadowFocused:member'
+    summary: Defines the box shadow of the Card when it is in a focused state.
+    name: boxShadowFocused
+    fullName: boxShadowFocused
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'boxShadowFocused?: string;'
       return:
         type:
           - string
@@ -90,6 +117,18 @@ items:
     type: property
     syntax:
       content: 'highContrastBoxShadow?: string;'
+      return:
+        type:
+          - string
+  - uid: '@uifabric/react-cards!ICardTokens#highContrastBoxShadowFocused:member'
+    summary: Defines the box shadow of the Card when it is in a focused state and in high contrast mode.
+    name: highContrastBoxShadowFocused
+    fullName: highContrastBoxShadowFocused
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'highContrastBoxShadowFocused?: string;'
       return:
         type:
           - string
