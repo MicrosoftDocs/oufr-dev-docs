@@ -23,7 +23,6 @@ items:
       - '@fluentui/react-next!ISpinButtonProps#defaultValue:member'
       - '@fluentui/react-next!ISpinButtonProps#disabled:member'
       - '@fluentui/react-next!ISpinButtonProps#downArrowButtonStyles:member'
-      - '@fluentui/react-next!ISpinButtonProps#getClassNames:member'
       - '@fluentui/react-next!ISpinButtonProps#iconButtonProps:member'
       - '@fluentui/react-next!ISpinButtonProps#iconProps:member'
       - '@fluentui/react-next!ISpinButtonProps#incrementButtonAriaLabel:member'
@@ -213,24 +212,6 @@ items:
       return:
         type:
           - Partial<IButtonStyles>
-  - uid: '@fluentui/react-next!ISpinButtonProps#getClassNames:member'
-    summary: >-
-      Custom function for providing the classNames for the control. Can be used to provide all styles for the component
-      instead of applying them on top of the default styles.
-    name: getClassNames
-    fullName: getClassNames
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: >-
-        getClassNames?: (theme: ITheme, disabled: boolean, isFocused: boolean, keyboardSpinDirection:
-        KeyboardSpinDirection, labelPosition?: Position, className?: string) => ISpinButtonClassNames;
-      return:
-        type:
-          - >-
-            (theme: ITheme, disabled: boolean, isFocused: boolean, keyboardSpinDirection: KeyboardSpinDirection,
-            labelPosition?: Position, className?: string) => ISpinButtonClassNames
   - uid: '@fluentui/react-next!ISpinButtonProps#iconButtonProps:member'
     summary: Additional props for the up and down arrow buttons.
     name: iconButtonProps
@@ -450,10 +431,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'styles?: Partial<ISpinButtonStyles>;'
+      content: 'styles?: IStyleFunctionOrObject<ISpinButtonStyleProps, ISpinButtonStyles>;'
       return:
         type:
-          - Partial<ISpinButtonStyles>
+          - 'IStyleFunctionOrObject<ISpinButtonStyleProps, ISpinButtonStyles>'
   - uid: '@fluentui/react-next!ISpinButtonProps#theme:member'
     summary: Theme provided by HOC.
     name: theme
