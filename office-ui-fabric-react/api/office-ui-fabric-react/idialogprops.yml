@@ -9,7 +9,7 @@ items:
     extends:
       - React.ClassAttributes<DialogBase>
       - IWithResponsiveModeState
-      - 'office-ui-fabric-react!IAccessiblePopupProps:interface'
+      - 'IAccessiblePopupProps '
     package: office-ui-fabric-react!
     children:
       - 'office-ui-fabric-react!IDialogProps#ariaDescribedById:member'
@@ -227,7 +227,7 @@ items:
       content: 'modalProps?: IModalProps;'
       return:
         type:
-          - 'office-ui-fabric-react!IModalProps:interface'
+          - IModalProps
   - uid: 'office-ui-fabric-react!IDialogProps#onDismiss:member'
     summary: >-
       A callback function for when the Dialog is dismissed from the close button or light dismiss. Can also be specified
