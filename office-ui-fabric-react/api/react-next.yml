@@ -9,6 +9,7 @@ items:
     children:
       - '@fluentui/react-next!BasePeopleSelectedItemsList:class'
       - '@fluentui/react-next!BaseSelectedItemsList:class'
+      - '@fluentui/react-next!Callout:class'
       - '@fluentui/react-next!CoachmarkBase:class'
       - '@fluentui/react-next!ColorPickerGridCellBase:class'
       - '@fluentui/react-next!ExtendedSelectedItem:class'
@@ -18,6 +19,9 @@ items:
       - '@fluentui/react-next!IBaseSelectedItemsList:interface'
       - '@fluentui/react-next!IBaseSelectedItemsListProps:interface'
       - '@fluentui/react-next!IBaseSelectedItemsListState:interface'
+      - '@fluentui/react-next!ICalloutContentStyleProps:interface'
+      - '@fluentui/react-next!ICalloutContentStyles:interface'
+      - '@fluentui/react-next!ICalloutProps:interface'
       - '@fluentui/react-next!ICheckbox:interface'
       - '@fluentui/react-next!ICheckboxProps:interface'
       - '@fluentui/react-next!ICheckboxSlots:interface'
@@ -44,6 +48,7 @@ items:
       - '@fluentui/react-next!IFabricProps:interface'
       - '@fluentui/react-next!IFabricStyleProps:interface'
       - '@fluentui/react-next!IFabricStyles:interface'
+      - '@fluentui/react-next!IFocusTrapCalloutProps:interface'
       - '@fluentui/react-next!IFocusTrapZone:interface'
       - '@fluentui/react-next!IFocusTrapZoneProps:interface'
       - '@fluentui/react-next!IImage:interface'
@@ -80,10 +85,6 @@ items:
       - '@fluentui/react-next!IPersonaSharedProps:interface'
       - '@fluentui/react-next!IPersonaStyleProps:interface'
       - '@fluentui/react-next!IPersonaStyles:interface'
-      - '@fluentui/react-next!IPivot:interface'
-      - '@fluentui/react-next!IPivotItemProps:interface'
-      - '@fluentui/react-next!IPivotProps:interface'
-      - '@fluentui/react-next!IPivotStyles:interface'
       - '@fluentui/react-next!IPopupProps:interface'
       - '@fluentui/react-next!IPositioningContainer:interface'
       - '@fluentui/react-next!IPositioningContainerProps:interface'
@@ -128,9 +129,6 @@ items:
       - '@fluentui/react-next!PersonaInitialsColor:enum'
       - '@fluentui/react-next!PersonaPresence:enum'
       - '@fluentui/react-next!PersonaSize:enum'
-      - '@fluentui/react-next!PivotItem:class'
-      - '@fluentui/react-next!PivotLinkFormat:enum'
-      - '@fluentui/react-next!PivotLinkSize:enum'
       - '@fluentui/react-next!PositioningContainer:class'
       - '@fluentui/react-next!ResizeGroupDirection:enum'
       - '@fluentui/react-next!SelectedPeopleList:class'
@@ -163,6 +161,8 @@ references:
     name: BasePeopleSelectedItemsList
   - uid: '@fluentui/react-next!BaseSelectedItemsList:class'
     name: BaseSelectedItemsList
+  - uid: '@fluentui/react-next!Callout:class'
+    name: Callout
   - uid: '@fluentui/react-next!CoachmarkBase:class'
     name: CoachmarkBase
   - uid: '@fluentui/react-next!ColorPickerGridCellBase:class'
@@ -179,6 +179,12 @@ references:
     name: IBaseSelectedItemsListProps
   - uid: '@fluentui/react-next!IBaseSelectedItemsListState:interface'
     name: IBaseSelectedItemsListState
+  - uid: '@fluentui/react-next!ICalloutContentStyleProps:interface'
+    name: ICalloutContentStyleProps
+  - uid: '@fluentui/react-next!ICalloutContentStyles:interface'
+    name: ICalloutContentStyles
+  - uid: '@fluentui/react-next!ICalloutProps:interface'
+    name: ICalloutProps
   - uid: '@fluentui/react-next!ICheckbox:interface'
     name: ICheckbox
   - uid: '@fluentui/react-next!ICheckboxProps:interface'
@@ -231,6 +237,8 @@ references:
     name: IFabricStyleProps
   - uid: '@fluentui/react-next!IFabricStyles:interface'
     name: IFabricStyles
+  - uid: '@fluentui/react-next!IFocusTrapCalloutProps:interface'
+    name: IFocusTrapCalloutProps
   - uid: '@fluentui/react-next!IFocusTrapZone:interface'
     name: IFocusTrapZone
   - uid: '@fluentui/react-next!IFocusTrapZoneProps:interface'
@@ -303,14 +311,6 @@ references:
     name: IPersonaStyleProps
   - uid: '@fluentui/react-next!IPersonaStyles:interface'
     name: IPersonaStyles
-  - uid: '@fluentui/react-next!IPivot:interface'
-    name: IPivot
-  - uid: '@fluentui/react-next!IPivotItemProps:interface'
-    name: IPivotItemProps
-  - uid: '@fluentui/react-next!IPivotProps:interface'
-    name: IPivotProps
-  - uid: '@fluentui/react-next!IPivotStyles:interface'
-    name: IPivotStyles
   - uid: '@fluentui/react-next!IPopupProps:interface'
     name: IPopupProps
   - uid: '@fluentui/react-next!IPositioningContainer:interface'
@@ -399,12 +399,6 @@ references:
     name: PersonaPresence
   - uid: '@fluentui/react-next!PersonaSize:enum'
     name: PersonaSize
-  - uid: '@fluentui/react-next!PivotItem:class'
-    name: PivotItem
-  - uid: '@fluentui/react-next!PivotLinkFormat:enum'
-    name: PivotLinkFormat
-  - uid: '@fluentui/react-next!PivotLinkSize:enum'
-    name: PivotLinkSize
   - uid: '@fluentui/react-next!PositioningContainer:class'
     name: PositioningContainer
   - uid: '@fluentui/react-next!ResizeGroupDirection:enum'

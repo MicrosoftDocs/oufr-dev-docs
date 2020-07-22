@@ -5,7 +5,7 @@ ms.author: vibraga
 ---
 
 ## Overview
-A SpinButton allows the user to incrementaly adjust a value in small steps. It is mainly used for numeric values, but other values are supported too.
+A spin button (&#x60;SpinButton&#x60;) allows someone to incrementally adjust a value in small steps. It’s mainly used for numeric values, but other values are supported too.
 
 
 

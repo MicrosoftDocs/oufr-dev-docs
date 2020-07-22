@@ -5,7 +5,7 @@ ms.author: vibraga
 ---
 
 ## Overview
-The TextField component enables a user to type text into an app. It&#39;s typically used to capture a single line of text, but can be configured to capture multiple lines of text. The text displays on the screen in a simple, uniform format.
+Text fields (&#x60;TextField&#x60;) give people a way to enter and edit text. They’re used in forms, modal dialogs, tables, and other surfaces where text input is required.  
 
 
 

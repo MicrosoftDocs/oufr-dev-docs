@@ -5,7 +5,7 @@ ms.author: vibraga
 ---
 
 ## Overview
-SearchBoxes provide an input field for searching through content, allowing users to locate specific items within the website or app.
+A search box (&#x60;SearchBox&#x60;) provides an input field for searching content within a site or app to find specific items.  
 
 
 
