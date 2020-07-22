@@ -5,11 +5,7 @@ ms.author: vibraga
 ---
 
 ## Overview
-The ChoiceGroup component, also known as radio buttons, let users select one option from two or more choices. Each option is represented by one ChoiceGroup button; a user can select only one ChoiceGroup in a button group.
-
-ChoiceGroup emphasize all options equally, and that may draw more attention to the options than necessary. Consider using other controls, unless the options deserve extra attention from the user. For example, if the default option is recommended for most users in most situations, use a Dropdown component instead.
-
-If there are only two mutually exclusive options, combine them into a single Checkbox or Toggle switch. For example, use a Checkbox for &quot;I agree&quot; instead of ChoiceGroup buttons for &quot;I agree&quot; and &quot;I don&#39;t agree.&quot;
+Radio buttons (&#x60;ChoiceGroup&#x60;) let people select a single option from two or more choices.
 
 
 

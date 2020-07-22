@@ -5,7 +5,7 @@ ms.author: vibraga
 ---
 
 ## Overview
-ColorPicker is used to allow a user to select a color.
+The color picker (&#x60;ColorPicker&#x60;) is used to browse through and select colors. By default, it lets people navigate through colors on a color spectrum; or specify a color in either Red-Green-Blue (RGB); or alpha color code; or Hexadecimal textboxes.
 
 
 

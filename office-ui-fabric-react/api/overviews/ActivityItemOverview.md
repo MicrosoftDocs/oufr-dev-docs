@@ -5,7 +5,7 @@ ms.author: vibraga
 ---
 
 ## Overview
-ActivityItems represent individual units of a user&#39;s activity, such as making a comment, mentioning someone with an @mention, editing a document, or moving a file.
+An activity item (&#x60;ActivityItem&#x60;) represents a person&#39;s actions, such as making a comment, mentioning someone with an @mention, editing a document, or moving a file. 
 
 
 

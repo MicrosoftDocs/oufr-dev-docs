@@ -5,15 +5,9 @@ ms.author: vibraga
 ---
 
 ## Overview
-Toggles represent a physical switch that allows users to turn things on or off. Use Toggles to present users with two mutually exclusive options (like on&#x2F;off), where choosing an option results in an immediate action. Use a Toggle for binary operations that take effect right after the user flips the Toggle. For example, use a Toggle to turn services or hardware components on or off. In other words, if a physical switch would work for the action, a Toggle is probably the best control to use.
+A toggle represents a physical switch that allows someone to choose between two mutually exclusive options.  For example, “On&#x2F;Off”, “Show&#x2F;Hide”. Choosing an option should produce an immediate result. 
 
-## Choosing between Toggle and Checkbox
 
-For some actions, either a Toggle or a Checkbox might work. To decide which control would work better, follow these tips:
-
-- Use a Toggle for binary settings when changes become effective immediately after the user changes them.
-- In the above example, it&#39;s clear with the Toggle that the wireless is set to &quot;On.&quot; But with the Checkbox, the user needs to think about whether the wireless is on now or whether they need to check the box to turn wireless on.
-- Use a Checkbox when the user has to perform extra steps for changes to be effective. For example, if the user must click a &quot;Submit&quot;, &quot;Next&quot;, &quot;Ok&quot; button to apply changes, use a Checkbox.
 
 
 

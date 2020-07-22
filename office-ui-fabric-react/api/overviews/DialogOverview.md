@@ -5,7 +5,7 @@ ms.author: vibraga
 ---
 
 ## Overview
-Dialogs are temporary, modal UI overlay that generally provide contextual app information or require user confirmation&#x2F;input. In most cases, Dialogs block interactions with the web page or application until being explicitly dismissed, and often request action from the user. They are primarily used for lightweight creation or edit tasks, and simple management tasks.
+A dialog box (&#x60;Dialog&#x60;) is a temporary pop-up that takes focus from the page or app and requires people to interact with it. It’s primarily used for confirming actions, such as deleting a file, or asking people to make a choice.  
 
 
 

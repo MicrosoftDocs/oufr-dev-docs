@@ -5,10 +5,7 @@ ms.author: vibraga
 ---
 
 ## Overview
-Coachmarks are used to draw a persons attention to a part of the UI, and increase engagement with that element
-in the product.
-
-They should be contextual whenever possible, or related to something that will make existing user flows more efficient.
+Coach marks (&#x60;Coachmark&#x60;) are used to draw a person’s attention to parts of the UI and increase engagement with those elements. A teaching bubble appears on hover or selection of the coach mark.
 
 
 

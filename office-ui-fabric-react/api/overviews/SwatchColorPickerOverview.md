@@ -5,7 +5,7 @@ ms.author: vibraga
 ---
 
 ## Overview
-A SwatchColorPicker is a list of colors displayed as a grid as options for the user. It can be displayed by itself, with header and&#x2F;or dividers, or as a button which expands to show the swatch color picker.
+A swatch color picker (&#x60;SwatchColorPicker&#x60;) displays color options as a grid. It can be shown by itself, with a header and dividers, or as a button that expands to show the swatch color picker.
 
 
 

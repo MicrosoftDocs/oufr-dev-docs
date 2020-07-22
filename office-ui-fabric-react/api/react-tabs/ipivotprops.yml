@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: '@fluentui/react-next!IPivotProps:interface'
+  - uid: '@fluentui/react-tabs!IPivotProps:interface'
     name: IPivotProps
     fullName: IPivotProps
     langs:
@@ -8,21 +8,21 @@ items:
     type: interface
     extends:
       - 'React.HTMLAttributes<HTMLDivElement> '
-    package: '@fluentui/react-next!'
+    package: '@fluentui/react-tabs!'
     children:
-      - '@fluentui/react-next!IPivotProps#className:member'
-      - '@fluentui/react-next!IPivotProps#componentRef:member'
-      - '@fluentui/react-next!IPivotProps#defaultSelectedKey:member'
-      - '@fluentui/react-next!IPivotProps#getTabId:member'
-      - '@fluentui/react-next!IPivotProps#headersOnly:member'
-      - '@fluentui/react-next!IPivotProps#linkFormat:member'
-      - '@fluentui/react-next!IPivotProps#linkSize:member'
-      - '@fluentui/react-next!IPivotProps#onLinkClick:member'
-      - '@fluentui/react-next!IPivotProps#overflowBehavior:member'
-      - '@fluentui/react-next!IPivotProps#selectedKey:member'
-      - '@fluentui/react-next!IPivotProps#styles:member'
-      - '@fluentui/react-next!IPivotProps#theme:member'
-  - uid: '@fluentui/react-next!IPivotProps#className:member'
+      - '@fluentui/react-tabs!IPivotProps#className:member'
+      - '@fluentui/react-tabs!IPivotProps#componentRef:member'
+      - '@fluentui/react-tabs!IPivotProps#defaultSelectedKey:member'
+      - '@fluentui/react-tabs!IPivotProps#getTabId:member'
+      - '@fluentui/react-tabs!IPivotProps#headersOnly:member'
+      - '@fluentui/react-tabs!IPivotProps#linkFormat:member'
+      - '@fluentui/react-tabs!IPivotProps#linkSize:member'
+      - '@fluentui/react-tabs!IPivotProps#onLinkClick:member'
+      - '@fluentui/react-tabs!IPivotProps#overflowBehavior:member'
+      - '@fluentui/react-tabs!IPivotProps#selectedKey:member'
+      - '@fluentui/react-tabs!IPivotProps#styles:member'
+      - '@fluentui/react-tabs!IPivotProps#theme:member'
+  - uid: '@fluentui/react-tabs!IPivotProps#className:member'
     summary: Additional css class to apply to the Pivot
     name: className
     fullName: className
@@ -34,7 +34,7 @@ items:
       return:
         type:
           - string
-  - uid: '@fluentui/react-next!IPivotProps#componentRef:member'
+  - uid: '@fluentui/react-tabs!IPivotProps#componentRef:member'
     summary: >-
       Optional callback to access the IPivot interface. Use this instead of ref for accessing the public methods and
       properties of the component.
@@ -48,7 +48,7 @@ items:
       return:
         type:
           - React.RefObject<IPivot>
-  - uid: '@fluentui/react-next!IPivotProps#defaultSelectedKey:member'
+  - uid: '@fluentui/react-tabs!IPivotProps#defaultSelectedKey:member'
     summary: >-
       Default selected key for the pivot. Only provide this if the pivot is an uncontrolled component; otherwise, use
       the `selectedKey` property.
@@ -65,7 +65,7 @@ items:
       return:
         type:
           - string
-  - uid: '@fluentui/react-next!IPivotProps#getTabId:member'
+  - uid: '@fluentui/react-tabs!IPivotProps#getTabId:member'
     summary: >-
       Callback to customize how IDs are generated for each tab header. Useful if you're rendering content outside and
       need to connect aria-labelledby.
@@ -79,7 +79,7 @@ items:
       return:
         type:
           - '(itemKey: string, index: number) => string'
-  - uid: '@fluentui/react-next!IPivotProps#headersOnly:member'
+  - uid: '@fluentui/react-tabs!IPivotProps#headersOnly:member'
     summary: >-
       Whether to skip rendering the tabpanel with the content of the selected tab. Use this prop if you plan to
       separately render the tab content and don't want to leave an empty tabpanel in the page that may confuse Screen
@@ -94,7 +94,7 @@ items:
       return:
         type:
           - boolean
-  - uid: '@fluentui/react-next!IPivotProps#linkFormat:member'
+  - uid: '@fluentui/react-tabs!IPivotProps#linkFormat:member'
     summary: 'Link format (links, tabs)'
     name: linkFormat
     fullName: linkFormat
@@ -106,7 +106,7 @@ items:
       return:
         type:
           - PivotLinkFormatType
-  - uid: '@fluentui/react-next!IPivotProps#linkSize:member'
+  - uid: '@fluentui/react-tabs!IPivotProps#linkSize:member'
     summary: 'Link size (normal, large)'
     name: linkSize
     fullName: linkSize
@@ -118,7 +118,7 @@ items:
       return:
         type:
           - PivotLinkSizeType
-  - uid: '@fluentui/react-next!IPivotProps#onLinkClick:member'
+  - uid: '@fluentui/react-tabs!IPivotProps#onLinkClick:member'
     summary: Callback for when the selected pivot item is changed.
     name: onLinkClick
     fullName: onLinkClick
@@ -130,7 +130,7 @@ items:
       return:
         type:
           - '(item?: PivotItem, ev?: React.MouseEvent<HTMLElement>) => void'
-  - uid: '@fluentui/react-next!IPivotProps#overflowBehavior:member'
+  - uid: '@fluentui/react-tabs!IPivotProps#overflowBehavior:member'
     summary: >-
       Overflow behavior when there is not enough room to display all of the links/tabs \* none: Pivot links will
       overflow the container and may not be visible \* menu: Display an overflow menu that contains the tabs that don't
@@ -147,7 +147,7 @@ items:
       return:
         type:
           - '''none'' | ''menu'''
-  - uid: '@fluentui/react-next!IPivotProps#selectedKey:member'
+  - uid: '@fluentui/react-tabs!IPivotProps#selectedKey:member'
     summary: >-
       Key of the selected pivot item. Updating this will override the Pivot's selected item state. Only provide this if
       the pivot is a controlled component where you are maintaining the current state; otherwise, use
@@ -162,7 +162,7 @@ items:
       return:
         type:
           - string | null
-  - uid: '@fluentui/react-next!IPivotProps#styles:member'
+  - uid: '@fluentui/react-tabs!IPivotProps#styles:member'
     summary: Call to provide customized styling that will layer on top of the variant rules.
     name: styles
     fullName: styles
@@ -174,7 +174,7 @@ items:
       return:
         type:
           - 'IStyleFunctionOrObject<IPivotStyleProps, IPivotStyles>'
-  - uid: '@fluentui/react-next!IPivotProps#theme:member'
+  - uid: '@fluentui/react-tabs!IPivotProps#theme:member'
     summary: Theme provided by High-Order Component.
     name: theme
     fullName: theme
