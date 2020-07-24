@@ -11,6 +11,7 @@ items:
       - '@fluentui/date-time-utilities!IDay#date:member'
       - '@fluentui/date-time-utilities!IDay#isInBounds:member'
       - '@fluentui/date-time-utilities!IDay#isInMonth:member'
+      - '@fluentui/date-time-utilities!IDay#isMarked:member'
       - '@fluentui/date-time-utilities!IDay#isSelected:member'
       - '@fluentui/date-time-utilities!IDay#isToday:member'
       - '@fluentui/date-time-utilities!IDay#key:member'
@@ -28,7 +29,7 @@ items:
         type:
           - string
   - uid: '@fluentui/date-time-utilities!IDay#isInBounds:member'
-    summary: Is current date within restriction bboundaries
+    summary: Is current date within restriction boundaries
     name: isInBounds
     fullName: isInBounds
     langs:
@@ -48,6 +49,18 @@ items:
     type: property
     syntax:
       content: 'isInMonth: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: '@fluentui/date-time-utilities!IDay#isMarked:member'
+    summary: Is current date marked
+    name: isMarked
+    fullName: isMarked
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isMarked: boolean;'
       return:
         type:
           - boolean
