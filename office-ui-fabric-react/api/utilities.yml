@@ -2755,15 +2755,13 @@ items:
             - 'string[]'
   - uid: '@uifabric/utilities!useCustomizationSettings:function(1)'
     summary: Hook to get Customizations settings. It will trigger component state update on settings change observed.
-    name: 'useCustomizationSettings(properties, scopeName, localSettings)'
-    fullName: 'useCustomizationSettings(properties, scopeName, localSettings)'
+    name: 'useCustomizationSettings(properties, scopeName)'
+    fullName: 'useCustomizationSettings(properties, scopeName)'
     langs:
       - typeScript
     type: function
     syntax:
-      content: >-
-        export declare function useCustomizationSettings(properties: string[], scopeName?: string, localSettings?:
-        ICustomizations): ISettings;
+      content: 'export declare function useCustomizationSettings(properties: string[], scopeName?: string): ISettings;'
       return:
         type:
           - ISettings
@@ -2777,10 +2775,6 @@ items:
           description: ''
           type:
             - string
-        - id: localSettings
-          description: ''
-          type:
-            - '@uifabric/utilities!ICustomizations:interface'
   - uid: '@uifabric/utilities!useFocusRects:function(1)'
     summary: >-
       Initializes the logic which:
