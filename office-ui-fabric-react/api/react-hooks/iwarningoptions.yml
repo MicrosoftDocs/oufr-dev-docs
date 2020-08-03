@@ -1,0 +1,127 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@uifabric/react-hooks!IWarningOptions:interface'
+    name: IWarningOptions
+    fullName: IWarningOptions
+    langs:
+      - typeScript
+    type: interface
+    syntax:
+      typeParameters:
+        - id: P
+    package: '@uifabric/react-hooks!'
+    children:
+      - '@uifabric/react-hooks!IWarningOptions#conditionallyRequired:member'
+      - '@uifabric/react-hooks!IWarningOptions#controlledUsage:member'
+      - '@uifabric/react-hooks!IWarningOptions#deprecations:member'
+      - '@uifabric/react-hooks!IWarningOptions#mutuallyExclusive:member'
+      - '@uifabric/react-hooks!IWarningOptions#name:member'
+      - '@uifabric/react-hooks!IWarningOptions#other:member'
+      - '@uifabric/react-hooks!IWarningOptions#props:member'
+  - uid: '@uifabric/react-hooks!IWarningOptions#conditionallyRequired:member'
+    summary: Warns when props are required if a condition is met
+    name: conditionallyRequired
+    fullName: conditionallyRequired
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: |-
+        conditionallyRequired?: {
+                requiredProps: string[];
+                conditionalPropName: string;
+                condition: boolean;
+            }[];
+      return:
+        type:
+          - |-
+            {
+                    requiredProps: string[];
+                    conditionalPropName: string;
+                    condition: boolean;
+                }[]
+  - uid: '@uifabric/react-hooks!IWarningOptions#controlledUsage:member'
+    summary: >-
+      Check for and warn on the following error conditions with a form component: - A value prop is provided (indicated
+      it's being used as controlled) without a change handler, and the component is not read-only - Both the value and
+      defaultValue props are provided - The component is attempting to switch between controlled and uncontrolled
+
+
+      The messages mimic the warnings React gives for these error conditions on input elements. The warning will only be
+      displayed once per component instance.
+    name: controlledUsage
+    fullName: controlledUsage
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        controlledUsage?: Pick<IWarnControlledUsageParams<P>, 'valueProp' | 'defaultValueProp' | 'onChangeProp' |
+        'readOnlyProp'>;
+      return:
+        type:
+          - 'Pick<IWarnControlledUsageParams<P>, ''valueProp'' | ''defaultValueProp'' | ''onChangeProp'' | ''readOnlyProp''>'
+  - uid: '@uifabric/react-hooks!IWarningOptions#deprecations:member'
+    summary: >-
+      Warns when deprecated props are being used. Each key is a prop name and each value is either undefined or a
+      replacement prop name.
+    name: deprecations
+    fullName: deprecations
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'deprecations?: ISettingsMap<P>;'
+      return:
+        type:
+          - ISettingsMap<P>
+  - uid: '@uifabric/react-hooks!IWarningOptions#mutuallyExclusive:member'
+    summary: >-
+      Warns when two props which are mutually exclusive are both being used. The key is one prop name and the value is
+      the other.
+    name: mutuallyExclusive
+    fullName: mutuallyExclusive
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'mutuallyExclusive?: ISettingsMap<P>;'
+      return:
+        type:
+          - ISettingsMap<P>
+  - uid: '@uifabric/react-hooks!IWarningOptions#name:member'
+    summary: Name of the component
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name: string;'
+      return:
+        type:
+          - string
+  - uid: '@uifabric/react-hooks!IWarningOptions#other:member'
+    summary: Generic messages
+    name: other
+    fullName: other
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'other?: string[];'
+      return:
+        type:
+          - 'string[]'
+  - uid: '@uifabric/react-hooks!IWarningOptions#props:member'
+    summary: Current component props
+    name: props
+    fullName: props
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'props: P;'
+      return:
+        type:
+          - P
