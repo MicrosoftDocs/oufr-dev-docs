@@ -5,7 +5,7 @@ ms.author: vibraga
 ---
 
 ## Overview
-Check boxes (&#x60;Checkbox&#x60;) give people a way to select one or more items from a group, or switch between two mutually exclusive options (checked or unchecked, on or off). 
+Check boxes (&#x60;Checkbox&#x60;) give people a way to select one or more items from a group, or switch between two mutually exclusive options (checked or unchecked, on or off).
 
 
 

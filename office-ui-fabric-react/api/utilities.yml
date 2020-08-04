@@ -119,6 +119,7 @@ items:
       - '@uifabric/utilities!mergeSettings:function(1)'
       - '@uifabric/utilities!modalize:function(1)'
       - '@uifabric/utilities!nullRender:function(1)'
+      - '@uifabric/utilities!omit:function(1)'
       - '@uifabric/utilities!on:function(1)'
       - '@uifabric/utilities!Point:interface'
       - '@uifabric/utilities!portalContainsElement:function(1)'
@@ -2186,6 +2187,41 @@ items:
         type:
           - JSX.Element | null
         description: ''
+  - uid: '@uifabric/utilities!omit:function(1)'
+    summary: >-
+      Tiny helper to do the minimal amount of work in duplicating an object but omitting some props. This ends up faster
+      than using object ...rest or reduce to filter.
+
+
+      This behaves very much like filteredAssign, but does not merge many objects together, uses an exclusion object
+      map, and avoids spreads all for optimal performance.
+
+
+      See perf test for background: https://jsperf.com/omit-vs-rest-vs-reduce/1
+    name: 'omit(obj, exclusions)'
+    fullName: 'omit(obj, exclusions)'
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export declare function omit<TObj extends Record<string, any>>(obj: TObj, exclusions: (keyof TObj)[]): TObj;'
+      return:
+        type:
+          - TObj
+        description: ''
+      parameters:
+        - id: obj
+          description: The object to clone
+          type:
+            - TObj
+        - id: exclusions
+          description: The array of keys to exclude
+          type:
+            - '(keyof TObj)[]'
+      typeParameters:
+        - id: TObj
+          type:
+            - 'Record<string, any>'
   - uid: '@uifabric/utilities!on:function(1)'
     name: 'on(element, eventName, callback, options)'
     fullName: 'on(element, eventName, callback, options)'

@@ -5,7 +5,7 @@ ms.author: vibraga
 ---
 
 ## Overview
-A banner (&#x60;MessageBar&#x60;) displays errors, warnings, or important information about an open app or file. For example, if a file failed to upload an error message bar should appear. 
+A banner (&#x60;MessageBar&#x60;) displays errors, warnings, or important information about an open app or file. For example, if a file failed to upload an error message bar should appear.
 
 
 

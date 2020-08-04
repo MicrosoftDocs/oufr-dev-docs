@@ -12,7 +12,6 @@ Hover cards (&#x60;HoverCard&#x60;) show commands and information, such as m
 
 
 
-
 ## Do &#10003;
 Coming soon...
 

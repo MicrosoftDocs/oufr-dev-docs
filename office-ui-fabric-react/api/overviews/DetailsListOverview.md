@@ -5,8 +5,7 @@ ms.author: vibraga
 ---
 
 ## Overview
-A details list (&#x60;DetailsList&#x60;) is a robust way to display an information-rich collection of items, and allow people to sort, group, and filter the content. Use a details list when information density is critical. 
-
+A details list (&#x60;DetailsList&#x60;) is a robust way to display an information-rich collection of items, and allow people to sort, group, and filter the content. Use a details list when information density is critical.
 
 
 
