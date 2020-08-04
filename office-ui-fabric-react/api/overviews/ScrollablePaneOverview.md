@@ -5,7 +5,7 @@ ms.author: vibraga
 ---
 
 ## Overview
-A scrollable pane (&#x60;ScrollablePane&#x60;) is a helper component that&#39;s used with the &#x60;Sticky&#x60; component. It will &quot;stick&quot; to the top or bottom of the scrollable region and remain visible. 
+A scrollable pane (&#x60;ScrollablePane&#x60;) is a helper component that&#39;s used with the &#x60;Sticky&#x60; component. It will &quot;stick&quot; to the top or bottom of the scrollable region and remain visible.
 
 
 

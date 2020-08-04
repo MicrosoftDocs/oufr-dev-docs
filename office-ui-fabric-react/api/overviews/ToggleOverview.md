@@ -5,9 +5,7 @@ ms.author: vibraga
 ---
 
 ## Overview
-A toggle represents a physical switch that allows someone to choose between two mutually exclusive options.  For example, “On&#x2F;Off”, “Show&#x2F;Hide”. Choosing an option should produce an immediate result. 
-
-
+A toggle represents a physical switch that allows someone to choose between two mutually exclusive options.  For example, “On&#x2F;Off”, “Show&#x2F;Hide”. Choosing an option should produce an immediate result.
 
 
 

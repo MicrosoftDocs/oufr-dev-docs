@@ -5,7 +5,7 @@ ms.author: vibraga
 ---
 
 ## Overview
-A face pile (&#x60;Facepile&#x60;) displays a list of personas. Each circle represents a person and contains their image or initials. Often this control is used when sharing who has access to a specific view or file, or when assigning someone a task within a workflow. 
+A face pile (&#x60;Facepile&#x60;) displays a list of personas. Each circle represents a person and contains their image or initials. Often this control is used when sharing who has access to a specific view or file, or when assigning someone a task within a workflow.
 
 
 

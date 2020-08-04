@@ -5,7 +5,7 @@ ms.author: vibraga
 ---
 
 ## Overview
-A dialog box (&#x60;Dialog&#x60;) is a temporary pop-up that takes focus from the page or app and requires people to interact with it. It’s primarily used for confirming actions, such as deleting a file, or asking people to make a choice.  
+A dialog box (&#x60;Dialog&#x60;) is a temporary pop-up that takes focus from the page or app and requires people to interact with it. It’s primarily used for confirming actions, such as deleting a file, or asking people to make a choice.
 
 
 
