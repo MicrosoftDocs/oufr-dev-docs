@@ -47,7 +47,7 @@ items:
       - 'office-ui-fabric-react!List#forceUpdate:member(1)'
       - 'office-ui-fabric-react!List#getStartItemIndexInView:member(1)'
       - 'office-ui-fabric-react!List#getTotalListHeight:member(1)'
-      - 'office-ui-fabric-react!List#refs:member'
+      - 'office-ui-fabric-react!List#pageRefs:member'
       - 'office-ui-fabric-react!List#render:member(1)'
       - 'office-ui-fabric-react!List#scrollToIndex:member(1)'
       - 'office-ui-fabric-react!List#shouldComponentUpdate:member(1)'
@@ -155,23 +155,17 @@ items:
         type:
           - number
         description: ''
-  - uid: 'office-ui-fabric-react!List#refs:member'
-    name: refs
-    fullName: refs
+  - uid: 'office-ui-fabric-react!List#pageRefs:member'
+    name: pageRefs
+    fullName: pageRefs
     langs:
       - typeScript
     type: property
     syntax:
-      content: |-
-        refs: {
-                [key: string]: React.ReactInstance;
-            };
+      content: 'readonly pageRefs: Readonly<Record<string, unknown>>;'
       return:
         type:
-          - |-
-            {
-                    [key: string]: React.ReactInstance;
-                }
+          - 'Readonly<Record<string, unknown>>'
   - uid: 'office-ui-fabric-react!List#render:member(1)'
     name: render()
     fullName: render()
