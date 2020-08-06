@@ -1222,8 +1222,8 @@ items:
     type: function
     syntax:
       content: >-
-        export declare function getNativeElementProps<TAttributes extends React.HTMLAttributes<any>>(tagName: keyof
-        React.ReactHTML, props: {}, excludedPropNames?: string[]): TAttributes;
+        export declare function getNativeElementProps<TAttributes extends React.HTMLAttributes<any>>(tagName: string,
+        props: {}, excludedPropNames?: string[]): TAttributes;
       return:
         type:
           - TAttributes
@@ -1232,7 +1232,7 @@ items:
         - id: tagName
           description: Tag name (e.g. "div")
           type:
-            - keyof React.ReactHTML
+            - string
         - id: props
           description: Props object
           type:

@@ -16,6 +16,7 @@ items:
       - '@fluentui/date-time-utilities!DateRangeType:enum'
       - '@fluentui/date-time-utilities!DayOfWeek:enum'
       - '@fluentui/date-time-utilities!FirstWeekOfYear:enum'
+      - '@fluentui/date-time-utilities!getDatePartHashValue:function(1)'
       - '@fluentui/date-time-utilities!getDateRangeArray:function(1)'
       - '@fluentui/date-time-utilities!getMonthEnd:function(1)'
       - '@fluentui/date-time-utilities!getMonthStart:function(1)'
@@ -172,6 +173,24 @@ items:
           type:
             - Date
         - id: date2
+          description: ''
+          type:
+            - Date
+  - uid: '@fluentui/date-time-utilities!getDatePartHashValue:function(1)'
+    summary: Helper function to assist in date comparisons
+    name: getDatePartHashValue(date)
+    fullName: getDatePartHashValue(date)
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export declare function getDatePartHashValue(date: Date): number;'
+      return:
+        type:
+          - number
+        description: ''
+      parameters:
+        - id: date
           description: ''
           type:
             - Date
