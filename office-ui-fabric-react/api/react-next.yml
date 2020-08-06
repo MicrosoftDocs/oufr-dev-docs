@@ -9,7 +9,6 @@ items:
     children:
       - '@fluentui/react-next!BasePeopleSelectedItemsList:class'
       - '@fluentui/react-next!BaseSelectedItemsList:class'
-      - '@fluentui/react-next!CoachmarkBase:class'
       - '@fluentui/react-next!ColorPickerGridCellBase:class'
       - '@fluentui/react-next!ExtendedSelectedItem:class'
       - '@fluentui/react-next!FocusTrapZone:class'
@@ -29,7 +28,6 @@ items:
       - '@fluentui/react-next!ICheckboxStyles:interface'
       - '@fluentui/react-next!ICoachmark:interface'
       - '@fluentui/react-next!ICoachmarkProps:interface'
-      - '@fluentui/react-next!ICoachmarkState:interface'
       - '@fluentui/react-next!ICoachmarkStyleProps:interface'
       - '@fluentui/react-next!ICoachmarkStyles:interface'
       - '@fluentui/react-next!IColorCellProps:interface'
@@ -87,7 +85,6 @@ items:
       - '@fluentui/react-next!IPopupProps:interface'
       - '@fluentui/react-next!IPositioningContainer:interface'
       - '@fluentui/react-next!IPositioningContainerProps:interface'
-      - '@fluentui/react-next!IPositioningContainerState:interface'
       - '@fluentui/react-next!IResizeGroup:interface'
       - '@fluentui/react-next!IResizeGroupProps:interface'
       - '@fluentui/react-next!IResizeGroupState:interface'
@@ -128,11 +125,11 @@ items:
       - '@fluentui/react-next!PersonaInitialsColor:enum'
       - '@fluentui/react-next!PersonaPresence:enum'
       - '@fluentui/react-next!PersonaSize:enum'
-      - '@fluentui/react-next!PositioningContainer:class'
       - '@fluentui/react-next!ResizeGroupDirection:enum'
       - '@fluentui/react-next!SelectedPeopleList:class'
       - '@fluentui/react-next!SwatchColorPickerBase:class'
       - '@fluentui/react-next!TextFieldBase:class'
+      - '@fluentui/react-next!useHeightOffset:function(1)'
   - uid: '@fluentui/react-next!getPersonaInitialsColor:function(1)'
     summary: >-
       Gets the hex color string (prefixed with \#) for the given persona props. This is the logic used internally by the
@@ -155,13 +152,34 @@ items:
           description: Current persona props
           type:
             - 'Pick<IPersonaProps, ''primaryText'' | ''text'' | ''initialsColor''>'
+  - uid: '@fluentui/react-next!useHeightOffset:function(1)'
+    name: 'useHeightOffset({ finalHeight }, contentHost)'
+    fullName: 'useHeightOffset({ finalHeight }, contentHost)'
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: >-
+        export declare function useHeightOffset({ finalHeight }: IPositioningContainerProps, contentHost:
+        React.RefObject<HTMLDivElement | null>): number;
+      return:
+        type:
+          - number
+        description: ''
+      parameters:
+        - id: '{ finalHeight }'
+          description: ''
+          type:
+            - IPositioningContainerProps
+        - id: contentHost
+          description: ''
+          type:
+            - React.RefObject<HTMLDivElement | null>
 references:
   - uid: '@fluentui/react-next!BasePeopleSelectedItemsList:class'
     name: BasePeopleSelectedItemsList
   - uid: '@fluentui/react-next!BaseSelectedItemsList:class'
     name: BaseSelectedItemsList
-  - uid: '@fluentui/react-next!CoachmarkBase:class'
-    name: CoachmarkBase
   - uid: '@fluentui/react-next!ColorPickerGridCellBase:class'
     name: ColorPickerGridCellBase
   - uid: '@fluentui/react-next!ExtendedSelectedItem:class'
@@ -198,8 +216,6 @@ references:
     name: ICoachmark
   - uid: '@fluentui/react-next!ICoachmarkProps:interface'
     name: ICoachmarkProps
-  - uid: '@fluentui/react-next!ICoachmarkState:interface'
-    name: ICoachmarkState
   - uid: '@fluentui/react-next!ICoachmarkStyleProps:interface'
     name: ICoachmarkStyleProps
   - uid: '@fluentui/react-next!ICoachmarkStyles:interface'
@@ -314,8 +330,6 @@ references:
     name: IPositioningContainer
   - uid: '@fluentui/react-next!IPositioningContainerProps:interface'
     name: IPositioningContainerProps
-  - uid: '@fluentui/react-next!IPositioningContainerState:interface'
-    name: IPositioningContainerState
   - uid: '@fluentui/react-next!IResizeGroup:interface'
     name: IResizeGroup
   - uid: '@fluentui/react-next!IResizeGroupProps:interface'
@@ -396,8 +410,6 @@ references:
     name: PersonaPresence
   - uid: '@fluentui/react-next!PersonaSize:enum'
     name: PersonaSize
-  - uid: '@fluentui/react-next!PositioningContainer:class'
-    name: PositioningContainer
   - uid: '@fluentui/react-next!ResizeGroupDirection:enum'
     name: ResizeGroupDirection
   - uid: '@fluentui/react-next!SelectedPeopleList:class'
