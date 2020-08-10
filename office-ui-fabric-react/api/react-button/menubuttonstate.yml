@@ -7,6 +7,19 @@ items:
       - typeScript
     type: interface
     extends:
-      - '@fluentui/react-button!MenuButtonProps:interface'
-      - 'Omit<ButtonState, ''icon'' | ''iconPosition'' | ''loader''> '
+      - MenuButtonProps
+      - 'Omit<ButtonState, ''iconPosition'' | ''loader'' | ''menu''> '
     package: '@fluentui/react-button!'
+    children:
+      - '@fluentui/react-button!MenuButtonState#menu:member'
+  - uid: '@fluentui/react-button!MenuButtonState#menu:member'
+    name: menu
+    fullName: menu
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'menu: ExpandedState[''menu''];'
+      return:
+        type:
+          - 'ExpandedState[''menu'']'
