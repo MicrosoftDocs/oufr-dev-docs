@@ -236,7 +236,7 @@ items:
       - typeScript
     type: function
     syntax:
-      content: 'export declare function useMergedRefs<T>(...refs: Ref<T>[]): (instance: T) => void;'
+      content: 'export declare function useMergedRefs<T>(...refs: (Ref<T> | undefined)[]): (instance: T) => void;'
       return:
         type:
           - '(instance: T) => void'
@@ -245,7 +245,7 @@ items:
         - id: refs
           description: Refs to collectively update with one ref value.
           type:
-            - 'Ref<T>[]'
+            - '(Ref<T> | undefined)[]'
       typeParameters:
         - id: T
   - uid: '@uifabric/react-hooks!useOnEvent:function(1)'
