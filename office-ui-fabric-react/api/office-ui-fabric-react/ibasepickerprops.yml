@@ -185,17 +185,19 @@ items:
         type:
           - '(items?: T[]) => void'
   - uid: 'office-ui-fabric-react!IBasePickerProps#onDismiss:member'
-    summary: A callback to override the default behavior of adding the selected suggestion on dismiss.
+    summary: >-
+      A callback to override the default behavior of adding the selected suggestion on dismiss. If it returns true or
+      nothing, the selected item will be added on dismiss. If false, the selected item will not be added on dismiss.
     name: onDismiss
     fullName: onDismiss
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'onDismiss?: (ev?: any, selectedItem?: T) => void;'
+      content: 'onDismiss?: (ev?: any, selectedItem?: T) => boolean | void;'
       return:
         type:
-          - '(ev?: any, selectedItem?: T) => void'
+          - '(ev?: any, selectedItem?: T) => boolean | void'
   - uid: 'office-ui-fabric-react!IBasePickerProps#onEmptyInputFocus:member'
     summary: A callback for what should happen when a user clicks within the input area.
     deprecated:

@@ -7,11 +7,35 @@ items:
       - typeScript
     type: package
     children:
+      - '@fluentui/react-theme-provider!mergeThemes:function(1)'
       - '@fluentui/react-theme-provider!PartialTheme:interface'
       - '@fluentui/react-theme-provider!StyleOptions:interface'
       - '@fluentui/react-theme-provider!StyleProps:interface'
       - '@fluentui/react-theme-provider!Theme:interface'
       - '@fluentui/react-theme-provider!ThemeProviderProps:interface'
+      - '@fluentui/react-theme-provider!Tokens:interface'
+  - uid: '@fluentui/react-theme-provider!mergeThemes:function(1)'
+    summary: Merges multiple themes.
+    name: mergeThemes(themes)
+    fullName: mergeThemes(themes)
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: >-
+        export declare function mergeThemes<TResult = PartialTheme>(...themes: (undefined | PartialTheme | Theme)[]):
+        TResult;
+      return:
+        type:
+          - TResult
+        description: ''
+      parameters:
+        - id: themes
+          description: ''
+          type:
+            - '(undefined | PartialTheme | Theme)[]'
+      typeParameters:
+        - id: TResult
 references:
   - uid: '@fluentui/react-theme-provider!PartialTheme:interface'
     name: PartialTheme
@@ -23,3 +47,5 @@ references:
     name: Theme
   - uid: '@fluentui/react-theme-provider!ThemeProviderProps:interface'
     name: ThemeProviderProps
+  - uid: '@fluentui/react-theme-provider!Tokens:interface'
+    name: Tokens

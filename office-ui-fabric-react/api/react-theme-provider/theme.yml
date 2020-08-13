@@ -7,10 +7,34 @@ items:
     langs:
       - typeScript
     type: interface
+    extends:
+      - 'IPartialTheme '
     package: '@fluentui/react-theme-provider!'
     children:
+      - '@fluentui/react-theme-provider!Theme#components:member'
       - '@fluentui/react-theme-provider!Theme#stylesheets:member'
       - '@fluentui/react-theme-provider!Theme#tokens:member'
+  - uid: '@fluentui/react-theme-provider!Theme#components:member'
+    name: components
+    fullName: components
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: |-
+        components?: {
+                [componentName: string]: {
+                    styles?: IStyleFunctionOrObject<any, any>;
+                };
+            };
+      return:
+        type:
+          - |-
+            {
+                    [componentName: string]: {
+                        styles?: IStyleFunctionOrObject<any, any>;
+                    };
+                }
   - uid: '@fluentui/react-theme-provider!Theme#stylesheets:member'
     name: stylesheets
     fullName: stylesheets
@@ -18,7 +42,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'stylesheets: string[];'
+      content: 'stylesheets?: string[];'
       return:
         type:
           - 'string[]'
@@ -29,15 +53,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: |-
-        tokens: {
-                body: ColorTokenSet & TokenSetType;
-                [key: string]: TokenSetType;
-            };
+      content: 'tokens?: Tokens;'
       return:
         type:
-          - |-
-            {
-                    body: ColorTokenSet & TokenSetType;
-                    [key: string]: TokenSetType;
-                }
+          - '@fluentui/react-theme-provider!Tokens:interface'

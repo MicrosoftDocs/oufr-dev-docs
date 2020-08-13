@@ -35,10 +35,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'formatMonthDayYear: (date: Date) => string;'
+      content: 'formatMonthDayYear: (date: Date, strings: IDateGridStrings) => string;'
       return:
         type:
-          - '(date: Date) => string'
+          - '(date: Date, strings: IDateGridStrings) => string'
   - uid: '@fluentui/date-time-utilities!IDateFormatting#formatMonthYear:member'
     summary: Format the month and year according to specified function. Intended use case is localization.
     name: formatMonthYear
@@ -47,10 +47,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'formatMonthYear: (date: Date) => string;'
+      content: 'formatMonthYear: (date: Date, strings: IDateGridStrings) => string;'
       return:
         type:
-          - '(date: Date) => string'
+          - '(date: Date, strings: IDateGridStrings) => string'
   - uid: '@fluentui/date-time-utilities!IDateFormatting#formatYear:member'
     summary: Format the year according to specified function. Intended use case is localization.
     name: formatYear
