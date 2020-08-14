@@ -21,6 +21,7 @@ items:
       - 'office-ui-fabric-react!BasePicker#completeSelection:member'
       - 'office-ui-fabric-react!BasePicker#completeSuggestion:member(1)'
       - 'office-ui-fabric-react!BasePicker#componentDidMount:member(1)'
+      - 'office-ui-fabric-react!BasePicker#componentDidUpdate:member(1)'
       - 'office-ui-fabric-react!BasePicker#componentWillUnmount:member(1)'
       - 'office-ui-fabric-react!BasePicker#currentPromise:member'
       - 'office-ui-fabric-react!BasePicker#dismissSuggestions:member'
@@ -28,6 +29,7 @@ items:
       - 'office-ui-fabric-react!BasePicker#focusInput:member(1)'
       - 'office-ui-fabric-react!BasePicker#focusZone:member'
       - 'office-ui-fabric-react!BasePicker#getActiveDescendant:member(1)'
+      - 'office-ui-fabric-react!BasePicker.getDerivedStateFromProps:member(1)'
       - 'office-ui-fabric-react!BasePicker#getSuggestionsAlert:member(1)'
       - 'office-ui-fabric-react!BasePicker#input:member'
       - 'office-ui-fabric-react!BasePicker#items:member'
@@ -59,8 +61,6 @@ items:
       - 'office-ui-fabric-react!BasePicker#suggestionElement:member'
       - 'office-ui-fabric-react!BasePicker#SuggestionOfProperType:member'
       - 'office-ui-fabric-react!BasePicker#suggestionStore:member'
-      - 'office-ui-fabric-react!BasePicker#UNSAFE_componentWillReceiveProps:member(1)'
-      - 'office-ui-fabric-react!BasePicker#UNSAFE_componentWillUpdate:member(1)'
       - 'office-ui-fabric-react!BasePicker#updateSuggestions:member(1)'
       - 'office-ui-fabric-react!BasePicker#updateSuggestionsList:member(1)'
       - 'office-ui-fabric-react!BasePicker#updateValue:member(1)'
@@ -174,6 +174,27 @@ items:
         type:
           - void
         description: ''
+  - uid: 'office-ui-fabric-react!BasePicker#componentDidUpdate:member(1)'
+    name: 'componentDidUpdate(oldProps, oldState)'
+    fullName: 'componentDidUpdate(oldProps, oldState)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'componentDidUpdate(oldProps: P, oldState: IBasePickerState): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: oldProps
+          description: ''
+          type:
+            - P
+        - id: oldState
+          description: ''
+          type:
+            - 'office-ui-fabric-react!IBasePickerState:interface'
   - uid: 'office-ui-fabric-react!BasePicker#componentWillUnmount:member(1)'
     name: componentWillUnmount()
     fullName: componentWillUnmount()
@@ -255,6 +276,29 @@ items:
         type:
           - string | undefined
         description: ''
+  - uid: 'office-ui-fabric-react!BasePicker.getDerivedStateFromProps:member(1)'
+    name: getDerivedStateFromProps(newProps)
+    fullName: getDerivedStateFromProps(newProps)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        static getDerivedStateFromProps(newProps: IBasePickerProps<any>): {
+                items: any[];
+            } | null;
+      return:
+        type:
+          - |-
+            {
+                    items: any[];
+                } | null
+        description: ''
+      parameters:
+        - id: newProps
+          description: ''
+          type:
+            - IBasePickerProps<any>
   - uid: 'office-ui-fabric-react!BasePicker#getSuggestionsAlert:member(1)'
     name: getSuggestionsAlert(suggestionAlertClassName)
     fullName: getSuggestionsAlert(suggestionAlertClassName)
@@ -642,44 +686,6 @@ items:
       return:
         type:
           - SuggestionsController<T>
-  - uid: 'office-ui-fabric-react!BasePicker#UNSAFE_componentWillReceiveProps:member(1)'
-    name: UNSAFE_componentWillReceiveProps(newProps)
-    fullName: UNSAFE_componentWillReceiveProps(newProps)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'UNSAFE_componentWillReceiveProps(newProps: P): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: newProps
-          description: ''
-          type:
-            - P
-  - uid: 'office-ui-fabric-react!BasePicker#UNSAFE_componentWillUpdate:member(1)'
-    name: 'UNSAFE_componentWillUpdate(newProps, newState)'
-    fullName: 'UNSAFE_componentWillUpdate(newProps, newState)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'UNSAFE_componentWillUpdate(newProps: P, newState: IBasePickerState): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: newProps
-          description: ''
-          type:
-            - P
-        - id: newState
-          description: ''
-          type:
-            - 'office-ui-fabric-react!IBasePickerState:interface'
   - uid: 'office-ui-fabric-react!BasePicker#updateSuggestions:member(1)'
     name: updateSuggestions(suggestions)
     fullName: updateSuggestions(suggestions)
