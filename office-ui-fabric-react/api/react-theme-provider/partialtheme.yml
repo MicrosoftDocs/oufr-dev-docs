@@ -8,5 +8,18 @@ items:
       - typeScript
     type: interface
     extends:
-      - 'RecursivePartial<Theme> '
+      - 'Omit<Theme, ''tokens''> '
     package: '@fluentui/react-theme-provider!'
+    children:
+      - '@fluentui/react-theme-provider!PartialTheme#tokens:member'
+  - uid: '@fluentui/react-theme-provider!PartialTheme#tokens:member'
+    name: tokens
+    fullName: tokens
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tokens?: RecursivePartial<Tokens>;'
+      return:
+        type:
+          - RecursivePartial<Tokens>
