@@ -11,6 +11,7 @@ items:
       - '@fluentui/react-next!BaseSelectedItemsList:class'
       - '@fluentui/react-next!canAnyMenuItemsCheck:function(1)'
       - '@fluentui/react-next!ColorPickerGridCellBase:class'
+      - '@fluentui/react-next!ComboBox:class'
       - '@fluentui/react-next!ContextualMenuBase:class'
       - '@fluentui/react-next!ContextualMenuItemBase:class'
       - '@fluentui/react-next!ContextualMenuItemType:enum'
@@ -39,6 +40,12 @@ items:
       - '@fluentui/react-next!IColorPickerGridCellProps:interface'
       - '@fluentui/react-next!IColorPickerGridCellStyleProps:interface'
       - '@fluentui/react-next!IColorPickerGridCellStyles:interface'
+      - '@fluentui/react-next!IComboBox:interface'
+      - '@fluentui/react-next!IComboBoxOption:interface'
+      - '@fluentui/react-next!IComboBoxOptionStyles:interface'
+      - '@fluentui/react-next!IComboBoxProps:interface'
+      - '@fluentui/react-next!IComboBoxState:interface'
+      - '@fluentui/react-next!IComboBoxStyles:interface'
       - '@fluentui/react-next!IContextualMenu:interface'
       - '@fluentui/react-next!IContextualMenuItem:interface'
       - '@fluentui/react-next!IContextualMenuItemProps:interface'
@@ -86,6 +93,7 @@ items:
       - '@fluentui/react-next!IModal:interface'
       - '@fluentui/react-next!IModalProps:interface'
       - '@fluentui/react-next!IModalStyles:interface'
+      - '@fluentui/react-next!IOnRenderComboBoxLabelProps:interface'
       - '@fluentui/react-next!IOverflowSet:interface'
       - '@fluentui/react-next!IOverflowSetItemProps:interface'
       - '@fluentui/react-next!IOverflowSetProps:interface'
@@ -140,7 +148,6 @@ items:
       - '@fluentui/react-next!KeyboardSpinDirection:enum'
       - '@fluentui/react-next!MaskedTextField:class'
       - '@fluentui/react-next!ModalBase:class'
-      - '@fluentui/react-next!OverflowSetBase:class'
       - '@fluentui/react-next!PersonaInitialsColor:enum'
       - '@fluentui/react-next!PersonaPresence:enum'
       - '@fluentui/react-next!PersonaSize:enum'
@@ -149,6 +156,7 @@ items:
       - '@fluentui/react-next!SwatchColorPickerBase:class'
       - '@fluentui/react-next!TextFieldBase:class'
       - '@fluentui/react-next!useHeightOffset:function(1)'
+      - '@fluentui/react-next!VirtualizedComboBox:class'
   - uid: '@fluentui/react-next!canAnyMenuItemsCheck:function(1)'
     summary: Returns true if a list of menu items can contain a checkbox
     name: canAnyMenuItemsCheck(items)
@@ -236,6 +244,8 @@ references:
     name: BaseSelectedItemsList
   - uid: '@fluentui/react-next!ColorPickerGridCellBase:class'
     name: ColorPickerGridCellBase
+  - uid: '@fluentui/react-next!ComboBox:class'
+    name: ComboBox
   - uid: '@fluentui/react-next!ContextualMenuBase:class'
     name: ContextualMenuBase
   - uid: '@fluentui/react-next!ContextualMenuItemBase:class'
@@ -288,6 +298,18 @@ references:
     name: IColorPickerGridCellStyleProps
   - uid: '@fluentui/react-next!IColorPickerGridCellStyles:interface'
     name: IColorPickerGridCellStyles
+  - uid: '@fluentui/react-next!IComboBox:interface'
+    name: IComboBox
+  - uid: '@fluentui/react-next!IComboBoxOption:interface'
+    name: IComboBoxOption
+  - uid: '@fluentui/react-next!IComboBoxOptionStyles:interface'
+    name: IComboBoxOptionStyles
+  - uid: '@fluentui/react-next!IComboBoxProps:interface'
+    name: IComboBoxProps
+  - uid: '@fluentui/react-next!IComboBoxState:interface'
+    name: IComboBoxState
+  - uid: '@fluentui/react-next!IComboBoxStyles:interface'
+    name: IComboBoxStyles
   - uid: '@fluentui/react-next!IContextualMenu:interface'
     name: IContextualMenu
   - uid: '@fluentui/react-next!IContextualMenuItem:interface'
@@ -382,6 +404,8 @@ references:
     name: IModalProps
   - uid: '@fluentui/react-next!IModalStyles:interface'
     name: IModalStyles
+  - uid: '@fluentui/react-next!IOnRenderComboBoxLabelProps:interface'
+    name: IOnRenderComboBoxLabelProps
   - uid: '@fluentui/react-next!IOverflowSet:interface'
     name: IOverflowSet
   - uid: '@fluentui/react-next!IOverflowSetItemProps:interface'
@@ -490,8 +514,6 @@ references:
     name: MaskedTextField
   - uid: '@fluentui/react-next!ModalBase:class'
     name: ModalBase
-  - uid: '@fluentui/react-next!OverflowSetBase:class'
-    name: OverflowSetBase
   - uid: '@fluentui/react-next!PersonaInitialsColor:enum'
     name: PersonaInitialsColor
   - uid: '@fluentui/react-next!PersonaPresence:enum'
@@ -506,3 +528,5 @@ references:
     name: SwatchColorPickerBase
   - uid: '@fluentui/react-next!TextFieldBase:class'
     name: TextFieldBase
+  - uid: '@fluentui/react-next!VirtualizedComboBox:class'
+    name: VirtualizedComboBox
