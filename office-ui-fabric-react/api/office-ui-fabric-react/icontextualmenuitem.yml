@@ -29,6 +29,7 @@ items:
       - 'office-ui-fabric-react!IContextualMenuItem#onClick:member'
       - 'office-ui-fabric-react!IContextualMenuItem#onMouseDown:member'
       - 'office-ui-fabric-react!IContextualMenuItem#onRender:member'
+      - 'office-ui-fabric-react!IContextualMenuItem#onRenderContent:member'
       - 'office-ui-fabric-react!IContextualMenuItem#onRenderIcon:member'
       - 'office-ui-fabric-react!IContextualMenuItem#primaryDisabled:member'
       - 'office-ui-fabric-react!IContextualMenuItem#rel:member'
@@ -330,6 +331,20 @@ items:
       return:
         type:
           - '(item: any, dismissMenu: (ev?: any, dismissAll?: boolean) => void) => React.ReactNode'
+  - uid: 'office-ui-fabric-react!IContextualMenuItem#onRenderContent:member'
+    summary: Method to customize sub-components rendering of this menu item.
+    name: onRenderContent
+    fullName: onRenderContent
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        onRenderContent?: (props: IContextualMenuItemProps, defaultRenders: IContextualMenuItemRenderFunctions) =>
+        React.ReactNode;
+      return:
+        type:
+          - '(props: IContextualMenuItemProps, defaultRenders: IContextualMenuItemRenderFunctions) => React.ReactNode'
   - uid: 'office-ui-fabric-react!IContextualMenuItem#onRenderIcon:member'
     summary: Custom render function for the menu item icon
     name: onRenderIcon
