@@ -159,14 +159,14 @@ items:
     type: method
     syntax:
       content: |-
-        debounce<T extends Function>(func: T, wait?: number, options?: {
+        debounce<T extends (...args: any[]) => any>(func: T, wait?: number, options?: {
                 leading?: boolean;
                 maxWait?: number;
                 trailing?: boolean;
-            }): ICancelable<T> & (() => void);
+            }): ICancelable<T> & T;
       return:
         type:
-          - ICancelable<T> & (() => void)
+          - ICancelable<T> & T
         description: The new debounced function.
       parameters:
         - id: func
@@ -189,7 +189,7 @@ items:
       typeParameters:
         - id: T
           type:
-            - Function
+            - '(...args: any[]) => any'
   - uid: '@uifabric/utilities!Async#dispose:member(1)'
     summary: 'Dispose function, clears all async operations.'
     name: dispose()
@@ -306,13 +306,13 @@ items:
     type: method
     syntax:
       content: |-
-        throttle<T extends Function>(func: T, wait?: number, options?: {
+        throttle<T extends (...args: any[]) => any>(func: T, wait?: number, options?: {
                 leading?: boolean;
                 trailing?: boolean;
-            }): T | (() => void);
+            }): T;
       return:
         type:
-          - T | (() => void)
+          - T
         description: The new throttled function.
       parameters:
         - id: func
@@ -334,4 +334,4 @@ items:
       typeParameters:
         - id: T
           type:
-            - Function
+            - '(...args: any[]) => any'

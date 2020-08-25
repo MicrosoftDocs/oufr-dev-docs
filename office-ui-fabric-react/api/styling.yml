@@ -24,18 +24,11 @@ items:
       - '@uifabric/styling!getTheme:function(1)'
       - '@uifabric/styling!IAnimationStyles:interface'
       - '@uifabric/styling!IAnimationVariables:interface'
-      - '@uifabric/styling!IEffects:interface'
-      - '@uifabric/styling!IFontStyles:interface'
       - '@uifabric/styling!IGetFocusStylesOptions:interface'
       - '@uifabric/styling!IIconOptions:interface'
       - '@uifabric/styling!IIconRecord:interface'
       - '@uifabric/styling!IIconSubset:interface'
       - '@uifabric/styling!IIconSubsetRecord:interface'
-      - '@uifabric/styling!IPalette:interface'
-      - '@uifabric/styling!IScheme:interface'
-      - '@uifabric/styling!ISemanticColors:interface'
-      - '@uifabric/styling!ISemanticTextColors:interface'
-      - '@uifabric/styling!ITheme:interface'
       - '@uifabric/styling!loadTheme:function(1)'
       - '@uifabric/styling!registerDefaultFontFaces:function(1)'
       - '@uifabric/styling!registerIconAlias:function(1)'
@@ -82,7 +75,7 @@ items:
       content: 'export declare function createFontStyles(localeCode: string | null): IFontStyles;'
       return:
         type:
-          - '@uifabric/styling!IFontStyles:interface'
+          - IFontStyles
         description: ''
       parameters:
         - id: localeCode
@@ -100,7 +93,7 @@ items:
       content: 'export declare function createTheme(theme: IPartialTheme, depComments?: boolean): ITheme;'
       return:
         type:
-          - '@uifabric/styling!ITheme:interface'
+          - ITheme
         description: ''
       parameters:
         - id: theme
@@ -165,7 +158,7 @@ items:
         - id: theme
           description: The theme object to use.
           type:
-            - '@uifabric/styling!ITheme:interface'
+            - ITheme
         - id: color
           description: >-
             The background color to fade out to. Accepts only keys of ISemanticColors or IPalette. Defaults to
@@ -203,7 +196,7 @@ items:
         - id: theme
           description: The theme object to use.
           type:
-            - '@uifabric/styling!ITheme:interface'
+            - ITheme
         - id: inset
           description: The number of pixels to inset the border (default 0)
           type:
@@ -233,7 +226,7 @@ items:
         - id: theme
           description: The theme object to use.
           type:
-            - '@uifabric/styling!ITheme:interface'
+            - ITheme
         - id: options
           description: Options to customize the focus border.
           type:
@@ -260,7 +253,7 @@ items:
         - id: theme
           description: The theme object to use.
           type:
-            - '@uifabric/styling!ITheme:interface'
+            - ITheme
         - id: inset
           description: The number of pixels to inset the border.
           type:
@@ -314,7 +307,7 @@ items:
         - id: theme
           description: The theme to check the flag on
           type:
-            - '@uifabric/styling!ITheme:interface'
+            - ITheme
         - id: disableGlobalClassNames
           description: Optional. Explicitly opt in/out of disabling global classnames. Defaults to false.
           type:
@@ -411,7 +404,7 @@ items:
       content: 'export declare function getTheme(depComments?: boolean): ITheme;'
       return:
         type:
-          - '@uifabric/styling!ITheme:interface'
+          - ITheme
         description: ''
       parameters:
         - id: depComments
@@ -429,7 +422,7 @@ items:
       content: 'export declare function loadTheme(theme: IPartialTheme, depComments?: boolean): ITheme;'
       return:
         type:
-          - '@uifabric/styling!ITheme:interface'
+          - ITheme
         description: ''
       parameters:
         - id: theme
@@ -580,10 +573,6 @@ references:
     name: IAnimationStyles
   - uid: '@uifabric/styling!IAnimationVariables:interface'
     name: IAnimationVariables
-  - uid: '@uifabric/styling!IEffects:interface'
-    name: IEffects
-  - uid: '@uifabric/styling!IFontStyles:interface'
-    name: IFontStyles
   - uid: '@uifabric/styling!IGetFocusStylesOptions:interface'
     name: IGetFocusStylesOptions
   - uid: '@uifabric/styling!IIconOptions:interface'
@@ -594,13 +583,3 @@ references:
     name: IIconSubset
   - uid: '@uifabric/styling!IIconSubsetRecord:interface'
     name: IIconSubsetRecord
-  - uid: '@uifabric/styling!IPalette:interface'
-    name: IPalette
-  - uid: '@uifabric/styling!IScheme:interface'
-    name: IScheme
-  - uid: '@uifabric/styling!ISemanticColors:interface'
-    name: ISemanticColors
-  - uid: '@uifabric/styling!ISemanticTextColors:interface'
-    name: ISemanticTextColors
-  - uid: '@uifabric/styling!ITheme:interface'
-    name: ITheme

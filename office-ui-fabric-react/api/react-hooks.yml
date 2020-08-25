@@ -258,8 +258,8 @@ items:
     syntax:
       content: >-
         export declare function useOnEvent<TElement extends Element, TEvent extends Event>(element:
-        React.RefObject<TElement | undefined | null> | TElement | Window | undefined | null, eventName: string,
-        callback: (ev: TEvent) => void, useCapture?: boolean): void;
+        React.RefObject<TElement | undefined | null> | TElement | Window | Document | undefined | null, eventName:
+        string, callback: (ev: TEvent) => void, useCapture?: boolean): void;
       return:
         type:
           - void
@@ -268,7 +268,7 @@ items:
         - id: element
           description: Element (or ref to an element) to attach the event handler to
           type:
-            - React.RefObject<TElement | undefined | null> | TElement | Window | undefined | null
+            - React.RefObject<TElement | undefined | null> | TElement | Window | Document | undefined | null
         - id: eventName
           description: The event to attach a handler for
           type:
