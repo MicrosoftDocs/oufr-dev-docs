@@ -1,0 +1,230 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-next!IRatingProps:interface'
+    summary: Rating component props.
+    name: IRatingProps
+    fullName: IRatingProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'React.AllHTMLAttributes<HTMLElement> '
+    package: '@fluentui/react-next!'
+    children:
+      - '@fluentui/react-next!IRatingProps#allowZeroStars:member'
+      - '@fluentui/react-next!IRatingProps#ariaLabelFormat:member'
+      - '@fluentui/react-next!IRatingProps#ariaLabelId:member'
+      - '@fluentui/react-next!IRatingProps#componentRef:member'
+      - '@fluentui/react-next!IRatingProps#getAriaLabel:member'
+      - '@fluentui/react-next!IRatingProps#icon:member'
+      - '@fluentui/react-next!IRatingProps#max:member'
+      - '@fluentui/react-next!IRatingProps#min:member'
+      - '@fluentui/react-next!IRatingProps#onChange:member'
+      - '@fluentui/react-next!IRatingProps#onChanged:member'
+      - '@fluentui/react-next!IRatingProps#rating:member'
+      - '@fluentui/react-next!IRatingProps#readOnly:member'
+      - '@fluentui/react-next!IRatingProps#size:member'
+      - '@fluentui/react-next!IRatingProps#styles:member'
+      - '@fluentui/react-next!IRatingProps#theme:member'
+      - '@fluentui/react-next!IRatingProps#unselectedIcon:member'
+  - uid: '@fluentui/react-next!IRatingProps#allowZeroStars:member'
+    summary: Allow the rating value to be set to 0 instead of a minimum of 1.
+    name: allowZeroStars
+    fullName: allowZeroStars
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'allowZeroStars?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: '@fluentui/react-next!IRatingProps#ariaLabelFormat:member'
+    summary: >-
+      Optional label format for a rating star that will be read by screen readers. Can be used like "<!-- -->{<!--
+      -->0<!-- -->} of {<!-- -->1<!-- -->} stars selected", where {<!-- -->0<!-- -->} will be substituted by the current
+      rating and {<!-- -->1<!-- -->} will be substituted by the max rating.
+    name: ariaLabelFormat
+    fullName: ariaLabelFormat
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'ariaLabelFormat?: string;'
+      return:
+        type:
+          - string
+  - uid: '@fluentui/react-next!IRatingProps#ariaLabelId:member'
+    summary: 'Deprecated: Optional id of label describing this instance of Rating.'
+    deprecated:
+      content: Use `getAriaLabel` instead.
+    name: ariaLabelId
+    fullName: ariaLabelId
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'ariaLabelId?: string;'
+      return:
+        type:
+          - string
+  - uid: '@fluentui/react-next!IRatingProps#componentRef:member'
+    summary: >-
+      Optional callback to access the IRating interface. Use this instead of ref for accessing the public methods and
+      properties of the component.
+    name: componentRef
+    fullName: componentRef
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'componentRef?: IRefObject<IRating>;'
+      return:
+        type:
+          - IRefObject<IRating>
+  - uid: '@fluentui/react-next!IRatingProps#getAriaLabel:member'
+    name: getAriaLabel
+    fullName: getAriaLabel
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'getAriaLabel?: (rating: number, max: number) => string;'
+      return:
+        type:
+          - '(rating: number, max: number) => string'
+  - uid: '@fluentui/react-next!IRatingProps#icon:member'
+    summary: Custom icon
+    name: icon
+    fullName: icon
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'icon?: string;'
+      return:
+        type:
+          - string
+  - uid: '@fluentui/react-next!IRatingProps#max:member'
+    summary: 'Maximum rating, defaults to 5, has to be &gt;<!-- -->= min'
+    name: max
+    fullName: max
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'max?: number;'
+      return:
+        type:
+          - number
+  - uid: '@fluentui/react-next!IRatingProps#min:member'
+    summary: 'Minimum rating, defaults to 1, has to be &gt;<!-- -->= 0'
+    deprecated:
+      content: No longer used.
+    name: min
+    fullName: min
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'min?: number;'
+      return:
+        type:
+          - number
+  - uid: '@fluentui/react-next!IRatingProps#onChange:member'
+    summary: Callback issued when the rating changes.
+    name: onChange
+    fullName: onChange
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onChange?: (event: React.FocusEvent<HTMLElement>, rating?: number) => void;'
+      return:
+        type:
+          - '(event: React.FocusEvent<HTMLElement>, rating?: number) => void'
+  - uid: '@fluentui/react-next!IRatingProps#onChanged:member'
+    deprecated:
+      content: Use `onChange` instead.
+    name: onChanged
+    fullName: onChanged
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onChanged?: (rating: number) => void;'
+      return:
+        type:
+          - '(rating: number) => void'
+  - uid: '@fluentui/react-next!IRatingProps#rating:member'
+    summary: 'Selected rating, has to be an integer between min and max'
+    name: rating
+    fullName: rating
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rating?: number;'
+      return:
+        type:
+          - number
+  - uid: '@fluentui/react-next!IRatingProps#readOnly:member'
+    summary: Optional flag to mark rating control as readOnly
+    name: readOnly
+    fullName: readOnly
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readOnly?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: '@fluentui/react-next!IRatingProps#size:member'
+    summary: 'Size of rating, defaults to small'
+    name: size
+    fullName: size
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'size?: RatingSize;'
+      return:
+        type:
+          - RatingSize
+  - uid: '@fluentui/react-next!IRatingProps#styles:member'
+    summary: Call to provide customized styling that will layer on top of the variant rules.
+    name: styles
+    fullName: styles
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'styles?: IStyleFunctionOrObject<IRatingStyleProps, IRatingStyles>;'
+      return:
+        type:
+          - 'IStyleFunctionOrObject<IRatingStyleProps, IRatingStyles>'
+  - uid: '@fluentui/react-next!IRatingProps#theme:member'
+    summary: Theme (provided through customization.)
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type:
+          - ITheme
+  - uid: '@fluentui/react-next!IRatingProps#unselectedIcon:member'
+    summary: Custom icon for unselected rating elements.
+    name: unselectedIcon
+    fullName: unselectedIcon
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'unselectedIcon?: string;'
+      return:
+        type:
+          - string

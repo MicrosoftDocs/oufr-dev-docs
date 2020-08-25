@@ -2230,8 +2230,8 @@ items:
     type: function
     syntax:
       content: >-
-        export declare function on(element: Element | Window, eventName: string, callback: (ev: Event) => void,
-        options?: boolean): () => void;
+        export declare function on(element: Element | Window | Document, eventName: string, callback: (ev: Event) =>
+        void, options?: boolean): () => void;
       return:
         type:
           - () => void
@@ -2240,7 +2240,7 @@ items:
         - id: element
           description: ''
           type:
-            - Element | Window
+            - Element | Window | Document
         - id: eventName
           description: ''
           type:

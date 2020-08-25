@@ -7,45 +7,47 @@ items:
       - typeScript
     type: package
     children:
-      - '@fluentui/react-theme-provider!mergeThemes:function(1)'
-      - '@fluentui/react-theme-provider!PartialTheme:interface'
+      - '@fluentui/react-theme-provider!makeStyles:function(1)'
       - '@fluentui/react-theme-provider!StyleOptions:interface'
       - '@fluentui/react-theme-provider!StyleProps:interface'
-      - '@fluentui/react-theme-provider!Theme:interface'
       - '@fluentui/react-theme-provider!ThemeProviderProps:interface'
-      - '@fluentui/react-theme-provider!Tokens:interface'
-  - uid: '@fluentui/react-theme-provider!mergeThemes:function(1)'
-    summary: Merges multiple themes.
-    name: mergeThemes(themes)
-    fullName: mergeThemes(themes)
+  - uid: '@fluentui/react-theme-provider!makeStyles:function(1)'
+    summary: 'Registers a css object, optionally as a function of the theme.'
+    name: makeStyles(styleOrFunction)
+    fullName: makeStyles(styleOrFunction)
     langs:
       - typeScript
     type: function
     syntax:
-      content: >-
-        export declare function mergeThemes<TResult = PartialTheme>(...themes: (undefined | PartialTheme | Theme)[]):
-        TResult;
+      content: |-
+        export declare function makeStyles<TStyleSet extends {
+            [key: string]: IStyle;
+        }>(styleOrFunction: TStyleSet | ((theme: ITheme) => TStyleSet)): () => {
+            [key in keyof TStyleSet]: string;
+        };
       return:
         type:
-          - TResult
+          - |-
+            () => {
+                [key in keyof TStyleSet]: string;
+            }
         description: ''
       parameters:
-        - id: themes
-          description: ''
+        - id: styleOrFunction
+          description: 'Either a css javascript object, or a function which takes in `ITheme` and returns a css javascript object.'
           type:
-            - '(undefined | PartialTheme | Theme)[]'
+            - 'TStyleSet | ((theme: ITheme) => TStyleSet)'
       typeParameters:
-        - id: TResult
+        - id: TStyleSet
+          type:
+            - |-
+              {
+                  [key: string]: IStyle;
+              }
 references:
-  - uid: '@fluentui/react-theme-provider!PartialTheme:interface'
-    name: PartialTheme
   - uid: '@fluentui/react-theme-provider!StyleOptions:interface'
     name: StyleOptions
   - uid: '@fluentui/react-theme-provider!StyleProps:interface'
     name: StyleProps
-  - uid: '@fluentui/react-theme-provider!Theme:interface'
-    name: Theme
   - uid: '@fluentui/react-theme-provider!ThemeProviderProps:interface'
     name: ThemeProviderProps
-  - uid: '@fluentui/react-theme-provider!Tokens:interface'
-    name: Tokens
