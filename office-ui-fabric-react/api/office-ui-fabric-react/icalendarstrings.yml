@@ -11,6 +11,7 @@ items:
       - 'office-ui-fabric-react!ICalendarStrings#closeButtonAriaLabel:member'
       - 'office-ui-fabric-react!ICalendarStrings#days:member'
       - 'office-ui-fabric-react!ICalendarStrings#goToToday:member'
+      - 'office-ui-fabric-react!ICalendarStrings#monthPickerHeaderAriaLabel:member'
       - 'office-ui-fabric-react!ICalendarStrings#months:member'
       - 'office-ui-fabric-react!ICalendarStrings#nextMonthAriaLabel:member'
       - 'office-ui-fabric-react!ICalendarStrings#nextYearAriaLabel:member'
@@ -21,6 +22,7 @@ items:
       - 'office-ui-fabric-react!ICalendarStrings#shortDays:member'
       - 'office-ui-fabric-react!ICalendarStrings#shortMonths:member'
       - 'office-ui-fabric-react!ICalendarStrings#weekNumberFormatString:member'
+      - 'office-ui-fabric-react!ICalendarStrings#yearPickerHeaderAriaLabel:member'
   - uid: 'office-ui-fabric-react!ICalendarStrings#closeButtonAriaLabel:member'
     summary: Aria-label for the "close" button.
     name: closeButtonAriaLabel
@@ -56,6 +58,21 @@ items:
     type: property
     syntax:
       content: 'goToToday: string;'
+      return:
+        type:
+          - string
+  - uid: 'office-ui-fabric-react!ICalendarStrings#monthPickerHeaderAriaLabel:member'
+    summary: >-
+      Aria-label format string for the header button in the month picker. Should have 1 string param, e.g. "`{0}`<!--
+      -->, select to change the year". This aria-label will only be applied if the year picker is enabled; otherwise the
+      label will default to the header string, e.g. "2019".
+    name: monthPickerHeaderAriaLabel
+    fullName: monthPickerHeaderAriaLabel
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'monthPickerHeaderAriaLabel?: string;'
       return:
         type:
           - string
@@ -184,6 +201,20 @@ items:
     type: property
     syntax:
       content: 'weekNumberFormatString?: string;'
+      return:
+        type:
+          - string
+  - uid: 'office-ui-fabric-react!ICalendarStrings#yearPickerHeaderAriaLabel:member'
+    summary: >-
+      Aria-label format string for the header button in the year picker. Should have 1 string param, e.g. "`{0}`<!--
+      -->, select to change the month"
+    name: yearPickerHeaderAriaLabel
+    fullName: yearPickerHeaderAriaLabel
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'yearPickerHeaderAriaLabel?: string;'
       return:
         type:
           - string
