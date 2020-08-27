@@ -26,12 +26,7 @@ items:
       - '@fluentui/react-next!ICalloutContentStyleProps:interface'
       - '@fluentui/react-next!ICalloutContentStyles:interface'
       - '@fluentui/react-next!ICalloutProps:interface'
-      - '@fluentui/react-next!ICheckbox:interface'
-      - '@fluentui/react-next!ICheckboxProps:interface'
-      - '@fluentui/react-next!ICheckboxSlots:interface'
-      - '@fluentui/react-next!ICheckboxState:interface'
-      - '@fluentui/react-next!ICheckboxStyleProps:interface'
-      - '@fluentui/react-next!ICheckboxStyles:interface'
+      - '@fluentui/react-next!ICircle:interface'
       - '@fluentui/react-next!ICoachmark:interface'
       - '@fluentui/react-next!ICoachmarkProps:interface'
       - '@fluentui/react-next!ICoachmarkStyleProps:interface'
@@ -73,11 +68,13 @@ items:
       - '@fluentui/react-next!IFocusTrapCalloutProps:interface'
       - '@fluentui/react-next!IFocusTrapZone:interface'
       - '@fluentui/react-next!IFocusTrapZoneProps:interface'
+      - '@fluentui/react-next!IGap:interface'
       - '@fluentui/react-next!IImage:interface'
       - '@fluentui/react-next!IImageProps:interface'
       - '@fluentui/react-next!IImageState:interface'
       - '@fluentui/react-next!IImageStyleProps:interface'
       - '@fluentui/react-next!IImageStyles:interface'
+      - '@fluentui/react-next!ILine:interface'
       - '@fluentui/react-next!ILink:interface'
       - '@fluentui/react-next!ILinkHTMLAttributes:interface'
       - '@fluentui/react-next!ILinkOptions:interface'
@@ -90,6 +87,11 @@ items:
       - '@fluentui/react-next!ImageLoadState:enum'
       - '@fluentui/react-next!IMaskedTextFieldState:interface'
       - '@fluentui/react-next!IMenuItemStyles:interface'
+      - '@fluentui/react-next!IMessageBar:interface'
+      - '@fluentui/react-next!IMessageBarProps:interface'
+      - '@fluentui/react-next!IMessageBarState:interface'
+      - '@fluentui/react-next!IMessageBarStyleProps:interface'
+      - '@fluentui/react-next!IMessageBarStyles:interface'
       - '@fluentui/react-next!IModal:interface'
       - '@fluentui/react-next!IModalProps:interface'
       - '@fluentui/react-next!IModalStyles:interface'
@@ -129,9 +131,26 @@ items:
       - '@fluentui/react-next!ISelectedItemProps:interface'
       - '@fluentui/react-next!ISelectedPeopleItemProps:interface'
       - '@fluentui/react-next!ISelectedPeopleProps:interface'
-      - '@fluentui/react-next!ISlider:interface'
-      - '@fluentui/react-next!ISliderProps:interface'
-      - '@fluentui/react-next!ISliderStyles:interface'
+      - '@fluentui/react-next!IShimmer:interface'
+      - '@fluentui/react-next!IShimmerCircle:interface'
+      - '@fluentui/react-next!IShimmerCircleProps:interface'
+      - '@fluentui/react-next!IShimmerCircleStyles:interface'
+      - '@fluentui/react-next!IShimmerColors:interface'
+      - '@fluentui/react-next!IShimmerElement:interface'
+      - '@fluentui/react-next!IShimmerElementsGroup:interface'
+      - '@fluentui/react-next!IShimmerElementsGroupProps:interface'
+      - '@fluentui/react-next!IShimmerElementsGroupStyleProps:interface'
+      - '@fluentui/react-next!IShimmerElementsGroupStyles:interface'
+      - '@fluentui/react-next!IShimmerGap:interface'
+      - '@fluentui/react-next!IShimmerGapProps:interface'
+      - '@fluentui/react-next!IShimmerGapStyles:interface'
+      - '@fluentui/react-next!IShimmerLine:interface'
+      - '@fluentui/react-next!IShimmerLineProps:interface'
+      - '@fluentui/react-next!IShimmerLineStyles:interface'
+      - '@fluentui/react-next!IShimmerProps:interface'
+      - '@fluentui/react-next!IShimmerState:interface'
+      - '@fluentui/react-next!IShimmerStyleProps:interface'
+      - '@fluentui/react-next!IShimmerStyles:interface'
       - '@fluentui/react-next!ISpinButton:interface'
       - '@fluentui/react-next!ISpinButtonProps:interface'
       - '@fluentui/react-next!ISpinButtonStyleProps:interface'
@@ -152,6 +171,8 @@ items:
       - '@fluentui/react-next!IToggleStyles:interface'
       - '@fluentui/react-next!KeyboardSpinDirection:enum'
       - '@fluentui/react-next!MaskedTextField:class'
+      - '@fluentui/react-next!MessageBarBase:class'
+      - '@fluentui/react-next!MessageBarType:enum'
       - '@fluentui/react-next!ModalBase:class'
       - '@fluentui/react-next!PersonaInitialsColor:enum'
       - '@fluentui/react-next!PersonaPresence:enum'
@@ -160,6 +181,9 @@ items:
       - '@fluentui/react-next!RatingSize:enum'
       - '@fluentui/react-next!ResizeGroupDirection:enum'
       - '@fluentui/react-next!SelectedPeopleList:class'
+      - '@fluentui/react-next!ShimmerBase:class'
+      - '@fluentui/react-next!ShimmerElementsDefaultHeights:enum'
+      - '@fluentui/react-next!ShimmerElementType:enum'
       - '@fluentui/react-next!SwatchColorPickerBase:class'
       - '@fluentui/react-next!TextFieldBase:class'
       - '@fluentui/react-next!useHeightOffset:function(1)'
@@ -277,18 +301,8 @@ references:
     name: ICalloutContentStyles
   - uid: '@fluentui/react-next!ICalloutProps:interface'
     name: ICalloutProps
-  - uid: '@fluentui/react-next!ICheckbox:interface'
-    name: ICheckbox
-  - uid: '@fluentui/react-next!ICheckboxProps:interface'
-    name: ICheckboxProps
-  - uid: '@fluentui/react-next!ICheckboxSlots:interface'
-    name: ICheckboxSlots
-  - uid: '@fluentui/react-next!ICheckboxState:interface'
-    name: ICheckboxState
-  - uid: '@fluentui/react-next!ICheckboxStyleProps:interface'
-    name: ICheckboxStyleProps
-  - uid: '@fluentui/react-next!ICheckboxStyles:interface'
-    name: ICheckboxStyles
+  - uid: '@fluentui/react-next!ICircle:interface'
+    name: ICircle
   - uid: '@fluentui/react-next!ICoachmark:interface'
     name: ICoachmark
   - uid: '@fluentui/react-next!ICoachmarkProps:interface'
@@ -371,6 +385,8 @@ references:
     name: IFocusTrapZone
   - uid: '@fluentui/react-next!IFocusTrapZoneProps:interface'
     name: IFocusTrapZoneProps
+  - uid: '@fluentui/react-next!IGap:interface'
+    name: IGap
   - uid: '@fluentui/react-next!IImage:interface'
     name: IImage
   - uid: '@fluentui/react-next!IImageProps:interface'
@@ -381,6 +397,8 @@ references:
     name: IImageStyleProps
   - uid: '@fluentui/react-next!IImageStyles:interface'
     name: IImageStyles
+  - uid: '@fluentui/react-next!ILine:interface'
+    name: ILine
   - uid: '@fluentui/react-next!ILink:interface'
     name: ILink
   - uid: '@fluentui/react-next!ILinkHTMLAttributes:interface'
@@ -405,6 +423,16 @@ references:
     name: IMaskedTextFieldState
   - uid: '@fluentui/react-next!IMenuItemStyles:interface'
     name: IMenuItemStyles
+  - uid: '@fluentui/react-next!IMessageBar:interface'
+    name: IMessageBar
+  - uid: '@fluentui/react-next!IMessageBarProps:interface'
+    name: IMessageBarProps
+  - uid: '@fluentui/react-next!IMessageBarState:interface'
+    name: IMessageBarState
+  - uid: '@fluentui/react-next!IMessageBarStyleProps:interface'
+    name: IMessageBarStyleProps
+  - uid: '@fluentui/react-next!IMessageBarStyles:interface'
+    name: IMessageBarStyles
   - uid: '@fluentui/react-next!IModal:interface'
     name: IModal
   - uid: '@fluentui/react-next!IModalProps:interface'
@@ -483,12 +511,46 @@ references:
     name: ISelectedPeopleItemProps
   - uid: '@fluentui/react-next!ISelectedPeopleProps:interface'
     name: ISelectedPeopleProps
-  - uid: '@fluentui/react-next!ISlider:interface'
-    name: ISlider
-  - uid: '@fluentui/react-next!ISliderProps:interface'
-    name: ISliderProps
-  - uid: '@fluentui/react-next!ISliderStyles:interface'
-    name: ISliderStyles
+  - uid: '@fluentui/react-next!IShimmer:interface'
+    name: IShimmer
+  - uid: '@fluentui/react-next!IShimmerCircle:interface'
+    name: IShimmerCircle
+  - uid: '@fluentui/react-next!IShimmerCircleProps:interface'
+    name: IShimmerCircleProps
+  - uid: '@fluentui/react-next!IShimmerCircleStyles:interface'
+    name: IShimmerCircleStyles
+  - uid: '@fluentui/react-next!IShimmerColors:interface'
+    name: IShimmerColors
+  - uid: '@fluentui/react-next!IShimmerElement:interface'
+    name: IShimmerElement
+  - uid: '@fluentui/react-next!IShimmerElementsGroup:interface'
+    name: IShimmerElementsGroup
+  - uid: '@fluentui/react-next!IShimmerElementsGroupProps:interface'
+    name: IShimmerElementsGroupProps
+  - uid: '@fluentui/react-next!IShimmerElementsGroupStyleProps:interface'
+    name: IShimmerElementsGroupStyleProps
+  - uid: '@fluentui/react-next!IShimmerElementsGroupStyles:interface'
+    name: IShimmerElementsGroupStyles
+  - uid: '@fluentui/react-next!IShimmerGap:interface'
+    name: IShimmerGap
+  - uid: '@fluentui/react-next!IShimmerGapProps:interface'
+    name: IShimmerGapProps
+  - uid: '@fluentui/react-next!IShimmerGapStyles:interface'
+    name: IShimmerGapStyles
+  - uid: '@fluentui/react-next!IShimmerLine:interface'
+    name: IShimmerLine
+  - uid: '@fluentui/react-next!IShimmerLineProps:interface'
+    name: IShimmerLineProps
+  - uid: '@fluentui/react-next!IShimmerLineStyles:interface'
+    name: IShimmerLineStyles
+  - uid: '@fluentui/react-next!IShimmerProps:interface'
+    name: IShimmerProps
+  - uid: '@fluentui/react-next!IShimmerState:interface'
+    name: IShimmerState
+  - uid: '@fluentui/react-next!IShimmerStyleProps:interface'
+    name: IShimmerStyleProps
+  - uid: '@fluentui/react-next!IShimmerStyles:interface'
+    name: IShimmerStyles
   - uid: '@fluentui/react-next!ISpinButton:interface'
     name: ISpinButton
   - uid: '@fluentui/react-next!ISpinButtonProps:interface'
@@ -529,6 +591,10 @@ references:
     name: KeyboardSpinDirection
   - uid: '@fluentui/react-next!MaskedTextField:class'
     name: MaskedTextField
+  - uid: '@fluentui/react-next!MessageBarBase:class'
+    name: MessageBarBase
+  - uid: '@fluentui/react-next!MessageBarType:enum'
+    name: MessageBarType
   - uid: '@fluentui/react-next!ModalBase:class'
     name: ModalBase
   - uid: '@fluentui/react-next!PersonaInitialsColor:enum'
@@ -545,6 +611,12 @@ references:
     name: ResizeGroupDirection
   - uid: '@fluentui/react-next!SelectedPeopleList:class'
     name: SelectedPeopleList
+  - uid: '@fluentui/react-next!ShimmerBase:class'
+    name: ShimmerBase
+  - uid: '@fluentui/react-next!ShimmerElementsDefaultHeights:enum'
+    name: ShimmerElementsDefaultHeights
+  - uid: '@fluentui/react-next!ShimmerElementType:enum'
+    name: ShimmerElementType
   - uid: '@fluentui/react-next!SwatchColorPickerBase:class'
     name: SwatchColorPickerBase
   - uid: '@fluentui/react-next!TextFieldBase:class'
