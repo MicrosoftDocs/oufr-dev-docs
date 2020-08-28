@@ -158,10 +158,10 @@ items:
     type: function
     syntax:
       content: >-
-        export declare function useControllableValue<TValue, TElement extends HTMLElement, TCallback extends
-        ChangeCallback<TElement, TValue> | undefined>(controlledValue: TValue | undefined, defaultUncontrolledValue:
-        TValue | undefined, onChange: TCallback): Readonly<[TValue | undefined, (update: React.SetStateAction<TValue |
-        undefined>, ev?: React.FormEvent<TElement>) => void]>;
+        export declare function useControllableValue<TValue, TElement extends HTMLElement, TEvent extends
+        React.SyntheticEvent<TElement> | undefined>(controlledValue: TValue | undefined, defaultUncontrolledValue:
+        TValue | undefined, onChange: ChangeCallback<TElement, TValue, TEvent> | undefined): Readonly<[TValue |
+        undefined, (update: React.SetStateAction<TValue | undefined>, ev?: React.FormEvent<TElement>) => void]>;
       return:
         type:
           - >-
@@ -180,15 +180,15 @@ items:
         - id: onChange
           description: ''
           type:
-            - TCallback
+            - 'ChangeCallback<TElement, TValue, TEvent> | undefined'
       typeParameters:
         - id: TValue
         - id: TElement
           type:
             - HTMLElement
-        - id: TCallback
+        - id: TEvent
           type:
-            - 'ChangeCallback<TElement, TValue> | undefined'
+            - React.SyntheticEvent<TElement> | undefined
   - uid: '@uifabric/react-hooks!useForceUpdate:function(1)'
     summary: Hook to force update a function component by updating a dummy state.
     name: useForceUpdate()

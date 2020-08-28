@@ -93,10 +93,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'fontSizeAdjust?: ICSSRule | ''none'' | number;'
+      content: 'fontSizeAdjust?: ICSSRule | ''none'' | number | string;'
       return:
         type:
-          - ICSSRule | 'none' | number
+          - ICSSRule | 'none' | number | string
   - uid: '@uifabric/merge-styles!IRawFontStyle#fontStretch:member'
     summary: >-
       Allows you to expand or condense the widths for a normal, condensed, or expanded font face. See CSS 3 font-stretch
@@ -109,12 +109,12 @@ items:
     syntax:
       content: >-
         fontStretch?: ICSSRule | 'normal' | 'ultra-condensed' | 'extra-condensed' | 'condensed' | 'semi-condensed' |
-        'semi-expanded' | 'expanded' | 'extra-expanded' | 'ultra-expanded';
+        'semi-expanded' | 'expanded' | 'extra-expanded' | 'ultra-expanded' | string;
       return:
         type:
           - >-
             ICSSRule | 'normal' | 'ultra-condensed' | 'extra-condensed' | 'condensed' | 'semi-condensed' |
-            'semi-expanded' | 'expanded' | 'extra-expanded' | 'ultra-expanded'
+            'semi-expanded' | 'expanded' | 'extra-expanded' | 'ultra-expanded' | string
   - uid: '@uifabric/merge-styles!IRawFontStyle#fontStyle:member'
     summary: >-
       The font-style property allows normal, italic, or oblique faces to be selected. Italic forms are generally cursive
@@ -127,10 +127,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'fontStyle?: ICSSRule | ''normal'' | ''italic'' | ''oblique'';'
+      content: 'fontStyle?: ICSSRule | ''normal'' | ''italic'' | ''oblique'' | string;'
       return:
         type:
-          - ICSSRule | 'normal' | 'italic' | 'oblique'
+          - ICSSRule | 'normal' | 'italic' | 'oblique' | string
   - uid: '@uifabric/merge-styles!IRawFontStyle#fontSynthesis:member'
     summary: >-
       This value specifies whether the user agent is allowed to synthesize bold or oblique font faces when a font family
@@ -181,7 +181,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'fontWeight?: IFontWeight;'
+      content: 'fontWeight?: IFontWeight | string;'
       return:
         type:
-          - IFontWeight
+          - IFontWeight | string
