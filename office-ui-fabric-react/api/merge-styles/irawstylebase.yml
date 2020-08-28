@@ -290,10 +290,12 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'alignContent?: ICSSRule | ''flex-start'' | ''flex-end'' | ''center'' | ''space-between'' | ''space-around'' | ''stretch'';'
+      content: >-
+        alignContent?: ICSSRule | 'flex-start' | 'flex-end' | 'center' | 'space-between' | 'space-around' | 'stretch' |
+        string;
       return:
         type:
-          - ICSSRule | 'flex-start' | 'flex-end' | 'center' | 'space-between' | 'space-around' | 'stretch'
+          - ICSSRule | 'flex-start' | 'flex-end' | 'center' | 'space-between' | 'space-around' | 'stretch' | string
   - uid: '@uifabric/merge-styles!IRawStyleBase#alignItems:member'
     summary: >-
       Sets the default alignment in the cross axis for all of the flex container's items, including anonymous flex
@@ -304,10 +306,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'alignItems?: ICSSRule | ''flex-start'' | ''flex-end'' | ''center'' | ''baseline'' | ''stretch'';'
+      content: 'alignItems?: ICSSRule | ''flex-start'' | ''flex-end'' | ''center'' | ''baseline'' | ''stretch'' | string;'
       return:
         type:
-          - ICSSRule | 'flex-start' | 'flex-end' | 'center' | 'baseline' | 'stretch'
+          - ICSSRule | 'flex-start' | 'flex-end' | 'center' | 'baseline' | 'stretch' | string
   - uid: '@uifabric/merge-styles!IRawStyleBase#alignmentAdjust:member'
     summary: >-
       This property allows precise alignment of elements, such as graphics, that do not have a baseline-table or lack
@@ -355,10 +357,12 @@ items:
     syntax:
       content: >-
         alignSelf?: ICSSRule | 'auto' | 'normal' | 'stretch' | ICSSBaselinePositionRule |
-        ICSSOverflowAndSelfPositionRule;
+        ICSSOverflowAndSelfPositionRule | string;
       return:
         type:
-          - ICSSRule | 'auto' | 'normal' | 'stretch' | ICSSBaselinePositionRule | ICSSOverflowAndSelfPositionRule
+          - >-
+            ICSSRule | 'auto' | 'normal' | 'stretch' | ICSSBaselinePositionRule | ICSSOverflowAndSelfPositionRule |
+            string
   - uid: '@uifabric/merge-styles!IRawStyleBase#animation:member'
     summary: >-
       The animation CSS property is a shorthand property for the various animation properties: `animation-name`<!-- -->,
@@ -423,10 +427,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'animationFillMode?: ICSSRule | ''none'' | ''forwards'' | ''backwards'' | ''both'';'
+      content: 'animationFillMode?: ICSSRule | ''none'' | ''forwards'' | ''backwards'' | ''both'' | string;'
       return:
         type:
-          - ICSSRule | 'none' | 'forwards' | 'backwards' | 'both'
+          - ICSSRule | 'none' | 'forwards' | 'backwards' | 'both' | string
   - uid: '@uifabric/merge-styles!IRawStyleBase#animationIterationCount:member'
     summary: Specifies how many times an animation cycle should play.
     name: animationIterationCount
@@ -539,10 +543,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'backgroundAttachment?: ICSSRule | ''scroll'' | ''fixed'' | ''local'';'
+      content: 'backgroundAttachment?: ICSSRule | ''scroll'' | ''fixed'' | ''local'' | string;'
       return:
         type:
-          - ICSSRule | 'scroll' | 'fixed' | 'local'
+          - ICSSRule | 'scroll' | 'fixed' | 'local' | string
   - uid: '@uifabric/merge-styles!IRawStyleBase#backgroundBlendMode:member'
     summary: >-
       This property describes how the element's background images should blend with each other and the element's
@@ -576,10 +580,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'backgroundClip?: ICSSRule | ''border-box'' | ''padding-box'' | ''content-box'' | ''text'';'
+      content: 'backgroundClip?: ICSSRule | ''border-box'' | ''padding-box'' | ''content-box'' | ''text'' | string;'
       return:
         type:
-          - ICSSRule | 'border-box' | 'padding-box' | 'content-box' | 'text'
+          - ICSSRule | 'border-box' | 'padding-box' | 'content-box' | 'text' | string
   - uid: '@uifabric/merge-styles!IRawStyleBase#backgroundColor:member'
     summary: Sets the background color of an element.
     name: backgroundColor
@@ -1143,10 +1147,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'boxSizing?: ICSSRule | ''border-box'' | ''content-box'';'
+      content: 'boxSizing?: ICSSRule | ''border-box'' | ''content-box'' | string;'
       return:
         type:
-          - ICSSRule | 'border-box' | 'content-box'
+          - ICSSRule | 'border-box' | 'content-box' | string
   - uid: '@uifabric/merge-styles!IRawStyleBase#breakAfter:member'
     summary: >-
       The CSS break-after property allows you to force a break on multi-column layouts. More specifically, it allows you
@@ -1240,10 +1244,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'columnCount?: ICSSRule | number | ''auto'';'
+      content: 'columnCount?: ICSSRule | number | ''auto'' | string;'
       return:
         type:
-          - ICSSRule | number | 'auto'
+          - ICSSRule | number | 'auto' | string
   - uid: '@uifabric/merge-styles!IRawStyleBase#columnFill:member'
     summary: Specifies how to fill columns (balanced or sequential).
     name: columnFill
@@ -1452,10 +1456,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'display?: ICSSRule | ICSSDisplayRule;'
+      content: 'display?: ICSSRule | ICSSDisplayRule | string;'
       return:
         type:
-          - ICSSRule | ICSSDisplayRule
+          - ICSSRule | ICSSDisplayRule | string
   - uid: '@uifabric/merge-styles!IRawStyleBase#fill:member'
     summary: >-
       The ‘fill’ property paints the interior of the given graphical element. The area to be painted consists of any
@@ -1553,10 +1557,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'flexDirection?: ICSSRule | ''row'' | ''row-reverse'' | ''column'' | ''column-reverse'';'
+      content: 'flexDirection?: ICSSRule | ''row'' | ''row-reverse'' | ''column'' | ''column-reverse'' | string;'
       return:
         type:
-          - ICSSRule | 'row' | 'row-reverse' | 'column' | 'column-reverse'
+          - ICSSRule | 'row' | 'row-reverse' | 'column' | 'column-reverse' | string
   - uid: '@uifabric/merge-styles!IRawStyleBase#flexFlow:member'
     summary: >-
       The flex-flow CSS property defines the flex container's main and cross axis. It is a shorthand property for the
@@ -1610,10 +1614,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'flexWrap?: ICSSRule | ''nowrap'' | ''wrap'' | ''wrap-reverse'';'
+      content: 'flexWrap?: ICSSRule | ''nowrap'' | ''wrap'' | ''wrap-reverse'' | string;'
       return:
         type:
-          - ICSSRule | 'nowrap' | 'wrap' | 'wrap-reverse'
+          - ICSSRule | 'nowrap' | 'wrap' | 'wrap-reverse' | string
   - uid: '@uifabric/merge-styles!IRawStyleBase#float:member'
     summary: >-
       Elements which have the style float are floated horizontally. These elements can move as far to the left or right
@@ -1654,10 +1658,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'forcedColorAdjust?: ''auto'' | ''none'';'
+      content: 'forcedColorAdjust?: ''auto'' | ''none'' | string;'
       return:
         type:
-          - '''auto'' | ''none'''
+          - '''auto'' | ''none'' | string'
   - uid: '@uifabric/merge-styles!IRawStyleBase#gridArea:member'
     summary: >-
       Lays out one or more grid items bound by 4 grid lines. Shorthand for setting grid-column-start, grid-column-end,
@@ -1986,12 +1990,12 @@ items:
     syntax:
       content: >-
         justifyContent?: ICSSRule | 'flex-start' | 'flex-end' | 'center' | 'space-between' | 'space-around' |
-        'space-evenly' | 'stretch';
+        'space-evenly' | 'stretch' | string;
       return:
         type:
           - >-
             ICSSRule | 'flex-start' | 'flex-end' | 'center' | 'space-between' | 'space-around' | 'space-evenly' |
-            'stretch'
+            'stretch' | string
   - uid: '@uifabric/merge-styles!IRawStyleBase#justifySelf:member'
     summary: >-
       Justifies the box (as the alignment subject) within its containing block (as the alignment container) along the
@@ -2007,16 +2011,16 @@ items:
     syntax:
       content: >-
         justifySelf?: ICSSRule | 'auto' | 'normal' | 'stretch' | ICSSBaselinePositionRule |
-        ICSSOverflowAndSelfPositionRule | 'left' | 'right' | 'safe left' | 'safe right' | 'unsafe left' | 'unsafe
-        right';
+        ICSSOverflowAndSelfPositionRule | 'left' | 'right' | 'safe left' | 'safe right' | 'unsafe left' | 'unsafe right'
+        | string;
       return:
         type:
           - >-
             ICSSRule | 'auto' | 'normal' | 'stretch' | ICSSBaselinePositionRule | ICSSOverflowAndSelfPositionRule |
-            'left' | 'right' | 'safe left' | 'safe right' | 'unsafe left' | 'unsafe right'
+            'left' | 'right' | 'safe left' | 'safe right' | 'unsafe left' | 'unsafe right' | string
   - uid: '@uifabric/merge-styles!IRawStyleBase#left:member'
     summary: >-
-      Sets the left position of an element relative to the nearest anscestor that is set to position absolute, relative,
+      Sets the left position of an element relative to the nearest ancestor that is set to position absolute, relative,
       or fixed.
     name: left
     fullName: left
@@ -2388,10 +2392,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'mixBlendMode?: ICSSRule | IMixBlendModes;'
+      content: 'mixBlendMode?: ICSSRule | IMixBlendModes | string;'
       return:
         type:
-          - ICSSRule | IMixBlendModes
+          - ICSSRule | IMixBlendModes | string
   - uid: '@uifabric/merge-styles!IRawStyleBase#MozOsxFontSmoothing:member'
     summary: (Moz specific) font smoothing directive.
     name: MozOsxFontSmoothing
@@ -2400,10 +2404,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'MozOsxFontSmoothing?: ''none'' | ''antialiased'' | ''grayscale'' | ''subpixel-antialiased'';'
+      content: 'MozOsxFontSmoothing?: ''none'' | ''antialiased'' | ''grayscale'' | ''subpixel-antialiased'' | string;'
       return:
         type:
-          - '''none'' | ''antialiased'' | ''grayscale'' | ''subpixel-antialiased'''
+          - '''none'' | ''antialiased'' | ''grayscale'' | ''subpixel-antialiased'' | string'
   - uid: '@uifabric/merge-styles!IRawStyleBase#MsHighContrastAdjust:member'
     summary: (Ms specific) constrast adjust rule.
     name: MsHighContrastAdjust
@@ -2424,10 +2428,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'MsOverflowStyle?: ''auto'' | ''none'' | ''scrollbar'' | ''-ms-autohiding-scrollbar'';'
+      content: 'MsOverflowStyle?: ''auto'' | ''none'' | ''scrollbar'' | ''-ms-autohiding-scrollbar'' | string;'
       return:
         type:
-          - '''auto'' | ''none'' | ''scrollbar'' | ''-ms-autohiding-scrollbar'''
+          - '''auto'' | ''none'' | ''scrollbar'' | ''-ms-autohiding-scrollbar'' | string'
   - uid: '@uifabric/merge-styles!IRawStyleBase#objectFit:member'
     summary: >-
       The ‘object-fit’ property specifies how the contents of a replaced element should be fitted to the box established
@@ -2438,10 +2442,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'objectFit?: ICSSRule | ''cover'' | ''contain'' | ''fill'' | ''none'';'
+      content: 'objectFit?: ICSSRule | ''cover'' | ''contain'' | ''fill'' | ''none'' | string;'
       return:
         type:
-          - ICSSRule | 'cover' | 'contain' | 'fill' | 'none'
+          - ICSSRule | 'cover' | 'contain' | 'fill' | 'none' | string
   - uid: '@uifabric/merge-styles!IRawStyleBase#opacity:member'
     summary: >-
       Specifies the transparency of an element. See CSS 3 opacity property
@@ -2466,10 +2470,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'order?: ICSSRule | number;'
+      content: 'order?: ICSSRule | number | string;'
       return:
         type:
-          - ICSSRule | number
+          - ICSSRule | number | string
   - uid: '@uifabric/merge-styles!IRawStyleBase#orphans:member'
     summary: >-
       In paged media, this property defines the minimum number of lines in a block container that must be left at the
@@ -2480,10 +2484,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'orphans?: ICSSRule | number;'
+      content: 'orphans?: ICSSRule | number | string;'
       return:
         type:
-          - ICSSRule | number
+          - ICSSRule | number | string
   - uid: '@uifabric/merge-styles!IRawStyleBase#outline:member'
     summary: >-
       The CSS outline property is a shorthand property for setting one or more of the individual outline properties
@@ -2565,10 +2569,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'overflowWrap?: ICSSRule | ''normal'' | ''break-word'';'
+      content: 'overflowWrap?: ICSSRule | ''normal'' | ''break-word'' | string;'
       return:
         type:
-          - ICSSRule | 'normal' | 'break-word'
+          - ICSSRule | 'normal' | 'break-word' | string
   - uid: '@uifabric/merge-styles!IRawStyleBase#overflowX:member'
     summary: Controls how extra content exceeding the x-axis of the bounding box of an element is rendered.
     name: overflowX
@@ -2577,10 +2581,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'overflowX?: ICSSRule | ''auto'' | ''hidden'' | ''scroll'' | ''visible'';'
+      content: 'overflowX?: ICSSRule | ''auto'' | ''hidden'' | ''scroll'' | ''visible'' | string;'
       return:
         type:
-          - ICSSRule | 'auto' | 'hidden' | 'scroll' | 'visible'
+          - ICSSRule | 'auto' | 'hidden' | 'scroll' | 'visible' | string
   - uid: '@uifabric/merge-styles!IRawStyleBase#overflowY:member'
     summary: Controls how extra content exceeding the y-axis of the bounding box of an element is rendered.
     name: overflowY
@@ -2589,10 +2593,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'overflowY?: ICSSRule | ''auto'' | ''hidden'' | ''scroll'' | ''visible'';'
+      content: 'overflowY?: ICSSRule | ''auto'' | ''hidden'' | ''scroll'' | ''visible'' | string;'
       return:
         type:
-          - ICSSRule | 'auto' | 'hidden' | 'scroll' | 'visible'
+          - ICSSRule | 'auto' | 'hidden' | 'scroll' | 'visible' | string
   - uid: '@uifabric/merge-styles!IRawStyleBase#padding:member'
     summary: >-
       The padding optional CSS property sets the required padding space on one to four sides of an element. The padding
@@ -2920,10 +2924,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'resize?: ICSSRule | ''none'' | ''both'' | ''horizontal'' | ''vertical'' | ''block'' | ''inline'';'
+      content: 'resize?: ICSSRule | ''none'' | ''both'' | ''horizontal'' | ''vertical'' | ''block'' | ''inline'' | string;'
       return:
         type:
-          - ICSSRule | 'none' | 'both' | 'horizontal' | 'vertical' | 'block' | 'inline'
+          - ICSSRule | 'none' | 'both' | 'horizontal' | 'vertical' | 'block' | 'inline' | string
   - uid: '@uifabric/merge-styles!IRawStyleBase#restAfter:member'
     summary: >-
       The rest-after property determines how long a speech media agent should pause after presenting an element's main
@@ -3077,10 +3081,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'strokeLinecap?: ICSSRule | ''butt'' | ''round'' | ''square'';'
+      content: 'strokeLinecap?: ICSSRule | ''butt'' | ''round'' | ''square'' | string;'
       return:
         type:
-          - ICSSRule | 'butt' | 'round' | 'square'
+          - ICSSRule | 'butt' | 'round' | 'square' | string
   - uid: '@uifabric/merge-styles!IRawStyleBase#strokeOpacity:member'
     summary: >-
       SVG: Specifies the opacity of the outline on the current object. See SVG 1.1
@@ -3091,10 +3095,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'strokeOpacity?: ICSSRule | number;'
+      content: 'strokeOpacity?: ICSSRule | number | string;'
       return:
         type:
-          - ICSSRule | number
+          - ICSSRule | number | string
   - uid: '@uifabric/merge-styles!IRawStyleBase#strokeWidth:member'
     summary: >-
       SVG: Specifies the width of the outline on the current object. See SVG 1.1
@@ -3630,7 +3634,7 @@ items:
         type:
           - ICSSRule | string
   - uid: '@uifabric/merge-styles!IRawStyleBase#userInput:member'
-    summary: For inputing user content
+    summary: For inputting user content
     name: userInput
     fullName: userInput
     langs:
@@ -3649,10 +3653,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'userSelect?: ICSSRule | ''none'' | ''auto'' | ''text'' | ''all'' | ''contain'';'
+      content: 'userSelect?: ICSSRule | ''none'' | ''auto'' | ''text'' | ''all'' | ''contain'' | string;'
       return:
         type:
-          - ICSSRule | 'none' | 'auto' | 'text' | 'all' | 'contain'
+          - ICSSRule | 'none' | 'auto' | 'text' | 'all' | 'contain' | string
   - uid: '@uifabric/merge-styles!IRawStyleBase#verticalAlign:member'
     summary: >-
       The vertical-align property controls how inline elements or text are vertically aligned compared to the baseline.
@@ -3812,10 +3816,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'WebkitFontSmoothing?: ''none'' | ''antialiased'' | ''grayscale'' | ''subpixel-antialiased'';'
+      content: 'WebkitFontSmoothing?: ''none'' | ''antialiased'' | ''grayscale'' | ''subpixel-antialiased'' | string;'
       return:
         type:
-          - '''none'' | ''antialiased'' | ''grayscale'' | ''subpixel-antialiased'''
+          - '''none'' | ''antialiased'' | ''grayscale'' | ''subpixel-antialiased'' | string'
   - uid: '@uifabric/merge-styles!IRawStyleBase#WebkitOverflowScrolling:member'
     summary: (Webkit specific) momentum scrolling on iOS devices
     name: WebkitOverflowScrolling
@@ -3824,10 +3828,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'WebkitOverflowScrolling?: ''auto'' | ''touch'';'
+      content: 'WebkitOverflowScrolling?: ''auto'' | ''touch'' | string;'
       return:
         type:
-          - '''auto'' | ''touch'''
+          - '''auto'' | ''touch'' | string'
   - uid: '@uifabric/merge-styles!IRawStyleBase#WebkitTapHighlightColor:member'
     summary: (Webkit specific) color of the highlight that appears overa link while it's being tapped
     name: WebkitTapHighlightColor
@@ -3850,10 +3854,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'WebkitTextSizeAdjust?: ''none'' | ''auto'' | ICSSPercentageRule | ICSSRule;'
+      content: 'WebkitTextSizeAdjust?: ''none'' | ''auto'' | ICSSPercentageRule | ICSSRule | string;'
       return:
         type:
-          - '''none'' | ''auto'' | ICSSPercentageRule | ICSSRule'
+          - '''none'' | ''auto'' | ICSSPercentageRule | ICSSRule | string'
   - uid: '@uifabric/merge-styles!IRawStyleBase#whiteSpace:member'
     summary: >-
       The white-space property controls whether and how white space inside the element is collapsed, and whether lines
@@ -3878,10 +3882,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'widows?: ICSSRule | number;'
+      content: 'widows?: ICSSRule | number | string;'
       return:
         type:
-          - ICSSRule | number
+          - ICSSRule | number | string
   - uid: '@uifabric/merge-styles!IRawStyleBase#width:member'
     summary: >-
       Specifies the width of the content area of an element. The content area of the element width does not include the
@@ -3989,10 +3993,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'zIndex?: ICSSRule | ''auto'' | number;'
+      content: 'zIndex?: ICSSRule | ''auto'' | number | string;'
       return:
         type:
-          - ICSSRule | 'auto' | number
+          - ICSSRule | 'auto' | number | string
   - uid: '@uifabric/merge-styles!IRawStyleBase#zoom:member'
     summary: >-
       Sets the initial zoom factor of a document defined by `@viewport`<!-- -->. See CSS zoom descriptor
