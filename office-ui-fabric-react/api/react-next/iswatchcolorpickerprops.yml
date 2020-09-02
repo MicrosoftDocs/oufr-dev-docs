@@ -18,6 +18,7 @@ items:
       - '@fluentui/react-next!ISwatchColorPickerProps#className:member'
       - '@fluentui/react-next!ISwatchColorPickerProps#colorCells:member'
       - '@fluentui/react-next!ISwatchColorPickerProps#columnCount:member'
+      - '@fluentui/react-next!ISwatchColorPickerProps#defaultSelectedId:member'
       - '@fluentui/react-next!ISwatchColorPickerProps#disabled:member'
       - '@fluentui/react-next!ISwatchColorPickerProps#doNotContainWithinFocusZone:member'
       - '@fluentui/react-next!ISwatchColorPickerProps#focusOnHover:member'
@@ -27,10 +28,9 @@ items:
       - '@fluentui/react-next!ISwatchColorPickerProps#mouseLeaveParentSelector:member'
       - '@fluentui/react-next!ISwatchColorPickerProps#onCellFocused:member'
       - '@fluentui/react-next!ISwatchColorPickerProps#onCellHovered:member'
+      - '@fluentui/react-next!ISwatchColorPickerProps#onChange:member'
       - '@fluentui/react-next!ISwatchColorPickerProps#onColorChanged:member'
-      - '@fluentui/react-next!ISwatchColorPickerProps#positionInSet:member'
       - '@fluentui/react-next!ISwatchColorPickerProps#selectedId:member'
-      - '@fluentui/react-next!ISwatchColorPickerProps#setSize:member'
       - '@fluentui/react-next!ISwatchColorPickerProps#shouldFocusCircularNavigate:member'
       - '@fluentui/react-next!ISwatchColorPickerProps#styles:member'
       - '@fluentui/react-next!ISwatchColorPickerProps#theme:member'
@@ -159,6 +159,20 @@ items:
       return:
         type:
           - number
+  - uid: '@fluentui/react-next!ISwatchColorPickerProps#defaultSelectedId:member'
+    summary: >-
+      ID of the default selected color swatch. Only provide this if the SwatchColorPicker is an uncontrolled component;
+      otherwise, use the `selectedId` property.
+    name: defaultSelectedId
+    fullName: defaultSelectedId
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'defaultSelectedId?: string | undefined;'
+      return:
+        type:
+          - string | undefined
   - uid: '@fluentui/react-next!ISwatchColorPickerProps#disabled:member'
     summary: Whether the control is disabled.
     name: disabled
@@ -220,14 +234,8 @@ items:
         type:
           - string
   - uid: '@fluentui/react-next!ISwatchColorPickerProps#isControlled:member'
-    summary: >-
-      Indicates whether the SwatchColorPicker is fully controlled. When true, the component will not set its internal
-      state to track the selected color. Instead, the parent component will be responsible for handling state in the
-      callbacks like `onColorChanged`<!-- -->.
-
-
-      NOTE: This property is a temporary workaround to force the component to be fully controllable without breaking
-      existing behavior
+    deprecated:
+      content: No longer used. Provide `selectedId` if controlled or `defaultSelectedId` if uncontrolled.
     name: isControlled
     fullName: isControlled
     langs:
@@ -278,10 +286,23 @@ items:
       return:
         type:
           - '(id?: string, color?: string) => void'
-  - uid: '@fluentui/react-next!ISwatchColorPickerProps#onColorChanged:member'
+  - uid: '@fluentui/react-next!ISwatchColorPickerProps#onChange:member'
     summary: >-
       Callback for when the user changes the color. If `id` and `color` are unspecified, there is no selected cell.
       (e.g. the user executed the currently selected cell to unselect it)
+    name: onChange
+    fullName: onChange
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onChange?: (event: React.FormEvent<HTMLElement>, id: string | undefined, color: string | undefined) => void;'
+      return:
+        type:
+          - '(event: React.FormEvent<HTMLElement>, id: string | undefined, color: string | undefined) => void'
+  - uid: '@fluentui/react-next!ISwatchColorPickerProps#onColorChanged:member'
+    deprecated:
+      content: Use `onChange`
     name: onColorChanged
     fullName: onColorChanged
     langs:
@@ -292,21 +313,10 @@ items:
       return:
         type:
           - '(id?: string, color?: string) => void'
-  - uid: '@fluentui/react-next!ISwatchColorPickerProps#positionInSet:member'
-    deprecated:
-      content: Use `ariaPosInSet`
-    name: positionInSet
-    fullName: positionInSet
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'positionInSet?: number;'
-      return:
-        type:
-          - number
   - uid: '@fluentui/react-next!ISwatchColorPickerProps#selectedId:member'
-    summary: The ID of color cell that is currently selected
+    summary: >-
+      ID of the current selected color swatch. Only provide this if the SwatchColorPicker is a controlled component
+      where you are maintaining its current state; otherwise, use the `defaultSelectedId` property.
     name: selectedId
     fullName: selectedId
     langs:
@@ -317,19 +327,6 @@ items:
       return:
         type:
           - string
-  - uid: '@fluentui/react-next!ISwatchColorPickerProps#setSize:member'
-    deprecated:
-      content: Use `ariaSetSize`
-    name: setSize
-    fullName: setSize
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'setSize?: number;'
-      return:
-        type:
-          - number
   - uid: '@fluentui/react-next!ISwatchColorPickerProps#shouldFocusCircularNavigate:member'
     summary: >-
       Whether focus should cycle back to the beginning once the user navigates past the end (and vice versa). Only
