@@ -24,6 +24,7 @@ items:
       - '@fluentui/react-focus!IFocusZoneProps#direction:member'
       - '@fluentui/react-focus!IFocusZoneProps#disabled:member'
       - '@fluentui/react-focus!IFocusZoneProps#doNotAllowFocusEventToPropagate:member'
+      - '@fluentui/react-focus!IFocusZoneProps#elementRef:member'
       - '@fluentui/react-focus!IFocusZoneProps#elementType:member'
       - '@fluentui/react-focus!IFocusZoneProps#handleTabKey:member'
       - '@fluentui/react-focus!IFocusZoneProps#isCircularNavigation:member'
@@ -221,6 +222,20 @@ items:
       return:
         type:
           - boolean
+  - uid: '@fluentui/react-focus!IFocusZoneProps#elementRef:member'
+    summary: Optional callback to access the root DOM element.
+    deprecated:
+      content: Temporary solution which will be replaced with ref in the V8 release.
+    name: elementRef
+    fullName: elementRef
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'elementRef?: React.Ref<HTMLElement>;'
+      return:
+        type:
+          - React.Ref<HTMLElement>
   - uid: '@fluentui/react-focus!IFocusZoneProps#elementType:member'
     summary: Element type the root element will use. Default is "div".
     deprecated:
