@@ -236,16 +236,16 @@ items:
       - typeScript
     type: function
     syntax:
-      content: 'export declare function useMergedRefs<T>(...refs: (Ref<T> | undefined)[]): (instance: T) => void;'
+      content: 'export declare function useMergedRefs<T>(...refs: (React.Ref<T> | undefined)[]): RefObjectFunction<T>;'
       return:
         type:
-          - '(instance: T) => void'
-        description: ''
+          - RefObjectFunction<T>
+        description: 'A function with an attached "current" prop, so that it can be treated like a RefObject.'
       parameters:
         - id: refs
           description: Refs to collectively update with one ref value.
           type:
-            - '(Ref<T> | undefined)[]'
+            - '(React.Ref<T> | undefined)[]'
       typeParameters:
         - id: T
   - uid: '@uifabric/react-hooks!useOnEvent:function(1)'

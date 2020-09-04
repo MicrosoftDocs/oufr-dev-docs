@@ -18,6 +18,7 @@ items:
       - '@fluentui/date-time-utilities!FirstWeekOfYear:enum'
       - '@fluentui/date-time-utilities!getDatePartHashValue:function(1)'
       - '@fluentui/date-time-utilities!getDateRangeArray:function(1)'
+      - '@fluentui/date-time-utilities!getEndDateOfWeek:function(1)'
       - '@fluentui/date-time-utilities!getMonthEnd:function(1)'
       - '@fluentui/date-time-utilities!getMonthStart:function(1)'
       - '@fluentui/date-time-utilities!getStartDateOfWeek:function(1)'
@@ -234,6 +235,28 @@ items:
             1
           type:
             - number
+  - uid: '@fluentui/date-time-utilities!getEndDateOfWeek:function(1)'
+    summary: Gets the date for the last day of the week based on the given date assuming the specified first day of the week.
+    name: 'getEndDateOfWeek(date, firstDayOfWeek)'
+    fullName: 'getEndDateOfWeek(date, firstDayOfWeek)'
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export declare function getEndDateOfWeek(date: Date, firstDayOfWeek: DayOfWeek): Date;'
+      return:
+        type:
+          - Date
+        description: A new date object representing the first day of the week containing the input date.
+      parameters:
+        - id: date
+          description: The date to find the beginning of the week date for.
+          type:
+            - Date
+        - id: firstDayOfWeek
+          description: ''
+          type:
+            - '@fluentui/date-time-utilities!DayOfWeek:enum'
   - uid: '@fluentui/date-time-utilities!getMonthEnd:function(1)'
     summary: Returns a date that is the last day of the month of the provided date.
     name: getMonthEnd(date)
