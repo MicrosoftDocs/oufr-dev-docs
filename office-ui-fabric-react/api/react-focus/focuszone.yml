@@ -106,13 +106,13 @@ items:
     summary: >-
       Sets focus to a specific child element within the zone. This can be used in conjunction with shouldReceiveFocus to
       create delayed focus scenarios (like animate the scroll position to the correct location and then focus.)
-    name: focusElement(element)
-    fullName: focusElement(element)
+    name: 'focusElement(element, forceAlignment)'
+    fullName: 'focusElement(element, forceAlignment)'
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'focusElement(element: HTMLElement): boolean;'
+      content: 'focusElement(element: HTMLElement, forceAlignment?: boolean): boolean;'
       return:
         type:
           - boolean
@@ -122,6 +122,10 @@ items:
           description: The child element within the zone to focus.
           type:
             - HTMLElement
+        - id: forceAlignment
+          description: 'If true, focus alignment will be set according to the element provided.'
+          type:
+            - boolean
   - uid: '@fluentui/react-focus!FocusZone#focusLast:member(1)'
     summary: Sets focus to the last tabbable item in the zone.
     name: focusLast()
