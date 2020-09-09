@@ -7,7 +7,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'React.Component<ITextFieldProps, IMaskedTextFieldState> '
+      - 'React.Component<IMaskedTextFieldProps, IMaskedTextFieldState> '
     implements:
       - 'ITextField '
     package: office-ui-fabric-react!
@@ -35,12 +35,12 @@ items:
       - typeScript
     type: constructor
     syntax:
-      content: 'constructor(props: ITextFieldProps);'
+      content: 'constructor(props: IMaskedTextFieldProps);'
       parameters:
         - id: props
           description: ''
           type:
-            - ITextFieldProps
+            - IMaskedTextFieldProps
   - uid: 'office-ui-fabric-react!MaskedTextField#blur:member(1)'
     name: blur()
     fullName: blur()
@@ -72,10 +72,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'static defaultProps: ITextFieldProps;'
+      content: 'static defaultProps: IMaskedTextFieldProps;'
       return:
         type:
-          - ITextFieldProps
+          - IMaskedTextFieldProps
   - uid: 'office-ui-fabric-react!MaskedTextField#focus:member(1)'
     name: focus()
     fullName: focus()
@@ -213,7 +213,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'UNSAFE_componentWillReceiveProps(newProps: ITextFieldProps): void;'
+      content: 'UNSAFE_componentWillReceiveProps(newProps: IMaskedTextFieldProps): void;'
       return:
         type:
           - void
@@ -222,7 +222,7 @@ items:
         - id: newProps
           description: ''
           type:
-            - ITextFieldProps
+            - IMaskedTextFieldProps
   - uid: 'office-ui-fabric-react!MaskedTextField#value:member'
     name: value
     fullName: value

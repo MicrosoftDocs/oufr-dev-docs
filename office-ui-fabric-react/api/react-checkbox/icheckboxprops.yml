@@ -16,10 +16,9 @@ items:
       - '@fluentui/react-checkbox!ICheckboxProps#ariaLabelledBy:member'
       - '@fluentui/react-checkbox!ICheckboxProps#ariaPositionInSet:member'
       - '@fluentui/react-checkbox!ICheckboxProps#ariaSetSize:member'
-      - '@fluentui/react-checkbox!ICheckboxProps#as:member'
       - '@fluentui/react-checkbox!ICheckboxProps#boxSide:member'
       - '@fluentui/react-checkbox!ICheckboxProps#checked:member'
-      - '@fluentui/react-checkbox!ICheckboxProps#checkmark:member'
+      - '@fluentui/react-checkbox!ICheckboxProps#checkmarkIconProps:member'
       - '@fluentui/react-checkbox!ICheckboxProps#className:member'
       - '@fluentui/react-checkbox!ICheckboxProps#componentRef:member'
       - '@fluentui/react-checkbox!ICheckboxProps#defaultChecked:member'
@@ -93,18 +92,6 @@ items:
       return:
         type:
           - number
-  - uid: '@fluentui/react-checkbox!ICheckboxProps#as:member'
-    summary: Render the root element as another type.
-    name: as
-    fullName: as
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'as?: React.ElementType;'
-      return:
-        type:
-          - React.ElementType
   - uid: '@fluentui/react-checkbox!ICheckboxProps#boxSide:member'
     summary: Allows you to set the checkbox to be at the before (start) or after (end) the label.
     name: boxSide
@@ -131,18 +118,18 @@ items:
       return:
         type:
           - boolean
-  - uid: '@fluentui/react-checkbox!ICheckboxProps#checkmark:member'
-    summary: Checkmark Icon to display when checkbox is checked.
-    name: checkmark
-    fullName: checkmark
+  - uid: '@fluentui/react-checkbox!ICheckboxProps#checkmarkIconProps:member'
+    summary: Custom icon props for the check mark rendered by the checkbox
+    name: checkmarkIconProps
+    fullName: checkmarkIconProps
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'checkmark?: SlotProp<ISvgIconProps>;'
+      content: 'checkmarkIconProps?: IIconProps;'
       return:
         type:
-          - SlotProp<ISvgIconProps>
+          - 'office-ui-fabric-react!IIconProps:interface'
   - uid: '@fluentui/react-checkbox!ICheckboxProps#className:member'
     summary: 'Additional class name to provide on the root element, in addition to the ms-Checkbox class.'
     name: className
@@ -244,9 +231,7 @@ items:
         type:
           - React.ButtonHTMLAttributes<HTMLElement | HTMLButtonElement>
   - uid: '@fluentui/react-checkbox!ICheckboxProps#keytipProps:member'
-    summary: Optional keytip.
-    deprecated:
-      content: This no longer works. Use `useKeytipData` hook instead.
+    summary: Optional keytip for this checkbox
     name: keytipProps
     fullName: keytipProps
     langs:
@@ -265,10 +250,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'label?: SlotProp<React.HTMLAttributes<HTMLSpanElement>>;'
+      content: 'label?: string;'
       return:
         type:
-          - SlotProp<React.HTMLAttributes<HTMLSpanElement>>
+          - string
   - uid: '@fluentui/react-checkbox!ICheckboxProps#onChange:member'
     summary: Callback that is called when the checked value has changed.
     name: onChange
@@ -283,8 +268,6 @@ items:
           - '(ev?: React.FormEvent<HTMLElement | HTMLInputElement>, checked?: boolean) => void'
   - uid: '@fluentui/react-checkbox!ICheckboxProps#onRenderLabel:member'
     summary: Custom render function for the label.
-    deprecated:
-      content: Use label prop instead.
     name: onRenderLabel
     fullName: onRenderLabel
     langs:
@@ -297,8 +280,6 @@ items:
           - IRenderFunction<ICheckboxProps>
   - uid: '@fluentui/react-checkbox!ICheckboxProps#styles:member'
     summary: Call to provide customized styling that will layer on top of the variant rules.
-    deprecated:
-      content: 'This no longer works. TODO: fix use cases with tokens prop.'
     name: styles
     fullName: styles
     langs:

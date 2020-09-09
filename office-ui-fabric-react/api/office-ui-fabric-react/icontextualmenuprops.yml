@@ -440,6 +440,7 @@ items:
         onRestoreFocus?: (options: {
                 originalElement?: HTMLElement | Window;
                 containsFocus: boolean;
+                documentContainsFocus: boolean;
             }) => void;
       return:
         type:
@@ -447,6 +448,7 @@ items:
             (options: {
                     originalElement?: HTMLElement | Window;
                     containsFocus: boolean;
+                    documentContainsFocus: boolean;
                 }) => void
   - uid: 'office-ui-fabric-react!IContextualMenuProps#shouldFocusOnContainer:member'
     summary: Whether to focus on the contextual menu container (as opposed to the first menu item).
