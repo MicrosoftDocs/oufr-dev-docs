@@ -393,6 +393,7 @@ items:
         onRestoreFocus?: (options: {
                 originalElement?: HTMLElement | Window;
                 containsFocus: boolean;
+                documentContainsFocus: boolean;
             }) => void;
       return:
         type:
@@ -400,6 +401,7 @@ items:
             (options: {
                     originalElement?: HTMLElement | Window;
                     containsFocus: boolean;
+                    documentContainsFocus: boolean;
                 }) => void
   - uid: 'office-ui-fabric-react!ICalloutProps#onScroll:member'
     summary: Callback when the Callout body is scrolled.
