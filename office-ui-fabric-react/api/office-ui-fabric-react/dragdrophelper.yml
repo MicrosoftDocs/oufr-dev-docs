@@ -1,0 +1,96 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-ui-fabric-react!DragDropHelper:class'
+    name: DragDropHelper
+    fullName: DragDropHelper
+    langs:
+      - typeScript
+    type: class
+    implements:
+      - 'office-ui-fabric-react!IDragDropHelper:interface'
+    package: office-ui-fabric-react!
+    children:
+      - 'office-ui-fabric-react!DragDropHelper:constructor(1)'
+      - 'office-ui-fabric-react!DragDropHelper#dispose:member(1)'
+      - 'office-ui-fabric-react!DragDropHelper#subscribe:member(1)'
+      - 'office-ui-fabric-react!DragDropHelper#unsubscribe:member(1)'
+  - uid: 'office-ui-fabric-react!DragDropHelper:constructor(1)'
+    summary: Constructs a new instance of the `DragDropHelper` class
+    name: (constructor)(params)
+    fullName: (constructor)(params)
+    langs:
+      - typeScript
+    type: constructor
+    syntax:
+      content: 'constructor(params: IDragDropHelperParams);'
+      parameters:
+        - id: params
+          description: ''
+          type:
+            - 'office-ui-fabric-react!IDragDropHelperParams:interface'
+  - uid: 'office-ui-fabric-react!DragDropHelper#dispose:member(1)'
+    name: dispose()
+    fullName: dispose()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'dispose(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'office-ui-fabric-react!DragDropHelper#subscribe:member(1)'
+    name: 'subscribe(root, events, dragDropOptions)'
+    fullName: 'subscribe(root, events, dragDropOptions)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        subscribe(root: HTMLElement, events: EventGroup, dragDropOptions: IDragDropOptions): {
+                key: string;
+                dispose(): void;
+            };
+      return:
+        type:
+          - |-
+            {
+                    key: string;
+                    dispose(): void;
+                }
+        description: ''
+      parameters:
+        - id: root
+          description: ''
+          type:
+            - HTMLElement
+        - id: events
+          description: ''
+          type:
+            - '@uifabric/utilities!EventGroup:class'
+        - id: dragDropOptions
+          description: ''
+          type:
+            - 'office-ui-fabric-react!IDragDropOptions:interface'
+  - uid: 'office-ui-fabric-react!DragDropHelper#unsubscribe:member(1)'
+    name: 'unsubscribe(root, key)'
+    fullName: 'unsubscribe(root, key)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'unsubscribe(root: HTMLElement, key: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: root
+          description: ''
+          type:
+            - HTMLElement
+        - id: key
+          description: ''
+          type:
+            - string
