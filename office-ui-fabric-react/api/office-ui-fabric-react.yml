@@ -25,6 +25,7 @@ items:
       - 'office-ui-fabric-react!BaseSlots:enum'
       - 'office-ui-fabric-react!BreadcrumbBase:class'
       - 'office-ui-fabric-react!buildColumns:function(1)'
+      - 'office-ui-fabric-react!buildKeytipConfigMap:function(1)'
       - 'office-ui-fabric-react!Button:class'
       - 'office-ui-fabric-react!ButtonGridCell:class'
       - 'office-ui-fabric-react!ButtonType:enum'
@@ -47,6 +48,7 @@ items:
       - 'office-ui-fabric-react!CompactPeoplePickerBase:class'
       - 'office-ui-fabric-react!CompoundButton:class'
       - 'office-ui-fabric-react!ConstrainMode:enum'
+      - 'office-ui-fabric-react!constructKeytip:function(1)'
       - 'office-ui-fabric-react!ContextualMenuBase:class'
       - 'office-ui-fabric-react!ContextualMenuItemBase:class'
       - 'office-ui-fabric-react!ContextualMenuItemType:enum'
@@ -68,6 +70,7 @@ items:
       - 'office-ui-fabric-react!DialogFooterBase:class'
       - 'office-ui-fabric-react!DialogType:enum'
       - 'office-ui-fabric-react!DocumentCardType:enum'
+      - 'office-ui-fabric-react!DragDropHelper:class'
       - 'office-ui-fabric-react!DropdownBase:class'
       - 'office-ui-fabric-react!ElementType:enum'
       - 'office-ui-fabric-react!ExpandingCardBase:class'
@@ -80,12 +83,16 @@ items:
       - 'office-ui-fabric-react!FloatingPeoplePicker:class'
       - 'office-ui-fabric-react!FocusTrapZone:class'
       - 'office-ui-fabric-react!getAllSelectedOptions:function(1)'
+      - 'office-ui-fabric-react!getAriaDescribedBy:function(1)'
       - 'office-ui-fabric-react!getBackgroundShade:function(1)'
+      - 'office-ui-fabric-react!getBoundsFromTargetWindow:function(1)'
       - 'office-ui-fabric-react!getColorFromHSV:function(1)'
       - 'office-ui-fabric-react!getColorFromRGBA:function(1)'
       - 'office-ui-fabric-react!getColorFromString:function(1)'
       - 'office-ui-fabric-react!getContrastRatio:function(1)'
       - 'office-ui-fabric-react!getFullColorString:function(1)'
+      - 'office-ui-fabric-react!getMaxHeight:function(1)'
+      - 'office-ui-fabric-react!getOppositeEdge:function(1)'
       - 'office-ui-fabric-react!getPersonaInitialsColor:function(1)'
       - 'office-ui-fabric-react!getShade:function(1)'
       - 'office-ui-fabric-react!getSubmenuItems:function(1)'
@@ -144,8 +151,11 @@ items:
       - 'office-ui-fabric-react!ICalendarProps:interface'
       - 'office-ui-fabric-react!ICalendarState:interface'
       - 'office-ui-fabric-react!ICalendarStrings:interface'
+      - 'office-ui-fabric-react!ICalloutBeakPositionedInfo:interface'
       - 'office-ui-fabric-react!ICalloutContentStyleProps:interface'
       - 'office-ui-fabric-react!ICalloutContentStyles:interface'
+      - 'office-ui-fabric-react!ICalloutPositionedInfo:interface'
+      - 'office-ui-fabric-react!ICalloutPositionProps:interface'
       - 'office-ui-fabric-react!ICalloutProps:interface'
       - 'office-ui-fabric-react!ICellStyleProps:interface'
       - 'office-ui-fabric-react!ICheckbox:interface'
@@ -193,7 +203,9 @@ items:
       - 'office-ui-fabric-react!IColumnReorderOptions:interface'
       - 'office-ui-fabric-react!IColumnResizeDetails:interface'
       - 'office-ui-fabric-react!IComboBox:interface'
+      - 'office-ui-fabric-react!IComboBoxClassNames:interface'
       - 'office-ui-fabric-react!IComboBoxOption:interface'
+      - 'office-ui-fabric-react!IComboBoxOptionClassNames:interface'
       - 'office-ui-fabric-react!IComboBoxOptionStyles:interface'
       - 'office-ui-fabric-react!IComboBoxProps:interface'
       - 'office-ui-fabric-react!IComboBoxState:interface'
@@ -313,9 +325,12 @@ items:
       - 'office-ui-fabric-react!IDocumentCardTitleStyleProps:interface'
       - 'office-ui-fabric-react!IDocumentCardTitleStyles:interface'
       - 'office-ui-fabric-react!IDragDropContext:interface'
+      - 'office-ui-fabric-react!IDragDropEvent:interface'
       - 'office-ui-fabric-react!IDragDropEvents:interface'
       - 'office-ui-fabric-react!IDragDropHelper:interface'
+      - 'office-ui-fabric-react!IDragDropHelperParams:interface'
       - 'office-ui-fabric-react!IDragDropOptions:interface'
+      - 'office-ui-fabric-react!IDragDropTarget:interface'
       - 'office-ui-fabric-react!IDragOptions:interface'
       - 'office-ui-fabric-react!IDropdown:interface'
       - 'office-ui-fabric-react!IDropdownInternalProps:interface'
@@ -328,6 +343,8 @@ items:
       - 'office-ui-fabric-react!IEditingSelectedPeopleItemProps:interface'
       - 'office-ui-fabric-react!IEditingSelectedPeopleItemStyles:interface'
       - 'office-ui-fabric-react!IEditingSelectedPeopleItemStylesProps:interface'
+      - 'office-ui-fabric-react!IElementPosition:interface'
+      - 'office-ui-fabric-react!IElementPositionInfo:interface'
       - 'office-ui-fabric-react!IEntityRect:interface'
       - 'office-ui-fabric-react!IExpandingCard:interface'
       - 'office-ui-fabric-react!IExpandingCardProps:interface'
@@ -392,6 +409,9 @@ items:
       - 'office-ui-fabric-react!IImageStyleProps:interface'
       - 'office-ui-fabric-react!IImageStyles:interface'
       - 'office-ui-fabric-react!IInputProps:interface'
+      - 'office-ui-fabric-react!IKeytipConfig:interface'
+      - 'office-ui-fabric-react!IKeytipConfigItem:interface'
+      - 'office-ui-fabric-react!IKeytipConfigMap:interface'
       - 'office-ui-fabric-react!IKeytipLayer:interface'
       - 'office-ui-fabric-react!IKeytipLayerProps:interface'
       - 'office-ui-fabric-react!IKeytipLayerState:interface'
@@ -400,6 +420,7 @@ items:
       - 'office-ui-fabric-react!IKeytipProps:interface'
       - 'office-ui-fabric-react!IKeytipStyleProps:interface'
       - 'office-ui-fabric-react!IKeytipStyles:interface'
+      - 'office-ui-fabric-react!IKeytipTransitionKey:interface'
       - 'office-ui-fabric-react!ILabel:interface'
       - 'office-ui-fabric-react!ILabelProps:interface'
       - 'office-ui-fabric-react!ILabelStyleProps:interface'
@@ -500,9 +521,13 @@ items:
       - 'office-ui-fabric-react!IPlainCardStyles:interface'
       - 'office-ui-fabric-react!IPopupProps:interface'
       - 'office-ui-fabric-react!IPopupState:interface'
+      - 'office-ui-fabric-react!IPosition:interface'
+      - 'office-ui-fabric-react!IPositionDirectionalHintData:interface'
+      - 'office-ui-fabric-react!IPositionedData:interface'
       - 'office-ui-fabric-react!IPositioningContainer:interface'
       - 'office-ui-fabric-react!IPositioningContainerProps:interface'
       - 'office-ui-fabric-react!IPositioningContainerState:interface'
+      - 'office-ui-fabric-react!IPositionProps:interface'
       - 'office-ui-fabric-react!IProgressIndicatorProps:interface'
       - 'office-ui-fabric-react!IProgressIndicatorStyleProps:interface'
       - 'office-ui-fabric-react!IProgressIndicatorStyles:interface'
@@ -511,6 +536,7 @@ items:
       - 'office-ui-fabric-react!IRatingState:interface'
       - 'office-ui-fabric-react!IRatingStyleProps:interface'
       - 'office-ui-fabric-react!IRatingStyles:interface'
+      - 'office-ui-fabric-react!IRelativePositions:interface'
       - 'office-ui-fabric-react!IRenderGroupHeaderProps:interface'
       - 'office-ui-fabric-react!IResizeGroup:interface'
       - 'office-ui-fabric-react!IResizeGroupProps:interface'
@@ -568,6 +594,7 @@ items:
       - 'office-ui-fabric-react!ISliderState:interface'
       - 'office-ui-fabric-react!ISliderStyles:interface'
       - 'office-ui-fabric-react!ISpinButton:interface'
+      - 'office-ui-fabric-react!ISpinButtonClassNames:interface'
       - 'office-ui-fabric-react!ISpinButtonProps:interface'
       - 'office-ui-fabric-react!ISpinButtonState:interface'
       - 'office-ui-fabric-react!ISpinButtonStyles:interface'
@@ -575,6 +602,7 @@ items:
       - 'office-ui-fabric-react!ISpinnerProps:interface'
       - 'office-ui-fabric-react!ISpinnerStyleProps:interface'
       - 'office-ui-fabric-react!ISpinnerStyles:interface'
+      - 'office-ui-fabric-react!ISplitButtonClassNames:interface'
       - 'office-ui-fabric-react!isRelativeUrl:function(1)'
       - 'office-ui-fabric-react!IStackItemProps:interface'
       - 'office-ui-fabric-react!IStackItemSlots:interface'
@@ -638,14 +666,19 @@ items:
       - 'office-ui-fabric-react!ITooltipProps:interface'
       - 'office-ui-fabric-react!ITooltipStyleProps:interface'
       - 'office-ui-fabric-react!ITooltipStyles:interface'
+      - 'office-ui-fabric-react!IUniqueKeytip:interface'
       - 'office-ui-fabric-react!IVerticalDividerClassNames:interface'
       - 'office-ui-fabric-react!IVerticalDividerProps:interface'
       - 'office-ui-fabric-react!IVerticalDividerStyles:interface'
       - 'office-ui-fabric-react!IViewport:interface'
+      - 'office-ui-fabric-react!IWindowWithSegments:interface'
       - 'office-ui-fabric-react!IWithViewportProps:interface'
       - 'office-ui-fabric-react!KeyboardSpinDirection:enum'
       - 'office-ui-fabric-react!Keytip:class'
       - 'office-ui-fabric-react!KeytipLayerBase:class'
+      - 'office-ui-fabric-react!KeytipManager:class'
+      - 'office-ui-fabric-react!ktpTargetFromId:function(1)'
+      - 'office-ui-fabric-react!ktpTargetFromSequences:function(1)'
       - 'office-ui-fabric-react!LabelBase:class'
       - 'office-ui-fabric-react!LayerBase:class'
       - 'office-ui-fabric-react!LayerHost:class'
@@ -654,6 +687,7 @@ items:
       - 'office-ui-fabric-react!ListPeoplePickerBase:class'
       - 'office-ui-fabric-react!MaskedTextField:class'
       - 'office-ui-fabric-react!MemberListPeoplePicker:class'
+      - 'office-ui-fabric-react!mergeOverflows:function(1)'
       - 'office-ui-fabric-react!MessageBarBase:class'
       - 'office-ui-fabric-react!MessageBarButton:class'
       - 'office-ui-fabric-react!MessageBarType:enum'
@@ -676,11 +710,16 @@ items:
       - 'office-ui-fabric-react!PivotLinkSize:enum'
       - 'office-ui-fabric-react!PlainCardBase:class'
       - 'office-ui-fabric-react!Popup:class'
+      - 'office-ui-fabric-react!Position:enum'
+      - 'office-ui-fabric-react!positionCallout:function(1)'
+      - 'office-ui-fabric-react!positionCard:function(1)'
+      - 'office-ui-fabric-react!positionElement:function(1)'
       - 'office-ui-fabric-react!PositioningContainer:class'
       - 'office-ui-fabric-react!PrimaryButton:class'
       - 'office-ui-fabric-react!ProgressIndicatorBase:class'
       - 'office-ui-fabric-react!RatingBase:class'
       - 'office-ui-fabric-react!RatingSize:enum'
+      - 'office-ui-fabric-react!RectangleEdge:enum'
       - 'office-ui-fabric-react!ResizeGroupBase:class'
       - 'office-ui-fabric-react!ResizeGroupDirection:enum'
       - 'office-ui-fabric-react!ResponsiveMode:enum'
@@ -693,6 +732,7 @@ items:
       - 'office-ui-fabric-react!SelectedPeopleList:class'
       - 'office-ui-fabric-react!SelectionZone:class'
       - 'office-ui-fabric-react!SemanticColorSlots:enum'
+      - 'office-ui-fabric-react!sequencesToID:function(1)'
       - 'office-ui-fabric-react!Shade:enum'
       - 'office-ui-fabric-react!ShimmerBase:class'
       - 'office-ui-fabric-react!ShimmeredDetailsListBase:class'
@@ -726,6 +766,8 @@ items:
       - 'office-ui-fabric-react!TooltipDelay:enum'
       - 'office-ui-fabric-react!TooltipHostBase:class'
       - 'office-ui-fabric-react!TooltipOverflowMode:enum'
+      - 'office-ui-fabric-react!transitionKeysAreEqual:function(1)'
+      - 'office-ui-fabric-react!transitionKeysContain:function(1)'
       - 'office-ui-fabric-react!updateA:function(1)'
       - 'office-ui-fabric-react!updateH:function(1)'
       - 'office-ui-fabric-react!updateRGB:function(1)'
@@ -782,6 +824,24 @@ items:
           description: ''
           type:
             - boolean
+  - uid: 'office-ui-fabric-react!buildKeytipConfigMap:function(1)'
+    summary: Builds a map of ID to IKeytipProps
+    name: buildKeytipConfigMap(config)
+    fullName: buildKeytipConfigMap(config)
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export declare function buildKeytipConfigMap(config: IKeytipConfig): IKeytipConfigMap;'
+      return:
+        type:
+          - 'office-ui-fabric-react!IKeytipConfigMap:interface'
+        description: Config map
+      parameters:
+        - id: config
+          description: IKeytipConfig object
+          type:
+            - 'office-ui-fabric-react!IKeytipConfig:interface'
   - uid: 'office-ui-fabric-react!canAnyMenuItemsCheck:function(1)'
     summary: Returns true if a list of menu items can contain a checkbox
     name: canAnyMenuItemsCheck(items)
@@ -826,6 +886,34 @@ items:
           description: ''
           type:
             - number
+  - uid: 'office-ui-fabric-react!constructKeytip:function(1)'
+    summary: Constructs a keytip from an IKeytipConfigItem and puts it in the configMap
+    name: 'constructKeytip(configMap, parentSequence, keytip)'
+    fullName: 'constructKeytip(configMap, parentSequence, keytip)'
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: >-
+        export declare function constructKeytip(configMap: IKeytipConfigMap, parentSequence: string[], keytip:
+        IKeytipConfigItem): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: configMap
+          description: IKeytipConfigMap to store the keytip in
+          type:
+            - 'office-ui-fabric-react!IKeytipConfigMap:interface'
+        - id: parentSequence
+          description: string of the parent keytip
+          type:
+            - 'string[]'
+        - id: keytip
+          description: IKeytipConfigItem data
+          type:
+            - 'office-ui-fabric-react!IKeytipConfigItem:interface'
   - uid: 'office-ui-fabric-react!correctHex:function(1)'
     summary: >-
       Corrects a hex color to have length 3 or 6. Defaults to white if too short. Does NOT check anything besides the
@@ -975,6 +1063,24 @@ items:
           description: ''
           type:
             - 'number[]'
+  - uid: 'office-ui-fabric-react!getAriaDescribedBy:function(1)'
+    summary: Gets the aria-describedby value to put on the component with this keytip.
+    name: getAriaDescribedBy(keySequences)
+    fullName: getAriaDescribedBy(keySequences)
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export declare function getAriaDescribedBy(keySequences: string[]): string;'
+      return:
+        type:
+          - string
+        description: The aria-describedby value to set on the component with this keytip.
+      parameters:
+        - id: keySequences
+          description: KeySequences of the keytip.
+          type:
+            - 'string[]'
   - uid: 'office-ui-fabric-react!getBackgroundShade:function(1)'
     name: 'getBackgroundShade(color, shade, isInverted)'
     fullName: 'getBackgroundShade(color, shade, isInverted)'
@@ -1000,6 +1106,29 @@ items:
           description: ''
           type:
             - boolean
+  - uid: 'office-ui-fabric-react!getBoundsFromTargetWindow:function(1)'
+    name: 'getBoundsFromTargetWindow(target, targetWindow)'
+    fullName: 'getBoundsFromTargetWindow(target, targetWindow)'
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: >-
+        export declare function getBoundsFromTargetWindow(target: Element | MouseEvent | Point | null, targetWindow:
+        IWindowWithSegments): IRectangle;
+      return:
+        type:
+          - '@uifabric/utilities!IRectangle:interface'
+        description: ''
+      parameters:
+        - id: target
+          description: ''
+          type:
+            - Element | MouseEvent | Point | null
+        - id: targetWindow
+          description: ''
+          type:
+            - 'office-ui-fabric-react!IWindowWithSegments:interface'
   - uid: 'office-ui-fabric-react!getColorFromHSV:function(1)'
     summary: >-
       Converts an HSV color (and optional alpha value) to a color object. If `a` is not given, a default of 100 is used.
@@ -1108,6 +1237,63 @@ items:
           description: ''
           type:
             - 'office-ui-fabric-react!IColor:interface'
+  - uid: 'office-ui-fabric-react!getMaxHeight:function(1)'
+    summary: >-
+      Gets the maximum height that a rectangle can have in order to fit below or above a target. If the directional hint
+      specifies a left or right edge (i.e. leftCenter) it will limit the height to the topBorder of the target given. If
+      no bounds are provided then the window is treated as the bounds.
+    name: 'getMaxHeight(target, targetEdge, gapSpace, bounds, coverTarget)'
+    fullName: 'getMaxHeight(target, targetEdge, gapSpace, bounds, coverTarget)'
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: >-
+        export declare function getMaxHeight(target: Element | MouseEvent | Point, targetEdge: DirectionalHint,
+        gapSpace?: number, bounds?: IRectangle, coverTarget?: boolean): number;
+      return:
+        type:
+          - number
+        description: ''
+      parameters:
+        - id: target
+          description: ''
+          type:
+            - Element | MouseEvent | Point
+        - id: targetEdge
+          description: ''
+          type:
+            - DirectionalHint
+        - id: gapSpace
+          description: ''
+          type:
+            - number
+        - id: bounds
+          description: ''
+          type:
+            - '@uifabric/utilities!IRectangle:interface'
+        - id: coverTarget
+          description: ''
+          type:
+            - boolean
+  - uid: 'office-ui-fabric-react!getOppositeEdge:function(1)'
+    summary: Returns the opposite edge of the given RectangleEdge.
+    name: getOppositeEdge(edge)
+    fullName: getOppositeEdge(edge)
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export declare function getOppositeEdge(edge: RectangleEdge): RectangleEdge;'
+      return:
+        type:
+          - 'office-ui-fabric-react!RectangleEdge:enum'
+        description: ''
+      parameters:
+        - id: edge
+          description: ''
+          type:
+            - 'office-ui-fabric-react!RectangleEdge:enum'
   - uid: 'office-ui-fabric-react!getPersonaInitialsColor:function(1)'
     summary: >-
       Gets the hex color string (prefixed with \#) for the given persona props. This is the logic used internally by the
@@ -1358,6 +1544,161 @@ items:
           description: The Shade value to validate.
           type:
             - 'office-ui-fabric-react!Shade:enum'
+  - uid: 'office-ui-fabric-react!ktpTargetFromId:function(1)'
+    summary: Constructs the data-ktp-execute-target attribute selector from a keytip ID.
+    name: ktpTargetFromId(keytipId)
+    fullName: ktpTargetFromId(keytipId)
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export declare function ktpTargetFromId(keytipId: string): string;'
+      return:
+        type:
+          - string
+        description: String selector to use to query for the keytip execute target.
+      parameters:
+        - id: keytipId
+          description: ID of the Keytip.
+          type:
+            - string
+  - uid: 'office-ui-fabric-react!ktpTargetFromSequences:function(1)'
+    summary: Constructs the data-ktp-target attribute selector from a full key sequence.
+    name: ktpTargetFromSequences(keySequences)
+    fullName: ktpTargetFromSequences(keySequences)
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export declare function ktpTargetFromSequences(keySequences: string[]): string;'
+      return:
+        type:
+          - string
+        description: String selector to use to query for the keytip target.
+      parameters:
+        - id: keySequences
+          description: 'Full string\[\] for a Keytip.'
+          type:
+            - 'string[]'
+  - uid: 'office-ui-fabric-react!mergeOverflows:function(1)'
+    summary: Merges an overflow sequence with a key sequence.
+    name: 'mergeOverflows(keySequences, overflowKeySequences)'
+    fullName: 'mergeOverflows(keySequences, overflowKeySequences)'
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export declare function mergeOverflows(keySequences: string[], overflowKeySequences: string[]): string[];'
+      return:
+        type:
+          - 'string[]'
+        description: Sequence that will be used by the keytip when in the overflow.
+      parameters:
+        - id: keySequences
+          description: Full sequence for one keytip.
+          type:
+            - 'string[]'
+        - id: overflowKeySequences
+          description: Full overflow keytip sequence.
+          type:
+            - 'string[]'
+  - uid: 'office-ui-fabric-react!positionCallout:function(1)'
+    name: 'positionCallout(props, hostElement, elementToPosition, previousPositions)'
+    fullName: 'positionCallout(props, hostElement, elementToPosition, previousPositions)'
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: >-
+        export declare function positionCallout(props: IPositionProps, hostElement: HTMLElement, elementToPosition:
+        HTMLElement, previousPositions?: ICalloutPositionedInfo): ICalloutPositionedInfo;
+      return:
+        type:
+          - 'office-ui-fabric-react!ICalloutPositionedInfo:interface'
+        description: ''
+      parameters:
+        - id: props
+          description: ''
+          type:
+            - 'office-ui-fabric-react!IPositionProps:interface'
+        - id: hostElement
+          description: ''
+          type:
+            - HTMLElement
+        - id: elementToPosition
+          description: ''
+          type:
+            - HTMLElement
+        - id: previousPositions
+          description: ''
+          type:
+            - 'office-ui-fabric-react!ICalloutPositionedInfo:interface'
+  - uid: 'office-ui-fabric-react!positionCard:function(1)'
+    name: 'positionCard(props, hostElement, elementToPosition, previousPositions)'
+    fullName: 'positionCard(props, hostElement, elementToPosition, previousPositions)'
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: >-
+        export declare function positionCard(props: IPositionProps, hostElement: HTMLElement, elementToPosition:
+        HTMLElement, previousPositions?: ICalloutPositionedInfo): ICalloutPositionedInfo;
+      return:
+        type:
+          - 'office-ui-fabric-react!ICalloutPositionedInfo:interface'
+        description: ''
+      parameters:
+        - id: props
+          description: ''
+          type:
+            - 'office-ui-fabric-react!IPositionProps:interface'
+        - id: hostElement
+          description: ''
+          type:
+            - HTMLElement
+        - id: elementToPosition
+          description: ''
+          type:
+            - HTMLElement
+        - id: previousPositions
+          description: ''
+          type:
+            - 'office-ui-fabric-react!ICalloutPositionedInfo:interface'
+  - uid: 'office-ui-fabric-react!positionElement:function(1)'
+    summary: >-
+      Used to position an element relative to the given positioning props. If positioning has been completed before,
+      previousPositions can be passed to ensure that the positioning element repositions based on its previous targets
+      rather than starting with directionalhint.
+    name: 'positionElement(props, hostElement, elementToPosition, previousPositions)'
+    fullName: 'positionElement(props, hostElement, elementToPosition, previousPositions)'
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: >-
+        export declare function positionElement(props: IPositionProps, hostElement: HTMLElement, elementToPosition:
+        HTMLElement, previousPositions?: IPositionedData): IPositionedData;
+      return:
+        type:
+          - 'office-ui-fabric-react!IPositionedData:interface'
+        description: ''
+      parameters:
+        - id: props
+          description: ''
+          type:
+            - 'office-ui-fabric-react!IPositionProps:interface'
+        - id: hostElement
+          description: ''
+          type:
+            - HTMLElement
+        - id: elementToPosition
+          description: ''
+          type:
+            - HTMLElement
+        - id: previousPositions
+          description: ''
+          type:
+            - 'office-ui-fabric-react!IPositionedData:interface'
   - uid: 'office-ui-fabric-react!rgb2hex:function(1)'
     summary: 'Converts RGB components to a hex color string (without \# prefix).'
     name: 'rgb2hex(r, g, b)'
@@ -1410,6 +1751,26 @@ items:
           description: ''
           type:
             - number
+  - uid: 'office-ui-fabric-react!sequencesToID:function(1)'
+    summary: >-
+      Converts a whole set of KeySequences into one keytip ID, which will be the ID for the last keytip sequence
+      specified keySequences should not include the initial keytip 'start' sequence.
+    name: sequencesToID(keySequences)
+    fullName: sequencesToID(keySequences)
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export declare function sequencesToID(keySequences: string[]): string;'
+      return:
+        type:
+          - string
+        description: String to use for the keytip ID.
+      parameters:
+        - id: keySequences
+          description: Full path of IKeySequences for one keytip.
+          type:
+            - 'string[]'
   - uid: 'office-ui-fabric-react!themeRulesStandardCreator:function(1)'
     name: themeRulesStandardCreator()
     fullName: themeRulesStandardCreator()
@@ -1422,6 +1783,50 @@ items:
         type:
           - 'office-ui-fabric-react!IThemeRules:interface'
         description: ''
+  - uid: 'office-ui-fabric-react!transitionKeysAreEqual:function(1)'
+    summary: Tests for equality between two IKeytipTransitionKeys.
+    name: 'transitionKeysAreEqual(key1, key2)'
+    fullName: 'transitionKeysAreEqual(key1, key2)'
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export declare function transitionKeysAreEqual(key1: IKeytipTransitionKey, key2: IKeytipTransitionKey): boolean;'
+      return:
+        type:
+          - boolean
+        description: T/F if the transition keys are equal.
+      parameters:
+        - id: key1
+          description: First IKeytipTransitionKey.
+          type:
+            - 'office-ui-fabric-react!IKeytipTransitionKey:interface'
+        - id: key2
+          description: Second IKeytipTransitionKey.
+          type:
+            - 'office-ui-fabric-react!IKeytipTransitionKey:interface'
+  - uid: 'office-ui-fabric-react!transitionKeysContain:function(1)'
+    summary: Tests if 'key' is present in 'keys'.
+    name: 'transitionKeysContain(keys, key)'
+    fullName: 'transitionKeysContain(keys, key)'
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export declare function transitionKeysContain(keys: IKeytipTransitionKey[], key: IKeytipTransitionKey): boolean;'
+      return:
+        type:
+          - boolean
+        description: T/F if 'keys' contains 'key'.
+      parameters:
+        - id: keys
+          description: Array of IKeytipTransitionKey.
+          type:
+            - 'IKeytipTransitionKey[]'
+        - id: key
+          description: IKeytipTransitionKey to find in 'keys'.
+          type:
+            - 'office-ui-fabric-react!IKeytipTransitionKey:interface'
   - uid: 'office-ui-fabric-react!updateA:function(1)'
     summary: >-
       Gets a color with the given alpha value and the same other components as `color`<!-- -->. Does not modify the
@@ -1685,6 +2090,8 @@ references:
     name: DialogType
   - uid: 'office-ui-fabric-react!DocumentCardType:enum'
     name: DocumentCardType
+  - uid: 'office-ui-fabric-react!DragDropHelper:class'
+    name: DragDropHelper
   - uid: 'office-ui-fabric-react!DropdownBase:class'
     name: DropdownBase
   - uid: 'office-ui-fabric-react!ElementType:enum'
@@ -1807,10 +2214,16 @@ references:
     name: ICalendarState
   - uid: 'office-ui-fabric-react!ICalendarStrings:interface'
     name: ICalendarStrings
+  - uid: 'office-ui-fabric-react!ICalloutBeakPositionedInfo:interface'
+    name: ICalloutBeakPositionedInfo
   - uid: 'office-ui-fabric-react!ICalloutContentStyleProps:interface'
     name: ICalloutContentStyleProps
   - uid: 'office-ui-fabric-react!ICalloutContentStyles:interface'
     name: ICalloutContentStyles
+  - uid: 'office-ui-fabric-react!ICalloutPositionedInfo:interface'
+    name: ICalloutPositionedInfo
+  - uid: 'office-ui-fabric-react!ICalloutPositionProps:interface'
+    name: ICalloutPositionProps
   - uid: 'office-ui-fabric-react!ICalloutProps:interface'
     name: ICalloutProps
   - uid: 'office-ui-fabric-react!ICellStyleProps:interface'
@@ -1905,8 +2318,12 @@ references:
     name: IColumnResizeDetails
   - uid: 'office-ui-fabric-react!IComboBox:interface'
     name: IComboBox
+  - uid: 'office-ui-fabric-react!IComboBoxClassNames:interface'
+    name: IComboBoxClassNames
   - uid: 'office-ui-fabric-react!IComboBoxOption:interface'
     name: IComboBoxOption
+  - uid: 'office-ui-fabric-react!IComboBoxOptionClassNames:interface'
+    name: IComboBoxOptionClassNames
   - uid: 'office-ui-fabric-react!IComboBoxOptionStyles:interface'
     name: IComboBoxOptionStyles
   - uid: 'office-ui-fabric-react!IComboBoxProps:interface'
@@ -2145,12 +2562,18 @@ references:
     name: IDocumentCardTitleStyles
   - uid: 'office-ui-fabric-react!IDragDropContext:interface'
     name: IDragDropContext
+  - uid: 'office-ui-fabric-react!IDragDropEvent:interface'
+    name: IDragDropEvent
   - uid: 'office-ui-fabric-react!IDragDropEvents:interface'
     name: IDragDropEvents
   - uid: 'office-ui-fabric-react!IDragDropHelper:interface'
     name: IDragDropHelper
+  - uid: 'office-ui-fabric-react!IDragDropHelperParams:interface'
+    name: IDragDropHelperParams
   - uid: 'office-ui-fabric-react!IDragDropOptions:interface'
     name: IDragDropOptions
+  - uid: 'office-ui-fabric-react!IDragDropTarget:interface'
+    name: IDragDropTarget
   - uid: 'office-ui-fabric-react!IDragOptions:interface'
     name: IDragOptions
   - uid: 'office-ui-fabric-react!IDropdown:interface'
@@ -2175,6 +2598,10 @@ references:
     name: IEditingSelectedPeopleItemStyles
   - uid: 'office-ui-fabric-react!IEditingSelectedPeopleItemStylesProps:interface'
     name: IEditingSelectedPeopleItemStylesProps
+  - uid: 'office-ui-fabric-react!IElementPosition:interface'
+    name: IElementPosition
+  - uid: 'office-ui-fabric-react!IElementPositionInfo:interface'
+    name: IElementPositionInfo
   - uid: 'office-ui-fabric-react!IEntityRect:interface'
     name: IEntityRect
   - uid: 'office-ui-fabric-react!IExpandingCard:interface'
@@ -2303,6 +2730,12 @@ references:
     name: IImageStyles
   - uid: 'office-ui-fabric-react!IInputProps:interface'
     name: IInputProps
+  - uid: 'office-ui-fabric-react!IKeytipConfig:interface'
+    name: IKeytipConfig
+  - uid: 'office-ui-fabric-react!IKeytipConfigItem:interface'
+    name: IKeytipConfigItem
+  - uid: 'office-ui-fabric-react!IKeytipConfigMap:interface'
+    name: IKeytipConfigMap
   - uid: 'office-ui-fabric-react!IKeytipLayer:interface'
     name: IKeytipLayer
   - uid: 'office-ui-fabric-react!IKeytipLayerProps:interface'
@@ -2319,6 +2752,8 @@ references:
     name: IKeytipStyleProps
   - uid: 'office-ui-fabric-react!IKeytipStyles:interface'
     name: IKeytipStyles
+  - uid: 'office-ui-fabric-react!IKeytipTransitionKey:interface'
+    name: IKeytipTransitionKey
   - uid: 'office-ui-fabric-react!ILabel:interface'
     name: ILabel
   - uid: 'office-ui-fabric-react!ILabelProps:interface'
@@ -2519,12 +2954,20 @@ references:
     name: IPopupProps
   - uid: 'office-ui-fabric-react!IPopupState:interface'
     name: IPopupState
+  - uid: 'office-ui-fabric-react!IPosition:interface'
+    name: IPosition
+  - uid: 'office-ui-fabric-react!IPositionDirectionalHintData:interface'
+    name: IPositionDirectionalHintData
+  - uid: 'office-ui-fabric-react!IPositionedData:interface'
+    name: IPositionedData
   - uid: 'office-ui-fabric-react!IPositioningContainer:interface'
     name: IPositioningContainer
   - uid: 'office-ui-fabric-react!IPositioningContainerProps:interface'
     name: IPositioningContainerProps
   - uid: 'office-ui-fabric-react!IPositioningContainerState:interface'
     name: IPositioningContainerState
+  - uid: 'office-ui-fabric-react!IPositionProps:interface'
+    name: IPositionProps
   - uid: 'office-ui-fabric-react!IProgressIndicatorProps:interface'
     name: IProgressIndicatorProps
   - uid: 'office-ui-fabric-react!IProgressIndicatorStyleProps:interface'
@@ -2541,6 +2984,8 @@ references:
     name: IRatingStyleProps
   - uid: 'office-ui-fabric-react!IRatingStyles:interface'
     name: IRatingStyles
+  - uid: 'office-ui-fabric-react!IRelativePositions:interface'
+    name: IRelativePositions
   - uid: 'office-ui-fabric-react!IRenderGroupHeaderProps:interface'
     name: IRenderGroupHeaderProps
   - uid: 'office-ui-fabric-react!IResizeGroup:interface'
@@ -2653,6 +3098,8 @@ references:
     name: ISliderStyles
   - uid: 'office-ui-fabric-react!ISpinButton:interface'
     name: ISpinButton
+  - uid: 'office-ui-fabric-react!ISpinButtonClassNames:interface'
+    name: ISpinButtonClassNames
   - uid: 'office-ui-fabric-react!ISpinButtonProps:interface'
     name: ISpinButtonProps
   - uid: 'office-ui-fabric-react!ISpinButtonState:interface'
@@ -2667,6 +3114,8 @@ references:
     name: ISpinnerStyleProps
   - uid: 'office-ui-fabric-react!ISpinnerStyles:interface'
     name: ISpinnerStyles
+  - uid: 'office-ui-fabric-react!ISplitButtonClassNames:interface'
+    name: ISplitButtonClassNames
   - uid: 'office-ui-fabric-react!IStackItemProps:interface'
     name: IStackItemProps
   - uid: 'office-ui-fabric-react!IStackItemSlots:interface'
@@ -2789,6 +3238,8 @@ references:
     name: ITooltipStyleProps
   - uid: 'office-ui-fabric-react!ITooltipStyles:interface'
     name: ITooltipStyles
+  - uid: 'office-ui-fabric-react!IUniqueKeytip:interface'
+    name: IUniqueKeytip
   - uid: 'office-ui-fabric-react!IVerticalDividerClassNames:interface'
     name: IVerticalDividerClassNames
   - uid: 'office-ui-fabric-react!IVerticalDividerProps:interface'
@@ -2797,6 +3248,8 @@ references:
     name: IVerticalDividerStyles
   - uid: 'office-ui-fabric-react!IViewport:interface'
     name: IViewport
+  - uid: 'office-ui-fabric-react!IWindowWithSegments:interface'
+    name: IWindowWithSegments
   - uid: 'office-ui-fabric-react!IWithViewportProps:interface'
     name: IWithViewportProps
   - uid: 'office-ui-fabric-react!KeyboardSpinDirection:enum'
@@ -2805,6 +3258,8 @@ references:
     name: Keytip
   - uid: 'office-ui-fabric-react!KeytipLayerBase:class'
     name: KeytipLayerBase
+  - uid: 'office-ui-fabric-react!KeytipManager:class'
+    name: KeytipManager
   - uid: 'office-ui-fabric-react!LabelBase:class'
     name: LabelBase
   - uid: 'office-ui-fabric-react!LayerBase:class'
@@ -2865,6 +3320,8 @@ references:
     name: PlainCardBase
   - uid: 'office-ui-fabric-react!Popup:class'
     name: Popup
+  - uid: 'office-ui-fabric-react!Position:enum'
+    name: Position
   - uid: 'office-ui-fabric-react!PositioningContainer:class'
     name: PositioningContainer
   - uid: 'office-ui-fabric-react!PrimaryButton:class'
@@ -2875,6 +3332,8 @@ references:
     name: RatingBase
   - uid: 'office-ui-fabric-react!RatingSize:enum'
     name: RatingSize
+  - uid: 'office-ui-fabric-react!RectangleEdge:enum'
+    name: RectangleEdge
   - uid: 'office-ui-fabric-react!ResizeGroupBase:class'
     name: ResizeGroupBase
   - uid: 'office-ui-fabric-react!ResizeGroupDirection:enum'
