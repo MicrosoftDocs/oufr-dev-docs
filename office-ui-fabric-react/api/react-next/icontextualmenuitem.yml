@@ -29,6 +29,7 @@ items:
       - '@fluentui/react-next!IContextualMenuItem#onClick:member'
       - '@fluentui/react-next!IContextualMenuItem#onMouseDown:member'
       - '@fluentui/react-next!IContextualMenuItem#onRender:member'
+      - '@fluentui/react-next!IContextualMenuItem#onRenderContent:member'
       - '@fluentui/react-next!IContextualMenuItem#onRenderIcon:member'
       - '@fluentui/react-next!IContextualMenuItem#primaryDisabled:member'
       - '@fluentui/react-next!IContextualMenuItem#rel:member'
@@ -330,6 +331,20 @@ items:
       return:
         type:
           - '(item: any, dismissMenu: (ev?: any, dismissAll?: boolean) => void) => React.ReactNode'
+  - uid: '@fluentui/react-next!IContextualMenuItem#onRenderContent:member'
+    summary: Method to customize sub-components rendering of this menu item.
+    name: onRenderContent
+    fullName: onRenderContent
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        onRenderContent?: (props: IContextualMenuItemProps, defaultRenders: IContextualMenuItemRenderFunctions) =>
+        React.ReactNode;
+      return:
+        type:
+          - '(props: IContextualMenuItemProps, defaultRenders: IContextualMenuItemRenderFunctions) => React.ReactNode'
   - uid: '@fluentui/react-next!IContextualMenuItem#onRenderIcon:member'
     summary: Custom render function for the menu item icon
     name: onRenderIcon
