@@ -9,7 +9,7 @@ items:
     extends:
       - 'React.Component<IDropdownInternalProps, IDropdownState> '
     implements:
-      - 'office-ui-fabric-react!IDropdown:interface'
+      - 'IDropdown '
     package: office-ui-fabric-react!
     children:
       - 'office-ui-fabric-react!DropdownBase:constructor(1)'
@@ -34,7 +34,7 @@ items:
         - id: props
           description: ''
           type:
-            - 'office-ui-fabric-react!IDropdownProps:interface'
+            - IDropdownProps
   - uid: 'office-ui-fabric-react!DropdownBase#componentDidUpdate:member(1)'
     name: 'componentDidUpdate(prevProps, prevState)'
     fullName: 'componentDidUpdate(prevProps, prevState)'
@@ -51,7 +51,7 @@ items:
         - id: prevProps
           description: ''
           type:
-            - 'office-ui-fabric-react!IDropdownProps:interface'
+            - IDropdownProps
         - id: prevState
           description: ''
           type:
@@ -163,4 +163,4 @@ items:
         - id: newProps
           description: ''
           type:
-            - 'office-ui-fabric-react!IDropdownProps:interface'
+            - IDropdownProps
