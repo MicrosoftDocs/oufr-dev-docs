@@ -8,10 +8,56 @@ items:
       - typeScript
     type: interface
     extends:
+      - '@fluentui/react-compose!ComponentProps:interface'
       - 'React.HTMLAttributes<HTMLDivElement> '
     package: '@fluentui/react-theme-provider!'
     children:
+      - '@fluentui/react-theme-provider!ThemeProviderProps#ref:member'
+      - '@fluentui/react-theme-provider!ThemeProviderProps#renderer:member'
+      - '@fluentui/react-theme-provider!ThemeProviderProps#targetWindow:member'
       - '@fluentui/react-theme-provider!ThemeProviderProps#theme:member'
+  - uid: '@fluentui/react-theme-provider!ThemeProviderProps#ref:member'
+    summary: Optional ref to the root element.
+    name: ref
+    fullName: ref
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'ref?: React.Ref<HTMLElement>;'
+      return:
+        type:
+          - React.Ref<HTMLElement>
+  - uid: '@fluentui/react-theme-provider!ThemeProviderProps#renderer:member'
+    summary: >-
+      Optional interface for registering dynamic styles. Defaults to using `merge-styles`<!-- -->. Use this to opt into
+      a particular rendering implementation, such as `emotion`<!-- -->, `styled-components`<!-- -->, or `jss`<!-- -->.
+      Note: performance will differ between all renders. Please measure your scenarios before using an alternative
+      implementation.
+    name: renderer
+    fullName: renderer
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'renderer?: StyleRenderer;'
+      return:
+        type:
+          - '@fluentui/react-theme-provider!StyleRenderer:interface'
+  - uid: '@fluentui/react-theme-provider!ThemeProviderProps#targetWindow:member'
+    summary: >-
+      Defines the target window to render into. Defaults to the global window. Providing `null` will opt out of style
+      rendering, which is used for SSR.
+    name: targetWindow
+    fullName: targetWindow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'targetWindow?: Window | null;'
+      return:
+        type:
+          - Window | null
   - uid: '@fluentui/react-theme-provider!ThemeProviderProps#theme:member'
     summary: Defines the theme provided by the user.
     name: theme

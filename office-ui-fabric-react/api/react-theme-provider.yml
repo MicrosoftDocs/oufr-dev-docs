@@ -10,6 +10,7 @@ items:
       - '@fluentui/react-theme-provider!makeStyles:function(1)'
       - '@fluentui/react-theme-provider!StyleOptions:interface'
       - '@fluentui/react-theme-provider!StyleProps:interface'
+      - '@fluentui/react-theme-provider!StyleRenderer:interface'
       - '@fluentui/react-theme-provider!ThemeProviderProps:interface'
   - uid: '@fluentui/react-theme-provider!makeStyles:function(1)'
     summary: 'Registers a css object, optionally as a function of the theme.'
@@ -22,13 +23,13 @@ items:
       content: |-
         export declare function makeStyles<TStyleSet extends {
             [key: string]: IStyle;
-        }>(styleOrFunction: TStyleSet | ((theme: ITheme) => TStyleSet)): () => {
+        }>(styleOrFunction: TStyleSet | ((theme: Theme) => TStyleSet)): (theme?: Theme, renderer?: StyleRenderer) => {
             [key in keyof TStyleSet]: string;
         };
       return:
         type:
           - |-
-            () => {
+            (theme?: Theme, renderer?: StyleRenderer) => {
                 [key in keyof TStyleSet]: string;
             }
         description: ''
@@ -36,7 +37,7 @@ items:
         - id: styleOrFunction
           description: 'Either a css javascript object, or a function which takes in `ITheme` and returns a css javascript object.'
           type:
-            - 'TStyleSet | ((theme: ITheme) => TStyleSet)'
+            - 'TStyleSet | ((theme: Theme) => TStyleSet)'
       typeParameters:
         - id: TStyleSet
           type:
@@ -49,5 +50,7 @@ references:
     name: StyleOptions
   - uid: '@fluentui/react-theme-provider!StyleProps:interface'
     name: StyleProps
+  - uid: '@fluentui/react-theme-provider!StyleRenderer:interface'
+    name: StyleRenderer
   - uid: '@fluentui/react-theme-provider!ThemeProviderProps:interface'
     name: ThemeProviderProps

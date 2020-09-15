@@ -338,10 +338,7 @@ items:
       - typeScript
     type: function
     syntax:
-      content: |-
-        export declare function keyframes(timeline: {
-            [key: string]: {};
-        }): string;
+      content: 'export declare function keyframes(timeline: IKeyframes): string;'
       return:
         type:
           - string
@@ -350,10 +347,7 @@ items:
         - id: timeline
           description: ''
           type:
-            - |-
-              {
-                  [key: string]: {};
-              }
+            - IKeyframes
   - uid: '@uifabric/merge-styles!mergeCss:function(1)'
     summary: >-
       Concatenation helper, which can merge class names together. Skips over falsey values. Accepts a set of options
