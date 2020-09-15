@@ -1,0 +1,83 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-theme-provider!StyleRenderer:interface'
+    name: StyleRenderer
+    fullName: StyleRenderer
+    langs:
+      - typeScript
+    type: interface
+    package: '@fluentui/react-theme-provider!'
+    children:
+      - '@fluentui/react-theme-provider!StyleRenderer#getId:member'
+      - '@fluentui/react-theme-provider!StyleRenderer#renderFontFace:member'
+      - '@fluentui/react-theme-provider!StyleRenderer#renderKeyframes:member'
+      - '@fluentui/react-theme-provider!StyleRenderer#renderStyles:member'
+      - '@fluentui/react-theme-provider!StyleRenderer#reset:member'
+  - uid: '@fluentui/react-theme-provider!StyleRenderer#getId:member'
+    summary: >-
+      Returns a unique id for the renderer; used as part of the cache key when determining if new styles need to be
+      rendered.
+    name: getId
+    fullName: getId
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'getId: () => number;'
+      return:
+        type:
+          - () => number
+  - uid: '@fluentui/react-theme-provider!StyleRenderer#renderFontFace:member'
+    summary: Renders fontfaces.
+    name: renderFontFace
+    fullName: renderFontFace
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'renderFontFace: (fontFace: FontFace, options: StyleRendererOptions) => void;'
+      return:
+        type:
+          - '(fontFace: FontFace, options: StyleRendererOptions) => void'
+  - uid: '@fluentui/react-theme-provider!StyleRenderer#renderKeyframes:member'
+    summary: Renders keyframes and returns the keyframe name.
+    name: renderKeyframes
+    fullName: renderKeyframes
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'renderKeyframes: (keyframes: KeyFrames, options: StyleRendererOptions) => string;'
+      return:
+        type:
+          - '(keyframes: KeyFrames, options: StyleRendererOptions) => string'
+  - uid: '@fluentui/react-theme-provider!StyleRenderer#renderStyles:member'
+    summary: Renders a stylesheet and returns the map of key to class name.
+    name: renderStyles
+    fullName: renderStyles
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: |-
+        renderStyles: <TRuleSet>(ruleSet: TRuleSet, options: StyleRendererOptions) => {
+                [key in keyof TRuleSet]: string;
+            };
+      return:
+        type:
+          - |-
+            <TRuleSet>(ruleSet: TRuleSet, options: StyleRendererOptions) => {
+                    [key in keyof TRuleSet]: string;
+                }
+  - uid: '@fluentui/react-theme-provider!StyleRenderer#reset:member'
+    summary: Expected to initialize or re-initialize the renderer. Primarily for testing purposes.
+    name: reset
+    fullName: reset
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'reset: () => void;'
+      return:
+        type:
+          - () => void
