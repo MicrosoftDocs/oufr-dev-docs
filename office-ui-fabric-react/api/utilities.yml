@@ -30,15 +30,12 @@ items:
       - '@uifabric/utilities!DelayedRender:class'
       - '@uifabric/utilities!disableBodyScroll:function(1)'
       - '@uifabric/utilities!doesElementContainFocus:function(1)'
-      - '@uifabric/utilities!elementContains:function(1)'
-      - '@uifabric/utilities!elementContainsAttribute:function(1)'
       - '@uifabric/utilities!enableBodyScroll:function(1)'
       - '@uifabric/utilities!EventGroup:class'
       - '@uifabric/utilities!extendComponent:function(1)'
       - '@uifabric/utilities!FabricPerformance:class'
       - '@uifabric/utilities!filteredAssign:function(1)'
       - '@uifabric/utilities!find:function(1)'
-      - '@uifabric/utilities!findElementRecursive:function(1)'
       - '@uifabric/utilities!findIndex:function(1)'
       - '@uifabric/utilities!findScrollableParent:function(1)'
       - '@uifabric/utilities!fitContentToBounds:function(1)'
@@ -46,7 +43,6 @@ items:
       - '@uifabric/utilities!focusAsync:function(1)'
       - '@uifabric/utilities!focusFirstChild:function(1)'
       - '@uifabric/utilities!format:function(1)'
-      - '@uifabric/utilities!getChildren:function(1)'
       - '@uifabric/utilities!getDistanceBetweenPoints:function(1)'
       - '@uifabric/utilities!getDocument:function(1)'
       - '@uifabric/utilities!getElementIndexPath:function(1)'
@@ -61,7 +57,6 @@ items:
       - '@uifabric/utilities!getNativeElementProps:function(1)'
       - '@uifabric/utilities!getNativeProps:function(1)'
       - '@uifabric/utilities!getNextElement:function(1)'
-      - '@uifabric/utilities!getParent:function(1)'
       - '@uifabric/utilities!getPreviousElement:function(1)'
       - '@uifabric/utilities!getPropsWithDefaults:function(1)'
       - '@uifabric/utilities!getRect:function(1)'
@@ -69,7 +64,6 @@ items:
       - '@uifabric/utilities!getRTL:function(1)'
       - '@uifabric/utilities!getRTLSafeKeyCode:function(1)'
       - '@uifabric/utilities!getScrollbarWidth:function(1)'
-      - '@uifabric/utilities!getVirtualParent:function(1)'
       - '@uifabric/utilities!getWindow:function(1)'
       - '@uifabric/utilities!GlobalSettings:class'
       - '@uifabric/utilities!hasHorizontalOverflow:function(1)'
@@ -106,8 +100,6 @@ items:
       - '@uifabric/utilities!isElementVisible:function(1)'
       - '@uifabric/utilities!ISize:interface'
       - '@uifabric/utilities!isMac:function(1)'
-      - '@uifabric/utilities!isVirtualElement:function(1)'
-      - '@uifabric/utilities!IVirtualElement:interface'
       - '@uifabric/utilities!IWarnControlledUsageParams:interface'
       - '@uifabric/utilities!mapEnumByName:function(1)'
       - '@uifabric/utilities!memoize:function(1)'
@@ -122,7 +114,6 @@ items:
       - '@uifabric/utilities!omit:function(1)'
       - '@uifabric/utilities!on:function(1)'
       - '@uifabric/utilities!Point:interface'
-      - '@uifabric/utilities!portalContainsElement:function(1)'
       - '@uifabric/utilities!precisionRound:function(1)'
       - '@uifabric/utilities!raiseClick:function(1)'
       - '@uifabric/utilities!Rectangle:class'
@@ -137,10 +128,8 @@ items:
       - '@uifabric/utilities!setBaseUrl:function(1)'
       - '@uifabric/utilities!setFocusVisibility:function(1)'
       - '@uifabric/utilities!setLanguage:function(1)'
-      - '@uifabric/utilities!setPortalAttribute:function(1)'
       - '@uifabric/utilities!setRTL:function(1)'
       - '@uifabric/utilities!setSSR:function(1)'
-      - '@uifabric/utilities!setVirtualParent:function(1)'
       - '@uifabric/utilities!setWarningCallback:function(1)'
       - '@uifabric/utilities!shallowCompare:function(1)'
       - '@uifabric/utilities!shouldWrapFocus:function(1)'
@@ -567,58 +556,6 @@ items:
           description: ''
           type:
             - HTMLElement
-  - uid: '@uifabric/utilities!elementContains:function(1)'
-    summary: >-
-      Determines whether or not a parent element contains a given child element. If `allowVirtualParents` is true, this
-      method may return `true` if the child has the parent in its virtual element hierarchy.
-    name: 'elementContains(parent, child, allowVirtualParents)'
-    fullName: 'elementContains(parent, child, allowVirtualParents)'
-    langs:
-      - typeScript
-    type: function
-    syntax:
-      content: >-
-        export declare function elementContains(parent: HTMLElement | null, child: HTMLElement | null,
-        allowVirtualParents?: boolean): boolean;
-      return:
-        type:
-          - boolean
-        description: ''
-      parameters:
-        - id: parent
-          description: ''
-          type:
-            - HTMLElement | null
-        - id: child
-          description: ''
-          type:
-            - HTMLElement | null
-        - id: allowVirtualParents
-          description: ''
-          type:
-            - boolean
-  - uid: '@uifabric/utilities!elementContainsAttribute:function(1)'
-    summary: 'Determines if an element, or any of its ancestors, contain the given attribute'
-    name: 'elementContainsAttribute(element, attribute)'
-    fullName: 'elementContainsAttribute(element, attribute)'
-    langs:
-      - typeScript
-    type: function
-    syntax:
-      content: 'export declare function elementContainsAttribute(element: HTMLElement, attribute: string): string | null;'
-      return:
-        type:
-          - string | null
-        description: the value of the first instance found
-      parameters:
-        - id: element
-          description: element to start searching at
-          type:
-            - HTMLElement
-        - id: attribute
-          description: the attribute to search for
-          type:
-            - string
   - uid: '@uifabric/utilities!enableBodyScroll:function(1)'
     summary: Enables the body scrolling.
     name: enableBodyScroll()
@@ -720,30 +657,6 @@ items:
             - '(item: T, index: number) => boolean'
       typeParameters:
         - id: T
-  - uid: '@uifabric/utilities!findElementRecursive:function(1)'
-    summary: Finds the first parent element where the matchFunction returns true
-    name: 'findElementRecursive(element, matchFunction)'
-    fullName: 'findElementRecursive(element, matchFunction)'
-    langs:
-      - typeScript
-    type: function
-    syntax:
-      content: >-
-        export declare function findElementRecursive(element: HTMLElement | null, matchFunction: (element: HTMLElement)
-        => boolean): HTMLElement | null;
-      return:
-        type:
-          - HTMLElement | null
-        description: the matched element or null no match was found
-      parameters:
-        - id: element
-          description: element to start searching at
-          type:
-            - HTMLElement | null
-        - id: matchFunction
-          description: the function that determines if the element is a match
-          type:
-            - '(element: HTMLElement) => boolean'
   - uid: '@uifabric/utilities!findIndex:function(1)'
     summary: 'Helper to find the index of an item within an array, using a callback to determine the match.'
     name: 'findIndex(array, cb, fromIndex)'
@@ -908,30 +821,6 @@ items:
           description: ''
           type:
             - 'any[]'
-  - uid: '@uifabric/utilities!getChildren:function(1)'
-    summary: >-
-      Gets the elements which are child elements of the given element. If `allowVirtualChildren` is `true`<!-- -->, this
-      method enumerates virtual child elements after the original children.
-    name: 'getChildren(parent, allowVirtualChildren)'
-    fullName: 'getChildren(parent, allowVirtualChildren)'
-    langs:
-      - typeScript
-    type: function
-    syntax:
-      content: 'export declare function getChildren(parent: HTMLElement, allowVirtualChildren?: boolean): HTMLElement[];'
-      return:
-        type:
-          - 'HTMLElement[]'
-        description: ''
-      parameters:
-        - id: parent
-          description: The element to get the children of.
-          type:
-            - HTMLElement
-        - id: allowVirtualChildren
-          description: true if the method should enumerate virtual child elements.
-          type:
-            - boolean
   - uid: '@uifabric/utilities!getDistanceBetweenPoints:function(1)'
     summary: Determines the distance between two points.
     name: 'getDistanceBetweenPoints(point1, point2)'
@@ -1337,30 +1226,6 @@ items:
           description: ''
           type:
             - boolean
-  - uid: '@uifabric/utilities!getParent:function(1)'
-    summary: >-
-      Gets the element which is the parent of a given element. If `allowVirtuaParents` is `true`<!-- -->, this method
-      prefers the virtual parent over real DOM parent when present.
-    name: 'getParent(child, allowVirtualParents)'
-    fullName: 'getParent(child, allowVirtualParents)'
-    langs:
-      - typeScript
-    type: function
-    syntax:
-      content: 'export declare function getParent(child: HTMLElement, allowVirtualParents?: boolean): HTMLElement | null;'
-      return:
-        type:
-          - HTMLElement | null
-        description: ''
-      parameters:
-        - id: child
-          description: ''
-          type:
-            - HTMLElement
-        - id: allowVirtualParents
-          description: ''
-          type:
-            - boolean
   - uid: '@uifabric/utilities!getPreviousElement:function(1)'
     summary: 'Traverse to find the previous element. If tabbable is true, the element must have tabIndex != -1.'
     name: >-
@@ -1546,24 +1411,6 @@ items:
         type:
           - number
         description: ''
-  - uid: '@uifabric/utilities!getVirtualParent:function(1)'
-    summary: 'Gets the virtual parent given the child element, if it exists.'
-    name: getVirtualParent(child)
-    fullName: getVirtualParent(child)
-    langs:
-      - typeScript
-    type: function
-    syntax:
-      content: 'export declare function getVirtualParent(child: HTMLElement): HTMLElement | undefined;'
-      return:
-        type:
-          - HTMLElement | undefined
-        description: ''
-      parameters:
-        - id: child
-          description: ''
-          type:
-            - HTMLElement
   - uid: '@uifabric/utilities!getWindow:function(1)'
     summary: >-
       Helper to get the window object. The helper will make sure to use a cached variable of "window", to avoid overhead
@@ -1894,24 +1741,6 @@ items:
           description: Reset the cached result value (mainly for testing).
           type:
             - boolean
-  - uid: '@uifabric/utilities!isVirtualElement:function(1)'
-    summary: Determines whether or not an element has the virtual hierarchy extension.
-    name: isVirtualElement(element)
-    fullName: isVirtualElement(element)
-    langs:
-      - typeScript
-    type: function
-    syntax:
-      content: 'export declare function isVirtualElement(element: HTMLElement | IVirtualElement): element is IVirtualElement;'
-      return:
-        type:
-          - element is IVirtualElement
-        description: ''
-      parameters:
-        - id: element
-          description: ''
-          type:
-            - HTMLElement | IVirtualElement
   - uid: '@uifabric/utilities!mapEnumByName:function(1)'
     summary: >-
       Takes an enum and iterates over each value of the enum (as a string), running the callback on each, returning a
@@ -2253,33 +2082,6 @@ items:
           description: ''
           type:
             - boolean
-  - uid: '@uifabric/utilities!portalContainsElement:function(1)'
-    summary: >-
-      Determine whether a target is within a portal from perspective of root or optional parent. This function only
-      works against portal components that use the setPortalAttribute function. If both parent and child are within the
-      same portal this function will return false.
-    name: 'portalContainsElement(target, parent)'
-    fullName: 'portalContainsElement(target, parent)'
-    langs:
-      - typeScript
-    type: function
-    syntax:
-      content: 'export declare function portalContainsElement(target: HTMLElement, parent?: HTMLElement): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-      parameters:
-        - id: target
-          description: Element to query portal containment status of.
-          type:
-            - HTMLElement
-        - id: parent
-          description: >-
-            Optional parent perspective. Search for containing portal stops at parent (or root if parent is undefined or
-            invalid.)
-          type:
-            - HTMLElement
   - uid: '@uifabric/utilities!precisionRound:function(1)'
     summary: Rounds a number to a certain level of precision. Accepts negative precision.
     name: 'precisionRound(value, precision, base)'
@@ -2492,24 +2294,6 @@ items:
           description: ''
           type:
             - boolean
-  - uid: '@uifabric/utilities!setPortalAttribute:function(1)'
-    summary: Identify element as a portal by setting an attribute.
-    name: setPortalAttribute(element)
-    fullName: setPortalAttribute(element)
-    langs:
-      - typeScript
-    type: function
-    syntax:
-      content: 'export declare function setPortalAttribute(element: HTMLElement): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: element
-          description: Element to mark as a portal.
-          type:
-            - HTMLElement
   - uid: '@uifabric/utilities!setRTL:function(1)'
     summary: Sets the rtl state of the page (by adjusting the dir attribute of the html element.)
     name: 'setRTL(isRTL, persistSetting)'
@@ -2550,28 +2334,6 @@ items:
           description: ''
           type:
             - boolean
-  - uid: '@uifabric/utilities!setVirtualParent:function(1)'
-    summary: Sets the virtual parent of an element. Pass `undefined` as the `parent` to clear the virtual parent.
-    name: 'setVirtualParent(child, parent)'
-    fullName: 'setVirtualParent(child, parent)'
-    langs:
-      - typeScript
-    type: function
-    syntax:
-      content: 'export declare function setVirtualParent(child: HTMLElement, parent: HTMLElement): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: child
-          description: ''
-          type:
-            - HTMLElement
-        - id: parent
-          description: ''
-          type:
-            - HTMLElement
   - uid: '@uifabric/utilities!setWarningCallback:function(1)'
     summary: Configures the warning callback. Passing in undefined will reset it to use the default console.warn function.
     name: setWarningCallback(warningCallback)
@@ -3065,8 +2827,6 @@ references:
     name: ISelectionOptions
   - uid: '@uifabric/utilities!ISize:interface'
     name: ISize
-  - uid: '@uifabric/utilities!IVirtualElement:interface'
-    name: IVirtualElement
   - uid: '@uifabric/utilities!IWarnControlledUsageParams:interface'
     name: IWarnControlledUsageParams
   - uid: '@uifabric/utilities!Point:interface'

@@ -1,0 +1,250 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/dom-utilities!'
+    name: '@fluentui/dom-utilities'
+    fullName: '@fluentui/dom-utilities'
+    langs:
+      - typeScript
+    type: package
+    children:
+      - '@fluentui/dom-utilities!elementContains:function(1)'
+      - '@fluentui/dom-utilities!elementContainsAttribute:function(1)'
+      - '@fluentui/dom-utilities!findElementRecursive:function(1)'
+      - '@fluentui/dom-utilities!getChildren:function(1)'
+      - '@fluentui/dom-utilities!getParent:function(1)'
+      - '@fluentui/dom-utilities!getVirtualParent:function(1)'
+      - '@fluentui/dom-utilities!isVirtualElement:function(1)'
+      - '@fluentui/dom-utilities!IVirtualElement:interface'
+      - '@fluentui/dom-utilities!portalContainsElement:function(1)'
+      - '@fluentui/dom-utilities!setPortalAttribute:function(1)'
+      - '@fluentui/dom-utilities!setVirtualParent:function(1)'
+  - uid: '@fluentui/dom-utilities!elementContains:function(1)'
+    summary: >-
+      Determines whether or not a parent element contains a given child element. If `allowVirtualParents` is true, this
+      method may return `true` if the child has the parent in its virtual element hierarchy.
+    name: 'elementContains(parent, child, allowVirtualParents)'
+    fullName: 'elementContains(parent, child, allowVirtualParents)'
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: >-
+        export declare function elementContains(parent: HTMLElement | null, child: HTMLElement | null,
+        allowVirtualParents?: boolean): boolean;
+      return:
+        type:
+          - boolean
+        description: ''
+      parameters:
+        - id: parent
+          description: ''
+          type:
+            - HTMLElement | null
+        - id: child
+          description: ''
+          type:
+            - HTMLElement | null
+        - id: allowVirtualParents
+          description: ''
+          type:
+            - boolean
+  - uid: '@fluentui/dom-utilities!elementContainsAttribute:function(1)'
+    summary: 'Determines if an element, or any of its ancestors, contain the given attribute'
+    name: 'elementContainsAttribute(element, attribute)'
+    fullName: 'elementContainsAttribute(element, attribute)'
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export declare function elementContainsAttribute(element: HTMLElement, attribute: string): string | null;'
+      return:
+        type:
+          - string | null
+        description: the value of the first instance found
+      parameters:
+        - id: element
+          description: element to start searching at
+          type:
+            - HTMLElement
+        - id: attribute
+          description: the attribute to search for
+          type:
+            - string
+  - uid: '@fluentui/dom-utilities!findElementRecursive:function(1)'
+    summary: Finds the first parent element where the matchFunction returns true
+    name: 'findElementRecursive(element, matchFunction)'
+    fullName: 'findElementRecursive(element, matchFunction)'
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: >-
+        export declare function findElementRecursive(element: HTMLElement | null, matchFunction: (element: HTMLElement)
+        => boolean): HTMLElement | null;
+      return:
+        type:
+          - HTMLElement | null
+        description: the matched element or null no match was found
+      parameters:
+        - id: element
+          description: element to start searching at
+          type:
+            - HTMLElement | null
+        - id: matchFunction
+          description: the function that determines if the element is a match
+          type:
+            - '(element: HTMLElement) => boolean'
+  - uid: '@fluentui/dom-utilities!getChildren:function(1)'
+    summary: >-
+      Gets the elements which are child elements of the given element. If `allowVirtualChildren` is `true`<!-- -->, this
+      method enumerates virtual child elements after the original children.
+    name: 'getChildren(parent, allowVirtualChildren)'
+    fullName: 'getChildren(parent, allowVirtualChildren)'
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export declare function getChildren(parent: HTMLElement, allowVirtualChildren?: boolean): HTMLElement[];'
+      return:
+        type:
+          - 'HTMLElement[]'
+        description: ''
+      parameters:
+        - id: parent
+          description: The element to get the children of.
+          type:
+            - HTMLElement
+        - id: allowVirtualChildren
+          description: true if the method should enumerate virtual child elements.
+          type:
+            - boolean
+  - uid: '@fluentui/dom-utilities!getParent:function(1)'
+    summary: >-
+      Gets the element which is the parent of a given element. If `allowVirtuaParents` is `true`<!-- -->, this method
+      prefers the virtual parent over real DOM parent when present.
+    name: 'getParent(child, allowVirtualParents)'
+    fullName: 'getParent(child, allowVirtualParents)'
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export declare function getParent(child: HTMLElement, allowVirtualParents?: boolean): HTMLElement | null;'
+      return:
+        type:
+          - HTMLElement | null
+        description: ''
+      parameters:
+        - id: child
+          description: ''
+          type:
+            - HTMLElement
+        - id: allowVirtualParents
+          description: ''
+          type:
+            - boolean
+  - uid: '@fluentui/dom-utilities!getVirtualParent:function(1)'
+    summary: 'Gets the virtual parent given the child element, if it exists.'
+    name: getVirtualParent(child)
+    fullName: getVirtualParent(child)
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export declare function getVirtualParent(child: HTMLElement): HTMLElement | undefined;'
+      return:
+        type:
+          - HTMLElement | undefined
+        description: ''
+      parameters:
+        - id: child
+          description: ''
+          type:
+            - HTMLElement
+  - uid: '@fluentui/dom-utilities!isVirtualElement:function(1)'
+    summary: Determines whether or not an element has the virtual hierarchy extension.
+    name: isVirtualElement(element)
+    fullName: isVirtualElement(element)
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export declare function isVirtualElement(element: HTMLElement | IVirtualElement): element is IVirtualElement;'
+      return:
+        type:
+          - element is IVirtualElement
+        description: ''
+      parameters:
+        - id: element
+          description: ''
+          type:
+            - HTMLElement | IVirtualElement
+  - uid: '@fluentui/dom-utilities!portalContainsElement:function(1)'
+    summary: >-
+      Determine whether a target is within a portal from perspective of root or optional parent. This function only
+      works against portal components that use the setPortalAttribute function. If both parent and child are within the
+      same portal this function will return false.
+    name: 'portalContainsElement(target, parent)'
+    fullName: 'portalContainsElement(target, parent)'
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export declare function portalContainsElement(target: HTMLElement, parent?: HTMLElement): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+      parameters:
+        - id: target
+          description: Element to query portal containment status of.
+          type:
+            - HTMLElement
+        - id: parent
+          description: >-
+            Optional parent perspective. Search for containing portal stops at parent (or root if parent is undefined or
+            invalid.)
+          type:
+            - HTMLElement
+  - uid: '@fluentui/dom-utilities!setPortalAttribute:function(1)'
+    summary: Identify element as a portal by setting an attribute.
+    name: setPortalAttribute(element)
+    fullName: setPortalAttribute(element)
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export declare function setPortalAttribute(element: HTMLElement): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: element
+          description: Element to mark as a portal.
+          type:
+            - HTMLElement
+  - uid: '@fluentui/dom-utilities!setVirtualParent:function(1)'
+    summary: Sets the virtual parent of an element. Pass `undefined` as the `parent` to clear the virtual parent.
+    name: 'setVirtualParent(child, parent)'
+    fullName: 'setVirtualParent(child, parent)'
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export declare function setVirtualParent(child: HTMLElement, parent: HTMLElement | null): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: child
+          description: ''
+          type:
+            - HTMLElement
+        - id: parent
+          description: ''
+          type:
+            - HTMLElement | null
+references:
+  - uid: '@fluentui/dom-utilities!IVirtualElement:interface'
+    name: IVirtualElement

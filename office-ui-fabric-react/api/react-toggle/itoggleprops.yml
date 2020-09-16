@@ -8,10 +8,12 @@ items:
       - typeScript
     type: interface
     extends:
-      - 'React.HTMLAttributes<HTMLElement> '
+      - React.HTMLAttributes<HTMLElement>
+      - 'React.RefAttributes<HTMLElement> '
     package: '@fluentui/react-toggle!'
     children:
       - '@fluentui/react-toggle!IToggleProps#ariaLabel:member'
+      - '@fluentui/react-toggle!IToggleProps#as:member'
       - '@fluentui/react-toggle!IToggleProps#checked:member'
       - '@fluentui/react-toggle!IToggleProps#componentRef:member'
       - '@fluentui/react-toggle!IToggleProps#defaultChecked:member'
@@ -40,6 +42,18 @@ items:
       return:
         type:
           - string
+  - uid: '@fluentui/react-toggle!IToggleProps#as:member'
+    summary: Render the root element as another type.
+    name: as
+    fullName: as
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'as?: IComponentAs<React.HTMLAttributes<HTMLElement>>;'
+      return:
+        type:
+          - IComponentAs<React.HTMLAttributes<HTMLElement>>
   - uid: '@fluentui/react-toggle!IToggleProps#checked:member'
     summary: >-
       Checked state of the toggle. If you are maintaining state yourself, use this property. Otherwise use
