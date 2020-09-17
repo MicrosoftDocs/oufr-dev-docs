@@ -12,6 +12,7 @@ items:
       - '@fluentui/react-theme-provider!StyleProps:interface'
       - '@fluentui/react-theme-provider!StyleRenderer:interface'
       - '@fluentui/react-theme-provider!ThemeProviderProps:interface'
+      - '@fluentui/react-theme-provider!useThemeProviderClasses:function(1)'
   - uid: '@fluentui/react-theme-provider!makeStyles:function(1)'
     summary: 'Registers a css object, optionally as a function of the theme.'
     name: makeStyles(styleOrFunction)
@@ -45,6 +46,23 @@ items:
               {
                   [key: string]: IStyle;
               }
+  - uid: '@fluentui/react-theme-provider!useThemeProviderClasses:function(1)'
+    name: useThemeProviderClasses(state)
+    fullName: useThemeProviderClasses(state)
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export declare function useThemeProviderClasses(state: ThemeProviderState): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: state
+          description: ''
+          type:
+            - ThemeProviderState
 references:
   - uid: '@fluentui/react-theme-provider!StyleOptions:interface'
     name: StyleOptions

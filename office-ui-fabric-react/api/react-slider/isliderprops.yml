@@ -7,7 +7,8 @@ items:
       - typeScript
     type: interface
     extends:
-      - 'Omit<React.HTMLAttributes<HTMLDivElement>, ''defaultValue'' | ''onChange''> '
+      - 'Omit<React.HTMLAttributes<HTMLDivElement>, ''defaultValue'' | ''onChange''>'
+      - 'React.RefAttributes<HTMLDivElement> '
     package: '@fluentui/react-slider!'
     children:
       - '@fluentui/react-slider!ISliderProps#"aria-label":member'

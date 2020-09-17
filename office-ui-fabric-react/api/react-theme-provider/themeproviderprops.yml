@@ -12,10 +12,27 @@ items:
       - 'React.HTMLAttributes<HTMLDivElement> '
     package: '@fluentui/react-theme-provider!'
     children:
+      - '@fluentui/react-theme-provider!ThemeProviderProps#applyTo:member'
       - '@fluentui/react-theme-provider!ThemeProviderProps#ref:member'
       - '@fluentui/react-theme-provider!ThemeProviderProps#renderer:member'
-      - '@fluentui/react-theme-provider!ThemeProviderProps#targetWindow:member'
       - '@fluentui/react-theme-provider!ThemeProviderProps#theme:member'
+  - uid: '@fluentui/react-theme-provider!ThemeProviderProps#applyTo:member'
+    summary: >-
+      Defines where body-related theme is applied to. Setting to 'element' will apply body styles to the root element of
+      ThemeProvider. Setting to 'body' will apply body styles to document body. Setting to 'none' will not apply body
+      styles to either element or body.
+
+       'element';
+    name: applyTo
+    fullName: applyTo
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'applyTo?: ''element'' | ''body'' | ''none'';'
+      return:
+        type:
+          - '''element'' | ''body'' | ''none'''
   - uid: '@fluentui/react-theme-provider!ThemeProviderProps#ref:member'
     summary: Optional ref to the root element.
     name: ref
@@ -44,20 +61,6 @@ items:
       return:
         type:
           - '@fluentui/react-theme-provider!StyleRenderer:interface'
-  - uid: '@fluentui/react-theme-provider!ThemeProviderProps#targetWindow:member'
-    summary: >-
-      Defines the target window to render into. Defaults to the global window. Providing `null` will opt out of style
-      rendering, which is used for SSR.
-    name: targetWindow
-    fullName: targetWindow
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'targetWindow?: Window | null;'
-      return:
-        type:
-          - Window | null
   - uid: '@fluentui/react-theme-provider!ThemeProviderProps#theme:member'
     summary: Defines the theme provided by the user.
     name: theme
