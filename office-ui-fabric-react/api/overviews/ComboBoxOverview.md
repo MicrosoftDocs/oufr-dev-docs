@@ -5,7 +5,7 @@ ms.author: vibraga
 ---
 
 ## Overview
-A combo box (&#x60;ComboBox&#x60;) combines a text field and a drop-down menu, giving people a way to select an option from a list or enter their own choice.
+A combo box (&#x60;ComboBox&#x60;) combines a text field and a dropdown giving people a way to select an option from a list or enter their own choice.
 
 
 
