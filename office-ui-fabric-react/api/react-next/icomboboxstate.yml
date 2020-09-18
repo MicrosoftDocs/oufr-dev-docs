@@ -8,26 +8,11 @@ items:
     type: interface
     package: '@fluentui/react-next!'
     children:
-      - '@fluentui/react-next!IComboBoxState#currentOptions:member'
       - '@fluentui/react-next!IComboBoxState#currentPendingValue:member'
       - '@fluentui/react-next!IComboBoxState#currentPendingValueValidIndex:member'
       - '@fluentui/react-next!IComboBoxState#currentPendingValueValidIndexOnHover:member'
       - '@fluentui/react-next!IComboBoxState#focusState:member'
       - '@fluentui/react-next!IComboBoxState#isOpen:member'
-      - '@fluentui/react-next!IComboBoxState#selectedIndices:member'
-      - '@fluentui/react-next!IComboBoxState#suggestedDisplayValue:member'
-  - uid: '@fluentui/react-next!IComboBoxState#currentOptions:member'
-    summary: The options currently available for the callout
-    name: currentOptions
-    fullName: currentOptions
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'currentOptions: IComboBoxOption[];'
-      return:
-        type:
-          - 'IComboBoxOption[]'
   - uid: '@fluentui/react-next!IComboBoxState#currentPendingValue:member'
     summary: 'When taking input, this will store the actual text that is being entered'
     name: currentPendingValue
@@ -88,27 +73,3 @@ items:
       return:
         type:
           - boolean
-  - uid: '@fluentui/react-next!IComboBoxState#selectedIndices:member'
-    summary: The currently selected indices
-    name: selectedIndices
-    fullName: selectedIndices
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'selectedIndices?: number[];'
-      return:
-        type:
-          - 'number[]'
-  - uid: '@fluentui/react-next!IComboBoxState#suggestedDisplayValue:member'
-    summary: This value is used for the autocomplete hint value
-    name: suggestedDisplayValue
-    fullName: suggestedDisplayValue
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'suggestedDisplayValue?: string;'
-      return:
-        type:
-          - string
