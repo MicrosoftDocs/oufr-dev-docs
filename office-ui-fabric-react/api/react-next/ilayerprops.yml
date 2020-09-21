@@ -1,0 +1,156 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-next!ILayerProps:interface'
+    name: ILayerProps
+    fullName: ILayerProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - React.HTMLAttributes<HTMLDivElement>
+      - 'React.RefAttributes<HTMLDivElement> '
+    package: '@fluentui/react-next!'
+    children:
+      - '@fluentui/react-next!ILayerProps#className:member'
+      - '@fluentui/react-next!ILayerProps#componentRef:member'
+      - '@fluentui/react-next!ILayerProps#eventBubblingEnabled:member'
+      - '@fluentui/react-next!ILayerProps#hostId:member'
+      - '@fluentui/react-next!ILayerProps#insertFirst:member'
+      - '@fluentui/react-next!ILayerProps#onLayerDidMount:member'
+      - '@fluentui/react-next!ILayerProps#onLayerMounted:member'
+      - '@fluentui/react-next!ILayerProps#onLayerWillUnmount:member'
+      - '@fluentui/react-next!ILayerProps#styles:member'
+      - '@fluentui/react-next!ILayerProps#theme:member'
+  - uid: '@fluentui/react-next!ILayerProps#className:member'
+    summary: Additional css class to apply to the Layer
+    name: className
+    fullName: className
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'className?: string;'
+      return:
+        type:
+          - string
+  - uid: '@fluentui/react-next!ILayerProps#componentRef:member'
+    summary: >-
+      Optional callback to access the ILayer interface. Use this instead of ref for accessing the public methods and
+      properties of the component.
+    name: componentRef
+    fullName: componentRef
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'componentRef?: IRefObject<ILayer>;'
+      return:
+        type:
+          - IRefObject<ILayer>
+  - uid: '@fluentui/react-next!ILayerProps#eventBubblingEnabled:member'
+    summary: >-
+      When enabled, Layer allows events to bubble up from Layer content. Traditionally Layer has not had this behavior.
+      This prop preserves backwards compatibility by default while allowing users to opt in to the new event bubbling
+      functionality.
+    name: eventBubblingEnabled
+    fullName: eventBubblingEnabled
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'eventBubblingEnabled?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: '@fluentui/react-next!ILayerProps#hostId:member'
+    summary: >-
+      The optional id property provided on a LayerHost that this Layer should render within. The LayerHost does not need
+      to be immediately available but once has been rendered, and if missing, we'll avoid trying to render the Layer
+      content until the host is available. If an id is not provided, we will render the Layer content in a fixed
+      position element rendered at the end of the document.
+    name: hostId
+    fullName: hostId
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'hostId?: string;'
+      return:
+        type:
+          - string
+  - uid: '@fluentui/react-next!ILayerProps#insertFirst:member'
+    summary: >-
+      Whether the layer should be added as the first child of the host. If true, the layer will be inserted as the first
+      child of the host By default, the layer will be appended at the end to the host
+    name: insertFirst
+    fullName: insertFirst
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'insertFirst?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: '@fluentui/react-next!ILayerProps#onLayerDidMount:member'
+    summary: Callback for when the layer is mounted.
+    name: onLayerDidMount
+    fullName: onLayerDidMount
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onLayerDidMount?: () => void;'
+      return:
+        type:
+          - () => void
+  - uid: '@fluentui/react-next!ILayerProps#onLayerMounted:member'
+    summary: Callback for when the layer is mounted.
+    deprecated:
+      content: Use onLayerDidMount.
+    name: onLayerMounted
+    fullName: onLayerMounted
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onLayerMounted?: () => void;'
+      return:
+        type:
+          - () => void
+  - uid: '@fluentui/react-next!ILayerProps#onLayerWillUnmount:member'
+    summary: Callback for when the layer is unmounted.
+    name: onLayerWillUnmount
+    fullName: onLayerWillUnmount
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onLayerWillUnmount?: () => void;'
+      return:
+        type:
+          - () => void
+  - uid: '@fluentui/react-next!ILayerProps#styles:member'
+    summary: Call to provide customized styling that will layer on top of the variant rules
+    name: styles
+    fullName: styles
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'styles?: IStyleFunctionOrObject<ILayerStyleProps, ILayerStyles>;'
+      return:
+        type:
+          - 'IStyleFunctionOrObject<ILayerStyleProps, ILayerStyles>'
+  - uid: '@fluentui/react-next!ILayerProps#theme:member'
+    summary: Theme provided by HOC.
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type:
+          - ITheme
