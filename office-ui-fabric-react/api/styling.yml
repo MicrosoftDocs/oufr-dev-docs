@@ -8,7 +8,6 @@ items:
     type: package
     children:
       - '@uifabric/styling!buildClassMap:function(1)'
-      - '@uifabric/styling!createFontStyles:function(1)'
       - '@uifabric/styling!createTheme:function(1)'
       - '@uifabric/styling!focusClear:function(1)'
       - '@uifabric/styling!getEdgeChromiumNoHighContrastAdjustSelector:function(1)'
@@ -30,7 +29,6 @@ items:
       - '@uifabric/styling!IIconSubset:interface'
       - '@uifabric/styling!IIconSubsetRecord:interface'
       - '@uifabric/styling!loadTheme:function(1)'
-      - '@uifabric/styling!registerDefaultFontFaces:function(1)'
       - '@uifabric/styling!registerIconAlias:function(1)'
       - '@uifabric/styling!registerIcons:function(1)'
       - '@uifabric/styling!registerOnThemeChangeCallback:function(1)'
@@ -65,23 +63,6 @@ items:
         - id: T
           type:
             - Object
-  - uid: '@uifabric/styling!createFontStyles:function(1)'
-    name: createFontStyles(localeCode)
-    fullName: createFontStyles(localeCode)
-    langs:
-      - typeScript
-    type: function
-    syntax:
-      content: 'export declare function createFontStyles(localeCode: string | null): IFontStyles;'
-      return:
-        type:
-          - IFontStyles
-        description: ''
-      parameters:
-        - id: localeCode
-          description: ''
-          type:
-            - string | null
   - uid: '@uifabric/styling!createTheme:function(1)'
     summary: Creates a custom theme definition which can be used with the Customizer.
     name: 'createTheme(theme, depComments)'
@@ -93,7 +74,7 @@ items:
       content: 'export declare function createTheme(theme: IPartialTheme, depComments?: boolean): ITheme;'
       return:
         type:
-          - ITheme
+          - '@fluentui/theme!ITheme:interface'
         description: ''
       parameters:
         - id: theme
@@ -158,7 +139,7 @@ items:
         - id: theme
           description: The theme object to use.
           type:
-            - ITheme
+            - '@fluentui/theme!ITheme:interface'
         - id: color
           description: >-
             The background color to fade out to. Accepts only keys of ISemanticColors or IPalette. Defaults to
@@ -196,7 +177,7 @@ items:
         - id: theme
           description: The theme object to use.
           type:
-            - ITheme
+            - '@fluentui/theme!ITheme:interface'
         - id: inset
           description: The number of pixels to inset the border (default 0)
           type:
@@ -226,7 +207,7 @@ items:
         - id: theme
           description: The theme object to use.
           type:
-            - ITheme
+            - '@fluentui/theme!ITheme:interface'
         - id: options
           description: Options to customize the focus border.
           type:
@@ -253,7 +234,7 @@ items:
         - id: theme
           description: The theme object to use.
           type:
-            - ITheme
+            - '@fluentui/theme!ITheme:interface'
         - id: inset
           description: The number of pixels to inset the border.
           type:
@@ -307,7 +288,7 @@ items:
         - id: theme
           description: The theme to check the flag on
           type:
-            - ITheme
+            - '@fluentui/theme!ITheme:interface'
         - id: disableGlobalClassNames
           description: Optional. Explicitly opt in/out of disabling global classnames. Defaults to false.
           type:
@@ -404,7 +385,7 @@ items:
       content: 'export declare function getTheme(depComments?: boolean): ITheme;'
       return:
         type:
-          - ITheme
+          - '@fluentui/theme!ITheme:interface'
         description: ''
       parameters:
         - id: depComments
@@ -422,7 +403,7 @@ items:
       content: 'export declare function loadTheme(theme: IPartialTheme, depComments?: boolean): ITheme;'
       return:
         type:
-          - ITheme
+          - '@fluentui/theme!ITheme:interface'
         description: ''
       parameters:
         - id: theme
@@ -433,23 +414,6 @@ items:
           description: Whether to include deprecated tags as comments for deprecated slots.
           type:
             - boolean
-  - uid: '@uifabric/styling!registerDefaultFontFaces:function(1)'
-    name: registerDefaultFontFaces(baseUrl)
-    fullName: registerDefaultFontFaces(baseUrl)
-    langs:
-      - typeScript
-    type: function
-    syntax:
-      content: 'export declare function registerDefaultFontFaces(baseUrl: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: baseUrl
-          description: ''
-          type:
-            - string
   - uid: '@uifabric/styling!registerIconAlias:function(1)'
     summary: Remaps one icon name to another.
     name: 'registerIconAlias(iconName, mappedToName)'

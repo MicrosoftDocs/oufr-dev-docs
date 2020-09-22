@@ -11,7 +11,6 @@ items:
       - 'React.RefAttributes<HTMLDivElement> '
     package: '@fluentui/react-slider!'
     children:
-      - '@fluentui/react-slider!ISliderProps#"aria-label":member'
       - '@fluentui/react-slider!ISliderProps#ariaLabel:member'
       - '@fluentui/react-slider!ISliderProps#ariaValueText:member'
       - '@fluentui/react-slider!ISliderProps#buttonProps:member'
@@ -33,22 +32,8 @@ items:
       - '@fluentui/react-slider!ISliderProps#value:member'
       - '@fluentui/react-slider!ISliderProps#valueFormat:member'
       - '@fluentui/react-slider!ISliderProps#vertical:member'
-  - uid: '@fluentui/react-slider!ISliderProps#"aria-label":member'
-    summary: A description of the Slider for the benefit of screen readers.
-    name: '"aria-label"'
-    fullName: '"aria-label"'
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: '''aria-label''?: string;'
-      return:
-        type:
-          - string
   - uid: '@fluentui/react-slider!ISliderProps#ariaLabel:member'
     summary: A description of the Slider for the benefit of screen readers.
-    deprecated:
-      content: use aria-label instead.
     name: ariaLabel
     fullName: ariaLabel
     langs:
@@ -268,7 +253,7 @@ items:
       content: 'theme?: ITheme;'
       return:
         type:
-          - ITheme
+          - '@fluentui/theme!ITheme:interface'
   - uid: '@fluentui/react-slider!ISliderProps#value:member'
     summary: >-
       The initial value of the Slider. Use this if you intend to pass in a new value as a result of onChange events.
