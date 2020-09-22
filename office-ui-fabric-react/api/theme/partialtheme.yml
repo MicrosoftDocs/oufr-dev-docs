@@ -1,0 +1,49 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/theme!PartialTheme:interface'
+    summary: 'A partial theme, provided by the customer. The internal `createTheme` helper will fill in the rest.'
+    name: PartialTheme
+    fullName: PartialTheme
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'IPartialTheme '
+    package: '@fluentui/theme!'
+    children:
+      - '@fluentui/theme!PartialTheme#components:member'
+      - '@fluentui/theme!PartialTheme#stylesheets:member'
+      - '@fluentui/theme!PartialTheme#tokens:member'
+  - uid: '@fluentui/theme!PartialTheme#components:member'
+    name: components
+    fullName: components
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'components?: ComponentStyles;'
+      return:
+        type:
+          - '@fluentui/theme!ComponentStyles:interface'
+  - uid: '@fluentui/theme!PartialTheme#stylesheets:member'
+    name: stylesheets
+    fullName: stylesheets
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'stylesheets?: string[];'
+      return:
+        type:
+          - 'string[]'
+  - uid: '@fluentui/theme!PartialTheme#tokens:member'
+    name: tokens
+    fullName: tokens
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tokens?: RecursivePartial<Tokens>;'
+      return:
+        type:
+          - RecursivePartial<Tokens>

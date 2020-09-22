@@ -9,7 +9,7 @@ items:
     extends:
       - 'React.Component<IAutofillProps, IAutofillState> '
     implements:
-      - 'office-ui-fabric-react!IAutofill:interface'
+      - 'IAutofill '
     package: office-ui-fabric-react!
     children:
       - 'office-ui-fabric-react!Autofill:constructor(1)'
@@ -39,7 +39,7 @@ items:
         - id: props
           description: ''
           type:
-            - 'office-ui-fabric-react!IAutofillProps:interface'
+            - IAutofillProps
   - uid: 'office-ui-fabric-react!Autofill#clear:member(1)'
     name: clear()
     fullName: clear()
@@ -188,7 +188,7 @@ items:
         - id: nextProps
           description: ''
           type:
-            - 'office-ui-fabric-react!IAutofillProps:interface'
+            - IAutofillProps
   - uid: 'office-ui-fabric-react!Autofill#value:member'
     name: value
     fullName: value

@@ -11,11 +11,24 @@ items:
       - 'React.RefAttributes<HTMLElement> '
     package: '@fluentui/react-link!'
     children:
+      - '@fluentui/react-link!ILinkProps#as:member'
       - '@fluentui/react-link!ILinkProps#componentRef:member'
       - '@fluentui/react-link!ILinkProps#disabled:member'
       - '@fluentui/react-link!ILinkProps#keytipProps:member'
       - '@fluentui/react-link!ILinkProps#styles:member'
       - '@fluentui/react-link!ILinkProps#theme:member'
+  - uid: '@fluentui/react-link!ILinkProps#as:member'
+    summary: A component type or primitive that is rendered as the type of the root element.
+    name: as
+    fullName: as
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'as?: React.ElementType;'
+      return:
+        type:
+          - React.ElementType
   - uid: '@fluentui/react-link!ILinkProps#componentRef:member'
     summary: >-
       Optional callback to access the ILink interface. Use this instead of ref for accessing the public methods and
@@ -79,4 +92,4 @@ items:
       content: 'theme?: ITheme;'
       return:
         type:
-          - ITheme
+          - '@fluentui/theme!ITheme:interface'
