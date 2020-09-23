@@ -39,7 +39,6 @@ items:
       - '@fluentui/react-next!BaseExtendedPicker#selectedItemsList:member'
       - '@fluentui/react-next!BaseExtendedPicker#selectedItemsListProps:member'
       - '@fluentui/react-next!BaseExtendedPicker#selection:member'
-      - '@fluentui/react-next!BaseExtendedPicker#UNSAFE_componentWillReceiveProps:member(1)'
   - uid: '@fluentui/react-next!BaseExtendedPicker#_onSelectedItemsChanged:member'
     name: _onSelectedItemsChanged
     fullName: _onSelectedItemsChanged
@@ -130,7 +129,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'protected floatingPickerProps: IBaseFloatingPickerProps<T>;'
+      content: 'protected readonly floatingPickerProps: IBaseFloatingPickerProps<T>;'
       return:
         type:
           - IBaseFloatingPickerProps<T>
@@ -332,7 +331,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'protected selectedItemsListProps: IBaseSelectedItemsListProps<T>;'
+      content: 'protected readonly selectedItemsListProps: IBaseSelectedItemsListProps<T>;'
       return:
         type:
           - IBaseSelectedItemsListProps<T>
@@ -347,20 +346,3 @@ items:
       return:
         type:
           - '@uifabric/utilities!Selection:class'
-  - uid: '@fluentui/react-next!BaseExtendedPicker#UNSAFE_componentWillReceiveProps:member(1)'
-    name: UNSAFE_componentWillReceiveProps(newProps)
-    fullName: UNSAFE_componentWillReceiveProps(newProps)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'UNSAFE_componentWillReceiveProps(newProps: P): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: newProps
-          description: ''
-          type:
-            - P

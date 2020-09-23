@@ -37,7 +37,6 @@ items:
       - '@fluentui/react-next!SuggestionsControl#selectLastItem:member(1)'
       - '@fluentui/react-next!SuggestionsControl#selectNextItem:member(1)'
       - '@fluentui/react-next!SuggestionsControl#selectPreviousItem:member(1)'
-      - '@fluentui/react-next!SuggestionsControl#UNSAFE_componentWillReceiveProps:member(1)'
   - uid: '@fluentui/react-next!SuggestionsControl#_forceResolveButton:member'
     name: _forceResolveButton
     fullName: _forceResolveButton
@@ -121,17 +120,22 @@ items:
           - void
         description: ''
   - uid: '@fluentui/react-next!SuggestionsControl#componentDidUpdate:member(1)'
-    name: componentDidUpdate()
-    fullName: componentDidUpdate()
+    name: componentDidUpdate(oldProps)
+    fullName: componentDidUpdate(oldProps)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'componentDidUpdate(): void;'
+      content: 'componentDidUpdate(oldProps: ISuggestionsControlProps<T>): void;'
       return:
         type:
           - void
         description: ''
+      parameters:
+        - id: oldProps
+          description: ''
+          type:
+            - ISuggestionsControlProps<T>
   - uid: '@fluentui/react-next!SuggestionsControl#componentWillUnmount:member(1)'
     name: componentWillUnmount()
     fullName: componentWillUnmount()
@@ -379,20 +383,3 @@ items:
           description: ''
           type:
             - SuggestionItemType
-  - uid: '@fluentui/react-next!SuggestionsControl#UNSAFE_componentWillReceiveProps:member(1)'
-    name: UNSAFE_componentWillReceiveProps(newProps)
-    fullName: UNSAFE_componentWillReceiveProps(newProps)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'UNSAFE_componentWillReceiveProps(newProps: ISuggestionsControlProps<T>): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: newProps
-          description: ''
-          type:
-            - ISuggestionsControlProps<T>

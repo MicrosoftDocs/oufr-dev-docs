@@ -15,7 +15,9 @@ items:
       - '@fluentui/react-next!BaseSelectedItemsList:constructor(1)'
       - '@fluentui/react-next!BaseSelectedItemsList#addItems:member'
       - '@fluentui/react-next!BaseSelectedItemsList#componentDidMount:member(1)'
+      - '@fluentui/react-next!BaseSelectedItemsList#componentDidUpdate:member(1)'
       - '@fluentui/react-next!BaseSelectedItemsList#copyItems:member(1)'
+      - '@fluentui/react-next!BaseSelectedItemsList.getDerivedStateFromProps:member(1)'
       - '@fluentui/react-next!BaseSelectedItemsList#hasSelectedItems:member(1)'
       - '@fluentui/react-next!BaseSelectedItemsList#highlightedItems:member(1)'
       - '@fluentui/react-next!BaseSelectedItemsList#items:member'
@@ -32,8 +34,6 @@ items:
       - '@fluentui/react-next!BaseSelectedItemsList#replaceItem:member'
       - '@fluentui/react-next!BaseSelectedItemsList#root:member'
       - '@fluentui/react-next!BaseSelectedItemsList#selection:member'
-      - '@fluentui/react-next!BaseSelectedItemsList#UNSAFE_componentWillReceiveProps:member(1)'
-      - '@fluentui/react-next!BaseSelectedItemsList#UNSAFE_componentWillUpdate:member(1)'
       - '@fluentui/react-next!BaseSelectedItemsList#unselectAll:member(1)'
       - '@fluentui/react-next!BaseSelectedItemsList#updateItems:member(1)'
   - uid: '@fluentui/react-next!BaseSelectedItemsList:constructor(1)'
@@ -73,6 +73,27 @@ items:
         type:
           - void
         description: ''
+  - uid: '@fluentui/react-next!BaseSelectedItemsList#componentDidUpdate:member(1)'
+    name: 'componentDidUpdate(oldProps, oldState)'
+    fullName: 'componentDidUpdate(oldProps, oldState)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'componentDidUpdate(oldProps: P, oldState: IBaseSelectedItemsListState<IObjectWithKey>): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: oldProps
+          description: ''
+          type:
+            - P
+        - id: oldState
+          description: ''
+          type:
+            - IBaseSelectedItemsListState<IObjectWithKey>
   - uid: '@fluentui/react-next!BaseSelectedItemsList#copyItems:member(1)'
     name: copyItems(items)
     fullName: copyItems(items)
@@ -90,6 +111,29 @@ items:
           description: ''
           type:
             - 'T[]'
+  - uid: '@fluentui/react-next!BaseSelectedItemsList.getDerivedStateFromProps:member(1)'
+    name: getDerivedStateFromProps(newProps)
+    fullName: getDerivedStateFromProps(newProps)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        static getDerivedStateFromProps(newProps: IBaseSelectedItemsListProps<any>): {
+                items: any[];
+            } | null;
+      return:
+        type:
+          - |-
+            {
+                    items: any[];
+                } | null
+        description: ''
+      parameters:
+        - id: newProps
+          description: ''
+          type:
+            - IBaseSelectedItemsListProps<any>
   - uid: '@fluentui/react-next!BaseSelectedItemsList#hasSelectedItems:member(1)'
     name: hasSelectedItems()
     fullName: hasSelectedItems()
@@ -272,48 +316,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'protected selection: Selection;'
+      content: 'protected readonly selection: Selection;'
       return:
         type:
           - '@uifabric/utilities!Selection:class'
-  - uid: '@fluentui/react-next!BaseSelectedItemsList#UNSAFE_componentWillReceiveProps:member(1)'
-    name: UNSAFE_componentWillReceiveProps(newProps)
-    fullName: UNSAFE_componentWillReceiveProps(newProps)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'UNSAFE_componentWillReceiveProps(newProps: P): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: newProps
-          description: ''
-          type:
-            - P
-  - uid: '@fluentui/react-next!BaseSelectedItemsList#UNSAFE_componentWillUpdate:member(1)'
-    name: 'UNSAFE_componentWillUpdate(newProps, newState)'
-    fullName: 'UNSAFE_componentWillUpdate(newProps, newState)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'UNSAFE_componentWillUpdate(newProps: P, newState: IBaseSelectedItemsListState<IObjectWithKey>): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: newProps
-          description: ''
-          type:
-            - P
-        - id: newState
-          description: ''
-          type:
-            - IBaseSelectedItemsListState<IObjectWithKey>
   - uid: '@fluentui/react-next!BaseSelectedItemsList#unselectAll:member(1)'
     name: unselectAll()
     fullName: unselectAll()
