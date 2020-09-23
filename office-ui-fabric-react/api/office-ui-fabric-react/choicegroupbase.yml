@@ -9,7 +9,7 @@ items:
     extends:
       - 'React.Component<IChoiceGroupProps, IChoiceGroupState> '
     implements:
-      - 'office-ui-fabric-react!IChoiceGroup:interface'
+      - 'IChoiceGroup '
     package: office-ui-fabric-react!
     children:
       - 'office-ui-fabric-react!ChoiceGroupBase:constructor(1)'
@@ -30,7 +30,7 @@ items:
         - id: props
           description: ''
           type:
-            - 'office-ui-fabric-react!IChoiceGroupProps:interface'
+            - IChoiceGroupProps
   - uid: 'office-ui-fabric-react!ChoiceGroupBase#checkedOption:member'
     summary: Gets the current checked option.
     name: checkedOption
@@ -59,7 +59,7 @@ items:
         - id: prevProps
           description: ''
           type:
-            - 'office-ui-fabric-react!IChoiceGroupProps:interface'
+            - IChoiceGroupProps
         - id: prevState
           description: ''
           type:
