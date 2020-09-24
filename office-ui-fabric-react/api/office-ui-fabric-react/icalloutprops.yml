@@ -38,11 +38,13 @@ items:
       - 'office-ui-fabric-react!ICalloutProps#onPositioned:member'
       - 'office-ui-fabric-react!ICalloutProps#onRestoreFocus:member'
       - 'office-ui-fabric-react!ICalloutProps#onScroll:member'
+      - 'office-ui-fabric-react!ICalloutProps#preventDismissOnEvent:member'
       - 'office-ui-fabric-react!ICalloutProps#preventDismissOnLostFocus:member'
       - 'office-ui-fabric-react!ICalloutProps#preventDismissOnResize:member'
       - 'office-ui-fabric-react!ICalloutProps#preventDismissOnScroll:member'
       - 'office-ui-fabric-react!ICalloutProps#role:member'
       - 'office-ui-fabric-react!ICalloutProps#setInitialFocus:member'
+      - 'office-ui-fabric-react!ICalloutProps#shouldDismissOnWindowFocus:member'
       - 'office-ui-fabric-react!ICalloutProps#shouldRestoreFocus:member'
       - 'office-ui-fabric-react!ICalloutProps#shouldUpdateWhenHidden:member'
       - 'office-ui-fabric-react!ICalloutProps#style:member'
@@ -415,8 +417,25 @@ items:
       return:
         type:
           - () => void
+  - uid: 'office-ui-fabric-react!ICalloutProps#preventDismissOnEvent:member'
+    summary: >-
+      If defined, then takes priority over preventDismissOnLostFocus, preventDismissOnResize, and
+      preventDismissOnScroll. If it returns true, then callout will not dismiss for this event. If not defined or
+      returns false, callout can dismiss for this event.
+    name: preventDismissOnEvent
+    fullName: preventDismissOnEvent
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'preventDismissOnEvent?: (ev: Event | React.FocusEvent | React.KeyboardEvent | React.MouseEvent) => boolean;'
+      return:
+        type:
+          - '(ev: Event | React.FocusEvent | React.KeyboardEvent | React.MouseEvent) => boolean'
   - uid: 'office-ui-fabric-react!ICalloutProps#preventDismissOnLostFocus:member'
     summary: If true then the callout will not dismiss when it loses focus
+    deprecated:
+      content: use preventDismissOnEvent callback instead
     name: preventDismissOnLostFocus
     fullName: preventDismissOnLostFocus
     langs:
@@ -429,6 +448,8 @@ items:
           - boolean
   - uid: 'office-ui-fabric-react!ICalloutProps#preventDismissOnResize:member'
     summary: If true then the callout will not dismiss on resize
+    deprecated:
+      content: use preventDismissOnEvent callback instead
     name: preventDismissOnResize
     fullName: preventDismissOnResize
     langs:
@@ -441,6 +462,8 @@ items:
           - boolean
   - uid: 'office-ui-fabric-react!ICalloutProps#preventDismissOnScroll:member'
     summary: If true then the callout will not dismiss on scroll
+    deprecated:
+      content: use preventDismissOnEvent callback instead
     name: preventDismissOnScroll
     fullName: preventDismissOnScroll
     langs:
@@ -475,6 +498,18 @@ items:
     type: property
     syntax:
       content: 'setInitialFocus?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'office-ui-fabric-react!ICalloutProps#shouldDismissOnWindowFocus:member'
+    summary: If true then the callout will dismiss when the window gets focus
+    name: shouldDismissOnWindowFocus
+    fullName: shouldDismissOnWindowFocus
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'shouldDismissOnWindowFocus?: boolean;'
       return:
         type:
           - boolean
