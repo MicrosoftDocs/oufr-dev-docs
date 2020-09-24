@@ -60,7 +60,7 @@ items:
         type:
           - boolean
   - uid: '@fluentui/react-next!IComboBoxProps#ariaDescribedBy:member'
-    summary: Optional prop to add a string id that can be referenced inside the aria-describedby attribute
+    summary: Optional prop to add a string id that can be referenced inside the aria-describedby attribute.
     name: ariaDescribedBy
     fullName: ariaDescribedBy
     langs:
@@ -73,8 +73,8 @@ items:
           - string
   - uid: '@fluentui/react-next!IComboBoxProps#autoComplete:member'
     summary: >-
-      Whether the ComboBox auto completes. As the user is inputing text, it will be suggested potential matches from the
-      list of options. If the combo box is expanded, this will also scroll to the suggested option, and give it a
+      Whether the ComboBox auto completes. As the user is entering text, it will be suggested potential matches from the
+      list of options. If the ComboBox is expanded, this will also scroll to the suggested option, and give it a
       selected style.
     name: autoComplete
     fullName: autoComplete
@@ -87,7 +87,7 @@ items:
         type:
           - '''on'' | ''off'''
   - uid: '@fluentui/react-next!IComboBoxProps#autofill:member'
-    summary: The AutofillProps to be passed into the Autofill component inside combobox
+    summary: The AutofillProps to be passed into the Autofill component inside ComboBox.
     name: autofill
     fullName: autofill
     langs:
@@ -99,7 +99,7 @@ items:
         type:
           - IAutofillProps
   - uid: '@fluentui/react-next!IComboBoxProps#buttonIconProps:member'
-    summary: The IconProps to use for the button aspect of the combobox
+    summary: The IconProps to use for the button aspect of the ComboBox.
     name: buttonIconProps
     fullName: buttonIconProps
     langs:
@@ -151,7 +151,7 @@ items:
         type:
           - IRefObject<IComboBox>
   - uid: '@fluentui/react-next!IComboBoxProps#dropdownMaxWidth:member'
-    summary: Custom max width for dropdown
+    summary: Custom max width for dropdown.
     name: dropdownMaxWidth
     fullName: dropdownMaxWidth
     langs:
@@ -193,7 +193,7 @@ items:
             (theme: ITheme, isOpen: boolean, disabled: boolean, required: boolean, focused: boolean, allowFreeForm:
             boolean, hasErrorMessage: boolean, className?: string) => IComboBoxClassNames
   - uid: '@fluentui/react-next!IComboBoxProps#iconButtonProps:member'
-    summary: Optional iconButton props on combo box
+    summary: Optional iconButton props on ComboBox.
     name: iconButtonProps
     fullName: iconButtonProps
     langs:
@@ -220,7 +220,7 @@ items:
         type:
           - boolean
   - uid: '@fluentui/react-next!IComboBoxProps#keytipProps:member'
-    summary: Optional keytip for this combo box
+    summary: Optional keytip for this ComboBox.
     name: keytipProps
     fullName: keytipProps
     langs:
@@ -232,7 +232,7 @@ items:
         type:
           - 'office-ui-fabric-react!IKeytipProps:interface'
   - uid: '@fluentui/react-next!IComboBoxProps#multiSelectDelimiter:member'
-    summary: 'When multiple items are selected, this will be used to separate values in the combobox input.'
+    summary: 'When multiple items are selected, this will be used to separate values in the ComboBox input.'
     name: multiSelectDelimiter
     fullName: multiSelectDelimiter
     langs:
@@ -245,7 +245,7 @@ items:
           - string
   - uid: '@fluentui/react-next!IComboBoxProps#onChange:member'
     summary: >-
-      Callback issued when either: 1) the selected option changes 2) a manually edited value is submitted. In this case
+      Callback issued when either: 1) The selected option changes. 2) A manually edited value is submitted. In this case
       there may not be a matched option if allowFreeform is also true (and hence only value would be true, the other
       parameter would be null in this case)
     name: onChange
@@ -273,7 +273,7 @@ items:
         type:
           - '(event: React.FormEvent<IComboBox>, option?: IComboBoxOption, index?: number) => void'
   - uid: '@fluentui/react-next!IComboBoxProps#onMenuDismiss:member'
-    summary: Function that gets invoked before the menu gets dismissed
+    summary: Function that gets invoked before the menu gets dismissed.
     name: onMenuDismiss
     fullName: onMenuDismiss
     langs:
@@ -285,7 +285,7 @@ items:
         type:
           - () => void
   - uid: '@fluentui/react-next!IComboBoxProps#onMenuDismissed:member'
-    summary: Function that gets invoked when the ComboBox menu is dismissed
+    summary: Function that gets invoked when the ComboBox menu is dismissed.
     name: onMenuDismissed
     fullName: onMenuDismissed
     langs:
@@ -297,7 +297,7 @@ items:
         type:
           - () => void
   - uid: '@fluentui/react-next!IComboBoxProps#onMenuOpen:member'
-    summary: Function that gets invoked when the ComboBox menu is launched
+    summary: Function that gets invoked when the ComboBox menu is launched.
     name: onMenuOpen
     fullName: onMenuOpen
     langs:
@@ -362,7 +362,7 @@ items:
   - uid: '@fluentui/react-next!IComboBoxProps#onResolveOptions:member'
     summary: >-
       Callback issued when the options should be resolved, if they have been updated or if they need to be passed in the
-      first time
+      first time.
     name: onResolveOptions
     fullName: onResolveOptions
     langs:
@@ -374,7 +374,7 @@ items:
         type:
           - '(options: IComboBoxOption[]) => IComboBoxOption[] | PromiseLike<IComboBoxOption[]>'
   - uid: '@fluentui/react-next!IComboBoxProps#onScrollToItem:member'
-    summary: Callback issued when the ComboBox requests the list to scroll to a specific element
+    summary: Callback issued when the ComboBox requests the list to scroll to a specific element.
     name: onScrollToItem
     fullName: onScrollToItem
     langs:
@@ -386,7 +386,7 @@ items:
         type:
           - '(itemIndex: number) => void'
   - uid: '@fluentui/react-next!IComboBoxProps#options:member'
-    summary: Collection of options for this ComboBox
+    summary: Collection of options for this ComboBox.
     name: options
     fullName: options
     langs:
@@ -401,7 +401,7 @@ items:
     summary: >-
       Menu will not be created or destroyed when opened or closed, instead it will be hidden. This will improve perf of
       the menu opening but could potentially impact overall perf by having more elements in the dom. Should only be used
-      when perf is important. Note: This may increase the amount of time it takes for the comboBox itself to mount.
+      when perf is important. Note: This may increase the amount of time it takes for the ComboBox itself to mount.
     name: persistMenu
     fullName: persistMenu
     langs:
@@ -442,7 +442,7 @@ items:
         type:
           - boolean
   - uid: '@fluentui/react-next!IComboBoxProps#styles:member'
-    summary: Custom styles for this component
+    summary: Custom styles for this component.
     name: styles
     fullName: styles
     langs:
@@ -454,7 +454,7 @@ items:
         type:
           - Partial<IComboBoxStyles>
   - uid: '@fluentui/react-next!IComboBoxProps#text:member'
-    summary: 'Value to show in the input, does not have to map to a combobox option'
+    summary: 'Value to show in the input, does not have to map to a ComboBox option.'
     name: text
     fullName: text
     langs:
@@ -478,7 +478,7 @@ items:
         type:
           - '@fluentui/theme!ITheme:interface'
   - uid: '@fluentui/react-next!IComboBoxProps#useComboBoxAsMenuWidth:member'
-    summary: Whether to use the ComboBoxes width as the menu's width
+    summary: Whether to use the ComboBox width as the menu's width.
     name: useComboBoxAsMenuWidth
     fullName: useComboBoxAsMenuWidth
     langs:
