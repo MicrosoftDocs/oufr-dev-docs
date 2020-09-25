@@ -352,10 +352,12 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'onDecrement?: (value: string) => string | void;'
+      content: >-
+        onDecrement?: (value: string, event?: React.MouseEvent<HTMLElement> | React.KeyboardEvent<HTMLElement>) =>
+        string | void;
       return:
         type:
-          - '(value: string) => string | void'
+          - '(value: string, event?: React.MouseEvent<HTMLElement> | React.KeyboardEvent<HTMLElement>) => string | void'
   - uid: '@fluentui/react-next!ISpinButtonProps#onFocus:member'
     summary: Callback for when the user focuses the control.
     name: onFocus
@@ -376,10 +378,12 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'onIncrement?: (value: string) => string | void;'
+      content: >-
+        onIncrement?: (value: string, event?: React.MouseEvent<HTMLElement> | React.KeyboardEvent<HTMLElement>) =>
+        string | void;
       return:
         type:
-          - '(value: string) => string | void'
+          - '(value: string, event?: React.MouseEvent<HTMLElement> | React.KeyboardEvent<HTMLElement>) => string | void'
   - uid: '@fluentui/react-next!ISpinButtonProps#onValidate:member'
     summary: Callback for when the entered value should be validated.
     name: onValidate

@@ -5,12 +5,7 @@ ms.author: vibraga
 ---
 
 ## Overview
-A separator visually separates content into groups.
-
-You can render content in the separator by specifying the component&#39;s children.
-The component&#39;s children can be plain text or a component like Icon.
-The content is center-aligned by default.
-
+Coming soon...
 
 
 ## Do &#10003;

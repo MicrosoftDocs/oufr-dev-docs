@@ -16,10 +16,10 @@ items:
       - 'office-ui-fabric-react!DetailsRowBase#componentDidUpdate:member(1)'
       - 'office-ui-fabric-react!DetailsRowBase#componentWillUnmount:member(1)'
       - 'office-ui-fabric-react!DetailsRowBase#focus:member(1)'
+      - 'office-ui-fabric-react!DetailsRowBase.getDerivedStateFromProps:member(1)'
       - 'office-ui-fabric-react!DetailsRowBase#measureCell:member(1)'
       - 'office-ui-fabric-react!DetailsRowBase#render:member(1)'
       - 'office-ui-fabric-react!DetailsRowBase#shouldComponentUpdate:member(1)'
-      - 'office-ui-fabric-react!DetailsRowBase#UNSAFE_componentWillReceiveProps:member(1)'
   - uid: 'office-ui-fabric-react!DetailsRowBase#_onRenderCheck:member(1)'
     name: _onRenderCheck(props)
     fullName: _onRenderCheck(props)
@@ -109,6 +109,29 @@ items:
           description: ''
           type:
             - boolean
+  - uid: 'office-ui-fabric-react!DetailsRowBase.getDerivedStateFromProps:member(1)'
+    name: 'getDerivedStateFromProps(nextProps, previousState)'
+    fullName: 'getDerivedStateFromProps(nextProps, previousState)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        static getDerivedStateFromProps(nextProps: IDetailsRowBaseProps, previousState: IDetailsRowState):
+        IDetailsRowState;
+      return:
+        type:
+          - 'office-ui-fabric-react!IDetailsRowState:interface'
+        description: ''
+      parameters:
+        - id: nextProps
+          description: ''
+          type:
+            - 'office-ui-fabric-react!IDetailsRowBaseProps:interface'
+        - id: previousState
+          description: ''
+          type:
+            - 'office-ui-fabric-react!IDetailsRowState:interface'
   - uid: 'office-ui-fabric-react!DetailsRowBase#measureCell:member(1)'
     summary: measure cell at index. and call the call back with the measured cell width when finish measure
     name: 'measureCell(index, onMeasureDone)'
@@ -164,20 +187,3 @@ items:
           description: ''
           type:
             - 'office-ui-fabric-react!IDetailsRowState:interface'
-  - uid: 'office-ui-fabric-react!DetailsRowBase#UNSAFE_componentWillReceiveProps:member(1)'
-    name: UNSAFE_componentWillReceiveProps(newProps)
-    fullName: UNSAFE_componentWillReceiveProps(newProps)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'UNSAFE_componentWillReceiveProps(newProps: IDetailsRowBaseProps): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: newProps
-          description: ''
-          type:
-            - 'office-ui-fabric-react!IDetailsRowBaseProps:interface'

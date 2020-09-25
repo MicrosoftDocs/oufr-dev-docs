@@ -16,11 +16,11 @@ items:
       - 'office-ui-fabric-react!GroupedListBase#componentDidMount:member(1)'
       - 'office-ui-fabric-react!GroupedListBase.defaultProps:member'
       - 'office-ui-fabric-react!GroupedListBase#forceUpdate:member(1)'
+      - 'office-ui-fabric-react!GroupedListBase.getDerivedStateFromProps:member(1)'
       - 'office-ui-fabric-react!GroupedListBase#getStartItemIndexInView:member(1)'
       - 'office-ui-fabric-react!GroupedListBase#render:member(1)'
       - 'office-ui-fabric-react!GroupedListBase#scrollToIndex:member(1)'
       - 'office-ui-fabric-react!GroupedListBase#toggleCollapseAll:member(1)'
-      - 'office-ui-fabric-react!GroupedListBase#UNSAFE_componentWillReceiveProps:member(1)'
   - uid: 'office-ui-fabric-react!GroupedListBase:constructor(1)'
     summary: Constructs a new instance of the `GroupedListBase` class
     name: (constructor)(props)
@@ -82,6 +82,29 @@ items:
         type:
           - void
         description: ''
+  - uid: 'office-ui-fabric-react!GroupedListBase.getDerivedStateFromProps:member(1)'
+    name: 'getDerivedStateFromProps(nextProps, previousState)'
+    fullName: 'getDerivedStateFromProps(nextProps, previousState)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        static getDerivedStateFromProps(nextProps: IGroupedListProps, previousState: IGroupedListState):
+        IGroupedListState;
+      return:
+        type:
+          - 'office-ui-fabric-react!IGroupedListState:interface'
+        description: ''
+      parameters:
+        - id: nextProps
+          description: ''
+          type:
+            - 'office-ui-fabric-react!IGroupedListProps:interface'
+        - id: previousState
+          description: ''
+          type:
+            - 'office-ui-fabric-react!IGroupedListState:interface'
   - uid: 'office-ui-fabric-react!GroupedListBase#getStartItemIndexInView:member(1)'
     name: getStartItemIndexInView()
     fullName: getStartItemIndexInView()
@@ -148,20 +171,3 @@ items:
           description: ''
           type:
             - boolean
-  - uid: 'office-ui-fabric-react!GroupedListBase#UNSAFE_componentWillReceiveProps:member(1)'
-    name: UNSAFE_componentWillReceiveProps(newProps)
-    fullName: UNSAFE_componentWillReceiveProps(newProps)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'UNSAFE_componentWillReceiveProps(newProps: IGroupedListProps): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: newProps
-          description: ''
-          type:
-            - 'office-ui-fabric-react!IGroupedListProps:interface'
