@@ -24,6 +24,7 @@ items:
       - 'office-ui-fabric-react!IButtonProps#defaultRender:member'
       - 'office-ui-fabric-react!IButtonProps#description:member'
       - 'office-ui-fabric-react!IButtonProps#disabled:member'
+      - 'office-ui-fabric-react!IButtonProps#elementRef:member'
       - 'office-ui-fabric-react!IButtonProps#getClassNames:member'
       - 'office-ui-fabric-react!IButtonProps#getSplitButtonClassNames:member'
       - 'office-ui-fabric-react!IButtonProps#href:member'
@@ -211,6 +212,20 @@ items:
       return:
         type:
           - boolean
+  - uid: 'office-ui-fabric-react!IButtonProps#elementRef:member'
+    summary: Optional callback to access the root DOM element.
+    deprecated:
+      content: Temporary solution which will be replaced with ref in the V8 release.
+    name: elementRef
+    fullName: elementRef
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'elementRef?: React.Ref<HTMLElement>;'
+      return:
+        type:
+          - React.Ref<HTMLElement>
   - uid: 'office-ui-fabric-react!IButtonProps#getClassNames:member'
     summary: >-
       Method to provide the classnames to style a button. The default value for this prop is the getClassnames func

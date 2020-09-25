@@ -9,6 +9,9 @@ items:
     children:
       - '@fluentui/theme!ComponentStyles:interface'
       - '@fluentui/theme!createFontStyles:function(1)'
+      - '@fluentui/theme!createTheme:function(1)'
+      - '@fluentui/theme!IAnimationStyles:interface'
+      - '@fluentui/theme!IAnimationVariables:interface'
       - '@fluentui/theme!IEffects:interface'
       - '@fluentui/theme!IFontStyles:interface'
       - '@fluentui/theme!IPalette:interface'
@@ -38,6 +41,28 @@ items:
           description: ''
           type:
             - string | null
+  - uid: '@fluentui/theme!createTheme:function(1)'
+    summary: Creates a custom theme definition which can be used with the Customizer.
+    name: 'createTheme(theme, depComments)'
+    fullName: 'createTheme(theme, depComments)'
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export declare function createTheme(theme: IPartialTheme, depComments?: boolean): ITheme;'
+      return:
+        type:
+          - '@fluentui/theme!ITheme:interface'
+        description: ''
+      parameters:
+        - id: theme
+          description: Partial theme object.
+          type:
+            - IPartialTheme
+        - id: depComments
+          description: Whether to include deprecated tags as comments for deprecated slots.
+          type:
+            - boolean
   - uid: '@fluentui/theme!mergeThemes:function(1)'
     summary: Merges multiple themes.
     name: mergeThemes(themes)
@@ -80,6 +105,10 @@ items:
 references:
   - uid: '@fluentui/theme!ComponentStyles:interface'
     name: ComponentStyles
+  - uid: '@fluentui/theme!IAnimationStyles:interface'
+    name: IAnimationStyles
+  - uid: '@fluentui/theme!IAnimationVariables:interface'
+    name: IAnimationVariables
   - uid: '@fluentui/theme!IEffects:interface'
     name: IEffects
   - uid: '@fluentui/theme!IFontStyles:interface'

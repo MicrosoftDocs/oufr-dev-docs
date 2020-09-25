@@ -8,7 +8,6 @@ items:
     type: package
     children:
       - '@uifabric/styling!buildClassMap:function(1)'
-      - '@uifabric/styling!createTheme:function(1)'
       - '@uifabric/styling!focusClear:function(1)'
       - '@uifabric/styling!getEdgeChromiumNoHighContrastAdjustSelector:function(1)'
       - '@uifabric/styling!getFadedOverflowStyle:function(1)'
@@ -21,8 +20,6 @@ items:
       - '@uifabric/styling!getPlaceholderStyles:function(1)'
       - '@uifabric/styling!getScreenSelector:function(1)'
       - '@uifabric/styling!getTheme:function(1)'
-      - '@uifabric/styling!IAnimationStyles:interface'
-      - '@uifabric/styling!IAnimationVariables:interface'
       - '@uifabric/styling!IGetFocusStylesOptions:interface'
       - '@uifabric/styling!IIconOptions:interface'
       - '@uifabric/styling!IIconRecord:interface'
@@ -63,28 +60,6 @@ items:
         - id: T
           type:
             - Object
-  - uid: '@uifabric/styling!createTheme:function(1)'
-    summary: Creates a custom theme definition which can be used with the Customizer.
-    name: 'createTheme(theme, depComments)'
-    fullName: 'createTheme(theme, depComments)'
-    langs:
-      - typeScript
-    type: function
-    syntax:
-      content: 'export declare function createTheme(theme: IPartialTheme, depComments?: boolean): ITheme;'
-      return:
-        type:
-          - '@fluentui/theme!ITheme:interface'
-        description: ''
-      parameters:
-        - id: theme
-          description: Partial theme object.
-          type:
-            - IPartialTheme
-        - id: depComments
-          description: Whether to include deprecated tags as comments for deprecated slots.
-          type:
-            - boolean
   - uid: '@uifabric/styling!focusClear:function(1)'
     summary: Generates style to clear browser specific focus styles.
     name: focusClear()
@@ -533,10 +508,6 @@ items:
           type:
             - 'string[]'
 references:
-  - uid: '@uifabric/styling!IAnimationStyles:interface'
-    name: IAnimationStyles
-  - uid: '@uifabric/styling!IAnimationVariables:interface'
-    name: IAnimationVariables
   - uid: '@uifabric/styling!IGetFocusStylesOptions:interface'
     name: IGetFocusStylesOptions
   - uid: '@uifabric/styling!IIconOptions:interface'

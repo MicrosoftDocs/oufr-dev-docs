@@ -19,10 +19,10 @@ items:
       - 'office-ui-fabric-react!DetailsListBase.defaultProps:member'
       - 'office-ui-fabric-react!DetailsListBase#focusIndex:member(1)'
       - 'office-ui-fabric-react!DetailsListBase#forceUpdate:member(1)'
+      - 'office-ui-fabric-react!DetailsListBase.getDerivedStateFromProps:member(1)'
       - 'office-ui-fabric-react!DetailsListBase#getStartItemIndexInView:member(1)'
       - 'office-ui-fabric-react!DetailsListBase#render:member(1)'
       - 'office-ui-fabric-react!DetailsListBase#scrollToIndex:member(1)'
-      - 'office-ui-fabric-react!DetailsListBase#UNSAFE_componentWillReceiveProps:member(1)'
   - uid: 'office-ui-fabric-react!DetailsListBase#_onRenderRow:member'
     name: _onRenderRow
     fullName: _onRenderRow
@@ -155,6 +155,29 @@ items:
         type:
           - void
         description: ''
+  - uid: 'office-ui-fabric-react!DetailsListBase.getDerivedStateFromProps:member(1)'
+    name: 'getDerivedStateFromProps(nextProps, previousState)'
+    fullName: 'getDerivedStateFromProps(nextProps, previousState)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        static getDerivedStateFromProps(nextProps: IDetailsListProps, previousState: IDetailsListState):
+        IDetailsListState;
+      return:
+        type:
+          - 'office-ui-fabric-react!IDetailsListState:interface'
+        description: ''
+      parameters:
+        - id: nextProps
+          description: ''
+          type:
+            - 'office-ui-fabric-react!IDetailsListProps:interface'
+        - id: previousState
+          description: ''
+          type:
+            - 'office-ui-fabric-react!IDetailsListState:interface'
   - uid: 'office-ui-fabric-react!DetailsListBase#getStartItemIndexInView:member(1)'
     name: getStartItemIndexInView()
     fullName: getStartItemIndexInView()
@@ -204,20 +227,3 @@ items:
           description: ''
           type:
             - ScrollToMode
-  - uid: 'office-ui-fabric-react!DetailsListBase#UNSAFE_componentWillReceiveProps:member(1)'
-    name: UNSAFE_componentWillReceiveProps(newProps)
-    fullName: UNSAFE_componentWillReceiveProps(newProps)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'UNSAFE_componentWillReceiveProps(newProps: IDetailsListProps): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: newProps
-          description: ''
-          type:
-            - 'office-ui-fabric-react!IDetailsListProps:interface'

@@ -42,16 +42,17 @@ items:
     children:
       - 'office-ui-fabric-react!List:constructor(1)'
       - 'office-ui-fabric-react!List#componentDidMount:member(1)'
+      - 'office-ui-fabric-react!List#componentDidUpdate:member(1)'
       - 'office-ui-fabric-react!List#componentWillUnmount:member(1)'
       - 'office-ui-fabric-react!List.defaultProps:member'
       - 'office-ui-fabric-react!List#forceUpdate:member(1)'
+      - 'office-ui-fabric-react!List.getDerivedStateFromProps:member(1)'
       - 'office-ui-fabric-react!List#getStartItemIndexInView:member(1)'
       - 'office-ui-fabric-react!List#getTotalListHeight:member(1)'
       - 'office-ui-fabric-react!List#pageRefs:member'
       - 'office-ui-fabric-react!List#render:member(1)'
       - 'office-ui-fabric-react!List#scrollToIndex:member(1)'
       - 'office-ui-fabric-react!List#shouldComponentUpdate:member(1)'
-      - 'office-ui-fabric-react!List#UNSAFE_componentWillReceiveProps:member(1)'
   - uid: 'office-ui-fabric-react!List:constructor(1)'
     summary: Constructs a new instance of the `List` class
     name: (constructor)(props)
@@ -74,6 +75,18 @@ items:
     type: method
     syntax:
       content: 'componentDidMount(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'office-ui-fabric-react!List#componentDidUpdate:member(1)'
+    name: componentDidUpdate()
+    fullName: componentDidUpdate()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'componentDidUpdate(): void;'
       return:
         type:
           - void
@@ -125,6 +138,29 @@ items:
         type:
           - void
         description: ''
+  - uid: 'office-ui-fabric-react!List.getDerivedStateFromProps:member(1)'
+    name: 'getDerivedStateFromProps(nextProps, previousState)'
+    fullName: 'getDerivedStateFromProps(nextProps, previousState)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'static getDerivedStateFromProps<T = any>(nextProps: IListProps<T>, previousState: IListState<T>): IListState<T>;'
+      return:
+        type:
+          - IListState<T>
+        description: ''
+      parameters:
+        - id: nextProps
+          description: ''
+          type:
+            - IListProps<T>
+        - id: previousState
+          description: ''
+          type:
+            - IListState<T>
+      typeParameters:
+        - id: T
   - uid: 'office-ui-fabric-react!List#getStartItemIndexInView:member(1)'
     name: getStartItemIndexInView(measureItem)
     fullName: getStartItemIndexInView(measureItem)
@@ -231,20 +267,3 @@ items:
           description: ''
           type:
             - IListState<T>
-  - uid: 'office-ui-fabric-react!List#UNSAFE_componentWillReceiveProps:member(1)'
-    name: UNSAFE_componentWillReceiveProps(newProps)
-    fullName: UNSAFE_componentWillReceiveProps(newProps)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'UNSAFE_componentWillReceiveProps(newProps: IListProps<T>): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: newProps
-          description: ''
-          type:
-            - IListProps<T>
