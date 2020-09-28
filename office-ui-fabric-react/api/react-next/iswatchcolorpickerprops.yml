@@ -32,6 +32,7 @@ items:
       - '@fluentui/react-next!ISwatchColorPickerProps#onCellHovered:member'
       - '@fluentui/react-next!ISwatchColorPickerProps#onChange:member'
       - '@fluentui/react-next!ISwatchColorPickerProps#onColorChanged:member'
+      - '@fluentui/react-next!ISwatchColorPickerProps#onRenderColorCell:member'
       - '@fluentui/react-next!ISwatchColorPickerProps#selectedId:member'
       - '@fluentui/react-next!ISwatchColorPickerProps#shouldFocusCircularNavigate:member'
       - '@fluentui/react-next!ISwatchColorPickerProps#styles:member'
@@ -315,6 +316,18 @@ items:
       return:
         type:
           - '(id?: string, color?: string) => void'
+  - uid: '@fluentui/react-next!ISwatchColorPickerProps#onRenderColorCell:member'
+    summary: Custom render function for the color cell
+    name: onRenderColorCell
+    fullName: onRenderColorCell
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onRenderColorCell?: IRenderFunction<IColorCellProps>;'
+      return:
+        type:
+          - IRenderFunction<IColorCellProps>
   - uid: '@fluentui/react-next!ISwatchColorPickerProps#selectedId:member'
     summary: >-
       ID of the current selected color swatch. Only provide this if the SwatchColorPicker is a controlled component

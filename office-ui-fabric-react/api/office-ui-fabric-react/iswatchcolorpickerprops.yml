@@ -28,6 +28,7 @@ items:
       - 'office-ui-fabric-react!ISwatchColorPickerProps#onCellFocused:member'
       - 'office-ui-fabric-react!ISwatchColorPickerProps#onCellHovered:member'
       - 'office-ui-fabric-react!ISwatchColorPickerProps#onColorChanged:member'
+      - 'office-ui-fabric-react!ISwatchColorPickerProps#onRenderColorCell:member'
       - 'office-ui-fabric-react!ISwatchColorPickerProps#positionInSet:member'
       - 'office-ui-fabric-react!ISwatchColorPickerProps#selectedId:member'
       - 'office-ui-fabric-react!ISwatchColorPickerProps#setSize:member'
@@ -292,6 +293,18 @@ items:
       return:
         type:
           - '(id?: string, color?: string) => void'
+  - uid: 'office-ui-fabric-react!ISwatchColorPickerProps#onRenderColorCell:member'
+    summary: Custom render function for the color cell
+    name: onRenderColorCell
+    fullName: onRenderColorCell
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onRenderColorCell?: IRenderFunction<IColorCellProps>;'
+      return:
+        type:
+          - IRenderFunction<IColorCellProps>
   - uid: 'office-ui-fabric-react!ISwatchColorPickerProps#positionInSet:member'
     deprecated:
       content: Use `ariaPosInSet`

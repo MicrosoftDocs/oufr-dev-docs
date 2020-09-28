@@ -97,6 +97,7 @@ items:
         onRestoreFocus?: (options: {
                 originalElement?: HTMLElement | Window;
                 containsFocus: boolean;
+                documentContainsFocus: boolean;
             }) => void;
       return:
         type:
@@ -104,6 +105,7 @@ items:
             (options: {
                     originalElement?: HTMLElement | Window;
                     containsFocus: boolean;
+                    documentContainsFocus: boolean;
                 }) => void
   - uid: '@fluentui/react-next!IPopupProps#role:member'
     summary: Aria role for popup

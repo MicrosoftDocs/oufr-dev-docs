@@ -13,6 +13,7 @@ items:
       - 'office-ui-fabric-react!IBreadcrumbItem#isCurrentItem:member'
       - 'office-ui-fabric-react!IBreadcrumbItem#key:member'
       - 'office-ui-fabric-react!IBreadcrumbItem#onClick:member'
+      - 'office-ui-fabric-react!IBreadcrumbItem#role:member'
       - 'office-ui-fabric-react!IBreadcrumbItem#text:member'
   - uid: 'office-ui-fabric-react!IBreadcrumbItem#as:member'
     summary: >-
@@ -82,6 +83,18 @@ items:
       return:
         type:
           - '(ev?: React.MouseEvent<HTMLElement>, item?: IBreadcrumbItem) => void'
+  - uid: 'office-ui-fabric-react!IBreadcrumbItem#role:member'
+    summary: Optional role for the breadcrumb item (which renders as a button by default)
+    name: role
+    fullName: role
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'role?: string;'
+      return:
+        type:
+          - string
   - uid: 'office-ui-fabric-react!IBreadcrumbItem#text:member'
     summary: Text to display to the user for the breadcrumb item.
     name: text
