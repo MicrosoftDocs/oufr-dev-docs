@@ -39,11 +39,13 @@ items:
       - '@fluentui/react-next!ICalloutProps#onPositioned:member'
       - '@fluentui/react-next!ICalloutProps#onRestoreFocus:member'
       - '@fluentui/react-next!ICalloutProps#onScroll:member'
+      - '@fluentui/react-next!ICalloutProps#preventDismissOnEvent:member'
       - '@fluentui/react-next!ICalloutProps#preventDismissOnLostFocus:member'
       - '@fluentui/react-next!ICalloutProps#preventDismissOnResize:member'
       - '@fluentui/react-next!ICalloutProps#preventDismissOnScroll:member'
       - '@fluentui/react-next!ICalloutProps#role:member'
       - '@fluentui/react-next!ICalloutProps#setInitialFocus:member'
+      - '@fluentui/react-next!ICalloutProps#shouldDismissOnWindowFocus:member'
       - '@fluentui/react-next!ICalloutProps#shouldRestoreFocus:member'
       - '@fluentui/react-next!ICalloutProps#shouldUpdateWhenHidden:member'
       - '@fluentui/react-next!ICalloutProps#style:member'
@@ -394,6 +396,7 @@ items:
         onRestoreFocus?: (options: {
                 originalElement?: HTMLElement | Window;
                 containsFocus: boolean;
+                documentContainsFocus: boolean;
             }) => void;
       return:
         type:
@@ -401,6 +404,7 @@ items:
             (options: {
                     originalElement?: HTMLElement | Window;
                     containsFocus: boolean;
+                    documentContainsFocus: boolean;
                 }) => void
   - uid: '@fluentui/react-next!ICalloutProps#onScroll:member'
     summary: Callback when the Callout body is scrolled.
@@ -414,8 +418,25 @@ items:
       return:
         type:
           - () => void
+  - uid: '@fluentui/react-next!ICalloutProps#preventDismissOnEvent:member'
+    summary: >-
+      If defined, then takes priority over preventDismissOnLostFocus, preventDismissOnResize, and
+      preventDismissOnScroll. If it returns true, then callout will not dismiss for this event. If not defined or
+      returns false, callout can dismiss for this event.
+    name: preventDismissOnEvent
+    fullName: preventDismissOnEvent
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'preventDismissOnEvent?: (ev: Event | React.FocusEvent | React.KeyboardEvent | React.MouseEvent) => boolean;'
+      return:
+        type:
+          - '(ev: Event | React.FocusEvent | React.KeyboardEvent | React.MouseEvent) => boolean'
   - uid: '@fluentui/react-next!ICalloutProps#preventDismissOnLostFocus:member'
     summary: If true then the callout will not dismiss when it loses focus
+    deprecated:
+      content: use preventDismissOnEvent callback instead
     name: preventDismissOnLostFocus
     fullName: preventDismissOnLostFocus
     langs:
@@ -428,6 +449,8 @@ items:
           - boolean
   - uid: '@fluentui/react-next!ICalloutProps#preventDismissOnResize:member'
     summary: If true then the callout will not dismiss on resize
+    deprecated:
+      content: use preventDismissOnEvent callback instead
     name: preventDismissOnResize
     fullName: preventDismissOnResize
     langs:
@@ -440,6 +463,8 @@ items:
           - boolean
   - uid: '@fluentui/react-next!ICalloutProps#preventDismissOnScroll:member'
     summary: If true then the callout will not dismiss on scroll
+    deprecated:
+      content: use preventDismissOnEvent callback instead
     name: preventDismissOnScroll
     fullName: preventDismissOnScroll
     langs:
@@ -474,6 +499,18 @@ items:
     type: property
     syntax:
       content: 'setInitialFocus?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: '@fluentui/react-next!ICalloutProps#shouldDismissOnWindowFocus:member'
+    summary: If true then the callout will dismiss when the window gets focus
+    name: shouldDismissOnWindowFocus
+    fullName: shouldDismissOnWindowFocus
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'shouldDismissOnWindowFocus?: boolean;'
       return:
         type:
           - boolean

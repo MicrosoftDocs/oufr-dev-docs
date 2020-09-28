@@ -40,6 +40,7 @@ items:
       - '@fluentui/react-next!IContextualMenuProps#onMenuOpened:member'
       - '@fluentui/react-next!IContextualMenuProps#onRenderMenuList:member'
       - '@fluentui/react-next!IContextualMenuProps#onRenderSubMenu:member'
+      - '@fluentui/react-next!IContextualMenuProps#onRestoreFocus:member'
       - '@fluentui/react-next!IContextualMenuProps#shouldFocusOnContainer:member'
       - '@fluentui/react-next!IContextualMenuProps#shouldFocusOnMount:member'
       - '@fluentui/react-next!IContextualMenuProps#shouldUpdateWhenHidden:member'
@@ -423,6 +424,32 @@ items:
       return:
         type:
           - IRenderFunction<IContextualMenuProps>
+  - uid: '@fluentui/react-next!IContextualMenuProps#onRestoreFocus:member'
+    summary: >-
+      Called when the component is unmounting, and focus needs to be restored. Argument passed down contains two
+      variables, the element that the underlying popup believes focus should go to and whether or not the popup
+      currently contains focus. If this prop is provided, focus will not be restored automatically, you'll need to call
+      originalElement.focus()
+    name: onRestoreFocus
+    fullName: onRestoreFocus
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: |-
+        onRestoreFocus?: (options: {
+                originalElement?: HTMLElement | Window;
+                containsFocus: boolean;
+                documentContainsFocus: boolean;
+            }) => void;
+      return:
+        type:
+          - |-
+            (options: {
+                    originalElement?: HTMLElement | Window;
+                    containsFocus: boolean;
+                    documentContainsFocus: boolean;
+                }) => void
   - uid: '@fluentui/react-next!IContextualMenuProps#shouldFocusOnContainer:member'
     summary: Whether to focus on the contextual menu container (as opposed to the first menu item).
     name: shouldFocusOnContainer
