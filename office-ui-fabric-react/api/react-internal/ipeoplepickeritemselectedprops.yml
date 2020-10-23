@@ -1,0 +1,42 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-internal!IPeoplePickerItemSelectedProps:interface'
+    summary: PeoplePickerItemSelected props interface. Refers to the PeoplePicker items that have been picked already.
+    name: IPeoplePickerItemSelectedProps
+    fullName: IPeoplePickerItemSelectedProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - |-
+        IPickerItemProps<IPersonaProps & {
+            ValidationState: ValidationState;
+        }>
+      - 'IPeoplePickerItemSharedProps '
+    package: '@fluentui/react-internal!'
+    children:
+      - '@fluentui/react-internal!IPeoplePickerItemSelectedProps#styles:member'
+      - '@fluentui/react-internal!IPeoplePickerItemSelectedProps#ValidationState:member'
+  - uid: '@fluentui/react-internal!IPeoplePickerItemSelectedProps#styles:member'
+    summary: Call to provide customized styling that will layer on top of the variant rules.
+    name: styles
+    fullName: styles
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'styles?: IStyleFunctionOrObject<IPeoplePickerItemSelectedStyleProps, IPeoplePickerItemSelectedStyles>;'
+      return:
+        type:
+          - 'IStyleFunctionOrObject<IPeoplePickerItemSelectedStyleProps, IPeoplePickerItemSelectedStyles>'
+  - uid: '@fluentui/react-internal!IPeoplePickerItemSelectedProps#ValidationState:member'
+    name: ValidationState
+    fullName: ValidationState
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'ValidationState: ValidationState;'
+      return:
+        type:
+          - ValidationState

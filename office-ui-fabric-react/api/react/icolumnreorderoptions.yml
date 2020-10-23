@@ -1,0 +1,94 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react!IColumnReorderOptions:interface'
+    name: IColumnReorderOptions
+    fullName: IColumnReorderOptions
+    langs:
+      - typeScript
+    type: interface
+    package: '@fluentui/react!'
+    children:
+      - '@fluentui/react!IColumnReorderOptions#frozenColumnCountFromEnd:member'
+      - '@fluentui/react!IColumnReorderOptions#frozenColumnCountFromStart:member'
+      - '@fluentui/react!IColumnReorderOptions#handleColumnReorder:member'
+      - '@fluentui/react!IColumnReorderOptions#onColumnDragStart:member'
+      - '@fluentui/react!IColumnReorderOptions#onColumnDrop:member'
+      - '@fluentui/react!IColumnReorderOptions#onDragEnd:member'
+  - uid: '@fluentui/react!IColumnReorderOptions#frozenColumnCountFromEnd:member'
+    summary: Specifies the number fixed columns from right
+    name: frozenColumnCountFromEnd
+    fullName: frozenColumnCountFromEnd
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'frozenColumnCountFromEnd?: number;'
+      return:
+        type:
+          - number
+  - uid: '@fluentui/react!IColumnReorderOptions#frozenColumnCountFromStart:member'
+    summary: Specifies the number fixed columns from left
+    name: frozenColumnCountFromStart
+    fullName: frozenColumnCountFromStart
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'frozenColumnCountFromStart?: number;'
+      return:
+        type:
+          - number
+  - uid: '@fluentui/react!IColumnReorderOptions#handleColumnReorder:member'
+    summary: >-
+      Callback to handle column reordering. `draggedIndex` is the source column index, which should be placed at
+      `targetIndex`<!-- -->.
+    deprecated:
+      content: Use `onColumnDrop` instead.
+    name: handleColumnReorder
+    fullName: handleColumnReorder
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'handleColumnReorder?: (draggedIndex: number, targetIndex: number) => void;'
+      return:
+        type:
+          - '(draggedIndex: number, targetIndex: number) => void'
+  - uid: '@fluentui/react!IColumnReorderOptions#onColumnDragStart:member'
+    summary: Callback to handle when dragging on this column's DetailsHeader has started.
+    name: onColumnDragStart
+    fullName: onColumnDragStart
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onColumnDragStart?: (dragStarted: boolean) => void;'
+      return:
+        type:
+          - '(dragStarted: boolean) => void'
+  - uid: '@fluentui/react!IColumnReorderOptions#onColumnDrop:member'
+    summary: >-
+      Callback to handle column reordering. `draggedIndex` is the source column index, which should be placed at
+      `targetIndex`<!-- -->.
+    name: onColumnDrop
+    fullName: onColumnDrop
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onColumnDrop?: (dragDropDetails: IColumnDragDropDetails) => void;'
+      return:
+        type:
+          - '(dragDropDetails: IColumnDragDropDetails) => void'
+  - uid: '@fluentui/react!IColumnReorderOptions#onDragEnd:member'
+    summary: Callback to handle when dragging on this column's DetailsHeader has finished.
+    name: onDragEnd
+    fullName: onDragEnd
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onDragEnd?: (columnDropLocationDetails: ColumnDragEndLocation) => void;'
+      return:
+        type:
+          - '(columnDropLocationDetails: ColumnDragEndLocation) => void'

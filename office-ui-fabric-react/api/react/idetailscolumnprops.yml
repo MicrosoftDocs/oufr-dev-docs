@@ -1,0 +1,229 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react!IDetailsColumnProps:interface'
+    name: IDetailsColumnProps
+    fullName: IDetailsColumnProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'React.ClassAttributes<DetailsColumnBase> '
+    package: '@fluentui/react!'
+    children:
+      - '@fluentui/react!IDetailsColumnProps#cellStyleProps:member'
+      - '@fluentui/react!IDetailsColumnProps#column:member'
+      - '@fluentui/react!IDetailsColumnProps#columnIndex:member'
+      - '@fluentui/react!IDetailsColumnProps#componentRef:member'
+      - '@fluentui/react!IDetailsColumnProps#dragDropHelper:member'
+      - '@fluentui/react!IDetailsColumnProps#isDraggable:member'
+      - '@fluentui/react!IDetailsColumnProps#isDropped:member'
+      - '@fluentui/react!IDetailsColumnProps#onColumnClick:member'
+      - '@fluentui/react!IDetailsColumnProps#onColumnContextMenu:member'
+      - '@fluentui/react!IDetailsColumnProps#onRenderColumnHeaderTooltip:member'
+      - '@fluentui/react!IDetailsColumnProps#parentId:member'
+      - '@fluentui/react!IDetailsColumnProps#setDraggedItemIndex:member'
+      - '@fluentui/react!IDetailsColumnProps#styles:member'
+      - '@fluentui/react!IDetailsColumnProps#theme:member'
+      - '@fluentui/react!IDetailsColumnProps#updateDragInfo:member'
+      - '@fluentui/react!IDetailsColumnProps#useFastIcons:member'
+  - uid: '@fluentui/react!IDetailsColumnProps#cellStyleProps:member'
+    summary: Custom styles for cell rendering.
+    name: cellStyleProps
+    fullName: cellStyleProps
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'cellStyleProps?: ICellStyleProps;'
+      return:
+        type:
+          - ICellStyleProps
+  - uid: '@fluentui/react!IDetailsColumnProps#column:member'
+    summary: The column definition for the component instance.
+    name: column
+    fullName: column
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'column: IColumn;'
+      return:
+        type:
+          - IColumn
+  - uid: '@fluentui/react!IDetailsColumnProps#columnIndex:member'
+    summary: The column index for the component instance.
+    name: columnIndex
+    fullName: columnIndex
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'columnIndex: number;'
+      return:
+        type:
+          - number
+  - uid: '@fluentui/react!IDetailsColumnProps#componentRef:member'
+    summary: A reference to the component instance.
+    name: componentRef
+    fullName: componentRef
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'componentRef?: () => void;'
+      return:
+        type:
+          - () => void
+  - uid: '@fluentui/react!IDetailsColumnProps#dragDropHelper:member'
+    summary: The drag and drop helper for the component instance.
+    name: dragDropHelper
+    fullName: dragDropHelper
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'dragDropHelper?: IDragDropHelper | null;'
+      return:
+        type:
+          - IDragDropHelper | null
+  - uid: '@fluentui/react!IDetailsColumnProps#isDraggable:member'
+    summary: Whether or not the column can be re-ordered via drag and drop.
+    name: isDraggable
+    fullName: isDraggable
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isDraggable?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: '@fluentui/react!IDetailsColumnProps#isDropped:member'
+    summary: Whether or not the column has been dropped via drag and drop.
+    name: isDropped
+    fullName: isDropped
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isDropped?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: '@fluentui/react!IDetailsColumnProps#onColumnClick:member'
+    summary: Callback fired when click event occurs.
+    name: onColumnClick
+    fullName: onColumnClick
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onColumnClick?: (ev: React.MouseEvent<HTMLElement>, column: IColumn) => void;'
+      return:
+        type:
+          - '(ev: React.MouseEvent<HTMLElement>, column: IColumn) => void'
+  - uid: '@fluentui/react!IDetailsColumnProps#onColumnContextMenu:member'
+    summary: Callback fired on contextual menu event to provide contextual menu UI.
+    name: onColumnContextMenu
+    fullName: onColumnContextMenu
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onColumnContextMenu?: (column: IColumn, ev: React.MouseEvent<HTMLElement>) => void;'
+      return:
+        type:
+          - '(column: IColumn, ev: React.MouseEvent<HTMLElement>) => void'
+  - uid: '@fluentui/react!IDetailsColumnProps#onRenderColumnHeaderTooltip:member'
+    summary: Render function for providing a column header tooltip.
+    name: onRenderColumnHeaderTooltip
+    fullName: onRenderColumnHeaderTooltip
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onRenderColumnHeaderTooltip?: IRenderFunction<IDetailsColumnRenderTooltipProps>;'
+      return:
+        type:
+          - IRenderFunction<IDetailsColumnRenderTooltipProps>
+  - uid: '@fluentui/react!IDetailsColumnProps#parentId:member'
+    summary: Parent ID used for accessibility label(s).
+    name: parentId
+    fullName: parentId
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentId?: string;'
+      return:
+        type:
+          - string
+  - uid: '@fluentui/react!IDetailsColumnProps#setDraggedItemIndex:member'
+    deprecated:
+      content: use `updateDragInfo`
+    name: setDraggedItemIndex
+    fullName: setDraggedItemIndex
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'setDraggedItemIndex?: (itemIndex: number) => void;'
+      return:
+        type:
+          - '(itemIndex: number) => void'
+  - uid: '@fluentui/react!IDetailsColumnProps#styles:member'
+    summary: The component styles to respect during render.
+    name: styles
+    fullName: styles
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'styles?: IStyleFunctionOrObject<IDetailsColumnStyleProps, IDetailsColumnStyles>;'
+      return:
+        type:
+          - 'IStyleFunctionOrObject<IDetailsColumnStyleProps, IDetailsColumnStyles>'
+  - uid: '@fluentui/react!IDetailsColumnProps#theme:member'
+    summary: The theme object to respect during render.
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type:
+          - '@fluentui/theme!ITheme:interface'
+  - uid: '@fluentui/react!IDetailsColumnProps#updateDragInfo:member'
+    summary: Callback on drag and drop event.
+    name: updateDragInfo
+    fullName: updateDragInfo
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: |-
+        updateDragInfo?: (props: {
+                itemIndex: number;
+            }, event?: MouseEvent) => void;
+      return:
+        type:
+          - |-
+            (props: {
+                    itemIndex: number;
+                }, event?: MouseEvent) => void
+  - uid: '@fluentui/react!IDetailsColumnProps#useFastIcons:member'
+    summary: >-
+      Whether to use fast icon and check components. The icons can't be targeted by customization but are still
+      customizable via class names.
+    name: useFastIcons
+    fullName: useFastIcons
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'useFastIcons?: boolean;'
+      return:
+        type:
+          - boolean

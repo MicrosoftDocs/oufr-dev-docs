@@ -9,7 +9,7 @@ items:
     extends:
       - 'React.Component<IGroupedListProps, IGroupedListState> '
     implements:
-      - 'office-ui-fabric-react!IGroupedList:interface'
+      - 'IGroupedList '
     package: office-ui-fabric-react!
     children:
       - 'office-ui-fabric-react!GroupedListBase:constructor(1)'
@@ -34,7 +34,7 @@ items:
         - id: props
           description: ''
           type:
-            - 'office-ui-fabric-react!IGroupedListProps:interface'
+            - IGroupedListProps
   - uid: 'office-ui-fabric-react!GroupedListBase#componentDidMount:member(1)'
     name: componentDidMount()
     fullName: componentDidMount()
@@ -94,17 +94,17 @@ items:
         IGroupedListState;
       return:
         type:
-          - 'office-ui-fabric-react!IGroupedListState:interface'
+          - IGroupedListState
         description: ''
       parameters:
         - id: nextProps
           description: ''
           type:
-            - 'office-ui-fabric-react!IGroupedListProps:interface'
+            - IGroupedListProps
         - id: previousState
           description: ''
           type:
-            - 'office-ui-fabric-react!IGroupedListState:interface'
+            - IGroupedListState
   - uid: 'office-ui-fabric-react!GroupedListBase#getStartItemIndexInView:member(1)'
     name: getStartItemIndexInView()
     fullName: getStartItemIndexInView()

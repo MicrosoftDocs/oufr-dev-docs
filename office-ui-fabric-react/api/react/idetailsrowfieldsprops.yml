@@ -1,0 +1,122 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react!IDetailsRowFieldsProps:interface'
+    summary: Props interface for the DetailsRowFields component.
+    name: IDetailsRowFieldsProps
+    fullName: IDetailsRowFieldsProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'IOverrideColumnRenderProps '
+    package: '@fluentui/react!'
+    children:
+      - '@fluentui/react!IDetailsRowFieldsProps#cellStyleProps:member'
+      - '@fluentui/react!IDetailsRowFieldsProps#columns:member'
+      - '@fluentui/react!IDetailsRowFieldsProps#columnStartIndex:member'
+      - '@fluentui/react!IDetailsRowFieldsProps#compact:member'
+      - '@fluentui/react!IDetailsRowFieldsProps#enableUpdateAnimations:member'
+      - '@fluentui/react!IDetailsRowFieldsProps#item:member'
+      - '@fluentui/react!IDetailsRowFieldsProps#itemIndex:member'
+      - '@fluentui/react!IDetailsRowFieldsProps#rowClassNames:member'
+  - uid: '@fluentui/react!IDetailsRowFieldsProps#cellStyleProps:member'
+    summary: Style properties to customize cell render output.
+    name: cellStyleProps
+    fullName: cellStyleProps
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'cellStyleProps?: ICellStyleProps;'
+      return:
+        type:
+          - ICellStyleProps
+  - uid: '@fluentui/react!IDetailsRowFieldsProps#columns:member'
+    summary: Columns metadata
+    name: columns
+    fullName: columns
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'columns: IColumn[];'
+      return:
+        type:
+          - 'IColumn[]'
+  - uid: '@fluentui/react!IDetailsRowFieldsProps#columnStartIndex:member'
+    summary: Index to start for the column
+    name: columnStartIndex
+    fullName: columnStartIndex
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'columnStartIndex: number;'
+      return:
+        type:
+          - number
+  - uid: '@fluentui/react!IDetailsRowFieldsProps#compact:member'
+    summary: whether to render as a compact field
+    name: compact
+    fullName: compact
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'compact?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: '@fluentui/react!IDetailsRowFieldsProps#enableUpdateAnimations:member'
+    name: enableUpdateAnimations
+    fullName: enableUpdateAnimations
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'enableUpdateAnimations?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: '@fluentui/react!IDetailsRowFieldsProps#item:member'
+    summary: Data source for this component
+    name: item
+    fullName: item
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'item: any;'
+      return:
+        type:
+          - any
+  - uid: '@fluentui/react!IDetailsRowFieldsProps#itemIndex:member'
+    summary: The item index of the collection for the DetailsList
+    name: itemIndex
+    fullName: itemIndex
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'itemIndex: number;'
+      return:
+        type:
+          - number
+  - uid: '@fluentui/react!IDetailsRowFieldsProps#rowClassNames:member'
+    summary: Subset of classnames currently generated in DetailsRow that are used within DetailsRowFields.
+    name: rowClassNames
+    fullName: rowClassNames
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: |-
+        rowClassNames: {
+                [k in keyof Pick<IDetailsRowStyles, 'isMultiline' | 'isRowHeader' | 'cell' | 'cellAnimation' | 'cellPadded' | 'cellUnpadded' | 'fields'>]: string;
+            };
+      return:
+        type:
+          - |-
+            {
+                    [k in keyof Pick<IDetailsRowStyles, 'isMultiline' | 'isRowHeader' | 'cell' | 'cellAnimation' | 'cellPadded' | 'cellUnpadded' | 'fields'>]: string;
+                }

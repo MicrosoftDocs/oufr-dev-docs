@@ -6,17 +6,14 @@ items:
     langs:
       - typeScript
     type: interface
-    extends:
-      - '@fluentui/date-time-utilities!IDateGridStrings:interface'
     package: '@fluentui/date-time-utilities!'
     children:
       - '@fluentui/date-time-utilities!IDateFormatting#formatDay:member'
       - '@fluentui/date-time-utilities!IDateFormatting#formatMonthDayYear:member'
       - '@fluentui/date-time-utilities!IDateFormatting#formatMonthYear:member'
       - '@fluentui/date-time-utilities!IDateFormatting#formatYear:member'
-      - '@fluentui/date-time-utilities!IDateFormatting#parseDate:member'
   - uid: '@fluentui/date-time-utilities!IDateFormatting#formatDay:member'
-    summary: Format the day according to specified function. Intended use case is localization.
+    summary: Get a localized string for a day.
     name: formatDay
     fullName: formatDay
     langs:
@@ -28,7 +25,7 @@ items:
         type:
           - '(date: Date) => string'
   - uid: '@fluentui/date-time-utilities!IDateFormatting#formatMonthDayYear:member'
-    summary: 'Format the month, day and year according to specified function. Intended use case is localization.'
+    summary: 'Get a localized string for a month, day, and year.'
     name: formatMonthDayYear
     fullName: formatMonthDayYear
     langs:
@@ -40,7 +37,7 @@ items:
         type:
           - '(date: Date, strings: IDateGridStrings) => string'
   - uid: '@fluentui/date-time-utilities!IDateFormatting#formatMonthYear:member'
-    summary: Format the month and year according to specified function. Intended use case is localization.
+    summary: Get a localized string for a month and year.
     name: formatMonthYear
     fullName: formatMonthYear
     langs:
@@ -52,7 +49,7 @@ items:
         type:
           - '(date: Date, strings: IDateGridStrings) => string'
   - uid: '@fluentui/date-time-utilities!IDateFormatting#formatYear:member'
-    summary: Format the year according to specified function. Intended use case is localization.
+    summary: Get a localized string for a year.
     name: formatYear
     fullName: formatYear
     langs:
@@ -63,15 +60,3 @@ items:
       return:
         type:
           - '(date: Date) => string'
-  - uid: '@fluentui/date-time-utilities!IDateFormatting#parseDate:member'
-    summary: Parse date from string representation into Date type.
-    name: parseDate
-    fullName: parseDate
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'parseDate: (date: string) => Date | null;'
-      return:
-        type:
-          - '(date: string) => Date | null'

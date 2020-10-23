@@ -1,0 +1,124 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-internal!IKeytipLayerProps:interface'
+    name: IKeytipLayerProps
+    fullName: IKeytipLayerProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'React.ClassAttributes<IKeytipLayer> '
+    package: '@fluentui/react-internal!'
+    children:
+      - '@fluentui/react-internal!IKeytipLayerProps#componentRef:member'
+      - '@fluentui/react-internal!IKeytipLayerProps#content:member'
+      - '@fluentui/react-internal!IKeytipLayerProps#keytipExitSequences:member'
+      - '@fluentui/react-internal!IKeytipLayerProps#keytipReturnSequences:member'
+      - '@fluentui/react-internal!IKeytipLayerProps#keytipStartSequences:member'
+      - '@fluentui/react-internal!IKeytipLayerProps#onEnterKeytipMode:member'
+      - '@fluentui/react-internal!IKeytipLayerProps#onExitKeytipMode:member'
+      - '@fluentui/react-internal!IKeytipLayerProps#styles:member'
+  - uid: '@fluentui/react-internal!IKeytipLayerProps#componentRef:member'
+    summary: >-
+      Optional callback to access the KeytipLayer component. Use this instead of ref for accessing the public methods
+      and properties of the component.
+    name: componentRef
+    fullName: componentRef
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'componentRef?: IRefObject<IKeytipLayer>;'
+      return:
+        type:
+          - IRefObject<IKeytipLayer>
+  - uid: '@fluentui/react-internal!IKeytipLayerProps#content:member'
+    summary: >-
+      String to put inside the layer to be used for the aria-describedby for the component with the keytip Should be one
+      of the starting sequences
+    name: content
+    fullName: content
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'content: string;'
+      return:
+        type:
+          - string
+  - uid: '@fluentui/react-internal!IKeytipLayerProps#keytipExitSequences:member'
+    summary: List of key sequences that will exit keytips mode
+    name: keytipExitSequences
+    fullName: keytipExitSequences
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'keytipExitSequences?: IKeytipTransitionKey[];'
+      return:
+        type:
+          - 'IKeytipTransitionKey[]'
+  - uid: '@fluentui/react-internal!IKeytipLayerProps#keytipReturnSequences:member'
+    summary: >-
+      List of key sequences that execute the return functionality in keytips (going back to the previous level of
+      keytips)
+    name: keytipReturnSequences
+    fullName: keytipReturnSequences
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'keytipReturnSequences?: IKeytipTransitionKey[];'
+      return:
+        type:
+          - 'IKeytipTransitionKey[]'
+  - uid: '@fluentui/react-internal!IKeytipLayerProps#keytipStartSequences:member'
+    summary: List of key sequences that will start keytips mode
+    name: keytipStartSequences
+    fullName: keytipStartSequences
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'keytipStartSequences?: IKeytipTransitionKey[];'
+      return:
+        type:
+          - 'IKeytipTransitionKey[]'
+  - uid: '@fluentui/react-internal!IKeytipLayerProps#onEnterKeytipMode:member'
+    summary: Callback function triggered when keytip mode is entered
+    name: onEnterKeytipMode
+    fullName: onEnterKeytipMode
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onEnterKeytipMode?: () => void;'
+      return:
+        type:
+          - () => void
+  - uid: '@fluentui/react-internal!IKeytipLayerProps#onExitKeytipMode:member'
+    summary: >-
+      Callback function triggered when keytip mode is exited. ev is the Mouse or Keyboard Event that triggered the exit,
+      if any.
+    name: onExitKeytipMode
+    fullName: onExitKeytipMode
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onExitKeytipMode?: (ev?: React.KeyboardEvent<HTMLElement> | React.MouseEvent<HTMLElement>) => void;'
+      return:
+        type:
+          - '(ev?: React.KeyboardEvent<HTMLElement> | React.MouseEvent<HTMLElement>) => void'
+  - uid: '@fluentui/react-internal!IKeytipLayerProps#styles:member'
+    summary: (Optional) Call to provide customized styling.
+    name: styles
+    fullName: styles
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'styles?: IStyleFunctionOrObject<IKeytipLayerStyleProps, IKeytipLayerStyles>;'
+      return:
+        type:
+          - 'IStyleFunctionOrObject<IKeytipLayerStyleProps, IKeytipLayerStyles>'

@@ -7,24 +7,16 @@ items:
       - typeScript
     type: interface
     extends:
-      - '@fluentui/date-time-utilities!IDateFormatting:interface'
+      - '@fluentui/date-time-utilities!IDateGridStrings:interface'
     package: '@fluentui/date-time-utilities!'
     children:
       - '@fluentui/date-time-utilities!ICalendarStrings#closeButtonAriaLabel:member'
+      - '@fluentui/date-time-utilities!ICalendarStrings#dayMarkedAriaLabel:member'
       - '@fluentui/date-time-utilities!ICalendarStrings#goToToday:member'
-      - '@fluentui/date-time-utilities!ICalendarStrings#inputAriaLabel:member'
-      - '@fluentui/date-time-utilities!ICalendarStrings#inputBoundedFormatString:member'
-      - '@fluentui/date-time-utilities!ICalendarStrings#inputMaxBoundedFormatString:member'
-      - '@fluentui/date-time-utilities!ICalendarStrings#inputMinBoundedFormatString:member'
-      - '@fluentui/date-time-utilities!ICalendarStrings#inputPlaceholder:member'
-      - '@fluentui/date-time-utilities!ICalendarStrings#invalidInputErrorMessage:member'
-      - '@fluentui/date-time-utilities!ICalendarStrings#isOutOfBoundsErrorMessage:member'
-      - '@fluentui/date-time-utilities!ICalendarStrings#isRequiredErrorMessage:member'
       - '@fluentui/date-time-utilities!ICalendarStrings#monthPickerHeaderAriaLabel:member'
       - '@fluentui/date-time-utilities!ICalendarStrings#nextMonthAriaLabel:member'
       - '@fluentui/date-time-utilities!ICalendarStrings#nextYearAriaLabel:member'
       - '@fluentui/date-time-utilities!ICalendarStrings#nextYearRangeAriaLabel:member'
-      - '@fluentui/date-time-utilities!ICalendarStrings#openCalendarTitle:member'
       - '@fluentui/date-time-utilities!ICalendarStrings#prevMonthAriaLabel:member'
       - '@fluentui/date-time-utilities!ICalendarStrings#prevYearAriaLabel:member'
       - '@fluentui/date-time-utilities!ICalendarStrings#prevYearRangeAriaLabel:member'
@@ -44,6 +36,18 @@ items:
       return:
         type:
           - string
+  - uid: '@fluentui/date-time-utilities!ICalendarStrings#dayMarkedAriaLabel:member'
+    summary: Aria-label for when a date is marked
+    name: dayMarkedAriaLabel
+    fullName: dayMarkedAriaLabel
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'dayMarkedAriaLabel?: string;'
+      return:
+        type:
+          - string
   - uid: '@fluentui/date-time-utilities!ICalendarStrings#goToToday:member'
     summary: String to render for button to direct the user to today's date.
     name: goToToday
@@ -53,102 +57,6 @@ items:
     type: property
     syntax:
       content: 'goToToday: string;'
-      return:
-        type:
-          - string
-  - uid: '@fluentui/date-time-utilities!ICalendarStrings#inputAriaLabel:member'
-    summary: Aria-label for input."
-    name: inputAriaLabel
-    fullName: inputAriaLabel
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'inputAriaLabel?: string;'
-      return:
-        type:
-          - string
-  - uid: '@fluentui/date-time-utilities!ICalendarStrings#inputBoundedFormatString:member'
-    summary: 'Aria-label format string for restricted input. Should have 2 string params, 0 is minDate and 1 is maxDate"'
-    name: inputBoundedFormatString
-    fullName: inputBoundedFormatString
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'inputBoundedFormatString?: string;'
-      return:
-        type:
-          - string
-  - uid: '@fluentui/date-time-utilities!ICalendarStrings#inputMaxBoundedFormatString:member'
-    summary: 'Aria-label format string for restricted input only with maxDate. Should have 1 string param, 0 is maxDate"'
-    name: inputMaxBoundedFormatString
-    fullName: inputMaxBoundedFormatString
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'inputMaxBoundedFormatString?: string;'
-      return:
-        type:
-          - string
-  - uid: '@fluentui/date-time-utilities!ICalendarStrings#inputMinBoundedFormatString:member'
-    summary: 'Aria-label format string for restricted input only with minDate. Should have 1 string param, 0 is minDate"'
-    name: inputMinBoundedFormatString
-    fullName: inputMinBoundedFormatString
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'inputMinBoundedFormatString?: string;'
-      return:
-        type:
-          - string
-  - uid: '@fluentui/date-time-utilities!ICalendarStrings#inputPlaceholder:member'
-    summary: Placeholder string for an unfilled input.
-    name: inputPlaceholder
-    fullName: inputPlaceholder
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'inputPlaceholder: string;'
-      return:
-        type:
-          - string
-  - uid: '@fluentui/date-time-utilities!ICalendarStrings#invalidInputErrorMessage:member'
-    summary: Error message to render for TextField if input date string parsing fails.
-    name: invalidInputErrorMessage
-    fullName: invalidInputErrorMessage
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'invalidInputErrorMessage?: string;'
-      return:
-        type:
-          - string
-  - uid: '@fluentui/date-time-utilities!ICalendarStrings#isOutOfBoundsErrorMessage:member'
-    summary: 'Error message to render for TextField if date boundary (minDate, maxDate) validation fails.'
-    name: isOutOfBoundsErrorMessage
-    fullName: isOutOfBoundsErrorMessage
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'isOutOfBoundsErrorMessage?: string;'
-      return:
-        type:
-          - string
-  - uid: '@fluentui/date-time-utilities!ICalendarStrings#isRequiredErrorMessage:member'
-    summary: Error message to render for TextField if isRequired validation fails.
-    name: isRequiredErrorMessage
-    fullName: isRequiredErrorMessage
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'isRequiredErrorMessage?: string;'
       return:
         type:
           - string
@@ -200,18 +108,6 @@ items:
     type: property
     syntax:
       content: 'nextYearRangeAriaLabel?: string;'
-      return:
-        type:
-          - string
-  - uid: '@fluentui/date-time-utilities!ICalendarStrings#openCalendarTitle:member'
-    summary: Title for button to open the calendar.
-    name: openCalendarTitle
-    fullName: openCalendarTitle
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'openCalendarTitle: string;'
       return:
         type:
           - string

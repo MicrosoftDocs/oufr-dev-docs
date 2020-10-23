@@ -1,22 +1,22 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: '@uifabric/merge-styles!IStyleSheetConfig:interface'
+  - uid: '@fluentui/merge-styles!IStyleSheetConfig:interface'
     summary: Stylesheet config.
     name: IStyleSheetConfig
     fullName: IStyleSheetConfig
     langs:
       - typeScript
     type: interface
-    package: '@uifabric/merge-styles!'
+    package: '@fluentui/merge-styles!'
     children:
-      - '@uifabric/merge-styles!IStyleSheetConfig#classNameCache:member'
-      - '@uifabric/merge-styles!IStyleSheetConfig#cspSettings:member'
-      - '@uifabric/merge-styles!IStyleSheetConfig#defaultPrefix:member'
-      - '@uifabric/merge-styles!IStyleSheetConfig#injectionMode:member'
-      - '@uifabric/merge-styles!IStyleSheetConfig#namespace:member'
-      - '@uifabric/merge-styles!IStyleSheetConfig#onInsertRule:member'
-      - '@uifabric/merge-styles!IStyleSheetConfig#rtl:member'
-  - uid: '@uifabric/merge-styles!IStyleSheetConfig#classNameCache:member'
+      - '@fluentui/merge-styles!IStyleSheetConfig#classNameCache:member'
+      - '@fluentui/merge-styles!IStyleSheetConfig#cspSettings:member'
+      - '@fluentui/merge-styles!IStyleSheetConfig#defaultPrefix:member'
+      - '@fluentui/merge-styles!IStyleSheetConfig#injectionMode:member'
+      - '@fluentui/merge-styles!IStyleSheetConfig#namespace:member'
+      - '@fluentui/merge-styles!IStyleSheetConfig#onInsertRule:member'
+      - '@fluentui/merge-styles!IStyleSheetConfig#rtl:member'
+  - uid: '@fluentui/merge-styles!IStyleSheetConfig#classNameCache:member'
     summary: Initial value for classnames cache. Key is serialized css rules associated with a classname.
     name: classNameCache
     fullName: classNameCache
@@ -34,7 +34,7 @@ items:
             {
                     [key: string]: string;
                 }
-  - uid: '@uifabric/merge-styles!IStyleSheetConfig#cspSettings:member'
+  - uid: '@fluentui/merge-styles!IStyleSheetConfig#cspSettings:member'
     summary: CSP settings
     name: cspSettings
     fullName: cspSettings
@@ -45,8 +45,8 @@ items:
       content: 'cspSettings?: ICSPSettings;'
       return:
         type:
-          - '@uifabric/merge-styles!ICSPSettings:interface'
-  - uid: '@uifabric/merge-styles!IStyleSheetConfig#defaultPrefix:member'
+          - '@fluentui/merge-styles!ICSPSettings:interface'
+  - uid: '@fluentui/merge-styles!IStyleSheetConfig#defaultPrefix:member'
     summary: Default 'displayName' to use for a className.
     name: defaultPrefix
     fullName: defaultPrefix
@@ -58,7 +58,7 @@ items:
       return:
         type:
           - string
-  - uid: '@uifabric/merge-styles!IStyleSheetConfig#injectionMode:member'
+  - uid: '@fluentui/merge-styles!IStyleSheetConfig#injectionMode:member'
     summary: Injection mode for how rules are inserted.
     name: injectionMode
     fullName: injectionMode
@@ -70,7 +70,7 @@ items:
       return:
         type:
           - InjectionMode
-  - uid: '@uifabric/merge-styles!IStyleSheetConfig#namespace:member'
+  - uid: '@fluentui/merge-styles!IStyleSheetConfig#namespace:member'
     summary: Default 'namespace' to attach before the className.
     name: namespace
     fullName: namespace
@@ -82,7 +82,7 @@ items:
       return:
         type:
           - string
-  - uid: '@uifabric/merge-styles!IStyleSheetConfig#onInsertRule:member'
+  - uid: '@fluentui/merge-styles!IStyleSheetConfig#onInsertRule:member'
     summary: Callback executed when a rule is inserted.
     name: onInsertRule
     fullName: onInsertRule
@@ -94,7 +94,7 @@ items:
       return:
         type:
           - '(rule: string) => void'
-  - uid: '@uifabric/merge-styles!IStyleSheetConfig#rtl:member'
+  - uid: '@fluentui/merge-styles!IStyleSheetConfig#rtl:member'
     summary: >-
       Defines the default direction of rules for auto-rtlifying things. While typically this is represented as a DIR
       attribute in the markup, the DIR is not enough to control whether padding goes on the left or right. Use this to

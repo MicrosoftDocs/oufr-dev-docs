@@ -1,0 +1,59 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react!IComboBox:interface'
+    name: IComboBox
+    fullName: IComboBox
+    langs:
+      - typeScript
+    type: interface
+    package: '@fluentui/react!'
+    children:
+      - '@fluentui/react!IComboBox#dismissMenu:member'
+      - '@fluentui/react!IComboBox#focus:member(1)'
+      - '@fluentui/react!IComboBox#selectedOptions:member'
+  - uid: '@fluentui/react!IComboBox#dismissMenu:member'
+    summary: If there is a menu open this will dismiss the menu.
+    name: dismissMenu
+    fullName: dismissMenu
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'dismissMenu: () => void;'
+      return:
+        type:
+          - () => void
+  - uid: '@fluentui/react!IComboBox#focus:member(1)'
+    summary: Sets focus to the input in the ComboBox
+    name: 'focus(shouldOpenOnFocus, useFocusAsync)'
+    fullName: 'focus(shouldOpenOnFocus, useFocusAsync)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'focus(shouldOpenOnFocus?: boolean, useFocusAsync?: boolean): boolean;'
+      return:
+        type:
+          - boolean
+        description: 'True if focus could be set, false if no operation was taken.'
+      parameters:
+        - id: shouldOpenOnFocus
+          description: Determines if we should open the ComboBox menu when the input gets focus.
+          type:
+            - boolean
+        - id: useFocusAsync
+          description: Determines if we should focus the input asynchronously.
+          type:
+            - boolean
+  - uid: '@fluentui/react!IComboBox#selectedOptions:member'
+    summary: All selected options.
+    name: selectedOptions
+    fullName: selectedOptions
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly selectedOptions: IComboBoxOption[];'
+      return:
+        type:
+          - 'IComboBoxOption[]'

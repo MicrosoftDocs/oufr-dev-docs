@@ -9,7 +9,7 @@ items:
     extends:
       - 'Pick<IDetailsListProps, ''onRenderItemColumn'' | ''getCellValueKey''>'
       - IBaseProps<IDetailsRow>
-      - 'office-ui-fabric-react!IDetailsItemProps:interface'
+      - 'IDetailsItemProps '
     package: office-ui-fabric-react!
     children:
       - 'office-ui-fabric-react!IDetailsRowBaseProps#cellsByColumn:member'
@@ -101,7 +101,7 @@ items:
       content: 'collapseAllVisibility?: CollapseAllVisibility;'
       return:
         type:
-          - 'office-ui-fabric-react!CollapseAllVisibility:enum'
+          - CollapseAllVisibility
   - uid: 'office-ui-fabric-react!IDetailsRowBaseProps#compact:member'
     summary: Whether to render in compact mode
     name: compact
@@ -137,7 +137,7 @@ items:
       content: 'dragDropEvents?: IDragDropEvents;'
       return:
         type:
-          - 'office-ui-fabric-react!IDragDropEvents:interface'
+          - IDragDropEvents
   - uid: 'office-ui-fabric-react!IDetailsRowBaseProps#dragDropHelper:member'
     summary: Helper for the drag and drop
     name: dragDropHelper
@@ -149,7 +149,7 @@ items:
       content: 'dragDropHelper?: IDragDropHelper;'
       return:
         type:
-          - 'office-ui-fabric-react!IDragDropHelper:interface'
+          - IDragDropHelper
   - uid: 'office-ui-fabric-react!IDetailsRowBaseProps#enableUpdateAnimations:member'
     summary: Whether to animate updates
     name: enableUpdateAnimations

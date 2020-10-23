@@ -1,0 +1,145 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-internal!SelectionZone:class'
+    name: SelectionZone
+    fullName: SelectionZone
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'React.Component<ISelectionZoneProps, ISelectionZoneState> '
+    package: '@fluentui/react-internal!'
+    children:
+      - '@fluentui/react-internal!SelectionZone:constructor(1)'
+      - '@fluentui/react-internal!SelectionZone#componentDidMount:member(1)'
+      - '@fluentui/react-internal!SelectionZone#componentDidUpdate:member(1)'
+      - '@fluentui/react-internal!SelectionZone#componentWillUnmount:member(1)'
+      - '@fluentui/react-internal!SelectionZone.defaultProps:member'
+      - '@fluentui/react-internal!SelectionZone.getDerivedStateFromProps:member(1)'
+      - '@fluentui/react-internal!SelectionZone#ignoreNextFocus:member'
+      - '@fluentui/react-internal!SelectionZone#render:member(1)'
+  - uid: '@fluentui/react-internal!SelectionZone:constructor(1)'
+    summary: Constructs a new instance of the `SelectionZone` class
+    name: (constructor)(props)
+    fullName: (constructor)(props)
+    langs:
+      - typeScript
+    type: constructor
+    syntax:
+      content: 'constructor(props: ISelectionZoneProps);'
+      parameters:
+        - id: props
+          description: ''
+          type:
+            - ISelectionZoneProps
+  - uid: '@fluentui/react-internal!SelectionZone#componentDidMount:member(1)'
+    name: componentDidMount()
+    fullName: componentDidMount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'componentDidMount(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: '@fluentui/react-internal!SelectionZone#componentDidUpdate:member(1)'
+    name: componentDidUpdate(previousProps)
+    fullName: componentDidUpdate(previousProps)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'componentDidUpdate(previousProps: ISelectionZoneProps): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: previousProps
+          description: ''
+          type:
+            - ISelectionZoneProps
+  - uid: '@fluentui/react-internal!SelectionZone#componentWillUnmount:member(1)'
+    name: componentWillUnmount()
+    fullName: componentWillUnmount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'componentWillUnmount(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: '@fluentui/react-internal!SelectionZone.defaultProps:member'
+    name: defaultProps
+    fullName: defaultProps
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: |-
+        static defaultProps: {
+                isSelectedOnFocus: boolean;
+                selectionMode: SelectionMode;
+            };
+      return:
+        type:
+          - |-
+            {
+                    isSelectedOnFocus: boolean;
+                    selectionMode: SelectionMode;
+                }
+  - uid: '@fluentui/react-internal!SelectionZone.getDerivedStateFromProps:member(1)'
+    name: 'getDerivedStateFromProps(nextProps, prevState)'
+    fullName: 'getDerivedStateFromProps(nextProps, prevState)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        static getDerivedStateFromProps(nextProps: ISelectionZoneProps, prevState: ISelectionZoneState):
+        ISelectionZoneState;
+      return:
+        type:
+          - ISelectionZoneState
+        description: ''
+      parameters:
+        - id: nextProps
+          description: ''
+          type:
+            - ISelectionZoneProps
+        - id: prevState
+          description: ''
+          type:
+            - ISelectionZoneState
+  - uid: '@fluentui/react-internal!SelectionZone#ignoreNextFocus:member'
+    summary: >-
+      In some cases, the consuming scenario requires to set focus on a row without having SelectionZone react to the
+      event. Note that focus events in IE &lt;<!-- -->= 11 will occur asynchronously after .focus() has been called on
+      an element, so we need a flag to store the idea that we will bypass the "next" focus event that occurs. This
+      method does that.
+    name: ignoreNextFocus
+    fullName: ignoreNextFocus
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'ignoreNextFocus: () => void;'
+      return:
+        type:
+          - () => void
+  - uid: '@fluentui/react-internal!SelectionZone#render:member(1)'
+    name: render()
+    fullName: render()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'render(): JSX.Element;'
+      return:
+        type:
+          - JSX.Element
+        description: ''

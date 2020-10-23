@@ -1,0 +1,68 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-internal!IListOnRenderRootProps:interface'
+    summary: Props passed to the render override for the list root.
+    name: IListOnRenderRootProps
+    fullName: IListOnRenderRootProps
+    langs:
+      - typeScript
+    type: interface
+    syntax:
+      typeParameters:
+        - id: T
+    package: '@fluentui/react-internal!'
+    children:
+      - '@fluentui/react-internal!IListOnRenderRootProps#divProps:member'
+      - '@fluentui/react-internal!IListOnRenderRootProps#pages:member'
+      - '@fluentui/react-internal!IListOnRenderRootProps#rootRef:member'
+      - '@fluentui/react-internal!IListOnRenderRootProps#surfaceElement:member'
+  - uid: '@fluentui/react-internal!IListOnRenderRootProps#divProps:member'
+    summary: Props to apply to the list root element.
+    name: divProps
+    fullName: divProps
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'divProps: React.HTMLAttributes<HTMLDivElement>;'
+      return:
+        type:
+          - React.HTMLAttributes<HTMLDivElement>
+  - uid: '@fluentui/react-internal!IListOnRenderRootProps#pages:member'
+    summary: The active pages to be rendered into the list. These will have been rendered using `onRenderPage`<!-- -->.
+    name: pages
+    fullName: pages
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'pages: IPage<T>[];'
+      return:
+        type:
+          - 'IPage<T>[]'
+  - uid: '@fluentui/react-internal!IListOnRenderRootProps#rootRef:member'
+    summary: The ref to be applied to the list root. The `List` uses this element to track scroll position and sizing.
+    name: rootRef
+    fullName: rootRef
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rootRef: React.Ref<HTMLDivElement>;'
+      return:
+        type:
+          - React.Ref<HTMLDivElement>
+  - uid: '@fluentui/react-internal!IListOnRenderRootProps#surfaceElement:member'
+    summary: >-
+      The content to be rendered as the list surface element. This will have been rendered using `onRenderSurface`<!--
+      -->.
+    name: surfaceElement
+    fullName: surfaceElement
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'surfaceElement: JSX.Element | null;'
+      return:
+        type:
+          - JSX.Element | null

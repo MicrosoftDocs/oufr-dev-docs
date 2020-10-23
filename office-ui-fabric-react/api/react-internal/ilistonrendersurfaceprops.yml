@@ -1,0 +1,66 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-internal!IListOnRenderSurfaceProps:interface'
+    summary: Props passed to the render override for the list surface.
+    name: IListOnRenderSurfaceProps
+    fullName: IListOnRenderSurfaceProps
+    langs:
+      - typeScript
+    type: interface
+    syntax:
+      typeParameters:
+        - id: T
+    package: '@fluentui/react-internal!'
+    children:
+      - '@fluentui/react-internal!IListOnRenderSurfaceProps#divProps:member'
+      - '@fluentui/react-internal!IListOnRenderSurfaceProps#pageElements:member'
+      - '@fluentui/react-internal!IListOnRenderSurfaceProps#pages:member'
+      - '@fluentui/react-internal!IListOnRenderSurfaceProps#surfaceRef:member'
+  - uid: '@fluentui/react-internal!IListOnRenderSurfaceProps#divProps:member'
+    summary: Props to apply to the list surface element.
+    name: divProps
+    fullName: divProps
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'divProps: React.HTMLAttributes<HTMLDivElement>;'
+      return:
+        type:
+          - React.HTMLAttributes<HTMLDivElement>
+  - uid: '@fluentui/react-internal!IListOnRenderSurfaceProps#pageElements:member'
+    summary: The content to be rendered representing all active pages.
+    name: pageElements
+    fullName: pageElements
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'pageElements: JSX.Element[];'
+      return:
+        type:
+          - 'JSX.Element[]'
+  - uid: '@fluentui/react-internal!IListOnRenderSurfaceProps#pages:member'
+    summary: The active pages to be rendered into the list. These will have been rendered using `onRenderPage`<!-- -->.
+    name: pages
+    fullName: pages
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'pages: IPage<T>[];'
+      return:
+        type:
+          - 'IPage<T>[]'
+  - uid: '@fluentui/react-internal!IListOnRenderSurfaceProps#surfaceRef:member'
+    summary: A ref to be applied to the surface element. The `List` uses this element to track content size and focus.
+    name: surfaceRef
+    fullName: surfaceRef
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'surfaceRef: React.Ref<HTMLDivElement>;'
+      return:
+        type:
+          - React.Ref<HTMLDivElement>

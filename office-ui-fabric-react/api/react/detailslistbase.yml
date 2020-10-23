@@ -1,0 +1,229 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react!DetailsListBase:class'
+    name: DetailsListBase
+    fullName: DetailsListBase
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'React.Component<IDetailsListProps, IDetailsListState> '
+    implements:
+      - 'IDetailsList '
+    package: '@fluentui/react!'
+    children:
+      - '@fluentui/react!DetailsListBase#_onRenderRow:member'
+      - '@fluentui/react!DetailsListBase:constructor(1)'
+      - '@fluentui/react!DetailsListBase#componentDidUpdate:member(1)'
+      - '@fluentui/react!DetailsListBase#componentWillUnmount:member(1)'
+      - '@fluentui/react!DetailsListBase.defaultProps:member'
+      - '@fluentui/react!DetailsListBase#focusIndex:member(1)'
+      - '@fluentui/react!DetailsListBase#forceUpdate:member(1)'
+      - '@fluentui/react!DetailsListBase.getDerivedStateFromProps:member(1)'
+      - '@fluentui/react!DetailsListBase#getStartItemIndexInView:member(1)'
+      - '@fluentui/react!DetailsListBase#render:member(1)'
+      - '@fluentui/react!DetailsListBase#scrollToIndex:member(1)'
+  - uid: '@fluentui/react!DetailsListBase#_onRenderRow:member'
+    name: _onRenderRow
+    fullName: _onRenderRow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        protected _onRenderRow: (props: IDetailsRowProps, defaultRender?: IRenderFunction<IDetailsRowProps> | undefined)
+        => JSX.Element;
+      return:
+        type:
+          - '(props: IDetailsRowProps, defaultRender?: IRenderFunction<IDetailsRowProps> | undefined) => JSX.Element'
+  - uid: '@fluentui/react!DetailsListBase:constructor(1)'
+    summary: Constructs a new instance of the `DetailsListBase` class
+    name: (constructor)(props)
+    fullName: (constructor)(props)
+    langs:
+      - typeScript
+    type: constructor
+    syntax:
+      content: 'constructor(props: IDetailsListProps);'
+      parameters:
+        - id: props
+          description: ''
+          type:
+            - IDetailsListProps
+  - uid: '@fluentui/react!DetailsListBase#componentDidUpdate:member(1)'
+    name: 'componentDidUpdate(prevProps, prevState)'
+    fullName: 'componentDidUpdate(prevProps, prevState)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'componentDidUpdate(prevProps: IDetailsListProps, prevState: IDetailsListState): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: prevProps
+          description: ''
+          type:
+            - IDetailsListProps
+        - id: prevState
+          description: ''
+          type:
+            - IDetailsListState
+  - uid: '@fluentui/react!DetailsListBase#componentWillUnmount:member(1)'
+    name: componentWillUnmount()
+    fullName: componentWillUnmount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'componentWillUnmount(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: '@fluentui/react!DetailsListBase.defaultProps:member'
+    name: defaultProps
+    fullName: defaultProps
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: |-
+        static defaultProps: {
+                layoutMode: DetailsListLayoutMode;
+                selectionMode: SelectionMode;
+                constrainMode: ConstrainMode;
+                checkboxVisibility: CheckboxVisibility;
+                isHeaderVisible: boolean;
+                compact: boolean;
+                useFastIcons: boolean;
+            };
+      return:
+        type:
+          - |-
+            {
+                    layoutMode: DetailsListLayoutMode;
+                    selectionMode: SelectionMode;
+                    constrainMode: ConstrainMode;
+                    checkboxVisibility: CheckboxVisibility;
+                    isHeaderVisible: boolean;
+                    compact: boolean;
+                    useFastIcons: boolean;
+                }
+  - uid: '@fluentui/react!DetailsListBase#focusIndex:member(1)'
+    name: 'focusIndex(index, forceIntoFirstElement, measureItem, scrollToMode)'
+    fullName: 'focusIndex(index, forceIntoFirstElement, measureItem, scrollToMode)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        focusIndex(index: number, forceIntoFirstElement?: boolean, measureItem?: (itemIndex: number) => number,
+        scrollToMode?: ScrollToMode): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: index
+          description: ''
+          type:
+            - number
+        - id: forceIntoFirstElement
+          description: ''
+          type:
+            - boolean
+        - id: measureItem
+          description: ''
+          type:
+            - '(itemIndex: number) => number'
+        - id: scrollToMode
+          description: ''
+          type:
+            - ScrollToMode
+  - uid: '@fluentui/react!DetailsListBase#forceUpdate:member(1)'
+    name: forceUpdate()
+    fullName: forceUpdate()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'forceUpdate(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: '@fluentui/react!DetailsListBase.getDerivedStateFromProps:member(1)'
+    name: 'getDerivedStateFromProps(nextProps, previousState)'
+    fullName: 'getDerivedStateFromProps(nextProps, previousState)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        static getDerivedStateFromProps(nextProps: IDetailsListProps, previousState: IDetailsListState):
+        IDetailsListState;
+      return:
+        type:
+          - IDetailsListState
+        description: ''
+      parameters:
+        - id: nextProps
+          description: ''
+          type:
+            - IDetailsListProps
+        - id: previousState
+          description: ''
+          type:
+            - IDetailsListState
+  - uid: '@fluentui/react!DetailsListBase#getStartItemIndexInView:member(1)'
+    name: getStartItemIndexInView()
+    fullName: getStartItemIndexInView()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getStartItemIndexInView(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: '@fluentui/react!DetailsListBase#render:member(1)'
+    name: render()
+    fullName: render()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'render(): JSX.Element;'
+      return:
+        type:
+          - JSX.Element
+        description: ''
+  - uid: '@fluentui/react!DetailsListBase#scrollToIndex:member(1)'
+    name: 'scrollToIndex(index, measureItem, scrollToMode)'
+    fullName: 'scrollToIndex(index, measureItem, scrollToMode)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'scrollToIndex(index: number, measureItem?: (itemIndex: number) => number, scrollToMode?: ScrollToMode): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: index
+          description: ''
+          type:
+            - number
+        - id: measureItem
+          description: ''
+          type:
+            - '(itemIndex: number) => number'
+        - id: scrollToMode
+          description: ''
+          type:
+            - ScrollToMode

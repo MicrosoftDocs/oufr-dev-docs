@@ -1,0 +1,109 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react!IBreadcrumbItem:interface'
+    name: IBreadcrumbItem
+    fullName: IBreadcrumbItem
+    langs:
+      - typeScript
+    type: interface
+    package: '@fluentui/react!'
+    children:
+      - '@fluentui/react!IBreadcrumbItem#as:member'
+      - '@fluentui/react!IBreadcrumbItem#href:member'
+      - '@fluentui/react!IBreadcrumbItem#isCurrentItem:member'
+      - '@fluentui/react!IBreadcrumbItem#key:member'
+      - '@fluentui/react!IBreadcrumbItem#onClick:member'
+      - '@fluentui/react!IBreadcrumbItem#role:member'
+      - '@fluentui/react!IBreadcrumbItem#text:member'
+  - uid: '@fluentui/react!IBreadcrumbItem#as:member'
+    summary: >-
+      Optional prop to render the item as a heading of your choice.
+
+
+      You can also use this to force items to render as links instead of buttons (by default, any item with a `href`
+      renders as a link, and any item without a `href` renders as a button). This is not generally recommended because
+      it may prevent activating the link using the keyboard.
+    name: as
+    fullName: as
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'as?: ''h1'' | ''h2'' | ''h3'' | ''h4'' | ''h5'' | ''h6'' | ''a'';'
+      return:
+        type:
+          - '''h1'' | ''h2'' | ''h3'' | ''h4'' | ''h5'' | ''h6'' | ''a'''
+  - uid: '@fluentui/react!IBreadcrumbItem#href:member'
+    summary: Url to navigate to when this breadcrumb item is clicked.
+    name: href
+    fullName: href
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'href?: string;'
+      return:
+        type:
+          - string
+  - uid: '@fluentui/react!IBreadcrumbItem#isCurrentItem:member'
+    summary: >-
+      Whether this is the breadcrumb item the user is currently navigated to. If true, `aria-current="page"` will be
+      applied to this breadcrumb item.
+    name: isCurrentItem
+    fullName: isCurrentItem
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isCurrentItem?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: '@fluentui/react!IBreadcrumbItem#key:member'
+    summary: Arbitrary unique string associated with the breadcrumb item.
+    name: key
+    fullName: key
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'key: string;'
+      return:
+        type:
+          - string
+  - uid: '@fluentui/react!IBreadcrumbItem#onClick:member'
+    summary: Callback issued when the breadcrumb item is selected.
+    name: onClick
+    fullName: onClick
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onClick?: (ev?: React.MouseEvent<HTMLElement>, item?: IBreadcrumbItem) => void;'
+      return:
+        type:
+          - '(ev?: React.MouseEvent<HTMLElement>, item?: IBreadcrumbItem) => void'
+  - uid: '@fluentui/react!IBreadcrumbItem#role:member'
+    summary: Optional role for the breadcrumb item (which renders as a button by default)
+    name: role
+    fullName: role
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'role?: string;'
+      return:
+        type:
+          - string
+  - uid: '@fluentui/react!IBreadcrumbItem#text:member'
+    summary: Text to display to the user for the breadcrumb item.
+    name: text
+    fullName: text
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'text: string;'
+      return:
+        type:
+          - string

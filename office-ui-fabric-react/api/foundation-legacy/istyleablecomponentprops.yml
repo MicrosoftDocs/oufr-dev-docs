@@ -1,0 +1,68 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/foundation-legacy!IStyleableComponentProps:interface'
+    summary: >-
+      Optional props for styleable components. If these props are present, they will automatically be used by Foundation
+      when applying theming and styling.
+    name: IStyleableComponentProps
+    fullName: IStyleableComponentProps
+    langs:
+      - typeScript
+    type: interface
+    syntax:
+      typeParameters:
+        - id: TViewProps
+        - id: TTokens
+        - id: TStyleSet
+          type:
+            - IStyleSet<TStyleSet>
+    package: '@fluentui/foundation-legacy!'
+    children:
+      - '@fluentui/foundation-legacy!IStyleableComponentProps#className:member'
+      - '@fluentui/foundation-legacy!IStyleableComponentProps#styles:member'
+      - '@fluentui/foundation-legacy!IStyleableComponentProps#theme:member'
+      - '@fluentui/foundation-legacy!IStyleableComponentProps#tokens:member'
+  - uid: '@fluentui/foundation-legacy!IStyleableComponentProps#className:member'
+    name: className
+    fullName: className
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'className?: string;'
+      return:
+        type:
+          - string
+  - uid: '@fluentui/foundation-legacy!IStyleableComponentProps#styles:member'
+    name: styles
+    fullName: styles
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'styles?: IStylesFunctionOrObject<TViewProps, TTokens, TStyleSet>;'
+      return:
+        type:
+          - 'IStylesFunctionOrObject<TViewProps, TTokens, TStyleSet>'
+  - uid: '@fluentui/foundation-legacy!IStyleableComponentProps#theme:member'
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type:
+          - '@fluentui/theme!ITheme:interface'
+  - uid: '@fluentui/foundation-legacy!IStyleableComponentProps#tokens:member'
+    name: tokens
+    fullName: tokens
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tokens?: ITokenFunctionOrObject<TViewProps, TTokens>;'
+      return:
+        type:
+          - 'ITokenFunctionOrObject<TViewProps, TTokens>'

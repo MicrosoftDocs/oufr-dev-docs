@@ -1,0 +1,204 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-internal!IColorSliderProps:interface'
+    name: IColorSliderProps
+    fullName: IColorSliderProps
+    langs:
+      - typeScript
+    type: interface
+    package: '@fluentui/react-internal!'
+    children:
+      - '@fluentui/react-internal!IColorSliderProps#ariaLabel:member'
+      - '@fluentui/react-internal!IColorSliderProps#className:member'
+      - '@fluentui/react-internal!IColorSliderProps#componentRef:member'
+      - '@fluentui/react-internal!IColorSliderProps#isAlpha:member'
+      - '@fluentui/react-internal!IColorSliderProps#maxValue:member'
+      - '@fluentui/react-internal!IColorSliderProps#minValue:member'
+      - '@fluentui/react-internal!IColorSliderProps#onChange:member'
+      - '@fluentui/react-internal!IColorSliderProps#overlayColor:member'
+      - '@fluentui/react-internal!IColorSliderProps#overlayStyle:member'
+      - '@fluentui/react-internal!IColorSliderProps#styles:member'
+      - '@fluentui/react-internal!IColorSliderProps#theme:member'
+      - '@fluentui/react-internal!IColorSliderProps#thumbColor:member'
+      - '@fluentui/react-internal!IColorSliderProps#type:member'
+      - '@fluentui/react-internal!IColorSliderProps#value:member'
+  - uid: '@fluentui/react-internal!IColorSliderProps#ariaLabel:member'
+    summary: Label of the ColorSlider for the benefit of screen reader users.
+    name: ariaLabel
+    fullName: ariaLabel
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'ariaLabel?: string;'
+      return:
+        type:
+          - string
+  - uid: '@fluentui/react-internal!IColorSliderProps#className:member'
+    summary: Additional CSS class(es) to apply to the ColorSlider.
+    name: className
+    fullName: className
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'className?: string;'
+      return:
+        type:
+          - string
+  - uid: '@fluentui/react-internal!IColorSliderProps#componentRef:member'
+    summary: Gets the component ref.
+    name: componentRef
+    fullName: componentRef
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'componentRef?: IRefObject<IColorSlider>;'
+      return:
+        type:
+          - IRefObject<IColorSlider>
+  - uid: '@fluentui/react-internal!IColorSliderProps#isAlpha:member'
+    summary: >-
+      If true, the slider represents an alpha slider and will display a gray checkered pattern in the background.
+      Otherwise, the slider represents a hue slider.
+    deprecated:
+      content: Use `type`
+    name: isAlpha
+    fullName: isAlpha
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isAlpha?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!IColorSliderProps#maxValue:member'
+    summary: Maximum value of the slider.
+    deprecated:
+      content: 'Will be 100 for alpha or transparency sliders, or 359 for hue sliders.'
+    name: maxValue
+    fullName: maxValue
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'maxValue?: number;'
+      return:
+        type:
+          - number
+  - uid: '@fluentui/react-internal!IColorSliderProps#minValue:member'
+    summary: Minimum value of the slider.
+    deprecated:
+      content: Will always be 0
+    name: minValue
+    fullName: minValue
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'minValue?: number;'
+      return:
+        type:
+          - number
+  - uid: '@fluentui/react-internal!IColorSliderProps#onChange:member'
+    summary: Callback issued when the value changes.
+    name: onChange
+    fullName: onChange
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onChange?: (event: React.MouseEvent | React.KeyboardEvent, newValue?: number) => void;'
+      return:
+        type:
+          - '(event: React.MouseEvent | React.KeyboardEvent, newValue?: number) => void'
+  - uid: '@fluentui/react-internal!IColorSliderProps#overlayColor:member'
+    summary: 'Hex color to use when rendering an alpha or transparency slider''s overlay, \*without\* the `#`<!-- -->.'
+    name: overlayColor
+    fullName: overlayColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'overlayColor?: string;'
+      return:
+        type:
+          - string
+  - uid: '@fluentui/react-internal!IColorSliderProps#overlayStyle:member'
+    summary: Custom style for the overlay element.
+    deprecated:
+      content: Use `overlayColor` instead
+    name: overlayStyle
+    fullName: overlayStyle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'overlayStyle?: React.CSSProperties;'
+      return:
+        type:
+          - React.CSSProperties
+  - uid: '@fluentui/react-internal!IColorSliderProps#styles:member'
+    summary: Call to provide customized styling that will layer on top of the variant rules.
+    name: styles
+    fullName: styles
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'styles?: IStyleFunctionOrObject<IColorSliderStyleProps, IColorSliderStyles>;'
+      return:
+        type:
+          - 'IStyleFunctionOrObject<IColorSliderStyleProps, IColorSliderStyles>'
+  - uid: '@fluentui/react-internal!IColorSliderProps#theme:member'
+    summary: Theme (provided through customization).
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type:
+          - '@fluentui/theme!ITheme:interface'
+  - uid: '@fluentui/react-internal!IColorSliderProps#thumbColor:member'
+    summary: CSS-compatible string for the color of the thumb element.
+    deprecated:
+      content: Not used. Use `styles.sliderThumb` instead.
+    name: thumbColor
+    fullName: thumbColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'thumbColor?: string;'
+      return:
+        type:
+          - string
+  - uid: '@fluentui/react-internal!IColorSliderProps#type:member'
+    summary: Type of slider to display.
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type?: ''hue'' | ''alpha'' | ''transparency'';'
+      return:
+        type:
+          - '''hue'' | ''alpha'' | ''transparency'''
+  - uid: '@fluentui/react-internal!IColorSliderProps#value:member'
+    summary: Current value of the slider.
+    name: value
+    fullName: value
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'value?: number;'
+      return:
+        type:
+          - number

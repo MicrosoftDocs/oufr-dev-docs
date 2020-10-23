@@ -15,6 +15,7 @@ items:
       - '@fluentui/theme!IEffects:interface'
       - '@fluentui/theme!IFontStyles:interface'
       - '@fluentui/theme!IPalette:interface'
+      - '@fluentui/theme!IPartialTheme:interface'
       - '@fluentui/theme!IScheme:interface'
       - '@fluentui/theme!ISemanticColors:interface'
       - '@fluentui/theme!ISemanticTextColors:interface'
@@ -42,49 +43,49 @@ items:
           type:
             - string | null
   - uid: '@fluentui/theme!createTheme:function(1)'
-    summary: Creates a custom theme definition which can be used with the Customizer.
+    summary: Creates a custom theme definition.
     name: 'createTheme(theme, depComments)'
     fullName: 'createTheme(theme, depComments)'
     langs:
       - typeScript
     type: function
     syntax:
-      content: 'export declare function createTheme(theme: IPartialTheme, depComments?: boolean): ITheme;'
+      content: 'export declare function createTheme(theme?: PartialTheme, depComments?: boolean): Theme;'
       return:
         type:
-          - '@fluentui/theme!ITheme:interface'
+          - '@fluentui/theme!Theme:interface'
         description: ''
       parameters:
         - id: theme
           description: Partial theme object.
           type:
-            - IPartialTheme
+            - '@fluentui/theme!PartialTheme:interface'
         - id: depComments
           description: Whether to include deprecated tags as comments for deprecated slots.
           type:
             - boolean
   - uid: '@fluentui/theme!mergeThemes:function(1)'
-    summary: Merges multiple themes.
-    name: mergeThemes(themes)
-    fullName: mergeThemes(themes)
+    summary: Merge a partial/full theme into a full theme and returns a merged full theme.
+    name: 'mergeThemes(theme, partialTheme)'
+    fullName: 'mergeThemes(theme, partialTheme)'
     langs:
       - typeScript
     type: function
     syntax:
-      content: >-
-        export declare function mergeThemes<TResult = PartialTheme>(...themes: (undefined | PartialTheme | Theme)[]):
-        TResult;
+      content: 'export declare function mergeThemes(theme: Theme, partialTheme?: PartialTheme): Theme;'
       return:
         type:
-          - TResult
+          - '@fluentui/theme!Theme:interface'
         description: ''
       parameters:
-        - id: themes
+        - id: theme
           description: ''
           type:
-            - '(undefined | PartialTheme | Theme)[]'
-      typeParameters:
-        - id: TResult
+            - '@fluentui/theme!Theme:interface'
+        - id: partialTheme
+          description: ''
+          type:
+            - '@fluentui/theme!PartialTheme:interface'
   - uid: '@fluentui/theme!registerDefaultFontFaces:function(1)'
     name: registerDefaultFontFaces(baseUrl)
     fullName: registerDefaultFontFaces(baseUrl)
@@ -115,6 +116,8 @@ references:
     name: IFontStyles
   - uid: '@fluentui/theme!IPalette:interface'
     name: IPalette
+  - uid: '@fluentui/theme!IPartialTheme:interface'
+    name: IPartialTheme
   - uid: '@fluentui/theme!IScheme:interface'
     name: IScheme
   - uid: '@fluentui/theme!ISemanticColors:interface'

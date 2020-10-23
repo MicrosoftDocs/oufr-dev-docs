@@ -1,0 +1,162 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-internal!IDragDropOptions:interface'
+    summary: The drag and drop event listener configuration.
+    name: IDragDropOptions
+    fullName: IDragDropOptions
+    langs:
+      - typeScript
+    type: interface
+    package: '@fluentui/react-internal!'
+    children:
+      - '@fluentui/react-internal!IDragDropOptions#canDrag:member'
+      - '@fluentui/react-internal!IDragDropOptions#canDrop:member'
+      - '@fluentui/react-internal!IDragDropOptions#context:member'
+      - '@fluentui/react-internal!IDragDropOptions#eventMap:member'
+      - '@fluentui/react-internal!IDragDropOptions#key:member'
+      - '@fluentui/react-internal!IDragDropOptions#onDragEnd:member'
+      - '@fluentui/react-internal!IDragDropOptions#onDragOver:member'
+      - '@fluentui/react-internal!IDragDropOptions#onDragStart:member'
+      - '@fluentui/react-internal!IDragDropOptions#onDrop:member'
+      - '@fluentui/react-internal!IDragDropOptions#selectionIndex:member'
+      - '@fluentui/react-internal!IDragDropOptions#updateDropState:member'
+  - uid: '@fluentui/react-internal!IDragDropOptions#canDrag:member'
+    summary: Whether or not drag action is allowed.
+    name: canDrag
+    fullName: canDrag
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'canDrag?: (item?: any) => boolean;'
+      return:
+        type:
+          - '(item?: any) => boolean'
+  - uid: '@fluentui/react-internal!IDragDropOptions#canDrop:member'
+    summary: Whether or not drop action is allowed.
+    name: canDrop
+    fullName: canDrop
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'canDrop?: (dropContext?: IDragDropContext, dragContext?: IDragDropContext) => boolean;'
+      return:
+        type:
+          - '(dropContext?: IDragDropContext, dragContext?: IDragDropContext) => boolean'
+  - uid: '@fluentui/react-internal!IDragDropOptions#context:member'
+    summary: Context associated with drag and drop event.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: IDragDropContext;'
+      return:
+        type:
+          - IDragDropContext
+  - uid: '@fluentui/react-internal!IDragDropOptions#eventMap:member'
+    summary: Map of event name to callback function to subscribe to.
+    name: eventMap
+    fullName: eventMap
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: |-
+        eventMap?: {
+                eventName: string;
+                callback: (context: IDragDropContext, event?: any) => void;
+            }[];
+      return:
+        type:
+          - |-
+            {
+                    eventName: string;
+                    callback: (context: IDragDropContext, event?: any) => void;
+                }[]
+  - uid: '@fluentui/react-internal!IDragDropOptions#key:member'
+    summary: Unique key to associate with instance.
+    name: key
+    fullName: key
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'key?: string;'
+      return:
+        type:
+          - string
+  - uid: '@fluentui/react-internal!IDragDropOptions#onDragEnd:member'
+    summary: On drag end event callback.
+    name: onDragEnd
+    fullName: onDragEnd
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onDragEnd?: (item?: any, event?: DragEvent) => void;'
+      return:
+        type:
+          - '(item?: any, event?: DragEvent) => void'
+  - uid: '@fluentui/react-internal!IDragDropOptions#onDragOver:member'
+    summary: On drag over element(s) event callback.
+    name: onDragOver
+    fullName: onDragOver
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onDragOver?: (item?: any, event?: DragEvent) => void;'
+      return:
+        type:
+          - '(item?: any, event?: DragEvent) => void'
+  - uid: '@fluentui/react-internal!IDragDropOptions#onDragStart:member'
+    summary: On drag start event callback.
+    name: onDragStart
+    fullName: onDragStart
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onDragStart?: (item?: any, itemIndex?: number, selectedItems?: any[], event?: MouseEvent) => void;'
+      return:
+        type:
+          - '(item?: any, itemIndex?: number, selectedItems?: any[], event?: MouseEvent) => void'
+  - uid: '@fluentui/react-internal!IDragDropOptions#onDrop:member'
+    summary: On drop event callback.
+    name: onDrop
+    fullName: onDrop
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onDrop?: (item?: any, event?: DragEvent) => void;'
+      return:
+        type:
+          - '(item?: any, event?: DragEvent) => void'
+  - uid: '@fluentui/react-internal!IDragDropOptions#selectionIndex:member'
+    summary: Selection index on drag and drop event.
+    name: selectionIndex
+    fullName: selectionIndex
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'selectionIndex: number;'
+      return:
+        type:
+          - number
+  - uid: '@fluentui/react-internal!IDragDropOptions#updateDropState:member'
+    summary: Callback on drop state update.
+    name: updateDropState
+    fullName: updateDropState
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'updateDropState: (isDropping: boolean, event: DragEvent) => void;'
+      return:
+        type:
+          - '(isDropping: boolean, event: DragEvent) => void'

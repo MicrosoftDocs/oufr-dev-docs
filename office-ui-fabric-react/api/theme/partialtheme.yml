@@ -1,19 +1,25 @@
 ### YamlMime:UniversalReference
 items:
   - uid: '@fluentui/theme!PartialTheme:interface'
-    summary: 'A partial theme, provided by the customer. The internal `createTheme` helper will fill in the rest.'
+    summary: A partial theme.
     name: PartialTheme
     fullName: PartialTheme
     langs:
       - typeScript
     type: interface
-    extends:
-      - 'IPartialTheme '
     package: '@fluentui/theme!'
     children:
       - '@fluentui/theme!PartialTheme#components:member'
+      - '@fluentui/theme!PartialTheme#defaultFontStyle:member'
+      - '@fluentui/theme!PartialTheme#disableGlobalClassNames:member'
+      - '@fluentui/theme!PartialTheme#effects:member'
+      - '@fluentui/theme!PartialTheme#fonts:member'
+      - '@fluentui/theme!PartialTheme#isInverted:member'
+      - '@fluentui/theme!PartialTheme#palette:member'
+      - '@fluentui/theme!PartialTheme#rtl:member'
+      - '@fluentui/theme!PartialTheme#semanticColors:member'
+      - '@fluentui/theme!PartialTheme#spacing:member'
       - '@fluentui/theme!PartialTheme#stylesheets:member'
-      - '@fluentui/theme!PartialTheme#tokens:member'
   - uid: '@fluentui/theme!PartialTheme#components:member'
     name: components
     fullName: components
@@ -21,10 +27,110 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'components?: ComponentStyles;'
+      content: 'components?: ComponentsStyles;'
       return:
         type:
-          - '@fluentui/theme!ComponentStyles:interface'
+          - ComponentsStyles
+  - uid: '@fluentui/theme!PartialTheme#defaultFontStyle:member'
+    summary: Use this property to specify font property defaults.
+    name: defaultFontStyle
+    fullName: defaultFontStyle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'defaultFontStyle?: IRawStyle;'
+      return:
+        type:
+          - '@fluentui/merge-styles!IRawStyle:interface'
+  - uid: '@fluentui/theme!PartialTheme#disableGlobalClassNames:member'
+    name: disableGlobalClassNames
+    fullName: disableGlobalClassNames
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'disableGlobalClassNames?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: '@fluentui/theme!PartialTheme#effects:member'
+    name: effects
+    fullName: effects
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'effects?: Partial<IEffects>;'
+      return:
+        type:
+          - Partial<IEffects>
+  - uid: '@fluentui/theme!PartialTheme#fonts:member'
+    name: fonts
+    fullName: fonts
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'fonts?: Partial<IFontStyles>;'
+      return:
+        type:
+          - Partial<IFontStyles>
+  - uid: '@fluentui/theme!PartialTheme#isInverted:member'
+    name: isInverted
+    fullName: isInverted
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isInverted?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: '@fluentui/theme!PartialTheme#palette:member'
+    name: palette
+    fullName: palette
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'palette?: Partial<IPalette>;'
+      return:
+        type:
+          - Partial<IPalette>
+  - uid: '@fluentui/theme!PartialTheme#rtl:member'
+    name: rtl
+    fullName: rtl
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rtl?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: '@fluentui/theme!PartialTheme#semanticColors:member'
+    name: semanticColors
+    fullName: semanticColors
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'semanticColors?: Partial<ISemanticColors>;'
+      return:
+        type:
+          - Partial<ISemanticColors>
+  - uid: '@fluentui/theme!PartialTheme#spacing:member'
+    name: spacing
+    fullName: spacing
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'spacing?: Partial<ISpacing>;'
+      return:
+        type:
+          - Partial<ISpacing>
   - uid: '@fluentui/theme!PartialTheme#stylesheets:member'
     name: stylesheets
     fullName: stylesheets
@@ -36,14 +142,3 @@ items:
       return:
         type:
           - 'string[]'
-  - uid: '@fluentui/theme!PartialTheme#tokens:member'
-    name: tokens
-    fullName: tokens
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'tokens?: RecursivePartial<Tokens>;'
-      return:
-        type:
-          - RecursivePartial<Tokens>

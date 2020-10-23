@@ -1,0 +1,95 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-internal!ICommandBarItemProps:interface'
+    summary: ICommandBarItemProps extends IContextualMenuItem and adds a few CommandBar-specific props.
+    name: ICommandBarItemProps
+    fullName: ICommandBarItemProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'IContextualMenuItem '
+    package: '@fluentui/react-internal!'
+    children:
+      - '@fluentui/react-internal!ICommandBarItemProps#buttonStyles:member'
+      - '@fluentui/react-internal!ICommandBarItemProps#cacheKey:member'
+      - '@fluentui/react-internal!ICommandBarItemProps#commandBarButtonAs:member'
+      - '@fluentui/react-internal!ICommandBarItemProps#iconOnly:member'
+      - '@fluentui/react-internal!ICommandBarItemProps#renderedInOverflow:member'
+      - '@fluentui/react-internal!ICommandBarItemProps#tooltipHostProps:member'
+  - uid: '@fluentui/react-internal!ICommandBarItemProps#buttonStyles:member'
+    summary: Custom styles for individual button
+    name: buttonStyles
+    fullName: buttonStyles
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'buttonStyles?: IButtonStyles;'
+      return:
+        type:
+          - 'office-ui-fabric-react!IButtonStyles:interface'
+  - uid: '@fluentui/react-internal!ICommandBarItemProps#cacheKey:member'
+    summary: >-
+      A custom cache key to be used for this item. If `cacheKey` is changed, the cache will invalidate. Defaults to
+      `key` value.
+    name: cacheKey
+    fullName: cacheKey
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'cacheKey?: string;'
+      return:
+        type:
+          - string
+  - uid: '@fluentui/react-internal!ICommandBarItemProps#commandBarButtonAs:member'
+    summary: Method to override the render of the individual command bar button. Not used when item is rendered in overflow.
+    name: commandBarButtonAs
+    fullName: commandBarButtonAs
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'commandBarButtonAs?: IComponentAs<ICommandBarItemProps>;'
+      return:
+        type:
+          - IComponentAs<ICommandBarItemProps>
+  - uid: '@fluentui/react-internal!ICommandBarItemProps#iconOnly:member'
+    summary: 'Show only an icon for this item, not text. Does not apply if item is in the overflow.'
+    name: iconOnly
+    fullName: iconOnly
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'iconOnly?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!ICommandBarItemProps#renderedInOverflow:member'
+    summary: >-
+      Context under which the item is being rendered. This value is mutated by the CommandBar and is useful for
+      adjusting the `onRender` function.
+    name: renderedInOverflow
+    fullName: renderedInOverflow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'renderedInOverflow?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!ICommandBarItemProps#tooltipHostProps:member'
+    summary: Props for the tooltip when in `iconOnly` mode.
+    name: tooltipHostProps
+    fullName: tooltipHostProps
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tooltipHostProps?: ITooltipHostProps;'
+      return:
+        type:
+          - ITooltipHostProps

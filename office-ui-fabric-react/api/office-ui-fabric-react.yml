@@ -835,13 +835,13 @@ items:
       content: 'export declare function buildKeytipConfigMap(config: IKeytipConfig): IKeytipConfigMap;'
       return:
         type:
-          - 'office-ui-fabric-react!IKeytipConfigMap:interface'
+          - IKeytipConfigMap
         description: Config map
       parameters:
         - id: config
           description: IKeytipConfig object
           type:
-            - 'office-ui-fabric-react!IKeytipConfig:interface'
+            - IKeytipConfig
   - uid: 'office-ui-fabric-react!canAnyMenuItemsCheck:function(1)'
     summary: Returns true if a list of menu items can contain a checkbox
     name: canAnyMenuItemsCheck(items)
@@ -905,7 +905,7 @@ items:
         - id: configMap
           description: IKeytipConfigMap to store the keytip in
           type:
-            - 'office-ui-fabric-react!IKeytipConfigMap:interface'
+            - IKeytipConfigMap
         - id: parentSequence
           description: string of the parent keytip
           type:
@@ -913,7 +913,7 @@ items:
         - id: keytip
           description: IKeytipConfigItem data
           type:
-            - 'office-ui-fabric-react!IKeytipConfigItem:interface'
+            - IKeytipConfigItem
   - uid: 'office-ui-fabric-react!correctHex:function(1)'
     summary: >-
       Corrects a hex color to have length 3 or 6. Defaults to white if too short. Does NOT check anything besides the
@@ -945,13 +945,13 @@ items:
       content: 'export declare function correctHSV(color: IHSV): IHSV;'
       return:
         type:
-          - 'office-ui-fabric-react!IHSV:interface'
+          - IHSV
         description: ''
       parameters:
         - id: color
           description: ''
           type:
-            - 'office-ui-fabric-react!IHSV:interface'
+            - IHSV
   - uid: 'office-ui-fabric-react!correctRGB:function(1)'
     summary: Corrects an RGB color to fall within the valid range.
     name: correctRGB(color)
@@ -963,13 +963,13 @@ items:
       content: 'export declare function correctRGB(color: IRGB): IRGB;'
       return:
         type:
-          - 'office-ui-fabric-react!IRGB:interface'
+          - IRGB
         description: ''
       parameters:
         - id: color
           description: ''
           type:
-            - 'office-ui-fabric-react!IRGB:interface'
+            - IRGB
   - uid: 'office-ui-fabric-react!createGenericItem:function(1)'
     name: 'createGenericItem(name, currentValidationState)'
     fullName: 'createGenericItem(name, currentValidationState)'
@@ -997,7 +997,7 @@ items:
         - id: currentValidationState
           description: ''
           type:
-            - 'office-ui-fabric-react!ValidationState:enum'
+            - ValidationState
   - uid: 'office-ui-fabric-react!createItem:function(1)'
     name: 'createItem(name, isValid)'
     fullName: 'createItem(name, isValid)'
@@ -1097,11 +1097,11 @@ items:
         - id: color
           description: ''
           type:
-            - 'office-ui-fabric-react!IColor:interface'
+            - IColor
         - id: shade
           description: ''
           type:
-            - 'office-ui-fabric-react!Shade:enum'
+            - Shade
         - id: isInverted
           description: ''
           type:
@@ -1118,7 +1118,7 @@ items:
         IWindowWithSegments): IRectangle;
       return:
         type:
-          - '@uifabric/utilities!IRectangle:interface'
+          - '@fluentui/utilities!IRectangle:interface'
         description: ''
       parameters:
         - id: target
@@ -1128,7 +1128,7 @@ items:
         - id: targetWindow
           description: ''
           type:
-            - 'office-ui-fabric-react!IWindowWithSegments:interface'
+            - IWindowWithSegments
   - uid: 'office-ui-fabric-react!getColorFromHSV:function(1)'
     summary: >-
       Converts an HSV color (and optional alpha value) to a color object. If `a` is not given, a default of 100 is used.
@@ -1143,13 +1143,13 @@ items:
       content: 'export declare function getColorFromHSV(hsv: IHSV, a?: number): IColor;'
       return:
         type:
-          - 'office-ui-fabric-react!IColor:interface'
+          - IColor
         description: ''
       parameters:
         - id: hsv
           description: ''
           type:
-            - 'office-ui-fabric-react!IHSV:interface'
+            - IHSV
         - id: a
           description: ''
           type:
@@ -1165,13 +1165,13 @@ items:
       content: 'export declare function getColorFromRGBA(rgba: IRGB): IColor;'
       return:
         type:
-          - 'office-ui-fabric-react!IColor:interface'
+          - IColor
         description: ''
       parameters:
         - id: rgba
           description: ''
           type:
-            - 'office-ui-fabric-react!IRGB:interface'
+            - IRGB
   - uid: 'office-ui-fabric-react!getColorFromString:function(1)'
     summary: >-
       Converts a CSS color string to a color object. Note that hex colors \*must\* be prefixed with \# to be considered
@@ -1212,11 +1212,11 @@ items:
         - id: color1
           description: ''
           type:
-            - 'office-ui-fabric-react!IColor:interface'
+            - IColor
         - id: color2
           description: ''
           type:
-            - 'office-ui-fabric-react!IColor:interface'
+            - IColor
   - uid: 'office-ui-fabric-react!getFullColorString:function(1)'
     summary: >-
       Converts a color hue to an HTML color string (with \# prefix). This implementation ignores all components of
@@ -1236,7 +1236,7 @@ items:
         - id: color
           description: ''
           type:
-            - 'office-ui-fabric-react!IColor:interface'
+            - IColor
   - uid: 'office-ui-fabric-react!getMaxHeight:function(1)'
     summary: >-
       Gets the maximum height that a rectangle can have in order to fit below or above a target. If the directional hint
@@ -1271,7 +1271,7 @@ items:
         - id: bounds
           description: ''
           type:
-            - '@uifabric/utilities!IRectangle:interface'
+            - '@fluentui/utilities!IRectangle:interface'
         - id: coverTarget
           description: ''
           type:
@@ -1287,13 +1287,13 @@ items:
       content: 'export declare function getOppositeEdge(edge: RectangleEdge): RectangleEdge;'
       return:
         type:
-          - 'office-ui-fabric-react!RectangleEdge:enum'
+          - RectangleEdge
         description: ''
       parameters:
         - id: edge
           description: ''
           type:
-            - 'office-ui-fabric-react!RectangleEdge:enum'
+            - RectangleEdge
   - uid: 'office-ui-fabric-react!getPersonaInitialsColor:function(1)'
     summary: >-
       Gets the hex color string (prefixed with \#) for the given persona props. This is the logic used internally by the
@@ -1336,11 +1336,11 @@ items:
         - id: color
           description: The base color whose shade is to be computed
           type:
-            - 'office-ui-fabric-react!IColor:interface'
+            - IColor
         - id: shade
           description: The shade of the base color to compute
           type:
-            - 'office-ui-fabric-react!Shade:enum'
+            - Shade
         - id: isInverted
           description: Default false. Whether the given theme is inverted (reverse strongen/soften logic)
           type:
@@ -1373,7 +1373,7 @@ items:
       content: 'export declare function hsl2hsv(h: number, s: number, l: number): IHSV;'
       return:
         type:
-          - 'office-ui-fabric-react!IHSV:interface'
+          - IHSV
         description: ''
       parameters:
         - id: h
@@ -1399,7 +1399,7 @@ items:
       content: 'export declare function hsl2rgb(h: number, s: number, l: number): IRGB;'
       return:
         type:
-          - 'office-ui-fabric-react!IRGB:interface'
+          - IRGB
         description: ''
       parameters:
         - id: h
@@ -1451,7 +1451,7 @@ items:
       content: 'export declare function hsv2hsl(h: number, s: number, v: number): IHSL;'
       return:
         type:
-          - 'office-ui-fabric-react!IHSL:interface'
+          - IHSL
         description: ''
       parameters:
         - id: h
@@ -1477,7 +1477,7 @@ items:
       content: 'export declare function hsv2rgb(h: number, s: number, v: number): IRGB;'
       return:
         type:
-          - 'office-ui-fabric-react!IRGB:interface'
+          - IRGB
         description: ''
       parameters:
         - id: h
@@ -1508,7 +1508,7 @@ items:
         - id: color
           description: ''
           type:
-            - 'office-ui-fabric-react!IColor:interface'
+            - IColor
   - uid: 'office-ui-fabric-react!isRelativeUrl:function(1)'
     name: isRelativeUrl(url)
     fullName: isRelativeUrl(url)
@@ -1543,7 +1543,7 @@ items:
         - id: shade
           description: The Shade value to validate.
           type:
-            - 'office-ui-fabric-react!Shade:enum'
+            - Shade
   - uid: 'office-ui-fabric-react!ktpTargetFromId:function(1)'
     summary: Constructs the data-ktp-execute-target attribute selector from a keytip ID.
     name: ktpTargetFromId(keytipId)
@@ -1614,13 +1614,13 @@ items:
         HTMLElement, previousPositions?: ICalloutPositionedInfo): ICalloutPositionedInfo;
       return:
         type:
-          - 'office-ui-fabric-react!ICalloutPositionedInfo:interface'
+          - ICalloutPositionedInfo
         description: ''
       parameters:
         - id: props
           description: ''
           type:
-            - 'office-ui-fabric-react!IPositionProps:interface'
+            - IPositionProps
         - id: hostElement
           description: ''
           type:
@@ -1632,7 +1632,7 @@ items:
         - id: previousPositions
           description: ''
           type:
-            - 'office-ui-fabric-react!ICalloutPositionedInfo:interface'
+            - ICalloutPositionedInfo
   - uid: 'office-ui-fabric-react!positionCard:function(1)'
     name: 'positionCard(props, hostElement, elementToPosition, previousPositions)'
     fullName: 'positionCard(props, hostElement, elementToPosition, previousPositions)'
@@ -1645,13 +1645,13 @@ items:
         HTMLElement, previousPositions?: ICalloutPositionedInfo): ICalloutPositionedInfo;
       return:
         type:
-          - 'office-ui-fabric-react!ICalloutPositionedInfo:interface'
+          - ICalloutPositionedInfo
         description: ''
       parameters:
         - id: props
           description: ''
           type:
-            - 'office-ui-fabric-react!IPositionProps:interface'
+            - IPositionProps
         - id: hostElement
           description: ''
           type:
@@ -1663,7 +1663,7 @@ items:
         - id: previousPositions
           description: ''
           type:
-            - 'office-ui-fabric-react!ICalloutPositionedInfo:interface'
+            - ICalloutPositionedInfo
   - uid: 'office-ui-fabric-react!positionElement:function(1)'
     summary: >-
       Used to position an element relative to the given positioning props. If positioning has been completed before,
@@ -1680,13 +1680,13 @@ items:
         HTMLElement, previousPositions?: IPositionedData): IPositionedData;
       return:
         type:
-          - 'office-ui-fabric-react!IPositionedData:interface'
+          - IPositionedData
         description: ''
       parameters:
         - id: props
           description: ''
           type:
-            - 'office-ui-fabric-react!IPositionProps:interface'
+            - IPositionProps
         - id: hostElement
           description: ''
           type:
@@ -1698,7 +1698,7 @@ items:
         - id: previousPositions
           description: ''
           type:
-            - 'office-ui-fabric-react!IPositionedData:interface'
+            - IPositionedData
   - uid: 'office-ui-fabric-react!rgb2hex:function(1)'
     summary: 'Converts RGB components to a hex color string (without \# prefix).'
     name: 'rgb2hex(r, g, b)'
@@ -1736,7 +1736,7 @@ items:
       content: 'export declare function rgb2hsv(r: number, g: number, b: number): IHSV;'
       return:
         type:
-          - 'office-ui-fabric-react!IHSV:interface'
+          - IHSV
         description: ''
       parameters:
         - id: r
@@ -1781,7 +1781,7 @@ items:
       content: 'export declare function themeRulesStandardCreator(): IThemeRules;'
       return:
         type:
-          - 'office-ui-fabric-react!IThemeRules:interface'
+          - IThemeRules
         description: ''
   - uid: 'office-ui-fabric-react!transitionKeysAreEqual:function(1)'
     summary: Tests for equality between two IKeytipTransitionKeys.
@@ -1800,11 +1800,11 @@ items:
         - id: key1
           description: First IKeytipTransitionKey.
           type:
-            - 'office-ui-fabric-react!IKeytipTransitionKey:interface'
+            - IKeytipTransitionKey
         - id: key2
           description: Second IKeytipTransitionKey.
           type:
-            - 'office-ui-fabric-react!IKeytipTransitionKey:interface'
+            - IKeytipTransitionKey
   - uid: 'office-ui-fabric-react!transitionKeysContain:function(1)'
     summary: Tests if 'key' is present in 'keys'.
     name: 'transitionKeysContain(keys, key)'
@@ -1826,7 +1826,7 @@ items:
         - id: key
           description: IKeytipTransitionKey to find in 'keys'.
           type:
-            - 'office-ui-fabric-react!IKeytipTransitionKey:interface'
+            - IKeytipTransitionKey
   - uid: 'office-ui-fabric-react!updateA:function(1)'
     summary: >-
       Gets a color with the given alpha value and the same other components as `color`<!-- -->. Does not modify the
@@ -1840,13 +1840,13 @@ items:
       content: 'export declare function updateA(color: IColor, a: number): IColor;'
       return:
         type:
-          - 'office-ui-fabric-react!IColor:interface'
+          - IColor
         description: ''
       parameters:
         - id: color
           description: ''
           type:
-            - 'office-ui-fabric-react!IColor:interface'
+            - IColor
         - id: a
           description: ''
           type:
@@ -1867,13 +1867,13 @@ items:
       content: 'export declare function updateH(color: IColor, h: number): IColor;'
       return:
         type:
-          - 'office-ui-fabric-react!IColor:interface'
+          - IColor
         description: ''
       parameters:
         - id: color
           description: ''
           type:
-            - 'office-ui-fabric-react!IColor:interface'
+            - IColor
         - id: h
           description: ''
           type:
@@ -1891,13 +1891,13 @@ items:
       content: 'export declare function updateRGB(color: IColor, component: keyof IRGB, value: number): IColor;'
       return:
         type:
-          - 'office-ui-fabric-react!IColor:interface'
+          - IColor
         description: ''
       parameters:
         - id: color
           description: ''
           type:
-            - 'office-ui-fabric-react!IColor:interface'
+            - IColor
         - id: component
           description: ''
           type:
@@ -1920,13 +1920,13 @@ items:
       content: 'export declare function updateSV(color: IColor, s: number, v: number): IColor;'
       return:
         type:
-          - 'office-ui-fabric-react!IColor:interface'
+          - IColor
         description: ''
       parameters:
         - id: color
           description: ''
           type:
-            - 'office-ui-fabric-react!IColor:interface'
+            - IColor
         - id: s
           description: ''
           type:
@@ -1948,13 +1948,13 @@ items:
       content: 'export declare function updateT(color: IColor, t: number): IColor;'
       return:
         type:
-          - 'office-ui-fabric-react!IColor:interface'
+          - IColor
         description: ''
       parameters:
         - id: color
           description: ''
           type:
-            - 'office-ui-fabric-react!IColor:interface'
+            - IColor
         - id: t
           description: ''
           type:

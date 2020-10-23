@@ -1,0 +1,131 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react!IShimmeredDetailsListProps:interface'
+    summary: ShimmeredDetailsList props interface
+    name: IShimmeredDetailsListProps
+    fullName: IShimmeredDetailsListProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'Omit<IDetailsListProps, ''styles''> '
+    package: '@fluentui/react!'
+    children:
+      - '@fluentui/react!IShimmeredDetailsListProps#ariaLabelForShimmer:member'
+      - '@fluentui/react!IShimmeredDetailsListProps#detailsListStyles:member'
+      - '@fluentui/react!IShimmeredDetailsListProps#enableShimmer:member'
+      - '@fluentui/react!IShimmeredDetailsListProps#onRenderCustomPlaceholder:member'
+      - '@fluentui/react!IShimmeredDetailsListProps#removeFadingOverlay:member'
+      - '@fluentui/react!IShimmeredDetailsListProps#shimmerLines:member'
+      - '@fluentui/react!IShimmeredDetailsListProps#shimmerOverlayStyles:member'
+      - '@fluentui/react!IShimmeredDetailsListProps#styles:member'
+  - uid: '@fluentui/react!IShimmeredDetailsListProps#ariaLabelForShimmer:member'
+    summary: Aria label for shimmer. Set on grid while shimmer is enabled.
+    name: ariaLabelForShimmer
+    fullName: ariaLabelForShimmer
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'ariaLabelForShimmer?: string;'
+      return:
+        type:
+          - string
+  - uid: '@fluentui/react!IShimmeredDetailsListProps#detailsListStyles:member'
+    summary: DetailsList styles to pass through.
+    name: detailsListStyles
+    fullName: detailsListStyles
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'detailsListStyles?: IDetailsListProps[''styles''];'
+      return:
+        type:
+          - 'IDetailsListProps[''styles'']'
+  - uid: '@fluentui/react!IShimmeredDetailsListProps#enableShimmer:member'
+    summary: >-
+      Boolean flag to control when to render placeholders vs real items. It's up to the consumer app to know when
+      fetching of the data is done to toggle this prop.
+    name: enableShimmer
+    fullName: enableShimmer
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'enableShimmer?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: '@fluentui/react!IShimmeredDetailsListProps#onRenderCustomPlaceholder:member'
+    summary: >-
+      Custom placeholder renderer to be used when in need to override the default placeholder of a DetailsRow.
+      `rowProps` argument is passed to leverage the calculated column measurements done by DetailsList or you can use
+      the optional arguments of item `index` and `defaultRender` to execute additional logic before rendering the
+      default placeholder.
+    name: onRenderCustomPlaceholder
+    fullName: onRenderCustomPlaceholder
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        onRenderCustomPlaceholder?: (rowProps: IDetailsRowProps, index?: number, defaultRender?: (props:
+        IDetailsRowProps) => React.ReactNode) => React.ReactNode;
+      return:
+        type:
+          - >-
+            (rowProps: IDetailsRowProps, index?: number, defaultRender?: (props: IDetailsRowProps) => React.ReactNode)
+            => React.ReactNode
+  - uid: '@fluentui/react!IShimmeredDetailsListProps#removeFadingOverlay:member'
+    summary: >-
+      Determines whether to remove a fading out to bottom overlay over the shimmering items used to further emphasize
+      the unknown number of items that will be fetched.
+    name: removeFadingOverlay
+    fullName: removeFadingOverlay
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'removeFadingOverlay?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: '@fluentui/react!IShimmeredDetailsListProps#shimmerLines:member'
+    summary: Number of shimmer placeholder lines to render.
+    name: shimmerLines
+    fullName: shimmerLines
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'shimmerLines?: number;'
+      return:
+        type:
+          - number
+  - uid: '@fluentui/react!IShimmeredDetailsListProps#shimmerOverlayStyles:member'
+    summary: Custom styles to override the styles specific to the ShimmeredDetailsList root area.
+    deprecated:
+      content: Use `styles` prop instead. Any value provided will be ignored.
+    name: shimmerOverlayStyles
+    fullName: shimmerOverlayStyles
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'shimmerOverlayStyles?: IStyleFunctionOrObject<IShimmeredDetailsListStyleProps, IShimmeredDetailsListStyles>;'
+      return:
+        type:
+          - 'IStyleFunctionOrObject<IShimmeredDetailsListStyleProps, IShimmeredDetailsListStyles>'
+  - uid: '@fluentui/react!IShimmeredDetailsListProps#styles:member'
+    summary: Custom styles to override the styles specific to the ShimmeredDetailsList root area.
+    name: styles
+    fullName: styles
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'styles?: IStyleFunctionOrObject<IShimmeredDetailsListStyleProps, IShimmeredDetailsListStyles>;'
+      return:
+        type:
+          - 'IStyleFunctionOrObject<IShimmeredDetailsListStyleProps, IShimmeredDetailsListStyles>'

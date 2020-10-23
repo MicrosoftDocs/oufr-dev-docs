@@ -9,7 +9,7 @@ items:
     extends:
       - 'React.Component<ICommandBarProps, {}> '
     implements:
-      - 'office-ui-fabric-react!ICommandBar:interface'
+      - 'ICommandBar '
     package: office-ui-fabric-react!
     children:
       - 'office-ui-fabric-react!CommandBarBase:constructor(1)'
@@ -30,7 +30,7 @@ items:
         - id: props
           description: ''
           type:
-            - 'office-ui-fabric-react!ICommandBarProps:interface'
+            - ICommandBarProps
   - uid: 'office-ui-fabric-react!CommandBarBase.defaultProps:member'
     name: defaultProps
     fullName: defaultProps
@@ -41,7 +41,7 @@ items:
       content: 'static defaultProps: ICommandBarProps;'
       return:
         type:
-          - 'office-ui-fabric-react!ICommandBarProps:interface'
+          - ICommandBarProps
   - uid: 'office-ui-fabric-react!CommandBarBase#focus:member(1)'
     name: focus()
     fullName: focus()

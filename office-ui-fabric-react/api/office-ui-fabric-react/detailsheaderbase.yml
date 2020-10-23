@@ -9,7 +9,7 @@ items:
     extends:
       - 'React.Component<IDetailsHeaderBaseProps, IDetailsHeaderState> '
     implements:
-      - 'office-ui-fabric-react!IDetailsHeader:interface'
+      - 'IDetailsHeader '
     package: office-ui-fabric-react!
     children:
       - 'office-ui-fabric-react!DetailsHeaderBase:constructor(1)'
@@ -32,7 +32,7 @@ items:
         - id: props
           description: ''
           type:
-            - 'office-ui-fabric-react!IDetailsHeaderBaseProps:interface'
+            - IDetailsHeaderBaseProps
   - uid: 'office-ui-fabric-react!DetailsHeaderBase#componentDidMount:member(1)'
     name: componentDidMount()
     fullName: componentDidMount()
@@ -61,7 +61,7 @@ items:
         - id: prevProps
           description: ''
           type:
-            - 'office-ui-fabric-react!IDetailsHeaderBaseProps:interface'
+            - IDetailsHeaderBaseProps
   - uid: 'office-ui-fabric-react!DetailsHeaderBase#componentWillUnmount:member(1)'
     name: componentWillUnmount()
     fullName: componentWillUnmount()

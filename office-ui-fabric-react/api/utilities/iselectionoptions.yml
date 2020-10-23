@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: '@uifabric/utilities!ISelectionOptions:interface'
+  - uid: '@fluentui/utilities!ISelectionOptions:interface'
     name: ISelectionOptions
     fullName: ISelectionOptions
     langs:
@@ -9,14 +9,14 @@ items:
     syntax:
       typeParameters:
         - id: TItem
-    package: '@uifabric/utilities!'
+    package: '@fluentui/utilities!'
     children:
-      - '@uifabric/utilities!ISelectionOptions#canSelectItem:member'
-      - '@uifabric/utilities!ISelectionOptions#getKey:member'
-      - '@uifabric/utilities!ISelectionOptions#items:member'
-      - '@uifabric/utilities!ISelectionOptions#onSelectionChanged:member'
-      - '@uifabric/utilities!ISelectionOptions#selectionMode:member'
-  - uid: '@uifabric/utilities!ISelectionOptions#canSelectItem:member'
+      - '@fluentui/utilities!ISelectionOptions#canSelectItem:member'
+      - '@fluentui/utilities!ISelectionOptions#getKey:member'
+      - '@fluentui/utilities!ISelectionOptions#items:member'
+      - '@fluentui/utilities!ISelectionOptions#onSelectionChanged:member'
+      - '@fluentui/utilities!ISelectionOptions#selectionMode:member'
+  - uid: '@fluentui/utilities!ISelectionOptions#canSelectItem:member'
     name: canSelectItem
     fullName: canSelectItem
     langs:
@@ -27,7 +27,7 @@ items:
       return:
         type:
           - '(item: TItem, index?: number) => boolean'
-  - uid: '@uifabric/utilities!ISelectionOptions#getKey:member'
+  - uid: '@fluentui/utilities!ISelectionOptions#getKey:member'
     summary: Custom logic to generate item keys. Required if `TItem` does not have a `key` property.
     name: getKey
     fullName: getKey
@@ -39,7 +39,7 @@ items:
       return:
         type:
           - '(item: TItem, index?: number) => string | number'
-  - uid: '@uifabric/utilities!ISelectionOptions#items:member'
+  - uid: '@fluentui/utilities!ISelectionOptions#items:member'
     name: items
     fullName: items
     langs:
@@ -50,7 +50,7 @@ items:
       return:
         type:
           - 'TItem[]'
-  - uid: '@uifabric/utilities!ISelectionOptions#onSelectionChanged:member'
+  - uid: '@fluentui/utilities!ISelectionOptions#onSelectionChanged:member'
     name: onSelectionChanged
     fullName: onSelectionChanged
     langs:
@@ -61,7 +61,7 @@ items:
       return:
         type:
           - () => void
-  - uid: '@uifabric/utilities!ISelectionOptions#selectionMode:member'
+  - uid: '@fluentui/utilities!ISelectionOptions#selectionMode:member'
     name: selectionMode
     fullName: selectionMode
     langs:
@@ -71,4 +71,4 @@ items:
       content: 'selectionMode?: SelectionMode;'
       return:
         type:
-          - '@uifabric/utilities!SelectionMode:enum'
+          - '@fluentui/utilities!SelectionMode:enum'

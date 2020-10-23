@@ -1,0 +1,174 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-internal!KeytipLayerBase:class'
+    summary: A layer that holds all keytip items
+    name: KeytipLayerBase
+    fullName: KeytipLayerBase
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'React.Component<IKeytipLayerProps, IKeytipLayerState> '
+    package: '@fluentui/react-internal!'
+    children:
+      - '@fluentui/react-internal!KeytipLayerBase:constructor(1)'
+      - '@fluentui/react-internal!KeytipLayerBase#componentDidMount:member(1)'
+      - '@fluentui/react-internal!KeytipLayerBase#componentWillUnmount:member(1)'
+      - '@fluentui/react-internal!KeytipLayerBase.defaultProps:member'
+      - '@fluentui/react-internal!KeytipLayerBase#getCurrentSequence:member(1)'
+      - '@fluentui/react-internal!KeytipLayerBase#getKeytipTree:member(1)'
+      - '@fluentui/react-internal!KeytipLayerBase#processInput:member(1)'
+      - '@fluentui/react-internal!KeytipLayerBase#processTransitionInput:member(1)'
+      - '@fluentui/react-internal!KeytipLayerBase#render:member(1)'
+      - '@fluentui/react-internal!KeytipLayerBase#showKeytips:member(1)'
+  - uid: '@fluentui/react-internal!KeytipLayerBase:constructor(1)'
+    summary: Constructs a new instance of the `KeytipLayerBase` class
+    name: '(constructor)(props, context)'
+    fullName: '(constructor)(props, context)'
+    langs:
+      - typeScript
+    type: constructor
+    syntax:
+      content: 'constructor(props: IKeytipLayerProps, context: any);'
+      parameters:
+        - id: props
+          description: ''
+          type:
+            - IKeytipLayerProps
+        - id: context
+          description: ''
+          type:
+            - any
+  - uid: '@fluentui/react-internal!KeytipLayerBase#componentDidMount:member(1)'
+    name: componentDidMount()
+    fullName: componentDidMount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'componentDidMount(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: '@fluentui/react-internal!KeytipLayerBase#componentWillUnmount:member(1)'
+    name: componentWillUnmount()
+    fullName: componentWillUnmount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'componentWillUnmount(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: '@fluentui/react-internal!KeytipLayerBase.defaultProps:member'
+    name: defaultProps
+    fullName: defaultProps
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'static defaultProps: IKeytipLayerProps;'
+      return:
+        type:
+          - IKeytipLayerProps
+  - uid: '@fluentui/react-internal!KeytipLayerBase#getCurrentSequence:member(1)'
+    name: getCurrentSequence()
+    fullName: getCurrentSequence()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCurrentSequence(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: '@fluentui/react-internal!KeytipLayerBase#getKeytipTree:member(1)'
+    name: getKeytipTree()
+    fullName: getKeytipTree()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getKeytipTree(): KeytipTree;'
+      return:
+        type:
+          - KeytipTree
+        description: ''
+  - uid: '@fluentui/react-internal!KeytipLayerBase#processInput:member(1)'
+    summary: Processes inputs from the document listener and traverse the keytip tree
+    name: 'processInput(key, ev)'
+    fullName: 'processInput(key, ev)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'processInput(key: string, ev?: React.KeyboardEvent<HTMLElement>): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: key
+          description: Key pressed by the user
+          type:
+            - string
+        - id: ev
+          description: ''
+          type:
+            - React.KeyboardEvent<HTMLElement>
+  - uid: '@fluentui/react-internal!KeytipLayerBase#processTransitionInput:member(1)'
+    summary: Processes an IKeytipTransitionKey entered by the user
+    name: 'processTransitionInput(transitionKey, ev)'
+    fullName: 'processTransitionInput(transitionKey, ev)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'processTransitionInput(transitionKey: IKeytipTransitionKey, ev?: React.KeyboardEvent<HTMLElement>): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: transitionKey
+          description: IKeytipTransitionKey received by the layer to process
+          type:
+            - IKeytipTransitionKey
+        - id: ev
+          description: ''
+          type:
+            - React.KeyboardEvent<HTMLElement>
+  - uid: '@fluentui/react-internal!KeytipLayerBase#render:member(1)'
+    name: render()
+    fullName: render()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'render(): JSX.Element;'
+      return:
+        type:
+          - JSX.Element
+        description: ''
+  - uid: '@fluentui/react-internal!KeytipLayerBase#showKeytips:member(1)'
+    summary: Show the given keytips and hide all others
+    name: showKeytips(ids)
+    fullName: showKeytips(ids)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'showKeytips(ids: string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: ids
+          description: Keytip IDs to show
+          type:
+            - 'string[]'

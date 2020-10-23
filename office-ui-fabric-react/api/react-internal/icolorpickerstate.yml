@@ -1,0 +1,44 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-internal!IColorPickerState:interface'
+    name: IColorPickerState
+    fullName: IColorPickerState
+    langs:
+      - typeScript
+    type: interface
+    package: '@fluentui/react-internal!'
+    children:
+      - '@fluentui/react-internal!IColorPickerState#color:member'
+      - '@fluentui/react-internal!IColorPickerState#editingColor:member'
+  - uid: '@fluentui/react-internal!IColorPickerState#color:member'
+    summary: Most recently selected color
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color: IColor;'
+      return:
+        type:
+          - IColor
+  - uid: '@fluentui/react-internal!IColorPickerState#editingColor:member'
+    summary: Color component currently being edited via a text field (if intermediate value is invalid)
+    name: editingColor
+    fullName: editingColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: |-
+        editingColor?: {
+                component: ColorComponent;
+                value: string;
+            };
+      return:
+        type:
+          - |-
+            {
+                    component: ColorComponent;
+                    value: string;
+                }

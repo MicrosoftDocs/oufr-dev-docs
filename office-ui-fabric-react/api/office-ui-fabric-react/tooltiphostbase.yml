@@ -9,7 +9,7 @@ items:
     extends:
       - 'React.Component<ITooltipHostProps, ITooltipHostState> '
     implements:
-      - 'office-ui-fabric-react!ITooltipHost:interface'
+      - 'ITooltipHost '
     package: office-ui-fabric-react!
     children:
       - 'office-ui-fabric-react!TooltipHostBase:constructor(1)'
@@ -31,7 +31,7 @@ items:
         - id: props
           description: ''
           type:
-            - 'office-ui-fabric-react!ITooltipHostProps:interface'
+            - ITooltipHostProps
   - uid: 'office-ui-fabric-react!TooltipHostBase#componentWillUnmount:member(1)'
     name: componentWillUnmount()
     fullName: componentWillUnmount()
