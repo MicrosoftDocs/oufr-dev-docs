@@ -1,0 +1,314 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react!IGroupedListProps:interface'
+    name: IGroupedListProps
+    fullName: IGroupedListProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'React.ClassAttributes<GroupedListBase> '
+    package: '@fluentui/react!'
+    children:
+      - '@fluentui/react!IGroupedListProps#className:member'
+      - '@fluentui/react!IGroupedListProps#compact:member'
+      - '@fluentui/react!IGroupedListProps#componentRef:member'
+      - '@fluentui/react!IGroupedListProps#dragDropEvents:member'
+      - '@fluentui/react!IGroupedListProps#dragDropHelper:member'
+      - '@fluentui/react!IGroupedListProps#eventsToRegister:member'
+      - '@fluentui/react!IGroupedListProps#focusZoneProps:member'
+      - '@fluentui/react!IGroupedListProps#getGroupHeight:member'
+      - '@fluentui/react!IGroupedListProps#groupProps:member'
+      - '@fluentui/react!IGroupedListProps#groups:member'
+      - '@fluentui/react!IGroupedListProps#items:member'
+      - '@fluentui/react!IGroupedListProps#listProps:member'
+      - '@fluentui/react!IGroupedListProps#onGroupExpandStateChanged:member'
+      - '@fluentui/react!IGroupedListProps#onRenderCell:member'
+      - '@fluentui/react!IGroupedListProps#onShouldVirtualize:member'
+      - '@fluentui/react!IGroupedListProps#role:member'
+      - '@fluentui/react!IGroupedListProps#selection:member'
+      - '@fluentui/react!IGroupedListProps#selectionMode:member'
+      - '@fluentui/react!IGroupedListProps#styles:member'
+      - '@fluentui/react!IGroupedListProps#theme:member'
+      - '@fluentui/react!IGroupedListProps#usePageCache:member'
+      - '@fluentui/react!IGroupedListProps#viewport:member'
+  - uid: '@fluentui/react!IGroupedListProps#className:member'
+    summary: Optional class name to add to the root element.
+    name: className
+    fullName: className
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'className?: string;'
+      return:
+        type:
+          - string
+  - uid: '@fluentui/react!IGroupedListProps#compact:member'
+    summary: Boolean value to indicate if the component should render in compact mode. Set to false by default
+    name: compact
+    fullName: compact
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'compact?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: '@fluentui/react!IGroupedListProps#componentRef:member'
+    summary: >-
+      Optional callback to access the IGroupedList interface. Use this instead of ref for accessing the public methods
+      and properties of the component.
+    name: componentRef
+    fullName: componentRef
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'componentRef?: IRefObject<IGroupedList>;'
+      return:
+        type:
+          - IRefObject<IGroupedList>
+  - uid: '@fluentui/react!IGroupedListProps#dragDropEvents:member'
+    summary: Map of callback functions related to drag and drop functionality.
+    name: dragDropEvents
+    fullName: dragDropEvents
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'dragDropEvents?: IDragDropEvents;'
+      return:
+        type:
+          - IDragDropEvents
+  - uid: '@fluentui/react!IGroupedListProps#dragDropHelper:member'
+    summary: helper to manage drag/drop across item and groups
+    name: dragDropHelper
+    fullName: dragDropHelper
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'dragDropHelper?: IDragDropHelper;'
+      return:
+        type:
+          - IDragDropHelper
+  - uid: '@fluentui/react!IGroupedListProps#eventsToRegister:member'
+    summary: Event names and corresponding callbacks that will be registered to groups and rendered elements
+    name: eventsToRegister
+    fullName: eventsToRegister
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: |-
+        eventsToRegister?: {
+                eventName: string;
+                callback: (context: IDragDropContext, event?: any) => void;
+            }[];
+      return:
+        type:
+          - |-
+            {
+                    eventName: string;
+                    callback: (context: IDragDropContext, event?: any) => void;
+                }[]
+  - uid: '@fluentui/react!IGroupedListProps#focusZoneProps:member'
+    summary: Optional properties to pass through to the FocusZone.
+    name: focusZoneProps
+    fullName: focusZoneProps
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'focusZoneProps?: IFocusZoneProps;'
+      return:
+        type:
+          - '@fluentui/react-focus!IFocusZoneProps:interface'
+  - uid: '@fluentui/react!IGroupedListProps#getGroupHeight:member'
+    summary: Optional function to override default group height calculation used by list virtualization.
+    name: getGroupHeight
+    fullName: getGroupHeight
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'getGroupHeight?: (group: IGroup, groupIndex: number) => number;'
+      return:
+        type:
+          - '(group: IGroup, groupIndex: number) => number'
+  - uid: '@fluentui/react!IGroupedListProps#groupProps:member'
+    summary: Optional override properties to render groups.
+    name: groupProps
+    fullName: groupProps
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'groupProps?: IGroupRenderProps;'
+      return:
+        type:
+          - IGroupRenderProps
+  - uid: '@fluentui/react!IGroupedListProps#groups:member'
+    summary: Optional grouping instructions.
+    name: groups
+    fullName: groups
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'groups?: IGroup[];'
+      return:
+        type:
+          - 'IGroup[]'
+  - uid: '@fluentui/react!IGroupedListProps#items:member'
+    summary: List of items to render.
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items: any[];'
+      return:
+        type:
+          - 'any[]'
+  - uid: '@fluentui/react!IGroupedListProps#listProps:member'
+    summary: Optional properties to pass through to the list components being rendered.
+    name: listProps
+    fullName: listProps
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'listProps?: IListProps;'
+      return:
+        type:
+          - IListProps
+  - uid: '@fluentui/react!IGroupedListProps#onGroupExpandStateChanged:member'
+    summary: Optional callback when the group expand state changes between all collapsed and at least one group is expanded.
+    name: onGroupExpandStateChanged
+    fullName: onGroupExpandStateChanged
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onGroupExpandStateChanged?: (isSomeGroupExpanded: boolean) => void;'
+      return:
+        type:
+          - '(isSomeGroupExpanded: boolean) => void'
+  - uid: '@fluentui/react!IGroupedListProps#onRenderCell:member'
+    summary: Rendering callback to render the group items.
+    name: onRenderCell
+    fullName: onRenderCell
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onRenderCell: (nestingDepth?: number, item?: any, index?: number) => React.ReactNode;'
+      return:
+        type:
+          - '(nestingDepth?: number, item?: any, index?: number) => React.ReactNode'
+  - uid: '@fluentui/react!IGroupedListProps#onShouldVirtualize:member'
+    summary: >-
+      Optional callback to determine whether the list should be rendered in full, or virtualized. Virtualization will
+      add and remove pages of items as the user scrolls them into the visible range. This benefits larger list scenarios
+      by reducing the DOM on the screen, but can negatively affect performance for smaller lists. The default
+      implementation will virtualize when this callback is not provided.
+    name: onShouldVirtualize
+    fullName: onShouldVirtualize
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onShouldVirtualize?: (props: IListProps) => boolean;'
+      return:
+        type:
+          - '(props: IListProps) => boolean'
+  - uid: '@fluentui/react!IGroupedListProps#role:member'
+    summary: Override the default role for GroupedList.
+    name: role
+    fullName: role
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'role?: string;'
+      return:
+        type:
+          - string
+  - uid: '@fluentui/react!IGroupedListProps#selection:member'
+    summary: Optional selection model to track selection state.
+    name: selection
+    fullName: selection
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'selection?: ISelection;'
+      return:
+        type:
+          - '@fluentui/utilities!ISelection:interface'
+  - uid: '@fluentui/react!IGroupedListProps#selectionMode:member'
+    summary: Controls how/if the list manages selection.
+    name: selectionMode
+    fullName: selectionMode
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'selectionMode?: SelectionMode;'
+      return:
+        type:
+          - '@fluentui/utilities!SelectionMode:enum'
+  - uid: '@fluentui/react!IGroupedListProps#styles:member'
+    summary: Style function to be passed in to override the themed or default styles
+    name: styles
+    fullName: styles
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'styles?: IStyleFunctionOrObject<IGroupedListStyleProps, IGroupedListStyles>;'
+      return:
+        type:
+          - 'IStyleFunctionOrObject<IGroupedListStyleProps, IGroupedListStyles>'
+  - uid: '@fluentui/react!IGroupedListProps#theme:member'
+    summary: Theme that is passed in from Higher Order Component
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type:
+          - '@fluentui/theme!ITheme:interface'
+  - uid: '@fluentui/react!IGroupedListProps#usePageCache:member'
+    summary: >-
+      boolean to control if pages containing unchanged items should be cached, this is a perf optimization The same
+      property in List.Props
+    name: usePageCache
+    fullName: usePageCache
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'usePageCache?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: '@fluentui/react!IGroupedListProps#viewport:member'
+    summary: 'Optional Viewport, provided by the parent component.'
+    name: viewport
+    fullName: viewport
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'viewport?: IViewport;'
+      return:
+        type:
+          - 'office-ui-fabric-react!IViewport:interface'

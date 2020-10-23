@@ -1,0 +1,141 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-internal!IAutofillProps:interface'
+    name: IAutofillProps
+    fullName: IAutofillProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'React.InputHTMLAttributes<HTMLInputElement | Autofill> '
+    package: '@fluentui/react-internal!'
+    children:
+      - '@fluentui/react-internal!IAutofillProps#componentRef:member'
+      - '@fluentui/react-internal!IAutofillProps#defaultVisibleValue:member'
+      - '@fluentui/react-internal!IAutofillProps#enableAutofillOnKeyPress:member'
+      - '@fluentui/react-internal!IAutofillProps#onInputChange:member'
+      - '@fluentui/react-internal!IAutofillProps#onInputValueChange:member'
+      - '@fluentui/react-internal!IAutofillProps#preventValueSelection:member'
+      - '@fluentui/react-internal!IAutofillProps#shouldSelectFullInputValueInComponentDidUpdate:member'
+      - '@fluentui/react-internal!IAutofillProps#suggestedDisplayValue:member'
+      - '@fluentui/react-internal!IAutofillProps#updateValueInWillReceiveProps:member'
+  - uid: '@fluentui/react-internal!IAutofillProps#componentRef:member'
+    summary: Gets the components ref.
+    name: componentRef
+    fullName: componentRef
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'componentRef?: IRefObject<IAutofill>;'
+      return:
+        type:
+          - IRefObject<IAutofill>
+  - uid: '@fluentui/react-internal!IAutofillProps#defaultVisibleValue:member'
+    summary: >-
+      The default value to be visible. This is different from placeholder because it actually sets the current value of
+      the picker Note: This will only be set upon component creation and will not update with subsequent prop updates.
+    name: defaultVisibleValue
+    fullName: defaultVisibleValue
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'defaultVisibleValue?: string;'
+      return:
+        type:
+          - string
+  - uid: '@fluentui/react-internal!IAutofillProps#enableAutofillOnKeyPress:member'
+    summary: >-
+      When the user uses left arrow, right arrow, clicks, or deletes text autofill is disabled Since the user has taken
+      control. It is automatically re-enabled when the user enters text and the cursor is at the end of the text in the
+      input box. This specifies other key presses that will re-enabled. autofill.
+    name: enableAutofillOnKeyPress
+    fullName: enableAutofillOnKeyPress
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'enableAutofillOnKeyPress?: KeyCodes[];'
+      return:
+        type:
+          - 'KeyCodes[]'
+  - uid: '@fluentui/react-internal!IAutofillProps#onInputChange:member'
+    summary: >-
+      A callback used to modify the input string. Do not use this to return a string anymore. Instead pass in value like
+      you would any other controlled component. Called before the state has been updated.
+    name: onInputChange
+    fullName: onInputChange
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onInputChange?: (value: string, composing: boolean) => string | void;'
+      return:
+        type:
+          - '(value: string, composing: boolean) => string | void'
+  - uid: '@fluentui/react-internal!IAutofillProps#onInputValueChange:member'
+    summary: A callback for when the current input value changes. Called after the state has been changed.
+    name: onInputValueChange
+    fullName: onInputValueChange
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onInputValueChange?: (newValue?: string, composing?: boolean) => void;'
+      return:
+        type:
+          - '(newValue?: string, composing?: boolean) => void'
+  - uid: '@fluentui/react-internal!IAutofillProps#preventValueSelection:member'
+    summary: >-
+      Should the value of the input be selected? True if we're focused on our input, false otherwise. We need to
+      explicitly not select the text in the autofill if we are no longer focused. In IE11, selecting a input will also
+      focus the input, causing other element's focus to be stolen.
+    name: preventValueSelection
+    fullName: preventValueSelection
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'preventValueSelection?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!IAutofillProps#shouldSelectFullInputValueInComponentDidUpdate:member'
+    summary: Handler for checking if the full value of the input should be selected in componentDidUpdate
+    name: shouldSelectFullInputValueInComponentDidUpdate
+    fullName: shouldSelectFullInputValueInComponentDidUpdate
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'shouldSelectFullInputValueInComponentDidUpdate?: () => boolean;'
+      return:
+        type:
+          - () => boolean
+  - uid: '@fluentui/react-internal!IAutofillProps#suggestedDisplayValue:member'
+    summary: The suggested autofill value that will display.
+    name: suggestedDisplayValue
+    fullName: suggestedDisplayValue
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'suggestedDisplayValue?: string;'
+      return:
+        type:
+          - string
+  - uid: '@fluentui/react-internal!IAutofillProps#updateValueInWillReceiveProps:member'
+    summary: Handler for checking and updating the value if needed in componentWillReceiveProps
+    deprecated:
+      content: use standard input Value prop instead if the autofill should act like a controlled component
+    name: updateValueInWillReceiveProps
+    fullName: updateValueInWillReceiveProps
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'updateValueInWillReceiveProps?: () => string | null;'
+      return:
+        type:
+          - () => string | null

@@ -1,8 +1,8 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: '@fluentui/date-time-utilities!IDatepickerOptions:interface'
-    name: IDatepickerOptions
-    fullName: IDatepickerOptions
+  - uid: '@fluentui/date-time-utilities!IDatePickerOptions:interface'
+    name: IDatePickerOptions
+    fullName: IDatePickerOptions
     langs:
       - typeScript
     type: interface
@@ -10,15 +10,15 @@ items:
       - '@fluentui/date-time-utilities!IRestrictedDatesOptions:interface'
     package: '@fluentui/date-time-utilities!'
     children:
-      - '@fluentui/date-time-utilities!IDatepickerOptions#dateRangeType:member'
-      - '@fluentui/date-time-utilities!IDatepickerOptions#daysToSelectInDayView:member'
-      - '@fluentui/date-time-utilities!IDatepickerOptions#firstDayOfWeek:member'
-      - '@fluentui/date-time-utilities!IDatepickerOptions#firstWeekOfYear:member'
-      - '@fluentui/date-time-utilities!IDatepickerOptions#markedDays:member'
-      - '@fluentui/date-time-utilities!IDatepickerOptions#showWeekNumbers:member'
-      - '@fluentui/date-time-utilities!IDatepickerOptions#today:member'
-      - '@fluentui/date-time-utilities!IDatepickerOptions#workWeekDays:member'
-  - uid: '@fluentui/date-time-utilities!IDatepickerOptions#dateRangeType:member'
+      - '@fluentui/date-time-utilities!IDatePickerOptions#dateRangeType:member'
+      - '@fluentui/date-time-utilities!IDatePickerOptions#daysToSelectInDayView:member'
+      - '@fluentui/date-time-utilities!IDatePickerOptions#firstDayOfWeek:member'
+      - '@fluentui/date-time-utilities!IDatePickerOptions#firstWeekOfYear:member'
+      - '@fluentui/date-time-utilities!IDatePickerOptions#markedDays:member'
+      - '@fluentui/date-time-utilities!IDatePickerOptions#showWeekNumbers:member'
+      - '@fluentui/date-time-utilities!IDatePickerOptions#today:member'
+      - '@fluentui/date-time-utilities!IDatePickerOptions#workWeekDays:member'
+  - uid: '@fluentui/date-time-utilities!IDatePickerOptions#dateRangeType:member'
     summary: The date range type indicating how many days should be selected as the user selects days
     name: dateRangeType
     fullName: dateRangeType
@@ -30,7 +30,7 @@ items:
       return:
         type:
           - '@fluentui/date-time-utilities!DateRangeType:enum'
-  - uid: '@fluentui/date-time-utilities!IDatepickerOptions#daysToSelectInDayView:member'
+  - uid: '@fluentui/date-time-utilities!IDatePickerOptions#daysToSelectInDayView:member'
     summary: The number of days to select while dateRangeType === DateRangeType.Day. Used in order to have multi-day views.
     name: daysToSelectInDayView
     fullName: daysToSelectInDayView
@@ -42,7 +42,7 @@ items:
       return:
         type:
           - number
-  - uid: '@fluentui/date-time-utilities!IDatepickerOptions#firstDayOfWeek:member'
+  - uid: '@fluentui/date-time-utilities!IDatePickerOptions#firstDayOfWeek:member'
     summary: The first day of the week for your locale.
     name: firstDayOfWeek
     fullName: firstDayOfWeek
@@ -54,7 +54,7 @@ items:
       return:
         type:
           - '@fluentui/date-time-utilities!DayOfWeek:enum'
-  - uid: '@fluentui/date-time-utilities!IDatepickerOptions#firstWeekOfYear:member'
+  - uid: '@fluentui/date-time-utilities!IDatePickerOptions#firstWeekOfYear:member'
     summary: >-
       Defines when the first week of the year should start, FirstWeekOfYear.FirstDay, FirstWeekOfYear.FirstFullWeek or
       FirstWeekOfYear.FirstFourDayWeek are the possible values
@@ -68,7 +68,7 @@ items:
       return:
         type:
           - '@fluentui/date-time-utilities!FirstWeekOfYear:enum'
-  - uid: '@fluentui/date-time-utilities!IDatepickerOptions#markedDays:member'
+  - uid: '@fluentui/date-time-utilities!IDatePickerOptions#markedDays:member'
     summary: Which days in the generated grid should be marked.
     name: markedDays
     fullName: markedDays
@@ -80,7 +80,7 @@ items:
       return:
         type:
           - 'Date[]'
-  - uid: '@fluentui/date-time-utilities!IDatepickerOptions#showWeekNumbers:member'
+  - uid: '@fluentui/date-time-utilities!IDatePickerOptions#showWeekNumbers:member'
     summary: Whether the calendar should show the week number (weeks 1 to 53) before each week row
     name: showWeekNumbers
     fullName: showWeekNumbers
@@ -92,8 +92,8 @@ items:
       return:
         type:
           - boolean
-  - uid: '@fluentui/date-time-utilities!IDatepickerOptions#today:member'
-    summary: 'Value of today. If null, current time in client machine will be used.'
+  - uid: '@fluentui/date-time-utilities!IDatePickerOptions#today:member'
+    summary: 'Value of today. If unspecified, current time in client machine will be used.'
     name: today
     fullName: today
     langs:
@@ -104,7 +104,7 @@ items:
       return:
         type:
           - Date
-  - uid: '@fluentui/date-time-utilities!IDatepickerOptions#workWeekDays:member'
+  - uid: '@fluentui/date-time-utilities!IDatePickerOptions#workWeekDays:member'
     summary: >-
       The days that are selectable when `dateRangeType` is WorkWeek. If `dateRangeType` is not WorkWeek this property
       does nothing.

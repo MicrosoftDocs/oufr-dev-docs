@@ -1,0 +1,327 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-internal!IBaseFloatingPickerProps:interface'
+    name: IBaseFloatingPickerProps
+    fullName: IBaseFloatingPickerProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'React.ClassAttributes<any> '
+    syntax:
+      typeParameters:
+        - id: T
+    package: '@fluentui/react-internal!'
+    children:
+      - '@fluentui/react-internal!IBaseFloatingPickerProps#calloutWidth:member'
+      - '@fluentui/react-internal!IBaseFloatingPickerProps#className:member'
+      - '@fluentui/react-internal!IBaseFloatingPickerProps#componentRef:member'
+      - '@fluentui/react-internal!IBaseFloatingPickerProps#createGenericItem:member'
+      - '@fluentui/react-internal!IBaseFloatingPickerProps#getTextFromItem:member'
+      - '@fluentui/react-internal!IBaseFloatingPickerProps#inputElement:member'
+      - '@fluentui/react-internal!IBaseFloatingPickerProps#onChange:member'
+      - '@fluentui/react-internal!IBaseFloatingPickerProps#onInputChanged:member'
+      - '@fluentui/react-internal!IBaseFloatingPickerProps#onRemoveSuggestion:member'
+      - '@fluentui/react-internal!IBaseFloatingPickerProps#onRenderSuggestionsItem:member'
+      - '@fluentui/react-internal!IBaseFloatingPickerProps#onResolveSuggestions:member'
+      - '@fluentui/react-internal!IBaseFloatingPickerProps#onSuggestionsHidden:member'
+      - '@fluentui/react-internal!IBaseFloatingPickerProps#onSuggestionsShown:member'
+      - '@fluentui/react-internal!IBaseFloatingPickerProps#onValidateInput:member'
+      - '@fluentui/react-internal!IBaseFloatingPickerProps#onZeroQuerySuggestion:member'
+      - '@fluentui/react-internal!IBaseFloatingPickerProps#pickerCalloutProps:member'
+      - '@fluentui/react-internal!IBaseFloatingPickerProps#pickerSuggestionsProps:member'
+      - '@fluentui/react-internal!IBaseFloatingPickerProps#resolveDelay:member'
+      - '@fluentui/react-internal!IBaseFloatingPickerProps#searchingText:member'
+      - '@fluentui/react-internal!IBaseFloatingPickerProps#selectedItems:member'
+      - '@fluentui/react-internal!IBaseFloatingPickerProps#showForceResolve:member'
+      - '@fluentui/react-internal!IBaseFloatingPickerProps#suggestionItems:member'
+      - '@fluentui/react-internal!IBaseFloatingPickerProps#suggestionsStore:member'
+  - uid: '@fluentui/react-internal!IBaseFloatingPickerProps#calloutWidth:member'
+    summary: Width for the suggestions callout
+    name: calloutWidth
+    fullName: calloutWidth
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'calloutWidth?: number;'
+      return:
+        type:
+          - number
+  - uid: '@fluentui/react-internal!IBaseFloatingPickerProps#className:member'
+    summary: ClassName for the picker.
+    name: className
+    fullName: className
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'className?: string;'
+      return:
+        type:
+          - string
+  - uid: '@fluentui/react-internal!IBaseFloatingPickerProps#componentRef:member'
+    name: componentRef
+    fullName: componentRef
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'componentRef?: IRefObject<IBaseFloatingPicker>;'
+      return:
+        type:
+          - IRefObject<IBaseFloatingPicker>
+  - uid: '@fluentui/react-internal!IBaseFloatingPickerProps#createGenericItem:member'
+    summary: Function that specifies how arbitrary text entered into the well is handled.
+    name: createGenericItem
+    fullName: createGenericItem
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'createGenericItem?: (input: string, isValid: boolean) => ISuggestionModel<T>;'
+      return:
+        type:
+          - '(input: string, isValid: boolean) => ISuggestionModel<T>'
+  - uid: '@fluentui/react-internal!IBaseFloatingPickerProps#getTextFromItem:member'
+    summary: A callback to get text from an item. Used to autofill text in the pickers.
+    name: getTextFromItem
+    fullName: getTextFromItem
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'getTextFromItem?: (item: T, currentValue?: string) => string;'
+      return:
+        type:
+          - '(item: T, currentValue?: string) => string'
+  - uid: '@fluentui/react-internal!IBaseFloatingPickerProps#inputElement:member'
+    summary: The input element to listen on events
+    name: inputElement
+    fullName: inputElement
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'inputElement?: HTMLInputElement | null;'
+      return:
+        type:
+          - HTMLInputElement | null
+  - uid: '@fluentui/react-internal!IBaseFloatingPickerProps#onChange:member'
+    summary: A callback for when a suggestion is clicked
+    name: onChange
+    fullName: onChange
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onChange?: (item: T) => void;'
+      return:
+        type:
+          - '(item: T) => void'
+  - uid: '@fluentui/react-internal!IBaseFloatingPickerProps#onInputChanged:member'
+    summary: A callback for when the input has been changed
+    name: onInputChanged
+    fullName: onInputChanged
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onInputChanged?: (filter: string) => void;'
+      return:
+        type:
+          - '(filter: string) => void'
+  - uid: '@fluentui/react-internal!IBaseFloatingPickerProps#onRemoveSuggestion:member'
+    summary: A callback for when an item is removed from the suggestion list
+    name: onRemoveSuggestion
+    fullName: onRemoveSuggestion
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onRemoveSuggestion?: (item: T) => void;'
+      return:
+        type:
+          - '(item: T) => void'
+  - uid: '@fluentui/react-internal!IBaseFloatingPickerProps#onRenderSuggestionsItem:member'
+    summary: Function that specifies how an individual suggestion item will appear.
+    name: onRenderSuggestionsItem
+    fullName: onRenderSuggestionsItem
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onRenderSuggestionsItem?: (props: T, itemProps: ISuggestionItemProps<T>) => JSX.Element;'
+      return:
+        type:
+          - '(props: T, itemProps: ISuggestionItemProps<T>) => JSX.Element'
+  - uid: '@fluentui/react-internal!IBaseFloatingPickerProps#onResolveSuggestions:member'
+    summary: >-
+      A callback for what should happen when a person types text into the input. Returns the already selected items so
+      the resolver can filter them out. If used in conjunction with resolveDelay this will only kick off after the delay
+      throttle. Return null if using as a controlled component
+    name: onResolveSuggestions
+    fullName: onResolveSuggestions
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onResolveSuggestions: (filter: string, selectedItems?: T[]) => T[] | PromiseLike<T[]> | null;'
+      return:
+        type:
+          - '(filter: string, selectedItems?: T[]) => T[] | PromiseLike<T[]> | null'
+  - uid: '@fluentui/react-internal!IBaseFloatingPickerProps#onSuggestionsHidden:member'
+    summary: The callback that should be called when the suggestions are hidden
+    name: onSuggestionsHidden
+    fullName: onSuggestionsHidden
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onSuggestionsHidden?: () => void;'
+      return:
+        type:
+          - () => void
+  - uid: '@fluentui/react-internal!IBaseFloatingPickerProps#onSuggestionsShown:member'
+    summary: The callback that should be called when the suggestions are shown
+    name: onSuggestionsShown
+    fullName: onSuggestionsShown
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onSuggestionsShown?: () => void;'
+      return:
+        type:
+          - () => void
+  - uid: '@fluentui/react-internal!IBaseFloatingPickerProps#onValidateInput:member'
+    summary: A function used to validate if raw text entered into the well can be added
+    name: onValidateInput
+    fullName: onValidateInput
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onValidateInput?: (input: string) => boolean;'
+      return:
+        type:
+          - '(input: string) => boolean'
+  - uid: '@fluentui/react-internal!IBaseFloatingPickerProps#onZeroQuerySuggestion:member'
+    summary: 'The suggestions to show on zero query, return null if using as a controlled component'
+    name: onZeroQuerySuggestion
+    fullName: onZeroQuerySuggestion
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onZeroQuerySuggestion?: (selectedItems?: T[]) => T[] | PromiseLike<T[]> | null;'
+      return:
+        type:
+          - '(selectedItems?: T[]) => T[] | PromiseLike<T[]> | null'
+  - uid: '@fluentui/react-internal!IBaseFloatingPickerProps#pickerCalloutProps:member'
+    summary: The properties that will get passed to the Callout component.
+    name: pickerCalloutProps
+    fullName: pickerCalloutProps
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'pickerCalloutProps?: ICalloutProps;'
+      return:
+        type:
+          - ICalloutProps
+  - uid: '@fluentui/react-internal!IBaseFloatingPickerProps#pickerSuggestionsProps:member'
+    summary: The properties that will get passed to the Suggestions component.
+    name: pickerSuggestionsProps
+    fullName: pickerSuggestionsProps
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'pickerSuggestionsProps?: IBaseFloatingPickerSuggestionProps;'
+      return:
+        type:
+          - IBaseFloatingPickerSuggestionProps
+  - uid: '@fluentui/react-internal!IBaseFloatingPickerProps#resolveDelay:member'
+    summary: >-
+      The delay time in ms before resolving suggestions, which is kicked off when input has been changed. e.g. If a
+      second input change happens within the resolveDelay time, the timer will start over. Only until after the timer
+      completes will onResolveSuggestions be called.
+    name: resolveDelay
+    fullName: resolveDelay
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'resolveDelay?: number;'
+      return:
+        type:
+          - number
+  - uid: '@fluentui/react-internal!IBaseFloatingPickerProps#searchingText:member'
+    summary: The text to display while searching for more results in a limited suggestions list
+    name: searchingText
+    fullName: searchingText
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: |-
+        searchingText?: ((props: {
+                input: string;
+            }) => string) | string;
+      return:
+        type:
+          - |-
+            ((props: {
+                    input: string;
+                }) => string) | string
+  - uid: '@fluentui/react-internal!IBaseFloatingPickerProps#selectedItems:member'
+    summary: >-
+      The items that the base picker should currently display as selected. If this is provided then the picker will act
+      as a controlled component.
+    name: selectedItems
+    fullName: selectedItems
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'selectedItems?: T[];'
+      return:
+        type:
+          - 'T[]'
+  - uid: '@fluentui/react-internal!IBaseFloatingPickerProps#showForceResolve:member'
+    summary: The callback that should be called to see if the force resolve command should be shown
+    name: showForceResolve
+    fullName: showForceResolve
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showForceResolve?: () => boolean;'
+      return:
+        type:
+          - () => boolean
+  - uid: '@fluentui/react-internal!IBaseFloatingPickerProps#suggestionItems:member'
+    summary: 'If using as a controlled component, the items to show in the suggestion list'
+    name: suggestionItems
+    fullName: suggestionItems
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'suggestionItems?: T[];'
+      return:
+        type:
+          - 'T[]'
+  - uid: '@fluentui/react-internal!IBaseFloatingPickerProps#suggestionsStore:member'
+    summary: The suggestions store
+    name: suggestionsStore
+    fullName: suggestionsStore
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'suggestionsStore: SuggestionsStore<T>;'
+      return:
+        type:
+          - SuggestionsStore<T>

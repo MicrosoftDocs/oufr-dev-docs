@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: '@uifabric/utilities!Async:class'
+  - uid: '@fluentui/utilities!Async:class'
     summary: >-
       Bugs often appear in async code when stuff gets disposed, but async operations don't get canceled. This Async
       helper class solves these issues by tying async code to the lifetime of a disposable object.
@@ -13,22 +13,22 @@ items:
     langs:
       - typeScript
     type: class
-    package: '@uifabric/utilities!'
+    package: '@fluentui/utilities!'
     children:
-      - '@uifabric/utilities!Async#_logError:member(1)'
-      - '@uifabric/utilities!Async:constructor(1)'
-      - '@uifabric/utilities!Async#cancelAnimationFrame:member(1)'
-      - '@uifabric/utilities!Async#clearImmediate:member(1)'
-      - '@uifabric/utilities!Async#clearInterval:member(1)'
-      - '@uifabric/utilities!Async#clearTimeout:member(1)'
-      - '@uifabric/utilities!Async#debounce:member(1)'
-      - '@uifabric/utilities!Async#dispose:member(1)'
-      - '@uifabric/utilities!Async#requestAnimationFrame:member(1)'
-      - '@uifabric/utilities!Async#setImmediate:member(1)'
-      - '@uifabric/utilities!Async#setInterval:member(1)'
-      - '@uifabric/utilities!Async#setTimeout:member(1)'
-      - '@uifabric/utilities!Async#throttle:member(1)'
-  - uid: '@uifabric/utilities!Async#_logError:member(1)'
+      - '@fluentui/utilities!Async#_logError:member(1)'
+      - '@fluentui/utilities!Async:constructor(1)'
+      - '@fluentui/utilities!Async#cancelAnimationFrame:member(1)'
+      - '@fluentui/utilities!Async#clearImmediate:member(1)'
+      - '@fluentui/utilities!Async#clearInterval:member(1)'
+      - '@fluentui/utilities!Async#clearTimeout:member(1)'
+      - '@fluentui/utilities!Async#debounce:member(1)'
+      - '@fluentui/utilities!Async#dispose:member(1)'
+      - '@fluentui/utilities!Async#requestAnimationFrame:member(1)'
+      - '@fluentui/utilities!Async#setImmediate:member(1)'
+      - '@fluentui/utilities!Async#setInterval:member(1)'
+      - '@fluentui/utilities!Async#setTimeout:member(1)'
+      - '@fluentui/utilities!Async#throttle:member(1)'
+  - uid: '@fluentui/utilities!Async#_logError:member(1)'
     name: _logError(e)
     fullName: _logError(e)
     langs:
@@ -45,7 +45,7 @@ items:
           description: ''
           type:
             - any
-  - uid: '@uifabric/utilities!Async:constructor(1)'
+  - uid: '@fluentui/utilities!Async:constructor(1)'
     summary: Constructs a new instance of the `Async` class
     name: '(constructor)(parent, onError)'
     fullName: '(constructor)(parent, onError)'
@@ -63,7 +63,7 @@ items:
           description: ''
           type:
             - '(e: any) => void'
-  - uid: '@uifabric/utilities!Async#cancelAnimationFrame:member(1)'
+  - uid: '@fluentui/utilities!Async#cancelAnimationFrame:member(1)'
     name: 'cancelAnimationFrame(id, targetElement)'
     fullName: 'cancelAnimationFrame(id, targetElement)'
     langs:
@@ -84,7 +84,7 @@ items:
           description: ''
           type:
             - Element | null
-  - uid: '@uifabric/utilities!Async#clearImmediate:member(1)'
+  - uid: '@fluentui/utilities!Async#clearImmediate:member(1)'
     summary: Clears the immediate.
     name: 'clearImmediate(id, targetElement)'
     fullName: 'clearImmediate(id, targetElement)'
@@ -106,7 +106,7 @@ items:
           description: Optional target element to use for identifying the correct window.
           type:
             - Element | null
-  - uid: '@uifabric/utilities!Async#clearInterval:member(1)'
+  - uid: '@fluentui/utilities!Async#clearInterval:member(1)'
     summary: Clears the interval.
     name: clearInterval(id)
     fullName: clearInterval(id)
@@ -124,7 +124,7 @@ items:
           description: Id to cancel.
           type:
             - number
-  - uid: '@uifabric/utilities!Async#clearTimeout:member(1)'
+  - uid: '@fluentui/utilities!Async#clearTimeout:member(1)'
     summary: Clears the timeout.
     name: clearTimeout(id)
     fullName: clearTimeout(id)
@@ -142,7 +142,7 @@ items:
           description: Id to cancel.
           type:
             - number
-  - uid: '@uifabric/utilities!Async#debounce:member(1)'
+  - uid: '@fluentui/utilities!Async#debounce:member(1)'
     summary: >-
       Creates a function that will delay the execution of func until after wait milliseconds have elapsed since the last
       time it was invoked. Provide an options object to indicate that func should be invoked on the leading and/or
@@ -190,7 +190,7 @@ items:
         - id: T
           type:
             - '(...args: any[]) => any'
-  - uid: '@uifabric/utilities!Async#dispose:member(1)'
+  - uid: '@fluentui/utilities!Async#dispose:member(1)'
     summary: 'Dispose function, clears all async operations.'
     name: dispose()
     fullName: dispose()
@@ -203,7 +203,7 @@ items:
         type:
           - void
         description: ''
-  - uid: '@uifabric/utilities!Async#requestAnimationFrame:member(1)'
+  - uid: '@fluentui/utilities!Async#requestAnimationFrame:member(1)'
     name: 'requestAnimationFrame(callback, targetElement)'
     fullName: 'requestAnimationFrame(callback, targetElement)'
     langs:
@@ -224,7 +224,7 @@ items:
           description: ''
           type:
             - Element | null
-  - uid: '@uifabric/utilities!Async#setImmediate:member(1)'
+  - uid: '@fluentui/utilities!Async#setImmediate:member(1)'
     summary: 'SetImmediate override, which will auto cancel the immediate during dispose.'
     name: 'setImmediate(callback, targetElement)'
     fullName: 'setImmediate(callback, targetElement)'
@@ -246,7 +246,7 @@ items:
           description: Optional target element to use for identifying the correct window.
           type:
             - Element | null
-  - uid: '@uifabric/utilities!Async#setInterval:member(1)'
+  - uid: '@fluentui/utilities!Async#setInterval:member(1)'
     summary: 'SetInterval override, which will auto cancel the timeout during dispose.'
     name: 'setInterval(callback, duration)'
     fullName: 'setInterval(callback, duration)'
@@ -268,7 +268,7 @@ items:
           description: Duration in milliseconds.
           type:
             - number
-  - uid: '@uifabric/utilities!Async#setTimeout:member(1)'
+  - uid: '@fluentui/utilities!Async#setTimeout:member(1)'
     summary: 'SetTimeout override, which will auto cancel the timeout during dispose.'
     name: 'setTimeout(callback, duration)'
     fullName: 'setTimeout(callback, duration)'
@@ -290,7 +290,7 @@ items:
           description: Duration in milliseconds.
           type:
             - number
-  - uid: '@uifabric/utilities!Async#throttle:member(1)'
+  - uid: '@fluentui/utilities!Async#throttle:member(1)'
     summary: >-
       Creates a function that, when executed, will only call the func function at most once per every wait milliseconds.
       Provide an options object to indicate that func should be invoked on the leading and/or trailing edge of the wait

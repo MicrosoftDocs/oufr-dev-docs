@@ -1,0 +1,250 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-internal!IFacepileProps:interface'
+    name: IFacepileProps
+    fullName: IFacepileProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'React.ClassAttributes<FacepileBase> '
+    package: '@fluentui/react-internal!'
+    children:
+      - '@fluentui/react-internal!IFacepileProps#addButtonProps:member'
+      - '@fluentui/react-internal!IFacepileProps#ariaDescription:member'
+      - '@fluentui/react-internal!IFacepileProps#ariaLabel:member'
+      - '@fluentui/react-internal!IFacepileProps#chevronButtonProps:member'
+      - '@fluentui/react-internal!IFacepileProps#className:member'
+      - '@fluentui/react-internal!IFacepileProps#componentRef:member'
+      - '@fluentui/react-internal!IFacepileProps#getPersonaProps:member'
+      - '@fluentui/react-internal!IFacepileProps#maxDisplayablePersonas:member'
+      - '@fluentui/react-internal!IFacepileProps#onRenderPersona:member'
+      - '@fluentui/react-internal!IFacepileProps#onRenderPersonaCoin:member'
+      - '@fluentui/react-internal!IFacepileProps#overflowButtonProps:member'
+      - '@fluentui/react-internal!IFacepileProps#overflowButtonType:member'
+      - '@fluentui/react-internal!IFacepileProps#overflowPersonas:member'
+      - '@fluentui/react-internal!IFacepileProps#personas:member'
+      - '@fluentui/react-internal!IFacepileProps#personaSize:member'
+      - '@fluentui/react-internal!IFacepileProps#showAddButton:member'
+      - '@fluentui/react-internal!IFacepileProps#styles:member'
+      - '@fluentui/react-internal!IFacepileProps#theme:member'
+  - uid: '@fluentui/react-internal!IFacepileProps#addButtonProps:member'
+    summary: Button properties for the add face button
+    name: addButtonProps
+    fullName: addButtonProps
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'addButtonProps?: IButtonProps;'
+      return:
+        type:
+          - 'office-ui-fabric-react!IButtonProps:interface'
+  - uid: '@fluentui/react-internal!IFacepileProps#ariaDescription:member'
+    summary: ARIA label for persona list
+    name: ariaDescription
+    fullName: ariaDescription
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'ariaDescription?: string;'
+      return:
+        type:
+          - string
+  - uid: '@fluentui/react-internal!IFacepileProps#ariaLabel:member'
+    summary: Defines the aria label that the screen readers use when focus goes on a list of personas.
+    name: ariaLabel
+    fullName: ariaLabel
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'ariaLabel?: string;'
+      return:
+        type:
+          - string
+  - uid: '@fluentui/react-internal!IFacepileProps#chevronButtonProps:member'
+    summary: 'Deprecated at v0.70, use `overflowButtonProps` instead.'
+    deprecated:
+      content: Use `overflowButtonProps` instead.
+    name: chevronButtonProps
+    fullName: chevronButtonProps
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'chevronButtonProps?: IButtonProps;'
+      return:
+        type:
+          - 'office-ui-fabric-react!IButtonProps:interface'
+  - uid: '@fluentui/react-internal!IFacepileProps#className:member'
+    summary: Additional css class to apply to the Facepile
+    name: className
+    fullName: className
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'className?: string;'
+      return:
+        type:
+          - string
+  - uid: '@fluentui/react-internal!IFacepileProps#componentRef:member'
+    summary: >-
+      Optional callback to access the IFacepile interface. Use this instead of ref for accessing the public methods and
+      properties of the component.
+    name: componentRef
+    fullName: componentRef
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'componentRef?: IRefObject<IFacepile>;'
+      return:
+        type:
+          - IRefObject<IFacepile>
+  - uid: '@fluentui/react-internal!IFacepileProps#getPersonaProps:member'
+    summary: Method to access properties on the underlying Persona control
+    name: getPersonaProps
+    fullName: getPersonaProps
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'getPersonaProps?: (persona: IFacepilePersona) => IPersonaSharedProps;'
+      return:
+        type:
+          - '(persona: IFacepilePersona) => IPersonaSharedProps'
+  - uid: '@fluentui/react-internal!IFacepileProps#maxDisplayablePersonas:member'
+    summary: Maximum number of personas to show
+    name: maxDisplayablePersonas
+    fullName: maxDisplayablePersonas
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'maxDisplayablePersonas?: number;'
+      return:
+        type:
+          - number
+  - uid: '@fluentui/react-internal!IFacepileProps#onRenderPersona:member'
+    summary: 'Optional custom renderer for the persona, gets called when there is one persona in personas array'
+    name: onRenderPersona
+    fullName: onRenderPersona
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onRenderPersona?: IRenderFunction<IFacepilePersona>;'
+      return:
+        type:
+          - IRenderFunction<IFacepilePersona>
+  - uid: '@fluentui/react-internal!IFacepileProps#onRenderPersonaCoin:member'
+    summary: 'Optional custom renderer for the persona coins, gets called when there are multiple persona in personas array'
+    name: onRenderPersonaCoin
+    fullName: onRenderPersonaCoin
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onRenderPersonaCoin?: IRenderFunction<IFacepilePersona>;'
+      return:
+        type:
+          - IRenderFunction<IFacepilePersona>
+  - uid: '@fluentui/react-internal!IFacepileProps#overflowButtonProps:member'
+    summary: Properties for the overflow icon
+    name: overflowButtonProps
+    fullName: overflowButtonProps
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'overflowButtonProps?: IButtonProps;'
+      return:
+        type:
+          - 'office-ui-fabric-react!IButtonProps:interface'
+  - uid: '@fluentui/react-internal!IFacepileProps#overflowButtonType:member'
+    summary: Type of overflow icon to use
+    name: overflowButtonType
+    fullName: overflowButtonType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'overflowButtonType?: OverflowButtonType;'
+      return:
+        type:
+          - OverflowButtonType
+  - uid: '@fluentui/react-internal!IFacepileProps#overflowPersonas:member'
+    summary: Personas to place in the overflow
+    name: overflowPersonas
+    fullName: overflowPersonas
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'overflowPersonas?: IFacepilePersona[];'
+      return:
+        type:
+          - 'IFacepilePersona[]'
+  - uid: '@fluentui/react-internal!IFacepileProps#personas:member'
+    summary: Array of IPersonaProps that define each Persona.
+    name: personas
+    fullName: personas
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'personas: IFacepilePersona[];'
+      return:
+        type:
+          - 'IFacepilePersona[]'
+  - uid: '@fluentui/react-internal!IFacepileProps#personaSize:member'
+    summary: Size to display the personas
+    name: personaSize
+    fullName: personaSize
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'personaSize?: PersonaSize;'
+      return:
+        type:
+          - PersonaSize
+  - uid: '@fluentui/react-internal!IFacepileProps#showAddButton:member'
+    summary: Show add person button
+    name: showAddButton
+    fullName: showAddButton
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showAddButton?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!IFacepileProps#styles:member'
+    summary: Call to provide customized styling that will layer on top of the variant rules.
+    name: styles
+    fullName: styles
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'styles?: IStyleFunctionOrObject<IFacepileStyleProps, IFacepileStyles>;'
+      return:
+        type:
+          - 'IStyleFunctionOrObject<IFacepileStyleProps, IFacepileStyles>'
+  - uid: '@fluentui/react-internal!IFacepileProps#theme:member'
+    summary: Theme provided by High-Order Component.
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type:
+          - '@fluentui/theme!ITheme:interface'

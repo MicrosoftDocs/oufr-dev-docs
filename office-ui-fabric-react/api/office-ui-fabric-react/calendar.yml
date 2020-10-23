@@ -9,7 +9,7 @@ items:
     extends:
       - 'React.Component<ICalendarProps, ICalendarState> '
     implements:
-      - 'office-ui-fabric-react!ICalendar:interface'
+      - 'ICalendar '
     package: office-ui-fabric-react!
     children:
       - 'office-ui-fabric-react!Calendar:constructor(1)'
@@ -31,7 +31,7 @@ items:
         - id: props
           description: ''
           type:
-            - 'office-ui-fabric-react!ICalendarProps:interface'
+            - ICalendarProps
   - uid: 'office-ui-fabric-react!Calendar#componentDidUpdate:member(1)'
     name: componentDidUpdate()
     fullName: componentDidUpdate()
@@ -54,7 +54,7 @@ items:
       content: 'static defaultProps: ICalendarProps;'
       return:
         type:
-          - 'office-ui-fabric-react!ICalendarProps:interface'
+          - ICalendarProps
   - uid: 'office-ui-fabric-react!Calendar#focus:member(1)'
     name: focus()
     fullName: focus()
@@ -95,4 +95,4 @@ items:
         - id: nextProps
           description: ''
           type:
-            - 'office-ui-fabric-react!ICalendarProps:interface'
+            - ICalendarProps

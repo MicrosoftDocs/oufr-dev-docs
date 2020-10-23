@@ -1,0 +1,153 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-internal!IImageProps:interface'
+    name: IImageProps
+    fullName: IImageProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - React.ImgHTMLAttributes<HTMLImageElement>
+      - 'React.RefAttributes<HTMLImageElement> '
+    package: '@fluentui/react-internal!'
+    children:
+      - '@fluentui/react-internal!IImageProps#className:member'
+      - '@fluentui/react-internal!IImageProps#coverStyle:member'
+      - '@fluentui/react-internal!IImageProps#errorSrc:member'
+      - '@fluentui/react-internal!IImageProps#imageFit:member'
+      - '@fluentui/react-internal!IImageProps#maximizeFrame:member'
+      - '@fluentui/react-internal!IImageProps#onLoadingStateChange:member'
+      - '@fluentui/react-internal!IImageProps#shouldFadeIn:member'
+      - '@fluentui/react-internal!IImageProps#shouldStartVisible:member'
+      - '@fluentui/react-internal!IImageProps#styles:member'
+      - '@fluentui/react-internal!IImageProps#theme:member'
+  - uid: '@fluentui/react-internal!IImageProps#className:member'
+    summary: Additional css class to apply to the Component
+    name: className
+    fullName: className
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'className?: string;'
+      return:
+        type:
+          - string
+  - uid: '@fluentui/react-internal!IImageProps#coverStyle:member'
+    summary: >-
+      Specifies the cover style to be used for this image. If not specified, this will be dynamically calculated based
+      on the aspect ratio for the image.
+    name: coverStyle
+    fullName: coverStyle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'coverStyle?: ImageCoverStyle;'
+      return:
+        type:
+          - ImageCoverStyle
+  - uid: '@fluentui/react-internal!IImageProps#errorSrc:member'
+    summary: >-
+      Deprecated at v1.3.6, to replace the src in case of errors, use `onLoadingStateChange` instead and re-render the
+      Image with a difference src.
+    deprecated:
+      content: Use `onLoadingStateChange` instead and re-render the Image with a difference src.
+    name: errorSrc
+    fullName: errorSrc
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'errorSrc?: string;'
+      return:
+        type:
+          - string
+  - uid: '@fluentui/react-internal!IImageProps#imageFit:member'
+    summary: Used to determine how the image is scaled and cropped to fit the frame.
+    name: imageFit
+    fullName: imageFit
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'imageFit?: ImageFit;'
+      return:
+        type:
+          - ImageFit
+  - uid: '@fluentui/react-internal!IImageProps#maximizeFrame:member'
+    summary: 'If true, the image frame will expand to fill its parent container.'
+    name: maximizeFrame
+    fullName: maximizeFrame
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'maximizeFrame?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!IImageProps#onLoadingStateChange:member'
+    summary: >-
+      Optional callback method for when the image load state has changed. The 'loadState' parameter indicates the
+      current state of the Image.
+    name: onLoadingStateChange
+    fullName: onLoadingStateChange
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onLoadingStateChange?: (loadState: ImageLoadState) => void;'
+      return:
+        type:
+          - '(loadState: ImageLoadState) => void'
+  - uid: '@fluentui/react-internal!IImageProps#shouldFadeIn:member'
+    summary: 'If true, fades the image in when loaded.'
+    name: shouldFadeIn
+    fullName: shouldFadeIn
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'shouldFadeIn?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!IImageProps#shouldStartVisible:member'
+    summary: >-
+      If true, the image starts as visible and is hidden on error. Otherwise, the image is hidden until it is
+      successfully loaded. This disables shouldFadeIn.
+    name: shouldStartVisible
+    fullName: shouldStartVisible
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'shouldStartVisible?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!IImageProps#styles:member'
+    summary: Call to provide customized styling that will layer on top of the variant rules
+    name: styles
+    fullName: styles
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'styles?: IStyleFunctionOrObject<IImageStyleProps, IImageStyles>;'
+      return:
+        type:
+          - 'IStyleFunctionOrObject<IImageStyleProps, IImageStyles>'
+  - uid: '@fluentui/react-internal!IImageProps#theme:member'
+    summary: Theme provided by HOC.
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type:
+          - '@fluentui/theme!ITheme:interface'

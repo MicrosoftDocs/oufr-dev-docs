@@ -8,24 +8,29 @@ items:
       - typeScript
     type: interface
     extends:
-      - '@fluentui/theme!ITheme:interface'
+      - '@fluentui/theme!IScheme:interface'
     package: '@fluentui/theme!'
     children:
       - '@fluentui/theme!Theme#components:member'
       - '@fluentui/theme!Theme#stylesheets:member'
-      - '@fluentui/theme!Theme#tokens:member'
   - uid: '@fluentui/theme!Theme#components:member'
+    summary: >-
+      Component-level styles and token set. This is still in an experimental phase and is only applied by
+      `ThemeProvider`<!-- -->.
     name: components
     fullName: components
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'components?: ComponentStyles;'
+      content: 'components?: ComponentsStyles;'
       return:
         type:
-          - '@fluentui/theme!ComponentStyles:interface'
+          - ComponentsStyles
   - uid: '@fluentui/theme!Theme#stylesheets:member'
+    summary: >-
+      CSS stylesheets to be registered. This is still in an experimental phase and is only applied by
+      `ThemeProvider`<!-- -->.
     name: stylesheets
     fullName: stylesheets
     langs:
@@ -36,14 +41,3 @@ items:
       return:
         type:
           - 'string[]'
-  - uid: '@fluentui/theme!Theme#tokens:member'
-    name: tokens
-    fullName: tokens
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'tokens?: Tokens;'
-      return:
-        type:
-          - '@fluentui/theme!Tokens:interface'

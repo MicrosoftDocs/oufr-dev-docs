@@ -27,7 +27,7 @@ items:
       content: 'asShade?: Shade;'
       return:
         type:
-          - 'office-ui-fabric-react!Shade:enum'
+          - Shade
   - uid: 'office-ui-fabric-react!IThemeSlotRule#color:member'
     summary: The actual color this theme slot is if it is a color.
     name: color
@@ -39,7 +39,7 @@ items:
       content: 'color?: IColor;'
       return:
         type:
-          - 'office-ui-fabric-react!IColor:interface'
+          - IColor
   - uid: 'office-ui-fabric-react!IThemeSlotRule#dependentRules:member'
     summary: >-
       A collection of rules that inherit from this one. It is the responsibility of the inheriting rule to add itself to
@@ -65,7 +65,7 @@ items:
       content: 'inherits?: IThemeSlotRule;'
       return:
         type:
-          - 'office-ui-fabric-react!IThemeSlotRule:interface'
+          - IThemeSlotRule
   - uid: 'office-ui-fabric-react!IThemeSlotRule#isBackgroundShade:member'
     summary: 'Whether this slot is a background shade, which uses different logic for generating its inheriting-as-shade value.'
     name: isBackgroundShade

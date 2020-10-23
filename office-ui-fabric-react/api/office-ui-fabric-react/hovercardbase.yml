@@ -9,7 +9,7 @@ items:
     extends:
       - 'React.Component<IHoverCardProps, IHoverCardState> '
     implements:
-      - 'office-ui-fabric-react!IHoverCard:interface'
+      - 'IHoverCard '
     package: office-ui-fabric-react!
     children:
       - 'office-ui-fabric-react!HoverCardBase:constructor(1)'
@@ -32,7 +32,7 @@ items:
         - id: props
           description: ''
           type:
-            - 'office-ui-fabric-react!IHoverCardProps:interface'
+            - IHoverCardProps
   - uid: 'office-ui-fabric-react!HoverCardBase#componentDidMount:member(1)'
     name: componentDidMount()
     fullName: componentDidMount()
@@ -61,11 +61,11 @@ items:
         - id: prevProps
           description: ''
           type:
-            - 'office-ui-fabric-react!IHoverCardProps:interface'
+            - IHoverCardProps
         - id: prevState
           description: ''
           type:
-            - 'office-ui-fabric-react!IHoverCardState:interface'
+            - IHoverCardState
   - uid: 'office-ui-fabric-react!HoverCardBase#componentWillUnmount:member(1)'
     name: componentWillUnmount()
     fullName: componentWillUnmount()

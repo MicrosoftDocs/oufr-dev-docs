@@ -9,7 +9,7 @@ items:
     extends:
       - 'React.Component<INavProps, INavState> '
     implements:
-      - 'office-ui-fabric-react!INav:interface'
+      - 'INav '
     package: office-ui-fabric-react!
     children:
       - 'office-ui-fabric-react!NavBase:constructor(1)'
@@ -30,7 +30,7 @@ items:
         - id: props
           description: ''
           type:
-            - 'office-ui-fabric-react!INavProps:interface'
+            - INavProps
   - uid: 'office-ui-fabric-react!NavBase.defaultProps:member'
     name: defaultProps
     fullName: defaultProps
@@ -41,7 +41,7 @@ items:
       content: 'static defaultProps: INavProps;'
       return:
         type:
-          - 'office-ui-fabric-react!INavProps:interface'
+          - INavProps
   - uid: 'office-ui-fabric-react!NavBase#focus:member(1)'
     summary: Sets focus to the first tabbable item in the zone.
     name: focus(forceIntoFirstElement)

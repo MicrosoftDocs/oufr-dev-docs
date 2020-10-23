@@ -1,0 +1,496 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-internal!ITextFieldProps:interface'
+    summary: TextField component props.
+    name: ITextFieldProps
+    fullName: ITextFieldProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'React.AllHTMLAttributes<HTMLInputElement | HTMLTextAreaElement> '
+    package: '@fluentui/react-internal!'
+    children:
+      - '@fluentui/react-internal!ITextFieldProps#ariaLabel:member'
+      - '@fluentui/react-internal!ITextFieldProps#autoAdjustHeight:member'
+      - '@fluentui/react-internal!ITextFieldProps#autoComplete:member'
+      - '@fluentui/react-internal!ITextFieldProps#borderless:member'
+      - '@fluentui/react-internal!ITextFieldProps#className:member'
+      - '@fluentui/react-internal!ITextFieldProps#componentRef:member'
+      - '@fluentui/react-internal!ITextFieldProps#defaultValue:member'
+      - '@fluentui/react-internal!ITextFieldProps#deferredValidationTime:member'
+      - '@fluentui/react-internal!ITextFieldProps#description:member'
+      - '@fluentui/react-internal!ITextFieldProps#disabled:member'
+      - '@fluentui/react-internal!ITextFieldProps#elementRef:member'
+      - '@fluentui/react-internal!ITextFieldProps#errorMessage:member'
+      - '@fluentui/react-internal!ITextFieldProps#iconProps:member'
+      - '@fluentui/react-internal!ITextFieldProps#inputClassName:member'
+      - '@fluentui/react-internal!ITextFieldProps#label:member'
+      - '@fluentui/react-internal!ITextFieldProps#multiline:member'
+      - '@fluentui/react-internal!ITextFieldProps#onChange:member'
+      - '@fluentui/react-internal!ITextFieldProps#onGetErrorMessage:member'
+      - '@fluentui/react-internal!ITextFieldProps#onNotifyValidationResult:member'
+      - '@fluentui/react-internal!ITextFieldProps#onRenderDescription:member'
+      - '@fluentui/react-internal!ITextFieldProps#onRenderLabel:member'
+      - '@fluentui/react-internal!ITextFieldProps#onRenderPrefix:member'
+      - '@fluentui/react-internal!ITextFieldProps#onRenderSuffix:member'
+      - '@fluentui/react-internal!ITextFieldProps#prefix:member'
+      - '@fluentui/react-internal!ITextFieldProps#readOnly:member'
+      - '@fluentui/react-internal!ITextFieldProps#resizable:member'
+      - '@fluentui/react-internal!ITextFieldProps#styles:member'
+      - '@fluentui/react-internal!ITextFieldProps#suffix:member'
+      - '@fluentui/react-internal!ITextFieldProps#theme:member'
+      - '@fluentui/react-internal!ITextFieldProps#underlined:member'
+      - '@fluentui/react-internal!ITextFieldProps#validateOnFocusIn:member'
+      - '@fluentui/react-internal!ITextFieldProps#validateOnFocusOut:member'
+      - '@fluentui/react-internal!ITextFieldProps#validateOnLoad:member'
+      - '@fluentui/react-internal!ITextFieldProps#value:member'
+  - uid: '@fluentui/react-internal!ITextFieldProps#ariaLabel:member'
+    summary: Aria label for the text field.
+    name: ariaLabel
+    fullName: ariaLabel
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'ariaLabel?: string;'
+      return:
+        type:
+          - string
+  - uid: '@fluentui/react-internal!ITextFieldProps#autoAdjustHeight:member'
+    summary: 'For multiline text fields, whether or not to auto adjust text field height.'
+    name: autoAdjustHeight
+    fullName: autoAdjustHeight
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'autoAdjustHeight?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!ITextFieldProps#autoComplete:member'
+    summary: >-
+      Whether the input field should have autocomplete enabled. This tells the browser to display options based on
+      earlier typed values. Common values are 'on' and 'off' but for all possible values see the following links:
+      https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete\#Values
+      https://html.spec.whatwg.org/multipage/form-control-infrastructure.html\#autofill
+    name: autoComplete
+    fullName: autoComplete
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'autoComplete?: string;'
+      return:
+        type:
+          - string
+  - uid: '@fluentui/react-internal!ITextFieldProps#borderless:member'
+    summary: Whether or not the text field is borderless.
+    name: borderless
+    fullName: borderless
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'borderless?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!ITextFieldProps#className:member'
+    summary: Optional class name that is added to the container of the component.
+    name: className
+    fullName: className
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'className?: string;'
+      return:
+        type:
+          - string
+  - uid: '@fluentui/react-internal!ITextFieldProps#componentRef:member'
+    summary: >-
+      Optional callback to access the ITextField component. Use this instead of ref for accessing the public methods and
+      properties of the component.
+    name: componentRef
+    fullName: componentRef
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'componentRef?: IRefObject<ITextField>;'
+      return:
+        type:
+          - IRefObject<ITextField>
+  - uid: '@fluentui/react-internal!ITextFieldProps#defaultValue:member'
+    summary: >-
+      Default value of the text field. Only provide this if the text field is an uncontrolled component; otherwise, use
+      the `value` property.
+    name: defaultValue
+    fullName: defaultValue
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'defaultValue?: string;'
+      return:
+        type:
+          - string
+  - uid: '@fluentui/react-internal!ITextFieldProps#deferredValidationTime:member'
+    summary: >-
+      Text field will start to validate after users stop typing for `deferredValidationTime` milliseconds. Updates to
+      this prop will not be respected.
+    name: deferredValidationTime
+    fullName: deferredValidationTime
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'deferredValidationTime?: number;'
+      return:
+        type:
+          - number
+  - uid: '@fluentui/react-internal!ITextFieldProps#description:member'
+    summary: Description displayed below the text field to provide additional details about what text to enter.
+    name: description
+    fullName: description
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'description?: string;'
+      return:
+        type:
+          - string
+  - uid: '@fluentui/react-internal!ITextFieldProps#disabled:member'
+    summary: Disabled state of the text field.
+    name: disabled
+    fullName: disabled
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'disabled?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!ITextFieldProps#elementRef:member'
+    summary: Optional callback to access the root DOM element.
+    deprecated:
+      content: Temporary solution which will be replaced with ref once TextField is converted to a function component.
+    name: elementRef
+    fullName: elementRef
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'elementRef?: React.Ref<HTMLDivElement>;'
+      return:
+        type:
+          - React.Ref<HTMLDivElement>
+  - uid: '@fluentui/react-internal!ITextFieldProps#errorMessage:member'
+    summary: >-
+      Static error message displayed below the text field. Use `onGetErrorMessage` to dynamically change the error
+      message displayed (if any) based on the current value. `errorMessage` and `onGetErrorMessage` are mutually
+      exclusive (`errorMessage` takes precedence).
+    name: errorMessage
+    fullName: errorMessage
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'errorMessage?: string | JSX.Element;'
+      return:
+        type:
+          - string | JSX.Element
+  - uid: '@fluentui/react-internal!ITextFieldProps#iconProps:member'
+    summary: 'Props for an optional icon, displayed in the far right end of the text field.'
+    name: iconProps
+    fullName: iconProps
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'iconProps?: IIconProps;'
+      return:
+        type:
+          - IIconProps
+  - uid: '@fluentui/react-internal!ITextFieldProps#inputClassName:member'
+    summary: Optional class name that is added specifically to the input/textarea element.
+    name: inputClassName
+    fullName: inputClassName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'inputClassName?: string;'
+      return:
+        type:
+          - string
+  - uid: '@fluentui/react-internal!ITextFieldProps#label:member'
+    summary: Label displayed above the text field (and read by screen readers).
+    name: label
+    fullName: label
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'label?: string;'
+      return:
+        type:
+          - string
+  - uid: '@fluentui/react-internal!ITextFieldProps#multiline:member'
+    summary: Whether or not the text field is a multiline text field.
+    name: multiline
+    fullName: multiline
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'multiline?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!ITextFieldProps#onChange:member'
+    summary: >-
+      Callback for when the input value changes. This is called on both `input` and `change` events. (In a later
+      version, this will probably only be called for the `change` event.)
+    name: onChange
+    fullName: onChange
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onChange?: (event: React.FormEvent<HTMLInputElement | HTMLTextAreaElement>, newValue?: string) => void;'
+      return:
+        type:
+          - '(event: React.FormEvent<HTMLInputElement | HTMLTextAreaElement>, newValue?: string) => void'
+  - uid: '@fluentui/react-internal!ITextFieldProps#onGetErrorMessage:member'
+    summary: >-
+      Function used to determine whether the input value is valid and get an error message if not. Mutually exclusive
+      with the static string `errorMessage` (it will take precedence over this).
+
+
+      When it returns `string | JSX.Element`<!-- -->: - If valid, it returns empty string. - If invalid, it returns the
+      error message and the text field will show a red border and show an error message below the text field.
+
+
+      When it returns `Promise<string | JSX.Element>`<!-- -->: - The resolved value is displayed as the error message. -
+      If rejected, the value is thrown away.
+    name: onGetErrorMessage
+    fullName: onGetErrorMessage
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onGetErrorMessage?: (value: string) => string | JSX.Element | PromiseLike<string | JSX.Element> | undefined;'
+      return:
+        type:
+          - '(value: string) => string | JSX.Element | PromiseLike<string | JSX.Element> | undefined'
+  - uid: '@fluentui/react-internal!ITextFieldProps#onNotifyValidationResult:member'
+    summary: Function called after validation completes.
+    name: onNotifyValidationResult
+    fullName: onNotifyValidationResult
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onNotifyValidationResult?: (errorMessage: string | JSX.Element, value: string | undefined) => void;'
+      return:
+        type:
+          - '(errorMessage: string | JSX.Element, value: string | undefined) => void'
+  - uid: '@fluentui/react-internal!ITextFieldProps#onRenderDescription:member'
+    summary: Custom renderer for the description.
+    name: onRenderDescription
+    fullName: onRenderDescription
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onRenderDescription?: IRenderFunction<ITextFieldProps>;'
+      return:
+        type:
+          - IRenderFunction<ITextFieldProps>
+  - uid: '@fluentui/react-internal!ITextFieldProps#onRenderLabel:member'
+    summary: >-
+      Custom renderer for the label. If you don't call defaultRender, ensure that you give your custom-rendered label an
+      id and that you set the textfield's aria-labelledby prop to that id.
+    name: onRenderLabel
+    fullName: onRenderLabel
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onRenderLabel?: IRenderFunction<ITextFieldProps>;'
+      return:
+        type:
+          - IRenderFunction<ITextFieldProps>
+  - uid: '@fluentui/react-internal!ITextFieldProps#onRenderPrefix:member'
+    summary: Custom render function for prefix.
+    name: onRenderPrefix
+    fullName: onRenderPrefix
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onRenderPrefix?: IRenderFunction<ITextFieldProps>;'
+      return:
+        type:
+          - IRenderFunction<ITextFieldProps>
+  - uid: '@fluentui/react-internal!ITextFieldProps#onRenderSuffix:member'
+    summary: Custom render function for suffix.
+    name: onRenderSuffix
+    fullName: onRenderSuffix
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onRenderSuffix?: IRenderFunction<ITextFieldProps>;'
+      return:
+        type:
+          - IRenderFunction<ITextFieldProps>
+  - uid: '@fluentui/react-internal!ITextFieldProps#prefix:member'
+    summary: >-
+      Prefix displayed before the text field contents. This is not included in the value. Ensure a descriptive label is
+      present to assist screen readers, as the value does not include the prefix.
+    name: prefix
+    fullName: prefix
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'prefix?: string;'
+      return:
+        type:
+          - string
+  - uid: '@fluentui/react-internal!ITextFieldProps#readOnly:member'
+    summary: 'If true, the text field is readonly.'
+    name: readOnly
+    fullName: readOnly
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readOnly?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!ITextFieldProps#resizable:member'
+    summary: 'For multiline text fields, whether or not the field is resizable.'
+    name: resizable
+    fullName: resizable
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'resizable?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!ITextFieldProps#styles:member'
+    summary: Call to provide customized styling that will layer on top of the variant rules.
+    name: styles
+    fullName: styles
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'styles?: IStyleFunctionOrObject<ITextFieldStyleProps, ITextFieldStyles>;'
+      return:
+        type:
+          - 'IStyleFunctionOrObject<ITextFieldStyleProps, ITextFieldStyles>'
+  - uid: '@fluentui/react-internal!ITextFieldProps#suffix:member'
+    summary: >-
+      Suffix displayed after the text field contents. This is not included in the value. Ensure a descriptive label is
+      present to assist screen readers, as the value does not include the suffix.
+    name: suffix
+    fullName: suffix
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'suffix?: string;'
+      return:
+        type:
+          - string
+  - uid: '@fluentui/react-internal!ITextFieldProps#theme:member'
+    summary: Theme (provided through customization).
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type:
+          - '@fluentui/theme!ITheme:interface'
+  - uid: '@fluentui/react-internal!ITextFieldProps#underlined:member'
+    summary: Whether or not the text field is underlined.
+    name: underlined
+    fullName: underlined
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'underlined?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!ITextFieldProps#validateOnFocusIn:member'
+    summary: |-
+      Run validation when focus moves into the input, and \*\*do not\*\* validate on change.
+
+      (Unless this prop and/or `validateOnFocusOut` is set to true, validation will run on every change.)
+    name: validateOnFocusIn
+    fullName: validateOnFocusIn
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'validateOnFocusIn?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!ITextFieldProps#validateOnFocusOut:member'
+    summary: |-
+      Run validation when focus moves out of the input, and \*\*do not\*\* validate on change.
+
+      (Unless this prop and/or `validateOnFocusIn` is set to true, validation will run on every change.)
+    name: validateOnFocusOut
+    fullName: validateOnFocusOut
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'validateOnFocusOut?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!ITextFieldProps#validateOnLoad:member'
+    summary: Whether validation should run when the input is initially rendered.
+    name: validateOnLoad
+    fullName: validateOnLoad
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'validateOnLoad?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!ITextFieldProps#value:member'
+    summary: >-
+      Current value of the text field. Only provide this if the text field is a controlled component where you are
+      maintaining its current state; otherwise, use the `defaultValue` property.
+    name: value
+    fullName: value
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'value?: string;'
+      return:
+        type:
+          - string

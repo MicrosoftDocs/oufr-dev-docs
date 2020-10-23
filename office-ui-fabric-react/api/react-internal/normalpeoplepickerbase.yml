@@ -1,0 +1,36 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-internal!NormalPeoplePickerBase:class'
+    summary: Standard People Picker.
+    name: NormalPeoplePickerBase
+    fullName: NormalPeoplePickerBase
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'BasePeoplePicker '
+    package: '@fluentui/react-internal!'
+    children:
+      - '@fluentui/react-internal!NormalPeoplePickerBase.defaultProps:member'
+  - uid: '@fluentui/react-internal!NormalPeoplePickerBase.defaultProps:member'
+    summary: Default props for NormalPeoplePicker.
+    name: defaultProps
+    fullName: defaultProps
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: |-
+        static defaultProps: {
+                onRenderItem: (props: IPeoplePickerItemSelectedProps) => JSX.Element;
+                onRenderSuggestionsItem: (personaProps: IPersonaProps, suggestionsProps?: IBasePickerSuggestionsProps<any> | undefined) => JSX.Element;
+                createGenericItem: typeof createGenericItem;
+            };
+      return:
+        type:
+          - |-
+            {
+                    onRenderItem: (props: IPeoplePickerItemSelectedProps) => JSX.Element;
+                    onRenderSuggestionsItem: (personaProps: IPersonaProps, suggestionsProps?: IBasePickerSuggestionsProps<any> | undefined) => JSX.Element;
+                    createGenericItem: typeof createGenericItem;
+                }

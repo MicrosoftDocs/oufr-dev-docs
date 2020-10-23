@@ -1,0 +1,85 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-internal!NavBase:class'
+    name: NavBase
+    fullName: NavBase
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'React.Component<INavProps, INavState> '
+    implements:
+      - 'INav '
+    package: '@fluentui/react-internal!'
+    children:
+      - '@fluentui/react-internal!NavBase:constructor(1)'
+      - '@fluentui/react-internal!NavBase.defaultProps:member'
+      - '@fluentui/react-internal!NavBase#focus:member(1)'
+      - '@fluentui/react-internal!NavBase#render:member(1)'
+      - '@fluentui/react-internal!NavBase#selectedKey:member'
+  - uid: '@fluentui/react-internal!NavBase:constructor(1)'
+    summary: Constructs a new instance of the `NavBase` class
+    name: (constructor)(props)
+    fullName: (constructor)(props)
+    langs:
+      - typeScript
+    type: constructor
+    syntax:
+      content: 'constructor(props: INavProps);'
+      parameters:
+        - id: props
+          description: ''
+          type:
+            - INavProps
+  - uid: '@fluentui/react-internal!NavBase.defaultProps:member'
+    name: defaultProps
+    fullName: defaultProps
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'static defaultProps: INavProps;'
+      return:
+        type:
+          - INavProps
+  - uid: '@fluentui/react-internal!NavBase#focus:member(1)'
+    summary: Sets focus to the first tabbable item in the zone.
+    name: focus(forceIntoFirstElement)
+    fullName: focus(forceIntoFirstElement)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'focus(forceIntoFirstElement?: boolean): boolean;'
+      return:
+        type:
+          - boolean
+        description: 'True if focus could be set to an active element, false if no operation was taken.'
+      parameters:
+        - id: forceIntoFirstElement
+          description: 'If true, focus will be forced into the first element, even if focus is already in the focus zone.'
+          type:
+            - boolean
+  - uid: '@fluentui/react-internal!NavBase#render:member(1)'
+    name: render()
+    fullName: render()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'render(): JSX.Element | null;'
+      return:
+        type:
+          - JSX.Element | null
+        description: ''
+  - uid: '@fluentui/react-internal!NavBase#selectedKey:member'
+    name: selectedKey
+    fullName: selectedKey
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly selectedKey: string | undefined;'
+      return:
+        type:
+          - string | undefined

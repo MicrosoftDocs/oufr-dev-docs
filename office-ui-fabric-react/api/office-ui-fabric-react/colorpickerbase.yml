@@ -9,7 +9,7 @@ items:
     extends:
       - 'React.Component<IColorPickerProps, IColorPickerState> '
     implements:
-      - 'office-ui-fabric-react!IColorPicker:interface'
+      - 'IColorPicker '
     package: office-ui-fabric-react!
     children:
       - 'office-ui-fabric-react!ColorPickerBase:constructor(1)'
@@ -30,7 +30,7 @@ items:
         - id: props
           description: ''
           type:
-            - 'office-ui-fabric-react!IColorPickerProps:interface'
+            - IColorPickerProps
   - uid: 'office-ui-fabric-react!ColorPickerBase#color:member'
     name: color
     fullName: color
@@ -41,7 +41,7 @@ items:
       content: 'readonly color: IColor;'
       return:
         type:
-          - 'office-ui-fabric-react!IColor:interface'
+          - IColor
   - uid: 'office-ui-fabric-react!ColorPickerBase#componentDidUpdate:member(1)'
     name: 'componentDidUpdate(prevProps, prevState)'
     fullName: 'componentDidUpdate(prevProps, prevState)'

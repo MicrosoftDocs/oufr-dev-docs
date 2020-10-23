@@ -9,7 +9,7 @@ items:
     extends:
       - 'React.Component<IDatePickerProps, IDatePickerState> '
     implements:
-      - 'office-ui-fabric-react!IDatePicker:interface'
+      - 'IDatePicker '
     package: office-ui-fabric-react!
     children:
       - 'office-ui-fabric-react!DatePickerBase:constructor(1)'
@@ -32,7 +32,7 @@ items:
         - id: props
           description: ''
           type:
-            - 'office-ui-fabric-react!IDatePickerProps:interface'
+            - IDatePickerProps
   - uid: 'office-ui-fabric-react!DatePickerBase#componentDidUpdate:member(1)'
     name: 'componentDidUpdate(prevProps, prevState)'
     fullName: 'componentDidUpdate(prevProps, prevState)'
@@ -49,7 +49,7 @@ items:
         - id: prevProps
           description: ''
           type:
-            - 'office-ui-fabric-react!IDatePickerProps:interface'
+            - IDatePickerProps
         - id: prevState
           description: ''
           type:
@@ -64,7 +64,7 @@ items:
       content: 'static defaultProps: IDatePickerProps;'
       return:
         type:
-          - 'office-ui-fabric-react!IDatePickerProps:interface'
+          - IDatePickerProps
   - uid: 'office-ui-fabric-react!DatePickerBase#focus:member(1)'
     name: focus()
     fullName: focus()
@@ -117,4 +117,4 @@ items:
         - id: nextProps
           description: ''
           type:
-            - 'office-ui-fabric-react!IDatePickerProps:interface'
+            - IDatePickerProps

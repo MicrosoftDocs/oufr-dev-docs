@@ -1,29 +1,29 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: '@uifabric/react-hooks!'
-    name: '@uifabric/react-hooks'
-    fullName: '@uifabric/react-hooks'
+  - uid: '@fluentui/react-hooks!'
+    name: '@fluentui/react-hooks'
+    fullName: '@fluentui/react-hooks'
     langs:
       - typeScript
     type: package
     children:
-      - '@uifabric/react-hooks!IUseBooleanCallbacks:interface'
-      - '@uifabric/react-hooks!IWarningOptions:interface'
-      - '@uifabric/react-hooks!useAsync:function(1)'
-      - '@uifabric/react-hooks!useBoolean:function(1)'
-      - '@uifabric/react-hooks!useConst:function(1)'
-      - '@uifabric/react-hooks!useConstCallback:function(1)'
-      - '@uifabric/react-hooks!useControllableValue:function(1)'
-      - '@uifabric/react-hooks!useControllableValue:function(2)'
-      - '@uifabric/react-hooks!useForceUpdate:function(1)'
-      - '@uifabric/react-hooks!useId:function(1)'
-      - '@uifabric/react-hooks!useMergedRefs:function(1)'
-      - '@uifabric/react-hooks!useOnEvent:function(1)'
-      - '@uifabric/react-hooks!usePrevious:function(1)'
-      - '@uifabric/react-hooks!useRefEffect:function(1)'
-      - '@uifabric/react-hooks!useTarget:function(1)'
-      - '@uifabric/react-hooks!useWarnings:function(1)'
-  - uid: '@uifabric/react-hooks!useAsync:function(1)'
+      - '@fluentui/react-hooks!IUseBooleanCallbacks:interface'
+      - '@fluentui/react-hooks!IWarningOptions:interface'
+      - '@fluentui/react-hooks!useAsync:function(1)'
+      - '@fluentui/react-hooks!useBoolean:function(1)'
+      - '@fluentui/react-hooks!useConst:function(1)'
+      - '@fluentui/react-hooks!useConstCallback:function(1)'
+      - '@fluentui/react-hooks!useControllableValue:function(1)'
+      - '@fluentui/react-hooks!useControllableValue:function(2)'
+      - '@fluentui/react-hooks!useForceUpdate:function(1)'
+      - '@fluentui/react-hooks!useId:function(1)'
+      - '@fluentui/react-hooks!useMergedRefs:function(1)'
+      - '@fluentui/react-hooks!useOnEvent:function(1)'
+      - '@fluentui/react-hooks!usePrevious:function(1)'
+      - '@fluentui/react-hooks!useRefEffect:function(1)'
+      - '@fluentui/react-hooks!useTarget:function(1)'
+      - '@fluentui/react-hooks!useWarnings:function(1)'
+  - uid: '@fluentui/react-hooks!useAsync:function(1)'
     summary: Hook to provide an Async instance that is automatically cleaned up on dismount.
     name: useAsync()
     fullName: useAsync()
@@ -34,9 +34,9 @@ items:
       content: 'export declare function useAsync(): Async;'
       return:
         type:
-          - '@uifabric/utilities!Async:class'
+          - '@fluentui/utilities!Async:class'
         description: ''
-  - uid: '@uifabric/react-hooks!useBoolean:function(1)'
+  - uid: '@fluentui/react-hooks!useBoolean:function(1)'
     summary: >-
       Hook to store a value and generate callbacks for setting the value to true or false. The identity of the callbacks
       will always stay the same.
@@ -56,7 +56,7 @@ items:
           description: Initial value
           type:
             - boolean
-  - uid: '@uifabric/react-hooks!useConst:function(1)'
+  - uid: '@fluentui/react-hooks!useConst:function(1)'
     summary: >-
       Hook to initialize and return a constant value. Unlike `React.useMemo`<!-- -->, this is guaranteed to always
       return the same value (and if the initializer is a function, only call it once). This is similar to setting a
@@ -84,7 +84,7 @@ items:
             - T | (() => T)
       typeParameters:
         - id: T
-  - uid: '@uifabric/react-hooks!useConstCallback:function(1)'
+  - uid: '@fluentui/react-hooks!useConstCallback:function(1)'
     deprecated:
       content: Deprecated due to potential for misuse (see package readme). Use `React.useCallback` instead.
     name: useConstCallback(callback)
@@ -107,7 +107,7 @@ items:
         - id: T
           type:
             - '(...args: any[]) => any'
-  - uid: '@uifabric/react-hooks!useControllableValue:function(1)'
+  - uid: '@fluentui/react-hooks!useControllableValue:function(1)'
     summary: >-
       Hook to manage a value that could be either controlled or uncontrolled, such as a checked state or text box
       string.
@@ -144,7 +144,7 @@ items:
         - id: TElement
           type:
             - HTMLElement
-  - uid: '@uifabric/react-hooks!useControllableValue:function(2)'
+  - uid: '@fluentui/react-hooks!useControllableValue:function(2)'
     name: 'useControllableValue(controlledValue, defaultUncontrolledValue, onChange)'
     fullName: 'useControllableValue(controlledValue, defaultUncontrolledValue, onChange)'
     langs:
@@ -183,7 +183,7 @@ items:
         - id: TEvent
           type:
             - React.SyntheticEvent<TElement> | undefined
-  - uid: '@uifabric/react-hooks!useForceUpdate:function(1)'
+  - uid: '@fluentui/react-hooks!useForceUpdate:function(1)'
     summary: Hook to force update a function component by updating a dummy state.
     name: useForceUpdate()
     fullName: useForceUpdate()
@@ -196,7 +196,7 @@ items:
         type:
           - () => void
         description: ''
-  - uid: '@uifabric/react-hooks!useId:function(1)'
+  - uid: '@fluentui/react-hooks!useId:function(1)'
     summary: Hook to generate a unique ID in the global scope (spanning across duplicate copies of the same library).
     name: 'useId(prefix, providedId)'
     fullName: 'useId(prefix, providedId)'
@@ -220,7 +220,7 @@ items:
             the hook call
           type:
             - string
-  - uid: '@uifabric/react-hooks!useMergedRefs:function(1)'
+  - uid: '@fluentui/react-hooks!useMergedRefs:function(1)'
     summary: >-
       React hook to merge multiple React refs (either MutableRefObjects or ref callbacks) into a single ref callback
       that updates all provided refs
@@ -242,7 +242,7 @@ items:
             - '(React.Ref<T> | undefined)[]'
       typeParameters:
         - id: T
-  - uid: '@uifabric/react-hooks!useOnEvent:function(1)'
+  - uid: '@fluentui/react-hooks!useOnEvent:function(1)'
     summary: Hook to attach an event handler on mount and handle cleanup.
     name: 'useOnEvent(element, eventName, callback, useCapture)'
     fullName: 'useOnEvent(element, eventName, callback, useCapture)'
@@ -282,7 +282,7 @@ items:
         - id: TEvent
           type:
             - Event
-  - uid: '@uifabric/react-hooks!usePrevious:function(1)'
+  - uid: '@fluentui/react-hooks!usePrevious:function(1)'
     summary: |-
       Hook keeping track of a given value from a previous execution of the component the Hook is used in.
 
@@ -305,7 +305,7 @@ items:
             - T
       typeParameters:
         - id: T
-  - uid: '@uifabric/react-hooks!useRefEffect:function(1)'
+  - uid: '@fluentui/react-hooks!useRefEffect:function(1)'
     summary: >-
       Creates a ref, and calls a callback whenever the ref changes to a non-null value. The callback can optionally
       return a cleanup function that'll be called before the value changes, and when the ref is unmounted.
@@ -361,7 +361,7 @@ items:
             - T | null
       typeParameters:
         - id: T
-  - uid: '@uifabric/react-hooks!useTarget:function(1)'
+  - uid: '@fluentui/react-hooks!useTarget:function(1)'
     summary: >-
       Hook to calculate and cache the target element specified by the given target attribute, as well as the target
       element's (or host element's) parent window
@@ -392,7 +392,7 @@ items:
         - id: TElement
           type:
             - 'HTMLElement '
-  - uid: '@uifabric/react-hooks!useWarnings:function(1)'
+  - uid: '@fluentui/react-hooks!useWarnings:function(1)'
     summary: >-
       Only in development mode, display console warnings when certain conditions are met. Note that all warnings except
       `controlledUsage` will only be shown on first render (new `controlledUsage` warnings may be shown later due to
@@ -416,7 +416,7 @@ items:
       typeParameters:
         - id: P
 references:
-  - uid: '@uifabric/react-hooks!IUseBooleanCallbacks:interface'
+  - uid: '@fluentui/react-hooks!IUseBooleanCallbacks:interface'
     name: IUseBooleanCallbacks
-  - uid: '@uifabric/react-hooks!IWarningOptions:interface'
+  - uid: '@fluentui/react-hooks!IWarningOptions:interface'
     name: IWarningOptions

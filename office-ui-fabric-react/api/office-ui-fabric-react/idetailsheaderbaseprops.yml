@@ -8,7 +8,7 @@ items:
     type: interface
     extends:
       - React.ClassAttributes<DetailsHeaderBase>
-      - 'office-ui-fabric-react!IDetailsItemProps:interface'
+      - 'IDetailsItemProps '
     package: office-ui-fabric-react!
     children:
       - 'office-ui-fabric-react!IDetailsHeaderBaseProps#ariaLabel:member'
@@ -106,7 +106,7 @@ items:
       content: 'collapseAllVisibility?: CollapseAllVisibility;'
       return:
         type:
-          - 'office-ui-fabric-react!CollapseAllVisibility:enum'
+          - CollapseAllVisibility
   - uid: 'office-ui-fabric-react!IDetailsHeaderBaseProps#columnReorderOptions:member'
     summary: Column reordering options
     name: columnReorderOptions
@@ -118,7 +118,7 @@ items:
       content: 'columnReorderOptions?: IColumnReorderOptions;'
       return:
         type:
-          - 'office-ui-fabric-react!IColumnReorderOptions:interface'
+          - IColumnReorderOptions
   - uid: 'office-ui-fabric-react!IDetailsHeaderBaseProps#columnReorderProps:member'
     summary: Column reordering options
     name: columnReorderProps
@@ -130,7 +130,7 @@ items:
       content: 'columnReorderProps?: IColumnReorderHeaderProps;'
       return:
         type:
-          - 'office-ui-fabric-react!IColumnReorderHeaderProps:interface'
+          - IColumnReorderHeaderProps
   - uid: 'office-ui-fabric-react!IDetailsHeaderBaseProps#componentRef:member'
     summary: Ref to the component itself
     name: componentRef
@@ -166,7 +166,7 @@ items:
       content: 'layoutMode: DetailsListLayoutMode;'
       return:
         type:
-          - 'office-ui-fabric-react!DetailsListLayoutMode:enum'
+          - DetailsListLayoutMode
   - uid: 'office-ui-fabric-react!IDetailsHeaderBaseProps#minimumPixelsForDrag:member'
     summary: Minimum pixels to be moved before dragging is registered
     name: minimumPixelsForDrag
@@ -286,7 +286,7 @@ items:
       content: 'selectAllVisibility?: SelectAllVisibility;'
       return:
         type:
-          - 'office-ui-fabric-react!SelectAllVisibility:enum'
+          - SelectAllVisibility
   - uid: 'office-ui-fabric-react!IDetailsHeaderBaseProps#styles:member'
     summary: Call to provide customized styling that will layer on top of the variant rules.
     name: styles

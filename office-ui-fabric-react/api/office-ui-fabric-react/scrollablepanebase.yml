@@ -9,7 +9,7 @@ items:
     extends:
       - 'React.Component<IScrollablePaneProps, IScrollablePaneState> '
     implements:
-      - 'office-ui-fabric-react!IScrollablePane:interface'
+      - 'IScrollablePane '
     package: office-ui-fabric-react!
     children:
       - 'office-ui-fabric-react!ScrollablePaneBase:constructor(1)'
@@ -46,7 +46,7 @@ items:
         - id: props
           description: ''
           type:
-            - 'office-ui-fabric-react!IScrollablePaneProps:interface'
+            - IScrollablePaneProps
   - uid: 'office-ui-fabric-react!ScrollablePaneBase#addSticky:member'
     name: addSticky
     fullName: addSticky
@@ -86,11 +86,11 @@ items:
         - id: prevProps
           description: ''
           type:
-            - 'office-ui-fabric-react!IScrollablePaneProps:interface'
+            - IScrollablePaneProps
         - id: prevState
           description: ''
           type:
-            - 'office-ui-fabric-react!IScrollablePaneState:interface'
+            - IScrollablePaneState
   - uid: 'office-ui-fabric-react!ScrollablePaneBase#componentWillUnmount:member(1)'
     name: componentWillUnmount()
     fullName: componentWillUnmount()
@@ -210,11 +210,11 @@ items:
         - id: nextProps
           description: ''
           type:
-            - 'office-ui-fabric-react!IScrollablePaneProps:interface'
+            - IScrollablePaneProps
         - id: nextState
           description: ''
           type:
-            - 'office-ui-fabric-react!IScrollablePaneState:interface'
+            - IScrollablePaneState
   - uid: 'office-ui-fabric-react!ScrollablePaneBase#sortSticky:member'
     name: sortSticky
     fullName: sortSticky

@@ -1,0 +1,252 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-internal!INavLink:interface'
+    name: INavLink
+    fullName: INavLink
+    langs:
+      - typeScript
+    type: interface
+    package: '@fluentui/react-internal!'
+    children:
+      - '@fluentui/react-internal!INavLink#ariaCurrent:member'
+      - '@fluentui/react-internal!INavLink#ariaLabel:member'
+      - '@fluentui/react-internal!INavLink#automationId:member'
+      - '@fluentui/react-internal!INavLink#collapseAriaLabel:member'
+      - '@fluentui/react-internal!INavLink#disabled:member'
+      - '@fluentui/react-internal!INavLink#expandAriaLabel:member'
+      - '@fluentui/react-internal!INavLink#forceAnchor:member'
+      - '@fluentui/react-internal!INavLink#icon:member'
+      - '@fluentui/react-internal!INavLink#iconClassName:member'
+      - '@fluentui/react-internal!INavLink#iconProps:member'
+      - '@fluentui/react-internal!INavLink#isExpanded:member'
+      - '@fluentui/react-internal!INavLink#key:member'
+      - '@fluentui/react-internal!INavLink#links:member'
+      - '@fluentui/react-internal!INavLink#name:member'
+      - '@fluentui/react-internal!INavLink#onClick:member'
+      - '@fluentui/react-internal!INavLink#target:member'
+      - '@fluentui/react-internal!INavLink#title:member'
+      - '@fluentui/react-internal!INavLink#url:member'
+  - uid: '@fluentui/react-internal!INavLink#ariaCurrent:member'
+    summary: 'Aria-current token for active nav links. Must be a valid token value, and defaults to ''page''.'
+    name: ariaCurrent
+    fullName: ariaCurrent
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'ariaCurrent?: ''page'' | ''step'' | ''location'' | ''date'' | ''time'' | ''true'';'
+      return:
+        type:
+          - '''page'' | ''step'' | ''location'' | ''date'' | ''time'' | ''true'''
+  - uid: '@fluentui/react-internal!INavLink#ariaLabel:member'
+    summary: Aria label for nav link. Ignored if `collapseAriaLabel` or `expandAriaLabel` is provided.
+    name: ariaLabel
+    fullName: ariaLabel
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'ariaLabel?: string;'
+      return:
+        type:
+          - string
+  - uid: '@fluentui/react-internal!INavLink#automationId:member'
+    summary: The name to use for functional automation tests
+    name: automationId
+    fullName: automationId
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'automationId?: string;'
+      return:
+        type:
+          - string
+  - uid: '@fluentui/react-internal!INavLink#collapseAriaLabel:member'
+    summary: ARIA label when group is collapsed and can be expanded.
+    name: collapseAriaLabel
+    fullName: collapseAriaLabel
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'collapseAriaLabel?: string;'
+      return:
+        type:
+          - string
+  - uid: '@fluentui/react-internal!INavLink#disabled:member'
+    summary: Whether or not the link is disabled.
+    name: disabled
+    fullName: disabled
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'disabled?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!INavLink#expandAriaLabel:member'
+    summary: ARIA label when group is collapsed and can be expanded.
+    name: expandAriaLabel
+    fullName: expandAriaLabel
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'expandAriaLabel?: string;'
+      return:
+        type:
+          - string
+  - uid: '@fluentui/react-internal!INavLink#forceAnchor:member'
+    summary: >-
+      (Optional) By default, any link with onClick defined will render as a button. Set this property to true to
+      override that behavior. (Links without onClick defined will render as anchors by default.)
+    name: forceAnchor
+    fullName: forceAnchor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'forceAnchor?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!INavLink#icon:member'
+    summary: Name of an icon to render next to the link button.
+    name: icon
+    fullName: icon
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'icon?: string;'
+      return:
+        type:
+          - string
+  - uid: '@fluentui/react-internal!INavLink#iconClassName:member'
+    summary: Deprecated. Use `iconProps.className` instead.
+    deprecated:
+      content: Use `iconProps.className` instead.
+    name: iconClassName
+    fullName: iconClassName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'iconClassName?: string;'
+      return:
+        type:
+          - string
+  - uid: '@fluentui/react-internal!INavLink#iconProps:member'
+    summary: Props for an icon to render next to the link button.
+    name: iconProps
+    fullName: iconProps
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'iconProps?: IIconProps;'
+      return:
+        type:
+          - IIconProps
+  - uid: '@fluentui/react-internal!INavLink#isExpanded:member'
+    summary: Whether or not the link is in an expanded state
+    name: isExpanded
+    fullName: isExpanded
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isExpanded?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!INavLink#key:member'
+    summary: >-
+      Unique, stable key for the link, used when rendering the list of links and for tracking the currently selected
+      link.
+    name: key
+    fullName: key
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'key?: string;'
+      return:
+        type:
+          - string
+  - uid: '@fluentui/react-internal!INavLink#links:member'
+    summary: 'Child links to this link, if any'
+    name: links
+    fullName: links
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'links?: INavLink[];'
+      return:
+        type:
+          - 'INavLink[]'
+  - uid: '@fluentui/react-internal!INavLink#name:member'
+    summary: Text to render for this link
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name: string;'
+      return:
+        type:
+          - string
+  - uid: '@fluentui/react-internal!INavLink#onClick:member'
+    summary: >-
+      Callback invoked when this link is clicked. Providing this callback will cause the link to render as a button
+      (rather than an anchor) unless forceAnchor is set to true.
+    name: onClick
+    fullName: onClick
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onClick?: (ev?: React.MouseEvent<HTMLElement>, item?: INavLink) => void;'
+      return:
+        type:
+          - '(ev?: React.MouseEvent<HTMLElement>, item?: INavLink) => void'
+  - uid: '@fluentui/react-internal!INavLink#target:member'
+    summary: Link <a> target.
+    name: target
+    fullName: target
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'target?: string;'
+      return:
+        type:
+          - string
+  - uid: '@fluentui/react-internal!INavLink#title:member'
+    summary: Text for title tooltip and ARIA description.
+    name: title
+    fullName: title
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'title?: string;'
+      return:
+        type:
+          - string
+  - uid: '@fluentui/react-internal!INavLink#url:member'
+    summary: URL to navigate to for this link
+    name: url
+    fullName: url
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'url: string;'
+      return:
+        type:
+          - string

@@ -1,0 +1,69 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-internal!IBasePicker:interface'
+    summary: BasePicker component.
+    name: IBasePicker
+    fullName: IBasePicker
+    langs:
+      - typeScript
+    type: interface
+    syntax:
+      typeParameters:
+        - id: T
+    package: '@fluentui/react-internal!'
+    children:
+      - '@fluentui/react-internal!IBasePicker#completeSuggestion:member'
+      - '@fluentui/react-internal!IBasePicker#focus:member'
+      - '@fluentui/react-internal!IBasePicker#focusInput:member'
+      - '@fluentui/react-internal!IBasePicker#items:member'
+  - uid: '@fluentui/react-internal!IBasePicker#completeSuggestion:member'
+    summary: >-
+      When called, will take the currently selected suggestion and complete it. If called with forceComplete true, it
+      will attempt to force the current suggestion to complete, must provide both createGenericSuggestion, so the text
+      can be turned into an object in the right shape, and onValidateInput, so the object knows if it's correct or not.
+    name: completeSuggestion
+    fullName: completeSuggestion
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'completeSuggestion: (forceComplete?: boolean) => void;'
+      return:
+        type:
+          - '(forceComplete?: boolean) => void'
+  - uid: '@fluentui/react-internal!IBasePicker#focus:member'
+    summary: Sets focus to the focus zone.
+    name: focus
+    fullName: focus
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'focus: () => void;'
+      return:
+        type:
+          - () => void
+  - uid: '@fluentui/react-internal!IBasePicker#focusInput:member'
+    summary: Set focus to the input
+    name: focusInput
+    fullName: focusInput
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'focusInput: () => void;'
+      return:
+        type:
+          - () => void
+  - uid: '@fluentui/react-internal!IBasePicker#items:member'
+    summary: Gets the current value of the input.
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items: T[] | undefined;'
+      return:
+        type:
+          - 'T[] | undefined'

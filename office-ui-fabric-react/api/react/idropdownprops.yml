@@ -1,0 +1,266 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react!IDropdownProps:interface'
+    name: IDropdownProps
+    fullName: IDropdownProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'ISelectableDroppableTextProps<IDropdown, HTMLDivElement>'
+      - 'React.RefAttributes<HTMLDivElement> '
+    package: '@fluentui/react!'
+    children:
+      - '@fluentui/react!IDropdownProps#defaultSelectedKeys:member'
+      - '@fluentui/react!IDropdownProps#dropdownWidth:member'
+      - '@fluentui/react!IDropdownProps#isDisabled:member'
+      - '@fluentui/react!IDropdownProps#multiSelectDelimiter:member'
+      - '@fluentui/react!IDropdownProps#notifyOnReselect:member'
+      - '@fluentui/react!IDropdownProps#onChange:member'
+      - '@fluentui/react!IDropdownProps#onChanged:member'
+      - '@fluentui/react!IDropdownProps#onRenderCaretDown:member'
+      - '@fluentui/react!IDropdownProps#onRenderLabel:member'
+      - '@fluentui/react!IDropdownProps#onRenderPlaceholder:member'
+      - '@fluentui/react!IDropdownProps#onRenderPlaceHolder:member'
+      - '@fluentui/react!IDropdownProps#onRenderTitle:member'
+      - '@fluentui/react!IDropdownProps#options:member'
+      - '@fluentui/react!IDropdownProps#placeHolder:member'
+      - '@fluentui/react!IDropdownProps#responsiveMode:member'
+      - '@fluentui/react!IDropdownProps#selectedKeys:member'
+      - '@fluentui/react!IDropdownProps#styles:member'
+      - '@fluentui/react!IDropdownProps#theme:member'
+  - uid: '@fluentui/react!IDropdownProps#defaultSelectedKeys:member'
+    summary: >-
+      Keys that will be initially used to set selected items. This prop is used for `multiSelect` scenarios. In other
+      cases, `defaultSelectedKey` should be used.
+    name: defaultSelectedKeys
+    fullName: defaultSelectedKeys
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'defaultSelectedKeys?: string[] | number[];'
+      return:
+        type:
+          - 'string[] | number[]'
+  - uid: '@fluentui/react!IDropdownProps#dropdownWidth:member'
+    summary: 'Custom width for dropdown. If value is 0, width of the input field is used.'
+    name: dropdownWidth
+    fullName: dropdownWidth
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'dropdownWidth?: number;'
+      return:
+        type:
+          - number
+  - uid: '@fluentui/react!IDropdownProps#isDisabled:member'
+    summary: 'Deprecated at v0.52.0, use `disabled` instead.'
+    deprecated:
+      content: Use `disabled` instead.
+    name: isDisabled
+    fullName: isDisabled
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isDisabled?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: '@fluentui/react!IDropdownProps#multiSelectDelimiter:member'
+    summary: 'When multiple items are selected, this still will be used to separate values in the dropdown title.'
+    name: multiSelectDelimiter
+    fullName: multiSelectDelimiter
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'multiSelectDelimiter?: string;'
+      return:
+        type:
+          - string
+  - uid: '@fluentui/react!IDropdownProps#notifyOnReselect:member'
+    summary: >-
+      Optional preference to have onChanged still be called when an already selected item is clicked in single select
+      mode. Default to false
+    name: notifyOnReselect
+    fullName: notifyOnReselect
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'notifyOnReselect?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: '@fluentui/react!IDropdownProps#onChange:member'
+    summary: Callback issued when the selected option changes.
+    name: onChange
+    fullName: onChange
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onChange?: (event: React.FormEvent<HTMLDivElement>, option?: IDropdownOption, index?: number) => void;'
+      return:
+        type:
+          - '(event: React.FormEvent<HTMLDivElement>, option?: IDropdownOption, index?: number) => void'
+  - uid: '@fluentui/react!IDropdownProps#onChanged:member'
+    deprecated:
+      content: Use `onChange` instead.
+    name: onChanged
+    fullName: onChanged
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onChanged?: (option: IDropdownOption, index?: number) => void;'
+      return:
+        type:
+          - '(option: IDropdownOption, index?: number) => void'
+  - uid: '@fluentui/react!IDropdownProps#onRenderCaretDown:member'
+    summary: Optional custom renderer for chevron icon
+    name: onRenderCaretDown
+    fullName: onRenderCaretDown
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onRenderCaretDown?: IRenderFunction<IDropdownProps>;'
+      return:
+        type:
+          - IRenderFunction<IDropdownProps>
+  - uid: '@fluentui/react!IDropdownProps#onRenderLabel:member'
+    summary: Custom render function for the label.
+    name: onRenderLabel
+    fullName: onRenderLabel
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onRenderLabel?: IRenderFunction<IDropdownProps>;'
+      return:
+        type:
+          - IRenderFunction<IDropdownProps>
+  - uid: '@fluentui/react!IDropdownProps#onRenderPlaceholder:member'
+    summary: Optional custom renderer for placeholder text
+    name: onRenderPlaceholder
+    fullName: onRenderPlaceholder
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onRenderPlaceholder?: IRenderFunction<IDropdownProps>;'
+      return:
+        type:
+          - IRenderFunction<IDropdownProps>
+  - uid: '@fluentui/react!IDropdownProps#onRenderPlaceHolder:member'
+    summary: Optional custom renderer for placeholder text
+    deprecated:
+      content: Use `onRenderPlaceholder`
+    name: onRenderPlaceHolder
+    fullName: onRenderPlaceHolder
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onRenderPlaceHolder?: IRenderFunction<IDropdownProps>;'
+      return:
+        type:
+          - IRenderFunction<IDropdownProps>
+  - uid: '@fluentui/react!IDropdownProps#onRenderTitle:member'
+    summary: Optional custom renderer for selected option displayed in input
+    name: onRenderTitle
+    fullName: onRenderTitle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onRenderTitle?: IRenderFunction<IDropdownOption[]>;'
+      return:
+        type:
+          - 'IRenderFunction<IDropdownOption[]>'
+  - uid: '@fluentui/react!IDropdownProps#options:member'
+    summary: >-
+      Options for the dropdown. If using `defaultSelectedKey` or `defaultSelectedKeys`<!-- -->, options must be pure for
+      correct behavior.
+    name: options
+    fullName: options
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'options: IDropdownOption[];'
+      return:
+        type:
+          - 'IDropdownOption[]'
+  - uid: '@fluentui/react!IDropdownProps#placeHolder:member'
+    summary: Input placeholder text. Displayed until option is selected.
+    deprecated:
+      content: Use `placeholder`
+    name: placeHolder
+    fullName: placeHolder
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'placeHolder?: string;'
+      return:
+        type:
+          - string
+  - uid: '@fluentui/react!IDropdownProps#responsiveMode:member'
+    summary: >-
+      Pass in ResponsiveMode to manually overwrite the way the Dropdown renders. ResponsiveMode.large would, for
+      instance, disable the behavior where Dropdown options get rendered into a Panel while ResponsiveMode.small would
+      result in the Dropdown options always getting rendered in a Panel.
+    name: responsiveMode
+    fullName: responsiveMode
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'responsiveMode?: ResponsiveMode;'
+      return:
+        type:
+          - ResponsiveMode
+  - uid: '@fluentui/react!IDropdownProps#selectedKeys:member'
+    summary: >-
+      Keys of the selected items. If you provide this, you must maintain selection state by observing onChange events
+      and passing a new value in when changed. Passing null in will clear the selection. Mutually exclusive with
+      `defaultSelectedKeys`<!-- -->.
+    name: selectedKeys
+    fullName: selectedKeys
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'selectedKeys?: string[] | number[] | null;'
+      return:
+        type:
+          - 'string[] | number[] | null'
+  - uid: '@fluentui/react!IDropdownProps#styles:member'
+    summary: Call to provide customized styling that will layer on top of the variant rules.
+    name: styles
+    fullName: styles
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'styles?: IStyleFunctionOrObject<IDropdownStyleProps, IDropdownStyles>;'
+      return:
+        type:
+          - 'IStyleFunctionOrObject<IDropdownStyleProps, IDropdownStyles>'
+  - uid: '@fluentui/react!IDropdownProps#theme:member'
+    summary: Theme provided by higher order component.
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type:
+          - '@fluentui/theme!ITheme:interface'

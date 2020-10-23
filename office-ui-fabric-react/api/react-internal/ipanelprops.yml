@@ -1,0 +1,528 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-internal!IPanelProps:interface'
+    name: IPanelProps
+    fullName: IPanelProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'React.HTMLAttributes<PanelBase> '
+    package: '@fluentui/react-internal!'
+    children:
+      - '@fluentui/react-internal!IPanelProps#allowTouchBodyScroll:member'
+      - '@fluentui/react-internal!IPanelProps#className:member'
+      - '@fluentui/react-internal!IPanelProps#closeButtonAriaLabel:member'
+      - '@fluentui/react-internal!IPanelProps#componentId:member'
+      - '@fluentui/react-internal!IPanelProps#componentRef:member'
+      - '@fluentui/react-internal!IPanelProps#customWidth:member'
+      - '@fluentui/react-internal!IPanelProps#elementToFocusOnDismiss:member'
+      - '@fluentui/react-internal!IPanelProps#firstFocusableSelector:member'
+      - '@fluentui/react-internal!IPanelProps#focusTrapZoneProps:member'
+      - '@fluentui/react-internal!IPanelProps#forceFocusInsideTrap:member'
+      - '@fluentui/react-internal!IPanelProps#hasCloseButton:member'
+      - '@fluentui/react-internal!IPanelProps#headerClassName:member'
+      - '@fluentui/react-internal!IPanelProps#headerText:member'
+      - '@fluentui/react-internal!IPanelProps#headerTextProps:member'
+      - '@fluentui/react-internal!IPanelProps#ignoreExternalFocusing:member'
+      - '@fluentui/react-internal!IPanelProps#isBlocking:member'
+      - '@fluentui/react-internal!IPanelProps#isFooterAtBottom:member'
+      - '@fluentui/react-internal!IPanelProps#isHiddenOnDismiss:member'
+      - '@fluentui/react-internal!IPanelProps#isLightDismiss:member'
+      - '@fluentui/react-internal!IPanelProps#isOpen:member'
+      - '@fluentui/react-internal!IPanelProps#layerProps:member'
+      - '@fluentui/react-internal!IPanelProps#onDismiss:member'
+      - '@fluentui/react-internal!IPanelProps#onDismissed:member'
+      - '@fluentui/react-internal!IPanelProps#onLightDismissClick:member'
+      - '@fluentui/react-internal!IPanelProps#onOpen:member'
+      - '@fluentui/react-internal!IPanelProps#onOpened:member'
+      - '@fluentui/react-internal!IPanelProps#onOuterClick:member'
+      - '@fluentui/react-internal!IPanelProps#onRenderBody:member'
+      - '@fluentui/react-internal!IPanelProps#onRenderFooter:member'
+      - '@fluentui/react-internal!IPanelProps#onRenderFooterContent:member'
+      - '@fluentui/react-internal!IPanelProps#onRenderHeader:member'
+      - '@fluentui/react-internal!IPanelProps#onRenderNavigation:member'
+      - '@fluentui/react-internal!IPanelProps#onRenderNavigationContent:member'
+      - '@fluentui/react-internal!IPanelProps#overlayProps:member'
+      - '@fluentui/react-internal!IPanelProps#popupProps:member'
+      - '@fluentui/react-internal!IPanelProps#styles:member'
+      - '@fluentui/react-internal!IPanelProps#theme:member'
+      - '@fluentui/react-internal!IPanelProps#type:member'
+  - uid: '@fluentui/react-internal!IPanelProps#allowTouchBodyScroll:member'
+    summary: Allow body scroll on content and overlay on touch devices. Changing after mounting has no effect.
+    name: allowTouchBodyScroll
+    fullName: allowTouchBodyScroll
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'allowTouchBodyScroll?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!IPanelProps#className:member'
+    summary: Additional css class to apply to the Panel
+    name: className
+    fullName: className
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'className?: string;'
+      return:
+        type:
+          - string
+  - uid: '@fluentui/react-internal!IPanelProps#closeButtonAriaLabel:member'
+    summary: Aria label on close button
+    name: closeButtonAriaLabel
+    fullName: closeButtonAriaLabel
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'closeButtonAriaLabel?: string;'
+      return:
+        type:
+          - string
+  - uid: '@fluentui/react-internal!IPanelProps#componentId:member'
+    summary: Deprecated property. Serves no function.
+    deprecated:
+      content: Serves no function.
+    name: componentId
+    fullName: componentId
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'componentId?: string;'
+      return:
+        type:
+          - string
+  - uid: '@fluentui/react-internal!IPanelProps#componentRef:member'
+    summary: >-
+      Optional callback to access the IPanel interface. Use this instead of ref for accessing the public methods and
+      properties of the component.
+    name: componentRef
+    fullName: componentRef
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'componentRef?: IRefObject<IPanel>;'
+      return:
+        type:
+          - IRefObject<IPanel>
+  - uid: '@fluentui/react-internal!IPanelProps#customWidth:member'
+    summary: 'Custom panel width, used only when `type` is set to `PanelType.custom`<!-- -->.'
+    name: customWidth
+    fullName: customWidth
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'customWidth?: string;'
+      return:
+        type:
+          - string
+  - uid: '@fluentui/react-internal!IPanelProps#elementToFocusOnDismiss:member'
+    summary: Sets the HTMLElement to focus on when exiting the FocusTrapZone.
+    name: elementToFocusOnDismiss
+    fullName: elementToFocusOnDismiss
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'elementToFocusOnDismiss?: HTMLElement;'
+      return:
+        type:
+          - HTMLElement
+  - uid: '@fluentui/react-internal!IPanelProps#firstFocusableSelector:member'
+    summary: 'Indicates the selector for first focusable item. Deprecated, use `focusTrapZoneProps`<!-- -->.'
+    deprecated:
+      content: Use `focusTrapZoneProps`<!-- -->.
+    name: firstFocusableSelector
+    fullName: firstFocusableSelector
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'firstFocusableSelector?: string;'
+      return:
+        type:
+          - string
+  - uid: '@fluentui/react-internal!IPanelProps#focusTrapZoneProps:member'
+    summary: Optional props to pass to the FocusTrapZone component to manage focus in the panel.
+    name: focusTrapZoneProps
+    fullName: focusTrapZoneProps
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'focusTrapZoneProps?: IFocusTrapZoneProps;'
+      return:
+        type:
+          - IFocusTrapZoneProps
+  - uid: '@fluentui/react-internal!IPanelProps#forceFocusInsideTrap:member'
+    summary: >-
+      Indicates whether Panel should force focus inside the focus trap zone. If not explicitly specified, behavior
+      aligns with FocusTrapZone's default behavior. Deprecated, use `focusTrapZoneProps`<!-- -->.
+    deprecated:
+      content: Use `focusTrapZoneProps`<!-- -->.
+    name: forceFocusInsideTrap
+    fullName: forceFocusInsideTrap
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'forceFocusInsideTrap?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!IPanelProps#hasCloseButton:member'
+    summary: Has the close button visible.
+    name: hasCloseButton
+    fullName: hasCloseButton
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'hasCloseButton?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!IPanelProps#headerClassName:member'
+    summary: Optional parameter to provider the class name for header text
+    name: headerClassName
+    fullName: headerClassName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'headerClassName?: string;'
+      return:
+        type:
+          - string
+  - uid: '@fluentui/react-internal!IPanelProps#headerText:member'
+    summary: Header text for the Panel.
+    name: headerText
+    fullName: headerText
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'headerText?: string;'
+      return:
+        type:
+          - string
+  - uid: '@fluentui/react-internal!IPanelProps#headerTextProps:member'
+    summary: The props for header text container.
+    name: headerTextProps
+    fullName: headerTextProps
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'headerTextProps?: React.HTMLAttributes<HTMLDivElement>;'
+      return:
+        type:
+          - React.HTMLAttributes<HTMLDivElement>
+  - uid: '@fluentui/react-internal!IPanelProps#ignoreExternalFocusing:member'
+    summary: >-
+      Indicates if this Panel will ignore keeping track of HTMLElement that activated the Zone. Deprecated, use
+      `focusTrapZoneProps`<!-- -->.
+    deprecated:
+      content: Use `focusTrapZoneProps`<!-- -->.
+    name: ignoreExternalFocusing
+    fullName: ignoreExternalFocusing
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'ignoreExternalFocusing?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!IPanelProps#isBlocking:member'
+    summary: Whether the panel uses a modal overlay or not
+    name: isBlocking
+    fullName: isBlocking
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isBlocking?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!IPanelProps#isFooterAtBottom:member'
+    summary: Determines if content should stretch to fill available space putting footer at the bottom of the page
+    name: isFooterAtBottom
+    fullName: isFooterAtBottom
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isFooterAtBottom?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!IPanelProps#isHiddenOnDismiss:member'
+    summary: >-
+      Whether the panel is hidden on dismiss, instead of destroyed in the DOM. Protects the contents from being
+      destroyed when the panel is dismissed.
+    name: isHiddenOnDismiss
+    fullName: isHiddenOnDismiss
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isHiddenOnDismiss?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!IPanelProps#isLightDismiss:member'
+    summary: Whether the panel can be light dismissed.
+    name: isLightDismiss
+    fullName: isLightDismiss
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isLightDismiss?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!IPanelProps#isOpen:member'
+    summary: >-
+      Whether the panel is displayed. If true, will cause panel to stay open even if dismissed. If false, will cause
+      panel to stay hidden. If undefined, will allow the panel to control its own visility through open/dismiss methods.
+    name: isOpen
+    fullName: isOpen
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isOpen?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!IPanelProps#layerProps:member'
+    summary: Optional props to pass to the Layer component hosting the panel.
+    name: layerProps
+    fullName: layerProps
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'layerProps?: ILayerProps;'
+      return:
+        type:
+          - ILayerProps
+  - uid: '@fluentui/react-internal!IPanelProps#onDismiss:member'
+    summary: >-
+      A callback function for when the panel is closed, before the animation completes. If the panel should NOT be
+      dismissed based on some keyboard event, then simply call ev.preventDefault() on it
+    name: onDismiss
+    fullName: onDismiss
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onDismiss?: (ev?: React.SyntheticEvent<HTMLElement> | KeyboardEvent) => void;'
+      return:
+        type:
+          - '(ev?: React.SyntheticEvent<HTMLElement> | KeyboardEvent) => void'
+  - uid: '@fluentui/react-internal!IPanelProps#onDismissed:member'
+    summary: >-
+      A callback function which is called \*\*after\*\* the Panel is dismissed and the animation is complete. (If you
+      need to update the Panel's `isOpen` prop in response to a dismiss event, use `onDismiss` instead.)
+    name: onDismissed
+    fullName: onDismissed
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onDismissed?: () => void;'
+      return:
+        type:
+          - () => void
+  - uid: '@fluentui/react-internal!IPanelProps#onLightDismissClick:member'
+    summary: Optional custom function to handle clicks outside the panel in lightdismiss mode
+    name: onLightDismissClick
+    fullName: onLightDismissClick
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onLightDismissClick?: () => void;'
+      return:
+        type:
+          - () => void
+  - uid: '@fluentui/react-internal!IPanelProps#onOpen:member'
+    summary: 'A callback function for when the Panel is opened, before the animation completes.'
+    name: onOpen
+    fullName: onOpen
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onOpen?: () => void;'
+      return:
+        type:
+          - () => void
+  - uid: '@fluentui/react-internal!IPanelProps#onOpened:member'
+    summary: 'A callback function for when the Panel is opened, after the animation completes.'
+    name: onOpened
+    fullName: onOpened
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onOpened?: () => void;'
+      return:
+        type:
+          - () => void
+  - uid: '@fluentui/react-internal!IPanelProps#onOuterClick:member'
+    summary: Optional custom function to handle clicks outside this component
+    name: onOuterClick
+    fullName: onOuterClick
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onOuterClick?: () => void;'
+      return:
+        type:
+          - () => void
+  - uid: '@fluentui/react-internal!IPanelProps#onRenderBody:member'
+    summary: Optional custom renderer for body region. Replaces any children passed into the component.
+    name: onRenderBody
+    fullName: onRenderBody
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onRenderBody?: IRenderFunction<IPanelProps>;'
+      return:
+        type:
+          - IRenderFunction<IPanelProps>
+  - uid: '@fluentui/react-internal!IPanelProps#onRenderFooter:member'
+    summary: Optional custom renderer for footer region. Replaces sticky footer.
+    name: onRenderFooter
+    fullName: onRenderFooter
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onRenderFooter?: IRenderFunction<IPanelProps>;'
+      return:
+        type:
+          - IRenderFunction<IPanelProps>
+  - uid: '@fluentui/react-internal!IPanelProps#onRenderFooterContent:member'
+    summary: Custom renderer for content in the sticky footer
+    name: onRenderFooterContent
+    fullName: onRenderFooterContent
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onRenderFooterContent?: IRenderFunction<IPanelProps>;'
+      return:
+        type:
+          - IRenderFunction<IPanelProps>
+  - uid: '@fluentui/react-internal!IPanelProps#onRenderHeader:member'
+    summary: Optional custom renderer for header region. Replaces current title
+    name: onRenderHeader
+    fullName: onRenderHeader
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onRenderHeader?: IPanelHeaderRenderer;'
+      return:
+        type:
+          - IPanelHeaderRenderer
+  - uid: '@fluentui/react-internal!IPanelProps#onRenderNavigation:member'
+    summary: Optional custom renderer navigation region. Replaces the region that contains the close button.
+    name: onRenderNavigation
+    fullName: onRenderNavigation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onRenderNavigation?: IRenderFunction<IPanelProps>;'
+      return:
+        type:
+          - IRenderFunction<IPanelProps>
+  - uid: '@fluentui/react-internal!IPanelProps#onRenderNavigationContent:member'
+    summary: Optional custom renderer for content in the navigation region. Replaces current close button.
+    name: onRenderNavigationContent
+    fullName: onRenderNavigationContent
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onRenderNavigationContent?: IRenderFunction<IPanelProps>;'
+      return:
+        type:
+          - IRenderFunction<IPanelProps>
+  - uid: '@fluentui/react-internal!IPanelProps#overlayProps:member'
+    summary: Optional props to pass to the Overlay component that the panel uses.
+    name: overlayProps
+    fullName: overlayProps
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'overlayProps?: IOverlayProps;'
+      return:
+        type:
+          - IOverlayProps
+  - uid: '@fluentui/react-internal!IPanelProps#popupProps:member'
+    summary: Optional props to pass the Popup component that the panel uses.
+    name: popupProps
+    fullName: popupProps
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'popupProps?: IPopupProps;'
+      return:
+        type:
+          - IPopupProps
+  - uid: '@fluentui/react-internal!IPanelProps#styles:member'
+    summary: Call to provide customized styling that will layer on top of the variant rules.
+    name: styles
+    fullName: styles
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'styles?: IStyleFunctionOrObject<IPanelStyleProps, IPanelStyles>;'
+      return:
+        type:
+          - 'IStyleFunctionOrObject<IPanelStyleProps, IPanelStyles>'
+  - uid: '@fluentui/react-internal!IPanelProps#theme:member'
+    summary: Theme provided by High-Order Component.
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type:
+          - '@fluentui/theme!ITheme:interface'
+  - uid: '@fluentui/react-internal!IPanelProps#type:member'
+    summary: Type of the panel.
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type?: PanelType;'
+      return:
+        type:
+          - PanelType

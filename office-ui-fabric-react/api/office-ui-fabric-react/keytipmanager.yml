@@ -36,13 +36,13 @@ items:
       content: 'addParentOverflow(keytipProps: IKeytipProps): IKeytipProps;'
       return:
         type:
-          - 'office-ui-fabric-react!IKeytipProps:interface'
+          - IKeytipProps
         description: 'Modified keytip props, if needed to be modified'
       parameters:
         - id: keytipProps
           description: Keytip props to add overflowSetSequence to if necessary
           type:
-            - 'office-ui-fabric-react!IKeytipProps:interface'
+            - IKeytipProps
   - uid: 'office-ui-fabric-react!KeytipManager#delayUpdatingKeytipChange:member'
     name: delayUpdatingKeytipChange
     fullName: delayUpdatingKeytipChange
@@ -91,7 +91,7 @@ items:
       content: 'static getInstance(): KeytipManager;'
       return:
         type:
-          - 'office-ui-fabric-react!KeytipManager:class'
+          - KeytipManager
         description: Singleton KeytipManager instance
   - uid: 'office-ui-fabric-react!KeytipManager#getKeytips:member(1)'
     summary: Gets all IKeytipProps from this.keytips
@@ -208,7 +208,7 @@ items:
         - id: keytipProps
           description: Keytip to register
           type:
-            - 'office-ui-fabric-react!IKeytipProps:interface'
+            - IKeytipProps
         - id: persisted
           description: 'T/F if this keytip should be persisted, default is false'
           type:
@@ -258,7 +258,7 @@ items:
         - id: keytipToRemove
           description: IKeytipProps of the keytip to remove
           type:
-            - 'office-ui-fabric-react!IKeytipProps:interface'
+            - IKeytipProps
         - id: uniqueID
           description: Unique ID of this keytip
           type:
@@ -284,7 +284,7 @@ items:
         - id: keytipProps
           description: Keytip to update
           type:
-            - 'office-ui-fabric-react!IKeytipProps:interface'
+            - IKeytipProps
         - id: uniqueID
           description: Unique ID of this keytip
           type:

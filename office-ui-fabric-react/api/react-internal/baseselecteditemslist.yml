@@ -1,0 +1,358 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-internal!BaseSelectedItemsList:class'
+    name: BaseSelectedItemsList
+    fullName: BaseSelectedItemsList
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'React.Component<P, IBaseSelectedItemsListState<T>> '
+    implements:
+      - 'IBaseSelectedItemsList<T> '
+    package: '@fluentui/react-internal!'
+    children:
+      - '@fluentui/react-internal!BaseSelectedItemsList:constructor(1)'
+      - '@fluentui/react-internal!BaseSelectedItemsList#addItems:member'
+      - '@fluentui/react-internal!BaseSelectedItemsList#componentDidMount:member(1)'
+      - '@fluentui/react-internal!BaseSelectedItemsList#componentDidUpdate:member(1)'
+      - '@fluentui/react-internal!BaseSelectedItemsList#copyItems:member(1)'
+      - '@fluentui/react-internal!BaseSelectedItemsList.getDerivedStateFromProps:member(1)'
+      - '@fluentui/react-internal!BaseSelectedItemsList#hasSelectedItems:member(1)'
+      - '@fluentui/react-internal!BaseSelectedItemsList#highlightedItems:member(1)'
+      - '@fluentui/react-internal!BaseSelectedItemsList#items:member'
+      - '@fluentui/react-internal!BaseSelectedItemsList#onChange:member(1)'
+      - '@fluentui/react-internal!BaseSelectedItemsList#onCopy:member'
+      - '@fluentui/react-internal!BaseSelectedItemsList#onItemChange:member'
+      - '@fluentui/react-internal!BaseSelectedItemsList#onSelectionChanged:member'
+      - '@fluentui/react-internal!BaseSelectedItemsList#removeItem:member'
+      - '@fluentui/react-internal!BaseSelectedItemsList#removeItemAt:member'
+      - '@fluentui/react-internal!BaseSelectedItemsList#removeItems:member'
+      - '@fluentui/react-internal!BaseSelectedItemsList#removeSelectedItems:member(1)'
+      - '@fluentui/react-internal!BaseSelectedItemsList#render:member(1)'
+      - '@fluentui/react-internal!BaseSelectedItemsList#renderItems:member'
+      - '@fluentui/react-internal!BaseSelectedItemsList#replaceItem:member'
+      - '@fluentui/react-internal!BaseSelectedItemsList#root:member'
+      - '@fluentui/react-internal!BaseSelectedItemsList#selection:member'
+      - '@fluentui/react-internal!BaseSelectedItemsList#unselectAll:member(1)'
+      - '@fluentui/react-internal!BaseSelectedItemsList#updateItems:member(1)'
+  - uid: '@fluentui/react-internal!BaseSelectedItemsList:constructor(1)'
+    summary: Constructs a new instance of the `BaseSelectedItemsList` class
+    name: (constructor)(basePickerProps)
+    fullName: (constructor)(basePickerProps)
+    langs:
+      - typeScript
+    type: constructor
+    syntax:
+      content: 'constructor(basePickerProps: P);'
+      parameters:
+        - id: basePickerProps
+          description: ''
+          type:
+            - P
+  - uid: '@fluentui/react-internal!BaseSelectedItemsList#addItems:member'
+    name: addItems
+    fullName: addItems
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'addItems: (items: T[]) => void;'
+      return:
+        type:
+          - '(items: T[]) => void'
+  - uid: '@fluentui/react-internal!BaseSelectedItemsList#componentDidMount:member(1)'
+    name: componentDidMount()
+    fullName: componentDidMount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'componentDidMount(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: '@fluentui/react-internal!BaseSelectedItemsList#componentDidUpdate:member(1)'
+    name: 'componentDidUpdate(oldProps, oldState)'
+    fullName: 'componentDidUpdate(oldProps, oldState)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'componentDidUpdate(oldProps: P, oldState: IBaseSelectedItemsListState<IObjectWithKey>): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: oldProps
+          description: ''
+          type:
+            - P
+        - id: oldState
+          description: ''
+          type:
+            - IBaseSelectedItemsListState<IObjectWithKey>
+  - uid: '@fluentui/react-internal!BaseSelectedItemsList#copyItems:member(1)'
+    name: copyItems(items)
+    fullName: copyItems(items)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'protected copyItems(items: T[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: items
+          description: ''
+          type:
+            - 'T[]'
+  - uid: '@fluentui/react-internal!BaseSelectedItemsList.getDerivedStateFromProps:member(1)'
+    name: getDerivedStateFromProps(newProps)
+    fullName: getDerivedStateFromProps(newProps)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        static getDerivedStateFromProps(newProps: IBaseSelectedItemsListProps<any>): {
+                items: any[];
+            } | null;
+      return:
+        type:
+          - |-
+            {
+                    items: any[];
+                } | null
+        description: ''
+      parameters:
+        - id: newProps
+          description: ''
+          type:
+            - IBaseSelectedItemsListProps<any>
+  - uid: '@fluentui/react-internal!BaseSelectedItemsList#hasSelectedItems:member(1)'
+    name: hasSelectedItems()
+    fullName: hasSelectedItems()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'hasSelectedItems(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: '@fluentui/react-internal!BaseSelectedItemsList#highlightedItems:member(1)'
+    name: highlightedItems()
+    fullName: highlightedItems()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'highlightedItems(): T[];'
+      return:
+        type:
+          - 'T[]'
+        description: ''
+  - uid: '@fluentui/react-internal!BaseSelectedItemsList#items:member'
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: T[];'
+      return:
+        type:
+          - 'T[]'
+  - uid: '@fluentui/react-internal!BaseSelectedItemsList#onChange:member(1)'
+    name: onChange(items)
+    fullName: onChange(items)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'protected onChange(items?: T[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: items
+          description: ''
+          type:
+            - 'T[]'
+  - uid: '@fluentui/react-internal!BaseSelectedItemsList#onCopy:member'
+    name: onCopy
+    fullName: onCopy
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onCopy: (ev: React.ClipboardEvent<HTMLElement>) => void;'
+      return:
+        type:
+          - '(ev: React.ClipboardEvent<HTMLElement>) => void'
+  - uid: '@fluentui/react-internal!BaseSelectedItemsList#onItemChange:member'
+    name: onItemChange
+    fullName: onItemChange
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'protected onItemChange: (changedItem: T, index: number) => void;'
+      return:
+        type:
+          - '(changedItem: T, index: number) => void'
+  - uid: '@fluentui/react-internal!BaseSelectedItemsList#onSelectionChanged:member'
+    name: onSelectionChanged
+    fullName: onSelectionChanged
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'protected onSelectionChanged: () => void;'
+      return:
+        type:
+          - () => void
+  - uid: '@fluentui/react-internal!BaseSelectedItemsList#removeItem:member'
+    name: removeItem
+    fullName: removeItem
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'removeItem: (item: T) => void;'
+      return:
+        type:
+          - '(item: T) => void'
+  - uid: '@fluentui/react-internal!BaseSelectedItemsList#removeItemAt:member'
+    name: removeItemAt
+    fullName: removeItemAt
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'removeItemAt: (index: number) => void;'
+      return:
+        type:
+          - '(index: number) => void'
+  - uid: '@fluentui/react-internal!BaseSelectedItemsList#removeItems:member'
+    name: removeItems
+    fullName: removeItems
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'removeItems: (itemsToRemove: any[]) => void;'
+      return:
+        type:
+          - '(itemsToRemove: any[]) => void'
+  - uid: '@fluentui/react-internal!BaseSelectedItemsList#removeSelectedItems:member(1)'
+    name: removeSelectedItems()
+    fullName: removeSelectedItems()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'removeSelectedItems(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: '@fluentui/react-internal!BaseSelectedItemsList#render:member(1)'
+    name: render()
+    fullName: render()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'render(): any;'
+      return:
+        type:
+          - any
+        description: ''
+  - uid: '@fluentui/react-internal!BaseSelectedItemsList#renderItems:member'
+    name: renderItems
+    fullName: renderItems
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'protected renderItems: () => JSX.Element[];'
+      return:
+        type:
+          - '() => JSX.Element[]'
+  - uid: '@fluentui/react-internal!BaseSelectedItemsList#replaceItem:member'
+    name: replaceItem
+    fullName: replaceItem
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'replaceItem: (itemToReplace: T, itemsToReplaceWith: T[]) => void;'
+      return:
+        type:
+          - '(itemToReplace: T, itemsToReplaceWith: T[]) => void'
+  - uid: '@fluentui/react-internal!BaseSelectedItemsList#root:member'
+    name: root
+    fullName: root
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'protected root: HTMLElement;'
+      return:
+        type:
+          - HTMLElement
+  - uid: '@fluentui/react-internal!BaseSelectedItemsList#selection:member'
+    name: selection
+    fullName: selection
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'protected readonly selection: Selection;'
+      return:
+        type:
+          - '@fluentui/utilities!Selection:class'
+  - uid: '@fluentui/react-internal!BaseSelectedItemsList#unselectAll:member(1)'
+    name: unselectAll()
+    fullName: unselectAll()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'unselectAll(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: '@fluentui/react-internal!BaseSelectedItemsList#updateItems:member(1)'
+    summary: >-
+      Controls what happens whenever there is an action that impacts the selected items. If selectedItems is provided,
+      this will act as a controlled component and will not update its own state.
+    name: 'updateItems(items, focusIndex)'
+    fullName: 'updateItems(items, focusIndex)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'updateItems(items: T[], focusIndex?: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: items
+          description: ''
+          type:
+            - 'T[]'
+        - id: focusIndex
+          description: ''
+          type:
+            - number

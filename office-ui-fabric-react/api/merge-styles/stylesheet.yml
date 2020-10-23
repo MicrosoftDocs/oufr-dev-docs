@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: '@uifabric/merge-styles!Stylesheet:class'
+  - uid: '@fluentui/merge-styles!Stylesheet:class'
     summary: >-
       Represents the state of styles registered in the page. Abstracts the surface for adding styles to the stylesheet,
       exposes helpers for reading the styles registered in server rendered scenarios.
@@ -9,23 +9,23 @@ items:
     langs:
       - typeScript
     type: class
-    package: '@uifabric/merge-styles!'
+    package: '@fluentui/merge-styles!'
     children:
-      - '@uifabric/merge-styles!Stylesheet:constructor(1)'
-      - '@uifabric/merge-styles!Stylesheet#argsFromClassName:member(1)'
-      - '@uifabric/merge-styles!Stylesheet#cacheClassName:member(1)'
-      - '@uifabric/merge-styles!Stylesheet#classNameFromKey:member(1)'
-      - '@uifabric/merge-styles!Stylesheet#getClassName:member(1)'
-      - '@uifabric/merge-styles!Stylesheet#getClassNameCache:member(1)'
-      - '@uifabric/merge-styles!Stylesheet.getInstance:member(1)'
-      - '@uifabric/merge-styles!Stylesheet#getRules:member(1)'
-      - '@uifabric/merge-styles!Stylesheet#insertedRulesFromClassName:member(1)'
-      - '@uifabric/merge-styles!Stylesheet#insertRule:member(1)'
-      - '@uifabric/merge-styles!Stylesheet#onReset:member(1)'
-      - '@uifabric/merge-styles!Stylesheet#reset:member(1)'
-      - '@uifabric/merge-styles!Stylesheet#resetKeys:member(1)'
-      - '@uifabric/merge-styles!Stylesheet#setConfig:member(1)'
-  - uid: '@uifabric/merge-styles!Stylesheet:constructor(1)'
+      - '@fluentui/merge-styles!Stylesheet:constructor(1)'
+      - '@fluentui/merge-styles!Stylesheet#argsFromClassName:member(1)'
+      - '@fluentui/merge-styles!Stylesheet#cacheClassName:member(1)'
+      - '@fluentui/merge-styles!Stylesheet#classNameFromKey:member(1)'
+      - '@fluentui/merge-styles!Stylesheet#getClassName:member(1)'
+      - '@fluentui/merge-styles!Stylesheet#getClassNameCache:member(1)'
+      - '@fluentui/merge-styles!Stylesheet.getInstance:member(1)'
+      - '@fluentui/merge-styles!Stylesheet#getRules:member(1)'
+      - '@fluentui/merge-styles!Stylesheet#insertedRulesFromClassName:member(1)'
+      - '@fluentui/merge-styles!Stylesheet#insertRule:member(1)'
+      - '@fluentui/merge-styles!Stylesheet#onReset:member(1)'
+      - '@fluentui/merge-styles!Stylesheet#reset:member(1)'
+      - '@fluentui/merge-styles!Stylesheet#resetKeys:member(1)'
+      - '@fluentui/merge-styles!Stylesheet#setConfig:member(1)'
+  - uid: '@fluentui/merge-styles!Stylesheet:constructor(1)'
     summary: Constructs a new instance of the `Stylesheet` class
     name: (constructor)(config)
     fullName: (constructor)(config)
@@ -38,8 +38,8 @@ items:
         - id: config
           description: ''
           type:
-            - '@uifabric/merge-styles!IStyleSheetConfig:interface'
-  - uid: '@uifabric/merge-styles!Stylesheet#argsFromClassName:member(1)'
+            - '@fluentui/merge-styles!IStyleSheetConfig:interface'
+  - uid: '@fluentui/merge-styles!Stylesheet#argsFromClassName:member(1)'
     summary: Gets the arguments associated with a given classname which was previously registered using cacheClassName.
     name: argsFromClassName(className)
     fullName: argsFromClassName(className)
@@ -57,7 +57,7 @@ items:
           description: ''
           type:
             - string
-  - uid: '@uifabric/merge-styles!Stylesheet#cacheClassName:member(1)'
+  - uid: '@fluentui/merge-styles!Stylesheet#cacheClassName:member(1)'
     summary: Used internally to cache information about a class which was registered with the stylesheet.
     name: 'cacheClassName(className, key, args, rules)'
     fullName: 'cacheClassName(className, key, args, rules)'
@@ -87,7 +87,7 @@ items:
           description: ''
           type:
             - 'string[]'
-  - uid: '@uifabric/merge-styles!Stylesheet#classNameFromKey:member(1)'
+  - uid: '@fluentui/merge-styles!Stylesheet#classNameFromKey:member(1)'
     summary: Gets the appropriate classname given a key which was previously registered using cacheClassName.
     name: classNameFromKey(key)
     fullName: classNameFromKey(key)
@@ -105,7 +105,7 @@ items:
           description: ''
           type:
             - string
-  - uid: '@uifabric/merge-styles!Stylesheet#getClassName:member(1)'
+  - uid: '@fluentui/merge-styles!Stylesheet#getClassName:member(1)'
     summary: Generates a unique classname.
     name: getClassName(displayName)
     fullName: getClassName(displayName)
@@ -123,7 +123,7 @@ items:
           description: Optional value to use as a prefix.
           type:
             - string
-  - uid: '@uifabric/merge-styles!Stylesheet#getClassNameCache:member(1)'
+  - uid: '@fluentui/merge-styles!Stylesheet#getClassNameCache:member(1)'
     summary: Gets all classnames cache with the stylesheet.
     name: getClassNameCache()
     fullName: getClassNameCache()
@@ -142,7 +142,7 @@ items:
                     [key: string]: string;
                 }
         description: ''
-  - uid: '@uifabric/merge-styles!Stylesheet.getInstance:member(1)'
+  - uid: '@fluentui/merge-styles!Stylesheet.getInstance:member(1)'
     summary: Gets the singleton instance.
     name: getInstance()
     fullName: getInstance()
@@ -153,9 +153,9 @@ items:
       content: 'static getInstance(): Stylesheet;'
       return:
         type:
-          - '@uifabric/merge-styles!Stylesheet:class'
+          - '@fluentui/merge-styles!Stylesheet:class'
         description: ''
-  - uid: '@uifabric/merge-styles!Stylesheet#getRules:member(1)'
+  - uid: '@fluentui/merge-styles!Stylesheet#getRules:member(1)'
     summary: Gets all rules registered with the stylesheet; only valid when using InsertionMode.none.
     name: getRules(includePreservedRules)
     fullName: getRules(includePreservedRules)
@@ -173,7 +173,7 @@ items:
           description: ''
           type:
             - boolean
-  - uid: '@uifabric/merge-styles!Stylesheet#insertedRulesFromClassName:member(1)'
+  - uid: '@fluentui/merge-styles!Stylesheet#insertedRulesFromClassName:member(1)'
     summary: Gets the arguments associated with a given classname which was previously registered using cacheClassName.
     name: insertedRulesFromClassName(className)
     fullName: insertedRulesFromClassName(className)
@@ -191,7 +191,7 @@ items:
           description: ''
           type:
             - string
-  - uid: '@uifabric/merge-styles!Stylesheet#insertRule:member(1)'
+  - uid: '@fluentui/merge-styles!Stylesheet#insertRule:member(1)'
     summary: Inserts a css rule into the stylesheet.
     name: 'insertRule(rule, preserve)'
     fullName: 'insertRule(rule, preserve)'
@@ -213,7 +213,7 @@ items:
           description: Preserves the rule beyond a reset boundary.
           type:
             - boolean
-  - uid: '@uifabric/merge-styles!Stylesheet#onReset:member(1)'
+  - uid: '@fluentui/merge-styles!Stylesheet#onReset:member(1)'
     summary: Configures a reset callback.
     name: onReset(callback)
     fullName: onReset(callback)
@@ -231,7 +231,7 @@ items:
           description: A callback which will be called when the Stylesheet is reset.
           type:
             - () => void
-  - uid: '@uifabric/merge-styles!Stylesheet#reset:member(1)'
+  - uid: '@fluentui/merge-styles!Stylesheet#reset:member(1)'
     summary: >-
       Resets the internal state of the stylesheet. Only used in server rendered scenarios where we're using
       InsertionMode.none.
@@ -246,7 +246,7 @@ items:
         type:
           - void
         description: ''
-  - uid: '@uifabric/merge-styles!Stylesheet#resetKeys:member(1)'
+  - uid: '@fluentui/merge-styles!Stylesheet#resetKeys:member(1)'
     name: resetKeys()
     fullName: resetKeys()
     langs:
@@ -258,7 +258,7 @@ items:
         type:
           - void
         description: ''
-  - uid: '@uifabric/merge-styles!Stylesheet#setConfig:member(1)'
+  - uid: '@fluentui/merge-styles!Stylesheet#setConfig:member(1)'
     summary: Configures the stylesheet.
     name: setConfig(config)
     fullName: setConfig(config)
@@ -275,4 +275,4 @@ items:
         - id: config
           description: ''
           type:
-            - '@uifabric/merge-styles!IStyleSheetConfig:interface'
+            - '@fluentui/merge-styles!IStyleSheetConfig:interface'
