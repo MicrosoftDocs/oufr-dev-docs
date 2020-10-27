@@ -128,6 +128,7 @@ items:
       - '@fluentui/utilities!setBaseUrl:function(1)'
       - '@fluentui/utilities!setFocusVisibility:function(1)'
       - '@fluentui/utilities!setLanguage:function(1)'
+      - '@fluentui/utilities!setLanguage:function(2)'
       - '@fluentui/utilities!setRTL:function(1)'
       - '@fluentui/utilities!setSSR:function(1)'
       - '@fluentui/utilities!setWarningCallback:function(1)'
@@ -1026,18 +1027,25 @@ items:
           type:
             - boolean
   - uid: '@fluentui/utilities!getLanguage:function(1)'
-    summary: Gets the rtl state of the page (returns true if in rtl.)
-    name: getLanguage()
-    fullName: getLanguage()
+    summary: Gets the language set for the page.
+    name: getLanguage(persistenceType)
+    fullName: getLanguage(persistenceType)
     langs:
       - typeScript
     type: function
     syntax:
-      content: 'export declare function getLanguage(): string | null;'
+      content: >-
+        export declare function getLanguage(persistenceType?: 'localStorage' | 'sessionStorage' | 'none'): string |
+        null;
       return:
         type:
           - string | null
         description: ''
+      parameters:
+        - id: persistenceType
+          description: Where to persist the value. Default is `sessionStorage` if available.
+          type:
+            - '''localStorage'' | ''sessionStorage'' | ''none'''
   - uid: '@fluentui/utilities!getLastFocusable:function(1)'
     summary: Gets the last focusable element.
     name: 'getLastFocusable(rootElement, currentElement, includeElementsInFocusZones)'
@@ -2273,7 +2281,33 @@ items:
           type:
             - Element
   - uid: '@fluentui/utilities!setLanguage:function(1)'
-    summary: Sets the rtl state of the page (by adjusting the dir attribute of the html element.)
+    summary: Sets the language for the page (by adjusting the lang attribute of the html element).
+    name: 'setLanguage(language, persistenceType)'
+    fullName: 'setLanguage(language, persistenceType)'
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: >-
+        export declare function setLanguage(language: string, persistenceType?: 'localStorage' | 'sessionStorage' |
+        'none'): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: language
+          description: Language to set.
+          type:
+            - string
+        - id: persistenceType
+          description: Where to persist the value. Default is `sessionStorage` if available.
+          type:
+            - '''localStorage'' | ''sessionStorage'' | ''none'''
+  - uid: '@fluentui/utilities!setLanguage:function(2)'
+    summary: Sets the language for the page (by adjusting the lang attribute of the html element).
+    deprecated:
+      content: Use string parameter version.
     name: 'setLanguage(language, avoidPersisting)'
     fullName: 'setLanguage(language, avoidPersisting)'
     langs:
@@ -2287,11 +2321,11 @@ items:
         description: ''
       parameters:
         - id: language
-          description: ''
+          description: Language to set.
           type:
             - string
         - id: avoidPersisting
-          description: ''
+          description: 'If true, don''t store the value.'
           type:
             - boolean
   - uid: '@fluentui/utilities!setRTL:function(1)'
