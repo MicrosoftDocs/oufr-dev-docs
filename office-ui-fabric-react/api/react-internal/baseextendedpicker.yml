@@ -129,7 +129,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'protected readonly floatingPickerProps: IBaseFloatingPickerProps<T>;'
+      content: 'protected get floatingPickerProps(): IBaseFloatingPickerProps<T>;'
       return:
         type:
           - IBaseFloatingPickerProps<T>
@@ -152,7 +152,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'readonly highlightedItems: T[];'
+      content: 'get highlightedItems(): T[];'
       return:
         type:
           - 'T[]'
@@ -174,7 +174,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'readonly inputElement: HTMLInputElement | null;'
+      content: 'get inputElement(): HTMLInputElement | null;'
       return:
         type:
           - HTMLInputElement | null
@@ -185,7 +185,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'readonly items: any;'
+      content: 'get items(): any;'
       return:
         type:
           - any
@@ -331,7 +331,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'protected readonly selectedItemsListProps: IBaseSelectedItemsListProps<T>;'
+      content: 'protected get selectedItemsListProps(): IBaseSelectedItemsListProps<T>;'
       return:
         type:
           - IBaseSelectedItemsListProps<T>

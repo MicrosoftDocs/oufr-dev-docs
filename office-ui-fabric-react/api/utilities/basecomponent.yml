@@ -40,7 +40,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'protected readonly _async: Async;'
+      content: 'protected get _async(): Async;'
       return:
         type:
           - '@fluentui/utilities!Async:class'
@@ -52,7 +52,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'protected readonly _disposables: IDisposable[];'
+      content: 'protected get _disposables(): IDisposable[];'
       return:
         type:
           - 'IDisposable[]'
@@ -68,7 +68,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'protected readonly _events: EventGroup;'
+      content: 'protected get _events(): EventGroup;'
       return:
         type:
           - '@fluentui/utilities!EventGroup:class'
@@ -219,7 +219,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'readonly className: string;'
+      content: 'get className(): string;'
       return:
         type:
           - string

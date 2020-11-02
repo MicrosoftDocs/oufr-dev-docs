@@ -155,7 +155,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'readonly currentSuggestion: ISuggestionModel<T> | undefined;'
+      content: 'get currentSuggestion(): ISuggestionModel<T> | undefined;'
       return:
         type:
           - ISuggestionModel<T> | undefined
@@ -166,7 +166,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'readonly currentSuggestionIndex: number;'
+      content: 'get currentSuggestionIndex(): number;'
       return:
         type:
           - number
@@ -309,7 +309,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'readonly selectedElement: HTMLDivElement | undefined;'
+      content: 'get selectedElement(): HTMLDivElement | undefined;'
       return:
         type:
           - HTMLDivElement | undefined
