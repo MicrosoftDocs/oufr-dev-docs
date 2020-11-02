@@ -165,7 +165,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'readonly items: T[];'
+      content: 'get items(): T[];'
       return:
         type:
           - 'T[]'
@@ -316,7 +316,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'protected readonly selection: Selection;'
+      content: 'protected get selection(): Selection;'
       return:
         type:
           - '@fluentui/utilities!Selection:class'
