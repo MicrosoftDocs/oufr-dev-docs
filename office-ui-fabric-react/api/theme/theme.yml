@@ -12,7 +12,6 @@ items:
     package: '@fluentui/theme!'
     children:
       - '@fluentui/theme!Theme#components:member'
-      - '@fluentui/theme!Theme#stylesheets:member'
   - uid: '@fluentui/theme!Theme#components:member'
     summary: >-
       Component-level styles and token set. This is still in an experimental phase and is only applied by
@@ -27,17 +26,3 @@ items:
       return:
         type:
           - ComponentsStyles
-  - uid: '@fluentui/theme!Theme#stylesheets:member'
-    summary: >-
-      CSS stylesheets to be registered. This is still in an experimental phase and is only applied by
-      `ThemeProvider`<!-- -->.
-    name: stylesheets
-    fullName: stylesheets
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'stylesheets?: string[];'
-      return:
-        type:
-          - 'string[]'
