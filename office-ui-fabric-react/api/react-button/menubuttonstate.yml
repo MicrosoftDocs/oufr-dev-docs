@@ -7,7 +7,7 @@ items:
       - typeScript
     type: interface
     extends:
-      - MenuButtonProps
+      - 'Omit<MenuButtonProps, ''menu''>'
       - 'Omit<ButtonState, ''iconPosition'' | ''loader''> '
     package: '@fluentui/react-button!'
     children:
@@ -19,7 +19,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'menu: ExpandedState[''menu''];'
+      content: 'menu?: React.PropsWithChildren<MinimalMenuProps>;'
       return:
         type:
-          - 'ExpandedState[''menu'']'
+          - React.PropsWithChildren<MinimalMenuProps>
