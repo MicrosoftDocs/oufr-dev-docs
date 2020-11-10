@@ -7,8 +7,8 @@ items:
       - typeScript
     type: interface
     extends:
-      - React.ClassAttributes<ModalBase>
-      - IWithResponsiveModeState
+      - React.HTMLAttributes<HTMLElement>
+      - React.RefAttributes<HTMLDivElement>
       - 'IAccessiblePopupProps '
     package: '@fluentui/react-internal!'
     children:
@@ -27,6 +27,7 @@ items:
       - '@fluentui/react-internal!IModalProps#onDismissed:member'
       - '@fluentui/react-internal!IModalProps#onLayerDidMount:member'
       - '@fluentui/react-internal!IModalProps#overlay:member'
+      - '@fluentui/react-internal!IModalProps#responsiveMode:member'
       - '@fluentui/react-internal!IModalProps#scrollableContentClassName:member'
       - '@fluentui/react-internal!IModalProps#styles:member'
       - '@fluentui/react-internal!IModalProps#subtitleAriaId:member'
@@ -223,6 +224,18 @@ items:
       return:
         type:
           - IOverlayProps
+  - uid: '@fluentui/react-internal!IModalProps#responsiveMode:member'
+    summary: The specified responsiveMode value for Modal to use.
+    name: responsiveMode
+    fullName: responsiveMode
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'responsiveMode?: ResponsiveMode;'
+      return:
+        type:
+          - ResponsiveMode
   - uid: '@fluentui/react-internal!IModalProps#scrollableContentClassName:member'
     summary: Optional override for scrollable content class
     name: scrollableContentClassName
