@@ -1,432 +1,411 @@
-### YamlMime:UniversalReference
-items:
-  - uid: '@fluentui/utilities!ISelection:interface'
-    name: ISelection
-    fullName: ISelection
-    langs:
-      - typeScript
-    type: interface
-    syntax:
-      typeParameters:
-        - id: TItem
+### YamlMime:TSType
+name: ISelection
+uid: '@fluentui/utilities!ISelection:interface'
+package: '@fluentui/utilities!'
+fullName: ISelection
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: canSelectItem
+    uid: '@fluentui/utilities!ISelection#canSelectItem:member'
     package: '@fluentui/utilities!'
-    children:
-      - '@fluentui/utilities!ISelection#canSelectItem:member'
-      - '@fluentui/utilities!ISelection#count:member'
-      - '@fluentui/utilities!ISelection#getItems:member(1)'
-      - '@fluentui/utilities!ISelection#getSelectedCount:member(1)'
-      - '@fluentui/utilities!ISelection#getSelectedIndices:member(1)'
-      - '@fluentui/utilities!ISelection#getSelection:member(1)'
-      - '@fluentui/utilities!ISelection#isAllSelected:member(1)'
-      - '@fluentui/utilities!ISelection#isIndexSelected:member(1)'
-      - '@fluentui/utilities!ISelection#isKeySelected:member(1)'
-      - '@fluentui/utilities!ISelection#isModal:member(1)'
-      - '@fluentui/utilities!ISelection#isRangeSelected:member(1)'
-      - '@fluentui/utilities!ISelection#mode:member'
-      - '@fluentui/utilities!ISelection#selectToIndex:member(1)'
-      - '@fluentui/utilities!ISelection#selectToKey:member(1)'
-      - '@fluentui/utilities!ISelection#setAllSelected:member(1)'
-      - '@fluentui/utilities!ISelection#setChangeEvents:member(1)'
-      - '@fluentui/utilities!ISelection#setIndexSelected:member(1)'
-      - '@fluentui/utilities!ISelection#setItems:member(1)'
-      - '@fluentui/utilities!ISelection#setKeySelected:member(1)'
-      - '@fluentui/utilities!ISelection#setModal:member(1)'
-      - '@fluentui/utilities!ISelection#toggleAllSelected:member(1)'
-      - '@fluentui/utilities!ISelection#toggleIndexSelected:member(1)'
-      - '@fluentui/utilities!ISelection#toggleKeySelected:member(1)'
-      - '@fluentui/utilities!ISelection#toggleRangeSelected:member(1)'
-  - uid: '@fluentui/utilities!ISelection#canSelectItem:member'
-    name: canSelectItem
     fullName: canSelectItem
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'canSelectItem: (item: TItem, index?: number) => boolean;'
       return:
-        type:
-          - '(item: TItem, index?: number) => boolean'
-  - uid: '@fluentui/utilities!ISelection#count:member'
-    name: count
+        type: '(item: TItem, index?: number) =&gt; boolean'
+  - name: count
+    uid: '@fluentui/utilities!ISelection#count:member'
+    package: '@fluentui/utilities!'
     fullName: count
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'count: number;'
       return:
-        type:
-          - number
-  - uid: '@fluentui/utilities!ISelection#getItems:member(1)'
-    name: getItems()
-    fullName: getItems()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getItems(): TItem[];'
-      return:
-        type:
-          - 'TItem[]'
-        description: ''
-  - uid: '@fluentui/utilities!ISelection#getSelectedCount:member(1)'
-    name: getSelectedCount()
-    fullName: getSelectedCount()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getSelectedCount(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: '@fluentui/utilities!ISelection#getSelectedIndices:member(1)'
-    name: getSelectedIndices()
-    fullName: getSelectedIndices()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getSelectedIndices(): number[];'
-      return:
-        type:
-          - 'number[]'
-        description: ''
-  - uid: '@fluentui/utilities!ISelection#getSelection:member(1)'
-    name: getSelection()
-    fullName: getSelection()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getSelection(): TItem[];'
-      return:
-        type:
-          - 'TItem[]'
-        description: ''
-  - uid: '@fluentui/utilities!ISelection#isAllSelected:member(1)'
-    name: isAllSelected()
-    fullName: isAllSelected()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'isAllSelected(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: '@fluentui/utilities!ISelection#isIndexSelected:member(1)'
-    name: isIndexSelected(index)
-    fullName: isIndexSelected(index)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'isIndexSelected(index: number): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-      parameters:
-        - id: index
-          description: ''
-          type:
-            - number
-  - uid: '@fluentui/utilities!ISelection#isKeySelected:member(1)'
-    name: isKeySelected(key)
-    fullName: isKeySelected(key)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'isKeySelected(key: string): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-      parameters:
-        - id: key
-          description: ''
-          type:
-            - string
-  - uid: '@fluentui/utilities!ISelection#isModal:member(1)'
-    name: isModal()
-    fullName: isModal()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'isModal?(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: '@fluentui/utilities!ISelection#isRangeSelected:member(1)'
-    name: 'isRangeSelected(fromIndex, count)'
-    fullName: 'isRangeSelected(fromIndex, count)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'isRangeSelected(fromIndex: number, count: number): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-      parameters:
-        - id: fromIndex
-          description: ''
-          type:
-            - number
-        - id: count
-          description: ''
-          type:
-            - number
-  - uid: '@fluentui/utilities!ISelection#mode:member'
-    name: mode
+        type: number
+  - name: mode
+    uid: '@fluentui/utilities!ISelection#mode:member'
+    package: '@fluentui/utilities!'
     fullName: mode
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'mode: SelectionMode;'
       return:
-        type:
-          - '@fluentui/utilities!SelectionMode:enum'
-  - uid: '@fluentui/utilities!ISelection#selectToIndex:member(1)'
-    name: 'selectToIndex(index, clearSelection)'
-    fullName: 'selectToIndex(index, clearSelection)'
-    langs:
-      - typeScript
-    type: method
+        type: '<xref uid="@fluentui/utilities!SelectionMode:enum" />'
+methods:
+  - name: getItems()
+    uid: '@fluentui/utilities!ISelection#getItems:member(1)'
+    package: '@fluentui/utilities!'
+    fullName: getItems()
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'selectToIndex(index: number, clearSelection?: boolean): void;'
+      content: 'getItems(): TItem[];'
       return:
-        type:
-          - void
+        type: 'TItem[]'
         description: ''
+  - name: getSelectedCount()
+    uid: '@fluentui/utilities!ISelection#getSelectedCount:member(1)'
+    package: '@fluentui/utilities!'
+    fullName: getSelectedCount()
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getSelectedCount(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getSelectedIndices()
+    uid: '@fluentui/utilities!ISelection#getSelectedIndices:member(1)'
+    package: '@fluentui/utilities!'
+    fullName: getSelectedIndices()
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getSelectedIndices(): number[];'
+      return:
+        type: 'number[]'
+        description: ''
+  - name: getSelection()
+    uid: '@fluentui/utilities!ISelection#getSelection:member(1)'
+    package: '@fluentui/utilities!'
+    fullName: getSelection()
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getSelection(): TItem[];'
+      return:
+        type: 'TItem[]'
+        description: ''
+  - name: isAllSelected()
+    uid: '@fluentui/utilities!ISelection#isAllSelected:member(1)'
+    package: '@fluentui/utilities!'
+    fullName: isAllSelected()
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isAllSelected(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: isIndexSelected(index)
+    uid: '@fluentui/utilities!ISelection#isIndexSelected:member(1)'
+    package: '@fluentui/utilities!'
+    fullName: isIndexSelected(index)
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isIndexSelected(index: number): boolean;'
       parameters:
         - id: index
           description: ''
-          type:
-            - number
-        - id: clearSelection
-          description: ''
-          type:
-            - boolean
-  - uid: '@fluentui/utilities!ISelection#selectToKey:member(1)'
-    name: 'selectToKey(key, clearSelection)'
-    fullName: 'selectToKey(key, clearSelection)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'selectToKey(key: string, clearSelection?: boolean): void;'
+          type: number
       return:
-        type:
-          - void
+        type: boolean
         description: ''
+  - name: isKeySelected(key)
+    uid: '@fluentui/utilities!ISelection#isKeySelected:member(1)'
+    package: '@fluentui/utilities!'
+    fullName: isKeySelected(key)
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isKeySelected(key: string): boolean;'
       parameters:
         - id: key
           description: ''
-          type:
-            - string
-        - id: clearSelection
-          description: ''
-          type:
-            - boolean
-  - uid: '@fluentui/utilities!ISelection#setAllSelected:member(1)'
-    name: setAllSelected(isAllSelected)
-    fullName: setAllSelected(isAllSelected)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setAllSelected(isAllSelected: boolean): void;'
+          type: string
       return:
-        type:
-          - void
+        type: boolean
         description: ''
-      parameters:
-        - id: isAllSelected
-          description: ''
-          type:
-            - boolean
-  - uid: '@fluentui/utilities!ISelection#setChangeEvents:member(1)'
-    name: 'setChangeEvents(isEnabled, suppressChange)'
-    fullName: 'setChangeEvents(isEnabled, suppressChange)'
-    langs:
-      - typeScript
-    type: method
+  - name: isModal()
+    uid: '@fluentui/utilities!ISelection#isModal:member(1)'
+    package: '@fluentui/utilities!'
+    fullName: isModal()
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'setChangeEvents(isEnabled: boolean, suppressChange?: boolean): void;'
+      content: 'isModal?(): boolean;'
       return:
-        type:
-          - void
+        type: boolean
         description: ''
-      parameters:
-        - id: isEnabled
-          description: ''
-          type:
-            - boolean
-        - id: suppressChange
-          description: ''
-          type:
-            - boolean
-  - uid: '@fluentui/utilities!ISelection#setIndexSelected:member(1)'
-    name: 'setIndexSelected(index, isSelected, shouldAnchor)'
-    fullName: 'setIndexSelected(index, isSelected, shouldAnchor)'
-    langs:
-      - typeScript
-    type: method
+  - name: 'isRangeSelected(fromIndex, count)'
+    uid: '@fluentui/utilities!ISelection#isRangeSelected:member(1)'
+    package: '@fluentui/utilities!'
+    fullName: 'isRangeSelected(fromIndex, count)'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'setIndexSelected(index: number, isSelected: boolean, shouldAnchor: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: index
-          description: ''
-          type:
-            - number
-        - id: isSelected
-          description: ''
-          type:
-            - boolean
-        - id: shouldAnchor
-          description: ''
-          type:
-            - boolean
-  - uid: '@fluentui/utilities!ISelection#setItems:member(1)'
-    name: 'setItems(items, shouldClear)'
-    fullName: 'setItems(items, shouldClear)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setItems(items: TItem[], shouldClear: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: items
-          description: ''
-          type:
-            - 'TItem[]'
-        - id: shouldClear
-          description: ''
-          type:
-            - boolean
-  - uid: '@fluentui/utilities!ISelection#setKeySelected:member(1)'
-    name: 'setKeySelected(key, isSelected, shouldAnchor)'
-    fullName: 'setKeySelected(key, isSelected, shouldAnchor)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setKeySelected(key: string, isSelected: boolean, shouldAnchor: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: key
-          description: ''
-          type:
-            - string
-        - id: isSelected
-          description: ''
-          type:
-            - boolean
-        - id: shouldAnchor
-          description: ''
-          type:
-            - boolean
-  - uid: '@fluentui/utilities!ISelection#setModal:member(1)'
-    name: setModal(isModal)
-    fullName: setModal(isModal)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setModal?(isModal: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: isModal
-          description: ''
-          type:
-            - boolean
-  - uid: '@fluentui/utilities!ISelection#toggleAllSelected:member(1)'
-    name: toggleAllSelected()
-    fullName: toggleAllSelected()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'toggleAllSelected(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: '@fluentui/utilities!ISelection#toggleIndexSelected:member(1)'
-    name: toggleIndexSelected(index)
-    fullName: toggleIndexSelected(index)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'toggleIndexSelected(index: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: index
-          description: ''
-          type:
-            - number
-  - uid: '@fluentui/utilities!ISelection#toggleKeySelected:member(1)'
-    name: toggleKeySelected(key)
-    fullName: toggleKeySelected(key)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'toggleKeySelected(key: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: key
-          description: ''
-          type:
-            - string
-  - uid: '@fluentui/utilities!ISelection#toggleRangeSelected:member(1)'
-    name: 'toggleRangeSelected(fromIndex, count)'
-    fullName: 'toggleRangeSelected(fromIndex, count)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'toggleRangeSelected(fromIndex: number, count: number): void;'
-      return:
-        type:
-          - void
-        description: ''
+      content: 'isRangeSelected(fromIndex: number, count: number): boolean;'
       parameters:
         - id: fromIndex
           description: ''
-          type:
-            - number
+          type: number
         - id: count
           description: ''
-          type:
-            - number
+          type: number
+      return:
+        type: boolean
+        description: ''
+  - name: 'selectToIndex(index, clearSelection)'
+    uid: '@fluentui/utilities!ISelection#selectToIndex:member(1)'
+    package: '@fluentui/utilities!'
+    fullName: 'selectToIndex(index, clearSelection)'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'selectToIndex(index: number, clearSelection?: boolean): void;'
+      parameters:
+        - id: index
+          description: ''
+          type: number
+        - id: clearSelection
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: 'selectToKey(key, clearSelection)'
+    uid: '@fluentui/utilities!ISelection#selectToKey:member(1)'
+    package: '@fluentui/utilities!'
+    fullName: 'selectToKey(key, clearSelection)'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'selectToKey(key: string, clearSelection?: boolean): void;'
+      parameters:
+        - id: key
+          description: ''
+          type: string
+        - id: clearSelection
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setAllSelected(isAllSelected)
+    uid: '@fluentui/utilities!ISelection#setAllSelected:member(1)'
+    package: '@fluentui/utilities!'
+    fullName: setAllSelected(isAllSelected)
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setAllSelected(isAllSelected: boolean): void;'
+      parameters:
+        - id: isAllSelected
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: 'setChangeEvents(isEnabled, suppressChange)'
+    uid: '@fluentui/utilities!ISelection#setChangeEvents:member(1)'
+    package: '@fluentui/utilities!'
+    fullName: 'setChangeEvents(isEnabled, suppressChange)'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setChangeEvents(isEnabled: boolean, suppressChange?: boolean): void;'
+      parameters:
+        - id: isEnabled
+          description: ''
+          type: boolean
+        - id: suppressChange
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: 'setIndexSelected(index, isSelected, shouldAnchor)'
+    uid: '@fluentui/utilities!ISelection#setIndexSelected:member(1)'
+    package: '@fluentui/utilities!'
+    fullName: 'setIndexSelected(index, isSelected, shouldAnchor)'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        setIndexSelected(index: number, isSelected: boolean, shouldAnchor:
+        boolean): void;
+      parameters:
+        - id: index
+          description: ''
+          type: number
+        - id: isSelected
+          description: ''
+          type: boolean
+        - id: shouldAnchor
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: 'setItems(items, shouldClear)'
+    uid: '@fluentui/utilities!ISelection#setItems:member(1)'
+    package: '@fluentui/utilities!'
+    fullName: 'setItems(items, shouldClear)'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setItems(items: TItem[], shouldClear: boolean): void;'
+      parameters:
+        - id: items
+          description: ''
+          type: 'TItem[]'
+        - id: shouldClear
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: 'setKeySelected(key, isSelected, shouldAnchor)'
+    uid: '@fluentui/utilities!ISelection#setKeySelected:member(1)'
+    package: '@fluentui/utilities!'
+    fullName: 'setKeySelected(key, isSelected, shouldAnchor)'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        setKeySelected(key: string, isSelected: boolean, shouldAnchor: boolean):
+        void;
+      parameters:
+        - id: key
+          description: ''
+          type: string
+        - id: isSelected
+          description: ''
+          type: boolean
+        - id: shouldAnchor
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setModal(isModal)
+    uid: '@fluentui/utilities!ISelection#setModal:member(1)'
+    package: '@fluentui/utilities!'
+    fullName: setModal(isModal)
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setModal?(isModal: boolean): void;'
+      parameters:
+        - id: isModal
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: toggleAllSelected()
+    uid: '@fluentui/utilities!ISelection#toggleAllSelected:member(1)'
+    package: '@fluentui/utilities!'
+    fullName: toggleAllSelected()
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'toggleAllSelected(): void;'
+      return:
+        type: void
+        description: ''
+  - name: toggleIndexSelected(index)
+    uid: '@fluentui/utilities!ISelection#toggleIndexSelected:member(1)'
+    package: '@fluentui/utilities!'
+    fullName: toggleIndexSelected(index)
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'toggleIndexSelected(index: number): void;'
+      parameters:
+        - id: index
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: toggleKeySelected(key)
+    uid: '@fluentui/utilities!ISelection#toggleKeySelected:member(1)'
+    package: '@fluentui/utilities!'
+    fullName: toggleKeySelected(key)
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'toggleKeySelected(key: string): void;'
+      parameters:
+        - id: key
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: 'toggleRangeSelected(fromIndex, count)'
+    uid: '@fluentui/utilities!ISelection#toggleRangeSelected:member(1)'
+    package: '@fluentui/utilities!'
+    fullName: 'toggleRangeSelected(fromIndex, count)'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'toggleRangeSelected(fromIndex: number, count: number): void;'
+      parameters:
+        - id: fromIndex
+          description: ''
+          type: number
+        - id: count
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''

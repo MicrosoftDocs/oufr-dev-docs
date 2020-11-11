@@ -1,96 +1,98 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'office-ui-fabric-react!IPopupProps:interface'
-    name: IPopupProps
-    fullName: IPopupProps
-    langs:
-      - typeScript
-    type: interface
-    extends:
-      - 'React.HTMLAttributes<Popup> '
+### YamlMime:TSType
+name: IPopupProps
+uid: 'office-ui-fabric-react!IPopupProps:interface'
+package: office-ui-fabric-react!
+fullName: IPopupProps
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: ariaDescribedBy
+    uid: 'office-ui-fabric-react!IPopupProps#ariaDescribedBy:member'
     package: office-ui-fabric-react!
-    children:
-      - 'office-ui-fabric-react!IPopupProps#ariaDescribedBy:member'
-      - 'office-ui-fabric-react!IPopupProps#ariaLabel:member'
-      - 'office-ui-fabric-react!IPopupProps#ariaLabelledBy:member'
-      - 'office-ui-fabric-react!IPopupProps#className:member'
-      - 'office-ui-fabric-react!IPopupProps#onDismiss:member'
-      - 'office-ui-fabric-react!IPopupProps#onRestoreFocus:member'
-      - 'office-ui-fabric-react!IPopupProps#role:member'
-      - 'office-ui-fabric-react!IPopupProps#shouldRestoreFocus:member'
-  - uid: 'office-ui-fabric-react!IPopupProps#ariaDescribedBy:member'
-    summary: Defines the element id referencing the element containing the description for the popup.
-    name: ariaDescribedBy
     fullName: ariaDescribedBy
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Defines the element id referencing the element containing the description
+      for the popup.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'ariaDescribedBy?: string;'
       return:
-        type:
-          - string
-  - uid: 'office-ui-fabric-react!IPopupProps#ariaLabel:member'
-    summary: Accessible label text for the popup.
-    name: ariaLabel
+        type: string
+  - name: ariaLabel
+    uid: 'office-ui-fabric-react!IPopupProps#ariaLabel:member'
+    package: office-ui-fabric-react!
     fullName: ariaLabel
-    langs:
-      - typeScript
-    type: property
+    summary: Accessible label text for the popup.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'ariaLabel?: string;'
       return:
-        type:
-          - string
-  - uid: 'office-ui-fabric-react!IPopupProps#ariaLabelledBy:member'
-    summary: Defines the element id referencing the element containing label text for popup.
-    name: ariaLabelledBy
+        type: string
+  - name: ariaLabelledBy
+    uid: 'office-ui-fabric-react!IPopupProps#ariaLabelledBy:member'
+    package: office-ui-fabric-react!
     fullName: ariaLabelledBy
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Defines the element id referencing the element containing label text for
+      popup.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'ariaLabelledBy?: string;'
       return:
-        type:
-          - string
-  - uid: 'office-ui-fabric-react!IPopupProps#className:member'
-    summary: Optional class name for the root popup div.
-    name: className
+        type: string
+  - name: className
+    uid: 'office-ui-fabric-react!IPopupProps#className:member'
+    package: office-ui-fabric-react!
     fullName: className
-    langs:
-      - typeScript
-    type: property
+    summary: Optional class name for the root popup div.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'className?: string;'
       return:
-        type:
-          - string
-  - uid: 'office-ui-fabric-react!IPopupProps#onDismiss:member'
-    summary: >-
-      A callback function for when the popup is dismissed from the close button or light dismiss. If provided, will
-      handle escape keypresses and call this. The event will be stopped/canceled.
-    name: onDismiss
+        type: string
+  - name: onDismiss
+    uid: 'office-ui-fabric-react!IPopupProps#onDismiss:member'
+    package: office-ui-fabric-react!
     fullName: onDismiss
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'onDismiss?: (ev?: React.MouseEvent<HTMLElement> | React.KeyboardEvent<HTMLElement>) => any;'
-      return:
-        type:
-          - '(ev?: React.MouseEvent<HTMLElement> | React.KeyboardEvent<HTMLElement>) => any'
-  - uid: 'office-ui-fabric-react!IPopupProps#onRestoreFocus:member'
     summary: >-
-      Called when the component is unmounting, and focus needs to be restored. Argument passed down contains two
-      variables, the element that the underlying popup believes focus should go to \* and whether or not the popup
-      currently contains focus. If this is provided, focus will not be restored automatically, you'll need to call
-      originalElement.focus()
-    name: onRestoreFocus
+      A callback function for when the popup is dismissed from the close button
+      or light dismiss. If provided, will handle escape keypresses and call
+      this. The event will be stopped/canceled.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        onDismiss?: (ev?: React.MouseEvent<HTMLElement> |
+        React.KeyboardEvent<HTMLElement>) => any;
+      return:
+        type: >-
+          (ev?: React.MouseEvent&lt;HTMLElement&gt; |
+          React.KeyboardEvent&lt;HTMLElement&gt;) =&gt; any
+  - name: onRestoreFocus
+    uid: 'office-ui-fabric-react!IPopupProps#onRestoreFocus:member'
+    package: office-ui-fabric-react!
     fullName: onRestoreFocus
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Called when the component is unmounting, and focus needs to be restored.
+      Argument passed down contains two variables, the element that the
+      underlying popup believes focus should go to \* and whether or not the
+      popup currently contains focus. If this is provided, focus will not be
+      restored automatically, you'll need to call originalElement.focus()
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: |-
         onRestoreFocus?: (options: {
@@ -99,38 +101,37 @@ items:
                 documentContainsFocus: boolean;
             }) => void;
       return:
-        type:
-          - |-
-            (options: {
-                    originalElement?: HTMLElement | Window;
-                    containsFocus: boolean;
-                    documentContainsFocus: boolean;
-                }) => void
-  - uid: 'office-ui-fabric-react!IPopupProps#role:member'
-    summary: Aria role for popup
-    name: role
+        type: |-
+          (options: {
+                  originalElement?: HTMLElement | Window;
+                  containsFocus: boolean;
+                  documentContainsFocus: boolean;
+              }) =&gt; void
+  - name: role
+    uid: 'office-ui-fabric-react!IPopupProps#role:member'
+    package: office-ui-fabric-react!
     fullName: role
-    langs:
-      - typeScript
-    type: property
+    summary: Aria role for popup
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'role?: string;'
       return:
-        type:
-          - string
-  - uid: 'office-ui-fabric-react!IPopupProps#shouldRestoreFocus:member'
-    summary: >-
-      If true, when this component is unmounted, focus will be restored to the element that had focus when the component
-      first mounted.
-    deprecated:
-      content: use restoreFocus callback instead
-    name: shouldRestoreFocus
+        type: string
+  - name: shouldRestoreFocus
+    uid: 'office-ui-fabric-react!IPopupProps#shouldRestoreFocus:member'
+    package: office-ui-fabric-react!
     fullName: shouldRestoreFocus
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      If true, when this component is unmounted, focus will be restored to the
+      element that had focus when the component first mounted.
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: use restoreFocus callback instead
     syntax:
       content: 'shouldRestoreFocus?: boolean;'
       return:
-        type:
-          - boolean
+        type: boolean
+extends: 'React.HTMLAttributes&lt;Popup&gt; '

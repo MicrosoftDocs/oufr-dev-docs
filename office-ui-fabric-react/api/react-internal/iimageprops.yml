@@ -1,153 +1,148 @@
-### YamlMime:UniversalReference
-items:
-  - uid: '@fluentui/react-internal!IImageProps:interface'
-    name: IImageProps
-    fullName: IImageProps
-    langs:
-      - typeScript
-    type: interface
-    extends:
-      - React.ImgHTMLAttributes<HTMLImageElement>
-      - 'React.RefAttributes<HTMLImageElement> '
+### YamlMime:TSType
+name: IImageProps
+uid: '@fluentui/react-internal!IImageProps:interface'
+package: '@fluentui/react-internal!'
+fullName: IImageProps
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: className
+    uid: '@fluentui/react-internal!IImageProps#className:member'
     package: '@fluentui/react-internal!'
-    children:
-      - '@fluentui/react-internal!IImageProps#className:member'
-      - '@fluentui/react-internal!IImageProps#coverStyle:member'
-      - '@fluentui/react-internal!IImageProps#errorSrc:member'
-      - '@fluentui/react-internal!IImageProps#imageFit:member'
-      - '@fluentui/react-internal!IImageProps#maximizeFrame:member'
-      - '@fluentui/react-internal!IImageProps#onLoadingStateChange:member'
-      - '@fluentui/react-internal!IImageProps#shouldFadeIn:member'
-      - '@fluentui/react-internal!IImageProps#shouldStartVisible:member'
-      - '@fluentui/react-internal!IImageProps#styles:member'
-      - '@fluentui/react-internal!IImageProps#theme:member'
-  - uid: '@fluentui/react-internal!IImageProps#className:member'
-    summary: Additional css class to apply to the Component
-    name: className
     fullName: className
-    langs:
-      - typeScript
-    type: property
+    summary: Additional css class to apply to the Component
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'className?: string;'
       return:
-        type:
-          - string
-  - uid: '@fluentui/react-internal!IImageProps#coverStyle:member'
-    summary: >-
-      Specifies the cover style to be used for this image. If not specified, this will be dynamically calculated based
-      on the aspect ratio for the image.
-    name: coverStyle
+        type: string
+  - name: coverStyle
+    uid: '@fluentui/react-internal!IImageProps#coverStyle:member'
+    package: '@fluentui/react-internal!'
     fullName: coverStyle
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifies the cover style to be used for this image. If not specified,
+      this will be dynamically calculated based on the aspect ratio for the
+      image.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'coverStyle?: ImageCoverStyle;'
       return:
-        type:
-          - ImageCoverStyle
-  - uid: '@fluentui/react-internal!IImageProps#errorSrc:member'
-    summary: >-
-      Deprecated at v1.3.6, to replace the src in case of errors, use `onLoadingStateChange` instead and re-render the
-      Image with a difference src.
-    deprecated:
-      content: Use `onLoadingStateChange` instead and re-render the Image with a difference src.
-    name: errorSrc
+        type: ImageCoverStyle
+  - name: errorSrc
+    uid: '@fluentui/react-internal!IImageProps#errorSrc:member'
+    package: '@fluentui/react-internal!'
     fullName: errorSrc
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Deprecated at v1.3.6, to replace the src in case of errors, use
+      `onLoadingStateChange` instead and re-render the Image with a difference
+      src.
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      Use `onLoadingStateChange` instead and re-render the Image with a
+      difference src.
     syntax:
       content: 'errorSrc?: string;'
       return:
-        type:
-          - string
-  - uid: '@fluentui/react-internal!IImageProps#imageFit:member'
-    summary: Used to determine how the image is scaled and cropped to fit the frame.
-    name: imageFit
+        type: string
+  - name: imageFit
+    uid: '@fluentui/react-internal!IImageProps#imageFit:member'
+    package: '@fluentui/react-internal!'
     fullName: imageFit
-    langs:
-      - typeScript
-    type: property
+    summary: Used to determine how the image is scaled and cropped to fit the frame.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'imageFit?: ImageFit;'
       return:
-        type:
-          - ImageFit
-  - uid: '@fluentui/react-internal!IImageProps#maximizeFrame:member'
-    summary: 'If true, the image frame will expand to fill its parent container.'
-    name: maximizeFrame
+        type: ImageFit
+  - name: maximizeFrame
+    uid: '@fluentui/react-internal!IImageProps#maximizeFrame:member'
+    package: '@fluentui/react-internal!'
     fullName: maximizeFrame
-    langs:
-      - typeScript
-    type: property
+    summary: 'If true, the image frame will expand to fill its parent container.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'maximizeFrame?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: '@fluentui/react-internal!IImageProps#onLoadingStateChange:member'
-    summary: >-
-      Optional callback method for when the image load state has changed. The 'loadState' parameter indicates the
-      current state of the Image.
-    name: onLoadingStateChange
+        type: boolean
+  - name: onLoadingStateChange
+    uid: '@fluentui/react-internal!IImageProps#onLoadingStateChange:member'
+    package: '@fluentui/react-internal!'
     fullName: onLoadingStateChange
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Optional callback method for when the image load state has changed. The
+      'loadState' parameter indicates the current state of the Image.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'onLoadingStateChange?: (loadState: ImageLoadState) => void;'
       return:
-        type:
-          - '(loadState: ImageLoadState) => void'
-  - uid: '@fluentui/react-internal!IImageProps#shouldFadeIn:member'
-    summary: 'If true, fades the image in when loaded.'
-    name: shouldFadeIn
+        type: '(loadState: ImageLoadState) =&gt; void'
+  - name: shouldFadeIn
+    uid: '@fluentui/react-internal!IImageProps#shouldFadeIn:member'
+    package: '@fluentui/react-internal!'
     fullName: shouldFadeIn
-    langs:
-      - typeScript
-    type: property
+    summary: 'If true, fades the image in when loaded.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'shouldFadeIn?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: '@fluentui/react-internal!IImageProps#shouldStartVisible:member'
-    summary: >-
-      If true, the image starts as visible and is hidden on error. Otherwise, the image is hidden until it is
-      successfully loaded. This disables shouldFadeIn.
-    name: shouldStartVisible
+        type: boolean
+  - name: shouldStartVisible
+    uid: '@fluentui/react-internal!IImageProps#shouldStartVisible:member'
+    package: '@fluentui/react-internal!'
     fullName: shouldStartVisible
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      If true, the image starts as visible and is hidden on error. Otherwise,
+      the image is hidden until it is successfully loaded. This disables
+      shouldFadeIn.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'shouldStartVisible?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: '@fluentui/react-internal!IImageProps#styles:member'
-    summary: Call to provide customized styling that will layer on top of the variant rules
-    name: styles
+        type: boolean
+  - name: styles
+    uid: '@fluentui/react-internal!IImageProps#styles:member'
+    package: '@fluentui/react-internal!'
     fullName: styles
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Call to provide customized styling that will layer on top of the variant
+      rules
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'styles?: IStyleFunctionOrObject<IImageStyleProps, IImageStyles>;'
       return:
-        type:
-          - 'IStyleFunctionOrObject<IImageStyleProps, IImageStyles>'
-  - uid: '@fluentui/react-internal!IImageProps#theme:member'
-    summary: Theme provided by HOC.
-    name: theme
+        type: 'IStyleFunctionOrObject&lt;IImageStyleProps, IImageStyles&gt;'
+  - name: theme
+    uid: '@fluentui/react-internal!IImageProps#theme:member'
+    package: '@fluentui/react-internal!'
     fullName: theme
-    langs:
-      - typeScript
-    type: property
+    summary: Theme provided by HOC.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'theme?: ITheme;'
       return:
-        type:
-          - '@fluentui/theme!ITheme:interface'
+        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
+extends: React.ImgHTMLAttributes&lt;HTMLImageElement&gt;

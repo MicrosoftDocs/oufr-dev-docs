@@ -1,750 +1,638 @@
-### YamlMime:UniversalReference
-items:
-  - uid: '@fluentui/merge-styles!'
-    name: '@fluentui/merge-styles'
-    fullName: '@fluentui/merge-styles'
-    langs:
-      - typeScript
-    type: package
-    children:
-      - '@fluentui/merge-styles!concatStyleSets:function(1)'
-      - '@fluentui/merge-styles!concatStyleSets:function(2)'
-      - '@fluentui/merge-styles!concatStyleSets:function(3)'
-      - '@fluentui/merge-styles!concatStyleSets:function(4)'
-      - '@fluentui/merge-styles!concatStyleSets:function(5)'
-      - '@fluentui/merge-styles!concatStyleSets:function(6)'
-      - '@fluentui/merge-styles!concatStyleSets:function(7)'
-      - '@fluentui/merge-styles!concatStyleSetsWithProps:function(1)'
-      - '@fluentui/merge-styles!fontFace:function(1)'
-      - '@fluentui/merge-styles!ICSPSettings:interface'
-      - '@fluentui/merge-styles!IFontFace:interface'
-      - '@fluentui/merge-styles!IRawFontStyle:interface'
-      - '@fluentui/merge-styles!IRawStyle:interface'
-      - '@fluentui/merge-styles!IRawStyleBase:interface'
-      - '@fluentui/merge-styles!IStyleBaseArray:interface'
-      - '@fluentui/merge-styles!IStyleSheetConfig:interface'
-      - '@fluentui/merge-styles!keyframes:function(1)'
-      - '@fluentui/merge-styles!mergeCss:function(1)'
-      - '@fluentui/merge-styles!mergeCssSets:function(1)'
-      - '@fluentui/merge-styles!mergeCssSets:function(2)'
-      - '@fluentui/merge-styles!mergeCssSets:function(3)'
-      - '@fluentui/merge-styles!mergeCssSets:function(4)'
-      - '@fluentui/merge-styles!mergeCssSets:function(5)'
-      - '@fluentui/merge-styles!mergeStyles:function(1)'
-      - '@fluentui/merge-styles!mergeStyleSets:function(1)'
-      - '@fluentui/merge-styles!mergeStyleSets:function(2)'
-      - '@fluentui/merge-styles!mergeStyleSets:function(3)'
-      - '@fluentui/merge-styles!mergeStyleSets:function(4)'
-      - '@fluentui/merge-styles!mergeStyleSets:function(5)'
-      - '@fluentui/merge-styles!setRTL:function(1)'
-      - '@fluentui/merge-styles!Stylesheet:class'
-  - uid: '@fluentui/merge-styles!concatStyleSets:function(1)'
+### YamlMime:TSPackage
+uid: '@fluentui/merge-styles!'
+name: '@fluentui/merge-styles'
+type: package
+summary: ''
+interfaces:
+  - '@fluentui/merge-styles!ICSPSettings:interface'
+  - '@fluentui/merge-styles!IFontFace:interface'
+  - '@fluentui/merge-styles!IRawFontStyle:interface'
+  - '@fluentui/merge-styles!IRawStyle:interface'
+  - '@fluentui/merge-styles!IRawStyleBase:interface'
+  - '@fluentui/merge-styles!IStyleBaseArray:interface'
+  - '@fluentui/merge-styles!IStyleSheetConfig:interface'
+classes:
+  - '@fluentui/merge-styles!Stylesheet:class'
+functions:
+  - name: concatStyleSets(styleSet)
+    uid: '@fluentui/merge-styles!concatStyleSets:function(1)'
+    package: '@fluentui/merge-styles'
     summary: Combine a set of styles together (but does not register css classes).
-    name: concatStyleSets(styleSet)
-    fullName: concatStyleSets(styleSet)
-    langs:
-      - typeScript
-    type: function
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        export declare function concatStyleSets<TStyleSet>(styleSet: TStyleSet | false | null | undefined):
-        IConcatenatedStyleSet<ObjectOnly<TStyleSet>>;
-      return:
-        type:
-          - IConcatenatedStyleSet<ObjectOnly<TStyleSet>>
-        description: ''
+        export declare function concatStyleSets<TStyleSet>(styleSet: TStyleSet |
+        false | null | undefined): IConcatenatedStyleSet<ObjectOnly<TStyleSet>>;
       parameters:
         - id: styleSet
           description: The first style set to be concatenated.
-          type:
-            - TStyleSet | false | null | undefined
-      typeParameters:
-        - id: TStyleSet
-  - uid: '@fluentui/merge-styles!concatStyleSets:function(2)'
+          type: TStyleSet | false | null | undefined
+      return:
+        type: IConcatenatedStyleSet&lt;ObjectOnly&lt;TStyleSet&gt;&gt;
+        description: ''
+  - name: 'concatStyleSets(styleSet1, styleSet2)'
+    uid: '@fluentui/merge-styles!concatStyleSets:function(2)'
+    package: '@fluentui/merge-styles'
     summary: Combine a set of styles together (but does not register css classes).
-    name: 'concatStyleSets(styleSet1, styleSet2)'
-    fullName: 'concatStyleSets(styleSet1, styleSet2)'
-    langs:
-      - typeScript
-    type: function
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        export declare function concatStyleSets<TStyleSet1, TStyleSet2>(styleSet1: TStyleSet1 | false | null |
-        undefined, styleSet2: TStyleSet2 | false | null | undefined): IConcatenatedStyleSet<ObjectOnly<TStyleSet1> &
-        ObjectOnly<TStyleSet2>>;
-      return:
-        type:
-          - IConcatenatedStyleSet<ObjectOnly<TStyleSet1> & ObjectOnly<TStyleSet2>>
-        description: ''
+        export declare function concatStyleSets<TStyleSet1,
+        TStyleSet2>(styleSet1: TStyleSet1 | false | null | undefined, styleSet2:
+        TStyleSet2 | false | null | undefined):
+        IConcatenatedStyleSet<ObjectOnly<TStyleSet1> & ObjectOnly<TStyleSet2>>;
       parameters:
         - id: styleSet1
           description: The first style set to be concatenated.
-          type:
-            - TStyleSet1 | false | null | undefined
+          type: TStyleSet1 | false | null | undefined
         - id: styleSet2
           description: The second style set to be concatenated.
-          type:
-            - TStyleSet2 | false | null | undefined
-      typeParameters:
-        - id: TStyleSet1
-        - id: TStyleSet2
-  - uid: '@fluentui/merge-styles!concatStyleSets:function(3)'
+          type: TStyleSet2 | false | null | undefined
+      return:
+        type: >-
+          IConcatenatedStyleSet&lt;ObjectOnly&lt;TStyleSet1&gt; &
+          ObjectOnly&lt;TStyleSet2&gt;&gt;
+        description: ''
+  - name: 'concatStyleSets(styleSet1, styleSet2, styleSet3)'
+    uid: '@fluentui/merge-styles!concatStyleSets:function(3)'
+    package: '@fluentui/merge-styles'
     summary: Combine a set of styles together (but does not register css classes).
-    name: 'concatStyleSets(styleSet1, styleSet2, styleSet3)'
-    fullName: 'concatStyleSets(styleSet1, styleSet2, styleSet3)'
-    langs:
-      - typeScript
-    type: function
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        export declare function concatStyleSets<TStyleSet1, TStyleSet2, TStyleSet3>(styleSet1: TStyleSet1 | false | null
-        | undefined, styleSet2: TStyleSet2 | false | null | undefined, styleSet3: TStyleSet3 | false | null |
-        undefined): IConcatenatedStyleSet<ObjectOnly<TStyleSet1> & ObjectOnly<TStyleSet2> & ObjectOnly<TStyleSet3>>;
-      return:
-        type:
-          - IConcatenatedStyleSet<ObjectOnly<TStyleSet1> & ObjectOnly<TStyleSet2> & ObjectOnly<TStyleSet3>>
-        description: ''
+        export declare function concatStyleSets<TStyleSet1, TStyleSet2,
+        TStyleSet3>(styleSet1: TStyleSet1 | false | null | undefined, styleSet2:
+        TStyleSet2 | false | null | undefined, styleSet3: TStyleSet3 | false |
+        null | undefined): IConcatenatedStyleSet<ObjectOnly<TStyleSet1> &
+        ObjectOnly<TStyleSet2> & ObjectOnly<TStyleSet3>>;
       parameters:
         - id: styleSet1
           description: The first style set to be concatenated.
-          type:
-            - TStyleSet1 | false | null | undefined
+          type: TStyleSet1 | false | null | undefined
         - id: styleSet2
           description: The second style set to be concatenated.
-          type:
-            - TStyleSet2 | false | null | undefined
+          type: TStyleSet2 | false | null | undefined
         - id: styleSet3
           description: The third style set to be concatenated.
-          type:
-            - TStyleSet3 | false | null | undefined
-      typeParameters:
-        - id: TStyleSet1
-        - id: TStyleSet2
-        - id: TStyleSet3
-  - uid: '@fluentui/merge-styles!concatStyleSets:function(4)'
+          type: TStyleSet3 | false | null | undefined
+      return:
+        type: >-
+          IConcatenatedStyleSet&lt;ObjectOnly&lt;TStyleSet1&gt; &
+          ObjectOnly&lt;TStyleSet2&gt; & ObjectOnly&lt;TStyleSet3&gt;&gt;
+        description: ''
+  - name: 'concatStyleSets(styleSet1, styleSet2, styleSet3, styleSet4)'
+    uid: '@fluentui/merge-styles!concatStyleSets:function(4)'
+    package: '@fluentui/merge-styles'
     summary: Combine a set of styles together (but does not register css classes).
-    name: 'concatStyleSets(styleSet1, styleSet2, styleSet3, styleSet4)'
-    fullName: 'concatStyleSets(styleSet1, styleSet2, styleSet3, styleSet4)'
-    langs:
-      - typeScript
-    type: function
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        export declare function concatStyleSets<TStyleSet1, TStyleSet2, TStyleSet3, TStyleSet4>(styleSet1: TStyleSet1 |
-        false | null | undefined, styleSet2: TStyleSet2 | false | null | undefined, styleSet3: TStyleSet3 | false | null
-        | undefined, styleSet4: TStyleSet4 | false | null | undefined): IConcatenatedStyleSet<ObjectOnly<TStyleSet1> &
-        ObjectOnly<TStyleSet2> & ObjectOnly<TStyleSet3> & ObjectOnly<TStyleSet4>>;
-      return:
-        type:
-          - >-
-            IConcatenatedStyleSet<ObjectOnly<TStyleSet1> & ObjectOnly<TStyleSet2> & ObjectOnly<TStyleSet3> &
-            ObjectOnly<TStyleSet4>>
-        description: ''
+        export declare function concatStyleSets<TStyleSet1, TStyleSet2,
+        TStyleSet3, TStyleSet4>(styleSet1: TStyleSet1 | false | null |
+        undefined, styleSet2: TStyleSet2 | false | null | undefined, styleSet3:
+        TStyleSet3 | false | null | undefined, styleSet4: TStyleSet4 | false |
+        null | undefined): IConcatenatedStyleSet<ObjectOnly<TStyleSet1> &
+        ObjectOnly<TStyleSet2> & ObjectOnly<TStyleSet3> &
+        ObjectOnly<TStyleSet4>>;
       parameters:
         - id: styleSet1
           description: The first style set to be concatenated.
-          type:
-            - TStyleSet1 | false | null | undefined
+          type: TStyleSet1 | false | null | undefined
         - id: styleSet2
           description: The second style set to be concatenated.
-          type:
-            - TStyleSet2 | false | null | undefined
+          type: TStyleSet2 | false | null | undefined
         - id: styleSet3
           description: The third style set to be concatenated.
-          type:
-            - TStyleSet3 | false | null | undefined
+          type: TStyleSet3 | false | null | undefined
         - id: styleSet4
           description: The fourth style set to be concatenated.
-          type:
-            - TStyleSet4 | false | null | undefined
-      typeParameters:
-        - id: TStyleSet1
-        - id: TStyleSet2
-        - id: TStyleSet3
-        - id: TStyleSet4
-  - uid: '@fluentui/merge-styles!concatStyleSets:function(5)'
+          type: TStyleSet4 | false | null | undefined
+      return:
+        type: >-
+          IConcatenatedStyleSet&lt;ObjectOnly&lt;TStyleSet1&gt; &
+          ObjectOnly&lt;TStyleSet2&gt; & ObjectOnly&lt;TStyleSet3&gt; &
+          ObjectOnly&lt;TStyleSet4&gt;&gt;
+        description: ''
+  - name: 'concatStyleSets(styleSet1, styleSet2, styleSet3, styleSet4, styleSet5)'
+    uid: '@fluentui/merge-styles!concatStyleSets:function(5)'
+    package: '@fluentui/merge-styles'
     summary: Combine a set of styles together (but does not register css classes).
-    name: 'concatStyleSets(styleSet1, styleSet2, styleSet3, styleSet4, styleSet5)'
-    fullName: 'concatStyleSets(styleSet1, styleSet2, styleSet3, styleSet4, styleSet5)'
-    langs:
-      - typeScript
-    type: function
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        export declare function concatStyleSets<TStyleSet1, TStyleSet2, TStyleSet3, TStyleSet4, TStyleSet5>(styleSet1:
-        TStyleSet1 | false | null | undefined, styleSet2: TStyleSet2 | false | null | undefined, styleSet3: TStyleSet3 |
-        false | null | undefined, styleSet4: TStyleSet4 | false | null | undefined, styleSet5: TStyleSet5 | false | null
-        | undefined): IConcatenatedStyleSet<ObjectOnly<TStyleSet1> & ObjectOnly<TStyleSet2> & ObjectOnly<TStyleSet3> &
-        ObjectOnly<TStyleSet4> & ObjectOnly<TStyleSet5>>;
-      return:
-        type:
-          - >-
-            IConcatenatedStyleSet<ObjectOnly<TStyleSet1> & ObjectOnly<TStyleSet2> & ObjectOnly<TStyleSet3> &
-            ObjectOnly<TStyleSet4> & ObjectOnly<TStyleSet5>>
-        description: ''
+        export declare function concatStyleSets<TStyleSet1, TStyleSet2,
+        TStyleSet3, TStyleSet4, TStyleSet5>(styleSet1: TStyleSet1 | false | null
+        | undefined, styleSet2: TStyleSet2 | false | null | undefined,
+        styleSet3: TStyleSet3 | false | null | undefined, styleSet4: TStyleSet4
+        | false | null | undefined, styleSet5: TStyleSet5 | false | null |
+        undefined): IConcatenatedStyleSet<ObjectOnly<TStyleSet1> &
+        ObjectOnly<TStyleSet2> & ObjectOnly<TStyleSet3> & ObjectOnly<TStyleSet4>
+        & ObjectOnly<TStyleSet5>>;
       parameters:
         - id: styleSet1
           description: The first style set to be concatenated.
-          type:
-            - TStyleSet1 | false | null | undefined
+          type: TStyleSet1 | false | null | undefined
         - id: styleSet2
           description: The second style set to be concatenated.
-          type:
-            - TStyleSet2 | false | null | undefined
+          type: TStyleSet2 | false | null | undefined
         - id: styleSet3
           description: The third style set to be concatenated.
-          type:
-            - TStyleSet3 | false | null | undefined
+          type: TStyleSet3 | false | null | undefined
         - id: styleSet4
           description: The fourth style set to be concatenated.
-          type:
-            - TStyleSet4 | false | null | undefined
+          type: TStyleSet4 | false | null | undefined
         - id: styleSet5
           description: The fifth set to be concatenated.
-          type:
-            - TStyleSet5 | false | null | undefined
-      typeParameters:
-        - id: TStyleSet1
-        - id: TStyleSet2
-        - id: TStyleSet3
-        - id: TStyleSet4
-        - id: TStyleSet5
-  - uid: '@fluentui/merge-styles!concatStyleSets:function(6)'
+          type: TStyleSet5 | false | null | undefined
+      return:
+        type: >-
+          IConcatenatedStyleSet&lt;ObjectOnly&lt;TStyleSet1&gt; &
+          ObjectOnly&lt;TStyleSet2&gt; & ObjectOnly&lt;TStyleSet3&gt; &
+          ObjectOnly&lt;TStyleSet4&gt; & ObjectOnly&lt;TStyleSet5&gt;&gt;
+        description: ''
+  - name: >-
+      concatStyleSets(styleSet1, styleSet2, styleSet3, styleSet4, styleSet5,
+      styleSet6)
+    uid: '@fluentui/merge-styles!concatStyleSets:function(6)'
+    package: '@fluentui/merge-styles'
     summary: Combine a set of styles together (but does not register css classes).
-    name: 'concatStyleSets(styleSet1, styleSet2, styleSet3, styleSet4, styleSet5, styleSet6)'
-    fullName: 'concatStyleSets(styleSet1, styleSet2, styleSet3, styleSet4, styleSet5, styleSet6)'
-    langs:
-      - typeScript
-    type: function
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        export declare function concatStyleSets<TStyleSet1, TStyleSet2, TStyleSet3, TStyleSet4, TStyleSet5,
-        TStyleSet6>(styleSet1: TStyleSet1 | false | null | undefined, styleSet2: TStyleSet2 | false | null | undefined,
-        styleSet3: TStyleSet3 | false | null | undefined, styleSet4: TStyleSet4 | false | null | undefined, styleSet5:
-        TStyleSet5 | false | null | undefined, styleSet6: TStyleSet6 | false | null | undefined):
-        IConcatenatedStyleSet<ObjectOnly<TStyleSet1> & ObjectOnly<TStyleSet2> & ObjectOnly<TStyleSet3> &
-        ObjectOnly<TStyleSet4> & ObjectOnly<TStyleSet5> & ObjectOnly<TStyleSet6>>;
-      return:
-        type:
-          - >-
-            IConcatenatedStyleSet<ObjectOnly<TStyleSet1> & ObjectOnly<TStyleSet2> & ObjectOnly<TStyleSet3> &
-            ObjectOnly<TStyleSet4> & ObjectOnly<TStyleSet5> & ObjectOnly<TStyleSet6>>
-        description: ''
+        export declare function concatStyleSets<TStyleSet1, TStyleSet2,
+        TStyleSet3, TStyleSet4, TStyleSet5, TStyleSet6>(styleSet1: TStyleSet1 |
+        false | null | undefined, styleSet2: TStyleSet2 | false | null |
+        undefined, styleSet3: TStyleSet3 | false | null | undefined, styleSet4:
+        TStyleSet4 | false | null | undefined, styleSet5: TStyleSet5 | false |
+        null | undefined, styleSet6: TStyleSet6 | false | null | undefined):
+        IConcatenatedStyleSet<ObjectOnly<TStyleSet1> & ObjectOnly<TStyleSet2> &
+        ObjectOnly<TStyleSet3> & ObjectOnly<TStyleSet4> & ObjectOnly<TStyleSet5>
+        & ObjectOnly<TStyleSet6>>;
       parameters:
         - id: styleSet1
           description: The first style set to be concatenated.
-          type:
-            - TStyleSet1 | false | null | undefined
+          type: TStyleSet1 | false | null | undefined
         - id: styleSet2
           description: The second style set to be concatenated.
-          type:
-            - TStyleSet2 | false | null | undefined
+          type: TStyleSet2 | false | null | undefined
         - id: styleSet3
           description: The third style set to be concatenated.
-          type:
-            - TStyleSet3 | false | null | undefined
+          type: TStyleSet3 | false | null | undefined
         - id: styleSet4
           description: The fourth style set to be concatenated.
-          type:
-            - TStyleSet4 | false | null | undefined
+          type: TStyleSet4 | false | null | undefined
         - id: styleSet5
           description: The fifth set to be concatenated.
-          type:
-            - TStyleSet5 | false | null | undefined
+          type: TStyleSet5 | false | null | undefined
         - id: styleSet6
           description: The sixth set to be concatenated.
-          type:
-            - TStyleSet6 | false | null | undefined
-      typeParameters:
-        - id: TStyleSet1
-        - id: TStyleSet2
-        - id: TStyleSet3
-        - id: TStyleSet4
-        - id: TStyleSet5
-        - id: TStyleSet6
-  - uid: '@fluentui/merge-styles!concatStyleSets:function(7)'
+          type: TStyleSet6 | false | null | undefined
+      return:
+        type: >-
+          IConcatenatedStyleSet&lt;ObjectOnly&lt;TStyleSet1&gt; &
+          ObjectOnly&lt;TStyleSet2&gt; & ObjectOnly&lt;TStyleSet3&gt; &
+          ObjectOnly&lt;TStyleSet4&gt; & ObjectOnly&lt;TStyleSet5&gt; &
+          ObjectOnly&lt;TStyleSet6&gt;&gt;
+        description: ''
+  - name: concatStyleSets(styleSets)
+    uid: '@fluentui/merge-styles!concatStyleSets:function(7)'
+    package: '@fluentui/merge-styles'
     summary: Combine a set of styles together (but does not register css classes).
-    name: concatStyleSets(styleSets)
-    fullName: concatStyleSets(styleSets)
-    langs:
-      - typeScript
-    type: function
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        export declare function concatStyleSets(...styleSets: (IStyleSet | false | null | undefined)[]):
-        IConcatenatedStyleSet<any>;
-      return:
-        type:
-          - IConcatenatedStyleSet<any>
-        description: ''
+        export declare function concatStyleSets(...styleSets: (IStyleSet | false
+        | null | undefined)[]): IConcatenatedStyleSet<any>;
       parameters:
         - id: styleSets
           description: One or more stylesets to be merged (each param can also be falsy).
-          type:
-            - '(IStyleSet | false | null | undefined)[]'
-  - uid: '@fluentui/merge-styles!concatStyleSetsWithProps:function(1)'
-    summary: 'Concatenates style sets into one, but resolves functional sets using the given props.'
-    name: 'concatStyleSetsWithProps(styleProps, allStyles)'
-    fullName: 'concatStyleSetsWithProps(styleProps, allStyles)'
-    langs:
-      - typeScript
-    type: function
+          type: '(IStyleSet | false | null | undefined)[]'
+      return:
+        type: IConcatenatedStyleSet&lt;any&gt;
+        description: ''
+  - name: 'concatStyleSetsWithProps(styleProps, allStyles)'
+    uid: '@fluentui/merge-styles!concatStyleSetsWithProps:function(1)'
+    package: '@fluentui/merge-styles'
+    summary: >-
+      Concatenates style sets into one, but resolves functional sets using the
+      given props.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        export declare function concatStyleSetsWithProps<TStyleProps, TStyleSet extends
-        IStyleSet<TStyleSet>>(styleProps: TStyleProps, ...allStyles: (IStyleFunctionOrObject<TStyleProps, TStyleSet> |
-        undefined)[]): DeepPartial<TStyleSet>;
-      return:
-        type:
-          - DeepPartial<TStyleSet>
-        description: ''
+        export declare function concatStyleSetsWithProps<TStyleProps, TStyleSet
+        extends IStyleSet<TStyleSet>>(styleProps: TStyleProps, ...allStyles:
+        (IStyleFunctionOrObject<TStyleProps, TStyleSet> | undefined)[]):
+        DeepPartial<TStyleSet>;
       parameters:
         - id: styleProps
           description: Props used to resolve functional sets.
-          type:
-            - TStyleProps
+          type: TStyleProps
         - id: allStyles
           description: 'Style sets, which can be functions or objects.'
-          type:
-            - '(IStyleFunctionOrObject<TStyleProps, TStyleSet> | undefined)[]'
-      typeParameters:
-        - id: TStyleProps
-        - id: TStyleSet
-          type:
-            - IStyleSet<TStyleSet>
-  - uid: '@fluentui/merge-styles!fontFace:function(1)'
+          type: '(IStyleFunctionOrObject&lt;TStyleProps, TStyleSet&gt; | undefined)[]'
+      return:
+        type: DeepPartial&lt;TStyleSet&gt;
+        description: ''
+  - name: fontFace(font)
+    uid: '@fluentui/merge-styles!fontFace:function(1)'
+    package: '@fluentui/merge-styles'
     summary: Registers a font face.
-    name: fontFace(font)
-    fullName: fontFace(font)
-    langs:
-      - typeScript
-    type: function
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'export declare function fontFace(font: IFontFace): void;'
-      return:
-        type:
-          - void
-        description: ''
       parameters:
         - id: font
           description: ''
-          type:
-            - '@fluentui/merge-styles!IFontFace:interface'
-  - uid: '@fluentui/merge-styles!keyframes:function(1)'
+          type: '<xref uid="@fluentui/merge-styles!IFontFace:interface" />'
+      return:
+        type: void
+        description: ''
+  - name: keyframes(timeline)
+    uid: '@fluentui/merge-styles!keyframes:function(1)'
+    package: '@fluentui/merge-styles'
     summary: Registers keyframe definitions.
-    name: keyframes(timeline)
-    fullName: keyframes(timeline)
-    langs:
-      - typeScript
-    type: function
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'export declare function keyframes(timeline: IKeyframes): string;'
-      return:
-        type:
-          - string
-        description: ''
       parameters:
         - id: timeline
           description: ''
-          type:
-            - IKeyframes
-  - uid: '@fluentui/merge-styles!mergeCss:function(1)'
+          type: IKeyframes
+      return:
+        type: string
+        description: ''
+  - name: 'mergeCss(args, options)'
+    uid: '@fluentui/merge-styles!mergeCss:function(1)'
+    package: '@fluentui/merge-styles'
     summary: >-
-      Concatenation helper, which can merge class names together. Skips over falsey values. Accepts a set of options
-      that will be used when calculating styles.
-    name: 'mergeCss(args, options)'
-    fullName: 'mergeCss(args, options)'
-    langs:
-      - typeScript
-    type: function
+      Concatenation helper, which can merge class names together. Skips over
+      falsey values. Accepts a set of options that will be used when calculating
+      styles.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        export declare function mergeCss(args: (IStyle | IStyleBaseArray | false | null | undefined) | (IStyle |
-        IStyleBaseArray | false | null | undefined)[], options?: IStyleOptions): string;
-      return:
-        type:
-          - string
-        description: ''
+        export declare function mergeCss(args: (IStyle | IStyleBaseArray | false
+        | null | undefined) | (IStyle | IStyleBaseArray | false | null |
+        undefined)[], options?: IStyleOptions): string;
       parameters:
         - id: args
           description: ''
-          type:
-            - >-
-              (IStyle | IStyleBaseArray | false | null | undefined) | (IStyle | IStyleBaseArray | false | null |
-              undefined)[]
+          type: >-
+            (IStyle | IStyleBaseArray | false | null | undefined) | (IStyle |
+            IStyleBaseArray | false | null | undefined)[]
         - id: options
           description: ''
-          type:
-            - IStyleOptions
-  - uid: '@fluentui/merge-styles!mergeCssSets:function(1)'
+          type: IStyleOptions
+      return:
+        type: string
+        description: ''
+  - name: 'mergeCssSets(styleSets, options)'
+    uid: '@fluentui/merge-styles!mergeCssSets:function(1)'
+    package: '@fluentui/merge-styles'
     summary: >-
-      Takes in one or more style set objects, each1consisting of a set of areas, each which will produce a class name.
-      Using this is analogous to calling `mergeCss` for each property in the object, but ensures we maintain the set
-      ordering when multiple style sets are merged.
-    name: 'mergeCssSets(styleSets, options)'
-    fullName: 'mergeCssSets(styleSets, options)'
-    langs:
-      - typeScript
-    type: function
+      Takes in one or more style set objects, each1consisting of a set of areas,
+      each which will produce a class name. Using this is analogous to calling
+      `mergeCss` for each property in the object, but ensures we maintain the
+      set ordering when multiple style sets are merged.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        export declare function mergeCssSets<TStyleSet>(styleSets: [TStyleSet | false | null | undefined], options?:
-        IStyleOptions): IProcessedStyleSet<TStyleSet>;
-      return:
-        type:
-          - IProcessedStyleSet<TStyleSet>
-        description: ''
+        export declare function mergeCssSets<TStyleSet>(styleSets: [TStyleSet |
+        false | null | undefined], options?: IStyleOptions):
+        IProcessedStyleSet<TStyleSet>;
       parameters:
         - id: styleSets
           description: One or more style sets to be merged.
-          type:
-            - '[TStyleSet | false | null | undefined]'
+          type: '[TStyleSet | false | null | undefined]'
         - id: options
           description: (optional) Options to use when creating rules.
-          type:
-            - IStyleOptions
-      typeParameters:
-        - id: TStyleSet
-  - uid: '@fluentui/merge-styles!mergeCssSets:function(2)'
+          type: IStyleOptions
+      return:
+        type: IProcessedStyleSet&lt;TStyleSet&gt;
+        description: ''
+  - name: 'mergeCssSets(styleSets, options)'
+    uid: '@fluentui/merge-styles!mergeCssSets:function(2)'
+    package: '@fluentui/merge-styles'
     summary: >-
-      Takes in one or more style set objects, each1consisting of a set of areas, each which will produce a class name.
-      Using this is analogous to calling `mergeCss` for each property in the object, but ensures we maintain the set
-      ordering when multiple style sets are merged.
-    name: 'mergeCssSets(styleSets, options)'
-    fullName: 'mergeCssSets(styleSets, options)'
-    langs:
-      - typeScript
-    type: function
+      Takes in one or more style set objects, each1consisting of a set of areas,
+      each which will produce a class name. Using this is analogous to calling
+      `mergeCss` for each property in the object, but ensures we maintain the
+      set ordering when multiple style sets are merged.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        export declare function mergeCssSets<TStyleSet1, TStyleSet2>(styleSets: [TStyleSet1 | false | null | undefined,
-        TStyleSet2 | false | null | undefined], options?: IStyleOptions): IProcessedStyleSet<TStyleSet1 & TStyleSet2>;
-      return:
-        type:
-          - IProcessedStyleSet<TStyleSet1 & TStyleSet2>
-        description: ''
+        export declare function mergeCssSets<TStyleSet1, TStyleSet2>(styleSets:
+        [TStyleSet1 | false | null | undefined, TStyleSet2 | false | null |
+        undefined], options?: IStyleOptions): IProcessedStyleSet<TStyleSet1 &
+        TStyleSet2>;
       parameters:
         - id: styleSets
           description: One or more style sets to be merged.
-          type:
-            - '[TStyleSet1 | false | null | undefined, TStyleSet2 | false | null | undefined]'
+          type: >-
+            [TStyleSet1 | false | null | undefined, TStyleSet2 | false | null |
+            undefined]
         - id: options
           description: (optional) Options to use when creating rules.
-          type:
-            - IStyleOptions
-      typeParameters:
-        - id: TStyleSet1
-        - id: TStyleSet2
-  - uid: '@fluentui/merge-styles!mergeCssSets:function(3)'
+          type: IStyleOptions
+      return:
+        type: IProcessedStyleSet&lt;TStyleSet1 & TStyleSet2&gt;
+        description: ''
+  - name: 'mergeCssSets(styleSets, options)'
+    uid: '@fluentui/merge-styles!mergeCssSets:function(3)'
+    package: '@fluentui/merge-styles'
     summary: >-
-      Takes in one or more style set objects, each1consisting of a set of areas, each which will produce a class name.
-      Using this is analogous to calling `mergeCss` for each property in the object, but ensures we maintain the set
-      ordering when multiple style sets are merged.
-    name: 'mergeCssSets(styleSets, options)'
-    fullName: 'mergeCssSets(styleSets, options)'
-    langs:
-      - typeScript
-    type: function
+      Takes in one or more style set objects, each1consisting of a set of areas,
+      each which will produce a class name. Using this is analogous to calling
+      `mergeCss` for each property in the object, but ensures we maintain the
+      set ordering when multiple style sets are merged.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        export declare function mergeCssSets<TStyleSet1, TStyleSet2, TStyleSet3>(styleSets: [TStyleSet1 | false | null |
-        undefined, TStyleSet2 | false | null | undefined, TStyleSet3 | false | null | undefined], options?:
-        IStyleOptions): IProcessedStyleSet<TStyleSet1 & TStyleSet2 & TStyleSet3>;
-      return:
-        type:
-          - IProcessedStyleSet<TStyleSet1 & TStyleSet2 & TStyleSet3>
-        description: ''
+        export declare function mergeCssSets<TStyleSet1, TStyleSet2,
+        TStyleSet3>(styleSets: [TStyleSet1 | false | null | undefined,
+        TStyleSet2 | false | null | undefined, TStyleSet3 | false | null |
+        undefined], options?: IStyleOptions): IProcessedStyleSet<TStyleSet1 &
+        TStyleSet2 & TStyleSet3>;
       parameters:
         - id: styleSets
           description: One or more style sets to be merged.
-          type:
-            - >-
-              [TStyleSet1 | false | null | undefined, TStyleSet2 | false | null | undefined, TStyleSet3 | false | null |
-              undefined]
+          type: >-
+            [TStyleSet1 | false | null | undefined, TStyleSet2 | false | null |
+            undefined, TStyleSet3 | false | null | undefined]
         - id: options
           description: (optional) Options to use when creating rules.
-          type:
-            - IStyleOptions
-      typeParameters:
-        - id: TStyleSet1
-        - id: TStyleSet2
-        - id: TStyleSet3
-  - uid: '@fluentui/merge-styles!mergeCssSets:function(4)'
+          type: IStyleOptions
+      return:
+        type: IProcessedStyleSet&lt;TStyleSet1 & TStyleSet2 & TStyleSet3&gt;
+        description: ''
+  - name: 'mergeCssSets(styleSets, options)'
+    uid: '@fluentui/merge-styles!mergeCssSets:function(4)'
+    package: '@fluentui/merge-styles'
     summary: >-
-      Takes in one or more style set objects, each1consisting of a set of areas, each which will produce a class name.
-      Using this is analogous to calling `mergeCss` for each property in the object, but ensures we maintain the set
-      ordering when multiple style sets are merged.
-    name: 'mergeCssSets(styleSets, options)'
-    fullName: 'mergeCssSets(styleSets, options)'
-    langs:
-      - typeScript
-    type: function
+      Takes in one or more style set objects, each1consisting of a set of areas,
+      each which will produce a class name. Using this is analogous to calling
+      `mergeCss` for each property in the object, but ensures we maintain the
+      set ordering when multiple style sets are merged.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        export declare function mergeCssSets<TStyleSet1, TStyleSet2, TStyleSet3, TStyleSet4>(styleSets: [TStyleSet1 |
-        false | null | undefined, TStyleSet2 | false | null | undefined, TStyleSet3 | false | null | undefined,
-        TStyleSet4 | false | null | undefined], options?: IStyleOptions): IProcessedStyleSet<ObjectOnly<TStyleSet1> &
-        ObjectOnly<TStyleSet2> & ObjectOnly<TStyleSet3> & ObjectOnly<TStyleSet4>>;
-      return:
-        type:
-          - >-
-            IProcessedStyleSet<ObjectOnly<TStyleSet1> & ObjectOnly<TStyleSet2> & ObjectOnly<TStyleSet3> &
-            ObjectOnly<TStyleSet4>>
-        description: ''
+        export declare function mergeCssSets<TStyleSet1, TStyleSet2, TStyleSet3,
+        TStyleSet4>(styleSets: [TStyleSet1 | false | null | undefined,
+        TStyleSet2 | false | null | undefined, TStyleSet3 | false | null |
+        undefined, TStyleSet4 | false | null | undefined], options?:
+        IStyleOptions): IProcessedStyleSet<ObjectOnly<TStyleSet1> &
+        ObjectOnly<TStyleSet2> & ObjectOnly<TStyleSet3> &
+        ObjectOnly<TStyleSet4>>;
       parameters:
         - id: styleSets
           description: One or more style sets to be merged.
-          type:
-            - >-
-              [TStyleSet1 | false | null | undefined, TStyleSet2 | false | null | undefined, TStyleSet3 | false | null |
-              undefined, TStyleSet4 | false | null | undefined]
+          type: >-
+            [TStyleSet1 | false | null | undefined, TStyleSet2 | false | null |
+            undefined, TStyleSet3 | false | null | undefined, TStyleSet4 | false
+            | null | undefined]
         - id: options
           description: (optional) Options to use when creating rules.
-          type:
-            - IStyleOptions
-      typeParameters:
-        - id: TStyleSet1
-        - id: TStyleSet2
-        - id: TStyleSet3
-        - id: TStyleSet4
-  - uid: '@fluentui/merge-styles!mergeCssSets:function(5)'
+          type: IStyleOptions
+      return:
+        type: >-
+          IProcessedStyleSet&lt;ObjectOnly&lt;TStyleSet1&gt; &
+          ObjectOnly&lt;TStyleSet2&gt; & ObjectOnly&lt;TStyleSet3&gt; &
+          ObjectOnly&lt;TStyleSet4&gt;&gt;
+        description: ''
+  - name: 'mergeCssSets(styleSet, options)'
+    uid: '@fluentui/merge-styles!mergeCssSets:function(5)'
+    package: '@fluentui/merge-styles'
     summary: >-
-      Takes in one or more style set objects, each1consisting of a set of areas, each which will produce a class name.
-      Using this is analogous to calling `mergeCss` for each property in the object, but ensures we maintain the set
-      ordering when multiple style sets are merged.
-    name: 'mergeCssSets(styleSet, options)'
-    fullName: 'mergeCssSets(styleSet, options)'
-    langs:
-      - typeScript
-    type: function
+      Takes in one or more style set objects, each1consisting of a set of areas,
+      each which will produce a class name. Using this is analogous to calling
+      `mergeCss` for each property in the object, but ensures we maintain the
+      set ordering when multiple style sets are merged.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        export declare function mergeCssSets<TStyleSet>(styleSet: [TStyleSet | false | null | undefined], options?:
-        IStyleOptions): IProcessedStyleSet<TStyleSet>;
-      return:
-        type:
-          - IProcessedStyleSet<TStyleSet>
-        description: ''
+        export declare function mergeCssSets<TStyleSet>(styleSet: [TStyleSet |
+        false | null | undefined], options?: IStyleOptions):
+        IProcessedStyleSet<TStyleSet>;
       parameters:
         - id: styleSet
           description: ''
-          type:
-            - '[TStyleSet | false | null | undefined]'
+          type: '[TStyleSet | false | null | undefined]'
         - id: options
           description: (optional) Options to use when creating rules.
-          type:
-            - IStyleOptions
-      typeParameters:
-        - id: TStyleSet
-  - uid: '@fluentui/merge-styles!mergeStyles:function(1)'
-    summary: 'Concatenation helper, which can merge class names together. Skips over falsey values.'
-    name: mergeStyles(args)
-    fullName: mergeStyles(args)
-    langs:
-      - typeScript
-    type: function
-    syntax:
-      content: 'export declare function mergeStyles(...args: (IStyle | IStyleBaseArray | false | null | undefined)[]): string;'
+          type: IStyleOptions
       return:
-        type:
-          - string
+        type: IProcessedStyleSet&lt;TStyleSet&gt;
         description: ''
+  - name: mergeStyles(args)
+    uid: '@fluentui/merge-styles!mergeStyles:function(1)'
+    package: '@fluentui/merge-styles'
+    summary: >-
+      Concatenation helper, which can merge class names together. Skips over
+      falsey values.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        export declare function mergeStyles(...args: (IStyle | IStyleBaseArray |
+        false | null | undefined)[]): string;
       parameters:
         - id: args
           description: ''
-          type:
-            - '(IStyle | IStyleBaseArray | false | null | undefined)[]'
-  - uid: '@fluentui/merge-styles!mergeStyleSets:function(1)'
+          type: '(IStyle | IStyleBaseArray | false | null | undefined)[]'
+      return:
+        type: string
+        description: ''
+  - name: mergeStyleSets(styleSet)
+    uid: '@fluentui/merge-styles!mergeStyleSets:function(1)'
+    package: '@fluentui/merge-styles'
     summary: >-
-      Takes in one or more style set objects, each consisting of a set of areas, each which will produce a class name.
-      Using this is analogous to calling `mergeStyles` for each property in the object, but ensures we maintain the set
-      ordering when multiple style sets are merged.
-    name: mergeStyleSets(styleSet)
-    fullName: mergeStyleSets(styleSet)
-    langs:
-      - typeScript
-    type: function
+      Takes in one or more style set objects, each consisting of a set of areas,
+      each which will produce a class name. Using this is analogous to calling
+      `mergeStyles` for each property in the object, but ensures we maintain the
+      set ordering when multiple style sets are merged.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        export declare function mergeStyleSets<TStyleSet>(styleSet: TStyleSet | false | null | undefined):
-        IProcessedStyleSet<ObjectOnly<TStyleSet>>;
-      return:
-        type:
-          - IProcessedStyleSet<ObjectOnly<TStyleSet>>
-        description: ''
+        export declare function mergeStyleSets<TStyleSet>(styleSet: TStyleSet |
+        false | null | undefined): IProcessedStyleSet<ObjectOnly<TStyleSet>>;
       parameters:
         - id: styleSet
           description: The first style set to be merged and reigstered.
-          type:
-            - TStyleSet | false | null | undefined
-      typeParameters:
-        - id: TStyleSet
-  - uid: '@fluentui/merge-styles!mergeStyleSets:function(2)'
+          type: TStyleSet | false | null | undefined
+      return:
+        type: IProcessedStyleSet&lt;ObjectOnly&lt;TStyleSet&gt;&gt;
+        description: ''
+  - name: 'mergeStyleSets(styleSet1, styleSet2)'
+    uid: '@fluentui/merge-styles!mergeStyleSets:function(2)'
+    package: '@fluentui/merge-styles'
     summary: >-
-      Takes in one or more style set objects, each consisting of a set of areas, each which will produce a class name.
-      Using this is analogous to calling `mergeStyles` for each property in the object, but ensures we maintain the set
-      ordering when multiple style sets are merged.
-    name: 'mergeStyleSets(styleSet1, styleSet2)'
-    fullName: 'mergeStyleSets(styleSet1, styleSet2)'
-    langs:
-      - typeScript
-    type: function
+      Takes in one or more style set objects, each consisting of a set of areas,
+      each which will produce a class name. Using this is analogous to calling
+      `mergeStyles` for each property in the object, but ensures we maintain the
+      set ordering when multiple style sets are merged.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        export declare function mergeStyleSets<TStyleSet1, TStyleSet2>(styleSet1: TStyleSet1 | false | null | undefined,
-        styleSet2: TStyleSet2 | false | null | undefined): IProcessedStyleSet<ObjectOnly<TStyleSet1> &
-        ObjectOnly<TStyleSet2>>;
-      return:
-        type:
-          - IProcessedStyleSet<ObjectOnly<TStyleSet1> & ObjectOnly<TStyleSet2>>
-        description: ''
+        export declare function mergeStyleSets<TStyleSet1,
+        TStyleSet2>(styleSet1: TStyleSet1 | false | null | undefined, styleSet2:
+        TStyleSet2 | false | null | undefined):
+        IProcessedStyleSet<ObjectOnly<TStyleSet1> & ObjectOnly<TStyleSet2>>;
       parameters:
         - id: styleSet1
           description: The first style set to be merged.
-          type:
-            - TStyleSet1 | false | null | undefined
+          type: TStyleSet1 | false | null | undefined
         - id: styleSet2
           description: The second style set to be merged.
-          type:
-            - TStyleSet2 | false | null | undefined
-      typeParameters:
-        - id: TStyleSet1
-        - id: TStyleSet2
-  - uid: '@fluentui/merge-styles!mergeStyleSets:function(3)'
+          type: TStyleSet2 | false | null | undefined
+      return:
+        type: >-
+          IProcessedStyleSet&lt;ObjectOnly&lt;TStyleSet1&gt; &
+          ObjectOnly&lt;TStyleSet2&gt;&gt;
+        description: ''
+  - name: 'mergeStyleSets(styleSet1, styleSet2, styleSet3)'
+    uid: '@fluentui/merge-styles!mergeStyleSets:function(3)'
+    package: '@fluentui/merge-styles'
     summary: >-
-      Takes in one or more style set objects, each consisting of a set of areas, each which will produce a class name.
-      Using this is analogous to calling `mergeStyles` for each property in the object, but ensures we maintain the set
-      ordering when multiple style sets are merged.
-    name: 'mergeStyleSets(styleSet1, styleSet2, styleSet3)'
-    fullName: 'mergeStyleSets(styleSet1, styleSet2, styleSet3)'
-    langs:
-      - typeScript
-    type: function
+      Takes in one or more style set objects, each consisting of a set of areas,
+      each which will produce a class name. Using this is analogous to calling
+      `mergeStyles` for each property in the object, but ensures we maintain the
+      set ordering when multiple style sets are merged.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        export declare function mergeStyleSets<TStyleSet1, TStyleSet2, TStyleSet3>(styleSet1: TStyleSet1 | false | null
-        | undefined, styleSet2: TStyleSet2 | false | null | undefined, styleSet3: TStyleSet3 | false | null |
-        undefined): IProcessedStyleSet<ObjectOnly<TStyleSet1> & ObjectOnly<TStyleSet2> & ObjectOnly<TStyleSet3>>;
-      return:
-        type:
-          - IProcessedStyleSet<ObjectOnly<TStyleSet1> & ObjectOnly<TStyleSet2> & ObjectOnly<TStyleSet3>>
-        description: ''
+        export declare function mergeStyleSets<TStyleSet1, TStyleSet2,
+        TStyleSet3>(styleSet1: TStyleSet1 | false | null | undefined, styleSet2:
+        TStyleSet2 | false | null | undefined, styleSet3: TStyleSet3 | false |
+        null | undefined): IProcessedStyleSet<ObjectOnly<TStyleSet1> &
+        ObjectOnly<TStyleSet2> & ObjectOnly<TStyleSet3>>;
       parameters:
         - id: styleSet1
           description: The first style set to be merged.
-          type:
-            - TStyleSet1 | false | null | undefined
+          type: TStyleSet1 | false | null | undefined
         - id: styleSet2
           description: The second style set to be merged.
-          type:
-            - TStyleSet2 | false | null | undefined
+          type: TStyleSet2 | false | null | undefined
         - id: styleSet3
           description: The third style set to be merged.
-          type:
-            - TStyleSet3 | false | null | undefined
-      typeParameters:
-        - id: TStyleSet1
-        - id: TStyleSet2
-        - id: TStyleSet3
-  - uid: '@fluentui/merge-styles!mergeStyleSets:function(4)'
+          type: TStyleSet3 | false | null | undefined
+      return:
+        type: >-
+          IProcessedStyleSet&lt;ObjectOnly&lt;TStyleSet1&gt; &
+          ObjectOnly&lt;TStyleSet2&gt; & ObjectOnly&lt;TStyleSet3&gt;&gt;
+        description: ''
+  - name: 'mergeStyleSets(styleSet1, styleSet2, styleSet3, styleSet4)'
+    uid: '@fluentui/merge-styles!mergeStyleSets:function(4)'
+    package: '@fluentui/merge-styles'
     summary: >-
-      Takes in one or more style set objects, each consisting of a set of areas, each which will produce a class name.
-      Using this is analogous to calling `mergeStyles` for each property in the object, but ensures we maintain the set
-      ordering when multiple style sets are merged.
-    name: 'mergeStyleSets(styleSet1, styleSet2, styleSet3, styleSet4)'
-    fullName: 'mergeStyleSets(styleSet1, styleSet2, styleSet3, styleSet4)'
-    langs:
-      - typeScript
-    type: function
+      Takes in one or more style set objects, each consisting of a set of areas,
+      each which will produce a class name. Using this is analogous to calling
+      `mergeStyles` for each property in the object, but ensures we maintain the
+      set ordering when multiple style sets are merged.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        export declare function mergeStyleSets<TStyleSet1, TStyleSet2, TStyleSet3, TStyleSet4>(styleSet1: TStyleSet1 |
-        false | null | undefined, styleSet2: TStyleSet2 | false | null | undefined, styleSet3: TStyleSet3 | false | null
-        | undefined, styleSet4: TStyleSet4 | false | null | undefined): IProcessedStyleSet<ObjectOnly<TStyleSet1> &
-        ObjectOnly<TStyleSet2> & ObjectOnly<TStyleSet3> & ObjectOnly<TStyleSet4>>;
-      return:
-        type:
-          - >-
-            IProcessedStyleSet<ObjectOnly<TStyleSet1> & ObjectOnly<TStyleSet2> & ObjectOnly<TStyleSet3> &
-            ObjectOnly<TStyleSet4>>
-        description: ''
+        export declare function mergeStyleSets<TStyleSet1, TStyleSet2,
+        TStyleSet3, TStyleSet4>(styleSet1: TStyleSet1 | false | null |
+        undefined, styleSet2: TStyleSet2 | false | null | undefined, styleSet3:
+        TStyleSet3 | false | null | undefined, styleSet4: TStyleSet4 | false |
+        null | undefined): IProcessedStyleSet<ObjectOnly<TStyleSet1> &
+        ObjectOnly<TStyleSet2> & ObjectOnly<TStyleSet3> &
+        ObjectOnly<TStyleSet4>>;
       parameters:
         - id: styleSet1
           description: The first style set to be merged.
-          type:
-            - TStyleSet1 | false | null | undefined
+          type: TStyleSet1 | false | null | undefined
         - id: styleSet2
           description: The second style set to be merged.
-          type:
-            - TStyleSet2 | false | null | undefined
+          type: TStyleSet2 | false | null | undefined
         - id: styleSet3
           description: The third style set to be merged.
-          type:
-            - TStyleSet3 | false | null | undefined
+          type: TStyleSet3 | false | null | undefined
         - id: styleSet4
           description: The fourth style set to be merged.
-          type:
-            - TStyleSet4 | false | null | undefined
-      typeParameters:
-        - id: TStyleSet1
-        - id: TStyleSet2
-        - id: TStyleSet3
-        - id: TStyleSet4
-  - uid: '@fluentui/merge-styles!mergeStyleSets:function(5)'
+          type: TStyleSet4 | false | null | undefined
+      return:
+        type: >-
+          IProcessedStyleSet&lt;ObjectOnly&lt;TStyleSet1&gt; &
+          ObjectOnly&lt;TStyleSet2&gt; & ObjectOnly&lt;TStyleSet3&gt; &
+          ObjectOnly&lt;TStyleSet4&gt;&gt;
+        description: ''
+  - name: mergeStyleSets(styleSets)
+    uid: '@fluentui/merge-styles!mergeStyleSets:function(5)'
+    package: '@fluentui/merge-styles'
     summary: >-
-      Takes in one or more style set objects, each consisting of a set of areas, each which will produce a class name.
-      Using this is analogous to calling `mergeStyles` for each property in the object, but ensures we maintain the set
-      ordering when multiple style sets are merged.
-    name: mergeStyleSets(styleSets)
-    fullName: mergeStyleSets(styleSets)
-    langs:
-      - typeScript
-    type: function
+      Takes in one or more style set objects, each consisting of a set of areas,
+      each which will produce a class name. Using this is analogous to calling
+      `mergeStyles` for each property in the object, but ensures we maintain the
+      set ordering when multiple style sets are merged.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        export declare function mergeStyleSets(...styleSets: Array<IStyleSet | undefined | false | null>):
-        IProcessedStyleSet<any>;
-      return:
-        type:
-          - IProcessedStyleSet<any>
-        description: ''
+        export declare function mergeStyleSets(...styleSets: Array<IStyleSet |
+        undefined | false | null>): IProcessedStyleSet<any>;
       parameters:
         - id: styleSets
           description: One or more style sets to be merged.
-          type:
-            - Array<IStyleSet | undefined | false | null>
-  - uid: '@fluentui/merge-styles!setRTL:function(1)'
+          type: Array&lt;IStyleSet | undefined | false | null&gt;
+      return:
+        type: IProcessedStyleSet&lt;any&gt;
+        description: ''
+  - name: setRTL(isRTL)
+    uid: '@fluentui/merge-styles!setRTL:function(1)'
+    package: '@fluentui/merge-styles'
     summary: Sets the current RTL value.
-    name: setRTL(isRTL)
-    fullName: setRTL(isRTL)
-    langs:
-      - typeScript
-    type: function
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'export declare function setRTL(isRTL: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
       parameters:
         - id: isRTL
           description: ''
-          type:
-            - boolean
-references:
-  - uid: '@fluentui/merge-styles!ICSPSettings:interface'
-    name: ICSPSettings
-  - uid: '@fluentui/merge-styles!IFontFace:interface'
-    name: IFontFace
-  - uid: '@fluentui/merge-styles!IRawFontStyle:interface'
-    name: IRawFontStyle
-  - uid: '@fluentui/merge-styles!IRawStyle:interface'
-    name: IRawStyle
-  - uid: '@fluentui/merge-styles!IRawStyleBase:interface'
-    name: IRawStyleBase
-  - uid: '@fluentui/merge-styles!IStyleBaseArray:interface'
-    name: IStyleBaseArray
-  - uid: '@fluentui/merge-styles!IStyleSheetConfig:interface'
-    name: IStyleSheetConfig
-  - uid: '@fluentui/merge-styles!Stylesheet:class'
-    name: Stylesheet
+          type: boolean
+      return:
+        type: void
+        description: ''

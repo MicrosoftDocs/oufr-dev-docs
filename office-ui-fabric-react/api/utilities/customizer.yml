@@ -1,66 +1,67 @@
-### YamlMime:UniversalReference
-items:
-  - uid: '@fluentui/utilities!Customizer:class'
-    summary: >-
-      The Customizer component allows for default props to be mixed into components which are decorated with the
-      customizable() decorator, or use the styled HOC. This enables injection scenarios like:
+### YamlMime:TSType
+name: Customizer
+uid: '@fluentui/utilities!Customizer:class'
+package: '@fluentui/utilities!'
+fullName: Customizer
+summary: >-
+  The Customizer component allows for default props to be mixed into components
+  which are decorated with the customizable() decorator, or use the styled HOC.
+  This enables injection scenarios like:
 
 
-      1. render svg icons instead of the icon font within all buttons 2. inject a custom theme object into a component
+  1. render svg icons instead of the icon font within all buttons 2. inject a
+  custom theme object into a component
 
 
-      Props are provided via the settings prop which should be one of the following: - A json map which contains 1 or
-      more name/value pairs representing injectable props. - A function that receives the current settings and returns
-      the new ones that apply to the scope
-    deprecated:
-      content: >-
-        This component is deprecated for purpose of applying theme to components as of `@fluentui/react` version 8. Use
-        `ThemeProvider` for applying theme instead.
-    name: Customizer
-    fullName: Customizer
-    langs:
-      - typeScript
-    type: class
-    extends:
-      - 'React.Component<ICustomizerProps> '
+  Props are provided via the settings prop which should be one of the following:
+  - A json map which contains 1 or more name/value pairs representing injectable
+  props. - A function that receives the current settings and returns the new
+  ones that apply to the scope
+remarks: ''
+isPreview: false
+isDeprecated: true
+customDeprecatedMessage: >-
+  This component is deprecated for purpose of applying theme to components as of
+  `@fluentui/react` version 8. Use `ThemeProvider` for applying theme instead.
+type: class
+methods:
+  - name: componentDidMount()
+    uid: '@fluentui/utilities!Customizer#componentDidMount:member(1)'
     package: '@fluentui/utilities!'
-    children:
-      - '@fluentui/utilities!Customizer#componentDidMount:member(1)'
-      - '@fluentui/utilities!Customizer#componentWillUnmount:member(1)'
-      - '@fluentui/utilities!Customizer#render:member(1)'
-  - uid: '@fluentui/utilities!Customizer#componentDidMount:member(1)'
-    name: componentDidMount()
     fullName: componentDidMount()
-    langs:
-      - typeScript
-    type: method
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'componentDidMount(): void;'
       return:
-        type:
-          - void
+        type: void
         description: ''
-  - uid: '@fluentui/utilities!Customizer#componentWillUnmount:member(1)'
-    name: componentWillUnmount()
+  - name: componentWillUnmount()
+    uid: '@fluentui/utilities!Customizer#componentWillUnmount:member(1)'
+    package: '@fluentui/utilities!'
     fullName: componentWillUnmount()
-    langs:
-      - typeScript
-    type: method
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'componentWillUnmount(): void;'
       return:
-        type:
-          - void
+        type: void
         description: ''
-  - uid: '@fluentui/utilities!Customizer#render:member(1)'
-    name: render()
+  - name: render()
+    uid: '@fluentui/utilities!Customizer#render:member(1)'
+    package: '@fluentui/utilities!'
     fullName: render()
-    langs:
-      - typeScript
-    type: method
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'render(): React.ReactElement<{}>;'
       return:
-        type:
-          - 'React.ReactElement<{}>'
+        type: 'React.ReactElement&lt;{}&gt;'
         description: ''
+extends: 'React.Component&lt;ICustomizerProps&gt; '

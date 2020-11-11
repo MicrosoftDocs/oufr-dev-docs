@@ -1,22 +1,22 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'office-ui-fabric-react!IDetailsRowState:interface'
-    name: IDetailsRowState
-    fullName: IDetailsRowState
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: IDetailsRowState
+uid: 'office-ui-fabric-react!IDetailsRowState:interface'
+package: office-ui-fabric-react!
+fullName: IDetailsRowState
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: columnMeasureInfo
+    uid: 'office-ui-fabric-react!IDetailsRowState#columnMeasureInfo:member'
     package: office-ui-fabric-react!
-    children:
-      - 'office-ui-fabric-react!IDetailsRowState#columnMeasureInfo:member'
-      - 'office-ui-fabric-react!IDetailsRowState#isDropping:member'
-      - 'office-ui-fabric-react!IDetailsRowState#selectionState:member'
-  - uid: 'office-ui-fabric-react!IDetailsRowState#columnMeasureInfo:member'
-    name: columnMeasureInfo
     fullName: columnMeasureInfo
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: |-
         columnMeasureInfo?: {
@@ -25,32 +25,33 @@ items:
                 onMeasureDone: (measuredWidth: number) => void;
             };
       return:
-        type:
-          - |-
-            {
-                    index: number;
-                    column: IColumn;
-                    onMeasureDone: (measuredWidth: number) => void;
-                }
-  - uid: 'office-ui-fabric-react!IDetailsRowState#isDropping:member'
-    name: isDropping
+        type: |-
+          {
+                  index: number;
+                  column: IColumn;
+                  onMeasureDone: (measuredWidth: number) =&gt; void;
+              }
+  - name: isDropping
+    uid: 'office-ui-fabric-react!IDetailsRowState#isDropping:member'
+    package: office-ui-fabric-react!
     fullName: isDropping
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'isDropping?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'office-ui-fabric-react!IDetailsRowState#selectionState:member'
-    name: selectionState
+        type: boolean
+  - name: selectionState
+    uid: 'office-ui-fabric-react!IDetailsRowState#selectionState:member'
+    package: office-ui-fabric-react!
     fullName: selectionState
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'selectionState: IDetailsRowSelectionState;'
       return:
-        type:
-          - IDetailsRowSelectionState
+        type: IDetailsRowSelectionState

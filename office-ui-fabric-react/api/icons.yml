@@ -1,35 +1,29 @@
-### YamlMime:UniversalReference
-items:
-  - uid: '@uifabric/icons!'
-    name: '@uifabric/icons'
-    fullName: '@uifabric/icons'
-    langs:
-      - typeScript
-    type: package
-    children:
-      - '@uifabric/icons!IconNames:enum'
-      - '@uifabric/icons!initializeIcons:function(1)'
-  - uid: '@uifabric/icons!initializeIcons:function(1)'
-    name: 'initializeIcons(baseUrl, options)'
-    fullName: 'initializeIcons(baseUrl, options)'
-    langs:
-      - typeScript
-    type: function
+### YamlMime:TSPackage
+uid: '@uifabric/icons!'
+name: '@uifabric/icons'
+type: package
+summary: ''
+enums:
+  - '@uifabric/icons!IconNames:enum'
+functions:
+  - name: 'initializeIcons(baseUrl, options)'
+    uid: '@uifabric/icons!initializeIcons:function(1)'
+    package: '@uifabric/icons'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'export declare function initializeIcons(baseUrl?: string, options?: IIconOptions): void;'
-      return:
-        type:
-          - void
-        description: ''
+      content: >-
+        export declare function initializeIcons(baseUrl?: string, options?:
+        IIconOptions): void;
       parameters:
         - id: baseUrl
           description: ''
-          type:
-            - string
+          type: string
         - id: options
           description: ''
-          type:
-            - IIconOptions
-references:
-  - uid: '@uifabric/icons!IconNames:enum'
-    name: IconNames
+          type: IIconOptions
+      return:
+        type: void
+        description: ''

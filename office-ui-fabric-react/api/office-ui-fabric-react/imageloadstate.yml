@@ -1,50 +1,33 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'office-ui-fabric-react!ImageLoadState:enum'
-    name: ImageLoadState
-    fullName: ImageLoadState
-    langs:
-      - typeScript
-    type: enum
+### YamlMime:TSEnum
+name: ImageLoadState
+uid: 'office-ui-fabric-react!ImageLoadState:enum'
+package: office-ui-fabric-react!
+fullName: ImageLoadState
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: error
+    uid: 'office-ui-fabric-react!ImageLoadState.error:member'
     package: office-ui-fabric-react!
-    children:
-      - 'office-ui-fabric-react!ImageLoadState.error:member'
-      - 'office-ui-fabric-react!ImageLoadState.errorLoaded:member'
-      - 'office-ui-fabric-react!ImageLoadState.loaded:member'
-      - 'office-ui-fabric-react!ImageLoadState.notLoaded:member'
-  - uid: 'office-ui-fabric-react!ImageLoadState.error:member'
     summary: An error has been encountered while loading the image.
-    name: error
-    fullName: error
-    langs:
-      - typeScript
-    type: field
-    numericValue: '2'
-  - uid: 'office-ui-fabric-react!ImageLoadState.errorLoaded:member'
+    numericValue: 2
+  - name: errorLoaded
+    uid: 'office-ui-fabric-react!ImageLoadState.errorLoaded:member'
+    package: office-ui-fabric-react!
     summary: >-
-      Deprecated at v1.3.6, to replace the src in case of errors, use `onLoadingStateChange` instead and rerender the
-      Image with a difference src.
-    deprecated:
-      content: Use `onLoadingStateChange` instead and rerender the Image with a difference src.
-    name: errorLoaded
-    fullName: errorLoaded
-    langs:
-      - typeScript
-    type: field
-    numericValue: '3'
-  - uid: 'office-ui-fabric-react!ImageLoadState.loaded:member'
+      Deprecated at v1.3.6, to replace the src in case of errors, use
+      `onLoadingStateChange` instead and rerender the Image with a difference
+      src.
+    numericValue: 3
+  - name: loaded
+    uid: 'office-ui-fabric-react!ImageLoadState.loaded:member'
+    package: office-ui-fabric-react!
     summary: The image has been loaded successfully.
-    name: loaded
-    fullName: loaded
-    langs:
-      - typeScript
-    type: field
-    numericValue: '1'
-  - uid: 'office-ui-fabric-react!ImageLoadState.notLoaded:member'
+    numericValue: 1
+  - name: notLoaded
+    uid: 'office-ui-fabric-react!ImageLoadState.notLoaded:member'
+    package: office-ui-fabric-react!
     summary: 'The image has not yet been loaded, and there is no error yet.'
-    name: notLoaded
-    fullName: notLoaded
-    langs:
-      - typeScript
-    type: field
-    numericValue: '0'
+    numericValue: 0

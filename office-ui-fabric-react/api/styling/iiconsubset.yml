@@ -1,52 +1,53 @@
-### YamlMime:UniversalReference
-items:
-  - uid: '@uifabric/styling!IIconSubset:interface'
-    name: IIconSubset
-    fullName: IIconSubset
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: IIconSubset
+uid: '@uifabric/styling!IIconSubset:interface'
+package: '@uifabric/styling!'
+fullName: IIconSubset
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: fontFace
+    uid: '@uifabric/styling!IIconSubset#fontFace:member'
     package: '@uifabric/styling!'
-    children:
-      - '@uifabric/styling!IIconSubset#fontFace:member'
-      - '@uifabric/styling!IIconSubset#icons:member'
-      - '@uifabric/styling!IIconSubset#style:member'
-  - uid: '@uifabric/styling!IIconSubset#fontFace:member'
-    name: fontFace
     fullName: fontFace
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'fontFace?: IFontFace;'
       return:
-        type:
-          - '@fluentui/merge-styles!IFontFace:interface'
-  - uid: '@uifabric/styling!IIconSubset#icons:member'
-    name: icons
+        type: '<xref uid="@fluentui/merge-styles!IFontFace:interface" />'
+  - name: icons
+    uid: '@uifabric/styling!IIconSubset#icons:member'
+    package: '@uifabric/styling!'
     fullName: icons
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: |-
         icons: {
                 [key: string]: string | JSX.Element;
             };
       return:
-        type:
-          - |-
-            {
-                    [key: string]: string | JSX.Element;
-                }
-  - uid: '@uifabric/styling!IIconSubset#style:member'
-    name: style
+        type: |-
+          {
+                  [key: string]: string | JSX.Element;
+              }
+  - name: style
+    uid: '@uifabric/styling!IIconSubset#style:member'
+    package: '@uifabric/styling!'
     fullName: style
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'style?: IRawStyle;'
       return:
-        type:
-          - '@fluentui/merge-styles!IRawStyle:interface'
+        type: '<xref uid="@fluentui/merge-styles!IRawStyle:interface" />'

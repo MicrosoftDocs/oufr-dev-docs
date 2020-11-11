@@ -1,82 +1,81 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'office-ui-fabric-react!IShimmerCircleProps:interface'
-    summary: ShimmerCircle component props.
-    name: IShimmerCircleProps
-    fullName: IShimmerCircleProps
-    langs:
-      - typeScript
-    type: interface
-    extends:
-      - 'React.AllHTMLAttributes<HTMLElement> '
+### YamlMime:TSType
+name: IShimmerCircleProps
+uid: 'office-ui-fabric-react!IShimmerCircleProps:interface'
+package: office-ui-fabric-react!
+fullName: IShimmerCircleProps
+summary: ShimmerCircle component props.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: borderStyle
+    uid: 'office-ui-fabric-react!IShimmerCircleProps#borderStyle:member'
     package: office-ui-fabric-react!
-    children:
-      - 'office-ui-fabric-react!IShimmerCircleProps#borderStyle:member'
-      - 'office-ui-fabric-react!IShimmerCircleProps#componentRef:member'
-      - 'office-ui-fabric-react!IShimmerCircleProps#height:member'
-      - 'office-ui-fabric-react!IShimmerCircleProps#styles:member'
-      - 'office-ui-fabric-react!IShimmerCircleProps#theme:member'
-  - uid: 'office-ui-fabric-react!IShimmerCircleProps#borderStyle:member'
-    summary: Use to set custom styling of the shimmerCircle borders.
-    deprecated:
-      content: Use `styles` prop to leverage mergeStyle API.
-    name: borderStyle
     fullName: borderStyle
-    langs:
-      - typeScript
-    type: property
+    summary: Use to set custom styling of the shimmerCircle borders.
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Use `styles` prop to leverage mergeStyle API.
     syntax:
       content: 'borderStyle?: IRawStyle;'
       return:
-        type:
-          - '@fluentui/merge-styles!IRawStyle:interface'
-  - uid: 'office-ui-fabric-react!IShimmerCircleProps#componentRef:member'
-    summary: >-
-      Optional callback to access the IShimmerCircle interface. Use this instead of ref for accessing the public methods
-      and properties of the component.
-    name: componentRef
+        type: '<xref uid="@fluentui/merge-styles!IRawStyle:interface" />'
+  - name: componentRef
+    uid: 'office-ui-fabric-react!IShimmerCircleProps#componentRef:member'
+    package: office-ui-fabric-react!
     fullName: componentRef
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Optional callback to access the IShimmerCircle interface. Use this instead
+      of ref for accessing the public methods and properties of the component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'componentRef?: IRefObject<IShimmerCircle>;'
       return:
-        type:
-          - IRefObject<IShimmerCircle>
-  - uid: 'office-ui-fabric-react!IShimmerCircleProps#height:member'
-    summary: Sets the height of the circle.
-    name: height
+        type: IRefObject&lt;IShimmerCircle&gt;
+  - name: height
+    uid: 'office-ui-fabric-react!IShimmerCircleProps#height:member'
+    package: office-ui-fabric-react!
     fullName: height
-    langs:
-      - typeScript
-    type: property
+    summary: Sets the height of the circle.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'height?: number;'
       return:
-        type:
-          - number
-  - uid: 'office-ui-fabric-react!IShimmerCircleProps#styles:member'
-    summary: Call to provide customized styling that will layer on top of the variant rules.
-    name: styles
+        type: number
+  - name: styles
+    uid: 'office-ui-fabric-react!IShimmerCircleProps#styles:member'
+    package: office-ui-fabric-react!
     fullName: styles
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Call to provide customized styling that will layer on top of the variant
+      rules.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'styles?: IStyleFunctionOrObject<IShimmerCircleStyleProps, IShimmerCircleStyles>;'
+      content: >-
+        styles?: IStyleFunctionOrObject<IShimmerCircleStyleProps,
+        IShimmerCircleStyles>;
       return:
-        type:
-          - 'IStyleFunctionOrObject<IShimmerCircleStyleProps, IShimmerCircleStyles>'
-  - uid: 'office-ui-fabric-react!IShimmerCircleProps#theme:member'
-    summary: Theme provided by High-Order Component.
-    name: theme
+        type: >-
+          IStyleFunctionOrObject&lt;IShimmerCircleStyleProps,
+          IShimmerCircleStyles&gt;
+  - name: theme
+    uid: 'office-ui-fabric-react!IShimmerCircleProps#theme:member'
+    package: office-ui-fabric-react!
     fullName: theme
-    langs:
-      - typeScript
-    type: property
+    summary: Theme provided by High-Order Component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'theme?: ITheme;'
       return:
-        type:
-          - '@fluentui/theme!ITheme:interface'
+        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
+extends: 'React.AllHTMLAttributes&lt;HTMLElement&gt; '

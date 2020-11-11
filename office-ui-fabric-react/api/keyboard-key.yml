@@ -1,59 +1,54 @@
-### YamlMime:UniversalReference
-items:
-  - uid: '@fluentui/keyboard-key!'
-    name: '@fluentui/keyboard-key'
-    fullName: '@fluentui/keyboard-key'
-    langs:
-      - typeScript
-    type: package
-    children:
-      - '@fluentui/keyboard-key!getCode:function(1)'
-      - '@fluentui/keyboard-key!getKey:function(1)'
-      - '@fluentui/keyboard-key!KeyNames:interface'
-  - uid: '@fluentui/keyboard-key!getCode:function(1)'
+### YamlMime:TSPackage
+uid: '@fluentui/keyboard-key!'
+name: '@fluentui/keyboard-key'
+type: package
+summary: ''
+interfaces:
+  - '@fluentui/keyboard-key!KeyNames:interface'
+functions:
+  - name: getCode(eventOrKey)
+    uid: '@fluentui/keyboard-key!getCode:function(1)'
+    package: '@fluentui/keyboard-key'
     summary: >-
-      Get the `keyCode` or `which` value from a keyboard event or `key` name. If an object is provided, the precedence
-      of properties is `keyCode`<!-- -->, `which`<!-- -->, `key`<!-- -->.
-    name: getCode(eventOrKey)
-    fullName: getCode(eventOrKey)
-    langs:
-      - typeScript
-    type: function
+      Get the `keyCode` or `which` value from a keyboard event or `key` name. If
+      an object is provided, the precedence of properties is `keyCode`<!-- -->,
+      `which`<!-- -->, `key`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'export declare function getCode(eventOrKey: Partial<KeyboardEventLike> | string): number | undefined;'
-      return:
-        type:
-          - number | undefined
-        description: ''
+      content: >-
+        export declare function getCode(eventOrKey: Partial<KeyboardEventLike> |
+        string): number | undefined;
       parameters:
         - id: eventOrKey
           description: >-
-            A keyboard event-like object or `key` name. If an object, at least one of `key`<!-- -->, `keyCode`<!-- -->,
-            or `which` must be defined.
-          type:
-            - Partial<KeyboardEventLike> | string
-  - uid: '@fluentui/keyboard-key!getKey:function(1)'
-    summary: >-
-      Get the key name from a keyboard event, `keyCode`<!-- -->, or `which` value. If an object is provided, the
-      precedence of properties is `key`<!-- -->, `keyCode`<!-- -->, `which`<!-- -->.
-    name: getKey(eventOrCode)
-    fullName: getKey(eventOrCode)
-    langs:
-      - typeScript
-    type: function
-    syntax:
-      content: 'export declare function getKey(eventOrCode: Partial<KeyboardEventLike> | number): string | undefined;'
+            A keyboard event-like object or `key` name. If an object, at least
+            one of `key`<!-- -->, `keyCode`<!-- -->, or `which` must be defined.
+          type: Partial&lt;KeyboardEventLike&gt; | string
       return:
-        type:
-          - string | undefined
+        type: number | undefined
         description: ''
+  - name: getKey(eventOrCode)
+    uid: '@fluentui/keyboard-key!getKey:function(1)'
+    package: '@fluentui/keyboard-key'
+    summary: >-
+      Get the key name from a keyboard event, `keyCode`<!-- -->, or `which`
+      value. If an object is provided, the precedence of properties is `key`<!--
+      -->, `keyCode`<!-- -->, `which`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        export declare function getKey(eventOrCode: Partial<KeyboardEventLike> |
+        number): string | undefined;
       parameters:
         - id: eventOrCode
           description: >-
-            A keyboard event-like object or key code. If an object, at least one of `key`<!-- -->, `keyCode`<!-- -->, or
-            `which` must be defined.
-          type:
-            - Partial<KeyboardEventLike> | number
-references:
-  - uid: '@fluentui/keyboard-key!KeyNames:interface'
-    name: KeyNames
+            A keyboard event-like object or key code. If an object, at least one
+            of `key`<!-- -->, `keyCode`<!-- -->, or `which` must be defined.
+          type: Partial&lt;KeyboardEventLike&gt; | number
+      return:
+        type: string | undefined
+        description: ''

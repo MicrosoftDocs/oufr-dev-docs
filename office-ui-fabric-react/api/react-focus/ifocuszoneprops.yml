@@ -1,507 +1,510 @@
-### YamlMime:UniversalReference
-items:
-  - uid: '@fluentui/react-focus!IFocusZoneProps:interface'
-    summary: FocusZone component props.
-    name: IFocusZoneProps
-    fullName: IFocusZoneProps
-    langs:
-      - typeScript
-    type: interface
-    extends:
-      - 'React.HTMLAttributes<HTMLElement | FocusZone> '
+### YamlMime:TSType
+name: IFocusZoneProps
+uid: '@fluentui/react-focus!IFocusZoneProps:interface'
+package: '@fluentui/react-focus!'
+fullName: IFocusZoneProps
+summary: FocusZone component props.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: allowFocusRoot
+    uid: '@fluentui/react-focus!IFocusZoneProps#allowFocusRoot:member'
     package: '@fluentui/react-focus!'
-    children:
-      - '@fluentui/react-focus!IFocusZoneProps#allowFocusRoot:member'
-      - '@fluentui/react-focus!IFocusZoneProps#allowTabKey:member'
-      - '@fluentui/react-focus!IFocusZoneProps#ariaDescribedBy:member'
-      - '@fluentui/react-focus!IFocusZoneProps#ariaLabelledBy:member'
-      - '@fluentui/react-focus!IFocusZoneProps#as:member'
-      - '@fluentui/react-focus!IFocusZoneProps#checkForNoWrap:member'
-      - '@fluentui/react-focus!IFocusZoneProps#className:member'
-      - '@fluentui/react-focus!IFocusZoneProps#componentRef:member'
-      - '@fluentui/react-focus!IFocusZoneProps#defaultActiveElement:member'
-      - '@fluentui/react-focus!IFocusZoneProps#defaultTabbableElement:member'
-      - '@fluentui/react-focus!IFocusZoneProps#direction:member'
-      - '@fluentui/react-focus!IFocusZoneProps#disabled:member'
-      - '@fluentui/react-focus!IFocusZoneProps#doNotAllowFocusEventToPropagate:member'
-      - '@fluentui/react-focus!IFocusZoneProps#elementRef:member'
-      - '@fluentui/react-focus!IFocusZoneProps#elementType:member'
-      - '@fluentui/react-focus!IFocusZoneProps#handleTabKey:member'
-      - '@fluentui/react-focus!IFocusZoneProps#isCircularNavigation:member'
-      - '@fluentui/react-focus!IFocusZoneProps#isInnerZoneKeystroke:member'
-      - '@fluentui/react-focus!IFocusZoneProps#onActiveElementChanged:member'
-      - '@fluentui/react-focus!IFocusZoneProps#onBeforeFocus:member'
-      - '@fluentui/react-focus!IFocusZoneProps#onFocus:member'
-      - '@fluentui/react-focus!IFocusZoneProps#onFocusNotification:member'
-      - '@fluentui/react-focus!IFocusZoneProps#pagingSupportDisabled:member'
-      - '@fluentui/react-focus!IFocusZoneProps#preventDefaultWhenHandled:member'
-      - '@fluentui/react-focus!IFocusZoneProps#preventFocusRestoration:member'
-      - '@fluentui/react-focus!IFocusZoneProps#rootProps:member'
-      - '@fluentui/react-focus!IFocusZoneProps#shouldEnterInnerZone:member'
-      - '@fluentui/react-focus!IFocusZoneProps#shouldFocusInnerElementWhenReceivedFocus:member'
-      - '@fluentui/react-focus!IFocusZoneProps#shouldFocusOnMount:member'
-      - '@fluentui/react-focus!IFocusZoneProps#shouldInputLoseFocusOnArrowKey:member'
-      - '@fluentui/react-focus!IFocusZoneProps#shouldRaiseClicks:member'
-      - '@fluentui/react-focus!IFocusZoneProps#shouldReceiveFocus:member'
-      - '@fluentui/react-focus!IFocusZoneProps#shouldResetActiveElementWhenTabFromZone:member'
-      - '@fluentui/react-focus!IFocusZoneProps#stopFocusPropagation:member'
-  - uid: '@fluentui/react-focus!IFocusZoneProps#allowFocusRoot:member'
-    summary: Allows focus to park on root when focus is in the `FocusZone` at render time.
-    name: allowFocusRoot
     fullName: allowFocusRoot
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Allows focus to park on root when focus is in the `FocusZone` at render
+      time.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'allowFocusRoot?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: '@fluentui/react-focus!IFocusZoneProps#allowTabKey:member'
-    summary: >-
-      Allows tab key to be handled to tab through a list of items in the focus zone, an unfortunate side effect is that
-      users will not be able to tab out of the focus zone and have to hit escape or some other key.
-    deprecated:
-      content: Use `handleTabKey` instead.
-    name: allowTabKey
+        type: boolean
+  - name: allowTabKey
+    uid: '@fluentui/react-focus!IFocusZoneProps#allowTabKey:member'
+    package: '@fluentui/react-focus!'
     fullName: allowTabKey
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Allows tab key to be handled to tab through a list of items in the focus
+      zone, an unfortunate side effect is that users will not be able to tab out
+      of the focus zone and have to hit escape or some other key.
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Use `handleTabKey` instead.
     syntax:
       content: 'allowTabKey?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: '@fluentui/react-focus!IFocusZoneProps#ariaDescribedBy:member'
-    summary: Sets the aria-describedby attribute.
-    deprecated:
-      content: Directly use the `aria-describedby` attribute instead
-    name: ariaDescribedBy
+        type: boolean
+  - name: ariaDescribedBy
+    uid: '@fluentui/react-focus!IFocusZoneProps#ariaDescribedBy:member'
+    package: '@fluentui/react-focus!'
     fullName: ariaDescribedBy
-    langs:
-      - typeScript
-    type: property
+    summary: Sets the aria-describedby attribute.
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Directly use the `aria-describedby` attribute instead
     syntax:
       content: 'ariaDescribedBy?: string;'
       return:
-        type:
-          - string
-  - uid: '@fluentui/react-focus!IFocusZoneProps#ariaLabelledBy:member'
-    summary: Sets the aria-labelledby attribute.
-    deprecated:
-      content: Directly use the `aria-labelledby` attribute instead
-    name: ariaLabelledBy
+        type: string
+  - name: ariaLabelledBy
+    uid: '@fluentui/react-focus!IFocusZoneProps#ariaLabelledBy:member'
+    package: '@fluentui/react-focus!'
     fullName: ariaLabelledBy
-    langs:
-      - typeScript
-    type: property
+    summary: Sets the aria-labelledby attribute.
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Directly use the `aria-labelledby` attribute instead
     syntax:
       content: 'ariaLabelledBy?: string;'
       return:
-        type:
-          - string
-  - uid: '@fluentui/react-focus!IFocusZoneProps#as:member'
-    summary: A component that should be used as the root element of the FocusZone component.
-    name: as
+        type: string
+  - name: as
+    uid: '@fluentui/react-focus!IFocusZoneProps#as:member'
+    package: '@fluentui/react-focus!'
     fullName: as
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      A component that should be used as the root element of the FocusZone
+      component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'as?: React.ElementType;'
       return:
-        type:
-          - React.ElementType
-  - uid: '@fluentui/react-focus!IFocusZoneProps#checkForNoWrap:member'
-    summary: >-
-      Determines whether to check for data-no-horizontal-wrap or data-no-vertical-wrap attributes when determining how
-      to move focus
-    name: checkForNoWrap
+        type: React.ElementType
+  - name: checkForNoWrap
+    uid: '@fluentui/react-focus!IFocusZoneProps#checkForNoWrap:member'
+    package: '@fluentui/react-focus!'
     fullName: checkForNoWrap
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Determines whether to check for data-no-horizontal-wrap or
+      data-no-vertical-wrap attributes when determining how to move focus
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'checkForNoWrap?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: '@fluentui/react-focus!IFocusZoneProps#className:member'
-    summary: 'Additional class name to provide on the root element, in addition to the ms-FocusZone class.'
-    name: className
+        type: boolean
+  - name: className
+    uid: '@fluentui/react-focus!IFocusZoneProps#className:member'
+    package: '@fluentui/react-focus!'
     fullName: className
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Additional class name to provide on the root element, in addition to the
+      ms-FocusZone class.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'className?: string;'
       return:
-        type:
-          - string
-  - uid: '@fluentui/react-focus!IFocusZoneProps#componentRef:member'
-    summary: >-
-      Optional callback to access the IFocusZone interface. Use this instead of ref for accessing the public methods and
-      properties of the component.
-    name: componentRef
+        type: string
+  - name: componentRef
+    uid: '@fluentui/react-focus!IFocusZoneProps#componentRef:member'
+    package: '@fluentui/react-focus!'
     fullName: componentRef
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Optional callback to access the IFocusZone interface. Use this instead of
+      ref for accessing the public methods and properties of the component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'componentRef?: IRefObject<IFocusZone>;'
       return:
-        type:
-          - IRefObject<IFocusZone>
-  - uid: '@fluentui/react-focus!IFocusZoneProps#defaultActiveElement:member'
-    summary: Optionally provide a selector for identifying the initial active element.
-    deprecated:
-      content: Use `defaultTabbableElement` instead.
-    name: defaultActiveElement
+        type: IRefObject&lt;IFocusZone&gt;
+  - name: defaultActiveElement
+    uid: '@fluentui/react-focus!IFocusZoneProps#defaultActiveElement:member'
+    package: '@fluentui/react-focus!'
     fullName: defaultActiveElement
-    langs:
-      - typeScript
-    type: property
+    summary: Optionally provide a selector for identifying the initial active element.
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Use `defaultTabbableElement` instead.
     syntax:
       content: 'defaultActiveElement?: string;'
       return:
-        type:
-          - string
-  - uid: '@fluentui/react-focus!IFocusZoneProps#defaultTabbableElement:member'
-    summary: >-
-      Optionally defines the initial tabbable element inside the FocusZone. If a string is passed then it is treated as
-      a selector for identifying the initial tabbable element. If a function is passed then it uses the root element as
-      a parameter to return the initial tabbable element.
-    name: defaultTabbableElement
+        type: string
+  - name: defaultTabbableElement
+    uid: '@fluentui/react-focus!IFocusZoneProps#defaultTabbableElement:member'
+    package: '@fluentui/react-focus!'
     fullName: defaultTabbableElement
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Optionally defines the initial tabbable element inside the FocusZone. If a
+      string is passed then it is treated as a selector for identifying the
+      initial tabbable element. If a function is passed then it uses the root
+      element as a parameter to return the initial tabbable element.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'defaultTabbableElement?: string | ((root: HTMLElement) => HTMLElement);'
       return:
-        type:
-          - 'string | ((root: HTMLElement) => HTMLElement)'
-  - uid: '@fluentui/react-focus!IFocusZoneProps#direction:member'
-    summary: Defines which arrows to react to.
-    name: direction
+        type: 'string | ((root: HTMLElement) =&gt; HTMLElement)'
+  - name: direction
+    uid: '@fluentui/react-focus!IFocusZoneProps#direction:member'
+    package: '@fluentui/react-focus!'
     fullName: direction
-    langs:
-      - typeScript
-    type: property
+    summary: Defines which arrows to react to.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'direction?: FocusZoneDirection;'
       return:
-        type:
-          - '@fluentui/react-focus!FocusZoneDirection:enum'
-  - uid: '@fluentui/react-focus!IFocusZoneProps#disabled:member'
-    summary: >-
-      If set, the FocusZone will not be tabbable and keyboard navigation will be disabled. This does not affect disabled
-      attribute of any child.
-    name: disabled
+        type: '<xref uid="@fluentui/react-focus!FocusZoneDirection:enum" />'
+  - name: disabled
+    uid: '@fluentui/react-focus!IFocusZoneProps#disabled:member'
+    package: '@fluentui/react-focus!'
     fullName: disabled
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      If set, the FocusZone will not be tabbable and keyboard navigation will be
+      disabled. This does not affect disabled attribute of any child.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'disabled?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: '@fluentui/react-focus!IFocusZoneProps#doNotAllowFocusEventToPropagate:member'
-    summary: Whether the FocusZone should allow focus events to propagate past the FocusZone.
-    deprecated:
-      content: Use `stopFocusPropagation` instead.
-    name: doNotAllowFocusEventToPropagate
+        type: boolean
+  - name: doNotAllowFocusEventToPropagate
+    uid: >-
+      @fluentui/react-focus!IFocusZoneProps#doNotAllowFocusEventToPropagate:member
+    package: '@fluentui/react-focus!'
     fullName: doNotAllowFocusEventToPropagate
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Whether the FocusZone should allow focus events to propagate past the
+      FocusZone.
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Use `stopFocusPropagation` instead.
     syntax:
       content: 'doNotAllowFocusEventToPropagate?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: '@fluentui/react-focus!IFocusZoneProps#elementRef:member'
-    summary: Optional callback to access the root DOM element.
-    deprecated:
-      content: Temporary solution which will be replaced with ref in the V8 release.
-    name: elementRef
+        type: boolean
+  - name: elementRef
+    uid: '@fluentui/react-focus!IFocusZoneProps#elementRef:member'
+    package: '@fluentui/react-focus!'
     fullName: elementRef
-    langs:
-      - typeScript
-    type: property
+    summary: Optional callback to access the root DOM element.
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Temporary solution which will be replaced with ref in the V8 release.
     syntax:
       content: 'elementRef?: React.Ref<HTMLElement>;'
       return:
-        type:
-          - React.Ref<HTMLElement>
-  - uid: '@fluentui/react-focus!IFocusZoneProps#elementType:member'
-    summary: Element type the root element will use. Default is "div".
-    deprecated:
-      content: Use 'as' instead.
-    name: elementType
+        type: React.Ref&lt;HTMLElement&gt;
+  - name: elementType
+    uid: '@fluentui/react-focus!IFocusZoneProps#elementType:member'
+    package: '@fluentui/react-focus!'
     fullName: elementType
-    langs:
-      - typeScript
-    type: property
+    summary: Element type the root element will use. Default is "div".
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Use 'as' instead.
     syntax:
       content: 'elementType?: any;'
       return:
-        type:
-          - any
-  - uid: '@fluentui/react-focus!IFocusZoneProps#handleTabKey:member'
-    summary: >-
-      Allows tab key to be handled to tab through a list of items in the focus zone, an unfortunate side effect is that
-      users will not be able to tab out of the focus zone and have to hit escape or some other key.
-    name: handleTabKey
+        type: any
+  - name: handleTabKey
+    uid: '@fluentui/react-focus!IFocusZoneProps#handleTabKey:member'
+    package: '@fluentui/react-focus!'
     fullName: handleTabKey
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Allows tab key to be handled to tab through a list of items in the focus
+      zone, an unfortunate side effect is that users will not be able to tab out
+      of the focus zone and have to hit escape or some other key.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'handleTabKey?: FocusZoneTabbableElements;'
       return:
-        type:
-          - FocusZoneTabbableElements
-  - uid: '@fluentui/react-focus!IFocusZoneProps#isCircularNavigation:member'
-    summary: >-
-      If set, will cycle to the beginning of the targets once the user navigates to the next target while at the end,
-      and to the end when navigate to the previous at the beginning.
-    name: isCircularNavigation
+        type: FocusZoneTabbableElements
+  - name: isCircularNavigation
+    uid: '@fluentui/react-focus!IFocusZoneProps#isCircularNavigation:member'
+    package: '@fluentui/react-focus!'
     fullName: isCircularNavigation
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      If set, will cycle to the beginning of the targets once the user navigates
+      to the next target while at the end, and to the end when navigate to the
+      previous at the beginning.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'isCircularNavigation?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: '@fluentui/react-focus!IFocusZoneProps#isInnerZoneKeystroke:member'
-    summary: >-
-      If provided, this callback will be executed on keypresses to determine if the user intends to navigate into the
-      inner zone. Returning true will ask the first inner zone to set focus.
-    deprecated:
-      content: Use `shouldEnterInnerZone` instead.
-    name: isInnerZoneKeystroke
+        type: boolean
+  - name: isInnerZoneKeystroke
+    uid: '@fluentui/react-focus!IFocusZoneProps#isInnerZoneKeystroke:member'
+    package: '@fluentui/react-focus!'
     fullName: isInnerZoneKeystroke
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'isInnerZoneKeystroke?: (ev: React.KeyboardEvent<HTMLElement>) => boolean;'
-      return:
-        type:
-          - '(ev: React.KeyboardEvent<HTMLElement>) => boolean'
-  - uid: '@fluentui/react-focus!IFocusZoneProps#onActiveElementChanged:member'
     summary: >-
-      Callback for when one of immediate children elements gets active by getting focused or by having one of its
-      respective children elements focused.
-    name: onActiveElementChanged
-    fullName: onActiveElementChanged
-    langs:
-      - typeScript
-    type: property
+      If provided, this callback will be executed on keypresses to determine if
+      the user intends to navigate into the inner zone. Returning true will ask
+      the first inner zone to set focus.
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Use `shouldEnterInnerZone` instead.
     syntax:
-      content: 'onActiveElementChanged?: (element?: HTMLElement, ev?: React.FocusEvent<HTMLElement>) => void;'
+      content: >-
+        isInnerZoneKeystroke?: (ev: React.KeyboardEvent<HTMLElement>) =>
+        boolean;
       return:
-        type:
-          - '(element?: HTMLElement, ev?: React.FocusEvent<HTMLElement>) => void'
-  - uid: '@fluentui/react-focus!IFocusZoneProps#onBeforeFocus:member'
-    summary: Callback method for determining if focus should indeed be set on the given element.
-    deprecated:
-      content: Use `shouldReceiveFocus` instead.
-    name: onBeforeFocus
+        type: '(ev: React.KeyboardEvent&lt;HTMLElement&gt;) =&gt; boolean'
+  - name: onActiveElementChanged
+    uid: '@fluentui/react-focus!IFocusZoneProps#onActiveElementChanged:member'
+    package: '@fluentui/react-focus!'
+    fullName: onActiveElementChanged
+    summary: >-
+      Callback for when one of immediate children elements gets active by
+      getting focused or by having one of its respective children elements
+      focused.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        onActiveElementChanged?: (element?: HTMLElement, ev?:
+        React.FocusEvent<HTMLElement>) => void;
+      return:
+        type: >-
+          (element?: HTMLElement, ev?: React.FocusEvent&lt;HTMLElement&gt;)
+          =&gt; void
+  - name: onBeforeFocus
+    uid: '@fluentui/react-focus!IFocusZoneProps#onBeforeFocus:member'
+    package: '@fluentui/react-focus!'
     fullName: onBeforeFocus
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Callback method for determining if focus should indeed be set on the given
+      element.
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Use `shouldReceiveFocus` instead.
     syntax:
       content: 'onBeforeFocus?: (childElement?: HTMLElement) => boolean;'
       return:
-        type:
-          - '(childElement?: HTMLElement) => boolean'
-  - uid: '@fluentui/react-focus!IFocusZoneProps#onFocus:member'
-    summary: Callback called when "focus" event triggered in FocusZone.
-    name: onFocus
+        type: '(childElement?: HTMLElement) =&gt; boolean'
+  - name: onFocus
+    uid: '@fluentui/react-focus!IFocusZoneProps#onFocus:member'
+    package: '@fluentui/react-focus!'
     fullName: onFocus
-    langs:
-      - typeScript
-    type: property
+    summary: Callback called when "focus" event triggered in FocusZone.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'onFocus?: (event: React.FocusEvent<HTMLElement | FocusZone>) => void;'
       return:
-        type:
-          - '(event: React.FocusEvent<HTMLElement | FocusZone>) => void'
-  - uid: '@fluentui/react-focus!IFocusZoneProps#onFocusNotification:member'
-    summary: Callback to notify creators that focus has been set on the FocusZone
-    deprecated:
-      content: Use `onFocus` instead.
-    name: onFocusNotification
+        type: '(event: React.FocusEvent&lt;HTMLElement | FocusZone&gt;) =&gt; void'
+  - name: onFocusNotification
+    uid: '@fluentui/react-focus!IFocusZoneProps#onFocusNotification:member'
+    package: '@fluentui/react-focus!'
     fullName: onFocusNotification
-    langs:
-      - typeScript
-    type: property
+    summary: Callback to notify creators that focus has been set on the FocusZone
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Use `onFocus` instead.
     syntax:
       content: 'onFocusNotification?: () => void;'
       return:
-        type:
-          - () => void
-  - uid: '@fluentui/react-focus!IFocusZoneProps#pagingSupportDisabled:member'
-    summary: Determines whether to disable the paging support for Page Up and Page Down keyboard scenarios.
-    name: pagingSupportDisabled
+        type: () =&gt; void
+  - name: pagingSupportDisabled
+    uid: '@fluentui/react-focus!IFocusZoneProps#pagingSupportDisabled:member'
+    package: '@fluentui/react-focus!'
     fullName: pagingSupportDisabled
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Determines whether to disable the paging support for Page Up and Page Down
+      keyboard scenarios.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'pagingSupportDisabled?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: '@fluentui/react-focus!IFocusZoneProps#preventDefaultWhenHandled:member'
-    summary: 'If true, FocusZone prevents the default behavior of Keyboard events when changing focus between elements.'
-    name: preventDefaultWhenHandled
+        type: boolean
+  - name: preventDefaultWhenHandled
+    uid: '@fluentui/react-focus!IFocusZoneProps#preventDefaultWhenHandled:member'
+    package: '@fluentui/react-focus!'
     fullName: preventDefaultWhenHandled
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      If true, FocusZone prevents the default behavior of Keyboard events when
+      changing focus between elements.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'preventDefaultWhenHandled?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: '@fluentui/react-focus!IFocusZoneProps#preventFocusRestoration:member'
-    summary: >-
-      If true, prevents the FocusZone from attempting to restore the focus to the inner element when the focus is on the
-      root element after componentDidUpdate.
-    name: preventFocusRestoration
+        type: boolean
+  - name: preventFocusRestoration
+    uid: '@fluentui/react-focus!IFocusZoneProps#preventFocusRestoration:member'
+    package: '@fluentui/react-focus!'
     fullName: preventFocusRestoration
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      If true, prevents the FocusZone from attempting to restore the focus to
+      the inner element when the focus is on the root element after
+      componentDidUpdate.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'preventFocusRestoration?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: '@fluentui/react-focus!IFocusZoneProps#rootProps:member'
-    summary: Deprecated at v1.12.1. DIV props provided to the FocusZone will be mixed into the root element.
-    deprecated:
-      content: DIV props provided to the FocusZone will be mixed into the root element.
-    name: rootProps
+        type: boolean
+  - name: rootProps
+    uid: '@fluentui/react-focus!IFocusZoneProps#rootProps:member'
+    package: '@fluentui/react-focus!'
     fullName: rootProps
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Deprecated at v1.12.1. DIV props provided to the FocusZone will be mixed
+      into the root element.
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: DIV props provided to the FocusZone will be mixed into the root element.
     syntax:
       content: 'rootProps?: React.HTMLAttributes<HTMLDivElement>;'
       return:
-        type:
-          - React.HTMLAttributes<HTMLDivElement>
-  - uid: '@fluentui/react-focus!IFocusZoneProps#shouldEnterInnerZone:member'
-    summary: >-
-      Callback function that will be executed on keypresses to determine if the user intends to navigate into the inner
-      (nested) zone. Returning true will ask the first inner zone to set focus.
-    name: shouldEnterInnerZone
+        type: React.HTMLAttributes&lt;HTMLDivElement&gt;
+  - name: shouldEnterInnerZone
+    uid: '@fluentui/react-focus!IFocusZoneProps#shouldEnterInnerZone:member'
+    package: '@fluentui/react-focus!'
     fullName: shouldEnterInnerZone
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'shouldEnterInnerZone?: (ev: React.KeyboardEvent<HTMLElement>) => boolean;'
-      return:
-        type:
-          - '(ev: React.KeyboardEvent<HTMLElement>) => boolean'
-  - uid: '@fluentui/react-focus!IFocusZoneProps#shouldFocusInnerElementWhenReceivedFocus:member'
     summary: >-
-      If true and FocusZone's root element (container) receives focus, the focus will land either on the
-      defaultTabbableElement (if set) or on the first tabbable element of this FocusZone. Usually a case for nested
-      focus zones, when the nested focus zone's container is a focusable element.
-    name: shouldFocusInnerElementWhenReceivedFocus
+      Callback function that will be executed on keypresses to determine if the
+      user intends to navigate into the inner (nested) zone. Returning true will
+      ask the first inner zone to set focus.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        shouldEnterInnerZone?: (ev: React.KeyboardEvent<HTMLElement>) =>
+        boolean;
+      return:
+        type: '(ev: React.KeyboardEvent&lt;HTMLElement&gt;) =&gt; boolean'
+  - name: shouldFocusInnerElementWhenReceivedFocus
+    uid: >-
+      @fluentui/react-focus!IFocusZoneProps#shouldFocusInnerElementWhenReceivedFocus:member
+    package: '@fluentui/react-focus!'
     fullName: shouldFocusInnerElementWhenReceivedFocus
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      If true and FocusZone's root element (container) receives focus, the focus
+      will land either on the defaultTabbableElement (if set) or on the first
+      tabbable element of this FocusZone. Usually a case for nested focus zones,
+      when the nested focus zone's container is a focusable element.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'shouldFocusInnerElementWhenReceivedFocus?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: '@fluentui/react-focus!IFocusZoneProps#shouldFocusOnMount:member'
-    summary: Determines if a default tabbable element should be force focused on FocusZone mount.  false
-    name: shouldFocusOnMount
+        type: boolean
+  - name: shouldFocusOnMount
+    uid: '@fluentui/react-focus!IFocusZoneProps#shouldFocusOnMount:member'
+    package: '@fluentui/react-focus!'
     fullName: shouldFocusOnMount
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Determines if a default tabbable element should be force focused on
+      FocusZone mount.  false
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'shouldFocusOnMount?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: '@fluentui/react-focus!IFocusZoneProps#shouldInputLoseFocusOnArrowKey:member'
-    summary: A callback method to determine if the input element should lose focus on arrow keys
-    name: shouldInputLoseFocusOnArrowKey
+        type: boolean
+  - name: shouldInputLoseFocusOnArrowKey
+    uid: >-
+      @fluentui/react-focus!IFocusZoneProps#shouldInputLoseFocusOnArrowKey:member
+    package: '@fluentui/react-focus!'
     fullName: shouldInputLoseFocusOnArrowKey
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'shouldInputLoseFocusOnArrowKey?: (inputElement: HTMLInputElement) => boolean;'
-      return:
-        type:
-          - '(inputElement: HTMLInputElement) => boolean'
-  - uid: '@fluentui/react-focus!IFocusZoneProps#shouldRaiseClicks:member'
     summary: >-
-      Determines whether the FocusZone will walk up the DOM trying to invoke click callbacks on focusable elements on
-      Enter and Space keydowns to ensure accessibility for tags that don't guarantee this behavior.
-    name: shouldRaiseClicks
+      A callback method to determine if the input element should lose focus on
+      arrow keys
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        shouldInputLoseFocusOnArrowKey?: (inputElement: HTMLInputElement) =>
+        boolean;
+      return:
+        type: '(inputElement: HTMLInputElement) =&gt; boolean'
+  - name: shouldRaiseClicks
+    uid: '@fluentui/react-focus!IFocusZoneProps#shouldRaiseClicks:member'
+    package: '@fluentui/react-focus!'
     fullName: shouldRaiseClicks
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Determines whether the FocusZone will walk up the DOM trying to invoke
+      click callbacks on focusable elements on Enter and Space keydowns to
+      ensure accessibility for tags that don't guarantee this behavior.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'shouldRaiseClicks?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: '@fluentui/react-focus!IFocusZoneProps#shouldReceiveFocus:member'
-    summary: Callback method for determining if focus should indeed be set on the given element.
-    name: shouldReceiveFocus
+        type: boolean
+  - name: shouldReceiveFocus
+    uid: '@fluentui/react-focus!IFocusZoneProps#shouldReceiveFocus:member'
+    package: '@fluentui/react-focus!'
     fullName: shouldReceiveFocus
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Callback method for determining if focus should indeed be set on the given
+      element.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'shouldReceiveFocus?: (childElement?: HTMLElement) => boolean;'
       return:
-        type:
-          - '(childElement?: HTMLElement) => boolean'
-  - uid: '@fluentui/react-focus!IFocusZoneProps#shouldResetActiveElementWhenTabFromZone:member'
-    summary: >-
-      If true and TAB key is not handled by FocusZone, resets current active element to null value. For example, when
-      roving index is not desirable and focus should always reset to the default tabbable element.
-    name: shouldResetActiveElementWhenTabFromZone
+        type: '(childElement?: HTMLElement) =&gt; boolean'
+  - name: shouldResetActiveElementWhenTabFromZone
+    uid: >-
+      @fluentui/react-focus!IFocusZoneProps#shouldResetActiveElementWhenTabFromZone:member
+    package: '@fluentui/react-focus!'
     fullName: shouldResetActiveElementWhenTabFromZone
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      If true and TAB key is not handled by FocusZone, resets current active
+      element to null value. For example, when roving index is not desirable and
+      focus should always reset to the default tabbable element.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'shouldResetActiveElementWhenTabFromZone?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: '@fluentui/react-focus!IFocusZoneProps#stopFocusPropagation:member'
-    summary: Whether the FocusZone should allow focus events to propagate past the FocusZone.
-    name: stopFocusPropagation
+        type: boolean
+  - name: stopFocusPropagation
+    uid: '@fluentui/react-focus!IFocusZoneProps#stopFocusPropagation:member'
+    package: '@fluentui/react-focus!'
     fullName: stopFocusPropagation
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Whether the FocusZone should allow focus events to propagate past the
+      FocusZone.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'stopFocusPropagation?: boolean;'
       return:
-        type:
-          - boolean
+        type: boolean
+extends: 'React.HTMLAttributes&lt;HTMLElement | FocusZone&gt; '

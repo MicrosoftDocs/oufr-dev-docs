@@ -1,148 +1,152 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'office-ui-fabric-react!IChoiceGroupProps:interface'
-    name: IChoiceGroupProps
-    fullName: IChoiceGroupProps
-    langs:
-      - typeScript
-    type: interface
-    extends:
-      - 'React.InputHTMLAttributes<HTMLElement | HTMLInputElement> '
+### YamlMime:TSType
+name: IChoiceGroupProps
+uid: 'office-ui-fabric-react!IChoiceGroupProps:interface'
+package: office-ui-fabric-react!
+fullName: IChoiceGroupProps
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: ariaLabelledBy
+    uid: 'office-ui-fabric-react!IChoiceGroupProps#ariaLabelledBy:member'
     package: office-ui-fabric-react!
-    children:
-      - 'office-ui-fabric-react!IChoiceGroupProps#ariaLabelledBy:member'
-      - 'office-ui-fabric-react!IChoiceGroupProps#componentRef:member'
-      - 'office-ui-fabric-react!IChoiceGroupProps#defaultSelectedKey:member'
-      - 'office-ui-fabric-react!IChoiceGroupProps#label:member'
-      - 'office-ui-fabric-react!IChoiceGroupProps#onChange:member'
-      - 'office-ui-fabric-react!IChoiceGroupProps#onChanged:member'
-      - 'office-ui-fabric-react!IChoiceGroupProps#options:member'
-      - 'office-ui-fabric-react!IChoiceGroupProps#selectedKey:member'
-      - 'office-ui-fabric-react!IChoiceGroupProps#styles:member'
-      - 'office-ui-fabric-react!IChoiceGroupProps#theme:member'
-  - uid: 'office-ui-fabric-react!IChoiceGroupProps#ariaLabelledBy:member'
-    summary: ID of an element to use as the aria label for this ChoiceGroup.
-    name: ariaLabelledBy
     fullName: ariaLabelledBy
-    langs:
-      - typeScript
-    type: property
+    summary: ID of an element to use as the aria label for this ChoiceGroup.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'ariaLabelledBy?: string;'
       return:
-        type:
-          - string
-  - uid: 'office-ui-fabric-react!IChoiceGroupProps#componentRef:member'
-    summary: >-
-      Optional callback to access the IChoiceGroup interface. Use this instead of ref for accessing the public methods
-      and properties of the component.
-    name: componentRef
+        type: string
+  - name: componentRef
+    uid: 'office-ui-fabric-react!IChoiceGroupProps#componentRef:member'
+    package: office-ui-fabric-react!
     fullName: componentRef
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Optional callback to access the IChoiceGroup interface. Use this instead
+      of ref for accessing the public methods and properties of the component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'componentRef?: IRefObject<IChoiceGroup>;'
       return:
-        type:
-          - IRefObject<IChoiceGroup>
-  - uid: 'office-ui-fabric-react!IChoiceGroupProps#defaultSelectedKey:member'
-    summary: The key of the option that will be initially checked.
-    name: defaultSelectedKey
+        type: IRefObject&lt;IChoiceGroup&gt;
+  - name: defaultSelectedKey
+    uid: 'office-ui-fabric-react!IChoiceGroupProps#defaultSelectedKey:member'
+    package: office-ui-fabric-react!
     fullName: defaultSelectedKey
-    langs:
-      - typeScript
-    type: property
+    summary: The key of the option that will be initially checked.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'defaultSelectedKey?: string | number;'
       return:
-        type:
-          - string | number
-  - uid: 'office-ui-fabric-react!IChoiceGroupProps#label:member'
-    summary: Descriptive label for the choice group.
-    name: label
+        type: string | number
+  - name: label
+    uid: 'office-ui-fabric-react!IChoiceGroupProps#label:member'
+    package: office-ui-fabric-react!
     fullName: label
-    langs:
-      - typeScript
-    type: property
+    summary: Descriptive label for the choice group.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'label?: string;'
       return:
-        type:
-          - string
-  - uid: 'office-ui-fabric-react!IChoiceGroupProps#onChange:member'
-    summary: A callback for receiving a notification when the choice has been changed.
-    name: onChange
+        type: string
+  - name: onChange
+    uid: 'office-ui-fabric-react!IChoiceGroupProps#onChange:member'
+    package: office-ui-fabric-react!
     fullName: onChange
-    langs:
-      - typeScript
-    type: property
+    summary: A callback for receiving a notification when the choice has been changed.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'onChange?: (ev?: React.FormEvent<HTMLElement | HTMLInputElement>, option?: IChoiceGroupOption) => void;'
+      content: >-
+        onChange?: (ev?: React.FormEvent<HTMLElement | HTMLInputElement>,
+        option?: IChoiceGroupOption) => void;
       return:
-        type:
-          - '(ev?: React.FormEvent<HTMLElement | HTMLInputElement>, option?: IChoiceGroupOption) => void'
-  - uid: 'office-ui-fabric-react!IChoiceGroupProps#onChanged:member'
-    summary: Deprecated and will be removed by 07/17/2017. Use `onChange` instead.
-    deprecated:
-      content: Use `onChange` instead.
-    name: onChanged
+        type: >-
+          (ev?: React.FormEvent&lt;HTMLElement | HTMLInputElement&gt;, option?:
+          IChoiceGroupOption) =&gt; void
+  - name: onChanged
+    uid: 'office-ui-fabric-react!IChoiceGroupProps#onChanged:member'
+    package: office-ui-fabric-react!
     fullName: onChanged
-    langs:
-      - typeScript
-    type: property
+    summary: Deprecated and will be removed by 07/17/2017. Use `onChange` instead.
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Use `onChange` instead.
     syntax:
-      content: 'onChanged?: (option: IChoiceGroupOption, evt?: React.FormEvent<HTMLElement | HTMLInputElement>) => void;'
+      content: >-
+        onChanged?: (option: IChoiceGroupOption, evt?:
+        React.FormEvent<HTMLElement | HTMLInputElement>) => void;
       return:
-        type:
-          - '(option: IChoiceGroupOption, evt?: React.FormEvent<HTMLElement | HTMLInputElement>) => void'
-  - uid: 'office-ui-fabric-react!IChoiceGroupProps#options:member'
-    summary: The options for the choice group.
-    name: options
+        type: >-
+          (option: IChoiceGroupOption, evt?: React.FormEvent&lt;HTMLElement |
+          HTMLInputElement&gt;) =&gt; void
+  - name: options
+    uid: 'office-ui-fabric-react!IChoiceGroupProps#options:member'
+    package: office-ui-fabric-react!
     fullName: options
-    langs:
-      - typeScript
-    type: property
+    summary: The options for the choice group.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'options?: IChoiceGroupOption[];'
       return:
-        type:
-          - 'IChoiceGroupOption[]'
-  - uid: 'office-ui-fabric-react!IChoiceGroupProps#selectedKey:member'
-    summary: >-
-      The key of the selected option. If you provide this, you must maintain selection state by observing onChange
-      events and passing a new value in when changed.
-    name: selectedKey
+        type: 'IChoiceGroupOption[]'
+  - name: selectedKey
+    uid: 'office-ui-fabric-react!IChoiceGroupProps#selectedKey:member'
+    package: office-ui-fabric-react!
     fullName: selectedKey
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The key of the selected option. If you provide this, you must maintain
+      selection state by observing onChange events and passing a new value in
+      when changed.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'selectedKey?: string | number;'
       return:
-        type:
-          - string | number
-  - uid: 'office-ui-fabric-react!IChoiceGroupProps#styles:member'
-    summary: Call to provide customized styling that will layer on top of the variant rules.
-    name: styles
+        type: string | number
+  - name: styles
+    uid: 'office-ui-fabric-react!IChoiceGroupProps#styles:member'
+    package: office-ui-fabric-react!
     fullName: styles
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Call to provide customized styling that will layer on top of the variant
+      rules.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'styles?: IStyleFunctionOrObject<IChoiceGroupStyleProps, IChoiceGroupStyles>;'
+      content: >-
+        styles?: IStyleFunctionOrObject<IChoiceGroupStyleProps,
+        IChoiceGroupStyles>;
       return:
-        type:
-          - 'IStyleFunctionOrObject<IChoiceGroupStyleProps, IChoiceGroupStyles>'
-  - uid: 'office-ui-fabric-react!IChoiceGroupProps#theme:member'
-    summary: Theme (provided through customization).
-    name: theme
+        type: >-
+          IStyleFunctionOrObject&lt;IChoiceGroupStyleProps,
+          IChoiceGroupStyles&gt;
+  - name: theme
+    uid: 'office-ui-fabric-react!IChoiceGroupProps#theme:member'
+    package: office-ui-fabric-react!
     fullName: theme
-    langs:
-      - typeScript
-    type: property
+    summary: Theme (provided through customization).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'theme?: ITheme;'
       return:
-        type:
-          - '@fluentui/theme!ITheme:interface'
+        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
+extends: 'React.InputHTMLAttributes&lt;HTMLElement | HTMLInputElement&gt; '

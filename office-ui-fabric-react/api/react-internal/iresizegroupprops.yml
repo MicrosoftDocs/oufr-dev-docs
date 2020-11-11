@@ -1,162 +1,166 @@
-### YamlMime:UniversalReference
-items:
-  - uid: '@fluentui/react-internal!IResizeGroupProps:interface'
-    name: IResizeGroupProps
-    fullName: IResizeGroupProps
-    langs:
-      - typeScript
-    type: interface
-    extends:
-      - React.HTMLAttributes<HTMLDivElement>
-      - 'React.RefAttributes<HTMLDivElement> '
+### YamlMime:TSType
+name: IResizeGroupProps
+uid: '@fluentui/react-internal!IResizeGroupProps:interface'
+package: '@fluentui/react-internal!'
+fullName: IResizeGroupProps
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: className
+    uid: '@fluentui/react-internal!IResizeGroupProps#className:member'
     package: '@fluentui/react-internal!'
-    children:
-      - '@fluentui/react-internal!IResizeGroupProps#className:member'
-      - '@fluentui/react-internal!IResizeGroupProps#componentRef:member'
-      - '@fluentui/react-internal!IResizeGroupProps#data:member'
-      - '@fluentui/react-internal!IResizeGroupProps#dataDidRender:member'
-      - '@fluentui/react-internal!IResizeGroupProps#direction:member'
-      - '@fluentui/react-internal!IResizeGroupProps#onGrowData:member'
-      - '@fluentui/react-internal!IResizeGroupProps#onReduceData:member'
-      - '@fluentui/react-internal!IResizeGroupProps#onRenderData:member'
-      - '@fluentui/react-internal!IResizeGroupProps#styles:member'
-      - '@fluentui/react-internal!IResizeGroupProps#theme:member'
-  - uid: '@fluentui/react-internal!IResizeGroupProps#className:member'
-    summary: Additional css class to apply to the Component
-    name: className
     fullName: className
-    langs:
-      - typeScript
-    type: property
+    summary: Additional css class to apply to the Component
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'className?: string;'
       return:
-        type:
-          - string
-  - uid: '@fluentui/react-internal!IResizeGroupProps#componentRef:member'
-    summary: >-
-      Optional callback to access the IResizeGroup interface. Use this instead of ref for accessing the public methods
-      and properties of the component.
-    name: componentRef
+        type: string
+  - name: componentRef
+    uid: '@fluentui/react-internal!IResizeGroupProps#componentRef:member'
+    package: '@fluentui/react-internal!'
     fullName: componentRef
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Optional callback to access the IResizeGroup interface. Use this instead
+      of ref for accessing the public methods and properties of the component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'componentRef?: IRefObject<IResizeGroup>;'
       return:
-        type:
-          - IRefObject<IResizeGroup>
-  - uid: '@fluentui/react-internal!IResizeGroupProps#data:member'
-    summary: >-
-      Initial data to be passed to the `onRenderData` function. When there is no `onGrowData` provided, this data should
-      represent what should be passed to the render function when the parent container of the ResizeGroup is at its
-      maximum supported width. A `cacheKey` property may optionally be included as part of the data. Two data objects
-      with the same `cacheKey` will be assumed to take up the same width and will prevent measurements. The type of
-      `cacheKey` is a string.
-    name: data
+        type: IRefObject&lt;IResizeGroup&gt;
+  - name: data
+    uid: '@fluentui/react-internal!IResizeGroupProps#data:member'
+    package: '@fluentui/react-internal!'
     fullName: data
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Initial data to be passed to the `onRenderData` function. When there is no
+      `onGrowData` provided, this data should represent what should be passed to
+      the render function when the parent container of the ResizeGroup is at its
+      maximum supported width. A `cacheKey` property may optionally be included
+      as part of the data. Two data objects with the same `cacheKey` will be
+      assumed to take up the same width and will prevent measurements. The type
+      of `cacheKey` is a string.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'data: any;'
       return:
-        type:
-          - any
-  - uid: '@fluentui/react-internal!IResizeGroupProps#dataDidRender:member'
-    summary: >-
-      Function to be called every time data is rendered. It provides the data that was actually rendered. A use case
-      would be adding telemetry when a particular control is shown in an overflow well or dropped as a result of
-      onReduceData or to count the number of renders that an implementation of onReduceData triggers.
-    name: dataDidRender
+        type: any
+  - name: dataDidRender
+    uid: '@fluentui/react-internal!IResizeGroupProps#dataDidRender:member'
+    package: '@fluentui/react-internal!'
     fullName: dataDidRender
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Function to be called every time data is rendered. It provides the data
+      that was actually rendered. A use case would be adding telemetry when a
+      particular control is shown in an overflow well or dropped as a result of
+      onReduceData or to count the number of renders that an implementation of
+      onReduceData triggers.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'dataDidRender?: (renderedData: any) => void;'
       return:
-        type:
-          - '(renderedData: any) => void'
-  - uid: '@fluentui/react-internal!IResizeGroupProps#direction:member'
-    summary: 'Direction of this resize group, vertical or horizontal'
-    name: direction
+        type: '(renderedData: any) =&gt; void'
+  - name: direction
+    uid: '@fluentui/react-internal!IResizeGroupProps#direction:member'
+    package: '@fluentui/react-internal!'
     fullName: direction
-    langs:
-      - typeScript
-    type: property
+    summary: 'Direction of this resize group, vertical or horizontal'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'direction?: ResizeGroupDirection;'
       return:
-        type:
-          - ResizeGroupDirection
-  - uid: '@fluentui/react-internal!IResizeGroupProps#onGrowData:member'
-    summary: >-
-      Function to be performed on the data in order to increase its width. It is called in scenarios where the container
-      has more room than the previous render and we may be able to fit more content. If there are no more scaling
-      operations to perform on teh data, it should return undefined to prevent an infinite render loop.
-    name: onGrowData
+        type: ResizeGroupDirection
+  - name: onGrowData
+    uid: '@fluentui/react-internal!IResizeGroupProps#onGrowData:member'
+    package: '@fluentui/react-internal!'
     fullName: onGrowData
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Function to be performed on the data in order to increase its width. It is
+      called in scenarios where the container has more room than the previous
+      render and we may be able to fit more content. If there are no more
+      scaling operations to perform on teh data, it should return undefined to
+      prevent an infinite render loop.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'onGrowData?: (prevData: any) => any;'
       return:
-        type:
-          - '(prevData: any) => any'
-  - uid: '@fluentui/react-internal!IResizeGroupProps#onReduceData:member'
-    summary: >-
-      Function to be performed on the data in order to reduce its width and make it fit into the given space. If there
-      are no more scaling steps to apply, it should return undefined to prevent an infinite render loop.
-    name: onReduceData
+        type: '(prevData: any) =&gt; any'
+  - name: onReduceData
+    uid: '@fluentui/react-internal!IResizeGroupProps#onReduceData:member'
+    package: '@fluentui/react-internal!'
     fullName: onReduceData
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Function to be performed on the data in order to reduce its width and make
+      it fit into the given space. If there are no more scaling steps to apply,
+      it should return undefined to prevent an infinite render loop.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'onReduceData: (prevData: any) => any;'
       return:
-        type:
-          - '(prevData: any) => any'
-  - uid: '@fluentui/react-internal!IResizeGroupProps#onRenderData:member'
-    summary: >-
-      Function to render the data. Called when rendering the contents to the screen and when rendering in a hidden div
-      to measure the size of the contents.
-    name: onRenderData
+        type: '(prevData: any) =&gt; any'
+  - name: onRenderData
+    uid: '@fluentui/react-internal!IResizeGroupProps#onRenderData:member'
+    package: '@fluentui/react-internal!'
     fullName: onRenderData
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Function to render the data. Called when rendering the contents to the
+      screen and when rendering in a hidden div to measure the size of the
+      contents.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'onRenderData: (data: any) => JSX.Element;'
       return:
-        type:
-          - '(data: any) => JSX.Element'
-  - uid: '@fluentui/react-internal!IResizeGroupProps#styles:member'
-    summary: Call to provide customized styling that will layer on top of the variant rules
-    deprecated:
-      content: Removed to reduce bundle size. Please use `className` and add css rules to `className` instead.
-    name: styles
+        type: '(data: any) =&gt; JSX.Element'
+  - name: styles
+    uid: '@fluentui/react-internal!IResizeGroupProps#styles:member'
+    package: '@fluentui/react-internal!'
     fullName: styles
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Call to provide customized styling that will layer on top of the variant
+      rules
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      Removed to reduce bundle size. Please use `className` and add css rules to
+      `className` instead.
     syntax:
-      content: 'styles?: IStyleFunctionOrObject<IResizeGroupStyleProps, IResizeGroupStyles>;'
+      content: >-
+        styles?: IStyleFunctionOrObject<IResizeGroupStyleProps,
+        IResizeGroupStyles>;
       return:
-        type:
-          - 'IStyleFunctionOrObject<IResizeGroupStyleProps, IResizeGroupStyles>'
-  - uid: '@fluentui/react-internal!IResizeGroupProps#theme:member'
-    summary: Theme provided by HOC.
-    name: theme
+        type: >-
+          IStyleFunctionOrObject&lt;IResizeGroupStyleProps,
+          IResizeGroupStyles&gt;
+  - name: theme
+    uid: '@fluentui/react-internal!IResizeGroupProps#theme:member'
+    package: '@fluentui/react-internal!'
     fullName: theme
-    langs:
-      - typeScript
-    type: property
+    summary: Theme provided by HOC.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'theme?: ITheme;'
       return:
-        type:
-          - '@fluentui/theme!ITheme:interface'
+        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
+extends: React.HTMLAttributes&lt;HTMLDivElement&gt;

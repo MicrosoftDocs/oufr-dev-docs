@@ -1,291 +1,283 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'office-ui-fabric-react!KeytipManager:class'
-    summary: 'This class is responsible for handling registering, updating, and unregistering of keytips'
-    name: KeytipManager
-    fullName: KeytipManager
-    langs:
-      - typeScript
-    type: class
+### YamlMime:TSType
+name: KeytipManager
+uid: 'office-ui-fabric-react!KeytipManager:class'
+package: office-ui-fabric-react!
+fullName: KeytipManager
+summary: >-
+  This class is responsible for handling registering, updating, and
+  unregistering of keytips
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: delayUpdatingKeytipChange
+    uid: 'office-ui-fabric-react!KeytipManager#delayUpdatingKeytipChange:member'
     package: office-ui-fabric-react!
-    children:
-      - 'office-ui-fabric-react!KeytipManager#addParentOverflow:member(1)'
-      - 'office-ui-fabric-react!KeytipManager#delayUpdatingKeytipChange:member'
-      - 'office-ui-fabric-react!KeytipManager#enterKeytipMode:member(1)'
-      - 'office-ui-fabric-react!KeytipManager#exitKeytipMode:member(1)'
-      - 'office-ui-fabric-react!KeytipManager.getInstance:member(1)'
-      - 'office-ui-fabric-react!KeytipManager#getKeytips:member(1)'
-      - 'office-ui-fabric-react!KeytipManager#init:member(1)'
-      - 'office-ui-fabric-react!KeytipManager#inKeytipMode:member'
-      - 'office-ui-fabric-react!KeytipManager#keytips:member'
-      - 'office-ui-fabric-react!KeytipManager#menuExecute:member(1)'
-      - 'office-ui-fabric-react!KeytipManager#persistedKeytips:member'
-      - 'office-ui-fabric-react!KeytipManager#register:member(1)'
-      - 'office-ui-fabric-react!KeytipManager#sequenceMapping:member'
-      - 'office-ui-fabric-react!KeytipManager#shouldEnterKeytipMode:member'
-      - 'office-ui-fabric-react!KeytipManager#unregister:member(1)'
-      - 'office-ui-fabric-react!KeytipManager#update:member(1)'
-  - uid: 'office-ui-fabric-react!KeytipManager#addParentOverflow:member(1)'
-    summary: Adds the overflowSetSequence to the keytipProps if its parent keytip also has it
-    name: addParentOverflow(keytipProps)
-    fullName: addParentOverflow(keytipProps)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'addParentOverflow(keytipProps: IKeytipProps): IKeytipProps;'
-      return:
-        type:
-          - IKeytipProps
-        description: 'Modified keytip props, if needed to be modified'
-      parameters:
-        - id: keytipProps
-          description: Keytip props to add overflowSetSequence to if necessary
-          type:
-            - IKeytipProps
-  - uid: 'office-ui-fabric-react!KeytipManager#delayUpdatingKeytipChange:member'
-    name: delayUpdatingKeytipChange
     fullName: delayUpdatingKeytipChange
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'delayUpdatingKeytipChange: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'office-ui-fabric-react!KeytipManager#enterKeytipMode:member(1)'
-    summary: Manual call to enter keytip mode
-    name: enterKeytipMode()
-    fullName: enterKeytipMode()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'enterKeytipMode(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'office-ui-fabric-react!KeytipManager#exitKeytipMode:member(1)'
-    summary: Manual call to exit keytip mode
-    name: exitKeytipMode()
-    fullName: exitKeytipMode()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'exitKeytipMode(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'office-ui-fabric-react!KeytipManager.getInstance:member(1)'
-    summary: Static function to get singleton KeytipManager instance
-    name: getInstance()
-    fullName: getInstance()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'static getInstance(): KeytipManager;'
-      return:
-        type:
-          - KeytipManager
-        description: Singleton KeytipManager instance
-  - uid: 'office-ui-fabric-react!KeytipManager#getKeytips:member(1)'
-    summary: Gets all IKeytipProps from this.keytips
-    name: getKeytips()
-    fullName: getKeytips()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getKeytips(): IKeytipProps[];'
-      return:
-        type:
-          - 'IKeytipProps[]'
-        description: All keytips stored in the manager
-  - uid: 'office-ui-fabric-react!KeytipManager#init:member(1)'
-    summary: Initialization code to set set parameters to define how the KeytipManager handles keytip data.
-    name: init(delayUpdatingKeytipChange)
-    fullName: init(delayUpdatingKeytipChange)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'init(delayUpdatingKeytipChange: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: delayUpdatingKeytipChange
-          description: T/F if we should delay notifiying keytip subscribers of keytip changes
-          type:
-            - boolean
-  - uid: 'office-ui-fabric-react!KeytipManager#inKeytipMode:member'
-    name: inKeytipMode
+        type: boolean
+  - name: inKeytipMode
+    uid: 'office-ui-fabric-react!KeytipManager#inKeytipMode:member'
+    package: office-ui-fabric-react!
     fullName: inKeytipMode
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'inKeytipMode: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'office-ui-fabric-react!KeytipManager#keytips:member'
-    name: keytips
+        type: boolean
+  - name: keytips
+    uid: 'office-ui-fabric-react!KeytipManager#keytips:member'
+    package: office-ui-fabric-react!
     fullName: keytips
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: |-
         keytips: {
                 [key: string]: IUniqueKeytip;
             };
       return:
-        type:
-          - |-
-            {
-                    [key: string]: IUniqueKeytip;
-                }
-  - uid: 'office-ui-fabric-react!KeytipManager#menuExecute:member(1)'
-    summary: Public function to bind for overflow items that have a submenu
-    name: 'menuExecute(overflowButtonSequences, keytipSequences)'
-    fullName: 'menuExecute(overflowButtonSequences, keytipSequences)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'menuExecute(overflowButtonSequences: string[], keytipSequences: string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: overflowButtonSequences
-          description: ''
-          type:
-            - 'string[]'
-        - id: keytipSequences
-          description: ''
-          type:
-            - 'string[]'
-  - uid: 'office-ui-fabric-react!KeytipManager#persistedKeytips:member'
-    name: persistedKeytips
+        type: |-
+          {
+                  [key: string]: IUniqueKeytip;
+              }
+  - name: persistedKeytips
+    uid: 'office-ui-fabric-react!KeytipManager#persistedKeytips:member'
+    package: office-ui-fabric-react!
     fullName: persistedKeytips
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: |-
         persistedKeytips: {
                 [key: string]: IUniqueKeytip;
             };
       return:
-        type:
-          - |-
-            {
-                    [key: string]: IUniqueKeytip;
-                }
-  - uid: 'office-ui-fabric-react!KeytipManager#register:member(1)'
-    summary: Registers a keytip
-    name: 'register(keytipProps, persisted)'
-    fullName: 'register(keytipProps, persisted)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'register(keytipProps: IKeytipProps, persisted?: boolean): string;'
-      return:
-        type:
-          - string
-        description: Unique ID for this keytip
-      parameters:
-        - id: keytipProps
-          description: Keytip to register
-          type:
-            - IKeytipProps
-        - id: persisted
-          description: 'T/F if this keytip should be persisted, default is false'
-          type:
-            - boolean
-  - uid: 'office-ui-fabric-react!KeytipManager#sequenceMapping:member'
-    name: sequenceMapping
+        type: |-
+          {
+                  [key: string]: IUniqueKeytip;
+              }
+  - name: sequenceMapping
+    uid: 'office-ui-fabric-react!KeytipManager#sequenceMapping:member'
+    package: office-ui-fabric-react!
     fullName: sequenceMapping
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: |-
         sequenceMapping: {
                 [key: string]: IKeytipProps;
             };
       return:
-        type:
-          - |-
-            {
-                    [key: string]: IKeytipProps;
-                }
-  - uid: 'office-ui-fabric-react!KeytipManager#shouldEnterKeytipMode:member'
-    name: shouldEnterKeytipMode
+        type: |-
+          {
+                  [key: string]: IKeytipProps;
+              }
+  - name: shouldEnterKeytipMode
+    uid: 'office-ui-fabric-react!KeytipManager#shouldEnterKeytipMode:member'
+    package: office-ui-fabric-react!
     fullName: shouldEnterKeytipMode
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'shouldEnterKeytipMode: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'office-ui-fabric-react!KeytipManager#unregister:member(1)'
-    summary: Unregisters a keytip
-    name: 'unregister(keytipToRemove, uniqueID, persisted)'
-    fullName: 'unregister(keytipToRemove, uniqueID, persisted)'
-    langs:
-      - typeScript
-    type: method
+        type: boolean
+methods:
+  - name: addParentOverflow(keytipProps)
+    uid: 'office-ui-fabric-react!KeytipManager#addParentOverflow:member(1)'
+    package: office-ui-fabric-react!
+    fullName: addParentOverflow(keytipProps)
+    summary: >-
+      Adds the overflowSetSequence to the keytipProps if its parent keytip also
+      has it
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'unregister(keytipToRemove: IKeytipProps, uniqueID: string, persisted?: boolean): void;'
+      content: 'addParentOverflow(keytipProps: IKeytipProps): IKeytipProps;'
+      parameters:
+        - id: keytipProps
+          description: Keytip props to add overflowSetSequence to if necessary
+          type: IKeytipProps
       return:
-        type:
-          - void
+        type: IKeytipProps
+        description: 'Modified keytip props, if needed to be modified'
+  - name: enterKeytipMode()
+    uid: 'office-ui-fabric-react!KeytipManager#enterKeytipMode:member(1)'
+    package: office-ui-fabric-react!
+    fullName: enterKeytipMode()
+    summary: Manual call to enter keytip mode
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'enterKeytipMode(): void;'
+      return:
+        type: void
         description: ''
+  - name: exitKeytipMode()
+    uid: 'office-ui-fabric-react!KeytipManager#exitKeytipMode:member(1)'
+    package: office-ui-fabric-react!
+    fullName: exitKeytipMode()
+    summary: Manual call to exit keytip mode
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'exitKeytipMode(): void;'
+      return:
+        type: void
+        description: ''
+  - name: getInstance()
+    uid: 'office-ui-fabric-react!KeytipManager.getInstance:member(1)'
+    package: office-ui-fabric-react!
+    fullName: getInstance()
+    summary: Static function to get singleton KeytipManager instance
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'static getInstance(): KeytipManager;'
+      return:
+        type: KeytipManager
+        description: Singleton KeytipManager instance
+  - name: getKeytips()
+    uid: 'office-ui-fabric-react!KeytipManager#getKeytips:member(1)'
+    package: office-ui-fabric-react!
+    fullName: getKeytips()
+    summary: Gets all IKeytipProps from this.keytips
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getKeytips(): IKeytipProps[];'
+      return:
+        type: 'IKeytipProps[]'
+        description: All keytips stored in the manager
+  - name: init(delayUpdatingKeytipChange)
+    uid: 'office-ui-fabric-react!KeytipManager#init:member(1)'
+    package: office-ui-fabric-react!
+    fullName: init(delayUpdatingKeytipChange)
+    summary: >-
+      Initialization code to set set parameters to define how the KeytipManager
+      handles keytip data.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'init(delayUpdatingKeytipChange: boolean): void;'
+      parameters:
+        - id: delayUpdatingKeytipChange
+          description: >-
+            T/F if we should delay notifiying keytip subscribers of keytip
+            changes
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: 'menuExecute(overflowButtonSequences, keytipSequences)'
+    uid: 'office-ui-fabric-react!KeytipManager#menuExecute:member(1)'
+    package: office-ui-fabric-react!
+    fullName: 'menuExecute(overflowButtonSequences, keytipSequences)'
+    summary: Public function to bind for overflow items that have a submenu
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        menuExecute(overflowButtonSequences: string[], keytipSequences:
+        string[]): void;
+      parameters:
+        - id: overflowButtonSequences
+          description: ''
+          type: 'string[]'
+        - id: keytipSequences
+          description: ''
+          type: 'string[]'
+      return:
+        type: void
+        description: ''
+  - name: 'register(keytipProps, persisted)'
+    uid: 'office-ui-fabric-react!KeytipManager#register:member(1)'
+    package: office-ui-fabric-react!
+    fullName: 'register(keytipProps, persisted)'
+    summary: Registers a keytip
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'register(keytipProps: IKeytipProps, persisted?: boolean): string;'
+      parameters:
+        - id: keytipProps
+          description: Keytip to register
+          type: IKeytipProps
+        - id: persisted
+          description: 'T/F if this keytip should be persisted, default is false'
+          type: boolean
+      return:
+        type: string
+        description: Unique ID for this keytip
+  - name: 'unregister(keytipToRemove, uniqueID, persisted)'
+    uid: 'office-ui-fabric-react!KeytipManager#unregister:member(1)'
+    package: office-ui-fabric-react!
+    fullName: 'unregister(keytipToRemove, uniqueID, persisted)'
+    summary: Unregisters a keytip
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        unregister(keytipToRemove: IKeytipProps, uniqueID: string, persisted?:
+        boolean): void;
       parameters:
         - id: keytipToRemove
           description: IKeytipProps of the keytip to remove
-          type:
-            - IKeytipProps
+          type: IKeytipProps
         - id: uniqueID
           description: Unique ID of this keytip
-          type:
-            - string
+          type: string
         - id: persisted
           description: 'T/F if this keytip should be persisted, default is false'
-          type:
-            - boolean
-  - uid: 'office-ui-fabric-react!KeytipManager#update:member(1)'
-    summary: Update a keytip
-    name: 'update(keytipProps, uniqueID)'
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: 'update(keytipProps, uniqueID)'
+    uid: 'office-ui-fabric-react!KeytipManager#update:member(1)'
+    package: office-ui-fabric-react!
     fullName: 'update(keytipProps, uniqueID)'
-    langs:
-      - typeScript
-    type: method
+    summary: Update a keytip
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'update(keytipProps: IKeytipProps, uniqueID: string): void;'
-      return:
-        type:
-          - void
-        description: ''
       parameters:
         - id: keytipProps
           description: Keytip to update
-          type:
-            - IKeytipProps
+          type: IKeytipProps
         - id: uniqueID
           description: Unique ID of this keytip
-          type:
-            - string
+          type: string
+      return:
+        type: void
+        description: ''

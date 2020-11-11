@@ -1,94 +1,53 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'office-ui-fabric-react!DetailsListBase:class'
-    name: DetailsListBase
-    fullName: DetailsListBase
-    langs:
-      - typeScript
-    type: class
-    extends:
-      - 'React.Component<IDetailsListProps, IDetailsListState> '
-    implements:
-      - 'IDetailsList '
+### YamlMime:TSType
+name: DetailsListBase
+uid: 'office-ui-fabric-react!DetailsListBase:class'
+package: office-ui-fabric-react!
+fullName: DetailsListBase
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: (constructor)(props)
+    uid: 'office-ui-fabric-react!DetailsListBase:constructor(1)'
     package: office-ui-fabric-react!
-    children:
-      - 'office-ui-fabric-react!DetailsListBase#_onRenderRow:member'
-      - 'office-ui-fabric-react!DetailsListBase:constructor(1)'
-      - 'office-ui-fabric-react!DetailsListBase#componentDidUpdate:member(1)'
-      - 'office-ui-fabric-react!DetailsListBase#componentWillUnmount:member(1)'
-      - 'office-ui-fabric-react!DetailsListBase.defaultProps:member'
-      - 'office-ui-fabric-react!DetailsListBase#focusIndex:member(1)'
-      - 'office-ui-fabric-react!DetailsListBase#forceUpdate:member(1)'
-      - 'office-ui-fabric-react!DetailsListBase.getDerivedStateFromProps:member(1)'
-      - 'office-ui-fabric-react!DetailsListBase#getStartItemIndexInView:member(1)'
-      - 'office-ui-fabric-react!DetailsListBase#render:member(1)'
-      - 'office-ui-fabric-react!DetailsListBase#scrollToIndex:member(1)'
-  - uid: 'office-ui-fabric-react!DetailsListBase#_onRenderRow:member'
-    name: _onRenderRow
-    fullName: _onRenderRow
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: >-
-        protected _onRenderRow: (props: IDetailsRowProps, defaultRender?: IRenderFunction<IDetailsRowProps> | undefined)
-        => JSX.Element;
-      return:
-        type:
-          - '(props: IDetailsRowProps, defaultRender?: IRenderFunction<IDetailsRowProps> | undefined) => JSX.Element'
-  - uid: 'office-ui-fabric-react!DetailsListBase:constructor(1)'
-    summary: Constructs a new instance of the `DetailsListBase` class
-    name: (constructor)(props)
     fullName: (constructor)(props)
-    langs:
-      - typeScript
-    type: constructor
+    summary: Constructs a new instance of the `DetailsListBase` class
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'constructor(props: IDetailsListProps);'
       parameters:
         - id: props
           description: ''
-          type:
-            - IDetailsListProps
-  - uid: 'office-ui-fabric-react!DetailsListBase#componentDidUpdate:member(1)'
-    name: 'componentDidUpdate(prevProps, prevState)'
-    fullName: 'componentDidUpdate(prevProps, prevState)'
-    langs:
-      - typeScript
-    type: method
+          type: IDetailsListProps
+properties:
+  - name: _onRenderRow
+    uid: 'office-ui-fabric-react!DetailsListBase#_onRenderRow:member'
+    package: office-ui-fabric-react!
+    fullName: _onRenderRow
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'componentDidUpdate(prevProps: IDetailsListProps, prevState: IDetailsListState): void;'
+      content: >-
+        protected _onRenderRow: (props: IDetailsRowProps, defaultRender?:
+        IRenderFunction<IDetailsRowProps> | undefined) => JSX.Element;
       return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: prevProps
-          description: ''
-          type:
-            - IDetailsListProps
-        - id: prevState
-          description: ''
-          type:
-            - IDetailsListState
-  - uid: 'office-ui-fabric-react!DetailsListBase#componentWillUnmount:member(1)'
-    name: componentWillUnmount()
-    fullName: componentWillUnmount()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'componentWillUnmount(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'office-ui-fabric-react!DetailsListBase.defaultProps:member'
-    name: defaultProps
+        type: >-
+          (props: IDetailsRowProps, defaultRender?:
+          IRenderFunction&lt;IDetailsRowProps&gt; | undefined) =&gt; JSX.Element
+  - name: defaultProps
+    uid: 'office-ui-fabric-react!DetailsListBase.defaultProps:member'
+    package: office-ui-fabric-react!
     fullName: defaultProps
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: |-
         static defaultProps: {
@@ -101,129 +60,164 @@ items:
                 useFastIcons: boolean;
             };
       return:
-        type:
-          - |-
-            {
-                    layoutMode: DetailsListLayoutMode;
-                    selectionMode: SelectionMode;
-                    constrainMode: ConstrainMode;
-                    checkboxVisibility: CheckboxVisibility;
-                    isHeaderVisible: boolean;
-                    compact: boolean;
-                    useFastIcons: boolean;
-                }
-  - uid: 'office-ui-fabric-react!DetailsListBase#focusIndex:member(1)'
-    name: 'focusIndex(index, forceIntoFirstElement, measureItem, scrollToMode)'
-    fullName: 'focusIndex(index, forceIntoFirstElement, measureItem, scrollToMode)'
-    langs:
-      - typeScript
-    type: method
+        type: |-
+          {
+                  layoutMode: DetailsListLayoutMode;
+                  selectionMode: SelectionMode;
+                  constrainMode: ConstrainMode;
+                  checkboxVisibility: CheckboxVisibility;
+                  isHeaderVisible: boolean;
+                  compact: boolean;
+                  useFastIcons: boolean;
+              }
+methods:
+  - name: 'componentDidUpdate(prevProps, prevState)'
+    uid: 'office-ui-fabric-react!DetailsListBase#componentDidUpdate:member(1)'
+    package: office-ui-fabric-react!
+    fullName: 'componentDidUpdate(prevProps, prevState)'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        focusIndex(index: number, forceIntoFirstElement?: boolean, measureItem?: (itemIndex: number) => number,
-        scrollToMode?: ScrollToMode): void;
+        componentDidUpdate(prevProps: IDetailsListProps, prevState:
+        IDetailsListState): void;
+      parameters:
+        - id: prevProps
+          description: ''
+          type: IDetailsListProps
+        - id: prevState
+          description: ''
+          type: IDetailsListState
       return:
-        type:
-          - void
+        type: void
         description: ''
+  - name: componentWillUnmount()
+    uid: 'office-ui-fabric-react!DetailsListBase#componentWillUnmount:member(1)'
+    package: office-ui-fabric-react!
+    fullName: componentWillUnmount()
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'componentWillUnmount(): void;'
+      return:
+        type: void
+        description: ''
+  - name: 'focusIndex(index, forceIntoFirstElement, measureItem, scrollToMode)'
+    uid: 'office-ui-fabric-react!DetailsListBase#focusIndex:member(1)'
+    package: office-ui-fabric-react!
+    fullName: 'focusIndex(index, forceIntoFirstElement, measureItem, scrollToMode)'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        focusIndex(index: number, forceIntoFirstElement?: boolean, measureItem?:
+        (itemIndex: number) => number, scrollToMode?: ScrollToMode): void;
       parameters:
         - id: index
           description: ''
-          type:
-            - number
+          type: number
         - id: forceIntoFirstElement
           description: ''
-          type:
-            - boolean
+          type: boolean
         - id: measureItem
           description: ''
-          type:
-            - '(itemIndex: number) => number'
+          type: '(itemIndex: number) =&gt; number'
         - id: scrollToMode
           description: ''
-          type:
-            - ScrollToMode
-  - uid: 'office-ui-fabric-react!DetailsListBase#forceUpdate:member(1)'
-    name: forceUpdate()
+          type: ScrollToMode
+      return:
+        type: void
+        description: ''
+  - name: forceUpdate()
+    uid: 'office-ui-fabric-react!DetailsListBase#forceUpdate:member(1)'
+    package: office-ui-fabric-react!
     fullName: forceUpdate()
-    langs:
-      - typeScript
-    type: method
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'forceUpdate(): void;'
       return:
-        type:
-          - void
+        type: void
         description: ''
-  - uid: 'office-ui-fabric-react!DetailsListBase.getDerivedStateFromProps:member(1)'
-    name: 'getDerivedStateFromProps(nextProps, previousState)'
+  - name: 'getDerivedStateFromProps(nextProps, previousState)'
+    uid: 'office-ui-fabric-react!DetailsListBase.getDerivedStateFromProps:member(1)'
+    package: office-ui-fabric-react!
     fullName: 'getDerivedStateFromProps(nextProps, previousState)'
-    langs:
-      - typeScript
-    type: method
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        static getDerivedStateFromProps(nextProps: IDetailsListProps, previousState: IDetailsListState):
-        IDetailsListState;
-      return:
-        type:
-          - IDetailsListState
-        description: ''
+        static getDerivedStateFromProps(nextProps: IDetailsListProps,
+        previousState: IDetailsListState): IDetailsListState;
       parameters:
         - id: nextProps
           description: ''
-          type:
-            - IDetailsListProps
+          type: IDetailsListProps
         - id: previousState
           description: ''
-          type:
-            - IDetailsListState
-  - uid: 'office-ui-fabric-react!DetailsListBase#getStartItemIndexInView:member(1)'
-    name: getStartItemIndexInView()
+          type: IDetailsListState
+      return:
+        type: IDetailsListState
+        description: ''
+  - name: getStartItemIndexInView()
+    uid: 'office-ui-fabric-react!DetailsListBase#getStartItemIndexInView:member(1)'
+    package: office-ui-fabric-react!
     fullName: getStartItemIndexInView()
-    langs:
-      - typeScript
-    type: method
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'getStartItemIndexInView(): number;'
       return:
-        type:
-          - number
+        type: number
         description: ''
-  - uid: 'office-ui-fabric-react!DetailsListBase#render:member(1)'
-    name: render()
+  - name: render()
+    uid: 'office-ui-fabric-react!DetailsListBase#render:member(1)'
+    package: office-ui-fabric-react!
     fullName: render()
-    langs:
-      - typeScript
-    type: method
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'render(): JSX.Element;'
       return:
-        type:
-          - JSX.Element
+        type: JSX.Element
         description: ''
-  - uid: 'office-ui-fabric-react!DetailsListBase#scrollToIndex:member(1)'
-    name: 'scrollToIndex(index, measureItem, scrollToMode)'
+  - name: 'scrollToIndex(index, measureItem, scrollToMode)'
+    uid: 'office-ui-fabric-react!DetailsListBase#scrollToIndex:member(1)'
+    package: office-ui-fabric-react!
     fullName: 'scrollToIndex(index, measureItem, scrollToMode)'
-    langs:
-      - typeScript
-    type: method
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'scrollToIndex(index: number, measureItem?: (itemIndex: number) => number, scrollToMode?: ScrollToMode): void;'
-      return:
-        type:
-          - void
-        description: ''
+      content: >-
+        scrollToIndex(index: number, measureItem?: (itemIndex: number) =>
+        number, scrollToMode?: ScrollToMode): void;
       parameters:
         - id: index
           description: ''
-          type:
-            - number
+          type: number
         - id: measureItem
           description: ''
-          type:
-            - '(itemIndex: number) => number'
+          type: '(itemIndex: number) =&gt; number'
         - id: scrollToMode
           description: ''
-          type:
-            - ScrollToMode
+          type: ScrollToMode
+      return:
+        type: void
+        description: ''
+extends: 'React.Component&lt;IDetailsListProps, IDetailsListState&gt; '
