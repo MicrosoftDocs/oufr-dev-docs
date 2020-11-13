@@ -8,6 +8,8 @@ items:
     type: interface
     package: '@fluentui/react-internal!'
     children:
+      - '@fluentui/react-internal!IContextualMenuItem#ariaDescribedBy:member'
+      - '@fluentui/react-internal!IContextualMenuItem#ariaDescription:member'
       - '@fluentui/react-internal!IContextualMenuItem#ariaLabel:member'
       - '@fluentui/react-internal!IContextualMenuItem#canCheck:member'
       - '@fluentui/react-internal!IContextualMenuItem#checked:member'
@@ -44,6 +46,30 @@ items:
       - '@fluentui/react-internal!IContextualMenuItem#target:member'
       - '@fluentui/react-internal!IContextualMenuItem#text:member'
       - '@fluentui/react-internal!IContextualMenuItem#title:member'
+  - uid: '@fluentui/react-internal!IContextualMenuItem#ariaDescribedBy:member'
+    summary: ID of the element that contains additional detailed descriptive information for screen readers
+    name: ariaDescribedBy
+    fullName: ariaDescribedBy
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'ariaDescribedBy?: string;'
+      return:
+        type:
+          - string
+  - uid: '@fluentui/react-internal!IContextualMenuItem#ariaDescription:member'
+    summary: Detailed description of the menu item for the benefit of screen readers.
+    name: ariaDescription
+    fullName: ariaDescription
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'ariaDescription?: string;'
+      return:
+        type:
+          - string
   - uid: '@fluentui/react-internal!IContextualMenuItem#ariaLabel:member'
     summary: >-
       Custom accessible label for the element. If no override is specified, the `aria-label` attribute will contain the
