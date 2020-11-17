@@ -24,13 +24,13 @@ items:
       content: |-
         export declare function makeStyles<TStyleSet extends {
             [key: string]: IStyle;
-        }>(styleOrFunction: TStyleSet | ((theme: Theme) => TStyleSet)): (theme?: Theme, renderer?: StyleRenderer) => {
+        }>(styleOrFunction: TStyleSet | ((theme: Theme) => TStyleSet)): (options?: UseStylesOptions) => {
             [key in keyof TStyleSet]: string;
         };
       return:
         type:
           - |-
-            (theme?: Theme, renderer?: StyleRenderer) => {
+            (options?: UseStylesOptions) => {
                 [key in keyof TStyleSet]: string;
             }
         description: ''
