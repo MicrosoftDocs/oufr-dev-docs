@@ -32,7 +32,7 @@ steps:
     customCommand: install --save-dev office-ui-fabric-react @uifabric/fabric-website
 
 - task: Npm@1
-  displayName: 'npm install office2sdp tool'
+  displayName: 'npm install sdp converter tool'
   inputs:
     command: custom
     verbose: false
@@ -86,9 +86,7 @@ steps:
 - script: >
     node
     node_modules/.bin/sdp-cli
-    generate
-    --output-folder $(Build.ArtifactStagingDirectory)/doc-files/api
-    --input-folder $(System.DefaultWorkingDirectory)/input
+    -s $(Build.ArtifactStagingDirectory)/doc-files/api
   displayName: Run SDP converter
 
 - task: CopyFiles@2
