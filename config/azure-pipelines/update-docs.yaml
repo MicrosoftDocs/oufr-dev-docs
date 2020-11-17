@@ -9,7 +9,7 @@ schedules:
   displayName: 'Daily release (M-F at 8am)' # will be 7am when DST ends unless trigger is updated
   branches:
     include:
-    - master 
+    - sdp-pipeline
   always: true
 
 steps:
@@ -30,6 +30,13 @@ steps:
     command: custom
     verbose: false
     customCommand: install --save-dev office-ui-fabric-react @uifabric/fabric-website
+
+- task: Npm@1
+  displayName: 'npm install office2sdp tool'
+  inputs:
+    command: custom
+    verbose: false
+    customCommand: install --save-dev office2sdp 
 
 - task: Npm@1
   displayName: 'npm run build'
@@ -75,6 +82,14 @@ steps:
     lib/modifyToc.js
     $(Build.ArtifactStagingDirectory)/doc-files/api
   displayName: Inject additional line in TOC.yml
+
+- script: >
+    node
+    node_modules/.bin/sdp-cli
+    generate
+    --output-folder $(Build.ArtifactStagingDirectory)/doc-files/api
+    --input-folder $(System.DefaultWorkingDirectory)/input
+  displayName: Run SDP converter
 
 - task: CopyFiles@2
   displayName: 'Copy example and overview files'
