@@ -1,107 +1,111 @@
-### YamlMime:TSType
-name: IStyleSheetConfig
-uid: '@fluentui/merge-styles!IStyleSheetConfig:interface'
-package: '@fluentui/merge-styles!'
-fullName: IStyleSheetConfig
-summary: Stylesheet config.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: classNameCache
-    uid: '@fluentui/merge-styles!IStyleSheetConfig#classNameCache:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/merge-styles!IStyleSheetConfig:interface'
+    summary: Stylesheet config.
+    name: IStyleSheetConfig
+    fullName: IStyleSheetConfig
+    langs:
+      - typeScript
+    type: interface
     package: '@fluentui/merge-styles!'
+    children:
+      - '@fluentui/merge-styles!IStyleSheetConfig#classNameCache:member'
+      - '@fluentui/merge-styles!IStyleSheetConfig#cspSettings:member'
+      - '@fluentui/merge-styles!IStyleSheetConfig#defaultPrefix:member'
+      - '@fluentui/merge-styles!IStyleSheetConfig#injectionMode:member'
+      - '@fluentui/merge-styles!IStyleSheetConfig#namespace:member'
+      - '@fluentui/merge-styles!IStyleSheetConfig#onInsertRule:member'
+      - '@fluentui/merge-styles!IStyleSheetConfig#rtl:member'
+  - uid: '@fluentui/merge-styles!IStyleSheetConfig#classNameCache:member'
+    summary: Initial value for classnames cache. Key is serialized css rules associated with a classname.
+    name: classNameCache
     fullName: classNameCache
-    summary: >-
-      Initial value for classnames cache. Key is serialized css rules associated
-      with a classname.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: |-
         classNameCache?: {
                 [key: string]: string;
             };
       return:
-        type: |-
-          {
-                  [key: string]: string;
-              }
-  - name: cspSettings
-    uid: '@fluentui/merge-styles!IStyleSheetConfig#cspSettings:member'
-    package: '@fluentui/merge-styles!'
-    fullName: cspSettings
+        type:
+          - |-
+            {
+                    [key: string]: string;
+                }
+  - uid: '@fluentui/merge-styles!IStyleSheetConfig#cspSettings:member'
     summary: CSP settings
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: cspSettings
+    fullName: cspSettings
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'cspSettings?: ICSPSettings;'
       return:
-        type: '<xref uid="@fluentui/merge-styles!ICSPSettings:interface" />'
-  - name: defaultPrefix
-    uid: '@fluentui/merge-styles!IStyleSheetConfig#defaultPrefix:member'
-    package: '@fluentui/merge-styles!'
-    fullName: defaultPrefix
+        type:
+          - '@fluentui/merge-styles!ICSPSettings:interface'
+  - uid: '@fluentui/merge-styles!IStyleSheetConfig#defaultPrefix:member'
     summary: Default 'displayName' to use for a className.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: defaultPrefix
+    fullName: defaultPrefix
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'defaultPrefix?: string;'
       return:
-        type: string
-  - name: injectionMode
-    uid: '@fluentui/merge-styles!IStyleSheetConfig#injectionMode:member'
-    package: '@fluentui/merge-styles!'
-    fullName: injectionMode
+        type:
+          - string
+  - uid: '@fluentui/merge-styles!IStyleSheetConfig#injectionMode:member'
     summary: Injection mode for how rules are inserted.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: injectionMode
+    fullName: injectionMode
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'injectionMode?: InjectionMode;'
       return:
-        type: InjectionMode
-  - name: namespace
-    uid: '@fluentui/merge-styles!IStyleSheetConfig#namespace:member'
-    package: '@fluentui/merge-styles!'
-    fullName: namespace
+        type:
+          - InjectionMode
+  - uid: '@fluentui/merge-styles!IStyleSheetConfig#namespace:member'
     summary: Default 'namespace' to attach before the className.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: namespace
+    fullName: namespace
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'namespace?: string;'
       return:
-        type: string
-  - name: onInsertRule
-    uid: '@fluentui/merge-styles!IStyleSheetConfig#onInsertRule:member'
-    package: '@fluentui/merge-styles!'
-    fullName: onInsertRule
+        type:
+          - string
+  - uid: '@fluentui/merge-styles!IStyleSheetConfig#onInsertRule:member'
     summary: Callback executed when a rule is inserted.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onInsertRule
+    fullName: onInsertRule
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onInsertRule?: (rule: string) => void;'
       return:
-        type: '(rule: string) =&gt; void'
-  - name: rtl
-    uid: '@fluentui/merge-styles!IStyleSheetConfig#rtl:member'
-    package: '@fluentui/merge-styles!'
-    fullName: rtl
+        type:
+          - '(rule: string) => void'
+  - uid: '@fluentui/merge-styles!IStyleSheetConfig#rtl:member'
     summary: >-
-      Defines the default direction of rules for auto-rtlifying things. While
-      typically this is represented as a DIR attribute in the markup, the DIR is
-      not enough to control whether padding goes on the left or right. Use this
-      to set the default direction when rules are registered.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Defines the default direction of rules for auto-rtlifying things. While typically this is represented as a DIR
+      attribute in the markup, the DIR is not enough to control whether padding goes on the left or right. Use this to
+      set the default direction when rules are registered.
+    name: rtl
+    fullName: rtl
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'rtl?: boolean;'
       return:
-        type: boolean
+        type:
+          - boolean

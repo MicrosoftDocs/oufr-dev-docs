@@ -1,61 +1,63 @@
-### YamlMime:TSType
-name: Point
-uid: '@fluentui/utilities!Point:interface'
-package: '@fluentui/utilities!'
-fullName: Point
-summary: Point interface.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: left
-    uid: '@fluentui/utilities!Point#left:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/utilities!Point:interface'
+    summary: Point interface.
+    name: Point
+    fullName: Point
+    langs:
+      - typeScript
+    type: interface
     package: '@fluentui/utilities!'
+    children:
+      - '@fluentui/utilities!Point#left:member'
+      - '@fluentui/utilities!Point#top:member'
+      - '@fluentui/utilities!Point#x:member'
+      - '@fluentui/utilities!Point#y:member'
+  - uid: '@fluentui/utilities!Point#left:member'
+    name: left
     fullName: left
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'left?: number;'
       return:
-        type: number
-  - name: top
-    uid: '@fluentui/utilities!Point#top:member'
-    package: '@fluentui/utilities!'
+        type:
+          - number
+  - uid: '@fluentui/utilities!Point#top:member'
+    name: top
     fullName: top
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'top?: number;'
       return:
-        type: number
-  - name: x
-    uid: '@fluentui/utilities!Point#x:member'
-    package: '@fluentui/utilities!'
+        type:
+          - number
+  - uid: '@fluentui/utilities!Point#x:member'
+    deprecated:
+      content: Use `left` instead
+    name: x
     fullName: x
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: true
-    customDeprecatedMessage: Use `left` instead
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'x?: number;'
       return:
-        type: number
-  - name: 'y'
-    uid: '@fluentui/utilities!Point#y:member'
-    package: '@fluentui/utilities!'
+        type:
+          - number
+  - uid: '@fluentui/utilities!Point#y:member'
+    deprecated:
+      content: Use `top` instead
+    name: 'y'
     fullName: 'y'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: true
-    customDeprecatedMessage: Use `top` instead
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'y?: number;'
       return:
-        type: number
+        type:
+          - number

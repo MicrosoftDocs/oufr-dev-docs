@@ -1,196 +1,201 @@
-### YamlMime:TSType
-name: IButtonGridProps
-uid: '@fluentui/react-internal!IButtonGridProps:interface'
-package: '@fluentui/react-internal!'
-fullName: IButtonGridProps
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: ariaPosInSet
-    uid: '@fluentui/react-internal!IButtonGridProps#ariaPosInSet:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-internal!IButtonGridProps:interface'
+    name: IButtonGridProps
+    fullName: IButtonGridProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - React.TableHTMLAttributes<HTMLTableElement>
+      - 'React.RefAttributes<HTMLElement> '
     package: '@fluentui/react-internal!'
+    children:
+      - '@fluentui/react-internal!IButtonGridProps#ariaPosInSet:member'
+      - '@fluentui/react-internal!IButtonGridProps#ariaSetSize:member'
+      - '@fluentui/react-internal!IButtonGridProps#columnCount:member'
+      - '@fluentui/react-internal!IButtonGridProps#componentRef:member'
+      - '@fluentui/react-internal!IButtonGridProps#containerClassName:member'
+      - '@fluentui/react-internal!IButtonGridProps#doNotContainWithinFocusZone:member'
+      - '@fluentui/react-internal!IButtonGridProps#items:member'
+      - '@fluentui/react-internal!IButtonGridProps#onBlur:member'
+      - '@fluentui/react-internal!IButtonGridProps#onRenderItem:member'
+      - '@fluentui/react-internal!IButtonGridProps#positionInSet:member'
+      - '@fluentui/react-internal!IButtonGridProps#setSize:member'
+      - '@fluentui/react-internal!IButtonGridProps#shouldFocusCircularNavigate:member'
+      - '@fluentui/react-internal!IButtonGridProps#styles:member'
+      - '@fluentui/react-internal!IButtonGridProps#theme:member'
+  - uid: '@fluentui/react-internal!IButtonGridProps#ariaPosInSet:member'
+    summary: 'Position this ButtonGrid is in the parent set (index in a parent menu, for example)'
+    name: ariaPosInSet
     fullName: ariaPosInSet
-    summary: >-
-      Position this ButtonGrid is in the parent set (index in a parent menu, for
-      example)
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'ariaPosInSet?: number;'
       return:
-        type: number
-  - name: ariaSetSize
-    uid: '@fluentui/react-internal!IButtonGridProps#ariaSetSize:member'
-    package: '@fluentui/react-internal!'
-    fullName: ariaSetSize
+        type:
+          - number
+  - uid: '@fluentui/react-internal!IButtonGridProps#ariaSetSize:member'
     summary: 'Size of the parent set (size of parent menu, for example)'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: ariaSetSize
+    fullName: ariaSetSize
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'ariaSetSize?: number;'
       return:
-        type: number
-  - name: columnCount
-    uid: '@fluentui/react-internal!IButtonGridProps#columnCount:member'
-    package: '@fluentui/react-internal!'
-    fullName: columnCount
+        type:
+          - number
+  - uid: '@fluentui/react-internal!IButtonGridProps#columnCount:member'
     summary: The number of columns
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: columnCount
+    fullName: columnCount
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'columnCount: number;'
       return:
-        type: number
-  - name: componentRef
-    uid: '@fluentui/react-internal!IButtonGridProps#componentRef:member'
-    package: '@fluentui/react-internal!'
-    fullName: componentRef
+        type:
+          - number
+  - uid: '@fluentui/react-internal!IButtonGridProps#componentRef:member'
     summary: Gets the component ref.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: componentRef
+    fullName: componentRef
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'componentRef?: IRefObject<IButtonGrid>;'
       return:
-        type: IRefObject&lt;IButtonGrid&gt;
-  - name: containerClassName
-    uid: '@fluentui/react-internal!IButtonGridProps#containerClassName:member'
-    package: '@fluentui/react-internal!'
-    fullName: containerClassName
+        type:
+          - IRefObject<IButtonGrid>
+  - uid: '@fluentui/react-internal!IButtonGridProps#containerClassName:member'
     summary: Class name for the FocusZone container for the ButtonGrid.
-    remarks: ''
-    isPreview: false
-    isDeprecated: true
-    customDeprecatedMessage: >-
-      Use `styles.focusedContainer` to define styling for the focus zone
-      container
+    deprecated:
+      content: Use `styles.focusedContainer` to define styling for the focus zone container
+    name: containerClassName
+    fullName: containerClassName
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'containerClassName?: string;'
       return:
-        type: string
-  - name: doNotContainWithinFocusZone
-    uid: >-
-      @fluentui/react-internal!IButtonGridProps#doNotContainWithinFocusZone:member
-    package: '@fluentui/react-internal!'
+        type:
+          - string
+  - uid: '@fluentui/react-internal!IButtonGridProps#doNotContainWithinFocusZone:member'
+    summary: 'If false (the default), the ButtonGrid is contained inside a FocusZone. If true, a FocusZone is not used.  false'
+    name: doNotContainWithinFocusZone
     fullName: doNotContainWithinFocusZone
-    summary: >-
-      If false (the default), the ButtonGrid is contained inside a FocusZone. If
-      true, a FocusZone is not used.  false
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'doNotContainWithinFocusZone?: boolean;'
       return:
-        type: boolean
-  - name: items
-    uid: '@fluentui/react-internal!IButtonGridProps#items:member'
-    package: '@fluentui/react-internal!'
-    fullName: items
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!IButtonGridProps#items:member'
     summary: Items to display in a ButtonGrid with the specified number of columns
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'items: any[];'
       return:
-        type: 'any[]'
-  - name: onBlur
-    uid: '@fluentui/react-internal!IButtonGridProps#onBlur:member'
-    package: '@fluentui/react-internal!'
-    fullName: onBlur
+        type:
+          - 'any[]'
+  - uid: '@fluentui/react-internal!IButtonGridProps#onBlur:member'
     summary: Handler for when focus leaves the ButtonGrid.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onBlur
+    fullName: onBlur
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onBlur?: () => void;'
       return:
-        type: () =&gt; void
-  - name: onRenderItem
-    uid: '@fluentui/react-internal!IButtonGridProps#onRenderItem:member'
-    package: '@fluentui/react-internal!'
-    fullName: onRenderItem
+        type:
+          - () => void
+  - uid: '@fluentui/react-internal!IButtonGridProps#onRenderItem:member'
     summary: Custom renderer for the individual items
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onRenderItem
+    fullName: onRenderItem
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onRenderItem: (item: any, index: number) => JSX.Element;'
       return:
-        type: '(item: any, index: number) =&gt; JSX.Element'
-  - name: positionInSet
-    uid: '@fluentui/react-internal!IButtonGridProps#positionInSet:member'
-    package: '@fluentui/react-internal!'
+        type:
+          - '(item: any, index: number) => JSX.Element'
+  - uid: '@fluentui/react-internal!IButtonGridProps#positionInSet:member'
+    deprecated:
+      content: Use `ariaPosInSet`
+    name: positionInSet
     fullName: positionInSet
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: true
-    customDeprecatedMessage: Use `ariaPosInSet`
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'positionInSet?: number;'
       return:
-        type: number
-  - name: setSize
-    uid: '@fluentui/react-internal!IButtonGridProps#setSize:member'
-    package: '@fluentui/react-internal!'
+        type:
+          - number
+  - uid: '@fluentui/react-internal!IButtonGridProps#setSize:member'
+    deprecated:
+      content: Use `ariaSetSize`
+    name: setSize
     fullName: setSize
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: true
-    customDeprecatedMessage: Use `ariaSetSize`
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'setSize?: number;'
       return:
-        type: number
-  - name: shouldFocusCircularNavigate
-    uid: >-
-      @fluentui/react-internal!IButtonGridProps#shouldFocusCircularNavigate:member
-    package: '@fluentui/react-internal!'
-    fullName: shouldFocusCircularNavigate
+        type:
+          - number
+  - uid: '@fluentui/react-internal!IButtonGridProps#shouldFocusCircularNavigate:member'
     summary: >-
-      Whether focus should cycle back to the beginning once the user navigates
-      past the end (and vice versa). Only relevant if
-      `doNotContainWithinFocusZone` is not true.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Whether focus should cycle back to the beginning once the user navigates past the end (and vice versa). Only
+      relevant if `doNotContainWithinFocusZone` is not true.
+    name: shouldFocusCircularNavigate
+    fullName: shouldFocusCircularNavigate
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'shouldFocusCircularNavigate?: boolean;'
       return:
-        type: boolean
-  - name: styles
-    uid: '@fluentui/react-internal!IButtonGridProps#styles:member'
-    package: '@fluentui/react-internal!'
-    fullName: styles
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!IButtonGridProps#styles:member'
     summary: Optional styles for the component.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: styles
+    fullName: styles
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        styles?: IStyleFunctionOrObject<IButtonGridStyleProps,
-        IButtonGridStyles>;
+      content: 'styles?: IStyleFunctionOrObject<IButtonGridStyleProps, IButtonGridStyles>;'
       return:
-        type: 'IStyleFunctionOrObject&lt;IButtonGridStyleProps, IButtonGridStyles&gt;'
-  - name: theme
-    uid: '@fluentui/react-internal!IButtonGridProps#theme:member'
-    package: '@fluentui/react-internal!'
-    fullName: theme
+        type:
+          - 'IStyleFunctionOrObject<IButtonGridStyleProps, IButtonGridStyles>'
+  - uid: '@fluentui/react-internal!IButtonGridProps#theme:member'
     summary: Theme to apply to the component.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'theme?: ITheme;'
       return:
-        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
-extends: React.TableHTMLAttributes&lt;HTMLTableElement&gt;
+        type:
+          - '@fluentui/theme!ITheme:interface'

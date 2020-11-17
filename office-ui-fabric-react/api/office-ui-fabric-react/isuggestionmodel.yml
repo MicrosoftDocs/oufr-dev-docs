@@ -1,49 +1,55 @@
-### YamlMime:TSType
-name: ISuggestionModel
-uid: 'office-ui-fabric-react!ISuggestionModel:interface'
-package: office-ui-fabric-react!
-fullName: ISuggestionModel
-summary: >-
-  SuggestionModel interface. Type T is the type of the item that is suggested
-  (Persona, Tag or any other custom picker).
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: ariaLabel
-    uid: 'office-ui-fabric-react!ISuggestionModel#ariaLabel:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-ui-fabric-react!ISuggestionModel:interface'
+    summary: >-
+      SuggestionModel interface. Type T is the type of the item that is suggested (Persona, Tag or any other custom
+      picker).
+    name: ISuggestionModel
+    fullName: ISuggestionModel
+    langs:
+      - typeScript
+    type: interface
+    syntax:
+      typeParameters:
+        - id: T
     package: office-ui-fabric-react!
-    fullName: ariaLabel
+    children:
+      - 'office-ui-fabric-react!ISuggestionModel#ariaLabel:member'
+      - 'office-ui-fabric-react!ISuggestionModel#item:member'
+      - 'office-ui-fabric-react!ISuggestionModel#selected:member'
+  - uid: 'office-ui-fabric-react!ISuggestionModel#ariaLabel:member'
     summary: Aria-label string for each suggested item.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: ariaLabel
+    fullName: ariaLabel
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'ariaLabel?: string;'
       return:
-        type: string
-  - name: item
-    uid: 'office-ui-fabric-react!ISuggestionModel#item:member'
-    package: office-ui-fabric-react!
-    fullName: item
+        type:
+          - string
+  - uid: 'office-ui-fabric-react!ISuggestionModel#item:member'
     summary: The suggested item of the type T
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: item
+    fullName: item
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'item: T;'
       return:
-        type: T
-  - name: selected
-    uid: 'office-ui-fabric-react!ISuggestionModel#selected:member'
-    package: office-ui-fabric-react!
-    fullName: selected
+        type:
+          - T
+  - uid: 'office-ui-fabric-react!ISuggestionModel#selected:member'
     summary: Whether the suggested item is selected or not.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: selected
+    fullName: selected
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'selected: boolean;'
       return:
-        type: boolean
+        type:
+          - boolean

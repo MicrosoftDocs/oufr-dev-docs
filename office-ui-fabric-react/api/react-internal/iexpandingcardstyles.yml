@@ -1,48 +1,51 @@
-### YamlMime:TSType
-name: IExpandingCardStyles
-uid: '@fluentui/react-internal!IExpandingCardStyles:interface'
-package: '@fluentui/react-internal!'
-fullName: IExpandingCardStyles
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: compactCard
-    uid: '@fluentui/react-internal!IExpandingCardStyles#compactCard:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-internal!IExpandingCardStyles:interface'
+    name: IExpandingCardStyles
+    fullName: IExpandingCardStyles
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'IBaseCardStyles '
     package: '@fluentui/react-internal!'
-    fullName: compactCard
+    children:
+      - '@fluentui/react-internal!IExpandingCardStyles#compactCard:member'
+      - '@fluentui/react-internal!IExpandingCardStyles#expandedCard:member'
+      - '@fluentui/react-internal!IExpandingCardStyles#expandedCardScroll:member'
+  - uid: '@fluentui/react-internal!IExpandingCardStyles#compactCard:member'
     summary: Style for the main card element.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: compactCard
+    fullName: compactCard
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'compactCard?: IStyle;'
       return:
-        type: IStyle
-  - name: expandedCard
-    uid: '@fluentui/react-internal!IExpandingCardStyles#expandedCard:member'
-    package: '@fluentui/react-internal!'
-    fullName: expandedCard
+        type:
+          - IStyle
+  - uid: '@fluentui/react-internal!IExpandingCardStyles#expandedCard:member'
     summary: Base Style for the expanded card content.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: expandedCard
+    fullName: expandedCard
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'expandedCard?: IStyle;'
       return:
-        type: IStyle
-  - name: expandedCardScroll
-    uid: '@fluentui/react-internal!IExpandingCardStyles#expandedCardScroll:member'
-    package: '@fluentui/react-internal!'
-    fullName: expandedCardScroll
+        type:
+          - IStyle
+  - uid: '@fluentui/react-internal!IExpandingCardStyles#expandedCardScroll:member'
     summary: Style for the expanded card scroll content.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: expandedCardScroll
+    fullName: expandedCardScroll
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'expandedCardScroll?: IStyle;'
       return:
-        type: IStyle
-extends: 'IBaseCardStyles '
+        type:
+          - IStyle

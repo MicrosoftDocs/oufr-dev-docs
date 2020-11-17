@@ -1,70 +1,73 @@
-### YamlMime:TSType
-name: ITextProps
-uid: '@fluentui/react-internal!ITextProps:interface'
-package: '@fluentui/react-internal!'
-fullName: ITextProps
-summary: Inputs to the component
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: as
-    uid: '@fluentui/react-internal!ITextProps#as:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-internal!ITextProps:interface'
+    summary: Inputs to the component
+    name: ITextProps
+    fullName: ITextProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - ISlottableProps<ITextSlots>
+      - 'IStyleableComponentProps<ITextProps, ITextTokens, ITextStyles>'
+      - 'React.HTMLAttributes<HTMLElement> '
     package: '@fluentui/react-internal!'
-    fullName: as
+    children:
+      - '@fluentui/react-internal!ITextProps#as:member'
+      - '@fluentui/react-internal!ITextProps#block:member'
+      - '@fluentui/react-internal!ITextProps#nowrap:member'
+      - '@fluentui/react-internal!ITextProps#variant:member'
+  - uid: '@fluentui/react-internal!ITextProps#as:member'
     summary: Optionally render the component as another component type or primitive.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: as
+    fullName: as
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'as?: React.ElementType<React.HTMLAttributes<HTMLElement>>;'
       return:
-        type: React.ElementType&lt;React.HTMLAttributes&lt;HTMLElement&gt;&gt;
-  - name: block
-    uid: '@fluentui/react-internal!ITextProps#block:member'
-    package: '@fluentui/react-internal!'
-    fullName: block
-    summary: >-
+        type:
+          - React.ElementType<React.HTMLAttributes<HTMLElement>>
+  - uid: '@fluentui/react-internal!ITextProps#block:member'
+    summary: |-
       Whether the text is displayed as a block element.
 
-
-      Note that in order for ellipsis on overflow to work properly, `block` and
-      `nowrap` should be set to true.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Note that in order for ellipsis on overflow to work properly, `block` and `nowrap` should be set to true.
+    name: block
+    fullName: block
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'block?: boolean;'
       return:
-        type: boolean
-  - name: nowrap
-    uid: '@fluentui/react-internal!ITextProps#nowrap:member'
-    package: '@fluentui/react-internal!'
-    fullName: nowrap
-    summary: >-
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!ITextProps#nowrap:member'
+    summary: |-
       Whether the text is not wrapped.
 
-
-      Note that in order for ellipsis on overflow to work properly, `block` and
-      `nowrap` should be set to true.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Note that in order for ellipsis on overflow to work properly, `block` and `nowrap` should be set to true.
+    name: nowrap
+    fullName: nowrap
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'nowrap?: boolean;'
       return:
-        type: boolean
-  - name: variant
-    uid: '@fluentui/react-internal!ITextProps#variant:member'
-    package: '@fluentui/react-internal!'
-    fullName: variant
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!ITextProps#variant:member'
     summary: Optional font type for Text.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: variant
+    fullName: variant
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'variant?: keyof IFontStyles;'
       return:
-        type: keyof IFontStyles
-extends: ISlottableProps&lt;ITextSlots&gt;
+        type:
+          - keyof IFontStyles

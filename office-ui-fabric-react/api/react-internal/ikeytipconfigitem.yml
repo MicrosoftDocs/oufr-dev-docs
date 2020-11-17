@@ -1,73 +1,75 @@
-### YamlMime:TSType
-name: IKeytipConfigItem
-uid: '@fluentui/react-internal!IKeytipConfigItem:interface'
-package: '@fluentui/react-internal!'
-fullName: IKeytipConfigItem
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: children
-    uid: '@fluentui/react-internal!IKeytipConfigItem#children:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-internal!IKeytipConfigItem:interface'
+    name: IKeytipConfigItem
+    fullName: IKeytipConfigItem
+    langs:
+      - typeScript
+    type: interface
     package: '@fluentui/react-internal!'
-    fullName: children
+    children:
+      - '@fluentui/react-internal!IKeytipConfigItem#children:member'
+      - '@fluentui/react-internal!IKeytipConfigItem#content:member'
+      - '@fluentui/react-internal!IKeytipConfigItem#id:member'
+      - '@fluentui/react-internal!IKeytipConfigItem#optionalProps:member'
+      - '@fluentui/react-internal!IKeytipConfigItem#sequence:member'
+  - uid: '@fluentui/react-internal!IKeytipConfigItem#children:member'
     summary: Children keytips of this keytip
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: children
+    fullName: children
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'children?: IKeytipConfigItem[];'
       return:
-        type: 'IKeytipConfigItem[]'
-  - name: content
-    uid: '@fluentui/react-internal!IKeytipConfigItem#content:member'
-    package: '@fluentui/react-internal!'
-    fullName: content
+        type:
+          - 'IKeytipConfigItem[]'
+  - uid: '@fluentui/react-internal!IKeytipConfigItem#content:member'
     summary: Content for the keytip
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: content
+    fullName: content
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'content: string;'
       return:
-        type: string
-  - name: id
-    uid: '@fluentui/react-internal!IKeytipConfigItem#id:member'
-    package: '@fluentui/react-internal!'
-    fullName: id
+        type:
+          - string
+  - uid: '@fluentui/react-internal!IKeytipConfigItem#id:member'
     summary: 'Identifier for the keytip, to be used to access in the configMap'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'id: string;'
       return:
-        type: string
-  - name: optionalProps
-    uid: '@fluentui/react-internal!IKeytipConfigItem#optionalProps:member'
-    package: '@fluentui/react-internal!'
-    fullName: optionalProps
+        type:
+          - string
+  - uid: '@fluentui/react-internal!IKeytipConfigItem#optionalProps:member'
     summary: Optional props in IKeytipProps
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: optionalProps
+    fullName: optionalProps
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'optionalProps?: Partial<IKeytipProps>;'
       return:
-        type: Partial&lt;IKeytipProps&gt;
-  - name: sequence
-    uid: '@fluentui/react-internal!IKeytipConfigItem#sequence:member'
-    package: '@fluentui/react-internal!'
+        type:
+          - Partial<IKeytipProps>
+  - uid: '@fluentui/react-internal!IKeytipConfigItem#sequence:member'
+    summary: Key Sequence for this keytip only If sequence is not defined it will be derived from the content string
+    name: sequence
     fullName: sequence
-    summary: >-
-      Key Sequence for this keytip only If sequence is not defined it will be
-      derived from the content string
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'sequence?: string;'
       return:
-        type: string
+        type:
+          - string

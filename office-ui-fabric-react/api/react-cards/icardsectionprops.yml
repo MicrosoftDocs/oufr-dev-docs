@@ -1,26 +1,30 @@
-### YamlMime:TSType
-name: ICardSectionProps
-uid: '@fluentui/react-cards!ICardSectionProps:interface'
-package: '@fluentui/react-cards!'
-fullName: ICardSectionProps
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: fill
-    uid: '@fluentui/react-cards!ICardSectionProps#fill:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-cards!ICardSectionProps:interface'
+    name: ICardSectionProps
+    fullName: ICardSectionProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - '@fluentui/react-cards!ICardSectionSlots:interface'
+      - >-
+        Pick<IStackProps, 'as' | 'horizontal' | 'reversed' | 'horizontalAlign' | 'verticalAlign' | 'verticalFill' |
+        'disableShrink' | 'grow' | 'wrap'>
+      - 'IStyleableComponentProps<ICardSectionProps, ICardSectionTokens, ICardSectionStyles>'
+      - 'IBaseProps<ICardSection> '
     package: '@fluentui/react-cards!'
+    children:
+      - '@fluentui/react-cards!ICardSectionProps#fill:member'
+  - uid: '@fluentui/react-cards!ICardSectionProps#fill:member'
+    summary: Determines if the CardSection should disregard the children margin specified by Card.
+    name: fill
     fullName: fill
-    summary: >-
-      Determines if the CardSection should disregard the children margin
-      specified by Card.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'fill?: boolean;'
       return:
-        type: boolean
-extends: '<xref uid="@fluentui/react-cards!ICardSectionSlots:interface" />'
+        type:
+          - boolean

@@ -1,219 +1,223 @@
-### YamlMime:TSType
-name: IColorPickerProps
-uid: 'office-ui-fabric-react!IColorPickerProps:interface'
-package: office-ui-fabric-react!
-fullName: IColorPickerProps
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: alphaLabel
-    uid: 'office-ui-fabric-react!IColorPickerProps#alphaLabel:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-ui-fabric-react!IColorPickerProps:interface'
+    name: IColorPickerProps
+    fullName: IColorPickerProps
+    langs:
+      - typeScript
+    type: interface
     package: office-ui-fabric-react!
-    fullName: alphaLabel
+    children:
+      - 'office-ui-fabric-react!IColorPickerProps#alphaLabel:member'
+      - 'office-ui-fabric-react!IColorPickerProps#alphaSliderHidden:member'
+      - 'office-ui-fabric-react!IColorPickerProps#alphaType:member'
+      - 'office-ui-fabric-react!IColorPickerProps#blueLabel:member'
+      - 'office-ui-fabric-react!IColorPickerProps#className:member'
+      - 'office-ui-fabric-react!IColorPickerProps#color:member'
+      - 'office-ui-fabric-react!IColorPickerProps#componentRef:member'
+      - 'office-ui-fabric-react!IColorPickerProps#greenLabel:member'
+      - 'office-ui-fabric-react!IColorPickerProps#hexLabel:member'
+      - 'office-ui-fabric-react!IColorPickerProps#onChange:member'
+      - 'office-ui-fabric-react!IColorPickerProps#redLabel:member'
+      - 'office-ui-fabric-react!IColorPickerProps#showPreview:member'
+      - 'office-ui-fabric-react!IColorPickerProps#strings:member'
+      - 'office-ui-fabric-react!IColorPickerProps#styles:member'
+      - 'office-ui-fabric-react!IColorPickerProps#theme:member'
+  - uid: 'office-ui-fabric-react!IColorPickerProps#alphaLabel:member'
     summary: Label for the alpha textfield.
-    remarks: ''
-    isPreview: false
-    isDeprecated: true
-    customDeprecatedMessage: Use `strings`
+    deprecated:
+      content: Use `strings`
+    name: alphaLabel
+    fullName: alphaLabel
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'alphaLabel?: string;'
       return:
-        type: string
-  - name: alphaSliderHidden
-    uid: 'office-ui-fabric-react!IColorPickerProps#alphaSliderHidden:member'
-    package: office-ui-fabric-react!
-    fullName: alphaSliderHidden
+        type:
+          - string
+  - uid: 'office-ui-fabric-react!IColorPickerProps#alphaSliderHidden:member'
     summary: Whether to hide the alpha (or transparency) slider and text field.
-    remarks: ''
-    isPreview: false
-    isDeprecated: true
-    customDeprecatedMessage: 'Use `alphaType: ''none''`'
+    deprecated:
+      content: 'Use `alphaType: ''none''`'
+    name: alphaSliderHidden
+    fullName: alphaSliderHidden
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'alphaSliderHidden?: boolean;'
       return:
-        type: boolean
-  - name: alphaType
-    uid: 'office-ui-fabric-react!IColorPickerProps#alphaType:member'
-    package: office-ui-fabric-react!
-    fullName: alphaType
+        type:
+          - boolean
+  - uid: 'office-ui-fabric-react!IColorPickerProps#alphaType:member'
     summary: >-
-      `alpha` (the default) means display a slider and text field for editing
-      alpha values. `transparency` also displays a slider and text field but for
-      editing transparency values. `none` hides these controls.
+      `alpha` (the default) means display a slider and text field for editing alpha values. `transparency` also displays
+      a slider and text field but for editing transparency values. `none` hides these controls.
 
 
-      Alpha represents the opacity of the color, whereas transparency represents
-      the transparentness of the color: i.e. a 30% transparent color has 70%
-      opaqueness.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Alpha represents the opacity of the color, whereas transparency represents the transparentness of the color: i.e.
+      a 30% transparent color has 70% opaqueness.
+    name: alphaType
+    fullName: alphaType
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'alphaType?: ''alpha'' | ''transparency'' | ''none'';'
       return:
-        type: '''alpha'' | ''transparency'' | ''none'''
-  - name: blueLabel
-    uid: 'office-ui-fabric-react!IColorPickerProps#blueLabel:member'
-    package: office-ui-fabric-react!
-    fullName: blueLabel
+        type:
+          - '''alpha'' | ''transparency'' | ''none'''
+  - uid: 'office-ui-fabric-react!IColorPickerProps#blueLabel:member'
     summary: Label for the blue text field.
-    remarks: ''
-    isPreview: false
-    isDeprecated: true
-    customDeprecatedMessage: Use `strings`
+    deprecated:
+      content: Use `strings`
+    name: blueLabel
+    fullName: blueLabel
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'blueLabel?: string;'
       return:
-        type: string
-  - name: className
-    uid: 'office-ui-fabric-react!IColorPickerProps#className:member'
-    package: office-ui-fabric-react!
-    fullName: className
+        type:
+          - string
+  - uid: 'office-ui-fabric-react!IColorPickerProps#className:member'
     summary: Additional CSS class(es) to apply to the ColorPicker.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: className
+    fullName: className
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'className?: string;'
       return:
-        type: string
-  - name: color
-    uid: 'office-ui-fabric-react!IColorPickerProps#color:member'
-    package: office-ui-fabric-react!
-    fullName: color
+        type:
+          - string
+  - uid: 'office-ui-fabric-react!IColorPickerProps#color:member'
     summary: Object or CSS-compatible string to describe the color.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'color: IColor | string;'
       return:
-        type: IColor | string
-  - name: componentRef
-    uid: 'office-ui-fabric-react!IColorPickerProps#componentRef:member'
-    package: office-ui-fabric-react!
-    fullName: componentRef
+        type:
+          - IColor | string
+  - uid: 'office-ui-fabric-react!IColorPickerProps#componentRef:member'
     summary: Gets the component ref.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: componentRef
+    fullName: componentRef
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'componentRef?: IRefObject<IColorPicker>;'
       return:
-        type: IRefObject&lt;IColorPicker&gt;
-  - name: greenLabel
-    uid: 'office-ui-fabric-react!IColorPickerProps#greenLabel:member'
-    package: office-ui-fabric-react!
-    fullName: greenLabel
+        type:
+          - IRefObject<IColorPicker>
+  - uid: 'office-ui-fabric-react!IColorPickerProps#greenLabel:member'
     summary: Label for the green text field.
-    remarks: ''
-    isPreview: false
-    isDeprecated: true
-    customDeprecatedMessage: Use `strings`
+    deprecated:
+      content: Use `strings`
+    name: greenLabel
+    fullName: greenLabel
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'greenLabel?: string;'
       return:
-        type: string
-  - name: hexLabel
-    uid: 'office-ui-fabric-react!IColorPickerProps#hexLabel:member'
-    package: office-ui-fabric-react!
-    fullName: hexLabel
+        type:
+          - string
+  - uid: 'office-ui-fabric-react!IColorPickerProps#hexLabel:member'
     summary: Label for the hex text field.
-    remarks: ''
-    isPreview: false
-    isDeprecated: true
-    customDeprecatedMessage: Use `strings`
+    deprecated:
+      content: Use `strings`
+    name: hexLabel
+    fullName: hexLabel
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'hexLabel?: string;'
       return:
-        type: string
-  - name: onChange
-    uid: 'office-ui-fabric-react!IColorPickerProps#onChange:member'
-    package: office-ui-fabric-react!
+        type:
+          - string
+  - uid: 'office-ui-fabric-react!IColorPickerProps#onChange:member'
+    summary: Callback for when the user changes the color. (Not called when the color is changed via props.)
+    name: onChange
     fullName: onChange
-    summary: >-
-      Callback for when the user changes the color. (Not called when the color
-      is changed via props.)
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        onChange?: (ev: React.SyntheticEvent<HTMLElement>, color: IColor) =>
-        void;
+      content: 'onChange?: (ev: React.SyntheticEvent<HTMLElement>, color: IColor) => void;'
       return:
-        type: >-
-          (ev: React.SyntheticEvent&lt;HTMLElement&gt;, color: IColor) =&gt;
-          void
-  - name: redLabel
-    uid: 'office-ui-fabric-react!IColorPickerProps#redLabel:member'
-    package: office-ui-fabric-react!
-    fullName: redLabel
+        type:
+          - '(ev: React.SyntheticEvent<HTMLElement>, color: IColor) => void'
+  - uid: 'office-ui-fabric-react!IColorPickerProps#redLabel:member'
     summary: Label for the red text field.
-    remarks: ''
-    isPreview: false
-    isDeprecated: true
-    customDeprecatedMessage: Use `strings`
+    deprecated:
+      content: Use `strings`
+    name: redLabel
+    fullName: redLabel
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'redLabel?: string;'
       return:
-        type: string
-  - name: showPreview
-    uid: 'office-ui-fabric-react!IColorPickerProps#showPreview:member'
-    package: office-ui-fabric-react!
-    fullName: showPreview
+        type:
+          - string
+  - uid: 'office-ui-fabric-react!IColorPickerProps#showPreview:member'
     summary: Whether to show color preview box.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: showPreview
+    fullName: showPreview
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'showPreview?: boolean;'
       return:
-        type: boolean
-  - name: strings
-    uid: 'office-ui-fabric-react!IColorPickerProps#strings:member'
-    package: office-ui-fabric-react!
+        type:
+          - boolean
+  - uid: 'office-ui-fabric-react!IColorPickerProps#strings:member'
+    summary: Labels for elements within the ColorPicker. Defaults are provided in English only.
+    name: strings
     fullName: strings
-    summary: >-
-      Labels for elements within the ColorPicker. Defaults are provided in
-      English only.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'strings?: IColorPickerStrings;'
       return:
-        type: IColorPickerStrings
-  - name: styles
-    uid: 'office-ui-fabric-react!IColorPickerProps#styles:member'
-    package: office-ui-fabric-react!
+        type:
+          - IColorPickerStrings
+  - uid: 'office-ui-fabric-react!IColorPickerProps#styles:member'
+    summary: Call to provide customized styling that will layer on top of the variant rules.
+    name: styles
     fullName: styles
-    summary: >-
-      Call to provide customized styling that will layer on top of the variant
-      rules.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        styles?: IStyleFunctionOrObject<IColorPickerStyleProps,
-        IColorPickerStyles>;
+      content: 'styles?: IStyleFunctionOrObject<IColorPickerStyleProps, IColorPickerStyles>;'
       return:
-        type: >-
-          IStyleFunctionOrObject&lt;IColorPickerStyleProps,
-          IColorPickerStyles&gt;
-  - name: theme
-    uid: 'office-ui-fabric-react!IColorPickerProps#theme:member'
-    package: office-ui-fabric-react!
-    fullName: theme
+        type:
+          - 'IStyleFunctionOrObject<IColorPickerStyleProps, IColorPickerStyles>'
+  - uid: 'office-ui-fabric-react!IColorPickerProps#theme:member'
     summary: Theme (provided through customization).
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'theme?: ITheme;'
       return:
-        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
+        type:
+          - '@fluentui/theme!ITheme:interface'

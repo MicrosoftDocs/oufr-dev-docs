@@ -1,106 +1,120 @@
-### YamlMime:TSType
-name: IComponentOptions
-uid: '@fluentui/foundation-legacy!IComponentOptions:interface'
-package: '@fluentui/foundation-legacy!'
-fullName: IComponentOptions
-summary: >-
-  Component options used by foundation to tie elements together.
-
-
-  \* TComponentProps: A styleable props interface for the created component. \*
-  TTokens: The type for tokens props. \* TStyleSet: The type for styles
-  properties. \* TViewProps: The props specific to the view, including processed
-  properties outputted by optional state component. If state component is not
-  provided, TComponentProps is the same as TViewProps. \* TStatics: Static type
-  for statics applied to created component object.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: displayName
-    uid: '@fluentui/foundation-legacy!IComponentOptions#displayName:member'
-    package: '@fluentui/foundation-legacy!'
-    fullName: displayName
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/foundation-legacy!IComponentOptions:interface'
     summary: >-
-      Display name to identify component in React hierarchy. This parameter is
-      required for targeted component styling via theming.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Component options used by foundation to tie elements together.
+
+
+      \* TComponentProps: A styleable props interface for the created component. \* TTokens: The type for tokens props.
+      \* TStyleSet: The type for styles properties. \* TViewProps: The props specific to the view, including processed
+      properties outputted by optional state component. If state component is not provided, TComponentProps is the same
+      as TViewProps. \* TStatics: Static type for statics applied to created component object.
+    name: IComponentOptions
+    fullName: IComponentOptions
+    langs:
+      - typeScript
+    type: interface
+    syntax:
+      typeParameters:
+        - id: TComponentProps
+        - id: TTokens
+        - id: TStyleSet
+          type:
+            - IStyleSet<TStyleSet>
+        - id: TViewProps
+        - id: TStatics
+    package: '@fluentui/foundation-legacy!'
+    children:
+      - '@fluentui/foundation-legacy!IComponentOptions#displayName:member'
+      - '@fluentui/foundation-legacy!IComponentOptions#factoryOptions:member'
+      - '@fluentui/foundation-legacy!IComponentOptions#fields:member'
+      - '@fluentui/foundation-legacy!IComponentOptions#state:member'
+      - '@fluentui/foundation-legacy!IComponentOptions#statics:member'
+      - '@fluentui/foundation-legacy!IComponentOptions#styles:member'
+      - '@fluentui/foundation-legacy!IComponentOptions#tokens:member'
+  - uid: '@fluentui/foundation-legacy!IComponentOptions#displayName:member'
+    summary: >-
+      Display name to identify component in React hierarchy. This parameter is required for targeted component styling
+      via theming.
+    name: displayName
+    fullName: displayName
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'displayName?: string;'
       return:
-        type: string
-  - name: factoryOptions
-    uid: '@fluentui/foundation-legacy!IComponentOptions#factoryOptions:member'
-    package: '@fluentui/foundation-legacy!'
-    fullName: factoryOptions
+        type:
+          - string
+  - uid: '@fluentui/foundation-legacy!IComponentOptions#factoryOptions:member'
     summary: Default prop for which to map primitive values.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: factoryOptions
+    fullName: factoryOptions
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'factoryOptions?: IFactoryOptions<TComponentProps>;'
       return:
-        type: IFactoryOptions&lt;TComponentProps&gt;
-  - name: fields
-    uid: '@fluentui/foundation-legacy!IComponentOptions#fields:member'
-    package: '@fluentui/foundation-legacy!'
-    fullName: fields
+        type:
+          - IFactoryOptions<TComponentProps>
+  - uid: '@fluentui/foundation-legacy!IComponentOptions#fields:member'
     summary: List of fields which can be customized.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: fields
+    fullName: fields
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'fields?: string[];'
       return:
-        type: 'string[]'
-  - name: state
-    uid: '@fluentui/foundation-legacy!IComponentOptions#state:member'
-    package: '@fluentui/foundation-legacy!'
-    fullName: state
+        type:
+          - 'string[]'
+  - uid: '@fluentui/foundation-legacy!IComponentOptions#state:member'
     summary: Optional state component that processes TComponentProps into TViewProps.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: state
+    fullName: state
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'state?: IStateComponentType<TComponentProps, TViewProps>;'
       return:
-        type: 'IStateComponentType&lt;TComponentProps, TViewProps&gt;'
-  - name: statics
-    uid: '@fluentui/foundation-legacy!IComponentOptions#statics:member'
-    package: '@fluentui/foundation-legacy!'
-    fullName: statics
+        type:
+          - 'IStateComponentType<TComponentProps, TViewProps>'
+  - uid: '@fluentui/foundation-legacy!IComponentOptions#statics:member'
     summary: Optional static object to assign to constructed component.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: statics
+    fullName: statics
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'statics?: TStatics;'
       return:
-        type: TStatics
-  - name: styles
-    uid: '@fluentui/foundation-legacy!IComponentOptions#styles:member'
-    package: '@fluentui/foundation-legacy!'
-    fullName: styles
+        type:
+          - TStatics
+  - uid: '@fluentui/foundation-legacy!IComponentOptions#styles:member'
     summary: Styles prop to pass into component.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: styles
+    fullName: styles
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'styles?: IStylesFunctionOrObject<TViewProps, TTokens, TStyleSet>;'
       return:
-        type: 'IStylesFunctionOrObject&lt;TViewProps, TTokens, TStyleSet&gt;'
-  - name: tokens
-    uid: '@fluentui/foundation-legacy!IComponentOptions#tokens:member'
-    package: '@fluentui/foundation-legacy!'
-    fullName: tokens
+        type:
+          - 'IStylesFunctionOrObject<TViewProps, TTokens, TStyleSet>'
+  - uid: '@fluentui/foundation-legacy!IComponentOptions#tokens:member'
     summary: Tokens prop to pass into component.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: tokens
+    fullName: tokens
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'tokens?: ITokenFunctionOrObject<TViewProps, TTokens>;'
       return:
-        type: 'ITokenFunctionOrObject&lt;TViewProps, TTokens&gt;'
+        type:
+          - 'ITokenFunctionOrObject<TViewProps, TTokens>'

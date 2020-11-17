@@ -1,111 +1,114 @@
-### YamlMime:TSType
-name: INavLinkGroup
-uid: '@fluentui/react-internal!INavLinkGroup:interface'
-package: '@fluentui/react-internal!'
-fullName: INavLinkGroup
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: automationId
-    uid: '@fluentui/react-internal!INavLinkGroup#automationId:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-internal!INavLinkGroup:interface'
+    name: INavLinkGroup
+    fullName: INavLinkGroup
+    langs:
+      - typeScript
+    type: interface
     package: '@fluentui/react-internal!'
-    fullName: automationId
+    children:
+      - '@fluentui/react-internal!INavLinkGroup#automationId:member'
+      - '@fluentui/react-internal!INavLinkGroup#collapseAriaLabel:member'
+      - '@fluentui/react-internal!INavLinkGroup#collapseByDefault:member'
+      - '@fluentui/react-internal!INavLinkGroup#expandAriaLabel:member'
+      - '@fluentui/react-internal!INavLinkGroup#groupData:member'
+      - '@fluentui/react-internal!INavLinkGroup#links:member'
+      - '@fluentui/react-internal!INavLinkGroup#name:member'
+      - '@fluentui/react-internal!INavLinkGroup#onHeaderClick:member'
+  - uid: '@fluentui/react-internal!INavLinkGroup#automationId:member'
     summary: The name to use for functional automation tests
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: automationId
+    fullName: automationId
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'automationId?: string;'
       return:
-        type: string
-  - name: collapseAriaLabel
-    uid: '@fluentui/react-internal!INavLinkGroup#collapseAriaLabel:member'
-    package: '@fluentui/react-internal!'
-    fullName: collapseAriaLabel
+        type:
+          - string
+  - uid: '@fluentui/react-internal!INavLinkGroup#collapseAriaLabel:member'
     summary: ARIA label when group is collapsed and can be expanded.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: collapseAriaLabel
+    fullName: collapseAriaLabel
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'collapseAriaLabel?: string;'
       return:
-        type: string
-  - name: collapseByDefault
-    uid: '@fluentui/react-internal!INavLinkGroup#collapseByDefault:member'
-    package: '@fluentui/react-internal!'
-    fullName: collapseByDefault
+        type:
+          - string
+  - uid: '@fluentui/react-internal!INavLinkGroup#collapseByDefault:member'
     summary: 'If true, the group should render collapsed by default'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: collapseByDefault
+    fullName: collapseByDefault
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'collapseByDefault?: boolean;'
       return:
-        type: boolean
-  - name: expandAriaLabel
-    uid: '@fluentui/react-internal!INavLinkGroup#expandAriaLabel:member'
-    package: '@fluentui/react-internal!'
-    fullName: expandAriaLabel
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!INavLinkGroup#expandAriaLabel:member'
     summary: ARIA label when group is collapsed and can be expanded.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: expandAriaLabel
+    fullName: expandAriaLabel
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'expandAriaLabel?: string;'
       return:
-        type: string
-  - name: groupData
-    uid: '@fluentui/react-internal!INavLinkGroup#groupData:member'
-    package: '@fluentui/react-internal!'
-    fullName: groupData
+        type:
+          - string
+  - uid: '@fluentui/react-internal!INavLinkGroup#groupData:member'
     summary: (Optional) Any additional properties to apply to a group.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: groupData
+    fullName: groupData
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'groupData?: any;'
       return:
-        type: any
-  - name: links
-    uid: '@fluentui/react-internal!INavLinkGroup#links:member'
-    package: '@fluentui/react-internal!'
-    fullName: links
+        type:
+          - any
+  - uid: '@fluentui/react-internal!INavLinkGroup#links:member'
     summary: Links to render within this group
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: links
+    fullName: links
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'links: INavLink[];'
       return:
-        type: 'INavLink[]'
-  - name: name
-    uid: '@fluentui/react-internal!INavLinkGroup#name:member'
-    package: '@fluentui/react-internal!'
-    fullName: name
+        type:
+          - 'INavLink[]'
+  - uid: '@fluentui/react-internal!INavLinkGroup#name:member'
     summary: Text to render as the header of a group
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'name?: string;'
       return:
-        type: string
-  - name: onHeaderClick
-    uid: '@fluentui/react-internal!INavLinkGroup#onHeaderClick:member'
-    package: '@fluentui/react-internal!'
-    fullName: onHeaderClick
+        type:
+          - string
+  - uid: '@fluentui/react-internal!INavLinkGroup#onHeaderClick:member'
     summary: Callback invoked when a group header is clicked
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onHeaderClick
+    fullName: onHeaderClick
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        onHeaderClick?: (ev?: React.MouseEvent<HTMLElement>, isCollapsing?:
-        boolean) => void;
+      content: 'onHeaderClick?: (ev?: React.MouseEvent<HTMLElement>, isCollapsing?: boolean) => void;'
       return:
-        type: >-
-          (ev?: React.MouseEvent&lt;HTMLElement&gt;, isCollapsing?: boolean)
-          =&gt; void
+        type:
+          - '(ev?: React.MouseEvent<HTMLElement>, isCollapsing?: boolean) => void'

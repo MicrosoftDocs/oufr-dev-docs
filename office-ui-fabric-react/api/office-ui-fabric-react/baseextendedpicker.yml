@@ -1,386 +1,366 @@
-### YamlMime:TSType
-name: BaseExtendedPicker
-uid: 'office-ui-fabric-react!BaseExtendedPicker:class'
-package: office-ui-fabric-react!
-fullName: BaseExtendedPicker
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: class
-constructors:
-  - name: (constructor)(basePickerProps)
-    uid: 'office-ui-fabric-react!BaseExtendedPicker:constructor(1)'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-ui-fabric-react!BaseExtendedPicker:class'
+    name: BaseExtendedPicker
+    fullName: BaseExtendedPicker
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'React.Component<P, IBaseExtendedPickerState<T>> '
+    implements:
+      - 'IBaseExtendedPicker<T> '
     package: office-ui-fabric-react!
-    fullName: (constructor)(basePickerProps)
+    children:
+      - 'office-ui-fabric-react!BaseExtendedPicker#_onSelectedItemsChanged:member'
+      - 'office-ui-fabric-react!BaseExtendedPicker#_onSuggestionSelected:member'
+      - 'office-ui-fabric-react!BaseExtendedPicker:constructor(1)'
+      - 'office-ui-fabric-react!BaseExtendedPicker#canAddItems:member(1)'
+      - 'office-ui-fabric-react!BaseExtendedPicker#clearInput:member(1)'
+      - 'office-ui-fabric-react!BaseExtendedPicker#componentDidMount:member(1)'
+      - 'office-ui-fabric-react!BaseExtendedPicker#floatingPicker:member'
+      - 'office-ui-fabric-react!BaseExtendedPicker#floatingPickerProps:member'
+      - 'office-ui-fabric-react!BaseExtendedPicker#focus:member(1)'
+      - 'office-ui-fabric-react!BaseExtendedPicker#highlightedItems:member'
+      - 'office-ui-fabric-react!BaseExtendedPicker#input:member'
+      - 'office-ui-fabric-react!BaseExtendedPicker#inputElement:member'
+      - 'office-ui-fabric-react!BaseExtendedPicker#items:member'
+      - 'office-ui-fabric-react!BaseExtendedPicker#onBackspace:member'
+      - 'office-ui-fabric-react!BaseExtendedPicker#onCopy:member'
+      - 'office-ui-fabric-react!BaseExtendedPicker#onInputChange:member'
+      - 'office-ui-fabric-react!BaseExtendedPicker#onInputClick:member'
+      - 'office-ui-fabric-react!BaseExtendedPicker#onInputFocus:member'
+      - 'office-ui-fabric-react!BaseExtendedPicker#onPaste:member'
+      - 'office-ui-fabric-react!BaseExtendedPicker#onSelectionChange:member'
+      - 'office-ui-fabric-react!BaseExtendedPicker#render:member(1)'
+      - 'office-ui-fabric-react!BaseExtendedPicker#renderFloatingPicker:member(1)'
+      - 'office-ui-fabric-react!BaseExtendedPicker#renderSelectedItemsList:member(1)'
+      - 'office-ui-fabric-react!BaseExtendedPicker#root:member'
+      - 'office-ui-fabric-react!BaseExtendedPicker#selectedItemsList:member'
+      - 'office-ui-fabric-react!BaseExtendedPicker#selectedItemsListProps:member'
+      - 'office-ui-fabric-react!BaseExtendedPicker#selection:member'
+      - 'office-ui-fabric-react!BaseExtendedPicker#UNSAFE_componentWillReceiveProps:member(1)'
+  - uid: 'office-ui-fabric-react!BaseExtendedPicker#_onSelectedItemsChanged:member'
+    name: _onSelectedItemsChanged
+    fullName: _onSelectedItemsChanged
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'protected _onSelectedItemsChanged: () => void;'
+      return:
+        type:
+          - () => void
+  - uid: 'office-ui-fabric-react!BaseExtendedPicker#_onSuggestionSelected:member'
+    name: _onSuggestionSelected
+    fullName: _onSuggestionSelected
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'protected _onSuggestionSelected: (item: T) => void;'
+      return:
+        type:
+          - '(item: T) => void'
+  - uid: 'office-ui-fabric-react!BaseExtendedPicker:constructor(1)'
     summary: Constructs a new instance of the `BaseExtendedPicker` class
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: (constructor)(basePickerProps)
+    fullName: (constructor)(basePickerProps)
+    langs:
+      - typeScript
+    type: constructor
     syntax:
       content: 'constructor(basePickerProps: P);'
       parameters:
         - id: basePickerProps
           description: ''
-          type: P
-properties:
-  - name: _onSelectedItemsChanged
-    uid: 'office-ui-fabric-react!BaseExtendedPicker#_onSelectedItemsChanged:member'
-    package: office-ui-fabric-react!
-    fullName: _onSelectedItemsChanged
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'protected _onSelectedItemsChanged: () => void;'
-      return:
-        type: () =&gt; void
-  - name: _onSuggestionSelected
-    uid: 'office-ui-fabric-react!BaseExtendedPicker#_onSuggestionSelected:member'
-    package: office-ui-fabric-react!
-    fullName: _onSuggestionSelected
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'protected _onSuggestionSelected: (item: T) => void;'
-      return:
-        type: '(item: T) =&gt; void'
-  - name: floatingPicker
-    uid: 'office-ui-fabric-react!BaseExtendedPicker#floatingPicker:member'
-    package: office-ui-fabric-react!
-    fullName: floatingPicker
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        floatingPicker: React.RefObject<BaseFloatingPicker<T,
-        IBaseFloatingPickerProps<T>>>;
-      return:
-        type: >-
-          React.RefObject&lt;BaseFloatingPicker&lt;T,
-          IBaseFloatingPickerProps&lt;T&gt;&gt;&gt;
-  - name: floatingPickerProps
-    uid: 'office-ui-fabric-react!BaseExtendedPicker#floatingPickerProps:member'
-    package: office-ui-fabric-react!
-    fullName: floatingPickerProps
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'protected floatingPickerProps: IBaseFloatingPickerProps<T>;'
-      return:
-        type: IBaseFloatingPickerProps&lt;T&gt;
-  - name: highlightedItems
-    uid: 'office-ui-fabric-react!BaseExtendedPicker#highlightedItems:member'
-    package: office-ui-fabric-react!
-    fullName: highlightedItems
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'readonly highlightedItems: T[];'
-      return:
-        type: 'T[]'
-  - name: input
-    uid: 'office-ui-fabric-react!BaseExtendedPicker#input:member'
-    package: office-ui-fabric-react!
-    fullName: input
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'protected input: React.RefObject<Autofill>;'
-      return:
-        type: React.RefObject&lt;Autofill&gt;
-  - name: inputElement
-    uid: 'office-ui-fabric-react!BaseExtendedPicker#inputElement:member'
-    package: office-ui-fabric-react!
-    fullName: inputElement
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'readonly inputElement: HTMLInputElement | null;'
-      return:
-        type: HTMLInputElement | null
-  - name: items
-    uid: 'office-ui-fabric-react!BaseExtendedPicker#items:member'
-    package: office-ui-fabric-react!
-    fullName: items
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'readonly items: any;'
-      return:
-        type: any
-  - name: onBackspace
-    uid: 'office-ui-fabric-react!BaseExtendedPicker#onBackspace:member'
-    package: office-ui-fabric-react!
-    fullName: onBackspace
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'protected onBackspace: (ev: React.KeyboardEvent<HTMLElement>) => void;'
-      return:
-        type: '(ev: React.KeyboardEvent&lt;HTMLElement&gt;) =&gt; void'
-  - name: onCopy
-    uid: 'office-ui-fabric-react!BaseExtendedPicker#onCopy:member'
-    package: office-ui-fabric-react!
-    fullName: onCopy
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'protected onCopy: (ev: React.ClipboardEvent<HTMLElement>) => void;'
-      return:
-        type: '(ev: React.ClipboardEvent&lt;HTMLElement&gt;) =&gt; void'
-  - name: onInputChange
-    uid: 'office-ui-fabric-react!BaseExtendedPicker#onInputChange:member'
-    package: office-ui-fabric-react!
-    fullName: onInputChange
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        protected onInputChange: (value: string, composing?: boolean |
-        undefined) => void;
-      return:
-        type: '(value: string, composing?: boolean | undefined) =&gt; void'
-  - name: onInputClick
-    uid: 'office-ui-fabric-react!BaseExtendedPicker#onInputClick:member'
-    package: office-ui-fabric-react!
-    fullName: onInputClick
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        protected onInputClick: (ev: React.MouseEvent<HTMLInputElement |
-        Autofill, MouseEvent>) => void;
-      return:
-        type: >-
-          (ev: React.MouseEvent&lt;HTMLInputElement | Autofill, MouseEvent&gt;)
-          =&gt; void
-  - name: onInputFocus
-    uid: 'office-ui-fabric-react!BaseExtendedPicker#onInputFocus:member'
-    package: office-ui-fabric-react!
-    fullName: onInputFocus
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        protected onInputFocus: (ev: React.FocusEvent<HTMLInputElement |
-        Autofill>) => void;
-      return:
-        type: '(ev: React.FocusEvent&lt;HTMLInputElement | Autofill&gt;) =&gt; void'
-  - name: onPaste
-    uid: 'office-ui-fabric-react!BaseExtendedPicker#onPaste:member'
-    package: office-ui-fabric-react!
-    fullName: onPaste
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        protected onPaste: (ev: React.ClipboardEvent<HTMLInputElement |
-        Autofill>) => void;
-      return:
-        type: >-
-          (ev: React.ClipboardEvent&lt;HTMLInputElement | Autofill&gt;) =&gt;
-          void
-  - name: onSelectionChange
-    uid: 'office-ui-fabric-react!BaseExtendedPicker#onSelectionChange:member'
-    package: office-ui-fabric-react!
-    fullName: onSelectionChange
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'protected onSelectionChange: () => void;'
-      return:
-        type: () =&gt; void
-  - name: root
-    uid: 'office-ui-fabric-react!BaseExtendedPicker#root:member'
-    package: office-ui-fabric-react!
-    fullName: root
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'protected root: React.RefObject<HTMLDivElement>;'
-      return:
-        type: React.RefObject&lt;HTMLDivElement&gt;
-  - name: selectedItemsList
-    uid: 'office-ui-fabric-react!BaseExtendedPicker#selectedItemsList:member'
-    package: office-ui-fabric-react!
-    fullName: selectedItemsList
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        selectedItemsList: React.RefObject<BaseSelectedItemsList<T,
-        IBaseSelectedItemsListProps<T>>>;
-      return:
-        type: >-
-          React.RefObject&lt;BaseSelectedItemsList&lt;T,
-          IBaseSelectedItemsListProps&lt;T&gt;&gt;&gt;
-  - name: selectedItemsListProps
-    uid: 'office-ui-fabric-react!BaseExtendedPicker#selectedItemsListProps:member'
-    package: office-ui-fabric-react!
-    fullName: selectedItemsListProps
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'protected selectedItemsListProps: IBaseSelectedItemsListProps<T>;'
-      return:
-        type: IBaseSelectedItemsListProps&lt;T&gt;
-  - name: selection
-    uid: 'office-ui-fabric-react!BaseExtendedPicker#selection:member'
-    package: office-ui-fabric-react!
-    fullName: selection
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'protected selection: Selection;'
-      return:
-        type: '<xref uid="@fluentui/utilities!Selection:class" />'
-methods:
-  - name: canAddItems()
-    uid: 'office-ui-fabric-react!BaseExtendedPicker#canAddItems:member(1)'
-    package: office-ui-fabric-react!
+          type:
+            - P
+  - uid: 'office-ui-fabric-react!BaseExtendedPicker#canAddItems:member(1)'
+    name: canAddItems()
     fullName: canAddItems()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'protected canAddItems(): boolean;'
       return:
-        type: boolean
+        type:
+          - boolean
         description: ''
-  - name: clearInput()
-    uid: 'office-ui-fabric-react!BaseExtendedPicker#clearInput:member(1)'
-    package: office-ui-fabric-react!
+  - uid: 'office-ui-fabric-react!BaseExtendedPicker#clearInput:member(1)'
+    name: clearInput()
     fullName: clearInput()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'clearInput(): void;'
       return:
-        type: void
+        type:
+          - void
         description: ''
-  - name: componentDidMount()
-    uid: 'office-ui-fabric-react!BaseExtendedPicker#componentDidMount:member(1)'
-    package: office-ui-fabric-react!
+  - uid: 'office-ui-fabric-react!BaseExtendedPicker#componentDidMount:member(1)'
+    name: componentDidMount()
     fullName: componentDidMount()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'componentDidMount(): void;'
       return:
-        type: void
+        type:
+          - void
         description: ''
-  - name: focus()
-    uid: 'office-ui-fabric-react!BaseExtendedPicker#focus:member(1)'
-    package: office-ui-fabric-react!
+  - uid: 'office-ui-fabric-react!BaseExtendedPicker#floatingPicker:member'
+    name: floatingPicker
+    fullName: floatingPicker
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'floatingPicker: React.RefObject<BaseFloatingPicker<T, IBaseFloatingPickerProps<T>>>;'
+      return:
+        type:
+          - 'React.RefObject<BaseFloatingPicker<T, IBaseFloatingPickerProps<T>>>'
+  - uid: 'office-ui-fabric-react!BaseExtendedPicker#floatingPickerProps:member'
+    name: floatingPickerProps
+    fullName: floatingPickerProps
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'protected floatingPickerProps: IBaseFloatingPickerProps<T>;'
+      return:
+        type:
+          - IBaseFloatingPickerProps<T>
+  - uid: 'office-ui-fabric-react!BaseExtendedPicker#focus:member(1)'
+    name: focus()
     fullName: focus()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'focus(): void;'
       return:
-        type: void
+        type:
+          - void
         description: ''
-  - name: render()
-    uid: 'office-ui-fabric-react!BaseExtendedPicker#render:member(1)'
-    package: office-ui-fabric-react!
+  - uid: 'office-ui-fabric-react!BaseExtendedPicker#highlightedItems:member'
+    name: highlightedItems
+    fullName: highlightedItems
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly highlightedItems: T[];'
+      return:
+        type:
+          - 'T[]'
+  - uid: 'office-ui-fabric-react!BaseExtendedPicker#input:member'
+    name: input
+    fullName: input
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'protected input: React.RefObject<Autofill>;'
+      return:
+        type:
+          - React.RefObject<Autofill>
+  - uid: 'office-ui-fabric-react!BaseExtendedPicker#inputElement:member'
+    name: inputElement
+    fullName: inputElement
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly inputElement: HTMLInputElement | null;'
+      return:
+        type:
+          - HTMLInputElement | null
+  - uid: 'office-ui-fabric-react!BaseExtendedPicker#items:member'
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: any;'
+      return:
+        type:
+          - any
+  - uid: 'office-ui-fabric-react!BaseExtendedPicker#onBackspace:member'
+    name: onBackspace
+    fullName: onBackspace
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'protected onBackspace: (ev: React.KeyboardEvent<HTMLElement>) => void;'
+      return:
+        type:
+          - '(ev: React.KeyboardEvent<HTMLElement>) => void'
+  - uid: 'office-ui-fabric-react!BaseExtendedPicker#onCopy:member'
+    name: onCopy
+    fullName: onCopy
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'protected onCopy: (ev: React.ClipboardEvent<HTMLElement>) => void;'
+      return:
+        type:
+          - '(ev: React.ClipboardEvent<HTMLElement>) => void'
+  - uid: 'office-ui-fabric-react!BaseExtendedPicker#onInputChange:member'
+    name: onInputChange
+    fullName: onInputChange
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'protected onInputChange: (value: string, composing?: boolean | undefined) => void;'
+      return:
+        type:
+          - '(value: string, composing?: boolean | undefined) => void'
+  - uid: 'office-ui-fabric-react!BaseExtendedPicker#onInputClick:member'
+    name: onInputClick
+    fullName: onInputClick
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'protected onInputClick: (ev: React.MouseEvent<HTMLInputElement | Autofill, MouseEvent>) => void;'
+      return:
+        type:
+          - '(ev: React.MouseEvent<HTMLInputElement | Autofill, MouseEvent>) => void'
+  - uid: 'office-ui-fabric-react!BaseExtendedPicker#onInputFocus:member'
+    name: onInputFocus
+    fullName: onInputFocus
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'protected onInputFocus: (ev: React.FocusEvent<HTMLInputElement | Autofill>) => void;'
+      return:
+        type:
+          - '(ev: React.FocusEvent<HTMLInputElement | Autofill>) => void'
+  - uid: 'office-ui-fabric-react!BaseExtendedPicker#onPaste:member'
+    name: onPaste
+    fullName: onPaste
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'protected onPaste: (ev: React.ClipboardEvent<HTMLInputElement | Autofill>) => void;'
+      return:
+        type:
+          - '(ev: React.ClipboardEvent<HTMLInputElement | Autofill>) => void'
+  - uid: 'office-ui-fabric-react!BaseExtendedPicker#onSelectionChange:member'
+    name: onSelectionChange
+    fullName: onSelectionChange
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'protected onSelectionChange: () => void;'
+      return:
+        type:
+          - () => void
+  - uid: 'office-ui-fabric-react!BaseExtendedPicker#render:member(1)'
+    name: render()
     fullName: render()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'render(): JSX.Element;'
       return:
-        type: JSX.Element
+        type:
+          - JSX.Element
         description: ''
-  - name: renderFloatingPicker()
-    uid: 'office-ui-fabric-react!BaseExtendedPicker#renderFloatingPicker:member(1)'
-    package: office-ui-fabric-react!
+  - uid: 'office-ui-fabric-react!BaseExtendedPicker#renderFloatingPicker:member(1)'
+    name: renderFloatingPicker()
     fullName: renderFloatingPicker()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'protected renderFloatingPicker(): JSX.Element;'
       return:
-        type: JSX.Element
+        type:
+          - JSX.Element
         description: ''
-  - name: renderSelectedItemsList()
-    uid: >-
-      office-ui-fabric-react!BaseExtendedPicker#renderSelectedItemsList:member(1)
-    package: office-ui-fabric-react!
+  - uid: 'office-ui-fabric-react!BaseExtendedPicker#renderSelectedItemsList:member(1)'
+    name: renderSelectedItemsList()
     fullName: renderSelectedItemsList()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'protected renderSelectedItemsList(): JSX.Element;'
       return:
-        type: JSX.Element
+        type:
+          - JSX.Element
         description: ''
-  - name: UNSAFE_componentWillReceiveProps(newProps)
-    uid: >-
-      office-ui-fabric-react!BaseExtendedPicker#UNSAFE_componentWillReceiveProps:member(1)
-    package: office-ui-fabric-react!
+  - uid: 'office-ui-fabric-react!BaseExtendedPicker#root:member'
+    name: root
+    fullName: root
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'protected root: React.RefObject<HTMLDivElement>;'
+      return:
+        type:
+          - React.RefObject<HTMLDivElement>
+  - uid: 'office-ui-fabric-react!BaseExtendedPicker#selectedItemsList:member'
+    name: selectedItemsList
+    fullName: selectedItemsList
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'selectedItemsList: React.RefObject<BaseSelectedItemsList<T, IBaseSelectedItemsListProps<T>>>;'
+      return:
+        type:
+          - 'React.RefObject<BaseSelectedItemsList<T, IBaseSelectedItemsListProps<T>>>'
+  - uid: 'office-ui-fabric-react!BaseExtendedPicker#selectedItemsListProps:member'
+    name: selectedItemsListProps
+    fullName: selectedItemsListProps
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'protected selectedItemsListProps: IBaseSelectedItemsListProps<T>;'
+      return:
+        type:
+          - IBaseSelectedItemsListProps<T>
+  - uid: 'office-ui-fabric-react!BaseExtendedPicker#selection:member'
+    name: selection
+    fullName: selection
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'protected selection: Selection;'
+      return:
+        type:
+          - '@fluentui/utilities!Selection:class'
+  - uid: 'office-ui-fabric-react!BaseExtendedPicker#UNSAFE_componentWillReceiveProps:member(1)'
+    name: UNSAFE_componentWillReceiveProps(newProps)
     fullName: UNSAFE_componentWillReceiveProps(newProps)
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'UNSAFE_componentWillReceiveProps(newProps: P): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: newProps
           description: ''
-          type: P
-      return:
-        type: void
-        description: ''
-extends: 'React.Component&lt;P, IBaseExtendedPickerState&lt;T&gt;&gt; '
+          type:
+            - P

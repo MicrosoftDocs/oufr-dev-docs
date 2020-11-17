@@ -1,243 +1,246 @@
-### YamlMime:TSType
-name: ICommandBarProps
-uid: 'office-ui-fabric-react!ICommandBarProps:interface'
-package: office-ui-fabric-react!
-fullName: ICommandBarProps
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: ariaLabel
-    uid: 'office-ui-fabric-react!ICommandBarProps#ariaLabel:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-ui-fabric-react!ICommandBarProps:interface'
+    name: ICommandBarProps
+    fullName: ICommandBarProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'React.HTMLAttributes<HTMLDivElement> '
     package: office-ui-fabric-react!
-    fullName: ariaLabel
+    children:
+      - 'office-ui-fabric-react!ICommandBarProps#ariaLabel:member'
+      - 'office-ui-fabric-react!ICommandBarProps#buttonAs:member'
+      - 'office-ui-fabric-react!ICommandBarProps#className:member'
+      - 'office-ui-fabric-react!ICommandBarProps#componentRef:member'
+      - 'office-ui-fabric-react!ICommandBarProps#dataDidRender:member'
+      - 'office-ui-fabric-react!ICommandBarProps#farItems:member'
+      - 'office-ui-fabric-react!ICommandBarProps#items:member'
+      - 'office-ui-fabric-react!ICommandBarProps#onDataGrown:member'
+      - 'office-ui-fabric-react!ICommandBarProps#onDataReduced:member'
+      - 'office-ui-fabric-react!ICommandBarProps#onGrowData:member'
+      - 'office-ui-fabric-react!ICommandBarProps#onReduceData:member'
+      - 'office-ui-fabric-react!ICommandBarProps#overflowButtonAs:member'
+      - 'office-ui-fabric-react!ICommandBarProps#overflowButtonProps:member'
+      - 'office-ui-fabric-react!ICommandBarProps#overflowItems:member'
+      - 'office-ui-fabric-react!ICommandBarProps#shiftOnReduce:member'
+      - 'office-ui-fabric-react!ICommandBarProps#styles:member'
+      - 'office-ui-fabric-react!ICommandBarProps#theme:member'
+  - uid: 'office-ui-fabric-react!ICommandBarProps#ariaLabel:member'
     summary: >-
-      Accessibility text to be read by the screen reader when the user's focus
-      enters the command bar. The screen reader will read this text after
-      reading information about the first focusable item in the command bar.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Accessibility text to be read by the screen reader when the user's focus enters the command bar. The screen reader
+      will read this text after reading information about the first focusable item in the command bar.
+    name: ariaLabel
+    fullName: ariaLabel
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'ariaLabel?: string;'
       return:
-        type: string
-  - name: buttonAs
-    uid: 'office-ui-fabric-react!ICommandBarProps#buttonAs:member'
-    package: office-ui-fabric-react!
+        type:
+          - string
+  - uid: 'office-ui-fabric-react!ICommandBarProps#buttonAs:member'
+    summary: Custom component for the near and far item buttons. Not used for overflow menu items.
+    name: buttonAs
     fullName: buttonAs
-    summary: >-
-      Custom component for the near and far item buttons. Not used for overflow
-      menu items.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'buttonAs?: IComponentAs<IButtonProps>;'
       return:
-        type: IComponentAs&lt;IButtonProps&gt;
-  - name: className
-    uid: 'office-ui-fabric-react!ICommandBarProps#className:member'
-    package: office-ui-fabric-react!
-    fullName: className
+        type:
+          - IComponentAs<IButtonProps>
+  - uid: 'office-ui-fabric-react!ICommandBarProps#className:member'
     summary: Additional css class to apply to the command bar
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: className
+    fullName: className
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'className?: string;'
       return:
-        type: string
-  - name: componentRef
-    uid: 'office-ui-fabric-react!ICommandBarProps#componentRef:member'
-    package: office-ui-fabric-react!
-    fullName: componentRef
+        type:
+          - string
+  - uid: 'office-ui-fabric-react!ICommandBarProps#componentRef:member'
     summary: >-
-      Optional callback to access the ICommandBar interface. Use this instead of
-      ref for accessing the public methods and properties of the component.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Optional callback to access the ICommandBar interface. Use this instead of ref for accessing the public methods
+      and properties of the component.
+    name: componentRef
+    fullName: componentRef
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'componentRef?: IRefObject<ICommandBar>;'
       return:
-        type: IRefObject&lt;ICommandBar&gt;
-  - name: dataDidRender
-    uid: 'office-ui-fabric-react!ICommandBarProps#dataDidRender:member'
-    package: office-ui-fabric-react!
-    fullName: dataDidRender
+        type:
+          - IRefObject<ICommandBar>
+  - uid: 'office-ui-fabric-react!ICommandBarProps#dataDidRender:member'
     summary: >-
-      Function to be called every time data is rendered. It provides the data
-      that was actually rendered. A use case would be adding telemetry when a
-      particular control is shown in an overflow or dropped as a result of
-      `onReduceData`<!-- -->, or to count the number of renders that an
-      implementation of `onReduceData` triggers.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Function to be called every time data is rendered. It provides the data that was actually rendered. A use case
+      would be adding telemetry when a particular control is shown in an overflow or dropped as a result of
+      `onReduceData`<!-- -->, or to count the number of renders that an implementation of `onReduceData` triggers.
+    name: dataDidRender
+    fullName: dataDidRender
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'dataDidRender?: (renderedData: any) => void;'
       return:
-        type: '(renderedData: any) =&gt; void'
-  - name: farItems
-    uid: 'office-ui-fabric-react!ICommandBarProps#farItems:member'
-    package: office-ui-fabric-react!
+        type:
+          - '(renderedData: any) => void'
+  - uid: 'office-ui-fabric-react!ICommandBarProps#farItems:member'
+    summary: 'Items to render on the right side (or left, in RTL). ICommandBarItemProps extends IContextualMenuItem.'
+    name: farItems
     fullName: farItems
-    summary: >-
-      Items to render on the right side (or left, in RTL). ICommandBarItemProps
-      extends IContextualMenuItem.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'farItems?: ICommandBarItemProps[];'
       return:
-        type: 'ICommandBarItemProps[]'
-  - name: items
-    uid: 'office-ui-fabric-react!ICommandBarProps#items:member'
-    package: office-ui-fabric-react!
-    fullName: items
+        type:
+          - 'ICommandBarItemProps[]'
+  - uid: 'office-ui-fabric-react!ICommandBarProps#items:member'
     summary: Items to render. ICommandBarItemProps extends IContextualMenuItem.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'items: ICommandBarItemProps[];'
       return:
-        type: 'ICommandBarItemProps[]'
-  - name: onDataGrown
-    uid: 'office-ui-fabric-react!ICommandBarProps#onDataGrown:member'
-    package: office-ui-fabric-react!
-    fullName: onDataGrown
+        type:
+          - 'ICommandBarItemProps[]'
+  - uid: 'office-ui-fabric-react!ICommandBarProps#onDataGrown:member'
     summary: Callback invoked when data has been grown.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onDataGrown
+    fullName: onDataGrown
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onDataGrown?: (movedItem: ICommandBarItemProps) => void;'
       return:
-        type: '(movedItem: ICommandBarItemProps) =&gt; void'
-  - name: onDataReduced
-    uid: 'office-ui-fabric-react!ICommandBarProps#onDataReduced:member'
-    package: office-ui-fabric-react!
-    fullName: onDataReduced
+        type:
+          - '(movedItem: ICommandBarItemProps) => void'
+  - uid: 'office-ui-fabric-react!ICommandBarProps#onDataReduced:member'
     summary: Callback invoked when data has been reduced.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onDataReduced
+    fullName: onDataReduced
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onDataReduced?: (movedItem: ICommandBarItemProps) => void;'
       return:
-        type: '(movedItem: ICommandBarItemProps) =&gt; void'
-  - name: onGrowData
-    uid: 'office-ui-fabric-react!ICommandBarProps#onGrowData:member'
-    package: office-ui-fabric-react!
-    fullName: onGrowData
+        type:
+          - '(movedItem: ICommandBarItemProps) => void'
+  - uid: 'office-ui-fabric-react!ICommandBarProps#onGrowData:member'
     summary: >-
-      Custom function to grow data if items are too small for the given space.
-      Return `undefined` if no more steps can be taken to avoid infinate loop.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Custom function to grow data if items are too small for the given space. Return `undefined` if no more steps can
+      be taken to avoid infinate loop.
+    name: onGrowData
+    fullName: onGrowData
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onGrowData?: (data: ICommandBarData) => ICommandBarData | undefined;'
       return:
-        type: '(data: ICommandBarData) =&gt; ICommandBarData | undefined'
-  - name: onReduceData
-    uid: 'office-ui-fabric-react!ICommandBarProps#onReduceData:member'
-    package: office-ui-fabric-react!
-    fullName: onReduceData
+        type:
+          - '(data: ICommandBarData) => ICommandBarData | undefined'
+  - uid: 'office-ui-fabric-react!ICommandBarProps#onReduceData:member'
     summary: >-
-      Custom function to reduce data if items do not fit in given space. Return
-      `undefined` if no more steps can be taken to avoid infinate loop.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Custom function to reduce data if items do not fit in given space. Return `undefined` if no more steps can be
+      taken to avoid infinate loop.
+    name: onReduceData
+    fullName: onReduceData
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onReduceData?: (data: ICommandBarData) => ICommandBarData | undefined;'
       return:
-        type: '(data: ICommandBarData) =&gt; ICommandBarData | undefined'
-  - name: overflowButtonAs
-    uid: 'office-ui-fabric-react!ICommandBarProps#overflowButtonAs:member'
-    package: office-ui-fabric-react!
-    fullName: overflowButtonAs
+        type:
+          - '(data: ICommandBarData) => ICommandBarData | undefined'
+  - uid: 'office-ui-fabric-react!ICommandBarProps#overflowButtonAs:member'
     summary: Custom component for the overflow button.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: overflowButtonAs
+    fullName: overflowButtonAs
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'overflowButtonAs?: IComponentAs<IButtonProps>;'
       return:
-        type: IComponentAs&lt;IButtonProps&gt;
-  - name: overflowButtonProps
-    uid: 'office-ui-fabric-react!ICommandBarProps#overflowButtonProps:member'
-    package: office-ui-fabric-react!
-    fullName: overflowButtonProps
+        type:
+          - IComponentAs<IButtonProps>
+  - uid: 'office-ui-fabric-react!ICommandBarProps#overflowButtonProps:member'
     summary: >-
-      Props to be passed to overflow button. If `menuProps` are passed through
-      this prop, any items provided will be prepended to any computed overflow
-      items.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Props to be passed to overflow button. If `menuProps` are passed through this prop, any items provided will be
+      prepended to any computed overflow items.
+    name: overflowButtonProps
+    fullName: overflowButtonProps
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'overflowButtonProps?: IButtonProps;'
       return:
-        type: '<xref uid="office-ui-fabric-react!IButtonProps:interface" />'
-  - name: overflowItems
-    uid: 'office-ui-fabric-react!ICommandBarProps#overflowItems:member'
-    package: office-ui-fabric-react!
+        type:
+          - 'office-ui-fabric-react!IButtonProps:interface'
+  - uid: 'office-ui-fabric-react!ICommandBarProps#overflowItems:member'
+    summary: Default items to have in the overflow menu. ICommandBarItemProps extends IContextualMenuItem.
+    name: overflowItems
     fullName: overflowItems
-    summary: >-
-      Default items to have in the overflow menu. ICommandBarItemProps extends
-      IContextualMenuItem.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'overflowItems?: ICommandBarItemProps[];'
       return:
-        type: 'ICommandBarItemProps[]'
-  - name: shiftOnReduce
-    uid: 'office-ui-fabric-react!ICommandBarProps#shiftOnReduce:member'
-    package: office-ui-fabric-react!
+        type:
+          - 'ICommandBarItemProps[]'
+  - uid: 'office-ui-fabric-react!ICommandBarProps#shiftOnReduce:member'
+    summary: 'When true, items will be ''shifted'' off the front of the array when reduced, and unshifted during grow.'
+    name: shiftOnReduce
     fullName: shiftOnReduce
-    summary: >-
-      When true, items will be 'shifted' off the front of the array when
-      reduced, and unshifted during grow.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'shiftOnReduce?: boolean;'
       return:
-        type: boolean
-  - name: styles
-    uid: 'office-ui-fabric-react!ICommandBarProps#styles:member'
-    package: office-ui-fabric-react!
-    fullName: styles
+        type:
+          - boolean
+  - uid: 'office-ui-fabric-react!ICommandBarProps#styles:member'
     summary: Customized styling that will layer on top of the variant rules.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: styles
+    fullName: styles
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        styles?: IStyleFunctionOrObject<ICommandBarStyleProps,
-        ICommandBarStyles>;
+      content: 'styles?: IStyleFunctionOrObject<ICommandBarStyleProps, ICommandBarStyles>;'
       return:
-        type: 'IStyleFunctionOrObject&lt;ICommandBarStyleProps, ICommandBarStyles&gt;'
-  - name: theme
-    uid: 'office-ui-fabric-react!ICommandBarProps#theme:member'
-    package: office-ui-fabric-react!
-    fullName: theme
+        type:
+          - 'IStyleFunctionOrObject<ICommandBarStyleProps, ICommandBarStyles>'
+  - uid: 'office-ui-fabric-react!ICommandBarProps#theme:member'
     summary: Theme provided by HOC.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'theme?: ITheme;'
       return:
-        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
-extends: 'React.HTMLAttributes&lt;HTMLDivElement&gt; '
+        type:
+          - '@fluentui/theme!ITheme:interface'

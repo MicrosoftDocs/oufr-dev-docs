@@ -1,163 +1,166 @@
-### YamlMime:TSType
-name: DropdownBase
-uid: 'office-ui-fabric-react!DropdownBase:class'
-package: office-ui-fabric-react!
-fullName: DropdownBase
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: class
-constructors:
-  - name: (constructor)(props)
-    uid: 'office-ui-fabric-react!DropdownBase:constructor(1)'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-ui-fabric-react!DropdownBase:class'
+    name: DropdownBase
+    fullName: DropdownBase
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'React.Component<IDropdownInternalProps, IDropdownState> '
+    implements:
+      - 'IDropdown '
     package: office-ui-fabric-react!
-    fullName: (constructor)(props)
+    children:
+      - 'office-ui-fabric-react!DropdownBase:constructor(1)'
+      - 'office-ui-fabric-react!DropdownBase#componentDidUpdate:member(1)'
+      - 'office-ui-fabric-react!DropdownBase#componentWillUnmount:member(1)'
+      - 'office-ui-fabric-react!DropdownBase.defaultProps:member'
+      - 'office-ui-fabric-react!DropdownBase#focus:member(1)'
+      - 'office-ui-fabric-react!DropdownBase#render:member(1)'
+      - 'office-ui-fabric-react!DropdownBase#selectedOptions:member'
+      - 'office-ui-fabric-react!DropdownBase#setSelectedIndex:member(1)'
+      - 'office-ui-fabric-react!DropdownBase#UNSAFE_componentWillReceiveProps:member(1)'
+  - uid: 'office-ui-fabric-react!DropdownBase:constructor(1)'
     summary: Constructs a new instance of the `DropdownBase` class
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: (constructor)(props)
+    fullName: (constructor)(props)
+    langs:
+      - typeScript
+    type: constructor
     syntax:
       content: 'constructor(props: IDropdownProps);'
       parameters:
         - id: props
           description: ''
-          type: IDropdownProps
-properties:
-  - name: defaultProps
-    uid: 'office-ui-fabric-react!DropdownBase.defaultProps:member'
-    package: office-ui-fabric-react!
+          type:
+            - IDropdownProps
+  - uid: 'office-ui-fabric-react!DropdownBase#componentDidUpdate:member(1)'
+    name: 'componentDidUpdate(prevProps, prevState)'
+    fullName: 'componentDidUpdate(prevProps, prevState)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'componentDidUpdate(prevProps: IDropdownProps, prevState: IDropdownState): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: prevProps
+          description: ''
+          type:
+            - IDropdownProps
+        - id: prevState
+          description: ''
+          type:
+            - 'office-ui-fabric-react!IDropdownState:interface'
+  - uid: 'office-ui-fabric-react!DropdownBase#componentWillUnmount:member(1)'
+    name: componentWillUnmount()
+    fullName: componentWillUnmount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'componentWillUnmount(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'office-ui-fabric-react!DropdownBase.defaultProps:member'
+    name: defaultProps
     fullName: defaultProps
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: |-
         static defaultProps: {
                 options: any[];
             };
       return:
-        type: |-
-          {
-                  options: any[];
-              }
-  - name: selectedOptions
-    uid: 'office-ui-fabric-react!DropdownBase#selectedOptions:member'
-    package: office-ui-fabric-react!
-    fullName: selectedOptions
-    summary: All selected options
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'readonly selectedOptions: IDropdownOption[];'
-      return:
-        type: 'IDropdownOption[]'
-methods:
-  - name: 'componentDidUpdate(prevProps, prevState)'
-    uid: 'office-ui-fabric-react!DropdownBase#componentDidUpdate:member(1)'
-    package: office-ui-fabric-react!
-    fullName: 'componentDidUpdate(prevProps, prevState)'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        componentDidUpdate(prevProps: IDropdownProps, prevState:
-        IDropdownState): void;
-      parameters:
-        - id: prevProps
-          description: ''
-          type: IDropdownProps
-        - id: prevState
-          description: ''
-          type: '<xref uid="office-ui-fabric-react!IDropdownState:interface" />'
-      return:
-        type: void
-        description: ''
-  - name: componentWillUnmount()
-    uid: 'office-ui-fabric-react!DropdownBase#componentWillUnmount:member(1)'
-    package: office-ui-fabric-react!
-    fullName: componentWillUnmount()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'componentWillUnmount(): void;'
-      return:
-        type: void
-        description: ''
-  - name: focus(shouldOpenOnFocus)
-    uid: 'office-ui-fabric-react!DropdownBase#focus:member(1)'
-    package: office-ui-fabric-react!
+        type:
+          - |-
+            {
+                    options: any[];
+                }
+  - uid: 'office-ui-fabric-react!DropdownBase#focus:member(1)'
+    name: focus(shouldOpenOnFocus)
     fullName: focus(shouldOpenOnFocus)
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'focus(shouldOpenOnFocus?: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: shouldOpenOnFocus
           description: ''
-          type: boolean
-      return:
-        type: void
-        description: ''
-  - name: render()
-    uid: 'office-ui-fabric-react!DropdownBase#render:member(1)'
-    package: office-ui-fabric-react!
+          type:
+            - boolean
+  - uid: 'office-ui-fabric-react!DropdownBase#render:member(1)'
+    name: render()
     fullName: render()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'render(): JSX.Element;'
       return:
-        type: JSX.Element
+        type:
+          - JSX.Element
         description: ''
-  - name: 'setSelectedIndex(event, index)'
-    uid: 'office-ui-fabric-react!DropdownBase#setSelectedIndex:member(1)'
-    package: office-ui-fabric-react!
-    fullName: 'setSelectedIndex(event, index)'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+  - uid: 'office-ui-fabric-react!DropdownBase#selectedOptions:member'
+    summary: All selected options
+    name: selectedOptions
+    fullName: selectedOptions
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        setSelectedIndex(event: React.FormEvent<HTMLDivElement>, index: number):
-        void;
+      content: 'readonly selectedOptions: IDropdownOption[];'
+      return:
+        type:
+          - 'IDropdownOption[]'
+  - uid: 'office-ui-fabric-react!DropdownBase#setSelectedIndex:member(1)'
+    name: 'setSelectedIndex(event, index)'
+    fullName: 'setSelectedIndex(event, index)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setSelectedIndex(event: React.FormEvent<HTMLDivElement>, index: number): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: event
           description: ''
-          type: React.FormEvent&lt;HTMLDivElement&gt;
+          type:
+            - React.FormEvent<HTMLDivElement>
         - id: index
           description: ''
-          type: number
-      return:
-        type: void
-        description: ''
-  - name: UNSAFE_componentWillReceiveProps(newProps)
-    uid: >-
-      office-ui-fabric-react!DropdownBase#UNSAFE_componentWillReceiveProps:member(1)
-    package: office-ui-fabric-react!
+          type:
+            - number
+  - uid: 'office-ui-fabric-react!DropdownBase#UNSAFE_componentWillReceiveProps:member(1)'
+    name: UNSAFE_componentWillReceiveProps(newProps)
     fullName: UNSAFE_componentWillReceiveProps(newProps)
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'UNSAFE_componentWillReceiveProps(newProps: IDropdownProps): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: newProps
           description: ''
-          type: IDropdownProps
-      return:
-        type: void
-        description: ''
-extends: 'React.Component&lt;IDropdownInternalProps, IDropdownState&gt; '
+          type:
+            - IDropdownProps

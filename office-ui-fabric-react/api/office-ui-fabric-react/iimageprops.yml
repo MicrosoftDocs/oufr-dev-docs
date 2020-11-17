@@ -1,148 +1,152 @@
-### YamlMime:TSType
-name: IImageProps
-uid: 'office-ui-fabric-react!IImageProps:interface'
-package: office-ui-fabric-react!
-fullName: IImageProps
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: className
-    uid: 'office-ui-fabric-react!IImageProps#className:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-ui-fabric-react!IImageProps:interface'
+    name: IImageProps
+    fullName: IImageProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'React.ImgHTMLAttributes<HTMLImageElement> '
     package: office-ui-fabric-react!
-    fullName: className
+    children:
+      - 'office-ui-fabric-react!IImageProps#className:member'
+      - 'office-ui-fabric-react!IImageProps#coverStyle:member'
+      - 'office-ui-fabric-react!IImageProps#errorSrc:member'
+      - 'office-ui-fabric-react!IImageProps#imageFit:member'
+      - 'office-ui-fabric-react!IImageProps#maximizeFrame:member'
+      - 'office-ui-fabric-react!IImageProps#onLoadingStateChange:member'
+      - 'office-ui-fabric-react!IImageProps#shouldFadeIn:member'
+      - 'office-ui-fabric-react!IImageProps#shouldStartVisible:member'
+      - 'office-ui-fabric-react!IImageProps#styles:member'
+      - 'office-ui-fabric-react!IImageProps#theme:member'
+  - uid: 'office-ui-fabric-react!IImageProps#className:member'
     summary: Additional css class to apply to the Component
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: className
+    fullName: className
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'className?: string;'
       return:
-        type: string
-  - name: coverStyle
-    uid: 'office-ui-fabric-react!IImageProps#coverStyle:member'
-    package: office-ui-fabric-react!
-    fullName: coverStyle
+        type:
+          - string
+  - uid: 'office-ui-fabric-react!IImageProps#coverStyle:member'
     summary: >-
-      Specifies the cover style to be used for this image. If not specified,
-      this will be dynamically calculated based on the aspect ratio for the
-      image.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Specifies the cover style to be used for this image. If not specified, this will be dynamically calculated based
+      on the aspect ratio for the image.
+    name: coverStyle
+    fullName: coverStyle
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'coverStyle?: ImageCoverStyle;'
       return:
-        type: ImageCoverStyle
-  - name: errorSrc
-    uid: 'office-ui-fabric-react!IImageProps#errorSrc:member'
-    package: office-ui-fabric-react!
-    fullName: errorSrc
+        type:
+          - ImageCoverStyle
+  - uid: 'office-ui-fabric-react!IImageProps#errorSrc:member'
     summary: >-
-      Deprecated at v1.3.6, to replace the src in case of errors, use
-      `onLoadingStateChange` instead and rerender the Image with a difference
-      src.
-    remarks: ''
-    isPreview: false
-    isDeprecated: true
-    customDeprecatedMessage: >-
-      Use `onLoadingStateChange` instead and rerender the Image with a
-      difference src.
+      Deprecated at v1.3.6, to replace the src in case of errors, use `onLoadingStateChange` instead and rerender the
+      Image with a difference src.
+    deprecated:
+      content: Use `onLoadingStateChange` instead and rerender the Image with a difference src.
+    name: errorSrc
+    fullName: errorSrc
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'errorSrc?: string;'
       return:
-        type: string
-  - name: imageFit
-    uid: 'office-ui-fabric-react!IImageProps#imageFit:member'
-    package: office-ui-fabric-react!
-    fullName: imageFit
+        type:
+          - string
+  - uid: 'office-ui-fabric-react!IImageProps#imageFit:member'
     summary: Used to determine how the image is scaled and cropped to fit the frame.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: imageFit
+    fullName: imageFit
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'imageFit?: ImageFit;'
       return:
-        type: ImageFit
-  - name: maximizeFrame
-    uid: 'office-ui-fabric-react!IImageProps#maximizeFrame:member'
-    package: office-ui-fabric-react!
-    fullName: maximizeFrame
+        type:
+          - ImageFit
+  - uid: 'office-ui-fabric-react!IImageProps#maximizeFrame:member'
     summary: 'If true, the image frame will expand to fill its parent container.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: maximizeFrame
+    fullName: maximizeFrame
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'maximizeFrame?: boolean;'
       return:
-        type: boolean
-  - name: onLoadingStateChange
-    uid: 'office-ui-fabric-react!IImageProps#onLoadingStateChange:member'
-    package: office-ui-fabric-react!
-    fullName: onLoadingStateChange
+        type:
+          - boolean
+  - uid: 'office-ui-fabric-react!IImageProps#onLoadingStateChange:member'
     summary: >-
-      Optional callback method for when the image load state has changed. The
-      'loadState' parameter indicates the current state of the Image.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Optional callback method for when the image load state has changed. The 'loadState' parameter indicates the
+      current state of the Image.
+    name: onLoadingStateChange
+    fullName: onLoadingStateChange
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onLoadingStateChange?: (loadState: ImageLoadState) => void;'
       return:
-        type: '(loadState: ImageLoadState) =&gt; void'
-  - name: shouldFadeIn
-    uid: 'office-ui-fabric-react!IImageProps#shouldFadeIn:member'
-    package: office-ui-fabric-react!
-    fullName: shouldFadeIn
+        type:
+          - '(loadState: ImageLoadState) => void'
+  - uid: 'office-ui-fabric-react!IImageProps#shouldFadeIn:member'
     summary: 'If true, fades the image in when loaded.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: shouldFadeIn
+    fullName: shouldFadeIn
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'shouldFadeIn?: boolean;'
       return:
-        type: boolean
-  - name: shouldStartVisible
-    uid: 'office-ui-fabric-react!IImageProps#shouldStartVisible:member'
-    package: office-ui-fabric-react!
-    fullName: shouldStartVisible
+        type:
+          - boolean
+  - uid: 'office-ui-fabric-react!IImageProps#shouldStartVisible:member'
     summary: >-
-      If true, the image starts as visible and is hidden on error. Otherwise,
-      the image is hidden until it is successfully loaded. This disables
-      shouldFadeIn.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      If true, the image starts as visible and is hidden on error. Otherwise, the image is hidden until it is
+      successfully loaded. This disables shouldFadeIn.
+    name: shouldStartVisible
+    fullName: shouldStartVisible
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'shouldStartVisible?: boolean;'
       return:
-        type: boolean
-  - name: styles
-    uid: 'office-ui-fabric-react!IImageProps#styles:member'
-    package: office-ui-fabric-react!
+        type:
+          - boolean
+  - uid: 'office-ui-fabric-react!IImageProps#styles:member'
+    summary: Call to provide customized styling that will layer on top of the variant rules
+    name: styles
     fullName: styles
-    summary: >-
-      Call to provide customized styling that will layer on top of the variant
-      rules
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'styles?: IStyleFunctionOrObject<IImageStyleProps, IImageStyles>;'
       return:
-        type: 'IStyleFunctionOrObject&lt;IImageStyleProps, IImageStyles&gt;'
-  - name: theme
-    uid: 'office-ui-fabric-react!IImageProps#theme:member'
-    package: office-ui-fabric-react!
-    fullName: theme
+        type:
+          - 'IStyleFunctionOrObject<IImageStyleProps, IImageStyles>'
+  - uid: 'office-ui-fabric-react!IImageProps#theme:member'
     summary: Theme provided by HOC.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'theme?: ITheme;'
       return:
-        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
-extends: 'React.ImgHTMLAttributes&lt;HTMLImageElement&gt; '
+        type:
+          - '@fluentui/theme!ITheme:interface'

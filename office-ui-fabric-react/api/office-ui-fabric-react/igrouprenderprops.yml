@@ -1,155 +1,166 @@
-### YamlMime:TSType
-name: IGroupRenderProps
-uid: 'office-ui-fabric-react!IGroupRenderProps:interface'
-package: office-ui-fabric-react!
-fullName: IGroupRenderProps
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: collapseAllVisibility
-    uid: 'office-ui-fabric-react!IGroupRenderProps#collapseAllVisibility:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-ui-fabric-react!IGroupRenderProps:interface'
+    name: IGroupRenderProps
+    fullName: IGroupRenderProps
+    langs:
+      - typeScript
+    type: interface
     package: office-ui-fabric-react!
-    fullName: collapseAllVisibility
+    children:
+      - 'office-ui-fabric-react!IGroupRenderProps#collapseAllVisibility:member'
+      - 'office-ui-fabric-react!IGroupRenderProps#footerProps:member'
+      - 'office-ui-fabric-react!IGroupRenderProps#getGroupItemLimit:member'
+      - 'office-ui-fabric-react!IGroupRenderProps#headerProps:member'
+      - 'office-ui-fabric-react!IGroupRenderProps#isAllGroupsCollapsed:member'
+      - 'office-ui-fabric-react!IGroupRenderProps#onRenderFooter:member'
+      - 'office-ui-fabric-react!IGroupRenderProps#onRenderHeader:member'
+      - 'office-ui-fabric-react!IGroupRenderProps#onRenderShowAll:member'
+      - 'office-ui-fabric-react!IGroupRenderProps#onToggleCollapseAll:member'
+      - 'office-ui-fabric-react!IGroupRenderProps#role:member'
+      - 'office-ui-fabric-react!IGroupRenderProps#showAllProps:member'
+      - 'office-ui-fabric-react!IGroupRenderProps#showEmptyGroups:member'
+  - uid: 'office-ui-fabric-react!IGroupRenderProps#collapseAllVisibility:member'
     summary: Flag to indicate whether to ignore the collapsing icon on header.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: collapseAllVisibility
+    fullName: collapseAllVisibility
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'collapseAllVisibility?: CollapseAllVisibility;'
       return:
-        type: CollapseAllVisibility
-  - name: footerProps
-    uid: 'office-ui-fabric-react!IGroupRenderProps#footerProps:member'
-    package: office-ui-fabric-react!
-    fullName: footerProps
+        type:
+          - CollapseAllVisibility
+  - uid: 'office-ui-fabric-react!IGroupRenderProps#footerProps:member'
     summary: Information to pass in to the group footer.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: footerProps
+    fullName: footerProps
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'footerProps?: IGroupFooterProps;'
       return:
-        type: IGroupFooterProps
-  - name: getGroupItemLimit
-    uid: 'office-ui-fabric-react!IGroupRenderProps#getGroupItemLimit:member'
-    package: office-ui-fabric-react!
-    fullName: getGroupItemLimit
+        type:
+          - IGroupFooterProps
+  - uid: 'office-ui-fabric-react!IGroupRenderProps#getGroupItemLimit:member'
     summary: Grouping item limit.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: getGroupItemLimit
+    fullName: getGroupItemLimit
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'getGroupItemLimit?: (group: IGroup) => number;'
       return:
-        type: '(group: IGroup) =&gt; number'
-  - name: headerProps
-    uid: 'office-ui-fabric-react!IGroupRenderProps#headerProps:member'
-    package: office-ui-fabric-react!
-    fullName: headerProps
+        type:
+          - '(group: IGroup) => number'
+  - uid: 'office-ui-fabric-react!IGroupRenderProps#headerProps:member'
     summary: Information to pass in to the group header.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: headerProps
+    fullName: headerProps
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'headerProps?: IGroupHeaderProps;'
       return:
-        type: IGroupHeaderProps
-  - name: isAllGroupsCollapsed
-    uid: 'office-ui-fabric-react!IGroupRenderProps#isAllGroupsCollapsed:member'
-    package: office-ui-fabric-react!
-    fullName: isAllGroupsCollapsed
+        type:
+          - IGroupHeaderProps
+  - uid: 'office-ui-fabric-react!IGroupRenderProps#isAllGroupsCollapsed:member'
     summary: Boolean indicating if all groups are in collapsed state.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: isAllGroupsCollapsed
+    fullName: isAllGroupsCollapsed
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'isAllGroupsCollapsed?: boolean;'
       return:
-        type: boolean
-  - name: onRenderFooter
-    uid: 'office-ui-fabric-react!IGroupRenderProps#onRenderFooter:member'
-    package: office-ui-fabric-react!
-    fullName: onRenderFooter
+        type:
+          - boolean
+  - uid: 'office-ui-fabric-react!IGroupRenderProps#onRenderFooter:member'
     summary: Override which allows the caller to provide a custom footer.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onRenderFooter
+    fullName: onRenderFooter
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onRenderFooter?: IRenderFunction<IGroupFooterProps>;'
       return:
-        type: IRenderFunction&lt;IGroupFooterProps&gt;
-  - name: onRenderHeader
-    uid: 'office-ui-fabric-react!IGroupRenderProps#onRenderHeader:member'
-    package: office-ui-fabric-react!
-    fullName: onRenderHeader
+        type:
+          - IRenderFunction<IGroupFooterProps>
+  - uid: 'office-ui-fabric-react!IGroupRenderProps#onRenderHeader:member'
     summary: Override which allows the caller to provide a custom header.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onRenderHeader
+    fullName: onRenderHeader
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onRenderHeader?: IRenderFunction<IGroupHeaderProps>;'
       return:
-        type: IRenderFunction&lt;IGroupHeaderProps&gt;
-  - name: onRenderShowAll
-    uid: 'office-ui-fabric-react!IGroupRenderProps#onRenderShowAll:member'
-    package: office-ui-fabric-react!
-    fullName: onRenderShowAll
+        type:
+          - IRenderFunction<IGroupHeaderProps>
+  - uid: 'office-ui-fabric-react!IGroupRenderProps#onRenderShowAll:member'
     summary: Override which allows the caller to provide a custom Show All link.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onRenderShowAll
+    fullName: onRenderShowAll
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onRenderShowAll?: IRenderFunction<IGroupShowAllProps>;'
       return:
-        type: IRenderFunction&lt;IGroupShowAllProps&gt;
-  - name: onToggleCollapseAll
-    uid: 'office-ui-fabric-react!IGroupRenderProps#onToggleCollapseAll:member'
-    package: office-ui-fabric-react!
-    fullName: onToggleCollapseAll
+        type:
+          - IRenderFunction<IGroupShowAllProps>
+  - uid: 'office-ui-fabric-react!IGroupRenderProps#onToggleCollapseAll:member'
     summary: Callback for when all groups are expanded or collapsed.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onToggleCollapseAll
+    fullName: onToggleCollapseAll
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onToggleCollapseAll?: (isAllCollapsed: boolean) => void;'
       return:
-        type: '(isAllCollapsed: boolean) =&gt; void'
-  - name: role
-    uid: 'office-ui-fabric-react!IGroupRenderProps#role:member'
-    package: office-ui-fabric-react!
-    fullName: role
+        type:
+          - '(isAllCollapsed: boolean) => void'
+  - uid: 'office-ui-fabric-react!IGroupRenderProps#role:member'
     summary: Override which allows the caller to provide a custom aria role
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: role
+    fullName: role
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'role?: string;'
       return:
-        type: string
-  - name: showAllProps
-    uid: 'office-ui-fabric-react!IGroupRenderProps#showAllProps:member'
-    package: office-ui-fabric-react!
-    fullName: showAllProps
+        type:
+          - string
+  - uid: 'office-ui-fabric-react!IGroupRenderProps#showAllProps:member'
     summary: Information to pass in to the group Show all footer.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: showAllProps
+    fullName: showAllProps
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'showAllProps?: IGroupShowAllProps;'
       return:
-        type: IGroupShowAllProps
-  - name: showEmptyGroups
-    uid: 'office-ui-fabric-react!IGroupRenderProps#showEmptyGroups:member'
-    package: office-ui-fabric-react!
-    fullName: showEmptyGroups
+        type:
+          - IGroupShowAllProps
+  - uid: 'office-ui-fabric-react!IGroupRenderProps#showEmptyGroups:member'
     summary: Boolean indicating if empty groups are shown
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: showEmptyGroups
+    fullName: showEmptyGroups
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'showEmptyGroups?: boolean;'
       return:
-        type: boolean
+        type:
+          - boolean

@@ -1,679 +1,687 @@
-### YamlMime:TSType
-name: IButtonProps
-uid: 'office-ui-fabric-react!IButtonProps:interface'
-package: office-ui-fabric-react!
-fullName: IButtonProps
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: allowDisabledFocus
-    uid: 'office-ui-fabric-react!IButtonProps#allowDisabledFocus:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-ui-fabric-react!IButtonProps:interface'
+    name: IButtonProps
+    fullName: IButtonProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - >-
+        React.AllHTMLAttributes<HTMLAnchorElement | HTMLButtonElement | HTMLDivElement | BaseButton | Button |
+        HTMLSpanElement> 
     package: office-ui-fabric-react!
-    fullName: allowDisabledFocus
+    children:
+      - 'office-ui-fabric-react!IButtonProps#allowDisabledFocus:member'
+      - 'office-ui-fabric-react!IButtonProps#ariaDescription:member'
+      - 'office-ui-fabric-react!IButtonProps#ariaHidden:member'
+      - 'office-ui-fabric-react!IButtonProps#ariaLabel:member'
+      - 'office-ui-fabric-react!IButtonProps#buttonType:member'
+      - 'office-ui-fabric-react!IButtonProps#checked:member'
+      - 'office-ui-fabric-react!IButtonProps#className:member'
+      - 'office-ui-fabric-react!IButtonProps#componentRef:member'
+      - 'office-ui-fabric-react!IButtonProps#data:member'
+      - 'office-ui-fabric-react!IButtonProps#defaultRender:member'
+      - 'office-ui-fabric-react!IButtonProps#description:member'
+      - 'office-ui-fabric-react!IButtonProps#disabled:member'
+      - 'office-ui-fabric-react!IButtonProps#elementRef:member'
+      - 'office-ui-fabric-react!IButtonProps#getClassNames:member'
+      - 'office-ui-fabric-react!IButtonProps#getSplitButtonClassNames:member'
+      - 'office-ui-fabric-react!IButtonProps#href:member'
+      - 'office-ui-fabric-react!IButtonProps#iconProps:member'
+      - 'office-ui-fabric-react!IButtonProps#keytipProps:member'
+      - 'office-ui-fabric-react!IButtonProps#menuAs:member'
+      - 'office-ui-fabric-react!IButtonProps#menuIconProps:member'
+      - 'office-ui-fabric-react!IButtonProps#menuProps:member'
+      - 'office-ui-fabric-react!IButtonProps#menuTriggerKeyCode:member'
+      - 'office-ui-fabric-react!IButtonProps#onAfterMenuDismiss:member'
+      - 'office-ui-fabric-react!IButtonProps#onMenuClick:member'
+      - 'office-ui-fabric-react!IButtonProps#onRenderAriaDescription:member'
+      - 'office-ui-fabric-react!IButtonProps#onRenderChildren:member'
+      - 'office-ui-fabric-react!IButtonProps#onRenderDescription:member'
+      - 'office-ui-fabric-react!IButtonProps#onRenderIcon:member'
+      - 'office-ui-fabric-react!IButtonProps#onRenderMenu:member'
+      - 'office-ui-fabric-react!IButtonProps#onRenderMenuIcon:member'
+      - 'office-ui-fabric-react!IButtonProps#onRenderText:member'
+      - 'office-ui-fabric-react!IButtonProps#persistMenu:member'
+      - 'office-ui-fabric-react!IButtonProps#primary:member'
+      - 'office-ui-fabric-react!IButtonProps#primaryActionButtonProps:member'
+      - 'office-ui-fabric-react!IButtonProps#primaryDisabled:member'
+      - 'office-ui-fabric-react!IButtonProps#renderPersistedMenuHiddenOnMount:member'
+      - 'office-ui-fabric-react!IButtonProps#rootProps:member'
+      - 'office-ui-fabric-react!IButtonProps#secondaryText:member'
+      - 'office-ui-fabric-react!IButtonProps#split:member'
+      - 'office-ui-fabric-react!IButtonProps#splitButtonAriaLabel:member'
+      - 'office-ui-fabric-react!IButtonProps#splitButtonMenuProps:member'
+      - 'office-ui-fabric-react!IButtonProps#styles:member'
+      - 'office-ui-fabric-react!IButtonProps#text:member'
+      - 'office-ui-fabric-react!IButtonProps#theme:member'
+      - 'office-ui-fabric-react!IButtonProps#toggle:member'
+      - 'office-ui-fabric-react!IButtonProps#toggled:member'
+      - 'office-ui-fabric-react!IButtonProps#uniqueId:member'
+  - uid: 'office-ui-fabric-react!IButtonProps#allowDisabledFocus:member'
     summary: Whether the button can have focus in disabled mode
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: allowDisabledFocus
+    fullName: allowDisabledFocus
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'allowDisabledFocus?: boolean;'
       return:
-        type: boolean
-  - name: ariaDescription
-    uid: 'office-ui-fabric-react!IButtonProps#ariaDescription:member'
-    package: office-ui-fabric-react!
-    fullName: ariaDescription
-    summary: >-
+        type:
+          - boolean
+  - uid: 'office-ui-fabric-react!IButtonProps#ariaDescription:member'
+    summary: |-
       Detailed description of the button for the benefit of screen readers.
 
-
-      Besides the compound button, other button types will need more information
-      provided to screen reader.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Besides the compound button, other button types will need more information provided to screen reader.
+    name: ariaDescription
+    fullName: ariaDescription
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'ariaDescription?: string;'
       return:
-        type: string
-  - name: ariaHidden
-    uid: 'office-ui-fabric-react!IButtonProps#ariaHidden:member'
-    package: office-ui-fabric-react!
+        type:
+          - string
+  - uid: 'office-ui-fabric-react!IButtonProps#ariaHidden:member'
+    summary: If provided and is true it adds an 'aria-hidden' attribute instructing screen readers to ignore the element.
+    name: ariaHidden
     fullName: ariaHidden
-    summary: >-
-      If provided and is true it adds an 'aria-hidden' attribute instructing
-      screen readers to ignore the element.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'ariaHidden?: boolean;'
       return:
-        type: boolean
-  - name: ariaLabel
-    uid: 'office-ui-fabric-react!IButtonProps#ariaLabel:member'
-    package: office-ui-fabric-react!
-    fullName: ariaLabel
+        type:
+          - boolean
+  - uid: 'office-ui-fabric-react!IButtonProps#ariaLabel:member'
     summary: The aria label of the button for the benefit of screen readers.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: ariaLabel
+    fullName: ariaLabel
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'ariaLabel?: string;'
       return:
-        type: string
-  - name: buttonType
-    uid: 'office-ui-fabric-react!IButtonProps#buttonType:member'
-    package: office-ui-fabric-react!
+        type:
+          - string
+  - uid: 'office-ui-fabric-react!IButtonProps#buttonType:member'
+    summary: 'Deprecated at v1.2.3, to be removed at &gt;<!-- -->= v2.0.0. Use specific button component instead.'
+    deprecated:
+      content: Use specific button component instead.
+    name: buttonType
     fullName: buttonType
-    summary: >-
-      Deprecated at v1.2.3, to be removed at &gt;<!-- -->= v2.0.0. Use specific
-      button component instead.
-    remarks: ''
-    isPreview: false
-    isDeprecated: true
-    customDeprecatedMessage: Use specific button component instead.
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'buttonType?: ButtonType;'
       return:
-        type: '<xref uid="office-ui-fabric-react!ButtonType:enum" />'
-  - name: checked
-    uid: 'office-ui-fabric-react!IButtonProps#checked:member'
-    package: office-ui-fabric-react!
-    fullName: checked
+        type:
+          - 'office-ui-fabric-react!ButtonType:enum'
+  - uid: 'office-ui-fabric-react!IButtonProps#checked:member'
     summary: Whether the button is checked
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: checked
+    fullName: checked
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'checked?: boolean;'
       return:
-        type: boolean
-  - name: className
-    uid: 'office-ui-fabric-react!IButtonProps#className:member'
-    package: office-ui-fabric-react!
-    fullName: className
+        type:
+          - boolean
+  - uid: 'office-ui-fabric-react!IButtonProps#className:member'
     summary: 'If provided, additional class name to provide on the root element.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: className
+    fullName: className
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'className?: string;'
       return:
-        type: string
-  - name: componentRef
-    uid: 'office-ui-fabric-react!IButtonProps#componentRef:member'
-    package: office-ui-fabric-react!
-    fullName: componentRef
+        type:
+          - string
+  - uid: 'office-ui-fabric-react!IButtonProps#componentRef:member'
     summary: >-
-      Optional callback to access the IButton interface. Use this instead of ref
-      for accessing the public methods and properties of the component.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Optional callback to access the IButton interface. Use this instead of ref for accessing the public methods and
+      properties of the component.
+    name: componentRef
+    fullName: componentRef
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'componentRef?: IRefObject<IButton>;'
       return:
-        type: IRefObject&lt;IButton&gt;
-  - name: data
-    uid: 'office-ui-fabric-react!IButtonProps#data:member'
-    package: office-ui-fabric-react!
-    fullName: data
+        type:
+          - IRefObject<IButton>
+  - uid: 'office-ui-fabric-react!IButtonProps#data:member'
     summary: Any custom data the developer wishes to associate with the menu item.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: data
+    fullName: data
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'data?: any;'
       return:
-        type: any
-  - name: defaultRender
-    uid: 'office-ui-fabric-react!IButtonProps#defaultRender:member'
-    package: office-ui-fabric-react!
-    fullName: defaultRender
+        type:
+          - any
+  - uid: 'office-ui-fabric-react!IButtonProps#defaultRender:member'
     summary: yet unknown docs
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: defaultRender
+    fullName: defaultRender
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'defaultRender?: any;'
       return:
-        type: any
-  - name: description
-    uid: 'office-ui-fabric-react!IButtonProps#description:member'
-    package: office-ui-fabric-react!
+        type:
+          - any
+  - uid: 'office-ui-fabric-react!IButtonProps#description:member'
+    summary: 'Style for the description text if applicable (for compound buttons.) Deprecated, use `secondaryText` instead.'
+    deprecated:
+      content: Use `secondaryText` instead.
+    name: description
     fullName: description
-    summary: >-
-      Style for the description text if applicable (for compound buttons.)
-      Deprecated, use `secondaryText` instead.
-    remarks: ''
-    isPreview: false
-    isDeprecated: true
-    customDeprecatedMessage: Use `secondaryText` instead.
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'description?: IStyle;'
       return:
-        type: IStyle
-  - name: disabled
-    uid: 'office-ui-fabric-react!IButtonProps#disabled:member'
-    package: office-ui-fabric-react!
-    fullName: disabled
+        type:
+          - IStyle
+  - uid: 'office-ui-fabric-react!IButtonProps#disabled:member'
     summary: Whether the button is disabled
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: disabled
+    fullName: disabled
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'disabled?: boolean;'
       return:
-        type: boolean
-  - name: elementRef
-    uid: 'office-ui-fabric-react!IButtonProps#elementRef:member'
-    package: office-ui-fabric-react!
-    fullName: elementRef
+        type:
+          - boolean
+  - uid: 'office-ui-fabric-react!IButtonProps#elementRef:member'
     summary: Optional callback to access the root DOM element.
-    remarks: ''
-    isPreview: false
-    isDeprecated: true
-    customDeprecatedMessage: Temporary solution which will be replaced with ref in the V8 release.
+    deprecated:
+      content: Temporary solution which will be replaced with ref in the V8 release.
+    name: elementRef
+    fullName: elementRef
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'elementRef?: React.Ref<HTMLElement>;'
       return:
-        type: React.Ref&lt;HTMLElement&gt;
-  - name: getClassNames
-    uid: 'office-ui-fabric-react!IButtonProps#getClassNames:member'
-    package: office-ui-fabric-react!
+        type:
+          - React.Ref<HTMLElement>
+  - uid: 'office-ui-fabric-react!IButtonProps#getClassNames:member'
+    summary: >-
+      Method to provide the classnames to style a button. The default value for this prop is the getClassnames func
+      defined in BaseButton.classnames.
+    name: getClassNames
     fullName: getClassNames
-    summary: >-
-      Method to provide the classnames to style a button. The default value for
-      this prop is the getClassnames func defined in BaseButton.classnames.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: >-
-        getClassNames?: (theme: ITheme, className: string, variantClassName:
-        string, iconClassName: string | undefined, menuIconClassName: string |
-        undefined, disabled: boolean, checked: boolean, expanded: boolean,
-        hasMenu: boolean, isSplit: boolean | undefined, allowDisabledFocus:
-        boolean) => IButtonClassNames;
+        getClassNames?: (theme: ITheme, className: string, variantClassName: string, iconClassName: string | undefined,
+        menuIconClassName: string | undefined, disabled: boolean, checked: boolean, expanded: boolean, hasMenu: boolean,
+        isSplit: boolean | undefined, allowDisabledFocus: boolean) => IButtonClassNames;
       return:
-        type: >-
-          (theme: ITheme, className: string, variantClassName: string,
-          iconClassName: string | undefined, menuIconClassName: string |
-          undefined, disabled: boolean, checked: boolean, expanded: boolean,
-          hasMenu: boolean, isSplit: boolean | undefined, allowDisabledFocus:
-          boolean) =&gt; IButtonClassNames
-  - name: getSplitButtonClassNames
-    uid: 'office-ui-fabric-react!IButtonProps#getSplitButtonClassNames:member'
-    package: office-ui-fabric-react!
+        type:
+          - >-
+            (theme: ITheme, className: string, variantClassName: string, iconClassName: string | undefined,
+            menuIconClassName: string | undefined, disabled: boolean, checked: boolean, expanded: boolean, hasMenu:
+            boolean, isSplit: boolean | undefined, allowDisabledFocus: boolean) => IButtonClassNames
+  - uid: 'office-ui-fabric-react!IButtonProps#getSplitButtonClassNames:member'
+    summary: >-
+      Method to provide the classnames to style a button. The default value for this prop is the getClassnames func
+      defined in BaseButton.classnames.
+    name: getSplitButtonClassNames
     fullName: getSplitButtonClassNames
-    summary: >-
-      Method to provide the classnames to style a button. The default value for
-      this prop is the getClassnames func defined in BaseButton.classnames.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: >-
-        getSplitButtonClassNames?: (disabled: boolean, expanded: boolean,
-        checked: boolean, allowDisabledFocus: boolean) =>
-        ISplitButtonClassNames;
+        getSplitButtonClassNames?: (disabled: boolean, expanded: boolean, checked: boolean, allowDisabledFocus: boolean)
+        => ISplitButtonClassNames;
       return:
-        type: >-
-          (disabled: boolean, expanded: boolean, checked: boolean,
-          allowDisabledFocus: boolean) =&gt; ISplitButtonClassNames
-  - name: href
-    uid: 'office-ui-fabric-react!IButtonProps#href:member'
-    package: office-ui-fabric-react!
-    fullName: href
+        type:
+          - >-
+            (disabled: boolean, expanded: boolean, checked: boolean, allowDisabledFocus: boolean) =>
+            ISplitButtonClassNames
+  - uid: 'office-ui-fabric-react!IButtonProps#href:member'
     summary: 'If provided, this component will be rendered as an anchor.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: href
+    fullName: href
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'href?: string;'
       return:
-        type: string
-  - name: iconProps
-    uid: 'office-ui-fabric-react!IButtonProps#iconProps:member'
-    package: office-ui-fabric-react!
-    fullName: iconProps
+        type:
+          - string
+  - uid: 'office-ui-fabric-react!IButtonProps#iconProps:member'
     summary: The props for the icon shown in the button.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: iconProps
+    fullName: iconProps
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'iconProps?: IIconProps;'
       return:
-        type: IIconProps
-  - name: keytipProps
-    uid: 'office-ui-fabric-react!IButtonProps#keytipProps:member'
-    package: office-ui-fabric-react!
-    fullName: keytipProps
+        type:
+          - IIconProps
+  - uid: 'office-ui-fabric-react!IButtonProps#keytipProps:member'
     summary: Optional keytip for this button
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: keytipProps
+    fullName: keytipProps
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'keytipProps?: IKeytipProps;'
       return:
-        type: IKeytipProps
-  - name: menuAs
-    uid: 'office-ui-fabric-react!IButtonProps#menuAs:member'
-    package: office-ui-fabric-react!
-    fullName: menuAs
+        type:
+          - IKeytipProps
+  - uid: 'office-ui-fabric-react!IButtonProps#menuAs:member'
     summary: Render a custom menu in place of the normal one.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: menuAs
+    fullName: menuAs
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'menuAs?: IComponentAs<IContextualMenuProps>;'
       return:
-        type: IComponentAs&lt;IContextualMenuProps&gt;
-  - name: menuIconProps
-    uid: 'office-ui-fabric-react!IButtonProps#menuIconProps:member'
-    package: office-ui-fabric-react!
-    fullName: menuIconProps
+        type:
+          - IComponentAs<IContextualMenuProps>
+  - uid: 'office-ui-fabric-react!IButtonProps#menuIconProps:member'
     summary: The props for the icon shown when providing a menu dropdown.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: menuIconProps
+    fullName: menuIconProps
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'menuIconProps?: IIconProps;'
       return:
-        type: IIconProps
-  - name: menuProps
-    uid: 'office-ui-fabric-react!IButtonProps#menuProps:member'
-    package: office-ui-fabric-react!
-    fullName: menuProps
+        type:
+          - IIconProps
+  - uid: 'office-ui-fabric-react!IButtonProps#menuProps:member'
     summary: >-
-      Props for button menu. Providing this will default to showing the menu
-      icon. See menuIconProps for overriding how the default icon looks.
-      Providing this in addition of onClick and setting the split property to
-      true will render a SplitButton.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Props for button menu. Providing this will default to showing the menu icon. See menuIconProps for overriding how
+      the default icon looks. Providing this in addition of onClick and setting the split property to true will render a
+      SplitButton.
+    name: menuProps
+    fullName: menuProps
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'menuProps?: IContextualMenuProps;'
       return:
-        type: IContextualMenuProps
-  - name: menuTriggerKeyCode
-    uid: 'office-ui-fabric-react!IButtonProps#menuTriggerKeyCode:member'
-    package: office-ui-fabric-react!
-    fullName: menuTriggerKeyCode
+        type:
+          - IContextualMenuProps
+  - uid: 'office-ui-fabric-react!IButtonProps#menuTriggerKeyCode:member'
     summary: >-
-      Provides a custom KeyCode that can be used to open the button menu. The
-      default KeyCode is the down arrow. A value of null can be provided to
-      disable the key codes for opening the button menu.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Provides a custom KeyCode that can be used to open the button menu. The default KeyCode is the down arrow. A value
+      of null can be provided to disable the key codes for opening the button menu.
+    name: menuTriggerKeyCode
+    fullName: menuTriggerKeyCode
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'menuTriggerKeyCode?: KeyCodes | null;'
       return:
-        type: KeyCodes | null
-  - name: onAfterMenuDismiss
-    uid: 'office-ui-fabric-react!IButtonProps#onAfterMenuDismiss:member'
-    package: office-ui-fabric-react!
+        type:
+          - KeyCodes | null
+  - uid: 'office-ui-fabric-react!IButtonProps#onAfterMenuDismiss:member'
+    summary: Callback that runs after Button's contextualmenu was closed (removed from the DOM)
+    name: onAfterMenuDismiss
     fullName: onAfterMenuDismiss
-    summary: >-
-      Callback that runs after Button's contextualmenu was closed (removed from
-      the DOM)
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onAfterMenuDismiss?: () => void;'
       return:
-        type: () =&gt; void
-  - name: onMenuClick
-    uid: 'office-ui-fabric-react!IButtonProps#onMenuClick:member'
-    package: office-ui-fabric-react!
-    fullName: onMenuClick
+        type:
+          - () => void
+  - uid: 'office-ui-fabric-react!IButtonProps#onMenuClick:member'
     summary: Optional callback when menu is clicked.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onMenuClick
+    fullName: onMenuClick
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: >-
-        onMenuClick?: (ev?: React.MouseEvent<HTMLElement> |
-        React.KeyboardEvent<HTMLElement>, button?: IButtonProps) => void;
+        onMenuClick?: (ev?: React.MouseEvent<HTMLElement> | React.KeyboardEvent<HTMLElement>, button?: IButtonProps) =>
+        void;
       return:
-        type: >-
-          (ev?: React.MouseEvent&lt;HTMLElement&gt; |
-          React.KeyboardEvent&lt;HTMLElement&gt;, button?: IButtonProps) =&gt;
-          void
-  - name: onRenderAriaDescription
-    uid: 'office-ui-fabric-react!IButtonProps#onRenderAriaDescription:member'
-    package: office-ui-fabric-react!
-    fullName: onRenderAriaDescription
+        type:
+          - '(ev?: React.MouseEvent<HTMLElement> | React.KeyboardEvent<HTMLElement>, button?: IButtonProps) => void'
+  - uid: 'office-ui-fabric-react!IButtonProps#onRenderAriaDescription:member'
     summary: Custom render function for the aria description element.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onRenderAriaDescription
+    fullName: onRenderAriaDescription
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onRenderAriaDescription?: IRenderFunction<IButtonProps>;'
       return:
-        type: IRenderFunction&lt;IButtonProps&gt;
-  - name: onRenderChildren
-    uid: 'office-ui-fabric-react!IButtonProps#onRenderChildren:member'
-    package: office-ui-fabric-react!
-    fullName: onRenderChildren
+        type:
+          - IRenderFunction<IButtonProps>
+  - uid: 'office-ui-fabric-react!IButtonProps#onRenderChildren:member'
     summary: Custom render function for rendering the button children.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onRenderChildren
+    fullName: onRenderChildren
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onRenderChildren?: IRenderFunction<IButtonProps>;'
       return:
-        type: IRenderFunction&lt;IButtonProps&gt;
-  - name: onRenderDescription
-    uid: 'office-ui-fabric-react!IButtonProps#onRenderDescription:member'
-    package: office-ui-fabric-react!
-    fullName: onRenderDescription
+        type:
+          - IRenderFunction<IButtonProps>
+  - uid: 'office-ui-fabric-react!IButtonProps#onRenderDescription:member'
     summary: Custom render function for the desciption text.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onRenderDescription
+    fullName: onRenderDescription
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onRenderDescription?: IRenderFunction<IButtonProps>;'
       return:
-        type: IRenderFunction&lt;IButtonProps&gt;
-  - name: onRenderIcon
-    uid: 'office-ui-fabric-react!IButtonProps#onRenderIcon:member'
-    package: office-ui-fabric-react!
-    fullName: onRenderIcon
+        type:
+          - IRenderFunction<IButtonProps>
+  - uid: 'office-ui-fabric-react!IButtonProps#onRenderIcon:member'
     summary: Custom render function for the icon
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onRenderIcon
+    fullName: onRenderIcon
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onRenderIcon?: IRenderFunction<IButtonProps>;'
       return:
-        type: IRenderFunction&lt;IButtonProps&gt;
-  - name: onRenderMenu
-    uid: 'office-ui-fabric-react!IButtonProps#onRenderMenu:member'
-    package: office-ui-fabric-react!
+        type:
+          - IRenderFunction<IButtonProps>
+  - uid: 'office-ui-fabric-react!IButtonProps#onRenderMenu:member'
+    summary: 'Deprecated at v6.3.2, to be removed at &gt;<!-- -->= v7.0.0. Use `menuAs` instead.'
+    deprecated:
+      content: Use `menuAs` instead.
+    name: onRenderMenu
     fullName: onRenderMenu
-    summary: >-
-      Deprecated at v6.3.2, to be removed at &gt;<!-- -->= v7.0.0. Use `menuAs`
-      instead.
-    remarks: ''
-    isPreview: false
-    isDeprecated: true
-    customDeprecatedMessage: Use `menuAs` instead.
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onRenderMenu?: IRenderFunction<IContextualMenuProps>;'
       return:
-        type: IRenderFunction&lt;IContextualMenuProps&gt;
-  - name: onRenderMenuIcon
-    uid: 'office-ui-fabric-react!IButtonProps#onRenderMenuIcon:member'
-    package: office-ui-fabric-react!
-    fullName: onRenderMenuIcon
+        type:
+          - IRenderFunction<IContextualMenuProps>
+  - uid: 'office-ui-fabric-react!IButtonProps#onRenderMenuIcon:member'
     summary: Custom render function for button menu icon
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onRenderMenuIcon
+    fullName: onRenderMenuIcon
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onRenderMenuIcon?: IRenderFunction<IButtonProps>;'
       return:
-        type: IRenderFunction&lt;IButtonProps&gt;
-  - name: onRenderText
-    uid: 'office-ui-fabric-react!IButtonProps#onRenderText:member'
-    package: office-ui-fabric-react!
-    fullName: onRenderText
+        type:
+          - IRenderFunction<IButtonProps>
+  - uid: 'office-ui-fabric-react!IButtonProps#onRenderText:member'
     summary: Custom render function for the label text.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onRenderText
+    fullName: onRenderText
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onRenderText?: IRenderFunction<IButtonProps>;'
       return:
-        type: IRenderFunction&lt;IButtonProps&gt;
-  - name: persistMenu
-    uid: 'office-ui-fabric-react!IButtonProps#persistMenu:member'
-    package: office-ui-fabric-react!
-    fullName: persistMenu
+        type:
+          - IRenderFunction<IButtonProps>
+  - uid: 'office-ui-fabric-react!IButtonProps#persistMenu:member'
     summary: >-
-      Menu will not be created or destroyed when opened or closed, instead it
-      will be hidden. This will improve perf of the menu opening but could
-      potentially impact overall perf by having more elements in the dom. Should
-      only be used when perf is important. Note: This may increase the amount of
-      time it takes for the button itself to mount.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Menu will not be created or destroyed when opened or closed, instead it will be hidden. This will improve perf of
+      the menu opening but could potentially impact overall perf by having more elements in the dom. Should only be used
+      when perf is important. Note: This may increase the amount of time it takes for the button itself to mount.
+    name: persistMenu
+    fullName: persistMenu
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'persistMenu?: boolean;'
       return:
-        type: boolean
-  - name: primary
-    uid: 'office-ui-fabric-react!IButtonProps#primary:member'
-    package: office-ui-fabric-react!
+        type:
+          - boolean
+  - uid: 'office-ui-fabric-react!IButtonProps#primary:member'
+    summary: Changes the visual presentation of the button to be emphasized (if defined)
+    name: primary
     fullName: primary
-    summary: >-
-      Changes the visual presentation of the button to be emphasized (if
-      defined)
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'primary?: boolean;'
       return:
-        type: boolean
-  - name: primaryActionButtonProps
-    uid: 'office-ui-fabric-react!IButtonProps#primaryActionButtonProps:member'
-    package: office-ui-fabric-react!
-    fullName: primaryActionButtonProps
+        type:
+          - boolean
+  - uid: 'office-ui-fabric-react!IButtonProps#primaryActionButtonProps:member'
     summary: >-
-      Optional props to be applied only to the primary action button of
-      SplitButton and not to the overall SplitButton container
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Optional props to be applied only to the primary action button of SplitButton and not to the overall SplitButton
+      container
+    name: primaryActionButtonProps
+    fullName: primaryActionButtonProps
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'primaryActionButtonProps?: IButtonProps;'
       return:
-        type: '<xref uid="office-ui-fabric-react!IButtonProps:interface" />'
-  - name: primaryDisabled
-    uid: 'office-ui-fabric-react!IButtonProps#primaryDisabled:member'
-    package: office-ui-fabric-react!
+        type:
+          - 'office-ui-fabric-react!IButtonProps:interface'
+  - uid: 'office-ui-fabric-react!IButtonProps#primaryDisabled:member'
+    summary: If set to true and if this is a splitButton (split == true) then the primary action of a split button is disabled.
+    name: primaryDisabled
     fullName: primaryDisabled
-    summary: >-
-      If set to true and if this is a splitButton (split == true) then the
-      primary action of a split button is disabled.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'primaryDisabled?: boolean;'
       return:
-        type: boolean
-  - name: renderPersistedMenuHiddenOnMount
-    uid: >-
-      office-ui-fabric-react!IButtonProps#renderPersistedMenuHiddenOnMount:member
-    package: office-ui-fabric-react!
-    fullName: renderPersistedMenuHiddenOnMount
+        type:
+          - boolean
+  - uid: 'office-ui-fabric-react!IButtonProps#renderPersistedMenuHiddenOnMount:member'
     summary: >-
-      If true, the persisted menu is rendered hidden when the button initially
-      mounts. Non-persisted menus will not be in the component tree unless they
-      are being shown
+      If true, the persisted menu is rendered hidden when the button initially mounts. Non-persisted menus will not be
+      in the component tree unless they are being shown
 
 
-      Note: This increases the time the button will take to mount, but can
-      improve perceived menu open perf. when the user opens the menu.
-    remarks: ''
-    isPreview: false
-    isDeprecated: true
-    customDeprecatedMessage: >-
-      There is known bug in Edge when this prop is true where scrollbars overlap
-      with the content when a menu is first rendered hidden. See:
-      https://github.com/microsoft/fluentui/issues/9034 Please do not start
-      using this. If you are already using this, please make sure that you are
-      doing so only in non-Edge browsers
+      Note: This increases the time the button will take to mount, but can improve perceived menu open perf. when the
+      user opens the menu.
+    deprecated:
+      content: >-
+        There is known bug in Edge when this prop is true where scrollbars overlap with the content when a menu is first
+        rendered hidden. See: https://github.com/microsoft/fluentui/issues/9034 Please do not start using this. If you
+        are already using this, please make sure that you are doing so only in non-Edge browsers
+    name: renderPersistedMenuHiddenOnMount
+    fullName: renderPersistedMenuHiddenOnMount
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'renderPersistedMenuHiddenOnMount?: boolean;'
       return:
-        type: boolean
-  - name: rootProps
-    uid: 'office-ui-fabric-react!IButtonProps#rootProps:member'
-    package: office-ui-fabric-react!
+        type:
+          - boolean
+  - uid: 'office-ui-fabric-react!IButtonProps#rootProps:member'
+    summary: >-
+      Deprecated at v0.56.2, to be removed at &gt;<!-- -->= v1.0.0. Just pass in button props instead. they will be
+      mixed into the button/anchor element rendered by the component.
+    deprecated:
+      content: Use button props instead.
+    name: rootProps
     fullName: rootProps
-    summary: >-
-      Deprecated at v0.56.2, to be removed at &gt;<!-- -->= v1.0.0. Just pass in
-      button props instead. they will be mixed into the button/anchor element
-      rendered by the component.
-    remarks: ''
-    isPreview: false
-    isDeprecated: true
-    customDeprecatedMessage: Use button props instead.
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        rootProps?: React.ButtonHTMLAttributes<HTMLButtonElement> |
-        React.AnchorHTMLAttributes<HTMLAnchorElement>;
+      content: 'rootProps?: React.ButtonHTMLAttributes<HTMLButtonElement> | React.AnchorHTMLAttributes<HTMLAnchorElement>;'
       return:
-        type: >-
-          React.ButtonHTMLAttributes&lt;HTMLButtonElement&gt; |
-          React.AnchorHTMLAttributes&lt;HTMLAnchorElement&gt;
-  - name: secondaryText
-    uid: 'office-ui-fabric-react!IButtonProps#secondaryText:member'
-    package: office-ui-fabric-react!
+        type:
+          - React.ButtonHTMLAttributes<HTMLButtonElement> | React.AnchorHTMLAttributes<HTMLAnchorElement>
+  - uid: 'office-ui-fabric-react!IButtonProps#secondaryText:member'
+    summary: Description of the action this button takes. Only used for compound buttons
+    name: secondaryText
     fullName: secondaryText
-    summary: >-
-      Description of the action this button takes. Only used for compound
-      buttons
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'secondaryText?: string;'
       return:
-        type: string
-  - name: split
-    uid: 'office-ui-fabric-react!IButtonProps#split:member'
-    package: office-ui-fabric-react!
+        type:
+          - string
+  - uid: 'office-ui-fabric-react!IButtonProps#split:member'
+    summary: 'If set to true, and if menuProps and onClick are provided, the button will render as a SplitButton.'
+    name: split
     fullName: split
-    summary: >-
-      If set to true, and if menuProps and onClick are provided, the button will
-      render as a SplitButton.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'split?: boolean;'
       return:
-        type: boolean
-  - name: splitButtonAriaLabel
-    uid: 'office-ui-fabric-react!IButtonProps#splitButtonAriaLabel:member'
-    package: office-ui-fabric-react!
-    fullName: splitButtonAriaLabel
+        type:
+          - boolean
+  - uid: 'office-ui-fabric-react!IButtonProps#splitButtonAriaLabel:member'
     summary: Accessible label for the dropdown chevron button if this button is split.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: splitButtonAriaLabel
+    fullName: splitButtonAriaLabel
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'splitButtonAriaLabel?: string;'
       return:
-        type: string
-  - name: splitButtonMenuProps
-    uid: 'office-ui-fabric-react!IButtonProps#splitButtonMenuProps:member'
-    package: office-ui-fabric-react!
-    fullName: splitButtonMenuProps
+        type:
+          - string
+  - uid: 'office-ui-fabric-react!IButtonProps#splitButtonMenuProps:member'
     summary: >-
-      Experimental prop that get passed into the menuButton that's rendered as
-      part of split button. Anything passed in will likely need to have
-      accompanying style changes.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Experimental prop that get passed into the menuButton that's rendered as part of split button. Anything passed in
+      will likely need to have accompanying style changes.
+    name: splitButtonMenuProps
+    fullName: splitButtonMenuProps
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'splitButtonMenuProps?: IButtonProps;'
       return:
-        type: '<xref uid="office-ui-fabric-react!IButtonProps:interface" />'
-  - name: styles
-    uid: 'office-ui-fabric-react!IButtonProps#styles:member'
-    package: office-ui-fabric-react!
-    fullName: styles
+        type:
+          - 'office-ui-fabric-react!IButtonProps:interface'
+  - uid: 'office-ui-fabric-react!IButtonProps#styles:member'
     summary: Custom styling for individual elements within the button DOM.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: styles
+    fullName: styles
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'styles?: IButtonStyles;'
       return:
-        type: '<xref uid="office-ui-fabric-react!IButtonStyles:interface" />'
-  - name: text
-    uid: 'office-ui-fabric-react!IButtonProps#text:member'
-    package: office-ui-fabric-react!
-    fullName: text
+        type:
+          - 'office-ui-fabric-react!IButtonStyles:interface'
+  - uid: 'office-ui-fabric-react!IButtonProps#text:member'
     summary: >-
-      Text to render button label. If text is supplied, it will override any
-      string in button children. Other children components will be passed
-      through after the text.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Text to render button label. If text is supplied, it will override any string in button children. Other children
+      components will be passed through after the text.
+    name: text
+    fullName: text
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'text?: string;'
       return:
-        type: string
-  - name: theme
-    uid: 'office-ui-fabric-react!IButtonProps#theme:member'
-    package: office-ui-fabric-react!
-    fullName: theme
+        type:
+          - string
+  - uid: 'office-ui-fabric-react!IButtonProps#theme:member'
     summary: Theme provided by HOC.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'theme?: ITheme;'
       return:
-        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
-  - name: toggle
-    uid: 'office-ui-fabric-react!IButtonProps#toggle:member'
-    package: office-ui-fabric-react!
-    fullName: toggle
+        type:
+          - '@fluentui/theme!ITheme:interface'
+  - uid: 'office-ui-fabric-react!IButtonProps#toggle:member'
     summary: >-
-      Whether button is a toggle button with distinct on and off states. This
-      should be true for buttons that permanently change state when a press
-      event finishes, such as a volume mute button.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Whether button is a toggle button with distinct on and off states. This should be true for buttons that
+      permanently change state when a press event finishes, such as a volume mute button.
+    name: toggle
+    fullName: toggle
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'toggle?: boolean;'
       return:
-        type: boolean
-  - name: toggled
-    uid: 'office-ui-fabric-react!IButtonProps#toggled:member'
-    package: office-ui-fabric-react!
+        type:
+          - boolean
+  - uid: 'office-ui-fabric-react!IButtonProps#toggled:member'
+    summary: 'Any custom data the developer wishes to associate with the menu item. Deprecated, use `checked` if setting state.'
+    deprecated:
+      content: 'unused, use `checked` if setting state.'
+    name: toggled
     fullName: toggled
-    summary: >-
-      Any custom data the developer wishes to associate with the menu item.
-      Deprecated, use `checked` if setting state.
-    remarks: ''
-    isPreview: false
-    isDeprecated: true
-    customDeprecatedMessage: 'unused, use `checked` if setting state.'
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'toggled?: boolean;'
       return:
-        type: boolean
-  - name: uniqueId
-    uid: 'office-ui-fabric-react!IButtonProps#uniqueId:member'
-    package: office-ui-fabric-react!
-    fullName: uniqueId
+        type:
+          - boolean
+  - uid: 'office-ui-fabric-react!IButtonProps#uniqueId:member'
     summary: Unique id to identify the item. Typically a duplicate of key value.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: uniqueId
+    fullName: uniqueId
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'uniqueId?: string | number;'
       return:
-        type: string | number
-extends: >-
-  React.AllHTMLAttributes&lt;HTMLAnchorElement | HTMLButtonElement |
-  HTMLDivElement | BaseButton | Button | HTMLSpanElement&gt; 
+        type:
+          - string | number

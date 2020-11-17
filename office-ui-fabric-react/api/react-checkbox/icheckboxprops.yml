@@ -1,289 +1,292 @@
-### YamlMime:TSType
-name: ICheckboxProps
-uid: '@fluentui/react-checkbox!ICheckboxProps:interface'
-package: '@fluentui/react-checkbox!'
-fullName: ICheckboxProps
-summary: Checkbox properties.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: ariaDescribedBy
-    uid: '@fluentui/react-checkbox!ICheckboxProps#ariaDescribedBy:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-checkbox!ICheckboxProps:interface'
+    summary: Checkbox properties.
+    name: ICheckboxProps
+    fullName: ICheckboxProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - React.ButtonHTMLAttributes<HTMLElement | HTMLInputElement>
+      - 'React.RefAttributes<HTMLDivElement> '
     package: '@fluentui/react-checkbox!'
-    fullName: ariaDescribedBy
+    children:
+      - '@fluentui/react-checkbox!ICheckboxProps#ariaDescribedBy:member'
+      - '@fluentui/react-checkbox!ICheckboxProps#ariaLabel:member'
+      - '@fluentui/react-checkbox!ICheckboxProps#ariaLabelledBy:member'
+      - '@fluentui/react-checkbox!ICheckboxProps#ariaPositionInSet:member'
+      - '@fluentui/react-checkbox!ICheckboxProps#ariaSetSize:member'
+      - '@fluentui/react-checkbox!ICheckboxProps#boxSide:member'
+      - '@fluentui/react-checkbox!ICheckboxProps#checked:member'
+      - '@fluentui/react-checkbox!ICheckboxProps#checkmarkIconProps:member'
+      - '@fluentui/react-checkbox!ICheckboxProps#className:member'
+      - '@fluentui/react-checkbox!ICheckboxProps#componentRef:member'
+      - '@fluentui/react-checkbox!ICheckboxProps#defaultChecked:member'
+      - '@fluentui/react-checkbox!ICheckboxProps#defaultIndeterminate:member'
+      - '@fluentui/react-checkbox!ICheckboxProps#disabled:member'
+      - '@fluentui/react-checkbox!ICheckboxProps#indeterminate:member'
+      - '@fluentui/react-checkbox!ICheckboxProps#inputProps:member'
+      - '@fluentui/react-checkbox!ICheckboxProps#label:member'
+      - '@fluentui/react-checkbox!ICheckboxProps#onChange:member'
+      - '@fluentui/react-checkbox!ICheckboxProps#onRenderLabel:member'
+      - '@fluentui/react-checkbox!ICheckboxProps#styles:member'
+      - '@fluentui/react-checkbox!ICheckboxProps#theme:member'
+  - uid: '@fluentui/react-checkbox!ICheckboxProps#ariaDescribedBy:member'
     summary: ID for element that provides extended information for the checkbox.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: ariaDescribedBy
+    fullName: ariaDescribedBy
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'ariaDescribedBy?: string;'
       return:
-        type: string
-  - name: ariaLabel
-    uid: '@fluentui/react-checkbox!ICheckboxProps#ariaLabel:member'
-    package: '@fluentui/react-checkbox!'
-    fullName: ariaLabel
+        type:
+          - string
+  - uid: '@fluentui/react-checkbox!ICheckboxProps#ariaLabel:member'
     summary: Accessible label for the checkbox.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: ariaLabel
+    fullName: ariaLabel
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'ariaLabel?: string;'
       return:
-        type: string
-  - name: ariaLabelledBy
-    uid: '@fluentui/react-checkbox!ICheckboxProps#ariaLabelledBy:member'
-    package: '@fluentui/react-checkbox!'
-    fullName: ariaLabelledBy
+        type:
+          - string
+  - uid: '@fluentui/react-checkbox!ICheckboxProps#ariaLabelledBy:member'
     summary: ID for element that contains label information for the checkbox.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: ariaLabelledBy
+    fullName: ariaLabelledBy
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'ariaLabelledBy?: string;'
       return:
-        type: string
-  - name: ariaPositionInSet
-    uid: '@fluentui/react-checkbox!ICheckboxProps#ariaPositionInSet:member'
-    package: '@fluentui/react-checkbox!'
-    fullName: ariaPositionInSet
+        type:
+          - string
+  - uid: '@fluentui/react-checkbox!ICheckboxProps#ariaPositionInSet:member'
     summary: The position in the parent set (if in a set) for aria-posinset.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: ariaPositionInSet
+    fullName: ariaPositionInSet
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'ariaPositionInSet?: number;'
       return:
-        type: number
-  - name: ariaSetSize
-    uid: '@fluentui/react-checkbox!ICheckboxProps#ariaSetSize:member'
-    package: '@fluentui/react-checkbox!'
-    fullName: ariaSetSize
+        type:
+          - number
+  - uid: '@fluentui/react-checkbox!ICheckboxProps#ariaSetSize:member'
     summary: The total size of the parent set (if in a set) for aria-setsize.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: ariaSetSize
+    fullName: ariaSetSize
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'ariaSetSize?: number;'
       return:
-        type: number
-  - name: boxSide
-    uid: '@fluentui/react-checkbox!ICheckboxProps#boxSide:member'
-    package: '@fluentui/react-checkbox!'
+        type:
+          - number
+  - uid: '@fluentui/react-checkbox!ICheckboxProps#boxSide:member'
+    summary: Allows you to set the checkbox to be at the before (start) or after (end) the label.
+    name: boxSide
     fullName: boxSide
-    summary: >-
-      Allows you to set the checkbox to be at the before (start) or after (end)
-      the label.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'boxSide?: ''start'' | ''end'';'
       return:
-        type: '''start'' | ''end'''
-  - name: checked
-    uid: '@fluentui/react-checkbox!ICheckboxProps#checked:member'
-    package: '@fluentui/react-checkbox!'
-    fullName: checked
+        type:
+          - '''start'' | ''end'''
+  - uid: '@fluentui/react-checkbox!ICheckboxProps#checked:member'
     summary: >-
-      Checked state. Mutually exclusive to "defaultChecked". Use this if you
-      control the checked state at a higher level and plan to pass in the
-      correct value based on handling onChange events and re-rendering.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Checked state. Mutually exclusive to "defaultChecked". Use this if you control the checked state at a higher level
+      and plan to pass in the correct value based on handling onChange events and re-rendering.
+    name: checked
+    fullName: checked
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'checked?: boolean;'
       return:
-        type: boolean
-  - name: checkmarkIconProps
-    uid: '@fluentui/react-checkbox!ICheckboxProps#checkmarkIconProps:member'
-    package: '@fluentui/react-checkbox!'
-    fullName: checkmarkIconProps
+        type:
+          - boolean
+  - uid: '@fluentui/react-checkbox!ICheckboxProps#checkmarkIconProps:member'
     summary: Custom icon props for the check mark rendered by the checkbox
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: checkmarkIconProps
+    fullName: checkmarkIconProps
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'checkmarkIconProps?: IIconProps;'
       return:
-        type: IIconProps
-  - name: className
-    uid: '@fluentui/react-checkbox!ICheckboxProps#className:member'
-    package: '@fluentui/react-checkbox!'
+        type:
+          - IIconProps
+  - uid: '@fluentui/react-checkbox!ICheckboxProps#className:member'
+    summary: 'Additional class name to provide on the root element, in addition to the ms-Checkbox class.'
+    name: className
     fullName: className
-    summary: >-
-      Additional class name to provide on the root element, in addition to the
-      ms-Checkbox class.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'className?: string;'
       return:
-        type: string
-  - name: componentRef
-    uid: '@fluentui/react-checkbox!ICheckboxProps#componentRef:member'
-    package: '@fluentui/react-checkbox!'
-    fullName: componentRef
+        type:
+          - string
+  - uid: '@fluentui/react-checkbox!ICheckboxProps#componentRef:member'
     summary: >-
-      Optional callback to access the ICheckbox interface. Use this instead of
-      ref for accessing the public methods and properties of the component.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Optional callback to access the ICheckbox interface. Use this instead of ref for accessing the public methods and
+      properties of the component.
+    name: componentRef
+    fullName: componentRef
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'componentRef?: IRefObject<ICheckbox>;'
       return:
-        type: IRefObject&lt;ICheckbox&gt;
-  - name: defaultChecked
-    uid: '@fluentui/react-checkbox!ICheckboxProps#defaultChecked:member'
-    package: '@fluentui/react-checkbox!'
-    fullName: defaultChecked
+        type:
+          - IRefObject<ICheckbox>
+  - uid: '@fluentui/react-checkbox!ICheckboxProps#defaultChecked:member'
     summary: >-
-      Default checked state. Mutually exclusive to "checked". Use this if you
-      want an uncontrolled component, and want the Checkbox instance to maintain
-      its own state.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Default checked state. Mutually exclusive to "checked". Use this if you want an uncontrolled component, and want
+      the Checkbox instance to maintain its own state.
+    name: defaultChecked
+    fullName: defaultChecked
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'defaultChecked?: boolean;'
       return:
-        type: boolean
-  - name: defaultIndeterminate
-    uid: '@fluentui/react-checkbox!ICheckboxProps#defaultIndeterminate:member'
-    package: '@fluentui/react-checkbox!'
-    fullName: defaultIndeterminate
+        type:
+          - boolean
+  - uid: '@fluentui/react-checkbox!ICheckboxProps#defaultIndeterminate:member'
     summary: >-
-      Optional uncontrolled indeterminate visual state for checkbox. Setting
-      indeterminate state takes visual precedence over checked or defaultChecked
-      props given but does not affect checked state. This is not a toggleable
-      state. On load the checkbox will receive indeterminate visual state and
-      after the user's first click it will be removed exposing the true state of
-      the checkbox.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Optional uncontrolled indeterminate visual state for checkbox. Setting indeterminate state takes visual precedence
+      over checked or defaultChecked props given but does not affect checked state. This is not a toggleable state. On
+      load the checkbox will receive indeterminate visual state and after the user's first click it will be removed
+      exposing the true state of the checkbox.
+    name: defaultIndeterminate
+    fullName: defaultIndeterminate
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'defaultIndeterminate?: boolean;'
       return:
-        type: boolean
-  - name: disabled
-    uid: '@fluentui/react-checkbox!ICheckboxProps#disabled:member'
-    package: '@fluentui/react-checkbox!'
-    fullName: disabled
+        type:
+          - boolean
+  - uid: '@fluentui/react-checkbox!ICheckboxProps#disabled:member'
     summary: Disabled state of the checkbox.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: disabled
+    fullName: disabled
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'disabled?: boolean;'
       return:
-        type: boolean
-  - name: indeterminate
-    uid: '@fluentui/react-checkbox!ICheckboxProps#indeterminate:member'
-    package: '@fluentui/react-checkbox!'
-    fullName: indeterminate
+        type:
+          - boolean
+  - uid: '@fluentui/react-checkbox!ICheckboxProps#indeterminate:member'
     summary: >-
-      Optional controlled indeterminate visual state for checkbox. Setting
-      indeterminate state takes visual precedence over checked or defaultChecked
-      props given but does not affect checked state. This should not be a
-      toggleable state. On load the checkbox will receive indeterminate visual
-      state and after the first user click it should be removed by your supplied
-      onChange callback function exposing the true state of the checkbox.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Optional controlled indeterminate visual state for checkbox. Setting indeterminate state takes visual precedence
+      over checked or defaultChecked props given but does not affect checked state. This should not be a toggleable
+      state. On load the checkbox will receive indeterminate visual state and after the first user click it should be
+      removed by your supplied onChange callback function exposing the true state of the checkbox.
+    name: indeterminate
+    fullName: indeterminate
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'indeterminate?: boolean;'
       return:
-        type: boolean
-  - name: inputProps
-    uid: '@fluentui/react-checkbox!ICheckboxProps#inputProps:member'
-    package: '@fluentui/react-checkbox!'
-    fullName: inputProps
+        type:
+          - boolean
+  - uid: '@fluentui/react-checkbox!ICheckboxProps#inputProps:member'
     summary: >-
-      Optional input props that will be mixed into the input element, \*before\*
-      other props are applied. This allows you to extend the input element with
-      additional attributes, such as data-automation-id needed for automation.
-      Note that if you provide, for example, "disabled" as well as
-      "inputProps.disabled", the former will take precedence over the later.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Optional input props that will be mixed into the input element, \*before\* other props are applied. This allows
+      you to extend the input element with additional attributes, such as data-automation-id needed for automation. Note
+      that if you provide, for example, "disabled" as well as "inputProps.disabled", the former will take precedence
+      over the later.
+    name: inputProps
+    fullName: inputProps
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        inputProps?: React.ButtonHTMLAttributes<HTMLElement |
-        HTMLButtonElement>;
+      content: 'inputProps?: React.ButtonHTMLAttributes<HTMLElement | HTMLButtonElement>;'
       return:
-        type: React.ButtonHTMLAttributes&lt;HTMLElement | HTMLButtonElement&gt;
-  - name: label
-    uid: '@fluentui/react-checkbox!ICheckboxProps#label:member'
-    package: '@fluentui/react-checkbox!'
-    fullName: label
+        type:
+          - React.ButtonHTMLAttributes<HTMLElement | HTMLButtonElement>
+  - uid: '@fluentui/react-checkbox!ICheckboxProps#label:member'
     summary: Label to display next to the checkbox.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: label
+    fullName: label
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'label?: string;'
       return:
-        type: string
-  - name: onChange
-    uid: '@fluentui/react-checkbox!ICheckboxProps#onChange:member'
-    package: '@fluentui/react-checkbox!'
-    fullName: onChange
+        type:
+          - string
+  - uid: '@fluentui/react-checkbox!ICheckboxProps#onChange:member'
     summary: Callback that is called when the checked value has changed.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onChange
+    fullName: onChange
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        onChange?: (ev?: React.FormEvent<HTMLElement | HTMLInputElement>,
-        checked?: boolean) => void;
+      content: 'onChange?: (ev?: React.FormEvent<HTMLElement | HTMLInputElement>, checked?: boolean) => void;'
       return:
-        type: >-
-          (ev?: React.FormEvent&lt;HTMLElement | HTMLInputElement&gt;, checked?:
-          boolean) =&gt; void
-  - name: onRenderLabel
-    uid: '@fluentui/react-checkbox!ICheckboxProps#onRenderLabel:member'
-    package: '@fluentui/react-checkbox!'
-    fullName: onRenderLabel
+        type:
+          - '(ev?: React.FormEvent<HTMLElement | HTMLInputElement>, checked?: boolean) => void'
+  - uid: '@fluentui/react-checkbox!ICheckboxProps#onRenderLabel:member'
     summary: Custom render function for the label.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onRenderLabel
+    fullName: onRenderLabel
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onRenderLabel?: IRenderFunction<ICheckboxProps>;'
       return:
-        type: IRenderFunction&lt;ICheckboxProps&gt;
-  - name: styles
-    uid: '@fluentui/react-checkbox!ICheckboxProps#styles:member'
-    package: '@fluentui/react-checkbox!'
+        type:
+          - IRenderFunction<ICheckboxProps>
+  - uid: '@fluentui/react-checkbox!ICheckboxProps#styles:member'
+    summary: Call to provide customized styling that will layer on top of the variant rules.
+    name: styles
     fullName: styles
-    summary: >-
-      Call to provide customized styling that will layer on top of the variant
-      rules.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'styles?: IStyleFunctionOrObject<ICheckboxStyleProps, ICheckboxStyles>;'
       return:
-        type: 'IStyleFunctionOrObject&lt;ICheckboxStyleProps, ICheckboxStyles&gt;'
-  - name: theme
-    uid: '@fluentui/react-checkbox!ICheckboxProps#theme:member'
-    package: '@fluentui/react-checkbox!'
-    fullName: theme
+        type:
+          - 'IStyleFunctionOrObject<ICheckboxStyleProps, ICheckboxStyles>'
+  - uid: '@fluentui/react-checkbox!ICheckboxProps#theme:member'
     summary: Theme provided by HOC.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'theme?: ITheme;'
       return:
-        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
-extends: React.ButtonHTMLAttributes&lt;HTMLElement | HTMLInputElement&gt;
+        type:
+          - '@fluentui/theme!ITheme:interface'

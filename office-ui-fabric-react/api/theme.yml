@@ -1,99 +1,134 @@
-### YamlMime:TSPackage
-uid: '@fluentui/theme!'
-name: '@fluentui/theme'
-type: package
-summary: ''
-interfaces:
-  - '@fluentui/theme!ComponentStyles:interface'
-  - '@fluentui/theme!IAnimationStyles:interface'
-  - '@fluentui/theme!IAnimationVariables:interface'
-  - '@fluentui/theme!IEffects:interface'
-  - '@fluentui/theme!IFontStyles:interface'
-  - '@fluentui/theme!IPalette:interface'
-  - '@fluentui/theme!IPartialTheme:interface'
-  - '@fluentui/theme!IScheme:interface'
-  - '@fluentui/theme!ISemanticColors:interface'
-  - '@fluentui/theme!ISemanticTextColors:interface'
-  - '@fluentui/theme!ITheme:interface'
-  - '@fluentui/theme!PartialTheme:interface'
-  - '@fluentui/theme!Theme:interface'
-  - '@fluentui/theme!Tokens:interface'
-functions:
-  - name: createFontStyles(localeCode)
-    uid: '@fluentui/theme!createFontStyles:function(1)'
-    package: '@fluentui/theme!'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/theme!'
+    name: '@fluentui/theme'
+    fullName: '@fluentui/theme'
+    langs:
+      - typeScript
+    type: package
+    children:
+      - '@fluentui/theme!ComponentStyles:interface'
+      - '@fluentui/theme!createFontStyles:function(1)'
+      - '@fluentui/theme!createTheme:function(1)'
+      - '@fluentui/theme!IAnimationStyles:interface'
+      - '@fluentui/theme!IAnimationVariables:interface'
+      - '@fluentui/theme!IEffects:interface'
+      - '@fluentui/theme!IFontStyles:interface'
+      - '@fluentui/theme!IPalette:interface'
+      - '@fluentui/theme!IPartialTheme:interface'
+      - '@fluentui/theme!IScheme:interface'
+      - '@fluentui/theme!ISemanticColors:interface'
+      - '@fluentui/theme!ISemanticTextColors:interface'
+      - '@fluentui/theme!ITheme:interface'
+      - '@fluentui/theme!mergeThemes:function(1)'
+      - '@fluentui/theme!PartialTheme:interface'
+      - '@fluentui/theme!registerDefaultFontFaces:function(1)'
+      - '@fluentui/theme!Theme:interface'
+      - '@fluentui/theme!Tokens:interface'
+  - uid: '@fluentui/theme!createFontStyles:function(1)'
+    name: createFontStyles(localeCode)
+    fullName: createFontStyles(localeCode)
+    langs:
+      - typeScript
+    type: function
     syntax:
-      content: >-
-        export declare function createFontStyles(localeCode: string | null):
-        IFontStyles;
+      content: 'export declare function createFontStyles(localeCode: string | null): IFontStyles;'
+      return:
+        type:
+          - '@fluentui/theme!IFontStyles:interface'
+        description: ''
       parameters:
         - id: localeCode
           description: ''
-          type: string | null
-      return:
-        type: '<xref uid="@fluentui/theme!IFontStyles:interface" />'
-        description: ''
-  - name: 'createTheme(theme, depComments)'
-    uid: '@fluentui/theme!createTheme:function(1)'
-    package: '@fluentui/theme!'
+          type:
+            - string | null
+  - uid: '@fluentui/theme!createTheme:function(1)'
     summary: Creates a custom theme definition.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: 'createTheme(theme, depComments)'
+    fullName: 'createTheme(theme, depComments)'
+    langs:
+      - typeScript
+    type: function
     syntax:
-      content: >-
-        export declare function createTheme(theme?: PartialTheme, depComments?:
-        boolean): Theme;
+      content: 'export declare function createTheme(theme?: PartialTheme, depComments?: boolean): Theme;'
+      return:
+        type:
+          - '@fluentui/theme!Theme:interface'
+        description: ''
       parameters:
         - id: theme
           description: Partial theme object.
-          type: '<xref uid="@fluentui/theme!PartialTheme:interface" />'
+          type:
+            - '@fluentui/theme!PartialTheme:interface'
         - id: depComments
           description: Whether to include deprecated tags as comments for deprecated slots.
-          type: boolean
-      return:
-        type: '<xref uid="@fluentui/theme!Theme:interface" />'
-        description: ''
-  - name: 'mergeThemes(theme, partialTheme)'
-    uid: '@fluentui/theme!mergeThemes:function(1)'
-    package: '@fluentui/theme!'
-    summary: >-
-      Merge a partial/full theme into a full theme and returns a merged full
-      theme.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+          type:
+            - boolean
+  - uid: '@fluentui/theme!mergeThemes:function(1)'
+    summary: Merge a partial/full theme into a full theme and returns a merged full theme.
+    name: 'mergeThemes(theme, partialTheme)'
+    fullName: 'mergeThemes(theme, partialTheme)'
+    langs:
+      - typeScript
+    type: function
     syntax:
-      content: >-
-        export declare function mergeThemes(theme: Theme, partialTheme?:
-        PartialTheme): Theme;
+      content: 'export declare function mergeThemes(theme: Theme, partialTheme?: PartialTheme): Theme;'
+      return:
+        type:
+          - '@fluentui/theme!Theme:interface'
+        description: ''
       parameters:
         - id: theme
           description: ''
-          type: '<xref uid="@fluentui/theme!Theme:interface" />'
+          type:
+            - '@fluentui/theme!Theme:interface'
         - id: partialTheme
           description: ''
-          type: '<xref uid="@fluentui/theme!PartialTheme:interface" />'
-      return:
-        type: '<xref uid="@fluentui/theme!Theme:interface" />'
-        description: ''
-  - name: registerDefaultFontFaces(baseUrl)
-    uid: '@fluentui/theme!registerDefaultFontFaces:function(1)'
-    package: '@fluentui/theme!'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+          type:
+            - '@fluentui/theme!PartialTheme:interface'
+  - uid: '@fluentui/theme!registerDefaultFontFaces:function(1)'
+    name: registerDefaultFontFaces(baseUrl)
+    fullName: registerDefaultFontFaces(baseUrl)
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: 'export declare function registerDefaultFontFaces(baseUrl: string): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: baseUrl
           description: ''
-          type: string
-      return:
-        type: void
-        description: ''
+          type:
+            - string
+references:
+  - uid: '@fluentui/theme!ComponentStyles:interface'
+    name: ComponentStyles
+  - uid: '@fluentui/theme!IAnimationStyles:interface'
+    name: IAnimationStyles
+  - uid: '@fluentui/theme!IAnimationVariables:interface'
+    name: IAnimationVariables
+  - uid: '@fluentui/theme!IEffects:interface'
+    name: IEffects
+  - uid: '@fluentui/theme!IFontStyles:interface'
+    name: IFontStyles
+  - uid: '@fluentui/theme!IPalette:interface'
+    name: IPalette
+  - uid: '@fluentui/theme!IPartialTheme:interface'
+    name: IPartialTheme
+  - uid: '@fluentui/theme!IScheme:interface'
+    name: IScheme
+  - uid: '@fluentui/theme!ISemanticColors:interface'
+    name: ISemanticColors
+  - uid: '@fluentui/theme!ISemanticTextColors:interface'
+    name: ISemanticTextColors
+  - uid: '@fluentui/theme!ITheme:interface'
+    name: ITheme
+  - uid: '@fluentui/theme!PartialTheme:interface'
+    name: PartialTheme
+  - uid: '@fluentui/theme!Theme:interface'
+    name: Theme
+  - uid: '@fluentui/theme!Tokens:interface'
+    name: Tokens

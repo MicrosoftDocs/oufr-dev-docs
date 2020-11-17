@@ -1,62 +1,65 @@
-### YamlMime:TSType
-name: ISeparatorProps
-uid: '@fluentui/react-internal!ISeparatorProps:interface'
-package: '@fluentui/react-internal!'
-fullName: ISeparatorProps
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: alignContent
-    uid: '@fluentui/react-internal!ISeparatorProps#alignContent:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-internal!ISeparatorProps:interface'
+    name: ISeparatorProps
+    fullName: ISeparatorProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - React.HTMLAttributes<HTMLDivElement>
+      - 'React.RefAttributes<HTMLDivElement> '
     package: '@fluentui/react-internal!'
-    fullName: alignContent
+    children:
+      - '@fluentui/react-internal!ISeparatorProps#alignContent:member'
+      - '@fluentui/react-internal!ISeparatorProps#styles:member'
+      - '@fluentui/react-internal!ISeparatorProps#theme:member'
+      - '@fluentui/react-internal!ISeparatorProps#vertical:member'
+  - uid: '@fluentui/react-internal!ISeparatorProps#alignContent:member'
     summary: Where the content should be aligned in the separator.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: alignContent
+    fullName: alignContent
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'alignContent?: ''start'' | ''center'' | ''end'';'
       return:
-        type: '''start'' | ''center'' | ''end'''
-  - name: styles
-    uid: '@fluentui/react-internal!ISeparatorProps#styles:member'
-    package: '@fluentui/react-internal!'
+        type:
+          - '''start'' | ''center'' | ''end'''
+  - uid: '@fluentui/react-internal!ISeparatorProps#styles:member'
+    summary: Call to provide customized styling that will layer on top of the variant rules.
+    name: styles
     fullName: styles
-    summary: >-
-      Call to provide customized styling that will layer on top of the variant
-      rules.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'styles?: IStyleFunctionOrObject<ISeparatorStyleProps, ISeparatorStyles>;'
       return:
-        type: 'IStyleFunctionOrObject&lt;ISeparatorStyleProps, ISeparatorStyles&gt;'
-  - name: theme
-    uid: '@fluentui/react-internal!ISeparatorProps#theme:member'
-    package: '@fluentui/react-internal!'
-    fullName: theme
+        type:
+          - 'IStyleFunctionOrObject<ISeparatorStyleProps, ISeparatorStyles>'
+  - uid: '@fluentui/react-internal!ISeparatorProps#theme:member'
     summary: Theme (provided through customization.)
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'theme?: ITheme;'
       return:
-        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
-  - name: vertical
-    uid: '@fluentui/react-internal!ISeparatorProps#vertical:member'
-    package: '@fluentui/react-internal!'
-    fullName: vertical
+        type:
+          - '@fluentui/theme!ITheme:interface'
+  - uid: '@fluentui/react-internal!ISeparatorProps#vertical:member'
     summary: Whether the element is a vertical separator.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: vertical
+    fullName: vertical
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'vertical?: boolean;'
       return:
-        type: boolean
-extends: React.HTMLAttributes&lt;HTMLDivElement&gt;
+        type:
+          - boolean

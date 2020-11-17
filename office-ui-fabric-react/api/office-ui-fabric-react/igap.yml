@@ -1,36 +1,39 @@
-### YamlMime:TSType
-name: IGap
-uid: 'office-ui-fabric-react!IGap:interface'
-package: office-ui-fabric-react!
-fullName: IGap
-summary: Gap element interface
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: height
-    uid: 'office-ui-fabric-react!IGap#height:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-ui-fabric-react!IGap:interface'
+    summary: Gap element interface
+    name: IGap
+    fullName: IGap
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'IShimmerElement '
     package: office-ui-fabric-react!
-    fullName: height
+    children:
+      - 'office-ui-fabric-react!IGap#height:member'
+      - 'office-ui-fabric-react!IGap#width:member'
+  - uid: 'office-ui-fabric-react!IGap#height:member'
     summary: Sets the height of the shimmer gap in pixels.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: height
+    fullName: height
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'height?: number;'
       return:
-        type: number
-  - name: width
-    uid: 'office-ui-fabric-react!IGap#width:member'
-    package: office-ui-fabric-react!
-    fullName: width
+        type:
+          - number
+  - uid: 'office-ui-fabric-react!IGap#width:member'
     summary: Gap width value.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: width
+    fullName: width
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'width?: number | string;'
       return:
-        type: number | string
-extends: 'IShimmerElement '
+        type:
+          - number | string

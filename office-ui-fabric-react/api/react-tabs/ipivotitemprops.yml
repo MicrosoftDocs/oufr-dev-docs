@@ -1,170 +1,176 @@
-### YamlMime:TSType
-name: IPivotItemProps
-uid: '@fluentui/react-tabs!IPivotItemProps:interface'
-package: '@fluentui/react-tabs!'
-fullName: IPivotItemProps
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: alwaysRender
-    uid: '@fluentui/react-tabs!IPivotItemProps#alwaysRender:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-tabs!IPivotItemProps:interface'
+    name: IPivotItemProps
+    fullName: IPivotItemProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'React.HTMLAttributes<HTMLDivElement> '
     package: '@fluentui/react-tabs!'
-    fullName: alwaysRender
+    children:
+      - '@fluentui/react-tabs!IPivotItemProps#alwaysRender:member'
+      - '@fluentui/react-tabs!IPivotItemProps#ariaLabel:member'
+      - '@fluentui/react-tabs!IPivotItemProps#componentRef:member'
+      - '@fluentui/react-tabs!IPivotItemProps#headerButtonProps:member'
+      - '@fluentui/react-tabs!IPivotItemProps#headerText:member'
+      - '@fluentui/react-tabs!IPivotItemProps#itemCount:member'
+      - '@fluentui/react-tabs!IPivotItemProps#itemIcon:member'
+      - '@fluentui/react-tabs!IPivotItemProps#itemKey:member'
+      - '@fluentui/react-tabs!IPivotItemProps#keytipProps:member'
+      - '@fluentui/react-tabs!IPivotItemProps#linkText:member'
+      - '@fluentui/react-tabs!IPivotItemProps#onRenderItemLink:member'
+  - uid: '@fluentui/react-tabs!IPivotItemProps#alwaysRender:member'
     summary: >-
-      Defines whether to always render the pivot item (regardless of whether it
-      is selected or not). Useful if you're rendering content that is expensive
-      to mount.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Defines whether to always render the pivot item (regardless of whether it is selected or not). Useful if you're
+      rendering content that is expensive to mount.
+    name: alwaysRender
+    fullName: alwaysRender
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'alwaysRender?: boolean;'
       return:
-        type: boolean
-  - name: ariaLabel
-    uid: '@fluentui/react-tabs!IPivotItemProps#ariaLabel:member'
-    package: '@fluentui/react-tabs!'
+        type:
+          - boolean
+  - uid: '@fluentui/react-tabs!IPivotItemProps#ariaLabel:member'
+    summary: |-
+      The aria label of each pivot link which will read by screen reader instead of linkText.
+
+      Note that unless you have compelling requirements you should not override aria-label.
+    name: ariaLabel
     fullName: ariaLabel
-    summary: >-
-      The aria label of each pivot link which will read by screen reader instead
-      of linkText.
-
-
-      Note that unless you have compelling requirements you should not override
-      aria-label.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'ariaLabel?: string;'
       return:
-        type: string
-  - name: componentRef
-    uid: '@fluentui/react-tabs!IPivotItemProps#componentRef:member'
-    package: '@fluentui/react-tabs!'
-    fullName: componentRef
+        type:
+          - string
+  - uid: '@fluentui/react-tabs!IPivotItemProps#componentRef:member'
     summary: Gets the component ref.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: componentRef
+    fullName: componentRef
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'componentRef?: IRefObject<{}>;'
       return:
-        type: 'IRefObject&lt;{}&gt;'
-  - name: headerButtonProps
-    uid: '@fluentui/react-tabs!IPivotItemProps#headerButtonProps:member'
-    package: '@fluentui/react-tabs!'
-    fullName: headerButtonProps
+        type:
+          - 'IRefObject<{}>'
+  - uid: '@fluentui/react-tabs!IPivotItemProps#headerButtonProps:member'
     summary: >-
-      Props for the header command button. This provides a way to pass in native
-      props, such as data-\* and aria-\*, for each pivot header/link element.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Props for the header command button. This provides a way to pass in native props, such as data-\* and aria-\*, for
+      each pivot header/link element.
+    name: headerButtonProps
+    fullName: headerButtonProps
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: |-
         headerButtonProps?: IButtonProps | {
                 [key: string]: string | number | boolean;
             };
       return:
-        type: |-
-          IButtonProps | {
-                  [key: string]: string | number | boolean;
-              }
-  - name: headerText
-    uid: '@fluentui/react-tabs!IPivotItemProps#headerText:member'
-    package: '@fluentui/react-tabs!'
-    fullName: headerText
+        type:
+          - |-
+            IButtonProps | {
+                    [key: string]: string | number | boolean;
+                }
+  - uid: '@fluentui/react-tabs!IPivotItemProps#headerText:member'
     summary: The text displayed of each pivot link.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: headerText
+    fullName: headerText
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'headerText?: string;'
       return:
-        type: string
-  - name: itemCount
-    uid: '@fluentui/react-tabs!IPivotItemProps#itemCount:member'
-    package: '@fluentui/react-tabs!'
-    fullName: itemCount
-    summary: >-
-      Defines an optional item count displayed in parentheses just after the
-      `linkText`<!-- -->.
-
+        type:
+          - string
+  - uid: '@fluentui/react-tabs!IPivotItemProps#itemCount:member'
+    summary: |-
+      Defines an optional item count displayed in parentheses just after the `linkText`<!-- -->.
 
       Examples: completed (4), Unread (99+)
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: itemCount
+    fullName: itemCount
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'itemCount?: number | string;'
       return:
-        type: number | string
-  - name: itemIcon
-    uid: '@fluentui/react-tabs!IPivotItemProps#itemIcon:member'
-    package: '@fluentui/react-tabs!'
-    fullName: itemIcon
+        type:
+          - number | string
+  - uid: '@fluentui/react-tabs!IPivotItemProps#itemIcon:member'
     summary: An optional icon to show next to the pivot link.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: itemIcon
+    fullName: itemIcon
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'itemIcon?: string;'
       return:
-        type: string
-  - name: itemKey
-    uid: '@fluentui/react-tabs!IPivotItemProps#itemKey:member'
-    package: '@fluentui/react-tabs!'
-    fullName: itemKey
+        type:
+          - string
+  - uid: '@fluentui/react-tabs!IPivotItemProps#itemKey:member'
     summary: |-
       An required key to uniquely identify a pivot item.
 
       Note: The 'key' from react props cannot be used inside component.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: itemKey
+    fullName: itemKey
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'itemKey?: string;'
       return:
-        type: string
-  - name: keytipProps
-    uid: '@fluentui/react-tabs!IPivotItemProps#keytipProps:member'
-    package: '@fluentui/react-tabs!'
-    fullName: keytipProps
+        type:
+          - string
+  - uid: '@fluentui/react-tabs!IPivotItemProps#keytipProps:member'
     summary: Optional keytip for this PivotItem
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: keytipProps
+    fullName: keytipProps
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'keytipProps?: IKeytipProps;'
       return:
-        type: IKeytipProps
-  - name: linkText
-    uid: '@fluentui/react-tabs!IPivotItemProps#linkText:member'
-    package: '@fluentui/react-tabs!'
-    fullName: linkText
+        type:
+          - IKeytipProps
+  - uid: '@fluentui/react-tabs!IPivotItemProps#linkText:member'
     summary: The text displayed of each pivot link - renaming to `headerText`<!-- -->.
-    remarks: ''
-    isPreview: false
-    isDeprecated: true
-    customDeprecatedMessage: Use `headerText` instead.
+    deprecated:
+      content: Use `headerText` instead.
+    name: linkText
+    fullName: linkText
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'linkText?: string;'
       return:
-        type: string
-  - name: onRenderItemLink
-    uid: '@fluentui/react-tabs!IPivotItemProps#onRenderItemLink:member'
-    package: '@fluentui/react-tabs!'
-    fullName: onRenderItemLink
+        type:
+          - string
+  - uid: '@fluentui/react-tabs!IPivotItemProps#onRenderItemLink:member'
     summary: Optional custom renderer for the pivot item link
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onRenderItemLink
+    fullName: onRenderItemLink
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onRenderItemLink?: IRenderFunction<IPivotItemProps>;'
       return:
-        type: IRenderFunction&lt;IPivotItemProps&gt;
-extends: 'React.HTMLAttributes&lt;HTMLDivElement&gt; '
+        type:
+          - IRenderFunction<IPivotItemProps>

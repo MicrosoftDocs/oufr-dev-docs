@@ -1,42 +1,38 @@
-### YamlMime:TSType
-name: IPersonaPresenceProps
-uid: 'office-ui-fabric-react!IPersonaPresenceProps:interface'
-package: office-ui-fabric-react!
-fullName: IPersonaPresenceProps
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: componentRef
-    uid: 'office-ui-fabric-react!IPersonaPresenceProps#componentRef:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-ui-fabric-react!IPersonaPresenceProps:interface'
+    name: IPersonaPresenceProps
+    fullName: IPersonaPresenceProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'IPersonaSharedProps '
     package: office-ui-fabric-react!
-    fullName: componentRef
+    children:
+      - 'office-ui-fabric-react!IPersonaPresenceProps#componentRef:member'
+      - 'office-ui-fabric-react!IPersonaPresenceProps#styles:member'
+  - uid: 'office-ui-fabric-react!IPersonaPresenceProps#componentRef:member'
     summary: Gets the component ref.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: componentRef
+    fullName: componentRef
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'componentRef?: IRefObject<{}>;'
       return:
-        type: 'IRefObject&lt;{}&gt;'
-  - name: styles
-    uid: 'office-ui-fabric-react!IPersonaPresenceProps#styles:member'
-    package: office-ui-fabric-react!
+        type:
+          - 'IRefObject<{}>'
+  - uid: 'office-ui-fabric-react!IPersonaPresenceProps#styles:member'
+    summary: Call to provide customized styling that will layer on top of the variant rules
+    name: styles
     fullName: styles
-    summary: >-
-      Call to provide customized styling that will layer on top of the variant
-      rules
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        styles?: IStyleFunctionOrObject<IPersonaPresenceStyleProps,
-        IPersonaPresenceStyles>;
+      content: 'styles?: IStyleFunctionOrObject<IPersonaPresenceStyleProps, IPersonaPresenceStyles>;'
       return:
-        type: >-
-          IStyleFunctionOrObject&lt;IPersonaPresenceStyleProps,
-          IPersonaPresenceStyles&gt;
-extends: 'IPersonaSharedProps '
+        type:
+          - 'IStyleFunctionOrObject<IPersonaPresenceStyleProps, IPersonaPresenceStyles>'

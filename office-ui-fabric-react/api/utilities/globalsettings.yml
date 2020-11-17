@@ -1,88 +1,97 @@
-### YamlMime:TSType
-name: GlobalSettings
-uid: '@fluentui/utilities!GlobalSettings:class'
-package: '@fluentui/utilities!'
-fullName: GlobalSettings
-summary: >-
-  Global settings helper, which stores settings in the global (window)
-  namespace. If window is not provided, it will store settings in module scope.
-  Provides a way to observe changes as well when their values change.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: class
-methods:
-  - name: addChangeListener(cb)
-    uid: '@fluentui/utilities!GlobalSettings.addChangeListener:member(1)'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/utilities!GlobalSettings:class'
+    summary: >-
+      Global settings helper, which stores settings in the global (window) namespace. If window is not provided, it will
+      store settings in module scope. Provides a way to observe changes as well when their values change.
+    name: GlobalSettings
+    fullName: GlobalSettings
+    langs:
+      - typeScript
+    type: class
     package: '@fluentui/utilities!'
+    children:
+      - '@fluentui/utilities!GlobalSettings.addChangeListener:member(1)'
+      - '@fluentui/utilities!GlobalSettings.getValue:member(1)'
+      - '@fluentui/utilities!GlobalSettings.removeChangeListener:member(1)'
+      - '@fluentui/utilities!GlobalSettings.setValue:member(1)'
+  - uid: '@fluentui/utilities!GlobalSettings.addChangeListener:member(1)'
+    name: addChangeListener(cb)
     fullName: addChangeListener(cb)
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'static addChangeListener(cb: IChangeEventCallback): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: cb
           description: ''
-          type: '<xref uid="@fluentui/utilities!IChangeEventCallback:interface" />'
-      return:
-        type: void
-        description: ''
-  - name: 'getValue(key, defaultValue)'
-    uid: '@fluentui/utilities!GlobalSettings.getValue:member(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - '@fluentui/utilities!IChangeEventCallback:interface'
+  - uid: '@fluentui/utilities!GlobalSettings.getValue:member(1)'
+    name: 'getValue(key, defaultValue)'
     fullName: 'getValue(key, defaultValue)'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'static getValue<T>(key: string, defaultValue?: T | (() => T)): T;'
+      return:
+        type:
+          - T
+        description: ''
       parameters:
         - id: key
           description: ''
-          type: string
+          type:
+            - string
         - id: defaultValue
           description: ''
-          type: T | (() =&gt; T)
-      return:
-        type: T
-        description: ''
-  - name: removeChangeListener(cb)
-    uid: '@fluentui/utilities!GlobalSettings.removeChangeListener:member(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - T | (() => T)
+      typeParameters:
+        - id: T
+  - uid: '@fluentui/utilities!GlobalSettings.removeChangeListener:member(1)'
+    name: removeChangeListener(cb)
     fullName: removeChangeListener(cb)
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'static removeChangeListener(cb: IChangeEventCallback): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: cb
           description: ''
-          type: '<xref uid="@fluentui/utilities!IChangeEventCallback:interface" />'
-      return:
-        type: void
-        description: ''
-  - name: 'setValue(key, value)'
-    uid: '@fluentui/utilities!GlobalSettings.setValue:member(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - '@fluentui/utilities!IChangeEventCallback:interface'
+  - uid: '@fluentui/utilities!GlobalSettings.setValue:member(1)'
+    name: 'setValue(key, value)'
     fullName: 'setValue(key, value)'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'static setValue<T>(key: string, value: T): T;'
+      return:
+        type:
+          - T
+        description: ''
       parameters:
         - id: key
           description: ''
-          type: string
+          type:
+            - string
         - id: value
           description: ''
-          type: T
-      return:
-        type: T
-        description: ''
+          type:
+            - T
+      typeParameters:
+        - id: T

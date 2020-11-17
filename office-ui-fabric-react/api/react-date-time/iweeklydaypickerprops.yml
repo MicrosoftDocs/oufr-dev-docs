@@ -1,249 +1,251 @@
-### YamlMime:TSType
-name: IWeeklyDayPickerProps
-uid: '@fluentui/react-date-time!IWeeklyDayPickerProps:interface'
-package: '@fluentui/react-date-time!'
-fullName: IWeeklyDayPickerProps
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: animationDirection
-    uid: '@fluentui/react-date-time!IWeeklyDayPickerProps#animationDirection:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-date-time!IWeeklyDayPickerProps:interface'
+    name: IWeeklyDayPickerProps
+    fullName: IWeeklyDayPickerProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - IBaseProps<IWeeklyDayPicker>
+      - 'Partial<ICalendarDayGridProps> '
     package: '@fluentui/react-date-time!'
+    children:
+      - '@fluentui/react-date-time!IWeeklyDayPickerProps#animationDirection:member'
+      - '@fluentui/react-date-time!IWeeklyDayPickerProps#className:member'
+      - '@fluentui/react-date-time!IWeeklyDayPickerProps#componentRef:member'
+      - '@fluentui/react-date-time!IWeeklyDayPickerProps#dateTimeFormatter:member'
+      - '@fluentui/react-date-time!IWeeklyDayPickerProps#firstDayOfWeek:member'
+      - '@fluentui/react-date-time!IWeeklyDayPickerProps#initialDate:member'
+      - '@fluentui/react-date-time!IWeeklyDayPickerProps#maxDate:member'
+      - '@fluentui/react-date-time!IWeeklyDayPickerProps#minDate:member'
+      - '@fluentui/react-date-time!IWeeklyDayPickerProps#navigationIcons:member'
+      - '@fluentui/react-date-time!IWeeklyDayPickerProps#onNavigateDate:member'
+      - '@fluentui/react-date-time!IWeeklyDayPickerProps#onSelectDate:member'
+      - '@fluentui/react-date-time!IWeeklyDayPickerProps#restrictedDates:member'
+      - '@fluentui/react-date-time!IWeeklyDayPickerProps#showFullMonth:member'
+      - '@fluentui/react-date-time!IWeeklyDayPickerProps#strings:member'
+      - '@fluentui/react-date-time!IWeeklyDayPickerProps#styles:member'
+      - '@fluentui/react-date-time!IWeeklyDayPickerProps#theme:member'
+      - '@fluentui/react-date-time!IWeeklyDayPickerProps#today:member'
+      - '@fluentui/react-date-time!IWeeklyDayPickerProps#weeksToShow:member'
+  - uid: '@fluentui/react-date-time!IWeeklyDayPickerProps#animationDirection:member'
+    summary: 'The cardinal directions for animation to occur during transitions, either horizontal or veritcal'
+    name: animationDirection
     fullName: animationDirection
-    summary: >-
-      The cardinal directions for animation to occur during transitions, either
-      horizontal or veritcal
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'animationDirection?: AnimationDirection;'
       return:
-        type: '<xref uid="@fluentui/react-date-time!AnimationDirection:enum" />'
-  - name: className
-    uid: '@fluentui/react-date-time!IWeeklyDayPickerProps#className:member'
-    package: '@fluentui/react-date-time!'
-    fullName: className
+        type:
+          - '@fluentui/react-date-time!AnimationDirection:enum'
+  - uid: '@fluentui/react-date-time!IWeeklyDayPickerProps#className:member'
     summary: Additional CSS class(es) to apply to the WeeklyDayPicker.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: className
+    fullName: className
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'className?: string;'
       return:
-        type: string
-  - name: componentRef
-    uid: '@fluentui/react-date-time!IWeeklyDayPickerProps#componentRef:member'
-    package: '@fluentui/react-date-time!'
-    fullName: componentRef
+        type:
+          - string
+  - uid: '@fluentui/react-date-time!IWeeklyDayPickerProps#componentRef:member'
     summary: >-
-      Optional callback to access the IWeeklyDayPicker interface. Use this
-      instead of ref for accessing the public methods and properties of the
-      component.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Optional callback to access the IWeeklyDayPicker interface. Use this instead of ref for accessing the public
+      methods and properties of the component.
+    name: componentRef
+    fullName: componentRef
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'componentRef?: IRefObject<IWeeklyDayPicker>;'
       return:
-        type: IRefObject&lt;IWeeklyDayPicker&gt;
-  - name: dateTimeFormatter
-    uid: '@fluentui/react-date-time!IWeeklyDayPickerProps#dateTimeFormatter:member'
-    package: '@fluentui/react-date-time!'
+        type:
+          - IRefObject<IWeeklyDayPicker>
+  - uid: '@fluentui/react-date-time!IWeeklyDayPickerProps#dateTimeFormatter:member'
+    summary: 'Apply additional formating to dates, for example localized date formatting.'
+    name: dateTimeFormatter
     fullName: dateTimeFormatter
-    summary: >-
-      Apply additional formating to dates, for example localized date
-      formatting.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'dateTimeFormatter?: IDateFormatting;'
       return:
-        type: '<xref uid="@fluentui/date-time-utilities!IDateFormatting:interface" />'
-  - name: firstDayOfWeek
-    uid: '@fluentui/react-date-time!IWeeklyDayPickerProps#firstDayOfWeek:member'
-    package: '@fluentui/react-date-time!'
-    fullName: firstDayOfWeek
+        type:
+          - '@fluentui/date-time-utilities!IDateFormatting:interface'
+  - uid: '@fluentui/react-date-time!IWeeklyDayPickerProps#firstDayOfWeek:member'
     summary: The first day of the week for your locale.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: firstDayOfWeek
+    fullName: firstDayOfWeek
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'firstDayOfWeek?: DayOfWeek;'
       return:
-        type: '<xref uid="@fluentui/date-time-utilities!DayOfWeek:enum" />'
-  - name: initialDate
-    uid: '@fluentui/react-date-time!IWeeklyDayPickerProps#initialDate:member'
-    package: '@fluentui/react-date-time!'
-    fullName: initialDate
+        type:
+          - '@fluentui/date-time-utilities!DayOfWeek:enum'
+  - uid: '@fluentui/react-date-time!IWeeklyDayPickerProps#initialDate:member'
     summary: 'The initially selected date. If not provided, defaults to today''s date'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: initialDate
+    fullName: initialDate
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'initialDate?: Date;'
       return:
-        type: Date
-  - name: maxDate
-    uid: '@fluentui/react-date-time!IWeeklyDayPickerProps#maxDate:member'
-    package: '@fluentui/react-date-time!'
+        type:
+          - Date
+  - uid: '@fluentui/react-date-time!IWeeklyDayPickerProps#maxDate:member'
+    summary: If set the Calendar will not allow navigation to or selection of a date later than this value.
+    name: maxDate
     fullName: maxDate
-    summary: >-
-      If set the Calendar will not allow navigation to or selection of a date
-      later than this value.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'maxDate?: Date;'
       return:
-        type: Date
-  - name: minDate
-    uid: '@fluentui/react-date-time!IWeeklyDayPickerProps#minDate:member'
-    package: '@fluentui/react-date-time!'
+        type:
+          - Date
+  - uid: '@fluentui/react-date-time!IWeeklyDayPickerProps#minDate:member'
+    summary: If set the Calendar will not allow navigation to or selection of a date earlier than this value.
+    name: minDate
     fullName: minDate
-    summary: >-
-      If set the Calendar will not allow navigation to or selection of a date
-      earlier than this value.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'minDate?: Date;'
       return:
-        type: Date
-  - name: navigationIcons
-    uid: '@fluentui/react-date-time!IWeeklyDayPickerProps#navigationIcons:member'
-    package: '@fluentui/react-date-time!'
-    fullName: navigationIcons
+        type:
+          - Date
+  - uid: '@fluentui/react-date-time!IWeeklyDayPickerProps#navigationIcons:member'
     summary: Customize navigation icons.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: navigationIcons
+    fullName: navigationIcons
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'navigationIcons?: IWeeklyDayPickerNavigationIcons;'
       return:
-        type: IWeeklyDayPickerNavigationIcons
-  - name: onNavigateDate
-    uid: '@fluentui/react-date-time!IWeeklyDayPickerProps#onNavigateDate:member'
-    package: '@fluentui/react-date-time!'
-    fullName: onNavigateDate
+        type:
+          - IWeeklyDayPickerNavigationIcons
+  - uid: '@fluentui/react-date-time!IWeeklyDayPickerProps#onNavigateDate:member'
     summary: Callback issued when a date in the calendar is navigated
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onNavigateDate
+    fullName: onNavigateDate
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onNavigateDate?: (date: Date) => void;'
       return:
-        type: '(date: Date) =&gt; void'
-  - name: onSelectDate
-    uid: '@fluentui/react-date-time!IWeeklyDayPickerProps#onSelectDate:member'
-    package: '@fluentui/react-date-time!'
-    fullName: onSelectDate
+        type:
+          - '(date: Date) => void'
+  - uid: '@fluentui/react-date-time!IWeeklyDayPickerProps#onSelectDate:member'
     summary: Callback issued when a date is selected
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onSelectDate
+    fullName: onSelectDate
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onSelectDate?: (date: Date) => void;'
       return:
-        type: '(date: Date) =&gt; void'
-  - name: restrictedDates
-    uid: '@fluentui/react-date-time!IWeeklyDayPickerProps#restrictedDates:member'
-    package: '@fluentui/react-date-time!'
-    fullName: restrictedDates
+        type:
+          - '(date: Date) => void'
+  - uid: '@fluentui/react-date-time!IWeeklyDayPickerProps#restrictedDates:member'
     summary: If set the Calendar will not allow selection of dates in this array.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: restrictedDates
+    fullName: restrictedDates
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'restrictedDates?: Date[];'
       return:
-        type: 'Date[]'
-  - name: showFullMonth
-    uid: '@fluentui/react-date-time!IWeeklyDayPickerProps#showFullMonth:member'
-    package: '@fluentui/react-date-time!'
-    fullName: showFullMonth
+        type:
+          - 'Date[]'
+  - uid: '@fluentui/react-date-time!IWeeklyDayPickerProps#showFullMonth:member'
     summary: 'Whether to show as a month picker. If false, shows only one week'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: showFullMonth
+    fullName: showFullMonth
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'showFullMonth?: boolean;'
       return:
-        type: boolean
-  - name: strings
-    uid: '@fluentui/react-date-time!IWeeklyDayPickerProps#strings:member'
-    package: '@fluentui/react-date-time!'
-    fullName: strings
+        type:
+          - boolean
+  - uid: '@fluentui/react-date-time!IWeeklyDayPickerProps#strings:member'
     summary: Localized strings to use in the WeeklyDayPicker
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: strings
+    fullName: strings
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'strings: IWeeklyDayPickerStrings;'
       return:
-        type: >-
-          <xref
-          uid="@fluentui/react-date-time!IWeeklyDayPickerStrings:interface" />
-  - name: styles
-    uid: '@fluentui/react-date-time!IWeeklyDayPickerProps#styles:member'
-    package: '@fluentui/react-date-time!'
-    fullName: styles
+        type:
+          - '@fluentui/react-date-time!IWeeklyDayPickerStrings:interface'
+  - uid: '@fluentui/react-date-time!IWeeklyDayPickerProps#styles:member'
     summary: Customized styles for the component.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: styles
+    fullName: styles
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        styles?: IStyleFunctionOrObject<IWeeklyDayPickerStyleProps,
-        IWeeklyDayPickerStyles>;
+      content: 'styles?: IStyleFunctionOrObject<IWeeklyDayPickerStyleProps, IWeeklyDayPickerStyles>;'
       return:
-        type: >-
-          IStyleFunctionOrObject&lt;IWeeklyDayPickerStyleProps,
-          IWeeklyDayPickerStyles&gt;
-  - name: theme
-    uid: '@fluentui/react-date-time!IWeeklyDayPickerProps#theme:member'
-    package: '@fluentui/react-date-time!'
-    fullName: theme
+        type:
+          - 'IStyleFunctionOrObject<IWeeklyDayPickerStyleProps, IWeeklyDayPickerStyles>'
+  - uid: '@fluentui/react-date-time!IWeeklyDayPickerProps#theme:member'
     summary: Theme (provided through customization).
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'theme?: ITheme;'
       return:
-        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
-  - name: today
-    uid: '@fluentui/react-date-time!IWeeklyDayPickerProps#today:member'
-    package: '@fluentui/react-date-time!'
+        type:
+          - '@fluentui/theme!ITheme:interface'
+  - uid: '@fluentui/react-date-time!IWeeklyDayPickerProps#today:member'
+    summary: 'Value of today. If unspecified, current time in client machine will be used.'
+    name: today
     fullName: today
-    summary: >-
-      Value of today. If unspecified, current time in client machine will be
-      used.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'today?: Date;'
       return:
-        type: Date
-  - name: weeksToShow
-    uid: '@fluentui/react-date-time!IWeeklyDayPickerProps#weeksToShow:member'
-    package: '@fluentui/react-date-time!'
-    fullName: weeksToShow
+        type:
+          - Date
+  - uid: '@fluentui/react-date-time!IWeeklyDayPickerProps#weeksToShow:member'
     summary: >-
-      How many weeks to show if showFullMonth=true. If not provided, will show
-      enough weeks to display the current month, between 4 and 6 depending
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      How many weeks to show if showFullMonth=true. If not provided, will show enough weeks to display the current
+      month, between 4 and 6 depending
+    name: weeksToShow
+    fullName: weeksToShow
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'weeksToShow?: number;'
       return:
-        type: number
-extends: IBaseProps&lt;IWeeklyDayPicker&gt;
+        type:
+          - number

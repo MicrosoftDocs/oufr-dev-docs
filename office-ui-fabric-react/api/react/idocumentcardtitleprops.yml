@@ -1,109 +1,105 @@
-### YamlMime:TSType
-name: IDocumentCardTitleProps
-uid: '@fluentui/react!IDocumentCardTitleProps:interface'
-package: '@fluentui/react!'
-fullName: IDocumentCardTitleProps
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: className
-    uid: '@fluentui/react!IDocumentCardTitleProps#className:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react!IDocumentCardTitleProps:interface'
+    name: IDocumentCardTitleProps
+    fullName: IDocumentCardTitleProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'React.ClassAttributes<DocumentCardTitleBase> '
     package: '@fluentui/react!'
-    fullName: className
+    children:
+      - '@fluentui/react!IDocumentCardTitleProps#className:member'
+      - '@fluentui/react!IDocumentCardTitleProps#componentRef:member'
+      - '@fluentui/react!IDocumentCardTitleProps#shouldTruncate:member'
+      - '@fluentui/react!IDocumentCardTitleProps#showAsSecondaryTitle:member'
+      - '@fluentui/react!IDocumentCardTitleProps#styles:member'
+      - '@fluentui/react!IDocumentCardTitleProps#theme:member'
+      - '@fluentui/react!IDocumentCardTitleProps#title:member'
+  - uid: '@fluentui/react!IDocumentCardTitleProps#className:member'
     summary: Optional override class name
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: className
+    fullName: className
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'className?: string;'
       return:
-        type: string
-  - name: componentRef
-    uid: '@fluentui/react!IDocumentCardTitleProps#componentRef:member'
-    package: '@fluentui/react!'
-    fullName: componentRef
+        type:
+          - string
+  - uid: '@fluentui/react!IDocumentCardTitleProps#componentRef:member'
     summary: Gets the component ref.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: componentRef
+    fullName: componentRef
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'componentRef?: IRefObject<IDocumentCardTitle>;'
       return:
-        type: IRefObject&lt;IDocumentCardTitle&gt;
-  - name: shouldTruncate
-    uid: '@fluentui/react!IDocumentCardTitleProps#shouldTruncate:member'
-    package: '@fluentui/react!'
+        type:
+          - IRefObject<IDocumentCardTitle>
+  - uid: '@fluentui/react!IDocumentCardTitleProps#shouldTruncate:member'
+    summary: Whether we truncate the title to fit within the box. May have a performance impact.
+    name: shouldTruncate
     fullName: shouldTruncate
-    summary: >-
-      Whether we truncate the title to fit within the box. May have a
-      performance impact.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'shouldTruncate?: boolean;'
       return:
-        type: boolean
-  - name: showAsSecondaryTitle
-    uid: '@fluentui/react!IDocumentCardTitleProps#showAsSecondaryTitle:member'
-    package: '@fluentui/react!'
+        type:
+          - boolean
+  - uid: '@fluentui/react!IDocumentCardTitleProps#showAsSecondaryTitle:member'
+    summary: Whether show as title as secondary title style such as smaller font and lighter color.
+    name: showAsSecondaryTitle
     fullName: showAsSecondaryTitle
-    summary: >-
-      Whether show as title as secondary title style such as smaller font and
-      lighter color.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'showAsSecondaryTitle?: boolean;'
       return:
-        type: boolean
-  - name: styles
-    uid: '@fluentui/react!IDocumentCardTitleProps#styles:member'
-    package: '@fluentui/react!'
+        type:
+          - boolean
+  - uid: '@fluentui/react!IDocumentCardTitleProps#styles:member'
+    summary: Call to provide customized styling that will layer on top of the variant rules
+    name: styles
     fullName: styles
-    summary: >-
-      Call to provide customized styling that will layer on top of the variant
-      rules
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        styles?: IStyleFunctionOrObject<IDocumentCardTitleStyleProps,
-        IDocumentCardTitleStyles>;
+      content: 'styles?: IStyleFunctionOrObject<IDocumentCardTitleStyleProps, IDocumentCardTitleStyles>;'
       return:
-        type: >-
-          IStyleFunctionOrObject&lt;IDocumentCardTitleStyleProps,
-          IDocumentCardTitleStyles&gt;
-  - name: theme
-    uid: '@fluentui/react!IDocumentCardTitleProps#theme:member'
-    package: '@fluentui/react!'
-    fullName: theme
+        type:
+          - 'IStyleFunctionOrObject<IDocumentCardTitleStyleProps, IDocumentCardTitleStyles>'
+  - uid: '@fluentui/react!IDocumentCardTitleProps#theme:member'
     summary: Theme provided by HOC.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'theme?: ITheme;'
       return:
-        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
-  - name: title
-    uid: '@fluentui/react!IDocumentCardTitleProps#title:member'
-    package: '@fluentui/react!'
-    fullName: title
+        type:
+          - '@fluentui/theme!ITheme:interface'
+  - uid: '@fluentui/react!IDocumentCardTitleProps#title:member'
     summary: >-
-      Title text. If the card represents more than one document, this should be
-      the title of one document and a "+X" string. For example, a collection of
-      four documents would have a string of "Document.docx +3".
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Title text. If the card represents more than one document, this should be the title of one document and a "+X"
+      string. For example, a collection of four documents would have a string of "Document.docx +3".
+    name: title
+    fullName: title
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'title: string;'
       return:
-        type: string
-extends: 'React.ClassAttributes&lt;DocumentCardTitleBase&gt; '
+        type:
+          - string

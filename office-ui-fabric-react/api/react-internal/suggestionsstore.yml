@@ -1,123 +1,122 @@
-### YamlMime:TSType
-name: SuggestionsStore
-uid: '@fluentui/react-internal!SuggestionsStore:class'
-package: '@fluentui/react-internal!'
-fullName: SuggestionsStore
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: class
-constructors:
-  - name: (constructor)(options)
-    uid: '@fluentui/react-internal!SuggestionsStore:constructor(1)'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-internal!SuggestionsStore:class'
+    name: SuggestionsStore
+    fullName: SuggestionsStore
+    langs:
+      - typeScript
+    type: class
     package: '@fluentui/react-internal!'
-    fullName: (constructor)(options)
+    children:
+      - '@fluentui/react-internal!SuggestionsStore:constructor(1)'
+      - '@fluentui/react-internal!SuggestionsStore#convertSuggestionsToSuggestionItems:member(1)'
+      - '@fluentui/react-internal!SuggestionsStore#getSuggestionAtIndex:member(1)'
+      - '@fluentui/react-internal!SuggestionsStore#getSuggestions:member(1)'
+      - '@fluentui/react-internal!SuggestionsStore#removeSuggestion:member(1)'
+      - '@fluentui/react-internal!SuggestionsStore#suggestions:member'
+      - '@fluentui/react-internal!SuggestionsStore#updateSuggestions:member(1)'
+  - uid: '@fluentui/react-internal!SuggestionsStore:constructor(1)'
     summary: Constructs a new instance of the `SuggestionsStore` class
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: (constructor)(options)
+    fullName: (constructor)(options)
+    langs:
+      - typeScript
+    type: constructor
     syntax:
       content: 'constructor(options?: SuggestionsStoreOptions<T>);'
       parameters:
         - id: options
           description: ''
-          type: SuggestionsStoreOptions&lt;T&gt;
-properties:
-  - name: suggestions
-    uid: '@fluentui/react-internal!SuggestionsStore#suggestions:member'
-    package: '@fluentui/react-internal!'
-    fullName: suggestions
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'suggestions: ISuggestionModel<T>[];'
-      return:
-        type: 'ISuggestionModel&lt;T&gt;[]'
-methods:
-  - name: convertSuggestionsToSuggestionItems(suggestions)
-    uid: >-
-      @fluentui/react-internal!SuggestionsStore#convertSuggestionsToSuggestionItems:member(1)
-    package: '@fluentui/react-internal!'
+          type:
+            - SuggestionsStoreOptions<T>
+  - uid: '@fluentui/react-internal!SuggestionsStore#convertSuggestionsToSuggestionItems:member(1)'
+    name: convertSuggestionsToSuggestionItems(suggestions)
     fullName: convertSuggestionsToSuggestionItems(suggestions)
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        convertSuggestionsToSuggestionItems(suggestions:
-        Array<ISuggestionModel<T> | T>): ISuggestionModel<T>[];
+      content: 'convertSuggestionsToSuggestionItems(suggestions: Array<ISuggestionModel<T> | T>): ISuggestionModel<T>[];'
+      return:
+        type:
+          - 'ISuggestionModel<T>[]'
+        description: ''
       parameters:
         - id: suggestions
           description: ''
-          type: Array&lt;ISuggestionModel&lt;T&gt; | T&gt;
-      return:
-        type: 'ISuggestionModel&lt;T&gt;[]'
-        description: ''
-  - name: getSuggestionAtIndex(index)
-    uid: '@fluentui/react-internal!SuggestionsStore#getSuggestionAtIndex:member(1)'
-    package: '@fluentui/react-internal!'
+          type:
+            - Array<ISuggestionModel<T> | T>
+  - uid: '@fluentui/react-internal!SuggestionsStore#getSuggestionAtIndex:member(1)'
+    name: getSuggestionAtIndex(index)
     fullName: getSuggestionAtIndex(index)
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'getSuggestionAtIndex(index: number): ISuggestionModel<T>;'
+      return:
+        type:
+          - ISuggestionModel<T>
+        description: ''
       parameters:
         - id: index
           description: ''
-          type: number
-      return:
-        type: ISuggestionModel&lt;T&gt;
-        description: ''
-  - name: getSuggestions()
-    uid: '@fluentui/react-internal!SuggestionsStore#getSuggestions:member(1)'
-    package: '@fluentui/react-internal!'
+          type:
+            - number
+  - uid: '@fluentui/react-internal!SuggestionsStore#getSuggestions:member(1)'
+    name: getSuggestions()
     fullName: getSuggestions()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'getSuggestions(): ISuggestionModel<T>[];'
       return:
-        type: 'ISuggestionModel&lt;T&gt;[]'
+        type:
+          - 'ISuggestionModel<T>[]'
         description: ''
-  - name: removeSuggestion(index)
-    uid: '@fluentui/react-internal!SuggestionsStore#removeSuggestion:member(1)'
-    package: '@fluentui/react-internal!'
+  - uid: '@fluentui/react-internal!SuggestionsStore#removeSuggestion:member(1)'
+    name: removeSuggestion(index)
     fullName: removeSuggestion(index)
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'removeSuggestion(index: number): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: index
           description: ''
-          type: number
+          type:
+            - number
+  - uid: '@fluentui/react-internal!SuggestionsStore#suggestions:member'
+    name: suggestions
+    fullName: suggestions
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'suggestions: ISuggestionModel<T>[];'
       return:
-        type: void
-        description: ''
-  - name: updateSuggestions(newSuggestions)
-    uid: '@fluentui/react-internal!SuggestionsStore#updateSuggestions:member(1)'
-    package: '@fluentui/react-internal!'
+        type:
+          - 'ISuggestionModel<T>[]'
+  - uid: '@fluentui/react-internal!SuggestionsStore#updateSuggestions:member(1)'
+    name: updateSuggestions(newSuggestions)
     fullName: updateSuggestions(newSuggestions)
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'updateSuggestions(newSuggestions: T[]): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: newSuggestions
           description: ''
-          type: 'T[]'
-      return:
-        type: void
-        description: ''
+          type:
+            - 'T[]'

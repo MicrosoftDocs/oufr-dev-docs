@@ -1,52 +1,51 @@
-### YamlMime:TSType
-name: IDatePickerStrings
-uid: '@fluentui/react-date-time!IDatePickerStrings:interface'
-package: '@fluentui/react-date-time!'
-fullName: IDatePickerStrings
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: invalidInputErrorMessage
-    uid: >-
-      @fluentui/react-date-time!IDatePickerStrings#invalidInputErrorMessage:member
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-date-time!IDatePickerStrings:interface'
+    name: IDatePickerStrings
+    fullName: IDatePickerStrings
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'ICalendarStrings '
     package: '@fluentui/react-date-time!'
-    fullName: invalidInputErrorMessage
+    children:
+      - '@fluentui/react-date-time!IDatePickerStrings#invalidInputErrorMessage:member'
+      - '@fluentui/react-date-time!IDatePickerStrings#isOutOfBoundsErrorMessage:member'
+      - '@fluentui/react-date-time!IDatePickerStrings#isRequiredErrorMessage:member'
+  - uid: '@fluentui/react-date-time!IDatePickerStrings#invalidInputErrorMessage:member'
     summary: Error message to render for TextField if input date string parsing fails.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: invalidInputErrorMessage
+    fullName: invalidInputErrorMessage
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'invalidInputErrorMessage?: string;'
       return:
-        type: string
-  - name: isOutOfBoundsErrorMessage
-    uid: >-
-      @fluentui/react-date-time!IDatePickerStrings#isOutOfBoundsErrorMessage:member
-    package: '@fluentui/react-date-time!'
+        type:
+          - string
+  - uid: '@fluentui/react-date-time!IDatePickerStrings#isOutOfBoundsErrorMessage:member'
+    summary: 'Error message to render for TextField if date boundary (minDate, maxDate) validation fails.'
+    name: isOutOfBoundsErrorMessage
     fullName: isOutOfBoundsErrorMessage
-    summary: >-
-      Error message to render for TextField if date boundary (minDate, maxDate)
-      validation fails.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'isOutOfBoundsErrorMessage?: string;'
       return:
-        type: string
-  - name: isRequiredErrorMessage
-    uid: '@fluentui/react-date-time!IDatePickerStrings#isRequiredErrorMessage:member'
-    package: '@fluentui/react-date-time!'
-    fullName: isRequiredErrorMessage
+        type:
+          - string
+  - uid: '@fluentui/react-date-time!IDatePickerStrings#isRequiredErrorMessage:member'
     summary: Error message to render for TextField if isRequired validation fails.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: isRequiredErrorMessage
+    fullName: isRequiredErrorMessage
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'isRequiredErrorMessage?: string;'
       return:
-        type: string
-extends: 'ICalendarStrings '
+        type:
+          - string

@@ -1,72 +1,67 @@
-### YamlMime:TSType
-name: IPeoplePickerItemSuggestionProps
-uid: '@fluentui/react-internal!IPeoplePickerItemSuggestionProps:interface'
-package: '@fluentui/react-internal!'
-fullName: IPeoplePickerItemSuggestionProps
-summary: >-
-  PeoplePickerItemSuggestion props interface. Refers to the PeoplePicker items
-  that are suggested for picking.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: compact
-    uid: '@fluentui/react-internal!IPeoplePickerItemSuggestionProps#compact:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-internal!IPeoplePickerItemSuggestionProps:interface'
+    summary: PeoplePickerItemSuggestion props interface. Refers to the PeoplePicker items that are suggested for picking.
+    name: IPeoplePickerItemSuggestionProps
+    fullName: IPeoplePickerItemSuggestionProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'IPeoplePickerItemSharedProps '
     package: '@fluentui/react-internal!'
-    fullName: compact
+    children:
+      - '@fluentui/react-internal!IPeoplePickerItemSuggestionProps#compact:member'
+      - '@fluentui/react-internal!IPeoplePickerItemSuggestionProps#personaProps:member'
+      - '@fluentui/react-internal!IPeoplePickerItemSuggestionProps#styles:member'
+      - '@fluentui/react-internal!IPeoplePickerItemSuggestionProps#suggestionsProps:member'
+  - uid: '@fluentui/react-internal!IPeoplePickerItemSuggestionProps#compact:member'
     summary: >-
-      Flag that controls whether each suggested PeoplePicker item (Persona) is
-      rendered with or without secondary text for compact look.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Flag that controls whether each suggested PeoplePicker item (Persona) is rendered with or without secondary text
+      for compact look.
+    name: compact
+    fullName: compact
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'compact?: boolean;'
       return:
-        type: boolean
-  - name: personaProps
-    uid: >-
-      @fluentui/react-internal!IPeoplePickerItemSuggestionProps#personaProps:member
-    package: '@fluentui/react-internal!'
-    fullName: personaProps
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!IPeoplePickerItemSuggestionProps#personaProps:member'
     summary: Persona props for each suggested for picking PeoplePicker item.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: personaProps
+    fullName: personaProps
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'personaProps?: IPersonaProps;'
       return:
-        type: IPersonaProps
-  - name: styles
-    uid: '@fluentui/react-internal!IPeoplePickerItemSuggestionProps#styles:member'
-    package: '@fluentui/react-internal!'
+        type:
+          - IPersonaProps
+  - uid: '@fluentui/react-internal!IPeoplePickerItemSuggestionProps#styles:member'
+    summary: Call to provide customized styling that will layer on top of the variant rules.
+    name: styles
     fullName: styles
-    summary: >-
-      Call to provide customized styling that will layer on top of the variant
-      rules.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        styles?: IStyleFunctionOrObject<IPeoplePickerItemSuggestionStyleProps,
-        IPeoplePickerItemSuggestionStyles>;
+      content: 'styles?: IStyleFunctionOrObject<IPeoplePickerItemSuggestionStyleProps, IPeoplePickerItemSuggestionStyles>;'
       return:
-        type: >-
-          IStyleFunctionOrObject&lt;IPeoplePickerItemSuggestionStyleProps,
-          IPeoplePickerItemSuggestionStyles&gt;
-  - name: suggestionsProps
-    uid: >-
-      @fluentui/react-internal!IPeoplePickerItemSuggestionProps#suggestionsProps:member
-    package: '@fluentui/react-internal!'
-    fullName: suggestionsProps
+        type:
+          - 'IStyleFunctionOrObject<IPeoplePickerItemSuggestionStyleProps, IPeoplePickerItemSuggestionStyles>'
+  - uid: '@fluentui/react-internal!IPeoplePickerItemSuggestionProps#suggestionsProps:member'
     summary: General common props for all PeoplePicker items suggestions.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: suggestionsProps
+    fullName: suggestionsProps
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'suggestionsProps?: IBasePickerSuggestionsProps;'
       return:
-        type: IBasePickerSuggestionsProps
-extends: 'IPeoplePickerItemSharedProps '
+        type:
+          - IBasePickerSuggestionsProps

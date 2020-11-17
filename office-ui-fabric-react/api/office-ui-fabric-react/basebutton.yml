@@ -1,149 +1,150 @@
-### YamlMime:TSType
-name: BaseButton
-uid: 'office-ui-fabric-react!BaseButton:class'
-package: office-ui-fabric-react!
-fullName: BaseButton
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: class
-constructors:
-  - name: (constructor)(props)
-    uid: 'office-ui-fabric-react!BaseButton:constructor(1)'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-ui-fabric-react!BaseButton:class'
+    name: BaseButton
+    fullName: BaseButton
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'React.Component<IBaseButtonProps, IBaseButtonState> '
+    implements:
+      - 'office-ui-fabric-react!IButton:interface'
     package: office-ui-fabric-react!
-    fullName: (constructor)(props)
+    children:
+      - 'office-ui-fabric-react!BaseButton:constructor(1)'
+      - 'office-ui-fabric-react!BaseButton#componentDidMount:member(1)'
+      - 'office-ui-fabric-react!BaseButton#componentDidUpdate:member(1)'
+      - 'office-ui-fabric-react!BaseButton#componentWillUnmount:member(1)'
+      - 'office-ui-fabric-react!BaseButton.defaultProps:member'
+      - 'office-ui-fabric-react!BaseButton#dismissMenu:member(1)'
+      - 'office-ui-fabric-react!BaseButton#focus:member(1)'
+      - 'office-ui-fabric-react!BaseButton#openMenu:member(1)'
+      - 'office-ui-fabric-react!BaseButton#render:member(1)'
+  - uid: 'office-ui-fabric-react!BaseButton:constructor(1)'
     summary: Constructs a new instance of the `BaseButton` class
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: (constructor)(props)
+    fullName: (constructor)(props)
+    langs:
+      - typeScript
+    type: constructor
     syntax:
       content: 'constructor(props: IBaseButtonProps);'
       parameters:
         - id: props
           description: ''
-          type: '<xref uid="office-ui-fabric-react!IBaseButtonProps:interface" />'
-properties:
-  - name: defaultProps
-    uid: 'office-ui-fabric-react!BaseButton.defaultProps:member'
-    package: office-ui-fabric-react!
-    fullName: defaultProps
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'static defaultProps: Partial<IBaseButtonProps>;'
-      return:
-        type: Partial&lt;IBaseButtonProps&gt;
-methods:
-  - name: componentDidMount()
-    uid: 'office-ui-fabric-react!BaseButton#componentDidMount:member(1)'
-    package: office-ui-fabric-react!
+          type:
+            - 'office-ui-fabric-react!IBaseButtonProps:interface'
+  - uid: 'office-ui-fabric-react!BaseButton#componentDidMount:member(1)'
+    name: componentDidMount()
     fullName: componentDidMount()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'componentDidMount(): void;'
       return:
-        type: void
+        type:
+          - void
         description: ''
-  - name: 'componentDidUpdate(prevProps, prevState)'
-    uid: 'office-ui-fabric-react!BaseButton#componentDidUpdate:member(1)'
-    package: office-ui-fabric-react!
+  - uid: 'office-ui-fabric-react!BaseButton#componentDidUpdate:member(1)'
+    name: 'componentDidUpdate(prevProps, prevState)'
     fullName: 'componentDidUpdate(prevProps, prevState)'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        componentDidUpdate(prevProps: IBaseButtonProps, prevState:
-        IBaseButtonState): void;
+      content: 'componentDidUpdate(prevProps: IBaseButtonProps, prevState: IBaseButtonState): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: prevProps
           description: ''
-          type: '<xref uid="office-ui-fabric-react!IBaseButtonProps:interface" />'
+          type:
+            - 'office-ui-fabric-react!IBaseButtonProps:interface'
         - id: prevState
           description: ''
-          type: '<xref uid="office-ui-fabric-react!IBaseButtonState:interface" />'
-      return:
-        type: void
-        description: ''
-  - name: componentWillUnmount()
-    uid: 'office-ui-fabric-react!BaseButton#componentWillUnmount:member(1)'
-    package: office-ui-fabric-react!
+          type:
+            - 'office-ui-fabric-react!IBaseButtonState:interface'
+  - uid: 'office-ui-fabric-react!BaseButton#componentWillUnmount:member(1)'
+    name: componentWillUnmount()
     fullName: componentWillUnmount()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'componentWillUnmount(): void;'
       return:
-        type: void
+        type:
+          - void
         description: ''
-  - name: dismissMenu()
-    uid: 'office-ui-fabric-react!BaseButton#dismissMenu:member(1)'
-    package: office-ui-fabric-react!
+  - uid: 'office-ui-fabric-react!BaseButton.defaultProps:member'
+    name: defaultProps
+    fullName: defaultProps
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'static defaultProps: Partial<IBaseButtonProps>;'
+      return:
+        type:
+          - Partial<IBaseButtonProps>
+  - uid: 'office-ui-fabric-react!BaseButton#dismissMenu:member(1)'
+    name: dismissMenu()
     fullName: dismissMenu()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'dismissMenu(): void;'
       return:
-        type: void
+        type:
+          - void
         description: ''
-  - name: focus()
-    uid: 'office-ui-fabric-react!BaseButton#focus:member(1)'
-    package: office-ui-fabric-react!
+  - uid: 'office-ui-fabric-react!BaseButton#focus:member(1)'
+    name: focus()
     fullName: focus()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'focus(): void;'
       return:
-        type: void
+        type:
+          - void
         description: ''
-  - name: 'openMenu(shouldFocusOnContainer, shouldFocusOnMount)'
-    uid: 'office-ui-fabric-react!BaseButton#openMenu:member(1)'
-    package: office-ui-fabric-react!
+  - uid: 'office-ui-fabric-react!BaseButton#openMenu:member(1)'
+    name: 'openMenu(shouldFocusOnContainer, shouldFocusOnMount)'
     fullName: 'openMenu(shouldFocusOnContainer, shouldFocusOnMount)'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        openMenu(shouldFocusOnContainer?: boolean, shouldFocusOnMount?:
-        boolean): void;
+      content: 'openMenu(shouldFocusOnContainer?: boolean, shouldFocusOnMount?: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: shouldFocusOnContainer
           description: ''
-          type: boolean
+          type:
+            - boolean
         - id: shouldFocusOnMount
           description: ''
-          type: boolean
-      return:
-        type: void
-        description: ''
-  - name: render()
-    uid: 'office-ui-fabric-react!BaseButton#render:member(1)'
-    package: office-ui-fabric-react!
+          type:
+            - boolean
+  - uid: 'office-ui-fabric-react!BaseButton#render:member(1)'
+    name: render()
     fullName: render()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'render(): JSX.Element;'
       return:
-        type: JSX.Element
+        type:
+          - JSX.Element
         description: ''
-extends: 'React.Component&lt;IBaseButtonProps, IBaseButtonState&gt; '

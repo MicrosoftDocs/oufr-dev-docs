@@ -1,36 +1,34 @@
-### YamlMime:TSType
-name: IColorPickerState
-uid: '@fluentui/react-internal!IColorPickerState:interface'
-package: '@fluentui/react-internal!'
-fullName: IColorPickerState
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: color
-    uid: '@fluentui/react-internal!IColorPickerState#color:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-internal!IColorPickerState:interface'
+    name: IColorPickerState
+    fullName: IColorPickerState
+    langs:
+      - typeScript
+    type: interface
     package: '@fluentui/react-internal!'
-    fullName: color
+    children:
+      - '@fluentui/react-internal!IColorPickerState#color:member'
+      - '@fluentui/react-internal!IColorPickerState#editingColor:member'
+  - uid: '@fluentui/react-internal!IColorPickerState#color:member'
     summary: Most recently selected color
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'color: IColor;'
       return:
-        type: IColor
-  - name: editingColor
-    uid: '@fluentui/react-internal!IColorPickerState#editingColor:member'
-    package: '@fluentui/react-internal!'
+        type:
+          - IColor
+  - uid: '@fluentui/react-internal!IColorPickerState#editingColor:member'
+    summary: Color component currently being edited via a text field (if intermediate value is invalid)
+    name: editingColor
     fullName: editingColor
-    summary: >-
-      Color component currently being edited via a text field (if intermediate
-      value is invalid)
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: |-
         editingColor?: {
@@ -38,8 +36,9 @@ properties:
                 value: string;
             };
       return:
-        type: |-
-          {
-                  component: ColorComponent;
-                  value: string;
-              }
+        type:
+          - |-
+            {
+                    component: ColorComponent;
+                    value: string;
+                }

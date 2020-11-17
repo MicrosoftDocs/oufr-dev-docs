@@ -1,286 +1,317 @@
-### YamlMime:TSPackage
-uid: '@fluentui/react-hooks!'
-name: '@fluentui/react-hooks'
-type: package
-summary: ''
-interfaces:
-  - '@fluentui/react-hooks!IUseBooleanCallbacks:interface'
-  - '@fluentui/react-hooks!IWarningOptions:interface'
-functions:
-  - name: useAsync()
-    uid: '@fluentui/react-hooks!useAsync:function(1)'
-    package: '@fluentui/react-hooks!'
-    summary: >-
-      Hook to provide an Async instance that is automatically cleaned up on
-      dismount.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-hooks!'
+    name: '@fluentui/react-hooks'
+    fullName: '@fluentui/react-hooks'
+    langs:
+      - typeScript
+    type: package
+    children:
+      - '@fluentui/react-hooks!IUseBooleanCallbacks:interface'
+      - '@fluentui/react-hooks!IWarningOptions:interface'
+      - '@fluentui/react-hooks!useAsync:function(1)'
+      - '@fluentui/react-hooks!useBoolean:function(1)'
+      - '@fluentui/react-hooks!useConst:function(1)'
+      - '@fluentui/react-hooks!useConstCallback:function(1)'
+      - '@fluentui/react-hooks!useControllableValue:function(1)'
+      - '@fluentui/react-hooks!useControllableValue:function(2)'
+      - '@fluentui/react-hooks!useForceUpdate:function(1)'
+      - '@fluentui/react-hooks!useId:function(1)'
+      - '@fluentui/react-hooks!useMergedRefs:function(1)'
+      - '@fluentui/react-hooks!useOnEvent:function(1)'
+      - '@fluentui/react-hooks!usePrevious:function(1)'
+      - '@fluentui/react-hooks!useRefEffect:function(1)'
+      - '@fluentui/react-hooks!useTarget:function(1)'
+      - '@fluentui/react-hooks!useWarnings:function(1)'
+  - uid: '@fluentui/react-hooks!useAsync:function(1)'
+    summary: Hook to provide an Async instance that is automatically cleaned up on dismount.
+    name: useAsync()
+    fullName: useAsync()
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: 'export declare function useAsync(): Async;'
       return:
-        type: '<xref uid="@fluentui/utilities!Async:class" />'
+        type:
+          - '@fluentui/utilities!Async:class'
         description: ''
-  - name: useBoolean(initialState)
-    uid: '@fluentui/react-hooks!useBoolean:function(1)'
-    package: '@fluentui/react-hooks!'
+  - uid: '@fluentui/react-hooks!useBoolean:function(1)'
     summary: >-
-      Hook to store a value and generate callbacks for setting the value to true
-      or false. The identity of the callbacks will always stay the same.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Hook to store a value and generate callbacks for setting the value to true or false. The identity of the callbacks
+      will always stay the same.
+    name: useBoolean(initialState)
+    fullName: useBoolean(initialState)
+    langs:
+      - typeScript
+    type: function
     syntax:
-      content: >-
-        export declare function useBoolean(initialState: boolean): [boolean,
-        IUseBooleanCallbacks];
+      content: 'export declare function useBoolean(initialState: boolean): [boolean, IUseBooleanCallbacks];'
+      return:
+        type:
+          - '[boolean, IUseBooleanCallbacks]'
+        description: Array with the current value and an object containing the updater callbacks.
       parameters:
         - id: initialState
           description: Initial value
-          type: boolean
-      return:
-        type: '[boolean, IUseBooleanCallbacks]'
-        description: >-
-          Array with the current value and an object containing the updater
-          callbacks.
-  - name: useConst(initialValue)
-    uid: '@fluentui/react-hooks!useConst:function(1)'
-    package: '@fluentui/react-hooks!'
+          type:
+            - boolean
+  - uid: '@fluentui/react-hooks!useConst:function(1)'
     summary: >-
-      Hook to initialize and return a constant value. Unlike `React.useMemo`<!--
-      -->, this is guaranteed to always return the same value (and if the
-      initializer is a function, only call it once). This is similar to setting
-      a private member in a class constructor.
+      Hook to initialize and return a constant value. Unlike `React.useMemo`<!-- -->, this is guaranteed to always
+      return the same value (and if the initializer is a function, only call it once). This is similar to setting a
+      private member in a class constructor.
 
 
-      If the value should ever change based on dependencies, use `React.useMemo`
-      instead.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      If the value should ever change based on dependencies, use `React.useMemo` instead.
+    name: useConst(initialValue)
+    fullName: useConst(initialValue)
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: 'export declare function useConst<T>(initialValue: T | (() => T)): T;'
+      return:
+        type:
+          - T
+        description: The value. The identity of this value will always be the same.
       parameters:
         - id: initialValue
           description: >-
-            Initial value, or function to get the initial value. Similar to
-            `useState`<!-- -->, only the value/function passed in the first time
-            this is called is respected.
-          type: T | (() =&gt; T)
-      return:
-        type: T
-        description: The value. The identity of this value will always be the same.
-  - name: useConstCallback(callback)
-    uid: '@fluentui/react-hooks!useConstCallback:function(1)'
-    package: '@fluentui/react-hooks!'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: true
-    customDeprecatedMessage: >-
-      Deprecated due to potential for misuse (see package readme). Use
-      `React.useCallback` instead.
+            Initial value, or function to get the initial value. Similar to `useState`<!-- -->, only the value/function
+            passed in the first time this is called is respected.
+          type:
+            - T | (() => T)
+      typeParameters:
+        - id: T
+  - uid: '@fluentui/react-hooks!useConstCallback:function(1)'
+    deprecated:
+      content: Deprecated due to potential for misuse (see package readme). Use `React.useCallback` instead.
+    name: useConstCallback(callback)
+    fullName: useConstCallback(callback)
+    langs:
+      - typeScript
+    type: function
     syntax:
-      content: >-
-        export declare function useConstCallback<T extends (...args: any[]) =>
-        any>(callback: T): T;
+      content: 'export declare function useConstCallback<T extends (...args: any[]) => any>(callback: T): T;'
+      return:
+        type:
+          - T
+        description: ''
       parameters:
         - id: callback
           description: ''
-          type: T
-      return:
-        type: T
-        description: ''
-  - name: 'useControllableValue(controlledValue, defaultUncontrolledValue)'
-    uid: '@fluentui/react-hooks!useControllableValue:function(1)'
-    package: '@fluentui/react-hooks!'
+          type:
+            - T
+      typeParameters:
+        - id: T
+          type:
+            - '(...args: any[]) => any'
+  - uid: '@fluentui/react-hooks!useControllableValue:function(1)'
     summary: >-
-      Hook to manage a value that could be either controlled or uncontrolled,
-      such as a checked state or text box string.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Hook to manage a value that could be either controlled or uncontrolled, such as a checked state or text box
+      string.
+    name: 'useControllableValue(controlledValue, defaultUncontrolledValue)'
+    fullName: 'useControllableValue(controlledValue, defaultUncontrolledValue)'
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: >-
-        export declare function useControllableValue<TValue, TElement extends
-        HTMLElement>(controlledValue: TValue | undefined,
-        defaultUncontrolledValue: TValue | undefined): Readonly<[TValue |
-        undefined, (update: React.SetStateAction<TValue | undefined>) => void]>;
+        export declare function useControllableValue<TValue, TElement extends HTMLElement>(controlledValue: TValue |
+        undefined, defaultUncontrolledValue: TValue | undefined): Readonly<[TValue | undefined, (update:
+        React.SetStateAction<TValue | undefined>) => void]>;
+      return:
+        type:
+          - 'Readonly<[TValue | undefined, (update: React.SetStateAction<TValue | undefined>) => void]>'
+        description: >-
+          An array of the current value and an updater callback. Like `React.useState`<!-- -->, the updater callback
+          always has the same identity, and it can take either a new value, or a function which is passed the previous
+          value and returns the new value.  https://reactjs.org/docs/uncontrolled-components.html
       parameters:
         - id: controlledValue
           description: >-
-            The controlled value passed in the props. This value will always be
-            used if provided, and the internal state will be updated to reflect
-            it.
-          type: TValue | undefined
+            The controlled value passed in the props. This value will always be used if provided, and the internal state
+            will be updated to reflect it.
+          type:
+            - TValue | undefined
         - id: defaultUncontrolledValue
           description: Initial value for the internal state in the uncontrolled case.
-          type: TValue | undefined
-      return:
-        type: >-
-          Readonly&lt;[TValue | undefined, (update:
-          React.SetStateAction&lt;TValue | undefined&gt;) =&gt; void]&gt;
-        description: >-
-          An array of the current value and an updater callback. Like
-          `React.useState`<!-- -->, the updater callback always has the same
-          identity, and it can take either a new value, or a function which is
-          passed the previous value and returns the new value. 
-          https://reactjs.org/docs/uncontrolled-components.html
-  - name: 'useControllableValue(controlledValue, defaultUncontrolledValue, onChange)'
-    uid: '@fluentui/react-hooks!useControllableValue:function(2)'
-    package: '@fluentui/react-hooks!'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+          type:
+            - TValue | undefined
+      typeParameters:
+        - id: TValue
+        - id: TElement
+          type:
+            - HTMLElement
+  - uid: '@fluentui/react-hooks!useControllableValue:function(2)'
+    name: 'useControllableValue(controlledValue, defaultUncontrolledValue, onChange)'
+    fullName: 'useControllableValue(controlledValue, defaultUncontrolledValue, onChange)'
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: >-
-        export declare function useControllableValue<TValue, TElement extends
-        HTMLElement, TEvent extends React.SyntheticEvent<TElement> |
-        undefined>(controlledValue: TValue | undefined,
-        defaultUncontrolledValue: TValue | undefined, onChange:
-        ChangeCallback<TElement, TValue, TEvent> | undefined): Readonly<[TValue
-        | undefined, (update: React.SetStateAction<TValue | undefined>, ev?:
-        React.FormEvent<TElement>) => void]>;
+        export declare function useControllableValue<TValue, TElement extends HTMLElement, TEvent extends
+        React.SyntheticEvent<TElement> | undefined>(controlledValue: TValue | undefined, defaultUncontrolledValue:
+        TValue | undefined, onChange: ChangeCallback<TElement, TValue, TEvent> | undefined): Readonly<[TValue |
+        undefined, (update: React.SetStateAction<TValue | undefined>, ev?: React.FormEvent<TElement>) => void]>;
+      return:
+        type:
+          - >-
+            Readonly<[TValue | undefined, (update: React.SetStateAction<TValue | undefined>, ev?:
+            React.FormEvent<TElement>) => void]>
+        description: ''
       parameters:
         - id: controlledValue
           description: ''
-          type: TValue | undefined
+          type:
+            - TValue | undefined
         - id: defaultUncontrolledValue
           description: ''
-          type: TValue | undefined
+          type:
+            - TValue | undefined
         - id: onChange
           description: ''
-          type: 'ChangeCallback&lt;TElement, TValue, TEvent&gt; | undefined'
-      return:
-        type: >-
-          Readonly&lt;[TValue | undefined, (update:
-          React.SetStateAction&lt;TValue | undefined&gt;, ev?:
-          React.FormEvent&lt;TElement&gt;) =&gt; void]&gt;
-        description: ''
-  - name: useForceUpdate()
-    uid: '@fluentui/react-hooks!useForceUpdate:function(1)'
-    package: '@fluentui/react-hooks!'
+          type:
+            - 'ChangeCallback<TElement, TValue, TEvent> | undefined'
+      typeParameters:
+        - id: TValue
+        - id: TElement
+          type:
+            - HTMLElement
+        - id: TEvent
+          type:
+            - React.SyntheticEvent<TElement> | undefined
+  - uid: '@fluentui/react-hooks!useForceUpdate:function(1)'
     summary: Hook to force update a function component by updating a dummy state.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: useForceUpdate()
+    fullName: useForceUpdate()
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: 'export declare function useForceUpdate(): () => void;'
       return:
-        type: () =&gt; void
+        type:
+          - () => void
         description: ''
-  - name: 'useId(prefix, providedId)'
-    uid: '@fluentui/react-hooks!useId:function(1)'
-    package: '@fluentui/react-hooks!'
-    summary: >-
-      Hook to generate a unique ID in the global scope (spanning across
-      duplicate copies of the same library).
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+  - uid: '@fluentui/react-hooks!useId:function(1)'
+    summary: Hook to generate a unique ID in the global scope (spanning across duplicate copies of the same library).
+    name: 'useId(prefix, providedId)'
+    fullName: 'useId(prefix, providedId)'
+    langs:
+      - typeScript
+    type: function
     syntax:
-      content: >-
-        export declare function useId(prefix?: string, providedId?: string):
-        string;
+      content: 'export declare function useId(prefix?: string, providedId?: string): string;'
+      return:
+        type:
+          - string
+        description: The ID
       parameters:
         - id: prefix
           description: Optional prefix for the ID
-          type: string
+          type:
+            - string
         - id: providedId
           description: >-
-            Optional id provided by a parent component. Defaults to the provided
-            value if present, without conditioning the hook call
-          type: string
-      return:
-        type: string
-        description: The ID
-  - name: useMergedRefs(refs)
-    uid: '@fluentui/react-hooks!useMergedRefs:function(1)'
-    package: '@fluentui/react-hooks!'
+            Optional id provided by a parent component. Defaults to the provided value if present, without conditioning
+            the hook call
+          type:
+            - string
+  - uid: '@fluentui/react-hooks!useMergedRefs:function(1)'
     summary: >-
-      React hook to merge multiple React refs (either MutableRefObjects or ref
-      callbacks) into a single ref callback that updates all provided refs
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      React hook to merge multiple React refs (either MutableRefObjects or ref callbacks) into a single ref callback
+      that updates all provided refs
+    name: useMergedRefs(refs)
+    fullName: useMergedRefs(refs)
+    langs:
+      - typeScript
+    type: function
     syntax:
-      content: >-
-        export declare function useMergedRefs<T>(...refs: (React.Ref<T> |
-        undefined)[]): RefObjectFunction<T>;
+      content: 'export declare function useMergedRefs<T>(...refs: (React.Ref<T> | undefined)[]): RefObjectFunction<T>;'
+      return:
+        type:
+          - RefObjectFunction<T>
+        description: 'A function with an attached "current" prop, so that it can be treated like a RefObject.'
       parameters:
         - id: refs
           description: Refs to collectively update with one ref value.
-          type: '(React.Ref&lt;T&gt; | undefined)[]'
-      return:
-        type: RefObjectFunction&lt;T&gt;
-        description: >-
-          A function with an attached "current" prop, so that it can be treated
-          like a RefObject.
-  - name: 'useOnEvent(element, eventName, callback, useCapture)'
-    uid: '@fluentui/react-hooks!useOnEvent:function(1)'
-    package: '@fluentui/react-hooks!'
+          type:
+            - '(React.Ref<T> | undefined)[]'
+      typeParameters:
+        - id: T
+  - uid: '@fluentui/react-hooks!useOnEvent:function(1)'
     summary: Hook to attach an event handler on mount and handle cleanup.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: 'useOnEvent(element, eventName, callback, useCapture)'
+    fullName: 'useOnEvent(element, eventName, callback, useCapture)'
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: >-
-        export declare function useOnEvent<TElement extends Element, TEvent
-        extends Event>(element: React.RefObject<TElement | undefined | null> |
-        TElement | Window | Document | undefined | null, eventName: string,
-        callback: (ev: TEvent) => void, useCapture?: boolean): void;
+        export declare function useOnEvent<TElement extends Element, TEvent extends Event>(element:
+        React.RefObject<TElement | undefined | null> | TElement | Window | Document | undefined | null, eventName:
+        string, callback: (ev: TEvent) => void, useCapture?: boolean): void;
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: element
           description: Element (or ref to an element) to attach the event handler to
-          type: >-
-            React.RefObject&lt;TElement | undefined | null&gt; | TElement |
-            Window | Document | undefined | null
+          type:
+            - React.RefObject<TElement | undefined | null> | TElement | Window | Document | undefined | null
         - id: eventName
           description: The event to attach a handler for
-          type: string
+          type:
+            - string
         - id: callback
           description: The handler for the event
-          type: '(ev: TEvent) =&gt; void'
+          type:
+            - '(ev: TEvent) => void'
         - id: useCapture
           description: Whether or not to attach the handler for the capture phase
-          type: boolean
-      return:
-        type: void
-        description: ''
-  - name: usePrevious(value)
-    uid: '@fluentui/react-hooks!usePrevious:function(1)'
-    package: '@fluentui/react-hooks!'
-    summary: >-
-      Hook keeping track of a given value from a previous execution of the
-      component the Hook is used in.
+          type:
+            - boolean
+      typeParameters:
+        - id: TElement
+          type:
+            - Element
+        - id: TEvent
+          type:
+            - Event
+  - uid: '@fluentui/react-hooks!usePrevious:function(1)'
+    summary: |-
+      Hook keeping track of a given value from a previous execution of the component the Hook is used in.
 
-
-      See \[React Hooks
-      FAQ\](https://reactjs.org/docs/hooks-faq.html\#how-to-get-the-previous-props-or-state)
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      See \[React Hooks FAQ\](https://reactjs.org/docs/hooks-faq.html\#how-to-get-the-previous-props-or-state)
+    name: usePrevious(value)
+    fullName: usePrevious(value)
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: 'export declare function usePrevious<T>(value: T): T | undefined;'
+      return:
+        type:
+          - T | undefined
+        description: ''
       parameters:
         - id: value
           description: ''
-          type: T
-      return:
-        type: T | undefined
-        description: ''
-  - name: 'useRefEffect(callback, initial)'
-    uid: '@fluentui/react-hooks!useRefEffect:function(1)'
-    package: '@fluentui/react-hooks!'
+          type:
+            - T
+      typeParameters:
+        - id: T
+  - uid: '@fluentui/react-hooks!useRefEffect:function(1)'
     summary: >-
-      Creates a ref, and calls a callback whenever the ref changes to a non-null
-      value. The callback can optionally return a cleanup function that'll be
-      called before the value changes, and when the ref is unmounted.
+      Creates a ref, and calls a callback whenever the ref changes to a non-null value. The callback can optionally
+      return a cleanup function that'll be called before the value changes, and when the ref is unmounted.
 
 
-      This can be used to work around a limitation that useEffect cannot depend
-      on `ref.current` (see
+      This can be used to work around a limitation that useEffect cannot depend on `ref.current` (see
       https://github.com/facebook/react/issues/14387\#issuecomment-503616820).
 
 
@@ -304,78 +335,88 @@ functions:
 
 
       ```
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: 'useRefEffect(callback, initial)'
+    fullName: 'useRefEffect(callback, initial)'
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: >-
-        export declare function useRefEffect<T>(callback: (value: T) => (() =>
-        void) | void, initial?: T | null): RefCallback<T>;
+        export declare function useRefEffect<T>(callback: (value: T) => (() => void) | void, initial?: T | null):
+        RefCallback<T>;
+      return:
+        type:
+          - RefCallback<T>
+        description: >-
+          A function that should be called to set the ref's value. The object also has a `.current` member that can be
+          used to access the ref's value (like a normal RefObject). It can be hooked up to an element's `ref` property.
       parameters:
         - id: callback
-          description: >-
-            Called whenever the ref's value changes to non-null. Can optionally
-            return a cleanup function.
-          type: '(value: T) =&gt; (() =&gt; void) | void'
+          description: Called whenever the ref's value changes to non-null. Can optionally return a cleanup function.
+          type:
+            - '(value: T) => (() => void) | void'
         - id: initial
           description: (Optional) The initial value for the ref.
-          type: T | null
-      return:
-        type: RefCallback&lt;T&gt;
-        description: >-
-          A function that should be called to set the ref's value. The object
-          also has a `.current` member that can be used to access the ref's
-          value (like a normal RefObject). It can be hooked up to an element's
-          `ref` property.
-  - name: 'useTarget(target, hostElement)'
-    uid: '@fluentui/react-hooks!useTarget:function(1)'
-    package: '@fluentui/react-hooks!'
+          type:
+            - T | null
+      typeParameters:
+        - id: T
+  - uid: '@fluentui/react-hooks!useTarget:function(1)'
     summary: >-
-      Hook to calculate and cache the target element specified by the given
-      target attribute, as well as the target element's (or host element's)
-      parent window
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Hook to calculate and cache the target element specified by the given target attribute, as well as the target
+      element's (or host element's) parent window
+    name: 'useTarget(target, hostElement)'
+    fullName: 'useTarget(target, hostElement)'
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: >-
-        export declare function useTarget<TElement extends HTMLElement =
-        HTMLElement>(target: Target | undefined, hostElement?:
-        React.RefObject<TElement | null>): Readonly<[React.RefObject<Element |
-        MouseEvent | Point | null>, Window | undefined]>;
+        export declare function useTarget<TElement extends HTMLElement = HTMLElement>(target: Target | undefined,
+        hostElement?: React.RefObject<TElement | null>): Readonly<[React.RefObject<Element | MouseEvent | Point | null>,
+        Window | undefined]>;
+      return:
+        type:
+          - 'Readonly<[React.RefObject<Element | MouseEvent | Point | null>, Window | undefined]>'
+        description: ''
       parameters:
         - id: target
-          description: >-
-            Target selector passed to the component as a property, describing
-            the element that the callout should target
-          type: Target | undefined
+          description: 'Target selector passed to the component as a property, describing the element that the callout should target'
+          type:
+            - Target | undefined
         - id: hostElement
           description: 'The callout''s host element, used for determining the parent window.'
-          type: React.RefObject&lt;TElement | null&gt;
-      return:
-        type: >-
-          Readonly&lt;[React.RefObject&lt;Element | MouseEvent | Point |
-          null&gt;, Window | undefined]&gt;
-        description: ''
-  - name: useWarnings(options)
-    uid: '@fluentui/react-hooks!useWarnings:function(1)'
-    package: '@fluentui/react-hooks!'
+          type:
+            - React.RefObject<TElement | null>
+      typeParameters:
+        - id: TElement
+          type:
+            - 'HTMLElement '
+  - uid: '@fluentui/react-hooks!useWarnings:function(1)'
     summary: >-
-      Only in development mode, display console warnings when certain conditions
-      are met. Note that all warnings except `controlledUsage` will only be
-      shown on first render (new `controlledUsage` warnings may be shown later
-      due to prop changes).
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Only in development mode, display console warnings when certain conditions are met. Note that all warnings except
+      `controlledUsage` will only be shown on first render (new `controlledUsage` warnings may be shown later due to
+      prop changes).
+    name: useWarnings(options)
+    fullName: useWarnings(options)
+    langs:
+      - typeScript
+    type: function
     syntax:
-      content: >-
-        export declare function useWarnings<P>(options: IWarningOptions<P>):
-        void;
+      content: 'export declare function useWarnings<P>(options: IWarningOptions<P>): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: options
           description: ''
-          type: IWarningOptions&lt;P&gt;
-      return:
-        type: void
-        description: ''
+          type:
+            - IWarningOptions<P>
+      typeParameters:
+        - id: P
+references:
+  - uid: '@fluentui/react-hooks!IUseBooleanCallbacks:interface'
+    name: IUseBooleanCallbacks
+  - uid: '@fluentui/react-hooks!IWarningOptions:interface'
+    name: IWarningOptions

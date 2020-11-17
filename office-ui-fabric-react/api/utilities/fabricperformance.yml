@@ -1,73 +1,74 @@
-### YamlMime:TSType
-name: FabricPerformance
-uid: '@fluentui/utilities!FabricPerformance:class'
-package: '@fluentui/utilities!'
-fullName: FabricPerformance
-summary: Performance helper class for measuring things.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: class
-properties:
-  - name: summary
-    uid: '@fluentui/utilities!FabricPerformance.summary:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/utilities!FabricPerformance:class'
+    summary: Performance helper class for measuring things.
+    name: FabricPerformance
+    fullName: FabricPerformance
+    langs:
+      - typeScript
+    type: class
     package: '@fluentui/utilities!'
-    fullName: summary
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'static summary: IPerfSummary;'
-      return:
-        type: IPerfSummary
-methods:
-  - name: 'measure(name, func)'
-    uid: '@fluentui/utilities!FabricPerformance.measure:member(1)'
-    package: '@fluentui/utilities!'
-    fullName: 'measure(name, func)'
+    children:
+      - '@fluentui/utilities!FabricPerformance.measure:member(1)'
+      - '@fluentui/utilities!FabricPerformance.reset:member(1)'
+      - '@fluentui/utilities!FabricPerformance.setPeriodicReset:member(1)'
+      - '@fluentui/utilities!FabricPerformance.summary:member'
+  - uid: '@fluentui/utilities!FabricPerformance.measure:member(1)'
     summary: >-
-      Measures execution time of the given syncronous function. If the same
-      logic is executed multiple times, each individual measurement will be
-      collected as well the overall numbers.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Measures execution time of the given syncronous function. If the same logic is executed multiple times, each
+      individual measurement will be collected as well the overall numbers.
+    name: 'measure(name, func)'
+    fullName: 'measure(name, func)'
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'static measure(name: string, func: () => void): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: name
           description: The name of this measurement
-          type: string
+          type:
+            - string
         - id: func
           description: The logic to be measured for execution time
-          type: () =&gt; void
-      return:
-        type: void
-        description: ''
-  - name: reset()
-    uid: '@fluentui/utilities!FabricPerformance.reset:member(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - () => void
+  - uid: '@fluentui/utilities!FabricPerformance.reset:member(1)'
+    name: reset()
     fullName: reset()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'static reset(): void;'
       return:
-        type: void
+        type:
+          - void
         description: ''
-  - name: setPeriodicReset()
-    uid: '@fluentui/utilities!FabricPerformance.setPeriodicReset:member(1)'
-    package: '@fluentui/utilities!'
+  - uid: '@fluentui/utilities!FabricPerformance.setPeriodicReset:member(1)'
+    name: setPeriodicReset()
     fullName: setPeriodicReset()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'static setPeriodicReset(): void;'
       return:
-        type: void
+        type:
+          - void
         description: ''
+  - uid: '@fluentui/utilities!FabricPerformance.summary:member'
+    name: summary
+    fullName: summary
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'static summary: IPerfSummary;'
+      return:
+        type:
+          - IPerfSummary

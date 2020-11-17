@@ -1,92 +1,92 @@
-### YamlMime:TSType
-name: ILinkProps
-uid: 'office-ui-fabric-react!ILinkProps:interface'
-package: office-ui-fabric-react!
-fullName: ILinkProps
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: as
-    uid: 'office-ui-fabric-react!ILinkProps#as:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-ui-fabric-react!ILinkProps:interface'
+    name: ILinkProps
+    fullName: ILinkProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'ILinkHTMLAttributes<HTMLAnchorElement | HTMLButtonElement | HTMLElement | LinkBase> '
     package: office-ui-fabric-react!
+    children:
+      - 'office-ui-fabric-react!ILinkProps#as:member'
+      - 'office-ui-fabric-react!ILinkProps#componentRef:member'
+      - 'office-ui-fabric-react!ILinkProps#disabled:member'
+      - 'office-ui-fabric-react!ILinkProps#keytipProps:member'
+      - 'office-ui-fabric-react!ILinkProps#styles:member'
+      - 'office-ui-fabric-react!ILinkProps#theme:member'
+  - uid: 'office-ui-fabric-react!ILinkProps#as:member'
+    summary: A component that should be used as the root element of the link returned from the Link component.
+    name: as
     fullName: as
-    summary: >-
-      A component that should be used as the root element of the link returned
-      from the Link component.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'as?: string | React.ComponentClass | React.FunctionComponent;'
       return:
-        type: string | React.ComponentClass | React.FunctionComponent
-  - name: componentRef
-    uid: 'office-ui-fabric-react!ILinkProps#componentRef:member'
-    package: office-ui-fabric-react!
-    fullName: componentRef
+        type:
+          - string | React.ComponentClass | React.FunctionComponent
+  - uid: 'office-ui-fabric-react!ILinkProps#componentRef:member'
     summary: >-
-      Optional callback to access the ILink interface. Use this instead of ref
-      for accessing the public methods and properties of the component.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Optional callback to access the ILink interface. Use this instead of ref for accessing the public methods and
+      properties of the component.
+    name: componentRef
+    fullName: componentRef
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'componentRef?: IRefObject<ILink>;'
       return:
-        type: IRefObject&lt;ILink&gt;
-  - name: disabled
-    uid: 'office-ui-fabric-react!ILinkProps#disabled:member'
-    package: office-ui-fabric-react!
-    fullName: disabled
+        type:
+          - IRefObject<ILink>
+  - uid: 'office-ui-fabric-react!ILinkProps#disabled:member'
     summary: Whether the link is disabled
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: disabled
+    fullName: disabled
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'disabled?: boolean;'
       return:
-        type: boolean
-  - name: keytipProps
-    uid: 'office-ui-fabric-react!ILinkProps#keytipProps:member'
-    package: office-ui-fabric-react!
-    fullName: keytipProps
+        type:
+          - boolean
+  - uid: 'office-ui-fabric-react!ILinkProps#keytipProps:member'
     summary: Optional keytip for this Link
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: keytipProps
+    fullName: keytipProps
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'keytipProps?: IKeytipProps;'
       return:
-        type: IKeytipProps
-  - name: styles
-    uid: 'office-ui-fabric-react!ILinkProps#styles:member'
-    package: office-ui-fabric-react!
+        type:
+          - IKeytipProps
+  - uid: 'office-ui-fabric-react!ILinkProps#styles:member'
+    summary: Call to provide customized styling that will layer on top of the variant rules.
+    name: styles
     fullName: styles
-    summary: >-
-      Call to provide customized styling that will layer on top of the variant
-      rules.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'styles?: IStyleFunctionOrObject<ILinkStyleProps, ILinkStyles>;'
       return:
-        type: 'IStyleFunctionOrObject&lt;ILinkStyleProps, ILinkStyles&gt;'
-  - name: theme
-    uid: 'office-ui-fabric-react!ILinkProps#theme:member'
-    package: office-ui-fabric-react!
-    fullName: theme
+        type:
+          - 'IStyleFunctionOrObject<ILinkStyleProps, ILinkStyles>'
+  - uid: 'office-ui-fabric-react!ILinkProps#theme:member'
     summary: Theme (provided through customization.)
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'theme?: ITheme;'
       return:
-        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
-extends: >-
-  ILinkHTMLAttributes&lt;HTMLAnchorElement | HTMLButtonElement | HTMLElement |
-  LinkBase&gt; 
+        type:
+          - '@fluentui/theme!ITheme:interface'

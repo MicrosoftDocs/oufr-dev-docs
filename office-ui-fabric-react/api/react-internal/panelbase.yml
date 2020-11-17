@@ -1,177 +1,177 @@
-### YamlMime:TSType
-name: PanelBase
-uid: '@fluentui/react-internal!PanelBase:class'
-package: '@fluentui/react-internal!'
-fullName: PanelBase
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: class
-constructors:
-  - name: (constructor)(props)
-    uid: '@fluentui/react-internal!PanelBase:constructor(1)'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-internal!PanelBase:class'
+    name: PanelBase
+    fullName: PanelBase
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'React.Component<IPanelProps, IPanelState> '
+    implements:
+      - 'IPanel '
     package: '@fluentui/react-internal!'
-    fullName: (constructor)(props)
+    children:
+      - '@fluentui/react-internal!PanelBase:constructor(1)'
+      - '@fluentui/react-internal!PanelBase#close:member(1)'
+      - '@fluentui/react-internal!PanelBase#componentDidMount:member(1)'
+      - '@fluentui/react-internal!PanelBase#componentDidUpdate:member(1)'
+      - '@fluentui/react-internal!PanelBase#componentWillUnmount:member(1)'
+      - '@fluentui/react-internal!PanelBase.defaultProps:member'
+      - '@fluentui/react-internal!PanelBase#dismiss:member'
+      - '@fluentui/react-internal!PanelBase.getDerivedStateFromProps:member(1)'
+      - '@fluentui/react-internal!PanelBase#isActive:member'
+      - '@fluentui/react-internal!PanelBase#open:member(1)'
+      - '@fluentui/react-internal!PanelBase#render:member(1)'
+  - uid: '@fluentui/react-internal!PanelBase:constructor(1)'
     summary: Constructs a new instance of the `PanelBase` class
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: (constructor)(props)
+    fullName: (constructor)(props)
+    langs:
+      - typeScript
+    type: constructor
     syntax:
       content: 'constructor(props: IPanelProps);'
       parameters:
         - id: props
           description: ''
-          type: IPanelProps
-properties:
-  - name: defaultProps
-    uid: '@fluentui/react-internal!PanelBase.defaultProps:member'
-    package: '@fluentui/react-internal!'
-    fullName: defaultProps
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'static defaultProps: IPanelProps;'
-      return:
-        type: IPanelProps
-  - name: dismiss
-    uid: '@fluentui/react-internal!PanelBase#dismiss:member'
-    package: '@fluentui/react-internal!'
-    fullName: dismiss
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        dismiss: (ev?: KeyboardEvent | React.SyntheticEvent<HTMLElement, Event>
-        | undefined) => void;
-      return:
-        type: >-
-          (ev?: KeyboardEvent | React.SyntheticEvent&lt;HTMLElement, Event&gt; |
-          undefined) =&gt; void
-  - name: isActive
-    uid: '@fluentui/react-internal!PanelBase#isActive:member'
-    package: '@fluentui/react-internal!'
-    fullName: isActive
-    summary: isActive is true when panel is open or opening.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'get isActive(): boolean;'
-      return:
-        type: boolean
-methods:
-  - name: close()
-    uid: '@fluentui/react-internal!PanelBase#close:member(1)'
-    package: '@fluentui/react-internal!'
+          type:
+            - IPanelProps
+  - uid: '@fluentui/react-internal!PanelBase#close:member(1)'
+    name: close()
     fullName: close()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'close(): void;'
       return:
-        type: void
+        type:
+          - void
         description: ''
-  - name: componentDidMount()
-    uid: '@fluentui/react-internal!PanelBase#componentDidMount:member(1)'
-    package: '@fluentui/react-internal!'
+  - uid: '@fluentui/react-internal!PanelBase#componentDidMount:member(1)'
+    name: componentDidMount()
     fullName: componentDidMount()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'componentDidMount(): void;'
       return:
-        type: void
+        type:
+          - void
         description: ''
-  - name: 'componentDidUpdate(previousProps, previousState)'
-    uid: '@fluentui/react-internal!PanelBase#componentDidUpdate:member(1)'
-    package: '@fluentui/react-internal!'
+  - uid: '@fluentui/react-internal!PanelBase#componentDidUpdate:member(1)'
+    name: 'componentDidUpdate(previousProps, previousState)'
     fullName: 'componentDidUpdate(previousProps, previousState)'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        componentDidUpdate(previousProps: IPanelProps, previousState:
-        IPanelState): void;
+      content: 'componentDidUpdate(previousProps: IPanelProps, previousState: IPanelState): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: previousProps
           description: ''
-          type: IPanelProps
+          type:
+            - IPanelProps
         - id: previousState
           description: ''
-          type: IPanelState
-      return:
-        type: void
-        description: ''
-  - name: componentWillUnmount()
-    uid: '@fluentui/react-internal!PanelBase#componentWillUnmount:member(1)'
-    package: '@fluentui/react-internal!'
+          type:
+            - IPanelState
+  - uid: '@fluentui/react-internal!PanelBase#componentWillUnmount:member(1)'
+    name: componentWillUnmount()
     fullName: componentWillUnmount()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'componentWillUnmount(): void;'
       return:
-        type: void
+        type:
+          - void
         description: ''
-  - name: 'getDerivedStateFromProps(nextProps, prevState)'
-    uid: '@fluentui/react-internal!PanelBase.getDerivedStateFromProps:member(1)'
-    package: '@fluentui/react-internal!'
+  - uid: '@fluentui/react-internal!PanelBase.defaultProps:member'
+    name: defaultProps
+    fullName: defaultProps
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'static defaultProps: IPanelProps;'
+      return:
+        type:
+          - IPanelProps
+  - uid: '@fluentui/react-internal!PanelBase#dismiss:member'
+    name: dismiss
+    fullName: dismiss
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'dismiss: (ev?: KeyboardEvent | React.SyntheticEvent<HTMLElement, Event> | undefined) => void;'
+      return:
+        type:
+          - '(ev?: KeyboardEvent | React.SyntheticEvent<HTMLElement, Event> | undefined) => void'
+  - uid: '@fluentui/react-internal!PanelBase.getDerivedStateFromProps:member(1)'
+    name: 'getDerivedStateFromProps(nextProps, prevState)'
     fullName: 'getDerivedStateFromProps(nextProps, prevState)'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: >-
-        static getDerivedStateFromProps(nextProps: Readonly<IPanelProps>,
-        prevState: Readonly<IPanelState>): Partial<IPanelState> | null;
+        static getDerivedStateFromProps(nextProps: Readonly<IPanelProps>, prevState: Readonly<IPanelState>):
+        Partial<IPanelState> | null;
+      return:
+        type:
+          - Partial<IPanelState> | null
+        description: ''
       parameters:
         - id: nextProps
           description: ''
-          type: Readonly&lt;IPanelProps&gt;
+          type:
+            - Readonly<IPanelProps>
         - id: prevState
           description: ''
-          type: Readonly&lt;IPanelState&gt;
+          type:
+            - Readonly<IPanelState>
+  - uid: '@fluentui/react-internal!PanelBase#isActive:member'
+    summary: isActive is true when panel is open or opening.
+    name: isActive
+    fullName: isActive
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'get isActive(): boolean;'
       return:
-        type: Partial&lt;IPanelState&gt; | null
-        description: ''
-  - name: open()
-    uid: '@fluentui/react-internal!PanelBase#open:member(1)'
-    package: '@fluentui/react-internal!'
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!PanelBase#open:member(1)'
+    name: open()
     fullName: open()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'open(): void;'
       return:
-        type: void
+        type:
+          - void
         description: ''
-  - name: render()
-    uid: '@fluentui/react-internal!PanelBase#render:member(1)'
-    package: '@fluentui/react-internal!'
+  - uid: '@fluentui/react-internal!PanelBase#render:member(1)'
+    name: render()
     fullName: render()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'render(): JSX.Element | null;'
       return:
-        type: JSX.Element | null
+        type:
+          - JSX.Element | null
         description: ''
-extends: 'React.Component&lt;IPanelProps, IPanelState&gt; '

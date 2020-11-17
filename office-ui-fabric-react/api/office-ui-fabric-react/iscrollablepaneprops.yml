@@ -1,93 +1,91 @@
-### YamlMime:TSType
-name: IScrollablePaneProps
-uid: 'office-ui-fabric-react!IScrollablePaneProps:interface'
-package: office-ui-fabric-react!
-fullName: IScrollablePaneProps
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: className
-    uid: 'office-ui-fabric-react!IScrollablePaneProps#className:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-ui-fabric-react!IScrollablePaneProps:interface'
+    name: IScrollablePaneProps
+    fullName: IScrollablePaneProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'React.HTMLAttributes<HTMLElement | ScrollablePaneBase> '
     package: office-ui-fabric-react!
-    fullName: className
+    children:
+      - 'office-ui-fabric-react!IScrollablePaneProps#className:member'
+      - 'office-ui-fabric-react!IScrollablePaneProps#componentRef:member'
+      - 'office-ui-fabric-react!IScrollablePaneProps#initialScrollPosition:member'
+      - 'office-ui-fabric-react!IScrollablePaneProps#scrollbarVisibility:member'
+      - 'office-ui-fabric-react!IScrollablePaneProps#styles:member'
+      - 'office-ui-fabric-react!IScrollablePaneProps#theme:member'
+  - uid: 'office-ui-fabric-react!IScrollablePaneProps#className:member'
     summary: Additional css class to apply to the ScrollablePane
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: className
+    fullName: className
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'className?: string;'
       return:
-        type: string
-  - name: componentRef
-    uid: 'office-ui-fabric-react!IScrollablePaneProps#componentRef:member'
-    package: office-ui-fabric-react!
-    fullName: componentRef
+        type:
+          - string
+  - uid: 'office-ui-fabric-react!IScrollablePaneProps#componentRef:member'
     summary: >-
-      Optional callback to access the IScrollablePane interface. Use this
-      instead of ref for accessing the public methods and properties of the
-      component.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Optional callback to access the IScrollablePane interface. Use this instead of ref for accessing the public
+      methods and properties of the component.
+    name: componentRef
+    fullName: componentRef
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'componentRef?: IRefObject<IScrollablePane>;'
       return:
-        type: IRefObject&lt;IScrollablePane&gt;
-  - name: initialScrollPosition
-    uid: 'office-ui-fabric-react!IScrollablePaneProps#initialScrollPosition:member'
-    package: office-ui-fabric-react!
-    fullName: initialScrollPosition
+        type:
+          - IRefObject<IScrollablePane>
+  - uid: 'office-ui-fabric-react!IScrollablePaneProps#initialScrollPosition:member'
     summary: Sets the initial scroll position of the ScrollablePane
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: initialScrollPosition
+    fullName: initialScrollPosition
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'initialScrollPosition?: number;'
       return:
-        type: number
-  - name: scrollbarVisibility
-    uid: 'office-ui-fabric-react!IScrollablePaneProps#scrollbarVisibility:member'
-    package: office-ui-fabric-react!
+        type:
+          - number
+  - uid: 'office-ui-fabric-react!IScrollablePaneProps#scrollbarVisibility:member'
+    name: scrollbarVisibility
     fullName: scrollbarVisibility
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'scrollbarVisibility?: ScrollbarVisibility;'
       return:
-        type: ScrollbarVisibility
-  - name: styles
-    uid: 'office-ui-fabric-react!IScrollablePaneProps#styles:member'
-    package: office-ui-fabric-react!
+        type:
+          - ScrollbarVisibility
+  - uid: 'office-ui-fabric-react!IScrollablePaneProps#styles:member'
+    summary: Call to provide customized styling that will layer on top of the variant rules
+    name: styles
     fullName: styles
-    summary: >-
-      Call to provide customized styling that will layer on top of the variant
-      rules
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        styles?: IStyleFunctionOrObject<IScrollablePaneStyleProps,
-        IScrollablePaneStyles>;
+      content: 'styles?: IStyleFunctionOrObject<IScrollablePaneStyleProps, IScrollablePaneStyles>;'
       return:
-        type: >-
-          IStyleFunctionOrObject&lt;IScrollablePaneStyleProps,
-          IScrollablePaneStyles&gt;
-  - name: theme
-    uid: 'office-ui-fabric-react!IScrollablePaneProps#theme:member'
-    package: office-ui-fabric-react!
-    fullName: theme
+        type:
+          - 'IStyleFunctionOrObject<IScrollablePaneStyleProps, IScrollablePaneStyles>'
+  - uid: 'office-ui-fabric-react!IScrollablePaneProps#theme:member'
     summary: Theme provided by HOC.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'theme?: ITheme;'
       return:
-        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
-extends: 'React.HTMLAttributes&lt;HTMLElement | ScrollablePaneBase&gt; '
+        type:
+          - '@fluentui/theme!ITheme:interface'

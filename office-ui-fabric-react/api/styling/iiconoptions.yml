@@ -1,53 +1,51 @@
-### YamlMime:TSType
-name: IIconOptions
-uid: '@uifabric/styling!IIconOptions:interface'
-package: '@uifabric/styling!'
-fullName: IIconOptions
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: disableWarnings
-    uid: '@uifabric/styling!IIconOptions#disableWarnings:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@uifabric/styling!IIconOptions:interface'
+    name: IIconOptions
+    fullName: IIconOptions
+    langs:
+      - typeScript
+    type: interface
     package: '@uifabric/styling!'
-    fullName: disableWarnings
+    children:
+      - '@uifabric/styling!IIconOptions#disableWarnings:member'
+      - '@uifabric/styling!IIconOptions#warnOnMissingIcons:member'
+  - uid: '@uifabric/styling!IIconOptions#disableWarnings:member'
     summary: >-
-      By default, registering the same set of icons will generate a console
-      warning per duplicate icon registered, because this scenario can create
-      unexpected consequences.
+      By default, registering the same set of icons will generate a console warning per duplicate icon registered,
+      because this scenario can create unexpected consequences.
 
 
       Some scenarios include:
 
 
-      Icon set was previously registered using a different base url. Icon set
-      was previously registered but a different version was provided. Icons in a
-      previous registered set overlap with a new set.
+      Icon set was previously registered using a different base url. Icon set was previously registered but a different
+      version was provided. Icons in a previous registered set overlap with a new set.
 
 
-      To simply ignore previously registered icons, you can specify to disable
-      warnings. This means that if an icon which was previous registered is
-      registered again, it will be silently ignored. However, consider whether
-      the problems listed above will cause issues.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      To simply ignore previously registered icons, you can specify to disable warnings. This means that if an icon
+      which was previous registered is registered again, it will be silently ignored. However, consider whether the
+      problems listed above will cause issues.
+    name: disableWarnings
+    fullName: disableWarnings
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'disableWarnings: boolean;'
       return:
-        type: boolean
-  - name: warnOnMissingIcons
-    uid: '@uifabric/styling!IIconOptions#warnOnMissingIcons:member'
-    package: '@uifabric/styling!'
+        type:
+          - boolean
+  - uid: '@uifabric/styling!IIconOptions#warnOnMissingIcons:member'
+    deprecated:
+      content: Use 'disableWarnings' instead.
+    name: warnOnMissingIcons
     fullName: warnOnMissingIcons
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: true
-    customDeprecatedMessage: Use 'disableWarnings' instead.
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'warnOnMissingIcons?: boolean;'
       return:
-        type: boolean
+        type:
+          - boolean

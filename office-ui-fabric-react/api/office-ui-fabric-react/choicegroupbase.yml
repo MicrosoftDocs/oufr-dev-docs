@@ -1,88 +1,90 @@
-### YamlMime:TSType
-name: ChoiceGroupBase
-uid: 'office-ui-fabric-react!ChoiceGroupBase:class'
-package: office-ui-fabric-react!
-fullName: ChoiceGroupBase
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: class
-constructors:
-  - name: (constructor)(props)
-    uid: 'office-ui-fabric-react!ChoiceGroupBase:constructor(1)'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-ui-fabric-react!ChoiceGroupBase:class'
+    name: ChoiceGroupBase
+    fullName: ChoiceGroupBase
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'React.Component<IChoiceGroupProps, IChoiceGroupState> '
+    implements:
+      - 'IChoiceGroup '
     package: office-ui-fabric-react!
-    fullName: (constructor)(props)
+    children:
+      - 'office-ui-fabric-react!ChoiceGroupBase:constructor(1)'
+      - 'office-ui-fabric-react!ChoiceGroupBase#checkedOption:member'
+      - 'office-ui-fabric-react!ChoiceGroupBase#componentDidUpdate:member(1)'
+      - 'office-ui-fabric-react!ChoiceGroupBase#focus:member(1)'
+      - 'office-ui-fabric-react!ChoiceGroupBase#render:member(1)'
+  - uid: 'office-ui-fabric-react!ChoiceGroupBase:constructor(1)'
     summary: Constructs a new instance of the `ChoiceGroupBase` class
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: (constructor)(props)
+    fullName: (constructor)(props)
+    langs:
+      - typeScript
+    type: constructor
     syntax:
       content: 'constructor(props: IChoiceGroupProps);'
       parameters:
         - id: props
           description: ''
-          type: IChoiceGroupProps
-properties:
-  - name: checkedOption
-    uid: 'office-ui-fabric-react!ChoiceGroupBase#checkedOption:member'
-    package: office-ui-fabric-react!
-    fullName: checkedOption
+          type:
+            - IChoiceGroupProps
+  - uid: 'office-ui-fabric-react!ChoiceGroupBase#checkedOption:member'
     summary: Gets the current checked option.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: checkedOption
+    fullName: checkedOption
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'readonly checkedOption: IChoiceGroupOption | undefined;'
       return:
-        type: IChoiceGroupOption | undefined
-methods:
-  - name: 'componentDidUpdate(prevProps, prevState)'
-    uid: 'office-ui-fabric-react!ChoiceGroupBase#componentDidUpdate:member(1)'
-    package: office-ui-fabric-react!
+        type:
+          - IChoiceGroupOption | undefined
+  - uid: 'office-ui-fabric-react!ChoiceGroupBase#componentDidUpdate:member(1)'
+    name: 'componentDidUpdate(prevProps, prevState)'
     fullName: 'componentDidUpdate(prevProps, prevState)'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        componentDidUpdate(prevProps: IChoiceGroupProps, prevState:
-        IChoiceGroupState): void;
+      content: 'componentDidUpdate(prevProps: IChoiceGroupProps, prevState: IChoiceGroupState): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: prevProps
           description: ''
-          type: IChoiceGroupProps
+          type:
+            - IChoiceGroupProps
         - id: prevState
           description: ''
-          type: '<xref uid="office-ui-fabric-react!IChoiceGroupState:interface" />'
-      return:
-        type: void
-        description: ''
-  - name: focus()
-    uid: 'office-ui-fabric-react!ChoiceGroupBase#focus:member(1)'
-    package: office-ui-fabric-react!
+          type:
+            - 'office-ui-fabric-react!IChoiceGroupState:interface'
+  - uid: 'office-ui-fabric-react!ChoiceGroupBase#focus:member(1)'
+    name: focus()
     fullName: focus()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'focus(): void;'
       return:
-        type: void
+        type:
+          - void
         description: ''
-  - name: render()
-    uid: 'office-ui-fabric-react!ChoiceGroupBase#render:member(1)'
-    package: office-ui-fabric-react!
+  - uid: 'office-ui-fabric-react!ChoiceGroupBase#render:member(1)'
+    name: render()
     fullName: render()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'render(): JSX.Element;'
       return:
-        type: JSX.Element
+        type:
+          - JSX.Element
         description: ''
-extends: 'React.Component&lt;IChoiceGroupProps, IChoiceGroupState&gt; '

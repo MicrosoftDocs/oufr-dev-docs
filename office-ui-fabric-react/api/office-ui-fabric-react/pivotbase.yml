@@ -1,59 +1,60 @@
-### YamlMime:TSType
-name: PivotBase
-uid: 'office-ui-fabric-react!PivotBase:class'
-package: office-ui-fabric-react!
-fullName: PivotBase
-summary: >-
-  Usage:
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-ui-fabric-react!PivotBase:class'
+    summary: >-
+      Usage:
 
 
-  <Pivot> <PivotItem headerText="Foo"> <Label>Pivot \#1</Label> </PivotItem>
-  <PivotItem headerText="Bar"> <Label>Pivot \#2</Label> </PivotItem> <PivotItem
-  headerText="Bas"> <Label>Pivot \#3</Label> </PivotItem> </Pivot>
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: class
-constructors:
-  - name: (constructor)(props)
-    uid: 'office-ui-fabric-react!PivotBase:constructor(1)'
+      <Pivot> <PivotItem headerText="Foo"> <Label>Pivot \#1</Label> </PivotItem> <PivotItem headerText="Bar">
+      <Label>Pivot \#2</Label> </PivotItem> <PivotItem headerText="Bas"> <Label>Pivot \#3</Label> </PivotItem> </Pivot>
+    name: PivotBase
+    fullName: PivotBase
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'React.Component<IPivotProps, IPivotState> '
     package: office-ui-fabric-react!
-    fullName: (constructor)(props)
+    children:
+      - 'office-ui-fabric-react!PivotBase:constructor(1)'
+      - 'office-ui-fabric-react!PivotBase#focus:member(1)'
+      - 'office-ui-fabric-react!PivotBase#render:member(1)'
+  - uid: 'office-ui-fabric-react!PivotBase:constructor(1)'
     summary: Constructs a new instance of the `PivotBase` class
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: (constructor)(props)
+    fullName: (constructor)(props)
+    langs:
+      - typeScript
+    type: constructor
     syntax:
       content: 'constructor(props: IPivotProps);'
       parameters:
         - id: props
           description: ''
-          type: IPivotProps
-methods:
-  - name: focus()
-    uid: 'office-ui-fabric-react!PivotBase#focus:member(1)'
-    package: office-ui-fabric-react!
-    fullName: focus()
+          type:
+            - IPivotProps
+  - uid: 'office-ui-fabric-react!PivotBase#focus:member(1)'
     summary: Sets focus to the first pivot tab.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: focus()
+    fullName: focus()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'focus(): void;'
       return:
-        type: void
+        type:
+          - void
         description: ''
-  - name: render()
-    uid: 'office-ui-fabric-react!PivotBase#render:member(1)'
-    package: office-ui-fabric-react!
+  - uid: 'office-ui-fabric-react!PivotBase#render:member(1)'
+    name: render()
     fullName: render()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'render(): JSX.Element;'
       return:
-        type: JSX.Element
+        type:
+          - JSX.Element
         description: ''
-extends: 'React.Component&lt;IPivotProps, IPivotState&gt; '

@@ -1,104 +1,105 @@
-### YamlMime:TSType
-name: IFabricProps
-uid: '@fluentui/react-internal!IFabricProps:interface'
-package: '@fluentui/react-internal!'
-fullName: IFabricProps
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: applyTheme
-    uid: '@fluentui/react-internal!IFabricProps#applyTheme:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-internal!IFabricProps:interface'
+    name: IFabricProps
+    fullName: IFabricProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - React.HTMLAttributes<HTMLDivElement>
+      - 'React.RefAttributes<HTMLDivElement> '
     package: '@fluentui/react-internal!'
+    children:
+      - '@fluentui/react-internal!IFabricProps#applyTheme:member'
+      - '@fluentui/react-internal!IFabricProps#applyThemeToBody:member'
+      - '@fluentui/react-internal!IFabricProps#as:member'
+      - '@fluentui/react-internal!IFabricProps#componentRef:member'
+      - '@fluentui/react-internal!IFabricProps#dir:member'
+      - '@fluentui/react-internal!IFabricProps#styles:member'
+      - '@fluentui/react-internal!IFabricProps#theme:member'
+  - uid: '@fluentui/react-internal!IFabricProps#applyTheme:member'
+    summary: Applies the current body background specified in the theme to the root element.
+    name: applyTheme
     fullName: applyTheme
-    summary: >-
-      Applies the current body background specified in the theme to the root
-      element.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'applyTheme?: boolean;'
       return:
-        type: boolean
-  - name: applyThemeToBody
-    uid: '@fluentui/react-internal!IFabricProps#applyThemeToBody:member'
-    package: '@fluentui/react-internal!'
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!IFabricProps#applyThemeToBody:member'
+    summary: Applies the current body background specified in the theme to the body element.
+    name: applyThemeToBody
     fullName: applyThemeToBody
-    summary: >-
-      Applies the current body background specified in the theme to the body
-      element.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'applyThemeToBody?: boolean;'
       return:
-        type: boolean
-  - name: as
-    uid: '@fluentui/react-internal!IFabricProps#as:member'
-    package: '@fluentui/react-internal!'
-    fullName: as
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!IFabricProps#as:member'
     summary: 'Overrides the root element type, defaults to `div`<!-- -->.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: as
+    fullName: as
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'as?: React.ElementType;'
       return:
-        type: React.ElementType
-  - name: componentRef
-    uid: '@fluentui/react-internal!IFabricProps#componentRef:member'
-    package: '@fluentui/react-internal!'
+        type:
+          - React.ElementType
+  - uid: '@fluentui/react-internal!IFabricProps#componentRef:member'
+    name: componentRef
     fullName: componentRef
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'componentRef?: IRefObject<{}>;'
       return:
-        type: 'IRefObject&lt;{}&gt;'
-  - name: dir
-    uid: '@fluentui/react-internal!IFabricProps#dir:member'
-    package: '@fluentui/react-internal!'
-    fullName: dir
+        type:
+          - 'IRefObject<{}>'
+  - uid: '@fluentui/react-internal!IFabricProps#dir:member'
     summary: >-
-      Specifies the direction of the content. Will inject a `dir` attribute, and
-      also ensure that the `rtl` flag of the contextual theme object is set
-      correctly so that css registered with merge-styles can be auto flipped
-      correctly.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Specifies the direction of the content. Will inject a `dir` attribute, and also ensure that the `rtl` flag of the
+      contextual theme object is set correctly so that css registered with merge-styles can be auto flipped correctly.
+    name: dir
+    fullName: dir
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'dir?: ''rtl'' | ''ltr'' | ''auto'';'
       return:
-        type: '''rtl'' | ''ltr'' | ''auto'''
-  - name: styles
-    uid: '@fluentui/react-internal!IFabricProps#styles:member'
-    package: '@fluentui/react-internal!'
-    fullName: styles
+        type:
+          - '''rtl'' | ''ltr'' | ''auto'''
+  - uid: '@fluentui/react-internal!IFabricProps#styles:member'
     summary: Overrides the styles for the component.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: styles
+    fullName: styles
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'styles?: IStyleFunctionOrObject<IFabricStyleProps, IFabricStyles>;'
       return:
-        type: 'IStyleFunctionOrObject&lt;IFabricStyleProps, IFabricStyles&gt;'
-  - name: theme
-    uid: '@fluentui/react-internal!IFabricProps#theme:member'
-    package: '@fluentui/react-internal!'
-    fullName: theme
+        type:
+          - 'IStyleFunctionOrObject<IFabricStyleProps, IFabricStyles>'
+  - uid: '@fluentui/react-internal!IFabricProps#theme:member'
     summary: Injected by the `styled` HOC wrapper.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'theme?: ITheme;'
       return:
-        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
-extends: React.HTMLAttributes&lt;HTMLDivElement&gt;
+        type:
+          - '@fluentui/theme!ITheme:interface'

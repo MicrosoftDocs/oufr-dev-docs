@@ -1,67 +1,60 @@
-### YamlMime:TSType
-name: IEditingSelectedPeopleItemProps
-uid: '@fluentui/react-internal!IEditingSelectedPeopleItemProps:interface'
-package: '@fluentui/react-internal!'
-fullName: IEditingSelectedPeopleItemProps
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: floatingPickerProps
-    uid: >-
-      @fluentui/react-internal!IEditingSelectedPeopleItemProps#floatingPickerProps:member
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-internal!IEditingSelectedPeopleItemProps:interface'
+    name: IEditingSelectedPeopleItemProps
+    fullName: IEditingSelectedPeopleItemProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'ISelectedPeopleItemProps '
     package: '@fluentui/react-internal!'
+    children:
+      - '@fluentui/react-internal!IEditingSelectedPeopleItemProps#floatingPickerProps:member'
+      - '@fluentui/react-internal!IEditingSelectedPeopleItemProps#getEditingItemText:member'
+      - '@fluentui/react-internal!IEditingSelectedPeopleItemProps#onEditingComplete:member'
+      - '@fluentui/react-internal!IEditingSelectedPeopleItemProps#onRenderFloatingPicker:member'
+  - uid: '@fluentui/react-internal!IEditingSelectedPeopleItemProps#floatingPickerProps:member'
+    name: floatingPickerProps
     fullName: floatingPickerProps
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'floatingPickerProps?: IBaseFloatingPickerProps<IPersonaProps>;'
       return:
-        type: IBaseFloatingPickerProps&lt;IPersonaProps&gt;
-  - name: getEditingItemText
-    uid: >-
-      @fluentui/react-internal!IEditingSelectedPeopleItemProps#getEditingItemText:member
-    package: '@fluentui/react-internal!'
+        type:
+          - IBaseFloatingPickerProps<IPersonaProps>
+  - uid: '@fluentui/react-internal!IEditingSelectedPeopleItemProps#getEditingItemText:member'
+    name: getEditingItemText
     fullName: getEditingItemText
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'getEditingItemText?: (item: IExtendedPersonaProps) => string;'
       return:
-        type: '(item: IExtendedPersonaProps) =&gt; string'
-  - name: onEditingComplete
-    uid: >-
-      @fluentui/react-internal!IEditingSelectedPeopleItemProps#onEditingComplete:member
-    package: '@fluentui/react-internal!'
+        type:
+          - '(item: IExtendedPersonaProps) => string'
+  - uid: '@fluentui/react-internal!IEditingSelectedPeopleItemProps#onEditingComplete:member'
+    name: onEditingComplete
     fullName: onEditingComplete
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onEditingComplete: (oldItem: any, newItem: any) => void;'
       return:
-        type: '(oldItem: any, newItem: any) =&gt; void'
-  - name: onRenderFloatingPicker
-    uid: >-
-      @fluentui/react-internal!IEditingSelectedPeopleItemProps#onRenderFloatingPicker:member
-    package: '@fluentui/react-internal!'
+        type:
+          - '(oldItem: any, newItem: any) => void'
+  - uid: '@fluentui/react-internal!IEditingSelectedPeopleItemProps#onRenderFloatingPicker:member'
+    name: onRenderFloatingPicker
     fullName: onRenderFloatingPicker
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        onRenderFloatingPicker?:
-        React.ComponentType<IBaseFloatingPickerProps<IPersonaProps>>;
+      content: 'onRenderFloatingPicker?: React.ComponentType<IBaseFloatingPickerProps<IPersonaProps>>;'
       return:
-        type: >-
-          React.ComponentType&lt;IBaseFloatingPickerProps&lt;IPersonaProps&gt;&gt;
-extends: 'ISelectedPeopleItemProps '
+        type:
+          - React.ComponentType<IBaseFloatingPickerProps<IPersonaProps>>

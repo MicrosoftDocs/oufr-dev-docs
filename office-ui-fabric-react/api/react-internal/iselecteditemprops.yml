@@ -1,24 +1,27 @@
-### YamlMime:TSType
-name: ISelectedItemProps
-uid: '@fluentui/react-internal!ISelectedItemProps:interface'
-package: '@fluentui/react-internal!'
-fullName: ISelectedItemProps
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: onCopyItem
-    uid: '@fluentui/react-internal!ISelectedItemProps#onCopyItem:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-internal!ISelectedItemProps:interface'
+    name: ISelectedItemProps
+    fullName: ISelectedItemProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'IPickerItemProps<T> '
+    syntax:
+      typeParameters:
+        - id: T
     package: '@fluentui/react-internal!'
+    children:
+      - '@fluentui/react-internal!ISelectedItemProps#onCopyItem:member'
+  - uid: '@fluentui/react-internal!ISelectedItemProps#onCopyItem:member'
+    name: onCopyItem
     fullName: onCopyItem
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onCopyItem: (item: T) => void;'
       return:
-        type: '(item: T) =&gt; void'
-extends: 'IPickerItemProps&lt;T&gt; '
+        type:
+          - '(item: T) => void'

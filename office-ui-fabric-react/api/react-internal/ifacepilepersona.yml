@@ -1,157 +1,144 @@
-### YamlMime:TSType
-name: IFacepilePersona
-uid: '@fluentui/react-internal!IFacepilePersona:interface'
-package: '@fluentui/react-internal!'
-fullName: IFacepilePersona
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: allowPhoneInitials
-    uid: '@fluentui/react-internal!IFacepilePersona#allowPhoneInitials:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-internal!IFacepilePersona:interface'
+    name: IFacepilePersona
+    fullName: IFacepilePersona
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'React.ButtonHTMLAttributes<HTMLButtonElement | HTMLDivElement> '
     package: '@fluentui/react-internal!'
-    fullName: allowPhoneInitials
+    children:
+      - '@fluentui/react-internal!IFacepilePersona#allowPhoneInitials:member'
+      - '@fluentui/react-internal!IFacepilePersona#data:member'
+      - '@fluentui/react-internal!IFacepilePersona#imageInitials:member'
+      - '@fluentui/react-internal!IFacepilePersona#imageUrl:member'
+      - '@fluentui/react-internal!IFacepilePersona#initialsColor:member'
+      - '@fluentui/react-internal!IFacepilePersona#keytipProps:member'
+      - '@fluentui/react-internal!IFacepilePersona#onClick:member'
+      - '@fluentui/react-internal!IFacepilePersona#onMouseMove:member'
+      - '@fluentui/react-internal!IFacepilePersona#onMouseOut:member'
+      - '@fluentui/react-internal!IFacepilePersona#personaName:member'
+  - uid: '@fluentui/react-internal!IFacepilePersona#allowPhoneInitials:member'
     summary: >-
-      Whether initials are calculated for phone numbers and number sequences.
-      Example: Set property to true to get initials for project names consisting
-      of numbers only.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Whether initials are calculated for phone numbers and number sequences. Example: Set property to true to get
+      initials for project names consisting of numbers only.
+    name: allowPhoneInitials
+    fullName: allowPhoneInitials
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'allowPhoneInitials?: boolean;'
       return:
-        type: boolean
-  - name: data
-    uid: '@fluentui/react-internal!IFacepilePersona#data:member'
-    package: '@fluentui/react-internal!'
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!IFacepilePersona#data:member'
+    summary: Extra data - not used directly but can be handy for passing additional data to custom event handlers.
+    name: data
     fullName: data
-    summary: >-
-      Extra data - not used directly but can be handy for passing additional
-      data to custom event handlers.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'data?: any;'
       return:
-        type: any
-  - name: imageInitials
-    uid: '@fluentui/react-internal!IFacepilePersona#imageInitials:member'
-    package: '@fluentui/react-internal!'
-    fullName: imageInitials
+        type:
+          - any
+  - uid: '@fluentui/react-internal!IFacepilePersona#imageInitials:member'
     summary: The user's initials to display in the image area when there is no image.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: imageInitials
+    fullName: imageInitials
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'imageInitials?: string;'
       return:
-        type: string
-  - name: imageUrl
-    uid: '@fluentui/react-internal!IFacepilePersona#imageUrl:member'
-    package: '@fluentui/react-internal!'
+        type:
+          - string
+  - uid: '@fluentui/react-internal!IFacepilePersona#imageUrl:member'
+    summary: 'Url to the image to use, should be a square aspect ratio and big enough to fit in the image area.'
+    name: imageUrl
     fullName: imageUrl
-    summary: >-
-      Url to the image to use, should be a square aspect ratio and big enough to
-      fit in the image area.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'imageUrl?: string;'
       return:
-        type: string
-  - name: initialsColor
-    uid: '@fluentui/react-internal!IFacepilePersona#initialsColor:member'
-    package: '@fluentui/react-internal!'
-    fullName: initialsColor
+        type:
+          - string
+  - uid: '@fluentui/react-internal!IFacepilePersona#initialsColor:member'
     summary: The background color when the user's initials are displayed.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: initialsColor
+    fullName: initialsColor
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'initialsColor?: PersonaInitialsColor;'
       return:
-        type: PersonaInitialsColor
-  - name: keytipProps
-    uid: '@fluentui/react-internal!IFacepilePersona#keytipProps:member'
-    package: '@fluentui/react-internal!'
+        type:
+          - PersonaInitialsColor
+  - uid: '@fluentui/react-internal!IFacepilePersona#keytipProps:member'
+    summary: Optional keytip for this button that is only added when 'onClick' is defined for the persona
+    name: keytipProps
     fullName: keytipProps
-    summary: >-
-      Optional keytip for this button that is only added when 'onClick' is
-      defined for the persona
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'keytipProps?: IKeytipProps;'
       return:
-        type: IKeytipProps
-  - name: onClick
-    uid: '@fluentui/react-internal!IFacepilePersona#onClick:member'
-    package: '@fluentui/react-internal!'
+        type:
+          - IKeytipProps
+  - uid: '@fluentui/react-internal!IFacepilePersona#onClick:member'
+    summary: 'If provided, persona will be rendered with cursor:pointer and the handler will be called on click.'
+    name: onClick
     fullName: onClick
-    summary: >-
-      If provided, persona will be rendered with cursor:pointer and the handler
-      will be called on click.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        onClick?: (ev?: React.MouseEvent<HTMLElement>, persona?:
-        IFacepilePersona) => void;
+      content: 'onClick?: (ev?: React.MouseEvent<HTMLElement>, persona?: IFacepilePersona) => void;'
       return:
-        type: >-
-          (ev?: React.MouseEvent&lt;HTMLElement&gt;, persona?: IFacepilePersona)
-          =&gt; void
-  - name: onMouseMove
-    uid: '@fluentui/react-internal!IFacepilePersona#onMouseMove:member'
-    package: '@fluentui/react-internal!'
-    fullName: onMouseMove
+        type:
+          - '(ev?: React.MouseEvent<HTMLElement>, persona?: IFacepilePersona) => void'
+  - uid: '@fluentui/react-internal!IFacepilePersona#onMouseMove:member'
     summary: 'If provided, the handler will be called on mouse move.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onMouseMove
+    fullName: onMouseMove
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        onMouseMove?: (ev?: React.MouseEvent<HTMLElement>, persona?:
-        IFacepilePersona) => void;
+      content: 'onMouseMove?: (ev?: React.MouseEvent<HTMLElement>, persona?: IFacepilePersona) => void;'
       return:
-        type: >-
-          (ev?: React.MouseEvent&lt;HTMLElement&gt;, persona?: IFacepilePersona)
-          =&gt; void
-  - name: onMouseOut
-    uid: '@fluentui/react-internal!IFacepilePersona#onMouseOut:member'
-    package: '@fluentui/react-internal!'
+        type:
+          - '(ev?: React.MouseEvent<HTMLElement>, persona?: IFacepilePersona) => void'
+  - uid: '@fluentui/react-internal!IFacepilePersona#onMouseOut:member'
+    summary: 'If provided, the handler will be called when mouse moves out of the component.'
+    name: onMouseOut
     fullName: onMouseOut
-    summary: >-
-      If provided, the handler will be called when mouse moves out of the
-      component.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        onMouseOut?: (ev?: React.MouseEvent<HTMLElement>, persona?:
-        IFacepilePersona) => void;
+      content: 'onMouseOut?: (ev?: React.MouseEvent<HTMLElement>, persona?: IFacepilePersona) => void;'
       return:
-        type: >-
-          (ev?: React.MouseEvent&lt;HTMLElement&gt;, persona?: IFacepilePersona)
-          =&gt; void
-  - name: personaName
-    uid: '@fluentui/react-internal!IFacepilePersona#personaName:member'
-    package: '@fluentui/react-internal!'
-    fullName: personaName
+        type:
+          - '(ev?: React.MouseEvent<HTMLElement>, persona?: IFacepilePersona) => void'
+  - uid: '@fluentui/react-internal!IFacepilePersona#personaName:member'
     summary: Name of the person.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: personaName
+    fullName: personaName
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'personaName?: string;'
       return:
-        type: string
-extends: 'React.ButtonHTMLAttributes&lt;HTMLButtonElement | HTMLDivElement&gt; '
+        type:
+          - string

@@ -1,141 +1,139 @@
-### YamlMime:TSType
-name: IMarqueeSelectionProps
-uid: '@fluentui/react-internal!IMarqueeSelectionProps:interface'
-package: '@fluentui/react-internal!'
-fullName: IMarqueeSelectionProps
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: className
-    uid: '@fluentui/react-internal!IMarqueeSelectionProps#className:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-internal!IMarqueeSelectionProps:interface'
+    name: IMarqueeSelectionProps
+    fullName: IMarqueeSelectionProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'React.HTMLAttributes<HTMLDivElement> '
     package: '@fluentui/react-internal!'
-    fullName: className
+    children:
+      - '@fluentui/react-internal!IMarqueeSelectionProps#className:member'
+      - '@fluentui/react-internal!IMarqueeSelectionProps#componentRef:member'
+      - '@fluentui/react-internal!IMarqueeSelectionProps#isDraggingConstrainedToRoot:member'
+      - '@fluentui/react-internal!IMarqueeSelectionProps#isEnabled:member'
+      - '@fluentui/react-internal!IMarqueeSelectionProps#onShouldStartSelection:member'
+      - '@fluentui/react-internal!IMarqueeSelectionProps#rootProps:member'
+      - '@fluentui/react-internal!IMarqueeSelectionProps#selection:member'
+      - '@fluentui/react-internal!IMarqueeSelectionProps#styles:member'
+      - '@fluentui/react-internal!IMarqueeSelectionProps#theme:member'
+  - uid: '@fluentui/react-internal!IMarqueeSelectionProps#className:member'
     summary: Additional CSS class(es) to apply to the MarqueeSelection.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: className
+    fullName: className
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'className?: string;'
       return:
-        type: string
-  - name: componentRef
-    uid: '@fluentui/react-internal!IMarqueeSelectionProps#componentRef:member'
-    package: '@fluentui/react-internal!'
-    fullName: componentRef
+        type:
+          - string
+  - uid: '@fluentui/react-internal!IMarqueeSelectionProps#componentRef:member'
     summary: >-
-      Optional callback to access the IMarqueeSelection interface. Use this
-      instead of ref for accessing the public methods and properties of the
-      component.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Optional callback to access the IMarqueeSelection interface. Use this instead of ref for accessing the public
+      methods and properties of the component.
+    name: componentRef
+    fullName: componentRef
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'componentRef?: IRefObject<IMarqueeSelection>;'
       return:
-        type: IRefObject&lt;IMarqueeSelection&gt;
-  - name: isDraggingConstrainedToRoot
-    uid: >-
-      @fluentui/react-internal!IMarqueeSelectionProps#isDraggingConstrainedToRoot:member
-    package: '@fluentui/react-internal!'
-    fullName: isDraggingConstrainedToRoot
+        type:
+          - IRefObject<IMarqueeSelection>
+  - uid: '@fluentui/react-internal!IMarqueeSelectionProps#isDraggingConstrainedToRoot:member'
     summary: >-
-      Optional flag to restrict the drag rect to the root element, instead of
-      allowing the drag rect to start outside of the root element boundaries.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Optional flag to restrict the drag rect to the root element, instead of allowing the drag rect to start outside of
+      the root element boundaries.
+    name: isDraggingConstrainedToRoot
+    fullName: isDraggingConstrainedToRoot
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'isDraggingConstrainedToRoot?: boolean;'
       return:
-        type: boolean
-  - name: isEnabled
-    uid: '@fluentui/react-internal!IMarqueeSelectionProps#isEnabled:member'
-    package: '@fluentui/react-internal!'
-    fullName: isEnabled
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!IMarqueeSelectionProps#isEnabled:member'
     summary: >-
-      Optional flag to control the enabled state of marquee selection. This
-      allows you to render it and have events all ready to go, but conditionally
-      disable it. That way transitioning between enabled/disabled generate no
-      difference in the DOM.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Optional flag to control the enabled state of marquee selection. This allows you to render it and have events all
+      ready to go, but conditionally disable it. That way transitioning between enabled/disabled generate no difference
+      in the DOM.
+    name: isEnabled
+    fullName: isEnabled
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'isEnabled?: boolean;'
       return:
-        type: boolean
-  - name: onShouldStartSelection
-    uid: >-
-      @fluentui/react-internal!IMarqueeSelectionProps#onShouldStartSelection:member
-    package: '@fluentui/react-internal!'
-    fullName: onShouldStartSelection
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!IMarqueeSelectionProps#onShouldStartSelection:member'
     summary: >-
-      Optional callback that is called, when the mouse down event occurs, in
-      order to determine if we should start a marquee selection. If true is
-      returned, we will cancel the mousedown event to prevent upstream mousedown
-      handlers from executing.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Optional callback that is called, when the mouse down event occurs, in order to determine if we should start a
+      marquee selection. If true is returned, we will cancel the mousedown event to prevent upstream mousedown handlers
+      from executing.
+    name: onShouldStartSelection
+    fullName: onShouldStartSelection
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onShouldStartSelection?: (ev: MouseEvent) => boolean;'
       return:
-        type: '(ev: MouseEvent) =&gt; boolean'
-  - name: rootProps
-    uid: '@fluentui/react-internal!IMarqueeSelectionProps#rootProps:member'
-    package: '@fluentui/react-internal!'
-    fullName: rootProps
+        type:
+          - '(ev: MouseEvent) => boolean'
+  - uid: '@fluentui/react-internal!IMarqueeSelectionProps#rootProps:member'
     summary: Optional props to mix into the root DIV element.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: rootProps
+    fullName: rootProps
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'rootProps?: React.HTMLAttributes<HTMLDivElement>;'
       return:
-        type: React.HTMLAttributes&lt;HTMLDivElement&gt;
-  - name: selection
-    uid: '@fluentui/react-internal!IMarqueeSelectionProps#selection:member'
-    package: '@fluentui/react-internal!'
-    fullName: selection
+        type:
+          - React.HTMLAttributes<HTMLDivElement>
+  - uid: '@fluentui/react-internal!IMarqueeSelectionProps#selection:member'
     summary: The selection object to interact with when updating selection changes.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: selection
+    fullName: selection
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'selection: ISelection;'
       return:
-        type: '<xref uid="@fluentui/utilities!ISelection:interface" />'
-  - name: styles
-    uid: '@fluentui/react-internal!IMarqueeSelectionProps#styles:member'
-    package: '@fluentui/react-internal!'
+        type:
+          - '@fluentui/utilities!ISelection:interface'
+  - uid: '@fluentui/react-internal!IMarqueeSelectionProps#styles:member'
+    summary: Call to provide customized styling that will layer on top of the variant rules.
+    name: styles
     fullName: styles
-    summary: >-
-      Call to provide customized styling that will layer on top of the variant
-      rules.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        styles?: IStyleFunction<IMarqueeSelectionStyleProps,
-        IMarqueeSelectionStyles>;
+      content: 'styles?: IStyleFunction<IMarqueeSelectionStyleProps, IMarqueeSelectionStyles>;'
       return:
-        type: >-
-          IStyleFunction&lt;IMarqueeSelectionStyleProps,
-          IMarqueeSelectionStyles&gt;
-  - name: theme
-    uid: '@fluentui/react-internal!IMarqueeSelectionProps#theme:member'
-    package: '@fluentui/react-internal!'
-    fullName: theme
+        type:
+          - 'IStyleFunction<IMarqueeSelectionStyleProps, IMarqueeSelectionStyles>'
+  - uid: '@fluentui/react-internal!IMarqueeSelectionProps#theme:member'
     summary: Theme (provided through customization.)
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'theme?: ITheme;'
       return:
-        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
-extends: 'React.HTMLAttributes&lt;HTMLDivElement&gt; '
+        type:
+          - '@fluentui/theme!ITheme:interface'

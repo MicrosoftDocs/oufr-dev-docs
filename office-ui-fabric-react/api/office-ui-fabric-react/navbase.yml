@@ -1,86 +1,85 @@
-### YamlMime:TSType
-name: NavBase
-uid: 'office-ui-fabric-react!NavBase:class'
-package: office-ui-fabric-react!
-fullName: NavBase
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: class
-constructors:
-  - name: (constructor)(props)
-    uid: 'office-ui-fabric-react!NavBase:constructor(1)'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-ui-fabric-react!NavBase:class'
+    name: NavBase
+    fullName: NavBase
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'React.Component<INavProps, INavState> '
+    implements:
+      - 'INav '
     package: office-ui-fabric-react!
-    fullName: (constructor)(props)
+    children:
+      - 'office-ui-fabric-react!NavBase:constructor(1)'
+      - 'office-ui-fabric-react!NavBase.defaultProps:member'
+      - 'office-ui-fabric-react!NavBase#focus:member(1)'
+      - 'office-ui-fabric-react!NavBase#render:member(1)'
+      - 'office-ui-fabric-react!NavBase#selectedKey:member'
+  - uid: 'office-ui-fabric-react!NavBase:constructor(1)'
     summary: Constructs a new instance of the `NavBase` class
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: (constructor)(props)
+    fullName: (constructor)(props)
+    langs:
+      - typeScript
+    type: constructor
     syntax:
       content: 'constructor(props: INavProps);'
       parameters:
         - id: props
           description: ''
-          type: INavProps
-properties:
-  - name: defaultProps
-    uid: 'office-ui-fabric-react!NavBase.defaultProps:member'
-    package: office-ui-fabric-react!
+          type:
+            - INavProps
+  - uid: 'office-ui-fabric-react!NavBase.defaultProps:member'
+    name: defaultProps
     fullName: defaultProps
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'static defaultProps: INavProps;'
       return:
-        type: INavProps
-  - name: selectedKey
-    uid: 'office-ui-fabric-react!NavBase#selectedKey:member'
-    package: office-ui-fabric-react!
-    fullName: selectedKey
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'readonly selectedKey: string | undefined;'
-      return:
-        type: string | undefined
-methods:
-  - name: focus(forceIntoFirstElement)
-    uid: 'office-ui-fabric-react!NavBase#focus:member(1)'
-    package: office-ui-fabric-react!
-    fullName: focus(forceIntoFirstElement)
+        type:
+          - INavProps
+  - uid: 'office-ui-fabric-react!NavBase#focus:member(1)'
     summary: Sets focus to the first tabbable item in the zone.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: focus(forceIntoFirstElement)
+    fullName: focus(forceIntoFirstElement)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'focus(forceIntoFirstElement?: boolean): boolean;'
+      return:
+        type:
+          - boolean
+        description: 'True if focus could be set to an active element, false if no operation was taken.'
       parameters:
         - id: forceIntoFirstElement
-          description: >-
-            If true, focus will be forced into the first element, even if focus
-            is already in the focus zone.
-          type: boolean
-      return:
-        type: boolean
-        description: >-
-          True if focus could be set to an active element, false if no operation
-          was taken.
-  - name: render()
-    uid: 'office-ui-fabric-react!NavBase#render:member(1)'
-    package: office-ui-fabric-react!
+          description: 'If true, focus will be forced into the first element, even if focus is already in the focus zone.'
+          type:
+            - boolean
+  - uid: 'office-ui-fabric-react!NavBase#render:member(1)'
+    name: render()
     fullName: render()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'render(): JSX.Element | null;'
       return:
-        type: JSX.Element | null
+        type:
+          - JSX.Element | null
         description: ''
-extends: 'React.Component&lt;INavProps, INavState&gt; '
+  - uid: 'office-ui-fabric-react!NavBase#selectedKey:member'
+    name: selectedKey
+    fullName: selectedKey
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly selectedKey: string | undefined;'
+      return:
+        type:
+          - string | undefined

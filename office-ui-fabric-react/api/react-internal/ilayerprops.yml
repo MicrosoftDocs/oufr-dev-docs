@@ -1,150 +1,156 @@
-### YamlMime:TSType
-name: ILayerProps
-uid: '@fluentui/react-internal!ILayerProps:interface'
-package: '@fluentui/react-internal!'
-fullName: ILayerProps
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: className
-    uid: '@fluentui/react-internal!ILayerProps#className:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-internal!ILayerProps:interface'
+    name: ILayerProps
+    fullName: ILayerProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - React.HTMLAttributes<HTMLDivElement>
+      - 'React.RefAttributes<HTMLDivElement> '
     package: '@fluentui/react-internal!'
-    fullName: className
+    children:
+      - '@fluentui/react-internal!ILayerProps#className:member'
+      - '@fluentui/react-internal!ILayerProps#componentRef:member'
+      - '@fluentui/react-internal!ILayerProps#eventBubblingEnabled:member'
+      - '@fluentui/react-internal!ILayerProps#hostId:member'
+      - '@fluentui/react-internal!ILayerProps#insertFirst:member'
+      - '@fluentui/react-internal!ILayerProps#onLayerDidMount:member'
+      - '@fluentui/react-internal!ILayerProps#onLayerMounted:member'
+      - '@fluentui/react-internal!ILayerProps#onLayerWillUnmount:member'
+      - '@fluentui/react-internal!ILayerProps#styles:member'
+      - '@fluentui/react-internal!ILayerProps#theme:member'
+  - uid: '@fluentui/react-internal!ILayerProps#className:member'
     summary: Additional css class to apply to the Layer
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: className
+    fullName: className
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'className?: string;'
       return:
-        type: string
-  - name: componentRef
-    uid: '@fluentui/react-internal!ILayerProps#componentRef:member'
-    package: '@fluentui/react-internal!'
-    fullName: componentRef
+        type:
+          - string
+  - uid: '@fluentui/react-internal!ILayerProps#componentRef:member'
     summary: >-
-      Optional callback to access the ILayer interface. Use this instead of ref
-      for accessing the public methods and properties of the component.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Optional callback to access the ILayer interface. Use this instead of ref for accessing the public methods and
+      properties of the component.
+    name: componentRef
+    fullName: componentRef
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'componentRef?: IRefObject<ILayer>;'
       return:
-        type: IRefObject&lt;ILayer&gt;
-  - name: eventBubblingEnabled
-    uid: '@fluentui/react-internal!ILayerProps#eventBubblingEnabled:member'
-    package: '@fluentui/react-internal!'
-    fullName: eventBubblingEnabled
+        type:
+          - IRefObject<ILayer>
+  - uid: '@fluentui/react-internal!ILayerProps#eventBubblingEnabled:member'
     summary: >-
-      When enabled, Layer allows events to bubble up from Layer content.
-      Traditionally Layer has not had this behavior. This prop preserves
-      backwards compatibility by default while allowing users to opt in to the
-      new event bubbling functionality.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      When enabled, Layer allows events to bubble up from Layer content. Traditionally Layer has not had this behavior.
+      This prop preserves backwards compatibility by default while allowing users to opt in to the new event bubbling
+      functionality.
+    name: eventBubblingEnabled
+    fullName: eventBubblingEnabled
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'eventBubblingEnabled?: boolean;'
       return:
-        type: boolean
-  - name: hostId
-    uid: '@fluentui/react-internal!ILayerProps#hostId:member'
-    package: '@fluentui/react-internal!'
-    fullName: hostId
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!ILayerProps#hostId:member'
     summary: >-
-      The optional id property provided on a LayerHost that this Layer should
-      render within. The LayerHost does not need to be immediately available but
-      once has been rendered, and if missing, we'll avoid trying to render the
-      Layer content until the host is available. If an id is not provided, we
-      will render the Layer content in a fixed position element rendered at the
-      end of the document.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      The optional id property provided on a LayerHost that this Layer should render within. The LayerHost does not need
+      to be immediately available but once has been rendered, and if missing, we'll avoid trying to render the Layer
+      content until the host is available. If an id is not provided, we will render the Layer content in a fixed
+      position element rendered at the end of the document.
+    name: hostId
+    fullName: hostId
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'hostId?: string;'
       return:
-        type: string
-  - name: insertFirst
-    uid: '@fluentui/react-internal!ILayerProps#insertFirst:member'
-    package: '@fluentui/react-internal!'
-    fullName: insertFirst
+        type:
+          - string
+  - uid: '@fluentui/react-internal!ILayerProps#insertFirst:member'
     summary: >-
-      Whether the layer should be added as the first child of the host. If true,
-      the layer will be inserted as the first child of the host By default, the
-      layer will be appended at the end to the host
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Whether the layer should be added as the first child of the host. If true, the layer will be inserted as the first
+      child of the host By default, the layer will be appended at the end to the host
+    name: insertFirst
+    fullName: insertFirst
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'insertFirst?: boolean;'
       return:
-        type: boolean
-  - name: onLayerDidMount
-    uid: '@fluentui/react-internal!ILayerProps#onLayerDidMount:member'
-    package: '@fluentui/react-internal!'
-    fullName: onLayerDidMount
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!ILayerProps#onLayerDidMount:member'
     summary: Callback for when the layer is mounted.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onLayerDidMount
+    fullName: onLayerDidMount
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onLayerDidMount?: () => void;'
       return:
-        type: () =&gt; void
-  - name: onLayerMounted
-    uid: '@fluentui/react-internal!ILayerProps#onLayerMounted:member'
-    package: '@fluentui/react-internal!'
-    fullName: onLayerMounted
+        type:
+          - () => void
+  - uid: '@fluentui/react-internal!ILayerProps#onLayerMounted:member'
     summary: Callback for when the layer is mounted.
-    remarks: ''
-    isPreview: false
-    isDeprecated: true
-    customDeprecatedMessage: Use onLayerDidMount.
+    deprecated:
+      content: Use onLayerDidMount.
+    name: onLayerMounted
+    fullName: onLayerMounted
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onLayerMounted?: () => void;'
       return:
-        type: () =&gt; void
-  - name: onLayerWillUnmount
-    uid: '@fluentui/react-internal!ILayerProps#onLayerWillUnmount:member'
-    package: '@fluentui/react-internal!'
-    fullName: onLayerWillUnmount
+        type:
+          - () => void
+  - uid: '@fluentui/react-internal!ILayerProps#onLayerWillUnmount:member'
     summary: Callback for when the layer is unmounted.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onLayerWillUnmount
+    fullName: onLayerWillUnmount
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onLayerWillUnmount?: () => void;'
       return:
-        type: () =&gt; void
-  - name: styles
-    uid: '@fluentui/react-internal!ILayerProps#styles:member'
-    package: '@fluentui/react-internal!'
+        type:
+          - () => void
+  - uid: '@fluentui/react-internal!ILayerProps#styles:member'
+    summary: Call to provide customized styling that will layer on top of the variant rules
+    name: styles
     fullName: styles
-    summary: >-
-      Call to provide customized styling that will layer on top of the variant
-      rules
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'styles?: IStyleFunctionOrObject<ILayerStyleProps, ILayerStyles>;'
       return:
-        type: 'IStyleFunctionOrObject&lt;ILayerStyleProps, ILayerStyles&gt;'
-  - name: theme
-    uid: '@fluentui/react-internal!ILayerProps#theme:member'
-    package: '@fluentui/react-internal!'
-    fullName: theme
+        type:
+          - 'IStyleFunctionOrObject<ILayerStyleProps, ILayerStyles>'
+  - uid: '@fluentui/react-internal!ILayerProps#theme:member'
     summary: Theme provided by HOC.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'theme?: ITheme;'
       return:
-        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
-extends: React.HTMLAttributes&lt;HTMLDivElement&gt;
+        type:
+          - '@fluentui/theme!ITheme:interface'

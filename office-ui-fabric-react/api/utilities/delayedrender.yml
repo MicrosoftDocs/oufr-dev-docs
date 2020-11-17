@@ -1,88 +1,87 @@
-### YamlMime:TSType
-name: DelayedRender
-uid: '@fluentui/utilities!DelayedRender:class'
-package: '@fluentui/utilities!'
-fullName: DelayedRender
-summary: >-
-  Utility component for delaying the render of a child component after a given
-  delay. This component requires a single child component; don't pass in many
-  components. Wrap multiple components in a DIV if necessary.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: class
-constructors:
-  - name: (constructor)(props)
-    uid: '@fluentui/utilities!DelayedRender:constructor(1)'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/utilities!DelayedRender:class'
+    summary: >-
+      Utility component for delaying the render of a child component after a given delay. This component requires a
+      single child component; don't pass in many components. Wrap multiple components in a DIV if necessary.
+    name: DelayedRender
+    fullName: DelayedRender
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'React.Component<IDelayedRenderProps, IDelayedRenderState> '
     package: '@fluentui/utilities!'
-    fullName: (constructor)(props)
+    children:
+      - '@fluentui/utilities!DelayedRender:constructor(1)'
+      - '@fluentui/utilities!DelayedRender#componentDidMount:member(1)'
+      - '@fluentui/utilities!DelayedRender#componentWillUnmount:member(1)'
+      - '@fluentui/utilities!DelayedRender.defaultProps:member'
+      - '@fluentui/utilities!DelayedRender#render:member(1)'
+  - uid: '@fluentui/utilities!DelayedRender:constructor(1)'
     summary: Constructs a new instance of the `DelayedRender` class
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: (constructor)(props)
+    fullName: (constructor)(props)
+    langs:
+      - typeScript
+    type: constructor
     syntax:
       content: 'constructor(props: IDelayedRenderProps);'
       parameters:
         - id: props
           description: ''
-          type: '<xref uid="@fluentui/utilities!IDelayedRenderProps:interface" />'
-properties:
-  - name: defaultProps
-    uid: '@fluentui/utilities!DelayedRender.defaultProps:member'
-    package: '@fluentui/utilities!'
+          type:
+            - '@fluentui/utilities!IDelayedRenderProps:interface'
+  - uid: '@fluentui/utilities!DelayedRender#componentDidMount:member(1)'
+    name: componentDidMount()
+    fullName: componentDidMount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'componentDidMount(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: '@fluentui/utilities!DelayedRender#componentWillUnmount:member(1)'
+    name: componentWillUnmount()
+    fullName: componentWillUnmount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'componentWillUnmount(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: '@fluentui/utilities!DelayedRender.defaultProps:member'
+    name: defaultProps
     fullName: defaultProps
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: |-
         static defaultProps: {
                 delay: number;
             };
       return:
-        type: |-
-          {
-                  delay: number;
-              }
-methods:
-  - name: componentDidMount()
-    uid: '@fluentui/utilities!DelayedRender#componentDidMount:member(1)'
-    package: '@fluentui/utilities!'
-    fullName: componentDidMount()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'componentDidMount(): void;'
-      return:
-        type: void
-        description: ''
-  - name: componentWillUnmount()
-    uid: '@fluentui/utilities!DelayedRender#componentWillUnmount:member(1)'
-    package: '@fluentui/utilities!'
-    fullName: componentWillUnmount()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'componentWillUnmount(): void;'
-      return:
-        type: void
-        description: ''
-  - name: render()
-    uid: '@fluentui/utilities!DelayedRender#render:member(1)'
-    package: '@fluentui/utilities!'
+        type:
+          - |-
+            {
+                    delay: number;
+                }
+  - uid: '@fluentui/utilities!DelayedRender#render:member(1)'
+    name: render()
     fullName: render()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'render(): React.ReactElement<{}> | null;'
       return:
-        type: 'React.ReactElement&lt;{}&gt; | null'
+        type:
+          - 'React.ReactElement<{}> | null'
         description: ''
-extends: 'React.Component&lt;IDelayedRenderProps, IDelayedRenderState&gt; '

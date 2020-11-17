@@ -1,73 +1,75 @@
-### YamlMime:TSType
-name: ICommandBarData
-uid: 'office-ui-fabric-react!ICommandBarData:interface'
-package: office-ui-fabric-react!
-fullName: ICommandBarData
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: cacheKey
-    uid: 'office-ui-fabric-react!ICommandBarData#cacheKey:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-ui-fabric-react!ICommandBarData:interface'
+    name: ICommandBarData
+    fullName: ICommandBarData
+    langs:
+      - typeScript
+    type: interface
     package: office-ui-fabric-react!
-    fullName: cacheKey
+    children:
+      - 'office-ui-fabric-react!ICommandBarData#cacheKey:member'
+      - 'office-ui-fabric-react!ICommandBarData#farItems:member'
+      - 'office-ui-fabric-react!ICommandBarData#minimumOverflowItems:member'
+      - 'office-ui-fabric-react!ICommandBarData#overflowItems:member'
+      - 'office-ui-fabric-react!ICommandBarData#primaryItems:member'
+  - uid: 'office-ui-fabric-react!ICommandBarData#cacheKey:member'
     summary: Unique string used to cache the width of the command bar
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: cacheKey
+    fullName: cacheKey
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'cacheKey: string;'
       return:
-        type: string
-  - name: farItems
-    uid: 'office-ui-fabric-react!ICommandBarData#farItems:member'
-    package: office-ui-fabric-react!
-    fullName: farItems
+        type:
+          - string
+  - uid: 'office-ui-fabric-react!ICommandBarData#farItems:member'
     summary: Items being rendered on the far side
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: farItems
+    fullName: farItems
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'farItems: ICommandBarItemProps[] | undefined;'
       return:
-        type: 'ICommandBarItemProps[] | undefined'
-  - name: minimumOverflowItems
-    uid: 'office-ui-fabric-react!ICommandBarData#minimumOverflowItems:member'
-    package: office-ui-fabric-react!
+        type:
+          - 'ICommandBarItemProps[] | undefined'
+  - uid: 'office-ui-fabric-react!ICommandBarData#minimumOverflowItems:member'
+    summary: Length of original overflowItems to ensure that they are not moved into primary region on resize
+    name: minimumOverflowItems
     fullName: minimumOverflowItems
-    summary: >-
-      Length of original overflowItems to ensure that they are not moved into
-      primary region on resize
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'minimumOverflowItems: number;'
       return:
-        type: number
-  - name: overflowItems
-    uid: 'office-ui-fabric-react!ICommandBarData#overflowItems:member'
-    package: office-ui-fabric-react!
-    fullName: overflowItems
+        type:
+          - number
+  - uid: 'office-ui-fabric-react!ICommandBarData#overflowItems:member'
     summary: Items being rendered in the overflow
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: overflowItems
+    fullName: overflowItems
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'overflowItems: ICommandBarItemProps[];'
       return:
-        type: 'ICommandBarItemProps[]'
-  - name: primaryItems
-    uid: 'office-ui-fabric-react!ICommandBarData#primaryItems:member'
-    package: office-ui-fabric-react!
-    fullName: primaryItems
+        type:
+          - 'ICommandBarItemProps[]'
+  - uid: 'office-ui-fabric-react!ICommandBarData#primaryItems:member'
     summary: Items being rendered in the primary region
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: primaryItems
+    fullName: primaryItems
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'primaryItems: ICommandBarItemProps[];'
       return:
-        type: 'ICommandBarItemProps[]'
+        type:
+          - 'ICommandBarItemProps[]'

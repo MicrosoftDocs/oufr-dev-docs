@@ -1,263 +1,281 @@
-### YamlMime:TSType
-name: IButtonGridCellProps
-uid: 'office-ui-fabric-react!IButtonGridCellProps:interface'
-package: office-ui-fabric-react!
-fullName: IButtonGridCellProps
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: cellDisabledStyle
-    uid: 'office-ui-fabric-react!IButtonGridCellProps#cellDisabledStyle:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-ui-fabric-react!IButtonGridCellProps:interface'
+    name: IButtonGridCellProps
+    fullName: IButtonGridCellProps
+    langs:
+      - typeScript
+    type: interface
+    syntax:
+      typeParameters:
+        - id: T
     package: office-ui-fabric-react!
-    fullName: cellDisabledStyle
+    children:
+      - 'office-ui-fabric-react!IButtonGridCellProps#cellDisabledStyle:member'
+      - 'office-ui-fabric-react!IButtonGridCellProps#cellIsSelectedStyle:member'
+      - 'office-ui-fabric-react!IButtonGridCellProps#className:member'
+      - 'office-ui-fabric-react!IButtonGridCellProps#disabled:member'
+      - 'office-ui-fabric-react!IButtonGridCellProps#getClassNames:member'
+      - 'office-ui-fabric-react!IButtonGridCellProps#id:member'
+      - 'office-ui-fabric-react!IButtonGridCellProps#index:member'
+      - 'office-ui-fabric-react!IButtonGridCellProps#item:member'
+      - 'office-ui-fabric-react!IButtonGridCellProps#label:member'
+      - 'office-ui-fabric-react!IButtonGridCellProps#onClick:member'
+      - 'office-ui-fabric-react!IButtonGridCellProps#onFocus:member'
+      - 'office-ui-fabric-react!IButtonGridCellProps#onHover:member'
+      - 'office-ui-fabric-react!IButtonGridCellProps#onKeyDown:member'
+      - 'office-ui-fabric-react!IButtonGridCellProps#onMouseEnter:member'
+      - 'office-ui-fabric-react!IButtonGridCellProps#onMouseLeave:member'
+      - 'office-ui-fabric-react!IButtonGridCellProps#onMouseMove:member'
+      - 'office-ui-fabric-react!IButtonGridCellProps#onRenderItem:member'
+      - 'office-ui-fabric-react!IButtonGridCellProps#onWheel:member'
+      - 'office-ui-fabric-react!IButtonGridCellProps#role:member'
+      - 'office-ui-fabric-react!IButtonGridCellProps#selected:member'
+  - uid: 'office-ui-fabric-react!IButtonGridCellProps#cellDisabledStyle:member'
     summary: 'Optional, the CSS class used for when the cell is disabled'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: cellDisabledStyle
+    fullName: cellDisabledStyle
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'cellDisabledStyle?: string[];'
       return:
-        type: 'string[]'
-  - name: cellIsSelectedStyle
-    uid: 'office-ui-fabric-react!IButtonGridCellProps#cellIsSelectedStyle:member'
-    package: office-ui-fabric-react!
-    fullName: cellIsSelectedStyle
+        type:
+          - 'string[]'
+  - uid: 'office-ui-fabric-react!IButtonGridCellProps#cellIsSelectedStyle:member'
     summary: 'Optional, the CSS class used for when the cell is selected'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: cellIsSelectedStyle
+    fullName: cellIsSelectedStyle
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'cellIsSelectedStyle?: string[];'
       return:
-        type: 'string[]'
-  - name: className
-    uid: 'office-ui-fabric-react!IButtonGridCellProps#className:member'
-    package: office-ui-fabric-react!
-    fullName: className
+        type:
+          - 'string[]'
+  - uid: 'office-ui-fabric-react!IButtonGridCellProps#className:member'
     summary: 'Optional, className(s) to apply'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: className
+    fullName: className
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'className?: string;'
       return:
-        type: string
-  - name: disabled
-    uid: 'office-ui-fabric-react!IButtonGridCellProps#disabled:member'
-    package: office-ui-fabric-react!
-    fullName: disabled
+        type:
+          - string
+  - uid: 'office-ui-fabric-react!IButtonGridCellProps#disabled:member'
     summary: 'Optional, if the this option should be diabled'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: disabled
+    fullName: disabled
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'disabled?: boolean;'
       return:
-        type: boolean
-  - name: getClassNames
-    uid: 'office-ui-fabric-react!IButtonGridCellProps#getClassNames:member'
-    package: office-ui-fabric-react!
-    fullName: getClassNames
+        type:
+          - boolean
+  - uid: 'office-ui-fabric-react!IButtonGridCellProps#getClassNames:member'
     summary: >-
-      Method to provide the classnames to style a button. The default value for
-      this prop is the getClassnames func defined in BaseButton.classnames.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Method to provide the classnames to style a button. The default value for this prop is the getClassnames func
+      defined in BaseButton.classnames.
+    name: getClassNames
+    fullName: getClassNames
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: >-
-        getClassNames?: (theme: ITheme, className: string, variantClassName:
-        string, iconClassName: string | undefined, menuIconClassName: string |
-        undefined, disabled: boolean, checked: boolean, expanded: boolean,
-        isSplit: boolean | undefined) => IButtonClassNames;
+        getClassNames?: (theme: ITheme, className: string, variantClassName: string, iconClassName: string | undefined,
+        menuIconClassName: string | undefined, disabled: boolean, checked: boolean, expanded: boolean, isSplit: boolean
+        | undefined) => IButtonClassNames;
       return:
-        type: >-
-          (theme: ITheme, className: string, variantClassName: string,
-          iconClassName: string | undefined, menuIconClassName: string |
-          undefined, disabled: boolean, checked: boolean, expanded: boolean,
-          isSplit: boolean | undefined) =&gt; IButtonClassNames
-  - name: id
-    uid: 'office-ui-fabric-react!IButtonGridCellProps#id:member'
-    package: office-ui-fabric-react!
-    fullName: id
+        type:
+          - >-
+            (theme: ITheme, className: string, variantClassName: string, iconClassName: string | undefined,
+            menuIconClassName: string | undefined, disabled: boolean, checked: boolean, expanded: boolean, isSplit:
+            boolean | undefined) => IButtonClassNames
+  - uid: 'office-ui-fabric-react!IButtonGridCellProps#id:member'
     summary: Arbitrary unique string associated with this option
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'id: string;'
       return:
-        type: string
-  - name: index
-    uid: 'office-ui-fabric-react!IButtonGridCellProps#index:member'
-    package: office-ui-fabric-react!
-    fullName: index
+        type:
+          - string
+  - uid: 'office-ui-fabric-react!IButtonGridCellProps#index:member'
     summary: Index for this option
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: index
+    fullName: index
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'index?: number;'
       return:
-        type: number
-  - name: item
-    uid: 'office-ui-fabric-react!IButtonGridCellProps#item:member'
-    package: office-ui-fabric-react!
-    fullName: item
+        type:
+          - number
+  - uid: 'office-ui-fabric-react!IButtonGridCellProps#item:member'
     summary: The option that will be made available to the user
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: item
+    fullName: item
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'item: T;'
       return:
-        type: T
-  - name: label
-    uid: 'office-ui-fabric-react!IButtonGridCellProps#label:member'
-    package: office-ui-fabric-react!
+        type:
+          - T
+  - uid: 'office-ui-fabric-react!IButtonGridCellProps#label:member'
+    summary: 'The label for this item. Visible text if this item is a header, tooltip if is this item is normal'
+    name: label
     fullName: label
-    summary: >-
-      The label for this item. Visible text if this item is a header, tooltip if
-      is this item is normal
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'label?: string;'
       return:
-        type: string
-  - name: onClick
-    uid: 'office-ui-fabric-react!IButtonGridCellProps#onClick:member'
-    package: office-ui-fabric-react!
-    fullName: onClick
+        type:
+          - string
+  - uid: 'office-ui-fabric-react!IButtonGridCellProps#onClick:member'
     summary: The on click handler
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onClick
+    fullName: onClick
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onClick?: (item: T) => void;'
       return:
-        type: '(item: T) =&gt; void'
-  - name: onFocus
-    uid: 'office-ui-fabric-react!IButtonGridCellProps#onFocus:member'
-    package: office-ui-fabric-react!
-    fullName: onFocus
+        type:
+          - '(item: T) => void'
+  - uid: 'office-ui-fabric-react!IButtonGridCellProps#onFocus:member'
     summary: 'Optional, the onFocus handler'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onFocus
+    fullName: onFocus
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onFocus?: (item: T) => void;'
       return:
-        type: '(item: T) =&gt; void'
-  - name: onHover
-    uid: 'office-ui-fabric-react!IButtonGridCellProps#onHover:member'
-    package: office-ui-fabric-react!
-    fullName: onHover
+        type:
+          - '(item: T) => void'
+  - uid: 'office-ui-fabric-react!IButtonGridCellProps#onHover:member'
     summary: 'Optional, the onHover handler'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onHover
+    fullName: onHover
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onHover?: (item?: T) => void;'
       return:
-        type: '(item?: T) =&gt; void'
-  - name: onKeyDown
-    uid: 'office-ui-fabric-react!IButtonGridCellProps#onKeyDown:member'
-    package: office-ui-fabric-react!
-    fullName: onKeyDown
+        type:
+          - '(item?: T) => void'
+  - uid: 'office-ui-fabric-react!IButtonGridCellProps#onKeyDown:member'
     summary: 'Optional, onkeydown handler'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onKeyDown
+    fullName: onKeyDown
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onKeyDown?: (ev: React.KeyboardEvent<HTMLButtonElement>) => void;'
       return:
-        type: '(ev: React.KeyboardEvent&lt;HTMLButtonElement&gt;) =&gt; void'
-  - name: onMouseEnter
-    uid: 'office-ui-fabric-react!IButtonGridCellProps#onMouseEnter:member'
-    package: office-ui-fabric-react!
-    fullName: onMouseEnter
+        type:
+          - '(ev: React.KeyboardEvent<HTMLButtonElement>) => void'
+  - uid: 'office-ui-fabric-react!IButtonGridCellProps#onMouseEnter:member'
     summary: 'Optional, mouseEnter handler.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onMouseEnter
+    fullName: onMouseEnter
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onMouseEnter?: (ev: React.MouseEvent<HTMLButtonElement>) => boolean;'
       return:
-        type: '(ev: React.MouseEvent&lt;HTMLButtonElement&gt;) =&gt; boolean'
-  - name: onMouseLeave
-    uid: 'office-ui-fabric-react!IButtonGridCellProps#onMouseLeave:member'
-    package: office-ui-fabric-react!
-    fullName: onMouseLeave
+        type:
+          - '(ev: React.MouseEvent<HTMLButtonElement>) => boolean'
+  - uid: 'office-ui-fabric-react!IButtonGridCellProps#onMouseLeave:member'
     summary: 'Optional, mouseLeave handler'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onMouseLeave
+    fullName: onMouseLeave
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onMouseLeave?: (ev: React.MouseEvent<HTMLButtonElement>) => void;'
       return:
-        type: '(ev: React.MouseEvent&lt;HTMLButtonElement&gt;) =&gt; void'
-  - name: onMouseMove
-    uid: 'office-ui-fabric-react!IButtonGridCellProps#onMouseMove:member'
-    package: office-ui-fabric-react!
-    fullName: onMouseMove
+        type:
+          - '(ev: React.MouseEvent<HTMLButtonElement>) => void'
+  - uid: 'office-ui-fabric-react!IButtonGridCellProps#onMouseMove:member'
     summary: 'Optional, mouseMove handler'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onMouseMove
+    fullName: onMouseMove
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onMouseMove?: (ev: React.MouseEvent<HTMLButtonElement>) => boolean;'
       return:
-        type: '(ev: React.MouseEvent&lt;HTMLButtonElement&gt;) =&gt; boolean'
-  - name: onRenderItem
-    uid: 'office-ui-fabric-react!IButtonGridCellProps#onRenderItem:member'
-    package: office-ui-fabric-react!
-    fullName: onRenderItem
+        type:
+          - '(ev: React.MouseEvent<HTMLButtonElement>) => boolean'
+  - uid: 'office-ui-fabric-react!IButtonGridCellProps#onRenderItem:member'
     summary: The render callback to handle rendering the item
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onRenderItem
+    fullName: onRenderItem
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onRenderItem: (item: T) => JSX.Element;'
       return:
-        type: '(item: T) =&gt; JSX.Element'
-  - name: onWheel
-    uid: 'office-ui-fabric-react!IButtonGridCellProps#onWheel:member'
-    package: office-ui-fabric-react!
-    fullName: onWheel
+        type:
+          - '(item: T) => JSX.Element'
+  - uid: 'office-ui-fabric-react!IButtonGridCellProps#onWheel:member'
     summary: 'Optional, onWheel handler'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onWheel
+    fullName: onWheel
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onWheel?: (ev: React.MouseEvent<HTMLButtonElement>) => void;'
       return:
-        type: '(ev: React.MouseEvent&lt;HTMLButtonElement&gt;) =&gt; void'
-  - name: role
-    uid: 'office-ui-fabric-react!IButtonGridCellProps#role:member'
-    package: office-ui-fabric-react!
-    fullName: role
+        type:
+          - '(ev: React.MouseEvent<HTMLButtonElement>) => void'
+  - uid: 'office-ui-fabric-react!IButtonGridCellProps#role:member'
     summary: The accessible role for this option
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: role
+    fullName: role
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'role?: string;'
       return:
-        type: string
-  - name: selected
-    uid: 'office-ui-fabric-react!IButtonGridCellProps#selected:member'
-    package: office-ui-fabric-react!
-    fullName: selected
+        type:
+          - string
+  - uid: 'office-ui-fabric-react!IButtonGridCellProps#selected:member'
     summary: 'Optional, if the cell is currently selected'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: selected
+    fullName: selected
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'selected?: boolean;'
       return:
-        type: boolean
+        type:
+          - boolean

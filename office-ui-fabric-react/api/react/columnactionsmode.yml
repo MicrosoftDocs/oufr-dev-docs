@@ -1,29 +1,41 @@
-### YamlMime:TSEnum
-name: ColumnActionsMode
-uid: '@fluentui/react!ColumnActionsMode:enum'
-package: '@fluentui/react!'
-fullName: ColumnActionsMode
-summary: >-
-  Enum to describe how a particular column header behaves. This is used to to
-  specify the property `IColumn.columnActionsMode`<!-- -->. If
-  `IColumn.columnActionsMode` is undefined, it's equivalent to
-  `ColumnActionsMode.clickable`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-fields:
-  - name: clickable
-    uid: '@fluentui/react!ColumnActionsMode.clickable:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react!ColumnActionsMode:enum'
+    summary: >-
+      Enum to describe how a particular column header behaves. This is used to to specify the property
+      `IColumn.columnActionsMode`<!-- -->. If `IColumn.columnActionsMode` is undefined, it's equivalent to
+      `ColumnActionsMode.clickable`<!-- -->.
+    name: ColumnActionsMode
+    fullName: ColumnActionsMode
+    langs:
+      - typeScript
+    type: enum
     package: '@fluentui/react!'
+    children:
+      - '@fluentui/react!ColumnActionsMode.clickable:member'
+      - '@fluentui/react!ColumnActionsMode.disabled:member'
+      - '@fluentui/react!ColumnActionsMode.hasDropdown:member'
+  - uid: '@fluentui/react!ColumnActionsMode.clickable:member'
     summary: Renders the column header as clickable. Default value.
-    numericValue: 1
-  - name: disabled
-    uid: '@fluentui/react!ColumnActionsMode.disabled:member'
-    package: '@fluentui/react!'
+    name: clickable
+    fullName: clickable
+    langs:
+      - typeScript
+    type: field
+    numericValue: '1'
+  - uid: '@fluentui/react!ColumnActionsMode.disabled:member'
     summary: Renders the column header as disabled.
-    numericValue: 0
-  - name: hasDropdown
-    uid: '@fluentui/react!ColumnActionsMode.hasDropdown:member'
-    package: '@fluentui/react!'
+    name: disabled
+    fullName: disabled
+    langs:
+      - typeScript
+    type: field
+    numericValue: '0'
+  - uid: '@fluentui/react!ColumnActionsMode.hasDropdown:member'
     summary: Renders the column header as clickable and displays the dropdown chevron.
-    numericValue: 2
+    name: hasDropdown
+    fullName: hasDropdown
+    langs:
+      - typeScript
+    type: field
+    numericValue: '2'

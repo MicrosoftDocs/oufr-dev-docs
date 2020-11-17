@@ -1,41 +1,41 @@
-### YamlMime:TSType
-name: IGroupedList
-uid: '@fluentui/react!IGroupedList:interface'
-package: '@fluentui/react!'
-fullName: IGroupedList
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: forceUpdate
-    uid: '@fluentui/react!IGroupedList#forceUpdate:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react!IGroupedList:interface'
+    name: IGroupedList
+    fullName: IGroupedList
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'IList '
     package: '@fluentui/react!'
-    fullName: forceUpdate
+    children:
+      - '@fluentui/react!IGroupedList#forceUpdate:member'
+      - '@fluentui/react!IGroupedList#toggleCollapseAll:member'
+  - uid: '@fluentui/react!IGroupedList#forceUpdate:member'
     summary: >-
-      Ensures that the list content is updated. Call this in cases where the
-      list props don't change, but the list still needs to be re-evaluated. For
-      example, if a sizer bar is adjusted and causes the list width to change,
-      you can call this to force a re-evaluation. Be aware that this can be an
-      expensive operation and should be done sparingly.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Ensures that the list content is updated. Call this in cases where the list props don't change, but the list still
+      needs to be re-evaluated. For example, if a sizer bar is adjusted and causes the list width to change, you can
+      call this to force a re-evaluation. Be aware that this can be an expensive operation and should be done sparingly.
+    name: forceUpdate
+    fullName: forceUpdate
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'forceUpdate: () => void;'
       return:
-        type: () =&gt; void
-  - name: toggleCollapseAll
-    uid: '@fluentui/react!IGroupedList#toggleCollapseAll:member'
-    package: '@fluentui/react!'
-    fullName: toggleCollapseAll
+        type:
+          - () => void
+  - uid: '@fluentui/react!IGroupedList#toggleCollapseAll:member'
     summary: Toggles the collapsed state of all the groups in the list.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: toggleCollapseAll
+    fullName: toggleCollapseAll
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'toggleCollapseAll: (allCollapsed: boolean) => void;'
       return:
-        type: '(allCollapsed: boolean) =&gt; void'
-extends: 'IList '
+        type:
+          - '(allCollapsed: boolean) => void'

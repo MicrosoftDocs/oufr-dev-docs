@@ -1,37 +1,37 @@
-### YamlMime:TSType
-name: ComponentStyles
-uid: '@fluentui/theme!ComponentStyles:interface'
-package: '@fluentui/theme!'
-fullName: ComponentStyles
-summary: Component-level styles and variants.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: styles
-    uid: '@fluentui/theme!ComponentStyles#styles:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/theme!ComponentStyles:interface'
+    summary: Component-level styles and variants.
+    name: ComponentStyles
+    fullName: ComponentStyles
+    langs:
+      - typeScript
+    type: interface
     package: '@fluentui/theme!'
-    fullName: styles
+    children:
+      - '@fluentui/theme!ComponentStyles#styles:member'
+      - '@fluentui/theme!ComponentStyles#variants:member'
+  - uid: '@fluentui/theme!ComponentStyles#styles:member'
     summary: styles prop for a component.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: styles
+    fullName: styles
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'styles?: IStyleFunctionOrObject<any, any>;'
       return:
-        type: 'IStyleFunctionOrObject&lt;any, any&gt;'
-  - name: variants
-    uid: '@fluentui/theme!ComponentStyles#variants:member'
-    package: '@fluentui/theme!'
+        type:
+          - 'IStyleFunctionOrObject<any, any>'
+  - uid: '@fluentui/theme!ComponentStyles#variants:member'
+    summary: The variants property is still in an experimental phase. This is only applied by `ThemeProvider`<!-- -->.
+    name: variants
     fullName: variants
-    summary: >-
-      The variants property is still in an experimental phase. This is only
-      applied by `ThemeProvider`<!-- -->.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'variants?: Variants;'
       return:
-        type: Variants
+        type:
+          - Variants

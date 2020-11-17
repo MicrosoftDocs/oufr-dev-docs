@@ -1,301 +1,312 @@
-### YamlMime:TSType
-name: IModalProps
-uid: '@fluentui/react-internal!IModalProps:interface'
-package: '@fluentui/react-internal!'
-fullName: IModalProps
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: allowTouchBodyScroll
-    uid: '@fluentui/react-internal!IModalProps#allowTouchBodyScroll:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-internal!IModalProps:interface'
+    name: IModalProps
+    fullName: IModalProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - React.HTMLAttributes<HTMLElement>
+      - React.RefAttributes<HTMLDivElement>
+      - 'IAccessiblePopupProps '
     package: '@fluentui/react-internal!'
+    children:
+      - '@fluentui/react-internal!IModalProps#allowTouchBodyScroll:member'
+      - '@fluentui/react-internal!IModalProps#className:member'
+      - '@fluentui/react-internal!IModalProps#componentRef:member'
+      - '@fluentui/react-internal!IModalProps#containerClassName:member'
+      - '@fluentui/react-internal!IModalProps#dragOptions:member'
+      - '@fluentui/react-internal!IModalProps#enableAriaHiddenSiblings:member'
+      - '@fluentui/react-internal!IModalProps#isBlocking:member'
+      - '@fluentui/react-internal!IModalProps#isDarkOverlay:member'
+      - '@fluentui/react-internal!IModalProps#isModeless:member'
+      - '@fluentui/react-internal!IModalProps#isOpen:member'
+      - '@fluentui/react-internal!IModalProps#layerProps:member'
+      - '@fluentui/react-internal!IModalProps#onDismiss:member'
+      - '@fluentui/react-internal!IModalProps#onDismissed:member'
+      - '@fluentui/react-internal!IModalProps#onLayerDidMount:member'
+      - '@fluentui/react-internal!IModalProps#overlay:member'
+      - '@fluentui/react-internal!IModalProps#responsiveMode:member'
+      - '@fluentui/react-internal!IModalProps#scrollableContentClassName:member'
+      - '@fluentui/react-internal!IModalProps#styles:member'
+      - '@fluentui/react-internal!IModalProps#subtitleAriaId:member'
+      - '@fluentui/react-internal!IModalProps#theme:member'
+      - '@fluentui/react-internal!IModalProps#titleAriaId:member'
+      - '@fluentui/react-internal!IModalProps#topOffsetFixed:member'
+  - uid: '@fluentui/react-internal!IModalProps#allowTouchBodyScroll:member'
+    summary: Allow body scroll on content and overlay on touch devices. Changing after mounting has no effect.
+    name: allowTouchBodyScroll
     fullName: allowTouchBodyScroll
-    summary: >-
-      Allow body scroll on content and overlay on touch devices. Changing after
-      mounting has no effect.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'allowTouchBodyScroll?: boolean;'
       return:
-        type: boolean
-  - name: className
-    uid: '@fluentui/react-internal!IModalProps#className:member'
-    package: '@fluentui/react-internal!'
-    fullName: className
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!IModalProps#className:member'
     summary: Optional class name to be added to the root class
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: className
+    fullName: className
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'className?: string;'
       return:
-        type: string
-  - name: componentRef
-    uid: '@fluentui/react-internal!IModalProps#componentRef:member'
-    package: '@fluentui/react-internal!'
-    fullName: componentRef
+        type:
+          - string
+  - uid: '@fluentui/react-internal!IModalProps#componentRef:member'
     summary: >-
-      Optional callback to access the IDialog interface. Use this instead of ref
-      for accessing the public methods and properties of the component.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Optional callback to access the IDialog interface. Use this instead of ref for accessing the public methods and
+      properties of the component.
+    name: componentRef
+    fullName: componentRef
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'componentRef?: IRefObject<IModal>;'
       return:
-        type: IRefObject&lt;IModal&gt;
-  - name: containerClassName
-    uid: '@fluentui/react-internal!IModalProps#containerClassName:member'
-    package: '@fluentui/react-internal!'
-    fullName: containerClassName
+        type:
+          - IRefObject<IModal>
+  - uid: '@fluentui/react-internal!IModalProps#containerClassName:member'
     summary: Optional override for container class
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: containerClassName
+    fullName: containerClassName
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'containerClassName?: string;'
       return:
-        type: string
-  - name: dragOptions
-    uid: '@fluentui/react-internal!IModalProps#dragOptions:member'
-    package: '@fluentui/react-internal!'
-    fullName: dragOptions
+        type:
+          - string
+  - uid: '@fluentui/react-internal!IModalProps#dragOptions:member'
     summary: The options to make the modal draggable
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: dragOptions
+    fullName: dragOptions
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'dragOptions?: IDragOptions;'
       return:
-        type: IDragOptions
-  - name: enableAriaHiddenSiblings
-    uid: '@fluentui/react-internal!IModalProps#enableAriaHiddenSiblings:member'
-    package: '@fluentui/react-internal!'
-    fullName: enableAriaHiddenSiblings
+        type:
+          - IDragOptions
+  - uid: '@fluentui/react-internal!IModalProps#enableAriaHiddenSiblings:member'
     summary: >-
-      Puts aria-hidden=true on all non-ancestors of the current modal, for
-      screen readers. This is an experimental feature that will be graduated to
-      default behavior after testing. This flag will be removed with the next
-      major release.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Puts aria-hidden=true on all non-ancestors of the current modal, for screen readers. This is an experimental
+      feature that will be graduated to default behavior after testing. This flag will be removed with the next major
+      release.
+    name: enableAriaHiddenSiblings
+    fullName: enableAriaHiddenSiblings
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'enableAriaHiddenSiblings?: boolean;'
       return:
-        type: boolean
-  - name: isBlocking
-    uid: '@fluentui/react-internal!IModalProps#isBlocking:member'
-    package: '@fluentui/react-internal!'
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!IModalProps#isBlocking:member'
+    summary: Whether the dialog can be light dismissed by clicking outside the dialog (on the overlay).
+    name: isBlocking
     fullName: isBlocking
-    summary: >-
-      Whether the dialog can be light dismissed by clicking outside the dialog
-      (on the overlay).
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'isBlocking?: boolean;'
       return:
-        type: boolean
-  - name: isDarkOverlay
-    uid: '@fluentui/react-internal!IModalProps#isDarkOverlay:member'
-    package: '@fluentui/react-internal!'
-    fullName: isDarkOverlay
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!IModalProps#isDarkOverlay:member'
     summary: Whether the overlay is dark themed.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: isDarkOverlay
+    fullName: isDarkOverlay
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'isDarkOverlay?: boolean;'
       return:
-        type: boolean
-  - name: isModeless
-    uid: '@fluentui/react-internal!IModalProps#isModeless:member'
-    package: '@fluentui/react-internal!'
-    fullName: isModeless
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!IModalProps#isModeless:member'
     summary: >-
-      Whether the dialog should be modeless (e.g. not dismiss when
-      focusing/clicking outside of the dialog). if true: isBlocking is ignored,
-      there will be no overlay (isDarkOverlay is ignored),
-      isClickableOutsideFocusTrap is true, and forceFocusInsideTrap is false
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Whether the dialog should be modeless (e.g. not dismiss when focusing/clicking outside of the dialog). if true:
+      isBlocking is ignored, there will be no overlay (isDarkOverlay is ignored), isClickableOutsideFocusTrap is true,
+      and forceFocusInsideTrap is false
+    name: isModeless
+    fullName: isModeless
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'isModeless?: boolean;'
       return:
-        type: boolean
-  - name: isOpen
-    uid: '@fluentui/react-internal!IModalProps#isOpen:member'
-    package: '@fluentui/react-internal!'
-    fullName: isOpen
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!IModalProps#isOpen:member'
     summary: Whether the dialog is displayed.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: isOpen
+    fullName: isOpen
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'isOpen?: boolean;'
       return:
-        type: boolean
-  - name: layerProps
-    uid: '@fluentui/react-internal!IModalProps#layerProps:member'
-    package: '@fluentui/react-internal!'
-    fullName: layerProps
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!IModalProps#layerProps:member'
     summary: Defines an optional set of props to be passed through to Layer
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: layerProps
+    fullName: layerProps
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'layerProps?: ILayerProps;'
       return:
-        type: ILayerProps
-  - name: onDismiss
-    uid: '@fluentui/react-internal!IModalProps#onDismiss:member'
-    package: '@fluentui/react-internal!'
+        type:
+          - ILayerProps
+  - uid: '@fluentui/react-internal!IModalProps#onDismiss:member'
+    summary: 'A callback function for when the Modal is dismissed light dismiss, before the animation completes.'
+    name: onDismiss
     fullName: onDismiss
-    summary: >-
-      A callback function for when the Modal is dismissed light dismiss, before
-      the animation completes.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onDismiss?: (ev?: React.MouseEvent<HTMLButtonElement>) => any;'
       return:
-        type: '(ev?: React.MouseEvent&lt;HTMLButtonElement&gt;) =&gt; any'
-  - name: onDismissed
-    uid: '@fluentui/react-internal!IModalProps#onDismissed:member'
-    package: '@fluentui/react-internal!'
+        type:
+          - '(ev?: React.MouseEvent<HTMLButtonElement>) => any'
+  - uid: '@fluentui/react-internal!IModalProps#onDismissed:member'
+    summary: A callback function which is called after the Modal is dismissed and the animation is complete.
+    name: onDismissed
     fullName: onDismissed
-    summary: >-
-      A callback function which is called after the Modal is dismissed and the
-      animation is complete.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onDismissed?: () => any;'
       return:
-        type: () =&gt; any
-  - name: onLayerDidMount
-    uid: '@fluentui/react-internal!IModalProps#onLayerDidMount:member'
-    package: '@fluentui/react-internal!'
+        type:
+          - () => any
+  - uid: '@fluentui/react-internal!IModalProps#onLayerDidMount:member'
+    summary: A callback function for when the Modal content is mounted on the overlay layer
+    deprecated:
+      content: Use layerProps.onLayerDidMount instead
+    name: onLayerDidMount
     fullName: onLayerDidMount
-    summary: >-
-      A callback function for when the Modal content is mounted on the overlay
-      layer
-    remarks: ''
-    isPreview: false
-    isDeprecated: true
-    customDeprecatedMessage: Use layerProps.onLayerDidMount instead
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onLayerDidMount?: () => void;'
       return:
-        type: () =&gt; void
-  - name: overlay
-    uid: '@fluentui/react-internal!IModalProps#overlay:member'
-    package: '@fluentui/react-internal!'
-    fullName: overlay
+        type:
+          - () => void
+  - uid: '@fluentui/react-internal!IModalProps#overlay:member'
     summary: Defines an optional set of props to be passed through to Overlay
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: overlay
+    fullName: overlay
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'overlay?: IOverlayProps;'
       return:
-        type: IOverlayProps
-  - name: responsiveMode
-    uid: '@fluentui/react-internal!IModalProps#responsiveMode:member'
-    package: '@fluentui/react-internal!'
-    fullName: responsiveMode
+        type:
+          - IOverlayProps
+  - uid: '@fluentui/react-internal!IModalProps#responsiveMode:member'
     summary: The specified responsiveMode value for Modal to use.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: responsiveMode
+    fullName: responsiveMode
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'responsiveMode?: ResponsiveMode;'
       return:
-        type: ResponsiveMode
-  - name: scrollableContentClassName
-    uid: '@fluentui/react-internal!IModalProps#scrollableContentClassName:member'
-    package: '@fluentui/react-internal!'
-    fullName: scrollableContentClassName
+        type:
+          - ResponsiveMode
+  - uid: '@fluentui/react-internal!IModalProps#scrollableContentClassName:member'
     summary: Optional override for scrollable content class
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: scrollableContentClassName
+    fullName: scrollableContentClassName
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'scrollableContentClassName?: string;'
       return:
-        type: string
-  - name: styles
-    uid: '@fluentui/react-internal!IModalProps#styles:member'
-    package: '@fluentui/react-internal!'
+        type:
+          - string
+  - uid: '@fluentui/react-internal!IModalProps#styles:member'
+    summary: Call to provide customized styling that will layer on top of the variant rules.
+    name: styles
     fullName: styles
-    summary: >-
-      Call to provide customized styling that will layer on top of the variant
-      rules.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'styles?: IStyleFunctionOrObject<IModalStyleProps, IModalStyles>;'
       return:
-        type: 'IStyleFunctionOrObject&lt;IModalStyleProps, IModalStyles&gt;'
-  - name: subtitleAriaId
-    uid: '@fluentui/react-internal!IModalProps#subtitleAriaId:member'
-    package: '@fluentui/react-internal!'
-    fullName: subtitleAriaId
+        type:
+          - 'IStyleFunctionOrObject<IModalStyleProps, IModalStyles>'
+  - uid: '@fluentui/react-internal!IModalProps#subtitleAriaId:member'
     summary: 'ARIA id for the subtitle of the Modal, if any'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: subtitleAriaId
+    fullName: subtitleAriaId
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'subtitleAriaId?: string;'
       return:
-        type: string
-  - name: theme
-    uid: '@fluentui/react-internal!IModalProps#theme:member'
-    package: '@fluentui/react-internal!'
-    fullName: theme
+        type:
+          - string
+  - uid: '@fluentui/react-internal!IModalProps#theme:member'
     summary: Theme provided by High-Order Component.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'theme?: ITheme;'
       return:
-        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
-  - name: titleAriaId
-    uid: '@fluentui/react-internal!IModalProps#titleAriaId:member'
-    package: '@fluentui/react-internal!'
-    fullName: titleAriaId
+        type:
+          - '@fluentui/theme!ITheme:interface'
+  - uid: '@fluentui/react-internal!IModalProps#titleAriaId:member'
     summary: 'ARIA id for the title of the Modal, if any'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: titleAriaId
+    fullName: titleAriaId
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'titleAriaId?: string;'
       return:
-        type: string
-  - name: topOffsetFixed
-    uid: '@fluentui/react-internal!IModalProps#topOffsetFixed:member'
-    package: '@fluentui/react-internal!'
-    fullName: topOffsetFixed
+        type:
+          - string
+  - uid: '@fluentui/react-internal!IModalProps#topOffsetFixed:member'
     summary: >-
-      Whether the modal should have top offset fixed once opened and expand from
-      the bottom only when the content changes dynamically.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Whether the modal should have top offset fixed once opened and expand from the bottom only when the content
+      changes dynamically.
+    name: topOffsetFixed
+    fullName: topOffsetFixed
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'topOffsetFixed?: boolean;'
       return:
-        type: boolean
-extends: React.HTMLAttributes&lt;HTMLElement&gt;
+        type:
+          - boolean

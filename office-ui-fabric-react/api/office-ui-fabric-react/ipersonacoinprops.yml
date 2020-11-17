@@ -1,54 +1,51 @@
-### YamlMime:TSType
-name: IPersonaCoinProps
-uid: 'office-ui-fabric-react!IPersonaCoinProps:interface'
-package: office-ui-fabric-react!
-fullName: IPersonaCoinProps
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: className
-    uid: 'office-ui-fabric-react!IPersonaCoinProps#className:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-ui-fabric-react!IPersonaCoinProps:interface'
+    name: IPersonaCoinProps
+    fullName: IPersonaCoinProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'IPersonaSharedProps '
     package: office-ui-fabric-react!
-    fullName: className
+    children:
+      - 'office-ui-fabric-react!IPersonaCoinProps#className:member'
+      - 'office-ui-fabric-react!IPersonaCoinProps#componentRef:member'
+      - 'office-ui-fabric-react!IPersonaCoinProps#styles:member'
+  - uid: 'office-ui-fabric-react!IPersonaCoinProps#className:member'
     summary: Additional css class to apply to the PersonaCoin
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: className
+    fullName: className
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'className?: string;'
       return:
-        type: string
-  - name: componentRef
-    uid: 'office-ui-fabric-react!IPersonaCoinProps#componentRef:member'
-    package: office-ui-fabric-react!
-    fullName: componentRef
+        type:
+          - string
+  - uid: 'office-ui-fabric-react!IPersonaCoinProps#componentRef:member'
     summary: Gets the component ref.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: componentRef
+    fullName: componentRef
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'componentRef?: IRefObject<{}>;'
       return:
-        type: 'IRefObject&lt;{}&gt;'
-  - name: styles
-    uid: 'office-ui-fabric-react!IPersonaCoinProps#styles:member'
-    package: office-ui-fabric-react!
+        type:
+          - 'IRefObject<{}>'
+  - uid: 'office-ui-fabric-react!IPersonaCoinProps#styles:member'
+    summary: Call to provide customized styling that will layer on top of the variant rules
+    name: styles
     fullName: styles
-    summary: >-
-      Call to provide customized styling that will layer on top of the variant
-      rules
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        styles?: IStyleFunctionOrObject<IPersonaCoinStyleProps,
-        IPersonaCoinStyles>;
+      content: 'styles?: IStyleFunctionOrObject<IPersonaCoinStyleProps, IPersonaCoinStyles>;'
       return:
-        type: >-
-          IStyleFunctionOrObject&lt;IPersonaCoinStyleProps,
-          IPersonaCoinStyles&gt;
-extends: 'IPersonaSharedProps '
+        type:
+          - 'IStyleFunctionOrObject<IPersonaCoinStyleProps, IPersonaCoinStyles>'

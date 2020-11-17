@@ -1,72 +1,95 @@
-### YamlMime:TSType
-name: IGroupedListSectionProps
-uid: 'office-ui-fabric-react!IGroupedListSectionProps:interface'
-package: office-ui-fabric-react!
-fullName: IGroupedListSectionProps
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: compact
-    uid: 'office-ui-fabric-react!IGroupedListSectionProps#compact:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-ui-fabric-react!IGroupedListSectionProps:interface'
+    name: IGroupedListSectionProps
+    fullName: IGroupedListSectionProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'React.ClassAttributes<GroupedListSection> '
     package: office-ui-fabric-react!
-    fullName: compact
+    children:
+      - 'office-ui-fabric-react!IGroupedListSectionProps#compact:member'
+      - 'office-ui-fabric-react!IGroupedListSectionProps#componentRef:member'
+      - 'office-ui-fabric-react!IGroupedListSectionProps#dragDropEvents:member'
+      - 'office-ui-fabric-react!IGroupedListSectionProps#dragDropHelper:member'
+      - 'office-ui-fabric-react!IGroupedListSectionProps#eventsToRegister:member'
+      - 'office-ui-fabric-react!IGroupedListSectionProps#footerProps:member'
+      - 'office-ui-fabric-react!IGroupedListSectionProps#getGroupItemLimit:member'
+      - 'office-ui-fabric-react!IGroupedListSectionProps#group:member'
+      - 'office-ui-fabric-react!IGroupedListSectionProps#groupedListClassNames:member'
+      - 'office-ui-fabric-react!IGroupedListSectionProps#groupIndex:member'
+      - 'office-ui-fabric-react!IGroupedListSectionProps#groupNestingDepth:member'
+      - 'office-ui-fabric-react!IGroupedListSectionProps#groupProps:member'
+      - 'office-ui-fabric-react!IGroupedListSectionProps#groups:member'
+      - 'office-ui-fabric-react!IGroupedListSectionProps#headerProps:member'
+      - 'office-ui-fabric-react!IGroupedListSectionProps#items:member'
+      - 'office-ui-fabric-react!IGroupedListSectionProps#listProps:member'
+      - 'office-ui-fabric-react!IGroupedListSectionProps#onRenderCell:member'
+      - 'office-ui-fabric-react!IGroupedListSectionProps#onRenderGroupFooter:member'
+      - 'office-ui-fabric-react!IGroupedListSectionProps#onRenderGroupHeader:member'
+      - 'office-ui-fabric-react!IGroupedListSectionProps#onRenderGroupShowAll:member'
+      - 'office-ui-fabric-react!IGroupedListSectionProps#onShouldVirtualize:member'
+      - 'office-ui-fabric-react!IGroupedListSectionProps#selection:member'
+      - 'office-ui-fabric-react!IGroupedListSectionProps#selectionMode:member'
+      - 'office-ui-fabric-react!IGroupedListSectionProps#showAllProps:member'
+      - 'office-ui-fabric-react!IGroupedListSectionProps#viewport:member'
+  - uid: 'office-ui-fabric-react!IGroupedListSectionProps#compact:member'
     summary: Whether to render in compact mode
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: compact
+    fullName: compact
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'compact?: boolean;'
       return:
-        type: boolean
-  - name: componentRef
-    uid: 'office-ui-fabric-react!IGroupedListSectionProps#componentRef:member'
-    package: office-ui-fabric-react!
-    fullName: componentRef
+        type:
+          - boolean
+  - uid: 'office-ui-fabric-react!IGroupedListSectionProps#componentRef:member'
     summary: Gets the component ref.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: componentRef
+    fullName: componentRef
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'componentRef?: () => void;'
       return:
-        type: () =&gt; void
-  - name: dragDropEvents
-    uid: 'office-ui-fabric-react!IGroupedListSectionProps#dragDropEvents:member'
-    package: office-ui-fabric-react!
-    fullName: dragDropEvents
+        type:
+          - () => void
+  - uid: 'office-ui-fabric-react!IGroupedListSectionProps#dragDropEvents:member'
     summary: Map of callback functions related to drag and drop functionality.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: dragDropEvents
+    fullName: dragDropEvents
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'dragDropEvents?: IDragDropEvents;'
       return:
-        type: IDragDropEvents
-  - name: dragDropHelper
-    uid: 'office-ui-fabric-react!IGroupedListSectionProps#dragDropHelper:member'
-    package: office-ui-fabric-react!
-    fullName: dragDropHelper
+        type:
+          - IDragDropEvents
+  - uid: 'office-ui-fabric-react!IGroupedListSectionProps#dragDropHelper:member'
     summary: helper to manage drag/drop across item rows and groups
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: dragDropHelper
+    fullName: dragDropHelper
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'dragDropHelper?: IDragDropHelper;'
       return:
-        type: IDragDropHelper
-  - name: eventsToRegister
-    uid: 'office-ui-fabric-react!IGroupedListSectionProps#eventsToRegister:member'
-    package: office-ui-fabric-react!
+        type:
+          - IDragDropHelper
+  - uid: 'office-ui-fabric-react!IGroupedListSectionProps#eventsToRegister:member'
+    summary: Event names and corresponding callbacks that will be registered to the group and the rendered elements
+    name: eventsToRegister
     fullName: eventsToRegister
-    summary: >-
-      Event names and corresponding callbacks that will be registered to the
-      group and the rendered elements
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: |-
         eventsToRegister?: {
@@ -74,261 +97,253 @@ properties:
                 callback: (context: IDragDropContext, event?: any) => void;
             }[];
       return:
-        type: |-
-          {
-                  eventName: string;
-                  callback: (context: IDragDropContext, event?: any) =&gt; void;
-              }[]
-  - name: footerProps
-    uid: 'office-ui-fabric-react!IGroupedListSectionProps#footerProps:member'
-    package: office-ui-fabric-react!
-    fullName: footerProps
+        type:
+          - |-
+            {
+                    eventName: string;
+                    callback: (context: IDragDropContext, event?: any) => void;
+                }[]
+  - uid: 'office-ui-fabric-react!IGroupedListSectionProps#footerProps:member'
     summary: Information to pass in to the group footer.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: footerProps
+    fullName: footerProps
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'footerProps?: IGroupFooterProps;'
       return:
-        type: IGroupFooterProps
-  - name: getGroupItemLimit
-    uid: 'office-ui-fabric-react!IGroupedListSectionProps#getGroupItemLimit:member'
-    package: office-ui-fabric-react!
-    fullName: getGroupItemLimit
+        type:
+          - IGroupFooterProps
+  - uid: 'office-ui-fabric-react!IGroupedListSectionProps#getGroupItemLimit:member'
     summary: Grouping item limit.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: getGroupItemLimit
+    fullName: getGroupItemLimit
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'getGroupItemLimit?: (group: IGroup) => number;'
       return:
-        type: '(group: IGroup) =&gt; number'
-  - name: group
-    uid: 'office-ui-fabric-react!IGroupedListSectionProps#group:member'
-    package: office-ui-fabric-react!
-    fullName: group
+        type:
+          - '(group: IGroup) => number'
+  - uid: 'office-ui-fabric-react!IGroupedListSectionProps#group:member'
     summary: Optional grouping instructions.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: group
+    fullName: group
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'group?: IGroup;'
       return:
-        type: IGroup
-  - name: groupedListClassNames
-    uid: >-
-      office-ui-fabric-react!IGroupedListSectionProps#groupedListClassNames:member
-    package: office-ui-fabric-react!
-    fullName: groupedListClassNames
+        type:
+          - IGroup
+  - uid: 'office-ui-fabric-react!IGroupedListSectionProps#groupedListClassNames:member'
     summary: GroupedList resolved class names
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: groupedListClassNames
+    fullName: groupedListClassNames
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'groupedListClassNames?: IProcessedStyleSet<IGroupedListStyles>;'
       return:
-        type: IProcessedStyleSet&lt;IGroupedListStyles&gt;
-  - name: groupIndex
-    uid: 'office-ui-fabric-react!IGroupedListSectionProps#groupIndex:member'
-    package: office-ui-fabric-react!
-    fullName: groupIndex
+        type:
+          - IProcessedStyleSet<IGroupedListStyles>
+  - uid: 'office-ui-fabric-react!IGroupedListSectionProps#groupIndex:member'
     summary: Optional grouping instructions.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: groupIndex
+    fullName: groupIndex
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'groupIndex?: number;'
       return:
-        type: number
-  - name: groupNestingDepth
-    uid: 'office-ui-fabric-react!IGroupedListSectionProps#groupNestingDepth:member'
-    package: office-ui-fabric-react!
-    fullName: groupNestingDepth
+        type:
+          - number
+  - uid: 'office-ui-fabric-react!IGroupedListSectionProps#groupNestingDepth:member'
     summary: Optional group nesting level.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: groupNestingDepth
+    fullName: groupNestingDepth
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'groupNestingDepth?: number;'
       return:
-        type: number
-  - name: groupProps
-    uid: 'office-ui-fabric-react!IGroupedListSectionProps#groupProps:member'
-    package: office-ui-fabric-react!
-    fullName: groupProps
+        type:
+          - number
+  - uid: 'office-ui-fabric-react!IGroupedListSectionProps#groupProps:member'
     summary: Optional override properties to render groups.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: groupProps
+    fullName: groupProps
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'groupProps?: IGroupRenderProps;'
       return:
-        type: IGroupRenderProps
-  - name: groups
-    uid: 'office-ui-fabric-react!IGroupedListSectionProps#groups:member'
-    package: office-ui-fabric-react!
-    fullName: groups
+        type:
+          - IGroupRenderProps
+  - uid: 'office-ui-fabric-react!IGroupedListSectionProps#groups:member'
     summary: Stores parent group's children.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: groups
+    fullName: groups
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'groups?: IGroup[];'
       return:
-        type: 'IGroup[]'
-  - name: headerProps
-    uid: 'office-ui-fabric-react!IGroupedListSectionProps#headerProps:member'
-    package: office-ui-fabric-react!
-    fullName: headerProps
+        type:
+          - 'IGroup[]'
+  - uid: 'office-ui-fabric-react!IGroupedListSectionProps#headerProps:member'
     summary: Information to pass in to the group header.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: headerProps
+    fullName: headerProps
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'headerProps?: IGroupHeaderProps;'
       return:
-        type: IGroupHeaderProps
-  - name: items
-    uid: 'office-ui-fabric-react!IGroupedListSectionProps#items:member'
-    package: office-ui-fabric-react!
-    fullName: items
+        type:
+          - IGroupHeaderProps
+  - uid: 'office-ui-fabric-react!IGroupedListSectionProps#items:member'
     summary: List of items to render.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'items: any[];'
       return:
-        type: 'any[]'
-  - name: listProps
-    uid: 'office-ui-fabric-react!IGroupedListSectionProps#listProps:member'
-    package: office-ui-fabric-react!
-    fullName: listProps
+        type:
+          - 'any[]'
+  - uid: 'office-ui-fabric-react!IGroupedListSectionProps#listProps:member'
     summary: Optional list props to pass to list renderer.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: listProps
+    fullName: listProps
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'listProps?: IListProps;'
       return:
-        type: IListProps
-  - name: onRenderCell
-    uid: 'office-ui-fabric-react!IGroupedListSectionProps#onRenderCell:member'
-    package: office-ui-fabric-react!
-    fullName: onRenderCell
+        type:
+          - IListProps
+  - uid: 'office-ui-fabric-react!IGroupedListSectionProps#onRenderCell:member'
     summary: Rendering callback to render the group items.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onRenderCell
+    fullName: onRenderCell
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        onRenderCell: (nestingDepth?: number, item?: any, index?: number) =>
-        React.ReactNode;
+      content: 'onRenderCell: (nestingDepth?: number, item?: any, index?: number) => React.ReactNode;'
       return:
-        type: >-
-          (nestingDepth?: number, item?: any, index?: number) =&gt;
-          React.ReactNode
-  - name: onRenderGroupFooter
-    uid: 'office-ui-fabric-react!IGroupedListSectionProps#onRenderGroupFooter:member'
-    package: office-ui-fabric-react!
-    fullName: onRenderGroupFooter
+        type:
+          - '(nestingDepth?: number, item?: any, index?: number) => React.ReactNode'
+  - uid: 'office-ui-fabric-react!IGroupedListSectionProps#onRenderGroupFooter:member'
     summary: Override for rendering the group footer.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onRenderGroupFooter
+    fullName: onRenderGroupFooter
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onRenderGroupFooter?: IRenderFunction<IGroupFooterProps>;'
       return:
-        type: IRenderFunction&lt;IGroupFooterProps&gt;
-  - name: onRenderGroupHeader
-    uid: 'office-ui-fabric-react!IGroupedListSectionProps#onRenderGroupHeader:member'
-    package: office-ui-fabric-react!
-    fullName: onRenderGroupHeader
+        type:
+          - IRenderFunction<IGroupFooterProps>
+  - uid: 'office-ui-fabric-react!IGroupedListSectionProps#onRenderGroupHeader:member'
     summary: Override for rendering the group header.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onRenderGroupHeader
+    fullName: onRenderGroupHeader
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onRenderGroupHeader?: IRenderFunction<IGroupHeaderProps>;'
       return:
-        type: IRenderFunction&lt;IGroupHeaderProps&gt;
-  - name: onRenderGroupShowAll
-    uid: >-
-      office-ui-fabric-react!IGroupedListSectionProps#onRenderGroupShowAll:member
-    package: office-ui-fabric-react!
-    fullName: onRenderGroupShowAll
+        type:
+          - IRenderFunction<IGroupHeaderProps>
+  - uid: 'office-ui-fabric-react!IGroupedListSectionProps#onRenderGroupShowAll:member'
     summary: Override for rendering the group Show All link.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onRenderGroupShowAll
+    fullName: onRenderGroupShowAll
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onRenderGroupShowAll?: IRenderFunction<IGroupShowAllProps>;'
       return:
-        type: IRenderFunction&lt;IGroupShowAllProps&gt;
-  - name: onShouldVirtualize
-    uid: 'office-ui-fabric-react!IGroupedListSectionProps#onShouldVirtualize:member'
-    package: office-ui-fabric-react!
-    fullName: onShouldVirtualize
+        type:
+          - IRenderFunction<IGroupShowAllProps>
+  - uid: 'office-ui-fabric-react!IGroupedListSectionProps#onShouldVirtualize:member'
     summary: >-
-      Optional callback to determine whether the list should be rendered in
-      full, or virtualized. Virtualization will add and remove pages of items as
-      the user scrolls them into the visible range. This benefits larger list
-      scenarios by reducing the DOM on the screen, but can negatively affect
-      performance for smaller lists. The default implementation will virtualize
-      when this callback is not provided.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Optional callback to determine whether the list should be rendered in full, or virtualized. Virtualization will
+      add and remove pages of items as the user scrolls them into the visible range. This benefits larger list scenarios
+      by reducing the DOM on the screen, but can negatively affect performance for smaller lists. The default
+      implementation will virtualize when this callback is not provided.
+    name: onShouldVirtualize
+    fullName: onShouldVirtualize
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onShouldVirtualize?: (props: IListProps) => boolean;'
       return:
-        type: '(props: IListProps) =&gt; boolean'
-  - name: selection
-    uid: 'office-ui-fabric-react!IGroupedListSectionProps#selection:member'
-    package: office-ui-fabric-react!
-    fullName: selection
+        type:
+          - '(props: IListProps) => boolean'
+  - uid: 'office-ui-fabric-react!IGroupedListSectionProps#selection:member'
     summary: Optional selection model to track selection state.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: selection
+    fullName: selection
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'selection?: ISelection;'
       return:
-        type: '<xref uid="@fluentui/utilities!ISelection:interface" />'
-  - name: selectionMode
-    uid: 'office-ui-fabric-react!IGroupedListSectionProps#selectionMode:member'
-    package: office-ui-fabric-react!
-    fullName: selectionMode
+        type:
+          - '@fluentui/utilities!ISelection:interface'
+  - uid: 'office-ui-fabric-react!IGroupedListSectionProps#selectionMode:member'
     summary: Controls how/if the details list manages selection.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: selectionMode
+    fullName: selectionMode
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'selectionMode?: SelectionMode;'
       return:
-        type: '<xref uid="@fluentui/utilities!SelectionMode:enum" />'
-  - name: showAllProps
-    uid: 'office-ui-fabric-react!IGroupedListSectionProps#showAllProps:member'
-    package: office-ui-fabric-react!
-    fullName: showAllProps
+        type:
+          - '@fluentui/utilities!SelectionMode:enum'
+  - uid: 'office-ui-fabric-react!IGroupedListSectionProps#showAllProps:member'
     summary: Information to pass in to the group Show All footer.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: showAllProps
+    fullName: showAllProps
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'showAllProps?: IGroupShowAllProps;'
       return:
-        type: IGroupShowAllProps
-  - name: viewport
-    uid: 'office-ui-fabric-react!IGroupedListSectionProps#viewport:member'
-    package: office-ui-fabric-react!
-    fullName: viewport
+        type:
+          - IGroupShowAllProps
+  - uid: 'office-ui-fabric-react!IGroupedListSectionProps#viewport:member'
     summary: 'Optional Viewport, provided by the parent component.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: viewport
+    fullName: viewport
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'viewport?: IViewport;'
       return:
-        type: '<xref uid="office-ui-fabric-react!IViewport:interface" />'
-extends: 'React.ClassAttributes&lt;GroupedListSection&gt; '
+        type:
+          - 'office-ui-fabric-react!IViewport:interface'

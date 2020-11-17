@@ -1,269 +1,287 @@
-### YamlMime:TSType
-name: EventGroup
-uid: '@fluentui/utilities!EventGroup:class'
-package: '@fluentui/utilities!'
-fullName: EventGroup
-summary: >-
-  An instance of EventGroup allows anything with a handle to it to trigger
-  events on it. If the target is an HTMLElement, the event will be attached to
-  the element and can be triggered as usual (like clicking for onClick). The
-  event can be triggered by calling EventGroup.raise() here. If the target is an
-  HTMLElement, the event gets raised and is handled by the browser. Otherwise,
-  it gets handled here in EventGroup, and the handler is called in the context
-  of the parent (which is passed in in the constructor).
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: class
-constructors:
-  - name: (constructor)(parent)
-    uid: '@fluentui/utilities!EventGroup:constructor(1)'
-    package: '@fluentui/utilities!'
-    fullName: (constructor)(parent)
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/utilities!EventGroup:class'
     summary: >-
-      parent: the context in which events attached to non-HTMLElements are
-      called
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      An instance of EventGroup allows anything with a handle to it to trigger events on it. If the target is an
+      HTMLElement, the event will be attached to the element and can be triggered as usual (like clicking for onClick).
+      The event can be triggered by calling EventGroup.raise() here. If the target is an HTMLElement, the event gets
+      raised and is handled by the browser. Otherwise, it gets handled here in EventGroup, and the handler is called in
+      the context of the parent (which is passed in in the constructor).
+    name: EventGroup
+    fullName: EventGroup
+    langs:
+      - typeScript
+    type: class
+    package: '@fluentui/utilities!'
+    children:
+      - '@fluentui/utilities!EventGroup:constructor(1)'
+      - '@fluentui/utilities!EventGroup#declare:member(1)'
+      - '@fluentui/utilities!EventGroup#dispose:member(1)'
+      - '@fluentui/utilities!EventGroup.isDeclared:member(1)'
+      - '@fluentui/utilities!EventGroup.isObserved:member(1)'
+      - '@fluentui/utilities!EventGroup#off:member(1)'
+      - '@fluentui/utilities!EventGroup#on:member(1)'
+      - '@fluentui/utilities!EventGroup#onAll:member(1)'
+      - '@fluentui/utilities!EventGroup#raise:member(1)'
+      - '@fluentui/utilities!EventGroup.raise:member(1)'
+      - '@fluentui/utilities!EventGroup.stopPropagation:member(1)'
+  - uid: '@fluentui/utilities!EventGroup:constructor(1)'
+    summary: 'parent: the context in which events attached to non-HTMLElements are called'
+    name: (constructor)(parent)
+    fullName: (constructor)(parent)
+    langs:
+      - typeScript
+    type: constructor
     syntax:
       content: 'constructor(parent: any);'
       parameters:
         - id: parent
           description: ''
-          type: any
-methods:
-  - name: declare(event)
-    uid: '@fluentui/utilities!EventGroup#declare:member(1)'
-    package: '@fluentui/utilities!'
-    fullName: declare(event)
+          type:
+            - any
+  - uid: '@fluentui/utilities!EventGroup#declare:member(1)'
     summary: Declare an event as being supported by this instance of EventGroup.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: declare(event)
+    fullName: declare(event)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'declare(event: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: event
           description: ''
-          type: 'string | string[]'
-      return:
-        type: void
-        description: ''
-  - name: dispose()
-    uid: '@fluentui/utilities!EventGroup#dispose:member(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - 'string | string[]'
+  - uid: '@fluentui/utilities!EventGroup#dispose:member(1)'
+    name: dispose()
     fullName: dispose()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'dispose(): void;'
       return:
-        type: void
+        type:
+          - void
         description: ''
-  - name: 'isDeclared(target, eventName)'
-    uid: '@fluentui/utilities!EventGroup.isDeclared:member(1)'
-    package: '@fluentui/utilities!'
-    fullName: 'isDeclared(target, eventName)'
+  - uid: '@fluentui/utilities!EventGroup.isDeclared:member(1)'
     summary: Check to see if the target has declared support of the given event.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: 'isDeclared(target, eventName)'
+    fullName: 'isDeclared(target, eventName)'
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'static isDeclared(target: any, eventName: string): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
       parameters:
         - id: target
           description: ''
-          type: any
+          type:
+            - any
         - id: eventName
           description: ''
-          type: string
-      return:
-        type: boolean
-        description: ''
-  - name: 'isObserved(target, eventName)'
-    uid: '@fluentui/utilities!EventGroup.isObserved:member(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - string
+  - uid: '@fluentui/utilities!EventGroup.isObserved:member(1)'
+    name: 'isObserved(target, eventName)'
     fullName: 'isObserved(target, eventName)'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'static isObserved(target: any, eventName: string): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
       parameters:
         - id: target
           description: ''
-          type: any
+          type:
+            - any
         - id: eventName
           description: ''
-          type: string
-      return:
-        type: boolean
-        description: ''
-  - name: 'off(target, eventName, callback, options)'
-    uid: '@fluentui/utilities!EventGroup#off:member(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - string
+  - uid: '@fluentui/utilities!EventGroup#off:member(1)'
+    name: 'off(target, eventName, callback, options)'
     fullName: 'off(target, eventName, callback, options)'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: >-
-        off(target?: any, eventName?: string, callback?: (args?: any) => void,
-        options?: boolean | AddEventListenerOptions): void;
+        off(target?: any, eventName?: string, callback?: (args?: any) => void, options?: boolean |
+        AddEventListenerOptions): void;
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: target
           description: ''
-          type: any
+          type:
+            - any
         - id: eventName
           description: ''
-          type: string
+          type:
+            - string
         - id: callback
           description: ''
-          type: '(args?: any) =&gt; void'
+          type:
+            - '(args?: any) => void'
         - id: options
           description: ''
-          type: boolean | AddEventListenerOptions
-      return:
-        type: void
-        description: ''
-  - name: 'on(target, eventName, callback, options)'
-    uid: '@fluentui/utilities!EventGroup#on:member(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - boolean | AddEventListenerOptions
+  - uid: '@fluentui/utilities!EventGroup#on:member(1)'
+    summary: >-
+      On the target, attach an event whose handler will be called in the context of the parent of this instance of
+      EventGroup.
+    name: 'on(target, eventName, callback, options)'
     fullName: 'on(target, eventName, callback, options)'
-    summary: >-
-      On the target, attach an event whose handler will be called in the context
-      of the parent of this instance of EventGroup.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: >-
-        on(target: any, eventName: string, callback: (args?: any) => void,
-        options?: boolean | AddEventListenerOptions): void;
+        on(target: any, eventName: string, callback: (args?: any) => void, options?: boolean | AddEventListenerOptions):
+        void;
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: target
           description: ''
-          type: any
+          type:
+            - any
         - id: eventName
           description: ''
-          type: string
+          type:
+            - string
         - id: callback
           description: ''
-          type: '(args?: any) =&gt; void'
+          type:
+            - '(args?: any) => void'
         - id: options
           description: ''
-          type: boolean | AddEventListenerOptions
-      return:
-        type: void
-        description: ''
-  - name: 'onAll(target, events, useCapture)'
-    uid: '@fluentui/utilities!EventGroup#onAll:member(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - boolean | AddEventListenerOptions
+  - uid: '@fluentui/utilities!EventGroup#onAll:member(1)'
+    summary: 'On the target, attach a set of events, where the events object is a name to function mapping.'
+    name: 'onAll(target, events, useCapture)'
     fullName: 'onAll(target, events, useCapture)'
-    summary: >-
-      On the target, attach a set of events, where the events object is a name
-      to function mapping.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: |-
         onAll(target: any, events: {
                 [key: string]: (args?: any) => void;
             }, useCapture?: boolean): void;
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: target
           description: ''
-          type: any
+          type:
+            - any
         - id: events
           description: ''
-          type: |-
-            {
-                    [key: string]: (args?: any) =&gt; void;
-                }
+          type:
+            - |-
+              {
+                      [key: string]: (args?: any) => void;
+                  }
         - id: useCapture
           description: ''
-          type: boolean
-      return:
-        type: void
-        description: ''
-  - name: 'raise(eventName, eventArgs, bubbleEvent)'
-    uid: '@fluentui/utilities!EventGroup#raise:member(1)'
-    package: '@fluentui/utilities!'
-    fullName: 'raise(eventName, eventArgs, bubbleEvent)'
+          type:
+            - boolean
+  - uid: '@fluentui/utilities!EventGroup#raise:member(1)'
     summary: Trigger the given event in the context of this instance of EventGroup.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: 'raise(eventName, eventArgs, bubbleEvent)'
+    fullName: 'raise(eventName, eventArgs, bubbleEvent)'
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        raise(eventName: string, eventArgs?: any, bubbleEvent?: boolean):
-        boolean | undefined;
+      content: 'raise(eventName: string, eventArgs?: any, bubbleEvent?: boolean): boolean | undefined;'
+      return:
+        type:
+          - boolean | undefined
+        description: ''
       parameters:
         - id: eventName
           description: ''
-          type: string
+          type:
+            - string
         - id: eventArgs
           description: ''
-          type: any
+          type:
+            - any
         - id: bubbleEvent
           description: ''
-          type: boolean
-      return:
-        type: boolean | undefined
-        description: ''
-  - name: 'raise(target, eventName, eventArgs, bubbleEvent)'
-    uid: '@fluentui/utilities!EventGroup.raise:member(1)'
-    package: '@fluentui/utilities!'
-    fullName: 'raise(target, eventName, eventArgs, bubbleEvent)'
+          type:
+            - boolean
+  - uid: '@fluentui/utilities!EventGroup.raise:member(1)'
     summary: >-
-      For IE8, bubbleEvent is ignored here and must be dealt with by the
-      handler. Events raised here by default have bubbling set to false and
-      cancelable set to true. This applies also to built-in events being raised
-      manually here on HTMLElements, which may lead to unexpected behavior if it
-      differs from the defaults.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      For IE8, bubbleEvent is ignored here and must be dealt with by the handler. Events raised here by default have
+      bubbling set to false and cancelable set to true. This applies also to built-in events being raised manually here
+      on HTMLElements, which may lead to unexpected behavior if it differs from the defaults.
+    name: 'raise(target, eventName, eventArgs, bubbleEvent)'
+    fullName: 'raise(target, eventName, eventArgs, bubbleEvent)'
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        static raise(target: any, eventName: string, eventArgs?: any,
-        bubbleEvent?: boolean): boolean | undefined;
+      content: 'static raise(target: any, eventName: string, eventArgs?: any, bubbleEvent?: boolean): boolean | undefined;'
+      return:
+        type:
+          - boolean | undefined
+        description: ''
       parameters:
         - id: target
           description: ''
-          type: any
+          type:
+            - any
         - id: eventName
           description: ''
-          type: string
+          type:
+            - string
         - id: eventArgs
           description: ''
-          type: any
+          type:
+            - any
         - id: bubbleEvent
           description: ''
-          type: boolean
-      return:
-        type: boolean | undefined
-        description: ''
-  - name: stopPropagation(event)
-    uid: '@fluentui/utilities!EventGroup.stopPropagation:member(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - boolean
+  - uid: '@fluentui/utilities!EventGroup.stopPropagation:member(1)'
+    name: stopPropagation(event)
     fullName: stopPropagation(event)
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'static stopPropagation(event: any): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: event
           description: ''
-          type: any
-      return:
-        type: void
-        description: ''
+          type:
+            - any

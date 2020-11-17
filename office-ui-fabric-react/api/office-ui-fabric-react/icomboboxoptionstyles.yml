@@ -1,39 +1,40 @@
-### YamlMime:TSType
-name: IComboBoxOptionStyles
-uid: 'office-ui-fabric-react!IComboBoxOptionStyles:interface'
-package: office-ui-fabric-react!
-fullName: IComboBoxOptionStyles
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: optionText
-    uid: 'office-ui-fabric-react!IComboBoxOptionStyles#optionText:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-ui-fabric-react!IComboBoxOptionStyles:interface'
+    name: IComboBoxOptionStyles
+    fullName: IComboBoxOptionStyles
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'office-ui-fabric-react!IButtonStyles:interface'
     package: office-ui-fabric-react!
-    fullName: optionText
+    children:
+      - 'office-ui-fabric-react!IComboBoxOptionStyles#optionText:member'
+      - 'office-ui-fabric-react!IComboBoxOptionStyles#optionTextWrapper:member'
+  - uid: 'office-ui-fabric-react!IComboBoxOptionStyles#optionText:member'
     summary: >-
-      Styles for the text inside the comboBox option. This should be used
-      instead of the description inside IButtonStyles because we custom render
-      the text in the comboBox options.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Styles for the text inside the comboBox option. This should be used instead of the description inside
+      IButtonStyles because we custom render the text in the comboBox options.
+    name: optionText
+    fullName: optionText
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'optionText: IStyle;'
       return:
-        type: IStyle
-  - name: optionTextWrapper
-    uid: 'office-ui-fabric-react!IComboBoxOptionStyles#optionTextWrapper:member'
-    package: office-ui-fabric-react!
-    fullName: optionTextWrapper
+        type:
+          - IStyle
+  - uid: 'office-ui-fabric-react!IComboBoxOptionStyles#optionTextWrapper:member'
     summary: Styles for the comboBox option text's wrapper.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: optionTextWrapper
+    fullName: optionTextWrapper
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'optionTextWrapper: IStyle;'
       return:
-        type: IStyle
-extends: '<xref uid="office-ui-fabric-react!IButtonStyles:interface" />'
+        type:
+          - IStyle

@@ -1,24 +1,25 @@
-### YamlMime:TSType
-name: MenuButtonState
-uid: '@fluentui/react-button!MenuButtonState:interface'
-package: '@fluentui/react-button!'
-fullName: MenuButtonState
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: menu
-    uid: '@fluentui/react-button!MenuButtonState#menu:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-button!MenuButtonState:interface'
+    name: MenuButtonState
+    fullName: MenuButtonState
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'Omit<MenuButtonProps, ''menu''>'
+      - 'Omit<ButtonState, ''iconPosition'' | ''loader''> '
     package: '@fluentui/react-button!'
+    children:
+      - '@fluentui/react-button!MenuButtonState#menu:member'
+  - uid: '@fluentui/react-button!MenuButtonState#menu:member'
+    name: menu
     fullName: menu
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'menu?: React.PropsWithChildren<MinimalMenuProps>;'
       return:
-        type: React.PropsWithChildren&lt;MinimalMenuProps&gt;
-extends: 'Omit&lt;MenuButtonProps, ''menu''&gt;'
+        type:
+          - React.PropsWithChildren<MinimalMenuProps>

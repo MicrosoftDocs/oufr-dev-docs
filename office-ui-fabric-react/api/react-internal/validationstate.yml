@@ -1,25 +1,38 @@
-### YamlMime:TSEnum
-name: ValidationState
-uid: '@fluentui/react-internal!ValidationState:enum'
-package: '@fluentui/react-internal!'
-fullName: ValidationState
-summary: Validation state of the user's input.
-remarks: ''
-isPreview: false
-isDeprecated: false
-fields:
-  - name: invalid
-    uid: '@fluentui/react-internal!ValidationState.invalid:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-internal!ValidationState:enum'
+    summary: Validation state of the user's input.
+    name: ValidationState
+    fullName: ValidationState
+    langs:
+      - typeScript
+    type: enum
     package: '@fluentui/react-internal!'
+    children:
+      - '@fluentui/react-internal!ValidationState.invalid:member'
+      - '@fluentui/react-internal!ValidationState.valid:member'
+      - '@fluentui/react-internal!ValidationState.warning:member'
+  - uid: '@fluentui/react-internal!ValidationState.invalid:member'
     summary: User input is invalid.
-    numericValue: 2
-  - name: valid
-    uid: '@fluentui/react-internal!ValidationState.valid:member'
-    package: '@fluentui/react-internal!'
+    name: invalid
+    fullName: invalid
+    langs:
+      - typeScript
+    type: field
+    numericValue: '2'
+  - uid: '@fluentui/react-internal!ValidationState.valid:member'
     summary: User input is valid.
-    numericValue: 0
-  - name: warning
-    uid: '@fluentui/react-internal!ValidationState.warning:member'
-    package: '@fluentui/react-internal!'
+    name: valid
+    fullName: valid
+    langs:
+      - typeScript
+    type: field
+    numericValue: '0'
+  - uid: '@fluentui/react-internal!ValidationState.warning:member'
     summary: 'User input could be valid or invalid, its state is not known yet.'
-    numericValue: 1
+    name: warning
+    fullName: warning
+    langs:
+      - typeScript
+    type: field
+    numericValue: '1'

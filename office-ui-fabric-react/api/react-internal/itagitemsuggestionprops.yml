@@ -1,54 +1,52 @@
-### YamlMime:TSType
-name: ITagItemSuggestionProps
-uid: '@fluentui/react-internal!ITagItemSuggestionProps:interface'
-package: '@fluentui/react-internal!'
-fullName: ITagItemSuggestionProps
-summary: TagItemSuggestion component props
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: className
-    uid: '@fluentui/react-internal!ITagItemSuggestionProps#className:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-internal!ITagItemSuggestionProps:interface'
+    summary: TagItemSuggestion component props
+    name: ITagItemSuggestionProps
+    fullName: ITagItemSuggestionProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'React.AllHTMLAttributes<HTMLElement> '
     package: '@fluentui/react-internal!'
-    fullName: className
+    children:
+      - '@fluentui/react-internal!ITagItemSuggestionProps#className:member'
+      - '@fluentui/react-internal!ITagItemSuggestionProps#styles:member'
+      - '@fluentui/react-internal!ITagItemSuggestionProps#theme:member'
+  - uid: '@fluentui/react-internal!ITagItemSuggestionProps#className:member'
     summary: Additional CSS class(es) to apply to the TagItemSuggestion div element
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: className
+    fullName: className
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'className?: string;'
       return:
-        type: string
-  - name: styles
-    uid: '@fluentui/react-internal!ITagItemSuggestionProps#styles:member'
-    package: '@fluentui/react-internal!'
+        type:
+          - string
+  - uid: '@fluentui/react-internal!ITagItemSuggestionProps#styles:member'
+    summary: Call to provide customized styling that will layer on top of the variant rules.
+    name: styles
     fullName: styles
-    summary: >-
-      Call to provide customized styling that will layer on top of the variant
-      rules.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        styles?: IStyleFunctionOrObject<ITagItemSuggestionStyleProps,
-        ITagItemSuggestionStyles>;
+      content: 'styles?: IStyleFunctionOrObject<ITagItemSuggestionStyleProps, ITagItemSuggestionStyles>;'
       return:
-        type: >-
-          IStyleFunctionOrObject&lt;ITagItemSuggestionStyleProps,
-          ITagItemSuggestionStyles&gt;
-  - name: theme
-    uid: '@fluentui/react-internal!ITagItemSuggestionProps#theme:member'
-    package: '@fluentui/react-internal!'
-    fullName: theme
+        type:
+          - 'IStyleFunctionOrObject<ITagItemSuggestionStyleProps, ITagItemSuggestionStyles>'
+  - uid: '@fluentui/react-internal!ITagItemSuggestionProps#theme:member'
     summary: Theme provided by High-Order Component.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'theme?: ITheme;'
       return:
-        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
-extends: 'React.AllHTMLAttributes&lt;HTMLElement&gt; '
+        type:
+          - '@fluentui/theme!ITheme:interface'

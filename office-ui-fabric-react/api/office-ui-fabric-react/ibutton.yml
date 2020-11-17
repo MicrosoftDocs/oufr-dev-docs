@@ -1,56 +1,51 @@
-### YamlMime:TSType
-name: IButton
-uid: 'office-ui-fabric-react!IButton:interface'
-package: office-ui-fabric-react!
-fullName: IButton
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: dismissMenu
-    uid: 'office-ui-fabric-react!IButton#dismissMenu:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-ui-fabric-react!IButton:interface'
+    name: IButton
+    fullName: IButton
+    langs:
+      - typeScript
+    type: interface
     package: office-ui-fabric-react!
+    children:
+      - 'office-ui-fabric-react!IButton#dismissMenu:member'
+      - 'office-ui-fabric-react!IButton#focus:member'
+      - 'office-ui-fabric-react!IButton#openMenu:member'
+  - uid: 'office-ui-fabric-react!IButton#dismissMenu:member'
+    summary: 'If there is a menu associated with this button and it is visible, this will dismiss the menu'
+    name: dismissMenu
     fullName: dismissMenu
-    summary: >-
-      If there is a menu associated with this button and it is visible, this
-      will dismiss the menu
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'dismissMenu: () => void;'
       return:
-        type: () =&gt; void
-  - name: focus
-    uid: 'office-ui-fabric-react!IButton#focus:member'
-    package: office-ui-fabric-react!
-    fullName: focus
+        type:
+          - () => void
+  - uid: 'office-ui-fabric-react!IButton#focus:member'
     summary: Sets focus to the button.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: focus
+    fullName: focus
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'focus: () => void;'
       return:
-        type: () =&gt; void
-  - name: openMenu
-    uid: 'office-ui-fabric-react!IButton#openMenu:member'
-    package: office-ui-fabric-react!
-    fullName: openMenu
+        type:
+          - () => void
+  - uid: 'office-ui-fabric-react!IButton#openMenu:member'
     summary: >-
-      If there is a menu associated with this button and it is visible, this
-      will open the menu. Params are optional overrides to the ones defined in
-      `menuProps` to apply to just this instance of opening the menu.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      If there is a menu associated with this button and it is visible, this will open the menu. Params are optional
+      overrides to the ones defined in `menuProps` to apply to just this instance of opening the menu.
+    name: openMenu
+    fullName: openMenu
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        openMenu: (shouldFocusOnContainer?: boolean, shouldFocusOnMount?:
-        boolean) => void;
+      content: 'openMenu: (shouldFocusOnContainer?: boolean, shouldFocusOnMount?: boolean) => void;'
       return:
-        type: >-
-          (shouldFocusOnContainer?: boolean, shouldFocusOnMount?: boolean) =&gt;
-          void
+        type:
+          - '(shouldFocusOnContainer?: boolean, shouldFocusOnMount?: boolean) => void'

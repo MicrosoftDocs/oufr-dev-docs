@@ -1,22 +1,22 @@
-### YamlMime:TSType
-name: IDetailsRowState
-uid: '@fluentui/react!IDetailsRowState:interface'
-package: '@fluentui/react!'
-fullName: IDetailsRowState
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: columnMeasureInfo
-    uid: '@fluentui/react!IDetailsRowState#columnMeasureInfo:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react!IDetailsRowState:interface'
+    name: IDetailsRowState
+    fullName: IDetailsRowState
+    langs:
+      - typeScript
+    type: interface
     package: '@fluentui/react!'
+    children:
+      - '@fluentui/react!IDetailsRowState#columnMeasureInfo:member'
+      - '@fluentui/react!IDetailsRowState#isDropping:member'
+      - '@fluentui/react!IDetailsRowState#selectionState:member'
+  - uid: '@fluentui/react!IDetailsRowState#columnMeasureInfo:member'
+    name: columnMeasureInfo
     fullName: columnMeasureInfo
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: |-
         columnMeasureInfo?: {
@@ -25,33 +25,32 @@ properties:
                 onMeasureDone: (measuredWidth: number) => void;
             };
       return:
-        type: |-
-          {
-                  index: number;
-                  column: IColumn;
-                  onMeasureDone: (measuredWidth: number) =&gt; void;
-              }
-  - name: isDropping
-    uid: '@fluentui/react!IDetailsRowState#isDropping:member'
-    package: '@fluentui/react!'
+        type:
+          - |-
+            {
+                    index: number;
+                    column: IColumn;
+                    onMeasureDone: (measuredWidth: number) => void;
+                }
+  - uid: '@fluentui/react!IDetailsRowState#isDropping:member'
+    name: isDropping
     fullName: isDropping
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'isDropping?: boolean;'
       return:
-        type: boolean
-  - name: selectionState
-    uid: '@fluentui/react!IDetailsRowState#selectionState:member'
-    package: '@fluentui/react!'
+        type:
+          - boolean
+  - uid: '@fluentui/react!IDetailsRowState#selectionState:member'
+    name: selectionState
     fullName: selectionState
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'selectionState: IDetailsRowSelectionState;'
       return:
-        type: IDetailsRowSelectionState
+        type:
+          - IDetailsRowSelectionState

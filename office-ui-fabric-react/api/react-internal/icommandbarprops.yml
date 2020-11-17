@@ -1,243 +1,246 @@
-### YamlMime:TSType
-name: ICommandBarProps
-uid: '@fluentui/react-internal!ICommandBarProps:interface'
-package: '@fluentui/react-internal!'
-fullName: ICommandBarProps
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: ariaLabel
-    uid: '@fluentui/react-internal!ICommandBarProps#ariaLabel:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-internal!ICommandBarProps:interface'
+    name: ICommandBarProps
+    fullName: ICommandBarProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'React.HTMLAttributes<HTMLDivElement> '
     package: '@fluentui/react-internal!'
-    fullName: ariaLabel
+    children:
+      - '@fluentui/react-internal!ICommandBarProps#ariaLabel:member'
+      - '@fluentui/react-internal!ICommandBarProps#buttonAs:member'
+      - '@fluentui/react-internal!ICommandBarProps#className:member'
+      - '@fluentui/react-internal!ICommandBarProps#componentRef:member'
+      - '@fluentui/react-internal!ICommandBarProps#dataDidRender:member'
+      - '@fluentui/react-internal!ICommandBarProps#farItems:member'
+      - '@fluentui/react-internal!ICommandBarProps#items:member'
+      - '@fluentui/react-internal!ICommandBarProps#onDataGrown:member'
+      - '@fluentui/react-internal!ICommandBarProps#onDataReduced:member'
+      - '@fluentui/react-internal!ICommandBarProps#onGrowData:member'
+      - '@fluentui/react-internal!ICommandBarProps#onReduceData:member'
+      - '@fluentui/react-internal!ICommandBarProps#overflowButtonAs:member'
+      - '@fluentui/react-internal!ICommandBarProps#overflowButtonProps:member'
+      - '@fluentui/react-internal!ICommandBarProps#overflowItems:member'
+      - '@fluentui/react-internal!ICommandBarProps#shiftOnReduce:member'
+      - '@fluentui/react-internal!ICommandBarProps#styles:member'
+      - '@fluentui/react-internal!ICommandBarProps#theme:member'
+  - uid: '@fluentui/react-internal!ICommandBarProps#ariaLabel:member'
     summary: >-
-      Accessibility text to be read by the screen reader when the user's focus
-      enters the command bar. The screen reader will read this text after
-      reading information about the first focusable item in the command bar.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Accessibility text to be read by the screen reader when the user's focus enters the command bar. The screen reader
+      will read this text after reading information about the first focusable item in the command bar.
+    name: ariaLabel
+    fullName: ariaLabel
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'ariaLabel?: string;'
       return:
-        type: string
-  - name: buttonAs
-    uid: '@fluentui/react-internal!ICommandBarProps#buttonAs:member'
-    package: '@fluentui/react-internal!'
+        type:
+          - string
+  - uid: '@fluentui/react-internal!ICommandBarProps#buttonAs:member'
+    summary: Custom component for the near and far item buttons. Not used for overflow menu items.
+    name: buttonAs
     fullName: buttonAs
-    summary: >-
-      Custom component for the near and far item buttons. Not used for overflow
-      menu items.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'buttonAs?: IComponentAs<IButtonProps>;'
       return:
-        type: IComponentAs&lt;IButtonProps&gt;
-  - name: className
-    uid: '@fluentui/react-internal!ICommandBarProps#className:member'
-    package: '@fluentui/react-internal!'
-    fullName: className
+        type:
+          - IComponentAs<IButtonProps>
+  - uid: '@fluentui/react-internal!ICommandBarProps#className:member'
     summary: Additional css class to apply to the command bar
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: className
+    fullName: className
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'className?: string;'
       return:
-        type: string
-  - name: componentRef
-    uid: '@fluentui/react-internal!ICommandBarProps#componentRef:member'
-    package: '@fluentui/react-internal!'
-    fullName: componentRef
+        type:
+          - string
+  - uid: '@fluentui/react-internal!ICommandBarProps#componentRef:member'
     summary: >-
-      Optional callback to access the ICommandBar interface. Use this instead of
-      ref for accessing the public methods and properties of the component.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Optional callback to access the ICommandBar interface. Use this instead of ref for accessing the public methods
+      and properties of the component.
+    name: componentRef
+    fullName: componentRef
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'componentRef?: IRefObject<ICommandBar>;'
       return:
-        type: IRefObject&lt;ICommandBar&gt;
-  - name: dataDidRender
-    uid: '@fluentui/react-internal!ICommandBarProps#dataDidRender:member'
-    package: '@fluentui/react-internal!'
-    fullName: dataDidRender
+        type:
+          - IRefObject<ICommandBar>
+  - uid: '@fluentui/react-internal!ICommandBarProps#dataDidRender:member'
     summary: >-
-      Function to be called every time data is rendered. It provides the data
-      that was actually rendered. A use case would be adding telemetry when a
-      particular control is shown in an overflow or dropped as a result of
-      `onReduceData`<!-- -->, or to count the number of renders that an
-      implementation of `onReduceData` triggers.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Function to be called every time data is rendered. It provides the data that was actually rendered. A use case
+      would be adding telemetry when a particular control is shown in an overflow or dropped as a result of
+      `onReduceData`<!-- -->, or to count the number of renders that an implementation of `onReduceData` triggers.
+    name: dataDidRender
+    fullName: dataDidRender
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'dataDidRender?: (renderedData: any) => void;'
       return:
-        type: '(renderedData: any) =&gt; void'
-  - name: farItems
-    uid: '@fluentui/react-internal!ICommandBarProps#farItems:member'
-    package: '@fluentui/react-internal!'
+        type:
+          - '(renderedData: any) => void'
+  - uid: '@fluentui/react-internal!ICommandBarProps#farItems:member'
+    summary: 'Items to render on the right side (or left, in RTL). ICommandBarItemProps extends IContextualMenuItem.'
+    name: farItems
     fullName: farItems
-    summary: >-
-      Items to render on the right side (or left, in RTL). ICommandBarItemProps
-      extends IContextualMenuItem.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'farItems?: ICommandBarItemProps[];'
       return:
-        type: 'ICommandBarItemProps[]'
-  - name: items
-    uid: '@fluentui/react-internal!ICommandBarProps#items:member'
-    package: '@fluentui/react-internal!'
-    fullName: items
+        type:
+          - 'ICommandBarItemProps[]'
+  - uid: '@fluentui/react-internal!ICommandBarProps#items:member'
     summary: Items to render. ICommandBarItemProps extends IContextualMenuItem.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'items: ICommandBarItemProps[];'
       return:
-        type: 'ICommandBarItemProps[]'
-  - name: onDataGrown
-    uid: '@fluentui/react-internal!ICommandBarProps#onDataGrown:member'
-    package: '@fluentui/react-internal!'
-    fullName: onDataGrown
+        type:
+          - 'ICommandBarItemProps[]'
+  - uid: '@fluentui/react-internal!ICommandBarProps#onDataGrown:member'
     summary: Callback invoked when data has been grown.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onDataGrown
+    fullName: onDataGrown
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onDataGrown?: (movedItem: ICommandBarItemProps) => void;'
       return:
-        type: '(movedItem: ICommandBarItemProps) =&gt; void'
-  - name: onDataReduced
-    uid: '@fluentui/react-internal!ICommandBarProps#onDataReduced:member'
-    package: '@fluentui/react-internal!'
-    fullName: onDataReduced
+        type:
+          - '(movedItem: ICommandBarItemProps) => void'
+  - uid: '@fluentui/react-internal!ICommandBarProps#onDataReduced:member'
     summary: Callback invoked when data has been reduced.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onDataReduced
+    fullName: onDataReduced
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onDataReduced?: (movedItem: ICommandBarItemProps) => void;'
       return:
-        type: '(movedItem: ICommandBarItemProps) =&gt; void'
-  - name: onGrowData
-    uid: '@fluentui/react-internal!ICommandBarProps#onGrowData:member'
-    package: '@fluentui/react-internal!'
-    fullName: onGrowData
+        type:
+          - '(movedItem: ICommandBarItemProps) => void'
+  - uid: '@fluentui/react-internal!ICommandBarProps#onGrowData:member'
     summary: >-
-      Custom function to grow data if items are too small for the given space.
-      Return `undefined` if no more steps can be taken to avoid infinate loop.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Custom function to grow data if items are too small for the given space. Return `undefined` if no more steps can
+      be taken to avoid infinate loop.
+    name: onGrowData
+    fullName: onGrowData
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onGrowData?: (data: ICommandBarData) => ICommandBarData | undefined;'
       return:
-        type: '(data: ICommandBarData) =&gt; ICommandBarData | undefined'
-  - name: onReduceData
-    uid: '@fluentui/react-internal!ICommandBarProps#onReduceData:member'
-    package: '@fluentui/react-internal!'
-    fullName: onReduceData
+        type:
+          - '(data: ICommandBarData) => ICommandBarData | undefined'
+  - uid: '@fluentui/react-internal!ICommandBarProps#onReduceData:member'
     summary: >-
-      Custom function to reduce data if items do not fit in given space. Return
-      `undefined` if no more steps can be taken to avoid infinate loop.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Custom function to reduce data if items do not fit in given space. Return `undefined` if no more steps can be
+      taken to avoid infinate loop.
+    name: onReduceData
+    fullName: onReduceData
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onReduceData?: (data: ICommandBarData) => ICommandBarData | undefined;'
       return:
-        type: '(data: ICommandBarData) =&gt; ICommandBarData | undefined'
-  - name: overflowButtonAs
-    uid: '@fluentui/react-internal!ICommandBarProps#overflowButtonAs:member'
-    package: '@fluentui/react-internal!'
-    fullName: overflowButtonAs
+        type:
+          - '(data: ICommandBarData) => ICommandBarData | undefined'
+  - uid: '@fluentui/react-internal!ICommandBarProps#overflowButtonAs:member'
     summary: Custom component for the overflow button.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: overflowButtonAs
+    fullName: overflowButtonAs
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'overflowButtonAs?: IComponentAs<IButtonProps>;'
       return:
-        type: IComponentAs&lt;IButtonProps&gt;
-  - name: overflowButtonProps
-    uid: '@fluentui/react-internal!ICommandBarProps#overflowButtonProps:member'
-    package: '@fluentui/react-internal!'
-    fullName: overflowButtonProps
+        type:
+          - IComponentAs<IButtonProps>
+  - uid: '@fluentui/react-internal!ICommandBarProps#overflowButtonProps:member'
     summary: >-
-      Props to be passed to overflow button. If `menuProps` are passed through
-      this prop, any items provided will be prepended to any computed overflow
-      items.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Props to be passed to overflow button. If `menuProps` are passed through this prop, any items provided will be
+      prepended to any computed overflow items.
+    name: overflowButtonProps
+    fullName: overflowButtonProps
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'overflowButtonProps?: IButtonProps;'
       return:
-        type: '<xref uid="office-ui-fabric-react!IButtonProps:interface" />'
-  - name: overflowItems
-    uid: '@fluentui/react-internal!ICommandBarProps#overflowItems:member'
-    package: '@fluentui/react-internal!'
+        type:
+          - 'office-ui-fabric-react!IButtonProps:interface'
+  - uid: '@fluentui/react-internal!ICommandBarProps#overflowItems:member'
+    summary: Default items to have in the overflow menu. ICommandBarItemProps extends IContextualMenuItem.
+    name: overflowItems
     fullName: overflowItems
-    summary: >-
-      Default items to have in the overflow menu. ICommandBarItemProps extends
-      IContextualMenuItem.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'overflowItems?: ICommandBarItemProps[];'
       return:
-        type: 'ICommandBarItemProps[]'
-  - name: shiftOnReduce
-    uid: '@fluentui/react-internal!ICommandBarProps#shiftOnReduce:member'
-    package: '@fluentui/react-internal!'
+        type:
+          - 'ICommandBarItemProps[]'
+  - uid: '@fluentui/react-internal!ICommandBarProps#shiftOnReduce:member'
+    summary: 'When true, items will be ''shifted'' off the front of the array when reduced, and unshifted during grow.'
+    name: shiftOnReduce
     fullName: shiftOnReduce
-    summary: >-
-      When true, items will be 'shifted' off the front of the array when
-      reduced, and unshifted during grow.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'shiftOnReduce?: boolean;'
       return:
-        type: boolean
-  - name: styles
-    uid: '@fluentui/react-internal!ICommandBarProps#styles:member'
-    package: '@fluentui/react-internal!'
-    fullName: styles
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!ICommandBarProps#styles:member'
     summary: Customized styling that will layer on top of the variant rules.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: styles
+    fullName: styles
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        styles?: IStyleFunctionOrObject<ICommandBarStyleProps,
-        ICommandBarStyles>;
+      content: 'styles?: IStyleFunctionOrObject<ICommandBarStyleProps, ICommandBarStyles>;'
       return:
-        type: 'IStyleFunctionOrObject&lt;ICommandBarStyleProps, ICommandBarStyles&gt;'
-  - name: theme
-    uid: '@fluentui/react-internal!ICommandBarProps#theme:member'
-    package: '@fluentui/react-internal!'
-    fullName: theme
+        type:
+          - 'IStyleFunctionOrObject<ICommandBarStyleProps, ICommandBarStyles>'
+  - uid: '@fluentui/react-internal!ICommandBarProps#theme:member'
     summary: Theme provided by HOC.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'theme?: ITheme;'
       return:
-        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
-extends: 'React.HTMLAttributes&lt;HTMLDivElement&gt; '
+        type:
+          - '@fluentui/theme!ITheme:interface'

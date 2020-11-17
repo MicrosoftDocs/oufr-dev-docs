@@ -1,70 +1,73 @@
-### YamlMime:TSType
-name: ITextProps
-uid: 'office-ui-fabric-react!ITextProps:interface'
-package: office-ui-fabric-react!
-fullName: ITextProps
-summary: Inputs to the component
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: as
-    uid: 'office-ui-fabric-react!ITextProps#as:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-ui-fabric-react!ITextProps:interface'
+    summary: Inputs to the component
+    name: ITextProps
+    fullName: ITextProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - ISlottableProps<ITextSlots>
+      - 'IStyleableComponentProps<ITextProps, ITextTokens, ITextStyles>'
+      - 'React.HTMLAttributes<HTMLElement> '
     package: office-ui-fabric-react!
-    fullName: as
+    children:
+      - 'office-ui-fabric-react!ITextProps#as:member'
+      - 'office-ui-fabric-react!ITextProps#block:member'
+      - 'office-ui-fabric-react!ITextProps#nowrap:member'
+      - 'office-ui-fabric-react!ITextProps#variant:member'
+  - uid: 'office-ui-fabric-react!ITextProps#as:member'
     summary: Optionally render the component as another component type or primitive.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: as
+    fullName: as
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'as?: React.ElementType<React.HTMLAttributes<HTMLElement>>;'
       return:
-        type: React.ElementType&lt;React.HTMLAttributes&lt;HTMLElement&gt;&gt;
-  - name: block
-    uid: 'office-ui-fabric-react!ITextProps#block:member'
-    package: office-ui-fabric-react!
-    fullName: block
-    summary: >-
+        type:
+          - React.ElementType<React.HTMLAttributes<HTMLElement>>
+  - uid: 'office-ui-fabric-react!ITextProps#block:member'
+    summary: |-
       Whether the text is displayed as a block element.
 
-
-      Note that in order for ellipsis on overflow to work properly, `block` and
-      `nowrap` should be set to true.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Note that in order for ellipsis on overflow to work properly, `block` and `nowrap` should be set to true.
+    name: block
+    fullName: block
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'block?: boolean;'
       return:
-        type: boolean
-  - name: nowrap
-    uid: 'office-ui-fabric-react!ITextProps#nowrap:member'
-    package: office-ui-fabric-react!
-    fullName: nowrap
-    summary: >-
+        type:
+          - boolean
+  - uid: 'office-ui-fabric-react!ITextProps#nowrap:member'
+    summary: |-
       Whether the text is not wrapped.
 
-
-      Note that in order for ellipsis on overflow to work properly, `block` and
-      `nowrap` should be set to true.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Note that in order for ellipsis on overflow to work properly, `block` and `nowrap` should be set to true.
+    name: nowrap
+    fullName: nowrap
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'nowrap?: boolean;'
       return:
-        type: boolean
-  - name: variant
-    uid: 'office-ui-fabric-react!ITextProps#variant:member'
-    package: office-ui-fabric-react!
-    fullName: variant
+        type:
+          - boolean
+  - uid: 'office-ui-fabric-react!ITextProps#variant:member'
     summary: Optional font type for Text.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: variant
+    fullName: variant
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'variant?: keyof IFontStyles;'
       return:
-        type: keyof IFontStyles
-extends: ISlottableProps&lt;ITextSlots&gt;
+        type:
+          - keyof IFontStyles

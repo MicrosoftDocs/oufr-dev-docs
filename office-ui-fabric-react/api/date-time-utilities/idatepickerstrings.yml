@@ -1,146 +1,144 @@
-### YamlMime:TSType
-name: IDatepickerStrings
-uid: '@fluentui/date-time-utilities!IDatepickerStrings:interface'
-package: '@fluentui/date-time-utilities!'
-fullName: IDatepickerStrings
-summary: Strings for the `@fluentui/react-northstar` Datepicker component.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: inputAriaLabel
-    uid: '@fluentui/date-time-utilities!IDatepickerStrings#inputAriaLabel:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/date-time-utilities!IDatepickerStrings:interface'
+    summary: Strings for the `@fluentui/react-northstar` Datepicker component.
+    name: IDatepickerStrings
+    fullName: IDatepickerStrings
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - ICalendarStrings
+      - '@fluentui/date-time-utilities!IDateFormatting:interface'
     package: '@fluentui/date-time-utilities!'
-    fullName: inputAriaLabel
+    children:
+      - '@fluentui/date-time-utilities!IDatepickerStrings#inputAriaLabel:member'
+      - '@fluentui/date-time-utilities!IDatepickerStrings#inputBoundedFormatString:member'
+      - '@fluentui/date-time-utilities!IDatepickerStrings#inputMaxBoundedFormatString:member'
+      - '@fluentui/date-time-utilities!IDatepickerStrings#inputMinBoundedFormatString:member'
+      - '@fluentui/date-time-utilities!IDatepickerStrings#inputPlaceholder:member'
+      - '@fluentui/date-time-utilities!IDatepickerStrings#invalidInputErrorMessage:member'
+      - '@fluentui/date-time-utilities!IDatepickerStrings#isOutOfBoundsErrorMessage:member'
+      - '@fluentui/date-time-utilities!IDatepickerStrings#isRequiredErrorMessage:member'
+      - '@fluentui/date-time-utilities!IDatepickerStrings#openCalendarTitle:member'
+      - '@fluentui/date-time-utilities!IDatepickerStrings#parseDate:member'
+  - uid: '@fluentui/date-time-utilities!IDatepickerStrings#inputAriaLabel:member'
     summary: Aria-label for input."
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: inputAriaLabel
+    fullName: inputAriaLabel
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'inputAriaLabel?: string;'
       return:
-        type: string
-  - name: inputBoundedFormatString
-    uid: >-
-      @fluentui/date-time-utilities!IDatepickerStrings#inputBoundedFormatString:member
-    package: '@fluentui/date-time-utilities!'
+        type:
+          - string
+  - uid: '@fluentui/date-time-utilities!IDatepickerStrings#inputBoundedFormatString:member'
+    summary: 'Aria-label format string for restricted input. Should have 2 string params, 0 is minDate and 1 is maxDate"'
+    name: inputBoundedFormatString
     fullName: inputBoundedFormatString
-    summary: >-
-      Aria-label format string for restricted input. Should have 2 string
-      params, 0 is minDate and 1 is maxDate"
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'inputBoundedFormatString?: string;'
       return:
-        type: string
-  - name: inputMaxBoundedFormatString
-    uid: >-
-      @fluentui/date-time-utilities!IDatepickerStrings#inputMaxBoundedFormatString:member
-    package: '@fluentui/date-time-utilities!'
+        type:
+          - string
+  - uid: '@fluentui/date-time-utilities!IDatepickerStrings#inputMaxBoundedFormatString:member'
+    summary: 'Aria-label format string for restricted input only with maxDate. Should have 1 string param, 0 is maxDate"'
+    name: inputMaxBoundedFormatString
     fullName: inputMaxBoundedFormatString
-    summary: >-
-      Aria-label format string for restricted input only with maxDate. Should
-      have 1 string param, 0 is maxDate"
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'inputMaxBoundedFormatString?: string;'
       return:
-        type: string
-  - name: inputMinBoundedFormatString
-    uid: >-
-      @fluentui/date-time-utilities!IDatepickerStrings#inputMinBoundedFormatString:member
-    package: '@fluentui/date-time-utilities!'
+        type:
+          - string
+  - uid: '@fluentui/date-time-utilities!IDatepickerStrings#inputMinBoundedFormatString:member'
+    summary: 'Aria-label format string for restricted input only with minDate. Should have 1 string param, 0 is minDate"'
+    name: inputMinBoundedFormatString
     fullName: inputMinBoundedFormatString
-    summary: >-
-      Aria-label format string for restricted input only with minDate. Should
-      have 1 string param, 0 is minDate"
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'inputMinBoundedFormatString?: string;'
       return:
-        type: string
-  - name: inputPlaceholder
-    uid: '@fluentui/date-time-utilities!IDatepickerStrings#inputPlaceholder:member'
-    package: '@fluentui/date-time-utilities!'
-    fullName: inputPlaceholder
+        type:
+          - string
+  - uid: '@fluentui/date-time-utilities!IDatepickerStrings#inputPlaceholder:member'
     summary: Placeholder string for an unfilled input.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: inputPlaceholder
+    fullName: inputPlaceholder
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'inputPlaceholder: string;'
       return:
-        type: string
-  - name: invalidInputErrorMessage
-    uid: >-
-      @fluentui/date-time-utilities!IDatepickerStrings#invalidInputErrorMessage:member
-    package: '@fluentui/date-time-utilities!'
-    fullName: invalidInputErrorMessage
+        type:
+          - string
+  - uid: '@fluentui/date-time-utilities!IDatepickerStrings#invalidInputErrorMessage:member'
     summary: Error message to render for TextField if input date string parsing fails.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: invalidInputErrorMessage
+    fullName: invalidInputErrorMessage
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'invalidInputErrorMessage?: string;'
       return:
-        type: string
-  - name: isOutOfBoundsErrorMessage
-    uid: >-
-      @fluentui/date-time-utilities!IDatepickerStrings#isOutOfBoundsErrorMessage:member
-    package: '@fluentui/date-time-utilities!'
+        type:
+          - string
+  - uid: '@fluentui/date-time-utilities!IDatepickerStrings#isOutOfBoundsErrorMessage:member'
+    summary: 'Error message to render for TextField if date boundary (minDate, maxDate) validation fails.'
+    name: isOutOfBoundsErrorMessage
     fullName: isOutOfBoundsErrorMessage
-    summary: >-
-      Error message to render for TextField if date boundary (minDate, maxDate)
-      validation fails.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'isOutOfBoundsErrorMessage?: string;'
       return:
-        type: string
-  - name: isRequiredErrorMessage
-    uid: >-
-      @fluentui/date-time-utilities!IDatepickerStrings#isRequiredErrorMessage:member
-    package: '@fluentui/date-time-utilities!'
-    fullName: isRequiredErrorMessage
+        type:
+          - string
+  - uid: '@fluentui/date-time-utilities!IDatepickerStrings#isRequiredErrorMessage:member'
     summary: Error message to render for TextField if isRequired validation fails.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: isRequiredErrorMessage
+    fullName: isRequiredErrorMessage
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'isRequiredErrorMessage?: string;'
       return:
-        type: string
-  - name: openCalendarTitle
-    uid: '@fluentui/date-time-utilities!IDatepickerStrings#openCalendarTitle:member'
-    package: '@fluentui/date-time-utilities!'
-    fullName: openCalendarTitle
+        type:
+          - string
+  - uid: '@fluentui/date-time-utilities!IDatepickerStrings#openCalendarTitle:member'
     summary: Title for button to open the calendar.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: openCalendarTitle
+    fullName: openCalendarTitle
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'openCalendarTitle: string;'
       return:
-        type: string
-  - name: parseDate
-    uid: '@fluentui/date-time-utilities!IDatepickerStrings#parseDate:member'
-    package: '@fluentui/date-time-utilities!'
-    fullName: parseDate
+        type:
+          - string
+  - uid: '@fluentui/date-time-utilities!IDatepickerStrings#parseDate:member'
     summary: Parse date from string representation into Date type.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: parseDate
+    fullName: parseDate
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'parseDate: (date: string) => Date | null;'
       return:
-        type: '(date: string) =&gt; Date | null'
-extends: ICalendarStrings
+        type:
+          - '(date: string) => Date | null'

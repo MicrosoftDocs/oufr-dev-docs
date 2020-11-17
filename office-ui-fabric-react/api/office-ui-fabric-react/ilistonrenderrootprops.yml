@@ -1,65 +1,68 @@
-### YamlMime:TSType
-name: IListOnRenderRootProps
-uid: 'office-ui-fabric-react!IListOnRenderRootProps:interface'
-package: office-ui-fabric-react!
-fullName: IListOnRenderRootProps
-summary: Props passed to the render override for the list root.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: divProps
-    uid: 'office-ui-fabric-react!IListOnRenderRootProps#divProps:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-ui-fabric-react!IListOnRenderRootProps:interface'
+    summary: Props passed to the render override for the list root.
+    name: IListOnRenderRootProps
+    fullName: IListOnRenderRootProps
+    langs:
+      - typeScript
+    type: interface
+    syntax:
+      typeParameters:
+        - id: T
     package: office-ui-fabric-react!
-    fullName: divProps
+    children:
+      - 'office-ui-fabric-react!IListOnRenderRootProps#divProps:member'
+      - 'office-ui-fabric-react!IListOnRenderRootProps#pages:member'
+      - 'office-ui-fabric-react!IListOnRenderRootProps#rootRef:member'
+      - 'office-ui-fabric-react!IListOnRenderRootProps#surfaceElement:member'
+  - uid: 'office-ui-fabric-react!IListOnRenderRootProps#divProps:member'
     summary: Props to apply to the list root element.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: divProps
+    fullName: divProps
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'divProps: React.HTMLAttributes<HTMLDivElement>;'
       return:
-        type: React.HTMLAttributes&lt;HTMLDivElement&gt;
-  - name: pages
-    uid: 'office-ui-fabric-react!IListOnRenderRootProps#pages:member'
-    package: office-ui-fabric-react!
+        type:
+          - React.HTMLAttributes<HTMLDivElement>
+  - uid: 'office-ui-fabric-react!IListOnRenderRootProps#pages:member'
+    summary: The active pages to be rendered into the list. These will have been rendered using `onRenderPage`<!-- -->.
+    name: pages
     fullName: pages
-    summary: >-
-      The active pages to be rendered into the list. These will have been
-      rendered using `onRenderPage`<!-- -->.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'pages: IPage<T>[];'
       return:
-        type: 'IPage&lt;T&gt;[]'
-  - name: rootRef
-    uid: 'office-ui-fabric-react!IListOnRenderRootProps#rootRef:member'
-    package: office-ui-fabric-react!
+        type:
+          - 'IPage<T>[]'
+  - uid: 'office-ui-fabric-react!IListOnRenderRootProps#rootRef:member'
+    summary: The ref to be applied to the list root. The `List` uses this element to track scroll position and sizing.
+    name: rootRef
     fullName: rootRef
-    summary: >-
-      The ref to be applied to the list root. The `List` uses this element to
-      track scroll position and sizing.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'rootRef: React.Ref<HTMLDivElement>;'
       return:
-        type: React.Ref&lt;HTMLDivElement&gt;
-  - name: surfaceElement
-    uid: 'office-ui-fabric-react!IListOnRenderRootProps#surfaceElement:member'
-    package: office-ui-fabric-react!
-    fullName: surfaceElement
+        type:
+          - React.Ref<HTMLDivElement>
+  - uid: 'office-ui-fabric-react!IListOnRenderRootProps#surfaceElement:member'
     summary: >-
-      The content to be rendered as the list surface element. This will have
-      been rendered using `onRenderSurface`<!-- -->.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      The content to be rendered as the list surface element. This will have been rendered using `onRenderSurface`<!--
+      -->.
+    name: surfaceElement
+    fullName: surfaceElement
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'surfaceElement: JSX.Element | null;'
       return:
-        type: JSX.Element | null
+        type:
+          - JSX.Element | null

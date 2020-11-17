@@ -1,231 +1,237 @@
-### YamlMime:TSType
-name: IRatingProps
-uid: '@fluentui/react-internal!IRatingProps:interface'
-package: '@fluentui/react-internal!'
-fullName: IRatingProps
-summary: Rating component props.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: allowZeroStars
-    uid: '@fluentui/react-internal!IRatingProps#allowZeroStars:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-internal!IRatingProps:interface'
+    summary: Rating component props.
+    name: IRatingProps
+    fullName: IRatingProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - React.HTMLAttributes<HTMLDivElement>
+      - 'React.RefAttributes<HTMLDivElement> '
     package: '@fluentui/react-internal!'
-    fullName: allowZeroStars
+    children:
+      - '@fluentui/react-internal!IRatingProps#allowZeroStars:member'
+      - '@fluentui/react-internal!IRatingProps#ariaLabelFormat:member'
+      - '@fluentui/react-internal!IRatingProps#componentRef:member'
+      - '@fluentui/react-internal!IRatingProps#defaultRating:member'
+      - '@fluentui/react-internal!IRatingProps#disabled:member'
+      - '@fluentui/react-internal!IRatingProps#getAriaLabel:member'
+      - '@fluentui/react-internal!IRatingProps#icon:member'
+      - '@fluentui/react-internal!IRatingProps#max:member'
+      - '@fluentui/react-internal!IRatingProps#min:member'
+      - '@fluentui/react-internal!IRatingProps#onChange:member'
+      - '@fluentui/react-internal!IRatingProps#rating:member'
+      - '@fluentui/react-internal!IRatingProps#readOnly:member'
+      - '@fluentui/react-internal!IRatingProps#size:member'
+      - '@fluentui/react-internal!IRatingProps#styles:member'
+      - '@fluentui/react-internal!IRatingProps#theme:member'
+      - '@fluentui/react-internal!IRatingProps#unselectedIcon:member'
+  - uid: '@fluentui/react-internal!IRatingProps#allowZeroStars:member'
     summary: >-
-      Allow the initial rating value (or updated values passed in through
-      `rating`<!-- -->) to be 0. Note that a value of 0 still won't be
-      selectable by mouse or keyboard.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Allow the initial rating value (or updated values passed in through `rating`<!-- -->) to be 0. Note that a value
+      of 0 still won't be selectable by mouse or keyboard.
+    name: allowZeroStars
+    fullName: allowZeroStars
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'allowZeroStars?: boolean;'
       return:
-        type: boolean
-  - name: ariaLabelFormat
-    uid: '@fluentui/react-internal!IRatingProps#ariaLabelFormat:member'
-    package: '@fluentui/react-internal!'
-    fullName: ariaLabelFormat
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!IRatingProps#ariaLabelFormat:member'
     summary: >-
-      Optional label format for each individual rating star (not the rating
-      control as a whole) that will be read by screen readers. Placeholder `{0}`
-      is the current rating and placeholder `{1}` is the max: for example,
-      `"Select {0} of {1} stars"`<!-- -->.
+      Optional label format for each individual rating star (not the rating control as a whole) that will be read by
+      screen readers. Placeholder `{0}` is the current rating and placeholder `{1}` is the max: for example, `"Select
+      {0} of {1} stars"`<!-- -->.
 
 
-      (To set the label for the control as a whole, use `getAriaLabel` or
-      `aria-label`<!-- -->.)
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      (To set the label for the control as a whole, use `getAriaLabel` or `aria-label`<!-- -->.)
+    name: ariaLabelFormat
+    fullName: ariaLabelFormat
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'ariaLabelFormat?: string;'
       return:
-        type: string
-  - name: componentRef
-    uid: '@fluentui/react-internal!IRatingProps#componentRef:member'
-    package: '@fluentui/react-internal!'
-    fullName: componentRef
+        type:
+          - string
+  - uid: '@fluentui/react-internal!IRatingProps#componentRef:member'
     summary: >-
-      Optional callback to access the IRating interface. Use this instead of ref
-      for accessing the public methods and properties of the component.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Optional callback to access the IRating interface. Use this instead of ref for accessing the public methods and
+      properties of the component.
+    name: componentRef
+    fullName: componentRef
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'componentRef?: IRefObject<IRating>;'
       return:
-        type: IRefObject&lt;IRating&gt;
-  - name: defaultRating
-    uid: '@fluentui/react-internal!IRatingProps#defaultRating:member'
-    package: '@fluentui/react-internal!'
-    fullName: defaultRating
+        type:
+          - IRefObject<IRating>
+  - uid: '@fluentui/react-internal!IRatingProps#defaultRating:member'
     summary: >-
-      Default rating. Must be a number between `min` and `max`<!-- -->. Only
-      provide this if the Rating is an uncontrolled component; otherwise, use
-      the `rating` property.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Default rating. Must be a number between `min` and `max`<!-- -->. Only provide this if the Rating is an
+      uncontrolled component; otherwise, use the `rating` property.
+    name: defaultRating
+    fullName: defaultRating
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'defaultRating?: number;'
       return:
-        type: number
-  - name: disabled
-    uid: '@fluentui/react-internal!IRatingProps#disabled:member'
-    package: '@fluentui/react-internal!'
-    fullName: disabled
+        type:
+          - number
+  - uid: '@fluentui/react-internal!IRatingProps#disabled:member'
     summary: Whether the control should be disabled.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: disabled
+    fullName: disabled
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'disabled?: boolean;'
       return:
-        type: boolean
-  - name: getAriaLabel
-    uid: '@fluentui/react-internal!IRatingProps#getAriaLabel:member'
-    package: '@fluentui/react-internal!'
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!IRatingProps#getAriaLabel:member'
+    name: getAriaLabel
     fullName: getAriaLabel
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'getAriaLabel?: (rating: number, max: number) => string;'
       return:
-        type: '(rating: number, max: number) =&gt; string'
-  - name: icon
-    uid: '@fluentui/react-internal!IRatingProps#icon:member'
-    package: '@fluentui/react-internal!'
-    fullName: icon
+        type:
+          - '(rating: number, max: number) => string'
+  - uid: '@fluentui/react-internal!IRatingProps#icon:member'
     summary: Custom icon name for selected rating elements.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: icon
+    fullName: icon
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'icon?: string;'
       return:
-        type: string
-  - name: max
-    uid: '@fluentui/react-internal!IRatingProps#max:member'
-    package: '@fluentui/react-internal!'
-    fullName: max
+        type:
+          - string
+  - uid: '@fluentui/react-internal!IRatingProps#max:member'
     summary: Maximum rating. Must be &gt;<!-- -->= `min`<!-- -->.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: max
+    fullName: max
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'max?: number;'
       return:
-        type: number
-  - name: min
-    uid: '@fluentui/react-internal!IRatingProps#min:member'
-    package: '@fluentui/react-internal!'
-    fullName: min
+        type:
+          - number
+  - uid: '@fluentui/react-internal!IRatingProps#min:member'
     summary: Minimum rating. Must be &gt;<!-- -->= 0.
-    remarks: ''
-    isPreview: false
-    isDeprecated: true
-    customDeprecatedMessage: Use `allowZeroStars` instead.
+    deprecated:
+      content: Use `allowZeroStars` instead.
+    name: min
+    fullName: min
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'min?: number;'
       return:
-        type: number
-  - name: onChange
-    uid: '@fluentui/react-internal!IRatingProps#onChange:member'
-    package: '@fluentui/react-internal!'
-    fullName: onChange
+        type:
+          - number
+  - uid: '@fluentui/react-internal!IRatingProps#onChange:member'
     summary: Callback for when the rating changes.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onChange
+    fullName: onChange
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        onChange?: (event: React.FormEvent<HTMLElement>, rating?: number) =>
-        void;
+      content: 'onChange?: (event: React.FormEvent<HTMLElement>, rating?: number) => void;'
       return:
-        type: >-
-          (event: React.FormEvent&lt;HTMLElement&gt;, rating?: number) =&gt;
-          void
-  - name: rating
-    uid: '@fluentui/react-internal!IRatingProps#rating:member'
-    package: '@fluentui/react-internal!'
-    fullName: rating
+        type:
+          - '(event: React.FormEvent<HTMLElement>, rating?: number) => void'
+  - uid: '@fluentui/react-internal!IRatingProps#rating:member'
     summary: >-
-      Current rating. Must be a number between `min` and `max`<!-- -->. Only
-      provide this if the Rating is a controlled component where you are
-      maintaining its current state; otherwise, use the `defaultRating`
-      property.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Current rating. Must be a number between `min` and `max`<!-- -->. Only provide this if the Rating is a controlled
+      component where you are maintaining its current state; otherwise, use the `defaultRating` property.
+    name: rating
+    fullName: rating
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'rating?: number;'
       return:
-        type: number
-  - name: readOnly
-    uid: '@fluentui/react-internal!IRatingProps#readOnly:member'
-    package: '@fluentui/react-internal!'
-    fullName: readOnly
+        type:
+          - number
+  - uid: '@fluentui/react-internal!IRatingProps#readOnly:member'
     summary: Optional flag to mark rating control as readOnly
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: readOnly
+    fullName: readOnly
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'readOnly?: boolean;'
       return:
-        type: boolean
-  - name: size
-    uid: '@fluentui/react-internal!IRatingProps#size:member'
-    package: '@fluentui/react-internal!'
-    fullName: size
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!IRatingProps#size:member'
     summary: Size of rating
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: size
+    fullName: size
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'size?: RatingSize;'
       return:
-        type: RatingSize
-  - name: styles
-    uid: '@fluentui/react-internal!IRatingProps#styles:member'
-    package: '@fluentui/react-internal!'
+        type:
+          - RatingSize
+  - uid: '@fluentui/react-internal!IRatingProps#styles:member'
+    summary: Call to provide customized styling that will layer on top of the variant rules.
+    name: styles
     fullName: styles
-    summary: >-
-      Call to provide customized styling that will layer on top of the variant
-      rules.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'styles?: IStyleFunctionOrObject<IRatingStyleProps, IRatingStyles>;'
       return:
-        type: 'IStyleFunctionOrObject&lt;IRatingStyleProps, IRatingStyles&gt;'
-  - name: theme
-    uid: '@fluentui/react-internal!IRatingProps#theme:member'
-    package: '@fluentui/react-internal!'
-    fullName: theme
+        type:
+          - 'IStyleFunctionOrObject<IRatingStyleProps, IRatingStyles>'
+  - uid: '@fluentui/react-internal!IRatingProps#theme:member'
     summary: Theme (provided through customization.)
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'theme?: ITheme;'
       return:
-        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
-  - name: unselectedIcon
-    uid: '@fluentui/react-internal!IRatingProps#unselectedIcon:member'
-    package: '@fluentui/react-internal!'
-    fullName: unselectedIcon
+        type:
+          - '@fluentui/theme!ITheme:interface'
+  - uid: '@fluentui/react-internal!IRatingProps#unselectedIcon:member'
     summary: Custom icon name for unselected rating elements.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: unselectedIcon
+    fullName: unselectedIcon
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'unselectedIcon?: string;'
       return:
-        type: string
-extends: React.HTMLAttributes&lt;HTMLDivElement&gt;
+        type:
+          - string

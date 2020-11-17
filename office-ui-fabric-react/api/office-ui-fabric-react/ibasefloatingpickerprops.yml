@@ -1,328 +1,327 @@
-### YamlMime:TSType
-name: IBaseFloatingPickerProps
-uid: 'office-ui-fabric-react!IBaseFloatingPickerProps:interface'
-package: office-ui-fabric-react!
-fullName: IBaseFloatingPickerProps
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: calloutWidth
-    uid: 'office-ui-fabric-react!IBaseFloatingPickerProps#calloutWidth:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-ui-fabric-react!IBaseFloatingPickerProps:interface'
+    name: IBaseFloatingPickerProps
+    fullName: IBaseFloatingPickerProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'React.ClassAttributes<any> '
+    syntax:
+      typeParameters:
+        - id: T
     package: office-ui-fabric-react!
-    fullName: calloutWidth
+    children:
+      - 'office-ui-fabric-react!IBaseFloatingPickerProps#calloutWidth:member'
+      - 'office-ui-fabric-react!IBaseFloatingPickerProps#className:member'
+      - 'office-ui-fabric-react!IBaseFloatingPickerProps#componentRef:member'
+      - 'office-ui-fabric-react!IBaseFloatingPickerProps#createGenericItem:member'
+      - 'office-ui-fabric-react!IBaseFloatingPickerProps#getTextFromItem:member'
+      - 'office-ui-fabric-react!IBaseFloatingPickerProps#inputElement:member'
+      - 'office-ui-fabric-react!IBaseFloatingPickerProps#onChange:member'
+      - 'office-ui-fabric-react!IBaseFloatingPickerProps#onInputChanged:member'
+      - 'office-ui-fabric-react!IBaseFloatingPickerProps#onRemoveSuggestion:member'
+      - 'office-ui-fabric-react!IBaseFloatingPickerProps#onRenderSuggestionsItem:member'
+      - 'office-ui-fabric-react!IBaseFloatingPickerProps#onResolveSuggestions:member'
+      - 'office-ui-fabric-react!IBaseFloatingPickerProps#onSuggestionsHidden:member'
+      - 'office-ui-fabric-react!IBaseFloatingPickerProps#onSuggestionsShown:member'
+      - 'office-ui-fabric-react!IBaseFloatingPickerProps#onValidateInput:member'
+      - 'office-ui-fabric-react!IBaseFloatingPickerProps#onZeroQuerySuggestion:member'
+      - 'office-ui-fabric-react!IBaseFloatingPickerProps#pickerCalloutProps:member'
+      - 'office-ui-fabric-react!IBaseFloatingPickerProps#pickerSuggestionsProps:member'
+      - 'office-ui-fabric-react!IBaseFloatingPickerProps#resolveDelay:member'
+      - 'office-ui-fabric-react!IBaseFloatingPickerProps#searchingText:member'
+      - 'office-ui-fabric-react!IBaseFloatingPickerProps#selectedItems:member'
+      - 'office-ui-fabric-react!IBaseFloatingPickerProps#showForceResolve:member'
+      - 'office-ui-fabric-react!IBaseFloatingPickerProps#suggestionItems:member'
+      - 'office-ui-fabric-react!IBaseFloatingPickerProps#suggestionsStore:member'
+  - uid: 'office-ui-fabric-react!IBaseFloatingPickerProps#calloutWidth:member'
     summary: Width for the suggestions callout
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: calloutWidth
+    fullName: calloutWidth
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'calloutWidth?: number;'
       return:
-        type: number
-  - name: className
-    uid: 'office-ui-fabric-react!IBaseFloatingPickerProps#className:member'
-    package: office-ui-fabric-react!
-    fullName: className
+        type:
+          - number
+  - uid: 'office-ui-fabric-react!IBaseFloatingPickerProps#className:member'
     summary: ClassName for the picker.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: className
+    fullName: className
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'className?: string;'
       return:
-        type: string
-  - name: componentRef
-    uid: 'office-ui-fabric-react!IBaseFloatingPickerProps#componentRef:member'
-    package: office-ui-fabric-react!
+        type:
+          - string
+  - uid: 'office-ui-fabric-react!IBaseFloatingPickerProps#componentRef:member'
+    name: componentRef
     fullName: componentRef
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'componentRef?: IRefObject<IBaseFloatingPicker>;'
       return:
-        type: IRefObject&lt;IBaseFloatingPicker&gt;
-  - name: createGenericItem
-    uid: 'office-ui-fabric-react!IBaseFloatingPickerProps#createGenericItem:member'
-    package: office-ui-fabric-react!
+        type:
+          - IRefObject<IBaseFloatingPicker>
+  - uid: 'office-ui-fabric-react!IBaseFloatingPickerProps#createGenericItem:member'
+    summary: Function that specifies how arbitrary text entered into the well is handled.
+    name: createGenericItem
     fullName: createGenericItem
-    summary: >-
-      Function that specifies how arbitrary text entered into the well is
-      handled.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        createGenericItem?: (input: string, isValid: boolean) =>
-        ISuggestionModel<T>;
+      content: 'createGenericItem?: (input: string, isValid: boolean) => ISuggestionModel<T>;'
       return:
-        type: '(input: string, isValid: boolean) =&gt; ISuggestionModel&lt;T&gt;'
-  - name: getTextFromItem
-    uid: 'office-ui-fabric-react!IBaseFloatingPickerProps#getTextFromItem:member'
-    package: office-ui-fabric-react!
-    fullName: getTextFromItem
+        type:
+          - '(input: string, isValid: boolean) => ISuggestionModel<T>'
+  - uid: 'office-ui-fabric-react!IBaseFloatingPickerProps#getTextFromItem:member'
     summary: A callback to get text from an item. Used to autofill text in the pickers.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: getTextFromItem
+    fullName: getTextFromItem
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'getTextFromItem?: (item: T, currentValue?: string) => string;'
       return:
-        type: '(item: T, currentValue?: string) =&gt; string'
-  - name: inputElement
-    uid: 'office-ui-fabric-react!IBaseFloatingPickerProps#inputElement:member'
-    package: office-ui-fabric-react!
-    fullName: inputElement
+        type:
+          - '(item: T, currentValue?: string) => string'
+  - uid: 'office-ui-fabric-react!IBaseFloatingPickerProps#inputElement:member'
     summary: The input element to listen on events
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: inputElement
+    fullName: inputElement
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'inputElement?: HTMLInputElement | null;'
       return:
-        type: HTMLInputElement | null
-  - name: onChange
-    uid: 'office-ui-fabric-react!IBaseFloatingPickerProps#onChange:member'
-    package: office-ui-fabric-react!
-    fullName: onChange
+        type:
+          - HTMLInputElement | null
+  - uid: 'office-ui-fabric-react!IBaseFloatingPickerProps#onChange:member'
     summary: A callback for when a suggestion is clicked
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onChange
+    fullName: onChange
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onChange?: (item: T) => void;'
       return:
-        type: '(item: T) =&gt; void'
-  - name: onInputChanged
-    uid: 'office-ui-fabric-react!IBaseFloatingPickerProps#onInputChanged:member'
-    package: office-ui-fabric-react!
-    fullName: onInputChanged
+        type:
+          - '(item: T) => void'
+  - uid: 'office-ui-fabric-react!IBaseFloatingPickerProps#onInputChanged:member'
     summary: A callback for when the input has been changed
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onInputChanged
+    fullName: onInputChanged
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onInputChanged?: (filter: string) => void;'
       return:
-        type: '(filter: string) =&gt; void'
-  - name: onRemoveSuggestion
-    uid: 'office-ui-fabric-react!IBaseFloatingPickerProps#onRemoveSuggestion:member'
-    package: office-ui-fabric-react!
-    fullName: onRemoveSuggestion
+        type:
+          - '(filter: string) => void'
+  - uid: 'office-ui-fabric-react!IBaseFloatingPickerProps#onRemoveSuggestion:member'
     summary: A callback for when an item is removed from the suggestion list
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onRemoveSuggestion
+    fullName: onRemoveSuggestion
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onRemoveSuggestion?: (item: T) => void;'
       return:
-        type: '(item: T) =&gt; void'
-  - name: onRenderSuggestionsItem
-    uid: >-
-      office-ui-fabric-react!IBaseFloatingPickerProps#onRenderSuggestionsItem:member
-    package: office-ui-fabric-react!
-    fullName: onRenderSuggestionsItem
+        type:
+          - '(item: T) => void'
+  - uid: 'office-ui-fabric-react!IBaseFloatingPickerProps#onRenderSuggestionsItem:member'
     summary: Function that specifies how an individual suggestion item will appear.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onRenderSuggestionsItem
+    fullName: onRenderSuggestionsItem
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        onRenderSuggestionsItem?: (props: T, itemProps: ISuggestionItemProps<T>)
-        => JSX.Element;
+      content: 'onRenderSuggestionsItem?: (props: T, itemProps: ISuggestionItemProps<T>) => JSX.Element;'
       return:
-        type: '(props: T, itemProps: ISuggestionItemProps&lt;T&gt;) =&gt; JSX.Element'
-  - name: onResolveSuggestions
-    uid: >-
-      office-ui-fabric-react!IBaseFloatingPickerProps#onResolveSuggestions:member
-    package: office-ui-fabric-react!
-    fullName: onResolveSuggestions
+        type:
+          - '(props: T, itemProps: ISuggestionItemProps<T>) => JSX.Element'
+  - uid: 'office-ui-fabric-react!IBaseFloatingPickerProps#onResolveSuggestions:member'
     summary: >-
-      A callback for what should happen when a person types text into the input.
-      Returns the already selected items so the resolver can filter them out. If
-      used in conjunction with resolveDelay this will only kick off after the
-      delay throttle. Return null if using as a controlled component
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      A callback for what should happen when a person types text into the input. Returns the already selected items so
+      the resolver can filter them out. If used in conjunction with resolveDelay this will only kick off after the delay
+      throttle. Return null if using as a controlled component
+    name: onResolveSuggestions
+    fullName: onResolveSuggestions
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        onResolveSuggestions: (filter: string, selectedItems?: T[]) => T[] |
-        PromiseLike<T[]> | null;
+      content: 'onResolveSuggestions: (filter: string, selectedItems?: T[]) => T[] | PromiseLike<T[]> | null;'
       return:
-        type: >-
-          (filter: string, selectedItems?: T[]) =&gt; T[] |
-          PromiseLike&lt;T[]&gt; | null
-  - name: onSuggestionsHidden
-    uid: 'office-ui-fabric-react!IBaseFloatingPickerProps#onSuggestionsHidden:member'
-    package: office-ui-fabric-react!
-    fullName: onSuggestionsHidden
+        type:
+          - '(filter: string, selectedItems?: T[]) => T[] | PromiseLike<T[]> | null'
+  - uid: 'office-ui-fabric-react!IBaseFloatingPickerProps#onSuggestionsHidden:member'
     summary: The callback that should be called when the suggestions are hiden
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onSuggestionsHidden
+    fullName: onSuggestionsHidden
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onSuggestionsHidden?: () => void;'
       return:
-        type: () =&gt; void
-  - name: onSuggestionsShown
-    uid: 'office-ui-fabric-react!IBaseFloatingPickerProps#onSuggestionsShown:member'
-    package: office-ui-fabric-react!
-    fullName: onSuggestionsShown
+        type:
+          - () => void
+  - uid: 'office-ui-fabric-react!IBaseFloatingPickerProps#onSuggestionsShown:member'
     summary: The callback that should be called when the suggestions are shown
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onSuggestionsShown
+    fullName: onSuggestionsShown
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onSuggestionsShown?: () => void;'
       return:
-        type: () =&gt; void
-  - name: onValidateInput
-    uid: 'office-ui-fabric-react!IBaseFloatingPickerProps#onValidateInput:member'
-    package: office-ui-fabric-react!
-    fullName: onValidateInput
+        type:
+          - () => void
+  - uid: 'office-ui-fabric-react!IBaseFloatingPickerProps#onValidateInput:member'
     summary: A function used to validate if raw text entered into the well can be added
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onValidateInput
+    fullName: onValidateInput
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onValidateInput?: (input: string) => boolean;'
       return:
-        type: '(input: string) =&gt; boolean'
-  - name: onZeroQuerySuggestion
-    uid: >-
-      office-ui-fabric-react!IBaseFloatingPickerProps#onZeroQuerySuggestion:member
-    package: office-ui-fabric-react!
+        type:
+          - '(input: string) => boolean'
+  - uid: 'office-ui-fabric-react!IBaseFloatingPickerProps#onZeroQuerySuggestion:member'
+    summary: 'The suggestions to show on zero query, return null if using as a controlled component'
+    name: onZeroQuerySuggestion
     fullName: onZeroQuerySuggestion
-    summary: >-
-      The suggestions to show on zero query, return null if using as a
-      controlled component
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        onZeroQuerySuggestion?: (selectedItems?: T[]) => T[] | PromiseLike<T[]>
-        | null;
+      content: 'onZeroQuerySuggestion?: (selectedItems?: T[]) => T[] | PromiseLike<T[]> | null;'
       return:
-        type: '(selectedItems?: T[]) =&gt; T[] | PromiseLike&lt;T[]&gt; | null'
-  - name: pickerCalloutProps
-    uid: 'office-ui-fabric-react!IBaseFloatingPickerProps#pickerCalloutProps:member'
-    package: office-ui-fabric-react!
-    fullName: pickerCalloutProps
+        type:
+          - '(selectedItems?: T[]) => T[] | PromiseLike<T[]> | null'
+  - uid: 'office-ui-fabric-react!IBaseFloatingPickerProps#pickerCalloutProps:member'
     summary: The properties that will get passed to the Callout component.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: pickerCalloutProps
+    fullName: pickerCalloutProps
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'pickerCalloutProps?: ICalloutProps;'
       return:
-        type: ICalloutProps
-  - name: pickerSuggestionsProps
-    uid: >-
-      office-ui-fabric-react!IBaseFloatingPickerProps#pickerSuggestionsProps:member
-    package: office-ui-fabric-react!
-    fullName: pickerSuggestionsProps
+        type:
+          - ICalloutProps
+  - uid: 'office-ui-fabric-react!IBaseFloatingPickerProps#pickerSuggestionsProps:member'
     summary: The properties that will get passed to the Suggestions component.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: pickerSuggestionsProps
+    fullName: pickerSuggestionsProps
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'pickerSuggestionsProps?: IBaseFloatingPickerSuggestionProps;'
       return:
-        type: IBaseFloatingPickerSuggestionProps
-  - name: resolveDelay
-    uid: 'office-ui-fabric-react!IBaseFloatingPickerProps#resolveDelay:member'
-    package: office-ui-fabric-react!
-    fullName: resolveDelay
+        type:
+          - IBaseFloatingPickerSuggestionProps
+  - uid: 'office-ui-fabric-react!IBaseFloatingPickerProps#resolveDelay:member'
     summary: >-
-      The delay time in ms before resolving suggestions, which is kicked off
-      when input has been changed. e.g. If a second input change happens within
-      the resolveDelay time, the timer will start over. Only until after the
-      timer completes will onResolveSuggestions be called.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      The delay time in ms before resolving suggestions, which is kicked off when input has been changed. e.g. If a
+      second input change happens within the resolveDelay time, the timer will start over. Only until after the timer
+      completes will onResolveSuggestions be called.
+    name: resolveDelay
+    fullName: resolveDelay
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'resolveDelay?: number;'
       return:
-        type: number
-  - name: searchingText
-    uid: 'office-ui-fabric-react!IBaseFloatingPickerProps#searchingText:member'
-    package: office-ui-fabric-react!
+        type:
+          - number
+  - uid: 'office-ui-fabric-react!IBaseFloatingPickerProps#searchingText:member'
+    summary: The text to display while searching for more results in a limited suggestions list
+    name: searchingText
     fullName: searchingText
-    summary: >-
-      The text to display while searching for more results in a limited
-      suggestions list
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: |-
         searchingText?: ((props: {
                 input: string;
             }) => string) | string;
       return:
-        type: |-
-          ((props: {
-                  input: string;
-              }) =&gt; string) | string
-  - name: selectedItems
-    uid: 'office-ui-fabric-react!IBaseFloatingPickerProps#selectedItems:member'
-    package: office-ui-fabric-react!
-    fullName: selectedItems
+        type:
+          - |-
+            ((props: {
+                    input: string;
+                }) => string) | string
+  - uid: 'office-ui-fabric-react!IBaseFloatingPickerProps#selectedItems:member'
     summary: >-
-      The items that the base picker should currently display as selected. If
-      this is provided then the picker will act as a controlled component.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      The items that the base picker should currently display as selected. If this is provided then the picker will act
+      as a controlled component.
+    name: selectedItems
+    fullName: selectedItems
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'selectedItems?: T[];'
       return:
-        type: 'T[]'
-  - name: showForceResolve
-    uid: 'office-ui-fabric-react!IBaseFloatingPickerProps#showForceResolve:member'
-    package: office-ui-fabric-react!
+        type:
+          - 'T[]'
+  - uid: 'office-ui-fabric-react!IBaseFloatingPickerProps#showForceResolve:member'
+    summary: The callback that should be called to see if the force resolve command should be shown
+    name: showForceResolve
     fullName: showForceResolve
-    summary: >-
-      The callback that should be called to see if the force resolve command
-      should be shown
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'showForceResolve?: () => boolean;'
       return:
-        type: () =&gt; boolean
-  - name: suggestionItems
-    uid: 'office-ui-fabric-react!IBaseFloatingPickerProps#suggestionItems:member'
-    package: office-ui-fabric-react!
+        type:
+          - () => boolean
+  - uid: 'office-ui-fabric-react!IBaseFloatingPickerProps#suggestionItems:member'
+    summary: 'If using as a controlled component, the items to show in the suggestion list'
+    name: suggestionItems
     fullName: suggestionItems
-    summary: >-
-      If using as a controlled component, the items to show in the suggestion
-      list
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'suggestionItems?: T[];'
       return:
-        type: 'T[]'
-  - name: suggestionsStore
-    uid: 'office-ui-fabric-react!IBaseFloatingPickerProps#suggestionsStore:member'
-    package: office-ui-fabric-react!
-    fullName: suggestionsStore
+        type:
+          - 'T[]'
+  - uid: 'office-ui-fabric-react!IBaseFloatingPickerProps#suggestionsStore:member'
     summary: The suggestions store
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: suggestionsStore
+    fullName: suggestionsStore
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'suggestionsStore: SuggestionsStore<T>;'
       return:
-        type: SuggestionsStore&lt;T&gt;
-extends: 'React.ClassAttributes&lt;any&gt; '
+        type:
+          - SuggestionsStore<T>

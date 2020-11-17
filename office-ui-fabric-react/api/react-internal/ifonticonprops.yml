@@ -1,40 +1,41 @@
-### YamlMime:TSType
-name: IFontIconProps
-uid: '@fluentui/react-internal!IFontIconProps:interface'
-package: '@fluentui/react-internal!'
-fullName: IFontIconProps
-summary: >-
-  Props for a basic icon component which only supports font glyphs and can't be
-  targeted by customizations.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: className
-    uid: '@fluentui/react-internal!IFontIconProps#className:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-internal!IFontIconProps:interface'
+    summary: Props for a basic icon component which only supports font glyphs and can't be targeted by customizations.
+    name: IFontIconProps
+    fullName: IFontIconProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'React.HTMLAttributes<HTMLElement> '
     package: '@fluentui/react-internal!'
-    fullName: className
+    children:
+      - '@fluentui/react-internal!IFontIconProps#className:member'
+      - '@fluentui/react-internal!IFontIconProps#iconName:member'
+  - uid: '@fluentui/react-internal!IFontIconProps#className:member'
     summary: Custom class to style the icon.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: className
+    fullName: className
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'className?: string;'
       return:
-        type: string
-  - name: iconName
-    uid: '@fluentui/react-internal!IFontIconProps#iconName:member'
-    package: '@fluentui/react-internal!'
-    fullName: iconName
+        type:
+          - string
+  - uid: '@fluentui/react-internal!IFontIconProps#iconName:member'
     summary: >-
-      The name of the icon to use from the icon font. If string is empty, a
-      placeholder icon will be rendered the same width as an icon.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      The name of the icon to use from the icon font. If string is empty, a placeholder icon will be rendered the same
+      width as an icon.
+    name: iconName
+    fullName: iconName
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'iconName?: string;'
       return:
-        type: string
-extends: 'React.HTMLAttributes&lt;HTMLElement&gt; '
+        type:
+          - string

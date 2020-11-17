@@ -1,384 +1,385 @@
-### YamlMime:TSType
-name: SuggestionsControl
-uid: '@fluentui/react-internal!SuggestionsControl:class'
-package: '@fluentui/react-internal!'
-fullName: SuggestionsControl
-summary: >-
-  Class when used with SuggestionsStore, renders a suggestions control with
-  customizable headers and footers
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: class
-constructors:
-  - name: (constructor)(suggestionsProps)
-    uid: '@fluentui/react-internal!SuggestionsControl:constructor(1)'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-internal!SuggestionsControl:class'
+    summary: 'Class when used with SuggestionsStore, renders a suggestions control with customizable headers and footers'
+    name: SuggestionsControl
+    fullName: SuggestionsControl
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'React.Component<ISuggestionsControlProps<T>, ISuggestionsControlState<T>> '
     package: '@fluentui/react-internal!'
-    fullName: (constructor)(suggestionsProps)
+    children:
+      - '@fluentui/react-internal!SuggestionsControl#_forceResolveButton:member'
+      - '@fluentui/react-internal!SuggestionsControl#_renderSuggestions:member(1)'
+      - '@fluentui/react-internal!SuggestionsControl#_searchForMoreButton:member'
+      - '@fluentui/react-internal!SuggestionsControl#_selectedElement:member'
+      - '@fluentui/react-internal!SuggestionsControl#_suggestions:member'
+      - '@fluentui/react-internal!SuggestionsControl:constructor(1)'
+      - '@fluentui/react-internal!SuggestionsControl#componentDidMount:member(1)'
+      - '@fluentui/react-internal!SuggestionsControl#componentDidUpdate:member(1)'
+      - '@fluentui/react-internal!SuggestionsControl#componentWillUnmount:member(1)'
+      - '@fluentui/react-internal!SuggestionsControl#currentSuggestion:member'
+      - '@fluentui/react-internal!SuggestionsControl#currentSuggestionIndex:member'
+      - '@fluentui/react-internal!SuggestionsControl#executeSelectedAction:member(1)'
+      - '@fluentui/react-internal!SuggestionsControl#handleKeyDown:member(1)'
+      - '@fluentui/react-internal!SuggestionsControl#hasSelection:member(1)'
+      - '@fluentui/react-internal!SuggestionsControl#hasSuggestionSelected:member(1)'
+      - '@fluentui/react-internal!SuggestionsControl#removeSuggestion:member(1)'
+      - '@fluentui/react-internal!SuggestionsControl#render:member(1)'
+      - '@fluentui/react-internal!SuggestionsControl#renderFooterItems:member(1)'
+      - '@fluentui/react-internal!SuggestionsControl#renderHeaderItems:member(1)'
+      - '@fluentui/react-internal!SuggestionsControl#resetSelectedItem:member(1)'
+      - '@fluentui/react-internal!SuggestionsControl#scrollSelected:member(1)'
+      - '@fluentui/react-internal!SuggestionsControl#selectedElement:member'
+      - '@fluentui/react-internal!SuggestionsControl#selectFirstItem:member(1)'
+      - '@fluentui/react-internal!SuggestionsControl#selectLastItem:member(1)'
+      - '@fluentui/react-internal!SuggestionsControl#selectNextItem:member(1)'
+      - '@fluentui/react-internal!SuggestionsControl#selectPreviousItem:member(1)'
+  - uid: '@fluentui/react-internal!SuggestionsControl#_forceResolveButton:member'
+    name: _forceResolveButton
+    fullName: _forceResolveButton
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'protected _forceResolveButton: IButton;'
+      return:
+        type:
+          - 'office-ui-fabric-react!IButton:interface'
+  - uid: '@fluentui/react-internal!SuggestionsControl#_renderSuggestions:member(1)'
+    name: _renderSuggestions()
+    fullName: _renderSuggestions()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'protected _renderSuggestions(): JSX.Element;'
+      return:
+        type:
+          - JSX.Element
+        description: ''
+  - uid: '@fluentui/react-internal!SuggestionsControl#_searchForMoreButton:member'
+    name: _searchForMoreButton
+    fullName: _searchForMoreButton
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'protected _searchForMoreButton: IButton;'
+      return:
+        type:
+          - 'office-ui-fabric-react!IButton:interface'
+  - uid: '@fluentui/react-internal!SuggestionsControl#_selectedElement:member'
+    name: _selectedElement
+    fullName: _selectedElement
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'protected _selectedElement: React.RefObject<HTMLDivElement>;'
+      return:
+        type:
+          - React.RefObject<HTMLDivElement>
+  - uid: '@fluentui/react-internal!SuggestionsControl#_suggestions:member'
+    name: _suggestions
+    fullName: _suggestions
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'protected _suggestions: React.RefObject<SuggestionsCore<T>>;'
+      return:
+        type:
+          - React.RefObject<SuggestionsCore<T>>
+  - uid: '@fluentui/react-internal!SuggestionsControl:constructor(1)'
     summary: Constructs a new instance of the `SuggestionsControl` class
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: (constructor)(suggestionsProps)
+    fullName: (constructor)(suggestionsProps)
+    langs:
+      - typeScript
+    type: constructor
     syntax:
       content: 'constructor(suggestionsProps: ISuggestionsControlProps<T>);'
       parameters:
         - id: suggestionsProps
           description: ''
-          type: ISuggestionsControlProps&lt;T&gt;
-properties:
-  - name: _forceResolveButton
-    uid: '@fluentui/react-internal!SuggestionsControl#_forceResolveButton:member'
-    package: '@fluentui/react-internal!'
-    fullName: _forceResolveButton
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'protected _forceResolveButton: IButton;'
-      return:
-        type: '<xref uid="office-ui-fabric-react!IButton:interface" />'
-  - name: _searchForMoreButton
-    uid: '@fluentui/react-internal!SuggestionsControl#_searchForMoreButton:member'
-    package: '@fluentui/react-internal!'
-    fullName: _searchForMoreButton
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'protected _searchForMoreButton: IButton;'
-      return:
-        type: '<xref uid="office-ui-fabric-react!IButton:interface" />'
-  - name: _selectedElement
-    uid: '@fluentui/react-internal!SuggestionsControl#_selectedElement:member'
-    package: '@fluentui/react-internal!'
-    fullName: _selectedElement
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'protected _selectedElement: React.RefObject<HTMLDivElement>;'
-      return:
-        type: React.RefObject&lt;HTMLDivElement&gt;
-  - name: _suggestions
-    uid: '@fluentui/react-internal!SuggestionsControl#_suggestions:member'
-    package: '@fluentui/react-internal!'
-    fullName: _suggestions
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'protected _suggestions: React.RefObject<SuggestionsCore<T>>;'
-      return:
-        type: React.RefObject&lt;SuggestionsCore&lt;T&gt;&gt;
-  - name: currentSuggestion
-    uid: '@fluentui/react-internal!SuggestionsControl#currentSuggestion:member'
-    package: '@fluentui/react-internal!'
-    fullName: currentSuggestion
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'get currentSuggestion(): ISuggestionModel<T> | undefined;'
-      return:
-        type: ISuggestionModel&lt;T&gt; | undefined
-  - name: currentSuggestionIndex
-    uid: '@fluentui/react-internal!SuggestionsControl#currentSuggestionIndex:member'
-    package: '@fluentui/react-internal!'
-    fullName: currentSuggestionIndex
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'get currentSuggestionIndex(): number;'
-      return:
-        type: number
-  - name: selectedElement
-    uid: '@fluentui/react-internal!SuggestionsControl#selectedElement:member'
-    package: '@fluentui/react-internal!'
-    fullName: selectedElement
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'get selectedElement(): HTMLDivElement | undefined;'
-      return:
-        type: HTMLDivElement | undefined
-methods:
-  - name: _renderSuggestions()
-    uid: '@fluentui/react-internal!SuggestionsControl#_renderSuggestions:member(1)'
-    package: '@fluentui/react-internal!'
-    fullName: _renderSuggestions()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'protected _renderSuggestions(): JSX.Element;'
-      return:
-        type: JSX.Element
-        description: ''
-  - name: componentDidMount()
-    uid: '@fluentui/react-internal!SuggestionsControl#componentDidMount:member(1)'
-    package: '@fluentui/react-internal!'
+          type:
+            - ISuggestionsControlProps<T>
+  - uid: '@fluentui/react-internal!SuggestionsControl#componentDidMount:member(1)'
+    name: componentDidMount()
     fullName: componentDidMount()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'componentDidMount(): void;'
       return:
-        type: void
+        type:
+          - void
         description: ''
-  - name: componentDidUpdate(oldProps)
-    uid: '@fluentui/react-internal!SuggestionsControl#componentDidUpdate:member(1)'
-    package: '@fluentui/react-internal!'
+  - uid: '@fluentui/react-internal!SuggestionsControl#componentDidUpdate:member(1)'
+    name: componentDidUpdate(oldProps)
     fullName: componentDidUpdate(oldProps)
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'componentDidUpdate(oldProps: ISuggestionsControlProps<T>): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: oldProps
           description: ''
-          type: ISuggestionsControlProps&lt;T&gt;
-      return:
-        type: void
-        description: ''
-  - name: componentWillUnmount()
-    uid: '@fluentui/react-internal!SuggestionsControl#componentWillUnmount:member(1)'
-    package: '@fluentui/react-internal!'
+          type:
+            - ISuggestionsControlProps<T>
+  - uid: '@fluentui/react-internal!SuggestionsControl#componentWillUnmount:member(1)'
+    name: componentWillUnmount()
     fullName: componentWillUnmount()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'componentWillUnmount(): void;'
       return:
-        type: void
+        type:
+          - void
         description: ''
-  - name: executeSelectedAction()
-    uid: >-
-      @fluentui/react-internal!SuggestionsControl#executeSelectedAction:member(1)
-    package: '@fluentui/react-internal!'
+  - uid: '@fluentui/react-internal!SuggestionsControl#currentSuggestion:member'
+    name: currentSuggestion
+    fullName: currentSuggestion
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'get currentSuggestion(): ISuggestionModel<T> | undefined;'
+      return:
+        type:
+          - ISuggestionModel<T> | undefined
+  - uid: '@fluentui/react-internal!SuggestionsControl#currentSuggestionIndex:member'
+    name: currentSuggestionIndex
+    fullName: currentSuggestionIndex
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'get currentSuggestionIndex(): number;'
+      return:
+        type:
+          - number
+  - uid: '@fluentui/react-internal!SuggestionsControl#executeSelectedAction:member(1)'
+    name: executeSelectedAction()
     fullName: executeSelectedAction()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'executeSelectedAction(): void;'
       return:
-        type: void
+        type:
+          - void
         description: ''
-  - name: handleKeyDown(keyCode)
-    uid: '@fluentui/react-internal!SuggestionsControl#handleKeyDown:member(1)'
-    package: '@fluentui/react-internal!'
+  - uid: '@fluentui/react-internal!SuggestionsControl#handleKeyDown:member(1)'
+    summary: 'Handles the key down, returns true, if the event was handled, false otherwise'
+    name: handleKeyDown(keyCode)
     fullName: handleKeyDown(keyCode)
-    summary: >-
-      Handles the key down, returns true, if the event was handled, false
-      otherwise
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'handleKeyDown(keyCode: number): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
       parameters:
         - id: keyCode
           description: The keyCode to handle
-          type: number
-      return:
-        type: boolean
-        description: ''
-  - name: hasSelection()
-    uid: '@fluentui/react-internal!SuggestionsControl#hasSelection:member(1)'
-    package: '@fluentui/react-internal!'
+          type:
+            - number
+  - uid: '@fluentui/react-internal!SuggestionsControl#hasSelection:member(1)'
+    name: hasSelection()
     fullName: hasSelection()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'hasSelection(): boolean;'
       return:
-        type: boolean
+        type:
+          - boolean
         description: ''
-  - name: hasSuggestionSelected()
-    uid: >-
-      @fluentui/react-internal!SuggestionsControl#hasSuggestionSelected:member(1)
-    package: '@fluentui/react-internal!'
+  - uid: '@fluentui/react-internal!SuggestionsControl#hasSuggestionSelected:member(1)'
+    name: hasSuggestionSelected()
     fullName: hasSuggestionSelected()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'hasSuggestionSelected(): boolean;'
       return:
-        type: boolean
+        type:
+          - boolean
         description: ''
-  - name: removeSuggestion(index)
-    uid: '@fluentui/react-internal!SuggestionsControl#removeSuggestion:member(1)'
-    package: '@fluentui/react-internal!'
+  - uid: '@fluentui/react-internal!SuggestionsControl#removeSuggestion:member(1)'
+    name: removeSuggestion(index)
     fullName: removeSuggestion(index)
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'removeSuggestion(index?: number): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: index
           description: ''
-          type: number
-      return:
-        type: void
-        description: ''
-  - name: render()
-    uid: '@fluentui/react-internal!SuggestionsControl#render:member(1)'
-    package: '@fluentui/react-internal!'
+          type:
+            - number
+  - uid: '@fluentui/react-internal!SuggestionsControl#render:member(1)'
+    name: render()
     fullName: render()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'render(): JSX.Element;'
       return:
-        type: JSX.Element
+        type:
+          - JSX.Element
         description: ''
-  - name: renderFooterItems()
-    uid: '@fluentui/react-internal!SuggestionsControl#renderFooterItems:member(1)'
-    package: '@fluentui/react-internal!'
+  - uid: '@fluentui/react-internal!SuggestionsControl#renderFooterItems:member(1)'
+    name: renderFooterItems()
     fullName: renderFooterItems()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'protected renderFooterItems(): JSX.Element | null;'
       return:
-        type: JSX.Element | null
+        type:
+          - JSX.Element | null
         description: ''
-  - name: renderHeaderItems()
-    uid: '@fluentui/react-internal!SuggestionsControl#renderHeaderItems:member(1)'
-    package: '@fluentui/react-internal!'
+  - uid: '@fluentui/react-internal!SuggestionsControl#renderHeaderItems:member(1)'
+    name: renderHeaderItems()
     fullName: renderHeaderItems()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'protected renderHeaderItems(): JSX.Element | null;'
       return:
-        type: JSX.Element | null
+        type:
+          - JSX.Element | null
         description: ''
-  - name: resetSelectedItem()
-    uid: '@fluentui/react-internal!SuggestionsControl#resetSelectedItem:member(1)'
-    package: '@fluentui/react-internal!'
-    fullName: resetSelectedItem()
+  - uid: '@fluentui/react-internal!SuggestionsControl#resetSelectedItem:member(1)'
     summary: Resets the selected state and selects the first selectable item
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: resetSelectedItem()
+    fullName: resetSelectedItem()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'protected resetSelectedItem(): void;'
       return:
-        type: void
+        type:
+          - void
         description: ''
-  - name: scrollSelected()
-    uid: '@fluentui/react-internal!SuggestionsControl#scrollSelected:member(1)'
-    package: '@fluentui/react-internal!'
+  - uid: '@fluentui/react-internal!SuggestionsControl#scrollSelected:member(1)'
+    name: scrollSelected()
     fullName: scrollSelected()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'scrollSelected(): void;'
       return:
-        type: void
+        type:
+          - void
         description: ''
-  - name: selectFirstItem()
-    uid: '@fluentui/react-internal!SuggestionsControl#selectFirstItem:member(1)'
-    package: '@fluentui/react-internal!'
-    fullName: selectFirstItem()
+  - uid: '@fluentui/react-internal!SuggestionsControl#selectedElement:member'
+    name: selectedElement
+    fullName: selectedElement
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'get selectedElement(): HTMLDivElement | undefined;'
+      return:
+        type:
+          - HTMLDivElement | undefined
+  - uid: '@fluentui/react-internal!SuggestionsControl#selectFirstItem:member(1)'
     summary: Selects the first item
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: selectFirstItem()
+    fullName: selectFirstItem()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'protected selectFirstItem(): void;'
       return:
-        type: void
+        type:
+          - void
         description: ''
-  - name: selectLastItem()
-    uid: '@fluentui/react-internal!SuggestionsControl#selectLastItem:member(1)'
-    package: '@fluentui/react-internal!'
-    fullName: selectLastItem()
+  - uid: '@fluentui/react-internal!SuggestionsControl#selectLastItem:member(1)'
     summary: Selects the last item
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: selectLastItem()
+    fullName: selectLastItem()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'protected selectLastItem(): void;'
       return:
-        type: void
+        type:
+          - void
         description: ''
-  - name: 'selectNextItem(itemType, originalItemType)'
-    uid: '@fluentui/react-internal!SuggestionsControl#selectNextItem:member(1)'
-    package: '@fluentui/react-internal!'
-    fullName: 'selectNextItem(itemType, originalItemType)'
+  - uid: '@fluentui/react-internal!SuggestionsControl#selectNextItem:member(1)'
     summary: Selects the next selectable item
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: 'selectNextItem(itemType, originalItemType)'
+    fullName: 'selectNextItem(itemType, originalItemType)'
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        protected selectNextItem(itemType: SuggestionItemType,
-        originalItemType?: SuggestionItemType): void;
+      content: 'protected selectNextItem(itemType: SuggestionItemType, originalItemType?: SuggestionItemType): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: itemType
           description: ''
-          type: SuggestionItemType
+          type:
+            - SuggestionItemType
         - id: originalItemType
           description: ''
-          type: SuggestionItemType
-      return:
-        type: void
-        description: ''
-  - name: 'selectPreviousItem(itemType, originalItemType)'
-    uid: '@fluentui/react-internal!SuggestionsControl#selectPreviousItem:member(1)'
-    package: '@fluentui/react-internal!'
-    fullName: 'selectPreviousItem(itemType, originalItemType)'
+          type:
+            - SuggestionItemType
+  - uid: '@fluentui/react-internal!SuggestionsControl#selectPreviousItem:member(1)'
     summary: Selects the previous selectable item
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: 'selectPreviousItem(itemType, originalItemType)'
+    fullName: 'selectPreviousItem(itemType, originalItemType)'
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        protected selectPreviousItem(itemType: SuggestionItemType,
-        originalItemType?: SuggestionItemType): void;
+      content: 'protected selectPreviousItem(itemType: SuggestionItemType, originalItemType?: SuggestionItemType): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: itemType
           description: ''
-          type: SuggestionItemType
+          type:
+            - SuggestionItemType
         - id: originalItemType
           description: ''
-          type: SuggestionItemType
-      return:
-        type: void
-        description: ''
-extends: >-
-  React.Component&lt;ISuggestionsControlProps&lt;T&gt;,
-  ISuggestionsControlState&lt;T&gt;&gt; 
+          type:
+            - SuggestionItemType

@@ -1,176 +1,185 @@
-### YamlMime:TSType
-name: IGroup
-uid: '@fluentui/react!IGroup:interface'
-package: '@fluentui/react!'
-fullName: IGroup
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: ariaLabel
-    uid: '@fluentui/react!IGroup#ariaLabel:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react!IGroup:interface'
+    name: IGroup
+    fullName: IGroup
+    langs:
+      - typeScript
+    type: interface
     package: '@fluentui/react!'
-    fullName: ariaLabel
+    children:
+      - '@fluentui/react!IGroup#ariaLabel:member'
+      - '@fluentui/react!IGroup#children:member'
+      - '@fluentui/react!IGroup#count:member'
+      - '@fluentui/react!IGroup#data:member'
+      - '@fluentui/react!IGroup#hasMoreData:member'
+      - '@fluentui/react!IGroup#isCollapsed:member'
+      - '@fluentui/react!IGroup#isDropEnabled:member'
+      - '@fluentui/react!IGroup#isSelected:member'
+      - '@fluentui/react!IGroup#isShowingAll:member'
+      - '@fluentui/react!IGroup#key:member'
+      - '@fluentui/react!IGroup#level:member'
+      - '@fluentui/react!IGroup#name:member'
+      - '@fluentui/react!IGroup#startIndex:member'
+  - uid: '@fluentui/react!IGroup#ariaLabel:member'
     summary: >-
-      Optional accessibility label (aria-label) attribute that will be stamped
-      on to the element. If none is specified, the arai-label attribute will
-      contain the group name
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Optional accessibility label (aria-label) attribute that will be stamped on to the element. If none is specified,
+      the arai-label attribute will contain the group name
+    name: ariaLabel
+    fullName: ariaLabel
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'ariaLabel?: string;'
       return:
-        type: string
-  - name: children
-    uid: '@fluentui/react!IGroup#children:member'
-    package: '@fluentui/react!'
-    fullName: children
+        type:
+          - string
+  - uid: '@fluentui/react!IGroup#children:member'
     summary: 'Nested groups, if any.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: children
+    fullName: children
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'children?: IGroup[];'
       return:
-        type: 'IGroup[]'
-  - name: count
-    uid: '@fluentui/react!IGroup#count:member'
-    package: '@fluentui/react!'
-    fullName: count
+        type:
+          - 'IGroup[]'
+  - uid: '@fluentui/react!IGroup#count:member'
     summary: How many items should be rendered within the group.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: count
+    fullName: count
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'count: number;'
       return:
-        type: number
-  - name: data
-    uid: '@fluentui/react!IGroup#data:member'
-    package: '@fluentui/react!'
-    fullName: data
+        type:
+          - number
+  - uid: '@fluentui/react!IGroup#data:member'
     summary: Arbitrary data required to be preserved by the caller.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: data
+    fullName: data
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'data?: any;'
       return:
-        type: any
-  - name: hasMoreData
-    uid: '@fluentui/react!IGroup#hasMoreData:member'
-    package: '@fluentui/react!'
-    fullName: hasMoreData
+        type:
+          - any
+  - uid: '@fluentui/react!IGroup#hasMoreData:member'
     summary: >-
-      Optional flag to indicate the group has more data to load than the current
-      group count indicated. This can be used to indicate that a plus should be
-      rendered next to the group count in the header.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Optional flag to indicate the group has more data to load than the current group count indicated. This can be used
+      to indicate that a plus should be rendered next to the group count in the header.
+    name: hasMoreData
+    fullName: hasMoreData
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'hasMoreData?: boolean;'
       return:
-        type: boolean
-  - name: isCollapsed
-    uid: '@fluentui/react!IGroup#isCollapsed:member'
-    package: '@fluentui/react!'
-    fullName: isCollapsed
+        type:
+          - boolean
+  - uid: '@fluentui/react!IGroup#isCollapsed:member'
     summary: If all the items in the group are collapsed.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: isCollapsed
+    fullName: isCollapsed
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'isCollapsed?: boolean;'
       return:
-        type: boolean
-  - name: isDropEnabled
-    uid: '@fluentui/react!IGroup#isDropEnabled:member'
-    package: '@fluentui/react!'
-    fullName: isDropEnabled
+        type:
+          - boolean
+  - uid: '@fluentui/react!IGroup#isDropEnabled:member'
     summary: If drag/drop is enabled for the group header.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: isDropEnabled
+    fullName: isDropEnabled
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'isDropEnabled?: boolean;'
       return:
-        type: boolean
-  - name: isSelected
-    uid: '@fluentui/react!IGroup#isSelected:member'
-    package: '@fluentui/react!'
+        type:
+          - boolean
+  - uid: '@fluentui/react!IGroup#isSelected:member'
+    summary: 'Deprecated at 1.0.0, selection state will be controled by the selection store only.'
+    deprecated:
+      content: 'At 1.0.0, selection state wil be controlled by the selection store only.'
+    name: isSelected
     fullName: isSelected
-    summary: >-
-      Deprecated at 1.0.0, selection state will be controled by the selection
-      store only.
-    remarks: ''
-    isPreview: false
-    isDeprecated: true
-    customDeprecatedMessage: 'At 1.0.0, selection state wil be controlled by the selection store only.'
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'isSelected?: boolean;'
       return:
-        type: boolean
-  - name: isShowingAll
-    uid: '@fluentui/react!IGroup#isShowingAll:member'
-    package: '@fluentui/react!'
-    fullName: isShowingAll
+        type:
+          - boolean
+  - uid: '@fluentui/react!IGroup#isShowingAll:member'
     summary: If the items within the group are summarized or showing all.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: isShowingAll
+    fullName: isShowingAll
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'isShowingAll?: boolean;'
       return:
-        type: boolean
-  - name: key
-    uid: '@fluentui/react!IGroup#key:member'
-    package: '@fluentui/react!'
-    fullName: key
+        type:
+          - boolean
+  - uid: '@fluentui/react!IGroup#key:member'
     summary: Unique identifier for the group.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: key
+    fullName: key
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'key: string;'
       return:
-        type: string
-  - name: level
-    uid: '@fluentui/react!IGroup#level:member'
-    package: '@fluentui/react!'
-    fullName: level
+        type:
+          - string
+  - uid: '@fluentui/react!IGroup#level:member'
     summary: Number indicating the level of nested groups.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: level
+    fullName: level
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'level?: number;'
       return:
-        type: number
-  - name: name
-    uid: '@fluentui/react!IGroup#name:member'
-    package: '@fluentui/react!'
-    fullName: name
+        type:
+          - number
+  - uid: '@fluentui/react!IGroup#name:member'
     summary: 'Display name for the group, rendered on the header.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'name: string;'
       return:
-        type: string
-  - name: startIndex
-    uid: '@fluentui/react!IGroup#startIndex:member'
-    package: '@fluentui/react!'
-    fullName: startIndex
+        type:
+          - string
+  - uid: '@fluentui/react!IGroup#startIndex:member'
     summary: Start index for the group within the given items.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: startIndex
+    fullName: startIndex
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'startIndex: number;'
       return:
-        type: number
+        type:
+          - number

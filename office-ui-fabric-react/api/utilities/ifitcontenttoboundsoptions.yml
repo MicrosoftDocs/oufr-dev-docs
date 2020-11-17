@@ -1,63 +1,63 @@
-### YamlMime:TSType
-name: IFitContentToBoundsOptions
-uid: '@fluentui/utilities!IFitContentToBoundsOptions:interface'
-package: '@fluentui/utilities!'
-fullName: IFitContentToBoundsOptions
-summary: Options for fitting content sizes into bounding sizes.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: boundsSize
-    uid: '@fluentui/utilities!IFitContentToBoundsOptions#boundsSize:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/utilities!IFitContentToBoundsOptions:interface'
+    summary: Options for fitting content sizes into bounding sizes.
+    name: IFitContentToBoundsOptions
+    fullName: IFitContentToBoundsOptions
+    langs:
+      - typeScript
+    type: interface
     package: '@fluentui/utilities!'
-    fullName: boundsSize
+    children:
+      - '@fluentui/utilities!IFitContentToBoundsOptions#boundsSize:member'
+      - '@fluentui/utilities!IFitContentToBoundsOptions#contentSize:member'
+      - '@fluentui/utilities!IFitContentToBoundsOptions#maxScale:member'
+      - '@fluentui/utilities!IFitContentToBoundsOptions#mode:member'
+  - uid: '@fluentui/utilities!IFitContentToBoundsOptions#boundsSize:member'
     summary: The size of the bounds.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: boundsSize
+    fullName: boundsSize
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'boundsSize: ISize;'
       return:
-        type: '<xref uid="@fluentui/utilities!ISize:interface" />'
-  - name: contentSize
-    uid: '@fluentui/utilities!IFitContentToBoundsOptions#contentSize:member'
-    package: '@fluentui/utilities!'
+        type:
+          - '@fluentui/utilities!ISize:interface'
+  - uid: '@fluentui/utilities!IFitContentToBoundsOptions#contentSize:member'
+    summary: The size of the content to fit to the bounds. The output will be proportional to this value.
+    name: contentSize
     fullName: contentSize
-    summary: >-
-      The size of the content to fit to the bounds. The output will be
-      proportional to this value.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'contentSize: ISize;'
       return:
-        type: '<xref uid="@fluentui/utilities!ISize:interface" />'
-  - name: maxScale
-    uid: '@fluentui/utilities!IFitContentToBoundsOptions#maxScale:member'
-    package: '@fluentui/utilities!'
+        type:
+          - '@fluentui/utilities!ISize:interface'
+  - uid: '@fluentui/utilities!IFitContentToBoundsOptions#maxScale:member'
+    summary: An optional maximum scale factor to apply. The default is 1. Use Infinity for an unbounded resize.
+    name: maxScale
     fullName: maxScale
-    summary: >-
-      An optional maximum scale factor to apply. The default is 1. Use Infinity
-      for an unbounded resize.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'maxScale?: number;'
       return:
-        type: number
-  - name: mode
-    uid: '@fluentui/utilities!IFitContentToBoundsOptions#mode:member'
-    package: '@fluentui/utilities!'
-    fullName: mode
+        type:
+          - number
+  - uid: '@fluentui/utilities!IFitContentToBoundsOptions#mode:member'
     summary: 'The fit mode to apply, either ''contain'' or ''cover''.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: mode
+    fullName: mode
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'mode: FitMode;'
       return:
-        type: FitMode
+        type:
+          - FitMode

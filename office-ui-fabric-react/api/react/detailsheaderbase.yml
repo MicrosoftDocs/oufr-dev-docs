@@ -1,37 +1,85 @@
-### YamlMime:TSType
-name: DetailsHeaderBase
-uid: '@fluentui/react!DetailsHeaderBase:class'
-package: '@fluentui/react!'
-fullName: DetailsHeaderBase
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: class
-constructors:
-  - name: (constructor)(props)
-    uid: '@fluentui/react!DetailsHeaderBase:constructor(1)'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react!DetailsHeaderBase:class'
+    name: DetailsHeaderBase
+    fullName: DetailsHeaderBase
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'React.Component<IDetailsHeaderBaseProps, IDetailsHeaderState> '
+    implements:
+      - 'IDetailsHeader '
     package: '@fluentui/react!'
-    fullName: (constructor)(props)
+    children:
+      - '@fluentui/react!DetailsHeaderBase:constructor(1)'
+      - '@fluentui/react!DetailsHeaderBase#componentDidMount:member(1)'
+      - '@fluentui/react!DetailsHeaderBase#componentDidUpdate:member(1)'
+      - '@fluentui/react!DetailsHeaderBase#componentWillUnmount:member(1)'
+      - '@fluentui/react!DetailsHeaderBase.defaultProps:member'
+      - '@fluentui/react!DetailsHeaderBase#focus:member(1)'
+      - '@fluentui/react!DetailsHeaderBase#render:member(1)'
+  - uid: '@fluentui/react!DetailsHeaderBase:constructor(1)'
     summary: Constructs a new instance of the `DetailsHeaderBase` class
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: (constructor)(props)
+    fullName: (constructor)(props)
+    langs:
+      - typeScript
+    type: constructor
     syntax:
       content: 'constructor(props: IDetailsHeaderBaseProps);'
       parameters:
         - id: props
           description: ''
-          type: IDetailsHeaderBaseProps
-properties:
-  - name: defaultProps
-    uid: '@fluentui/react!DetailsHeaderBase.defaultProps:member'
-    package: '@fluentui/react!'
+          type:
+            - IDetailsHeaderBaseProps
+  - uid: '@fluentui/react!DetailsHeaderBase#componentDidMount:member(1)'
+    name: componentDidMount()
+    fullName: componentDidMount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'componentDidMount(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: '@fluentui/react!DetailsHeaderBase#componentDidUpdate:member(1)'
+    name: componentDidUpdate(prevProps)
+    fullName: componentDidUpdate(prevProps)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'componentDidUpdate(prevProps: IDetailsHeaderBaseProps): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: prevProps
+          description: ''
+          type:
+            - IDetailsHeaderBaseProps
+  - uid: '@fluentui/react!DetailsHeaderBase#componentWillUnmount:member(1)'
+    name: componentWillUnmount()
+    fullName: componentWillUnmount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'componentWillUnmount(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: '@fluentui/react!DetailsHeaderBase.defaultProps:member'
+    name: defaultProps
     fullName: defaultProps
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: |-
         static defaultProps: {
@@ -40,80 +88,35 @@ properties:
                 useFastIcons: boolean;
             };
       return:
-        type: |-
-          {
-                  selectAllVisibility: SelectAllVisibility;
-                  collapseAllVisibility: CollapseAllVisibility;
-                  useFastIcons: boolean;
-              }
-methods:
-  - name: componentDidMount()
-    uid: '@fluentui/react!DetailsHeaderBase#componentDidMount:member(1)'
-    package: '@fluentui/react!'
-    fullName: componentDidMount()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'componentDidMount(): void;'
-      return:
-        type: void
-        description: ''
-  - name: componentDidUpdate(prevProps)
-    uid: '@fluentui/react!DetailsHeaderBase#componentDidUpdate:member(1)'
-    package: '@fluentui/react!'
-    fullName: componentDidUpdate(prevProps)
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'componentDidUpdate(prevProps: IDetailsHeaderBaseProps): void;'
-      parameters:
-        - id: prevProps
-          description: ''
-          type: IDetailsHeaderBaseProps
-      return:
-        type: void
-        description: ''
-  - name: componentWillUnmount()
-    uid: '@fluentui/react!DetailsHeaderBase#componentWillUnmount:member(1)'
-    package: '@fluentui/react!'
-    fullName: componentWillUnmount()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'componentWillUnmount(): void;'
-      return:
-        type: void
-        description: ''
-  - name: focus()
-    uid: '@fluentui/react!DetailsHeaderBase#focus:member(1)'
-    package: '@fluentui/react!'
-    fullName: focus()
+        type:
+          - |-
+            {
+                    selectAllVisibility: SelectAllVisibility;
+                    collapseAllVisibility: CollapseAllVisibility;
+                    useFastIcons: boolean;
+                }
+  - uid: '@fluentui/react!DetailsHeaderBase#focus:member(1)'
     summary: Set focus to the active thing in the focus area.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: focus()
+    fullName: focus()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'focus(): boolean;'
       return:
-        type: boolean
+        type:
+          - boolean
         description: ''
-  - name: render()
-    uid: '@fluentui/react!DetailsHeaderBase#render:member(1)'
-    package: '@fluentui/react!'
+  - uid: '@fluentui/react!DetailsHeaderBase#render:member(1)'
+    name: render()
     fullName: render()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'render(): JSX.Element;'
       return:
-        type: JSX.Element
+        type:
+          - JSX.Element
         description: ''
-extends: 'React.Component&lt;IDetailsHeaderBaseProps, IDetailsHeaderState&gt; '

@@ -1,35 +1,43 @@
-### YamlMime:TSType
-name: IControlledStateOptions
-uid: '@uifabric/foundation!IControlledStateOptions:interface'
-package: '@uifabric/foundation!'
-fullName: IControlledStateOptions
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: defaultPropName
-    uid: '@uifabric/foundation!IControlledStateOptions#defaultPropName:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@uifabric/foundation!IControlledStateOptions:interface'
+    name: IControlledStateOptions
+    fullName: IControlledStateOptions
+    langs:
+      - typeScript
+    type: interface
+    syntax:
+      typeParameters:
+        - id: TProps
+        - id: TProp
+          type:
+            - keyof TProps
+        - id: TDefaultProp
+          type:
+            - keyof TProps
     package: '@uifabric/foundation!'
+    children:
+      - '@uifabric/foundation!IControlledStateOptions#defaultPropName:member'
+      - '@uifabric/foundation!IControlledStateOptions#defaultPropValue:member'
+  - uid: '@uifabric/foundation!IControlledStateOptions#defaultPropName:member'
+    name: defaultPropName
     fullName: defaultPropName
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'defaultPropName?: TDefaultProp;'
       return:
-        type: TDefaultProp
-  - name: defaultPropValue
-    uid: '@uifabric/foundation!IControlledStateOptions#defaultPropValue:member'
-    package: '@uifabric/foundation!'
+        type:
+          - TDefaultProp
+  - uid: '@uifabric/foundation!IControlledStateOptions#defaultPropValue:member'
+    name: defaultPropValue
     fullName: defaultPropValue
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'defaultPropValue?: TProps[TProp];'
       return:
-        type: 'TProps[TProp]'
+        type:
+          - 'TProps[TProp]'

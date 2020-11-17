@@ -1,22 +1,30 @@
-### YamlMime:TSEnum
-name: TooltipOverflowMode
-uid: '@fluentui/react-internal!TooltipOverflowMode:enum'
-package: '@fluentui/react-internal!'
-fullName: TooltipOverflowMode
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-fields:
-  - name: Parent
-    uid: '@fluentui/react-internal!TooltipOverflowMode.Parent:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-internal!TooltipOverflowMode:enum'
+    name: TooltipOverflowMode
+    fullName: TooltipOverflowMode
+    langs:
+      - typeScript
+    type: enum
     package: '@fluentui/react-internal!'
+    children:
+      - '@fluentui/react-internal!TooltipOverflowMode.Parent:member'
+      - '@fluentui/react-internal!TooltipOverflowMode.Self:member'
+  - uid: '@fluentui/react-internal!TooltipOverflowMode.Parent:member'
     summary: Only show tooltip if parent DOM element is overflowing
-    numericValue: 0
-  - name: Self
-    uid: '@fluentui/react-internal!TooltipOverflowMode.Self:member'
-    package: '@fluentui/react-internal!'
+    name: Parent
+    fullName: Parent
+    langs:
+      - typeScript
+    type: field
+    numericValue: '0'
+  - uid: '@fluentui/react-internal!TooltipOverflowMode.Self:member'
     summary: >-
-      Only show tooltip if tooltip host's content is overflowing. Note that this
-      does not check the children for overflow, only the TooltipHost root.
-    numericValue: 1
+      Only show tooltip if tooltip host's content is overflowing. Note that this does not check the children for
+      overflow, only the TooltipHost root.
+    name: Self
+    fullName: Self
+    langs:
+      - typeScript
+    type: field
+    numericValue: '1'

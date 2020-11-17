@@ -1,24 +1,25 @@
-### YamlMime:TSType
-name: IWindowWithSegments
-uid: 'office-ui-fabric-react!IWindowWithSegments:interface'
-package: office-ui-fabric-react!
-fullName: IWindowWithSegments
-summary: Window with typings for experimental features regarding Dual Screen devices.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: getWindowSegments
-    uid: 'office-ui-fabric-react!IWindowWithSegments#getWindowSegments:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-ui-fabric-react!IWindowWithSegments:interface'
+    summary: Window with typings for experimental features regarding Dual Screen devices.
+    name: IWindowWithSegments
+    fullName: IWindowWithSegments
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'Window '
     package: office-ui-fabric-react!
+    children:
+      - 'office-ui-fabric-react!IWindowWithSegments#getWindowSegments:member'
+  - uid: 'office-ui-fabric-react!IWindowWithSegments#getWindowSegments:member'
+    name: getWindowSegments
     fullName: getWindowSegments
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'getWindowSegments?: () => DOMRect[];'
       return:
-        type: '() =&gt; DOMRect[]'
-extends: 'Window '
+        type:
+          - '() => DOMRect[]'

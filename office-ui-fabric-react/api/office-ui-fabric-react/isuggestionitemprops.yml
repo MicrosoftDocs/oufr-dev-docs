@@ -1,170 +1,174 @@
-### YamlMime:TSType
-name: ISuggestionItemProps
-uid: 'office-ui-fabric-react!ISuggestionItemProps:interface'
-package: office-ui-fabric-react!
-fullName: ISuggestionItemProps
-summary: >-
-  Suggestion item props. Refers to the each individual suggested items rendered
-  within Suggestions callout. Type T is the type of the item that is displayed.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: className
-    uid: 'office-ui-fabric-react!ISuggestionItemProps#className:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-ui-fabric-react!ISuggestionItemProps:interface'
+    summary: >-
+      Suggestion item props. Refers to the each individual suggested items rendered within Suggestions callout. Type T
+      is the type of the item that is displayed.
+    name: ISuggestionItemProps
+    fullName: ISuggestionItemProps
+    langs:
+      - typeScript
+    type: interface
+    syntax:
+      typeParameters:
+        - id: T
     package: office-ui-fabric-react!
-    fullName: className
+    children:
+      - 'office-ui-fabric-react!ISuggestionItemProps#className:member'
+      - 'office-ui-fabric-react!ISuggestionItemProps#componentRef:member'
+      - 'office-ui-fabric-react!ISuggestionItemProps#id:member'
+      - 'office-ui-fabric-react!ISuggestionItemProps#isSelectedOverride:member'
+      - 'office-ui-fabric-react!ISuggestionItemProps#onClick:member'
+      - 'office-ui-fabric-react!ISuggestionItemProps#onRemoveItem:member'
+      - 'office-ui-fabric-react!ISuggestionItemProps#removeButtonAriaLabel:member'
+      - 'office-ui-fabric-react!ISuggestionItemProps#RenderSuggestion:member'
+      - 'office-ui-fabric-react!ISuggestionItemProps#showRemoveButton:member'
+      - 'office-ui-fabric-react!ISuggestionItemProps#styles:member'
+      - 'office-ui-fabric-react!ISuggestionItemProps#suggestionModel:member'
+      - 'office-ui-fabric-react!ISuggestionItemProps#theme:member'
+  - uid: 'office-ui-fabric-react!ISuggestionItemProps#className:member'
     summary: Optional className for the root element of the suggestion item.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: className
+    fullName: className
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'className?: string;'
       return:
-        type: string
-  - name: componentRef
-    uid: 'office-ui-fabric-react!ISuggestionItemProps#componentRef:member'
-    package: office-ui-fabric-react!
-    fullName: componentRef
+        type:
+          - string
+  - uid: 'office-ui-fabric-react!ISuggestionItemProps#componentRef:member'
     summary: >-
-      Optional callback to access the ISuggestionItem interface. Use this
-      instead of ref for accessing the public methods and properties of the
-      component.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Optional callback to access the ISuggestionItem interface. Use this instead of ref for accessing the public
+      methods and properties of the component.
+    name: componentRef
+    fullName: componentRef
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'componentRef?: IRefObject<ISuggestionsItem>;'
       return:
-        type: IRefObject&lt;ISuggestionsItem&gt;
-  - name: id
-    uid: 'office-ui-fabric-react!ISuggestionItemProps#id:member'
-    package: office-ui-fabric-react!
-    fullName: id
+        type:
+          - IRefObject<ISuggestionsItem>
+  - uid: 'office-ui-fabric-react!ISuggestionItemProps#id:member'
     summary: Unique id of the suggested item.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'id?: string;'
       return:
-        type: string
-  - name: isSelectedOverride
-    uid: 'office-ui-fabric-react!ISuggestionItemProps#isSelectedOverride:member'
-    package: office-ui-fabric-react!
-    fullName: isSelectedOverride
+        type:
+          - string
+  - uid: 'office-ui-fabric-react!ISuggestionItemProps#isSelectedOverride:member'
     summary: An override for the 'selected' property of the SuggestionModel.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: isSelectedOverride
+    fullName: isSelectedOverride
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'isSelectedOverride?: boolean;'
       return:
-        type: boolean
-  - name: onClick
-    uid: 'office-ui-fabric-react!ISuggestionItemProps#onClick:member'
-    package: office-ui-fabric-react!
-    fullName: onClick
+        type:
+          - boolean
+  - uid: 'office-ui-fabric-react!ISuggestionItemProps#onClick:member'
     summary: Callback for when the user clicks on the suggestion.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onClick
+    fullName: onClick
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onClick: (ev: React.MouseEvent<HTMLButtonElement>) => void;'
       return:
-        type: '(ev: React.MouseEvent&lt;HTMLButtonElement&gt;) =&gt; void'
-  - name: onRemoveItem
-    uid: 'office-ui-fabric-react!ISuggestionItemProps#onRemoveItem:member'
-    package: office-ui-fabric-react!
-    fullName: onRemoveItem
+        type:
+          - '(ev: React.MouseEvent<HTMLButtonElement>) => void'
+  - uid: 'office-ui-fabric-react!ISuggestionItemProps#onRemoveItem:member'
     summary: Callback for when the item is removed from the array of suggested items.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onRemoveItem
+    fullName: onRemoveItem
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onRemoveItem: (ev: React.MouseEvent<HTMLButtonElement>) => void;'
       return:
-        type: '(ev: React.MouseEvent&lt;HTMLButtonElement&gt;) =&gt; void'
-  - name: removeButtonAriaLabel
-    uid: 'office-ui-fabric-react!ISuggestionItemProps#removeButtonAriaLabel:member'
-    package: office-ui-fabric-react!
-    fullName: removeButtonAriaLabel
+        type:
+          - '(ev: React.MouseEvent<HTMLButtonElement>) => void'
+  - uid: 'office-ui-fabric-react!ISuggestionItemProps#removeButtonAriaLabel:member'
     summary: The ARIA label for the button to remove the suggestion from the list.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: removeButtonAriaLabel
+    fullName: removeButtonAriaLabel
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'removeButtonAriaLabel?: string;'
       return:
-        type: string
-  - name: RenderSuggestion
-    uid: 'office-ui-fabric-react!ISuggestionItemProps#RenderSuggestion:member'
-    package: office-ui-fabric-react!
-    fullName: RenderSuggestion
+        type:
+          - string
+  - uid: 'office-ui-fabric-react!ISuggestionItemProps#RenderSuggestion:member'
     summary: Optional renderer to override the default one for each type of picker.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: RenderSuggestion
+    fullName: RenderSuggestion
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        RenderSuggestion: (item: T, suggestionItemProps:
-        ISuggestionItemProps<T>) => JSX.Element;
+      content: 'RenderSuggestion: (item: T, suggestionItemProps: ISuggestionItemProps<T>) => JSX.Element;'
       return:
-        type: >-
-          (item: T, suggestionItemProps: ISuggestionItemProps&lt;T&gt;) =&gt;
-          JSX.Element
-  - name: showRemoveButton
-    uid: 'office-ui-fabric-react!ISuggestionItemProps#showRemoveButton:member'
-    package: office-ui-fabric-react!
-    fullName: showRemoveButton
+        type:
+          - '(item: T, suggestionItemProps: ISuggestionItemProps<T>) => JSX.Element'
+  - uid: 'office-ui-fabric-react!ISuggestionItemProps#showRemoveButton:member'
     summary: Whether the remove button should be rendered or not.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: showRemoveButton
+    fullName: showRemoveButton
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'showRemoveButton?: boolean;'
       return:
-        type: boolean
-  - name: styles
-    uid: 'office-ui-fabric-react!ISuggestionItemProps#styles:member'
-    package: office-ui-fabric-react!
+        type:
+          - boolean
+  - uid: 'office-ui-fabric-react!ISuggestionItemProps#styles:member'
+    summary: Call to provide customized styling that will layer on top of the variant rules.
+    name: styles
     fullName: styles
-    summary: >-
-      Call to provide customized styling that will layer on top of the variant
-      rules.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        styles?: IStyleFunctionOrObject<ISuggestionsItemStyleProps,
-        ISuggestionsItemStyles>;
+      content: 'styles?: IStyleFunctionOrObject<ISuggestionsItemStyleProps, ISuggestionsItemStyles>;'
       return:
-        type: >-
-          IStyleFunctionOrObject&lt;ISuggestionsItemStyleProps,
-          ISuggestionsItemStyles&gt;
-  - name: suggestionModel
-    uid: 'office-ui-fabric-react!ISuggestionItemProps#suggestionModel:member'
-    package: office-ui-fabric-react!
-    fullName: suggestionModel
+        type:
+          - 'IStyleFunctionOrObject<ISuggestionsItemStyleProps, ISuggestionsItemStyles>'
+  - uid: 'office-ui-fabric-react!ISuggestionItemProps#suggestionModel:member'
     summary: Individual suggestion object containing its properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: suggestionModel
+    fullName: suggestionModel
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'suggestionModel: ISuggestionModel<T>;'
       return:
-        type: ISuggestionModel&lt;T&gt;
-  - name: theme
-    uid: 'office-ui-fabric-react!ISuggestionItemProps#theme:member'
-    package: office-ui-fabric-react!
-    fullName: theme
+        type:
+          - ISuggestionModel<T>
+  - uid: 'office-ui-fabric-react!ISuggestionItemProps#theme:member'
     summary: Theme provided by High-Order Component.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'theme?: ITheme;'
       return:
-        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
+        type:
+          - '@fluentui/theme!ITheme:interface'

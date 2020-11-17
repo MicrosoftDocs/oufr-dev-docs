@@ -1,126 +1,131 @@
-### YamlMime:TSType
-name: IShimmerProps
-uid: '@fluentui/react-internal!IShimmerProps:interface'
-package: '@fluentui/react-internal!'
-fullName: IShimmerProps
-summary: Shimmer component props.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: ariaLabel
-    uid: '@fluentui/react-internal!IShimmerProps#ariaLabel:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-internal!IShimmerProps:interface'
+    summary: Shimmer component props.
+    name: IShimmerProps
+    fullName: IShimmerProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - React.AllHTMLAttributes<HTMLElement>
+      - 'React.RefAttributes<HTMLElement> '
     package: '@fluentui/react-internal!'
-    fullName: ariaLabel
+    children:
+      - '@fluentui/react-internal!IShimmerProps#ariaLabel:member'
+      - '@fluentui/react-internal!IShimmerProps#className:member'
+      - '@fluentui/react-internal!IShimmerProps#customElementsGroup:member'
+      - '@fluentui/react-internal!IShimmerProps#isDataLoaded:member'
+      - '@fluentui/react-internal!IShimmerProps#shimmerColors:member'
+      - '@fluentui/react-internal!IShimmerProps#shimmerElements:member'
+      - '@fluentui/react-internal!IShimmerProps#styles:member'
+      - '@fluentui/react-internal!IShimmerProps#theme:member'
+      - '@fluentui/react-internal!IShimmerProps#width:member'
+  - uid: '@fluentui/react-internal!IShimmerProps#ariaLabel:member'
     summary: Localized string of the status label for screen reader
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: ariaLabel
+    fullName: ariaLabel
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'ariaLabel?: string;'
       return:
-        type: string
-  - name: className
-    uid: '@fluentui/react-internal!IShimmerProps#className:member'
-    package: '@fluentui/react-internal!'
-    fullName: className
+        type:
+          - string
+  - uid: '@fluentui/react-internal!IShimmerProps#className:member'
     summary: Additional CSS class(es) to apply to the Shimmer container.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: className
+    fullName: className
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'className?: string;'
       return:
-        type: string
-  - name: customElementsGroup
-    uid: '@fluentui/react-internal!IShimmerProps#customElementsGroup:member'
-    package: '@fluentui/react-internal!'
-    fullName: customElementsGroup
+        type:
+          - string
+  - uid: '@fluentui/react-internal!IShimmerProps#customElementsGroup:member'
     summary: Custom elements when necessary to build complex placeholder skeletons.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: customElementsGroup
+    fullName: customElementsGroup
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'customElementsGroup?: React.ReactNode;'
       return:
-        type: React.ReactNode
-  - name: isDataLoaded
-    uid: '@fluentui/react-internal!IShimmerProps#isDataLoaded:member'
-    package: '@fluentui/react-internal!'
+        type:
+          - React.ReactNode
+  - uid: '@fluentui/react-internal!IShimmerProps#isDataLoaded:member'
+    summary: Controls when the shimmer is swapped with actual data through an animated transition.
+    name: isDataLoaded
     fullName: isDataLoaded
-    summary: >-
-      Controls when the shimmer is swapped with actual data through an animated
-      transition.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'isDataLoaded?: boolean;'
       return:
-        type: boolean
-  - name: shimmerColors
-    uid: '@fluentui/react-internal!IShimmerProps#shimmerColors:member'
-    package: '@fluentui/react-internal!'
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!IShimmerProps#shimmerColors:member'
+    summary: Defines an object with possible colors to pass for Shimmer customization used on different backgrounds.
+    name: shimmerColors
     fullName: shimmerColors
-    summary: >-
-      Defines an object with possible colors to pass for Shimmer customization
-      used on different backgrounds.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'shimmerColors?: IShimmerColors;'
       return:
-        type: IShimmerColors
-  - name: shimmerElements
-    uid: '@fluentui/react-internal!IShimmerProps#shimmerElements:member'
-    package: '@fluentui/react-internal!'
-    fullName: shimmerElements
+        type:
+          - IShimmerColors
+  - uid: '@fluentui/react-internal!IShimmerProps#shimmerElements:member'
     summary: Elements to render in one line of the Shimmer.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: shimmerElements
+    fullName: shimmerElements
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'shimmerElements?: IShimmerElement[];'
       return:
-        type: 'IShimmerElement[]'
-  - name: styles
-    uid: '@fluentui/react-internal!IShimmerProps#styles:member'
-    package: '@fluentui/react-internal!'
+        type:
+          - 'IShimmerElement[]'
+  - uid: '@fluentui/react-internal!IShimmerProps#styles:member'
+    summary: Call to provide customized styling that will layer on top of the variant rules.
+    name: styles
     fullName: styles
-    summary: >-
-      Call to provide customized styling that will layer on top of the variant
-      rules.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'styles?: IStyleFunctionOrObject<IShimmerStyleProps, IShimmerStyles>;'
       return:
-        type: 'IStyleFunctionOrObject&lt;IShimmerStyleProps, IShimmerStyles&gt;'
-  - name: theme
-    uid: '@fluentui/react-internal!IShimmerProps#theme:member'
-    package: '@fluentui/react-internal!'
-    fullName: theme
+        type:
+          - 'IStyleFunctionOrObject<IShimmerStyleProps, IShimmerStyles>'
+  - uid: '@fluentui/react-internal!IShimmerProps#theme:member'
     summary: Theme provided by High-Order Component.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'theme?: ITheme;'
       return:
-        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
-  - name: width
-    uid: '@fluentui/react-internal!IShimmerProps#width:member'
-    package: '@fluentui/react-internal!'
-    fullName: width
+        type:
+          - '@fluentui/theme!ITheme:interface'
+  - uid: '@fluentui/react-internal!IShimmerProps#width:member'
     summary: Sets the width value of the shimmer wave wrapper.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: width
+    fullName: width
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'width?: number | string;'
       return:
-        type: number | string
-extends: React.AllHTMLAttributes&lt;HTMLElement&gt;
+        type:
+          - number | string

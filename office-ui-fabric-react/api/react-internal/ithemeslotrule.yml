@@ -1,116 +1,116 @@
-### YamlMime:TSType
-name: IThemeSlotRule
-uid: '@fluentui/react-internal!IThemeSlotRule:interface'
-package: '@fluentui/react-internal!'
-fullName: IThemeSlotRule
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: asShade
-    uid: '@fluentui/react-internal!IThemeSlotRule#asShade:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-internal!IThemeSlotRule:interface'
+    name: IThemeSlotRule
+    fullName: IThemeSlotRule
+    langs:
+      - typeScript
+    type: interface
     package: '@fluentui/react-internal!'
-    fullName: asShade
+    children:
+      - '@fluentui/react-internal!IThemeSlotRule#asShade:member'
+      - '@fluentui/react-internal!IThemeSlotRule#color:member'
+      - '@fluentui/react-internal!IThemeSlotRule#dependentRules:member'
+      - '@fluentui/react-internal!IThemeSlotRule#inherits:member'
+      - '@fluentui/react-internal!IThemeSlotRule#isBackgroundShade:member'
+      - '@fluentui/react-internal!IThemeSlotRule#isCustomized:member'
+      - '@fluentui/react-internal!IThemeSlotRule#name:member'
+      - '@fluentui/react-internal!IThemeSlotRule#value:member'
+  - uid: '@fluentui/react-internal!IThemeSlotRule#asShade:member'
     summary: 'If set, this slot is the specified shade of the slot it inherits from.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: asShade
+    fullName: asShade
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'asShade?: Shade;'
       return:
-        type: Shade
-  - name: color
-    uid: '@fluentui/react-internal!IThemeSlotRule#color:member'
-    package: '@fluentui/react-internal!'
-    fullName: color
+        type:
+          - Shade
+  - uid: '@fluentui/react-internal!IThemeSlotRule#color:member'
     summary: The actual color this theme slot is if it is a color.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'color?: IColor;'
       return:
-        type: IColor
-  - name: dependentRules
-    uid: '@fluentui/react-internal!IThemeSlotRule#dependentRules:member'
-    package: '@fluentui/react-internal!'
-    fullName: dependentRules
+        type:
+          - IColor
+  - uid: '@fluentui/react-internal!IThemeSlotRule#dependentRules:member'
     summary: >-
-      A collection of rules that inherit from this one. It is the responsibility
-      of the inheriting rule to add itself to its parent's dependentRules
-      collection.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      A collection of rules that inherit from this one. It is the responsibility of the inheriting rule to add itself to
+      its parent's dependentRules collection.
+    name: dependentRules
+    fullName: dependentRules
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'dependentRules: IThemeSlotRule[];'
       return:
-        type: 'IThemeSlotRule[]'
-  - name: inherits
-    uid: '@fluentui/react-internal!IThemeSlotRule#inherits:member'
-    package: '@fluentui/react-internal!'
-    fullName: inherits
+        type:
+          - 'IThemeSlotRule[]'
+  - uid: '@fluentui/react-internal!IThemeSlotRule#inherits:member'
     summary: The theme slot this slot is based on.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: inherits
+    fullName: inherits
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'inherits?: IThemeSlotRule;'
       return:
-        type: IThemeSlotRule
-  - name: isBackgroundShade
-    uid: '@fluentui/react-internal!IThemeSlotRule#isBackgroundShade:member'
-    package: '@fluentui/react-internal!'
+        type:
+          - IThemeSlotRule
+  - uid: '@fluentui/react-internal!IThemeSlotRule#isBackgroundShade:member'
+    summary: 'Whether this slot is a background shade, which uses different logic for generating its inheriting-as-shade value.'
+    name: isBackgroundShade
     fullName: isBackgroundShade
-    summary: >-
-      Whether this slot is a background shade, which uses different logic for
-      generating its inheriting-as-shade value.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'isBackgroundShade?: boolean;'
       return:
-        type: boolean
-  - name: isCustomized
-    uid: '@fluentui/react-internal!IThemeSlotRule#isCustomized:member'
-    package: '@fluentui/react-internal!'
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!IThemeSlotRule#isCustomized:member'
+    summary: 'Whether this slot has been manually overridden (else, it was automatically generated based on inheritance).'
+    name: isCustomized
     fullName: isCustomized
-    summary: >-
-      Whether this slot has been manually overridden (else, it was automatically
-      generated based on inheritance).
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'isCustomized?: boolean;'
       return:
-        type: boolean
-  - name: name
-    uid: '@fluentui/react-internal!IThemeSlotRule#name:member'
-    package: '@fluentui/react-internal!'
-    fullName: name
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!IThemeSlotRule#name:member'
     summary: The name of this theme slot.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'name: string;'
       return:
-        type: string
-  - name: value
-    uid: '@fluentui/react-internal!IThemeSlotRule#value:member'
-    package: '@fluentui/react-internal!'
+        type:
+          - string
+  - uid: '@fluentui/react-internal!IThemeSlotRule#value:member'
+    summary: The value of this slot if it is NOT a color. Must be falsey if not a color.
+    name: value
     fullName: value
-    summary: >-
-      The value of this slot if it is NOT a color. Must be falsey if not a
-      color.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'value?: string;'
       return:
-        type: string
+        type:
+          - string

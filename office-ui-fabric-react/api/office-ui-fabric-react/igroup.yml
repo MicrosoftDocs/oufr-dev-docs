@@ -1,176 +1,185 @@
-### YamlMime:TSType
-name: IGroup
-uid: 'office-ui-fabric-react!IGroup:interface'
-package: office-ui-fabric-react!
-fullName: IGroup
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: ariaLabel
-    uid: 'office-ui-fabric-react!IGroup#ariaLabel:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-ui-fabric-react!IGroup:interface'
+    name: IGroup
+    fullName: IGroup
+    langs:
+      - typeScript
+    type: interface
     package: office-ui-fabric-react!
-    fullName: ariaLabel
+    children:
+      - 'office-ui-fabric-react!IGroup#ariaLabel:member'
+      - 'office-ui-fabric-react!IGroup#children:member'
+      - 'office-ui-fabric-react!IGroup#count:member'
+      - 'office-ui-fabric-react!IGroup#data:member'
+      - 'office-ui-fabric-react!IGroup#hasMoreData:member'
+      - 'office-ui-fabric-react!IGroup#isCollapsed:member'
+      - 'office-ui-fabric-react!IGroup#isDropEnabled:member'
+      - 'office-ui-fabric-react!IGroup#isSelected:member'
+      - 'office-ui-fabric-react!IGroup#isShowingAll:member'
+      - 'office-ui-fabric-react!IGroup#key:member'
+      - 'office-ui-fabric-react!IGroup#level:member'
+      - 'office-ui-fabric-react!IGroup#name:member'
+      - 'office-ui-fabric-react!IGroup#startIndex:member'
+  - uid: 'office-ui-fabric-react!IGroup#ariaLabel:member'
     summary: >-
-      Optional accessibility label (aria-label) attribute that will be stamped
-      on to the element. If none is specified, the arai-label attribute will
-      contain the group name
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Optional accessibility label (aria-label) attribute that will be stamped on to the element. If none is specified,
+      the arai-label attribute will contain the group name
+    name: ariaLabel
+    fullName: ariaLabel
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'ariaLabel?: string;'
       return:
-        type: string
-  - name: children
-    uid: 'office-ui-fabric-react!IGroup#children:member'
-    package: office-ui-fabric-react!
-    fullName: children
+        type:
+          - string
+  - uid: 'office-ui-fabric-react!IGroup#children:member'
     summary: 'Nested groups, if any.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: children
+    fullName: children
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'children?: IGroup[];'
       return:
-        type: 'IGroup[]'
-  - name: count
-    uid: 'office-ui-fabric-react!IGroup#count:member'
-    package: office-ui-fabric-react!
-    fullName: count
+        type:
+          - 'IGroup[]'
+  - uid: 'office-ui-fabric-react!IGroup#count:member'
     summary: How many items should be rendered within the group.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: count
+    fullName: count
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'count: number;'
       return:
-        type: number
-  - name: data
-    uid: 'office-ui-fabric-react!IGroup#data:member'
-    package: office-ui-fabric-react!
-    fullName: data
+        type:
+          - number
+  - uid: 'office-ui-fabric-react!IGroup#data:member'
     summary: Arbitrary data required to be preserved by the caller.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: data
+    fullName: data
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'data?: any;'
       return:
-        type: any
-  - name: hasMoreData
-    uid: 'office-ui-fabric-react!IGroup#hasMoreData:member'
-    package: office-ui-fabric-react!
-    fullName: hasMoreData
+        type:
+          - any
+  - uid: 'office-ui-fabric-react!IGroup#hasMoreData:member'
     summary: >-
-      Optional flag to indicate the group has more data to load than the current
-      group count indicated. This can be used to indicate that a plus should be
-      rendered next to the group count in the header.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Optional flag to indicate the group has more data to load than the current group count indicated. This can be used
+      to indicate that a plus should be rendered next to the group count in the header.
+    name: hasMoreData
+    fullName: hasMoreData
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'hasMoreData?: boolean;'
       return:
-        type: boolean
-  - name: isCollapsed
-    uid: 'office-ui-fabric-react!IGroup#isCollapsed:member'
-    package: office-ui-fabric-react!
-    fullName: isCollapsed
+        type:
+          - boolean
+  - uid: 'office-ui-fabric-react!IGroup#isCollapsed:member'
     summary: If all the items in the group are collapsed.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: isCollapsed
+    fullName: isCollapsed
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'isCollapsed?: boolean;'
       return:
-        type: boolean
-  - name: isDropEnabled
-    uid: 'office-ui-fabric-react!IGroup#isDropEnabled:member'
-    package: office-ui-fabric-react!
-    fullName: isDropEnabled
+        type:
+          - boolean
+  - uid: 'office-ui-fabric-react!IGroup#isDropEnabled:member'
     summary: If drag/drop is enabled for the group header.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: isDropEnabled
+    fullName: isDropEnabled
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'isDropEnabled?: boolean;'
       return:
-        type: boolean
-  - name: isSelected
-    uid: 'office-ui-fabric-react!IGroup#isSelected:member'
-    package: office-ui-fabric-react!
+        type:
+          - boolean
+  - uid: 'office-ui-fabric-react!IGroup#isSelected:member'
+    summary: 'Deprecated at 1.0.0, selection state will be controled by the selection store only.'
+    deprecated:
+      content: 'At 1.0.0, selection state wil be controlled by the selection store only.'
+    name: isSelected
     fullName: isSelected
-    summary: >-
-      Deprecated at 1.0.0, selection state will be controled by the selection
-      store only.
-    remarks: ''
-    isPreview: false
-    isDeprecated: true
-    customDeprecatedMessage: 'At 1.0.0, selection state wil be controlled by the selection store only.'
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'isSelected?: boolean;'
       return:
-        type: boolean
-  - name: isShowingAll
-    uid: 'office-ui-fabric-react!IGroup#isShowingAll:member'
-    package: office-ui-fabric-react!
-    fullName: isShowingAll
+        type:
+          - boolean
+  - uid: 'office-ui-fabric-react!IGroup#isShowingAll:member'
     summary: If the items within the group are summarized or showing all.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: isShowingAll
+    fullName: isShowingAll
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'isShowingAll?: boolean;'
       return:
-        type: boolean
-  - name: key
-    uid: 'office-ui-fabric-react!IGroup#key:member'
-    package: office-ui-fabric-react!
-    fullName: key
+        type:
+          - boolean
+  - uid: 'office-ui-fabric-react!IGroup#key:member'
     summary: Unique identifier for the group.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: key
+    fullName: key
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'key: string;'
       return:
-        type: string
-  - name: level
-    uid: 'office-ui-fabric-react!IGroup#level:member'
-    package: office-ui-fabric-react!
-    fullName: level
+        type:
+          - string
+  - uid: 'office-ui-fabric-react!IGroup#level:member'
     summary: Number indicating the level of nested groups.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: level
+    fullName: level
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'level?: number;'
       return:
-        type: number
-  - name: name
-    uid: 'office-ui-fabric-react!IGroup#name:member'
-    package: office-ui-fabric-react!
-    fullName: name
+        type:
+          - number
+  - uid: 'office-ui-fabric-react!IGroup#name:member'
     summary: 'Display name for the group, rendered on the header.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'name: string;'
       return:
-        type: string
-  - name: startIndex
-    uid: 'office-ui-fabric-react!IGroup#startIndex:member'
-    package: office-ui-fabric-react!
-    fullName: startIndex
+        type:
+          - string
+  - uid: 'office-ui-fabric-react!IGroup#startIndex:member'
     summary: Start index for the group within the given items.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: startIndex
+    fullName: startIndex
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'startIndex: number;'
       return:
-        type: number
+        type:
+          - number

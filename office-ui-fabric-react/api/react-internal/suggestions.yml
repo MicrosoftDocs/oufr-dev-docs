@@ -1,208 +1,206 @@
-### YamlMime:TSType
-name: Suggestions
-uid: '@fluentui/react-internal!Suggestions:class'
-package: '@fluentui/react-internal!'
-fullName: Suggestions
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: class
-constructors:
-  - name: (constructor)(suggestionsProps)
-    uid: '@fluentui/react-internal!Suggestions:constructor(1)'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-internal!Suggestions:class'
+    name: Suggestions
+    fullName: Suggestions
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'React.Component<ISuggestionsProps<T>, ISuggestionsState> '
     package: '@fluentui/react-internal!'
-    fullName: (constructor)(suggestionsProps)
+    children:
+      - '@fluentui/react-internal!Suggestions#_forceResolveButton:member'
+      - '@fluentui/react-internal!Suggestions#_searchForMoreButton:member'
+      - '@fluentui/react-internal!Suggestions#_selectedElement:member'
+      - '@fluentui/react-internal!Suggestions:constructor(1)'
+      - '@fluentui/react-internal!Suggestions#componentDidMount:member(1)'
+      - '@fluentui/react-internal!Suggestions#componentDidUpdate:member(1)'
+      - '@fluentui/react-internal!Suggestions#executeSelectedAction:member(1)'
+      - '@fluentui/react-internal!Suggestions#focusAboveSuggestions:member(1)'
+      - '@fluentui/react-internal!Suggestions#focusBelowSuggestions:member(1)'
+      - '@fluentui/react-internal!Suggestions#focusSearchForMoreButton:member(1)'
+      - '@fluentui/react-internal!Suggestions#hasSuggestedAction:member(1)'
+      - '@fluentui/react-internal!Suggestions#hasSuggestedActionSelected:member(1)'
+      - '@fluentui/react-internal!Suggestions#render:member(1)'
+      - '@fluentui/react-internal!Suggestions#scrollSelected:member(1)'
+      - '@fluentui/react-internal!Suggestions#tryHandleKeyDown:member'
+  - uid: '@fluentui/react-internal!Suggestions#_forceResolveButton:member'
+    name: _forceResolveButton
+    fullName: _forceResolveButton
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'protected _forceResolveButton: React.RefObject<IButton>;'
+      return:
+        type:
+          - React.RefObject<IButton>
+  - uid: '@fluentui/react-internal!Suggestions#_searchForMoreButton:member'
+    name: _searchForMoreButton
+    fullName: _searchForMoreButton
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'protected _searchForMoreButton: React.RefObject<IButton>;'
+      return:
+        type:
+          - React.RefObject<IButton>
+  - uid: '@fluentui/react-internal!Suggestions#_selectedElement:member'
+    name: _selectedElement
+    fullName: _selectedElement
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'protected _selectedElement: React.RefObject<HTMLDivElement>;'
+      return:
+        type:
+          - React.RefObject<HTMLDivElement>
+  - uid: '@fluentui/react-internal!Suggestions:constructor(1)'
     summary: Constructs a new instance of the `Suggestions` class
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: (constructor)(suggestionsProps)
+    fullName: (constructor)(suggestionsProps)
+    langs:
+      - typeScript
+    type: constructor
     syntax:
       content: 'constructor(suggestionsProps: ISuggestionsProps<T>);'
       parameters:
         - id: suggestionsProps
           description: ''
-          type: ISuggestionsProps&lt;T&gt;
-properties:
-  - name: _forceResolveButton
-    uid: '@fluentui/react-internal!Suggestions#_forceResolveButton:member'
-    package: '@fluentui/react-internal!'
-    fullName: _forceResolveButton
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'protected _forceResolveButton: React.RefObject<IButton>;'
-      return:
-        type: React.RefObject&lt;IButton&gt;
-  - name: _searchForMoreButton
-    uid: '@fluentui/react-internal!Suggestions#_searchForMoreButton:member'
-    package: '@fluentui/react-internal!'
-    fullName: _searchForMoreButton
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'protected _searchForMoreButton: React.RefObject<IButton>;'
-      return:
-        type: React.RefObject&lt;IButton&gt;
-  - name: _selectedElement
-    uid: '@fluentui/react-internal!Suggestions#_selectedElement:member'
-    package: '@fluentui/react-internal!'
-    fullName: _selectedElement
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'protected _selectedElement: React.RefObject<HTMLDivElement>;'
-      return:
-        type: React.RefObject&lt;HTMLDivElement&gt;
-  - name: tryHandleKeyDown
-    uid: '@fluentui/react-internal!Suggestions#tryHandleKeyDown:member'
-    package: '@fluentui/react-internal!'
-    fullName: tryHandleKeyDown
-    summary: 'Returns true if the event was handled, false otherwise'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        tryHandleKeyDown: (keyCode: number, currentSuggestionIndex: number) =>
-        boolean;
-      return:
-        type: '(keyCode: number, currentSuggestionIndex: number) =&gt; boolean'
-methods:
-  - name: componentDidMount()
-    uid: '@fluentui/react-internal!Suggestions#componentDidMount:member(1)'
-    package: '@fluentui/react-internal!'
+          type:
+            - ISuggestionsProps<T>
+  - uid: '@fluentui/react-internal!Suggestions#componentDidMount:member(1)'
+    name: componentDidMount()
     fullName: componentDidMount()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'componentDidMount(): void;'
       return:
-        type: void
+        type:
+          - void
         description: ''
-  - name: componentDidUpdate()
-    uid: '@fluentui/react-internal!Suggestions#componentDidUpdate:member(1)'
-    package: '@fluentui/react-internal!'
+  - uid: '@fluentui/react-internal!Suggestions#componentDidUpdate:member(1)'
+    name: componentDidUpdate()
     fullName: componentDidUpdate()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'componentDidUpdate(): void;'
       return:
-        type: void
+        type:
+          - void
         description: ''
-  - name: executeSelectedAction()
-    uid: '@fluentui/react-internal!Suggestions#executeSelectedAction:member(1)'
-    package: '@fluentui/react-internal!'
+  - uid: '@fluentui/react-internal!Suggestions#executeSelectedAction:member(1)'
+    name: executeSelectedAction()
     fullName: executeSelectedAction()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'executeSelectedAction(): void;'
       return:
-        type: void
+        type:
+          - void
         description: ''
-  - name: focusAboveSuggestions()
-    uid: '@fluentui/react-internal!Suggestions#focusAboveSuggestions:member(1)'
-    package: '@fluentui/react-internal!'
+  - uid: '@fluentui/react-internal!Suggestions#focusAboveSuggestions:member(1)'
+    name: focusAboveSuggestions()
     fullName: focusAboveSuggestions()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'focusAboveSuggestions(): void;'
       return:
-        type: void
+        type:
+          - void
         description: ''
-  - name: focusBelowSuggestions()
-    uid: '@fluentui/react-internal!Suggestions#focusBelowSuggestions:member(1)'
-    package: '@fluentui/react-internal!'
+  - uid: '@fluentui/react-internal!Suggestions#focusBelowSuggestions:member(1)'
+    name: focusBelowSuggestions()
     fullName: focusBelowSuggestions()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'focusBelowSuggestions(): void;'
       return:
-        type: void
+        type:
+          - void
         description: ''
-  - name: focusSearchForMoreButton()
-    uid: '@fluentui/react-internal!Suggestions#focusSearchForMoreButton:member(1)'
-    package: '@fluentui/react-internal!'
+  - uid: '@fluentui/react-internal!Suggestions#focusSearchForMoreButton:member(1)'
+    name: focusSearchForMoreButton()
     fullName: focusSearchForMoreButton()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'focusSearchForMoreButton(): void;'
       return:
-        type: void
+        type:
+          - void
         description: ''
-  - name: hasSuggestedAction()
-    uid: '@fluentui/react-internal!Suggestions#hasSuggestedAction:member(1)'
-    package: '@fluentui/react-internal!'
+  - uid: '@fluentui/react-internal!Suggestions#hasSuggestedAction:member(1)'
+    name: hasSuggestedAction()
     fullName: hasSuggestedAction()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'hasSuggestedAction(): boolean;'
       return:
-        type: boolean
+        type:
+          - boolean
         description: ''
-  - name: hasSuggestedActionSelected()
-    uid: '@fluentui/react-internal!Suggestions#hasSuggestedActionSelected:member(1)'
-    package: '@fluentui/react-internal!'
+  - uid: '@fluentui/react-internal!Suggestions#hasSuggestedActionSelected:member(1)'
+    name: hasSuggestedActionSelected()
     fullName: hasSuggestedActionSelected()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'hasSuggestedActionSelected(): boolean;'
       return:
-        type: boolean
+        type:
+          - boolean
         description: ''
-  - name: render()
-    uid: '@fluentui/react-internal!Suggestions#render:member(1)'
-    package: '@fluentui/react-internal!'
+  - uid: '@fluentui/react-internal!Suggestions#render:member(1)'
+    name: render()
     fullName: render()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'render(): JSX.Element;'
       return:
-        type: JSX.Element
+        type:
+          - JSX.Element
         description: ''
-  - name: scrollSelected()
-    uid: '@fluentui/react-internal!Suggestions#scrollSelected:member(1)'
-    package: '@fluentui/react-internal!'
+  - uid: '@fluentui/react-internal!Suggestions#scrollSelected:member(1)'
+    name: scrollSelected()
     fullName: scrollSelected()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'scrollSelected(): void;'
       return:
-        type: void
+        type:
+          - void
         description: ''
-extends: 'React.Component&lt;ISuggestionsProps&lt;T&gt;, ISuggestionsState&gt; '
+  - uid: '@fluentui/react-internal!Suggestions#tryHandleKeyDown:member'
+    summary: 'Returns true if the event was handled, false otherwise'
+    name: tryHandleKeyDown
+    fullName: tryHandleKeyDown
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tryHandleKeyDown: (keyCode: number, currentSuggestionIndex: number) => boolean;'
+      return:
+        type:
+          - '(keyCode: number, currentSuggestionIndex: number) => boolean'

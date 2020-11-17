@@ -1,103 +1,105 @@
-### YamlMime:TSType
-name: ISuggestions
-uid: 'office-ui-fabric-react!ISuggestions:interface'
-package: office-ui-fabric-react!
-fullName: ISuggestions
-summary: Suggestions component.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: executeSelectedAction
-    uid: 'office-ui-fabric-react!ISuggestions#executeSelectedAction:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-ui-fabric-react!ISuggestions:interface'
+    summary: Suggestions component.
+    name: ISuggestions
+    fullName: ISuggestions
+    langs:
+      - typeScript
+    type: interface
+    syntax:
+      typeParameters:
+        - id: T
     package: office-ui-fabric-react!
-    fullName: executeSelectedAction
+    children:
+      - 'office-ui-fabric-react!ISuggestions#executeSelectedAction:member'
+      - 'office-ui-fabric-react!ISuggestions#focusAboveSuggestions:member'
+      - 'office-ui-fabric-react!ISuggestions#focusBelowSuggestions:member'
+      - 'office-ui-fabric-react!ISuggestions#focusSearchForMoreButton:member'
+      - 'office-ui-fabric-react!ISuggestions#hasSuggestedAction:member'
+      - 'office-ui-fabric-react!ISuggestions#hasSuggestedActionSelected:member'
+      - 'office-ui-fabric-react!ISuggestions#tryHandleKeyDown:member'
+  - uid: 'office-ui-fabric-react!ISuggestions#executeSelectedAction:member'
     summary: Execute the action selected. Can be SearchMore or ForceResolve actions.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: executeSelectedAction
+    fullName: executeSelectedAction
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'executeSelectedAction: () => void;'
       return:
-        type: () =&gt; void
-  - name: focusAboveSuggestions
-    uid: 'office-ui-fabric-react!ISuggestions#focusAboveSuggestions:member'
-    package: office-ui-fabric-react!
+        type:
+          - () => void
+  - uid: 'office-ui-fabric-react!ISuggestions#focusAboveSuggestions:member'
+    summary: Focus on the ForceResolve action above the suggestions. If not available then focus on SearchMore action.
+    name: focusAboveSuggestions
     fullName: focusAboveSuggestions
-    summary: >-
-      Focus on the ForceResolve action above the suggestions. If not available
-      then focus on SearchMore action.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'focusAboveSuggestions: () => void;'
       return:
-        type: () =&gt; void
-  - name: focusBelowSuggestions
-    uid: 'office-ui-fabric-react!ISuggestions#focusBelowSuggestions:member'
-    package: office-ui-fabric-react!
+        type:
+          - () => void
+  - uid: 'office-ui-fabric-react!ISuggestions#focusBelowSuggestions:member'
+    summary: Focus on the SearchMore action below the suggestions. If not available then focus on ForceResolve action.
+    name: focusBelowSuggestions
     fullName: focusBelowSuggestions
-    summary: >-
-      Focus on the SearchMore action below the suggestions. If not available
-      then focus on ForceResolve action.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'focusBelowSuggestions: () => void;'
       return:
-        type: () =&gt; void
-  - name: focusSearchForMoreButton
-    uid: 'office-ui-fabric-react!ISuggestions#focusSearchForMoreButton:member'
-    package: office-ui-fabric-react!
-    fullName: focusSearchForMoreButton
+        type:
+          - () => void
+  - uid: 'office-ui-fabric-react!ISuggestions#focusSearchForMoreButton:member'
     summary: Focus the SearchMore action button.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: focusSearchForMoreButton
+    fullName: focusSearchForMoreButton
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'focusSearchForMoreButton: () => void;'
       return:
-        type: () =&gt; void
-  - name: hasSuggestedAction
-    uid: 'office-ui-fabric-react!ISuggestions#hasSuggestedAction:member'
-    package: office-ui-fabric-react!
-    fullName: hasSuggestedAction
+        type:
+          - () => void
+  - uid: 'office-ui-fabric-react!ISuggestions#hasSuggestedAction:member'
     summary: Whether it has any suggested actions like ForceResolve or SearchMore.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: hasSuggestedAction
+    fullName: hasSuggestedAction
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'hasSuggestedAction: () => boolean;'
       return:
-        type: () =&gt; boolean
-  - name: hasSuggestedActionSelected
-    uid: 'office-ui-fabric-react!ISuggestions#hasSuggestedActionSelected:member'
-    package: office-ui-fabric-react!
+        type:
+          - () => boolean
+  - uid: 'office-ui-fabric-react!ISuggestions#hasSuggestedActionSelected:member'
+    summary: Whether any of the suggested actions (ForceResolve or SearchMore) is selected.
+    name: hasSuggestedActionSelected
     fullName: hasSuggestedActionSelected
-    summary: >-
-      Whether any of the suggested actions (ForceResolve or SearchMore) is
-      selected.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'hasSuggestedActionSelected: () => boolean;'
       return:
-        type: () =&gt; boolean
-  - name: tryHandleKeyDown
-    uid: 'office-ui-fabric-react!ISuggestions#tryHandleKeyDown:member'
-    package: office-ui-fabric-react!
-    fullName: tryHandleKeyDown
+        type:
+          - () => boolean
+  - uid: 'office-ui-fabric-react!ISuggestions#tryHandleKeyDown:member'
     summary: 'Returns true if the event was handled, false otherwise.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: tryHandleKeyDown
+    fullName: tryHandleKeyDown
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        tryHandleKeyDown: (keyCode: number, currentSuggestionIndex: number) =>
-        boolean;
+      content: 'tryHandleKeyDown: (keyCode: number, currentSuggestionIndex: number) => boolean;'
       return:
-        type: '(keyCode: number, currentSuggestionIndex: number) =&gt; boolean'
+        type:
+          - '(keyCode: number, currentSuggestionIndex: number) => boolean'

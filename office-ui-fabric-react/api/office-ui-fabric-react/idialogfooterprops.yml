@@ -1,66 +1,64 @@
-### YamlMime:TSType
-name: IDialogFooterProps
-uid: 'office-ui-fabric-react!IDialogFooterProps:interface'
-package: office-ui-fabric-react!
-fullName: IDialogFooterProps
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: className
-    uid: 'office-ui-fabric-react!IDialogFooterProps#className:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-ui-fabric-react!IDialogFooterProps:interface'
+    name: IDialogFooterProps
+    fullName: IDialogFooterProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'React.Props<DialogFooterBase> '
     package: office-ui-fabric-react!
-    fullName: className
+    children:
+      - 'office-ui-fabric-react!IDialogFooterProps#className:member'
+      - 'office-ui-fabric-react!IDialogFooterProps#componentRef:member'
+      - 'office-ui-fabric-react!IDialogFooterProps#styles:member'
+      - 'office-ui-fabric-react!IDialogFooterProps#theme:member'
+  - uid: 'office-ui-fabric-react!IDialogFooterProps#className:member'
     summary: Optional override class name
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: className
+    fullName: className
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'className?: string;'
       return:
-        type: string
-  - name: componentRef
-    uid: 'office-ui-fabric-react!IDialogFooterProps#componentRef:member'
-    package: office-ui-fabric-react!
-    fullName: componentRef
+        type:
+          - string
+  - uid: 'office-ui-fabric-react!IDialogFooterProps#componentRef:member'
     summary: Gets the component ref.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: componentRef
+    fullName: componentRef
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'componentRef?: IRefObject<IDialogFooter>;'
       return:
-        type: IRefObject&lt;IDialogFooter&gt;
-  - name: styles
-    uid: 'office-ui-fabric-react!IDialogFooterProps#styles:member'
-    package: office-ui-fabric-react!
+        type:
+          - IRefObject<IDialogFooter>
+  - uid: 'office-ui-fabric-react!IDialogFooterProps#styles:member'
+    summary: Call to provide customized styling that will layer on top of the variant rules
+    name: styles
     fullName: styles
-    summary: >-
-      Call to provide customized styling that will layer on top of the variant
-      rules
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        styles?: IStyleFunctionOrObject<IDialogFooterStyleProps,
-        IDialogFooterStyles>;
+      content: 'styles?: IStyleFunctionOrObject<IDialogFooterStyleProps, IDialogFooterStyles>;'
       return:
-        type: >-
-          IStyleFunctionOrObject&lt;IDialogFooterStyleProps,
-          IDialogFooterStyles&gt;
-  - name: theme
-    uid: 'office-ui-fabric-react!IDialogFooterProps#theme:member'
-    package: office-ui-fabric-react!
-    fullName: theme
+        type:
+          - 'IStyleFunctionOrObject<IDialogFooterStyleProps, IDialogFooterStyles>'
+  - uid: 'office-ui-fabric-react!IDialogFooterProps#theme:member'
     summary: Theme provided by HOC.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'theme?: ITheme;'
       return:
-        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
-extends: 'React.Props&lt;DialogFooterBase&gt; '
+        type:
+          - '@fluentui/theme!ITheme:interface'

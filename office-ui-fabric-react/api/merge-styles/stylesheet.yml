@@ -1,266 +1,278 @@
-### YamlMime:TSType
-name: Stylesheet
-uid: '@fluentui/merge-styles!Stylesheet:class'
-package: '@fluentui/merge-styles!'
-fullName: Stylesheet
-summary: >-
-  Represents the state of styles registered in the page. Abstracts the surface
-  for adding styles to the stylesheet, exposes helpers for reading the styles
-  registered in server rendered scenarios.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: class
-constructors:
-  - name: (constructor)(config)
-    uid: '@fluentui/merge-styles!Stylesheet:constructor(1)'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/merge-styles!Stylesheet:class'
+    summary: >-
+      Represents the state of styles registered in the page. Abstracts the surface for adding styles to the stylesheet,
+      exposes helpers for reading the styles registered in server rendered scenarios.
+    name: Stylesheet
+    fullName: Stylesheet
+    langs:
+      - typeScript
+    type: class
     package: '@fluentui/merge-styles!'
-    fullName: (constructor)(config)
+    children:
+      - '@fluentui/merge-styles!Stylesheet:constructor(1)'
+      - '@fluentui/merge-styles!Stylesheet#argsFromClassName:member(1)'
+      - '@fluentui/merge-styles!Stylesheet#cacheClassName:member(1)'
+      - '@fluentui/merge-styles!Stylesheet#classNameFromKey:member(1)'
+      - '@fluentui/merge-styles!Stylesheet#getClassName:member(1)'
+      - '@fluentui/merge-styles!Stylesheet#getClassNameCache:member(1)'
+      - '@fluentui/merge-styles!Stylesheet.getInstance:member(1)'
+      - '@fluentui/merge-styles!Stylesheet#getRules:member(1)'
+      - '@fluentui/merge-styles!Stylesheet#insertedRulesFromClassName:member(1)'
+      - '@fluentui/merge-styles!Stylesheet#insertRule:member(1)'
+      - '@fluentui/merge-styles!Stylesheet#onReset:member(1)'
+      - '@fluentui/merge-styles!Stylesheet#reset:member(1)'
+      - '@fluentui/merge-styles!Stylesheet#resetKeys:member(1)'
+      - '@fluentui/merge-styles!Stylesheet#setConfig:member(1)'
+  - uid: '@fluentui/merge-styles!Stylesheet:constructor(1)'
     summary: Constructs a new instance of the `Stylesheet` class
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: (constructor)(config)
+    fullName: (constructor)(config)
+    langs:
+      - typeScript
+    type: constructor
     syntax:
       content: 'constructor(config?: IStyleSheetConfig);'
       parameters:
         - id: config
           description: ''
-          type: '<xref uid="@fluentui/merge-styles!IStyleSheetConfig:interface" />'
-methods:
-  - name: argsFromClassName(className)
-    uid: '@fluentui/merge-styles!Stylesheet#argsFromClassName:member(1)'
-    package: '@fluentui/merge-styles!'
+          type:
+            - '@fluentui/merge-styles!IStyleSheetConfig:interface'
+  - uid: '@fluentui/merge-styles!Stylesheet#argsFromClassName:member(1)'
+    summary: Gets the arguments associated with a given classname which was previously registered using cacheClassName.
+    name: argsFromClassName(className)
     fullName: argsFromClassName(className)
-    summary: >-
-      Gets the arguments associated with a given classname which was previously
-      registered using cacheClassName.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'argsFromClassName(className: string): IStyle[] | undefined;'
-      parameters:
-        - id: className
-          description: ''
-          type: string
       return:
-        type: 'IStyle[] | undefined'
+        type:
+          - 'IStyle[] | undefined'
         description: ''
-  - name: 'cacheClassName(className, key, args, rules)'
-    uid: '@fluentui/merge-styles!Stylesheet#cacheClassName:member(1)'
-    package: '@fluentui/merge-styles!'
-    fullName: 'cacheClassName(className, key, args, rules)'
-    summary: >-
-      Used internally to cache information about a class which was registered
-      with the stylesheet.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        cacheClassName(className: string, key: string, args: IStyle[], rules:
-        string[]): void;
       parameters:
         - id: className
           description: ''
-          type: string
+          type:
+            - string
+  - uid: '@fluentui/merge-styles!Stylesheet#cacheClassName:member(1)'
+    summary: Used internally to cache information about a class which was registered with the stylesheet.
+    name: 'cacheClassName(className, key, args, rules)'
+    fullName: 'cacheClassName(className, key, args, rules)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'cacheClassName(className: string, key: string, args: IStyle[], rules: string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: className
+          description: ''
+          type:
+            - string
         - id: key
           description: ''
-          type: string
+          type:
+            - string
         - id: args
           description: ''
-          type: 'IStyle[]'
+          type:
+            - 'IStyle[]'
         - id: rules
           description: ''
-          type: 'string[]'
-      return:
-        type: void
-        description: ''
-  - name: classNameFromKey(key)
-    uid: '@fluentui/merge-styles!Stylesheet#classNameFromKey:member(1)'
-    package: '@fluentui/merge-styles!'
+          type:
+            - 'string[]'
+  - uid: '@fluentui/merge-styles!Stylesheet#classNameFromKey:member(1)'
+    summary: Gets the appropriate classname given a key which was previously registered using cacheClassName.
+    name: classNameFromKey(key)
     fullName: classNameFromKey(key)
-    summary: >-
-      Gets the appropriate classname given a key which was previously registered
-      using cacheClassName.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'classNameFromKey(key: string): string | undefined;'
+      return:
+        type:
+          - string | undefined
+        description: ''
       parameters:
         - id: key
           description: ''
-          type: string
-      return:
-        type: string | undefined
-        description: ''
-  - name: getClassName(displayName)
-    uid: '@fluentui/merge-styles!Stylesheet#getClassName:member(1)'
-    package: '@fluentui/merge-styles!'
-    fullName: getClassName(displayName)
+          type:
+            - string
+  - uid: '@fluentui/merge-styles!Stylesheet#getClassName:member(1)'
     summary: Generates a unique classname.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: getClassName(displayName)
+    fullName: getClassName(displayName)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'getClassName(displayName?: string): string;'
+      return:
+        type:
+          - string
+        description: ''
       parameters:
         - id: displayName
           description: Optional value to use as a prefix.
-          type: string
-      return:
-        type: string
-        description: ''
-  - name: getClassNameCache()
-    uid: '@fluentui/merge-styles!Stylesheet#getClassNameCache:member(1)'
-    package: '@fluentui/merge-styles!'
-    fullName: getClassNameCache()
+          type:
+            - string
+  - uid: '@fluentui/merge-styles!Stylesheet#getClassNameCache:member(1)'
     summary: Gets all classnames cache with the stylesheet.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: getClassNameCache()
+    fullName: getClassNameCache()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: |-
         getClassNameCache(): {
                 [key: string]: string;
             };
       return:
-        type: |-
-          {
-                  [key: string]: string;
-              }
+        type:
+          - |-
+            {
+                    [key: string]: string;
+                }
         description: ''
-  - name: getInstance()
-    uid: '@fluentui/merge-styles!Stylesheet.getInstance:member(1)'
-    package: '@fluentui/merge-styles!'
-    fullName: getInstance()
+  - uid: '@fluentui/merge-styles!Stylesheet.getInstance:member(1)'
     summary: Gets the singleton instance.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: getInstance()
+    fullName: getInstance()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'static getInstance(): Stylesheet;'
       return:
-        type: '<xref uid="@fluentui/merge-styles!Stylesheet:class" />'
+        type:
+          - '@fluentui/merge-styles!Stylesheet:class'
         description: ''
-  - name: getRules(includePreservedRules)
-    uid: '@fluentui/merge-styles!Stylesheet#getRules:member(1)'
-    package: '@fluentui/merge-styles!'
+  - uid: '@fluentui/merge-styles!Stylesheet#getRules:member(1)'
+    summary: Gets all rules registered with the stylesheet; only valid when using InsertionMode.none.
+    name: getRules(includePreservedRules)
     fullName: getRules(includePreservedRules)
-    summary: >-
-      Gets all rules registered with the stylesheet; only valid when using
-      InsertionMode.none.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'getRules(includePreservedRules?: boolean): string;'
+      return:
+        type:
+          - string
+        description: ''
       parameters:
         - id: includePreservedRules
           description: ''
-          type: boolean
-      return:
-        type: string
-        description: ''
-  - name: insertedRulesFromClassName(className)
-    uid: '@fluentui/merge-styles!Stylesheet#insertedRulesFromClassName:member(1)'
-    package: '@fluentui/merge-styles!'
+          type:
+            - boolean
+  - uid: '@fluentui/merge-styles!Stylesheet#insertedRulesFromClassName:member(1)'
+    summary: Gets the arguments associated with a given classname which was previously registered using cacheClassName.
+    name: insertedRulesFromClassName(className)
     fullName: insertedRulesFromClassName(className)
-    summary: >-
-      Gets the arguments associated with a given classname which was previously
-      registered using cacheClassName.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'insertedRulesFromClassName(className: string): string[] | undefined;'
+      return:
+        type:
+          - 'string[] | undefined'
+        description: ''
       parameters:
         - id: className
           description: ''
-          type: string
-      return:
-        type: 'string[] | undefined'
-        description: ''
-  - name: 'insertRule(rule, preserve)'
-    uid: '@fluentui/merge-styles!Stylesheet#insertRule:member(1)'
-    package: '@fluentui/merge-styles!'
-    fullName: 'insertRule(rule, preserve)'
+          type:
+            - string
+  - uid: '@fluentui/merge-styles!Stylesheet#insertRule:member(1)'
     summary: Inserts a css rule into the stylesheet.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: 'insertRule(rule, preserve)'
+    fullName: 'insertRule(rule, preserve)'
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'insertRule(rule: string, preserve?: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: rule
           description: ''
-          type: string
+          type:
+            - string
         - id: preserve
           description: Preserves the rule beyond a reset boundary.
-          type: boolean
-      return:
-        type: void
-        description: ''
-  - name: onReset(callback)
-    uid: '@fluentui/merge-styles!Stylesheet#onReset:member(1)'
-    package: '@fluentui/merge-styles!'
-    fullName: onReset(callback)
+          type:
+            - boolean
+  - uid: '@fluentui/merge-styles!Stylesheet#onReset:member(1)'
     summary: Configures a reset callback.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onReset(callback)
+    fullName: onReset(callback)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'onReset(callback: () => void): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: callback
           description: A callback which will be called when the Stylesheet is reset.
-          type: () =&gt; void
-      return:
-        type: void
-        description: ''
-  - name: reset()
-    uid: '@fluentui/merge-styles!Stylesheet#reset:member(1)'
-    package: '@fluentui/merge-styles!'
-    fullName: reset()
+          type:
+            - () => void
+  - uid: '@fluentui/merge-styles!Stylesheet#reset:member(1)'
     summary: >-
-      Resets the internal state of the stylesheet. Only used in server rendered
-      scenarios where we're using InsertionMode.none.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Resets the internal state of the stylesheet. Only used in server rendered scenarios where we're using
+      InsertionMode.none.
+    name: reset()
+    fullName: reset()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'reset(): void;'
       return:
-        type: void
+        type:
+          - void
         description: ''
-  - name: resetKeys()
-    uid: '@fluentui/merge-styles!Stylesheet#resetKeys:member(1)'
-    package: '@fluentui/merge-styles!'
+  - uid: '@fluentui/merge-styles!Stylesheet#resetKeys:member(1)'
+    name: resetKeys()
     fullName: resetKeys()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'resetKeys(): void;'
       return:
-        type: void
+        type:
+          - void
         description: ''
-  - name: setConfig(config)
-    uid: '@fluentui/merge-styles!Stylesheet#setConfig:member(1)'
-    package: '@fluentui/merge-styles!'
-    fullName: setConfig(config)
+  - uid: '@fluentui/merge-styles!Stylesheet#setConfig:member(1)'
     summary: Configures the stylesheet.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: setConfig(config)
+    fullName: setConfig(config)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'setConfig(config?: IStyleSheetConfig): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: config
           description: ''
-          type: '<xref uid="@fluentui/merge-styles!IStyleSheetConfig:interface" />'
-      return:
-        type: void
-        description: ''
+          type:
+            - '@fluentui/merge-styles!IStyleSheetConfig:interface'

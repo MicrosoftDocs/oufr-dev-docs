@@ -1,2541 +1,2875 @@
-### YamlMime:TSPackage
-uid: '@fluentui/utilities!'
-name: '@fluentui/utilities'
-type: package
-summary: ''
-classes:
-  - '@fluentui/utilities!Async:class'
-  - '@fluentui/utilities!AutoScroll:class'
-  - '@fluentui/utilities!BaseComponent:class'
-  - '@fluentui/utilities!Customizations:class'
-  - '@fluentui/utilities!Customizer:class'
-  - '@fluentui/utilities!DelayedRender:class'
-  - '@fluentui/utilities!EventGroup:class'
-  - '@fluentui/utilities!FabricPerformance:class'
-  - '@fluentui/utilities!GlobalSettings:class'
-  - '@fluentui/utilities!Rectangle:class'
-  - '@fluentui/utilities!Selection:class'
-interfaces:
-  - '@fluentui/utilities!IAsAsyncOptions:interface'
-  - '@fluentui/utilities!IBaseProps:interface'
-  - '@fluentui/utilities!IChangeDescription:interface'
-  - '@fluentui/utilities!IChangeEventCallback:interface'
-  - '@fluentui/utilities!IClassNamesFunctionOptions:interface'
-  - '@fluentui/utilities!ICustomizableProps:interface'
-  - '@fluentui/utilities!ICustomizations:interface'
-  - '@fluentui/utilities!ICustomizerContext:interface'
-  - '@fluentui/utilities!IDelayedRenderProps:interface'
-  - '@fluentui/utilities!IDisposable:interface'
-  - '@fluentui/utilities!IFitContentToBoundsOptions:interface'
-  - '@fluentui/utilities!IObjectWithKey:interface'
-  - '@fluentui/utilities!IPoint:interface'
-  - '@fluentui/utilities!IPropsWithStyles:interface'
-  - '@fluentui/utilities!IRectangle:interface'
-  - '@fluentui/utilities!IRenderComponent:interface'
-  - '@fluentui/utilities!IRenderFunction:interface'
-  - '@fluentui/utilities!ISelection:interface'
-  - '@fluentui/utilities!ISelectionOptions:interface'
-  - '@fluentui/utilities!ISize:interface'
-  - '@fluentui/utilities!IWarnControlledUsageParams:interface'
-  - '@fluentui/utilities!Point:interface'
-enums:
-  - '@fluentui/utilities!SelectionDirection:enum'
-  - '@fluentui/utilities!SelectionMode:enum'
-functions:
-  - name: addDirectionalKeyCode(which)
-    uid: '@fluentui/utilities!addDirectionalKeyCode:function(1)'
-    package: '@fluentui/utilities!'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/utilities!'
+    name: '@fluentui/utilities'
+    fullName: '@fluentui/utilities'
+    langs:
+      - typeScript
+    type: package
+    children:
+      - '@fluentui/utilities!addDirectionalKeyCode:function(1)'
+      - '@fluentui/utilities!addElementAtIndex:function(1)'
+      - '@fluentui/utilities!appendFunction:function(1)'
+      - '@fluentui/utilities!arraysEqual:function(1)'
+      - '@fluentui/utilities!asAsync:function(1)'
+      - '@fluentui/utilities!assertNever:function(1)'
+      - '@fluentui/utilities!assign:function(1)'
+      - '@fluentui/utilities!Async:class'
+      - '@fluentui/utilities!AutoScroll:class'
+      - '@fluentui/utilities!BaseComponent:class'
+      - '@fluentui/utilities!calculatePrecision:function(1)'
+      - '@fluentui/utilities!classNamesFunction:function(1)'
+      - '@fluentui/utilities!composeComponentAs:function(1)'
+      - '@fluentui/utilities!composeRenderFunction:function(1)'
+      - '@fluentui/utilities!createArray:function(1)'
+      - '@fluentui/utilities!createMemoizer:function(1)'
+      - '@fluentui/utilities!css:function(1)'
+      - '@fluentui/utilities!customizable:function(1)'
+      - '@fluentui/utilities!Customizations:class'
+      - '@fluentui/utilities!Customizer:class'
+      - '@fluentui/utilities!DelayedRender:class'
+      - '@fluentui/utilities!disableBodyScroll:function(1)'
+      - '@fluentui/utilities!doesElementContainFocus:function(1)'
+      - '@fluentui/utilities!enableBodyScroll:function(1)'
+      - '@fluentui/utilities!EventGroup:class'
+      - '@fluentui/utilities!extendComponent:function(1)'
+      - '@fluentui/utilities!FabricPerformance:class'
+      - '@fluentui/utilities!filteredAssign:function(1)'
+      - '@fluentui/utilities!find:function(1)'
+      - '@fluentui/utilities!findIndex:function(1)'
+      - '@fluentui/utilities!findScrollableParent:function(1)'
+      - '@fluentui/utilities!fitContentToBounds:function(1)'
+      - '@fluentui/utilities!flatten:function(1)'
+      - '@fluentui/utilities!focusAsync:function(1)'
+      - '@fluentui/utilities!focusFirstChild:function(1)'
+      - '@fluentui/utilities!format:function(1)'
+      - '@fluentui/utilities!getDistanceBetweenPoints:function(1)'
+      - '@fluentui/utilities!getDocument:function(1)'
+      - '@fluentui/utilities!getElementIndexPath:function(1)'
+      - '@fluentui/utilities!getFirstFocusable:function(1)'
+      - '@fluentui/utilities!getFirstTabbable:function(1)'
+      - '@fluentui/utilities!getFocusableByIndexPath:function(1)'
+      - '@fluentui/utilities!getId:function(1)'
+      - '@fluentui/utilities!getInitials:function(1)'
+      - '@fluentui/utilities!getLanguage:function(1)'
+      - '@fluentui/utilities!getLastFocusable:function(1)'
+      - '@fluentui/utilities!getLastTabbable:function(1)'
+      - '@fluentui/utilities!getNativeElementProps:function(1)'
+      - '@fluentui/utilities!getNativeProps:function(1)'
+      - '@fluentui/utilities!getNextElement:function(1)'
+      - '@fluentui/utilities!getPreviousElement:function(1)'
+      - '@fluentui/utilities!getPropsWithDefaults:function(1)'
+      - '@fluentui/utilities!getRect:function(1)'
+      - '@fluentui/utilities!getResourceUrl:function(1)'
+      - '@fluentui/utilities!getRTL:function(1)'
+      - '@fluentui/utilities!getRTLSafeKeyCode:function(1)'
+      - '@fluentui/utilities!getScrollbarWidth:function(1)'
+      - '@fluentui/utilities!getWindow:function(1)'
+      - '@fluentui/utilities!GlobalSettings:class'
+      - '@fluentui/utilities!hasHorizontalOverflow:function(1)'
+      - '@fluentui/utilities!hasOverflow:function(1)'
+      - '@fluentui/utilities!hasVerticalOverflow:function(1)'
+      - '@fluentui/utilities!hoistMethods:function(1)'
+      - '@fluentui/utilities!hoistStatics:function(1)'
+      - '@fluentui/utilities!IAsAsyncOptions:interface'
+      - '@fluentui/utilities!IBaseProps:interface'
+      - '@fluentui/utilities!IChangeDescription:interface'
+      - '@fluentui/utilities!IChangeEventCallback:interface'
+      - '@fluentui/utilities!IClassNamesFunctionOptions:interface'
+      - '@fluentui/utilities!ICustomizableProps:interface'
+      - '@fluentui/utilities!ICustomizations:interface'
+      - '@fluentui/utilities!ICustomizerContext:interface'
+      - '@fluentui/utilities!IDelayedRenderProps:interface'
+      - '@fluentui/utilities!IDisposable:interface'
+      - '@fluentui/utilities!IFitContentToBoundsOptions:interface'
+      - '@fluentui/utilities!initializeComponentRef:function(1)'
+      - '@fluentui/utilities!initializeFocusRects:function(1)'
+      - '@fluentui/utilities!IObjectWithKey:interface'
+      - '@fluentui/utilities!IPoint:interface'
+      - '@fluentui/utilities!IPropsWithStyles:interface'
+      - '@fluentui/utilities!IRectangle:interface'
+      - '@fluentui/utilities!IRenderComponent:interface'
+      - '@fluentui/utilities!IRenderFunction:interface'
+      - '@fluentui/utilities!isControlled:function(1)'
+      - '@fluentui/utilities!isDirectionalKeyCode:function(1)'
+      - '@fluentui/utilities!ISelection:interface'
+      - '@fluentui/utilities!ISelectionOptions:interface'
+      - '@fluentui/utilities!isElementFocusSubZone:function(1)'
+      - '@fluentui/utilities!isElementFocusZone:function(1)'
+      - '@fluentui/utilities!isElementTabbable:function(1)'
+      - '@fluentui/utilities!isElementVisible:function(1)'
+      - '@fluentui/utilities!ISize:interface'
+      - '@fluentui/utilities!isMac:function(1)'
+      - '@fluentui/utilities!IWarnControlledUsageParams:interface'
+      - '@fluentui/utilities!mapEnumByName:function(1)'
+      - '@fluentui/utilities!memoize:function(1)'
+      - '@fluentui/utilities!memoizeFunction:function(1)'
+      - '@fluentui/utilities!merge:function(1)'
+      - '@fluentui/utilities!mergeAriaAttributeValues:function(1)'
+      - '@fluentui/utilities!mergeCustomizations:function(1)'
+      - '@fluentui/utilities!mergeScopedSettings:function(1)'
+      - '@fluentui/utilities!mergeSettings:function(1)'
+      - '@fluentui/utilities!modalize:function(1)'
+      - '@fluentui/utilities!nullRender:function(1)'
+      - '@fluentui/utilities!omit:function(1)'
+      - '@fluentui/utilities!on:function(1)'
+      - '@fluentui/utilities!Point:interface'
+      - '@fluentui/utilities!precisionRound:function(1)'
+      - '@fluentui/utilities!raiseClick:function(1)'
+      - '@fluentui/utilities!Rectangle:class'
+      - '@fluentui/utilities!removeIndex:function(1)'
+      - '@fluentui/utilities!replaceElement:function(1)'
+      - '@fluentui/utilities!resetControlledWarnings:function(1)'
+      - '@fluentui/utilities!resetIds:function(1)'
+      - '@fluentui/utilities!resetMemoizations:function(1)'
+      - '@fluentui/utilities!Selection:class'
+      - '@fluentui/utilities!SelectionDirection:enum'
+      - '@fluentui/utilities!SelectionMode:enum'
+      - '@fluentui/utilities!setBaseUrl:function(1)'
+      - '@fluentui/utilities!setFocusVisibility:function(1)'
+      - '@fluentui/utilities!setLanguage:function(1)'
+      - '@fluentui/utilities!setLanguage:function(2)'
+      - '@fluentui/utilities!setRTL:function(1)'
+      - '@fluentui/utilities!setSSR:function(1)'
+      - '@fluentui/utilities!setWarningCallback:function(1)'
+      - '@fluentui/utilities!shallowCompare:function(1)'
+      - '@fluentui/utilities!shouldWrapFocus:function(1)'
+      - '@fluentui/utilities!styled:function(1)'
+      - '@fluentui/utilities!styled:function(2)'
+      - '@fluentui/utilities!toMatrix:function(1)'
+      - '@fluentui/utilities!unhoistMethods:function(1)'
+      - '@fluentui/utilities!useCustomizationSettings:function(1)'
+      - '@fluentui/utilities!useFocusRects:function(1)'
+      - '@fluentui/utilities!values:function(1)'
+      - '@fluentui/utilities!warn:function(1)'
+      - '@fluentui/utilities!warnConditionallyRequiredProps:function(1)'
+      - '@fluentui/utilities!warnControlledUsage:function(1)'
+      - '@fluentui/utilities!warnDeprecations:function(1)'
+      - '@fluentui/utilities!warnMutuallyExclusive:function(1)'
+  - uid: '@fluentui/utilities!addDirectionalKeyCode:function(1)'
     summary: >-
-      Adds a keycode to the list of keys that, when pressed, should cause the
-      focus outlines to be visible. This can be used to add global shortcut keys
-      that directionally move from section to section within an app or between
-      focus trap zones.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Adds a keycode to the list of keys that, when pressed, should cause the focus outlines to be visible. This can be
+      used to add global shortcut keys that directionally move from section to section within an app or between focus
+      trap zones.
+    name: addDirectionalKeyCode(which)
+    fullName: addDirectionalKeyCode(which)
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: 'export declare function addDirectionalKeyCode(which: number): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: which
           description: ''
-          type: number
-      return:
-        type: void
-        description: ''
-  - name: 'addElementAtIndex(array, index, itemToAdd)'
-    uid: '@fluentui/utilities!addElementAtIndex:function(1)'
-    package: '@fluentui/utilities!'
-    summary: >-
-      Given an array, this function returns a new array where an element has
-      been inserted at the given index.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+          type:
+            - number
+  - uid: '@fluentui/utilities!addElementAtIndex:function(1)'
+    summary: 'Given an array, this function returns a new array where an element has been inserted at the given index.'
+    name: 'addElementAtIndex(array, index, itemToAdd)'
+    fullName: 'addElementAtIndex(array, index, itemToAdd)'
+    langs:
+      - typeScript
+    type: function
     syntax:
-      content: >-
-        export declare function addElementAtIndex<T>(array: T[], index: number,
-        itemToAdd: T): T[];
+      content: 'export declare function addElementAtIndex<T>(array: T[], index: number, itemToAdd: T): T[];'
+      return:
+        type:
+          - 'T[]'
+        description: ''
       parameters:
         - id: array
           description: The array to operate on
-          type: 'T[]'
+          type:
+            - 'T[]'
         - id: index
           description: The index where an element should be inserted
-          type: number
+          type:
+            - number
         - id: itemToAdd
           description: The element to insert
-          type: T
-      return:
-        type: 'T[]'
-        description: ''
-  - name: 'appendFunction(parent, functions)'
-    uid: '@fluentui/utilities!appendFunction:function(1)'
-    package: '@fluentui/utilities!'
-    summary: >-
-      Returns a single function which will call each of the given functions in
-      the context of the parent.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+          type:
+            - T
+      typeParameters:
+        - id: T
+  - uid: '@fluentui/utilities!appendFunction:function(1)'
+    summary: Returns a single function which will call each of the given functions in the context of the parent.
+    name: 'appendFunction(parent, functions)'
+    fullName: 'appendFunction(parent, functions)'
+    langs:
+      - typeScript
+    type: function
     syntax:
-      content: >-
-        export declare function appendFunction(parent: any, ...functions:
-        any[]): () => void;
+      content: 'export declare function appendFunction(parent: any, ...functions: any[]): () => void;'
+      return:
+        type:
+          - () => void
+        description: ''
       parameters:
         - id: parent
           description: ''
-          type: any
+          type:
+            - any
         - id: functions
           description: ''
-          type: 'any[]'
-      return:
-        type: () =&gt; void
-        description: ''
-  - name: 'arraysEqual(array1, array2)'
-    uid: '@fluentui/utilities!arraysEqual:function(1)'
-    package: '@fluentui/utilities!'
-    summary: >-
-      Returns a boolean indicating if the two given arrays are equal in length
-      and values.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+          type:
+            - 'any[]'
+  - uid: '@fluentui/utilities!arraysEqual:function(1)'
+    summary: Returns a boolean indicating if the two given arrays are equal in length and values.
+    name: 'arraysEqual(array1, array2)'
+    fullName: 'arraysEqual(array1, array2)'
+    langs:
+      - typeScript
+    type: function
     syntax:
-      content: >-
-        export declare function arraysEqual<T>(array1: T[], array2: T[]):
-        boolean;
+      content: 'export declare function arraysEqual<T>(array1: T[], array2: T[]): boolean;'
+      return:
+        type:
+          - boolean
+        description: 'True if the arrays are the same length and have the same values in the same positions, false otherwise.'
       parameters:
         - id: array1
           description: First array to compare
-          type: 'T[]'
+          type:
+            - 'T[]'
         - id: array2
           description: Second array to compare
-          type: 'T[]'
-      return:
-        type: boolean
-        description: >-
-          True if the arrays are the same length and have the same values in the
-          same positions, false otherwise.
-  - name: asAsync(options)
-    uid: '@fluentui/utilities!asAsync:function(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - 'T[]'
+      typeParameters:
+        - id: T
+  - uid: '@fluentui/utilities!asAsync:function(1)'
     summary: >-
-      Produces a component which internally loads the target component before
-      first mount. The component passes all props through to the loaded
-      component.
+      Produces a component which internally loads the target component before first mount. The component passes all
+      props through to the loaded component.
 
 
       This overload accepts a module with a default export for the component.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: asAsync(options)
+    fullName: asAsync(options)
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: >-
-        export declare function asAsync<TProps>(options:
-        IAsAsyncOptions<TProps>):
+        export declare function asAsync<TProps>(options: IAsAsyncOptions<TProps>):
         React.ForwardRefExoticComponent<React.PropsWithoutRef<TProps & {
             asyncPlaceholder?: "symbol" | "object" | "text" | "table" | "ruby" | "small" | "input" | "progress" | "select" | "a" | "abbr" | "address" | "area" | "article" | "aside" | "audio" | "b" | "base" | "bdi" | "bdo" | "blockquote" | "body" | "br" | "button" | "canvas" | "caption" | "cite" | "code" | "col" | "colgroup" | "data" | "datalist" | "dd" | "del" | "details" | "dfn" | "dialog" | "div" | "dl" | "dt" | "em" | "embed" | "fieldset" | "figcaption" | "figure" | "footer" | "form" | "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "head" | "header" | "hgroup" | "hr" | "html" | "i" | "iframe" | "img" | "ins" | "kbd" | "label" | "legend" | "li" | "link" | "main" | "map" | "mark" | "menu" | "meta" | "meter" | "nav" | "noscript" | "ol" | "optgroup" | "option" | "output" | "p" | "param" | "picture" | "pre" | "q" | "rp" | "rt" | "s" | "samp" | "script" | "section" | "source" | "span" | "strong" | "style" | "sub" | "summary" | "sup" | "tbody" | "td" | "template" | "textarea" | "tfoot" | "th" | "thead" | "time" | "title" | "tr" | "track" | "u" | "ul" | "var" | "video" | "wbr" | "big" | React.ComponentClass<any, any> | React.FunctionComponent<any> | "keygen" | "menuitem" | "noindex" | "webview" | "svg" | "animate" | "animateMotion" | "animateTransform" | "circle" | "clipPath" | "defs" | "desc" | "ellipse" | "feBlend" | "feColorMatrix" | "feComponentTransfer" | "feComposite" | "feConvolveMatrix" | "feDiffuseLighting" | "feDisplacementMap" | "feDistantLight" | "feDropShadow" | "feFlood" | "feFuncA" | "feFuncB" | "feFuncG" | "feFuncR" | "feGaussianBlur" | "feImage" | "feMerge" | "feMergeNode" | "feMorphology" | "feOffset" | "fePointLight" | "feSpecularLighting" | "feSpotLight" | "feTile" | "feTurbulence" | "filter" | "foreignObject" | "g" | "image" | "line" | "linearGradient" | "marker" | "mask" | "metadata" | "mpath" | "path" | "pattern" | "polygon" | "polyline" | "radialGradient" | "rect" | "stop" | "switch" | "textPath" | "tspan" | "use" | "view" | undefined;
         }> & React.RefAttributes<React.ElementType<TProps>>>;
+      return:
+        type:
+          - |-
+            React.ForwardRefExoticComponent<React.PropsWithoutRef<TProps & {
+                asyncPlaceholder?: "symbol" | "object" | "text" | "table" | "ruby" | "small" | "input" | "progress" | "select" | "a" | "abbr" | "address" | "area" | "article" | "aside" | "audio" | "b" | "base" | "bdi" | "bdo" | "blockquote" | "body" | "br" | "button" | "canvas" | "caption" | "cite" | "code" | "col" | "colgroup" | "data" | "datalist" | "dd" | "del" | "details" | "dfn" | "dialog" | "div" | "dl" | "dt" | "em" | "embed" | "fieldset" | "figcaption" | "figure" | "footer" | "form" | "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "head" | "header" | "hgroup" | "hr" | "html" | "i" | "iframe" | "img" | "ins" | "kbd" | "label" | "legend" | "li" | "link" | "main" | "map" | "mark" | "menu" | "meta" | "meter" | "nav" | "noscript" | "ol" | "optgroup" | "option" | "output" | "p" | "param" | "picture" | "pre" | "q" | "rp" | "rt" | "s" | "samp" | "script" | "section" | "source" | "span" | "strong" | "style" | "sub" | "summary" | "sup" | "tbody" | "td" | "template" | "textarea" | "tfoot" | "th" | "thead" | "time" | "title" | "tr" | "track" | "u" | "ul" | "var" | "video" | "wbr" | "big" | React.ComponentClass<any, any> | React.FunctionComponent<any> | "keygen" | "menuitem" | "noindex" | "webview" | "svg" | "animate" | "animateMotion" | "animateTransform" | "circle" | "clipPath" | "defs" | "desc" | "ellipse" | "feBlend" | "feColorMatrix" | "feComponentTransfer" | "feComposite" | "feConvolveMatrix" | "feDiffuseLighting" | "feDisplacementMap" | "feDistantLight" | "feDropShadow" | "feFlood" | "feFuncA" | "feFuncB" | "feFuncG" | "feFuncR" | "feGaussianBlur" | "feImage" | "feMerge" | "feMergeNode" | "feMorphology" | "feOffset" | "fePointLight" | "feSpecularLighting" | "feSpotLight" | "feTile" | "feTurbulence" | "filter" | "foreignObject" | "g" | "image" | "line" | "linearGradient" | "marker" | "mask" | "metadata" | "mpath" | "path" | "pattern" | "polygon" | "polyline" | "radialGradient" | "rect" | "stop" | "switch" | "textPath" | "tspan" | "use" | "view" | undefined;
+            }> & React.RefAttributes<React.ElementType<TProps>>>
+        description: ''
       parameters:
         - id: options
           description: ''
-          type: IAsAsyncOptions&lt;TProps&gt;
-      return:
-        type: |-
-          React.ForwardRefExoticComponent&lt;React.PropsWithoutRef&lt;TProps & {
-              asyncPlaceholder?: "symbol" | "object" | "text" | "table" | "ruby" | "small" | "input" | "progress" | "select" | "a" | "abbr" | "address" | "area" | "article" | "aside" | "audio" | "b" | "base" | "bdi" | "bdo" | "blockquote" | "body" | "br" | "button" | "canvas" | "caption" | "cite" | "code" | "col" | "colgroup" | "data" | "datalist" | "dd" | "del" | "details" | "dfn" | "dialog" | "div" | "dl" | "dt" | "em" | "embed" | "fieldset" | "figcaption" | "figure" | "footer" | "form" | "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "head" | "header" | "hgroup" | "hr" | "html" | "i" | "iframe" | "img" | "ins" | "kbd" | "label" | "legend" | "li" | "link" | "main" | "map" | "mark" | "menu" | "meta" | "meter" | "nav" | "noscript" | "ol" | "optgroup" | "option" | "output" | "p" | "param" | "picture" | "pre" | "q" | "rp" | "rt" | "s" | "samp" | "script" | "section" | "source" | "span" | "strong" | "style" | "sub" | "summary" | "sup" | "tbody" | "td" | "template" | "textarea" | "tfoot" | "th" | "thead" | "time" | "title" | "tr" | "track" | "u" | "ul" | "var" | "video" | "wbr" | "big" | React.ComponentClass&lt;any, any&gt; | React.FunctionComponent&lt;any&gt; | "keygen" | "menuitem" | "noindex" | "webview" | "svg" | "animate" | "animateMotion" | "animateTransform" | "circle" | "clipPath" | "defs" | "desc" | "ellipse" | "feBlend" | "feColorMatrix" | "feComponentTransfer" | "feComposite" | "feConvolveMatrix" | "feDiffuseLighting" | "feDisplacementMap" | "feDistantLight" | "feDropShadow" | "feFlood" | "feFuncA" | "feFuncB" | "feFuncG" | "feFuncR" | "feGaussianBlur" | "feImage" | "feMerge" | "feMergeNode" | "feMorphology" | "feOffset" | "fePointLight" | "feSpecularLighting" | "feSpotLight" | "feTile" | "feTurbulence" | "filter" | "foreignObject" | "g" | "image" | "line" | "linearGradient" | "marker" | "mask" | "metadata" | "mpath" | "path" | "pattern" | "polygon" | "polyline" | "radialGradient" | "rect" | "stop" | "switch" | "textPath" | "tspan" | "use" | "view" | undefined;
-          }&gt; & React.RefAttributes&lt;React.ElementType&lt;TProps&gt;&gt;&gt;
-        description: ''
-  - name: assertNever(x)
-    uid: '@fluentui/utilities!assertNever:function(1)'
-    package: '@fluentui/utilities!'
-    summary: >-
-      AssertNever is a utility function that can be used for exhaustiveness
-      checks in switch statements.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+          type:
+            - IAsAsyncOptions<TProps>
+      typeParameters:
+        - id: TProps
+  - uid: '@fluentui/utilities!assertNever:function(1)'
+    summary: AssertNever is a utility function that can be used for exhaustiveness checks in switch statements.
+    name: assertNever(x)
+    fullName: assertNever(x)
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: 'export declare function assertNever(x: never): never;'
+      return:
+        type:
+          - never
+        description: ''
       parameters:
         - id: x
           description: ''
-          type: never
-      return:
-        type: never
-        description: ''
-  - name: 'assign(target, args)'
-    uid: '@fluentui/utilities!assign:function(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - never
+  - uid: '@fluentui/utilities!assign:function(1)'
     summary: >-
-      Makes a resulting merge of a bunch of objects. Pass in the target object
-      followed by 1 or more objects as arguments and they will be merged
-      sequentially into the target. Note that this will shallow merge; it will
-      not create new cloned values for target members.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Makes a resulting merge of a bunch of objects. Pass in the target object followed by 1 or more objects as
+      arguments and they will be merged sequentially into the target. Note that this will shallow merge; it will not
+      create new cloned values for target members.
+    name: 'assign(target, args)'
+    fullName: 'assign(target, args)'
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: 'export declare function assign(target: any, ...args: any[]): any;'
+      return:
+        type:
+          - any
+        description: Resulting merged target.
       parameters:
         - id: target
           description: Target object to merge following object arguments into.
-          type: any
+          type:
+            - any
         - id: args
-          description: >-
-            One or more objects that will be mixed into the target in the order
-            they are provided.
-          type: 'any[]'
-      return:
-        type: any
-        description: Resulting merged target.
-  - name: calculatePrecision(value)
-    uid: '@fluentui/utilities!calculatePrecision:function(1)'
-    package: '@fluentui/utilities!'
+          description: One or more objects that will be mixed into the target in the order they are provided.
+          type:
+            - 'any[]'
+  - uid: '@fluentui/utilities!calculatePrecision:function(1)'
     summary: >-
-      Calculates a number's precision based on the number of trailing zeros if
-      the number does not have a decimal indicated by a negative precision.
-      Otherwise, it calculates the number of digits after the decimal point
-      indicated by a positive precision.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Calculates a number's precision based on the number of trailing zeros if the number does not have a decimal
+      indicated by a negative precision. Otherwise, it calculates the number of digits after the decimal point indicated
+      by a positive precision.
+    name: calculatePrecision(value)
+    fullName: calculatePrecision(value)
+    langs:
+      - typeScript
+    type: function
     syntax:
-      content: >-
-        export declare function calculatePrecision(value: number | string):
-        number;
+      content: 'export declare function calculatePrecision(value: number | string): number;'
+      return:
+        type:
+          - number
+        description: ''
       parameters:
         - id: value
           description: the value to determine the precision of
-          type: number | string
-      return:
-        type: number
-        description: ''
-  - name: classNamesFunction(options)
-    uid: '@fluentui/utilities!classNamesFunction:function(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - number | string
+  - uid: '@fluentui/utilities!classNamesFunction:function(1)'
     summary: >-
-      Creates a getClassNames function which calls getStyles given the props,
-      and injects them into mergeStyleSets.
+      Creates a getClassNames function which calls getStyles given the props, and injects them into mergeStyleSets.
 
 
-      Note that the props you pass in on every render should be in the same
-      order and immutable (numbers, strings, and booleans). This will allow the
-      results to be memoized. Violating these will cause extra recalcs to occur.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Note that the props you pass in on every render should be in the same order and immutable (numbers, strings, and
+      booleans). This will allow the results to be memoized. Violating these will cause extra recalcs to occur.
+    name: classNamesFunction(options)
+    fullName: classNamesFunction(options)
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: >-
-        export declare function classNamesFunction<TStyleProps extends {},
-        TStyleSet extends IStyleSet<TStyleSet>>(options?:
-        IClassNamesFunctionOptions): (getStyles:
-        IStyleFunctionOrObject<TStyleProps, TStyleSet> | undefined, styleProps?:
-        TStyleProps) => IProcessedStyleSet<TStyleSet>;
+        export declare function classNamesFunction<TStyleProps extends {}, TStyleSet extends
+        IStyleSet<TStyleSet>>(options?: IClassNamesFunctionOptions): (getStyles: IStyleFunctionOrObject<TStyleProps,
+        TStyleSet> | undefined, styleProps?: TStyleProps) => IProcessedStyleSet<TStyleSet>;
+      return:
+        type:
+          - >-
+            (getStyles: IStyleFunctionOrObject<TStyleProps, TStyleSet> | undefined, styleProps?: TStyleProps) =>
+            IProcessedStyleSet<TStyleSet>
+        description: ''
       parameters:
         - id: options
           description: ''
-          type: >-
-            <xref uid="@fluentui/utilities!IClassNamesFunctionOptions:interface"
-            />
-      return:
-        type: >-
-          (getStyles: IStyleFunctionOrObject&lt;TStyleProps, TStyleSet&gt; |
-          undefined, styleProps?: TStyleProps) =&gt;
-          IProcessedStyleSet&lt;TStyleSet&gt;
-        description: ''
-  - name: 'composeComponentAs(outer, inner)'
-    uid: '@fluentui/utilities!composeComponentAs:function(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - '@fluentui/utilities!IClassNamesFunctionOptions:interface'
+      typeParameters:
+        - id: TStyleProps
+          type:
+            - '{}'
+        - id: TStyleSet
+          type:
+            - IStyleSet<TStyleSet>
+  - uid: '@fluentui/utilities!composeComponentAs:function(1)'
     summary: >-
-      Composes two components which conform to the `IComponentAs` specification;
-      that is, two components which accept a `defaultRender` prop, which is a
-      'default' implementation of a component which accepts the same overall
-      props.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Composes two components which conform to the `IComponentAs` specification; that is, two components which accept a
+      `defaultRender` prop, which is a 'default' implementation of a component which accepts the same overall props.
+    name: 'composeComponentAs(outer, inner)'
+    fullName: 'composeComponentAs(outer, inner)'
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: >-
-        export declare function composeComponentAs<TProps>(outer:
-        IComponentAs<TProps>, inner: IComponentAs<TProps>):
+        export declare function composeComponentAs<TProps>(outer: IComponentAs<TProps>, inner: IComponentAs<TProps>):
         IComponentAs<TProps>;
+      return:
+        type:
+          - IComponentAs<TProps>
+        description: ''
       parameters:
         - id: outer
           description: ''
-          type: IComponentAs&lt;TProps&gt;
+          type:
+            - IComponentAs<TProps>
         - id: inner
           description: ''
-          type: IComponentAs&lt;TProps&gt;
-      return:
-        type: IComponentAs&lt;TProps&gt;
-        description: ''
-  - name: 'composeRenderFunction(outer, inner)'
-    uid: '@fluentui/utilities!composeRenderFunction:function(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - IComponentAs<TProps>
+      typeParameters:
+        - id: TProps
+  - uid: '@fluentui/utilities!composeRenderFunction:function(1)'
     summary: >-
-      Composes two 'render functions' to produce a final render function that
-      renders the outer function, passing the inner function as 'default
-      render'. The inner function is then passed the original 'default render'
-      prop.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Composes two 'render functions' to produce a final render function that renders the outer function, passing the
+      inner function as 'default render'. The inner function is then passed the original 'default render' prop.
+    name: 'composeRenderFunction(outer, inner)'
+    fullName: 'composeRenderFunction(outer, inner)'
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: >-
-        export declare function composeRenderFunction<TProps>(outer:
-        IRenderFunction<TProps>, inner: IRenderFunction<TProps>):
-        IRenderFunction<TProps>;
+        export declare function composeRenderFunction<TProps>(outer: IRenderFunction<TProps>, inner:
+        IRenderFunction<TProps>): IRenderFunction<TProps>;
+      return:
+        type:
+          - IRenderFunction<TProps>
+        description: ''
       parameters:
         - id: outer
           description: ''
-          type: IRenderFunction&lt;TProps&gt;
+          type:
+            - IRenderFunction<TProps>
         - id: inner
           description: ''
-          type: IRenderFunction&lt;TProps&gt;
-      return:
-        type: IRenderFunction&lt;TProps&gt;
-        description: ''
-  - name: 'createArray(size, getItem)'
-    uid: '@fluentui/utilities!createArray:function(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - IRenderFunction<TProps>
+      typeParameters:
+        - id: TProps
+  - uid: '@fluentui/utilities!createArray:function(1)'
     summary: Creates an array of a given size and helper method to populate.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: 'createArray(size, getItem)'
+    fullName: 'createArray(size, getItem)'
+    langs:
+      - typeScript
+    type: function
     syntax:
-      content: >-
-        export declare function createArray<T>(size: number, getItem: (index:
-        number) => T): T[];
+      content: 'export declare function createArray<T>(size: number, getItem: (index: number) => T): T[];'
+      return:
+        type:
+          - 'T[]'
+        description: ''
       parameters:
         - id: size
           description: Size of array.
-          type: number
+          type:
+            - number
         - id: getItem
           description: Callback to populate given cell index.
-          type: '(index: number) =&gt; T'
-      return:
-        type: 'T[]'
-        description: ''
-  - name: createMemoizer(getValue)
-    uid: '@fluentui/utilities!createMemoizer:function(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - '(index: number) => T'
+      typeParameters:
+        - id: T
+  - uid: '@fluentui/utilities!createMemoizer:function(1)'
     summary: >-
-      Creates a memoizer for a single-value function, backed by a WeakMap. With
-      a WeakMap, the memoized values are only kept as long as the source
-      objects, ensuring that there is no memory leak.
+      Creates a memoizer for a single-value function, backed by a WeakMap. With a WeakMap, the memoized values are only
+      kept as long as the source objects, ensuring that there is no memory leak.
 
 
-      This function assumes that the input values passed to the wrapped function
-      will be `function` or `object` types. To memoize functions which accept
-      other inputs, use `memoizeFunction`<!-- -->, which memoizes against
-      arbitrary inputs using a lookup cache.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      This function assumes that the input values passed to the wrapped function will be `function` or `object` types.
+      To memoize functions which accept other inputs, use `memoizeFunction`<!-- -->, which memoizes against arbitrary
+      inputs using a lookup cache.
+    name: createMemoizer(getValue)
+    fullName: createMemoizer(getValue)
+    langs:
+      - typeScript
+    type: function
     syntax:
-      content: >-
-        export declare function createMemoizer<F extends (input: any) =>
-        any>(getValue: F): F;
+      content: 'export declare function createMemoizer<F extends (input: any) => any>(getValue: F): F;'
+      return:
+        type:
+          - F
+        description: ''
       parameters:
         - id: getValue
           description: ''
-          type: F
-      return:
-        type: F
-        description: ''
-  - name: css(args)
-    uid: '@fluentui/utilities!css:function(1)'
-    package: '@fluentui/utilities!'
-    summary: >-
-      Concatination helper, which can merge class names together. Skips over
-      falsey values.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+          type:
+            - F
+      typeParameters:
+        - id: F
+          type:
+            - '(input: any) => any'
+  - uid: '@fluentui/utilities!css:function(1)'
+    summary: 'Concatination helper, which can merge class names together. Skips over falsey values.'
+    name: css(args)
+    fullName: css(args)
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: 'export declare function css(...args: ICssInput[]): string;'
+      return:
+        type:
+          - string
+        description: ''
       parameters:
         - id: args
           description: ''
-          type: 'ICssInput[]'
-      return:
-        type: string
-        description: ''
-  - name: 'customizable(scope, fields, concatStyles)'
-    uid: '@fluentui/utilities!customizable:function(1)'
-    package: '@fluentui/utilities!'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+          type:
+            - 'ICssInput[]'
+  - uid: '@fluentui/utilities!customizable:function(1)'
+    name: 'customizable(scope, fields, concatStyles)'
+    fullName: 'customizable(scope, fields, concatStyles)'
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: >-
-        export declare function customizable(scope: string, fields: string[],
-        concatStyles?: boolean): <P>(ComposedComponent: React.ComponentType<P>)
-        => any;
+        export declare function customizable(scope: string, fields: string[], concatStyles?: boolean):
+        <P>(ComposedComponent: React.ComponentType<P>) => any;
+      return:
+        type:
+          - '<P>(ComposedComponent: React.ComponentType<P>) => any'
+        description: ''
       parameters:
         - id: scope
           description: ''
-          type: string
+          type:
+            - string
         - id: fields
           description: ''
-          type: 'string[]'
+          type:
+            - 'string[]'
         - id: concatStyles
           description: ''
-          type: boolean
-      return:
-        type: '&lt;P&gt;(ComposedComponent: React.ComponentType&lt;P&gt;) =&gt; any'
-        description: ''
-  - name: disableBodyScroll()
-    uid: '@fluentui/utilities!disableBodyScroll:function(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - boolean
+  - uid: '@fluentui/utilities!disableBodyScroll:function(1)'
     summary: Disables the body scrolling.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: disableBodyScroll()
+    fullName: disableBodyScroll()
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: 'export declare function disableBodyScroll(): void;'
       return:
-        type: void
+        type:
+          - void
         description: ''
-  - name: doesElementContainFocus(element)
-    uid: '@fluentui/utilities!doesElementContainFocus:function(1)'
-    package: '@fluentui/utilities!'
+  - uid: '@fluentui/utilities!doesElementContainFocus:function(1)'
     summary: 'Determines if an element, or any of its children, contain focus.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: doesElementContainFocus(element)
+    fullName: doesElementContainFocus(element)
+    langs:
+      - typeScript
+    type: function
     syntax:
-      content: >-
-        export declare function doesElementContainFocus(element: HTMLElement):
-        boolean;
+      content: 'export declare function doesElementContainFocus(element: HTMLElement): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
       parameters:
         - id: element
           description: ''
-          type: HTMLElement
-      return:
-        type: boolean
-        description: ''
-  - name: enableBodyScroll()
-    uid: '@fluentui/utilities!enableBodyScroll:function(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - HTMLElement
+  - uid: '@fluentui/utilities!enableBodyScroll:function(1)'
     summary: Enables the body scrolling.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: enableBodyScroll()
+    fullName: enableBodyScroll()
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: 'export declare function enableBodyScroll(): void;'
       return:
-        type: void
+        type:
+          - void
         description: ''
-  - name: 'extendComponent(parent, methods)'
-    uid: '@fluentui/utilities!extendComponent:function(1)'
-    package: '@fluentui/utilities!'
-    summary: >-
-      Extends a component's lifetime methods by appending new functions to the
-      existing lifetime functions.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+  - uid: '@fluentui/utilities!extendComponent:function(1)'
+    summary: Extends a component's lifetime methods by appending new functions to the existing lifetime functions.
+    name: 'extendComponent(parent, methods)'
+    fullName: 'extendComponent(parent, methods)'
+    langs:
+      - typeScript
+    type: function
     syntax:
-      content: >-
-        export declare function extendComponent<T extends
-        React.Component>(parent: T, methods: {
+      content: |-
+        export declare function extendComponent<T extends React.Component>(parent: T, methods: {
             [key in keyof T]?: T[key];
         }): void;
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: parent
           description: ''
-          type: T
+          type:
+            - T
         - id: methods
           description: ''
-          type: |-
-            {
-                [key in keyof T]?: T[key];
-            }
-      return:
-        type: void
-        description: ''
-  - name: 'filteredAssign(isAllowed, target, args)'
-    uid: '@fluentui/utilities!filteredAssign:function(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - |-
+              {
+                  [key in keyof T]?: T[key];
+              }
+      typeParameters:
+        - id: T
+          type:
+            - React.Component
+  - uid: '@fluentui/utilities!filteredAssign:function(1)'
     summary: >-
-      Makes a resulting merge of a bunch of objects, but allows a filter
-      function to be passed in to filter the resulting merges. This allows for
-      scenarios where you want to merge "everything except that one thing" or
-      "properties that start with data-". Note that this will shallow merge; it
-      will not create new cloned values for target members.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Makes a resulting merge of a bunch of objects, but allows a filter function to be passed in to filter the
+      resulting merges. This allows for scenarios where you want to merge "everything except that one thing" or
+      "properties that start with data-". Note that this will shallow merge; it will not create new cloned values for
+      target members.
+    name: 'filteredAssign(isAllowed, target, args)'
+    fullName: 'filteredAssign(isAllowed, target, args)'
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: >-
-        export declare function filteredAssign(isAllowed: (propName: string) =>
-        boolean, target: any, ...args: any[]): any;
+        export declare function filteredAssign(isAllowed: (propName: string) => boolean, target: any, ...args: any[]):
+        any;
+      return:
+        type:
+          - any
+        description: Resulting merged target.
       parameters:
         - id: isAllowed
-          description: >-
-            Callback to determine if the given propName is allowed in the
-            result.
-          type: '(propName: string) =&gt; boolean'
+          description: Callback to determine if the given propName is allowed in the result.
+          type:
+            - '(propName: string) => boolean'
         - id: target
           description: Target object to merge following object arguments into.
-          type: any
+          type:
+            - any
         - id: args
-          description: >-
-            One or more objects that will be mixed into the target in the order
-            they are provided.
-          type: 'any[]'
-      return:
-        type: any
-        description: Resulting merged target.
-  - name: 'find(array, cb)'
-    uid: '@fluentui/utilities!find:function(1)'
-    package: '@fluentui/utilities!'
+          description: One or more objects that will be mixed into the target in the order they are provided.
+          type:
+            - 'any[]'
+  - uid: '@fluentui/utilities!find:function(1)'
     summary: Helper to find the first item within an array that satisfies the callback.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: 'find(array, cb)'
+    fullName: 'find(array, cb)'
+    langs:
+      - typeScript
+    type: function
     syntax:
-      content: >-
-        export declare function find<T>(array: T[], cb: (item: T, index: number)
-        => boolean): T | undefined;
+      content: 'export declare function find<T>(array: T[], cb: (item: T, index: number) => boolean): T | undefined;'
+      return:
+        type:
+          - T | undefined
+        description: ''
       parameters:
         - id: array
           description: Array to search
-          type: 'T[]'
+          type:
+            - 'T[]'
         - id: cb
           description: Callback which returns true on matches
-          type: '(item: T, index: number) =&gt; boolean'
-      return:
-        type: T | undefined
-        description: ''
-  - name: 'findIndex(array, cb, fromIndex)'
-    uid: '@fluentui/utilities!findIndex:function(1)'
-    package: '@fluentui/utilities!'
-    summary: >-
-      Helper to find the index of an item within an array, using a callback to
-      determine the match.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+          type:
+            - '(item: T, index: number) => boolean'
+      typeParameters:
+        - id: T
+  - uid: '@fluentui/utilities!findIndex:function(1)'
+    summary: 'Helper to find the index of an item within an array, using a callback to determine the match.'
+    name: 'findIndex(array, cb, fromIndex)'
+    fullName: 'findIndex(array, cb, fromIndex)'
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: >-
-        export declare function findIndex<T>(array: T[], cb: (item: T, index:
-        number) => boolean, fromIndex?: number): number;
+        export declare function findIndex<T>(array: T[], cb: (item: T, index: number) => boolean, fromIndex?: number):
+        number;
+      return:
+        type:
+          - number
+        description: ''
       parameters:
         - id: array
           description: Array to search.
-          type: 'T[]'
+          type:
+            - 'T[]'
         - id: cb
           description: Callback which returns true on matches.
-          type: '(item: T, index: number) =&gt; boolean'
+          type:
+            - '(item: T, index: number) => boolean'
         - id: fromIndex
           description: Optional index to start from (defaults to 0)
-          type: number
-      return:
-        type: number
-        description: ''
-  - name: findScrollableParent(startingElement)
-    uid: '@fluentui/utilities!findScrollableParent:function(1)'
-    package: '@fluentui/utilities!'
-    summary: >-
-      Traverses up the DOM for the element with the data-is-scrollable=true
-      attribute, or returns document.body.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+          type:
+            - number
+      typeParameters:
+        - id: T
+  - uid: '@fluentui/utilities!findScrollableParent:function(1)'
+    summary: 'Traverses up the DOM for the element with the data-is-scrollable=true attribute, or returns document.body.'
+    name: findScrollableParent(startingElement)
+    fullName: findScrollableParent(startingElement)
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: >-
-        export declare function findScrollableParent(startingElement:
-        HTMLElement | null): HTMLElement | Window | undefined | null;
+        export declare function findScrollableParent(startingElement: HTMLElement | null): HTMLElement | Window |
+        undefined | null;
+      return:
+        type:
+          - HTMLElement | Window | undefined | null
+        description: ''
       parameters:
         - id: startingElement
           description: ''
-          type: HTMLElement | null
-      return:
-        type: HTMLElement | Window | undefined | null
-        description: ''
-  - name: fitContentToBounds(options)
-    uid: '@fluentui/utilities!fitContentToBounds:function(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - HTMLElement | null
+  - uid: '@fluentui/utilities!fitContentToBounds:function(1)'
     summary: >-
-      Produces a proportionally-scaled version of an input content size when fit
-      to a bounding size. Given a `contentSize` and a `boundsSize`<!-- -->, this
-      function scales `contentSize` proportionally using either `contain` or
-      `cover` fit behaviors. Use this function to pre-calculate the layout for
-      the CSS `object-fit` and `background-fit` behaviors. With `contain`<!--
-      -->, the output size must be the largest it can be while completely within
-      the `boundsSize`<!-- -->. With `cover`<!-- -->, the output size must be
-      the smallest it can be while completely around the `boundsSize`<!-- -->.
-      By default, there is a `maxScale` value of 1, which prevents the
+      Produces a proportionally-scaled version of an input content size when fit to a bounding size. Given a
+      `contentSize` and a `boundsSize`<!-- -->, this function scales `contentSize` proportionally using either `contain`
+      or `cover` fit behaviors. Use this function to pre-calculate the layout for the CSS `object-fit` and
+      `background-fit` behaviors. With `contain`<!-- -->, the output size must be the largest it can be while completely
+      within the `boundsSize`<!-- -->. With `cover`<!-- -->, the output size must be the smallest it can be while
+      completely around the `boundsSize`<!-- -->. By default, there is a `maxScale` value of 1, which prevents the
       `contentSize` from being scaled larger.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: fitContentToBounds(options)
+    fullName: fitContentToBounds(options)
+    langs:
+      - typeScript
+    type: function
     syntax:
-      content: >-
-        export declare function fitContentToBounds(options:
-        IFitContentToBoundsOptions): ISize;
+      content: 'export declare function fitContentToBounds(options: IFitContentToBoundsOptions): ISize;'
+      return:
+        type:
+          - '@fluentui/utilities!ISize:interface'
+        description: ''
       parameters:
         - id: options
           description: the options for the bounds fit operation
-          type: >-
-            <xref uid="@fluentui/utilities!IFitContentToBoundsOptions:interface"
-            />
-      return:
-        type: '<xref uid="@fluentui/utilities!ISize:interface" />'
-        description: ''
-  - name: flatten(array)
-    uid: '@fluentui/utilities!flatten:function(1)'
-    package: '@fluentui/utilities!'
-    summary: >-
-      Given an array where each element is of type T or T\[\], flatten it into
-      an array of T
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+          type:
+            - '@fluentui/utilities!IFitContentToBoundsOptions:interface'
+  - uid: '@fluentui/utilities!flatten:function(1)'
+    summary: 'Given an array where each element is of type T or T\[\], flatten it into an array of T'
+    name: flatten(array)
+    fullName: flatten(array)
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: 'export declare function flatten<T>(array: (T | T[])[]): T[];'
+      return:
+        type:
+          - 'T[]'
+        description: ''
       parameters:
         - id: array
           description: The array where each element can optionally also be an array
-          type: '(T | T[])[]'
-      return:
-        type: 'T[]'
-        description: ''
-  - name: focusAsync(element)
-    uid: '@fluentui/utilities!focusAsync:function(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - '(T | T[])[]'
+      typeParameters:
+        - id: T
+  - uid: '@fluentui/utilities!focusAsync:function(1)'
     summary: >-
-      Sets focus to an element asynchronously. The focus will be set at the next
-      browser repaint, meaning it won't cause any extra recalculations. If more
-      than one focusAsync is called during one frame, only the latest called
+      Sets focus to an element asynchronously. The focus will be set at the next browser repaint, meaning it won't cause
+      any extra recalculations. If more than one focusAsync is called during one frame, only the latest called
       focusAsync element will actually be focused
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: focusAsync(element)
+    fullName: focusAsync(element)
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: |-
         export declare function focusAsync(element: HTMLElement | {
             focus: () => void;
         } | undefined | null): void;
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: element
           description: The element to focus
-          type: |-
-            HTMLElement | {
-                focus: () =&gt; void;
-            } | undefined | null
-      return:
-        type: void
-        description: ''
-  - name: focusFirstChild(rootElement)
-    uid: '@fluentui/utilities!focusFirstChild:function(1)'
-    package: '@fluentui/utilities!'
-    summary: >-
-      Attempts to focus the first focusable element that is a child or child's
-      child of the rootElement.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+          type:
+            - |-
+              HTMLElement | {
+                  focus: () => void;
+              } | undefined | null
+  - uid: '@fluentui/utilities!focusFirstChild:function(1)'
+    summary: Attempts to focus the first focusable element that is a child or child's child of the rootElement.
+    name: focusFirstChild(rootElement)
+    fullName: focusFirstChild(rootElement)
+    langs:
+      - typeScript
+    type: function
     syntax:
-      content: >-
-        export declare function focusFirstChild(rootElement: HTMLElement):
-        boolean;
+      content: 'export declare function focusFirstChild(rootElement: HTMLElement): boolean;'
+      return:
+        type:
+          - boolean
+        description: 'True if focus was set, false if it was not.'
       parameters:
         - id: rootElement
           description: Element to start the search for a focusable child.
-          type: HTMLElement
-      return:
-        type: boolean
-        description: 'True if focus was set, false if it was not.'
-  - name: 'format(s, values)'
-    uid: '@fluentui/utilities!format:function(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - HTMLElement
+  - uid: '@fluentui/utilities!format:function(1)'
     summary: >-
-      String format method, used for scenarios where at runtime you need to
-      evaluate a formatted string given a tokenized string. This usually only is
-      needed in localization scenarios.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      String format method, used for scenarios where at runtime you need to evaluate a formatted string given a
+      tokenized string. This usually only is needed in localization scenarios.
+    name: 'format(s, values)'
+    fullName: 'format(s, values)'
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: 'export declare function format(s: string, ...values: any[]): string;'
+      return:
+        type:
+          - string
+        description: ''
       parameters:
         - id: s
           description: ''
-          type: string
+          type:
+            - string
         - id: values
           description: ''
-          type: 'any[]'
-      return:
-        type: string
-        description: ''
-  - name: 'getDistanceBetweenPoints(point1, point2)'
-    uid: '@fluentui/utilities!getDistanceBetweenPoints:function(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - 'any[]'
+  - uid: '@fluentui/utilities!getDistanceBetweenPoints:function(1)'
     summary: Determines the distance between two points.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: 'getDistanceBetweenPoints(point1, point2)'
+    fullName: 'getDistanceBetweenPoints(point1, point2)'
+    langs:
+      - typeScript
+    type: function
     syntax:
-      content: >-
-        export declare function getDistanceBetweenPoints(point1: Point, point2:
-        Point): number;
+      content: 'export declare function getDistanceBetweenPoints(point1: Point, point2: Point): number;'
+      return:
+        type:
+          - number
+        description: ''
       parameters:
         - id: point1
           description: ''
-          type: '<xref uid="@fluentui/utilities!Point:interface" />'
+          type:
+            - '@fluentui/utilities!Point:interface'
         - id: point2
           description: ''
-          type: '<xref uid="@fluentui/utilities!Point:interface" />'
-      return:
-        type: number
-        description: ''
-  - name: getDocument(rootElement)
-    uid: '@fluentui/utilities!getDocument:function(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - '@fluentui/utilities!Point:interface'
+  - uid: '@fluentui/utilities!getDocument:function(1)'
     summary: >-
-      Helper to get the document object. Note that in popup window cases,
-      document might be the wrong document, which is why we look at
-      ownerDocument for the truth. Also note that the SSR flag is used to test
-      ssr scenarios even if document is defined (from JSDOM for example.)
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Helper to get the document object. Note that in popup window cases, document might be the wrong document, which is
+      why we look at ownerDocument for the truth. Also note that the SSR flag is used to test ssr scenarios even if
+      document is defined (from JSDOM for example.)
+    name: getDocument(rootElement)
+    fullName: getDocument(rootElement)
+    langs:
+      - typeScript
+    type: function
     syntax:
-      content: >-
-        export declare function getDocument(rootElement?: HTMLElement | null):
-        Document | undefined;
+      content: 'export declare function getDocument(rootElement?: HTMLElement | null): Document | undefined;'
+      return:
+        type:
+          - Document | undefined
+        description: ''
       parameters:
         - id: rootElement
           description: ''
-          type: HTMLElement | null
-      return:
-        type: Document | undefined
-        description: ''
-  - name: 'getElementIndexPath(fromElement, toElement)'
-    uid: '@fluentui/utilities!getElementIndexPath:function(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - HTMLElement | null
+  - uid: '@fluentui/utilities!getElementIndexPath:function(1)'
     summary: >-
       Finds the element index path from a parent element to a child element.
 
 
-      If you had this node structure: "A has children \[B, C\] and C has child
-      D", the index path from A to D would be \[1, 0\], or
-      `parent.chidren[1].children[0]`<!-- -->.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      If you had this node structure: "A has children \[B, C\] and C has child D", the index path from A to D would be
+      \[1, 0\], or `parent.chidren[1].children[0]`<!-- -->.
+    name: 'getElementIndexPath(fromElement, toElement)'
+    fullName: 'getElementIndexPath(fromElement, toElement)'
+    langs:
+      - typeScript
+    type: function
     syntax:
-      content: >-
-        export declare function getElementIndexPath(fromElement: HTMLElement,
-        toElement: HTMLElement): number[];
+      content: 'export declare function getElementIndexPath(fromElement: HTMLElement, toElement: HTMLElement): number[];'
+      return:
+        type:
+          - 'number[]'
+        description: ''
       parameters:
         - id: fromElement
           description: ''
-          type: HTMLElement
+          type:
+            - HTMLElement
         - id: toElement
           description: ''
-          type: HTMLElement
-      return:
-        type: 'number[]'
-        description: ''
-  - name: >-
-      getFirstFocusable(rootElement, currentElement,
-      includeElementsInFocusZones)
-    uid: '@fluentui/utilities!getFirstFocusable:function(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - HTMLElement
+  - uid: '@fluentui/utilities!getFirstFocusable:function(1)'
     summary: Gets the first focusable element.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: 'getFirstFocusable(rootElement, currentElement, includeElementsInFocusZones)'
+    fullName: 'getFirstFocusable(rootElement, currentElement, includeElementsInFocusZones)'
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: >-
-        export declare function getFirstFocusable(rootElement: HTMLElement,
-        currentElement: HTMLElement, includeElementsInFocusZones?: boolean):
-        HTMLElement | null;
+        export declare function getFirstFocusable(rootElement: HTMLElement, currentElement: HTMLElement,
+        includeElementsInFocusZones?: boolean): HTMLElement | null;
+      return:
+        type:
+          - HTMLElement | null
+        description: ''
       parameters:
         - id: rootElement
           description: ''
-          type: HTMLElement
+          type:
+            - HTMLElement
         - id: currentElement
           description: ''
-          type: HTMLElement
+          type:
+            - HTMLElement
         - id: includeElementsInFocusZones
           description: ''
-          type: boolean
-      return:
-        type: HTMLElement | null
-        description: ''
-  - name: >-
-      getFirstTabbable(rootElement, currentElement, includeElementsInFocusZones,
-      checkNode)
-    uid: '@fluentui/utilities!getFirstTabbable:function(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - boolean
+  - uid: '@fluentui/utilities!getFirstTabbable:function(1)'
     summary: >-
-      Gets the first tabbable element. (The difference between focusable and
-      tabbable is that tabbable elements are focusable elements that also have
-      tabIndex != -1.)
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Gets the first tabbable element. (The difference between focusable and tabbable is that tabbable elements are
+      focusable elements that also have tabIndex != -1.)
+    name: 'getFirstTabbable(rootElement, currentElement, includeElementsInFocusZones, checkNode)'
+    fullName: 'getFirstTabbable(rootElement, currentElement, includeElementsInFocusZones, checkNode)'
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: >-
-        export declare function getFirstTabbable(rootElement: HTMLElement,
-        currentElement: HTMLElement, includeElementsInFocusZones?: boolean,
-        checkNode?: boolean): HTMLElement | null;
+        export declare function getFirstTabbable(rootElement: HTMLElement, currentElement: HTMLElement,
+        includeElementsInFocusZones?: boolean, checkNode?: boolean): HTMLElement | null;
+      return:
+        type:
+          - HTMLElement | null
+        description: ''
       parameters:
         - id: rootElement
           description: The parent element to search beneath.
-          type: HTMLElement
+          type:
+            - HTMLElement
         - id: currentElement
           description: >-
-            The descendant of rootElement to start the search at. This element
-            is the first one checked, and iteration continues forward. Typical
-            use passes rootElement.firstChild.
-          type: HTMLElement
+            The descendant of rootElement to start the search at. This element is the first one checked, and iteration
+            continues forward. Typical use passes rootElement.firstChild.
+          type:
+            - HTMLElement
         - id: includeElementsInFocusZones
           description: true if traversal should go into FocusZone descendants.
-          type: boolean
+          type:
+            - boolean
         - id: checkNode
           description: Include currentElement in search when true. Defaults to true.
-          type: boolean
-      return:
-        type: HTMLElement | null
-        description: ''
-  - name: 'getFocusableByIndexPath(parent, path)'
-    uid: '@fluentui/utilities!getFocusableByIndexPath:function(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - boolean
+  - uid: '@fluentui/utilities!getFocusableByIndexPath:function(1)'
     summary: >-
-      Finds the closest focusable element via an index path from a parent. See
-      `getElementIndexPath` for getting an index path from an element to a
-      child.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Finds the closest focusable element via an index path from a parent. See `getElementIndexPath` for getting an
+      index path from an element to a child.
+    name: 'getFocusableByIndexPath(parent, path)'
+    fullName: 'getFocusableByIndexPath(parent, path)'
+    langs:
+      - typeScript
+    type: function
     syntax:
-      content: >-
-        export declare function getFocusableByIndexPath(parent: HTMLElement,
-        path: number[]): HTMLElement | undefined;
+      content: 'export declare function getFocusableByIndexPath(parent: HTMLElement, path: number[]): HTMLElement | undefined;'
+      return:
+        type:
+          - HTMLElement | undefined
+        description: ''
       parameters:
         - id: parent
           description: ''
-          type: HTMLElement
+          type:
+            - HTMLElement
         - id: path
           description: ''
-          type: 'number[]'
-      return:
-        type: HTMLElement | undefined
-        description: ''
-  - name: getId(prefix)
-    uid: '@fluentui/utilities!getId:function(1)'
-    package: '@fluentui/utilities!'
-    summary: >-
-      Generates a unique id in the global scope (this spans across duplicate
-      copies of the same library.)
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+          type:
+            - 'number[]'
+  - uid: '@fluentui/utilities!getId:function(1)'
+    summary: Generates a unique id in the global scope (this spans across duplicate copies of the same library.)
+    name: getId(prefix)
+    fullName: getId(prefix)
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: 'export declare function getId(prefix?: string): string;'
+      return:
+        type:
+          - string
+        description: ''
       parameters:
         - id: prefix
           description: ''
-          type: string
-      return:
-        type: string
-        description: ''
-  - name: 'getInitials(displayName, isRtl, allowPhoneInitials)'
-    uid: '@fluentui/utilities!getInitials:function(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - string
+  - uid: '@fluentui/utilities!getInitials:function(1)'
     summary: Get (up to 2 characters) initials based on display name of the persona.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: 'getInitials(displayName, isRtl, allowPhoneInitials)'
+    fullName: 'getInitials(displayName, isRtl, allowPhoneInitials)'
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: >-
-        export declare function getInitials(displayName: string | undefined |
-        null, isRtl: boolean, allowPhoneInitials?: boolean): string;
+        export declare function getInitials(displayName: string | undefined | null, isRtl: boolean, allowPhoneInitials?:
+        boolean): string;
+      return:
+        type:
+          - string
+        description: ''
       parameters:
         - id: displayName
           description: ''
-          type: string | undefined | null
+          type:
+            - string | undefined | null
         - id: isRtl
           description: ''
-          type: boolean
+          type:
+            - boolean
         - id: allowPhoneInitials
           description: ''
-          type: boolean
-      return:
-        type: string
-        description: ''
-  - name: getLanguage(persistenceType)
-    uid: '@fluentui/utilities!getLanguage:function(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - boolean
+  - uid: '@fluentui/utilities!getLanguage:function(1)'
     summary: Gets the language set for the page.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: getLanguage(persistenceType)
+    fullName: getLanguage(persistenceType)
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: >-
-        export declare function getLanguage(persistenceType?: 'localStorage' |
-        'sessionStorage' | 'none'): string | null;
+        export declare function getLanguage(persistenceType?: 'localStorage' | 'sessionStorage' | 'none'): string |
+        null;
+      return:
+        type:
+          - string | null
+        description: ''
       parameters:
         - id: persistenceType
-          description: >-
-            Where to persist the value. Default is `sessionStorage` if
-            available.
-          type: '''localStorage'' | ''sessionStorage'' | ''none'''
-      return:
-        type: string | null
-        description: ''
-  - name: 'getLastFocusable(rootElement, currentElement, includeElementsInFocusZones)'
-    uid: '@fluentui/utilities!getLastFocusable:function(1)'
-    package: '@fluentui/utilities!'
+          description: Where to persist the value. Default is `sessionStorage` if available.
+          type:
+            - '''localStorage'' | ''sessionStorage'' | ''none'''
+  - uid: '@fluentui/utilities!getLastFocusable:function(1)'
     summary: Gets the last focusable element.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: 'getLastFocusable(rootElement, currentElement, includeElementsInFocusZones)'
+    fullName: 'getLastFocusable(rootElement, currentElement, includeElementsInFocusZones)'
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: >-
-        export declare function getLastFocusable(rootElement: HTMLElement,
-        currentElement: HTMLElement, includeElementsInFocusZones?: boolean):
-        HTMLElement | null;
+        export declare function getLastFocusable(rootElement: HTMLElement, currentElement: HTMLElement,
+        includeElementsInFocusZones?: boolean): HTMLElement | null;
+      return:
+        type:
+          - HTMLElement | null
+        description: ''
       parameters:
         - id: rootElement
           description: ''
-          type: HTMLElement
+          type:
+            - HTMLElement
         - id: currentElement
           description: ''
-          type: HTMLElement
+          type:
+            - HTMLElement
         - id: includeElementsInFocusZones
           description: ''
-          type: boolean
-      return:
-        type: HTMLElement | null
-        description: ''
-  - name: >-
-      getLastTabbable(rootElement, currentElement, includeElementsInFocusZones,
-      checkNode)
-    uid: '@fluentui/utilities!getLastTabbable:function(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - boolean
+  - uid: '@fluentui/utilities!getLastTabbable:function(1)'
     summary: >-
-      Gets the last tabbable element. (The difference between focusable and
-      tabbable is that tabbable elements are focusable elements that also have
-      tabIndex != -1.)
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Gets the last tabbable element. (The difference between focusable and tabbable is that tabbable elements are
+      focusable elements that also have tabIndex != -1.)
+    name: 'getLastTabbable(rootElement, currentElement, includeElementsInFocusZones, checkNode)'
+    fullName: 'getLastTabbable(rootElement, currentElement, includeElementsInFocusZones, checkNode)'
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: >-
-        export declare function getLastTabbable(rootElement: HTMLElement,
-        currentElement: HTMLElement, includeElementsInFocusZones?: boolean,
-        checkNode?: boolean): HTMLElement | null;
+        export declare function getLastTabbable(rootElement: HTMLElement, currentElement: HTMLElement,
+        includeElementsInFocusZones?: boolean, checkNode?: boolean): HTMLElement | null;
+      return:
+        type:
+          - HTMLElement | null
+        description: ''
       parameters:
         - id: rootElement
           description: The parent element to search beneath.
-          type: HTMLElement
+          type:
+            - HTMLElement
         - id: currentElement
           description: >-
-            The descendant of rootElement to start the search at. This element
-            is the first one checked, and iteration continues in reverse.
-            Typical use passes rootElement.lastChild.
-          type: HTMLElement
+            The descendant of rootElement to start the search at. This element is the first one checked, and iteration
+            continues in reverse. Typical use passes rootElement.lastChild.
+          type:
+            - HTMLElement
         - id: includeElementsInFocusZones
           description: true if traversal should go into FocusZone descendants.
-          type: boolean
+          type:
+            - boolean
         - id: checkNode
           description: Include currentElement in search when true. Defaults to true.
-          type: boolean
-      return:
-        type: HTMLElement | null
-        description: ''
-  - name: 'getNativeElementProps(tagName, props, excludedPropNames)'
-    uid: '@fluentui/utilities!getNativeElementProps:function(1)'
-    package: '@fluentui/utilities!'
-    summary: >-
-      Given an element tagname and user props, filters the props to only allowed
-      props for the given element type.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+          type:
+            - boolean
+  - uid: '@fluentui/utilities!getNativeElementProps:function(1)'
+    summary: 'Given an element tagname and user props, filters the props to only allowed props for the given element type.'
+    name: 'getNativeElementProps(tagName, props, excludedPropNames)'
+    fullName: 'getNativeElementProps(tagName, props, excludedPropNames)'
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: >-
-        export declare function getNativeElementProps<TAttributes extends
-        React.HTMLAttributes<any>>(tagName: string, props: {},
-        excludedPropNames?: string[]): TAttributes;
+        export declare function getNativeElementProps<TAttributes extends React.HTMLAttributes<any>>(tagName: string,
+        props: {}, excludedPropNames?: string[]): TAttributes;
+      return:
+        type:
+          - TAttributes
+        description: ''
       parameters:
         - id: tagName
           description: Tag name (e.g. "div")
-          type: string
+          type:
+            - string
         - id: props
           description: Props object
-          type: '{}'
+          type:
+            - '{}'
         - id: excludedPropNames
           description: List of props to disallow
-          type: 'string[]'
-      return:
-        type: TAttributes
-        description: ''
-  - name: 'getNativeProps(props, allowedPropNames, excludedPropNames)'
-    uid: '@fluentui/utilities!getNativeProps:function(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - 'string[]'
+      typeParameters:
+        - id: TAttributes
+          type:
+            - React.HTMLAttributes<any>
+  - uid: '@fluentui/utilities!getNativeProps:function(1)'
     summary: >-
-      Gets native supported props for an html element provided the allowance
-      set. Use one of the property sets defined (divProperties, buttonPropertes,
-      etc) to filter out supported properties from a given props set. Note that
-      all data- and aria- prefixed attributes will be allowed. NOTE:
-      getNativeProps should always be applied first when adding props to a react
-      component. The non-native props should be applied second. This will
-      prevent getNativeProps from overriding your custom props. For example, if
-      props passed to getNativeProps has an onClick function and getNativeProps
-      is added to the component after an onClick function is added, then the
-      getNativeProps onClick will override it.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Gets native supported props for an html element provided the allowance set. Use one of the property sets defined
+      (divProperties, buttonPropertes, etc) to filter out supported properties from a given props set. Note that all
+      data- and aria- prefixed attributes will be allowed. NOTE: getNativeProps should always be applied first when
+      adding props to a react component. The non-native props should be applied second. This will prevent getNativeProps
+      from overriding your custom props. For example, if props passed to getNativeProps has an onClick function and
+      getNativeProps is added to the component after an onClick function is added, then the getNativeProps onClick will
+      override it.
+    name: 'getNativeProps(props, allowedPropNames, excludedPropNames)'
+    fullName: 'getNativeProps(props, allowedPropNames, excludedPropNames)'
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: >-
-        export declare function getNativeProps<T extends Record<string,
-        any>>(props: Record<string, any>, allowedPropNames: string[] |
-        Record<string, number>, excludedPropNames?: string[]): T;
+        export declare function getNativeProps<T extends Record<string, any>>(props: Record<string, any>,
+        allowedPropNames: string[] | Record<string, number>, excludedPropNames?: string[]): T;
+      return:
+        type:
+          - T
+        description: The filtered props
       parameters:
         - id: props
           description: The unfiltered input props
-          type: 'Record&lt;string, any&gt;'
+          type:
+            - 'Record<string, any>'
         - id: allowedPropNames
           description: ''
-          type: 'string[] | Record&lt;string, number&gt;'
+          type:
+            - 'string[] | Record<string, number>'
         - id: excludedPropNames
           description: ''
-          type: 'string[]'
-      return:
-        type: T
-        description: The filtered props
-  - name: >-
-      getNextElement(rootElement, currentElement, checkNode,
-      suppressParentTraversal, suppressChildTraversal,
+          type:
+            - 'string[]'
+      typeParameters:
+        - id: T
+          type:
+            - 'Record<string, any>'
+  - uid: '@fluentui/utilities!getNextElement:function(1)'
+    summary: 'Traverse to find the next focusable element. If tabbable is true, the element must have tabIndex != -1.'
+    name: >-
+      getNextElement(rootElement, currentElement, checkNode, suppressParentTraversal, suppressChildTraversal,
       includeElementsInFocusZones, allowFocusRoot, tabbable)
-    uid: '@fluentui/utilities!getNextElement:function(1)'
-    package: '@fluentui/utilities!'
-    summary: >-
-      Traverse to find the next focusable element. If tabbable is true, the
-      element must have tabIndex != -1.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    fullName: >-
+      getNextElement(rootElement, currentElement, checkNode, suppressParentTraversal, suppressChildTraversal,
+      includeElementsInFocusZones, allowFocusRoot, tabbable)
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: >-
-        export declare function getNextElement(rootElement: HTMLElement,
-        currentElement: HTMLElement | null, checkNode?: boolean,
-        suppressParentTraversal?: boolean, suppressChildTraversal?: boolean,
-        includeElementsInFocusZones?: boolean, allowFocusRoot?: boolean,
-        tabbable?: boolean): HTMLElement | null;
+        export declare function getNextElement(rootElement: HTMLElement, currentElement: HTMLElement | null, checkNode?:
+        boolean, suppressParentTraversal?: boolean, suppressChildTraversal?: boolean, includeElementsInFocusZones?:
+        boolean, allowFocusRoot?: boolean, tabbable?: boolean): HTMLElement | null;
+      return:
+        type:
+          - HTMLElement | null
+        description: ''
       parameters:
         - id: rootElement
           description: ''
-          type: HTMLElement
+          type:
+            - HTMLElement
         - id: currentElement
           description: ''
-          type: HTMLElement | null
+          type:
+            - HTMLElement | null
         - id: checkNode
           description: Include currentElement in search when true.
-          type: boolean
+          type:
+            - boolean
         - id: suppressParentTraversal
           description: ''
-          type: boolean
+          type:
+            - boolean
         - id: suppressChildTraversal
           description: ''
-          type: boolean
+          type:
+            - boolean
         - id: includeElementsInFocusZones
           description: ''
-          type: boolean
+          type:
+            - boolean
         - id: allowFocusRoot
           description: ''
-          type: boolean
+          type:
+            - boolean
         - id: tabbable
           description: ''
-          type: boolean
-      return:
-        type: HTMLElement | null
-        description: ''
-  - name: >-
-      getPreviousElement(rootElement, currentElement, checkNode,
-      suppressParentTraversal, traverseChildren, includeElementsInFocusZones,
-      allowFocusRoot, tabbable)
-    uid: '@fluentui/utilities!getPreviousElement:function(1)'
-    package: '@fluentui/utilities!'
-    summary: >-
-      Traverse to find the previous element. If tabbable is true, the element
-      must have tabIndex != -1.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+          type:
+            - boolean
+  - uid: '@fluentui/utilities!getPreviousElement:function(1)'
+    summary: 'Traverse to find the previous element. If tabbable is true, the element must have tabIndex != -1.'
+    name: >-
+      getPreviousElement(rootElement, currentElement, checkNode, suppressParentTraversal, traverseChildren,
+      includeElementsInFocusZones, allowFocusRoot, tabbable)
+    fullName: >-
+      getPreviousElement(rootElement, currentElement, checkNode, suppressParentTraversal, traverseChildren,
+      includeElementsInFocusZones, allowFocusRoot, tabbable)
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: >-
-        export declare function getPreviousElement(rootElement: HTMLElement,
-        currentElement: HTMLElement | null, checkNode?: boolean,
-        suppressParentTraversal?: boolean, traverseChildren?: boolean,
-        includeElementsInFocusZones?: boolean, allowFocusRoot?: boolean,
-        tabbable?: boolean): HTMLElement | null;
+        export declare function getPreviousElement(rootElement: HTMLElement, currentElement: HTMLElement | null,
+        checkNode?: boolean, suppressParentTraversal?: boolean, traverseChildren?: boolean,
+        includeElementsInFocusZones?: boolean, allowFocusRoot?: boolean, tabbable?: boolean): HTMLElement | null;
+      return:
+        type:
+          - HTMLElement | null
+        description: ''
       parameters:
         - id: rootElement
           description: ''
-          type: HTMLElement
+          type:
+            - HTMLElement
         - id: currentElement
           description: ''
-          type: HTMLElement | null
+          type:
+            - HTMLElement | null
         - id: checkNode
           description: ''
-          type: boolean
+          type:
+            - boolean
         - id: suppressParentTraversal
           description: ''
-          type: boolean
+          type:
+            - boolean
         - id: traverseChildren
           description: ''
-          type: boolean
+          type:
+            - boolean
         - id: includeElementsInFocusZones
           description: ''
-          type: boolean
+          type:
+            - boolean
         - id: allowFocusRoot
           description: ''
-          type: boolean
+          type:
+            - boolean
         - id: tabbable
           description: ''
-          type: boolean
-      return:
-        type: HTMLElement | null
-        description: ''
-  - name: 'getPropsWithDefaults(defaultProps, propsWithoutDefaults)'
-    uid: '@fluentui/utilities!getPropsWithDefaults:function(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - boolean
+  - uid: '@fluentui/utilities!getPropsWithDefaults:function(1)'
     summary: >-
-      Function to apply default values to a component props object. This
-      function is intended for function components, to maintain parity with the
-      `defaultProps` feature of class components. It accounts for properties
-      that are specified, but undefined.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Function to apply default values to a component props object. This function is intended for function components,
+      to maintain parity with the `defaultProps` feature of class components. It accounts for properties that are
+      specified, but undefined.
+    name: 'getPropsWithDefaults(defaultProps, propsWithoutDefaults)'
+    fullName: 'getPropsWithDefaults(defaultProps, propsWithoutDefaults)'
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: >-
-        export declare function getPropsWithDefaults<TProps extends
-        {}>(defaultProps: Partial<TProps>, propsWithoutDefaults: TProps):
-        TProps;
+        export declare function getPropsWithDefaults<TProps extends {}>(defaultProps: Partial<TProps>,
+        propsWithoutDefaults: TProps): TProps;
+      return:
+        type:
+          - TProps
+        description: ''
       parameters:
         - id: defaultProps
           description: An object with default values for various properties
-          type: Partial&lt;TProps&gt;
+          type:
+            - Partial<TProps>
         - id: propsWithoutDefaults
           description: The props object passed into the component
-          type: TProps
-      return:
-        type: TProps
-        description: ''
-  - name: getRect(element)
-    uid: '@fluentui/utilities!getRect:function(1)'
-    package: '@fluentui/utilities!'
-    summary: >-
-      Helper to get bounding client rect. Passing in window will get the window
-      size.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+          type:
+            - TProps
+      typeParameters:
+        - id: TProps
+          type:
+            - '{}'
+  - uid: '@fluentui/utilities!getRect:function(1)'
+    summary: Helper to get bounding client rect. Passing in window will get the window size.
+    name: getRect(element)
+    fullName: getRect(element)
+    langs:
+      - typeScript
+    type: function
     syntax:
-      content: >-
-        export declare function getRect(element: HTMLElement | Window | null):
-        IRectangle | undefined;
+      content: 'export declare function getRect(element: HTMLElement | Window | null): IRectangle | undefined;'
+      return:
+        type:
+          - IRectangle | undefined
+        description: ''
       parameters:
         - id: element
           description: ''
-          type: HTMLElement | Window | null
-      return:
-        type: IRectangle | undefined
-        description: ''
-  - name: getResourceUrl(url)
-    uid: '@fluentui/utilities!getResourceUrl:function(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - HTMLElement | Window | null
+  - uid: '@fluentui/utilities!getResourceUrl:function(1)'
     summary: Sets the current base url used for fetching images.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: getResourceUrl(url)
+    fullName: getResourceUrl(url)
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: 'export declare function getResourceUrl(url: string): string;'
+      return:
+        type:
+          - string
+        description: ''
       parameters:
         - id: url
           description: ''
-          type: string
-      return:
-        type: string
-        description: ''
-  - name: getRTL(theme)
-    uid: '@fluentui/utilities!getRTL:function(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - string
+  - uid: '@fluentui/utilities!getRTL:function(1)'
     summary: Gets the rtl state of the page (returns true if in rtl.)
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: getRTL(theme)
+    fullName: getRTL(theme)
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: |-
         export declare function getRTL(theme?: {
             rtl?: boolean;
         }): boolean;
+      return:
+        type:
+          - boolean
+        description: ''
       parameters:
         - id: theme
           description: ''
-          type: |-
-            {
-                rtl?: boolean;
-            }
-      return:
-        type: boolean
-        description: ''
-  - name: 'getRTLSafeKeyCode(key, theme)'
-    uid: '@fluentui/utilities!getRTLSafeKeyCode:function(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - |-
+              {
+                  rtl?: boolean;
+              }
+  - uid: '@fluentui/utilities!getRTLSafeKeyCode:function(1)'
     summary: 'Returns the given key, but flips right/left arrows if necessary.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: 'getRTLSafeKeyCode(key, theme)'
+    fullName: 'getRTLSafeKeyCode(key, theme)'
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: |-
         export declare function getRTLSafeKeyCode(key: number, theme?: {
             rtl?: boolean;
         }): number;
+      return:
+        type:
+          - number
+        description: ''
       parameters:
         - id: key
           description: ''
-          type: number
+          type:
+            - number
         - id: theme
           description: ''
-          type: |-
-            {
-                rtl?: boolean;
-            }
-      return:
-        type: number
-        description: ''
-  - name: getScrollbarWidth()
-    uid: '@fluentui/utilities!getScrollbarWidth:function(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - |-
+              {
+                  rtl?: boolean;
+              }
+  - uid: '@fluentui/utilities!getScrollbarWidth:function(1)'
     summary: Calculates the width of a scrollbar for the browser/os.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: getScrollbarWidth()
+    fullName: getScrollbarWidth()
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: 'export declare function getScrollbarWidth(): number;'
       return:
-        type: number
+        type:
+          - number
         description: ''
-  - name: getWindow(rootElement)
-    uid: '@fluentui/utilities!getWindow:function(1)'
-    package: '@fluentui/utilities!'
+  - uid: '@fluentui/utilities!getWindow:function(1)'
     summary: >-
-      Helper to get the window object. The helper will make sure to use a cached
-      variable of "window", to avoid overhead and memory leaks in IE11. Note
-      that in popup scenarios the window object won't match the "global" window
-      object, and for these scenarios, you should pass in an element hosted
-      within the popup.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Helper to get the window object. The helper will make sure to use a cached variable of "window", to avoid overhead
+      and memory leaks in IE11. Note that in popup scenarios the window object won't match the "global" window object,
+      and for these scenarios, you should pass in an element hosted within the popup.
+    name: getWindow(rootElement)
+    fullName: getWindow(rootElement)
+    langs:
+      - typeScript
+    type: function
     syntax:
-      content: >-
-        export declare function getWindow(rootElement?: Element | null): Window
-        | undefined;
+      content: 'export declare function getWindow(rootElement?: Element | null): Window | undefined;'
+      return:
+        type:
+          - Window | undefined
+        description: ''
       parameters:
         - id: rootElement
           description: ''
-          type: Element | null
-      return:
-        type: Window | undefined
-        description: ''
-  - name: hasHorizontalOverflow(element)
-    uid: '@fluentui/utilities!hasHorizontalOverflow:function(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - Element | null
+  - uid: '@fluentui/utilities!hasHorizontalOverflow:function(1)'
     summary: Detects whether an element's content has horizontal overflow
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: hasHorizontalOverflow(element)
+    fullName: hasHorizontalOverflow(element)
+    langs:
+      - typeScript
+    type: function
     syntax:
-      content: >-
-        export declare function hasHorizontalOverflow(element: HTMLElement):
-        boolean;
+      content: 'export declare function hasHorizontalOverflow(element: HTMLElement): boolean;'
+      return:
+        type:
+          - boolean
+        description: True if element's content overflows
       parameters:
         - id: element
           description: Element to check for overflow
-          type: HTMLElement
-      return:
-        type: boolean
-        description: True if element's content overflows
-  - name: hasOverflow(element)
-    uid: '@fluentui/utilities!hasOverflow:function(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - HTMLElement
+  - uid: '@fluentui/utilities!hasOverflow:function(1)'
     summary: Detects whether an element's content has overflow in any direction
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: hasOverflow(element)
+    fullName: hasOverflow(element)
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: 'export declare function hasOverflow(element: HTMLElement): boolean;'
+      return:
+        type:
+          - boolean
+        description: True if element's content overflows
       parameters:
         - id: element
           description: Element to check for overflow
-          type: HTMLElement
-      return:
-        type: boolean
-        description: True if element's content overflows
-  - name: hasVerticalOverflow(element)
-    uid: '@fluentui/utilities!hasVerticalOverflow:function(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - HTMLElement
+  - uid: '@fluentui/utilities!hasVerticalOverflow:function(1)'
     summary: Detects whether an element's content has vertical overflow
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: hasVerticalOverflow(element)
+    fullName: hasVerticalOverflow(element)
+    langs:
+      - typeScript
+    type: function
     syntax:
-      content: >-
-        export declare function hasVerticalOverflow(element: HTMLElement):
-        boolean;
+      content: 'export declare function hasVerticalOverflow(element: HTMLElement): boolean;'
+      return:
+        type:
+          - boolean
+        description: True if element's content overflows
       parameters:
         - id: element
           description: Element to check for overflow
-          type: HTMLElement
-      return:
-        type: boolean
-        description: True if element's content overflows
-  - name: 'hoistMethods(destination, source, exclusions)'
-    uid: '@fluentui/utilities!hoistMethods:function(1)'
-    package: '@fluentui/utilities!'
-    summary: >-
-      Allows you to hoist methods, except those in an exclusion set from a
-      source object into a destination object.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+          type:
+            - HTMLElement
+  - uid: '@fluentui/utilities!hoistMethods:function(1)'
+    summary: 'Allows you to hoist methods, except those in an exclusion set from a source object into a destination object.'
+    name: 'hoistMethods(destination, source, exclusions)'
+    fullName: 'hoistMethods(destination, source, exclusions)'
+    langs:
+      - typeScript
+    type: function
     syntax:
-      content: >-
-        export declare function hoistMethods(destination: any, source: any,
-        exclusions?: string[]): string[];
+      content: 'export declare function hoistMethods(destination: any, source: any, exclusions?: string[]): string[];'
+      return:
+        type:
+          - 'string[]'
+        description: An array of names of methods that were hoisted.
       parameters:
         - id: destination
           description: The instance of the object to hoist the methods onto.
-          type: any
+          type:
+            - any
         - id: source
           description: The instance of the object where the methods are hoisted from.
-          type: any
+          type:
+            - any
         - id: exclusions
           description: (Optional) What methods to exclude from being hoisted.
-          type: 'string[]'
-      return:
-        type: 'string[]'
-        description: An array of names of methods that were hoisted.
-  - name: 'hoistStatics(source, dest)'
-    uid: '@fluentui/utilities!hoistStatics:function(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - 'string[]'
+  - uid: '@fluentui/utilities!hoistStatics:function(1)'
     summary: >-
-      Allows you to hoist static functions in components. Created for the
-      purpose of fixing broken static functions in classes that utilize
-      decorators.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Allows you to hoist static functions in components. Created for the purpose of fixing broken static functions in
+      classes that utilize decorators.
+    name: 'hoistStatics(source, dest)'
+    fullName: 'hoistStatics(source, dest)'
+    langs:
+      - typeScript
+    type: function
     syntax:
-      content: >-
-        export declare function hoistStatics<TSource extends Object,
-        TDest>(source: TSource, dest: TDest): TDest;
+      content: 'export declare function hoistStatics<TSource extends Object, TDest>(source: TSource, dest: TDest): TDest;'
+      return:
+        type:
+          - TDest
+        description: The dest object with methods added
       parameters:
         - id: source
           description: The object where the methods are hoisted from.
-          type: TSource
+          type:
+            - TSource
         - id: dest
           description: The object to hoist the methods onto.
-          type: TDest
-      return:
-        type: TDest
-        description: The dest object with methods added
-  - name: initializeComponentRef(obj)
-    uid: '@fluentui/utilities!initializeComponentRef:function(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - TDest
+      typeParameters:
+        - id: TSource
+          type:
+            - Object
+        - id: TDest
+  - uid: '@fluentui/utilities!initializeComponentRef:function(1)'
     summary: >-
-      Helper to manage componentRef resolution. Internally appends logic to
-      lifetime methods to resolve componentRef to the passed in object.
+      Helper to manage componentRef resolution. Internally appends logic to lifetime methods to resolve componentRef to
+      the passed in object.
 
 
       Usage: call initializeComponentRef(this) in the constructor,
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: initializeComponentRef(obj)
+    fullName: initializeComponentRef(obj)
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: >-
-        export declare function initializeComponentRef<TProps extends
-        IBaseProps, TState>(obj: React.Component<TProps, TState>): void;
+        export declare function initializeComponentRef<TProps extends IBaseProps, TState>(obj: React.Component<TProps,
+        TState>): void;
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: obj
           description: ''
-          type: 'React.Component&lt;TProps, TState&gt;'
-      return:
-        type: void
-        description: ''
-  - name: initializeFocusRects(window)
-    uid: '@fluentui/utilities!initializeFocusRects:function(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - 'React.Component<TProps, TState>'
+      typeParameters:
+        - id: TProps
+          type:
+            - '@fluentui/utilities!IBaseProps:interface'
+        - id: TState
+  - uid: '@fluentui/utilities!initializeFocusRects:function(1)'
     summary: >-
       Initializes the logic which:
 
 
-      1. Subscribes keydown and mousedown events. (It will only do it once per
-      window, so it's safe to call this method multiple times.) 2. When the user
-      presses directional keyboard keys, adds the 'ms-Fabric--isFocusVisible'
-      classname to the document body, removes the 'ms-Fabric-isFocusHidden'
-      classname. 3. When the user clicks a mouse button, adds the
-      'ms-Fabric-isFocusHidden' classname to the document body, removes the
-      'ms-Fabric--isFocusVisible' classname.
+      1. Subscribes keydown and mousedown events. (It will only do it once per window, so it's safe to call this method
+      multiple times.) 2. When the user presses directional keyboard keys, adds the 'ms-Fabric--isFocusVisible'
+      classname to the document body, removes the 'ms-Fabric-isFocusHidden' classname. 3. When the user clicks a mouse
+      button, adds the 'ms-Fabric-isFocusHidden' classname to the document body, removes the 'ms-Fabric--isFocusVisible'
+      classname.
 
 
-      This logic allows components on the page to conditionally render focus
-      treatments based on the existence of global classnames, which simplifies
-      logic overall.
-    remarks: ''
-    isPreview: false
-    isDeprecated: true
-    customDeprecatedMessage: Use useFocusRects hook or FocusRects component instead.
+      This logic allows components on the page to conditionally render focus treatments based on the existence of global
+      classnames, which simplifies logic overall.
+    deprecated:
+      content: Use useFocusRects hook or FocusRects component instead.
+    name: initializeFocusRects(window)
+    fullName: initializeFocusRects(window)
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: 'export declare function initializeFocusRects(window?: Window): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: window
           description: the window used to add the event listeners
-          type: Window
-      return:
-        type: void
-        description: ''
-  - name: 'isControlled(props, valueProp)'
-    uid: '@fluentui/utilities!isControlled:function(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - Window
+  - uid: '@fluentui/utilities!isControlled:function(1)'
     summary: Determines whether a component is controlled.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: 'isControlled(props, valueProp)'
+    fullName: 'isControlled(props, valueProp)'
+    langs:
+      - typeScript
+    type: function
     syntax:
-      content: >-
-        export declare function isControlled<P>(props: P, valueProp: keyof P):
-        boolean;
+      content: 'export declare function isControlled<P>(props: P, valueProp: keyof P): boolean;'
+      return:
+        type:
+          - boolean
+        description: 'true if controlled, false if uncontrolled'
       parameters:
         - id: props
           description: Component props
-          type: P
+          type:
+            - P
         - id: valueProp
           description: Prop containing the controlled value
-          type: keyof P
-      return:
-        type: boolean
-        description: 'true if controlled, false if uncontrolled'
-  - name: isDirectionalKeyCode(which)
-    uid: '@fluentui/utilities!isDirectionalKeyCode:function(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - keyof P
+      typeParameters:
+        - id: P
+  - uid: '@fluentui/utilities!isDirectionalKeyCode:function(1)'
     summary: Returns true if the keycode is a directional keyboard key.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: isDirectionalKeyCode(which)
+    fullName: isDirectionalKeyCode(which)
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: 'export declare function isDirectionalKeyCode(which: number): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
       parameters:
         - id: which
           description: ''
-          type: number
-      return:
-        type: boolean
-        description: ''
-  - name: isElementFocusSubZone(element)
-    uid: '@fluentui/utilities!isElementFocusSubZone:function(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - number
+  - uid: '@fluentui/utilities!isElementFocusSubZone:function(1)'
     summary: Determines if a given element is a focus sub zone.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: isElementFocusSubZone(element)
+    fullName: isElementFocusSubZone(element)
+    langs:
+      - typeScript
+    type: function
     syntax:
-      content: >-
-        export declare function isElementFocusSubZone(element?: HTMLElement):
-        boolean;
+      content: 'export declare function isElementFocusSubZone(element?: HTMLElement): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
       parameters:
         - id: element
           description: ''
-          type: HTMLElement
-      return:
-        type: boolean
-        description: ''
-  - name: isElementFocusZone(element)
-    uid: '@fluentui/utilities!isElementFocusZone:function(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - HTMLElement
+  - uid: '@fluentui/utilities!isElementFocusZone:function(1)'
     summary: Determines if a given element is a focus zone.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: isElementFocusZone(element)
+    fullName: isElementFocusZone(element)
+    langs:
+      - typeScript
+    type: function
     syntax:
-      content: >-
-        export declare function isElementFocusZone(element?: HTMLElement):
-        boolean;
-      parameters:
-        - id: element
-          description: ''
-          type: HTMLElement
+      content: 'export declare function isElementFocusZone(element?: HTMLElement): boolean;'
       return:
-        type: boolean
+        type:
+          - boolean
         description: ''
-  - name: 'isElementTabbable(element, checkTabIndex)'
-    uid: '@fluentui/utilities!isElementTabbable:function(1)'
-    package: '@fluentui/utilities!'
-    summary: >-
-      Determines if an element can receive focus programmatically or via a mouse
-      click. If checkTabIndex is true, additionally checks to ensure the element
-      can be focused with the tab key, meaning tabIndex != -1.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        export declare function isElementTabbable(element: HTMLElement,
-        checkTabIndex?: boolean): boolean;
       parameters:
         - id: element
           description: ''
-          type: HTMLElement
+          type:
+            - HTMLElement
+  - uid: '@fluentui/utilities!isElementTabbable:function(1)'
+    summary: >-
+      Determines if an element can receive focus programmatically or via a mouse click. If checkTabIndex is true,
+      additionally checks to ensure the element can be focused with the tab key, meaning tabIndex != -1.
+    name: 'isElementTabbable(element, checkTabIndex)'
+    fullName: 'isElementTabbable(element, checkTabIndex)'
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export declare function isElementTabbable(element: HTMLElement, checkTabIndex?: boolean): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+      parameters:
+        - id: element
+          description: ''
+          type:
+            - HTMLElement
         - id: checkTabIndex
           description: ''
-          type: boolean
-      return:
-        type: boolean
-        description: ''
-  - name: isElementVisible(element)
-    uid: '@fluentui/utilities!isElementVisible:function(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - boolean
+  - uid: '@fluentui/utilities!isElementVisible:function(1)'
     summary: Determines if an element is visible.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: isElementVisible(element)
+    fullName: isElementVisible(element)
+    langs:
+      - typeScript
+    type: function
     syntax:
-      content: >-
-        export declare function isElementVisible(element: HTMLElement |
-        undefined | null): boolean;
+      content: 'export declare function isElementVisible(element: HTMLElement | undefined | null): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
       parameters:
         - id: element
           description: ''
-          type: HTMLElement | undefined | null
-      return:
-        type: boolean
-        description: ''
-  - name: isMac(reset)
-    uid: '@fluentui/utilities!isMac:function(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - HTMLElement | undefined | null
+  - uid: '@fluentui/utilities!isMac:function(1)'
     summary: Returns true if the user is on a Mac. Caches the result value.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: isMac(reset)
+    fullName: isMac(reset)
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: 'export declare function isMac(reset?: boolean): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
       parameters:
         - id: reset
           description: Reset the cached result value (mainly for testing).
-          type: boolean
-      return:
-        type: boolean
-        description: ''
-  - name: 'mapEnumByName(theEnum, callback)'
-    uid: '@fluentui/utilities!mapEnumByName:function(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - boolean
+  - uid: '@fluentui/utilities!mapEnumByName:function(1)'
     summary: >-
-      Takes an enum and iterates over each value of the enum (as a string),
-      running the callback on each, returning a mapped array.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Takes an enum and iterates over each value of the enum (as a string), running the callback on each, returning a
+      mapped array.
+    name: 'mapEnumByName(theEnum, callback)'
+    fullName: 'mapEnumByName(theEnum, callback)'
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: >-
-        export declare function mapEnumByName<T>(theEnum: any, callback: (name?:
-        string, value?: string | number) => T | undefined): (T | undefined)[] |
-        undefined;
+        export declare function mapEnumByName<T>(theEnum: any, callback: (name?: string, value?: string | number) => T |
+        undefined): (T | undefined)[] | undefined;
+      return:
+        type:
+          - '(T | undefined)[] | undefined'
+        description: ''
       parameters:
         - id: theEnum
           description: Enum to iterate over
-          type: any
+          type:
+            - any
         - id: callback
           description: >-
-            The first parameter the name of the entry, and the second parameter
-            is the value of that entry, which is the value you'd normally use
-            when using the enum (usually a number).
-          type: '(name?: string, value?: string | number) =&gt; T | undefined'
-      return:
-        type: '(T | undefined)[] | undefined'
-        description: ''
-  - name: 'memoize(target, key, descriptor)'
-    uid: '@fluentui/utilities!memoize:function(1)'
-    package: '@fluentui/utilities!'
+            The first parameter the name of the entry, and the second parameter is the value of that entry, which is the
+            value you'd normally use when using the enum (usually a number).
+          type:
+            - '(name?: string, value?: string | number) => T | undefined'
+      typeParameters:
+        - id: T
+  - uid: '@fluentui/utilities!memoize:function(1)'
     summary: >-
-      Memoize decorator to be used on class methods. WARNING: the `this`
-      reference will be inaccessible within a memoized method, given that a
-      cached method's `this` would not be instance-specific.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Memoize decorator to be used on class methods. WARNING: the `this` reference will be inaccessible within a
+      memoized method, given that a cached method's `this` would not be instance-specific.
+    name: 'memoize(target, key, descriptor)'
+    fullName: 'memoize(target, key, descriptor)'
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: >-
-        export declare function memoize<T extends Function>(target: any, key:
-        string, descriptor: TypedPropertyDescriptor<T>): {
+        export declare function memoize<T extends Function>(target: any, key: string, descriptor:
+        TypedPropertyDescriptor<T>): {
             configurable: boolean;
             get(): T;
         };
+      return:
+        type:
+          - |-
+            {
+                configurable: boolean;
+                get(): T;
+            }
+        description: ''
       parameters:
         - id: target
           description: ''
-          type: any
+          type:
+            - any
         - id: key
           description: ''
-          type: string
+          type:
+            - string
         - id: descriptor
           description: ''
-          type: TypedPropertyDescriptor&lt;T&gt;
-      return:
-        type: |-
-          {
-              configurable: boolean;
-              get(): T;
-          }
-        description: ''
-  - name: 'memoizeFunction(cb, maxCacheSize, ignoreNullOrUndefinedResult)'
-    uid: '@fluentui/utilities!memoizeFunction:function(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - TypedPropertyDescriptor<T>
+      typeParameters:
+        - id: T
+          type:
+            - Function
+  - uid: '@fluentui/utilities!memoizeFunction:function(1)'
     summary: >-
-      Memoizes a function; when you pass in the same parameters multiple times,
-      it returns a cached result. Be careful when passing in objects, you need
-      to pass in the same INSTANCE for caching to work. Otherwise it will grow
-      the cache unnecessarily. Also avoid using default values that evaluate
-      functions; passing in undefined for a value and relying on a default
-      function will execute it the first time, but will not re-evaluate
-      subsequent times which may have been unexpected.
+      Memoizes a function; when you pass in the same parameters multiple times, it returns a cached result. Be careful
+      when passing in objects, you need to pass in the same INSTANCE for caching to work. Otherwise it will grow the
+      cache unnecessarily. Also avoid using default values that evaluate functions; passing in undefined for a value and
+      relying on a default function will execute it the first time, but will not re-evaluate subsequent times which may
+      have been unexpected.
 
 
-      By default, the cache will reset after 100 permutations, to avoid abuse
-      cases where the function is unintendedly called with unique objects.
-      Without a reset, the cache could grow infinitely, so we safeguard by
-      resetting. To override this behavior, pass a value of 0 to the
-      maxCacheSize parameter.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      By default, the cache will reset after 100 permutations, to avoid abuse cases where the function is unintendedly
+      called with unique objects. Without a reset, the cache could grow infinitely, so we safeguard by resetting. To
+      override this behavior, pass a value of 0 to the maxCacheSize parameter.
+    name: 'memoizeFunction(cb, maxCacheSize, ignoreNullOrUndefinedResult)'
+    fullName: 'memoizeFunction(cb, maxCacheSize, ignoreNullOrUndefinedResult)'
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: >-
-        export declare function memoizeFunction<T extends (...args: any[]) =>
-        RetType, RetType>(cb: T, maxCacheSize?: number,
-        ignoreNullOrUndefinedResult?: boolean): T;
+        export declare function memoizeFunction<T extends (...args: any[]) => RetType, RetType>(cb: T, maxCacheSize?:
+        number, ignoreNullOrUndefinedResult?: boolean): T;
+      return:
+        type:
+          - T
+        description: A memoized version of the function.
       parameters:
         - id: cb
           description: The function to memoize.
-          type: T
+          type:
+            - T
         - id: maxCacheSize
-          description: >-
-            Max results to cache. If the cache exceeds this value, it will reset
-            on the next call.
-          type: number
+          description: 'Max results to cache. If the cache exceeds this value, it will reset on the next call.'
+          type:
+            - number
         - id: ignoreNullOrUndefinedResult
           description: >-
-            Flag to decide whether to cache callback result if it is
-            undefined/null. If the flag is set to true, the callback result is
-            recomputed every time till the callback result is not undefined/null
-            for the first time, and then the non-undefined/null version gets
-            cached.
-          type: boolean
-      return:
-        type: T
-        description: A memoized version of the function.
-  - name: 'merge(target, args)'
-    uid: '@fluentui/utilities!merge:function(1)'
-    package: '@fluentui/utilities!'
+            Flag to decide whether to cache callback result if it is undefined/null. If the flag is set to true, the
+            callback result is recomputed every time till the callback result is not undefined/null for the first time,
+            and then the non-undefined/null version gets cached.
+          type:
+            - boolean
+      typeParameters:
+        - id: T
+          type:
+            - '(...args: any[]) => RetType'
+        - id: RetType
+  - uid: '@fluentui/utilities!merge:function(1)'
     summary: >-
-      Simple deep merge function. Takes all arguments and returns a deep copy of
-      the objects merged together in the order provided. If an object creates a
-      circular reference, it will assign the original reference.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Simple deep merge function. Takes all arguments and returns a deep copy of the objects merged together in the
+      order provided. If an object creates a circular reference, it will assign the original reference.
+    name: 'merge(target, args)'
+    fullName: 'merge(target, args)'
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: >-
-        export declare function merge<T = {}>(target: Partial<T>, ...args:
-        (Partial<T> | null | undefined | false)[]): T;
+        export declare function merge<T = {}>(target: Partial<T>, ...args: (Partial<T> | null | undefined | false)[]):
+        T;
+      return:
+        type:
+          - T
+        description: ''
       parameters:
         - id: target
           description: ''
-          type: Partial&lt;T&gt;
+          type:
+            - Partial<T>
         - id: args
           description: ''
-          type: '(Partial&lt;T&gt; | null | undefined | false)[]'
-      return:
-        type: T
-        description: ''
-  - name: mergeAriaAttributeValues(ariaAttributes)
-    uid: '@fluentui/utilities!mergeAriaAttributeValues:function(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - '(Partial<T> | null | undefined | false)[]'
+      typeParameters:
+        - id: T
+  - uid: '@fluentui/utilities!mergeAriaAttributeValues:function(1)'
     summary: >-
-      ARIA helper to concatenate attributes, returning undefined if all
-      attributes are undefined. (Empty strings are not a valid ARIA attribute
-      value.)
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      ARIA helper to concatenate attributes, returning undefined if all attributes are undefined. (Empty strings are not
+      a valid ARIA attribute value.)
+    name: mergeAriaAttributeValues(ariaAttributes)
+    fullName: mergeAriaAttributeValues(ariaAttributes)
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: >-
-        export declare function mergeAriaAttributeValues(...ariaAttributes:
-        (string | undefined | false)[]): string | undefined;
+        export declare function mergeAriaAttributeValues(...ariaAttributes: (string | undefined | false)[]): string |
+        undefined;
+      return:
+        type:
+          - string | undefined
+        description: ''
       parameters:
         - id: ariaAttributes
           description: ARIA attributes to merge
-          type: '(string | undefined | false)[]'
-      return:
-        type: string | undefined
-        description: ''
-  - name: 'mergeCustomizations(props, parentContext)'
-    uid: '@fluentui/utilities!mergeCustomizations:function(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - '(string | undefined | false)[]'
+  - uid: '@fluentui/utilities!mergeCustomizations:function(1)'
     summary: >-
-      Merge props and customizations giving priority to props over context.
-      NOTE: This function will always perform multiple merge operations. Use
-      with caution.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Merge props and customizations giving priority to props over context. NOTE: This function will always perform
+      multiple merge operations. Use with caution.
+    name: 'mergeCustomizations(props, parentContext)'
+    fullName: 'mergeCustomizations(props, parentContext)'
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: >-
-        export declare function mergeCustomizations(props: ICustomizerProps,
-        parentContext: ICustomizerContext): ICustomizerContext;
+        export declare function mergeCustomizations(props: ICustomizerProps, parentContext: ICustomizerContext):
+        ICustomizerContext;
+      return:
+        type:
+          - '@fluentui/utilities!ICustomizerContext:interface'
+        description: Merged customizations.
       parameters:
         - id: props
           description: New settings to merge in.
-          type: ICustomizerProps
+          type:
+            - ICustomizerProps
         - id: parentContext
           description: Context containing current settings.
-          type: '<xref uid="@fluentui/utilities!ICustomizerContext:interface" />'
-      return:
-        type: '<xref uid="@fluentui/utilities!ICustomizerContext:interface" />'
-        description: Merged customizations.
-  - name: 'mergeScopedSettings(oldSettings, newSettings)'
-    uid: '@fluentui/utilities!mergeScopedSettings:function(1)'
-    package: '@fluentui/utilities!'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+          type:
+            - '@fluentui/utilities!ICustomizerContext:interface'
+  - uid: '@fluentui/utilities!mergeScopedSettings:function(1)'
+    name: 'mergeScopedSettings(oldSettings, newSettings)'
+    fullName: 'mergeScopedSettings(oldSettings, newSettings)'
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: >-
-        export declare function mergeScopedSettings(oldSettings?: ISettings,
-        newSettings?: ISettings | ISettingsFunction): ISettings;
+        export declare function mergeScopedSettings(oldSettings?: ISettings, newSettings?: ISettings |
+        ISettingsFunction): ISettings;
+      return:
+        type:
+          - ISettings
+        description: ''
       parameters:
         - id: oldSettings
           description: ''
-          type: ISettings
+          type:
+            - ISettings
         - id: newSettings
           description: ''
-          type: ISettings | ISettingsFunction
-      return:
-        type: ISettings
-        description: ''
-  - name: 'mergeSettings(oldSettings, newSettings)'
-    uid: '@fluentui/utilities!mergeSettings:function(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - ISettings | ISettingsFunction
+  - uid: '@fluentui/utilities!mergeSettings:function(1)'
     summary: >-
-      Merge new and old settings, giving priority to new settings. New settings
-      is optional in which case oldSettings is returned as-is.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Merge new and old settings, giving priority to new settings. New settings is optional in which case oldSettings is
+      returned as-is.
+    name: 'mergeSettings(oldSettings, newSettings)'
+    fullName: 'mergeSettings(oldSettings, newSettings)'
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: >-
-        export declare function mergeSettings(oldSettings?: ISettings,
-        newSettings?: ISettings | ISettingsFunction): ISettings;
+        export declare function mergeSettings(oldSettings?: ISettings, newSettings?: ISettings | ISettingsFunction):
+        ISettings;
+      return:
+        type:
+          - ISettings
+        description: Merged settings.
       parameters:
         - id: oldSettings
           description: Old settings to fall back to.
-          type: ISettings
+          type:
+            - ISettings
         - id: newSettings
           description: New settings that will be merged over oldSettings.
-          type: ISettings | ISettingsFunction
-      return:
-        type: ISettings
-        description: Merged settings.
-  - name: modalize(target)
-    uid: '@fluentui/utilities!modalize:function(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - ISettings | ISettingsFunction
+  - uid: '@fluentui/utilities!modalize:function(1)'
     summary: >-
-      Call this on a target element to make it modal to screen readers. Returns
-      a function that undoes the changes it made.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Call this on a target element to make it modal to screen readers. Returns a function that undoes the changes it
+      made.
+    name: modalize(target)
+    fullName: modalize(target)
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: 'export declare function modalize(target: HTMLElement): () => void;'
+      return:
+        type:
+          - () => void
+        description: ''
       parameters:
         - id: target
           description: ''
-          type: HTMLElement
-      return:
-        type: () =&gt; void
-        description: ''
-  - name: nullRender()
-    uid: '@fluentui/utilities!nullRender:function(1)'
-    package: '@fluentui/utilities!'
-    summary: >-
-      Simple constant function for returning null, used to render empty
-      templates in JSX.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+          type:
+            - HTMLElement
+  - uid: '@fluentui/utilities!nullRender:function(1)'
+    summary: 'Simple constant function for returning null, used to render empty templates in JSX.'
+    name: nullRender()
+    fullName: nullRender()
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: 'export declare function nullRender(): JSX.Element | null;'
       return:
-        type: JSX.Element | null
+        type:
+          - JSX.Element | null
         description: ''
-  - name: 'omit(obj, exclusions)'
-    uid: '@fluentui/utilities!omit:function(1)'
-    package: '@fluentui/utilities!'
+  - uid: '@fluentui/utilities!omit:function(1)'
     summary: >-
-      Tiny helper to do the minimal amount of work in duplicating an object but
-      omitting some props. This ends up faster than using object ...rest or
-      reduce to filter.
+      Tiny helper to do the minimal amount of work in duplicating an object but omitting some props. This ends up faster
+      than using object ...rest or reduce to filter.
 
 
-      This behaves very much like filteredAssign, but does not merge many
-      objects together, uses an exclusion object map, and avoids spreads all for
-      optimal performance.
+      This behaves very much like filteredAssign, but does not merge many objects together, uses an exclusion object
+      map, and avoids spreads all for optimal performance.
 
 
       See perf test for background: https://jsperf.com/omit-vs-rest-vs-reduce/1
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: 'omit(obj, exclusions)'
+    fullName: 'omit(obj, exclusions)'
+    langs:
+      - typeScript
+    type: function
     syntax:
-      content: >-
-        export declare function omit<TObj extends Record<string, any>>(obj:
-        TObj, exclusions: (keyof TObj)[]): TObj;
+      content: 'export declare function omit<TObj extends Record<string, any>>(obj: TObj, exclusions: (keyof TObj)[]): TObj;'
+      return:
+        type:
+          - TObj
+        description: ''
       parameters:
         - id: obj
           description: The object to clone
-          type: TObj
+          type:
+            - TObj
         - id: exclusions
           description: The array of keys to exclude
-          type: '(keyof TObj)[]'
-      return:
-        type: TObj
-        description: ''
-  - name: 'on(element, eventName, callback, options)'
-    uid: '@fluentui/utilities!on:function(1)'
-    package: '@fluentui/utilities!'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+          type:
+            - '(keyof TObj)[]'
+      typeParameters:
+        - id: TObj
+          type:
+            - 'Record<string, any>'
+  - uid: '@fluentui/utilities!on:function(1)'
+    name: 'on(element, eventName, callback, options)'
+    fullName: 'on(element, eventName, callback, options)'
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: >-
-        export declare function on(element: Element | Window | Document,
-        eventName: string, callback: (ev: Event) => void, options?: boolean): ()
-        => void;
+        export declare function on(element: Element | Window | Document, eventName: string, callback: (ev: Event) =>
+        void, options?: boolean): () => void;
+      return:
+        type:
+          - () => void
+        description: ''
       parameters:
         - id: element
           description: ''
-          type: Element | Window | Document
+          type:
+            - Element | Window | Document
         - id: eventName
           description: ''
-          type: string
+          type:
+            - string
         - id: callback
           description: ''
-          type: '(ev: Event) =&gt; void'
+          type:
+            - '(ev: Event) => void'
         - id: options
           description: ''
-          type: boolean
-      return:
-        type: () =&gt; void
-        description: ''
-  - name: 'precisionRound(value, precision, base)'
-    uid: '@fluentui/utilities!precisionRound:function(1)'
-    package: '@fluentui/utilities!'
-    summary: >-
-      Rounds a number to a certain level of precision. Accepts negative
-      precision.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+          type:
+            - boolean
+  - uid: '@fluentui/utilities!precisionRound:function(1)'
+    summary: Rounds a number to a certain level of precision. Accepts negative precision.
+    name: 'precisionRound(value, precision, base)'
+    fullName: 'precisionRound(value, precision, base)'
+    langs:
+      - typeScript
+    type: function
     syntax:
-      content: >-
-        export declare function precisionRound(value: number, precision: number,
-        base?: number): number;
+      content: 'export declare function precisionRound(value: number, precision: number, base?: number): number;'
+      return:
+        type:
+          - number
+        description: ''
       parameters:
         - id: value
           description: The value that is being rounded.
-          type: number
+          type:
+            - number
         - id: precision
           description: The number of decimal places to round the number to
-          type: number
+          type:
+            - number
         - id: base
           description: ''
-          type: number
-      return:
-        type: number
-        description: ''
-  - name: raiseClick(target)
-    uid: '@fluentui/utilities!raiseClick:function(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - number
+  - uid: '@fluentui/utilities!raiseClick:function(1)'
     summary: Raises a click event.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: raiseClick(target)
+    fullName: raiseClick(target)
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: 'export declare function raiseClick(target: Element): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: target
           description: ''
-          type: Element
-      return:
-        type: void
-        description: ''
-  - name: 'removeIndex(array, index)'
-    uid: '@fluentui/utilities!removeIndex:function(1)'
-    package: '@fluentui/utilities!'
-    summary: >-
-      Given an array, it returns a new array that does not contain the item at
-      the given index.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+          type:
+            - Element
+  - uid: '@fluentui/utilities!removeIndex:function(1)'
+    summary: 'Given an array, it returns a new array that does not contain the item at the given index.'
+    name: 'removeIndex(array, index)'
+    fullName: 'removeIndex(array, index)'
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: 'export declare function removeIndex<T>(array: T[], index: number): T[];'
+      return:
+        type:
+          - 'T[]'
+        description: ''
       parameters:
         - id: array
           description: The array to operate on
-          type: 'T[]'
+          type:
+            - 'T[]'
         - id: index
           description: The index of the element to remove
-          type: number
-      return:
-        type: 'T[]'
-        description: ''
-  - name: 'replaceElement(array, newElement, index)'
-    uid: '@fluentui/utilities!replaceElement:function(1)'
-    package: '@fluentui/utilities!'
-    summary: >-
-      Given an array, this function returns a new array where the element at a
-      given index has been replaced.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+          type:
+            - number
+      typeParameters:
+        - id: T
+  - uid: '@fluentui/utilities!replaceElement:function(1)'
+    summary: 'Given an array, this function returns a new array where the element at a given index has been replaced.'
+    name: 'replaceElement(array, newElement, index)'
+    fullName: 'replaceElement(array, newElement, index)'
+    langs:
+      - typeScript
+    type: function
     syntax:
-      content: >-
-        export declare function replaceElement<T>(array: T[], newElement: T,
-        index: number): T[];
+      content: 'export declare function replaceElement<T>(array: T[], newElement: T, index: number): T[];'
+      return:
+        type:
+          - 'T[]'
+        description: ''
       parameters:
         - id: array
           description: The array to operate on
-          type: 'T[]'
+          type:
+            - 'T[]'
         - id: newElement
           description: The element that will be placed in the new array
-          type: T
+          type:
+            - T
         - id: index
           description: The index of the element that should be replaced
-          type: number
-      return:
-        type: 'T[]'
-        description: ''
-  - name: resetControlledWarnings()
-    uid: '@fluentui/utilities!resetControlledWarnings:function(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - number
+      typeParameters:
+        - id: T
+  - uid: '@fluentui/utilities!resetControlledWarnings:function(1)'
     summary: Reset controlled usage warnings for testing purposes.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: resetControlledWarnings()
+    fullName: resetControlledWarnings()
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: 'export declare function resetControlledWarnings(): void;'
       return:
-        type: void
+        type:
+          - void
         description: ''
-  - name: resetIds(counter)
-    uid: '@fluentui/utilities!resetIds:function(1)'
-    package: '@fluentui/utilities!'
+  - uid: '@fluentui/utilities!resetIds:function(1)'
     summary: Resets id counter to an (optional) number.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: resetIds(counter)
+    fullName: resetIds(counter)
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: 'export declare function resetIds(counter?: number): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: counter
           description: ''
-          type: number
-      return:
-        type: void
-        description: ''
-  - name: resetMemoizations()
-    uid: '@fluentui/utilities!resetMemoizations:function(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - number
+  - uid: '@fluentui/utilities!resetMemoizations:function(1)'
     summary: Reset memoizations.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: resetMemoizations()
+    fullName: resetMemoizations()
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: 'export declare function resetMemoizations(): void;'
       return:
-        type: void
+        type:
+          - void
         description: ''
-  - name: setBaseUrl(baseUrl)
-    uid: '@fluentui/utilities!setBaseUrl:function(1)'
-    package: '@fluentui/utilities!'
+  - uid: '@fluentui/utilities!setBaseUrl:function(1)'
     summary: Gets the current base url used for fetching images.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: setBaseUrl(baseUrl)
+    fullName: setBaseUrl(baseUrl)
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: 'export declare function setBaseUrl(baseUrl: string): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: baseUrl
           description: ''
-          type: string
-      return:
-        type: void
-        description: ''
-  - name: 'setFocusVisibility(enabled, target)'
-    uid: '@fluentui/utilities!setFocusVisibility:function(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - string
+  - uid: '@fluentui/utilities!setFocusVisibility:function(1)'
     summary: >-
       Sets the visibility of focus styling.
 
 
-      By default, focus styles (the box surrounding a focused Button, for
-      example) only show up when navigational keypresses occur (through Tab,
-      arrows, PgUp/PgDn, Home and End), and are hidden when mouse interactions
-      occur. This API provides an imperative way to turn them on/off.
+      By default, focus styles (the box surrounding a focused Button, for example) only show up when navigational
+      keypresses occur (through Tab, arrows, PgUp/PgDn, Home and End), and are hidden when mouse interactions occur.
+      This API provides an imperative way to turn them on/off.
 
 
-      A use case might be when you have a keypress like ctrl-f6 navigate to a
-      particular region on the page, and want focus to show up.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      A use case might be when you have a keypress like ctrl-f6 navigate to a particular region on the page, and want
+      focus to show up.
+    name: 'setFocusVisibility(enabled, target)'
+    fullName: 'setFocusVisibility(enabled, target)'
+    langs:
+      - typeScript
+    type: function
     syntax:
-      content: >-
-        export declare function setFocusVisibility(enabled: boolean, target?:
-        Element): void;
+      content: 'export declare function setFocusVisibility(enabled: boolean, target?: Element): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: enabled
           description: whether to remove or add focus
-          type: boolean
+          type:
+            - boolean
         - id: target
           description: optional target
-          type: Element
-      return:
-        type: void
-        description: ''
-  - name: 'setLanguage(language, persistenceType)'
-    uid: '@fluentui/utilities!setLanguage:function(1)'
-    package: '@fluentui/utilities!'
-    summary: >-
-      Sets the language for the page (by adjusting the lang attribute of the
-      html element).
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+          type:
+            - Element
+  - uid: '@fluentui/utilities!setLanguage:function(1)'
+    summary: Sets the language for the page (by adjusting the lang attribute of the html element).
+    name: 'setLanguage(language, persistenceType)'
+    fullName: 'setLanguage(language, persistenceType)'
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: >-
-        export declare function setLanguage(language: string, persistenceType?:
-        'localStorage' | 'sessionStorage' | 'none'): void;
+        export declare function setLanguage(language: string, persistenceType?: 'localStorage' | 'sessionStorage' |
+        'none'): void;
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: language
           description: Language to set.
-          type: string
+          type:
+            - string
         - id: persistenceType
-          description: >-
-            Where to persist the value. Default is `sessionStorage` if
-            available.
-          type: '''localStorage'' | ''sessionStorage'' | ''none'''
-      return:
-        type: void
-        description: ''
-  - name: 'setLanguage(language, avoidPersisting)'
-    uid: '@fluentui/utilities!setLanguage:function(2)'
-    package: '@fluentui/utilities!'
-    summary: >-
-      Sets the language for the page (by adjusting the lang attribute of the
-      html element).
-    remarks: ''
-    isPreview: false
-    isDeprecated: true
-    customDeprecatedMessage: Use string parameter version.
+          description: Where to persist the value. Default is `sessionStorage` if available.
+          type:
+            - '''localStorage'' | ''sessionStorage'' | ''none'''
+  - uid: '@fluentui/utilities!setLanguage:function(2)'
+    summary: Sets the language for the page (by adjusting the lang attribute of the html element).
+    deprecated:
+      content: Use string parameter version.
+    name: 'setLanguage(language, avoidPersisting)'
+    fullName: 'setLanguage(language, avoidPersisting)'
+    langs:
+      - typeScript
+    type: function
     syntax:
-      content: >-
-        export declare function setLanguage(language: string, avoidPersisting?:
-        boolean): void;
+      content: 'export declare function setLanguage(language: string, avoidPersisting?: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: language
           description: Language to set.
-          type: string
+          type:
+            - string
         - id: avoidPersisting
           description: 'If true, don''t store the value.'
-          type: boolean
-      return:
-        type: void
-        description: ''
-  - name: 'setRTL(isRTL, persistSetting)'
-    uid: '@fluentui/utilities!setRTL:function(1)'
-    package: '@fluentui/utilities!'
-    summary: >-
-      Sets the rtl state of the page (by adjusting the dir attribute of the html
-      element.)
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+          type:
+            - boolean
+  - uid: '@fluentui/utilities!setRTL:function(1)'
+    summary: Sets the rtl state of the page (by adjusting the dir attribute of the html element.)
+    name: 'setRTL(isRTL, persistSetting)'
+    fullName: 'setRTL(isRTL, persistSetting)'
+    langs:
+      - typeScript
+    type: function
     syntax:
-      content: >-
-        export declare function setRTL(isRTL: boolean, persistSetting?:
-        boolean): void;
+      content: 'export declare function setRTL(isRTL: boolean, persistSetting?: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: isRTL
           description: ''
-          type: boolean
+          type:
+            - boolean
         - id: persistSetting
           description: ''
-          type: boolean
-      return:
-        type: void
-        description: ''
-  - name: setSSR(isEnabled)
-    uid: '@fluentui/utilities!setSSR:function(1)'
-    package: '@fluentui/utilities!'
-    summary: >-
-      Helper to set ssr mode to simulate no window object returned from
-      getWindow helper.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+          type:
+            - boolean
+  - uid: '@fluentui/utilities!setSSR:function(1)'
+    summary: Helper to set ssr mode to simulate no window object returned from getWindow helper.
+    name: setSSR(isEnabled)
+    fullName: setSSR(isEnabled)
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: 'export declare function setSSR(isEnabled: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: isEnabled
           description: ''
-          type: boolean
-      return:
-        type: void
-        description: ''
-  - name: setWarningCallback(warningCallback)
-    uid: '@fluentui/utilities!setWarningCallback:function(1)'
-    package: '@fluentui/utilities!'
-    summary: >-
-      Configures the warning callback. Passing in undefined will reset it to use
-      the default console.warn function.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+          type:
+            - boolean
+  - uid: '@fluentui/utilities!setWarningCallback:function(1)'
+    summary: Configures the warning callback. Passing in undefined will reset it to use the default console.warn function.
+    name: setWarningCallback(warningCallback)
+    fullName: setWarningCallback(warningCallback)
+    langs:
+      - typeScript
+    type: function
     syntax:
-      content: >-
-        export declare function setWarningCallback(warningCallback?: (message:
-        string) => void): void;
+      content: 'export declare function setWarningCallback(warningCallback?: (message: string) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: warningCallback
           description: Callback to override the generated warnings.
-          type: '(message: string) =&gt; void'
-      return:
-        type: void
-        description: ''
-  - name: 'shallowCompare(a, b)'
-    uid: '@fluentui/utilities!shallowCompare:function(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - '(message: string) => void'
+  - uid: '@fluentui/utilities!shallowCompare:function(1)'
     summary: Compares a to b and b to a.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: 'shallowCompare(a, b)'
+    fullName: 'shallowCompare(a, b)'
+    langs:
+      - typeScript
+    type: function
     syntax:
-      content: >-
-        export declare function shallowCompare<TA extends any, TB extends
-        any>(a: TA, b: TB): boolean;
+      content: 'export declare function shallowCompare<TA extends any, TB extends any>(a: TA, b: TB): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
       parameters:
         - id: a
           description: ''
-          type: TA
+          type:
+            - TA
         - id: b
           description: ''
-          type: TB
-      return:
-        type: boolean
-        description: ''
-  - name: 'shouldWrapFocus(element, noWrapDataAttribute)'
-    uid: '@fluentui/utilities!shouldWrapFocus:function(1)'
-    package: '@fluentui/utilities!'
-    summary: >-
-      Determines if an, or any of its ancestors, sepcificies that it doesn't
-      want focus to wrap
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+          type:
+            - TB
+      typeParameters:
+        - id: TA
+          type:
+            - any
+        - id: TB
+          type:
+            - any
+  - uid: '@fluentui/utilities!shouldWrapFocus:function(1)'
+    summary: 'Determines if an, or any of its ancestors, sepcificies that it doesn''t want focus to wrap'
+    name: 'shouldWrapFocus(element, noWrapDataAttribute)'
+    fullName: 'shouldWrapFocus(element, noWrapDataAttribute)'
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: >-
-        export declare function shouldWrapFocus(element: HTMLElement,
-        noWrapDataAttribute: 'data-no-vertical-wrap' |
+        export declare function shouldWrapFocus(element: HTMLElement, noWrapDataAttribute: 'data-no-vertical-wrap' |
         'data-no-horizontal-wrap'): boolean;
+      return:
+        type:
+          - boolean
+        description: 'true if focus should wrap, false otherwise'
       parameters:
         - id: element
           description: element to start searching from
-          type: HTMLElement
+          type:
+            - HTMLElement
         - id: noWrapDataAttribute
           description: the no wrap data attribute to match (either)
-          type: '''data-no-vertical-wrap'' | ''data-no-horizontal-wrap'''
-      return:
-        type: boolean
-        description: 'true if focus should wrap, false otherwise'
-  - name: 'styled(Component, baseStyles, getProps, customizable, pure)'
-    uid: '@fluentui/utilities!styled:function(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - '''data-no-vertical-wrap'' | ''data-no-horizontal-wrap'''
+  - uid: '@fluentui/utilities!styled:function(1)'
     summary: >-
-      The styled HOC wrapper allows you to create a functional wrapper around a
-      given component which will resolve getStyles functional props, and mix
-      customized props passed in using concatStyleSets.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      The styled HOC wrapper allows you to create a functional wrapper around a given component which will resolve
+      getStyles functional props, and mix customized props passed in using concatStyleSets.
+    name: 'styled(Component, baseStyles, getProps, customizable, pure)'
+    fullName: 'styled(Component, baseStyles, getProps, customizable, pure)'
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: >-
-        export declare function styled<TComponentProps extends
-        IPropsWithStyles<TStyleProps, TStyleSet>, TStyleProps, TStyleSet extends
-        IStyleSet<TStyleSet>>(Component: React.ComponentClass<TComponentProps> |
-        React.FunctionComponent<TComponentProps>, baseStyles:
-        IStyleFunctionOrObject<TStyleProps, TStyleSet>, getProps?: (props:
-        TComponentProps) => Partial<TComponentProps>, customizable?:
-        ICustomizableProps, pure?: boolean):
+        export declare function styled<TComponentProps extends IPropsWithStyles<TStyleProps, TStyleSet>, TStyleProps,
+        TStyleSet extends IStyleSet<TStyleSet>>(Component: React.ComponentClass<TComponentProps> |
+        React.FunctionComponent<TComponentProps>, baseStyles: IStyleFunctionOrObject<TStyleProps, TStyleSet>, getProps?:
+        (props: TComponentProps) => Partial<TComponentProps>, customizable?: ICustomizableProps, pure?: boolean):
         React.FunctionComponent<TComponentProps>;
+      return:
+        type:
+          - React.FunctionComponent<TComponentProps>
+        description: ''
       parameters:
         - id: Component
           description: 'The unstyled base component to render, which receives styles.'
-          type: >-
-            React.ComponentClass&lt;TComponentProps&gt; |
-            React.FunctionComponent&lt;TComponentProps&gt;
+          type:
+            - React.ComponentClass<TComponentProps> | React.FunctionComponent<TComponentProps>
         - id: baseStyles
           description: The styles which should be curried with the component.
-          type: 'IStyleFunctionOrObject&lt;TStyleProps, TStyleSet&gt;'
+          type:
+            - 'IStyleFunctionOrObject<TStyleProps, TStyleSet>'
         - id: getProps
           description: A helper which provides default props.
-          type: '(props: TComponentProps) =&gt; Partial&lt;TComponentProps&gt;'
+          type:
+            - '(props: TComponentProps) => Partial<TComponentProps>'
         - id: customizable
-          description: >-
-            An object which defines which props can be customized using the
-            Customizer.
-          type: '<xref uid="@fluentui/utilities!ICustomizableProps:interface" />'
+          description: An object which defines which props can be customized using the Customizer.
+          type:
+            - '@fluentui/utilities!ICustomizableProps:interface'
         - id: pure
           description: >-
-            A boolean indicating if the component should avoid re-rendering when
-            props haven't changed. Note that pure should not be used on
-            components which allow children, or take in complex objects or
-            arrays as props which could mutate on every render.
-          type: boolean
-      return:
-        type: React.FunctionComponent&lt;TComponentProps&gt;
-        description: ''
-  - name: 'styled(Component, baseStyles, getProps, customizable, pure)'
-    uid: '@fluentui/utilities!styled:function(2)'
-    package: '@fluentui/utilities!'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+            A boolean indicating if the component should avoid re-rendering when props haven't changed. Note that pure
+            should not be used on components which allow children, or take in complex objects or arrays as props which
+            could mutate on every render.
+          type:
+            - boolean
+      typeParameters:
+        - id: TComponentProps
+          type:
+            - 'IPropsWithStyles<TStyleProps, TStyleSet>'
+        - id: TStyleProps
+        - id: TStyleSet
+          type:
+            - IStyleSet<TStyleSet>
+  - uid: '@fluentui/utilities!styled:function(2)'
+    name: 'styled(Component, baseStyles, getProps, customizable, pure)'
+    fullName: 'styled(Component, baseStyles, getProps, customizable, pure)'
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: >-
-        export declare function styled<TComponentProps extends
-        IPropsWithStyles<TStyleProps, TStyleSet> & React.RefAttributes<TRef>,
-        TStyleProps, TStyleSet extends IStyleSet<TStyleSet>, TRef =
-        unknown>(Component: React.ComponentClass<TComponentProps> |
-        React.FunctionComponent<TComponentProps>, baseStyles:
-        IStyleFunctionOrObject<TStyleProps, TStyleSet>, getProps?: (props:
-        TComponentProps) => Partial<TComponentProps>, customizable?:
-        ICustomizableProps, pure?: boolean):
-        React.ForwardRefExoticComponent<React.PropsWithoutRef<TComponentProps> &
-        React.RefAttributes<TRef>>;
+        export declare function styled<TComponentProps extends IPropsWithStyles<TStyleProps, TStyleSet> &
+        React.RefAttributes<TRef>, TStyleProps, TStyleSet extends IStyleSet<TStyleSet>, TRef = unknown>(Component:
+        React.ComponentClass<TComponentProps> | React.FunctionComponent<TComponentProps>, baseStyles:
+        IStyleFunctionOrObject<TStyleProps, TStyleSet>, getProps?: (props: TComponentProps) => Partial<TComponentProps>,
+        customizable?: ICustomizableProps, pure?: boolean):
+        React.ForwardRefExoticComponent<React.PropsWithoutRef<TComponentProps> & React.RefAttributes<TRef>>;
+      return:
+        type:
+          - React.ForwardRefExoticComponent<React.PropsWithoutRef<TComponentProps> & React.RefAttributes<TRef>>
+        description: ''
       parameters:
         - id: Component
           description: ''
-          type: >-
-            React.ComponentClass&lt;TComponentProps&gt; |
-            React.FunctionComponent&lt;TComponentProps&gt;
+          type:
+            - React.ComponentClass<TComponentProps> | React.FunctionComponent<TComponentProps>
         - id: baseStyles
           description: ''
-          type: 'IStyleFunctionOrObject&lt;TStyleProps, TStyleSet&gt;'
+          type:
+            - 'IStyleFunctionOrObject<TStyleProps, TStyleSet>'
         - id: getProps
           description: ''
-          type: '(props: TComponentProps) =&gt; Partial&lt;TComponentProps&gt;'
+          type:
+            - '(props: TComponentProps) => Partial<TComponentProps>'
         - id: customizable
           description: ''
-          type: '<xref uid="@fluentui/utilities!ICustomizableProps:interface" />'
+          type:
+            - '@fluentui/utilities!ICustomizableProps:interface'
         - id: pure
           description: ''
-          type: boolean
-      return:
-        type: >-
-          React.ForwardRefExoticComponent&lt;React.PropsWithoutRef&lt;TComponentProps&gt;
-          & React.RefAttributes&lt;TRef&gt;&gt;
-        description: ''
-  - name: 'toMatrix(items, columnCount)'
-    uid: '@fluentui/utilities!toMatrix:function(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - boolean
+      typeParameters:
+        - id: TComponentProps
+          type:
+            - 'IPropsWithStyles<TStyleProps, TStyleSet> & React.RefAttributes<TRef>'
+        - id: TStyleProps
+        - id: TStyleSet
+          type:
+            - IStyleSet<TStyleSet>
+        - id: TRef
+  - uid: '@fluentui/utilities!toMatrix:function(1)'
     summary: Convert the given array to a matrix with columnCount number of columns.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: 'toMatrix(items, columnCount)'
+    fullName: 'toMatrix(items, columnCount)'
+    langs:
+      - typeScript
+    type: function
     syntax:
-      content: >-
-        export declare function toMatrix<T>(items: T[], columnCount: number):
-        T[][];
+      content: 'export declare function toMatrix<T>(items: T[], columnCount: number): T[][];'
+      return:
+        type:
+          - 'T[][]'
+        description: A matrix of items
       parameters:
         - id: items
           description: The array to convert
-          type: 'T[]'
+          type:
+            - 'T[]'
         - id: columnCount
           description: The number of columns for the resulting matrix
-          type: number
-      return:
-        type: 'T[][]'
-        description: A matrix of items
-  - name: 'unhoistMethods(source, methodNames)'
-    uid: '@fluentui/utilities!unhoistMethods:function(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - number
+      typeParameters:
+        - id: T
+  - uid: '@fluentui/utilities!unhoistMethods:function(1)'
     summary: Provides a method for convenience to unhoist hoisted methods.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: 'unhoistMethods(source, methodNames)'
+    fullName: 'unhoistMethods(source, methodNames)'
+    langs:
+      - typeScript
+    type: function
     syntax:
-      content: >-
-        export declare function unhoistMethods(source: any, methodNames:
-        string[]): void;
+      content: 'export declare function unhoistMethods(source: any, methodNames: string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: source
           description: The source object upon which methods were hoisted.
-          type: any
+          type:
+            - any
         - id: methodNames
           description: An array of method names to unhoist.
-          type: 'string[]'
-      return:
-        type: void
-        description: ''
-  - name: 'useCustomizationSettings(properties, scopeName)'
-    uid: '@fluentui/utilities!useCustomizationSettings:function(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - 'string[]'
+  - uid: '@fluentui/utilities!useCustomizationSettings:function(1)'
     summary: >-
-      Hook to get Customizations settings from Customizations singleton or
-      CustomizerContext. It will trigger component state update on settings
-      change observed.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Hook to get Customizations settings from Customizations singleton or CustomizerContext. It will trigger component
+      state update on settings change observed.
+    name: 'useCustomizationSettings(properties, scopeName)'
+    fullName: 'useCustomizationSettings(properties, scopeName)'
+    langs:
+      - typeScript
+    type: function
     syntax:
-      content: >-
-        export declare function useCustomizationSettings(properties: string[],
-        scopeName?: string): ISettings;
+      content: 'export declare function useCustomizationSettings(properties: string[], scopeName?: string): ISettings;'
+      return:
+        type:
+          - ISettings
+        description: ''
       parameters:
         - id: properties
           description: ''
-          type: 'string[]'
+          type:
+            - 'string[]'
         - id: scopeName
           description: ''
-          type: string
-      return:
-        type: ISettings
-        description: ''
-  - name: useFocusRects(rootRef)
-    uid: '@fluentui/utilities!useFocusRects:function(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - string
+  - uid: '@fluentui/utilities!useFocusRects:function(1)'
     summary: >-
       Initializes the logic which:
 
 
-      1. Subscribes keydown and mousedown events. (It will only do it once per
-      window, so it's safe to call this method multiple times.) 2. When the user
-      presses directional keyboard keys, adds the 'ms-Fabric--isFocusVisible'
-      classname to the document body, removes the 'ms-Fabric-isFocusHidden'
-      classname. 3. When the user clicks a mouse button, adds the
-      'ms-Fabric-isFocusHidden' classname to the document body, removes the
-      'ms-Fabric--isFocusVisible' classname.
+      1. Subscribes keydown and mousedown events. (It will only do it once per window, so it's safe to call this method
+      multiple times.) 2. When the user presses directional keyboard keys, adds the 'ms-Fabric--isFocusVisible'
+      classname to the document body, removes the 'ms-Fabric-isFocusHidden' classname. 3. When the user clicks a mouse
+      button, adds the 'ms-Fabric-isFocusHidden' classname to the document body, removes the 'ms-Fabric--isFocusVisible'
+      classname.
 
 
-      This logic allows components on the page to conditionally render focus
-      treatments based on the existence of global classnames, which simplifies
-      logic overall.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      This logic allows components on the page to conditionally render focus treatments based on the existence of global
+      classnames, which simplifies logic overall.
+    name: useFocusRects(rootRef)
+    fullName: useFocusRects(rootRef)
+    langs:
+      - typeScript
+    type: function
     syntax:
-      content: >-
-        export declare function useFocusRects(rootRef?:
-        React.RefObject<HTMLElement>): void;
+      content: 'export declare function useFocusRects(rootRef?: React.RefObject<HTMLElement>): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: rootRef
-          description: >-
-            A Ref object. Focus rectangle can be applied on itself and all its
-            children.
-          type: React.RefObject&lt;HTMLElement&gt;
-      return:
-        type: void
-        description: ''
-  - name: values(obj)
-    uid: '@fluentui/utilities!values:function(1)'
-    package: '@fluentui/utilities!'
+          description: A Ref object. Focus rectangle can be applied on itself and all its children.
+          type:
+            - React.RefObject<HTMLElement>
+  - uid: '@fluentui/utilities!values:function(1)'
     summary: Get all values in an object dictionary
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: values(obj)
+    fullName: values(obj)
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: 'export declare function values<T>(obj: any): T[];'
+      return:
+        type:
+          - 'T[]'
+        description: ''
       parameters:
         - id: obj
           description: The dictionary to get values for
-          type: any
-      return:
-        type: 'T[]'
-        description: ''
-  - name: warn(message)
-    uid: '@fluentui/utilities!warn:function(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - any
+      typeParameters:
+        - id: T
+  - uid: '@fluentui/utilities!warn:function(1)'
     summary: 'Sends a warning to console, if the api is present.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: warn(message)
+    fullName: warn(message)
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: 'export declare function warn(message: string): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: message
           description: Warning message.
-          type: string
-      return:
-        type: void
-        description: ''
-  - name: >-
-      warnConditionallyRequiredProps(componentName, props, requiredProps,
-      conditionalPropName, condition)
-    uid: '@fluentui/utilities!warnConditionallyRequiredProps:function(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - string
+  - uid: '@fluentui/utilities!warnConditionallyRequiredProps:function(1)'
     summary: Warns when props are required if a condition is met.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: 'warnConditionallyRequiredProps(componentName, props, requiredProps, conditionalPropName, condition)'
+    fullName: 'warnConditionallyRequiredProps(componentName, props, requiredProps, conditionalPropName, condition)'
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: >-
-        export declare function warnConditionallyRequiredProps<P>(componentName:
-        string, props: P, requiredProps: string[], conditionalPropName: string,
-        condition: boolean): void;
+        export declare function warnConditionallyRequiredProps<P>(componentName: string, props: P, requiredProps:
+        string[], conditionalPropName: string, condition: boolean): void;
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: componentName
           description: The name of the component being used.
-          type: string
+          type:
+            - string
         - id: props
           description: The props passed into the component.
-          type: P
+          type:
+            - P
         - id: requiredProps
           description: The name of the props that are required when the condition is met.
-          type: 'string[]'
+          type:
+            - 'string[]'
         - id: conditionalPropName
           description: The name of the prop that the condition is based on.
-          type: string
+          type:
+            - string
         - id: condition
           description: Whether the condition is met.
-          type: boolean
-      return:
-        type: void
-        description: ''
-  - name: warnControlledUsage(params)
-    uid: '@fluentui/utilities!warnControlledUsage:function(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - boolean
+      typeParameters:
+        - id: P
+  - uid: '@fluentui/utilities!warnControlledUsage:function(1)'
     summary: >-
-      Check for and warn on the following error conditions with a form
-      component: - A value prop is provided (indicated it's being used as
-      controlled) without a change handler, and the component is not read-only -
-      Both the value and defaultValue props are provided - The component is
-      attempting to switch between controlled and uncontrolled
+      Check for and warn on the following error conditions with a form component: - A value prop is provided (indicated
+      it's being used as controlled) without a change handler, and the component is not read-only - Both the value and
+      defaultValue props are provided - The component is attempting to switch between controlled and uncontrolled
 
 
-      The messages mimic the warnings React gives for these error conditions on
-      input elements. The warning will only be displayed once per component ID.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      The messages mimic the warnings React gives for these error conditions on input elements. The warning will only be
+      displayed once per component ID.
+    name: warnControlledUsage(params)
+    fullName: warnControlledUsage(params)
+    langs:
+      - typeScript
+    type: function
     syntax:
-      content: >-
-        export declare function warnControlledUsage<P>(params:
-        IWarnControlledUsageParams<P>): void;
+      content: 'export declare function warnControlledUsage<P>(params: IWarnControlledUsageParams<P>): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: params
           description: ''
-          type: IWarnControlledUsageParams&lt;P&gt;
-      return:
-        type: void
-        description: ''
-  - name: 'warnDeprecations(componentName, props, deprecationMap)'
-    uid: '@fluentui/utilities!warnDeprecations:function(1)'
-    package: '@fluentui/utilities!'
+          type:
+            - IWarnControlledUsageParams<P>
+      typeParameters:
+        - id: P
+  - uid: '@fluentui/utilities!warnDeprecations:function(1)'
     summary: Warns when a deprecated props are being used.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: 'warnDeprecations(componentName, props, deprecationMap)'
+    fullName: 'warnDeprecations(componentName, props, deprecationMap)'
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: >-
-        export declare function warnDeprecations<P>(componentName: string,
-        props: P, deprecationMap: ISettingsMap<P>): void;
+        export declare function warnDeprecations<P>(componentName: string, props: P, deprecationMap: ISettingsMap<P>):
+        void;
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: componentName
           description: The name of the component being used.
-          type: string
+          type:
+            - string
         - id: props
           description: The props passed into the component.
-          type: P
+          type:
+            - P
         - id: deprecationMap
-          description: >-
-            The map of deprecations, where key is the prop name and the value is
-            either null or a replacement prop name.
-          type: ISettingsMap&lt;P&gt;
-      return:
-        type: void
-        description: ''
-  - name: 'warnMutuallyExclusive(componentName, props, exclusiveMap)'
-    uid: '@fluentui/utilities!warnMutuallyExclusive:function(1)'
-    package: '@fluentui/utilities!'
+          description: 'The map of deprecations, where key is the prop name and the value is either null or a replacement prop name.'
+          type:
+            - ISettingsMap<P>
+      typeParameters:
+        - id: P
+  - uid: '@fluentui/utilities!warnMutuallyExclusive:function(1)'
     summary: Warns when two props which are mutually exclusive are both being used.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: 'warnMutuallyExclusive(componentName, props, exclusiveMap)'
+    fullName: 'warnMutuallyExclusive(componentName, props, exclusiveMap)'
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: >-
-        export declare function warnMutuallyExclusive<P>(componentName: string,
-        props: P, exclusiveMap: ISettingsMap<P>): void;
+        export declare function warnMutuallyExclusive<P>(componentName: string, props: P, exclusiveMap:
+        ISettingsMap<P>): void;
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: componentName
           description: The name of the component being used.
-          type: string
+          type:
+            - string
         - id: props
           description: The props passed into the component.
-          type: P
+          type:
+            - P
         - id: exclusiveMap
-          description: >-
-            A map where the key is a parameter, and the value is the other
-            parameter.
-          type: ISettingsMap&lt;P&gt;
-      return:
-        type: void
-        description: ''
+          description: 'A map where the key is a parameter, and the value is the other parameter.'
+          type:
+            - ISettingsMap<P>
+      typeParameters:
+        - id: P
+references:
+  - uid: '@fluentui/utilities!Async:class'
+    name: Async
+  - uid: '@fluentui/utilities!AutoScroll:class'
+    name: AutoScroll
+  - uid: '@fluentui/utilities!BaseComponent:class'
+    name: BaseComponent
+  - uid: '@fluentui/utilities!Customizations:class'
+    name: Customizations
+  - uid: '@fluentui/utilities!Customizer:class'
+    name: Customizer
+  - uid: '@fluentui/utilities!DelayedRender:class'
+    name: DelayedRender
+  - uid: '@fluentui/utilities!EventGroup:class'
+    name: EventGroup
+  - uid: '@fluentui/utilities!FabricPerformance:class'
+    name: FabricPerformance
+  - uid: '@fluentui/utilities!GlobalSettings:class'
+    name: GlobalSettings
+  - uid: '@fluentui/utilities!IAsAsyncOptions:interface'
+    name: IAsAsyncOptions
+  - uid: '@fluentui/utilities!IBaseProps:interface'
+    name: IBaseProps
+  - uid: '@fluentui/utilities!IChangeDescription:interface'
+    name: IChangeDescription
+  - uid: '@fluentui/utilities!IChangeEventCallback:interface'
+    name: IChangeEventCallback
+  - uid: '@fluentui/utilities!IClassNamesFunctionOptions:interface'
+    name: IClassNamesFunctionOptions
+  - uid: '@fluentui/utilities!ICustomizableProps:interface'
+    name: ICustomizableProps
+  - uid: '@fluentui/utilities!ICustomizations:interface'
+    name: ICustomizations
+  - uid: '@fluentui/utilities!ICustomizerContext:interface'
+    name: ICustomizerContext
+  - uid: '@fluentui/utilities!IDelayedRenderProps:interface'
+    name: IDelayedRenderProps
+  - uid: '@fluentui/utilities!IDisposable:interface'
+    name: IDisposable
+  - uid: '@fluentui/utilities!IFitContentToBoundsOptions:interface'
+    name: IFitContentToBoundsOptions
+  - uid: '@fluentui/utilities!IObjectWithKey:interface'
+    name: IObjectWithKey
+  - uid: '@fluentui/utilities!IPoint:interface'
+    name: IPoint
+  - uid: '@fluentui/utilities!IPropsWithStyles:interface'
+    name: IPropsWithStyles
+  - uid: '@fluentui/utilities!IRectangle:interface'
+    name: IRectangle
+  - uid: '@fluentui/utilities!IRenderComponent:interface'
+    name: IRenderComponent
+  - uid: '@fluentui/utilities!IRenderFunction:interface'
+    name: IRenderFunction
+  - uid: '@fluentui/utilities!ISelection:interface'
+    name: ISelection
+  - uid: '@fluentui/utilities!ISelectionOptions:interface'
+    name: ISelectionOptions
+  - uid: '@fluentui/utilities!ISize:interface'
+    name: ISize
+  - uid: '@fluentui/utilities!IWarnControlledUsageParams:interface'
+    name: IWarnControlledUsageParams
+  - uid: '@fluentui/utilities!Point:interface'
+    name: Point
+  - uid: '@fluentui/utilities!Rectangle:class'
+    name: Rectangle
+  - uid: '@fluentui/utilities!Selection:class'
+    name: Selection
+  - uid: '@fluentui/utilities!SelectionDirection:enum'
+    name: SelectionDirection
+  - uid: '@fluentui/utilities!SelectionMode:enum'
+    name: SelectionMode

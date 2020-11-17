@@ -1,25 +1,38 @@
-### YamlMime:TSEnum
-name: ValidationState
-uid: 'office-ui-fabric-react!ValidationState:enum'
-package: office-ui-fabric-react!
-fullName: ValidationState
-summary: Validation state of the user's input.
-remarks: ''
-isPreview: false
-isDeprecated: false
-fields:
-  - name: invalid
-    uid: 'office-ui-fabric-react!ValidationState.invalid:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-ui-fabric-react!ValidationState:enum'
+    summary: Validation state of the user's input.
+    name: ValidationState
+    fullName: ValidationState
+    langs:
+      - typeScript
+    type: enum
     package: office-ui-fabric-react!
+    children:
+      - 'office-ui-fabric-react!ValidationState.invalid:member'
+      - 'office-ui-fabric-react!ValidationState.valid:member'
+      - 'office-ui-fabric-react!ValidationState.warning:member'
+  - uid: 'office-ui-fabric-react!ValidationState.invalid:member'
     summary: User input is invalid.
-    numericValue: 2
-  - name: valid
-    uid: 'office-ui-fabric-react!ValidationState.valid:member'
-    package: office-ui-fabric-react!
+    name: invalid
+    fullName: invalid
+    langs:
+      - typeScript
+    type: field
+    numericValue: '2'
+  - uid: 'office-ui-fabric-react!ValidationState.valid:member'
     summary: User input is valid.
-    numericValue: 0
-  - name: warning
-    uid: 'office-ui-fabric-react!ValidationState.warning:member'
-    package: office-ui-fabric-react!
+    name: valid
+    fullName: valid
+    langs:
+      - typeScript
+    type: field
+    numericValue: '0'
+  - uid: 'office-ui-fabric-react!ValidationState.warning:member'
     summary: 'User input could be valid or invalid, its state is not known yet.'
-    numericValue: 1
+    name: warning
+    fullName: warning
+    langs:
+      - typeScript
+    type: field
+    numericValue: '1'

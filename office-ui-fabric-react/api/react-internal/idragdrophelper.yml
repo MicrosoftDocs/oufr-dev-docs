@@ -1,59 +1,58 @@
-### YamlMime:TSType
-name: IDragDropHelper
-uid: '@fluentui/react-internal!IDragDropHelper:interface'
-package: '@fluentui/react-internal!'
-fullName: IDragDropHelper
-summary: >-
-  Helper for subscribing and unsubscribing to drag and drop events on an
-  HTMLElement.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: dispose
-    uid: '@fluentui/react-internal!IDragDropHelper#dispose:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-internal!IDragDropHelper:interface'
+    summary: Helper for subscribing and unsubscribing to drag and drop events on an HTMLElement.
+    name: IDragDropHelper
+    fullName: IDragDropHelper
+    langs:
+      - typeScript
+    type: interface
     package: '@fluentui/react-internal!'
-    fullName: dispose
+    children:
+      - '@fluentui/react-internal!IDragDropHelper#dispose:member'
+      - '@fluentui/react-internal!IDragDropHelper#subscribe:member'
+      - '@fluentui/react-internal!IDragDropHelper#unsubscribe:member'
+  - uid: '@fluentui/react-internal!IDragDropHelper#dispose:member'
     summary: Dispose of listeners bound to instance of helper.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: dispose
+    fullName: dispose
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'dispose: () => void;'
       return:
-        type: () =&gt; void
-  - name: subscribe
-    uid: '@fluentui/react-internal!IDragDropHelper#subscribe:member'
-    package: '@fluentui/react-internal!'
-    fullName: subscribe
+        type:
+          - () => void
+  - uid: '@fluentui/react-internal!IDragDropHelper#subscribe:member'
     summary: Subscribe to events on a DOM node with drag and drop configuration.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: subscribe
+    fullName: subscribe
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        subscribe: (root: HTMLElement, events: EventGroup, options:
-        IDragDropOptions) => {
+      content: |-
+        subscribe: (root: HTMLElement, events: EventGroup, options: IDragDropOptions) => {
                 key: string;
                 dispose: () => void;
             };
       return:
-        type: >-
-          (root: HTMLElement, events: EventGroup, options: IDragDropOptions)
-          =&gt; {
-                  key: string;
-                  dispose: () =&gt; void;
-              }
-  - name: unsubscribe
-    uid: '@fluentui/react-internal!IDragDropHelper#unsubscribe:member'
-    package: '@fluentui/react-internal!'
-    fullName: unsubscribe
+        type:
+          - |-
+            (root: HTMLElement, events: EventGroup, options: IDragDropOptions) => {
+                    key: string;
+                    dispose: () => void;
+                }
+  - uid: '@fluentui/react-internal!IDragDropHelper#unsubscribe:member'
     summary: Unsubscribe to events registered on a DOM node with key.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: unsubscribe
+    fullName: unsubscribe
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'unsubscribe: (root: HTMLElement, key: string) => void;'
       return:
-        type: '(root: HTMLElement, key: string) =&gt; void'
+        type:
+          - '(root: HTMLElement, key: string) => void'

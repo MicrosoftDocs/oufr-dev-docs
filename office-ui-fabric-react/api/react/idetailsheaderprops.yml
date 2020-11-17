@@ -1,48 +1,51 @@
-### YamlMime:TSType
-name: IDetailsHeaderProps
-uid: '@fluentui/react!IDetailsHeaderProps:interface'
-package: '@fluentui/react!'
-fullName: IDetailsHeaderProps
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: columns
-    uid: '@fluentui/react!IDetailsHeaderProps#columns:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react!IDetailsHeaderProps:interface'
+    name: IDetailsHeaderProps
+    fullName: IDetailsHeaderProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'IDetailsHeaderBaseProps '
     package: '@fluentui/react!'
-    fullName: columns
+    children:
+      - '@fluentui/react!IDetailsHeaderProps#columns:member'
+      - '@fluentui/react!IDetailsHeaderProps#selection:member'
+      - '@fluentui/react!IDetailsHeaderProps#selectionMode:member'
+  - uid: '@fluentui/react!IDetailsHeaderProps#columns:member'
     summary: Column metadata
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: columns
+    fullName: columns
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'columns: IColumn[];'
       return:
-        type: 'IColumn[]'
-  - name: selection
-    uid: '@fluentui/react!IDetailsHeaderProps#selection:member'
-    package: '@fluentui/react!'
-    fullName: selection
+        type:
+          - 'IColumn[]'
+  - uid: '@fluentui/react!IDetailsHeaderProps#selection:member'
     summary: Selection from utilities
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: selection
+    fullName: selection
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'selection: ISelection;'
       return:
-        type: '<xref uid="@fluentui/utilities!ISelection:interface" />'
-  - name: selectionMode
-    uid: '@fluentui/react!IDetailsHeaderProps#selectionMode:member'
-    package: '@fluentui/react!'
-    fullName: selectionMode
+        type:
+          - '@fluentui/utilities!ISelection:interface'
+  - uid: '@fluentui/react!IDetailsHeaderProps#selectionMode:member'
     summary: Selection mode
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: selectionMode
+    fullName: selectionMode
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'selectionMode: SelectionMode;'
       return:
-        type: '<xref uid="@fluentui/utilities!SelectionMode:enum" />'
-extends: 'IDetailsHeaderBaseProps '
+        type:
+          - '@fluentui/utilities!SelectionMode:enum'

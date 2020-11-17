@@ -1,231 +1,236 @@
-### YamlMime:TSType
-name: SuggestionsCore
-uid: 'office-ui-fabric-react!SuggestionsCore:class'
-package: office-ui-fabric-react!
-fullName: SuggestionsCore
-summary: 'Class when used with SuggestionsStore, renders a basic suggestions control'
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: class
-constructors:
-  - name: (constructor)(suggestionsProps)
-    uid: 'office-ui-fabric-react!SuggestionsCore:constructor(1)'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-ui-fabric-react!SuggestionsCore:class'
+    summary: 'Class when used with SuggestionsStore, renders a basic suggestions control'
+    name: SuggestionsCore
+    fullName: SuggestionsCore
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'React.Component<ISuggestionsCoreProps<T>, {}> '
     package: office-ui-fabric-react!
-    fullName: (constructor)(suggestionsProps)
+    children:
+      - 'office-ui-fabric-react!SuggestionsCore#_selectedElement:member'
+      - 'office-ui-fabric-react!SuggestionsCore:constructor(1)'
+      - 'office-ui-fabric-react!SuggestionsCore#componentDidUpdate:member(1)'
+      - 'office-ui-fabric-react!SuggestionsCore#currentIndex:member'
+      - 'office-ui-fabric-react!SuggestionsCore#currentSuggestion:member'
+      - 'office-ui-fabric-react!SuggestionsCore#deselectAllSuggestions:member(1)'
+      - 'office-ui-fabric-react!SuggestionsCore#getCurrentItem:member(1)'
+      - 'office-ui-fabric-react!SuggestionsCore#getSuggestionAtIndex:member(1)'
+      - 'office-ui-fabric-react!SuggestionsCore#hasSuggestionSelected:member(1)'
+      - 'office-ui-fabric-react!SuggestionsCore#nextSuggestion:member(1)'
+      - 'office-ui-fabric-react!SuggestionsCore#previousSuggestion:member(1)'
+      - 'office-ui-fabric-react!SuggestionsCore#removeSuggestion:member(1)'
+      - 'office-ui-fabric-react!SuggestionsCore#render:member(1)'
+      - 'office-ui-fabric-react!SuggestionsCore#scrollSelected:member(1)'
+      - 'office-ui-fabric-react!SuggestionsCore#selectedElement:member'
+      - 'office-ui-fabric-react!SuggestionsCore#setSelectedSuggestion:member(1)'
+  - uid: 'office-ui-fabric-react!SuggestionsCore#_selectedElement:member'
+    name: _selectedElement
+    fullName: _selectedElement
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'protected _selectedElement: React.RefObject<HTMLDivElement>;'
+      return:
+        type:
+          - React.RefObject<HTMLDivElement>
+  - uid: 'office-ui-fabric-react!SuggestionsCore:constructor(1)'
     summary: Constructs a new instance of the `SuggestionsCore` class
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: (constructor)(suggestionsProps)
+    fullName: (constructor)(suggestionsProps)
+    langs:
+      - typeScript
+    type: constructor
     syntax:
       content: 'constructor(suggestionsProps: ISuggestionsCoreProps<T>);'
       parameters:
         - id: suggestionsProps
           description: ''
-          type: ISuggestionsCoreProps&lt;T&gt;
-properties:
-  - name: _selectedElement
-    uid: 'office-ui-fabric-react!SuggestionsCore#_selectedElement:member'
-    package: office-ui-fabric-react!
-    fullName: _selectedElement
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'protected _selectedElement: React.RefObject<HTMLDivElement>;'
-      return:
-        type: React.RefObject&lt;HTMLDivElement&gt;
-  - name: currentIndex
-    uid: 'office-ui-fabric-react!SuggestionsCore#currentIndex:member'
-    package: office-ui-fabric-react!
-    fullName: currentIndex
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'currentIndex: number;'
-      return:
-        type: number
-  - name: currentSuggestion
-    uid: 'office-ui-fabric-react!SuggestionsCore#currentSuggestion:member'
-    package: office-ui-fabric-react!
-    fullName: currentSuggestion
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'currentSuggestion: ISuggestionModel<T> | undefined;'
-      return:
-        type: ISuggestionModel&lt;T&gt; | undefined
-  - name: selectedElement
-    uid: 'office-ui-fabric-react!SuggestionsCore#selectedElement:member'
-    package: office-ui-fabric-react!
-    fullName: selectedElement
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'readonly selectedElement: HTMLDivElement | undefined;'
-      return:
-        type: HTMLDivElement | undefined
-methods:
-  - name: componentDidUpdate()
-    uid: 'office-ui-fabric-react!SuggestionsCore#componentDidUpdate:member(1)'
-    package: office-ui-fabric-react!
+          type:
+            - ISuggestionsCoreProps<T>
+  - uid: 'office-ui-fabric-react!SuggestionsCore#componentDidUpdate:member(1)'
+    name: componentDidUpdate()
     fullName: componentDidUpdate()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'componentDidUpdate(): void;'
       return:
-        type: void
+        type:
+          - void
         description: ''
-  - name: deselectAllSuggestions()
-    uid: 'office-ui-fabric-react!SuggestionsCore#deselectAllSuggestions:member(1)'
-    package: office-ui-fabric-react!
+  - uid: 'office-ui-fabric-react!SuggestionsCore#currentIndex:member'
+    name: currentIndex
+    fullName: currentIndex
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'currentIndex: number;'
+      return:
+        type:
+          - number
+  - uid: 'office-ui-fabric-react!SuggestionsCore#currentSuggestion:member'
+    name: currentSuggestion
+    fullName: currentSuggestion
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'currentSuggestion: ISuggestionModel<T> | undefined;'
+      return:
+        type:
+          - ISuggestionModel<T> | undefined
+  - uid: 'office-ui-fabric-react!SuggestionsCore#deselectAllSuggestions:member(1)'
+    name: deselectAllSuggestions()
     fullName: deselectAllSuggestions()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'deselectAllSuggestions(): void;'
       return:
-        type: void
+        type:
+          - void
         description: ''
-  - name: getCurrentItem()
-    uid: 'office-ui-fabric-react!SuggestionsCore#getCurrentItem:member(1)'
-    package: office-ui-fabric-react!
+  - uid: 'office-ui-fabric-react!SuggestionsCore#getCurrentItem:member(1)'
+    name: getCurrentItem()
     fullName: getCurrentItem()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'getCurrentItem(): ISuggestionModel<T>;'
       return:
-        type: ISuggestionModel&lt;T&gt;
+        type:
+          - ISuggestionModel<T>
         description: ''
-  - name: getSuggestionAtIndex(index)
-    uid: 'office-ui-fabric-react!SuggestionsCore#getSuggestionAtIndex:member(1)'
-    package: office-ui-fabric-react!
+  - uid: 'office-ui-fabric-react!SuggestionsCore#getSuggestionAtIndex:member(1)'
+    name: getSuggestionAtIndex(index)
     fullName: getSuggestionAtIndex(index)
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'getSuggestionAtIndex(index: number): ISuggestionModel<T>;'
+      return:
+        type:
+          - ISuggestionModel<T>
+        description: ''
       parameters:
         - id: index
           description: ''
-          type: number
-      return:
-        type: ISuggestionModel&lt;T&gt;
-        description: ''
-  - name: hasSuggestionSelected()
-    uid: 'office-ui-fabric-react!SuggestionsCore#hasSuggestionSelected:member(1)'
-    package: office-ui-fabric-react!
+          type:
+            - number
+  - uid: 'office-ui-fabric-react!SuggestionsCore#hasSuggestionSelected:member(1)'
+    name: hasSuggestionSelected()
     fullName: hasSuggestionSelected()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'hasSuggestionSelected(): boolean;'
       return:
-        type: boolean
+        type:
+          - boolean
         description: ''
-  - name: nextSuggestion()
-    uid: 'office-ui-fabric-react!SuggestionsCore#nextSuggestion:member(1)'
-    package: office-ui-fabric-react!
-    fullName: nextSuggestion()
+  - uid: 'office-ui-fabric-react!SuggestionsCore#nextSuggestion:member(1)'
     summary: Increments the selected suggestion index
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: nextSuggestion()
+    fullName: nextSuggestion()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'nextSuggestion(): boolean;'
       return:
-        type: boolean
+        type:
+          - boolean
         description: ''
-  - name: previousSuggestion()
-    uid: 'office-ui-fabric-react!SuggestionsCore#previousSuggestion:member(1)'
-    package: office-ui-fabric-react!
-    fullName: previousSuggestion()
+  - uid: 'office-ui-fabric-react!SuggestionsCore#previousSuggestion:member(1)'
     summary: Decrements the selected suggestion index
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: previousSuggestion()
+    fullName: previousSuggestion()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'previousSuggestion(): boolean;'
       return:
-        type: boolean
+        type:
+          - boolean
         description: ''
-  - name: removeSuggestion(index)
-    uid: 'office-ui-fabric-react!SuggestionsCore#removeSuggestion:member(1)'
-    package: office-ui-fabric-react!
+  - uid: 'office-ui-fabric-react!SuggestionsCore#removeSuggestion:member(1)'
+    name: removeSuggestion(index)
     fullName: removeSuggestion(index)
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'removeSuggestion(index: number): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: index
           description: ''
-          type: number
-      return:
-        type: void
-        description: ''
-  - name: render()
-    uid: 'office-ui-fabric-react!SuggestionsCore#render:member(1)'
-    package: office-ui-fabric-react!
+          type:
+            - number
+  - uid: 'office-ui-fabric-react!SuggestionsCore#render:member(1)'
+    name: render()
     fullName: render()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'render(): JSX.Element;'
       return:
-        type: JSX.Element
+        type:
+          - JSX.Element
         description: ''
-  - name: scrollSelected()
-    uid: 'office-ui-fabric-react!SuggestionsCore#scrollSelected:member(1)'
-    package: office-ui-fabric-react!
+  - uid: 'office-ui-fabric-react!SuggestionsCore#scrollSelected:member(1)'
+    name: scrollSelected()
     fullName: scrollSelected()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'scrollSelected(): void;'
       return:
-        type: void
+        type:
+          - void
         description: ''
-  - name: setSelectedSuggestion(index)
-    uid: 'office-ui-fabric-react!SuggestionsCore#setSelectedSuggestion:member(1)'
-    package: office-ui-fabric-react!
+  - uid: 'office-ui-fabric-react!SuggestionsCore#selectedElement:member'
+    name: selectedElement
+    fullName: selectedElement
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly selectedElement: HTMLDivElement | undefined;'
+      return:
+        type:
+          - HTMLDivElement | undefined
+  - uid: 'office-ui-fabric-react!SuggestionsCore#setSelectedSuggestion:member(1)'
+    name: setSelectedSuggestion(index)
     fullName: setSelectedSuggestion(index)
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'setSelectedSuggestion(index: number): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: index
           description: ''
-          type: number
-      return:
-        type: void
-        description: ''
-extends: 'React.Component&lt;ISuggestionsCoreProps&lt;T&gt;, {}&gt; '
+          type:
+            - number

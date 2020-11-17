@@ -1,244 +1,249 @@
-### YamlMime:TSType
-name: ICalendarDayProps
-uid: '@fluentui/react-date-time!ICalendarDayProps:interface'
-package: '@fluentui/react-date-time!'
-fullName: ICalendarDayProps
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: allFocusable
-    uid: '@fluentui/react-date-time!ICalendarDayProps#allFocusable:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-date-time!ICalendarDayProps:interface'
+    name: ICalendarDayProps
+    fullName: ICalendarDayProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - IBaseProps<ICalendarDay>
+      - '@fluentui/react-date-time!ICalendarDayGridProps:interface'
     package: '@fluentui/react-date-time!'
-    fullName: allFocusable
+    children:
+      - '@fluentui/react-date-time!ICalendarDayProps#allFocusable:member'
+      - '@fluentui/react-date-time!ICalendarDayProps#className:member'
+      - '@fluentui/react-date-time!ICalendarDayProps#componentRef:member'
+      - '@fluentui/react-date-time!ICalendarDayProps#dateTimeFormatter:member'
+      - '@fluentui/react-date-time!ICalendarDayProps#maxDate:member'
+      - '@fluentui/react-date-time!ICalendarDayProps#minDate:member'
+      - '@fluentui/react-date-time!ICalendarDayProps#navigatedDate:member'
+      - '@fluentui/react-date-time!ICalendarDayProps#navigationIcons:member'
+      - '@fluentui/react-date-time!ICalendarDayProps#onDismiss:member'
+      - '@fluentui/react-date-time!ICalendarDayProps#onHeaderSelect:member'
+      - '@fluentui/react-date-time!ICalendarDayProps#onNavigateDate:member'
+      - '@fluentui/react-date-time!ICalendarDayProps#restrictedDates:member'
+      - '@fluentui/react-date-time!ICalendarDayProps#showCloseButton:member'
+      - '@fluentui/react-date-time!ICalendarDayProps#showSixWeeksByDefault:member'
+      - '@fluentui/react-date-time!ICalendarDayProps#showWeekNumbers:member'
+      - '@fluentui/react-date-time!ICalendarDayProps#strings:member'
+      - '@fluentui/react-date-time!ICalendarDayProps#styles:member'
+      - '@fluentui/react-date-time!ICalendarDayProps#theme:member'
+  - uid: '@fluentui/react-date-time!ICalendarDayProps#allFocusable:member'
     summary: 'Allows all dates and buttons to be focused, including disabled ones'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: allFocusable
+    fullName: allFocusable
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'allFocusable?: boolean;'
       return:
-        type: boolean
-  - name: className
-    uid: '@fluentui/react-date-time!ICalendarDayProps#className:member'
-    package: '@fluentui/react-date-time!'
-    fullName: className
+        type:
+          - boolean
+  - uid: '@fluentui/react-date-time!ICalendarDayProps#className:member'
     summary: Additional CSS class(es) to apply to the CalendarDay.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: className
+    fullName: className
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'className?: string;'
       return:
-        type: string
-  - name: componentRef
-    uid: '@fluentui/react-date-time!ICalendarDayProps#componentRef:member'
-    package: '@fluentui/react-date-time!'
-    fullName: componentRef
+        type:
+          - string
+  - uid: '@fluentui/react-date-time!ICalendarDayProps#componentRef:member'
     summary: >-
-      Optional callback to access the ICalendarDay interface. Use this instead
-      of ref for accessing the public methods and properties of the component.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Optional callback to access the ICalendarDay interface. Use this instead of ref for accessing the public methods
+      and properties of the component.
+    name: componentRef
+    fullName: componentRef
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'componentRef?: IRefObject<ICalendarDay>;'
       return:
-        type: IRefObject&lt;ICalendarDay&gt;
-  - name: dateTimeFormatter
-    uid: '@fluentui/react-date-time!ICalendarDayProps#dateTimeFormatter:member'
-    package: '@fluentui/react-date-time!'
+        type:
+          - IRefObject<ICalendarDay>
+  - uid: '@fluentui/react-date-time!ICalendarDayProps#dateTimeFormatter:member'
+    summary: 'Apply additional formating to dates, for example localized date formatting.'
+    name: dateTimeFormatter
     fullName: dateTimeFormatter
-    summary: >-
-      Apply additional formating to dates, for example localized date
-      formatting.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'dateTimeFormatter: IDateFormatting;'
       return:
-        type: '<xref uid="@fluentui/date-time-utilities!IDateFormatting:interface" />'
-  - name: maxDate
-    uid: '@fluentui/react-date-time!ICalendarDayProps#maxDate:member'
-    package: '@fluentui/react-date-time!'
+        type:
+          - '@fluentui/date-time-utilities!IDateFormatting:interface'
+  - uid: '@fluentui/react-date-time!ICalendarDayProps#maxDate:member'
+    summary: If set the Calendar will not allow navigation to or selection of a date later than this value.
+    name: maxDate
     fullName: maxDate
-    summary: >-
-      If set the Calendar will not allow navigation to or selection of a date
-      later than this value.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'maxDate?: Date;'
       return:
-        type: Date
-  - name: minDate
-    uid: '@fluentui/react-date-time!ICalendarDayProps#minDate:member'
-    package: '@fluentui/react-date-time!'
+        type:
+          - Date
+  - uid: '@fluentui/react-date-time!ICalendarDayProps#minDate:member'
+    summary: If set the Calendar will not allow navigation to or selection of a date earlier than this value.
+    name: minDate
     fullName: minDate
-    summary: >-
-      If set the Calendar will not allow navigation to or selection of a date
-      earlier than this value.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'minDate?: Date;'
       return:
-        type: Date
-  - name: navigatedDate
-    uid: '@fluentui/react-date-time!ICalendarDayProps#navigatedDate:member'
-    package: '@fluentui/react-date-time!'
-    fullName: navigatedDate
+        type:
+          - Date
+  - uid: '@fluentui/react-date-time!ICalendarDayProps#navigatedDate:member'
     summary: The currently navigated date
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: navigatedDate
+    fullName: navigatedDate
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'navigatedDate: Date;'
       return:
-        type: Date
-  - name: navigationIcons
-    uid: '@fluentui/react-date-time!ICalendarDayProps#navigationIcons:member'
-    package: '@fluentui/react-date-time!'
-    fullName: navigationIcons
+        type:
+          - Date
+  - uid: '@fluentui/react-date-time!ICalendarDayProps#navigationIcons:member'
     summary: Custom navigation icons.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: navigationIcons
+    fullName: navigationIcons
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'navigationIcons: ICalendarNavigationIcons;'
       return:
-        type: >-
-          <xref
-          uid="@fluentui/react-date-time!ICalendarNavigationIcons:interface" />
-  - name: onDismiss
-    uid: '@fluentui/react-date-time!ICalendarDayProps#onDismiss:member'
-    package: '@fluentui/react-date-time!'
-    fullName: onDismiss
+        type:
+          - '@fluentui/react-date-time!ICalendarNavigationIcons:interface'
+  - uid: '@fluentui/react-date-time!ICalendarDayProps#onDismiss:member'
     summary: Callback issued when calendar day is closed
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onDismiss
+    fullName: onDismiss
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onDismiss?: () => void;'
       return:
-        type: () =&gt; void
-  - name: onHeaderSelect
-    uid: '@fluentui/react-date-time!ICalendarDayProps#onHeaderSelect:member'
-    package: '@fluentui/react-date-time!'
-    fullName: onHeaderSelect
+        type:
+          - () => void
+  - uid: '@fluentui/react-date-time!ICalendarDayProps#onHeaderSelect:member'
     summary: Callback function when the header is selected
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onHeaderSelect
+    fullName: onHeaderSelect
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onHeaderSelect?: () => void;'
       return:
-        type: () =&gt; void
-  - name: onNavigateDate
-    uid: '@fluentui/react-date-time!ICalendarDayProps#onNavigateDate:member'
-    package: '@fluentui/react-date-time!'
-    fullName: onNavigateDate
+        type:
+          - () => void
+  - uid: '@fluentui/react-date-time!ICalendarDayProps#onNavigateDate:member'
     summary: Callback issued when a date in the calendar is navigated
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onNavigateDate
+    fullName: onNavigateDate
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onNavigateDate: (date: Date, focusOnNavigatedDay: boolean) => void;'
       return:
-        type: '(date: Date, focusOnNavigatedDay: boolean) =&gt; void'
-  - name: restrictedDates
-    uid: '@fluentui/react-date-time!ICalendarDayProps#restrictedDates:member'
-    package: '@fluentui/react-date-time!'
-    fullName: restrictedDates
+        type:
+          - '(date: Date, focusOnNavigatedDay: boolean) => void'
+  - uid: '@fluentui/react-date-time!ICalendarDayProps#restrictedDates:member'
     summary: If set the Calendar will not allow selection of dates in this array.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: restrictedDates
+    fullName: restrictedDates
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'restrictedDates?: Date[];'
       return:
-        type: 'Date[]'
-  - name: showCloseButton
-    uid: '@fluentui/react-date-time!ICalendarDayProps#showCloseButton:member'
-    package: '@fluentui/react-date-time!'
-    fullName: showCloseButton
+        type:
+          - 'Date[]'
+  - uid: '@fluentui/react-date-time!ICalendarDayProps#showCloseButton:member'
     summary: Whether the close button should be shown or not
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: showCloseButton
+    fullName: showCloseButton
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'showCloseButton?: boolean;'
       return:
-        type: boolean
-  - name: showSixWeeksByDefault
-    uid: '@fluentui/react-date-time!ICalendarDayProps#showSixWeeksByDefault:member'
-    package: '@fluentui/react-date-time!'
-    fullName: showSixWeeksByDefault
+        type:
+          - boolean
+  - uid: '@fluentui/react-date-time!ICalendarDayProps#showSixWeeksByDefault:member'
     summary: Whether the calendar should show 6 weeks by default.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: showSixWeeksByDefault
+    fullName: showSixWeeksByDefault
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'showSixWeeksByDefault?: boolean;'
       return:
-        type: boolean
-  - name: showWeekNumbers
-    uid: '@fluentui/react-date-time!ICalendarDayProps#showWeekNumbers:member'
-    package: '@fluentui/react-date-time!'
+        type:
+          - boolean
+  - uid: '@fluentui/react-date-time!ICalendarDayProps#showWeekNumbers:member'
+    summary: Whether the calendar should show the week number (weeks 1 to 53) before each week row
+    name: showWeekNumbers
     fullName: showWeekNumbers
-    summary: >-
-      Whether the calendar should show the week number (weeks 1 to 53) before
-      each week row
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'showWeekNumbers?: boolean;'
       return:
-        type: boolean
-  - name: strings
-    uid: '@fluentui/react-date-time!ICalendarDayProps#strings:member'
-    package: '@fluentui/react-date-time!'
-    fullName: strings
+        type:
+          - boolean
+  - uid: '@fluentui/react-date-time!ICalendarDayProps#strings:member'
     summary: Localized strings to use in the Calendar
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: strings
+    fullName: strings
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'strings: ICalendarStrings;'
       return:
-        type: ICalendarStrings
-  - name: styles
-    uid: '@fluentui/react-date-time!ICalendarDayProps#styles:member'
-    package: '@fluentui/react-date-time!'
-    fullName: styles
+        type:
+          - ICalendarStrings
+  - uid: '@fluentui/react-date-time!ICalendarDayProps#styles:member'
     summary: Customized styles for the calendar day component
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: styles
+    fullName: styles
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        styles?: IStyleFunctionOrObject<ICalendarDayStyleProps,
-        ICalendarDayStyles>;
+      content: 'styles?: IStyleFunctionOrObject<ICalendarDayStyleProps, ICalendarDayStyles>;'
       return:
-        type: >-
-          IStyleFunctionOrObject&lt;ICalendarDayStyleProps,
-          ICalendarDayStyles&gt;
-  - name: theme
-    uid: '@fluentui/react-date-time!ICalendarDayProps#theme:member'
-    package: '@fluentui/react-date-time!'
-    fullName: theme
+        type:
+          - 'IStyleFunctionOrObject<ICalendarDayStyleProps, ICalendarDayStyles>'
+  - uid: '@fluentui/react-date-time!ICalendarDayProps#theme:member'
     summary: Theme (provided through customization).
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'theme?: ITheme;'
       return:
-        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
-extends: IBaseProps&lt;ICalendarDay&gt;
+        type:
+          - '@fluentui/theme!ITheme:interface'

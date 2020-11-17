@@ -1,33 +1,33 @@
-### YamlMime:TSType
-name: IColumnReorderHeaderProps
-uid: 'office-ui-fabric-react!IColumnReorderHeaderProps:interface'
-package: office-ui-fabric-react!
-fullName: IColumnReorderHeaderProps
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: onColumnDragEnd
-    uid: 'office-ui-fabric-react!IColumnReorderHeaderProps#onColumnDragEnd:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-ui-fabric-react!IColumnReorderHeaderProps:interface'
+    name: IColumnReorderHeaderProps
+    fullName: IColumnReorderHeaderProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'IColumnReorderOptions '
     package: office-ui-fabric-react!
-    fullName: onColumnDragEnd
+    children:
+      - 'office-ui-fabric-react!IColumnReorderHeaderProps#onColumnDragEnd:member'
+  - uid: 'office-ui-fabric-react!IColumnReorderHeaderProps#onColumnDragEnd:member'
     summary: >-
-      Callback to notify the column dragEnd event to List Need this to check
-      whether the dragEnd has happened on corresponding list or outside of the
-      list
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Callback to notify the column dragEnd event to List Need this to check whether the dragEnd has happened on
+      corresponding list or outside of the list
+    name: onColumnDragEnd
+    fullName: onColumnDragEnd
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: |-
         onColumnDragEnd?: (props: {
                 dropLocation?: ColumnDragEndLocation;
             }, event: MouseEvent) => void;
       return:
-        type: |-
-          (props: {
-                  dropLocation?: ColumnDragEndLocation;
-              }, event: MouseEvent) =&gt; void
-extends: 'IColumnReorderOptions '
+        type:
+          - |-
+            (props: {
+                    dropLocation?: ColumnDragEndLocation;
+                }, event: MouseEvent) => void

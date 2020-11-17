@@ -1,53 +1,52 @@
-### YamlMime:TSType
-name: IIconSubset
-uid: '@fluentui/style-utilities!IIconSubset:interface'
-package: '@fluentui/style-utilities!'
-fullName: IIconSubset
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: fontFace
-    uid: '@fluentui/style-utilities!IIconSubset#fontFace:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/style-utilities!IIconSubset:interface'
+    name: IIconSubset
+    fullName: IIconSubset
+    langs:
+      - typeScript
+    type: interface
     package: '@fluentui/style-utilities!'
+    children:
+      - '@fluentui/style-utilities!IIconSubset#fontFace:member'
+      - '@fluentui/style-utilities!IIconSubset#icons:member'
+      - '@fluentui/style-utilities!IIconSubset#style:member'
+  - uid: '@fluentui/style-utilities!IIconSubset#fontFace:member'
+    name: fontFace
     fullName: fontFace
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'fontFace?: IFontFace;'
       return:
-        type: '<xref uid="@fluentui/merge-styles!IFontFace:interface" />'
-  - name: icons
-    uid: '@fluentui/style-utilities!IIconSubset#icons:member'
-    package: '@fluentui/style-utilities!'
+        type:
+          - '@fluentui/merge-styles!IFontFace:interface'
+  - uid: '@fluentui/style-utilities!IIconSubset#icons:member'
+    name: icons
     fullName: icons
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: |-
         icons: {
                 [key: string]: string | JSX.Element;
             };
       return:
-        type: |-
-          {
-                  [key: string]: string | JSX.Element;
-              }
-  - name: style
-    uid: '@fluentui/style-utilities!IIconSubset#style:member'
-    package: '@fluentui/style-utilities!'
+        type:
+          - |-
+            {
+                    [key: string]: string | JSX.Element;
+                }
+  - uid: '@fluentui/style-utilities!IIconSubset#style:member'
+    name: style
     fullName: style
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'style?: IRawStyle;'
       return:
-        type: '<xref uid="@fluentui/merge-styles!IRawStyle:interface" />'
+        type:
+          - '@fluentui/merge-styles!IRawStyle:interface'

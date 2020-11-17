@@ -1,91 +1,95 @@
-### YamlMime:TSType
-name: IShimmerGapProps
-uid: 'office-ui-fabric-react!IShimmerGapProps:interface'
-package: office-ui-fabric-react!
-fullName: IShimmerGapProps
-summary: ShimmerGap component props.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: borderStyle
-    uid: 'office-ui-fabric-react!IShimmerGapProps#borderStyle:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-ui-fabric-react!IShimmerGapProps:interface'
+    summary: ShimmerGap component props.
+    name: IShimmerGapProps
+    fullName: IShimmerGapProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'React.AllHTMLAttributes<HTMLElement> '
     package: office-ui-fabric-react!
-    fullName: borderStyle
+    children:
+      - 'office-ui-fabric-react!IShimmerGapProps#borderStyle:member'
+      - 'office-ui-fabric-react!IShimmerGapProps#componentRef:member'
+      - 'office-ui-fabric-react!IShimmerGapProps#height:member'
+      - 'office-ui-fabric-react!IShimmerGapProps#styles:member'
+      - 'office-ui-fabric-react!IShimmerGapProps#theme:member'
+      - 'office-ui-fabric-react!IShimmerGapProps#width:member'
+  - uid: 'office-ui-fabric-react!IShimmerGapProps#borderStyle:member'
     summary: Use to set custom styling of the shimmerGap borders.
-    remarks: ''
-    isPreview: false
-    isDeprecated: true
-    customDeprecatedMessage: Use `styles` prop to leverage mergeStyle API.
+    deprecated:
+      content: Use `styles` prop to leverage mergeStyle API.
+    name: borderStyle
+    fullName: borderStyle
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'borderStyle?: IRawStyle;'
       return:
-        type: '<xref uid="@fluentui/merge-styles!IRawStyle:interface" />'
-  - name: componentRef
-    uid: 'office-ui-fabric-react!IShimmerGapProps#componentRef:member'
-    package: office-ui-fabric-react!
-    fullName: componentRef
+        type:
+          - '@fluentui/merge-styles!IRawStyle:interface'
+  - uid: 'office-ui-fabric-react!IShimmerGapProps#componentRef:member'
     summary: >-
-      Optional callback to access the IShimmerGap interface. Use this instead of
-      ref for accessing the public methods and properties of the component.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Optional callback to access the IShimmerGap interface. Use this instead of ref for accessing the public methods
+      and properties of the component.
+    name: componentRef
+    fullName: componentRef
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'componentRef?: IRefObject<IShimmerGap>;'
       return:
-        type: IRefObject&lt;IShimmerGap&gt;
-  - name: height
-    uid: 'office-ui-fabric-react!IShimmerGapProps#height:member'
-    package: office-ui-fabric-react!
-    fullName: height
+        type:
+          - IRefObject<IShimmerGap>
+  - uid: 'office-ui-fabric-react!IShimmerGapProps#height:member'
     summary: Sets the height of the gap.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: height
+    fullName: height
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'height?: number;'
       return:
-        type: number
-  - name: styles
-    uid: 'office-ui-fabric-react!IShimmerGapProps#styles:member'
-    package: office-ui-fabric-react!
+        type:
+          - number
+  - uid: 'office-ui-fabric-react!IShimmerGapProps#styles:member'
+    summary: Call to provide customized styling that will layer on top of the variant rules.
+    name: styles
     fullName: styles
-    summary: >-
-      Call to provide customized styling that will layer on top of the variant
-      rules.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        styles?: IStyleFunctionOrObject<IShimmerGapStyleProps,
-        IShimmerGapStyles>;
+      content: 'styles?: IStyleFunctionOrObject<IShimmerGapStyleProps, IShimmerGapStyles>;'
       return:
-        type: 'IStyleFunctionOrObject&lt;IShimmerGapStyleProps, IShimmerGapStyles&gt;'
-  - name: theme
-    uid: 'office-ui-fabric-react!IShimmerGapProps#theme:member'
-    package: office-ui-fabric-react!
-    fullName: theme
+        type:
+          - 'IStyleFunctionOrObject<IShimmerGapStyleProps, IShimmerGapStyles>'
+  - uid: 'office-ui-fabric-react!IShimmerGapProps#theme:member'
     summary: Theme provided by High-Order Component.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'theme?: ITheme;'
       return:
-        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
-  - name: width
-    uid: 'office-ui-fabric-react!IShimmerGapProps#width:member'
-    package: office-ui-fabric-react!
-    fullName: width
+        type:
+          - '@fluentui/theme!ITheme:interface'
+  - uid: 'office-ui-fabric-react!IShimmerGapProps#width:member'
     summary: Sets width value of the gap.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: width
+    fullName: width
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'width?: number | string;'
       return:
-        type: number | string
-extends: 'React.AllHTMLAttributes&lt;HTMLElement&gt; '
+        type:
+          - number | string

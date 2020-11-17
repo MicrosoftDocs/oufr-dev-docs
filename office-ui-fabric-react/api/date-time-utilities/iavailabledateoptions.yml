@@ -1,48 +1,51 @@
-### YamlMime:TSType
-name: IAvailableDateOptions
-uid: '@fluentui/date-time-utilities!IAvailableDateOptions:interface'
-package: '@fluentui/date-time-utilities!'
-fullName: IAvailableDateOptions
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: direction
-    uid: '@fluentui/date-time-utilities!IAvailableDateOptions#direction:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/date-time-utilities!IAvailableDateOptions:interface'
+    name: IAvailableDateOptions
+    fullName: IAvailableDateOptions
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - '@fluentui/date-time-utilities!IRestrictedDatesOptions:interface'
     package: '@fluentui/date-time-utilities!'
-    fullName: direction
+    children:
+      - '@fluentui/date-time-utilities!IAvailableDateOptions#direction:member'
+      - '@fluentui/date-time-utilities!IAvailableDateOptions#initialDate:member'
+      - '@fluentui/date-time-utilities!IAvailableDateOptions#targetDate:member'
+  - uid: '@fluentui/date-time-utilities!IAvailableDateOptions#direction:member'
     summary: Direction of search (`1` - search in future / `-1` search in past)
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: direction
+    fullName: direction
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'direction: number;'
       return:
-        type: number
-  - name: initialDate
-    uid: '@fluentui/date-time-utilities!IAvailableDateOptions#initialDate:member'
-    package: '@fluentui/date-time-utilities!'
-    fullName: initialDate
+        type:
+          - number
+  - uid: '@fluentui/date-time-utilities!IAvailableDateOptions#initialDate:member'
     summary: Date from which we start the search
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: initialDate
+    fullName: initialDate
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'initialDate: Date;'
       return:
-        type: Date
-  - name: targetDate
-    uid: '@fluentui/date-time-utilities!IAvailableDateOptions#targetDate:member'
-    package: '@fluentui/date-time-utilities!'
-    fullName: targetDate
+        type:
+          - Date
+  - uid: '@fluentui/date-time-utilities!IAvailableDateOptions#targetDate:member'
     summary: Ideal available date
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: targetDate
+    fullName: targetDate
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'targetDate: Date;'
       return:
-        type: Date
-extends: '<xref uid="@fluentui/date-time-utilities!IRestrictedDatesOptions:interface" />'
+        type:
+          - Date

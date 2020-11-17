@@ -1,52 +1,52 @@
-### YamlMime:TSType
-name: IColor
-uid: '@fluentui/react-internal!IColor:interface'
-package: '@fluentui/react-internal!'
-fullName: IColor
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: hex
-    uid: '@fluentui/react-internal!IColor#hex:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-internal!IColor:interface'
+    name: IColor
+    fullName: IColor
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - IRGB
+      - 'IHSV '
     package: '@fluentui/react-internal!'
+    children:
+      - '@fluentui/react-internal!IColor#hex:member'
+      - '@fluentui/react-internal!IColor#str:member'
+      - '@fluentui/react-internal!IColor#t:member'
+  - uid: '@fluentui/react-internal!IColor#hex:member'
+    summary: 'Hex string for the color (excluding alpha component), \*not\* prefixed with \#.'
+    name: hex
     fullName: hex
-    summary: >-
-      Hex string for the color (excluding alpha component), \*not\* prefixed
-      with \#.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'hex: string;'
       return:
-        type: string
-  - name: str
-    uid: '@fluentui/react-internal!IColor#str:member'
-    package: '@fluentui/react-internal!'
-    fullName: str
+        type:
+          - string
+  - uid: '@fluentui/react-internal!IColor#str:member'
     summary: 'CSS color string. If a hex value, it must be prefixed with \#.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: str
+    fullName: str
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'str: string;'
       return:
-        type: string
-  - name: t
-    uid: '@fluentui/react-internal!IColor#t:member'
-    package: '@fluentui/react-internal!'
+        type:
+          - string
+  - uid: '@fluentui/react-internal!IColor#t:member'
+    summary: 'Transparency value, range 0 (opaque) to 100 (transparent). Usually assumed to be 0 if not specified.'
+    name: t
     fullName: t
-    summary: >-
-      Transparency value, range 0 (opaque) to 100 (transparent). Usually assumed
-      to be 0 if not specified.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 't?: number;'
       return:
-        type: number
-extends: IRGB
+        type:
+          - number

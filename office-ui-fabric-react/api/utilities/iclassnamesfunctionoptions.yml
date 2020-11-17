@@ -1,51 +1,49 @@
-### YamlMime:TSType
-name: IClassNamesFunctionOptions
-uid: '@fluentui/utilities!IClassNamesFunctionOptions:interface'
-package: '@fluentui/utilities!'
-fullName: IClassNamesFunctionOptions
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: cacheSize
-    uid: '@fluentui/utilities!IClassNamesFunctionOptions#cacheSize:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/utilities!IClassNamesFunctionOptions:interface'
+    name: IClassNamesFunctionOptions
+    fullName: IClassNamesFunctionOptions
+    langs:
+      - typeScript
+    type: interface
     package: '@fluentui/utilities!'
-    fullName: cacheSize
+    children:
+      - '@fluentui/utilities!IClassNamesFunctionOptions#cacheSize:member'
+      - '@fluentui/utilities!IClassNamesFunctionOptions#disableCaching:member'
+      - '@fluentui/utilities!IClassNamesFunctionOptions#useStaticStyles:member'
+  - uid: '@fluentui/utilities!IClassNamesFunctionOptions#cacheSize:member'
     summary: Size of the cache. It overwrites default cache size when defined.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: cacheSize
+    fullName: cacheSize
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'cacheSize?: number;'
       return:
-        type: number
-  - name: disableCaching
-    uid: '@fluentui/utilities!IClassNamesFunctionOptions#disableCaching:member'
-    package: '@fluentui/utilities!'
+        type:
+          - number
+  - uid: '@fluentui/utilities!IClassNamesFunctionOptions#disableCaching:member'
+    summary: Disables class caching for scenarios where styleProp parts mutate frequently.
+    name: disableCaching
     fullName: disableCaching
-    summary: >-
-      Disables class caching for scenarios where styleProp parts mutate
-      frequently.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'disableCaching?: boolean;'
       return:
-        type: boolean
-  - name: useStaticStyles
-    uid: '@fluentui/utilities!IClassNamesFunctionOptions#useStaticStyles:member'
-    package: '@fluentui/utilities!'
+        type:
+          - boolean
+  - uid: '@fluentui/utilities!IClassNamesFunctionOptions#useStaticStyles:member'
+    summary: Set to true if component base styles are implemented in scss instead of css-in-js.
+    name: useStaticStyles
     fullName: useStaticStyles
-    summary: >-
-      Set to true if component base styles are implemented in scss instead of
-      css-in-js.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'useStaticStyles?: boolean;'
       return:
-        type: boolean
+        type:
+          - boolean

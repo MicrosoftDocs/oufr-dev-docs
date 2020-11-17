@@ -1,96 +1,97 @@
-### YamlMime:TSType
-name: TooltipHostBase
-uid: '@fluentui/react-internal!TooltipHostBase:class'
-package: '@fluentui/react-internal!'
-fullName: TooltipHostBase
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: class
-constructors:
-  - name: (constructor)(props)
-    uid: '@fluentui/react-internal!TooltipHostBase:constructor(1)'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-internal!TooltipHostBase:class'
+    name: TooltipHostBase
+    fullName: TooltipHostBase
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'React.Component<ITooltipHostProps, ITooltipHostState> '
+    implements:
+      - 'ITooltipHost '
     package: '@fluentui/react-internal!'
-    fullName: (constructor)(props)
+    children:
+      - '@fluentui/react-internal!TooltipHostBase:constructor(1)'
+      - '@fluentui/react-internal!TooltipHostBase#componentWillUnmount:member(1)'
+      - '@fluentui/react-internal!TooltipHostBase.defaultProps:member'
+      - '@fluentui/react-internal!TooltipHostBase#dismiss:member'
+      - '@fluentui/react-internal!TooltipHostBase#render:member(1)'
+      - '@fluentui/react-internal!TooltipHostBase#show:member'
+  - uid: '@fluentui/react-internal!TooltipHostBase:constructor(1)'
     summary: Constructs a new instance of the `TooltipHostBase` class
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: (constructor)(props)
+    fullName: (constructor)(props)
+    langs:
+      - typeScript
+    type: constructor
     syntax:
       content: 'constructor(props: ITooltipHostProps);'
       parameters:
         - id: props
           description: ''
-          type: ITooltipHostProps
-properties:
-  - name: defaultProps
-    uid: '@fluentui/react-internal!TooltipHostBase.defaultProps:member'
-    package: '@fluentui/react-internal!'
+          type:
+            - ITooltipHostProps
+  - uid: '@fluentui/react-internal!TooltipHostBase#componentWillUnmount:member(1)'
+    name: componentWillUnmount()
+    fullName: componentWillUnmount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'componentWillUnmount(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: '@fluentui/react-internal!TooltipHostBase.defaultProps:member'
+    name: defaultProps
     fullName: defaultProps
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: |-
         static defaultProps: {
                 delay: TooltipDelay;
             };
       return:
-        type: |-
-          {
-                  delay: TooltipDelay;
-              }
-  - name: dismiss
-    uid: '@fluentui/react-internal!TooltipHostBase#dismiss:member'
-    package: '@fluentui/react-internal!'
+        type:
+          - |-
+            {
+                    delay: TooltipDelay;
+                }
+  - uid: '@fluentui/react-internal!TooltipHostBase#dismiss:member'
+    name: dismiss
     fullName: dismiss
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'dismiss: () => void;'
       return:
-        type: () =&gt; void
-  - name: show
-    uid: '@fluentui/react-internal!TooltipHostBase#show:member'
-    package: '@fluentui/react-internal!'
-    fullName: show
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'show: () => void;'
-      return:
-        type: () =&gt; void
-methods:
-  - name: componentWillUnmount()
-    uid: '@fluentui/react-internal!TooltipHostBase#componentWillUnmount:member(1)'
-    package: '@fluentui/react-internal!'
-    fullName: componentWillUnmount()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'componentWillUnmount(): void;'
-      return:
-        type: void
-        description: ''
-  - name: render()
-    uid: '@fluentui/react-internal!TooltipHostBase#render:member(1)'
-    package: '@fluentui/react-internal!'
+        type:
+          - () => void
+  - uid: '@fluentui/react-internal!TooltipHostBase#render:member(1)'
+    name: render()
     fullName: render()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'render(): JSX.Element;'
       return:
-        type: JSX.Element
+        type:
+          - JSX.Element
         description: ''
-extends: 'React.Component&lt;ITooltipHostProps, ITooltipHostState&gt; '
+  - uid: '@fluentui/react-internal!TooltipHostBase#show:member'
+    name: show
+    fullName: show
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'show: () => void;'
+      return:
+        type:
+          - () => void

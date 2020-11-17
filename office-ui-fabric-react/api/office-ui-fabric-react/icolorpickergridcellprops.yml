@@ -1,290 +1,293 @@
-### YamlMime:TSType
-name: IColorPickerGridCellProps
-uid: 'office-ui-fabric-react!IColorPickerGridCellProps:interface'
-package: office-ui-fabric-react!
-fullName: IColorPickerGridCellProps
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: borderWidth
-    uid: 'office-ui-fabric-react!IColorPickerGridCellProps#borderWidth:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-ui-fabric-react!IColorPickerGridCellProps:interface'
+    name: IColorPickerGridCellProps
+    fullName: IColorPickerGridCellProps
+    langs:
+      - typeScript
+    type: interface
     package: office-ui-fabric-react!
-    fullName: borderWidth
+    children:
+      - 'office-ui-fabric-react!IColorPickerGridCellProps#borderWidth:member'
+      - 'office-ui-fabric-react!IColorPickerGridCellProps#circle:member'
+      - 'office-ui-fabric-react!IColorPickerGridCellProps#color:member'
+      - 'office-ui-fabric-react!IColorPickerGridCellProps#disabled:member'
+      - 'office-ui-fabric-react!IColorPickerGridCellProps#height:member'
+      - 'office-ui-fabric-react!IColorPickerGridCellProps#id:member'
+      - 'office-ui-fabric-react!IColorPickerGridCellProps#idPrefix:member'
+      - 'office-ui-fabric-react!IColorPickerGridCellProps#index:member'
+      - 'office-ui-fabric-react!IColorPickerGridCellProps#item:member'
+      - 'office-ui-fabric-react!IColorPickerGridCellProps#label:member'
+      - 'office-ui-fabric-react!IColorPickerGridCellProps#onClick:member'
+      - 'office-ui-fabric-react!IColorPickerGridCellProps#onFocus:member'
+      - 'office-ui-fabric-react!IColorPickerGridCellProps#onHover:member'
+      - 'office-ui-fabric-react!IColorPickerGridCellProps#onKeyDown:member'
+      - 'office-ui-fabric-react!IColorPickerGridCellProps#onMouseEnter:member'
+      - 'office-ui-fabric-react!IColorPickerGridCellProps#onMouseLeave:member'
+      - 'office-ui-fabric-react!IColorPickerGridCellProps#onMouseMove:member'
+      - 'office-ui-fabric-react!IColorPickerGridCellProps#onWheel:member'
+      - 'office-ui-fabric-react!IColorPickerGridCellProps#selected:member'
+      - 'office-ui-fabric-react!IColorPickerGridCellProps#styles:member'
+      - 'office-ui-fabric-react!IColorPickerGridCellProps#theme:member'
+      - 'office-ui-fabric-react!IColorPickerGridCellProps#width:member'
+  - uid: 'office-ui-fabric-react!IColorPickerGridCellProps#borderWidth:member'
     summary: 'Width of the border that indicates a selected/hovered cell, in pixels.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: borderWidth
+    fullName: borderWidth
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'borderWidth?: number;'
       return:
-        type: number
-  - name: circle
-    uid: 'office-ui-fabric-react!IColorPickerGridCellProps#circle:member'
-    package: office-ui-fabric-react!
+        type:
+          - number
+  - uid: 'office-ui-fabric-react!IColorPickerGridCellProps#circle:member'
+    summary: 'True if this cell should be rendered as a circle, false if it should be a square.  `true` (render as circle)'
+    name: circle
     fullName: circle
-    summary: >-
-      True if this cell should be rendered as a circle, false if it should be a
-      square.  `true` (render as circle)
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'circle?: boolean;'
       return:
-        type: boolean
-  - name: color
-    uid: 'office-ui-fabric-react!IColorPickerGridCellProps#color:member'
-    package: office-ui-fabric-react!
-    fullName: color
+        type:
+          - boolean
+  - uid: 'office-ui-fabric-react!IColorPickerGridCellProps#color:member'
     summary: The CSS-compatible string to describe the color
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'color?: string;'
       return:
-        type: string
-  - name: disabled
-    uid: 'office-ui-fabric-react!IColorPickerGridCellProps#disabled:member'
-    package: office-ui-fabric-react!
-    fullName: disabled
+        type:
+          - string
+  - uid: 'office-ui-fabric-react!IColorPickerGridCellProps#disabled:member'
     summary: Whether this cell should be disabled  false
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: disabled
+    fullName: disabled
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'disabled?: boolean;'
       return:
-        type: boolean
-  - name: height
-    uid: 'office-ui-fabric-react!IColorPickerGridCellProps#height:member'
-    package: office-ui-fabric-react!
-    fullName: height
+        type:
+          - boolean
+  - uid: 'office-ui-fabric-react!IColorPickerGridCellProps#height:member'
     summary: 'Height of the cell, in pixels'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: height
+    fullName: height
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'height?: number;'
       return:
-        type: number
-  - name: id
-    uid: 'office-ui-fabric-react!IColorPickerGridCellProps#id:member'
-    package: office-ui-fabric-react!
+        type:
+          - number
+  - uid: 'office-ui-fabric-react!IColorPickerGridCellProps#id:member'
+    summary: Used as a PREFIX for the cell's ID (the cell will not have this literal string as its ID).
+    deprecated:
+      content: Deprecated due to misleading name. Use `idPrefix` instead.
+    name: id
     fullName: id
-    summary: >-
-      Used as a PREFIX for the cell's ID (the cell will not have this literal
-      string as its ID).
-    remarks: ''
-    isPreview: false
-    isDeprecated: true
-    customDeprecatedMessage: Deprecated due to misleading name. Use `idPrefix` instead.
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'id?: string;'
       return:
-        type: string
-  - name: idPrefix
-    uid: 'office-ui-fabric-react!IColorPickerGridCellProps#idPrefix:member'
-    package: office-ui-fabric-react!
+        type:
+          - string
+  - uid: 'office-ui-fabric-react!IColorPickerGridCellProps#idPrefix:member'
+    summary: Prefix for this cell's ID. Will be required in a future version once `id` is removed.
+    name: idPrefix
     fullName: idPrefix
-    summary: >-
-      Prefix for this cell's ID. Will be required in a future version once `id`
-      is removed.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'idPrefix?: string;'
       return:
-        type: string
-  - name: index
-    uid: 'office-ui-fabric-react!IColorPickerGridCellProps#index:member'
-    package: office-ui-fabric-react!
-    fullName: index
+        type:
+          - string
+  - uid: 'office-ui-fabric-react!IColorPickerGridCellProps#index:member'
     summary: Index for this option
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: index
+    fullName: index
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'index?: number;'
       return:
-        type: number
-  - name: item
-    uid: 'office-ui-fabric-react!IColorPickerGridCellProps#item:member'
-    package: office-ui-fabric-react!
-    fullName: item
+        type:
+          - number
+  - uid: 'office-ui-fabric-react!IColorPickerGridCellProps#item:member'
     summary: Item to render
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: item
+    fullName: item
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'item: IColorCellProps;'
       return:
-        type: IColorCellProps
-  - name: label
-    uid: 'office-ui-fabric-react!IColorPickerGridCellProps#label:member'
-    package: office-ui-fabric-react!
-    fullName: label
+        type:
+          - IColorCellProps
+  - uid: 'office-ui-fabric-react!IColorPickerGridCellProps#label:member'
     summary: Tooltip and aria label for this item
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: label
+    fullName: label
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'label?: string;'
       return:
-        type: string
-  - name: onClick
-    uid: 'office-ui-fabric-react!IColorPickerGridCellProps#onClick:member'
-    package: office-ui-fabric-react!
-    fullName: onClick
+        type:
+          - string
+  - uid: 'office-ui-fabric-react!IColorPickerGridCellProps#onClick:member'
     summary: Handler for when a color cell is clicked.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onClick
+    fullName: onClick
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onClick?: (item: IColorCellProps) => void;'
       return:
-        type: '(item: IColorCellProps) =&gt; void'
-  - name: onFocus
-    uid: 'office-ui-fabric-react!IColorPickerGridCellProps#onFocus:member'
-    package: office-ui-fabric-react!
+        type:
+          - '(item: IColorCellProps) => void'
+  - uid: 'office-ui-fabric-react!IColorPickerGridCellProps#onFocus:member'
+    name: onFocus
     fullName: onFocus
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onFocus?: (item: IColorCellProps) => void;'
       return:
-        type: '(item: IColorCellProps) =&gt; void'
-  - name: onHover
-    uid: 'office-ui-fabric-react!IColorPickerGridCellProps#onHover:member'
-    package: office-ui-fabric-react!
+        type:
+          - '(item: IColorCellProps) => void'
+  - uid: 'office-ui-fabric-react!IColorPickerGridCellProps#onHover:member'
+    name: onHover
     fullName: onHover
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onHover?: (item?: IColorCellProps) => void;'
       return:
-        type: '(item?: IColorCellProps) =&gt; void'
-  - name: onKeyDown
-    uid: 'office-ui-fabric-react!IColorPickerGridCellProps#onKeyDown:member'
-    package: office-ui-fabric-react!
+        type:
+          - '(item?: IColorCellProps) => void'
+  - uid: 'office-ui-fabric-react!IColorPickerGridCellProps#onKeyDown:member'
+    name: onKeyDown
     fullName: onKeyDown
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onKeyDown?: (ev: React.KeyboardEvent<HTMLButtonElement>) => void;'
       return:
-        type: '(ev: React.KeyboardEvent&lt;HTMLButtonElement&gt;) =&gt; void'
-  - name: onMouseEnter
-    uid: 'office-ui-fabric-react!IColorPickerGridCellProps#onMouseEnter:member'
-    package: office-ui-fabric-react!
+        type:
+          - '(ev: React.KeyboardEvent<HTMLButtonElement>) => void'
+  - uid: 'office-ui-fabric-react!IColorPickerGridCellProps#onMouseEnter:member'
+    summary: 'Mouse enter handler. Returns true if the event should be processed, false otherwise.'
+    name: onMouseEnter
     fullName: onMouseEnter
-    summary: >-
-      Mouse enter handler. Returns true if the event should be processed, false
-      otherwise.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onMouseEnter?: (ev: React.MouseEvent<HTMLButtonElement>) => boolean;'
       return:
-        type: '(ev: React.MouseEvent&lt;HTMLButtonElement&gt;) =&gt; boolean'
-  - name: onMouseLeave
-    uid: 'office-ui-fabric-react!IColorPickerGridCellProps#onMouseLeave:member'
-    package: office-ui-fabric-react!
+        type:
+          - '(ev: React.MouseEvent<HTMLButtonElement>) => boolean'
+  - uid: 'office-ui-fabric-react!IColorPickerGridCellProps#onMouseLeave:member'
+    name: onMouseLeave
     fullName: onMouseLeave
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onMouseLeave?: (ev: React.MouseEvent<HTMLButtonElement>) => void;'
       return:
-        type: '(ev: React.MouseEvent&lt;HTMLButtonElement&gt;) =&gt; void'
-  - name: onMouseMove
-    uid: 'office-ui-fabric-react!IColorPickerGridCellProps#onMouseMove:member'
-    package: office-ui-fabric-react!
+        type:
+          - '(ev: React.MouseEvent<HTMLButtonElement>) => void'
+  - uid: 'office-ui-fabric-react!IColorPickerGridCellProps#onMouseMove:member'
+    summary: 'Mouse move handler. Returns true if the event should be processed, false otherwise.'
+    name: onMouseMove
     fullName: onMouseMove
-    summary: >-
-      Mouse move handler. Returns true if the event should be processed, false
-      otherwise.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onMouseMove?: (ev: React.MouseEvent<HTMLButtonElement>) => boolean;'
       return:
-        type: '(ev: React.MouseEvent&lt;HTMLButtonElement&gt;) =&gt; boolean'
-  - name: onWheel
-    uid: 'office-ui-fabric-react!IColorPickerGridCellProps#onWheel:member'
-    package: office-ui-fabric-react!
+        type:
+          - '(ev: React.MouseEvent<HTMLButtonElement>) => boolean'
+  - uid: 'office-ui-fabric-react!IColorPickerGridCellProps#onWheel:member'
+    name: onWheel
     fullName: onWheel
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onWheel?: (ev: React.MouseEvent<HTMLButtonElement>) => void;'
       return:
-        type: '(ev: React.MouseEvent&lt;HTMLButtonElement&gt;) =&gt; void'
-  - name: selected
-    uid: 'office-ui-fabric-react!IColorPickerGridCellProps#selected:member'
-    package: office-ui-fabric-react!
-    fullName: selected
+        type:
+          - '(ev: React.MouseEvent<HTMLButtonElement>) => void'
+  - uid: 'office-ui-fabric-react!IColorPickerGridCellProps#selected:member'
     summary: Whether this cell is currently selected
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: selected
+    fullName: selected
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'selected: boolean;'
       return:
-        type: boolean
-  - name: styles
-    uid: 'office-ui-fabric-react!IColorPickerGridCellProps#styles:member'
-    package: office-ui-fabric-react!
-    fullName: styles
+        type:
+          - boolean
+  - uid: 'office-ui-fabric-react!IColorPickerGridCellProps#styles:member'
     summary: Custom styles for the component.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: styles
+    fullName: styles
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        styles?: IStyleFunctionOrObject<IColorPickerGridCellStyleProps,
-        IColorPickerGridCellStyles>;
+      content: 'styles?: IStyleFunctionOrObject<IColorPickerGridCellStyleProps, IColorPickerGridCellStyles>;'
       return:
-        type: >-
-          IStyleFunctionOrObject&lt;IColorPickerGridCellStyleProps,
-          IColorPickerGridCellStyles&gt;
-  - name: theme
-    uid: 'office-ui-fabric-react!IColorPickerGridCellProps#theme:member'
-    package: office-ui-fabric-react!
-    fullName: theme
+        type:
+          - 'IStyleFunctionOrObject<IColorPickerGridCellStyleProps, IColorPickerGridCellStyles>'
+  - uid: 'office-ui-fabric-react!IColorPickerGridCellProps#theme:member'
     summary: The theme object to use for styling.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'theme?: ITheme;'
       return:
-        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
-  - name: width
-    uid: 'office-ui-fabric-react!IColorPickerGridCellProps#width:member'
-    package: office-ui-fabric-react!
-    fullName: width
+        type:
+          - '@fluentui/theme!ITheme:interface'
+  - uid: 'office-ui-fabric-react!IColorPickerGridCellProps#width:member'
     summary: 'Width of the cell, in pixels'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: width
+    fullName: width
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'width?: number;'
       return:
-        type: number
+        type:
+          - number

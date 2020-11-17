@@ -1,162 +1,159 @@
-### YamlMime:TSType
-name: IProgressIndicatorProps
-uid: 'office-ui-fabric-react!IProgressIndicatorProps:interface'
-package: office-ui-fabric-react!
-fullName: IProgressIndicatorProps
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: ariaValueText
-    uid: 'office-ui-fabric-react!IProgressIndicatorProps#ariaValueText:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-ui-fabric-react!IProgressIndicatorProps:interface'
+    name: IProgressIndicatorProps
+    fullName: IProgressIndicatorProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'React.ClassAttributes<ProgressIndicatorBase> '
     package: office-ui-fabric-react!
+    children:
+      - 'office-ui-fabric-react!IProgressIndicatorProps#ariaValueText:member'
+      - 'office-ui-fabric-react!IProgressIndicatorProps#barHeight:member'
+      - 'office-ui-fabric-react!IProgressIndicatorProps#className:member'
+      - 'office-ui-fabric-react!IProgressIndicatorProps#description:member'
+      - 'office-ui-fabric-react!IProgressIndicatorProps#label:member'
+      - 'office-ui-fabric-react!IProgressIndicatorProps#onRenderProgress:member'
+      - 'office-ui-fabric-react!IProgressIndicatorProps#percentComplete:member'
+      - 'office-ui-fabric-react!IProgressIndicatorProps#progressHidden:member'
+      - 'office-ui-fabric-react!IProgressIndicatorProps#styles:member'
+      - 'office-ui-fabric-react!IProgressIndicatorProps#theme:member'
+      - 'office-ui-fabric-react!IProgressIndicatorProps#title:member'
+  - uid: 'office-ui-fabric-react!IProgressIndicatorProps#ariaValueText:member'
+    summary: 'Text alternative of the progress status, used by screen readers for reading the value of the progress.'
+    name: ariaValueText
     fullName: ariaValueText
-    summary: >-
-      Text alternative of the progress status, used by screen readers for
-      reading the value of the progress.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'ariaValueText?: string;'
       return:
-        type: string
-  - name: barHeight
-    uid: 'office-ui-fabric-react!IProgressIndicatorProps#barHeight:member'
-    package: office-ui-fabric-react!
-    fullName: barHeight
+        type:
+          - string
+  - uid: 'office-ui-fabric-react!IProgressIndicatorProps#barHeight:member'
     summary: Height of the ProgressIndicator
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: barHeight
+    fullName: barHeight
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'barHeight?: number;'
       return:
-        type: number
-  - name: className
-    uid: 'office-ui-fabric-react!IProgressIndicatorProps#className:member'
-    package: office-ui-fabric-react!
-    fullName: className
+        type:
+          - number
+  - uid: 'office-ui-fabric-react!IProgressIndicatorProps#className:member'
     summary: Additional css class to apply to the ProgressIndicator
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: className
+    fullName: className
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'className?: string;'
       return:
-        type: string
-  - name: description
-    uid: 'office-ui-fabric-react!IProgressIndicatorProps#description:member'
-    package: office-ui-fabric-react!
+        type:
+          - string
+  - uid: 'office-ui-fabric-react!IProgressIndicatorProps#description:member'
+    summary: Text describing or supplementing the operation. May be a string or React virtual elements.
+    name: description
     fullName: description
-    summary: >-
-      Text describing or supplementing the operation. May be a string or React
-      virtual elements.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'description?: React.ReactNode;'
       return:
-        type: React.ReactNode
-  - name: label
-    uid: 'office-ui-fabric-react!IProgressIndicatorProps#label:member'
-    package: office-ui-fabric-react!
+        type:
+          - React.ReactNode
+  - uid: 'office-ui-fabric-react!IProgressIndicatorProps#label:member'
+    summary: Label to display above the control. May be a string or React virtual elements.
+    name: label
     fullName: label
-    summary: >-
-      Label to display above the control. May be a string or React virtual
-      elements.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'label?: React.ReactNode;'
       return:
-        type: React.ReactNode
-  - name: onRenderProgress
-    uid: 'office-ui-fabric-react!IProgressIndicatorProps#onRenderProgress:member'
-    package: office-ui-fabric-react!
-    fullName: onRenderProgress
+        type:
+          - React.ReactNode
+  - uid: 'office-ui-fabric-react!IProgressIndicatorProps#onRenderProgress:member'
     summary: A render override for the progress track.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onRenderProgress
+    fullName: onRenderProgress
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onRenderProgress?: IRenderFunction<IProgressIndicatorProps>;'
       return:
-        type: IRenderFunction&lt;IProgressIndicatorProps&gt;
-  - name: percentComplete
-    uid: 'office-ui-fabric-react!IProgressIndicatorProps#percentComplete:member'
-    package: office-ui-fabric-react!
-    fullName: percentComplete
+        type:
+          - IRenderFunction<IProgressIndicatorProps>
+  - uid: 'office-ui-fabric-react!IProgressIndicatorProps#percentComplete:member'
     summary: >-
-      Percentage of the operation's completeness, numerically between 0 and 1.
-      If this is not set, the indeterminate progress animation will be shown
-      instead.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Percentage of the operation's completeness, numerically between 0 and 1. If this is not set, the indeterminate
+      progress animation will be shown instead.
+    name: percentComplete
+    fullName: percentComplete
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'percentComplete?: number;'
       return:
-        type: number
-  - name: progressHidden
-    uid: 'office-ui-fabric-react!IProgressIndicatorProps#progressHidden:member'
-    package: office-ui-fabric-react!
-    fullName: progressHidden
+        type:
+          - number
+  - uid: 'office-ui-fabric-react!IProgressIndicatorProps#progressHidden:member'
     summary: Whether or not to hide the progress state.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: progressHidden
+    fullName: progressHidden
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'progressHidden?: boolean;'
       return:
-        type: boolean
-  - name: styles
-    uid: 'office-ui-fabric-react!IProgressIndicatorProps#styles:member'
-    package: office-ui-fabric-react!
+        type:
+          - boolean
+  - uid: 'office-ui-fabric-react!IProgressIndicatorProps#styles:member'
+    summary: Call to provide customized styling that will layer on top of the variant rules.
+    name: styles
     fullName: styles
-    summary: >-
-      Call to provide customized styling that will layer on top of the variant
-      rules.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        styles?: IStyleFunctionOrObject<IProgressIndicatorStyleProps,
-        IProgressIndicatorStyles>;
+      content: 'styles?: IStyleFunctionOrObject<IProgressIndicatorStyleProps, IProgressIndicatorStyles>;'
       return:
-        type: >-
-          IStyleFunctionOrObject&lt;IProgressIndicatorStyleProps,
-          IProgressIndicatorStyles&gt;
-  - name: theme
-    uid: 'office-ui-fabric-react!IProgressIndicatorProps#theme:member'
-    package: office-ui-fabric-react!
-    fullName: theme
+        type:
+          - 'IStyleFunctionOrObject<IProgressIndicatorStyleProps, IProgressIndicatorStyles>'
+  - uid: 'office-ui-fabric-react!IProgressIndicatorProps#theme:member'
     summary: Theme provided by High-Order Component.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'theme?: ITheme;'
       return:
-        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
-  - name: title
-    uid: 'office-ui-fabric-react!IProgressIndicatorProps#title:member'
-    package: office-ui-fabric-react!
+        type:
+          - '@fluentui/theme!ITheme:interface'
+  - uid: 'office-ui-fabric-react!IProgressIndicatorProps#title:member'
+    summary: 'Deprecated at v0.43.0, to be removed at &gt;<!-- -->= v0.53.0. Use `label` instead.'
+    deprecated:
+      content: Use `label` instead.
+    name: title
     fullName: title
-    summary: >-
-      Deprecated at v0.43.0, to be removed at &gt;<!-- -->= v0.53.0. Use `label`
-      instead.
-    remarks: ''
-    isPreview: false
-    isDeprecated: true
-    customDeprecatedMessage: Use `label` instead.
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'title?: string;'
       return:
-        type: string
-extends: 'React.ClassAttributes&lt;ProgressIndicatorBase&gt; '
+        type:
+          - string

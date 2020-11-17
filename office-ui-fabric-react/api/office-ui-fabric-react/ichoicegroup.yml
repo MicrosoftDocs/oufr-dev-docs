@@ -1,37 +1,36 @@
-### YamlMime:TSType
-name: IChoiceGroup
-uid: 'office-ui-fabric-react!IChoiceGroup:interface'
-package: office-ui-fabric-react!
-fullName: IChoiceGroup
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: checkedOption
-    uid: 'office-ui-fabric-react!IChoiceGroup#checkedOption:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-ui-fabric-react!IChoiceGroup:interface'
+    name: IChoiceGroup
+    fullName: IChoiceGroup
+    langs:
+      - typeScript
+    type: interface
     package: office-ui-fabric-react!
-    fullName: checkedOption
+    children:
+      - 'office-ui-fabric-react!IChoiceGroup#checkedOption:member'
+      - 'office-ui-fabric-react!IChoiceGroup#focus:member'
+  - uid: 'office-ui-fabric-react!IChoiceGroup#checkedOption:member'
     summary: Gets the current checked option.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: checkedOption
+    fullName: checkedOption
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'checkedOption: IChoiceGroupOption | undefined;'
       return:
-        type: IChoiceGroupOption | undefined
-  - name: focus
-    uid: 'office-ui-fabric-react!IChoiceGroup#focus:member'
-    package: office-ui-fabric-react!
+        type:
+          - IChoiceGroupOption | undefined
+  - uid: 'office-ui-fabric-react!IChoiceGroup#focus:member'
+    summary: Sets focus to the checked option or the first enabled option in the ChoiceGroup.
+    name: focus
     fullName: focus
-    summary: >-
-      Sets focus to the checked option or the first enabled option in the
-      ChoiceGroup.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'focus: () => void;'
       return:
-        type: () =&gt; void
+        type:
+          - () => void

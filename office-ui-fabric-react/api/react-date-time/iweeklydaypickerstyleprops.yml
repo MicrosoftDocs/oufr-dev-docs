@@ -1,36 +1,38 @@
-### YamlMime:TSType
-name: IWeeklyDayPickerStyleProps
-uid: '@fluentui/react-date-time!IWeeklyDayPickerStyleProps:interface'
-package: '@fluentui/react-date-time!'
-fullName: IWeeklyDayPickerStyleProps
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: className
-    uid: '@fluentui/react-date-time!IWeeklyDayPickerStyleProps#className:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-date-time!IWeeklyDayPickerStyleProps:interface'
+    name: IWeeklyDayPickerStyleProps
+    fullName: IWeeklyDayPickerStyleProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - '@fluentui/react-date-time!ICalendarDayGridStyleProps:interface'
     package: '@fluentui/react-date-time!'
-    fullName: className
+    children:
+      - '@fluentui/react-date-time!IWeeklyDayPickerStyleProps#className:member'
+      - '@fluentui/react-date-time!IWeeklyDayPickerStyleProps#theme:member'
+  - uid: '@fluentui/react-date-time!IWeeklyDayPickerStyleProps#className:member'
     summary: Accept custom classNames
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: className
+    fullName: className
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'className?: string;'
       return:
-        type: string
-  - name: theme
-    uid: '@fluentui/react-date-time!IWeeklyDayPickerStyleProps#theme:member'
-    package: '@fluentui/react-date-time!'
-    fullName: theme
+        type:
+          - string
+  - uid: '@fluentui/react-date-time!IWeeklyDayPickerStyleProps#theme:member'
     summary: Theme provided by High-Order Component.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'theme: ITheme;'
       return:
-        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
-extends: '<xref uid="@fluentui/react-date-time!ICalendarDayGridStyleProps:interface" />'
+        type:
+          - '@fluentui/theme!ITheme:interface'

@@ -1,75 +1,75 @@
-### YamlMime:TSType
-name: IComboBoxState
-uid: '@fluentui/react!IComboBoxState:interface'
-package: '@fluentui/react!'
-fullName: IComboBoxState
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: currentPendingValue
-    uid: '@fluentui/react!IComboBoxState#currentPendingValue:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react!IComboBoxState:interface'
+    name: IComboBoxState
+    fullName: IComboBoxState
+    langs:
+      - typeScript
+    type: interface
     package: '@fluentui/react!'
-    fullName: currentPendingValue
+    children:
+      - '@fluentui/react!IComboBoxState#currentPendingValue:member'
+      - '@fluentui/react!IComboBoxState#currentPendingValueValidIndex:member'
+      - '@fluentui/react!IComboBoxState#currentPendingValueValidIndexOnHover:member'
+      - '@fluentui/react!IComboBoxState#focusState:member'
+      - '@fluentui/react!IComboBoxState#isOpen:member'
+  - uid: '@fluentui/react!IComboBoxState#currentPendingValue:member'
     summary: 'When taking input, this will store the actual text that is being entered'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: currentPendingValue
+    fullName: currentPendingValue
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'currentPendingValue?: string;'
       return:
-        type: string
-  - name: currentPendingValueValidIndex
-    uid: '@fluentui/react!IComboBoxState#currentPendingValueValidIndex:member'
-    package: '@fluentui/react!'
+        type:
+          - string
+  - uid: '@fluentui/react!IComboBoxState#currentPendingValueValidIndex:member'
+    summary: 'When taking input, this will store the index that the options input matches (-1 if no input or match)'
+    name: currentPendingValueValidIndex
     fullName: currentPendingValueValidIndex
-    summary: >-
-      When taking input, this will store the index that the options input
-      matches (-1 if no input or match)
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'currentPendingValueValidIndex: number;'
       return:
-        type: number
-  - name: currentPendingValueValidIndexOnHover
-    uid: '@fluentui/react!IComboBoxState#currentPendingValueValidIndexOnHover:member'
-    package: '@fluentui/react!'
+        type:
+          - number
+  - uid: '@fluentui/react!IComboBoxState#currentPendingValueValidIndexOnHover:member'
+    summary: Stores the hovered over value in the dropdown (used for styling the options without updating the input)
+    name: currentPendingValueValidIndexOnHover
     fullName: currentPendingValueValidIndexOnHover
-    summary: >-
-      Stores the hovered over value in the dropdown (used for styling the
-      options without updating the input)
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'currentPendingValueValidIndexOnHover: number;'
       return:
-        type: number
-  - name: focusState
-    uid: '@fluentui/react!IComboBoxState#focusState:member'
-    package: '@fluentui/react!'
-    fullName: focusState
+        type:
+          - number
+  - uid: '@fluentui/react!IComboBoxState#focusState:member'
     summary: The focused state of the combo box
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: focusState
+    fullName: focusState
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'focusState?: ''none'' | ''focused'' | ''focusing'';'
       return:
-        type: '''none'' | ''focused'' | ''focusing'''
-  - name: isOpen
-    uid: '@fluentui/react!IComboBoxState#isOpen:member'
-    package: '@fluentui/react!'
-    fullName: isOpen
+        type:
+          - '''none'' | ''focused'' | ''focusing'''
+  - uid: '@fluentui/react!IComboBoxState#isOpen:member'
     summary: The open state
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: isOpen
+    fullName: isOpen
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'isOpen?: boolean;'
       return:
-        type: boolean
+        type:
+          - boolean

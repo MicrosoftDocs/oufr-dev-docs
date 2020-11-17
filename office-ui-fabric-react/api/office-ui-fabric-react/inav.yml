@@ -1,50 +1,45 @@
-### YamlMime:TSType
-name: INav
-uid: 'office-ui-fabric-react!INav:interface'
-package: office-ui-fabric-react!
-fullName: INav
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: selectedKey
-    uid: 'office-ui-fabric-react!INav#selectedKey:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-ui-fabric-react!INav:interface'
+    name: INav
+    fullName: INav
+    langs:
+      - typeScript
+    type: interface
     package: office-ui-fabric-react!
-    fullName: selectedKey
+    children:
+      - 'office-ui-fabric-react!INav#focus:member(1)'
+      - 'office-ui-fabric-react!INav#selectedKey:member'
+  - uid: 'office-ui-fabric-react!INav#focus:member(1)'
+    summary: Sets focus to the first tabbable item in the zone.
+    name: focus(forceIntoFirstElement)
+    fullName: focus(forceIntoFirstElement)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'focus(forceIntoFirstElement?: boolean): boolean;'
+      return:
+        type:
+          - boolean
+        description: 'True if focus could be set to an active element, false if no operation was taken.'
+      parameters:
+        - id: forceIntoFirstElement
+          description: 'If true, focus will be forced into the first element, even if focus is already in the focus zone.'
+          type:
+            - boolean
+  - uid: 'office-ui-fabric-react!INav#selectedKey:member'
     summary: >-
-      The meta 'key' property of the currently selected NavItem of the Nav. Can
-      return undefined if the currently selected nav item has no populated key
-      property. Be aware that in order for Nav to properly understand which key
-      is selected all NavItems in all groups of the Nav must have populated key
-      properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      The meta 'key' property of the currently selected NavItem of the Nav. Can return undefined if the currently
+      selected nav item has no populated key property. Be aware that in order for Nav to properly understand which key
+      is selected all NavItems in all groups of the Nav must have populated key properties.
+    name: selectedKey
+    fullName: selectedKey
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'selectedKey: string | undefined;'
       return:
-        type: string | undefined
-methods:
-  - name: focus(forceIntoFirstElement)
-    uid: 'office-ui-fabric-react!INav#focus:member(1)'
-    package: office-ui-fabric-react!
-    fullName: focus(forceIntoFirstElement)
-    summary: Sets focus to the first tabbable item in the zone.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'focus(forceIntoFirstElement?: boolean): boolean;'
-      parameters:
-        - id: forceIntoFirstElement
-          description: >-
-            If true, focus will be forced into the first element, even if focus
-            is already in the focus zone.
-          type: boolean
-      return:
-        type: boolean
-        description: >-
-          True if focus could be set to an active element, false if no operation
-          was taken.
+        type:
+          - string | undefined

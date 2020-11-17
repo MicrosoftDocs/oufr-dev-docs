@@ -1,438 +1,425 @@
-### YamlMime:TSType
-name: BaseFloatingPicker
-uid: '@fluentui/react-internal!BaseFloatingPicker:class'
-package: '@fluentui/react-internal!'
-fullName: BaseFloatingPicker
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: class
-constructors:
-  - name: (constructor)(basePickerProps)
-    uid: '@fluentui/react-internal!BaseFloatingPicker:constructor(1)'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-internal!BaseFloatingPicker:class'
+    name: BaseFloatingPicker
+    fullName: BaseFloatingPicker
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'React.Component<P, IBaseFloatingPickerState> '
+    implements:
+      - 'IBaseFloatingPicker '
     package: '@fluentui/react-internal!'
-    fullName: (constructor)(basePickerProps)
+    children:
+      - '@fluentui/react-internal!BaseFloatingPicker:constructor(1)'
+      - '@fluentui/react-internal!BaseFloatingPicker#completeSuggestion:member'
+      - '@fluentui/react-internal!BaseFloatingPicker#componentDidMount:member(1)'
+      - '@fluentui/react-internal!BaseFloatingPicker#componentDidUpdate:member(1)'
+      - '@fluentui/react-internal!BaseFloatingPicker#componentWillUnmount:member(1)'
+      - '@fluentui/react-internal!BaseFloatingPicker#currentPromise:member'
+      - '@fluentui/react-internal!BaseFloatingPicker#currentSelectedSuggestionIndex:member'
+      - '@fluentui/react-internal!BaseFloatingPicker#forceResolveSuggestion:member(1)'
+      - '@fluentui/react-internal!BaseFloatingPicker#hidePicker:member'
+      - '@fluentui/react-internal!BaseFloatingPicker#inputText:member'
+      - '@fluentui/react-internal!BaseFloatingPicker#isComponentMounted:member'
+      - '@fluentui/react-internal!BaseFloatingPicker#isSuggestionsShown:member'
+      - '@fluentui/react-internal!BaseFloatingPicker#onChange:member(1)'
+      - '@fluentui/react-internal!BaseFloatingPicker#onKeyDown:member'
+      - '@fluentui/react-internal!BaseFloatingPicker#onQueryStringChanged:member'
+      - '@fluentui/react-internal!BaseFloatingPicker#onSelectionChange:member(1)'
+      - '@fluentui/react-internal!BaseFloatingPicker#onSuggestionClick:member'
+      - '@fluentui/react-internal!BaseFloatingPicker#onSuggestionRemove:member'
+      - '@fluentui/react-internal!BaseFloatingPicker#render:member(1)'
+      - '@fluentui/react-internal!BaseFloatingPicker#renderSuggestions:member(1)'
+      - '@fluentui/react-internal!BaseFloatingPicker#root:member'
+      - '@fluentui/react-internal!BaseFloatingPicker#selection:member'
+      - '@fluentui/react-internal!BaseFloatingPicker#showPicker:member'
+      - '@fluentui/react-internal!BaseFloatingPicker#suggestions:member'
+      - '@fluentui/react-internal!BaseFloatingPicker#suggestionsControl:member'
+      - '@fluentui/react-internal!BaseFloatingPicker#SuggestionsControlOfProperType:member'
+      - '@fluentui/react-internal!BaseFloatingPicker#suggestionStore:member'
+      - '@fluentui/react-internal!BaseFloatingPicker#updateSuggestions:member(1)'
+      - '@fluentui/react-internal!BaseFloatingPicker#updateSuggestionsList:member(1)'
+      - '@fluentui/react-internal!BaseFloatingPicker#updateSuggestionWithZeroState:member(1)'
+      - '@fluentui/react-internal!BaseFloatingPicker#updateValue:member(1)'
+  - uid: '@fluentui/react-internal!BaseFloatingPicker:constructor(1)'
     summary: Constructs a new instance of the `BaseFloatingPicker` class
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: (constructor)(basePickerProps)
+    fullName: (constructor)(basePickerProps)
+    langs:
+      - typeScript
+    type: constructor
     syntax:
       content: 'constructor(basePickerProps: P);'
       parameters:
         - id: basePickerProps
           description: ''
-          type: P
-properties:
-  - name: completeSuggestion
-    uid: '@fluentui/react-internal!BaseFloatingPicker#completeSuggestion:member'
-    package: '@fluentui/react-internal!'
+          type:
+            - P
+  - uid: '@fluentui/react-internal!BaseFloatingPicker#completeSuggestion:member'
+    name: completeSuggestion
     fullName: completeSuggestion
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'completeSuggestion: () => void;'
       return:
-        type: () =&gt; void
-  - name: currentPromise
-    uid: '@fluentui/react-internal!BaseFloatingPicker#currentPromise:member'
-    package: '@fluentui/react-internal!'
-    fullName: currentPromise
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'protected currentPromise: PromiseLike<T[]>;'
-      return:
-        type: 'PromiseLike&lt;T[]&gt;'
-  - name: currentSelectedSuggestionIndex
-    uid: >-
-      @fluentui/react-internal!BaseFloatingPicker#currentSelectedSuggestionIndex:member
-    package: '@fluentui/react-internal!'
-    fullName: currentSelectedSuggestionIndex
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'get currentSelectedSuggestionIndex(): number;'
-      return:
-        type: number
-  - name: hidePicker
-    uid: '@fluentui/react-internal!BaseFloatingPicker#hidePicker:member'
-    package: '@fluentui/react-internal!'
-    fullName: hidePicker
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'hidePicker: () => void;'
-      return:
-        type: () =&gt; void
-  - name: inputText
-    uid: '@fluentui/react-internal!BaseFloatingPicker#inputText:member'
-    package: '@fluentui/react-internal!'
-    fullName: inputText
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'get inputText(): string;'
-      return:
-        type: string
-  - name: isComponentMounted
-    uid: '@fluentui/react-internal!BaseFloatingPicker#isComponentMounted:member'
-    package: '@fluentui/react-internal!'
-    fullName: isComponentMounted
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'protected isComponentMounted: boolean;'
-      return:
-        type: boolean
-  - name: isSuggestionsShown
-    uid: '@fluentui/react-internal!BaseFloatingPicker#isSuggestionsShown:member'
-    package: '@fluentui/react-internal!'
-    fullName: isSuggestionsShown
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'get isSuggestionsShown(): boolean;'
-      return:
-        type: boolean
-  - name: onKeyDown
-    uid: '@fluentui/react-internal!BaseFloatingPicker#onKeyDown:member'
-    package: '@fluentui/react-internal!'
-    fullName: onKeyDown
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'protected onKeyDown: (ev: MouseEvent) => void;'
-      return:
-        type: '(ev: MouseEvent) =&gt; void'
-  - name: onQueryStringChanged
-    uid: '@fluentui/react-internal!BaseFloatingPicker#onQueryStringChanged:member'
-    package: '@fluentui/react-internal!'
-    fullName: onQueryStringChanged
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'onQueryStringChanged: (queryString: string) => void;'
-      return:
-        type: '(queryString: string) =&gt; void'
-  - name: onSuggestionClick
-    uid: '@fluentui/react-internal!BaseFloatingPicker#onSuggestionClick:member'
-    package: '@fluentui/react-internal!'
-    fullName: onSuggestionClick
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        protected onSuggestionClick: (ev: React.MouseEvent<HTMLElement,
-        MouseEvent>, item: T, index: number) => void;
-      return:
-        type: >-
-          (ev: React.MouseEvent&lt;HTMLElement, MouseEvent&gt;, item: T, index:
-          number) =&gt; void
-  - name: onSuggestionRemove
-    uid: '@fluentui/react-internal!BaseFloatingPicker#onSuggestionRemove:member'
-    package: '@fluentui/react-internal!'
-    fullName: onSuggestionRemove
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        protected onSuggestionRemove: (ev: React.MouseEvent<HTMLElement,
-        MouseEvent>, item: T, index: number) => void;
-      return:
-        type: >-
-          (ev: React.MouseEvent&lt;HTMLElement, MouseEvent&gt;, item: T, index:
-          number) =&gt; void
-  - name: root
-    uid: '@fluentui/react-internal!BaseFloatingPicker#root:member'
-    package: '@fluentui/react-internal!'
-    fullName: root
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'protected root: React.RefObject<HTMLDivElement>;'
-      return:
-        type: React.RefObject&lt;HTMLDivElement&gt;
-  - name: selection
-    uid: '@fluentui/react-internal!BaseFloatingPicker#selection:member'
-    package: '@fluentui/react-internal!'
-    fullName: selection
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'protected selection: Selection;'
-      return:
-        type: '<xref uid="@fluentui/utilities!Selection:class" />'
-  - name: showPicker
-    uid: '@fluentui/react-internal!BaseFloatingPicker#showPicker:member'
-    package: '@fluentui/react-internal!'
-    fullName: showPicker
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'showPicker: (updateValue?: boolean) => void;'
-      return:
-        type: '(updateValue?: boolean) =&gt; void'
-  - name: suggestions
-    uid: '@fluentui/react-internal!BaseFloatingPicker#suggestions:member'
-    package: '@fluentui/react-internal!'
-    fullName: suggestions
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'get suggestions(): any[];'
-      return:
-        type: 'any[]'
-  - name: suggestionsControl
-    uid: '@fluentui/react-internal!BaseFloatingPicker#suggestionsControl:member'
-    package: '@fluentui/react-internal!'
-    fullName: suggestionsControl
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'protected suggestionsControl: React.RefObject<SuggestionsControl<T>>;'
-      return:
-        type: React.RefObject&lt;SuggestionsControl&lt;T&gt;&gt;
-  - name: SuggestionsControlOfProperType
-    uid: >-
-      @fluentui/react-internal!BaseFloatingPicker#SuggestionsControlOfProperType:member
-    package: '@fluentui/react-internal!'
-    fullName: SuggestionsControlOfProperType
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        protected SuggestionsControlOfProperType: new (props:
-        ISuggestionsControlProps<T>) => SuggestionsControl<T>;
-      return:
-        type: >-
-          new (props: ISuggestionsControlProps&lt;T&gt;) =&gt;
-          SuggestionsControl&lt;T&gt;
-  - name: suggestionStore
-    uid: '@fluentui/react-internal!BaseFloatingPicker#suggestionStore:member'
-    package: '@fluentui/react-internal!'
-    fullName: suggestionStore
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'protected suggestionStore: SuggestionsStore<T>;'
-      return:
-        type: SuggestionsStore&lt;T&gt;
-methods:
-  - name: componentDidMount()
-    uid: '@fluentui/react-internal!BaseFloatingPicker#componentDidMount:member(1)'
-    package: '@fluentui/react-internal!'
+        type:
+          - () => void
+  - uid: '@fluentui/react-internal!BaseFloatingPicker#componentDidMount:member(1)'
+    name: componentDidMount()
     fullName: componentDidMount()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'componentDidMount(): void;'
       return:
-        type: void
+        type:
+          - void
         description: ''
-  - name: componentDidUpdate()
-    uid: '@fluentui/react-internal!BaseFloatingPicker#componentDidUpdate:member(1)'
-    package: '@fluentui/react-internal!'
+  - uid: '@fluentui/react-internal!BaseFloatingPicker#componentDidUpdate:member(1)'
+    name: componentDidUpdate()
     fullName: componentDidUpdate()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'componentDidUpdate(): void;'
       return:
-        type: void
+        type:
+          - void
         description: ''
-  - name: componentWillUnmount()
-    uid: '@fluentui/react-internal!BaseFloatingPicker#componentWillUnmount:member(1)'
-    package: '@fluentui/react-internal!'
+  - uid: '@fluentui/react-internal!BaseFloatingPicker#componentWillUnmount:member(1)'
+    name: componentWillUnmount()
     fullName: componentWillUnmount()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'componentWillUnmount(): void;'
       return:
-        type: void
+        type:
+          - void
         description: ''
-  - name: forceResolveSuggestion()
-    uid: >-
-      @fluentui/react-internal!BaseFloatingPicker#forceResolveSuggestion:member(1)
-    package: '@fluentui/react-internal!'
+  - uid: '@fluentui/react-internal!BaseFloatingPicker#currentPromise:member'
+    name: currentPromise
+    fullName: currentPromise
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'protected currentPromise: PromiseLike<T[]>;'
+      return:
+        type:
+          - 'PromiseLike<T[]>'
+  - uid: '@fluentui/react-internal!BaseFloatingPicker#currentSelectedSuggestionIndex:member'
+    name: currentSelectedSuggestionIndex
+    fullName: currentSelectedSuggestionIndex
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'get currentSelectedSuggestionIndex(): number;'
+      return:
+        type:
+          - number
+  - uid: '@fluentui/react-internal!BaseFloatingPicker#forceResolveSuggestion:member(1)'
+    name: forceResolveSuggestion()
     fullName: forceResolveSuggestion()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'forceResolveSuggestion(): void;'
       return:
-        type: void
+        type:
+          - void
         description: ''
-  - name: onChange(item)
-    uid: '@fluentui/react-internal!BaseFloatingPicker#onChange:member(1)'
-    package: '@fluentui/react-internal!'
+  - uid: '@fluentui/react-internal!BaseFloatingPicker#hidePicker:member'
+    name: hidePicker
+    fullName: hidePicker
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'hidePicker: () => void;'
+      return:
+        type:
+          - () => void
+  - uid: '@fluentui/react-internal!BaseFloatingPicker#inputText:member'
+    name: inputText
+    fullName: inputText
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'get inputText(): string;'
+      return:
+        type:
+          - string
+  - uid: '@fluentui/react-internal!BaseFloatingPicker#isComponentMounted:member'
+    name: isComponentMounted
+    fullName: isComponentMounted
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'protected isComponentMounted: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!BaseFloatingPicker#isSuggestionsShown:member'
+    name: isSuggestionsShown
+    fullName: isSuggestionsShown
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'get isSuggestionsShown(): boolean;'
+      return:
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!BaseFloatingPicker#onChange:member(1)'
+    name: onChange(item)
     fullName: onChange(item)
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'protected onChange(item: T): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: item
           description: ''
-          type: T
+          type:
+            - T
+  - uid: '@fluentui/react-internal!BaseFloatingPicker#onKeyDown:member'
+    name: onKeyDown
+    fullName: onKeyDown
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'protected onKeyDown: (ev: MouseEvent) => void;'
       return:
-        type: void
-        description: ''
-  - name: onSelectionChange()
-    uid: '@fluentui/react-internal!BaseFloatingPicker#onSelectionChange:member(1)'
-    package: '@fluentui/react-internal!'
+        type:
+          - '(ev: MouseEvent) => void'
+  - uid: '@fluentui/react-internal!BaseFloatingPicker#onQueryStringChanged:member'
+    name: onQueryStringChanged
+    fullName: onQueryStringChanged
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onQueryStringChanged: (queryString: string) => void;'
+      return:
+        type:
+          - '(queryString: string) => void'
+  - uid: '@fluentui/react-internal!BaseFloatingPicker#onSelectionChange:member(1)'
+    name: onSelectionChange()
     fullName: onSelectionChange()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'protected onSelectionChange(): void;'
       return:
-        type: void
+        type:
+          - void
         description: ''
-  - name: render()
-    uid: '@fluentui/react-internal!BaseFloatingPicker#render:member(1)'
-    package: '@fluentui/react-internal!'
+  - uid: '@fluentui/react-internal!BaseFloatingPicker#onSuggestionClick:member'
+    name: onSuggestionClick
+    fullName: onSuggestionClick
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'protected onSuggestionClick: (ev: React.MouseEvent<HTMLElement, MouseEvent>, item: T, index: number) => void;'
+      return:
+        type:
+          - '(ev: React.MouseEvent<HTMLElement, MouseEvent>, item: T, index: number) => void'
+  - uid: '@fluentui/react-internal!BaseFloatingPicker#onSuggestionRemove:member'
+    name: onSuggestionRemove
+    fullName: onSuggestionRemove
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'protected onSuggestionRemove: (ev: React.MouseEvent<HTMLElement, MouseEvent>, item: T, index: number) => void;'
+      return:
+        type:
+          - '(ev: React.MouseEvent<HTMLElement, MouseEvent>, item: T, index: number) => void'
+  - uid: '@fluentui/react-internal!BaseFloatingPicker#render:member(1)'
+    name: render()
     fullName: render()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'render(): JSX.Element;'
       return:
-        type: JSX.Element
+        type:
+          - JSX.Element
         description: ''
-  - name: renderSuggestions()
-    uid: '@fluentui/react-internal!BaseFloatingPicker#renderSuggestions:member(1)'
-    package: '@fluentui/react-internal!'
+  - uid: '@fluentui/react-internal!BaseFloatingPicker#renderSuggestions:member(1)'
+    name: renderSuggestions()
     fullName: renderSuggestions()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'protected renderSuggestions(): JSX.Element | null;'
       return:
-        type: JSX.Element | null
+        type:
+          - JSX.Element | null
         description: ''
-  - name: 'updateSuggestions(suggestions, forceUpdate)'
-    uid: '@fluentui/react-internal!BaseFloatingPicker#updateSuggestions:member(1)'
-    package: '@fluentui/react-internal!'
+  - uid: '@fluentui/react-internal!BaseFloatingPicker#root:member'
+    name: root
+    fullName: root
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'protected root: React.RefObject<HTMLDivElement>;'
+      return:
+        type:
+          - React.RefObject<HTMLDivElement>
+  - uid: '@fluentui/react-internal!BaseFloatingPicker#selection:member'
+    name: selection
+    fullName: selection
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'protected selection: Selection;'
+      return:
+        type:
+          - '@fluentui/utilities!Selection:class'
+  - uid: '@fluentui/react-internal!BaseFloatingPicker#showPicker:member'
+    name: showPicker
+    fullName: showPicker
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showPicker: (updateValue?: boolean) => void;'
+      return:
+        type:
+          - '(updateValue?: boolean) => void'
+  - uid: '@fluentui/react-internal!BaseFloatingPicker#suggestions:member'
+    name: suggestions
+    fullName: suggestions
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'get suggestions(): any[];'
+      return:
+        type:
+          - 'any[]'
+  - uid: '@fluentui/react-internal!BaseFloatingPicker#suggestionsControl:member'
+    name: suggestionsControl
+    fullName: suggestionsControl
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'protected suggestionsControl: React.RefObject<SuggestionsControl<T>>;'
+      return:
+        type:
+          - React.RefObject<SuggestionsControl<T>>
+  - uid: '@fluentui/react-internal!BaseFloatingPicker#SuggestionsControlOfProperType:member'
+    name: SuggestionsControlOfProperType
+    fullName: SuggestionsControlOfProperType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'protected SuggestionsControlOfProperType: new (props: ISuggestionsControlProps<T>) => SuggestionsControl<T>;'
+      return:
+        type:
+          - 'new (props: ISuggestionsControlProps<T>) => SuggestionsControl<T>'
+  - uid: '@fluentui/react-internal!BaseFloatingPicker#suggestionStore:member'
+    name: suggestionStore
+    fullName: suggestionStore
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'protected suggestionStore: SuggestionsStore<T>;'
+      return:
+        type:
+          - SuggestionsStore<T>
+  - uid: '@fluentui/react-internal!BaseFloatingPicker#updateSuggestions:member(1)'
+    name: 'updateSuggestions(suggestions, forceUpdate)'
     fullName: 'updateSuggestions(suggestions, forceUpdate)'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'updateSuggestions(suggestions: T[], forceUpdate?: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: suggestions
           description: ''
-          type: 'T[]'
+          type:
+            - 'T[]'
         - id: forceUpdate
           description: ''
-          type: boolean
-      return:
-        type: void
-        description: ''
-  - name: updateSuggestionsList(suggestions)
-    uid: >-
-      @fluentui/react-internal!BaseFloatingPicker#updateSuggestionsList:member(1)
-    package: '@fluentui/react-internal!'
+          type:
+            - boolean
+  - uid: '@fluentui/react-internal!BaseFloatingPicker#updateSuggestionsList:member(1)'
+    name: updateSuggestionsList(suggestions)
     fullName: updateSuggestionsList(suggestions)
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        protected updateSuggestionsList(suggestions: T[] | PromiseLike<T[]>):
-        void;
+      content: 'protected updateSuggestionsList(suggestions: T[] | PromiseLike<T[]>): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: suggestions
           description: ''
-          type: 'T[] | PromiseLike&lt;T[]&gt;'
-      return:
-        type: void
-        description: ''
-  - name: updateSuggestionWithZeroState()
-    uid: >-
-      @fluentui/react-internal!BaseFloatingPicker#updateSuggestionWithZeroState:member(1)
-    package: '@fluentui/react-internal!'
+          type:
+            - 'T[] | PromiseLike<T[]>'
+  - uid: '@fluentui/react-internal!BaseFloatingPicker#updateSuggestionWithZeroState:member(1)'
+    name: updateSuggestionWithZeroState()
     fullName: updateSuggestionWithZeroState()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'protected updateSuggestionWithZeroState(): void;'
       return:
-        type: void
+        type:
+          - void
         description: ''
-  - name: updateValue(updatedValue)
-    uid: '@fluentui/react-internal!BaseFloatingPicker#updateValue:member(1)'
-    package: '@fluentui/react-internal!'
+  - uid: '@fluentui/react-internal!BaseFloatingPicker#updateValue:member(1)'
+    name: updateValue(updatedValue)
     fullName: updateValue(updatedValue)
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'protected updateValue(updatedValue: string): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: updatedValue
           description: ''
-          type: string
-      return:
-        type: void
-        description: ''
-extends: 'React.Component&lt;P, IBaseFloatingPickerState&gt; '
+          type:
+            - string

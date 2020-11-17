@@ -1,89 +1,89 @@
-### YamlMime:TSType
-name: ThemeGenerator
-uid: 'office-ui-fabric-react!ThemeGenerator:class'
-package: office-ui-fabric-react!
-fullName: ThemeGenerator
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: class
-methods:
-  - name: getThemeAsCode(slotRules)
-    uid: 'office-ui-fabric-react!ThemeGenerator.getThemeAsCode:member(1)'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-ui-fabric-react!ThemeGenerator:class'
+    name: ThemeGenerator
+    fullName: ThemeGenerator
+    langs:
+      - typeScript
+    type: class
     package: office-ui-fabric-react!
-    fullName: getThemeAsCode(slotRules)
+    children:
+      - 'office-ui-fabric-react!ThemeGenerator.getThemeAsCode:member(1)'
+      - 'office-ui-fabric-react!ThemeGenerator.getThemeAsCodeWithCreateTheme:member(1)'
+      - 'office-ui-fabric-react!ThemeGenerator.getThemeAsJson:member(1)'
+      - 'office-ui-fabric-react!ThemeGenerator.getThemeAsSass:member(1)'
+      - 'office-ui-fabric-react!ThemeGenerator.getThemeForPowerShell:member(1)'
+      - 'office-ui-fabric-react!ThemeGenerator.insureSlots:member(1)'
+      - 'office-ui-fabric-react!ThemeGenerator.setSlot:member(1)'
+  - uid: 'office-ui-fabric-react!ThemeGenerator.getThemeAsCode:member(1)'
     summary: >-
-      Gets code-formatted load theme blob that can be copy and pasted. Only used
-      for the old theme designer, where loadTheme usage is acceptable, unlike in
-      the new theme designer.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Gets code-formatted load theme blob that can be copy and pasted. Only used for the old theme designer, where
+      loadTheme usage is acceptable, unlike in the new theme designer.
+    name: getThemeAsCode(slotRules)
+    fullName: getThemeAsCode(slotRules)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'static getThemeAsCode(slotRules: IThemeRules): any;'
+      return:
+        type:
+          - any
+        description: ''
       parameters:
         - id: slotRules
           description: ''
-          type: IThemeRules
-      return:
-        type: any
-        description: ''
-  - name: getThemeAsCodeWithCreateTheme(slotRules)
-    uid: >-
-      office-ui-fabric-react!ThemeGenerator.getThemeAsCodeWithCreateTheme:member(1)
-    package: office-ui-fabric-react!
-    fullName: getThemeAsCodeWithCreateTheme(slotRules)
+          type:
+            - IThemeRules
+  - uid: 'office-ui-fabric-react!ThemeGenerator.getThemeAsCodeWithCreateTheme:member(1)'
     summary: >-
-      Gets code-formatted load theme blob, specifically for the new theme
-      designer, aka.ms/themedesigner. Shouldn't use loadTheme like the old theme
-      designer since it's deprecated. We want to use the theme object from
-      createTheme and use the Customizations.applySettings API instead.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Gets code-formatted load theme blob, specifically for the new theme designer, aka.ms/themedesigner. Shouldn't use
+      loadTheme like the old theme designer since it's deprecated. We want to use the theme object from createTheme and
+      use the Customizations.applySettings API instead.
+    name: getThemeAsCodeWithCreateTheme(slotRules)
+    fullName: getThemeAsCodeWithCreateTheme(slotRules)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'static getThemeAsCodeWithCreateTheme(slotRules: IThemeRules): any;'
+      return:
+        type:
+          - any
+        description: ''
       parameters:
         - id: slotRules
           description: ''
-          type: IThemeRules
-      return:
-        type: any
-        description: ''
-  - name: getThemeAsJson(slotRules)
-    uid: 'office-ui-fabric-react!ThemeGenerator.getThemeAsJson:member(1)'
-    package: office-ui-fabric-react!
-    fullName: getThemeAsJson(slotRules)
-    summary: >-
-      Gets the JSON-formatted blob that describes the theme, usable with the
-      REST request endpoints:
-
+          type:
+            - IThemeRules
+  - uid: 'office-ui-fabric-react!ThemeGenerator.getThemeAsJson:member(1)'
+    summary: |-
+      Gets the JSON-formatted blob that describes the theme, usable with the REST request endpoints:
 
       ```
-
       { [theme slot name as string] : [color as string],
        "tokenName": "#f00f00",
        "tokenName2": "#ba2ba2",
         ... }
 
       ```
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: getThemeAsJson(slotRules)
+    fullName: getThemeAsJson(slotRules)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'static getThemeAsJson(slotRules: IThemeRules): any;'
+      return:
+        type:
+          - any
+        description: ''
       parameters:
         - id: slotRules
           description: ''
-          type: IThemeRules
-      return:
-        type: any
-        description: ''
-  - name: getThemeAsSass(slotRules)
-    uid: 'office-ui-fabric-react!ThemeGenerator.getThemeAsSass:member(1)'
-    package: office-ui-fabric-react!
-    fullName: getThemeAsSass(slotRules)
+          type:
+            - IThemeRules
+  - uid: 'office-ui-fabric-react!ThemeGenerator.getThemeAsSass:member(1)'
     summary: |-
       Gets the theme as a list of SASS variables that can be used in code
 
@@ -93,22 +93,23 @@ methods:
       ...
 
       ```
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: getThemeAsSass(slotRules)
+    fullName: getThemeAsSass(slotRules)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'static getThemeAsSass(slotRules: IThemeRules): any;'
+      return:
+        type:
+          - any
+        description: ''
       parameters:
         - id: slotRules
           description: ''
-          type: IThemeRules
-      return:
-        type: any
-        description: ''
-  - name: getThemeForPowerShell(slotRules)
-    uid: 'office-ui-fabric-react!ThemeGenerator.getThemeForPowerShell:member(1)'
-    package: office-ui-fabric-react!
-    fullName: getThemeForPowerShell(slotRules)
+          type:
+            - IThemeRules
+  - uid: 'office-ui-fabric-react!ThemeGenerator.getThemeForPowerShell:member(1)'
     summary: |-
       Gets the theme formatted for PowerShell scripts
 
@@ -120,84 +121,86 @@ methods:
       }
 
       ```
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: getThemeForPowerShell(slotRules)
+    fullName: getThemeForPowerShell(slotRules)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'static getThemeForPowerShell(slotRules: IThemeRules): any;'
+      return:
+        type:
+          - any
+        description: ''
       parameters:
         - id: slotRules
           description: ''
-          type: IThemeRules
-      return:
-        type: any
-        description: ''
-  - name: 'insureSlots(slotRules, isInverted)'
-    uid: 'office-ui-fabric-react!ThemeGenerator.insureSlots:member(1)'
-    package: office-ui-fabric-react!
-    fullName: 'insureSlots(slotRules, isInverted)'
+          type:
+            - IThemeRules
+  - uid: 'office-ui-fabric-react!ThemeGenerator.insureSlots:member(1)'
     summary: >-
-      Sets the color of each slot based on its rule. Slots that don't inherit
-      must have a color already. If this completes without error, then the theme
-      is ready to use. (All slots will have a color.) setSlot() can be called
-      before this, but this must be called before getThemeAs\*(). Does not
-      override colors of rules where isCustomized is true (i.e. doesn't override
-      existing customizations).
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Sets the color of each slot based on its rule. Slots that don't inherit must have a color already. If this
+      completes without error, then the theme is ready to use. (All slots will have a color.) setSlot() can be called
+      before this, but this must be called before getThemeAs\*(). Does not override colors of rules where isCustomized
+      is true (i.e. doesn't override existing customizations).
+    name: 'insureSlots(slotRules, isInverted)'
+    fullName: 'insureSlots(slotRules, isInverted)'
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'static insureSlots(slotRules: IThemeRules, isInverted: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: slotRules
           description: ''
-          type: IThemeRules
+          type:
+            - IThemeRules
         - id: isInverted
           description: ''
-          type: boolean
-      return:
-        type: void
-        description: ''
-  - name: 'setSlot(rule, color, isInverted, isCustomization, overwriteCustomColor)'
-    uid: 'office-ui-fabric-react!ThemeGenerator.setSlot:member(1)'
-    package: office-ui-fabric-react!
-    fullName: 'setSlot(rule, color, isInverted, isCustomization, overwriteCustomColor)'
+          type:
+            - boolean
+  - uid: 'office-ui-fabric-react!ThemeGenerator.setSlot:member(1)'
     summary: >-
-      Sets an IThemeSlotRule to the given color and cascades it to the rest of
-      the theme, updating other IThemeSlotRules in the theme that inherit from
-      that color.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Sets an IThemeSlotRule to the given color and cascades it to the rest of the theme, updating other IThemeSlotRules
+      in the theme that inherit from that color.
+    name: 'setSlot(rule, color, isInverted, isCustomization, overwriteCustomColor)'
+    fullName: 'setSlot(rule, color, isInverted, isCustomization, overwriteCustomColor)'
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: >-
-        static setSlot(rule: IThemeSlotRule, color: string | IColor,
-        isInverted?: boolean, isCustomization?: boolean, overwriteCustomColor?:
-        boolean): void;
+        static setSlot(rule: IThemeSlotRule, color: string | IColor, isInverted?: boolean, isCustomization?: boolean,
+        overwriteCustomColor?: boolean): void;
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: rule
           description: ''
-          type: IThemeSlotRule
+          type:
+            - IThemeSlotRule
         - id: color
           description: ''
-          type: string | IColor
+          type:
+            - string | IColor
         - id: isInverted
-          description: >-
-            whether it's a dark theme or not, which affects the algorithm used
-            to generate shades
-          type: boolean
+          description: 'whether it''s a dark theme or not, which affects the algorithm used to generate shades'
+          type:
+            - boolean
         - id: isCustomization
-          description: >-
-            should be true only if it's a user action, and indicates overwriting
-            the slot's inheritance (if any)
-          type: boolean
+          description: 'should be true only if it''s a user action, and indicates overwriting the slot''s inheritance (if any)'
+          type:
+            - boolean
         - id: overwriteCustomColor
           description: >-
-            A slot could have a generated color based on its inheritance rules
-            (isCustomized is false), or a custom color based on user input
-            (isCustomized is true). This bool tells us whether to override
-            existing customized colors.
-          type: boolean
-      return:
-        type: void
-        description: ''
+            A slot could have a generated color based on its inheritance rules (isCustomized is false), or a custom
+            color based on user input (isCustomized is true). This bool tells us whether to override existing customized
+            colors.
+          type:
+            - boolean

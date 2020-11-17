@@ -1,192 +1,187 @@
-### YamlMime:TSType
-name: IRawFontStyle
-uid: '@fluentui/merge-styles!IRawFontStyle:interface'
-package: '@fluentui/merge-styles!'
-fullName: IRawFontStyle
-summary: The base font style.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: font
-    uid: '@fluentui/merge-styles!IRawFontStyle#font:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/merge-styles!IRawFontStyle:interface'
+    summary: The base font style.
+    name: IRawFontStyle
+    fullName: IRawFontStyle
+    langs:
+      - typeScript
+    type: interface
     package: '@fluentui/merge-styles!'
-    fullName: font
+    children:
+      - '@fluentui/merge-styles!IRawFontStyle#font:member'
+      - '@fluentui/merge-styles!IRawFontStyle#fontFamily:member'
+      - '@fluentui/merge-styles!IRawFontStyle#fontKerning:member'
+      - '@fluentui/merge-styles!IRawFontStyle#fontSize:member'
+      - '@fluentui/merge-styles!IRawFontStyle#fontSizeAdjust:member'
+      - '@fluentui/merge-styles!IRawFontStyle#fontStretch:member'
+      - '@fluentui/merge-styles!IRawFontStyle#fontStyle:member'
+      - '@fluentui/merge-styles!IRawFontStyle#fontSynthesis:member'
+      - '@fluentui/merge-styles!IRawFontStyle#fontVariant:member'
+      - '@fluentui/merge-styles!IRawFontStyle#fontVariantAlternates:member'
+      - '@fluentui/merge-styles!IRawFontStyle#fontWeight:member'
+  - uid: '@fluentui/merge-styles!IRawFontStyle#font:member'
     summary: >-
-      The font property is shorthand that allows you to do one of two things:
-      you can either set up six of the most mature font properties in one line,
-      or you can set one of a choice of keywords to adopt a system font setting.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      The font property is shorthand that allows you to do one of two things: you can either set up six of the most
+      mature font properties in one line, or you can set one of a choice of keywords to adopt a system font setting.
+    name: font
+    fullName: font
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'font?: ICSSRule | string;'
       return:
-        type: ICSSRule | string
-  - name: fontFamily
-    uid: '@fluentui/merge-styles!IRawFontStyle#fontFamily:member'
-    package: '@fluentui/merge-styles!'
-    fullName: fontFamily
+        type:
+          - ICSSRule | string
+  - uid: '@fluentui/merge-styles!IRawFontStyle#fontFamily:member'
     summary: >-
-      The font-family property allows one or more font family names and/or
-      generic family names to be specified for usage on the selected element(s)'
-      text. The browser then goes through the list; for each character in the
-      selection it applies the first font family that has an available glyph for
-      that character.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      The font-family property allows one or more font family names and/or generic family names to be specified for
+      usage on the selected element(s)' text. The browser then goes through the list; for each character in the
+      selection it applies the first font family that has an available glyph for that character.
+    name: fontFamily
+    fullName: fontFamily
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'fontFamily?: ICSSRule | string;'
       return:
-        type: ICSSRule | string
-  - name: fontKerning
-    uid: '@fluentui/merge-styles!IRawFontStyle#fontKerning:member'
-    package: '@fluentui/merge-styles!'
-    fullName: fontKerning
+        type:
+          - ICSSRule | string
+  - uid: '@fluentui/merge-styles!IRawFontStyle#fontKerning:member'
     summary: >-
-      The font-kerning property allows contextual adjustment of inter-glyph
-      spacing, i.e. the spaces between the characters in text. This property
-      controls <bold>metric kerning</bold> - that utilizes adjustment data
-      contained in the font. Optical Kerning is not supported as yet.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      The font-kerning property allows contextual adjustment of inter-glyph spacing, i.e. the spaces between the
+      characters in text. This property controls <bold>metric kerning</bold> - that utilizes adjustment data contained
+      in the font. Optical Kerning is not supported as yet.
+    name: fontKerning
+    fullName: fontKerning
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'fontKerning?: ICSSRule | string;'
       return:
-        type: ICSSRule | string
-  - name: fontSize
-    uid: '@fluentui/merge-styles!IRawFontStyle#fontSize:member'
-    package: '@fluentui/merge-styles!'
-    fullName: fontSize
+        type:
+          - ICSSRule | string
+  - uid: '@fluentui/merge-styles!IRawFontStyle#fontSize:member'
     summary: >-
-      Specifies the size of the font. Used to compute em and ex units. See CSS 3
-      font-size property https://www.w3.org/TR/css-fonts-3/\#propdef-font-size
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Specifies the size of the font. Used to compute em and ex units. See CSS 3 font-size property
+      https://www.w3.org/TR/css-fonts-3/\#propdef-font-size
+    name: fontSize
+    fullName: fontSize
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: >-
-        fontSize?: ICSSRule | 'xx-small' | 'x-small' | 'small' | 'medium' |
-        'large' | 'x-large' | 'xx-large' | 'larger' | 'smaller' |
-        ICSSPixelUnitRule | ICSSPercentageRule;
+        fontSize?: ICSSRule | 'xx-small' | 'x-small' | 'small' | 'medium' | 'large' | 'x-large' | 'xx-large' | 'larger'
+        | 'smaller' | ICSSPixelUnitRule | ICSSPercentageRule;
       return:
-        type: >-
-          ICSSRule | 'xx-small' | 'x-small' | 'small' | 'medium' | 'large' |
-          'x-large' | 'xx-large' | 'larger' | 'smaller' | ICSSPixelUnitRule |
-          ICSSPercentageRule
-  - name: fontSizeAdjust
-    uid: '@fluentui/merge-styles!IRawFontStyle#fontSizeAdjust:member'
-    package: '@fluentui/merge-styles!'
-    fullName: fontSizeAdjust
+        type:
+          - >-
+            ICSSRule | 'xx-small' | 'x-small' | 'small' | 'medium' | 'large' | 'x-large' | 'xx-large' | 'larger' |
+            'smaller' | ICSSPixelUnitRule | ICSSPercentageRule
+  - uid: '@fluentui/merge-styles!IRawFontStyle#fontSizeAdjust:member'
     summary: >-
-      The font-size-adjust property adjusts the font-size of the fallback fonts
-      defined with font-family, so that the x-height is the same no matter what
-      font is used. This preserves the readability of the text when fallback
-      happens. See CSS 3 font-size-adjust property
-      https://www.w3.org/TR/css-fonts-3/\#propdef-font-size-adjust
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      The font-size-adjust property adjusts the font-size of the fallback fonts defined with font-family, so that the
+      x-height is the same no matter what font is used. This preserves the readability of the text when fallback
+      happens. See CSS 3 font-size-adjust property https://www.w3.org/TR/css-fonts-3/\#propdef-font-size-adjust
+    name: fontSizeAdjust
+    fullName: fontSizeAdjust
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'fontSizeAdjust?: ICSSRule | ''none'' | number | string;'
       return:
-        type: ICSSRule | 'none' | number | string
-  - name: fontStretch
-    uid: '@fluentui/merge-styles!IRawFontStyle#fontStretch:member'
-    package: '@fluentui/merge-styles!'
-    fullName: fontStretch
+        type:
+          - ICSSRule | 'none' | number | string
+  - uid: '@fluentui/merge-styles!IRawFontStyle#fontStretch:member'
     summary: >-
-      Allows you to expand or condense the widths for a normal, condensed, or
-      expanded font face. See CSS 3 font-stretch property
-      https://drafts.csswg.org/css-fonts-3/\#propdef-font-stretch
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Allows you to expand or condense the widths for a normal, condensed, or expanded font face. See CSS 3 font-stretch
+      property https://drafts.csswg.org/css-fonts-3/\#propdef-font-stretch
+    name: fontStretch
+    fullName: fontStretch
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: >-
-        fontStretch?: ICSSRule | 'normal' | 'ultra-condensed' |
-        'extra-condensed' | 'condensed' | 'semi-condensed' | 'semi-expanded' |
-        'expanded' | 'extra-expanded' | 'ultra-expanded' | string;
+        fontStretch?: ICSSRule | 'normal' | 'ultra-condensed' | 'extra-condensed' | 'condensed' | 'semi-condensed' |
+        'semi-expanded' | 'expanded' | 'extra-expanded' | 'ultra-expanded' | string;
       return:
-        type: >-
-          ICSSRule | 'normal' | 'ultra-condensed' | 'extra-condensed' |
-          'condensed' | 'semi-condensed' | 'semi-expanded' | 'expanded' |
-          'extra-expanded' | 'ultra-expanded' | string
-  - name: fontStyle
-    uid: '@fluentui/merge-styles!IRawFontStyle#fontStyle:member'
-    package: '@fluentui/merge-styles!'
-    fullName: fontStyle
+        type:
+          - >-
+            ICSSRule | 'normal' | 'ultra-condensed' | 'extra-condensed' | 'condensed' | 'semi-condensed' |
+            'semi-expanded' | 'expanded' | 'extra-expanded' | 'ultra-expanded' | string
+  - uid: '@fluentui/merge-styles!IRawFontStyle#fontStyle:member'
     summary: >-
-      The font-style property allows normal, italic, or oblique faces to be
-      selected. Italic forms are generally cursive in nature while oblique faces
-      are typically sloped versions of the regular face. Oblique faces can be
-      simulated by artificially sloping the glyphs of the regular face. See CSS
-      3 font-style property
+      The font-style property allows normal, italic, or oblique faces to be selected. Italic forms are generally cursive
+      in nature while oblique faces are typically sloped versions of the regular face. Oblique faces can be simulated by
+      artificially sloping the glyphs of the regular face. See CSS 3 font-style property
       https://www.w3.org/TR/css-fonts-3/\#propdef-font-style
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: fontStyle
+    fullName: fontStyle
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'fontStyle?: ICSSRule | ''normal'' | ''italic'' | ''oblique'' | string;'
       return:
-        type: ICSSRule | 'normal' | 'italic' | 'oblique' | string
-  - name: fontSynthesis
-    uid: '@fluentui/merge-styles!IRawFontStyle#fontSynthesis:member'
-    package: '@fluentui/merge-styles!'
-    fullName: fontSynthesis
+        type:
+          - ICSSRule | 'normal' | 'italic' | 'oblique' | string
+  - uid: '@fluentui/merge-styles!IRawFontStyle#fontSynthesis:member'
     summary: >-
-      This value specifies whether the user agent is allowed to synthesize bold
-      or oblique font faces when a font family lacks bold or italic faces.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      This value specifies whether the user agent is allowed to synthesize bold or oblique font faces when a font family
+      lacks bold or italic faces.
+    name: fontSynthesis
+    fullName: fontSynthesis
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'fontSynthesis?: ICSSRule | string;'
       return:
-        type: ICSSRule | string
-  - name: fontVariant
-    uid: '@fluentui/merge-styles!IRawFontStyle#fontVariant:member'
-    package: '@fluentui/merge-styles!'
+        type:
+          - ICSSRule | string
+  - uid: '@fluentui/merge-styles!IRawFontStyle#fontVariant:member'
+    summary: The font-variant property enables you to select the small-caps font within a font family.
+    name: fontVariant
     fullName: fontVariant
-    summary: >-
-      The font-variant property enables you to select the small-caps font within
-      a font family.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'fontVariant?: ICSSRule | string;'
       return:
-        type: ICSSRule | string
-  - name: fontVariantAlternates
-    uid: '@fluentui/merge-styles!IRawFontStyle#fontVariantAlternates:member'
-    package: '@fluentui/merge-styles!'
-    fullName: fontVariantAlternates
+        type:
+          - ICSSRule | string
+  - uid: '@fluentui/merge-styles!IRawFontStyle#fontVariantAlternates:member'
     summary: >-
-      Fonts can provide alternate glyphs in addition to default glyph for a
-      character. This property provides control over the selection of these
-      alternate glyphs.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Fonts can provide alternate glyphs in addition to default glyph for a character. This property provides control
+      over the selection of these alternate glyphs.
+    name: fontVariantAlternates
+    fullName: fontVariantAlternates
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'fontVariantAlternates?: ICSSRule | string;'
       return:
-        type: ICSSRule | string
-  - name: fontWeight
-    uid: '@fluentui/merge-styles!IRawFontStyle#fontWeight:member'
-    package: '@fluentui/merge-styles!'
-    fullName: fontWeight
+        type:
+          - ICSSRule | string
+  - uid: '@fluentui/merge-styles!IRawFontStyle#fontWeight:member'
     summary: >-
-      Specifies the weight or boldness of the font. See CSS 3 'font-weight'
-      property https://www.w3.org/TR/css-fonts-3/\#propdef-font-weight
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Specifies the weight or boldness of the font. See CSS 3 'font-weight' property
+      https://www.w3.org/TR/css-fonts-3/\#propdef-font-weight
+    name: fontWeight
+    fullName: fontWeight
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'fontWeight?: IFontWeight | string;'
       return:
-        type: IFontWeight | string
+        type:
+          - IFontWeight | string

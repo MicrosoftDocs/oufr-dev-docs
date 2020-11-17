@@ -1,22 +1,20 @@
-### YamlMime:TSType
-name: IScrollablePaneContext
-uid: 'office-ui-fabric-react!IScrollablePaneContext:interface'
-package: office-ui-fabric-react!
-fullName: IScrollablePaneContext
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: scrollablePane
-    uid: 'office-ui-fabric-react!IScrollablePaneContext#scrollablePane:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-ui-fabric-react!IScrollablePaneContext:interface'
+    name: IScrollablePaneContext
+    fullName: IScrollablePaneContext
+    langs:
+      - typeScript
+    type: interface
     package: office-ui-fabric-react!
+    children:
+      - 'office-ui-fabric-react!IScrollablePaneContext#scrollablePane:member'
+  - uid: 'office-ui-fabric-react!IScrollablePaneContext#scrollablePane:member'
+    name: scrollablePane
     fullName: scrollablePane
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: |-
         scrollablePane?: {
@@ -30,14 +28,15 @@ properties:
                 syncScrollSticky: (sticky: Sticky) => void;
             };
       return:
-        type: |-
-          {
-                  subscribe: (handler: (container: HTMLElement, stickyContainer: HTMLElement) =&gt; void) =&gt; void;
-                  unsubscribe: (handler: (container: HTMLElement, stickyContainer: HTMLElement) =&gt; void) =&gt; void;
-                  addSticky: (sticky: Sticky) =&gt; void;
-                  removeSticky: (sticky: Sticky) =&gt; void;
-                  updateStickyRefHeights: () =&gt; void;
-                  sortSticky: (sticky: Sticky, sortAgain?: boolean) =&gt; void;
-                  notifySubscribers: (sort?: boolean) =&gt; void;
-                  syncScrollSticky: (sticky: Sticky) =&gt; void;
-              }
+        type:
+          - |-
+            {
+                    subscribe: (handler: (container: HTMLElement, stickyContainer: HTMLElement) => void) => void;
+                    unsubscribe: (handler: (container: HTMLElement, stickyContainer: HTMLElement) => void) => void;
+                    addSticky: (sticky: Sticky) => void;
+                    removeSticky: (sticky: Sticky) => void;
+                    updateStickyRefHeights: () => void;
+                    sortSticky: (sticky: Sticky, sortAgain?: boolean) => void;
+                    notifySubscribers: (sort?: boolean) => void;
+                    syncScrollSticky: (sticky: Sticky) => void;
+                }

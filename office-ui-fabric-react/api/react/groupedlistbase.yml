@@ -1,37 +1,58 @@
-### YamlMime:TSType
-name: GroupedListBase
-uid: '@fluentui/react!GroupedListBase:class'
-package: '@fluentui/react!'
-fullName: GroupedListBase
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: class
-constructors:
-  - name: (constructor)(props)
-    uid: '@fluentui/react!GroupedListBase:constructor(1)'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react!GroupedListBase:class'
+    name: GroupedListBase
+    fullName: GroupedListBase
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'React.Component<IGroupedListProps, IGroupedListState> '
+    implements:
+      - 'IGroupedList '
     package: '@fluentui/react!'
-    fullName: (constructor)(props)
+    children:
+      - '@fluentui/react!GroupedListBase:constructor(1)'
+      - '@fluentui/react!GroupedListBase#componentDidMount:member(1)'
+      - '@fluentui/react!GroupedListBase.defaultProps:member'
+      - '@fluentui/react!GroupedListBase#forceUpdate:member(1)'
+      - '@fluentui/react!GroupedListBase.getDerivedStateFromProps:member(1)'
+      - '@fluentui/react!GroupedListBase#getStartItemIndexInView:member(1)'
+      - '@fluentui/react!GroupedListBase#render:member(1)'
+      - '@fluentui/react!GroupedListBase#scrollToIndex:member(1)'
+      - '@fluentui/react!GroupedListBase#toggleCollapseAll:member(1)'
+  - uid: '@fluentui/react!GroupedListBase:constructor(1)'
     summary: Constructs a new instance of the `GroupedListBase` class
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: (constructor)(props)
+    fullName: (constructor)(props)
+    langs:
+      - typeScript
+    type: constructor
     syntax:
       content: 'constructor(props: IGroupedListProps);'
       parameters:
         - id: props
           description: ''
-          type: IGroupedListProps
-properties:
-  - name: defaultProps
-    uid: '@fluentui/react!GroupedListBase.defaultProps:member'
-    package: '@fluentui/react!'
+          type:
+            - IGroupedListProps
+  - uid: '@fluentui/react!GroupedListBase#componentDidMount:member(1)'
+    name: componentDidMount()
+    fullName: componentDidMount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'componentDidMount(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: '@fluentui/react!GroupedListBase.defaultProps:member'
+    name: defaultProps
     fullName: defaultProps
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: |-
         static defaultProps: {
@@ -41,128 +62,112 @@ properties:
                 compact: boolean;
             };
       return:
-        type: |-
-          {
-                  selectionMode: SelectionMode;
-                  isHeaderVisible: boolean;
-                  groupProps: {};
-                  compact: boolean;
-              }
-methods:
-  - name: componentDidMount()
-    uid: '@fluentui/react!GroupedListBase#componentDidMount:member(1)'
-    package: '@fluentui/react!'
-    fullName: componentDidMount()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'componentDidMount(): void;'
-      return:
-        type: void
-        description: ''
-  - name: forceUpdate()
-    uid: '@fluentui/react!GroupedListBase#forceUpdate:member(1)'
-    package: '@fluentui/react!'
+        type:
+          - |-
+            {
+                    selectionMode: SelectionMode;
+                    isHeaderVisible: boolean;
+                    groupProps: {};
+                    compact: boolean;
+                }
+  - uid: '@fluentui/react!GroupedListBase#forceUpdate:member(1)'
+    name: forceUpdate()
     fullName: forceUpdate()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'forceUpdate(): void;'
       return:
-        type: void
+        type:
+          - void
         description: ''
-  - name: 'getDerivedStateFromProps(nextProps, previousState)'
-    uid: '@fluentui/react!GroupedListBase.getDerivedStateFromProps:member(1)'
-    package: '@fluentui/react!'
+  - uid: '@fluentui/react!GroupedListBase.getDerivedStateFromProps:member(1)'
+    name: 'getDerivedStateFromProps(nextProps, previousState)'
     fullName: 'getDerivedStateFromProps(nextProps, previousState)'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: >-
-        static getDerivedStateFromProps(nextProps: IGroupedListProps,
-        previousState: IGroupedListState): IGroupedListState;
+        static getDerivedStateFromProps(nextProps: IGroupedListProps, previousState: IGroupedListState):
+        IGroupedListState;
+      return:
+        type:
+          - IGroupedListState
+        description: ''
       parameters:
         - id: nextProps
           description: ''
-          type: IGroupedListProps
+          type:
+            - IGroupedListProps
         - id: previousState
           description: ''
-          type: IGroupedListState
-      return:
-        type: IGroupedListState
-        description: ''
-  - name: getStartItemIndexInView()
-    uid: '@fluentui/react!GroupedListBase#getStartItemIndexInView:member(1)'
-    package: '@fluentui/react!'
+          type:
+            - IGroupedListState
+  - uid: '@fluentui/react!GroupedListBase#getStartItemIndexInView:member(1)'
+    name: getStartItemIndexInView()
     fullName: getStartItemIndexInView()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'getStartItemIndexInView(): number;'
       return:
-        type: number
+        type:
+          - number
         description: ''
-  - name: render()
-    uid: '@fluentui/react!GroupedListBase#render:member(1)'
-    package: '@fluentui/react!'
+  - uid: '@fluentui/react!GroupedListBase#render:member(1)'
+    name: render()
     fullName: render()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'render(): JSX.Element;'
       return:
-        type: JSX.Element
+        type:
+          - JSX.Element
         description: ''
-  - name: 'scrollToIndex(index, measureItem, scrollToMode)'
-    uid: '@fluentui/react!GroupedListBase#scrollToIndex:member(1)'
-    package: '@fluentui/react!'
+  - uid: '@fluentui/react!GroupedListBase#scrollToIndex:member(1)'
+    name: 'scrollToIndex(index, measureItem, scrollToMode)'
     fullName: 'scrollToIndex(index, measureItem, scrollToMode)'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        scrollToIndex(index: number, measureItem?: (itemIndex: number) =>
-        number, scrollToMode?: ScrollToMode): void;
+      content: 'scrollToIndex(index: number, measureItem?: (itemIndex: number) => number, scrollToMode?: ScrollToMode): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: index
           description: ''
-          type: number
+          type:
+            - number
         - id: measureItem
           description: ''
-          type: '(itemIndex: number) =&gt; number'
+          type:
+            - '(itemIndex: number) => number'
         - id: scrollToMode
           description: ''
-          type: ScrollToMode
-      return:
-        type: void
-        description: ''
-  - name: toggleCollapseAll(allCollapsed)
-    uid: '@fluentui/react!GroupedListBase#toggleCollapseAll:member(1)'
-    package: '@fluentui/react!'
+          type:
+            - ScrollToMode
+  - uid: '@fluentui/react!GroupedListBase#toggleCollapseAll:member(1)'
+    name: toggleCollapseAll(allCollapsed)
     fullName: toggleCollapseAll(allCollapsed)
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'toggleCollapseAll(allCollapsed: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: allCollapsed
           description: ''
-          type: boolean
-      return:
-        type: void
-        description: ''
-extends: 'React.Component&lt;IGroupedListProps, IGroupedListState&gt; '
+          type:
+            - boolean

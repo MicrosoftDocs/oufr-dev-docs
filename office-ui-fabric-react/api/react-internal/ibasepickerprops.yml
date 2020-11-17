@@ -1,458 +1,453 @@
-### YamlMime:TSType
-name: IBasePickerProps
-uid: '@fluentui/react-internal!IBasePickerProps:interface'
-package: '@fluentui/react-internal!'
-fullName: IBasePickerProps
-summary: >-
-  Type T is the type of the item that is displayed and searched for by the
-  picker. For example, if the picker is displaying persona's then type T could
-  either be of Persona or IPersona props
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: className
-    uid: '@fluentui/react-internal!IBasePickerProps#className:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-internal!IBasePickerProps:interface'
+    summary: >-
+      Type T is the type of the item that is displayed and searched for by the picker. For example, if the picker is
+      displaying persona's then type T could either be of Persona or IPersona props
+    name: IBasePickerProps
+    fullName: IBasePickerProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'React.Props<any> '
+    syntax:
+      typeParameters:
+        - id: T
     package: '@fluentui/react-internal!'
-    fullName: className
+    children:
+      - '@fluentui/react-internal!IBasePickerProps#className:member'
+      - '@fluentui/react-internal!IBasePickerProps#componentRef:member'
+      - '@fluentui/react-internal!IBasePickerProps#createGenericItem:member'
+      - '@fluentui/react-internal!IBasePickerProps#defaultSelectedItems:member'
+      - '@fluentui/react-internal!IBasePickerProps#disabled:member'
+      - '@fluentui/react-internal!IBasePickerProps#enableSelectedSuggestionAlert:member'
+      - '@fluentui/react-internal!IBasePickerProps#getTextFromItem:member'
+      - '@fluentui/react-internal!IBasePickerProps#inputProps:member'
+      - '@fluentui/react-internal!IBasePickerProps#itemLimit:member'
+      - '@fluentui/react-internal!IBasePickerProps#onBlur:member'
+      - '@fluentui/react-internal!IBasePickerProps#onChange:member'
+      - '@fluentui/react-internal!IBasePickerProps#onDismiss:member'
+      - '@fluentui/react-internal!IBasePickerProps#onEmptyInputFocus:member'
+      - '@fluentui/react-internal!IBasePickerProps#onEmptyResolveSuggestions:member'
+      - '@fluentui/react-internal!IBasePickerProps#onFocus:member'
+      - '@fluentui/react-internal!IBasePickerProps#onGetMoreResults:member'
+      - '@fluentui/react-internal!IBasePickerProps#onInputChange:member'
+      - '@fluentui/react-internal!IBasePickerProps#onItemSelected:member'
+      - '@fluentui/react-internal!IBasePickerProps#onRemoveSuggestion:member'
+      - '@fluentui/react-internal!IBasePickerProps#onRenderItem:member'
+      - '@fluentui/react-internal!IBasePickerProps#onRenderSuggestionsItem:member'
+      - '@fluentui/react-internal!IBasePickerProps#onResolveSuggestions:member'
+      - '@fluentui/react-internal!IBasePickerProps#onValidateInput:member'
+      - '@fluentui/react-internal!IBasePickerProps#pickerCalloutProps:member'
+      - '@fluentui/react-internal!IBasePickerProps#pickerSuggestionsProps:member'
+      - '@fluentui/react-internal!IBasePickerProps#removeButtonAriaLabel:member'
+      - '@fluentui/react-internal!IBasePickerProps#resolveDelay:member'
+      - '@fluentui/react-internal!IBasePickerProps#searchingText:member'
+      - '@fluentui/react-internal!IBasePickerProps#selectedItems:member'
+      - '@fluentui/react-internal!IBasePickerProps#styles:member'
+      - '@fluentui/react-internal!IBasePickerProps#theme:member'
+  - uid: '@fluentui/react-internal!IBasePickerProps#className:member'
     summary: ClassName for the picker.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: className
+    fullName: className
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'className?: string;'
       return:
-        type: string
-  - name: componentRef
-    uid: '@fluentui/react-internal!IBasePickerProps#componentRef:member'
-    package: '@fluentui/react-internal!'
-    fullName: componentRef
+        type:
+          - string
+  - uid: '@fluentui/react-internal!IBasePickerProps#componentRef:member'
     summary: >-
-      Optional callback to access the IBasePicker interface. Use this instead of
-      ref for accessing the public methods and properties of the component.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Optional callback to access the IBasePicker interface. Use this instead of ref for accessing the public methods
+      and properties of the component.
+    name: componentRef
+    fullName: componentRef
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'componentRef?: IRefObject<IBasePicker<T>>;'
       return:
-        type: IRefObject&lt;IBasePicker&lt;T&gt;&gt;
-  - name: createGenericItem
-    uid: '@fluentui/react-internal!IBasePickerProps#createGenericItem:member'
-    package: '@fluentui/react-internal!'
+        type:
+          - IRefObject<IBasePicker<T>>
+  - uid: '@fluentui/react-internal!IBasePickerProps#createGenericItem:member'
+    summary: Function that specifies how arbitrary text entered into the well is handled.
+    name: createGenericItem
     fullName: createGenericItem
-    summary: >-
-      Function that specifies how arbitrary text entered into the well is
-      handled.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        createGenericItem?: (input: string, ValidationState: ValidationState) =>
-        ISuggestionModel<T> | T;
+      content: 'createGenericItem?: (input: string, ValidationState: ValidationState) => ISuggestionModel<T> | T;'
       return:
-        type: >-
-          (input: string, ValidationState: ValidationState) =&gt;
-          ISuggestionModel&lt;T&gt; | T
-  - name: defaultSelectedItems
-    uid: '@fluentui/react-internal!IBasePickerProps#defaultSelectedItems:member'
-    package: '@fluentui/react-internal!'
+        type:
+          - '(input: string, ValidationState: ValidationState) => ISuggestionModel<T> | T'
+  - uid: '@fluentui/react-internal!IBasePickerProps#defaultSelectedItems:member'
+    summary: Initial items that have already been selected and should appear in the people picker.
+    name: defaultSelectedItems
     fullName: defaultSelectedItems
-    summary: >-
-      Initial items that have already been selected and should appear in the
-      people picker.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'defaultSelectedItems?: T[];'
       return:
-        type: 'T[]'
-  - name: disabled
-    uid: '@fluentui/react-internal!IBasePickerProps#disabled:member'
-    package: '@fluentui/react-internal!'
-    fullName: disabled
+        type:
+          - 'T[]'
+  - uid: '@fluentui/react-internal!IBasePickerProps#disabled:member'
     summary: Flag for disabling the picker.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: disabled
+    fullName: disabled
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'disabled?: boolean;'
       return:
-        type: boolean
-  - name: enableSelectedSuggestionAlert
-    uid: >-
-      @fluentui/react-internal!IBasePickerProps#enableSelectedSuggestionAlert:member
-    package: '@fluentui/react-internal!'
-    fullName: enableSelectedSuggestionAlert
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!IBasePickerProps#enableSelectedSuggestionAlert:member'
     summary: >-
-      Adds an additional alert for the currently selected suggestion. This prop
-      should be set to true for IE11 and below, as it enables proper screen
-      reader behavior for each suggestion (since aria-activedescendant does not
-      work with IE11). It should not be set for modern browsers (Edge, Chrome).
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Adds an additional alert for the currently selected suggestion. This prop should be set to true for IE11 and
+      below, as it enables proper screen reader behavior for each suggestion (since aria-activedescendant does not work
+      with IE11). It should not be set for modern browsers (Edge, Chrome).
+    name: enableSelectedSuggestionAlert
+    fullName: enableSelectedSuggestionAlert
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'enableSelectedSuggestionAlert?: boolean;'
       return:
-        type: boolean
-  - name: getTextFromItem
-    uid: '@fluentui/react-internal!IBasePickerProps#getTextFromItem:member'
-    package: '@fluentui/react-internal!'
-    fullName: getTextFromItem
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!IBasePickerProps#getTextFromItem:member'
     summary: A callback to get text from an item. Used to autofill text in the pickers.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: getTextFromItem
+    fullName: getTextFromItem
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'getTextFromItem?: (item: T, currentValue?: string) => string;'
       return:
-        type: '(item: T, currentValue?: string) =&gt; string'
-  - name: inputProps
-    uid: '@fluentui/react-internal!IBasePickerProps#inputProps:member'
-    package: '@fluentui/react-internal!'
-    fullName: inputProps
+        type:
+          - '(item: T, currentValue?: string) => string'
+  - uid: '@fluentui/react-internal!IBasePickerProps#inputProps:member'
     summary: AutoFill input native props
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: inputProps
+    fullName: inputProps
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'inputProps?: IInputProps;'
       return:
-        type: IInputProps
-  - name: itemLimit
-    uid: '@fluentui/react-internal!IBasePickerProps#itemLimit:member'
-    package: '@fluentui/react-internal!'
-    fullName: itemLimit
+        type:
+          - IInputProps
+  - uid: '@fluentui/react-internal!IBasePickerProps#itemLimit:member'
     summary: Restrict the amount of selectable items.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: itemLimit
+    fullName: itemLimit
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'itemLimit?: number;'
       return:
-        type: number
-  - name: onBlur
-    uid: '@fluentui/react-internal!IBasePickerProps#onBlur:member'
-    package: '@fluentui/react-internal!'
-    fullName: onBlur
+        type:
+          - number
+  - uid: '@fluentui/react-internal!IBasePickerProps#onBlur:member'
     summary: A callback for when the user moves the focus away from the picker
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onBlur
+    fullName: onBlur
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onBlur?: React.FocusEventHandler<HTMLInputElement | Autofill>;'
       return:
-        type: React.FocusEventHandler&lt;HTMLInputElement | Autofill&gt;
-  - name: onChange
-    uid: '@fluentui/react-internal!IBasePickerProps#onChange:member'
-    package: '@fluentui/react-internal!'
-    fullName: onChange
+        type:
+          - React.FocusEventHandler<HTMLInputElement | Autofill>
+  - uid: '@fluentui/react-internal!IBasePickerProps#onChange:member'
     summary: A callback for when the selected list of items changes.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onChange
+    fullName: onChange
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onChange?: (items?: T[]) => void;'
       return:
-        type: '(items?: T[]) =&gt; void'
-  - name: onDismiss
-    uid: '@fluentui/react-internal!IBasePickerProps#onDismiss:member'
-    package: '@fluentui/react-internal!'
-    fullName: onDismiss
+        type:
+          - '(items?: T[]) => void'
+  - uid: '@fluentui/react-internal!IBasePickerProps#onDismiss:member'
     summary: >-
-      A callback to override the default behavior of adding the selected
-      suggestion on dismiss. If it returns true or nothing, the selected item
-      will be added on dismiss. If false, the selected item will not be added on
-      dismiss.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      A callback to override the default behavior of adding the selected suggestion on dismiss. If it returns true or
+      nothing, the selected item will be added on dismiss. If false, the selected item will not be added on dismiss.
+    name: onDismiss
+    fullName: onDismiss
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onDismiss?: (ev?: any, selectedItem?: T) => boolean | void;'
       return:
-        type: '(ev?: any, selectedItem?: T) =&gt; boolean | void'
-  - name: onEmptyInputFocus
-    uid: '@fluentui/react-internal!IBasePickerProps#onEmptyInputFocus:member'
-    package: '@fluentui/react-internal!'
+        type:
+          - '(ev?: any, selectedItem?: T) => boolean | void'
+  - uid: '@fluentui/react-internal!IBasePickerProps#onEmptyInputFocus:member'
+    summary: A callback for what should happen when a user clicks within the input area.
+    deprecated:
+      content: >-
+        Please use onEmptyResolveSuggestions instead, as the suggestions aren't about setting focus as they are about
+        resolving suggestions when there is no input.
+    name: onEmptyInputFocus
     fullName: onEmptyInputFocus
-    summary: >-
-      A callback for what should happen when a user clicks within the input
-      area.
-    remarks: ''
-    isPreview: false
-    isDeprecated: true
-    customDeprecatedMessage: >-
-      Please use onEmptyResolveSuggestions instead, as the suggestions aren't
-      about setting focus as they are about resolving suggestions when there is
-      no input.
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onEmptyInputFocus?: (selectedItems?: T[]) => T[] | PromiseLike<T[]>;'
       return:
-        type: '(selectedItems?: T[]) =&gt; T[] | PromiseLike&lt;T[]&gt;'
-  - name: onEmptyResolveSuggestions
-    uid: '@fluentui/react-internal!IBasePickerProps#onEmptyResolveSuggestions:member'
-    package: '@fluentui/react-internal!'
-    fullName: onEmptyResolveSuggestions
+        type:
+          - '(selectedItems?: T[]) => T[] | PromiseLike<T[]>'
+  - uid: '@fluentui/react-internal!IBasePickerProps#onEmptyResolveSuggestions:member'
     summary: >-
-      A callback for what should happen when suggestions are shown without input
-      provided. Returns the already selected items so the resolver can filter
-      them out. If used in conjunction with resolveDelay this will only kick off
-      after the delay throttle.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      A callback for what should happen when suggestions are shown without input provided. Returns the already selected
+      items so the resolver can filter them out. If used in conjunction with resolveDelay this will only kick off after
+      the delay throttle.
+    name: onEmptyResolveSuggestions
+    fullName: onEmptyResolveSuggestions
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        onEmptyResolveSuggestions?: (selectedItems?: T[]) => T[] |
-        PromiseLike<T[]>;
+      content: 'onEmptyResolveSuggestions?: (selectedItems?: T[]) => T[] | PromiseLike<T[]>;'
       return:
-        type: '(selectedItems?: T[]) =&gt; T[] | PromiseLike&lt;T[]&gt;'
-  - name: onFocus
-    uid: '@fluentui/react-internal!IBasePickerProps#onFocus:member'
-    package: '@fluentui/react-internal!'
-    fullName: onFocus
+        type:
+          - '(selectedItems?: T[]) => T[] | PromiseLike<T[]>'
+  - uid: '@fluentui/react-internal!IBasePickerProps#onFocus:member'
     summary: A callback for when the user put focus on the picker
-    remarks: ''
-    isPreview: false
-    isDeprecated: true
-    customDeprecatedMessage: Use `inputProps.onFocus` instead
+    deprecated:
+      content: Use `inputProps.onFocus` instead
+    name: onFocus
+    fullName: onFocus
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onFocus?: React.FocusEventHandler<HTMLInputElement | Autofill>;'
       return:
-        type: React.FocusEventHandler&lt;HTMLInputElement | Autofill&gt;
-  - name: onGetMoreResults
-    uid: '@fluentui/react-internal!IBasePickerProps#onGetMoreResults:member'
-    package: '@fluentui/react-internal!'
+        type:
+          - React.FocusEventHandler<HTMLInputElement | Autofill>
+  - uid: '@fluentui/react-internal!IBasePickerProps#onGetMoreResults:member'
+    summary: A callback that gets the rest of the results when a user clicks get more results.
+    name: onGetMoreResults
     fullName: onGetMoreResults
-    summary: >-
-      A callback that gets the rest of the results when a user clicks get more
-      results.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        onGetMoreResults?: (filter: string, selectedItems?: T[]) => T[] |
-        PromiseLike<T[]>;
+      content: 'onGetMoreResults?: (filter: string, selectedItems?: T[]) => T[] | PromiseLike<T[]>;'
       return:
-        type: >-
-          (filter: string, selectedItems?: T[]) =&gt; T[] |
-          PromiseLike&lt;T[]&gt;
-  - name: onInputChange
-    uid: '@fluentui/react-internal!IBasePickerProps#onInputChange:member'
-    package: '@fluentui/react-internal!'
-    fullName: onInputChange
+        type:
+          - '(filter: string, selectedItems?: T[]) => T[] | PromiseLike<T[]>'
+  - uid: '@fluentui/react-internal!IBasePickerProps#onInputChange:member'
     summary: A callback used to modify the input string.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onInputChange
+    fullName: onInputChange
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onInputChange?: (input: string) => string;'
       return:
-        type: '(input: string) =&gt; string'
-  - name: onItemSelected
-    uid: '@fluentui/react-internal!IBasePickerProps#onItemSelected:member'
-    package: '@fluentui/react-internal!'
-    fullName: onItemSelected
+        type:
+          - '(input: string) => string'
+  - uid: '@fluentui/react-internal!IBasePickerProps#onItemSelected:member'
     summary: >-
-      A callback to process a selection after the user selects something from
-      the picker. If the callback returns null, the item will not be added to
-      the picker.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      A callback to process a selection after the user selects something from the picker. If the callback returns null,
+      the item will not be added to the picker.
+    name: onItemSelected
+    fullName: onItemSelected
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onItemSelected?: (selectedItem?: T) => T | PromiseLike<T> | null;'
       return:
-        type: '(selectedItem?: T) =&gt; T | PromiseLike&lt;T&gt; | null'
-  - name: onRemoveSuggestion
-    uid: '@fluentui/react-internal!IBasePickerProps#onRemoveSuggestion:member'
-    package: '@fluentui/react-internal!'
-    fullName: onRemoveSuggestion
+        type:
+          - '(selectedItem?: T) => T | PromiseLike<T> | null'
+  - uid: '@fluentui/react-internal!IBasePickerProps#onRemoveSuggestion:member'
     summary: A callback for when an item is removed from the suggestion list
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onRemoveSuggestion
+    fullName: onRemoveSuggestion
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onRemoveSuggestion?: (item: T) => void;'
       return:
-        type: '(item: T) =&gt; void'
-  - name: onRenderItem
-    uid: '@fluentui/react-internal!IBasePickerProps#onRenderItem:member'
-    package: '@fluentui/react-internal!'
-    fullName: onRenderItem
+        type:
+          - '(item: T) => void'
+  - uid: '@fluentui/react-internal!IBasePickerProps#onRenderItem:member'
     summary: Function that specifies how the selected item will appear.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onRenderItem
+    fullName: onRenderItem
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onRenderItem?: (props: IPickerItemProps<T>) => JSX.Element;'
       return:
-        type: '(props: IPickerItemProps&lt;T&gt;) =&gt; JSX.Element'
-  - name: onRenderSuggestionsItem
-    uid: '@fluentui/react-internal!IBasePickerProps#onRenderSuggestionsItem:member'
-    package: '@fluentui/react-internal!'
-    fullName: onRenderSuggestionsItem
+        type:
+          - '(props: IPickerItemProps<T>) => JSX.Element'
+  - uid: '@fluentui/react-internal!IBasePickerProps#onRenderSuggestionsItem:member'
     summary: Function that specifies how an individual suggestion item will appear.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onRenderSuggestionsItem
+    fullName: onRenderSuggestionsItem
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        onRenderSuggestionsItem?: (props: T, itemProps: ISuggestionItemProps<T>)
-        => JSX.Element;
+      content: 'onRenderSuggestionsItem?: (props: T, itemProps: ISuggestionItemProps<T>) => JSX.Element;'
       return:
-        type: '(props: T, itemProps: ISuggestionItemProps&lt;T&gt;) =&gt; JSX.Element'
-  - name: onResolveSuggestions
-    uid: '@fluentui/react-internal!IBasePickerProps#onResolveSuggestions:member'
-    package: '@fluentui/react-internal!'
+        type:
+          - '(props: T, itemProps: ISuggestionItemProps<T>) => JSX.Element'
+  - uid: '@fluentui/react-internal!IBasePickerProps#onResolveSuggestions:member'
+    summary: >-
+      A callback for what should happen when a person types text into the input. Returns the already selected items so
+      the resolver can filter them out. If used in conjunction with resolveDelay this will only kick off after the delay
+      throttle.
+    name: onResolveSuggestions
     fullName: onResolveSuggestions
-    summary: >-
-      A callback for what should happen when a person types text into the input.
-      Returns the already selected items so the resolver can filter them out. If
-      used in conjunction with resolveDelay this will only kick off after the
-      delay throttle.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        onResolveSuggestions: (filter: string, selectedItems?: T[]) => T[] |
-        PromiseLike<T[]>;
+      content: 'onResolveSuggestions: (filter: string, selectedItems?: T[]) => T[] | PromiseLike<T[]>;'
       return:
-        type: >-
-          (filter: string, selectedItems?: T[]) =&gt; T[] |
-          PromiseLike&lt;T[]&gt;
-  - name: onValidateInput
-    uid: '@fluentui/react-internal!IBasePickerProps#onValidateInput:member'
-    package: '@fluentui/react-internal!'
+        type:
+          - '(filter: string, selectedItems?: T[]) => T[] | PromiseLike<T[]>'
+  - uid: '@fluentui/react-internal!IBasePickerProps#onValidateInput:member'
+    summary: A function used to validate if raw text entered into the well can be added into the selected items list
+    name: onValidateInput
     fullName: onValidateInput
-    summary: >-
-      A function used to validate if raw text entered into the well can be added
-      into the selected items list
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onValidateInput?: (input: string) => ValidationState;'
       return:
-        type: '(input: string) =&gt; ValidationState'
-  - name: pickerCalloutProps
-    uid: '@fluentui/react-internal!IBasePickerProps#pickerCalloutProps:member'
-    package: '@fluentui/react-internal!'
-    fullName: pickerCalloutProps
+        type:
+          - '(input: string) => ValidationState'
+  - uid: '@fluentui/react-internal!IBasePickerProps#pickerCalloutProps:member'
     summary: The properties that will get passed to the Callout component.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: pickerCalloutProps
+    fullName: pickerCalloutProps
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'pickerCalloutProps?: ICalloutProps;'
       return:
-        type: ICalloutProps
-  - name: pickerSuggestionsProps
-    uid: '@fluentui/react-internal!IBasePickerProps#pickerSuggestionsProps:member'
-    package: '@fluentui/react-internal!'
-    fullName: pickerSuggestionsProps
+        type:
+          - ICalloutProps
+  - uid: '@fluentui/react-internal!IBasePickerProps#pickerSuggestionsProps:member'
     summary: The properties that will get passed to the Suggestions component.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: pickerSuggestionsProps
+    fullName: pickerSuggestionsProps
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'pickerSuggestionsProps?: IBasePickerSuggestionsProps;'
       return:
-        type: IBasePickerSuggestionsProps
-  - name: removeButtonAriaLabel
-    uid: '@fluentui/react-internal!IBasePickerProps#removeButtonAriaLabel:member'
-    package: '@fluentui/react-internal!'
-    fullName: removeButtonAriaLabel
+        type:
+          - IBasePickerSuggestionsProps
+  - uid: '@fluentui/react-internal!IBasePickerProps#removeButtonAriaLabel:member'
     summary: Aria label for the "X" button in the selected item component.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: removeButtonAriaLabel
+    fullName: removeButtonAriaLabel
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'removeButtonAriaLabel?: string;'
       return:
-        type: string
-  - name: resolveDelay
-    uid: '@fluentui/react-internal!IBasePickerProps#resolveDelay:member'
-    package: '@fluentui/react-internal!'
-    fullName: resolveDelay
+        type:
+          - string
+  - uid: '@fluentui/react-internal!IBasePickerProps#resolveDelay:member'
     summary: >-
-      The delay time in ms before resolving suggestions, which is kicked off
-      when input has been changed. e.g. If a second input change happens within
-      the resolveDelay time, the timer will start over. Only until after the
-      timer completes will onResolveSuggestions be called.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      The delay time in ms before resolving suggestions, which is kicked off when input has been changed. e.g. If a
+      second input change happens within the resolveDelay time, the timer will start over. Only until after the timer
+      completes will onResolveSuggestions be called.
+    name: resolveDelay
+    fullName: resolveDelay
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'resolveDelay?: number;'
       return:
-        type: number
-  - name: searchingText
-    uid: '@fluentui/react-internal!IBasePickerProps#searchingText:member'
-    package: '@fluentui/react-internal!'
+        type:
+          - number
+  - uid: '@fluentui/react-internal!IBasePickerProps#searchingText:member'
+    summary: The text to display while searching for more results in a limited suggestions list
+    name: searchingText
     fullName: searchingText
-    summary: >-
-      The text to display while searching for more results in a limited
-      suggestions list
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: |-
         searchingText?: ((props: {
                 input: string;
             }) => string) | string;
       return:
-        type: |-
-          ((props: {
-                  input: string;
-              }) =&gt; string) | string
-  - name: selectedItems
-    uid: '@fluentui/react-internal!IBasePickerProps#selectedItems:member'
-    package: '@fluentui/react-internal!'
-    fullName: selectedItems
+        type:
+          - |-
+            ((props: {
+                    input: string;
+                }) => string) | string
+  - uid: '@fluentui/react-internal!IBasePickerProps#selectedItems:member'
     summary: >-
-      The items that the base picker should currently display as selected. If
-      this is provided then the picker will act as a controlled component.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      The items that the base picker should currently display as selected. If this is provided then the picker will act
+      as a controlled component.
+    name: selectedItems
+    fullName: selectedItems
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'selectedItems?: T[];'
       return:
-        type: 'T[]'
-  - name: styles
-    uid: '@fluentui/react-internal!IBasePickerProps#styles:member'
-    package: '@fluentui/react-internal!'
+        type:
+          - 'T[]'
+  - uid: '@fluentui/react-internal!IBasePickerProps#styles:member'
+    summary: Call to provide customized styling that will layer on top of the variant rules.
+    name: styles
     fullName: styles
-    summary: >-
-      Call to provide customized styling that will layer on top of the variant
-      rules.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        styles?: IStyleFunctionOrObject<IBasePickerStyleProps,
-        IBasePickerStyles>;
+      content: 'styles?: IStyleFunctionOrObject<IBasePickerStyleProps, IBasePickerStyles>;'
       return:
-        type: 'IStyleFunctionOrObject&lt;IBasePickerStyleProps, IBasePickerStyles&gt;'
-  - name: theme
-    uid: '@fluentui/react-internal!IBasePickerProps#theme:member'
-    package: '@fluentui/react-internal!'
-    fullName: theme
+        type:
+          - 'IStyleFunctionOrObject<IBasePickerStyleProps, IBasePickerStyles>'
+  - uid: '@fluentui/react-internal!IBasePickerProps#theme:member'
     summary: Theme provided by styled() function.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'theme?: ITheme;'
       return:
-        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
-extends: 'React.Props&lt;any&gt; '
+        type:
+          - '@fluentui/theme!ITheme:interface'

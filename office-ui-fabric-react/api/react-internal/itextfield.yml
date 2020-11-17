@@ -1,125 +1,129 @@
-### YamlMime:TSType
-name: ITextField
-uid: '@fluentui/react-internal!ITextField:interface'
-package: '@fluentui/react-internal!'
-fullName: ITextField
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: blur
-    uid: '@fluentui/react-internal!ITextField#blur:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-internal!ITextField:interface'
+    name: ITextField
+    fullName: ITextField
+    langs:
+      - typeScript
+    type: interface
     package: '@fluentui/react-internal!'
-    fullName: blur
+    children:
+      - '@fluentui/react-internal!ITextField#blur:member'
+      - '@fluentui/react-internal!ITextField#focus:member'
+      - '@fluentui/react-internal!ITextField#select:member'
+      - '@fluentui/react-internal!ITextField#selectionEnd:member'
+      - '@fluentui/react-internal!ITextField#selectionStart:member'
+      - '@fluentui/react-internal!ITextField#setSelectionEnd:member'
+      - '@fluentui/react-internal!ITextField#setSelectionRange:member'
+      - '@fluentui/react-internal!ITextField#setSelectionStart:member'
+      - '@fluentui/react-internal!ITextField#value:member'
+  - uid: '@fluentui/react-internal!ITextField#blur:member'
     summary: Blurs the input
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: blur
+    fullName: blur
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'blur: () => void;'
       return:
-        type: () =&gt; void
-  - name: focus
-    uid: '@fluentui/react-internal!ITextField#focus:member'
-    package: '@fluentui/react-internal!'
-    fullName: focus
+        type:
+          - () => void
+  - uid: '@fluentui/react-internal!ITextField#focus:member'
     summary: Sets focus to the input.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: focus
+    fullName: focus
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'focus: () => void;'
       return:
-        type: () =&gt; void
-  - name: select
-    uid: '@fluentui/react-internal!ITextField#select:member'
-    package: '@fluentui/react-internal!'
-    fullName: select
+        type:
+          - () => void
+  - uid: '@fluentui/react-internal!ITextField#select:member'
     summary: Select the value of the text field.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: select
+    fullName: select
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'select: () => void;'
       return:
-        type: () =&gt; void
-  - name: selectionEnd
-    uid: '@fluentui/react-internal!ITextField#selectionEnd:member'
-    package: '@fluentui/react-internal!'
+        type:
+          - () => void
+  - uid: '@fluentui/react-internal!ITextField#selectionEnd:member'
+    summary: Gets the selection end of the text field. Returns -1 if there is no selection.
+    name: selectionEnd
     fullName: selectionEnd
-    summary: >-
-      Gets the selection end of the text field. Returns -1 if there is no
-      selection.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'selectionEnd: number | null;'
       return:
-        type: number | null
-  - name: selectionStart
-    uid: '@fluentui/react-internal!ITextField#selectionStart:member'
-    package: '@fluentui/react-internal!'
+        type:
+          - number | null
+  - uid: '@fluentui/react-internal!ITextField#selectionStart:member'
+    summary: Gets the selection start of the text field. Returns -1 if there is no selection.
+    name: selectionStart
     fullName: selectionStart
-    summary: >-
-      Gets the selection start of the text field. Returns -1 if there is no
-      selection.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'selectionStart: number | null;'
       return:
-        type: number | null
-  - name: setSelectionEnd
-    uid: '@fluentui/react-internal!ITextField#setSelectionEnd:member'
-    package: '@fluentui/react-internal!'
-    fullName: setSelectionEnd
+        type:
+          - number | null
+  - uid: '@fluentui/react-internal!ITextField#setSelectionEnd:member'
     summary: Sets the selection end of the text field to a specified value.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: setSelectionEnd
+    fullName: setSelectionEnd
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'setSelectionEnd: (value: number) => void;'
       return:
-        type: '(value: number) =&gt; void'
-  - name: setSelectionRange
-    uid: '@fluentui/react-internal!ITextField#setSelectionRange:member'
-    package: '@fluentui/react-internal!'
-    fullName: setSelectionRange
+        type:
+          - '(value: number) => void'
+  - uid: '@fluentui/react-internal!ITextField#setSelectionRange:member'
     summary: >-
-      Sets the start and end positions of a selection in a text field. Call with
-      start and end set to the same value to set the cursor position.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Sets the start and end positions of a selection in a text field. Call with start and end set to the same value to
+      set the cursor position.
+    name: setSelectionRange
+    fullName: setSelectionRange
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'setSelectionRange: (start: number, end: number) => void;'
       return:
-        type: '(start: number, end: number) =&gt; void'
-  - name: setSelectionStart
-    uid: '@fluentui/react-internal!ITextField#setSelectionStart:member'
-    package: '@fluentui/react-internal!'
-    fullName: setSelectionStart
+        type:
+          - '(start: number, end: number) => void'
+  - uid: '@fluentui/react-internal!ITextField#setSelectionStart:member'
     summary: Sets the selection start of the text field to a specified value.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: setSelectionStart
+    fullName: setSelectionStart
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'setSelectionStart: (value: number) => void;'
       return:
-        type: '(value: number) =&gt; void'
-  - name: value
-    uid: '@fluentui/react-internal!ITextField#value:member'
-    package: '@fluentui/react-internal!'
-    fullName: value
+        type:
+          - '(value: number) => void'
+  - uid: '@fluentui/react-internal!ITextField#value:member'
     summary: Gets the current value of the input.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: value
+    fullName: value
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'value: string | undefined;'
       return:
-        type: string | undefined
+        type:
+          - string | undefined

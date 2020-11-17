@@ -1,133 +1,132 @@
-### YamlMime:TSType
-name: OverflowSetBase
-uid: 'office-ui-fabric-react!OverflowSetBase:class'
-package: office-ui-fabric-react!
-fullName: OverflowSetBase
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: class
-constructors:
-  - name: (constructor)(props)
-    uid: 'office-ui-fabric-react!OverflowSetBase:constructor(1)'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-ui-fabric-react!OverflowSetBase:class'
+    name: OverflowSetBase
+    fullName: OverflowSetBase
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'React.Component<IOverflowSetProps, {}> '
+    implements:
+      - 'IOverflowSet '
     package: office-ui-fabric-react!
-    fullName: (constructor)(props)
+    children:
+      - 'office-ui-fabric-react!OverflowSetBase:constructor(1)'
+      - 'office-ui-fabric-react!OverflowSetBase#componentDidMount:member(1)'
+      - 'office-ui-fabric-react!OverflowSetBase#componentDidUpdate:member(1)'
+      - 'office-ui-fabric-react!OverflowSetBase#componentWillUnmount:member(1)'
+      - 'office-ui-fabric-react!OverflowSetBase#focus:member(1)'
+      - 'office-ui-fabric-react!OverflowSetBase#focusElement:member(1)'
+      - 'office-ui-fabric-react!OverflowSetBase#render:member(1)'
+      - 'office-ui-fabric-react!OverflowSetBase#UNSAFE_componentWillUpdate:member(1)'
+  - uid: 'office-ui-fabric-react!OverflowSetBase:constructor(1)'
     summary: Constructs a new instance of the `OverflowSetBase` class
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: (constructor)(props)
+    fullName: (constructor)(props)
+    langs:
+      - typeScript
+    type: constructor
     syntax:
       content: 'constructor(props: IOverflowSetProps);'
       parameters:
         - id: props
           description: ''
-          type: IOverflowSetProps
-methods:
-  - name: componentDidMount()
-    uid: 'office-ui-fabric-react!OverflowSetBase#componentDidMount:member(1)'
-    package: office-ui-fabric-react!
+          type:
+            - IOverflowSetProps
+  - uid: 'office-ui-fabric-react!OverflowSetBase#componentDidMount:member(1)'
+    name: componentDidMount()
     fullName: componentDidMount()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'componentDidMount(): void;'
       return:
-        type: void
+        type:
+          - void
         description: ''
-  - name: componentDidUpdate()
-    uid: 'office-ui-fabric-react!OverflowSetBase#componentDidUpdate:member(1)'
-    package: office-ui-fabric-react!
+  - uid: 'office-ui-fabric-react!OverflowSetBase#componentDidUpdate:member(1)'
+    name: componentDidUpdate()
     fullName: componentDidUpdate()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'componentDidUpdate(): void;'
       return:
-        type: void
+        type:
+          - void
         description: ''
-  - name: componentWillUnmount()
-    uid: 'office-ui-fabric-react!OverflowSetBase#componentWillUnmount:member(1)'
-    package: office-ui-fabric-react!
+  - uid: 'office-ui-fabric-react!OverflowSetBase#componentWillUnmount:member(1)'
+    name: componentWillUnmount()
     fullName: componentWillUnmount()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'componentWillUnmount(): void;'
       return:
-        type: void
+        type:
+          - void
         description: ''
-  - name: focus(forceIntoFirstElement)
-    uid: 'office-ui-fabric-react!OverflowSetBase#focus:member(1)'
-    package: office-ui-fabric-react!
-    fullName: focus(forceIntoFirstElement)
+  - uid: 'office-ui-fabric-react!OverflowSetBase#focus:member(1)'
     summary: Sets focus to the first tabbable item in the OverflowSet.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: focus(forceIntoFirstElement)
+    fullName: focus(forceIntoFirstElement)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'focus(forceIntoFirstElement?: boolean): boolean;'
+      return:
+        type:
+          - boolean
+        description: 'True if focus could be set to an active element, false if no operation was taken.'
       parameters:
         - id: forceIntoFirstElement
-          description: >-
-            If true, focus will be forced into the first element, even if focus
-            is already in theOverflowSet
-          type: boolean
-      return:
-        type: boolean
-        description: >-
-          True if focus could be set to an active element, false if no operation
-          was taken.
-  - name: focusElement(childElement)
-    uid: 'office-ui-fabric-react!OverflowSetBase#focusElement:member(1)'
-    package: office-ui-fabric-react!
-    fullName: focusElement(childElement)
+          description: 'If true, focus will be forced into the first element, even if focus is already in theOverflowSet'
+          type:
+            - boolean
+  - uid: 'office-ui-fabric-react!OverflowSetBase#focusElement:member(1)'
     summary: Sets focus to a specific child element within the OverflowSet.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: focusElement(childElement)
+    fullName: focusElement(childElement)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'focusElement(childElement?: HTMLElement): boolean;'
+      return:
+        type:
+          - boolean
+        description: 'True if focus could be set to an active element, false if no operation was taken.'
       parameters:
         - id: childElement
           description: The child element within the zone to focus.
-          type: HTMLElement
-      return:
-        type: boolean
-        description: >-
-          True if focus could be set to an active element, false if no operation
-          was taken.
-  - name: render()
-    uid: 'office-ui-fabric-react!OverflowSetBase#render:member(1)'
-    package: office-ui-fabric-react!
+          type:
+            - HTMLElement
+  - uid: 'office-ui-fabric-react!OverflowSetBase#render:member(1)'
+    name: render()
     fullName: render()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'render(): JSX.Element;'
       return:
-        type: JSX.Element
+        type:
+          - JSX.Element
         description: ''
-  - name: UNSAFE_componentWillUpdate()
-    uid: >-
-      office-ui-fabric-react!OverflowSetBase#UNSAFE_componentWillUpdate:member(1)
-    package: office-ui-fabric-react!
+  - uid: 'office-ui-fabric-react!OverflowSetBase#UNSAFE_componentWillUpdate:member(1)'
+    name: UNSAFE_componentWillUpdate()
     fullName: UNSAFE_componentWillUpdate()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'UNSAFE_componentWillUpdate(): void;'
       return:
-        type: void
+        type:
+          - void
         description: ''
-extends: 'React.Component&lt;IOverflowSetProps, {}&gt; '

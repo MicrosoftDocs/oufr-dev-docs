@@ -1,123 +1,122 @@
-### YamlMime:TSType
-name: SuggestionsStore
-uid: 'office-ui-fabric-react!SuggestionsStore:class'
-package: office-ui-fabric-react!
-fullName: SuggestionsStore
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: class
-constructors:
-  - name: (constructor)(options)
-    uid: 'office-ui-fabric-react!SuggestionsStore:constructor(1)'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-ui-fabric-react!SuggestionsStore:class'
+    name: SuggestionsStore
+    fullName: SuggestionsStore
+    langs:
+      - typeScript
+    type: class
     package: office-ui-fabric-react!
-    fullName: (constructor)(options)
+    children:
+      - 'office-ui-fabric-react!SuggestionsStore:constructor(1)'
+      - 'office-ui-fabric-react!SuggestionsStore#convertSuggestionsToSuggestionItems:member(1)'
+      - 'office-ui-fabric-react!SuggestionsStore#getSuggestionAtIndex:member(1)'
+      - 'office-ui-fabric-react!SuggestionsStore#getSuggestions:member(1)'
+      - 'office-ui-fabric-react!SuggestionsStore#removeSuggestion:member(1)'
+      - 'office-ui-fabric-react!SuggestionsStore#suggestions:member'
+      - 'office-ui-fabric-react!SuggestionsStore#updateSuggestions:member(1)'
+  - uid: 'office-ui-fabric-react!SuggestionsStore:constructor(1)'
     summary: Constructs a new instance of the `SuggestionsStore` class
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: (constructor)(options)
+    fullName: (constructor)(options)
+    langs:
+      - typeScript
+    type: constructor
     syntax:
       content: 'constructor(options?: SuggestionsStoreOptions<T>);'
       parameters:
         - id: options
           description: ''
-          type: SuggestionsStoreOptions&lt;T&gt;
-properties:
-  - name: suggestions
-    uid: 'office-ui-fabric-react!SuggestionsStore#suggestions:member'
-    package: office-ui-fabric-react!
-    fullName: suggestions
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'suggestions: ISuggestionModel<T>[];'
-      return:
-        type: 'ISuggestionModel&lt;T&gt;[]'
-methods:
-  - name: convertSuggestionsToSuggestionItems(suggestions)
-    uid: >-
-      office-ui-fabric-react!SuggestionsStore#convertSuggestionsToSuggestionItems:member(1)
-    package: office-ui-fabric-react!
+          type:
+            - SuggestionsStoreOptions<T>
+  - uid: 'office-ui-fabric-react!SuggestionsStore#convertSuggestionsToSuggestionItems:member(1)'
+    name: convertSuggestionsToSuggestionItems(suggestions)
     fullName: convertSuggestionsToSuggestionItems(suggestions)
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        convertSuggestionsToSuggestionItems(suggestions:
-        Array<ISuggestionModel<T> | T>): ISuggestionModel<T>[];
+      content: 'convertSuggestionsToSuggestionItems(suggestions: Array<ISuggestionModel<T> | T>): ISuggestionModel<T>[];'
+      return:
+        type:
+          - 'ISuggestionModel<T>[]'
+        description: ''
       parameters:
         - id: suggestions
           description: ''
-          type: Array&lt;ISuggestionModel&lt;T&gt; | T&gt;
-      return:
-        type: 'ISuggestionModel&lt;T&gt;[]'
-        description: ''
-  - name: getSuggestionAtIndex(index)
-    uid: 'office-ui-fabric-react!SuggestionsStore#getSuggestionAtIndex:member(1)'
-    package: office-ui-fabric-react!
+          type:
+            - Array<ISuggestionModel<T> | T>
+  - uid: 'office-ui-fabric-react!SuggestionsStore#getSuggestionAtIndex:member(1)'
+    name: getSuggestionAtIndex(index)
     fullName: getSuggestionAtIndex(index)
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'getSuggestionAtIndex(index: number): ISuggestionModel<T>;'
+      return:
+        type:
+          - ISuggestionModel<T>
+        description: ''
       parameters:
         - id: index
           description: ''
-          type: number
-      return:
-        type: ISuggestionModel&lt;T&gt;
-        description: ''
-  - name: getSuggestions()
-    uid: 'office-ui-fabric-react!SuggestionsStore#getSuggestions:member(1)'
-    package: office-ui-fabric-react!
+          type:
+            - number
+  - uid: 'office-ui-fabric-react!SuggestionsStore#getSuggestions:member(1)'
+    name: getSuggestions()
     fullName: getSuggestions()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'getSuggestions(): ISuggestionModel<T>[];'
       return:
-        type: 'ISuggestionModel&lt;T&gt;[]'
+        type:
+          - 'ISuggestionModel<T>[]'
         description: ''
-  - name: removeSuggestion(index)
-    uid: 'office-ui-fabric-react!SuggestionsStore#removeSuggestion:member(1)'
-    package: office-ui-fabric-react!
+  - uid: 'office-ui-fabric-react!SuggestionsStore#removeSuggestion:member(1)'
+    name: removeSuggestion(index)
     fullName: removeSuggestion(index)
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'removeSuggestion(index: number): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: index
           description: ''
-          type: number
+          type:
+            - number
+  - uid: 'office-ui-fabric-react!SuggestionsStore#suggestions:member'
+    name: suggestions
+    fullName: suggestions
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'suggestions: ISuggestionModel<T>[];'
       return:
-        type: void
-        description: ''
-  - name: updateSuggestions(newSuggestions)
-    uid: 'office-ui-fabric-react!SuggestionsStore#updateSuggestions:member(1)'
-    package: office-ui-fabric-react!
+        type:
+          - 'ISuggestionModel<T>[]'
+  - uid: 'office-ui-fabric-react!SuggestionsStore#updateSuggestions:member(1)'
+    name: updateSuggestions(newSuggestions)
     fullName: updateSuggestions(newSuggestions)
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'updateSuggestions(newSuggestions: T[]): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: newSuggestions
           description: ''
-          type: 'T[]'
-      return:
-        type: void
-        description: ''
+          type:
+            - 'T[]'

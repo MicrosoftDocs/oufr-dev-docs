@@ -1,25 +1,27 @@
-### YamlMime:TSType
-name: IDropdownOption
-uid: 'office-ui-fabric-react!IDropdownOption:interface'
-package: office-ui-fabric-react!
-fullName: IDropdownOption
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: isSelected
-    uid: 'office-ui-fabric-react!IDropdownOption#isSelected:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-ui-fabric-react!IDropdownOption:interface'
+    name: IDropdownOption
+    fullName: IDropdownOption
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'ISelectableOption '
     package: office-ui-fabric-react!
-    fullName: isSelected
+    children:
+      - 'office-ui-fabric-react!IDropdownOption#isSelected:member'
+  - uid: 'office-ui-fabric-react!IDropdownOption#isSelected:member'
     summary: 'Deprecated at v.65.1, use `selected` instead.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: true
-    customDeprecatedMessage: Use `selected` instead.
+    deprecated:
+      content: Use `selected` instead.
+    name: isSelected
+    fullName: isSelected
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'isSelected?: boolean;'
       return:
-        type: boolean
-extends: 'ISelectableOption '
+        type:
+          - boolean

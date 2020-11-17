@@ -1,33 +1,50 @@
-### YamlMime:TSEnum
-name: ImageLoadState
-uid: '@fluentui/react-internal!ImageLoadState:enum'
-package: '@fluentui/react-internal!'
-fullName: ImageLoadState
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-fields:
-  - name: error
-    uid: '@fluentui/react-internal!ImageLoadState.error:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-internal!ImageLoadState:enum'
+    name: ImageLoadState
+    fullName: ImageLoadState
+    langs:
+      - typeScript
+    type: enum
     package: '@fluentui/react-internal!'
+    children:
+      - '@fluentui/react-internal!ImageLoadState.error:member'
+      - '@fluentui/react-internal!ImageLoadState.errorLoaded:member'
+      - '@fluentui/react-internal!ImageLoadState.loaded:member'
+      - '@fluentui/react-internal!ImageLoadState.notLoaded:member'
+  - uid: '@fluentui/react-internal!ImageLoadState.error:member'
     summary: An error has been encountered while loading the image.
-    numericValue: 2
-  - name: errorLoaded
-    uid: '@fluentui/react-internal!ImageLoadState.errorLoaded:member'
-    package: '@fluentui/react-internal!'
+    name: error
+    fullName: error
+    langs:
+      - typeScript
+    type: field
+    numericValue: '2'
+  - uid: '@fluentui/react-internal!ImageLoadState.errorLoaded:member'
     summary: >-
-      Deprecated at v1.3.6, to replace the src in case of errors, use
-      `onLoadingStateChange` instead and re-render the Image with a difference
-      src.
-    numericValue: 3
-  - name: loaded
-    uid: '@fluentui/react-internal!ImageLoadState.loaded:member'
-    package: '@fluentui/react-internal!'
+      Deprecated at v1.3.6, to replace the src in case of errors, use `onLoadingStateChange` instead and re-render the
+      Image with a difference src.
+    deprecated:
+      content: Use `onLoadingStateChange` instead and re-render the Image with a difference src.
+    name: errorLoaded
+    fullName: errorLoaded
+    langs:
+      - typeScript
+    type: field
+    numericValue: '3'
+  - uid: '@fluentui/react-internal!ImageLoadState.loaded:member'
     summary: The image has been loaded successfully.
-    numericValue: 1
-  - name: notLoaded
-    uid: '@fluentui/react-internal!ImageLoadState.notLoaded:member'
-    package: '@fluentui/react-internal!'
+    name: loaded
+    fullName: loaded
+    langs:
+      - typeScript
+    type: field
+    numericValue: '1'
+  - uid: '@fluentui/react-internal!ImageLoadState.notLoaded:member'
     summary: 'The image has not yet been loaded, and there is no error yet.'
-    numericValue: 0
+    name: notLoaded
+    fullName: notLoaded
+    langs:
+      - typeScript
+    type: field
+    numericValue: '0'

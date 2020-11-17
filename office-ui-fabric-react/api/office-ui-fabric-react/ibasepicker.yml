@@ -1,64 +1,69 @@
-### YamlMime:TSType
-name: IBasePicker
-uid: 'office-ui-fabric-react!IBasePicker:interface'
-package: office-ui-fabric-react!
-fullName: IBasePicker
-summary: BasePicker component.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: completeSuggestion
-    uid: 'office-ui-fabric-react!IBasePicker#completeSuggestion:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-ui-fabric-react!IBasePicker:interface'
+    summary: BasePicker component.
+    name: IBasePicker
+    fullName: IBasePicker
+    langs:
+      - typeScript
+    type: interface
+    syntax:
+      typeParameters:
+        - id: T
     package: office-ui-fabric-react!
-    fullName: completeSuggestion
+    children:
+      - 'office-ui-fabric-react!IBasePicker#completeSuggestion:member'
+      - 'office-ui-fabric-react!IBasePicker#focus:member'
+      - 'office-ui-fabric-react!IBasePicker#focusInput:member'
+      - 'office-ui-fabric-react!IBasePicker#items:member'
+  - uid: 'office-ui-fabric-react!IBasePicker#completeSuggestion:member'
     summary: >-
-      When called, will take the currently selected suggestion and complete it.
-      If called with forceComplete true, it will attempt to force the current
-      suggestion to complete, must provide both createGenericSuggestion, so the
-      text can be turned into an object in the right shape, and onValidateInput,
-      so the object knows if it's correct or not.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      When called, will take the currently selected suggestion and complete it. If called with forceComplete true, it
+      will attempt to force the current suggestion to complete, must provide both createGenericSuggestion, so the text
+      can be turned into an object in the right shape, and onValidateInput, so the object knows if it's correct or not.
+    name: completeSuggestion
+    fullName: completeSuggestion
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'completeSuggestion: (forceComplete?: boolean) => void;'
       return:
-        type: '(forceComplete?: boolean) =&gt; void'
-  - name: focus
-    uid: 'office-ui-fabric-react!IBasePicker#focus:member'
-    package: office-ui-fabric-react!
-    fullName: focus
+        type:
+          - '(forceComplete?: boolean) => void'
+  - uid: 'office-ui-fabric-react!IBasePicker#focus:member'
     summary: Sets focus to the focus zone.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: focus
+    fullName: focus
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'focus: () => void;'
       return:
-        type: () =&gt; void
-  - name: focusInput
-    uid: 'office-ui-fabric-react!IBasePicker#focusInput:member'
-    package: office-ui-fabric-react!
-    fullName: focusInput
+        type:
+          - () => void
+  - uid: 'office-ui-fabric-react!IBasePicker#focusInput:member'
     summary: Set focus to the input
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: focusInput
+    fullName: focusInput
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'focusInput: () => void;'
       return:
-        type: () =&gt; void
-  - name: items
-    uid: 'office-ui-fabric-react!IBasePicker#items:member'
-    package: office-ui-fabric-react!
-    fullName: items
+        type:
+          - () => void
+  - uid: 'office-ui-fabric-react!IBasePicker#items:member'
     summary: Gets the current value of the input.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'items: T[] | undefined;'
       return:
-        type: 'T[] | undefined'
+        type:
+          - 'T[] | undefined'

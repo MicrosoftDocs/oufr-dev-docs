@@ -1,220 +1,230 @@
-### YamlMime:TSType
-name: IRatingProps
-uid: 'office-ui-fabric-react!IRatingProps:interface'
-package: office-ui-fabric-react!
-fullName: IRatingProps
-summary: Rating component props.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: allowZeroStars
-    uid: 'office-ui-fabric-react!IRatingProps#allowZeroStars:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-ui-fabric-react!IRatingProps:interface'
+    summary: Rating component props.
+    name: IRatingProps
+    fullName: IRatingProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'React.AllHTMLAttributes<HTMLElement> '
     package: office-ui-fabric-react!
-    fullName: allowZeroStars
+    children:
+      - 'office-ui-fabric-react!IRatingProps#allowZeroStars:member'
+      - 'office-ui-fabric-react!IRatingProps#ariaLabelFormat:member'
+      - 'office-ui-fabric-react!IRatingProps#ariaLabelId:member'
+      - 'office-ui-fabric-react!IRatingProps#componentRef:member'
+      - 'office-ui-fabric-react!IRatingProps#getAriaLabel:member'
+      - 'office-ui-fabric-react!IRatingProps#icon:member'
+      - 'office-ui-fabric-react!IRatingProps#max:member'
+      - 'office-ui-fabric-react!IRatingProps#min:member'
+      - 'office-ui-fabric-react!IRatingProps#onChange:member'
+      - 'office-ui-fabric-react!IRatingProps#onChanged:member'
+      - 'office-ui-fabric-react!IRatingProps#rating:member'
+      - 'office-ui-fabric-react!IRatingProps#readOnly:member'
+      - 'office-ui-fabric-react!IRatingProps#size:member'
+      - 'office-ui-fabric-react!IRatingProps#styles:member'
+      - 'office-ui-fabric-react!IRatingProps#theme:member'
+      - 'office-ui-fabric-react!IRatingProps#unselectedIcon:member'
+  - uid: 'office-ui-fabric-react!IRatingProps#allowZeroStars:member'
     summary: Allow the rating value to be set to 0 instead of a minimum of 1.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: allowZeroStars
+    fullName: allowZeroStars
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'allowZeroStars?: boolean;'
       return:
-        type: boolean
-  - name: ariaLabelFormat
-    uid: 'office-ui-fabric-react!IRatingProps#ariaLabelFormat:member'
-    package: office-ui-fabric-react!
-    fullName: ariaLabelFormat
+        type:
+          - boolean
+  - uid: 'office-ui-fabric-react!IRatingProps#ariaLabelFormat:member'
     summary: >-
-      Optional label format for a rating star that will be read by screen
-      readers. Can be used like "<!-- -->{<!-- -->0<!-- -->} of {<!-- -->1<!--
-      -->} stars selected", where {<!-- -->0<!-- -->} will be substituted by the
-      current rating and {<!-- -->1<!-- -->} will be substituted by the max
-      rating.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Optional label format for a rating star that will be read by screen readers. Can be used like "<!-- -->{<!--
+      -->0<!-- -->} of {<!-- -->1<!-- -->} stars selected", where {<!-- -->0<!-- -->} will be substituted by the current
+      rating and {<!-- -->1<!-- -->} will be substituted by the max rating.
+    name: ariaLabelFormat
+    fullName: ariaLabelFormat
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'ariaLabelFormat?: string;'
       return:
-        type: string
-  - name: ariaLabelId
-    uid: 'office-ui-fabric-react!IRatingProps#ariaLabelId:member'
-    package: office-ui-fabric-react!
-    fullName: ariaLabelId
+        type:
+          - string
+  - uid: 'office-ui-fabric-react!IRatingProps#ariaLabelId:member'
     summary: 'Deprecated: Optional id of label describing this instance of Rating.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: true
-    customDeprecatedMessage: Use `getAriaLabel` instead.
+    deprecated:
+      content: Use `getAriaLabel` instead.
+    name: ariaLabelId
+    fullName: ariaLabelId
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'ariaLabelId?: string;'
       return:
-        type: string
-  - name: componentRef
-    uid: 'office-ui-fabric-react!IRatingProps#componentRef:member'
-    package: office-ui-fabric-react!
-    fullName: componentRef
+        type:
+          - string
+  - uid: 'office-ui-fabric-react!IRatingProps#componentRef:member'
     summary: >-
-      Optional callback to access the IRating interface. Use this instead of ref
-      for accessing the public methods and properties of the component.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Optional callback to access the IRating interface. Use this instead of ref for accessing the public methods and
+      properties of the component.
+    name: componentRef
+    fullName: componentRef
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'componentRef?: IRefObject<IRating>;'
       return:
-        type: IRefObject&lt;IRating&gt;
-  - name: getAriaLabel
-    uid: 'office-ui-fabric-react!IRatingProps#getAriaLabel:member'
-    package: office-ui-fabric-react!
+        type:
+          - IRefObject<IRating>
+  - uid: 'office-ui-fabric-react!IRatingProps#getAriaLabel:member'
+    name: getAriaLabel
     fullName: getAriaLabel
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'getAriaLabel?: (rating: number, max: number) => string;'
       return:
-        type: '(rating: number, max: number) =&gt; string'
-  - name: icon
-    uid: 'office-ui-fabric-react!IRatingProps#icon:member'
-    package: office-ui-fabric-react!
-    fullName: icon
+        type:
+          - '(rating: number, max: number) => string'
+  - uid: 'office-ui-fabric-react!IRatingProps#icon:member'
     summary: Custom icon
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: icon
+    fullName: icon
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'icon?: string;'
       return:
-        type: string
-  - name: max
-    uid: 'office-ui-fabric-react!IRatingProps#max:member'
-    package: office-ui-fabric-react!
-    fullName: max
+        type:
+          - string
+  - uid: 'office-ui-fabric-react!IRatingProps#max:member'
     summary: 'Maximum rating, defaults to 5, has to be &gt;<!-- -->= min'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: max
+    fullName: max
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'max?: number;'
       return:
-        type: number
-  - name: min
-    uid: 'office-ui-fabric-react!IRatingProps#min:member'
-    package: office-ui-fabric-react!
-    fullName: min
+        type:
+          - number
+  - uid: 'office-ui-fabric-react!IRatingProps#min:member'
     summary: 'Minimum rating, defaults to 1, has to be &gt;<!-- -->= 0'
-    remarks: ''
-    isPreview: false
-    isDeprecated: true
-    customDeprecatedMessage: No longer used.
+    deprecated:
+      content: No longer used.
+    name: min
+    fullName: min
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'min?: number;'
       return:
-        type: number
-  - name: onChange
-    uid: 'office-ui-fabric-react!IRatingProps#onChange:member'
-    package: office-ui-fabric-react!
-    fullName: onChange
+        type:
+          - number
+  - uid: 'office-ui-fabric-react!IRatingProps#onChange:member'
     summary: Callback issued when the rating changes.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onChange
+    fullName: onChange
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        onChange?: (event: React.FocusEvent<HTMLElement>, rating?: number) =>
-        void;
+      content: 'onChange?: (event: React.FocusEvent<HTMLElement>, rating?: number) => void;'
       return:
-        type: >-
-          (event: React.FocusEvent&lt;HTMLElement&gt;, rating?: number) =&gt;
-          void
-  - name: onChanged
-    uid: 'office-ui-fabric-react!IRatingProps#onChanged:member'
-    package: office-ui-fabric-react!
+        type:
+          - '(event: React.FocusEvent<HTMLElement>, rating?: number) => void'
+  - uid: 'office-ui-fabric-react!IRatingProps#onChanged:member'
+    deprecated:
+      content: Use `onChange` instead.
+    name: onChanged
     fullName: onChanged
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: true
-    customDeprecatedMessage: Use `onChange` instead.
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onChanged?: (rating: number) => void;'
       return:
-        type: '(rating: number) =&gt; void'
-  - name: rating
-    uid: 'office-ui-fabric-react!IRatingProps#rating:member'
-    package: office-ui-fabric-react!
-    fullName: rating
+        type:
+          - '(rating: number) => void'
+  - uid: 'office-ui-fabric-react!IRatingProps#rating:member'
     summary: 'Selected rating, has to be an integer between min and max'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: rating
+    fullName: rating
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'rating?: number;'
       return:
-        type: number
-  - name: readOnly
-    uid: 'office-ui-fabric-react!IRatingProps#readOnly:member'
-    package: office-ui-fabric-react!
-    fullName: readOnly
+        type:
+          - number
+  - uid: 'office-ui-fabric-react!IRatingProps#readOnly:member'
     summary: Optional flag to mark rating control as readOnly
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: readOnly
+    fullName: readOnly
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'readOnly?: boolean;'
       return:
-        type: boolean
-  - name: size
-    uid: 'office-ui-fabric-react!IRatingProps#size:member'
-    package: office-ui-fabric-react!
-    fullName: size
+        type:
+          - boolean
+  - uid: 'office-ui-fabric-react!IRatingProps#size:member'
     summary: 'Size of rating, defaults to small'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: size
+    fullName: size
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'size?: RatingSize;'
       return:
-        type: RatingSize
-  - name: styles
-    uid: 'office-ui-fabric-react!IRatingProps#styles:member'
-    package: office-ui-fabric-react!
+        type:
+          - RatingSize
+  - uid: 'office-ui-fabric-react!IRatingProps#styles:member'
+    summary: Call to provide customized styling that will layer on top of the variant rules.
+    name: styles
     fullName: styles
-    summary: >-
-      Call to provide customized styling that will layer on top of the variant
-      rules.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'styles?: IStyleFunctionOrObject<IRatingStyleProps, IRatingStyles>;'
       return:
-        type: 'IStyleFunctionOrObject&lt;IRatingStyleProps, IRatingStyles&gt;'
-  - name: theme
-    uid: 'office-ui-fabric-react!IRatingProps#theme:member'
-    package: office-ui-fabric-react!
-    fullName: theme
+        type:
+          - 'IStyleFunctionOrObject<IRatingStyleProps, IRatingStyles>'
+  - uid: 'office-ui-fabric-react!IRatingProps#theme:member'
     summary: Theme (provided through customization.)
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'theme?: ITheme;'
       return:
-        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
-  - name: unselectedIcon
-    uid: 'office-ui-fabric-react!IRatingProps#unselectedIcon:member'
-    package: office-ui-fabric-react!
-    fullName: unselectedIcon
+        type:
+          - '@fluentui/theme!ITheme:interface'
+  - uid: 'office-ui-fabric-react!IRatingProps#unselectedIcon:member'
     summary: Custom icon for unselected rating elements.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: unselectedIcon
+    fullName: unselectedIcon
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'unselectedIcon?: string;'
       return:
-        type: string
-extends: 'React.AllHTMLAttributes&lt;HTMLElement&gt; '
+        type:
+          - string

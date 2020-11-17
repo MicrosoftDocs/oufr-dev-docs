@@ -1,22 +1,24 @@
-### YamlMime:TSType
-name: NormalPeoplePickerBase
-uid: 'office-ui-fabric-react!NormalPeoplePickerBase:class'
-package: office-ui-fabric-react!
-fullName: NormalPeoplePickerBase
-summary: Standard People Picker.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: class
-properties:
-  - name: defaultProps
-    uid: 'office-ui-fabric-react!NormalPeoplePickerBase.defaultProps:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-ui-fabric-react!NormalPeoplePickerBase:class'
+    summary: Standard People Picker.
+    name: NormalPeoplePickerBase
+    fullName: NormalPeoplePickerBase
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'BasePeoplePicker '
     package: office-ui-fabric-react!
-    fullName: defaultProps
+    children:
+      - 'office-ui-fabric-react!NormalPeoplePickerBase.defaultProps:member'
+  - uid: 'office-ui-fabric-react!NormalPeoplePickerBase.defaultProps:member'
     summary: Default props for NormalPeoplePicker.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: defaultProps
+    fullName: defaultProps
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: |-
         static defaultProps: {
@@ -25,10 +27,10 @@ properties:
                 createGenericItem: typeof createGenericItem;
             };
       return:
-        type: |-
-          {
-                  onRenderItem: (props: IPeoplePickerItemSelectedProps) =&gt; JSX.Element;
-                  onRenderSuggestionsItem: (personaProps: IPersonaProps, suggestionsProps?: IBasePickerSuggestionsProps&lt;any&gt; | undefined) =&gt; JSX.Element;
-                  createGenericItem: typeof createGenericItem;
-              }
-extends: 'BasePeoplePicker '
+        type:
+          - |-
+            {
+                    onRenderItem: (props: IPeoplePickerItemSelectedProps) => JSX.Element;
+                    onRenderSuggestionsItem: (personaProps: IPersonaProps, suggestionsProps?: IBasePickerSuggestionsProps<any> | undefined) => JSX.Element;
+                    createGenericItem: typeof createGenericItem;
+                }

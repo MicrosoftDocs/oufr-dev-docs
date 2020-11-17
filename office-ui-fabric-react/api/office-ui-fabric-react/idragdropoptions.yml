@@ -1,62 +1,68 @@
-### YamlMime:TSType
-name: IDragDropOptions
-uid: 'office-ui-fabric-react!IDragDropOptions:interface'
-package: office-ui-fabric-react!
-fullName: IDragDropOptions
-summary: The drag and drop event listener configuration.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: canDrag
-    uid: 'office-ui-fabric-react!IDragDropOptions#canDrag:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-ui-fabric-react!IDragDropOptions:interface'
+    summary: The drag and drop event listener configuration.
+    name: IDragDropOptions
+    fullName: IDragDropOptions
+    langs:
+      - typeScript
+    type: interface
     package: office-ui-fabric-react!
-    fullName: canDrag
+    children:
+      - 'office-ui-fabric-react!IDragDropOptions#canDrag:member'
+      - 'office-ui-fabric-react!IDragDropOptions#canDrop:member'
+      - 'office-ui-fabric-react!IDragDropOptions#context:member'
+      - 'office-ui-fabric-react!IDragDropOptions#eventMap:member'
+      - 'office-ui-fabric-react!IDragDropOptions#key:member'
+      - 'office-ui-fabric-react!IDragDropOptions#onDragEnd:member'
+      - 'office-ui-fabric-react!IDragDropOptions#onDragOver:member'
+      - 'office-ui-fabric-react!IDragDropOptions#onDragStart:member'
+      - 'office-ui-fabric-react!IDragDropOptions#onDrop:member'
+      - 'office-ui-fabric-react!IDragDropOptions#selectionIndex:member'
+      - 'office-ui-fabric-react!IDragDropOptions#updateDropState:member'
+  - uid: 'office-ui-fabric-react!IDragDropOptions#canDrag:member'
     summary: Whether or not drag action is allowed.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: canDrag
+    fullName: canDrag
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'canDrag?: (item?: any) => boolean;'
       return:
-        type: '(item?: any) =&gt; boolean'
-  - name: canDrop
-    uid: 'office-ui-fabric-react!IDragDropOptions#canDrop:member'
-    package: office-ui-fabric-react!
-    fullName: canDrop
+        type:
+          - '(item?: any) => boolean'
+  - uid: 'office-ui-fabric-react!IDragDropOptions#canDrop:member'
     summary: Whether or not drop action is allowed.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: canDrop
+    fullName: canDrop
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        canDrop?: (dropContext?: IDragDropContext, dragContext?:
-        IDragDropContext) => boolean;
+      content: 'canDrop?: (dropContext?: IDragDropContext, dragContext?: IDragDropContext) => boolean;'
       return:
-        type: >-
-          (dropContext?: IDragDropContext, dragContext?: IDragDropContext) =&gt;
-          boolean
-  - name: context
-    uid: 'office-ui-fabric-react!IDragDropOptions#context:member'
-    package: office-ui-fabric-react!
-    fullName: context
+        type:
+          - '(dropContext?: IDragDropContext, dragContext?: IDragDropContext) => boolean'
+  - uid: 'office-ui-fabric-react!IDragDropOptions#context:member'
     summary: Context associated with drag and drop event.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'context: IDragDropContext;'
       return:
-        type: IDragDropContext
-  - name: eventMap
-    uid: 'office-ui-fabric-react!IDragDropOptions#eventMap:member'
-    package: office-ui-fabric-react!
-    fullName: eventMap
+        type:
+          - IDragDropContext
+  - uid: 'office-ui-fabric-react!IDragDropOptions#eventMap:member'
     summary: Map of event name to callback function to subscribe to.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: eventMap
+    fullName: eventMap
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: |-
         eventMap?: {
@@ -64,96 +70,93 @@ properties:
                 callback: (context: IDragDropContext, event?: any) => void;
             }[];
       return:
-        type: |-
-          {
-                  eventName: string;
-                  callback: (context: IDragDropContext, event?: any) =&gt; void;
-              }[]
-  - name: key
-    uid: 'office-ui-fabric-react!IDragDropOptions#key:member'
-    package: office-ui-fabric-react!
-    fullName: key
+        type:
+          - |-
+            {
+                    eventName: string;
+                    callback: (context: IDragDropContext, event?: any) => void;
+                }[]
+  - uid: 'office-ui-fabric-react!IDragDropOptions#key:member'
     summary: Unique key to associate with instance.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: key
+    fullName: key
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'key?: string;'
       return:
-        type: string
-  - name: onDragEnd
-    uid: 'office-ui-fabric-react!IDragDropOptions#onDragEnd:member'
-    package: office-ui-fabric-react!
-    fullName: onDragEnd
+        type:
+          - string
+  - uid: 'office-ui-fabric-react!IDragDropOptions#onDragEnd:member'
     summary: On drag end event callback.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onDragEnd
+    fullName: onDragEnd
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onDragEnd?: (item?: any, event?: DragEvent) => void;'
       return:
-        type: '(item?: any, event?: DragEvent) =&gt; void'
-  - name: onDragOver
-    uid: 'office-ui-fabric-react!IDragDropOptions#onDragOver:member'
-    package: office-ui-fabric-react!
-    fullName: onDragOver
+        type:
+          - '(item?: any, event?: DragEvent) => void'
+  - uid: 'office-ui-fabric-react!IDragDropOptions#onDragOver:member'
     summary: On drag over element(s) event callback.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onDragOver
+    fullName: onDragOver
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onDragOver?: (item?: any, event?: DragEvent) => void;'
       return:
-        type: '(item?: any, event?: DragEvent) =&gt; void'
-  - name: onDragStart
-    uid: 'office-ui-fabric-react!IDragDropOptions#onDragStart:member'
-    package: office-ui-fabric-react!
-    fullName: onDragStart
+        type:
+          - '(item?: any, event?: DragEvent) => void'
+  - uid: 'office-ui-fabric-react!IDragDropOptions#onDragStart:member'
     summary: On drag start event callback.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onDragStart
+    fullName: onDragStart
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        onDragStart?: (item?: any, itemIndex?: number, selectedItems?: any[],
-        event?: MouseEvent) => void;
+      content: 'onDragStart?: (item?: any, itemIndex?: number, selectedItems?: any[], event?: MouseEvent) => void;'
       return:
-        type: >-
-          (item?: any, itemIndex?: number, selectedItems?: any[], event?:
-          MouseEvent) =&gt; void
-  - name: onDrop
-    uid: 'office-ui-fabric-react!IDragDropOptions#onDrop:member'
-    package: office-ui-fabric-react!
-    fullName: onDrop
+        type:
+          - '(item?: any, itemIndex?: number, selectedItems?: any[], event?: MouseEvent) => void'
+  - uid: 'office-ui-fabric-react!IDragDropOptions#onDrop:member'
     summary: On drop event callback.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onDrop
+    fullName: onDrop
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onDrop?: (item?: any, event?: DragEvent) => void;'
       return:
-        type: '(item?: any, event?: DragEvent) =&gt; void'
-  - name: selectionIndex
-    uid: 'office-ui-fabric-react!IDragDropOptions#selectionIndex:member'
-    package: office-ui-fabric-react!
-    fullName: selectionIndex
+        type:
+          - '(item?: any, event?: DragEvent) => void'
+  - uid: 'office-ui-fabric-react!IDragDropOptions#selectionIndex:member'
     summary: Selection index on drag and drop event.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: selectionIndex
+    fullName: selectionIndex
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'selectionIndex: number;'
       return:
-        type: number
-  - name: updateDropState
-    uid: 'office-ui-fabric-react!IDragDropOptions#updateDropState:member'
-    package: office-ui-fabric-react!
-    fullName: updateDropState
+        type:
+          - number
+  - uid: 'office-ui-fabric-react!IDragDropOptions#updateDropState:member'
     summary: Callback on drop state update.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: updateDropState
+    fullName: updateDropState
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'updateDropState: (isDropping: boolean, event: DragEvent) => void;'
       return:
-        type: '(isDropping: boolean, event: DragEvent) =&gt; void'
+        type:
+          - '(isDropping: boolean, event: DragEvent) => void'

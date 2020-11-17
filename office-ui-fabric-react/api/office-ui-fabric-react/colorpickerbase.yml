@@ -1,87 +1,88 @@
-### YamlMime:TSType
-name: ColorPickerBase
-uid: 'office-ui-fabric-react!ColorPickerBase:class'
-package: office-ui-fabric-react!
-fullName: ColorPickerBase
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: class
-constructors:
-  - name: (constructor)(props)
-    uid: 'office-ui-fabric-react!ColorPickerBase:constructor(1)'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-ui-fabric-react!ColorPickerBase:class'
+    name: ColorPickerBase
+    fullName: ColorPickerBase
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'React.Component<IColorPickerProps, IColorPickerState> '
+    implements:
+      - 'IColorPicker '
     package: office-ui-fabric-react!
-    fullName: (constructor)(props)
+    children:
+      - 'office-ui-fabric-react!ColorPickerBase:constructor(1)'
+      - 'office-ui-fabric-react!ColorPickerBase#color:member'
+      - 'office-ui-fabric-react!ColorPickerBase#componentDidUpdate:member(1)'
+      - 'office-ui-fabric-react!ColorPickerBase.defaultProps:member'
+      - 'office-ui-fabric-react!ColorPickerBase#render:member(1)'
+  - uid: 'office-ui-fabric-react!ColorPickerBase:constructor(1)'
     summary: Constructs a new instance of the `ColorPickerBase` class
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: (constructor)(props)
+    fullName: (constructor)(props)
+    langs:
+      - typeScript
+    type: constructor
     syntax:
       content: 'constructor(props: IColorPickerProps);'
       parameters:
         - id: props
           description: ''
-          type: IColorPickerProps
-properties:
-  - name: color
-    uid: 'office-ui-fabric-react!ColorPickerBase#color:member'
-    package: office-ui-fabric-react!
+          type:
+            - IColorPickerProps
+  - uid: 'office-ui-fabric-react!ColorPickerBase#color:member'
+    name: color
     fullName: color
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'readonly color: IColor;'
       return:
-        type: IColor
-  - name: defaultProps
-    uid: 'office-ui-fabric-react!ColorPickerBase.defaultProps:member'
-    package: office-ui-fabric-react!
-    fullName: defaultProps
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'static defaultProps: Partial<IColorPickerProps>;'
-      return:
-        type: Partial&lt;IColorPickerProps&gt;
-methods:
-  - name: 'componentDidUpdate(prevProps, prevState)'
-    uid: 'office-ui-fabric-react!ColorPickerBase#componentDidUpdate:member(1)'
-    package: office-ui-fabric-react!
+        type:
+          - IColor
+  - uid: 'office-ui-fabric-react!ColorPickerBase#componentDidUpdate:member(1)'
+    name: 'componentDidUpdate(prevProps, prevState)'
     fullName: 'componentDidUpdate(prevProps, prevState)'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        componentDidUpdate(prevProps: Readonly<IColorPickerProps>, prevState:
-        Readonly<IColorPickerState>): void;
+      content: 'componentDidUpdate(prevProps: Readonly<IColorPickerProps>, prevState: Readonly<IColorPickerState>): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: prevProps
           description: ''
-          type: Readonly&lt;IColorPickerProps&gt;
+          type:
+            - Readonly<IColorPickerProps>
         - id: prevState
           description: ''
-          type: Readonly&lt;IColorPickerState&gt;
+          type:
+            - Readonly<IColorPickerState>
+  - uid: 'office-ui-fabric-react!ColorPickerBase.defaultProps:member'
+    name: defaultProps
+    fullName: defaultProps
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'static defaultProps: Partial<IColorPickerProps>;'
       return:
-        type: void
-        description: ''
-  - name: render()
-    uid: 'office-ui-fabric-react!ColorPickerBase#render:member(1)'
-    package: office-ui-fabric-react!
+        type:
+          - Partial<IColorPickerProps>
+  - uid: 'office-ui-fabric-react!ColorPickerBase#render:member(1)'
+    name: render()
     fullName: render()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'render(): JSX.Element;'
       return:
-        type: JSX.Element
+        type:
+          - JSX.Element
         description: ''
-extends: 'React.Component&lt;IColorPickerProps, IColorPickerState&gt; '

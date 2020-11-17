@@ -1,48 +1,51 @@
-### YamlMime:TSType
-name: IDetailsRowProps
-uid: 'office-ui-fabric-react!IDetailsRowProps:interface'
-package: office-ui-fabric-react!
-fullName: IDetailsRowProps
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: columns
-    uid: 'office-ui-fabric-react!IDetailsRowProps#columns:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-ui-fabric-react!IDetailsRowProps:interface'
+    name: IDetailsRowProps
+    fullName: IDetailsRowProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'IDetailsRowBaseProps '
     package: office-ui-fabric-react!
-    fullName: columns
+    children:
+      - 'office-ui-fabric-react!IDetailsRowProps#columns:member'
+      - 'office-ui-fabric-react!IDetailsRowProps#selection:member'
+      - 'office-ui-fabric-react!IDetailsRowProps#selectionMode:member'
+  - uid: 'office-ui-fabric-react!IDetailsRowProps#columns:member'
     summary: Column metadata
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: columns
+    fullName: columns
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'columns: IColumn[];'
       return:
-        type: 'IColumn[]'
-  - name: selection
-    uid: 'office-ui-fabric-react!IDetailsRowProps#selection:member'
-    package: office-ui-fabric-react!
-    fullName: selection
+        type:
+          - 'IColumn[]'
+  - uid: 'office-ui-fabric-react!IDetailsRowProps#selection:member'
     summary: Selection from utilities
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: selection
+    fullName: selection
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'selection: ISelection;'
       return:
-        type: '<xref uid="@fluentui/utilities!ISelection:interface" />'
-  - name: selectionMode
-    uid: 'office-ui-fabric-react!IDetailsRowProps#selectionMode:member'
-    package: office-ui-fabric-react!
-    fullName: selectionMode
+        type:
+          - '@fluentui/utilities!ISelection:interface'
+  - uid: 'office-ui-fabric-react!IDetailsRowProps#selectionMode:member'
     summary: Selection mode
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: selectionMode
+    fullName: selectionMode
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'selectionMode: SelectionMode;'
       return:
-        type: '<xref uid="@fluentui/utilities!SelectionMode:enum" />'
-extends: 'IDetailsRowBaseProps '
+        type:
+          - '@fluentui/utilities!SelectionMode:enum'

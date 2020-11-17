@@ -1,216 +1,226 @@
-### YamlMime:TSType
-name: IBreadcrumbProps
-uid: '@fluentui/react!IBreadcrumbProps:interface'
-package: '@fluentui/react!'
-fullName: IBreadcrumbProps
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: ariaLabel
-    uid: '@fluentui/react!IBreadcrumbProps#ariaLabel:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react!IBreadcrumbProps:interface'
+    name: IBreadcrumbProps
+    fullName: IBreadcrumbProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'React.HTMLAttributes<HTMLElement> '
     package: '@fluentui/react!'
+    children:
+      - '@fluentui/react!IBreadcrumbProps#ariaLabel:member'
+      - '@fluentui/react!IBreadcrumbProps#className:member'
+      - '@fluentui/react!IBreadcrumbProps#componentRef:member'
+      - '@fluentui/react!IBreadcrumbProps#dividerAs:member'
+      - '@fluentui/react!IBreadcrumbProps#focusZoneProps:member'
+      - '@fluentui/react!IBreadcrumbProps#items:member'
+      - '@fluentui/react!IBreadcrumbProps#maxDisplayedItems:member'
+      - '@fluentui/react!IBreadcrumbProps#onGrowData:member'
+      - '@fluentui/react!IBreadcrumbProps#onReduceData:member'
+      - '@fluentui/react!IBreadcrumbProps#onRenderItem:member'
+      - '@fluentui/react!IBreadcrumbProps#onRenderOverflowIcon:member'
+      - '@fluentui/react!IBreadcrumbProps#overflowAriaLabel:member'
+      - '@fluentui/react!IBreadcrumbProps#overflowIndex:member'
+      - '@fluentui/react!IBreadcrumbProps#styles:member'
+      - '@fluentui/react!IBreadcrumbProps#theme:member'
+      - '@fluentui/react!IBreadcrumbProps#tooltipHostProps:member'
+  - uid: '@fluentui/react!IBreadcrumbProps#ariaLabel:member'
+    summary: Aria label for the root element of the breadcrumb (which is a navigation landmark).
+    name: ariaLabel
     fullName: ariaLabel
-    summary: >-
-      Aria label for the root element of the breadcrumb (which is a navigation
-      landmark).
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'ariaLabel?: string;'
       return:
-        type: string
-  - name: className
-    uid: '@fluentui/react!IBreadcrumbProps#className:member'
-    package: '@fluentui/react!'
-    fullName: className
+        type:
+          - string
+  - uid: '@fluentui/react!IBreadcrumbProps#className:member'
     summary: Optional class for the root breadcrumb element.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: className
+    fullName: className
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'className?: string;'
       return:
-        type: string
-  - name: componentRef
-    uid: '@fluentui/react!IBreadcrumbProps#componentRef:member'
-    package: '@fluentui/react!'
-    fullName: componentRef
+        type:
+          - string
+  - uid: '@fluentui/react!IBreadcrumbProps#componentRef:member'
     summary: >-
-      Optional callback to access the IBreadcrumb interface. Use this instead of
-      ref for accessing the public methods and properties of the component.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Optional callback to access the IBreadcrumb interface. Use this instead of ref for accessing the public methods
+      and properties of the component.
+    name: componentRef
+    fullName: componentRef
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'componentRef?: IRefObject<IBreadcrumb>;'
       return:
-        type: IRefObject&lt;IBreadcrumb&gt;
-  - name: dividerAs
-    uid: '@fluentui/react!IBreadcrumbProps#dividerAs:member'
-    package: '@fluentui/react!'
-    fullName: dividerAs
+        type:
+          - IRefObject<IBreadcrumb>
+  - uid: '@fluentui/react!IBreadcrumbProps#dividerAs:member'
     summary: Render a custom divider in place of the default chevron `>`
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: dividerAs
+    fullName: dividerAs
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'dividerAs?: IComponentAs<IDividerAsProps>;'
       return:
-        type: IComponentAs&lt;IDividerAsProps&gt;
-  - name: focusZoneProps
-    uid: '@fluentui/react!IBreadcrumbProps#focusZoneProps:member'
-    package: '@fluentui/react!'
-    fullName: focusZoneProps
+        type:
+          - IComponentAs<IDividerAsProps>
+  - uid: '@fluentui/react!IBreadcrumbProps#focusZoneProps:member'
     summary: Extra props for the root FocusZone.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: focusZoneProps
+    fullName: focusZoneProps
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'focusZoneProps?: IFocusZoneProps;'
       return:
-        type: '<xref uid="@fluentui/react-focus!IFocusZoneProps:interface" />'
-  - name: items
-    uid: '@fluentui/react!IBreadcrumbProps#items:member'
-    package: '@fluentui/react!'
-    fullName: items
+        type:
+          - '@fluentui/react-focus!IFocusZoneProps:interface'
+  - uid: '@fluentui/react!IBreadcrumbProps#items:member'
     summary: Collection of breadcrumbs to render
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'items: IBreadcrumbItem[];'
       return:
-        type: 'IBreadcrumbItem[]'
-  - name: maxDisplayedItems
-    uid: '@fluentui/react!IBreadcrumbProps#maxDisplayedItems:member'
-    package: '@fluentui/react!'
-    fullName: maxDisplayedItems
+        type:
+          - 'IBreadcrumbItem[]'
+  - uid: '@fluentui/react!IBreadcrumbProps#maxDisplayedItems:member'
     summary: >-
-      The maximum number of breadcrumbs to display before coalescing. If not
-      specified, all breadcrumbs will be rendered.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      The maximum number of breadcrumbs to display before coalescing. If not specified, all breadcrumbs will be
+      rendered.
+    name: maxDisplayedItems
+    fullName: maxDisplayedItems
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'maxDisplayedItems?: number;'
       return:
-        type: number
-  - name: onGrowData
-    uid: '@fluentui/react!IBreadcrumbProps#onGrowData:member'
-    package: '@fluentui/react!'
-    fullName: onGrowData
+        type:
+          - number
+  - uid: '@fluentui/react!IBreadcrumbProps#onGrowData:member'
     summary: >-
-      Method that determines how to group the length of the breadcrumb. Return
-      undefined to never increase breadcrumb length.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Method that determines how to group the length of the breadcrumb. Return undefined to never increase breadcrumb
+      length.
+    name: onGrowData
+    fullName: onGrowData
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onGrowData?: (data: IBreadcrumbData) => IBreadcrumbData | undefined;'
       return:
-        type: '(data: IBreadcrumbData) =&gt; IBreadcrumbData | undefined'
-  - name: onReduceData
-    uid: '@fluentui/react!IBreadcrumbProps#onReduceData:member'
-    package: '@fluentui/react!'
-    fullName: onReduceData
+        type:
+          - '(data: IBreadcrumbData) => IBreadcrumbData | undefined'
+  - uid: '@fluentui/react!IBreadcrumbProps#onReduceData:member'
     summary: >-
-      Method that determines how to reduce the length of the breadcrumb. Return
-      undefined to never reduce breadcrumb length.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Method that determines how to reduce the length of the breadcrumb. Return undefined to never reduce breadcrumb
+      length.
+    name: onReduceData
+    fullName: onReduceData
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onReduceData?: (data: IBreadcrumbData) => IBreadcrumbData | undefined;'
       return:
-        type: '(data: IBreadcrumbData) =&gt; IBreadcrumbData | undefined'
-  - name: onRenderItem
-    uid: '@fluentui/react!IBreadcrumbProps#onRenderItem:member'
-    package: '@fluentui/react!'
-    fullName: onRenderItem
+        type:
+          - '(data: IBreadcrumbData) => IBreadcrumbData | undefined'
+  - uid: '@fluentui/react!IBreadcrumbProps#onRenderItem:member'
     summary: Custom render function for each breadcrumb item.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onRenderItem
+    fullName: onRenderItem
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onRenderItem?: IRenderFunction<IBreadcrumbItem>;'
       return:
-        type: IRenderFunction&lt;IBreadcrumbItem&gt;
-  - name: onRenderOverflowIcon
-    uid: '@fluentui/react!IBreadcrumbProps#onRenderOverflowIcon:member'
-    package: '@fluentui/react!'
-    fullName: onRenderOverflowIcon
+        type:
+          - IRenderFunction<IBreadcrumbItem>
+  - uid: '@fluentui/react!IBreadcrumbProps#onRenderOverflowIcon:member'
     summary: Render a custom overflow icon in place of the default icon `...`
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onRenderOverflowIcon
+    fullName: onRenderOverflowIcon
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onRenderOverflowIcon?: IRenderFunction<IButtonProps>;'
       return:
-        type: IRenderFunction&lt;IButtonProps&gt;
-  - name: overflowAriaLabel
-    uid: '@fluentui/react!IBreadcrumbProps#overflowAriaLabel:member'
-    package: '@fluentui/react!'
-    fullName: overflowAriaLabel
+        type:
+          - IRenderFunction<IButtonProps>
+  - uid: '@fluentui/react!IBreadcrumbProps#overflowAriaLabel:member'
     summary: Aria label for the overflow button.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: overflowAriaLabel
+    fullName: overflowAriaLabel
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'overflowAriaLabel?: string;'
       return:
-        type: string
-  - name: overflowIndex
-    uid: '@fluentui/react!IBreadcrumbProps#overflowIndex:member'
-    package: '@fluentui/react!'
-    fullName: overflowIndex
+        type:
+          - string
+  - uid: '@fluentui/react!IBreadcrumbProps#overflowIndex:member'
     summary: Optional index where overflow items will be collapsed. Defaults to 0.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: overflowIndex
+    fullName: overflowIndex
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'overflowIndex?: number;'
       return:
-        type: number
-  - name: styles
-    uid: '@fluentui/react!IBreadcrumbProps#styles:member'
-    package: '@fluentui/react!'
+        type:
+          - number
+  - uid: '@fluentui/react!IBreadcrumbProps#styles:member'
+    name: styles
     fullName: styles
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        styles?: IStyleFunctionOrObject<IBreadcrumbStyleProps,
-        IBreadcrumbStyles>;
+      content: 'styles?: IStyleFunctionOrObject<IBreadcrumbStyleProps, IBreadcrumbStyles>;'
       return:
-        type: 'IStyleFunctionOrObject&lt;IBreadcrumbStyleProps, IBreadcrumbStyles&gt;'
-  - name: theme
-    uid: '@fluentui/react!IBreadcrumbProps#theme:member'
-    package: '@fluentui/react!'
+        type:
+          - 'IStyleFunctionOrObject<IBreadcrumbStyleProps, IBreadcrumbStyles>'
+  - uid: '@fluentui/react!IBreadcrumbProps#theme:member'
+    name: theme
     fullName: theme
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'theme?: ITheme;'
       return:
-        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
-  - name: tooltipHostProps
-    uid: '@fluentui/react!IBreadcrumbProps#tooltipHostProps:member'
-    package: '@fluentui/react!'
-    fullName: tooltipHostProps
+        type:
+          - '@fluentui/theme!ITheme:interface'
+  - uid: '@fluentui/react!IBreadcrumbProps#tooltipHostProps:member'
     summary: Extra props for the TooltipHost which wraps each breadcrumb item.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: tooltipHostProps
+    fullName: tooltipHostProps
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'tooltipHostProps?: ITooltipHostProps;'
       return:
-        type: ITooltipHostProps
-extends: 'React.HTMLAttributes&lt;HTMLElement&gt; '
+        type:
+          - ITooltipHostProps

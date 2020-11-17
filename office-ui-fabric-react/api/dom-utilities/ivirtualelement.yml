@@ -1,24 +1,25 @@
-### YamlMime:TSType
-name: IVirtualElement
-uid: '@fluentui/dom-utilities!IVirtualElement:interface'
-package: '@fluentui/dom-utilities!'
-fullName: IVirtualElement
-summary: >-
-  Attached interface for elements which support virtual references. Used
-  internally by the virtual hierarchy methods.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: _virtual
-    uid: '@fluentui/dom-utilities!IVirtualElement#_virtual:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/dom-utilities!IVirtualElement:interface'
+    summary: >-
+      Attached interface for elements which support virtual references. Used internally by the virtual hierarchy
+      methods.
+    name: IVirtualElement
+    fullName: IVirtualElement
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'HTMLElement '
     package: '@fluentui/dom-utilities!'
+    children:
+      - '@fluentui/dom-utilities!IVirtualElement#_virtual:member'
+  - uid: '@fluentui/dom-utilities!IVirtualElement#_virtual:member'
+    name: _virtual
     fullName: _virtual
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: |-
         _virtual: {
@@ -26,9 +27,9 @@ properties:
                 children: IVirtualElement[];
             };
       return:
-        type: |-
-          {
-                  parent?: IVirtualElement;
-                  children: IVirtualElement[];
-              }
-extends: 'HTMLElement '
+        type:
+          - |-
+            {
+                    parent?: IVirtualElement;
+                    children: IVirtualElement[];
+                }

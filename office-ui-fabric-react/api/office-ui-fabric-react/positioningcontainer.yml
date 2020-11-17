@@ -1,215 +1,219 @@
-### YamlMime:TSType
-name: PositioningContainer
-uid: 'office-ui-fabric-react!PositioningContainer:class'
-package: office-ui-fabric-react!
-fullName: PositioningContainer
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: class
-constructors:
-  - name: (constructor)(props)
-    uid: 'office-ui-fabric-react!PositioningContainer:constructor(1)'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-ui-fabric-react!PositioningContainer:class'
+    name: PositioningContainer
+    fullName: PositioningContainer
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'React.Component<IPositioningContainerProps, IPositioningContainerState> '
+    implements:
+      - 'office-ui-fabric-react!PositioningContainer:class'
     package: office-ui-fabric-react!
-    fullName: (constructor)(props)
+    children:
+      - 'office-ui-fabric-react!PositioningContainer#_dismissOnLostFocus:member(1)'
+      - 'office-ui-fabric-react!PositioningContainer#_dismissOnScroll:member(1)'
+      - 'office-ui-fabric-react!PositioningContainer#_onComponentDidMount:member'
+      - 'office-ui-fabric-react!PositioningContainer#_setInitialFocus:member'
+      - 'office-ui-fabric-react!PositioningContainer:constructor(1)'
+      - 'office-ui-fabric-react!PositioningContainer#componentDidMount:member(1)'
+      - 'office-ui-fabric-react!PositioningContainer#componentDidUpdate:member(1)'
+      - 'office-ui-fabric-react!PositioningContainer#componentWillUnmount:member(1)'
+      - 'office-ui-fabric-react!PositioningContainer.defaultProps:member'
+      - 'office-ui-fabric-react!PositioningContainer#dismiss:member'
+      - 'office-ui-fabric-react!PositioningContainer#onResize:member'
+      - 'office-ui-fabric-react!PositioningContainer#render:member(1)'
+      - 'office-ui-fabric-react!PositioningContainer#UNSAFE_componentWillMount:member(1)'
+      - 'office-ui-fabric-react!PositioningContainer#UNSAFE_componentWillUpdate:member(1)'
+  - uid: 'office-ui-fabric-react!PositioningContainer#_dismissOnLostFocus:member(1)'
+    name: _dismissOnLostFocus(ev)
+    fullName: _dismissOnLostFocus(ev)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'protected _dismissOnLostFocus(ev: Event): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: ev
+          description: ''
+          type:
+            - Event
+  - uid: 'office-ui-fabric-react!PositioningContainer#_dismissOnScroll:member(1)'
+    name: _dismissOnScroll(ev)
+    fullName: _dismissOnScroll(ev)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'protected _dismissOnScroll(ev: Event): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: ev
+          description: ''
+          type:
+            - Event
+  - uid: 'office-ui-fabric-react!PositioningContainer#_onComponentDidMount:member'
+    name: _onComponentDidMount
+    fullName: _onComponentDidMount
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'protected _onComponentDidMount: () => void;'
+      return:
+        type:
+          - () => void
+  - uid: 'office-ui-fabric-react!PositioningContainer#_setInitialFocus:member'
+    name: _setInitialFocus
+    fullName: _setInitialFocus
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'protected _setInitialFocus: () => void;'
+      return:
+        type:
+          - () => void
+  - uid: 'office-ui-fabric-react!PositioningContainer:constructor(1)'
     summary: Constructs a new instance of the `PositioningContainer` class
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: (constructor)(props)
+    fullName: (constructor)(props)
+    langs:
+      - typeScript
+    type: constructor
     syntax:
       content: 'constructor(props: IPositioningContainerProps);'
       parameters:
         - id: props
           description: ''
-          type: IPositioningContainerProps
-properties:
-  - name: _onComponentDidMount
-    uid: 'office-ui-fabric-react!PositioningContainer#_onComponentDidMount:member'
-    package: office-ui-fabric-react!
-    fullName: _onComponentDidMount
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'protected _onComponentDidMount: () => void;'
-      return:
-        type: () =&gt; void
-  - name: _setInitialFocus
-    uid: 'office-ui-fabric-react!PositioningContainer#_setInitialFocus:member'
-    package: office-ui-fabric-react!
-    fullName: _setInitialFocus
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'protected _setInitialFocus: () => void;'
-      return:
-        type: () =&gt; void
-  - name: defaultProps
-    uid: 'office-ui-fabric-react!PositioningContainer.defaultProps:member'
-    package: office-ui-fabric-react!
-    fullName: defaultProps
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'static defaultProps: IPositioningContainerProps;'
-      return:
-        type: IPositioningContainerProps
-  - name: dismiss
-    uid: 'office-ui-fabric-react!PositioningContainer#dismiss:member'
-    package: office-ui-fabric-react!
-    fullName: dismiss
-    summary: 'Deprecated, use `onResize` instead.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: true
-    customDeprecatedMessage: Use `onResize` instead.
-    syntax:
-      content: >-
-        dismiss: (ev?: Event | React.MouseEvent<HTMLElement, MouseEvent> |
-        React.KeyboardEvent<HTMLElement> | undefined) => void;
-      return:
-        type: >-
-          (ev?: Event | React.MouseEvent&lt;HTMLElement, MouseEvent&gt; |
-          React.KeyboardEvent&lt;HTMLElement&gt; | undefined) =&gt; void
-  - name: onResize
-    uid: 'office-ui-fabric-react!PositioningContainer#onResize:member'
-    package: office-ui-fabric-react!
-    fullName: onResize
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        onResize: (ev?: Event | React.MouseEvent<HTMLElement, MouseEvent> |
-        React.KeyboardEvent<HTMLElement> | undefined) => void;
-      return:
-        type: >-
-          (ev?: Event | React.MouseEvent&lt;HTMLElement, MouseEvent&gt; |
-          React.KeyboardEvent&lt;HTMLElement&gt; | undefined) =&gt; void
-methods:
-  - name: _dismissOnLostFocus(ev)
-    uid: 'office-ui-fabric-react!PositioningContainer#_dismissOnLostFocus:member(1)'
-    package: office-ui-fabric-react!
-    fullName: _dismissOnLostFocus(ev)
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'protected _dismissOnLostFocus(ev: Event): void;'
-      parameters:
-        - id: ev
-          description: ''
-          type: Event
-      return:
-        type: void
-        description: ''
-  - name: _dismissOnScroll(ev)
-    uid: 'office-ui-fabric-react!PositioningContainer#_dismissOnScroll:member(1)'
-    package: office-ui-fabric-react!
-    fullName: _dismissOnScroll(ev)
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'protected _dismissOnScroll(ev: Event): void;'
-      parameters:
-        - id: ev
-          description: ''
-          type: Event
-      return:
-        type: void
-        description: ''
-  - name: componentDidMount()
-    uid: 'office-ui-fabric-react!PositioningContainer#componentDidMount:member(1)'
-    package: office-ui-fabric-react!
+          type:
+            - IPositioningContainerProps
+  - uid: 'office-ui-fabric-react!PositioningContainer#componentDidMount:member(1)'
+    name: componentDidMount()
     fullName: componentDidMount()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'componentDidMount(): void;'
       return:
-        type: void
+        type:
+          - void
         description: ''
-  - name: componentDidUpdate()
-    uid: 'office-ui-fabric-react!PositioningContainer#componentDidUpdate:member(1)'
-    package: office-ui-fabric-react!
+  - uid: 'office-ui-fabric-react!PositioningContainer#componentDidUpdate:member(1)'
+    name: componentDidUpdate()
     fullName: componentDidUpdate()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'componentDidUpdate(): void;'
       return:
-        type: void
+        type:
+          - void
         description: ''
-  - name: componentWillUnmount()
-    uid: 'office-ui-fabric-react!PositioningContainer#componentWillUnmount:member(1)'
-    package: office-ui-fabric-react!
+  - uid: 'office-ui-fabric-react!PositioningContainer#componentWillUnmount:member(1)'
+    name: componentWillUnmount()
     fullName: componentWillUnmount()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'componentWillUnmount(): void;'
       return:
-        type: void
+        type:
+          - void
         description: ''
-  - name: render()
-    uid: 'office-ui-fabric-react!PositioningContainer#render:member(1)'
-    package: office-ui-fabric-react!
+  - uid: 'office-ui-fabric-react!PositioningContainer.defaultProps:member'
+    name: defaultProps
+    fullName: defaultProps
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'static defaultProps: IPositioningContainerProps;'
+      return:
+        type:
+          - IPositioningContainerProps
+  - uid: 'office-ui-fabric-react!PositioningContainer#dismiss:member'
+    summary: 'Deprecated, use `onResize` instead.'
+    deprecated:
+      content: Use `onResize` instead.
+    name: dismiss
+    fullName: dismiss
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        dismiss: (ev?: Event | React.MouseEvent<HTMLElement, MouseEvent> | React.KeyboardEvent<HTMLElement> | undefined)
+        => void;
+      return:
+        type:
+          - >-
+            (ev?: Event | React.MouseEvent<HTMLElement, MouseEvent> | React.KeyboardEvent<HTMLElement> | undefined) =>
+            void
+  - uid: 'office-ui-fabric-react!PositioningContainer#onResize:member'
+    name: onResize
+    fullName: onResize
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        onResize: (ev?: Event | React.MouseEvent<HTMLElement, MouseEvent> | React.KeyboardEvent<HTMLElement> |
+        undefined) => void;
+      return:
+        type:
+          - >-
+            (ev?: Event | React.MouseEvent<HTMLElement, MouseEvent> | React.KeyboardEvent<HTMLElement> | undefined) =>
+            void
+  - uid: 'office-ui-fabric-react!PositioningContainer#render:member(1)'
+    name: render()
     fullName: render()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'render(): JSX.Element | null;'
       return:
-        type: JSX.Element | null
+        type:
+          - JSX.Element | null
         description: ''
-  - name: UNSAFE_componentWillMount()
-    uid: >-
-      office-ui-fabric-react!PositioningContainer#UNSAFE_componentWillMount:member(1)
-    package: office-ui-fabric-react!
+  - uid: 'office-ui-fabric-react!PositioningContainer#UNSAFE_componentWillMount:member(1)'
+    name: UNSAFE_componentWillMount()
     fullName: UNSAFE_componentWillMount()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'UNSAFE_componentWillMount(): void;'
       return:
-        type: void
+        type:
+          - void
         description: ''
-  - name: UNSAFE_componentWillUpdate(newProps)
-    uid: >-
-      office-ui-fabric-react!PositioningContainer#UNSAFE_componentWillUpdate:member(1)
-    package: office-ui-fabric-react!
+  - uid: 'office-ui-fabric-react!PositioningContainer#UNSAFE_componentWillUpdate:member(1)'
+    name: UNSAFE_componentWillUpdate(newProps)
     fullName: UNSAFE_componentWillUpdate(newProps)
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'UNSAFE_componentWillUpdate(newProps: IPositioningContainerProps): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: newProps
           description: ''
-          type: IPositioningContainerProps
-      return:
-        type: void
-        description: ''
-extends: 'React.Component&lt;IPositioningContainerProps, IPositioningContainerState&gt; '
+          type:
+            - IPositioningContainerProps

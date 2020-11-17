@@ -1,175 +1,176 @@
-### YamlMime:TSType
-name: IOverflowSetProps
-uid: '@fluentui/react-internal!IOverflowSetProps:interface'
-package: '@fluentui/react-internal!'
-fullName: IOverflowSetProps
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: className
-    uid: '@fluentui/react-internal!IOverflowSetProps#className:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-internal!IOverflowSetProps:interface'
+    name: IOverflowSetProps
+    fullName: IOverflowSetProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'React.RefAttributes<HTMLElement> '
     package: '@fluentui/react-internal!'
-    fullName: className
+    children:
+      - '@fluentui/react-internal!IOverflowSetProps#className:member'
+      - '@fluentui/react-internal!IOverflowSetProps#componentRef:member'
+      - '@fluentui/react-internal!IOverflowSetProps#items:member'
+      - '@fluentui/react-internal!IOverflowSetProps#itemSubMenuProvider:member'
+      - '@fluentui/react-internal!IOverflowSetProps#keytipSequences:member'
+      - '@fluentui/react-internal!IOverflowSetProps#onRenderItem:member'
+      - '@fluentui/react-internal!IOverflowSetProps#onRenderOverflowButton:member'
+      - '@fluentui/react-internal!IOverflowSetProps#overflowItems:member'
+      - '@fluentui/react-internal!IOverflowSetProps#overflowSide:member'
+      - '@fluentui/react-internal!IOverflowSetProps#role:member'
+      - '@fluentui/react-internal!IOverflowSetProps#styles:member'
+      - '@fluentui/react-internal!IOverflowSetProps#vertical:member'
+  - uid: '@fluentui/react-internal!IOverflowSetProps#className:member'
     summary: Class name
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: className
+    fullName: className
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'className?: string;'
       return:
-        type: string
-  - name: componentRef
-    uid: '@fluentui/react-internal!IOverflowSetProps#componentRef:member'
-    package: '@fluentui/react-internal!'
-    fullName: componentRef
+        type:
+          - string
+  - uid: '@fluentui/react-internal!IOverflowSetProps#componentRef:member'
     summary: Gets the component ref.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: componentRef
+    fullName: componentRef
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'componentRef?: IRefObject<IOverflowSet>;'
       return:
-        type: IRefObject&lt;IOverflowSet&gt;
-  - name: items
-    uid: '@fluentui/react-internal!IOverflowSetProps#items:member'
-    package: '@fluentui/react-internal!'
+        type:
+          - IRefObject<IOverflowSet>
+  - uid: '@fluentui/react-internal!IOverflowSetProps#items:member'
+    summary: An array of items to be rendered by your onRenderItem function in the primary content area
+    name: items
     fullName: items
-    summary: >-
-      An array of items to be rendered by your onRenderItem function in the
-      primary content area
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'items?: IOverflowSetItemProps[];'
       return:
-        type: 'IOverflowSetItemProps[]'
-  - name: itemSubMenuProvider
-    uid: '@fluentui/react-internal!IOverflowSetProps#itemSubMenuProvider:member'
-    package: '@fluentui/react-internal!'
+        type:
+          - 'IOverflowSetItemProps[]'
+  - uid: '@fluentui/react-internal!IOverflowSetProps#itemSubMenuProvider:member'
+    summary: >-
+      Function that will take in an IOverflowSetItemProps and return the subMenu for that item. If not provided, will
+      use 'item.subMenuProps.items' by default. This is only used if your overflow set has keytips.
+    name: itemSubMenuProvider
     fullName: itemSubMenuProvider
-    summary: >-
-      Function that will take in an IOverflowSetItemProps and return the subMenu
-      for that item. If not provided, will use 'item.subMenuProps.items' by
-      default. This is only used if your overflow set has keytips.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        itemSubMenuProvider?: (item: IOverflowSetItemProps) => any[] |
-        undefined;
+      content: 'itemSubMenuProvider?: (item: IOverflowSetItemProps) => any[] | undefined;'
       return:
-        type: '(item: IOverflowSetItemProps) =&gt; any[] | undefined'
-  - name: keytipSequences
-    uid: '@fluentui/react-internal!IOverflowSetProps#keytipSequences:member'
-    package: '@fluentui/react-internal!'
+        type:
+          - '(item: IOverflowSetItemProps) => any[] | undefined'
+  - uid: '@fluentui/react-internal!IOverflowSetProps#keytipSequences:member'
+    summary: 'Optional full keytip sequence for the overflow button, if it will have a keytip.'
+    name: keytipSequences
     fullName: keytipSequences
-    summary: >-
-      Optional full keytip sequence for the overflow button, if it will have a
-      keytip.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'keytipSequences?: string[];'
       return:
-        type: 'string[]'
-  - name: onRenderItem
-    uid: '@fluentui/react-internal!IOverflowSetProps#onRenderItem:member'
-    package: '@fluentui/react-internal!'
-    fullName: onRenderItem
+        type:
+          - 'string[]'
+  - uid: '@fluentui/react-internal!IOverflowSetProps#onRenderItem:member'
     summary: Method to call when trying to render an item.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onRenderItem
+    fullName: onRenderItem
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onRenderItem: (item: IOverflowSetItemProps) => any;'
       return:
-        type: '(item: IOverflowSetItemProps) =&gt; any'
-  - name: onRenderOverflowButton
-    uid: '@fluentui/react-internal!IOverflowSetProps#onRenderOverflowButton:member'
-    package: '@fluentui/react-internal!'
-    fullName: onRenderOverflowButton
+        type:
+          - '(item: IOverflowSetItemProps) => any'
+  - uid: '@fluentui/react-internal!IOverflowSetProps#onRenderOverflowButton:member'
     summary: >-
-      Rendering method for overflow button and contextual menu. The argument to
-      the function is the overflowItems passed in as props to this function.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Rendering method for overflow button and contextual menu. The argument to the function is the overflowItems passed
+      in as props to this function.
+    name: onRenderOverflowButton
+    fullName: onRenderOverflowButton
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onRenderOverflowButton: IRenderFunction<any[]>;'
       return:
-        type: 'IRenderFunction&lt;any[]&gt;'
-  - name: overflowItems
-    uid: '@fluentui/react-internal!IOverflowSetProps#overflowItems:member'
-    package: '@fluentui/react-internal!'
-    fullName: overflowItems
+        type:
+          - 'IRenderFunction<any[]>'
+  - uid: '@fluentui/react-internal!IOverflowSetProps#overflowItems:member'
     summary: An array of items to be passed to overflow contextual menu
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: overflowItems
+    fullName: overflowItems
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'overflowItems?: IOverflowSetItemProps[];'
       return:
-        type: 'IOverflowSetItemProps[]'
-  - name: overflowSide
-    uid: '@fluentui/react-internal!IOverflowSetProps#overflowSide:member'
-    package: '@fluentui/react-internal!'
-    fullName: overflowSide
+        type:
+          - 'IOverflowSetItemProps[]'
+  - uid: '@fluentui/react-internal!IOverflowSetProps#overflowSide:member'
     summary: >-
-      Controls wether or not the overflow button is placed at the start or end
-      of the items. This gives a reversed visual behavior but maintains correct
-      keyboard navigation.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Controls wether or not the overflow button is placed at the start or end of the items. This gives a reversed
+      visual behavior but maintains correct keyboard navigation.
+    name: overflowSide
+    fullName: overflowSide
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'overflowSide?: ''start'' | ''end'';'
       return:
-        type: '''start'' | ''end'''
-  - name: role
-    uid: '@fluentui/react-internal!IOverflowSetProps#role:member'
-    package: '@fluentui/react-internal!'
-    fullName: role
+        type:
+          - '''start'' | ''end'''
+  - uid: '@fluentui/react-internal!IOverflowSetProps#role:member'
     summary: The role for the OverflowSet.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: role
+    fullName: role
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'role?: string;'
       return:
-        type: string
-  - name: styles
-    uid: '@fluentui/react-internal!IOverflowSetProps#styles:member'
-    package: '@fluentui/react-internal!'
+        type:
+          - string
+  - uid: '@fluentui/react-internal!IOverflowSetProps#styles:member'
+    summary: Call to provide customized styling that will layer on top of the variant rules.
+    name: styles
     fullName: styles
-    summary: >-
-      Call to provide customized styling that will layer on top of the variant
-      rules.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'styles?: IStyleFunctionOrObject<IOverflowSetProps, IOverflowSetStyles>;'
       return:
-        type: 'IStyleFunctionOrObject&lt;IOverflowSetProps, IOverflowSetStyles&gt;'
-  - name: vertical
-    uid: '@fluentui/react-internal!IOverflowSetProps#vertical:member'
-    package: '@fluentui/react-internal!'
-    fullName: vertical
+        type:
+          - 'IStyleFunctionOrObject<IOverflowSetProps, IOverflowSetStyles>'
+  - uid: '@fluentui/react-internal!IOverflowSetProps#vertical:member'
     summary: >-
-      Change item layout direction to vertical/stacked. If role is set to
-      `menubar`<!-- -->, `vertical={true}` will also add proper
-      `aria-orientation`<!-- -->.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Change item layout direction to vertical/stacked. If role is set to `menubar`<!-- -->, `vertical={true}` will also
+      add proper `aria-orientation`<!-- -->.
+    name: vertical
+    fullName: vertical
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'vertical?: boolean;'
       return:
-        type: boolean
-extends: 'React.RefAttributes&lt;HTMLElement&gt; '
+        type:
+          - boolean

@@ -1,74 +1,78 @@
-### YamlMime:TSType
-name: IExpandingCardProps
-uid: 'office-ui-fabric-react!IExpandingCardProps:interface'
-package: office-ui-fabric-react!
-fullName: IExpandingCardProps
-summary: ExpandingCard component props.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: compactCardHeight
-    uid: 'office-ui-fabric-react!IExpandingCardProps#compactCardHeight:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-ui-fabric-react!IExpandingCardProps:interface'
+    summary: ExpandingCard component props.
+    name: IExpandingCardProps
+    fullName: IExpandingCardProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'IBaseCardProps<IExpandingCard, IExpandingCardStyles, IExpandingCardStyleProps> '
     package: office-ui-fabric-react!
-    fullName: compactCardHeight
+    children:
+      - 'office-ui-fabric-react!IExpandingCardProps#compactCardHeight:member'
+      - 'office-ui-fabric-react!IExpandingCardProps#expandedCardHeight:member'
+      - 'office-ui-fabric-react!IExpandingCardProps#mode:member'
+      - 'office-ui-fabric-react!IExpandingCardProps#onRenderCompactCard:member'
+      - 'office-ui-fabric-react!IExpandingCardProps#onRenderExpandedCard:member'
+  - uid: 'office-ui-fabric-react!IExpandingCardProps#compactCardHeight:member'
     summary: Height of compact card
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: compactCardHeight
+    fullName: compactCardHeight
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'compactCardHeight?: number;'
       return:
-        type: number
-  - name: expandedCardHeight
-    uid: 'office-ui-fabric-react!IExpandingCardProps#expandedCardHeight:member'
-    package: office-ui-fabric-react!
-    fullName: expandedCardHeight
+        type:
+          - number
+  - uid: 'office-ui-fabric-react!IExpandingCardProps#expandedCardHeight:member'
     summary: Height of expanded card
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: expandedCardHeight
+    fullName: expandedCardHeight
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'expandedCardHeight?: number;'
       return:
-        type: number
-  - name: mode
-    uid: 'office-ui-fabric-react!IExpandingCardProps#mode:member'
-    package: office-ui-fabric-react!
-    fullName: mode
+        type:
+          - number
+  - uid: 'office-ui-fabric-react!IExpandingCardProps#mode:member'
     summary: Use to open the card in expanded format and not wait for the delay
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: mode
+    fullName: mode
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'mode?: ExpandingCardMode;'
       return:
-        type: ExpandingCardMode
-  - name: onRenderCompactCard
-    uid: 'office-ui-fabric-react!IExpandingCardProps#onRenderCompactCard:member'
-    package: office-ui-fabric-react!
-    fullName: onRenderCompactCard
+        type:
+          - ExpandingCardMode
+  - uid: 'office-ui-fabric-react!IExpandingCardProps#onRenderCompactCard:member'
     summary: Render function to populate compact content area
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onRenderCompactCard
+    fullName: onRenderCompactCard
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onRenderCompactCard?: IRenderFunction<any>;'
       return:
-        type: IRenderFunction&lt;any&gt;
-  - name: onRenderExpandedCard
-    uid: 'office-ui-fabric-react!IExpandingCardProps#onRenderExpandedCard:member'
-    package: office-ui-fabric-react!
-    fullName: onRenderExpandedCard
+        type:
+          - IRenderFunction<any>
+  - uid: 'office-ui-fabric-react!IExpandingCardProps#onRenderExpandedCard:member'
     summary: Render function to populate expanded content area
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onRenderExpandedCard
+    fullName: onRenderExpandedCard
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onRenderExpandedCard?: IRenderFunction<any>;'
       return:
-        type: IRenderFunction&lt;any&gt;
-extends: >-
-  IBaseCardProps&lt;IExpandingCard, IExpandingCardStyles,
-  IExpandingCardStyleProps&gt; 
+        type:
+          - IRenderFunction<any>

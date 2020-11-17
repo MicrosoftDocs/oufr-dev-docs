@@ -1,294 +1,294 @@
-### YamlMime:TSType
-name: ScrollablePaneBase
-uid: 'office-ui-fabric-react!ScrollablePaneBase:class'
-package: office-ui-fabric-react!
-fullName: ScrollablePaneBase
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: class
-constructors:
-  - name: (constructor)(props)
-    uid: 'office-ui-fabric-react!ScrollablePaneBase:constructor(1)'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-ui-fabric-react!ScrollablePaneBase:class'
+    name: ScrollablePaneBase
+    fullName: ScrollablePaneBase
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'React.Component<IScrollablePaneProps, IScrollablePaneState> '
+    implements:
+      - 'IScrollablePane '
     package: office-ui-fabric-react!
-    fullName: (constructor)(props)
+    children:
+      - 'office-ui-fabric-react!ScrollablePaneBase:constructor(1)'
+      - 'office-ui-fabric-react!ScrollablePaneBase#addSticky:member'
+      - 'office-ui-fabric-react!ScrollablePaneBase#componentDidMount:member(1)'
+      - 'office-ui-fabric-react!ScrollablePaneBase#componentDidUpdate:member(1)'
+      - 'office-ui-fabric-react!ScrollablePaneBase#componentWillUnmount:member(1)'
+      - 'office-ui-fabric-react!ScrollablePaneBase#contentContainer:member'
+      - 'office-ui-fabric-react!ScrollablePaneBase#forceLayoutUpdate:member(1)'
+      - 'office-ui-fabric-react!ScrollablePaneBase#getScrollPosition:member'
+      - 'office-ui-fabric-react!ScrollablePaneBase#notifySubscribers:member'
+      - 'office-ui-fabric-react!ScrollablePaneBase#removeSticky:member'
+      - 'office-ui-fabric-react!ScrollablePaneBase#render:member(1)'
+      - 'office-ui-fabric-react!ScrollablePaneBase#root:member'
+      - 'office-ui-fabric-react!ScrollablePaneBase#setStickiesDistanceFromTop:member(1)'
+      - 'office-ui-fabric-react!ScrollablePaneBase#shouldComponentUpdate:member(1)'
+      - 'office-ui-fabric-react!ScrollablePaneBase#sortSticky:member'
+      - 'office-ui-fabric-react!ScrollablePaneBase#stickyAbove:member'
+      - 'office-ui-fabric-react!ScrollablePaneBase#stickyBelow:member'
+      - 'office-ui-fabric-react!ScrollablePaneBase#subscribe:member'
+      - 'office-ui-fabric-react!ScrollablePaneBase#syncScrollSticky:member'
+      - 'office-ui-fabric-react!ScrollablePaneBase#unsubscribe:member'
+      - 'office-ui-fabric-react!ScrollablePaneBase#updateStickyRefHeights:member'
+  - uid: 'office-ui-fabric-react!ScrollablePaneBase:constructor(1)'
     summary: Constructs a new instance of the `ScrollablePaneBase` class
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: (constructor)(props)
+    fullName: (constructor)(props)
+    langs:
+      - typeScript
+    type: constructor
     syntax:
       content: 'constructor(props: IScrollablePaneProps);'
       parameters:
         - id: props
           description: ''
-          type: IScrollablePaneProps
-properties:
-  - name: addSticky
-    uid: 'office-ui-fabric-react!ScrollablePaneBase#addSticky:member'
-    package: office-ui-fabric-react!
+          type:
+            - IScrollablePaneProps
+  - uid: 'office-ui-fabric-react!ScrollablePaneBase#addSticky:member'
+    name: addSticky
     fullName: addSticky
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'addSticky: (sticky: Sticky) => void;'
       return:
-        type: '(sticky: Sticky) =&gt; void'
-  - name: contentContainer
-    uid: 'office-ui-fabric-react!ScrollablePaneBase#contentContainer:member'
-    package: office-ui-fabric-react!
-    fullName: contentContainer
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'readonly contentContainer: HTMLDivElement | null;'
-      return:
-        type: HTMLDivElement | null
-  - name: getScrollPosition
-    uid: 'office-ui-fabric-react!ScrollablePaneBase#getScrollPosition:member'
-    package: office-ui-fabric-react!
-    fullName: getScrollPosition
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getScrollPosition: () => number;'
-      return:
-        type: () =&gt; number
-  - name: notifySubscribers
-    uid: 'office-ui-fabric-react!ScrollablePaneBase#notifySubscribers:member'
-    package: office-ui-fabric-react!
-    fullName: notifySubscribers
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'notifySubscribers: () => void;'
-      return:
-        type: () =&gt; void
-  - name: removeSticky
-    uid: 'office-ui-fabric-react!ScrollablePaneBase#removeSticky:member'
-    package: office-ui-fabric-react!
-    fullName: removeSticky
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'removeSticky: (sticky: Sticky) => void;'
-      return:
-        type: '(sticky: Sticky) =&gt; void'
-  - name: root
-    uid: 'office-ui-fabric-react!ScrollablePaneBase#root:member'
-    package: office-ui-fabric-react!
-    fullName: root
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'readonly root: HTMLDivElement | null;'
-      return:
-        type: HTMLDivElement | null
-  - name: sortSticky
-    uid: 'office-ui-fabric-react!ScrollablePaneBase#sortSticky:member'
-    package: office-ui-fabric-react!
-    fullName: sortSticky
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'sortSticky: (sticky: Sticky, sortAgain?: boolean | undefined) => void;'
-      return:
-        type: '(sticky: Sticky, sortAgain?: boolean | undefined) =&gt; void'
-  - name: stickyAbove
-    uid: 'office-ui-fabric-react!ScrollablePaneBase#stickyAbove:member'
-    package: office-ui-fabric-react!
-    fullName: stickyAbove
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'readonly stickyAbove: HTMLDivElement | null;'
-      return:
-        type: HTMLDivElement | null
-  - name: stickyBelow
-    uid: 'office-ui-fabric-react!ScrollablePaneBase#stickyBelow:member'
-    package: office-ui-fabric-react!
-    fullName: stickyBelow
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'readonly stickyBelow: HTMLDivElement | null;'
-      return:
-        type: HTMLDivElement | null
-  - name: subscribe
-    uid: 'office-ui-fabric-react!ScrollablePaneBase#subscribe:member'
-    package: office-ui-fabric-react!
-    fullName: subscribe
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'subscribe: (handler: Function) => void;'
-      return:
-        type: '(handler: Function) =&gt; void'
-  - name: syncScrollSticky
-    uid: 'office-ui-fabric-react!ScrollablePaneBase#syncScrollSticky:member'
-    package: office-ui-fabric-react!
-    fullName: syncScrollSticky
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'syncScrollSticky: (sticky: Sticky) => void;'
-      return:
-        type: '(sticky: Sticky) =&gt; void'
-  - name: unsubscribe
-    uid: 'office-ui-fabric-react!ScrollablePaneBase#unsubscribe:member'
-    package: office-ui-fabric-react!
-    fullName: unsubscribe
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'unsubscribe: (handler: Function) => void;'
-      return:
-        type: '(handler: Function) =&gt; void'
-  - name: updateStickyRefHeights
-    uid: 'office-ui-fabric-react!ScrollablePaneBase#updateStickyRefHeights:member'
-    package: office-ui-fabric-react!
-    fullName: updateStickyRefHeights
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'updateStickyRefHeights: () => void;'
-      return:
-        type: () =&gt; void
-methods:
-  - name: componentDidMount()
-    uid: 'office-ui-fabric-react!ScrollablePaneBase#componentDidMount:member(1)'
-    package: office-ui-fabric-react!
+        type:
+          - '(sticky: Sticky) => void'
+  - uid: 'office-ui-fabric-react!ScrollablePaneBase#componentDidMount:member(1)'
+    name: componentDidMount()
     fullName: componentDidMount()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'componentDidMount(): void;'
       return:
-        type: void
+        type:
+          - void
         description: ''
-  - name: 'componentDidUpdate(prevProps, prevState)'
-    uid: 'office-ui-fabric-react!ScrollablePaneBase#componentDidUpdate:member(1)'
-    package: office-ui-fabric-react!
+  - uid: 'office-ui-fabric-react!ScrollablePaneBase#componentDidUpdate:member(1)'
+    name: 'componentDidUpdate(prevProps, prevState)'
     fullName: 'componentDidUpdate(prevProps, prevState)'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        componentDidUpdate(prevProps: IScrollablePaneProps, prevState:
-        IScrollablePaneState): void;
+      content: 'componentDidUpdate(prevProps: IScrollablePaneProps, prevState: IScrollablePaneState): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: prevProps
           description: ''
-          type: IScrollablePaneProps
+          type:
+            - IScrollablePaneProps
         - id: prevState
           description: ''
-          type: IScrollablePaneState
-      return:
-        type: void
-        description: ''
-  - name: componentWillUnmount()
-    uid: 'office-ui-fabric-react!ScrollablePaneBase#componentWillUnmount:member(1)'
-    package: office-ui-fabric-react!
+          type:
+            - IScrollablePaneState
+  - uid: 'office-ui-fabric-react!ScrollablePaneBase#componentWillUnmount:member(1)'
+    name: componentWillUnmount()
     fullName: componentWillUnmount()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'componentWillUnmount(): void;'
       return:
-        type: void
+        type:
+          - void
         description: ''
-  - name: forceLayoutUpdate()
-    uid: 'office-ui-fabric-react!ScrollablePaneBase#forceLayoutUpdate:member(1)'
-    package: office-ui-fabric-react!
+  - uid: 'office-ui-fabric-react!ScrollablePaneBase#contentContainer:member'
+    name: contentContainer
+    fullName: contentContainer
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly contentContainer: HTMLDivElement | null;'
+      return:
+        type:
+          - HTMLDivElement | null
+  - uid: 'office-ui-fabric-react!ScrollablePaneBase#forceLayoutUpdate:member(1)'
+    name: forceLayoutUpdate()
     fullName: forceLayoutUpdate()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'forceLayoutUpdate(): void;'
       return:
-        type: void
+        type:
+          - void
         description: ''
-  - name: render()
-    uid: 'office-ui-fabric-react!ScrollablePaneBase#render:member(1)'
-    package: office-ui-fabric-react!
+  - uid: 'office-ui-fabric-react!ScrollablePaneBase#getScrollPosition:member'
+    name: getScrollPosition
+    fullName: getScrollPosition
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'getScrollPosition: () => number;'
+      return:
+        type:
+          - () => number
+  - uid: 'office-ui-fabric-react!ScrollablePaneBase#notifySubscribers:member'
+    name: notifySubscribers
+    fullName: notifySubscribers
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'notifySubscribers: () => void;'
+      return:
+        type:
+          - () => void
+  - uid: 'office-ui-fabric-react!ScrollablePaneBase#removeSticky:member'
+    name: removeSticky
+    fullName: removeSticky
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'removeSticky: (sticky: Sticky) => void;'
+      return:
+        type:
+          - '(sticky: Sticky) => void'
+  - uid: 'office-ui-fabric-react!ScrollablePaneBase#render:member(1)'
+    name: render()
     fullName: render()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'render(): JSX.Element;'
       return:
-        type: JSX.Element
+        type:
+          - JSX.Element
         description: ''
-  - name: setStickiesDistanceFromTop()
-    uid: >-
-      office-ui-fabric-react!ScrollablePaneBase#setStickiesDistanceFromTop:member(1)
-    package: office-ui-fabric-react!
+  - uid: 'office-ui-fabric-react!ScrollablePaneBase#root:member'
+    name: root
+    fullName: root
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly root: HTMLDivElement | null;'
+      return:
+        type:
+          - HTMLDivElement | null
+  - uid: 'office-ui-fabric-react!ScrollablePaneBase#setStickiesDistanceFromTop:member(1)'
+    name: setStickiesDistanceFromTop()
     fullName: setStickiesDistanceFromTop()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'setStickiesDistanceFromTop(): void;'
       return:
-        type: void
+        type:
+          - void
         description: ''
-  - name: 'shouldComponentUpdate(nextProps, nextState)'
-    uid: 'office-ui-fabric-react!ScrollablePaneBase#shouldComponentUpdate:member(1)'
-    package: office-ui-fabric-react!
+  - uid: 'office-ui-fabric-react!ScrollablePaneBase#shouldComponentUpdate:member(1)'
+    name: 'shouldComponentUpdate(nextProps, nextState)'
     fullName: 'shouldComponentUpdate(nextProps, nextState)'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        shouldComponentUpdate(nextProps: IScrollablePaneProps, nextState:
-        IScrollablePaneState): boolean;
+      content: 'shouldComponentUpdate(nextProps: IScrollablePaneProps, nextState: IScrollablePaneState): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
       parameters:
         - id: nextProps
           description: ''
-          type: IScrollablePaneProps
+          type:
+            - IScrollablePaneProps
         - id: nextState
           description: ''
-          type: IScrollablePaneState
+          type:
+            - IScrollablePaneState
+  - uid: 'office-ui-fabric-react!ScrollablePaneBase#sortSticky:member'
+    name: sortSticky
+    fullName: sortSticky
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'sortSticky: (sticky: Sticky, sortAgain?: boolean | undefined) => void;'
       return:
-        type: boolean
-        description: ''
-extends: 'React.Component&lt;IScrollablePaneProps, IScrollablePaneState&gt; '
+        type:
+          - '(sticky: Sticky, sortAgain?: boolean | undefined) => void'
+  - uid: 'office-ui-fabric-react!ScrollablePaneBase#stickyAbove:member'
+    name: stickyAbove
+    fullName: stickyAbove
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly stickyAbove: HTMLDivElement | null;'
+      return:
+        type:
+          - HTMLDivElement | null
+  - uid: 'office-ui-fabric-react!ScrollablePaneBase#stickyBelow:member'
+    name: stickyBelow
+    fullName: stickyBelow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly stickyBelow: HTMLDivElement | null;'
+      return:
+        type:
+          - HTMLDivElement | null
+  - uid: 'office-ui-fabric-react!ScrollablePaneBase#subscribe:member'
+    name: subscribe
+    fullName: subscribe
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'subscribe: (handler: Function) => void;'
+      return:
+        type:
+          - '(handler: Function) => void'
+  - uid: 'office-ui-fabric-react!ScrollablePaneBase#syncScrollSticky:member'
+    name: syncScrollSticky
+    fullName: syncScrollSticky
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'syncScrollSticky: (sticky: Sticky) => void;'
+      return:
+        type:
+          - '(sticky: Sticky) => void'
+  - uid: 'office-ui-fabric-react!ScrollablePaneBase#unsubscribe:member'
+    name: unsubscribe
+    fullName: unsubscribe
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'unsubscribe: (handler: Function) => void;'
+      return:
+        type:
+          - '(handler: Function) => void'
+  - uid: 'office-ui-fabric-react!ScrollablePaneBase#updateStickyRefHeights:member'
+    name: updateStickyRefHeights
+    fullName: updateStickyRefHeights
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'updateStickyRefHeights: () => void;'
+      return:
+        type:
+          - () => void

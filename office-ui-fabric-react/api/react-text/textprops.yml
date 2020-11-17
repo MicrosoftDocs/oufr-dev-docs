@@ -1,40 +1,40 @@
-### YamlMime:TSType
-name: TextProps
-uid: '@fluentui/react-text!TextProps:interface'
-package: '@fluentui/react-text!'
-fullName: TextProps
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: tokens
-    uid: '@fluentui/react-text!TextProps#tokens:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-text!TextProps:interface'
+    name: TextProps
+    fullName: TextProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - '@fluentui/react-compose!ComponentProps:interface'
+      - 'React.HTMLAttributes<HTMLSpanElement> '
     package: '@fluentui/react-text!'
+    children:
+      - '@fluentui/react-text!TextProps#tokens:member'
+      - '@fluentui/react-text!TextProps#variant:member'
+  - uid: '@fluentui/react-text!TextProps#tokens:member'
+    name: tokens
     fullName: tokens
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'tokens?: RecursivePartial<TextTokenSet>;'
       return:
-        type: RecursivePartial&lt;TextTokenSet&gt;
-  - name: variant
-    uid: '@fluentui/react-text!TextProps#variant:member'
-    package: '@fluentui/react-text!'
-    fullName: variant
+        type:
+          - RecursivePartial<TextTokenSet>
+  - uid: '@fluentui/react-text!TextProps#variant:member'
     summary: A text can define its look via defined variants.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: variant
+    fullName: variant
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: >-
-        variant?: 'caption' | 'body' | 'subHeadline' | 'headline' | 'title1' |
-        'title2' | 'title3' | 'largeTitle' | 'display';
+        variant?: 'caption' | 'body' | 'subHeadline' | 'headline' | 'title1' | 'title2' | 'title3' | 'largeTitle' |
+        'display';
       return:
-        type: >-
-          'caption' | 'body' | 'subHeadline' | 'headline' | 'title1' | 'title2'
-          | 'title3' | 'largeTitle' | 'display'
-extends: '<xref uid="@fluentui/react-compose!ComponentProps:interface" />'
+        type:
+          - '''caption'' | ''body'' | ''subHeadline'' | ''headline'' | ''title1'' | ''title2'' | ''title3'' | ''largeTitle'' | ''display'''

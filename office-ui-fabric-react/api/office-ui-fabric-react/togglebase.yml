@@ -1,88 +1,92 @@
-### YamlMime:TSType
-name: ToggleBase
-uid: 'office-ui-fabric-react!ToggleBase:class'
-package: office-ui-fabric-react!
-fullName: ToggleBase
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: class
-constructors:
-  - name: (constructor)(props)
-    uid: 'office-ui-fabric-react!ToggleBase:constructor(1)'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-ui-fabric-react!ToggleBase:class'
+    name: ToggleBase
+    fullName: ToggleBase
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'React.Component<IToggleProps, IToggleState> '
+    implements:
+      - 'IToggle '
     package: office-ui-fabric-react!
-    fullName: (constructor)(props)
+    children:
+      - 'office-ui-fabric-react!ToggleBase:constructor(1)'
+      - 'office-ui-fabric-react!ToggleBase#checked:member'
+      - 'office-ui-fabric-react!ToggleBase#focus:member(1)'
+      - 'office-ui-fabric-react!ToggleBase.getDerivedStateFromProps:member(1)'
+      - 'office-ui-fabric-react!ToggleBase#render:member(1)'
+  - uid: 'office-ui-fabric-react!ToggleBase:constructor(1)'
     summary: Constructs a new instance of the `ToggleBase` class
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: (constructor)(props)
+    fullName: (constructor)(props)
+    langs:
+      - typeScript
+    type: constructor
     syntax:
       content: 'constructor(props: IToggleProps);'
       parameters:
         - id: props
           description: ''
-          type: IToggleProps
-properties:
-  - name: checked
-    uid: 'office-ui-fabric-react!ToggleBase#checked:member'
-    package: office-ui-fabric-react!
-    fullName: checked
+          type:
+            - IToggleProps
+  - uid: 'office-ui-fabric-react!ToggleBase#checked:member'
     summary: Gets the current checked state of the toggle.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: checked
+    fullName: checked
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'readonly checked: boolean;'
       return:
-        type: boolean
-methods:
-  - name: focus()
-    uid: 'office-ui-fabric-react!ToggleBase#focus:member(1)'
-    package: office-ui-fabric-react!
+        type:
+          - boolean
+  - uid: 'office-ui-fabric-react!ToggleBase#focus:member(1)'
+    name: focus()
     fullName: focus()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'focus(): void;'
       return:
-        type: void
+        type:
+          - void
         description: ''
-  - name: 'getDerivedStateFromProps(nextProps, prevState)'
-    uid: 'office-ui-fabric-react!ToggleBase.getDerivedStateFromProps:member(1)'
-    package: office-ui-fabric-react!
+  - uid: 'office-ui-fabric-react!ToggleBase.getDerivedStateFromProps:member(1)'
+    name: 'getDerivedStateFromProps(nextProps, prevState)'
     fullName: 'getDerivedStateFromProps(nextProps, prevState)'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: >-
-        static getDerivedStateFromProps(nextProps: Readonly<IToggleProps>,
-        prevState: Readonly<IToggleState>): Partial<IToggleState> | null;
+        static getDerivedStateFromProps(nextProps: Readonly<IToggleProps>, prevState: Readonly<IToggleState>):
+        Partial<IToggleState> | null;
+      return:
+        type:
+          - Partial<IToggleState> | null
+        description: ''
       parameters:
         - id: nextProps
           description: ''
-          type: Readonly&lt;IToggleProps&gt;
+          type:
+            - Readonly<IToggleProps>
         - id: prevState
           description: ''
-          type: Readonly&lt;IToggleState&gt;
-      return:
-        type: Partial&lt;IToggleState&gt; | null
-        description: ''
-  - name: render()
-    uid: 'office-ui-fabric-react!ToggleBase#render:member(1)'
-    package: office-ui-fabric-react!
+          type:
+            - Readonly<IToggleState>
+  - uid: 'office-ui-fabric-react!ToggleBase#render:member(1)'
+    name: render()
     fullName: render()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'render(): JSX.Element;'
       return:
-        type: JSX.Element
+        type:
+          - JSX.Element
         description: ''
-extends: 'React.Component&lt;IToggleProps, IToggleState&gt; '

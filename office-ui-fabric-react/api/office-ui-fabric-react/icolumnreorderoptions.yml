@@ -1,96 +1,94 @@
-### YamlMime:TSType
-name: IColumnReorderOptions
-uid: 'office-ui-fabric-react!IColumnReorderOptions:interface'
-package: office-ui-fabric-react!
-fullName: IColumnReorderOptions
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: frozenColumnCountFromEnd
-    uid: >-
-      office-ui-fabric-react!IColumnReorderOptions#frozenColumnCountFromEnd:member
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-ui-fabric-react!IColumnReorderOptions:interface'
+    name: IColumnReorderOptions
+    fullName: IColumnReorderOptions
+    langs:
+      - typeScript
+    type: interface
     package: office-ui-fabric-react!
-    fullName: frozenColumnCountFromEnd
+    children:
+      - 'office-ui-fabric-react!IColumnReorderOptions#frozenColumnCountFromEnd:member'
+      - 'office-ui-fabric-react!IColumnReorderOptions#frozenColumnCountFromStart:member'
+      - 'office-ui-fabric-react!IColumnReorderOptions#handleColumnReorder:member'
+      - 'office-ui-fabric-react!IColumnReorderOptions#onColumnDragStart:member'
+      - 'office-ui-fabric-react!IColumnReorderOptions#onColumnDrop:member'
+      - 'office-ui-fabric-react!IColumnReorderOptions#onDragEnd:member'
+  - uid: 'office-ui-fabric-react!IColumnReorderOptions#frozenColumnCountFromEnd:member'
     summary: Specifies the number fixed columns from right
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: frozenColumnCountFromEnd
+    fullName: frozenColumnCountFromEnd
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'frozenColumnCountFromEnd?: number;'
       return:
-        type: number
-  - name: frozenColumnCountFromStart
-    uid: >-
-      office-ui-fabric-react!IColumnReorderOptions#frozenColumnCountFromStart:member
-    package: office-ui-fabric-react!
-    fullName: frozenColumnCountFromStart
+        type:
+          - number
+  - uid: 'office-ui-fabric-react!IColumnReorderOptions#frozenColumnCountFromStart:member'
     summary: Specifies the number fixed columns from left
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: frozenColumnCountFromStart
+    fullName: frozenColumnCountFromStart
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'frozenColumnCountFromStart?: number;'
       return:
-        type: number
-  - name: handleColumnReorder
-    uid: 'office-ui-fabric-react!IColumnReorderOptions#handleColumnReorder:member'
-    package: office-ui-fabric-react!
+        type:
+          - number
+  - uid: 'office-ui-fabric-react!IColumnReorderOptions#handleColumnReorder:member'
+    summary: >-
+      Callback to handle column reordering. `draggedIndex` is the source column index, which should be placed at
+      `targetIndex`<!-- -->.
+    deprecated:
+      content: Use `onColumnDrop` instead.
+    name: handleColumnReorder
     fullName: handleColumnReorder
-    summary: >-
-      Callback to handle column reordering. `draggedIndex` is the source column
-      index, which should be placed at `targetIndex`<!-- -->.
-    remarks: ''
-    isPreview: false
-    isDeprecated: true
-    customDeprecatedMessage: Use `onColumnDrop` instead.
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        handleColumnReorder?: (draggedIndex: number, targetIndex: number) =>
-        void;
+      content: 'handleColumnReorder?: (draggedIndex: number, targetIndex: number) => void;'
       return:
-        type: '(draggedIndex: number, targetIndex: number) =&gt; void'
-  - name: onColumnDragStart
-    uid: 'office-ui-fabric-react!IColumnReorderOptions#onColumnDragStart:member'
-    package: office-ui-fabric-react!
+        type:
+          - '(draggedIndex: number, targetIndex: number) => void'
+  - uid: 'office-ui-fabric-react!IColumnReorderOptions#onColumnDragStart:member'
+    summary: Callback to handle when dragging on this column's DetailsHeader has started.
+    name: onColumnDragStart
     fullName: onColumnDragStart
-    summary: >-
-      Callback to handle when dragging on this column's DetailsHeader has
-      started.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onColumnDragStart?: (dragStarted: boolean) => void;'
       return:
-        type: '(dragStarted: boolean) =&gt; void'
-  - name: onColumnDrop
-    uid: 'office-ui-fabric-react!IColumnReorderOptions#onColumnDrop:member'
-    package: office-ui-fabric-react!
-    fullName: onColumnDrop
+        type:
+          - '(dragStarted: boolean) => void'
+  - uid: 'office-ui-fabric-react!IColumnReorderOptions#onColumnDrop:member'
     summary: >-
-      Callback to handle column reordering. `draggedIndex` is the source column
-      index, which should be placed at `targetIndex`<!-- -->.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Callback to handle column reordering. `draggedIndex` is the source column index, which should be placed at
+      `targetIndex`<!-- -->.
+    name: onColumnDrop
+    fullName: onColumnDrop
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onColumnDrop?: (dragDropDetails: IColumnDragDropDetails) => void;'
       return:
-        type: '(dragDropDetails: IColumnDragDropDetails) =&gt; void'
-  - name: onDragEnd
-    uid: 'office-ui-fabric-react!IColumnReorderOptions#onDragEnd:member'
-    package: office-ui-fabric-react!
+        type:
+          - '(dragDropDetails: IColumnDragDropDetails) => void'
+  - uid: 'office-ui-fabric-react!IColumnReorderOptions#onDragEnd:member'
+    summary: Callback to handle when dragging on this column's DetailsHeader has finished.
+    name: onDragEnd
     fullName: onDragEnd
-    summary: >-
-      Callback to handle when dragging on this column's DetailsHeader has
-      finished.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onDragEnd?: (columnDropLocationDetails: ColumnDragEndLocation) => void;'
       return:
-        type: '(columnDropLocationDetails: ColumnDragEndLocation) =&gt; void'
+        type:
+          - '(columnDropLocationDetails: ColumnDragEndLocation) => void'

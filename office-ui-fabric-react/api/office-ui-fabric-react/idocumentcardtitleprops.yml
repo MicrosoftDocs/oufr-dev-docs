@@ -1,109 +1,105 @@
-### YamlMime:TSType
-name: IDocumentCardTitleProps
-uid: 'office-ui-fabric-react!IDocumentCardTitleProps:interface'
-package: office-ui-fabric-react!
-fullName: IDocumentCardTitleProps
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: className
-    uid: 'office-ui-fabric-react!IDocumentCardTitleProps#className:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-ui-fabric-react!IDocumentCardTitleProps:interface'
+    name: IDocumentCardTitleProps
+    fullName: IDocumentCardTitleProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'React.ClassAttributes<DocumentCardTitleBase> '
     package: office-ui-fabric-react!
-    fullName: className
+    children:
+      - 'office-ui-fabric-react!IDocumentCardTitleProps#className:member'
+      - 'office-ui-fabric-react!IDocumentCardTitleProps#componentRef:member'
+      - 'office-ui-fabric-react!IDocumentCardTitleProps#shouldTruncate:member'
+      - 'office-ui-fabric-react!IDocumentCardTitleProps#showAsSecondaryTitle:member'
+      - 'office-ui-fabric-react!IDocumentCardTitleProps#styles:member'
+      - 'office-ui-fabric-react!IDocumentCardTitleProps#theme:member'
+      - 'office-ui-fabric-react!IDocumentCardTitleProps#title:member'
+  - uid: 'office-ui-fabric-react!IDocumentCardTitleProps#className:member'
     summary: Optional override class name
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: className
+    fullName: className
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'className?: string;'
       return:
-        type: string
-  - name: componentRef
-    uid: 'office-ui-fabric-react!IDocumentCardTitleProps#componentRef:member'
-    package: office-ui-fabric-react!
-    fullName: componentRef
+        type:
+          - string
+  - uid: 'office-ui-fabric-react!IDocumentCardTitleProps#componentRef:member'
     summary: Gets the component ref.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: componentRef
+    fullName: componentRef
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'componentRef?: IRefObject<IDocumentCardTitle>;'
       return:
-        type: IRefObject&lt;IDocumentCardTitle&gt;
-  - name: shouldTruncate
-    uid: 'office-ui-fabric-react!IDocumentCardTitleProps#shouldTruncate:member'
-    package: office-ui-fabric-react!
+        type:
+          - IRefObject<IDocumentCardTitle>
+  - uid: 'office-ui-fabric-react!IDocumentCardTitleProps#shouldTruncate:member'
+    summary: Whether we truncate the title to fit within the box. May have a performance impact.
+    name: shouldTruncate
     fullName: shouldTruncate
-    summary: >-
-      Whether we truncate the title to fit within the box. May have a
-      performance impact.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'shouldTruncate?: boolean;'
       return:
-        type: boolean
-  - name: showAsSecondaryTitle
-    uid: 'office-ui-fabric-react!IDocumentCardTitleProps#showAsSecondaryTitle:member'
-    package: office-ui-fabric-react!
+        type:
+          - boolean
+  - uid: 'office-ui-fabric-react!IDocumentCardTitleProps#showAsSecondaryTitle:member'
+    summary: Whether show as title as secondary title style such as smaller font and lighter color.
+    name: showAsSecondaryTitle
     fullName: showAsSecondaryTitle
-    summary: >-
-      Whether show as title as secondary title style such as smaller font and
-      lighter color.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'showAsSecondaryTitle?: boolean;'
       return:
-        type: boolean
-  - name: styles
-    uid: 'office-ui-fabric-react!IDocumentCardTitleProps#styles:member'
-    package: office-ui-fabric-react!
+        type:
+          - boolean
+  - uid: 'office-ui-fabric-react!IDocumentCardTitleProps#styles:member'
+    summary: Call to provide customized styling that will layer on top of the variant rules
+    name: styles
     fullName: styles
-    summary: >-
-      Call to provide customized styling that will layer on top of the variant
-      rules
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        styles?: IStyleFunctionOrObject<IDocumentCardTitleStyleProps,
-        IDocumentCardTitleStyles>;
+      content: 'styles?: IStyleFunctionOrObject<IDocumentCardTitleStyleProps, IDocumentCardTitleStyles>;'
       return:
-        type: >-
-          IStyleFunctionOrObject&lt;IDocumentCardTitleStyleProps,
-          IDocumentCardTitleStyles&gt;
-  - name: theme
-    uid: 'office-ui-fabric-react!IDocumentCardTitleProps#theme:member'
-    package: office-ui-fabric-react!
-    fullName: theme
+        type:
+          - 'IStyleFunctionOrObject<IDocumentCardTitleStyleProps, IDocumentCardTitleStyles>'
+  - uid: 'office-ui-fabric-react!IDocumentCardTitleProps#theme:member'
     summary: Theme provided by HOC.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'theme?: ITheme;'
       return:
-        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
-  - name: title
-    uid: 'office-ui-fabric-react!IDocumentCardTitleProps#title:member'
-    package: office-ui-fabric-react!
-    fullName: title
+        type:
+          - '@fluentui/theme!ITheme:interface'
+  - uid: 'office-ui-fabric-react!IDocumentCardTitleProps#title:member'
     summary: >-
-      Title text. If the card represents more than one document, this should be
-      the title of one document and a "+X" string. For example, a collection of
-      four documents would have a string of "Document.docx +3".
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Title text. If the card represents more than one document, this should be the title of one document and a "+X"
+      string. For example, a collection of four documents would have a string of "Document.docx +3".
+    name: title
+    fullName: title
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'title: string;'
       return:
-        type: string
-extends: 'React.ClassAttributes&lt;DocumentCardTitleBase&gt; '
+        type:
+          - string

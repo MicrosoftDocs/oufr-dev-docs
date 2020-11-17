@@ -1,54 +1,51 @@
-### YamlMime:TSType
-name: IPersonaCoinProps
-uid: '@fluentui/react-internal!IPersonaCoinProps:interface'
-package: '@fluentui/react-internal!'
-fullName: IPersonaCoinProps
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: className
-    uid: '@fluentui/react-internal!IPersonaCoinProps#className:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-internal!IPersonaCoinProps:interface'
+    name: IPersonaCoinProps
+    fullName: IPersonaCoinProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'IPersonaSharedProps '
     package: '@fluentui/react-internal!'
-    fullName: className
+    children:
+      - '@fluentui/react-internal!IPersonaCoinProps#className:member'
+      - '@fluentui/react-internal!IPersonaCoinProps#componentRef:member'
+      - '@fluentui/react-internal!IPersonaCoinProps#styles:member'
+  - uid: '@fluentui/react-internal!IPersonaCoinProps#className:member'
     summary: Additional css class to apply to the PersonaCoin
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: className
+    fullName: className
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'className?: string;'
       return:
-        type: string
-  - name: componentRef
-    uid: '@fluentui/react-internal!IPersonaCoinProps#componentRef:member'
-    package: '@fluentui/react-internal!'
-    fullName: componentRef
+        type:
+          - string
+  - uid: '@fluentui/react-internal!IPersonaCoinProps#componentRef:member'
     summary: Gets the component ref.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: componentRef
+    fullName: componentRef
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'componentRef?: IRefObject<{}>;'
       return:
-        type: 'IRefObject&lt;{}&gt;'
-  - name: styles
-    uid: '@fluentui/react-internal!IPersonaCoinProps#styles:member'
-    package: '@fluentui/react-internal!'
+        type:
+          - 'IRefObject<{}>'
+  - uid: '@fluentui/react-internal!IPersonaCoinProps#styles:member'
+    summary: Call to provide customized styling that will layer on top of the variant rules
+    name: styles
     fullName: styles
-    summary: >-
-      Call to provide customized styling that will layer on top of the variant
-      rules
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        styles?: IStyleFunctionOrObject<IPersonaCoinStyleProps,
-        IPersonaCoinStyles>;
+      content: 'styles?: IStyleFunctionOrObject<IPersonaCoinStyleProps, IPersonaCoinStyles>;'
       return:
-        type: >-
-          IStyleFunctionOrObject&lt;IPersonaCoinStyleProps,
-          IPersonaCoinStyles&gt;
-extends: 'IPersonaSharedProps '
+        type:
+          - 'IStyleFunctionOrObject<IPersonaCoinStyleProps, IPersonaCoinStyles>'

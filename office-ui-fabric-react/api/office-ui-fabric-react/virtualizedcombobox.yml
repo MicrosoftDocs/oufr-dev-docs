@@ -1,110 +1,114 @@
-### YamlMime:TSType
-name: VirtualizedComboBox
-uid: 'office-ui-fabric-react!VirtualizedComboBox:class'
-package: office-ui-fabric-react!
-fullName: VirtualizedComboBox
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: class
-constructors:
-  - name: (constructor)(props)
-    uid: 'office-ui-fabric-react!VirtualizedComboBox:constructor(1)'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-ui-fabric-react!VirtualizedComboBox:class'
+    name: VirtualizedComboBox
+    fullName: VirtualizedComboBox
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'React.Component<IComboBoxProps, {}> '
+    implements:
+      - 'IComboBox '
     package: office-ui-fabric-react!
-    fullName: (constructor)(props)
+    children:
+      - 'office-ui-fabric-react!VirtualizedComboBox#_onRenderList:member'
+      - 'office-ui-fabric-react!VirtualizedComboBox#_onScrollToItem:member'
+      - 'office-ui-fabric-react!VirtualizedComboBox:constructor(1)'
+      - 'office-ui-fabric-react!VirtualizedComboBox#dismissMenu:member(1)'
+      - 'office-ui-fabric-react!VirtualizedComboBox#focus:member(1)'
+      - 'office-ui-fabric-react!VirtualizedComboBox#render:member(1)'
+      - 'office-ui-fabric-react!VirtualizedComboBox#selectedOptions:member'
+  - uid: 'office-ui-fabric-react!VirtualizedComboBox#_onRenderList:member'
+    name: _onRenderList
+    fullName: _onRenderList
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'protected _onRenderList: (props: IComboBoxProps) => JSX.Element;'
+      return:
+        type:
+          - '(props: IComboBoxProps) => JSX.Element'
+  - uid: 'office-ui-fabric-react!VirtualizedComboBox#_onScrollToItem:member'
+    name: _onScrollToItem
+    fullName: _onScrollToItem
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'protected _onScrollToItem: (itemIndex: number) => void;'
+      return:
+        type:
+          - '(itemIndex: number) => void'
+  - uid: 'office-ui-fabric-react!VirtualizedComboBox:constructor(1)'
     summary: Constructs a new instance of the `VirtualizedComboBox` class
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: (constructor)(props)
+    fullName: (constructor)(props)
+    langs:
+      - typeScript
+    type: constructor
     syntax:
       content: 'constructor(props: IComboBoxProps);'
       parameters:
         - id: props
           description: ''
-          type: IComboBoxProps
-properties:
-  - name: _onRenderList
-    uid: 'office-ui-fabric-react!VirtualizedComboBox#_onRenderList:member'
-    package: office-ui-fabric-react!
-    fullName: _onRenderList
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'protected _onRenderList: (props: IComboBoxProps) => JSX.Element;'
-      return:
-        type: '(props: IComboBoxProps) =&gt; JSX.Element'
-  - name: _onScrollToItem
-    uid: 'office-ui-fabric-react!VirtualizedComboBox#_onScrollToItem:member'
-    package: office-ui-fabric-react!
-    fullName: _onScrollToItem
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'protected _onScrollToItem: (itemIndex: number) => void;'
-      return:
-        type: '(itemIndex: number) =&gt; void'
-  - name: selectedOptions
-    uid: 'office-ui-fabric-react!VirtualizedComboBox#selectedOptions:member'
-    package: office-ui-fabric-react!
-    fullName: selectedOptions
-    summary: All selected options
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'readonly selectedOptions: IComboBoxOption[];'
-      return:
-        type: 'IComboBoxOption[]'
-methods:
-  - name: dismissMenu()
-    uid: 'office-ui-fabric-react!VirtualizedComboBox#dismissMenu:member(1)'
-    package: office-ui-fabric-react!
+          type:
+            - IComboBoxProps
+  - uid: 'office-ui-fabric-react!VirtualizedComboBox#dismissMenu:member(1)'
+    name: dismissMenu()
     fullName: dismissMenu()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'dismissMenu(): void;'
       return:
-        type: void
+        type:
+          - void
         description: ''
-  - name: 'focus(shouldOpenOnFocus, useFocusAsync)'
-    uid: 'office-ui-fabric-react!VirtualizedComboBox#focus:member(1)'
-    package: office-ui-fabric-react!
+  - uid: 'office-ui-fabric-react!VirtualizedComboBox#focus:member(1)'
+    name: 'focus(shouldOpenOnFocus, useFocusAsync)'
     fullName: 'focus(shouldOpenOnFocus, useFocusAsync)'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'focus(shouldOpenOnFocus?: boolean, useFocusAsync?: boolean): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
       parameters:
         - id: shouldOpenOnFocus
           description: ''
-          type: boolean
+          type:
+            - boolean
         - id: useFocusAsync
           description: ''
-          type: boolean
-      return:
-        type: boolean
-        description: ''
-  - name: render()
-    uid: 'office-ui-fabric-react!VirtualizedComboBox#render:member(1)'
-    package: office-ui-fabric-react!
+          type:
+            - boolean
+  - uid: 'office-ui-fabric-react!VirtualizedComboBox#render:member(1)'
+    name: render()
     fullName: render()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'render(): JSX.Element;'
       return:
-        type: JSX.Element
+        type:
+          - JSX.Element
         description: ''
-extends: 'React.Component&lt;IComboBoxProps, {}&gt; '
+  - uid: 'office-ui-fabric-react!VirtualizedComboBox#selectedOptions:member'
+    summary: All selected options
+    name: selectedOptions
+    fullName: selectedOptions
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly selectedOptions: IComboBoxOption[];'
+      return:
+        type:
+          - 'IComboBoxOption[]'

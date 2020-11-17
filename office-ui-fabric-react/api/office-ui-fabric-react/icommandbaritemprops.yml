@@ -1,94 +1,95 @@
-### YamlMime:TSType
-name: ICommandBarItemProps
-uid: 'office-ui-fabric-react!ICommandBarItemProps:interface'
-package: office-ui-fabric-react!
-fullName: ICommandBarItemProps
-summary: >-
-  ICommandBarItemProps extends IContextualMenuItem and adds a few
-  CommandBar-specific props.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: buttonStyles
-    uid: 'office-ui-fabric-react!ICommandBarItemProps#buttonStyles:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-ui-fabric-react!ICommandBarItemProps:interface'
+    summary: ICommandBarItemProps extends IContextualMenuItem and adds a few CommandBar-specific props.
+    name: ICommandBarItemProps
+    fullName: ICommandBarItemProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'IContextualMenuItem '
     package: office-ui-fabric-react!
-    fullName: buttonStyles
+    children:
+      - 'office-ui-fabric-react!ICommandBarItemProps#buttonStyles:member'
+      - 'office-ui-fabric-react!ICommandBarItemProps#cacheKey:member'
+      - 'office-ui-fabric-react!ICommandBarItemProps#commandBarButtonAs:member'
+      - 'office-ui-fabric-react!ICommandBarItemProps#iconOnly:member'
+      - 'office-ui-fabric-react!ICommandBarItemProps#renderedInOverflow:member'
+      - 'office-ui-fabric-react!ICommandBarItemProps#tooltipHostProps:member'
+  - uid: 'office-ui-fabric-react!ICommandBarItemProps#buttonStyles:member'
     summary: Custom styles for individual button
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: buttonStyles
+    fullName: buttonStyles
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'buttonStyles?: IButtonStyles;'
       return:
-        type: '<xref uid="office-ui-fabric-react!IButtonStyles:interface" />'
-  - name: cacheKey
-    uid: 'office-ui-fabric-react!ICommandBarItemProps#cacheKey:member'
-    package: office-ui-fabric-react!
-    fullName: cacheKey
+        type:
+          - 'office-ui-fabric-react!IButtonStyles:interface'
+  - uid: 'office-ui-fabric-react!ICommandBarItemProps#cacheKey:member'
     summary: >-
-      A custom cache key to be used for this item. If `cacheKey` is changed, the
-      cache will invalidate. Defaults to `key` value.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      A custom cache key to be used for this item. If `cacheKey` is changed, the cache will invalidate. Defaults to
+      `key` value.
+    name: cacheKey
+    fullName: cacheKey
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'cacheKey?: string;'
       return:
-        type: string
-  - name: commandBarButtonAs
-    uid: 'office-ui-fabric-react!ICommandBarItemProps#commandBarButtonAs:member'
-    package: office-ui-fabric-react!
+        type:
+          - string
+  - uid: 'office-ui-fabric-react!ICommandBarItemProps#commandBarButtonAs:member'
+    summary: Method to override the render of the individual command bar button. Not used when item is rendered in overflow.
+    name: commandBarButtonAs
     fullName: commandBarButtonAs
-    summary: >-
-      Method to override the render of the individual command bar button. Not
-      used when item is rendered in overflow.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'commandBarButtonAs?: IComponentAs<ICommandBarItemProps>;'
       return:
-        type: IComponentAs&lt;ICommandBarItemProps&gt;
-  - name: iconOnly
-    uid: 'office-ui-fabric-react!ICommandBarItemProps#iconOnly:member'
-    package: office-ui-fabric-react!
+        type:
+          - IComponentAs<ICommandBarItemProps>
+  - uid: 'office-ui-fabric-react!ICommandBarItemProps#iconOnly:member'
+    summary: 'Show only an icon for this item, not text. Does not apply if item is in the overflow.'
+    name: iconOnly
     fullName: iconOnly
-    summary: >-
-      Show only an icon for this item, not text. Does not apply if item is in
-      the overflow.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'iconOnly?: boolean;'
       return:
-        type: boolean
-  - name: renderedInOverflow
-    uid: 'office-ui-fabric-react!ICommandBarItemProps#renderedInOverflow:member'
-    package: office-ui-fabric-react!
-    fullName: renderedInOverflow
+        type:
+          - boolean
+  - uid: 'office-ui-fabric-react!ICommandBarItemProps#renderedInOverflow:member'
     summary: >-
-      Context under which the item is being rendered. This value is mutated by
-      the CommandBar and is useful for adjusting the `onRender` function.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Context under which the item is being rendered. This value is mutated by the CommandBar and is useful for
+      adjusting the `onRender` function.
+    name: renderedInOverflow
+    fullName: renderedInOverflow
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'renderedInOverflow?: boolean;'
       return:
-        type: boolean
-  - name: tooltipHostProps
-    uid: 'office-ui-fabric-react!ICommandBarItemProps#tooltipHostProps:member'
-    package: office-ui-fabric-react!
-    fullName: tooltipHostProps
+        type:
+          - boolean
+  - uid: 'office-ui-fabric-react!ICommandBarItemProps#tooltipHostProps:member'
     summary: Props for the tooltip when in `iconOnly` mode.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: tooltipHostProps
+    fullName: tooltipHostProps
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'tooltipHostProps?: ITooltipHostProps;'
       return:
-        type: ITooltipHostProps
-extends: 'IContextualMenuItem '
+        type:
+          - ITooltipHostProps

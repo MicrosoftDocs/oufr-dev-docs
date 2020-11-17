@@ -1,173 +1,163 @@
-### YamlMime:TSType
-name: IChoiceGroupOptionProps
-uid: '@fluentui/react-internal!IChoiceGroupOptionProps:interface'
-package: '@fluentui/react-internal!'
-fullName: IChoiceGroupOptionProps
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: checked
-    uid: '@fluentui/react-internal!IChoiceGroupOptionProps#checked:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-internal!IChoiceGroupOptionProps:interface'
+    name: IChoiceGroupOptionProps
+    fullName: IChoiceGroupOptionProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'Omit<IChoiceGroupOption, ''key''> '
     package: '@fluentui/react-internal!'
-    fullName: checked
+    children:
+      - '@fluentui/react-internal!IChoiceGroupOptionProps#checked:member'
+      - '@fluentui/react-internal!IChoiceGroupOptionProps#componentRef:member'
+      - '@fluentui/react-internal!IChoiceGroupOptionProps#focused:member'
+      - '@fluentui/react-internal!IChoiceGroupOptionProps#itemKey:member'
+      - '@fluentui/react-internal!IChoiceGroupOptionProps#key:member'
+      - '@fluentui/react-internal!IChoiceGroupOptionProps#name:member'
+      - '@fluentui/react-internal!IChoiceGroupOptionProps#onBlur:member'
+      - '@fluentui/react-internal!IChoiceGroupOptionProps#onChange:member'
+      - '@fluentui/react-internal!IChoiceGroupOptionProps#onFocus:member'
+      - '@fluentui/react-internal!IChoiceGroupOptionProps#required:member'
+      - '@fluentui/react-internal!IChoiceGroupOptionProps#theme:member'
+  - uid: '@fluentui/react-internal!IChoiceGroupOptionProps#checked:member'
     summary: >-
-      Whether or not the option is checked. Set by `ChoiceGroup` based on
-      `selectedKey` or `defaultSelectedKey` from `IChoiceGroupProps`<!-- -->.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Whether or not the option is checked. Set by `ChoiceGroup` based on `selectedKey` or `defaultSelectedKey` from
+      `IChoiceGroupProps`<!-- -->.
+    name: checked
+    fullName: checked
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'checked?: boolean;'
       return:
-        type: boolean
-  - name: componentRef
-    uid: '@fluentui/react-internal!IChoiceGroupOptionProps#componentRef:member'
-    package: '@fluentui/react-internal!'
-    fullName: componentRef
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!IChoiceGroupOptionProps#componentRef:member'
     summary: >-
-      Optional callback to access the IChoiceGroup interface. Use this instead
-      of ref for accessing the public methods and properties of the component.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Optional callback to access the IChoiceGroup interface. Use this instead of ref for accessing the public methods
+      and properties of the component.
+    name: componentRef
+    fullName: componentRef
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'componentRef?: IRefObject<IChoiceGroupOption>;'
       return:
-        type: IRefObject&lt;IChoiceGroupOption&gt;
-  - name: focused
-    uid: '@fluentui/react-internal!IChoiceGroupOptionProps#focused:member'
-    package: '@fluentui/react-internal!'
-    fullName: focused
+        type:
+          - IRefObject<IChoiceGroupOption>
+  - uid: '@fluentui/react-internal!IChoiceGroupOptionProps#focused:member'
     summary: 'Indicates if the ChoiceGroupOption should appear focused, visually'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: focused
+    fullName: focused
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'focused?: boolean;'
       return:
-        type: boolean
-  - name: itemKey
-    uid: '@fluentui/react-internal!IChoiceGroupOptionProps#itemKey:member'
-    package: '@fluentui/react-internal!'
-    fullName: itemKey
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!IChoiceGroupOptionProps#itemKey:member'
     summary: 'Unique key for the option, set based on `IChoiceGroupOption.key`<!-- -->.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: itemKey
+    fullName: itemKey
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'itemKey: string;'
       return:
-        type: string
-  - name: key
-    uid: '@fluentui/react-internal!IChoiceGroupOptionProps#key:member'
-    package: '@fluentui/react-internal!'
-    fullName: key
+        type:
+          - string
+  - uid: '@fluentui/react-internal!IChoiceGroupOptionProps#key:member'
     summary: >-
-      The option key. This will always be provided for callbacks (copied from
-      `itemKey`<!-- -->) but is optional when manually creating
-      ChoiceGroupOptions.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      The option key. This will always be provided for callbacks (copied from `itemKey`<!-- -->) but is optional when
+      manually creating ChoiceGroupOptions.
+    name: key
+    fullName: key
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'key?: string;'
       return:
-        type: string
-  - name: name
-    uid: '@fluentui/react-internal!IChoiceGroupOptionProps#name:member'
-    package: '@fluentui/react-internal!'
+        type:
+          - string
+  - uid: '@fluentui/react-internal!IChoiceGroupOptionProps#name:member'
+    summary: This value is used to group each ChoiceGroupOption into the same logical ChoiceGroup
+    name: name
     fullName: name
-    summary: >-
-      This value is used to group each ChoiceGroupOption into the same logical
-      ChoiceGroup
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'name?: string;'
       return:
-        type: string
-  - name: onBlur
-    uid: '@fluentui/react-internal!IChoiceGroupOptionProps#onBlur:member'
-    package: '@fluentui/react-internal!'
+        type:
+          - string
+  - uid: '@fluentui/react-internal!IChoiceGroupOptionProps#onBlur:member'
+    summary: Callback for the ChoiceGroup creating the option to be notified when the choice has lost focus.
+    name: onBlur
     fullName: onBlur
-    summary: >-
-      Callback for the ChoiceGroup creating the option to be notified when the
-      choice has lost focus.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        onBlur?: (ev?: React.FocusEvent<HTMLElement>, props?:
-        IChoiceGroupOptionProps) => void;
+      content: 'onBlur?: (ev?: React.FocusEvent<HTMLElement>, props?: IChoiceGroupOptionProps) => void;'
       return:
-        type: >-
-          (ev?: React.FocusEvent&lt;HTMLElement&gt;, props?:
-          IChoiceGroupOptionProps) =&gt; void
-  - name: onChange
-    uid: '@fluentui/react-internal!IChoiceGroupOptionProps#onChange:member'
-    package: '@fluentui/react-internal!'
+        type:
+          - '(ev?: React.FocusEvent<HTMLElement>, props?: IChoiceGroupOptionProps) => void'
+  - uid: '@fluentui/react-internal!IChoiceGroupOptionProps#onChange:member'
+    summary: Callback for the ChoiceGroup creating the option to be notified when the choice has been changed.
+    name: onChange
     fullName: onChange
-    summary: >-
-      Callback for the ChoiceGroup creating the option to be notified when the
-      choice has been changed.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        onChange?: (evt?: React.FormEvent<HTMLElement | HTMLInputElement>,
-        props?: IChoiceGroupOptionProps) => void;
+      content: 'onChange?: (evt?: React.FormEvent<HTMLElement | HTMLInputElement>, props?: IChoiceGroupOptionProps) => void;'
       return:
-        type: >-
-          (evt?: React.FormEvent&lt;HTMLElement | HTMLInputElement&gt;, props?:
-          IChoiceGroupOptionProps) =&gt; void
-  - name: onFocus
-    uid: '@fluentui/react-internal!IChoiceGroupOptionProps#onFocus:member'
-    package: '@fluentui/react-internal!'
+        type:
+          - '(evt?: React.FormEvent<HTMLElement | HTMLInputElement>, props?: IChoiceGroupOptionProps) => void'
+  - uid: '@fluentui/react-internal!IChoiceGroupOptionProps#onFocus:member'
+    summary: Callback for the ChoiceGroup creating the option to be notified when the choice has received focus.
+    name: onFocus
     fullName: onFocus
-    summary: >-
-      Callback for the ChoiceGroup creating the option to be notified when the
-      choice has received focus.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: >-
-        onFocus?: (ev?: React.FocusEvent<HTMLElement | HTMLInputElement>,
-        props?: IChoiceGroupOptionProps) => void | undefined;
+        onFocus?: (ev?: React.FocusEvent<HTMLElement | HTMLInputElement>, props?: IChoiceGroupOptionProps) => void |
+        undefined;
       return:
-        type: >-
-          (ev?: React.FocusEvent&lt;HTMLElement | HTMLInputElement&gt;, props?:
-          IChoiceGroupOptionProps) =&gt; void | undefined
-  - name: required
-    uid: '@fluentui/react-internal!IChoiceGroupOptionProps#required:member'
-    package: '@fluentui/react-internal!'
+        type:
+          - '(ev?: React.FocusEvent<HTMLElement | HTMLInputElement>, props?: IChoiceGroupOptionProps) => void | undefined'
+  - uid: '@fluentui/react-internal!IChoiceGroupOptionProps#required:member'
+    summary: 'If true, it specifies that an option must be selected in the ChoiceGroup before submitting the form'
+    name: required
     fullName: required
-    summary: >-
-      If true, it specifies that an option must be selected in the ChoiceGroup
-      before submitting the form
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'required?: boolean;'
       return:
-        type: boolean
-  - name: theme
-    uid: '@fluentui/react-internal!IChoiceGroupOptionProps#theme:member'
-    package: '@fluentui/react-internal!'
-    fullName: theme
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!IChoiceGroupOptionProps#theme:member'
     summary: Theme (provided through customization)
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'theme?: ITheme;'
       return:
-        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
-extends: 'Omit&lt;IChoiceGroupOption, ''key''&gt; '
+        type:
+          - '@fluentui/theme!ITheme:interface'

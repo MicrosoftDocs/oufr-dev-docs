@@ -1,24 +1,24 @@
-### YamlMime:TSType
-name: CompactPeoplePickerBase
-uid: '@fluentui/react-internal!CompactPeoplePickerBase:class'
-package: '@fluentui/react-internal!'
-fullName: CompactPeoplePickerBase
-summary: >-
-  Compact layout. It uses personas without secondary text when displaying search
-  results.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: class
-properties:
-  - name: defaultProps
-    uid: '@fluentui/react-internal!CompactPeoplePickerBase.defaultProps:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-internal!CompactPeoplePickerBase:class'
+    summary: Compact layout. It uses personas without secondary text when displaying search results.
+    name: CompactPeoplePickerBase
+    fullName: CompactPeoplePickerBase
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'BasePeoplePicker '
     package: '@fluentui/react-internal!'
-    fullName: defaultProps
+    children:
+      - '@fluentui/react-internal!CompactPeoplePickerBase.defaultProps:member'
+  - uid: '@fluentui/react-internal!CompactPeoplePickerBase.defaultProps:member'
     summary: Default props for CompactPeoplePicker.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: defaultProps
+    fullName: defaultProps
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: |-
         static defaultProps: {
@@ -27,10 +27,10 @@ properties:
                 createGenericItem: typeof createGenericItem;
             };
       return:
-        type: |-
-          {
-                  onRenderItem: (props: IPeoplePickerItemSelectedProps) =&gt; JSX.Element;
-                  onRenderSuggestionsItem: (personaProps: IPersonaProps, suggestionsProps?: IBasePickerSuggestionsProps&lt;any&gt; | undefined) =&gt; JSX.Element;
-                  createGenericItem: typeof createGenericItem;
-              }
-extends: 'BasePeoplePicker '
+        type:
+          - |-
+            {
+                    onRenderItem: (props: IPeoplePickerItemSelectedProps) => JSX.Element;
+                    onRenderSuggestionsItem: (personaProps: IPersonaProps, suggestionsProps?: IBasePickerSuggestionsProps<any> | undefined) => JSX.Element;
+                    createGenericItem: typeof createGenericItem;
+                }

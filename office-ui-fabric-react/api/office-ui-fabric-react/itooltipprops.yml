@@ -1,150 +1,159 @@
-### YamlMime:TSType
-name: ITooltipProps
-uid: 'office-ui-fabric-react!ITooltipProps:interface'
-package: office-ui-fabric-react!
-fullName: ITooltipProps
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: calloutProps
-    uid: 'office-ui-fabric-react!ITooltipProps#calloutProps:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-ui-fabric-react!ITooltipProps:interface'
+    name: ITooltipProps
+    fullName: ITooltipProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'React.HTMLAttributes<HTMLDivElement | TooltipBase> '
     package: office-ui-fabric-react!
-    fullName: calloutProps
+    children:
+      - 'office-ui-fabric-react!ITooltipProps#calloutProps:member'
+      - 'office-ui-fabric-react!ITooltipProps#componentRef:member'
+      - 'office-ui-fabric-react!ITooltipProps#content:member'
+      - 'office-ui-fabric-react!ITooltipProps#delay:member'
+      - 'office-ui-fabric-react!ITooltipProps#directionalHint:member'
+      - 'office-ui-fabric-react!ITooltipProps#directionalHintForRTL:member'
+      - 'office-ui-fabric-react!ITooltipProps#maxWidth:member'
+      - 'office-ui-fabric-react!ITooltipProps#onRenderContent:member'
+      - 'office-ui-fabric-react!ITooltipProps#styles:member'
+      - 'office-ui-fabric-react!ITooltipProps#targetElement:member'
+      - 'office-ui-fabric-react!ITooltipProps#theme:member'
+  - uid: 'office-ui-fabric-react!ITooltipProps#calloutProps:member'
     summary: Properties to pass through for Callout.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: calloutProps
+    fullName: calloutProps
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'calloutProps?: ICalloutProps;'
       return:
-        type: ICalloutProps
-  - name: componentRef
-    uid: 'office-ui-fabric-react!ITooltipProps#componentRef:member'
-    package: office-ui-fabric-react!
-    fullName: componentRef
+        type:
+          - ICalloutProps
+  - uid: 'office-ui-fabric-react!ITooltipProps#componentRef:member'
     summary: >-
-      Optional callback to access the ITooltip interface. Use this instead of
-      ref for accessing the public methods and properties of the component.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Optional callback to access the ITooltip interface. Use this instead of ref for accessing the public methods and
+      properties of the component.
+    name: componentRef
+    fullName: componentRef
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'componentRef?: IRefObject<ITooltip>;'
       return:
-        type: IRefObject&lt;ITooltip&gt;
-  - name: content
-    uid: 'office-ui-fabric-react!ITooltipProps#content:member'
-    package: office-ui-fabric-react!
-    fullName: content
+        type:
+          - IRefObject<ITooltip>
+  - uid: 'office-ui-fabric-react!ITooltipProps#content:member'
     summary: Content to be passed to the tooltip
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: content
+    fullName: content
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'content?: string | JSX.Element | JSX.Element[];'
       return:
-        type: 'string | JSX.Element | JSX.Element[]'
-  - name: delay
-    uid: 'office-ui-fabric-react!ITooltipProps#delay:member'
-    package: office-ui-fabric-react!
-    fullName: delay
+        type:
+          - 'string | JSX.Element | JSX.Element[]'
+  - uid: 'office-ui-fabric-react!ITooltipProps#delay:member'
     summary: Length of delay. Set to `TooltipDelay.zero` if you do not want a delay.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: delay
+    fullName: delay
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'delay?: TooltipDelay;'
       return:
-        type: TooltipDelay
-  - name: directionalHint
-    uid: 'office-ui-fabric-react!ITooltipProps#directionalHint:member'
-    package: office-ui-fabric-react!
-    fullName: directionalHint
+        type:
+          - TooltipDelay
+  - uid: 'office-ui-fabric-react!ITooltipProps#directionalHint:member'
     summary: How the tooltip should be anchored to its `targetElement`<!-- -->.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: directionalHint
+    fullName: directionalHint
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'directionalHint?: DirectionalHint;'
       return:
-        type: DirectionalHint
-  - name: directionalHintForRTL
-    uid: 'office-ui-fabric-react!ITooltipProps#directionalHintForRTL:member'
-    package: office-ui-fabric-react!
-    fullName: directionalHintForRTL
+        type:
+          - DirectionalHint
+  - uid: 'office-ui-fabric-react!ITooltipProps#directionalHintForRTL:member'
     summary: >-
-      How the element should be positioned in RTL layouts. If not specified, a
-      mirror of `directionalHint` will be used instead
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      How the element should be positioned in RTL layouts. If not specified, a mirror of `directionalHint` will be used
+      instead
+    name: directionalHintForRTL
+    fullName: directionalHintForRTL
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'directionalHintForRTL?: DirectionalHint;'
       return:
-        type: DirectionalHint
-  - name: maxWidth
-    uid: 'office-ui-fabric-react!ITooltipProps#maxWidth:member'
-    package: office-ui-fabric-react!
-    fullName: maxWidth
+        type:
+          - DirectionalHint
+  - uid: 'office-ui-fabric-react!ITooltipProps#maxWidth:member'
     summary: Max width of tooltip
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: maxWidth
+    fullName: maxWidth
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'maxWidth?: string | null;'
       return:
-        type: string | null
-  - name: onRenderContent
-    uid: 'office-ui-fabric-react!ITooltipProps#onRenderContent:member'
-    package: office-ui-fabric-react!
-    fullName: onRenderContent
+        type:
+          - string | null
+  - uid: 'office-ui-fabric-react!ITooltipProps#onRenderContent:member'
     summary: Render function to populate tooltip content.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onRenderContent
+    fullName: onRenderContent
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onRenderContent?: IRenderFunction<ITooltipProps>;'
       return:
-        type: IRenderFunction&lt;ITooltipProps&gt;
-  - name: styles
-    uid: 'office-ui-fabric-react!ITooltipProps#styles:member'
-    package: office-ui-fabric-react!
+        type:
+          - IRenderFunction<ITooltipProps>
+  - uid: 'office-ui-fabric-react!ITooltipProps#styles:member'
+    summary: Call to provide customized styling that will layer on top of the variant rules.
+    name: styles
     fullName: styles
-    summary: >-
-      Call to provide customized styling that will layer on top of the variant
-      rules.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'styles?: IStyleFunctionOrObject<ITooltipStyleProps, ITooltipStyles>;'
       return:
-        type: 'IStyleFunctionOrObject&lt;ITooltipStyleProps, ITooltipStyles&gt;'
-  - name: targetElement
-    uid: 'office-ui-fabric-react!ITooltipProps#targetElement:member'
-    package: office-ui-fabric-react!
-    fullName: targetElement
+        type:
+          - 'IStyleFunctionOrObject<ITooltipStyleProps, ITooltipStyles>'
+  - uid: 'office-ui-fabric-react!ITooltipProps#targetElement:member'
     summary: Element to anchor the Tooltip to.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: targetElement
+    fullName: targetElement
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'targetElement?: HTMLElement;'
       return:
-        type: HTMLElement
-  - name: theme
-    uid: 'office-ui-fabric-react!ITooltipProps#theme:member'
-    package: office-ui-fabric-react!
-    fullName: theme
+        type:
+          - HTMLElement
+  - uid: 'office-ui-fabric-react!ITooltipProps#theme:member'
     summary: Theme provided by higher-order component.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'theme?: ITheme;'
       return:
-        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
-extends: 'React.HTMLAttributes&lt;HTMLDivElement | TooltipBase&gt; '
+        type:
+          - '@fluentui/theme!ITheme:interface'

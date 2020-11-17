@@ -1,47 +1,48 @@
-### YamlMime:TSType
-name: IRawStyle
-uid: '@fluentui/merge-styles!IRawStyle:interface'
-package: '@fluentui/merge-styles!'
-fullName: IRawStyle
-summary: >-
-  IRawStyle extends a raw style object, but allows selectors to be defined under
-  the selectors node.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: displayName
-    uid: '@fluentui/merge-styles!IRawStyle#displayName:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/merge-styles!IRawStyle:interface'
+    summary: 'IRawStyle extends a raw style object, but allows selectors to be defined under the selectors node.'
+    name: IRawStyle
+    fullName: IRawStyle
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - '@fluentui/merge-styles!IRawStyleBase:interface'
     package: '@fluentui/merge-styles!'
-    fullName: displayName
+    children:
+      - '@fluentui/merge-styles!IRawStyle#displayName:member'
+      - '@fluentui/merge-styles!IRawStyle#selectors:member'
+  - uid: '@fluentui/merge-styles!IRawStyle#displayName:member'
     summary: Display name for the style.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: displayName
+    fullName: displayName
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'displayName?: string;'
       return:
-        type: string
-  - name: selectors
-    uid: '@fluentui/merge-styles!IRawStyle#selectors:member'
-    package: '@fluentui/merge-styles!'
+        type:
+          - string
+  - uid: '@fluentui/merge-styles!IRawStyle#selectors:member'
+    deprecated:
+      content: >-
+        - The selectors wrapper is no longer required. You may add selectors as siblings to other style properties, like
+        most css-in-js libraries support.
+    name: selectors
     fullName: selectors
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: true
-    customDeprecatedMessage: >-
-      - The selectors wrapper is no longer required. You may add selectors as
-      siblings to other style properties, like most css-in-js libraries support.
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: |-
         selectors?: {
                 [key: string]: IStyle;
             };
       return:
-        type: |-
-          {
-                  [key: string]: IStyle;
-              }
-extends: '<xref uid="@fluentui/merge-styles!IRawStyleBase:interface" />'
+        type:
+          - |-
+            {
+                    [key: string]: IStyle;
+                }

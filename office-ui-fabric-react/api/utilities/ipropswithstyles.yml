@@ -1,23 +1,28 @@
-### YamlMime:TSType
-name: IPropsWithStyles
-uid: '@fluentui/utilities!IPropsWithStyles:interface'
-package: '@fluentui/utilities!'
-fullName: IPropsWithStyles
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: styles
-    uid: '@fluentui/utilities!IPropsWithStyles#styles:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/utilities!IPropsWithStyles:interface'
+    name: IPropsWithStyles
+    fullName: IPropsWithStyles
+    langs:
+      - typeScript
+    type: interface
+    syntax:
+      typeParameters:
+        - id: TStyleProps
+        - id: TStyleSet
+          type:
+            - IStyleSet<TStyleSet>
     package: '@fluentui/utilities!'
+    children:
+      - '@fluentui/utilities!IPropsWithStyles#styles:member'
+  - uid: '@fluentui/utilities!IPropsWithStyles#styles:member'
+    name: styles
     fullName: styles
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'styles?: IStyleFunctionOrObject<TStyleProps, TStyleSet>;'
       return:
-        type: 'IStyleFunctionOrObject&lt;TStyleProps, TStyleSet&gt;'
+        type:
+          - 'IStyleFunctionOrObject<TStyleProps, TStyleSet>'

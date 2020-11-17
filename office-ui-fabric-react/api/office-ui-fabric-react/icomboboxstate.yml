@@ -1,112 +1,114 @@
-### YamlMime:TSType
-name: IComboBoxState
-uid: 'office-ui-fabric-react!IComboBoxState:interface'
-package: office-ui-fabric-react!
-fullName: IComboBoxState
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: currentOptions
-    uid: 'office-ui-fabric-react!IComboBoxState#currentOptions:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-ui-fabric-react!IComboBoxState:interface'
+    name: IComboBoxState
+    fullName: IComboBoxState
+    langs:
+      - typeScript
+    type: interface
     package: office-ui-fabric-react!
-    fullName: currentOptions
+    children:
+      - 'office-ui-fabric-react!IComboBoxState#currentOptions:member'
+      - 'office-ui-fabric-react!IComboBoxState#currentPendingValue:member'
+      - 'office-ui-fabric-react!IComboBoxState#currentPendingValueValidIndex:member'
+      - 'office-ui-fabric-react!IComboBoxState#currentPendingValueValidIndexOnHover:member'
+      - 'office-ui-fabric-react!IComboBoxState#focusState:member'
+      - 'office-ui-fabric-react!IComboBoxState#isOpen:member'
+      - 'office-ui-fabric-react!IComboBoxState#selectedIndices:member'
+      - 'office-ui-fabric-react!IComboBoxState#suggestedDisplayValue:member'
+  - uid: 'office-ui-fabric-react!IComboBoxState#currentOptions:member'
     summary: The options currently available for the callout
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: currentOptions
+    fullName: currentOptions
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'currentOptions: IComboBoxOption[];'
       return:
-        type: 'IComboBoxOption[]'
-  - name: currentPendingValue
-    uid: 'office-ui-fabric-react!IComboBoxState#currentPendingValue:member'
-    package: office-ui-fabric-react!
-    fullName: currentPendingValue
+        type:
+          - 'IComboBoxOption[]'
+  - uid: 'office-ui-fabric-react!IComboBoxState#currentPendingValue:member'
     summary: 'When taking input, this will store the actual text that is being entered'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: currentPendingValue
+    fullName: currentPendingValue
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'currentPendingValue?: string;'
       return:
-        type: string
-  - name: currentPendingValueValidIndex
-    uid: 'office-ui-fabric-react!IComboBoxState#currentPendingValueValidIndex:member'
-    package: office-ui-fabric-react!
+        type:
+          - string
+  - uid: 'office-ui-fabric-react!IComboBoxState#currentPendingValueValidIndex:member'
+    summary: 'When taking input, this will store the index that the options input matches (-1 if no input or match)'
+    name: currentPendingValueValidIndex
     fullName: currentPendingValueValidIndex
-    summary: >-
-      When taking input, this will store the index that the options input
-      matches (-1 if no input or match)
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'currentPendingValueValidIndex: number;'
       return:
-        type: number
-  - name: currentPendingValueValidIndexOnHover
-    uid: >-
-      office-ui-fabric-react!IComboBoxState#currentPendingValueValidIndexOnHover:member
-    package: office-ui-fabric-react!
+        type:
+          - number
+  - uid: 'office-ui-fabric-react!IComboBoxState#currentPendingValueValidIndexOnHover:member'
+    summary: Stores the hovered over value in the dropdown (used for styling the options without updating the input)
+    name: currentPendingValueValidIndexOnHover
     fullName: currentPendingValueValidIndexOnHover
-    summary: >-
-      Stores the hovered over value in the dropdown (used for styling the
-      options without updating the input)
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'currentPendingValueValidIndexOnHover: number;'
       return:
-        type: number
-  - name: focusState
-    uid: 'office-ui-fabric-react!IComboBoxState#focusState:member'
-    package: office-ui-fabric-react!
-    fullName: focusState
+        type:
+          - number
+  - uid: 'office-ui-fabric-react!IComboBoxState#focusState:member'
     summary: The focused state of the comboBox
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: focusState
+    fullName: focusState
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'focusState?: ''none'' | ''focused'' | ''focusing'';'
       return:
-        type: '''none'' | ''focused'' | ''focusing'''
-  - name: isOpen
-    uid: 'office-ui-fabric-react!IComboBoxState#isOpen:member'
-    package: office-ui-fabric-react!
-    fullName: isOpen
+        type:
+          - '''none'' | ''focused'' | ''focusing'''
+  - uid: 'office-ui-fabric-react!IComboBoxState#isOpen:member'
     summary: The open state
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: isOpen
+    fullName: isOpen
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'isOpen?: boolean;'
       return:
-        type: boolean
-  - name: selectedIndices
-    uid: 'office-ui-fabric-react!IComboBoxState#selectedIndices:member'
-    package: office-ui-fabric-react!
-    fullName: selectedIndices
+        type:
+          - boolean
+  - uid: 'office-ui-fabric-react!IComboBoxState#selectedIndices:member'
     summary: The currently selected indices
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: selectedIndices
+    fullName: selectedIndices
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'selectedIndices?: number[];'
       return:
-        type: 'number[]'
-  - name: suggestedDisplayValue
-    uid: 'office-ui-fabric-react!IComboBoxState#suggestedDisplayValue:member'
-    package: office-ui-fabric-react!
-    fullName: suggestedDisplayValue
+        type:
+          - 'number[]'
+  - uid: 'office-ui-fabric-react!IComboBoxState#suggestedDisplayValue:member'
     summary: This value is used for the autocomplete hint value
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: suggestedDisplayValue
+    fullName: suggestedDisplayValue
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'suggestedDisplayValue?: string;'
       return:
-        type: string
+        type:
+          - string

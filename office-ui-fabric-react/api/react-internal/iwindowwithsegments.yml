@@ -1,24 +1,25 @@
-### YamlMime:TSType
-name: IWindowWithSegments
-uid: '@fluentui/react-internal!IWindowWithSegments:interface'
-package: '@fluentui/react-internal!'
-fullName: IWindowWithSegments
-summary: Window with typings for experimental features regarding Dual Screen devices.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: getWindowSegments
-    uid: '@fluentui/react-internal!IWindowWithSegments#getWindowSegments:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-internal!IWindowWithSegments:interface'
+    summary: Window with typings for experimental features regarding Dual Screen devices.
+    name: IWindowWithSegments
+    fullName: IWindowWithSegments
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'Window '
     package: '@fluentui/react-internal!'
+    children:
+      - '@fluentui/react-internal!IWindowWithSegments#getWindowSegments:member'
+  - uid: '@fluentui/react-internal!IWindowWithSegments#getWindowSegments:member'
+    name: getWindowSegments
     fullName: getWindowSegments
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'getWindowSegments?: () => DOMRect[];'
       return:
-        type: '() =&gt; DOMRect[]'
-extends: 'Window '
+        type:
+          - '() => DOMRect[]'

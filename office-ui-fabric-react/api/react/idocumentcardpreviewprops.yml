@@ -1,94 +1,92 @@
-### YamlMime:TSType
-name: IDocumentCardPreviewProps
-uid: '@fluentui/react!IDocumentCardPreviewProps:interface'
-package: '@fluentui/react!'
-fullName: IDocumentCardPreviewProps
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: className
-    uid: '@fluentui/react!IDocumentCardPreviewProps#className:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react!IDocumentCardPreviewProps:interface'
+    name: IDocumentCardPreviewProps
+    fullName: IDocumentCardPreviewProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'IBaseProps<{}> '
     package: '@fluentui/react!'
-    fullName: className
+    children:
+      - '@fluentui/react!IDocumentCardPreviewProps#className:member'
+      - '@fluentui/react!IDocumentCardPreviewProps#componentRef:member'
+      - '@fluentui/react!IDocumentCardPreviewProps#getOverflowDocumentCountText:member'
+      - '@fluentui/react!IDocumentCardPreviewProps#previewImages:member'
+      - '@fluentui/react!IDocumentCardPreviewProps#styles:member'
+      - '@fluentui/react!IDocumentCardPreviewProps#theme:member'
+  - uid: '@fluentui/react!IDocumentCardPreviewProps#className:member'
     summary: Optional override class name
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: className
+    fullName: className
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'className?: string;'
       return:
-        type: string
-  - name: componentRef
-    uid: '@fluentui/react!IDocumentCardPreviewProps#componentRef:member'
-    package: '@fluentui/react!'
-    fullName: componentRef
+        type:
+          - string
+  - uid: '@fluentui/react!IDocumentCardPreviewProps#componentRef:member'
     summary: Gets the component ref.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: componentRef
+    fullName: componentRef
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'componentRef?: IRefObject<IDocumentCardPreview>;'
       return:
-        type: IRefObject&lt;IDocumentCardPreview&gt;
-  - name: getOverflowDocumentCountText
-    uid: >-
-      @fluentui/react!IDocumentCardPreviewProps#getOverflowDocumentCountText:member
-    package: '@fluentui/react!'
-    fullName: getOverflowDocumentCountText
+        type:
+          - IRefObject<IDocumentCardPreview>
+  - uid: '@fluentui/react!IDocumentCardPreviewProps#getOverflowDocumentCountText:member'
     summary: >-
-      The function return string that will describe the number of overflow
-      documents. such as (overflowCount: number) =<!-- -->&gt; `+${
-      overflowCount } more`<!-- -->,
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      The function return string that will describe the number of overflow documents. such as (overflowCount: number)
+      =<!-- -->&gt; `+${ overflowCount } more`<!-- -->,
+    name: getOverflowDocumentCountText
+    fullName: getOverflowDocumentCountText
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'getOverflowDocumentCountText?: (overflowCount: number) => string;'
       return:
-        type: '(overflowCount: number) =&gt; string'
-  - name: previewImages
-    uid: '@fluentui/react!IDocumentCardPreviewProps#previewImages:member'
-    package: '@fluentui/react!'
-    fullName: previewImages
+        type:
+          - '(overflowCount: number) => string'
+  - uid: '@fluentui/react!IDocumentCardPreviewProps#previewImages:member'
     summary: One or more preview images to display.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: previewImages
+    fullName: previewImages
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'previewImages: IDocumentCardPreviewImage[];'
       return:
-        type: 'IDocumentCardPreviewImage[]'
-  - name: styles
-    uid: '@fluentui/react!IDocumentCardPreviewProps#styles:member'
-    package: '@fluentui/react!'
+        type:
+          - 'IDocumentCardPreviewImage[]'
+  - uid: '@fluentui/react!IDocumentCardPreviewProps#styles:member'
+    summary: Call to provide customized styling that will layer on top of the variant rules
+    name: styles
     fullName: styles
-    summary: >-
-      Call to provide customized styling that will layer on top of the variant
-      rules
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        styles?: IStyleFunctionOrObject<IDocumentCardPreviewStyleProps,
-        IDocumentCardPreviewStyles>;
+      content: 'styles?: IStyleFunctionOrObject<IDocumentCardPreviewStyleProps, IDocumentCardPreviewStyles>;'
       return:
-        type: >-
-          IStyleFunctionOrObject&lt;IDocumentCardPreviewStyleProps,
-          IDocumentCardPreviewStyles&gt;
-  - name: theme
-    uid: '@fluentui/react!IDocumentCardPreviewProps#theme:member'
-    package: '@fluentui/react!'
-    fullName: theme
+        type:
+          - 'IStyleFunctionOrObject<IDocumentCardPreviewStyleProps, IDocumentCardPreviewStyles>'
+  - uid: '@fluentui/react!IDocumentCardPreviewProps#theme:member'
     summary: Theme provided by HOC.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'theme?: ITheme;'
       return:
-        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
-extends: 'IBaseProps&lt;{}&gt; '
+        type:
+          - '@fluentui/theme!ITheme:interface'

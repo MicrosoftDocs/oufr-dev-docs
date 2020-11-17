@@ -1,24 +1,27 @@
-### YamlMime:TSType
-name: ISelectedItemProps
-uid: 'office-ui-fabric-react!ISelectedItemProps:interface'
-package: office-ui-fabric-react!
-fullName: ISelectedItemProps
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: onCopyItem
-    uid: 'office-ui-fabric-react!ISelectedItemProps#onCopyItem:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-ui-fabric-react!ISelectedItemProps:interface'
+    name: ISelectedItemProps
+    fullName: ISelectedItemProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'IPickerItemProps<T> '
+    syntax:
+      typeParameters:
+        - id: T
     package: office-ui-fabric-react!
+    children:
+      - 'office-ui-fabric-react!ISelectedItemProps#onCopyItem:member'
+  - uid: 'office-ui-fabric-react!ISelectedItemProps#onCopyItem:member'
+    name: onCopyItem
     fullName: onCopyItem
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onCopyItem: (item: T) => void;'
       return:
-        type: '(item: T) =&gt; void'
-extends: 'IPickerItemProps&lt;T&gt; '
+        type:
+          - '(item: T) => void'

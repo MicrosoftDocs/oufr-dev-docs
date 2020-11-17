@@ -1,23 +1,27 @@
-### YamlMime:TSType
-name: IFactoryOptions
-uid: '@fluentui/foundation-legacy!IFactoryOptions:interface'
-package: '@fluentui/foundation-legacy!'
-fullName: IFactoryOptions
-summary: Factory options for creating component.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: defaultProp
-    uid: '@fluentui/foundation-legacy!IFactoryOptions#defaultProp:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/foundation-legacy!IFactoryOptions:interface'
+    summary: Factory options for creating component.
+    name: IFactoryOptions
+    fullName: IFactoryOptions
+    langs:
+      - typeScript
+    type: interface
+    syntax:
+      typeParameters:
+        - id: TProps
     package: '@fluentui/foundation-legacy!'
-    fullName: defaultProp
+    children:
+      - '@fluentui/foundation-legacy!IFactoryOptions#defaultProp:member'
+  - uid: '@fluentui/foundation-legacy!IFactoryOptions#defaultProp:member'
     summary: Default prop for which to map primitive values.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: defaultProp
+    fullName: defaultProp
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'defaultProp?: keyof TProps | ''children'';'
       return:
-        type: keyof TProps | 'children'
+        type:
+          - keyof TProps | 'children'

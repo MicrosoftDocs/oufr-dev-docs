@@ -1,70 +1,72 @@
-### YamlMime:TSType
-name: IListState
-uid: '@fluentui/react-internal!IListState:interface'
-package: '@fluentui/react-internal!'
-fullName: IListState
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: isScrolling
-    uid: '@fluentui/react-internal!IListState#isScrolling:member'
-    package: '@fluentui/react-internal!'
-    fullName: isScrolling
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-internal!IListState:interface'
+    name: IListState
+    fullName: IListState
+    langs:
+      - typeScript
+    type: interface
     syntax:
-      content: 'isScrolling?: boolean;'
-      return:
-        type: boolean
-  - name: measureVersion
-    uid: '@fluentui/react-internal!IListState#measureVersion:member'
+      typeParameters:
+        - id: T
     package: '@fluentui/react-internal!'
-    fullName: measureVersion
-    summary: The last versionstamp for
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'measureVersion?: number;'
-      return:
-        type: number
-  - name: pages
-    uid: '@fluentui/react-internal!IListState#pages:member'
-    package: '@fluentui/react-internal!'
-    fullName: pages
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'pages?: IPage<T>[];'
-      return:
-        type: 'IPage&lt;T&gt;[]'
-methods:
-  - name: 'getDerivedStateFromProps(nextProps, previousState)'
-    uid: '@fluentui/react-internal!IListState#getDerivedStateFromProps:member(1)'
-    package: '@fluentui/react-internal!'
+    children:
+      - '@fluentui/react-internal!IListState#getDerivedStateFromProps:member(1)'
+      - '@fluentui/react-internal!IListState#isScrolling:member'
+      - '@fluentui/react-internal!IListState#measureVersion:member'
+      - '@fluentui/react-internal!IListState#pages:member'
+  - uid: '@fluentui/react-internal!IListState#getDerivedStateFromProps:member(1)'
+    name: 'getDerivedStateFromProps(nextProps, previousState)'
     fullName: 'getDerivedStateFromProps(nextProps, previousState)'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        getDerivedStateFromProps(nextProps: IListProps<T>, previousState:
-        IListState<T>): IListState<T>;
+      content: 'getDerivedStateFromProps(nextProps: IListProps<T>, previousState: IListState<T>): IListState<T>;'
+      return:
+        type:
+          - IListState<T>
+        description: ''
       parameters:
         - id: nextProps
           description: ''
-          type: IListProps&lt;T&gt;
+          type:
+            - IListProps<T>
         - id: previousState
           description: ''
-          type: IListState&lt;T&gt;
+          type:
+            - IListState<T>
+  - uid: '@fluentui/react-internal!IListState#isScrolling:member'
+    name: isScrolling
+    fullName: isScrolling
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isScrolling?: boolean;'
       return:
-        type: IListState&lt;T&gt;
-        description: ''
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!IListState#measureVersion:member'
+    summary: The last versionstamp for
+    name: measureVersion
+    fullName: measureVersion
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'measureVersion?: number;'
+      return:
+        type:
+          - number
+  - uid: '@fluentui/react-internal!IListState#pages:member'
+    name: pages
+    fullName: pages
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'pages?: IPage<T>[];'
+      return:
+        type:
+          - 'IPage<T>[]'

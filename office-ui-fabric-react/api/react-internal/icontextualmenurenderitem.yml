@@ -1,47 +1,49 @@
-### YamlMime:TSType
-name: IContextualMenuRenderItem
-uid: '@fluentui/react-internal!IContextualMenuRenderItem:interface'
-package: '@fluentui/react-internal!'
-fullName: IContextualMenuRenderItem
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: dismissMenu
-    uid: '@fluentui/react-internal!IContextualMenuRenderItem#dismissMenu:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-internal!IContextualMenuRenderItem:interface'
+    name: IContextualMenuRenderItem
+    fullName: IContextualMenuRenderItem
+    langs:
+      - typeScript
+    type: interface
     package: '@fluentui/react-internal!'
-    fullName: dismissMenu
+    children:
+      - '@fluentui/react-internal!IContextualMenuRenderItem#dismissMenu:member'
+      - '@fluentui/react-internal!IContextualMenuRenderItem#dismissSubMenu:member'
+      - '@fluentui/react-internal!IContextualMenuRenderItem#openSubMenu:member'
+  - uid: '@fluentui/react-internal!IContextualMenuRenderItem#dismissMenu:member'
     summary: Dismiss the menu this item belongs to.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: dismissMenu
+    fullName: dismissMenu
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'dismissMenu: (dismissAll?: boolean) => void;'
       return:
-        type: '(dismissAll?: boolean) =&gt; void'
-  - name: dismissSubMenu
-    uid: '@fluentui/react-internal!IContextualMenuRenderItem#dismissSubMenu:member'
-    package: '@fluentui/react-internal!'
-    fullName: dismissSubMenu
+        type:
+          - '(dismissAll?: boolean) => void'
+  - uid: '@fluentui/react-internal!IContextualMenuRenderItem#dismissSubMenu:member'
     summary: 'Function to close this item''s subMenu, if present.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: dismissSubMenu
+    fullName: dismissSubMenu
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'dismissSubMenu: () => void;'
       return:
-        type: () =&gt; void
-  - name: openSubMenu
-    uid: '@fluentui/react-internal!IContextualMenuRenderItem#openSubMenu:member'
-    package: '@fluentui/react-internal!'
-    fullName: openSubMenu
+        type:
+          - () => void
+  - uid: '@fluentui/react-internal!IContextualMenuRenderItem#openSubMenu:member'
     summary: 'Function to open this item''s subMenu, if present.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: openSubMenu
+    fullName: openSubMenu
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'openSubMenu: () => void;'
       return:
-        type: () =&gt; void
+        type:
+          - () => void

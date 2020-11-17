@@ -1,98 +1,102 @@
-### YamlMime:TSType
-name: IOverlayProps
-uid: '@fluentui/react-internal!IOverlayProps:interface'
-package: '@fluentui/react-internal!'
-fullName: IOverlayProps
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: allowTouchBodyScroll
-    uid: '@fluentui/react-internal!IOverlayProps#allowTouchBodyScroll:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-internal!IOverlayProps:interface'
+    name: IOverlayProps
+    fullName: IOverlayProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'React.HTMLAttributes<HTMLElement> '
     package: '@fluentui/react-internal!'
-    fullName: allowTouchBodyScroll
+    children:
+      - '@fluentui/react-internal!IOverlayProps#allowTouchBodyScroll:member'
+      - '@fluentui/react-internal!IOverlayProps#className:member'
+      - '@fluentui/react-internal!IOverlayProps#componentRef:member'
+      - '@fluentui/react-internal!IOverlayProps#isDarkThemed:member'
+      - '@fluentui/react-internal!IOverlayProps#onClick:member'
+      - '@fluentui/react-internal!IOverlayProps#styles:member'
+      - '@fluentui/react-internal!IOverlayProps#theme:member'
+  - uid: '@fluentui/react-internal!IOverlayProps#allowTouchBodyScroll:member'
     summary: Allow body scroll on touch devices. Changing after mounting has no effect.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: allowTouchBodyScroll
+    fullName: allowTouchBodyScroll
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'allowTouchBodyScroll?: boolean;'
       return:
-        type: boolean
-  - name: className
-    uid: '@fluentui/react-internal!IOverlayProps#className:member'
-    package: '@fluentui/react-internal!'
-    fullName: className
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!IOverlayProps#className:member'
     summary: Additional css class to apply to the Overlay
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: className
+    fullName: className
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'className?: string;'
       return:
-        type: string
-  - name: componentRef
-    uid: '@fluentui/react-internal!IOverlayProps#componentRef:member'
-    package: '@fluentui/react-internal!'
-    fullName: componentRef
+        type:
+          - string
+  - uid: '@fluentui/react-internal!IOverlayProps#componentRef:member'
     summary: Gets the component ref.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: componentRef
+    fullName: componentRef
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'componentRef?: IRefObject<IOverlay>;'
       return:
-        type: IRefObject&lt;IOverlay&gt;
-  - name: isDarkThemed
-    uid: '@fluentui/react-internal!IOverlayProps#isDarkThemed:member'
-    package: '@fluentui/react-internal!'
-    fullName: isDarkThemed
+        type:
+          - IRefObject<IOverlay>
+  - uid: '@fluentui/react-internal!IOverlayProps#isDarkThemed:member'
     summary: Whether to use the dark-themed overlay.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: isDarkThemed
+    fullName: isDarkThemed
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'isDarkThemed?: boolean;'
       return:
-        type: boolean
-  - name: onClick
-    uid: '@fluentui/react-internal!IOverlayProps#onClick:member'
-    package: '@fluentui/react-internal!'
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!IOverlayProps#onClick:member'
+    name: onClick
     fullName: onClick
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onClick?: () => void;'
       return:
-        type: () =&gt; void
-  - name: styles
-    uid: '@fluentui/react-internal!IOverlayProps#styles:member'
-    package: '@fluentui/react-internal!'
+        type:
+          - () => void
+  - uid: '@fluentui/react-internal!IOverlayProps#styles:member'
+    summary: Call to provide customized styling that will layer on top of the variant rules
+    name: styles
     fullName: styles
-    summary: >-
-      Call to provide customized styling that will layer on top of the variant
-      rules
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'styles?: IStyleFunctionOrObject<IOverlayStyleProps, IOverlayStyles>;'
       return:
-        type: 'IStyleFunctionOrObject&lt;IOverlayStyleProps, IOverlayStyles&gt;'
-  - name: theme
-    uid: '@fluentui/react-internal!IOverlayProps#theme:member'
-    package: '@fluentui/react-internal!'
-    fullName: theme
+        type:
+          - 'IStyleFunctionOrObject<IOverlayStyleProps, IOverlayStyles>'
+  - uid: '@fluentui/react-internal!IOverlayProps#theme:member'
     summary: Theme provided by HOC.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'theme?: ITheme;'
       return:
-        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
-extends: 'React.HTMLAttributes&lt;HTMLElement&gt; '
+        type:
+          - '@fluentui/theme!ITheme:interface'

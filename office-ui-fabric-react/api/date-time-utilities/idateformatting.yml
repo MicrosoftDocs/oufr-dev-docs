@@ -1,59 +1,62 @@
-### YamlMime:TSType
-name: IDateFormatting
-uid: '@fluentui/date-time-utilities!IDateFormatting:interface'
-package: '@fluentui/date-time-utilities!'
-fullName: IDateFormatting
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: formatDay
-    uid: '@fluentui/date-time-utilities!IDateFormatting#formatDay:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/date-time-utilities!IDateFormatting:interface'
+    name: IDateFormatting
+    fullName: IDateFormatting
+    langs:
+      - typeScript
+    type: interface
     package: '@fluentui/date-time-utilities!'
-    fullName: formatDay
+    children:
+      - '@fluentui/date-time-utilities!IDateFormatting#formatDay:member'
+      - '@fluentui/date-time-utilities!IDateFormatting#formatMonthDayYear:member'
+      - '@fluentui/date-time-utilities!IDateFormatting#formatMonthYear:member'
+      - '@fluentui/date-time-utilities!IDateFormatting#formatYear:member'
+  - uid: '@fluentui/date-time-utilities!IDateFormatting#formatDay:member'
     summary: Get a localized string for a day.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: formatDay
+    fullName: formatDay
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'formatDay: (date: Date) => string;'
       return:
-        type: '(date: Date) =&gt; string'
-  - name: formatMonthDayYear
-    uid: '@fluentui/date-time-utilities!IDateFormatting#formatMonthDayYear:member'
-    package: '@fluentui/date-time-utilities!'
-    fullName: formatMonthDayYear
+        type:
+          - '(date: Date) => string'
+  - uid: '@fluentui/date-time-utilities!IDateFormatting#formatMonthDayYear:member'
     summary: 'Get a localized string for a month, day, and year.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: formatMonthDayYear
+    fullName: formatMonthDayYear
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'formatMonthDayYear: (date: Date, strings: IDateGridStrings) => string;'
       return:
-        type: '(date: Date, strings: IDateGridStrings) =&gt; string'
-  - name: formatMonthYear
-    uid: '@fluentui/date-time-utilities!IDateFormatting#formatMonthYear:member'
-    package: '@fluentui/date-time-utilities!'
-    fullName: formatMonthYear
+        type:
+          - '(date: Date, strings: IDateGridStrings) => string'
+  - uid: '@fluentui/date-time-utilities!IDateFormatting#formatMonthYear:member'
     summary: Get a localized string for a month and year.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: formatMonthYear
+    fullName: formatMonthYear
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'formatMonthYear: (date: Date, strings: IDateGridStrings) => string;'
       return:
-        type: '(date: Date, strings: IDateGridStrings) =&gt; string'
-  - name: formatYear
-    uid: '@fluentui/date-time-utilities!IDateFormatting#formatYear:member'
-    package: '@fluentui/date-time-utilities!'
-    fullName: formatYear
+        type:
+          - '(date: Date, strings: IDateGridStrings) => string'
+  - uid: '@fluentui/date-time-utilities!IDateFormatting#formatYear:member'
     summary: Get a localized string for a year.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: formatYear
+    fullName: formatYear
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'formatYear: (date: Date) => string;'
       return:
-        type: '(date: Date) =&gt; string'
+        type:
+          - '(date: Date) => string'

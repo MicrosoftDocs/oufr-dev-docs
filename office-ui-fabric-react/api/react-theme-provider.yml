@@ -1,56 +1,74 @@
-### YamlMime:TSPackage
-uid: '@fluentui/react-theme-provider!'
-name: '@fluentui/react-theme-provider'
-type: package
-summary: ''
-interfaces:
-  - '@fluentui/react-theme-provider!StyleOptions:interface'
-  - '@fluentui/react-theme-provider!StyleProps:interface'
-  - '@fluentui/react-theme-provider!StyleRenderer:interface'
-  - '@fluentui/react-theme-provider!ThemeProviderProps:interface'
-functions:
-  - name: makeStyles(styleOrFunction)
-    uid: '@fluentui/react-theme-provider!makeStyles:function(1)'
-    package: '@fluentui/react-theme-provider!'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-theme-provider!'
+    name: '@fluentui/react-theme-provider'
+    fullName: '@fluentui/react-theme-provider'
+    langs:
+      - typeScript
+    type: package
+    children:
+      - '@fluentui/react-theme-provider!makeStyles:function(1)'
+      - '@fluentui/react-theme-provider!StyleOptions:interface'
+      - '@fluentui/react-theme-provider!StyleProps:interface'
+      - '@fluentui/react-theme-provider!StyleRenderer:interface'
+      - '@fluentui/react-theme-provider!ThemeProviderProps:interface'
+      - '@fluentui/react-theme-provider!useThemeProviderClasses:function(1)'
+  - uid: '@fluentui/react-theme-provider!makeStyles:function(1)'
     summary: 'Registers a css object, optionally as a function of the theme.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: makeStyles(styleOrFunction)
+    fullName: makeStyles(styleOrFunction)
+    langs:
+      - typeScript
+    type: function
     syntax:
-      content: >-
+      content: |-
         export declare function makeStyles<TStyleSet extends {
             [key: string]: IStyle;
-        }>(styleOrFunction: TStyleSet | ((theme: Theme) => TStyleSet)): (theme?:
-        Theme, renderer?: StyleRenderer) => {
+        }>(styleOrFunction: TStyleSet | ((theme: Theme) => TStyleSet)): (options?: UseStylesOptions) => {
             [key in keyof TStyleSet]: string;
         };
+      return:
+        type:
+          - |-
+            (options?: UseStylesOptions) => {
+                [key in keyof TStyleSet]: string;
+            }
+        description: ''
       parameters:
         - id: styleOrFunction
-          description: >-
-            Either a css javascript object, or a function which takes in
-            `ITheme` and returns a css javascript object.
-          type: 'TStyleSet | ((theme: Theme) =&gt; TStyleSet)'
-      return:
-        type: |-
-          (theme?: Theme, renderer?: StyleRenderer) =&gt; {
-              [key in keyof TStyleSet]: string;
-          }
-        description: ''
-  - name: useThemeProviderClasses(state)
-    uid: '@fluentui/react-theme-provider!useThemeProviderClasses:function(1)'
-    package: '@fluentui/react-theme-provider!'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+          description: 'Either a css javascript object, or a function which takes in `ITheme` and returns a css javascript object.'
+          type:
+            - 'TStyleSet | ((theme: Theme) => TStyleSet)'
+      typeParameters:
+        - id: TStyleSet
+          type:
+            - |-
+              {
+                  [key: string]: IStyle;
+              }
+  - uid: '@fluentui/react-theme-provider!useThemeProviderClasses:function(1)'
+    name: useThemeProviderClasses(state)
+    fullName: useThemeProviderClasses(state)
+    langs:
+      - typeScript
+    type: function
     syntax:
-      content: >-
-        export declare function useThemeProviderClasses(state:
-        ThemeProviderState): void;
+      content: 'export declare function useThemeProviderClasses(state: ThemeProviderState): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: state
           description: ''
-          type: ThemeProviderState
-      return:
-        type: void
-        description: ''
+          type:
+            - ThemeProviderState
+references:
+  - uid: '@fluentui/react-theme-provider!StyleOptions:interface'
+    name: StyleOptions
+  - uid: '@fluentui/react-theme-provider!StyleProps:interface'
+    name: StyleProps
+  - uid: '@fluentui/react-theme-provider!StyleRenderer:interface'
+    name: StyleRenderer
+  - uid: '@fluentui/react-theme-provider!ThemeProviderProps:interface'
+    name: ThemeProviderProps

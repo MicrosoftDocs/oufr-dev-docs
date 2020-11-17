@@ -1,86 +1,92 @@
-### YamlMime:TSType
-name: ILabelProps
-uid: '@fluentui/react-internal!ILabelProps:interface'
-package: '@fluentui/react-internal!'
-fullName: ILabelProps
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: as
-    uid: '@fluentui/react-internal!ILabelProps#as:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-internal!ILabelProps:interface'
+    name: ILabelProps
+    fullName: ILabelProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'React.LabelHTMLAttributes<HTMLLabelElement> '
     package: '@fluentui/react-internal!'
-    fullName: as
+    children:
+      - '@fluentui/react-internal!ILabelProps#as:member'
+      - '@fluentui/react-internal!ILabelProps#componentRef:member'
+      - '@fluentui/react-internal!ILabelProps#disabled:member'
+      - '@fluentui/react-internal!ILabelProps#required:member'
+      - '@fluentui/react-internal!ILabelProps#styles:member'
+      - '@fluentui/react-internal!ILabelProps#theme:member'
+  - uid: '@fluentui/react-internal!ILabelProps#as:member'
     summary: Render the root element as another type.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: as
+    fullName: as
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'as?: IComponentAs<React.AllHTMLAttributes<HTMLElement>>;'
       return:
-        type: IComponentAs&lt;React.AllHTMLAttributes&lt;HTMLElement&gt;&gt;
-  - name: componentRef
-    uid: '@fluentui/react-internal!ILabelProps#componentRef:member'
-    package: '@fluentui/react-internal!'
-    fullName: componentRef
+        type:
+          - IComponentAs<React.AllHTMLAttributes<HTMLElement>>
+  - uid: '@fluentui/react-internal!ILabelProps#componentRef:member'
     summary: >-
-      Optional callback to access the ILabel interface. Use this instead of ref
-      for accessing the public methods and properties of the component.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Optional callback to access the ILabel interface. Use this instead of ref for accessing the public methods and
+      properties of the component.
+    name: componentRef
+    fullName: componentRef
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'componentRef?: IRefObject<ILabel>;'
       return:
-        type: IRefObject&lt;ILabel&gt;
-  - name: disabled
-    uid: '@fluentui/react-internal!ILabelProps#disabled:member'
-    package: '@fluentui/react-internal!'
-    fullName: disabled
+        type:
+          - IRefObject<ILabel>
+  - uid: '@fluentui/react-internal!ILabelProps#disabled:member'
     summary: Renders the label as disabled.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: disabled
+    fullName: disabled
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'disabled?: boolean;'
       return:
-        type: boolean
-  - name: required
-    uid: '@fluentui/react-internal!ILabelProps#required:member'
-    package: '@fluentui/react-internal!'
-    fullName: required
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!ILabelProps#required:member'
     summary: Whether the associated form field is required or not
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: required
+    fullName: required
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'required?: boolean;'
       return:
-        type: boolean
-  - name: styles
-    uid: '@fluentui/react-internal!ILabelProps#styles:member'
-    package: '@fluentui/react-internal!'
-    fullName: styles
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!ILabelProps#styles:member'
     summary: Styles for the label.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: styles
+    fullName: styles
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'styles?: IStyleFunctionOrObject<ILabelStyleProps, ILabelStyles>;'
       return:
-        type: 'IStyleFunctionOrObject&lt;ILabelStyleProps, ILabelStyles&gt;'
-  - name: theme
-    uid: '@fluentui/react-internal!ILabelProps#theme:member'
-    package: '@fluentui/react-internal!'
-    fullName: theme
+        type:
+          - 'IStyleFunctionOrObject<ILabelStyleProps, ILabelStyles>'
+  - uid: '@fluentui/react-internal!ILabelProps#theme:member'
     summary: Theme provided by HOC.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'theme?: ITheme;'
       return:
-        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
-extends: 'React.LabelHTMLAttributes&lt;HTMLLabelElement&gt; '
+        type:
+          - '@fluentui/theme!ITheme:interface'

@@ -1,48 +1,42 @@
-### YamlMime:TSType
-name: IPeoplePickerItemSelectedProps
-uid: 'office-ui-fabric-react!IPeoplePickerItemSelectedProps:interface'
-package: office-ui-fabric-react!
-fullName: IPeoplePickerItemSelectedProps
-summary: >-
-  PeoplePickerItemSelected props interface. Refers to the PeoplePicker items
-  that have been picked already.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: styles
-    uid: 'office-ui-fabric-react!IPeoplePickerItemSelectedProps#styles:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-ui-fabric-react!IPeoplePickerItemSelectedProps:interface'
+    summary: PeoplePickerItemSelected props interface. Refers to the PeoplePicker items that have been picked already.
+    name: IPeoplePickerItemSelectedProps
+    fullName: IPeoplePickerItemSelectedProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - |-
+        IPickerItemProps<IPersonaProps & {
+            ValidationState: ValidationState;
+        }>
+      - 'IPeoplePickerItemSharedProps '
     package: office-ui-fabric-react!
+    children:
+      - 'office-ui-fabric-react!IPeoplePickerItemSelectedProps#styles:member'
+      - 'office-ui-fabric-react!IPeoplePickerItemSelectedProps#ValidationState:member'
+  - uid: 'office-ui-fabric-react!IPeoplePickerItemSelectedProps#styles:member'
+    summary: Call to provide customized styling that will layer on top of the variant rules.
+    name: styles
     fullName: styles
-    summary: >-
-      Call to provide customized styling that will layer on top of the variant
-      rules.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        styles?: IStyleFunctionOrObject<IPeoplePickerItemSelectedStyleProps,
-        IPeoplePickerItemSelectedStyles>;
+      content: 'styles?: IStyleFunctionOrObject<IPeoplePickerItemSelectedStyleProps, IPeoplePickerItemSelectedStyles>;'
       return:
-        type: >-
-          IStyleFunctionOrObject&lt;IPeoplePickerItemSelectedStyleProps,
-          IPeoplePickerItemSelectedStyles&gt;
-  - name: ValidationState
-    uid: >-
-      office-ui-fabric-react!IPeoplePickerItemSelectedProps#ValidationState:member
-    package: office-ui-fabric-react!
+        type:
+          - 'IStyleFunctionOrObject<IPeoplePickerItemSelectedStyleProps, IPeoplePickerItemSelectedStyles>'
+  - uid: 'office-ui-fabric-react!IPeoplePickerItemSelectedProps#ValidationState:member'
+    name: ValidationState
     fullName: ValidationState
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'ValidationState: ValidationState;'
       return:
-        type: ValidationState
-extends: |-
-  IPickerItemProps&lt;IPersonaProps & {
-      ValidationState: ValidationState;
-  }&gt;
+        type:
+          - ValidationState

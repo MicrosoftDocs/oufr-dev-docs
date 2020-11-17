@@ -1,50 +1,54 @@
-### YamlMime:TSType
-name: ICardProps
-uid: '@fluentui/react-cards!ICardProps:interface'
-package: '@fluentui/react-cards!'
-fullName: ICardProps
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: horizontal
-    uid: '@fluentui/react-cards!ICardProps#horizontal:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-cards!ICardProps:interface'
+    name: ICardProps
+    fullName: ICardProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - '@fluentui/react-cards!ICardSlots:interface'
+      - 'IStyleableComponentProps<ICardProps, ICardTokens, ICardStyles>'
+      - IBaseProps<ICard>
+      - 'React.AllHTMLAttributes<HTMLElement> '
     package: '@fluentui/react-cards!'
-    fullName: horizontal
+    children:
+      - '@fluentui/react-cards!ICardProps#horizontal:member'
+      - '@fluentui/react-cards!ICardProps#onClick:member'
+      - '@fluentui/react-cards!ICardProps#onKeyDown:member'
+  - uid: '@fluentui/react-cards!ICardProps#horizontal:member'
     summary: Defines whether to render a vertical or a horizontal Card.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: horizontal
+    fullName: horizontal
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'horizontal?: boolean;'
       return:
-        type: boolean
-  - name: onClick
-    uid: '@fluentui/react-cards!ICardProps#onClick:member'
-    package: '@fluentui/react-cards!'
-    fullName: onClick
+        type:
+          - boolean
+  - uid: '@fluentui/react-cards!ICardProps#onClick:member'
     summary: Defines a callback that is called when the Card is clicked.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onClick
+    fullName: onClick
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onClick?: (ev?: React.MouseEvent<HTMLElement>) => void;'
       return:
-        type: '(ev?: React.MouseEvent&lt;HTMLElement&gt;) =&gt; void'
-  - name: onKeyDown
-    uid: '@fluentui/react-cards!ICardProps#onKeyDown:member'
-    package: '@fluentui/react-cards!'
+        type:
+          - '(ev?: React.MouseEvent<HTMLElement>) => void'
+  - uid: '@fluentui/react-cards!ICardProps#onKeyDown:member'
+    summary: Defines a callback that is called when the Card is a key is pressed down while focus is on the Card.
+    name: onKeyDown
     fullName: onKeyDown
-    summary: >-
-      Defines a callback that is called when the Card is a key is pressed down
-      while focus is on the Card.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onKeyDown?: (ev?: React.KeyboardEvent<HTMLElement>) => void;'
       return:
-        type: '(ev?: React.KeyboardEvent&lt;HTMLElement&gt;) =&gt; void'
-extends: '<xref uid="@fluentui/react-cards!ICardSlots:interface" />'
+        type:
+          - '(ev?: React.KeyboardEvent<HTMLElement>) => void'

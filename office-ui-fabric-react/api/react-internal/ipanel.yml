@@ -1,39 +1,36 @@
-### YamlMime:TSType
-name: IPanel
-uid: '@fluentui/react-internal!IPanel:interface'
-package: '@fluentui/react-internal!'
-fullName: IPanel
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: dismiss
-    uid: '@fluentui/react-internal!IPanel#dismiss:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-internal!IPanel:interface'
+    name: IPanel
+    fullName: IPanel
+    langs:
+      - typeScript
+    type: interface
     package: '@fluentui/react-internal!'
-    fullName: dismiss
+    children:
+      - '@fluentui/react-internal!IPanel#dismiss:member'
+      - '@fluentui/react-internal!IPanel#open:member'
+  - uid: '@fluentui/react-internal!IPanel#dismiss:member'
     summary: Forces the panel to dismiss.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: dismiss
+    fullName: dismiss
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        dismiss: (ev?: React.KeyboardEvent<HTMLElement> | KeyboardEvent) =>
-        void;
+      content: 'dismiss: (ev?: React.KeyboardEvent<HTMLElement> | KeyboardEvent) => void;'
       return:
-        type: >-
-          (ev?: React.KeyboardEvent&lt;HTMLElement&gt; | KeyboardEvent) =&gt;
-          void
-  - name: open
-    uid: '@fluentui/react-internal!IPanel#open:member'
-    package: '@fluentui/react-internal!'
-    fullName: open
+        type:
+          - '(ev?: React.KeyboardEvent<HTMLElement> | KeyboardEvent) => void'
+  - uid: '@fluentui/react-internal!IPanel#open:member'
     summary: Forces the panel to open.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: open
+    fullName: open
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'open: () => void;'
       return:
-        type: () =&gt; void
+        type:
+          - () => void

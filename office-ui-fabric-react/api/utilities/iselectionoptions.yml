@@ -1,73 +1,74 @@
-### YamlMime:TSType
-name: ISelectionOptions
-uid: '@fluentui/utilities!ISelectionOptions:interface'
-package: '@fluentui/utilities!'
-fullName: ISelectionOptions
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: canSelectItem
-    uid: '@fluentui/utilities!ISelectionOptions#canSelectItem:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/utilities!ISelectionOptions:interface'
+    name: ISelectionOptions
+    fullName: ISelectionOptions
+    langs:
+      - typeScript
+    type: interface
+    syntax:
+      typeParameters:
+        - id: TItem
     package: '@fluentui/utilities!'
+    children:
+      - '@fluentui/utilities!ISelectionOptions#canSelectItem:member'
+      - '@fluentui/utilities!ISelectionOptions#getKey:member'
+      - '@fluentui/utilities!ISelectionOptions#items:member'
+      - '@fluentui/utilities!ISelectionOptions#onSelectionChanged:member'
+      - '@fluentui/utilities!ISelectionOptions#selectionMode:member'
+  - uid: '@fluentui/utilities!ISelectionOptions#canSelectItem:member'
+    name: canSelectItem
     fullName: canSelectItem
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'canSelectItem?: (item: TItem, index?: number) => boolean;'
       return:
-        type: '(item: TItem, index?: number) =&gt; boolean'
-  - name: getKey
-    uid: '@fluentui/utilities!ISelectionOptions#getKey:member'
-    package: '@fluentui/utilities!'
+        type:
+          - '(item: TItem, index?: number) => boolean'
+  - uid: '@fluentui/utilities!ISelectionOptions#getKey:member'
+    summary: Custom logic to generate item keys. Required if `TItem` does not have a `key` property.
+    name: getKey
     fullName: getKey
-    summary: >-
-      Custom logic to generate item keys. Required if `TItem` does not have a
-      `key` property.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'getKey?: (item: TItem, index?: number) => string | number;'
       return:
-        type: '(item: TItem, index?: number) =&gt; string | number'
-  - name: items
-    uid: '@fluentui/utilities!ISelectionOptions#items:member'
-    package: '@fluentui/utilities!'
+        type:
+          - '(item: TItem, index?: number) => string | number'
+  - uid: '@fluentui/utilities!ISelectionOptions#items:member'
+    name: items
     fullName: items
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'items?: TItem[];'
       return:
-        type: 'TItem[]'
-  - name: onSelectionChanged
-    uid: '@fluentui/utilities!ISelectionOptions#onSelectionChanged:member'
-    package: '@fluentui/utilities!'
+        type:
+          - 'TItem[]'
+  - uid: '@fluentui/utilities!ISelectionOptions#onSelectionChanged:member'
+    name: onSelectionChanged
     fullName: onSelectionChanged
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onSelectionChanged?: () => void;'
       return:
-        type: () =&gt; void
-  - name: selectionMode
-    uid: '@fluentui/utilities!ISelectionOptions#selectionMode:member'
-    package: '@fluentui/utilities!'
+        type:
+          - () => void
+  - uid: '@fluentui/utilities!ISelectionOptions#selectionMode:member'
+    name: selectionMode
     fullName: selectionMode
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'selectionMode?: SelectionMode;'
       return:
-        type: '<xref uid="@fluentui/utilities!SelectionMode:enum" />'
+        type:
+          - '@fluentui/utilities!SelectionMode:enum'

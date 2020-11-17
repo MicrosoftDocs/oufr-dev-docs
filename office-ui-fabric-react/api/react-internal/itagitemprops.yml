@@ -1,75 +1,78 @@
-### YamlMime:TSType
-name: ITagItemProps
-uid: '@fluentui/react-internal!ITagItemProps:interface'
-package: '@fluentui/react-internal!'
-fullName: ITagItemProps
-summary: TagItem component props
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: className
-    uid: '@fluentui/react-internal!ITagItemProps#className:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-internal!ITagItemProps:interface'
+    summary: TagItem component props
+    name: ITagItemProps
+    fullName: ITagItemProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'IPickerItemProps<ITag> '
     package: '@fluentui/react-internal!'
-    fullName: className
+    children:
+      - '@fluentui/react-internal!ITagItemProps#className:member'
+      - '@fluentui/react-internal!ITagItemProps#enableTagFocusInDisabledPicker:member'
+      - '@fluentui/react-internal!ITagItemProps#styles:member'
+      - '@fluentui/react-internal!ITagItemProps#theme:member'
+      - '@fluentui/react-internal!ITagItemProps#title:member'
+  - uid: '@fluentui/react-internal!ITagItemProps#className:member'
     summary: Additional CSS class(es) to apply to the TagItem root element.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: className
+    fullName: className
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'className?: string;'
       return:
-        type: string
-  - name: enableTagFocusInDisabledPicker
-    uid: >-
-      @fluentui/react-internal!ITagItemProps#enableTagFocusInDisabledPicker:member
-    package: '@fluentui/react-internal!'
-    fullName: enableTagFocusInDisabledPicker
+        type:
+          - string
+  - uid: '@fluentui/react-internal!ITagItemProps#enableTagFocusInDisabledPicker:member'
     summary: Enable or not focus on TagItem when TagPicker is disabled.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: enableTagFocusInDisabledPicker
+    fullName: enableTagFocusInDisabledPicker
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'enableTagFocusInDisabledPicker?: boolean;'
       return:
-        type: boolean
-  - name: styles
-    uid: '@fluentui/react-internal!ITagItemProps#styles:member'
-    package: '@fluentui/react-internal!'
+        type:
+          - boolean
+  - uid: '@fluentui/react-internal!ITagItemProps#styles:member'
+    summary: Call to provide customized styling that will layer on top of the variant rules.
+    name: styles
     fullName: styles
-    summary: >-
-      Call to provide customized styling that will layer on top of the variant
-      rules.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'styles?: IStyleFunctionOrObject<ITagItemStyleProps, ITagItemStyles>;'
       return:
-        type: 'IStyleFunctionOrObject&lt;ITagItemStyleProps, ITagItemStyles&gt;'
-  - name: theme
-    uid: '@fluentui/react-internal!ITagItemProps#theme:member'
-    package: '@fluentui/react-internal!'
-    fullName: theme
+        type:
+          - 'IStyleFunctionOrObject<ITagItemStyleProps, ITagItemStyles>'
+  - uid: '@fluentui/react-internal!ITagItemProps#theme:member'
     summary: Theme provided by High-Order Component.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'theme?: ITheme;'
       return:
-        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
-  - name: title
-    uid: '@fluentui/react-internal!ITagItemProps#title:member'
-    package: '@fluentui/react-internal!'
-    fullName: title
+        type:
+          - '@fluentui/theme!ITheme:interface'
+  - uid: '@fluentui/react-internal!ITagItemProps#title:member'
     summary: The title (and aria-label) attribute used by the TagItem text element.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: title
+    fullName: title
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'title?: string;'
       return:
-        type: string
-extends: 'IPickerItemProps&lt;ITag&gt; '
+        type:
+          - string

@@ -1,194 +1,191 @@
-### YamlMime:TSType
-name: IKeytipProps
-uid: 'office-ui-fabric-react!IKeytipProps:interface'
-package: office-ui-fabric-react!
-fullName: IKeytipProps
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: calloutProps
-    uid: 'office-ui-fabric-react!IKeytipProps#calloutProps:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-ui-fabric-react!IKeytipProps:interface'
+    name: IKeytipProps
+    fullName: IKeytipProps
+    langs:
+      - typeScript
+    type: interface
     package: office-ui-fabric-react!
-    fullName: calloutProps
+    children:
+      - 'office-ui-fabric-react!IKeytipProps#calloutProps:member'
+      - 'office-ui-fabric-react!IKeytipProps#content:member'
+      - 'office-ui-fabric-react!IKeytipProps#disabled:member'
+      - 'office-ui-fabric-react!IKeytipProps#hasDynamicChildren:member'
+      - 'office-ui-fabric-react!IKeytipProps#hasMenu:member'
+      - 'office-ui-fabric-react!IKeytipProps#keySequences:member'
+      - 'office-ui-fabric-react!IKeytipProps#offset:member'
+      - 'office-ui-fabric-react!IKeytipProps#onExecute:member'
+      - 'office-ui-fabric-react!IKeytipProps#onReturn:member'
+      - 'office-ui-fabric-react!IKeytipProps#overflowSetSequence:member'
+      - 'office-ui-fabric-react!IKeytipProps#styles:member'
+      - 'office-ui-fabric-react!IKeytipProps#theme:member'
+      - 'office-ui-fabric-react!IKeytipProps#visible:member'
+  - uid: 'office-ui-fabric-react!IKeytipProps#calloutProps:member'
     summary: ICalloutProps to pass to the callout element
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: calloutProps
+    fullName: calloutProps
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'calloutProps?: ICalloutProps;'
       return:
-        type: ICalloutProps
-  - name: content
-    uid: 'office-ui-fabric-react!IKeytipProps#content:member'
-    package: office-ui-fabric-react!
-    fullName: content
+        type:
+          - ICalloutProps
+  - uid: 'office-ui-fabric-react!IKeytipProps#content:member'
     summary: Content to put inside the keytip
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: content
+    fullName: content
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'content: string;'
       return:
-        type: string
-  - name: disabled
-    uid: 'office-ui-fabric-react!IKeytipProps#disabled:member'
-    package: office-ui-fabric-react!
-    fullName: disabled
+        type:
+          - string
+  - uid: 'office-ui-fabric-react!IKeytipProps#disabled:member'
     summary: T/F if the corresponding control for this keytip is disabled
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: disabled
+    fullName: disabled
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'disabled?: boolean;'
       return:
-        type: boolean
-  - name: hasDynamicChildren
-    uid: 'office-ui-fabric-react!IKeytipProps#hasDynamicChildren:member'
-    package: office-ui-fabric-react!
-    fullName: hasDynamicChildren
+        type:
+          - boolean
+  - uid: 'office-ui-fabric-react!IKeytipProps#hasDynamicChildren:member'
     summary: >-
-      Whether or not this keytip will have children keytips that are dynamically
-      created (DOM is generated on keytip activation). Common cases are a Pivot
-      or Modal.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Whether or not this keytip will have children keytips that are dynamically created (DOM is generated on keytip
+      activation). Common cases are a Pivot or Modal.
+    name: hasDynamicChildren
+    fullName: hasDynamicChildren
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'hasDynamicChildren?: boolean;'
       return:
-        type: boolean
-  - name: hasMenu
-    uid: 'office-ui-fabric-react!IKeytipProps#hasMenu:member'
-    package: office-ui-fabric-react!
-    fullName: hasMenu
+        type:
+          - boolean
+  - uid: 'office-ui-fabric-react!IKeytipProps#hasMenu:member'
     summary: >-
-      Whether or not this keytip belongs to a component that has a menu Keytip
-      mode will stay on when a menu is opened, even if the items in that menu
-      have no keytips
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Whether or not this keytip belongs to a component that has a menu Keytip mode will stay on when a menu is opened,
+      even if the items in that menu have no keytips
+    name: hasMenu
+    fullName: hasMenu
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'hasMenu?: boolean;'
       return:
-        type: boolean
-  - name: keySequences
-    uid: 'office-ui-fabric-react!IKeytipProps#keySequences:member'
-    package: office-ui-fabric-react!
-    fullName: keySequences
+        type:
+          - boolean
+  - uid: 'office-ui-fabric-react!IKeytipProps#keySequences:member'
     summary: >-
-      Array of KeySequences which is the full key sequence to trigger this
-      keytip Should not include initial 'start' key sequence
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Array of KeySequences which is the full key sequence to trigger this keytip Should not include initial 'start' key
+      sequence
+    name: keySequences
+    fullName: keySequences
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'keySequences: string[];'
       return:
-        type: 'string[]'
-  - name: offset
-    uid: 'office-ui-fabric-react!IKeytipProps#offset:member'
-    package: office-ui-fabric-react!
-    fullName: offset
+        type:
+          - 'string[]'
+  - uid: 'office-ui-fabric-react!IKeytipProps#offset:member'
     summary: >-
-      Offset x and y for the keytip, added from the top-left corner By default
-      the keytip will be anchored to the bottom-center of the element
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Offset x and y for the keytip, added from the top-left corner By default the keytip will be anchored to the
+      bottom-center of the element
+    name: offset
+    fullName: offset
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'offset?: Point;'
       return:
-        type: '<xref uid="@fluentui/utilities!Point:interface" />'
-  - name: onExecute
-    uid: 'office-ui-fabric-react!IKeytipProps#onExecute:member'
-    package: office-ui-fabric-react!
+        type:
+          - '@fluentui/utilities!Point:interface'
+  - uid: 'office-ui-fabric-react!IKeytipProps#onExecute:member'
+    summary: >-
+      Function to call when this keytip is activated. 'executeTarget' is the DOM element marked with
+      'data-ktp-execute-target'. 'target' is the DOM element marked with 'data-ktp-target'.
+    name: onExecute
     fullName: onExecute
-    summary: >-
-      Function to call when this keytip is activated. 'executeTarget' is the DOM
-      element marked with 'data-ktp-execute-target'. 'target' is the DOM element
-      marked with 'data-ktp-target'.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        onExecute?: (executeTarget: HTMLElement | null, target: HTMLElement |
-        null) => void;
+      content: 'onExecute?: (executeTarget: HTMLElement | null, target: HTMLElement | null) => void;'
       return:
-        type: >-
-          (executeTarget: HTMLElement | null, target: HTMLElement | null) =&gt;
-          void
-  - name: onReturn
-    uid: 'office-ui-fabric-react!IKeytipProps#onReturn:member'
-    package: office-ui-fabric-react!
+        type:
+          - '(executeTarget: HTMLElement | null, target: HTMLElement | null) => void'
+  - uid: 'office-ui-fabric-react!IKeytipProps#onReturn:member'
+    summary: >-
+      Function to call when the keytip is the currentKeytip and a return sequence is pressed. 'executeTarget' is the DOM
+      element marked with 'data-ktp-execute-target'. 'target' is the DOM element marked with 'data-ktp-target'.
+    name: onReturn
     fullName: onReturn
-    summary: >-
-      Function to call when the keytip is the currentKeytip and a return
-      sequence is pressed. 'executeTarget' is the DOM element marked with
-      'data-ktp-execute-target'. 'target' is the DOM element marked with
-      'data-ktp-target'.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        onReturn?: (executeTarget: HTMLElement | null, target: HTMLElement |
-        null) => void;
+      content: 'onReturn?: (executeTarget: HTMLElement | null, target: HTMLElement | null) => void;'
       return:
-        type: >-
-          (executeTarget: HTMLElement | null, target: HTMLElement | null) =&gt;
-          void
-  - name: overflowSetSequence
-    uid: 'office-ui-fabric-react!IKeytipProps#overflowSetSequence:member'
-    package: office-ui-fabric-react!
+        type:
+          - '(executeTarget: HTMLElement | null, target: HTMLElement | null) => void'
+  - uid: 'office-ui-fabric-react!IKeytipProps#overflowSetSequence:member'
+    summary: 'Full KeySequence of the overflow set button, will be set automatically if this keytip is inside an overflow'
+    name: overflowSetSequence
     fullName: overflowSetSequence
-    summary: >-
-      Full KeySequence of the overflow set button, will be set automatically if
-      this keytip is inside an overflow
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'overflowSetSequence?: string[];'
       return:
-        type: 'string[]'
-  - name: styles
-    uid: 'office-ui-fabric-react!IKeytipProps#styles:member'
-    package: office-ui-fabric-react!
-    fullName: styles
+        type:
+          - 'string[]'
+  - uid: 'office-ui-fabric-react!IKeytipProps#styles:member'
     summary: Optional styles for the component.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: styles
+    fullName: styles
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'styles?: IStyleFunctionOrObject<IKeytipStyleProps, IKeytipStyles>;'
       return:
-        type: 'IStyleFunctionOrObject&lt;IKeytipStyleProps, IKeytipStyles&gt;'
-  - name: theme
-    uid: 'office-ui-fabric-react!IKeytipProps#theme:member'
-    package: office-ui-fabric-react!
-    fullName: theme
+        type:
+          - 'IStyleFunctionOrObject<IKeytipStyleProps, IKeytipStyles>'
+  - uid: 'office-ui-fabric-react!IKeytipProps#theme:member'
     summary: Theme for the component
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'theme?: ITheme;'
       return:
-        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
-  - name: visible
-    uid: 'office-ui-fabric-react!IKeytipProps#visible:member'
-    package: office-ui-fabric-react!
-    fullName: visible
+        type:
+          - '@fluentui/theme!ITheme:interface'
+  - uid: 'office-ui-fabric-react!IKeytipProps#visible:member'
     summary: T/F if the keytip is visible
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: visible
+    fullName: visible
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'visible?: boolean;'
       return:
-        type: boolean
+        type:
+          - boolean

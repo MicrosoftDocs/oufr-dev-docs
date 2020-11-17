@@ -1,33 +1,48 @@
-### YamlMime:TSEnum
-name: FocusZoneDirection
-uid: '@fluentui/react-focus!FocusZoneDirection:enum'
-package: '@fluentui/react-focus!'
-fullName: FocusZoneDirection
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-fields:
-  - name: bidirectional
-    uid: '@fluentui/react-focus!FocusZoneDirection.bidirectional:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-focus!FocusZoneDirection:enum'
+    name: FocusZoneDirection
+    fullName: FocusZoneDirection
+    langs:
+      - typeScript
+    type: enum
     package: '@fluentui/react-focus!'
+    children:
+      - '@fluentui/react-focus!FocusZoneDirection.bidirectional:member'
+      - '@fluentui/react-focus!FocusZoneDirection.domOrder:member'
+      - '@fluentui/react-focus!FocusZoneDirection.horizontal:member'
+      - '@fluentui/react-focus!FocusZoneDirection.vertical:member'
+  - uid: '@fluentui/react-focus!FocusZoneDirection.bidirectional:member'
     summary: React to all arrows.
-    numericValue: 2
-  - name: domOrder
-    uid: '@fluentui/react-focus!FocusZoneDirection.domOrder:member'
-    package: '@fluentui/react-focus!'
+    name: bidirectional
+    fullName: bidirectional
+    langs:
+      - typeScript
+    type: field
+    numericValue: '2'
+  - uid: '@fluentui/react-focus!FocusZoneDirection.domOrder:member'
     summary: >-
-      React to all arrows. Navigate next item in DOM on right/down arrow keys
-      and previous - left/up arrow keys. Right and Left arrow keys are swapped
-      in RTL mode.
-    numericValue: 3
-  - name: horizontal
-    uid: '@fluentui/react-focus!FocusZoneDirection.horizontal:member'
-    package: '@fluentui/react-focus!'
+      React to all arrows. Navigate next item in DOM on right/down arrow keys and previous - left/up arrow keys. Right
+      and Left arrow keys are swapped in RTL mode.
+    name: domOrder
+    fullName: domOrder
+    langs:
+      - typeScript
+    type: field
+    numericValue: '3'
+  - uid: '@fluentui/react-focus!FocusZoneDirection.horizontal:member'
     summary: Only react to left/right arrows.
-    numericValue: 1
-  - name: vertical
-    uid: '@fluentui/react-focus!FocusZoneDirection.vertical:member'
-    package: '@fluentui/react-focus!'
+    name: horizontal
+    fullName: horizontal
+    langs:
+      - typeScript
+    type: field
+    numericValue: '1'
+  - uid: '@fluentui/react-focus!FocusZoneDirection.vertical:member'
     summary: Only react to up/down arrows.
-    numericValue: 0
+    name: vertical
+    fullName: vertical
+    langs:
+      - typeScript
+    type: field
+    numericValue: '0'

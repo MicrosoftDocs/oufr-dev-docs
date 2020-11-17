@@ -1,54 +1,52 @@
-### YamlMime:TSType
-name: ITagItemSuggestionProps
-uid: 'office-ui-fabric-react!ITagItemSuggestionProps:interface'
-package: office-ui-fabric-react!
-fullName: ITagItemSuggestionProps
-summary: TagItemSuggestion component props
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: className
-    uid: 'office-ui-fabric-react!ITagItemSuggestionProps#className:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-ui-fabric-react!ITagItemSuggestionProps:interface'
+    summary: TagItemSuggestion component props
+    name: ITagItemSuggestionProps
+    fullName: ITagItemSuggestionProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'React.AllHTMLAttributes<HTMLElement> '
     package: office-ui-fabric-react!
-    fullName: className
+    children:
+      - 'office-ui-fabric-react!ITagItemSuggestionProps#className:member'
+      - 'office-ui-fabric-react!ITagItemSuggestionProps#styles:member'
+      - 'office-ui-fabric-react!ITagItemSuggestionProps#theme:member'
+  - uid: 'office-ui-fabric-react!ITagItemSuggestionProps#className:member'
     summary: Additional CSS class(es) to apply to the TagItemSuggestion div element
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: className
+    fullName: className
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'className?: string;'
       return:
-        type: string
-  - name: styles
-    uid: 'office-ui-fabric-react!ITagItemSuggestionProps#styles:member'
-    package: office-ui-fabric-react!
+        type:
+          - string
+  - uid: 'office-ui-fabric-react!ITagItemSuggestionProps#styles:member'
+    summary: Call to provide customized styling that will layer on top of the variant rules.
+    name: styles
     fullName: styles
-    summary: >-
-      Call to provide customized styling that will layer on top of the variant
-      rules.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        styles?: IStyleFunctionOrObject<ITagItemSuggestionStyleProps,
-        ITagItemSuggestionStyles>;
+      content: 'styles?: IStyleFunctionOrObject<ITagItemSuggestionStyleProps, ITagItemSuggestionStyles>;'
       return:
-        type: >-
-          IStyleFunctionOrObject&lt;ITagItemSuggestionStyleProps,
-          ITagItemSuggestionStyles&gt;
-  - name: theme
-    uid: 'office-ui-fabric-react!ITagItemSuggestionProps#theme:member'
-    package: office-ui-fabric-react!
-    fullName: theme
+        type:
+          - 'IStyleFunctionOrObject<ITagItemSuggestionStyleProps, ITagItemSuggestionStyles>'
+  - uid: 'office-ui-fabric-react!ITagItemSuggestionProps#theme:member'
     summary: Theme provided by High-Order Component.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'theme?: ITheme;'
       return:
-        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
-extends: 'React.AllHTMLAttributes&lt;HTMLElement&gt; '
+        type:
+          - '@fluentui/theme!ITheme:interface'

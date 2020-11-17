@@ -1,190 +1,187 @@
-### YamlMime:TSType
-name: IContextualMenuItemProps
-uid: '@fluentui/react-internal!IContextualMenuItemProps:interface'
-package: '@fluentui/react-internal!'
-fullName: IContextualMenuItemProps
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: className
-    uid: '@fluentui/react-internal!IContextualMenuItemProps#className:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-internal!IContextualMenuItemProps:interface'
+    name: IContextualMenuItemProps
+    fullName: IContextualMenuItemProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'React.HTMLAttributes<IContextualMenuItemProps> '
     package: '@fluentui/react-internal!'
-    fullName: className
+    children:
+      - '@fluentui/react-internal!IContextualMenuItemProps#className:member'
+      - '@fluentui/react-internal!IContextualMenuItemProps#classNames:member'
+      - '@fluentui/react-internal!IContextualMenuItemProps#componentRef:member'
+      - '@fluentui/react-internal!IContextualMenuItemProps#dismissMenu:member'
+      - '@fluentui/react-internal!IContextualMenuItemProps#dismissSubMenu:member'
+      - '@fluentui/react-internal!IContextualMenuItemProps#getSubmenuTarget:member'
+      - '@fluentui/react-internal!IContextualMenuItemProps#hasIcons:member'
+      - '@fluentui/react-internal!IContextualMenuItemProps#index:member'
+      - '@fluentui/react-internal!IContextualMenuItemProps#item:member'
+      - '@fluentui/react-internal!IContextualMenuItemProps#onCheckmarkClick:member'
+      - '@fluentui/react-internal!IContextualMenuItemProps#openSubMenu:member'
+      - '@fluentui/react-internal!IContextualMenuItemProps#styles:member'
+      - '@fluentui/react-internal!IContextualMenuItemProps#theme:member'
+  - uid: '@fluentui/react-internal!IContextualMenuItemProps#className:member'
     summary: Additional css class to apply to the ContextualMenuItem
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: className
+    fullName: className
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'className?: string;'
       return:
-        type: string
-  - name: classNames
-    uid: '@fluentui/react-internal!IContextualMenuItemProps#classNames:member'
-    package: '@fluentui/react-internal!'
-    fullName: classNames
+        type:
+          - string
+  - uid: '@fluentui/react-internal!IContextualMenuItemProps#classNames:member'
     summary: Classnames for different aspects of a menu item
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: classNames
+    fullName: classNames
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'classNames: IMenuItemClassNames;'
       return:
-        type: '<xref uid="@fluentui/react-internal!IMenuItemClassNames:interface" />'
-  - name: componentRef
-    uid: '@fluentui/react-internal!IContextualMenuItemProps#componentRef:member'
-    package: '@fluentui/react-internal!'
-    fullName: componentRef
+        type:
+          - '@fluentui/react-internal!IMenuItemClassNames:interface'
+  - uid: '@fluentui/react-internal!IContextualMenuItemProps#componentRef:member'
     summary: >-
-      Optional callback to access the IContextualMenuRenderItem interface. Use
-      this instead of ref for accessing the public methods and properties of the
-      component.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Optional callback to access the IContextualMenuRenderItem interface. Use this instead of ref for accessing the
+      public methods and properties of the component.
+    name: componentRef
+    fullName: componentRef
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'componentRef?: IRefObject<IContextualMenuRenderItem>;'
       return:
-        type: IRefObject&lt;IContextualMenuRenderItem&gt;
-  - name: dismissMenu
-    uid: '@fluentui/react-internal!IContextualMenuItemProps#dismissMenu:member'
-    package: '@fluentui/react-internal!'
-    fullName: dismissMenu
+        type:
+          - IRefObject<IContextualMenuRenderItem>
+  - uid: '@fluentui/react-internal!IContextualMenuItemProps#dismissMenu:member'
     summary: >-
-      This prop will get set by ContextualMenu and can be called to close the
-      menu this item belongs to. If dismissAll is true, all menus will be
-      closed.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      This prop will get set by ContextualMenu and can be called to close the menu this item belongs to. If dismissAll
+      is true, all menus will be closed.
+    name: dismissMenu
+    fullName: dismissMenu
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'dismissMenu?: (ev?: any, dismissAll?: boolean) => void;'
       return:
-        type: '(ev?: any, dismissAll?: boolean) =&gt; void'
-  - name: dismissSubMenu
-    uid: '@fluentui/react-internal!IContextualMenuItemProps#dismissSubMenu:member'
-    package: '@fluentui/react-internal!'
+        type:
+          - '(ev?: any, dismissAll?: boolean) => void'
+  - uid: '@fluentui/react-internal!IContextualMenuItemProps#dismissSubMenu:member'
+    summary: 'This prop will get set by ContextualMenu and can be called to close this item''s subMenu, if present.'
+    name: dismissSubMenu
     fullName: dismissSubMenu
-    summary: >-
-      This prop will get set by ContextualMenu and can be called to close this
-      item's subMenu, if present.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'dismissSubMenu?: () => void;'
       return:
-        type: () =&gt; void
-  - name: getSubmenuTarget
-    uid: '@fluentui/react-internal!IContextualMenuItemProps#getSubmenuTarget:member'
-    package: '@fluentui/react-internal!'
-    fullName: getSubmenuTarget
+        type:
+          - () => void
+  - uid: '@fluentui/react-internal!IContextualMenuItemProps#getSubmenuTarget:member'
     summary: >-
-      This prop will get set by the wrapping component and will return the
-      element that wraps this ContextualMenuItem. Used for openSubMenu.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      This prop will get set by the wrapping component and will return the element that wraps this ContextualMenuItem.
+      Used for openSubMenu.
+    name: getSubmenuTarget
+    fullName: getSubmenuTarget
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'getSubmenuTarget?: () => HTMLElement | undefined;'
       return:
-        type: () =&gt; HTMLElement | undefined
-  - name: hasIcons
-    uid: '@fluentui/react-internal!IContextualMenuItemProps#hasIcons:member'
-    package: '@fluentui/react-internal!'
-    fullName: hasIcons
+        type:
+          - () => HTMLElement | undefined
+  - uid: '@fluentui/react-internal!IContextualMenuItemProps#hasIcons:member'
     summary: If this item has icons
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: hasIcons
+    fullName: hasIcons
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'hasIcons: boolean | undefined;'
       return:
-        type: boolean | undefined
-  - name: index
-    uid: '@fluentui/react-internal!IContextualMenuItemProps#index:member'
-    package: '@fluentui/react-internal!'
-    fullName: index
+        type:
+          - boolean | undefined
+  - uid: '@fluentui/react-internal!IContextualMenuItemProps#index:member'
     summary: Index of the item
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: index
+    fullName: index
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'index: number;'
       return:
-        type: number
-  - name: item
-    uid: '@fluentui/react-internal!IContextualMenuItemProps#item:member'
-    package: '@fluentui/react-internal!'
-    fullName: item
+        type:
+          - number
+  - uid: '@fluentui/react-internal!IContextualMenuItemProps#item:member'
     summary: The item to display
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: item
+    fullName: item
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'item: IContextualMenuItem;'
       return:
-        type: IContextualMenuItem
-  - name: onCheckmarkClick
-    uid: '@fluentui/react-internal!IContextualMenuItemProps#onCheckmarkClick:member'
-    package: '@fluentui/react-internal!'
-    fullName: onCheckmarkClick
+        type:
+          - IContextualMenuItem
+  - uid: '@fluentui/react-internal!IContextualMenuItemProps#onCheckmarkClick:member'
     summary: Click handler for the checkmark
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onCheckmarkClick
+    fullName: onCheckmarkClick
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        onCheckmarkClick?: (item: IContextualMenuItem, ev:
-        React.MouseEvent<HTMLElement>) => void;
+      content: 'onCheckmarkClick?: (item: IContextualMenuItem, ev: React.MouseEvent<HTMLElement>) => void;'
       return:
-        type: >-
-          (item: IContextualMenuItem, ev: React.MouseEvent&lt;HTMLElement&gt;)
-          =&gt; void
-  - name: openSubMenu
-    uid: '@fluentui/react-internal!IContextualMenuItemProps#openSubMenu:member'
-    package: '@fluentui/react-internal!'
+        type:
+          - '(item: IContextualMenuItem, ev: React.MouseEvent<HTMLElement>) => void'
+  - uid: '@fluentui/react-internal!IContextualMenuItemProps#openSubMenu:member'
+    summary: 'This prop will get set by ContextualMenu and can be called to open this item''s subMenu, if present.'
+    name: openSubMenu
     fullName: openSubMenu
-    summary: >-
-      This prop will get set by ContextualMenu and can be called to open this
-      item's subMenu, if present.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'openSubMenu?: (item: any, target: HTMLElement) => void;'
       return:
-        type: '(item: any, target: HTMLElement) =&gt; void'
-  - name: styles
-    uid: '@fluentui/react-internal!IContextualMenuItemProps#styles:member'
-    package: '@fluentui/react-internal!'
+        type:
+          - '(item: any, target: HTMLElement) => void'
+  - uid: '@fluentui/react-internal!IContextualMenuItemProps#styles:member'
+    summary: Call to provide customized styling that will layer on top of the variant rules.
+    name: styles
     fullName: styles
-    summary: >-
-      Call to provide customized styling that will layer on top of the variant
-      rules.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        styles?: IStyleFunctionOrObject<IContextualMenuItemStyleProps,
-        IContextualMenuItemStyles>;
+      content: 'styles?: IStyleFunctionOrObject<IContextualMenuItemStyleProps, IContextualMenuItemStyles>;'
       return:
-        type: >-
-          IStyleFunctionOrObject&lt;IContextualMenuItemStyleProps,
-          IContextualMenuItemStyles&gt;
-  - name: theme
-    uid: '@fluentui/react-internal!IContextualMenuItemProps#theme:member'
-    package: '@fluentui/react-internal!'
-    fullName: theme
+        type:
+          - 'IStyleFunctionOrObject<IContextualMenuItemStyleProps, IContextualMenuItemStyles>'
+  - uid: '@fluentui/react-internal!IContextualMenuItemProps#theme:member'
     summary: Theme provided by High-Order Component.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'theme?: ITheme;'
       return:
-        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
-extends: 'React.HTMLAttributes&lt;IContextualMenuItemProps&gt; '
+        type:
+          - '@fluentui/theme!ITheme:interface'

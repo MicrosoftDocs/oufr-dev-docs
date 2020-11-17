@@ -1,104 +1,104 @@
-### YamlMime:TSType
-name: IFabricProps
-uid: 'office-ui-fabric-react!IFabricProps:interface'
-package: office-ui-fabric-react!
-fullName: IFabricProps
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: applyTheme
-    uid: 'office-ui-fabric-react!IFabricProps#applyTheme:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-ui-fabric-react!IFabricProps:interface'
+    name: IFabricProps
+    fullName: IFabricProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'React.HTMLAttributes<HTMLDivElement> '
     package: office-ui-fabric-react!
+    children:
+      - 'office-ui-fabric-react!IFabricProps#applyTheme:member'
+      - 'office-ui-fabric-react!IFabricProps#applyThemeToBody:member'
+      - 'office-ui-fabric-react!IFabricProps#as:member'
+      - 'office-ui-fabric-react!IFabricProps#componentRef:member'
+      - 'office-ui-fabric-react!IFabricProps#dir:member'
+      - 'office-ui-fabric-react!IFabricProps#styles:member'
+      - 'office-ui-fabric-react!IFabricProps#theme:member'
+  - uid: 'office-ui-fabric-react!IFabricProps#applyTheme:member'
+    summary: Applies the current body background specified in the theme to the root element.
+    name: applyTheme
     fullName: applyTheme
-    summary: >-
-      Applies the current body background specified in the theme to the root
-      element.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'applyTheme?: boolean;'
       return:
-        type: boolean
-  - name: applyThemeToBody
-    uid: 'office-ui-fabric-react!IFabricProps#applyThemeToBody:member'
-    package: office-ui-fabric-react!
+        type:
+          - boolean
+  - uid: 'office-ui-fabric-react!IFabricProps#applyThemeToBody:member'
+    summary: Applies the current body background specified in the theme to the body element.
+    name: applyThemeToBody
     fullName: applyThemeToBody
-    summary: >-
-      Applies the current body background specified in the theme to the body
-      element.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'applyThemeToBody?: boolean;'
       return:
-        type: boolean
-  - name: as
-    uid: 'office-ui-fabric-react!IFabricProps#as:member'
-    package: office-ui-fabric-react!
-    fullName: as
+        type:
+          - boolean
+  - uid: 'office-ui-fabric-react!IFabricProps#as:member'
     summary: 'Overrides the root element type, defaults to `div`<!-- -->.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: as
+    fullName: as
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'as?: React.ElementType;'
       return:
-        type: React.ElementType
-  - name: componentRef
-    uid: 'office-ui-fabric-react!IFabricProps#componentRef:member'
-    package: office-ui-fabric-react!
+        type:
+          - React.ElementType
+  - uid: 'office-ui-fabric-react!IFabricProps#componentRef:member'
+    name: componentRef
     fullName: componentRef
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'componentRef?: IRefObject<{}>;'
       return:
-        type: 'IRefObject&lt;{}&gt;'
-  - name: dir
-    uid: 'office-ui-fabric-react!IFabricProps#dir:member'
-    package: office-ui-fabric-react!
-    fullName: dir
+        type:
+          - 'IRefObject<{}>'
+  - uid: 'office-ui-fabric-react!IFabricProps#dir:member'
     summary: >-
-      Specifies the direction of the content. Will inject a `dir` attribute, and
-      also ensure that the `rtl` flag of the contextual theme object is set
-      correctly so that css registered with merge-styles can be auto flipped
-      correctly.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Specifies the direction of the content. Will inject a `dir` attribute, and also ensure that the `rtl` flag of the
+      contextual theme object is set correctly so that css registered with merge-styles can be auto flipped correctly.
+    name: dir
+    fullName: dir
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'dir?: ''rtl'' | ''ltr'' | ''auto'';'
       return:
-        type: '''rtl'' | ''ltr'' | ''auto'''
-  - name: styles
-    uid: 'office-ui-fabric-react!IFabricProps#styles:member'
-    package: office-ui-fabric-react!
-    fullName: styles
+        type:
+          - '''rtl'' | ''ltr'' | ''auto'''
+  - uid: 'office-ui-fabric-react!IFabricProps#styles:member'
     summary: Overrides the styles for the component.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: styles
+    fullName: styles
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'styles?: IStyleFunctionOrObject<IFabricStyleProps, IFabricStyles>;'
       return:
-        type: 'IStyleFunctionOrObject&lt;IFabricStyleProps, IFabricStyles&gt;'
-  - name: theme
-    uid: 'office-ui-fabric-react!IFabricProps#theme:member'
-    package: office-ui-fabric-react!
-    fullName: theme
+        type:
+          - 'IStyleFunctionOrObject<IFabricStyleProps, IFabricStyles>'
+  - uid: 'office-ui-fabric-react!IFabricProps#theme:member'
     summary: Injected by the `styled` HOC wrapper.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'theme?: ITheme;'
       return:
-        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
-extends: 'React.HTMLAttributes&lt;HTMLDivElement&gt; '
+        type:
+          - '@fluentui/theme!ITheme:interface'

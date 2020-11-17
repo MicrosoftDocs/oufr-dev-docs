@@ -1,93 +1,95 @@
-### YamlMime:TSType
-name: IShimmerLineProps
-uid: 'office-ui-fabric-react!IShimmerLineProps:interface'
-package: office-ui-fabric-react!
-fullName: IShimmerLineProps
-summary: ShimmerLine component props.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: borderStyle
-    uid: 'office-ui-fabric-react!IShimmerLineProps#borderStyle:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-ui-fabric-react!IShimmerLineProps:interface'
+    summary: ShimmerLine component props.
+    name: IShimmerLineProps
+    fullName: IShimmerLineProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'React.AllHTMLAttributes<HTMLElement> '
     package: office-ui-fabric-react!
-    fullName: borderStyle
+    children:
+      - 'office-ui-fabric-react!IShimmerLineProps#borderStyle:member'
+      - 'office-ui-fabric-react!IShimmerLineProps#componentRef:member'
+      - 'office-ui-fabric-react!IShimmerLineProps#height:member'
+      - 'office-ui-fabric-react!IShimmerLineProps#styles:member'
+      - 'office-ui-fabric-react!IShimmerLineProps#theme:member'
+      - 'office-ui-fabric-react!IShimmerLineProps#width:member'
+  - uid: 'office-ui-fabric-react!IShimmerLineProps#borderStyle:member'
     summary: Use to set custom styling of the shimmerLine borders.
-    remarks: ''
-    isPreview: false
-    isDeprecated: true
-    customDeprecatedMessage: Use `styles` prop to leverage mergeStyle API.
+    deprecated:
+      content: Use `styles` prop to leverage mergeStyle API.
+    name: borderStyle
+    fullName: borderStyle
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'borderStyle?: IRawStyle;'
       return:
-        type: '<xref uid="@fluentui/merge-styles!IRawStyle:interface" />'
-  - name: componentRef
-    uid: 'office-ui-fabric-react!IShimmerLineProps#componentRef:member'
-    package: office-ui-fabric-react!
-    fullName: componentRef
+        type:
+          - '@fluentui/merge-styles!IRawStyle:interface'
+  - uid: 'office-ui-fabric-react!IShimmerLineProps#componentRef:member'
     summary: >-
-      Optional callback to access the IShimmerLine interface. Use this instead
-      of ref for accessing the public methods and properties of the component.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Optional callback to access the IShimmerLine interface. Use this instead of ref for accessing the public methods
+      and properties of the component.
+    name: componentRef
+    fullName: componentRef
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'componentRef?: IRefObject<IShimmerLine>;'
       return:
-        type: IRefObject&lt;IShimmerLine&gt;
-  - name: height
-    uid: 'office-ui-fabric-react!IShimmerLineProps#height:member'
-    package: office-ui-fabric-react!
-    fullName: height
+        type:
+          - IRefObject<IShimmerLine>
+  - uid: 'office-ui-fabric-react!IShimmerLineProps#height:member'
     summary: Sets the height of the rectangle.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: height
+    fullName: height
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'height?: number;'
       return:
-        type: number
-  - name: styles
-    uid: 'office-ui-fabric-react!IShimmerLineProps#styles:member'
-    package: office-ui-fabric-react!
+        type:
+          - number
+  - uid: 'office-ui-fabric-react!IShimmerLineProps#styles:member'
+    summary: Call to provide customized styling that will layer on top of the variant rules.
+    name: styles
     fullName: styles
-    summary: >-
-      Call to provide customized styling that will layer on top of the variant
-      rules.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        styles?: IStyleFunctionOrObject<IShimmerLineStyleProps,
-        IShimmerLineStyles>;
+      content: 'styles?: IStyleFunctionOrObject<IShimmerLineStyleProps, IShimmerLineStyles>;'
       return:
-        type: >-
-          IStyleFunctionOrObject&lt;IShimmerLineStyleProps,
-          IShimmerLineStyles&gt;
-  - name: theme
-    uid: 'office-ui-fabric-react!IShimmerLineProps#theme:member'
-    package: office-ui-fabric-react!
-    fullName: theme
+        type:
+          - 'IStyleFunctionOrObject<IShimmerLineStyleProps, IShimmerLineStyles>'
+  - uid: 'office-ui-fabric-react!IShimmerLineProps#theme:member'
     summary: Theme provided by High-Order Component.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: theme
+    fullName: theme
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'theme?: ITheme;'
       return:
-        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
-  - name: width
-    uid: 'office-ui-fabric-react!IShimmerLineProps#width:member'
-    package: office-ui-fabric-react!
-    fullName: width
+        type:
+          - '@fluentui/theme!ITheme:interface'
+  - uid: 'office-ui-fabric-react!IShimmerLineProps#width:member'
     summary: Sets width value of the line.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: width
+    fullName: width
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'width?: number | string;'
       return:
-        type: number | string
-extends: 'React.AllHTMLAttributes&lt;HTMLElement&gt; '
+        type:
+          - number | string

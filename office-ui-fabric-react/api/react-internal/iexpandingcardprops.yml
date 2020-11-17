@@ -1,74 +1,78 @@
-### YamlMime:TSType
-name: IExpandingCardProps
-uid: '@fluentui/react-internal!IExpandingCardProps:interface'
-package: '@fluentui/react-internal!'
-fullName: IExpandingCardProps
-summary: ExpandingCard component props.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: compactCardHeight
-    uid: '@fluentui/react-internal!IExpandingCardProps#compactCardHeight:member'
+### YamlMime:UniversalReference
+items:
+  - uid: '@fluentui/react-internal!IExpandingCardProps:interface'
+    summary: ExpandingCard component props.
+    name: IExpandingCardProps
+    fullName: IExpandingCardProps
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'IBaseCardProps<IExpandingCard, IExpandingCardStyles, IExpandingCardStyleProps> '
     package: '@fluentui/react-internal!'
-    fullName: compactCardHeight
+    children:
+      - '@fluentui/react-internal!IExpandingCardProps#compactCardHeight:member'
+      - '@fluentui/react-internal!IExpandingCardProps#expandedCardHeight:member'
+      - '@fluentui/react-internal!IExpandingCardProps#mode:member'
+      - '@fluentui/react-internal!IExpandingCardProps#onRenderCompactCard:member'
+      - '@fluentui/react-internal!IExpandingCardProps#onRenderExpandedCard:member'
+  - uid: '@fluentui/react-internal!IExpandingCardProps#compactCardHeight:member'
     summary: Height of compact card
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: compactCardHeight
+    fullName: compactCardHeight
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'compactCardHeight?: number;'
       return:
-        type: number
-  - name: expandedCardHeight
-    uid: '@fluentui/react-internal!IExpandingCardProps#expandedCardHeight:member'
-    package: '@fluentui/react-internal!'
-    fullName: expandedCardHeight
+        type:
+          - number
+  - uid: '@fluentui/react-internal!IExpandingCardProps#expandedCardHeight:member'
     summary: Height of expanded card
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: expandedCardHeight
+    fullName: expandedCardHeight
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'expandedCardHeight?: number;'
       return:
-        type: number
-  - name: mode
-    uid: '@fluentui/react-internal!IExpandingCardProps#mode:member'
-    package: '@fluentui/react-internal!'
-    fullName: mode
+        type:
+          - number
+  - uid: '@fluentui/react-internal!IExpandingCardProps#mode:member'
     summary: Use to open the card in expanded format and not wait for the delay
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: mode
+    fullName: mode
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'mode?: ExpandingCardMode;'
       return:
-        type: ExpandingCardMode
-  - name: onRenderCompactCard
-    uid: '@fluentui/react-internal!IExpandingCardProps#onRenderCompactCard:member'
-    package: '@fluentui/react-internal!'
-    fullName: onRenderCompactCard
+        type:
+          - ExpandingCardMode
+  - uid: '@fluentui/react-internal!IExpandingCardProps#onRenderCompactCard:member'
     summary: Render function to populate compact content area
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onRenderCompactCard
+    fullName: onRenderCompactCard
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onRenderCompactCard?: IRenderFunction<any>;'
       return:
-        type: IRenderFunction&lt;any&gt;
-  - name: onRenderExpandedCard
-    uid: '@fluentui/react-internal!IExpandingCardProps#onRenderExpandedCard:member'
-    package: '@fluentui/react-internal!'
-    fullName: onRenderExpandedCard
+        type:
+          - IRenderFunction<any>
+  - uid: '@fluentui/react-internal!IExpandingCardProps#onRenderExpandedCard:member'
     summary: Render function to populate expanded content area
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onRenderExpandedCard
+    fullName: onRenderExpandedCard
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onRenderExpandedCard?: IRenderFunction<any>;'
       return:
-        type: IRenderFunction&lt;any&gt;
-extends: >-
-  IBaseCardProps&lt;IExpandingCard, IExpandingCardStyles,
-  IExpandingCardStyleProps&gt; 
+        type:
+          - IRenderFunction<any>
