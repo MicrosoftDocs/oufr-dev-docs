@@ -1,90 +1,96 @@
-### YamlMime:UniversalReference
-items:
-  - uid: '@fluentui/react-focus!IFocusZone:interface'
-    summary: FocusZone component class interface.
-    name: IFocusZone
-    fullName: IFocusZone
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: IFocusZone
+uid: '@fluentui/react-focus!IFocusZone:interface'
+package: '@fluentui/react-focus!'
+fullName: IFocusZone
+summary: FocusZone component class interface.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: focus(forceIntoFirstElement)
+    uid: '@fluentui/react-focus!IFocusZone#focus:member(1)'
     package: '@fluentui/react-focus!'
-    children:
-      - '@fluentui/react-focus!IFocusZone#focus:member(1)'
-      - '@fluentui/react-focus!IFocusZone#focusElement:member(1)'
-      - '@fluentui/react-focus!IFocusZone#focusLast:member(1)'
-      - '@fluentui/react-focus!IFocusZone#setFocusAlignment:member(1)'
-  - uid: '@fluentui/react-focus!IFocusZone#focus:member(1)'
-    summary: Sets focus to the first tabbable item in the zone.
-    name: focus(forceIntoFirstElement)
     fullName: focus(forceIntoFirstElement)
-    langs:
-      - typeScript
-    type: method
+    summary: Sets focus to the first tabbable item in the zone.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'focus(forceIntoFirstElement?: boolean): boolean;'
-      return:
-        type:
-          - boolean
-        description: 'True if focus could be set to an active element, false if no operation was taken.'
       parameters:
         - id: forceIntoFirstElement
-          description: 'If true, focus will be forced into the first element, even if focus is already in the focus zone.'
-          type:
-            - boolean
-  - uid: '@fluentui/react-focus!IFocusZone#focusElement:member(1)'
-    summary: >-
-      Sets focus to a specific child element within the zone. This can be used in conjunction with shouldReceiveFocus to
-      create delayed focus scenarios (like animate the scroll position to the correct location and then focus.)
-    name: 'focusElement(childElement, forceAlignment)'
-    fullName: 'focusElement(childElement, forceAlignment)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'focusElement(childElement?: HTMLElement, forceAlignment?: boolean): boolean;'
+          description: >-
+            If true, focus will be forced into the first element, even if focus
+            is already in the focus zone.
+          type: boolean
       return:
-        type:
-          - boolean
-        description: 'True if focus could be set to an active element, false if no operation was taken.'
+        type: boolean
+        description: >-
+          True if focus could be set to an active element, false if no operation
+          was taken.
+  - name: 'focusElement(childElement, forceAlignment)'
+    uid: '@fluentui/react-focus!IFocusZone#focusElement:member(1)'
+    package: '@fluentui/react-focus!'
+    fullName: 'focusElement(childElement, forceAlignment)'
+    summary: >-
+      Sets focus to a specific child element within the zone. This can be used
+      in conjunction with shouldReceiveFocus to create delayed focus scenarios
+      (like animate the scroll position to the correct location and then focus.)
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        focusElement(childElement?: HTMLElement, forceAlignment?: boolean):
+        boolean;
       parameters:
         - id: childElement
           description: The child element within the zone to focus.
-          type:
-            - HTMLElement
+          type: HTMLElement
         - id: forceAlignment
-          description: 'If true, focus alignment will be set according to the element provided.'
-          type:
-            - boolean
-  - uid: '@fluentui/react-focus!IFocusZone#focusLast:member(1)'
-    summary: Sets focus to the last tabbable item in the zone.
-    name: focusLast()
+          description: >-
+            If true, focus alignment will be set according to the element
+            provided.
+          type: boolean
+      return:
+        type: boolean
+        description: >-
+          True if focus could be set to an active element, false if no operation
+          was taken.
+  - name: focusLast()
+    uid: '@fluentui/react-focus!IFocusZone#focusLast:member(1)'
+    package: '@fluentui/react-focus!'
     fullName: focusLast()
-    langs:
-      - typeScript
-    type: method
+    summary: Sets focus to the last tabbable item in the zone.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'focusLast(): boolean;'
       return:
-        type:
-          - boolean
-        description: 'True if focus could be set to an active element, false if no operation was taken.'
-  - uid: '@fluentui/react-focus!IFocusZone#setFocusAlignment:member(1)'
-    summary: >-
-      Forces horizontal alignment in the context of vertical arrowing to use specific point as the reference, rather
-      than a center based on the last horizontal motion.
-    name: setFocusAlignment(point)
+        type: boolean
+        description: >-
+          True if focus could be set to an active element, false if no operation
+          was taken.
+  - name: setFocusAlignment(point)
+    uid: '@fluentui/react-focus!IFocusZone#setFocusAlignment:member(1)'
+    package: '@fluentui/react-focus!'
     fullName: setFocusAlignment(point)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Forces horizontal alignment in the context of vertical arrowing to use
+      specific point as the reference, rather than a center based on the last
+      horizontal motion.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'setFocusAlignment(point: Point): void;'
-      return:
-        type:
-          - void
-        description: ''
       parameters:
         - id: point
           description: the new reference point.
-          type:
-            - '@fluentui/utilities!Point:interface'
+          type: '<xref uid="@fluentui/utilities!Point:interface" />'
+      return:
+        type: void
+        description: ''

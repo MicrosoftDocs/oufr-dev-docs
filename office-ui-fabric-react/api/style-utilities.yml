@@ -1,520 +1,471 @@
-### YamlMime:UniversalReference
-items:
-  - uid: '@fluentui/style-utilities!'
-    name: '@fluentui/style-utilities'
-    fullName: '@fluentui/style-utilities'
-    langs:
-      - typeScript
-    type: package
-    children:
-      - '@fluentui/style-utilities!buildClassMap:function(1)'
-      - '@fluentui/style-utilities!focusClear:function(1)'
-      - '@fluentui/style-utilities!getEdgeChromiumNoHighContrastAdjustSelector:function(1)'
-      - '@fluentui/style-utilities!getFadedOverflowStyle:function(1)'
-      - '@fluentui/style-utilities!getFocusOutlineStyle:function(1)'
-      - '@fluentui/style-utilities!getFocusStyle:function(1)'
-      - '@fluentui/style-utilities!getFocusStyle:function(2)'
-      - '@fluentui/style-utilities!getGlobalClassNames:function(1)'
-      - '@fluentui/style-utilities!getIcon:function(1)'
-      - '@fluentui/style-utilities!getIconClassName:function(1)'
-      - '@fluentui/style-utilities!getPlaceholderStyles:function(1)'
-      - '@fluentui/style-utilities!getScreenSelector:function(1)'
-      - '@fluentui/style-utilities!getTheme:function(1)'
-      - '@fluentui/style-utilities!IGetFocusStylesOptions:interface'
-      - '@fluentui/style-utilities!IIconOptions:interface'
-      - '@fluentui/style-utilities!IIconRecord:interface'
-      - '@fluentui/style-utilities!IIconSubset:interface'
-      - '@fluentui/style-utilities!IIconSubsetRecord:interface'
-      - '@fluentui/style-utilities!loadTheme:function(1)'
-      - '@fluentui/style-utilities!registerIconAlias:function(1)'
-      - '@fluentui/style-utilities!registerIcons:function(1)'
-      - '@fluentui/style-utilities!registerOnThemeChangeCallback:function(1)'
-      - '@fluentui/style-utilities!removeOnThemeChangeCallback:function(1)'
-      - '@fluentui/style-utilities!setIconOptions:function(1)'
-      - '@fluentui/style-utilities!unregisterIcons:function(1)'
-  - uid: '@fluentui/style-utilities!buildClassMap:function(1)'
+### YamlMime:TSPackage
+uid: '@fluentui/style-utilities!'
+name: '@fluentui/style-utilities'
+type: package
+summary: ''
+interfaces:
+  - '@fluentui/style-utilities!IGetFocusStylesOptions:interface'
+  - '@fluentui/style-utilities!IIconOptions:interface'
+  - '@fluentui/style-utilities!IIconRecord:interface'
+  - '@fluentui/style-utilities!IIconSubset:interface'
+  - '@fluentui/style-utilities!IIconSubsetRecord:interface'
+functions:
+  - name: buildClassMap(styles)
+    uid: '@fluentui/style-utilities!buildClassMap:function(1)'
+    package: '@fluentui/style-utilities!'
     summary: Builds a class names object from a given map.
-    name: buildClassMap(styles)
-    fullName: buildClassMap(styles)
-    langs:
-      - typeScript
-    type: function
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: |-
         export declare function buildClassMap<T extends Object>(styles: T): {
             [key in keyof T]?: string;
         };
-      return:
-        type:
-          - |-
-            {
-                [key in keyof T]?: string;
-            }
-        description: Map of property name to class name.
       parameters:
         - id: styles
           description: Map of unprocessed styles.
-          type:
-            - T
-      typeParameters:
-        - id: T
-          type:
-            - Object
-  - uid: '@fluentui/style-utilities!focusClear:function(1)'
+          type: T
+      return:
+        type: |-
+          {
+              [key in keyof T]?: string;
+          }
+        description: Map of property name to class name.
+  - name: focusClear()
+    uid: '@fluentui/style-utilities!focusClear:function(1)'
+    package: '@fluentui/style-utilities!'
     summary: Generates style to clear browser specific focus styles.
-    name: focusClear()
-    fullName: focusClear()
-    langs:
-      - typeScript
-    type: function
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'export declare function focusClear(): IRawStyle;'
       return:
-        type:
-          - '@fluentui/merge-styles!IRawStyle:interface'
+        type: '<xref uid="@fluentui/merge-styles!IRawStyle:interface" />'
         description: ''
-  - uid: '@fluentui/style-utilities!getEdgeChromiumNoHighContrastAdjustSelector:function(1)'
-    summary: The style which turns off high contrast adjustment in (only) Edge Chromium browser.
-    name: getEdgeChromiumNoHighContrastAdjustSelector()
-    fullName: getEdgeChromiumNoHighContrastAdjustSelector()
-    langs:
-      - typeScript
-    type: function
+  - name: getEdgeChromiumNoHighContrastAdjustSelector()
+    uid: >-
+      @fluentui/style-utilities!getEdgeChromiumNoHighContrastAdjustSelector:function(1)
+    package: '@fluentui/style-utilities!'
+    summary: >-
+      The style which turns off high contrast adjustment in (only) Edge Chromium
+      browser.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: |-
         export declare function getEdgeChromiumNoHighContrastAdjustSelector(): {
             [EdgeChromiumHighContrastSelector]: IRawStyle;
         };
       return:
-        type:
-          - |-
-            {
-                [EdgeChromiumHighContrastSelector]: IRawStyle;
-            }
+        type: |-
+          {
+              [EdgeChromiumHighContrastSelector]: IRawStyle;
+          }
         description: ''
-  - uid: '@fluentui/style-utilities!getFadedOverflowStyle:function(1)'
+  - name: 'getFadedOverflowStyle(theme, color, direction, width, height)'
+    uid: '@fluentui/style-utilities!getFadedOverflowStyle:function(1)'
+    package: '@fluentui/style-utilities!'
     summary: >-
-      - Generates a style used to fade out an overflowing content by defining a style for an :after pseudo element. -
-      Apply it to the :after selector for all combination of states the parent of content might have (normal, hover,
-      selected, focus). - Requires the target to have position set to relative and overflow set to hidden.
-    name: 'getFadedOverflowStyle(theme, color, direction, width, height)'
-    fullName: 'getFadedOverflowStyle(theme, color, direction, width, height)'
-    langs:
-      - typeScript
-    type: function
+      - Generates a style used to fade out an overflowing content by defining a
+      style for an :after pseudo element. - Apply it to the :after selector for
+      all combination of states the parent of content might have (normal, hover,
+      selected, focus). - Requires the target to have position set to relative
+      and overflow set to hidden.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        export declare function getFadedOverflowStyle(theme: ITheme, color?: keyof ISemanticColors | keyof IPalette,
-        direction?: 'horizontal' | 'vertical', width?: string | number, height?: string | number): IRawStyle;
-      return:
-        type:
-          - '@fluentui/merge-styles!IRawStyle:interface'
-        description: The style object.
+        export declare function getFadedOverflowStyle(theme: ITheme, color?:
+        keyof ISemanticColors | keyof IPalette, direction?: 'horizontal' |
+        'vertical', width?: string | number, height?: string | number):
+        IRawStyle;
       parameters:
         - id: theme
           description: The theme object to use.
-          type:
-            - '@fluentui/theme!ITheme:interface'
+          type: '<xref uid="@fluentui/theme!ITheme:interface" />'
         - id: color
           description: >-
-            The background color to fade out to. Accepts only keys of ISemanticColors or IPalette. Defaults to
-            'bodyBackground'.
-          type:
-            - keyof ISemanticColors | keyof IPalette
+            The background color to fade out to. Accepts only keys of
+            ISemanticColors or IPalette. Defaults to 'bodyBackground'.
+          type: keyof ISemanticColors | keyof IPalette
         - id: direction
           description: The direction of the overflow. Defaults to horizontal.
-          type:
-            - '''horizontal'' | ''vertical'''
+          type: '''horizontal'' | ''vertical'''
         - id: width
-          description: The width of the fading overflow. Vertical direction defaults it to 100% vs 20px when horizontal.
-          type:
-            - string | number
+          description: >-
+            The width of the fading overflow. Vertical direction defaults it to
+            100% vs 20px when horizontal.
+          type: string | number
         - id: height
-          description: The Height of the fading overflow. Vertical direction defaults it to 50% vs 100% when horizontal.
-          type:
-            - string | number
-  - uid: '@fluentui/style-utilities!getFocusOutlineStyle:function(1)'
+          description: >-
+            The Height of the fading overflow. Vertical direction defaults it to
+            50% vs 100% when horizontal.
+          type: string | number
+      return:
+        type: '<xref uid="@fluentui/merge-styles!IRawStyle:interface" />'
+        description: The style object.
+  - name: 'getFocusOutlineStyle(theme, inset, width, color)'
+    uid: '@fluentui/style-utilities!getFocusOutlineStyle:function(1)'
+    package: '@fluentui/style-utilities!'
     summary: Generates a style which can be used to set a border on focus.
-    name: 'getFocusOutlineStyle(theme, inset, width, color)'
-    fullName: 'getFocusOutlineStyle(theme, inset, width, color)'
-    langs:
-      - typeScript
-    type: function
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        export declare function getFocusOutlineStyle(theme: ITheme, inset?: number, width?: number, color?: string):
-        IRawStyle;
-      return:
-        type:
-          - '@fluentui/merge-styles!IRawStyle:interface'
-        description: The style object.
+        export declare function getFocusOutlineStyle(theme: ITheme, inset?:
+        number, width?: number, color?: string): IRawStyle;
       parameters:
         - id: theme
           description: The theme object to use.
-          type:
-            - '@fluentui/theme!ITheme:interface'
+          type: '<xref uid="@fluentui/theme!ITheme:interface" />'
         - id: inset
           description: The number of pixels to inset the border (default 0)
-          type:
-            - number
+          type: number
         - id: width
           description: The border width in pixels (default 1)
-          type:
-            - number
+          type: number
         - id: color
-          description: Color of the outline (default `theme.palette.neutralSecondary`<!-- -->)
-          type:
-            - string
-  - uid: '@fluentui/style-utilities!getFocusStyle:function(1)'
-    summary: 'Generates a focus style which can be used to define an :after focus border.'
-    name: 'getFocusStyle(theme, options)'
-    fullName: 'getFocusStyle(theme, options)'
-    langs:
-      - typeScript
-    type: function
-    syntax:
-      content: 'export declare function getFocusStyle(theme: ITheme, options?: IGetFocusStylesOptions): IRawStyle;'
+          description: >-
+            Color of the outline (default `theme.palette.neutralSecondary`<!--
+            -->)
+          type: string
       return:
-        type:
-          - '@fluentui/merge-styles!IRawStyle:interface'
+        type: '<xref uid="@fluentui/merge-styles!IRawStyle:interface" />'
         description: The style object.
+  - name: 'getFocusStyle(theme, options)'
+    uid: '@fluentui/style-utilities!getFocusStyle:function(1)'
+    package: '@fluentui/style-utilities!'
+    summary: >-
+      Generates a focus style which can be used to define an :after focus
+      border.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        export declare function getFocusStyle(theme: ITheme, options?:
+        IGetFocusStylesOptions): IRawStyle;
       parameters:
         - id: theme
           description: The theme object to use.
-          type:
-            - '@fluentui/theme!ITheme:interface'
+          type: '<xref uid="@fluentui/theme!ITheme:interface" />'
         - id: options
           description: Options to customize the focus border.
-          type:
-            - IGetFocusStylesOptions
-  - uid: '@fluentui/style-utilities!getFocusStyle:function(2)'
-    summary: 'Generates a focus style which can be used to define an :after focus border.'
-    deprecated:
-      content: Use the object parameter version instead.
-    name: 'getFocusStyle(theme, inset, position, highContrastStyle, borderColor, outlineColor, isFocusedOnly)'
-    fullName: 'getFocusStyle(theme, inset, position, highContrastStyle, borderColor, outlineColor, isFocusedOnly)'
-    langs:
-      - typeScript
-    type: function
+          type: IGetFocusStylesOptions
+      return:
+        type: '<xref uid="@fluentui/merge-styles!IRawStyle:interface" />'
+        description: The style object.
+  - name: >-
+      getFocusStyle(theme, inset, position, highContrastStyle, borderColor,
+      outlineColor, isFocusedOnly)
+    uid: '@fluentui/style-utilities!getFocusStyle:function(2)'
+    package: '@fluentui/style-utilities!'
+    summary: >-
+      Generates a focus style which can be used to define an :after focus
+      border.
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Use the object parameter version instead.
     syntax:
       content: >-
-        export declare function getFocusStyle(theme: ITheme, inset?: number, position?: 'relative' | 'absolute',
-        highContrastStyle?: IRawStyle | undefined, borderColor?: string, outlineColor?: string, isFocusedOnly?:
+        export declare function getFocusStyle(theme: ITheme, inset?: number,
+        position?: 'relative' | 'absolute', highContrastStyle?: IRawStyle |
+        undefined, borderColor?: string, outlineColor?: string, isFocusedOnly?:
         boolean): IRawStyle;
-      return:
-        type:
-          - '@fluentui/merge-styles!IRawStyle:interface'
-        description: The style object.
       parameters:
         - id: theme
           description: The theme object to use.
-          type:
-            - '@fluentui/theme!ITheme:interface'
+          type: '<xref uid="@fluentui/theme!ITheme:interface" />'
         - id: inset
           description: The number of pixels to inset the border.
-          type:
-            - number
+          type: number
         - id: position
           description: >-
-            The positioning applied to the container. Must be 'relative' or 'absolute' so that the focus border can live
-            around it.
-          type:
-            - '''relative'' | ''absolute'''
+            The positioning applied to the container. Must be 'relative' or
+            'absolute' so that the focus border can live around it.
+          type: '''relative'' | ''absolute'''
         - id: highContrastStyle
           description: Style for high contrast mode.
-          type:
-            - IRawStyle | undefined
+          type: IRawStyle | undefined
         - id: borderColor
           description: Color of the border.
-          type:
-            - string
+          type: string
         - id: outlineColor
           description: Color of the outline.
-          type:
-            - string
+          type: string
         - id: isFocusedOnly
           description: If the styles should apply on focus or not.
-          type:
-            - boolean
-  - uid: '@fluentui/style-utilities!getGlobalClassNames:function(1)'
+          type: boolean
+      return:
+        type: '<xref uid="@fluentui/merge-styles!IRawStyle:interface" />'
+        description: The style object.
+  - name: 'getGlobalClassNames(classNames, theme, disableGlobalClassNames)'
+    uid: '@fluentui/style-utilities!getGlobalClassNames:function(1)'
+    package: '@fluentui/style-utilities!'
     summary: >-
-      Checks for the `disableGlobalClassNames` property on the `theme` to determine if it should return `classNames`
-      Note that calls to this function are memoized.
-    name: 'getGlobalClassNames(classNames, theme, disableGlobalClassNames)'
-    fullName: 'getGlobalClassNames(classNames, theme, disableGlobalClassNames)'
-    langs:
-      - typeScript
-    type: function
+      Checks for the `disableGlobalClassNames` property on the `theme` to
+      determine if it should return `classNames` Note that calls to this
+      function are memoized.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        export declare function getGlobalClassNames<T>(classNames: GlobalClassNames<T>, theme: ITheme,
-        disableGlobalClassNames?: boolean): GlobalClassNames<T>;
-      return:
-        type:
-          - GlobalClassNames<T>
-        description: ''
+        export declare function getGlobalClassNames<T>(classNames:
+        GlobalClassNames<T>, theme: ITheme, disableGlobalClassNames?: boolean):
+        GlobalClassNames<T>;
       parameters:
         - id: classNames
           description: >-
-            The collection of global class names that apply when the flag is false. Make sure to pass in the same
-            instance on each call to benefit from memoization.
-          type:
-            - GlobalClassNames<T>
+            The collection of global class names that apply when the flag is
+            false. Make sure to pass in the same instance on each call to
+            benefit from memoization.
+          type: GlobalClassNames&lt;T&gt;
         - id: theme
           description: The theme to check the flag on
-          type:
-            - '@fluentui/theme!ITheme:interface'
+          type: '<xref uid="@fluentui/theme!ITheme:interface" />'
         - id: disableGlobalClassNames
-          description: Optional. Explicitly opt in/out of disabling global classnames. Defaults to false.
-          type:
-            - boolean
-      typeParameters:
-        - id: T
-  - uid: '@fluentui/style-utilities!getIcon:function(1)'
+          description: >-
+            Optional. Explicitly opt in/out of disabling global classnames.
+            Defaults to false.
+          type: boolean
+      return:
+        type: GlobalClassNames&lt;T&gt;
+        description: ''
+  - name: getIcon(name)
+    uid: '@fluentui/style-utilities!getIcon:function(1)'
+    package: '@fluentui/style-utilities!'
     summary: >-
-      Gets an icon definition. If an icon is requested but the subset has yet to be registered, it will get registered
-      immediately.
-    name: getIcon(name)
-    fullName: getIcon(name)
-    langs:
-      - typeScript
-    type: function
+      Gets an icon definition. If an icon is requested but the subset has yet to
+      be registered, it will get registered immediately.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'export declare function getIcon(name?: string): IIconRecord | undefined;'
-      return:
-        type:
-          - IIconRecord | undefined
-        description: ''
       parameters:
         - id: name
           description: Name of icon.
-          type:
-            - string
-  - uid: '@fluentui/style-utilities!getIconClassName:function(1)'
+          type: string
+      return:
+        type: IIconRecord | undefined
+        description: ''
+  - name: getIconClassName(name)
+    uid: '@fluentui/style-utilities!getIconClassName:function(1)'
+    package: '@fluentui/style-utilities!'
     summary: >-
-      Gets an icon classname. You should be able to add this classname to an I tag with no additional classnames, and
-      render the icon.
-    name: getIconClassName(name)
-    fullName: getIconClassName(name)
-    langs:
-      - typeScript
-    type: function
+      Gets an icon classname. You should be able to add this classname to an I
+      tag with no additional classnames, and render the icon.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'export declare function getIconClassName(name: string): string;'
-      return:
-        type:
-          - string
-        description: ''
       parameters:
         - id: name
           description: ''
-          type:
-            - string
-  - uid: '@fluentui/style-utilities!getPlaceholderStyles:function(1)'
-    summary: Generates placeholder style for each of the browsers supported by `@fluentui/react`<!-- -->.
-    name: getPlaceholderStyles(styles)
-    fullName: getPlaceholderStyles(styles)
-    langs:
-      - typeScript
-    type: function
+          type: string
+      return:
+        type: string
+        description: ''
+  - name: getPlaceholderStyles(styles)
+    uid: '@fluentui/style-utilities!getPlaceholderStyles:function(1)'
+    package: '@fluentui/style-utilities!'
+    summary: >-
+      Generates placeholder style for each of the browsers supported by
+      `@fluentui/react`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'export declare function getPlaceholderStyles(styles: IStyle): IStyle;'
-      return:
-        type:
-          - IStyle
-        description: The placeholder style object for each browser depending on the placeholder directive it uses.
       parameters:
         - id: styles
           description: The style to use.
-          type:
-            - IStyle
-  - uid: '@fluentui/style-utilities!getScreenSelector:function(1)'
-    name: 'getScreenSelector(min, max)'
-    fullName: 'getScreenSelector(min, max)'
-    langs:
-      - typeScript
-    type: function
-    syntax:
-      content: 'export declare function getScreenSelector(min: number, max: number): string;'
+          type: IStyle
       return:
-        type:
-          - string
-        description: ''
+        type: IStyle
+        description: >-
+          The placeholder style object for each browser depending on the
+          placeholder directive it uses.
+  - name: 'getScreenSelector(min, max)'
+    uid: '@fluentui/style-utilities!getScreenSelector:function(1)'
+    package: '@fluentui/style-utilities!'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        export declare function getScreenSelector(min: number, max: number):
+        string;
       parameters:
         - id: min
           description: ''
-          type:
-            - number
+          type: number
         - id: max
           description: ''
-          type:
-            - number
-  - uid: '@fluentui/style-utilities!getTheme:function(1)'
+          type: number
+      return:
+        type: string
+        description: ''
+  - name: getTheme(depComments)
+    uid: '@fluentui/style-utilities!getTheme:function(1)'
+    package: '@fluentui/style-utilities!'
     summary: Gets the theme object
-    name: getTheme(depComments)
-    fullName: getTheme(depComments)
-    langs:
-      - typeScript
-    type: function
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'export declare function getTheme(depComments?: boolean): ITheme;'
-      return:
-        type:
-          - '@fluentui/theme!ITheme:interface'
-        description: ''
       parameters:
         - id: depComments
           description: Whether to include deprecated tags as comments for deprecated slots.
-          type:
-            - boolean
-  - uid: '@fluentui/style-utilities!loadTheme:function(1)'
-    summary: 'Applies the theme, while filling in missing slots.'
-    name: 'loadTheme(theme, depComments)'
-    fullName: 'loadTheme(theme, depComments)'
-    langs:
-      - typeScript
-    type: function
-    syntax:
-      content: 'export declare function loadTheme(theme: IPartialTheme, depComments?: boolean): ITheme;'
+          type: boolean
       return:
-        type:
-          - '@fluentui/theme!ITheme:interface'
+        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
         description: ''
+  - name: 'loadTheme(theme, depComments)'
+    uid: '@fluentui/style-utilities!loadTheme:function(1)'
+    package: '@fluentui/style-utilities!'
+    summary: 'Applies the theme, while filling in missing slots.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        export declare function loadTheme(theme: IPartialTheme, depComments?:
+        boolean): ITheme;
       parameters:
         - id: theme
           description: Partial theme object.
-          type:
-            - '@fluentui/theme!IPartialTheme:interface'
+          type: '<xref uid="@fluentui/theme!IPartialTheme:interface" />'
         - id: depComments
           description: Whether to include deprecated tags as comments for deprecated slots.
-          type:
-            - boolean
-  - uid: '@fluentui/style-utilities!registerIconAlias:function(1)'
-    summary: Remaps one icon name to another.
-    name: 'registerIconAlias(iconName, mappedToName)'
-    fullName: 'registerIconAlias(iconName, mappedToName)'
-    langs:
-      - typeScript
-    type: function
-    syntax:
-      content: 'export declare function registerIconAlias(iconName: string, mappedToName: string): void;'
+          type: boolean
       return:
-        type:
-          - void
+        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
         description: ''
+  - name: 'registerIconAlias(iconName, mappedToName)'
+    uid: '@fluentui/style-utilities!registerIconAlias:function(1)'
+    package: '@fluentui/style-utilities!'
+    summary: Remaps one icon name to another.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        export declare function registerIconAlias(iconName: string,
+        mappedToName: string): void;
       parameters:
         - id: iconName
           description: ''
-          type:
-            - string
+          type: string
         - id: mappedToName
           description: ''
-          type:
-            - string
-  - uid: '@fluentui/style-utilities!registerIcons:function(1)'
-    summary: Registers a given subset of icons.
-    name: 'registerIcons(iconSubset, options)'
-    fullName: 'registerIcons(iconSubset, options)'
-    langs:
-      - typeScript
-    type: function
-    syntax:
-      content: 'export declare function registerIcons(iconSubset: IIconSubset, options?: Partial<IIconOptions>): void;'
+          type: string
       return:
-        type:
-          - void
+        type: void
         description: ''
+  - name: 'registerIcons(iconSubset, options)'
+    uid: '@fluentui/style-utilities!registerIcons:function(1)'
+    package: '@fluentui/style-utilities!'
+    summary: Registers a given subset of icons.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        export declare function registerIcons(iconSubset: IIconSubset, options?:
+        Partial<IIconOptions>): void;
       parameters:
         - id: iconSubset
           description: the icon subset definition.
-          type:
-            - IIconSubset
+          type: IIconSubset
         - id: options
           description: ''
-          type:
-            - Partial<IIconOptions>
-  - uid: '@fluentui/style-utilities!registerOnThemeChangeCallback:function(1)'
+          type: Partial&lt;IIconOptions&gt;
+      return:
+        type: void
+        description: ''
+  - name: registerOnThemeChangeCallback(callback)
+    uid: '@fluentui/style-utilities!registerOnThemeChangeCallback:function(1)'
+    package: '@fluentui/style-utilities!'
     summary: >-
-      Registers a callback that gets called whenever the theme changes. This should only be used when the component
-      cannot automatically get theme changes through its state. This will not register duplicate callbacks.
-    name: registerOnThemeChangeCallback(callback)
-    fullName: registerOnThemeChangeCallback(callback)
-    langs:
-      - typeScript
-    type: function
+      Registers a callback that gets called whenever the theme changes. This
+      should only be used when the component cannot automatically get theme
+      changes through its state. This will not register duplicate callbacks.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'export declare function registerOnThemeChangeCallback(callback: (theme: ITheme) => void): void;'
-      return:
-        type:
-          - void
-        description: ''
+      content: >-
+        export declare function registerOnThemeChangeCallback(callback: (theme:
+        ITheme) => void): void;
       parameters:
         - id: callback
           description: ''
-          type:
-            - '(theme: ITheme) => void'
-  - uid: '@fluentui/style-utilities!removeOnThemeChangeCallback:function(1)'
-    summary: See registerOnThemeChangeCallback(). Removes previously registered callbacks.
-    name: removeOnThemeChangeCallback(callback)
-    fullName: removeOnThemeChangeCallback(callback)
-    langs:
-      - typeScript
-    type: function
-    syntax:
-      content: 'export declare function removeOnThemeChangeCallback(callback: (theme: ITheme) => void): void;'
+          type: '(theme: ITheme) =&gt; void'
       return:
-        type:
-          - void
+        type: void
         description: ''
+  - name: removeOnThemeChangeCallback(callback)
+    uid: '@fluentui/style-utilities!removeOnThemeChangeCallback:function(1)'
+    package: '@fluentui/style-utilities!'
+    summary: >-
+      See registerOnThemeChangeCallback(). Removes previously registered
+      callbacks.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        export declare function removeOnThemeChangeCallback(callback: (theme:
+        ITheme) => void): void;
       parameters:
         - id: callback
           description: ''
-          type:
-            - '(theme: ITheme) => void'
-  - uid: '@fluentui/style-utilities!setIconOptions:function(1)'
+          type: '(theme: ITheme) =&gt; void'
+      return:
+        type: void
+        description: ''
+  - name: setIconOptions(options)
+    uid: '@fluentui/style-utilities!setIconOptions:function(1)'
+    package: '@fluentui/style-utilities!'
     summary: Sets the icon options.
-    name: setIconOptions(options)
-    fullName: setIconOptions(options)
-    langs:
-      - typeScript
-    type: function
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'export declare function setIconOptions(options: Partial<IIconOptions>): void;'
-      return:
-        type:
-          - void
-        description: ''
+      content: >-
+        export declare function setIconOptions(options: Partial<IIconOptions>):
+        void;
       parameters:
         - id: options
           description: ''
-          type:
-            - Partial<IIconOptions>
-  - uid: '@fluentui/style-utilities!unregisterIcons:function(1)'
+          type: Partial&lt;IIconOptions&gt;
+      return:
+        type: void
+        description: ''
+  - name: unregisterIcons(iconNames)
+    uid: '@fluentui/style-utilities!unregisterIcons:function(1)'
+    package: '@fluentui/style-utilities!'
     summary: Unregisters icons by name.
-    name: unregisterIcons(iconNames)
-    fullName: unregisterIcons(iconNames)
-    langs:
-      - typeScript
-    type: function
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'export declare function unregisterIcons(iconNames: string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
       parameters:
         - id: iconNames
           description: List of icons to unregister.
-          type:
-            - 'string[]'
-references:
-  - uid: '@fluentui/style-utilities!IGetFocusStylesOptions:interface'
-    name: IGetFocusStylesOptions
-  - uid: '@fluentui/style-utilities!IIconOptions:interface'
-    name: IIconOptions
-  - uid: '@fluentui/style-utilities!IIconRecord:interface'
-    name: IIconRecord
-  - uid: '@fluentui/style-utilities!IIconSubset:interface'
-    name: IIconSubset
-  - uid: '@fluentui/style-utilities!IIconSubsetRecord:interface'
-    name: IIconSubsetRecord
+          type: 'string[]'
+      return:
+        type: void
+        description: ''

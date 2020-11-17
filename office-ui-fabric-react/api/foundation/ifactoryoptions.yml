@@ -1,27 +1,23 @@
-### YamlMime:UniversalReference
-items:
-  - uid: '@uifabric/foundation!IFactoryOptions:interface'
-    summary: Factory options for creating component.
-    name: IFactoryOptions
-    fullName: IFactoryOptions
-    langs:
-      - typeScript
-    type: interface
-    syntax:
-      typeParameters:
-        - id: TProps
+### YamlMime:TSType
+name: IFactoryOptions
+uid: '@uifabric/foundation!IFactoryOptions:interface'
+package: '@uifabric/foundation!'
+fullName: IFactoryOptions
+summary: Factory options for creating component.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: defaultProp
+    uid: '@uifabric/foundation!IFactoryOptions#defaultProp:member'
     package: '@uifabric/foundation!'
-    children:
-      - '@uifabric/foundation!IFactoryOptions#defaultProp:member'
-  - uid: '@uifabric/foundation!IFactoryOptions#defaultProp:member'
-    summary: Default prop for which to map primitive values.
-    name: defaultProp
     fullName: defaultProp
-    langs:
-      - typeScript
-    type: property
+    summary: Default prop for which to map primitive values.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'defaultProp?: keyof TProps | ''children'';'
       return:
-        type:
-          - keyof TProps | 'children'
+        type: keyof TProps | 'children'

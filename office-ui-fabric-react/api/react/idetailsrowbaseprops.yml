@@ -1,174 +1,150 @@
-### YamlMime:UniversalReference
-items:
-  - uid: '@fluentui/react!IDetailsRowBaseProps:interface'
-    name: IDetailsRowBaseProps
-    fullName: IDetailsRowBaseProps
-    langs:
-      - typeScript
-    type: interface
-    extends:
-      - 'Pick<IDetailsListProps, ''onRenderItemColumn'' | ''getCellValueKey''>'
-      - IBaseProps<IDetailsRow>
-      - 'IDetailsItemProps '
+### YamlMime:TSType
+name: IDetailsRowBaseProps
+uid: '@fluentui/react!IDetailsRowBaseProps:interface'
+package: '@fluentui/react!'
+fullName: IDetailsRowBaseProps
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: cellsByColumn
+    uid: '@fluentui/react!IDetailsRowBaseProps#cellsByColumn:member'
     package: '@fluentui/react!'
-    children:
-      - '@fluentui/react!IDetailsRowBaseProps#cellsByColumn:member'
-      - '@fluentui/react!IDetailsRowBaseProps#checkboxCellClassName:member'
-      - '@fluentui/react!IDetailsRowBaseProps#checkButtonAriaLabel:member'
-      - '@fluentui/react!IDetailsRowBaseProps#className:member'
-      - '@fluentui/react!IDetailsRowBaseProps#collapseAllVisibility:member'
-      - '@fluentui/react!IDetailsRowBaseProps#compact:member'
-      - '@fluentui/react!IDetailsRowBaseProps#componentRef:member'
-      - '@fluentui/react!IDetailsRowBaseProps#dragDropEvents:member'
-      - '@fluentui/react!IDetailsRowBaseProps#dragDropHelper:member'
-      - '@fluentui/react!IDetailsRowBaseProps#enableUpdateAnimations:member'
-      - '@fluentui/react!IDetailsRowBaseProps#eventsToRegister:member'
-      - '@fluentui/react!IDetailsRowBaseProps#getRowAriaDescribedBy:member'
-      - '@fluentui/react!IDetailsRowBaseProps#getRowAriaLabel:member'
-      - '@fluentui/react!IDetailsRowBaseProps#item:member'
-      - '@fluentui/react!IDetailsRowBaseProps#itemIndex:member'
-      - '@fluentui/react!IDetailsRowBaseProps#onDidMount:member'
-      - '@fluentui/react!IDetailsRowBaseProps#onRenderCheck:member'
-      - '@fluentui/react!IDetailsRowBaseProps#onRenderDetailsCheckbox:member'
-      - '@fluentui/react!IDetailsRowBaseProps#onWillUnmount:member'
-      - '@fluentui/react!IDetailsRowBaseProps#rowFieldsAs:member'
-      - '@fluentui/react!IDetailsRowBaseProps#styles:member'
-      - '@fluentui/react!IDetailsRowBaseProps#theme:member'
-      - '@fluentui/react!IDetailsRowBaseProps#useFastIcons:member'
-      - '@fluentui/react!IDetailsRowBaseProps#useReducedRowRenderer:member'
-  - uid: '@fluentui/react!IDetailsRowBaseProps#cellsByColumn:member'
-    summary: Optional pre-rendered content per column. Preferred over onRender or onRenderItemColumn if provided.
-    name: cellsByColumn
     fullName: cellsByColumn
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Optional pre-rendered content per column. Preferred over onRender or
+      onRenderItemColumn if provided.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: |-
         cellsByColumn?: {
                 [columnKey: string]: React.ReactNode;
             };
       return:
-        type:
-          - |-
-            {
-                    [columnKey: string]: React.ReactNode;
-                }
-  - uid: '@fluentui/react!IDetailsRowBaseProps#checkboxCellClassName:member'
-    summary: Class name for the checkbox cell
-    name: checkboxCellClassName
+        type: |-
+          {
+                  [columnKey: string]: React.ReactNode;
+              }
+  - name: checkboxCellClassName
+    uid: '@fluentui/react!IDetailsRowBaseProps#checkboxCellClassName:member'
+    package: '@fluentui/react!'
     fullName: checkboxCellClassName
-    langs:
-      - typeScript
-    type: property
+    summary: Class name for the checkbox cell
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'checkboxCellClassName?: string;'
       return:
-        type:
-          - string
-  - uid: '@fluentui/react!IDetailsRowBaseProps#checkButtonAriaLabel:member'
-    summary: Check button's aria label
-    name: checkButtonAriaLabel
+        type: string
+  - name: checkButtonAriaLabel
+    uid: '@fluentui/react!IDetailsRowBaseProps#checkButtonAriaLabel:member'
+    package: '@fluentui/react!'
     fullName: checkButtonAriaLabel
-    langs:
-      - typeScript
-    type: property
+    summary: Check button's aria label
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'checkButtonAriaLabel?: string;'
       return:
-        type:
-          - string
-  - uid: '@fluentui/react!IDetailsRowBaseProps#className:member'
-    summary: Overriding class name
-    name: className
+        type: string
+  - name: className
+    uid: '@fluentui/react!IDetailsRowBaseProps#className:member'
+    package: '@fluentui/react!'
     fullName: className
-    langs:
-      - typeScript
-    type: property
+    summary: Overriding class name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'className?: string;'
       return:
-        type:
-          - string
-  - uid: '@fluentui/react!IDetailsRowBaseProps#collapseAllVisibility:member'
-    summary: Collapse all visibility
-    name: collapseAllVisibility
+        type: string
+  - name: collapseAllVisibility
+    uid: '@fluentui/react!IDetailsRowBaseProps#collapseAllVisibility:member'
+    package: '@fluentui/react!'
     fullName: collapseAllVisibility
-    langs:
-      - typeScript
-    type: property
+    summary: Collapse all visibility
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'collapseAllVisibility?: CollapseAllVisibility;'
       return:
-        type:
-          - CollapseAllVisibility
-  - uid: '@fluentui/react!IDetailsRowBaseProps#compact:member'
-    summary: Whether to render in compact mode
-    name: compact
+        type: CollapseAllVisibility
+  - name: compact
+    uid: '@fluentui/react!IDetailsRowBaseProps#compact:member'
+    package: '@fluentui/react!'
     fullName: compact
-    langs:
-      - typeScript
-    type: property
+    summary: Whether to render in compact mode
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'compact?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: '@fluentui/react!IDetailsRowBaseProps#componentRef:member'
-    summary: Ref of the component
-    name: componentRef
+        type: boolean
+  - name: componentRef
+    uid: '@fluentui/react!IDetailsRowBaseProps#componentRef:member'
+    package: '@fluentui/react!'
     fullName: componentRef
-    langs:
-      - typeScript
-    type: property
+    summary: Ref of the component
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'componentRef?: IRefObject<IDetailsRow>;'
       return:
-        type:
-          - IRefObject<IDetailsRow>
-  - uid: '@fluentui/react!IDetailsRowBaseProps#dragDropEvents:member'
-    summary: Handling drag and drop events
-    name: dragDropEvents
+        type: IRefObject&lt;IDetailsRow&gt;
+  - name: dragDropEvents
+    uid: '@fluentui/react!IDetailsRowBaseProps#dragDropEvents:member'
+    package: '@fluentui/react!'
     fullName: dragDropEvents
-    langs:
-      - typeScript
-    type: property
+    summary: Handling drag and drop events
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'dragDropEvents?: IDragDropEvents;'
       return:
-        type:
-          - IDragDropEvents
-  - uid: '@fluentui/react!IDetailsRowBaseProps#dragDropHelper:member'
-    summary: Helper for the drag and drop
-    name: dragDropHelper
+        type: IDragDropEvents
+  - name: dragDropHelper
+    uid: '@fluentui/react!IDetailsRowBaseProps#dragDropHelper:member'
+    package: '@fluentui/react!'
     fullName: dragDropHelper
-    langs:
-      - typeScript
-    type: property
+    summary: Helper for the drag and drop
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'dragDropHelper?: IDragDropHelper;'
       return:
-        type:
-          - IDragDropHelper
-  - uid: '@fluentui/react!IDetailsRowBaseProps#enableUpdateAnimations:member'
-    summary: Whether to animate updates
-    name: enableUpdateAnimations
+        type: IDragDropHelper
+  - name: enableUpdateAnimations
+    uid: '@fluentui/react!IDetailsRowBaseProps#enableUpdateAnimations:member'
+    package: '@fluentui/react!'
     fullName: enableUpdateAnimations
-    langs:
-      - typeScript
-    type: property
+    summary: Whether to animate updates
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'enableUpdateAnimations?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: '@fluentui/react!IDetailsRowBaseProps#eventsToRegister:member'
-    summary: A list of events to register
-    name: eventsToRegister
+        type: boolean
+  - name: eventsToRegister
+    uid: '@fluentui/react!IDetailsRowBaseProps#eventsToRegister:member'
+    package: '@fluentui/react!'
     fullName: eventsToRegister
-    langs:
-      - typeScript
-    type: property
+    summary: A list of events to register
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: |-
         eventsToRegister?: {
@@ -176,167 +152,171 @@ items:
                 callback: (item?: any, index?: number, event?: any) => void;
             }[];
       return:
-        type:
-          - |-
-            {
-                    eventName: string;
-                    callback: (item?: any, index?: number, event?: any) => void;
-                }[]
-  - uid: '@fluentui/react!IDetailsRowBaseProps#getRowAriaDescribedBy:member'
-    summary: Callback for getting the row aria-describedby
-    name: getRowAriaDescribedBy
+        type: |-
+          {
+                  eventName: string;
+                  callback: (item?: any, index?: number, event?: any) =&gt; void;
+              }[]
+  - name: getRowAriaDescribedBy
+    uid: '@fluentui/react!IDetailsRowBaseProps#getRowAriaDescribedBy:member'
+    package: '@fluentui/react!'
     fullName: getRowAriaDescribedBy
-    langs:
-      - typeScript
-    type: property
+    summary: Callback for getting the row aria-describedby
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'getRowAriaDescribedBy?: (item: any) => string;'
       return:
-        type:
-          - '(item: any) => string'
-  - uid: '@fluentui/react!IDetailsRowBaseProps#getRowAriaLabel:member'
-    summary: Callback for getting the row aria label
-    name: getRowAriaLabel
+        type: '(item: any) =&gt; string'
+  - name: getRowAriaLabel
+    uid: '@fluentui/react!IDetailsRowBaseProps#getRowAriaLabel:member'
+    package: '@fluentui/react!'
     fullName: getRowAriaLabel
-    langs:
-      - typeScript
-    type: property
+    summary: Callback for getting the row aria label
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'getRowAriaLabel?: (item: any) => string;'
       return:
-        type:
-          - '(item: any) => string'
-  - uid: '@fluentui/react!IDetailsRowBaseProps#item:member'
-    summary: Data source for this component
-    name: item
+        type: '(item: any) =&gt; string'
+  - name: item
+    uid: '@fluentui/react!IDetailsRowBaseProps#item:member'
+    package: '@fluentui/react!'
     fullName: item
-    langs:
-      - typeScript
-    type: property
+    summary: Data source for this component
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'item: any;'
       return:
-        type:
-          - any
-  - uid: '@fluentui/react!IDetailsRowBaseProps#itemIndex:member'
-    summary: Index of the collection of items of the DetailsList
-    name: itemIndex
+        type: any
+  - name: itemIndex
+    uid: '@fluentui/react!IDetailsRowBaseProps#itemIndex:member'
+    package: '@fluentui/react!'
     fullName: itemIndex
-    langs:
-      - typeScript
-    type: property
+    summary: Index of the collection of items of the DetailsList
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'itemIndex: number;'
       return:
-        type:
-          - number
-  - uid: '@fluentui/react!IDetailsRowBaseProps#onDidMount:member'
-    summary: Callback for did mount for parent
-    name: onDidMount
+        type: number
+  - name: onDidMount
+    uid: '@fluentui/react!IDetailsRowBaseProps#onDidMount:member'
+    package: '@fluentui/react!'
     fullName: onDidMount
-    langs:
-      - typeScript
-    type: property
+    summary: Callback for did mount for parent
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'onDidMount?: (row?: DetailsRowBase) => void;'
       return:
-        type:
-          - '(row?: DetailsRowBase) => void'
-  - uid: '@fluentui/react!IDetailsRowBaseProps#onRenderCheck:member'
-    summary: Callback for rendering a checkbox
-    name: onRenderCheck
+        type: '(row?: DetailsRowBase) =&gt; void'
+  - name: onRenderCheck
+    uid: '@fluentui/react!IDetailsRowBaseProps#onRenderCheck:member'
+    package: '@fluentui/react!'
     fullName: onRenderCheck
-    langs:
-      - typeScript
-    type: property
+    summary: Callback for rendering a checkbox
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'onRenderCheck?: (props: IDetailsRowCheckProps) => JSX.Element;'
       return:
-        type:
-          - '(props: IDetailsRowCheckProps) => JSX.Element'
-  - uid: '@fluentui/react!IDetailsRowBaseProps#onRenderDetailsCheckbox:member'
-    summary: 'If provided, can be used to render a custom checkbox'
-    name: onRenderDetailsCheckbox
+        type: '(props: IDetailsRowCheckProps) =&gt; JSX.Element'
+  - name: onRenderDetailsCheckbox
+    uid: '@fluentui/react!IDetailsRowBaseProps#onRenderDetailsCheckbox:member'
+    package: '@fluentui/react!'
     fullName: onRenderDetailsCheckbox
-    langs:
-      - typeScript
-    type: property
+    summary: 'If provided, can be used to render a custom checkbox'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'onRenderDetailsCheckbox?: IRenderFunction<IDetailsCheckboxProps>;'
       return:
-        type:
-          - IRenderFunction<IDetailsCheckboxProps>
-  - uid: '@fluentui/react!IDetailsRowBaseProps#onWillUnmount:member'
-    summary: Callback for will mount for parent
-    name: onWillUnmount
+        type: IRenderFunction&lt;IDetailsCheckboxProps&gt;
+  - name: onWillUnmount
+    uid: '@fluentui/react!IDetailsRowBaseProps#onWillUnmount:member'
+    package: '@fluentui/react!'
     fullName: onWillUnmount
-    langs:
-      - typeScript
-    type: property
+    summary: Callback for will mount for parent
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'onWillUnmount?: (row?: DetailsRowBase) => void;'
       return:
-        type:
-          - '(row?: DetailsRowBase) => void'
-  - uid: '@fluentui/react!IDetailsRowBaseProps#rowFieldsAs:member'
-    summary: DOM element into which to render row field
-    name: rowFieldsAs
+        type: '(row?: DetailsRowBase) =&gt; void'
+  - name: rowFieldsAs
+    uid: '@fluentui/react!IDetailsRowBaseProps#rowFieldsAs:member'
+    package: '@fluentui/react!'
     fullName: rowFieldsAs
-    langs:
-      - typeScript
-    type: property
+    summary: DOM element into which to render row field
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'rowFieldsAs?: React.ComponentType<IDetailsRowFieldsProps>;'
       return:
-        type:
-          - React.ComponentType<IDetailsRowFieldsProps>
-  - uid: '@fluentui/react!IDetailsRowBaseProps#styles:member'
-    summary: Overriding styles to this row
-    name: styles
+        type: React.ComponentType&lt;IDetailsRowFieldsProps&gt;
+  - name: styles
+    uid: '@fluentui/react!IDetailsRowBaseProps#styles:member'
+    package: '@fluentui/react!'
     fullName: styles
-    langs:
-      - typeScript
-    type: property
+    summary: Overriding styles to this row
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'styles?: IStyleFunctionOrObject<IDetailsRowStyleProps, IDetailsRowStyles>;'
+      content: >-
+        styles?: IStyleFunctionOrObject<IDetailsRowStyleProps,
+        IDetailsRowStyles>;
       return:
-        type:
-          - 'IStyleFunctionOrObject<IDetailsRowStyleProps, IDetailsRowStyles>'
-  - uid: '@fluentui/react!IDetailsRowBaseProps#theme:member'
-    summary: Theme provided by styled() function
-    name: theme
+        type: 'IStyleFunctionOrObject&lt;IDetailsRowStyleProps, IDetailsRowStyles&gt;'
+  - name: theme
+    uid: '@fluentui/react!IDetailsRowBaseProps#theme:member'
+    package: '@fluentui/react!'
     fullName: theme
-    langs:
-      - typeScript
-    type: property
+    summary: Theme provided by styled() function
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'theme?: ITheme;'
       return:
-        type:
-          - '@fluentui/theme!ITheme:interface'
-  - uid: '@fluentui/react!IDetailsRowBaseProps#useFastIcons:member'
-    summary: >-
-      Whether to use fast icon and check components. The icons can't be targeted by customization but are still
-      customizable via class names.
-    name: useFastIcons
+        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
+  - name: useFastIcons
+    uid: '@fluentui/react!IDetailsRowBaseProps#useFastIcons:member'
+    package: '@fluentui/react!'
     fullName: useFastIcons
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Whether to use fast icon and check components. The icons can't be targeted
+      by customization but are still customizable via class names.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'useFastIcons?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: '@fluentui/react!IDetailsRowBaseProps#useReducedRowRenderer:member'
-    summary: Rerender DetailsRow only when props changed. Might cause regression when depending on external updates.
-    name: useReducedRowRenderer
+        type: boolean
+  - name: useReducedRowRenderer
+    uid: '@fluentui/react!IDetailsRowBaseProps#useReducedRowRenderer:member'
+    package: '@fluentui/react!'
     fullName: useReducedRowRenderer
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Rerender DetailsRow only when props changed. Might cause regression when
+      depending on external updates.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'useReducedRowRenderer?: boolean;'
       return:
-        type:
-          - boolean
+        type: boolean
+extends: 'Pick&lt;IDetailsListProps, ''onRenderItemColumn'' | ''getCellValueKey''&gt;'

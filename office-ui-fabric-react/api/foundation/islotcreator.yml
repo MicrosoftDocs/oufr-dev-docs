@@ -1,31 +1,23 @@
-### YamlMime:UniversalReference
-items:
-  - uid: '@uifabric/foundation!ISlotCreator:interface'
-    summary: Signature of components that have component factories.
-    name: ISlotCreator
-    fullName: ISlotCreator
-    langs:
-      - typeScript
-    type: interface
-    syntax:
-      typeParameters:
-        - id: TProps
-          type:
-            - ValidProps
-        - id: TShorthandProp
-          type:
-            - ValidShorthand
+### YamlMime:TSType
+name: ISlotCreator
+uid: '@uifabric/foundation!ISlotCreator:interface'
+package: '@uifabric/foundation!'
+fullName: ISlotCreator
+summary: Signature of components that have component factories.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: create
+    uid: '@uifabric/foundation!ISlotCreator#create:member'
     package: '@uifabric/foundation!'
-    children:
-      - '@uifabric/foundation!ISlotCreator#create:member'
-  - uid: '@uifabric/foundation!ISlotCreator#create:member'
-    name: create
     fullName: create
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'create?: ISlotFactory<TProps, TShorthandProp>;'
       return:
-        type:
-          - 'ISlotFactory<TProps, TShorthandProp>'
+        type: 'ISlotFactory&lt;TProps, TShorthandProp&gt;'

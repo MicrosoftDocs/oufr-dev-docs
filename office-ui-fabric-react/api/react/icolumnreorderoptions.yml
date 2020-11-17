@@ -1,94 +1,94 @@
-### YamlMime:UniversalReference
-items:
-  - uid: '@fluentui/react!IColumnReorderOptions:interface'
-    name: IColumnReorderOptions
-    fullName: IColumnReorderOptions
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: IColumnReorderOptions
+uid: '@fluentui/react!IColumnReorderOptions:interface'
+package: '@fluentui/react!'
+fullName: IColumnReorderOptions
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: frozenColumnCountFromEnd
+    uid: '@fluentui/react!IColumnReorderOptions#frozenColumnCountFromEnd:member'
     package: '@fluentui/react!'
-    children:
-      - '@fluentui/react!IColumnReorderOptions#frozenColumnCountFromEnd:member'
-      - '@fluentui/react!IColumnReorderOptions#frozenColumnCountFromStart:member'
-      - '@fluentui/react!IColumnReorderOptions#handleColumnReorder:member'
-      - '@fluentui/react!IColumnReorderOptions#onColumnDragStart:member'
-      - '@fluentui/react!IColumnReorderOptions#onColumnDrop:member'
-      - '@fluentui/react!IColumnReorderOptions#onDragEnd:member'
-  - uid: '@fluentui/react!IColumnReorderOptions#frozenColumnCountFromEnd:member'
-    summary: Specifies the number fixed columns from right
-    name: frozenColumnCountFromEnd
     fullName: frozenColumnCountFromEnd
-    langs:
-      - typeScript
-    type: property
+    summary: Specifies the number fixed columns from right
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'frozenColumnCountFromEnd?: number;'
       return:
-        type:
-          - number
-  - uid: '@fluentui/react!IColumnReorderOptions#frozenColumnCountFromStart:member'
-    summary: Specifies the number fixed columns from left
-    name: frozenColumnCountFromStart
+        type: number
+  - name: frozenColumnCountFromStart
+    uid: '@fluentui/react!IColumnReorderOptions#frozenColumnCountFromStart:member'
+    package: '@fluentui/react!'
     fullName: frozenColumnCountFromStart
-    langs:
-      - typeScript
-    type: property
+    summary: Specifies the number fixed columns from left
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'frozenColumnCountFromStart?: number;'
       return:
-        type:
-          - number
-  - uid: '@fluentui/react!IColumnReorderOptions#handleColumnReorder:member'
-    summary: >-
-      Callback to handle column reordering. `draggedIndex` is the source column index, which should be placed at
-      `targetIndex`<!-- -->.
-    deprecated:
-      content: Use `onColumnDrop` instead.
-    name: handleColumnReorder
+        type: number
+  - name: handleColumnReorder
+    uid: '@fluentui/react!IColumnReorderOptions#handleColumnReorder:member'
+    package: '@fluentui/react!'
     fullName: handleColumnReorder
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Callback to handle column reordering. `draggedIndex` is the source column
+      index, which should be placed at `targetIndex`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Use `onColumnDrop` instead.
     syntax:
-      content: 'handleColumnReorder?: (draggedIndex: number, targetIndex: number) => void;'
+      content: >-
+        handleColumnReorder?: (draggedIndex: number, targetIndex: number) =>
+        void;
       return:
-        type:
-          - '(draggedIndex: number, targetIndex: number) => void'
-  - uid: '@fluentui/react!IColumnReorderOptions#onColumnDragStart:member'
-    summary: Callback to handle when dragging on this column's DetailsHeader has started.
-    name: onColumnDragStart
+        type: '(draggedIndex: number, targetIndex: number) =&gt; void'
+  - name: onColumnDragStart
+    uid: '@fluentui/react!IColumnReorderOptions#onColumnDragStart:member'
+    package: '@fluentui/react!'
     fullName: onColumnDragStart
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Callback to handle when dragging on this column's DetailsHeader has
+      started.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'onColumnDragStart?: (dragStarted: boolean) => void;'
       return:
-        type:
-          - '(dragStarted: boolean) => void'
-  - uid: '@fluentui/react!IColumnReorderOptions#onColumnDrop:member'
-    summary: >-
-      Callback to handle column reordering. `draggedIndex` is the source column index, which should be placed at
-      `targetIndex`<!-- -->.
-    name: onColumnDrop
+        type: '(dragStarted: boolean) =&gt; void'
+  - name: onColumnDrop
+    uid: '@fluentui/react!IColumnReorderOptions#onColumnDrop:member'
+    package: '@fluentui/react!'
     fullName: onColumnDrop
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Callback to handle column reordering. `draggedIndex` is the source column
+      index, which should be placed at `targetIndex`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'onColumnDrop?: (dragDropDetails: IColumnDragDropDetails) => void;'
       return:
-        type:
-          - '(dragDropDetails: IColumnDragDropDetails) => void'
-  - uid: '@fluentui/react!IColumnReorderOptions#onDragEnd:member'
-    summary: Callback to handle when dragging on this column's DetailsHeader has finished.
-    name: onDragEnd
+        type: '(dragDropDetails: IColumnDragDropDetails) =&gt; void'
+  - name: onDragEnd
+    uid: '@fluentui/react!IColumnReorderOptions#onDragEnd:member'
+    package: '@fluentui/react!'
     fullName: onDragEnd
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Callback to handle when dragging on this column's DetailsHeader has
+      finished.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'onDragEnd?: (columnDropLocationDetails: ColumnDragEndLocation) => void;'
       return:
-        type:
-          - '(columnDropLocationDetails: ColumnDragEndLocation) => void'
+        type: '(columnDropLocationDetails: ColumnDragEndLocation) =&gt; void'

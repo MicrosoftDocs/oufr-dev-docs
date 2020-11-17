@@ -1,40 +1,40 @@
-### YamlMime:UniversalReference
-items:
-  - uid: '@fluentui/react-internal!ILayerHostProps:interface'
-    name: ILayerHostProps
-    fullName: ILayerHostProps
-    langs:
-      - typeScript
-    type: interface
-    extends:
-      - 'React.HTMLAttributes<HTMLElement> '
+### YamlMime:TSType
+name: ILayerHostProps
+uid: '@fluentui/react-internal!ILayerHostProps:interface'
+package: '@fluentui/react-internal!'
+fullName: ILayerHostProps
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: componentRef
+    uid: '@fluentui/react-internal!ILayerHostProps#componentRef:member'
     package: '@fluentui/react-internal!'
-    children:
-      - '@fluentui/react-internal!ILayerHostProps#componentRef:member'
-      - '@fluentui/react-internal!ILayerHostProps#id:member'
-  - uid: '@fluentui/react-internal!ILayerHostProps#componentRef:member'
-    summary: >-
-      Optional callback to access the ILayerHost interface. Use this instead of ref for accessing the public methods and
-      properties of the component.
-    name: componentRef
     fullName: componentRef
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Optional callback to access the ILayerHost interface. Use this instead of
+      ref for accessing the public methods and properties of the component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'componentRef?: IRefObject<ILayerHost>;'
       return:
-        type:
-          - IRefObject<ILayerHost>
-  - uid: '@fluentui/react-internal!ILayerHostProps#id:member'
-    summary: Defines the id for the layer host that Layers can target (using the hostId property.)
-    name: id
+        type: IRefObject&lt;ILayerHost&gt;
+  - name: id
+    uid: '@fluentui/react-internal!ILayerHostProps#id:member'
+    package: '@fluentui/react-internal!'
     fullName: id
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Defines the id for the layer host that Layers can target (using the hostId
+      property.)
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'id?: string;'
       return:
-        type:
-          - string
+        type: string
+extends: 'React.HTMLAttributes&lt;HTMLElement&gt; '

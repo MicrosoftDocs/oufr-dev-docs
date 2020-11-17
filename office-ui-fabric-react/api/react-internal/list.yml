@@ -1,114 +1,71 @@
-### YamlMime:UniversalReference
-items:
-  - uid: '@fluentui/react-internal!List:class'
-    summary: >-
-      The List renders virtualized pages of items. Each page's item count is determined by the getItemCountForPage
-      callback if provided by the caller, or 10 as default. Each page's height is determined by the getPageHeight
-      callback if provided by the caller, or by cached measurements if available, or by a running average, or a default
-      fallback.
+### YamlMime:TSType
+name: List
+uid: '@fluentui/react-internal!List:class'
+package: '@fluentui/react-internal!'
+fullName: List
+summary: >-
+  The List renders virtualized pages of items. Each page's item count is
+  determined by the getItemCountForPage callback if provided by the caller, or
+  10 as default. Each page's height is determined by the getPageHeight callback
+  if provided by the caller, or by cached measurements if available, or by a
+  running average, or a default fallback.
 
 
-      The algorithm for rendering pages works like this:
+  The algorithm for rendering pages works like this:
 
 
-      1. Predict visible pages based on "current measure data" (page heights, surface position, visible window) 2. If
-      changes are necessary, apply changes (add/remove pages) 3. For pages that are added, measure the page heights if
-      we need to using getBoundingClientRect 4. If measurements don't match predictions, update measure data and goto
-      step 1 asynchronously
+  1. Predict visible pages based on "current measure data" (page heights,
+  surface position, visible window) 2. If changes are necessary, apply changes
+  (add/remove pages) 3. For pages that are added, measure the page heights if we
+  need to using getBoundingClientRect 4. If measurements don't match
+  predictions, update measure data and goto step 1 asynchronously
 
 
-      Measuring too frequently can pull performance down significantly. To compensate, we cache measured values so that
-      we can avoid re-measuring during operations that should not alter heights, like scrolling.
+  Measuring too frequently can pull performance down significantly. To
+  compensate, we cache measured values so that we can avoid re-measuring during
+  operations that should not alter heights, like scrolling.
 
 
-      To optimize glass rendering performance, onShouldVirtualize can be set. When onShouldVirtualize return false, List
-      will run in fast mode (not virtualized) to render all items without any measurements to improve page load time.
-      And we start doing measurements and rendering in virtualized mode when items grows larger than this threshold.
+  To optimize glass rendering performance, onShouldVirtualize can be set. When
+  onShouldVirtualize return false, List will run in fast mode (not virtualized)
+  to render all items without any measurements to improve page load time. And we
+  start doing measurements and rendering in virtualized mode when items grows
+  larger than this threshold.
 
 
-      However, certain operations can make measure data stale. For example, resizing the list, or passing in new props,
-      or forcing an update change cause pages to shrink/grow. When these operations occur, we increment a measureVersion
-      number, which we associate with cached measurements and use to determine if a remeasure should occur.
-    name: List
-    fullName: List
-    langs:
-      - typeScript
-    type: class
-    extends:
-      - 'React.Component<IListProps<T>, IListState<T>> '
-    implements:
-      - 'IList '
+  However, certain operations can make measure data stale. For example, resizing
+  the list, or passing in new props, or forcing an update change cause pages to
+  shrink/grow. When these operations occur, we increment a measureVersion
+  number, which we associate with cached measurements and use to determine if a
+  remeasure should occur.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: (constructor)(props)
+    uid: '@fluentui/react-internal!List:constructor(1)'
     package: '@fluentui/react-internal!'
-    children:
-      - '@fluentui/react-internal!List:constructor(1)'
-      - '@fluentui/react-internal!List#componentDidMount:member(1)'
-      - '@fluentui/react-internal!List#componentDidUpdate:member(1)'
-      - '@fluentui/react-internal!List#componentWillUnmount:member(1)'
-      - '@fluentui/react-internal!List.defaultProps:member'
-      - '@fluentui/react-internal!List#forceUpdate:member(1)'
-      - '@fluentui/react-internal!List.getDerivedStateFromProps:member(1)'
-      - '@fluentui/react-internal!List#getStartItemIndexInView:member(1)'
-      - '@fluentui/react-internal!List#getTotalListHeight:member(1)'
-      - '@fluentui/react-internal!List#pageRefs:member'
-      - '@fluentui/react-internal!List#render:member(1)'
-      - '@fluentui/react-internal!List#scrollToIndex:member(1)'
-      - '@fluentui/react-internal!List#shouldComponentUpdate:member(1)'
-  - uid: '@fluentui/react-internal!List:constructor(1)'
-    summary: Constructs a new instance of the `List` class
-    name: (constructor)(props)
     fullName: (constructor)(props)
-    langs:
-      - typeScript
-    type: constructor
+    summary: Constructs a new instance of the `List` class
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'constructor(props: IListProps<T>);'
       parameters:
         - id: props
           description: ''
-          type:
-            - IListProps<T>
-  - uid: '@fluentui/react-internal!List#componentDidMount:member(1)'
-    name: componentDidMount()
-    fullName: componentDidMount()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'componentDidMount(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: '@fluentui/react-internal!List#componentDidUpdate:member(1)'
-    name: componentDidUpdate()
-    fullName: componentDidUpdate()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'componentDidUpdate(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: '@fluentui/react-internal!List#componentWillUnmount:member(1)'
-    name: componentWillUnmount()
-    fullName: componentWillUnmount()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'componentWillUnmount(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: '@fluentui/react-internal!List.defaultProps:member'
-    name: defaultProps
+          type: IListProps&lt;T&gt;
+properties:
+  - name: defaultProps
+    uid: '@fluentui/react-internal!List.defaultProps:member'
+    package: '@fluentui/react-internal!'
     fullName: defaultProps
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: |-
         static defaultProps: {
@@ -118,152 +75,202 @@ items:
                 renderedWindowsBehind: number;
             };
       return:
-        type:
-          - |-
-            {
-                    startIndex: number;
-                    onRenderCell: (item: any, index: number, containsFocus: boolean) => JSX.Element;
-                    renderedWindowsAhead: number;
-                    renderedWindowsBehind: number;
-                }
-  - uid: '@fluentui/react-internal!List#forceUpdate:member(1)'
-    name: forceUpdate()
-    fullName: forceUpdate()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'forceUpdate(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: '@fluentui/react-internal!List.getDerivedStateFromProps:member(1)'
-    name: 'getDerivedStateFromProps(nextProps, previousState)'
-    fullName: 'getDerivedStateFromProps(nextProps, previousState)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'static getDerivedStateFromProps<T = any>(nextProps: IListProps<T>, previousState: IListState<T>): IListState<T>;'
-      return:
-        type:
-          - IListState<T>
-        description: ''
-      parameters:
-        - id: nextProps
-          description: ''
-          type:
-            - IListProps<T>
-        - id: previousState
-          description: ''
-          type:
-            - IListState<T>
-      typeParameters:
-        - id: T
-  - uid: '@fluentui/react-internal!List#getStartItemIndexInView:member(1)'
-    name: getStartItemIndexInView(measureItem)
-    fullName: getStartItemIndexInView(measureItem)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getStartItemIndexInView(measureItem?: (itemIndex: number) => number): number;'
-      return:
-        type:
-          - number
-        description: ''
-      parameters:
-        - id: measureItem
-          description: ''
-          type:
-            - '(itemIndex: number) => number'
-  - uid: '@fluentui/react-internal!List#getTotalListHeight:member(1)'
-    summary: Get the current height the list and it's pages.
-    name: getTotalListHeight()
-    fullName: getTotalListHeight()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getTotalListHeight(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: '@fluentui/react-internal!List#pageRefs:member'
-    name: pageRefs
+        type: |-
+          {
+                  startIndex: number;
+                  onRenderCell: (item: any, index: number, containsFocus: boolean) =&gt; JSX.Element;
+                  renderedWindowsAhead: number;
+                  renderedWindowsBehind: number;
+              }
+  - name: pageRefs
+    uid: '@fluentui/react-internal!List#pageRefs:member'
+    package: '@fluentui/react-internal!'
     fullName: pageRefs
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'get pageRefs(): Readonly<Record<string, unknown>>;'
       return:
-        type:
-          - 'Readonly<Record<string, unknown>>'
-  - uid: '@fluentui/react-internal!List#render:member(1)'
-    name: render()
+        type: 'Readonly&lt;Record&lt;string, unknown&gt;&gt;'
+methods:
+  - name: componentDidMount()
+    uid: '@fluentui/react-internal!List#componentDidMount:member(1)'
+    package: '@fluentui/react-internal!'
+    fullName: componentDidMount()
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'componentDidMount(): void;'
+      return:
+        type: void
+        description: ''
+  - name: componentDidUpdate()
+    uid: '@fluentui/react-internal!List#componentDidUpdate:member(1)'
+    package: '@fluentui/react-internal!'
+    fullName: componentDidUpdate()
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'componentDidUpdate(): void;'
+      return:
+        type: void
+        description: ''
+  - name: componentWillUnmount()
+    uid: '@fluentui/react-internal!List#componentWillUnmount:member(1)'
+    package: '@fluentui/react-internal!'
+    fullName: componentWillUnmount()
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'componentWillUnmount(): void;'
+      return:
+        type: void
+        description: ''
+  - name: forceUpdate()
+    uid: '@fluentui/react-internal!List#forceUpdate:member(1)'
+    package: '@fluentui/react-internal!'
+    fullName: forceUpdate()
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'forceUpdate(): void;'
+      return:
+        type: void
+        description: ''
+  - name: 'getDerivedStateFromProps(nextProps, previousState)'
+    uid: '@fluentui/react-internal!List.getDerivedStateFromProps:member(1)'
+    package: '@fluentui/react-internal!'
+    fullName: 'getDerivedStateFromProps(nextProps, previousState)'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        static getDerivedStateFromProps<T = any>(nextProps: IListProps<T>,
+        previousState: IListState<T>): IListState<T>;
+      parameters:
+        - id: nextProps
+          description: ''
+          type: IListProps&lt;T&gt;
+        - id: previousState
+          description: ''
+          type: IListState&lt;T&gt;
+      return:
+        type: IListState&lt;T&gt;
+        description: ''
+  - name: getStartItemIndexInView(measureItem)
+    uid: '@fluentui/react-internal!List#getStartItemIndexInView:member(1)'
+    package: '@fluentui/react-internal!'
+    fullName: getStartItemIndexInView(measureItem)
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        getStartItemIndexInView(measureItem?: (itemIndex: number) => number):
+        number;
+      parameters:
+        - id: measureItem
+          description: ''
+          type: '(itemIndex: number) =&gt; number'
+      return:
+        type: number
+        description: ''
+  - name: getTotalListHeight()
+    uid: '@fluentui/react-internal!List#getTotalListHeight:member(1)'
+    package: '@fluentui/react-internal!'
+    fullName: getTotalListHeight()
+    summary: Get the current height the list and it's pages.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getTotalListHeight(): number;'
+      return:
+        type: number
+        description: ''
+  - name: render()
+    uid: '@fluentui/react-internal!List#render:member(1)'
+    package: '@fluentui/react-internal!'
     fullName: render()
-    langs:
-      - typeScript
-    type: method
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'render(): JSX.Element | null;'
       return:
-        type:
-          - JSX.Element | null
+        type: JSX.Element | null
         description: ''
-  - uid: '@fluentui/react-internal!List#scrollToIndex:member(1)'
-    summary: >-
-      Scroll to the given index. By default will bring the page the specified item is on into the view. If a callback to
-      measure the height of an individual item is specified, will only scroll to bring the specific item into view.
-
-
-      Note: with items of variable height and no passed in `getPageHeight` method, the list might jump after scrolling
-      when windows before/ahead are being rendered, and the estimated height is replaced using actual elements.
-    name: 'scrollToIndex(index, measureItem, scrollToMode)'
+  - name: 'scrollToIndex(index, measureItem, scrollToMode)'
+    uid: '@fluentui/react-internal!List#scrollToIndex:member(1)'
+    package: '@fluentui/react-internal!'
     fullName: 'scrollToIndex(index, measureItem, scrollToMode)'
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Scroll to the given index. By default will bring the page the specified
+      item is on into the view. If a callback to measure the height of an
+      individual item is specified, will only scroll to bring the specific item
+      into view.
+
+
+      Note: with items of variable height and no passed in `getPageHeight`
+      method, the list might jump after scrolling when windows before/ahead are
+      being rendered, and the estimated height is replaced using actual
+      elements.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'scrollToIndex(index: number, measureItem?: (itemIndex: number) => number, scrollToMode?: ScrollToMode): void;'
-      return:
-        type:
-          - void
-        description: ''
+      content: >-
+        scrollToIndex(index: number, measureItem?: (itemIndex: number) =>
+        number, scrollToMode?: ScrollToMode): void;
       parameters:
         - id: index
           description: Index of item to scroll to
-          type:
-            - number
+          type: number
         - id: measureItem
           description: Optional callback to measure the height of an individual item
-          type:
-            - '(itemIndex: number) => number'
+          type: '(itemIndex: number) =&gt; number'
         - id: scrollToMode
-          description: Optional defines where in the window the item should be positioned to when scrolling
-          type:
-            - ScrollToMode
-  - uid: '@fluentui/react-internal!List#shouldComponentUpdate:member(1)'
-    name: 'shouldComponentUpdate(newProps, newState)'
-    fullName: 'shouldComponentUpdate(newProps, newState)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'shouldComponentUpdate(newProps: IListProps<T>, newState: IListState<T>): boolean;'
+          description: >-
+            Optional defines where in the window the item should be positioned
+            to when scrolling
+          type: ScrollToMode
       return:
-        type:
-          - boolean
+        type: void
         description: ''
+  - name: 'shouldComponentUpdate(newProps, newState)'
+    uid: '@fluentui/react-internal!List#shouldComponentUpdate:member(1)'
+    package: '@fluentui/react-internal!'
+    fullName: 'shouldComponentUpdate(newProps, newState)'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        shouldComponentUpdate(newProps: IListProps<T>, newState: IListState<T>):
+        boolean;
       parameters:
         - id: newProps
           description: ''
-          type:
-            - IListProps<T>
+          type: IListProps&lt;T&gt;
         - id: newState
           description: ''
-          type:
-            - IListState<T>
+          type: IListState&lt;T&gt;
+      return:
+        type: boolean
+        description: ''
+extends: 'React.Component&lt;IListProps&lt;T&gt;, IListState&lt;T&gt;&gt; '

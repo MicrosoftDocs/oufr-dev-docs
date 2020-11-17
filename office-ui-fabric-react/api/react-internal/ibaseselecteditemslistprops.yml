@@ -1,187 +1,188 @@
-### YamlMime:UniversalReference
-items:
-  - uid: '@fluentui/react-internal!IBaseSelectedItemsListProps:interface'
-    name: IBaseSelectedItemsListProps
-    fullName: IBaseSelectedItemsListProps
-    langs:
-      - typeScript
-    type: interface
-    extends:
-      - 'React.ClassAttributes<any> '
-    syntax:
-      typeParameters:
-        - id: T
+### YamlMime:TSType
+name: IBaseSelectedItemsListProps
+uid: '@fluentui/react-internal!IBaseSelectedItemsListProps:interface'
+package: '@fluentui/react-internal!'
+fullName: IBaseSelectedItemsListProps
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: canRemoveItem
+    uid: '@fluentui/react-internal!IBaseSelectedItemsListProps#canRemoveItem:member'
     package: '@fluentui/react-internal!'
-    children:
-      - '@fluentui/react-internal!IBaseSelectedItemsListProps#canRemoveItem:member'
-      - '@fluentui/react-internal!IBaseSelectedItemsListProps#componentRef:member'
-      - '@fluentui/react-internal!IBaseSelectedItemsListProps#createGenericItem:member'
-      - '@fluentui/react-internal!IBaseSelectedItemsListProps#defaultSelectedItems:member'
-      - '@fluentui/react-internal!IBaseSelectedItemsListProps#onChange:member'
-      - '@fluentui/react-internal!IBaseSelectedItemsListProps#onCopyItems:member'
-      - '@fluentui/react-internal!IBaseSelectedItemsListProps#onItemDeleted:member'
-      - '@fluentui/react-internal!IBaseSelectedItemsListProps#onItemsDeleted:member'
-      - '@fluentui/react-internal!IBaseSelectedItemsListProps#onItemSelected:member'
-      - '@fluentui/react-internal!IBaseSelectedItemsListProps#onRenderItem:member'
-      - '@fluentui/react-internal!IBaseSelectedItemsListProps#removeButtonAriaLabel:member'
-      - '@fluentui/react-internal!IBaseSelectedItemsListProps#selectedItems:member'
-      - '@fluentui/react-internal!IBaseSelectedItemsListProps#selection:member'
-  - uid: '@fluentui/react-internal!IBaseSelectedItemsListProps#canRemoveItem:member'
-    summary: A callback on whether this item can be deleted
-    name: canRemoveItem
     fullName: canRemoveItem
-    langs:
-      - typeScript
-    type: property
+    summary: A callback on whether this item can be deleted
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'canRemoveItem?: (item: T) => boolean;'
       return:
-        type:
-          - '(item: T) => boolean'
-  - uid: '@fluentui/react-internal!IBaseSelectedItemsListProps#componentRef:member'
-    name: componentRef
+        type: '(item: T) =&gt; boolean'
+  - name: componentRef
+    uid: '@fluentui/react-internal!IBaseSelectedItemsListProps#componentRef:member'
+    package: '@fluentui/react-internal!'
     fullName: componentRef
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'componentRef?: IRefObject<IBaseSelectedItemsList<T>>;'
       return:
-        type:
-          - IRefObject<IBaseSelectedItemsList<T>>
-  - uid: '@fluentui/react-internal!IBaseSelectedItemsListProps#createGenericItem:member'
-    summary: Function that specifies how arbitrary text entered into the well is handled.
-    name: createGenericItem
+        type: IRefObject&lt;IBaseSelectedItemsList&lt;T&gt;&gt;
+  - name: createGenericItem
+    uid: >-
+      @fluentui/react-internal!IBaseSelectedItemsListProps#createGenericItem:member
+    package: '@fluentui/react-internal!'
     fullName: createGenericItem
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Function that specifies how arbitrary text entered into the well is
+      handled.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'createGenericItem?: (input: string, ValidationState: ValidationState) => ISuggestionModel<T>;'
+      content: >-
+        createGenericItem?: (input: string, ValidationState: ValidationState) =>
+        ISuggestionModel<T>;
       return:
-        type:
-          - '(input: string, ValidationState: ValidationState) => ISuggestionModel<T>'
-  - uid: '@fluentui/react-internal!IBaseSelectedItemsListProps#defaultSelectedItems:member'
-    summary: Initial items that have already been selected and should appear in the people picker.
-    name: defaultSelectedItems
+        type: >-
+          (input: string, ValidationState: ValidationState) =&gt;
+          ISuggestionModel&lt;T&gt;
+  - name: defaultSelectedItems
+    uid: >-
+      @fluentui/react-internal!IBaseSelectedItemsListProps#defaultSelectedItems:member
+    package: '@fluentui/react-internal!'
     fullName: defaultSelectedItems
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Initial items that have already been selected and should appear in the
+      people picker.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'defaultSelectedItems?: T[];'
       return:
-        type:
-          - 'T[]'
-  - uid: '@fluentui/react-internal!IBaseSelectedItemsListProps#onChange:member'
-    summary: A callback for when the selected list of items changes.
-    name: onChange
+        type: 'T[]'
+  - name: onChange
+    uid: '@fluentui/react-internal!IBaseSelectedItemsListProps#onChange:member'
+    package: '@fluentui/react-internal!'
     fullName: onChange
-    langs:
-      - typeScript
-    type: property
+    summary: A callback for when the selected list of items changes.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'onChange?: (items?: T[]) => void;'
       return:
-        type:
-          - '(items?: T[]) => void'
-  - uid: '@fluentui/react-internal!IBaseSelectedItemsListProps#onCopyItems:member'
-    summary: A callback for when items are copied
-    name: onCopyItems
+        type: '(items?: T[]) =&gt; void'
+  - name: onCopyItems
+    uid: '@fluentui/react-internal!IBaseSelectedItemsListProps#onCopyItems:member'
+    package: '@fluentui/react-internal!'
     fullName: onCopyItems
-    langs:
-      - typeScript
-    type: property
+    summary: A callback for when items are copied
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'onCopyItems?: (items: T[]) => string;'
       return:
-        type:
-          - '(items: T[]) => string'
-  - uid: '@fluentui/react-internal!IBaseSelectedItemsListProps#onItemDeleted:member'
-    summary: A callback when an item is deleted
-    deprecated:
-      content: Use `onItemsDeleted` instead.
-    name: onItemDeleted
+        type: '(items: T[]) =&gt; string'
+  - name: onItemDeleted
+    uid: '@fluentui/react-internal!IBaseSelectedItemsListProps#onItemDeleted:member'
+    package: '@fluentui/react-internal!'
     fullName: onItemDeleted
-    langs:
-      - typeScript
-    type: property
+    summary: A callback when an item is deleted
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Use `onItemsDeleted` instead.
     syntax:
       content: 'onItemDeleted?: (deletedItem: T) => void;'
       return:
-        type:
-          - '(deletedItem: T) => void'
-  - uid: '@fluentui/react-internal!IBaseSelectedItemsListProps#onItemsDeleted:member'
-    summary: A callback when and item or items are deleted
-    name: onItemsDeleted
+        type: '(deletedItem: T) =&gt; void'
+  - name: onItemsDeleted
+    uid: '@fluentui/react-internal!IBaseSelectedItemsListProps#onItemsDeleted:member'
+    package: '@fluentui/react-internal!'
     fullName: onItemsDeleted
-    langs:
-      - typeScript
-    type: property
+    summary: A callback when and item or items are deleted
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'onItemsDeleted?: (deletedItems: T[]) => void;'
       return:
-        type:
-          - '(deletedItems: T[]) => void'
-  - uid: '@fluentui/react-internal!IBaseSelectedItemsListProps#onItemSelected:member'
-    summary: A callback to process a selection after the user selects something from the picker.
-    name: onItemSelected
+        type: '(deletedItems: T[]) =&gt; void'
+  - name: onItemSelected
+    uid: '@fluentui/react-internal!IBaseSelectedItemsListProps#onItemSelected:member'
+    package: '@fluentui/react-internal!'
     fullName: onItemSelected
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      A callback to process a selection after the user selects something from
+      the picker.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'onItemSelected?: (selectedItem?: T | T[]) => T | PromiseLike<T> | T[] | PromiseLike<T[]>;'
+      content: >-
+        onItemSelected?: (selectedItem?: T | T[]) => T | PromiseLike<T> | T[] |
+        PromiseLike<T[]>;
       return:
-        type:
-          - '(selectedItem?: T | T[]) => T | PromiseLike<T> | T[] | PromiseLike<T[]>'
-  - uid: '@fluentui/react-internal!IBaseSelectedItemsListProps#onRenderItem:member'
-    summary: Function that specifies how the selected item will appear.
-    name: onRenderItem
+        type: >-
+          (selectedItem?: T | T[]) =&gt; T | PromiseLike&lt;T&gt; | T[] |
+          PromiseLike&lt;T[]&gt;
+  - name: onRenderItem
+    uid: '@fluentui/react-internal!IBaseSelectedItemsListProps#onRenderItem:member'
+    package: '@fluentui/react-internal!'
     fullName: onRenderItem
-    langs:
-      - typeScript
-    type: property
+    summary: Function that specifies how the selected item will appear.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'onRenderItem?: (props: ISelectedItemProps<T>) => JSX.Element;'
       return:
-        type:
-          - '(props: ISelectedItemProps<T>) => JSX.Element'
-  - uid: '@fluentui/react-internal!IBaseSelectedItemsListProps#removeButtonAriaLabel:member'
-    summary: Aria label for the 'X' button in the selected item component.
-    name: removeButtonAriaLabel
+        type: '(props: ISelectedItemProps&lt;T&gt;) =&gt; JSX.Element'
+  - name: removeButtonAriaLabel
+    uid: >-
+      @fluentui/react-internal!IBaseSelectedItemsListProps#removeButtonAriaLabel:member
+    package: '@fluentui/react-internal!'
     fullName: removeButtonAriaLabel
-    langs:
-      - typeScript
-    type: property
+    summary: Aria label for the 'X' button in the selected item component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'removeButtonAriaLabel?: string;'
       return:
-        type:
-          - string
-  - uid: '@fluentui/react-internal!IBaseSelectedItemsListProps#selectedItems:member'
-    summary: >-
-      The items that the base picker should currently display as selected. If this is provided then the picker will act
-      as a controlled component.
-    name: selectedItems
+        type: string
+  - name: selectedItems
+    uid: '@fluentui/react-internal!IBaseSelectedItemsListProps#selectedItems:member'
+    package: '@fluentui/react-internal!'
     fullName: selectedItems
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The items that the base picker should currently display as selected. If
+      this is provided then the picker will act as a controlled component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'selectedItems?: T[];'
       return:
-        type:
-          - 'T[]'
-  - uid: '@fluentui/react-internal!IBaseSelectedItemsListProps#selection:member'
-    summary: The selection
-    name: selection
+        type: 'T[]'
+  - name: selection
+    uid: '@fluentui/react-internal!IBaseSelectedItemsListProps#selection:member'
+    package: '@fluentui/react-internal!'
     fullName: selection
-    langs:
-      - typeScript
-    type: property
+    summary: The selection
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'selection?: Selection;'
       return:
-        type:
-          - '@fluentui/utilities!Selection:class'
+        type: '<xref uid="@fluentui/utilities!Selection:class" />'
+extends: 'React.ClassAttributes&lt;any&gt; '

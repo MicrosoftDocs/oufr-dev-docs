@@ -1,247 +1,246 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'office-ui-fabric-react!ITooltipHostProps:interface'
-    summary: >-
-      TooltipHost props. Note that native props (such as `id`<!-- -->, `className`<!-- -->, and `aria-` props) are
-      passed through to the Tooltip itself, rather than being used on the host element.
-    name: ITooltipHostProps
-    fullName: ITooltipHostProps
-    langs:
-      - typeScript
-    type: interface
-    extends:
-      - 'React.HTMLAttributes<HTMLDivElement | TooltipHostBase> '
+### YamlMime:TSType
+name: ITooltipHostProps
+uid: 'office-ui-fabric-react!ITooltipHostProps:interface'
+package: office-ui-fabric-react!
+fullName: ITooltipHostProps
+summary: >-
+  TooltipHost props. Note that native props (such as `id`<!-- -->,
+  `className`<!-- -->, and `aria-` props) are passed through to the Tooltip
+  itself, rather than being used on the host element.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: calloutProps
+    uid: 'office-ui-fabric-react!ITooltipHostProps#calloutProps:member'
     package: office-ui-fabric-react!
-    children:
-      - 'office-ui-fabric-react!ITooltipHostProps#calloutProps:member'
-      - 'office-ui-fabric-react!ITooltipHostProps#className:member'
-      - 'office-ui-fabric-react!ITooltipHostProps#closeDelay:member'
-      - 'office-ui-fabric-react!ITooltipHostProps#componentRef:member'
-      - 'office-ui-fabric-react!ITooltipHostProps#content:member'
-      - 'office-ui-fabric-react!ITooltipHostProps#delay:member'
-      - 'office-ui-fabric-react!ITooltipHostProps#directionalHint:member'
-      - 'office-ui-fabric-react!ITooltipHostProps#directionalHintForRTL:member'
-      - 'office-ui-fabric-react!ITooltipHostProps#hostClassName:member'
-      - 'office-ui-fabric-react!ITooltipHostProps#id:member'
-      - 'office-ui-fabric-react!ITooltipHostProps#onTooltipToggle:member(1)'
-      - 'office-ui-fabric-react!ITooltipHostProps#overflowMode:member'
-      - 'office-ui-fabric-react!ITooltipHostProps#setAriaDescribedBy:member'
-      - 'office-ui-fabric-react!ITooltipHostProps#styles:member'
-      - 'office-ui-fabric-react!ITooltipHostProps#theme:member'
-      - 'office-ui-fabric-react!ITooltipHostProps#tooltipProps:member'
-  - uid: 'office-ui-fabric-react!ITooltipHostProps#calloutProps:member'
-    summary: Additional properties to pass through for Callout.
-    name: calloutProps
     fullName: calloutProps
-    langs:
-      - typeScript
-    type: property
+    summary: Additional properties to pass through for Callout.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'calloutProps?: ICalloutProps;'
       return:
-        type:
-          - ICalloutProps
-  - uid: 'office-ui-fabric-react!ITooltipHostProps#className:member'
-    summary: >-
-      Class name to apply to the \*tooltip itself\*, not the host. To apply a class to the host, use `hostClassName` or
-      `styles.root`<!-- -->.
-    name: className
+        type: ICalloutProps
+  - name: className
+    uid: 'office-ui-fabric-react!ITooltipHostProps#className:member'
+    package: office-ui-fabric-react!
     fullName: className
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Class name to apply to the \*tooltip itself\*, not the host. To apply a
+      class to the host, use `hostClassName` or `styles.root`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'className?: string;'
       return:
-        type:
-          - string
-  - uid: 'office-ui-fabric-react!ITooltipHostProps#closeDelay:member'
-    summary: >-
-      Number of milliseconds to delay closing the tooltip, so that the user has time to hover over the tooltip and
-      interact with it. Hovering over the tooltip will count as hovering over the host, so that the tooltip will stay
-      open if the user is actively interacting with it.
-    name: closeDelay
+        type: string
+  - name: closeDelay
+    uid: 'office-ui-fabric-react!ITooltipHostProps#closeDelay:member'
+    package: office-ui-fabric-react!
     fullName: closeDelay
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Number of milliseconds to delay closing the tooltip, so that the user has
+      time to hover over the tooltip and interact with it. Hovering over the
+      tooltip will count as hovering over the host, so that the tooltip will
+      stay open if the user is actively interacting with it.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'closeDelay?: number;'
       return:
-        type:
-          - number
-  - uid: 'office-ui-fabric-react!ITooltipHostProps#componentRef:member'
-    summary: >-
-      Optional callback to access the ITooltipHost interface. Use this instead of ref for accessing the public methods
-      and properties of the component.
-    name: componentRef
+        type: number
+  - name: componentRef
+    uid: 'office-ui-fabric-react!ITooltipHostProps#componentRef:member'
+    package: office-ui-fabric-react!
     fullName: componentRef
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Optional callback to access the ITooltipHost interface. Use this instead
+      of ref for accessing the public methods and properties of the component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'componentRef?: IRefObject<ITooltipHost>;'
       return:
-        type:
-          - IRefObject<ITooltipHost>
-  - uid: 'office-ui-fabric-react!ITooltipHostProps#content:member'
-    summary: Content to display in the Tooltip.
-    name: content
+        type: IRefObject&lt;ITooltipHost&gt;
+  - name: content
+    uid: 'office-ui-fabric-react!ITooltipHostProps#content:member'
+    package: office-ui-fabric-react!
     fullName: content
-    langs:
-      - typeScript
-    type: property
+    summary: Content to display in the Tooltip.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'content?: string | JSX.Element | JSX.Element[];'
       return:
-        type:
-          - 'string | JSX.Element | JSX.Element[]'
-  - uid: 'office-ui-fabric-react!ITooltipHostProps#delay:member'
-    summary: Length of delay before showing the tooltip on hover.
-    name: delay
+        type: 'string | JSX.Element | JSX.Element[]'
+  - name: delay
+    uid: 'office-ui-fabric-react!ITooltipHostProps#delay:member'
+    package: office-ui-fabric-react!
     fullName: delay
-    langs:
-      - typeScript
-    type: property
+    summary: Length of delay before showing the tooltip on hover.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'delay?: TooltipDelay;'
       return:
-        type:
-          - TooltipDelay
-  - uid: 'office-ui-fabric-react!ITooltipHostProps#directionalHint:member'
-    summary: How the tooltip should be anchored to its `targetElement`<!-- -->.
-    name: directionalHint
+        type: TooltipDelay
+  - name: directionalHint
+    uid: 'office-ui-fabric-react!ITooltipHostProps#directionalHint:member'
+    package: office-ui-fabric-react!
     fullName: directionalHint
-    langs:
-      - typeScript
-    type: property
+    summary: How the tooltip should be anchored to its `targetElement`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'directionalHint?: DirectionalHint;'
       return:
-        type:
-          - DirectionalHint
-  - uid: 'office-ui-fabric-react!ITooltipHostProps#directionalHintForRTL:member'
-    summary: 'How the element should be positioned in RTL layouts. If not specified, a mirror of `directionalHint` will be used.'
-    name: directionalHintForRTL
+        type: DirectionalHint
+  - name: directionalHintForRTL
+    uid: 'office-ui-fabric-react!ITooltipHostProps#directionalHintForRTL:member'
+    package: office-ui-fabric-react!
     fullName: directionalHintForRTL
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      How the element should be positioned in RTL layouts. If not specified, a
+      mirror of `directionalHint` will be used.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'directionalHintForRTL?: DirectionalHint;'
       return:
-        type:
-          - DirectionalHint
-  - uid: 'office-ui-fabric-react!ITooltipHostProps#hostClassName:member'
-    summary: Class name to apply to tooltip host.
-    name: hostClassName
+        type: DirectionalHint
+  - name: hostClassName
+    uid: 'office-ui-fabric-react!ITooltipHostProps#hostClassName:member'
+    package: office-ui-fabric-react!
     fullName: hostClassName
-    langs:
-      - typeScript
-    type: property
+    summary: Class name to apply to tooltip host.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'hostClassName?: string;'
       return:
-        type:
-          - string
-  - uid: 'office-ui-fabric-react!ITooltipHostProps#id:member'
-    summary: Optional ID to pass through to the tooltip (not used on the host itself). Auto-generated if not provided.
-    name: id
+        type: string
+  - name: id
+    uid: 'office-ui-fabric-react!ITooltipHostProps#id:member'
+    package: office-ui-fabric-react!
     fullName: id
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Optional ID to pass through to the tooltip (not used on the host itself).
+      Auto-generated if not provided.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'id?: string;'
       return:
-        type:
-          - string
-  - uid: 'office-ui-fabric-react!ITooltipHostProps#onTooltipToggle:member(1)'
-    summary: 'Notifies when tooltip becomes visible or hidden, whatever the trigger was.'
-    name: onTooltipToggle(isTooltipVisible)
-    fullName: onTooltipToggle(isTooltipVisible)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'onTooltipToggle?(isTooltipVisible: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: isTooltipVisible
-          description: ''
-          type:
-            - boolean
-  - uid: 'office-ui-fabric-react!ITooltipHostProps#overflowMode:member'
-    summary: >-
-      If this is unset (the default), the tooltip is always shown even if there's no overflow.
-
-
-      If set, only show the tooltip if the specified element (`Self` or `Parent`<!-- -->) has overflow. When set to
-      `Parent`<!-- -->, the parent element is also used as the tooltip's target element.
-
-
-      Note that even with `Self` mode, the TooltipHost \*does not\* check whether any children have overflow.
-    name: overflowMode
+        type: string
+  - name: overflowMode
+    uid: 'office-ui-fabric-react!ITooltipHostProps#overflowMode:member'
+    package: office-ui-fabric-react!
     fullName: overflowMode
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      If this is unset (the default), the tooltip is always shown even if
+      there's no overflow.
+
+
+      If set, only show the tooltip if the specified element (`Self` or
+      `Parent`<!-- -->) has overflow. When set to `Parent`<!-- -->, the parent
+      element is also used as the tooltip's target element.
+
+
+      Note that even with `Self` mode, the TooltipHost \*does not\* check
+      whether any children have overflow.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'overflowMode?: TooltipOverflowMode;'
       return:
-        type:
-          - TooltipOverflowMode
-  - uid: 'office-ui-fabric-react!ITooltipHostProps#setAriaDescribedBy:member'
-    summary: >-
-      Whether or not to mark the TooltipHost root element as described by the tooltip. If not specified, the caller
-      should pass an `id` to the TooltipHost (to be passed through to the Tooltip) and mark the appropriate element as
-      `aria-describedby` the `id`<!-- -->.
-    name: setAriaDescribedBy
+        type: TooltipOverflowMode
+  - name: setAriaDescribedBy
+    uid: 'office-ui-fabric-react!ITooltipHostProps#setAriaDescribedBy:member'
+    package: office-ui-fabric-react!
     fullName: setAriaDescribedBy
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Whether or not to mark the TooltipHost root element as described by the
+      tooltip. If not specified, the caller should pass an `id` to the
+      TooltipHost (to be passed through to the Tooltip) and mark the appropriate
+      element as `aria-describedby` the `id`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'setAriaDescribedBy?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'office-ui-fabric-react!ITooltipHostProps#styles:member'
-    summary: Call to provide customized styling that will layer on top of the variant rules.
-    name: styles
+        type: boolean
+  - name: styles
+    uid: 'office-ui-fabric-react!ITooltipHostProps#styles:member'
+    package: office-ui-fabric-react!
     fullName: styles
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Call to provide customized styling that will layer on top of the variant
+      rules.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'styles?: IStyleFunctionOrObject<ITooltipHostStyleProps, ITooltipHostStyles>;'
+      content: >-
+        styles?: IStyleFunctionOrObject<ITooltipHostStyleProps,
+        ITooltipHostStyles>;
       return:
-        type:
-          - 'IStyleFunctionOrObject<ITooltipHostStyleProps, ITooltipHostStyles>'
-  - uid: 'office-ui-fabric-react!ITooltipHostProps#theme:member'
-    summary: Theme provided by higher-order component.
-    name: theme
+        type: >-
+          IStyleFunctionOrObject&lt;ITooltipHostStyleProps,
+          ITooltipHostStyles&gt;
+  - name: theme
+    uid: 'office-ui-fabric-react!ITooltipHostProps#theme:member'
+    package: office-ui-fabric-react!
     fullName: theme
-    langs:
-      - typeScript
-    type: property
+    summary: Theme provided by higher-order component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'theme?: ITheme;'
       return:
-        type:
-          - '@fluentui/theme!ITheme:interface'
-  - uid: 'office-ui-fabric-react!ITooltipHostProps#tooltipProps:member'
-    summary: Additional properties to pass through for Tooltip.
-    name: tooltipProps
+        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
+  - name: tooltipProps
+    uid: 'office-ui-fabric-react!ITooltipHostProps#tooltipProps:member'
+    package: office-ui-fabric-react!
     fullName: tooltipProps
-    langs:
-      - typeScript
-    type: property
+    summary: Additional properties to pass through for Tooltip.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'tooltipProps?: ITooltipProps;'
       return:
-        type:
-          - ITooltipProps
+        type: ITooltipProps
+methods:
+  - name: onTooltipToggle(isTooltipVisible)
+    uid: 'office-ui-fabric-react!ITooltipHostProps#onTooltipToggle:member(1)'
+    package: office-ui-fabric-react!
+    fullName: onTooltipToggle(isTooltipVisible)
+    summary: 'Notifies when tooltip becomes visible or hidden, whatever the trigger was.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onTooltipToggle?(isTooltipVisible: boolean): void;'
+      parameters:
+        - id: isTooltipVisible
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+extends: 'React.HTMLAttributes&lt;HTMLDivElement | TooltipHostBase&gt; '

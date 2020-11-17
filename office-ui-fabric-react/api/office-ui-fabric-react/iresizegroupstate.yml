@@ -1,66 +1,67 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'office-ui-fabric-react!IResizeGroupState:interface'
-    name: IResizeGroupState
-    fullName: IResizeGroupState
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: IResizeGroupState
+uid: 'office-ui-fabric-react!IResizeGroupState:interface'
+package: office-ui-fabric-react!
+fullName: IResizeGroupState
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: dataToMeasure
+    uid: 'office-ui-fabric-react!IResizeGroupState#dataToMeasure:member'
     package: office-ui-fabric-react!
-    children:
-      - 'office-ui-fabric-react!IResizeGroupState#dataToMeasure:member'
-      - 'office-ui-fabric-react!IResizeGroupState#measureContainer:member'
-      - 'office-ui-fabric-react!IResizeGroupState#renderedData:member'
-      - 'office-ui-fabric-react!IResizeGroupState#resizeDirection:member'
-  - uid: 'office-ui-fabric-react!IResizeGroupState#dataToMeasure:member'
-    summary: Data to render in a hidden div for measurement
-    name: dataToMeasure
     fullName: dataToMeasure
-    langs:
-      - typeScript
-    type: property
+    summary: Data to render in a hidden div for measurement
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'dataToMeasure?: any;'
       return:
-        type:
-          - any
-  - uid: 'office-ui-fabric-react!IResizeGroupState#measureContainer:member'
-    summary: Set to true when the content container might have new dimensions and should be remeasured.
-    name: measureContainer
+        type: any
+  - name: measureContainer
+    uid: 'office-ui-fabric-react!IResizeGroupState#measureContainer:member'
+    package: office-ui-fabric-react!
     fullName: measureContainer
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Set to true when the content container might have new dimensions and
+      should be remeasured.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'measureContainer?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'office-ui-fabric-react!IResizeGroupState#renderedData:member'
-    summary: Final data used to render proper sized component
-    name: renderedData
+        type: boolean
+  - name: renderedData
+    uid: 'office-ui-fabric-react!IResizeGroupState#renderedData:member'
+    package: office-ui-fabric-react!
     fullName: renderedData
-    langs:
-      - typeScript
-    type: property
+    summary: Final data used to render proper sized component
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'renderedData?: any;'
       return:
-        type:
-          - any
-  - uid: 'office-ui-fabric-react!IResizeGroupState#resizeDirection:member'
-    summary: >-
-      Are we resizing to accommodate having more or less available space? The 'grow' direction is when the container may
-      have more room than the last render, such as when a window resize occurs. This means we will try to fit more
-      content in the window. The 'shrink' direction is when the contents don't fit in the container and we need to find
-      a transformation of the data that makes everything fit.
-    name: resizeDirection
+        type: any
+  - name: resizeDirection
+    uid: 'office-ui-fabric-react!IResizeGroupState#resizeDirection:member'
+    package: office-ui-fabric-react!
     fullName: resizeDirection
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Are we resizing to accommodate having more or less available space? The
+      'grow' direction is when the container may have more room than the last
+      render, such as when a window resize occurs. This means we will try to fit
+      more content in the window. The 'shrink' direction is when the contents
+      don't fit in the container and we need to find a transformation of the
+      data that makes everything fit.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'resizeDirection?: ''grow'' | ''shrink'';'
       return:
-        type:
-          - '''grow'' | ''shrink'''
+        type: '''grow'' | ''shrink'''

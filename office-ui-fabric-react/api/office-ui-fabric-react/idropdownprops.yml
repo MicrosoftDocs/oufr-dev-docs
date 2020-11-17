@@ -1,277 +1,270 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'office-ui-fabric-react!IDropdownProps:interface'
-    name: IDropdownProps
-    fullName: IDropdownProps
-    langs:
-      - typeScript
-    type: interface
-    extends:
-      - 'ISelectableDroppableTextProps<IDropdown, HTMLDivElement> '
+### YamlMime:TSType
+name: IDropdownProps
+uid: 'office-ui-fabric-react!IDropdownProps:interface'
+package: office-ui-fabric-react!
+fullName: IDropdownProps
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: defaultSelectedKeys
+    uid: 'office-ui-fabric-react!IDropdownProps#defaultSelectedKeys:member'
     package: office-ui-fabric-react!
-    children:
-      - 'office-ui-fabric-react!IDropdownProps#defaultSelectedKeys:member'
-      - 'office-ui-fabric-react!IDropdownProps#dropdownWidth:member'
-      - 'office-ui-fabric-react!IDropdownProps#isDisabled:member'
-      - 'office-ui-fabric-react!IDropdownProps#keytipProps:member'
-      - 'office-ui-fabric-react!IDropdownProps#multiSelectDelimiter:member'
-      - 'office-ui-fabric-react!IDropdownProps#notifyOnReselect:member'
-      - 'office-ui-fabric-react!IDropdownProps#onChange:member'
-      - 'office-ui-fabric-react!IDropdownProps#onChanged:member'
-      - 'office-ui-fabric-react!IDropdownProps#onRenderCaretDown:member'
-      - 'office-ui-fabric-react!IDropdownProps#onRenderLabel:member'
-      - 'office-ui-fabric-react!IDropdownProps#onRenderPlaceholder:member'
-      - 'office-ui-fabric-react!IDropdownProps#onRenderPlaceHolder:member'
-      - 'office-ui-fabric-react!IDropdownProps#onRenderTitle:member'
-      - 'office-ui-fabric-react!IDropdownProps#options:member'
-      - 'office-ui-fabric-react!IDropdownProps#placeHolder:member'
-      - 'office-ui-fabric-react!IDropdownProps#responsiveMode:member'
-      - 'office-ui-fabric-react!IDropdownProps#selectedKeys:member'
-      - 'office-ui-fabric-react!IDropdownProps#styles:member'
-      - 'office-ui-fabric-react!IDropdownProps#theme:member'
-  - uid: 'office-ui-fabric-react!IDropdownProps#defaultSelectedKeys:member'
-    summary: >-
-      Keys that will be initially used to set selected items. This prop is only used when `multiSelect` is true (use
-      `defaultSelectedKey` for single select). Mutually exclusive with `selectedKeys`<!-- -->.
-    name: defaultSelectedKeys
     fullName: defaultSelectedKeys
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Keys that will be initially used to set selected items. This prop is only
+      used when `multiSelect` is true (use `defaultSelectedKey` for single
+      select). Mutually exclusive with `selectedKeys`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'defaultSelectedKeys?: string[] | number[];'
       return:
-        type:
-          - 'string[] | number[]'
-  - uid: 'office-ui-fabric-react!IDropdownProps#dropdownWidth:member'
-    summary: 'Custom width for dropdown. If value is 0, width of the input field is used.'
-    name: dropdownWidth
+        type: 'string[] | number[]'
+  - name: dropdownWidth
+    uid: 'office-ui-fabric-react!IDropdownProps#dropdownWidth:member'
+    package: office-ui-fabric-react!
     fullName: dropdownWidth
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Custom width for dropdown. If value is 0, width of the input field is
+      used.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'dropdownWidth?: number;'
       return:
-        type:
-          - number
-  - uid: 'office-ui-fabric-react!IDropdownProps#isDisabled:member'
-    summary: 'Deprecated at v0.52.0, use `disabled` instead.'
-    deprecated:
-      content: Use `disabled` instead.
-    name: isDisabled
+        type: number
+  - name: isDisabled
+    uid: 'office-ui-fabric-react!IDropdownProps#isDisabled:member'
+    package: office-ui-fabric-react!
     fullName: isDisabled
-    langs:
-      - typeScript
-    type: property
+    summary: 'Deprecated at v0.52.0, use `disabled` instead.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Use `disabled` instead.
     syntax:
       content: 'isDisabled?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'office-ui-fabric-react!IDropdownProps#keytipProps:member'
-    summary: Optional keytip for this dropdown
-    name: keytipProps
+        type: boolean
+  - name: keytipProps
+    uid: 'office-ui-fabric-react!IDropdownProps#keytipProps:member'
+    package: office-ui-fabric-react!
     fullName: keytipProps
-    langs:
-      - typeScript
-    type: property
+    summary: Optional keytip for this dropdown
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'keytipProps?: IKeytipProps;'
       return:
-        type:
-          - IKeytipProps
-  - uid: 'office-ui-fabric-react!IDropdownProps#multiSelectDelimiter:member'
-    summary: 'When multiple items are selected, this will be used to separate values in the dropdown input.'
-    name: multiSelectDelimiter
+        type: IKeytipProps
+  - name: multiSelectDelimiter
+    uid: 'office-ui-fabric-react!IDropdownProps#multiSelectDelimiter:member'
+    package: office-ui-fabric-react!
     fullName: multiSelectDelimiter
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      When multiple items are selected, this will be used to separate values in
+      the dropdown input.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'multiSelectDelimiter?: string;'
       return:
-        type:
-          - string
-  - uid: 'office-ui-fabric-react!IDropdownProps#notifyOnReselect:member'
-    summary: >-
-      If true, `onChange` will still be called when an already-selected item is clicked again in single select mode.
-      (Normally it would not be called in this case.)
-    name: notifyOnReselect
+        type: string
+  - name: notifyOnReselect
+    uid: 'office-ui-fabric-react!IDropdownProps#notifyOnReselect:member'
+    package: office-ui-fabric-react!
     fullName: notifyOnReselect
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      If true, `onChange` will still be called when an already-selected item is
+      clicked again in single select mode. (Normally it would not be called in
+      this case.)
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'notifyOnReselect?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'office-ui-fabric-react!IDropdownProps#onChange:member'
-    summary: Callback for when the selected option changes.
-    name: onChange
+        type: boolean
+  - name: onChange
+    uid: 'office-ui-fabric-react!IDropdownProps#onChange:member'
+    package: office-ui-fabric-react!
     fullName: onChange
-    langs:
-      - typeScript
-    type: property
+    summary: Callback for when the selected option changes.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'onChange?: (event: React.FormEvent<HTMLDivElement>, option?: IDropdownOption, index?: number) => void;'
+      content: >-
+        onChange?: (event: React.FormEvent<HTMLDivElement>, option?:
+        IDropdownOption, index?: number) => void;
       return:
-        type:
-          - '(event: React.FormEvent<HTMLDivElement>, option?: IDropdownOption, index?: number) => void'
-  - uid: 'office-ui-fabric-react!IDropdownProps#onChanged:member'
-    deprecated:
-      content: Use `onChange` instead.
-    name: onChanged
+        type: >-
+          (event: React.FormEvent&lt;HTMLDivElement&gt;, option?:
+          IDropdownOption, index?: number) =&gt; void
+  - name: onChanged
+    uid: 'office-ui-fabric-react!IDropdownProps#onChanged:member'
+    package: office-ui-fabric-react!
     fullName: onChanged
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Use `onChange` instead.
     syntax:
       content: 'onChanged?: (option: IDropdownOption, index?: number) => void;'
       return:
-        type:
-          - '(option: IDropdownOption, index?: number) => void'
-  - uid: 'office-ui-fabric-react!IDropdownProps#onRenderCaretDown:member'
-    summary: Custom renderer for chevron icon
-    name: onRenderCaretDown
+        type: '(option: IDropdownOption, index?: number) =&gt; void'
+  - name: onRenderCaretDown
+    uid: 'office-ui-fabric-react!IDropdownProps#onRenderCaretDown:member'
+    package: office-ui-fabric-react!
     fullName: onRenderCaretDown
-    langs:
-      - typeScript
-    type: property
+    summary: Custom renderer for chevron icon
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'onRenderCaretDown?: IRenderFunction<IDropdownProps>;'
       return:
-        type:
-          - IRenderFunction<IDropdownProps>
-  - uid: 'office-ui-fabric-react!IDropdownProps#onRenderLabel:member'
-    summary: Custom renderer for the label.
-    name: onRenderLabel
+        type: IRenderFunction&lt;IDropdownProps&gt;
+  - name: onRenderLabel
+    uid: 'office-ui-fabric-react!IDropdownProps#onRenderLabel:member'
+    package: office-ui-fabric-react!
     fullName: onRenderLabel
-    langs:
-      - typeScript
-    type: property
+    summary: Custom renderer for the label.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'onRenderLabel?: IRenderFunction<IDropdownProps>;'
       return:
-        type:
-          - IRenderFunction<IDropdownProps>
-  - uid: 'office-ui-fabric-react!IDropdownProps#onRenderPlaceholder:member'
-    summary: Custom renderer for placeholder text
-    name: onRenderPlaceholder
+        type: IRenderFunction&lt;IDropdownProps&gt;
+  - name: onRenderPlaceholder
+    uid: 'office-ui-fabric-react!IDropdownProps#onRenderPlaceholder:member'
+    package: office-ui-fabric-react!
     fullName: onRenderPlaceholder
-    langs:
-      - typeScript
-    type: property
+    summary: Custom renderer for placeholder text
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'onRenderPlaceholder?: IRenderFunction<IDropdownProps>;'
       return:
-        type:
-          - IRenderFunction<IDropdownProps>
-  - uid: 'office-ui-fabric-react!IDropdownProps#onRenderPlaceHolder:member'
-    summary: Custom renderer for placeholder text
-    deprecated:
-      content: Use `onRenderPlaceholder`
-    name: onRenderPlaceHolder
+        type: IRenderFunction&lt;IDropdownProps&gt;
+  - name: onRenderPlaceHolder
+    uid: 'office-ui-fabric-react!IDropdownProps#onRenderPlaceHolder:member'
+    package: office-ui-fabric-react!
     fullName: onRenderPlaceHolder
-    langs:
-      - typeScript
-    type: property
+    summary: Custom renderer for placeholder text
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Use `onRenderPlaceholder`
     syntax:
       content: 'onRenderPlaceHolder?: IRenderFunction<IDropdownProps>;'
       return:
-        type:
-          - IRenderFunction<IDropdownProps>
-  - uid: 'office-ui-fabric-react!IDropdownProps#onRenderTitle:member'
-    summary: Custom renderer for selected option displayed in input
-    name: onRenderTitle
+        type: IRenderFunction&lt;IDropdownProps&gt;
+  - name: onRenderTitle
+    uid: 'office-ui-fabric-react!IDropdownProps#onRenderTitle:member'
+    package: office-ui-fabric-react!
     fullName: onRenderTitle
-    langs:
-      - typeScript
-    type: property
+    summary: Custom renderer for selected option displayed in input
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'onRenderTitle?: IRenderFunction<IDropdownOption[]>;'
       return:
-        type:
-          - 'IRenderFunction<IDropdownOption[]>'
-  - uid: 'office-ui-fabric-react!IDropdownProps#options:member'
-    summary: >-
-      Options for the dropdown. If using `defaultSelectedKey` or `defaultSelectedKeys`<!-- -->, options must be pure for
-      correct behavior.
-    name: options
+        type: 'IRenderFunction&lt;IDropdownOption[]&gt;'
+  - name: options
+    uid: 'office-ui-fabric-react!IDropdownProps#options:member'
+    package: office-ui-fabric-react!
     fullName: options
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Options for the dropdown. If using `defaultSelectedKey` or
+      `defaultSelectedKeys`<!-- -->, options must be pure for correct behavior.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'options: IDropdownOption[];'
       return:
-        type:
-          - 'IDropdownOption[]'
-  - uid: 'office-ui-fabric-react!IDropdownProps#placeHolder:member'
-    summary: Input placeholder text. Displayed until an option is selected.
-    deprecated:
-      content: Use `placeholder`
-    name: placeHolder
+        type: 'IDropdownOption[]'
+  - name: placeHolder
+    uid: 'office-ui-fabric-react!IDropdownProps#placeHolder:member'
+    package: office-ui-fabric-react!
     fullName: placeHolder
-    langs:
-      - typeScript
-    type: property
+    summary: Input placeholder text. Displayed until an option is selected.
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Use `placeholder`
     syntax:
       content: 'placeHolder?: string;'
       return:
-        type:
-          - string
-  - uid: 'office-ui-fabric-react!IDropdownProps#responsiveMode:member'
-    summary: >-
-      By default, the dropdown will render the standard way for screen sizes `large` and above, or in a panel on `small`
-      and `medium` screens. Manually set this prop to override this behavior.
-    name: responsiveMode
+        type: string
+  - name: responsiveMode
+    uid: 'office-ui-fabric-react!IDropdownProps#responsiveMode:member'
+    package: office-ui-fabric-react!
     fullName: responsiveMode
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      By default, the dropdown will render the standard way for screen sizes
+      `large` and above, or in a panel on `small` and `medium` screens. Manually
+      set this prop to override this behavior.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'responsiveMode?: ResponsiveMode;'
       return:
-        type:
-          - ResponsiveMode
-  - uid: 'office-ui-fabric-react!IDropdownProps#selectedKeys:member'
-    summary: >-
-      Keys of the selected items, only used when `multiSelect` is true (use `selectedKey` for single select). If you
-      provide this, you must maintain selection state by observing onChange events and passing a new prop value in when
-      changed. Passing null will clear the selection. Mutually exclusive with `defaultSelectedKeys`<!-- -->.
-    name: selectedKeys
+        type: ResponsiveMode
+  - name: selectedKeys
+    uid: 'office-ui-fabric-react!IDropdownProps#selectedKeys:member'
+    package: office-ui-fabric-react!
     fullName: selectedKeys
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Keys of the selected items, only used when `multiSelect` is true (use
+      `selectedKey` for single select). If you provide this, you must maintain
+      selection state by observing onChange events and passing a new prop value
+      in when changed. Passing null will clear the selection. Mutually exclusive
+      with `defaultSelectedKeys`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'selectedKeys?: string[] | number[] | null;'
       return:
-        type:
-          - 'string[] | number[] | null'
-  - uid: 'office-ui-fabric-react!IDropdownProps#styles:member'
-    summary: Call to provide customized styling that will layer on top of the variant rules.
-    name: styles
+        type: 'string[] | number[] | null'
+  - name: styles
+    uid: 'office-ui-fabric-react!IDropdownProps#styles:member'
+    package: office-ui-fabric-react!
     fullName: styles
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Call to provide customized styling that will layer on top of the variant
+      rules.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'styles?: IStyleFunctionOrObject<IDropdownStyleProps, IDropdownStyles>;'
       return:
-        type:
-          - 'IStyleFunctionOrObject<IDropdownStyleProps, IDropdownStyles>'
-  - uid: 'office-ui-fabric-react!IDropdownProps#theme:member'
-    summary: Theme provided by higher order component.
-    name: theme
+        type: 'IStyleFunctionOrObject&lt;IDropdownStyleProps, IDropdownStyles&gt;'
+  - name: theme
+    uid: 'office-ui-fabric-react!IDropdownProps#theme:member'
+    package: office-ui-fabric-react!
     fullName: theme
-    langs:
-      - typeScript
-    type: property
+    summary: Theme provided by higher order component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'theme?: ITheme;'
       return:
-        type:
-          - '@fluentui/theme!ITheme:interface'
+        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
+extends: 'ISelectableDroppableTextProps&lt;IDropdown, HTMLDivElement&gt; '

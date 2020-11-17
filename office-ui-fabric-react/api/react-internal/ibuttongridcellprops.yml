@@ -1,281 +1,263 @@
-### YamlMime:UniversalReference
-items:
-  - uid: '@fluentui/react-internal!IButtonGridCellProps:interface'
-    name: IButtonGridCellProps
-    fullName: IButtonGridCellProps
-    langs:
-      - typeScript
-    type: interface
-    syntax:
-      typeParameters:
-        - id: T
+### YamlMime:TSType
+name: IButtonGridCellProps
+uid: '@fluentui/react-internal!IButtonGridCellProps:interface'
+package: '@fluentui/react-internal!'
+fullName: IButtonGridCellProps
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: cellDisabledStyle
+    uid: '@fluentui/react-internal!IButtonGridCellProps#cellDisabledStyle:member'
     package: '@fluentui/react-internal!'
-    children:
-      - '@fluentui/react-internal!IButtonGridCellProps#cellDisabledStyle:member'
-      - '@fluentui/react-internal!IButtonGridCellProps#cellIsSelectedStyle:member'
-      - '@fluentui/react-internal!IButtonGridCellProps#className:member'
-      - '@fluentui/react-internal!IButtonGridCellProps#disabled:member'
-      - '@fluentui/react-internal!IButtonGridCellProps#getClassNames:member'
-      - '@fluentui/react-internal!IButtonGridCellProps#id:member'
-      - '@fluentui/react-internal!IButtonGridCellProps#index:member'
-      - '@fluentui/react-internal!IButtonGridCellProps#item:member'
-      - '@fluentui/react-internal!IButtonGridCellProps#label:member'
-      - '@fluentui/react-internal!IButtonGridCellProps#onClick:member'
-      - '@fluentui/react-internal!IButtonGridCellProps#onFocus:member'
-      - '@fluentui/react-internal!IButtonGridCellProps#onHover:member'
-      - '@fluentui/react-internal!IButtonGridCellProps#onKeyDown:member'
-      - '@fluentui/react-internal!IButtonGridCellProps#onMouseEnter:member'
-      - '@fluentui/react-internal!IButtonGridCellProps#onMouseLeave:member'
-      - '@fluentui/react-internal!IButtonGridCellProps#onMouseMove:member'
-      - '@fluentui/react-internal!IButtonGridCellProps#onRenderItem:member'
-      - '@fluentui/react-internal!IButtonGridCellProps#onWheel:member'
-      - '@fluentui/react-internal!IButtonGridCellProps#role:member'
-      - '@fluentui/react-internal!IButtonGridCellProps#selected:member'
-  - uid: '@fluentui/react-internal!IButtonGridCellProps#cellDisabledStyle:member'
-    summary: 'Optional, the CSS class used for when the cell is disabled'
-    name: cellDisabledStyle
     fullName: cellDisabledStyle
-    langs:
-      - typeScript
-    type: property
+    summary: 'Optional, the CSS class used for when the cell is disabled'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'cellDisabledStyle?: string[];'
       return:
-        type:
-          - 'string[]'
-  - uid: '@fluentui/react-internal!IButtonGridCellProps#cellIsSelectedStyle:member'
-    summary: 'Optional, the CSS class used for when the cell is selected'
-    name: cellIsSelectedStyle
+        type: 'string[]'
+  - name: cellIsSelectedStyle
+    uid: '@fluentui/react-internal!IButtonGridCellProps#cellIsSelectedStyle:member'
+    package: '@fluentui/react-internal!'
     fullName: cellIsSelectedStyle
-    langs:
-      - typeScript
-    type: property
+    summary: 'Optional, the CSS class used for when the cell is selected'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'cellIsSelectedStyle?: string[];'
       return:
-        type:
-          - 'string[]'
-  - uid: '@fluentui/react-internal!IButtonGridCellProps#className:member'
-    summary: 'Optional, className(s) to apply'
-    name: className
+        type: 'string[]'
+  - name: className
+    uid: '@fluentui/react-internal!IButtonGridCellProps#className:member'
+    package: '@fluentui/react-internal!'
     fullName: className
-    langs:
-      - typeScript
-    type: property
+    summary: 'Optional, className(s) to apply'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'className?: string;'
       return:
-        type:
-          - string
-  - uid: '@fluentui/react-internal!IButtonGridCellProps#disabled:member'
-    summary: 'Optional, if the this option should be disabled'
-    name: disabled
+        type: string
+  - name: disabled
+    uid: '@fluentui/react-internal!IButtonGridCellProps#disabled:member'
+    package: '@fluentui/react-internal!'
     fullName: disabled
-    langs:
-      - typeScript
-    type: property
+    summary: 'Optional, if the this option should be disabled'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'disabled?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: '@fluentui/react-internal!IButtonGridCellProps#getClassNames:member'
-    summary: >-
-      Method to provide the classnames to style a button. The default value for this prop is the getClassnames func
-      defined in BaseButton.classnames.
-    name: getClassNames
+        type: boolean
+  - name: getClassNames
+    uid: '@fluentui/react-internal!IButtonGridCellProps#getClassNames:member'
+    package: '@fluentui/react-internal!'
     fullName: getClassNames
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Method to provide the classnames to style a button. The default value for
+      this prop is the getClassnames func defined in BaseButton.classnames.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        getClassNames?: (theme: ITheme, className: string, variantClassName: string, iconClassName: string | undefined,
-        menuIconClassName: string | undefined, disabled: boolean, checked: boolean, expanded: boolean, isSplit: boolean
-        | undefined) => IButtonClassNames;
+        getClassNames?: (theme: ITheme, className: string, variantClassName:
+        string, iconClassName: string | undefined, menuIconClassName: string |
+        undefined, disabled: boolean, checked: boolean, expanded: boolean,
+        isSplit: boolean | undefined) => IButtonClassNames;
       return:
-        type:
-          - >-
-            (theme: ITheme, className: string, variantClassName: string, iconClassName: string | undefined,
-            menuIconClassName: string | undefined, disabled: boolean, checked: boolean, expanded: boolean, isSplit:
-            boolean | undefined) => IButtonClassNames
-  - uid: '@fluentui/react-internal!IButtonGridCellProps#id:member'
-    summary: Arbitrary unique string associated with this option
-    name: id
+        type: >-
+          (theme: ITheme, className: string, variantClassName: string,
+          iconClassName: string | undefined, menuIconClassName: string |
+          undefined, disabled: boolean, checked: boolean, expanded: boolean,
+          isSplit: boolean | undefined) =&gt; IButtonClassNames
+  - name: id
+    uid: '@fluentui/react-internal!IButtonGridCellProps#id:member'
+    package: '@fluentui/react-internal!'
     fullName: id
-    langs:
-      - typeScript
-    type: property
+    summary: Arbitrary unique string associated with this option
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'id: string;'
       return:
-        type:
-          - string
-  - uid: '@fluentui/react-internal!IButtonGridCellProps#index:member'
-    summary: Index for this option
-    name: index
+        type: string
+  - name: index
+    uid: '@fluentui/react-internal!IButtonGridCellProps#index:member'
+    package: '@fluentui/react-internal!'
     fullName: index
-    langs:
-      - typeScript
-    type: property
+    summary: Index for this option
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'index?: number;'
       return:
-        type:
-          - number
-  - uid: '@fluentui/react-internal!IButtonGridCellProps#item:member'
-    summary: The option that will be made available to the user
-    name: item
+        type: number
+  - name: item
+    uid: '@fluentui/react-internal!IButtonGridCellProps#item:member'
+    package: '@fluentui/react-internal!'
     fullName: item
-    langs:
-      - typeScript
-    type: property
+    summary: The option that will be made available to the user
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'item: T;'
       return:
-        type:
-          - T
-  - uid: '@fluentui/react-internal!IButtonGridCellProps#label:member'
-    summary: 'The label for this item. Visible text if this item is a header, tooltip if is this item is normal'
-    name: label
+        type: T
+  - name: label
+    uid: '@fluentui/react-internal!IButtonGridCellProps#label:member'
+    package: '@fluentui/react-internal!'
     fullName: label
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The label for this item. Visible text if this item is a header, tooltip if
+      is this item is normal
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'label?: string;'
       return:
-        type:
-          - string
-  - uid: '@fluentui/react-internal!IButtonGridCellProps#onClick:member'
-    summary: The on click handler
-    name: onClick
+        type: string
+  - name: onClick
+    uid: '@fluentui/react-internal!IButtonGridCellProps#onClick:member'
+    package: '@fluentui/react-internal!'
     fullName: onClick
-    langs:
-      - typeScript
-    type: property
+    summary: The on click handler
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'onClick?: (item: T) => void;'
       return:
-        type:
-          - '(item: T) => void'
-  - uid: '@fluentui/react-internal!IButtonGridCellProps#onFocus:member'
-    summary: 'Optional, the onFocus handler'
-    name: onFocus
+        type: '(item: T) =&gt; void'
+  - name: onFocus
+    uid: '@fluentui/react-internal!IButtonGridCellProps#onFocus:member'
+    package: '@fluentui/react-internal!'
     fullName: onFocus
-    langs:
-      - typeScript
-    type: property
+    summary: 'Optional, the onFocus handler'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'onFocus?: (item: T) => void;'
       return:
-        type:
-          - '(item: T) => void'
-  - uid: '@fluentui/react-internal!IButtonGridCellProps#onHover:member'
-    summary: 'Optional, the onHover handler'
-    name: onHover
+        type: '(item: T) =&gt; void'
+  - name: onHover
+    uid: '@fluentui/react-internal!IButtonGridCellProps#onHover:member'
+    package: '@fluentui/react-internal!'
     fullName: onHover
-    langs:
-      - typeScript
-    type: property
+    summary: 'Optional, the onHover handler'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'onHover?: (item?: T) => void;'
       return:
-        type:
-          - '(item?: T) => void'
-  - uid: '@fluentui/react-internal!IButtonGridCellProps#onKeyDown:member'
-    summary: 'Optional, onkeydown handler'
-    name: onKeyDown
+        type: '(item?: T) =&gt; void'
+  - name: onKeyDown
+    uid: '@fluentui/react-internal!IButtonGridCellProps#onKeyDown:member'
+    package: '@fluentui/react-internal!'
     fullName: onKeyDown
-    langs:
-      - typeScript
-    type: property
+    summary: 'Optional, onkeydown handler'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'onKeyDown?: (ev: React.KeyboardEvent<HTMLButtonElement>) => void;'
       return:
-        type:
-          - '(ev: React.KeyboardEvent<HTMLButtonElement>) => void'
-  - uid: '@fluentui/react-internal!IButtonGridCellProps#onMouseEnter:member'
-    summary: 'Optional, mouseEnter handler.'
-    name: onMouseEnter
+        type: '(ev: React.KeyboardEvent&lt;HTMLButtonElement&gt;) =&gt; void'
+  - name: onMouseEnter
+    uid: '@fluentui/react-internal!IButtonGridCellProps#onMouseEnter:member'
+    package: '@fluentui/react-internal!'
     fullName: onMouseEnter
-    langs:
-      - typeScript
-    type: property
+    summary: 'Optional, mouseEnter handler.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'onMouseEnter?: (ev: React.MouseEvent<HTMLButtonElement>) => boolean;'
       return:
-        type:
-          - '(ev: React.MouseEvent<HTMLButtonElement>) => boolean'
-  - uid: '@fluentui/react-internal!IButtonGridCellProps#onMouseLeave:member'
-    summary: 'Optional, mouseLeave handler'
-    name: onMouseLeave
+        type: '(ev: React.MouseEvent&lt;HTMLButtonElement&gt;) =&gt; boolean'
+  - name: onMouseLeave
+    uid: '@fluentui/react-internal!IButtonGridCellProps#onMouseLeave:member'
+    package: '@fluentui/react-internal!'
     fullName: onMouseLeave
-    langs:
-      - typeScript
-    type: property
+    summary: 'Optional, mouseLeave handler'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'onMouseLeave?: (ev: React.MouseEvent<HTMLButtonElement>) => void;'
       return:
-        type:
-          - '(ev: React.MouseEvent<HTMLButtonElement>) => void'
-  - uid: '@fluentui/react-internal!IButtonGridCellProps#onMouseMove:member'
-    summary: 'Optional, mouseMove handler'
-    name: onMouseMove
+        type: '(ev: React.MouseEvent&lt;HTMLButtonElement&gt;) =&gt; void'
+  - name: onMouseMove
+    uid: '@fluentui/react-internal!IButtonGridCellProps#onMouseMove:member'
+    package: '@fluentui/react-internal!'
     fullName: onMouseMove
-    langs:
-      - typeScript
-    type: property
+    summary: 'Optional, mouseMove handler'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'onMouseMove?: (ev: React.MouseEvent<HTMLButtonElement>) => boolean;'
       return:
-        type:
-          - '(ev: React.MouseEvent<HTMLButtonElement>) => boolean'
-  - uid: '@fluentui/react-internal!IButtonGridCellProps#onRenderItem:member'
-    summary: The render callback to handle rendering the item
-    name: onRenderItem
+        type: '(ev: React.MouseEvent&lt;HTMLButtonElement&gt;) =&gt; boolean'
+  - name: onRenderItem
+    uid: '@fluentui/react-internal!IButtonGridCellProps#onRenderItem:member'
+    package: '@fluentui/react-internal!'
     fullName: onRenderItem
-    langs:
-      - typeScript
-    type: property
+    summary: The render callback to handle rendering the item
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'onRenderItem: (item: T) => JSX.Element;'
       return:
-        type:
-          - '(item: T) => JSX.Element'
-  - uid: '@fluentui/react-internal!IButtonGridCellProps#onWheel:member'
-    summary: 'Optional, onWheel handler'
-    name: onWheel
+        type: '(item: T) =&gt; JSX.Element'
+  - name: onWheel
+    uid: '@fluentui/react-internal!IButtonGridCellProps#onWheel:member'
+    package: '@fluentui/react-internal!'
     fullName: onWheel
-    langs:
-      - typeScript
-    type: property
+    summary: 'Optional, onWheel handler'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'onWheel?: (ev: React.MouseEvent<HTMLButtonElement>) => void;'
       return:
-        type:
-          - '(ev: React.MouseEvent<HTMLButtonElement>) => void'
-  - uid: '@fluentui/react-internal!IButtonGridCellProps#role:member'
-    summary: The accessible role for this option
-    name: role
+        type: '(ev: React.MouseEvent&lt;HTMLButtonElement&gt;) =&gt; void'
+  - name: role
+    uid: '@fluentui/react-internal!IButtonGridCellProps#role:member'
+    package: '@fluentui/react-internal!'
     fullName: role
-    langs:
-      - typeScript
-    type: property
+    summary: The accessible role for this option
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'role?: string;'
       return:
-        type:
-          - string
-  - uid: '@fluentui/react-internal!IButtonGridCellProps#selected:member'
-    summary: 'Optional, if the cell is currently selected'
-    name: selected
+        type: string
+  - name: selected
+    uid: '@fluentui/react-internal!IButtonGridCellProps#selected:member'
+    package: '@fluentui/react-internal!'
     fullName: selected
-    langs:
-      - typeScript
-    type: property
+    summary: 'Optional, if the cell is currently selected'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'selected?: boolean;'
       return:
-        type:
-          - boolean
+        type: boolean

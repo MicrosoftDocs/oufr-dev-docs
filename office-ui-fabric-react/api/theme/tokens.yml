@@ -1,20 +1,22 @@
-### YamlMime:UniversalReference
-items:
-  - uid: '@fluentui/theme!Tokens:interface'
-    name: Tokens
-    fullName: Tokens
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Tokens
+uid: '@fluentui/theme!Tokens:interface'
+package: '@fluentui/theme!'
+fullName: Tokens
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: color
+    uid: '@fluentui/theme!Tokens#color:member'
     package: '@fluentui/theme!'
-    children:
-      - '@fluentui/theme!Tokens#color:member'
-  - uid: '@fluentui/theme!Tokens#color:member'
-    name: color
     fullName: color
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: |-
         color: {
@@ -23,10 +25,9 @@ items:
                 [key: string]: TokenSetType;
             };
       return:
-        type:
-          - |-
-            {
-                    body: ColorTokenSet & TokenSetType;
-                    brand: ColorTokenSet & TokenSetType;
-                    [key: string]: TokenSetType;
-                }
+        type: |-
+          {
+                  body: ColorTokenSet & TokenSetType;
+                  brand: ColorTokenSet & TokenSetType;
+                  [key: string]: TokenSetType;
+              }

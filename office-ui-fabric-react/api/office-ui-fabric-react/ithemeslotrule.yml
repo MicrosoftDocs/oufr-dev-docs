@@ -1,116 +1,116 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'office-ui-fabric-react!IThemeSlotRule:interface'
-    name: IThemeSlotRule
-    fullName: IThemeSlotRule
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: IThemeSlotRule
+uid: 'office-ui-fabric-react!IThemeSlotRule:interface'
+package: office-ui-fabric-react!
+fullName: IThemeSlotRule
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: asShade
+    uid: 'office-ui-fabric-react!IThemeSlotRule#asShade:member'
     package: office-ui-fabric-react!
-    children:
-      - 'office-ui-fabric-react!IThemeSlotRule#asShade:member'
-      - 'office-ui-fabric-react!IThemeSlotRule#color:member'
-      - 'office-ui-fabric-react!IThemeSlotRule#dependentRules:member'
-      - 'office-ui-fabric-react!IThemeSlotRule#inherits:member'
-      - 'office-ui-fabric-react!IThemeSlotRule#isBackgroundShade:member'
-      - 'office-ui-fabric-react!IThemeSlotRule#isCustomized:member'
-      - 'office-ui-fabric-react!IThemeSlotRule#name:member'
-      - 'office-ui-fabric-react!IThemeSlotRule#value:member'
-  - uid: 'office-ui-fabric-react!IThemeSlotRule#asShade:member'
-    summary: 'If set, this slot is the specified shade of the slot it inherits from.'
-    name: asShade
     fullName: asShade
-    langs:
-      - typeScript
-    type: property
+    summary: 'If set, this slot is the specified shade of the slot it inherits from.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'asShade?: Shade;'
       return:
-        type:
-          - Shade
-  - uid: 'office-ui-fabric-react!IThemeSlotRule#color:member'
-    summary: The actual color this theme slot is if it is a color.
-    name: color
+        type: Shade
+  - name: color
+    uid: 'office-ui-fabric-react!IThemeSlotRule#color:member'
+    package: office-ui-fabric-react!
     fullName: color
-    langs:
-      - typeScript
-    type: property
+    summary: The actual color this theme slot is if it is a color.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'color?: IColor;'
       return:
-        type:
-          - IColor
-  - uid: 'office-ui-fabric-react!IThemeSlotRule#dependentRules:member'
-    summary: >-
-      A collection of rules that inherit from this one. It is the responsibility of the inheriting rule to add itself to
-      its parent's dependentRules collection.
-    name: dependentRules
+        type: IColor
+  - name: dependentRules
+    uid: 'office-ui-fabric-react!IThemeSlotRule#dependentRules:member'
+    package: office-ui-fabric-react!
     fullName: dependentRules
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      A collection of rules that inherit from this one. It is the responsibility
+      of the inheriting rule to add itself to its parent's dependentRules
+      collection.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'dependentRules: IThemeSlotRule[];'
       return:
-        type:
-          - 'IThemeSlotRule[]'
-  - uid: 'office-ui-fabric-react!IThemeSlotRule#inherits:member'
-    summary: The theme slot this slot is based on.
-    name: inherits
+        type: 'IThemeSlotRule[]'
+  - name: inherits
+    uid: 'office-ui-fabric-react!IThemeSlotRule#inherits:member'
+    package: office-ui-fabric-react!
     fullName: inherits
-    langs:
-      - typeScript
-    type: property
+    summary: The theme slot this slot is based on.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'inherits?: IThemeSlotRule;'
       return:
-        type:
-          - IThemeSlotRule
-  - uid: 'office-ui-fabric-react!IThemeSlotRule#isBackgroundShade:member'
-    summary: 'Whether this slot is a background shade, which uses different logic for generating its inheriting-as-shade value.'
-    name: isBackgroundShade
+        type: IThemeSlotRule
+  - name: isBackgroundShade
+    uid: 'office-ui-fabric-react!IThemeSlotRule#isBackgroundShade:member'
+    package: office-ui-fabric-react!
     fullName: isBackgroundShade
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Whether this slot is a background shade, which uses different logic for
+      generating its inheriting-as-shade value.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'isBackgroundShade?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'office-ui-fabric-react!IThemeSlotRule#isCustomized:member'
-    summary: 'Whether this slot has been manually overridden (else, it was automatically generated based on inheritance).'
-    name: isCustomized
+        type: boolean
+  - name: isCustomized
+    uid: 'office-ui-fabric-react!IThemeSlotRule#isCustomized:member'
+    package: office-ui-fabric-react!
     fullName: isCustomized
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Whether this slot has been manually overridden (else, it was automatically
+      generated based on inheritance).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'isCustomized?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'office-ui-fabric-react!IThemeSlotRule#name:member'
-    summary: The name of this theme slot.
-    name: name
+        type: boolean
+  - name: name
+    uid: 'office-ui-fabric-react!IThemeSlotRule#name:member'
+    package: office-ui-fabric-react!
     fullName: name
-    langs:
-      - typeScript
-    type: property
+    summary: The name of this theme slot.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'name: string;'
       return:
-        type:
-          - string
-  - uid: 'office-ui-fabric-react!IThemeSlotRule#value:member'
-    summary: The value of this slot if it is NOT a color. Must be falsey if not a color.
-    name: value
+        type: string
+  - name: value
+    uid: 'office-ui-fabric-react!IThemeSlotRule#value:member'
+    package: office-ui-fabric-react!
     fullName: value
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The value of this slot if it is NOT a color. Must be falsey if not a
+      color.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'value?: string;'
       return:
-        type:
-          - string
+        type: string

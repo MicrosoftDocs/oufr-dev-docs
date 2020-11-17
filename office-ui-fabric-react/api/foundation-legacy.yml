@@ -1,283 +1,225 @@
-### YamlMime:UniversalReference
-items:
-  - uid: '@fluentui/foundation-legacy!'
-    name: '@fluentui/foundation-legacy'
-    fullName: '@fluentui/foundation-legacy'
-    langs:
-      - typeScript
-    type: package
-    children:
-      - '@fluentui/foundation-legacy!createComponent:function(1)'
-      - '@fluentui/foundation-legacy!createFactory:function(1)'
-      - '@fluentui/foundation-legacy!getControlledDerivedProps:function(1)'
-      - '@fluentui/foundation-legacy!getSlots:function(1)'
-      - '@fluentui/foundation-legacy!IComponentOptions:interface'
-      - '@fluentui/foundation-legacy!IControlledStateOptions:interface'
-      - '@fluentui/foundation-legacy!IDefaultSlotProps:interface'
-      - '@fluentui/foundation-legacy!IFactoryOptions:interface'
-      - '@fluentui/foundation-legacy!IProcessedSlotProps:interface'
-      - '@fluentui/foundation-legacy!ISlot:interface'
-      - '@fluentui/foundation-legacy!ISlotCreator:interface'
-      - '@fluentui/foundation-legacy!ISlotOptions:interface'
-      - '@fluentui/foundation-legacy!IStyleableComponentProps:interface'
-      - '@fluentui/foundation-legacy!IThemeProviderProps:interface'
-      - '@fluentui/foundation-legacy!ITokenBaseArray:interface'
-      - '@fluentui/foundation-legacy!useControlledState:function(1)'
-      - '@fluentui/foundation-legacy!withSlots:function(1)'
-  - uid: '@fluentui/foundation-legacy!createComponent:function(1)'
+### YamlMime:TSPackage
+uid: '@fluentui/foundation-legacy!'
+name: '@fluentui/foundation-legacy'
+type: package
+summary: ''
+interfaces:
+  - '@fluentui/foundation-legacy!IComponentOptions:interface'
+  - '@fluentui/foundation-legacy!IControlledStateOptions:interface'
+  - '@fluentui/foundation-legacy!IDefaultSlotProps:interface'
+  - '@fluentui/foundation-legacy!IFactoryOptions:interface'
+  - '@fluentui/foundation-legacy!IProcessedSlotProps:interface'
+  - '@fluentui/foundation-legacy!ISlot:interface'
+  - '@fluentui/foundation-legacy!ISlotCreator:interface'
+  - '@fluentui/foundation-legacy!ISlotOptions:interface'
+  - '@fluentui/foundation-legacy!IStyleableComponentProps:interface'
+  - '@fluentui/foundation-legacy!IThemeProviderProps:interface'
+  - '@fluentui/foundation-legacy!ITokenBaseArray:interface'
+functions:
+  - name: 'createComponent(view, options)'
+    uid: '@fluentui/foundation-legacy!createComponent:function(1)'
+    package: '@fluentui/foundation-legacy!'
     summary: >-
-      Assembles a higher order component based on the following: styles, theme, view, and state. Imposes a separation of
-      concern and centralizes styling processing to increase ease of use and robustness in how components use and apply
-      styling and theming.
+      Assembles a higher order component based on the following: styles, theme,
+      view, and state. Imposes a separation of concern and centralizes styling
+      processing to increase ease of use and robustness in how components use
+      and apply styling and theming.
 
 
-      Automatically merges and applies themes and styles with theme / styleprops having the highest priority. State
-      component, if provided, is passed in props for processing. Props from state / user are automatically processed and
-      styled before finally being passed to view.
+      Automatically merges and applies themes and styles with theme / styleprops
+      having the highest priority. State component, if provided, is passed in
+      props for processing. Props from state / user are automatically processed
+      and styled before finally being passed to view.
 
 
-      State components should contain all stateful behavior and should not generate any JSX, but rather simply call the
-      view prop.
+      State components should contain all stateful behavior and should not
+      generate any JSX, but rather simply call the view prop.
 
 
-      Views should simply be stateless pure functions that receive all props needed for rendering their output.
+      Views should simply be stateless pure functions that receive all props
+      needed for rendering their output.
 
 
-      State component is optional. If state is not provided, created component is essentially a functional stateless
-      component.
-    name: 'createComponent(view, options)'
-    fullName: 'createComponent(view, options)'
-    langs:
-      - typeScript
-    type: function
+      State component is optional. If state is not provided, created component
+      is essentially a functional stateless component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        export declare function createComponent<TComponentProps extends ValidProps, TTokens, TStyleSet extends
-        IStyleSet<TStyleSet>, TViewProps extends TComponentProps = TComponentProps, TStatics = {}>(view:
-        IViewComponent<TViewProps>, options?: IComponentOptions<TComponentProps, TTokens, TStyleSet, TViewProps,
-        TStatics>): React.FunctionComponent<TComponentProps> & TStatics;
-      return:
-        type:
-          - React.FunctionComponent<TComponentProps> & TStatics
-        description: ''
+        export declare function createComponent<TComponentProps extends
+        ValidProps, TTokens, TStyleSet extends IStyleSet<TStyleSet>, TViewProps
+        extends TComponentProps = TComponentProps, TStatics = {}>(view:
+        IViewComponent<TViewProps>, options?: IComponentOptions<TComponentProps,
+        TTokens, TStyleSet, TViewProps, TStatics>):
+        React.FunctionComponent<TComponentProps> & TStatics;
       parameters:
         - id: view
           description: ''
-          type:
-            - IViewComponent<TViewProps>
+          type: IViewComponent&lt;TViewProps&gt;
         - id: options
           description: component Component options. See IComponentOptions for more detail.
-          type:
-            - 'IComponentOptions<TComponentProps, TTokens, TStyleSet, TViewProps, TStatics>'
-      typeParameters:
-        - id: TComponentProps
-          type:
-            - ValidProps
-        - id: TTokens
-        - id: TStyleSet
-          type:
-            - IStyleSet<TStyleSet>
-        - id: TViewProps
-          type:
-            - 'TComponentProps '
-        - id: TStatics
-  - uid: '@fluentui/foundation-legacy!createFactory:function(1)'
-    summary: This function creates factories that render ouput depending on the user ISlotProp props passed in.
-    name: 'createFactory(DefaultComponent, options)'
-    fullName: 'createFactory(DefaultComponent, options)'
-    langs:
-      - typeScript
-    type: function
+          type: >-
+            IComponentOptions&lt;TComponentProps, TTokens, TStyleSet,
+            TViewProps, TStatics&gt;
+      return:
+        type: React.FunctionComponent&lt;TComponentProps&gt; & TStatics
+        description: ''
+  - name: 'createFactory(DefaultComponent, options)'
+    uid: '@fluentui/foundation-legacy!createFactory:function(1)'
+    package: '@fluentui/foundation-legacy!'
+    summary: >-
+      This function creates factories that render ouput depending on the user
+      ISlotProp props passed in.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        export declare function createFactory<TProps extends ValidProps, TShorthandProp extends ValidShorthand =
-        never>(DefaultComponent: React.ComponentType<TProps>, options?: IFactoryOptions<TProps>): ISlotFactory<TProps,
-        TShorthandProp>;
-      return:
-        type:
-          - 'ISlotFactory<TProps, TShorthandProp>'
-        description: ISlotFactory function used for rendering slots.
+        export declare function createFactory<TProps extends ValidProps,
+        TShorthandProp extends ValidShorthand = never>(DefaultComponent:
+        React.ComponentType<TProps>, options?: IFactoryOptions<TProps>):
+        ISlotFactory<TProps, TShorthandProp>;
       parameters:
         - id: DefaultComponent
           description: Base component to render when not overridden by user props.
-          type:
-            - React.ComponentType<TProps>
+          type: React.ComponentType&lt;TProps&gt;
         - id: options
-          description: 'Factory options, including defaultProp value for shorthand prop mapping.'
-          type:
-            - IFactoryOptions<TProps>
-      typeParameters:
-        - id: TProps
-          type:
-            - ValidProps
-        - id: TShorthandProp
-          type:
-            - 'ValidShorthand '
-  - uid: '@fluentui/foundation-legacy!getControlledDerivedProps:function(1)'
-    summary: Simple controlled helper that gives priority to props value and falls back to derived value.
-    name: 'getControlledDerivedProps(props, propName, derivedValue)'
-    fullName: 'getControlledDerivedProps(props, propName, derivedValue)'
-    langs:
-      - typeScript
-    type: function
+          description: >-
+            Factory options, including defaultProp value for shorthand prop
+            mapping.
+          type: IFactoryOptions&lt;TProps&gt;
+      return:
+        type: 'ISlotFactory&lt;TProps, TShorthandProp&gt;'
+        description: ISlotFactory function used for rendering slots.
+  - name: 'getControlledDerivedProps(props, propName, derivedValue)'
+    uid: '@fluentui/foundation-legacy!getControlledDerivedProps:function(1)'
+    package: '@fluentui/foundation-legacy!'
+    summary: >-
+      Simple controlled helper that gives priority to props value and falls back
+      to derived value.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        export declare function getControlledDerivedProps<TProps, TProp extends keyof TProps>(props: Readonly<TProps>,
-        propName: TProp, derivedValue: TProps[TProp]): TProps[TProp];
-      return:
-        type:
-          - 'TProps[TProp]'
-        description: ''
+        export declare function getControlledDerivedProps<TProps, TProp extends
+        keyof TProps>(props: Readonly<TProps>, propName: TProp, derivedValue:
+        TProps[TProp]): TProps[TProp];
       parameters:
         - id: props
           description: The props object containing controlled prop values.
-          type:
-            - Readonly<TProps>
+          type: Readonly&lt;TProps&gt;
         - id: propName
           description: The controlled prop name.
-          type:
-            - TProp
+          type: TProp
         - id: derivedValue
           description: Derived value. Returned when controlled value is not present.
-          type:
-            - 'TProps[TProp]'
-      typeParameters:
-        - id: TProps
-        - id: TProp
-          type:
-            - keyof TProps
-  - uid: '@fluentui/foundation-legacy!getSlots:function(1)'
-    summary: This function generates slots that can be used in JSX given a definition of slots and their corresponding types.
-    name: 'getSlots(userProps, slots)'
-    fullName: 'getSlots(userProps, slots)'
-    langs:
-      - typeScript
-    type: function
+          type: 'TProps[TProp]'
+      return:
+        type: 'TProps[TProp]'
+        description: ''
+  - name: 'getSlots(userProps, slots)'
+    uid: '@fluentui/foundation-legacy!getSlots:function(1)'
+    package: '@fluentui/foundation-legacy!'
+    summary: >-
+      This function generates slots that can be used in JSX given a definition
+      of slots and their corresponding types.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        export declare function getSlots<TComponentProps extends ISlottableProps<TComponentSlots>,
-        TComponentSlots>(userProps: TComponentProps, slots: ISlotDefinition<Required<TComponentSlots>>):
+        export declare function getSlots<TComponentProps extends
+        ISlottableProps<TComponentSlots>, TComponentSlots>(userProps:
+        TComponentProps, slots: ISlotDefinition<Required<TComponentSlots>>):
         ISlots<Required<TComponentSlots>>;
-      return:
-        type:
-          - ISlots<Required<TComponentSlots>>
-        description: A set of created slots that components can render in JSX.
       parameters:
         - id: userProps
           description: Props as pass to component.
-          type:
-            - TComponentProps
+          type: TComponentProps
         - id: slots
-          description: Slot definition object defining the default slot component for each slot.
-          type:
-            - ISlotDefinition<Required<TComponentSlots>>
-      typeParameters:
-        - id: TComponentProps
-          type:
-            - ISlottableProps<TComponentSlots>
-        - id: TComponentSlots
-  - uid: '@fluentui/foundation-legacy!useControlledState:function(1)'
+          description: >-
+            Slot definition object defining the default slot component for each
+            slot.
+          type: ISlotDefinition&lt;Required&lt;TComponentSlots&gt;&gt;
+      return:
+        type: ISlots&lt;Required&lt;TComponentSlots&gt;&gt;
+        description: A set of created slots that components can render in JSX.
+  - name: 'useControlledState(props, propName, options)'
+    uid: '@fluentui/foundation-legacy!useControlledState:function(1)'
+    package: '@fluentui/foundation-legacy!'
     summary: >-
-      Controlled state helper that gives priority to props value. Useful for components that have props with both
-      controlled and uncontrolled modes. Any props values will override state, but will not update internal state. If
-      prop is defined and then later undefined, state will revert to its previous value.
-    name: 'useControlledState(props, propName, options)'
-    fullName: 'useControlledState(props, propName, options)'
-    langs:
-      - typeScript
-    type: function
+      Controlled state helper that gives priority to props value. Useful for
+      components that have props with both controlled and uncontrolled modes.
+      Any props values will override state, but will not update internal state.
+      If prop is defined and then later undefined, state will revert to its
+      previous value.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        export declare function useControlledState<TProps, TProp extends keyof TProps, TDefaultProp extends keyof
-        TProps>(props: Readonly<TProps>, propName: TProp, options?: IControlledStateOptions<TProps, TProp,
-        TDefaultProp>): [TProps[TProp] | undefined, React.Dispatch<React.SetStateAction<TProps[TProp]>>];
-      return:
-        type:
-          - '[TProps[TProp] | undefined, React.Dispatch<React.SetStateAction<TProps[TProp]>>]'
-        description: ''
+        export declare function useControlledState<TProps, TProp extends keyof
+        TProps, TDefaultProp extends keyof TProps>(props: Readonly<TProps>,
+        propName: TProp, options?: IControlledStateOptions<TProps, TProp,
+        TDefaultProp>): [TProps[TProp] | undefined,
+        React.Dispatch<React.SetStateAction<TProps[TProp]>>];
       parameters:
         - id: props
           description: The props object containing controlled prop values.
-          type:
-            - Readonly<TProps>
+          type: Readonly&lt;TProps&gt;
         - id: propName
           description: The controlled prop name.
-          type:
-            - TProp
+          type: TProp
         - id: options
-          description: Options. defaultPropValue is only used if defaultPropName (or its value) is undefined.
-          type:
-            - 'IControlledStateOptions<TProps, TProp, TDefaultProp>'
-      typeParameters:
-        - id: TProps
-        - id: TProp
-          type:
-            - keyof TProps
-        - id: TDefaultProp
-          type:
-            - keyof TProps
-  - uid: '@fluentui/foundation-legacy!withSlots:function(1)'
+          description: >-
+            Options. defaultPropValue is only used if defaultPropName (or its
+            value) is undefined.
+          type: 'IControlledStateOptions&lt;TProps, TProp, TDefaultProp&gt;'
+      return:
+        type: >-
+          [TProps[TProp] | undefined,
+          React.Dispatch&lt;React.SetStateAction&lt;TProps[TProp]&gt;&gt;]
+        description: ''
+  - name: 'withSlots(type, props, children)'
+    uid: '@fluentui/foundation-legacy!withSlots:function(1)'
+    package: '@fluentui/foundation-legacy!'
     summary: >-
       This function is required for any module that uses slots.
 
 
-      This function is a slot resolver that automatically evaluates slot functions to generate React elements. A
-      byproduct of this resolver is that it removes slots from the React hierarchy by bypassing React.createElement.
+      This function is a slot resolver that automatically evaluates slot
+      functions to generate React elements. A byproduct of this resolver is that
+      it removes slots from the React hierarchy by bypassing
+      React.createElement.
 
 
-      To use this function on a per-file basis, use the jsx directive targeting withSlots. This directive must be the
-      FIRST LINE in the file to work correctly. Usage of this pragma also requires withSlots import statement.
+      To use this function on a per-file basis, use the jsx directive targeting
+      withSlots. This directive must be the FIRST LINE in the file to work
+      correctly. Usage of this pragma also requires withSlots import statement.
 
 
       See React.createElement
-    name: 'withSlots(type, props, children)'
-    fullName: 'withSlots(type, props, children)'
-    langs:
-      - typeScript
-    type: function
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        export declare function withSlots<P>(type: ISlot<P> | React.FunctionComponent<P> | string, props?:
-        (React.Attributes & P) | null, ...children: React.ReactNode[]): ReturnType<React.FunctionComponent<P>>;
-      return:
-        type:
-          - ReturnType<React.FunctionComponent<P>>
-        description: ''
+        export declare function withSlots<P>(type: ISlot<P> |
+        React.FunctionComponent<P> | string, props?: (React.Attributes & P) |
+        null, ...children: React.ReactNode[]):
+        ReturnType<React.FunctionComponent<P>>;
       parameters:
         - id: type
           description: ''
-          type:
-            - ISlot<P> | React.FunctionComponent<P> | string
+          type: ISlot&lt;P&gt; | React.FunctionComponent&lt;P&gt; | string
         - id: props
           description: ''
-          type:
-            - (React.Attributes & P) | null
+          type: (React.Attributes & P) | null
         - id: children
           description: ''
-          type:
-            - 'React.ReactNode[]'
-      typeParameters:
-        - id: P
-references:
-  - uid: '@fluentui/foundation-legacy!IComponentOptions:interface'
-    name: IComponentOptions
-  - uid: '@fluentui/foundation-legacy!IControlledStateOptions:interface'
-    name: IControlledStateOptions
-  - uid: '@fluentui/foundation-legacy!IDefaultSlotProps:interface'
-    name: IDefaultSlotProps
-  - uid: '@fluentui/foundation-legacy!IFactoryOptions:interface'
-    name: IFactoryOptions
-  - uid: '@fluentui/foundation-legacy!IProcessedSlotProps:interface'
-    name: IProcessedSlotProps
-  - uid: '@fluentui/foundation-legacy!ISlot:interface'
-    name: ISlot
-  - uid: '@fluentui/foundation-legacy!ISlotCreator:interface'
-    name: ISlotCreator
-  - uid: '@fluentui/foundation-legacy!ISlotOptions:interface'
-    name: ISlotOptions
-  - uid: '@fluentui/foundation-legacy!IStyleableComponentProps:interface'
-    name: IStyleableComponentProps
-  - uid: '@fluentui/foundation-legacy!IThemeProviderProps:interface'
-    name: IThemeProviderProps
-  - uid: '@fluentui/foundation-legacy!ITokenBaseArray:interface'
-    name: ITokenBaseArray
+          type: 'React.ReactNode[]'
+      return:
+        type: ReturnType&lt;React.FunctionComponent&lt;P&gt;&gt;
+        description: ''

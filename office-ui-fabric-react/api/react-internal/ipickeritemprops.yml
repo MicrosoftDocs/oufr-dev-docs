@@ -1,124 +1,113 @@
-### YamlMime:UniversalReference
-items:
-  - uid: '@fluentui/react-internal!IPickerItemProps:interface'
-    summary: PickerItem props common for any type of items.
-    name: IPickerItemProps
-    fullName: IPickerItemProps
-    langs:
-      - typeScript
-    type: interface
-    extends:
-      - 'React.AllHTMLAttributes<HTMLElement> '
-    syntax:
-      typeParameters:
-        - id: T
+### YamlMime:TSType
+name: IPickerItemProps
+uid: '@fluentui/react-internal!IPickerItemProps:interface'
+package: '@fluentui/react-internal!'
+fullName: IPickerItemProps
+summary: PickerItem props common for any type of items.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: componentRef
+    uid: '@fluentui/react-internal!IPickerItemProps#componentRef:member'
     package: '@fluentui/react-internal!'
-    children:
-      - '@fluentui/react-internal!IPickerItemProps#componentRef:member'
-      - '@fluentui/react-internal!IPickerItemProps#index:member'
-      - '@fluentui/react-internal!IPickerItemProps#item:member'
-      - '@fluentui/react-internal!IPickerItemProps#key:member'
-      - '@fluentui/react-internal!IPickerItemProps#onItemChange:member'
-      - '@fluentui/react-internal!IPickerItemProps#onRemoveItem:member'
-      - '@fluentui/react-internal!IPickerItemProps#removeButtonAriaLabel:member'
-      - '@fluentui/react-internal!IPickerItemProps#selected:member'
-  - uid: '@fluentui/react-internal!IPickerItemProps#componentRef:member'
-    summary: >-
-      Optional callback to access the IPickerItem interface. Use this instead of ref for accessing the public methods
-      and properties of the component.
-    name: componentRef
     fullName: componentRef
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Optional callback to access the IPickerItem interface. Use this instead of
+      ref for accessing the public methods and properties of the component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'componentRef?: IRefObject<IPickerItem>;'
       return:
-        type:
-          - IRefObject<IPickerItem>
-  - uid: '@fluentui/react-internal!IPickerItemProps#index:member'
-    summary: Index number of the item in the array of picked items.
-    name: index
+        type: IRefObject&lt;IPickerItem&gt;
+  - name: index
+    uid: '@fluentui/react-internal!IPickerItemProps#index:member'
+    package: '@fluentui/react-internal!'
     fullName: index
-    langs:
-      - typeScript
-    type: property
+    summary: Index number of the item in the array of picked items.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'index: number;'
       return:
-        type:
-          - number
-  - uid: '@fluentui/react-internal!IPickerItemProps#item:member'
-    summary: 'The item of Type T (Persona, Tag, or any other custom item provided).'
-    name: item
+        type: number
+  - name: item
+    uid: '@fluentui/react-internal!IPickerItemProps#item:member'
+    package: '@fluentui/react-internal!'
     fullName: item
-    langs:
-      - typeScript
-    type: property
+    summary: 'The item of Type T (Persona, Tag, or any other custom item provided).'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'item: T;'
       return:
-        type:
-          - T
-  - uid: '@fluentui/react-internal!IPickerItemProps#key:member'
-    summary: Unique key for each picked item.
-    name: key
+        type: T
+  - name: key
+    uid: '@fluentui/react-internal!IPickerItemProps#key:member'
+    package: '@fluentui/react-internal!'
     fullName: key
-    langs:
-      - typeScript
-    type: property
+    summary: Unique key for each picked item.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'key?: string | number;'
       return:
-        type:
-          - string | number
-  - uid: '@fluentui/react-internal!IPickerItemProps#onItemChange:member'
-    summary: >-
-      Internal Use only, gives a callback to the renderer to call when an item has changed. This allows the base picker
-      to keep track of changes in the items.
-    name: onItemChange
+        type: string | number
+  - name: onItemChange
+    uid: '@fluentui/react-internal!IPickerItemProps#onItemChange:member'
+    package: '@fluentui/react-internal!'
     fullName: onItemChange
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Internal Use only, gives a callback to the renderer to call when an item
+      has changed. This allows the base picker to keep track of changes in the
+      items.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'onItemChange?: (item: T, index: number) => void;'
       return:
-        type:
-          - '(item: T, index: number) => void'
-  - uid: '@fluentui/react-internal!IPickerItemProps#onRemoveItem:member'
-    summary: Callback issued when the item is removed from the array of picked items.
-    name: onRemoveItem
+        type: '(item: T, index: number) =&gt; void'
+  - name: onRemoveItem
+    uid: '@fluentui/react-internal!IPickerItemProps#onRemoveItem:member'
+    package: '@fluentui/react-internal!'
     fullName: onRemoveItem
-    langs:
-      - typeScript
-    type: property
+    summary: Callback issued when the item is removed from the array of picked items.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'onRemoveItem?: () => void;'
       return:
-        type:
-          - () => void
-  - uid: '@fluentui/react-internal!IPickerItemProps#removeButtonAriaLabel:member'
-    summary: Aria-label for the picked item remove button.
-    name: removeButtonAriaLabel
+        type: () =&gt; void
+  - name: removeButtonAriaLabel
+    uid: '@fluentui/react-internal!IPickerItemProps#removeButtonAriaLabel:member'
+    package: '@fluentui/react-internal!'
     fullName: removeButtonAriaLabel
-    langs:
-      - typeScript
-    type: property
+    summary: Aria-label for the picked item remove button.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'removeButtonAriaLabel?: string;'
       return:
-        type:
-          - string
-  - uid: '@fluentui/react-internal!IPickerItemProps#selected:member'
-    summary: Whether the picked item is selected or not.
-    name: selected
+        type: string
+  - name: selected
+    uid: '@fluentui/react-internal!IPickerItemProps#selected:member'
+    package: '@fluentui/react-internal!'
     fullName: selected
-    langs:
-      - typeScript
-    type: property
+    summary: Whether the picked item is selected or not.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'selected?: boolean;'
       return:
-        type:
-          - boolean
+        type: boolean
+extends: 'React.AllHTMLAttributes&lt;HTMLElement&gt; '

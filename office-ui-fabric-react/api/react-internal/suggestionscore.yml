@@ -1,236 +1,231 @@
-### YamlMime:UniversalReference
-items:
-  - uid: '@fluentui/react-internal!SuggestionsCore:class'
-    summary: 'Class when used with SuggestionsStore, renders a basic suggestions control'
-    name: SuggestionsCore
-    fullName: SuggestionsCore
-    langs:
-      - typeScript
-    type: class
-    extends:
-      - 'React.Component<ISuggestionsCoreProps<T>, {}> '
+### YamlMime:TSType
+name: SuggestionsCore
+uid: '@fluentui/react-internal!SuggestionsCore:class'
+package: '@fluentui/react-internal!'
+fullName: SuggestionsCore
+summary: 'Class when used with SuggestionsStore, renders a basic suggestions control'
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: (constructor)(suggestionsProps)
+    uid: '@fluentui/react-internal!SuggestionsCore:constructor(1)'
     package: '@fluentui/react-internal!'
-    children:
-      - '@fluentui/react-internal!SuggestionsCore#_selectedElement:member'
-      - '@fluentui/react-internal!SuggestionsCore:constructor(1)'
-      - '@fluentui/react-internal!SuggestionsCore#componentDidUpdate:member(1)'
-      - '@fluentui/react-internal!SuggestionsCore#currentIndex:member'
-      - '@fluentui/react-internal!SuggestionsCore#currentSuggestion:member'
-      - '@fluentui/react-internal!SuggestionsCore#deselectAllSuggestions:member(1)'
-      - '@fluentui/react-internal!SuggestionsCore#getCurrentItem:member(1)'
-      - '@fluentui/react-internal!SuggestionsCore#getSuggestionAtIndex:member(1)'
-      - '@fluentui/react-internal!SuggestionsCore#hasSuggestionSelected:member(1)'
-      - '@fluentui/react-internal!SuggestionsCore#nextSuggestion:member(1)'
-      - '@fluentui/react-internal!SuggestionsCore#previousSuggestion:member(1)'
-      - '@fluentui/react-internal!SuggestionsCore#removeSuggestion:member(1)'
-      - '@fluentui/react-internal!SuggestionsCore#render:member(1)'
-      - '@fluentui/react-internal!SuggestionsCore#scrollSelected:member(1)'
-      - '@fluentui/react-internal!SuggestionsCore#selectedElement:member'
-      - '@fluentui/react-internal!SuggestionsCore#setSelectedSuggestion:member(1)'
-  - uid: '@fluentui/react-internal!SuggestionsCore#_selectedElement:member'
-    name: _selectedElement
-    fullName: _selectedElement
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'protected _selectedElement: React.RefObject<HTMLDivElement>;'
-      return:
-        type:
-          - React.RefObject<HTMLDivElement>
-  - uid: '@fluentui/react-internal!SuggestionsCore:constructor(1)'
-    summary: Constructs a new instance of the `SuggestionsCore` class
-    name: (constructor)(suggestionsProps)
     fullName: (constructor)(suggestionsProps)
-    langs:
-      - typeScript
-    type: constructor
+    summary: Constructs a new instance of the `SuggestionsCore` class
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'constructor(suggestionsProps: ISuggestionsCoreProps<T>);'
       parameters:
         - id: suggestionsProps
           description: ''
-          type:
-            - ISuggestionsCoreProps<T>
-  - uid: '@fluentui/react-internal!SuggestionsCore#componentDidUpdate:member(1)'
-    name: componentDidUpdate()
-    fullName: componentDidUpdate()
-    langs:
-      - typeScript
-    type: method
+          type: ISuggestionsCoreProps&lt;T&gt;
+properties:
+  - name: _selectedElement
+    uid: '@fluentui/react-internal!SuggestionsCore#_selectedElement:member'
+    package: '@fluentui/react-internal!'
+    fullName: _selectedElement
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'componentDidUpdate(): void;'
+      content: 'protected _selectedElement: React.RefObject<HTMLDivElement>;'
       return:
-        type:
-          - void
-        description: ''
-  - uid: '@fluentui/react-internal!SuggestionsCore#currentIndex:member'
-    name: currentIndex
+        type: React.RefObject&lt;HTMLDivElement&gt;
+  - name: currentIndex
+    uid: '@fluentui/react-internal!SuggestionsCore#currentIndex:member'
+    package: '@fluentui/react-internal!'
     fullName: currentIndex
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'currentIndex: number;'
       return:
-        type:
-          - number
-  - uid: '@fluentui/react-internal!SuggestionsCore#currentSuggestion:member'
-    name: currentSuggestion
+        type: number
+  - name: currentSuggestion
+    uid: '@fluentui/react-internal!SuggestionsCore#currentSuggestion:member'
+    package: '@fluentui/react-internal!'
     fullName: currentSuggestion
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'currentSuggestion: ISuggestionModel<T> | undefined;'
       return:
-        type:
-          - ISuggestionModel<T> | undefined
-  - uid: '@fluentui/react-internal!SuggestionsCore#deselectAllSuggestions:member(1)'
-    name: deselectAllSuggestions()
-    fullName: deselectAllSuggestions()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'deselectAllSuggestions(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: '@fluentui/react-internal!SuggestionsCore#getCurrentItem:member(1)'
-    name: getCurrentItem()
-    fullName: getCurrentItem()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getCurrentItem(): ISuggestionModel<T>;'
-      return:
-        type:
-          - ISuggestionModel<T>
-        description: ''
-  - uid: '@fluentui/react-internal!SuggestionsCore#getSuggestionAtIndex:member(1)'
-    name: getSuggestionAtIndex(index)
-    fullName: getSuggestionAtIndex(index)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getSuggestionAtIndex(index: number): ISuggestionModel<T>;'
-      return:
-        type:
-          - ISuggestionModel<T>
-        description: ''
-      parameters:
-        - id: index
-          description: ''
-          type:
-            - number
-  - uid: '@fluentui/react-internal!SuggestionsCore#hasSuggestionSelected:member(1)'
-    name: hasSuggestionSelected()
-    fullName: hasSuggestionSelected()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'hasSuggestionSelected(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: '@fluentui/react-internal!SuggestionsCore#nextSuggestion:member(1)'
-    summary: Increments the selected suggestion index
-    name: nextSuggestion()
-    fullName: nextSuggestion()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'nextSuggestion(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: '@fluentui/react-internal!SuggestionsCore#previousSuggestion:member(1)'
-    summary: Decrements the selected suggestion index
-    name: previousSuggestion()
-    fullName: previousSuggestion()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'previousSuggestion(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: '@fluentui/react-internal!SuggestionsCore#removeSuggestion:member(1)'
-    name: removeSuggestion(index)
-    fullName: removeSuggestion(index)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'removeSuggestion(index: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: index
-          description: ''
-          type:
-            - number
-  - uid: '@fluentui/react-internal!SuggestionsCore#render:member(1)'
-    name: render()
-    fullName: render()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'render(): JSX.Element;'
-      return:
-        type:
-          - JSX.Element
-        description: ''
-  - uid: '@fluentui/react-internal!SuggestionsCore#scrollSelected:member(1)'
-    name: scrollSelected()
-    fullName: scrollSelected()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'scrollSelected(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: '@fluentui/react-internal!SuggestionsCore#selectedElement:member'
-    name: selectedElement
+        type: ISuggestionModel&lt;T&gt; | undefined
+  - name: selectedElement
+    uid: '@fluentui/react-internal!SuggestionsCore#selectedElement:member'
+    package: '@fluentui/react-internal!'
     fullName: selectedElement
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'get selectedElement(): HTMLDivElement | undefined;'
       return:
-        type:
-          - HTMLDivElement | undefined
-  - uid: '@fluentui/react-internal!SuggestionsCore#setSelectedSuggestion:member(1)'
-    name: setSelectedSuggestion(index)
-    fullName: setSelectedSuggestion(index)
-    langs:
-      - typeScript
-    type: method
+        type: HTMLDivElement | undefined
+methods:
+  - name: componentDidUpdate()
+    uid: '@fluentui/react-internal!SuggestionsCore#componentDidUpdate:member(1)'
+    package: '@fluentui/react-internal!'
+    fullName: componentDidUpdate()
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'setSelectedSuggestion(index: number): void;'
+      content: 'componentDidUpdate(): void;'
       return:
-        type:
-          - void
+        type: void
         description: ''
+  - name: deselectAllSuggestions()
+    uid: '@fluentui/react-internal!SuggestionsCore#deselectAllSuggestions:member(1)'
+    package: '@fluentui/react-internal!'
+    fullName: deselectAllSuggestions()
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'deselectAllSuggestions(): void;'
+      return:
+        type: void
+        description: ''
+  - name: getCurrentItem()
+    uid: '@fluentui/react-internal!SuggestionsCore#getCurrentItem:member(1)'
+    package: '@fluentui/react-internal!'
+    fullName: getCurrentItem()
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getCurrentItem(): ISuggestionModel<T>;'
+      return:
+        type: ISuggestionModel&lt;T&gt;
+        description: ''
+  - name: getSuggestionAtIndex(index)
+    uid: '@fluentui/react-internal!SuggestionsCore#getSuggestionAtIndex:member(1)'
+    package: '@fluentui/react-internal!'
+    fullName: getSuggestionAtIndex(index)
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getSuggestionAtIndex(index: number): ISuggestionModel<T>;'
       parameters:
         - id: index
           description: ''
-          type:
-            - number
+          type: number
+      return:
+        type: ISuggestionModel&lt;T&gt;
+        description: ''
+  - name: hasSuggestionSelected()
+    uid: '@fluentui/react-internal!SuggestionsCore#hasSuggestionSelected:member(1)'
+    package: '@fluentui/react-internal!'
+    fullName: hasSuggestionSelected()
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'hasSuggestionSelected(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: nextSuggestion()
+    uid: '@fluentui/react-internal!SuggestionsCore#nextSuggestion:member(1)'
+    package: '@fluentui/react-internal!'
+    fullName: nextSuggestion()
+    summary: Increments the selected suggestion index
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'nextSuggestion(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: previousSuggestion()
+    uid: '@fluentui/react-internal!SuggestionsCore#previousSuggestion:member(1)'
+    package: '@fluentui/react-internal!'
+    fullName: previousSuggestion()
+    summary: Decrements the selected suggestion index
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'previousSuggestion(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: removeSuggestion(index)
+    uid: '@fluentui/react-internal!SuggestionsCore#removeSuggestion:member(1)'
+    package: '@fluentui/react-internal!'
+    fullName: removeSuggestion(index)
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'removeSuggestion(index: number): void;'
+      parameters:
+        - id: index
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: render()
+    uid: '@fluentui/react-internal!SuggestionsCore#render:member(1)'
+    package: '@fluentui/react-internal!'
+    fullName: render()
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'render(): JSX.Element;'
+      return:
+        type: JSX.Element
+        description: ''
+  - name: scrollSelected()
+    uid: '@fluentui/react-internal!SuggestionsCore#scrollSelected:member(1)'
+    package: '@fluentui/react-internal!'
+    fullName: scrollSelected()
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'scrollSelected(): void;'
+      return:
+        type: void
+        description: ''
+  - name: setSelectedSuggestion(index)
+    uid: '@fluentui/react-internal!SuggestionsCore#setSelectedSuggestion:member(1)'
+    package: '@fluentui/react-internal!'
+    fullName: setSelectedSuggestion(index)
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setSelectedSuggestion(index: number): void;'
+      parameters:
+        - id: index
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+extends: 'React.Component&lt;ISuggestionsCoreProps&lt;T&gt;, {}&gt; '

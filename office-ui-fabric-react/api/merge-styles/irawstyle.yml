@@ -1,48 +1,47 @@
-### YamlMime:UniversalReference
-items:
-  - uid: '@fluentui/merge-styles!IRawStyle:interface'
-    summary: 'IRawStyle extends a raw style object, but allows selectors to be defined under the selectors node.'
-    name: IRawStyle
-    fullName: IRawStyle
-    langs:
-      - typeScript
-    type: interface
-    extends:
-      - '@fluentui/merge-styles!IRawStyleBase:interface'
+### YamlMime:TSType
+name: IRawStyle
+uid: '@fluentui/merge-styles!IRawStyle:interface'
+package: '@fluentui/merge-styles!'
+fullName: IRawStyle
+summary: >-
+  IRawStyle extends a raw style object, but allows selectors to be defined under
+  the selectors node.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: displayName
+    uid: '@fluentui/merge-styles!IRawStyle#displayName:member'
     package: '@fluentui/merge-styles!'
-    children:
-      - '@fluentui/merge-styles!IRawStyle#displayName:member'
-      - '@fluentui/merge-styles!IRawStyle#selectors:member'
-  - uid: '@fluentui/merge-styles!IRawStyle#displayName:member'
-    summary: Display name for the style.
-    name: displayName
     fullName: displayName
-    langs:
-      - typeScript
-    type: property
+    summary: Display name for the style.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'displayName?: string;'
       return:
-        type:
-          - string
-  - uid: '@fluentui/merge-styles!IRawStyle#selectors:member'
-    deprecated:
-      content: >-
-        - The selectors wrapper is no longer required. You may add selectors as siblings to other style properties, like
-        most css-in-js libraries support.
-    name: selectors
+        type: string
+  - name: selectors
+    uid: '@fluentui/merge-styles!IRawStyle#selectors:member'
+    package: '@fluentui/merge-styles!'
     fullName: selectors
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      - The selectors wrapper is no longer required. You may add selectors as
+      siblings to other style properties, like most css-in-js libraries support.
     syntax:
       content: |-
         selectors?: {
                 [key: string]: IStyle;
             };
       return:
-        type:
-          - |-
-            {
-                    [key: string]: IStyle;
-                }
+        type: |-
+          {
+                  [key: string]: IStyle;
+              }
+extends: '<xref uid="@fluentui/merge-styles!IRawStyleBase:interface" />'

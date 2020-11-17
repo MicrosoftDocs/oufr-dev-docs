@@ -1,144 +1,139 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'office-ui-fabric-react!IShimmerProps:interface'
-    summary: Shimmer component props.
-    name: IShimmerProps
-    fullName: IShimmerProps
-    langs:
-      - typeScript
-    type: interface
-    extends:
-      - 'React.AllHTMLAttributes<HTMLElement> '
+### YamlMime:TSType
+name: IShimmerProps
+uid: 'office-ui-fabric-react!IShimmerProps:interface'
+package: office-ui-fabric-react!
+fullName: IShimmerProps
+summary: Shimmer component props.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: ariaLabel
+    uid: 'office-ui-fabric-react!IShimmerProps#ariaLabel:member'
     package: office-ui-fabric-react!
-    children:
-      - 'office-ui-fabric-react!IShimmerProps#ariaLabel:member'
-      - 'office-ui-fabric-react!IShimmerProps#className:member'
-      - 'office-ui-fabric-react!IShimmerProps#componentRef:member'
-      - 'office-ui-fabric-react!IShimmerProps#customElementsGroup:member'
-      - 'office-ui-fabric-react!IShimmerProps#isDataLoaded:member'
-      - 'office-ui-fabric-react!IShimmerProps#shimmerColors:member'
-      - 'office-ui-fabric-react!IShimmerProps#shimmerElements:member'
-      - 'office-ui-fabric-react!IShimmerProps#styles:member'
-      - 'office-ui-fabric-react!IShimmerProps#theme:member'
-      - 'office-ui-fabric-react!IShimmerProps#width:member'
-  - uid: 'office-ui-fabric-react!IShimmerProps#ariaLabel:member'
-    summary: Localized string of the status label for screen reader
-    name: ariaLabel
     fullName: ariaLabel
-    langs:
-      - typeScript
-    type: property
+    summary: Localized string of the status label for screen reader
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'ariaLabel?: string;'
       return:
-        type:
-          - string
-  - uid: 'office-ui-fabric-react!IShimmerProps#className:member'
-    summary: Additional CSS class(es) to apply to the Shimmer container.
-    name: className
+        type: string
+  - name: className
+    uid: 'office-ui-fabric-react!IShimmerProps#className:member'
+    package: office-ui-fabric-react!
     fullName: className
-    langs:
-      - typeScript
-    type: property
+    summary: Additional CSS class(es) to apply to the Shimmer container.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'className?: string;'
       return:
-        type:
-          - string
-  - uid: 'office-ui-fabric-react!IShimmerProps#componentRef:member'
-    deprecated:
-      content: No longer used.
-    name: componentRef
+        type: string
+  - name: componentRef
+    uid: 'office-ui-fabric-react!IShimmerProps#componentRef:member'
+    package: office-ui-fabric-react!
     fullName: componentRef
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: No longer used.
     syntax:
       content: 'componentRef?: IRefObject<IShimmer>;'
       return:
-        type:
-          - IRefObject<IShimmer>
-  - uid: 'office-ui-fabric-react!IShimmerProps#customElementsGroup:member'
-    summary: Custom elements when necessary to build complex placeholder skeletons.
-    name: customElementsGroup
+        type: IRefObject&lt;IShimmer&gt;
+  - name: customElementsGroup
+    uid: 'office-ui-fabric-react!IShimmerProps#customElementsGroup:member'
+    package: office-ui-fabric-react!
     fullName: customElementsGroup
-    langs:
-      - typeScript
-    type: property
+    summary: Custom elements when necessary to build complex placeholder skeletons.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'customElementsGroup?: React.ReactNode;'
       return:
-        type:
-          - React.ReactNode
-  - uid: 'office-ui-fabric-react!IShimmerProps#isDataLoaded:member'
-    summary: Controls when the shimmer is swapped with actual data through an animated transition.
-    name: isDataLoaded
+        type: React.ReactNode
+  - name: isDataLoaded
+    uid: 'office-ui-fabric-react!IShimmerProps#isDataLoaded:member'
+    package: office-ui-fabric-react!
     fullName: isDataLoaded
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Controls when the shimmer is swapped with actual data through an animated
+      transition.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'isDataLoaded?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'office-ui-fabric-react!IShimmerProps#shimmerColors:member'
-    summary: Defines an object with possible colors to pass for Shimmer customization used on different backgrounds.
-    name: shimmerColors
+        type: boolean
+  - name: shimmerColors
+    uid: 'office-ui-fabric-react!IShimmerProps#shimmerColors:member'
+    package: office-ui-fabric-react!
     fullName: shimmerColors
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Defines an object with possible colors to pass for Shimmer customization
+      used on different backgrounds.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'shimmerColors?: IShimmerColors;'
       return:
-        type:
-          - IShimmerColors
-  - uid: 'office-ui-fabric-react!IShimmerProps#shimmerElements:member'
-    summary: Elements to render in one line of the Shimmer.
-    name: shimmerElements
+        type: IShimmerColors
+  - name: shimmerElements
+    uid: 'office-ui-fabric-react!IShimmerProps#shimmerElements:member'
+    package: office-ui-fabric-react!
     fullName: shimmerElements
-    langs:
-      - typeScript
-    type: property
+    summary: Elements to render in one line of the Shimmer.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'shimmerElements?: IShimmerElement[];'
       return:
-        type:
-          - 'IShimmerElement[]'
-  - uid: 'office-ui-fabric-react!IShimmerProps#styles:member'
-    summary: Call to provide customized styling that will layer on top of the variant rules.
-    name: styles
+        type: 'IShimmerElement[]'
+  - name: styles
+    uid: 'office-ui-fabric-react!IShimmerProps#styles:member'
+    package: office-ui-fabric-react!
     fullName: styles
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Call to provide customized styling that will layer on top of the variant
+      rules.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'styles?: IStyleFunctionOrObject<IShimmerStyleProps, IShimmerStyles>;'
       return:
-        type:
-          - 'IStyleFunctionOrObject<IShimmerStyleProps, IShimmerStyles>'
-  - uid: 'office-ui-fabric-react!IShimmerProps#theme:member'
-    summary: Theme provided by High-Order Component.
-    name: theme
+        type: 'IStyleFunctionOrObject&lt;IShimmerStyleProps, IShimmerStyles&gt;'
+  - name: theme
+    uid: 'office-ui-fabric-react!IShimmerProps#theme:member'
+    package: office-ui-fabric-react!
     fullName: theme
-    langs:
-      - typeScript
-    type: property
+    summary: Theme provided by High-Order Component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'theme?: ITheme;'
       return:
-        type:
-          - '@fluentui/theme!ITheme:interface'
-  - uid: 'office-ui-fabric-react!IShimmerProps#width:member'
-    summary: Sets the width value of the shimmer wave wrapper.
-    name: width
+        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
+  - name: width
+    uid: 'office-ui-fabric-react!IShimmerProps#width:member'
+    package: office-ui-fabric-react!
     fullName: width
-    langs:
-      - typeScript
-    type: property
+    summary: Sets the width value of the shimmer wave wrapper.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'width?: number | string;'
       return:
-        type:
-          - number | string
+        type: number | string
+extends: 'React.AllHTMLAttributes&lt;HTMLElement&gt; '

@@ -1,67 +1,72 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'office-ui-fabric-react!IPeoplePickerItemSuggestionProps:interface'
-    summary: PeoplePickerItemSuggestion props interface. Refers to the PeoplePicker items that are suggested for picking.
-    name: IPeoplePickerItemSuggestionProps
-    fullName: IPeoplePickerItemSuggestionProps
-    langs:
-      - typeScript
-    type: interface
-    extends:
-      - 'IPeoplePickerItemSharedProps '
+### YamlMime:TSType
+name: IPeoplePickerItemSuggestionProps
+uid: 'office-ui-fabric-react!IPeoplePickerItemSuggestionProps:interface'
+package: office-ui-fabric-react!
+fullName: IPeoplePickerItemSuggestionProps
+summary: >-
+  PeoplePickerItemSuggestion props interface. Refers to the PeoplePicker items
+  that are suggested for picking.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: compact
+    uid: 'office-ui-fabric-react!IPeoplePickerItemSuggestionProps#compact:member'
     package: office-ui-fabric-react!
-    children:
-      - 'office-ui-fabric-react!IPeoplePickerItemSuggestionProps#compact:member'
-      - 'office-ui-fabric-react!IPeoplePickerItemSuggestionProps#personaProps:member'
-      - 'office-ui-fabric-react!IPeoplePickerItemSuggestionProps#styles:member'
-      - 'office-ui-fabric-react!IPeoplePickerItemSuggestionProps#suggestionsProps:member'
-  - uid: 'office-ui-fabric-react!IPeoplePickerItemSuggestionProps#compact:member'
-    summary: >-
-      Flag that controls whether each suggested PeoplePicker item (Persona) is rendered with or without secondary text
-      for compact look.
-    name: compact
     fullName: compact
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Flag that controls whether each suggested PeoplePicker item (Persona) is
+      rendered with or without secondary text for compact look.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'compact?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'office-ui-fabric-react!IPeoplePickerItemSuggestionProps#personaProps:member'
-    summary: Persona props for each suggested for picking PeoplePicker item.
-    name: personaProps
+        type: boolean
+  - name: personaProps
+    uid: >-
+      office-ui-fabric-react!IPeoplePickerItemSuggestionProps#personaProps:member
+    package: office-ui-fabric-react!
     fullName: personaProps
-    langs:
-      - typeScript
-    type: property
+    summary: Persona props for each suggested for picking PeoplePicker item.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'personaProps?: IPersonaProps;'
       return:
-        type:
-          - IPersonaProps
-  - uid: 'office-ui-fabric-react!IPeoplePickerItemSuggestionProps#styles:member'
-    summary: Call to provide customized styling that will layer on top of the variant rules.
-    name: styles
+        type: IPersonaProps
+  - name: styles
+    uid: 'office-ui-fabric-react!IPeoplePickerItemSuggestionProps#styles:member'
+    package: office-ui-fabric-react!
     fullName: styles
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Call to provide customized styling that will layer on top of the variant
+      rules.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'styles?: IStyleFunctionOrObject<IPeoplePickerItemSuggestionStyleProps, IPeoplePickerItemSuggestionStyles>;'
+      content: >-
+        styles?: IStyleFunctionOrObject<IPeoplePickerItemSuggestionStyleProps,
+        IPeoplePickerItemSuggestionStyles>;
       return:
-        type:
-          - 'IStyleFunctionOrObject<IPeoplePickerItemSuggestionStyleProps, IPeoplePickerItemSuggestionStyles>'
-  - uid: 'office-ui-fabric-react!IPeoplePickerItemSuggestionProps#suggestionsProps:member'
-    summary: General common props for all PeoplePicker items suggestions.
-    name: suggestionsProps
+        type: >-
+          IStyleFunctionOrObject&lt;IPeoplePickerItemSuggestionStyleProps,
+          IPeoplePickerItemSuggestionStyles&gt;
+  - name: suggestionsProps
+    uid: >-
+      office-ui-fabric-react!IPeoplePickerItemSuggestionProps#suggestionsProps:member
+    package: office-ui-fabric-react!
     fullName: suggestionsProps
-    langs:
-      - typeScript
-    type: property
+    summary: General common props for all PeoplePicker items suggestions.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'suggestionsProps?: IBasePickerSuggestionsProps;'
       return:
-        type:
-          - IBasePickerSuggestionsProps
+        type: IBasePickerSuggestionsProps
+extends: 'IPeoplePickerItemSharedProps '
