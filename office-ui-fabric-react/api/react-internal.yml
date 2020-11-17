@@ -41,6 +41,7 @@ classes:
   - '@fluentui/react-internal!NavBase:class'
   - '@fluentui/react-internal!NormalPeoplePickerBase:class'
   - '@fluentui/react-internal!OverlayBase:class'
+  - '@fluentui/react-internal!PanelBase:class'
   - '@fluentui/react-internal!PlainCardBase:class'
   - '@fluentui/react-internal!ProgressIndicatorBase:class'
   - '@fluentui/react-internal!ScrollablePaneBase:class'
@@ -170,6 +171,7 @@ interfaces:
   - '@fluentui/react-internal!ICommandBarStyleProps:interface'
   - '@fluentui/react-internal!ICommandBarStyles:interface'
   - '@fluentui/react-internal!IContextualMenu:interface'
+  - '@fluentui/react-internal!IContextualMenuClassNames:interface'
   - '@fluentui/react-internal!IContextualMenuItem:interface'
   - '@fluentui/react-internal!IContextualMenuItemProps:interface'
   - '@fluentui/react-internal!IContextualMenuItemRenderFunctions:interface'
@@ -285,6 +287,7 @@ interfaces:
   - '@fluentui/react-internal!IMarqueeSelectionStyles:interface'
   - '@fluentui/react-internal!IMaskedTextField:interface'
   - '@fluentui/react-internal!IMaskedTextFieldProps:interface'
+  - '@fluentui/react-internal!IMenuItemClassNames:interface'
   - '@fluentui/react-internal!IMenuItemStyles:interface'
   - '@fluentui/react-internal!IMessageBar:interface'
   - '@fluentui/react-internal!IMessageBarProps:interface'
@@ -477,7 +480,7 @@ interfaces:
 functions:
   - name: buildKeytipConfigMap(config)
     uid: '@fluentui/react-internal!buildKeytipConfigMap:function(1)'
-    package: '@fluentui/react-internal'
+    package: '@fluentui/react-internal!'
     summary: Builds a map of ID to IKeytipProps
     remarks: ''
     isPreview: false
@@ -495,7 +498,7 @@ functions:
         description: Config map
   - name: canAnyMenuItemsCheck(items)
     uid: '@fluentui/react-internal!canAnyMenuItemsCheck:function(1)'
-    package: '@fluentui/react-internal'
+    package: '@fluentui/react-internal!'
     summary: Returns true if a list of menu items can contain a checkbox
     remarks: ''
     isPreview: false
@@ -513,7 +516,7 @@ functions:
         description: ''
   - name: 'clamp(value, max, min)'
     uid: '@fluentui/react-internal!clamp:function(1)'
-    package: '@fluentui/react-internal'
+    package: '@fluentui/react-internal!'
     summary: Clamp a value to ensure it falls within a given range.
     remarks: ''
     isPreview: false
@@ -537,7 +540,7 @@ functions:
         description: ''
   - name: 'constructKeytip(configMap, parentSequence, keytip)'
     uid: '@fluentui/react-internal!constructKeytip:function(1)'
-    package: '@fluentui/react-internal'
+    package: '@fluentui/react-internal!'
     summary: Constructs a keytip from an IKeytipConfigItem and puts it in the configMap
     remarks: ''
     isPreview: false
@@ -561,7 +564,7 @@ functions:
         description: ''
   - name: correctHex(hex)
     uid: '@fluentui/react-internal!correctHex:function(1)'
-    package: '@fluentui/react-internal'
+    package: '@fluentui/react-internal!'
     summary: >-
       Corrects a hex color to have length 3 or 6. Defaults to white if too
       short. Does NOT check anything besides the length (such as valid
@@ -580,7 +583,7 @@ functions:
         description: ''
   - name: correctHSV(color)
     uid: '@fluentui/react-internal!correctHSV:function(1)'
-    package: '@fluentui/react-internal'
+    package: '@fluentui/react-internal!'
     summary: Corrects an HSV color to fall within the valid range.
     remarks: ''
     isPreview: false
@@ -596,7 +599,7 @@ functions:
         description: ''
   - name: correctRGB(color)
     uid: '@fluentui/react-internal!correctRGB:function(1)'
-    package: '@fluentui/react-internal'
+    package: '@fluentui/react-internal!'
     summary: Corrects an RGB color to fall within the valid range.
     remarks: ''
     isPreview: false
@@ -612,7 +615,7 @@ functions:
         description: ''
   - name: 'createGenericItem(name, currentValidationState)'
     uid: '@fluentui/react-internal!createGenericItem:function(1)'
-    package: '@fluentui/react-internal'
+    package: '@fluentui/react-internal!'
     summary: ''
     remarks: ''
     isPreview: false
@@ -638,7 +641,7 @@ functions:
         description: ''
   - name: 'createItem(name, isValid)'
     uid: '@fluentui/react-internal!createItem:function(1)'
-    package: '@fluentui/react-internal'
+    package: '@fluentui/react-internal!'
     summary: ''
     remarks: ''
     isPreview: false
@@ -659,7 +662,7 @@ functions:
         description: ''
   - name: cssColor(color)
     uid: '@fluentui/react-internal!cssColor:function(1)'
-    package: '@fluentui/react-internal'
+    package: '@fluentui/react-internal!'
     summary: >-
       Converts a valid CSS color string to an RGB color. Note that hex colors
       \*must\* be prefixed with \# to be considered valid. Alpha in returned
@@ -679,7 +682,7 @@ functions:
         description: ''
   - name: 'getAllSelectedOptions(options, selectedIndices)'
     uid: '@fluentui/react-internal!getAllSelectedOptions:function(1)'
-    package: '@fluentui/react-internal'
+    package: '@fluentui/react-internal!'
     summary: ''
     remarks: ''
     isPreview: false
@@ -700,7 +703,7 @@ functions:
         description: ''
   - name: getAriaDescribedBy(keySequences)
     uid: '@fluentui/react-internal!getAriaDescribedBy:function(1)'
-    package: '@fluentui/react-internal'
+    package: '@fluentui/react-internal!'
     summary: Gets the aria-describedby value to put on the component with this keytip.
     remarks: ''
     isPreview: false
@@ -718,7 +721,7 @@ functions:
         description: The aria-describedby value to set on the component with this keytip.
   - name: 'getBackgroundShade(color, shade, isInverted)'
     uid: '@fluentui/react-internal!getBackgroundShade:function(1)'
-    package: '@fluentui/react-internal'
+    package: '@fluentui/react-internal!'
     summary: ''
     remarks: ''
     isPreview: false
@@ -742,7 +745,7 @@ functions:
         description: ''
   - name: 'getBoundsFromTargetWindow(target, targetWindow)'
     uid: '@fluentui/react-internal!getBoundsFromTargetWindow:function(1)'
-    package: '@fluentui/react-internal'
+    package: '@fluentui/react-internal!'
     summary: ''
     remarks: ''
     isPreview: false
@@ -764,7 +767,7 @@ functions:
         description: ''
   - name: 'getColorFromHSV(hsv, a)'
     uid: '@fluentui/react-internal!getColorFromHSV:function(1)'
-    package: '@fluentui/react-internal'
+    package: '@fluentui/react-internal!'
     summary: >-
       Converts an HSV color (and optional alpha value) to a color object. If `a`
       is not given, a default of 100 is used. Hex in the returned value will
@@ -787,7 +790,7 @@ functions:
         description: ''
   - name: getColorFromRGBA(rgba)
     uid: '@fluentui/react-internal!getColorFromRGBA:function(1)'
-    package: '@fluentui/react-internal'
+    package: '@fluentui/react-internal!'
     summary: Converts an RGBA color to a color object (alpha defaults to 100).
     remarks: ''
     isPreview: false
@@ -803,7 +806,7 @@ functions:
         description: ''
   - name: getColorFromString(inputColor)
     uid: '@fluentui/react-internal!getColorFromString:function(1)'
-    package: '@fluentui/react-internal'
+    package: '@fluentui/react-internal!'
     summary: >-
       Converts a CSS color string to a color object. Note that hex colors
       \*must\* be prefixed with \# to be considered valid.
@@ -828,7 +831,7 @@ functions:
         description: ''
   - name: 'getContrastRatio(color1, color2)'
     uid: '@fluentui/react-internal!getContrastRatio:function(1)'
-    package: '@fluentui/react-internal'
+    package: '@fluentui/react-internal!'
     summary: ''
     remarks: ''
     isPreview: false
@@ -849,7 +852,7 @@ functions:
         description: ''
   - name: getFullColorString(color)
     uid: '@fluentui/react-internal!getFullColorString:function(1)'
-    package: '@fluentui/react-internal'
+    package: '@fluentui/react-internal!'
     summary: >-
       Converts a color hue to an HTML color string (with \# prefix). This
       implementation ignores all components of `color` except hue.
@@ -867,7 +870,7 @@ functions:
         description: ''
   - name: 'getMaxHeight(target, targetEdge, gapSpace, bounds, coverTarget)'
     uid: '@fluentui/react-internal!getMaxHeight:function(1)'
-    package: '@fluentui/react-internal'
+    package: '@fluentui/react-internal!'
     summary: >-
       Gets the maximum height that a rectangle can have in order to fit below or
       above a target. If the directional hint specifies a left or right edge
@@ -902,7 +905,7 @@ functions:
         description: ''
   - name: getOppositeEdge(edge)
     uid: '@fluentui/react-internal!getOppositeEdge:function(1)'
-    package: '@fluentui/react-internal'
+    package: '@fluentui/react-internal!'
     summary: Returns the opposite edge of the given RectangleEdge.
     remarks: ''
     isPreview: false
@@ -920,7 +923,7 @@ functions:
         description: ''
   - name: getPersonaInitialsColor(props)
     uid: '@fluentui/react-internal!getPersonaInitialsColor:function(1)'
-    package: '@fluentui/react-internal'
+    package: '@fluentui/react-internal!'
     summary: >-
       Gets the hex color string (prefixed with \#) for the given persona props.
       This is the logic used internally by the Persona control.
@@ -940,7 +943,7 @@ functions:
         description: Hex color string prefixed with \#
   - name: 'getShade(color, shade, isInverted)'
     uid: '@fluentui/react-internal!getShade:function(1)'
-    package: '@fluentui/react-internal'
+    package: '@fluentui/react-internal!'
     summary: >-
       Given a color and a shade specification, generates the requested shade of
       the color. Logic: if white darken via tables defined above if black
@@ -970,7 +973,7 @@ functions:
         description: ''
   - name: getSubmenuItems(item)
     uid: '@fluentui/react-internal!getSubmenuItems:function(1)'
-    package: '@fluentui/react-internal'
+    package: '@fluentui/react-internal!'
     summary: ''
     remarks: ''
     isPreview: false
@@ -988,7 +991,7 @@ functions:
         description: ''
   - name: 'hsl2hsv(h, s, l)'
     uid: '@fluentui/react-internal!hsl2hsv:function(1)'
-    package: '@fluentui/react-internal'
+    package: '@fluentui/react-internal!'
     summary: Converts HSL components to an HSV color.
     remarks: ''
     isPreview: false
@@ -1010,7 +1013,7 @@ functions:
         description: ''
   - name: 'hsl2rgb(h, s, l)'
     uid: '@fluentui/react-internal!hsl2rgb:function(1)'
-    package: '@fluentui/react-internal'
+    package: '@fluentui/react-internal!'
     summary: Converts HSL components to an RGB color. Does not set the alpha value.
     remarks: ''
     isPreview: false
@@ -1032,7 +1035,7 @@ functions:
         description: ''
   - name: 'hsv2hex(h, s, v)'
     uid: '@fluentui/react-internal!hsv2hex:function(1)'
-    package: '@fluentui/react-internal'
+    package: '@fluentui/react-internal!'
     summary: Converts HSV components to a hex color string (without \# prefix).
     remarks: ''
     isPreview: false
@@ -1056,7 +1059,7 @@ functions:
         description: ''
   - name: 'hsv2hsl(h, s, v)'
     uid: '@fluentui/react-internal!hsv2hsl:function(1)'
-    package: '@fluentui/react-internal'
+    package: '@fluentui/react-internal!'
     summary: Converts HSV components to an HSL color.
     remarks: ''
     isPreview: false
@@ -1078,7 +1081,7 @@ functions:
         description: ''
   - name: 'hsv2rgb(h, s, v)'
     uid: '@fluentui/react-internal!hsv2rgb:function(1)'
-    package: '@fluentui/react-internal'
+    package: '@fluentui/react-internal!'
     summary: Converts HSV components to an RGB color. Does not set the alpha value.
     remarks: ''
     isPreview: false
@@ -1100,7 +1103,7 @@ functions:
         description: ''
   - name: isDark(color)
     uid: '@fluentui/react-internal!isDark:function(1)'
-    package: '@fluentui/react-internal'
+    package: '@fluentui/react-internal!'
     summary: ''
     remarks: ''
     isPreview: false
@@ -1116,7 +1119,7 @@ functions:
         description: ''
   - name: isRelativeUrl(url)
     uid: '@fluentui/react-internal!isRelativeUrl:function(1)'
-    package: '@fluentui/react-internal'
+    package: '@fluentui/react-internal!'
     summary: ''
     remarks: ''
     isPreview: false
@@ -1132,7 +1135,7 @@ functions:
         description: ''
   - name: isValidShade(shade)
     uid: '@fluentui/react-internal!isValidShade:function(1)'
-    package: '@fluentui/react-internal'
+    package: '@fluentui/react-internal!'
     summary: Returns true if the argument is a valid Shade value
     remarks: ''
     isPreview: false
@@ -1148,7 +1151,7 @@ functions:
         description: ''
   - name: ktpTargetFromId(keytipId)
     uid: '@fluentui/react-internal!ktpTargetFromId:function(1)'
-    package: '@fluentui/react-internal'
+    package: '@fluentui/react-internal!'
     summary: >-
       Constructs the data-ktp-execute-target attribute selector from a keytip
       ID.
@@ -1166,7 +1169,7 @@ functions:
         description: String selector to use to query for the keytip execute target.
   - name: ktpTargetFromSequences(keySequences)
     uid: '@fluentui/react-internal!ktpTargetFromSequences:function(1)'
-    package: '@fluentui/react-internal'
+    package: '@fluentui/react-internal!'
     summary: >-
       Constructs the data-ktp-target attribute selector from a full key
       sequence.
@@ -1186,7 +1189,7 @@ functions:
         description: String selector to use to query for the keytip target.
   - name: 'mergeOverflows(keySequences, overflowKeySequences)'
     uid: '@fluentui/react-internal!mergeOverflows:function(1)'
-    package: '@fluentui/react-internal'
+    package: '@fluentui/react-internal!'
     summary: Merges an overflow sequence with a key sequence.
     remarks: ''
     isPreview: false
@@ -1207,7 +1210,7 @@ functions:
         description: Sequence that will be used by the keytip when in the overflow.
   - name: 'positionCallout(props, hostElement, elementToPosition, previousPositions)'
     uid: '@fluentui/react-internal!positionCallout:function(1)'
-    package: '@fluentui/react-internal'
+    package: '@fluentui/react-internal!'
     summary: ''
     remarks: ''
     isPreview: false
@@ -1235,7 +1238,7 @@ functions:
         description: ''
   - name: 'positionCard(props, hostElement, elementToPosition, previousPositions)'
     uid: '@fluentui/react-internal!positionCard:function(1)'
-    package: '@fluentui/react-internal'
+    package: '@fluentui/react-internal!'
     summary: ''
     remarks: ''
     isPreview: false
@@ -1263,7 +1266,7 @@ functions:
         description: ''
   - name: 'positionElement(props, hostElement, elementToPosition, previousPositions)'
     uid: '@fluentui/react-internal!positionElement:function(1)'
-    package: '@fluentui/react-internal'
+    package: '@fluentui/react-internal!'
     summary: >-
       Used to position an element relative to the given positioning props. If
       positioning has been completed before, previousPositions can be passed to
@@ -1295,7 +1298,7 @@ functions:
         description: ''
   - name: 'rgb2hex(r, g, b)'
     uid: '@fluentui/react-internal!rgb2hex:function(1)'
-    package: '@fluentui/react-internal'
+    package: '@fluentui/react-internal!'
     summary: Converts RGB components to a hex color string (without \# prefix).
     remarks: ''
     isPreview: false
@@ -1319,7 +1322,7 @@ functions:
         description: ''
   - name: 'rgb2hsv(r, g, b)'
     uid: '@fluentui/react-internal!rgb2hsv:function(1)'
-    package: '@fluentui/react-internal'
+    package: '@fluentui/react-internal!'
     summary: Converts RGB components to an HSV color.
     remarks: ''
     isPreview: false
@@ -1341,7 +1344,7 @@ functions:
         description: ''
   - name: sequencesToID(keySequences)
     uid: '@fluentui/react-internal!sequencesToID:function(1)'
-    package: '@fluentui/react-internal'
+    package: '@fluentui/react-internal!'
     summary: >-
       Converts a whole set of KeySequences into one keytip ID, which will be the
       ID for the last keytip sequence specified keySequences should not include
@@ -1360,7 +1363,7 @@ functions:
         description: String to use for the keytip ID.
   - name: themeRulesStandardCreator()
     uid: '@fluentui/react-internal!themeRulesStandardCreator:function(1)'
-    package: '@fluentui/react-internal'
+    package: '@fluentui/react-internal!'
     summary: ''
     remarks: ''
     isPreview: false
@@ -1372,7 +1375,7 @@ functions:
         description: ''
   - name: 'transitionKeysAreEqual(key1, key2)'
     uid: '@fluentui/react-internal!transitionKeysAreEqual:function(1)'
-    package: '@fluentui/react-internal'
+    package: '@fluentui/react-internal!'
     summary: Tests for equality between two IKeytipTransitionKeys.
     remarks: ''
     isPreview: false
@@ -1393,7 +1396,7 @@ functions:
         description: T/F if the transition keys are equal.
   - name: 'transitionKeysContain(keys, key)'
     uid: '@fluentui/react-internal!transitionKeysContain:function(1)'
-    package: '@fluentui/react-internal'
+    package: '@fluentui/react-internal!'
     summary: Tests if 'key' is present in 'keys'.
     remarks: ''
     isPreview: false
@@ -1414,7 +1417,7 @@ functions:
         description: T/F if 'keys' contains 'key'.
   - name: 'updateA(color, a)'
     uid: '@fluentui/react-internal!updateA:function(1)'
-    package: '@fluentui/react-internal'
+    package: '@fluentui/react-internal!'
     summary: >-
       Gets a color with the given alpha value and the same other components as
       `color`<!-- -->. Does not modify the original color.
@@ -1435,7 +1438,7 @@ functions:
         description: ''
   - name: 'updateH(color, h)'
     uid: '@fluentui/react-internal!updateH:function(1)'
-    package: '@fluentui/react-internal'
+    package: '@fluentui/react-internal!'
     summary: >-
       Gets a color with the same saturation and value as `color` and the other
       components updated to match the given hue.
@@ -1460,7 +1463,7 @@ functions:
         description: ''
   - name: 'updateRGB(color, component, value)'
     uid: '@fluentui/react-internal!updateRGB:function(1)'
-    package: '@fluentui/react-internal'
+    package: '@fluentui/react-internal!'
     summary: >-
       Gets a color with a single RGBA component updated to a new value. Does not
       modify the original `color`<!-- -->. Alpha defaults to 100 if not set.
@@ -1486,7 +1489,7 @@ functions:
         description: ''
   - name: 'updateSV(color, s, v)'
     uid: '@fluentui/react-internal!updateSV:function(1)'
-    package: '@fluentui/react-internal'
+    package: '@fluentui/react-internal!'
     summary: >-
       Gets a color with the same hue as `color` and other components updated to
       match the given saturation and value.
@@ -1516,7 +1519,7 @@ functions:
         description: ''
   - name: 'updateT(color, t)'
     uid: '@fluentui/react-internal!updateT:function(1)'
-    package: '@fluentui/react-internal'
+    package: '@fluentui/react-internal!'
     summary: >-
       Gets a color with the given transparency value and the same other
       components as `color`<!-- -->. Does not modify the original color.
@@ -1537,7 +1540,7 @@ functions:
         description: ''
   - name: 'useHeightOffset({ finalHeight }, contentHost)'
     uid: '@fluentui/react-internal!useHeightOffset:function(1)'
-    package: '@fluentui/react-internal'
+    package: '@fluentui/react-internal!'
     summary: ''
     remarks: ''
     isPreview: false
@@ -1559,7 +1562,7 @@ functions:
         description: ''
   - name: useKeytipRef(options)
     uid: '@fluentui/react-internal!useKeytipRef:function(1)'
-    package: '@fluentui/react-internal'
+    package: '@fluentui/react-internal!'
     summary: >-
       Hook that creates a ref which is used for passing to Keytip target
       element. The ref will handle setting the attributes needed for Keytip to

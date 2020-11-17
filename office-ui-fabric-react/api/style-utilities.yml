@@ -12,7 +12,7 @@ interfaces:
 functions:
   - name: buildClassMap(styles)
     uid: '@fluentui/style-utilities!buildClassMap:function(1)'
-    package: '@fluentui/style-utilities'
+    package: '@fluentui/style-utilities!'
     summary: Builds a class names object from a given map.
     remarks: ''
     isPreview: false
@@ -34,7 +34,7 @@ functions:
         description: Map of property name to class name.
   - name: focusClear()
     uid: '@fluentui/style-utilities!focusClear:function(1)'
-    package: '@fluentui/style-utilities'
+    package: '@fluentui/style-utilities!'
     summary: Generates style to clear browser specific focus styles.
     remarks: ''
     isPreview: false
@@ -47,7 +47,7 @@ functions:
   - name: getEdgeChromiumNoHighContrastAdjustSelector()
     uid: >-
       @fluentui/style-utilities!getEdgeChromiumNoHighContrastAdjustSelector:function(1)
-    package: '@fluentui/style-utilities'
+    package: '@fluentui/style-utilities!'
     summary: >-
       The style which turns off high contrast adjustment in (only) Edge Chromium
       browser.
@@ -67,7 +67,7 @@ functions:
         description: ''
   - name: 'getFadedOverflowStyle(theme, color, direction, width, height)'
     uid: '@fluentui/style-utilities!getFadedOverflowStyle:function(1)'
-    package: '@fluentui/style-utilities'
+    package: '@fluentui/style-utilities!'
     summary: >-
       - Generates a style used to fade out an overflowing content by defining a
       style for an :after pseudo element. - Apply it to the :after selector for
@@ -110,7 +110,7 @@ functions:
         description: The style object.
   - name: 'getFocusOutlineStyle(theme, inset, width, color)'
     uid: '@fluentui/style-utilities!getFocusOutlineStyle:function(1)'
-    package: '@fluentui/style-utilities'
+    package: '@fluentui/style-utilities!'
     summary: Generates a style which can be used to set a border on focus.
     remarks: ''
     isPreview: false
@@ -139,7 +139,7 @@ functions:
         description: The style object.
   - name: 'getFocusStyle(theme, options)'
     uid: '@fluentui/style-utilities!getFocusStyle:function(1)'
-    package: '@fluentui/style-utilities'
+    package: '@fluentui/style-utilities!'
     summary: >-
       Generates a focus style which can be used to define an :after focus
       border.
@@ -164,7 +164,7 @@ functions:
       getFocusStyle(theme, inset, position, highContrastStyle, borderColor,
       outlineColor, isFocusedOnly)
     uid: '@fluentui/style-utilities!getFocusStyle:function(2)'
-    package: '@fluentui/style-utilities'
+    package: '@fluentui/style-utilities!'
     summary: >-
       Generates a focus style which can be used to define an :after focus
       border.
@@ -207,7 +207,7 @@ functions:
         description: The style object.
   - name: 'getGlobalClassNames(classNames, theme, disableGlobalClassNames)'
     uid: '@fluentui/style-utilities!getGlobalClassNames:function(1)'
-    package: '@fluentui/style-utilities'
+    package: '@fluentui/style-utilities!'
     summary: >-
       Checks for the `disableGlobalClassNames` property on the `theme` to
       determine if it should return `classNames` Note that calls to this
@@ -240,7 +240,7 @@ functions:
         description: ''
   - name: getIcon(name)
     uid: '@fluentui/style-utilities!getIcon:function(1)'
-    package: '@fluentui/style-utilities'
+    package: '@fluentui/style-utilities!'
     summary: >-
       Gets an icon definition. If an icon is requested but the subset has yet to
       be registered, it will get registered immediately.
@@ -258,7 +258,7 @@ functions:
         description: ''
   - name: getIconClassName(name)
     uid: '@fluentui/style-utilities!getIconClassName:function(1)'
-    package: '@fluentui/style-utilities'
+    package: '@fluentui/style-utilities!'
     summary: >-
       Gets an icon classname. You should be able to add this classname to an I
       tag with no additional classnames, and render the icon.
@@ -276,7 +276,7 @@ functions:
         description: ''
   - name: getPlaceholderStyles(styles)
     uid: '@fluentui/style-utilities!getPlaceholderStyles:function(1)'
-    package: '@fluentui/style-utilities'
+    package: '@fluentui/style-utilities!'
     summary: >-
       Generates placeholder style for each of the browsers supported by
       `@fluentui/react`<!-- -->.
@@ -296,7 +296,7 @@ functions:
           placeholder directive it uses.
   - name: 'getScreenSelector(min, max)'
     uid: '@fluentui/style-utilities!getScreenSelector:function(1)'
-    package: '@fluentui/style-utilities'
+    package: '@fluentui/style-utilities!'
     summary: ''
     remarks: ''
     isPreview: false
@@ -317,7 +317,7 @@ functions:
         description: ''
   - name: getTheme(depComments)
     uid: '@fluentui/style-utilities!getTheme:function(1)'
-    package: '@fluentui/style-utilities'
+    package: '@fluentui/style-utilities!'
     summary: Gets the theme object
     remarks: ''
     isPreview: false
@@ -333,7 +333,7 @@ functions:
         description: ''
   - name: 'loadTheme(theme, depComments)'
     uid: '@fluentui/style-utilities!loadTheme:function(1)'
-    package: '@fluentui/style-utilities'
+    package: '@fluentui/style-utilities!'
     summary: 'Applies the theme, while filling in missing slots.'
     remarks: ''
     isPreview: false
@@ -354,7 +354,7 @@ functions:
         description: ''
   - name: 'registerIconAlias(iconName, mappedToName)'
     uid: '@fluentui/style-utilities!registerIconAlias:function(1)'
-    package: '@fluentui/style-utilities'
+    package: '@fluentui/style-utilities!'
     summary: Remaps one icon name to another.
     remarks: ''
     isPreview: false
@@ -375,7 +375,7 @@ functions:
         description: ''
   - name: 'registerIcons(iconSubset, options)'
     uid: '@fluentui/style-utilities!registerIcons:function(1)'
-    package: '@fluentui/style-utilities'
+    package: '@fluentui/style-utilities!'
     summary: Registers a given subset of icons.
     remarks: ''
     isPreview: false
@@ -396,7 +396,7 @@ functions:
         description: ''
   - name: registerOnThemeChangeCallback(callback)
     uid: '@fluentui/style-utilities!registerOnThemeChangeCallback:function(1)'
-    package: '@fluentui/style-utilities'
+    package: '@fluentui/style-utilities!'
     summary: >-
       Registers a callback that gets called whenever the theme changes. This
       should only be used when the component cannot automatically get theme
@@ -417,7 +417,7 @@ functions:
         description: ''
   - name: removeOnThemeChangeCallback(callback)
     uid: '@fluentui/style-utilities!removeOnThemeChangeCallback:function(1)'
-    package: '@fluentui/style-utilities'
+    package: '@fluentui/style-utilities!'
     summary: >-
       See registerOnThemeChangeCallback(). Removes previously registered
       callbacks.
@@ -437,7 +437,7 @@ functions:
         description: ''
   - name: setIconOptions(options)
     uid: '@fluentui/style-utilities!setIconOptions:function(1)'
-    package: '@fluentui/style-utilities'
+    package: '@fluentui/style-utilities!'
     summary: Sets the icon options.
     remarks: ''
     isPreview: false
@@ -455,7 +455,7 @@ functions:
         description: ''
   - name: unregisterIcons(iconNames)
     uid: '@fluentui/style-utilities!unregisterIcons:function(1)'
-    package: '@fluentui/style-utilities'
+    package: '@fluentui/style-utilities!'
     summary: Unregisters icons by name.
     remarks: ''
     isPreview: false
