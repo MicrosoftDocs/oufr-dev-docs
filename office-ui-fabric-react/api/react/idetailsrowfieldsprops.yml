@@ -1,122 +1,116 @@
-### YamlMime:UniversalReference
-items:
-  - uid: '@fluentui/react!IDetailsRowFieldsProps:interface'
-    summary: Props interface for the DetailsRowFields component.
-    name: IDetailsRowFieldsProps
-    fullName: IDetailsRowFieldsProps
-    langs:
-      - typeScript
-    type: interface
-    extends:
-      - 'IOverrideColumnRenderProps '
+### YamlMime:TSType
+name: IDetailsRowFieldsProps
+uid: '@fluentui/react!IDetailsRowFieldsProps:interface'
+package: '@fluentui/react!'
+fullName: IDetailsRowFieldsProps
+summary: Props interface for the DetailsRowFields component.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: cellStyleProps
+    uid: '@fluentui/react!IDetailsRowFieldsProps#cellStyleProps:member'
     package: '@fluentui/react!'
-    children:
-      - '@fluentui/react!IDetailsRowFieldsProps#cellStyleProps:member'
-      - '@fluentui/react!IDetailsRowFieldsProps#columns:member'
-      - '@fluentui/react!IDetailsRowFieldsProps#columnStartIndex:member'
-      - '@fluentui/react!IDetailsRowFieldsProps#compact:member'
-      - '@fluentui/react!IDetailsRowFieldsProps#enableUpdateAnimations:member'
-      - '@fluentui/react!IDetailsRowFieldsProps#item:member'
-      - '@fluentui/react!IDetailsRowFieldsProps#itemIndex:member'
-      - '@fluentui/react!IDetailsRowFieldsProps#rowClassNames:member'
-  - uid: '@fluentui/react!IDetailsRowFieldsProps#cellStyleProps:member'
-    summary: Style properties to customize cell render output.
-    name: cellStyleProps
     fullName: cellStyleProps
-    langs:
-      - typeScript
-    type: property
+    summary: Style properties to customize cell render output.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'cellStyleProps?: ICellStyleProps;'
       return:
-        type:
-          - ICellStyleProps
-  - uid: '@fluentui/react!IDetailsRowFieldsProps#columns:member'
-    summary: Columns metadata
-    name: columns
+        type: ICellStyleProps
+  - name: columns
+    uid: '@fluentui/react!IDetailsRowFieldsProps#columns:member'
+    package: '@fluentui/react!'
     fullName: columns
-    langs:
-      - typeScript
-    type: property
+    summary: Columns metadata
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'columns: IColumn[];'
       return:
-        type:
-          - 'IColumn[]'
-  - uid: '@fluentui/react!IDetailsRowFieldsProps#columnStartIndex:member'
-    summary: Index to start for the column
-    name: columnStartIndex
+        type: 'IColumn[]'
+  - name: columnStartIndex
+    uid: '@fluentui/react!IDetailsRowFieldsProps#columnStartIndex:member'
+    package: '@fluentui/react!'
     fullName: columnStartIndex
-    langs:
-      - typeScript
-    type: property
+    summary: Index to start for the column
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'columnStartIndex: number;'
       return:
-        type:
-          - number
-  - uid: '@fluentui/react!IDetailsRowFieldsProps#compact:member'
-    summary: whether to render as a compact field
-    name: compact
+        type: number
+  - name: compact
+    uid: '@fluentui/react!IDetailsRowFieldsProps#compact:member'
+    package: '@fluentui/react!'
     fullName: compact
-    langs:
-      - typeScript
-    type: property
+    summary: whether to render as a compact field
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'compact?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: '@fluentui/react!IDetailsRowFieldsProps#enableUpdateAnimations:member'
-    name: enableUpdateAnimations
+        type: boolean
+  - name: enableUpdateAnimations
+    uid: '@fluentui/react!IDetailsRowFieldsProps#enableUpdateAnimations:member'
+    package: '@fluentui/react!'
     fullName: enableUpdateAnimations
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'enableUpdateAnimations?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: '@fluentui/react!IDetailsRowFieldsProps#item:member'
-    summary: Data source for this component
-    name: item
+        type: boolean
+  - name: item
+    uid: '@fluentui/react!IDetailsRowFieldsProps#item:member'
+    package: '@fluentui/react!'
     fullName: item
-    langs:
-      - typeScript
-    type: property
+    summary: Data source for this component
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'item: any;'
       return:
-        type:
-          - any
-  - uid: '@fluentui/react!IDetailsRowFieldsProps#itemIndex:member'
-    summary: The item index of the collection for the DetailsList
-    name: itemIndex
+        type: any
+  - name: itemIndex
+    uid: '@fluentui/react!IDetailsRowFieldsProps#itemIndex:member'
+    package: '@fluentui/react!'
     fullName: itemIndex
-    langs:
-      - typeScript
-    type: property
+    summary: The item index of the collection for the DetailsList
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'itemIndex: number;'
       return:
-        type:
-          - number
-  - uid: '@fluentui/react!IDetailsRowFieldsProps#rowClassNames:member'
-    summary: Subset of classnames currently generated in DetailsRow that are used within DetailsRowFields.
-    name: rowClassNames
+        type: number
+  - name: rowClassNames
+    uid: '@fluentui/react!IDetailsRowFieldsProps#rowClassNames:member'
+    package: '@fluentui/react!'
     fullName: rowClassNames
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Subset of classnames currently generated in DetailsRow that are used
+      within DetailsRowFields.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: |-
         rowClassNames: {
                 [k in keyof Pick<IDetailsRowStyles, 'isMultiline' | 'isRowHeader' | 'cell' | 'cellAnimation' | 'cellPadded' | 'cellUnpadded' | 'fields'>]: string;
             };
       return:
-        type:
-          - |-
-            {
-                    [k in keyof Pick<IDetailsRowStyles, 'isMultiline' | 'isRowHeader' | 'cell' | 'cellAnimation' | 'cellPadded' | 'cellUnpadded' | 'fields'>]: string;
-                }
+        type: |-
+          {
+                  [k in keyof Pick&lt;IDetailsRowStyles, 'isMultiline' | 'isRowHeader' | 'cell' | 'cellAnimation' | 'cellPadded' | 'cellUnpadded' | 'fields'&gt;]: string;
+              }
+extends: 'IOverrideColumnRenderProps '

@@ -1,89 +1,37 @@
-### YamlMime:UniversalReference
-items:
-  - uid: '@fluentui/react-internal!HoverCardBase:class'
-    name: HoverCardBase
-    fullName: HoverCardBase
-    langs:
-      - typeScript
-    type: class
-    extends:
-      - 'React.Component<IHoverCardProps, IHoverCardState> '
-    implements:
-      - 'IHoverCard '
+### YamlMime:TSType
+name: HoverCardBase
+uid: '@fluentui/react-internal!HoverCardBase:class'
+package: '@fluentui/react-internal!'
+fullName: HoverCardBase
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: (constructor)(props)
+    uid: '@fluentui/react-internal!HoverCardBase:constructor(1)'
     package: '@fluentui/react-internal!'
-    children:
-      - '@fluentui/react-internal!HoverCardBase:constructor(1)'
-      - '@fluentui/react-internal!HoverCardBase#componentDidMount:member(1)'
-      - '@fluentui/react-internal!HoverCardBase#componentDidUpdate:member(1)'
-      - '@fluentui/react-internal!HoverCardBase#componentWillUnmount:member(1)'
-      - '@fluentui/react-internal!HoverCardBase.defaultProps:member'
-      - '@fluentui/react-internal!HoverCardBase#dismiss:member'
-      - '@fluentui/react-internal!HoverCardBase#render:member(1)'
-  - uid: '@fluentui/react-internal!HoverCardBase:constructor(1)'
-    summary: Constructs a new instance of the `HoverCardBase` class
-    name: (constructor)(props)
     fullName: (constructor)(props)
-    langs:
-      - typeScript
-    type: constructor
+    summary: Constructs a new instance of the `HoverCardBase` class
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'constructor(props: IHoverCardProps);'
       parameters:
         - id: props
           description: ''
-          type:
-            - IHoverCardProps
-  - uid: '@fluentui/react-internal!HoverCardBase#componentDidMount:member(1)'
-    name: componentDidMount()
-    fullName: componentDidMount()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'componentDidMount(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: '@fluentui/react-internal!HoverCardBase#componentDidUpdate:member(1)'
-    name: 'componentDidUpdate(prevProps, prevState)'
-    fullName: 'componentDidUpdate(prevProps, prevState)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'componentDidUpdate(prevProps: IHoverCardProps, prevState: IHoverCardState): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: prevProps
-          description: ''
-          type:
-            - IHoverCardProps
-        - id: prevState
-          description: ''
-          type:
-            - IHoverCardState
-  - uid: '@fluentui/react-internal!HoverCardBase#componentWillUnmount:member(1)'
-    name: componentWillUnmount()
-    fullName: componentWillUnmount()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'componentWillUnmount(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: '@fluentui/react-internal!HoverCardBase.defaultProps:member'
-    name: defaultProps
+          type: IHoverCardProps
+properties:
+  - name: defaultProps
+    uid: '@fluentui/react-internal!HoverCardBase.defaultProps:member'
+    package: '@fluentui/react-internal!'
     fullName: defaultProps
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: |-
         static defaultProps: {
@@ -96,37 +44,88 @@ items:
                 type: HoverCardType;
             };
       return:
-        type:
-          - |-
-            {
-                    cardOpenDelay: number;
-                    cardDismissDelay: number;
-                    expandedCardOpenDelay: number;
-                    instantOpenOnClick: boolean;
-                    setInitialFocus: boolean;
-                    openHotKey: number;
-                    type: HoverCardType;
-                }
-  - uid: '@fluentui/react-internal!HoverCardBase#dismiss:member'
-    name: dismiss
+        type: |-
+          {
+                  cardOpenDelay: number;
+                  cardDismissDelay: number;
+                  expandedCardOpenDelay: number;
+                  instantOpenOnClick: boolean;
+                  setInitialFocus: boolean;
+                  openHotKey: number;
+                  type: HoverCardType;
+              }
+  - name: dismiss
+    uid: '@fluentui/react-internal!HoverCardBase#dismiss:member'
+    package: '@fluentui/react-internal!'
     fullName: dismiss
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'dismiss: (withTimeOut?: boolean | undefined) => void;'
       return:
-        type:
-          - '(withTimeOut?: boolean | undefined) => void'
-  - uid: '@fluentui/react-internal!HoverCardBase#render:member(1)'
-    name: render()
+        type: '(withTimeOut?: boolean | undefined) =&gt; void'
+methods:
+  - name: componentDidMount()
+    uid: '@fluentui/react-internal!HoverCardBase#componentDidMount:member(1)'
+    package: '@fluentui/react-internal!'
+    fullName: componentDidMount()
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'componentDidMount(): void;'
+      return:
+        type: void
+        description: ''
+  - name: 'componentDidUpdate(prevProps, prevState)'
+    uid: '@fluentui/react-internal!HoverCardBase#componentDidUpdate:member(1)'
+    package: '@fluentui/react-internal!'
+    fullName: 'componentDidUpdate(prevProps, prevState)'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        componentDidUpdate(prevProps: IHoverCardProps, prevState:
+        IHoverCardState): void;
+      parameters:
+        - id: prevProps
+          description: ''
+          type: IHoverCardProps
+        - id: prevState
+          description: ''
+          type: IHoverCardState
+      return:
+        type: void
+        description: ''
+  - name: componentWillUnmount()
+    uid: '@fluentui/react-internal!HoverCardBase#componentWillUnmount:member(1)'
+    package: '@fluentui/react-internal!'
+    fullName: componentWillUnmount()
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'componentWillUnmount(): void;'
+      return:
+        type: void
+        description: ''
+  - name: render()
+    uid: '@fluentui/react-internal!HoverCardBase#render:member(1)'
+    package: '@fluentui/react-internal!'
     fullName: render()
-    langs:
-      - typeScript
-    type: method
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'render(): JSX.Element;'
       return:
-        type:
-          - JSX.Element
+        type: JSX.Element
         description: ''
+extends: 'React.Component&lt;IHoverCardProps, IHoverCardState&gt; '

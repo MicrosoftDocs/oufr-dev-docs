@@ -1,206 +1,208 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'office-ui-fabric-react!Suggestions:class'
-    name: Suggestions
-    fullName: Suggestions
-    langs:
-      - typeScript
-    type: class
-    extends:
-      - 'React.Component<ISuggestionsProps<T>, ISuggestionsState> '
+### YamlMime:TSType
+name: Suggestions
+uid: 'office-ui-fabric-react!Suggestions:class'
+package: office-ui-fabric-react!
+fullName: Suggestions
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: (constructor)(suggestionsProps)
+    uid: 'office-ui-fabric-react!Suggestions:constructor(1)'
     package: office-ui-fabric-react!
-    children:
-      - 'office-ui-fabric-react!Suggestions#_forceResolveButton:member'
-      - 'office-ui-fabric-react!Suggestions#_searchForMoreButton:member'
-      - 'office-ui-fabric-react!Suggestions#_selectedElement:member'
-      - 'office-ui-fabric-react!Suggestions:constructor(1)'
-      - 'office-ui-fabric-react!Suggestions#componentDidMount:member(1)'
-      - 'office-ui-fabric-react!Suggestions#componentDidUpdate:member(1)'
-      - 'office-ui-fabric-react!Suggestions#executeSelectedAction:member(1)'
-      - 'office-ui-fabric-react!Suggestions#focusAboveSuggestions:member(1)'
-      - 'office-ui-fabric-react!Suggestions#focusBelowSuggestions:member(1)'
-      - 'office-ui-fabric-react!Suggestions#focusSearchForMoreButton:member(1)'
-      - 'office-ui-fabric-react!Suggestions#hasSuggestedAction:member(1)'
-      - 'office-ui-fabric-react!Suggestions#hasSuggestedActionSelected:member(1)'
-      - 'office-ui-fabric-react!Suggestions#render:member(1)'
-      - 'office-ui-fabric-react!Suggestions#scrollSelected:member(1)'
-      - 'office-ui-fabric-react!Suggestions#tryHandleKeyDown:member'
-  - uid: 'office-ui-fabric-react!Suggestions#_forceResolveButton:member'
-    name: _forceResolveButton
-    fullName: _forceResolveButton
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'protected _forceResolveButton: React.RefObject<IButton>;'
-      return:
-        type:
-          - React.RefObject<IButton>
-  - uid: 'office-ui-fabric-react!Suggestions#_searchForMoreButton:member'
-    name: _searchForMoreButton
-    fullName: _searchForMoreButton
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'protected _searchForMoreButton: React.RefObject<IButton>;'
-      return:
-        type:
-          - React.RefObject<IButton>
-  - uid: 'office-ui-fabric-react!Suggestions#_selectedElement:member'
-    name: _selectedElement
-    fullName: _selectedElement
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'protected _selectedElement: React.RefObject<HTMLDivElement>;'
-      return:
-        type:
-          - React.RefObject<HTMLDivElement>
-  - uid: 'office-ui-fabric-react!Suggestions:constructor(1)'
-    summary: Constructs a new instance of the `Suggestions` class
-    name: (constructor)(suggestionsProps)
     fullName: (constructor)(suggestionsProps)
-    langs:
-      - typeScript
-    type: constructor
+    summary: Constructs a new instance of the `Suggestions` class
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'constructor(suggestionsProps: ISuggestionsProps<T>);'
       parameters:
         - id: suggestionsProps
           description: ''
-          type:
-            - ISuggestionsProps<T>
-  - uid: 'office-ui-fabric-react!Suggestions#componentDidMount:member(1)'
-    name: componentDidMount()
+          type: ISuggestionsProps&lt;T&gt;
+properties:
+  - name: _forceResolveButton
+    uid: 'office-ui-fabric-react!Suggestions#_forceResolveButton:member'
+    package: office-ui-fabric-react!
+    fullName: _forceResolveButton
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protected _forceResolveButton: React.RefObject<IButton>;'
+      return:
+        type: React.RefObject&lt;IButton&gt;
+  - name: _searchForMoreButton
+    uid: 'office-ui-fabric-react!Suggestions#_searchForMoreButton:member'
+    package: office-ui-fabric-react!
+    fullName: _searchForMoreButton
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protected _searchForMoreButton: React.RefObject<IButton>;'
+      return:
+        type: React.RefObject&lt;IButton&gt;
+  - name: _selectedElement
+    uid: 'office-ui-fabric-react!Suggestions#_selectedElement:member'
+    package: office-ui-fabric-react!
+    fullName: _selectedElement
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protected _selectedElement: React.RefObject<HTMLDivElement>;'
+      return:
+        type: React.RefObject&lt;HTMLDivElement&gt;
+  - name: tryHandleKeyDown
+    uid: 'office-ui-fabric-react!Suggestions#tryHandleKeyDown:member'
+    package: office-ui-fabric-react!
+    fullName: tryHandleKeyDown
+    summary: 'Returns true if the event was handled, false otherwise'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        tryHandleKeyDown: (keyCode: number, currentSuggestionIndex: number) =>
+        boolean;
+      return:
+        type: '(keyCode: number, currentSuggestionIndex: number) =&gt; boolean'
+methods:
+  - name: componentDidMount()
+    uid: 'office-ui-fabric-react!Suggestions#componentDidMount:member(1)'
+    package: office-ui-fabric-react!
     fullName: componentDidMount()
-    langs:
-      - typeScript
-    type: method
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'componentDidMount(): void;'
       return:
-        type:
-          - void
+        type: void
         description: ''
-  - uid: 'office-ui-fabric-react!Suggestions#componentDidUpdate:member(1)'
-    name: componentDidUpdate()
+  - name: componentDidUpdate()
+    uid: 'office-ui-fabric-react!Suggestions#componentDidUpdate:member(1)'
+    package: office-ui-fabric-react!
     fullName: componentDidUpdate()
-    langs:
-      - typeScript
-    type: method
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'componentDidUpdate(): void;'
       return:
-        type:
-          - void
+        type: void
         description: ''
-  - uid: 'office-ui-fabric-react!Suggestions#executeSelectedAction:member(1)'
-    name: executeSelectedAction()
+  - name: executeSelectedAction()
+    uid: 'office-ui-fabric-react!Suggestions#executeSelectedAction:member(1)'
+    package: office-ui-fabric-react!
     fullName: executeSelectedAction()
-    langs:
-      - typeScript
-    type: method
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'executeSelectedAction(): void;'
       return:
-        type:
-          - void
+        type: void
         description: ''
-  - uid: 'office-ui-fabric-react!Suggestions#focusAboveSuggestions:member(1)'
-    name: focusAboveSuggestions()
+  - name: focusAboveSuggestions()
+    uid: 'office-ui-fabric-react!Suggestions#focusAboveSuggestions:member(1)'
+    package: office-ui-fabric-react!
     fullName: focusAboveSuggestions()
-    langs:
-      - typeScript
-    type: method
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'focusAboveSuggestions(): void;'
       return:
-        type:
-          - void
+        type: void
         description: ''
-  - uid: 'office-ui-fabric-react!Suggestions#focusBelowSuggestions:member(1)'
-    name: focusBelowSuggestions()
+  - name: focusBelowSuggestions()
+    uid: 'office-ui-fabric-react!Suggestions#focusBelowSuggestions:member(1)'
+    package: office-ui-fabric-react!
     fullName: focusBelowSuggestions()
-    langs:
-      - typeScript
-    type: method
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'focusBelowSuggestions(): void;'
       return:
-        type:
-          - void
+        type: void
         description: ''
-  - uid: 'office-ui-fabric-react!Suggestions#focusSearchForMoreButton:member(1)'
-    name: focusSearchForMoreButton()
+  - name: focusSearchForMoreButton()
+    uid: 'office-ui-fabric-react!Suggestions#focusSearchForMoreButton:member(1)'
+    package: office-ui-fabric-react!
     fullName: focusSearchForMoreButton()
-    langs:
-      - typeScript
-    type: method
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'focusSearchForMoreButton(): void;'
       return:
-        type:
-          - void
+        type: void
         description: ''
-  - uid: 'office-ui-fabric-react!Suggestions#hasSuggestedAction:member(1)'
-    name: hasSuggestedAction()
+  - name: hasSuggestedAction()
+    uid: 'office-ui-fabric-react!Suggestions#hasSuggestedAction:member(1)'
+    package: office-ui-fabric-react!
     fullName: hasSuggestedAction()
-    langs:
-      - typeScript
-    type: method
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'hasSuggestedAction(): boolean;'
       return:
-        type:
-          - boolean
+        type: boolean
         description: ''
-  - uid: 'office-ui-fabric-react!Suggestions#hasSuggestedActionSelected:member(1)'
-    name: hasSuggestedActionSelected()
+  - name: hasSuggestedActionSelected()
+    uid: 'office-ui-fabric-react!Suggestions#hasSuggestedActionSelected:member(1)'
+    package: office-ui-fabric-react!
     fullName: hasSuggestedActionSelected()
-    langs:
-      - typeScript
-    type: method
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'hasSuggestedActionSelected(): boolean;'
       return:
-        type:
-          - boolean
+        type: boolean
         description: ''
-  - uid: 'office-ui-fabric-react!Suggestions#render:member(1)'
-    name: render()
+  - name: render()
+    uid: 'office-ui-fabric-react!Suggestions#render:member(1)'
+    package: office-ui-fabric-react!
     fullName: render()
-    langs:
-      - typeScript
-    type: method
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'render(): JSX.Element;'
       return:
-        type:
-          - JSX.Element
+        type: JSX.Element
         description: ''
-  - uid: 'office-ui-fabric-react!Suggestions#scrollSelected:member(1)'
-    name: scrollSelected()
+  - name: scrollSelected()
+    uid: 'office-ui-fabric-react!Suggestions#scrollSelected:member(1)'
+    package: office-ui-fabric-react!
     fullName: scrollSelected()
-    langs:
-      - typeScript
-    type: method
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'scrollSelected(): void;'
       return:
-        type:
-          - void
+        type: void
         description: ''
-  - uid: 'office-ui-fabric-react!Suggestions#tryHandleKeyDown:member'
-    summary: 'Returns true if the event was handled, false otherwise'
-    name: tryHandleKeyDown
-    fullName: tryHandleKeyDown
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'tryHandleKeyDown: (keyCode: number, currentSuggestionIndex: number) => boolean;'
-      return:
-        type:
-          - '(keyCode: number, currentSuggestionIndex: number) => boolean'
+extends: 'React.Component&lt;ISuggestionsProps&lt;T&gt;, ISuggestionsState&gt; '

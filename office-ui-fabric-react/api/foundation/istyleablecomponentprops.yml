@@ -1,68 +1,61 @@
-### YamlMime:UniversalReference
-items:
-  - uid: '@uifabric/foundation!IStyleableComponentProps:interface'
-    summary: >-
-      Optional props for styleable components. If these props are present, they will automatically be used by Foundation
-      when applying theming and styling.
-    name: IStyleableComponentProps
-    fullName: IStyleableComponentProps
-    langs:
-      - typeScript
-    type: interface
-    syntax:
-      typeParameters:
-        - id: TViewProps
-        - id: TTokens
-        - id: TStyleSet
-          type:
-            - IStyleSet<TStyleSet>
+### YamlMime:TSType
+name: IStyleableComponentProps
+uid: '@uifabric/foundation!IStyleableComponentProps:interface'
+package: '@uifabric/foundation!'
+fullName: IStyleableComponentProps
+summary: >-
+  Optional props for styleable components. If these props are present, they will
+  automatically be used by Foundation when applying theming and styling.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: className
+    uid: '@uifabric/foundation!IStyleableComponentProps#className:member'
     package: '@uifabric/foundation!'
-    children:
-      - '@uifabric/foundation!IStyleableComponentProps#className:member'
-      - '@uifabric/foundation!IStyleableComponentProps#styles:member'
-      - '@uifabric/foundation!IStyleableComponentProps#theme:member'
-      - '@uifabric/foundation!IStyleableComponentProps#tokens:member'
-  - uid: '@uifabric/foundation!IStyleableComponentProps#className:member'
-    name: className
     fullName: className
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'className?: string;'
       return:
-        type:
-          - string
-  - uid: '@uifabric/foundation!IStyleableComponentProps#styles:member'
-    name: styles
+        type: string
+  - name: styles
+    uid: '@uifabric/foundation!IStyleableComponentProps#styles:member'
+    package: '@uifabric/foundation!'
     fullName: styles
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'styles?: IStylesFunctionOrObject<TViewProps, TTokens, TStyleSet>;'
       return:
-        type:
-          - 'IStylesFunctionOrObject<TViewProps, TTokens, TStyleSet>'
-  - uid: '@uifabric/foundation!IStyleableComponentProps#theme:member'
-    name: theme
+        type: 'IStylesFunctionOrObject&lt;TViewProps, TTokens, TStyleSet&gt;'
+  - name: theme
+    uid: '@uifabric/foundation!IStyleableComponentProps#theme:member'
+    package: '@uifabric/foundation!'
     fullName: theme
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'theme?: ITheme;'
       return:
-        type:
-          - '@fluentui/theme!ITheme:interface'
-  - uid: '@uifabric/foundation!IStyleableComponentProps#tokens:member'
-    name: tokens
+        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
+  - name: tokens
+    uid: '@uifabric/foundation!IStyleableComponentProps#tokens:member'
+    package: '@uifabric/foundation!'
     fullName: tokens
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'tokens?: ITokenFunctionOrObject<TViewProps, TTokens>;'
       return:
-        type:
-          - 'ITokenFunctionOrObject<TViewProps, TTokens>'
+        type: 'ITokenFunctionOrObject&lt;TViewProps, TTokens&gt;'

@@ -1,29 +1,25 @@
-### YamlMime:UniversalReference
-items:
-  - uid: '@fluentui/utilities!IRenderComponent:interface'
-    summary: >-
-      An interface representing a component that will not output any DOM, will just render its children and pass through
-      items to modify the children.
-    name: IRenderComponent
-    fullName: IRenderComponent
-    langs:
-      - typeScript
-    type: interface
-    syntax:
-      typeParameters:
-        - id: TProps
+### YamlMime:TSType
+name: IRenderComponent
+uid: '@fluentui/utilities!IRenderComponent:interface'
+package: '@fluentui/utilities!'
+fullName: IRenderComponent
+summary: >-
+  An interface representing a component that will not output any DOM, will just
+  render its children and pass through items to modify the children.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: children
+    uid: '@fluentui/utilities!IRenderComponent#children:member'
     package: '@fluentui/utilities!'
-    children:
-      - '@fluentui/utilities!IRenderComponent#children:member'
-  - uid: '@fluentui/utilities!IRenderComponent#children:member'
-    summary: JSX.Element to return in this component's render() function.
-    name: children
     fullName: children
-    langs:
-      - typeScript
-    type: property
+    summary: JSX.Element to return in this component's render() function.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'children: (props: TProps) => JSX.Element;'
       return:
-        type:
-          - '(props: TProps) => JSX.Element'
+        type: '(props: TProps) =&gt; JSX.Element'

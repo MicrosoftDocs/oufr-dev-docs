@@ -1,41 +1,39 @@
-### YamlMime:UniversalReference
-items:
-  - uid: '@fluentui/react-internal!IInputProps:interface'
-    summary: Pickers' input props interface
-    name: IInputProps
-    fullName: IInputProps
-    langs:
-      - typeScript
-    type: interface
-    extends:
-      - 'React.InputHTMLAttributes<HTMLInputElement> '
+### YamlMime:TSType
+name: IInputProps
+uid: '@fluentui/react-internal!IInputProps:interface'
+package: '@fluentui/react-internal!'
+fullName: IInputProps
+summary: Pickers' input props interface
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: '"aria-label"'
+    uid: '@fluentui/react-internal!IInputProps#"aria-label":member'
     package: '@fluentui/react-internal!'
-    children:
-      - '@fluentui/react-internal!IInputProps#"aria-label":member'
-      - '@fluentui/react-internal!IInputProps#defaultVisibleValue:member'
-  - uid: '@fluentui/react-internal!IInputProps#"aria-label":member'
-    summary: Screen reader label to apply to an input element.
-    name: '"aria-label"'
     fullName: '"aria-label"'
-    langs:
-      - typeScript
-    type: property
+    summary: Screen reader label to apply to an input element.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: '''aria-label''?: string;'
       return:
-        type:
-          - string
-  - uid: '@fluentui/react-internal!IInputProps#defaultVisibleValue:member'
-    summary: >-
-      The default value to be visible when the autofill first created. This is different than placeholder text because
-      the placeholder text will disappear and re-appear. This text persists until deleted or changed.
-    name: defaultVisibleValue
+        type: string
+  - name: defaultVisibleValue
+    uid: '@fluentui/react-internal!IInputProps#defaultVisibleValue:member'
+    package: '@fluentui/react-internal!'
     fullName: defaultVisibleValue
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The default value to be visible when the autofill first created. This is
+      different than placeholder text because the placeholder text will
+      disappear and re-appear. This text persists until deleted or changed.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'defaultVisibleValue?: string;'
       return:
-        type:
-          - string
+        type: string
+extends: 'React.InputHTMLAttributes&lt;HTMLInputElement&gt; '

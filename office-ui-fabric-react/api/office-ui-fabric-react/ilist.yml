@@ -1,70 +1,73 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'office-ui-fabric-react!IList:interface'
-    name: IList
-    fullName: IList
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: IList
+uid: 'office-ui-fabric-react!IList:interface'
+package: office-ui-fabric-react!
+fullName: IList
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: forceUpdate
+    uid: 'office-ui-fabric-react!IList#forceUpdate:member'
     package: office-ui-fabric-react!
-    children:
-      - 'office-ui-fabric-react!IList#forceUpdate:member'
-      - 'office-ui-fabric-react!IList#getStartItemIndexInView:member'
-      - 'office-ui-fabric-react!IList#getTotalListHeight:member'
-      - 'office-ui-fabric-react!IList#scrollToIndex:member'
-  - uid: 'office-ui-fabric-react!IList#forceUpdate:member'
-    summary: Force the component to update.
-    name: forceUpdate
     fullName: forceUpdate
-    langs:
-      - typeScript
-    type: property
+    summary: Force the component to update.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'forceUpdate: () => void;'
       return:
-        type:
-          - () => void
-  - uid: 'office-ui-fabric-react!IList#getStartItemIndexInView:member'
-    summary: Get the start index of the page that is currently in view
-    name: getStartItemIndexInView
+        type: () =&gt; void
+  - name: getStartItemIndexInView
+    uid: 'office-ui-fabric-react!IList#getStartItemIndexInView:member'
+    package: office-ui-fabric-react!
     fullName: getStartItemIndexInView
-    langs:
-      - typeScript
-    type: property
+    summary: Get the start index of the page that is currently in view
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'getStartItemIndexInView: () => number;'
       return:
-        type:
-          - () => number
-  - uid: 'office-ui-fabric-react!IList#getTotalListHeight:member'
-    summary: Get the current height the list and it's pages.
-    name: getTotalListHeight
+        type: () =&gt; number
+  - name: getTotalListHeight
+    uid: 'office-ui-fabric-react!IList#getTotalListHeight:member'
+    package: office-ui-fabric-react!
     fullName: getTotalListHeight
-    langs:
-      - typeScript
-    type: property
+    summary: Get the current height the list and it's pages.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'getTotalListHeight?: () => number;'
       return:
-        type:
-          - () => number
-  - uid: 'office-ui-fabric-react!IList#scrollToIndex:member'
-    summary: >-
-      Scroll to the given index. By default will bring the page the specified item is on into the view. If a callback to
-      measure the height of an individual item is specified, will only scroll to bring the specific item into view.
-
-
-      Note: with items of variable height and no passed in `getPageHeight` method, the list might jump after scrolling
-      when windows before/ahead are being rendered, and the estimated height is replaced using actual elements.
-    name: scrollToIndex
+        type: () =&gt; number
+  - name: scrollToIndex
+    uid: 'office-ui-fabric-react!IList#scrollToIndex:member'
+    package: office-ui-fabric-react!
     fullName: scrollToIndex
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Scroll to the given index. By default will bring the page the specified
+      item is on into the view. If a callback to measure the height of an
+      individual item is specified, will only scroll to bring the specific item
+      into view.
+
+
+      Note: with items of variable height and no passed in `getPageHeight`
+      method, the list might jump after scrolling when windows before/ahead are
+      being rendered, and the estimated height is replaced using actual
+      elements.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        scrollToIndex: (index: number, measureItem?: (itemIndex: number) => number, scrollToMode?: ScrollToMode) =>
-        void;
+        scrollToIndex: (index: number, measureItem?: (itemIndex: number) =>
+        number, scrollToMode?: ScrollToMode) => void;
       return:
-        type:
-          - '(index: number, measureItem?: (itemIndex: number) => number, scrollToMode?: ScrollToMode) => void'
+        type: >-
+          (index: number, measureItem?: (itemIndex: number) =&gt; number,
+          scrollToMode?: ScrollToMode) =&gt; void

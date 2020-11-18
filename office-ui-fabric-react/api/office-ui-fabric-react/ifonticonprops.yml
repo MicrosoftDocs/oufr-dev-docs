@@ -1,41 +1,40 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'office-ui-fabric-react!IFontIconProps:interface'
-    summary: Props for a basic icon component which only supports font glyphs and can't be targeted by customizations.
-    name: IFontIconProps
-    fullName: IFontIconProps
-    langs:
-      - typeScript
-    type: interface
-    extends:
-      - 'React.HTMLAttributes<HTMLElement> '
+### YamlMime:TSType
+name: IFontIconProps
+uid: 'office-ui-fabric-react!IFontIconProps:interface'
+package: office-ui-fabric-react!
+fullName: IFontIconProps
+summary: >-
+  Props for a basic icon component which only supports font glyphs and can't be
+  targeted by customizations.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: className
+    uid: 'office-ui-fabric-react!IFontIconProps#className:member'
     package: office-ui-fabric-react!
-    children:
-      - 'office-ui-fabric-react!IFontIconProps#className:member'
-      - 'office-ui-fabric-react!IFontIconProps#iconName:member'
-  - uid: 'office-ui-fabric-react!IFontIconProps#className:member'
-    summary: Custom class to style the icon.
-    name: className
     fullName: className
-    langs:
-      - typeScript
-    type: property
+    summary: Custom class to style the icon.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'className?: string;'
       return:
-        type:
-          - string
-  - uid: 'office-ui-fabric-react!IFontIconProps#iconName:member'
-    summary: >-
-      The name of the icon to use from the icon font. If string is empty, a placeholder icon will be rendered the same
-      width as an icon.
-    name: iconName
+        type: string
+  - name: iconName
+    uid: 'office-ui-fabric-react!IFontIconProps#iconName:member'
+    package: office-ui-fabric-react!
     fullName: iconName
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The name of the icon to use from the icon font. If string is empty, a
+      placeholder icon will be rendered the same width as an icon.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'iconName?: string;'
       return:
-        type:
-          - string
+        type: string
+extends: 'React.HTMLAttributes&lt;HTMLElement&gt; '

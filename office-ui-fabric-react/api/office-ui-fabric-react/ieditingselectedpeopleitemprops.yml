@@ -1,60 +1,67 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'office-ui-fabric-react!IEditingSelectedPeopleItemProps:interface'
-    name: IEditingSelectedPeopleItemProps
-    fullName: IEditingSelectedPeopleItemProps
-    langs:
-      - typeScript
-    type: interface
-    extends:
-      - 'ISelectedPeopleItemProps '
+### YamlMime:TSType
+name: IEditingSelectedPeopleItemProps
+uid: 'office-ui-fabric-react!IEditingSelectedPeopleItemProps:interface'
+package: office-ui-fabric-react!
+fullName: IEditingSelectedPeopleItemProps
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: floatingPickerProps
+    uid: >-
+      office-ui-fabric-react!IEditingSelectedPeopleItemProps#floatingPickerProps:member
     package: office-ui-fabric-react!
-    children:
-      - 'office-ui-fabric-react!IEditingSelectedPeopleItemProps#floatingPickerProps:member'
-      - 'office-ui-fabric-react!IEditingSelectedPeopleItemProps#getEditingItemText:member'
-      - 'office-ui-fabric-react!IEditingSelectedPeopleItemProps#onEditingComplete:member'
-      - 'office-ui-fabric-react!IEditingSelectedPeopleItemProps#onRenderFloatingPicker:member'
-  - uid: 'office-ui-fabric-react!IEditingSelectedPeopleItemProps#floatingPickerProps:member'
-    name: floatingPickerProps
     fullName: floatingPickerProps
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'floatingPickerProps?: IBaseFloatingPickerProps<IPersonaProps>;'
       return:
-        type:
-          - IBaseFloatingPickerProps<IPersonaProps>
-  - uid: 'office-ui-fabric-react!IEditingSelectedPeopleItemProps#getEditingItemText:member'
-    name: getEditingItemText
+        type: IBaseFloatingPickerProps&lt;IPersonaProps&gt;
+  - name: getEditingItemText
+    uid: >-
+      office-ui-fabric-react!IEditingSelectedPeopleItemProps#getEditingItemText:member
+    package: office-ui-fabric-react!
     fullName: getEditingItemText
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'getEditingItemText?: (item: IExtendedPersonaProps) => string;'
       return:
-        type:
-          - '(item: IExtendedPersonaProps) => string'
-  - uid: 'office-ui-fabric-react!IEditingSelectedPeopleItemProps#onEditingComplete:member'
-    name: onEditingComplete
+        type: '(item: IExtendedPersonaProps) =&gt; string'
+  - name: onEditingComplete
+    uid: >-
+      office-ui-fabric-react!IEditingSelectedPeopleItemProps#onEditingComplete:member
+    package: office-ui-fabric-react!
     fullName: onEditingComplete
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'onEditingComplete: (oldItem: any, newItem: any) => void;'
       return:
-        type:
-          - '(oldItem: any, newItem: any) => void'
-  - uid: 'office-ui-fabric-react!IEditingSelectedPeopleItemProps#onRenderFloatingPicker:member'
-    name: onRenderFloatingPicker
+        type: '(oldItem: any, newItem: any) =&gt; void'
+  - name: onRenderFloatingPicker
+    uid: >-
+      office-ui-fabric-react!IEditingSelectedPeopleItemProps#onRenderFloatingPicker:member
+    package: office-ui-fabric-react!
     fullName: onRenderFloatingPicker
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'onRenderFloatingPicker?: React.ComponentType<IBaseFloatingPickerProps<IPersonaProps>>;'
+      content: >-
+        onRenderFloatingPicker?:
+        React.ComponentType<IBaseFloatingPickerProps<IPersonaProps>>;
       return:
-        type:
-          - React.ComponentType<IBaseFloatingPickerProps<IPersonaProps>>
+        type: >-
+          React.ComponentType&lt;IBaseFloatingPickerProps&lt;IPersonaProps&gt;&gt;
+extends: 'ISelectedPeopleItemProps '

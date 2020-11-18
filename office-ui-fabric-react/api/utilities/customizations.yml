@@ -1,152 +1,147 @@
-### YamlMime:UniversalReference
-items:
-  - uid: '@fluentui/utilities!Customizations:class'
-    name: Customizations
-    fullName: Customizations
-    langs:
-      - typeScript
-    type: class
+### YamlMime:TSType
+name: Customizations
+uid: '@fluentui/utilities!Customizations:class'
+package: '@fluentui/utilities!'
+fullName: Customizations
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+methods:
+  - name: 'applyBatchedUpdates(code, suppressUpdate)'
+    uid: '@fluentui/utilities!Customizations.applyBatchedUpdates:member(1)'
     package: '@fluentui/utilities!'
-    children:
-      - '@fluentui/utilities!Customizations.applyBatchedUpdates:member(1)'
-      - '@fluentui/utilities!Customizations.applyScopedSettings:member(1)'
-      - '@fluentui/utilities!Customizations.applySettings:member(1)'
-      - '@fluentui/utilities!Customizations.getSettings:member(1)'
-      - '@fluentui/utilities!Customizations.observe:member(1)'
-      - '@fluentui/utilities!Customizations.reset:member(1)'
-      - '@fluentui/utilities!Customizations.unobserve:member(1)'
-  - uid: '@fluentui/utilities!Customizations.applyBatchedUpdates:member(1)'
-    summary: >-
-      Used to run some code that sets Customizations without triggering an update until the end. Useful for applying
-      Customizations that don't affect anything currently rendered, or for applying many customizations at once.
-    name: 'applyBatchedUpdates(code, suppressUpdate)'
     fullName: 'applyBatchedUpdates(code, suppressUpdate)'
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Used to run some code that sets Customizations without triggering an
+      update until the end. Useful for applying Customizations that don't affect
+      anything currently rendered, or for applying many customizations at once.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'static applyBatchedUpdates(code: () => void, suppressUpdate?: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
+      content: >-
+        static applyBatchedUpdates(code: () => void, suppressUpdate?: boolean):
+        void;
       parameters:
         - id: code
           description: ''
-          type:
-            - () => void
+          type: () =&gt; void
         - id: suppressUpdate
           description: 'Do not raise the change event at the end, preventing all updates'
-          type:
-            - boolean
-  - uid: '@fluentui/utilities!Customizations.applyScopedSettings:member(1)'
-    summary: 'Apply Customizations to a particular named scope, like a component.'
-    name: 'applyScopedSettings(scopeName, settings)'
-    fullName: 'applyScopedSettings(scopeName, settings)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'static applyScopedSettings(scopeName: string, settings: ISettings): void;'
+          type: boolean
       return:
-        type:
-          - void
+        type: void
         description: ''
+  - name: 'applyScopedSettings(scopeName, settings)'
+    uid: '@fluentui/utilities!Customizations.applyScopedSettings:member(1)'
+    package: '@fluentui/utilities!'
+    fullName: 'applyScopedSettings(scopeName, settings)'
+    summary: 'Apply Customizations to a particular named scope, like a component.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        static applyScopedSettings(scopeName: string, settings: ISettings):
+        void;
       parameters:
         - id: scopeName
           description: ''
-          type:
-            - string
+          type: string
         - id: settings
           description: ''
-          type:
-            - ISettings
-  - uid: '@fluentui/utilities!Customizations.applySettings:member(1)'
-    summary: Apply global Customization settings.
-    name: applySettings(settings)
+          type: ISettings
+      return:
+        type: void
+        description: ''
+  - name: applySettings(settings)
+    uid: '@fluentui/utilities!Customizations.applySettings:member(1)'
+    package: '@fluentui/utilities!'
     fullName: applySettings(settings)
-    langs:
-      - typeScript
-    type: method
+    summary: Apply global Customization settings.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'static applySettings(settings: ISettings): void;'
-      return:
-        type:
-          - void
-        description: ''
       parameters:
         - id: settings
           description: ''
-          type:
-            - ISettings
-  - uid: '@fluentui/utilities!Customizations.getSettings:member(1)'
-    name: 'getSettings(properties, scopeName, localSettings)'
-    fullName: 'getSettings(properties, scopeName, localSettings)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'static getSettings(properties: string[], scopeName?: string, localSettings?: ICustomizations): any;'
+          type: ISettings
       return:
-        type:
-          - any
+        type: void
         description: ''
+  - name: 'getSettings(properties, scopeName, localSettings)'
+    uid: '@fluentui/utilities!Customizations.getSettings:member(1)'
+    package: '@fluentui/utilities!'
+    fullName: 'getSettings(properties, scopeName, localSettings)'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        static getSettings(properties: string[], scopeName?: string,
+        localSettings?: ICustomizations): any;
       parameters:
         - id: properties
           description: ''
-          type:
-            - 'string[]'
+          type: 'string[]'
         - id: scopeName
           description: ''
-          type:
-            - string
+          type: string
         - id: localSettings
           description: ''
-          type:
-            - '@fluentui/utilities!ICustomizations:interface'
-  - uid: '@fluentui/utilities!Customizations.observe:member(1)'
-    name: observe(onChange)
+          type: '<xref uid="@fluentui/utilities!ICustomizations:interface" />'
+      return:
+        type: any
+        description: ''
+  - name: observe(onChange)
+    uid: '@fluentui/utilities!Customizations.observe:member(1)'
+    package: '@fluentui/utilities!'
     fullName: observe(onChange)
-    langs:
-      - typeScript
-    type: method
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'static observe(onChange: () => void): void;'
-      return:
-        type:
-          - void
-        description: ''
       parameters:
         - id: onChange
           description: ''
-          type:
-            - () => void
-  - uid: '@fluentui/utilities!Customizations.reset:member(1)'
-    name: reset()
+          type: () =&gt; void
+      return:
+        type: void
+        description: ''
+  - name: reset()
+    uid: '@fluentui/utilities!Customizations.reset:member(1)'
+    package: '@fluentui/utilities!'
     fullName: reset()
-    langs:
-      - typeScript
-    type: method
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'static reset(): void;'
       return:
-        type:
-          - void
+        type: void
         description: ''
-  - uid: '@fluentui/utilities!Customizations.unobserve:member(1)'
-    name: unobserve(onChange)
+  - name: unobserve(onChange)
+    uid: '@fluentui/utilities!Customizations.unobserve:member(1)'
+    package: '@fluentui/utilities!'
     fullName: unobserve(onChange)
-    langs:
-      - typeScript
-    type: method
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'static unobserve(onChange: () => void): void;'
-      return:
-        type:
-          - void
-        description: ''
       parameters:
         - id: onChange
           description: ''
-          type:
-            - () => void
+          type: () =&gt; void
+      return:
+        type: void
+        description: ''

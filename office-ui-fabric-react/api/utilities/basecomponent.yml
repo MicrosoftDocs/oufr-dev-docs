@@ -1,286 +1,281 @@
-### YamlMime:UniversalReference
-items:
-  - uid: '@fluentui/utilities!BaseComponent:class'
-    summary: 'BaseComponent class, which provides basic helpers for all components.'
-    deprecated:
-      content: Do not use. We are moving away from class component.
-    name: BaseComponent
-    fullName: BaseComponent
-    langs:
-      - typeScript
-    type: class
-    extends:
-      - 'React.Component<TProps, TState> '
+### YamlMime:TSType
+name: BaseComponent
+uid: '@fluentui/utilities!BaseComponent:class'
+package: '@fluentui/utilities!'
+fullName: BaseComponent
+summary: 'BaseComponent class, which provides basic helpers for all components.'
+remarks: ''
+isPreview: false
+isDeprecated: true
+customDeprecatedMessage: Do not use. We are moving away from class component.
+type: class
+constructors:
+  - name: '(constructor)(props, context)'
+    uid: '@fluentui/utilities!BaseComponent:constructor(1)'
     package: '@fluentui/utilities!'
-    children:
-      - '@fluentui/utilities!BaseComponent#_async:member'
-      - '@fluentui/utilities!BaseComponent#_disposables:member'
-      - '@fluentui/utilities!BaseComponent#_events:member'
-      - '@fluentui/utilities!BaseComponent#_resolveRef:member(1)'
-      - '@fluentui/utilities!BaseComponent#_skipComponentRefResolution:member'
-      - '@fluentui/utilities!BaseComponent#_updateComponentRef:member(1)'
-      - '@fluentui/utilities!BaseComponent#_warnConditionallyRequiredProps:member(1)'
-      - '@fluentui/utilities!BaseComponent#_warnDeprecations:member(1)'
-      - '@fluentui/utilities!BaseComponent#_warnMutuallyExclusive:member(1)'
-      - '@fluentui/utilities!BaseComponent:constructor(1)'
-      - '@fluentui/utilities!BaseComponent#className:member'
-      - '@fluentui/utilities!BaseComponent#componentDidMount:member(1)'
-      - '@fluentui/utilities!BaseComponent#componentDidUpdate:member(1)'
-      - '@fluentui/utilities!BaseComponent#componentWillUnmount:member(1)'
-      - '@fluentui/utilities!BaseComponent.onError:member'
-  - uid: '@fluentui/utilities!BaseComponent#_async:member'
-    summary: >-
-      Gets the async instance associated with the component, created on demand. The async instance gives subclasses a
-      way to execute setTimeout/setInterval async calls safely, where the callbacks will be cleared/ignored
-      automatically after unmounting. The helpers within the async object also preserve the this pointer so that you
-      don't need to "bind" the callbacks.
-    name: _async
-    fullName: _async
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'protected get _async(): Async;'
-      return:
-        type:
-          - '@fluentui/utilities!Async:class'
-  - uid: '@fluentui/utilities!BaseComponent#_disposables:member'
-    summary: Allows subclasses to push things to this.\_disposables to be auto disposed.
-    name: _disposables
-    fullName: _disposables
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'protected get _disposables(): IDisposable[];'
-      return:
-        type:
-          - 'IDisposable[]'
-  - uid: '@fluentui/utilities!BaseComponent#_events:member'
-    summary: >-
-      Gets the event group instance assocaited with the component, created on demand. The event instance provides on/off
-      methods for listening to DOM (or regular javascript object) events. The event callbacks will be automatically
-      disconnected after unmounting. The helpers within the events object also preserve the this reference so that you
-      don't need to "bind" the callbacks.
-    name: _events
-    fullName: _events
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'protected get _events(): EventGroup;'
-      return:
-        type:
-          - '@fluentui/utilities!EventGroup:class'
-  - uid: '@fluentui/utilities!BaseComponent#_resolveRef:member(1)'
-    summary: Helper to return a memoized ref resolver function.
-    deprecated:
-      content: Use `createRef` from React.createRef.
-    name: _resolveRef(refName)
-    fullName: _resolveRef(refName)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'protected _resolveRef(refName: string): (ref: React.ReactNode) => React.ReactNode;'
-      return:
-        type:
-          - '(ref: React.ReactNode) => React.ReactNode'
-        description: A function instance keyed from the given refname.
-      parameters:
-        - id: refName
-          description: Name of the member to assign the ref to.
-          type:
-            - string
-  - uid: '@fluentui/utilities!BaseComponent#_skipComponentRefResolution:member'
-    summary: >-
-      Controls whether the componentRef prop will be resolved by this component instance. If you are implementing a
-      passthrough (higher-order component), you would set this to false and pass through the props to the inner
-      component, allowing it to resolve the componentRef.
-    name: _skipComponentRefResolution
-    fullName: _skipComponentRefResolution
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'protected _skipComponentRefResolution: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: '@fluentui/utilities!BaseComponent#_updateComponentRef:member(1)'
-    summary: Updates the componentRef (by calling it with "this" when necessary.)
-    name: '_updateComponentRef(currentProps, newProps)'
-    fullName: '_updateComponentRef(currentProps, newProps)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'protected _updateComponentRef(currentProps: IBaseProps, newProps?: IBaseProps): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: currentProps
-          description: ''
-          type:
-            - '@fluentui/utilities!IBaseProps:interface'
-        - id: newProps
-          description: ''
-          type:
-            - '@fluentui/utilities!IBaseProps:interface'
-  - uid: '@fluentui/utilities!BaseComponent#_warnConditionallyRequiredProps:member(1)'
-    summary: Warns when props are required if a condition is met.
-    name: '_warnConditionallyRequiredProps(requiredProps, conditionalPropName, condition)'
-    fullName: '_warnConditionallyRequiredProps(requiredProps, conditionalPropName, condition)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: >-
-        protected _warnConditionallyRequiredProps(requiredProps: string[], conditionalPropName: string, condition:
-        boolean): void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: requiredProps
-          description: The name of the props that are required when the condition is met.
-          type:
-            - 'string[]'
-        - id: conditionalPropName
-          description: The name of the prop that the condition is based on.
-          type:
-            - string
-        - id: condition
-          description: Whether the condition is met.
-          type:
-            - boolean
-  - uid: '@fluentui/utilities!BaseComponent#_warnDeprecations:member(1)'
-    summary: Warns when a deprecated props are being used.
-    name: _warnDeprecations(deprecationMap)
-    fullName: _warnDeprecations(deprecationMap)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'protected _warnDeprecations(deprecationMap: ISettingsMap<TProps>): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: deprecationMap
-          description: 'The map of deprecations, where key is the prop name and the value is either null or a replacement prop name.'
-          type:
-            - ISettingsMap<TProps>
-  - uid: '@fluentui/utilities!BaseComponent#_warnMutuallyExclusive:member(1)'
-    summary: Warns when props which are mutually exclusive with each other are both used.
-    name: _warnMutuallyExclusive(mutuallyExclusiveMap)
-    fullName: _warnMutuallyExclusive(mutuallyExclusiveMap)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'protected _warnMutuallyExclusive(mutuallyExclusiveMap: ISettingsMap<TProps>): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: mutuallyExclusiveMap
-          description: The map of mutually exclusive props.
-          type:
-            - ISettingsMap<TProps>
-  - uid: '@fluentui/utilities!BaseComponent:constructor(1)'
-    summary: BaseComponent constructor
-    name: '(constructor)(props, context)'
     fullName: '(constructor)(props, context)'
-    langs:
-      - typeScript
-    type: constructor
+    summary: BaseComponent constructor
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'constructor(props: TProps, context?: any);'
       parameters:
         - id: props
           description: The props for the component.
-          type:
-            - TProps
+          type: TProps
         - id: context
           description: The context for the component.
-          type:
-            - any
-  - uid: '@fluentui/utilities!BaseComponent#className:member'
-    summary: Gets the object's class name.
-    name: className
+          type: any
+properties:
+  - name: _async
+    uid: '@fluentui/utilities!BaseComponent#_async:member'
+    package: '@fluentui/utilities!'
+    fullName: _async
+    summary: >-
+      Gets the async instance associated with the component, created on demand.
+      The async instance gives subclasses a way to execute
+      setTimeout/setInterval async calls safely, where the callbacks will be
+      cleared/ignored automatically after unmounting. The helpers within the
+      async object also preserve the this pointer so that you don't need to
+      "bind" the callbacks.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protected get _async(): Async;'
+      return:
+        type: '<xref uid="@fluentui/utilities!Async:class" />'
+  - name: _disposables
+    uid: '@fluentui/utilities!BaseComponent#_disposables:member'
+    package: '@fluentui/utilities!'
+    fullName: _disposables
+    summary: >-
+      Allows subclasses to push things to this.\_disposables to be auto
+      disposed.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protected get _disposables(): IDisposable[];'
+      return:
+        type: 'IDisposable[]'
+  - name: _events
+    uid: '@fluentui/utilities!BaseComponent#_events:member'
+    package: '@fluentui/utilities!'
+    fullName: _events
+    summary: >-
+      Gets the event group instance assocaited with the component, created on
+      demand. The event instance provides on/off methods for listening to DOM
+      (or regular javascript object) events. The event callbacks will be
+      automatically disconnected after unmounting. The helpers within the events
+      object also preserve the this reference so that you don't need to "bind"
+      the callbacks.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protected get _events(): EventGroup;'
+      return:
+        type: '<xref uid="@fluentui/utilities!EventGroup:class" />'
+  - name: _skipComponentRefResolution
+    uid: '@fluentui/utilities!BaseComponent#_skipComponentRefResolution:member'
+    package: '@fluentui/utilities!'
+    fullName: _skipComponentRefResolution
+    summary: >-
+      Controls whether the componentRef prop will be resolved by this component
+      instance. If you are implementing a passthrough (higher-order component),
+      you would set this to false and pass through the props to the inner
+      component, allowing it to resolve the componentRef.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protected _skipComponentRefResolution: boolean;'
+      return:
+        type: boolean
+  - name: className
+    uid: '@fluentui/utilities!BaseComponent#className:member'
+    package: '@fluentui/utilities!'
     fullName: className
-    langs:
-      - typeScript
-    type: property
+    summary: Gets the object's class name.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'get className(): string;'
       return:
-        type:
-          - string
-  - uid: '@fluentui/utilities!BaseComponent#componentDidMount:member(1)'
-    summary: 'When the component has mounted, update the componentRef.'
-    name: componentDidMount()
-    fullName: componentDidMount()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'componentDidMount(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: '@fluentui/utilities!BaseComponent#componentDidUpdate:member(1)'
-    summary: 'When the component receives props, make sure the componentRef is updated.'
-    name: 'componentDidUpdate(prevProps, prevState)'
-    fullName: 'componentDidUpdate(prevProps, prevState)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'componentDidUpdate(prevProps: TProps, prevState: TState): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: prevProps
-          description: ''
-          type:
-            - TProps
-        - id: prevState
-          description: ''
-          type:
-            - TState
-  - uid: '@fluentui/utilities!BaseComponent#componentWillUnmount:member(1)'
-    summary: 'If we have disposables, dispose them automatically on unmount.'
-    name: componentWillUnmount()
-    fullName: componentWillUnmount()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'componentWillUnmount(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: '@fluentui/utilities!BaseComponent.onError:member'
-    deprecated:
-      content: Use React's error boundaries instead.
-    name: onError
+        type: string
+  - name: onError
+    uid: '@fluentui/utilities!BaseComponent.onError:member'
+    package: '@fluentui/utilities!'
     fullName: onError
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Use React's error boundaries instead.
     syntax:
       content: 'static onError: (errorMessage?: string, ex?: any) => void;'
       return:
-        type:
-          - '(errorMessage?: string, ex?: any) => void'
+        type: '(errorMessage?: string, ex?: any) =&gt; void'
+methods:
+  - name: _resolveRef(refName)
+    uid: '@fluentui/utilities!BaseComponent#_resolveRef:member(1)'
+    package: '@fluentui/utilities!'
+    fullName: _resolveRef(refName)
+    summary: Helper to return a memoized ref resolver function.
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Use `createRef` from React.createRef.
+    syntax:
+      content: >-
+        protected _resolveRef(refName: string): (ref: React.ReactNode) =>
+        React.ReactNode;
+      parameters:
+        - id: refName
+          description: Name of the member to assign the ref to.
+          type: string
+      return:
+        type: '(ref: React.ReactNode) =&gt; React.ReactNode'
+        description: A function instance keyed from the given refname.
+  - name: '_updateComponentRef(currentProps, newProps)'
+    uid: '@fluentui/utilities!BaseComponent#_updateComponentRef:member(1)'
+    package: '@fluentui/utilities!'
+    fullName: '_updateComponentRef(currentProps, newProps)'
+    summary: Updates the componentRef (by calling it with "this" when necessary.)
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        protected _updateComponentRef(currentProps: IBaseProps, newProps?:
+        IBaseProps): void;
+      parameters:
+        - id: currentProps
+          description: ''
+          type: '<xref uid="@fluentui/utilities!IBaseProps:interface" />'
+        - id: newProps
+          description: ''
+          type: '<xref uid="@fluentui/utilities!IBaseProps:interface" />'
+      return:
+        type: void
+        description: ''
+  - name: >-
+      _warnConditionallyRequiredProps(requiredProps, conditionalPropName,
+      condition)
+    uid: >-
+      @fluentui/utilities!BaseComponent#_warnConditionallyRequiredProps:member(1)
+    package: '@fluentui/utilities!'
+    fullName: >-
+      _warnConditionallyRequiredProps(requiredProps, conditionalPropName,
+      condition)
+    summary: Warns when props are required if a condition is met.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        protected _warnConditionallyRequiredProps(requiredProps: string[],
+        conditionalPropName: string, condition: boolean): void;
+      parameters:
+        - id: requiredProps
+          description: The name of the props that are required when the condition is met.
+          type: 'string[]'
+        - id: conditionalPropName
+          description: The name of the prop that the condition is based on.
+          type: string
+        - id: condition
+          description: Whether the condition is met.
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: _warnDeprecations(deprecationMap)
+    uid: '@fluentui/utilities!BaseComponent#_warnDeprecations:member(1)'
+    package: '@fluentui/utilities!'
+    fullName: _warnDeprecations(deprecationMap)
+    summary: Warns when a deprecated props are being used.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protected _warnDeprecations(deprecationMap: ISettingsMap<TProps>): void;'
+      parameters:
+        - id: deprecationMap
+          description: >-
+            The map of deprecations, where key is the prop name and the value is
+            either null or a replacement prop name.
+          type: ISettingsMap&lt;TProps&gt;
+      return:
+        type: void
+        description: ''
+  - name: _warnMutuallyExclusive(mutuallyExclusiveMap)
+    uid: '@fluentui/utilities!BaseComponent#_warnMutuallyExclusive:member(1)'
+    package: '@fluentui/utilities!'
+    fullName: _warnMutuallyExclusive(mutuallyExclusiveMap)
+    summary: >-
+      Warns when props which are mutually exclusive with each other are both
+      used.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        protected _warnMutuallyExclusive(mutuallyExclusiveMap:
+        ISettingsMap<TProps>): void;
+      parameters:
+        - id: mutuallyExclusiveMap
+          description: The map of mutually exclusive props.
+          type: ISettingsMap&lt;TProps&gt;
+      return:
+        type: void
+        description: ''
+  - name: componentDidMount()
+    uid: '@fluentui/utilities!BaseComponent#componentDidMount:member(1)'
+    package: '@fluentui/utilities!'
+    fullName: componentDidMount()
+    summary: 'When the component has mounted, update the componentRef.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'componentDidMount(): void;'
+      return:
+        type: void
+        description: ''
+  - name: 'componentDidUpdate(prevProps, prevState)'
+    uid: '@fluentui/utilities!BaseComponent#componentDidUpdate:member(1)'
+    package: '@fluentui/utilities!'
+    fullName: 'componentDidUpdate(prevProps, prevState)'
+    summary: 'When the component receives props, make sure the componentRef is updated.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'componentDidUpdate(prevProps: TProps, prevState: TState): void;'
+      parameters:
+        - id: prevProps
+          description: ''
+          type: TProps
+        - id: prevState
+          description: ''
+          type: TState
+      return:
+        type: void
+        description: ''
+  - name: componentWillUnmount()
+    uid: '@fluentui/utilities!BaseComponent#componentWillUnmount:member(1)'
+    package: '@fluentui/utilities!'
+    fullName: componentWillUnmount()
+    summary: 'If we have disposables, dispose them automatically on unmount.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'componentWillUnmount(): void;'
+      return:
+        type: void
+        description: ''
+extends: 'React.Component&lt;TProps, TState&gt; '

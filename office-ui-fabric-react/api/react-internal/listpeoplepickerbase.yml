@@ -1,24 +1,22 @@
-### YamlMime:UniversalReference
-items:
-  - uid: '@fluentui/react-internal!ListPeoplePickerBase:class'
-    summary: MemberList layout. The selected people show up below the search box.
-    name: ListPeoplePickerBase
-    fullName: ListPeoplePickerBase
-    langs:
-      - typeScript
-    type: class
-    extends:
-      - 'MemberListPeoplePicker '
+### YamlMime:TSType
+name: ListPeoplePickerBase
+uid: '@fluentui/react-internal!ListPeoplePickerBase:class'
+package: '@fluentui/react-internal!'
+fullName: ListPeoplePickerBase
+summary: MemberList layout. The selected people show up below the search box.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: defaultProps
+    uid: '@fluentui/react-internal!ListPeoplePickerBase.defaultProps:member'
     package: '@fluentui/react-internal!'
-    children:
-      - '@fluentui/react-internal!ListPeoplePickerBase.defaultProps:member'
-  - uid: '@fluentui/react-internal!ListPeoplePickerBase.defaultProps:member'
-    summary: Default props for ListPeoplePicker.
-    name: defaultProps
     fullName: defaultProps
-    langs:
-      - typeScript
-    type: property
+    summary: Default props for ListPeoplePicker.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: |-
         static defaultProps: {
@@ -27,10 +25,10 @@ items:
                 createGenericItem: typeof createGenericItem;
             };
       return:
-        type:
-          - |-
-            {
-                    onRenderItem: (props: IPeoplePickerItemSelectedProps) => JSX.Element;
-                    onRenderSuggestionsItem: (personaProps: IPersonaProps, suggestionsProps?: IBasePickerSuggestionsProps<any> | undefined) => JSX.Element;
-                    createGenericItem: typeof createGenericItem;
-                }
+        type: |-
+          {
+                  onRenderItem: (props: IPeoplePickerItemSelectedProps) =&gt; JSX.Element;
+                  onRenderSuggestionsItem: (personaProps: IPersonaProps, suggestionsProps?: IBasePickerSuggestionsProps&lt;any&gt; | undefined) =&gt; JSX.Element;
+                  createGenericItem: typeof createGenericItem;
+              }
+extends: 'MemberListPeoplePicker '

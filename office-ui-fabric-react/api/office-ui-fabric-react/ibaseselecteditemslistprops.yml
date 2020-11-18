@@ -1,187 +1,184 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'office-ui-fabric-react!IBaseSelectedItemsListProps:interface'
-    name: IBaseSelectedItemsListProps
-    fullName: IBaseSelectedItemsListProps
-    langs:
-      - typeScript
-    type: interface
-    extends:
-      - 'React.ClassAttributes<any> '
-    syntax:
-      typeParameters:
-        - id: T
+### YamlMime:TSType
+name: IBaseSelectedItemsListProps
+uid: 'office-ui-fabric-react!IBaseSelectedItemsListProps:interface'
+package: office-ui-fabric-react!
+fullName: IBaseSelectedItemsListProps
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: canRemoveItem
+    uid: 'office-ui-fabric-react!IBaseSelectedItemsListProps#canRemoveItem:member'
     package: office-ui-fabric-react!
-    children:
-      - 'office-ui-fabric-react!IBaseSelectedItemsListProps#canRemoveItem:member'
-      - 'office-ui-fabric-react!IBaseSelectedItemsListProps#componentRef:member'
-      - 'office-ui-fabric-react!IBaseSelectedItemsListProps#createGenericItem:member'
-      - 'office-ui-fabric-react!IBaseSelectedItemsListProps#defaultSelectedItems:member'
-      - 'office-ui-fabric-react!IBaseSelectedItemsListProps#onChange:member'
-      - 'office-ui-fabric-react!IBaseSelectedItemsListProps#onCopyItems:member'
-      - 'office-ui-fabric-react!IBaseSelectedItemsListProps#onItemDeleted:member'
-      - 'office-ui-fabric-react!IBaseSelectedItemsListProps#onItemsDeleted:member'
-      - 'office-ui-fabric-react!IBaseSelectedItemsListProps#onItemSelected:member'
-      - 'office-ui-fabric-react!IBaseSelectedItemsListProps#onRenderItem:member'
-      - 'office-ui-fabric-react!IBaseSelectedItemsListProps#removeButtonAriaLabel:member'
-      - 'office-ui-fabric-react!IBaseSelectedItemsListProps#selectedItems:member'
-      - 'office-ui-fabric-react!IBaseSelectedItemsListProps#selection:member'
-  - uid: 'office-ui-fabric-react!IBaseSelectedItemsListProps#canRemoveItem:member'
-    summary: A callback on whether this item can be deleted
-    name: canRemoveItem
     fullName: canRemoveItem
-    langs:
-      - typeScript
-    type: property
+    summary: A callback on whether this item can be deleted
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'canRemoveItem?: (item: T) => boolean;'
       return:
-        type:
-          - '(item: T) => boolean'
-  - uid: 'office-ui-fabric-react!IBaseSelectedItemsListProps#componentRef:member'
-    name: componentRef
+        type: '(item: T) =&gt; boolean'
+  - name: componentRef
+    uid: 'office-ui-fabric-react!IBaseSelectedItemsListProps#componentRef:member'
+    package: office-ui-fabric-react!
     fullName: componentRef
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'componentRef?: IRefObject<IBaseSelectedItemsList<T>>;'
       return:
-        type:
-          - IRefObject<IBaseSelectedItemsList<T>>
-  - uid: 'office-ui-fabric-react!IBaseSelectedItemsListProps#createGenericItem:member'
-    summary: Function that specifies how arbitrary text entered into the well is handled.
-    name: createGenericItem
+        type: IRefObject&lt;IBaseSelectedItemsList&lt;T&gt;&gt;
+  - name: createGenericItem
+    uid: >-
+      office-ui-fabric-react!IBaseSelectedItemsListProps#createGenericItem:member
+    package: office-ui-fabric-react!
     fullName: createGenericItem
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Function that specifies how arbitrary text entered into the well is
+      handled.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'createGenericItem?: (input: string, ValidationState: ValidationState) => ISuggestionModel<T>;'
+      content: >-
+        createGenericItem?: (input: string, ValidationState: ValidationState) =>
+        ISuggestionModel<T>;
       return:
-        type:
-          - '(input: string, ValidationState: ValidationState) => ISuggestionModel<T>'
-  - uid: 'office-ui-fabric-react!IBaseSelectedItemsListProps#defaultSelectedItems:member'
-    summary: Initial items that have already been selected and should appear in the people picker.
-    name: defaultSelectedItems
+        type: >-
+          (input: string, ValidationState: ValidationState) =&gt;
+          ISuggestionModel&lt;T&gt;
+  - name: defaultSelectedItems
+    uid: >-
+      office-ui-fabric-react!IBaseSelectedItemsListProps#defaultSelectedItems:member
+    package: office-ui-fabric-react!
     fullName: defaultSelectedItems
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Initial items that have already been selected and should appear in the
+      people picker.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'defaultSelectedItems?: T[];'
       return:
-        type:
-          - 'T[]'
-  - uid: 'office-ui-fabric-react!IBaseSelectedItemsListProps#onChange:member'
-    summary: A callback for when the selected list of items changes.
-    name: onChange
+        type: 'T[]'
+  - name: onChange
+    uid: 'office-ui-fabric-react!IBaseSelectedItemsListProps#onChange:member'
+    package: office-ui-fabric-react!
     fullName: onChange
-    langs:
-      - typeScript
-    type: property
+    summary: A callback for when the selected list of items changes.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'onChange?: (items?: T[]) => void;'
       return:
-        type:
-          - '(items?: T[]) => void'
-  - uid: 'office-ui-fabric-react!IBaseSelectedItemsListProps#onCopyItems:member'
-    summary: A callback for when items are copied
-    name: onCopyItems
+        type: '(items?: T[]) =&gt; void'
+  - name: onCopyItems
+    uid: 'office-ui-fabric-react!IBaseSelectedItemsListProps#onCopyItems:member'
+    package: office-ui-fabric-react!
     fullName: onCopyItems
-    langs:
-      - typeScript
-    type: property
+    summary: A callback for when items are copied
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'onCopyItems?: (items: T[]) => string;'
       return:
-        type:
-          - '(items: T[]) => string'
-  - uid: 'office-ui-fabric-react!IBaseSelectedItemsListProps#onItemDeleted:member'
-    summary: A callback when an item is deleted
-    deprecated:
-      content: Use `onItemsDeleted` instead.
-    name: onItemDeleted
+        type: '(items: T[]) =&gt; string'
+  - name: onItemDeleted
+    uid: 'office-ui-fabric-react!IBaseSelectedItemsListProps#onItemDeleted:member'
+    package: office-ui-fabric-react!
     fullName: onItemDeleted
-    langs:
-      - typeScript
-    type: property
+    summary: A callback when an item is deleted
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Use `onItemsDeleted` instead.
     syntax:
       content: 'onItemDeleted?: (deletedItem: T) => void;'
       return:
-        type:
-          - '(deletedItem: T) => void'
-  - uid: 'office-ui-fabric-react!IBaseSelectedItemsListProps#onItemsDeleted:member'
-    summary: A callback when and item or items are deleted
-    name: onItemsDeleted
+        type: '(deletedItem: T) =&gt; void'
+  - name: onItemsDeleted
+    uid: 'office-ui-fabric-react!IBaseSelectedItemsListProps#onItemsDeleted:member'
+    package: office-ui-fabric-react!
     fullName: onItemsDeleted
-    langs:
-      - typeScript
-    type: property
+    summary: A callback when and item or items are deleted
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'onItemsDeleted?: (deletedItems: T[]) => void;'
       return:
-        type:
-          - '(deletedItems: T[]) => void'
-  - uid: 'office-ui-fabric-react!IBaseSelectedItemsListProps#onItemSelected:member'
-    summary: A callback to process a selection after the user selects something from the picker.
-    name: onItemSelected
+        type: '(deletedItems: T[]) =&gt; void'
+  - name: onItemSelected
+    uid: 'office-ui-fabric-react!IBaseSelectedItemsListProps#onItemSelected:member'
+    package: office-ui-fabric-react!
     fullName: onItemSelected
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      A callback to process a selection after the user selects something from
+      the picker.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'onItemSelected?: (selectedItem?: T) => T | PromiseLike<T>;'
       return:
-        type:
-          - '(selectedItem?: T) => T | PromiseLike<T>'
-  - uid: 'office-ui-fabric-react!IBaseSelectedItemsListProps#onRenderItem:member'
-    summary: Function that specifies how the selected item will appear.
-    name: onRenderItem
+        type: '(selectedItem?: T) =&gt; T | PromiseLike&lt;T&gt;'
+  - name: onRenderItem
+    uid: 'office-ui-fabric-react!IBaseSelectedItemsListProps#onRenderItem:member'
+    package: office-ui-fabric-react!
     fullName: onRenderItem
-    langs:
-      - typeScript
-    type: property
+    summary: Function that specifies how the selected item will appear.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'onRenderItem?: (props: ISelectedItemProps<T>) => JSX.Element;'
       return:
-        type:
-          - '(props: ISelectedItemProps<T>) => JSX.Element'
-  - uid: 'office-ui-fabric-react!IBaseSelectedItemsListProps#removeButtonAriaLabel:member'
-    summary: Aria label for the 'X' button in the selected item component.
-    name: removeButtonAriaLabel
+        type: '(props: ISelectedItemProps&lt;T&gt;) =&gt; JSX.Element'
+  - name: removeButtonAriaLabel
+    uid: >-
+      office-ui-fabric-react!IBaseSelectedItemsListProps#removeButtonAriaLabel:member
+    package: office-ui-fabric-react!
     fullName: removeButtonAriaLabel
-    langs:
-      - typeScript
-    type: property
+    summary: Aria label for the 'X' button in the selected item component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'removeButtonAriaLabel?: string;'
       return:
-        type:
-          - string
-  - uid: 'office-ui-fabric-react!IBaseSelectedItemsListProps#selectedItems:member'
-    summary: >-
-      The items that the base picker should currently display as selected. If this is provided then the picker will act
-      as a controlled component.
-    name: selectedItems
+        type: string
+  - name: selectedItems
+    uid: 'office-ui-fabric-react!IBaseSelectedItemsListProps#selectedItems:member'
+    package: office-ui-fabric-react!
     fullName: selectedItems
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The items that the base picker should currently display as selected. If
+      this is provided then the picker will act as a controlled component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'selectedItems?: T[];'
       return:
-        type:
-          - 'T[]'
-  - uid: 'office-ui-fabric-react!IBaseSelectedItemsListProps#selection:member'
-    summary: The selection
-    name: selection
+        type: 'T[]'
+  - name: selection
+    uid: 'office-ui-fabric-react!IBaseSelectedItemsListProps#selection:member'
+    package: office-ui-fabric-react!
     fullName: selection
-    langs:
-      - typeScript
-    type: property
+    summary: The selection
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'selection?: Selection;'
       return:
-        type:
-          - '@fluentui/utilities!Selection:class'
+        type: '<xref uid="@fluentui/utilities!Selection:class" />'
+extends: 'React.ClassAttributes&lt;any&gt; '

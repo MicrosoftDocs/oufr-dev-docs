@@ -1,42 +1,36 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'office-ui-fabric-react!IPageProps:interface'
-    name: IPageProps
-    fullName: IPageProps
-    langs:
-      - typeScript
-    type: interface
-    extends:
-      - React.HTMLAttributes<HTMLDivElement>
-      - 'React.ClassAttributes<HTMLDivElement> '
-    syntax:
-      typeParameters:
-        - id: T
+### YamlMime:TSType
+name: IPageProps
+uid: 'office-ui-fabric-react!IPageProps:interface'
+package: office-ui-fabric-react!
+fullName: IPageProps
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: page
+    uid: 'office-ui-fabric-react!IPageProps#page:member'
     package: office-ui-fabric-react!
-    children:
-      - 'office-ui-fabric-react!IPageProps#page:member'
-      - 'office-ui-fabric-react!IPageProps#role:member'
-  - uid: 'office-ui-fabric-react!IPageProps#page:member'
-    summary: The allocation data for the page.
-    name: page
     fullName: page
-    langs:
-      - typeScript
-    type: property
+    summary: The allocation data for the page.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'page: IPage<T>;'
       return:
-        type:
-          - IPage<T>
-  - uid: 'office-ui-fabric-react!IPageProps#role:member'
-    summary: The role being assigned to the rendered page element by the list.
-    name: role
+        type: IPage&lt;T&gt;
+  - name: role
+    uid: 'office-ui-fabric-react!IPageProps#role:member'
+    package: office-ui-fabric-react!
     fullName: role
-    langs:
-      - typeScript
-    type: property
+    summary: The role being assigned to the rendered page element by the list.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'role?: string;'
       return:
-        type:
-          - string
+        type: string
+extends: React.HTMLAttributes&lt;HTMLDivElement&gt;

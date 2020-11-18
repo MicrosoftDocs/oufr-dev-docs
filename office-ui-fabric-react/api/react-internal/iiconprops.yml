@@ -1,109 +1,104 @@
-### YamlMime:UniversalReference
-items:
-  - uid: '@fluentui/react-internal!IIconProps:interface'
-    name: IIconProps
-    fullName: IIconProps
-    langs:
-      - typeScript
-    type: interface
-    extends:
-      - '@fluentui/utilities!IBaseProps:interface'
-      - 'React.HTMLAttributes<HTMLElement> '
+### YamlMime:TSType
+name: IIconProps
+uid: '@fluentui/react-internal!IIconProps:interface'
+package: '@fluentui/react-internal!'
+fullName: IIconProps
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: ariaLabel
+    uid: '@fluentui/react-internal!IIconProps#ariaLabel:member'
     package: '@fluentui/react-internal!'
-    children:
-      - '@fluentui/react-internal!IIconProps#ariaLabel:member'
-      - '@fluentui/react-internal!IIconProps#iconName:member'
-      - '@fluentui/react-internal!IIconProps#iconType:member'
-      - '@fluentui/react-internal!IIconProps#imageErrorAs:member'
-      - '@fluentui/react-internal!IIconProps#imageProps:member'
-      - '@fluentui/react-internal!IIconProps#styles:member'
-      - '@fluentui/react-internal!IIconProps#theme:member'
-  - uid: '@fluentui/react-internal!IIconProps#ariaLabel:member'
-    summary: The aria label of the icon for the benefit of screen readers.
-    deprecated:
-      content: Use the native prop `aria-label`
-    name: ariaLabel
     fullName: ariaLabel
-    langs:
-      - typeScript
-    type: property
+    summary: The aria label of the icon for the benefit of screen readers.
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Use the native prop `aria-label`
     syntax:
       content: 'ariaLabel?: string;'
       return:
-        type:
-          - string
-  - uid: '@fluentui/react-internal!IIconProps#iconName:member'
-    summary: >-
-      The name of the icon to use from the icon font. If string is empty, a placeholder icon will be rendered the same
-      width as an icon.
-    name: iconName
+        type: string
+  - name: iconName
+    uid: '@fluentui/react-internal!IIconProps#iconName:member'
+    package: '@fluentui/react-internal!'
     fullName: iconName
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The name of the icon to use from the icon font. If string is empty, a
+      placeholder icon will be rendered the same width as an icon.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'iconName?: string;'
       return:
-        type:
-          - string
-  - uid: '@fluentui/react-internal!IIconProps#iconType:member'
-    summary: The type of icon to render (image or icon font).
-    deprecated:
-      content: Inferred based on the presence of `imageProps`
-    name: iconType
+        type: string
+  - name: iconType
+    uid: '@fluentui/react-internal!IIconProps#iconType:member'
+    package: '@fluentui/react-internal!'
     fullName: iconType
-    langs:
-      - typeScript
-    type: property
+    summary: The type of icon to render (image or icon font).
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Inferred based on the presence of `imageProps`
     syntax:
       content: 'iconType?: IconType;'
       return:
-        type:
-          - IconType
-  - uid: '@fluentui/react-internal!IIconProps#imageErrorAs:member'
-    summary: 'If rendering an image icon, this component will be rendered in the event that loading the image fails.'
-    name: imageErrorAs
+        type: IconType
+  - name: imageErrorAs
+    uid: '@fluentui/react-internal!IIconProps#imageErrorAs:member'
+    package: '@fluentui/react-internal!'
     fullName: imageErrorAs
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      If rendering an image icon, this component will be rendered in the event
+      that loading the image fails.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'imageErrorAs?: React.ComponentType<IImageProps>;'
       return:
-        type:
-          - React.ComponentType<IImageProps>
-  - uid: '@fluentui/react-internal!IIconProps#imageProps:member'
-    summary: 'If rendering an image icon, these props will be passed to the Image component.'
-    name: imageProps
+        type: React.ComponentType&lt;IImageProps&gt;
+  - name: imageProps
+    uid: '@fluentui/react-internal!IIconProps#imageProps:member'
+    package: '@fluentui/react-internal!'
     fullName: imageProps
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      If rendering an image icon, these props will be passed to the Image
+      component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'imageProps?: IImageProps;'
       return:
-        type:
-          - IImageProps
-  - uid: '@fluentui/react-internal!IIconProps#styles:member'
-    summary: Gets the styles for an Icon.
-    name: styles
+        type: IImageProps
+  - name: styles
+    uid: '@fluentui/react-internal!IIconProps#styles:member'
+    package: '@fluentui/react-internal!'
     fullName: styles
-    langs:
-      - typeScript
-    type: property
+    summary: Gets the styles for an Icon.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'styles?: IStyleFunctionOrObject<IIconStyleProps, IIconStyles>;'
       return:
-        type:
-          - 'IStyleFunctionOrObject<IIconStyleProps, IIconStyles>'
-  - uid: '@fluentui/react-internal!IIconProps#theme:member'
-    name: theme
+        type: 'IStyleFunctionOrObject&lt;IIconStyleProps, IIconStyles&gt;'
+  - name: theme
+    uid: '@fluentui/react-internal!IIconProps#theme:member'
+    package: '@fluentui/react-internal!'
     fullName: theme
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'theme?: ITheme;'
       return:
-        type:
-          - '@fluentui/theme!ITheme:interface'
+        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
+extends: '<xref uid="@fluentui/utilities!IBaseProps:interface" />'

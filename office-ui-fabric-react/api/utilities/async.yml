@@ -1,337 +1,313 @@
-### YamlMime:UniversalReference
-items:
-  - uid: '@fluentui/utilities!Async:class'
-    summary: >-
-      Bugs often appear in async code when stuff gets disposed, but async operations don't get canceled. This Async
-      helper class solves these issues by tying async code to the lifetime of a disposable object.
+### YamlMime:TSType
+name: Async
+uid: '@fluentui/utilities!Async:class'
+package: '@fluentui/utilities!'
+fullName: Async
+summary: >-
+  Bugs often appear in async code when stuff gets disposed, but async operations
+  don't get canceled. This Async helper class solves these issues by tying async
+  code to the lifetime of a disposable object.
 
 
-      Usage: Anything class extending from BaseModel can access this helper via this.async. Otherwise create a new
-      instance of the class and remember to call dispose() during your code's dispose handler.
-    name: Async
-    fullName: Async
-    langs:
-      - typeScript
-    type: class
+  Usage: Anything class extending from BaseModel can access this helper via
+  this.async. Otherwise create a new instance of the class and remember to call
+  dispose() during your code's dispose handler.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: '(constructor)(parent, onError)'
+    uid: '@fluentui/utilities!Async:constructor(1)'
     package: '@fluentui/utilities!'
-    children:
-      - '@fluentui/utilities!Async#_logError:member(1)'
-      - '@fluentui/utilities!Async:constructor(1)'
-      - '@fluentui/utilities!Async#cancelAnimationFrame:member(1)'
-      - '@fluentui/utilities!Async#clearImmediate:member(1)'
-      - '@fluentui/utilities!Async#clearInterval:member(1)'
-      - '@fluentui/utilities!Async#clearTimeout:member(1)'
-      - '@fluentui/utilities!Async#debounce:member(1)'
-      - '@fluentui/utilities!Async#dispose:member(1)'
-      - '@fluentui/utilities!Async#requestAnimationFrame:member(1)'
-      - '@fluentui/utilities!Async#setImmediate:member(1)'
-      - '@fluentui/utilities!Async#setInterval:member(1)'
-      - '@fluentui/utilities!Async#setTimeout:member(1)'
-      - '@fluentui/utilities!Async#throttle:member(1)'
-  - uid: '@fluentui/utilities!Async#_logError:member(1)'
-    name: _logError(e)
-    fullName: _logError(e)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'protected _logError(e: any): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: e
-          description: ''
-          type:
-            - any
-  - uid: '@fluentui/utilities!Async:constructor(1)'
-    summary: Constructs a new instance of the `Async` class
-    name: '(constructor)(parent, onError)'
     fullName: '(constructor)(parent, onError)'
-    langs:
-      - typeScript
-    type: constructor
+    summary: Constructs a new instance of the `Async` class
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'constructor(parent?: object, onError?: (e: any) => void);'
       parameters:
         - id: parent
           description: ''
-          type:
-            - object
+          type: object
         - id: onError
           description: ''
-          type:
-            - '(e: any) => void'
-  - uid: '@fluentui/utilities!Async#cancelAnimationFrame:member(1)'
-    name: 'cancelAnimationFrame(id, targetElement)'
+          type: '(e: any) =&gt; void'
+methods:
+  - name: _logError(e)
+    uid: '@fluentui/utilities!Async#_logError:member(1)'
+    package: '@fluentui/utilities!'
+    fullName: _logError(e)
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protected _logError(e: any): void;'
+      parameters:
+        - id: e
+          description: ''
+          type: any
+      return:
+        type: void
+        description: ''
+  - name: 'cancelAnimationFrame(id, targetElement)'
+    uid: '@fluentui/utilities!Async#cancelAnimationFrame:member(1)'
+    package: '@fluentui/utilities!'
     fullName: 'cancelAnimationFrame(id, targetElement)'
-    langs:
-      - typeScript
-    type: method
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'cancelAnimationFrame(id: number, targetElement?: Element | null): void;'
-      return:
-        type:
-          - void
-        description: ''
       parameters:
         - id: id
           description: ''
-          type:
-            - number
+          type: number
         - id: targetElement
           description: ''
-          type:
-            - Element | null
-  - uid: '@fluentui/utilities!Async#clearImmediate:member(1)'
-    summary: Clears the immediate.
-    name: 'clearImmediate(id, targetElement)'
+          type: Element | null
+      return:
+        type: void
+        description: ''
+  - name: 'clearImmediate(id, targetElement)'
+    uid: '@fluentui/utilities!Async#clearImmediate:member(1)'
+    package: '@fluentui/utilities!'
     fullName: 'clearImmediate(id, targetElement)'
-    langs:
-      - typeScript
-    type: method
+    summary: Clears the immediate.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'clearImmediate(id: number, targetElement?: Element | null): void;'
-      return:
-        type:
-          - void
-        description: ''
       parameters:
         - id: id
           description: Id to cancel.
-          type:
-            - number
+          type: number
         - id: targetElement
           description: Optional target element to use for identifying the correct window.
-          type:
-            - Element | null
-  - uid: '@fluentui/utilities!Async#clearInterval:member(1)'
-    summary: Clears the interval.
-    name: clearInterval(id)
+          type: Element | null
+      return:
+        type: void
+        description: ''
+  - name: clearInterval(id)
+    uid: '@fluentui/utilities!Async#clearInterval:member(1)'
+    package: '@fluentui/utilities!'
     fullName: clearInterval(id)
-    langs:
-      - typeScript
-    type: method
+    summary: Clears the interval.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'clearInterval(id: number): void;'
-      return:
-        type:
-          - void
-        description: ''
       parameters:
         - id: id
           description: Id to cancel.
-          type:
-            - number
-  - uid: '@fluentui/utilities!Async#clearTimeout:member(1)'
-    summary: Clears the timeout.
-    name: clearTimeout(id)
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: clearTimeout(id)
+    uid: '@fluentui/utilities!Async#clearTimeout:member(1)'
+    package: '@fluentui/utilities!'
     fullName: clearTimeout(id)
-    langs:
-      - typeScript
-    type: method
+    summary: Clears the timeout.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'clearTimeout(id: number): void;'
-      return:
-        type:
-          - void
-        description: ''
       parameters:
         - id: id
           description: Id to cancel.
-          type:
-            - number
-  - uid: '@fluentui/utilities!Async#debounce:member(1)'
-    summary: >-
-      Creates a function that will delay the execution of func until after wait milliseconds have elapsed since the last
-      time it was invoked. Provide an options object to indicate that func should be invoked on the leading and/or
-      trailing edge of the wait timeout. Subsequent calls to the debounced function will return the result of the last
-      func call.
-
-
-      Note: If leading and trailing options are true func will be called on the trailing edge of the timeout only if the
-      debounced function is invoked more than once during the wait timeout.
-    name: 'debounce(func, wait, options)'
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: 'debounce(func, wait, options)'
+    uid: '@fluentui/utilities!Async#debounce:member(1)'
+    package: '@fluentui/utilities!'
     fullName: 'debounce(func, wait, options)'
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Creates a function that will delay the execution of func until after wait
+      milliseconds have elapsed since the last time it was invoked. Provide an
+      options object to indicate that func should be invoked on the leading
+      and/or trailing edge of the wait timeout. Subsequent calls to the
+      debounced function will return the result of the last func call.
+
+
+      Note: If leading and trailing options are true func will be called on the
+      trailing edge of the timeout only if the debounced function is invoked
+      more than once during the wait timeout.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: |-
-        debounce<T extends (...args: any[]) => any>(func: T, wait?: number, options?: {
+      content: >-
+        debounce<T extends (...args: any[]) => any>(func: T, wait?: number,
+        options?: {
                 leading?: boolean;
                 maxWait?: number;
                 trailing?: boolean;
             }): ICancelable<T> & T;
-      return:
-        type:
-          - ICancelable<T> & T
-        description: The new debounced function.
       parameters:
         - id: func
           description: The function to debounce.
-          type:
-            - T
+          type: T
         - id: wait
           description: The number of milliseconds to delay.
-          type:
-            - number
+          type: number
         - id: options
           description: The options object.
-          type:
-            - |-
-              {
-                      leading?: boolean;
-                      maxWait?: number;
-                      trailing?: boolean;
-                  }
-      typeParameters:
-        - id: T
-          type:
-            - '(...args: any[]) => any'
-  - uid: '@fluentui/utilities!Async#dispose:member(1)'
-    summary: 'Dispose function, clears all async operations.'
-    name: dispose()
+          type: |-
+            {
+                    leading?: boolean;
+                    maxWait?: number;
+                    trailing?: boolean;
+                }
+      return:
+        type: ICancelable&lt;T&gt; & T
+        description: The new debounced function.
+  - name: dispose()
+    uid: '@fluentui/utilities!Async#dispose:member(1)'
+    package: '@fluentui/utilities!'
     fullName: dispose()
-    langs:
-      - typeScript
-    type: method
+    summary: 'Dispose function, clears all async operations.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'dispose(): void;'
       return:
-        type:
-          - void
+        type: void
         description: ''
-  - uid: '@fluentui/utilities!Async#requestAnimationFrame:member(1)'
-    name: 'requestAnimationFrame(callback, targetElement)'
+  - name: 'requestAnimationFrame(callback, targetElement)'
+    uid: '@fluentui/utilities!Async#requestAnimationFrame:member(1)'
+    package: '@fluentui/utilities!'
     fullName: 'requestAnimationFrame(callback, targetElement)'
-    langs:
-      - typeScript
-    type: method
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'requestAnimationFrame(callback: () => void, targetElement?: Element | null): number;'
-      return:
-        type:
-          - number
-        description: ''
+      content: >-
+        requestAnimationFrame(callback: () => void, targetElement?: Element |
+        null): number;
       parameters:
         - id: callback
           description: ''
-          type:
-            - () => void
+          type: () =&gt; void
         - id: targetElement
           description: ''
-          type:
-            - Element | null
-  - uid: '@fluentui/utilities!Async#setImmediate:member(1)'
-    summary: 'SetImmediate override, which will auto cancel the immediate during dispose.'
-    name: 'setImmediate(callback, targetElement)'
-    fullName: 'setImmediate(callback, targetElement)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setImmediate(callback: () => void, targetElement?: Element | null): number;'
+          type: Element | null
       return:
-        type:
-          - number
-        description: The setTimeout id.
+        type: number
+        description: ''
+  - name: 'setImmediate(callback, targetElement)'
+    uid: '@fluentui/utilities!Async#setImmediate:member(1)'
+    package: '@fluentui/utilities!'
+    fullName: 'setImmediate(callback, targetElement)'
+    summary: >-
+      SetImmediate override, which will auto cancel the immediate during
+      dispose.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        setImmediate(callback: () => void, targetElement?: Element | null):
+        number;
       parameters:
         - id: callback
           description: Callback to execute.
-          type:
-            - () => void
+          type: () =&gt; void
         - id: targetElement
           description: Optional target element to use for identifying the correct window.
-          type:
-            - Element | null
-  - uid: '@fluentui/utilities!Async#setInterval:member(1)'
-    summary: 'SetInterval override, which will auto cancel the timeout during dispose.'
-    name: 'setInterval(callback, duration)'
+          type: Element | null
+      return:
+        type: number
+        description: The setTimeout id.
+  - name: 'setInterval(callback, duration)'
+    uid: '@fluentui/utilities!Async#setInterval:member(1)'
+    package: '@fluentui/utilities!'
     fullName: 'setInterval(callback, duration)'
-    langs:
-      - typeScript
-    type: method
+    summary: 'SetInterval override, which will auto cancel the timeout during dispose.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'setInterval(callback: () => void, duration: number): number;'
-      return:
-        type:
-          - number
-        description: The setTimeout id.
       parameters:
         - id: callback
           description: Callback to execute.
-          type:
-            - () => void
+          type: () =&gt; void
         - id: duration
           description: Duration in milliseconds.
-          type:
-            - number
-  - uid: '@fluentui/utilities!Async#setTimeout:member(1)'
-    summary: 'SetTimeout override, which will auto cancel the timeout during dispose.'
-    name: 'setTimeout(callback, duration)'
+          type: number
+      return:
+        type: number
+        description: The setTimeout id.
+  - name: 'setTimeout(callback, duration)'
+    uid: '@fluentui/utilities!Async#setTimeout:member(1)'
+    package: '@fluentui/utilities!'
     fullName: 'setTimeout(callback, duration)'
-    langs:
-      - typeScript
-    type: method
+    summary: 'SetTimeout override, which will auto cancel the timeout during dispose.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'setTimeout(callback: () => void, duration: number): number;'
-      return:
-        type:
-          - number
-        description: The setTimeout id.
       parameters:
         - id: callback
           description: Callback to execute.
-          type:
-            - () => void
+          type: () =&gt; void
         - id: duration
           description: Duration in milliseconds.
-          type:
-            - number
-  - uid: '@fluentui/utilities!Async#throttle:member(1)'
-    summary: >-
-      Creates a function that, when executed, will only call the func function at most once per every wait milliseconds.
-      Provide an options object to indicate that func should be invoked on the leading and/or trailing edge of the wait
-      timeout. Subsequent calls to the throttled function will return the result of the last func call.
-
-
-      Note: If leading and trailing options are true func will be called on the trailing edge of the timeout only if the
-      throttled function is invoked more than once during the wait timeout.
-    name: 'throttle(func, wait, options)'
+          type: number
+      return:
+        type: number
+        description: The setTimeout id.
+  - name: 'throttle(func, wait, options)'
+    uid: '@fluentui/utilities!Async#throttle:member(1)'
+    package: '@fluentui/utilities!'
     fullName: 'throttle(func, wait, options)'
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Creates a function that, when executed, will only call the func function
+      at most once per every wait milliseconds. Provide an options object to
+      indicate that func should be invoked on the leading and/or trailing edge
+      of the wait timeout. Subsequent calls to the throttled function will
+      return the result of the last func call.
+
+
+      Note: If leading and trailing options are true func will be called on the
+      trailing edge of the timeout only if the throttled function is invoked
+      more than once during the wait timeout.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: |-
-        throttle<T extends (...args: any[]) => any>(func: T, wait?: number, options?: {
+      content: >-
+        throttle<T extends (...args: any[]) => any>(func: T, wait?: number,
+        options?: {
                 leading?: boolean;
                 trailing?: boolean;
             }): T;
-      return:
-        type:
-          - T
-        description: The new throttled function.
       parameters:
         - id: func
           description: The function to throttle.
-          type:
-            - T
+          type: T
         - id: wait
           description: The number of milliseconds to throttle executions to. Defaults to 0.
-          type:
-            - number
+          type: number
         - id: options
           description: The options object.
-          type:
-            - |-
-              {
-                      leading?: boolean;
-                      trailing?: boolean;
-                  }
-      typeParameters:
-        - id: T
-          type:
-            - '(...args: any[]) => any'
+          type: |-
+            {
+                    leading?: boolean;
+                    trailing?: boolean;
+                }
+      return:
+        type: T
+        description: The new throttled function.

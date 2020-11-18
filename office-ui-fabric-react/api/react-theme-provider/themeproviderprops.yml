@@ -1,85 +1,83 @@
-### YamlMime:UniversalReference
-items:
-  - uid: '@fluentui/react-theme-provider!ThemeProviderProps:interface'
-    summary: Props for the ThemeProvider component.
-    name: ThemeProviderProps
-    fullName: ThemeProviderProps
-    langs:
-      - typeScript
-    type: interface
-    extends:
-      - 'React.HTMLAttributes<HTMLDivElement> '
+### YamlMime:TSType
+name: ThemeProviderProps
+uid: '@fluentui/react-theme-provider!ThemeProviderProps:interface'
+package: '@fluentui/react-theme-provider!'
+fullName: ThemeProviderProps
+summary: Props for the ThemeProvider component.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: applyTo
+    uid: '@fluentui/react-theme-provider!ThemeProviderProps#applyTo:member'
     package: '@fluentui/react-theme-provider!'
-    children:
-      - '@fluentui/react-theme-provider!ThemeProviderProps#applyTo:member'
-      - '@fluentui/react-theme-provider!ThemeProviderProps#as:member'
-      - '@fluentui/react-theme-provider!ThemeProviderProps#ref:member'
-      - '@fluentui/react-theme-provider!ThemeProviderProps#renderer:member'
-      - '@fluentui/react-theme-provider!ThemeProviderProps#theme:member'
-  - uid: '@fluentui/react-theme-provider!ThemeProviderProps#applyTo:member'
-    summary: >-
-      Defines where body-related theme is applied to. Setting to 'element' will apply body styles to the root element of
-      ThemeProvider. Setting to 'body' will apply body styles to document body. Setting to 'none' will not apply body
-      styles to either element or body.
-    name: applyTo
     fullName: applyTo
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Defines where body-related theme is applied to. Setting to 'element' will
+      apply body styles to the root element of ThemeProvider. Setting to 'body'
+      will apply body styles to document body. Setting to 'none' will not apply
+      body styles to either element or body.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'applyTo?: ''element'' | ''body'' | ''none'';'
       return:
-        type:
-          - '''element'' | ''body'' | ''none'''
-  - uid: '@fluentui/react-theme-provider!ThemeProviderProps#as:member'
-    summary: A component that should be used as the root element of the ThemeProvider component.
-    name: as
+        type: '''element'' | ''body'' | ''none'''
+  - name: as
+    uid: '@fluentui/react-theme-provider!ThemeProviderProps#as:member'
+    package: '@fluentui/react-theme-provider!'
     fullName: as
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      A component that should be used as the root element of the ThemeProvider
+      component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'as?: React.ElementType;'
       return:
-        type:
-          - React.ElementType
-  - uid: '@fluentui/react-theme-provider!ThemeProviderProps#ref:member'
-    summary: Optional ref to the root element.
-    name: ref
+        type: React.ElementType
+  - name: ref
+    uid: '@fluentui/react-theme-provider!ThemeProviderProps#ref:member'
+    package: '@fluentui/react-theme-provider!'
     fullName: ref
-    langs:
-      - typeScript
-    type: property
+    summary: Optional ref to the root element.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'ref?: React.Ref<HTMLElement>;'
       return:
-        type:
-          - React.Ref<HTMLElement>
-  - uid: '@fluentui/react-theme-provider!ThemeProviderProps#renderer:member'
-    summary: >-
-      Optional interface for registering dynamic styles. Defaults to using `merge-styles`<!-- -->. Use this to opt into
-      a particular rendering implementation, such as `emotion`<!-- -->, `styled-components`<!-- -->, or `jss`<!-- -->.
-      Note: performance will differ between all renders. Please measure your scenarios before using an alternative
-      implementation.
-    name: renderer
+        type: React.Ref&lt;HTMLElement&gt;
+  - name: renderer
+    uid: '@fluentui/react-theme-provider!ThemeProviderProps#renderer:member'
+    package: '@fluentui/react-theme-provider!'
     fullName: renderer
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Optional interface for registering dynamic styles. Defaults to using
+      `merge-styles`<!-- -->. Use this to opt into a particular rendering
+      implementation, such as `emotion`<!-- -->, `styled-components`<!-- -->, or
+      `jss`<!-- -->. Note: performance will differ between all renders. Please
+      measure your scenarios before using an alternative implementation.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'renderer?: StyleRenderer;'
       return:
-        type:
-          - '@fluentui/react-theme-provider!StyleRenderer:interface'
-  - uid: '@fluentui/react-theme-provider!ThemeProviderProps#theme:member'
-    summary: Defines the theme provided by the user.
-    name: theme
+        type: '<xref uid="@fluentui/react-theme-provider!StyleRenderer:interface" />'
+  - name: theme
+    uid: '@fluentui/react-theme-provider!ThemeProviderProps#theme:member'
+    package: '@fluentui/react-theme-provider!'
     fullName: theme
-    langs:
-      - typeScript
-    type: property
+    summary: Defines the theme provided by the user.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'theme?: PartialTheme | Theme;'
       return:
-        type:
-          - PartialTheme | Theme
+        type: PartialTheme | Theme
+extends: 'React.HTMLAttributes&lt;HTMLDivElement&gt; '
