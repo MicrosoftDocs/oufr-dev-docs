@@ -1,225 +1,219 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'office-ui-fabric-react!IPivotProps:interface'
-    name: IPivotProps
-    fullName: IPivotProps
-    langs:
-      - typeScript
-    type: interface
-    extends:
-      - React.ClassAttributes<PivotBase>
-      - 'React.HTMLAttributes<HTMLDivElement> '
+### YamlMime:TSType
+name: IPivotProps
+uid: 'office-ui-fabric-react!IPivotProps:interface'
+package: office-ui-fabric-react!
+fullName: IPivotProps
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: className
+    uid: 'office-ui-fabric-react!IPivotProps#className:member'
     package: office-ui-fabric-react!
-    children:
-      - 'office-ui-fabric-react!IPivotProps#className:member'
-      - 'office-ui-fabric-react!IPivotProps#componentRef:member'
-      - 'office-ui-fabric-react!IPivotProps#defaultSelectedIndex:member'
-      - 'office-ui-fabric-react!IPivotProps#defaultSelectedKey:member'
-      - 'office-ui-fabric-react!IPivotProps#getTabId:member'
-      - 'office-ui-fabric-react!IPivotProps#headersOnly:member'
-      - 'office-ui-fabric-react!IPivotProps#initialSelectedIndex:member'
-      - 'office-ui-fabric-react!IPivotProps#initialSelectedKey:member'
-      - 'office-ui-fabric-react!IPivotProps#linkFormat:member'
-      - 'office-ui-fabric-react!IPivotProps#linkSize:member'
-      - 'office-ui-fabric-react!IPivotProps#onLinkClick:member'
-      - 'office-ui-fabric-react!IPivotProps#selectedKey:member'
-      - 'office-ui-fabric-react!IPivotProps#styles:member'
-      - 'office-ui-fabric-react!IPivotProps#theme:member'
-  - uid: 'office-ui-fabric-react!IPivotProps#className:member'
-    summary: Additional css class to apply to the Pivot
-    name: className
     fullName: className
-    langs:
-      - typeScript
-    type: property
+    summary: Additional css class to apply to the Pivot
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'className?: string;'
       return:
-        type:
-          - string
-  - uid: 'office-ui-fabric-react!IPivotProps#componentRef:member'
-    summary: >-
-      Optional callback to access the IPivot interface. Use this instead of ref for accessing the public methods and
-      properties of the component.
-    name: componentRef
+        type: string
+  - name: componentRef
+    uid: 'office-ui-fabric-react!IPivotProps#componentRef:member'
+    package: office-ui-fabric-react!
     fullName: componentRef
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Optional callback to access the IPivot interface. Use this instead of ref
+      for accessing the public methods and properties of the component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'componentRef?: IRefObject<IPivot>;'
       return:
-        type:
-          - IRefObject<IPivot>
-  - uid: 'office-ui-fabric-react!IPivotProps#defaultSelectedIndex:member'
-    summary: >-
-      Default selected index for the pivot. Only provide this if the pivot is an uncontrolled component; otherwise, use
-      the `selectedKey` property.
-
-
-      This property is also mutually exclusive with `defaultSelectedKey`<!-- -->.
-    deprecated:
-      content: Use `defaultSelectedKey`
-    name: defaultSelectedIndex
+        type: IRefObject&lt;IPivot&gt;
+  - name: defaultSelectedIndex
+    uid: 'office-ui-fabric-react!IPivotProps#defaultSelectedIndex:member'
+    package: office-ui-fabric-react!
     fullName: defaultSelectedIndex
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Default selected index for the pivot. Only provide this if the pivot is an
+      uncontrolled component; otherwise, use the `selectedKey` property.
+
+
+      This property is also mutually exclusive with `defaultSelectedKey`<!--
+      -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Use `defaultSelectedKey`
     syntax:
       content: 'defaultSelectedIndex?: number;'
       return:
-        type:
-          - number
-  - uid: 'office-ui-fabric-react!IPivotProps#defaultSelectedKey:member'
-    summary: >-
-      Default selected key for the pivot. Only provide this if the pivot is an uncontrolled component; otherwise, use
-      the `selectedKey` property.
-
-
-      This property is also mutually exclusive with `defaultSelectedIndex`<!-- -->.
-    name: defaultSelectedKey
+        type: number
+  - name: defaultSelectedKey
+    uid: 'office-ui-fabric-react!IPivotProps#defaultSelectedKey:member'
+    package: office-ui-fabric-react!
     fullName: defaultSelectedKey
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Default selected key for the pivot. Only provide this if the pivot is an
+      uncontrolled component; otherwise, use the `selectedKey` property.
+
+
+      This property is also mutually exclusive with `defaultSelectedIndex`<!--
+      -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'defaultSelectedKey?: string;'
       return:
-        type:
-          - string
-  - uid: 'office-ui-fabric-react!IPivotProps#getTabId:member'
-    summary: >-
-      Callback to customize how IDs are generated for each tab header. Useful if you're rendering content outside and
-      need to connect aria-labelledby.
-    name: getTabId
+        type: string
+  - name: getTabId
+    uid: 'office-ui-fabric-react!IPivotProps#getTabId:member'
+    package: office-ui-fabric-react!
     fullName: getTabId
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Callback to customize how IDs are generated for each tab header. Useful if
+      you're rendering content outside and need to connect aria-labelledby.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'getTabId?: (itemKey: string, index: number) => string;'
       return:
-        type:
-          - '(itemKey: string, index: number) => string'
-  - uid: 'office-ui-fabric-react!IPivotProps#headersOnly:member'
-    summary: >-
-      Whether to skip rendering the tabpanel with the content of the selected tab. Use this prop if you plan to
-      separately render the tab content and don't want to leave an empty tabpanel in the page that may confuse Screen
-      Readers.
-    name: headersOnly
+        type: '(itemKey: string, index: number) =&gt; string'
+  - name: headersOnly
+    uid: 'office-ui-fabric-react!IPivotProps#headersOnly:member'
+    package: office-ui-fabric-react!
     fullName: headersOnly
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Whether to skip rendering the tabpanel with the content of the selected
+      tab. Use this prop if you plan to separately render the tab content and
+      don't want to leave an empty tabpanel in the page that may confuse Screen
+      Readers.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'headersOnly?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'office-ui-fabric-react!IPivotProps#initialSelectedIndex:member'
-    summary: >-
-      Index of the pivot item initially selected. Mutually exclusive with `initialSelectedKey`<!-- -->. Only provide
-      this if the pivot is an uncontrolled component; otherwise, use `selectedKey`<!-- -->.
-    deprecated:
-      content: Use `defaultSelectedKey`
-    name: initialSelectedIndex
+        type: boolean
+  - name: initialSelectedIndex
+    uid: 'office-ui-fabric-react!IPivotProps#initialSelectedIndex:member'
+    package: office-ui-fabric-react!
     fullName: initialSelectedIndex
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Index of the pivot item initially selected. Mutually exclusive with
+      `initialSelectedKey`<!-- -->. Only provide this if the pivot is an
+      uncontrolled component; otherwise, use `selectedKey`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Use `defaultSelectedKey`
     syntax:
       content: 'initialSelectedIndex?: number;'
       return:
-        type:
-          - number
-  - uid: 'office-ui-fabric-react!IPivotProps#initialSelectedKey:member'
-    summary: >-
-      Key of the pivot item initially selected. Mutually exclusive with `initialSelectedIndex`<!-- -->. Only provide
-      this if the pivot is an uncontrolled component; otherwise, use `selectedKey`<!-- -->.
-    deprecated:
-      content: Use `defaultSelectedKey`
-    name: initialSelectedKey
+        type: number
+  - name: initialSelectedKey
+    uid: 'office-ui-fabric-react!IPivotProps#initialSelectedKey:member'
+    package: office-ui-fabric-react!
     fullName: initialSelectedKey
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Key of the pivot item initially selected. Mutually exclusive with
+      `initialSelectedIndex`<!-- -->. Only provide this if the pivot is an
+      uncontrolled component; otherwise, use `selectedKey`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Use `defaultSelectedKey`
     syntax:
       content: 'initialSelectedKey?: string;'
       return:
-        type:
-          - string
-  - uid: 'office-ui-fabric-react!IPivotProps#linkFormat:member'
-    summary: 'PivotLinkFormat to use (links, tabs)'
-    name: linkFormat
+        type: string
+  - name: linkFormat
+    uid: 'office-ui-fabric-react!IPivotProps#linkFormat:member'
+    package: office-ui-fabric-react!
     fullName: linkFormat
-    langs:
-      - typeScript
-    type: property
+    summary: 'PivotLinkFormat to use (links, tabs)'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'linkFormat?: PivotLinkFormat;'
       return:
-        type:
-          - PivotLinkFormat
-  - uid: 'office-ui-fabric-react!IPivotProps#linkSize:member'
-    summary: 'PivotLinkSize to use (normal, large)'
-    name: linkSize
+        type: PivotLinkFormat
+  - name: linkSize
+    uid: 'office-ui-fabric-react!IPivotProps#linkSize:member'
+    package: office-ui-fabric-react!
     fullName: linkSize
-    langs:
-      - typeScript
-    type: property
+    summary: 'PivotLinkSize to use (normal, large)'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'linkSize?: PivotLinkSize;'
       return:
-        type:
-          - PivotLinkSize
-  - uid: 'office-ui-fabric-react!IPivotProps#onLinkClick:member'
-    summary: Callback for when the selected pivot item is changed.
-    name: onLinkClick
+        type: PivotLinkSize
+  - name: onLinkClick
+    uid: 'office-ui-fabric-react!IPivotProps#onLinkClick:member'
+    package: office-ui-fabric-react!
     fullName: onLinkClick
-    langs:
-      - typeScript
-    type: property
+    summary: Callback for when the selected pivot item is changed.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'onLinkClick?: (item?: PivotItem, ev?: React.MouseEvent<HTMLElement>) => void;'
+      content: >-
+        onLinkClick?: (item?: PivotItem, ev?: React.MouseEvent<HTMLElement>) =>
+        void;
       return:
-        type:
-          - '(item?: PivotItem, ev?: React.MouseEvent<HTMLElement>) => void'
-  - uid: 'office-ui-fabric-react!IPivotProps#selectedKey:member'
-    summary: >-
-      Key of the selected pivot item. Updating this will override the Pivot's selected item state. Only provide this if
-      the pivot is a controlled component where you are maintaining the current state; otherwise, use
-      `defaultSelectedKey`<!-- -->.
-    name: selectedKey
+        type: >-
+          (item?: PivotItem, ev?: React.MouseEvent&lt;HTMLElement&gt;) =&gt;
+          void
+  - name: selectedKey
+    uid: 'office-ui-fabric-react!IPivotProps#selectedKey:member'
+    package: office-ui-fabric-react!
     fullName: selectedKey
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Key of the selected pivot item. Updating this will override the Pivot's
+      selected item state. Only provide this if the pivot is a controlled
+      component where you are maintaining the current state; otherwise, use
+      `defaultSelectedKey`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'selectedKey?: string | null;'
       return:
-        type:
-          - string | null
-  - uid: 'office-ui-fabric-react!IPivotProps#styles:member'
-    summary: Call to provide customized styling that will layer on top of the variant rules.
-    name: styles
+        type: string | null
+  - name: styles
+    uid: 'office-ui-fabric-react!IPivotProps#styles:member'
+    package: office-ui-fabric-react!
     fullName: styles
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Call to provide customized styling that will layer on top of the variant
+      rules.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'styles?: IStyleFunctionOrObject<IPivotStyleProps, IPivotStyles>;'
       return:
-        type:
-          - 'IStyleFunctionOrObject<IPivotStyleProps, IPivotStyles>'
-  - uid: 'office-ui-fabric-react!IPivotProps#theme:member'
-    summary: Theme provided by High-Order Component.
-    name: theme
+        type: 'IStyleFunctionOrObject&lt;IPivotStyleProps, IPivotStyles&gt;'
+  - name: theme
+    uid: 'office-ui-fabric-react!IPivotProps#theme:member'
+    package: office-ui-fabric-react!
     fullName: theme
-    langs:
-      - typeScript
-    type: property
+    summary: Theme provided by High-Order Component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'theme?: ITheme;'
       return:
-        type:
-          - '@fluentui/theme!ITheme:interface'
+        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
+extends: React.ClassAttributes&lt;PivotBase&gt;

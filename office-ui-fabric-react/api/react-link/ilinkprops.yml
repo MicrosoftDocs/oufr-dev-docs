@@ -1,80 +1,78 @@
-### YamlMime:UniversalReference
-items:
-  - uid: '@fluentui/react-link!ILinkProps:interface'
-    name: ILinkProps
-    fullName: ILinkProps
-    langs:
-      - typeScript
-    type: interface
-    extends:
-      - ILinkHTMLAttributes<HTMLAnchorElement | HTMLButtonElement | HTMLElement>
-      - 'React.RefAttributes<HTMLElement> '
+### YamlMime:TSType
+name: ILinkProps
+uid: '@fluentui/react-link!ILinkProps:interface'
+package: '@fluentui/react-link!'
+fullName: ILinkProps
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: as
+    uid: '@fluentui/react-link!ILinkProps#as:member'
     package: '@fluentui/react-link!'
-    children:
-      - '@fluentui/react-link!ILinkProps#as:member'
-      - '@fluentui/react-link!ILinkProps#componentRef:member'
-      - '@fluentui/react-link!ILinkProps#disabled:member'
-      - '@fluentui/react-link!ILinkProps#styles:member'
-      - '@fluentui/react-link!ILinkProps#theme:member'
-  - uid: '@fluentui/react-link!ILinkProps#as:member'
-    summary: A component type or primitive that is rendered as the type of the root element.
-    name: as
     fullName: as
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      A component type or primitive that is rendered as the type of the root
+      element.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'as?: React.ElementType;'
       return:
-        type:
-          - React.ElementType
-  - uid: '@fluentui/react-link!ILinkProps#componentRef:member'
-    summary: >-
-      Optional callback to access the ILink interface. Use this instead of ref for accessing the public methods and
-      properties of the component.
-    name: componentRef
+        type: React.ElementType
+  - name: componentRef
+    uid: '@fluentui/react-link!ILinkProps#componentRef:member'
+    package: '@fluentui/react-link!'
     fullName: componentRef
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Optional callback to access the ILink interface. Use this instead of ref
+      for accessing the public methods and properties of the component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'componentRef?: IRefObject<ILink>;'
       return:
-        type:
-          - IRefObject<ILink>
-  - uid: '@fluentui/react-link!ILinkProps#disabled:member'
-    summary: Whether the link is disabled
-    name: disabled
+        type: IRefObject&lt;ILink&gt;
+  - name: disabled
+    uid: '@fluentui/react-link!ILinkProps#disabled:member'
+    package: '@fluentui/react-link!'
     fullName: disabled
-    langs:
-      - typeScript
-    type: property
+    summary: Whether the link is disabled
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'disabled?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: '@fluentui/react-link!ILinkProps#styles:member'
-    summary: Call to provide customized styling that will layer on top of the variant rules.
-    name: styles
+        type: boolean
+  - name: styles
+    uid: '@fluentui/react-link!ILinkProps#styles:member'
+    package: '@fluentui/react-link!'
     fullName: styles
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Call to provide customized styling that will layer on top of the variant
+      rules.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'styles?: IStyleFunctionOrObject<ILinkStyleProps, ILinkStyles>;'
       return:
-        type:
-          - 'IStyleFunctionOrObject<ILinkStyleProps, ILinkStyles>'
-  - uid: '@fluentui/react-link!ILinkProps#theme:member'
-    summary: Theme (provided through customization.)
-    name: theme
+        type: 'IStyleFunctionOrObject&lt;ILinkStyleProps, ILinkStyles&gt;'
+  - name: theme
+    uid: '@fluentui/react-link!ILinkProps#theme:member'
+    package: '@fluentui/react-link!'
     fullName: theme
-    langs:
-      - typeScript
-    type: property
+    summary: Theme (provided through customization.)
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'theme?: ITheme;'
       return:
-        type:
-          - '@fluentui/theme!ITheme:interface'
+        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
+extends: ILinkHTMLAttributes&lt;HTMLAnchorElement | HTMLButtonElement | HTMLElement&gt;

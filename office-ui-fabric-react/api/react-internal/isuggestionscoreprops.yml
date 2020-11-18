@@ -1,160 +1,165 @@
-### YamlMime:UniversalReference
-items:
-  - uid: '@fluentui/react-internal!ISuggestionsCoreProps:interface'
-    name: ISuggestionsCoreProps
-    fullName: ISuggestionsCoreProps
-    langs:
-      - typeScript
-    type: interface
-    extends:
-      - 'React.ClassAttributes<any> '
-    syntax:
-      typeParameters:
-        - id: T
+### YamlMime:TSType
+name: ISuggestionsCoreProps
+uid: '@fluentui/react-internal!ISuggestionsCoreProps:interface'
+package: '@fluentui/react-internal!'
+fullName: ISuggestionsCoreProps
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: componentRef
+    uid: '@fluentui/react-internal!ISuggestionsCoreProps#componentRef:member'
     package: '@fluentui/react-internal!'
-    children:
-      - '@fluentui/react-internal!ISuggestionsCoreProps#componentRef:member'
-      - '@fluentui/react-internal!ISuggestionsCoreProps#onRenderSuggestion:member'
-      - '@fluentui/react-internal!ISuggestionsCoreProps#onSuggestionClick:member'
-      - '@fluentui/react-internal!ISuggestionsCoreProps#onSuggestionRemove:member'
-      - '@fluentui/react-internal!ISuggestionsCoreProps#resultsMaximumNumber:member'
-      - '@fluentui/react-internal!ISuggestionsCoreProps#shouldLoopSelection:member'
-      - '@fluentui/react-internal!ISuggestionsCoreProps#showRemoveButtons:member'
-      - '@fluentui/react-internal!ISuggestionsCoreProps#suggestions:member'
-      - '@fluentui/react-internal!ISuggestionsCoreProps#suggestionsAvailableAlertText:member'
-      - '@fluentui/react-internal!ISuggestionsCoreProps#suggestionsContainerAriaLabel:member'
-      - '@fluentui/react-internal!ISuggestionsCoreProps#suggestionsItemClassName:member'
-  - uid: '@fluentui/react-internal!ISuggestionsCoreProps#componentRef:member'
-    summary: Gets the component ref.
-    name: componentRef
     fullName: componentRef
-    langs:
-      - typeScript
-    type: property
+    summary: Gets the component ref.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'componentRef?: IRefObject<{}>;'
       return:
-        type:
-          - 'IRefObject<{}>'
-  - uid: '@fluentui/react-internal!ISuggestionsCoreProps#onRenderSuggestion:member'
-    summary: How the suggestion should look in the suggestion list.
-    name: onRenderSuggestion
+        type: 'IRefObject&lt;{}&gt;'
+  - name: onRenderSuggestion
+    uid: '@fluentui/react-internal!ISuggestionsCoreProps#onRenderSuggestion:member'
+    package: '@fluentui/react-internal!'
     fullName: onRenderSuggestion
-    langs:
-      - typeScript
-    type: property
+    summary: How the suggestion should look in the suggestion list.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'onRenderSuggestion?: (props: T, suggestionItemProps: ISuggestionItemProps<T>) => JSX.Element;'
+      content: >-
+        onRenderSuggestion?: (props: T, suggestionItemProps:
+        ISuggestionItemProps<T>) => JSX.Element;
       return:
-        type:
-          - '(props: T, suggestionItemProps: ISuggestionItemProps<T>) => JSX.Element'
-  - uid: '@fluentui/react-internal!ISuggestionsCoreProps#onSuggestionClick:member'
-    summary: What should occur when a suggestion is clicked
-    name: onSuggestionClick
+        type: >-
+          (props: T, suggestionItemProps: ISuggestionItemProps&lt;T&gt;) =&gt;
+          JSX.Element
+  - name: onSuggestionClick
+    uid: '@fluentui/react-internal!ISuggestionsCoreProps#onSuggestionClick:member'
+    package: '@fluentui/react-internal!'
     fullName: onSuggestionClick
-    langs:
-      - typeScript
-    type: property
+    summary: What should occur when a suggestion is clicked
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'onSuggestionClick: (ev?: React.MouseEvent<HTMLElement>, item?: any, index?: number) => void;'
+      content: >-
+        onSuggestionClick: (ev?: React.MouseEvent<HTMLElement>, item?: any,
+        index?: number) => void;
       return:
-        type:
-          - '(ev?: React.MouseEvent<HTMLElement>, item?: any, index?: number) => void'
-  - uid: '@fluentui/react-internal!ISuggestionsCoreProps#onSuggestionRemove:member'
-    summary: Function to fire when one of the optional remove buttons on a suggestion is clicked.
-    name: onSuggestionRemove
+        type: >-
+          (ev?: React.MouseEvent&lt;HTMLElement&gt;, item?: any, index?: number)
+          =&gt; void
+  - name: onSuggestionRemove
+    uid: '@fluentui/react-internal!ISuggestionsCoreProps#onSuggestionRemove:member'
+    package: '@fluentui/react-internal!'
     fullName: onSuggestionRemove
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Function to fire when one of the optional remove buttons on a suggestion
+      is clicked.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'onSuggestionRemove?: (ev?: React.MouseEvent<HTMLElement>, item?: IPersonaProps, index?: number) => void;'
+      content: >-
+        onSuggestionRemove?: (ev?: React.MouseEvent<HTMLElement>, item?:
+        IPersonaProps, index?: number) => void;
       return:
-        type:
-          - '(ev?: React.MouseEvent<HTMLElement>, item?: IPersonaProps, index?: number) => void'
-  - uid: '@fluentui/react-internal!ISuggestionsCoreProps#resultsMaximumNumber:member'
-    summary: Maximum number of suggestions to show in the full suggestion list.
-    name: resultsMaximumNumber
+        type: >-
+          (ev?: React.MouseEvent&lt;HTMLElement&gt;, item?: IPersonaProps,
+          index?: number) =&gt; void
+  - name: resultsMaximumNumber
+    uid: '@fluentui/react-internal!ISuggestionsCoreProps#resultsMaximumNumber:member'
+    package: '@fluentui/react-internal!'
     fullName: resultsMaximumNumber
-    langs:
-      - typeScript
-    type: property
+    summary: Maximum number of suggestions to show in the full suggestion list.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'resultsMaximumNumber?: number;'
       return:
-        type:
-          - number
-  - uid: '@fluentui/react-internal!ISuggestionsCoreProps#shouldLoopSelection:member'
-    summary: >-
-      Indicates whether to loop around to the top or bottom of the suggestions on calling nextSuggestion and
-      previousSuggestion, respectively
-    name: shouldLoopSelection
+        type: number
+  - name: shouldLoopSelection
+    uid: '@fluentui/react-internal!ISuggestionsCoreProps#shouldLoopSelection:member'
+    package: '@fluentui/react-internal!'
     fullName: shouldLoopSelection
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Indicates whether to loop around to the top or bottom of the suggestions
+      on calling nextSuggestion and previousSuggestion, respectively
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'shouldLoopSelection: boolean;'
       return:
-        type:
-          - boolean
-  - uid: '@fluentui/react-internal!ISuggestionsCoreProps#showRemoveButtons:member'
-    summary: Indicates whether to show a button with each suggestion to remove that suggestion.
-    name: showRemoveButtons
+        type: boolean
+  - name: showRemoveButtons
+    uid: '@fluentui/react-internal!ISuggestionsCoreProps#showRemoveButtons:member'
+    package: '@fluentui/react-internal!'
     fullName: showRemoveButtons
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Indicates whether to show a button with each suggestion to remove that
+      suggestion.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'showRemoveButtons?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: '@fluentui/react-internal!ISuggestionsCoreProps#suggestions:member'
-    summary: The list of Suggestions that will be displayed
-    name: suggestions
+        type: boolean
+  - name: suggestions
+    uid: '@fluentui/react-internal!ISuggestionsCoreProps#suggestions:member'
+    package: '@fluentui/react-internal!'
     fullName: suggestions
-    langs:
-      - typeScript
-    type: property
+    summary: The list of Suggestions that will be displayed
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'suggestions: ISuggestionModel<T>[];'
       return:
-        type:
-          - 'ISuggestionModel<T>[]'
-  - uid: '@fluentui/react-internal!ISuggestionsCoreProps#suggestionsAvailableAlertText:member'
-    summary: Screen reader message to read when there are suggestions available.
-    name: suggestionsAvailableAlertText
+        type: 'ISuggestionModel&lt;T&gt;[]'
+  - name: suggestionsAvailableAlertText
+    uid: >-
+      @fluentui/react-internal!ISuggestionsCoreProps#suggestionsAvailableAlertText:member
+    package: '@fluentui/react-internal!'
     fullName: suggestionsAvailableAlertText
-    langs:
-      - typeScript
-    type: property
+    summary: Screen reader message to read when there are suggestions available.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'suggestionsAvailableAlertText?: string;'
       return:
-        type:
-          - string
-  - uid: '@fluentui/react-internal!ISuggestionsCoreProps#suggestionsContainerAriaLabel:member'
-    summary: An ARIA label for the container that is the parent of the suggestions.
-    name: suggestionsContainerAriaLabel
+        type: string
+  - name: suggestionsContainerAriaLabel
+    uid: >-
+      @fluentui/react-internal!ISuggestionsCoreProps#suggestionsContainerAriaLabel:member
+    package: '@fluentui/react-internal!'
     fullName: suggestionsContainerAriaLabel
-    langs:
-      - typeScript
-    type: property
+    summary: An ARIA label for the container that is the parent of the suggestions.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'suggestionsContainerAriaLabel?: string;'
       return:
-        type:
-          - string
-  - uid: '@fluentui/react-internal!ISuggestionsCoreProps#suggestionsItemClassName:member'
-    summary: the classname of the suggestion item.
-    name: suggestionsItemClassName
+        type: string
+  - name: suggestionsItemClassName
+    uid: >-
+      @fluentui/react-internal!ISuggestionsCoreProps#suggestionsItemClassName:member
+    package: '@fluentui/react-internal!'
     fullName: suggestionsItemClassName
-    langs:
-      - typeScript
-    type: property
+    summary: the classname of the suggestion item.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'suggestionsItemClassName?: string;'
       return:
-        type:
-          - string
+        type: string
+extends: 'React.ClassAttributes&lt;any&gt; '

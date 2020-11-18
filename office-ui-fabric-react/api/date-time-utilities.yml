@@ -1,488 +1,434 @@
-### YamlMime:UniversalReference
-items:
-  - uid: '@fluentui/date-time-utilities!'
-    name: '@fluentui/date-time-utilities'
-    fullName: '@fluentui/date-time-utilities'
-    langs:
-      - typeScript
-    type: package
-    children:
-      - '@fluentui/date-time-utilities!addDays:function(1)'
-      - '@fluentui/date-time-utilities!addMonths:function(1)'
-      - '@fluentui/date-time-utilities!addWeeks:function(1)'
-      - '@fluentui/date-time-utilities!addYears:function(1)'
-      - '@fluentui/date-time-utilities!compareDatePart:function(1)'
-      - '@fluentui/date-time-utilities!compareDates:function(1)'
-      - '@fluentui/date-time-utilities!DateRangeType:enum'
-      - '@fluentui/date-time-utilities!DayOfWeek:enum'
-      - '@fluentui/date-time-utilities!FirstWeekOfYear:enum'
-      - '@fluentui/date-time-utilities!getDatePartHashValue:function(1)'
-      - '@fluentui/date-time-utilities!getDateRangeArray:function(1)'
-      - '@fluentui/date-time-utilities!getEndDateOfWeek:function(1)'
-      - '@fluentui/date-time-utilities!getMonthEnd:function(1)'
-      - '@fluentui/date-time-utilities!getMonthStart:function(1)'
-      - '@fluentui/date-time-utilities!getStartDateOfWeek:function(1)'
-      - '@fluentui/date-time-utilities!getWeekNumber:function(1)'
-      - '@fluentui/date-time-utilities!getWeekNumbersInMonth:function(1)'
-      - '@fluentui/date-time-utilities!getYearEnd:function(1)'
-      - '@fluentui/date-time-utilities!getYearStart:function(1)'
-      - '@fluentui/date-time-utilities!IAvailableDateOptions:interface'
-      - '@fluentui/date-time-utilities!ICalendarStrings:interface'
-      - '@fluentui/date-time-utilities!IDateFormatting:interface'
-      - '@fluentui/date-time-utilities!IDateGridStrings:interface'
-      - '@fluentui/date-time-utilities!IDatePickerOptions:interface'
-      - '@fluentui/date-time-utilities!IDatepickerStrings:interface'
-      - '@fluentui/date-time-utilities!IDay:interface'
-      - '@fluentui/date-time-utilities!IDayGridOptions:interface'
-      - '@fluentui/date-time-utilities!IRestrictedDatesOptions:interface'
-      - '@fluentui/date-time-utilities!isInDateRangeArray:function(1)'
-      - '@fluentui/date-time-utilities!MonthOfYear:enum'
-      - '@fluentui/date-time-utilities!setMonth:function(1)'
-  - uid: '@fluentui/date-time-utilities!addDays:function(1)'
+### YamlMime:TSPackage
+uid: '@fluentui/date-time-utilities!'
+name: '@fluentui/date-time-utilities'
+type: package
+summary: ''
+enums:
+  - '@fluentui/date-time-utilities!DateRangeType:enum'
+  - '@fluentui/date-time-utilities!DayOfWeek:enum'
+  - '@fluentui/date-time-utilities!FirstWeekOfYear:enum'
+  - '@fluentui/date-time-utilities!MonthOfYear:enum'
+interfaces:
+  - '@fluentui/date-time-utilities!IAvailableDateOptions:interface'
+  - '@fluentui/date-time-utilities!ICalendarStrings:interface'
+  - '@fluentui/date-time-utilities!IDateFormatting:interface'
+  - '@fluentui/date-time-utilities!IDateGridStrings:interface'
+  - '@fluentui/date-time-utilities!IDatePickerOptions:interface'
+  - '@fluentui/date-time-utilities!IDatepickerStrings:interface'
+  - '@fluentui/date-time-utilities!IDay:interface'
+  - '@fluentui/date-time-utilities!IDayGridOptions:interface'
+  - '@fluentui/date-time-utilities!IRestrictedDatesOptions:interface'
+functions:
+  - name: 'addDays(date, days)'
+    uid: '@fluentui/date-time-utilities!addDays:function(1)'
+    package: '@fluentui/date-time-utilities!'
     summary: Returns a date offset from the given date by the specified number of days.
-    name: 'addDays(date, days)'
-    fullName: 'addDays(date, days)'
-    langs:
-      - typeScript
-    type: function
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'export declare function addDays(date: Date, days: number): Date;'
-      return:
-        type:
-          - Date
-        description: A new Date object offset from the origin date by the given number of days
       parameters:
         - id: date
           description: The origin date
-          type:
-            - Date
+          type: Date
         - id: days
           description: The number of days to offset. 'days' can be negative.
-          type:
-            - number
-  - uid: '@fluentui/date-time-utilities!addMonths:function(1)'
+          type: number
+      return:
+        type: Date
+        description: >-
+          A new Date object offset from the origin date by the given number of
+          days
+  - name: 'addMonths(date, months)'
+    uid: '@fluentui/date-time-utilities!addMonths:function(1)'
+    package: '@fluentui/date-time-utilities!'
     summary: >-
-      Returns a date offset from the given date by the specified number of months. The method tries to preserve the
-      day-of-month; however, if the new month does not have enough days to contain the original day-of-month, we'll use
-      the last day of the new month.
-    name: 'addMonths(date, months)'
-    fullName: 'addMonths(date, months)'
-    langs:
-      - typeScript
-    type: function
+      Returns a date offset from the given date by the specified number of
+      months. The method tries to preserve the day-of-month; however, if the new
+      month does not have enough days to contain the original day-of-month,
+      we'll use the last day of the new month.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'export declare function addMonths(date: Date, months: number): Date;'
-      return:
-        type:
-          - Date
-        description: A new Date object offset from the origin date by the given number of months
       parameters:
         - id: date
           description: The origin date
-          type:
-            - Date
+          type: Date
         - id: months
           description: The number of months to offset. 'months' can be negative.
-          type:
-            - number
-  - uid: '@fluentui/date-time-utilities!addWeeks:function(1)'
-    summary: Returns a date offset from the given date by the specified number of weeks.
-    name: 'addWeeks(date, weeks)'
-    fullName: 'addWeeks(date, weeks)'
-    langs:
-      - typeScript
-    type: function
+          type: number
+      return:
+        type: Date
+        description: >-
+          A new Date object offset from the origin date by the given number of
+          months
+  - name: 'addWeeks(date, weeks)'
+    uid: '@fluentui/date-time-utilities!addWeeks:function(1)'
+    package: '@fluentui/date-time-utilities!'
+    summary: >-
+      Returns a date offset from the given date by the specified number of
+      weeks.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'export declare function addWeeks(date: Date, weeks: number): Date;'
-      return:
-        type:
-          - Date
-        description: A new Date object offset from the origin date by the given number of weeks
       parameters:
         - id: date
           description: The origin date
-          type:
-            - Date
+          type: Date
         - id: weeks
           description: The number of weeks to offset. 'weeks' can be negative.
-          type:
-            - number
-  - uid: '@fluentui/date-time-utilities!addYears:function(1)'
+          type: number
+      return:
+        type: Date
+        description: >-
+          A new Date object offset from the origin date by the given number of
+          weeks
+  - name: 'addYears(date, years)'
+    uid: '@fluentui/date-time-utilities!addYears:function(1)'
+    package: '@fluentui/date-time-utilities!'
     summary: >-
-      Returns a date offset from the given date by the specified number of years. The method tries to preserve the
-      day-of-month; however, if the new month does not have enough days to contain the original day-of-month, we'll use
-      the last day of the new month.
-    name: 'addYears(date, years)'
-    fullName: 'addYears(date, years)'
-    langs:
-      - typeScript
-    type: function
+      Returns a date offset from the given date by the specified number of
+      years. The method tries to preserve the day-of-month; however, if the new
+      month does not have enough days to contain the original day-of-month,
+      we'll use the last day of the new month.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'export declare function addYears(date: Date, years: number): Date;'
-      return:
-        type:
-          - Date
-        description: A new Date object offset from the origin date by the given number of years
       parameters:
         - id: date
           description: The origin date
-          type:
-            - Date
+          type: Date
         - id: years
           description: The number of years to offset. 'years' can be negative.
-          type:
-            - number
-  - uid: '@fluentui/date-time-utilities!compareDatePart:function(1)'
-    summary: Compare the date parts of two dates
-    name: 'compareDatePart(date1, date2)'
-    fullName: 'compareDatePart(date1, date2)'
-    langs:
-      - typeScript
-    type: function
-    syntax:
-      content: 'export declare function compareDatePart(date1: Date, date2: Date): Number;'
+          type: number
       return:
-        type:
-          - Number
+        type: Date
         description: >-
-          A negative value if date1 is earlier than date2, 0 if the dates are equal, or a positive value if date1 is
-          later than date2.
+          A new Date object offset from the origin date by the given number of
+          years
+  - name: 'compareDatePart(date1, date2)'
+    uid: '@fluentui/date-time-utilities!compareDatePart:function(1)'
+    package: '@fluentui/date-time-utilities!'
+    summary: Compare the date parts of two dates
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        export declare function compareDatePart(date1: Date, date2: Date):
+        Number;
       parameters:
         - id: date1
           description: The first date to compare
-          type:
-            - Date
+          type: Date
         - id: date2
           description: The second date to compare
-          type:
-            - Date
-  - uid: '@fluentui/date-time-utilities!compareDates:function(1)'
-    summary: 'Compares two dates, and returns true if the two dates (not accounting for time-of-day) are equal.'
-    name: 'compareDates(date1, date2)'
-    fullName: 'compareDates(date1, date2)'
-    langs:
-      - typeScript
-    type: function
+          type: Date
+      return:
+        type: Number
+        description: >-
+          A negative value if date1 is earlier than date2, 0 if the dates are
+          equal, or a positive value if date1 is later than date2.
+  - name: 'compareDates(date1, date2)'
+    uid: '@fluentui/date-time-utilities!compareDates:function(1)'
+    package: '@fluentui/date-time-utilities!'
+    summary: >-
+      Compares two dates, and returns true if the two dates (not accounting for
+      time-of-day) are equal.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'export declare function compareDates(date1: Date, date2: Date): boolean;'
-      return:
-        type:
-          - boolean
-        description: 'True if the two dates represent the same date (regardless of time-of-day), false otherwise.'
       parameters:
         - id: date1
           description: ''
-          type:
-            - Date
+          type: Date
         - id: date2
           description: ''
-          type:
-            - Date
-  - uid: '@fluentui/date-time-utilities!getDatePartHashValue:function(1)'
+          type: Date
+      return:
+        type: boolean
+        description: >-
+          True if the two dates represent the same date (regardless of
+          time-of-day), false otherwise.
+  - name: getDatePartHashValue(date)
+    uid: '@fluentui/date-time-utilities!getDatePartHashValue:function(1)'
+    package: '@fluentui/date-time-utilities!'
     summary: Helper function to assist in date comparisons
-    name: getDatePartHashValue(date)
-    fullName: getDatePartHashValue(date)
-    langs:
-      - typeScript
-    type: function
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'export declare function getDatePartHashValue(date: Date): number;'
-      return:
-        type:
-          - number
-        description: ''
       parameters:
         - id: date
           description: ''
-          type:
-            - Date
-  - uid: '@fluentui/date-time-utilities!getDateRangeArray:function(1)'
+          type: Date
+      return:
+        type: number
+        description: ''
+  - name: >-
+      getDateRangeArray(date, dateRangeType, firstDayOfWeek, workWeekDays,
+      daysToSelectInDayView)
+    uid: '@fluentui/date-time-utilities!getDateRangeArray:function(1)'
+    package: '@fluentui/date-time-utilities!'
     summary: >-
-      Gets the date range array including the specified date. The date range array is calculated as the list of dates
-      accounting for the specified first day of the week and date range type.
-    name: 'getDateRangeArray(date, dateRangeType, firstDayOfWeek, workWeekDays, daysToSelectInDayView)'
-    fullName: 'getDateRangeArray(date, dateRangeType, firstDayOfWeek, workWeekDays, daysToSelectInDayView)'
-    langs:
-      - typeScript
-    type: function
+      Gets the date range array including the specified date. The date range
+      array is calculated as the list of dates accounting for the specified
+      first day of the week and date range type.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        export declare function getDateRangeArray(date: Date, dateRangeType: DateRangeType, firstDayOfWeek: DayOfWeek,
-        workWeekDays?: DayOfWeek[], daysToSelectInDayView?: number): Date[];
-      return:
-        type:
-          - 'Date[]'
-        description: An array of dates representing the date range containing the specified date.
+        export declare function getDateRangeArray(date: Date, dateRangeType:
+        DateRangeType, firstDayOfWeek: DayOfWeek, workWeekDays?: DayOfWeek[],
+        daysToSelectInDayView?: number): Date[];
       parameters:
         - id: date
           description: The input date
-          type:
-            - Date
+          type: Date
         - id: dateRangeType
           description: 'The desired date range type, i.e., day, week, month, etc.'
-          type:
-            - '@fluentui/date-time-utilities!DateRangeType:enum'
+          type: '<xref uid="@fluentui/date-time-utilities!DateRangeType:enum" />'
         - id: firstDayOfWeek
           description: The first day of the week.
-          type:
-            - '@fluentui/date-time-utilities!DayOfWeek:enum'
+          type: '<xref uid="@fluentui/date-time-utilities!DayOfWeek:enum" />'
         - id: workWeekDays
-          description: 'The allowed days in work week. If not provided, assumes all days are allowed.'
-          type:
-            - 'DayOfWeek[]'
+          description: >-
+            The allowed days in work week. If not provided, assumes all days are
+            allowed.
+          type: 'DayOfWeek[]'
         - id: daysToSelectInDayView
           description: >-
-            The number of days to include when using dateRangeType === DateRangeType.Day for multiday view. Defaults to
-            1
-          type:
-            - number
-  - uid: '@fluentui/date-time-utilities!getEndDateOfWeek:function(1)'
-    summary: Gets the date for the last day of the week based on the given date assuming the specified first day of the week.
-    name: 'getEndDateOfWeek(date, firstDayOfWeek)'
-    fullName: 'getEndDateOfWeek(date, firstDayOfWeek)'
-    langs:
-      - typeScript
-    type: function
-    syntax:
-      content: 'export declare function getEndDateOfWeek(date: Date, firstDayOfWeek: DayOfWeek): Date;'
+            The number of days to include when using dateRangeType ===
+            DateRangeType.Day for multiday view. Defaults to 1
+          type: number
       return:
-        type:
-          - Date
-        description: A new date object representing the first day of the week containing the input date.
-      parameters:
-        - id: date
-          description: The date to find the beginning of the week date for.
-          type:
-            - Date
-        - id: firstDayOfWeek
-          description: ''
-          type:
-            - '@fluentui/date-time-utilities!DayOfWeek:enum'
-  - uid: '@fluentui/date-time-utilities!getMonthEnd:function(1)'
-    summary: Returns a date that is the last day of the month of the provided date.
-    name: getMonthEnd(date)
-    fullName: getMonthEnd(date)
-    langs:
-      - typeScript
-    type: function
-    syntax:
-      content: 'export declare function getMonthEnd(date: Date): Date;'
-      return:
-        type:
-          - Date
-        description: A new Date object with the day set to the last day of the month.
-      parameters:
-        - id: date
-          description: The origin date
-          type:
-            - Date
-  - uid: '@fluentui/date-time-utilities!getMonthStart:function(1)'
-    summary: Returns a date that is the first day of the month of the provided date.
-    name: getMonthStart(date)
-    fullName: getMonthStart(date)
-    langs:
-      - typeScript
-    type: function
-    syntax:
-      content: 'export declare function getMonthStart(date: Date): Date;'
-      return:
-        type:
-          - Date
-        description: A new Date object with the day set to the first day of the month.
-      parameters:
-        - id: date
-          description: The origin date
-          type:
-            - Date
-  - uid: '@fluentui/date-time-utilities!getStartDateOfWeek:function(1)'
-    summary: Gets the date for the first day of the week based on the given date assuming the specified first day of the week.
-    name: 'getStartDateOfWeek(date, firstDayOfWeek)'
-    fullName: 'getStartDateOfWeek(date, firstDayOfWeek)'
-    langs:
-      - typeScript
-    type: function
-    syntax:
-      content: 'export declare function getStartDateOfWeek(date: Date, firstDayOfWeek: DayOfWeek): Date;'
-      return:
-        type:
-          - Date
-        description: A new date object representing the first day of the week containing the input date.
-      parameters:
-        - id: date
-          description: The date to find the beginning of the week date for.
-          type:
-            - Date
-        - id: firstDayOfWeek
-          description: ''
-          type:
-            - '@fluentui/date-time-utilities!DayOfWeek:enum'
-  - uid: '@fluentui/date-time-utilities!getWeekNumber:function(1)'
-    summary: Returns the week number for a date. Week numbers are 1 - 52 (53) in a year
-    name: 'getWeekNumber(date, firstDayOfWeek, firstWeekOfYear)'
-    fullName: 'getWeekNumber(date, firstDayOfWeek, firstWeekOfYear)'
-    langs:
-      - typeScript
-    type: function
+        type: 'Date[]'
+        description: >-
+          An array of dates representing the date range containing the specified
+          date.
+  - name: 'getEndDateOfWeek(date, firstDayOfWeek)'
+    uid: '@fluentui/date-time-utilities!getEndDateOfWeek:function(1)'
+    package: '@fluentui/date-time-utilities!'
+    summary: >-
+      Gets the date for the last day of the week based on the given date
+      assuming the specified first day of the week.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        export declare function getWeekNumber(date: Date, firstDayOfWeek: DayOfWeek, firstWeekOfYear: FirstWeekOfYear):
-        number;
+        export declare function getEndDateOfWeek(date: Date, firstDayOfWeek:
+        DayOfWeek): Date;
+      parameters:
+        - id: date
+          description: The date to find the beginning of the week date for.
+          type: Date
+        - id: firstDayOfWeek
+          description: ''
+          type: '<xref uid="@fluentui/date-time-utilities!DayOfWeek:enum" />'
       return:
-        type:
-          - number
-        description: The week's number in the year.
+        type: Date
+        description: >-
+          A new date object representing the first day of the week containing
+          the input date.
+  - name: getMonthEnd(date)
+    uid: '@fluentui/date-time-utilities!getMonthEnd:function(1)'
+    package: '@fluentui/date-time-utilities!'
+    summary: Returns a date that is the last day of the month of the provided date.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'export declare function getMonthEnd(date: Date): Date;'
+      parameters:
+        - id: date
+          description: The origin date
+          type: Date
+      return:
+        type: Date
+        description: A new Date object with the day set to the last day of the month.
+  - name: getMonthStart(date)
+    uid: '@fluentui/date-time-utilities!getMonthStart:function(1)'
+    package: '@fluentui/date-time-utilities!'
+    summary: Returns a date that is the first day of the month of the provided date.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'export declare function getMonthStart(date: Date): Date;'
+      parameters:
+        - id: date
+          description: The origin date
+          type: Date
+      return:
+        type: Date
+        description: A new Date object with the day set to the first day of the month.
+  - name: 'getStartDateOfWeek(date, firstDayOfWeek)'
+    uid: '@fluentui/date-time-utilities!getStartDateOfWeek:function(1)'
+    package: '@fluentui/date-time-utilities!'
+    summary: >-
+      Gets the date for the first day of the week based on the given date
+      assuming the specified first day of the week.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        export declare function getStartDateOfWeek(date: Date, firstDayOfWeek:
+        DayOfWeek): Date;
+      parameters:
+        - id: date
+          description: The date to find the beginning of the week date for.
+          type: Date
+        - id: firstDayOfWeek
+          description: ''
+          type: '<xref uid="@fluentui/date-time-utilities!DayOfWeek:enum" />'
+      return:
+        type: Date
+        description: >-
+          A new date object representing the first day of the week containing
+          the input date.
+  - name: 'getWeekNumber(date, firstDayOfWeek, firstWeekOfYear)'
+    uid: '@fluentui/date-time-utilities!getWeekNumber:function(1)'
+    package: '@fluentui/date-time-utilities!'
+    summary: Returns the week number for a date. Week numbers are 1 - 52 (53) in a year
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        export declare function getWeekNumber(date: Date, firstDayOfWeek:
+        DayOfWeek, firstWeekOfYear: FirstWeekOfYear): number;
       parameters:
         - id: date
           description: A date to find the week number for.
-          type:
-            - Date
+          type: Date
         - id: firstDayOfWeek
           description: 'The first day of the week (0-6, Sunday = 0)'
-          type:
-            - '@fluentui/date-time-utilities!DayOfWeek:enum'
+          type: '<xref uid="@fluentui/date-time-utilities!DayOfWeek:enum" />'
         - id: firstWeekOfYear
           description: The first week of the year (1-2)
-          type:
-            - '@fluentui/date-time-utilities!FirstWeekOfYear:enum'
-  - uid: '@fluentui/date-time-utilities!getWeekNumbersInMonth:function(1)'
+          type: '<xref uid="@fluentui/date-time-utilities!FirstWeekOfYear:enum" />'
+      return:
+        type: number
+        description: The week's number in the year.
+  - name: >-
+      getWeekNumbersInMonth(weeksInMonth, firstDayOfWeek, firstWeekOfYear,
+      navigatedDate)
+    uid: '@fluentui/date-time-utilities!getWeekNumbersInMonth:function(1)'
+    package: '@fluentui/date-time-utilities!'
     summary: Returns the week number for a date. Week numbers are 1 - 52 (53) in a year
-    name: 'getWeekNumbersInMonth(weeksInMonth, firstDayOfWeek, firstWeekOfYear, navigatedDate)'
-    fullName: 'getWeekNumbersInMonth(weeksInMonth, firstDayOfWeek, firstWeekOfYear, navigatedDate)'
-    langs:
-      - typeScript
-    type: function
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        export declare function getWeekNumbersInMonth(weeksInMonth: number, firstDayOfWeek: DayOfWeek, firstWeekOfYear:
-        FirstWeekOfYear, navigatedDate: Date): number[];
-      return:
-        type:
-          - 'number[]'
-        description: The weeks number array for the current month.
+        export declare function getWeekNumbersInMonth(weeksInMonth: number,
+        firstDayOfWeek: DayOfWeek, firstWeekOfYear: FirstWeekOfYear,
+        navigatedDate: Date): number[];
       parameters:
         - id: weeksInMonth
           description: ''
-          type:
-            - number
+          type: number
         - id: firstDayOfWeek
           description: 'The first day of the week (0-6, Sunday = 0)'
-          type:
-            - '@fluentui/date-time-utilities!DayOfWeek:enum'
+          type: '<xref uid="@fluentui/date-time-utilities!DayOfWeek:enum" />'
         - id: firstWeekOfYear
           description: The first week of the year (1-2)
-          type:
-            - '@fluentui/date-time-utilities!FirstWeekOfYear:enum'
+          type: '<xref uid="@fluentui/date-time-utilities!FirstWeekOfYear:enum" />'
         - id: navigatedDate
           description: A date to find the week number for.
-          type:
-            - Date
-  - uid: '@fluentui/date-time-utilities!getYearEnd:function(1)'
+          type: Date
+      return:
+        type: 'number[]'
+        description: The weeks number array for the current month.
+  - name: getYearEnd(date)
+    uid: '@fluentui/date-time-utilities!getYearEnd:function(1)'
+    package: '@fluentui/date-time-utilities!'
     summary: Returns a date that is the last day of the year of the provided date.
-    name: getYearEnd(date)
-    fullName: getYearEnd(date)
-    langs:
-      - typeScript
-    type: function
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'export declare function getYearEnd(date: Date): Date;'
-      return:
-        type:
-          - Date
-        description: A new Date object with the day set to the last day of the year.
       parameters:
         - id: date
           description: The origin date
-          type:
-            - Date
-  - uid: '@fluentui/date-time-utilities!getYearStart:function(1)'
+          type: Date
+      return:
+        type: Date
+        description: A new Date object with the day set to the last day of the year.
+  - name: getYearStart(date)
+    uid: '@fluentui/date-time-utilities!getYearStart:function(1)'
+    package: '@fluentui/date-time-utilities!'
     summary: Returns a date that is the first day of the year of the provided date.
-    name: getYearStart(date)
-    fullName: getYearStart(date)
-    langs:
-      - typeScript
-    type: function
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'export declare function getYearStart(date: Date): Date;'
+      parameters:
+        - id: date
+          description: The origin date
+          type: Date
       return:
-        type:
-          - Date
+        type: Date
         description: A new Date object with the day set to the first day of the year.
-      parameters:
-        - id: date
-          description: The origin date
-          type:
-            - Date
-  - uid: '@fluentui/date-time-utilities!isInDateRangeArray:function(1)'
+  - name: 'isInDateRangeArray(date, dateRange)'
+    uid: '@fluentui/date-time-utilities!isInDateRangeArray:function(1)'
+    package: '@fluentui/date-time-utilities!'
     summary: Checks whether the specified date is in the given date range.
-    name: 'isInDateRangeArray(date, dateRange)'
-    fullName: 'isInDateRangeArray(date, dateRange)'
-    langs:
-      - typeScript
-    type: function
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'export declare function isInDateRangeArray(date: Date, dateRange: Date[]): boolean;'
-      return:
-        type:
-          - boolean
-        description: 'True if the date matches one of the dates in the specified array, false otherwise.'
+      content: >-
+        export declare function isInDateRangeArray(date: Date, dateRange:
+        Date[]): boolean;
       parameters:
         - id: date
           description: The origin date
-          type:
-            - Date
+          type: Date
         - id: dateRange
           description: An array of dates to do the lookup on
-          type:
-            - 'Date[]'
-  - uid: '@fluentui/date-time-utilities!setMonth:function(1)'
+          type: 'Date[]'
+      return:
+        type: boolean
+        description: >-
+          True if the date matches one of the dates in the specified array,
+          false otherwise.
+  - name: 'setMonth(date, month)'
+    uid: '@fluentui/date-time-utilities!setMonth:function(1)'
+    package: '@fluentui/date-time-utilities!'
     summary: >-
-      Returns a date that is a copy of the given date, aside from the month changing to the given month. The method
-      tries to preserve the day-of-month; however, if the new month does not have enough days to contain the original
-      day-of-month, we'll use the last day of the new month.
-    name: 'setMonth(date, month)'
-    fullName: 'setMonth(date, month)'
-    langs:
-      - typeScript
-    type: function
+      Returns a date that is a copy of the given date, aside from the month
+      changing to the given month. The method tries to preserve the
+      day-of-month; however, if the new month does not have enough days to
+      contain the original day-of-month, we'll use the last day of the new
+      month.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'export declare function setMonth(date: Date, month: number): Date;'
-      return:
-        type:
-          - Date
-        description: A new Date object with the given month set.
       parameters:
         - id: date
           description: The origin date
-          type:
-            - Date
+          type: Date
         - id: month
           description: The 0-based index of the month to set on the date.
-          type:
-            - number
-references:
-  - uid: '@fluentui/date-time-utilities!DateRangeType:enum'
-    name: DateRangeType
-  - uid: '@fluentui/date-time-utilities!DayOfWeek:enum'
-    name: DayOfWeek
-  - uid: '@fluentui/date-time-utilities!FirstWeekOfYear:enum'
-    name: FirstWeekOfYear
-  - uid: '@fluentui/date-time-utilities!IAvailableDateOptions:interface'
-    name: IAvailableDateOptions
-  - uid: '@fluentui/date-time-utilities!ICalendarStrings:interface'
-    name: ICalendarStrings
-  - uid: '@fluentui/date-time-utilities!IDateFormatting:interface'
-    name: IDateFormatting
-  - uid: '@fluentui/date-time-utilities!IDateGridStrings:interface'
-    name: IDateGridStrings
-  - uid: '@fluentui/date-time-utilities!IDatePickerOptions:interface'
-    name: IDatePickerOptions
-  - uid: '@fluentui/date-time-utilities!IDatepickerStrings:interface'
-    name: IDatepickerStrings
-  - uid: '@fluentui/date-time-utilities!IDay:interface'
-    name: IDay
-  - uid: '@fluentui/date-time-utilities!IDayGridOptions:interface'
-    name: IDayGridOptions
-  - uid: '@fluentui/date-time-utilities!IRestrictedDatesOptions:interface'
-    name: IRestrictedDatesOptions
-  - uid: '@fluentui/date-time-utilities!MonthOfYear:enum'
-    name: MonthOfYear
+          type: number
+      return:
+        type: Date
+        description: A new Date object with the given month set.

@@ -1,67 +1,65 @@
-### YamlMime:UniversalReference
-items:
-  - uid: '@fluentui/merge-styles!IFontFace:interface'
-    summary: Font face definition.
-    name: IFontFace
-    fullName: IFontFace
-    langs:
-      - typeScript
-    type: interface
-    extends:
-      - '@fluentui/merge-styles!IRawFontStyle:interface'
+### YamlMime:TSType
+name: IFontFace
+uid: '@fluentui/merge-styles!IFontFace:interface'
+package: '@fluentui/merge-styles!'
+fullName: IFontFace
+summary: Font face definition.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: fontDisplay
+    uid: '@fluentui/merge-styles!IFontFace#fontDisplay:member'
     package: '@fluentui/merge-styles!'
-    children:
-      - '@fluentui/merge-styles!IFontFace#fontDisplay:member'
-      - '@fluentui/merge-styles!IFontFace#fontFeatureSettings:member'
-      - '@fluentui/merge-styles!IFontFace#src:member'
-      - '@fluentui/merge-styles!IFontFace#unicodeRange:member'
-  - uid: '@fluentui/merge-styles!IFontFace#fontDisplay:member'
-    summary: Determines how a font face is displayed based on whether and when it is downloaded and ready to use.
-    name: fontDisplay
     fullName: fontDisplay
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Determines how a font face is displayed based on whether and when it is
+      downloaded and ready to use.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'fontDisplay?: ''auto'' | ''block'' | ''swap'' | ''fallback'' | ''optional'';'
       return:
-        type:
-          - '''auto'' | ''block'' | ''swap'' | ''fallback'' | ''optional'''
-  - uid: '@fluentui/merge-styles!IFontFace#fontFeatureSettings:member'
-    summary: Feature settings for the font.
-    name: fontFeatureSettings
+        type: '''auto'' | ''block'' | ''swap'' | ''fallback'' | ''optional'''
+  - name: fontFeatureSettings
+    uid: '@fluentui/merge-styles!IFontFace#fontFeatureSettings:member'
+    package: '@fluentui/merge-styles!'
     fullName: fontFeatureSettings
-    langs:
-      - typeScript
-    type: property
+    summary: Feature settings for the font.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'fontFeatureSettings?: string;'
       return:
-        type:
-          - string
-  - uid: '@fluentui/merge-styles!IFontFace#src:member'
-    summary: Specifies the src of the font.
-    name: src
+        type: string
+  - name: src
+    uid: '@fluentui/merge-styles!IFontFace#src:member'
+    package: '@fluentui/merge-styles!'
     fullName: src
-    langs:
-      - typeScript
-    type: property
+    summary: Specifies the src of the font.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'src?: string;'
       return:
-        type:
-          - string
-  - uid: '@fluentui/merge-styles!IFontFace#unicodeRange:member'
-    summary: >-
-      unicode-range allows you to set a specific range of characters to be downloaded from a font (embedded using @<!--
-      -->font-face) and made available for use on the current page.
-    name: unicodeRange
+        type: string
+  - name: unicodeRange
+    uid: '@fluentui/merge-styles!IFontFace#unicodeRange:member'
+    package: '@fluentui/merge-styles!'
     fullName: unicodeRange
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      unicode-range allows you to set a specific range of characters to be
+      downloaded from a font (embedded using @<!-- -->font-face) and made
+      available for use on the current page.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'unicodeRange?: ICSSRule | string;'
       return:
-        type:
-          - ICSSRule | string
+        type: ICSSRule | string
+extends: '<xref uid="@fluentui/merge-styles!IRawFontStyle:interface" />'

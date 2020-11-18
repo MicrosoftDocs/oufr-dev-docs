@@ -1,30 +1,22 @@
-### YamlMime:UniversalReference
-items:
-  - uid: '@fluentui/react-hooks!IWarningOptions:interface'
-    name: IWarningOptions
-    fullName: IWarningOptions
-    langs:
-      - typeScript
-    type: interface
-    syntax:
-      typeParameters:
-        - id: P
+### YamlMime:TSType
+name: IWarningOptions
+uid: '@fluentui/react-hooks!IWarningOptions:interface'
+package: '@fluentui/react-hooks!'
+fullName: IWarningOptions
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: conditionallyRequired
+    uid: '@fluentui/react-hooks!IWarningOptions#conditionallyRequired:member'
     package: '@fluentui/react-hooks!'
-    children:
-      - '@fluentui/react-hooks!IWarningOptions#conditionallyRequired:member'
-      - '@fluentui/react-hooks!IWarningOptions#controlledUsage:member'
-      - '@fluentui/react-hooks!IWarningOptions#deprecations:member'
-      - '@fluentui/react-hooks!IWarningOptions#mutuallyExclusive:member'
-      - '@fluentui/react-hooks!IWarningOptions#name:member'
-      - '@fluentui/react-hooks!IWarningOptions#other:member'
-      - '@fluentui/react-hooks!IWarningOptions#props:member'
-  - uid: '@fluentui/react-hooks!IWarningOptions#conditionallyRequired:member'
-    summary: Warns when props are required if a condition is met
-    name: conditionallyRequired
     fullName: conditionallyRequired
-    langs:
-      - typeScript
-    type: property
+    summary: Warns when props are required if a condition is met
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: |-
         conditionallyRequired?: {
@@ -33,95 +25,99 @@ items:
                 condition: boolean;
             }[];
       return:
-        type:
-          - |-
-            {
-                    requiredProps: string[];
-                    conditionalPropName: string;
-                    condition: boolean;
-                }[]
-  - uid: '@fluentui/react-hooks!IWarningOptions#controlledUsage:member'
-    summary: >-
-      Check for and warn on the following error conditions with a form component: - A value prop is provided (indicated
-      it's being used as controlled) without a change handler, and the component is not read-only - Both the value and
-      defaultValue props are provided - The component is attempting to switch between controlled and uncontrolled
-
-
-      The messages mimic the warnings React gives for these error conditions on input elements. The warning will only be
-      displayed once per component instance.
-    name: controlledUsage
+        type: |-
+          {
+                  requiredProps: string[];
+                  conditionalPropName: string;
+                  condition: boolean;
+              }[]
+  - name: controlledUsage
+    uid: '@fluentui/react-hooks!IWarningOptions#controlledUsage:member'
+    package: '@fluentui/react-hooks!'
     fullName: controlledUsage
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Check for and warn on the following error conditions with a form
+      component: - A value prop is provided (indicated it's being used as
+      controlled) without a change handler, and the component is not read-only -
+      Both the value and defaultValue props are provided - The component is
+      attempting to switch between controlled and uncontrolled
+
+
+      The messages mimic the warnings React gives for these error conditions on
+      input elements. The warning will only be displayed once per component
+      instance.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        controlledUsage?: Pick<IWarnControlledUsageParams<P>, 'valueProp' | 'defaultValueProp' | 'onChangeProp' |
-        'readOnlyProp'>;
+        controlledUsage?: Pick<IWarnControlledUsageParams<P>, 'valueProp' |
+        'defaultValueProp' | 'onChangeProp' | 'readOnlyProp'>;
       return:
-        type:
-          - 'Pick<IWarnControlledUsageParams<P>, ''valueProp'' | ''defaultValueProp'' | ''onChangeProp'' | ''readOnlyProp''>'
-  - uid: '@fluentui/react-hooks!IWarningOptions#deprecations:member'
-    summary: >-
-      Warns when deprecated props are being used. Each key is a prop name and each value is either undefined or a
-      replacement prop name.
-    name: deprecations
+        type: >-
+          Pick&lt;IWarnControlledUsageParams&lt;P&gt;, 'valueProp' |
+          'defaultValueProp' | 'onChangeProp' | 'readOnlyProp'&gt;
+  - name: deprecations
+    uid: '@fluentui/react-hooks!IWarningOptions#deprecations:member'
+    package: '@fluentui/react-hooks!'
     fullName: deprecations
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Warns when deprecated props are being used. Each key is a prop name and
+      each value is either undefined or a replacement prop name.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'deprecations?: ISettingsMap<P>;'
       return:
-        type:
-          - ISettingsMap<P>
-  - uid: '@fluentui/react-hooks!IWarningOptions#mutuallyExclusive:member'
-    summary: >-
-      Warns when two props which are mutually exclusive are both being used. The key is one prop name and the value is
-      the other.
-    name: mutuallyExclusive
+        type: ISettingsMap&lt;P&gt;
+  - name: mutuallyExclusive
+    uid: '@fluentui/react-hooks!IWarningOptions#mutuallyExclusive:member'
+    package: '@fluentui/react-hooks!'
     fullName: mutuallyExclusive
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Warns when two props which are mutually exclusive are both being used. The
+      key is one prop name and the value is the other.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'mutuallyExclusive?: ISettingsMap<P>;'
       return:
-        type:
-          - ISettingsMap<P>
-  - uid: '@fluentui/react-hooks!IWarningOptions#name:member'
-    summary: Name of the component
-    name: name
+        type: ISettingsMap&lt;P&gt;
+  - name: name
+    uid: '@fluentui/react-hooks!IWarningOptions#name:member'
+    package: '@fluentui/react-hooks!'
     fullName: name
-    langs:
-      - typeScript
-    type: property
+    summary: Name of the component
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'name: string;'
       return:
-        type:
-          - string
-  - uid: '@fluentui/react-hooks!IWarningOptions#other:member'
-    summary: Generic messages
-    name: other
+        type: string
+  - name: other
+    uid: '@fluentui/react-hooks!IWarningOptions#other:member'
+    package: '@fluentui/react-hooks!'
     fullName: other
-    langs:
-      - typeScript
-    type: property
+    summary: Generic messages
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'other?: string[];'
       return:
-        type:
-          - 'string[]'
-  - uid: '@fluentui/react-hooks!IWarningOptions#props:member'
-    summary: Current component props
-    name: props
+        type: 'string[]'
+  - name: props
+    uid: '@fluentui/react-hooks!IWarningOptions#props:member'
+    package: '@fluentui/react-hooks!'
     fullName: props
-    langs:
-      - typeScript
-    type: property
+    summary: Current component props
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'props: P;'
       return:
-        type:
-          - P
+        type: P

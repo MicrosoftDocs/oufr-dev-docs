@@ -1,52 +1,49 @@
-### YamlMime:UniversalReference
-items:
-  - uid: '@fluentui/utilities!IAsAsyncOptions:interface'
-    name: IAsAsyncOptions
-    fullName: IAsAsyncOptions
-    langs:
-      - typeScript
-    type: interface
-    syntax:
-      typeParameters:
-        - id: TProps
+### YamlMime:TSType
+name: IAsAsyncOptions
+uid: '@fluentui/utilities!IAsAsyncOptions:interface'
+package: '@fluentui/utilities!'
+fullName: IAsAsyncOptions
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: load
+    uid: '@fluentui/utilities!IAsAsyncOptions#load:member'
     package: '@fluentui/utilities!'
-    children:
-      - '@fluentui/utilities!IAsAsyncOptions#load:member'
-      - '@fluentui/utilities!IAsAsyncOptions#onError:member'
-      - '@fluentui/utilities!IAsAsyncOptions#onLoad:member'
-  - uid: '@fluentui/utilities!IAsAsyncOptions#load:member'
-    summary: Callback which returns a promise resolving an object which exports the component.
-    name: load
     fullName: load
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Callback which returns a promise resolving an object which exports the
+      component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'load: () => Promise<React.ElementType<TProps>>;'
       return:
-        type:
-          - () => Promise<React.ElementType<TProps>>
-  - uid: '@fluentui/utilities!IAsAsyncOptions#onError:member'
-    summary: Callback when async loading fails.
-    name: onError
+        type: () =&gt; Promise&lt;React.ElementType&lt;TProps&gt;&gt;
+  - name: onError
+    uid: '@fluentui/utilities!IAsAsyncOptions#onError:member'
+    package: '@fluentui/utilities!'
     fullName: onError
-    langs:
-      - typeScript
-    type: property
+    summary: Callback when async loading fails.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'onError?: (error: Error) => void;'
       return:
-        type:
-          - '(error: Error) => void'
-  - uid: '@fluentui/utilities!IAsAsyncOptions#onLoad:member'
-    summary: Callback executed when async loading is complete.
-    name: onLoad
+        type: '(error: Error) =&gt; void'
+  - name: onLoad
+    uid: '@fluentui/utilities!IAsAsyncOptions#onLoad:member'
+    package: '@fluentui/utilities!'
     fullName: onLoad
-    langs:
-      - typeScript
-    type: property
+    summary: Callback executed when async loading is complete.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'onLoad?: () => void;'
       return:
-        type:
-          - () => void
+        type: () =&gt; void

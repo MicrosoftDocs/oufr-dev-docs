@@ -1,28 +1,27 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'office-ui-fabric-react!IPersonaWithMenu:interface'
-    summary: Extended interface from IPersonaProps to add `menuItems` property PeoplePickerItemWithMenu items.
-    deprecated:
-      content: Do not use. Will be removed in Fabric 7.0
-    name: IPersonaWithMenu
-    fullName: IPersonaWithMenu
-    langs:
-      - typeScript
-    type: interface
-    extends:
-      - 'IPersonaProps '
+### YamlMime:TSType
+name: IPersonaWithMenu
+uid: 'office-ui-fabric-react!IPersonaWithMenu:interface'
+package: office-ui-fabric-react!
+fullName: IPersonaWithMenu
+summary: >-
+  Extended interface from IPersonaProps to add `menuItems` property
+  PeoplePickerItemWithMenu items.
+remarks: ''
+isPreview: false
+isDeprecated: true
+customDeprecatedMessage: Do not use. Will be removed in Fabric 7.0
+type: interface
+properties:
+  - name: menuItems
+    uid: 'office-ui-fabric-react!IPersonaWithMenu#menuItems:member'
     package: office-ui-fabric-react!
-    children:
-      - 'office-ui-fabric-react!IPersonaWithMenu#menuItems:member'
-  - uid: 'office-ui-fabric-react!IPersonaWithMenu#menuItems:member'
-    summary: Additional menuItems to be rendered in a contextualMenu for each Persona.
-    name: menuItems
     fullName: menuItems
-    langs:
-      - typeScript
-    type: property
+    summary: Additional menuItems to be rendered in a contextualMenu for each Persona.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'menuItems?: IContextualMenuItem[];'
       return:
-        type:
-          - 'IContextualMenuItem[]'
+        type: 'IContextualMenuItem[]'
+extends: 'IPersonaProps '

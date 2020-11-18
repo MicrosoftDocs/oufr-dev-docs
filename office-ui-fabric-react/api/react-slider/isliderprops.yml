@@ -1,294 +1,289 @@
-### YamlMime:UniversalReference
-items:
-  - uid: '@fluentui/react-slider!ISliderProps:interface'
-    name: ISliderProps
-    fullName: ISliderProps
-    langs:
-      - typeScript
-    type: interface
-    extends:
-      - 'Omit<React.HTMLAttributes<HTMLDivElement>, ''defaultValue'' | ''onChange''>'
-      - 'React.RefAttributes<HTMLDivElement> '
+### YamlMime:TSType
+name: ISliderProps
+uid: '@fluentui/react-slider!ISliderProps:interface'
+package: '@fluentui/react-slider!'
+fullName: ISliderProps
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: ariaLabel
+    uid: '@fluentui/react-slider!ISliderProps#ariaLabel:member'
     package: '@fluentui/react-slider!'
-    children:
-      - '@fluentui/react-slider!ISliderProps#ariaLabel:member'
-      - '@fluentui/react-slider!ISliderProps#ariaValueText:member'
-      - '@fluentui/react-slider!ISliderProps#buttonProps:member'
-      - '@fluentui/react-slider!ISliderProps#className:member'
-      - '@fluentui/react-slider!ISliderProps#componentRef:member'
-      - '@fluentui/react-slider!ISliderProps#defaultValue:member'
-      - '@fluentui/react-slider!ISliderProps#disabled:member'
-      - '@fluentui/react-slider!ISliderProps#label:member'
-      - '@fluentui/react-slider!ISliderProps#max:member'
-      - '@fluentui/react-slider!ISliderProps#min:member'
-      - '@fluentui/react-slider!ISliderProps#onChange:member'
-      - '@fluentui/react-slider!ISliderProps#onChanged:member'
-      - '@fluentui/react-slider!ISliderProps#originFromZero:member'
-      - '@fluentui/react-slider!ISliderProps#showValue:member'
-      - '@fluentui/react-slider!ISliderProps#snapToStep:member'
-      - '@fluentui/react-slider!ISliderProps#step:member'
-      - '@fluentui/react-slider!ISliderProps#styles:member'
-      - '@fluentui/react-slider!ISliderProps#theme:member'
-      - '@fluentui/react-slider!ISliderProps#value:member'
-      - '@fluentui/react-slider!ISliderProps#valueFormat:member'
-      - '@fluentui/react-slider!ISliderProps#vertical:member'
-  - uid: '@fluentui/react-slider!ISliderProps#ariaLabel:member'
-    summary: A description of the Slider for the benefit of screen readers.
-    name: ariaLabel
     fullName: ariaLabel
-    langs:
-      - typeScript
-    type: property
+    summary: A description of the Slider for the benefit of screen readers.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'ariaLabel?: string;'
       return:
-        type:
-          - string
-  - uid: '@fluentui/react-slider!ISliderProps#ariaValueText:member'
-    summary: >-
-      A text description of the Slider number value for the benefit of screen readers. This should be used when the
-      Slider number value is not accurately represented by a number.
-    name: ariaValueText
+        type: string
+  - name: ariaValueText
+    uid: '@fluentui/react-slider!ISliderProps#ariaValueText:member'
+    package: '@fluentui/react-slider!'
     fullName: ariaValueText
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      A text description of the Slider number value for the benefit of screen
+      readers. This should be used when the Slider number value is not
+      accurately represented by a number.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'ariaValueText?: (value: number) => string;'
       return:
-        type:
-          - '(value: number) => string'
-  - uid: '@fluentui/react-slider!ISliderProps#buttonProps:member'
-    summary: Optional mixin for additional props on the thumb button within the slider.
-    name: buttonProps
+        type: '(value: number) =&gt; string'
+  - name: buttonProps
+    uid: '@fluentui/react-slider!ISliderProps#buttonProps:member'
+    package: '@fluentui/react-slider!'
     fullName: buttonProps
-    langs:
-      - typeScript
-    type: property
+    summary: Optional mixin for additional props on the thumb button within the slider.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'buttonProps?: React.HTMLAttributes<HTMLButtonElement>;'
       return:
-        type:
-          - React.HTMLAttributes<HTMLButtonElement>
-  - uid: '@fluentui/react-slider!ISliderProps#className:member'
-    summary: Optional className to attach to the slider root element.
-    name: className
+        type: React.HTMLAttributes&lt;HTMLButtonElement&gt;
+  - name: className
+    uid: '@fluentui/react-slider!ISliderProps#className:member'
+    package: '@fluentui/react-slider!'
     fullName: className
-    langs:
-      - typeScript
-    type: property
+    summary: Optional className to attach to the slider root element.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'className?: string;'
       return:
-        type:
-          - string
-  - uid: '@fluentui/react-slider!ISliderProps#componentRef:member'
-    summary: >-
-      Optional callback to access the ISlider interface. Use this instead of ref for accessing the public methods and
-      properties of the component.
-    name: componentRef
+        type: string
+  - name: componentRef
+    uid: '@fluentui/react-slider!ISliderProps#componentRef:member'
+    package: '@fluentui/react-slider!'
     fullName: componentRef
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Optional callback to access the ISlider interface. Use this instead of ref
+      for accessing the public methods and properties of the component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'componentRef?: IRefObject<ISlider>;'
       return:
-        type:
-          - IRefObject<ISlider>
-  - uid: '@fluentui/react-slider!ISliderProps#defaultValue:member'
-    summary: >-
-      The initial value of the Slider. Use this if you intend for the Slider to be an uncontrolled component. This value
-      is mutually exclusive to value. Use one or the other.
-    name: defaultValue
+        type: IRefObject&lt;ISlider&gt;
+  - name: defaultValue
+    uid: '@fluentui/react-slider!ISliderProps#defaultValue:member'
+    package: '@fluentui/react-slider!'
     fullName: defaultValue
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The initial value of the Slider. Use this if you intend for the Slider to
+      be an uncontrolled component. This value is mutually exclusive to value.
+      Use one or the other.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'defaultValue?: number;'
       return:
-        type:
-          - number
-  - uid: '@fluentui/react-slider!ISliderProps#disabled:member'
-    summary: Optional flag to render the Slider as disabled.
-    name: disabled
+        type: number
+  - name: disabled
+    uid: '@fluentui/react-slider!ISliderProps#disabled:member'
+    package: '@fluentui/react-slider!'
     fullName: disabled
-    langs:
-      - typeScript
-    type: property
+    summary: Optional flag to render the Slider as disabled.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'disabled?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: '@fluentui/react-slider!ISliderProps#label:member'
-    summary: Description label of the Slider
-    name: label
+        type: boolean
+  - name: label
+    uid: '@fluentui/react-slider!ISliderProps#label:member'
+    package: '@fluentui/react-slider!'
     fullName: label
-    langs:
-      - typeScript
-    type: property
+    summary: Description label of the Slider
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'label?: string;'
       return:
-        type:
-          - string
-  - uid: '@fluentui/react-slider!ISliderProps#max:member'
-    summary: The max value of the Slider
-    name: max
+        type: string
+  - name: max
+    uid: '@fluentui/react-slider!ISliderProps#max:member'
+    package: '@fluentui/react-slider!'
     fullName: max
-    langs:
-      - typeScript
-    type: property
+    summary: The max value of the Slider
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'max?: number;'
       return:
-        type:
-          - number
-  - uid: '@fluentui/react-slider!ISliderProps#min:member'
-    summary: The min value of the Slider
-    name: min
+        type: number
+  - name: min
+    uid: '@fluentui/react-slider!ISliderProps#min:member'
+    package: '@fluentui/react-slider!'
     fullName: min
-    langs:
-      - typeScript
-    type: property
+    summary: The min value of the Slider
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'min?: number;'
       return:
-        type:
-          - number
-  - uid: '@fluentui/react-slider!ISliderProps#onChange:member'
-    summary: Callback when the value has been changed
-    name: onChange
+        type: number
+  - name: onChange
+    uid: '@fluentui/react-slider!ISliderProps#onChange:member'
+    package: '@fluentui/react-slider!'
     fullName: onChange
-    langs:
-      - typeScript
-    type: property
+    summary: Callback when the value has been changed
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'onChange?: (value: number) => void;'
       return:
-        type:
-          - '(value: number) => void'
-  - uid: '@fluentui/react-slider!ISliderProps#onChanged:member'
-    summary: Callback on mouse up or touch end
-    name: onChanged
+        type: '(value: number) =&gt; void'
+  - name: onChanged
+    uid: '@fluentui/react-slider!ISliderProps#onChanged:member'
+    package: '@fluentui/react-slider!'
     fullName: onChanged
-    langs:
-      - typeScript
-    type: property
+    summary: Callback on mouse up or touch end
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'onChanged?: (event: MouseEvent | TouchEvent | KeyboardEvent, value: number) => void;'
+      content: >-
+        onChanged?: (event: MouseEvent | TouchEvent | KeyboardEvent, value:
+        number) => void;
       return:
-        type:
-          - '(event: MouseEvent | TouchEvent | KeyboardEvent, value: number) => void'
-  - uid: '@fluentui/react-slider!ISliderProps#originFromZero:member'
-    summary: Optional flag to attach the origin of slider to zero. Helpful when the range include negatives.
-    name: originFromZero
+        type: >-
+          (event: MouseEvent | TouchEvent | KeyboardEvent, value: number) =&gt;
+          void
+  - name: originFromZero
+    uid: '@fluentui/react-slider!ISliderProps#originFromZero:member'
+    package: '@fluentui/react-slider!'
     fullName: originFromZero
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Optional flag to attach the origin of slider to zero. Helpful when the
+      range include negatives.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'originFromZero?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: '@fluentui/react-slider!ISliderProps#showValue:member'
-    summary: Whether to show the value on the right of the Slider.
-    name: showValue
+        type: boolean
+  - name: showValue
+    uid: '@fluentui/react-slider!ISliderProps#showValue:member'
+    package: '@fluentui/react-slider!'
     fullName: showValue
-    langs:
-      - typeScript
-    type: property
+    summary: Whether to show the value on the right of the Slider.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'showValue?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: '@fluentui/react-slider!ISliderProps#snapToStep:member'
-    summary: Optional flag to decide that thumb will snap to closest value while moving the slider
-    name: snapToStep
+        type: boolean
+  - name: snapToStep
+    uid: '@fluentui/react-slider!ISliderProps#snapToStep:member'
+    package: '@fluentui/react-slider!'
     fullName: snapToStep
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Optional flag to decide that thumb will snap to closest value while moving
+      the slider
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'snapToStep?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: '@fluentui/react-slider!ISliderProps#step:member'
-    summary: The difference between the two adjacent values of the Slider
-    name: step
+        type: boolean
+  - name: step
+    uid: '@fluentui/react-slider!ISliderProps#step:member'
+    package: '@fluentui/react-slider!'
     fullName: step
-    langs:
-      - typeScript
-    type: property
+    summary: The difference between the two adjacent values of the Slider
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'step?: number;'
       return:
-        type:
-          - number
-  - uid: '@fluentui/react-slider!ISliderProps#styles:member'
-    summary: Call to provide customized styling that will layer on top of the variant rules.
-    name: styles
+        type: number
+  - name: styles
+    uid: '@fluentui/react-slider!ISliderProps#styles:member'
+    package: '@fluentui/react-slider!'
     fullName: styles
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Call to provide customized styling that will layer on top of the variant
+      rules.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'styles?: IStyleFunctionOrObject<ISliderStyleProps, ISliderStyles>;'
       return:
-        type:
-          - 'IStyleFunctionOrObject<ISliderStyleProps, ISliderStyles>'
-  - uid: '@fluentui/react-slider!ISliderProps#theme:member'
-    summary: Theme provided by High-Order Component.
-    name: theme
+        type: 'IStyleFunctionOrObject&lt;ISliderStyleProps, ISliderStyles&gt;'
+  - name: theme
+    uid: '@fluentui/react-slider!ISliderProps#theme:member'
+    package: '@fluentui/react-slider!'
     fullName: theme
-    langs:
-      - typeScript
-    type: property
+    summary: Theme provided by High-Order Component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'theme?: ITheme;'
       return:
-        type:
-          - '@fluentui/theme!ITheme:interface'
-  - uid: '@fluentui/react-slider!ISliderProps#value:member'
-    summary: >-
-      The initial value of the Slider. Use this if you intend to pass in a new value as a result of onChange events.
-      This value is mutually exclusive to defaultValue. Use one or the other.
-    name: value
+        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
+  - name: value
+    uid: '@fluentui/react-slider!ISliderProps#value:member'
+    package: '@fluentui/react-slider!'
     fullName: value
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The initial value of the Slider. Use this if you intend to pass in a new
+      value as a result of onChange events. This value is mutually exclusive to
+      defaultValue. Use one or the other.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'value?: number;'
       return:
-        type:
-          - number
-  - uid: '@fluentui/react-slider!ISliderProps#valueFormat:member'
-    summary: Optional function to format the slider value.
-    name: valueFormat
+        type: number
+  - name: valueFormat
+    uid: '@fluentui/react-slider!ISliderProps#valueFormat:member'
+    package: '@fluentui/react-slider!'
     fullName: valueFormat
-    langs:
-      - typeScript
-    type: property
+    summary: Optional function to format the slider value.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'valueFormat?: (value: number) => string;'
       return:
-        type:
-          - '(value: number) => string'
-  - uid: '@fluentui/react-slider!ISliderProps#vertical:member'
-    summary: Optional flag to render the slider vertically. Defaults to rendering horizontal.
-    name: vertical
+        type: '(value: number) =&gt; string'
+  - name: vertical
+    uid: '@fluentui/react-slider!ISliderProps#vertical:member'
+    package: '@fluentui/react-slider!'
     fullName: vertical
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Optional flag to render the slider vertically. Defaults to rendering
+      horizontal.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'vertical?: boolean;'
       return:
-        type:
-          - boolean
+        type: boolean
+extends: >-
+  Omit&lt;React.HTMLAttributes&lt;HTMLDivElement&gt;, 'defaultValue' |
+  'onChange'&gt;

@@ -1,119 +1,90 @@
-### YamlMime:UniversalReference
-items:
-  - uid: '@fluentui/react-compose!'
-    name: '@fluentui/react-compose'
-    fullName: '@fluentui/react-compose'
-    langs:
-      - typeScript
-    type: package
-    children:
-      - '@fluentui/react-compose!BaseSlots:interface'
-      - '@fluentui/react-compose!ComponentProps:interface'
-      - '@fluentui/react-compose!compose:function(1)'
-      - '@fluentui/react-compose!mergeProps:function(1)'
-      - '@fluentui/react-compose!mergeSlotProp:function(1)'
-      - '@fluentui/react-compose!ShorthandConfig:interface'
-  - uid: '@fluentui/react-compose!compose:function(1)'
-    name: 'compose(input, inputOptions)'
-    fullName: 'compose(input, inputOptions)'
-    langs:
-      - typeScript
-    type: function
+### YamlMime:TSPackage
+uid: '@fluentui/react-compose!'
+name: '@fluentui/react-compose'
+type: package
+summary: ''
+interfaces:
+  - '@fluentui/react-compose!BaseSlots:interface'
+  - '@fluentui/react-compose!ComponentProps:interface'
+  - '@fluentui/react-compose!ShorthandConfig:interface'
+functions:
+  - name: 'compose(input, inputOptions)'
+    uid: '@fluentui/react-compose!compose:function(1)'
+    package: '@fluentui/react-compose!'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        declare function compose<TElementType extends keyof JSX.IntrinsicElements, TInputProps, TInputStylesProps,
-        TParentProps, TParentStylesProps>(input: Input<TElementType, TInputProps>, inputOptions?:
-        ComposeOptions<TInputProps, TInputStylesProps, TParentProps, TParentStylesProps>): ComponentWithAs<TElementType,
+        declare function compose<TElementType extends keyof
+        JSX.IntrinsicElements, TInputProps, TInputStylesProps, TParentProps,
+        TParentStylesProps>(input: Input<TElementType, TInputProps>,
+        inputOptions?: ComposeOptions<TInputProps, TInputStylesProps,
+        TParentProps, TParentStylesProps>): ComponentWithAs<TElementType,
         TInputProps & TParentProps>;
-      return:
-        type:
-          - 'ComponentWithAs<TElementType, TInputProps & TParentProps>'
-        description: ''
       parameters:
         - id: input
           description: ''
-          type:
-            - 'Input<TElementType, TInputProps>'
+          type: 'Input&lt;TElementType, TInputProps&gt;'
         - id: inputOptions
           description: ''
-          type:
-            - 'ComposeOptions<TInputProps, TInputStylesProps, TParentProps, TParentStylesProps>'
-      typeParameters:
-        - id: TElementType
-          type:
-            - keyof JSX.IntrinsicElements
-        - id: TInputProps
-        - id: TInputStylesProps
-        - id: TParentProps
-        - id: TParentStylesProps
-  - uid: '@fluentui/react-compose!mergeProps:function(1)'
+          type: >-
+            ComposeOptions&lt;TInputProps, TInputStylesProps, TParentProps,
+            TParentStylesProps&gt;
+      return:
+        type: 'ComponentWithAs&lt;TElementType, TInputProps & TParentProps&gt;'
+        description: ''
+  - name: 'mergeProps(state, options)'
+    uid: '@fluentui/react-compose!mergeProps:function(1)'
+    package: '@fluentui/react-compose!'
     summary: >-
-      Merge props takes in state and compose options, and resolves slots and slotProps. It's expected that the component
-      will call mergeProps(state, options) from within render; after resolving state and before rendering slots and
-      slotProps.
-    name: 'mergeProps(state, options)'
-    fullName: 'mergeProps(state, options)'
-    langs:
-      - typeScript
-    type: function
+      Merge props takes in state and compose options, and resolves slots and
+      slotProps. It's expected that the component will call mergeProps(state,
+      options) from within render; after resolving state and before rendering
+      slots and slotProps.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        export declare function mergeProps<TProps, TState = TProps, TSlots = GenericDictionary, TSlotProps = {
+        export declare function mergeProps<TProps, TState = TProps, TSlots =
+        GenericDictionary, TSlotProps = {
             [key in keyof TSlots]: any;
-        }>(state: TState, options: ComposePreparedOptions<TProps, TState>): MergePropsResult<TState, TSlots,
-        TSlotProps>;
-      return:
-        type:
-          - 'MergePropsResult<TState, TSlots, TSlotProps>'
-        description: ''
+        }>(state: TState, options: ComposePreparedOptions<TProps, TState>):
+        MergePropsResult<TState, TSlots, TSlotProps>;
       parameters:
         - id: state
           description: ''
-          type:
-            - TState
+          type: TState
         - id: options
           description: ''
-          type:
-            - 'ComposePreparedOptions<TProps, TState>'
-      typeParameters:
-        - id: TProps
-        - id: TState
-        - id: TSlots
-        - id: TSlotProps
-  - uid: '@fluentui/react-compose!mergeSlotProp:function(1)'
+          type: 'ComposePreparedOptions&lt;TProps, TState&gt;'
+      return:
+        type: 'MergePropsResult&lt;TState, TSlots, TSlotProps&gt;'
+        description: ''
+  - name: 'mergeSlotProp(slotProp, slotProps, mappedProp)'
+    uid: '@fluentui/react-compose!mergeSlotProp:function(1)'
+    package: '@fluentui/react-compose!'
     summary: Merge props for a slot to a slot prop.
-    name: 'mergeSlotProp(slotProp, slotProps, mappedProp)'
-    fullName: 'mergeSlotProp(slotProp, slotProps, mappedProp)'
-    langs:
-      - typeScript
-    type: function
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        export declare function mergeSlotProp<TProps>(slotProp: SlotProp<TProps>, slotProps: TProps, mappedProp?:
-        string): SlotProp<TProps>;
-      return:
-        type:
-          - SlotProp<TProps>
-        description: ''
+        export declare function mergeSlotProp<TProps>(slotProp:
+        SlotProp<TProps>, slotProps: TProps, mappedProp?: string):
+        SlotProp<TProps>;
       parameters:
         - id: slotProp
           description: Slot prop.
-          type:
-            - SlotProp<TProps>
+          type: SlotProp&lt;TProps&gt;
         - id: slotProps
           description: Props for the slot.
-          type:
-            - TProps
+          type: TProps
         - id: mappedProp
           description: Optional mapped prop name for the slotProp after merging.
-          type:
-            - string
-      typeParameters:
-        - id: TProps
-references:
-  - uid: '@fluentui/react-compose!BaseSlots:interface'
-    name: BaseSlots
-  - uid: '@fluentui/react-compose!ComponentProps:interface'
-    name: ComponentProps
-  - uid: '@fluentui/react-compose!ShorthandConfig:interface'
-    name: ShorthandConfig
+          type: string
+      return:
+        type: SlotProp&lt;TProps&gt;
+        description: ''

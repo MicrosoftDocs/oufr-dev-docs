@@ -1,252 +1,240 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'office-ui-fabric-react!INavLink:interface'
-    name: INavLink
-    fullName: INavLink
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: INavLink
+uid: 'office-ui-fabric-react!INavLink:interface'
+package: office-ui-fabric-react!
+fullName: INavLink
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: ariaCurrent
+    uid: 'office-ui-fabric-react!INavLink#ariaCurrent:member'
     package: office-ui-fabric-react!
-    children:
-      - 'office-ui-fabric-react!INavLink#ariaCurrent:member'
-      - 'office-ui-fabric-react!INavLink#ariaLabel:member'
-      - 'office-ui-fabric-react!INavLink#automationId:member'
-      - 'office-ui-fabric-react!INavLink#collapseAriaLabel:member'
-      - 'office-ui-fabric-react!INavLink#disabled:member'
-      - 'office-ui-fabric-react!INavLink#expandAriaLabel:member'
-      - 'office-ui-fabric-react!INavLink#forceAnchor:member'
-      - 'office-ui-fabric-react!INavLink#icon:member'
-      - 'office-ui-fabric-react!INavLink#iconClassName:member'
-      - 'office-ui-fabric-react!INavLink#iconProps:member'
-      - 'office-ui-fabric-react!INavLink#isExpanded:member'
-      - 'office-ui-fabric-react!INavLink#key:member'
-      - 'office-ui-fabric-react!INavLink#links:member'
-      - 'office-ui-fabric-react!INavLink#name:member'
-      - 'office-ui-fabric-react!INavLink#onClick:member'
-      - 'office-ui-fabric-react!INavLink#target:member'
-      - 'office-ui-fabric-react!INavLink#title:member'
-      - 'office-ui-fabric-react!INavLink#url:member'
-  - uid: 'office-ui-fabric-react!INavLink#ariaCurrent:member'
-    summary: 'Aria-current token for active nav links. Must be a valid token value, and defaults to ''page''.'
-    name: ariaCurrent
     fullName: ariaCurrent
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Aria-current token for active nav links. Must be a valid token value, and
+      defaults to 'page'.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'ariaCurrent?: ''page'' | ''step'' | ''location'' | ''date'' | ''time'' | ''true'';'
       return:
-        type:
-          - '''page'' | ''step'' | ''location'' | ''date'' | ''time'' | ''true'''
-  - uid: 'office-ui-fabric-react!INavLink#ariaLabel:member'
-    summary: Aria label for nav link. Ignored if `collapseAriaLabel` or `expandAriaLabel` is provided.
-    name: ariaLabel
+        type: '''page'' | ''step'' | ''location'' | ''date'' | ''time'' | ''true'''
+  - name: ariaLabel
+    uid: 'office-ui-fabric-react!INavLink#ariaLabel:member'
+    package: office-ui-fabric-react!
     fullName: ariaLabel
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Aria label for nav link. Ignored if `collapseAriaLabel` or
+      `expandAriaLabel` is provided.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'ariaLabel?: string;'
       return:
-        type:
-          - string
-  - uid: 'office-ui-fabric-react!INavLink#automationId:member'
-    summary: The name to use for functional automation tests
-    name: automationId
+        type: string
+  - name: automationId
+    uid: 'office-ui-fabric-react!INavLink#automationId:member'
+    package: office-ui-fabric-react!
     fullName: automationId
-    langs:
-      - typeScript
-    type: property
+    summary: The name to use for functional automation tests
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'automationId?: string;'
       return:
-        type:
-          - string
-  - uid: 'office-ui-fabric-react!INavLink#collapseAriaLabel:member'
-    summary: ARIA label when group is collapsed and can be expanded.
-    name: collapseAriaLabel
+        type: string
+  - name: collapseAriaLabel
+    uid: 'office-ui-fabric-react!INavLink#collapseAriaLabel:member'
+    package: office-ui-fabric-react!
     fullName: collapseAriaLabel
-    langs:
-      - typeScript
-    type: property
+    summary: ARIA label when group is collapsed and can be expanded.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'collapseAriaLabel?: string;'
       return:
-        type:
-          - string
-  - uid: 'office-ui-fabric-react!INavLink#disabled:member'
-    summary: Whether or not the link is disabled.
-    name: disabled
+        type: string
+  - name: disabled
+    uid: 'office-ui-fabric-react!INavLink#disabled:member'
+    package: office-ui-fabric-react!
     fullName: disabled
-    langs:
-      - typeScript
-    type: property
+    summary: Whether or not the link is disabled.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'disabled?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'office-ui-fabric-react!INavLink#expandAriaLabel:member'
-    summary: ARIA label when group is collapsed and can be expanded.
-    name: expandAriaLabel
+        type: boolean
+  - name: expandAriaLabel
+    uid: 'office-ui-fabric-react!INavLink#expandAriaLabel:member'
+    package: office-ui-fabric-react!
     fullName: expandAriaLabel
-    langs:
-      - typeScript
-    type: property
+    summary: ARIA label when group is collapsed and can be expanded.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'expandAriaLabel?: string;'
       return:
-        type:
-          - string
-  - uid: 'office-ui-fabric-react!INavLink#forceAnchor:member'
-    summary: >-
-      (Optional) By default, any link with onClick defined will render as a button. Set this property to true to
-      override that behavior. (Links without onClick defined will render as anchors by default.)
-    name: forceAnchor
+        type: string
+  - name: forceAnchor
+    uid: 'office-ui-fabric-react!INavLink#forceAnchor:member'
+    package: office-ui-fabric-react!
     fullName: forceAnchor
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      (Optional) By default, any link with onClick defined will render as a
+      button. Set this property to true to override that behavior. (Links
+      without onClick defined will render as anchors by default.)
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'forceAnchor?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'office-ui-fabric-react!INavLink#icon:member'
-    summary: Name of an icon to render next to the link button.
-    name: icon
+        type: boolean
+  - name: icon
+    uid: 'office-ui-fabric-react!INavLink#icon:member'
+    package: office-ui-fabric-react!
     fullName: icon
-    langs:
-      - typeScript
-    type: property
+    summary: Name of an icon to render next to the link button.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'icon?: string;'
       return:
-        type:
-          - string
-  - uid: 'office-ui-fabric-react!INavLink#iconClassName:member'
-    summary: Deprecated. Use `iconProps.className` instead.
-    deprecated:
-      content: Use `iconProps.className` instead.
-    name: iconClassName
+        type: string
+  - name: iconClassName
+    uid: 'office-ui-fabric-react!INavLink#iconClassName:member'
+    package: office-ui-fabric-react!
     fullName: iconClassName
-    langs:
-      - typeScript
-    type: property
+    summary: Deprecated. Use `iconProps.className` instead.
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Use `iconProps.className` instead.
     syntax:
       content: 'iconClassName?: string;'
       return:
-        type:
-          - string
-  - uid: 'office-ui-fabric-react!INavLink#iconProps:member'
-    summary: Props for an icon to render next to the link button.
-    name: iconProps
+        type: string
+  - name: iconProps
+    uid: 'office-ui-fabric-react!INavLink#iconProps:member'
+    package: office-ui-fabric-react!
     fullName: iconProps
-    langs:
-      - typeScript
-    type: property
+    summary: Props for an icon to render next to the link button.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'iconProps?: IIconProps;'
       return:
-        type:
-          - IIconProps
-  - uid: 'office-ui-fabric-react!INavLink#isExpanded:member'
-    summary: Whether or not the link is in an expanded state
-    name: isExpanded
+        type: IIconProps
+  - name: isExpanded
+    uid: 'office-ui-fabric-react!INavLink#isExpanded:member'
+    package: office-ui-fabric-react!
     fullName: isExpanded
-    langs:
-      - typeScript
-    type: property
+    summary: Whether or not the link is in an expanded state
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'isExpanded?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'office-ui-fabric-react!INavLink#key:member'
-    summary: >-
-      Unique, stable key for the link, used when rendering the list of links and for tracking the currently selected
-      link.
-    name: key
+        type: boolean
+  - name: key
+    uid: 'office-ui-fabric-react!INavLink#key:member'
+    package: office-ui-fabric-react!
     fullName: key
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Unique, stable key for the link, used when rendering the list of links and
+      for tracking the currently selected link.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'key?: string;'
       return:
-        type:
-          - string
-  - uid: 'office-ui-fabric-react!INavLink#links:member'
-    summary: 'Child links to this link, if any'
-    name: links
+        type: string
+  - name: links
+    uid: 'office-ui-fabric-react!INavLink#links:member'
+    package: office-ui-fabric-react!
     fullName: links
-    langs:
-      - typeScript
-    type: property
+    summary: 'Child links to this link, if any'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'links?: INavLink[];'
       return:
-        type:
-          - 'INavLink[]'
-  - uid: 'office-ui-fabric-react!INavLink#name:member'
-    summary: Text to render for this link
-    name: name
+        type: 'INavLink[]'
+  - name: name
+    uid: 'office-ui-fabric-react!INavLink#name:member'
+    package: office-ui-fabric-react!
     fullName: name
-    langs:
-      - typeScript
-    type: property
+    summary: Text to render for this link
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'name: string;'
       return:
-        type:
-          - string
-  - uid: 'office-ui-fabric-react!INavLink#onClick:member'
-    summary: >-
-      Callback invoked when this link is clicked. Providing this callback will cause the link to render as a button
-      (rather than an anchor) unless forceAnchor is set to true.
-    name: onClick
+        type: string
+  - name: onClick
+    uid: 'office-ui-fabric-react!INavLink#onClick:member'
+    package: office-ui-fabric-react!
     fullName: onClick
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Callback invoked when this link is clicked. Providing this callback will
+      cause the link to render as a button (rather than an anchor) unless
+      forceAnchor is set to true.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'onClick?: (ev?: React.MouseEvent<HTMLElement>, item?: INavLink) => void;'
       return:
-        type:
-          - '(ev?: React.MouseEvent<HTMLElement>, item?: INavLink) => void'
-  - uid: 'office-ui-fabric-react!INavLink#target:member'
-    summary: Link <a> target.
-    name: target
+        type: '(ev?: React.MouseEvent&lt;HTMLElement&gt;, item?: INavLink) =&gt; void'
+  - name: target
+    uid: 'office-ui-fabric-react!INavLink#target:member'
+    package: office-ui-fabric-react!
     fullName: target
-    langs:
-      - typeScript
-    type: property
+    summary: Link <a> target.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'target?: string;'
       return:
-        type:
-          - string
-  - uid: 'office-ui-fabric-react!INavLink#title:member'
-    summary: Text for title tooltip and ARIA description.
-    name: title
+        type: string
+  - name: title
+    uid: 'office-ui-fabric-react!INavLink#title:member'
+    package: office-ui-fabric-react!
     fullName: title
-    langs:
-      - typeScript
-    type: property
+    summary: Text for title tooltip and ARIA description.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'title?: string;'
       return:
-        type:
-          - string
-  - uid: 'office-ui-fabric-react!INavLink#url:member'
-    summary: URL to navigate to for this link
-    name: url
+        type: string
+  - name: url
+    uid: 'office-ui-fabric-react!INavLink#url:member'
+    package: office-ui-fabric-react!
     fullName: url
-    langs:
-      - typeScript
-    type: property
+    summary: URL to navigate to for this link
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'url: string;'
       return:
-        type:
-          - string
+        type: string

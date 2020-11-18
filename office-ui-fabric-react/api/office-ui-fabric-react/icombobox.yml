@@ -1,59 +1,58 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'office-ui-fabric-react!IComboBox:interface'
-    name: IComboBox
-    fullName: IComboBox
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: IComboBox
+uid: 'office-ui-fabric-react!IComboBox:interface'
+package: office-ui-fabric-react!
+fullName: IComboBox
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: dismissMenu
+    uid: 'office-ui-fabric-react!IComboBox#dismissMenu:member'
     package: office-ui-fabric-react!
-    children:
-      - 'office-ui-fabric-react!IComboBox#dismissMenu:member'
-      - 'office-ui-fabric-react!IComboBox#focus:member(1)'
-      - 'office-ui-fabric-react!IComboBox#selectedOptions:member'
-  - uid: 'office-ui-fabric-react!IComboBox#dismissMenu:member'
-    summary: If there is a menu open this will dismiss the menu
-    name: dismissMenu
     fullName: dismissMenu
-    langs:
-      - typeScript
-    type: property
+    summary: If there is a menu open this will dismiss the menu
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'dismissMenu: () => void;'
       return:
-        type:
-          - () => void
-  - uid: 'office-ui-fabric-react!IComboBox#focus:member(1)'
-    summary: Sets focus to the input in the comboBox
-    name: 'focus(shouldOpenOnFocus, useFocusAsync)'
-    fullName: 'focus(shouldOpenOnFocus, useFocusAsync)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'focus(shouldOpenOnFocus?: boolean, useFocusAsync?: boolean): boolean;'
-      return:
-        type:
-          - boolean
-        description: 'True if focus could be set, false if no operation was taken.'
-      parameters:
-        - id: shouldOpenOnFocus
-          description: Determines if we should open the ComboBox menu when the input gets focus
-          type:
-            - boolean
-        - id: useFocusAsync
-          description: Determines if we should focus the input asynchronously
-          type:
-            - boolean
-  - uid: 'office-ui-fabric-react!IComboBox#selectedOptions:member'
-    summary: All selected options
-    name: selectedOptions
+        type: () =&gt; void
+  - name: selectedOptions
+    uid: 'office-ui-fabric-react!IComboBox#selectedOptions:member'
+    package: office-ui-fabric-react!
     fullName: selectedOptions
-    langs:
-      - typeScript
-    type: property
+    summary: All selected options
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly selectedOptions: IComboBoxOption[];'
       return:
-        type:
-          - 'IComboBoxOption[]'
+        type: 'IComboBoxOption[]'
+methods:
+  - name: 'focus(shouldOpenOnFocus, useFocusAsync)'
+    uid: 'office-ui-fabric-react!IComboBox#focus:member(1)'
+    package: office-ui-fabric-react!
+    fullName: 'focus(shouldOpenOnFocus, useFocusAsync)'
+    summary: Sets focus to the input in the comboBox
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'focus(shouldOpenOnFocus?: boolean, useFocusAsync?: boolean): boolean;'
+      parameters:
+        - id: shouldOpenOnFocus
+          description: >-
+            Determines if we should open the ComboBox menu when the input gets
+            focus
+          type: boolean
+        - id: useFocusAsync
+          description: Determines if we should focus the input asynchronously
+          type: boolean
+      return:
+        type: boolean
+        description: 'True if focus could be set, false if no operation was taken.'

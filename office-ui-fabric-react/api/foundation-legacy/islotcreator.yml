@@ -1,31 +1,23 @@
-### YamlMime:UniversalReference
-items:
-  - uid: '@fluentui/foundation-legacy!ISlotCreator:interface'
-    summary: Signature of components that have component factories.
-    name: ISlotCreator
-    fullName: ISlotCreator
-    langs:
-      - typeScript
-    type: interface
-    syntax:
-      typeParameters:
-        - id: TProps
-          type:
-            - ValidProps
-        - id: TShorthandProp
-          type:
-            - ValidShorthand
+### YamlMime:TSType
+name: ISlotCreator
+uid: '@fluentui/foundation-legacy!ISlotCreator:interface'
+package: '@fluentui/foundation-legacy!'
+fullName: ISlotCreator
+summary: Signature of components that have component factories.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: create
+    uid: '@fluentui/foundation-legacy!ISlotCreator#create:member'
     package: '@fluentui/foundation-legacy!'
-    children:
-      - '@fluentui/foundation-legacy!ISlotCreator#create:member'
-  - uid: '@fluentui/foundation-legacy!ISlotCreator#create:member'
-    name: create
     fullName: create
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'create?: ISlotFactory<TProps, TShorthandProp>;'
       return:
-        type:
-          - 'ISlotFactory<TProps, TShorthandProp>'
+        type: 'ISlotFactory&lt;TProps, TShorthandProp&gt;'

@@ -1,109 +1,110 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'office-ui-fabric-react!IBreadcrumbItem:interface'
-    name: IBreadcrumbItem
-    fullName: IBreadcrumbItem
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: IBreadcrumbItem
+uid: 'office-ui-fabric-react!IBreadcrumbItem:interface'
+package: office-ui-fabric-react!
+fullName: IBreadcrumbItem
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: as
+    uid: 'office-ui-fabric-react!IBreadcrumbItem#as:member'
     package: office-ui-fabric-react!
-    children:
-      - 'office-ui-fabric-react!IBreadcrumbItem#as:member'
-      - 'office-ui-fabric-react!IBreadcrumbItem#href:member'
-      - 'office-ui-fabric-react!IBreadcrumbItem#isCurrentItem:member'
-      - 'office-ui-fabric-react!IBreadcrumbItem#key:member'
-      - 'office-ui-fabric-react!IBreadcrumbItem#onClick:member'
-      - 'office-ui-fabric-react!IBreadcrumbItem#role:member'
-      - 'office-ui-fabric-react!IBreadcrumbItem#text:member'
-  - uid: 'office-ui-fabric-react!IBreadcrumbItem#as:member'
+    fullName: as
     summary: >-
       Optional prop to render the item as a heading of your choice.
 
 
-      You can also use this to force items to render as links instead of buttons (by default, any item with a `href`
-      renders as a link, and any item without a `href` renders as a button). This is not generally recommended because
-      it may prevent activating the link using the keyboard.
-    name: as
-    fullName: as
-    langs:
-      - typeScript
-    type: property
+      You can also use this to force items to render as links instead of buttons
+      (by default, any item with a `href` renders as a link, and any item
+      without a `href` renders as a button). This is not generally recommended
+      because it may prevent activating the link using the keyboard.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'as?: ''h1'' | ''h2'' | ''h3'' | ''h4'' | ''h5'' | ''h6'' | ''a'';'
       return:
-        type:
-          - '''h1'' | ''h2'' | ''h3'' | ''h4'' | ''h5'' | ''h6'' | ''a'''
-  - uid: 'office-ui-fabric-react!IBreadcrumbItem#href:member'
-    summary: Url to navigate to when this breadcrumb item is clicked.
-    name: href
+        type: '''h1'' | ''h2'' | ''h3'' | ''h4'' | ''h5'' | ''h6'' | ''a'''
+  - name: href
+    uid: 'office-ui-fabric-react!IBreadcrumbItem#href:member'
+    package: office-ui-fabric-react!
     fullName: href
-    langs:
-      - typeScript
-    type: property
+    summary: Url to navigate to when this breadcrumb item is clicked.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'href?: string;'
       return:
-        type:
-          - string
-  - uid: 'office-ui-fabric-react!IBreadcrumbItem#isCurrentItem:member'
-    summary: >-
-      Whether this is the breadcrumb item the user is currently navigated to. If true, `aria-current="page"` will be
-      applied to this breadcrumb item.
-    name: isCurrentItem
+        type: string
+  - name: isCurrentItem
+    uid: 'office-ui-fabric-react!IBreadcrumbItem#isCurrentItem:member'
+    package: office-ui-fabric-react!
     fullName: isCurrentItem
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Whether this is the breadcrumb item the user is currently navigated to. If
+      true, `aria-current="page"` will be applied to this breadcrumb item.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'isCurrentItem?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'office-ui-fabric-react!IBreadcrumbItem#key:member'
-    summary: Arbitrary unique string associated with the breadcrumb item.
-    name: key
+        type: boolean
+  - name: key
+    uid: 'office-ui-fabric-react!IBreadcrumbItem#key:member'
+    package: office-ui-fabric-react!
     fullName: key
-    langs:
-      - typeScript
-    type: property
+    summary: Arbitrary unique string associated with the breadcrumb item.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'key: string;'
       return:
-        type:
-          - string
-  - uid: 'office-ui-fabric-react!IBreadcrumbItem#onClick:member'
-    summary: Callback issued when the breadcrumb item is selected.
-    name: onClick
+        type: string
+  - name: onClick
+    uid: 'office-ui-fabric-react!IBreadcrumbItem#onClick:member'
+    package: office-ui-fabric-react!
     fullName: onClick
-    langs:
-      - typeScript
-    type: property
+    summary: Callback issued when the breadcrumb item is selected.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'onClick?: (ev?: React.MouseEvent<HTMLElement>, item?: IBreadcrumbItem) => void;'
+      content: >-
+        onClick?: (ev?: React.MouseEvent<HTMLElement>, item?: IBreadcrumbItem)
+        => void;
       return:
-        type:
-          - '(ev?: React.MouseEvent<HTMLElement>, item?: IBreadcrumbItem) => void'
-  - uid: 'office-ui-fabric-react!IBreadcrumbItem#role:member'
-    summary: Optional role for the breadcrumb item (which renders as a button by default)
-    name: role
+        type: >-
+          (ev?: React.MouseEvent&lt;HTMLElement&gt;, item?: IBreadcrumbItem)
+          =&gt; void
+  - name: role
+    uid: 'office-ui-fabric-react!IBreadcrumbItem#role:member'
+    package: office-ui-fabric-react!
     fullName: role
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Optional role for the breadcrumb item (which renders as a button by
+      default)
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'role?: string;'
       return:
-        type:
-          - string
-  - uid: 'office-ui-fabric-react!IBreadcrumbItem#text:member'
-    summary: Text to display to the user for the breadcrumb item.
-    name: text
+        type: string
+  - name: text
+    uid: 'office-ui-fabric-react!IBreadcrumbItem#text:member'
+    package: office-ui-fabric-react!
     fullName: text
-    langs:
-      - typeScript
-    type: property
+    summary: Text to display to the user for the breadcrumb item.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'text: string;'
       return:
-        type:
-          - string
+        type: string

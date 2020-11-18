@@ -1,58 +1,59 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'office-ui-fabric-react!IDragDropHelper:interface'
-    summary: Helper for subscribing and unsubscribing to drag and drop events on an HTMLElement.
-    name: IDragDropHelper
-    fullName: IDragDropHelper
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: IDragDropHelper
+uid: 'office-ui-fabric-react!IDragDropHelper:interface'
+package: office-ui-fabric-react!
+fullName: IDragDropHelper
+summary: >-
+  Helper for subscribing and unsubscribing to drag and drop events on an
+  HTMLElement.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: dispose
+    uid: 'office-ui-fabric-react!IDragDropHelper#dispose:member'
     package: office-ui-fabric-react!
-    children:
-      - 'office-ui-fabric-react!IDragDropHelper#dispose:member'
-      - 'office-ui-fabric-react!IDragDropHelper#subscribe:member'
-      - 'office-ui-fabric-react!IDragDropHelper#unsubscribe:member'
-  - uid: 'office-ui-fabric-react!IDragDropHelper#dispose:member'
-    summary: Dispose of listeners bound to instance of helper.
-    name: dispose
     fullName: dispose
-    langs:
-      - typeScript
-    type: property
+    summary: Dispose of listeners bound to instance of helper.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'dispose: () => void;'
       return:
-        type:
-          - () => void
-  - uid: 'office-ui-fabric-react!IDragDropHelper#subscribe:member'
-    summary: Subscribe to events on a DOM node with drag and drop configuration.
-    name: subscribe
+        type: () =&gt; void
+  - name: subscribe
+    uid: 'office-ui-fabric-react!IDragDropHelper#subscribe:member'
+    package: office-ui-fabric-react!
     fullName: subscribe
-    langs:
-      - typeScript
-    type: property
+    summary: Subscribe to events on a DOM node with drag and drop configuration.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: |-
-        subscribe: (root: HTMLElement, events: EventGroup, options: IDragDropOptions) => {
+      content: >-
+        subscribe: (root: HTMLElement, events: EventGroup, options:
+        IDragDropOptions) => {
                 key: string;
                 dispose: () => void;
             };
       return:
-        type:
-          - |-
-            (root: HTMLElement, events: EventGroup, options: IDragDropOptions) => {
-                    key: string;
-                    dispose: () => void;
-                }
-  - uid: 'office-ui-fabric-react!IDragDropHelper#unsubscribe:member'
-    summary: Unsubscribe to events registered on a DOM node with key.
-    name: unsubscribe
+        type: >-
+          (root: HTMLElement, events: EventGroup, options: IDragDropOptions)
+          =&gt; {
+                  key: string;
+                  dispose: () =&gt; void;
+              }
+  - name: unsubscribe
+    uid: 'office-ui-fabric-react!IDragDropHelper#unsubscribe:member'
+    package: office-ui-fabric-react!
     fullName: unsubscribe
-    langs:
-      - typeScript
-    type: property
+    summary: Unsubscribe to events registered on a DOM node with key.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'unsubscribe: (root: HTMLElement, key: string) => void;'
       return:
-        type:
-          - '(root: HTMLElement, key: string) => void'
+        type: '(root: HTMLElement, key: string) =&gt; void'

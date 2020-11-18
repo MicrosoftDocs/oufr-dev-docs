@@ -1,28 +1,26 @@
-### YamlMime:UniversalReference
-items:
-  - uid: '@fluentui/theme!Theme:interface'
-    summary: A prepared (fully expanded) theme object.
-    name: Theme
-    fullName: Theme
-    langs:
-      - typeScript
-    type: interface
-    extends:
-      - '@fluentui/theme!IScheme:interface'
+### YamlMime:TSType
+name: Theme
+uid: '@fluentui/theme!Theme:interface'
+package: '@fluentui/theme!'
+fullName: Theme
+summary: A prepared (fully expanded) theme object.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: components
+    uid: '@fluentui/theme!Theme#components:member'
     package: '@fluentui/theme!'
-    children:
-      - '@fluentui/theme!Theme#components:member'
-  - uid: '@fluentui/theme!Theme#components:member'
-    summary: >-
-      Component-level styles and token set. This is still in an experimental phase and is only applied by
-      `ThemeProvider`<!-- -->.
-    name: components
     fullName: components
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Component-level styles and token set. This is still in an experimental
+      phase and is only applied by `ThemeProvider`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'components?: ComponentsStyles;'
       return:
-        type:
-          - ComponentsStyles
+        type: ComponentsStyles
+extends: '<xref uid="@fluentui/theme!IScheme:interface" />'

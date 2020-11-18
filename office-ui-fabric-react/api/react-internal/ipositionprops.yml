@@ -1,121 +1,117 @@
-### YamlMime:UniversalReference
-items:
-  - uid: '@fluentui/react-internal!IPositionProps:interface'
-    name: IPositionProps
-    fullName: IPositionProps
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: IPositionProps
+uid: '@fluentui/react-internal!IPositionProps:interface'
+package: '@fluentui/react-internal!'
+fullName: IPositionProps
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: alignTargetEdge
+    uid: '@fluentui/react-internal!IPositionProps#alignTargetEdge:member'
     package: '@fluentui/react-internal!'
-    children:
-      - '@fluentui/react-internal!IPositionProps#alignTargetEdge:member'
-      - '@fluentui/react-internal!IPositionProps#bounds:member'
-      - '@fluentui/react-internal!IPositionProps#coverTarget:member'
-      - '@fluentui/react-internal!IPositionProps#directionalHint:member'
-      - '@fluentui/react-internal!IPositionProps#directionalHintFixed:member'
-      - '@fluentui/react-internal!IPositionProps#directionalHintForRTL:member'
-      - '@fluentui/react-internal!IPositionProps#gapSpace:member'
-      - '@fluentui/react-internal!IPositionProps#target:member'
-  - uid: '@fluentui/react-internal!IPositionProps#alignTargetEdge:member'
-    summary: >-
-      If true the positioning logic will prefer flipping edges over nudging the rectangle to fit within bounds, thus
-      making sure the element align perfectly with target.
-    name: alignTargetEdge
     fullName: alignTargetEdge
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      If true the positioning logic will prefer flipping edges over nudging the
+      rectangle to fit within bounds, thus making sure the element align
+      perfectly with target.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'alignTargetEdge?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: '@fluentui/react-internal!IPositionProps#bounds:member'
-    summary: The bounding rectangle for which the contextual menu can appear in.
-    name: bounds
+        type: boolean
+  - name: bounds
+    uid: '@fluentui/react-internal!IPositionProps#bounds:member'
+    package: '@fluentui/react-internal!'
     fullName: bounds
-    langs:
-      - typeScript
-    type: property
+    summary: The bounding rectangle for which the contextual menu can appear in.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'bounds?: IRectangle;'
       return:
-        type:
-          - '@fluentui/utilities!IRectangle:interface'
-  - uid: '@fluentui/react-internal!IPositionProps#coverTarget:member'
-    summary: >-
-      If true the position returned will have the menu element cover the target. If false then it will position next to
-      the target;
-    name: coverTarget
+        type: '<xref uid="@fluentui/utilities!IRectangle:interface" />'
+  - name: coverTarget
+    uid: '@fluentui/react-internal!IPositionProps#coverTarget:member'
+    package: '@fluentui/react-internal!'
     fullName: coverTarget
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      If true the position returned will have the menu element cover the target.
+      If false then it will position next to the target;
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'coverTarget?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: '@fluentui/react-internal!IPositionProps#directionalHint:member'
-    summary: how the element should be positioned
-    name: directionalHint
+        type: boolean
+  - name: directionalHint
+    uid: '@fluentui/react-internal!IPositionProps#directionalHint:member'
+    package: '@fluentui/react-internal!'
     fullName: directionalHint
-    langs:
-      - typeScript
-    type: property
+    summary: how the element should be positioned
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'directionalHint?: DirectionalHint;'
       return:
-        type:
-          - DirectionalHint
-  - uid: '@fluentui/react-internal!IPositionProps#directionalHintFixed:member'
-    summary: >-
-      If true the position will not change edges in an attempt to fit the rectangle within bounds. It will still attempt
-      to align it to whatever bounds are given.
-    name: directionalHintFixed
+        type: DirectionalHint
+  - name: directionalHintFixed
+    uid: '@fluentui/react-internal!IPositionProps#directionalHintFixed:member'
+    package: '@fluentui/react-internal!'
     fullName: directionalHintFixed
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      If true the position will not change edges in an attempt to fit the
+      rectangle within bounds. It will still attempt to align it to whatever
+      bounds are given.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'directionalHintFixed?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: '@fluentui/react-internal!IPositionProps#directionalHintForRTL:member'
-    summary: >-
-      How the element should be positioned in RTL layouts. If not specified, a mirror of `directionalHint` will be used
-      instead
-    name: directionalHintForRTL
+        type: boolean
+  - name: directionalHintForRTL
+    uid: '@fluentui/react-internal!IPositionProps#directionalHintForRTL:member'
+    package: '@fluentui/react-internal!'
     fullName: directionalHintForRTL
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      How the element should be positioned in RTL layouts. If not specified, a
+      mirror of `directionalHint` will be used instead
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'directionalHintForRTL?: DirectionalHint;'
       return:
-        type:
-          - DirectionalHint
-  - uid: '@fluentui/react-internal!IPositionProps#gapSpace:member'
-    summary: The gap between the callout and the target
-    name: gapSpace
+        type: DirectionalHint
+  - name: gapSpace
+    uid: '@fluentui/react-internal!IPositionProps#gapSpace:member'
+    package: '@fluentui/react-internal!'
     fullName: gapSpace
-    langs:
-      - typeScript
-    type: property
+    summary: The gap between the callout and the target
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'gapSpace?: number;'
       return:
-        type:
-          - number
-  - uid: '@fluentui/react-internal!IPositionProps#target:member'
-    name: target
+        type: number
+  - name: target
+    uid: '@fluentui/react-internal!IPositionProps#target:member'
+    package: '@fluentui/react-internal!'
     fullName: target
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'target?: Element | MouseEvent | Point;'
       return:
-        type:
-          - Element | MouseEvent | Point
+        type: Element | MouseEvent | Point

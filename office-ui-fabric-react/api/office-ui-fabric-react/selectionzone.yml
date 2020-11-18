@@ -1,84 +1,37 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'office-ui-fabric-react!SelectionZone:class'
-    name: SelectionZone
-    fullName: SelectionZone
-    langs:
-      - typeScript
-    type: class
-    extends:
-      - 'React.Component<ISelectionZoneProps, ISelectionZoneState> '
+### YamlMime:TSType
+name: SelectionZone
+uid: 'office-ui-fabric-react!SelectionZone:class'
+package: office-ui-fabric-react!
+fullName: SelectionZone
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: (constructor)(props)
+    uid: 'office-ui-fabric-react!SelectionZone:constructor(1)'
     package: office-ui-fabric-react!
-    children:
-      - 'office-ui-fabric-react!SelectionZone:constructor(1)'
-      - 'office-ui-fabric-react!SelectionZone#componentDidMount:member(1)'
-      - 'office-ui-fabric-react!SelectionZone#componentDidUpdate:member(1)'
-      - 'office-ui-fabric-react!SelectionZone#componentWillUnmount:member(1)'
-      - 'office-ui-fabric-react!SelectionZone.defaultProps:member'
-      - 'office-ui-fabric-react!SelectionZone.getDerivedStateFromProps:member(1)'
-      - 'office-ui-fabric-react!SelectionZone#ignoreNextFocus:member'
-      - 'office-ui-fabric-react!SelectionZone#render:member(1)'
-  - uid: 'office-ui-fabric-react!SelectionZone:constructor(1)'
-    summary: Constructs a new instance of the `SelectionZone` class
-    name: (constructor)(props)
     fullName: (constructor)(props)
-    langs:
-      - typeScript
-    type: constructor
+    summary: Constructs a new instance of the `SelectionZone` class
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'constructor(props: ISelectionZoneProps);'
       parameters:
         - id: props
           description: ''
-          type:
-            - ISelectionZoneProps
-  - uid: 'office-ui-fabric-react!SelectionZone#componentDidMount:member(1)'
-    name: componentDidMount()
-    fullName: componentDidMount()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'componentDidMount(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'office-ui-fabric-react!SelectionZone#componentDidUpdate:member(1)'
-    name: componentDidUpdate(previousProps)
-    fullName: componentDidUpdate(previousProps)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'componentDidUpdate(previousProps: ISelectionZoneProps): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: previousProps
-          description: ''
-          type:
-            - ISelectionZoneProps
-  - uid: 'office-ui-fabric-react!SelectionZone#componentWillUnmount:member(1)'
-    name: componentWillUnmount()
-    fullName: componentWillUnmount()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'componentWillUnmount(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'office-ui-fabric-react!SelectionZone.defaultProps:member'
-    name: defaultProps
+          type: ISelectionZoneProps
+properties:
+  - name: defaultProps
+    uid: 'office-ui-fabric-react!SelectionZone.defaultProps:member'
+    package: office-ui-fabric-react!
     fullName: defaultProps
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: |-
         static defaultProps: {
@@ -86,60 +39,105 @@ items:
                 selectionMode: SelectionMode;
             };
       return:
-        type:
-          - |-
-            {
-                    isSelectedOnFocus: boolean;
-                    selectionMode: SelectionMode;
-                }
-  - uid: 'office-ui-fabric-react!SelectionZone.getDerivedStateFromProps:member(1)'
-    name: 'getDerivedStateFromProps(nextProps, prevState)'
-    fullName: 'getDerivedStateFromProps(nextProps, prevState)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: >-
-        static getDerivedStateFromProps(nextProps: ISelectionZoneProps, prevState: ISelectionZoneState):
-        ISelectionZoneState;
-      return:
-        type:
-          - ISelectionZoneState
-        description: ''
-      parameters:
-        - id: nextProps
-          description: ''
-          type:
-            - ISelectionZoneProps
-        - id: prevState
-          description: ''
-          type:
-            - ISelectionZoneState
-  - uid: 'office-ui-fabric-react!SelectionZone#ignoreNextFocus:member'
-    summary: >-
-      In some cases, the consuming scenario requires to set focus on a row without having SelectionZone react to the
-      event. Note that focus events in IE &lt;<!-- -->= 11 will occur asynchronously after .focus() has been called on
-      an element, so we need a flag to store the idea that we will bypass the "next" focus event that occurs. This
-      method does that.
-    name: ignoreNextFocus
+        type: |-
+          {
+                  isSelectedOnFocus: boolean;
+                  selectionMode: SelectionMode;
+              }
+  - name: ignoreNextFocus
+    uid: 'office-ui-fabric-react!SelectionZone#ignoreNextFocus:member'
+    package: office-ui-fabric-react!
     fullName: ignoreNextFocus
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      In some cases, the consuming scenario requires to set focus on a row
+      without having SelectionZone react to the event. Note that focus events in
+      IE &lt;<!-- -->= 11 will occur asynchronously after .focus() has been
+      called on an element, so we need a flag to store the idea that we will
+      bypass the "next" focus event that occurs. This method does that.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'ignoreNextFocus: () => void;'
       return:
-        type:
-          - () => void
-  - uid: 'office-ui-fabric-react!SelectionZone#render:member(1)'
-    name: render()
+        type: () =&gt; void
+methods:
+  - name: componentDidMount()
+    uid: 'office-ui-fabric-react!SelectionZone#componentDidMount:member(1)'
+    package: office-ui-fabric-react!
+    fullName: componentDidMount()
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'componentDidMount(): void;'
+      return:
+        type: void
+        description: ''
+  - name: componentDidUpdate(previousProps)
+    uid: 'office-ui-fabric-react!SelectionZone#componentDidUpdate:member(1)'
+    package: office-ui-fabric-react!
+    fullName: componentDidUpdate(previousProps)
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'componentDidUpdate(previousProps: ISelectionZoneProps): void;'
+      parameters:
+        - id: previousProps
+          description: ''
+          type: ISelectionZoneProps
+      return:
+        type: void
+        description: ''
+  - name: componentWillUnmount()
+    uid: 'office-ui-fabric-react!SelectionZone#componentWillUnmount:member(1)'
+    package: office-ui-fabric-react!
+    fullName: componentWillUnmount()
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'componentWillUnmount(): void;'
+      return:
+        type: void
+        description: ''
+  - name: 'getDerivedStateFromProps(nextProps, prevState)'
+    uid: 'office-ui-fabric-react!SelectionZone.getDerivedStateFromProps:member(1)'
+    package: office-ui-fabric-react!
+    fullName: 'getDerivedStateFromProps(nextProps, prevState)'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        static getDerivedStateFromProps(nextProps: ISelectionZoneProps,
+        prevState: ISelectionZoneState): ISelectionZoneState;
+      parameters:
+        - id: nextProps
+          description: ''
+          type: ISelectionZoneProps
+        - id: prevState
+          description: ''
+          type: ISelectionZoneState
+      return:
+        type: ISelectionZoneState
+        description: ''
+  - name: render()
+    uid: 'office-ui-fabric-react!SelectionZone#render:member(1)'
+    package: office-ui-fabric-react!
     fullName: render()
-    langs:
-      - typeScript
-    type: method
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'render(): JSX.Element;'
       return:
-        type:
-          - JSX.Element
+        type: JSX.Element
         description: ''
+extends: 'React.Component&lt;ISelectionZoneProps, ISelectionZoneState&gt; '

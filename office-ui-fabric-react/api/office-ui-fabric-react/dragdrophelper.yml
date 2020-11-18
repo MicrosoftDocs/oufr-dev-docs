@@ -1,96 +1,91 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'office-ui-fabric-react!DragDropHelper:class'
-    name: DragDropHelper
-    fullName: DragDropHelper
-    langs:
-      - typeScript
-    type: class
-    implements:
-      - 'IDragDropHelper '
+### YamlMime:TSType
+name: DragDropHelper
+uid: 'office-ui-fabric-react!DragDropHelper:class'
+package: office-ui-fabric-react!
+fullName: DragDropHelper
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: (constructor)(params)
+    uid: 'office-ui-fabric-react!DragDropHelper:constructor(1)'
     package: office-ui-fabric-react!
-    children:
-      - 'office-ui-fabric-react!DragDropHelper:constructor(1)'
-      - 'office-ui-fabric-react!DragDropHelper#dispose:member(1)'
-      - 'office-ui-fabric-react!DragDropHelper#subscribe:member(1)'
-      - 'office-ui-fabric-react!DragDropHelper#unsubscribe:member(1)'
-  - uid: 'office-ui-fabric-react!DragDropHelper:constructor(1)'
-    summary: Constructs a new instance of the `DragDropHelper` class
-    name: (constructor)(params)
     fullName: (constructor)(params)
-    langs:
-      - typeScript
-    type: constructor
+    summary: Constructs a new instance of the `DragDropHelper` class
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'constructor(params: IDragDropHelperParams);'
       parameters:
         - id: params
           description: ''
-          type:
-            - IDragDropHelperParams
-  - uid: 'office-ui-fabric-react!DragDropHelper#dispose:member(1)'
-    name: dispose()
+          type: IDragDropHelperParams
+methods:
+  - name: dispose()
+    uid: 'office-ui-fabric-react!DragDropHelper#dispose:member(1)'
+    package: office-ui-fabric-react!
     fullName: dispose()
-    langs:
-      - typeScript
-    type: method
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'dispose(): void;'
       return:
-        type:
-          - void
+        type: void
         description: ''
-  - uid: 'office-ui-fabric-react!DragDropHelper#subscribe:member(1)'
-    name: 'subscribe(root, events, dragDropOptions)'
+  - name: 'subscribe(root, events, dragDropOptions)'
+    uid: 'office-ui-fabric-react!DragDropHelper#subscribe:member(1)'
+    package: office-ui-fabric-react!
     fullName: 'subscribe(root, events, dragDropOptions)'
-    langs:
-      - typeScript
-    type: method
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: |-
-        subscribe(root: HTMLElement, events: EventGroup, dragDropOptions: IDragDropOptions): {
+      content: >-
+        subscribe(root: HTMLElement, events: EventGroup, dragDropOptions:
+        IDragDropOptions): {
                 key: string;
                 dispose(): void;
             };
-      return:
-        type:
-          - |-
-            {
-                    key: string;
-                    dispose(): void;
-                }
-        description: ''
       parameters:
         - id: root
           description: ''
-          type:
-            - HTMLElement
+          type: HTMLElement
         - id: events
           description: ''
-          type:
-            - '@fluentui/utilities!EventGroup:class'
+          type: '<xref uid="@fluentui/utilities!EventGroup:class" />'
         - id: dragDropOptions
           description: ''
-          type:
-            - IDragDropOptions
-  - uid: 'office-ui-fabric-react!DragDropHelper#unsubscribe:member(1)'
-    name: 'unsubscribe(root, key)'
+          type: IDragDropOptions
+      return:
+        type: |-
+          {
+                  key: string;
+                  dispose(): void;
+              }
+        description: ''
+  - name: 'unsubscribe(root, key)'
+    uid: 'office-ui-fabric-react!DragDropHelper#unsubscribe:member(1)'
+    package: office-ui-fabric-react!
     fullName: 'unsubscribe(root, key)'
-    langs:
-      - typeScript
-    type: method
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'unsubscribe(root: HTMLElement, key: string): void;'
-      return:
-        type:
-          - void
-        description: ''
       parameters:
         - id: root
           description: ''
-          type:
-            - HTMLElement
+          type: HTMLElement
         - id: key
           description: ''
-          type:
-            - string
+          type: string
+      return:
+        type: void
+        description: ''

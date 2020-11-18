@@ -1,155 +1,150 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'office-ui-fabric-react!ILayerProps:interface'
-    name: ILayerProps
-    fullName: ILayerProps
-    langs:
-      - typeScript
-    type: interface
-    extends:
-      - 'React.HTMLAttributes<HTMLDivElement | LayerBase> '
+### YamlMime:TSType
+name: ILayerProps
+uid: 'office-ui-fabric-react!ILayerProps:interface'
+package: office-ui-fabric-react!
+fullName: ILayerProps
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: className
+    uid: 'office-ui-fabric-react!ILayerProps#className:member'
     package: office-ui-fabric-react!
-    children:
-      - 'office-ui-fabric-react!ILayerProps#className:member'
-      - 'office-ui-fabric-react!ILayerProps#componentRef:member'
-      - 'office-ui-fabric-react!ILayerProps#eventBubblingEnabled:member'
-      - 'office-ui-fabric-react!ILayerProps#hostId:member'
-      - 'office-ui-fabric-react!ILayerProps#insertFirst:member'
-      - 'office-ui-fabric-react!ILayerProps#onLayerDidMount:member'
-      - 'office-ui-fabric-react!ILayerProps#onLayerMounted:member'
-      - 'office-ui-fabric-react!ILayerProps#onLayerWillUnmount:member'
-      - 'office-ui-fabric-react!ILayerProps#styles:member'
-      - 'office-ui-fabric-react!ILayerProps#theme:member'
-  - uid: 'office-ui-fabric-react!ILayerProps#className:member'
-    summary: Additional css class to apply to the Layer
-    name: className
     fullName: className
-    langs:
-      - typeScript
-    type: property
+    summary: Additional css class to apply to the Layer
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'className?: string;'
       return:
-        type:
-          - string
-  - uid: 'office-ui-fabric-react!ILayerProps#componentRef:member'
-    summary: >-
-      Optional callback to access the ILayer interface. Use this instead of ref for accessing the public methods and
-      properties of the component.
-    name: componentRef
+        type: string
+  - name: componentRef
+    uid: 'office-ui-fabric-react!ILayerProps#componentRef:member'
+    package: office-ui-fabric-react!
     fullName: componentRef
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Optional callback to access the ILayer interface. Use this instead of ref
+      for accessing the public methods and properties of the component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'componentRef?: IRefObject<ILayer>;'
       return:
-        type:
-          - IRefObject<ILayer>
-  - uid: 'office-ui-fabric-react!ILayerProps#eventBubblingEnabled:member'
-    summary: >-
-      When enabled, Layer allows events to bubble up from Layer content. Traditionally Layer has not had this behavior.
-      This prop preserves backwards compatibility by default while allowing users to opt in to the new event bubbling
-      functionality.
-    name: eventBubblingEnabled
+        type: IRefObject&lt;ILayer&gt;
+  - name: eventBubblingEnabled
+    uid: 'office-ui-fabric-react!ILayerProps#eventBubblingEnabled:member'
+    package: office-ui-fabric-react!
     fullName: eventBubblingEnabled
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      When enabled, Layer allows events to bubble up from Layer content.
+      Traditionally Layer has not had this behavior. This prop preserves
+      backwards compatibility by default while allowing users to opt in to the
+      new event bubbling functionality.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'eventBubblingEnabled?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'office-ui-fabric-react!ILayerProps#hostId:member'
-    summary: >-
-      The optional id property provided on a LayerHost that this Layer should render within. The LayerHost does not need
-      to be immediately available but once has been rendered, and if missing, we'll avoid trying to render the Layer
-      content until the host is available. If an id is not provided, we will render the Layer content in a fixed
-      position element rendered at the end of the document.
-    name: hostId
+        type: boolean
+  - name: hostId
+    uid: 'office-ui-fabric-react!ILayerProps#hostId:member'
+    package: office-ui-fabric-react!
     fullName: hostId
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The optional id property provided on a LayerHost that this Layer should
+      render within. The LayerHost does not need to be immediately available but
+      once has been rendered, and if missing, we'll avoid trying to render the
+      Layer content until the host is available. If an id is not provided, we
+      will render the Layer content in a fixed position element rendered at the
+      end of the document.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'hostId?: string;'
       return:
-        type:
-          - string
-  - uid: 'office-ui-fabric-react!ILayerProps#insertFirst:member'
-    summary: >-
-      Whether the layer should be added as the first child of the host. If true, the layer will be inserted as the first
-      child of the host By default, the layer will be appended at the end to the host
-    name: insertFirst
+        type: string
+  - name: insertFirst
+    uid: 'office-ui-fabric-react!ILayerProps#insertFirst:member'
+    package: office-ui-fabric-react!
     fullName: insertFirst
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Whether the layer should be added as the first child of the host. If true,
+      the layer will be inserted as the first child of the host By default, the
+      layer will be appended at the end to the host
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'insertFirst?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'office-ui-fabric-react!ILayerProps#onLayerDidMount:member'
-    summary: Callback for when the layer is mounted.
-    name: onLayerDidMount
+        type: boolean
+  - name: onLayerDidMount
+    uid: 'office-ui-fabric-react!ILayerProps#onLayerDidMount:member'
+    package: office-ui-fabric-react!
     fullName: onLayerDidMount
-    langs:
-      - typeScript
-    type: property
+    summary: Callback for when the layer is mounted.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'onLayerDidMount?: () => void;'
       return:
-        type:
-          - () => void
-  - uid: 'office-ui-fabric-react!ILayerProps#onLayerMounted:member'
-    summary: Callback for when the layer is mounted.
-    deprecated:
-      content: Use onLayerDidMount.
-    name: onLayerMounted
+        type: () =&gt; void
+  - name: onLayerMounted
+    uid: 'office-ui-fabric-react!ILayerProps#onLayerMounted:member'
+    package: office-ui-fabric-react!
     fullName: onLayerMounted
-    langs:
-      - typeScript
-    type: property
+    summary: Callback for when the layer is mounted.
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Use onLayerDidMount.
     syntax:
       content: 'onLayerMounted?: () => void;'
       return:
-        type:
-          - () => void
-  - uid: 'office-ui-fabric-react!ILayerProps#onLayerWillUnmount:member'
-    summary: Callback for when the layer is unmounted.
-    name: onLayerWillUnmount
+        type: () =&gt; void
+  - name: onLayerWillUnmount
+    uid: 'office-ui-fabric-react!ILayerProps#onLayerWillUnmount:member'
+    package: office-ui-fabric-react!
     fullName: onLayerWillUnmount
-    langs:
-      - typeScript
-    type: property
+    summary: Callback for when the layer is unmounted.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'onLayerWillUnmount?: () => void;'
       return:
-        type:
-          - () => void
-  - uid: 'office-ui-fabric-react!ILayerProps#styles:member'
-    summary: Call to provide customized styling that will layer on top of the variant rules
-    name: styles
+        type: () =&gt; void
+  - name: styles
+    uid: 'office-ui-fabric-react!ILayerProps#styles:member'
+    package: office-ui-fabric-react!
     fullName: styles
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Call to provide customized styling that will layer on top of the variant
+      rules
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'styles?: IStyleFunctionOrObject<ILayerStyleProps, ILayerStyles>;'
       return:
-        type:
-          - 'IStyleFunctionOrObject<ILayerStyleProps, ILayerStyles>'
-  - uid: 'office-ui-fabric-react!ILayerProps#theme:member'
-    summary: Theme provided by HOC.
-    name: theme
+        type: 'IStyleFunctionOrObject&lt;ILayerStyleProps, ILayerStyles&gt;'
+  - name: theme
+    uid: 'office-ui-fabric-react!ILayerProps#theme:member'
+    package: office-ui-fabric-react!
     fullName: theme
-    langs:
-      - typeScript
-    type: property
+    summary: Theme provided by HOC.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'theme?: ITheme;'
       return:
-        type:
-          - '@fluentui/theme!ITheme:interface'
+        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
+extends: 'React.HTMLAttributes&lt;HTMLDivElement | LayerBase&gt; '

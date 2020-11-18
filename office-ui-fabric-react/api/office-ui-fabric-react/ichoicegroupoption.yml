@@ -1,114 +1,100 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'office-ui-fabric-react!IChoiceGroupOption:interface'
-    name: IChoiceGroupOption
-    fullName: IChoiceGroupOption
-    langs:
-      - typeScript
-    type: interface
-    extends:
-      - 'React.InputHTMLAttributes<HTMLElement | HTMLInputElement> '
+### YamlMime:TSType
+name: IChoiceGroupOption
+uid: 'office-ui-fabric-react!IChoiceGroupOption:interface'
+package: office-ui-fabric-react!
+fullName: IChoiceGroupOption
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: ariaLabel
+    uid: 'office-ui-fabric-react!IChoiceGroupOption#ariaLabel:member'
     package: office-ui-fabric-react!
-    children:
-      - 'office-ui-fabric-react!IChoiceGroupOption#ariaLabel:member'
-      - 'office-ui-fabric-react!IChoiceGroupOption#checked:member'
-      - 'office-ui-fabric-react!IChoiceGroupOption#disabled:member'
-      - 'office-ui-fabric-react!IChoiceGroupOption#iconProps:member'
-      - 'office-ui-fabric-react!IChoiceGroupOption#id:member'
-      - 'office-ui-fabric-react!IChoiceGroupOption#imageAlt:member'
-      - 'office-ui-fabric-react!IChoiceGroupOption#imageSize:member'
-      - 'office-ui-fabric-react!IChoiceGroupOption#imageSrc:member'
-      - 'office-ui-fabric-react!IChoiceGroupOption#key:member'
-      - 'office-ui-fabric-react!IChoiceGroupOption#labelId:member'
-      - 'office-ui-fabric-react!IChoiceGroupOption#onRenderField:member'
-      - 'office-ui-fabric-react!IChoiceGroupOption#onRenderLabel:member'
-      - 'office-ui-fabric-react!IChoiceGroupOption#selectedImageSrc:member'
-      - 'office-ui-fabric-react!IChoiceGroupOption#styles:member'
-      - 'office-ui-fabric-react!IChoiceGroupOption#text:member'
-  - uid: 'office-ui-fabric-react!IChoiceGroupOption#ariaLabel:member'
-    summary: Aria label of the option for the benefit of screen reader users.
-    name: ariaLabel
     fullName: ariaLabel
-    langs:
-      - typeScript
-    type: property
+    summary: Aria label of the option for the benefit of screen reader users.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'ariaLabel?: string;'
       return:
-        type:
-          - string
-  - uid: 'office-ui-fabric-react!IChoiceGroupOption#checked:member'
-    summary: Whether or not the option is checked.
-    deprecated:
-      content: >-
-        Do not track checked state in the options themselves. Instead, either pass `defaultSelectedKey` to the
-        `ChoiceGroup` and allow it to track selection state internally (uncontrolled), or pass `selectedKey` and
-        `onChange` to the `ChoiceGroup` to track/update the selection state manually (controlled).
-    name: checked
+        type: string
+  - name: checked
+    uid: 'office-ui-fabric-react!IChoiceGroupOption#checked:member'
+    package: office-ui-fabric-react!
     fullName: checked
-    langs:
-      - typeScript
-    type: property
+    summary: Whether or not the option is checked.
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      Do not track checked state in the options themselves. Instead, either pass
+      `defaultSelectedKey` to the `ChoiceGroup` and allow it to track selection
+      state internally (uncontrolled), or pass `selectedKey` and `onChange` to
+      the `ChoiceGroup` to track/update the selection state manually
+      (controlled).
     syntax:
       content: 'checked?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'office-ui-fabric-react!IChoiceGroupOption#disabled:member'
-    summary: Whether or not the option is disabled.
-    name: disabled
+        type: boolean
+  - name: disabled
+    uid: 'office-ui-fabric-react!IChoiceGroupOption#disabled:member'
+    package: office-ui-fabric-react!
     fullName: disabled
-    langs:
-      - typeScript
-    type: property
+    summary: Whether or not the option is disabled.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'disabled?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'office-ui-fabric-react!IChoiceGroupOption#iconProps:member'
-    summary: Props for an icon to display with this option.
-    name: iconProps
+        type: boolean
+  - name: iconProps
+    uid: 'office-ui-fabric-react!IChoiceGroupOption#iconProps:member'
+    package: office-ui-fabric-react!
     fullName: iconProps
-    langs:
-      - typeScript
-    type: property
+    summary: Props for an icon to display with this option.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'iconProps?: IIconProps;'
       return:
-        type:
-          - IIconProps
-  - uid: 'office-ui-fabric-react!IChoiceGroupOption#id:member'
-    summary: ID used on the option's input element.
-    name: id
+        type: IIconProps
+  - name: id
+    uid: 'office-ui-fabric-react!IChoiceGroupOption#id:member'
+    package: office-ui-fabric-react!
     fullName: id
-    langs:
-      - typeScript
-    type: property
+    summary: ID used on the option's input element.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'id?: string;'
       return:
-        type:
-          - string
-  - uid: 'office-ui-fabric-react!IChoiceGroupOption#imageAlt:member'
-    summary: Alt text if the option is an image.  '' (empty string)
-    name: imageAlt
+        type: string
+  - name: imageAlt
+    uid: 'office-ui-fabric-react!IChoiceGroupOption#imageAlt:member'
+    package: office-ui-fabric-react!
     fullName: imageAlt
-    langs:
-      - typeScript
-    type: property
+    summary: Alt text if the option is an image.  '' (empty string)
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'imageAlt?: string;'
       return:
-        type:
-          - string
-  - uid: 'office-ui-fabric-react!IChoiceGroupOption#imageSize:member'
-    summary: The width and height of the image in px for choice field.
-    name: imageSize
+        type: string
+  - name: imageSize
+    uid: 'office-ui-fabric-react!IChoiceGroupOption#imageSize:member'
+    package: office-ui-fabric-react!
     fullName: imageSize
-    langs:
-      - typeScript
-    type: property
+    summary: The width and height of the image in px for choice field.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: |-
         imageSize?: {
@@ -116,105 +102,111 @@ items:
                 height: number;
             };
       return:
-        type:
-          - |-
-            {
-                    width: number;
-                    height: number;
-                }
-  - uid: 'office-ui-fabric-react!IChoiceGroupOption#imageSrc:member'
-    summary: Image to display with this option.
-    name: imageSrc
+        type: |-
+          {
+                  width: number;
+                  height: number;
+              }
+  - name: imageSrc
+    uid: 'office-ui-fabric-react!IChoiceGroupOption#imageSrc:member'
+    package: office-ui-fabric-react!
     fullName: imageSrc
-    langs:
-      - typeScript
-    type: property
+    summary: Image to display with this option.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'imageSrc?: string;'
       return:
-        type:
-          - string
-  - uid: 'office-ui-fabric-react!IChoiceGroupOption#key:member'
-    summary: A required key to uniquely identify the option.
-    name: key
+        type: string
+  - name: key
+    uid: 'office-ui-fabric-react!IChoiceGroupOption#key:member'
+    package: office-ui-fabric-react!
     fullName: key
-    langs:
-      - typeScript
-    type: property
+    summary: A required key to uniquely identify the option.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'key: string;'
       return:
-        type:
-          - string
-  - uid: 'office-ui-fabric-react!IChoiceGroupOption#labelId:member'
-    summary: ID used on the option's label.
-    name: labelId
+        type: string
+  - name: labelId
+    uid: 'office-ui-fabric-react!IChoiceGroupOption#labelId:member'
+    package: office-ui-fabric-react!
     fullName: labelId
-    langs:
-      - typeScript
-    type: property
+    summary: ID used on the option's label.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'labelId?: string;'
       return:
-        type:
-          - string
-  - uid: 'office-ui-fabric-react!IChoiceGroupOption#onRenderField:member'
-    summary: Used to customize option rendering.
-    name: onRenderField
+        type: string
+  - name: onRenderField
+    uid: 'office-ui-fabric-react!IChoiceGroupOption#onRenderField:member'
+    package: office-ui-fabric-react!
     fullName: onRenderField
-    langs:
-      - typeScript
-    type: property
+    summary: Used to customize option rendering.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'onRenderField?: IRenderFunction<IChoiceGroupOption>;'
       return:
-        type:
-          - IRenderFunction<IChoiceGroupOption>
-  - uid: 'office-ui-fabric-react!IChoiceGroupOption#onRenderLabel:member'
-    summary: Used to customize label rendering.
-    name: onRenderLabel
+        type: IRenderFunction&lt;IChoiceGroupOption&gt;
+  - name: onRenderLabel
+    uid: 'office-ui-fabric-react!IChoiceGroupOption#onRenderLabel:member'
+    package: office-ui-fabric-react!
     fullName: onRenderLabel
-    langs:
-      - typeScript
-    type: property
+    summary: Used to customize label rendering.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'onRenderLabel?: IRenderFunction<IChoiceGroupOption>;'
       return:
-        type:
-          - IRenderFunction<IChoiceGroupOption>
-  - uid: 'office-ui-fabric-react!IChoiceGroupOption#selectedImageSrc:member'
-    summary: The src of image for choice field which is selected.
-    name: selectedImageSrc
+        type: IRenderFunction&lt;IChoiceGroupOption&gt;
+  - name: selectedImageSrc
+    uid: 'office-ui-fabric-react!IChoiceGroupOption#selectedImageSrc:member'
+    package: office-ui-fabric-react!
     fullName: selectedImageSrc
-    langs:
-      - typeScript
-    type: property
+    summary: The src of image for choice field which is selected.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'selectedImageSrc?: string;'
       return:
-        type:
-          - string
-  - uid: 'office-ui-fabric-react!IChoiceGroupOption#styles:member'
-    summary: Call to provide customized styling that will layer on top of the variant rules.
-    name: styles
+        type: string
+  - name: styles
+    uid: 'office-ui-fabric-react!IChoiceGroupOption#styles:member'
+    package: office-ui-fabric-react!
     fullName: styles
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Call to provide customized styling that will layer on top of the variant
+      rules.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'styles?: IStyleFunctionOrObject<IChoiceGroupOptionStyleProps, IChoiceGroupOptionStyles>;'
+      content: >-
+        styles?: IStyleFunctionOrObject<IChoiceGroupOptionStyleProps,
+        IChoiceGroupOptionStyles>;
       return:
-        type:
-          - 'IStyleFunctionOrObject<IChoiceGroupOptionStyleProps, IChoiceGroupOptionStyles>'
-  - uid: 'office-ui-fabric-react!IChoiceGroupOption#text:member'
-    summary: The text string for the option.
-    name: text
+        type: >-
+          IStyleFunctionOrObject&lt;IChoiceGroupOptionStyleProps,
+          IChoiceGroupOptionStyles&gt;
+  - name: text
+    uid: 'office-ui-fabric-react!IChoiceGroupOption#text:member'
+    package: office-ui-fabric-react!
     fullName: text
-    langs:
-      - typeScript
-    type: property
+    summary: The text string for the option.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'text: string;'
       return:
-        type:
-          - string
+        type: string
+extends: 'React.InputHTMLAttributes&lt;HTMLElement | HTMLInputElement&gt; '
