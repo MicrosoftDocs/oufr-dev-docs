@@ -1,95 +1,72 @@
-### YamlMime:UniversalReference
-items:
-  - uid: '@fluentui/react!IGroupedListSectionProps:interface'
-    name: IGroupedListSectionProps
-    fullName: IGroupedListSectionProps
-    langs:
-      - typeScript
-    type: interface
-    extends:
-      - 'React.ClassAttributes<GroupedListSection> '
+### YamlMime:TSType
+name: IGroupedListSectionProps
+uid: '@fluentui/react!IGroupedListSectionProps:interface'
+package: '@fluentui/react!'
+fullName: IGroupedListSectionProps
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: compact
+    uid: '@fluentui/react!IGroupedListSectionProps#compact:member'
     package: '@fluentui/react!'
-    children:
-      - '@fluentui/react!IGroupedListSectionProps#compact:member'
-      - '@fluentui/react!IGroupedListSectionProps#componentRef:member'
-      - '@fluentui/react!IGroupedListSectionProps#dragDropEvents:member'
-      - '@fluentui/react!IGroupedListSectionProps#dragDropHelper:member'
-      - '@fluentui/react!IGroupedListSectionProps#eventsToRegister:member'
-      - '@fluentui/react!IGroupedListSectionProps#footerProps:member'
-      - '@fluentui/react!IGroupedListSectionProps#getGroupItemLimit:member'
-      - '@fluentui/react!IGroupedListSectionProps#group:member'
-      - '@fluentui/react!IGroupedListSectionProps#groupedListClassNames:member'
-      - '@fluentui/react!IGroupedListSectionProps#groupIndex:member'
-      - '@fluentui/react!IGroupedListSectionProps#groupNestingDepth:member'
-      - '@fluentui/react!IGroupedListSectionProps#groupProps:member'
-      - '@fluentui/react!IGroupedListSectionProps#groups:member'
-      - '@fluentui/react!IGroupedListSectionProps#headerProps:member'
-      - '@fluentui/react!IGroupedListSectionProps#items:member'
-      - '@fluentui/react!IGroupedListSectionProps#listProps:member'
-      - '@fluentui/react!IGroupedListSectionProps#onRenderCell:member'
-      - '@fluentui/react!IGroupedListSectionProps#onRenderGroupFooter:member'
-      - '@fluentui/react!IGroupedListSectionProps#onRenderGroupHeader:member'
-      - '@fluentui/react!IGroupedListSectionProps#onRenderGroupShowAll:member'
-      - '@fluentui/react!IGroupedListSectionProps#onShouldVirtualize:member'
-      - '@fluentui/react!IGroupedListSectionProps#selection:member'
-      - '@fluentui/react!IGroupedListSectionProps#selectionMode:member'
-      - '@fluentui/react!IGroupedListSectionProps#showAllProps:member'
-      - '@fluentui/react!IGroupedListSectionProps#viewport:member'
-  - uid: '@fluentui/react!IGroupedListSectionProps#compact:member'
-    summary: Whether to render in compact mode
-    name: compact
     fullName: compact
-    langs:
-      - typeScript
-    type: property
+    summary: Whether to render in compact mode
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'compact?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: '@fluentui/react!IGroupedListSectionProps#componentRef:member'
-    summary: Gets the component ref.
-    name: componentRef
+        type: boolean
+  - name: componentRef
+    uid: '@fluentui/react!IGroupedListSectionProps#componentRef:member'
+    package: '@fluentui/react!'
     fullName: componentRef
-    langs:
-      - typeScript
-    type: property
+    summary: Gets the component ref.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'componentRef?: () => void;'
       return:
-        type:
-          - () => void
-  - uid: '@fluentui/react!IGroupedListSectionProps#dragDropEvents:member'
-    summary: Map of callback functions related to drag and drop functionality.
-    name: dragDropEvents
+        type: () =&gt; void
+  - name: dragDropEvents
+    uid: '@fluentui/react!IGroupedListSectionProps#dragDropEvents:member'
+    package: '@fluentui/react!'
     fullName: dragDropEvents
-    langs:
-      - typeScript
-    type: property
+    summary: Map of callback functions related to drag and drop functionality.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'dragDropEvents?: IDragDropEvents;'
       return:
-        type:
-          - IDragDropEvents
-  - uid: '@fluentui/react!IGroupedListSectionProps#dragDropHelper:member'
-    summary: helper to manage drag/drop across item rows and groups
-    name: dragDropHelper
+        type: IDragDropEvents
+  - name: dragDropHelper
+    uid: '@fluentui/react!IGroupedListSectionProps#dragDropHelper:member'
+    package: '@fluentui/react!'
     fullName: dragDropHelper
-    langs:
-      - typeScript
-    type: property
+    summary: helper to manage drag/drop across item rows and groups
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'dragDropHelper?: IDragDropHelper;'
       return:
-        type:
-          - IDragDropHelper
-  - uid: '@fluentui/react!IGroupedListSectionProps#eventsToRegister:member'
-    summary: Event names and corresponding callbacks that will be registered to the group and the rendered elements
-    name: eventsToRegister
+        type: IDragDropHelper
+  - name: eventsToRegister
+    uid: '@fluentui/react!IGroupedListSectionProps#eventsToRegister:member'
+    package: '@fluentui/react!'
     fullName: eventsToRegister
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Event names and corresponding callbacks that will be registered to the
+      group and the rendered elements
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: |-
         eventsToRegister?: {
@@ -97,253 +74,259 @@ items:
                 callback: (context: IDragDropContext, event?: any) => void;
             }[];
       return:
-        type:
-          - |-
-            {
-                    eventName: string;
-                    callback: (context: IDragDropContext, event?: any) => void;
-                }[]
-  - uid: '@fluentui/react!IGroupedListSectionProps#footerProps:member'
-    summary: Information to pass in to the group footer.
-    name: footerProps
+        type: |-
+          {
+                  eventName: string;
+                  callback: (context: IDragDropContext, event?: any) =&gt; void;
+              }[]
+  - name: footerProps
+    uid: '@fluentui/react!IGroupedListSectionProps#footerProps:member'
+    package: '@fluentui/react!'
     fullName: footerProps
-    langs:
-      - typeScript
-    type: property
+    summary: Information to pass in to the group footer.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'footerProps?: IGroupFooterProps;'
       return:
-        type:
-          - IGroupFooterProps
-  - uid: '@fluentui/react!IGroupedListSectionProps#getGroupItemLimit:member'
-    summary: Grouping item limit.
-    name: getGroupItemLimit
+        type: IGroupFooterProps
+  - name: getGroupItemLimit
+    uid: '@fluentui/react!IGroupedListSectionProps#getGroupItemLimit:member'
+    package: '@fluentui/react!'
     fullName: getGroupItemLimit
-    langs:
-      - typeScript
-    type: property
+    summary: Grouping item limit.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'getGroupItemLimit?: (group: IGroup) => number;'
       return:
-        type:
-          - '(group: IGroup) => number'
-  - uid: '@fluentui/react!IGroupedListSectionProps#group:member'
-    summary: Optional grouping instructions.
-    name: group
+        type: '(group: IGroup) =&gt; number'
+  - name: group
+    uid: '@fluentui/react!IGroupedListSectionProps#group:member'
+    package: '@fluentui/react!'
     fullName: group
-    langs:
-      - typeScript
-    type: property
+    summary: Optional grouping instructions.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'group?: IGroup;'
       return:
-        type:
-          - IGroup
-  - uid: '@fluentui/react!IGroupedListSectionProps#groupedListClassNames:member'
-    summary: GroupedList resolved class names
-    name: groupedListClassNames
+        type: IGroup
+  - name: groupedListClassNames
+    uid: '@fluentui/react!IGroupedListSectionProps#groupedListClassNames:member'
+    package: '@fluentui/react!'
     fullName: groupedListClassNames
-    langs:
-      - typeScript
-    type: property
+    summary: GroupedList resolved class names
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'groupedListClassNames?: IProcessedStyleSet<IGroupedListStyles>;'
       return:
-        type:
-          - IProcessedStyleSet<IGroupedListStyles>
-  - uid: '@fluentui/react!IGroupedListSectionProps#groupIndex:member'
-    summary: Optional grouping instructions.
-    name: groupIndex
+        type: IProcessedStyleSet&lt;IGroupedListStyles&gt;
+  - name: groupIndex
+    uid: '@fluentui/react!IGroupedListSectionProps#groupIndex:member'
+    package: '@fluentui/react!'
     fullName: groupIndex
-    langs:
-      - typeScript
-    type: property
+    summary: Optional grouping instructions.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'groupIndex?: number;'
       return:
-        type:
-          - number
-  - uid: '@fluentui/react!IGroupedListSectionProps#groupNestingDepth:member'
-    summary: Optional group nesting level.
-    name: groupNestingDepth
+        type: number
+  - name: groupNestingDepth
+    uid: '@fluentui/react!IGroupedListSectionProps#groupNestingDepth:member'
+    package: '@fluentui/react!'
     fullName: groupNestingDepth
-    langs:
-      - typeScript
-    type: property
+    summary: Optional group nesting level.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'groupNestingDepth?: number;'
       return:
-        type:
-          - number
-  - uid: '@fluentui/react!IGroupedListSectionProps#groupProps:member'
-    summary: Optional override properties to render groups.
-    name: groupProps
+        type: number
+  - name: groupProps
+    uid: '@fluentui/react!IGroupedListSectionProps#groupProps:member'
+    package: '@fluentui/react!'
     fullName: groupProps
-    langs:
-      - typeScript
-    type: property
+    summary: Optional override properties to render groups.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'groupProps?: IGroupRenderProps;'
       return:
-        type:
-          - IGroupRenderProps
-  - uid: '@fluentui/react!IGroupedListSectionProps#groups:member'
-    summary: Stores parent group's children.
-    name: groups
+        type: IGroupRenderProps
+  - name: groups
+    uid: '@fluentui/react!IGroupedListSectionProps#groups:member'
+    package: '@fluentui/react!'
     fullName: groups
-    langs:
-      - typeScript
-    type: property
+    summary: Stores parent group's children.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'groups?: IGroup[];'
       return:
-        type:
-          - 'IGroup[]'
-  - uid: '@fluentui/react!IGroupedListSectionProps#headerProps:member'
-    summary: Information to pass in to the group header.
-    name: headerProps
+        type: 'IGroup[]'
+  - name: headerProps
+    uid: '@fluentui/react!IGroupedListSectionProps#headerProps:member'
+    package: '@fluentui/react!'
     fullName: headerProps
-    langs:
-      - typeScript
-    type: property
+    summary: Information to pass in to the group header.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'headerProps?: IGroupHeaderProps;'
       return:
-        type:
-          - IGroupHeaderProps
-  - uid: '@fluentui/react!IGroupedListSectionProps#items:member'
-    summary: List of items to render.
-    name: items
+        type: IGroupHeaderProps
+  - name: items
+    uid: '@fluentui/react!IGroupedListSectionProps#items:member'
+    package: '@fluentui/react!'
     fullName: items
-    langs:
-      - typeScript
-    type: property
+    summary: List of items to render.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'items: any[];'
       return:
-        type:
-          - 'any[]'
-  - uid: '@fluentui/react!IGroupedListSectionProps#listProps:member'
-    summary: Optional list props to pass to list renderer.
-    name: listProps
+        type: 'any[]'
+  - name: listProps
+    uid: '@fluentui/react!IGroupedListSectionProps#listProps:member'
+    package: '@fluentui/react!'
     fullName: listProps
-    langs:
-      - typeScript
-    type: property
+    summary: Optional list props to pass to list renderer.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'listProps?: IListProps;'
       return:
-        type:
-          - IListProps
-  - uid: '@fluentui/react!IGroupedListSectionProps#onRenderCell:member'
-    summary: Rendering callback to render the group items.
-    name: onRenderCell
+        type: IListProps
+  - name: onRenderCell
+    uid: '@fluentui/react!IGroupedListSectionProps#onRenderCell:member'
+    package: '@fluentui/react!'
     fullName: onRenderCell
-    langs:
-      - typeScript
-    type: property
+    summary: Rendering callback to render the group items.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'onRenderCell: (nestingDepth?: number, item?: any, index?: number) => React.ReactNode;'
+      content: >-
+        onRenderCell: (nestingDepth?: number, item?: any, index?: number) =>
+        React.ReactNode;
       return:
-        type:
-          - '(nestingDepth?: number, item?: any, index?: number) => React.ReactNode'
-  - uid: '@fluentui/react!IGroupedListSectionProps#onRenderGroupFooter:member'
-    summary: Override for rendering the group footer.
-    name: onRenderGroupFooter
+        type: >-
+          (nestingDepth?: number, item?: any, index?: number) =&gt;
+          React.ReactNode
+  - name: onRenderGroupFooter
+    uid: '@fluentui/react!IGroupedListSectionProps#onRenderGroupFooter:member'
+    package: '@fluentui/react!'
     fullName: onRenderGroupFooter
-    langs:
-      - typeScript
-    type: property
+    summary: Override for rendering the group footer.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'onRenderGroupFooter?: IRenderFunction<IGroupFooterProps>;'
       return:
-        type:
-          - IRenderFunction<IGroupFooterProps>
-  - uid: '@fluentui/react!IGroupedListSectionProps#onRenderGroupHeader:member'
-    summary: Override for rendering the group header.
-    name: onRenderGroupHeader
+        type: IRenderFunction&lt;IGroupFooterProps&gt;
+  - name: onRenderGroupHeader
+    uid: '@fluentui/react!IGroupedListSectionProps#onRenderGroupHeader:member'
+    package: '@fluentui/react!'
     fullName: onRenderGroupHeader
-    langs:
-      - typeScript
-    type: property
+    summary: Override for rendering the group header.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'onRenderGroupHeader?: IRenderFunction<IGroupHeaderProps>;'
       return:
-        type:
-          - IRenderFunction<IGroupHeaderProps>
-  - uid: '@fluentui/react!IGroupedListSectionProps#onRenderGroupShowAll:member'
-    summary: Override for rendering the group Show All link.
-    name: onRenderGroupShowAll
+        type: IRenderFunction&lt;IGroupHeaderProps&gt;
+  - name: onRenderGroupShowAll
+    uid: '@fluentui/react!IGroupedListSectionProps#onRenderGroupShowAll:member'
+    package: '@fluentui/react!'
     fullName: onRenderGroupShowAll
-    langs:
-      - typeScript
-    type: property
+    summary: Override for rendering the group Show All link.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'onRenderGroupShowAll?: IRenderFunction<IGroupShowAllProps>;'
       return:
-        type:
-          - IRenderFunction<IGroupShowAllProps>
-  - uid: '@fluentui/react!IGroupedListSectionProps#onShouldVirtualize:member'
-    summary: >-
-      Optional callback to determine whether the list should be rendered in full, or virtualized. Virtualization will
-      add and remove pages of items as the user scrolls them into the visible range. This benefits larger list scenarios
-      by reducing the DOM on the screen, but can negatively affect performance for smaller lists. The default
-      implementation will virtualize when this callback is not provided.
-    name: onShouldVirtualize
+        type: IRenderFunction&lt;IGroupShowAllProps&gt;
+  - name: onShouldVirtualize
+    uid: '@fluentui/react!IGroupedListSectionProps#onShouldVirtualize:member'
+    package: '@fluentui/react!'
     fullName: onShouldVirtualize
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Optional callback to determine whether the list should be rendered in
+      full, or virtualized. Virtualization will add and remove pages of items as
+      the user scrolls them into the visible range. This benefits larger list
+      scenarios by reducing the DOM on the screen, but can negatively affect
+      performance for smaller lists. The default implementation will virtualize
+      when this callback is not provided.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'onShouldVirtualize?: (props: IListProps) => boolean;'
       return:
-        type:
-          - '(props: IListProps) => boolean'
-  - uid: '@fluentui/react!IGroupedListSectionProps#selection:member'
-    summary: Optional selection model to track selection state.
-    name: selection
+        type: '(props: IListProps) =&gt; boolean'
+  - name: selection
+    uid: '@fluentui/react!IGroupedListSectionProps#selection:member'
+    package: '@fluentui/react!'
     fullName: selection
-    langs:
-      - typeScript
-    type: property
+    summary: Optional selection model to track selection state.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'selection?: ISelection;'
       return:
-        type:
-          - '@fluentui/utilities!ISelection:interface'
-  - uid: '@fluentui/react!IGroupedListSectionProps#selectionMode:member'
-    summary: Controls how/if the details list manages selection.
-    name: selectionMode
+        type: '<xref uid="@fluentui/utilities!ISelection:interface" />'
+  - name: selectionMode
+    uid: '@fluentui/react!IGroupedListSectionProps#selectionMode:member'
+    package: '@fluentui/react!'
     fullName: selectionMode
-    langs:
-      - typeScript
-    type: property
+    summary: Controls how/if the details list manages selection.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'selectionMode?: SelectionMode;'
       return:
-        type:
-          - '@fluentui/utilities!SelectionMode:enum'
-  - uid: '@fluentui/react!IGroupedListSectionProps#showAllProps:member'
-    summary: Information to pass in to the group Show All footer.
-    name: showAllProps
+        type: '<xref uid="@fluentui/utilities!SelectionMode:enum" />'
+  - name: showAllProps
+    uid: '@fluentui/react!IGroupedListSectionProps#showAllProps:member'
+    package: '@fluentui/react!'
     fullName: showAllProps
-    langs:
-      - typeScript
-    type: property
+    summary: Information to pass in to the group Show All footer.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'showAllProps?: IGroupShowAllProps;'
       return:
-        type:
-          - IGroupShowAllProps
-  - uid: '@fluentui/react!IGroupedListSectionProps#viewport:member'
-    summary: 'Optional Viewport, provided by the parent component.'
-    name: viewport
+        type: IGroupShowAllProps
+  - name: viewport
+    uid: '@fluentui/react!IGroupedListSectionProps#viewport:member'
+    package: '@fluentui/react!'
     fullName: viewport
-    langs:
-      - typeScript
-    type: property
+    summary: 'Optional Viewport, provided by the parent component.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'viewport?: IViewport;'
       return:
-        type:
-          - 'office-ui-fabric-react!IViewport:interface'
+        type: '<xref uid="office-ui-fabric-react!IViewport:interface" />'
+extends: 'React.ClassAttributes&lt;GroupedListSection&gt; '

@@ -1,40 +1,37 @@
-### YamlMime:UniversalReference
-items:
-  - uid: '@fluentui/foundation-legacy!ISlotOptions:interface'
-    summary: >-
-      Defines the slot options object for all slot props: 1. ISlotRender function. 2. React component with TProps
-      interface.
-    name: ISlotOptions
-    fullName: ISlotOptions
-    langs:
-      - typeScript
-    type: interface
-    syntax:
-      typeParameters:
-        - id: TProps
+### YamlMime:TSType
+name: ISlotOptions
+uid: '@fluentui/foundation-legacy!ISlotOptions:interface'
+package: '@fluentui/foundation-legacy!'
+fullName: ISlotOptions
+summary: >-
+  Defines the slot options object for all slot props: 1. ISlotRender function.
+  2. React component with TProps interface.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: component
+    uid: '@fluentui/foundation-legacy!ISlotOptions#component:member'
     package: '@fluentui/foundation-legacy!'
-    children:
-      - '@fluentui/foundation-legacy!ISlotOptions#component:member'
-      - '@fluentui/foundation-legacy!ISlotOptions#render:member'
-  - uid: '@fluentui/foundation-legacy!ISlotOptions#component:member'
-    name: component
     fullName: component
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'component?: React.ElementType<TProps>;'
       return:
-        type:
-          - React.ElementType<TProps>
-  - uid: '@fluentui/foundation-legacy!ISlotOptions#render:member'
-    name: render
+        type: React.ElementType&lt;TProps&gt;
+  - name: render
+    uid: '@fluentui/foundation-legacy!ISlotOptions#render:member'
+    package: '@fluentui/foundation-legacy!'
     fullName: render
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'render?: ISlotRender<TProps>;'
       return:
-        type:
-          - ISlotRender<TProps>
+        type: ISlotRender&lt;TProps&gt;

@@ -1,305 +1,302 @@
-### YamlMime:UniversalReference
-items:
-  - uid: '@fluentui/react-internal!ISelectableDroppableTextProps:interface'
-    summary: >-
-      - `TComponent` - Component used for reference properties, such as `componentRef`<!-- -->. - `TListenerElement` -
-      Listener element associated with HTML event callbacks. Optional. If not provided, `TComponent` is assumed.
-    name: ISelectableDroppableTextProps
-    fullName: ISelectableDroppableTextProps
-    langs:
-      - typeScript
-    type: interface
-    extends:
-      - 'React.HTMLAttributes<TListenerElement> '
-    syntax:
-      typeParameters:
-        - id: TComponent
-        - id: TListenerElement
+### YamlMime:TSType
+name: ISelectableDroppableTextProps
+uid: '@fluentui/react-internal!ISelectableDroppableTextProps:interface'
+package: '@fluentui/react-internal!'
+fullName: ISelectableDroppableTextProps
+summary: >-
+  - `TComponent` - Component used for reference properties, such as
+  `componentRef`<!-- -->. - `TListenerElement` - Listener element associated
+  with HTML event callbacks. Optional. If not provided, `TComponent` is assumed.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: ariaLabel
+    uid: '@fluentui/react-internal!ISelectableDroppableTextProps#ariaLabel:member'
     package: '@fluentui/react-internal!'
-    children:
-      - '@fluentui/react-internal!ISelectableDroppableTextProps#ariaLabel:member'
-      - '@fluentui/react-internal!ISelectableDroppableTextProps#calloutProps:member'
-      - '@fluentui/react-internal!ISelectableDroppableTextProps#className:member'
-      - '@fluentui/react-internal!ISelectableDroppableTextProps#componentRef:member'
-      - '@fluentui/react-internal!ISelectableDroppableTextProps#defaultSelectedKey:member'
-      - '@fluentui/react-internal!ISelectableDroppableTextProps#disabled:member'
-      - '@fluentui/react-internal!ISelectableDroppableTextProps#errorMessage:member'
-      - '@fluentui/react-internal!ISelectableDroppableTextProps#id:member'
-      - '@fluentui/react-internal!ISelectableDroppableTextProps#label:member'
-      - '@fluentui/react-internal!ISelectableDroppableTextProps#multiSelect:member'
-      - '@fluentui/react-internal!ISelectableDroppableTextProps#onDismiss:member'
-      - '@fluentui/react-internal!ISelectableDroppableTextProps#onRenderContainer:member'
-      - '@fluentui/react-internal!ISelectableDroppableTextProps#onRenderItem:member'
-      - '@fluentui/react-internal!ISelectableDroppableTextProps#onRenderList:member'
-      - '@fluentui/react-internal!ISelectableDroppableTextProps#onRenderOption:member'
-      - '@fluentui/react-internal!ISelectableDroppableTextProps#openOnKeyboardFocus:member'
-      - '@fluentui/react-internal!ISelectableDroppableTextProps#options:member'
-      - '@fluentui/react-internal!ISelectableDroppableTextProps#panelProps:member'
-      - '@fluentui/react-internal!ISelectableDroppableTextProps#placeholder:member'
-      - '@fluentui/react-internal!ISelectableDroppableTextProps#required:member'
-      - '@fluentui/react-internal!ISelectableDroppableTextProps#selectedKey:member'
-  - uid: '@fluentui/react-internal!ISelectableDroppableTextProps#ariaLabel:member'
-    summary: Aria Label for the ISelectableDroppableText for screen reader users.
-    name: ariaLabel
     fullName: ariaLabel
-    langs:
-      - typeScript
-    type: property
+    summary: Aria Label for the ISelectableDroppableText for screen reader users.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'ariaLabel?: string;'
       return:
-        type:
-          - string
-  - uid: '@fluentui/react-internal!ISelectableDroppableTextProps#calloutProps:member'
-    summary: Custom properties for ISelectableDroppableText's Callout used to render options.
-    name: calloutProps
+        type: string
+  - name: calloutProps
+    uid: '@fluentui/react-internal!ISelectableDroppableTextProps#calloutProps:member'
+    package: '@fluentui/react-internal!'
     fullName: calloutProps
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Custom properties for ISelectableDroppableText's Callout used to render
+      options.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'calloutProps?: ICalloutProps;'
       return:
-        type:
-          - ICalloutProps
-  - uid: '@fluentui/react-internal!ISelectableDroppableTextProps#className:member'
-    summary: 'If provided, additional class name to provide on the root element.'
-    name: className
+        type: ICalloutProps
+  - name: className
+    uid: '@fluentui/react-internal!ISelectableDroppableTextProps#className:member'
+    package: '@fluentui/react-internal!'
     fullName: className
-    langs:
-      - typeScript
-    type: property
+    summary: 'If provided, additional class name to provide on the root element.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'className?: string;'
       return:
-        type:
-          - string
-  - uid: '@fluentui/react-internal!ISelectableDroppableTextProps#componentRef:member'
-    summary: >-
-      Optional callback to access the ISelectableDroppableText interface. Use this instead of ref for accessing the
-      public methods and properties of the component.
-    name: componentRef
+        type: string
+  - name: componentRef
+    uid: '@fluentui/react-internal!ISelectableDroppableTextProps#componentRef:member'
+    package: '@fluentui/react-internal!'
     fullName: componentRef
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Optional callback to access the ISelectableDroppableText interface. Use
+      this instead of ref for accessing the public methods and properties of the
+      component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'componentRef?: IRefObject<TComponent>;'
       return:
-        type:
-          - IRefObject<TComponent>
-  - uid: '@fluentui/react-internal!ISelectableDroppableTextProps#defaultSelectedKey:member'
+        type: IRefObject&lt;TComponent&gt;
+  - name: defaultSelectedKey
+    uid: >-
+      @fluentui/react-internal!ISelectableDroppableTextProps#defaultSelectedKey:member
+    package: '@fluentui/react-internal!'
+    fullName: defaultSelectedKey
     summary: >-
       The key(s) that will be initially used to set a selected item.
 
 
-      Mutually exclusive with `selectedKey`<!-- -->. For Dropdown in multi-select mode, use `defaultSelectedKeys`
-      instead.
-    name: defaultSelectedKey
-    fullName: defaultSelectedKey
-    langs:
-      - typeScript
-    type: property
+      Mutually exclusive with `selectedKey`<!-- -->. For Dropdown in
+      multi-select mode, use `defaultSelectedKeys` instead.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'defaultSelectedKey?: string | number | string[] | number[] | null;'
       return:
-        type:
-          - 'string | number | string[] | number[] | null'
-  - uid: '@fluentui/react-internal!ISelectableDroppableTextProps#disabled:member'
-    summary: Whether or not the ISelectableDroppableText is disabled.
-    name: disabled
+        type: 'string | number | string[] | number[] | null'
+  - name: disabled
+    uid: '@fluentui/react-internal!ISelectableDroppableTextProps#disabled:member'
+    package: '@fluentui/react-internal!'
     fullName: disabled
-    langs:
-      - typeScript
-    type: property
+    summary: Whether or not the ISelectableDroppableText is disabled.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'disabled?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: '@fluentui/react-internal!ISelectableDroppableTextProps#errorMessage:member'
-    summary: Descriptive label for the ISelectableDroppableText Error Message
-    name: errorMessage
+        type: boolean
+  - name: errorMessage
+    uid: '@fluentui/react-internal!ISelectableDroppableTextProps#errorMessage:member'
+    package: '@fluentui/react-internal!'
     fullName: errorMessage
-    langs:
-      - typeScript
-    type: property
+    summary: Descriptive label for the ISelectableDroppableText Error Message
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'errorMessage?: string;'
       return:
-        type:
-          - string
-  - uid: '@fluentui/react-internal!ISelectableDroppableTextProps#id:member'
-    summary: Id of the ISelectableDroppableText
-    name: id
+        type: string
+  - name: id
+    uid: '@fluentui/react-internal!ISelectableDroppableTextProps#id:member'
+    package: '@fluentui/react-internal!'
     fullName: id
-    langs:
-      - typeScript
-    type: property
+    summary: Id of the ISelectableDroppableText
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'id?: string;'
       return:
-        type:
-          - string
-  - uid: '@fluentui/react-internal!ISelectableDroppableTextProps#label:member'
-    summary: Descriptive label for the ISelectableDroppableText
-    name: label
+        type: string
+  - name: label
+    uid: '@fluentui/react-internal!ISelectableDroppableTextProps#label:member'
+    package: '@fluentui/react-internal!'
     fullName: label
-    langs:
-      - typeScript
-    type: property
+    summary: Descriptive label for the ISelectableDroppableText
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'label?: string;'
       return:
-        type:
-          - string
-  - uid: '@fluentui/react-internal!ISelectableDroppableTextProps#multiSelect:member'
-    summary: Optional prop that indicates if multi-choice selections are allowed or not.
-    name: multiSelect
+        type: string
+  - name: multiSelect
+    uid: '@fluentui/react-internal!ISelectableDroppableTextProps#multiSelect:member'
+    package: '@fluentui/react-internal!'
     fullName: multiSelect
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Optional prop that indicates if multi-choice selections are allowed or
+      not.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'multiSelect?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: '@fluentui/react-internal!ISelectableDroppableTextProps#onDismiss:member'
-    summary: Callback that is issued when the options callout is dismissed
-    name: onDismiss
+        type: boolean
+  - name: onDismiss
+    uid: '@fluentui/react-internal!ISelectableDroppableTextProps#onDismiss:member'
+    package: '@fluentui/react-internal!'
     fullName: onDismiss
-    langs:
-      - typeScript
-    type: property
+    summary: Callback that is issued when the options callout is dismissed
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'onDismiss?: () => void;'
       return:
-        type:
-          - () => void
-  - uid: '@fluentui/react-internal!ISelectableDroppableTextProps#onRenderContainer:member'
-    summary: Optional custom renderer for the ISelectableDroppableText container
-    name: onRenderContainer
+        type: () =&gt; void
+  - name: onRenderContainer
+    uid: >-
+      @fluentui/react-internal!ISelectableDroppableTextProps#onRenderContainer:member
+    package: '@fluentui/react-internal!'
     fullName: onRenderContainer
-    langs:
-      - typeScript
-    type: property
+    summary: Optional custom renderer for the ISelectableDroppableText container
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'onRenderContainer?: IRenderFunction<ISelectableDroppableTextProps<TComponent, TListenerElement>>;'
+      content: >-
+        onRenderContainer?:
+        IRenderFunction<ISelectableDroppableTextProps<TComponent,
+        TListenerElement>>;
       return:
-        type:
-          - 'IRenderFunction<ISelectableDroppableTextProps<TComponent, TListenerElement>>'
-  - uid: '@fluentui/react-internal!ISelectableDroppableTextProps#onRenderItem:member'
-    summary: Optional custom renderer for the ISelectableDroppableText options
-    name: onRenderItem
+        type: >-
+          IRenderFunction&lt;ISelectableDroppableTextProps&lt;TComponent,
+          TListenerElement&gt;&gt;
+  - name: onRenderItem
+    uid: '@fluentui/react-internal!ISelectableDroppableTextProps#onRenderItem:member'
+    package: '@fluentui/react-internal!'
     fullName: onRenderItem
-    langs:
-      - typeScript
-    type: property
+    summary: Optional custom renderer for the ISelectableDroppableText options
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'onRenderItem?: IRenderFunction<ISelectableOption>;'
       return:
-        type:
-          - IRenderFunction<ISelectableOption>
-  - uid: '@fluentui/react-internal!ISelectableDroppableTextProps#onRenderList:member'
-    summary: Optional custom renderer for the ISelectableDroppableText list
-    name: onRenderList
+        type: IRenderFunction&lt;ISelectableOption&gt;
+  - name: onRenderList
+    uid: '@fluentui/react-internal!ISelectableDroppableTextProps#onRenderList:member'
+    package: '@fluentui/react-internal!'
     fullName: onRenderList
-    langs:
-      - typeScript
-    type: property
+    summary: Optional custom renderer for the ISelectableDroppableText list
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'onRenderList?: IRenderFunction<ISelectableDroppableTextProps<TComponent, TListenerElement>>;'
+      content: >-
+        onRenderList?: IRenderFunction<ISelectableDroppableTextProps<TComponent,
+        TListenerElement>>;
       return:
-        type:
-          - 'IRenderFunction<ISelectableDroppableTextProps<TComponent, TListenerElement>>'
-  - uid: '@fluentui/react-internal!ISelectableDroppableTextProps#onRenderOption:member'
-    summary: Optional custom renderer for the ISelectableDroppableText option content
-    name: onRenderOption
+        type: >-
+          IRenderFunction&lt;ISelectableDroppableTextProps&lt;TComponent,
+          TListenerElement&gt;&gt;
+  - name: onRenderOption
+    uid: >-
+      @fluentui/react-internal!ISelectableDroppableTextProps#onRenderOption:member
+    package: '@fluentui/react-internal!'
     fullName: onRenderOption
-    langs:
-      - typeScript
-    type: property
+    summary: Optional custom renderer for the ISelectableDroppableText option content
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'onRenderOption?: IRenderFunction<ISelectableOption>;'
       return:
-        type:
-          - IRenderFunction<ISelectableOption>
-  - uid: '@fluentui/react-internal!ISelectableDroppableTextProps#openOnKeyboardFocus:member'
-    summary: Whether or not the ComboBox/Dropdown should expand on keyboard focus.
-    name: openOnKeyboardFocus
+        type: IRenderFunction&lt;ISelectableOption&gt;
+  - name: openOnKeyboardFocus
+    uid: >-
+      @fluentui/react-internal!ISelectableDroppableTextProps#openOnKeyboardFocus:member
+    package: '@fluentui/react-internal!'
     fullName: openOnKeyboardFocus
-    langs:
-      - typeScript
-    type: property
+    summary: Whether or not the ComboBox/Dropdown should expand on keyboard focus.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'openOnKeyboardFocus?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: '@fluentui/react-internal!ISelectableDroppableTextProps#options:member'
-    summary: Collection of options for this ISelectableDroppableText
-    name: options
+        type: boolean
+  - name: options
+    uid: '@fluentui/react-internal!ISelectableDroppableTextProps#options:member'
+    package: '@fluentui/react-internal!'
     fullName: options
-    langs:
-      - typeScript
-    type: property
+    summary: Collection of options for this ISelectableDroppableText
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'options?: any;'
       return:
-        type:
-          - any
-  - uid: '@fluentui/react-internal!ISelectableDroppableTextProps#panelProps:member'
-    summary: Custom properties for ISelectableDroppableText's Panel used to render options on small devices.
-    name: panelProps
+        type: any
+  - name: panelProps
+    uid: '@fluentui/react-internal!ISelectableDroppableTextProps#panelProps:member'
+    package: '@fluentui/react-internal!'
     fullName: panelProps
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Custom properties for ISelectableDroppableText's Panel used to render
+      options on small devices.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'panelProps?: IPanelProps;'
       return:
-        type:
-          - IPanelProps
-  - uid: '@fluentui/react-internal!ISelectableDroppableTextProps#placeholder:member'
-    summary: Input placeholder text. Displayed until option is selected.
-    name: placeholder
+        type: IPanelProps
+  - name: placeholder
+    uid: '@fluentui/react-internal!ISelectableDroppableTextProps#placeholder:member'
+    package: '@fluentui/react-internal!'
     fullName: placeholder
-    langs:
-      - typeScript
-    type: property
+    summary: Input placeholder text. Displayed until option is selected.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'placeholder?: string;'
       return:
-        type:
-          - string
-  - uid: '@fluentui/react-internal!ISelectableDroppableTextProps#required:member'
-    summary: Whether or not the ISelectableDroppableText is required.
-    name: required
+        type: string
+  - name: required
+    uid: '@fluentui/react-internal!ISelectableDroppableTextProps#required:member'
+    package: '@fluentui/react-internal!'
     fullName: required
-    langs:
-      - typeScript
-    type: property
+    summary: Whether or not the ISelectableDroppableText is required.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'required?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: '@fluentui/react-internal!ISelectableDroppableTextProps#selectedKey:member'
-    summary: >-
-      The key(s) of the selected item. If you provide this, you must maintain selection state by observing onChange
-      events and passing a new value in when changed. Note that passing in `null` will cause selection to be reset.
-
-
-      Mutually exclusive with `defaultSelectedKey`<!-- -->. For Dropdown in multi-select mode, use `selectedKeys`
-      instead.
-    name: selectedKey
+        type: boolean
+  - name: selectedKey
+    uid: '@fluentui/react-internal!ISelectableDroppableTextProps#selectedKey:member'
+    package: '@fluentui/react-internal!'
     fullName: selectedKey
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The key(s) of the selected item. If you provide this, you must maintain
+      selection state by observing onChange events and passing a new value in
+      when changed. Note that passing in `null` will cause selection to be
+      reset.
+
+
+      Mutually exclusive with `defaultSelectedKey`<!-- -->. For Dropdown in
+      multi-select mode, use `selectedKeys` instead.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'selectedKey?: string | number | string[] | number[] | null;'
       return:
-        type:
-          - 'string | number | string[] | number[] | null'
+        type: 'string | number | string[] | number[] | null'
+extends: 'React.HTMLAttributes&lt;TListenerElement&gt; '

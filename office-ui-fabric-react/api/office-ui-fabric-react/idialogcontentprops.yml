@@ -1,237 +1,227 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'office-ui-fabric-react!IDialogContentProps:interface'
-    name: IDialogContentProps
-    fullName: IDialogContentProps
-    langs:
-      - typeScript
-    type: interface
-    extends:
-      - 'React.ClassAttributes<DialogContentBase> '
+### YamlMime:TSType
+name: IDialogContentProps
+uid: 'office-ui-fabric-react!IDialogContentProps:interface'
+package: office-ui-fabric-react!
+fullName: IDialogContentProps
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: className
+    uid: 'office-ui-fabric-react!IDialogContentProps#className:member'
     package: office-ui-fabric-react!
-    children:
-      - 'office-ui-fabric-react!IDialogContentProps#className:member'
-      - 'office-ui-fabric-react!IDialogContentProps#closeButtonAriaLabel:member'
-      - 'office-ui-fabric-react!IDialogContentProps#componentRef:member'
-      - 'office-ui-fabric-react!IDialogContentProps#draggableHeaderClassName:member'
-      - 'office-ui-fabric-react!IDialogContentProps#isMultiline:member'
-      - 'office-ui-fabric-react!IDialogContentProps#onDismiss:member'
-      - 'office-ui-fabric-react!IDialogContentProps#responsiveMode:member'
-      - 'office-ui-fabric-react!IDialogContentProps#showCloseButton:member'
-      - 'office-ui-fabric-react!IDialogContentProps#styles:member'
-      - 'office-ui-fabric-react!IDialogContentProps#subText:member'
-      - 'office-ui-fabric-react!IDialogContentProps#subTextId:member'
-      - 'office-ui-fabric-react!IDialogContentProps#theme:member'
-      - 'office-ui-fabric-react!IDialogContentProps#title:member'
-      - 'office-ui-fabric-react!IDialogContentProps#titleId:member'
-      - 'office-ui-fabric-react!IDialogContentProps#titleProps:member'
-      - 'office-ui-fabric-react!IDialogContentProps#topButtonsProps:member'
-      - 'office-ui-fabric-react!IDialogContentProps#type:member'
-  - uid: 'office-ui-fabric-react!IDialogContentProps#className:member'
-    summary: Optional override class name
-    name: className
     fullName: className
-    langs:
-      - typeScript
-    type: property
+    summary: Optional override class name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'className?: string;'
       return:
-        type:
-          - string
-  - uid: 'office-ui-fabric-react!IDialogContentProps#closeButtonAriaLabel:member'
-    summary: Label to be passed to to aria-label of close button
-    name: closeButtonAriaLabel
+        type: string
+  - name: closeButtonAriaLabel
+    uid: 'office-ui-fabric-react!IDialogContentProps#closeButtonAriaLabel:member'
+    package: office-ui-fabric-react!
     fullName: closeButtonAriaLabel
-    langs:
-      - typeScript
-    type: property
+    summary: Label to be passed to to aria-label of close button
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'closeButtonAriaLabel?: string;'
       return:
-        type:
-          - string
-  - uid: 'office-ui-fabric-react!IDialogContentProps#componentRef:member'
-    summary: >-
-      Optional callback to access the IDialogContent interface. Use this instead of ref for accessing the public methods
-      and properties of the component.
-    name: componentRef
+        type: string
+  - name: componentRef
+    uid: 'office-ui-fabric-react!IDialogContentProps#componentRef:member'
+    package: office-ui-fabric-react!
     fullName: componentRef
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Optional callback to access the IDialogContent interface. Use this instead
+      of ref for accessing the public methods and properties of the component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'componentRef?: IRefObject<IDialogContent>;'
       return:
-        type:
-          - IRefObject<IDialogContent>
-  - uid: 'office-ui-fabric-react!IDialogContentProps#draggableHeaderClassName:member'
-    summary: The classname for when the header is draggable
-    name: draggableHeaderClassName
+        type: IRefObject&lt;IDialogContent&gt;
+  - name: draggableHeaderClassName
+    uid: 'office-ui-fabric-react!IDialogContentProps#draggableHeaderClassName:member'
+    package: office-ui-fabric-react!
     fullName: draggableHeaderClassName
-    langs:
-      - typeScript
-    type: property
+    summary: The classname for when the header is draggable
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'draggableHeaderClassName?: string;'
       return:
-        type:
-          - string
-  - uid: 'office-ui-fabric-react!IDialogContentProps#isMultiline:member'
-    summary: Is inside a multiline wrapper
-    name: isMultiline
+        type: string
+  - name: isMultiline
+    uid: 'office-ui-fabric-react!IDialogContentProps#isMultiline:member'
+    package: office-ui-fabric-react!
     fullName: isMultiline
-    langs:
-      - typeScript
-    type: property
+    summary: Is inside a multiline wrapper
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'isMultiline?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'office-ui-fabric-react!IDialogContentProps#onDismiss:member'
-    summary: 'Callback for when the Dialog is dismissed from the close button or light dismiss, before the animation completes.'
-    name: onDismiss
+        type: boolean
+  - name: onDismiss
+    uid: 'office-ui-fabric-react!IDialogContentProps#onDismiss:member'
+    package: office-ui-fabric-react!
     fullName: onDismiss
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Callback for when the Dialog is dismissed from the close button or light
+      dismiss, before the animation completes.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'onDismiss?: (ev?: React.MouseEvent<HTMLButtonElement>) => any;'
       return:
-        type:
-          - '(ev?: React.MouseEvent<HTMLButtonElement>) => any'
-  - uid: 'office-ui-fabric-react!IDialogContentProps#responsiveMode:member'
-    summary: Responsive mode passed in from decorator.
-    name: responsiveMode
+        type: '(ev?: React.MouseEvent&lt;HTMLButtonElement&gt;) =&gt; any'
+  - name: responsiveMode
+    uid: 'office-ui-fabric-react!IDialogContentProps#responsiveMode:member'
+    package: office-ui-fabric-react!
     fullName: responsiveMode
-    langs:
-      - typeScript
-    type: property
+    summary: Responsive mode passed in from decorator.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'responsiveMode?: ResponsiveMode;'
       return:
-        type:
-          - ResponsiveMode
-  - uid: 'office-ui-fabric-react!IDialogContentProps#showCloseButton:member'
-    summary: Show an 'x' close button in the upper-right corner
-    name: showCloseButton
+        type: ResponsiveMode
+  - name: showCloseButton
+    uid: 'office-ui-fabric-react!IDialogContentProps#showCloseButton:member'
+    package: office-ui-fabric-react!
     fullName: showCloseButton
-    langs:
-      - typeScript
-    type: property
+    summary: Show an 'x' close button in the upper-right corner
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'showCloseButton?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'office-ui-fabric-react!IDialogContentProps#styles:member'
-    summary: Call to provide customized styling that will layer on top of the variant rules
-    name: styles
+        type: boolean
+  - name: styles
+    uid: 'office-ui-fabric-react!IDialogContentProps#styles:member'
+    package: office-ui-fabric-react!
     fullName: styles
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Call to provide customized styling that will layer on top of the variant
+      rules
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'styles?: IStyleFunctionOrObject<IDialogContentStyleProps, IDialogContentStyles>;'
+      content: >-
+        styles?: IStyleFunctionOrObject<IDialogContentStyleProps,
+        IDialogContentStyles>;
       return:
-        type:
-          - 'IStyleFunctionOrObject<IDialogContentStyleProps, IDialogContentStyles>'
-  - uid: 'office-ui-fabric-react!IDialogContentProps#subText:member'
-    summary: The subtext to display in the dialog
-    name: subText
+        type: >-
+          IStyleFunctionOrObject&lt;IDialogContentStyleProps,
+          IDialogContentStyles&gt;
+  - name: subText
+    uid: 'office-ui-fabric-react!IDialogContentProps#subText:member'
+    package: office-ui-fabric-react!
     fullName: subText
-    langs:
-      - typeScript
-    type: property
+    summary: The subtext to display in the dialog
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'subText?: string;'
       return:
-        type:
-          - string
-  - uid: 'office-ui-fabric-react!IDialogContentProps#subTextId:member'
-    summary: The Id for subText container
-    name: subTextId
+        type: string
+  - name: subTextId
+    uid: 'office-ui-fabric-react!IDialogContentProps#subTextId:member'
+    package: office-ui-fabric-react!
     fullName: subTextId
-    langs:
-      - typeScript
-    type: property
+    summary: The Id for subText container
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'subTextId?: string;'
       return:
-        type:
-          - string
-  - uid: 'office-ui-fabric-react!IDialogContentProps#theme:member'
-    summary: Theme provided by HOC.
-    name: theme
+        type: string
+  - name: theme
+    uid: 'office-ui-fabric-react!IDialogContentProps#theme:member'
+    package: office-ui-fabric-react!
     fullName: theme
-    langs:
-      - typeScript
-    type: property
+    summary: Theme provided by HOC.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'theme?: ITheme;'
       return:
-        type:
-          - '@fluentui/theme!ITheme:interface'
-  - uid: 'office-ui-fabric-react!IDialogContentProps#title:member'
-    summary: The title text to display at the top of the dialog.
-    name: title
+        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
+  - name: title
+    uid: 'office-ui-fabric-react!IDialogContentProps#title:member'
+    package: office-ui-fabric-react!
     fullName: title
-    langs:
-      - typeScript
-    type: property
+    summary: The title text to display at the top of the dialog.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'title?: string | JSX.Element;'
       return:
-        type:
-          - string | JSX.Element
-  - uid: 'office-ui-fabric-react!IDialogContentProps#titleId:member'
-    summary: The Id for title container
-    deprecated:
-      content: use the `id` attribute in `titleProps` instead.
-    name: titleId
+        type: string | JSX.Element
+  - name: titleId
+    uid: 'office-ui-fabric-react!IDialogContentProps#titleId:member'
+    package: office-ui-fabric-react!
     fullName: titleId
-    langs:
-      - typeScript
-    type: property
+    summary: The Id for title container
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: use the `id` attribute in `titleProps` instead.
     syntax:
       content: 'titleId?: string;'
       return:
-        type:
-          - string
-  - uid: 'office-ui-fabric-react!IDialogContentProps#titleProps:member'
-    summary: The props for title container.
-    name: titleProps
+        type: string
+  - name: titleProps
+    uid: 'office-ui-fabric-react!IDialogContentProps#titleProps:member'
+    package: office-ui-fabric-react!
     fullName: titleProps
-    langs:
-      - typeScript
-    type: property
+    summary: The props for title container.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'titleProps?: React.HTMLAttributes<HTMLDivElement>;'
       return:
-        type:
-          - React.HTMLAttributes<HTMLDivElement>
-  - uid: 'office-ui-fabric-react!IDialogContentProps#topButtonsProps:member'
-    summary: Other top buttons that will show up next to the close button
-    name: topButtonsProps
+        type: React.HTMLAttributes&lt;HTMLDivElement&gt;
+  - name: topButtonsProps
+    uid: 'office-ui-fabric-react!IDialogContentProps#topButtonsProps:member'
+    package: office-ui-fabric-react!
     fullName: topButtonsProps
-    langs:
-      - typeScript
-    type: property
+    summary: Other top buttons that will show up next to the close button
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'topButtonsProps?: IButtonProps[];'
       return:
-        type:
-          - 'IButtonProps[]'
-  - uid: 'office-ui-fabric-react!IDialogContentProps#type:member'
-    summary: The type of Dialog to display.
-    name: type
+        type: 'IButtonProps[]'
+  - name: type
+    uid: 'office-ui-fabric-react!IDialogContentProps#type:member'
+    package: office-ui-fabric-react!
     fullName: type
-    langs:
-      - typeScript
-    type: property
+    summary: The type of Dialog to display.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'type?: DialogType;'
       return:
-        type:
-          - DialogType
+        type: DialogType
+extends: 'React.ClassAttributes&lt;DialogContentBase&gt; '

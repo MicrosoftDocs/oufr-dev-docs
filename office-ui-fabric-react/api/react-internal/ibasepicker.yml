@@ -1,69 +1,64 @@
-### YamlMime:UniversalReference
-items:
-  - uid: '@fluentui/react-internal!IBasePicker:interface'
-    summary: BasePicker component.
-    name: IBasePicker
-    fullName: IBasePicker
-    langs:
-      - typeScript
-    type: interface
-    syntax:
-      typeParameters:
-        - id: T
+### YamlMime:TSType
+name: IBasePicker
+uid: '@fluentui/react-internal!IBasePicker:interface'
+package: '@fluentui/react-internal!'
+fullName: IBasePicker
+summary: BasePicker component.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: completeSuggestion
+    uid: '@fluentui/react-internal!IBasePicker#completeSuggestion:member'
     package: '@fluentui/react-internal!'
-    children:
-      - '@fluentui/react-internal!IBasePicker#completeSuggestion:member'
-      - '@fluentui/react-internal!IBasePicker#focus:member'
-      - '@fluentui/react-internal!IBasePicker#focusInput:member'
-      - '@fluentui/react-internal!IBasePicker#items:member'
-  - uid: '@fluentui/react-internal!IBasePicker#completeSuggestion:member'
-    summary: >-
-      When called, will take the currently selected suggestion and complete it. If called with forceComplete true, it
-      will attempt to force the current suggestion to complete, must provide both createGenericSuggestion, so the text
-      can be turned into an object in the right shape, and onValidateInput, so the object knows if it's correct or not.
-    name: completeSuggestion
     fullName: completeSuggestion
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      When called, will take the currently selected suggestion and complete it.
+      If called with forceComplete true, it will attempt to force the current
+      suggestion to complete, must provide both createGenericSuggestion, so the
+      text can be turned into an object in the right shape, and onValidateInput,
+      so the object knows if it's correct or not.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'completeSuggestion: (forceComplete?: boolean) => void;'
       return:
-        type:
-          - '(forceComplete?: boolean) => void'
-  - uid: '@fluentui/react-internal!IBasePicker#focus:member'
-    summary: Sets focus to the focus zone.
-    name: focus
+        type: '(forceComplete?: boolean) =&gt; void'
+  - name: focus
+    uid: '@fluentui/react-internal!IBasePicker#focus:member'
+    package: '@fluentui/react-internal!'
     fullName: focus
-    langs:
-      - typeScript
-    type: property
+    summary: Sets focus to the focus zone.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'focus: () => void;'
       return:
-        type:
-          - () => void
-  - uid: '@fluentui/react-internal!IBasePicker#focusInput:member'
-    summary: Set focus to the input
-    name: focusInput
+        type: () =&gt; void
+  - name: focusInput
+    uid: '@fluentui/react-internal!IBasePicker#focusInput:member'
+    package: '@fluentui/react-internal!'
     fullName: focusInput
-    langs:
-      - typeScript
-    type: property
+    summary: Set focus to the input
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'focusInput: () => void;'
       return:
-        type:
-          - () => void
-  - uid: '@fluentui/react-internal!IBasePicker#items:member'
-    summary: Gets the current value of the input.
-    name: items
+        type: () =&gt; void
+  - name: items
+    uid: '@fluentui/react-internal!IBasePicker#items:member'
+    package: '@fluentui/react-internal!'
     fullName: items
-    langs:
-      - typeScript
-    type: property
+    summary: Gets the current value of the input.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'items: T[] | undefined;'
       return:
-        type:
-          - 'T[] | undefined'
+        type: 'T[] | undefined'

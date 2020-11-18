@@ -1,210 +1,208 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'office-ui-fabric-react!IOverflowSetProps:interface'
-    name: IOverflowSetProps
-    fullName: IOverflowSetProps
-    langs:
-      - typeScript
-    type: interface
-    extends:
-      - 'React.ClassAttributes<OverflowSetBase> '
+### YamlMime:TSType
+name: IOverflowSetProps
+uid: 'office-ui-fabric-react!IOverflowSetProps:interface'
+package: office-ui-fabric-react!
+fullName: IOverflowSetProps
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: className
+    uid: 'office-ui-fabric-react!IOverflowSetProps#className:member'
     package: office-ui-fabric-react!
-    children:
-      - 'office-ui-fabric-react!IOverflowSetProps#className:member'
-      - 'office-ui-fabric-react!IOverflowSetProps#componentRef:member'
-      - 'office-ui-fabric-react!IOverflowSetProps#doNotContainWithinFocusZone:member'
-      - 'office-ui-fabric-react!IOverflowSetProps#focusZoneProps:member'
-      - 'office-ui-fabric-react!IOverflowSetProps#items:member'
-      - 'office-ui-fabric-react!IOverflowSetProps#itemSubMenuProvider:member'
-      - 'office-ui-fabric-react!IOverflowSetProps#keytipSequences:member'
-      - 'office-ui-fabric-react!IOverflowSetProps#onRenderItem:member'
-      - 'office-ui-fabric-react!IOverflowSetProps#onRenderOverflowButton:member'
-      - 'office-ui-fabric-react!IOverflowSetProps#overflowItems:member'
-      - 'office-ui-fabric-react!IOverflowSetProps#overflowSide:member'
-      - 'office-ui-fabric-react!IOverflowSetProps#role:member'
-      - 'office-ui-fabric-react!IOverflowSetProps#styles:member'
-      - 'office-ui-fabric-react!IOverflowSetProps#vertical:member'
-  - uid: 'office-ui-fabric-react!IOverflowSetProps#className:member'
-    summary: Class name
-    name: className
     fullName: className
-    langs:
-      - typeScript
-    type: property
+    summary: Class name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'className?: string;'
       return:
-        type:
-          - string
-  - uid: 'office-ui-fabric-react!IOverflowSetProps#componentRef:member'
-    summary: Gets the component ref.
-    name: componentRef
+        type: string
+  - name: componentRef
+    uid: 'office-ui-fabric-react!IOverflowSetProps#componentRef:member'
+    package: office-ui-fabric-react!
     fullName: componentRef
-    langs:
-      - typeScript
-    type: property
+    summary: Gets the component ref.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'componentRef?: IRefObject<IOverflowSet>;'
       return:
-        type:
-          - IRefObject<IOverflowSet>
-  - uid: 'office-ui-fabric-react!IOverflowSetProps#doNotContainWithinFocusZone:member'
-    summary: >-
-      If true do not contain the OverflowSet inside of a FocusZone, otherwise the OverflowSet will contain a FocusZone.
-      If this is set to true focusZoneProps will be ignored. Use one or the other.
-    deprecated:
-      content: In 8.0 the OverflowSet will no longer be wrapped in a FocusZone
-    name: doNotContainWithinFocusZone
+        type: IRefObject&lt;IOverflowSet&gt;
+  - name: doNotContainWithinFocusZone
+    uid: >-
+      office-ui-fabric-react!IOverflowSetProps#doNotContainWithinFocusZone:member
+    package: office-ui-fabric-react!
     fullName: doNotContainWithinFocusZone
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      If true do not contain the OverflowSet inside of a FocusZone, otherwise
+      the OverflowSet will contain a FocusZone. If this is set to true
+      focusZoneProps will be ignored. Use one or the other.
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: In 8.0 the OverflowSet will no longer be wrapped in a FocusZone
     syntax:
       content: 'doNotContainWithinFocusZone?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'office-ui-fabric-react!IOverflowSetProps#focusZoneProps:member'
-    summary: >-
-      Custom properties for OverflowSet's FocusZone. If doNotContainWithinFocusZone is set to true focusZoneProps will
-      be ignored. Use one or the other.
-    deprecated:
-      content: In 8.0 the OverflowSet will no longer be wrapped in a FocusZone
-    name: focusZoneProps
+        type: boolean
+  - name: focusZoneProps
+    uid: 'office-ui-fabric-react!IOverflowSetProps#focusZoneProps:member'
+    package: office-ui-fabric-react!
     fullName: focusZoneProps
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Custom properties for OverflowSet's FocusZone. If
+      doNotContainWithinFocusZone is set to true focusZoneProps will be ignored.
+      Use one or the other.
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: In 8.0 the OverflowSet will no longer be wrapped in a FocusZone
     syntax:
       content: 'focusZoneProps?: IFocusZoneProps;'
       return:
-        type:
-          - '@fluentui/react-focus!IFocusZoneProps:interface'
-  - uid: 'office-ui-fabric-react!IOverflowSetProps#items:member'
-    summary: An array of items to be rendered by your onRenderItem function in the primary content area
-    name: items
+        type: '<xref uid="@fluentui/react-focus!IFocusZoneProps:interface" />'
+  - name: items
+    uid: 'office-ui-fabric-react!IOverflowSetProps#items:member'
+    package: office-ui-fabric-react!
     fullName: items
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      An array of items to be rendered by your onRenderItem function in the
+      primary content area
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'items?: IOverflowSetItemProps[];'
       return:
-        type:
-          - 'IOverflowSetItemProps[]'
-  - uid: 'office-ui-fabric-react!IOverflowSetProps#itemSubMenuProvider:member'
-    summary: >-
-      Function that will take in an IOverflowSetItemProps and return the subMenu for that item. If not provided, will
-      use 'item.subMenuProps.items' by default. This is only used if your overflow set has keytips.
-    name: itemSubMenuProvider
+        type: 'IOverflowSetItemProps[]'
+  - name: itemSubMenuProvider
+    uid: 'office-ui-fabric-react!IOverflowSetProps#itemSubMenuProvider:member'
+    package: office-ui-fabric-react!
     fullName: itemSubMenuProvider
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Function that will take in an IOverflowSetItemProps and return the subMenu
+      for that item. If not provided, will use 'item.subMenuProps.items' by
+      default. This is only used if your overflow set has keytips.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'itemSubMenuProvider?: (item: IOverflowSetItemProps) => any[] | undefined;'
+      content: >-
+        itemSubMenuProvider?: (item: IOverflowSetItemProps) => any[] |
+        undefined;
       return:
-        type:
-          - '(item: IOverflowSetItemProps) => any[] | undefined'
-  - uid: 'office-ui-fabric-react!IOverflowSetProps#keytipSequences:member'
-    summary: 'Optional full keytip sequence for the overflow button, if it will have a keytip.'
-    name: keytipSequences
+        type: '(item: IOverflowSetItemProps) =&gt; any[] | undefined'
+  - name: keytipSequences
+    uid: 'office-ui-fabric-react!IOverflowSetProps#keytipSequences:member'
+    package: office-ui-fabric-react!
     fullName: keytipSequences
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Optional full keytip sequence for the overflow button, if it will have a
+      keytip.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'keytipSequences?: string[];'
       return:
-        type:
-          - 'string[]'
-  - uid: 'office-ui-fabric-react!IOverflowSetProps#onRenderItem:member'
-    summary: Method to call when trying to render an item.
-    name: onRenderItem
+        type: 'string[]'
+  - name: onRenderItem
+    uid: 'office-ui-fabric-react!IOverflowSetProps#onRenderItem:member'
+    package: office-ui-fabric-react!
     fullName: onRenderItem
-    langs:
-      - typeScript
-    type: property
+    summary: Method to call when trying to render an item.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'onRenderItem: (item: IOverflowSetItemProps) => any;'
       return:
-        type:
-          - '(item: IOverflowSetItemProps) => any'
-  - uid: 'office-ui-fabric-react!IOverflowSetProps#onRenderOverflowButton:member'
-    summary: >-
-      Rendering method for overflow button and contextual menu. The argument to the function is the overflowItems passed
-      in as props to this function.
-    name: onRenderOverflowButton
+        type: '(item: IOverflowSetItemProps) =&gt; any'
+  - name: onRenderOverflowButton
+    uid: 'office-ui-fabric-react!IOverflowSetProps#onRenderOverflowButton:member'
+    package: office-ui-fabric-react!
     fullName: onRenderOverflowButton
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Rendering method for overflow button and contextual menu. The argument to
+      the function is the overflowItems passed in as props to this function.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'onRenderOverflowButton: IRenderFunction<any[]>;'
       return:
-        type:
-          - 'IRenderFunction<any[]>'
-  - uid: 'office-ui-fabric-react!IOverflowSetProps#overflowItems:member'
-    summary: An array of items to be passed to overflow contextual menu
-    name: overflowItems
+        type: 'IRenderFunction&lt;any[]&gt;'
+  - name: overflowItems
+    uid: 'office-ui-fabric-react!IOverflowSetProps#overflowItems:member'
+    package: office-ui-fabric-react!
     fullName: overflowItems
-    langs:
-      - typeScript
-    type: property
+    summary: An array of items to be passed to overflow contextual menu
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'overflowItems?: IOverflowSetItemProps[];'
       return:
-        type:
-          - 'IOverflowSetItemProps[]'
-  - uid: 'office-ui-fabric-react!IOverflowSetProps#overflowSide:member'
-    summary: >-
-      Controls wether or not the overflow button is placed at the start or end of the items. This gives a reveresed
-      visual behavior but maintains correct keyboard navigation.
-    name: overflowSide
+        type: 'IOverflowSetItemProps[]'
+  - name: overflowSide
+    uid: 'office-ui-fabric-react!IOverflowSetProps#overflowSide:member'
+    package: office-ui-fabric-react!
     fullName: overflowSide
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Controls wether or not the overflow button is placed at the start or end
+      of the items. This gives a reveresed visual behavior but maintains correct
+      keyboard navigation.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'overflowSide?: ''start'' | ''end'';'
       return:
-        type:
-          - '''start'' | ''end'''
-  - uid: 'office-ui-fabric-react!IOverflowSetProps#role:member'
-    summary: The role for the OverflowSet.
-    name: role
+        type: '''start'' | ''end'''
+  - name: role
+    uid: 'office-ui-fabric-react!IOverflowSetProps#role:member'
+    package: office-ui-fabric-react!
     fullName: role
-    langs:
-      - typeScript
-    type: property
+    summary: The role for the OverflowSet.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'role?: string;'
       return:
-        type:
-          - string
-  - uid: 'office-ui-fabric-react!IOverflowSetProps#styles:member'
-    summary: Call to provide customized styling that will layer on top of the variant rules.
-    name: styles
+        type: string
+  - name: styles
+    uid: 'office-ui-fabric-react!IOverflowSetProps#styles:member'
+    package: office-ui-fabric-react!
     fullName: styles
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Call to provide customized styling that will layer on top of the variant
+      rules.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'styles?: IStyleFunctionOrObject<IOverflowSetProps, IOverflowSetStyles>;'
       return:
-        type:
-          - 'IStyleFunctionOrObject<IOverflowSetProps, IOverflowSetStyles>'
-  - uid: 'office-ui-fabric-react!IOverflowSetProps#vertical:member'
-    summary: >-
-      Change item layout direction to vertical/stacked. If role is set to `menubar`<!-- -->, `vertical={true}` will also
-      add proper `aria-orientation`<!-- -->.
-    name: vertical
+        type: 'IStyleFunctionOrObject&lt;IOverflowSetProps, IOverflowSetStyles&gt;'
+  - name: vertical
+    uid: 'office-ui-fabric-react!IOverflowSetProps#vertical:member'
+    package: office-ui-fabric-react!
     fullName: vertical
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Change item layout direction to vertical/stacked. If role is set to
+      `menubar`<!-- -->, `vertical={true}` will also add proper
+      `aria-orientation`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'vertical?: boolean;'
       return:
-        type:
-          - boolean
+        type: boolean
+extends: 'React.ClassAttributes&lt;OverflowSetBase&gt; '

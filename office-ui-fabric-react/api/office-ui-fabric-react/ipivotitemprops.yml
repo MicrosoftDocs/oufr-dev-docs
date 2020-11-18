@@ -1,176 +1,170 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'office-ui-fabric-react!IPivotItemProps:interface'
-    name: IPivotItemProps
-    fullName: IPivotItemProps
-    langs:
-      - typeScript
-    type: interface
-    extends:
-      - 'React.HTMLAttributes<HTMLDivElement> '
+### YamlMime:TSType
+name: IPivotItemProps
+uid: 'office-ui-fabric-react!IPivotItemProps:interface'
+package: office-ui-fabric-react!
+fullName: IPivotItemProps
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: alwaysRender
+    uid: 'office-ui-fabric-react!IPivotItemProps#alwaysRender:member'
     package: office-ui-fabric-react!
-    children:
-      - 'office-ui-fabric-react!IPivotItemProps#alwaysRender:member'
-      - 'office-ui-fabric-react!IPivotItemProps#ariaLabel:member'
-      - 'office-ui-fabric-react!IPivotItemProps#componentRef:member'
-      - 'office-ui-fabric-react!IPivotItemProps#headerButtonProps:member'
-      - 'office-ui-fabric-react!IPivotItemProps#headerText:member'
-      - 'office-ui-fabric-react!IPivotItemProps#itemCount:member'
-      - 'office-ui-fabric-react!IPivotItemProps#itemIcon:member'
-      - 'office-ui-fabric-react!IPivotItemProps#itemKey:member'
-      - 'office-ui-fabric-react!IPivotItemProps#keytipProps:member'
-      - 'office-ui-fabric-react!IPivotItemProps#linkText:member'
-      - 'office-ui-fabric-react!IPivotItemProps#onRenderItemLink:member'
-  - uid: 'office-ui-fabric-react!IPivotItemProps#alwaysRender:member'
-    summary: >-
-      Defines whether to always render the pivot item (regardless of whether it is selected or not). Useful if you're
-      rendering content that is expensive to mount.
-    name: alwaysRender
     fullName: alwaysRender
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Defines whether to always render the pivot item (regardless of whether it
+      is selected or not). Useful if you're rendering content that is expensive
+      to mount.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'alwaysRender?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'office-ui-fabric-react!IPivotItemProps#ariaLabel:member'
-    summary: |-
-      The aria label of each pivot link which will read by screen reader instead of linkText.
-
-      Note that unless you have compelling requirements you should not override aria-label.
-    name: ariaLabel
+        type: boolean
+  - name: ariaLabel
+    uid: 'office-ui-fabric-react!IPivotItemProps#ariaLabel:member'
+    package: office-ui-fabric-react!
     fullName: ariaLabel
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The aria label of each pivot link which will read by screen reader instead
+      of linkText.
+
+
+      Note that unless you have compelling requirements you should not override
+      aria-label.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'ariaLabel?: string;'
       return:
-        type:
-          - string
-  - uid: 'office-ui-fabric-react!IPivotItemProps#componentRef:member'
-    summary: Gets the component ref.
-    name: componentRef
+        type: string
+  - name: componentRef
+    uid: 'office-ui-fabric-react!IPivotItemProps#componentRef:member'
+    package: office-ui-fabric-react!
     fullName: componentRef
-    langs:
-      - typeScript
-    type: property
+    summary: Gets the component ref.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'componentRef?: IRefObject<{}>;'
       return:
-        type:
-          - 'IRefObject<{}>'
-  - uid: 'office-ui-fabric-react!IPivotItemProps#headerButtonProps:member'
-    summary: >-
-      Props for the header command button. This provides a way to pass in native props, such as data-\* and aria-\*, for
-      each pivot header/link element.
-    name: headerButtonProps
+        type: 'IRefObject&lt;{}&gt;'
+  - name: headerButtonProps
+    uid: 'office-ui-fabric-react!IPivotItemProps#headerButtonProps:member'
+    package: office-ui-fabric-react!
     fullName: headerButtonProps
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Props for the header command button. This provides a way to pass in native
+      props, such as data-\* and aria-\*, for each pivot header/link element.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: |-
         headerButtonProps?: IButtonProps | {
                 [key: string]: string | number | boolean;
             };
       return:
-        type:
-          - |-
-            IButtonProps | {
-                    [key: string]: string | number | boolean;
-                }
-  - uid: 'office-ui-fabric-react!IPivotItemProps#headerText:member'
-    summary: The text displayed of each pivot link.
-    name: headerText
+        type: |-
+          IButtonProps | {
+                  [key: string]: string | number | boolean;
+              }
+  - name: headerText
+    uid: 'office-ui-fabric-react!IPivotItemProps#headerText:member'
+    package: office-ui-fabric-react!
     fullName: headerText
-    langs:
-      - typeScript
-    type: property
+    summary: The text displayed of each pivot link.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'headerText?: string;'
       return:
-        type:
-          - string
-  - uid: 'office-ui-fabric-react!IPivotItemProps#itemCount:member'
-    summary: |-
-      Defines an optional item count displayed in parentheses just after the `linkText`<!-- -->.
+        type: string
+  - name: itemCount
+    uid: 'office-ui-fabric-react!IPivotItemProps#itemCount:member'
+    package: office-ui-fabric-react!
+    fullName: itemCount
+    summary: >-
+      Defines an optional item count displayed in parentheses just after the
+      `linkText`<!-- -->.
+
 
       Examples: completed (4), Unread (99+)
-    name: itemCount
-    fullName: itemCount
-    langs:
-      - typeScript
-    type: property
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'itemCount?: number | string;'
       return:
-        type:
-          - number | string
-  - uid: 'office-ui-fabric-react!IPivotItemProps#itemIcon:member'
-    summary: An optional icon to show next to the pivot link.
-    name: itemIcon
+        type: number | string
+  - name: itemIcon
+    uid: 'office-ui-fabric-react!IPivotItemProps#itemIcon:member'
+    package: office-ui-fabric-react!
     fullName: itemIcon
-    langs:
-      - typeScript
-    type: property
+    summary: An optional icon to show next to the pivot link.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'itemIcon?: string;'
       return:
-        type:
-          - string
-  - uid: 'office-ui-fabric-react!IPivotItemProps#itemKey:member'
+        type: string
+  - name: itemKey
+    uid: 'office-ui-fabric-react!IPivotItemProps#itemKey:member'
+    package: office-ui-fabric-react!
+    fullName: itemKey
     summary: |-
       An required key to uniquely identify a pivot item.
 
       Note: The 'key' from react props cannot be used inside component.
-    name: itemKey
-    fullName: itemKey
-    langs:
-      - typeScript
-    type: property
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'itemKey?: string;'
       return:
-        type:
-          - string
-  - uid: 'office-ui-fabric-react!IPivotItemProps#keytipProps:member'
-    summary: Optional keytip for this PivotItem.
-    name: keytipProps
+        type: string
+  - name: keytipProps
+    uid: 'office-ui-fabric-react!IPivotItemProps#keytipProps:member'
+    package: office-ui-fabric-react!
     fullName: keytipProps
-    langs:
-      - typeScript
-    type: property
+    summary: Optional keytip for this PivotItem.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'keytipProps?: IKeytipProps;'
       return:
-        type:
-          - IKeytipProps
-  - uid: 'office-ui-fabric-react!IPivotItemProps#linkText:member'
-    summary: The text displayed of each pivot link - renaming to `headerText`<!-- -->.
-    deprecated:
-      content: Use `headerText` instead.
-    name: linkText
+        type: IKeytipProps
+  - name: linkText
+    uid: 'office-ui-fabric-react!IPivotItemProps#linkText:member'
+    package: office-ui-fabric-react!
     fullName: linkText
-    langs:
-      - typeScript
-    type: property
+    summary: The text displayed of each pivot link - renaming to `headerText`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Use `headerText` instead.
     syntax:
       content: 'linkText?: string;'
       return:
-        type:
-          - string
-  - uid: 'office-ui-fabric-react!IPivotItemProps#onRenderItemLink:member'
-    summary: Optional custom renderer for the pivot item link.
-    name: onRenderItemLink
+        type: string
+  - name: onRenderItemLink
+    uid: 'office-ui-fabric-react!IPivotItemProps#onRenderItemLink:member'
+    package: office-ui-fabric-react!
     fullName: onRenderItemLink
-    langs:
-      - typeScript
-    type: property
+    summary: Optional custom renderer for the pivot item link.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'onRenderItemLink?: IRenderFunction<IPivotItemProps>;'
       return:
-        type:
-          - IRenderFunction<IPivotItemProps>
+        type: IRenderFunction&lt;IPivotItemProps&gt;
+extends: 'React.HTMLAttributes&lt;HTMLDivElement&gt; '

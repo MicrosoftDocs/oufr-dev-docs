@@ -1,414 +1,399 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'office-ui-fabric-react!ICalendarProps:interface'
-    name: ICalendarProps
-    fullName: ICalendarProps
-    langs:
-      - typeScript
-    type: interface
-    extends:
-      - IBaseProps<ICalendar>
-      - 'React.HTMLAttributes<HTMLElement> '
+### YamlMime:TSType
+name: ICalendarProps
+uid: 'office-ui-fabric-react!ICalendarProps:interface'
+package: office-ui-fabric-react!
+fullName: ICalendarProps
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: allFocusable
+    uid: 'office-ui-fabric-react!ICalendarProps#allFocusable:member'
     package: office-ui-fabric-react!
-    children:
-      - 'office-ui-fabric-react!ICalendarProps#allFocusable:member'
-      - 'office-ui-fabric-react!ICalendarProps#autoNavigateOnSelection:member'
-      - 'office-ui-fabric-react!ICalendarProps#className:member'
-      - 'office-ui-fabric-react!ICalendarProps#componentRef:member'
-      - 'office-ui-fabric-react!ICalendarProps#dateRangeType:member'
-      - 'office-ui-fabric-react!ICalendarProps#dateTimeFormatter:member'
-      - 'office-ui-fabric-react!ICalendarProps#firstDayOfWeek:member'
-      - 'office-ui-fabric-react!ICalendarProps#firstWeekOfYear:member'
-      - 'office-ui-fabric-react!ICalendarProps#highlightCurrentMonth:member'
-      - 'office-ui-fabric-react!ICalendarProps#highlightSelectedMonth:member'
-      - 'office-ui-fabric-react!ICalendarProps#isDayPickerVisible:member'
-      - 'office-ui-fabric-react!ICalendarProps#isMonthPickerVisible:member'
-      - 'office-ui-fabric-react!ICalendarProps#maxDate:member'
-      - 'office-ui-fabric-react!ICalendarProps#minDate:member'
-      - 'office-ui-fabric-react!ICalendarProps#navigationIcons:member'
-      - 'office-ui-fabric-react!ICalendarProps#onDismiss:member'
-      - 'office-ui-fabric-react!ICalendarProps#onSelectDate:member'
-      - 'office-ui-fabric-react!ICalendarProps#restrictedDates:member'
-      - 'office-ui-fabric-react!ICalendarProps#selectDateOnClick:member'
-      - 'office-ui-fabric-react!ICalendarProps#shouldFocusOnMount:member'
-      - 'office-ui-fabric-react!ICalendarProps#showCloseButton:member'
-      - 'office-ui-fabric-react!ICalendarProps#showGoToToday:member'
-      - 'office-ui-fabric-react!ICalendarProps#showMonthPickerAsOverlay:member'
-      - 'office-ui-fabric-react!ICalendarProps#showSixWeeksByDefault:member'
-      - 'office-ui-fabric-react!ICalendarProps#showWeekNumbers:member'
-      - 'office-ui-fabric-react!ICalendarProps#strings:member'
-      - 'office-ui-fabric-react!ICalendarProps#today:member'
-      - 'office-ui-fabric-react!ICalendarProps#value:member'
-      - 'office-ui-fabric-react!ICalendarProps#workWeekDays:member'
-      - 'office-ui-fabric-react!ICalendarProps#yearPickerHidden:member'
-  - uid: 'office-ui-fabric-react!ICalendarProps#allFocusable:member'
-    summary: 'Allows all dates and buttons to be focused, including disabled ones'
-    name: allFocusable
     fullName: allFocusable
-    langs:
-      - typeScript
-    type: property
+    summary: 'Allows all dates and buttons to be focused, including disabled ones'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'allFocusable?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'office-ui-fabric-react!ICalendarProps#autoNavigateOnSelection:member'
-    summary: >-
-      Whether the month view should automatically navigate to the next or previous date range depending on the selected
-      date. If this property is set to true and the currently displayed month is March 2017, if the user clicks on a day
-      outside the month, i.e., April 1st, the picker will automatically navigate to the month of April.
-    name: autoNavigateOnSelection
+        type: boolean
+  - name: autoNavigateOnSelection
+    uid: 'office-ui-fabric-react!ICalendarProps#autoNavigateOnSelection:member'
+    package: office-ui-fabric-react!
     fullName: autoNavigateOnSelection
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Whether the month view should automatically navigate to the next or
+      previous date range depending on the selected date. If this property is
+      set to true and the currently displayed month is March 2017, if the user
+      clicks on a day outside the month, i.e., April 1st, the picker will
+      automatically navigate to the month of April.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'autoNavigateOnSelection?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'office-ui-fabric-react!ICalendarProps#className:member'
-    summary: Optional class name to add to the root element.
-    name: className
+        type: boolean
+  - name: className
+    uid: 'office-ui-fabric-react!ICalendarProps#className:member'
+    package: office-ui-fabric-react!
     fullName: className
-    langs:
-      - typeScript
-    type: property
+    summary: Optional class name to add to the root element.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'className?: string;'
       return:
-        type:
-          - string
-  - uid: 'office-ui-fabric-react!ICalendarProps#componentRef:member'
-    summary: >-
-      Optional callback to access the ICalendar interface. Use this instead of ref for accessing the public methods and
-      properties of the component.
-    name: componentRef
+        type: string
+  - name: componentRef
+    uid: 'office-ui-fabric-react!ICalendarProps#componentRef:member'
+    package: office-ui-fabric-react!
     fullName: componentRef
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Optional callback to access the ICalendar interface. Use this instead of
+      ref for accessing the public methods and properties of the component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'componentRef?: IRefObject<ICalendar>;'
       return:
-        type:
-          - IRefObject<ICalendar>
-  - uid: 'office-ui-fabric-react!ICalendarProps#dateRangeType:member'
-    summary: The date range type indicating how many days should be selected as the user selects days
-    name: dateRangeType
+        type: IRefObject&lt;ICalendar&gt;
+  - name: dateRangeType
+    uid: 'office-ui-fabric-react!ICalendarProps#dateRangeType:member'
+    package: office-ui-fabric-react!
     fullName: dateRangeType
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The date range type indicating how many days should be selected as the
+      user selects days
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'dateRangeType?: DateRangeType;'
       return:
-        type:
-          - '@fluentui/date-time-utilities!DateRangeType:enum'
-  - uid: 'office-ui-fabric-react!ICalendarProps#dateTimeFormatter:member'
-    summary: 'Apply additional formating to dates, for example localized date formatting.'
-    name: dateTimeFormatter
+        type: '<xref uid="@fluentui/date-time-utilities!DateRangeType:enum" />'
+  - name: dateTimeFormatter
+    uid: 'office-ui-fabric-react!ICalendarProps#dateTimeFormatter:member'
+    package: office-ui-fabric-react!
     fullName: dateTimeFormatter
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Apply additional formating to dates, for example localized date
+      formatting.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'dateTimeFormatter?: ICalendarFormatDateCallbacks;'
       return:
-        type:
-          - 'office-ui-fabric-react!ICalendarFormatDateCallbacks:interface'
-  - uid: 'office-ui-fabric-react!ICalendarProps#firstDayOfWeek:member'
-    summary: The first day of the week for your locale.
-    name: firstDayOfWeek
+        type: >-
+          <xref
+          uid="office-ui-fabric-react!ICalendarFormatDateCallbacks:interface" />
+  - name: firstDayOfWeek
+    uid: 'office-ui-fabric-react!ICalendarProps#firstDayOfWeek:member'
+    package: office-ui-fabric-react!
     fullName: firstDayOfWeek
-    langs:
-      - typeScript
-    type: property
+    summary: The first day of the week for your locale.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'firstDayOfWeek?: DayOfWeek;'
       return:
-        type:
-          - '@fluentui/date-time-utilities!DayOfWeek:enum'
-  - uid: 'office-ui-fabric-react!ICalendarProps#firstWeekOfYear:member'
-    summary: >-
-      Defines when the first week of the year should start, FirstWeekOfYear.FirstDay, FirstWeekOfYear.FirstFullWeek or
-      FirstWeekOfYear.FirstFourDayWeek are the possible values
-    name: firstWeekOfYear
+        type: '<xref uid="@fluentui/date-time-utilities!DayOfWeek:enum" />'
+  - name: firstWeekOfYear
+    uid: 'office-ui-fabric-react!ICalendarProps#firstWeekOfYear:member'
+    package: office-ui-fabric-react!
     fullName: firstWeekOfYear
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Defines when the first week of the year should start,
+      FirstWeekOfYear.FirstDay, FirstWeekOfYear.FirstFullWeek or
+      FirstWeekOfYear.FirstFourDayWeek are the possible values
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'firstWeekOfYear?: FirstWeekOfYear;'
       return:
-        type:
-          - '@fluentui/date-time-utilities!FirstWeekOfYear:enum'
-  - uid: 'office-ui-fabric-react!ICalendarProps#highlightCurrentMonth:member'
-    summary: Whether the month picker should highlight the current month
-    name: highlightCurrentMonth
+        type: '<xref uid="@fluentui/date-time-utilities!FirstWeekOfYear:enum" />'
+  - name: highlightCurrentMonth
+    uid: 'office-ui-fabric-react!ICalendarProps#highlightCurrentMonth:member'
+    package: office-ui-fabric-react!
     fullName: highlightCurrentMonth
-    langs:
-      - typeScript
-    type: property
+    summary: Whether the month picker should highlight the current month
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'highlightCurrentMonth?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'office-ui-fabric-react!ICalendarProps#highlightSelectedMonth:member'
-    summary: Whether the month picker should highlight the selected month
-    name: highlightSelectedMonth
+        type: boolean
+  - name: highlightSelectedMonth
+    uid: 'office-ui-fabric-react!ICalendarProps#highlightSelectedMonth:member'
+    package: office-ui-fabric-react!
     fullName: highlightSelectedMonth
-    langs:
-      - typeScript
-    type: property
+    summary: Whether the month picker should highlight the selected month
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'highlightSelectedMonth?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'office-ui-fabric-react!ICalendarProps#isDayPickerVisible:member'
-    summary: Whether the day picker is shown beside the month picker or hidden.
-    name: isDayPickerVisible
+        type: boolean
+  - name: isDayPickerVisible
+    uid: 'office-ui-fabric-react!ICalendarProps#isDayPickerVisible:member'
+    package: office-ui-fabric-react!
     fullName: isDayPickerVisible
-    langs:
-      - typeScript
-    type: property
+    summary: Whether the day picker is shown beside the month picker or hidden.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'isDayPickerVisible?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'office-ui-fabric-react!ICalendarProps#isMonthPickerVisible:member'
-    summary: Whether the month picker is shown beside the day picker or hidden.
-    name: isMonthPickerVisible
+        type: boolean
+  - name: isMonthPickerVisible
+    uid: 'office-ui-fabric-react!ICalendarProps#isMonthPickerVisible:member'
+    package: office-ui-fabric-react!
     fullName: isMonthPickerVisible
-    langs:
-      - typeScript
-    type: property
+    summary: Whether the month picker is shown beside the day picker or hidden.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'isMonthPickerVisible?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'office-ui-fabric-react!ICalendarProps#maxDate:member'
-    summary: If set the Calendar will not allow navigation to or selection of a date later than this value.
-    name: maxDate
+        type: boolean
+  - name: maxDate
+    uid: 'office-ui-fabric-react!ICalendarProps#maxDate:member'
+    package: office-ui-fabric-react!
     fullName: maxDate
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      If set the Calendar will not allow navigation to or selection of a date
+      later than this value.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'maxDate?: Date;'
       return:
-        type:
-          - Date
-  - uid: 'office-ui-fabric-react!ICalendarProps#minDate:member'
-    summary: If set the Calendar will not allow navigation to or selection of a date earlier than this value.
-    name: minDate
+        type: Date
+  - name: minDate
+    uid: 'office-ui-fabric-react!ICalendarProps#minDate:member'
+    package: office-ui-fabric-react!
     fullName: minDate
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      If set the Calendar will not allow navigation to or selection of a date
+      earlier than this value.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'minDate?: Date;'
       return:
-        type:
-          - Date
-  - uid: 'office-ui-fabric-react!ICalendarProps#navigationIcons:member'
-    summary: Customize navigation icons using ICalendarIconStrings
-    name: navigationIcons
+        type: Date
+  - name: navigationIcons
+    uid: 'office-ui-fabric-react!ICalendarProps#navigationIcons:member'
+    package: office-ui-fabric-react!
     fullName: navigationIcons
-    langs:
-      - typeScript
-    type: property
+    summary: Customize navigation icons using ICalendarIconStrings
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'navigationIcons?: ICalendarIconStrings;'
       return:
-        type:
-          - 'office-ui-fabric-react!ICalendarIconStrings:interface'
-  - uid: 'office-ui-fabric-react!ICalendarProps#onDismiss:member'
-    summary: Callback issued when calendar is closed
-    name: onDismiss
+        type: '<xref uid="office-ui-fabric-react!ICalendarIconStrings:interface" />'
+  - name: onDismiss
+    uid: 'office-ui-fabric-react!ICalendarProps#onDismiss:member'
+    package: office-ui-fabric-react!
     fullName: onDismiss
-    langs:
-      - typeScript
-    type: property
+    summary: Callback issued when calendar is closed
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'onDismiss?: () => void;'
       return:
-        type:
-          - () => void
-  - uid: 'office-ui-fabric-react!ICalendarProps#onSelectDate:member'
-    summary: Callback issued when a date is selected
-    name: onSelectDate
+        type: () =&gt; void
+  - name: onSelectDate
+    uid: 'office-ui-fabric-react!ICalendarProps#onSelectDate:member'
+    package: office-ui-fabric-react!
     fullName: onSelectDate
-    langs:
-      - typeScript
-    type: property
+    summary: Callback issued when a date is selected
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'onSelectDate?: (date: Date, selectedDateRangeArray?: Date[]) => void;'
       return:
-        type:
-          - '(date: Date, selectedDateRangeArray?: Date[]) => void'
-  - uid: 'office-ui-fabric-react!ICalendarProps#restrictedDates:member'
-    summary: If set the Calendar will not allow selection of dates in this array.
-    name: restrictedDates
+        type: '(date: Date, selectedDateRangeArray?: Date[]) =&gt; void'
+  - name: restrictedDates
+    uid: 'office-ui-fabric-react!ICalendarProps#restrictedDates:member'
+    package: office-ui-fabric-react!
     fullName: restrictedDates
-    langs:
-      - typeScript
-    type: property
+    summary: If set the Calendar will not allow selection of dates in this array.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'restrictedDates?: Date[];'
       return:
-        type:
-          - 'Date[]'
-  - uid: 'office-ui-fabric-react!ICalendarProps#selectDateOnClick:member'
-    summary: 'When clicking on "Today", select the date and close the calendar.'
-    name: selectDateOnClick
+        type: 'Date[]'
+  - name: selectDateOnClick
+    uid: 'office-ui-fabric-react!ICalendarProps#selectDateOnClick:member'
+    package: office-ui-fabric-react!
     fullName: selectDateOnClick
-    langs:
-      - typeScript
-    type: property
+    summary: 'When clicking on "Today", select the date and close the calendar.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'selectDateOnClick?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'office-ui-fabric-react!ICalendarProps#shouldFocusOnMount:member'
-    summary: 'This property has been removed at 0.80.0 in place of the `focus` method, to be removed @ 1.0.0.'
-    deprecated:
-      content: Replaced with the `focus` method.
-    name: shouldFocusOnMount
+        type: boolean
+  - name: shouldFocusOnMount
+    uid: 'office-ui-fabric-react!ICalendarProps#shouldFocusOnMount:member'
+    package: office-ui-fabric-react!
     fullName: shouldFocusOnMount
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      This property has been removed at 0.80.0 in place of the `focus` method,
+      to be removed @ 1.0.0.
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Replaced with the `focus` method.
     syntax:
       content: 'shouldFocusOnMount?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'office-ui-fabric-react!ICalendarProps#showCloseButton:member'
-    summary: Whether the close button should be shown or not
-    name: showCloseButton
+        type: boolean
+  - name: showCloseButton
+    uid: 'office-ui-fabric-react!ICalendarProps#showCloseButton:member'
+    package: office-ui-fabric-react!
     fullName: showCloseButton
-    langs:
-      - typeScript
-    type: property
+    summary: Whether the close button should be shown or not
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'showCloseButton?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'office-ui-fabric-react!ICalendarProps#showGoToToday:member'
-    summary: Whether the "Go to today" link should be shown or not
-    name: showGoToToday
+        type: boolean
+  - name: showGoToToday
+    uid: 'office-ui-fabric-react!ICalendarProps#showGoToToday:member'
+    package: office-ui-fabric-react!
     fullName: showGoToToday
-    langs:
-      - typeScript
-    type: property
+    summary: Whether the "Go to today" link should be shown or not
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'showGoToToday?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'office-ui-fabric-react!ICalendarProps#showMonthPickerAsOverlay:member'
-    summary: Show month picker on top of date picker when visible.
-    name: showMonthPickerAsOverlay
+        type: boolean
+  - name: showMonthPickerAsOverlay
+    uid: 'office-ui-fabric-react!ICalendarProps#showMonthPickerAsOverlay:member'
+    package: office-ui-fabric-react!
     fullName: showMonthPickerAsOverlay
-    langs:
-      - typeScript
-    type: property
+    summary: Show month picker on top of date picker when visible.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'showMonthPickerAsOverlay?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'office-ui-fabric-react!ICalendarProps#showSixWeeksByDefault:member'
-    summary: Whether the calendar should show 6 weeks by default.
-    name: showSixWeeksByDefault
+        type: boolean
+  - name: showSixWeeksByDefault
+    uid: 'office-ui-fabric-react!ICalendarProps#showSixWeeksByDefault:member'
+    package: office-ui-fabric-react!
     fullName: showSixWeeksByDefault
-    langs:
-      - typeScript
-    type: property
+    summary: Whether the calendar should show 6 weeks by default.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'showSixWeeksByDefault?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'office-ui-fabric-react!ICalendarProps#showWeekNumbers:member'
-    summary: Whether the calendar should show the week number (weeks 1 to 53) before each week row
-    name: showWeekNumbers
+        type: boolean
+  - name: showWeekNumbers
+    uid: 'office-ui-fabric-react!ICalendarProps#showWeekNumbers:member'
+    package: office-ui-fabric-react!
     fullName: showWeekNumbers
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Whether the calendar should show the week number (weeks 1 to 53) before
+      each week row
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'showWeekNumbers?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'office-ui-fabric-react!ICalendarProps#strings:member'
-    summary: Localized strings to use in the Calendar
-    name: strings
+        type: boolean
+  - name: strings
+    uid: 'office-ui-fabric-react!ICalendarProps#strings:member'
+    package: office-ui-fabric-react!
     fullName: strings
-    langs:
-      - typeScript
-    type: property
+    summary: Localized strings to use in the Calendar
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'strings: ICalendarStrings | null;'
       return:
-        type:
-          - ICalendarStrings | null
-  - uid: 'office-ui-fabric-react!ICalendarProps#today:member'
-    summary: 'Value of today. If null, current time in client machine will be used.'
-    name: today
+        type: ICalendarStrings | null
+  - name: today
+    uid: 'office-ui-fabric-react!ICalendarProps#today:member'
+    package: office-ui-fabric-react!
     fullName: today
-    langs:
-      - typeScript
-    type: property
+    summary: 'Value of today. If null, current time in client machine will be used.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'today?: Date;'
       return:
-        type:
-          - Date
-  - uid: 'office-ui-fabric-react!ICalendarProps#value:member'
-    summary: 'Default value of the Calendar, if any'
-    name: value
+        type: Date
+  - name: value
+    uid: 'office-ui-fabric-react!ICalendarProps#value:member'
+    package: office-ui-fabric-react!
     fullName: value
-    langs:
-      - typeScript
-    type: property
+    summary: 'Default value of the Calendar, if any'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'value?: Date;'
       return:
-        type:
-          - Date
-  - uid: 'office-ui-fabric-react!ICalendarProps#workWeekDays:member'
-    summary: >-
-      The days that are selectable when dateRangeType is WorkWeek. If dateRangeType is not WorkWeek this property does
-      nothing.
-    name: workWeekDays
+        type: Date
+  - name: workWeekDays
+    uid: 'office-ui-fabric-react!ICalendarProps#workWeekDays:member'
+    package: office-ui-fabric-react!
     fullName: workWeekDays
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The days that are selectable when dateRangeType is WorkWeek. If
+      dateRangeType is not WorkWeek this property does nothing.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'workWeekDays?: DayOfWeek[];'
       return:
-        type:
-          - 'DayOfWeek[]'
-  - uid: 'office-ui-fabric-react!ICalendarProps#yearPickerHidden:member'
-    summary: Whether the year picker is enabled
-    name: yearPickerHidden
+        type: 'DayOfWeek[]'
+  - name: yearPickerHidden
+    uid: 'office-ui-fabric-react!ICalendarProps#yearPickerHidden:member'
+    package: office-ui-fabric-react!
     fullName: yearPickerHidden
-    langs:
-      - typeScript
-    type: property
+    summary: Whether the year picker is enabled
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'yearPickerHidden?: boolean;'
       return:
-        type:
-          - boolean
+        type: boolean
+extends: IBaseProps&lt;ICalendar&gt;

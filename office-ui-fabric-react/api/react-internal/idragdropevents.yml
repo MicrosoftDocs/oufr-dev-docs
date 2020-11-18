@@ -1,130 +1,131 @@
-### YamlMime:UniversalReference
-items:
-  - uid: '@fluentui/react-internal!IDragDropEvents:interface'
-    summary: Drag &amp; drop event callback interface.
-    name: IDragDropEvents
-    fullName: IDragDropEvents
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: IDragDropEvents
+uid: '@fluentui/react-internal!IDragDropEvents:interface'
+package: '@fluentui/react-internal!'
+fullName: IDragDropEvents
+summary: Drag &amp; drop event callback interface.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: canDrag
+    uid: '@fluentui/react-internal!IDragDropEvents#canDrag:member'
     package: '@fluentui/react-internal!'
-    children:
-      - '@fluentui/react-internal!IDragDropEvents#canDrag:member'
-      - '@fluentui/react-internal!IDragDropEvents#canDragGroups:member'
-      - '@fluentui/react-internal!IDragDropEvents#canDrop:member'
-      - '@fluentui/react-internal!IDragDropEvents#onDragEnd:member'
-      - '@fluentui/react-internal!IDragDropEvents#onDragEnter:member'
-      - '@fluentui/react-internal!IDragDropEvents#onDragLeave:member'
-      - '@fluentui/react-internal!IDragDropEvents#onDragOver:member'
-      - '@fluentui/react-internal!IDragDropEvents#onDragStart:member'
-      - '@fluentui/react-internal!IDragDropEvents#onDrop:member'
-  - uid: '@fluentui/react-internal!IDragDropEvents#canDrag:member'
-    summary: Whether or not drag action is allowed.
-    name: canDrag
     fullName: canDrag
-    langs:
-      - typeScript
-    type: property
+    summary: Whether or not drag action is allowed.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'canDrag?: (item?: any) => boolean;'
       return:
-        type:
-          - '(item?: any) => boolean'
-  - uid: '@fluentui/react-internal!IDragDropEvents#canDragGroups:member'
-    summary: Whether the whole group is draggable. This applies after canDrag returns true for the group.
-    name: canDragGroups
+        type: '(item?: any) =&gt; boolean'
+  - name: canDragGroups
+    uid: '@fluentui/react-internal!IDragDropEvents#canDragGroups:member'
+    package: '@fluentui/react-internal!'
     fullName: canDragGroups
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Whether the whole group is draggable. This applies after canDrag returns
+      true for the group.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'canDragGroups?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: '@fluentui/react-internal!IDragDropEvents#canDrop:member'
-    summary: Whether or not drop action is allowed.
-    name: canDrop
+        type: boolean
+  - name: canDrop
+    uid: '@fluentui/react-internal!IDragDropEvents#canDrop:member'
+    package: '@fluentui/react-internal!'
     fullName: canDrop
-    langs:
-      - typeScript
-    type: property
+    summary: Whether or not drop action is allowed.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'canDrop?: (dropContext?: IDragDropContext, dragContext?: IDragDropContext) => boolean;'
+      content: >-
+        canDrop?: (dropContext?: IDragDropContext, dragContext?:
+        IDragDropContext) => boolean;
       return:
-        type:
-          - '(dropContext?: IDragDropContext, dragContext?: IDragDropContext) => boolean'
-  - uid: '@fluentui/react-internal!IDragDropEvents#onDragEnd:member'
-    summary: On drag end event callback.
-    name: onDragEnd
+        type: >-
+          (dropContext?: IDragDropContext, dragContext?: IDragDropContext) =&gt;
+          boolean
+  - name: onDragEnd
+    uid: '@fluentui/react-internal!IDragDropEvents#onDragEnd:member'
+    package: '@fluentui/react-internal!'
     fullName: onDragEnd
-    langs:
-      - typeScript
-    type: property
+    summary: On drag end event callback.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'onDragEnd?: (item?: any, event?: DragEvent) => void;'
       return:
-        type:
-          - '(item?: any, event?: DragEvent) => void'
-  - uid: '@fluentui/react-internal!IDragDropEvents#onDragEnter:member'
-    summary: >-
-      On drag enter region event callback. Returned string is the css classes that will be added to the entering
-      element.
-    name: onDragEnter
+        type: '(item?: any, event?: DragEvent) =&gt; void'
+  - name: onDragEnter
+    uid: '@fluentui/react-internal!IDragDropEvents#onDragEnter:member'
+    package: '@fluentui/react-internal!'
     fullName: onDragEnter
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      On drag enter region event callback. Returned string is the css classes
+      that will be added to the entering element.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'onDragEnter?: (item?: any, event?: DragEvent) => string;'
       return:
-        type:
-          - '(item?: any, event?: DragEvent) => string'
-  - uid: '@fluentui/react-internal!IDragDropEvents#onDragLeave:member'
-    summary: On drag leave region event callback.
-    name: onDragLeave
+        type: '(item?: any, event?: DragEvent) =&gt; string'
+  - name: onDragLeave
+    uid: '@fluentui/react-internal!IDragDropEvents#onDragLeave:member'
+    package: '@fluentui/react-internal!'
     fullName: onDragLeave
-    langs:
-      - typeScript
-    type: property
+    summary: On drag leave region event callback.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'onDragLeave?: (item?: any, event?: DragEvent) => void;'
       return:
-        type:
-          - '(item?: any, event?: DragEvent) => void'
-  - uid: '@fluentui/react-internal!IDragDropEvents#onDragOver:member'
-    summary: On drag over event callback.
-    name: onDragOver
+        type: '(item?: any, event?: DragEvent) =&gt; void'
+  - name: onDragOver
+    uid: '@fluentui/react-internal!IDragDropEvents#onDragOver:member'
+    package: '@fluentui/react-internal!'
     fullName: onDragOver
-    langs:
-      - typeScript
-    type: property
+    summary: On drag over event callback.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'onDragOver?: (item?: any, event?: DragEvent) => void;'
       return:
-        type:
-          - '(item?: any, event?: DragEvent) => void'
-  - uid: '@fluentui/react-internal!IDragDropEvents#onDragStart:member'
-    summary: On drag start event callback.
-    name: onDragStart
+        type: '(item?: any, event?: DragEvent) =&gt; void'
+  - name: onDragStart
+    uid: '@fluentui/react-internal!IDragDropEvents#onDragStart:member'
+    package: '@fluentui/react-internal!'
     fullName: onDragStart
-    langs:
-      - typeScript
-    type: property
+    summary: On drag start event callback.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'onDragStart?: (item?: any, itemIndex?: number, selectedItems?: any[], event?: MouseEvent) => void;'
+      content: >-
+        onDragStart?: (item?: any, itemIndex?: number, selectedItems?: any[],
+        event?: MouseEvent) => void;
       return:
-        type:
-          - '(item?: any, itemIndex?: number, selectedItems?: any[], event?: MouseEvent) => void'
-  - uid: '@fluentui/react-internal!IDragDropEvents#onDrop:member'
-    summary: On drop event callback.
-    name: onDrop
+        type: >-
+          (item?: any, itemIndex?: number, selectedItems?: any[], event?:
+          MouseEvent) =&gt; void
+  - name: onDrop
+    uid: '@fluentui/react-internal!IDragDropEvents#onDrop:member'
+    package: '@fluentui/react-internal!'
     fullName: onDrop
-    langs:
-      - typeScript
-    type: property
+    summary: On drop event callback.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'onDrop?: (item?: any, event?: DragEvent) => void;'
       return:
-        type:
-          - '(item?: any, event?: DragEvent) => void'
+        type: '(item?: any, event?: DragEvent) =&gt; void'

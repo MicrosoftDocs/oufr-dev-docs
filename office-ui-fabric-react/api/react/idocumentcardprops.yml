@@ -1,167 +1,167 @@
-### YamlMime:UniversalReference
-items:
-  - uid: '@fluentui/react!IDocumentCardProps:interface'
-    name: IDocumentCardProps
-    fullName: IDocumentCardProps
-    langs:
-      - typeScript
-    type: interface
-    extends:
-      - IBaseProps<IDocumentCard>
-      - 'React.HTMLAttributes<HTMLDivElement> '
+### YamlMime:TSType
+name: IDocumentCardProps
+uid: '@fluentui/react!IDocumentCardProps:interface'
+package: '@fluentui/react!'
+fullName: IDocumentCardProps
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: accentColor
+    uid: '@fluentui/react!IDocumentCardProps#accentColor:member'
     package: '@fluentui/react!'
-    children:
-      - '@fluentui/react!IDocumentCardProps#accentColor:member'
-      - '@fluentui/react!IDocumentCardProps#children:member'
-      - '@fluentui/react!IDocumentCardProps#className:member'
-      - '@fluentui/react!IDocumentCardProps#componentRef:member'
-      - '@fluentui/react!IDocumentCardProps#onClick:member'
-      - '@fluentui/react!IDocumentCardProps#onClickHref:member'
-      - '@fluentui/react!IDocumentCardProps#onClickTarget:member'
-      - '@fluentui/react!IDocumentCardProps#role:member'
-      - '@fluentui/react!IDocumentCardProps#styles:member'
-      - '@fluentui/react!IDocumentCardProps#theme:member'
-      - '@fluentui/react!IDocumentCardProps#type:member'
-  - uid: '@fluentui/react!IDocumentCardProps#accentColor:member'
+    fullName: accentColor
     summary: >-
-      Hex color value of the line below the card, which should correspond to the document type. This should only be
-      supplied when using the 'compact' card layout.
+      Hex color value of the line below the card, which should correspond to the
+      document type. This should only be supplied when using the 'compact' card
+      layout.
 
 
       Deprecated at v4.17.1, to be removed at &gt;<!-- -->= v5.0.0.
-    deprecated:
-      content: To be removed at v5.0.0.
-    name: accentColor
-    fullName: accentColor
-    langs:
-      - typeScript
-    type: property
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: To be removed at v5.0.0.
     syntax:
       content: 'accentColor?: string;'
       return:
-        type:
-          - string
-  - uid: '@fluentui/react!IDocumentCardProps#children:member'
-    summary: Child components to render within the card.
-    name: children
+        type: string
+  - name: children
+    uid: '@fluentui/react!IDocumentCardProps#children:member'
+    package: '@fluentui/react!'
     fullName: children
-    langs:
-      - typeScript
-    type: property
+    summary: Child components to render within the card.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'children?: React.ReactNode;'
       return:
-        type:
-          - React.ReactNode
-  - uid: '@fluentui/react!IDocumentCardProps#className:member'
-    summary: Optional override class name
-    name: className
+        type: React.ReactNode
+  - name: className
+    uid: '@fluentui/react!IDocumentCardProps#className:member'
+    package: '@fluentui/react!'
     fullName: className
-    langs:
-      - typeScript
-    type: property
+    summary: Optional override class name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'className?: string;'
       return:
-        type:
-          - string
-  - uid: '@fluentui/react!IDocumentCardProps#componentRef:member'
-    summary: >-
-      Optional callback to access the IDocumentCard interface. Use this instead of ref for accessing the public methods
-      and properties of the component.
-    name: componentRef
+        type: string
+  - name: componentRef
+    uid: '@fluentui/react!IDocumentCardProps#componentRef:member'
+    package: '@fluentui/react!'
     fullName: componentRef
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Optional callback to access the IDocumentCard interface. Use this instead
+      of ref for accessing the public methods and properties of the component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'componentRef?: IRefObject<IDocumentCard>;'
       return:
-        type:
-          - IRefObject<IDocumentCard>
-  - uid: '@fluentui/react!IDocumentCardProps#onClick:member'
-    summary: Function to call when the card is clicked or keyboard Enter/Space is pushed.
-    name: onClick
+        type: IRefObject&lt;IDocumentCard&gt;
+  - name: onClick
+    uid: '@fluentui/react!IDocumentCardProps#onClick:member'
+    package: '@fluentui/react!'
     fullName: onClick
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Function to call when the card is clicked or keyboard Enter/Space is
+      pushed.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'onClick?: (ev?: React.SyntheticEvent<HTMLElement>) => void;'
       return:
-        type:
-          - '(ev?: React.SyntheticEvent<HTMLElement>) => void'
-  - uid: '@fluentui/react!IDocumentCardProps#onClickHref:member'
-    summary: >-
-      A URL to navigate to when the card is clicked. If a function has also been provided, it will be used instead of
-      the URL.
-    name: onClickHref
+        type: '(ev?: React.SyntheticEvent&lt;HTMLElement&gt;) =&gt; void'
+  - name: onClickHref
+    uid: '@fluentui/react!IDocumentCardProps#onClickHref:member'
+    package: '@fluentui/react!'
     fullName: onClickHref
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      A URL to navigate to when the card is clicked. If a function has also been
+      provided, it will be used instead of the URL.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'onClickHref?: string;'
       return:
-        type:
-          - string
-  - uid: '@fluentui/react!IDocumentCardProps#onClickTarget:member'
-    summary: 'A target browser context for opening the link. If not specified, will open in the same tab/window.'
-    name: onClickTarget
+        type: string
+  - name: onClickTarget
+    uid: '@fluentui/react!IDocumentCardProps#onClickTarget:member'
+    package: '@fluentui/react!'
     fullName: onClickTarget
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      A target browser context for opening the link. If not specified, will open
+      in the same tab/window.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'onClickTarget?: string;'
       return:
-        type:
-          - string
-  - uid: '@fluentui/react!IDocumentCardProps#role:member'
-    summary: 'Aria role assigned to the documentCard (Eg. button, link). Use this to override the default assignment.'
-    name: role
+        type: string
+  - name: role
+    uid: '@fluentui/react!IDocumentCardProps#role:member'
+    package: '@fluentui/react!'
     fullName: role
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Aria role assigned to the documentCard (Eg. button, link). Use this to
+      override the default assignment.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'role?: string;'
       return:
-        type:
-          - string
-  - uid: '@fluentui/react!IDocumentCardProps#styles:member'
-    summary: Call to provide customized styling that will layer on top of the variant rules
-    name: styles
+        type: string
+  - name: styles
+    uid: '@fluentui/react!IDocumentCardProps#styles:member'
+    package: '@fluentui/react!'
     fullName: styles
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Call to provide customized styling that will layer on top of the variant
+      rules
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'styles?: IStyleFunctionOrObject<IDocumentCardStyleProps, IDocumentCardStyles>;'
+      content: >-
+        styles?: IStyleFunctionOrObject<IDocumentCardStyleProps,
+        IDocumentCardStyles>;
       return:
-        type:
-          - 'IStyleFunctionOrObject<IDocumentCardStyleProps, IDocumentCardStyles>'
-  - uid: '@fluentui/react!IDocumentCardProps#theme:member'
-    summary: Theme provided by HOC.
-    name: theme
+        type: >-
+          IStyleFunctionOrObject&lt;IDocumentCardStyleProps,
+          IDocumentCardStyles&gt;
+  - name: theme
+    uid: '@fluentui/react!IDocumentCardProps#theme:member'
+    package: '@fluentui/react!'
     fullName: theme
-    langs:
-      - typeScript
-    type: property
+    summary: Theme provided by HOC.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'theme?: ITheme;'
       return:
-        type:
-          - '@fluentui/theme!ITheme:interface'
-  - uid: '@fluentui/react!IDocumentCardProps#type:member'
-    summary: The type of DocumentCard to display.
-    name: type
+        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
+  - name: type
+    uid: '@fluentui/react!IDocumentCardProps#type:member'
+    package: '@fluentui/react!'
     fullName: type
-    langs:
-      - typeScript
-    type: property
+    summary: The type of DocumentCard to display.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'type?: DocumentCardType;'
       return:
-        type:
-          - DocumentCardType
+        type: DocumentCardType
+extends: IBaseProps&lt;IDocumentCard&gt;

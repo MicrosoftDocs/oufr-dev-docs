@@ -1,120 +1,128 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'office-ui-fabric-react!IChoiceGroupOptionProps:interface'
-    name: IChoiceGroupOptionProps
-    fullName: IChoiceGroupOptionProps
-    langs:
-      - typeScript
-    type: interface
-    extends:
-      - 'IChoiceGroupOption '
+### YamlMime:TSType
+name: IChoiceGroupOptionProps
+uid: 'office-ui-fabric-react!IChoiceGroupOptionProps:interface'
+package: office-ui-fabric-react!
+fullName: IChoiceGroupOptionProps
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: componentRef
+    uid: 'office-ui-fabric-react!IChoiceGroupOptionProps#componentRef:member'
     package: office-ui-fabric-react!
-    children:
-      - 'office-ui-fabric-react!IChoiceGroupOptionProps#componentRef:member'
-      - 'office-ui-fabric-react!IChoiceGroupOptionProps#focused:member'
-      - 'office-ui-fabric-react!IChoiceGroupOptionProps#name:member'
-      - 'office-ui-fabric-react!IChoiceGroupOptionProps#onBlur:member'
-      - 'office-ui-fabric-react!IChoiceGroupOptionProps#onChange:member'
-      - 'office-ui-fabric-react!IChoiceGroupOptionProps#onFocus:member'
-      - 'office-ui-fabric-react!IChoiceGroupOptionProps#required:member'
-      - 'office-ui-fabric-react!IChoiceGroupOptionProps#theme:member'
-  - uid: 'office-ui-fabric-react!IChoiceGroupOptionProps#componentRef:member'
-    summary: >-
-      Optional callback to access the IChoiceGroup interface. Use this instead of ref for accessing the public methods
-      and properties of the component.
-    name: componentRef
     fullName: componentRef
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Optional callback to access the IChoiceGroup interface. Use this instead
+      of ref for accessing the public methods and properties of the component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'componentRef?: IRefObject<IChoiceGroupOption>;'
       return:
-        type:
-          - IRefObject<IChoiceGroupOption>
-  - uid: 'office-ui-fabric-react!IChoiceGroupOptionProps#focused:member'
-    summary: 'Indicates if the ChoiceGroupOption should appear focused, visually'
-    name: focused
+        type: IRefObject&lt;IChoiceGroupOption&gt;
+  - name: focused
+    uid: 'office-ui-fabric-react!IChoiceGroupOptionProps#focused:member'
+    package: office-ui-fabric-react!
     fullName: focused
-    langs:
-      - typeScript
-    type: property
+    summary: 'Indicates if the ChoiceGroupOption should appear focused, visually'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'focused?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'office-ui-fabric-react!IChoiceGroupOptionProps#name:member'
-    summary: This value is used to group each ChoiceGroupOption into the same logical ChoiceGroup
-    name: name
+        type: boolean
+  - name: name
+    uid: 'office-ui-fabric-react!IChoiceGroupOptionProps#name:member'
+    package: office-ui-fabric-react!
     fullName: name
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      This value is used to group each ChoiceGroupOption into the same logical
+      ChoiceGroup
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'name?: string;'
       return:
-        type:
-          - string
-  - uid: 'office-ui-fabric-react!IChoiceGroupOptionProps#onBlur:member'
-    summary: A callback for receiving a notification when the choice has lost focus.
-    name: onBlur
+        type: string
+  - name: onBlur
+    uid: 'office-ui-fabric-react!IChoiceGroupOptionProps#onBlur:member'
+    package: office-ui-fabric-react!
     fullName: onBlur
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'onBlur?: (ev: React.FocusEvent<HTMLElement>, props?: IChoiceGroupOption) => void;'
-      return:
-        type:
-          - '(ev: React.FocusEvent<HTMLElement>, props?: IChoiceGroupOption) => void'
-  - uid: 'office-ui-fabric-react!IChoiceGroupOptionProps#onChange:member'
-    summary: A callback for receiving a notification when the choice has been changed.
-    name: onChange
-    fullName: onChange
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'onChange?: (evt?: React.FormEvent<HTMLElement | HTMLInputElement>, props?: IChoiceGroupOption) => void;'
-      return:
-        type:
-          - '(evt?: React.FormEvent<HTMLElement | HTMLInputElement>, props?: IChoiceGroupOption) => void'
-  - uid: 'office-ui-fabric-react!IChoiceGroupOptionProps#onFocus:member'
-    summary: A callback for receiving a notification when the choice has received focus.
-    name: onFocus
-    fullName: onFocus
-    langs:
-      - typeScript
-    type: property
+    summary: A callback for receiving a notification when the choice has lost focus.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        onFocus?: (ev?: React.FocusEvent<HTMLElement | HTMLInputElement>, props?: IChoiceGroupOption) => void |
-        undefined;
+        onBlur?: (ev: React.FocusEvent<HTMLElement>, props?: IChoiceGroupOption)
+        => void;
       return:
-        type:
-          - '(ev?: React.FocusEvent<HTMLElement | HTMLInputElement>, props?: IChoiceGroupOption) => void | undefined'
-  - uid: 'office-ui-fabric-react!IChoiceGroupOptionProps#required:member'
-    summary: 'If true, it specifies that an option must be selected in the ChoiceGroup before submitting the form'
-    name: required
+        type: >-
+          (ev: React.FocusEvent&lt;HTMLElement&gt;, props?: IChoiceGroupOption)
+          =&gt; void
+  - name: onChange
+    uid: 'office-ui-fabric-react!IChoiceGroupOptionProps#onChange:member'
+    package: office-ui-fabric-react!
+    fullName: onChange
+    summary: A callback for receiving a notification when the choice has been changed.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        onChange?: (evt?: React.FormEvent<HTMLElement | HTMLInputElement>,
+        props?: IChoiceGroupOption) => void;
+      return:
+        type: >-
+          (evt?: React.FormEvent&lt;HTMLElement | HTMLInputElement&gt;, props?:
+          IChoiceGroupOption) =&gt; void
+  - name: onFocus
+    uid: 'office-ui-fabric-react!IChoiceGroupOptionProps#onFocus:member'
+    package: office-ui-fabric-react!
+    fullName: onFocus
+    summary: >-
+      A callback for receiving a notification when the choice has received
+      focus.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        onFocus?: (ev?: React.FocusEvent<HTMLElement | HTMLInputElement>,
+        props?: IChoiceGroupOption) => void | undefined;
+      return:
+        type: >-
+          (ev?: React.FocusEvent&lt;HTMLElement | HTMLInputElement&gt;, props?:
+          IChoiceGroupOption) =&gt; void | undefined
+  - name: required
+    uid: 'office-ui-fabric-react!IChoiceGroupOptionProps#required:member'
+    package: office-ui-fabric-react!
     fullName: required
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      If true, it specifies that an option must be selected in the ChoiceGroup
+      before submitting the form
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'required?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'office-ui-fabric-react!IChoiceGroupOptionProps#theme:member'
-    summary: Theme (provided through customization.)
-    name: theme
+        type: boolean
+  - name: theme
+    uid: 'office-ui-fabric-react!IChoiceGroupOptionProps#theme:member'
+    package: office-ui-fabric-react!
     fullName: theme
-    langs:
-      - typeScript
-    type: property
+    summary: Theme (provided through customization.)
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'theme?: ITheme;'
       return:
-        type:
-          - '@fluentui/theme!ITheme:interface'
+        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
+extends: 'IChoiceGroupOption '

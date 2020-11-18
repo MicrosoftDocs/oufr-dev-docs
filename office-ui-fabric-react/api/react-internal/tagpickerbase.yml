@@ -1,37 +1,37 @@
-### YamlMime:UniversalReference
-items:
-  - uid: '@fluentui/react-internal!TagPickerBase:class'
-    name: TagPickerBase
-    fullName: TagPickerBase
-    langs:
-      - typeScript
-    type: class
-    extends:
-      - 'BasePicker<ITag, ITagPickerProps> '
+### YamlMime:TSType
+name: TagPickerBase
+uid: '@fluentui/react-internal!TagPickerBase:class'
+package: '@fluentui/react-internal!'
+fullName: TagPickerBase
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: (constructor)(props)
+    uid: '@fluentui/react-internal!TagPickerBase:constructor(1)'
     package: '@fluentui/react-internal!'
-    children:
-      - '@fluentui/react-internal!TagPickerBase:constructor(1)'
-      - '@fluentui/react-internal!TagPickerBase.defaultProps:member'
-  - uid: '@fluentui/react-internal!TagPickerBase:constructor(1)'
-    summary: Constructs a new instance of the `TagPickerBase` class
-    name: (constructor)(props)
     fullName: (constructor)(props)
-    langs:
-      - typeScript
-    type: constructor
+    summary: Constructs a new instance of the `TagPickerBase` class
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'constructor(props: ITagPickerProps);'
       parameters:
         - id: props
           description: ''
-          type:
-            - ITagPickerProps
-  - uid: '@fluentui/react-internal!TagPickerBase.defaultProps:member'
-    name: defaultProps
+          type: ITagPickerProps
+properties:
+  - name: defaultProps
+    uid: '@fluentui/react-internal!TagPickerBase.defaultProps:member'
+    package: '@fluentui/react-internal!'
     fullName: defaultProps
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: |-
         static defaultProps: {
@@ -39,9 +39,9 @@ items:
                 onRenderSuggestionsItem: (props: ITag) => JSX.Element;
             };
       return:
-        type:
-          - |-
-            {
-                    onRenderItem: (props: ITagItemProps) => JSX.Element;
-                    onRenderSuggestionsItem: (props: ITag) => JSX.Element;
-                }
+        type: |-
+          {
+                  onRenderItem: (props: ITagItemProps) =&gt; JSX.Element;
+                  onRenderSuggestionsItem: (props: ITag) =&gt; JSX.Element;
+              }
+extends: 'BasePicker&lt;ITag, ITagPickerProps&gt; '

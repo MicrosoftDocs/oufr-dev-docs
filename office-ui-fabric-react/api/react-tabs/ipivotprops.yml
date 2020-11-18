@@ -1,186 +1,182 @@
-### YamlMime:UniversalReference
-items:
-  - uid: '@fluentui/react-tabs!IPivotProps:interface'
-    name: IPivotProps
-    fullName: IPivotProps
-    langs:
-      - typeScript
-    type: interface
-    extends:
-      - React.HTMLAttributes<HTMLDivElement>
-      - 'React.RefAttributes<HTMLDivElement> '
+### YamlMime:TSType
+name: IPivotProps
+uid: '@fluentui/react-tabs!IPivotProps:interface'
+package: '@fluentui/react-tabs!'
+fullName: IPivotProps
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: className
+    uid: '@fluentui/react-tabs!IPivotProps#className:member'
     package: '@fluentui/react-tabs!'
-    children:
-      - '@fluentui/react-tabs!IPivotProps#className:member'
-      - '@fluentui/react-tabs!IPivotProps#componentRef:member'
-      - '@fluentui/react-tabs!IPivotProps#defaultSelectedKey:member'
-      - '@fluentui/react-tabs!IPivotProps#getTabId:member'
-      - '@fluentui/react-tabs!IPivotProps#headersOnly:member'
-      - '@fluentui/react-tabs!IPivotProps#linkFormat:member'
-      - '@fluentui/react-tabs!IPivotProps#linkSize:member'
-      - '@fluentui/react-tabs!IPivotProps#onLinkClick:member'
-      - '@fluentui/react-tabs!IPivotProps#overflowBehavior:member'
-      - '@fluentui/react-tabs!IPivotProps#selectedKey:member'
-      - '@fluentui/react-tabs!IPivotProps#styles:member'
-      - '@fluentui/react-tabs!IPivotProps#theme:member'
-  - uid: '@fluentui/react-tabs!IPivotProps#className:member'
-    summary: Additional css class to apply to the Pivot
-    name: className
     fullName: className
-    langs:
-      - typeScript
-    type: property
+    summary: Additional css class to apply to the Pivot
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'className?: string;'
       return:
-        type:
-          - string
-  - uid: '@fluentui/react-tabs!IPivotProps#componentRef:member'
-    summary: >-
-      Optional callback to access the IPivot interface. Use this instead of ref for accessing the public methods and
-      properties of the component.
-    name: componentRef
+        type: string
+  - name: componentRef
+    uid: '@fluentui/react-tabs!IPivotProps#componentRef:member'
+    package: '@fluentui/react-tabs!'
     fullName: componentRef
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Optional callback to access the IPivot interface. Use this instead of ref
+      for accessing the public methods and properties of the component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'componentRef?: React.RefObject<IPivot>;'
       return:
-        type:
-          - React.RefObject<IPivot>
-  - uid: '@fluentui/react-tabs!IPivotProps#defaultSelectedKey:member'
-    summary: >-
-      Default selected key for the pivot. Only provide this if the pivot is an uncontrolled component; otherwise, use
-      the `selectedKey` property.
-    name: defaultSelectedKey
+        type: React.RefObject&lt;IPivot&gt;
+  - name: defaultSelectedKey
+    uid: '@fluentui/react-tabs!IPivotProps#defaultSelectedKey:member'
+    package: '@fluentui/react-tabs!'
     fullName: defaultSelectedKey
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Default selected key for the pivot. Only provide this if the pivot is an
+      uncontrolled component; otherwise, use the `selectedKey` property.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'defaultSelectedKey?: string;'
       return:
-        type:
-          - string
-  - uid: '@fluentui/react-tabs!IPivotProps#getTabId:member'
-    summary: >-
-      Callback to customize how IDs are generated for each tab header. Useful if you're rendering content outside and
-      need to connect aria-labelledby.
-    name: getTabId
+        type: string
+  - name: getTabId
+    uid: '@fluentui/react-tabs!IPivotProps#getTabId:member'
+    package: '@fluentui/react-tabs!'
     fullName: getTabId
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Callback to customize how IDs are generated for each tab header. Useful if
+      you're rendering content outside and need to connect aria-labelledby.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'getTabId?: (itemKey: string, index: number) => string;'
       return:
-        type:
-          - '(itemKey: string, index: number) => string'
-  - uid: '@fluentui/react-tabs!IPivotProps#headersOnly:member'
-    summary: >-
-      Whether to skip rendering the tabpanel with the content of the selected tab. Use this prop if you plan to
-      separately render the tab content and don't want to leave an empty tabpanel in the page that may confuse Screen
-      Readers.
-    name: headersOnly
+        type: '(itemKey: string, index: number) =&gt; string'
+  - name: headersOnly
+    uid: '@fluentui/react-tabs!IPivotProps#headersOnly:member'
+    package: '@fluentui/react-tabs!'
     fullName: headersOnly
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Whether to skip rendering the tabpanel with the content of the selected
+      tab. Use this prop if you plan to separately render the tab content and
+      don't want to leave an empty tabpanel in the page that may confuse Screen
+      Readers.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'headersOnly?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: '@fluentui/react-tabs!IPivotProps#linkFormat:member'
-    summary: 'Link format (links, tabs)'
-    name: linkFormat
+        type: boolean
+  - name: linkFormat
+    uid: '@fluentui/react-tabs!IPivotProps#linkFormat:member'
+    package: '@fluentui/react-tabs!'
     fullName: linkFormat
-    langs:
-      - typeScript
-    type: property
+    summary: 'Link format (links, tabs)'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'linkFormat?: PivotLinkFormatType;'
       return:
-        type:
-          - PivotLinkFormatType
-  - uid: '@fluentui/react-tabs!IPivotProps#linkSize:member'
-    summary: 'Link size (normal, large)'
-    name: linkSize
+        type: PivotLinkFormatType
+  - name: linkSize
+    uid: '@fluentui/react-tabs!IPivotProps#linkSize:member'
+    package: '@fluentui/react-tabs!'
     fullName: linkSize
-    langs:
-      - typeScript
-    type: property
+    summary: 'Link size (normal, large)'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'linkSize?: PivotLinkSizeType;'
       return:
-        type:
-          - PivotLinkSizeType
-  - uid: '@fluentui/react-tabs!IPivotProps#onLinkClick:member'
-    summary: Callback for when the selected pivot item is changed.
-    name: onLinkClick
+        type: PivotLinkSizeType
+  - name: onLinkClick
+    uid: '@fluentui/react-tabs!IPivotProps#onLinkClick:member'
+    package: '@fluentui/react-tabs!'
     fullName: onLinkClick
-    langs:
-      - typeScript
-    type: property
+    summary: Callback for when the selected pivot item is changed.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'onLinkClick?: (item?: PivotItem, ev?: React.MouseEvent<HTMLElement>) => void;'
+      content: >-
+        onLinkClick?: (item?: PivotItem, ev?: React.MouseEvent<HTMLElement>) =>
+        void;
       return:
-        type:
-          - '(item?: PivotItem, ev?: React.MouseEvent<HTMLElement>) => void'
-  - uid: '@fluentui/react-tabs!IPivotProps#overflowBehavior:member'
+        type: >-
+          (item?: PivotItem, ev?: React.MouseEvent&lt;HTMLElement&gt;) =&gt;
+          void
+  - name: overflowBehavior
+    uid: '@fluentui/react-tabs!IPivotProps#overflowBehavior:member'
+    package: '@fluentui/react-tabs!'
+    fullName: overflowBehavior
     summary: >-
-      Overflow behavior when there is not enough room to display all of the links/tabs \* none: Pivot links will
-      overflow the container and may not be visible \* menu: Display an overflow menu that contains the tabs that don't
-      fit
+      Overflow behavior when there is not enough room to display all of the
+      links/tabs \* none: Pivot links will overflow the container and may not be
+      visible \* menu: Display an overflow menu that contains the tabs that
+      don't fit
 
        none
-    name: overflowBehavior
-    fullName: overflowBehavior
-    langs:
-      - typeScript
-    type: property
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'overflowBehavior?: ''none'' | ''menu'';'
       return:
-        type:
-          - '''none'' | ''menu'''
-  - uid: '@fluentui/react-tabs!IPivotProps#selectedKey:member'
-    summary: >-
-      Key of the selected pivot item. Updating this will override the Pivot's selected item state. Only provide this if
-      the pivot is a controlled component where you are maintaining the current state; otherwise, use
-      `defaultSelectedKey`<!-- -->.
-    name: selectedKey
+        type: '''none'' | ''menu'''
+  - name: selectedKey
+    uid: '@fluentui/react-tabs!IPivotProps#selectedKey:member'
+    package: '@fluentui/react-tabs!'
     fullName: selectedKey
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Key of the selected pivot item. Updating this will override the Pivot's
+      selected item state. Only provide this if the pivot is a controlled
+      component where you are maintaining the current state; otherwise, use
+      `defaultSelectedKey`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'selectedKey?: string | null;'
       return:
-        type:
-          - string | null
-  - uid: '@fluentui/react-tabs!IPivotProps#styles:member'
-    summary: Call to provide customized styling that will layer on top of the variant rules.
-    name: styles
+        type: string | null
+  - name: styles
+    uid: '@fluentui/react-tabs!IPivotProps#styles:member'
+    package: '@fluentui/react-tabs!'
     fullName: styles
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Call to provide customized styling that will layer on top of the variant
+      rules.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'styles?: IStyleFunctionOrObject<IPivotStyleProps, IPivotStyles>;'
       return:
-        type:
-          - 'IStyleFunctionOrObject<IPivotStyleProps, IPivotStyles>'
-  - uid: '@fluentui/react-tabs!IPivotProps#theme:member'
-    summary: Theme provided by High-Order Component.
-    name: theme
+        type: 'IStyleFunctionOrObject&lt;IPivotStyleProps, IPivotStyles&gt;'
+  - name: theme
+    uid: '@fluentui/react-tabs!IPivotProps#theme:member'
+    package: '@fluentui/react-tabs!'
     fullName: theme
-    langs:
-      - typeScript
-    type: property
+    summary: Theme provided by High-Order Component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'theme?: ITheme;'
       return:
-        type:
-          - '@fluentui/theme!ITheme:interface'
+        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
+extends: React.HTMLAttributes&lt;HTMLDivElement&gt;

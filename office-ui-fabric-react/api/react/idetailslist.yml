@@ -1,59 +1,61 @@
-### YamlMime:UniversalReference
-items:
-  - uid: '@fluentui/react!IDetailsList:interface'
-    name: IDetailsList
-    fullName: IDetailsList
-    langs:
-      - typeScript
-    type: interface
-    extends:
-      - 'IList '
+### YamlMime:TSType
+name: IDetailsList
+uid: '@fluentui/react!IDetailsList:interface'
+package: '@fluentui/react!'
+fullName: IDetailsList
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: focusIndex
+    uid: '@fluentui/react!IDetailsList#focusIndex:member'
     package: '@fluentui/react!'
-    children:
-      - '@fluentui/react!IDetailsList#focusIndex:member'
-      - '@fluentui/react!IDetailsList#forceUpdate:member'
-      - '@fluentui/react!IDetailsList#getStartItemIndexInView:member'
-  - uid: '@fluentui/react!IDetailsList#focusIndex:member'
-    summary: Scroll to and focus the item at the given index. focusIndex will call scrollToIndex on the specified index.
-    name: focusIndex
     fullName: focusIndex
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Scroll to and focus the item at the given index. focusIndex will call
+      scrollToIndex on the specified index.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        focusIndex: (index: number, forceIntoFirstElement?: boolean, measureItem?: (itemIndex: number) => number,
-        scrollToMode?: ScrollToMode) => void;
+        focusIndex: (index: number, forceIntoFirstElement?: boolean,
+        measureItem?: (itemIndex: number) => number, scrollToMode?:
+        ScrollToMode) => void;
       return:
-        type:
-          - >-
-            (index: number, forceIntoFirstElement?: boolean, measureItem?: (itemIndex: number) => number, scrollToMode?:
-            ScrollToMode) => void
-  - uid: '@fluentui/react!IDetailsList#forceUpdate:member'
-    summary: >-
-      Ensures that the list content is updated. Call this in cases where the list prop updates don't change, but the
-      list still needs to be re-evaluated. For example, if a sizer bar is adjusted and causes the list width to change,
-      you can call this to force a re-evaluation. Be aware that this can be an expensive operation and should be done
-      sparingly.
-    name: forceUpdate
+        type: >-
+          (index: number, forceIntoFirstElement?: boolean, measureItem?:
+          (itemIndex: number) =&gt; number, scrollToMode?: ScrollToMode) =&gt;
+          void
+  - name: forceUpdate
+    uid: '@fluentui/react!IDetailsList#forceUpdate:member'
+    package: '@fluentui/react!'
     fullName: forceUpdate
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Ensures that the list content is updated. Call this in cases where the
+      list prop updates don't change, but the list still needs to be
+      re-evaluated. For example, if a sizer bar is adjusted and causes the list
+      width to change, you can call this to force a re-evaluation. Be aware that
+      this can be an expensive operation and should be done sparingly.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'forceUpdate: () => void;'
       return:
-        type:
-          - () => void
-  - uid: '@fluentui/react!IDetailsList#getStartItemIndexInView:member'
-    summary: Get the start index of the page that is currently in view
-    name: getStartItemIndexInView
+        type: () =&gt; void
+  - name: getStartItemIndexInView
+    uid: '@fluentui/react!IDetailsList#getStartItemIndexInView:member'
+    package: '@fluentui/react!'
     fullName: getStartItemIndexInView
-    langs:
-      - typeScript
-    type: property
+    summary: Get the start index of the page that is currently in view
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'getStartItemIndexInView: () => number;'
       return:
-        type:
-          - () => number
+        type: () =&gt; number
+extends: 'IList '
