@@ -58,6 +58,27 @@ functions:
       return:
         type: '<xref uid="@fluentui/theme!Theme:interface" />'
         description: ''
+  - name: 'getTokens(theme, userTokens)'
+    uid: '@fluentui/theme!getTokens:function(1)'
+    package: '@fluentui/theme!'
+    summary: Get tokens from theme object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        export declare function getTokens(theme: Theme, userTokens?:
+        RecursivePartial<Tokens>): RecursivePartial<Tokens>;
+      parameters:
+        - id: theme
+          description: ''
+          type: '<xref uid="@fluentui/theme!Theme:interface" />'
+        - id: userTokens
+          description: ''
+          type: RecursivePartial&lt;Tokens&gt;
+      return:
+        type: RecursivePartial&lt;Tokens&gt;
+        description: ''
   - name: 'mergeThemes(theme, partialTheme)'
     uid: '@fluentui/theme!mergeThemes:function(1)'
     package: '@fluentui/theme!'

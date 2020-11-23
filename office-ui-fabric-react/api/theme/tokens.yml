@@ -20,14 +20,14 @@ properties:
     syntax:
       content: |-
         color: {
-                body: ColorTokenSet & TokenSetType;
-                brand: ColorTokenSet & TokenSetType;
+                body: ColorTokens & TokenSetType;
+                brand: ColorTokens & TokenSetType;
                 [key: string]: TokenSetType;
             };
       return:
         type: |-
           {
-                  body: ColorTokenSet & TokenSetType;
-                  brand: ColorTokenSet & TokenSetType;
+                  body: ColorTokens & TokenSetType;
+                  brand: ColorTokens & TokenSetType;
                   [key: string]: TokenSetType;
               }
