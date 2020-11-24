@@ -23,6 +23,18 @@ properties:
       content: 'allowTouchBodyScroll?: boolean;'
       return:
         type: boolean
+  - name: children
+    uid: '@fluentui/react-internal!IModalProps#children:member'
+    package: '@fluentui/react-internal!'
+    fullName: children
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'children?: React.ReactNode;'
+      return:
+        type: React.ReactNode
   - name: className
     uid: '@fluentui/react-internal!IModalProps#className:member'
     package: '@fluentui/react-internal!'
@@ -40,8 +52,8 @@ properties:
     package: '@fluentui/react-internal!'
     fullName: componentRef
     summary: >-
-      Optional callback to access the IDialog interface. Use this instead of ref
-      for accessing the public methods and properties of the component.
+      Optional ref to access the `IModal` interface. Use this instead of `ref`
+      for accessing public API of the component.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -264,7 +276,7 @@ properties:
     uid: '@fluentui/react-internal!IModalProps#theme:member'
     package: '@fluentui/react-internal!'
     fullName: theme
-    summary: Theme provided by High-Order Component.
+    summary: Theme provided by higher-order component.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -298,4 +310,4 @@ properties:
       content: 'topOffsetFixed?: boolean;'
       return:
         type: boolean
-extends: React.HTMLAttributes&lt;HTMLElement&gt;
+extends: React.RefAttributes&lt;HTMLDivElement&gt;

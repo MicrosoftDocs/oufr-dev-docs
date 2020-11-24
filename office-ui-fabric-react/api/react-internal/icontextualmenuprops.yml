@@ -421,27 +421,15 @@ properties:
     fullName: onRestoreFocus
     summary: >-
       Called when the component is unmounting, and focus needs to be restored.
-      Argument passed down contains two variables, the element that the
-      underlying popup believes focus should go to and whether or not the popup
-      currently contains focus. If this prop is provided, focus will not be
-      restored automatically, you'll need to call originalElement.focus()
+      If this is provided, focus will not be restored automatically, and you'll
+      need to call `params.originalElement.focus()`<!-- -->.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        onRestoreFocus?: (options: {
-                originalElement?: HTMLElement | Window;
-                containsFocus: boolean;
-                documentContainsFocus: boolean;
-            }) => void;
+      content: 'onRestoreFocus?: (params: IPopupRestoreFocusParams) => void;'
       return:
-        type: |-
-          (options: {
-                  originalElement?: HTMLElement | Window;
-                  containsFocus: boolean;
-                  documentContainsFocus: boolean;
-              }) =&gt; void
+        type: '(params: IPopupRestoreFocusParams) =&gt; void'
   - name: shouldFocusOnContainer
     uid: >-
       @fluentui/react-internal!IContextualMenuProps#shouldFocusOnContainer:member
