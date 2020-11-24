@@ -111,8 +111,8 @@ properties:
     package: '@fluentui/react-internal!'
     fullName: calloutMaxHeight
     summary: >-
-      Set max height of callout When not set the callout will expand with
-      contents up to the bottom of the screen
+      Set max height of callout. When not set, the callout will expand with
+      contents up to the bottom of the screen.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -372,27 +372,15 @@ properties:
     fullName: onRestoreFocus
     summary: >-
       Called when the component is unmounting, and focus needs to be restored.
-      Argument passed down contains two variables, the element that the
-      underlying popup believes focus should go to \* and whether or not the
-      popup currently contains focus. If this is provided, focus will not be
-      restored automatically, you'll need to call originalElement.focus()
+      If this is provided, focus will not be restored automatically, and you'll
+      need to call `params.originalElement.focus()`<!-- -->.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        onRestoreFocus?: (options: {
-                originalElement?: HTMLElement | Window;
-                containsFocus: boolean;
-                documentContainsFocus: boolean;
-            }) => void;
+      content: 'onRestoreFocus?: (params: IPopupRestoreFocusParams) => void;'
       return:
-        type: |-
-          (options: {
-                  originalElement?: HTMLElement | Window;
-                  containsFocus: boolean;
-                  documentContainsFocus: boolean;
-              }) =&gt; void
+        type: '(params: IPopupRestoreFocusParams) =&gt; void'
   - name: onScroll
     uid: '@fluentui/react-internal!ICalloutProps#onScroll:member'
     package: '@fluentui/react-internal!'
@@ -482,9 +470,8 @@ properties:
     fullName: setInitialFocus
     summary: >-
       If true then the callout will attempt to focus the first focusable element
-      that it contains. If it doesn't find an element, no focus will be set and
-      the method will return false. This means that it's the contents
-      responsibility to either set focus or have focusable items.
+      that it contains. If it doesn't find a focusable element, no focus will be
+      set.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -514,7 +501,7 @@ properties:
     remarks: ''
     isPreview: false
     isDeprecated: true
-    customDeprecatedMessage: use onRestoreFocus callback instead
+    customDeprecatedMessage: use `onRestoreFocus` instead
     syntax:
       content: 'shouldRestoreFocus?: boolean;'
       return:
@@ -524,11 +511,11 @@ properties:
     package: '@fluentui/react-internal!'
     fullName: shouldUpdateWhenHidden
     summary: >-
-      If true, the component will be updated even when hidden=true. Note that
-      this would consume resources to update even though nothing is being shown
-      to the user. This might be helpful though if your updates are small and
-      you want the callout to be revealed fast to the user when hidden is set to
-      false.
+      If true, the component will be updated even when `hidden` is true. Note
+      that this would consume resources to update even though nothing is being
+      shown to the user. This might be helpful though if your updates are small
+      and you want the callout to be revealed fast to the user when hidden is
+      set to false.
     remarks: ''
     isPreview: false
     isDeprecated: false
