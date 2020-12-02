@@ -278,7 +278,9 @@ properties:
     uid: '@fluentui/react-internal!ISpinButtonProps#max:member'
     package: '@fluentui/react-internal!'
     fullName: max
-    summary: Max value of the control.
+    summary: >-
+      Max value of the control. If not provided, the control has no maximum
+      value.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -290,7 +292,9 @@ properties:
     uid: '@fluentui/react-internal!ISpinButtonProps#min:member'
     package: '@fluentui/react-internal!'
     fullName: min
-    summary: Min value of the control.
+    summary: >-
+      Min value of the control. If not provided, the control has no minimum
+      value.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -476,4 +480,4 @@ properties:
       content: 'value?: string;'
       return:
         type: string
-extends: React.HTMLAttributes&lt;HTMLInputElement&gt;
+extends: React.HTMLAttributes&lt;HTMLDivElement&gt;
