@@ -30,14 +30,15 @@ properties:
     fullName: dropdownWidth
     summary: >-
       Custom width for dropdown. If value is 0, width of the input field is
-      used.
+      used. If value is 'auto', width of the input field is used by default, and
+      it can grow wider to fit the content.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'dropdownWidth?: number;'
+      content: 'dropdownWidth?: number | ''auto'';'
       return:
-        type: number
+        type: number | 'auto'
   - name: isDisabled
     uid: '@fluentui/react!IDropdownProps#isDisabled:member'
     package: '@fluentui/react!'
