@@ -4,7 +4,7 @@ author: Vitalius1
 ms.author: vibraga
 ---
 
-# Get Started with Fabric React v7.156.0
+# Get Started with Fabric React v7.157.0
 
 :tada: The **Office UI Fabric React** project is evolving to **Fluent UI**. :tada:
 
@@ -114,7 +114,7 @@ cd gatsby-site
 gatsby develop
 ```
 
-This app be deployed to the cloud in one click—[learn more here](https://github.com/microsoft/gatsby-starter-uifabric#-deploy).
+This app can be deployed to the cloud in one click—[learn more here](https://github.com/microsoft/gatsby-starter-uifabric#-deploy).
 
 
 
