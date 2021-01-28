@@ -13,7 +13,7 @@ properties:
     uid: '@fluentui/react-internal!ICoachmarkProps#ariaAlertText:member'
     package: '@fluentui/react-internal!'
     fullName: ariaAlertText
-    summary: Text to announce to screen reader / narrator when Coachmark is displayed
+    summary: Text for screen reader to announce when Coachmark is displayed
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -26,8 +26,8 @@ properties:
     package: '@fluentui/react-internal!'
     fullName: ariaDescribedBy
     summary: >-
-      Defines the element id referencing the element containing the description
-      for the Coachmark.
+      ID used for the internal element which contains description text for the
+      Coachmark (don't render an element with this ID yourself).
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -39,7 +39,9 @@ properties:
     uid: '@fluentui/react-internal!ICoachmarkProps#ariaDescribedByText:member'
     package: '@fluentui/react-internal!'
     fullName: ariaDescribedByText
-    summary: Defines the text content for the ariaDescribedBy element
+    summary: >-
+      Defines the text content for the `ariaDescribedBy` element Not used unless
+      `ariaDescribeddBy` is also provided.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -52,8 +54,8 @@ properties:
     package: '@fluentui/react-internal!'
     fullName: ariaLabelledBy
     summary: >-
-      Defines the element id referencing the element containing label text for
-      Coachmark.
+      ID used for the internal element which contains label text for the
+      Coachmark (don't render an element with this ID yourself).
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -65,7 +67,9 @@ properties:
     uid: '@fluentui/react-internal!ICoachmarkProps#ariaLabelledByText:member'
     package: '@fluentui/react-internal!'
     fullName: ariaLabelledByText
-    summary: Defines the text content for the ariaLabelledBy element
+    summary: >-
+      Defines the text content for the `ariaLabelledBy` element. Not used unless
+      `ariaLabelledBy` is also provided.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -101,7 +105,7 @@ properties:
     uid: '@fluentui/react-internal!ICoachmarkProps#beakHeight:member'
     package: '@fluentui/react-internal!'
     fullName: beakHeight
-    summary: The height of the Beak component.
+    summary: ''
     remarks: ''
     isPreview: false
     isDeprecated: true
@@ -114,7 +118,7 @@ properties:
     uid: '@fluentui/react-internal!ICoachmarkProps#beakWidth:member'
     package: '@fluentui/react-internal!'
     fullName: beakWidth
-    summary: The width of the Beak component.
+    summary: ''
     remarks: ''
     isPreview: false
     isDeprecated: true
@@ -151,7 +155,7 @@ properties:
     uid: '@fluentui/react-internal!ICoachmarkProps#collapsed:member'
     package: '@fluentui/react-internal!'
     fullName: collapsed
-    summary: The starting collapsed state for the Coachmark. Use `isCollapsed` instead.
+    summary: The starting collapsed state for the Coachmark.
     remarks: ''
     isPreview: false
     isDeprecated: true
@@ -177,8 +181,8 @@ properties:
     package: '@fluentui/react-internal!'
     fullName: componentRef
     summary: >-
-      Optional callback to access the ICoachmark interface. Use this instead of
-      ref for accessing the public methods and properties of the component.
+      Optional callback to access the `ICoachmark` interface. Use this instead
+      of `ref` for accessing the public methods and properties of the component.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -215,7 +219,7 @@ properties:
     uid: '@fluentui/react-internal!ICoachmarkProps#height:member'
     package: '@fluentui/react-internal!'
     fullName: height
-    summary: The height of the Coachmark.
+    summary: ''
     remarks: ''
     isPreview: false
     isDeprecated: true
@@ -402,13 +406,13 @@ properties:
     uid: '@fluentui/react-internal!ICoachmarkProps#teachingBubbleRef:member'
     package: '@fluentui/react-internal!'
     fullName: teachingBubbleRef
-    summary: Ref for TeachingBubble
+    summary: ''
     remarks: ''
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
-      Coachmark uses `focusFirstChild` utility instead to focus on
-      TeachingBubbleContent
+      Not used. Coachmark uses `focusFirstChild` utility instead to focus on
+      TeachingBubbleContent.
     syntax:
       content: 'teachingBubbleRef?: ITeachingBubble;'
       return:
@@ -429,7 +433,7 @@ properties:
     uid: '@fluentui/react-internal!ICoachmarkProps#width:member'
     package: '@fluentui/react-internal!'
     fullName: width
-    summary: The width of the Coachmark.
+    summary: ''
     remarks: ''
     isPreview: false
     isDeprecated: true

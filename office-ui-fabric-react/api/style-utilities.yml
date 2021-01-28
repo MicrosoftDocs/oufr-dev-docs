@@ -53,7 +53,8 @@ functions:
       browser.
     remarks: ''
     isPreview: false
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: Use `getHighContrastNoAdjustStyle`
     syntax:
       content: |-
         export declare function getEdgeChromiumNoHighContrastAdjustSelector(): {
@@ -237,6 +238,18 @@ functions:
           type: boolean
       return:
         type: GlobalClassNames&lt;T&gt;
+        description: ''
+  - name: getHighContrastNoAdjustStyle()
+    uid: '@fluentui/style-utilities!getHighContrastNoAdjustStyle:function(1)'
+    package: '@fluentui/style-utilities!'
+    summary: The style which turns off high contrast adjustment in browsers.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'export declare function getHighContrastNoAdjustStyle(): IRawStyle;'
+      return:
+        type: '<xref uid="@fluentui/merge-styles!IRawStyle:interface" />'
         description: ''
   - name: getIcon(name)
     uid: '@fluentui/style-utilities!getIcon:function(1)'

@@ -13,7 +13,7 @@ properties:
     uid: '@fluentui/react-internal!IAutofillProps#componentRef:member'
     package: '@fluentui/react-internal!'
     fullName: componentRef
-    summary: Gets the components ref.
+    summary: Gets the component ref.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -27,9 +27,8 @@ properties:
     fullName: defaultVisibleValue
     summary: >-
       The default value to be visible. This is different from placeholder
-      because it actually sets the current value of the picker Note: This will
-      only be set upon component creation and will not update with subsequent
-      prop updates.
+      because it actually sets the current value of the picker. Note: Updates to
+      this prop will not be respected.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -42,11 +41,11 @@ properties:
     package: '@fluentui/react-internal!'
     fullName: enableAutofillOnKeyPress
     summary: >-
-      When the user uses left arrow, right arrow, clicks, or deletes text
-      autofill is disabled Since the user has taken control. It is automatically
+      When the user uses left arrow, right arrow, clicks, or deletes text,
+      autofill is disabled since the user has taken control. It is automatically
       re-enabled when the user enters text and the cursor is at the end of the
-      text in the input box. This specifies other key presses that will
-      re-enabled. autofill.
+      text in the input box. This prop can be used to override the default list
+      of key presses that will re-enable autofill.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -90,8 +89,8 @@ properties:
     summary: >-
       Should the value of the input be selected? True if we're focused on our
       input, false otherwise. We need to explicitly not select the text in the
-      autofill if we are no longer focused. In IE11, selecting a input will also
-      focus the input, causing other element's focus to be stolen.
+      autofill if we are no longer focused. In IE11, selecting an input will
+      also focus the input, causing other element's focus to be stolen.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -106,7 +105,8 @@ properties:
     fullName: shouldSelectFullInputValueInComponentDidUpdate
     summary: >-
       Handler for checking if the full value of the input should be selected in
-      componentDidUpdate
+      `componentDidUpdate`<!-- -->. Returns whether the full value of the input
+      should be selected.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -133,12 +133,13 @@ properties:
     fullName: updateValueInWillReceiveProps
     summary: >-
       Handler for checking and updating the value if needed in
-      componentWillReceiveProps
+      `componentWillReceiveProps`<!-- -->. Returns the updated value to set, if
+      needed.
     remarks: ''
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
-      use standard input Value prop instead if the autofill should act like a
+      use standard input `value` prop instead if the autofill should act like a
       controlled component
     syntax:
       content: 'updateValueInWillReceiveProps?: () => string | null;'
