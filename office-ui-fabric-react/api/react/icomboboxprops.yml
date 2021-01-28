@@ -15,7 +15,7 @@ properties:
     fullName: allowFreeform
     summary: >-
       Whether the ComboBox is free form, meaning that the user input is not
-      bound to provided options. Defaults to false.
+      bound to provided options.  false
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -28,8 +28,8 @@ properties:
     package: '@fluentui/react!'
     fullName: ariaDescribedBy
     summary: >-
-      Optional prop to add a string id that can be referenced inside the
-      aria-describedby attribute.
+      ID of an element containing a description of the ComboBox for screen
+      reader users.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -57,9 +57,7 @@ properties:
     uid: '@fluentui/react!IComboBoxProps#autofill:member'
     package: '@fluentui/react!'
     fullName: autofill
-    summary: >-
-      The AutofillProps to be passed into the Autofill component inside
-      ComboBox.
+    summary: Props for the Autofill component (text input) inside the ComboBox.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -83,7 +81,7 @@ properties:
     uid: '@fluentui/react!IComboBoxProps#caretDownButtonStyles:member'
     package: '@fluentui/react!'
     fullName: caretDownButtonStyles
-    summary: Styles for the caret down button.
+    summary: Styles for the caret down (expand) button.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -95,9 +93,7 @@ properties:
     uid: '@fluentui/react!IComboBoxProps#comboBoxOptionStyles:member'
     package: '@fluentui/react!'
     fullName: comboBoxOptionStyles
-    summary: >-
-      Default styles that should be applied to ComboBox options, in case an
-      option does not come with user-defined custom styles
+    summary: Default styles that should be applied to ComboBox options.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -110,8 +106,8 @@ properties:
     package: '@fluentui/react!'
     fullName: componentRef
     summary: >-
-      Optional callback to access the IComboBox interface. Use this instead of
-      ref for accessing the public methods and properties of the component.
+      Optional ref to access the `IComboBox` interface. Use this instead of
+      `ref` for accessing the public methods and properties of the component.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -136,8 +132,8 @@ properties:
     package: '@fluentui/react!'
     fullName: dropdownWidth
     summary: >-
-      Custom width for dropdown (unless useComboBoxAsMenuWidth is undefined or
-      false)
+      Custom width for ComboBox menu. Mutually exclusive with
+      `useComboBoxAsMenuWidth`<!-- -->.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -170,7 +166,7 @@ properties:
     uid: '@fluentui/react!IComboBoxProps#iconButtonProps:member'
     package: '@fluentui/react!'
     fullName: iconButtonProps
-    summary: Optional iconButton props on ComboBox.
+    summary: Optional props for the caret down (expand) button.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -183,10 +179,9 @@ properties:
     package: '@fluentui/react!'
     fullName: isButtonAriaHidden
     summary: >-
-      Sets the 'aria-hidden' attribute on the ComboBox's button element
-      instructing screen readers how to handle the element. This element is
-      hidden by default because all functionality is handled by the input
-      element and the arrow button is only meant to be decorative.
+      Whether to hide the ComboBox's button element from screen readers. This is
+      true by default because all functionality is handled by the input element,
+      and the arrow button is only meant to be decorative.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -213,10 +208,9 @@ properties:
     package: '@fluentui/react!'
     fullName: onChange
     summary: >-
-      Callback issued when either: 1) The selected option changes. 2) A manually
-      edited value is submitted. In this case there may not be a matched option
-      if allowFreeform is also true (and hence only value would be true, the
-      other parameter would be null in this case)
+      Called when either: 1) the selected option changes 2) a manually edited
+      value is submitted. In this case, if `allowFreeform` is true, it's
+      possible that only `value` will be provided (`option` will be unset).
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -232,7 +226,7 @@ properties:
     uid: '@fluentui/react!IComboBoxProps#onItemClick:member'
     package: '@fluentui/react!'
     fullName: onItemClick
-    summary: Callback issued when a ComboBox item is clicked.
+    summary: Called when a ComboBox item is clicked.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -383,11 +377,15 @@ properties:
     package: '@fluentui/react!'
     fullName: persistMenu
     summary: >-
-      Menu will not be created or destroyed when opened or closed, instead it
-      will be hidden. This will improve perf of the menu opening but could
-      potentially impact overall perf by having more elements in the dom. Should
-      only be used when perf is important. Note: This may increase the amount of
-      time it takes for the ComboBox itself to mount.
+      If true, the menu will be created the first time the ComboBox is rendered,
+      and shown or hidden as appropriate (rather than being created on open and
+      destroyed on close). This will improve perf of the menu opening but could
+      potentially impact overall perf by having more elements in the DOM. Should
+      only be used when perf is important.
+
+
+      Note: This may increase the amount of time it takes for the ComboBox
+      itself to mount.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -400,9 +398,9 @@ properties:
     package: '@fluentui/react!'
     fullName: scrollSelectedToTop
     summary: >-
-      When options are scrollable the selected option is positioned at the top
-      of the callout when it is opened (unless it has reached the end of the
-      scrollbar).
+      If true, when options are scrollable, the selected option is positioned at
+      the top of the callout when it is opened (unless it has reached the end of
+      the scrollbar).
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -442,7 +440,7 @@ properties:
     uid: '@fluentui/react!IComboBoxProps#text:member'
     package: '@fluentui/react!'
     fullName: text
-    summary: 'Value to show in the input, does not have to map to a ComboBox option.'
+    summary: Value to show in the input. Does not have to map to an option.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -466,7 +464,9 @@ properties:
     uid: '@fluentui/react!IComboBoxProps#useComboBoxAsMenuWidth:member'
     package: '@fluentui/react!'
     fullName: useComboBoxAsMenuWidth
-    summary: Whether to use the ComboBox width as the menu's width.
+    summary: >-
+      Whether to use the ComboBox's width as the menu's width. Mutually
+      exclusive with `dropdownWidth`<!-- -->.
     remarks: ''
     isPreview: false
     isDeprecated: false

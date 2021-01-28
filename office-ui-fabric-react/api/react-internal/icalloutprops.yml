@@ -16,7 +16,7 @@ properties:
     summary: >-
       If true the positioning logic will prefer to flip edges rather than to
       nudge the rectangle to fit within bounds, thus making sure the element
-      aligns perfectly with target's alignment edge
+      aligns perfectly with target's alignment edge.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -28,9 +28,7 @@ properties:
     uid: '@fluentui/react-internal!ICalloutProps#ariaDescribedBy:member'
     package: '@fluentui/react-internal!'
     fullName: ariaDescribedBy
-    summary: >-
-      Defines the element id referencing the element containing the description
-      for the callout.
+    summary: ID of the element which contains the description for the callout.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -54,9 +52,7 @@ properties:
     uid: '@fluentui/react-internal!ICalloutProps#ariaLabelledBy:member'
     package: '@fluentui/react-internal!'
     fullName: ariaLabelledBy
-    summary: >-
-      Defines the element id referencing the element containing label text for
-      callout.
+    summary: ID of the element which contains label text for the callout.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -93,8 +89,8 @@ properties:
     package: '@fluentui/react-internal!'
     fullName: bounds
     summary: >-
-      The bounding rectangle (or callback that returns a rectangle) for which
-      the contextual menu can appear in.
+      The bounding rectangle the callout can appear in (or callback that returns
+      a rectangle).
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -179,8 +175,8 @@ properties:
     package: '@fluentui/react-internal!'
     fullName: coverTarget
     summary: >-
-      If true the position returned will have the menu element cover the target.
-      If false then it will position next to the target;
+      If true, the callout element will be positioned to cover the target. If
+      false, it will position next to the target.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -236,7 +232,7 @@ properties:
     uid: '@fluentui/react-internal!ICalloutProps#doNotLayer:member'
     package: '@fluentui/react-internal!'
     fullName: doNotLayer
-    summary: If true do not render on a new layer. If false render on a new layer.
+    summary: 'If true, do not render on a new layer. If false, render on a new layer.'
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -292,9 +288,9 @@ properties:
     package: '@fluentui/react-internal!'
     fullName: hideOverflow
     summary: >-
-      Manually set OverflowYHidden style prop to true on calloutMain element A
-      variety of callout load animations will need this to hide the scollbar
-      that can appear
+      Manually set `overflowYHidden` style prop to true on `calloutMain`
+      element. A variety of callout load animations will need this to hide the
+      scollbar that can appear.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -306,7 +302,7 @@ properties:
     uid: '@fluentui/react-internal!ICalloutProps#isBeakVisible:member'
     package: '@fluentui/react-internal!'
     fullName: isBeakVisible
-    summary: If true then the beak is visible. If false it will not be shown.
+    summary: Whether the beak is visible.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -318,7 +314,7 @@ properties:
     uid: '@fluentui/react-internal!ICalloutProps#layerProps:member'
     package: '@fluentui/react-internal!'
     fullName: layerProps
-    summary: Optional props to pass to the Layer component hosting the panel.
+    summary: Optional props to pass to the Layer component hosting the callout.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -412,10 +408,10 @@ properties:
     package: '@fluentui/react-internal!'
     fullName: preventDismissOnEvent
     summary: >-
-      If defined, then takes priority over preventDismissOnLostFocus,
-      preventDismissOnResize, and preventDismissOnScroll. If it returns true,
-      then callout will not dismiss for this event. If not defined or returns
-      false, callout can dismiss for this event.
+      If defined, then takes priority over `preventDismissOnLostFocus`<!-- -->,
+      `preventDismissOnResize`<!-- -->, and `preventDismissOnScroll`<!-- -->. If
+      it returns true, the callout will not dismiss for this event. If not
+      defined or returns false, the callout can dismiss for this event.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -470,7 +466,9 @@ properties:
     uid: '@fluentui/react-internal!ICalloutProps#role:member'
     package: '@fluentui/react-internal!'
     fullName: role
-    summary: 'Aria role assigned to the callout (Eg. dialog, alertdialog).'
+    summary: >-
+      Aria role assigned to the callout (e.g. `dialog`<!-- -->,
+      `alertdialog`<!-- -->).
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -483,9 +481,9 @@ properties:
     package: '@fluentui/react-internal!'
     fullName: setInitialFocus
     summary: >-
-      If true then the callout will attempt to focus the first focusable element
-      that it contains. If it doesn't find a focusable element, no focus will be
-      set.
+      If true, then the callout will attempt to focus the first focusable
+      element that it contains. If it doesn't find a focusable element, no focus
+      will be set.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -497,7 +495,7 @@ properties:
     uid: '@fluentui/react-internal!ICalloutProps#shouldDismissOnWindowFocus:member'
     package: '@fluentui/react-internal!'
     fullName: shouldDismissOnWindowFocus
-    summary: If true then the callout will dismiss when the window gets focus
+    summary: 'If true, callout will dismiss when the window gets focus.'
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -510,8 +508,10 @@ properties:
     package: '@fluentui/react-internal!'
     fullName: shouldRestoreFocus
     summary: >-
-      If true, when this component is unmounted, focus will be restored to the
-      element that had focus when the component first mounted.
+      If specified, determines whether the underlying
+      [Popup](xref:@fluentui/react-internal!Popup:var) component should try to
+      restore focus when it is dismissed. When set to false, the Popup won't try
+      to restore focus to the last focused element.
     remarks: ''
     isPreview: false
     isDeprecated: true
@@ -528,8 +528,8 @@ properties:
       If true, the component will be updated even when `hidden` is true. Note
       that this would consume resources to update even though nothing is being
       shown to the user. This might be helpful though if your updates are small
-      and you want the callout to be revealed fast to the user when hidden is
-      set to false.
+      and you want the callout to be revealed quickly to the user when `hidden`
+      is set to false.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -577,9 +577,9 @@ properties:
     fullName: target
     summary: >-
       The target that the Callout should try to position itself based on. It can
-      be either an Element a querySelector string of a valid Element or a
-      MouseEvent. If MouseEvent is given then the origin point of the event will
-      be used.
+      be an element, a query selector string of a valid element, or a
+      `MouseEvent`<!-- -->. If a `MouseEvent` is given, the origin point of the
+      event will be used.
     remarks: ''
     isPreview: false
     isDeprecated: false
