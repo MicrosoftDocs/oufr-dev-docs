@@ -1,0 +1,170 @@
+### YamlMime:TSType
+name: IPivotItemProps
+uid: '@fluentui/react-internal!IPivotItemProps:interface'
+package: '@fluentui/react-internal!'
+fullName: IPivotItemProps
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: alwaysRender
+    uid: '@fluentui/react-internal!IPivotItemProps#alwaysRender:member'
+    package: '@fluentui/react-internal!'
+    fullName: alwaysRender
+    summary: >-
+      Defines whether to always render the pivot item (regardless of whether it
+      is selected or not). Useful if you're rendering content that is expensive
+      to mount.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'alwaysRender?: boolean;'
+      return:
+        type: boolean
+  - name: ariaLabel
+    uid: '@fluentui/react-internal!IPivotItemProps#ariaLabel:member'
+    package: '@fluentui/react-internal!'
+    fullName: ariaLabel
+    summary: >-
+      The aria label of each pivot link which will read by screen reader instead
+      of linkText.
+
+
+      Note that unless you have compelling requirements you should not override
+      aria-label.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ariaLabel?: string;'
+      return:
+        type: string
+  - name: componentRef
+    uid: '@fluentui/react-internal!IPivotItemProps#componentRef:member'
+    package: '@fluentui/react-internal!'
+    fullName: componentRef
+    summary: Gets the component ref.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'componentRef?: IRefObject<{}>;'
+      return:
+        type: 'IRefObject&lt;{}&gt;'
+  - name: headerButtonProps
+    uid: '@fluentui/react-internal!IPivotItemProps#headerButtonProps:member'
+    package: '@fluentui/react-internal!'
+    fullName: headerButtonProps
+    summary: >-
+      Props for the header command button. This provides a way to pass in native
+      props, such as data-\* and aria-\*, for each pivot header/link element.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        headerButtonProps?: IButtonProps | {
+                [key: string]: string | number | boolean;
+            };
+      return:
+        type: |-
+          IButtonProps | {
+                  [key: string]: string | number | boolean;
+              }
+  - name: headerText
+    uid: '@fluentui/react-internal!IPivotItemProps#headerText:member'
+    package: '@fluentui/react-internal!'
+    fullName: headerText
+    summary: The text displayed of each pivot link.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'headerText?: string;'
+      return:
+        type: string
+  - name: itemCount
+    uid: '@fluentui/react-internal!IPivotItemProps#itemCount:member'
+    package: '@fluentui/react-internal!'
+    fullName: itemCount
+    summary: >-
+      Defines an optional item count displayed in parentheses just after the
+      `linkText`<!-- -->.
+
+
+      Examples: completed (4), Unread (99+)
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'itemCount?: number | string;'
+      return:
+        type: number | string
+  - name: itemIcon
+    uid: '@fluentui/react-internal!IPivotItemProps#itemIcon:member'
+    package: '@fluentui/react-internal!'
+    fullName: itemIcon
+    summary: An optional icon to show next to the pivot link.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'itemIcon?: string;'
+      return:
+        type: string
+  - name: itemKey
+    uid: '@fluentui/react-internal!IPivotItemProps#itemKey:member'
+    package: '@fluentui/react-internal!'
+    fullName: itemKey
+    summary: |-
+      An required key to uniquely identify a pivot item.
+
+      Note: The 'key' from react props cannot be used inside component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'itemKey?: string;'
+      return:
+        type: string
+  - name: keytipProps
+    uid: '@fluentui/react-internal!IPivotItemProps#keytipProps:member'
+    package: '@fluentui/react-internal!'
+    fullName: keytipProps
+    summary: Optional keytip for this PivotItem
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'keytipProps?: IKeytipProps;'
+      return:
+        type: IKeytipProps
+  - name: linkText
+    uid: '@fluentui/react-internal!IPivotItemProps#linkText:member'
+    package: '@fluentui/react-internal!'
+    fullName: linkText
+    summary: The text displayed of each pivot link.
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Use `headerText` instead.
+    syntax:
+      content: 'linkText?: string;'
+      return:
+        type: string
+  - name: onRenderItemLink
+    uid: '@fluentui/react-internal!IPivotItemProps#onRenderItemLink:member'
+    package: '@fluentui/react-internal!'
+    fullName: onRenderItemLink
+    summary: Optional custom renderer for the pivot item link
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onRenderItemLink?: IRenderFunction<IPivotItemProps>;'
+      return:
+        type: IRenderFunction&lt;IPivotItemProps&gt;
+extends: 'React.HTMLAttributes&lt;HTMLDivElement&gt; '

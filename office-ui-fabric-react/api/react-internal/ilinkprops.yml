@@ -1,7 +1,7 @@
 ### YamlMime:TSType
 name: ILinkProps
-uid: '@fluentui/react-link!ILinkProps:interface'
-package: '@fluentui/react-link!'
+uid: '@fluentui/react-internal!ILinkProps:interface'
+package: '@fluentui/react-internal!'
 fullName: ILinkProps
 summary: >-
   Link component props. All built-in props for `<a>` and `<button>` are
@@ -12,8 +12,8 @@ isDeprecated: false
 type: interface
 properties:
   - name: as
-    uid: '@fluentui/react-link!ILinkProps#as:member'
-    package: '@fluentui/react-link!'
+    uid: '@fluentui/react-internal!ILinkProps#as:member'
+    package: '@fluentui/react-internal!'
     fullName: as
     summary: >-
       A component type or primitive that is rendered as the type of the root
@@ -26,8 +26,8 @@ properties:
       return:
         type: React.ElementType
   - name: componentRef
-    uid: '@fluentui/react-link!ILinkProps#componentRef:member'
-    package: '@fluentui/react-link!'
+    uid: '@fluentui/react-internal!ILinkProps#componentRef:member'
+    package: '@fluentui/react-internal!'
     fullName: componentRef
     summary: >-
       Optional callback to access the ILink interface. Use this instead of ref
@@ -40,8 +40,8 @@ properties:
       return:
         type: IRefObject&lt;ILink&gt;
   - name: disabled
-    uid: '@fluentui/react-link!ILinkProps#disabled:member'
-    package: '@fluentui/react-link!'
+    uid: '@fluentui/react-internal!ILinkProps#disabled:member'
+    package: '@fluentui/react-internal!'
     fullName: disabled
     summary: Whether the link is disabled
     remarks: ''
@@ -52,8 +52,8 @@ properties:
       return:
         type: boolean
   - name: href
-    uid: '@fluentui/react-link!ILinkProps#href:member'
-    package: '@fluentui/react-link!'
+    uid: '@fluentui/react-internal!ILinkProps#href:member'
+    package: '@fluentui/react-internal!'
     fullName: href
     summary: >-
       URL the link points to. If not provided, the link renders as a button
@@ -66,8 +66,8 @@ properties:
       return:
         type: string
   - name: onClick
-    uid: '@fluentui/react-link!ILinkProps#onClick:member'
-    package: '@fluentui/react-link!'
+    uid: '@fluentui/react-internal!ILinkProps#onClick:member'
+    package: '@fluentui/react-internal!'
     fullName: onClick
     summary: Click handler for the link.
     remarks: ''
@@ -82,8 +82,8 @@ properties:
           (event: React.MouseEvent&lt;HTMLAnchorElement | HTMLButtonElement |
           HTMLElement&gt;) =&gt; void
   - name: rel
-    uid: '@fluentui/react-link!ILinkProps#rel:member'
-    package: '@fluentui/react-link!'
+    uid: '@fluentui/react-internal!ILinkProps#rel:member'
+    package: '@fluentui/react-internal!'
     fullName: rel
     summary: >-
       Relationship to the linked URL (can be a space-separated list). Most
@@ -96,8 +96,8 @@ properties:
       return:
         type: string
   - name: styles
-    uid: '@fluentui/react-link!ILinkProps#styles:member'
-    package: '@fluentui/react-link!'
+    uid: '@fluentui/react-internal!ILinkProps#styles:member'
+    package: '@fluentui/react-internal!'
     fullName: styles
     summary: >-
       Call to provide customized styling that will layer on top of the variant
@@ -110,8 +110,8 @@ properties:
       return:
         type: 'IStyleFunctionOrObject&lt;ILinkStyleProps, ILinkStyles&gt;'
   - name: target
-    uid: '@fluentui/react-link!ILinkProps#target:member'
-    package: '@fluentui/react-link!'
+    uid: '@fluentui/react-internal!ILinkProps#target:member'
+    package: '@fluentui/react-internal!'
     fullName: target
     summary: >-
       Where to open the linked URL. Common values are `_blank` (a new tab or
@@ -125,8 +125,8 @@ properties:
       return:
         type: string
   - name: theme
-    uid: '@fluentui/react-link!ILinkProps#theme:member'
-    package: '@fluentui/react-link!'
+    uid: '@fluentui/react-internal!ILinkProps#theme:member'
+    package: '@fluentui/react-internal!'
     fullName: theme
     summary: Theme (provided through customization.)
     remarks: ''
@@ -137,8 +137,8 @@ properties:
       return:
         type: '<xref uid="@fluentui/theme!ITheme:interface" />'
   - name: type
-    uid: '@fluentui/react-link!ILinkProps#type:member'
-    package: '@fluentui/react-link!'
+    uid: '@fluentui/react-internal!ILinkProps#type:member'
+    package: '@fluentui/react-internal!'
     fullName: type
     summary: >-
       Built-in HTML attribute with different behavior depending on how the link
@@ -152,6 +152,20 @@ properties:
       content: 'type?: string;'
       return:
         type: string
+  - name: underline
+    uid: '@fluentui/react-internal!ILinkProps#underline:member'
+    package: '@fluentui/react-internal!'
+    fullName: underline
+    summary: >-
+      Whether the link is styled with an underline or not. Should be used when
+      the link is placed alongside other text content.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'underline?: boolean;'
+      return:
+        type: boolean
 extends: >-
   React.AnchorHTMLAttributes&lt;HTMLAnchorElement | HTMLButtonElement |
   HTMLElement&gt;

@@ -1,0 +1,180 @@
+### YamlMime:TSType
+name: TabsProps
+uid: '@fluentui/react-tabs!TabsProps:interface'
+package: '@fluentui/react-tabs!'
+fullName: TabsProps
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: className
+    uid: '@fluentui/react-tabs!TabsProps#className:member'
+    package: '@fluentui/react-tabs!'
+    fullName: className
+    summary: Additional css class to apply to the Tabs
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'className?: string;'
+      return:
+        type: string
+  - name: componentRef
+    uid: '@fluentui/react-tabs!TabsProps#componentRef:member'
+    package: '@fluentui/react-tabs!'
+    fullName: componentRef
+    summary: >-
+      Optional callback to access the TabsImperativeHandle interface. Use this
+      instead of ref for accessing the public methods and properties of the
+      component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'componentRef?: React.RefObject<TabsImperativeHandle>;'
+      return:
+        type: React.RefObject&lt;TabsImperativeHandle&gt;
+  - name: defaultSelectedKey
+    uid: '@fluentui/react-tabs!TabsProps#defaultSelectedKey:member'
+    package: '@fluentui/react-tabs!'
+    fullName: defaultSelectedKey
+    summary: >-
+      Default selected TabItem key. Only provide this if the Tabs is an
+      uncontrolled component; otherwise, use the `selectedKey` property.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'defaultSelectedKey?: string;'
+      return:
+        type: string
+  - name: getTabId
+    uid: '@fluentui/react-tabs!TabsProps#getTabId:member'
+    package: '@fluentui/react-tabs!'
+    fullName: getTabId
+    summary: >-
+      Callback to customize how IDs are generated for each tab header. Useful if
+      you're rendering content outside and need to connect aria-labelledby.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getTabId?: (itemKey: string, index: number) => string;'
+      return:
+        type: '(itemKey: string, index: number) =&gt; string'
+  - name: headersOnly
+    uid: '@fluentui/react-tabs!TabsProps#headersOnly:member'
+    package: '@fluentui/react-tabs!'
+    fullName: headersOnly
+    summary: >-
+      Whether to skip rendering the tabpanel with the content of the selected
+      tab. Use this prop if you plan to separately render the tab content and
+      don't want to leave an empty tabpanel in the page that may confuse Screen
+      Readers.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'headersOnly?: boolean;'
+      return:
+        type: boolean
+  - name: onTabClick
+    uid: '@fluentui/react-tabs!TabsProps#onTabClick:member'
+    package: '@fluentui/react-tabs!'
+    fullName: onTabClick
+    summary: Callback for when the selected tab item is changed.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        onTabClick?: (item?: TabItem, ev?: React.MouseEvent<HTMLElement>) =>
+        void;
+      return:
+        type: '(item?: TabItem, ev?: React.MouseEvent&lt;HTMLElement&gt;) =&gt; void'
+  - name: overflowBehavior
+    uid: '@fluentui/react-tabs!TabsProps#overflowBehavior:member'
+    package: '@fluentui/react-tabs!'
+    fullName: overflowBehavior
+    summary: >-
+      Overflow behavior when there is not enough room to display all of the tabs
+      \* none: Tabs will overflow the container and may not be visible \* menu:
+      Display an overflow menu that contains the tabs that don't fit
+
+       none
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'overflowBehavior?: ''none'' | ''menu'';'
+      return:
+        type: '''none'' | ''menu'''
+  - name: selectedKey
+    uid: '@fluentui/react-tabs!TabsProps#selectedKey:member'
+    package: '@fluentui/react-tabs!'
+    fullName: selectedKey
+    summary: >-
+      Key of the selected tab item. Updating this will override the selected tab
+      state. Only provide this if the Tabs is a controlled component where you
+      are maintaining the current state; otherwise, use `defaultSelectedKey`<!--
+      -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'selectedKey?: string | null;'
+      return:
+        type: string | null
+  - name: styles
+    uid: '@fluentui/react-tabs!TabsProps#styles:member'
+    package: '@fluentui/react-tabs!'
+    fullName: styles
+    summary: >-
+      Call to provide customized styling that will layer on top of the variant
+      rules.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'styles?: IStyleFunctionOrObject<TabsStyleProps, TabsStyles>;'
+      return:
+        type: 'IStyleFunctionOrObject&lt;TabsStyleProps, TabsStyles&gt;'
+  - name: tabFormat
+    uid: '@fluentui/react-tabs!TabsProps#tabFormat:member'
+    package: '@fluentui/react-tabs!'
+    fullName: tabFormat
+    summary: 'Tab format (links, tabs)'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tabFormat?: TabFormatType;'
+      return:
+        type: TabFormatType
+  - name: tabSize
+    uid: '@fluentui/react-tabs!TabsProps#tabSize:member'
+    package: '@fluentui/react-tabs!'
+    fullName: tabSize
+    summary: 'Tab size (normal, large)'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tabSize?: TabSizeType;'
+      return:
+        type: TabSizeType
+  - name: theme
+    uid: '@fluentui/react-tabs!TabsProps#theme:member'
+    package: '@fluentui/react-tabs!'
+    fullName: theme
+    summary: Theme provided by High-Order Component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
+extends: React.HTMLAttributes&lt;HTMLDivElement&gt;
