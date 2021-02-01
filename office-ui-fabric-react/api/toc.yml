@@ -63,10 +63,20 @@ items:
                 uid: '@fluentui/react-checkbox!ICheckbox:interface'
               - name: ICheckboxProps
                 uid: '@fluentui/react-checkbox!ICheckboxProps:interface'
+              - name: ICheckboxSlots
+                uid: '@fluentui/react-checkbox!ICheckboxSlots:interface'
               - name: ICheckboxStyleProps
                 uid: '@fluentui/react-checkbox!ICheckboxStyleProps:interface'
               - name: ICheckboxStyles
                 uid: '@fluentui/react-checkbox!ICheckboxStyles:interface'
+              - name: ICheckbox
+                uid: '@fluentui/react-internal!ICheckbox:interface'
+              - name: ICheckboxProps
+                uid: '@fluentui/react-internal!ICheckboxProps:interface'
+              - name: ICheckboxStyleProps
+                uid: '@fluentui/react-internal!ICheckboxStyleProps:interface'
+              - name: ICheckboxStyles
+                uid: '@fluentui/react-internal!ICheckboxStyles:interface'
               - name: ICheckbox
                 uid: 'office-ui-fabric-react!ICheckbox:interface'
               - name: ICheckboxProps
@@ -204,13 +214,13 @@ items:
               - name: Link Examples
                 href: ~/api/examples/link.md
               - name: ILink
-                uid: '@fluentui/react-link!ILink:interface'
+                uid: '@fluentui/react-internal!ILink:interface'
               - name: ILinkProps
-                uid: '@fluentui/react-link!ILinkProps:interface'
+                uid: '@fluentui/react-internal!ILinkProps:interface'
               - name: ILinkStyleProps
-                uid: '@fluentui/react-link!ILinkStyleProps:interface'
+                uid: '@fluentui/react-internal!ILinkStyleProps:interface'
               - name: ILinkStyles
-                uid: '@fluentui/react-link!ILinkStyles:interface'
+                uid: '@fluentui/react-internal!ILinkStyles:interface'
               - name: ILink
                 uid: 'office-ui-fabric-react!ILink:interface'
               - name: ILinkHTMLAttributes
@@ -275,6 +285,12 @@ items:
                 href: ~/api/overviews/SliderOverview.md
               - name: Slider Examples
                 href: ~/api/examples/slider.md
+              - name: ISlider
+                uid: '@fluentui/react-internal!ISlider:interface'
+              - name: ISliderProps
+                uid: '@fluentui/react-internal!ISliderProps:interface'
+              - name: ISliderStyles
+                uid: '@fluentui/react-internal!ISliderStyles:interface'
               - name: ISlider
                 uid: '@fluentui/react-slider!ISlider:interface'
               - name: ISliderProps
@@ -346,9 +362,21 @@ items:
               - name: Toggle Examples
                 href: ~/api/examples/toggle.md
               - name: IToggle
+                uid: '@fluentui/react-internal!IToggle:interface'
+              - name: IToggleProps
+                uid: '@fluentui/react-internal!IToggleProps:interface'
+              - name: IToggleStyleProps
+                uid: '@fluentui/react-internal!IToggleStyleProps:interface'
+              - name: IToggleStyles
+                uid: '@fluentui/react-internal!IToggleStyles:interface'
+              - name: IToggle
                 uid: '@fluentui/react-toggle!IToggle:interface'
+              - name: IToggleOptions
+                uid: '@fluentui/react-toggle!IToggleOptions:interface'
               - name: IToggleProps
                 uid: '@fluentui/react-toggle!IToggleProps:interface'
+              - name: IToggleSlots
+                uid: '@fluentui/react-toggle!IToggleSlots:interface'
               - name: IToggleStyleProps
                 uid: '@fluentui/react-toggle!IToggleStyleProps:interface'
               - name: IToggleStyles
@@ -1526,17 +1554,17 @@ items:
               - name: Pivot Examples
                 href: ~/api/examples/pivot.md
               - name: IPivot
-                uid: '@fluentui/react-tabs!IPivot:interface'
+                uid: '@fluentui/react-internal!IPivot:interface'
               - name: IPivotItemProps
-                uid: '@fluentui/react-tabs!IPivotItemProps:interface'
+                uid: '@fluentui/react-internal!IPivotItemProps:interface'
               - name: IPivotProps
-                uid: '@fluentui/react-tabs!IPivotProps:interface'
+                uid: '@fluentui/react-internal!IPivotProps:interface'
               - name: IPivotStyles
-                uid: '@fluentui/react-tabs!IPivotStyles:interface'
+                uid: '@fluentui/react-internal!IPivotStyles:interface'
               - name: PivotLinkFormat
-                uid: '@fluentui/react-tabs!PivotLinkFormat:enum'
+                uid: '@fluentui/react-internal!PivotLinkFormat:enum'
               - name: PivotLinkSize
-                uid: '@fluentui/react-tabs!PivotLinkSize:enum'
+                uid: '@fluentui/react-internal!PivotLinkSize:enum'
               - name: IPivot
                 uid: 'office-ui-fabric-react!IPivot:interface'
               - name: IPivotItemProps
@@ -2383,6 +2411,8 @@ items:
             uid: '@fluentui/react-toggle!'
           - name: '@fluentui/react-utilities'
             uid: '@fluentui/react-utilities!'
+          - name: '@fluentui/react-utils'
+            uid: '@fluentui/react-utils!'
           - name: '@fluentui/react-window-provider'
             uid: '@fluentui/react-window-provider!'
           - name: '@fluentui/react'
@@ -2533,6 +2563,8 @@ items:
             uid: '@fluentui/react-cards!ICardSlots:interface'
           - name: ICardTokens
             uid: '@fluentui/react-cards!ICardTokens:interface'
+          - name: ICheckboxState
+            uid: '@fluentui/react-checkbox!ICheckboxState:interface'
           - name: BaseSlots
             uid: '@fluentui/react-compose!BaseSlots:interface'
           - name: ComponentProps
@@ -2743,6 +2775,8 @@ items:
             uid: '@fluentui/react-internal!ILayerHost:interface'
           - name: ILayerHostProps
             uid: '@fluentui/react-internal!ILayerHostProps:interface'
+          - name: ILinkHTMLAttributes
+            uid: '@fluentui/react-internal!ILinkHTMLAttributes:interface'
           - name: IListState
             uid: '@fluentui/react-internal!IListState:interface'
           - name: IMenuItemClassNames
@@ -2855,6 +2889,8 @@ items:
             uid: '@fluentui/react-internal!OverlayBase:class'
           - name: PanelBase
             uid: '@fluentui/react-internal!PanelBase:class'
+          - name: PivotItem
+            uid: '@fluentui/react-internal!PivotItem:class'
           - name: PlainCardBase
             uid: '@fluentui/react-internal!PlainCardBase:class'
           - name: Position
@@ -2897,16 +2933,24 @@ items:
             uid: '@fluentui/react-internal!TextFieldBase:class'
           - name: ThemeGenerator
             uid: '@fluentui/react-internal!ThemeGenerator:class'
+          - name: ThemeProviderProps
+            uid: '@fluentui/react-internal!ThemeProviderProps:interface'
           - name: TooltipBase
             uid: '@fluentui/react-internal!TooltipBase:class'
           - name: TooltipHostBase
             uid: '@fluentui/react-internal!TooltipHostBase:class'
-          - name: ILinkHTMLAttributes
-            uid: '@fluentui/react-link!ILinkHTMLAttributes:interface'
           - name: StylesheetProviderProps
             uid: '@fluentui/react-stylesheets!StylesheetProviderProps:interface'
-          - name: PivotItem
-            uid: '@fluentui/react-tabs!PivotItem:class'
+          - name: TabItem
+            uid: '@fluentui/react-tabs!TabItem:class'
+          - name: TabItemProps
+            uid: '@fluentui/react-tabs!TabItemProps:interface'
+          - name: TabsImperativeHandle
+            uid: '@fluentui/react-tabs!TabsImperativeHandle:interface'
+          - name: TabsProps
+            uid: '@fluentui/react-tabs!TabsProps:interface'
+          - name: TabsStyles
+            uid: '@fluentui/react-tabs!TabsStyles:interface'
           - name: TextProps
             uid: '@fluentui/react-text!TextProps:interface'
           - name: TextSlots
@@ -2919,6 +2963,10 @@ items:
             uid: '@fluentui/react-theme-provider!StyleRenderer:interface'
           - name: ThemeProviderProps
             uid: '@fluentui/react-theme-provider!ThemeProviderProps:interface'
+          - name: BaseSlots
+            uid: '@fluentui/react-utils!BaseSlots:interface'
+          - name: ComponentProps
+            uid: '@fluentui/react-utils!ComponentProps:interface'
           - name: IGetFocusStylesOptions
             uid: '@fluentui/style-utilities!IGetFocusStylesOptions:interface'
           - name: IIconOptions

@@ -42,6 +42,7 @@ classes:
   - '@fluentui/react-internal!NormalPeoplePickerBase:class'
   - '@fluentui/react-internal!OverlayBase:class'
   - '@fluentui/react-internal!PanelBase:class'
+  - '@fluentui/react-internal!PivotItem:class'
   - '@fluentui/react-internal!PlainCardBase:class'
   - '@fluentui/react-internal!ProgressIndicatorBase:class'
   - '@fluentui/react-internal!ScrollablePaneBase:class'
@@ -80,6 +81,8 @@ enums:
   - '@fluentui/react-internal!PersonaInitialsColor:enum'
   - '@fluentui/react-internal!PersonaPresence:enum'
   - '@fluentui/react-internal!PersonaSize:enum'
+  - '@fluentui/react-internal!PivotLinkFormat:enum'
+  - '@fluentui/react-internal!PivotLinkSize:enum'
   - '@fluentui/react-internal!Position:enum'
   - '@fluentui/react-internal!RatingSize:enum'
   - '@fluentui/react-internal!RectangleEdge:enum'
@@ -132,6 +135,10 @@ interfaces:
   - '@fluentui/react-internal!ICalloutPositionedInfo:interface'
   - '@fluentui/react-internal!ICalloutPositionProps:interface'
   - '@fluentui/react-internal!ICalloutProps:interface'
+  - '@fluentui/react-internal!ICheckbox:interface'
+  - '@fluentui/react-internal!ICheckboxProps:interface'
+  - '@fluentui/react-internal!ICheckboxStyleProps:interface'
+  - '@fluentui/react-internal!ICheckboxStyles:interface'
   - '@fluentui/react-internal!ICheckProps:interface'
   - '@fluentui/react-internal!ICheckStyles:interface'
   - '@fluentui/react-internal!IChoiceGroup:interface'
@@ -276,6 +283,11 @@ interfaces:
   - '@fluentui/react-internal!ILayerStyleProps:interface'
   - '@fluentui/react-internal!ILayerStyles:interface'
   - '@fluentui/react-internal!ILine:interface'
+  - '@fluentui/react-internal!ILink:interface'
+  - '@fluentui/react-internal!ILinkHTMLAttributes:interface'
+  - '@fluentui/react-internal!ILinkProps:interface'
+  - '@fluentui/react-internal!ILinkStyleProps:interface'
+  - '@fluentui/react-internal!ILinkStyles:interface'
   - '@fluentui/react-internal!IList:interface'
   - '@fluentui/react-internal!IListOnRenderRootProps:interface'
   - '@fluentui/react-internal!IListOnRenderSurfaceProps:interface'
@@ -346,6 +358,10 @@ interfaces:
   - '@fluentui/react-internal!IPersonaWithMenu:interface'
   - '@fluentui/react-internal!IPickerItem:interface'
   - '@fluentui/react-internal!IPickerItemProps:interface'
+  - '@fluentui/react-internal!IPivot:interface'
+  - '@fluentui/react-internal!IPivotItemProps:interface'
+  - '@fluentui/react-internal!IPivotProps:interface'
+  - '@fluentui/react-internal!IPivotStyles:interface'
   - '@fluentui/react-internal!IPlainCard:interface'
   - '@fluentui/react-internal!IPlainCardProps:interface'
   - '@fluentui/react-internal!IPlainCardStyleProps:interface'
@@ -413,6 +429,9 @@ interfaces:
   - '@fluentui/react-internal!IShimmerProps:interface'
   - '@fluentui/react-internal!IShimmerStyleProps:interface'
   - '@fluentui/react-internal!IShimmerStyles:interface'
+  - '@fluentui/react-internal!ISlider:interface'
+  - '@fluentui/react-internal!ISliderProps:interface'
+  - '@fluentui/react-internal!ISliderStyles:interface'
   - '@fluentui/react-internal!ISpinButton:interface'
   - '@fluentui/react-internal!ISpinButtonProps:interface'
   - '@fluentui/react-internal!ISpinButtonStyleProps:interface'
@@ -465,6 +484,10 @@ interfaces:
   - '@fluentui/react-internal!ITextTokens:interface'
   - '@fluentui/react-internal!IThemeRules:interface'
   - '@fluentui/react-internal!IThemeSlotRule:interface'
+  - '@fluentui/react-internal!IToggle:interface'
+  - '@fluentui/react-internal!IToggleProps:interface'
+  - '@fluentui/react-internal!IToggleStyleProps:interface'
+  - '@fluentui/react-internal!IToggleStyles:interface'
   - '@fluentui/react-internal!ITooltip:interface'
   - '@fluentui/react-internal!ITooltipHost:interface'
   - '@fluentui/react-internal!ITooltipHostProps:interface'
@@ -479,6 +502,7 @@ interfaces:
   - '@fluentui/react-internal!IVerticalDividerProps:interface'
   - '@fluentui/react-internal!IVerticalDividerStyles:interface'
   - '@fluentui/react-internal!IWindowWithSegments:interface'
+  - '@fluentui/react-internal!ThemeProviderProps:interface'
 functions:
   - name: buildKeytipConfigMap(config)
     uid: '@fluentui/react-internal!buildKeytipConfigMap:function(1)'
@@ -1189,6 +1213,33 @@ functions:
       return:
         type: string
         description: String selector to use to query for the keytip target.
+  - name: makeStyles(styleOrFunction)
+    uid: '@fluentui/react-internal!makeStyles:function(1)'
+    package: '@fluentui/react-internal!'
+    summary: 'Registers a css object, optionally as a function of the theme.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        export declare function makeStyles<TStyleSet extends {
+            [key: string]: IStyle;
+        }>(styleOrFunction: TStyleSet | ((theme: Theme) => TStyleSet)):
+        (options?: UseStylesOptions) => {
+            [key in keyof TStyleSet]: string;
+        };
+      parameters:
+        - id: styleOrFunction
+          description: >-
+            Either a css javascript object, or a function which takes in
+            `ITheme` and returns a css javascript object.
+          type: 'TStyleSet | ((theme: Theme) =&gt; TStyleSet)'
+      return:
+        type: |-
+          (options?: UseStylesOptions) =&gt; {
+              [key in keyof TStyleSet]: string;
+          }
+        description: ''
   - name: 'mergeOverflows(keySequences, overflowKeySequences)'
     uid: '@fluentui/react-internal!mergeOverflows:function(1)'
     package: '@fluentui/react-internal!'

@@ -1,0 +1,287 @@
+### YamlMime:TSType
+name: ISliderProps
+uid: '@fluentui/react-internal!ISliderProps:interface'
+package: '@fluentui/react-internal!'
+fullName: ISliderProps
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: ariaLabel
+    uid: '@fluentui/react-internal!ISliderProps#ariaLabel:member'
+    package: '@fluentui/react-internal!'
+    fullName: ariaLabel
+    summary: A description of the Slider for the benefit of screen readers.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ariaLabel?: string;'
+      return:
+        type: string
+  - name: ariaValueText
+    uid: '@fluentui/react-internal!ISliderProps#ariaValueText:member'
+    package: '@fluentui/react-internal!'
+    fullName: ariaValueText
+    summary: >-
+      A text description of the Slider number value for the benefit of screen
+      readers. This should be used when the Slider number value is not
+      accurately represented by a number.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ariaValueText?: (value: number) => string;'
+      return:
+        type: '(value: number) =&gt; string'
+  - name: buttonProps
+    uid: '@fluentui/react-internal!ISliderProps#buttonProps:member'
+    package: '@fluentui/react-internal!'
+    fullName: buttonProps
+    summary: Additional props on the thumb button within the slider.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'buttonProps?: React.HTMLAttributes<HTMLButtonElement>;'
+      return:
+        type: React.HTMLAttributes&lt;HTMLButtonElement&gt;
+  - name: className
+    uid: '@fluentui/react-internal!ISliderProps#className:member'
+    package: '@fluentui/react-internal!'
+    fullName: className
+    summary: Class name to attach to the slider root element.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'className?: string;'
+      return:
+        type: string
+  - name: componentRef
+    uid: '@fluentui/react-internal!ISliderProps#componentRef:member'
+    package: '@fluentui/react-internal!'
+    fullName: componentRef
+    summary: >-
+      Optional callback to access the ISlider interface. Use this instead of ref
+      for accessing the public methods and properties of the component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'componentRef?: IRefObject<ISlider>;'
+      return:
+        type: IRefObject&lt;ISlider&gt;
+  - name: defaultValue
+    uid: '@fluentui/react-internal!ISliderProps#defaultValue:member'
+    package: '@fluentui/react-internal!'
+    fullName: defaultValue
+    summary: >-
+      The initial value of the Slider. Use this if you intend for the Slider to
+      be an uncontrolled component. This value is mutually exclusive to value.
+      Use one or the other.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'defaultValue?: number;'
+      return:
+        type: number
+  - name: disabled
+    uid: '@fluentui/react-internal!ISliderProps#disabled:member'
+    package: '@fluentui/react-internal!'
+    fullName: disabled
+    summary: Whether to render the Slider as disabled.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'disabled?: boolean;'
+      return:
+        type: boolean
+  - name: label
+    uid: '@fluentui/react-internal!ISliderProps#label:member'
+    package: '@fluentui/react-internal!'
+    fullName: label
+    summary: Description label of the Slider
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'label?: string;'
+      return:
+        type: string
+  - name: max
+    uid: '@fluentui/react-internal!ISliderProps#max:member'
+    package: '@fluentui/react-internal!'
+    fullName: max
+    summary: The max value of the Slider
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'max?: number;'
+      return:
+        type: number
+  - name: min
+    uid: '@fluentui/react-internal!ISliderProps#min:member'
+    package: '@fluentui/react-internal!'
+    fullName: min
+    summary: The min value of the Slider
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'min?: number;'
+      return:
+        type: number
+  - name: onChange
+    uid: '@fluentui/react-internal!ISliderProps#onChange:member'
+    package: '@fluentui/react-internal!'
+    fullName: onChange
+    summary: Callback when the value has been changed
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onChange?: (value: number) => void;'
+      return:
+        type: '(value: number) =&gt; void'
+  - name: onChanged
+    uid: '@fluentui/react-internal!ISliderProps#onChanged:member'
+    package: '@fluentui/react-internal!'
+    fullName: onChanged
+    summary: Callback on mouse up or touch end
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        onChanged?: (event: MouseEvent | TouchEvent | KeyboardEvent, value:
+        number) => void;
+      return:
+        type: >-
+          (event: MouseEvent | TouchEvent | KeyboardEvent, value: number) =&gt;
+          void
+  - name: originFromZero
+    uid: '@fluentui/react-internal!ISliderProps#originFromZero:member'
+    package: '@fluentui/react-internal!'
+    fullName: originFromZero
+    summary: >-
+      Whether to attach the origin of slider to zero. Helpful when the range
+      include negatives.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'originFromZero?: boolean;'
+      return:
+        type: boolean
+  - name: showValue
+    uid: '@fluentui/react-internal!ISliderProps#showValue:member'
+    package: '@fluentui/react-internal!'
+    fullName: showValue
+    summary: Whether to show the value on the right of the Slider.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'showValue?: boolean;'
+      return:
+        type: boolean
+  - name: snapToStep
+    uid: '@fluentui/react-internal!ISliderProps#snapToStep:member'
+    package: '@fluentui/react-internal!'
+    fullName: snapToStep
+    summary: >-
+      Whether to decide that thumb will snap to closest value while moving the
+      slider
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'snapToStep?: boolean;'
+      return:
+        type: boolean
+  - name: step
+    uid: '@fluentui/react-internal!ISliderProps#step:member'
+    package: '@fluentui/react-internal!'
+    fullName: step
+    summary: The difference between the two adjacent values of the Slider
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'step?: number;'
+      return:
+        type: number
+  - name: styles
+    uid: '@fluentui/react-internal!ISliderProps#styles:member'
+    package: '@fluentui/react-internal!'
+    fullName: styles
+    summary: >-
+      Call to provide customized styling that will layer on top of the variant
+      rules.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'styles?: IStyleFunctionOrObject<ISliderStyleProps, ISliderStyles>;'
+      return:
+        type: 'IStyleFunctionOrObject&lt;ISliderStyleProps, ISliderStyles&gt;'
+  - name: theme
+    uid: '@fluentui/react-internal!ISliderProps#theme:member'
+    package: '@fluentui/react-internal!'
+    fullName: theme
+    summary: Theme provided by High-Order Component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
+  - name: value
+    uid: '@fluentui/react-internal!ISliderProps#value:member'
+    package: '@fluentui/react-internal!'
+    fullName: value
+    summary: >-
+      The initial value of the Slider. Use this if you intend to pass in a new
+      value as a result of onChange events. This value is mutually exclusive to
+      defaultValue. Use one or the other.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'value?: number;'
+      return:
+        type: number
+  - name: valueFormat
+    uid: '@fluentui/react-internal!ISliderProps#valueFormat:member'
+    package: '@fluentui/react-internal!'
+    fullName: valueFormat
+    summary: Custom formatter for the slider value.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'valueFormat?: (value: number) => string;'
+      return:
+        type: '(value: number) =&gt; string'
+  - name: vertical
+    uid: '@fluentui/react-internal!ISliderProps#vertical:member'
+    package: '@fluentui/react-internal!'
+    fullName: vertical
+    summary: Whether to render the slider vertically.  `false` (render horizontally)
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'vertical?: boolean;'
+      return:
+        type: boolean
+extends: >-
+  Omit&lt;React.HTMLAttributes&lt;HTMLDivElement&gt;, 'defaultValue' |
+  'onChange'&gt;
