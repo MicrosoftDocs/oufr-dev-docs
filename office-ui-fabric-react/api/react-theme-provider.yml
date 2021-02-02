@@ -4,40 +4,12 @@ name: '@fluentui/react-theme-provider'
 type: package
 summary: ''
 interfaces:
-  - '@fluentui/react-theme-provider!StyleOptions:interface'
-  - '@fluentui/react-theme-provider!StyleProps:interface'
-  - '@fluentui/react-theme-provider!StyleRenderer:interface'
   - '@fluentui/react-theme-provider!ThemeProviderProps:interface'
+  - '@fluentui/react-theme-provider!ThemeProviderState:interface'
+  - '@fluentui/react-theme-provider!ThemeProviderValue:interface'
 functions:
-  - name: makeStyles(styleOrFunction)
-    uid: '@fluentui/react-theme-provider!makeStyles:function(1)'
-    package: '@fluentui/react-theme-provider!'
-    summary: 'Registers a css object, optionally as a function of the theme.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        export declare function makeStyles<TStyleSet extends {
-            [key: string]: IStyle;
-        }>(styleOrFunction: TStyleSet | ((theme: Theme) => TStyleSet)):
-        (options?: UseStylesOptions) => {
-            [key in keyof TStyleSet]: string;
-        };
-      parameters:
-        - id: styleOrFunction
-          description: >-
-            Either a css javascript object, or a function which takes in
-            `ITheme` and returns a css javascript object.
-          type: 'TStyleSet | ((theme: Theme) =&gt; TStyleSet)'
-      return:
-        type: |-
-          (options?: UseStylesOptions) =&gt; {
-              [key in keyof TStyleSet]: string;
-          }
-        description: ''
-  - name: useThemeProviderClasses(state)
-    uid: '@fluentui/react-theme-provider!useThemeProviderClasses:function(1)'
+  - name: renderThemeProvider(state)
+    uid: '@fluentui/react-theme-provider!renderThemeProvider:function(1)'
     package: '@fluentui/react-theme-provider!'
     summary: ''
     remarks: ''
@@ -45,12 +17,78 @@ functions:
     isDeprecated: false
     syntax:
       content: >-
-        export declare function useThemeProviderClasses(state:
-        ThemeProviderState): void;
+        export declare function renderThemeProvider(state: ThemeProviderState):
+        JSX.Element;
       parameters:
         - id: state
           description: ''
-          type: ThemeProviderState
+          type: >-
+            <xref
+            uid="@fluentui/react-theme-provider!ThemeProviderState:interface" />
+      return:
+        type: JSX.Element
+        description: ''
+  - name: useTheme()
+    uid: '@fluentui/react-theme-provider!useTheme:function(1)'
+    package: '@fluentui/react-theme-provider!'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'export declare function useTheme(): ThemeProviderValue;'
+      return:
+        type: >-
+          <xref
+          uid="@fluentui/react-theme-provider!ThemeProviderValue:interface" />
+        description: ''
+  - name: 'useThemeProvider(props, ref)'
+    uid: '@fluentui/react-theme-provider!useThemeProvider:function(1)'
+    package: '@fluentui/react-theme-provider!'
+    summary: >-
+      Returns the ThemeProvider render function and calculated state, given user
+      input, ref, and a set of default prop values.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        export declare function useThemeProvider(props: ThemeProviderProps, ref:
+        React.Ref<HTMLElement>): {
+            state: ThemeProviderState;
+            render: typeof renderThemeProvider;
+        };
+      parameters:
+        - id: props
+          description: ''
+          type: ThemeProviderProps
+        - id: ref
+          description: ''
+          type: React.Ref&lt;HTMLElement&gt;
+      return:
+        type: |-
+          {
+              state: ThemeProviderState;
+              render: typeof renderThemeProvider;
+          }
+        description: ''
+  - name: useThemeProviderState(draftState)
+    uid: '@fluentui/react-theme-provider!useThemeProviderState:function(1)'
+    package: '@fluentui/react-theme-provider!'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        export declare function useThemeProviderState(draftState:
+        ThemeProviderState): void;
+      parameters:
+        - id: draftState
+          description: ''
+          type: >-
+            <xref
+            uid="@fluentui/react-theme-provider!ThemeProviderState:interface" />
       return:
         type: void
         description: ''
