@@ -1,0 +1,91 @@
+### YamlMime:TSPackage
+uid: '@fluentui/react-provider!'
+name: '@fluentui/react-provider'
+type: package
+summary: ''
+interfaces:
+  - '@fluentui/react-provider!FluentProviderContextValue:interface'
+  - '@fluentui/react-provider!FluentThemeProviderValue:interface'
+  - '@fluentui/react-provider!ProviderProps:interface'
+  - '@fluentui/react-provider!ProviderState:interface'
+functions:
+  - name: renderFluentProvider(state)
+    uid: '@fluentui/react-provider!renderFluentProvider:function(1)'
+    package: '@fluentui/react-provider!'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        export declare function renderFluentProvider(state: ProviderState):
+        JSX.Element;
+      parameters:
+        - id: state
+          description: ''
+          type: '<xref uid="@fluentui/react-provider!ProviderState:interface" />'
+      return:
+        type: JSX.Element
+        description: ''
+  - name: useFluent()
+    uid: '@fluentui/react-provider!useFluent:function(1)'
+    package: '@fluentui/react-provider!'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'export declare function useFluent(): FluentProviderContextValue;'
+      return:
+        type: >-
+          <xref
+          uid="@fluentui/react-provider!FluentProviderContextValue:interface" />
+        description: ''
+  - name: 'useFluentProvider(props, ref)'
+    uid: '@fluentui/react-provider!useFluentProvider:function(1)'
+    package: '@fluentui/react-provider!'
+    summary: >-
+      Returns the ThemeProvider render function and calculated state, given user
+      input, ref, and a set of default prop values.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        export declare function useFluentProvider(props: ProviderProps, ref:
+        React.Ref<HTMLElement>): {
+            state: ProviderState;
+            render: typeof renderFluentProvider;
+        };
+      parameters:
+        - id: props
+          description: ''
+          type: '<xref uid="@fluentui/react-provider!ProviderProps:interface" />'
+        - id: ref
+          description: ''
+          type: React.Ref&lt;HTMLElement&gt;
+      return:
+        type: |-
+          {
+              state: ProviderState;
+              render: typeof renderFluentProvider;
+          }
+        description: ''
+  - name: useFluentProviderState(draftState)
+    uid: '@fluentui/react-provider!useFluentProviderState:function(1)'
+    package: '@fluentui/react-provider!'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        export declare function useFluentProviderState(draftState:
+        ProviderState): void;
+      parameters:
+        - id: draftState
+          description: ''
+          type: '<xref uid="@fluentui/react-provider!ProviderState:interface" />'
+      return:
+        type: void
+        description: ''
