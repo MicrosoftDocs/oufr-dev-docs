@@ -1,0 +1,400 @@
+### YamlMime:TSType
+name: ICalendarDayGridProps
+uid: '@fluentui/react!ICalendarDayGridProps:interface'
+package: '@fluentui/react!'
+fullName: ICalendarDayGridProps
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: allFocusable
+    uid: '@fluentui/react!ICalendarDayGridProps#allFocusable:member'
+    package: '@fluentui/react!'
+    fullName: allFocusable
+    summary: 'Allows all dates and buttons to be focused, including disabled ones'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'allFocusable?: boolean;'
+      return:
+        type: boolean
+  - name: animationDirection
+    uid: '@fluentui/react!ICalendarDayGridProps#animationDirection:member'
+    package: '@fluentui/react!'
+    fullName: animationDirection
+    summary: >-
+      The cardinal directions for animation to occur during transitions, either
+      horizontal or veritcal
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'animationDirection?: AnimationDirection;'
+      return:
+        type: AnimationDirection
+  - name: className
+    uid: '@fluentui/react!ICalendarDayGridProps#className:member'
+    package: '@fluentui/react!'
+    fullName: className
+    summary: Additional CSS class(es) to apply to the CalendarDayGrid.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'className?: string;'
+      return:
+        type: string
+  - name: componentRef
+    uid: '@fluentui/react!ICalendarDayGridProps#componentRef:member'
+    package: '@fluentui/react!'
+    fullName: componentRef
+    summary: >-
+      Optional callback to access the ICalendarDayGrid interface. Use this
+      instead of ref for accessing the public methods and properties of the
+      component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'componentRef?: IRefObject<ICalendarDayGrid>;'
+      return:
+        type: IRefObject&lt;ICalendarDayGrid&gt;
+  - name: customDayCellRef
+    uid: '@fluentui/react!ICalendarDayGridProps#customDayCellRef:member'
+    package: '@fluentui/react!'
+    fullName: customDayCellRef
+    summary: >-
+      Ref callback for individual days. Allows for customization of the styling,
+      properties, or listeners of the specific day.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        customDayCellRef?: (element: HTMLElement, date: Date, classNames:
+        IProcessedStyleSet<ICalendarDayGridStyles>) => void;
+      return:
+        type: >-
+          (element: HTMLElement, date: Date, classNames:
+          IProcessedStyleSet&lt;ICalendarDayGridStyles&gt;) =&gt; void
+  - name: dateRangeType
+    uid: '@fluentui/react!ICalendarDayGridProps#dateRangeType:member'
+    package: '@fluentui/react!'
+    fullName: dateRangeType
+    summary: >-
+      The date range type indicating how many days should be selected as the
+      user selects days
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'dateRangeType: DateRangeType;'
+      return:
+        type: '<xref uid="@fluentui/date-time-utilities!DateRangeType:enum" />'
+  - name: dateTimeFormatter
+    uid: '@fluentui/react!ICalendarDayGridProps#dateTimeFormatter:member'
+    package: '@fluentui/react!'
+    fullName: dateTimeFormatter
+    summary: >-
+      Apply additional formating to dates, for example localized date
+      formatting.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'dateTimeFormatter: IDateFormatting;'
+      return:
+        type: '<xref uid="@fluentui/date-time-utilities!IDateFormatting:interface" />'
+  - name: daysToSelectInDayView
+    uid: '@fluentui/react!ICalendarDayGridProps#daysToSelectInDayView:member'
+    package: '@fluentui/react!'
+    fullName: daysToSelectInDayView
+    summary: >-
+      The number of days to select while dateRangeType === DateRangeType.Day.
+      Used in order to have multi-day views.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'daysToSelectInDayView?: number;'
+      return:
+        type: number
+  - name: firstDayOfWeek
+    uid: '@fluentui/react!ICalendarDayGridProps#firstDayOfWeek:member'
+    package: '@fluentui/react!'
+    fullName: firstDayOfWeek
+    summary: The first day of the week for your locale.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'firstDayOfWeek: DayOfWeek;'
+      return:
+        type: '<xref uid="@fluentui/date-time-utilities!DayOfWeek:enum" />'
+  - name: firstWeekOfYear
+    uid: '@fluentui/react!ICalendarDayGridProps#firstWeekOfYear:member'
+    package: '@fluentui/react!'
+    fullName: firstWeekOfYear
+    summary: >-
+      Defines when the first week of the year should start,
+      FirstWeekOfYear.FirstDay, FirstWeekOfYear.FirstFullWeek or
+      FirstWeekOfYear.FirstFourDayWeek are the possible values
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'firstWeekOfYear: FirstWeekOfYear;'
+      return:
+        type: '<xref uid="@fluentui/date-time-utilities!FirstWeekOfYear:enum" />'
+  - name: getMarkedDays
+    uid: '@fluentui/react!ICalendarDayGridProps#getMarkedDays:member'
+    package: '@fluentui/react!'
+    fullName: getMarkedDays
+    summary: >-
+      Optional callback function to mark specific days with a small symbol.
+      Fires when the date range changes, gives the starting and ending displayed
+      dates and expects the list of which days in between should be marked.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getMarkedDays?: (startingDate: Date, endingDate: Date) => Date[];'
+      return:
+        type: '(startingDate: Date, endingDate: Date) =&gt; Date[]'
+  - name: labelledBy
+    uid: '@fluentui/react!ICalendarDayGridProps#labelledBy:member'
+    package: '@fluentui/react!'
+    fullName: labelledBy
+    summary: The ID of the control that labels this one
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'labelledBy?: string;'
+      return:
+        type: string
+  - name: lightenDaysOutsideNavigatedMonth
+    uid: >-
+      @fluentui/react!ICalendarDayGridProps#lightenDaysOutsideNavigatedMonth:member
+    package: '@fluentui/react!'
+    fullName: lightenDaysOutsideNavigatedMonth
+    summary: Whether to show days outside the selected month with lighter styles
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'lightenDaysOutsideNavigatedMonth?: boolean;'
+      return:
+        type: boolean
+  - name: maxDate
+    uid: '@fluentui/react!ICalendarDayGridProps#maxDate:member'
+    package: '@fluentui/react!'
+    fullName: maxDate
+    summary: >-
+      If set the Calendar will not allow navigation to or selection of a date
+      later than this value.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'maxDate?: Date;'
+      return:
+        type: Date
+  - name: minDate
+    uid: '@fluentui/react!ICalendarDayGridProps#minDate:member'
+    package: '@fluentui/react!'
+    fullName: minDate
+    summary: >-
+      If set the Calendar will not allow navigation to or selection of a date
+      earlier than this value.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'minDate?: Date;'
+      return:
+        type: Date
+  - name: navigatedDate
+    uid: '@fluentui/react!ICalendarDayGridProps#navigatedDate:member'
+    package: '@fluentui/react!'
+    fullName: navigatedDate
+    summary: The currently navigated date
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'navigatedDate: Date;'
+      return:
+        type: Date
+  - name: onDismiss
+    uid: '@fluentui/react!ICalendarDayGridProps#onDismiss:member'
+    package: '@fluentui/react!'
+    fullName: onDismiss
+    summary: Callback issued when calendar day is closed
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onDismiss?: () => void;'
+      return:
+        type: () =&gt; void
+  - name: onNavigateDate
+    uid: '@fluentui/react!ICalendarDayGridProps#onNavigateDate:member'
+    package: '@fluentui/react!'
+    fullName: onNavigateDate
+    summary: Callback issued when a date in the calendar is navigated
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onNavigateDate: (date: Date, focusOnNavigatedDay: boolean) => void;'
+      return:
+        type: '(date: Date, focusOnNavigatedDay: boolean) =&gt; void'
+  - name: onSelectDate
+    uid: '@fluentui/react!ICalendarDayGridProps#onSelectDate:member'
+    package: '@fluentui/react!'
+    fullName: onSelectDate
+    summary: Callback issued when a date is selected
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onSelectDate?: (date: Date, selectedDateRangeArray?: Date[]) => void;'
+      return:
+        type: '(date: Date, selectedDateRangeArray?: Date[]) =&gt; void'
+  - name: restrictedDates
+    uid: '@fluentui/react!ICalendarDayGridProps#restrictedDates:member'
+    package: '@fluentui/react!'
+    fullName: restrictedDates
+    summary: If set the Calendar will not allow selection of dates in this array.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'restrictedDates?: Date[];'
+      return:
+        type: 'Date[]'
+  - name: selectedDate
+    uid: '@fluentui/react!ICalendarDayGridProps#selectedDate:member'
+    package: '@fluentui/react!'
+    fullName: selectedDate
+    summary: The currently selected date
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'selectedDate: Date;'
+      return:
+        type: Date
+  - name: showCloseButton
+    uid: '@fluentui/react!ICalendarDayGridProps#showCloseButton:member'
+    package: '@fluentui/react!'
+    fullName: showCloseButton
+    summary: Whether the close button should be shown or not
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'showCloseButton?: boolean;'
+      return:
+        type: boolean
+  - name: showWeekNumbers
+    uid: '@fluentui/react!ICalendarDayGridProps#showWeekNumbers:member'
+    package: '@fluentui/react!'
+    fullName: showWeekNumbers
+    summary: >-
+      Whether the calendar should show the week number (weeks 1 to 53) before
+      each week row
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'showWeekNumbers?: boolean;'
+      return:
+        type: boolean
+  - name: strings
+    uid: '@fluentui/react!ICalendarDayGridProps#strings:member'
+    package: '@fluentui/react!'
+    fullName: strings
+    summary: Localized strings to use in the CalendarDayGrid
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'strings: ICalendarStrings;'
+      return:
+        type: ICalendarStrings
+  - name: styles
+    uid: '@fluentui/react!ICalendarDayGridProps#styles:member'
+    package: '@fluentui/react!'
+    fullName: styles
+    summary: Customized styles for the component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        styles?: IStyleFunctionOrObject<ICalendarDayGridStyleProps,
+        ICalendarDayGridStyles>;
+      return:
+        type: >-
+          IStyleFunctionOrObject&lt;ICalendarDayGridStyleProps,
+          ICalendarDayGridStyles&gt;
+  - name: theme
+    uid: '@fluentui/react!ICalendarDayGridProps#theme:member'
+    package: '@fluentui/react!'
+    fullName: theme
+    summary: Theme (provided through customization).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
+  - name: today
+    uid: '@fluentui/react!ICalendarDayGridProps#today:member'
+    package: '@fluentui/react!'
+    fullName: today
+    summary: >-
+      Value of today. If unspecified, current time in client machine will be
+      used.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'today?: Date;'
+      return:
+        type: Date
+  - name: weeksToShow
+    uid: '@fluentui/react!ICalendarDayGridProps#weeksToShow:member'
+    package: '@fluentui/react!'
+    fullName: weeksToShow
+    summary: >-
+      How many weeks to show by default. If not provided, will show enough weeks
+      to display the current month, between 4 and 6 depending
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'weeksToShow?: number;'
+      return:
+        type: number
+  - name: workWeekDays
+    uid: '@fluentui/react!ICalendarDayGridProps#workWeekDays:member'
+    package: '@fluentui/react!'
+    fullName: workWeekDays
+    summary: >-
+      The days that are selectable when `dateRangeType` is WorkWeek. If
+      `dateRangeType` is not WorkWeek this property does nothing.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'workWeekDays?: DayOfWeek[];'
+      return:
+        type: 'DayOfWeek[]'
+extends: '<xref uid="@fluentui/date-time-utilities!IDayGridOptions:interface" />'

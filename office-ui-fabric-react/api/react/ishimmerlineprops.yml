@@ -1,0 +1,93 @@
+### YamlMime:TSType
+name: IShimmerLineProps
+uid: '@fluentui/react!IShimmerLineProps:interface'
+package: '@fluentui/react!'
+fullName: IShimmerLineProps
+summary: ShimmerLine component props.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: borderStyle
+    uid: '@fluentui/react!IShimmerLineProps#borderStyle:member'
+    package: '@fluentui/react!'
+    fullName: borderStyle
+    summary: Use to set custom styling of the shimmerLine borders.
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Use `styles.root` instead.
+    syntax:
+      content: 'borderStyle?: IRawStyle;'
+      return:
+        type: '<xref uid="@fluentui/merge-styles!IRawStyle:interface" />'
+  - name: componentRef
+    uid: '@fluentui/react!IShimmerLineProps#componentRef:member'
+    package: '@fluentui/react!'
+    fullName: componentRef
+    summary: >-
+      Optional callback to access the IShimmerLine interface. Use this instead
+      of ref for accessing the public methods and properties of the component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'componentRef?: IRefObject<IShimmerLine>;'
+      return:
+        type: IRefObject&lt;IShimmerLine&gt;
+  - name: height
+    uid: '@fluentui/react!IShimmerLineProps#height:member'
+    package: '@fluentui/react!'
+    fullName: height
+    summary: Sets the height of the rectangle.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'height?: number;'
+      return:
+        type: number
+  - name: styles
+    uid: '@fluentui/react!IShimmerLineProps#styles:member'
+    package: '@fluentui/react!'
+    fullName: styles
+    summary: >-
+      Call to provide customized styling that will layer on top of the variant
+      rules.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        styles?: IStyleFunctionOrObject<IShimmerLineStyleProps,
+        IShimmerLineStyles>;
+      return:
+        type: >-
+          IStyleFunctionOrObject&lt;IShimmerLineStyleProps,
+          IShimmerLineStyles&gt;
+  - name: theme
+    uid: '@fluentui/react!IShimmerLineProps#theme:member'
+    package: '@fluentui/react!'
+    fullName: theme
+    summary: Theme provided by High-Order Component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
+  - name: width
+    uid: '@fluentui/react!IShimmerLineProps#width:member'
+    package: '@fluentui/react!'
+    fullName: width
+    summary: Sets width value of the line.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'width?: number | string;'
+      return:
+        type: number | string
+extends: 'React.AllHTMLAttributes&lt;HTMLElement&gt; '

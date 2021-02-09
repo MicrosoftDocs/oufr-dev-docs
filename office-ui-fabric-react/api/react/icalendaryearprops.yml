@@ -1,0 +1,228 @@
+### YamlMime:TSType
+name: ICalendarYearProps
+uid: '@fluentui/react!ICalendarYearProps:interface'
+package: '@fluentui/react!'
+fullName: ICalendarYearProps
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: animationDirection
+    uid: '@fluentui/react!ICalendarYearProps#animationDirection:member'
+    package: '@fluentui/react!'
+    fullName: animationDirection
+    summary: >-
+      The cardinal directions for animation to occur during transitions, either
+      horizontal or veritcal
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'animationDirection?: AnimationDirection;'
+      return:
+        type: AnimationDirection
+  - name: className
+    uid: '@fluentui/react!ICalendarYearProps#className:member'
+    package: '@fluentui/react!'
+    fullName: className
+    summary: Accept custom classNames
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'className?: string;'
+      return:
+        type: string
+  - name: componentRef
+    uid: '@fluentui/react!ICalendarYearProps#componentRef:member'
+    package: '@fluentui/react!'
+    fullName: componentRef
+    summary: >-
+      Optional callback to access the ICalendarYear interface. Use this instead
+      of ref for accessing the public methods and properties of the component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'componentRef?: IRefObject<ICalendarYear>;'
+      return:
+        type: IRefObject&lt;ICalendarYear&gt;
+  - name: highlightCurrentYear
+    uid: '@fluentui/react!ICalendarYearProps#highlightCurrentYear:member'
+    package: '@fluentui/react!'
+    fullName: highlightCurrentYear
+    summary: Whether the year picker should highlight the current year
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'highlightCurrentYear?: boolean;'
+      return:
+        type: boolean
+  - name: highlightSelectedYear
+    uid: '@fluentui/react!ICalendarYearProps#highlightSelectedYear:member'
+    package: '@fluentui/react!'
+    fullName: highlightSelectedYear
+    summary: Whether the year picker should highlight the selected year
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'highlightSelectedYear?: boolean;'
+      return:
+        type: boolean
+  - name: maxYear
+    uid: '@fluentui/react!ICalendarYearProps#maxYear:member'
+    package: '@fluentui/react!'
+    fullName: maxYear
+    summary: >-
+      If set the Calendar will not allow navigation to or selection of a year
+      later than this value.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'maxYear?: number;'
+      return:
+        type: number
+  - name: minYear
+    uid: '@fluentui/react!ICalendarYearProps#minYear:member'
+    package: '@fluentui/react!'
+    fullName: minYear
+    summary: >-
+      If set the Calendar will not allow navigation to or selection of a year
+      earlier than this value.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'minYear?: number;'
+      return:
+        type: number
+  - name: navigatedYear
+    uid: '@fluentui/react!ICalendarYearProps#navigatedYear:member'
+    package: '@fluentui/react!'
+    fullName: navigatedYear
+    summary: The currently navigated year
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'navigatedYear?: number;'
+      return:
+        type: number
+  - name: navigationIcons
+    uid: '@fluentui/react!ICalendarYearProps#navigationIcons:member'
+    package: '@fluentui/react!'
+    fullName: navigationIcons
+    summary: Custom navigation icons.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'navigationIcons?: ICalendarNavigationIcons;'
+      return:
+        type: ICalendarNavigationIcons
+  - name: onHeaderSelect
+    uid: '@fluentui/react!ICalendarYearProps#onHeaderSelect:member'
+    package: '@fluentui/react!'
+    fullName: onHeaderSelect
+    summary: Callback action when the header is selected
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onHeaderSelect?: (focus: boolean) => void;'
+      return:
+        type: '(focus: boolean) =&gt; void'
+  - name: onRenderTitle
+    uid: '@fluentui/react!ICalendarYearProps#onRenderTitle:member'
+    package: '@fluentui/react!'
+    fullName: onRenderTitle
+    summary: Custom renderer for the title
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onRenderTitle?: (props: ICalendarYearHeaderProps) => React.ReactNode;'
+      return:
+        type: '(props: ICalendarYearHeaderProps) =&gt; React.ReactNode'
+  - name: onRenderYear
+    uid: '@fluentui/react!ICalendarYearProps#onRenderYear:member'
+    package: '@fluentui/react!'
+    fullName: onRenderYear
+    summary: Custom renderer for the year
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onRenderYear?: (year: number) => React.ReactNode;'
+      return:
+        type: '(year: number) =&gt; React.ReactNode'
+  - name: onSelectYear
+    uid: '@fluentui/react!ICalendarYearProps#onSelectYear:member'
+    package: '@fluentui/react!'
+    fullName: onSelectYear
+    summary: Callback action when a year is selected
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onSelectYear?: (year: number) => void;'
+      return:
+        type: '(year: number) =&gt; void'
+  - name: selectedYear
+    uid: '@fluentui/react!ICalendarYearProps#selectedYear:member'
+    package: '@fluentui/react!'
+    fullName: selectedYear
+    summary: The currently selected year
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'selectedYear?: number;'
+      return:
+        type: number
+  - name: strings
+    uid: '@fluentui/react!ICalendarYearProps#strings:member'
+    package: '@fluentui/react!'
+    fullName: strings
+    summary: Localized strings to use in the Calendar
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'strings?: ICalendarYearStrings;'
+      return:
+        type: ICalendarYearStrings
+  - name: styles
+    uid: '@fluentui/react!ICalendarYearProps#styles:member'
+    package: '@fluentui/react!'
+    fullName: styles
+    summary: Customized styles for the calendar month component
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        styles?: IStyleFunctionOrObject<ICalendarYearStyleProps,
+        ICalendarYearStyles>;
+      return:
+        type: >-
+          IStyleFunctionOrObject&lt;ICalendarYearStyleProps,
+          ICalendarYearStyles&gt;
+  - name: theme
+    uid: '@fluentui/react!ICalendarYearProps#theme:member'
+    package: '@fluentui/react!'
+    fullName: theme
+    summary: Theme (provided through customization).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
+extends: 'IBaseProps&lt;ICalendarYear&gt; '

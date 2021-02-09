@@ -1,0 +1,52 @@
+### YamlMime:TSType
+name: IColor
+uid: '@fluentui/react!IColor:interface'
+package: '@fluentui/react!'
+fullName: IColor
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: hex
+    uid: '@fluentui/react!IColor#hex:member'
+    package: '@fluentui/react!'
+    fullName: hex
+    summary: >-
+      Hex string for the color (excluding alpha component), \*not\* prefixed
+      with \#.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'hex: string;'
+      return:
+        type: string
+  - name: str
+    uid: '@fluentui/react!IColor#str:member'
+    package: '@fluentui/react!'
+    fullName: str
+    summary: 'CSS color string. If a hex value, it must be prefixed with \#.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'str: string;'
+      return:
+        type: string
+  - name: t
+    uid: '@fluentui/react!IColor#t:member'
+    package: '@fluentui/react!'
+    fullName: t
+    summary: >-
+      Transparency value, range 0 (opaque) to 100 (transparent). Usually assumed
+      to be 0 if not specified.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 't?: number;'
+      return:
+        type: number
+extends: IRGB

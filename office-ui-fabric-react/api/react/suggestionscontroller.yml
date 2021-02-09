@@ -1,0 +1,247 @@
+### YamlMime:TSType
+name: SuggestionsController
+uid: '@fluentui/react!SuggestionsController:class'
+package: '@fluentui/react!'
+fullName: SuggestionsController
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: (constructor)()
+    uid: '@fluentui/react!SuggestionsController:constructor(1)'
+    package: '@fluentui/react!'
+    fullName: (constructor)()
+    summary: Constructs a new instance of the `SuggestionsController` class
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: constructor();
+properties:
+  - name: currentIndex
+    uid: '@fluentui/react!SuggestionsController#currentIndex:member'
+    package: '@fluentui/react!'
+    fullName: currentIndex
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'currentIndex: number;'
+      return:
+        type: number
+  - name: currentSuggestion
+    uid: '@fluentui/react!SuggestionsController#currentSuggestion:member'
+    package: '@fluentui/react!'
+    fullName: currentSuggestion
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'currentSuggestion: ISuggestionModel<T> | undefined;'
+      return:
+        type: ISuggestionModel&lt;T&gt; | undefined
+  - name: suggestions
+    uid: '@fluentui/react!SuggestionsController#suggestions:member'
+    package: '@fluentui/react!'
+    fullName: suggestions
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'suggestions: ISuggestionModel<T>[];'
+      return:
+        type: 'ISuggestionModel&lt;T&gt;[]'
+methods:
+  - name: convertSuggestionsToSuggestionItems(suggestions)
+    uid: >-
+      @fluentui/react!SuggestionsController#convertSuggestionsToSuggestionItems:member(1)
+    package: '@fluentui/react!'
+    fullName: convertSuggestionsToSuggestionItems(suggestions)
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        convertSuggestionsToSuggestionItems(suggestions:
+        Array<ISuggestionModel<T> | T>): ISuggestionModel<T>[];
+      parameters:
+        - id: suggestions
+          description: ''
+          type: Array&lt;ISuggestionModel&lt;T&gt; | T&gt;
+      return:
+        type: 'ISuggestionModel&lt;T&gt;[]'
+        description: ''
+  - name: createGenericSuggestion(itemToConvert)
+    uid: '@fluentui/react!SuggestionsController#createGenericSuggestion:member(1)'
+    package: '@fluentui/react!'
+    fullName: createGenericSuggestion(itemToConvert)
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'createGenericSuggestion(itemToConvert: ISuggestionModel<T> | T): void;'
+      parameters:
+        - id: itemToConvert
+          description: ''
+          type: ISuggestionModel&lt;T&gt; | T
+      return:
+        type: void
+        description: ''
+  - name: deselectAllSuggestions()
+    uid: '@fluentui/react!SuggestionsController#deselectAllSuggestions:member(1)'
+    package: '@fluentui/react!'
+    fullName: deselectAllSuggestions()
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'deselectAllSuggestions(): void;'
+      return:
+        type: void
+        description: ''
+  - name: getCurrentItem()
+    uid: '@fluentui/react!SuggestionsController#getCurrentItem:member(1)'
+    package: '@fluentui/react!'
+    fullName: getCurrentItem()
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getCurrentItem(): ISuggestionModel<T>;'
+      return:
+        type: ISuggestionModel&lt;T&gt;
+        description: ''
+  - name: getSuggestionAtIndex(index)
+    uid: '@fluentui/react!SuggestionsController#getSuggestionAtIndex:member(1)'
+    package: '@fluentui/react!'
+    fullName: getSuggestionAtIndex(index)
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getSuggestionAtIndex(index: number): ISuggestionModel<T>;'
+      parameters:
+        - id: index
+          description: ''
+          type: number
+      return:
+        type: ISuggestionModel&lt;T&gt;
+        description: ''
+  - name: getSuggestions()
+    uid: '@fluentui/react!SuggestionsController#getSuggestions:member(1)'
+    package: '@fluentui/react!'
+    fullName: getSuggestions()
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getSuggestions(): ISuggestionModel<T>[];'
+      return:
+        type: 'ISuggestionModel&lt;T&gt;[]'
+        description: ''
+  - name: hasSelectedSuggestion()
+    uid: '@fluentui/react!SuggestionsController#hasSelectedSuggestion:member(1)'
+    package: '@fluentui/react!'
+    fullName: hasSelectedSuggestion()
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'hasSelectedSuggestion(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: nextSuggestion()
+    uid: '@fluentui/react!SuggestionsController#nextSuggestion:member(1)'
+    package: '@fluentui/react!'
+    fullName: nextSuggestion()
+    summary: Increments the suggestion index and gets the next suggestion in the list.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'nextSuggestion(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: previousSuggestion()
+    uid: '@fluentui/react!SuggestionsController#previousSuggestion:member(1)'
+    package: '@fluentui/react!'
+    fullName: previousSuggestion()
+    summary: >-
+      Decrements the suggestion index and gets the previous suggestion in the
+      list.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'previousSuggestion(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: removeSuggestion(index)
+    uid: '@fluentui/react!SuggestionsController#removeSuggestion:member(1)'
+    package: '@fluentui/react!'
+    fullName: removeSuggestion(index)
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'removeSuggestion(index: number): void;'
+      parameters:
+        - id: index
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: setSelectedSuggestion(index)
+    uid: '@fluentui/react!SuggestionsController#setSelectedSuggestion:member(1)'
+    package: '@fluentui/react!'
+    fullName: setSelectedSuggestion(index)
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setSelectedSuggestion(index: number): void;'
+      parameters:
+        - id: index
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: 'updateSuggestions(newSuggestions, selectedIndex)'
+    uid: '@fluentui/react!SuggestionsController#updateSuggestions:member(1)'
+    package: '@fluentui/react!'
+    fullName: 'updateSuggestions(newSuggestions, selectedIndex)'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'updateSuggestions(newSuggestions: T[], selectedIndex?: number): void;'
+      parameters:
+        - id: newSuggestions
+          description: ''
+          type: 'T[]'
+        - id: selectedIndex
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''

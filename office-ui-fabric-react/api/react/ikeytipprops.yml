@@ -1,0 +1,194 @@
+### YamlMime:TSType
+name: IKeytipProps
+uid: '@fluentui/react!IKeytipProps:interface'
+package: '@fluentui/react!'
+fullName: IKeytipProps
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: calloutProps
+    uid: '@fluentui/react!IKeytipProps#calloutProps:member'
+    package: '@fluentui/react!'
+    fullName: calloutProps
+    summary: ICalloutProps to pass to the callout element
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'calloutProps?: ICalloutProps;'
+      return:
+        type: ICalloutProps
+  - name: content
+    uid: '@fluentui/react!IKeytipProps#content:member'
+    package: '@fluentui/react!'
+    fullName: content
+    summary: Content to put inside the keytip
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'content: string;'
+      return:
+        type: string
+  - name: disabled
+    uid: '@fluentui/react!IKeytipProps#disabled:member'
+    package: '@fluentui/react!'
+    fullName: disabled
+    summary: T/F if the corresponding control for this keytip is disabled
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'disabled?: boolean;'
+      return:
+        type: boolean
+  - name: hasDynamicChildren
+    uid: '@fluentui/react!IKeytipProps#hasDynamicChildren:member'
+    package: '@fluentui/react!'
+    fullName: hasDynamicChildren
+    summary: >-
+      Whether or not this keytip will have children keytips that are dynamically
+      created (DOM is generated on keytip activation). Common cases are a Pivot
+      or Modal.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'hasDynamicChildren?: boolean;'
+      return:
+        type: boolean
+  - name: hasMenu
+    uid: '@fluentui/react!IKeytipProps#hasMenu:member'
+    package: '@fluentui/react!'
+    fullName: hasMenu
+    summary: >-
+      Whether or not this keytip belongs to a component that has a menu Keytip
+      mode will stay on when a menu is opened, even if the items in that menu
+      have no keytips
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'hasMenu?: boolean;'
+      return:
+        type: boolean
+  - name: keySequences
+    uid: '@fluentui/react!IKeytipProps#keySequences:member'
+    package: '@fluentui/react!'
+    fullName: keySequences
+    summary: >-
+      Array of KeySequences which is the full key sequence to trigger this
+      keytip Should not include initial 'start' key sequence
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'keySequences: string[];'
+      return:
+        type: 'string[]'
+  - name: offset
+    uid: '@fluentui/react!IKeytipProps#offset:member'
+    package: '@fluentui/react!'
+    fullName: offset
+    summary: >-
+      Offset x and y for the keytip, added from the top-left corner By default
+      the keytip will be anchored to the bottom-center of the element
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'offset?: Point;'
+      return:
+        type: '<xref uid="@fluentui/utilities!Point:interface" />'
+  - name: onExecute
+    uid: '@fluentui/react!IKeytipProps#onExecute:member'
+    package: '@fluentui/react!'
+    fullName: onExecute
+    summary: >-
+      Function to call when this keytip is activated. 'executeTarget' is the DOM
+      element marked with 'data-ktp-execute-target'. 'target' is the DOM element
+      marked with 'data-ktp-target'.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        onExecute?: (executeTarget: HTMLElement | null, target: HTMLElement |
+        null) => void;
+      return:
+        type: >-
+          (executeTarget: HTMLElement | null, target: HTMLElement | null) =&gt;
+          void
+  - name: onReturn
+    uid: '@fluentui/react!IKeytipProps#onReturn:member'
+    package: '@fluentui/react!'
+    fullName: onReturn
+    summary: >-
+      Function to call when the keytip is the currentKeytip and a return
+      sequence is pressed. 'executeTarget' is the DOM element marked with
+      'data-ktp-execute-target'. 'target' is the DOM element marked with
+      'data-ktp-target'.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        onReturn?: (executeTarget: HTMLElement | null, target: HTMLElement |
+        null) => void;
+      return:
+        type: >-
+          (executeTarget: HTMLElement | null, target: HTMLElement | null) =&gt;
+          void
+  - name: overflowSetSequence
+    uid: '@fluentui/react!IKeytipProps#overflowSetSequence:member'
+    package: '@fluentui/react!'
+    fullName: overflowSetSequence
+    summary: >-
+      Full KeySequence of the overflow set button, will be set automatically if
+      this keytip is inside an overflow
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'overflowSetSequence?: string[];'
+      return:
+        type: 'string[]'
+  - name: styles
+    uid: '@fluentui/react!IKeytipProps#styles:member'
+    package: '@fluentui/react!'
+    fullName: styles
+    summary: Optional styles for the component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'styles?: IStyleFunctionOrObject<IKeytipStyleProps, IKeytipStyles>;'
+      return:
+        type: 'IStyleFunctionOrObject&lt;IKeytipStyleProps, IKeytipStyles&gt;'
+  - name: theme
+    uid: '@fluentui/react!IKeytipProps#theme:member'
+    package: '@fluentui/react!'
+    fullName: theme
+    summary: Theme for the component
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
+  - name: visible
+    uid: '@fluentui/react!IKeytipProps#visible:member'
+    package: '@fluentui/react!'
+    fullName: visible
+    summary: T/F if the keytip is visible
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'visible?: boolean;'
+      return:
+        type: boolean

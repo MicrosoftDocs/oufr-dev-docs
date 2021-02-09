@@ -1,0 +1,227 @@
+### YamlMime:TSType
+name: IDialogContentProps
+uid: '@fluentui/react!IDialogContentProps:interface'
+package: '@fluentui/react!'
+fullName: IDialogContentProps
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: className
+    uid: '@fluentui/react!IDialogContentProps#className:member'
+    package: '@fluentui/react!'
+    fullName: className
+    summary: Optional override class name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'className?: string;'
+      return:
+        type: string
+  - name: closeButtonAriaLabel
+    uid: '@fluentui/react!IDialogContentProps#closeButtonAriaLabel:member'
+    package: '@fluentui/react!'
+    fullName: closeButtonAriaLabel
+    summary: Label to be passed to to aria-label of close button
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'closeButtonAriaLabel?: string;'
+      return:
+        type: string
+  - name: componentRef
+    uid: '@fluentui/react!IDialogContentProps#componentRef:member'
+    package: '@fluentui/react!'
+    fullName: componentRef
+    summary: >-
+      Optional callback to access the IDialogContent interface. Use this instead
+      of ref for accessing the public methods and properties of the component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'componentRef?: IRefObject<IDialogContent>;'
+      return:
+        type: IRefObject&lt;IDialogContent&gt;
+  - name: draggableHeaderClassName
+    uid: '@fluentui/react!IDialogContentProps#draggableHeaderClassName:member'
+    package: '@fluentui/react!'
+    fullName: draggableHeaderClassName
+    summary: The classname for when the header is draggable
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'draggableHeaderClassName?: string;'
+      return:
+        type: string
+  - name: isMultiline
+    uid: '@fluentui/react!IDialogContentProps#isMultiline:member'
+    package: '@fluentui/react!'
+    fullName: isMultiline
+    summary: Is inside a multiline wrapper
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isMultiline?: boolean;'
+      return:
+        type: boolean
+  - name: onDismiss
+    uid: '@fluentui/react!IDialogContentProps#onDismiss:member'
+    package: '@fluentui/react!'
+    fullName: onDismiss
+    summary: >-
+      Callback for when the Dialog is dismissed from the close button or light
+      dismiss, before the animation completes.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onDismiss?: (ev?: React.MouseEvent<HTMLButtonElement>) => any;'
+      return:
+        type: '(ev?: React.MouseEvent&lt;HTMLButtonElement&gt;) =&gt; any'
+  - name: responsiveMode
+    uid: '@fluentui/react!IDialogContentProps#responsiveMode:member'
+    package: '@fluentui/react!'
+    fullName: responsiveMode
+    summary: Responsive mode passed in from decorator.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'responsiveMode?: ResponsiveMode;'
+      return:
+        type: ResponsiveMode
+  - name: showCloseButton
+    uid: '@fluentui/react!IDialogContentProps#showCloseButton:member'
+    package: '@fluentui/react!'
+    fullName: showCloseButton
+    summary: Show an 'x' close button in the upper-right corner
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'showCloseButton?: boolean;'
+      return:
+        type: boolean
+  - name: styles
+    uid: '@fluentui/react!IDialogContentProps#styles:member'
+    package: '@fluentui/react!'
+    fullName: styles
+    summary: >-
+      Call to provide customized styling that will layer on top of the variant
+      rules
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        styles?: IStyleFunctionOrObject<IDialogContentStyleProps,
+        IDialogContentStyles>;
+      return:
+        type: >-
+          IStyleFunctionOrObject&lt;IDialogContentStyleProps,
+          IDialogContentStyles&gt;
+  - name: subText
+    uid: '@fluentui/react!IDialogContentProps#subText:member'
+    package: '@fluentui/react!'
+    fullName: subText
+    summary: The subtext to display in the dialog
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'subText?: string;'
+      return:
+        type: string
+  - name: subTextId
+    uid: '@fluentui/react!IDialogContentProps#subTextId:member'
+    package: '@fluentui/react!'
+    fullName: subTextId
+    summary: The Id for subText container
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'subTextId?: string;'
+      return:
+        type: string
+  - name: theme
+    uid: '@fluentui/react!IDialogContentProps#theme:member'
+    package: '@fluentui/react!'
+    fullName: theme
+    summary: Theme provided by HOC.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
+  - name: title
+    uid: '@fluentui/react!IDialogContentProps#title:member'
+    package: '@fluentui/react!'
+    fullName: title
+    summary: The title text to display at the top of the dialog.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'title?: string | JSX.Element;'
+      return:
+        type: string | JSX.Element
+  - name: titleId
+    uid: '@fluentui/react!IDialogContentProps#titleId:member'
+    package: '@fluentui/react!'
+    fullName: titleId
+    summary: The Id for title container
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: use the `id` attribute in `titleProps` instead.
+    syntax:
+      content: 'titleId?: string;'
+      return:
+        type: string
+  - name: titleProps
+    uid: '@fluentui/react!IDialogContentProps#titleProps:member'
+    package: '@fluentui/react!'
+    fullName: titleProps
+    summary: The props for title container.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'titleProps?: React.HTMLAttributes<HTMLDivElement>;'
+      return:
+        type: React.HTMLAttributes&lt;HTMLDivElement&gt;
+  - name: topButtonsProps
+    uid: '@fluentui/react!IDialogContentProps#topButtonsProps:member'
+    package: '@fluentui/react!'
+    fullName: topButtonsProps
+    summary: Other top buttons that will show up next to the close button
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'topButtonsProps?: IButtonProps[];'
+      return:
+        type: 'IButtonProps[]'
+  - name: type
+    uid: '@fluentui/react!IDialogContentProps#type:member'
+    package: '@fluentui/react!'
+    fullName: type
+    summary: The type of Dialog to display.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type?: DialogType;'
+      return:
+        type: DialogType
+extends: 'React.ClassAttributes&lt;DialogContentBase&gt; '

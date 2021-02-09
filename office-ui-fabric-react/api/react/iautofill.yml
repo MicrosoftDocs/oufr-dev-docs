@@ -1,0 +1,116 @@
+### YamlMime:TSType
+name: IAutofill
+uid: '@fluentui/react!IAutofill:interface'
+package: '@fluentui/react!'
+fullName: IAutofill
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: cursorLocation
+    uid: '@fluentui/react!IAutofill#cursorLocation:member'
+    package: '@fluentui/react!'
+    fullName: cursorLocation
+    summary: >-
+      The current index of the cursor in the input area. Returns -1 if the input
+      element is not ready.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'cursorLocation: number | null;'
+      return:
+        type: number | null
+  - name: inputElement
+    uid: '@fluentui/react!IAutofill#inputElement:member'
+    package: '@fluentui/react!'
+    fullName: inputElement
+    summary: The current input element.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'inputElement: HTMLInputElement | null;'
+      return:
+        type: HTMLInputElement | null
+  - name: isValueSelected
+    uid: '@fluentui/react!IAutofill#isValueSelected:member'
+    package: '@fluentui/react!'
+    fullName: isValueSelected
+    summary: Whether there is a value selected in the input area.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isValueSelected: boolean;'
+      return:
+        type: boolean
+  - name: selectionEnd
+    uid: '@fluentui/react!IAutofill#selectionEnd:member'
+    package: '@fluentui/react!'
+    fullName: selectionEnd
+    summary: >-
+      The current index of where the selection ends. Returns -1 if the input
+      element is not ready.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'selectionEnd: number | null;'
+      return:
+        type: number | null
+  - name: selectionStart
+    uid: '@fluentui/react!IAutofill#selectionStart:member'
+    package: '@fluentui/react!'
+    fullName: selectionStart
+    summary: >-
+      The current index of where the selection starts. Returns -1 if the input
+      element is not ready.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'selectionStart: number | null;'
+      return:
+        type: number | null
+  - name: value
+    uid: '@fluentui/react!IAutofill#value:member'
+    package: '@fluentui/react!'
+    fullName: value
+    summary: The current text value that the user has entered.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'value: string;'
+      return:
+        type: string
+methods:
+  - name: clear()
+    uid: '@fluentui/react!IAutofill#clear:member(1)'
+    package: '@fluentui/react!'
+    fullName: clear()
+    summary: Clear all text in the input. Sets value to `''`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clear(): void;'
+      return:
+        type: void
+        description: ''
+  - name: focus()
+    uid: '@fluentui/react!IAutofill#focus:member(1)'
+    package: '@fluentui/react!'
+    fullName: focus()
+    summary: Focus the input element.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'focus(): void;'
+      return:
+        type: void
+        description: ''

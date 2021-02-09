@@ -1,0 +1,199 @@
+### YamlMime:TSType
+name: IColorSliderProps
+uid: '@fluentui/react!IColorSliderProps:interface'
+package: '@fluentui/react!'
+fullName: IColorSliderProps
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: ariaLabel
+    uid: '@fluentui/react!IColorSliderProps#ariaLabel:member'
+    package: '@fluentui/react!'
+    fullName: ariaLabel
+    summary: Label of the ColorSlider for the benefit of screen reader users.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ariaLabel?: string;'
+      return:
+        type: string
+  - name: className
+    uid: '@fluentui/react!IColorSliderProps#className:member'
+    package: '@fluentui/react!'
+    fullName: className
+    summary: Additional CSS class(es) to apply to the ColorSlider.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'className?: string;'
+      return:
+        type: string
+  - name: componentRef
+    uid: '@fluentui/react!IColorSliderProps#componentRef:member'
+    package: '@fluentui/react!'
+    fullName: componentRef
+    summary: Gets the component ref.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'componentRef?: IRefObject<IColorSlider>;'
+      return:
+        type: IRefObject&lt;IColorSlider&gt;
+  - name: isAlpha
+    uid: '@fluentui/react!IColorSliderProps#isAlpha:member'
+    package: '@fluentui/react!'
+    fullName: isAlpha
+    summary: >-
+      If true, the slider represents an alpha slider and will display a gray
+      checkered pattern in the background. Otherwise, the slider represents a
+      hue slider.
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Use `type`
+    syntax:
+      content: 'isAlpha?: boolean;'
+      return:
+        type: boolean
+  - name: maxValue
+    uid: '@fluentui/react!IColorSliderProps#maxValue:member'
+    package: '@fluentui/react!'
+    fullName: maxValue
+    summary: Maximum value of the slider.
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: 'Will be 100 for alpha or transparency sliders, or 359 for hue sliders.'
+    syntax:
+      content: 'maxValue?: number;'
+      return:
+        type: number
+  - name: minValue
+    uid: '@fluentui/react!IColorSliderProps#minValue:member'
+    package: '@fluentui/react!'
+    fullName: minValue
+    summary: Minimum value of the slider.
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Will always be 0
+    syntax:
+      content: 'minValue?: number;'
+      return:
+        type: number
+  - name: onChange
+    uid: '@fluentui/react!IColorSliderProps#onChange:member'
+    package: '@fluentui/react!'
+    fullName: onChange
+    summary: Callback issued when the value changes.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        onChange?: (event: React.MouseEvent | React.KeyboardEvent, newValue?:
+        number) => void;
+      return:
+        type: >-
+          (event: React.MouseEvent | React.KeyboardEvent, newValue?: number)
+          =&gt; void
+  - name: overlayColor
+    uid: '@fluentui/react!IColorSliderProps#overlayColor:member'
+    package: '@fluentui/react!'
+    fullName: overlayColor
+    summary: >-
+      Hex color to use when rendering an alpha or transparency slider's overlay,
+      \*without\* the `#`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'overlayColor?: string;'
+      return:
+        type: string
+  - name: overlayStyle
+    uid: '@fluentui/react!IColorSliderProps#overlayStyle:member'
+    package: '@fluentui/react!'
+    fullName: overlayStyle
+    summary: Custom style for the overlay element.
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Use `overlayColor` instead
+    syntax:
+      content: 'overlayStyle?: React.CSSProperties;'
+      return:
+        type: React.CSSProperties
+  - name: styles
+    uid: '@fluentui/react!IColorSliderProps#styles:member'
+    package: '@fluentui/react!'
+    fullName: styles
+    summary: >-
+      Call to provide customized styling that will layer on top of the variant
+      rules.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        styles?: IStyleFunctionOrObject<IColorSliderStyleProps,
+        IColorSliderStyles>;
+      return:
+        type: >-
+          IStyleFunctionOrObject&lt;IColorSliderStyleProps,
+          IColorSliderStyles&gt;
+  - name: theme
+    uid: '@fluentui/react!IColorSliderProps#theme:member'
+    package: '@fluentui/react!'
+    fullName: theme
+    summary: Theme (provided through customization).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
+  - name: thumbColor
+    uid: '@fluentui/react!IColorSliderProps#thumbColor:member'
+    package: '@fluentui/react!'
+    fullName: thumbColor
+    summary: CSS-compatible string for the color of the thumb element.
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Not used. Use `styles.sliderThumb` instead.
+    syntax:
+      content: 'thumbColor?: string;'
+      return:
+        type: string
+  - name: type
+    uid: '@fluentui/react!IColorSliderProps#type:member'
+    package: '@fluentui/react!'
+    fullName: type
+    summary: Type of slider to display.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type?: ''hue'' | ''alpha'' | ''transparency'';'
+      return:
+        type: '''hue'' | ''alpha'' | ''transparency'''
+  - name: value
+    uid: '@fluentui/react!IColorSliderProps#value:member'
+    package: '@fluentui/react!'
+    fullName: value
+    summary: Current value of the slider.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'value?: number;'
+      return:
+        type: number

@@ -1,0 +1,239 @@
+### YamlMime:TSType
+name: IFacepileProps
+uid: '@fluentui/react!IFacepileProps:interface'
+package: '@fluentui/react!'
+fullName: IFacepileProps
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: addButtonProps
+    uid: '@fluentui/react!IFacepileProps#addButtonProps:member'
+    package: '@fluentui/react!'
+    fullName: addButtonProps
+    summary: Button properties for the add face button
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'addButtonProps?: IButtonProps;'
+      return:
+        type: IButtonProps
+  - name: ariaDescription
+    uid: '@fluentui/react!IFacepileProps#ariaDescription:member'
+    package: '@fluentui/react!'
+    fullName: ariaDescription
+    summary: ARIA label for persona list
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ariaDescription?: string;'
+      return:
+        type: string
+  - name: ariaLabel
+    uid: '@fluentui/react!IFacepileProps#ariaLabel:member'
+    package: '@fluentui/react!'
+    fullName: ariaLabel
+    summary: >-
+      Defines the aria label that the screen readers use when focus goes on a
+      list of personas.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ariaLabel?: string;'
+      return:
+        type: string
+  - name: chevronButtonProps
+    uid: '@fluentui/react!IFacepileProps#chevronButtonProps:member'
+    package: '@fluentui/react!'
+    fullName: chevronButtonProps
+    summary: 'Deprecated at v0.70, use `overflowButtonProps` instead.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Use `overflowButtonProps` instead.
+    syntax:
+      content: 'chevronButtonProps?: IButtonProps;'
+      return:
+        type: IButtonProps
+  - name: className
+    uid: '@fluentui/react!IFacepileProps#className:member'
+    package: '@fluentui/react!'
+    fullName: className
+    summary: Additional css class to apply to the Facepile
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'className?: string;'
+      return:
+        type: string
+  - name: componentRef
+    uid: '@fluentui/react!IFacepileProps#componentRef:member'
+    package: '@fluentui/react!'
+    fullName: componentRef
+    summary: >-
+      Optional callback to access the IFacepile interface. Use this instead of
+      ref for accessing the public methods and properties of the component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'componentRef?: IRefObject<IFacepile>;'
+      return:
+        type: IRefObject&lt;IFacepile&gt;
+  - name: getPersonaProps
+    uid: '@fluentui/react!IFacepileProps#getPersonaProps:member'
+    package: '@fluentui/react!'
+    fullName: getPersonaProps
+    summary: Method to access properties on the underlying Persona control
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getPersonaProps?: (persona: IFacepilePersona) => IPersonaSharedProps;'
+      return:
+        type: '(persona: IFacepilePersona) =&gt; IPersonaSharedProps'
+  - name: maxDisplayablePersonas
+    uid: '@fluentui/react!IFacepileProps#maxDisplayablePersonas:member'
+    package: '@fluentui/react!'
+    fullName: maxDisplayablePersonas
+    summary: Maximum number of personas to show
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'maxDisplayablePersonas?: number;'
+      return:
+        type: number
+  - name: onRenderPersona
+    uid: '@fluentui/react!IFacepileProps#onRenderPersona:member'
+    package: '@fluentui/react!'
+    fullName: onRenderPersona
+    summary: >-
+      Optional custom renderer for the persona, gets called when there is one
+      persona in personas array
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onRenderPersona?: IRenderFunction<IFacepilePersona>;'
+      return:
+        type: IRenderFunction&lt;IFacepilePersona&gt;
+  - name: onRenderPersonaCoin
+    uid: '@fluentui/react!IFacepileProps#onRenderPersonaCoin:member'
+    package: '@fluentui/react!'
+    fullName: onRenderPersonaCoin
+    summary: >-
+      Optional custom renderer for the persona coins, gets called when there are
+      multiple persona in personas array
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onRenderPersonaCoin?: IRenderFunction<IFacepilePersona>;'
+      return:
+        type: IRenderFunction&lt;IFacepilePersona&gt;
+  - name: overflowButtonProps
+    uid: '@fluentui/react!IFacepileProps#overflowButtonProps:member'
+    package: '@fluentui/react!'
+    fullName: overflowButtonProps
+    summary: Properties for the overflow icon
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'overflowButtonProps?: IButtonProps;'
+      return:
+        type: IButtonProps
+  - name: overflowButtonType
+    uid: '@fluentui/react!IFacepileProps#overflowButtonType:member'
+    package: '@fluentui/react!'
+    fullName: overflowButtonType
+    summary: Type of overflow icon to use
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'overflowButtonType?: OverflowButtonType;'
+      return:
+        type: OverflowButtonType
+  - name: overflowPersonas
+    uid: '@fluentui/react!IFacepileProps#overflowPersonas:member'
+    package: '@fluentui/react!'
+    fullName: overflowPersonas
+    summary: Personas to place in the overflow
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'overflowPersonas?: IFacepilePersona[];'
+      return:
+        type: 'IFacepilePersona[]'
+  - name: personas
+    uid: '@fluentui/react!IFacepileProps#personas:member'
+    package: '@fluentui/react!'
+    fullName: personas
+    summary: Array of IPersonaProps that define each Persona.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'personas: IFacepilePersona[];'
+      return:
+        type: 'IFacepilePersona[]'
+  - name: personaSize
+    uid: '@fluentui/react!IFacepileProps#personaSize:member'
+    package: '@fluentui/react!'
+    fullName: personaSize
+    summary: Size to display the personas
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'personaSize?: PersonaSize;'
+      return:
+        type: PersonaSize
+  - name: showAddButton
+    uid: '@fluentui/react!IFacepileProps#showAddButton:member'
+    package: '@fluentui/react!'
+    fullName: showAddButton
+    summary: Show add person button
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'showAddButton?: boolean;'
+      return:
+        type: boolean
+  - name: styles
+    uid: '@fluentui/react!IFacepileProps#styles:member'
+    package: '@fluentui/react!'
+    fullName: styles
+    summary: >-
+      Call to provide customized styling that will layer on top of the variant
+      rules.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'styles?: IStyleFunctionOrObject<IFacepileStyleProps, IFacepileStyles>;'
+      return:
+        type: 'IStyleFunctionOrObject&lt;IFacepileStyleProps, IFacepileStyles&gt;'
+  - name: theme
+    uid: '@fluentui/react!IFacepileProps#theme:member'
+    package: '@fluentui/react!'
+    fullName: theme
+    summary: Theme provided by High-Order Component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
+extends: 'React.ClassAttributes&lt;FacepileBase&gt; '

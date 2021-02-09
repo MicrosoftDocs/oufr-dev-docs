@@ -1,0 +1,103 @@
+### YamlMime:TSType
+name: ISuggestions
+uid: '@fluentui/react!ISuggestions:interface'
+package: '@fluentui/react!'
+fullName: ISuggestions
+summary: Suggestions component.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: executeSelectedAction
+    uid: '@fluentui/react!ISuggestions#executeSelectedAction:member'
+    package: '@fluentui/react!'
+    fullName: executeSelectedAction
+    summary: Execute the action selected. Can be SearchMore or ForceResolve actions.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'executeSelectedAction: () => void;'
+      return:
+        type: () =&gt; void
+  - name: focusAboveSuggestions
+    uid: '@fluentui/react!ISuggestions#focusAboveSuggestions:member'
+    package: '@fluentui/react!'
+    fullName: focusAboveSuggestions
+    summary: >-
+      Focus on the ForceResolve action above the suggestions. If not available
+      then focus on SearchMore action.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'focusAboveSuggestions: () => void;'
+      return:
+        type: () =&gt; void
+  - name: focusBelowSuggestions
+    uid: '@fluentui/react!ISuggestions#focusBelowSuggestions:member'
+    package: '@fluentui/react!'
+    fullName: focusBelowSuggestions
+    summary: >-
+      Focus on the SearchMore action below the suggestions. If not available
+      then focus on ForceResolve action.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'focusBelowSuggestions: () => void;'
+      return:
+        type: () =&gt; void
+  - name: focusSearchForMoreButton
+    uid: '@fluentui/react!ISuggestions#focusSearchForMoreButton:member'
+    package: '@fluentui/react!'
+    fullName: focusSearchForMoreButton
+    summary: Focus the SearchMore action button.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'focusSearchForMoreButton: () => void;'
+      return:
+        type: () =&gt; void
+  - name: hasSuggestedAction
+    uid: '@fluentui/react!ISuggestions#hasSuggestedAction:member'
+    package: '@fluentui/react!'
+    fullName: hasSuggestedAction
+    summary: Whether it has any suggested actions like ForceResolve or SearchMore.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'hasSuggestedAction: () => boolean;'
+      return:
+        type: () =&gt; boolean
+  - name: hasSuggestedActionSelected
+    uid: '@fluentui/react!ISuggestions#hasSuggestedActionSelected:member'
+    package: '@fluentui/react!'
+    fullName: hasSuggestedActionSelected
+    summary: >-
+      Whether any of the suggested actions (ForceResolve or SearchMore) is
+      selected.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'hasSuggestedActionSelected: () => boolean;'
+      return:
+        type: () =&gt; boolean
+  - name: tryHandleKeyDown
+    uid: '@fluentui/react!ISuggestions#tryHandleKeyDown:member'
+    package: '@fluentui/react!'
+    fullName: tryHandleKeyDown
+    summary: 'Returns true if the event was handled, false otherwise.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        tryHandleKeyDown: (keyCode: number, currentSuggestionIndex: number) =>
+        boolean;
+      return:
+        type: '(keyCode: number, currentSuggestionIndex: number) =&gt; boolean'

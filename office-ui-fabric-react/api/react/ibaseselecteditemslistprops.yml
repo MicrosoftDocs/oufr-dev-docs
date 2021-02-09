@@ -1,0 +1,185 @@
+### YamlMime:TSType
+name: IBaseSelectedItemsListProps
+uid: '@fluentui/react!IBaseSelectedItemsListProps:interface'
+package: '@fluentui/react!'
+fullName: IBaseSelectedItemsListProps
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: canRemoveItem
+    uid: '@fluentui/react!IBaseSelectedItemsListProps#canRemoveItem:member'
+    package: '@fluentui/react!'
+    fullName: canRemoveItem
+    summary: A callback on whether this item can be deleted
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'canRemoveItem?: (item: T) => boolean;'
+      return:
+        type: '(item: T) =&gt; boolean'
+  - name: componentRef
+    uid: '@fluentui/react!IBaseSelectedItemsListProps#componentRef:member'
+    package: '@fluentui/react!'
+    fullName: componentRef
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'componentRef?: IRefObject<IBaseSelectedItemsList<T>>;'
+      return:
+        type: IRefObject&lt;IBaseSelectedItemsList&lt;T&gt;&gt;
+  - name: createGenericItem
+    uid: '@fluentui/react!IBaseSelectedItemsListProps#createGenericItem:member'
+    package: '@fluentui/react!'
+    fullName: createGenericItem
+    summary: >-
+      Function that specifies how arbitrary text entered into the well is
+      handled.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        createGenericItem?: (input: string, ValidationState: ValidationState) =>
+        ISuggestionModel<T>;
+      return:
+        type: >-
+          (input: string, ValidationState: ValidationState) =&gt;
+          ISuggestionModel&lt;T&gt;
+  - name: defaultSelectedItems
+    uid: '@fluentui/react!IBaseSelectedItemsListProps#defaultSelectedItems:member'
+    package: '@fluentui/react!'
+    fullName: defaultSelectedItems
+    summary: >-
+      Initial items that have already been selected and should appear in the
+      people picker.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'defaultSelectedItems?: T[];'
+      return:
+        type: 'T[]'
+  - name: onChange
+    uid: '@fluentui/react!IBaseSelectedItemsListProps#onChange:member'
+    package: '@fluentui/react!'
+    fullName: onChange
+    summary: A callback for when the selected list of items changes.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onChange?: (items?: T[]) => void;'
+      return:
+        type: '(items?: T[]) =&gt; void'
+  - name: onCopyItems
+    uid: '@fluentui/react!IBaseSelectedItemsListProps#onCopyItems:member'
+    package: '@fluentui/react!'
+    fullName: onCopyItems
+    summary: A callback for when items are copied
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onCopyItems?: (items: T[]) => string;'
+      return:
+        type: '(items: T[]) =&gt; string'
+  - name: onItemDeleted
+    uid: '@fluentui/react!IBaseSelectedItemsListProps#onItemDeleted:member'
+    package: '@fluentui/react!'
+    fullName: onItemDeleted
+    summary: A callback when an item is deleted
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Use `onItemsDeleted` instead.
+    syntax:
+      content: 'onItemDeleted?: (deletedItem: T) => void;'
+      return:
+        type: '(deletedItem: T) =&gt; void'
+  - name: onItemsDeleted
+    uid: '@fluentui/react!IBaseSelectedItemsListProps#onItemsDeleted:member'
+    package: '@fluentui/react!'
+    fullName: onItemsDeleted
+    summary: A callback when and item or items are deleted
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onItemsDeleted?: (deletedItems: T[]) => void;'
+      return:
+        type: '(deletedItems: T[]) =&gt; void'
+  - name: onItemSelected
+    uid: '@fluentui/react!IBaseSelectedItemsListProps#onItemSelected:member'
+    package: '@fluentui/react!'
+    fullName: onItemSelected
+    summary: >-
+      A callback to process a selection after the user selects something from
+      the picker.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        onItemSelected?: (selectedItem?: T | T[]) => T | PromiseLike<T> | T[] |
+        PromiseLike<T[]>;
+      return:
+        type: >-
+          (selectedItem?: T | T[]) =&gt; T | PromiseLike&lt;T&gt; | T[] |
+          PromiseLike&lt;T[]&gt;
+  - name: onRenderItem
+    uid: '@fluentui/react!IBaseSelectedItemsListProps#onRenderItem:member'
+    package: '@fluentui/react!'
+    fullName: onRenderItem
+    summary: Function that specifies how the selected item will appear.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onRenderItem?: (props: ISelectedItemProps<T>) => JSX.Element;'
+      return:
+        type: '(props: ISelectedItemProps&lt;T&gt;) =&gt; JSX.Element'
+  - name: removeButtonAriaLabel
+    uid: '@fluentui/react!IBaseSelectedItemsListProps#removeButtonAriaLabel:member'
+    package: '@fluentui/react!'
+    fullName: removeButtonAriaLabel
+    summary: Aria label for the 'X' button in the selected item component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'removeButtonAriaLabel?: string;'
+      return:
+        type: string
+  - name: selectedItems
+    uid: '@fluentui/react!IBaseSelectedItemsListProps#selectedItems:member'
+    package: '@fluentui/react!'
+    fullName: selectedItems
+    summary: >-
+      The items that the base picker should currently display as selected. If
+      this is provided then the picker will act as a controlled component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'selectedItems?: T[];'
+      return:
+        type: 'T[]'
+  - name: selection
+    uid: '@fluentui/react!IBaseSelectedItemsListProps#selection:member'
+    package: '@fluentui/react!'
+    fullName: selection
+    summary: The selection
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'selection?: Selection;'
+      return:
+        type: '<xref uid="@fluentui/utilities!Selection:class" />'
+extends: 'React.ClassAttributes&lt;any&gt; '

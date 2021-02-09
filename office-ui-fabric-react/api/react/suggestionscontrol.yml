@@ -1,0 +1,382 @@
+### YamlMime:TSType
+name: SuggestionsControl
+uid: '@fluentui/react!SuggestionsControl:class'
+package: '@fluentui/react!'
+fullName: SuggestionsControl
+summary: >-
+  Class when used with SuggestionsStore, renders a suggestions control with
+  customizable headers and footers
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: (constructor)(suggestionsProps)
+    uid: '@fluentui/react!SuggestionsControl:constructor(1)'
+    package: '@fluentui/react!'
+    fullName: (constructor)(suggestionsProps)
+    summary: Constructs a new instance of the `SuggestionsControl` class
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'constructor(suggestionsProps: ISuggestionsControlProps<T>);'
+      parameters:
+        - id: suggestionsProps
+          description: ''
+          type: ISuggestionsControlProps&lt;T&gt;
+properties:
+  - name: _forceResolveButton
+    uid: '@fluentui/react!SuggestionsControl#_forceResolveButton:member'
+    package: '@fluentui/react!'
+    fullName: _forceResolveButton
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protected _forceResolveButton: IButton;'
+      return:
+        type: IButton
+  - name: _searchForMoreButton
+    uid: '@fluentui/react!SuggestionsControl#_searchForMoreButton:member'
+    package: '@fluentui/react!'
+    fullName: _searchForMoreButton
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protected _searchForMoreButton: IButton;'
+      return:
+        type: IButton
+  - name: _selectedElement
+    uid: '@fluentui/react!SuggestionsControl#_selectedElement:member'
+    package: '@fluentui/react!'
+    fullName: _selectedElement
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protected _selectedElement: React.RefObject<HTMLDivElement>;'
+      return:
+        type: React.RefObject&lt;HTMLDivElement&gt;
+  - name: _suggestions
+    uid: '@fluentui/react!SuggestionsControl#_suggestions:member'
+    package: '@fluentui/react!'
+    fullName: _suggestions
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protected _suggestions: React.RefObject<SuggestionsCore<T>>;'
+      return:
+        type: React.RefObject&lt;SuggestionsCore&lt;T&gt;&gt;
+  - name: currentSuggestion
+    uid: '@fluentui/react!SuggestionsControl#currentSuggestion:member'
+    package: '@fluentui/react!'
+    fullName: currentSuggestion
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'get currentSuggestion(): ISuggestionModel<T> | undefined;'
+      return:
+        type: ISuggestionModel&lt;T&gt; | undefined
+  - name: currentSuggestionIndex
+    uid: '@fluentui/react!SuggestionsControl#currentSuggestionIndex:member'
+    package: '@fluentui/react!'
+    fullName: currentSuggestionIndex
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'get currentSuggestionIndex(): number;'
+      return:
+        type: number
+  - name: selectedElement
+    uid: '@fluentui/react!SuggestionsControl#selectedElement:member'
+    package: '@fluentui/react!'
+    fullName: selectedElement
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'get selectedElement(): HTMLDivElement | undefined;'
+      return:
+        type: HTMLDivElement | undefined
+methods:
+  - name: _renderSuggestions()
+    uid: '@fluentui/react!SuggestionsControl#_renderSuggestions:member(1)'
+    package: '@fluentui/react!'
+    fullName: _renderSuggestions()
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protected _renderSuggestions(): JSX.Element;'
+      return:
+        type: JSX.Element
+        description: ''
+  - name: componentDidMount()
+    uid: '@fluentui/react!SuggestionsControl#componentDidMount:member(1)'
+    package: '@fluentui/react!'
+    fullName: componentDidMount()
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'componentDidMount(): void;'
+      return:
+        type: void
+        description: ''
+  - name: componentDidUpdate(oldProps)
+    uid: '@fluentui/react!SuggestionsControl#componentDidUpdate:member(1)'
+    package: '@fluentui/react!'
+    fullName: componentDidUpdate(oldProps)
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'componentDidUpdate(oldProps: ISuggestionsControlProps<T>): void;'
+      parameters:
+        - id: oldProps
+          description: ''
+          type: ISuggestionsControlProps&lt;T&gt;
+      return:
+        type: void
+        description: ''
+  - name: componentWillUnmount()
+    uid: '@fluentui/react!SuggestionsControl#componentWillUnmount:member(1)'
+    package: '@fluentui/react!'
+    fullName: componentWillUnmount()
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'componentWillUnmount(): void;'
+      return:
+        type: void
+        description: ''
+  - name: executeSelectedAction()
+    uid: '@fluentui/react!SuggestionsControl#executeSelectedAction:member(1)'
+    package: '@fluentui/react!'
+    fullName: executeSelectedAction()
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'executeSelectedAction(): void;'
+      return:
+        type: void
+        description: ''
+  - name: handleKeyDown(keyCode)
+    uid: '@fluentui/react!SuggestionsControl#handleKeyDown:member(1)'
+    package: '@fluentui/react!'
+    fullName: handleKeyDown(keyCode)
+    summary: >-
+      Handles the key down, returns true, if the event was handled, false
+      otherwise
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'handleKeyDown(keyCode: number): boolean;'
+      parameters:
+        - id: keyCode
+          description: The keyCode to handle
+          type: number
+      return:
+        type: boolean
+        description: ''
+  - name: hasSelection()
+    uid: '@fluentui/react!SuggestionsControl#hasSelection:member(1)'
+    package: '@fluentui/react!'
+    fullName: hasSelection()
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'hasSelection(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: hasSuggestionSelected()
+    uid: '@fluentui/react!SuggestionsControl#hasSuggestionSelected:member(1)'
+    package: '@fluentui/react!'
+    fullName: hasSuggestionSelected()
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'hasSuggestionSelected(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: removeSuggestion(index)
+    uid: '@fluentui/react!SuggestionsControl#removeSuggestion:member(1)'
+    package: '@fluentui/react!'
+    fullName: removeSuggestion(index)
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'removeSuggestion(index?: number): void;'
+      parameters:
+        - id: index
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: render()
+    uid: '@fluentui/react!SuggestionsControl#render:member(1)'
+    package: '@fluentui/react!'
+    fullName: render()
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'render(): JSX.Element;'
+      return:
+        type: JSX.Element
+        description: ''
+  - name: renderFooterItems()
+    uid: '@fluentui/react!SuggestionsControl#renderFooterItems:member(1)'
+    package: '@fluentui/react!'
+    fullName: renderFooterItems()
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protected renderFooterItems(): JSX.Element | null;'
+      return:
+        type: JSX.Element | null
+        description: ''
+  - name: renderHeaderItems()
+    uid: '@fluentui/react!SuggestionsControl#renderHeaderItems:member(1)'
+    package: '@fluentui/react!'
+    fullName: renderHeaderItems()
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protected renderHeaderItems(): JSX.Element | null;'
+      return:
+        type: JSX.Element | null
+        description: ''
+  - name: resetSelectedItem()
+    uid: '@fluentui/react!SuggestionsControl#resetSelectedItem:member(1)'
+    package: '@fluentui/react!'
+    fullName: resetSelectedItem()
+    summary: Resets the selected state and selects the first selectable item
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protected resetSelectedItem(): void;'
+      return:
+        type: void
+        description: ''
+  - name: scrollSelected()
+    uid: '@fluentui/react!SuggestionsControl#scrollSelected:member(1)'
+    package: '@fluentui/react!'
+    fullName: scrollSelected()
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'scrollSelected(): void;'
+      return:
+        type: void
+        description: ''
+  - name: selectFirstItem()
+    uid: '@fluentui/react!SuggestionsControl#selectFirstItem:member(1)'
+    package: '@fluentui/react!'
+    fullName: selectFirstItem()
+    summary: Selects the first item
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protected selectFirstItem(): void;'
+      return:
+        type: void
+        description: ''
+  - name: selectLastItem()
+    uid: '@fluentui/react!SuggestionsControl#selectLastItem:member(1)'
+    package: '@fluentui/react!'
+    fullName: selectLastItem()
+    summary: Selects the last item
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protected selectLastItem(): void;'
+      return:
+        type: void
+        description: ''
+  - name: 'selectNextItem(itemType, originalItemType)'
+    uid: '@fluentui/react!SuggestionsControl#selectNextItem:member(1)'
+    package: '@fluentui/react!'
+    fullName: 'selectNextItem(itemType, originalItemType)'
+    summary: Selects the next selectable item
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        protected selectNextItem(itemType: SuggestionItemType,
+        originalItemType?: SuggestionItemType): void;
+      parameters:
+        - id: itemType
+          description: ''
+          type: SuggestionItemType
+        - id: originalItemType
+          description: ''
+          type: SuggestionItemType
+      return:
+        type: void
+        description: ''
+  - name: 'selectPreviousItem(itemType, originalItemType)'
+    uid: '@fluentui/react!SuggestionsControl#selectPreviousItem:member(1)'
+    package: '@fluentui/react!'
+    fullName: 'selectPreviousItem(itemType, originalItemType)'
+    summary: Selects the previous selectable item
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        protected selectPreviousItem(itemType: SuggestionItemType,
+        originalItemType?: SuggestionItemType): void;
+      parameters:
+        - id: itemType
+          description: ''
+          type: SuggestionItemType
+        - id: originalItemType
+          description: ''
+          type: SuggestionItemType
+      return:
+        type: void
+        description: ''
+extends: >-
+  React.Component&lt;ISuggestionsControlProps&lt;T&gt;,
+  ISuggestionsControlState&lt;T&gt;&gt; 

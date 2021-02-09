@@ -1,0 +1,159 @@
+### YamlMime:TSType
+name: IDragDropOptions
+uid: '@fluentui/react!IDragDropOptions:interface'
+package: '@fluentui/react!'
+fullName: IDragDropOptions
+summary: The drag and drop event listener configuration.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: canDrag
+    uid: '@fluentui/react!IDragDropOptions#canDrag:member'
+    package: '@fluentui/react!'
+    fullName: canDrag
+    summary: Whether or not drag action is allowed.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'canDrag?: (item?: any) => boolean;'
+      return:
+        type: '(item?: any) =&gt; boolean'
+  - name: canDrop
+    uid: '@fluentui/react!IDragDropOptions#canDrop:member'
+    package: '@fluentui/react!'
+    fullName: canDrop
+    summary: Whether or not drop action is allowed.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        canDrop?: (dropContext?: IDragDropContext, dragContext?:
+        IDragDropContext) => boolean;
+      return:
+        type: >-
+          (dropContext?: IDragDropContext, dragContext?: IDragDropContext) =&gt;
+          boolean
+  - name: context
+    uid: '@fluentui/react!IDragDropOptions#context:member'
+    package: '@fluentui/react!'
+    fullName: context
+    summary: Context associated with drag and drop event.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'context: IDragDropContext;'
+      return:
+        type: IDragDropContext
+  - name: eventMap
+    uid: '@fluentui/react!IDragDropOptions#eventMap:member'
+    package: '@fluentui/react!'
+    fullName: eventMap
+    summary: Map of event name to callback function to subscribe to.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        eventMap?: {
+                eventName: string;
+                callback: (context: IDragDropContext, event?: any) => void;
+            }[];
+      return:
+        type: |-
+          {
+                  eventName: string;
+                  callback: (context: IDragDropContext, event?: any) =&gt; void;
+              }[]
+  - name: key
+    uid: '@fluentui/react!IDragDropOptions#key:member'
+    package: '@fluentui/react!'
+    fullName: key
+    summary: Unique key to associate with instance.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'key?: string;'
+      return:
+        type: string
+  - name: onDragEnd
+    uid: '@fluentui/react!IDragDropOptions#onDragEnd:member'
+    package: '@fluentui/react!'
+    fullName: onDragEnd
+    summary: On drag end event callback.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onDragEnd?: (item?: any, event?: DragEvent) => void;'
+      return:
+        type: '(item?: any, event?: DragEvent) =&gt; void'
+  - name: onDragOver
+    uid: '@fluentui/react!IDragDropOptions#onDragOver:member'
+    package: '@fluentui/react!'
+    fullName: onDragOver
+    summary: On drag over element(s) event callback.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onDragOver?: (item?: any, event?: DragEvent) => void;'
+      return:
+        type: '(item?: any, event?: DragEvent) =&gt; void'
+  - name: onDragStart
+    uid: '@fluentui/react!IDragDropOptions#onDragStart:member'
+    package: '@fluentui/react!'
+    fullName: onDragStart
+    summary: On drag start event callback.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        onDragStart?: (item?: any, itemIndex?: number, selectedItems?: any[],
+        event?: MouseEvent) => void;
+      return:
+        type: >-
+          (item?: any, itemIndex?: number, selectedItems?: any[], event?:
+          MouseEvent) =&gt; void
+  - name: onDrop
+    uid: '@fluentui/react!IDragDropOptions#onDrop:member'
+    package: '@fluentui/react!'
+    fullName: onDrop
+    summary: On drop event callback.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onDrop?: (item?: any, event?: DragEvent) => void;'
+      return:
+        type: '(item?: any, event?: DragEvent) =&gt; void'
+  - name: selectionIndex
+    uid: '@fluentui/react!IDragDropOptions#selectionIndex:member'
+    package: '@fluentui/react!'
+    fullName: selectionIndex
+    summary: Selection index on drag and drop event.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'selectionIndex: number;'
+      return:
+        type: number
+  - name: updateDropState
+    uid: '@fluentui/react!IDragDropOptions#updateDropState:member'
+    package: '@fluentui/react!'
+    fullName: updateDropState
+    summary: Callback on drop state update.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'updateDropState: (isDropping: boolean, event: DragEvent) => void;'
+      return:
+        type: '(isDropping: boolean, event: DragEvent) =&gt; void'

@@ -1,0 +1,45 @@
+### YamlMime:TSType
+name: IColorPickerState
+uid: '@fluentui/react!IColorPickerState:interface'
+package: '@fluentui/react!'
+fullName: IColorPickerState
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: color
+    uid: '@fluentui/react!IColorPickerState#color:member'
+    package: '@fluentui/react!'
+    fullName: color
+    summary: Most recently selected color
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'color: IColor;'
+      return:
+        type: IColor
+  - name: editingColor
+    uid: '@fluentui/react!IColorPickerState#editingColor:member'
+    package: '@fluentui/react!'
+    fullName: editingColor
+    summary: >-
+      Color component currently being edited via a text field (if intermediate
+      value is invalid)
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        editingColor?: {
+                component: ColorComponent;
+                value: string;
+            };
+      return:
+        type: |-
+          {
+                  component: ColorComponent;
+                  value: string;
+              }

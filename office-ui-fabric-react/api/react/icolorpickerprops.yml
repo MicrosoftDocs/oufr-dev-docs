@@ -1,0 +1,219 @@
+### YamlMime:TSType
+name: IColorPickerProps
+uid: '@fluentui/react!IColorPickerProps:interface'
+package: '@fluentui/react!'
+fullName: IColorPickerProps
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: alphaLabel
+    uid: '@fluentui/react!IColorPickerProps#alphaLabel:member'
+    package: '@fluentui/react!'
+    fullName: alphaLabel
+    summary: Label for the alpha textfield.
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Use `strings`
+    syntax:
+      content: 'alphaLabel?: string;'
+      return:
+        type: string
+  - name: alphaSliderHidden
+    uid: '@fluentui/react!IColorPickerProps#alphaSliderHidden:member'
+    package: '@fluentui/react!'
+    fullName: alphaSliderHidden
+    summary: Whether to hide the alpha (or transparency) slider and text field.
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: 'Use `alphaType: ''none''`'
+    syntax:
+      content: 'alphaSliderHidden?: boolean;'
+      return:
+        type: boolean
+  - name: alphaType
+    uid: '@fluentui/react!IColorPickerProps#alphaType:member'
+    package: '@fluentui/react!'
+    fullName: alphaType
+    summary: >-
+      `alpha` (the default) means display a slider and text field for editing
+      alpha values. `transparency` also displays a slider and text field but for
+      editing transparency values. `none` hides these controls.
+
+
+      Alpha represents the opacity of the color, whereas transparency represents
+      the transparentness of the color: i.e. a 30% transparent color has 70%
+      opaqueness.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'alphaType?: ''alpha'' | ''transparency'' | ''none'';'
+      return:
+        type: '''alpha'' | ''transparency'' | ''none'''
+  - name: blueLabel
+    uid: '@fluentui/react!IColorPickerProps#blueLabel:member'
+    package: '@fluentui/react!'
+    fullName: blueLabel
+    summary: Label for the blue text field.
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Use `strings`
+    syntax:
+      content: 'blueLabel?: string;'
+      return:
+        type: string
+  - name: className
+    uid: '@fluentui/react!IColorPickerProps#className:member'
+    package: '@fluentui/react!'
+    fullName: className
+    summary: Additional CSS class(es) to apply to the ColorPicker.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'className?: string;'
+      return:
+        type: string
+  - name: color
+    uid: '@fluentui/react!IColorPickerProps#color:member'
+    package: '@fluentui/react!'
+    fullName: color
+    summary: Object or CSS-compatible string to describe the color.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'color: IColor | string;'
+      return:
+        type: IColor | string
+  - name: componentRef
+    uid: '@fluentui/react!IColorPickerProps#componentRef:member'
+    package: '@fluentui/react!'
+    fullName: componentRef
+    summary: Gets the component ref.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'componentRef?: IRefObject<IColorPicker>;'
+      return:
+        type: IRefObject&lt;IColorPicker&gt;
+  - name: greenLabel
+    uid: '@fluentui/react!IColorPickerProps#greenLabel:member'
+    package: '@fluentui/react!'
+    fullName: greenLabel
+    summary: Label for the green text field.
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Use `strings`
+    syntax:
+      content: 'greenLabel?: string;'
+      return:
+        type: string
+  - name: hexLabel
+    uid: '@fluentui/react!IColorPickerProps#hexLabel:member'
+    package: '@fluentui/react!'
+    fullName: hexLabel
+    summary: Label for the hex text field.
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Use `strings`
+    syntax:
+      content: 'hexLabel?: string;'
+      return:
+        type: string
+  - name: onChange
+    uid: '@fluentui/react!IColorPickerProps#onChange:member'
+    package: '@fluentui/react!'
+    fullName: onChange
+    summary: >-
+      Callback for when the user changes the color. (Not called when the color
+      is changed via props.)
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        onChange?: (ev: React.SyntheticEvent<HTMLElement>, color: IColor) =>
+        void;
+      return:
+        type: >-
+          (ev: React.SyntheticEvent&lt;HTMLElement&gt;, color: IColor) =&gt;
+          void
+  - name: redLabel
+    uid: '@fluentui/react!IColorPickerProps#redLabel:member'
+    package: '@fluentui/react!'
+    fullName: redLabel
+    summary: Label for the red text field.
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Use `strings`
+    syntax:
+      content: 'redLabel?: string;'
+      return:
+        type: string
+  - name: showPreview
+    uid: '@fluentui/react!IColorPickerProps#showPreview:member'
+    package: '@fluentui/react!'
+    fullName: showPreview
+    summary: Whether to show color preview box.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'showPreview?: boolean;'
+      return:
+        type: boolean
+  - name: strings
+    uid: '@fluentui/react!IColorPickerProps#strings:member'
+    package: '@fluentui/react!'
+    fullName: strings
+    summary: >-
+      Labels for elements within the ColorPicker. Defaults are provided in
+      English only.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'strings?: IColorPickerStrings;'
+      return:
+        type: IColorPickerStrings
+  - name: styles
+    uid: '@fluentui/react!IColorPickerProps#styles:member'
+    package: '@fluentui/react!'
+    fullName: styles
+    summary: >-
+      Call to provide customized styling that will layer on top of the variant
+      rules.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        styles?: IStyleFunctionOrObject<IColorPickerStyleProps,
+        IColorPickerStyles>;
+      return:
+        type: >-
+          IStyleFunctionOrObject&lt;IColorPickerStyleProps,
+          IColorPickerStyles&gt;
+  - name: theme
+    uid: '@fluentui/react!IColorPickerProps#theme:member'
+    package: '@fluentui/react!'
+    fullName: theme
+    summary: Theme (provided through customization).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type: '<xref uid="@fluentui/theme!ITheme:interface" />'

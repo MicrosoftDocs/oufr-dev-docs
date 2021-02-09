@@ -1,0 +1,515 @@
+### YamlMime:TSType
+name: IDatePickerProps
+uid: '@fluentui/react!IDatePickerProps:interface'
+package: '@fluentui/react!'
+fullName: IDatePickerProps
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: allFocusable
+    uid: '@fluentui/react!IDatePickerProps#allFocusable:member'
+    package: '@fluentui/react!'
+    fullName: allFocusable
+    summary: 'Allows all elements to be focused, including disabled ones'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'allFocusable?: boolean;'
+      return:
+        type: boolean
+  - name: allowTextInput
+    uid: '@fluentui/react!IDatePickerProps#allowTextInput:member'
+    package: '@fluentui/react!'
+    fullName: allowTextInput
+    summary: Whether the DatePicker allows input a date string directly or not
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'allowTextInput?: boolean;'
+      return:
+        type: boolean
+  - name: ariaLabel
+    uid: '@fluentui/react!IDatePickerProps#ariaLabel:member'
+    package: '@fluentui/react!'
+    fullName: ariaLabel
+    summary: Aria Label for TextField of the DatePicker for screen reader users.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ariaLabel?: string;'
+      return:
+        type: string
+  - name: borderless
+    uid: '@fluentui/react!IDatePickerProps#borderless:member'
+    package: '@fluentui/react!'
+    fullName: borderless
+    summary: Determines if the DatePicker has a border.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'borderless?: boolean;'
+      return:
+        type: boolean
+  - name: calendarAs
+    uid: '@fluentui/react!IDatePickerProps#calendarAs:member'
+    package: '@fluentui/react!'
+    fullName: calendarAs
+    summary: Custom Calendar to be used for date picking
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'calendarAs?: IComponentAs<ICalendarProps>;'
+      return:
+        type: IComponentAs&lt;ICalendarProps&gt;
+  - name: calendarProps
+    uid: '@fluentui/react!IDatePickerProps#calendarProps:member'
+    package: '@fluentui/react!'
+    fullName: calendarProps
+    summary: Pass calendar props to calendar component
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'calendarProps?: ICalendarProps;'
+      return:
+        type: ICalendarProps
+  - name: calloutProps
+    uid: '@fluentui/react!IDatePickerProps#calloutProps:member'
+    package: '@fluentui/react!'
+    fullName: calloutProps
+    summary: Pass callout props to callout component
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'calloutProps?: ICalloutProps;'
+      return:
+        type: ICalloutProps
+  - name: className
+    uid: '@fluentui/react!IDatePickerProps#className:member'
+    package: '@fluentui/react!'
+    fullName: className
+    summary: Optional CSS class for the DatePicker root element.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'className?: string;'
+      return:
+        type: string
+  - name: componentRef
+    uid: '@fluentui/react!IDatePickerProps#componentRef:member'
+    package: '@fluentui/react!'
+    fullName: componentRef
+    summary: >-
+      Optional callback to access the IDatePicker interface. Use this instead of
+      ref for accessing the public methods and properties of the component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'componentRef?: IRefObject<IDatePicker>;'
+      return:
+        type: IRefObject&lt;IDatePicker&gt;
+  - name: dateTimeFormatter
+    uid: '@fluentui/react!IDatePickerProps#dateTimeFormatter:member'
+    package: '@fluentui/react!'
+    fullName: dateTimeFormatter
+    summary: >-
+      Apply additional formating to dates, for example localized date
+      formatting.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'dateTimeFormatter?: IDateFormatting;'
+      return:
+        type: '<xref uid="@fluentui/date-time-utilities!IDateFormatting:interface" />'
+  - name: disableAutoFocus
+    uid: '@fluentui/react!IDatePickerProps#disableAutoFocus:member'
+    package: '@fluentui/react!'
+    fullName: disableAutoFocus
+    summary: >-
+      Whether the DatePicker should open automatically when the control is
+      focused
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'disableAutoFocus?: boolean;'
+      return:
+        type: boolean
+  - name: disabled
+    uid: '@fluentui/react!IDatePickerProps#disabled:member'
+    package: '@fluentui/react!'
+    fullName: disabled
+    summary: Disabled state of the DatePicker.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'disabled?: boolean;'
+      return:
+        type: boolean
+  - name: firstDayOfWeek
+    uid: '@fluentui/react!IDatePickerProps#firstDayOfWeek:member'
+    package: '@fluentui/react!'
+    fullName: firstDayOfWeek
+    summary: The first day of the week for your locale.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'firstDayOfWeek?: DayOfWeek;'
+      return:
+        type: '<xref uid="@fluentui/date-time-utilities!DayOfWeek:enum" />'
+  - name: firstWeekOfYear
+    uid: '@fluentui/react!IDatePickerProps#firstWeekOfYear:member'
+    package: '@fluentui/react!'
+    fullName: firstWeekOfYear
+    summary: >-
+      Defines when the first week of the year should start,
+      FirstWeekOfYear.FirstDay, FirstWeekOfYear.FirstFullWeek or
+      FirstWeekOfYear.FirstFourDayWeek are the possible values
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'firstWeekOfYear?: FirstWeekOfYear;'
+      return:
+        type: '<xref uid="@fluentui/date-time-utilities!FirstWeekOfYear:enum" />'
+  - name: formatDate
+    uid: '@fluentui/react!IDatePickerProps#formatDate:member'
+    package: '@fluentui/react!'
+    fullName: formatDate
+    summary: >-
+      Optional method to format the chosen date to a string to display in the
+      DatePicker
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'formatDate?: (date?: Date) => string;'
+      return:
+        type: '(date?: Date) =&gt; string'
+  - name: highlightCurrentMonth
+    uid: '@fluentui/react!IDatePickerProps#highlightCurrentMonth:member'
+    package: '@fluentui/react!'
+    fullName: highlightCurrentMonth
+    summary: Whether the month picker should highlight the current month
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'highlightCurrentMonth?: boolean;'
+      return:
+        type: boolean
+  - name: highlightSelectedMonth
+    uid: '@fluentui/react!IDatePickerProps#highlightSelectedMonth:member'
+    package: '@fluentui/react!'
+    fullName: highlightSelectedMonth
+    summary: Whether the month picker should highlight the selected month
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'highlightSelectedMonth?: boolean;'
+      return:
+        type: boolean
+  - name: initialPickerDate
+    uid: '@fluentui/react!IDatePickerProps#initialPickerDate:member'
+    package: '@fluentui/react!'
+    fullName: initialPickerDate
+    summary: The initially highlighted date.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'initialPickerDate?: Date;'
+      return:
+        type: Date
+  - name: isMonthPickerVisible
+    uid: '@fluentui/react!IDatePickerProps#isMonthPickerVisible:member'
+    package: '@fluentui/react!'
+    fullName: isMonthPickerVisible
+    summary: Whether the month picker is shown beside the day picker or hidden.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isMonthPickerVisible?: boolean;'
+      return:
+        type: boolean
+  - name: isRequired
+    uid: '@fluentui/react!IDatePickerProps#isRequired:member'
+    package: '@fluentui/react!'
+    fullName: isRequired
+    summary: Whether the DatePicker is a required field or not
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isRequired?: boolean;'
+      return:
+        type: boolean
+  - name: label
+    uid: '@fluentui/react!IDatePickerProps#label:member'
+    package: '@fluentui/react!'
+    fullName: label
+    summary: Label for the DatePicker
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'label?: string;'
+      return:
+        type: string
+  - name: maxDate
+    uid: '@fluentui/react!IDatePickerProps#maxDate:member'
+    package: '@fluentui/react!'
+    fullName: maxDate
+    summary: The maximum allowable date.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'maxDate?: Date;'
+      return:
+        type: Date
+  - name: minDate
+    uid: '@fluentui/react!IDatePickerProps#minDate:member'
+    package: '@fluentui/react!'
+    fullName: minDate
+    summary: The minimum allowable date.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'minDate?: Date;'
+      return:
+        type: Date
+  - name: onAfterMenuDismiss
+    uid: '@fluentui/react!IDatePickerProps#onAfterMenuDismiss:member'
+    package: '@fluentui/react!'
+    fullName: onAfterMenuDismiss
+    summary: Callback that runs after DatePicker's menu (Calendar) is closed
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onAfterMenuDismiss?: () => void;'
+      return:
+        type: () =&gt; void
+  - name: onSelectDate
+    uid: '@fluentui/react!IDatePickerProps#onSelectDate:member'
+    package: '@fluentui/react!'
+    fullName: onSelectDate
+    summary: Callback issued when a date is selected
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onSelectDate?: (date: Date | null | undefined) => void;'
+      return:
+        type: '(date: Date | null | undefined) =&gt; void'
+  - name: parseDateFromString
+    uid: '@fluentui/react!IDatePickerProps#parseDateFromString:member'
+    package: '@fluentui/react!'
+    fullName: parseDateFromString
+    summary: >-
+      Optional method to parse the text input value to date, it is only useful
+      when allowTextInput is set to true
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'parseDateFromString?: (dateStr: string) => Date | null;'
+      return:
+        type: '(dateStr: string) =&gt; Date | null'
+  - name: pickerAriaLabel
+    uid: '@fluentui/react!IDatePickerProps#pickerAriaLabel:member'
+    package: '@fluentui/react!'
+    fullName: pickerAriaLabel
+    summary: Aria label for date picker popup for screen reader users.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'pickerAriaLabel?: string;'
+      return:
+        type: string
+  - name: placeholder
+    uid: '@fluentui/react!IDatePickerProps#placeholder:member'
+    package: '@fluentui/react!'
+    fullName: placeholder
+    summary: Placeholder text for the DatePicker
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'placeholder?: string;'
+      return:
+        type: string
+  - name: showCloseButton
+    uid: '@fluentui/react!IDatePickerProps#showCloseButton:member'
+    package: '@fluentui/react!'
+    fullName: showCloseButton
+    summary: Whether the CalendarDay close button should be shown or not.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'showCloseButton?: boolean;'
+      return:
+        type: boolean
+  - name: showGoToToday
+    uid: '@fluentui/react!IDatePickerProps#showGoToToday:member'
+    package: '@fluentui/react!'
+    fullName: showGoToToday
+    summary: Whether the "Go to today" link should be shown or not
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'showGoToToday?: boolean;'
+      return:
+        type: boolean
+  - name: showMonthPickerAsOverlay
+    uid: '@fluentui/react!IDatePickerProps#showMonthPickerAsOverlay:member'
+    package: '@fluentui/react!'
+    fullName: showMonthPickerAsOverlay
+    summary: Show month picker on top of date picker when visible.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'showMonthPickerAsOverlay?: boolean;'
+      return:
+        type: boolean
+  - name: showWeekNumbers
+    uid: '@fluentui/react!IDatePickerProps#showWeekNumbers:member'
+    package: '@fluentui/react!'
+    fullName: showWeekNumbers
+    summary: >-
+      Whether the calendar should show the week number (weeks 1 to 53) before
+      each week row
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'showWeekNumbers?: boolean;'
+      return:
+        type: boolean
+  - name: strings
+    uid: '@fluentui/react!IDatePickerProps#strings:member'
+    package: '@fluentui/react!'
+    fullName: strings
+    summary: Localized strings to use in the DatePicker
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'strings?: IDatePickerStrings;'
+      return:
+        type: IDatePickerStrings
+  - name: styles
+    uid: '@fluentui/react!IDatePickerProps#styles:member'
+    package: '@fluentui/react!'
+    fullName: styles
+    summary: >-
+      Call to provide customized styling that will layer on top of the variant
+      rules.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        styles?: IStyleFunctionOrObject<IDatePickerStyleProps,
+        IDatePickerStyles>;
+      return:
+        type: 'IStyleFunctionOrObject&lt;IDatePickerStyleProps, IDatePickerStyles&gt;'
+  - name: tabIndex
+    uid: '@fluentui/react!IDatePickerProps#tabIndex:member'
+    package: '@fluentui/react!'
+    fullName: tabIndex
+    summary: The tabIndex of the TextField
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tabIndex?: number;'
+      return:
+        type: number
+  - name: textField
+    uid: '@fluentui/react!IDatePickerProps#textField:member'
+    package: '@fluentui/react!'
+    fullName: textField
+    summary: >-
+      Pass textField props to textField component. Prop name is "textField" for
+      compatiblity with upcoming slots work.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'textField?: ITextFieldProps;'
+      return:
+        type: ITextFieldProps
+  - name: theme
+    uid: '@fluentui/react!IDatePickerProps#theme:member'
+    package: '@fluentui/react!'
+    fullName: theme
+    summary: Theme provided by High-Order Component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
+  - name: today
+    uid: '@fluentui/react!IDatePickerProps#today:member'
+    package: '@fluentui/react!'
+    fullName: today
+    summary: >-
+      Value of today. If unspecified, current time in client machine will be
+      used.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'today?: Date;'
+      return:
+        type: Date
+  - name: underlined
+    uid: '@fluentui/react!IDatePickerProps#underlined:member'
+    package: '@fluentui/react!'
+    fullName: underlined
+    summary: Whether or not the Textfield of the DatePicker is underlined.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'underlined?: boolean;'
+      return:
+        type: boolean
+  - name: value
+    uid: '@fluentui/react!IDatePickerProps#value:member'
+    package: '@fluentui/react!'
+    fullName: value
+    summary: 'Default value of the DatePicker, if any'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'value?: Date;'
+      return:
+        type: Date
+extends: IBaseProps&lt;IDatePicker&gt;

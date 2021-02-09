@@ -1,0 +1,170 @@
+### YamlMime:TSType
+name: IChoiceGroupOptionProps
+uid: '@fluentui/react!IChoiceGroupOptionProps:interface'
+package: '@fluentui/react!'
+fullName: IChoiceGroupOptionProps
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: checked
+    uid: '@fluentui/react!IChoiceGroupOptionProps#checked:member'
+    package: '@fluentui/react!'
+    fullName: checked
+    summary: >-
+      Whether or not the option is checked. Set by `ChoiceGroup` based on
+      `selectedKey` or `defaultSelectedKey` from `IChoiceGroupProps`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'checked?: boolean;'
+      return:
+        type: boolean
+  - name: componentRef
+    uid: '@fluentui/react!IChoiceGroupOptionProps#componentRef:member'
+    package: '@fluentui/react!'
+    fullName: componentRef
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Not used.
+    syntax:
+      content: 'componentRef?: IRefObject<IChoiceGroupOption>;'
+      return:
+        type: IRefObject&lt;IChoiceGroupOption&gt;
+  - name: focused
+    uid: '@fluentui/react!IChoiceGroupOptionProps#focused:member'
+    package: '@fluentui/react!'
+    fullName: focused
+    summary: 'Indicates if the ChoiceGroupOption should appear focused, visually'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'focused?: boolean;'
+      return:
+        type: boolean
+  - name: itemKey
+    uid: '@fluentui/react!IChoiceGroupOptionProps#itemKey:member'
+    package: '@fluentui/react!'
+    fullName: itemKey
+    summary: 'Unique key for the option, set based on `IChoiceGroupOption.key`<!-- -->.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'itemKey: string;'
+      return:
+        type: string
+  - name: key
+    uid: '@fluentui/react!IChoiceGroupOptionProps#key:member'
+    package: '@fluentui/react!'
+    fullName: key
+    summary: >-
+      The option key. This will always be provided for callbacks (copied from
+      `itemKey`<!-- -->) but is optional when manually creating
+      ChoiceGroupOptions.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'key?: string;'
+      return:
+        type: string
+  - name: name
+    uid: '@fluentui/react!IChoiceGroupOptionProps#name:member'
+    package: '@fluentui/react!'
+    fullName: name
+    summary: >-
+      This value is used to group each ChoiceGroupOption into the same logical
+      ChoiceGroup
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: string;'
+      return:
+        type: string
+  - name: onBlur
+    uid: '@fluentui/react!IChoiceGroupOptionProps#onBlur:member'
+    package: '@fluentui/react!'
+    fullName: onBlur
+    summary: >-
+      Callback for the ChoiceGroup creating the option to be notified when the
+      choice has lost focus.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        onBlur?: (ev?: React.FocusEvent<HTMLElement>, props?:
+        IChoiceGroupOptionProps) => void;
+      return:
+        type: >-
+          (ev?: React.FocusEvent&lt;HTMLElement&gt;, props?:
+          IChoiceGroupOptionProps) =&gt; void
+  - name: onChange
+    uid: '@fluentui/react!IChoiceGroupOptionProps#onChange:member'
+    package: '@fluentui/react!'
+    fullName: onChange
+    summary: >-
+      Callback for the ChoiceGroup creating the option to be notified when the
+      choice has been changed.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        onChange?: (evt?: React.FormEvent<HTMLElement | HTMLInputElement>,
+        props?: IChoiceGroupOptionProps) => void;
+      return:
+        type: >-
+          (evt?: React.FormEvent&lt;HTMLElement | HTMLInputElement&gt;, props?:
+          IChoiceGroupOptionProps) =&gt; void
+  - name: onFocus
+    uid: '@fluentui/react!IChoiceGroupOptionProps#onFocus:member'
+    package: '@fluentui/react!'
+    fullName: onFocus
+    summary: >-
+      Callback for the ChoiceGroup creating the option to be notified when the
+      choice has received focus.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        onFocus?: (ev?: React.FocusEvent<HTMLElement | HTMLInputElement>,
+        props?: IChoiceGroupOptionProps) => void | undefined;
+      return:
+        type: >-
+          (ev?: React.FocusEvent&lt;HTMLElement | HTMLInputElement&gt;, props?:
+          IChoiceGroupOptionProps) =&gt; void | undefined
+  - name: required
+    uid: '@fluentui/react!IChoiceGroupOptionProps#required:member'
+    package: '@fluentui/react!'
+    fullName: required
+    summary: 'If true, an option must be selected in the ChoiceGroup.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'required?: boolean;'
+      return:
+        type: boolean
+  - name: theme
+    uid: '@fluentui/react!IChoiceGroupOptionProps#theme:member'
+    package: '@fluentui/react!'
+    fullName: theme
+    summary: Theme (provided through customization).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
+extends: 'Omit&lt;IChoiceGroupOption, ''key''&gt; '

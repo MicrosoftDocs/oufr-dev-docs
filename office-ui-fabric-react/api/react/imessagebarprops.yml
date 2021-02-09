@@ -1,0 +1,203 @@
+### YamlMime:TSType
+name: IMessageBarProps
+uid: '@fluentui/react!IMessageBarProps:interface'
+package: '@fluentui/react!'
+fullName: IMessageBarProps
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: actions
+    uid: '@fluentui/react!IMessageBarProps#actions:member'
+    package: '@fluentui/react!'
+    fullName: actions
+    summary: The actions you want to show on the other side.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'actions?: JSX.Element;'
+      return:
+        type: JSX.Element
+  - name: ariaLabel
+    uid: '@fluentui/react!IMessageBarProps#ariaLabel:member'
+    package: '@fluentui/react!'
+    fullName: ariaLabel
+    summary: A description of the message bar for the benefit of screen readers.
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Use native prop `aria-label` instead.
+    syntax:
+      content: 'ariaLabel?: string;'
+      return:
+        type: string
+  - name: className
+    uid: '@fluentui/react!IMessageBarProps#className:member'
+    package: '@fluentui/react!'
+    fullName: className
+    summary: Additional CSS class(es) to apply to the MessageBar.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'className?: string;'
+      return:
+        type: string
+  - name: componentRef
+    uid: '@fluentui/react!IMessageBarProps#componentRef:member'
+    package: '@fluentui/react!'
+    fullName: componentRef
+    summary: >-
+      Optional callback to access the IMessageBar interface. Use this instead of
+      ref for accessing the public methods and properties of the component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'componentRef?: IRefObject<IMessageBar>;'
+      return:
+        type: IRefObject&lt;IMessageBar&gt;
+  - name: dismissButtonAriaLabel
+    uid: '@fluentui/react!IMessageBarProps#dismissButtonAriaLabel:member'
+    package: '@fluentui/react!'
+    fullName: dismissButtonAriaLabel
+    summary: Aria label on dismiss button if onDismiss is defined.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'dismissButtonAriaLabel?: string;'
+      return:
+        type: string
+  - name: dismissIconProps
+    uid: '@fluentui/react!IMessageBarProps#dismissIconProps:member'
+    package: '@fluentui/react!'
+    fullName: dismissIconProps
+    summary: >-
+      Custom icon prop to replace the dismiss icon. If unset, default will be
+      the Fabric Clear icon.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'dismissIconProps?: IIconProps;'
+      return:
+        type: IIconProps
+  - name: isMultiline
+    uid: '@fluentui/react!IMessageBarProps#isMultiline:member'
+    package: '@fluentui/react!'
+    fullName: isMultiline
+    summary: >-
+      Determines if the message bar is multi lined. If false, and the text
+      overflows over buttons or to another line, it is clipped.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isMultiline?: boolean;'
+      return:
+        type: boolean
+  - name: messageBarIconProps
+    uid: '@fluentui/react!IMessageBarProps#messageBarIconProps:member'
+    package: '@fluentui/react!'
+    fullName: messageBarIconProps
+    summary: >-
+      Custom icon prop to replace the message bar icon. If unset, default will
+      be the icon set by messageBarType.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'messageBarIconProps?: IIconProps;'
+      return:
+        type: IIconProps
+  - name: messageBarType
+    uid: '@fluentui/react!IMessageBarProps#messageBarType:member'
+    package: '@fluentui/react!'
+    fullName: messageBarType
+    summary: The type of MessageBar to render.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'messageBarType?: MessageBarType;'
+      return:
+        type: MessageBarType
+  - name: onDismiss
+    uid: '@fluentui/react!IMessageBarProps#onDismiss:member'
+    package: '@fluentui/react!'
+    fullName: onDismiss
+    summary: >-
+      Whether the message bar has a dismiss button and its callback. If null, we
+      don't show a dismiss button.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        onDismiss?: (ev?: React.MouseEvent<HTMLElement | BaseButton | Button>)
+        => any;
+      return:
+        type: >-
+          (ev?: React.MouseEvent&lt;HTMLElement | BaseButton | Button&gt;) =&gt;
+          any
+  - name: overflowButtonAriaLabel
+    uid: '@fluentui/react!IMessageBarProps#overflowButtonAriaLabel:member'
+    package: '@fluentui/react!'
+    fullName: overflowButtonAriaLabel
+    summary: Aria label on overflow button if truncated is defined.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'overflowButtonAriaLabel?: string;'
+      return:
+        type: string
+  - name: styles
+    uid: '@fluentui/react!IMessageBarProps#styles:member'
+    package: '@fluentui/react!'
+    fullName: styles
+    summary: >-
+      Call to provide customized styling that will layer on top of the variant
+      rules.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        styles?: IStyleFunctionOrObject<IMessageBarStyleProps,
+        IMessageBarStyles>;
+      return:
+        type: 'IStyleFunctionOrObject&lt;IMessageBarStyleProps, IMessageBarStyles&gt;'
+  - name: theme
+    uid: '@fluentui/react!IMessageBarProps#theme:member'
+    package: '@fluentui/react!'
+    fullName: theme
+    summary: Theme (provided through customization.)
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
+  - name: truncated
+    uid: '@fluentui/react!IMessageBarProps#truncated:member'
+    package: '@fluentui/react!'
+    fullName: truncated
+    summary: >-
+      Determines if the message bar text is truncated. If true, a button will
+      render to toggle between a single line view and multiline view. This prop
+      is for single line message bars with no buttons only in a limited space
+      scenario.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'truncated?: boolean;'
+      return:
+        type: boolean
+extends: React.HTMLAttributes&lt;HTMLElement&gt;

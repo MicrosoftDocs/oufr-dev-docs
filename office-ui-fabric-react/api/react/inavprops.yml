@@ -1,0 +1,219 @@
+### YamlMime:TSType
+name: INavProps
+uid: '@fluentui/react!INavProps:interface'
+package: '@fluentui/react!'
+fullName: INavProps
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: ariaLabel
+    uid: '@fluentui/react!INavProps#ariaLabel:member'
+    package: '@fluentui/react!'
+    fullName: ariaLabel
+    summary: (Optional) The nav container aria label.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ariaLabel?: string;'
+      return:
+        type: string
+  - name: className
+    uid: '@fluentui/react!INavProps#className:member'
+    package: '@fluentui/react!'
+    fullName: className
+    summary: Additional css class to apply to the Nav
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'className?: string;'
+      return:
+        type: string
+  - name: componentRef
+    uid: '@fluentui/react!INavProps#componentRef:member'
+    package: '@fluentui/react!'
+    fullName: componentRef
+    summary: >-
+      Optional callback to access the INav interface. Use this instead of ref
+      for accessing the public methods and properties of the component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'componentRef?: IRefObject<INav>;'
+      return:
+        type: IRefObject&lt;INav&gt;
+  - name: expandButtonAriaLabel
+    uid: '@fluentui/react!INavProps#expandButtonAriaLabel:member'
+    package: '@fluentui/react!'
+    fullName: expandButtonAriaLabel
+    summary: >-
+      (Optional) The nav container aria label. The link name is prepended to
+      this label. If not provided, the aria label will default to the link name.
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Use `expandAriaLabel` and `collapseAriaLabel` on groups instead
+    syntax:
+      content: 'expandButtonAriaLabel?: string;'
+      return:
+        type: string
+  - name: groups
+    uid: '@fluentui/react!INavProps#groups:member'
+    package: '@fluentui/react!'
+    fullName: groups
+    summary: A collection of link groups to display in the navigation bar
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'groups: INavLinkGroup[] | null;'
+      return:
+        type: 'INavLinkGroup[] | null'
+  - name: initialSelectedKey
+    uid: '@fluentui/react!INavProps#initialSelectedKey:member'
+    package: '@fluentui/react!'
+    fullName: initialSelectedKey
+    summary: (Optional) The key of the nav item initially selected.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'initialSelectedKey?: string;'
+      return:
+        type: string
+  - name: isOnTop
+    uid: '@fluentui/react!INavProps#isOnTop:member'
+    package: '@fluentui/react!'
+    fullName: isOnTop
+    summary: >-
+      Indicates whether the navigation component renders on top of other content
+      in the UI
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isOnTop?: boolean;'
+      return:
+        type: boolean
+  - name: linkAs
+    uid: '@fluentui/react!INavProps#linkAs:member'
+    package: '@fluentui/react!'
+    fullName: linkAs
+    summary: >-
+      Render a custom link in place of the normal one. This replaces the entire
+      button rather than simply button content
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'linkAs?: IComponentAs<INavButtonProps>;'
+      return:
+        type: IComponentAs&lt;INavButtonProps&gt;
+  - name: onLinkClick
+    uid: '@fluentui/react!INavProps#onLinkClick:member'
+    package: '@fluentui/react!'
+    fullName: onLinkClick
+    summary: Function callback invoked when a link in the navigation is clicked
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        onLinkClick?: (ev?: React.MouseEvent<HTMLElement>, item?: INavLink) =>
+        void;
+      return:
+        type: '(ev?: React.MouseEvent&lt;HTMLElement&gt;, item?: INavLink) =&gt; void'
+  - name: onLinkExpandClick
+    uid: '@fluentui/react!INavProps#onLinkExpandClick:member'
+    package: '@fluentui/react!'
+    fullName: onLinkExpandClick
+    summary: Function callback invoked when the chevron on a link is clicked
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        onLinkExpandClick?: (ev?: React.MouseEvent<HTMLElement>, item?:
+        INavLink) => void;
+      return:
+        type: '(ev?: React.MouseEvent&lt;HTMLElement&gt;, item?: INavLink) =&gt; void'
+  - name: onRenderGroupHeader
+    uid: '@fluentui/react!INavProps#onRenderGroupHeader:member'
+    package: '@fluentui/react!'
+    fullName: onRenderGroupHeader
+    summary: Used to customize how content inside the group header is rendered
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onRenderGroupHeader?: IRenderFunction<IRenderGroupHeaderProps>;'
+      return:
+        type: IRenderFunction&lt;IRenderGroupHeaderProps&gt;
+  - name: onRenderLink
+    uid: '@fluentui/react!INavProps#onRenderLink:member'
+    package: '@fluentui/react!'
+    fullName: onRenderLink
+    summary: Used to customize how content inside the link tag is rendered
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onRenderLink?: IRenderFunction<INavLink>;'
+      return:
+        type: IRenderFunction&lt;INavLink&gt;
+  - name: selectedAriaLabel
+    uid: '@fluentui/react!INavProps#selectedAriaLabel:member'
+    package: '@fluentui/react!'
+    fullName: selectedAriaLabel
+    summary: (Deprecated) Use ariaCurrent on links instead
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Use ariaCurrent on links instead
+    syntax:
+      content: 'selectedAriaLabel?: string;'
+      return:
+        type: string
+  - name: selectedKey
+    uid: '@fluentui/react!INavProps#selectedKey:member'
+    package: '@fluentui/react!'
+    fullName: selectedKey
+    summary: (Optional) The key of the nav item selected by caller.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'selectedKey?: string;'
+      return:
+        type: string
+  - name: styles
+    uid: '@fluentui/react!INavProps#styles:member'
+    package: '@fluentui/react!'
+    fullName: styles
+    summary: >-
+      Call to provide customized styling that will layer on top of the variant
+      rules
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'styles?: IStyleFunctionOrObject<INavStyleProps, INavStyles>;'
+      return:
+        type: 'IStyleFunctionOrObject&lt;INavStyleProps, INavStyles&gt;'
+  - name: theme
+    uid: '@fluentui/react!INavProps#theme:member'
+    package: '@fluentui/react!'
+    fullName: theme
+    summary: Theme provided by HOC.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type: '<xref uid="@fluentui/theme!ITheme:interface" />'

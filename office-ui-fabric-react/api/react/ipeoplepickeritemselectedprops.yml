@@ -1,0 +1,47 @@
+### YamlMime:TSType
+name: IPeoplePickerItemSelectedProps
+uid: '@fluentui/react!IPeoplePickerItemSelectedProps:interface'
+package: '@fluentui/react!'
+fullName: IPeoplePickerItemSelectedProps
+summary: >-
+  PeoplePickerItemSelected props interface. Refers to the PeoplePicker items
+  that have been picked already.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: styles
+    uid: '@fluentui/react!IPeoplePickerItemSelectedProps#styles:member'
+    package: '@fluentui/react!'
+    fullName: styles
+    summary: >-
+      Call to provide customized styling that will layer on top of the variant
+      rules.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        styles?: IStyleFunctionOrObject<IPeoplePickerItemSelectedStyleProps,
+        IPeoplePickerItemSelectedStyles>;
+      return:
+        type: >-
+          IStyleFunctionOrObject&lt;IPeoplePickerItemSelectedStyleProps,
+          IPeoplePickerItemSelectedStyles&gt;
+  - name: ValidationState
+    uid: '@fluentui/react!IPeoplePickerItemSelectedProps#ValidationState:member'
+    package: '@fluentui/react!'
+    fullName: ValidationState
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ValidationState: ValidationState;'
+      return:
+        type: ValidationState
+extends: |-
+  IPickerItemProps&lt;IPersonaProps & {
+      ValidationState: ValidationState;
+  }&gt;

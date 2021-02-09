@@ -1,0 +1,150 @@
+### YamlMime:TSType
+name: ILayerProps
+uid: '@fluentui/react!ILayerProps:interface'
+package: '@fluentui/react!'
+fullName: ILayerProps
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: className
+    uid: '@fluentui/react!ILayerProps#className:member'
+    package: '@fluentui/react!'
+    fullName: className
+    summary: Additional css class to apply to the Layer
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'className?: string;'
+      return:
+        type: string
+  - name: componentRef
+    uid: '@fluentui/react!ILayerProps#componentRef:member'
+    package: '@fluentui/react!'
+    fullName: componentRef
+    summary: >-
+      Optional callback to access the ILayer interface. Use this instead of ref
+      for accessing the public methods and properties of the component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'componentRef?: IRefObject<ILayer>;'
+      return:
+        type: IRefObject&lt;ILayer&gt;
+  - name: eventBubblingEnabled
+    uid: '@fluentui/react!ILayerProps#eventBubblingEnabled:member'
+    package: '@fluentui/react!'
+    fullName: eventBubblingEnabled
+    summary: >-
+      When enabled, Layer allows events to bubble up from Layer content.
+      Traditionally Layer has not had this behavior. This prop preserves
+      backwards compatibility by default while allowing users to opt in to the
+      new event bubbling functionality.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'eventBubblingEnabled?: boolean;'
+      return:
+        type: boolean
+  - name: hostId
+    uid: '@fluentui/react!ILayerProps#hostId:member'
+    package: '@fluentui/react!'
+    fullName: hostId
+    summary: >-
+      The optional id property provided on a LayerHost that this Layer should
+      render within. The LayerHost does not need to be immediately available but
+      once has been rendered, and if missing, we'll avoid trying to render the
+      Layer content until the host is available. If an id is not provided, we
+      will render the Layer content in a fixed position element rendered at the
+      end of the document.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'hostId?: string;'
+      return:
+        type: string
+  - name: insertFirst
+    uid: '@fluentui/react!ILayerProps#insertFirst:member'
+    package: '@fluentui/react!'
+    fullName: insertFirst
+    summary: >-
+      Whether the layer should be added as the first child of the host. If true,
+      the layer will be inserted as the first child of the host By default, the
+      layer will be appended at the end to the host
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'insertFirst?: boolean;'
+      return:
+        type: boolean
+  - name: onLayerDidMount
+    uid: '@fluentui/react!ILayerProps#onLayerDidMount:member'
+    package: '@fluentui/react!'
+    fullName: onLayerDidMount
+    summary: Callback for when the layer is mounted.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onLayerDidMount?: () => void;'
+      return:
+        type: () =&gt; void
+  - name: onLayerMounted
+    uid: '@fluentui/react!ILayerProps#onLayerMounted:member'
+    package: '@fluentui/react!'
+    fullName: onLayerMounted
+    summary: Callback for when the layer is mounted.
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Use `onLayerDidMount`<!-- -->.
+    syntax:
+      content: 'onLayerMounted?: () => void;'
+      return:
+        type: () =&gt; void
+  - name: onLayerWillUnmount
+    uid: '@fluentui/react!ILayerProps#onLayerWillUnmount:member'
+    package: '@fluentui/react!'
+    fullName: onLayerWillUnmount
+    summary: Callback for when the layer is unmounted.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onLayerWillUnmount?: () => void;'
+      return:
+        type: () =&gt; void
+  - name: styles
+    uid: '@fluentui/react!ILayerProps#styles:member'
+    package: '@fluentui/react!'
+    fullName: styles
+    summary: >-
+      Call to provide customized styling that will layer on top of the variant
+      rules
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'styles?: IStyleFunctionOrObject<ILayerStyleProps, ILayerStyles>;'
+      return:
+        type: 'IStyleFunctionOrObject&lt;ILayerStyleProps, ILayerStyles&gt;'
+  - name: theme
+    uid: '@fluentui/react!ILayerProps#theme:member'
+    package: '@fluentui/react!'
+    fullName: theme
+    summary: Theme provided by HOC.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
+extends: React.HTMLAttributes&lt;HTMLDivElement&gt;

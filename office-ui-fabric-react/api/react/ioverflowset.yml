@@ -1,0 +1,54 @@
+### YamlMime:TSType
+name: IOverflowSet
+uid: '@fluentui/react!IOverflowSet:interface'
+package: '@fluentui/react!'
+fullName: IOverflowSet
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: focus(forceIntoFirstElement)
+    uid: '@fluentui/react!IOverflowSet#focus:member(1)'
+    package: '@fluentui/react!'
+    fullName: focus(forceIntoFirstElement)
+    summary: Sets focus to the first tabbable item in the zone.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'focus(forceIntoFirstElement?: boolean): boolean;'
+      parameters:
+        - id: forceIntoFirstElement
+          description: >-
+            If true, focus will be forced into the first element, even if focus
+            is already in the focus zone.
+          type: boolean
+      return:
+        type: boolean
+        description: >-
+          True if focus could be set to an active element, false if no operation
+          was taken.
+  - name: focusElement(childElement)
+    uid: '@fluentui/react!IOverflowSet#focusElement:member(1)'
+    package: '@fluentui/react!'
+    fullName: focusElement(childElement)
+    summary: >-
+      Sets focus to a specific child element within the zone. This can be used
+      in conjunction with shouldReceiveFocus to created delayed focus scenarios
+      (like animate the scroll position to the correct location and then focus.)
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'focusElement(childElement?: HTMLElement): boolean;'
+      parameters:
+        - id: childElement
+          description: The child element within the zone to focus.
+          type: HTMLElement
+      return:
+        type: boolean
+        description: >-
+          True if focus could be set to an active element, false if no operation
+          was taken.

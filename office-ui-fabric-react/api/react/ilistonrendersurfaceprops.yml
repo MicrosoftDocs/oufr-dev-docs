@@ -1,0 +1,63 @@
+### YamlMime:TSType
+name: IListOnRenderSurfaceProps
+uid: '@fluentui/react!IListOnRenderSurfaceProps:interface'
+package: '@fluentui/react!'
+fullName: IListOnRenderSurfaceProps
+summary: Props passed to the render override for the list surface.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: divProps
+    uid: '@fluentui/react!IListOnRenderSurfaceProps#divProps:member'
+    package: '@fluentui/react!'
+    fullName: divProps
+    summary: Props to apply to the list surface element.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'divProps: React.HTMLAttributes<HTMLDivElement>;'
+      return:
+        type: React.HTMLAttributes&lt;HTMLDivElement&gt;
+  - name: pageElements
+    uid: '@fluentui/react!IListOnRenderSurfaceProps#pageElements:member'
+    package: '@fluentui/react!'
+    fullName: pageElements
+    summary: The content to be rendered representing all active pages.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'pageElements: JSX.Element[];'
+      return:
+        type: 'JSX.Element[]'
+  - name: pages
+    uid: '@fluentui/react!IListOnRenderSurfaceProps#pages:member'
+    package: '@fluentui/react!'
+    fullName: pages
+    summary: >-
+      The active pages to be rendered into the list. These will have been
+      rendered using `onRenderPage`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'pages: IPage<T>[];'
+      return:
+        type: 'IPage&lt;T&gt;[]'
+  - name: surfaceRef
+    uid: '@fluentui/react!IListOnRenderSurfaceProps#surfaceRef:member'
+    package: '@fluentui/react!'
+    fullName: surfaceRef
+    summary: >-
+      A ref to be applied to the surface element. The `List` uses this element
+      to track content size and focus.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'surfaceRef: React.Ref<HTMLDivElement>;'
+      return:
+        type: React.Ref&lt;HTMLDivElement&gt;

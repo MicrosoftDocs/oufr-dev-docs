@@ -1,0 +1,493 @@
+### YamlMime:TSType
+name: ISuggestionsProps
+uid: '@fluentui/react!ISuggestionsProps:interface'
+package: '@fluentui/react!'
+fullName: ISuggestionsProps
+summary: >-
+  Suggestions props interface. Refers to the entire container holding all the
+  suggestions. Type T is the type of the items that are displayed.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: className
+    uid: '@fluentui/react!ISuggestionsProps#className:member'
+    package: '@fluentui/react!'
+    fullName: className
+    summary: The CSS className of the suggestions root.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'className?: string;'
+      return:
+        type: string
+  - name: componentRef
+    uid: '@fluentui/react!ISuggestionsProps#componentRef:member'
+    package: '@fluentui/react!'
+    fullName: componentRef
+    summary: >-
+      Optional callback to access the ISuggestions interface. Use this instead
+      of ref for accessing the public methods and properties of the component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'componentRef?: IRefObject<ISuggestions<T>>;'
+      return:
+        type: IRefObject&lt;ISuggestions&lt;T&gt;&gt;
+  - name: createGenericItem
+    uid: '@fluentui/react!ISuggestionsProps#createGenericItem:member'
+    package: '@fluentui/react!'
+    fullName: createGenericItem
+    summary: >-
+      The callback that should be called when the user attempts to use the input
+      text as as item
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'createGenericItem?: () => void;'
+      return:
+        type: () =&gt; void
+  - name: forceResolveText
+    uid: '@fluentui/react!ISuggestionsProps#forceResolveText:member'
+    package: '@fluentui/react!'
+    fullName: forceResolveText
+    summary: The text that appears indicating to the use to force resolve the input
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'forceResolveText?: string;'
+      return:
+        type: string
+  - name: isLoading
+    uid: '@fluentui/react!ISuggestionsProps#isLoading:member'
+    package: '@fluentui/react!'
+    fullName: isLoading
+    summary: Used to indicate whether or not the suggestions are loading.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isLoading?: boolean;'
+      return:
+        type: boolean
+  - name: isMostRecentlyUsedVisible
+    uid: '@fluentui/react!ISuggestionsProps#isMostRecentlyUsedVisible:member'
+    package: '@fluentui/react!'
+    fullName: isMostRecentlyUsedVisible
+    summary: Indicates if a short list of recent suggestions should be shown.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isMostRecentlyUsedVisible?: boolean;'
+      return:
+        type: boolean
+  - name: isResultsFooterVisible
+    uid: '@fluentui/react!ISuggestionsProps#isResultsFooterVisible:member'
+    package: '@fluentui/react!'
+    fullName: isResultsFooterVisible
+    summary: >-
+      Indicates if the text in resultsFooter or resultsFooterFull should be
+      shown at the end of the suggestion list.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isResultsFooterVisible?: boolean;'
+      return:
+        type: boolean
+  - name: isSearching
+    uid: '@fluentui/react!ISuggestionsProps#isSearching:member'
+    package: '@fluentui/react!'
+    fullName: isSearching
+    summary: >-
+      Used to indicate whether or not the component is searching for more
+      results.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isSearching?: boolean;'
+      return:
+        type: boolean
+  - name: loadingText
+    uid: '@fluentui/react!ISuggestionsProps#loadingText:member'
+    package: '@fluentui/react!'
+    fullName: loadingText
+    summary: The text to display while the results are loading.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'loadingText?: string;'
+      return:
+        type: string
+  - name: moreSuggestionsAvailable
+    uid: '@fluentui/react!ISuggestionsProps#moreSuggestionsAvailable:member'
+    package: '@fluentui/react!'
+    fullName: moreSuggestionsAvailable
+    summary: >-
+      Used to indicate whether or not the user can request more suggestions.
+      Dictates whether or not the searchForMore button is displayed.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'moreSuggestionsAvailable?: boolean;'
+      return:
+        type: boolean
+  - name: mostRecentlyUsedHeaderText
+    uid: '@fluentui/react!ISuggestionsProps#mostRecentlyUsedHeaderText:member'
+    package: '@fluentui/react!'
+    fullName: mostRecentlyUsedHeaderText
+    summary: The text that should appear at the top of the most recently used box.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'mostRecentlyUsedHeaderText?: string;'
+      return:
+        type: string
+  - name: noResultsFoundText
+    uid: '@fluentui/react!ISuggestionsProps#noResultsFoundText:member'
+    package: '@fluentui/react!'
+    fullName: noResultsFoundText
+    summary: The text that should appear if no results are found when searching.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'noResultsFoundText?: string;'
+      return:
+        type: string
+  - name: onGetMoreResults
+    uid: '@fluentui/react!ISuggestionsProps#onGetMoreResults:member'
+    package: '@fluentui/react!'
+    fullName: onGetMoreResults
+    summary: >-
+      The callback that should be called when the user attempts to get more
+      results
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onGetMoreResults?: () => void;'
+      return:
+        type: () =&gt; void
+  - name: onRenderNoResultFound
+    uid: '@fluentui/react!ISuggestionsProps#onRenderNoResultFound:member'
+    package: '@fluentui/react!'
+    fullName: onRenderNoResultFound
+    summary: How the "no result found" should look in the suggestion list.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onRenderNoResultFound?: IRenderFunction<void>;'
+      return:
+        type: IRenderFunction&lt;void&gt;
+  - name: onRenderSuggestion
+    uid: '@fluentui/react!ISuggestionsProps#onRenderSuggestion:member'
+    package: '@fluentui/react!'
+    fullName: onRenderSuggestion
+    summary: How the suggestion should look in the suggestion list.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        onRenderSuggestion: (props: T, suggestionItemProps:
+        ISuggestionItemProps<T>) => JSX.Element;
+      return:
+        type: >-
+          (props: T, suggestionItemProps: ISuggestionItemProps&lt;T&gt;) =&gt;
+          JSX.Element
+  - name: onSuggestionClick
+    uid: '@fluentui/react!ISuggestionsProps#onSuggestionClick:member'
+    package: '@fluentui/react!'
+    fullName: onSuggestionClick
+    summary: What should occur when a suggestion is clicked
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        onSuggestionClick: (ev?: React.MouseEvent<HTMLElement>, item?: any,
+        index?: number) => void;
+      return:
+        type: >-
+          (ev?: React.MouseEvent&lt;HTMLElement&gt;, item?: any, index?: number)
+          =&gt; void
+  - name: onSuggestionRemove
+    uid: '@fluentui/react!ISuggestionsProps#onSuggestionRemove:member'
+    package: '@fluentui/react!'
+    fullName: onSuggestionRemove
+    summary: >-
+      Function to fire when one of the optional remove buttons on a suggestion
+      is clicked.
+
+
+      TODO (adjective-object) remove IPersonaprops before the next major version
+      bump
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        onSuggestionRemove?: (ev?: React.MouseEvent<HTMLElement>, item?: T |
+        IPersonaProps, index?: number) => void;
+      return:
+        type: >-
+          (ev?: React.MouseEvent&lt;HTMLElement&gt;, item?: T | IPersonaProps,
+          index?: number) =&gt; void
+  - name: refocusSuggestions
+    uid: '@fluentui/react!ISuggestionsProps#refocusSuggestions:member'
+    package: '@fluentui/react!'
+    fullName: refocusSuggestions
+    summary: A function that resets focus to the expected item in the suggestion list
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'refocusSuggestions?: (keyCode: KeyCodes) => void;'
+      return:
+        type: '(keyCode: KeyCodes) =&gt; void'
+  - name: removeSuggestionAriaLabel
+    uid: '@fluentui/react!ISuggestionsProps#removeSuggestionAriaLabel:member'
+    package: '@fluentui/react!'
+    fullName: removeSuggestionAriaLabel
+    summary: An ARIA label to use for the buttons to remove individual suggestions.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'removeSuggestionAriaLabel?: string;'
+      return:
+        type: string
+  - name: resultsFooter
+    uid: '@fluentui/react!ISuggestionsProps#resultsFooter:member'
+    package: '@fluentui/react!'
+    fullName: resultsFooter
+    summary: >-
+      A renderer that adds an element at the end of the suggestions list it has
+      fewer items than resultsMaximumNumber.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'resultsFooter?: (props: ISuggestionsProps<T>) => JSX.Element;'
+      return:
+        type: '(props: ISuggestionsProps&lt;T&gt;) =&gt; JSX.Element'
+  - name: resultsFooterFull
+    uid: '@fluentui/react!ISuggestionsProps#resultsFooterFull:member'
+    package: '@fluentui/react!'
+    fullName: resultsFooterFull
+    summary: >-
+      A renderer that adds an element at the end of the suggestions list it has
+      more items than resultsMaximumNumber.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'resultsFooterFull?: (props: ISuggestionsProps<T>) => JSX.Element;'
+      return:
+        type: '(props: ISuggestionsProps&lt;T&gt;) =&gt; JSX.Element'
+  - name: resultsMaximumNumber
+    uid: '@fluentui/react!ISuggestionsProps#resultsMaximumNumber:member'
+    package: '@fluentui/react!'
+    fullName: resultsMaximumNumber
+    summary: Maximum number of suggestions to show in the full suggestion list.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'resultsMaximumNumber?: number;'
+      return:
+        type: number
+  - name: searchErrorText
+    uid: '@fluentui/react!ISuggestionsProps#searchErrorText:member'
+    package: '@fluentui/react!'
+    fullName: searchErrorText
+    summary: The text that should appear if there is a search error.
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Use noResultsFoundText instead.
+    syntax:
+      content: 'searchErrorText?: string;'
+      return:
+        type: string
+  - name: searchForMoreText
+    uid: '@fluentui/react!ISuggestionsProps#searchForMoreText:member'
+    package: '@fluentui/react!'
+    fullName: searchForMoreText
+    summary: >-
+      The text that appears indicating to the user that they can search for more
+      results.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'searchForMoreText?: string;'
+      return:
+        type: string
+  - name: searchingText
+    uid: '@fluentui/react!ISuggestionsProps#searchingText:member'
+    package: '@fluentui/react!'
+    fullName: searchingText
+    summary: >-
+      The text to display while searching for more results in a limited
+      suggestions list.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'searchingText?: string;'
+      return:
+        type: string
+  - name: showForceResolve
+    uid: '@fluentui/react!ISuggestionsProps#showForceResolve:member'
+    package: '@fluentui/react!'
+    fullName: showForceResolve
+    summary: >-
+      The callback that should be called to see if the force resolve command
+      should be shown
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'showForceResolve?: () => boolean;'
+      return:
+        type: () =&gt; boolean
+  - name: showRemoveButtons
+    uid: '@fluentui/react!ISuggestionsProps#showRemoveButtons:member'
+    package: '@fluentui/react!'
+    fullName: showRemoveButtons
+    summary: >-
+      Indicates whether to show a button with each suggestion to remove that
+      suggestion.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'showRemoveButtons?: boolean;'
+      return:
+        type: boolean
+  - name: styles
+    uid: '@fluentui/react!ISuggestionsProps#styles:member'
+    package: '@fluentui/react!'
+    fullName: styles
+    summary: >-
+      Call to provide customized styling that will layer on top of the variant
+      rules.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'styles?: IStyleFunctionOrObject<any, any>;'
+      return:
+        type: 'IStyleFunctionOrObject&lt;any, any&gt;'
+  - name: suggestions
+    uid: '@fluentui/react!ISuggestionsProps#suggestions:member'
+    package: '@fluentui/react!'
+    fullName: suggestions
+    summary: The list of Suggestions that will be displayed
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'suggestions: ISuggestionModel<T>[];'
+      return:
+        type: 'ISuggestionModel&lt;T&gt;[]'
+  - name: suggestionsAvailableAlertText
+    uid: '@fluentui/react!ISuggestionsProps#suggestionsAvailableAlertText:member'
+    package: '@fluentui/react!'
+    fullName: suggestionsAvailableAlertText
+    summary: Screen reader message to read when there are suggestions available.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'suggestionsAvailableAlertText?: string;'
+      return:
+        type: string
+  - name: suggestionsClassName
+    uid: '@fluentui/react!ISuggestionsProps#suggestionsClassName:member'
+    package: '@fluentui/react!'
+    fullName: suggestionsClassName
+    summary: The CSS className of the suggestions list
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'suggestionsClassName?: string;'
+      return:
+        type: string
+  - name: suggestionsContainerAriaLabel
+    uid: '@fluentui/react!ISuggestionsProps#suggestionsContainerAriaLabel:member'
+    package: '@fluentui/react!'
+    fullName: suggestionsContainerAriaLabel
+    summary: An ARIA label for the container that is the parent of the suggestions.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'suggestionsContainerAriaLabel?: string;'
+      return:
+        type: string
+  - name: suggestionsHeaderText
+    uid: '@fluentui/react!ISuggestionsProps#suggestionsHeaderText:member'
+    package: '@fluentui/react!'
+    fullName: suggestionsHeaderText
+    summary: The text that appears at the top of the suggestions list.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'suggestionsHeaderText?: string;'
+      return:
+        type: string
+  - name: suggestionsItemClassName
+    uid: '@fluentui/react!ISuggestionsProps#suggestionsItemClassName:member'
+    package: '@fluentui/react!'
+    fullName: suggestionsItemClassName
+    summary: The className of the suggestion item.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'suggestionsItemClassName?: string;'
+      return:
+        type: string
+  - name: suggestionsListId
+    uid: '@fluentui/react!ISuggestionsProps#suggestionsListId:member'
+    package: '@fluentui/react!'
+    fullName: suggestionsListId
+    summary: >-
+      The string that will be used as the suggestionsListId. Will be used by the
+      BasePicker to keep track of the list for aria.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'suggestionsListId?: string;'
+      return:
+        type: string
+  - name: theme
+    uid: '@fluentui/react!ISuggestionsProps#theme:member'
+    package: '@fluentui/react!'
+    fullName: theme
+    summary: Theme provided by High-Order Component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
+extends: 'React.Props&lt;any&gt; '

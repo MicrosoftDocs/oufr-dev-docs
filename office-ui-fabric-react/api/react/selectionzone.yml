@@ -1,0 +1,143 @@
+### YamlMime:TSType
+name: SelectionZone
+uid: '@fluentui/react!SelectionZone:class'
+package: '@fluentui/react!'
+fullName: SelectionZone
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: (constructor)(props)
+    uid: '@fluentui/react!SelectionZone:constructor(1)'
+    package: '@fluentui/react!'
+    fullName: (constructor)(props)
+    summary: Constructs a new instance of the `SelectionZone` class
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'constructor(props: ISelectionZoneProps);'
+      parameters:
+        - id: props
+          description: ''
+          type: ISelectionZoneProps
+properties:
+  - name: defaultProps
+    uid: '@fluentui/react!SelectionZone.defaultProps:member'
+    package: '@fluentui/react!'
+    fullName: defaultProps
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        static defaultProps: {
+                isSelectedOnFocus: boolean;
+                selectionMode: SelectionMode;
+            };
+      return:
+        type: |-
+          {
+                  isSelectedOnFocus: boolean;
+                  selectionMode: SelectionMode;
+              }
+  - name: ignoreNextFocus
+    uid: '@fluentui/react!SelectionZone#ignoreNextFocus:member'
+    package: '@fluentui/react!'
+    fullName: ignoreNextFocus
+    summary: >-
+      In some cases, the consuming scenario requires to set focus on a row
+      without having SelectionZone react to the event. Note that focus events in
+      IE &lt;<!-- -->= 11 will occur asynchronously after .focus() has been
+      called on an element, so we need a flag to store the idea that we will
+      bypass the "next" focus event that occurs. This method does that.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ignoreNextFocus: () => void;'
+      return:
+        type: () =&gt; void
+methods:
+  - name: componentDidMount()
+    uid: '@fluentui/react!SelectionZone#componentDidMount:member(1)'
+    package: '@fluentui/react!'
+    fullName: componentDidMount()
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'componentDidMount(): void;'
+      return:
+        type: void
+        description: ''
+  - name: componentDidUpdate(previousProps)
+    uid: '@fluentui/react!SelectionZone#componentDidUpdate:member(1)'
+    package: '@fluentui/react!'
+    fullName: componentDidUpdate(previousProps)
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'componentDidUpdate(previousProps: ISelectionZoneProps): void;'
+      parameters:
+        - id: previousProps
+          description: ''
+          type: ISelectionZoneProps
+      return:
+        type: void
+        description: ''
+  - name: componentWillUnmount()
+    uid: '@fluentui/react!SelectionZone#componentWillUnmount:member(1)'
+    package: '@fluentui/react!'
+    fullName: componentWillUnmount()
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'componentWillUnmount(): void;'
+      return:
+        type: void
+        description: ''
+  - name: 'getDerivedStateFromProps(nextProps, prevState)'
+    uid: '@fluentui/react!SelectionZone.getDerivedStateFromProps:member(1)'
+    package: '@fluentui/react!'
+    fullName: 'getDerivedStateFromProps(nextProps, prevState)'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        static getDerivedStateFromProps(nextProps: ISelectionZoneProps,
+        prevState: ISelectionZoneState): ISelectionZoneState;
+      parameters:
+        - id: nextProps
+          description: ''
+          type: ISelectionZoneProps
+        - id: prevState
+          description: ''
+          type: ISelectionZoneState
+      return:
+        type: ISelectionZoneState
+        description: ''
+  - name: render()
+    uid: '@fluentui/react!SelectionZone#render:member(1)'
+    package: '@fluentui/react!'
+    fullName: render()
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'render(): JSX.Element;'
+      return:
+        type: JSX.Element
+        description: ''
+extends: 'React.Component&lt;ISelectionZoneProps, ISelectionZoneState&gt; '

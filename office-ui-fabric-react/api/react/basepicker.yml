@@ -1,0 +1,755 @@
+### YamlMime:TSType
+name: BasePicker
+uid: '@fluentui/react!BasePicker:class'
+package: '@fluentui/react!'
+fullName: BasePicker
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: (constructor)(basePickerProps)
+    uid: '@fluentui/react!BasePicker:constructor(1)'
+    package: '@fluentui/react!'
+    fullName: (constructor)(basePickerProps)
+    summary: Constructs a new instance of the `BasePicker` class
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'constructor(basePickerProps: P);'
+      parameters:
+        - id: basePickerProps
+          description: ''
+          type: P
+properties:
+  - name: _ariaMap
+    uid: '@fluentui/react!BasePicker#_ariaMap:member'
+    package: '@fluentui/react!'
+    fullName: _ariaMap
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protected _ariaMap: IPickerAriaIds;'
+      return:
+        type: IPickerAriaIds
+  - name: _shouldFocusZoneEnterInnerZone
+    uid: '@fluentui/react!BasePicker#_shouldFocusZoneEnterInnerZone:member'
+    package: '@fluentui/react!'
+    fullName: _shouldFocusZoneEnterInnerZone
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        protected _shouldFocusZoneEnterInnerZone: (ev:
+        React.KeyboardEvent<HTMLElement>) => boolean;
+      return:
+        type: '(ev: React.KeyboardEvent&lt;HTMLElement&gt;) =&gt; boolean'
+  - name: addItem
+    uid: '@fluentui/react!BasePicker#addItem:member'
+    package: '@fluentui/react!'
+    fullName: addItem
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protected addItem: (item: T) => void;'
+      return:
+        type: '(item: T) =&gt; void'
+  - name: addItemByIndex
+    uid: '@fluentui/react!BasePicker#addItemByIndex:member'
+    package: '@fluentui/react!'
+    fullName: addItemByIndex
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protected addItemByIndex: (index: number) => void;'
+      return:
+        type: '(index: number) =&gt; void'
+  - name: completeSelection
+    uid: '@fluentui/react!BasePicker#completeSelection:member'
+    package: '@fluentui/react!'
+    fullName: completeSelection
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protected completeSelection: (item: T) => void;'
+      return:
+        type: '(item: T) =&gt; void'
+  - name: currentPromise
+    uid: '@fluentui/react!BasePicker#currentPromise:member'
+    package: '@fluentui/react!'
+    fullName: currentPromise
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protected currentPromise: PromiseLike<any> | undefined;'
+      return:
+        type: PromiseLike&lt;any&gt; | undefined
+  - name: dismissSuggestions
+    uid: '@fluentui/react!BasePicker#dismissSuggestions:member'
+    package: '@fluentui/react!'
+    fullName: dismissSuggestions
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'dismissSuggestions: (ev?: any) => void;'
+      return:
+        type: '(ev?: any) =&gt; void'
+  - name: focusZone
+    uid: '@fluentui/react!BasePicker#focusZone:member'
+    package: '@fluentui/react!'
+    fullName: focusZone
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protected focusZone: React.RefObject<IFocusZone>;'
+      return:
+        type: React.RefObject&lt;IFocusZone&gt;
+  - name: input
+    uid: '@fluentui/react!BasePicker#input:member'
+    package: '@fluentui/react!'
+    fullName: input
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protected input: React.RefObject<IAutofill>;'
+      return:
+        type: React.RefObject&lt;IAutofill&gt;
+  - name: items
+    uid: '@fluentui/react!BasePicker#items:member'
+    package: '@fluentui/react!'
+    fullName: items
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'get items(): T[];'
+      return:
+        type: 'T[]'
+  - name: onBlur
+    uid: '@fluentui/react!BasePicker#onBlur:member'
+    package: '@fluentui/react!'
+    fullName: onBlur
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        protected onBlur: (ev: React.FocusEvent<HTMLElement | Autofill>) =>
+        void;
+      return:
+        type: '(ev: React.FocusEvent&lt;HTMLElement | Autofill&gt;) =&gt; void'
+  - name: onClick
+    uid: '@fluentui/react!BasePicker#onClick:member'
+    package: '@fluentui/react!'
+    fullName: onClick
+    summary: >-
+      Reveals suggestions any time the user clicks on the input element without
+      shifting focus.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        protected onClick: (ev: React.MouseEvent<HTMLInputElement, MouseEvent>)
+        => void;
+      return:
+        type: '(ev: React.MouseEvent&lt;HTMLInputElement, MouseEvent&gt;) =&gt; void'
+  - name: onGetMoreResults
+    uid: '@fluentui/react!BasePicker#onGetMoreResults:member'
+    package: '@fluentui/react!'
+    fullName: onGetMoreResults
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protected onGetMoreResults: () => void;'
+      return:
+        type: () =&gt; void
+  - name: onInputBlur
+    uid: '@fluentui/react!BasePicker#onInputBlur:member'
+    package: '@fluentui/react!'
+    fullName: onInputBlur
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        protected onInputBlur: (ev: React.FocusEvent<HTMLInputElement |
+        Autofill>) => void;
+      return:
+        type: '(ev: React.FocusEvent&lt;HTMLInputElement | Autofill&gt;) =&gt; void'
+  - name: onInputChange
+    uid: '@fluentui/react!BasePicker#onInputChange:member'
+    package: '@fluentui/react!'
+    fullName: onInputChange
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protected onInputChange: (value: string) => void;'
+      return:
+        type: '(value: string) =&gt; void'
+  - name: onInputFocus
+    uid: '@fluentui/react!BasePicker#onInputFocus:member'
+    package: '@fluentui/react!'
+    fullName: onInputFocus
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        protected onInputFocus: (ev: React.FocusEvent<HTMLInputElement |
+        Autofill>) => void;
+      return:
+        type: '(ev: React.FocusEvent&lt;HTMLInputElement | Autofill&gt;) =&gt; void'
+  - name: onItemChange
+    uid: '@fluentui/react!BasePicker#onItemChange:member'
+    package: '@fluentui/react!'
+    fullName: onItemChange
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protected onItemChange: (changedItem: T, index: number) => void;'
+      return:
+        type: '(changedItem: T, index: number) =&gt; void'
+  - name: onKeyDown
+    uid: '@fluentui/react!BasePicker#onKeyDown:member'
+    package: '@fluentui/react!'
+    fullName: onKeyDown
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protected onKeyDown: (ev: React.KeyboardEvent<HTMLElement>) => void;'
+      return:
+        type: '(ev: React.KeyboardEvent&lt;HTMLElement&gt;) =&gt; void'
+  - name: onSuggestionClick
+    uid: '@fluentui/react!BasePicker#onSuggestionClick:member'
+    package: '@fluentui/react!'
+    fullName: onSuggestionClick
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        protected onSuggestionClick: (ev: React.MouseEvent<HTMLElement,
+        MouseEvent>, item: any, index: number) => void;
+      return:
+        type: >-
+          (ev: React.MouseEvent&lt;HTMLElement, MouseEvent&gt;, item: any,
+          index: number) =&gt; void
+  - name: onSuggestionRemove
+    uid: '@fluentui/react!BasePicker#onSuggestionRemove:member'
+    package: '@fluentui/react!'
+    fullName: onSuggestionRemove
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        protected onSuggestionRemove: (ev: React.MouseEvent<HTMLElement,
+        MouseEvent>, item: T, index: number) => void;
+      return:
+        type: >-
+          (ev: React.MouseEvent&lt;HTMLElement, MouseEvent&gt;, item: T, index:
+          number) =&gt; void
+  - name: refocusSuggestions
+    uid: '@fluentui/react!BasePicker#refocusSuggestions:member'
+    package: '@fluentui/react!'
+    fullName: refocusSuggestions
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'refocusSuggestions: (keyCode: number) => void;'
+      return:
+        type: '(keyCode: number) =&gt; void'
+  - name: removeItem
+    uid: '@fluentui/react!BasePicker#removeItem:member'
+    package: '@fluentui/react!'
+    fullName: removeItem
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        protected removeItem: (item: IPickerItemProps<T>, focusNextItem?:
+        boolean | undefined) => void;
+      return:
+        type: >-
+          (item: IPickerItemProps&lt;T&gt;, focusNextItem?: boolean | undefined)
+          =&gt; void
+  - name: removeItems
+    uid: '@fluentui/react!BasePicker#removeItems:member'
+    package: '@fluentui/react!'
+    fullName: removeItems
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protected removeItems: (itemsToRemove: any[]) => void;'
+      return:
+        type: '(itemsToRemove: any[]) =&gt; void'
+  - name: root
+    uid: '@fluentui/react!BasePicker#root:member'
+    package: '@fluentui/react!'
+    fullName: root
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protected root: React.RefObject<HTMLDivElement>;'
+      return:
+        type: React.RefObject&lt;HTMLDivElement&gt;
+  - name: selection
+    uid: '@fluentui/react!BasePicker#selection:member'
+    package: '@fluentui/react!'
+    fullName: selection
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protected selection: Selection;'
+      return:
+        type: '<xref uid="@fluentui/utilities!Selection:class" />'
+  - name: suggestionElement
+    uid: '@fluentui/react!BasePicker#suggestionElement:member'
+    package: '@fluentui/react!'
+    fullName: suggestionElement
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protected suggestionElement: React.RefObject<ISuggestions<T>>;'
+      return:
+        type: React.RefObject&lt;ISuggestions&lt;T&gt;&gt;
+  - name: SuggestionOfProperType
+    uid: '@fluentui/react!BasePicker#SuggestionOfProperType:member'
+    package: '@fluentui/react!'
+    fullName: SuggestionOfProperType
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: this is no longer necessary as typescript now supports generic elements
+    syntax:
+      content: >-
+        protected SuggestionOfProperType: new (props: ISuggestionsProps<T>) =>
+        Suggestions<T>;
+      return:
+        type: 'new (props: ISuggestionsProps&lt;T&gt;) =&gt; Suggestions&lt;T&gt;'
+  - name: suggestionStore
+    uid: '@fluentui/react!BasePicker#suggestionStore:member'
+    package: '@fluentui/react!'
+    fullName: suggestionStore
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protected suggestionStore: SuggestionsController<T>;'
+      return:
+        type: SuggestionsController&lt;T&gt;
+methods:
+  - name: canAddItems()
+    uid: '@fluentui/react!BasePicker#canAddItems:member(1)'
+    package: '@fluentui/react!'
+    fullName: canAddItems()
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protected canAddItems(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: completeSuggestion(forceComplete)
+    uid: '@fluentui/react!BasePicker#completeSuggestion:member(1)'
+    package: '@fluentui/react!'
+    fullName: completeSuggestion(forceComplete)
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'completeSuggestion(forceComplete?: boolean): void;'
+      parameters:
+        - id: forceComplete
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: componentDidMount()
+    uid: '@fluentui/react!BasePicker#componentDidMount:member(1)'
+    package: '@fluentui/react!'
+    fullName: componentDidMount()
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'componentDidMount(): void;'
+      return:
+        type: void
+        description: ''
+  - name: 'componentDidUpdate(oldProps, oldState)'
+    uid: '@fluentui/react!BasePicker#componentDidUpdate:member(1)'
+    package: '@fluentui/react!'
+    fullName: 'componentDidUpdate(oldProps, oldState)'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'componentDidUpdate(oldProps: P, oldState: IBasePickerState): void;'
+      parameters:
+        - id: oldProps
+          description: ''
+          type: P
+        - id: oldState
+          description: ''
+          type: IBasePickerState
+      return:
+        type: void
+        description: ''
+  - name: componentWillUnmount()
+    uid: '@fluentui/react!BasePicker#componentWillUnmount:member(1)'
+    package: '@fluentui/react!'
+    fullName: componentWillUnmount()
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'componentWillUnmount(): void;'
+      return:
+        type: void
+        description: ''
+  - name: focus()
+    uid: '@fluentui/react!BasePicker#focus:member(1)'
+    package: '@fluentui/react!'
+    fullName: focus()
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'focus(): void;'
+      return:
+        type: void
+        description: ''
+  - name: focusInput()
+    uid: '@fluentui/react!BasePicker#focusInput:member(1)'
+    package: '@fluentui/react!'
+    fullName: focusInput()
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'focusInput(): void;'
+      return:
+        type: void
+        description: ''
+  - name: getActiveDescendant()
+    uid: '@fluentui/react!BasePicker#getActiveDescendant:member(1)'
+    package: '@fluentui/react!'
+    fullName: getActiveDescendant()
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protected getActiveDescendant(): string | undefined;'
+      return:
+        type: string | undefined
+        description: ''
+  - name: getDerivedStateFromProps(newProps)
+    uid: '@fluentui/react!BasePicker.getDerivedStateFromProps:member(1)'
+    package: '@fluentui/react!'
+    fullName: getDerivedStateFromProps(newProps)
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        static getDerivedStateFromProps(newProps: IBasePickerProps<any>): {
+                items: any[];
+            } | null;
+      parameters:
+        - id: newProps
+          description: ''
+          type: IBasePickerProps&lt;any&gt;
+      return:
+        type: |-
+          {
+                  items: any[];
+              } | null
+        description: ''
+  - name: getSuggestionsAlert(suggestionAlertClassName)
+    uid: '@fluentui/react!BasePicker#getSuggestionsAlert:member(1)'
+    package: '@fluentui/react!'
+    fullName: getSuggestionsAlert(suggestionAlertClassName)
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        protected getSuggestionsAlert(suggestionAlertClassName?: string):
+        JSX.Element | undefined;
+      parameters:
+        - id: suggestionAlertClassName
+          description: ''
+          type: string
+      return:
+        type: JSX.Element | undefined
+        description: ''
+  - name: onBackspace(ev)
+    uid: '@fluentui/react!BasePicker#onBackspace:member(1)'
+    package: '@fluentui/react!'
+    fullName: onBackspace(ev)
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protected onBackspace(ev: React.KeyboardEvent<HTMLElement>): void;'
+      parameters:
+        - id: ev
+          description: ''
+          type: React.KeyboardEvent&lt;HTMLElement&gt;
+      return:
+        type: void
+        description: ''
+  - name: onChange(items)
+    uid: '@fluentui/react!BasePicker#onChange:member(1)'
+    package: '@fluentui/react!'
+    fullName: onChange(items)
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protected onChange(items?: T[]): void;'
+      parameters:
+        - id: items
+          description: ''
+          type: 'T[]'
+      return:
+        type: void
+        description: ''
+  - name: onEmptyInputFocus()
+    uid: '@fluentui/react!BasePicker#onEmptyInputFocus:member(1)'
+    package: '@fluentui/react!'
+    fullName: onEmptyInputFocus()
+    summary: >-
+      Only to be called when there is nothing in the input. Checks to see if the
+      consumer has provided a function to resolve suggestions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protected onEmptyInputFocus(): void;'
+      return:
+        type: void
+        description: ''
+  - name: onSelectionChange()
+    uid: '@fluentui/react!BasePicker#onSelectionChange:member(1)'
+    package: '@fluentui/react!'
+    fullName: onSelectionChange()
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protected onSelectionChange(): void;'
+      return:
+        type: void
+        description: ''
+  - name: onSuggestionSelect()
+    uid: '@fluentui/react!BasePicker#onSuggestionSelect:member(1)'
+    package: '@fluentui/react!'
+    fullName: onSuggestionSelect()
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protected onSuggestionSelect(): void;'
+      return:
+        type: void
+        description: ''
+  - name: render()
+    uid: '@fluentui/react!BasePicker#render:member(1)'
+    package: '@fluentui/react!'
+    fullName: render()
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'render(): JSX.Element;'
+      return:
+        type: JSX.Element
+        description: ''
+  - name: renderItems()
+    uid: '@fluentui/react!BasePicker#renderItems:member(1)'
+    package: '@fluentui/react!'
+    fullName: renderItems()
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protected renderItems(): JSX.Element[];'
+      return:
+        type: 'JSX.Element[]'
+        description: ''
+  - name: renderSuggestions()
+    uid: '@fluentui/react!BasePicker#renderSuggestions:member(1)'
+    package: '@fluentui/react!'
+    fullName: renderSuggestions()
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protected renderSuggestions(): JSX.Element | null;'
+      return:
+        type: JSX.Element | null
+        description: ''
+  - name: resetFocus(index)
+    uid: '@fluentui/react!BasePicker#resetFocus:member(1)'
+    package: '@fluentui/react!'
+    fullName: resetFocus(index)
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protected resetFocus(index?: number): void;'
+      parameters:
+        - id: index
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: 'resolveNewValue(updatedValue, suggestions)'
+    uid: '@fluentui/react!BasePicker#resolveNewValue:member(1)'
+    package: '@fluentui/react!'
+    fullName: 'resolveNewValue(updatedValue, suggestions)'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protected resolveNewValue(updatedValue: string, suggestions: T[]): void;'
+      parameters:
+        - id: updatedValue
+          description: ''
+          type: string
+        - id: suggestions
+          description: ''
+          type: 'T[]'
+      return:
+        type: void
+        description: ''
+  - name: updateSuggestions(suggestions)
+    uid: '@fluentui/react!BasePicker#updateSuggestions:member(1)'
+    package: '@fluentui/react!'
+    fullName: updateSuggestions(suggestions)
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protected updateSuggestions(suggestions: any[]): void;'
+      parameters:
+        - id: suggestions
+          description: ''
+          type: 'any[]'
+      return:
+        type: void
+        description: ''
+  - name: 'updateSuggestionsList(suggestions, updatedValue)'
+    uid: '@fluentui/react!BasePicker#updateSuggestionsList:member(1)'
+    package: '@fluentui/react!'
+    fullName: 'updateSuggestionsList(suggestions, updatedValue)'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        protected updateSuggestionsList(suggestions: T[] | PromiseLike<T[]>,
+        updatedValue?: string): void;
+      parameters:
+        - id: suggestions
+          description: ''
+          type: 'T[] | PromiseLike&lt;T[]&gt;'
+        - id: updatedValue
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: updateValue(updatedValue)
+    uid: '@fluentui/react!BasePicker#updateValue:member(1)'
+    package: '@fluentui/react!'
+    fullName: updateValue(updatedValue)
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protected updateValue(updatedValue: string): void;'
+      parameters:
+        - id: updatedValue
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+extends: 'React.Component&lt;P, IBasePickerState&gt; '

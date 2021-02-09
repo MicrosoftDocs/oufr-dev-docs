@@ -1,0 +1,104 @@
+### YamlMime:TSType
+name: IIconProps
+uid: '@fluentui/react!IIconProps:interface'
+package: '@fluentui/react!'
+fullName: IIconProps
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: ariaLabel
+    uid: '@fluentui/react!IIconProps#ariaLabel:member'
+    package: '@fluentui/react!'
+    fullName: ariaLabel
+    summary: The aria label of the icon for the benefit of screen readers.
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Use the native prop `aria-label`
+    syntax:
+      content: 'ariaLabel?: string;'
+      return:
+        type: string
+  - name: iconName
+    uid: '@fluentui/react!IIconProps#iconName:member'
+    package: '@fluentui/react!'
+    fullName: iconName
+    summary: >-
+      The name of the icon to use from the icon font. If string is empty, a
+      placeholder icon will be rendered the same width as an icon.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'iconName?: string;'
+      return:
+        type: string
+  - name: iconType
+    uid: '@fluentui/react!IIconProps#iconType:member'
+    package: '@fluentui/react!'
+    fullName: iconType
+    summary: The type of icon to render (image or icon font).
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Inferred based on the presence of `imageProps`
+    syntax:
+      content: 'iconType?: IconType;'
+      return:
+        type: IconType
+  - name: imageErrorAs
+    uid: '@fluentui/react!IIconProps#imageErrorAs:member'
+    package: '@fluentui/react!'
+    fullName: imageErrorAs
+    summary: >-
+      If rendering an image icon, this component will be rendered in the event
+      that loading the image fails.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'imageErrorAs?: React.ComponentType<IImageProps>;'
+      return:
+        type: React.ComponentType&lt;IImageProps&gt;
+  - name: imageProps
+    uid: '@fluentui/react!IIconProps#imageProps:member'
+    package: '@fluentui/react!'
+    fullName: imageProps
+    summary: >-
+      If rendering an image icon, these props will be passed to the Image
+      component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'imageProps?: IImageProps;'
+      return:
+        type: IImageProps
+  - name: styles
+    uid: '@fluentui/react!IIconProps#styles:member'
+    package: '@fluentui/react!'
+    fullName: styles
+    summary: Gets the styles for an Icon.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'styles?: IStyleFunctionOrObject<IIconStyleProps, IIconStyles>;'
+      return:
+        type: 'IStyleFunctionOrObject&lt;IIconStyleProps, IIconStyles&gt;'
+  - name: theme
+    uid: '@fluentui/react!IIconProps#theme:member'
+    package: '@fluentui/react!'
+    fullName: theme
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
+extends: '<xref uid="@fluentui/utilities!IBaseProps:interface" />'

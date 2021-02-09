@@ -1,0 +1,169 @@
+### YamlMime:TSType
+name: ISelectionZoneProps
+uid: '@fluentui/react!ISelectionZoneProps:interface'
+package: '@fluentui/react!'
+fullName: ISelectionZoneProps
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: className
+    uid: '@fluentui/react!ISelectionZoneProps#className:member'
+    package: '@fluentui/react!'
+    fullName: className
+    summary: Additional CSS class(es) to apply to the SelectionZone.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'className?: string;'
+      return:
+        type: string
+  - name: componentRef
+    uid: '@fluentui/react!ISelectionZoneProps#componentRef:member'
+    package: '@fluentui/react!'
+    fullName: componentRef
+    summary: Reference to the component interface.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'componentRef?: () => void;'
+      return:
+        type: () =&gt; void
+  - name: disableAutoSelectOnInputElements
+    uid: >-
+      @fluentui/react!ISelectionZoneProps#disableAutoSelectOnInputElements:member
+    package: '@fluentui/react!'
+    fullName: disableAutoSelectOnInputElements
+    summary: 'If true, disables automatic selection on input elements.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'disableAutoSelectOnInputElements?: boolean;'
+      return:
+        type: boolean
+  - name: enableTouchInvocationTarget
+    uid: '@fluentui/react!ISelectionZoneProps#enableTouchInvocationTarget:member'
+    package: '@fluentui/react!'
+    fullName: enableTouchInvocationTarget
+    summary: >-
+      Determines whether elements with the attribute
+      `data-selection-touch-invoke` should be used as invocation targets for an
+      item if the user is using touch.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'enableTouchInvocationTarget?: boolean;'
+      return:
+        type: boolean
+  - name: enterModalOnTouch
+    uid: '@fluentui/react!ISelectionZoneProps#enterModalOnTouch:member'
+    package: '@fluentui/react!'
+    fullName: enterModalOnTouch
+    summary: 'If true, modal selection is enabled on touch event.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'enterModalOnTouch?: boolean;'
+      return:
+        type: boolean
+  - name: isSelectedOnFocus
+    uid: '@fluentui/react!ISelectionZoneProps#isSelectedOnFocus:member'
+    package: '@fluentui/react!'
+    fullName: isSelectedOnFocus
+    summary: Determines if an item is selected on focus.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isSelectedOnFocus?: boolean;'
+      return:
+        type: boolean
+  - name: layout
+    uid: '@fluentui/react!ISelectionZoneProps#layout:member'
+    package: '@fluentui/react!'
+    fullName: layout
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: 'No longer in use, focus is now managed by .'
+    syntax:
+      content: 'layout?: {};'
+      return:
+        type: '{}'
+  - name: onItemContextMenu
+    uid: '@fluentui/react!ISelectionZoneProps#onItemContextMenu:member'
+    package: '@fluentui/react!'
+    fullName: onItemContextMenu
+    summary: Optional callback for when an item's contextual menu action occurs.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        onItemContextMenu?: (item?: any, index?: number, ev?: Event) => void |
+        boolean;
+      return:
+        type: '(item?: any, index?: number, ev?: Event) =&gt; void | boolean'
+  - name: onItemInvoked
+    uid: '@fluentui/react!ISelectionZoneProps#onItemInvoked:member'
+    package: '@fluentui/react!'
+    fullName: onItemInvoked
+    summary: Optional callback for when an item is invoked via ENTER or double-click.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        onItemInvoked?: (item?: IObjectWithKey, index?: number, ev?: Event) =>
+        void;
+      return:
+        type: '(item?: IObjectWithKey, index?: number, ev?: Event) =&gt; void'
+  - name: selection
+    uid: '@fluentui/react!ISelectionZoneProps#selection:member'
+    package: '@fluentui/react!'
+    fullName: selection
+    summary: >-
+      Required  instance bound to the
+      [SelectionZone](xref:@fluentui/react!SelectionZone:class)<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'selection: ISelection;'
+      return:
+        type: '<xref uid="@fluentui/utilities!ISelection:interface" />'
+  - name: selectionMode
+    uid: '@fluentui/react!ISelectionZoneProps#selectionMode:member'
+    package: '@fluentui/react!'
+    fullName: selectionMode
+    summary: >-
+      The mode of Selection, where the value is one of 'none', 'single', or
+      'multiple'.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'selectionMode?: SelectionMode;'
+      return:
+        type: '<xref uid="@fluentui/utilities!SelectionMode:enum" />'
+  - name: selectionPreservedOnEmptyClick
+    uid: '@fluentui/react!ISelectionZoneProps#selectionPreservedOnEmptyClick:member'
+    package: '@fluentui/react!'
+    fullName: selectionPreservedOnEmptyClick
+    summary: 'If true, selection is preserved on outer click.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'selectionPreservedOnEmptyClick?: boolean;'
+      return:
+        type: boolean
+extends: 'React.ClassAttributes&lt;SelectionZone&gt; '

@@ -1,0 +1,91 @@
+### YamlMime:TSType
+name: IShimmerGapProps
+uid: '@fluentui/react!IShimmerGapProps:interface'
+package: '@fluentui/react!'
+fullName: IShimmerGapProps
+summary: ShimmerGap component props.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: borderStyle
+    uid: '@fluentui/react!IShimmerGapProps#borderStyle:member'
+    package: '@fluentui/react!'
+    fullName: borderStyle
+    summary: Use to set custom styling of the shimmerGap borders.
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Use `styles.root` instead.
+    syntax:
+      content: 'borderStyle?: IRawStyle;'
+      return:
+        type: '<xref uid="@fluentui/merge-styles!IRawStyle:interface" />'
+  - name: componentRef
+    uid: '@fluentui/react!IShimmerGapProps#componentRef:member'
+    package: '@fluentui/react!'
+    fullName: componentRef
+    summary: >-
+      Optional callback to access the IShimmerGap interface. Use this instead of
+      ref for accessing the public methods and properties of the component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'componentRef?: IRefObject<IShimmerGap>;'
+      return:
+        type: IRefObject&lt;IShimmerGap&gt;
+  - name: height
+    uid: '@fluentui/react!IShimmerGapProps#height:member'
+    package: '@fluentui/react!'
+    fullName: height
+    summary: Sets the height of the gap.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'height?: number;'
+      return:
+        type: number
+  - name: styles
+    uid: '@fluentui/react!IShimmerGapProps#styles:member'
+    package: '@fluentui/react!'
+    fullName: styles
+    summary: >-
+      Call to provide customized styling that will layer on top of the variant
+      rules.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        styles?: IStyleFunctionOrObject<IShimmerGapStyleProps,
+        IShimmerGapStyles>;
+      return:
+        type: 'IStyleFunctionOrObject&lt;IShimmerGapStyleProps, IShimmerGapStyles&gt;'
+  - name: theme
+    uid: '@fluentui/react!IShimmerGapProps#theme:member'
+    package: '@fluentui/react!'
+    fullName: theme
+    summary: Theme provided by High-Order Component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
+  - name: width
+    uid: '@fluentui/react!IShimmerGapProps#width:member'
+    package: '@fluentui/react!'
+    fullName: width
+    summary: Sets width value of the gap.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'width?: number | string;'
+      return:
+        type: number | string
+extends: 'React.AllHTMLAttributes&lt;HTMLElement&gt; '

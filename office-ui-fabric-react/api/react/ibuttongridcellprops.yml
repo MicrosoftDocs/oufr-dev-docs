@@ -1,0 +1,263 @@
+### YamlMime:TSType
+name: IButtonGridCellProps
+uid: '@fluentui/react!IButtonGridCellProps:interface'
+package: '@fluentui/react!'
+fullName: IButtonGridCellProps
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: cellDisabledStyle
+    uid: '@fluentui/react!IButtonGridCellProps#cellDisabledStyle:member'
+    package: '@fluentui/react!'
+    fullName: cellDisabledStyle
+    summary: 'Optional, the CSS class used for when the cell is disabled'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'cellDisabledStyle?: string[];'
+      return:
+        type: 'string[]'
+  - name: cellIsSelectedStyle
+    uid: '@fluentui/react!IButtonGridCellProps#cellIsSelectedStyle:member'
+    package: '@fluentui/react!'
+    fullName: cellIsSelectedStyle
+    summary: 'Optional, the CSS class used for when the cell is selected'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'cellIsSelectedStyle?: string[];'
+      return:
+        type: 'string[]'
+  - name: className
+    uid: '@fluentui/react!IButtonGridCellProps#className:member'
+    package: '@fluentui/react!'
+    fullName: className
+    summary: 'Optional, className(s) to apply'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'className?: string;'
+      return:
+        type: string
+  - name: disabled
+    uid: '@fluentui/react!IButtonGridCellProps#disabled:member'
+    package: '@fluentui/react!'
+    fullName: disabled
+    summary: 'Optional, if the this option should be disabled'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'disabled?: boolean;'
+      return:
+        type: boolean
+  - name: getClassNames
+    uid: '@fluentui/react!IButtonGridCellProps#getClassNames:member'
+    package: '@fluentui/react!'
+    fullName: getClassNames
+    summary: >-
+      Method to provide the classnames to style a button. The default value for
+      this prop is the getClassnames func defined in BaseButton.classnames.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        getClassNames?: (theme: ITheme, className: string, variantClassName:
+        string, iconClassName: string | undefined, menuIconClassName: string |
+        undefined, disabled: boolean, checked: boolean, expanded: boolean,
+        isSplit: boolean | undefined) => IButtonClassNames;
+      return:
+        type: >-
+          (theme: ITheme, className: string, variantClassName: string,
+          iconClassName: string | undefined, menuIconClassName: string |
+          undefined, disabled: boolean, checked: boolean, expanded: boolean,
+          isSplit: boolean | undefined) =&gt; IButtonClassNames
+  - name: id
+    uid: '@fluentui/react!IButtonGridCellProps#id:member'
+    package: '@fluentui/react!'
+    fullName: id
+    summary: Arbitrary unique string associated with this option
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id: string;'
+      return:
+        type: string
+  - name: index
+    uid: '@fluentui/react!IButtonGridCellProps#index:member'
+    package: '@fluentui/react!'
+    fullName: index
+    summary: Index for this option
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'index?: number;'
+      return:
+        type: number
+  - name: item
+    uid: '@fluentui/react!IButtonGridCellProps#item:member'
+    package: '@fluentui/react!'
+    fullName: item
+    summary: The option that will be made available to the user
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'item: T;'
+      return:
+        type: T
+  - name: label
+    uid: '@fluentui/react!IButtonGridCellProps#label:member'
+    package: '@fluentui/react!'
+    fullName: label
+    summary: >-
+      The label for this item. Visible text if this item is a header, tooltip if
+      is this item is normal
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'label?: string;'
+      return:
+        type: string
+  - name: onClick
+    uid: '@fluentui/react!IButtonGridCellProps#onClick:member'
+    package: '@fluentui/react!'
+    fullName: onClick
+    summary: The on click handler
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onClick?: (item: T) => void;'
+      return:
+        type: '(item: T) =&gt; void'
+  - name: onFocus
+    uid: '@fluentui/react!IButtonGridCellProps#onFocus:member'
+    package: '@fluentui/react!'
+    fullName: onFocus
+    summary: 'Optional, the onFocus handler'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onFocus?: (item: T) => void;'
+      return:
+        type: '(item: T) =&gt; void'
+  - name: onHover
+    uid: '@fluentui/react!IButtonGridCellProps#onHover:member'
+    package: '@fluentui/react!'
+    fullName: onHover
+    summary: 'Optional, the onHover handler'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onHover?: (item?: T) => void;'
+      return:
+        type: '(item?: T) =&gt; void'
+  - name: onKeyDown
+    uid: '@fluentui/react!IButtonGridCellProps#onKeyDown:member'
+    package: '@fluentui/react!'
+    fullName: onKeyDown
+    summary: 'Optional, onkeydown handler'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onKeyDown?: (ev: React.KeyboardEvent<HTMLButtonElement>) => void;'
+      return:
+        type: '(ev: React.KeyboardEvent&lt;HTMLButtonElement&gt;) =&gt; void'
+  - name: onMouseEnter
+    uid: '@fluentui/react!IButtonGridCellProps#onMouseEnter:member'
+    package: '@fluentui/react!'
+    fullName: onMouseEnter
+    summary: 'Optional, mouseEnter handler.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onMouseEnter?: (ev: React.MouseEvent<HTMLButtonElement>) => boolean;'
+      return:
+        type: '(ev: React.MouseEvent&lt;HTMLButtonElement&gt;) =&gt; boolean'
+  - name: onMouseLeave
+    uid: '@fluentui/react!IButtonGridCellProps#onMouseLeave:member'
+    package: '@fluentui/react!'
+    fullName: onMouseLeave
+    summary: 'Optional, mouseLeave handler'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onMouseLeave?: (ev: React.MouseEvent<HTMLButtonElement>) => void;'
+      return:
+        type: '(ev: React.MouseEvent&lt;HTMLButtonElement&gt;) =&gt; void'
+  - name: onMouseMove
+    uid: '@fluentui/react!IButtonGridCellProps#onMouseMove:member'
+    package: '@fluentui/react!'
+    fullName: onMouseMove
+    summary: 'Optional, mouseMove handler'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onMouseMove?: (ev: React.MouseEvent<HTMLButtonElement>) => boolean;'
+      return:
+        type: '(ev: React.MouseEvent&lt;HTMLButtonElement&gt;) =&gt; boolean'
+  - name: onRenderItem
+    uid: '@fluentui/react!IButtonGridCellProps#onRenderItem:member'
+    package: '@fluentui/react!'
+    fullName: onRenderItem
+    summary: The render callback to handle rendering the item
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onRenderItem: (item: T) => JSX.Element;'
+      return:
+        type: '(item: T) =&gt; JSX.Element'
+  - name: onWheel
+    uid: '@fluentui/react!IButtonGridCellProps#onWheel:member'
+    package: '@fluentui/react!'
+    fullName: onWheel
+    summary: 'Optional, onWheel handler'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onWheel?: (ev: React.MouseEvent<HTMLButtonElement>) => void;'
+      return:
+        type: '(ev: React.MouseEvent&lt;HTMLButtonElement&gt;) =&gt; void'
+  - name: role
+    uid: '@fluentui/react!IButtonGridCellProps#role:member'
+    package: '@fluentui/react!'
+    fullName: role
+    summary: The accessible role for this option
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'role?: string;'
+      return:
+        type: string
+  - name: selected
+    uid: '@fluentui/react!IButtonGridCellProps#selected:member'
+    package: '@fluentui/react!'
+    fullName: selected
+    summary: 'Optional, if the cell is currently selected'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'selected?: boolean;'
+      return:
+        type: boolean

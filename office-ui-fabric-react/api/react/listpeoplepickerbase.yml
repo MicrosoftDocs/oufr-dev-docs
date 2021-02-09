@@ -1,0 +1,34 @@
+### YamlMime:TSType
+name: ListPeoplePickerBase
+uid: '@fluentui/react!ListPeoplePickerBase:class'
+package: '@fluentui/react!'
+fullName: ListPeoplePickerBase
+summary: MemberList layout. The selected people show up below the search box.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: defaultProps
+    uid: '@fluentui/react!ListPeoplePickerBase.defaultProps:member'
+    package: '@fluentui/react!'
+    fullName: defaultProps
+    summary: Default props for ListPeoplePicker.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        static defaultProps: {
+                onRenderItem: (props: IPeoplePickerItemSelectedProps) => JSX.Element;
+                onRenderSuggestionsItem: (personaProps: IPersonaProps, suggestionsProps?: IBasePickerSuggestionsProps<any> | undefined) => JSX.Element;
+                createGenericItem: typeof createGenericItem;
+            };
+      return:
+        type: |-
+          {
+                  onRenderItem: (props: IPeoplePickerItemSelectedProps) =&gt; JSX.Element;
+                  onRenderSuggestionsItem: (personaProps: IPersonaProps, suggestionsProps?: IBasePickerSuggestionsProps&lt;any&gt; | undefined) =&gt; JSX.Element;
+                  createGenericItem: typeof createGenericItem;
+              }
+extends: 'MemberListPeoplePicker '

@@ -1,0 +1,367 @@
+### YamlMime:TSType
+name: BaseExtendedPicker
+uid: '@fluentui/react!BaseExtendedPicker:class'
+package: '@fluentui/react!'
+fullName: BaseExtendedPicker
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: (constructor)(basePickerProps)
+    uid: '@fluentui/react!BaseExtendedPicker:constructor(1)'
+    package: '@fluentui/react!'
+    fullName: (constructor)(basePickerProps)
+    summary: Constructs a new instance of the `BaseExtendedPicker` class
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'constructor(basePickerProps: P);'
+      parameters:
+        - id: basePickerProps
+          description: ''
+          type: P
+properties:
+  - name: _onSelectedItemsChanged
+    uid: '@fluentui/react!BaseExtendedPicker#_onSelectedItemsChanged:member'
+    package: '@fluentui/react!'
+    fullName: _onSelectedItemsChanged
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protected _onSelectedItemsChanged: () => void;'
+      return:
+        type: () =&gt; void
+  - name: _onSuggestionSelected
+    uid: '@fluentui/react!BaseExtendedPicker#_onSuggestionSelected:member'
+    package: '@fluentui/react!'
+    fullName: _onSuggestionSelected
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protected _onSuggestionSelected: (item: T) => void;'
+      return:
+        type: '(item: T) =&gt; void'
+  - name: floatingPicker
+    uid: '@fluentui/react!BaseExtendedPicker#floatingPicker:member'
+    package: '@fluentui/react!'
+    fullName: floatingPicker
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        floatingPicker: React.RefObject<BaseFloatingPicker<T,
+        IBaseFloatingPickerProps<T>>>;
+      return:
+        type: >-
+          React.RefObject&lt;BaseFloatingPicker&lt;T,
+          IBaseFloatingPickerProps&lt;T&gt;&gt;&gt;
+  - name: floatingPickerProps
+    uid: '@fluentui/react!BaseExtendedPicker#floatingPickerProps:member'
+    package: '@fluentui/react!'
+    fullName: floatingPickerProps
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protected get floatingPickerProps(): IBaseFloatingPickerProps<T>;'
+      return:
+        type: IBaseFloatingPickerProps&lt;T&gt;
+  - name: highlightedItems
+    uid: '@fluentui/react!BaseExtendedPicker#highlightedItems:member'
+    package: '@fluentui/react!'
+    fullName: highlightedItems
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'get highlightedItems(): T[];'
+      return:
+        type: 'T[]'
+  - name: input
+    uid: '@fluentui/react!BaseExtendedPicker#input:member'
+    package: '@fluentui/react!'
+    fullName: input
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protected input: React.RefObject<Autofill>;'
+      return:
+        type: React.RefObject&lt;Autofill&gt;
+  - name: inputElement
+    uid: '@fluentui/react!BaseExtendedPicker#inputElement:member'
+    package: '@fluentui/react!'
+    fullName: inputElement
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'get inputElement(): HTMLInputElement | null;'
+      return:
+        type: HTMLInputElement | null
+  - name: items
+    uid: '@fluentui/react!BaseExtendedPicker#items:member'
+    package: '@fluentui/react!'
+    fullName: items
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'get items(): any;'
+      return:
+        type: any
+  - name: onBackspace
+    uid: '@fluentui/react!BaseExtendedPicker#onBackspace:member'
+    package: '@fluentui/react!'
+    fullName: onBackspace
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protected onBackspace: (ev: React.KeyboardEvent<HTMLElement>) => void;'
+      return:
+        type: '(ev: React.KeyboardEvent&lt;HTMLElement&gt;) =&gt; void'
+  - name: onCopy
+    uid: '@fluentui/react!BaseExtendedPicker#onCopy:member'
+    package: '@fluentui/react!'
+    fullName: onCopy
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protected onCopy: (ev: React.ClipboardEvent<HTMLElement>) => void;'
+      return:
+        type: '(ev: React.ClipboardEvent&lt;HTMLElement&gt;) =&gt; void'
+  - name: onInputChange
+    uid: '@fluentui/react!BaseExtendedPicker#onInputChange:member'
+    package: '@fluentui/react!'
+    fullName: onInputChange
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        protected onInputChange: (value: string, composing?: boolean |
+        undefined) => void;
+      return:
+        type: '(value: string, composing?: boolean | undefined) =&gt; void'
+  - name: onInputClick
+    uid: '@fluentui/react!BaseExtendedPicker#onInputClick:member'
+    package: '@fluentui/react!'
+    fullName: onInputClick
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        protected onInputClick: (ev: React.MouseEvent<HTMLInputElement |
+        Autofill, MouseEvent>) => void;
+      return:
+        type: >-
+          (ev: React.MouseEvent&lt;HTMLInputElement | Autofill, MouseEvent&gt;)
+          =&gt; void
+  - name: onInputFocus
+    uid: '@fluentui/react!BaseExtendedPicker#onInputFocus:member'
+    package: '@fluentui/react!'
+    fullName: onInputFocus
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        protected onInputFocus: (ev: React.FocusEvent<HTMLInputElement |
+        Autofill>) => void;
+      return:
+        type: '(ev: React.FocusEvent&lt;HTMLInputElement | Autofill&gt;) =&gt; void'
+  - name: onPaste
+    uid: '@fluentui/react!BaseExtendedPicker#onPaste:member'
+    package: '@fluentui/react!'
+    fullName: onPaste
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        protected onPaste: (ev: React.ClipboardEvent<HTMLInputElement |
+        Autofill>) => void;
+      return:
+        type: >-
+          (ev: React.ClipboardEvent&lt;HTMLInputElement | Autofill&gt;) =&gt;
+          void
+  - name: onSelectionChange
+    uid: '@fluentui/react!BaseExtendedPicker#onSelectionChange:member'
+    package: '@fluentui/react!'
+    fullName: onSelectionChange
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protected onSelectionChange: () => void;'
+      return:
+        type: () =&gt; void
+  - name: root
+    uid: '@fluentui/react!BaseExtendedPicker#root:member'
+    package: '@fluentui/react!'
+    fullName: root
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protected root: React.RefObject<HTMLDivElement>;'
+      return:
+        type: React.RefObject&lt;HTMLDivElement&gt;
+  - name: selectedItemsList
+    uid: '@fluentui/react!BaseExtendedPicker#selectedItemsList:member'
+    package: '@fluentui/react!'
+    fullName: selectedItemsList
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        selectedItemsList: React.RefObject<BaseSelectedItemsList<T,
+        IBaseSelectedItemsListProps<T>>>;
+      return:
+        type: >-
+          React.RefObject&lt;BaseSelectedItemsList&lt;T,
+          IBaseSelectedItemsListProps&lt;T&gt;&gt;&gt;
+  - name: selectedItemsListProps
+    uid: '@fluentui/react!BaseExtendedPicker#selectedItemsListProps:member'
+    package: '@fluentui/react!'
+    fullName: selectedItemsListProps
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protected get selectedItemsListProps(): IBaseSelectedItemsListProps<T>;'
+      return:
+        type: IBaseSelectedItemsListProps&lt;T&gt;
+  - name: selection
+    uid: '@fluentui/react!BaseExtendedPicker#selection:member'
+    package: '@fluentui/react!'
+    fullName: selection
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protected selection: Selection;'
+      return:
+        type: '<xref uid="@fluentui/utilities!Selection:class" />'
+methods:
+  - name: canAddItems()
+    uid: '@fluentui/react!BaseExtendedPicker#canAddItems:member(1)'
+    package: '@fluentui/react!'
+    fullName: canAddItems()
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protected canAddItems(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: clearInput()
+    uid: '@fluentui/react!BaseExtendedPicker#clearInput:member(1)'
+    package: '@fluentui/react!'
+    fullName: clearInput()
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clearInput(): void;'
+      return:
+        type: void
+        description: ''
+  - name: componentDidMount()
+    uid: '@fluentui/react!BaseExtendedPicker#componentDidMount:member(1)'
+    package: '@fluentui/react!'
+    fullName: componentDidMount()
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'componentDidMount(): void;'
+      return:
+        type: void
+        description: ''
+  - name: focus()
+    uid: '@fluentui/react!BaseExtendedPicker#focus:member(1)'
+    package: '@fluentui/react!'
+    fullName: focus()
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'focus(): void;'
+      return:
+        type: void
+        description: ''
+  - name: render()
+    uid: '@fluentui/react!BaseExtendedPicker#render:member(1)'
+    package: '@fluentui/react!'
+    fullName: render()
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'render(): JSX.Element;'
+      return:
+        type: JSX.Element
+        description: ''
+  - name: renderFloatingPicker()
+    uid: '@fluentui/react!BaseExtendedPicker#renderFloatingPicker:member(1)'
+    package: '@fluentui/react!'
+    fullName: renderFloatingPicker()
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protected renderFloatingPicker(): JSX.Element;'
+      return:
+        type: JSX.Element
+        description: ''
+  - name: renderSelectedItemsList()
+    uid: '@fluentui/react!BaseExtendedPicker#renderSelectedItemsList:member(1)'
+    package: '@fluentui/react!'
+    fullName: renderSelectedItemsList()
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protected renderSelectedItemsList(): JSX.Element;'
+      return:
+        type: JSX.Element
+        description: ''
+extends: 'React.Component&lt;P, IBaseExtendedPickerState&lt;T&gt;&gt; '
