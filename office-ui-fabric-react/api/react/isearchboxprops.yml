@@ -1,0 +1,256 @@
+### YamlMime:TSType
+name: ISearchBoxProps
+uid: '@fluentui/react!ISearchBoxProps:interface'
+package: '@fluentui/react!'
+fullName: ISearchBoxProps
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: ariaLabel
+    uid: '@fluentui/react!ISearchBoxProps#ariaLabel:member'
+    package: '@fluentui/react!'
+    fullName: ariaLabel
+    summary: The aria label of the SearchBox for the benefit of screen readers.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ariaLabel?: string;'
+      return:
+        type: string
+  - name: className
+    uid: '@fluentui/react!ISearchBoxProps#className:member'
+    package: '@fluentui/react!'
+    fullName: className
+    summary: CSS class to apply to the SearchBox.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'className?: string;'
+      return:
+        type: string
+  - name: clearButtonProps
+    uid: '@fluentui/react!ISearchBoxProps#clearButtonProps:member'
+    package: '@fluentui/react!'
+    fullName: clearButtonProps
+    summary: The props for the clear button.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clearButtonProps?: IButtonProps;'
+      return:
+        type: IButtonProps
+  - name: componentRef
+    uid: '@fluentui/react!ISearchBoxProps#componentRef:member'
+    package: '@fluentui/react!'
+    fullName: componentRef
+    summary: >-
+      Optional callback to access the ISearchBox interface. Use this instead of
+      ref for accessing the public methods and properties of the component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'componentRef?: React.Ref<ISearchBox>;'
+      return:
+        type: React.Ref&lt;ISearchBox&gt;
+  - name: defaultValue
+    uid: '@fluentui/react!ISearchBoxProps#defaultValue:member'
+    package: '@fluentui/react!'
+    fullName: defaultValue
+    summary: >-
+      The default value of the text in the SearchBox, in the case of an
+      uncontrolled component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'defaultValue?: string;'
+      return:
+        type: string
+  - name: disableAnimation
+    uid: '@fluentui/react!ISearchBoxProps#disableAnimation:member'
+    package: '@fluentui/react!'
+    fullName: disableAnimation
+    summary: Whether or not to animate the SearchBox icon on focus.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'disableAnimation?: boolean;'
+      return:
+        type: boolean
+  - name: iconProps
+    uid: '@fluentui/react!ISearchBoxProps#iconProps:member'
+    package: '@fluentui/react!'
+    fullName: iconProps
+    summary: The props for the icon.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'iconProps?: Pick<IIconProps, Exclude<keyof IIconProps, ''className''>>;'
+      return:
+        type: 'Pick&lt;IIconProps, Exclude&lt;keyof IIconProps, ''className''&gt;&gt;'
+  - name: labelText
+    uid: '@fluentui/react!ISearchBoxProps#labelText:member'
+    package: '@fluentui/react!'
+    fullName: labelText
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Use `placeholder` instead.
+    syntax:
+      content: 'labelText?: string;'
+      return:
+        type: string
+  - name: onChange
+    uid: '@fluentui/react!ISearchBoxProps#onChange:member'
+    package: '@fluentui/react!'
+    fullName: onChange
+    summary: Callback function for when the typed input for the SearchBox has changed.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        onChange?: (event?: React.ChangeEvent<HTMLInputElement>, newValue?:
+        string) => void;
+      return:
+        type: >-
+          (event?: React.ChangeEvent&lt;HTMLInputElement&gt;, newValue?: string)
+          =&gt; void
+  - name: onChanged
+    uid: '@fluentui/react!ISearchBoxProps#onChanged:member'
+    package: '@fluentui/react!'
+    fullName: onChanged
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Use `onChange` instead. Deprecated at v0.52.2.
+    syntax:
+      content: 'onChanged?: (newValue: any) => void;'
+      return:
+        type: '(newValue: any) =&gt; void'
+  - name: onClear
+    uid: '@fluentui/react!ISearchBoxProps#onClear:member'
+    package: '@fluentui/react!'
+    fullName: onClear
+    summary: >-
+      Callback executed when the user clears the search box by either clicking
+      'X' or hitting escape.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onClear?: (ev?: any) => void;'
+      return:
+        type: '(ev?: any) =&gt; void'
+  - name: onEscape
+    uid: '@fluentui/react!ISearchBoxProps#onEscape:member'
+    package: '@fluentui/react!'
+    fullName: onEscape
+    summary: Callback executed when the user presses escape in the search box.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onEscape?: (ev?: any) => void;'
+      return:
+        type: '(ev?: any) =&gt; void'
+  - name: onSearch
+    uid: '@fluentui/react!ISearchBoxProps#onSearch:member'
+    package: '@fluentui/react!'
+    fullName: onSearch
+    summary: Callback executed when the user presses enter in the search box.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onSearch?: (newValue: any) => void;'
+      return:
+        type: '(newValue: any) =&gt; void'
+  - name: placeholder
+    uid: '@fluentui/react!ISearchBoxProps#placeholder:member'
+    package: '@fluentui/react!'
+    fullName: placeholder
+    summary: Placeholder for the search box.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'placeholder?: string;'
+      return:
+        type: string
+  - name: role
+    uid: '@fluentui/react!ISearchBoxProps#role:member'
+    package: '@fluentui/react!'
+    fullName: role
+    summary: >-
+      The role assigned to the root DIV element of the SearchBox, useful for
+      defining a landmark role, such as "search".
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'role?: string;'
+      return:
+        type: string
+  - name: styles
+    uid: '@fluentui/react!ISearchBoxProps#styles:member'
+    package: '@fluentui/react!'
+    fullName: styles
+    summary: >-
+      Call to provide customized styling that will layer on top of the variant
+      rules.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'styles?: IStyleFunctionOrObject<ISearchBoxStyleProps, ISearchBoxStyles>;'
+      return:
+        type: 'IStyleFunctionOrObject&lt;ISearchBoxStyleProps, ISearchBoxStyles&gt;'
+  - name: theme
+    uid: '@fluentui/react!ISearchBoxProps#theme:member'
+    package: '@fluentui/react!'
+    fullName: theme
+    summary: Theme (provided through customization).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
+  - name: underlined
+    uid: '@fluentui/react!ISearchBoxProps#underlined:member'
+    package: '@fluentui/react!'
+    fullName: underlined
+    summary: Whether or not the SearchBox is underlined.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'underlined?: boolean;'
+      return:
+        type: boolean
+  - name: value
+    uid: '@fluentui/react!ISearchBoxProps#value:member'
+    package: '@fluentui/react!'
+    fullName: value
+    summary: The value of the text in the SearchBox.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'value?: string;'
+      return:
+        type: string
+extends: React.InputHTMLAttributes&lt;HTMLInputElement&gt;

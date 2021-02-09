@@ -1,0 +1,117 @@
+### YamlMime:TSType
+name: IPositionProps
+uid: '@fluentui/react!IPositionProps:interface'
+package: '@fluentui/react!'
+fullName: IPositionProps
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: alignTargetEdge
+    uid: '@fluentui/react!IPositionProps#alignTargetEdge:member'
+    package: '@fluentui/react!'
+    fullName: alignTargetEdge
+    summary: >-
+      If true the positioning logic will prefer flipping edges over nudging the
+      rectangle to fit within bounds, thus making sure the element align
+      perfectly with target.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'alignTargetEdge?: boolean;'
+      return:
+        type: boolean
+  - name: bounds
+    uid: '@fluentui/react!IPositionProps#bounds:member'
+    package: '@fluentui/react!'
+    fullName: bounds
+    summary: The bounding rectangle for which the contextual menu can appear in.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'bounds?: IRectangle;'
+      return:
+        type: '<xref uid="@fluentui/utilities!IRectangle:interface" />'
+  - name: coverTarget
+    uid: '@fluentui/react!IPositionProps#coverTarget:member'
+    package: '@fluentui/react!'
+    fullName: coverTarget
+    summary: >-
+      If true the position returned will have the menu element cover the target.
+      If false then it will position next to the target;
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'coverTarget?: boolean;'
+      return:
+        type: boolean
+  - name: directionalHint
+    uid: '@fluentui/react!IPositionProps#directionalHint:member'
+    package: '@fluentui/react!'
+    fullName: directionalHint
+    summary: how the element should be positioned
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'directionalHint?: DirectionalHint;'
+      return:
+        type: DirectionalHint
+  - name: directionalHintFixed
+    uid: '@fluentui/react!IPositionProps#directionalHintFixed:member'
+    package: '@fluentui/react!'
+    fullName: directionalHintFixed
+    summary: >-
+      If true the position will not change edges in an attempt to fit the
+      rectangle within bounds. It will still attempt to align it to whatever
+      bounds are given.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'directionalHintFixed?: boolean;'
+      return:
+        type: boolean
+  - name: directionalHintForRTL
+    uid: '@fluentui/react!IPositionProps#directionalHintForRTL:member'
+    package: '@fluentui/react!'
+    fullName: directionalHintForRTL
+    summary: >-
+      How the element should be positioned in RTL layouts. If not specified, a
+      mirror of `directionalHint` will be used instead
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'directionalHintForRTL?: DirectionalHint;'
+      return:
+        type: DirectionalHint
+  - name: gapSpace
+    uid: '@fluentui/react!IPositionProps#gapSpace:member'
+    package: '@fluentui/react!'
+    fullName: gapSpace
+    summary: The gap between the callout and the target
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'gapSpace?: number;'
+      return:
+        type: number
+  - name: target
+    uid: '@fluentui/react!IPositionProps#target:member'
+    package: '@fluentui/react!'
+    fullName: target
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'target?: Element | MouseEvent | Point;'
+      return:
+        type: Element | MouseEvent | Point

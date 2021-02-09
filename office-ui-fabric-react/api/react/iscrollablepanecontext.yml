@@ -1,0 +1,43 @@
+### YamlMime:TSType
+name: IScrollablePaneContext
+uid: '@fluentui/react!IScrollablePaneContext:interface'
+package: '@fluentui/react!'
+fullName: IScrollablePaneContext
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: scrollablePane
+    uid: '@fluentui/react!IScrollablePaneContext#scrollablePane:member'
+    package: '@fluentui/react!'
+    fullName: scrollablePane
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        scrollablePane?: {
+                subscribe: (handler: (container: HTMLElement, stickyContainer: HTMLElement) => void) => void;
+                unsubscribe: (handler: (container: HTMLElement, stickyContainer: HTMLElement) => void) => void;
+                addSticky: (sticky: Sticky) => void;
+                removeSticky: (sticky: Sticky) => void;
+                updateStickyRefHeights: () => void;
+                sortSticky: (sticky: Sticky, sortAgain?: boolean) => void;
+                notifySubscribers: (sort?: boolean) => void;
+                syncScrollSticky: (sticky: Sticky) => void;
+            };
+      return:
+        type: |-
+          {
+                  subscribe: (handler: (container: HTMLElement, stickyContainer: HTMLElement) =&gt; void) =&gt; void;
+                  unsubscribe: (handler: (container: HTMLElement, stickyContainer: HTMLElement) =&gt; void) =&gt; void;
+                  addSticky: (sticky: Sticky) =&gt; void;
+                  removeSticky: (sticky: Sticky) =&gt; void;
+                  updateStickyRefHeights: () =&gt; void;
+                  sortSticky: (sticky: Sticky, sortAgain?: boolean) =&gt; void;
+                  notifySubscribers: (sort?: boolean) =&gt; void;
+                  syncScrollSticky: (sticky: Sticky) =&gt; void;
+              }

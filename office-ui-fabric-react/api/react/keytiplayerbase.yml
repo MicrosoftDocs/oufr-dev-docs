@@ -1,0 +1,167 @@
+### YamlMime:TSType
+name: KeytipLayerBase
+uid: '@fluentui/react!KeytipLayerBase:class'
+package: '@fluentui/react!'
+fullName: KeytipLayerBase
+summary: A layer that holds all keytip items
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: '(constructor)(props, context)'
+    uid: '@fluentui/react!KeytipLayerBase:constructor(1)'
+    package: '@fluentui/react!'
+    fullName: '(constructor)(props, context)'
+    summary: Constructs a new instance of the `KeytipLayerBase` class
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'constructor(props: IKeytipLayerProps, context: any);'
+      parameters:
+        - id: props
+          description: ''
+          type: IKeytipLayerProps
+        - id: context
+          description: ''
+          type: any
+properties:
+  - name: defaultProps
+    uid: '@fluentui/react!KeytipLayerBase.defaultProps:member'
+    package: '@fluentui/react!'
+    fullName: defaultProps
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'static defaultProps: IKeytipLayerProps;'
+      return:
+        type: IKeytipLayerProps
+methods:
+  - name: componentDidMount()
+    uid: '@fluentui/react!KeytipLayerBase#componentDidMount:member(1)'
+    package: '@fluentui/react!'
+    fullName: componentDidMount()
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'componentDidMount(): void;'
+      return:
+        type: void
+        description: ''
+  - name: componentWillUnmount()
+    uid: '@fluentui/react!KeytipLayerBase#componentWillUnmount:member(1)'
+    package: '@fluentui/react!'
+    fullName: componentWillUnmount()
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'componentWillUnmount(): void;'
+      return:
+        type: void
+        description: ''
+  - name: getCurrentSequence()
+    uid: '@fluentui/react!KeytipLayerBase#getCurrentSequence:member(1)'
+    package: '@fluentui/react!'
+    fullName: getCurrentSequence()
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getCurrentSequence(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getKeytipTree()
+    uid: '@fluentui/react!KeytipLayerBase#getKeytipTree:member(1)'
+    package: '@fluentui/react!'
+    fullName: getKeytipTree()
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getKeytipTree(): KeytipTree;'
+      return:
+        type: KeytipTree
+        description: ''
+  - name: 'processInput(key, ev)'
+    uid: '@fluentui/react!KeytipLayerBase#processInput:member(1)'
+    package: '@fluentui/react!'
+    fullName: 'processInput(key, ev)'
+    summary: Processes inputs from the document listener and traverse the keytip tree
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'processInput(key: string, ev?: React.KeyboardEvent<HTMLElement>): void;'
+      parameters:
+        - id: key
+          description: Key pressed by the user
+          type: string
+        - id: ev
+          description: ''
+          type: React.KeyboardEvent&lt;HTMLElement&gt;
+      return:
+        type: void
+        description: ''
+  - name: 'processTransitionInput(transitionKey, ev)'
+    uid: '@fluentui/react!KeytipLayerBase#processTransitionInput:member(1)'
+    package: '@fluentui/react!'
+    fullName: 'processTransitionInput(transitionKey, ev)'
+    summary: Processes an IKeytipTransitionKey entered by the user
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        processTransitionInput(transitionKey: IKeytipTransitionKey, ev?:
+        React.KeyboardEvent<HTMLElement>): void;
+      parameters:
+        - id: transitionKey
+          description: IKeytipTransitionKey received by the layer to process
+          type: IKeytipTransitionKey
+        - id: ev
+          description: ''
+          type: React.KeyboardEvent&lt;HTMLElement&gt;
+      return:
+        type: void
+        description: ''
+  - name: render()
+    uid: '@fluentui/react!KeytipLayerBase#render:member(1)'
+    package: '@fluentui/react!'
+    fullName: render()
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'render(): JSX.Element;'
+      return:
+        type: JSX.Element
+        description: ''
+  - name: showKeytips(ids)
+    uid: '@fluentui/react!KeytipLayerBase#showKeytips:member(1)'
+    package: '@fluentui/react!'
+    fullName: showKeytips(ids)
+    summary: Show the given keytips and hide all others
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'showKeytips(ids: string[]): void;'
+      parameters:
+        - id: ids
+          description: Keytip IDs to show
+          type: 'string[]'
+      return:
+        type: void
+        description: ''
+extends: 'React.Component&lt;IKeytipLayerProps, IKeytipLayerState&gt; '

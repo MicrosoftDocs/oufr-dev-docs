@@ -1,0 +1,145 @@
+### YamlMime:TSType
+name: IColorRectangleProps
+uid: '@fluentui/react!IColorRectangleProps:interface'
+package: '@fluentui/react!'
+fullName: IColorRectangleProps
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: ariaDescription
+    uid: '@fluentui/react!IColorRectangleProps#ariaDescription:member'
+    package: '@fluentui/react!'
+    fullName: ariaDescription
+    summary: >-
+      Detailed description for how to use the color rectangle. Moving the thumb
+      horizontally adjusts saturation and moving it vertically adjusts value
+      (essentially, brightness).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ariaDescription?: string;'
+      return:
+        type: string
+  - name: ariaLabel
+    uid: '@fluentui/react!IColorRectangleProps#ariaLabel:member'
+    package: '@fluentui/react!'
+    fullName: ariaLabel
+    summary: Label of the ColorRectangle for the benefit of screen reader users.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ariaLabel?: string;'
+      return:
+        type: string
+  - name: ariaValueFormat
+    uid: '@fluentui/react!IColorRectangleProps#ariaValueFormat:member'
+    package: '@fluentui/react!'
+    fullName: ariaValueFormat
+    summary: >-
+      Format string for the color rectangle's current value as read by screen
+      readers. The string must include descriptions and two placeholders for the
+      current values: `{0}` for saturation and `{1}` for value/brightness.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ariaValueFormat?: string;'
+      return:
+        type: string
+  - name: className
+    uid: '@fluentui/react!IColorRectangleProps#className:member'
+    package: '@fluentui/react!'
+    fullName: className
+    summary: Additional CSS class(es) to apply to the ColorRectangle.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'className?: string;'
+      return:
+        type: string
+  - name: color
+    uid: '@fluentui/react!IColorRectangleProps#color:member'
+    package: '@fluentui/react!'
+    fullName: color
+    summary: Current color of the rectangle.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'color: IColor;'
+      return:
+        type: IColor
+  - name: componentRef
+    uid: '@fluentui/react!IColorRectangleProps#componentRef:member'
+    package: '@fluentui/react!'
+    fullName: componentRef
+    summary: Gets the component ref.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'componentRef?: IRefObject<IColorRectangle>;'
+      return:
+        type: IRefObject&lt;IColorRectangle&gt;
+  - name: minSize
+    uid: '@fluentui/react!IColorRectangleProps#minSize:member'
+    package: '@fluentui/react!'
+    fullName: minSize
+    summary: Minimum width and height.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'minSize?: number;'
+      return:
+        type: number
+  - name: onChange
+    uid: '@fluentui/react!IColorRectangleProps#onChange:member'
+    package: '@fluentui/react!'
+    fullName: onChange
+    summary: Callback for when the color changes.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        onChange?: (ev: React.MouseEvent | React.KeyboardEvent, color: IColor)
+        => void;
+      return:
+        type: '(ev: React.MouseEvent | React.KeyboardEvent, color: IColor) =&gt; void'
+  - name: styles
+    uid: '@fluentui/react!IColorRectangleProps#styles:member'
+    package: '@fluentui/react!'
+    fullName: styles
+    summary: >-
+      Call to provide customized styling that will layer on top of the variant
+      rules.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        styles?: IStyleFunctionOrObject<IColorRectangleStyleProps,
+        IColorRectangleStyles>;
+      return:
+        type: >-
+          IStyleFunctionOrObject&lt;IColorRectangleStyleProps,
+          IColorRectangleStyles&gt;
+  - name: theme
+    uid: '@fluentui/react!IColorRectangleProps#theme:member'
+    package: '@fluentui/react!'
+    fullName: theme
+    summary: Theme (provided through customization).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type: '<xref uid="@fluentui/theme!ITheme:interface" />'

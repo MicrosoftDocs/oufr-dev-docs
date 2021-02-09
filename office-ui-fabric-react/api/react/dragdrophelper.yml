@@ -1,0 +1,91 @@
+### YamlMime:TSType
+name: DragDropHelper
+uid: '@fluentui/react!DragDropHelper:class'
+package: '@fluentui/react!'
+fullName: DragDropHelper
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: (constructor)(params)
+    uid: '@fluentui/react!DragDropHelper:constructor(1)'
+    package: '@fluentui/react!'
+    fullName: (constructor)(params)
+    summary: Constructs a new instance of the `DragDropHelper` class
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'constructor(params: IDragDropHelperParams);'
+      parameters:
+        - id: params
+          description: ''
+          type: IDragDropHelperParams
+methods:
+  - name: dispose()
+    uid: '@fluentui/react!DragDropHelper#dispose:member(1)'
+    package: '@fluentui/react!'
+    fullName: dispose()
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'dispose(): void;'
+      return:
+        type: void
+        description: ''
+  - name: 'subscribe(root, events, dragDropOptions)'
+    uid: '@fluentui/react!DragDropHelper#subscribe:member(1)'
+    package: '@fluentui/react!'
+    fullName: 'subscribe(root, events, dragDropOptions)'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        subscribe(root: HTMLElement, events: EventGroup, dragDropOptions:
+        IDragDropOptions): {
+                key: string;
+                dispose(): void;
+            };
+      parameters:
+        - id: root
+          description: ''
+          type: HTMLElement
+        - id: events
+          description: ''
+          type: '<xref uid="@fluentui/utilities!EventGroup:class" />'
+        - id: dragDropOptions
+          description: ''
+          type: IDragDropOptions
+      return:
+        type: |-
+          {
+                  key: string;
+                  dispose(): void;
+              }
+        description: ''
+  - name: 'unsubscribe(root, key)'
+    uid: '@fluentui/react!DragDropHelper#unsubscribe:member(1)'
+    package: '@fluentui/react!'
+    fullName: 'unsubscribe(root, key)'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'unsubscribe(root: HTMLElement, key: string): void;'
+      parameters:
+        - id: root
+          description: ''
+          type: HTMLElement
+        - id: key
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''

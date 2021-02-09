@@ -1,0 +1,65 @@
+### YamlMime:TSType
+name: IListOnRenderRootProps
+uid: '@fluentui/react!IListOnRenderRootProps:interface'
+package: '@fluentui/react!'
+fullName: IListOnRenderRootProps
+summary: Props passed to the render override for the list root.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: divProps
+    uid: '@fluentui/react!IListOnRenderRootProps#divProps:member'
+    package: '@fluentui/react!'
+    fullName: divProps
+    summary: Props to apply to the list root element.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'divProps: React.HTMLAttributes<HTMLDivElement>;'
+      return:
+        type: React.HTMLAttributes&lt;HTMLDivElement&gt;
+  - name: pages
+    uid: '@fluentui/react!IListOnRenderRootProps#pages:member'
+    package: '@fluentui/react!'
+    fullName: pages
+    summary: >-
+      The active pages to be rendered into the list. These will have been
+      rendered using `onRenderPage`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'pages: IPage<T>[];'
+      return:
+        type: 'IPage&lt;T&gt;[]'
+  - name: rootRef
+    uid: '@fluentui/react!IListOnRenderRootProps#rootRef:member'
+    package: '@fluentui/react!'
+    fullName: rootRef
+    summary: >-
+      The ref to be applied to the list root. The `List` uses this element to
+      track scroll position and sizing.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'rootRef: React.Ref<HTMLDivElement>;'
+      return:
+        type: React.Ref&lt;HTMLDivElement&gt;
+  - name: surfaceElement
+    uid: '@fluentui/react!IListOnRenderRootProps#surfaceElement:member'
+    package: '@fluentui/react!'
+    fullName: surfaceElement
+    summary: >-
+      The content to be rendered as the list surface element. This will have
+      been rendered using `onRenderSurface`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'surfaceElement: JSX.Element | null;'
+      return:
+        type: JSX.Element | null

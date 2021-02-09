@@ -1,0 +1,677 @@
+### YamlMime:TSType
+name: IButtonProps
+uid: '@fluentui/react!IButtonProps:interface'
+package: '@fluentui/react!'
+fullName: IButtonProps
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: allowDisabledFocus
+    uid: '@fluentui/react!IButtonProps#allowDisabledFocus:member'
+    package: '@fluentui/react!'
+    fullName: allowDisabledFocus
+    summary: Whether the button can have focus in disabled mode
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'allowDisabledFocus?: boolean;'
+      return:
+        type: boolean
+  - name: ariaDescription
+    uid: '@fluentui/react!IButtonProps#ariaDescription:member'
+    package: '@fluentui/react!'
+    fullName: ariaDescription
+    summary: >-
+      Detailed description of the button for the benefit of screen readers.
+
+
+      Besides the compound button, other button types will need more information
+      provided to screen reader.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ariaDescription?: string;'
+      return:
+        type: string
+  - name: ariaHidden
+    uid: '@fluentui/react!IButtonProps#ariaHidden:member'
+    package: '@fluentui/react!'
+    fullName: ariaHidden
+    summary: >-
+      If true, add an `aria-hidden` attribute instructing screen readers to
+      ignore the element.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ariaHidden?: boolean;'
+      return:
+        type: boolean
+  - name: ariaLabel
+    uid: '@fluentui/react!IButtonProps#ariaLabel:member'
+    package: '@fluentui/react!'
+    fullName: ariaLabel
+    summary: The aria label of the button for the benefit of screen readers.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ariaLabel?: string;'
+      return:
+        type: string
+  - name: buttonType
+    uid: '@fluentui/react!IButtonProps#buttonType:member'
+    package: '@fluentui/react!'
+    fullName: buttonType
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      Deprecated at v1.2.3, to be removed at &gt;<!-- -->= v2.0.0. Use specific
+      button component instead.
+    syntax:
+      content: 'buttonType?: ButtonType;'
+      return:
+        type: ButtonType
+  - name: checked
+    uid: '@fluentui/react!IButtonProps#checked:member'
+    package: '@fluentui/react!'
+    fullName: checked
+    summary: Whether the button is checked
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'checked?: boolean;'
+      return:
+        type: boolean
+  - name: className
+    uid: '@fluentui/react!IButtonProps#className:member'
+    package: '@fluentui/react!'
+    fullName: className
+    summary: 'If provided, additional class name to provide on the root element.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'className?: string;'
+      return:
+        type: string
+  - name: componentRef
+    uid: '@fluentui/react!IButtonProps#componentRef:member'
+    package: '@fluentui/react!'
+    fullName: componentRef
+    summary: >-
+      Optional callback to access the `IButton` interface. Use this instead of
+      `ref` for accessing the public methods and properties of the component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'componentRef?: IRefObject<IButton>;'
+      return:
+        type: IRefObject&lt;IButton&gt;
+  - name: data
+    uid: '@fluentui/react!IButtonProps#data:member'
+    package: '@fluentui/react!'
+    fullName: data
+    summary: Any custom data the developer wishes to associate with the button.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'data?: any;'
+      return:
+        type: any
+  - name: defaultRender
+    uid: '@fluentui/react!IButtonProps#defaultRender:member'
+    package: '@fluentui/react!'
+    fullName: defaultRender
+    summary: yet unknown docs
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'defaultRender?: any;'
+      return:
+        type: any
+  - name: description
+    uid: '@fluentui/react!IButtonProps#description:member'
+    package: '@fluentui/react!'
+    fullName: description
+    summary: Style for the description text if applicable (for compound buttons).
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Use `secondaryText` instead.
+    syntax:
+      content: 'description?: IStyle;'
+      return:
+        type: IStyle
+  - name: disabled
+    uid: '@fluentui/react!IButtonProps#disabled:member'
+    package: '@fluentui/react!'
+    fullName: disabled
+    summary: Whether the button is disabled
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'disabled?: boolean;'
+      return:
+        type: boolean
+  - name: elementRef
+    uid: '@fluentui/react!IButtonProps#elementRef:member'
+    package: '@fluentui/react!'
+    fullName: elementRef
+    summary: Optional callback to access the root DOM element.
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Temporary solution which will be replaced with ref in the V8 release.
+    syntax:
+      content: 'elementRef?: React.Ref<HTMLElement>;'
+      return:
+        type: React.Ref&lt;HTMLElement&gt;
+  - name: getClassNames
+    uid: '@fluentui/react!IButtonProps#getClassNames:member'
+    package: '@fluentui/react!'
+    fullName: getClassNames
+    summary: >-
+      Method to provide the classnames to style a button. The default value for
+      this prop is the `getClassnames` func defined in
+      `BaseButton.classnames.ts`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        getClassNames?: (theme: ITheme, className: string, variantClassName:
+        string, iconClassName: string | undefined, menuIconClassName: string |
+        undefined, disabled: boolean, checked: boolean, expanded: boolean,
+        hasMenu: boolean, isSplit: boolean | undefined, allowDisabledFocus:
+        boolean) => IButtonClassNames;
+      return:
+        type: >-
+          (theme: ITheme, className: string, variantClassName: string,
+          iconClassName: string | undefined, menuIconClassName: string |
+          undefined, disabled: boolean, checked: boolean, expanded: boolean,
+          hasMenu: boolean, isSplit: boolean | undefined, allowDisabledFocus:
+          boolean) =&gt; IButtonClassNames
+  - name: getSplitButtonClassNames
+    uid: '@fluentui/react!IButtonProps#getSplitButtonClassNames:member'
+    package: '@fluentui/react!'
+    fullName: getSplitButtonClassNames
+    summary: >-
+      Method to provide the classnames to style a button. The default value for
+      this prop is the `getClassnames` func defined in
+      `BaseButton.classnames.ts`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        getSplitButtonClassNames?: (disabled: boolean, expanded: boolean,
+        checked: boolean, allowDisabledFocus: boolean) =>
+        ISplitButtonClassNames;
+      return:
+        type: >-
+          (disabled: boolean, expanded: boolean, checked: boolean,
+          allowDisabledFocus: boolean) =&gt; ISplitButtonClassNames
+  - name: href
+    uid: '@fluentui/react!IButtonProps#href:member'
+    package: '@fluentui/react!'
+    fullName: href
+    summary: 'If provided, this component will be rendered as an anchor.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'href?: string;'
+      return:
+        type: string
+  - name: iconProps
+    uid: '@fluentui/react!IButtonProps#iconProps:member'
+    package: '@fluentui/react!'
+    fullName: iconProps
+    summary: The props for the icon shown in the button.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'iconProps?: IIconProps;'
+      return:
+        type: IIconProps
+  - name: keytipProps
+    uid: '@fluentui/react!IButtonProps#keytipProps:member'
+    package: '@fluentui/react!'
+    fullName: keytipProps
+    summary: Optional keytip for this button
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'keytipProps?: IKeytipProps;'
+      return:
+        type: IKeytipProps
+  - name: menuAs
+    uid: '@fluentui/react!IButtonProps#menuAs:member'
+    package: '@fluentui/react!'
+    fullName: menuAs
+    summary: Render a custom menu in place of the normal one.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'menuAs?: IComponentAs<IContextualMenuProps>;'
+      return:
+        type: IComponentAs&lt;IContextualMenuProps&gt;
+  - name: menuIconProps
+    uid: '@fluentui/react!IButtonProps#menuIconProps:member'
+    package: '@fluentui/react!'
+    fullName: menuIconProps
+    summary: The props for the icon shown when providing a menu dropdown.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'menuIconProps?: IIconProps;'
+      return:
+        type: IIconProps
+  - name: menuProps
+    uid: '@fluentui/react!IButtonProps#menuProps:member'
+    package: '@fluentui/react!'
+    fullName: menuProps
+    summary: >-
+      Props for button menu. Providing this will default to showing the menu
+      icon. See `menuIconProps` for overriding how the default icon looks.
+      Providing this in addition to `onClick` and setting the `split` property
+      to `true` will render a SplitButton.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'menuProps?: IContextualMenuProps;'
+      return:
+        type: IContextualMenuProps
+  - name: menuTriggerKeyCode
+    uid: '@fluentui/react!IButtonProps#menuTriggerKeyCode:member'
+    package: '@fluentui/react!'
+    fullName: menuTriggerKeyCode
+    summary: >-
+      Provides a custom KeyCode that can be used to open the button menu. A
+      value of `null` can be provided to disable opening the button menu with a
+      key press.  KeyCodes.down
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'menuTriggerKeyCode?: KeyCodes | null;'
+      return:
+        type: KeyCodes | null
+  - name: onAfterMenuDismiss
+    uid: '@fluentui/react!IButtonProps#onAfterMenuDismiss:member'
+    package: '@fluentui/react!'
+    fullName: onAfterMenuDismiss
+    summary: >-
+      Callback that runs after Button's contextual menu was closed (removed from
+      the DOM)
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onAfterMenuDismiss?: () => void;'
+      return:
+        type: () =&gt; void
+  - name: onMenuClick
+    uid: '@fluentui/react!IButtonProps#onMenuClick:member'
+    package: '@fluentui/react!'
+    fullName: onMenuClick
+    summary: Optional callback when menu is clicked.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        onMenuClick?: (ev?: React.MouseEvent<HTMLElement> |
+        React.KeyboardEvent<HTMLElement>, button?: IButtonProps) => void;
+      return:
+        type: >-
+          (ev?: React.MouseEvent&lt;HTMLElement&gt; |
+          React.KeyboardEvent&lt;HTMLElement&gt;, button?: IButtonProps) =&gt;
+          void
+  - name: onRenderAriaDescription
+    uid: '@fluentui/react!IButtonProps#onRenderAriaDescription:member'
+    package: '@fluentui/react!'
+    fullName: onRenderAriaDescription
+    summary: Custom render function for the aria description element.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onRenderAriaDescription?: IRenderFunction<IButtonProps>;'
+      return:
+        type: IRenderFunction&lt;IButtonProps&gt;
+  - name: onRenderChildren
+    uid: '@fluentui/react!IButtonProps#onRenderChildren:member'
+    package: '@fluentui/react!'
+    fullName: onRenderChildren
+    summary: Custom render function for rendering the button children.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onRenderChildren?: IRenderFunction<IButtonProps>;'
+      return:
+        type: IRenderFunction&lt;IButtonProps&gt;
+  - name: onRenderDescription
+    uid: '@fluentui/react!IButtonProps#onRenderDescription:member'
+    package: '@fluentui/react!'
+    fullName: onRenderDescription
+    summary: Custom render function for the desciption text.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onRenderDescription?: IRenderFunction<IButtonProps>;'
+      return:
+        type: IRenderFunction&lt;IButtonProps&gt;
+  - name: onRenderIcon
+    uid: '@fluentui/react!IButtonProps#onRenderIcon:member'
+    package: '@fluentui/react!'
+    fullName: onRenderIcon
+    summary: Custom render function for the icon
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onRenderIcon?: IRenderFunction<IButtonProps>;'
+      return:
+        type: IRenderFunction&lt;IButtonProps&gt;
+  - name: onRenderMenu
+    uid: '@fluentui/react!IButtonProps#onRenderMenu:member'
+    package: '@fluentui/react!'
+    fullName: onRenderMenu
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      Deprecated at v6.3.2, to be removed at &gt;<!-- -->= v7.0.0. Use `menuAs`
+      instead.
+    syntax:
+      content: 'onRenderMenu?: IRenderFunction<IContextualMenuProps>;'
+      return:
+        type: IRenderFunction&lt;IContextualMenuProps&gt;
+  - name: onRenderMenuIcon
+    uid: '@fluentui/react!IButtonProps#onRenderMenuIcon:member'
+    package: '@fluentui/react!'
+    fullName: onRenderMenuIcon
+    summary: Custom render function for button menu icon
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onRenderMenuIcon?: IRenderFunction<IButtonProps>;'
+      return:
+        type: IRenderFunction&lt;IButtonProps&gt;
+  - name: onRenderText
+    uid: '@fluentui/react!IButtonProps#onRenderText:member'
+    package: '@fluentui/react!'
+    fullName: onRenderText
+    summary: Custom render function for the label text.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onRenderText?: IRenderFunction<IButtonProps>;'
+      return:
+        type: IRenderFunction&lt;IButtonProps&gt;
+  - name: persistMenu
+    uid: '@fluentui/react!IButtonProps#persistMenu:member'
+    package: '@fluentui/react!'
+    fullName: persistMenu
+    summary: >-
+      Menu will not be created or destroyed when opened or closed, instead it
+      will be hidden. This will improve perf of the menu opening but could
+      potentially impact overall perf by having more elements in the dom. Should
+      only be used when menu perf is important.
+
+
+      Note: This may increase the amount of time it takes for the button itself
+      to mount.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'persistMenu?: boolean;'
+      return:
+        type: boolean
+  - name: primary
+    uid: '@fluentui/react!IButtonProps#primary:member'
+    package: '@fluentui/react!'
+    fullName: primary
+    summary: Changes the visual presentation of the button to be emphasized.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'primary?: boolean;'
+      return:
+        type: boolean
+  - name: primaryActionButtonProps
+    uid: '@fluentui/react!IButtonProps#primaryActionButtonProps:member'
+    package: '@fluentui/react!'
+    fullName: primaryActionButtonProps
+    summary: >-
+      Optional props to be applied only to the primary action button of
+      SplitButton and not to the overall SplitButton container
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'primaryActionButtonProps?: IButtonProps;'
+      return:
+        type: IButtonProps
+  - name: primaryDisabled
+    uid: '@fluentui/react!IButtonProps#primaryDisabled:member'
+    package: '@fluentui/react!'
+    fullName: primaryDisabled
+    summary: >-
+      If set to true and this is a split button (`split` is true), the split
+      button's primary action is disabled.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'primaryDisabled?: boolean;'
+      return:
+        type: boolean
+  - name: renderPersistedMenuHiddenOnMount
+    uid: '@fluentui/react!IButtonProps#renderPersistedMenuHiddenOnMount:member'
+    package: '@fluentui/react!'
+    fullName: renderPersistedMenuHiddenOnMount
+    summary: >-
+      If true, the persisted menu is rendered hidden when the button initially
+      mounts. Non-persisted menus will not be in the component tree unless they
+      are being shown.
+
+
+      Note: This increases the time the button will take to mount, but can
+      improve perceived menu open perf. when the user opens the menu.
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      There is known bug in Edge when this prop is true where scrollbars overlap
+      with the content when a menu is first rendered hidden. Please do not start
+      using this. If you are already using this, please make sure that you are
+      doing so only in non-Edge browsers. See:
+      https://github.com/microsoft/fluentui/issues/9034
+    syntax:
+      content: 'renderPersistedMenuHiddenOnMount?: boolean;'
+      return:
+        type: boolean
+  - name: rootProps
+    uid: '@fluentui/react!IButtonProps#rootProps:member'
+    package: '@fluentui/react!'
+    fullName: rootProps
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      Deprecated at v0.56.2, to be removed at &gt;<!-- -->= v1.0.0. Use native
+      props on the Button itself instead. They will be mixed into the
+      button/anchor element rendered by the component.
+    syntax:
+      content: >-
+        rootProps?: React.ButtonHTMLAttributes<HTMLButtonElement> |
+        React.AnchorHTMLAttributes<HTMLAnchorElement>;
+      return:
+        type: >-
+          React.ButtonHTMLAttributes&lt;HTMLButtonElement&gt; |
+          React.AnchorHTMLAttributes&lt;HTMLAnchorElement&gt;
+  - name: secondaryText
+    uid: '@fluentui/react!IButtonProps#secondaryText:member'
+    package: '@fluentui/react!'
+    fullName: secondaryText
+    summary: >-
+      Description of the action this button takes. Only used for compound
+      buttons.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'secondaryText?: string;'
+      return:
+        type: string
+  - name: split
+    uid: '@fluentui/react!IButtonProps#split:member'
+    package: '@fluentui/react!'
+    fullName: split
+    summary: >-
+      If set to true, and if `menuProps` and `onClick` are provided, the button
+      will render as a SplitButton.  false
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'split?: boolean;'
+      return:
+        type: boolean
+  - name: splitButtonAriaLabel
+    uid: '@fluentui/react!IButtonProps#splitButtonAriaLabel:member'
+    package: '@fluentui/react!'
+    fullName: splitButtonAriaLabel
+    summary: Accessible label for the dropdown chevron button if this button is split.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'splitButtonAriaLabel?: string;'
+      return:
+        type: string
+  - name: splitButtonMenuProps
+    uid: '@fluentui/react!IButtonProps#splitButtonMenuProps:member'
+    package: '@fluentui/react!'
+    fullName: splitButtonMenuProps
+    summary: >-
+      Experimental prop that get passed into the menuButton that's rendered as
+      part of split button. Anything passed in will likely need to have
+      accompanying style changes.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'splitButtonMenuProps?: IButtonProps;'
+      return:
+        type: IButtonProps
+  - name: styles
+    uid: '@fluentui/react!IButtonProps#styles:member'
+    package: '@fluentui/react!'
+    fullName: styles
+    summary: Custom styling for individual elements within the button DOM.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'styles?: IButtonStyles;'
+      return:
+        type: IButtonStyles
+  - name: text
+    uid: '@fluentui/react!IButtonProps#text:member'
+    package: '@fluentui/react!'
+    fullName: text
+    summary: >-
+      Text to render button label. If text is supplied, it will override any
+      string in button children. Other children components will be passed
+      through after the text.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'text?: string;'
+      return:
+        type: string
+  - name: theme
+    uid: '@fluentui/react!IButtonProps#theme:member'
+    package: '@fluentui/react!'
+    fullName: theme
+    summary: Theme provided by HOC.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
+  - name: toggle
+    uid: '@fluentui/react!IButtonProps#toggle:member'
+    package: '@fluentui/react!'
+    fullName: toggle
+    summary: >-
+      Whether button is a toggle button with distinct on and off states. This
+      should be true for buttons that permanently change state when a press
+      event finishes, such as a volume mute button.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'toggle?: boolean;'
+      return:
+        type: boolean
+  - name: toggled
+    uid: '@fluentui/react!IButtonProps#toggled:member'
+    package: '@fluentui/react!'
+    fullName: toggled
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: No longer used. Use `checked` if setting state.
+    syntax:
+      content: 'toggled?: boolean;'
+      return:
+        type: boolean
+  - name: uniqueId
+    uid: '@fluentui/react!IButtonProps#uniqueId:member'
+    package: '@fluentui/react!'
+    fullName: uniqueId
+    summary: Unique ID to identify the item. Typically a duplicate of key value.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'uniqueId?: string | number;'
+      return:
+        type: string | number
+extends: >-
+  React.AllHTMLAttributes&lt;HTMLAnchorElement | HTMLButtonElement |
+  HTMLDivElement | BaseButton | Button | HTMLSpanElement&gt; 

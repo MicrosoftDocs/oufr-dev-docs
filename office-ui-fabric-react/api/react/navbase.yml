@@ -1,0 +1,86 @@
+### YamlMime:TSType
+name: NavBase
+uid: '@fluentui/react!NavBase:class'
+package: '@fluentui/react!'
+fullName: NavBase
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: (constructor)(props)
+    uid: '@fluentui/react!NavBase:constructor(1)'
+    package: '@fluentui/react!'
+    fullName: (constructor)(props)
+    summary: Constructs a new instance of the `NavBase` class
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'constructor(props: INavProps);'
+      parameters:
+        - id: props
+          description: ''
+          type: INavProps
+properties:
+  - name: defaultProps
+    uid: '@fluentui/react!NavBase.defaultProps:member'
+    package: '@fluentui/react!'
+    fullName: defaultProps
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'static defaultProps: INavProps;'
+      return:
+        type: INavProps
+  - name: selectedKey
+    uid: '@fluentui/react!NavBase#selectedKey:member'
+    package: '@fluentui/react!'
+    fullName: selectedKey
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'get selectedKey(): string | undefined;'
+      return:
+        type: string | undefined
+methods:
+  - name: focus(forceIntoFirstElement)
+    uid: '@fluentui/react!NavBase#focus:member(1)'
+    package: '@fluentui/react!'
+    fullName: focus(forceIntoFirstElement)
+    summary: Sets focus to the first tabbable item in the zone.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'focus(forceIntoFirstElement?: boolean): boolean;'
+      parameters:
+        - id: forceIntoFirstElement
+          description: >-
+            If true, focus will be forced into the first element, even if focus
+            is already in the focus zone.
+          type: boolean
+      return:
+        type: boolean
+        description: >-
+          True if focus could be set to an active element, false if no operation
+          was taken.
+  - name: render()
+    uid: '@fluentui/react!NavBase#render:member(1)'
+    package: '@fluentui/react!'
+    fullName: render()
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'render(): JSX.Element | null;'
+      return:
+        type: JSX.Element | null
+        description: ''
+extends: 'React.Component&lt;INavProps, INavState&gt; '

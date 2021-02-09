@@ -1,0 +1,171 @@
+### YamlMime:TSType
+name: ILinkProps
+uid: '@fluentui/react!ILinkProps:interface'
+package: '@fluentui/react!'
+fullName: ILinkProps
+summary: >-
+  Link component props. All built-in props for `<a>` and `<button>` are
+  supported (including various event handlers) even if not listed below.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: as
+    uid: '@fluentui/react!ILinkProps#as:member'
+    package: '@fluentui/react!'
+    fullName: as
+    summary: >-
+      A component type or primitive that is rendered as the type of the root
+      element.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'as?: React.ElementType;'
+      return:
+        type: React.ElementType
+  - name: componentRef
+    uid: '@fluentui/react!ILinkProps#componentRef:member'
+    package: '@fluentui/react!'
+    fullName: componentRef
+    summary: >-
+      Optional callback to access the ILink interface. Use this instead of ref
+      for accessing the public methods and properties of the component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'componentRef?: IRefObject<ILink>;'
+      return:
+        type: IRefObject&lt;ILink&gt;
+  - name: disabled
+    uid: '@fluentui/react!ILinkProps#disabled:member'
+    package: '@fluentui/react!'
+    fullName: disabled
+    summary: Whether the link is disabled
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'disabled?: boolean;'
+      return:
+        type: boolean
+  - name: href
+    uid: '@fluentui/react!ILinkProps#href:member'
+    package: '@fluentui/react!'
+    fullName: href
+    summary: >-
+      URL the link points to. If not provided, the link renders as a button
+      (unless that behavior is overridden using `as`<!-- -->).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'href?: string;'
+      return:
+        type: string
+  - name: onClick
+    uid: '@fluentui/react!ILinkProps#onClick:member'
+    package: '@fluentui/react!'
+    fullName: onClick
+    summary: Click handler for the link.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        onClick?: (event: React.MouseEvent<HTMLAnchorElement | HTMLButtonElement
+        | HTMLElement>) => void;
+      return:
+        type: >-
+          (event: React.MouseEvent&lt;HTMLAnchorElement | HTMLButtonElement |
+          HTMLElement&gt;) =&gt; void
+  - name: rel
+    uid: '@fluentui/react!ILinkProps#rel:member'
+    package: '@fluentui/react!'
+    fullName: rel
+    summary: >-
+      Relationship to the linked URL (can be a space-separated list). Most
+      common values are `noreferrer` and/or `noopener`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'rel?: string;'
+      return:
+        type: string
+  - name: styles
+    uid: '@fluentui/react!ILinkProps#styles:member'
+    package: '@fluentui/react!'
+    fullName: styles
+    summary: >-
+      Call to provide customized styling that will layer on top of the variant
+      rules.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'styles?: IStyleFunctionOrObject<ILinkStyleProps, ILinkStyles>;'
+      return:
+        type: 'IStyleFunctionOrObject&lt;ILinkStyleProps, ILinkStyles&gt;'
+  - name: target
+    uid: '@fluentui/react!ILinkProps#target:member'
+    package: '@fluentui/react!'
+    fullName: target
+    summary: >-
+      Where to open the linked URL. Common values are `_blank` (a new tab or
+      window), `_self` (the current window/context), `_parent`<!-- -->, and
+      `_top`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'target?: string;'
+      return:
+        type: string
+  - name: theme
+    uid: '@fluentui/react!ILinkProps#theme:member'
+    package: '@fluentui/react!'
+    fullName: theme
+    summary: Theme (provided through customization.)
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
+  - name: type
+    uid: '@fluentui/react!ILinkProps#type:member'
+    package: '@fluentui/react!'
+    fullName: type
+    summary: >-
+      Built-in HTML attribute with different behavior depending on how the link
+      is rendered. If rendered as `<a>`<!-- -->, hints at the MIME type. If
+      rendered as `<button>`<!-- -->, override the type of button (`button` is
+      the default).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type?: string;'
+      return:
+        type: string
+  - name: underline
+    uid: '@fluentui/react!ILinkProps#underline:member'
+    package: '@fluentui/react!'
+    fullName: underline
+    summary: >-
+      Whether the link is styled with an underline or not. Should be used when
+      the link is placed alongside other text content.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'underline?: boolean;'
+      return:
+        type: boolean
+extends: >-
+  React.AnchorHTMLAttributes&lt;HTMLAnchorElement | HTMLButtonElement |
+  HTMLElement&gt;

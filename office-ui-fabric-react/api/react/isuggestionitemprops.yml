@@ -1,0 +1,170 @@
+### YamlMime:TSType
+name: ISuggestionItemProps
+uid: '@fluentui/react!ISuggestionItemProps:interface'
+package: '@fluentui/react!'
+fullName: ISuggestionItemProps
+summary: >-
+  Suggestion item props. Refers to the each individual suggested items rendered
+  within Suggestions callout. Type T is the type of the item that is displayed.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: className
+    uid: '@fluentui/react!ISuggestionItemProps#className:member'
+    package: '@fluentui/react!'
+    fullName: className
+    summary: Optional className for the root element of the suggestion item.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'className?: string;'
+      return:
+        type: string
+  - name: componentRef
+    uid: '@fluentui/react!ISuggestionItemProps#componentRef:member'
+    package: '@fluentui/react!'
+    fullName: componentRef
+    summary: >-
+      Optional callback to access the ISuggestionItem interface. Use this
+      instead of ref for accessing the public methods and properties of the
+      component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'componentRef?: IRefObject<ISuggestionsItem>;'
+      return:
+        type: IRefObject&lt;ISuggestionsItem&gt;
+  - name: id
+    uid: '@fluentui/react!ISuggestionItemProps#id:member'
+    package: '@fluentui/react!'
+    fullName: id
+    summary: Unique id of the suggested item.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: string;'
+      return:
+        type: string
+  - name: isSelectedOverride
+    uid: '@fluentui/react!ISuggestionItemProps#isSelectedOverride:member'
+    package: '@fluentui/react!'
+    fullName: isSelectedOverride
+    summary: An override for the 'selected' property of the SuggestionModel.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isSelectedOverride?: boolean;'
+      return:
+        type: boolean
+  - name: onClick
+    uid: '@fluentui/react!ISuggestionItemProps#onClick:member'
+    package: '@fluentui/react!'
+    fullName: onClick
+    summary: Callback for when the user clicks on the suggestion.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onClick: (ev: React.MouseEvent<HTMLButtonElement>) => void;'
+      return:
+        type: '(ev: React.MouseEvent&lt;HTMLButtonElement&gt;) =&gt; void'
+  - name: onRemoveItem
+    uid: '@fluentui/react!ISuggestionItemProps#onRemoveItem:member'
+    package: '@fluentui/react!'
+    fullName: onRemoveItem
+    summary: Callback for when the item is removed from the array of suggested items.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onRemoveItem: (ev: React.MouseEvent<HTMLButtonElement>) => void;'
+      return:
+        type: '(ev: React.MouseEvent&lt;HTMLButtonElement&gt;) =&gt; void'
+  - name: removeButtonAriaLabel
+    uid: '@fluentui/react!ISuggestionItemProps#removeButtonAriaLabel:member'
+    package: '@fluentui/react!'
+    fullName: removeButtonAriaLabel
+    summary: The ARIA label for the button to remove the suggestion from the list.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'removeButtonAriaLabel?: string;'
+      return:
+        type: string
+  - name: RenderSuggestion
+    uid: '@fluentui/react!ISuggestionItemProps#RenderSuggestion:member'
+    package: '@fluentui/react!'
+    fullName: RenderSuggestion
+    summary: Optional renderer to override the default one for each type of picker.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        RenderSuggestion: (item: T, suggestionItemProps:
+        ISuggestionItemProps<T>) => JSX.Element;
+      return:
+        type: >-
+          (item: T, suggestionItemProps: ISuggestionItemProps&lt;T&gt;) =&gt;
+          JSX.Element
+  - name: showRemoveButton
+    uid: '@fluentui/react!ISuggestionItemProps#showRemoveButton:member'
+    package: '@fluentui/react!'
+    fullName: showRemoveButton
+    summary: Whether the remove button should be rendered or not.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'showRemoveButton?: boolean;'
+      return:
+        type: boolean
+  - name: styles
+    uid: '@fluentui/react!ISuggestionItemProps#styles:member'
+    package: '@fluentui/react!'
+    fullName: styles
+    summary: >-
+      Call to provide customized styling that will layer on top of the variant
+      rules.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        styles?: IStyleFunctionOrObject<ISuggestionsItemStyleProps,
+        ISuggestionsItemStyles>;
+      return:
+        type: >-
+          IStyleFunctionOrObject&lt;ISuggestionsItemStyleProps,
+          ISuggestionsItemStyles&gt;
+  - name: suggestionModel
+    uid: '@fluentui/react!ISuggestionItemProps#suggestionModel:member'
+    package: '@fluentui/react!'
+    fullName: suggestionModel
+    summary: Individual suggestion object containing its properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'suggestionModel: ISuggestionModel<T>;'
+      return:
+        type: ISuggestionModel&lt;T&gt;
+  - name: theme
+    uid: '@fluentui/react!ISuggestionItemProps#theme:member'
+    package: '@fluentui/react!'
+    fullName: theme
+    summary: Theme provided by High-Order Component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type: '<xref uid="@fluentui/theme!ITheme:interface" />'

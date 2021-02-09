@@ -1,0 +1,36 @@
+### YamlMime:TSType
+name: CompactPeoplePickerBase
+uid: '@fluentui/react!CompactPeoplePickerBase:class'
+package: '@fluentui/react!'
+fullName: CompactPeoplePickerBase
+summary: >-
+  Compact layout. It uses personas without secondary text when displaying search
+  results.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: defaultProps
+    uid: '@fluentui/react!CompactPeoplePickerBase.defaultProps:member'
+    package: '@fluentui/react!'
+    fullName: defaultProps
+    summary: Default props for CompactPeoplePicker.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        static defaultProps: {
+                onRenderItem: (props: IPeoplePickerItemSelectedProps) => JSX.Element;
+                onRenderSuggestionsItem: (personaProps: IPersonaProps, suggestionsProps?: IBasePickerSuggestionsProps<any> | undefined) => JSX.Element;
+                createGenericItem: typeof createGenericItem;
+            };
+      return:
+        type: |-
+          {
+                  onRenderItem: (props: IPeoplePickerItemSelectedProps) =&gt; JSX.Element;
+                  onRenderSuggestionsItem: (personaProps: IPersonaProps, suggestionsProps?: IBasePickerSuggestionsProps&lt;any&gt; | undefined) =&gt; JSX.Element;
+                  createGenericItem: typeof createGenericItem;
+              }
+extends: 'BasePeoplePicker '

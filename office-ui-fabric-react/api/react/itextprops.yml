@@ -1,0 +1,70 @@
+### YamlMime:TSType
+name: ITextProps
+uid: '@fluentui/react!ITextProps:interface'
+package: '@fluentui/react!'
+fullName: ITextProps
+summary: Inputs to the component
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: as
+    uid: '@fluentui/react!ITextProps#as:member'
+    package: '@fluentui/react!'
+    fullName: as
+    summary: Optionally render the component as another component type or primitive.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'as?: React.ElementType<React.HTMLAttributes<HTMLElement>>;'
+      return:
+        type: React.ElementType&lt;React.HTMLAttributes&lt;HTMLElement&gt;&gt;
+  - name: block
+    uid: '@fluentui/react!ITextProps#block:member'
+    package: '@fluentui/react!'
+    fullName: block
+    summary: >-
+      Whether the text is displayed as a block element.
+
+
+      Note that in order for ellipsis on overflow to work properly, `block` and
+      `nowrap` should be set to true.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'block?: boolean;'
+      return:
+        type: boolean
+  - name: nowrap
+    uid: '@fluentui/react!ITextProps#nowrap:member'
+    package: '@fluentui/react!'
+    fullName: nowrap
+    summary: >-
+      Whether the text is not wrapped.
+
+
+      Note that in order for ellipsis on overflow to work properly, `block` and
+      `nowrap` should be set to true.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'nowrap?: boolean;'
+      return:
+        type: boolean
+  - name: variant
+    uid: '@fluentui/react!ITextProps#variant:member'
+    package: '@fluentui/react!'
+    fullName: variant
+    summary: Optional font type for Text.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'variant?: keyof IFontStyles;'
+      return:
+        type: keyof IFontStyles
+extends: ISlottableProps&lt;ITextSlots&gt;

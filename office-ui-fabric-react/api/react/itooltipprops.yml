@@ -1,0 +1,150 @@
+### YamlMime:TSType
+name: ITooltipProps
+uid: '@fluentui/react!ITooltipProps:interface'
+package: '@fluentui/react!'
+fullName: ITooltipProps
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: calloutProps
+    uid: '@fluentui/react!ITooltipProps#calloutProps:member'
+    package: '@fluentui/react!'
+    fullName: calloutProps
+    summary: Properties to pass through for Callout.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'calloutProps?: ICalloutProps;'
+      return:
+        type: ICalloutProps
+  - name: componentRef
+    uid: '@fluentui/react!ITooltipProps#componentRef:member'
+    package: '@fluentui/react!'
+    fullName: componentRef
+    summary: >-
+      Optional callback to access the ITooltip interface. Use this instead of
+      ref for accessing the public methods and properties of the component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'componentRef?: IRefObject<ITooltip>;'
+      return:
+        type: IRefObject&lt;ITooltip&gt;
+  - name: content
+    uid: '@fluentui/react!ITooltipProps#content:member'
+    package: '@fluentui/react!'
+    fullName: content
+    summary: Content to be passed to the tooltip
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'content?: string | JSX.Element | JSX.Element[];'
+      return:
+        type: 'string | JSX.Element | JSX.Element[]'
+  - name: delay
+    uid: '@fluentui/react!ITooltipProps#delay:member'
+    package: '@fluentui/react!'
+    fullName: delay
+    summary: Length of delay. Set to `TooltipDelay.zero` if you do not want a delay.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'delay?: TooltipDelay;'
+      return:
+        type: TooltipDelay
+  - name: directionalHint
+    uid: '@fluentui/react!ITooltipProps#directionalHint:member'
+    package: '@fluentui/react!'
+    fullName: directionalHint
+    summary: How the tooltip should be anchored to its `targetElement`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'directionalHint?: DirectionalHint;'
+      return:
+        type: DirectionalHint
+  - name: directionalHintForRTL
+    uid: '@fluentui/react!ITooltipProps#directionalHintForRTL:member'
+    package: '@fluentui/react!'
+    fullName: directionalHintForRTL
+    summary: >-
+      How the element should be positioned in RTL layouts. If not specified, a
+      mirror of `directionalHint` will be used instead
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'directionalHintForRTL?: DirectionalHint;'
+      return:
+        type: DirectionalHint
+  - name: maxWidth
+    uid: '@fluentui/react!ITooltipProps#maxWidth:member'
+    package: '@fluentui/react!'
+    fullName: maxWidth
+    summary: Max width of tooltip
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'maxWidth?: string | null;'
+      return:
+        type: string | null
+  - name: onRenderContent
+    uid: '@fluentui/react!ITooltipProps#onRenderContent:member'
+    package: '@fluentui/react!'
+    fullName: onRenderContent
+    summary: Render function to populate tooltip content.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onRenderContent?: IRenderFunction<ITooltipProps>;'
+      return:
+        type: IRenderFunction&lt;ITooltipProps&gt;
+  - name: styles
+    uid: '@fluentui/react!ITooltipProps#styles:member'
+    package: '@fluentui/react!'
+    fullName: styles
+    summary: >-
+      Call to provide customized styling that will layer on top of the variant
+      rules.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'styles?: IStyleFunctionOrObject<ITooltipStyleProps, ITooltipStyles>;'
+      return:
+        type: 'IStyleFunctionOrObject&lt;ITooltipStyleProps, ITooltipStyles&gt;'
+  - name: targetElement
+    uid: '@fluentui/react!ITooltipProps#targetElement:member'
+    package: '@fluentui/react!'
+    fullName: targetElement
+    summary: Element to anchor the Tooltip to.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'targetElement?: HTMLElement;'
+      return:
+        type: HTMLElement
+  - name: theme
+    uid: '@fluentui/react!ITooltipProps#theme:member'
+    package: '@fluentui/react!'
+    fullName: theme
+    summary: Theme provided by higher-order component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
+extends: 'React.HTMLAttributes&lt;HTMLDivElement | TooltipBase&gt; '

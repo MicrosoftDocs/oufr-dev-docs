@@ -1,0 +1,510 @@
+### YamlMime:TSType
+name: ISpinButtonProps
+uid: '@fluentui/react!ISpinButtonProps:interface'
+package: '@fluentui/react!'
+fullName: ISpinButtonProps
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: ariaDescribedBy
+    uid: '@fluentui/react!ISpinButtonProps#ariaDescribedBy:member'
+    package: '@fluentui/react!'
+    fullName: ariaDescribedBy
+    summary: 'ID of a label which describes the control, if not using the default label.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ariaDescribedBy?: string;'
+      return:
+        type: string
+  - name: ariaLabel
+    uid: '@fluentui/react!ISpinButtonProps#ariaLabel:member'
+    package: '@fluentui/react!'
+    fullName: ariaLabel
+    summary: A description of the control for the benefit of screen reader users.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ariaLabel?: string;'
+      return:
+        type: string
+  - name: ariaPositionInSet
+    uid: '@fluentui/react!ISpinButtonProps#ariaPositionInSet:member'
+    package: '@fluentui/react!'
+    fullName: ariaPositionInSet
+    summary: The position in the parent set (if in a set).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ariaPositionInSet?: number;'
+      return:
+        type: number
+  - name: ariaSetSize
+    uid: '@fluentui/react!ISpinButtonProps#ariaSetSize:member'
+    package: '@fluentui/react!'
+    fullName: ariaSetSize
+    summary: The total size of the parent set (if in a set).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ariaSetSize?: number;'
+      return:
+        type: number
+  - name: ariaValueNow
+    uid: '@fluentui/react!ISpinButtonProps#ariaValueNow:member'
+    package: '@fluentui/react!'
+    fullName: ariaValueNow
+    summary: >-
+      Sets the control's aria-valuenow. This is the numeric form of `value`<!--
+      -->. Providing this only makes sense when using as a controlled component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ariaValueNow?: number;'
+      return:
+        type: number
+  - name: ariaValueText
+    uid: '@fluentui/react!ISpinButtonProps#ariaValueText:member'
+    package: '@fluentui/react!'
+    fullName: ariaValueText
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ariaValueText?: string;'
+      return:
+        type: string
+  - name: className
+    uid: '@fluentui/react!ISpinButtonProps#className:member'
+    package: '@fluentui/react!'
+    fullName: className
+    summary: Custom className for the control.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'className?: string;'
+      return:
+        type: string
+  - name: componentRef
+    uid: '@fluentui/react!ISpinButtonProps#componentRef:member'
+    package: '@fluentui/react!'
+    fullName: componentRef
+    summary: Gets the component ref.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'componentRef?: IRefObject<ISpinButton>;'
+      return:
+        type: IRefObject&lt;ISpinButton&gt;
+  - name: decrementButtonAriaLabel
+    uid: '@fluentui/react!ISpinButtonProps#decrementButtonAriaLabel:member'
+    package: '@fluentui/react!'
+    fullName: decrementButtonAriaLabel
+    summary: Accessible label text for the decrement button (for screen reader users).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'decrementButtonAriaLabel?: string;'
+      return:
+        type: string
+  - name: decrementButtonIcon
+    uid: '@fluentui/react!ISpinButtonProps#decrementButtonIcon:member'
+    package: '@fluentui/react!'
+    fullName: decrementButtonIcon
+    summary: Custom props for the decrement button.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'decrementButtonIcon?: IIconProps;'
+      return:
+        type: IIconProps
+  - name: defaultValue
+    uid: '@fluentui/react!ISpinButtonProps#defaultValue:member'
+    package: '@fluentui/react!'
+    fullName: defaultValue
+    summary: >-
+      Initial value of the control (assumed to be valid). Updates to this prop
+      will not be respected.
+
+
+      Use this if you intend for the SpinButton to be an uncontrolled component
+      which maintains its own value. For a controlled component, use `value`
+      instead. (Mutually exclusive with `value`<!-- -->.)
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'defaultValue?: string;'
+      return:
+        type: string
+  - name: disabled
+    uid: '@fluentui/react!ISpinButtonProps#disabled:member'
+    package: '@fluentui/react!'
+    fullName: disabled
+    summary: Whether or not the control is disabled.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'disabled?: boolean;'
+      return:
+        type: boolean
+  - name: downArrowButtonStyles
+    uid: '@fluentui/react!ISpinButtonProps#downArrowButtonStyles:member'
+    package: '@fluentui/react!'
+    fullName: downArrowButtonStyles
+    summary: >-
+      Custom styles for the down arrow button.
+
+
+      Note: The buttons are in a checked state when arrow keys are used to
+      increment/decrement the SpinButton. Use `rootChecked` instead of
+      `rootPressed` for styling when that is the case.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'downArrowButtonStyles?: Partial<IButtonStyles>;'
+      return:
+        type: Partial&lt;IButtonStyles&gt;
+  - name: iconButtonProps
+    uid: '@fluentui/react!ISpinButtonProps#iconButtonProps:member'
+    package: '@fluentui/react!'
+    fullName: iconButtonProps
+    summary: Additional props for the up and down arrow buttons.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'iconButtonProps?: IButtonProps;'
+      return:
+        type: IButtonProps
+  - name: iconProps
+    uid: '@fluentui/react!ISpinButtonProps#iconProps:member'
+    package: '@fluentui/react!'
+    fullName: iconProps
+    summary: Props for an icon to display alongside the control's label.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'iconProps?: IIconProps;'
+      return:
+        type: IIconProps
+  - name: incrementButtonAriaLabel
+    uid: '@fluentui/react!ISpinButtonProps#incrementButtonAriaLabel:member'
+    package: '@fluentui/react!'
+    fullName: incrementButtonAriaLabel
+    summary: Accessible label text for the increment button (for screen reader users).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'incrementButtonAriaLabel?: string;'
+      return:
+        type: string
+  - name: incrementButtonIcon
+    uid: '@fluentui/react!ISpinButtonProps#incrementButtonIcon:member'
+    package: '@fluentui/react!'
+    fullName: incrementButtonIcon
+    summary: Custom props for the increment button.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'incrementButtonIcon?: IIconProps;'
+      return:
+        type: IIconProps
+  - name: inputProps
+    uid: '@fluentui/react!ISpinButtonProps#inputProps:member'
+    package: '@fluentui/react!'
+    fullName: inputProps
+    summary: Additional props for the input field.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'inputProps?: React.InputHTMLAttributes<HTMLElement | HTMLInputElement>;'
+      return:
+        type: React.InputHTMLAttributes&lt;HTMLElement | HTMLInputElement&gt;
+  - name: keytipProps
+    uid: '@fluentui/react!ISpinButtonProps#keytipProps:member'
+    package: '@fluentui/react!'
+    fullName: keytipProps
+    summary: Keytip for the control.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'keytipProps?: IKeytipProps;'
+      return:
+        type: IKeytipProps
+  - name: label
+    uid: '@fluentui/react!ISpinButtonProps#label:member'
+    package: '@fluentui/react!'
+    fullName: label
+    summary: Descriptive label for the control.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'label?: string;'
+      return:
+        type: string
+  - name: labelPosition
+    uid: '@fluentui/react!ISpinButtonProps#labelPosition:member'
+    package: '@fluentui/react!'
+    fullName: labelPosition
+    summary: Where to position the control's label.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'labelPosition?: Position;'
+      return:
+        type: Position
+  - name: max
+    uid: '@fluentui/react!ISpinButtonProps#max:member'
+    package: '@fluentui/react!'
+    fullName: max
+    summary: >-
+      Max value of the control. If not provided, the control has no maximum
+      value.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'max?: number;'
+      return:
+        type: number
+  - name: min
+    uid: '@fluentui/react!ISpinButtonProps#min:member'
+    package: '@fluentui/react!'
+    fullName: min
+    summary: >-
+      Min value of the control. If not provided, the control has no minimum
+      value.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'min?: number;'
+      return:
+        type: number
+  - name: onBlur
+    uid: '@fluentui/react!ISpinButtonProps#onBlur:member'
+    package: '@fluentui/react!'
+    fullName: onBlur
+    summary: Callback for when the control loses focus.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onBlur?: React.FocusEventHandler<HTMLInputElement>;'
+      return:
+        type: React.FocusEventHandler&lt;HTMLInputElement&gt;
+  - name: onChange
+    uid: '@fluentui/react!ISpinButtonProps#onChange:member'
+    package: '@fluentui/react!'
+    fullName: onChange
+    summary: >-
+      Callback for when the committed/validated value changes. This is called
+      \*after\* `onIncrement`<!-- -->, `onDecrement`<!-- -->, or
+      `onValidate`<!-- -->, on the following events: - User presses the up/down
+      buttons (on single press or every spin) - User presses the up/down arrow
+      keys (on single press or every spin) - User \*commits\* edits to the input
+      text by focusing away (blurring) or pressing enter. Note that this is NOT
+      called for every key press while the user is editing.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        onChange?: (event: React.SyntheticEvent<HTMLElement>, newValue?: string)
+        => void;
+      return:
+        type: >-
+          (event: React.SyntheticEvent&lt;HTMLElement&gt;, newValue?: string)
+          =&gt; void
+  - name: onDecrement
+    uid: '@fluentui/react!ISpinButtonProps#onDecrement:member'
+    package: '@fluentui/react!'
+    fullName: onDecrement
+    summary: Callback for when the decrement button or down arrow key is pressed.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        onDecrement?: (value: string, event?: React.MouseEvent<HTMLElement> |
+        React.KeyboardEvent<HTMLElement>) => string | void;
+      return:
+        type: >-
+          (value: string, event?: React.MouseEvent&lt;HTMLElement&gt; |
+          React.KeyboardEvent&lt;HTMLElement&gt;) =&gt; string | void
+  - name: onFocus
+    uid: '@fluentui/react!ISpinButtonProps#onFocus:member'
+    package: '@fluentui/react!'
+    fullName: onFocus
+    summary: Callback for when the user focuses the control.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onFocus?: React.FocusEventHandler<HTMLInputElement>;'
+      return:
+        type: React.FocusEventHandler&lt;HTMLInputElement&gt;
+  - name: onIncrement
+    uid: '@fluentui/react!ISpinButtonProps#onIncrement:member'
+    package: '@fluentui/react!'
+    fullName: onIncrement
+    summary: Callback for when the increment button or up arrow key is pressed.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        onIncrement?: (value: string, event?: React.MouseEvent<HTMLElement> |
+        React.KeyboardEvent<HTMLElement>) => string | void;
+      return:
+        type: >-
+          (value: string, event?: React.MouseEvent&lt;HTMLElement&gt; |
+          React.KeyboardEvent&lt;HTMLElement&gt;) =&gt; string | void
+  - name: onValidate
+    uid: '@fluentui/react!ISpinButtonProps#onValidate:member'
+    package: '@fluentui/react!'
+    fullName: onValidate
+    summary: Callback for when the entered value should be validated.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        onValidate?: (value: string, event?: React.SyntheticEvent<HTMLElement>)
+        => string | void;
+      return:
+        type: >-
+          (value: string, event?: React.SyntheticEvent&lt;HTMLElement&gt;) =&gt;
+          string | void
+  - name: precision
+    uid: '@fluentui/react!ISpinButtonProps#precision:member'
+    package: '@fluentui/react!'
+    fullName: precision
+    summary: >-
+      How many decimal places the value should be rounded to.
+
+
+      The default is calculated based on the precision of `step`<!-- -->: i.e.
+      if step = 1, precision = 0. step = 0.0089, precision = 4. step = 300,
+      precision = 2. step = 23.00, precision = 2.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'precision?: number;'
+      return:
+        type: number
+  - name: step
+    uid: '@fluentui/react!ISpinButtonProps#step:member'
+    package: '@fluentui/react!'
+    fullName: step
+    summary: >-
+      Difference between two adjacent values of the control. This value is used
+      to calculate the precision of the input if no `precision` is given. The
+      precision calculated this way will always be &gt;<!-- -->= 0.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'step?: number;'
+      return:
+        type: number
+  - name: styles
+    uid: '@fluentui/react!ISpinButtonProps#styles:member'
+    package: '@fluentui/react!'
+    fullName: styles
+    summary: Custom styling for individual elements within the control.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        styles?: IStyleFunctionOrObject<ISpinButtonStyleProps,
+        ISpinButtonStyles>;
+      return:
+        type: 'IStyleFunctionOrObject&lt;ISpinButtonStyleProps, ISpinButtonStyles&gt;'
+  - name: theme
+    uid: '@fluentui/react!ISpinButtonProps#theme:member'
+    package: '@fluentui/react!'
+    fullName: theme
+    summary: Theme provided by HOC.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
+  - name: title
+    uid: '@fluentui/react!ISpinButtonProps#title:member'
+    package: '@fluentui/react!'
+    fullName: title
+    summary: 'A more descriptive title for the control, visible on its tooltip.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'title?: string;'
+      return:
+        type: string
+  - name: upArrowButtonStyles
+    uid: '@fluentui/react!ISpinButtonProps#upArrowButtonStyles:member'
+    package: '@fluentui/react!'
+    fullName: upArrowButtonStyles
+    summary: >-
+      Custom styles for the up arrow button.
+
+
+      Note: The buttons are in a checked state when arrow keys are used to
+      increment/decrement the SpinButton. Use `rootChecked` instead of
+      `rootPressed` for styling when that is the case.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'upArrowButtonStyles?: Partial<IButtonStyles>;'
+      return:
+        type: Partial&lt;IButtonStyles&gt;
+  - name: value
+    uid: '@fluentui/react!ISpinButtonProps#value:member'
+    package: '@fluentui/react!'
+    fullName: value
+    summary: >-
+      Current value of the control (assumed to be valid).
+
+
+      Only provide this if the SpinButton is a controlled component where you
+      are maintaining its current state and passing updates based on change
+      events; otherwise, use the `defaultValue` property. (Mutually exclusive
+      with `defaultValue`<!-- -->.)
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'value?: string;'
+      return:
+        type: string
+extends: React.HTMLAttributes&lt;HTMLDivElement&gt;

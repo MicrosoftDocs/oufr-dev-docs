@@ -1,0 +1,308 @@
+### YamlMime:TSType
+name: IHoverCardProps
+uid: '@fluentui/react!IHoverCardProps:interface'
+package: '@fluentui/react!'
+fullName: IHoverCardProps
+summary: HoverCard component props.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: cardDismissDelay
+    uid: '@fluentui/react!IHoverCardProps#cardDismissDelay:member'
+    package: '@fluentui/react!'
+    fullName: cardDismissDelay
+    summary: >-
+      Length of card dismiss delay. A min number is necessary for pointer to hop
+      between target and card
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'cardDismissDelay?: number;'
+      return:
+        type: number
+  - name: cardOpenDelay
+    uid: '@fluentui/react!IHoverCardProps#cardOpenDelay:member'
+    package: '@fluentui/react!'
+    fullName: cardOpenDelay
+    summary: Length of compact card delay
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'cardOpenDelay?: number;'
+      return:
+        type: number
+  - name: className
+    uid: '@fluentui/react!IHoverCardProps#className:member'
+    package: '@fluentui/react!'
+    fullName: className
+    summary: Additional CSS class(es) to apply to the HoverCard root element.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'className?: string;'
+      return:
+        type: string
+  - name: componentRef
+    uid: '@fluentui/react!IHoverCardProps#componentRef:member'
+    package: '@fluentui/react!'
+    fullName: componentRef
+    summary: >-
+      Optional callback to access the IHoverCardHost interface. Use this instead
+      of ref for accessing the public methods and properties of the component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'componentRef?: IRefObject<IHoverCard>;'
+      return:
+        type: IRefObject&lt;IHoverCard&gt;
+  - name: eventListenerTarget
+    uid: '@fluentui/react!IHoverCardProps#eventListenerTarget:member'
+    package: '@fluentui/react!'
+    fullName: eventListenerTarget
+    summary: >-
+      This prop is to separate the target to anchor hover card from the target
+      to attach event listener. If set, this prop separates the target to anchor
+      the hover card from the target to attach the event listener. When no
+      `eventListenerTarget` given, HoverCard will use `target` prop or its root
+      to set event listener.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'eventListenerTarget?: HTMLElement | string | null;'
+      return:
+        type: HTMLElement | string | null
+  - name: expandedCardOpenDelay
+    uid: '@fluentui/react!IHoverCardProps#expandedCardOpenDelay:member'
+    package: '@fluentui/react!'
+    fullName: expandedCardOpenDelay
+    summary: Time in ms when expanded card should open after compact card
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'expandedCardOpenDelay?: number;'
+      return:
+        type: number
+  - name: expandingCardProps
+    uid: '@fluentui/react!IHoverCardProps#expandingCardProps:member'
+    package: '@fluentui/react!'
+    fullName: expandingCardProps
+    summary: >-
+      Additional ExpandingCard props to pass through HoverCard like renderers,
+      target. gapSpace etc. Used along with 'type' prop set to
+      HoverCardType.expanding. Reference detail properties in ICardProps and
+      IExpandingCardProps.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'expandingCardProps?: IExpandingCardProps;'
+      return:
+        type: IExpandingCardProps
+  - name: instantOpenOnClick
+    uid: '@fluentui/react!IHoverCardProps#instantOpenOnClick:member'
+    package: '@fluentui/react!'
+    fullName: instantOpenOnClick
+    summary: Enables instant open of the full card upon click
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'instantOpenOnClick?: boolean;'
+      return:
+        type: boolean
+  - name: onCardExpand
+    uid: '@fluentui/react!IHoverCardProps#onCardExpand:member'
+    package: '@fluentui/react!'
+    fullName: onCardExpand
+    summary: Callback when visible card is expanded.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onCardExpand?: () => void;'
+      return:
+        type: () =&gt; void
+  - name: onCardHide
+    uid: '@fluentui/react!IHoverCardProps#onCardHide:member'
+    package: '@fluentui/react!'
+    fullName: onCardHide
+    summary: Callback when card hides
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onCardHide?: () => void;'
+      return:
+        type: () =&gt; void
+  - name: onCardVisible
+    uid: '@fluentui/react!IHoverCardProps#onCardVisible:member'
+    package: '@fluentui/react!'
+    fullName: onCardVisible
+    summary: Callback when card becomes visible
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onCardVisible?: () => void;'
+      return:
+        type: () =&gt; void
+  - name: openHotKey
+    uid: '@fluentui/react!IHoverCardProps#openHotKey:member'
+    package: '@fluentui/react!'
+    fullName: openHotKey
+    summary: HotKey used for opening the HoverCard when tabbed to target.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'openHotKey?: KeyCodes;'
+      return:
+        type: KeyCodes
+  - name: plainCardProps
+    uid: '@fluentui/react!IHoverCardProps#plainCardProps:member'
+    package: '@fluentui/react!'
+    fullName: plainCardProps
+    summary: >-
+      Additional PlainCard props to pass through HoverCard like renderers,
+      target, gapSpace etc. Used along with 'type' prop set to
+      HoverCardType.plain. See for more details ICardProps and IPlainCardProps
+      interfaces.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'plainCardProps?: IPlainCardProps;'
+      return:
+        type: IPlainCardProps
+  - name: setAriaDescribedBy
+    uid: '@fluentui/react!IHoverCardProps#setAriaDescribedBy:member'
+    package: '@fluentui/react!'
+    fullName: setAriaDescribedBy
+    summary: >-
+      Whether or not to mark the container as described by the hover card. If
+      not specified, the caller should mark as element as described by the hover
+      card id.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setAriaDescribedBy?: boolean;'
+      return:
+        type: boolean
+  - name: setInitialFocus
+    uid: '@fluentui/react!IHoverCardProps#setInitialFocus:member'
+    package: '@fluentui/react!'
+    fullName: setInitialFocus
+    summary: >-
+      Set to true to set focus on the first focusable element in the card. Works
+      in pair with the 'trapFocus' prop.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setInitialFocus?: boolean;'
+      return:
+        type: boolean
+  - name: shouldBlockHoverCard
+    uid: '@fluentui/react!IHoverCardProps#shouldBlockHoverCard:member'
+    package: '@fluentui/react!'
+    fullName: shouldBlockHoverCard
+    summary: Should block hover card or not
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'shouldBlockHoverCard?: () => void;'
+      return:
+        type: () =&gt; void
+  - name: sticky
+    uid: '@fluentui/react!IHoverCardProps#sticky:member'
+    package: '@fluentui/react!'
+    fullName: sticky
+    summary: >-
+      If true disables Card dismiss upon mouse leave, so that card sticks
+      around.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'sticky?: boolean;'
+      return:
+        type: boolean
+  - name: styles
+    uid: '@fluentui/react!IHoverCardProps#styles:member'
+    package: '@fluentui/react!'
+    fullName: styles
+    summary: Custom styles for this component
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'styles?: IStyleFunctionOrObject<IHoverCardStyleProps, IHoverCardStyles>;'
+      return:
+        type: 'IStyleFunctionOrObject&lt;IHoverCardStyleProps, IHoverCardStyles&gt;'
+  - name: target
+    uid: '@fluentui/react!IHoverCardProps#target:member'
+    package: '@fluentui/react!'
+    fullName: target
+    summary: >-
+      Optional target element to tag hover card on. If not provided and using
+      HoverCard as a wrapper, don't set the 'data-is-focusable=true' attribute
+      to the root of the wrapped child. If no target is given, HoverCard will
+      use its root as a target and become the focusable element with a focus
+      listener attached to it.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'target?: HTMLElement | string | null;'
+      return:
+        type: HTMLElement | string | null
+  - name: theme
+    uid: '@fluentui/react!IHoverCardProps#theme:member'
+    package: '@fluentui/react!'
+    fullName: theme
+    summary: Theme provided by higher order component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
+  - name: trapFocus
+    uid: '@fluentui/react!IHoverCardProps#trapFocus:member'
+    package: '@fluentui/react!'
+    fullName: trapFocus
+    summary: >-
+      Set to true if you want to render the content of the HoverCard in a
+      FocusTrapZone for accessibility reasons. Optionally 'setInitialFocus' prop
+      can be set to true to move focus inside the FocusTrapZone.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'trapFocus?: boolean;'
+      return:
+        type: boolean
+  - name: type
+    uid: '@fluentui/react!IHoverCardProps#type:member'
+    package: '@fluentui/react!'
+    fullName: type
+    summary: Type of the hover card to render.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type?: HoverCardType;'
+      return:
+        type: HoverCardType
+extends: 'React.HTMLAttributes&lt;HTMLDivElement&gt; '

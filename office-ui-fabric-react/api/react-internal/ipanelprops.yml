@@ -371,9 +371,9 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'onOuterClick?: () => void;'
+      content: 'onOuterClick?: (ev?: React.MouseEvent<HTMLDivElement>) => void;'
       return:
-        type: () =&gt; void
+        type: '(ev?: React.MouseEvent&lt;HTMLDivElement&gt;) =&gt; void'
   - name: onRenderBody
     uid: '@fluentui/react-internal!IPanelProps#onRenderBody:member'
     package: '@fluentui/react-internal!'

@@ -1,0 +1,290 @@
+### YamlMime:TSType
+name: IColorPickerGridCellProps
+uid: '@fluentui/react!IColorPickerGridCellProps:interface'
+package: '@fluentui/react!'
+fullName: IColorPickerGridCellProps
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: borderWidth
+    uid: '@fluentui/react!IColorPickerGridCellProps#borderWidth:member'
+    package: '@fluentui/react!'
+    fullName: borderWidth
+    summary: 'Width of the border that indicates a selected/hovered cell, in pixels.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'borderWidth?: number;'
+      return:
+        type: number
+  - name: circle
+    uid: '@fluentui/react!IColorPickerGridCellProps#circle:member'
+    package: '@fluentui/react!'
+    fullName: circle
+    summary: >-
+      True if this cell should be rendered as a circle, false if it should be a
+      square.  `true` (render as circle)
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'circle?: boolean;'
+      return:
+        type: boolean
+  - name: color
+    uid: '@fluentui/react!IColorPickerGridCellProps#color:member'
+    package: '@fluentui/react!'
+    fullName: color
+    summary: The CSS-compatible string to describe the color
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'color: string;'
+      return:
+        type: string
+  - name: disabled
+    uid: '@fluentui/react!IColorPickerGridCellProps#disabled:member'
+    package: '@fluentui/react!'
+    fullName: disabled
+    summary: Whether this cell should be disabled  false
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'disabled?: boolean;'
+      return:
+        type: boolean
+  - name: height
+    uid: '@fluentui/react!IColorPickerGridCellProps#height:member'
+    package: '@fluentui/react!'
+    fullName: height
+    summary: 'Height of the cell, in pixels'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'height?: number;'
+      return:
+        type: number
+  - name: id
+    uid: '@fluentui/react!IColorPickerGridCellProps#id:member'
+    package: '@fluentui/react!'
+    fullName: id
+    summary: >-
+      Used as a PREFIX for the cell's ID (the cell will not have this literal
+      string as its ID).
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Deprecated due to misleading name. Use `idPrefix` instead.
+    syntax:
+      content: 'id?: string;'
+      return:
+        type: string
+  - name: idPrefix
+    uid: '@fluentui/react!IColorPickerGridCellProps#idPrefix:member'
+    package: '@fluentui/react!'
+    fullName: idPrefix
+    summary: >-
+      Prefix for this cell's ID. Will be required in a future version once `id`
+      is removed.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'idPrefix?: string;'
+      return:
+        type: string
+  - name: index
+    uid: '@fluentui/react!IColorPickerGridCellProps#index:member'
+    package: '@fluentui/react!'
+    fullName: index
+    summary: Index for this option
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'index?: number;'
+      return:
+        type: number
+  - name: item
+    uid: '@fluentui/react!IColorPickerGridCellProps#item:member'
+    package: '@fluentui/react!'
+    fullName: item
+    summary: Item to render
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'item: IColorCellProps;'
+      return:
+        type: IColorCellProps
+  - name: label
+    uid: '@fluentui/react!IColorPickerGridCellProps#label:member'
+    package: '@fluentui/react!'
+    fullName: label
+    summary: Tooltip and aria label for this item
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'label?: string;'
+      return:
+        type: string
+  - name: onClick
+    uid: '@fluentui/react!IColorPickerGridCellProps#onClick:member'
+    package: '@fluentui/react!'
+    fullName: onClick
+    summary: Handler for when a color cell is clicked.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onClick?: (item: IColorCellProps) => void;'
+      return:
+        type: '(item: IColorCellProps) =&gt; void'
+  - name: onFocus
+    uid: '@fluentui/react!IColorPickerGridCellProps#onFocus:member'
+    package: '@fluentui/react!'
+    fullName: onFocus
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onFocus?: (item: IColorCellProps) => void;'
+      return:
+        type: '(item: IColorCellProps) =&gt; void'
+  - name: onHover
+    uid: '@fluentui/react!IColorPickerGridCellProps#onHover:member'
+    package: '@fluentui/react!'
+    fullName: onHover
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onHover?: (item?: IColorCellProps) => void;'
+      return:
+        type: '(item?: IColorCellProps) =&gt; void'
+  - name: onKeyDown
+    uid: '@fluentui/react!IColorPickerGridCellProps#onKeyDown:member'
+    package: '@fluentui/react!'
+    fullName: onKeyDown
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onKeyDown?: (ev: React.KeyboardEvent<HTMLButtonElement>) => void;'
+      return:
+        type: '(ev: React.KeyboardEvent&lt;HTMLButtonElement&gt;) =&gt; void'
+  - name: onMouseEnter
+    uid: '@fluentui/react!IColorPickerGridCellProps#onMouseEnter:member'
+    package: '@fluentui/react!'
+    fullName: onMouseEnter
+    summary: >-
+      Mouse enter handler. Returns true if the event should be processed, false
+      otherwise.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onMouseEnter?: (ev: React.MouseEvent<HTMLButtonElement>) => boolean;'
+      return:
+        type: '(ev: React.MouseEvent&lt;HTMLButtonElement&gt;) =&gt; boolean'
+  - name: onMouseLeave
+    uid: '@fluentui/react!IColorPickerGridCellProps#onMouseLeave:member'
+    package: '@fluentui/react!'
+    fullName: onMouseLeave
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onMouseLeave?: (ev: React.MouseEvent<HTMLButtonElement>) => void;'
+      return:
+        type: '(ev: React.MouseEvent&lt;HTMLButtonElement&gt;) =&gt; void'
+  - name: onMouseMove
+    uid: '@fluentui/react!IColorPickerGridCellProps#onMouseMove:member'
+    package: '@fluentui/react!'
+    fullName: onMouseMove
+    summary: >-
+      Mouse move handler. Returns true if the event should be processed, false
+      otherwise.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onMouseMove?: (ev: React.MouseEvent<HTMLButtonElement>) => boolean;'
+      return:
+        type: '(ev: React.MouseEvent&lt;HTMLButtonElement&gt;) =&gt; boolean'
+  - name: onWheel
+    uid: '@fluentui/react!IColorPickerGridCellProps#onWheel:member'
+    package: '@fluentui/react!'
+    fullName: onWheel
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onWheel?: (ev: React.MouseEvent<HTMLButtonElement>) => void;'
+      return:
+        type: '(ev: React.MouseEvent&lt;HTMLButtonElement&gt;) =&gt; void'
+  - name: selected
+    uid: '@fluentui/react!IColorPickerGridCellProps#selected:member'
+    package: '@fluentui/react!'
+    fullName: selected
+    summary: Whether this cell is currently selected
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'selected: boolean;'
+      return:
+        type: boolean
+  - name: styles
+    uid: '@fluentui/react!IColorPickerGridCellProps#styles:member'
+    package: '@fluentui/react!'
+    fullName: styles
+    summary: Custom styles for the component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        styles?: IStyleFunctionOrObject<IColorPickerGridCellStyleProps,
+        IColorPickerGridCellStyles>;
+      return:
+        type: >-
+          IStyleFunctionOrObject&lt;IColorPickerGridCellStyleProps,
+          IColorPickerGridCellStyles&gt;
+  - name: theme
+    uid: '@fluentui/react!IColorPickerGridCellProps#theme:member'
+    package: '@fluentui/react!'
+    fullName: theme
+    summary: The theme object to use for styling.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
+  - name: width
+    uid: '@fluentui/react!IColorPickerGridCellProps#width:member'
+    package: '@fluentui/react!'
+    fullName: width
+    summary: 'Width of the cell, in pixels'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'width?: number;'
+      return:
+        type: number

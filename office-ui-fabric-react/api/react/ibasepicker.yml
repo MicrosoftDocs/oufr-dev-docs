@@ -1,0 +1,64 @@
+### YamlMime:TSType
+name: IBasePicker
+uid: '@fluentui/react!IBasePicker:interface'
+package: '@fluentui/react!'
+fullName: IBasePicker
+summary: BasePicker component.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: completeSuggestion
+    uid: '@fluentui/react!IBasePicker#completeSuggestion:member'
+    package: '@fluentui/react!'
+    fullName: completeSuggestion
+    summary: >-
+      When called, will take the currently selected suggestion and complete it.
+      If called with forceComplete true, it will attempt to force the current
+      suggestion to complete, must provide both createGenericSuggestion, so the
+      text can be turned into an object in the right shape, and onValidateInput,
+      so the object knows if it's correct or not.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'completeSuggestion: (forceComplete?: boolean) => void;'
+      return:
+        type: '(forceComplete?: boolean) =&gt; void'
+  - name: focus
+    uid: '@fluentui/react!IBasePicker#focus:member'
+    package: '@fluentui/react!'
+    fullName: focus
+    summary: Sets focus to the focus zone.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'focus: () => void;'
+      return:
+        type: () =&gt; void
+  - name: focusInput
+    uid: '@fluentui/react!IBasePicker#focusInput:member'
+    package: '@fluentui/react!'
+    fullName: focusInput
+    summary: Set focus to the input
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'focusInput: () => void;'
+      return:
+        type: () =&gt; void
+  - name: items
+    uid: '@fluentui/react!IBasePicker#items:member'
+    package: '@fluentui/react!'
+    fullName: items
+    summary: Gets the current value of the input.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items: T[] | undefined;'
+      return:
+        type: 'T[] | undefined'

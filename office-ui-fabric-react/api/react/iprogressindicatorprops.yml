@@ -1,0 +1,162 @@
+### YamlMime:TSType
+name: IProgressIndicatorProps
+uid: '@fluentui/react!IProgressIndicatorProps:interface'
+package: '@fluentui/react!'
+fullName: IProgressIndicatorProps
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: ariaValueText
+    uid: '@fluentui/react!IProgressIndicatorProps#ariaValueText:member'
+    package: '@fluentui/react!'
+    fullName: ariaValueText
+    summary: >-
+      Text alternative of the progress status, used by screen readers for
+      reading the value of the progress.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ariaValueText?: string;'
+      return:
+        type: string
+  - name: barHeight
+    uid: '@fluentui/react!IProgressIndicatorProps#barHeight:member'
+    package: '@fluentui/react!'
+    fullName: barHeight
+    summary: Height of the ProgressIndicator
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'barHeight?: number;'
+      return:
+        type: number
+  - name: className
+    uid: '@fluentui/react!IProgressIndicatorProps#className:member'
+    package: '@fluentui/react!'
+    fullName: className
+    summary: Additional css class to apply to the ProgressIndicator
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'className?: string;'
+      return:
+        type: string
+  - name: description
+    uid: '@fluentui/react!IProgressIndicatorProps#description:member'
+    package: '@fluentui/react!'
+    fullName: description
+    summary: >-
+      Text describing or supplementing the operation. May be a string or React
+      virtual elements.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'description?: React.ReactNode;'
+      return:
+        type: React.ReactNode
+  - name: label
+    uid: '@fluentui/react!IProgressIndicatorProps#label:member'
+    package: '@fluentui/react!'
+    fullName: label
+    summary: >-
+      Label to display above the control. May be a string or React virtual
+      elements.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'label?: React.ReactNode;'
+      return:
+        type: React.ReactNode
+  - name: onRenderProgress
+    uid: '@fluentui/react!IProgressIndicatorProps#onRenderProgress:member'
+    package: '@fluentui/react!'
+    fullName: onRenderProgress
+    summary: A render override for the progress track.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onRenderProgress?: IRenderFunction<IProgressIndicatorProps>;'
+      return:
+        type: IRenderFunction&lt;IProgressIndicatorProps&gt;
+  - name: percentComplete
+    uid: '@fluentui/react!IProgressIndicatorProps#percentComplete:member'
+    package: '@fluentui/react!'
+    fullName: percentComplete
+    summary: >-
+      Percentage of the operation's completeness, numerically between 0 and 1.
+      If this is not set, the indeterminate progress animation will be shown
+      instead.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'percentComplete?: number;'
+      return:
+        type: number
+  - name: progressHidden
+    uid: '@fluentui/react!IProgressIndicatorProps#progressHidden:member'
+    package: '@fluentui/react!'
+    fullName: progressHidden
+    summary: Whether or not to hide the progress state.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'progressHidden?: boolean;'
+      return:
+        type: boolean
+  - name: styles
+    uid: '@fluentui/react!IProgressIndicatorProps#styles:member'
+    package: '@fluentui/react!'
+    fullName: styles
+    summary: >-
+      Call to provide customized styling that will layer on top of the variant
+      rules.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        styles?: IStyleFunctionOrObject<IProgressIndicatorStyleProps,
+        IProgressIndicatorStyles>;
+      return:
+        type: >-
+          IStyleFunctionOrObject&lt;IProgressIndicatorStyleProps,
+          IProgressIndicatorStyles&gt;
+  - name: theme
+    uid: '@fluentui/react!IProgressIndicatorProps#theme:member'
+    package: '@fluentui/react!'
+    fullName: theme
+    summary: Theme provided by High-Order Component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
+  - name: title
+    uid: '@fluentui/react!IProgressIndicatorProps#title:member'
+    package: '@fluentui/react!'
+    fullName: title
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      Use `label` instead. Deprecated at v0.43.0, to be removed at &gt;<!-- -->=
+      v0.53.0.
+    syntax:
+      content: 'title?: string;'
+      return:
+        type: string
+extends: 'React.ClassAttributes&lt;ProgressIndicatorBase&gt; '

@@ -1,0 +1,391 @@
+### YamlMime:TSType
+name: IPersonaSharedProps
+uid: '@fluentui/react!IPersonaSharedProps:interface'
+package: '@fluentui/react!'
+fullName: IPersonaSharedProps
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: allowPhoneInitials
+    uid: '@fluentui/react!IPersonaSharedProps#allowPhoneInitials:member'
+    package: '@fluentui/react!'
+    fullName: allowPhoneInitials
+    summary: >-
+      Whether initials are calculated for phone numbers and number sequences.
+      Example: Set property to true to get initials for project names consisting
+      of numbers only.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'allowPhoneInitials?: boolean;'
+      return:
+        type: boolean
+  - name: coinProps
+    uid: '@fluentui/react!IPersonaSharedProps#coinProps:member'
+    package: '@fluentui/react!'
+    fullName: coinProps
+    summary: Optional HTML element props for Persona coin.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'coinProps?: IPersonaCoinProps;'
+      return:
+        type: IPersonaCoinProps
+  - name: coinSize
+    uid: '@fluentui/react!IPersonaSharedProps#coinSize:member'
+    package: '@fluentui/react!'
+    fullName: coinSize
+    summary: Optional custom persona coin size in pixel.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'coinSize?: number;'
+      return:
+        type: number
+  - name: hidePersonaDetails
+    uid: '@fluentui/react!IPersonaSharedProps#hidePersonaDetails:member'
+    package: '@fluentui/react!'
+    fullName: hidePersonaDetails
+    summary: >-
+      Whether to not render persona details, and just render the persona
+      image/initials.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'hidePersonaDetails?: boolean;'
+      return:
+        type: boolean
+  - name: imageAlt
+    uid: '@fluentui/react!IPersonaSharedProps#imageAlt:member'
+    package: '@fluentui/react!'
+    fullName: imageAlt
+    summary: Alt text for the image to use.  `''` (empty string)
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'imageAlt?: string;'
+      return:
+        type: string
+  - name: imageInitials
+    uid: '@fluentui/react!IPersonaSharedProps#imageInitials:member'
+    package: '@fluentui/react!'
+    fullName: imageInitials
+    summary: The user's initials to display in the image area when there is no image.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'imageInitials?: string;'
+      return:
+        type: string
+  - name: imageShouldFadeIn
+    uid: '@fluentui/react!IPersonaSharedProps#imageShouldFadeIn:member'
+    package: '@fluentui/react!'
+    fullName: imageShouldFadeIn
+    summary: 'If true, adds the css class ''is-fadeIn'' to the image.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'imageShouldFadeIn?: boolean;'
+      return:
+        type: boolean
+  - name: imageShouldStartVisible
+    uid: '@fluentui/react!IPersonaSharedProps#imageShouldStartVisible:member'
+    package: '@fluentui/react!'
+    fullName: imageShouldStartVisible
+    summary: >-
+      If true, the image starts as visible and is hidden on error. Otherwise,
+      the image is hidden until it is successfully loaded. This disables
+      imageShouldFadeIn.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'imageShouldStartVisible?: boolean;'
+      return:
+        type: boolean
+  - name: imageUrl
+    uid: '@fluentui/react!IPersonaSharedProps#imageUrl:member'
+    package: '@fluentui/react!'
+    fullName: imageUrl
+    summary: >-
+      Url to the image to use, should be a square aspect ratio and big enough to
+      fit in the image area.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'imageUrl?: string;'
+      return:
+        type: string
+  - name: initialsColor
+    uid: '@fluentui/react!IPersonaSharedProps#initialsColor:member'
+    package: '@fluentui/react!'
+    fullName: initialsColor
+    summary: The background color when the user's initials are displayed.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'initialsColor?: PersonaInitialsColor | string;'
+      return:
+        type: PersonaInitialsColor | string
+  - name: isOutOfOffice
+    uid: '@fluentui/react!IPersonaSharedProps#isOutOfOffice:member'
+    package: '@fluentui/react!'
+    fullName: isOutOfOffice
+    summary: >-
+      This flag can be used to signal the persona is out of office. This will
+      change the way the presence icon looks for statuses that support
+      dual-presence.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isOutOfOffice?: boolean;'
+      return:
+        type: boolean
+  - name: onPhotoLoadingStateChange
+    uid: '@fluentui/react!IPersonaSharedProps#onPhotoLoadingStateChange:member'
+    package: '@fluentui/react!'
+    fullName: onPhotoLoadingStateChange
+    summary: Optional callback for when loading state of the photo changes
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onPhotoLoadingStateChange?: (newImageLoadState: ImageLoadState) => void;'
+      return:
+        type: '(newImageLoadState: ImageLoadState) =&gt; void'
+  - name: onRenderCoin
+    uid: '@fluentui/react!IPersonaSharedProps#onRenderCoin:member'
+    package: '@fluentui/react!'
+    fullName: onRenderCoin
+    summary: Optional custom renderer for the coin
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Use `onRenderPersonaCoin` for custom rendering instead
+    syntax:
+      content: 'onRenderCoin?: IRenderFunction<IPersonaSharedProps>;'
+      return:
+        type: IRenderFunction&lt;IPersonaSharedProps&gt;
+  - name: onRenderInitials
+    uid: '@fluentui/react!IPersonaSharedProps#onRenderInitials:member'
+    package: '@fluentui/react!'
+    fullName: onRenderInitials
+    summary: Optional custom renderer for the initials
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onRenderInitials?: IRenderFunction<IPersonaSharedProps>;'
+      return:
+        type: IRenderFunction&lt;IPersonaSharedProps&gt;
+  - name: onRenderPersonaCoin
+    uid: '@fluentui/react!IPersonaSharedProps#onRenderPersonaCoin:member'
+    package: '@fluentui/react!'
+    fullName: onRenderPersonaCoin
+    summary: Optional custom renderer for the coin
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onRenderPersonaCoin?: IRenderFunction<IPersonaSharedProps>;'
+      return:
+        type: IRenderFunction&lt;IPersonaSharedProps&gt;
+  - name: optionalText
+    uid: '@fluentui/react!IPersonaSharedProps#optionalText:member'
+    package: '@fluentui/react!'
+    fullName: optionalText
+    summary: >-
+      Optional text to display, usually a custom message set. The optional text
+      will only be shown when using size100.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'optionalText?: string;'
+      return:
+        type: string
+  - name: presence
+    uid: '@fluentui/react!IPersonaSharedProps#presence:member'
+    package: '@fluentui/react!'
+    fullName: presence
+    summary: >-
+      Presence of the person to display - will not display presence if
+      undefined.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'presence?: PersonaPresence;'
+      return:
+        type: PersonaPresence
+  - name: presenceColors
+    uid: '@fluentui/react!IPersonaSharedProps#presenceColors:member'
+    package: '@fluentui/react!'
+    fullName: presenceColors
+    summary: The colors to be used for the presence-icon and it's background
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        presenceColors?: {
+                available: string;
+                away: string;
+                busy: string;
+                dnd: string;
+                offline: string;
+                oof: string;
+                background: string;
+            };
+      return:
+        type: |-
+          {
+                  available: string;
+                  away: string;
+                  busy: string;
+                  dnd: string;
+                  offline: string;
+                  oof: string;
+                  background: string;
+              }
+  - name: presenceTitle
+    uid: '@fluentui/react!IPersonaSharedProps#presenceTitle:member'
+    package: '@fluentui/react!'
+    fullName: presenceTitle
+    summary: Presence title to be shown as a tooltip on hover over the presence icon.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'presenceTitle?: string;'
+      return:
+        type: string
+  - name: primaryText
+    uid: '@fluentui/react!IPersonaSharedProps#primaryText:member'
+    package: '@fluentui/react!'
+    fullName: primaryText
+    summary: 'Primary text to display, usually the name of the person.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Use `text` instead.
+    syntax:
+      content: 'primaryText?: string;'
+      return:
+        type: string
+  - name: secondaryText
+    uid: '@fluentui/react!IPersonaSharedProps#secondaryText:member'
+    package: '@fluentui/react!'
+    fullName: secondaryText
+    summary: 'Secondary text to display, usually the role of the user.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'secondaryText?: string;'
+      return:
+        type: string
+  - name: showInitialsUntilImageLoads
+    uid: '@fluentui/react!IPersonaSharedProps#showInitialsUntilImageLoads:member'
+    package: '@fluentui/react!'
+    fullName: showInitialsUntilImageLoads
+    summary: >-
+      If true renders the initials while the image is loading. This only applies
+      when an imageUrl is provided.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'showInitialsUntilImageLoads?: boolean;'
+      return:
+        type: boolean
+  - name: showSecondaryText
+    uid: '@fluentui/react!IPersonaSharedProps#showSecondaryText:member'
+    package: '@fluentui/react!'
+    fullName: showSecondaryText
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'showSecondaryText?: boolean;'
+      return:
+        type: boolean
+  - name: showUnknownPersonaCoin
+    uid: '@fluentui/react!IPersonaSharedProps#showUnknownPersonaCoin:member'
+    package: '@fluentui/react!'
+    fullName: showUnknownPersonaCoin
+    summary: >-
+      If true, show the special coin for unknown persona. It has '?' in place of
+      initials, with static font and background colors
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'showUnknownPersonaCoin?: boolean;'
+      return:
+        type: boolean
+  - name: size
+    uid: '@fluentui/react!IPersonaSharedProps#size:member'
+    package: '@fluentui/react!'
+    fullName: size
+    summary: Decides the size of the control.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'size?: PersonaSize;'
+      return:
+        type: PersonaSize
+  - name: tertiaryText
+    uid: '@fluentui/react!IPersonaSharedProps#tertiaryText:member'
+    package: '@fluentui/react!'
+    fullName: tertiaryText
+    summary: >-
+      Tertiary text to display, usually the status of the user. The tertiary
+      text will only be shown when using size72 or size100.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tertiaryText?: string;'
+      return:
+        type: string
+  - name: text
+    uid: '@fluentui/react!IPersonaSharedProps#text:member'
+    package: '@fluentui/react!'
+    fullName: text
+    summary: 'Primary text to display, usually the name of the person.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'text?: string;'
+      return:
+        type: string
+  - name: theme
+    uid: '@fluentui/react!IPersonaSharedProps#theme:member'
+    package: '@fluentui/react!'
+    fullName: theme
+    summary: Theme provided by High-Order Component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
+extends: React.HTMLAttributes&lt;HTMLDivElement&gt;

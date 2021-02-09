@@ -1,0 +1,51 @@
+### YamlMime:TSType
+name: IPopupRestoreFocusParams
+uid: '@fluentui/react!IPopupRestoreFocusParams:interface'
+package: '@fluentui/react!'
+fullName: IPopupRestoreFocusParams
+summary: >-
+  Parameters passed to `onRestoreFocus` callback of `Popup` and related
+  components.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: containsFocus
+    uid: '@fluentui/react!IPopupRestoreFocusParams#containsFocus:member'
+    package: '@fluentui/react!'
+    fullName: containsFocus
+    summary: Whether the popup currently contains focus
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'containsFocus: boolean;'
+      return:
+        type: boolean
+  - name: documentContainsFocus
+    uid: '@fluentui/react!IPopupRestoreFocusParams#documentContainsFocus:member'
+    package: '@fluentui/react!'
+    fullName: documentContainsFocus
+    summary: >-
+      Whether the document the popup belongs to contains focus (or false if
+      unknown)
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'documentContainsFocus: boolean;'
+      return:
+        type: boolean
+  - name: originalElement
+    uid: '@fluentui/react!IPopupRestoreFocusParams#originalElement:member'
+    package: '@fluentui/react!'
+    fullName: originalElement
+    summary: Element the underlying Popup believes focus should go to
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'originalElement?: HTMLElement | Window;'
+      return:
+        type: HTMLElement | Window

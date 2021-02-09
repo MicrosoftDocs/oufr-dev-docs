@@ -1,0 +1,268 @@
+### YamlMime:TSType
+name: ICalendarMonthProps
+uid: '@fluentui/react!ICalendarMonthProps:interface'
+package: '@fluentui/react!'
+fullName: ICalendarMonthProps
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: allFocusable
+    uid: '@fluentui/react!ICalendarMonthProps#allFocusable:member'
+    package: '@fluentui/react!'
+    fullName: allFocusable
+    summary: 'Allows all dates and buttons to be focused, including disabled ones'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'allFocusable?: boolean;'
+      return:
+        type: boolean
+  - name: animationDirection
+    uid: '@fluentui/react!ICalendarMonthProps#animationDirection:member'
+    package: '@fluentui/react!'
+    fullName: animationDirection
+    summary: >-
+      The cardinal directions for animation to occur during transitions, either
+      horizontal or veritcal
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'animationDirection?: AnimationDirection;'
+      return:
+        type: AnimationDirection
+  - name: className
+    uid: '@fluentui/react!ICalendarMonthProps#className:member'
+    package: '@fluentui/react!'
+    fullName: className
+    summary: Additional CSS class(es) to apply to the CalendarMonth.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'className?: string;'
+      return:
+        type: string
+  - name: componentRef
+    uid: '@fluentui/react!ICalendarMonthProps#componentRef:member'
+    package: '@fluentui/react!'
+    fullName: componentRef
+    summary: >-
+      Optional callback to access the ICalendarMonth interface. Use this instead
+      of ref for accessing the public methods and properties of the component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'componentRef?: IRefObject<ICalendarMonth>;'
+      return:
+        type: IRefObject&lt;ICalendarMonth&gt;
+  - name: dateTimeFormatter
+    uid: '@fluentui/react!ICalendarMonthProps#dateTimeFormatter:member'
+    package: '@fluentui/react!'
+    fullName: dateTimeFormatter
+    summary: >-
+      Apply additional formating to dates, for example localized date
+      formatting.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'dateTimeFormatter?: IDateFormatting;'
+      return:
+        type: '<xref uid="@fluentui/date-time-utilities!IDateFormatting:interface" />'
+  - name: highlightCurrentMonth
+    uid: '@fluentui/react!ICalendarMonthProps#highlightCurrentMonth:member'
+    package: '@fluentui/react!'
+    fullName: highlightCurrentMonth
+    summary: Whether the month picker should highlight the current month
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'highlightCurrentMonth?: boolean;'
+      return:
+        type: boolean
+  - name: highlightSelectedMonth
+    uid: '@fluentui/react!ICalendarMonthProps#highlightSelectedMonth:member'
+    package: '@fluentui/react!'
+    fullName: highlightSelectedMonth
+    summary: Whether the month picker should highlight the selected month
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'highlightSelectedMonth?: boolean;'
+      return:
+        type: boolean
+  - name: maxDate
+    uid: '@fluentui/react!ICalendarMonthProps#maxDate:member'
+    package: '@fluentui/react!'
+    fullName: maxDate
+    summary: >-
+      If set the Calendar will not allow navigation to or selection of a date
+      later than this value.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'maxDate?: Date;'
+      return:
+        type: Date
+  - name: minDate
+    uid: '@fluentui/react!ICalendarMonthProps#minDate:member'
+    package: '@fluentui/react!'
+    fullName: minDate
+    summary: >-
+      If set the Calendar will not allow navigation to or selection of a date
+      earlier than this value.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'minDate?: Date;'
+      return:
+        type: Date
+  - name: navigatedDate
+    uid: '@fluentui/react!ICalendarMonthProps#navigatedDate:member'
+    package: '@fluentui/react!'
+    fullName: navigatedDate
+    summary: The currently navigated date
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'navigatedDate: Date;'
+      return:
+        type: Date
+  - name: navigationIcons
+    uid: '@fluentui/react!ICalendarMonthProps#navigationIcons:member'
+    package: '@fluentui/react!'
+    fullName: navigationIcons
+    summary: Custom navigation icons.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'navigationIcons?: ICalendarNavigationIcons;'
+      return:
+        type: ICalendarNavigationIcons
+  - name: onHeaderSelect
+    uid: '@fluentui/react!ICalendarMonthProps#onHeaderSelect:member'
+    package: '@fluentui/react!'
+    fullName: onHeaderSelect
+    summary: Callback function when the header is selected
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onHeaderSelect?: () => void;'
+      return:
+        type: () =&gt; void
+  - name: onNavigateDate
+    uid: '@fluentui/react!ICalendarMonthProps#onNavigateDate:member'
+    package: '@fluentui/react!'
+    fullName: onNavigateDate
+    summary: Callback issued when the year is navigated
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onNavigateDate: (date: Date, focusOnNavigatedDay: boolean) => void;'
+      return:
+        type: '(date: Date, focusOnNavigatedDay: boolean) =&gt; void'
+  - name: onSelectDate
+    uid: '@fluentui/react!ICalendarMonthProps#onSelectDate:member'
+    package: '@fluentui/react!'
+    fullName: onSelectDate
+    summary: Callback issued when a month is selected
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onSelectDate?: (date: Date, selectedDateRangeArray?: Date[]) => void;'
+      return:
+        type: '(date: Date, selectedDateRangeArray?: Date[]) =&gt; void'
+  - name: selectedDate
+    uid: '@fluentui/react!ICalendarMonthProps#selectedDate:member'
+    package: '@fluentui/react!'
+    fullName: selectedDate
+    summary: The currently selected date
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'selectedDate: Date;'
+      return:
+        type: Date
+  - name: strings
+    uid: '@fluentui/react!ICalendarMonthProps#strings:member'
+    package: '@fluentui/react!'
+    fullName: strings
+    summary: Localized strings to use in the Calendar
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'strings: ICalendarStrings;'
+      return:
+        type: ICalendarStrings
+  - name: styles
+    uid: '@fluentui/react!ICalendarMonthProps#styles:member'
+    package: '@fluentui/react!'
+    fullName: styles
+    summary: Customized styles for the calendar month component
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        styles?: IStyleFunctionOrObject<ICalendarMonthStyleProps,
+        ICalendarMonthStyles>;
+      return:
+        type: >-
+          IStyleFunctionOrObject&lt;ICalendarMonthStyleProps,
+          ICalendarMonthStyles&gt;
+  - name: theme
+    uid: '@fluentui/react!ICalendarMonthProps#theme:member'
+    package: '@fluentui/react!'
+    fullName: theme
+    summary: Theme (provided through customization).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
+  - name: today
+    uid: '@fluentui/react!ICalendarMonthProps#today:member'
+    package: '@fluentui/react!'
+    fullName: today
+    summary: >-
+      Value of today. If unspecified, current time in client machine will be
+      used.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'today?: Date;'
+      return:
+        type: Date
+  - name: yearPickerHidden
+    uid: '@fluentui/react!ICalendarMonthProps#yearPickerHidden:member'
+    package: '@fluentui/react!'
+    fullName: yearPickerHidden
+    summary: Whether the year picker is hidden
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'yearPickerHidden?: boolean;'
+      return:
+        type: boolean
+extends: 'IBaseProps&lt;ICalendarMonth&gt; '

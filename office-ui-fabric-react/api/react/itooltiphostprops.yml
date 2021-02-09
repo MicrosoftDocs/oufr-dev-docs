@@ -1,0 +1,246 @@
+### YamlMime:TSType
+name: ITooltipHostProps
+uid: '@fluentui/react!ITooltipHostProps:interface'
+package: '@fluentui/react!'
+fullName: ITooltipHostProps
+summary: >-
+  TooltipHost props. Note that native props (such as `id`<!-- -->,
+  `className`<!-- -->, and `aria-` props) are passed through to the Tooltip
+  itself, rather than being used on the host element.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: calloutProps
+    uid: '@fluentui/react!ITooltipHostProps#calloutProps:member'
+    package: '@fluentui/react!'
+    fullName: calloutProps
+    summary: Additional properties to pass through for Callout.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'calloutProps?: ICalloutProps;'
+      return:
+        type: ICalloutProps
+  - name: className
+    uid: '@fluentui/react!ITooltipHostProps#className:member'
+    package: '@fluentui/react!'
+    fullName: className
+    summary: >-
+      Class name to apply to the \*tooltip itself\*, not the host. To apply a
+      class to the host, use `hostClassName` or `styles.root`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'className?: string;'
+      return:
+        type: string
+  - name: closeDelay
+    uid: '@fluentui/react!ITooltipHostProps#closeDelay:member'
+    package: '@fluentui/react!'
+    fullName: closeDelay
+    summary: >-
+      Number of milliseconds to delay closing the tooltip, so that the user has
+      time to hover over the tooltip and interact with it. Hovering over the
+      tooltip will count as hovering over the host, so that the tooltip will
+      stay open if the user is actively interacting with it.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'closeDelay?: number;'
+      return:
+        type: number
+  - name: componentRef
+    uid: '@fluentui/react!ITooltipHostProps#componentRef:member'
+    package: '@fluentui/react!'
+    fullName: componentRef
+    summary: >-
+      Optional callback to access the ITooltipHost interface. Use this instead
+      of ref for accessing the public methods and properties of the component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'componentRef?: IRefObject<ITooltipHost>;'
+      return:
+        type: IRefObject&lt;ITooltipHost&gt;
+  - name: content
+    uid: '@fluentui/react!ITooltipHostProps#content:member'
+    package: '@fluentui/react!'
+    fullName: content
+    summary: Content to display in the Tooltip.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'content?: string | JSX.Element | JSX.Element[];'
+      return:
+        type: 'string | JSX.Element | JSX.Element[]'
+  - name: delay
+    uid: '@fluentui/react!ITooltipHostProps#delay:member'
+    package: '@fluentui/react!'
+    fullName: delay
+    summary: Length of delay before showing the tooltip on hover.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'delay?: TooltipDelay;'
+      return:
+        type: TooltipDelay
+  - name: directionalHint
+    uid: '@fluentui/react!ITooltipHostProps#directionalHint:member'
+    package: '@fluentui/react!'
+    fullName: directionalHint
+    summary: How the tooltip should be anchored to its `targetElement`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'directionalHint?: DirectionalHint;'
+      return:
+        type: DirectionalHint
+  - name: directionalHintForRTL
+    uid: '@fluentui/react!ITooltipHostProps#directionalHintForRTL:member'
+    package: '@fluentui/react!'
+    fullName: directionalHintForRTL
+    summary: >-
+      How the element should be positioned in RTL layouts. If not specified, a
+      mirror of `directionalHint` will be used.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'directionalHintForRTL?: DirectionalHint;'
+      return:
+        type: DirectionalHint
+  - name: hostClassName
+    uid: '@fluentui/react!ITooltipHostProps#hostClassName:member'
+    package: '@fluentui/react!'
+    fullName: hostClassName
+    summary: Class name to apply to tooltip host.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'hostClassName?: string;'
+      return:
+        type: string
+  - name: id
+    uid: '@fluentui/react!ITooltipHostProps#id:member'
+    package: '@fluentui/react!'
+    fullName: id
+    summary: >-
+      Optional ID to pass through to the tooltip (not used on the host itself).
+      Auto-generated if not provided.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: string;'
+      return:
+        type: string
+  - name: overflowMode
+    uid: '@fluentui/react!ITooltipHostProps#overflowMode:member'
+    package: '@fluentui/react!'
+    fullName: overflowMode
+    summary: >-
+      If this is unset (the default), the tooltip is always shown even if
+      there's no overflow.
+
+
+      If set, only show the tooltip if the specified element (`Self` or
+      `Parent`<!-- -->) has overflow. When set to `Parent`<!-- -->, the parent
+      element is also used as the tooltip's target element.
+
+
+      Note that even with `Self` mode, the TooltipHost \*does not\* check
+      whether any children have overflow.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'overflowMode?: TooltipOverflowMode;'
+      return:
+        type: TooltipOverflowMode
+  - name: setAriaDescribedBy
+    uid: '@fluentui/react!ITooltipHostProps#setAriaDescribedBy:member'
+    package: '@fluentui/react!'
+    fullName: setAriaDescribedBy
+    summary: >-
+      Whether or not to mark the TooltipHost root element as described by the
+      tooltip. If not specified, the caller should pass an `id` to the
+      TooltipHost (to be passed through to the Tooltip) and mark the appropriate
+      element as `aria-describedby` the `id`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setAriaDescribedBy?: boolean;'
+      return:
+        type: boolean
+  - name: styles
+    uid: '@fluentui/react!ITooltipHostProps#styles:member'
+    package: '@fluentui/react!'
+    fullName: styles
+    summary: >-
+      Call to provide customized styling that will layer on top of the variant
+      rules.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        styles?: IStyleFunctionOrObject<ITooltipHostStyleProps,
+        ITooltipHostStyles>;
+      return:
+        type: >-
+          IStyleFunctionOrObject&lt;ITooltipHostStyleProps,
+          ITooltipHostStyles&gt;
+  - name: theme
+    uid: '@fluentui/react!ITooltipHostProps#theme:member'
+    package: '@fluentui/react!'
+    fullName: theme
+    summary: Theme provided by higher-order component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
+  - name: tooltipProps
+    uid: '@fluentui/react!ITooltipHostProps#tooltipProps:member'
+    package: '@fluentui/react!'
+    fullName: tooltipProps
+    summary: Additional properties to pass through for Tooltip.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tooltipProps?: ITooltipProps;'
+      return:
+        type: ITooltipProps
+methods:
+  - name: onTooltipToggle(isTooltipVisible)
+    uid: '@fluentui/react!ITooltipHostProps#onTooltipToggle:member(1)'
+    package: '@fluentui/react!'
+    fullName: onTooltipToggle(isTooltipVisible)
+    summary: 'Notifies when tooltip becomes visible or hidden, whatever the trigger was.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onTooltipToggle?(isTooltipVisible: boolean): void;'
+      parameters:
+        - id: isTooltipVisible
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+extends: 'React.HTMLAttributes&lt;HTMLDivElement | TooltipHostBase&gt; '

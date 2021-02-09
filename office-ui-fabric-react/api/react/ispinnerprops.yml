@@ -1,0 +1,139 @@
+### YamlMime:TSType
+name: ISpinnerProps
+uid: '@fluentui/react!ISpinnerProps:interface'
+package: '@fluentui/react!'
+fullName: ISpinnerProps
+summary: Spinner component props.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: ariaLabel
+    uid: '@fluentui/react!ISpinnerProps#ariaLabel:member'
+    package: '@fluentui/react!'
+    fullName: ariaLabel
+    summary: Alternative status label for screen reader
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ariaLabel?: string;'
+      return:
+        type: string
+  - name: ariaLive
+    uid: '@fluentui/react!ISpinnerProps#ariaLive:member'
+    package: '@fluentui/react!'
+    fullName: ariaLive
+    summary: Politeness setting for label update announcement.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ariaLive?: ''assertive'' | ''polite'' | ''off'';'
+      return:
+        type: '''assertive'' | ''polite'' | ''off'''
+  - name: className
+    uid: '@fluentui/react!ISpinnerProps#className:member'
+    package: '@fluentui/react!'
+    fullName: className
+    summary: Additional CSS class(es) to apply to the Spinner.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'className?: string;'
+      return:
+        type: string
+  - name: componentRef
+    uid: '@fluentui/react!ISpinnerProps#componentRef:member'
+    package: '@fluentui/react!'
+    fullName: componentRef
+    summary: >-
+      Optional callback to access the ISpinner interface. Use this instead of
+      ref for accessing the public methods and properties of the component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'componentRef?: IRefObject<ISpinner>;'
+      return:
+        type: IRefObject&lt;ISpinner&gt;
+  - name: label
+    uid: '@fluentui/react!ISpinnerProps#label:member'
+    package: '@fluentui/react!'
+    fullName: label
+    summary: >-
+      The label to show next to the Spinner. Label updates will be announced to
+      the screen readers. Use ariaLive to control politeness level.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'label?: string;'
+      return:
+        type: string
+  - name: labelPosition
+    uid: '@fluentui/react!ISpinnerProps#labelPosition:member'
+    package: '@fluentui/react!'
+    fullName: labelPosition
+    summary: The position of the label in regards of the spinner animation.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'labelPosition?: SpinnerLabelPosition;'
+      return:
+        type: SpinnerLabelPosition
+  - name: size
+    uid: '@fluentui/react!ISpinnerProps#size:member'
+    package: '@fluentui/react!'
+    fullName: size
+    summary: The size of Spinner to render.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'size?: SpinnerSize;'
+      return:
+        type: SpinnerSize
+  - name: styles
+    uid: '@fluentui/react!ISpinnerProps#styles:member'
+    package: '@fluentui/react!'
+    fullName: styles
+    summary: >-
+      Call to provide customized styling that will layer on top of the variant
+      rules.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'styles?: IStyleFunctionOrObject<ISpinnerStyleProps, ISpinnerStyles>;'
+      return:
+        type: 'IStyleFunctionOrObject&lt;ISpinnerStyleProps, ISpinnerStyles&gt;'
+  - name: theme
+    uid: '@fluentui/react!ISpinnerProps#theme:member'
+    package: '@fluentui/react!'
+    fullName: theme
+    summary: Theme (provided through customization.)
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
+  - name: type
+    uid: '@fluentui/react!ISpinnerProps#type:member'
+    package: '@fluentui/react!'
+    fullName: type
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Use `size` instead. Will be removed at &gt;<!-- -->= 2.0.0.
+    syntax:
+      content: 'type?: SpinnerType;'
+      return:
+        type: SpinnerType
+extends: 'React.HTMLAttributes&lt;HTMLElement&gt; '

@@ -1,0 +1,472 @@
+### YamlMime:TSType
+name: IBasePickerProps
+uid: '@fluentui/react!IBasePickerProps:interface'
+package: '@fluentui/react!'
+fullName: IBasePickerProps
+summary: >-
+  Type T is the type of the item that is displayed and searched for by the
+  picker. For example, if the picker is displaying persona's then type T could
+  either be of Persona or IPersona props
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: '"aria-label"'
+    uid: '@fluentui/react!IBasePickerProps#"aria-label":member'
+    package: '@fluentui/react!'
+    fullName: '"aria-label"'
+    summary: >-
+      Optional aria-label that will be placed on the element that has the role
+      "combobox" attached. Additionally aria-labelled by will get added to the
+      supporting input element contained with in the combobox container
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '[''aria-label'']?: string;'
+      return:
+        type: string
+  - name: className
+    uid: '@fluentui/react!IBasePickerProps#className:member'
+    package: '@fluentui/react!'
+    fullName: className
+    summary: ClassName for the picker.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'className?: string;'
+      return:
+        type: string
+  - name: componentRef
+    uid: '@fluentui/react!IBasePickerProps#componentRef:member'
+    package: '@fluentui/react!'
+    fullName: componentRef
+    summary: >-
+      Optional callback to access the IBasePicker interface. Use this instead of
+      ref for accessing the public methods and properties of the component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'componentRef?: IRefObject<IBasePicker<T>>;'
+      return:
+        type: IRefObject&lt;IBasePicker&lt;T&gt;&gt;
+  - name: createGenericItem
+    uid: '@fluentui/react!IBasePickerProps#createGenericItem:member'
+    package: '@fluentui/react!'
+    fullName: createGenericItem
+    summary: >-
+      Function that specifies how arbitrary text entered into the well is
+      handled.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        createGenericItem?: (input: string, ValidationState: ValidationState) =>
+        ISuggestionModel<T> | T;
+      return:
+        type: >-
+          (input: string, ValidationState: ValidationState) =&gt;
+          ISuggestionModel&lt;T&gt; | T
+  - name: defaultSelectedItems
+    uid: '@fluentui/react!IBasePickerProps#defaultSelectedItems:member'
+    package: '@fluentui/react!'
+    fullName: defaultSelectedItems
+    summary: >-
+      Initial items that have already been selected and should appear in the
+      people picker.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'defaultSelectedItems?: T[];'
+      return:
+        type: 'T[]'
+  - name: disabled
+    uid: '@fluentui/react!IBasePickerProps#disabled:member'
+    package: '@fluentui/react!'
+    fullName: disabled
+    summary: Flag for disabling the picker.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'disabled?: boolean;'
+      return:
+        type: boolean
+  - name: enableSelectedSuggestionAlert
+    uid: '@fluentui/react!IBasePickerProps#enableSelectedSuggestionAlert:member'
+    package: '@fluentui/react!'
+    fullName: enableSelectedSuggestionAlert
+    summary: >-
+      Adds an additional alert for the currently selected suggestion. This prop
+      should be set to true for IE11 and below, as it enables proper screen
+      reader behavior for each suggestion (since aria-activedescendant does not
+      work with IE11). It should not be set for modern browsers (Edge, Chrome).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'enableSelectedSuggestionAlert?: boolean;'
+      return:
+        type: boolean
+  - name: getTextFromItem
+    uid: '@fluentui/react!IBasePickerProps#getTextFromItem:member'
+    package: '@fluentui/react!'
+    fullName: getTextFromItem
+    summary: A callback to get text from an item. Used to autofill text in the pickers.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getTextFromItem?: (item: T, currentValue?: string) => string;'
+      return:
+        type: '(item: T, currentValue?: string) =&gt; string'
+  - name: inputProps
+    uid: '@fluentui/react!IBasePickerProps#inputProps:member'
+    package: '@fluentui/react!'
+    fullName: inputProps
+    summary: AutoFill input native props
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'inputProps?: IInputProps;'
+      return:
+        type: IInputProps
+  - name: itemLimit
+    uid: '@fluentui/react!IBasePickerProps#itemLimit:member'
+    package: '@fluentui/react!'
+    fullName: itemLimit
+    summary: Restrict the amount of selectable items.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'itemLimit?: number;'
+      return:
+        type: number
+  - name: onBlur
+    uid: '@fluentui/react!IBasePickerProps#onBlur:member'
+    package: '@fluentui/react!'
+    fullName: onBlur
+    summary: A callback for when the user moves the focus away from the picker
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onBlur?: React.FocusEventHandler<HTMLInputElement | Autofill>;'
+      return:
+        type: React.FocusEventHandler&lt;HTMLInputElement | Autofill&gt;
+  - name: onChange
+    uid: '@fluentui/react!IBasePickerProps#onChange:member'
+    package: '@fluentui/react!'
+    fullName: onChange
+    summary: A callback for when the selected list of items changes.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onChange?: (items?: T[]) => void;'
+      return:
+        type: '(items?: T[]) =&gt; void'
+  - name: onDismiss
+    uid: '@fluentui/react!IBasePickerProps#onDismiss:member'
+    package: '@fluentui/react!'
+    fullName: onDismiss
+    summary: >-
+      A callback to override the default behavior of adding the selected
+      suggestion on dismiss. If it returns true or nothing, the selected item
+      will be added on dismiss. If false, the selected item will not be added on
+      dismiss.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onDismiss?: (ev?: any, selectedItem?: T) => boolean | void;'
+      return:
+        type: '(ev?: any, selectedItem?: T) =&gt; boolean | void'
+  - name: onEmptyInputFocus
+    uid: '@fluentui/react!IBasePickerProps#onEmptyInputFocus:member'
+    package: '@fluentui/react!'
+    fullName: onEmptyInputFocus
+    summary: >-
+      A callback for what should happen when a user clicks within the input
+      area.
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      Please use `onEmptyResolveSuggestions` instead, as the suggestions aren't
+      about setting focus as they are about resolving suggestions when there is
+      no input.
+    syntax:
+      content: 'onEmptyInputFocus?: (selectedItems?: T[]) => T[] | PromiseLike<T[]>;'
+      return:
+        type: '(selectedItems?: T[]) =&gt; T[] | PromiseLike&lt;T[]&gt;'
+  - name: onEmptyResolveSuggestions
+    uid: '@fluentui/react!IBasePickerProps#onEmptyResolveSuggestions:member'
+    package: '@fluentui/react!'
+    fullName: onEmptyResolveSuggestions
+    summary: >-
+      A callback for what should happen when suggestions are shown without input
+      provided. Returns the already selected items so the resolver can filter
+      them out. If used in conjunction with resolveDelay this will only kick off
+      after the delay throttle.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        onEmptyResolveSuggestions?: (selectedItems?: T[]) => T[] |
+        PromiseLike<T[]>;
+      return:
+        type: '(selectedItems?: T[]) =&gt; T[] | PromiseLike&lt;T[]&gt;'
+  - name: onFocus
+    uid: '@fluentui/react!IBasePickerProps#onFocus:member'
+    package: '@fluentui/react!'
+    fullName: onFocus
+    summary: A callback for when the user put focus on the picker
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Use `inputProps.onFocus` instead
+    syntax:
+      content: 'onFocus?: React.FocusEventHandler<HTMLInputElement | Autofill>;'
+      return:
+        type: React.FocusEventHandler&lt;HTMLInputElement | Autofill&gt;
+  - name: onGetMoreResults
+    uid: '@fluentui/react!IBasePickerProps#onGetMoreResults:member'
+    package: '@fluentui/react!'
+    fullName: onGetMoreResults
+    summary: >-
+      A callback that gets the rest of the results when a user clicks get more
+      results.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        onGetMoreResults?: (filter: string, selectedItems?: T[]) => T[] |
+        PromiseLike<T[]>;
+      return:
+        type: >-
+          (filter: string, selectedItems?: T[]) =&gt; T[] |
+          PromiseLike&lt;T[]&gt;
+  - name: onInputChange
+    uid: '@fluentui/react!IBasePickerProps#onInputChange:member'
+    package: '@fluentui/react!'
+    fullName: onInputChange
+    summary: A callback used to modify the input string.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onInputChange?: (input: string) => string;'
+      return:
+        type: '(input: string) =&gt; string'
+  - name: onItemSelected
+    uid: '@fluentui/react!IBasePickerProps#onItemSelected:member'
+    package: '@fluentui/react!'
+    fullName: onItemSelected
+    summary: >-
+      A callback to process a selection after the user selects something from
+      the picker. If the callback returns null, the item will not be added to
+      the picker.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onItemSelected?: (selectedItem?: T) => T | PromiseLike<T> | null;'
+      return:
+        type: '(selectedItem?: T) =&gt; T | PromiseLike&lt;T&gt; | null'
+  - name: onRemoveSuggestion
+    uid: '@fluentui/react!IBasePickerProps#onRemoveSuggestion:member'
+    package: '@fluentui/react!'
+    fullName: onRemoveSuggestion
+    summary: A callback for when an item is removed from the suggestion list
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onRemoveSuggestion?: (item: T) => void;'
+      return:
+        type: '(item: T) =&gt; void'
+  - name: onRenderItem
+    uid: '@fluentui/react!IBasePickerProps#onRenderItem:member'
+    package: '@fluentui/react!'
+    fullName: onRenderItem
+    summary: Function that specifies how the selected item will appear.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onRenderItem?: (props: IPickerItemProps<T>) => JSX.Element;'
+      return:
+        type: '(props: IPickerItemProps&lt;T&gt;) =&gt; JSX.Element'
+  - name: onRenderSuggestionsItem
+    uid: '@fluentui/react!IBasePickerProps#onRenderSuggestionsItem:member'
+    package: '@fluentui/react!'
+    fullName: onRenderSuggestionsItem
+    summary: Function that specifies how an individual suggestion item will appear.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        onRenderSuggestionsItem?: (props: T, itemProps: ISuggestionItemProps<T>)
+        => JSX.Element;
+      return:
+        type: '(props: T, itemProps: ISuggestionItemProps&lt;T&gt;) =&gt; JSX.Element'
+  - name: onResolveSuggestions
+    uid: '@fluentui/react!IBasePickerProps#onResolveSuggestions:member'
+    package: '@fluentui/react!'
+    fullName: onResolveSuggestions
+    summary: >-
+      A callback for what should happen when a person types text into the input.
+      Returns the already selected items so the resolver can filter them out. If
+      used in conjunction with resolveDelay this will only kick off after the
+      delay throttle.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        onResolveSuggestions: (filter: string, selectedItems?: T[]) => T[] |
+        PromiseLike<T[]>;
+      return:
+        type: >-
+          (filter: string, selectedItems?: T[]) =&gt; T[] |
+          PromiseLike&lt;T[]&gt;
+  - name: onValidateInput
+    uid: '@fluentui/react!IBasePickerProps#onValidateInput:member'
+    package: '@fluentui/react!'
+    fullName: onValidateInput
+    summary: >-
+      A function used to validate if raw text entered into the well can be added
+      into the selected items list
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onValidateInput?: (input: string) => ValidationState;'
+      return:
+        type: '(input: string) =&gt; ValidationState'
+  - name: pickerCalloutProps
+    uid: '@fluentui/react!IBasePickerProps#pickerCalloutProps:member'
+    package: '@fluentui/react!'
+    fullName: pickerCalloutProps
+    summary: The properties that will get passed to the Callout component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'pickerCalloutProps?: ICalloutProps;'
+      return:
+        type: ICalloutProps
+  - name: pickerSuggestionsProps
+    uid: '@fluentui/react!IBasePickerProps#pickerSuggestionsProps:member'
+    package: '@fluentui/react!'
+    fullName: pickerSuggestionsProps
+    summary: The properties that will get passed to the Suggestions component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'pickerSuggestionsProps?: IBasePickerSuggestionsProps;'
+      return:
+        type: IBasePickerSuggestionsProps
+  - name: removeButtonAriaLabel
+    uid: '@fluentui/react!IBasePickerProps#removeButtonAriaLabel:member'
+    package: '@fluentui/react!'
+    fullName: removeButtonAriaLabel
+    summary: Aria label for the "X" button in the selected item component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'removeButtonAriaLabel?: string;'
+      return:
+        type: string
+  - name: resolveDelay
+    uid: '@fluentui/react!IBasePickerProps#resolveDelay:member'
+    package: '@fluentui/react!'
+    fullName: resolveDelay
+    summary: >-
+      The delay time in ms before resolving suggestions, which is kicked off
+      when input has been changed. e.g. If a second input change happens within
+      the resolveDelay time, the timer will start over. Only until after the
+      timer completes will onResolveSuggestions be called.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'resolveDelay?: number;'
+      return:
+        type: number
+  - name: searchingText
+    uid: '@fluentui/react!IBasePickerProps#searchingText:member'
+    package: '@fluentui/react!'
+    fullName: searchingText
+    summary: >-
+      The text to display while searching for more results in a limited
+      suggestions list
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        searchingText?: ((props: {
+                input: string;
+            }) => string) | string;
+      return:
+        type: |-
+          ((props: {
+                  input: string;
+              }) =&gt; string) | string
+  - name: selectedItems
+    uid: '@fluentui/react!IBasePickerProps#selectedItems:member'
+    package: '@fluentui/react!'
+    fullName: selectedItems
+    summary: >-
+      The items that the base picker should currently display as selected. If
+      this is provided then the picker will act as a controlled component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'selectedItems?: T[];'
+      return:
+        type: 'T[]'
+  - name: styles
+    uid: '@fluentui/react!IBasePickerProps#styles:member'
+    package: '@fluentui/react!'
+    fullName: styles
+    summary: >-
+      Call to provide customized styling that will layer on top of the variant
+      rules.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        styles?: IStyleFunctionOrObject<IBasePickerStyleProps,
+        IBasePickerStyles>;
+      return:
+        type: 'IStyleFunctionOrObject&lt;IBasePickerStyleProps, IBasePickerStyles&gt;'
+  - name: theme
+    uid: '@fluentui/react!IBasePickerProps#theme:member'
+    package: '@fluentui/react!'
+    fullName: theme
+    summary: Theme provided by styled() function.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
+extends: 'React.Props&lt;any&gt; '

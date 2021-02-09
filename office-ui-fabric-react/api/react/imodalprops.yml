@@ -1,0 +1,313 @@
+### YamlMime:TSType
+name: IModalProps
+uid: '@fluentui/react!IModalProps:interface'
+package: '@fluentui/react!'
+fullName: IModalProps
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: allowTouchBodyScroll
+    uid: '@fluentui/react!IModalProps#allowTouchBodyScroll:member'
+    package: '@fluentui/react!'
+    fullName: allowTouchBodyScroll
+    summary: >-
+      Allow body scroll on content and overlay on touch devices. Changing after
+      mounting has no effect.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'allowTouchBodyScroll?: boolean;'
+      return:
+        type: boolean
+  - name: children
+    uid: '@fluentui/react!IModalProps#children:member'
+    package: '@fluentui/react!'
+    fullName: children
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'children?: React.ReactNode;'
+      return:
+        type: React.ReactNode
+  - name: className
+    uid: '@fluentui/react!IModalProps#className:member'
+    package: '@fluentui/react!'
+    fullName: className
+    summary: Optional class name to be added to the root class
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'className?: string;'
+      return:
+        type: string
+  - name: componentRef
+    uid: '@fluentui/react!IModalProps#componentRef:member'
+    package: '@fluentui/react!'
+    fullName: componentRef
+    summary: >-
+      Optional ref to access the `IModal` interface. Use this instead of `ref`
+      for accessing public API of the component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'componentRef?: IRefObject<IModal>;'
+      return:
+        type: IRefObject&lt;IModal&gt;
+  - name: containerClassName
+    uid: '@fluentui/react!IModalProps#containerClassName:member'
+    package: '@fluentui/react!'
+    fullName: containerClassName
+    summary: Optional override for container class
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'containerClassName?: string;'
+      return:
+        type: string
+  - name: dragOptions
+    uid: '@fluentui/react!IModalProps#dragOptions:member'
+    package: '@fluentui/react!'
+    fullName: dragOptions
+    summary: The options to make the modal draggable
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'dragOptions?: IDragOptions;'
+      return:
+        type: IDragOptions
+  - name: enableAriaHiddenSiblings
+    uid: '@fluentui/react!IModalProps#enableAriaHiddenSiblings:member'
+    package: '@fluentui/react!'
+    fullName: enableAriaHiddenSiblings
+    summary: >-
+      Puts aria-hidden=true on all non-ancestors of the current modal, for
+      screen readers. This is an experimental feature that will be graduated to
+      default behavior after testing. This flag will be removed with the next
+      major release.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'enableAriaHiddenSiblings?: boolean;'
+      return:
+        type: boolean
+  - name: isBlocking
+    uid: '@fluentui/react!IModalProps#isBlocking:member'
+    package: '@fluentui/react!'
+    fullName: isBlocking
+    summary: >-
+      Whether the dialog can be light dismissed by clicking outside the dialog
+      (on the overlay).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isBlocking?: boolean;'
+      return:
+        type: boolean
+  - name: isDarkOverlay
+    uid: '@fluentui/react!IModalProps#isDarkOverlay:member'
+    package: '@fluentui/react!'
+    fullName: isDarkOverlay
+    summary: Whether the overlay is dark themed.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isDarkOverlay?: boolean;'
+      return:
+        type: boolean
+  - name: isModeless
+    uid: '@fluentui/react!IModalProps#isModeless:member'
+    package: '@fluentui/react!'
+    fullName: isModeless
+    summary: >-
+      Whether the dialog should be modeless (e.g. not dismiss when
+      focusing/clicking outside of the dialog). if true: isBlocking is ignored,
+      there will be no overlay (isDarkOverlay is ignored),
+      isClickableOutsideFocusTrap is true, and forceFocusInsideTrap is false
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isModeless?: boolean;'
+      return:
+        type: boolean
+  - name: isOpen
+    uid: '@fluentui/react!IModalProps#isOpen:member'
+    package: '@fluentui/react!'
+    fullName: isOpen
+    summary: Whether the dialog is displayed.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isOpen?: boolean;'
+      return:
+        type: boolean
+  - name: layerProps
+    uid: '@fluentui/react!IModalProps#layerProps:member'
+    package: '@fluentui/react!'
+    fullName: layerProps
+    summary: Defines an optional set of props to be passed through to Layer
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'layerProps?: ILayerProps;'
+      return:
+        type: ILayerProps
+  - name: onDismiss
+    uid: '@fluentui/react!IModalProps#onDismiss:member'
+    package: '@fluentui/react!'
+    fullName: onDismiss
+    summary: >-
+      A callback function for when the Modal is dismissed light dismiss, before
+      the animation completes.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onDismiss?: (ev?: React.MouseEvent<HTMLButtonElement>) => any;'
+      return:
+        type: '(ev?: React.MouseEvent&lt;HTMLButtonElement&gt;) =&gt; any'
+  - name: onDismissed
+    uid: '@fluentui/react!IModalProps#onDismissed:member'
+    package: '@fluentui/react!'
+    fullName: onDismissed
+    summary: >-
+      A callback function which is called after the Modal is dismissed and the
+      animation is complete.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onDismissed?: () => any;'
+      return:
+        type: () =&gt; any
+  - name: onLayerDidMount
+    uid: '@fluentui/react!IModalProps#onLayerDidMount:member'
+    package: '@fluentui/react!'
+    fullName: onLayerDidMount
+    summary: >-
+      A callback function for when the Modal content is mounted on the overlay
+      layer
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Use `layerProps.onLayerDidMount` instead
+    syntax:
+      content: 'onLayerDidMount?: () => void;'
+      return:
+        type: () =&gt; void
+  - name: overlay
+    uid: '@fluentui/react!IModalProps#overlay:member'
+    package: '@fluentui/react!'
+    fullName: overlay
+    summary: Defines an optional set of props to be passed through to Overlay
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'overlay?: IOverlayProps;'
+      return:
+        type: IOverlayProps
+  - name: responsiveMode
+    uid: '@fluentui/react!IModalProps#responsiveMode:member'
+    package: '@fluentui/react!'
+    fullName: responsiveMode
+    summary: The specified responsiveMode value for Modal to use.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'responsiveMode?: ResponsiveMode;'
+      return:
+        type: ResponsiveMode
+  - name: scrollableContentClassName
+    uid: '@fluentui/react!IModalProps#scrollableContentClassName:member'
+    package: '@fluentui/react!'
+    fullName: scrollableContentClassName
+    summary: Optional override for scrollable content class
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'scrollableContentClassName?: string;'
+      return:
+        type: string
+  - name: styles
+    uid: '@fluentui/react!IModalProps#styles:member'
+    package: '@fluentui/react!'
+    fullName: styles
+    summary: >-
+      Call to provide customized styling that will layer on top of the variant
+      rules.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'styles?: IStyleFunctionOrObject<IModalStyleProps, IModalStyles>;'
+      return:
+        type: 'IStyleFunctionOrObject&lt;IModalStyleProps, IModalStyles&gt;'
+  - name: subtitleAriaId
+    uid: '@fluentui/react!IModalProps#subtitleAriaId:member'
+    package: '@fluentui/react!'
+    fullName: subtitleAriaId
+    summary: 'ARIA id for the subtitle of the Modal, if any'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'subtitleAriaId?: string;'
+      return:
+        type: string
+  - name: theme
+    uid: '@fluentui/react!IModalProps#theme:member'
+    package: '@fluentui/react!'
+    fullName: theme
+    summary: Theme provided by higher-order component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
+  - name: titleAriaId
+    uid: '@fluentui/react!IModalProps#titleAriaId:member'
+    package: '@fluentui/react!'
+    fullName: titleAriaId
+    summary: 'ARIA id for the title of the Modal, if any'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'titleAriaId?: string;'
+      return:
+        type: string
+  - name: topOffsetFixed
+    uid: '@fluentui/react!IModalProps#topOffsetFixed:member'
+    package: '@fluentui/react!'
+    fullName: topOffsetFixed
+    summary: >-
+      Whether the modal should have top offset fixed once opened and expand from
+      the bottom only when the content changes dynamically.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'topOffsetFixed?: boolean;'
+      return:
+        type: boolean
+extends: React.RefAttributes&lt;HTMLDivElement&gt;

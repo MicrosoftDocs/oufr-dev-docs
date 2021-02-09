@@ -1,0 +1,116 @@
+### YamlMime:TSType
+name: IThemeSlotRule
+uid: '@fluentui/react!IThemeSlotRule:interface'
+package: '@fluentui/react!'
+fullName: IThemeSlotRule
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: asShade
+    uid: '@fluentui/react!IThemeSlotRule#asShade:member'
+    package: '@fluentui/react!'
+    fullName: asShade
+    summary: 'If set, this slot is the specified shade of the slot it inherits from.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'asShade?: Shade;'
+      return:
+        type: Shade
+  - name: color
+    uid: '@fluentui/react!IThemeSlotRule#color:member'
+    package: '@fluentui/react!'
+    fullName: color
+    summary: The actual color this theme slot is if it is a color.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'color?: IColor;'
+      return:
+        type: IColor
+  - name: dependentRules
+    uid: '@fluentui/react!IThemeSlotRule#dependentRules:member'
+    package: '@fluentui/react!'
+    fullName: dependentRules
+    summary: >-
+      A collection of rules that inherit from this one. It is the responsibility
+      of the inheriting rule to add itself to its parent's dependentRules
+      collection.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'dependentRules: IThemeSlotRule[];'
+      return:
+        type: 'IThemeSlotRule[]'
+  - name: inherits
+    uid: '@fluentui/react!IThemeSlotRule#inherits:member'
+    package: '@fluentui/react!'
+    fullName: inherits
+    summary: The theme slot this slot is based on.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'inherits?: IThemeSlotRule;'
+      return:
+        type: IThemeSlotRule
+  - name: isBackgroundShade
+    uid: '@fluentui/react!IThemeSlotRule#isBackgroundShade:member'
+    package: '@fluentui/react!'
+    fullName: isBackgroundShade
+    summary: >-
+      Whether this slot is a background shade, which uses different logic for
+      generating its inheriting-as-shade value.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isBackgroundShade?: boolean;'
+      return:
+        type: boolean
+  - name: isCustomized
+    uid: '@fluentui/react!IThemeSlotRule#isCustomized:member'
+    package: '@fluentui/react!'
+    fullName: isCustomized
+    summary: >-
+      Whether this slot has been manually overridden (else, it was automatically
+      generated based on inheritance).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isCustomized?: boolean;'
+      return:
+        type: boolean
+  - name: name
+    uid: '@fluentui/react!IThemeSlotRule#name:member'
+    package: '@fluentui/react!'
+    fullName: name
+    summary: The name of this theme slot.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name: string;'
+      return:
+        type: string
+  - name: value
+    uid: '@fluentui/react!IThemeSlotRule#value:member'
+    package: '@fluentui/react!'
+    fullName: value
+    summary: >-
+      The value of this slot if it is NOT a color. Must be falsey if not a
+      color.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'value?: string;'
+      return:
+        type: string

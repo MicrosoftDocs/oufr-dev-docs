@@ -1,0 +1,362 @@
+### YamlMime:TSType
+name: IListProps
+uid: '@fluentui/react!IListProps:interface'
+package: '@fluentui/react!'
+fullName: IListProps
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: className
+    uid: '@fluentui/react!IListProps#className:member'
+    package: '@fluentui/react!'
+    fullName: className
+    summary: Optional classname to append to root list.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'className?: string;'
+      return:
+        type: string
+  - name: componentRef
+    uid: '@fluentui/react!IListProps#componentRef:member'
+    package: '@fluentui/react!'
+    fullName: componentRef
+    summary: >-
+      Optional callback to access the IList interface. Use this instead of ref
+      for accessing the public methods and properties of the component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'componentRef?: IRefObject<IList>;'
+      return:
+        type: IRefObject&lt;IList&gt;
+  - name: getItemCountForPage
+    uid: '@fluentui/react!IListProps#getItemCountForPage:member'
+    package: '@fluentui/react!'
+    fullName: getItemCountForPage
+    summary: >-
+      Method called by the list to get how many items to render per page from
+      specified index. In general, use `getPageSpecification` instead.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        getItemCountForPage?: (itemIndex?: number, visibleRect?: IRectangle) =>
+        number;
+      return:
+        type: '(itemIndex?: number, visibleRect?: IRectangle) =&gt; number'
+  - name: getKey
+    uid: '@fluentui/react!IListProps#getKey:member'
+    package: '@fluentui/react!'
+    fullName: getKey
+    summary: 'Optional callback to get the item key, to be used on render.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getKey?: (item: T, index?: number) => string;'
+      return:
+        type: '(item: T, index?: number) =&gt; string'
+  - name: getPageHeight
+    uid: '@fluentui/react!IListProps#getPageHeight:member'
+    package: '@fluentui/react!'
+    fullName: getPageHeight
+    summary: >-
+      Method called by the list to get the pixel height for a given page. By
+      default, we measure the first page's height and default all other pages to
+      that height when calculating the surface space. It is ideal to be able to
+      adequately predict page heights in order to keep the surface space from
+      jumping in pixels, which has been seen to cause browser performance
+      issues. In general, use `getPageSpecification` instead.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        getPageHeight?: (itemIndex?: number, visibleRect?: IRectangle,
+        itemCount?: number) => number;
+      return:
+        type: >-
+          (itemIndex?: number, visibleRect?: IRectangle, itemCount?: number)
+          =&gt; number
+  - name: getPageSpecification
+    uid: '@fluentui/react!IListProps#getPageSpecification:member'
+    package: '@fluentui/react!'
+    fullName: getPageSpecification
+    summary: >-
+      Called by the list to get the specification for a page. Use this method to
+      provide an allocation of items per page, as well as an estimated rendered
+      height for the page. The list will use this to optimize virtualization.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        getPageSpecification?: (itemIndex?: number, visibleRect?: IRectangle) =>
+        IPageSpecification;
+      return:
+        type: >-
+          (itemIndex?: number, visibleRect?: IRectangle) =&gt;
+          IPageSpecification
+  - name: getPageStyle
+    uid: '@fluentui/react!IListProps#getPageStyle:member'
+    package: '@fluentui/react!'
+    fullName: getPageStyle
+    summary: >-
+      Method called by the list to derive the page style object. For spacer
+      pages, the list will derive the height and passed in heights will be
+      ignored.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getPageStyle?: (page: IPage<T>) => any;'
+      return:
+        type: '(page: IPage&lt;T&gt;) =&gt; any'
+  - name: ignoreScrollingState
+    uid: '@fluentui/react!IListProps#ignoreScrollingState:member'
+    package: '@fluentui/react!'
+    fullName: ignoreScrollingState
+    summary: >-
+      Whether to disable scroll state updates. This causes the isScrolling arg
+      in onRenderCell to always be undefined. This is a performance optimization
+      to let List skip a render cycle by not updating its scrolling state.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ignoreScrollingState?: boolean;'
+      return:
+        type: boolean
+  - name: items
+    uid: '@fluentui/react!IListProps#items:member'
+    package: '@fluentui/react!'
+    fullName: items
+    summary: Items to render.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: T[];'
+      return:
+        type: 'T[]'
+  - name: onPageAdded
+    uid: '@fluentui/react!IListProps#onPageAdded:member'
+    package: '@fluentui/react!'
+    fullName: onPageAdded
+    summary: Optional callback for monitoring when a page is added.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onPageAdded?: (page: IPage<T>) => void;'
+      return:
+        type: '(page: IPage&lt;T&gt;) =&gt; void'
+  - name: onPageRemoved
+    uid: '@fluentui/react!IListProps#onPageRemoved:member'
+    package: '@fluentui/react!'
+    fullName: onPageRemoved
+    summary: Optional callback for monitoring when a page is removed.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onPageRemoved?: (page: IPage<T>) => void;'
+      return:
+        type: '(page: IPage&lt;T&gt;) =&gt; void'
+  - name: onPagesUpdated
+    uid: '@fluentui/react!IListProps#onPagesUpdated:member'
+    package: '@fluentui/react!'
+    fullName: onPagesUpdated
+    summary: >-
+      Optional callback invoked when List rendering completed. This can be on
+      initial mount or on re-render due to scrolling. This method will be called
+      as a result of changes in List pages (added or removed), and after ALL the
+      changes complete. To track individual page Add / Remove use onPageAdded /
+      onPageRemoved instead.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onPagesUpdated?: (pages: IPage<T>[]) => void;'
+      return:
+        type: '(pages: IPage&lt;T&gt;[]) =&gt; void'
+  - name: onRenderCell
+    uid: '@fluentui/react!IListProps#onRenderCell:member'
+    package: '@fluentui/react!'
+    fullName: onRenderCell
+    summary: Method to call when trying to render an item.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        onRenderCell?: (item?: T, index?: number, isScrolling?: boolean) =>
+        React.ReactNode;
+      return:
+        type: >-
+          (item?: T, index?: number, isScrolling?: boolean) =&gt;
+          React.ReactNode
+  - name: onRenderPage
+    uid: '@fluentui/react!IListProps#onRenderPage:member'
+    package: '@fluentui/react!'
+    fullName: onRenderPage
+    summary: >-
+      Called when the List will render a page. Override this to control how
+      cells are rendered within a page.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onRenderPage?: IRenderFunction<IPageProps<T>>;'
+      return:
+        type: IRenderFunction&lt;IPageProps&lt;T&gt;&gt;
+  - name: onRenderRoot
+    uid: '@fluentui/react!IListProps#onRenderRoot:member'
+    package: '@fluentui/react!'
+    fullName: onRenderRoot
+    summary: >-
+      Render override for the element at the root of the `List`<!-- -->. Use
+      this to apply some final attributes or structure to the content each time
+      the list is updated with new active pages or items.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onRenderRoot?: IRenderFunction<IListOnRenderRootProps<T>>;'
+      return:
+        type: IRenderFunction&lt;IListOnRenderRootProps&lt;T&gt;&gt;
+  - name: onRenderSurface
+    uid: '@fluentui/react!IListProps#onRenderSurface:member'
+    package: '@fluentui/react!'
+    fullName: onRenderSurface
+    summary: >-
+      Render override for the element representing the surface of the `List`<!--
+      -->. Use this to alter the structure of the rendered content if necessary
+      on each update.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onRenderSurface?: IRenderFunction<IListOnRenderSurfaceProps<T>>;'
+      return:
+        type: IRenderFunction&lt;IListOnRenderSurfaceProps&lt;T&gt;&gt;
+  - name: onShouldVirtualize
+    uid: '@fluentui/react!IListProps#onShouldVirtualize:member'
+    package: '@fluentui/react!'
+    fullName: onShouldVirtualize
+    summary: >-
+      Optional callback to determine whether the list should be rendered in
+      full, or virtualized. Virtualization will add and remove pages of items as
+      the user scrolls them into the visible range. This benefits larger list
+      scenarios by reducing the DOM on the screen, but can negatively affect
+      performance for smaller lists. The default implementation will virtualize
+      when this callback is not provided.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onShouldVirtualize?: (props: IListProps<T>) => boolean;'
+      return:
+        type: '(props: IListProps&lt;T&gt;) =&gt; boolean'
+  - name: renderCount
+    uid: '@fluentui/react!IListProps#renderCount:member'
+    package: '@fluentui/react!'
+    fullName: renderCount
+    summary: Number of items to render.  items.length
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'renderCount?: number;'
+      return:
+        type: number
+  - name: renderedWindowsAhead
+    uid: '@fluentui/react!IListProps#renderedWindowsAhead:member'
+    package: '@fluentui/react!'
+    fullName: renderedWindowsAhead
+    summary: >-
+      In addition to the visible window, how many windowHeights should we render
+      ahead.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'renderedWindowsAhead?: number;'
+      return:
+        type: number
+  - name: renderedWindowsBehind
+    uid: '@fluentui/react!IListProps#renderedWindowsBehind:member'
+    package: '@fluentui/react!'
+    fullName: renderedWindowsBehind
+    summary: >-
+      In addition to the visible window, how many windowHeights should we render
+      behind.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'renderedWindowsBehind?: number;'
+      return:
+        type: number
+  - name: role
+    uid: '@fluentui/react!IListProps#role:member'
+    package: '@fluentui/react!'
+    fullName: role
+    summary: >-
+      The role to assign to the list root element. Use this to override the
+      default assignment of 'list' to the root and 'listitem' to the cells.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'role?: string;'
+      return:
+        type: string
+  - name: startIndex
+    uid: '@fluentui/react!IListProps#startIndex:member'
+    package: '@fluentui/react!'
+    fullName: startIndex
+    summary: Index in `items` array to start rendering from.  0
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'startIndex?: number;'
+      return:
+        type: number
+  - name: usePageCache
+    uid: '@fluentui/react!IListProps#usePageCache:member'
+    package: '@fluentui/react!'
+    fullName: usePageCache
+    summary: >-
+      Boolean value to enable render page caching. This is an experimental
+      performance optimization that is off by default.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'usePageCache?: boolean;'
+      return:
+        type: boolean
+  - name: version
+    uid: '@fluentui/react!IListProps#version:member'
+    package: '@fluentui/react!'
+    fullName: version
+    summary: >-
+      An object which can be passed in as a fresh instance to 'force update' the
+      list.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'version?: {};'
+      return:
+        type: '{}'
+extends: 'React.HTMLAttributes&lt;List&lt;T&gt; | HTMLDivElement&gt; '

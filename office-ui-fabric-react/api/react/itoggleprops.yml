@@ -1,0 +1,241 @@
+### YamlMime:TSType
+name: IToggleProps
+uid: '@fluentui/react!IToggleProps:interface'
+package: '@fluentui/react!'
+fullName: IToggleProps
+summary: Toggle component props.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: ariaLabel
+    uid: '@fluentui/react!IToggleProps#ariaLabel:member'
+    package: '@fluentui/react!'
+    fullName: ariaLabel
+    summary: Text for screen-reader to announce as the name of the toggle.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ariaLabel?: string;'
+      return:
+        type: string
+  - name: as
+    uid: '@fluentui/react!IToggleProps#as:member'
+    package: '@fluentui/react!'
+    fullName: as
+    summary: Render the root element as another type.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'as?: IComponentAs<React.HTMLAttributes<HTMLElement>>;'
+      return:
+        type: IComponentAs&lt;React.HTMLAttributes&lt;HTMLElement&gt;&gt;
+  - name: checked
+    uid: '@fluentui/react!IToggleProps#checked:member'
+    package: '@fluentui/react!'
+    fullName: checked
+    summary: >-
+      Checked state of the toggle. If you are maintaining state yourself, use
+      this property. Otherwise use `defaultChecked`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'checked?: boolean;'
+      return:
+        type: boolean
+  - name: componentRef
+    uid: '@fluentui/react!IToggleProps#componentRef:member'
+    package: '@fluentui/react!'
+    fullName: componentRef
+    summary: >-
+      Optional callback to access the IToggle interface. Use this instead of ref
+      for accessing the public methods and properties of the component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'componentRef?: IRefObject<IToggle>;'
+      return:
+        type: IRefObject&lt;IToggle&gt;
+  - name: defaultChecked
+    uid: '@fluentui/react!IToggleProps#defaultChecked:member'
+    package: '@fluentui/react!'
+    fullName: defaultChecked
+    summary: >-
+      Initial state of the toggle. If you want the toggle to maintain its own
+      state, use this. Otherwise use `checked`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'defaultChecked?: boolean;'
+      return:
+        type: boolean
+  - name: disabled
+    uid: '@fluentui/react!IToggleProps#disabled:member'
+    package: '@fluentui/react!'
+    fullName: disabled
+    summary: Optional disabled flag.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'disabled?: boolean;'
+      return:
+        type: boolean
+  - name: inlineLabel
+    uid: '@fluentui/react!IToggleProps#inlineLabel:member'
+    package: '@fluentui/react!'
+    fullName: inlineLabel
+    summary: >-
+      Whether the label (not the onText/offText) should be positioned inline
+      with the toggle control. Left (right in RTL) side when on/off text
+      provided VS right (left in RTL) side when no on/off text. Caution: when
+      not providing on/off text user may get confused in differentiating the
+      on/off states of the toggle.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'inlineLabel?: boolean;'
+      return:
+        type: boolean
+  - name: label
+    uid: '@fluentui/react!IToggleProps#label:member'
+    package: '@fluentui/react!'
+    fullName: label
+    summary: A label for the toggle.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'label?: string | JSX.Element;'
+      return:
+        type: string | JSX.Element
+  - name: offAriaLabel
+    uid: '@fluentui/react!IToggleProps#offAriaLabel:member'
+    package: '@fluentui/react!'
+    fullName: offAriaLabel
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: 'Use `ariaLabel` for name, and let the metadata convey state'
+    syntax:
+      content: 'offAriaLabel?: string;'
+      return:
+        type: string
+  - name: offText
+    uid: '@fluentui/react!IToggleProps#offText:member'
+    package: '@fluentui/react!'
+    fullName: offText
+    summary: >-
+      Text to display when toggle is OFF. Caution: when not providing on/off
+      text user may get confused in differentiating the on/off states of the
+      toggle.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'offText?: string;'
+      return:
+        type: string
+  - name: onAriaLabel
+    uid: '@fluentui/react!IToggleProps#onAriaLabel:member'
+    package: '@fluentui/react!'
+    fullName: onAriaLabel
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: 'Use `ariaLabel` for name, and let the metadata convey state'
+    syntax:
+      content: 'onAriaLabel?: string;'
+      return:
+        type: string
+  - name: onChange
+    uid: '@fluentui/react!IToggleProps#onChange:member'
+    package: '@fluentui/react!'
+    fullName: onChange
+    summary: Callback issued when the value changes.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        onChange?: (event: React.MouseEvent<HTMLElement>, checked?: boolean) =>
+        void;
+      return:
+        type: >-
+          (event: React.MouseEvent&lt;HTMLElement&gt;, checked?: boolean) =&gt;
+          void
+  - name: onChanged
+    uid: '@fluentui/react!IToggleProps#onChanged:member'
+    package: '@fluentui/react!'
+    fullName: onChanged
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Use `onChange` instead.
+    syntax:
+      content: 'onChanged?: (checked: boolean) => void;'
+      return:
+        type: '(checked: boolean) =&gt; void'
+  - name: onText
+    uid: '@fluentui/react!IToggleProps#onText:member'
+    package: '@fluentui/react!'
+    fullName: onText
+    summary: >-
+      Text to display when toggle is ON. Caution: when not providing on/off text
+      user may get confused in differentiating the on/off states of the toggle.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onText?: string;'
+      return:
+        type: string
+  - name: role
+    uid: '@fluentui/react!IToggleProps#role:member'
+    package: '@fluentui/react!'
+    fullName: role
+    summary: >-
+      Whether to use the 'switch' role (ARIA 1.1) or the 'checkbox' role (ARIA
+      1.0).  'switch'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'role?: ''checkbox'' | ''switch'' | ''menuitemcheckbox'';'
+      return:
+        type: '''checkbox'' | ''switch'' | ''menuitemcheckbox'''
+  - name: styles
+    uid: '@fluentui/react!IToggleProps#styles:member'
+    package: '@fluentui/react!'
+    fullName: styles
+    summary: Optional styles for the component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'styles?: IStyleFunctionOrObject<IToggleStyleProps, IToggleStyles>;'
+      return:
+        type: 'IStyleFunctionOrObject&lt;IToggleStyleProps, IToggleStyles&gt;'
+  - name: theme
+    uid: '@fluentui/react!IToggleProps#theme:member'
+    package: '@fluentui/react!'
+    fullName: theme
+    summary: Theme provided by HOC.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
+extends: React.HTMLAttributes&lt;HTMLElement&gt;

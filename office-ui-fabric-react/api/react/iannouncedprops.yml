@@ -1,0 +1,67 @@
+### YamlMime:TSType
+name: IAnnouncedProps
+uid: '@fluentui/react!IAnnouncedProps:interface'
+package: '@fluentui/react!'
+fullName: IAnnouncedProps
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: '"aria-live"'
+    uid: '@fluentui/react!IAnnouncedProps#"aria-live":member'
+    package: '@fluentui/react!'
+    fullName: '"aria-live"'
+    summary: >-
+      Priority with which the screen reader should treat updates to this
+      region.  'polite'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '''aria-live''?: ''off'' | ''polite'' | ''assertive'';'
+      return:
+        type: '''off'' | ''polite'' | ''assertive'''
+  - name: as
+    uid: '@fluentui/react!IAnnouncedProps#as:member'
+    package: '@fluentui/react!'
+    fullName: as
+    summary: >-
+      Optionally render the root of this component as another component type or
+      primitive. The custom type \*\*must\*\* preserve any children or native
+      props passed in.  'div'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'as?: React.ElementType;'
+      return:
+        type: React.ElementType
+  - name: message
+    uid: '@fluentui/react!IAnnouncedProps#message:member'
+    package: '@fluentui/react!'
+    fullName: message
+    summary: The status message the screen reader should announce.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'message?: string;'
+      return:
+        type: string
+  - name: styles
+    uid: '@fluentui/react!IAnnouncedProps#styles:member'
+    package: '@fluentui/react!'
+    fullName: styles
+    summary: >-
+      Call to provide customized styling that will layer on top of the variant
+      rules.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'styles?: IStyleFunctionOrObject<{}, IAnnouncedStyles>;'
+      return:
+        type: 'IStyleFunctionOrObject&lt;{}, IAnnouncedStyles&gt;'
+extends: React.Props&lt;AnnouncedBase&gt;

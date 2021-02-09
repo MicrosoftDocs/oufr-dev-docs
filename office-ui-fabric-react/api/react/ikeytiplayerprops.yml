@@ -1,0 +1,124 @@
+### YamlMime:TSType
+name: IKeytipLayerProps
+uid: '@fluentui/react!IKeytipLayerProps:interface'
+package: '@fluentui/react!'
+fullName: IKeytipLayerProps
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: componentRef
+    uid: '@fluentui/react!IKeytipLayerProps#componentRef:member'
+    package: '@fluentui/react!'
+    fullName: componentRef
+    summary: >-
+      Optional callback to access the KeytipLayer component. Use this instead of
+      ref for accessing the public methods and properties of the component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'componentRef?: IRefObject<IKeytipLayer>;'
+      return:
+        type: IRefObject&lt;IKeytipLayer&gt;
+  - name: content
+    uid: '@fluentui/react!IKeytipLayerProps#content:member'
+    package: '@fluentui/react!'
+    fullName: content
+    summary: >-
+      String to put inside the layer to be used for the aria-describedby for the
+      component with the keytip Should be one of the starting sequences
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'content: string;'
+      return:
+        type: string
+  - name: keytipExitSequences
+    uid: '@fluentui/react!IKeytipLayerProps#keytipExitSequences:member'
+    package: '@fluentui/react!'
+    fullName: keytipExitSequences
+    summary: List of key sequences that will exit keytips mode
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'keytipExitSequences?: IKeytipTransitionKey[];'
+      return:
+        type: 'IKeytipTransitionKey[]'
+  - name: keytipReturnSequences
+    uid: '@fluentui/react!IKeytipLayerProps#keytipReturnSequences:member'
+    package: '@fluentui/react!'
+    fullName: keytipReturnSequences
+    summary: >-
+      List of key sequences that execute the return functionality in keytips
+      (going back to the previous level of keytips)
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'keytipReturnSequences?: IKeytipTransitionKey[];'
+      return:
+        type: 'IKeytipTransitionKey[]'
+  - name: keytipStartSequences
+    uid: '@fluentui/react!IKeytipLayerProps#keytipStartSequences:member'
+    package: '@fluentui/react!'
+    fullName: keytipStartSequences
+    summary: List of key sequences that will start keytips mode
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'keytipStartSequences?: IKeytipTransitionKey[];'
+      return:
+        type: 'IKeytipTransitionKey[]'
+  - name: onEnterKeytipMode
+    uid: '@fluentui/react!IKeytipLayerProps#onEnterKeytipMode:member'
+    package: '@fluentui/react!'
+    fullName: onEnterKeytipMode
+    summary: Callback function triggered when keytip mode is entered
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onEnterKeytipMode?: () => void;'
+      return:
+        type: () =&gt; void
+  - name: onExitKeytipMode
+    uid: '@fluentui/react!IKeytipLayerProps#onExitKeytipMode:member'
+    package: '@fluentui/react!'
+    fullName: onExitKeytipMode
+    summary: >-
+      Callback function triggered when keytip mode is exited. ev is the Mouse or
+      Keyboard Event that triggered the exit, if any.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        onExitKeytipMode?: (ev?: React.KeyboardEvent<HTMLElement> |
+        React.MouseEvent<HTMLElement>) => void;
+      return:
+        type: >-
+          (ev?: React.KeyboardEvent&lt;HTMLElement&gt; |
+          React.MouseEvent&lt;HTMLElement&gt;) =&gt; void
+  - name: styles
+    uid: '@fluentui/react!IKeytipLayerProps#styles:member'
+    package: '@fluentui/react!'
+    fullName: styles
+    summary: (Optional) Call to provide customized styling.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        styles?: IStyleFunctionOrObject<IKeytipLayerStyleProps,
+        IKeytipLayerStyles>;
+      return:
+        type: >-
+          IStyleFunctionOrObject&lt;IKeytipLayerStyleProps,
+          IKeytipLayerStyles&gt;
+extends: 'React.ClassAttributes&lt;IKeytipLayer&gt; '

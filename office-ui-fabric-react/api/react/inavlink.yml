@@ -1,0 +1,240 @@
+### YamlMime:TSType
+name: INavLink
+uid: '@fluentui/react!INavLink:interface'
+package: '@fluentui/react!'
+fullName: INavLink
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: ariaCurrent
+    uid: '@fluentui/react!INavLink#ariaCurrent:member'
+    package: '@fluentui/react!'
+    fullName: ariaCurrent
+    summary: >-
+      Aria-current token for active nav links. Must be a valid token value, and
+      defaults to 'page'.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ariaCurrent?: ''page'' | ''step'' | ''location'' | ''date'' | ''time'' | ''true'';'
+      return:
+        type: '''page'' | ''step'' | ''location'' | ''date'' | ''time'' | ''true'''
+  - name: ariaLabel
+    uid: '@fluentui/react!INavLink#ariaLabel:member'
+    package: '@fluentui/react!'
+    fullName: ariaLabel
+    summary: >-
+      Aria label for nav link. Ignored if `collapseAriaLabel` or
+      `expandAriaLabel` is provided.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ariaLabel?: string;'
+      return:
+        type: string
+  - name: automationId
+    uid: '@fluentui/react!INavLink#automationId:member'
+    package: '@fluentui/react!'
+    fullName: automationId
+    summary: The name to use for functional automation tests
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'automationId?: string;'
+      return:
+        type: string
+  - name: collapseAriaLabel
+    uid: '@fluentui/react!INavLink#collapseAriaLabel:member'
+    package: '@fluentui/react!'
+    fullName: collapseAriaLabel
+    summary: ARIA label when group is collapsed and can be expanded.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'collapseAriaLabel?: string;'
+      return:
+        type: string
+  - name: disabled
+    uid: '@fluentui/react!INavLink#disabled:member'
+    package: '@fluentui/react!'
+    fullName: disabled
+    summary: Whether or not the link is disabled.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'disabled?: boolean;'
+      return:
+        type: boolean
+  - name: expandAriaLabel
+    uid: '@fluentui/react!INavLink#expandAriaLabel:member'
+    package: '@fluentui/react!'
+    fullName: expandAriaLabel
+    summary: ARIA label when group is collapsed and can be expanded.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'expandAriaLabel?: string;'
+      return:
+        type: string
+  - name: forceAnchor
+    uid: '@fluentui/react!INavLink#forceAnchor:member'
+    package: '@fluentui/react!'
+    fullName: forceAnchor
+    summary: >-
+      (Optional) By default, any link with onClick defined will render as a
+      button. Set this property to true to override that behavior. (Links
+      without onClick defined will render as anchors by default.)
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'forceAnchor?: boolean;'
+      return:
+        type: boolean
+  - name: icon
+    uid: '@fluentui/react!INavLink#icon:member'
+    package: '@fluentui/react!'
+    fullName: icon
+    summary: Name of an icon to render next to the link button.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'icon?: string;'
+      return:
+        type: string
+  - name: iconClassName
+    uid: '@fluentui/react!INavLink#iconClassName:member'
+    package: '@fluentui/react!'
+    fullName: iconClassName
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Use `iconProps.className` instead.
+    syntax:
+      content: 'iconClassName?: string;'
+      return:
+        type: string
+  - name: iconProps
+    uid: '@fluentui/react!INavLink#iconProps:member'
+    package: '@fluentui/react!'
+    fullName: iconProps
+    summary: Props for an icon to render next to the link button.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'iconProps?: IIconProps;'
+      return:
+        type: IIconProps
+  - name: isExpanded
+    uid: '@fluentui/react!INavLink#isExpanded:member'
+    package: '@fluentui/react!'
+    fullName: isExpanded
+    summary: Whether or not the link is in an expanded state
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isExpanded?: boolean;'
+      return:
+        type: boolean
+  - name: key
+    uid: '@fluentui/react!INavLink#key:member'
+    package: '@fluentui/react!'
+    fullName: key
+    summary: >-
+      Unique, stable key for the link, used when rendering the list of links and
+      for tracking the currently selected link.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'key?: string;'
+      return:
+        type: string
+  - name: links
+    uid: '@fluentui/react!INavLink#links:member'
+    package: '@fluentui/react!'
+    fullName: links
+    summary: 'Child links to this link, if any'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'links?: INavLink[];'
+      return:
+        type: 'INavLink[]'
+  - name: name
+    uid: '@fluentui/react!INavLink#name:member'
+    package: '@fluentui/react!'
+    fullName: name
+    summary: Text to render for this link
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name: string;'
+      return:
+        type: string
+  - name: onClick
+    uid: '@fluentui/react!INavLink#onClick:member'
+    package: '@fluentui/react!'
+    fullName: onClick
+    summary: >-
+      Callback invoked when this link is clicked. Providing this callback will
+      cause the link to render as a button (rather than an anchor) unless
+      forceAnchor is set to true.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onClick?: (ev?: React.MouseEvent<HTMLElement>, item?: INavLink) => void;'
+      return:
+        type: '(ev?: React.MouseEvent&lt;HTMLElement&gt;, item?: INavLink) =&gt; void'
+  - name: target
+    uid: '@fluentui/react!INavLink#target:member'
+    package: '@fluentui/react!'
+    fullName: target
+    summary: Link <a> target.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'target?: string;'
+      return:
+        type: string
+  - name: title
+    uid: '@fluentui/react!INavLink#title:member'
+    package: '@fluentui/react!'
+    fullName: title
+    summary: Text for title tooltip and ARIA description.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'title?: string;'
+      return:
+        type: string
+  - name: url
+    uid: '@fluentui/react!INavLink#url:member'
+    package: '@fluentui/react!'
+    fullName: url
+    summary: URL to navigate to for this link
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'url: string;'
+      return:
+        type: string

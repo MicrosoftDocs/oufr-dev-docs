@@ -1,0 +1,59 @@
+### YamlMime:TSType
+name: IDragDropHelper
+uid: '@fluentui/react!IDragDropHelper:interface'
+package: '@fluentui/react!'
+fullName: IDragDropHelper
+summary: >-
+  Helper for subscribing and unsubscribing to drag and drop events on an
+  HTMLElement.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: dispose
+    uid: '@fluentui/react!IDragDropHelper#dispose:member'
+    package: '@fluentui/react!'
+    fullName: dispose
+    summary: Dispose of listeners bound to instance of helper.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'dispose: () => void;'
+      return:
+        type: () =&gt; void
+  - name: subscribe
+    uid: '@fluentui/react!IDragDropHelper#subscribe:member'
+    package: '@fluentui/react!'
+    fullName: subscribe
+    summary: Subscribe to events on a DOM node with drag and drop configuration.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        subscribe: (root: HTMLElement, events: EventGroup, options:
+        IDragDropOptions) => {
+                key: string;
+                dispose: () => void;
+            };
+      return:
+        type: >-
+          (root: HTMLElement, events: EventGroup, options: IDragDropOptions)
+          =&gt; {
+                  key: string;
+                  dispose: () =&gt; void;
+              }
+  - name: unsubscribe
+    uid: '@fluentui/react!IDragDropHelper#unsubscribe:member'
+    package: '@fluentui/react!'
+    fullName: unsubscribe
+    summary: Unsubscribe to events registered on a DOM node with key.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'unsubscribe: (root: HTMLElement, key: string) => void;'
+      return:
+        type: '(root: HTMLElement, key: string) =&gt; void'

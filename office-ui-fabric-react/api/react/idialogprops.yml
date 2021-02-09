@@ -1,0 +1,330 @@
+### YamlMime:TSType
+name: IDialogProps
+uid: '@fluentui/react!IDialogProps:interface'
+package: '@fluentui/react!'
+fullName: IDialogProps
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: ariaDescribedById
+    uid: '@fluentui/react!IDialogProps#ariaDescribedById:member'
+    package: '@fluentui/react!'
+    fullName: ariaDescribedById
+    summary: Optional id for aria-DescribedBy
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Pass through via `modalProps.subtitleAriaId` instead.
+    syntax:
+      content: 'ariaDescribedById?: string;'
+      return:
+        type: string
+  - name: ariaLabelledById
+    uid: '@fluentui/react!IDialogProps#ariaLabelledById:member'
+    package: '@fluentui/react!'
+    fullName: ariaLabelledById
+    summary: Optional id for aria-LabelledBy
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Pass through via `modalProps.titleAriaId` instead.
+    syntax:
+      content: 'ariaLabelledById?: string;'
+      return:
+        type: string
+  - name: className
+    uid: '@fluentui/react!IDialogProps#className:member'
+    package: '@fluentui/react!'
+    fullName: className
+    summary: Optional class name to be added to the root class
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Pass through via `modalProps.className` instead
+    syntax:
+      content: 'className?: string;'
+      return:
+        type: string
+  - name: componentRef
+    uid: '@fluentui/react!IDialogProps#componentRef:member'
+    package: '@fluentui/react!'
+    fullName: componentRef
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: 'Unused, returns no value'
+    syntax:
+      content: 'componentRef?: IRefObject<IDialog>;'
+      return:
+        type: IRefObject&lt;IDialog&gt;
+  - name: containerClassName
+    uid: '@fluentui/react!IDialogProps#containerClassName:member'
+    package: '@fluentui/react!'
+    fullName: containerClassName
+    summary: Optional override for container class
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Pass through via `modalProps.className` instead
+    syntax:
+      content: 'containerClassName?: string;'
+      return:
+        type: string
+  - name: contentClassName
+    uid: '@fluentui/react!IDialogProps#contentClassName:member'
+    package: '@fluentui/react!'
+    fullName: contentClassName
+    summary: Optional override content class
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Pass through via `dialogContentProps` instead as `className`<!-- -->.
+    syntax:
+      content: 'contentClassName?: string;'
+      return:
+        type: string
+  - name: dialogContentProps
+    uid: '@fluentui/react!IDialogProps#dialogContentProps:member'
+    package: '@fluentui/react!'
+    fullName: dialogContentProps
+    summary: Props to be passed through to Dialog Content
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'dialogContentProps?: IDialogContentProps;'
+      return:
+        type: IDialogContentProps
+  - name: hidden
+    uid: '@fluentui/react!IDialogProps#hidden:member'
+    package: '@fluentui/react!'
+    fullName: hidden
+    summary: Whether the dialog is hidden.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'hidden?: boolean;'
+      return:
+        type: boolean
+  - name: isBlocking
+    uid: '@fluentui/react!IDialogProps#isBlocking:member'
+    package: '@fluentui/react!'
+    fullName: isBlocking
+    summary: >-
+      Whether the dialog can be light dismissed by clicking outside the dialog
+      (on the overlay).
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Pass through via `modalProps` instead
+    syntax:
+      content: 'isBlocking?: boolean;'
+      return:
+        type: boolean
+  - name: isDarkOverlay
+    uid: '@fluentui/react!IDialogProps#isDarkOverlay:member'
+    package: '@fluentui/react!'
+    fullName: isDarkOverlay
+    summary: Whether the overlay is dark themed.
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Pass through via `modalProps` instead
+    syntax:
+      content: 'isDarkOverlay?: boolean;'
+      return:
+        type: boolean
+  - name: isOpen
+    uid: '@fluentui/react!IDialogProps#isOpen:member'
+    package: '@fluentui/react!'
+    fullName: isOpen
+    summary: Whether the dialog is displayed.
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Use `hidden` instead
+    syntax:
+      content: 'isOpen?: boolean;'
+      return:
+        type: boolean
+  - name: maxWidth
+    uid: '@fluentui/react!IDialogProps#maxWidth:member'
+    package: '@fluentui/react!'
+    fullName: maxWidth
+    summary: >-
+      Sets the maximum width for the dialog. It limits the width property to be
+      larger than the value specified in max-width.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'maxWidth?: ICSSRule | ICSSPixelUnitRule;'
+      return:
+        type: ICSSRule | ICSSPixelUnitRule
+  - name: minWidth
+    uid: '@fluentui/react!IDialogProps#minWidth:member'
+    package: '@fluentui/react!'
+    fullName: minWidth
+    summary: >-
+      Sets the minimum width of the dialog. It limits the width property to be
+      not smaller than the value specified in min-width.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'minWidth?: ICSSRule | ICSSPixelUnitRule;'
+      return:
+        type: ICSSRule | ICSSPixelUnitRule
+  - name: modalProps
+    uid: '@fluentui/react!IDialogProps#modalProps:member'
+    package: '@fluentui/react!'
+    fullName: modalProps
+    summary: Props to be passed through to Modal
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'modalProps?: IModalProps;'
+      return:
+        type: IModalProps
+  - name: onDismiss
+    uid: '@fluentui/react!IDialogProps#onDismiss:member'
+    package: '@fluentui/react!'
+    fullName: onDismiss
+    summary: >-
+      A callback function for when the Dialog is dismissed from the close button
+      or light dismiss. Can also be specified separately in content and modal.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onDismiss?: (ev?: React.MouseEvent<HTMLButtonElement>) => any;'
+      return:
+        type: '(ev?: React.MouseEvent&lt;HTMLButtonElement&gt;) =&gt; any'
+  - name: onDismissed
+    uid: '@fluentui/react!IDialogProps#onDismissed:member'
+    package: '@fluentui/react!'
+    fullName: onDismissed
+    summary: >-
+      A callback function which is called after the Dialog is dismissed and the
+      animation is complete.
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Pass through via `modalProps` instead
+    syntax:
+      content: 'onDismissed?: () => any;'
+      return:
+        type: () =&gt; any
+  - name: onLayerDidMount
+    uid: '@fluentui/react!IDialogProps#onLayerDidMount:member'
+    package: '@fluentui/react!'
+    fullName: onLayerDidMount
+    summary: >-
+      A callback function for when the Dialog content is mounted on the overlay
+      layer
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Pass through via `modalProps.layerProps` instead
+    syntax:
+      content: 'onLayerDidMount?: () => void;'
+      return:
+        type: () =&gt; void
+  - name: onLayerMounted
+    uid: '@fluentui/react!IDialogProps#onLayerMounted:member'
+    package: '@fluentui/react!'
+    fullName: onLayerMounted
+    summary: Deprecated at 0.81.2.
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Use `onLayerDidMount` instead.
+    syntax:
+      content: 'onLayerMounted?: () => void;'
+      return:
+        type: () =&gt; void
+  - name: styles
+    uid: '@fluentui/react!IDialogProps#styles:member'
+    package: '@fluentui/react!'
+    fullName: styles
+    summary: >-
+      Call to provide customized styling that will layer on top of the variant
+      rules
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'styles?: IStyleFunctionOrObject<IDialogStyleProps, IDialogStyles>;'
+      return:
+        type: 'IStyleFunctionOrObject&lt;IDialogStyleProps, IDialogStyles&gt;'
+  - name: subText
+    uid: '@fluentui/react!IDialogProps#subText:member'
+    package: '@fluentui/react!'
+    fullName: subText
+    summary: The subtext to display in the dialog.
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Pass through via `dialogContentProps` instead.
+    syntax:
+      content: 'subText?: string;'
+      return:
+        type: string
+  - name: theme
+    uid: '@fluentui/react!IDialogProps#theme:member'
+    package: '@fluentui/react!'
+    fullName: theme
+    summary: Theme provided by HOC.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
+  - name: title
+    uid: '@fluentui/react!IDialogProps#title:member'
+    package: '@fluentui/react!'
+    fullName: title
+    summary: The title text to display at the top of the dialog.
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Pass through via `dialogContentProps` instead.
+    syntax:
+      content: 'title?: string | JSX.Element;'
+      return:
+        type: string | JSX.Element
+  - name: topButtonsProps
+    uid: '@fluentui/react!IDialogProps#topButtonsProps:member'
+    package: '@fluentui/react!'
+    fullName: topButtonsProps
+    summary: Other top buttons that will show up next to the close button
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Pass through via `dialogContentProps` instead.
+    syntax:
+      content: 'topButtonsProps?: IButtonProps[];'
+      return:
+        type: 'IButtonProps[]'
+  - name: type
+    uid: '@fluentui/react!IDialogProps#type:member'
+    package: '@fluentui/react!'
+    fullName: type
+    summary: The type of Dialog to display.
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Pass through via `dialogContentProps` instead.
+    syntax:
+      content: 'type?: DialogType;'
+      return:
+        type: DialogType
+extends: React.ClassAttributes&lt;DialogBase&gt;

@@ -1,0 +1,67 @@
+### YamlMime:TSType
+name: IVerticalDividerProps
+uid: '@fluentui/react!IVerticalDividerProps:interface'
+package: '@fluentui/react!'
+fullName: IVerticalDividerProps
+summary: Props for the Vertical Divider
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: className
+    uid: '@fluentui/react!IVerticalDividerProps#className:member'
+    package: '@fluentui/react!'
+    fullName: className
+    summary: className that will be placed on the divider wrapper div
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'className?: string;'
+      return:
+        type: string
+  - name: getClassNames
+    uid: '@fluentui/react!IVerticalDividerProps#getClassNames:member'
+    package: '@fluentui/react!'
+    fullName: getClassNames
+    summary: >-
+      Optional function to generate the class names for the divider for custom
+      styling
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Use `styles` instead.
+    syntax:
+      content: 'getClassNames?: (theme: ITheme) => IVerticalDividerClassNames;'
+      return:
+        type: '(theme: ITheme) =&gt; IVerticalDividerClassNames'
+  - name: styles
+    uid: '@fluentui/react!IVerticalDividerProps#styles:member'
+    package: '@fluentui/react!'
+    fullName: styles
+    summary: Optional override stylings that will get merged with the dividers styles.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        styles?: IStyleFunctionOrObject<IVerticalDividerPropsStyles,
+        IVerticalDividerStyles>;
+      return:
+        type: >-
+          IStyleFunctionOrObject&lt;IVerticalDividerPropsStyles,
+          IVerticalDividerStyles&gt;
+  - name: theme
+    uid: '@fluentui/react!IVerticalDividerProps#theme:member'
+    package: '@fluentui/react!'
+    fullName: theme
+    summary: The theme that should be used to render the vertical divider.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
+extends: React.HTMLAttributes&lt;HTMLElement&gt;

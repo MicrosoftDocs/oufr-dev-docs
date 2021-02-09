@@ -1,0 +1,104 @@
+### YamlMime:TSType
+name: IFabricProps
+uid: '@fluentui/react!IFabricProps:interface'
+package: '@fluentui/react!'
+fullName: IFabricProps
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: applyTheme
+    uid: '@fluentui/react!IFabricProps#applyTheme:member'
+    package: '@fluentui/react!'
+    fullName: applyTheme
+    summary: >-
+      Applies the current body background specified in the theme to the root
+      element.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'applyTheme?: boolean;'
+      return:
+        type: boolean
+  - name: applyThemeToBody
+    uid: '@fluentui/react!IFabricProps#applyThemeToBody:member'
+    package: '@fluentui/react!'
+    fullName: applyThemeToBody
+    summary: >-
+      Applies the current body background specified in the theme to the body
+      element.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'applyThemeToBody?: boolean;'
+      return:
+        type: boolean
+  - name: as
+    uid: '@fluentui/react!IFabricProps#as:member'
+    package: '@fluentui/react!'
+    fullName: as
+    summary: 'Overrides the root element type, defaults to `div`<!-- -->.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'as?: React.ElementType;'
+      return:
+        type: React.ElementType
+  - name: componentRef
+    uid: '@fluentui/react!IFabricProps#componentRef:member'
+    package: '@fluentui/react!'
+    fullName: componentRef
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'componentRef?: IRefObject<{}>;'
+      return:
+        type: 'IRefObject&lt;{}&gt;'
+  - name: dir
+    uid: '@fluentui/react!IFabricProps#dir:member'
+    package: '@fluentui/react!'
+    fullName: dir
+    summary: >-
+      Specifies the direction of the content. Will inject a `dir` attribute, and
+      also ensure that the `rtl` flag of the contextual theme object is set
+      correctly so that css registered with merge-styles can be auto flipped
+      correctly.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'dir?: ''rtl'' | ''ltr'' | ''auto'';'
+      return:
+        type: '''rtl'' | ''ltr'' | ''auto'''
+  - name: styles
+    uid: '@fluentui/react!IFabricProps#styles:member'
+    package: '@fluentui/react!'
+    fullName: styles
+    summary: Overrides the styles for the component.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'styles?: IStyleFunctionOrObject<IFabricStyleProps, IFabricStyles>;'
+      return:
+        type: 'IStyleFunctionOrObject&lt;IFabricStyleProps, IFabricStyles&gt;'
+  - name: theme
+    uid: '@fluentui/react!IFabricProps#theme:member'
+    package: '@fluentui/react!'
+    fullName: theme
+    summary: Injected by the `styled` HOC wrapper.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'theme?: ITheme;'
+      return:
+        type: '<xref uid="@fluentui/theme!ITheme:interface" />'
+extends: React.HTMLAttributes&lt;HTMLDivElement&gt;
