@@ -18,7 +18,7 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'menu?: React.PropsWithChildren<MinimalMenuProps>;'
+      content: 'menu?: ObjectShorthandProps<MinimalMenuProps & ComponentProps>;'
       return:
-        type: React.PropsWithChildren&lt;MinimalMenuProps&gt;
+        type: ObjectShorthandProps&lt;MinimalMenuProps & ComponentProps&gt;
 extends: 'Omit&lt;MenuButtonProps, ''menu''&gt;'
