@@ -309,9 +309,9 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'onFocus?: (event: React.FocusEvent<HTMLElement | FocusZone>) => void;'
+      content: 'onFocus?: (event: React.FocusEvent<HTMLElement>) => void;'
       return:
-        type: '(event: React.FocusEvent&lt;HTMLElement | FocusZone&gt;) =&gt; void'
+        type: '(event: React.FocusEvent&lt;HTMLElement&gt;) =&gt; void'
   - name: onFocusNotification
     uid: '@fluentui/react-focus!IFocusZoneProps#onFocusNotification:member'
     package: '@fluentui/react-focus!'
@@ -507,4 +507,4 @@ properties:
       content: 'stopFocusPropagation?: boolean;'
       return:
         type: boolean
-extends: 'React.HTMLAttributes&lt;HTMLElement | FocusZone&gt; '
+extends: 'React.HTMLAttributes&lt;HTMLElement&gt; '

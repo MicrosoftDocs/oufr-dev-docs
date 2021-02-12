@@ -44,7 +44,19 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'menuButton?: ShorthandProps;'
+      content: 'menuButton?: ShorthandProps<MenuButtonProps>;'
       return:
-        type: ShorthandProps
+        type: ShorthandProps&lt;MenuButtonProps&gt;
+  - name: menuButtonRef
+    uid: '@fluentui/react-button!SplitButtonProps#menuButtonRef:member'
+    package: '@fluentui/react-button!'
+    fullName: menuButtonRef
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'menuButtonRef?: React.RefObject<HTMLButtonElement>;'
+      return:
+        type: React.RefObject&lt;HTMLButtonElement&gt;
 extends: ButtonProps
