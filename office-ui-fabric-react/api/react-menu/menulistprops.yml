@@ -8,4 +8,33 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
+properties:
+  - name: checkedValues
+    uid: '@fluentui/react-menu!MenuListProps#checkedValues:member'
+    package: '@fluentui/react-menu!'
+    fullName: checkedValues
+    summary: Map of all checked values
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'checkedValues?: Record<string, string[]>;'
+      return:
+        type: 'Record&lt;string, string[]&gt;'
+  - name: onCheckedValueChange
+    uid: '@fluentui/react-menu!MenuListProps#onCheckedValueChange:member'
+    package: '@fluentui/react-menu!'
+    fullName: onCheckedValueChange
+    summary: Callback when checked items change for value with a name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        onCheckedValueChange?: (e: React.MouseEvent | React.KeyboardEvent, name:
+        string, checkedItems: string[]) => void;
+      return:
+        type: >-
+          (e: React.MouseEvent | React.KeyboardEvent, name: string,
+          checkedItems: string[]) =&gt; void
 extends: ComponentProps
