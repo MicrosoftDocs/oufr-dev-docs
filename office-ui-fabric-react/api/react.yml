@@ -693,6 +693,7 @@ interfaces:
   - '@fluentui/react!IWeeklyDayPickerStyleProps:interface'
   - '@fluentui/react!IWeeklyDayPickerStyles:interface'
   - '@fluentui/react!IWindowWithSegments:interface'
+  - '@fluentui/react!IWithResponsiveModeState:interface'
   - '@fluentui/react!IWithViewportProps:interface'
   - '@fluentui/react!ThemeProviderProps:interface'
 functions:
@@ -1128,6 +1129,18 @@ functions:
       return:
         type: string
         description: ''
+  - name: getInitialResponsiveMode()
+    uid: '@fluentui/react!getInitialResponsiveMode:function(1)'
+    package: '@fluentui/react!'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'export declare function getInitialResponsiveMode(): ResponsiveMode;'
+      return:
+        type: ResponsiveMode
+        description: ''
   - name: 'getMaxHeight(target, targetEdge, gapSpace, bounds, coverTarget)'
     uid: '@fluentui/react!getMaxHeight:function(1)'
     package: '@fluentui/react!'
@@ -1201,6 +1214,24 @@ functions:
       return:
         type: string
         description: Hex color string prefixed with \#
+  - name: getResponsiveMode(currentWindow)
+    uid: '@fluentui/react!getResponsiveMode:function(1)'
+    package: '@fluentui/react!'
+    summary: Hook to get the current responsive mode (window size category).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        export declare function getResponsiveMode(currentWindow: Window |
+        undefined): ResponsiveMode;
+      parameters:
+        - id: currentWindow
+          description: Use this window when determining the responsive mode.
+          type: Window | undefined
+      return:
+        type: ResponsiveMode
+        description: ''
   - name: 'getShade(color, shade, isInverted)'
     uid: '@fluentui/react!getShade:function(1)'
     package: '@fluentui/react!'
@@ -1360,6 +1391,31 @@ functions:
           type: number
       return:
         type: IRGB
+        description: ''
+  - name: initializeResponsiveMode(element)
+    uid: '@fluentui/react!initializeResponsiveMode:function(1)'
+    package: '@fluentui/react!'
+    summary: >-
+      Initializes the responsive mode to the current window size. This can be
+      used to avoid a re-render during first component mount since the window
+      would otherwise not be measured until after mounting.
+
+
+      This WILL NOT trigger any updates to components that have already consumed
+      the responsive mode!
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        export declare function initializeResponsiveMode(element?: HTMLElement):
+        void;
+      parameters:
+        - id: element
+          description: ''
+          type: HTMLElement
+      return:
+        type: void
         description: ''
   - name: isDark(color)
     uid: '@fluentui/react!isDark:function(1)'
@@ -1648,6 +1704,27 @@ functions:
       return:
         type: string
         description: String to use for the keytip ID.
+  - name: setResponsiveMode(responsiveMode)
+    uid: '@fluentui/react!setResponsiveMode:function(1)'
+    package: '@fluentui/react!'
+    summary: >-
+      Allows a server rendered scenario to provide a \*\*default\*\* responsive
+      mode. This WILL NOT trigger any updates to components that have already
+      consumed the responsive mode!
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        export declare function setResponsiveMode(responsiveMode: ResponsiveMode
+        | undefined): void;
+      parameters:
+        - id: responsiveMode
+          description: ''
+          type: ResponsiveMode | undefined
+      return:
+        type: void
+        description: ''
   - name: themeRulesStandardCreator()
     uid: '@fluentui/react!themeRulesStandardCreator:function(1)'
     package: '@fluentui/react!'
@@ -1867,4 +1944,29 @@ functions:
           type: KeytipDataOptions
       return:
         type: React.Ref&lt;TElement&gt;
+        description: ''
+  - name: withResponsiveMode(ComposedComponent)
+    uid: '@fluentui/react!withResponsiveMode:function(1)'
+    package: '@fluentui/react!'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      Decorator usage is deprecated. Either call `getResponsiveMode` manually,
+      or use the `useResponsiveMode` hook within a function component.
+    syntax:
+      content: >-
+        export declare function withResponsiveMode<TProps extends {
+            responsiveMode?: ResponsiveMode;
+        }, TState>(ComposedComponent: new (props: TProps, ...args: any[]) =>
+        React.Component<TProps, TState>): any;
+      parameters:
+        - id: ComposedComponent
+          description: ''
+          type: >-
+            new (props: TProps, ...args: any[]) =&gt; React.Component&lt;TProps,
+            TState&gt;
+      return:
+        type: any
         description: ''

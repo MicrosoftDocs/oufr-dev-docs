@@ -6,3 +6,168 @@ summary: ''
 interfaces:
   - '@fluentui/react-utilities!BaseSlots:interface'
   - '@fluentui/react-utilities!ComponentProps:interface'
+  - '@fluentui/react-utilities!UseBooleanCallbacks:interface'
+functions:
+  - name: useBoolean(initialState)
+    uid: '@fluentui/react-utilities!useBoolean:function(1)'
+    package: '@fluentui/react-utilities!'
+    summary: >-
+      Hook to store a value and generate callbacks for setting the value to true
+      or false. The identity of the callbacks will always stay the same.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        export declare function useBoolean(initialState: boolean): [boolean,
+        UseBooleanCallbacks];
+      parameters:
+        - id: initialState
+          description: Initial value
+          type: boolean
+      return:
+        type: '[boolean, UseBooleanCallbacks]'
+        description: >-
+          Array with the current value and an object containing the updater
+          callbacks.
+  - name: useConst(initialValue)
+    uid: '@fluentui/react-utilities!useConst:function(1)'
+    package: '@fluentui/react-utilities!'
+    summary: >-
+      Hook to initialize and return a constant value. Unlike `React.useMemo`<!--
+      -->, this is guaranteed to always return the same value (and if the
+      initializer is a function, only call it once). This is similar to setting
+      a private member in a class constructor.
+
+
+      If the value should ever change based on dependencies, use `React.useMemo`
+      instead.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'export declare function useConst<T>(initialValue: T | (() => T)): T;'
+      parameters:
+        - id: initialValue
+          description: >-
+            Initial value, or function to get the initial value. Similar to
+            `useState`<!-- -->, only the value/function passed in the first time
+            this is called is respected.
+          type: T | (() =&gt; T)
+      return:
+        type: T
+        description: The value. The identity of this value will always be the same.
+  - name: 'useControllableValue(controlledValue, defaultUncontrolledValue)'
+    uid: '@fluentui/react-utilities!useControllableValue:function(1)'
+    package: '@fluentui/react-utilities!'
+    summary: >-
+      Hook to manage a value that could be either controlled or uncontrolled,
+      such as a checked state or text box string.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        export declare function useControllableValue<TValue, TElement extends
+        HTMLElement>(controlledValue: TValue | undefined,
+        defaultUncontrolledValue: TValue | undefined): Readonly<[TValue |
+        undefined, (update: React.SetStateAction<TValue | undefined>) => void]>;
+      parameters:
+        - id: controlledValue
+          description: >-
+            The controlled value passed in the props. This value will always be
+            used if provided, and the internal state will be updated to reflect
+            it.
+          type: TValue | undefined
+        - id: defaultUncontrolledValue
+          description: Initial value for the internal state in the uncontrolled case.
+          type: TValue | undefined
+      return:
+        type: >-
+          Readonly&lt;[TValue | undefined, (update:
+          React.SetStateAction&lt;TValue | undefined&gt;) =&gt; void]&gt;
+        description: >-
+          An array of the current value and an updater callback. Like
+          `React.useState`<!-- -->, the updater callback always has the same
+          identity, and it can take either a new value, or a function which is
+          passed the previous value and returns the new value. 
+          https://reactjs.org/docs/uncontrolled-components.html
+  - name: 'useControllableValue(controlledValue, defaultUncontrolledValue, onChange)'
+    uid: '@fluentui/react-utilities!useControllableValue:function(2)'
+    package: '@fluentui/react-utilities!'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        export declare function useControllableValue<TValue, TElement extends
+        HTMLElement, TEvent extends React.SyntheticEvent<TElement> |
+        undefined>(controlledValue: TValue | undefined,
+        defaultUncontrolledValue: TValue | undefined, onChange:
+        ChangeCallback<TElement, TValue, TEvent> | undefined): Readonly<[TValue
+        | undefined, (update: React.SetStateAction<TValue | undefined>, ev?:
+        React.FormEvent<TElement>) => void]>;
+      parameters:
+        - id: controlledValue
+          description: ''
+          type: TValue | undefined
+        - id: defaultUncontrolledValue
+          description: ''
+          type: TValue | undefined
+        - id: onChange
+          description: ''
+          type: 'ChangeCallback&lt;TElement, TValue, TEvent&gt; | undefined'
+      return:
+        type: >-
+          Readonly&lt;[TValue | undefined, (update:
+          React.SetStateAction&lt;TValue | undefined&gt;, ev?:
+          React.FormEvent&lt;TElement&gt;) =&gt; void]&gt;
+        description: ''
+  - name: 'useId(prefix, providedId)'
+    uid: '@fluentui/react-utilities!useId:function(1)'
+    package: '@fluentui/react-utilities!'
+    summary: >-
+      Hook to generate a unique ID in the global scope (spanning across
+      duplicate copies of the same library).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        export declare function useId(prefix?: string, providedId?: string):
+        string;
+      parameters:
+        - id: prefix
+          description: Optional prefix for the ID
+          type: string
+        - id: providedId
+          description: >-
+            Optional id provided by a parent component. Defaults to the provided
+            value if present, without conditioning the hook call
+          type: string
+      return:
+        type: string
+        description: The ID
+  - name: useMergedRefs(refs)
+    uid: '@fluentui/react-utilities!useMergedRefs:function(1)'
+    package: '@fluentui/react-utilities!'
+    summary: >-
+      React hook to merge multiple React refs (either MutableRefObjects or ref
+      callbacks) into a single ref callback that updates all provided refs
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        export declare function useMergedRefs<T>(...refs: (React.Ref<T> |
+        undefined)[]): RefObjectFunction<T>;
+      parameters:
+        - id: refs
+          description: Refs to collectively update with one ref value.
+          type: '(React.Ref&lt;T&gt; | undefined)[]'
+      return:
+        type: RefObjectFunction&lt;T&gt;
+        description: >-
+          A function with an attached "current" prop, so that it can be treated
+          like a RefObject.
