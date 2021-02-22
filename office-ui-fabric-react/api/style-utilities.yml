@@ -316,15 +316,15 @@ functions:
     isDeprecated: false
     syntax:
       content: >-
-        export declare function getScreenSelector(min: number, max: number):
-        string;
+        export declare function getScreenSelector(min: number | undefined, max:
+        number | undefined): string;
       parameters:
         - id: min
           description: ''
-          type: number
+          type: number | undefined
         - id: max
           description: ''
-          type: number
+          type: number | undefined
       return:
         type: string
         description: ''
