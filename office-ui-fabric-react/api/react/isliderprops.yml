@@ -74,6 +74,21 @@ properties:
       content: 'componentRef?: IRefObject<ISlider>;'
       return:
         type: IRefObject&lt;ISlider&gt;
+  - name: defaultLowerValue
+    uid: '@fluentui/react!ISliderProps#defaultLowerValue:member'
+    package: '@fluentui/react!'
+    fullName: defaultLowerValue
+    summary: >-
+      The initial lower value of the Slider is ranged is true. Use this if you
+      intend for the Slider to be an uncontrolled component. This value is
+      mutually exclusive to lowerValue. Use one or the other.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'defaultLowerValue?: number;'
+      return:
+        type: number
   - name: defaultValue
     uid: '@fluentui/react!ISliderProps#defaultValue:member'
     package: '@fluentui/react!'
@@ -113,6 +128,21 @@ properties:
       content: 'label?: string;'
       return:
         type: string
+  - name: lowerValue
+    uid: '@fluentui/react!ISliderProps#lowerValue:member'
+    package: '@fluentui/react!'
+    fullName: lowerValue
+    summary: >-
+      The initial lower value of the Slider is ranged is true. Use this if you
+      intend to pass in a new value as a result of onChange events. This value
+      is mutually exclusive to defaultLowerValue. Use one or the other.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'lowerValue?: number;'
+      return:
+        type: number
   - name: max
     uid: '@fluentui/react!ISliderProps#max:member'
     package: '@fluentui/react!'
@@ -141,14 +171,17 @@ properties:
     uid: '@fluentui/react!ISliderProps#onChange:member'
     package: '@fluentui/react!'
     fullName: onChange
-    summary: Callback when the value has been changed
+    summary: >-
+      Callback when the value has been changed. If `ranged` is true, `value` is
+      the upper value, and `range` contains the lower and upper bounds of the
+      range.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'onChange?: (value: number) => void;'
+      content: 'onChange?: (value: number, range?: [number, number]) => void;'
       return:
-        type: '(value: number) =&gt; void'
+        type: '(value: number, range?: [number, number]) =&gt; void'
   - name: onChanged
     uid: '@fluentui/react!ISliderProps#onChanged:member'
     package: '@fluentui/react!'
@@ -177,6 +210,21 @@ properties:
     isDeprecated: false
     syntax:
       content: 'originFromZero?: boolean;'
+      return:
+        type: boolean
+  - name: ranged
+    uid: '@fluentui/react!ISliderProps#ranged:member'
+    package: '@fluentui/react!'
+    fullName: ranged
+    summary: >-
+      If `ranged` is true, display two thumbs that allow the lower and upper
+      bounds of a range to be selected. The lower bound is defined by
+      `lowerValue`<!-- -->, and the upper bound is defined by `value`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ranged?: boolean;'
       return:
         type: boolean
   - name: showValue
