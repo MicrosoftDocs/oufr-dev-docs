@@ -9,16 +9,52 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
+  - name: disableResizeObserver
+    uid: '@fluentui/react!IWithViewportProps#disableResizeObserver:member'
+    package: '@fluentui/react!'
+    fullName: disableResizeObserver
+    summary: >-
+      Whether or not to explicitly disable usage of the `ResizeObserver` in
+      favor of a `'resize'` event on `window`<!-- -->, even if the browser
+      supports `ResizeObserver`<!-- -->. This may be necessary if use of
+      `ResizeObserver` results in too many re-renders of the wrapped component
+      due to the frequency at which events are fired.
+
+
+      This has no impact if `skipViewportMeasures` is `true`<!-- -->, as no
+      viewport measurement strategy is used.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'disableResizeObserver?: boolean;'
+      return:
+        type: boolean
   - name: skipViewportMeasures
     uid: '@fluentui/react!IWithViewportProps#skipViewportMeasures:member'
     package: '@fluentui/react!'
     fullName: skipViewportMeasures
     summary: >-
-      Whether or not to use ResizeObserver (if available) to detect and measure
-      viewport on 'resize' events.
+      Whether or not `withViewport` should disable its viewport measurements,
+      effectively making this decorator pass-through with no impact on the
+      rendered component.
 
 
-      Falls back to window 'resize' event.
+      Since `withViewport` measures the `viewport` on mount, after each React
+      update, and in response to events, it may cause a component which does not
+      currently need this information due to its configuration to re-render too
+      often. `skipViewportMeasures` may be toggled on and off based on current
+      state, and will suspend and resume measurement as-needed.
+
+
+      For example, when this wraps `DetailsList`<!-- -->, set
+      `skipViewportMeasures` to `true` when the `layoutMode` is
+      `fixedColumns`<!-- -->, since the `DetailsList` does not use the viewport
+      size in any calculations.
+
+
+      In addition, consider setting `skipViewportMeasures` to `true` when
+      running within a React test renderer, to avoid direct DOM dependencies.
     remarks: ''
     isPreview: false
     isDeprecated: false
