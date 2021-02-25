@@ -1,0 +1,52 @@
+### YamlMime:TSType
+name: MenuItemSelectableState
+uid: '@fluentui/react-menu!MenuItemSelectableState:interface'
+package: '@fluentui/react-menu!'
+fullName: MenuItemSelectableState
+summary: State for selectable menu items
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: checked
+    uid: '@fluentui/react-menu!MenuItemSelectableState#checked:member'
+    package: '@fluentui/react-menu!'
+    fullName: checked
+    summary: Selectable is checked
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'checked: boolean;'
+      return:
+        type: boolean
+  - name: checkedItems
+    uid: '@fluentui/react-menu!MenuItemSelectableState#checkedItems:member'
+    package: '@fluentui/react-menu!'
+    fullName: checkedItems
+    summary: Checked items for a value with `name`
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'checkedItems: string[];'
+      return:
+        type: 'string[]'
+  - name: onCheckedValueChange
+    uid: '@fluentui/react-menu!MenuItemSelectableState#onCheckedValueChange:member'
+    package: '@fluentui/react-menu!'
+    fullName: onCheckedValueChange
+    summary: Callback when checked items changes for a given value with `name`
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        onCheckedValueChange: (e: React.MouseEvent | React.KeyboardEvent, name:
+        string, checkedItems: string[]) => void;
+      return:
+        type: >-
+          (e: React.MouseEvent | React.KeyboardEvent, name: string,
+          checkedItems: string[]) =&gt; void
+extends: '<xref uid="@fluentui/react-menu!MenuItemSelectableProps:interface" />'
