@@ -58,12 +58,16 @@ properties:
     package: '@fluentui/react!'
     fullName: onInputChange
     summary: >-
-      A callback used to modify the input string. Do not use this to return a
-      string anymore. Instead pass in value like you would any other controlled
-      component. Called before the state has been updated.
+      A callback used to modify the input string. Will entirely override the
+      default behavior if provided. If you just want to be notified of changes,
+      use `onInputValueChange` instead. Called before the state has been
+      updated.
     remarks: ''
     isPreview: false
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      To control the value, pass in `value` like in any other controlled
+      component. To be notified of changes, use `onInputValueChange`<!-- -->.
     syntax:
       content: 'onInputChange?: (value: string, composing: boolean) => string | void;'
       return:

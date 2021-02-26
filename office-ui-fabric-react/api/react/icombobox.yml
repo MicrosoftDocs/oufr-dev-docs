@@ -43,7 +43,7 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'focus(shouldOpenOnFocus?: boolean, useFocusAsync?: boolean): boolean;'
+      content: 'focus(shouldOpenOnFocus?: boolean, useFocusAsync?: boolean): void;'
       parameters:
         - id: shouldOpenOnFocus
           description: Whether to open the menu when the input gets focus
@@ -52,5 +52,5 @@ methods:
           description: Whether to focus the input asynchronously
           type: boolean
       return:
-        type: boolean
-        description: 'True if focus could be set, false if no operation was taken.'
+        type: void
+        description: ''

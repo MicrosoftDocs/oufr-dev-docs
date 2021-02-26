@@ -14,8 +14,8 @@ properties:
     package: '@fluentui/react!'
     fullName: styles
     summary: >-
-      Specific styles for each ComboBox option. For styles shared between all
-      options, use the prop `comboBoxOptionStyles`<!-- -->.
+      Specific styles for each ComboBox option. To give common styles to all
+      options, use `IComboBoxProps.comboBoxOptionStyles` instead.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -28,8 +28,9 @@ properties:
     package: '@fluentui/react!'
     fullName: useAriaLabelAsText
     summary: >-
-      In scenarios where embedded data is used as the `text` prop, whether to
-      use the `ariaLabel` prop to set the `aria-label` and preview text.
+      Whether to use the `ariaLabel` prop instead of the `text` prop to set the
+      preview text as well as the `aria-label`<!-- -->. This is for scenarios
+      where the `text` prop is used for embedded data.
     remarks: ''
     isPreview: false
     isDeprecated: false
