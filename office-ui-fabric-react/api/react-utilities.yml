@@ -8,6 +8,100 @@ interfaces:
   - '@fluentui/react-utilities!ComponentProps:interface'
   - '@fluentui/react-utilities!UseBooleanCallbacks:interface'
 functions:
+  - name: 'getNativeElementProps(tagName, props, excludedPropNames)'
+    uid: '@fluentui/react-utilities!getNativeElementProps:function(1)'
+    package: '@fluentui/react-utilities!'
+    summary: >-
+      Given an element tagname and user props, filters the props to only allowed
+      props for the given element type.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        export declare function getNativeElementProps<TAttributes extends
+        React.HTMLAttributes<any>>(tagName: string, props: {},
+        excludedPropNames?: string[]): TAttributes;
+      parameters:
+        - id: tagName
+          description: Tag name (e.g. "div")
+          type: string
+        - id: props
+          description: Props object
+          type: '{}'
+        - id: excludedPropNames
+          description: List of props to disallow
+          type: 'string[]'
+      return:
+        type: TAttributes
+        description: ''
+  - name: 'getNativeProps(props, allowedPropNames, excludedPropNames)'
+    uid: '@fluentui/react-utilities!getNativeProps:function(1)'
+    package: '@fluentui/react-utilities!'
+    summary: >-
+      Gets native supported props for an html element provided the allowance
+      set. Use one of the property sets defined (divProperties, buttonPropertes,
+      etc) to filter out supported properties from a given props set. Note that
+      all data- and aria- prefixed attributes will be allowed. NOTE:
+      getNativeProps should always be applied first when adding props to a react
+      component. The non-native props should be applied second. This will
+      prevent getNativeProps from overriding your custom props. For example, if
+      props passed to getNativeProps has an onClick function and getNativeProps
+      is added to the component after an onClick function is added, then the
+      getNativeProps onClick will override it.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        export declare function getNativeProps<T extends Record<string,
+        any>>(props: Record<string, any>, allowedPropNames: string[] |
+        Record<string, number>, excludedPropNames?: string[]): T;
+      parameters:
+        - id: props
+          description: The unfiltered input props
+          type: 'Record&lt;string, any&gt;'
+        - id: allowedPropNames
+          description: ''
+          type: 'string[] | Record&lt;string, number&gt;'
+        - id: excludedPropNames
+          description: ''
+          type: 'string[]'
+      return:
+        type: T
+        description: The filtered props
+  - name: 'omit(obj, exclusions)'
+    uid: '@fluentui/react-utilities!omit:function(1)'
+    package: '@fluentui/react-utilities!'
+    summary: >-
+      Tiny helper to do the minimal amount of work in duplicating an object but
+      omitting some props. This ends up faster than using object ...rest or
+      reduce to filter.
+
+
+      This behaves very much like filteredAssign, but does not merge many
+      objects together, uses an exclusion object map, and avoids spreads all for
+      optimal performance.
+
+
+      See perf test for background: https://jsperf.com/omit-vs-rest-vs-reduce/1
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        export declare function omit<TObj extends Record<string, any>>(obj:
+        TObj, exclusions: (keyof TObj)[]): TObj;
+      parameters:
+        - id: obj
+          description: The object to clone
+          type: TObj
+        - id: exclusions
+          description: The array of keys to exclude
+          type: '(keyof TObj)[]'
+      return:
+        type: TObj
+        description: ''
   - name: useBoolean(initialState)
     uid: '@fluentui/react-utilities!useBoolean:function(1)'
     package: '@fluentui/react-utilities!'
