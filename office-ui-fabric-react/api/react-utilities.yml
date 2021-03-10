@@ -163,23 +163,23 @@ functions:
     syntax:
       content: >-
         export declare function useControllableValue<TValue, TElement extends
-        HTMLElement>(controlledValue: TValue | undefined,
-        defaultUncontrolledValue: TValue | undefined): Readonly<[TValue |
-        undefined, (update: React.SetStateAction<TValue | undefined>) => void]>;
+        HTMLElement>(controlledValue: TValue, defaultUncontrolledValue:
+        DefaultValue<TValue>): Readonly<[TValue, (update:
+        React.SetStateAction<TValue>) => void]>;
       parameters:
         - id: controlledValue
           description: >-
             The controlled value passed in the props. This value will always be
             used if provided, and the internal state will be updated to reflect
             it.
-          type: TValue | undefined
+          type: TValue
         - id: defaultUncontrolledValue
           description: Initial value for the internal state in the uncontrolled case.
-          type: TValue | undefined
+          type: DefaultValue&lt;TValue&gt;
       return:
         type: >-
-          Readonly&lt;[TValue | undefined, (update:
-          React.SetStateAction&lt;TValue | undefined&gt;) =&gt; void]&gt;
+          Readonly&lt;[TValue, (update: React.SetStateAction&lt;TValue&gt;)
+          =&gt; void]&gt;
         description: >-
           An array of the current value and an updater callback. Like
           `React.useState`<!-- -->, the updater callback always has the same
@@ -197,25 +197,23 @@ functions:
       content: >-
         export declare function useControllableValue<TValue, TElement extends
         HTMLElement, TEvent extends React.SyntheticEvent<TElement> |
-        undefined>(controlledValue: TValue | undefined,
-        defaultUncontrolledValue: TValue | undefined, onChange:
-        ChangeCallback<TElement, TValue, TEvent> | undefined): Readonly<[TValue
-        | undefined, (update: React.SetStateAction<TValue | undefined>, ev?:
+        undefined>(controlledValue: TValue, defaultUncontrolledValue:
+        DefaultValue<TValue>, onChange: ChangeCallback<TElement, TValue,
+        TEvent>): Readonly<[TValue, (update: React.SetStateAction<TValue>, ev?:
         React.FormEvent<TElement>) => void]>;
       parameters:
         - id: controlledValue
           description: ''
-          type: TValue | undefined
+          type: TValue
         - id: defaultUncontrolledValue
           description: ''
-          type: TValue | undefined
+          type: DefaultValue&lt;TValue&gt;
         - id: onChange
           description: ''
-          type: 'ChangeCallback&lt;TElement, TValue, TEvent&gt; | undefined'
+          type: 'ChangeCallback&lt;TElement, TValue, TEvent&gt;'
       return:
         type: >-
-          Readonly&lt;[TValue | undefined, (update:
-          React.SetStateAction&lt;TValue | undefined&gt;, ev?:
+          Readonly&lt;[TValue, (update: React.SetStateAction&lt;TValue&gt;, ev?:
           React.FormEvent&lt;TElement&gt;) =&gt; void]&gt;
         description: ''
   - name: 'useId(prefix, providedId)'
