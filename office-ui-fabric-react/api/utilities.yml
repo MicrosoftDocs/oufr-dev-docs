@@ -184,7 +184,7 @@ functions:
       return:
         type: never
         description: ''
-  - name: 'assign(target, args)'
+  - name: 'assign(this, target, args)'
     uid: '@fluentui/utilities!assign:function(1)'
     package: '@fluentui/utilities!'
     summary: >-
@@ -196,8 +196,13 @@ functions:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'export declare function assign(target: any, ...args: any[]): any;'
+      content: >-
+        export declare function assign(this: any, target: any, ...args: any[]):
+        any;
       parameters:
+        - id: this
+          description: ''
+          type: any
         - id: target
           description: Target object to merge following object arguments into.
           type: any

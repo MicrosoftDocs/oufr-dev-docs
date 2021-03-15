@@ -1,0 +1,38 @@
+### YamlMime:TSType
+name: AccordionContext
+uid: '@fluentui/react-accordion!AccordionContext:interface'
+package: '@fluentui/react-accordion!'
+fullName: AccordionContext
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: openItems
+    uid: '@fluentui/react-accordion!AccordionContext#openItems:member'
+    package: '@fluentui/react-accordion!'
+    fullName: openItems
+    summary: The list of opened panels by index
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'openItems: number[];'
+      return:
+        type: 'number[]'
+  - name: requestToggle
+    uid: '@fluentui/react-accordion!AccordionContext#requestToggle:member'
+    package: '@fluentui/react-accordion!'
+    fullName: requestToggle
+    summary: >-
+      Callback used by AccordionItem to request a change on it's own opened
+      state
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'requestToggle: NonNullable<AccordionProps[''onToggle'']>;'
+      return:
+        type: 'NonNullable&lt;AccordionProps[''onToggle'']&gt;'
+extends: 'AccordionHeaderCommonProps '
