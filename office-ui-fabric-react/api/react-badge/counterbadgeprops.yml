@@ -1,0 +1,96 @@
+### YamlMime:TSType
+name: CounterBadgeProps
+uid: '@fluentui/react-badge!CounterBadgeProps:interface'
+package: '@fluentui/react-badge!'
+fullName: CounterBadgeProps
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: appearance
+    uid: '@fluentui/react-badge!CounterBadgeProps#appearance:member'
+    package: '@fluentui/react-badge!'
+    fullName: appearance
+    summary: 'A Badge can be filled, ghost'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'appearance?: Extract<BadgeProps[''appearance''], ''filled'' | ''ghost''>;'
+      return:
+        type: 'Extract&lt;BadgeProps[''appearance''], ''filled'' | ''ghost''&gt;'
+  - name: color
+    uid: '@fluentui/react-badge!CounterBadgeProps#color:member'
+    package: '@fluentui/react-badge!'
+    fullName: color
+    summary: A Badge can have color variations
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'color?: CounterBadgeColors;'
+      return:
+        type: CounterBadgeColors
+  - name: count
+    uid: '@fluentui/react-badge!CounterBadgeProps#count:member'
+    package: '@fluentui/react-badge!'
+    fullName: count
+    summary: Value diplayed by the Badge
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'count?: number;'
+      return:
+        type: number
+  - name: dot
+    uid: '@fluentui/react-badge!CounterBadgeProps#dot:member'
+    package: '@fluentui/react-badge!'
+    fullName: dot
+    summary: If a dot badge should be displayed
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'dot?: boolean;'
+      return:
+        type: boolean
+  - name: overflowCount
+    uid: '@fluentui/react-badge!CounterBadgeProps#overflowCount:member'
+    package: '@fluentui/react-badge!'
+    fullName: overflowCount
+    summary: Max number to be displayed
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'overflowCount?: number;'
+      return:
+        type: number
+  - name: shape
+    uid: '@fluentui/react-badge!CounterBadgeProps#shape:member'
+    package: '@fluentui/react-badge!'
+    fullName: shape
+    summary: A Badge can be circular or rounded
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'shape?: Extract<BadgeProps[''shape''], ''rounded'' | ''circular''>;'
+      return:
+        type: 'Extract&lt;BadgeProps[''shape''], ''rounded'' | ''circular''&gt;'
+  - name: showZero
+    uid: '@fluentui/react-badge!CounterBadgeProps#showZero:member'
+    package: '@fluentui/react-badge!'
+    fullName: showZero
+    summary: If the badge should be shown when count is 0
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'showZero?: boolean;'
+      return:
+        type: boolean
+extends: 'Omit&lt;BadgeProps, ''appearance'' | ''shape''&gt; '
