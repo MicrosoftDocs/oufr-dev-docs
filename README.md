@@ -13,11 +13,11 @@ For more information see the [Code of Conduct FAQ](https://opensource.microsoft.
 
 ## Overview
 
-This repository provides the necessary documentation files that are published by the DocFX pipeline on docs.microsoft.com portal resulting in an API reference along with some overview and examples documentation for the Fabric React controls library. You can see the end result [here](https://docs.microsoft.com/en-us/javascript/api/getstarted/getstartedpage?view=office-ui-fabric-react-latest).
+This repository provides the necessary documentation files that are published by the DocFX pipeline to Microsoft Docs, resulting in an API reference along with some overview and examples documentation for the Fabric React controls library. You can see the end result [here](https://docs.microsoft.com/en-us/javascript/api/getstarted/getstartedpage?view=office-ui-fabric-react-latest).
 
 ## Repository structure
 
-The repo setup is done in a way so that the business logic of generating the documentation files is separated from the actually generated files. The main reason of this is to keep a clean git history and also relative to the changes that will occur often (daily) for the documentation part and only occasionally for the implementation code part. This is achieved by keeping these two concerns on different branches. `master` branch holds all the business logic and `staging` with `live` branches are auto updated in parallel by a scheduled task with the files generated from using the implementation code on the `master` branch.
+The repo setup is done in a way so that the business logic of generating the documentation files is separated from the actually generated files. The main reason of this is to keep a clean git history and also relative to the changes that will occur often (daily) for the documentation part and only occasionally for the implementation code part. This is achieved by keeping these two concerns on different branches. `main` branch holds all the business logic and `staging` with `live` branches are auto updated in parallel by a scheduled task with the files generated from using the implementation code on the `main` branch.
 
 ## Automation pipeline
 
@@ -27,4 +27,4 @@ To understand better what the scheduled task is doing, [here](dev-docs/PIPELINE_
 
 ⚠️⚠️⚠️ This repo is automatically updating its `live` and `staging` branches, so submitting documentation fixes will not be helpful because the next day after the automation pipeline updates the files again your changes would be discarded. Instead, recommended way of submitting fixes is to go and submit a PR directly in the Fabric repository here: [office-ui-fabric-react](https://github.com/OfficeDev/office-ui-fabric-react). Same thing in regards to submitting issues. Because the repo is auto updating itself, the issues backlog is almost never checked by any developer, so instead go and submit an issue in the Fabric issue backlog.
 
-The `master` branch contains only the generation of documentation files logic so any changes there need to be done very careful and with the according approval of repo maintainers. In case you consider that your changes will improve in any way the generation logic [here](dev-docs/CONTRIBUTING.md) is some helpful tips on how to setup the working environment.
+The `main` branch contains only the generation of documentation files logic so any changes there need to be done very careful and with the according approval of repo maintainers. In case you consider that your changes will improve in any way the generation logic [here](dev-docs/CONTRIBUTING.md) is some helpful tips on how to setup the working environment.
