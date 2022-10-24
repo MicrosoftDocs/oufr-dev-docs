@@ -31,7 +31,7 @@ export const categories = {
       subPages: {
         // Names, titles, and URLs here are partial.
         // A simple entry like this:
-        //   Basic: {}
+        //   Basic: {} HELLO
         // will produce an actual page like this:
         //   component: DetailsListBasicPage
         //   title:     DetailsList - Basic
