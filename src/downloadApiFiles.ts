@@ -48,7 +48,6 @@ fetch('https://fabricweb.blob.core.windows.net/fabric?restype=container&comp=lis
         console.log('Azure blob api call failed: ', error);
       }
     });
-
     // returning all api.json files fetch promises
     return Promise.all(fetchPromises);
   })
@@ -63,14 +62,17 @@ fetch('https://fabricweb.blob.core.windows.net/fabric?restype=container&comp=lis
     return Promise.all(responseToJsonPromises);
   })
   .then(jsonObjects => {
+    console.log(jsonObjects)
     // take every json object and along with some helper info extracted ahead write the json files on disk.
     jsonObjects.forEach(jsonObject => {
       for (let i = 0, l = fileNamesList.length; i < l; i++) {
         const file = fileNamesList[i];
+        const nameParts = jsonObject['name'].split('/');
+        const name = nameParts[nameParts.length - 1]
 
         // for now disabling date-time because it messes up some TOC items for OUFR package
         // because they both export interfaces with the same name.
-        if (jsonObject['name'].indexOf(file.name) !== -1 && file.name !== 'date-time') {
+        if (name === file.name && file.name !== 'date-time') {
           JsonFile.save(jsonObject, path.resolve(outputDirectory, file.nameWithExtension), {
             ensureFolderExists: true,
             updateExistingFile: true
