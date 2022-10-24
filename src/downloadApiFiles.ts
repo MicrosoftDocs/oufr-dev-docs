@@ -62,7 +62,6 @@ fetch('https://fabricweb.blob.core.windows.net/fabric?restype=container&comp=lis
     return Promise.all(responseToJsonPromises);
   })
   .then(jsonObjects => {
-    console.log(jsonObjects)
     // take every json object and along with some helper info extracted ahead write the json files on disk.
     jsonObjects.forEach(jsonObject => {
       for (let i = 0, l = fileNamesList.length; i < l; i++) {
